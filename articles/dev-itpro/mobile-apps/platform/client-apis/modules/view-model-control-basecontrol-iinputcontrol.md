@@ -1,28 +1,27 @@
 ---
-title: "入力モジュール"
-description: "入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。"
+title: 入力モジュール
+description: 入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 9ff053a652f68c3e979e908a92eba3e7ed057051
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369238"
 ---
-
 # <a name="input-module"></a>入力モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -88,7 +87,7 @@ ms.lasthandoff: 08/09/2018
 | [alignItems](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#alignitems) |alignItems: string (optional)  <br>|このプロパティは、CSS プロパティ「align-items」のエイリアスです。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[alignItems](../interfaces/view-model-ipage-idesign.md#alignitems) から継承 <br> |
 | [alignSelf](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#alignself) |alignSelf: string (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[alignSelf](../interfaces/view-model-ipage-idesign.md#alignself) から継承 <br> |
 | [バインディング](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#bindings) |bindings: any (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings) から継承 <br> |
-| [枠線](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
+| [枠線](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
 | [色](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [flexFlow](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
 | [flexSize](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
@@ -140,5 +139,4 @@ NumberSequenceConfig <br>
 | ---- | --------- | ----------- |
 | [データ型](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md#datatype) |dataType: string <br>|データ型は、参照ページで番号順序が編集可能かどうかを検索するために使用されます。<br>  |
 | [referencePageName](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md#referencepagename) |referencePageName: string <br>|番号順序が編集可能かどうかを定義するページのページ名。<br>  |
-
 

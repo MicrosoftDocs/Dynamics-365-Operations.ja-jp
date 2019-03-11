@@ -1,13 +1,13 @@
 ---
-title: "会社のディレクトリ モバイル ワークスペース"
-description: "このトピックでは、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。"
+title: 会社のディレクトリ モバイル ワークスペース
+description: このトピックでは、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308624"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、**会社のディレクトリ** モバイル ワークスペースに関する情報を提供します。 このワークスペースで、ユーザーは閲覧して組織内の他の従業員と連絡を取ることができます。
 
-このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリでも使用できます。
+このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations Mobile アプリと一緒に使用できます。
 
 ## <a name="overview"></a>概要
 **会社のディレクトリ** モバイル ワークスペースにより、ユーザーは次のタスクを実行できます。
@@ -58,7 +57,7 @@ ms.lasthandoff: 08/29/2018
 </ul>
 </td>
 <td>システム管理者</td>
-<td>Finance and Operations をまだ組織に配置していない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a> を参照してください。 Talent をまだ組織に配置していない場合は、システム管理者は <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent の Web ページ</a>からトライアル バージョンにアクセスできます。
+<td>組織にまだ Finance and Operations が配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ Talent が配置されていない場合、システム管理者は<a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">
@@ -77,7 +76,7 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 ## <a name="sign-in-to-the-mobile-app"></a>モバイル アプリにログインします。
 1.  モバイル デバイスでアプリを起動します。
-2.  Microsoft Dynamics 365 の URL を入力します。
+2.  Microsoft Dynamics 365 URL を入力します。
 3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
@@ -91,4 +90,3 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。
 2.  **検索**フィールドに、従業員の名、姓、肩書き、または部署を入力して検索を開始します。
 3.  従業員を選択します。 **従業員のプロファイル**ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
-

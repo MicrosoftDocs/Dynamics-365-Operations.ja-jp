@@ -1,13 +1,13 @@
 ---
-title: "財務分析コードおよび転記"
-description: "勘定科目表を計画し設定する場合、ドキュメントまたは仕訳帳を転記するときにさまざまなコンポーネントがどのように連携するかを考慮する必要があります。 これらのコンポーネントには、高度なルール、詳細ルール、および差引勘定と固定の分析コードが含まれます。 このトピックでは、各コンポーネントについて、さらにコンポーネントがどのように連携するかについて説明します。"
+title: 財務分析コードおよび転記
+description: 勘定科目表を計画し設定する場合、ドキュメントまたは仕訳帳を転記するときにさまざまなコンポーネントがどのように連携するかを考慮する必要があります。 これらのコンポーネントには、高度なルール、詳細ルール、および差引勘定と固定の分析コードが含まれます。 このトピックでは、各コンポーネントについて、さらにコンポーネントがどのように連携するかについて説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 89bc6f1f01f77dac4c24419705737783b07e4ac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327944"
 ---
-
 # <a name="financial-dimensions-and-posting"></a>財務分析コードおよび転記 
 
 [!include [banner](../includes/banner.md)]
@@ -123,9 +122,8 @@ Microsoft Dynamics 365 for Finance and Operations には、主勘定および財
 
 [勘定科目表の計画](plan-chart-of-accounts.md) 
 
-[AX 2012 の勘定科目表の計画](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/)– このリンクは 7 部から成るシリーズの 1 部に移動します。
+[AX 2012 の勘定科目表の計画ブログ](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/)– このリンクは 7 部から成るシリーズの 1 部に移動します。
 
 [勘定配布で既定分析コード](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [分析コード フレームワークで既定分析コード](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
-

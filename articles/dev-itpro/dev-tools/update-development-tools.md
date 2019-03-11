@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio 開発ツールの更新"
-description: "このトピックでは、開発ツールを更新する方法について説明します。"
+title: Visual Studio 開発ツールの更新
+description: このトピックでは、開発ツールを更新する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0dbe4329ad97c4812c85cc15c06eab632fc9f895
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368605"
 ---
-
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ ms.lasthandoff: 08/09/2018
 ### <a name="uninstall-the-extension"></a>拡張機能をアンインストールする
 
 1.  Visual Studio の**ツール&gt;拡張子と更新**ダイアログを開きます。
-2.  **Finance and Operations Visual Studio ツール** を選択し、**アンインストール** をクリックします。
+2.  **Finance and Operations Visual Studio ツール**を選択し、**アンインストール**をクリックします。
 3.  拡張機能がアンインストールされると、Visual Studio を終了します。
 
 ## <a name="install-a-new-version-of-the-extension"></a>拡張機能の新しいバージョンのインストール
@@ -55,7 +54,6 @@ ms.lasthandoff: 08/09/2018
 2.  新しいバージョンの VSIX ファイルをダブルクリック (または右クリックと**未処理**) します。
 3.  インストールの指示に従ってください。
 4.  インストールが完了したら、Visual Studio を起動して、アプリケーションの開発を開始できます。
-
 
 
 

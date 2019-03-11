@@ -1,30 +1,29 @@
 ---
-title: "Core HR への PowerApps アプリの埋め込み"
-description: "このトピックでは、PowerApps メニュー項目がシステム管理モジュールから消えてしまう問題を解決する方法について説明します。"
+title: Core HR への PowerApps アプリの埋め込み
+description: このトピックでは、PowerApps メニュー項目がシステム管理モジュールから消えてしまう問題を解決する方法について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 197b553f0b202ee29ad42274e2c0e03446ec782c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305187"
 ---
-
 # <a name="embed-powerapps-apps-in-core-hr"></a>Core HR への PowerApps アプリの埋め込み
 
 [!include [banner](includes/banner.md)]
@@ -69,4 +68,3 @@ PowerApps アプリを Talent に埋め込む方法の詳細については、[P
 2. ツール バーで、**挿入\>PowerApp** を選択します。
 
     ![個人用設定ツール バーを使用して PowerApps アプリを挿入する](media/powerapp-bar.png)
-

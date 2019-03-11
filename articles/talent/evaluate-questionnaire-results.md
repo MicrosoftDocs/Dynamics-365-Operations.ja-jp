@@ -1,13 +1,13 @@
 ---
-title: "アンケート結果の表示と評価"
-description: "このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。"
+title: アンケート結果の表示と評価
+description: このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 9fd4af5589cfab2a92c913639f1192029eb7c592
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305221"
 ---
-
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>アンケート結果の表示と評価
 
 [!include [banner](includes/banner.md)]
@@ -46,7 +45,7 @@ ms.lasthandoff: 08/09/2018
 -   フィードバック分析
 
 ## <a name="answer-session-results"></a>回答セッションの結果
-回答者がアンケートを実行後、完了した回答セッションの結果を表示できます。 回答セッションは、アンケートに対する一人のユーザーの応答です。 **回答**ページで、完了した回答セッションに関する詳細を表示できます。 **回答**ページに含まれている回答セッションは、ページを開いた方法によってさまざまな方法でフィルター処理されます。
+回答者がアンケートを実行後、完了した回答セッションの結果を表示できます。 回答セッションは、アンケートに対する一人のユーザーの応答です。 **回答**ページで、完了した回答セッションに関する詳細を表示できます。 **回答** ページに含まれている回答セッションは、ページを開いた方法によってさまざまな方法でフィルター処理されます。
 
 -   すべてのアンケート
 -   特定のアンケート
@@ -81,5 +80,4 @@ ms.lasthandoff: 08/09/2018
 [アンケートの使用](questionnaires.md)
 
 [アンケートの配布および記入](distribute-questionnaires.md)
-
 

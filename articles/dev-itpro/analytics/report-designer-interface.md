@@ -1,13 +1,13 @@
 ---
-title: "レポート デザイナー インターフェイス"
-description: "この記事では、レポート デザイナー内を移動する方法と、特定の要件を満たすためにさまざまなオプションを使用する方法について説明します。"
+title: レポート デザイナー インターフェイス
+description: この記事では、レポート デザイナー内を移動する方法と、特定の要件を満たすためにさまざまなオプションを使用する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368033"
 ---
-
 # <a name="report-designer-interface"></a>レポート デザイナー インターフェイス
 
 [!include [banner](../includes/banner.md)]
@@ -139,7 +138,7 @@ ms.lasthandoff: 08/13/2018
 |-------------------------------|-------------|
 | [保護]                       | 現在の構成要素にパスワードを適用します。 このコマンドは、ロールが**デザイナー**または**管理者**であるユーザーであれば使用できます。 |
 | [レポート キュー ステータス]           | 生成されたすべての最新レポートと各レポートの詳細を表示するための、**レポート キュー ステータス** ダイアログ ボックスを開きます。 |
-| [ソース システム情報]     | お使いの Microsoft Dynamics ERP システムの設定を表示します。 このコマンドは、ロールが**デザイナー**または**管理者**であるユーザーであれば使用できます。 |
+| ソース システムの情報     | お使いの Microsoft Dynamics ERP システムの設定を表示します。 このコマンドは、ロールが**デザイナー**または**管理者**であるユーザーであれば使用できます。 |
 | [項目のチェック アウト]             | 現在開いている行定義、列定義、レポート ツリー定義、およびレポート定義を表示します。 このコマンドは、ロールが**デザイナー**または**管理者**であるユーザーであれば使用できます。 |
 | [キャッシュ財務データの更新] | 財務分析コード列のデータを更新します。 |
 | オプション                       | レポート デザイナー のユーザー基本設定を変更するための、**オプション** ダイアログ ボックスを開きます。 |
@@ -229,4 +228,3 @@ ms.lasthandoff: 08/13/2018
 [財務報告](financial-reporting-intro.md)
 
 [財務諸表の生成](generate-financial-report.md)
-

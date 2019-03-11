@@ -1,13 +1,13 @@
 ---
-title: "実行時間の長いレポートがタイムアウトしないようにする"
-description: "この記事では、長時間実行されるレポートがタイムアウトするのを防ぐのに役立つヒントを紹介します。"
+title: 実行時間の長いレポートがタイムアウトしないようにする
+description: この記事では、長時間実行されるレポートがタイムアウトするのを防ぐのに役立つヒントを紹介します。
 author: TJVass
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 535db88ef57ccd3f71845c6e75cda6bfc76c3f57
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 526e5972d065c0d5706e0d742407b8a8842ac569
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369528"
 ---
-
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 
 [!include [banner](../includes/banner.md)]
@@ -54,4 +53,3 @@ ms.lasthandoff: 08/09/2018
 大量のデータを含む明細書またはレポートを印刷するときのパフォーマンスを向上させるには、バッチ処理を使用します。 バッチ処理を使用すると、特定のタスクをバッチ ジョブとして実行した後、そのバッチ ジョブを、別のコンピューター (バッチ サーバー) で実行されるようにスケジュールすることができます。 これらのタスクの処理をバッチ サーバーに移すことによって、クライアント コンピューターのレポートのパフォーマンスが向上します。 また、各バッチ サイズを制限するために範囲制限を適用できます。
 
 パフォーマンスをさらに向上させるには、1 つの大きなバッチを送信しないでください。 代わりに、同時に別のサーバーで処理するための複数の小さいバッチを送信します。 多くのタスクをバッチ ジョブの一部として実行できます。 詳細については、[バッチ処理の概要](../sysadmin/batch-processing-overview.md) を参照してください。
-

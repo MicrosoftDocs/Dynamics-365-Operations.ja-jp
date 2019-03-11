@@ -1,13 +1,13 @@
 ---
-title: "削除およびアーカイブ ジョブの表示"
-description: "このトピックでは、インテリジェント データ管理フレームワーク (IDMF) を使用して、パージ ジョブとアーカイブ ジョブを表示する方法について説明します。"
+title: 削除およびアーカイブ ジョブの表示
+description: このトピックでは、インテリジェント データ管理フレームワーク (IDMF) を使用して、パージ ジョブとアーカイブ ジョブを表示する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,21 +15,20 @@ ms.custom: 18771
 ms.assetid: fd4f59b6-280e-4091-b563-44315a1bb893
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 465ee69fb1024821350949c0f6757db292a78bcd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368981"
 ---
-
 # <a name="view-purge-and-archive-jobs"></a>削除およびアーカイブ ジョブの表示
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics AX IDMF **ステータス** メニューのオプションを使用して、現在実行中のすべてのジョブの状態を最新の情報に更新して、現在実行中および完了したジョブすべての詳細を提供することができます。 ツール バーで、**ステータス**をクリックして、**ステータス**ワークスペースを開きます。
+Microsoft Dynamics AX IDMF **ステータス** メニューのオプションを使用して、現在実行中のすべてのジョブの状態を最新の情報に更新して、現在実行中および完了したジョブすべての詳細を表示することができます。 ツール バーで、**ステータス**をクリックして、**ステータス**ワークスペースを開きます。
 
 ## <a name="navigation-of-the-status-workspace"></a>ステータス ワークスペースのナビゲーション
 次のテーブルで、**ステータス** ワークスペースのコントロールについて説明します。
@@ -214,7 +213,6 @@ Microsoft Dynamics AX IDMF **ステータス** メニューのオプションを
 
 ## <a name="export-to-excel"></a>Excel にエクスポート
 このコマンドを使用すると、データグリッドから選択した行を、このコマンドが使用可能なすべてのワークスペースからエクスポートできます。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "プロジェクト時間入力モバイル ワークスペース"
-description: "このトピックでは、プロジェクト時間入力モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。"
+title: プロジェクト時間入力モバイル ワークスペース
+description: このトピックでは、プロジェクト時間入力モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,26 +18,25 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: e671fe6e7c99bfb6d66f3b00560c3b0c404d2343
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9bf79af6eea6f899158fc3c8d523587cb11c90ad
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333004"
 ---
-
 # <a name="project-time-entry-mobile-workspace"></a>プロジェクト時間入力モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、[プロジェクト時間入力] モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
+このトピックでは、**プロジェクト時間入力**モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
 
-このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。 
+このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations Mobile アプリで使用するためのものです。 
 
 ## <a name="overview"></a>概要
 毎日の作業の一環として、プロジェクト リソースは多くの場合オンサイトか、または出張します。 **プロジェクト時間入力** モバイル ワークスペースでは、選択したモバイル デバイスで、プロジェクトに対する支払請求可能または非請求可能な時間を入力できます。 そのためプロジェクト リソースは、いつでも、どこでも時間のエントリを記録できます。 既に記録されている時間のエントリを表示することもできます。 
 
-具体的には、[プロジェクト時間の入力] モバイル ワークスペースでは、ユーザーは、これらのタスクを実行できます。
+具体的には、**プロジェクト時間の入力**モバイル ワークスペースでは、ユーザーは、これらのタスクを実行できます。
 
 -   選択された任意の日付について、特定のタスクに費やした時間数を入力します。
 -   時間を入力するプロジェクトを特定するため、プロジェクト名または顧客で検索します。
@@ -45,14 +44,14 @@ ms.lasthandoff: 03/26/2018
 -   プロジェクトに支払請求可能または非請求可能として時間を記録します。
 -   必要に応じて外部または内部コメントを入力します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用している場合の前提条件
-Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は [プロジェクト時間の入力] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用する場合の前提条件
+Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は**プロジェクト時間の入力** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
-Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
+Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
 
 <table>
 <thead>
@@ -69,7 +68,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>システム管理者</td>
 <td>KB 4018050 は、<strong>プロジェクト時間入力</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4018050 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li>
 <li><strong>ApplicationSuite</strong> と <strong>ProjectMobile</strong> モデルを含む <a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
@@ -77,7 +76,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 </ol></td>
 </tr>
 <tr class="even">
-<td>[<strong>プロジェクト時間の入力</strong>] モバイル ワークスペースを公開します。</td>
+<td><strong>プロジェクト時間の入力</strong> モバイル ワークスペースを公開します。</td>
 <td>システム管理者</td>
 <td>「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
@@ -105,13 +104,12 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 3.  選択された日付で、**アクション** &gt; **新しいエントリ** を選択します。
 4.  記録する時間数を入力します。
 5.  時間入力するプロジェクトを選択します。 オフラインで使用する場合のために、アプリに読み込まれたプロジェクトのリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、[モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を参照してください。
-6.  プロジェクトが一覧にない場合は、[検索] を選択します。 名前で検索するか、プロジェクト名または顧客での検索に切り替えます。
+6.  プロジェクトが一覧にない場合は、**検索**を選択します。 名前で検索するか、プロジェクト名または顧客での検索に切り替えます。
 7.  カテゴリを選択します。 オフラインで使用する場合のために、アプリに読み込まれたカテゴリのリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、[モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を参照してください。
-8.  カテゴリが一覧にない場合は、[検索] を選択します。 カテゴリで検索するか、カテゴリ名での検索に切り替えます。
+8.  カテゴリが一覧にない場合は、**検索**を選択します。 カテゴリで検索するか、カテゴリ名での検索に切り替えます。
 9.  活動を選択します。 一覧には、オフラインで使用するためにアプリケーションに読み込まれた活動が表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、[モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を参照してください。
-10. 活動が一覧にない場合は、[検索] を選択します。 活動番号で検索するか、目的別の検索に切り替えます。
+10. 活動が一覧にない場合は、**検索**を選択します。 活動番号で検索するか、目的別の検索に切り替えます。
 
 11. 明細行プロパティを選択します。
 12. オプション: 外部または内部コメントを入力します。
 13. **完了** を選択します。
-

@@ -1,13 +1,13 @@
 ---
-title: "トリガーを使用して返品ポリシーを実装してください"
-description: "このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。"
+title: トリガーを使用して返品ポリシーを実装してください
+description: このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。
 author: mugunthanm
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2d32ee27ca157dcaaf12abbff297a6f84e8a8dbd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 5d8c25dd2a0719dd4c74890e52e91da223fab24d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368816"
 ---
-
 # <a name="implement-a-return-policy-by-using-triggers"></a>トリガーを使用して返品ポリシーを実装してください
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
+> このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。
 
 このトピックの例では、新しい返品ポリシーがあることを前提としています。 返品の最長期間は 30 日間で、購入日から 30 日を超えて返品することはできません。 また、レジ担当者またはマネージャーは、1 回のトランザクションで 3 つ以上の品目を無効にすることはできません。
 
 ## <a name="extend-the-mpos-trigger"></a>MPOS トリガーを拡張
-1.  管理者として Visual Studio を開きます。
+1.  Visual Studio を管理者としてオープンします。
 2.  Modern POS ソリューションを K:\\RainMainStab\\7.0.1265.3014\\小売\\サービス\\RetailSDK\\コード\\POS から開きます。
 3.  **トリガー** フォルダーの下の POS.Core プロジェクトに新しい TypeScript ファイルを追加し、ExtensionTrigger.ts という名前をつけます。
 4.  トリガー インターフェイスへの参照を追加し、コードの新しいモジュールを作成します。 ExtensionTrigger.ts ファイルに次のコードを追加します。
@@ -156,8 +155,8 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="build-the-project"></a>プロジェクトの構築
 1.  プロジェクトをコンパイル、およびリビルドします。
-2.  Visual Studio で**配置**ボタンをクリックして、ローカル コンピューターに MPOS を展開します。 "プロジェクトの POS.App を開始できる前に展開する必要があります" というエラー メッセージが表示された場合、下記の手順に従い、エラーを解決し、再試行します。
-3.  Visual Studio で ModernPOS ソリューションを右クリックし、**プロパティ** をクリックします。
+2.  Visual Studio で**配置ボタン**をクリックして、ローカル コンピューターに MPOS を展開します。 "プロジェクトの POS.App を開始できる前に展開する必要があります" というエラー メッセージが表示された場合、下記の手順に従い、エラーを解決し、再試行します。
+3.  Visual Studio で ModernPOS ソリューションを右クリックし、**プロパティ**をクリックします。
 4.  **プロパティ** ウィンドウで、**コンフィギュレーション**を選択します。
 5.  Pos.App プロジェクトの **展開** チェック ボックスを選択し、**OK** をクリックします。
 
@@ -168,4 +167,3 @@ ms.lasthandoff: 08/09/2018
 
 > [!NOTE]
 > サンプルコードでは、期間を 100 ミリ秒として返すので、すぐにコードをテストすることができます。 必要に応じて、コンフィギュレーションを変更する必要があります。
-

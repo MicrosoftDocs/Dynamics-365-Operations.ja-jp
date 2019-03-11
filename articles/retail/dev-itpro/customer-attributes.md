@@ -1,31 +1,30 @@
 ---
-title: "顧客属性"
-description: "このトピックでは、顧客属性に関する情報を提供し、構成を使用して顧客のマスター レコードに新しいフィールドを追加する方法について説明します。"
+title: 顧客属性
+description: このトピックでは、顧客属性に関する情報を提供し、構成を使用して顧客のマスター レコードに新しいフィールドを追加する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: dc2e5c36e8e750c0100c546ad01dfbb2e87afa38
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ae74002d85e9cba8c4a4d89a2072bbba17148856
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368357"
 ---
-
 # <a name="customer-attributes"></a>顧客属性
 
 [!include [banner](../../includes/banner.md)]
@@ -110,7 +109,7 @@ ms.lasthandoff: 04/20/2018
 5. **名前**フィールドで POS 画面の解像度を選択します。
 6. **レイアウト サイズ**クイック タブで、**レイアウト デザイナー**ボタンを選択します。
 7. プロンプトが表示されたら、**インストール/実行**ボタンを使用して Retail Designer Host をダウンロードしてインストールするには、**はい**を選択します。
-8. メッセージが表示されたら、Microsoft Dynamics 365 のユーザー名とパスワードを入力して、デザイナーを起動します。
+8. 入力を求めるメッセージが表示されたら、Microsoft Dynamics 365 のユーザー名とパスワードを入力して、デザイナーを起動します。
 9. デザイナーが開始された後、**顧客**カードを画面レイアウト デザイナーの任意の場所にドラッグします。
 10. **顧客** カードを右クリックし、**カスタマイズ** を選択します。
 11. **カスタマイズ - 顧客** カードのページが表示されたら、**利用可能な列** セクションで必要な属性を選択してから、右矢印ボタン (**>**) を選択して 、それらを **選択された列** セクションに移動します。 **上** または **下** ボタンを選択することにより、属性を上または下に移動することができます。
@@ -123,4 +122,3 @@ ms.lasthandoff: 04/20/2018
 
 1. POS を起動し、顧客をトランザクションに追加します。
 2. トランザクション画面を開いて、追加された属性を表示します。
-

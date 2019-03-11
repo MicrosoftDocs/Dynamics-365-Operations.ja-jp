@@ -1,13 +1,13 @@
 ---
-title: "与信および回収管理 Power BI コンテンツ"
-description: "このトピックでは、与信および回収管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
+title: 与信および回収管理 Power BI コンテンツ
+description: このトピックでは、与信および回収管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325184"
 ---
-
 # <a name="credit-and-collections-management-power-bi-content"></a>与信および回収管理 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
@@ -34,21 +33,21 @@ ms.lasthandoff: 03/07/2018
 
 **与信および回収管理** Power BI コンテンツは、与信および回収マネージャー、そして回収係のために作成されています。 売掛債権回転日数、延滞残高、クレジット エクスポージャ、与信限度額を超えた顧客など、主要な与信および回収のメトリックスを提供します。 トランザクション データを使用し、すべての会社の与信および回収の集計ビューを提供します。 会社、顧客グループ、および顧客ごとの内訳も提供します。
 
-この Power BI コンテンツは、10 のレポート ページで構成されます。
+この Power BI コンテンツは、10 のレポート ページで構成されます:
 
 - 2 つの概要ページ (与信の概要に 1 ページと回収の概要に 1 ページ)
 - さまざまな分析コードで解析された与信および回収のメトリックスの詳細を提供する 8 つの詳細ページ
 
-すべての金額はシステム通貨で表示されます。 システム通貨は、[**システム パラメーター**] ページで設定できます。
+すべての金額はシステム通貨で表示されます。 システム通貨は、**システム パラメーター** ページで設定できます。
 
 既定では、現在の会社の与信および回収のデータが表示されます。 すべての会社のデータを表示するには、**CustCollectionsBICrossCompany** 職務権限をロールに割り当てます。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**与信および回収管理** Power BI コンテンツが **顧客の与信および回収** ワークスペースで表示されます。
+**与信および回収管理** Power BI コンテンツは**顧客の与信および回収**ワークスペースに表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 
-**CustCollectionsBICrossCompany** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれています。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表に、**CustCollectionsBICrossCompany** Power BI コンテンツの表示の概要を示します。
+**CustCollectionsBICrossCompany** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれています。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表に、**CustCollectionsBICrossCompany** Power BI コンテンツの視覚化の概要を示します。
 
 | レポート ページ                 | 視覚化 |
 |-----------------------------|---------------|
@@ -63,11 +62,11 @@ ms.lasthandoff: 03/07/2018
 | 回収状態          | <ul><li>争議中</li><li>支払の約束が破棄されました</li><li>支払約束</li><li>回収状態の詳細</li><li>回収状態の金額</li><li>オープンなケース</li><li>オープンな活動</li></ul> |
 | 督促状         | <ul><li>督促状コードの金額</li><li>回収コードの量の詳細</li><li>会社別の督促状の量</li><li>顧客グループ別の督促状の量</li><li>地域ごとの督促状の量</li></ul> |
 
-これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータのエクスポート機能を使用して、視覚化で要約されている基になるデータをエクスポートすることができます。
+これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータのエクスポート機能を使用して、視覚化で要約されている基になるデータをエクスポートすることができます。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-次のデータは、**与信および回収管理** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](../../dev-itpro/analytics/power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、**与信および回収管理** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納との Power BI の統合の概要](../../dev-itpro/analytics/power-bi-integration-entity-store.md) を参照してください。
 
 
 |                   エンティティ                    |      キー集計の測定      |             データ ソース              |                           フィールド                            |                                    説明                                     |
@@ -88,5 +87,4 @@ ms.lasthandoff: 03/07/2018
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                作成済の利子計算書の数。                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 保留中の販売注文の合計数。                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                損金処理済のトランザクションの合計。                 |
-
 

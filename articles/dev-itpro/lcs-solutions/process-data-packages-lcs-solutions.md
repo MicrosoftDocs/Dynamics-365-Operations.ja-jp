@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations ソリューションのデータ パッケージの処理と使用"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションでデータ パッケージを処理および使用する方法について説明します。"
+title: Finance and Operations ソリューションのデータ パッケージの処理と使用
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの処理およびデータ パッケージを消費する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
@@ -15,19 +15,18 @@ ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0dbd2e0105ec0a3b1a53e45dd4b85bd1ddd9ce05
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368734"
 ---
-
 # <a name="process-and-consume-data-packages-in-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータ パッケージの処理と使用
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations データ パッケージは、多数または 1 つののデータ エンティティに対して構成できます。 標準的なデータ パッケージは、特定のタスク、プロセス、または機能のエンティティ グループで構成されています。 たとえば、総勘定元帳の設定に必要なデータ エンティティは、1 つのデータ パッケージの一部である可能性があります。 データ パッケージの形式は、パッケージ マニフェスト、パッケージ ヘッダー、および含まれているデータ エンティティの追加ファイルを含む圧縮ファイルです。
+Microsoft Dynamics 365 for Finance and Operations データ パッケージは、1 つまたは複数のデータ エンティティで構成できます。 標準的なデータ パッケージは、特定のタスク、プロセス、または機能のエンティティ グループで構成されています。 たとえば、総勘定元帳の設定に必要なデータ エンティティは、1 つのデータ パッケージの一部である可能性があります。 データ パッケージの形式は、パッケージ マニフェスト、パッケージ ヘッダー、および含まれているデータ エンティティの追加ファイルを含む圧縮ファイルです。
 
 データ パッケージを作成する前に、何を含める必要があるかを計画します。 この方法で、正しいエンティティ、エンティティの順序、およびフィールドが含まれていることを保証します。 データ パッケージを作成するには、Finance and Operations の **データ管理** ワークスペースを使用します。 データ パッケージを作成するには、これらの手順に従います。
 
@@ -159,8 +158,7 @@ PDP を使用するには、次の手順に従います。
 -   **プロセス データ パッケージの使用**ページで、パッケージを選択し、**履歴**を選択します。 データ パッケージの状態をレビューすることができます。 利用可能な情報には、ターゲット環境、会社、パッケージ名、開始時刻と終了時刻、データ エンティティ別のステータス、およびデータ パッケージの全体的なステータスがあります。 発生したエラーの詳細を表示するには、ターゲット環境にサインインします。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
-

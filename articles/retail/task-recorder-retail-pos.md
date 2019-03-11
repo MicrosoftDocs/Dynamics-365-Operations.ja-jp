@@ -1,13 +1,13 @@
 ---
-title: "Retail Modern POS (MPOS) およびクラウド POS のタスク レコーダーとヘルプ"
-description: "このトピックでは、Retail Modern POS およびクラウド POS のタスク レコーダーを使用する方法を説明します。"
+title: Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
+description: このトピックでは、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345999"
 ---
-
-# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) およびクラウド POS のタスク レコーダーとヘルプ
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Retail Modern POS およびクラウド POS のタスク レコーダーを使用する方法を説明します。
+このトピックでは、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
 
 ## <a name="overview"></a>概要
 
@@ -56,7 +55,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 
 次の手順に従い、タスク レコーダーを使用して新しい記録を作成します。
 
-1. Retail Modern POS またはクラウド POS を起動し、サインインします。
+1. Retail Modern POS または Cloud POS を起動し、サインインします。
 2. **設定** ページの **タスク レコーダー** セクションで、**タスク レコーダーを開く** をクリックします。 **タスク レコーダー** ウィンドウが表示されます。 右上隅の **閉じる** ボタン (**X**) をクリックして **タスク レコーダー** ウィンドウを閉じてから、新しい記録を開始します。 ウィンドウをもう一度開くには、手順 2 を繰り返します。
 
     [![[タスク レコーダー] ウィンドウ](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
@@ -69,7 +68,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
     > [![疑問符](./media/help.jpg)](./media/help.jpg)
 
 4. **開始** をクリックすると、タスク レコーダーは記録モードになります。 **タスク レコーダー** ウィンドウには、記録プロセスに関連付けられている情報とコントロールが表示されます。
-5. Retail Modern POS またはクラウド POS ユーザー インターフェイス (UI) で、目的のアクションを実行します。
+5. Retail Modern POS または Cloud POS ユーザー インターフェイス (UI) で、目的のアクションを実行します。
 6. 記録セッションを終了するには、**停止** をクリックします。
 
 ## <a name="download-options"></a>ダウンロード オプション
@@ -80,7 +79,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 
 ### <a name="save-to-this-pc"></a>この PC に保存
 
-記録パッケージを使用して、タスク ガイドの再生、記録の管理、または記録の注釈の編集を行うことができます  (この機能はまだ Retail Modern POS およびクラウド POS で実装されていません)。
+記録パッケージを使用して、タスク ガイドの再生、記録の管理、または記録の注釈の編集を行うことができます  (この機能はまだ Retail Modern POS および Cloud POS で実装されていません。)
 
 ### <a name="export-as-word-document"></a>Word ドキュメントとしてエクスポート
 
@@ -137,14 +136,13 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 **メモ** フィールドに入力するテキストは、タスク ガイドのステップのテキストの*下*に表示されます。 メモのテキストを読み取るには、ユーザーはポップアップ ウィンドウでステップのテキストを展開する必要があります。 この場所は、ユーザーにとって役立つ可能性があるが、アクションを完了するために必要とはしない、オプションの参考資料またはその他の情報に適しています。
 
-## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS およびクラウド POS のヘルプ
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS および Cloud POS のヘルプ
 
-独自のタスク記録をテキストとして表示するために、Retail Modern POS およびクラウド POS の [ヘルプ] ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-and-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS およびクラウド POS のヘルプでは、リアルタイムで LCS を検索します。 Microsoft Dynamics 365 for Retail のヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 **ヘルプ** メニューにアクセスするには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。
+独自のタスク記録をテキストとして表示するために、Retail Modern POS および Cloud POS のヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-and-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS および Cloud POS のヘルプでは、リアルタイムで LCS を検索します。 Microsoft Dynamics 365 for Retail のヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します **ヘルプ** メニューにアクセスするには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。
 
 [![ヘルプ ボタン](./media/help.jpg)](./media/help.jpg)
 
 検索結果でタスク ガイドをクリックするときは、ヘルプ トピックとしてステップを表示するか、Word 文書にステップをエクスポートできます。
 
 > [!NOTE]
-> Retail Modern POS およびクラウド POS のヘルプ システムでは、使用しているフォームまたは行っている操作によるタスク ガイドは表示されません。 検索ボックスにプロセス名を入力して**検索**ボタンをクリックする必要があります。
-
+> Retail Modern POS および Cloud POS のヘルプ システムでは、使用しているフォームまたは行っている操作によるタスク ガイドは表示されません。 検索ボックスにプロセス名を入力して**検索**ボタンをクリックする必要があります。

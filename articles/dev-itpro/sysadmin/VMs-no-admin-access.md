@@ -1,29 +1,28 @@
 ---
-title: "管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問"
-description: "このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。"
+title: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
+description: このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。
 author: yukonpeegs
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Platform
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
 ms.openlocfilehash: f58d29a67607f529469c0259acfa7eb7cbb7741a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368876"
 ---
-
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/04/2019
 配置可能パッケージをインストールする方法の詳細については、[配置可能パッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
 
 ## <a name="is-the-finance-and-operations-website-accessible-when-visual-studio-isnt-running"></a>Visual Studio が実行されていないときに Finance and Operations の Web サイトはアクセス可能ですか。
-はい、Microsoft Visual Studio が実行されていない場合、Microsoft Dynamics 365 for Finance and Operations Web サイトにアクセスすることができます。 Microsoft Internet Information Services (IIS) Express は、ユーザーとして実行する .exe ファイルです。 ただし、Visual Studio を終了すると、XPPC エージェントが終了する前に通常の IIS (IIS Express ではなく) が起動します。 この動作により、サインアウトした場合やマシンを再起動した場合でも、Application Object Server (AOS) インスタンスとFinance and Operations Web サイトにリモートでアクセスできるようになります。 多くのユーザーがこのような開発者用マシンをテスト用マシンとして使用してていること、また彼らが常に AOS インスタンスが実行されていることを期待していることを認識しています。 ただし、IIS Express は、この動作をサポートしていません。
+はい、Microsoft Visual Studio が実行されていない時に Microsoft Dynamics 365 for Finance and Operations Web サイトにアクセスできます。 Microsoft Internet Information Services (IIS) Express は、ユーザーとして実行する .exe ファイルです。 ただし、Visual Studio を終了すると、XPPC エージェントが終了する前に通常の IIS (IIS Express ではなく) が起動します。 この動作により、サインアウトした場合やマシンを再起動した場合でも、Application Object Server (AOS) インスタンスとFinance and Operations Web サイトにリモートでアクセスできるようになります。 多くのユーザーがこのような開発者用マシンをテスト用マシンとして使用してていること、また彼らが常に AOS インスタンスが実行されていることを期待していることを認識しています。 ただし、IIS Express は、この動作をサポートしていません。
 
 ## <a name="what-about-the-other-services"></a>他のサービスはどうなのですか ?
 Microsoft SQL Server、SQL Server Reporting Services (SSRS)、SQL Server Integration Services (SSIS)、SQL Server Analysis Services (SSAS)、Batch、Financial reporting (旧 Management Reporter)、および IIS などの Microsoft Windows サービスを再起動することができます。 (IIS の場合は、iisreset.exe を使用できないため、World Wide Web 発行サービスを再起動する必要があります。)
@@ -48,15 +47,15 @@ Microsoft SQL Server、SQL Server Reporting Services (SSRS)、SQL Server Integra
 プライベート Azure サブスクリプションの Microsoft Azure 環境とローカル仮想ハード ディスク (VHD) の両方は管理者アクセスを許可します。 ただし、Visual Studio を管理者として実行する必要があります。 管理者は明示的にではなく、**管理者**グループを介してのみこれらの代替手段にアクセスできるため、この要件が適用されます。
 
 ## <a name="can-i-run-visual-studio-as-an-administrator"></a>Visual Studio を管理者として実行できますか。
-Platform update 12 以降、Visual Studio を管理者として実行する必要がなくなりました。 Microsoft 所有の Azure サブスクリプションである VM に対して、リモート デスクトップ プロトコル (RDP) を使用して管理者として接続することはできなくなりました。 これらの VM には、サブスクリプションおよび Tier 1 アドオン VM に含まれる Tier 1 VM が含まれます。 ただし、管理者として Microsoft 所有のサブスクリプションの下にはない VM に接続する場合、管理者として引き続き Visual Studio を実行する必要があります。
+プラットフォーム update 12 以降、Visual Studio を管理者として実行する必要がなくなりました。 Microsoft 所有の Azure サブスクリプションである VM に対して、リモート デスクトップ プロトコル (RDP) を使用して管理者として接続することはできなくなりました。 これらの VM には、サブスクリプションおよび Tier 1 アドオン VM に含まれる Tier 1 VM が含まれます。 ただし、管理者として Microsoft 所有のサブスクリプションの下にはない VM に接続する場合、管理者として引き続き Visual Studio を実行する必要があります。
 
 ## <a name="a-get-latest-operation-in-visual-studio-failed-because-files-are-blocked-by-the-aos-instance-how-do-i-start-and-stop-iis"></a>ファイルが AOS インスタンスによってブロックされているため、Visual Studio での「最新の取得」操作が失敗しました。 IIS を開始または停止するにはどうすればよいですか。
 IIS Express を使用する必要があります。 詳細については、次のセクションを参照してください。
 
 ## <a name="what-are-the-instructions-for-using-iis-express"></a>IIS Express の使用方法は ?
-IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動** を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
+IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動**を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
 
-IIS Express および Unified Operations Visual Studio プロジェクトでデバッグが正常に機能することを確実にするため、次のインターネット オプションの設定をお勧めします。
+IIS Express および Unified Operations Visual Studio プロジェクトでデバッグが正常に機能することを確実にするため、次のインターネット オプションの設定をお勧めします:
 
 - **コントロール パネル** > **インターネット オプション** > **セキュリティ** タブ >**インターネット** に移動し、**保護モードの有効化** チェック ボックスをオンにします。
 - **コントロール パネル** > **インターネット オプション** > **セキュリティ** タブ >**制限付きサイト** に移動し、**保護モードの有効化** チェック ボックスをオンにします。
@@ -110,5 +109,4 @@ Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環�
 [開発、デモ、またはサンドボックス環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
 
 ## <a name="what-do-i-need-to-know-if-i-am-developing-for-retail"></a>Retail の開発をしている場合、何を把握する必要がありますか。
-Dynamics 365 for Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストのデベロップメント環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../retail/dev-itpro/cloud-dev-box.md)に記載されています。
-
+Dynamics 365 for Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../retail/dev-itpro/cloud-dev-box.md) に記載されています。

@@ -1,31 +1,30 @@
 ---
-title: "返品品目の廃棄方法の指定"
-description: "返品品目の廃棄方法を指定します。"
+title: 返品品目の廃棄方法の指定
+description: 返品品目の廃棄方法を指定します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventQuarantineOrder
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e6fcdfec083aeb9c58d63f6e03542758e4d07e4d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d25a53ac58b0ab44605af253f174ba2ec7b74174
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325069"
 ---
-
 # <a name="specify-how-to-dispose-of-returned-items"></a>返品品目の廃棄方法の指定 
 
 [!include [banner](../includes/banner.md)]
@@ -182,6 +181,5 @@ ms.lasthandoff: 05/08/2018
 [廃棄コード (フォーム)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
 
   
-
 
 

@@ -1,28 +1,27 @@
 ---
-title: "管理モジュール"
-description: "コントロールは、ページのコンテンツを構成するものです。"
+title: 管理モジュール
+description: コントロールは、ページのコンテンツを構成するものです。
 author: shadykdc
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 20a3457e8e5b609af4653f658ebe650c8ae7d0e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368626"
 ---
-
 # <a name="control-module"></a>管理モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -102,5 +101,4 @@ ControlType: 「FileUpload」 &#124; 「バーコード」 &#124; 「入力」 &
 
 
 コントロールには、ControlType にリストされているタイプのいずれかを割り当てる必要があります。
-
 

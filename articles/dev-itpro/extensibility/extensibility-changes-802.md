@@ -1,30 +1,29 @@
 ---
-title: "Dynamics 365 for Finance and Operations 更新プログラム 8.0.2 の拡張機能の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.2 でリリースされた拡張機能を一覧表示します。"
+title: Dynamics 365 for Finance and Operations 更新プログラム 8.0.2 の拡張機能の変更
+description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.2 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-06-30
 ms.dyn365.ops.version: App 8.0.2
-ms.translationtype: HT
-ms.sourcegitcommit: ba03473dd6fc31d51fd4e890acac1cd1494ef5a3
 ms.openlocfilehash: f207323fce53e684514246c27bb159a5f48aa1eb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369837"
 ---
-
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-802"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.2 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ ms.lasthandoff: 08/09/2018
 |ProjPeriodPostingLedgerSales.enterRevenue|
 |ProjPeriodPostingLedgerSales.run|
 |ProjPlanVersionsManager.CopyHierarchy|
-|ProjPlanVersionsManager::copyHierarchy|
+|ProjPlanVersionsManager::CopyHierarchy|
 |ProjPlanVersionsManager::createDraftVersion|
 |ProjPlanVersionsManager::createTemplateHierarchy|
 |PurchAutoCreate_PurchReq.initializeAndCreatePurchLine|
@@ -89,4 +88,3 @@ ms.lasthandoff: 08/09/2018
 - 拡張子からマップのサポート: CustVendTrans
 - 拡張子からマップのサポート: CustVendTransOpen
 - SQL 明細書の機能拡張をサポート: PriceDiscAdmCheckPost.postJournal
-

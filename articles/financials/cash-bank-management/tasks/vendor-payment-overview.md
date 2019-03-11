@@ -1,13 +1,13 @@
---- 
-title: "仕入先支払の概要"
-description: "このガイドでは、仕入先支払の作成に使用するさまざまな方法について説明します。また、支払提案の使用方法または手動で 1 回限りの支払入力方法についても説明します。"
+---
+title: 仕入先支払の概要
+description: このガイドでは、仕入先支払の作成に使用するさまざまな方法について説明します。また、支払提案の使用方法または手動で 1 回限りの支払入力方法についても説明します。
 author: kweekley
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d892366a11edcd92f34f37b3e855631820ba816b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
-ms.openlocfilehash: e9a94231f755ff23bb442d62e90daff8f2d1f4fb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/30/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359960"
 ---
 # <a name="vendor-payment-overview"></a>仕入先支払の概要
 
@@ -76,5 +76,4 @@ ms.lasthandoff: 10/30/2017
 32. [OK] をクリックします。
 33. [OK] をクリックして支払を生成します。
 34. すべての支払が承認され、生成された場合は、[転記] をクリックします。 
-
 

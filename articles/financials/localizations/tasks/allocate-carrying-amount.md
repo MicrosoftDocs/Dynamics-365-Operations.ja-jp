@@ -1,13 +1,13 @@
---- 
-title: "資産グループへの共有資産とのれんの帳簿価額の配賦"
-description: "この手順では、各資産グループへの共有資産と営業権の帳簿価額の配賦について説明します。"
+---
+title: 資産グループへの共有資産とのれんの帳簿価額の配賦
+description: この手順では、各資産グループへの共有資産と営業権の帳簿価額の配賦について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetImpairmentSharedAssetAlloc_JP, AssetImpairmentPopulateAllocation_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: ca6d9e1888240f463e02c16882d6da79917e5432
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371102"
 ---
 # <a name="allocate-carrying-amount-of-shared-asset-and-goodwill-to-cash-generating-units"></a>資産グループへの共有資産とのれんの帳簿価額の配賦
 
@@ -58,5 +58,4 @@ ms.lasthandoff: 10/16/2018
     * 前のステップを繰り返して個別に比率をコンフィギュレーションすることもできます。  
 6. 一覧で、すべての行のマークを設定または解除します。
 7. [OK] をクリックします。
-
 

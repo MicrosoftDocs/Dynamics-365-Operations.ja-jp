@@ -1,13 +1,13 @@
---- 
-title: "顧客支払条件の設定"
-description: "この手順では、現金割引と期日の設定を定義します。"
+---
+title: 顧客支払条件の設定
+description: この手順では、現金割引と期日の設定を定義します。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 49f4047ab4bff6bdfbe8326a6680f9d8f9762c95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e0e43962bea3ff1c3adafa73da4ce3862963a51
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312488"
 ---
 # <a name="establish-customer-payment-terms"></a>顧客支払条件の設定
 
@@ -66,5 +66,4 @@ ms.lasthandoff: 09/29/2017
     * 「請求明細行の勘定」を選択した場合、現金割引は、仕入先請求書明細行の同じ資産/経費用主勘定に転記されます。 「仕入先請求書用に主勘定を使用する」を選択した場合、現金割引は、「仕入先請求書用主勘定」に定義する主勘定に転記されるようになります。 この例では、「仕入先請求書用に主勘定を使用する」を選択します。  
 26. 現金割引が転記される仕入先請求書用の主勘定を入力します。
 27. [保存] をクリックします。
-
 

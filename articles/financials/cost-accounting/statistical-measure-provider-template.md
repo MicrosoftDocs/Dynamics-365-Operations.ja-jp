@@ -1,32 +1,31 @@
 ---
-title: "統計分析コード メンバーと統計測定プロバイダー テンプレート"
-description: "このトピックでは、統計分析コード メンバーと統計測定プロバイダー テンプレートについて説明します。 統計分析コード メンバーは、コスト配分やコスト配賦などのポリシーの配賦基準として使用できます。 また、非金銭的コスト消費を報告するために使用することもできます。"
+title: 統計分析コード メンバーと統計測定プロバイダー テンプレート
+description: このトピックでは、統計分析コード メンバーと統計測定プロバイダー テンプレートについて説明します。 統計分析コード メンバーは、コスト配分やコスト配賦などのポリシーの配賦基準として使用できます。 また、非金銭的コスト消費を報告するために使用することもできます。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cc9170f10fe2be0446b1c974a50dbdf1cb5fe236
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8c74c47a5e0ca72fc4509786b091a70b5e292b54
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360305"
 ---
-
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>統計分析コード メンバーと統計測定プロバイダー テンプレート
 
 [!include [banner](../includes/banner.md)]
@@ -132,7 +131,7 @@ HcmEmployment テーブルには、インスタンス内のすべての従業員
 > [!NOTE]
 > この例では、**実際のバージョン** のリレーションのみを作成します
 
-**原価会計元帳** \> **実際のバージョン** \> **管理** \> **統計測定** に移動して、関係を確立します。 このシナリオでは、Finance and Operations からデータを抽出するため、**Dynamics 365 for Finance and Operations - 統計測定**データ コネクタを選択します。
+**原価会計元帳** \> **実際のバージョン** \> **管理** \> **統計測定** に移動して、関係を確立します。 このシナリオでは、Finance and Operations からデータを抽出するため、**Dynamics 365 for Finance and Operations – 統計測定**データ コネクタを選択します。
 
 **データ ソース**
 
@@ -220,7 +219,7 @@ ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生�
 > [!NOTE]
 > この例では、**実際のバージョン** のリレーションのみを作成します
 
-**原価会計元帳** \> **実際のバージョン** \> **管理** \> **統計測定** に移動して、関係を確立します。 このシナリオでは、Finance and Operations からデータを抽出するため、**Dynamics 365 for Finance and Operations - 統計測定**データ コネクタを選択します。
+**原価会計元帳** \> **実際のバージョン** \> **管理** \> **統計測定** に移動して、関係を確立します。 このシナリオでは、Finance and Operations からデータを抽出するため、**Dynamics 365 for Finance and Operations – 統計測定**データ コネクタを選択します。
 
 **データ ソース**
 
@@ -347,4 +346,3 @@ ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生�
 ## <a name="additional-resources"></a>その他のリソース
 
 [配賦基準](allocation-bases.md)
-

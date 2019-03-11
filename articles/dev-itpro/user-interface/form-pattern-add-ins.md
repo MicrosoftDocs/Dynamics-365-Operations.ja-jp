@@ -1,13 +1,13 @@
 ---
-title: "フォーム パターンをサポートする Visual Studio アドイン"
-description: "Visual Studio のツールには、パターンの使用をサポートするいくつかのアドインが含まれています。"
+title: フォーム パターンをサポートしている Visual Studio アドイン
+description: Visual Studio のツールには、パターンの使用をサポートするいくつかのアドインが含まれています。
 author: jasongre
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fbb172828f1a271575a0f7f483b7205370336be8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369140"
 ---
-
-# <a name="visual-studio-add-ins-that-support-form-patterns"></a>フォーム パターンをサポートする Visual Studio アドイン
+# <a name="visual-studio-add-ins-that-support-form-patterns"></a>フォーム パターンをサポートしている Visual Studio アドイン
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +35,6 @@ Visual Studio のツールには、パターンの使用をサポートするい
 ![フォーム統計レポート](media/form-statistics.png) 
 
 ## <a name="forms-pattern-report"></a>フォームのパターン レポート
-**フォーム パターン**レポートは、フォームがトップレベル フォーム パターンを使用するかどうか、ユーザー定義のフォームかどうか、フォーム パターンを指定しないかどうかなど、すべてのフォームについてのパターン情報を示します。 **フォーム パターン**レポートを生成するには、Microsoft Visual Studio を起動し、**DYNAMICS 365** メニューをクリックし、**アドイン** を展開してから **フォーム パターン レポートを実行** をクリックします。 このプロセスは数秒かかります。 レポートが生成されると、ダイアログ ボックスにレポートの場所を提供します。 指定された場所を参照し、Microsoft Excel でファイルを開きます。 興味のあるモデルまでレポートをフィルター処理することができます。
+**フォーム パターン**レポートは、フォームがトップレベル フォーム パターンを使用するかどうか、ユーザー定義のフォームかどうか、フォーム パターンを指定しないかどうかなど、すべてのフォームについてのパターン情報を示します。 **フォーム パターン** レポートを生成するには、Microsoft Visual Studio を起動し、**DYNAMICS 365**  メニューをクリックし、**アドイン** を展開してから **フォーム パターン レポートを実行** をクリックします。 このプロセスは数秒かかります。 レポートが生成されると、ダイアログ ボックスにレポートの場所を提供します。指定された場所を参照し、Microsoft Excel でファイルを開きます。興味のあるモデルまでレポートをフィルター処理することができます。
 
-Visual Studio アドインの詳細については、[Visual Studio 用のツールおよびアドイン](../dev-tools/developer-tools-add-ins.md) を参照してください。
-
+Visual Studio アドインの詳細については、[Visual Studio 用のツールおよびアドイン](../dev-tools/developer-tools-add-ins.md)を参照してください。

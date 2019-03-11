@@ -1,29 +1,24 @@
 ---
-title: "Dynamics 365 for Retail へようこそ"
-description: "Dynamics 365 for Retail のホームページ"
+# required metadata
+title: Dynamics 365 for Retail へようこそ
+description: Dynamics 365 for Retail のホームページ
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: null
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: null
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.search.scope: 'Core, Operations, Retail'
+ms.custom: null
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
 ---
 
 # <a name="welcome-to-dynamics-365-for-retail"></a>Dynamics 365 for Retail へようこそ
@@ -33,7 +28,7 @@ ms.lasthandoff: 08/09/2018
 Microsoft Dynamics 365 for Retail は、すべてのチャネルの商取引を一元管理するエンド ツー エンドの小売用ソリューションです。 販売、モビリティ、インテリジェンス、生産性が含まれ、クラウドファースト、モバイルファーストで小売業者や作業者がより多くのことを実現するために役立ちます。 Retail では、販売促進、在庫、チャネルの管理機能など、さまざまなビジネス プロセスの運用を包括的にサポートします。 また、すべてのタッチポイントで没入型のカスタマー エクスペリエンスを提供します。
 
 > [!NOTE]
-> Dynamics 365 for Retail は、Dynamics 365 for Finance and Operations および Dynamics 365 for Talent と密接に関係しています。 3 つすべての製品で同じ機能が表示される可能性があります。 このため、主に Retail に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Retail になります。主にコア製品 (Finance and Operations) に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Finance and Operations になります。主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。
+> Dynamics 365 for Retail は、Dynamics 365 for Finance and Operations およびDynamics 365 for Talent に密接に関係しています。 3 つすべての製品で同じ機能が表示される可能性があります。 このため、主に Retail に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Retail になります。主にコア製品 (Finance and Operations) に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Finance and Operations になります。主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。
 
 左ウィンドウで機能領域を選択すると詳細が表示されます。
 
@@ -82,7 +77,7 @@ MPOS は、PC、タブレット、および電話用の POS アプリケーシ�
 - [Dynamics 365 for Retail IT プロおよび開発者向け](dev-itpro/dev-retail-home-page.md)
 - [Dynamics 365 for Finance and Operations の開発と管理](../dev-itpro/dev-tools/developer-home-page.md)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 ### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
@@ -90,9 +85,8 @@ MPOS は、PC、タブレット、および電話用の POS アプリケーシ�
 
 ### <a name="blogs"></a>ブログ
 
-Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog) を参照してください。
+Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog)を参照してください。
 
 [Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、Retail に関する多くの投稿があります。 これらの投稿の一部は、以前のバージョンの Retail 用に書かれたものですが、同じ概念が適用されます。 手順も、現在のバージョンと似ています。
 
 [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
-

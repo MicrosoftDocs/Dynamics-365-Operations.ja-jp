@@ -1,14 +1,14 @@
 ---
-title: "Finance and Operations Retail プロジェクトを実装してください"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail 実装プロジェクトの推奨事項について説明します。"
+title: Finance and Operations Retail プロジェクトの実装
+description: このトピックでは、Microsoft Dynamics 365 for Retail実装プロジェクトのための推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
@@ -17,16 +17,14 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: c340fcdb8ad5ca95defa757b4e469e065c391b32
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369432"
 ---
-
-
-# <a name="implement-finance-and-operations-retail-projects"></a>Finance and Operations Retail プロジェクトを実装してください
+# <a name="implement-finance-and-operations-retail-projects"></a>Finance and Operations Retail プロジェクトの実装
 
 [!include [banner](../../includes/banner.md)]
 
@@ -41,4 +39,3 @@ Retail 機能を含む Microsoft Dynamics 365 for Finance and Operations の実�
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
 
 [テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
-

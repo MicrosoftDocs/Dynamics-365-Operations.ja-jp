@@ -1,13 +1,13 @@
---- 
-title: "デバイスの作成と関連付け"
-description: "この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。"
+---
+title: デバイスの作成と関連付け
+description: この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bb199c9d7cf75827445be4aa8a18cc68698b027c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 19be7c38e9612b54fe56ef6e0fd942587dd64a69
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354049"
 ---
 # <a name="create-and-associate-a-device"></a>デバイスの作成と関連付け
 
@@ -40,5 +40,4 @@ ms.lasthandoff: 02/07/2018
 8. 一覧で、目的のレコードを見つけ、選択します。
 9. 一覧で、選択された行のリンクをクリックします。
 10. [保存] をクリックします。
-
 

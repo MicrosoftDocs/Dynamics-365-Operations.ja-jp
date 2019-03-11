@@ -1,13 +1,13 @@
 ---
-title: "製品コンフィギュレーション モデルの構築"
-description: "特別な条件を満たすために製品をコンフィギュレーションする必要は、企業間および企業と顧客間の関係、両方において例外ではなくルールになってきました。"
+title: 製品コンフィギュレーション モデルの構築
+description: 特別な条件を満たすために製品をコンフィギュレーションする必要は、企業間および企業と顧客間の関係、両方において例外ではなくルールになってきました。
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327461"
 ---
-
 # <a name="build-a-product-configuration-model"></a>製品コンフィギュレーション モデルの構築
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ ms.lasthandoff: 02/07/2018
 
 ユーザー定義のテーブル制約は、ユーザーによって構築されます。 ユーザーは属性タイプの組み合わせを選択して、テーブルの列を表し、選択した属性タイプのドメインから値を入力して、テーブル制約の行を作ります。  
 
-システム定義のテーブル制約は参照として使用する [Microsoft Dynamics 365 for Finance and Operations] テーブルを選択することによって定義され、このテーブルからフィールドを選択して、制限の列を作ります。 テーブル制約の行は、コンフィギュレーション時に存在する [Finance and Operations] テーブルの行です。  
+システム定義のテーブル制約は参照として使用する Microsoft Dynamics 365 for Finance and Operations テーブルを選択することによって定義され、このテーブルからフィールドを選択して、制限の列を作ります。 テーブル制約の行は、コンフィギュレーション時に存在する [Finance and Operations] テーブルの行です。  
 
 テーブル制約は、テーブル制約定義を参照し、モデルの中で該当する属性をテーブル制限の列へマッピングすることによって製品コンフィギュレーション モデルに含まれます。
 
@@ -110,7 +109,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 ### <a name="the-configuration-page"></a>コンフィギュレーション ページ
 
-コンポーネントの間を移動するには [次へ] をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
+コンポーネントの間を移動するには**次へ**をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
 
 ## <a name="finalizing-a-model-for-configuration"></a>コンフィギュレーション モデルの完成
 製品コンフィギュレーション モデルをコンフィギュア ツー オーダーのシナリオで使用する準備が整ったら、バージョンを作成する必要があります。 ただし、モデリング経験を豊かにできる複数のオプションがあります。
@@ -136,7 +135,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 ### <a name="pcadaptor-class"></a>PCAdaptor クラス
 
-製品コンフィギュレーション モデルのデータ構造を公開する一連の [PCAdaptor] クラスの使用により API　が実装されます。 [PCAdaptor] クラスのインスタンスは拡張される各モデルごとに作成する必要があります。 コンフィギュレーション セッションの完了後、システムはこのクラスのインスタンスをチェックし、見つければ実行します。  
+製品コンフィギュレーション モデルのデータ構造を公開する一連の **PCAdaptor** クラスの使用により API　が実装されます。 **PCAdaptor** クラスのインスタンスは拡張される各モデルごとに作成する必要があります。 コンフィギュレーション セッションの完了後、システムはこのクラスのインスタンスをチェックし、見つければ実行します。  
 
 次のフロー ダイアグラムは、プロセスの概要を示します。  
 
@@ -158,7 +157,6 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 ### <a name="multiple-sites-and-intercompany"></a>複数のサイトと会社間
 
 生産が行われるサイトまたは会社とは異なるサイトもしくは会社でコンフィギュレーションが実行される場合、BOM および工順が供給会社の仕入先サイトに対して作成され、そこに置かれます。 製品バリアントは、サプライ チェーンに関わるすべての会社にリリースされます。
-
 
 
 

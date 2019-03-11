@@ -1,13 +1,13 @@
---- 
-title: "資産除去債務見積の調整"
-description: "日本では、資産除去責務 (ARO) の最初の見積を調整できます。"
+---
+title: 資産除去債務見積の調整
+description: 日本では、資産除去責務 (ARO) の最初の見積を調整できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 7e441105b35bbfe53d208195c8164458c816a7a0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371035"
 ---
 # <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 
@@ -68,5 +68,4 @@ ms.lasthandoff: 10/16/2018
 12. [OK] をクリックします。
     * 調整が提案されていることを確認します。 提案された金額は現在の値に割引されます。  
 13. [転記] をクリックします。
-
 

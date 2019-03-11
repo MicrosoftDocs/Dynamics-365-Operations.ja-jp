@@ -1,12 +1,12 @@
 ---
-title: "Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール"
+title: Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -14,16 +14,15 @@ ms.custom: 19081
 ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 21ec32bafeeb51fd64f579270b0def656fc2548e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368304"
 ---
-
 # <a name="infrastructure-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
 
 [!include [banner](../../includes/banner.md)]
@@ -46,7 +45,7 @@ Microsoft Dynamics Lifecycle Services インフラストラクチャ見積もり
 -   Microsoft Dynamics AX でトレーニング ユーザーをサポートする環境の見積もりを作成します。 トレーニング環境に提供される見積は、大量のトランザクション負荷をサポートするようには設計されていません。 見積には、最大 4 台のコンピューターを含めることができます。
 
 ## <a name="server-roles"></a>サーバー ロール
-サーバーの役割は、Microsoft Dynamics AX 環境の主要なコンポーネントを表します。 各サーバーは、複数のロール要件を満たすために使用できます (たとえば、Analysis Services および Reporting Services を同じコンピュータに配置)。 インフラストラクチャ見積もりツールでは、各サーバー ロールには、処理能力を事前定義された量が必要です。 インフラストラクチャ見積もりツールは、環境の各ロールの CPU および RAM 要件を満たす最小サーバーを選択します。 環境によっては、次のサーバー ロールが必要な場合があります。
+サーバー ロールは、Microsoft Dynamics AX 環境の主要なコンポーネントを表します。 各サーバーは、複数のロール要件を満たすために使用できます (たとえば、Analysis Services および Reporting Services を同じコンピュータに配置)。 インフラストラクチャ見積もりツールでは、各サーバー ロールには、処理能力を事前定義された量が必要です。 インフラストラクチャ見積もりツールは、環境の各ロールの CPU および RAM 要件を満たす最小サーバーを選択します。 環境によっては、次のサーバー ロールが必要な場合があります。
 
 | 役割                          | 条件                                                                                 |
 |-------------------------------|-------------------------------------------------------------------------------------------|
@@ -112,7 +111,6 @@ Microsoft Dynamics Lifecycle Services インフラストラクチャ見積もり
 
 ## <a name="view-infrastructure-estimates"></a>インフラストラクチャの見積もりの表示
 主要なインフラストラクチャ見積もりツールページで、詳細を表示する見積もりを選択します。
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "発注書の製品パッケージの作成"
-description: "この手順では、製品パッケージを作成し、発注書を使用する方法を説明します。"
+---
+title: 発注書の製品パッケージの作成
+description: この手順では、製品パッケージを作成し、発注書を使用する方法を説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b7a7386a9be15f4eeef7aaab73cb320b71994eea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d89744a4dbe52d201dc370b5cde151cc579508ea
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360443"
 ---
 # <a name="create-product-packages-for-purchase-orders"></a>発注書の製品パッケージの作成
 
@@ -72,5 +72,4 @@ ms.lasthandoff: 02/07/2018
 16. [数量] フィールドに数値を入力します。
 17. [作成] をクリックします。
 18. [保存] をクリックします。
-
 

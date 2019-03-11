@@ -1,13 +1,13 @@
 ---
-title: "予算計画データ配賦"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations で利用できるさまざまな配賦方法と、その使用方法について説明します。"
+title: 予算計画データ配賦
+description: この記事は、Microsoft Dynamics 365 for Finance and Operations で利用できるさまざまな配賦方法と、その使用方法ついて説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 430040f7b3706aa1ad913d70c0dbcab9249ea222
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b5f262318b4defb941f1216d0bfe06961f62bad4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352508"
 ---
-
 # <a name="budget-planning-data-allocation"></a>予算計画データの配賦
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、Microsoft Dynamics 365 for Finance and Operations で利用できるさまざまな配賦方法と、その使用方法について説明します。  
+この記事は、Microsoft Dynamics 365 for Finance and Operations で利用できるさまざまな配賦方法と、その使用方法ついて説明します。  
 
 予想金額を正確に描くさまざまな方法で予算計画のデータを配分できます。
 
@@ -56,11 +55,11 @@ ms.lasthandoff: 03/26/2018
 **予算計画からのコピー** – 配分配賦の方法のように、関連する予算計画の明細行に基づいて、ターゲットに予算計画明細行を作成します。 ただし、この方法の場合、ソース予算計画は親である必要はありませんが、予算計画階層の上位になる可能性があります。 この配賦方法は、結合された金額をさらに上位レベルで予算とする場合に役立ち、詳細な確認と調整を行うには組織の下位レベルに転送させると、上位レベルの承認を受けられます。          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>予算計画の配賦方法を使用
-予算計画ページで配賦を実行するには、配賦する明細行を選択し、[予算の配賦] をクリックします。
+予算計画ページで配賦を実行するには、配賦する明細行を選択し、**予算の配賦**をクリックします。
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
-次に、配賦方法を選択します。 残りのフィールドが選択した方法に基づいて設定されます。 これらのフィールドでは、予算計画データのソースとターゲット、および目標金額が作成される際に指定した係数をソースに掛けられる、バルク調整を簡単にするためのオプションが含まれます。 [計画への追加] オプションも設定できます。 [いいえ] を選択して既存の予算計画明細行を置き換えるか、[はい] を選択して既存の予算計画明細行をそのままにし、配賦済金額の新しい明細行を追加します。
+次に、配賦方法を選択します。 残りのフィールドが選択した方法に基づいて設定されます。 これらのフィールドでは、予算計画データのソースとターゲット、および目標金額が作成される際に指定した係数をソースに掛けられる、バルク調整を簡単にするためのオプションが含まれます。 **計画への追加**オプションも設定できます。 **いいえ**を選択して既存の予算計画明細行を置き換えるか、**はい**を選択して既存の予算計画明細行をそのままにし、配賦済金額の新しい明細行を追加します。
 
 ## <a name="automating-allocations-during-a-workflow"></a>ワークフロー中の配賦の自動化
 1 つの強力な機能を使用して、予算計画のワークフローの一部として配賦を自動的に実行できます。 予算計画はそのワークフローで進行するため、指定した予算計画ステージで自動化タスクで配賦を開始できます。 
@@ -72,7 +71,6 @@ ms.lasthandoff: 03/26/2018
 最後に、目的のワークフロー ステージで予算計画ステージ配賦の自動化タスクを追加します。 次の例では、2 つの予算計画ステージ配賦 (赤に示されています) がワークフローに挿入されます。
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "会社固有の人事管理 (HR) パラメーターの設定"
-description: "他のパラメーター設定は会社固有ですが、人事管理 (HR) のパラメーター設定は会社間で共有されます。 この記事は、会社固有の HR パラメーターを設定する方法を説明します。"
+title: 会社固有の人事管理 (HR) パラメーターの設定
+description: 他のパラメーター設定は会社固有ですが、人事管理 (HR) のパラメーター設定は会社間で共有されます。 この記事は、会社固有の HR パラメーターを設定する方法を説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305222"
 ---
-
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>会社固有の人事管理 (HR) パラメーターの設定
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 08/09/2018
 2 つのページが人事管理 (HR) のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター**ページを使用します。 会社固有のパラメータ (つまり、設定を単一の会社に適用する場合) に、**人事管理パラメータ**ページを使用します。 **人事管理パラメーター**ページで、設定は 6 つのタブに分割されます:
 
 -   一般
--   採用 - これは Dynamics 365 for Talent には含まれていません。
+-   採用 - これは Dynamics 365 for Talent には含まれていません
 -   報酬
 -   番号順序
 -   育児介護休業法 (FMLA)
@@ -61,7 +60,6 @@ ms.lasthandoff: 08/09/2018
 --------
 
 [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md)
-
 
 
 

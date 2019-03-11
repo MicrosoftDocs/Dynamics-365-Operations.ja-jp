@@ -1,30 +1,29 @@
 ---
-title: "アクション デザインのガイドライン"
-description: "このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。"
+title: アクション デザインのガイドライン
+description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
 author: makhabaz
 manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
+ms.openlocfilehash: f730acbd259cb588f051809c38c913cdf91ff51d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 62e92ee3e50510fdce0f437c0434b69bd19a5e4b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368444"
 ---
-
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 
 [!include [banner](../../includes/banner.md)]
@@ -108,4 +107,3 @@ ms.lasthandoff: 04/20/2018
             }, 
         }; 
     }
-

@@ -1,13 +1,13 @@
 ---
-title: "ミックス モードの計画 - ディスクリート、プロセス、およびリーン ソーシングを組み合わせる"
-description: "このトピックは、ミックス モードの計画に関する情報を提供します。"
+title: ミックス モードの計画 - ディスクリート、プロセス、およびリーン ソーシングを組み合わせる
+description: このトピックは、ミックス モードの計画に関する情報を提供します。
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358235"
 ---
-
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>ミックス モードの計画 - ディスクリート、プロセス、およびリーン ソーシングを組み合わせる
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、ミックス モードの計画に関する情報を提供します。 ミックス モードの計画では、材料フローに基づいてサプライ チェーンをシミュレーションできます。 Microsoft Dynamics 365 for Finance and Operations は、選択された供給ポリシー (かんばん、製造指図、購買発注、バッチ注文、または転送指図) にかかわらず、材料フローがモデルに従っていることを確認します。 
+このトピックは、ミックス モードの計画に関する情報を提供します。 ミックス モードの計画では、材料フローに基づいてサプライ チェーンをシミュレーションできます。 Microsoft Dynamics 365 for Finance and Operations は、選択した供給ポリシー (かんばん、製造オーダー、発注書、バッチ オーダー、または移動オーダー) に関係なく、材料フローがモデルにならうことを確認します。 
 
 製品構造に関係なく製品を供給するための全体的な戦略を選択できます。  
 
@@ -67,7 +66,6 @@ Finance and Operations では、材料フローがモデルに従っているこ
 
 ## <a name="process-manufacturing--the-production-type"></a>プロセス製造 – 製造タイプ
 混合モードの完全な柔軟性を得るには、すべての製品に生産タイプ BOM を使用することをお勧めします。 次に、製造指図、かんばん、転送指図、または購買発注を使用して製品を供給することができます。 プロセス製造では、**式**、**連産物**、**副産物**、または**計画品目**の製造タイプを使用します。 かんばんと製造オーダーは、これらの生産タイプでは使用できません。
-
 
 
 

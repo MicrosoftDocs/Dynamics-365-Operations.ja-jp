@@ -1,13 +1,13 @@
 ---
-title: "ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。"
+title: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置用にドキュメント回覧エージェントをインストールして構成する方法について説明します。
 author: TJVass
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 01/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,30 +18,28 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 91a6765712132ae290ae0068b5470d2c8dbc99ed
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: 7d4a049a44374276655dce696b5bbbe2e6f9fba9
-ms.openlocfilehash: 659a33d96cf879c2c8e0c3fc3ebeefbad769b9e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/12/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "369531"
 ---
-
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置用にドキュメント回覧エージェントをインストールして構成する方法について説明します。
 
 ## <a name="whats-important-to-know"></a>知っている必要がある重要なこと
 
 - Finance and Operations は、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。
 - クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
-- ドキュメント回覧エージェントを構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
-- アプリケーションには、Adobe Acrobat Reader が必要です。
+- ドキュメント回覧エージェント (DRA) をインストールする場合は、管理者ユーザーとしてログインしていることを確認してください。
+- DRA を構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
+- DRA には、クライアント上に .NET 4.62 以降と Adobe Acrobat Reader が必要です。
 - クライアントは、Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、または Microsoft Windows Server 2016 でのみサポートされています。
-- Dynamics AX 7.0 および Platform Update 1 配置は、クライアントで Microsoft .NET 4 を要求します。
-- プラットフォーム更新プログラム 2 以降には、クライアントに .NET 4.62 が必要です。
 
 Finance and Operations アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
 
@@ -123,17 +121,18 @@ Finance and Operations アプリケーションは、ドキュメント回覧エ
 
 ドキュメント回覧エージェントは現在、サービスとしてのバックグラウンドでの実行をサポートしています。 クライアントの最新版をダウンロードしたことを確認する必要があります。 詳細については、[Windows サービスとしてドキュメント回覧エージェントを実行](run-document-routing-agent-as-windows-service.md) を参照してください。
 
-### <a name="will-microsoft-add-support-for-microsoft-windows-server-2008-servers"></a>Microsoft は Microsoft Windows Server 2008 サーバーのサポートを追加しますか。
+### <a name="do-i-need-to-update-credentials-or-refresh-azure-authentication-tokens-on-a-recurring-basis"></a>定期的に資格情報を更新するか、Azure 認証トークンを更新する必要がありますか。
 
-いいえ、この時点ではありません。 Azure の機能には、Microsoft Windows Server 2012 R2 と Microsoft Windows Server 2016 でのみ使用可能ないくつかの依存関係があります。
+はい。 Azure Active Directory トークンは 90 日おきに更新する必要があります。 更新しなかった場合、DRA は認証できなくなり、Dynamics 365 for Finance and Operations アプリケーションから印刷の指示を取得できなくなります。
 
-### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、Finance and Operations セキュリティ グループの一部である必要がありますか。
+### <a name="will-microsoft-add-support-for-microsoft-windowsserver2008-servers"></a>Microsoft は Microsoft Windows Server 2008 サーバーのサポートを追加しますか。
+
+いいえ、この時点ではありません。 Azure の機能には、Microsoft Windows Server 2012 R2 および Microsoft Windows Server 2016 でのみ使用可能ないくつかの依存関係があります。
+
+### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operationssecurity-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、Finance and Operations セキュリティ グループの一部である必要がありますか。
 
 はい。 エージェントのインストール リンクにアクセスするには、ユーザーは**ドキュメント ルート指定クライアント**のセキュリティ ロールの一部でなければなりません。
 
 ### <a name="how-many-network-printers-can-the-document-routing-agent-support"></a>ドキュメント回覧エージェントはいくつのネットワーク プリンターをサポートできますか。
 
 サポートされているネットワーク プリンターの数は、法人の数と配置されたネットワーク プリンターの数によって異なります。 50 台のプリンタと 1 つの法人組織がある場合は、単一のドキュメント ルーティング エージェントが負荷を処理できます (高可用性を確保するために複数のドキュメント ルーティング エージェントが必要になります)。 プリンタおよび法人の数が多い場合は、必要となるドキュメント回覧エージェントの数を決定するいくつかのパフォーマンス テストを実行することをお勧めします。
-
-ネットワーク印刷サービスの拡大縮小のメカニズムであるため、ドキュメント回覧エージェントの数を多くしすぎることはできません。
-

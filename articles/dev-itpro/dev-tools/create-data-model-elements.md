@@ -1,13 +1,13 @@
 ---
-title: "モデルとデータ モデル要素の作成"
-description: "このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用してフリート管理チュートリアルという名前の新しいモデルを作成します。 また、新しいモデルの要素を作成および編集します。"
+title: モデルとデータ モデル要素の作成
+description: このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、フリート管理チュートリアルという名前の新しいモデルを作成します。 また、新しいモデルの要素を作成および編集します。
 author: RobinARH
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: ff58bb6067cd516bf3fb5054879ca78fc458ce09
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368404"
 ---
-
 # <a name="create-models-and-data-model-elements"></a>モデルとデータ モデル要素の作成
 
 [!include [banner](../includes/banner.md)]
 
-このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して Microsoft Dynamics 365 for Finance and Operations でフリート管理チュートリアルという名前の新しいモデルを作成します。 また、新しいモデルの要素を作成および編集します。
+このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、Microsoft Dynamics 365 for Finance and Operations でフリート管理チュートリアルという名前の新しいモデルを作成します。 また、新しいモデルの要素を作成および編集します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 このチュートリアルでは、Finance and Operations 環境にアクセスし、管理者としてプロビジョニングする必要があります。
 
@@ -210,7 +209,6 @@ FMTCustomer のテーブル デザイナーで、テーブルに複数のフィ�
 5. **モデル**タブで、**ビルド**をクリックします。
 6. ダイアログ ボックスで **閉じる**をクリックします。
 7. **ウィンドウ**メニューで、**すべてのドキュメントを閉じる**をクリックして、開いているすべてのドキュメントを閉じます。
-
 
 
 

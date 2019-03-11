@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER) 関数の一覧の拡張"
-description: "テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式でサポートされています。 組み込み関数に加えて、電子申告により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。"
+title: 電子申告 (ER) 関数の一覧の拡張
+description: テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式でサポートされています。 組み込み関数に加えて、電子申告により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4d5e5dda02237dde0c3a5543ff3e0f3f7cb64b24
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368562"
 ---
-
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 
 [!include [banner](../includes/banner.md)]
 
 テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式でサポートされています。 組み込み関数に加えて、電子申告により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 
-Microsoft Dynamics 365 for Finance and Operations コードのすべての電子申告機能は、**ERExpression** クラスを拡張するクラスとして表示されます。 2 種類の関数が認識されます。
+Microsoft Dynamics 365 for Finance and Operations コードのすべての電子レポート機能は、**ERExpression** クラスを拡張するクラスとして表示されます。 2 種類の関数が認識されます。
 
 - **引数の数を固定** – これらの関数は、接頭語 **parm** (次のサンプルコードの **parmInput**、**parmStartNum**を参照してください) を持つメソッドを含むクラスで表されます。 引数の順序は、**SysOperationDisplayOrderAttribute** 属性によって設定されます。
 - **可変数の引数** – これらの機能は (**ERExpressionGenericCase** クラスを参照してください)**ERIObjectContainer** インターフェイスを実装するクラスで表されます。 追加の**追加**メソッドを使用して関数を受け入れる型を宣言します。
@@ -107,7 +106,7 @@ class ERExpressionStringMid extends ERExpressionString
 ## <a name="suggested-guidance"></a>推奨されるガイダンス
 次のガイダンスは、カスタム電子申告機能の設計を支援することを目的としています。
 
-- 電子レポート式が Excel と同様に維持されるようにため、可能な限り Microsoft Excel の関数名を再利用してください。 この方法で、電子申告のフォーミュラをエンド ユーザーにわかりやすく保持します。
+- 電子レポート式が Excel と同じようにされるため、可能な限り Microsoft Excel の関数名を再利用してください。 この方法で、電子申告のフォーミュラをエンド ユーザーにわかりやすく保持します。
 - 電子申告では、プリミティブ データ型のリスト タイプがサポートされません。 したがって、単一の **Value** 項目を持つデータ コンテナー リストを使用することに決めました。
 - 新しい関数の一覧の拡張機能を新しい Finance and Operations の修正プログラムとしてリリースします。 電子申告デザイナーは、新しいユーザー定義関数を使用する電子申告 コンフィギュレーションの修正プログラム番号を参照します。 このタイプの構成が Finance and Operations の新しいインスタンスにインポートされるときはいつでも、必要な修正プログラムがインストールされたかどうかが電子申告によって評価されて、電子申告構成と、構成がインポートされる Finance and Operations のバージョンとの間のコンプライアンスを維持します。
 
@@ -116,4 +115,3 @@ class ERExpressionStringMid extends ERExpressionString
 [電子申告の概要](general-electronic-reporting.md)
 
 [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
-

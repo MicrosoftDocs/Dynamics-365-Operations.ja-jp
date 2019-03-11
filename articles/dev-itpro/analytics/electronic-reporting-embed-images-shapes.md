@@ -1,38 +1,37 @@
 ---
-title: "ER を使用して生成されるドキュメントへの画像や図形の埋め込み"
-description: "このトピックでは、電子申告 (ER) ツールを使用して、画像や図形が埋め込まれた Microsoft Excel および Microsoft Word 形式のビジネス ドキュメントを生成する方法について説明します。"
+title: ER を使用して生成されるドキュメントへの画像や図形の埋め込み
+description: このトピックでは、電子申告 (ER) ツールを使用して、画像や図形が埋め込まれた Microsoft Excel および Microsoft Word 形式のビジネス ドキュメントを生成する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 27621
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: d87d53510c5b7d35457f81d6981d33cf1b8074f1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368841"
 ---
-
 # <a name="embed-images-and-shapes-in-documents-that-you-generate-by-using-er"></a>ER を使用して生成されるドキュメントへの画像や図形の埋め込み
 
 [!include [banner](../includes/banner.md)]
 
 電子申告 (ER) ツールを使用すると、必要な電子ドキュメントを生成するために実行することができるレポートを設計することができます。 Microsoft Excel また Microsoft Word ドキュメントを使用してレポートのレイアウトを指定することができます。 ER Operations デザイナーを使用すると、レポートのテンプレートとして Excel または Wordドキュメントを添付できます。 添付されたテンプレートの名前付き要素は、ER レポートの書式要素に関連付けられます。 レポートの要素の書式設定は、データ ソースにバインドされます。 これらの要素は、実行時に生成されるドキュメントに入力されるデータを指定します。
 
-この新しい機能は、Microsoft Office 形式の文書を作成するための既存の ER 機能を超えています。 詳細については、次のタスク ガイドを実行してください。 これらのタスク ガイドは 7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの下で見つけることができます。
+この新しい機能は、Microsoft Office 形式の文書を作成する点で既存の ER 機能を超えています。 詳細については、次のタスク ガイドを実行してください。 これらのタスク ガイドは 7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの下で見つけることができます。
 
 - ER は、OPENXML 形式でレポートを生成するコンフィギュレーションを設計する
 - ER は、Microsoft WORD 形式でレポートを生成するコンフィギュレーションを設計
@@ -93,4 +92,3 @@ ms.lasthandoff: 08/13/2018
 次の図は、Excel テンプレートから生成された支払い小切手のテスト印刷の例です。
 
 [![支払チェック テスト印刷](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
-

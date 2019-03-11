@@ -1,13 +1,13 @@
 ---
-title: "リーン生産の概要"
-description: "この記事では、Dynamics 365 for Finance and Operations のリーン生産の機能の概要と説明を提供します。"
+title: リーン生産の概要
+description: この記事では、Dynamics 365 for Finance and Operations のリーン生産の機能の概要と説明を提供します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359891"
 ---
-
 # <a name="lean-manufacturing-overview"></a>リーン生産の概要
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ lean manufacturing の土台を作成するには、生産および物流プロ�
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a>かんばんを使用した要望要求のシグナル
 プル システムでは商品が必要な場合にのみ商品が作成されます。 このプラクティスにより、出荷のリード タイムと過剰な在庫が減少します。 かんばんを使用して、生産フローに基づいく条件を計画、追跡およびプロセス処理できます。 かんばんフレームワークを作成するには、かんばんを作成する時間、および要求が満たされる方法を定義するかんばんルールを作成します。 かんばんルールは 2 種類作成できます。 製造ルールはプロセスかんばん作業を作成し、および撤回かんばんルールは転送かんばん作業を作成します。 次の補充戦略を設定できます。
--   **固定数量** かんばんルールは材料取り扱い単位の固定数に関連付けられるため、有効なかんばん数に比例することを意味します。 かんばんのすべての製品が消費され、材料取り扱い単位を手動で空けられる場合は、同じタイプの新しいかんばんが作成されます。 固定数量かんばんルールを作成する際に、最適なかんばん数量および使用された製品の量を計算できます。 計算は、予測、オープン注文の実需、品目を補充するリード タイム、および履歴需要を考慮します。
+-   **固定数量** かんばんルールは材料取り扱い単位の固定数に関連付けられるため、有効なかんばん数に比例することを意味します。 かんばんのすべての製品が消費され、材料取り扱い単位を手動で空白にする場合は、同じタイプの新しいかんばんが作成されます。固定数量かんばんルールを作成する際に、最適なかんばん数量および使用された製品の量を計算できます。 計算は、予測、オープン注文の実需、品目を補充するリード タイム、および履歴需要を考慮します。
 -   **スケジュール済** かんばんルールは、マスター プランによって計算される要求を補充します。 マスター プランによって、かんばんに確定する計画かんばんが生成されます。
 -   **イベント** かんばんルールにより、販売注文明細行、生産の BOM 明細行、かんばん明細行または最小在庫設定により生じる必要量を補充します。 イベントかんばんが生成されると、それらはソース要件に固定されます。
 
@@ -79,7 +78,6 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 また、lean manufacturing は下請活動によって参照されるサービスの購買および請求プロセスをサポートします。
 -   下請活動に、購買契約書明細行およびサービスを割り当てることができます。
 -   サービスの購買および請求をサポートする、定期的な発注書と受領通知を作成できます。
-
 
 
 

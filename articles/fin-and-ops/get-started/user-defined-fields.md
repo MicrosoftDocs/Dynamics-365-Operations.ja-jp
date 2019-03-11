@@ -1,13 +1,13 @@
 ---
-title: "カスタム フィールドの作成および作業"
-description: "このトピックでは、どのように Microsoft Dynamics 365 for Finance and Operations で、一部のユーザーがアプリケーションをビジネスに合わせて調整するためのカスタム フィールドを作成できるかを示します。"
+title: カスタム フィールドの作成と操作
+description: このトピックでは、どのように Microsoft Dynamics 365 for Finance and Operations で、一部のユーザーがアプリケーションをビジネスに合わせて調整するためのカスタム フィールドを作成できるかを示します。
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348023"
 ---
-
-# <a name="create-and-work-with-custom-fields"></a>カスタム フィールドの作成および作業
+# <a name="create-and-work-with-custom-fields"></a>カスタム フィールドの作成と操作
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +68,7 @@ Microsoft Dynamics 365 for Finance and Operations が、広範囲なビジネス
 カスタム フィールドを作成しフォームに公開した後、システム内の他のユーザーに新しいフィールドを含む更新されたページ ビューを提供したいかもしれません。 これは、製品の個人用設定機能を使用して、2つの異なる方法で実行できます。
 
 - 推奨される工順は、すべてのユーザーまたはユーザーのサブセットに個人用設定をプッシュできるシステム管理者によるものです。 詳細については、[ユーザー エクスペリエンスのパーソナライズ](personalize-user-experience.md) を参照してください。
-- 或いは、変更内容をエクスポートし ([*個人用設定*] と呼ぶ) 1 つまたは複数のユーザーに送信し、これらのユーザーのそれぞれに変更をインポートさせることが可能です。 個人用設定のツールバー上の **管理** オプションで、個人用設定をエクスポートし、インポートすることができます。
+- 或いは、変更内容をエクスポートし (*個人用設定* と呼ぶ) 1 つまたは複数のユーザーに送信し、これらのユーザーのそれぞれに変更をインポートさせることが可能です。 個人用設定のツールバー上の **管理** オプションで、個人用設定をエクスポートし、インポートすることができます。
 
 ## <a name="managing-custom-fields"></a>カスタム フィールドを管理
 
@@ -89,13 +88,13 @@ Microsoft Dynamics 365 for Finance and Operations が、広範囲なビジネス
 
 カスタム フィールドが作成されると、カスタム フィールドに関する特定の情報のみが **カスタム フィールド** ページで変更可能です。
 
-これらの属性の変更が [*可能*] です。
+これらの属性の変更が *可能* です。
 
 - ラベル
 - ヘルプ テキスト
 - テキスト フィールドの長さ
 
-次の属性の編集が [*不可能*] です。
+次の属性の編集が *不可能* です。
 
 - フィールド名
 - データ型
@@ -160,4 +159,3 @@ Microsoft Dynamics 365 for Finance and Operations が、広範囲なビジネス
 - テーブルは、別のテーブルを拡張できません。
 - テーブルは、システム テーブルとしてマークできません。
 - テーブルは、一時的テーブルになることができますか。
-

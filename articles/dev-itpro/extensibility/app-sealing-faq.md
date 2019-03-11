@@ -1,30 +1,29 @@
 ---
-title: "拡張性 FAQ"
-description: "このトピックでは、拡張機能に関してよくある質問に対する回答を示します。"
+title: 拡張性 FAQ
+description: このトピックでは、拡張機能に関してよくある質問に対する回答を示します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: 9aab2503b38fa25878b3db641531d713a1a0e327
 ms.openlocfilehash: 28568d7a959d3b29e7ea179c018c7e2fb9bd7e7e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368733"
 ---
-
 # <a name="extensibility-faq"></a>拡張性 FAQ
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Yammer で Operations Extensibility グループに対するアクセスを取�
 
 ## <a name="where-can-i-get-information-about-extensibility-training"></a>拡張性のトレーニングに関する情報を取得する場所は?
 
-トレーニング セッションを複数の方法で公表します。 AppSource パートナーは、一部のセッションについて直接招待を受ける可能性があります。 Operations Extensibility Yammer グループおよびその他のフォーラムのワーク ショップも公表します。  
+トレーニング セッションを複数の方法で公表します。 AppSource パートナーは一部のセッションについて直接招待を受ける可能性があります。 Operations Extensibility Yammer グループおよびその他のフォーラムのワーク ショップも公表します。  
 
 ## <a name="what-is-the-goal-of-sealing-the-application"></a>アプリケーションの封印の目的は何ですか ?
 
@@ -73,7 +72,7 @@ ISV もモデルを封印することをお勧めします。 このステップ
     
 ## <a name="how-often-will-microsoft-provide-external-updates-so-that-partners-can-see-what-extensibility-enhancements-have-been-made"></a>どのくらいの頻度で Microsoft は外部更新を提供することで、パートナーがどの拡張性の強化が実行されたかを確認できますか。
 
-Microsoft Dynamics 365 for Finance and Operations release 8.0 より後は、プラットフォームとアプリケーションの毎月の更新プログラムの提供を予定しています。
+Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プラットフォームおよびアプリケーションの月ごとの更新プログラムを提供する計画です。
 
 ## <a name="why-wasnt-my-extensibility-request-accepted"></a>拡張性要求が承認されなかった理由を教えてください。
 
@@ -105,4 +104,3 @@ Microsoft Dynamics 365 for Finance and Operations release 8.0 より後は、プ
 - 要求: 拡張を通じてセキュリティ権限を変更可能にする。
 - 問題: セキュリティ権限を変更できると、変更が分割される可能性があります。これはセキュリティ メタデータの最下位レベルであるためです。
 - 対応策: 必要な場合は、新しいセキュリティ権限を作成し、それを使用します。
-

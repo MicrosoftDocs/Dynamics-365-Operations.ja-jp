@@ -1,28 +1,27 @@
 ---
-title: "PageMetadata タイプ"
-description: "PageMetadata タイプ"
+title: PageMetadata タイプ
+description: PageMetadata タイプ
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 565e383768022419fee8c622183a35dc5469c9f6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369556"
 ---
-
 # <a name="pagemetadata-type"></a>PageMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -151,7 +150,6 @@ OnTaskSubmitted: 機能 (taskHandle: すべて、taskOptions: すべて): すべ
 ### <a name="ontasksubmitting"></a>OnTaskSubmitting
 
 OnTaskSubmitted: 機能 (taskOptions: すべて): すべて (オプション) 
-
 
 
 

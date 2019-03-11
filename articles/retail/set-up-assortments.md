@@ -1,13 +1,13 @@
 ---
-title: "品揃えの設定"
-description: "この記事は、品揃えとは何か、および Microsoft Dynamics 365 for Retail での品揃えの設定方法を説明します。"
+title: 品揃えの設定
+description: この記事は、品揃えとは何か、および Microsoft Dynamics 365 for Retail での品揃えの設定方法を説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: a9578a0784d4f4fbfca27ec4093a3f61d1068a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 91713a4492ad82520f7dde611c17a5ea168ed80d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314972"
 ---
-
 # <a name="set-up-assortments"></a>品揃えの設定
 
 [!include [banner](includes/banner.md)]
@@ -56,4 +55,3 @@ ms.lasthandoff: 11/03/2017
 2. 小売チャンネル、または品揃えが適用されている小売チャンネルの上位レベル グループを選択します。
 3. 製品カテゴリ、個々の製品、または製品バリアントを品揃えに追加します。 特定のカテゴリにすべての製品を含めたり、選択した製品を品揃えに含まれているカテゴリから除外したりすることができます。
 4. 品揃えを公開します。 品揃えを公開すると、小売の品揃えスケジューラが自動的に実行されます。 このプロセスにより、製品の一覧が生成されます。 このプロセスが完了すると、製品の品揃えが割り当てられている小売チャンネルで製品が利用可能になります。 公開されている品揃えを変更したり、品揃えが割り当てられている小売チャンネルを変更したりする場合には、品揃えを更新する必要があります。 変更時に品揃えを更新するには、小売の品揃えスケジューラをバッチ ジョブとして実行できます。
-

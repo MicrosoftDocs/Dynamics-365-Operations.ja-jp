@@ -1,14 +1,14 @@
 ---
-title: "財務連結および通貨換算"
-description: "このトピックでは、一般会計での財務連結と為替換算について説明します。"
+title: 財務連結および通貨換算
+description: このトピックでは、一般会計での財務連結と為替換算について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: c8997bd86bd40a804ef837ad12bd4112670c805b
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354003"
 ---
-
 # <a name="financial-consolidations-and-currency-translation"></a>財務連結および通貨換算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations および財務諸表の両方が連結のために使用するアプローチについて説明します。 複数の会社のレポート、集計、削除、および少数株主持分に関連するシナリオについて説明します。 異なる会計年度期間、またはさまざまな勘定科目表がある法人のシナリオなどの、特殊な状況を処理する方法についても説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations および財務報告の両方が連結のために使用するアプローチについて説明します。 複数の会社のレポート、集計、削除、および少数株主持分に関連するシナリオについて説明します。 異なる会計年度期間、またはさまざまな勘定科目表がある法人のシナリオなどの、特殊な状況を処理する方法についても説明します。
 
 このトピックは、ユーザーおよび機能コンサルタントのために作成されており、読者が Finance and Operations と財務諸表に関する一般的な知識を持っていることを前提としています。 基本設定は対象外です。
 
@@ -181,4 +180,3 @@ Finance and Operations で削除ルールを設定するとき、削除のため
 
 ## <a name="generating-consolidated-financial-statements"></a>連結された財務諸表の生成
 連結財務諸表を生成するシナリオの詳細については、[連結財務諸表の生成](./generating-consolidated-financial-statements.md) を参照してください。
-

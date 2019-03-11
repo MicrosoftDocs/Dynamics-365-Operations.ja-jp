@@ -1,13 +1,13 @@
 ---
-title: "BOM の計算"
-description: "原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 このトピックでは、BOM 計算について説明します。"
+title: BOM の計算
+description: 原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 このトピックでは、BOM 計算について説明します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 29ea9ddefba3416a33cd0e2f873624cc5c781a55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341560"
 ---
-
 # <a name="bom-calculations"></a>BOM の計算
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,6 @@ BOM 計算では、警告メッセージおよびその他の種類のメッセ�
 
 -   注文固有 BOM 計算では、原価バージョン内に品目の原価レコードが生成されません。 そのため、BOM 計算ポリシーは品目原価レコードの作成や原価レコードの上書きには適用されません。
 -   注文ごとの BOM 計算では、常にコンポーネント、原価カテゴリ、間接原価の計算式が使用されます。
-
 
 
 

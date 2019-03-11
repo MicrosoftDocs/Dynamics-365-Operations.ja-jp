@@ -1,13 +1,13 @@
 ---
-title: "レポート メニュー項目を拡張して、ユーザーのナビゲーションをリダイレクトする"
-description: "このトピックでは、コード変更を最小限にして、ナビゲーションをカスタム レポート ソリューションにリダイレクトするように、既存のアプリケーション メニュー項目を拡張する方法について説明します。"
+title: レポート メニュー項目を拡張して、ユーザーのナビゲーションをリダイレクトする
+description: このトピックでは、コード変更を最小限にして、ナビゲーションをカスタム レポート ソリューションにリダイレクトするように、既存のアプリケーション メニュー項目を拡張する方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: fd5203580fff2ebd46fc4e671b25015dd168ac92
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369541"
 ---
-
 # <a name="extend-report-menu-items-to-redirect-user-navigations"></a>レポート メニュー項目を拡張して、ユーザーのナビゲーションをリダイレクトする
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Microsoft Dynamics 365 for Finance and Operations には、カスタム レポ�
 [![fleet-workspace-customer-list](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
 
 1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。
-2. **Microsoft Visual Studio で新しいプロジェクトを作成し、** **カスタム レポートを追加します。** また、すべてのソリューション コンポーネントを追加します。 これらのコンポーネントには、RDP クラスまたはソース クエリ、コントローラー クラス、UI ビルダー (ある場合) が含まれます。
+2. **Microsoft Visual Studioで新しいプロジェクトを作成し、** **カスタム レポートを追加します。** また、すべてのソリューション コンポーネントを追加します。 これらのコンポーネントには、RDP クラスまたはソース クエリ、コントローラー クラス、UI ビルダー (ある場合) が含まれます。
 3. **レポートにアクセスするために使用するメニュー項目の拡張機能を作成します。** この例では、出力メニュー項目は **FMCustomerListReport** と名前が付けられています。 メニュー項目の構造を使用して、アプリケーションで公開されているメニュー項目の名前を見つけます。 次の図は、アプリケーション エクスプローラーでのアクションを示しています。
 
     [![レポートにアクセスするために使用するメニュー項目の拡張機能の作成](./media/fleet-extension-create-menu-extension-1024x632.png)](./media/fleet-extension-create-menu-extension.png)
@@ -61,4 +60,3 @@ Microsoft Dynamics 365 for Finance and Operations には、カスタム レポ�
 5. **ソリューションを再構築してカスタム レポートを配置します。**
 
 これで、レポート メニュー項目の拡張を完了しました。 標準のメニュー項目へのナビゲーションは、カスタム レポート ソリューションにリダイレクトされるようになります。
-

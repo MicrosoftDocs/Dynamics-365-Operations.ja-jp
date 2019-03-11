@@ -1,28 +1,27 @@
 ---
-title: "リスト モジュール"
-description: "リストは、任意の数の行を含むコントロールです。"
+title: リスト モジュール
+description: リストは、任意の数の行を含むコントロールです。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: ae13379cc0fc4a83092503efdb253f91782381ce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368862"
 ---
-
 # <a name="list-module"></a>リスト モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -126,7 +125,7 @@ ms.lasthandoff: 08/09/2018
 | [allowScroll](../interfaces/view-model-control-list-ilist-ilistdesign.md#allowscroll) |allowScroll: string (optional)  <br>|アイテムがコンテナーの空き領域に収まらないときにコンテナーがスクロールできる場合は true です。 コンテナーにスクロール可能なアイテムがある場合、スクロール領域が入れ子にならないように、このプロパティを false に設定します。<br>  [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[allowScroll](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#allowscroll) から継承 <br> |
 | [バックグラウンド](../interfaces/view-model-control-list-ilist-ilistdesign.md#background) |background: string (optional)  <br>|コンテナーの背景色。<br>  [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[background](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#background) から継承 <br> |
 | [バインディング](../interfaces/view-model-control-list-ilist-ilistdesign.md#bindings) |bindings: any (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings) から継承 <br> |
-| [枠線](../interfaces/view-model-control-list-ilist-ilistdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
+| [枠線](../interfaces/view-model-control-list-ilist-ilistdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
 | [色](../interfaces/view-model-control-list-ilist-ilistdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [デザイン](../interfaces/view-model-control-list-ilist-ilistdesign.md#design) |design: [GroupDesign](../interfaces/view-model-control-group-igroup-igroupdesign.md) (optional)  <br>|各行に適用されるデザイン オブジェクト。<br>  |
 | [flexFlow](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
@@ -183,7 +182,7 @@ ms.lasthandoff: 08/09/2018
 
 | 氏名 | 署名 | 説明 |
 | ---- | --------- | ----------- |
-| [navigationHandler](../interfaces/view-model-control-list-ilist-ilistmetadata.md#navigationhandler) |Optional navigationHandler(row: [Row](../interfaces/view-model-control-list-ilist-irow.md)): Promise &lt;any&gt; &#124; [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md)|特定の行のナビゲーションを決定する機能。<br>  |
+| [navigationHandler](../interfaces/view-model-control-list-ilist-ilistmetadata.md#navigationhandler) |オプション navigationHandler(row: [Row](../interfaces/view-model-control-list-ilist-irow.md)): Promise &lt;any&gt; &#124; [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md)|特定の行のナビゲーションを決定する機能。<br>  |
 
 #### <a name="events"></a>イベント
 
@@ -226,5 +225,4 @@ ms.lasthandoff: 08/09/2018
 | [isEntityModified](../interfaces/view-model-control-list-ilist-irow.md#isentitymodified) |isEntityModified(): boolean|  |
 | [isEntitySyncPending](../interfaces/view-model-control-list-ilist-irow.md#isentitysyncpending) |isEntitySyncPending(): boolean|  |
 | [選択](../interfaces/view-model-control-list-ilist-irow.md#select) |select(): any|  |
-
 

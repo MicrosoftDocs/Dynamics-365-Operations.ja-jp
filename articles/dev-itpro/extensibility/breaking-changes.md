@@ -1,30 +1,29 @@
 ---
-title: "変更の分割"
-description: "このトピックでは、分割変更について説明します。"
+title: 変更の分割
+description: このトピックでは、分割変更について説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 06bde311e2d272e20b0e088b28f7e3c01932809c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369019"
 ---
-
 # <a name="breaking-changes"></a>変更の分割
 
 [!include [banner](../includes/banner.md)]
@@ -103,4 +102,3 @@ ms.lasthandoff: 09/27/2018
      
 ## <a name="metadata-extensions"></a>メタデータの拡張
 + **メタデータまたは拡張クラスの名前付けガイドラインに従わない**: ユーザーは、同じ名前を持つ要素を持っている可能性があります。
-

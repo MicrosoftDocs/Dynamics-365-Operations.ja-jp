@@ -1,13 +1,13 @@
 ---
-title: "オンプレミス配置で使用できる小売機能"
-description: "このトピックでは、オンプレミス展開で使用できる小売機能を一覧表示します。"
+title: オンプレミス配置で使用できる小売機能
+description: このトピックでは、オンプレミス展開で使用できる小売機能を一覧表示します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 11/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 88178c23103082cce1dc06a5082ceeb9aee63805
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368501"
 ---
-
 # <a name="retail-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できる小売機能
 
 [!include [banner](../includes/banner.md)]
@@ -37,8 +36,8 @@ ms.lasthandoff: 01/04/2019
 | Retail 販売時点管理 | 取得可能          |
 | Modern 販売時点管理 | 取得可能          |
 | Retail サーバー        | 取得可能          |
-| チャネル データベース     | 取得可能          |
-| ハードウェア ステーション     | 使用不可      |
+| チャネル データベース     | 利用可          |
+| Hardware Station     | 使用不可      |
 | AX 2012 N-1 のサポート  | 使用不可      |
 
 ## <a name="head-office-capability"></a>本社の機能
@@ -121,4 +120,3 @@ ms.lasthandoff: 01/04/2019
 | 配送のモデル             | 取得可能          |
 | 返品場所               | 取得可能          |
 | 配分済み注文の管理   | 使用不可      |
-

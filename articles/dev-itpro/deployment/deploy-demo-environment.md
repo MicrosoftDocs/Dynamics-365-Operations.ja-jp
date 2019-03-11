@@ -1,13 +1,13 @@
 ---
-title: "デモ環境の配置"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 これは、Dynamics 365 for Finance and Operations および Dynamics 365 for Retail に適用されます。"
+title: デモ環境の配置
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 これは Dynamics 365 for Finance and Operations と Dynamics 365 for Retail に適用されます。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 460db6ea6a5cd744a2497efc19e54c7cc1eaea5e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370024"
 ---
 # <a name="deploy-demo-environments"></a>デモ環境の配置
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 - Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 展開を開始する前に、次の前提条件が満たされていることを確認します。
 
 - Azure サブスクリプションがあり、そのサブスクリプションの共同管理者であることを確認します。
@@ -47,7 +47,7 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 2. Azure 環境トポロジを選択し、**デモ** を選択します。
 3. トポロジを選択します。
     - Finance and Operations で、Finance and Operations 用の最新の Azure Resource Manager (ARM) トポロジを選択します。
-    - Retail で、**Dynamics 365 for Retail - デモ**を選択します。
+    - 小売には、**Dynamics 365 for Retail - Demo** を選択します。
 4. **環境の配置**ダイアログ ボックスに、環境の名前を入力します。 この名前は Azure サブスクリプションで一意である必要があります。 環境を簡単に識別できるようにするには、ユーザー名とトポロジを使用して略語を作成することを検討してください。
 5. 仮想マシン (VM) のサイズを選択します。 ARM 用に有効になっている VM のすべてのサイズは、v2 で終わります。 Finance and Operations のワークロードには、D* v2 サイズを使用する必要があります。 D12v2 をお勧めします。
 6. **インスタンス** フィールドを 1 に設定します。
@@ -71,4 +71,3 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 
       - **Finance and Operations にログオン**
       - **小売にログオン**
-

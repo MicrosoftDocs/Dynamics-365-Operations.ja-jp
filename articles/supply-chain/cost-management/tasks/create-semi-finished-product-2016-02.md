@@ -1,13 +1,13 @@
---- 
-title: "半完成品の作成 (2016 年 2 月のみ)"
-description: "このタスクでは、半完成品の作成に重点を置きます。"
+---
+title: 半完成品の作成 (2016 年 2 月のみ)
+description: このタスクでは、半完成品の作成に重点を置きます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 76fcba3732879f85c9bf0faa6d2481b9c5313a17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1311e27b4080832c6e1aa2b879308f518d2ab001
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358948"
 ---
 # <a name="create-a-semi-finished-product-february-2016-only"></a>半完成品の作成 (2016 年 2 月のみ)
 
@@ -72,5 +72,4 @@ ms.lasthandoff: 04/13/2018
     * この例では、原価グループ M1 を選択します。  
 30. レコードを保存するショートカットを使用します。
 31. ページを閉じます。
-
 

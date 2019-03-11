@@ -1,30 +1,29 @@
 ---
-title: "拡張機能を使用してテーブルにメソッドを追加"
-description: "このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。"
+title: 拡張機能を使用してテーブルにメソッドを追加
+description: このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 67f58f863104af56b6f96cd1bcc7a92db7013982
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368818"
 ---
-
 # <a name="add-methods-to-tables-through-extension"></a>拡張機能を使用してテーブルにメソッドを追加
 
 [!include [banner](../includes/banner.md)]
@@ -73,4 +72,3 @@ class InventTableMy_EventHandler
 
 > [!NOTE]
 > イベント ハンドラー クラスには任意の数のイベントのハンドラーが含まれるのが一般的です。 ただし、イベント ハンドラーを拡張クラスに入れるのは、良い方法では**ありません**。 そうすることで、イベント ハンドラー メソッドが拡張されたタイプのメソッドとして使用可能となります。 これは、イベント ハンドラーが、その型のメソッドとして明示的にではなく、イベントを通じて呼び出されることを意図しているので正しくありません。
-

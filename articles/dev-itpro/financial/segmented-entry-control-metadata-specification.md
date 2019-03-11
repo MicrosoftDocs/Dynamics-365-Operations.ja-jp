@@ -1,13 +1,13 @@
 ---
-title: "セグメント化されたエントリ コントロールのためのデザイン時メタデータ"
-description: "セグメント化エントリ コントロールのデザイン時メタデータ プロパティについて説明します。"
+title: セグメント化されたエントリ コントロールのためのデザイン時メタデータ
+description: セグメント化エントリ コントロールのデザイン時メタデータ プロパティについて説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 96ef83708e602b00b7c79fa220c2b1e65b551490
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368575"
 ---
-
 # <a name="design-time-metadata-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 
 [!include [banner](../includes/banner.md)]
@@ -162,7 +161,6 @@ LedgerDimensionAccountAlias: いいえ
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
 [セグメント化されたエントリ コントロール - 移行のガイダンス](segmented-entry-control-migration-guidance.md)
-
 
 
 

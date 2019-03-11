@@ -1,13 +1,13 @@
 ---
-title: "会社間データ共有"
-description: "このトピックでは、企業間のデータ共有について説明します。 会社間の共有は、Microsoft Dynamics 365 for Finance and Operations 展開において、会社間で参照データとグループ データを共有するためのメカニズムです。"
+title: 会社間データ共有
+description: このトピックでは、企業間のデータ共有について説明します。 会社間共有は、Microsoft Dynamics 365 for Finance and Operations 展開で、参照およびグループ データを会社間で共有するためのメカニズムです。
 author: aprilolson
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
 ms.reviewer: margoc
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: e0eb0e04e4ea1caf8a9bc72cf5945352d7118774
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d0fd3a3bc73919f990bafd81688d14750a1b288b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369103"
 ---
-
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、企業間のデータ共有について説明します。 会社間の共有は、Microsoft Dynamics 365 for Finance and Operations 展開において、会社間で参照データとグループ データを共有するためのメカニズムです。 この機能は、Microsoft Dynamics AX 2012 の仮想会社機能に似ています。
+このトピックでは、企業間のデータ共有について説明します。 会社間共有は、Microsoft Dynamics 365 for Finance and Operations 展開で、参照およびグループ データを会社間で共有するためのメカニズムです。 この機能は、Microsoft Dynamics AX 2012 の仮想会社機能に似ています。
 
 <a name="what-is-this-feature-and-how-does-it-work"></a>これはどういう機能で、どのように動作しますか ?
 ------------------------------------------
@@ -85,6 +84,9 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 -   サブタイプ/スーパータイプ テーブルまたは日付の有効性ルールを持つテーブルの複製などの複雑なシナリオ
 -   マスター データの管理
 
+## <a name="customer-and-vendor-master-data-sharing-preview"></a>顧客および仕入先のマスター データ共有 (プレビュー)
+顧客および仕入先のマスタ データ共有により、複数の会社間で顧客および仕入先のデータを共有することができます。 この機能は、バージョン 8.0 およびそれ以降の顧客が、制限のある状態で使用できます。 この機能のプレビュー プログラムに登録する場合は、調査票 [データ共有申請](https://aka.ms/MSDYN365FODataSharing) に記入し、製品サポートに問い合わせてください。
+
 ## <a name="download-a-cross-company-data-sharing-template-from-lcs"></a>会社間データ 供給テンプレートを LCS からダウンロード
 1.  LCS にサインインします。
 2.  ホーム ページで、**共有アセット ライブラリ**をクリックします。
@@ -138,12 +140,10 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 </table>
 
 
-
 <a name="additional-resources"></a>その他のリソース
 --------
 
 [会社間財務データ共有を構成する (タスクガイド)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md)
-
 
 
 

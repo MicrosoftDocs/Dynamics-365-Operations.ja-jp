@@ -1,34 +1,34 @@
 ---
-title: "Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 11 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/19/2018
+ms.date: 01/09/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: a765a61c-52a3-47c5-b579-68b9249c592b
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 21
+ms.openlocfilehash: 0a090a10ec4bf1ccc14730527f3963ca1fa9c212
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: 5e7da36ef258e6410b45d92b63b11d4ed2483f85
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369035"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-october-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-november-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 7.0.5073 です。
+このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 11 月にリリースされ、ビルド番号は 7.0.5073 です。
 
 ## <a name="dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノート
 
@@ -83,4 +83,3 @@ Finance and Operations の多くのグリッドで*既定のアクション*が�
 - アクティブ期間内で任意の回数の繰り返しを設定します。 たとえば、管理者は、午後 6 時から午前 8 時の間のみ、毎時間バッチ ジョブを実行することを選択できます。
 
 詳細については、「[バッチ アクティブ期間](../../dev-itpro/sysadmin/activeperiod.md)」を参照してください。
-

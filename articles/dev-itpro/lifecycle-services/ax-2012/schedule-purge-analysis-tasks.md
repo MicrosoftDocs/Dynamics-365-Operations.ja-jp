@@ -1,13 +1,13 @@
 ---
-title: "Intelligent Data Management Framework の削除および分析タスクをスケジュール"
-description: "このトピックでは、Microsoft Dynamics AX インテリジェント データ管理フレームワーク (IDMF) のスケジュール メニューのオプションとその使用方法について説明します。"
+title: Intelligent Data Management Framework の削除および分析タスクをスケジュール
+description: このトピックでは、Microsoft Dynamics AX インテリジェント データ管理フレームワーク (IDMF) のスケジュール メニューのオプションとその使用方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18631
 ms.assetid: 1ecac46c-29d5-4e5b-aa39-3daa00956820
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 7793e3c5c17a05d28e6211632cfda2f5b7212e09
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368891"
 ---
-
 # <a name="schedule-intelligent-data-management-framework-purge-and-analysis-tasks"></a>Intelligent Data Management Framework の削除および分析タスクをスケジュール
 
 [!include [banner](../../includes/banner.md)]
@@ -94,7 +93,7 @@ ms.lasthandoff: 08/09/2018
 </tr>
 <tr class="odd">
 <td>メタデータ同期</td>
-<td>Microsoft Dynamics AX メタデータに基づいて、生産データベースからアーカイブ データベースにすべてのデータベース オブジェクトをコピーします (ただしデータはコピーしません)。</td>
+<td>Microsoft Dynamics AX メタデータに基づいて、データベース オブジェクトを生産データベースからアーカイブ データベースにコピーしますが、データはコピーしません。</td>
 <td></td>
 <td></td>
 <td></td>
@@ -314,7 +313,7 @@ ms.lasthandoff: 08/09/2018
 | フィールド              | 説明                                                                                                                                                                                                                                                                                                                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **復元タイプ**   | 復元するタスクに適用するフィルターを選択します。 **その他のスケジュール** を選択すると、データ グリッドに正常にアーカイブされたすべてのタスクの名前が表示されます。                                                                                                                                                                                                                                  |
-| **スケジュール**       | アーカイブ タスクの名前。 復元するタスクを選択します。 複数のタスクを選択することができます。 先行するタスクを選択すると、より最近のタスクが自動的に選択されます。 たとえば、復元の 2014 を選択する場合、2013 および 2012 は自動で復元用に選択されます。 Microsoft Dynamics AX アプリケーションでは、トランザクションの整合性ために最近の期間のデータが必要です。 |
+| **スケジュール**       | アーカイブ タスクの名前。 復元するタスクを選択します。 複数のタスクを選択することができます。 先行するタスクを選択すると、より最近のタスクが自動的に選択されます。 たとえば、復元の 2014 を選択する場合、2013 および 2012 は自動で復元用に選択されます。 Microsoft Dynamics AX アプリケーションでは、トランザクションの整合性のために最近の期間のデータが必要です。 |
 | **アーカイブの日付**   | アーカイブ タスクが実行された日付。                                                                                                                                                                                                                                                                                                                                                                          |
 | **アーカイブ オブジェクト** | アーカイブ オブジェクトの名前。                                                                                                                                                                                                                                                                                                                                                                                  |
 
@@ -382,7 +381,6 @@ IDMF では、予期しないエラー状態を障害とみなし、スケジュ
 
 ## <a name="export-to-excel"></a>Excel にエクスポート
 このコマンドは、選択したタスクを Microsoft Excel にエクスポートします。
-
 
 
 

@@ -1,36 +1,36 @@
 ---
 title: Retail POS API
-description: "このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。"
+description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
+ms.openlocfilehash: b8851c1d154fa7ab2de20fb247a9210e3358ec68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4fe430afe625328ce212fd2f72e836585f920490
-ms.openlocfilehash: e126c65837f4057a3ace0cf5e4c877a41c82d784
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368381"
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
 [!include [banner](../includes/banner.md)]
 
 Retail POS API を使用すると、簡単に POS アプリに拡張機能または新しい機能を構築することができます。 たとえば、製品の詳細の取得、価格の変更、買い物カゴへの品目の追加を行うための新しい機能を追加するために Retail POS アプリケーションを拡張する場合です。 これを実現する API を使用できます。 これを行うには、作業を実行する API を呼び出す必要があるだけです。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。
 
-拡張パターンは、要求/応答のパターンに従って Commerce Runtime (CRT)、POS、ハードウェア ステーション (HWS) 間で統合されています。 すべての POS API は、CRT や HWS のような要求/応答として公開されます。 このトピックは、最新の修正プログラムが適用された Dynamics 365 for Finance and Operations または Dynamics 365 for Retail に適用されます。 
+拡張パターンは、要求/応答のパターンに従って Commerce Runtime (CRT)、POS、ハードウェア ステーション (HWS) 間で統合されています。 すべての POS API は、CRT や HWS のような要求/応答として公開されます。 このトピックでは、Dynamics 365 for Finance and Operations または Dynamics 365 for Retail 最新修正プログラムが適用されます。 
 
 POS API は、3 つのさまざまなシナリオに分類されます。
 
@@ -53,7 +53,7 @@ API の多くは、拡張機能で消費できます。 たとえば、外部の
 
     たとえば、拡張機能の買い物カゴ API で保存属性を使用する場合、次のインポート ステートメントを追加する必要があります。
 
- パターンは、"PosApi/Consume/Module name"; からの { API 名 } のインポートです
+ パターンは、"PosApi/Consume/Module name" からの {api name} のインポートです。
 ```Typescript
  import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
 ```
@@ -201,6 +201,8 @@ currentCart = getCurrentCartClientResponse.data.result;
 | GetTaxOverridesServiceRequest                   |
 | UpdateTenderLineSignatureServiceRequest         |
 | CarryoutSelectedProductsOperationRequest |
+| AddCouponsOperationRequest |
+| CreateNonSalesTransactionServiceRequest |
 
 ### <a name="payments"></a>支払利息
 
@@ -418,4 +420,3 @@ currentCart = getCurrentCartClientResponse.data.result;
 | GetCurrenciesServiceRequest                     |
 | GetSrsReportDataSetServiceRequest               |
 | SearchCommissionSalesGroupsServiceRequest       |
-

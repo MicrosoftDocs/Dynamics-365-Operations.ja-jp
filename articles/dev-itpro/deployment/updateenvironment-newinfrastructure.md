@@ -1,29 +1,28 @@
 ---
-title: "環境の更新"
-description: "このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境を更新する方法について説明します。"
+title: 環境の更新
+description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境を更新する方法について説明します。
 author: manado
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: 61aee27fce705231c0ac89cc596bb19b95426608
 ms.openlocfilehash: 9ec1db4f5c3a01300cc2678d4371eab7392c6223
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369562"
 ---
-
 # <a name="update-an-environment"></a>環境の更新
 
 [!include [banner](../includes/banner.md)]
@@ -74,4 +73,3 @@ Lifecycle Services (LCS) を通じて配置されたレベル 1 サンドボッ�
 
 ### <a name="production-environments"></a>実稼働環境
 運用環境に更新プログラムを適用することは、まだ有効になっていません。 運用環境に適用する更新の信頼性を向上させるため、このフローが有効になると、最新のコピーとサンドボックス環境の指定されたスナップショットのどちらを運用環境に移動するかを選択できます。 更新を選択して、それを運用環境に移動する方法はありません。 これにより、更新がもう一度適用されなくなり、サンドボックスのイメージが運用環境に昇格されるため、エクスペリエンスの信頼性が高くなります。
-

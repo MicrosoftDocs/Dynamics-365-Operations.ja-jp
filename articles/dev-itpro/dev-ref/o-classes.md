@@ -1,13 +1,13 @@
 ---
-title: "O クラス"
-description: "文字 O で始まるシステム API クラス。"
+title: O クラス
+description: 文字 O で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 629a4dfcdf1205bcb2c659039822c0a63f5e759c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369721"
 ---
-
 # <a name="o-classes"></a>O クラス
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,7 @@ Object クラスは、その他のすべてのクラスの派生元となる基�
 
 #### <a name="remarks"></a>備考
 
-Object :: equal メソッドの既定の実装では、照会の等価性のみをサポートします。 ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドを上書きできます。
+Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。 ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドをオーバーライドできます。
 
 #### <a name="examples"></a>例
 
@@ -2042,7 +2041,6 @@ API のセキュリティをさらに強化するプロセスの一部として�
 OverwriteSystemfieldsPermission クラスの新しいインスタンスを初期化します。
 
     public void new()
-
 
 
 

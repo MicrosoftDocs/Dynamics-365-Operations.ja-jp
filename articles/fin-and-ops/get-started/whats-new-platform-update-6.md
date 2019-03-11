@@ -1,39 +1,38 @@
 ---
-title: "Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 6 における新機能または変更された機能について説明します。 このバージョンは 2017 年 4 月にリリースされ、ビルド番号は 7.0.4509.16180 です。"
+title: Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 6 の新機能または変更された機能について説明します。 このバージョンは 2017 年 4 月にリリースされ、ビルド番号は 7.0.4509.16180 です。
 author: tonyafehr
 manager: AnnBe
 ms.date: 04/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: 13d2b8a5-c2e0-4f32-a43b-7726ae20392c
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c08fffb8af60e90b3e5275fb8469036eb7fecc56
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369772"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-6-april-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 6 (2017 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 6 における新機能または変更された機能について説明します。 このバージョンは 2017 年 4 月にリリースされ、ビルド番号は 7.0.4509.16180 です。
+このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 6 の新機能または変更された機能について説明します。 このバージョンは 2017 年 4 月にリリースされ、ビルド番号は 7.0.4509.16180 です。
 
 ## <a name="browser-framework--powerapps-host-control"></a>ブラウザー フレームワーク - PowerApps ホスト コントロール
 
-Dynamics 365 for Operations は、開発者の PowerApps ホスト コントロールに対して、新しいコントロールを導入します。 このコントロールにより、開発者は Dynamics 365 for Operations フォーム内に PowerApp をホストまたは埋め込むことができます。 詳細については、[PowerApps ホスト コントロール](../../dev-itpro/user-interface/powerapps-host-control.md) を参照してください。
+Dynamics 365 for Operations は、開発者に対して新しいコントロールである PowerApps ホスト コントロールを導入します。 このコントロールにより、開発者は Dynamics 365 for Operations フォーム内で PowerApp をホストまたは埋め込むことができます。 詳細については、[PowerApps ホスト コントロール](../../dev-itpro/user-interface/powerapps-host-control.md) を参照してください。
 
 ## <a name="browser-client--ability-to-model-toolbar-actions-in-the-overflow-menu"></a>ブラウザー クライアント - オーバーフロー メニューのツール バー アクションをモデル化する機能
 
@@ -63,15 +62,15 @@ Dynamics AX 7.0 がリリースされたとき、添付ファイル用のデー�
     - 新しいセキュリティ属性と API が導入され、メニュー項目に基づいたモバイル ワークスペースの表示を宣言しやすくなります。 これらの API を使用して、特定のユーザー グループのモバイル ワークスペースへのアクセスを無効にできます。
 
 - 必要な属性を自動検出する機能が追加され、フォームとテーブル メタデータを使用して、データの入力中に必須としてモバイル フィールドを示します。 アクション データは、必要なフィールドの値が指定されない場合、サーバーに送信することはできません。 (要求: プラットフォーム更新プログラム 6 とモバイルの 4 月リリース。)
-- Dynamics 365 for Operations がサポートするすべての言語のモバイル ワークスペースを完全にローカライズするにはオプション。
+- Dynamics 365 for Operations がサポートするすべての言語のモバイル ワークスペースを完全にローカライズするためのオプション。
 
 ## <a name="ideas-portal"></a>アイデア ポータル
 
-Dynamics 365 for Operations アイデア フォーラムは、[Ideas portal.](https://experience.dynamics.com/ideas/) で使用可能です。 Ideas Portal では、すべての Dynamics 365 for Operations ユーザーは、定期的に新しいアイデアを送信、既存のアイデアを採決、およびそのアイデアの状態を追跡することができます。 これは、現在、製品の外部 ([http://experience.dynamics.com/ideas](http://experience.dynamics.com/ideas/)) およびアプリケーション内の両方から達成できます。 このスクリーンショットは、Dynamics 365 for Operations から Ideas ポータルにナビゲートする方法を示しています。
+Dynamics 365 for Operations アイデア フォーラムは、[アイデア ポータル.](https://experience.dynamics.com/ideas/) で使用可能です。 アイデア ポータルでは、すべての Dynamics 365 for Operations ユーザーは、定期的に新しいアイデアを送信、既存のアイデアを採決、およびそのアイデアの状態を追跡することができます。 これは、現在、製品の外部 ([http://experience.dynamics.com/ideas](http://experience.dynamics.com/ideas/)) およびアプリケーション内の両方から達成できます。 このスクリーンショットは、Dynamics 365 for Operations からアイデア ポータルにナビゲートする方法を示しています。
 
 [![ideas-menu](./media/ideas-menu.png)](./media/ideas-menu.png)
 
-Dynamics 365 for Operations フォーラムに移動するには**アイデア** リンクをクリックします。
+Dynamics 365 for Operations フォーラムに移動するには**アイデア**のリンクをクリックします。
 
 [![ideas-page](./media/ideas-page.png)](./media/ideas-page.png)
 
@@ -81,4 +80,3 @@ Dynamics 365 for Operations フォーラムに移動するには**アイデア**
 - **個人用フィードバック** 機能を使用すると、提出された提案、提案のステータス、受け取った合計投票数の詳細なビューを表示できます。
 
 [![ideas-options](./media/ideas-options.png)](./media/ideas-options.png)
-

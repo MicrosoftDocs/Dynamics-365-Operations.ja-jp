@@ -1,13 +1,13 @@
 ---
-title: "アップグレード、更新プログラム、および修正プログラム ホームページ"
-description: "これらのトピックでは、Dynamics 365 for Finance and Operations の環境およびデータのアップグレード、更新、および修正プログラムの適用のためのプロセスについて説明します。"
+title: アップグレード、更新プログラム、および修正プログラム ホームページ
+description: これらのトピックでは、Dynamics 365 for Finance and Operations の環境およびデータのアップグレード、更新、および修正プログラムの適用のためのプロセスについて説明します。
 author: margoc
 manager: AnnBe
 ms.date: 02/14/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: eb0632ee46ff4680184c94b9da0910ade158d2b0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369359"
 ---
-
 # <a name="upgrades-updates-and-hotfixes-home-page"></a>アップグレード、更新プログラム、および修正プログラム ホームページ
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 08/09/2018
 - [AX 2012 から Finance and Operations へのコードの移行の準備](prepare-migration.md)
 
 ## <a name="migration-from-microsoft-dynamics-ax-2009-to-finance-and-operations"></a>Microsoft Dynamics AX 2009 から Finance and Operations への移行
-この技術解説ビデオでは、AX 2009 から Finance and Operations への移行の概要を説明しています: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4)
+この技術解説ビデオでは、AX 2009 から Finance and Operations への移行の概要を説明しています: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4)。
 
 ## <a name="upgrade-from-a-previous-version-of-finance-and-operations"></a>Finance and Operations の以前のバージョンからのアップグレード
 
@@ -70,9 +69,8 @@ Finance and Operations のクラウド バージョンに更新プログラム�
 - [1 ボックス環境の Reporting Services への修正プログラムの適用](patch-reporting-service-environment.md)
 - [Visual Studio 開発ツールの更新](../dev-tools/update-development-tools.md)
 
-この技術解説ビデオでは、サービスの概要 (コードの更新の適用、サンドボックス データベースの更新の要求、およびサポート リクエストの提出) について説明しています: [Dynamics 365 for Operations – Tech Talk: Servicing](https://www.youtube.com/watch?v=QkcdBI_ipTM)
+この技術解説ビデオでは、導入サービス (コードの更新の適用、サンドボックス データベースの更新の要求、およびサポート リクエストの提出) について説明します: [Dynamics 365 for Operations – Tech Talk: Servicing](https://www.youtube.com/watch?v=QkcdBI_ipTM)。
 
  詳細については、以下を参照してください。 
 - [サンドボックス データベース更新の要求](../database/database-refresh.md)
 - [テクニカル サポートの設定](../lifecycle-services/support-experience.md) 
-

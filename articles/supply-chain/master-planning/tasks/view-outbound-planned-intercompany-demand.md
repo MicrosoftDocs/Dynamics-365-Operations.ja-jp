@@ -1,13 +1,13 @@
---- 
-title: "計画企業内需要 (アウトバウンド) の表示"
-description: "この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。"
+---
+title: 計画企業内需要 (アウトバウンド) の表示
+description: この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2e0e3a4613e5598e725c475c7dff7662bf4169a7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 183bbba80351c19d2218c577020b1e852ab45ac4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333717"
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>計画企業内需要 (アウトバウンド) の表示
 
@@ -42,5 +42,4 @@ ms.lasthandoff: 09/29/2017
     * このページは、内部サプライ チェーンの仕入先によって達成されるすべての計画需要の概要を提供します。  
 8. [上流の需要の詳細] のセクションを展開します。
     * このセクションでは、どのように需要が達成されるかについての詳細を確認することができます。 ここで追加情報を表示する前に、提供会社で実行するマスター プランを待機する必要があります。  
-
 

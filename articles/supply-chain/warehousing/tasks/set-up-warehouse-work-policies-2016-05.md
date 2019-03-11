@@ -1,13 +1,13 @@
---- 
-title: "倉庫の作業ポリシーの設定 (申請、2016 年 5 月)"
-description: "倉庫のプロセスは倉庫作業を常に含みません。"
+---
+title: 倉庫の作業ポリシーの設定 (申請、2016 年 5 月)
+description: 倉庫のプロセスは倉庫作業を常に含みません。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 34b4255c85bb53f7e238b60559890571070953a6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335327"
 ---
 # <a name="set-up-warehouse-work-policies-application-may-2016"></a>倉庫の作業ポリシーの設定 (申請、2016 年 5 月)
 
@@ -51,5 +51,4 @@ ms.lasthandoff: 10/16/2018
 19. 一覧で、選択された行をマークします。
 20. [品目番号] フィールドで、「L0101」を入力または選択します。
 21. [保存] をクリックします。
-
 

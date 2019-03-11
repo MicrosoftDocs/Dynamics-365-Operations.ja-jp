@@ -1,13 +1,13 @@
 ---
-title: "代替配送先"
-description: "受注管理者は、代替配送処理ページを使用して、代替注文処理オプションを検出できます。"
+title: 代替配送先
+description: 受注管理者は、代替配送処理ページを使用して、代替注文処理オプションを検出できます。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 1fbf8f08322c954a482777abcf041ff0b9d8fb77
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328381"
 ---
-
 # <a name="delivery-alternatives"></a>代替配送先
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ ms.lasthandoff: 05/08/2018
 <tr class="even">
 <td><strong>なし</strong></td>
 <td><ul>
-<li>販売明細行で代替配送処理がサポートされていません。 このオプションは、配送データ管理を無効にします。</li>
+<li>販売明細行の代替配送処理はサポートされていません。 このオプションは、配送データ管理を無効にします。</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -150,7 +149,6 @@ ms.lasthandoff: 05/08/2018
 --------
 
 [注文納期日](delivery-dates-available-promise-calculations.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "異なるディメンション パターンをサポート"
-description: "さまざまな分析コードのパターンをサポートするために、分析コードを含む他のエンティティのデータ ソースとして使用できる一連のフレームワーク データ エンティティが作成されています。"
+title: 異なるディメンション パターンをサポート
+description: さまざまな分析コードのパターンをサポートするために、分析コードを含む他のエンティティのデータ ソースとして使用できる一連のフレームワーク データ エンティティが作成されています。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 297660ccfc00617bfcaf769340da0e2c560a5a27
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368336"
 ---
-
 # <a name="support-for-different-dimension-patterns"></a>異なるディメンション パターンをサポート
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="create-an-entity-by-using-a-wizard"></a>ウィザードを使用してエンティティを作成する
 このセクションでは、ウィザードを使用してデータ エンティティを作成する方法について説明します。 そのウィザードを使用することをお勧めします。 分析コードの SFK フィールドを選択することのみ必要です。 ウィザードは、必要なデータ ソース、フィールド、リレーションをすべて正しく設定します。
 
-1. **ファイル** &gt; **新規** &gt; **プロジェクト**とクリックして、新しい Microsoft Dynamics 365 for Finance and Operations プロジェクトを作成します。
+1. **ファイル**&gt;**新規**&gt;**プロジェクト**とクリックし、新しい Microsoft Dynamics 365 for Finance and Operations プロジェクトを作成します。
 2. ソリューション エクスプローラーで、プロジェクトを右クリックしてから**プロパティ**をクリックします。 プロジェクトの **プロパティ ページ** ダイアログ ボックスが開きます。
 3. **プロパティ ページ** ダイアログ ボックスで、次の手順に従います。
    1.  **モデル**プロパティの値を**アプリケーション スイート単体テスト**に変更し、**OK** をクリックします。 このプロパティはプロジェクトごとに 1 回のみ設定する必要があります。
@@ -140,7 +139,6 @@ ms.lasthandoff: 08/09/2018
 5.  **persistEntity** メソッドをオーバーライドし、次の X++ コードを入力します。 
 
     [![persistEntity メソッドを上書きします](./media/dim16.png)](./media/dim16.png)
-
 
 
 

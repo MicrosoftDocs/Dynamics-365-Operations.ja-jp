@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) の使用状況プロファイル"
-description: "このトピックでは、使用状況プロファイラーによって収集されるデータに関する情報を提供します。"
+title: Lifecycle Services (LCS) の使用状況プロファイル
+description: このトピックでは、使用状況プロファイラーによって収集されるデータに関する情報を提供します。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18751
 ms.assetid: ceeb6463-00d4-41f9-88c3-61791020a9f5
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 629dfff6a6f96eafe5714963de1be3a5f89b2264
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369630"
 ---
-
 # <a name="usage-profiler-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の使用状況プロファイル
 
 [!include [banner](../../includes/banner.md)]
@@ -99,7 +98,6 @@ ms.lasthandoff: 08/09/2018
 
 1.  主要な**使用状況プロファイラー**ページで、**概要**をクリックして**概要**レポートを表示します。
 2.  主要な**使用状況プロファイラー**ページで、**インフラストラクチャの見積もり**をクリックして、**インフラストラクチャの見積もり**レポートを表示します。
-
 
 
 

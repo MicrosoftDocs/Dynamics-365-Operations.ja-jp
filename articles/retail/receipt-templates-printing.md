@@ -1,13 +1,13 @@
 ---
-title: "受領書フォーマットを設定しデザインします"
-description: "この記事は、フォーム レイアウトを変更して、レシート、請求書、およびその他の文書の印刷方法を制御する方法について説明します。 Microsoft Dynamics 365 for Retail ではさまざまな種類のフォーム レイアウトを簡単に作成および変更するフォーム レイアウト デザイナーが用意されています。"
+title: 受領書フォーマットを設定しデザインします
+description: この記事は、フォーム レイアウトを変更して、レシート、請求書、およびその他の文書の印刷方法を制御する方法について説明します。 Microsoft Dynamics 365 for Retail には、さまざまな種類のフォーム レイアウトを簡単に作成および変更するフォーム レイアウト デザイナーが用意されています。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,22 +19,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357821"
 ---
-
 # <a name="set-up-and-design-receipt-formats"></a>受領書フォーマットを設定しデザインします
 
 [!include [banner](includes/banner.md)]
 
-この記事は、フォーム レイアウトを変更して、レシート、請求書、およびその他の文書の印刷方法を制御する方法について説明します。 Microsoft Dynamics 365 for Retail ではさまざまな種類のフォーム レイアウトを簡単に作成および変更するフォーム レイアウト デザイナーが用意されています。
+この記事は、フォーム レイアウトを変更して、レシート、請求書、およびその他の文書の印刷方法を制御する方法について説明します。 Microsoft Dynamics 365 for Retail には、さまざまな種類のフォーム レイアウトを簡単に作成および変更するフォーム レイアウト デザイナーが用意されています。
 
 > [!IMPORTANT]
-> Retail Modern POS とクラウド POS からレシートやその他の文書を印刷するために、フォーム レイアウトおよびレシート プロファイルを設定する必要があります。 レシート プロファイルに複数のフォーム レイアウトを含めることができます。 ハードウェア プロファイルを変更して、プリンタにレシート プロファイルを割り当てることができます。
+> Retail Modern POS と Cloud POS からレシートやその他の文書を印刷するために、フォーム レイアウトおよびレシート プロファイルを設定する必要があります。 レシート プロファイルに複数のフォーム レイアウトを含めることができます。 ハードウェア プロファイルを変更して、プリンタにレシート プロファイルを割り当てることができます。
 
 ## <a name="set-up-a-receipt-format"></a>受領書フォーマットの設定
 
@@ -83,4 +82,3 @@ ms.lasthandoff: 01/04/2019
 
 > [!NOTE]
 > 2 つのプリンターを使用する場合、１ つ目のプリンターは標準の 40 列のサーマル レシートの印刷に使用できます。 2 番目のプリンタは、通常、詳細情報を要求する全ページのレシート タイプの印刷に使用されます。 これらのレシート タイプでは、顧客注文のレシートおよび顧客請求書が含まれます。
-

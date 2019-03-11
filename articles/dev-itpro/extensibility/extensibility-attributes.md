@@ -1,30 +1,29 @@
 ---
-title: "メソッドを拡張可能にする属性"
-description: "このトピックでは、メソッドを拡張可能にする属性について説明します。"
+title: メソッドを拡張可能にする属性
+description: このトピックでは、メソッドを拡張可能にする属性について説明します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 01/09/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
+ms.openlocfilehash: be885e3f56288c13e41179a247a6e69b38375b4a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6514e32b100ea0169d98629fee09afaa66129217
-ms.openlocfilehash: aa86766f0d1eb1f1c077fd2354cc8b35328b7cd5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369368"
 ---
-
 # <a name="attributes-that-make-methods-extensible"></a>メソッドを拡張可能にする属性
 
 [!include [banner](../includes/banner.md)]
@@ -36,10 +35,10 @@ ms.lasthandoff: 11/01/2018
 |   | フック可能 | 折り返し可能 | 置き換え可能 | ユーザー補助 | 署名 | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **プライベート** | 無 | 該当なし | 該当なし | 定義されているクラス内からアクセスできます。 | シグネチャは変更可能 |
-| **保護された内部** | 無 | 無 | 無 | 定義されているクラスから、および同じモデル内の派生クラスからアクセス可能 | シグネチャは変更可能 |
+| **保護された内部** | 無 | 無 | 無 | 定義されているクラスから、および同じモデル内の派生クラスからアクセス可能です。 | シグネチャでは互換性が維持されている必要があります |
 | **内部** | 無 | 無 | 無 | 同じモデルでアクセスできます。 | シグネチャは変更可能 |
-| **保護** | 無 | 有 | 無 | 定義されているクラスから、および派生クラスからアクセス可能 | シグネチャでは互換性が維持されている必要があります |
-| **パブリック** | 有 | 有 | 無 | 定義されたクラス、派生クラス、および定義するクラスにアクセスできるその他のクラスないからアクセス可能 | シグネチャでは互換性が維持されている必要があります |
+| **保護** | 無 | 有 | 無 | 定義されているクラスから、および派生クラスからアクセス可能です。 | シグネチャでは互換性が維持されている必要があります |
+| **パブリック** | 有 | 有 | 無 | 定義されたクラス、派生クラス、および定義するクラスにアクセスできるその他のクラスからアクセス可能です。 | シグネチャでは互換性が維持されている必要があります |
 
 ## <a name="hookable"></a>フック可能
 メソッドがフック可能な場合、拡張担当者はプリイベントとポストイベントにサブスクライブできます。
@@ -91,4 +90,3 @@ CoC は、さまざまな点で継承に似ています。 通常、他のユー
 + 置き換えるロジックとは異なる責任を持つロジックを記述し**ません**。
 + 置き換えロジックが適用されない場合、基本機能を呼び出し**ます** (次を呼び出し)。
 + 基本機能 (次を呼び出し) を呼び出さずにロジックを完全に置き換えることを**回避します**。
-

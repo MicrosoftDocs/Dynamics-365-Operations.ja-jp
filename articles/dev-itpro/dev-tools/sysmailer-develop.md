@@ -1,13 +1,13 @@
 ---
-title: "SysMailerフレームワークを使用して電子メール体験を開発する"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で SysMailer フレームワークを使用して電子メールを送信する方法について説明します。"
+title: SysMailerフレームワークを使用して電子メール体験を開発する
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で SysMailer フレームワークを使用して、電子メールを送信する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,21 +16,20 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
+ms.openlocfilehash: 7826d799ba449a2261243d8191fd164998beb538
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 9cfa5b4878911db229f405b67c8dede18e5ca756
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369229"
 ---
-
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="sending-emails"></a>電子メールを送信しています
 
-SysMailer フレームワークは Microsoft Dynamics 365 for Finance and Operations で電子メールを送信するための新しい拡張可能な方法です。 CDO.Messaging (SysMailer), MAPI (SysINetMail), および Outlook COM (SmmOutlookEmail) などの電子メールに対して以前のすべてのアプリケーション プログラミング インターフェイス (API) が置き換えられます。 これらの古いメールの API は Finance and Operations で正しく動作しません。 SysPlugin フレームワークと複数の .NET テクノロジを活用することで、SysMailer はユーザー向けのコンフィギュレーション可能な処理を提供し、アプリケーション使用者が電子メールを送信する際に使用する電子メール オプションに依存しない状態を維持することを可能にします。
+SysMailer フレームワークは、Microsoft Dynamics 365 for Finance and Operations で電子メールを送信するための新しい拡張可能な方法です。 CDO.Messaging (SysMailer), MAPI (SysINetMail), および Outlook COM (SmmOutlookEmail) などの電子メールに対して以前のすべてのアプリケーション プログラミング インターフェイス (API) が置き換えられます。 これらの古いメールの API は Finance and Operations で正しく動作しません。 SysPlugin フレームワークと複数の .NET テクノロジを活用することで、SysMailer はユーザー向けのコンフィギュレーション可能な処理を提供し、アプリケーション使用者が電子メールを送信する際に使用する電子メール オプションに依存しない状態を維持することを可能にします。
 
 SysMailer フレームワークは電子メール プロバイダー、メッセージを送信する一連の電子メール プロバイダー、メッセージを構築するメッセージ ビルダー、およびコンフィギュレーションや電子メール プロバイダーとのやり取りに関連付けられているフォームを取得するために使用されるファクトリ クラスから構成されます。 SysMailer フレームワークを使用するには、アプリケーション開発者は主に、**SysMailerFactory** クラスおよび **SysMailerMessageBuilder** クラスを使用します。 電子メール プロバイダ ファクトリを使用して、対話型または非対話型の電子メール プロバイダーを取得します。それにより複数のメッセージを同時に送信でき、または直接メッセージを送信できます。 電子メール プロバイダーはメッセージが .NET **System.Net.Mail.MailMessage** オブジェクトでカプセル化されることを予想して送信します。 メッセージ ビルダ クラスは、電子メール プロバイダーに渡される .NET オブジェクトを構築するために使用されます。
 
@@ -200,4 +199,3 @@ public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 ## <a name="migration-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Microsoft Dynamics AX 2012 から Finance and Operations への移行
 
 移行には、このトピックの例に示すように **SysMailerMessageBuilder** オブジェクトを使用して メッセージを構築し、**SysMailerFactory** を使用して送信することが含まれます。
-

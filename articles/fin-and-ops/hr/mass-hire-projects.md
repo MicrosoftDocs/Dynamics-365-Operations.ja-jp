@@ -1,13 +1,13 @@
 ---
-title: "大量雇用プロジェクト"
-description: "大量雇用プロジェクトにより、人事管理の専門家が複数の職位を作成し、これらの職位に作業者を効率的に採用することができます。"
+title: 大量雇用プロジェクト
+description: 大量雇用プロジェクトにより、人事管理の専門家が複数の職位を作成し、これらの職位に作業者を効率的に採用することができます。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMMassHireProject
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: e4c1bd382fa803f90a251c8c45acc556bee627d1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361547"
 ---
-
 # <a name="mass-hire-projects"></a>大量雇用プロジェクト
 
 [!include [banner](../includes/banner.md)]
@@ -83,4 +82,3 @@ ms.lasthandoff: 12/18/2018
 </tr>
 </tbody>
 </table>
-

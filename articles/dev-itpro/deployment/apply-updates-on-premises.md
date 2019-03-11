@@ -1,34 +1,34 @@
 ---
-title: "オンプレミス配置へ更新プログラムを適用"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開に更新プログラムを適用する方法について説明します。"
+title: オンプレミス配置へ更新プログラムを適用
+description: このトピックは、Microsoft Dynamics 365 for Finance and Operations の設置型展開に更新を適用する方法を説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 07/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0d81ce02b308d2328322dab0f6a5d2e6aa479530
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369983"
 ---
-# <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置へ更新プログラムを適用
+# <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置への更新プログラムの適用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開に、サポートされている更新を適用する方法について説明します。 オンプレミス環境でのすべての更新には Microsoft Dynamics Lifecycle Services (LCS) を通じて行われます。
+このトピックは、Microsoft Dynamics 365 for Finance and Operations の設置型展開に対してサポート対象の更新を適用する方法を説明します。 設置型環境でのすべての更新は Microsoft Dynamics Lifecycle Services (LCS) を通じて行われます。
 
 ## <a name="search-for-and-download-updates"></a>更新プログラムの検索とダウンロード
 オンプレミス環境に適用できる更新プログラムを検索する方法の詳細については、[問題検索](../lifecycle-services/issue-search-lcs.md) を参照してください。 LCS の**環境の詳細**ページの**更新**セクションで、タイルから更新プログラムをダウンロードする方法の詳細については、[更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
@@ -109,7 +109,7 @@ ms.lasthandoff: 08/09/2018
 - **準備段階:** **準備**段階で操作が失敗すると、ログが LCS にアップロードされます。 ログ ファイルで、**ログをダウンロード**を選択してログ ファイルをダウンロードします。 パッケージに結合の問題があった場合、エラーがログ ファイルに含まれます。
 - **配置ステージ:** **配置**ステージで操作が失敗すると、ログはオンプレミス環境にあります。 この環境にサインインした後、ログとイベント ビューアーにアクセスする必要があります。
 
-トラブルシューティング ログの使用方法の詳細については、[Dynamics 365 for Finance and Operations オンプレミスのトラブルシューティング](troubleshoot-on-prem.md) を参照してください。
+トラブルシューティング ログの使用方法の詳細については、[Dynamics 365 for Finance and Operations オンプレミスのトラブルシューティング](troubleshoot-on-prem.md)を参照してください。
 
 ログを確認しエラーの原因を特定すると、次のいずれかの操作を実行して環境を正常な状態に復元します。 **失敗**状態の環境で実行できるアクションはありません。 まず、環境を正常な状態に戻す必要があります。
 
@@ -127,4 +127,3 @@ ms.lasthandoff: 08/09/2018
     > このオプションは実稼働環境では使用**しない**でください。 ただし、環境を正常な状態に復元するサンドボックス環境で使用できます。 
     
     > このオプションは環境を新規に配置することを必要とするため、以前に適用された更新は失われます。 カスタマイズおよびバイナリ更新プログラムは、環境に再適用される必要があります。
-

@@ -1,37 +1,36 @@
 ---
-title: "AX 2012 からのアップグレード - 開発環境でのデータ アップグレード"
-description: "このトピックでは、開発環境で Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations にアップグレードするためのエンド・ツー・エンド プロセスについて説明します"
+title: AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
+description: このトピックでは、開発環境で Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations にアップグレードする詳細なプロセスを説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.custom: 106163
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 611460265f706de5fb492549b007d22ea78c28bb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369693"
 ---
-
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-これは、アップグレード プロジェクトのエキサイティングな瞬間です。 このタスクの出力は、Microsoft Dynamics 365 の Microsoft Dynamics AX 2012 から Finance and Operations に最初にアップグレードされたデータセットを提供します。
+これは、アップグレード プロジェクトのエキサイティングな瞬間です。 このタスクの出力は、Microsoft Dynamics 365 for Finance and Operations で、Microsoft Dynamics AX 2012 からアップグレードされた最初のデータセットを提供します。
 
 このプロセスを共有サンドボックス環境で実行する前に、開発環境で実行することをお勧めします。 このアプローチには主に 2 つの理由があります。
 
@@ -53,7 +52,7 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 
 ### <a name="upload-the-backup-to-azure-storage"></a>Azure ストレージにバックアップをアップロード
 
-開発環境がローカルまたは Azure で VM としてホストされている場合、2012 データベースのバックアップをそれに転送する必要があります。 ローカル VM では、ネットワーク全体でファイルを直接転送することができますが (それを許可するように仮想ネットワークを構成済みの場合)、Azure でホストされた VM の場合バックアップを Azure Storage にアップロードすることをお勧めします (自分のセキュアな転送サービスまたは SFTP の使用も有効なオプションです)。 これに対して、独自の Azure ストレージ アカウントを指定する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは[Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](http://storageexplorer.com/)を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
+開発環境がローカルまたは Azure で VM としてホストされている場合、2012 データベースのバックアップをそれに転送する必要があります。 ローカル VM では、ネットワーク全体でファイルを直接転送することができますが (それを許可するように仮想ネットワークを構成済みの場合)、Azure でホストされた VM の場合バックアップを Azure Storage にアップロードすることをお勧めします (自分のセキュアな転送サービスまたは SFTP の使用も有効なオプションです)。 これに対して、独自の Azure ストレージ アカウントを指定する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](http://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
 ### <a name="download-and-restore-the-backup-to-the-development-environment"></a>開発環境へのバックアップのダウンロードと復元
 
@@ -64,7 +63,7 @@ Dynamics 365 for Finance and Operations の開発環境にバックアップを�
 データベースを復元した後、次のサービスを停止します。
 
 - World Wide Web 公開サービス
-- Dynamics 365 for Finance and Operations Batch Management service
+- Dynamics 365 for Finance and Operations バッチ管理サービス
 - Management Reporter 2012 処理サービス
 
 次に、元の AXDB データベースを **AXDB_orig** に名前を変更します。 このデータベースは、後でコードを開発する際に参照する場合があります。
@@ -91,4 +90,3 @@ Dynamics 365 for Finance and Operations の開発環境にバックアップを�
 ### <a name="recommendation-for-the-first-data-upgrade-run"></a>最初のデータ アップグレードを実行するための推奨事項
 
 初めてデータセットのデータのアップグレードを実行するとき、特に多くのカスタマイズまたは多くのカスタム データのアップグレード スクリプトが存在するとき、[失敗したスクリプトをスキップする機能](upgrade-data-to-latest-update.md) が役に立つ場合があります。 この機能を使用すると、1 回の実行で可能な限り多くのエラーを可視化できます。 それ以外の場合、実行あたり 1 つだけの重要な問題が検出されます。 スクリプト間には依存関係が存在するため、親スクリプトをスキップすると関連する子スクリプトにエラーが発生することがあります。 これらのエラーは、親が正しく実行されなかったためにのみ発生します。 親スクリプト内の問題が解決されると、解決されます。
-

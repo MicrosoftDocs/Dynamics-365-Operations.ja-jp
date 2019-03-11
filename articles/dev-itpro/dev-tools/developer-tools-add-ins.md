@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio 用のツールおよびアドイン"
-description: "このトピックでは、Microsoft Visual Studio に追加されたアドイン インフラストラクチャを説明し、開発者が開発ツールをより簡単に追加できるようにします。"
+title: Visual Studio 用のツールおよびアドイン
+description: このトピックでは、Microsoft Visual Studio に追加されたアドイン インフラストラクチャを説明し、開発者が開発ツールをより簡単に追加できるようにします。
 author: RobinARH
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a6bc858ded5e61741e1b47f25d70af7b5f7bb926
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6897028da8c12b03bdfaa15651cbdc1b51be29a0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369402"
 ---
-
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 
 [!include [banner](../includes/banner.md)]
@@ -36,9 +35,8 @@ ms.lasthandoff: 04/20/2018
 -   **Dynamics 365** メニューで **アドイン** サブメニューをポイントします。
 -   要素デザイナーのショートカット メニューの **アドイン** サブメニュー
 
-独自のアドインを簡単に作成できるようにするには、Visual Studio で新規プロジェクトを作成するときに **Dynamics 開発者ツール アドイン** プロジェクト タイプを選択します。 このプロジェクト タイプには、アドインを実装するために必要なインフラストラクチャがあります。
+独自のアドインを簡単に作成できるようにするには、Visual Studioで新規プロジェクトを作成するときに **Dynamics 開発者ツール アドイン** プロジェクト タイプを選択します。 このプロジェクト タイプには、アドインを実装するために必要なインフラストラクチャがあります。
 
 アドインの詳細については、以下を参照してください。
 - [フォーム パターン アドイン](../user-interface/form-pattern-add-ins.md)
-
 

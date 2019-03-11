@@ -1,13 +1,13 @@
 ---
-title: "モバイルによる請求書承認"
-description: "このトピックは、サポート案件としてモバイルのベンダー請求書の承認を取得することによる、Dynamics 365 for Finance and Operations のモバイル シナリオを設計するための実際的なアプローチを提供することを目的としています。"
+title: モバイルによる請求書承認
+description: このトピックは、ユース ケースとしてモバイルの仕入先請求書の承認を取得することにより、Dynamics 365 for Finance and Operations でモバイル シナリオを設計するための実際的なアプローチを提供することを目的としています。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314397"
 ---
-
 # <a name="mobile-invoice-approvals"></a>モバイルによる請求書承認
 
 [!include [banner](../includes/banner.md)]
@@ -37,11 +36,11 @@ Microsoft Dynamics 365 for Finance and Operations のモバイル機能により
 | 前提条件                                                                                            | 説明                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | モバイル ハンドブックの先行読取                                                                                |[モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Microsoft Dynamics 365 for Operations バージョン 1611 および Microsoft Dynamics for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) がある環境。                   |
+| Dynamics 365 for Finance and Operations                                                                             | Microsoft Dynamics 365 for Operations バージョン 1611 および Microsoft Dynamics for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) がある環境                   |
 | 更新プログラム KB 3204341 をインストールします。                                                                              | タスク レコーダーは誤って 2 つのドロップダウン ダイアログの Close コマンドを記録できます。これは Dynamics 365 for Operation プラットフォーム更新プログラム 3 (2016 年 11 月の更新プログラム) に含まれています。 |
 | 更新プログラム KB 3207800 をインストールします。                                                                              | この修正プログラムは、モバイル クライアント上で表示される添付ファイルを有効にします。これは Dynamics 365 for Operation プラットフォーム更新プログラム 3 (2016 年 11 月の更新プログラム) に含まれています。           |
-| 更新プログラム KB 3208224 をインストールします。                                                                              | モバイル ベンダー請求書承認アプリケーションのアプリケーション コードです。これは、Microsoft Dynamics AX アプリケーション 7.0.1（2016 年 5 月）に含まれています。                          |
-| Finance and Operations 用のモバイル アプリがインストールされている Android または iOS または Windows デバイス | 適切なアプリ ストアでアプリを検索します。                                                                                                                     |
+| 更新プログラム KB 3208224 をインストールします。                                                                              | モバイルの仕入先請求書承認アプリケーションのアプリケーション コードです。これは、Microsoft Dynamics AX アプリケーション 7.0.1 (2016 年 5 月) に含まれています。                          |
+| Finance and Operations 用のモバイル アプリがインストールされている Android、iOS または Windows デバイス | 適切なアプリ ストアでアプリを検索します。                                                                                                                     |
 
 ## <a name="introduction"></a>はじめに
 ベンダー請求書のモバイル承認には、「前提条件」セクションに記載されている 3 つの修正プログラムが必要です。 これらの修正プログラムは、請求書承認のためのワークスペースを提供しません。 ワークスペースがモバイルのコンテキストでどのようなものかを知るには、「前提条件」セクションで説明したモバイル ハンドブックをお読みください。 請求書承認ワークスペースを設計する必要があります。 
@@ -126,7 +125,7 @@ Microsoft Dynamics 365 for Finance and Operations のモバイル機能により
 ### <a name="create-the-workspace"></a>ワークスペースの作成
 
 1.  ブラウザで、Finance and Operations を開いてサインインします。
-2.  サインインした後、次の例のように **&mode=mobile** を URL に追加し、ページを更新します。https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
+2.  サインインした後、次の例のように **&mode=mobile** を URL に追加し、ページを更新します: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  ページの右上角にある **設定** (歯車) ボタンをクリックし、次に **モバイル アプリ** をクリックします。 モバイル アプリのデザイナーは、タスク レコーダーが表示されるのと同じように表示される必要があります。
 4.  新しいワークスペース作成するには、**追加** をクリックします。 この例として、ワークスペースを **自分の承認** と名付けます。
 5.  説明を入力します。
@@ -139,7 +138,7 @@ Microsoft Dynamics 365 for Finance and Operations のモバイル機能により
 
 設計する必要がある最初のモバイル ページは、レビューのためにユーザーに割り当てられている請求書の一覧です。 このモバイル ページを設計するには、Finance and Operations で **VendMobileInvoiceAssignedToMeListPage** ページを使用します。 この手順を完了する前に、少なくとも 1 つの仕入先請求書がレビューのために割り当てられていること、および請求書行に 2 つの配布があることを確認してください。 この設定は、このシナリオの要件を満たしています。
 
-1.  Finance and Operations URL で、メニューの名前を **VendMobileInvoiceAssignedToMeListPage** に置き換え、**買掛金勘定** モジュールの **私に割り当てられた保留中の仕入先請求書** リスト ページのモバイル版を開きます。 システムに割り当てられている請求書の数に応じて、このページにこれらの請求書が表示されます。 特定の請求書を検索するには、左側のフィルターを使用します。 ただし、この例では特定の請求書は必要ありません。 割り当てられた請求書を要求するだけで、モバイル ページをデザインすることができます。 利用可能な新しいページは、ベンダーの請求書のモバイル シナリオを開発するために特別に設計されています。 したがって、これらのページを使用する必要があります。 URL は次のようなものでなければなりません。また、入力後、イラストに示されているページが表示されます。https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  Finance and Operations URL で、メニューの名前を **VendMobileInvoiceAssignedToMeListPage** に置き換え、**買掛金勘定** モジュールの **私に割り当てられた保留中の仕入先請求書** リスト ページのモバイル版を開きます。 システムに割り当てられている請求書の数に応じて、このページにこれらの請求書が表示されます。 特定の請求書を検索するには、左側のフィルターを使用します。 ただし、この例では特定の請求書は必要ありません。 割り当てられた請求書を要求するだけで、モバイル ページをデザインすることができます。 利用可能な新しいページは、ベンダーの請求書のモバイル シナリオを開発するために特別に設計されています。 したがって、これらのページを使用する必要があります。 URL は次のようなものでなければなりません。また、入力後、イラストに示されているページが表示されます: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![自分に割り当てられた保留中の仕入先請求書ページ](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  ページの右上角にある **設定** (歯車) ボタンをクリックし、次に **モバイル アプリ** をクリックします
 3.  ワークスペースを選択し、**編集** をクリックします。
 4.  **ページを追加** をクリックして、最初のモバイル ページを作成します。
@@ -488,7 +487,6 @@ Microsoft Dynamics 365 for Finance and Operations のモバイル機能により
     3.  理想的には、このシナリオでは、配布を請求明細行のコンテキストで表示する必要があります。 したがって、ユーザーが行にドリルダウンして配布ページを表示できることを確認してください。 シナリオ 1 のヘッダーおよび詳細ページの場合と同様に、ページ リンク機能を使用してドリルスルーを確立します。
 
 2.  シナリオ 2 の配布では、複数の金額タイプ (消費税、請求など) が予想されるため、金額タイプの説明を表示すると便利です。 (この情報はシナリオ 1 では省略しました。)
-
 
 
 

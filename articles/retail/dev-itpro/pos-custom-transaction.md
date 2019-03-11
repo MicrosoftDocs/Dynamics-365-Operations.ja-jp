@@ -1,13 +1,13 @@
 ---
-title: "Retail Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加"
-description: "このトピックでは、画面レイアウト デザイナーを使用して トランザクション ページに新しいカスタム コントロールを追加する方法について説明します。"
+title: Retail Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
+description: このトピックでは、画面レイアウト デザイナーを使用して トランザクション ページに新しいカスタム コントロールを追加する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: d6373f83aa4c0e64addbb17d336016ebe49e36aa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368443"
 ---
-
 # <a name="add-custom-controls-to-retail-modern-pos-mpos-transaction-pages"></a>Retail Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 
 [!include [banner](../../includes/banner.md)]
@@ -31,16 +30,16 @@ ms.lasthandoff: 08/09/2018
 カスタム コントロールを使用して、トランザクション ページにさらに情報を追加することができます。 画面レイアウト デザイナーを使用して、トランザクション ページにカスタム コントロールを追加することができます。 デザイナーで、ドラッグ アンド ドロップ操作を使用してカスタム コントロールを追加してから、コントロールの位置、高さ、および幅を設定できます。 POS 拡張フレームワークを使用して、独自の拡張機能にカスタム コントロール用ビジネス ロジックを実装することができます。 このトピックでは、選択した行の項目、項目 ID、および説明の詳細を示す新しいカスタム コントロールを追加する方法について説明します。
 
 > [!NOTE]
-> このトピックは、Dynamics 365 for Finance and Operations と、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた Microsoft Dynamics 365 for Retail に適用されます。
+> このトピックでは Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムが適用されます。
 
 ## <a name="add-a-new-custom-control"></a>新しいカスタム コントロールの追加
 
-1. Dynamics 365 for Retail にサインインします。
+1. Dynamics 365 for Retail へサインインします。
 2. **Retail** > **チャネル設定** > **POS 設定** > **POS** > **画面レイアウト**と選択します。
 3. **F3MGR** 画面レイアウト ID を選択した後、アクション ウィンドウで **デザイナー** を選択します。
 4. レイアウト サイズとして **1440 x 960: フル レイアウト** を選択し、**レイアウト デザイナー** を選択します。
 5. デザイナー ツールをインストールするように求められたら、**開く** を選択し、インストール手順に従います。
-6. Microsoft Azure Active Directory (Azure AD) の資格情報の入力を要求するメッセージが表示されたら、その情報を入力してデザイナーを起動します。
+6. Azure Active Directory (Azure AD) の資格情報の入力を要求するメッセージが表示されたら、その情報を入力してデザイナーを起動します。
 7. デザイナーで、カスタム コントロールを左ウィンドウからページにドラッグして、必要に応じてカスタム コントロールを調整、サイズ変更、または位置変更します。
 8. ページで、カスタム コントロールを右クリックし、**カスタマイズ**を選択します。
 9. ダイアログ ボックスで、これらのプロパティを設定します。
@@ -59,7 +58,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="add-business-logic-to-the-custom-control"></a>カスタム コントロールへのビジネス ロジックの追加
 
-1. 管理者として Microsoft Visual Studio 2015 を起動します。
+1. Microsoft Visual Studio 2015 を管理者として起動します。
 2. **ModernPOS** ソリューションを **…\RetailSDK\POS** から開きます。
 3. **POS.Extensions** プロジェクトで、**CustomControlExtensions** というフォルダーを作成します。
 4. **CustomControlExtensions** フォルダーで、**Cart** というフォルダーを作成します。
@@ -405,4 +404,3 @@ ms.lasthandoff: 08/09/2018
 3. トランザクションを任意の品目に追加し、追加した明細行品目を選択します。
 
     カスタム コントロールには、選択した明細行品目の ID と説明が表示されます。
-

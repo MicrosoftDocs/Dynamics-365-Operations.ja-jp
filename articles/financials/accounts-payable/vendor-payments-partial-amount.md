@@ -1,13 +1,13 @@
 ---
-title: "一部金額の支払"
-description: "1 つの請求書の量より少ない支払いを仕入先に行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。"
+title: 一部金額の支払
+description: 1 つの請求書の量より少ない支払いを仕入先に行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2644e0a27eff3e45ddcddb89c9aac9230190788f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d8c012d3e88f3f4fe2e60f1db59978e326c42681
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318905"
 ---
-
 # <a name="vendor-payments-for-a-partial-amount"></a>一部金額の仕入先支払
 
 [!include [banner](../includes/banner.md)]
@@ -55,4 +54,3 @@ ms.lasthandoff: 05/08/2018
 
 
 詳細については、[仕入先の支払概要](../cash-bank-management/tasks/vendor-payment-overview.md) を参照してください。
-

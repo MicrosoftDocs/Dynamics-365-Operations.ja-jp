@@ -1,13 +1,13 @@
 ---
-title: "トリガーを使用してトランザクションをブロックする"
-description: "このトピックでは、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。"
+title: トリガーを使用してトランザクションをブロックする
+description: このトピックでは、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 5994755b11bc2268686bedc7664c7992ca3e6d79
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368859"
 ---
-
 # <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 
 このトピックでは、請求書またはクレジット取引をブロックする方法を示します。
 
-1.  管理者として Visual Studio を開きます。 新しい Visual C\# クラス ライブラリ (ポータブル) プロジェクトを作成し、CRTTriggerExtension という名前を付けます。 選択内容によってこのプロジェクトが Visual Studio 2010 と互換性がなくなるというメッセージが表示される場合、**OK** をクリックします。
+1.  Visual Studio を管理者としてオープンします。 新しい Visual C\# クラス ライブラリ (ポータブル) プロジェクトを作成し、CRTTriggerExtension という名前を付けます。 選択内容によってこのプロジェクトが Visual Studio 2010 と互換性がなくなるというメッセージが表示される場合、**OK** をクリックします。
 2.  ソリューション エクスプローラーで、既定の class1.cs を GetCustomersServiceRequestTrigger.cs に名前を変更します。
 3.  プロジェクトで **参照** ノードを右クリックし、次の参照を追加します。 参照の場所は、配置トポロジによって異なります。
     -   Microsoft.Dynamics.Commerce.Runtime.Entities.dll
@@ -123,7 +122,6 @@ ms.lasthandoff: 08/09/2018
         }
 
 12. **保存** をクリックします。
-
 
 
 

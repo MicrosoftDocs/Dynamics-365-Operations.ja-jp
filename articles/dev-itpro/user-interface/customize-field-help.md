@@ -1,13 +1,13 @@
 ---
-title: "フィールドの説明をカスタマイズする"
-description: "この記事では、既存のフィールドの説明をカスタマイズし、独自の説明を追加する方法について説明します。"
+title: フィールドの説明をカスタマイズする
+description: この記事では、既存のフィールドの説明をカスタマイズし、独自の説明を追加する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: bfb8ad57d8bedcd2c046f1727b24e85d49377b52
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369492"
 ---
-
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Microsoft が提供するフィールドの説明は、別のラベル ファイ
 ラベル ID のパターンは @FieldDescriptions\_*ModuleName:PageName*\_*ControlName* です。 次にいくつか例を挙げます。
 
 - @FieldDescriptions\_AccountsPayable:CustSettlement\_CustSettlement\_OffsetCompany は、<strong>顧客決済</strong>ページ (CustSettlement) の<strong>会社コード</strong>フィールド (CustSettlement\_OffsetCompany) のラベルの ID です。
-- @FieldDescriptions\_ProcurementAndSourcing:PurchLineBackOrder\_LinkViewCheckBox は、 <strong>受注残購買明細行</strong>ページ (PurchLineBackOrder) <strong>変更ビューのリンク</strong>オプション (LinkViewCheckBox) のラベルの ID です。
+- @FieldDescriptions\_ProcurementAndSourcing:PurchLineBackOrder\_LinkViewCheckBox は、<strong>発注残購買注文明細行</strong> (PurchLineBackOrder) ページ内の<strong>変更ビューのリンク</strong> (LinkViewCheckBox) オプションのラベルの ID です。
 
 
 <a name="additional-resources"></a>その他のリソース
@@ -59,7 +58,6 @@ Microsoft が提供するフィールドの説明は、別のラベル ファイ
 [クライアントでローカライズ可能なラベルを作成する](create-localizable-labels-client.md)
 
 [フィールド説明の表示およびエクスポート](../../fin-and-ops/get-started/view-export-field-descriptions.md)
-
 
 
 

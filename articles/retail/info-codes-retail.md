@@ -1,13 +1,13 @@
 ---
-title: "情報コードおよび情報コード グループ"
-description: "この記事は、情報コード、情報コード グループとその使用方法に関する概要を示します。"
+title: 情報コードおよび情報コード グループ
+description: この記事は、情報コード、情報コード グループとその使用方法に関する概要を示します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340824"
 ---
-
 # <a name="info-codes-and-info-code-groups"></a>情報コードおよび情報コード グループ
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/04/2019
 
 ## <a name="info-codes-group"></a>情報コード グループ
 
-Dynamics 365 for Retail では、小売は情報コードのグループを作成できます。 情報コード グループは、少ない情報コードを定義してより多目的な方法で情報コードを使用できるようにすることによって、柔軟性を増加させます。 情報コード グループは次の方法で使用できます。
+Dynamics 365 for Retail で、情報コード グループを作成できます。 情報コード グループは、少ない情報コードを定義してより多目的な方法で情報コードを使用できるようにすることによって、柔軟性を増加させます。 情報コード グループは次の方法で使用できます。
 
 - 少ない情報コードを定義して、簡単に再利用します。 情報コード グループに含まれる情報コードは、他の情報コードとは定義済みの依存関係はありません。 同じ情報コードを複数の情報コード グループに含め、次に優先順位を使用してどの特定の状態でも意味の通る順序で同じ情報コードを表示できます。
 - 情報コードをそのほかの情報コードまたは情報コード グループに関連付けて、シナリオごとに個別の情報コードまたはリンク情報コードを定義することなく必要とする方法で、製品またはトランザクションに関する情報を収集します。
@@ -57,4 +56,3 @@ Dynamics 365 for Retail では、小売は情報コードのグループを作�
 **例 2: 情報コードと情報コード グループの関連付け**
 
 モバイル デバイスなどの特定の製品を販売するとき、電話番号、携帯機器識別番号 (MEID)、およびシリアル番号などの一連の特定の情報を収集する必要が常にあります。 ただし、タブレットと携帯電話を対比したさまざまな情報も収集する必要があります。 電話番号、MEID、およびシリアル番号に対するプロンプトを含む情報コード グループを設定し、情報コード グループを個別の情報コードに関連付けることができます。 製品固有の情報コードがトリガーされると、次に情報コード グループがトリガーされ、各デバイスについてリンクされた複数のセットの情報コードを定義しなくても、共通データを収集できるようになります。
-

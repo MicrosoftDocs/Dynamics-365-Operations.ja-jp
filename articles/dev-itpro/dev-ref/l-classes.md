@@ -1,13 +1,13 @@
 ---
-title: "L クラス"
-description: "文字 L で始まるシステム API クラス。"
+title: L クラス
+description: 文字 L で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0f6ba5193e0c2fb14ce5e28379b5e1d92eb79839
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369850"
 ---
-
 # <a name="l-classes"></a>L クラス
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,7 @@ LabelBulkEditor クラスのインスタンス。
 
 #### <a name="remarks"></a>備考
 
-LabelBulkEditor クラスを使用すると、ラベル ファイルが簡単に変更されます。 このメソッドは、クライアント層から呼び出されたときに nullNothingnullptrunita null 参照 (Visual BasicではNothing) を返します。
+LabelBulkEditor クラスを使用すると、ラベル ファイルが簡単に変更されます。 このメソッドは、クライアント層から呼び出されたときに nullNothingnullptrunita null 参照 (Visual Basic ではNothing) を返します。
 
 ### <a name="method-createlabelfile"></a>メソッド createLabelFile
 
@@ -714,7 +713,7 @@ LastAotSelection クラスの新しいインスタンスを初期化します。
 
 #### <a name="examples"></a>例
 
-次の例では、整数のリストを作成し、値の 1 と 2 をリストの末尾に追加し、値 3 をリストの先頭に追加します。 List.toString メソッドによって返される値は{3,1,2}です。
+次の例では、整数のリストを作成し、値の 1 と 2 をリストの末尾に追加し、値 3 をリストの先頭に追加します。 List.toString メソッドによって返される値は {3, 1, 2} です。
 
     { 
         // Create a list of integers 
@@ -2051,7 +2050,6 @@ newValue
 #### <a name="remarks"></a>備考
 
 既定では、事前に定義されたサービスは使用されません。
-
 
 
 

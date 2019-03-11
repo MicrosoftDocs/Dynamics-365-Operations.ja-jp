@@ -1,13 +1,13 @@
---- 
-title: "固定資産の分割"
-description: "このタスク ガイドでは、1 つの資産帳簿を新しい資産帳簿に分割します。"
+---
+title: 固定資産の分割
+description: このタスク ガイドでは、1 つの資産帳簿を新しい資産帳簿に分割します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6be9de64265a4d7b5c91af3ee8acfce80c78e0f1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b4c1b39bcae1fa3830f3a217d1ad89e84cd72134
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333372"
 ---
 # <a name="split-a-fixed-asset"></a>固定資産の分割
 
@@ -58,5 +58,4 @@ ms.lasthandoff: 09/29/2017
 3. [明細行] をクリックします。
     * 作成した仕訳帳明細行を確認します。  取得原価調整トランザクションは、指定した割合で分割処理中に元の資産の価値を減らすために作成されます。  取得トランザクションは、新しい資産に対して同じ金額で作成されます。  
 4. [転記] をクリックします。
-
 

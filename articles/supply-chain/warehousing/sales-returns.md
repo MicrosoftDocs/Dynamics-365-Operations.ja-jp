@@ -1,13 +1,13 @@
 ---
-title: "販売返品"
-description: "このトピックでは、返品注文のプロセスについての情報を提供します。 これは顧客の返品に関する情報、および返品による原価計算と手持在庫数量への影響に関する情報が含まれます。"
+title: 販売返品
+description: このトピックでは、返品注文のプロセスについての情報を提供します。 これは顧客の返品に関する情報、および返品による原価計算と手持在庫数量への影響に関する情報が含まれます。
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362697"
 ---
-
 # <a name="sales-returns"></a>販売返品
 
 [!include [banner](../includes/banner.md)]
@@ -329,7 +328,6 @@ ms.lasthandoff: 05/08/2018
 ![販売注文の検索を使用して作成される返品注文明細行 ](./media/SalesReturn11.png)  
 
 >[注記!] **割引**および**返品原価価格**が正確に設定されます。 したがって、顧客請求書の的確な取消が発生します。
-
 
 
 

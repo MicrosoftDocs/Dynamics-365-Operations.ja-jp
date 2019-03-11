@@ -1,13 +1,13 @@
 ---
-title: "エントリ ポイントのアクセス許可の定義または編集"
-description: "このトピックでは、Dynamics AX でエントリ ポイントのアクセス許可を作成または変更する方法について説明します。"
+title: エントリ ポイントのアクセス許可の定義または編集
+description: このトピックでは、Dynamics AX でエントリ ポイントのアクセス許可を作成または変更する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18211
 ms.assetid: 1e7c9c30-7418-4f4a-93a3-2d043073e429
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 44eeaa4c68c4f27d9e02bf2564fe1e188505d803
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369418"
 ---
-
 # <a name="define-or-edit-entry-point-permissions"></a>エントリ ポイントのアクセス許可の定義または編集
 
 [!include [banner](../../includes/banner.md)]
@@ -55,7 +54,7 @@ ms.lasthandoff: 08/09/2018
 3.  セキュリティ テスト ワークスペースを閉じます。
 
 ## <a name="view-the-user-licenses-for-a-role"></a>任意のロールの複数のユーザー ライセンスの表示
-セキュリティ開発ツールを使用すると、ロールに関連付けられているユーザー ライセンスを表示することができます。 また、エントリ ポイント アクセス許可に対する変更がユーザー ライセンス与える影響を確認することができます。 このツールは、アクセス許可を読み込むかまたは更新するとき、有効なユーザー ライセンスの種類を、選択したオブジェクトによって許可されている各エントリ ポイントとオブジェクト自体の両方について計算します。 エントリ ポイントのコンフィギュレーション キーが無効になると、エントリ ポイントのユーザー ライセンスは取得されません。 ユーザー クライアント アクセス ライセンス (CAL) タイプは、セルフサービス ユーザー、タスク ユーザー、機能ユーザー、およびエンタープライズ ユーザーです。 ユーザー CAL は、アクションが関連付けられているオブジェクトである特定のメニュー項目に関連付けられています。 任意の対象については、ユーザー CAL との関連付けは、オブジェクトの **ViewUserLicense** および **MaintainUserLicense** プロパティの値に基づいて計算されます。 **ViewUserLicense** はアクセス許可の表示に対してのみ使用し、一方、**MaintainUserLicense** は、より大きなアクセス許可のセットのために使用します。 詳細については、[Microsoft Dynamics AX 2012 ライセンス ガイド](http://download.microsoft.com/download/C/1/0/C10B152C-9E2B-4A9D-BE1F-52718B94318B/Microsoft%20Dynamics%20AX%20Licensing%20Guide.pdf) を参照してください。
+セキュリティ開発ツールを使用すると、ロールに関連付けられているユーザー ライセンスを表示することができます。 また、エントリ ポイント アクセス許可に対する変更がユーザー ライセンス与える影響を確認することができます。 このツールは、アクセス許可を読み込むかまたは更新するとき、有効なユーザー ライセンスの種類を、選択したオブジェクトによって許可されている各エントリ ポイントとオブジェクト自体の両方について計算します。 エントリ ポイントのコンフィギュレーション キーが無効になると、エントリ ポイントのユーザー ライセンスは取得されません。 ユーザー クライアント アクセス ライセンス (CAL) タイプは、セルフサービス ユーザー、タスク ユーザー、機能ユーザー、およびエンタープライズ ユーザーです。 ユーザー CAL は、アクションが関連付けられているオブジェクトである特定のメニュー項目に関連付けられています。 任意の対象については、ユーザー CAL との関連付けは、オブジェクトの **ViewUserLicense** および **MaintainUserLicense** プロパティの値に基づいて計算されます。 **ViewUserLicense** はアクセス許可の表示に対してのみ使用し、一方、**MaintainUserLicense** は、より大きなアクセス許可のセットのために使用します。 詳細については、[Microsoft Dynamics AX 2012 Licensing Guide](http://download.microsoft.com/download/C/1/0/C10B152C-9E2B-4A9D-BE1F-52718B94318B/Microsoft%20Dynamics%20AX%20Licensing%20Guide.pdf) を参照してください。
 
 ### <a name="view-the-user-license-for-a-role"></a>任意のロールのユーザー ライセンスの表示
 
@@ -84,7 +83,6 @@ ms.lasthandoff: 08/09/2018
 11. **現在のアクセス レベル** 列のエントリを確認し、ロールがエントリ ポイントに新しい権限を付与するかどうかを確認します。
 12. **セキュリティ テスト** ワークスペースを使用してアクセス許可を検証します。
 13. **追加のメタデータを読み込む** を使用して、ライセンス要件が変更されたかどうかを検証します。
-
 
 
 

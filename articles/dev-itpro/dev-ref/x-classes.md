@@ -1,13 +1,13 @@
 ---
-title: "X クラス"
-description: "文字 X で始まるシステム API クラス。"
+title: X クラス
+description: 文字 X で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1617a2b313a45bf8eb06797c32535d563d82457b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369612"
 ---
-
 # <a name="x-classes"></a>X クラス
 
 [!include [banner](../includes/banner.md)]
@@ -2179,7 +2178,7 @@ xClassFactory クラスの新しいインスタンスを初期化します。
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                                                                             | 説明                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -4190,7 +4189,7 @@ e
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                                                                                                                                                                                                                                                                                             | 説明                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -6329,7 +6328,7 @@ ISO 639 は、英語の "en" などの言語の名前を定義します。 Micro
         pause; 
     }
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                     | 説明                                                                                                 |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -8280,7 +8279,7 @@ cursor
 
 #### <a name="remarks"></a>備考
 
-このメソッドは上書きされます。 Object :: equal メソッドの既定の実装では、照会の等価性のみをサポートします。 派生クラスは、値の等価性をサポートするために Object::equal メソッドを上書きできます。
+このメソッドは上書きされます。 Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。 派生クラスは、値の等価性をサポートするために Object::equal メソッドを上書きできます。
 
 ### <a name="method-fieldaccessright"></a>メソッド fieldAccessRight
 
@@ -10137,7 +10136,7 @@ IIS オブジェクトは、IISObject システム列挙によって提供され
 
 #### <a name="remarks"></a>備考
 
-システム トレースを有効にするには、xSession :: setSysTraceActive を使用します。
+システム トレースを有効にするには、xSession::setSysTraceActive を使用します。
 
 #### <a name="examples"></a>例
 
@@ -10866,7 +10865,6 @@ node
 <!-- -->
 
 ラベル  
-
 
 
 

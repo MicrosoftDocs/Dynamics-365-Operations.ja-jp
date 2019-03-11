@@ -1,13 +1,13 @@
 ---
-title: "組織と組織階層"
-description: "組織とは、業務プロセスを実行や目標の達成を協力して行う人々の集まりです。 組織階層とは、業務を構成する組織の関係を表すものです。"
+title: 組織と組織階層
+description: 組織とは、業務プロセスを実行や目標の達成を協力して行う人々の集まりです。 組織階層とは、業務を構成する組織の関係を表すものです。
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322240"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>組織と組織階層
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 11/03/2017
 
 Microsoft Dynamics 365 for Finance and Operations では、法人、作業単位、およびチームという内部組織のタイプを定義できます。
 
-すべての内部組織は [**関係者**] エンティティ タイプです。 したがって、これらの組織は、住所と連絡先情報を保存するためにアドレス帳機能を使用します。 当時者は、個人または組織のいずれかであり、1 つ以上のアドレス帳に含めることができます。
+すべての内部組織は **関係者** エンティティ タイプです。 したがって、これらの組織は、住所と連絡先情報を保存するためにアドレス帳機能を使用します。 当時者は、個人または組織のいずれかであり、1 つ以上のアドレス帳に含めることができます。
 
 ### <a name="legal-entities"></a>法人
 
@@ -48,7 +47,7 @@ Microsoft Dynamics 365 for Finance and Operations では、法人、作業単位
 
 作業単位とは、事業における経済資源と運営プロセスの管理を振り分ける際に使用する組織です。 作業単位のメンバは、希少なリソースの有効活用、プロセスの改善、および業績に対する責任を担っています。
 
-Microsoft Dynamics 365 for Finance and Operations では、作業単位には、コスト センター、事業単位、バリュー ストリーム、部門、小売チャネルなどのタイプがあります。 次の表に、作業単位の各タイプに関する詳細情報を示します。
+Microsoft Dynamics 365 for Finance and Operations では、作業単位には、コスト センター、事業単位、バリュー ストリーム、部門、小売チャンネルなどのタイプがあります。 次の表に、作業単位の各タイプに関する詳細情報を示します。
 
 | 作業単位のタイプ | 説明 | 目的 |
 |---------------------|-------------|---------|
@@ -66,7 +65,6 @@ Microsoft Dynamics 365 for Finance and Operations では、作業単位には、
 
 業務について、さまざまな観点から表示と報告を行う組織階層を設定します。 たとえば、税金、法律、または法令についての報告に使用するの法人の階層を設定できます。 法的に必須でなくても内部統制に使用する財務情報を報告する階層を、作業単位に基づいて設定します。 たとえば、購買ポリシー、ルール、および業務プロセスを管理する購買階層を作成できます。
 
-Microsoft Dynamics 365 for Finance and Operations では各階層の目的が割り当てられます。 階層の目的により、階層に含めることができる組織のタイプが決まります。 この目的により、どのアプリケーションのシナリオで階層を使用できるかが決まります。
+各階層の目的は Microsoft Dynamics 365 for Finance and Operations で割り当てられます。 階層の目的により、階層に含めることができる組織のタイプが決まります。 この目的により、どのアプリケーションのシナリオで階層を使用できるかが決まります。
 
 各階層の組織では、パラメータ、ポリシー、およびトランザクションを共有できます。 親組織のパラメータは、各組織で継承または上書きできます。 ただし、製品やアドレス帳などの共有マスタ データは組織全体に適用され、個々の組織では上書きすることはできません。 組織と階層の作成は慎重に計画する必要があります。 詳細については、「[組織階層の計画](plan-organizational-hierarchy.md)」を参照してください。
-

@@ -1,13 +1,13 @@
 ---
-title: "従業員情報を管理するためのワークフローの使用"
-description: "このトピックでは、従業員情報を管理するために人事管理のワークフロー機能を使用する方法を説明します。 たとえば、ワークフローを職位と関連付け、従業員がレコードを変更した際に開始された承認ワークフローをコンフィギュレーションすることができます。"
+title: 従業員情報を管理するためのワークフローの使用
+description: このトピックでは、従業員情報を管理するために人事管理のワークフロー機能を使用する方法を説明します。 たとえば、ワークフローを職位と関連付け、従業員がレコードを変更した際に開始された承認ワークフローをコンフィギュレーションすることができます。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0ffae206ae1956e5dc41487f04561ed2c48bd20b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: cf2200057053f5a6d4754d37111ebe34849bb99d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305092"
 ---
-
 # <a name="use-workflows-to-manage-employee-information"></a>従業員情報を管理するためのワークフローの使用
 
 [!include [banner](includes/banner.md)]
@@ -65,11 +64,10 @@ ms.lasthandoff: 02/14/2018
     3.  停止条件を追加して、ページを閉じます。
 
 8.  追加の指示があればすべて完了させます (追加の警告は存在しません) 。
-9.  [**保存して終了**] をクリックします。 ダイアログ ボックスが開いたら新しいワークフローを有効化し **有効にする** を選択します。
+9.  **保存して終了** をクリックします。 ダイアログ ボックスが開いたら新しいワークフローを有効化し **有効にする** を選択します。
 10. **人事管理** &gt; **職位** &gt; **職位階層タイプ** に移動します。
 11. **マトリックス** を選択します。
 12. **作業者 ID 番号** ワークフローを一覧に追加します。
-
 
 
 

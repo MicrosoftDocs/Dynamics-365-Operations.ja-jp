@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) 支払拡張機能"
-description: "支払いの拡張性をサポートするために POS で拡張点を使用すると、ハードウェア ステーション API を使用する支払デバイスまたは支払コネクタに主要な支払いロジックを実装することができます。"
+title: 販売時点管理 (POS) 支払拡張機能
+description: 支払いの拡張性をサポートするために POS で拡張点を使用すると、ハードウェア ステーション API を使用する支払デバイスまたは支払コネクタに主要な支払いロジックを実装することができます。
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 9e08f0a11d50e60270aab2009c4efd67b7d2f5f9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368774"
 ---
-
 # <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 
 [!include [banner](../../includes/banner.md)]
@@ -345,4 +344,3 @@ export default class PaymentTerminalExecuteTaskRequestHandlerExt extends Payment
 **PaymentTerminalVoidPaymentRequestHandler**、無効化要求、無効化カード支払要求を開始する POS からの支払要求です。 無効なワークフローを変更する場合は、この要求をオーバーライドします。 リクエストをオーバーライドにするには、POS の **PaymentTerminalVoidPaymentRequestHandler** を拡張する必要があります。
 
 無効および払い戻し要求コード パターンを拡張することは、承認および取得要求と同じです。 拡張プロパティを渡す方法とともに、無効および払い戻し支払要求の完全なコードサンプルは、RetailSDK\Code\POS\Extensions\PaymentSample フォルダーの Retail SDK アプリケーション 3 で利用できます。
-

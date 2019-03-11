@@ -1,13 +1,13 @@
 ---
-title: "サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問"
-description: "このトピックでは、定期売買およびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。"
+title: サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
+description: このトピックでは、定期売買およびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 05/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
+ms.openlocfilehash: e3a5eda1f219a9e1c0ee448864ec3763f9fe155f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
-ms.openlocfilehash: 87c3990e33e8e88e70cb9ef5ef0e4c306498efbf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369318"
 ---
-
-# <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問
+# <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-顧客は、マイクロソフト ボリューム ライセンス契約またはマイクロソフト クラウド ソリューション プロバイダー (CSP) 契約を通じて、 Microsoft Dynamics 365 for Finance and Operations に加入すると、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトと、顧客が選択した 1 つのデータ センターに配備された任意の数のサンドボックス環境と、Finance and Operations の 1 つの実働インスタンスです。 これらのコア概念の詳細については、[Finance and operations アーキテクチャの概要](../imp-lifecycle/architecture-overview.md)を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。
+顧客は、マイクロソフト ボリューム ライセンス契約またはマイクロソフト クラウド ソリューション プロバイダー (CSP) 契約を通じて、Microsoft Dynamics 365 for Finance and Operations に加入すると、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトと、顧客が選択した 1 つのデータ センターに配備された任意の数のサンドボックス環境と、Finance and Operations の 1 つの実働インスタンスです。 これらのコア概念の詳細については、[Finance and operations アーキテクチャの概要](../imp-lifecycle/architecture-overview.md)を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。
 
 このトピックでは、定期売買およびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
 
@@ -36,7 +35,7 @@ ms.lasthandoff: 08/09/2018
 - [データ センター間で環境を移動する](move-environments-data-center.md)
 - [契約タイプ間でライセンスを移動する](move-licenses-between-agreement-types.md)
 - [LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する](move-lcs-implementation-project-tenant.md)
-- [複数の LCS プロジェクトと本番環境を同じ Azure Active Directory テナント上に実装する](implement-multiple-projects-aad-tenant.md)
+- [複数の LCS プロジェクトと実稼働環境を同じ Azure Active Directory テナント上に実装する](implement-multiple-projects-aad-tenant.md)
 
 ## <a name="do-i-have-to-move-azure-ad-tenants-when-i-move-from-a-csp-agreement-to-a-volume-licensing-agreement"></a>CSP 契約からボリューム ライセンス契約に移行する際、Azure AD テナントを移行する必要がありますか？
 
@@ -61,4 +60,3 @@ ms.lasthandoff: 08/09/2018
 ## <a name="can-i-have-a-csp-agreement-and-a-volume-licensing-agreement-in-parallel"></a>CSP 契約とボリューム ライセンス契約を並行して締結することはできますか？
 
 はい。 ただし、各プログラムで必要なライセンスの最低限の数を維持する必要があります。
-

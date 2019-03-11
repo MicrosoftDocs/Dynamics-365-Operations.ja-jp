@@ -1,13 +1,13 @@
 ---
-title: "Commerce Rumtime (CRT) の拡張機能とトリガー"
-description: "この記事では、Microsoft Dynamics AX commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRTは、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。"
+title: Commerce Rumtime (CRT) の拡張機能とトリガー
+description: この記事では、Microsoft Dynamics AX commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRTは、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -18,19 +18,18 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 23998cfead02ad1dd514c373e4d7ec42d0327b3c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368773"
 ---
-
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Retail commerce ランタイム (CRT) の Dynamics 365 のトリガー サポートについて説明します。 CRTは、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。
+この記事では、Dynamics 365 for Retail commerce ランタイム (CRT) のトリガー サポートについて説明します。 CRTは、すべての要求に対してプレトリガーおよびポストトリガーをサポートしています。
 
 ## <a name="crt-trigger-overview"></a>CRT トリガーの概要
 
@@ -115,11 +114,10 @@ CRT を拡張するときは、ユーザー独自のアセンブリ内で拡張�
 
 [![CRTExtensionTrigger](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)
 
-オフライン モードで作業する CRT 拡張機能については、構成セクションの拡張ライブラリ情報により **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\CommerceRuntime.MPOSOffline.config** を更新し、拡張ライブラリを **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker** にコピーおよび貼り付けます。
+オフライン モードで作業する CRT 拡張機能については、合成セクションの拡張ライブラリ情報で **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\CommerceRuntime.MPOSOffline.config** を更新し、その拡張ライブラリをコピーして **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker** に貼り付けます。
 
 ## <a name="trigger-commerceruntimeconfig-updates-for-71-with-may-2017-monthly-update-72-and-73"></a>7.1 (2017 年 5 月の月次更新)、7.2 および 7.3 の CommerceRunTime.config 更新プログラムのトリガー
 拡張ライブラリを **...\RetailServer\webroot\bin\ext フォルダー**にコピーして貼り付け、構成セクションのカスタム拡張ライブラリ情報を含む **commerceRuntime.ext.config** ファイルを更新します。 この例では、**Contoso.Commerce.Runtime.Services** はカスタムの拡張機能名です。
     <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
 
-オフライン モードで作業する CRT 拡張機能については、構成セクションの拡張ライブラリ情報により **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\extCommerceRuntime.MPOSOffline.ext.config** を更新し、拡張ライブラリを **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext** にコピーおよび貼り付けます。
-
+オフライン モードで作業する CRT 拡張機能については、合成セクションの拡張ライブラリ情報で **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\extCommerceRuntime.MPOSOffline.ext.config** を更新し、その拡張ライブラリをコピーして **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext** に貼り付けます。

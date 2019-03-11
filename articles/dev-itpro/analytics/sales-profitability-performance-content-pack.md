@@ -1,13 +1,13 @@
 ---
-title: "販売および収益性パフォーマンス Power BI コンテンツ"
-description: "このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
+title: 販売と収益性のパフォーマンス Power BI コンテンツ
+description: このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360420"
 ---
-
-# <a name="sales-and-profitability-performance-power-bi-content"></a>販売および収益性パフォーマンス Power BI コンテンツ
+# <a name="sales-and-profitability-performance-power-bi-content"></a>販売と収益性のパフォーマンス Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 08/13/2018
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 **販売と収益性のパフォーマンス** Power BI コンテンツは**販売と収益性のパフォーマンス**ページ (**販売とマーケティング** \> **照会およびレポート** \> **販売パフォーマンスの分析** \> **販売と収益性のパフォーマンス**) に表示されます。
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
+## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 **販売と収益性のパフォーマンス** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、コンテンツでの視覚化の概要を示しています。
 
 | レポート ページ            | グラフ                                     | タイル                                                   |
@@ -78,9 +77,9 @@ ms.lasthandoff: 08/13/2018
 \* 本年度と昨年度の収益、および販売カテゴリごとの増加。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-次のデータは、**販売と収益性のパフォーマンス** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、**販売と収益性のパフォーマンス** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
 
-このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の販売キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。
+このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の売上キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。
 
 請求明細行エンティティの以下のキー集計の測定は、コンテンツの基準として使用されます。
 
@@ -109,4 +108,3 @@ ms.lasthandoff: 08/13/2018
 | 日付            | 日付                                                |
 
 既定では、コンテンツは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
-

@@ -1,13 +1,13 @@
 ---
-title: "リーン組織のモデリング"
-description: "この記事は、リーン組織のモデリングにおける重要な概念に関する情報を提供します。"
+title: リーン組織のモデリング
+description: この記事は、リーン組織のモデリングにおける重要な概念に関する情報を提供します。
 author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350990"
 ---
-
 # <a name="modeling-a-lean-organization"></a>リーン組織のモデリング
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 10/16/2018
 
 バッチ製造が原因で発生するワークセンター間の出荷のリードタイムと過剰な在庫を減らすために、リーン生産は、製造と倉庫の補充において、かんばん補充およびかんばんスーパーマーケットを導入します。 通常、これらの機能は部分的に独立したかんばんサイクルの生産を阻みます。 半完成品のかんばんの補充は、もはや完成品の発注によっては行われません。 
 
-Microsoft Dynamics 365 for Finance and Operations で提案されるさまざまなかんばんのシナリオの生産と、コストのコンテキストを再構築するために、活動ベースの生産フローが、リーン生産のバックボーンとして導入されました。 すべてのかんばんルールは、この定義された構造によります。 活動ベースのモデルは、さまざまなシナリオの設定をサポートしています。 ただし、このモデルでは、すべてのシナリオが同じ活動ベースのユーザー インターフェイスを使用するため、作業現場の作業がより複雑になることはありません。
+Microsoft Dynamics 365 for Finance and Operations で提案されるさまざまなかんばんのシナリオの生産とコストのコンテキストを再構築するために、活動ベースの生産フローが、リーン生産のバックボーンとして導入されました。 すべてのかんばんルールは、この定義された構造によります。 活動ベースのモデルは、さまざまなシナリオの設定をサポートしています。 ただし、このモデルでは、すべてのシナリオが同じ活動ベースのユーザー インターフェイスを使用するため、作業現場の作業がより複雑になることはありません。
 
 ## <a name="semi-finished-products-non-bom-levels"></a>半完成品 (非 BOM レベル)
 リーン生産は、在庫製品と半完成品のかんばんを 1 つのフレームワークに統合し、すべてのケースにおいて同一のユーザー エクスペリエンスを提供します。 この構造のため、かんばんを半完成品に使用できるようにするために追加の BOM レベルを導入する必要はありません。 また、この構造は在庫トランザクションを最小限にします。
@@ -65,7 +64,6 @@ Finance and Operations では、未来型のバリュー ストリームは生�
 
 ## <a name="simplicity"></a>シンプルさ
 リーン生産の導入には、単一のスケーラブルな構造の中で、シンプルおよび複雑な生産シナリオのモデル化を可能にする生産フローおよび活動のアプローチを用意しています。 活動のコンセプトを詳しく調べると、作業現場およびロジスティクスの作業者などのユーザーが必要とする新たなシンプルさが見えてきます。 在庫トランザクションではなく活動ベースのジョブに関するレポートにより、複雑なビジネスの中で行われる様々な形態のリーン生産のすべてが、統一感のあるユーザー インターフェイスによってしかるべきところへ、つまりリーン生産のバックボーンとしての生産フローへと転送されます。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "R クラス"
-description: "文字 R で始まるシステム API クラス。"
+title: R クラス
+description: 文字 R で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: f9dad8186b9e557154943c46dbb04317149d47f9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369631"
 ---
-
 # <a name="r-classes"></a>R クラス
 
 [!include [banner](../includes/banner.md)]
@@ -842,7 +841,7 @@ RelationPath クラスの新しいインスタンスを初期化します。
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                   | 説明                                                   |
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -5351,7 +5350,7 @@ string
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -10271,7 +10270,7 @@ ReportGuidControl クラスを使用すると、X++ コードとメタデータ�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -16132,7 +16131,7 @@ ReportRealControl クラスを使用すると、X++ コードとメタデータ�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -30189,7 +30188,6 @@ Finance and Operations のユーザーを指定する userId システムのデ�
         _userId = _userInfo.Id; 
         _perm = new RunAsPermission(_userId); 
     }
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "償却率表の入力および減価償却プロファイルへの関連付け"
-description: "日本では、固定資産減価償却率は政府機関によって発表されます。"
+---
+title: 償却率表の入力および減価償却プロファイルへの関連付け
+description: 日本では、固定資産減価償却率は政府機関によって発表されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepRate_JP, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1e5f629df10ae8661d46a417cde3220498e20f77
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371117"
 ---
 # <a name="enter-depreciation-rate-schedule-and-associate-to-depreciation-profile"></a>償却率表の入力および減価償却プロファイルへの関連付け
 
@@ -57,5 +57,4 @@ ms.lasthandoff: 10/16/2018
 4. 一覧で、選択された行のリンクをクリックします。
     * 前のタスクで変更した減価償却スケジュールを選択します。  
 5. [保存] をクリックします。
-
 

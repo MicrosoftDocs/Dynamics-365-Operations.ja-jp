@@ -1,13 +1,13 @@
---- 
-title: "資産除去責務の支払利子の減価償却および見越計上"
-description: "日本では、資産除去責務 (ARO) の減価償却は固定資産と一緒に処理されます。"
+---
+title: 資産除去責務の支払利子の減価償却および見越計上
+description: 日本では、資産除去責務 (ARO) の減価償却は固定資産と一緒に処理されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 499424f361c8e764e198ac056e058b0bf196a82f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371044"
 ---
 # <a name="depreciate-and-accrue-the-interest-expense-for-asset-retirement-obligations"></a>資産除去責務の支払利子の減価償却および見越計上
 
@@ -75,5 +75,4 @@ ms.lasthandoff: 10/16/2018
     * 支払利子のレコードが提案されていることを確認します。  
     * 支払利子は、トランザクション タイプごとに示されます。  
 14. [転記] をクリックします。
-
 

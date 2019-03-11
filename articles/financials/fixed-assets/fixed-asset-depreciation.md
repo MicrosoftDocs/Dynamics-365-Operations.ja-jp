@@ -1,13 +1,13 @@
 ---
-title: "固定資産の減価償却"
-description: "このトピックは、固定資産の償却の概要を示します。"
+title: 固定資産の減価償却
+description: このトピックは、固定資産の償却の概要を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a82e14e12cbde29e5619518481d0c22f6fa1a37a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e362d80f5c4a33ad604c717333777e7c5fdef489
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332797"
 ---
-
 # <a name="fixed-asset-depreciation"></a>固定資産の減価償却
 
 [!include [banner](../includes/banner.md)]
@@ -52,10 +51,9 @@ ms.lasthandoff: 11/03/2017
 ## <a name="depreciation-calendars"></a>償却年 : カレンダー
 各帳簿には、固定資産の減価償却時に使用されるカレンダーがあります。 帳簿上でカレンダーを指定していない場合、帳簿では既定で元帳の会計カレンダーが使用されます。 帳簿に関連付けられた減価償却プロファイルによって減価償却会計年度が使用される場合、帳簿の会計カレンダーを選択する必要があります。 
 
-総勘定元帳の [**会計カレンダー**] ページを使用して、共用カレンダーを作成できます。
+総勘定元帳の **会計カレンダー** ページを使用して、共用カレンダーを作成できます。
 
 詳細については、[減価償却方法](depreciation-methods-conventions.md) を参照してください。
-
 
 
 

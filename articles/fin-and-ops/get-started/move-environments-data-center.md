@@ -1,13 +1,13 @@
 ---
-title: "データ センター間で環境を移動する"
-description: "このトピックでは、Microsoft によって管理されている Microsoft Dynamics 365 for Finance and Operations 環境を異なる Microsoft Azure データ センターに移動する方法について説明します。"
+title: データ センター間で環境を移動する
+description: このトピックでは、Microsoftによって管理されている Microsoft Dynamics 365 for Finance and Operations 環境を別の Microsoft Azure データ センターに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
+ms.openlocfilehash: 337ff1778c90eb82ce76ef6e5bf5229c29521c5c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
-ms.openlocfilehash: d4e606fb9caf37472597c0ed2fe15214d30087cb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369793"
 ---
-
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
 [!include [banner](../includes/banner.md)]
 
-場合によっては、Microsoft によって管理されている Microsoft Dynamics 365 for Finance and Operations 環境を異なる Microsoft Azure データ センターに移動する必要があります。 この移動が必要になる場合のいくつかのシナリオを次に示します。
+場合によっては、Microsoftによって管理されている Microsoft Dynamics 365 for Finance and Operations 環境を別の Microsoft Azure データ センターに移動する必要が生じることがあります。 この移動が必要になる場合のいくつかのシナリオを次に示します。
 
 - 使用するデータ センターは、環境が当初配置されていたときには使用できませんでした。
 - プロジェクト作成者は、環境が本来配置された以前に、最適なデータ センターを決定するための十分な調査を行っていません。
@@ -35,7 +34,7 @@ ms.lasthandoff: 08/09/2018
 
 Microsoft により同じデータ センターですべての環境を維持するよう求められます。 環境を別のデータ センターに移行する場合、最終的にはすべての環境を同じデータ センターに展開することを計画する必要があります。
 
-環境が展開されているデータ センターを Microsoft Dynamics Lifecycle Services (LCS) の**環境の管理**ページ上で確認できます
+環境が展開されているデータ センターを Microsoft Dynamics Lifecycle Services (LCS) の**環境の管理**ページ上で確認できます。
 
 データ センターを変更するには、すべての環境を再配置する必要があります。 サンド ボックス環境 (サンド ボックスのスタンダード承認テスト環境、およびサンド ボックスの開発およびテスト環境) のプロセスは実稼動環境のプロセスとは異なります。
 
@@ -78,4 +77,3 @@ Microsoft により同じデータ センターですべての環境を維持す
 ## <a name="move-production-environments"></a>実稼働環境の移動
 
 実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、実稼働環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 実稼働環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。
-

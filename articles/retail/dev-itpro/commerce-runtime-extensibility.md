@@ -1,13 +1,13 @@
 ---
-title: "Commerce Runtime (CRT) および Retail サーバーの拡張機能"
-description: "このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。 拡張機能プロパティのコンセプトを説明し、保持有無にかかわらず CRT エンティティに追加する方法について説明します。 また、アクションを Retail サーバー コントローラーに追加して、エンティティのコントローラーを追加する方法も示します。"
+title: Commerce Runtime (CRT) および Retail サーバーの拡張機能
+description: このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。 拡張機能プロパティのコンセプトを説明し、保持有無にかかわらず CRT エンティティに追加する方法について説明します。 また、アクションを Retail サーバー コントローラーに追加して、エンティティのコントローラーを追加する方法も示します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 07/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 138612221bb6e17ae354a194cd3df7d70b3ce543
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368515"
 ---
-
 # <a name="commerce-runtime-crt-and-retail-server-extensibility"></a>Commerce Runtime (CRT) および Retail サーバーの拡張機能
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ CRT にはコア ビジネス ロジックが含まれています。 ビジネ�
 
 **CRT がサポートする拡張子パターンのタイプ**
 
-CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法を理解する必要があります。 CRT は単に、C# クラス ライブラリ (.NETアセンブリ) のコレクションです。 C# でクラス ライブラリ プロジェクトを作成し、次の表に示すパターンを使用してすべての CRT 拡張を実行できます。 これらのサンプルには、Microsoft .NET Framework バージョン、アウトプット タイプおよびビルド パラメーターの適切なアセンブリ参照を有するため、常に Microsoft が拡張子のテンプレートとして提供するサンプルを使用します。 また、他のすべての必須パラメーターがコンフィギュレーション済みです。 同様のサンプルコードは、R\\RetailSDK\\SampleExtensions\\CommerceRuntime の Retail ソフトウェア開発キット (CRT) で見つけることができます。
+CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法を理解する必要があります。 CRT は単に、C# クラス ライブラリ (.NETアセンブリ) のコレクションです。 C# でクラス ライブラリ プロジェクトを作成し、次の表に示すパターンを使用してすべての CRT 拡張を実行できます。 これらのサンプルには、適切なアセンブリ参照、Microsoft .NET Framework バージョン、アウトプット タイプ、およびビルド パラメーターが含まれているので、Microsoft が拡張のためのテンプレートとして提供するサンプルを常に使用します。 また、他のすべての必須パラメーターがコンフィギュレーション済みです。 同様のサンプルコードは、R\\RetailSDK\\SampleExtensions\\CommerceRuntime の Retail ソフトウェア開発キット (CRT) で見つけることができます。
 
 <table>
 <thead>
@@ -147,7 +146,7 @@ POS から CRT をデバッグするには、CRT 拡張機能プロジェクト�
 
 **CRT エンティティでの機能拡張プロパティの永続的な使用**
 
-エンティティに追加する任意の拡張プロパティは、シナリオしだいでオブジェクトまたはトランザクションのいずれかの有効期間の POS および CRT メモリに保持されます。 拡張プロパティは、アプリケーションの境界にもまたがって移動します。 たとえば、Retail Modern POS で拡張プロパティを追加し、Retail サーバー/CRT を呼び出すと、キーと値のペアがそのフロー全体でも使用できます。 また、そのエンティティが Commerce Data Exchange へ呼び出し中に送信される場合: Real-time Service およびキー値のペアは、処理中でも使用可能です。
+エンティティに追加する任意の拡張プロパティは、シナリオしだいでオブジェクトまたはトランザクションのいずれかの有効期間の POS および CRT メモリに保持されます。 拡張プロパティは、アプリケーションの境界にもまたがって移動します。 たとえば、Retail Modern POS に拡張プロパティを追加し、Retail サーバー/CRT を呼び出すと、キーと値のペアがそのフロー全体でも使用できます。 また、そのエンティティが Commerce Data Exchange: Real-time Service を呼び出し中に送信されると、キーと値のペアは処理中に使用できます。
 
 > [!NOTE]
 > HQ では、拡張プロパティは顧客と注文に対してのみ送信されます。
@@ -719,7 +718,7 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 新しい小売サーバー API を呼び出す前に、以下の手順を実行してください。
 
 1.  Retail サーバー web.config ファイルで新しい Retail サーバー拡張子を登録します: &lt;ソースの追加 =「アセンブリ」値 ="**アセンブリ名**" /&gt; は、extensionComposition セクションの下にあります。
-2.  Customization.settings ファイルの新しい Retail サーバー拡張子を追加します。 このファイルは RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt; で見つけることができます
+2.  Customization.settings ファイルの新しい Retail サーバー拡張子を追加します。 このファイルは、RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt; に存在します。
 3.  CRT と Retail サーバー拡張子 dlls の両方を **…\\RetailServer\\webroot\\bin\\Ext** フォルダーに移動します。 新しい小売サーバー API に関連する CRT 拡張機能をご使用の場合、**…\\RetailServer\\webroot\\bin\\Ext** フォルダー内の CommerceRuntime.Ext.config ファイルの情報を更新してください。
 4.  &lt;ソースの追加 = 「アセンブリ」値 = "**アセンブリ名**" /&gt;
 5.  inetmgr を使用して小売サーバーのメタデータを参照し、エンティティが xml で公開されているかどうかを確認します。
@@ -739,4 +738,3 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
     return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 
 mpos で新しい小売サーバー API を呼び出す方法について詳しくは、小売 SDK POS.Extension.CrossloaylySample および POS.Extension.SToreHoursSample サンプル プロジェクトをご覧ください。
-

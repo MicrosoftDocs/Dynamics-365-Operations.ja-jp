@@ -1,28 +1,27 @@
 ---
-title: "MultiLookup タイプ"
-description: "複数ルックアップ コントロールの種類。 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。"
+title: MultiLookup タイプ
+description: 複数ルックアップ コントロールの種類。 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: e937664fe879010a5bde8902fa5d358c21f19dca
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368997"
 ---
-
 # <a name="multilookup-type"></a>MultiLookup タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -111,7 +110,7 @@ setEntityRefs: function(ids: string [ ] &#124; number [ ]): Promise &lt;any&gt;
 
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>方法
 
 ### <a name="applydesign"></a>applyDesign
 
@@ -230,6 +229,5 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 入力コントロールのデータが変更されたときに発生するイベントです。
 
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
-
 
 

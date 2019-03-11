@@ -1,31 +1,30 @@
 ---
-title: "サービス合意とプロジェクトの統合"
-description: "サービス合意およびサービス合意項目を操作する場合、プロジェクト管理と会計の領域で設定するデータを使用します。"
+title: サービス合意とプロジェクトの統合
+description: サービス合意およびサービス合意項目を操作する場合、プロジェクト管理と会計の領域で設定するデータを使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6bd2fb1f54a3decb77f019db6b2016cebdcaddb9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9f2640eae299411d633c68795bc16883dbb5eeaf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323206"
 ---
-
 # <a name="integration-for-service-agreements-and-projects"></a>サービス合意とプロジェクトの統合 
 
 [!include [banner](../includes/banner.md)]
@@ -79,7 +78,6 @@ ms.lasthandoff: 05/08/2018
 
 > [!NOTE]
 > <P><STRONG>サービス管理パラメーター</STRONG>フォームの<STRONG>仕訳帳</STRONG>タブの<STRONG>時間</STRONG>フィールドで、サービス注文の仕訳帳名を選択します。</P>
-
 
 
 

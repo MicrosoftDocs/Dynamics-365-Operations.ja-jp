@@ -1,13 +1,13 @@
---- 
-title: "小売明細書のパラメーター コンフィギュレーション"
-description: "この手順では、小売明細書の作成に影響を及ぼす、転記または小売パラメーターのコンフィギュレーションを示します。"
+---
+title: 小売明細書のパラメーター コンフィギュレーション
+description: この手順では、小売明細書の作成に影響を及ぼす、転記または小売パラメーターのコンフィギュレーションを示します。
 author: josaw1
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6dacd2b80ca0d51d81d2bdf5bc2636b47da621ee
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 0c93633e92221264cc6a67c74d62edaa59bdbd2f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352623"
 ---
 # <a name="parameter-configurations-for-retail-statements"></a>小売明細書のパラメーター コンフィギュレーション
 
@@ -42,5 +42,4 @@ ms.lasthandoff: 02/07/2018
     * 明細書の転記時に注文を同時に作成および処理するには「はい」を選択します。  
     * 各バッチ ジョブのタスクで処理される最大注文を入力します。  
 3. [保存] をクリックします。
-
 

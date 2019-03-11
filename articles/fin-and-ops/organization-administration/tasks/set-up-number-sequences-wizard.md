@@ -1,13 +1,13 @@
---- 
-title: "ウィザードを使用した番号順序の設定"
-description: "番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。"
+---
+title: ウィザードを使用した番号順序の設定
+description: 番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1808ab9240ab291f9d203893a634bd390f16e2e7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96c1bc711350b447611977c3f2070fbc08fbae0f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328243"
 ---
 # <a name="set-up-number-sequences-by-using-a-wizard"></a>ウィザードを使用した番号順序の設定
 
@@ -36,5 +36,4 @@ ms.lasthandoff: 09/29/2017
     * 番号順序に対して番号を事前に割り当てる必要がある場合は、[連続] オプションは選択しないでください。     番号順序の形式にスコープ区分を追加するには、リストから形式を選択し、[スコープを書式に含める] をクリックします。     番号順序の形式からスコープ区分を削除するには、リストから形式を選択し、[書式からスコープを削除] をクリックします。     自動生成から番号順序を除外するには、リストから番号順序を選択し、[削除] をクリックします。  
 4. [次へ] をクリックします。
 5. [完了] をクリックします。
-
 

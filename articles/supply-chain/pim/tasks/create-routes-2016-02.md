@@ -1,13 +1,13 @@
---- 
-title: "工順の作成 (2016 年 2 月)"
-description: "このタスクでは、完成品と半完成品の生産工順の作成について説明します。"
+---
+title: 工順の作成 (2016 年 2 月)
+description: このタスクでは、完成品と半完成品の生産工順の作成について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, RouteInventProd, RouteGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: a68b28c0e0ee14429a23d3241cabdae948d706d2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354095"
 ---
 # <a name="create-routes-february-2016"></a>工順の作成 (2016 年 2 月)
 
@@ -107,5 +107,4 @@ ms.lasthandoff: 10/16/2018
     * 段取り時間は、多くの場合、品目について計算される価格の一部になります。  
 5. [保存] をクリックします。
 6. ページを閉じます。
-
 

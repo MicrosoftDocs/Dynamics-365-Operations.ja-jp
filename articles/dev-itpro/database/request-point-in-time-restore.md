@@ -1,13 +1,13 @@
 ---
-title: "非実稼働環境でのデータベースの復元"
-description: "Microsoft Dynamics 365 for Finance and Operations で、要求の 35 日以内の特定の期間内までのデータベースの復元を要求できます。 このトピックでは、Point-in-Time 復元を要求する方法について説明します。"
+title: 非実稼働環境でのデータベースの復元
+description: Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。 このトピックでは、Point-in-Time 復元を要求する方法について説明します。
 author: MargoC
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 362f10c87479d8e91e457bf1f2069a16378f12a4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368798"
 ---
-
 # <a name="restore-databases-in-non-production-environments"></a>非実稼働環境でのデータベースの復元
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations で、要求の 35 日以内の特定の期間内までのデータベースの復元を要求できます。 このトピックでは、Point-in-Time 復元を要求する方法について説明します。
+Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。 このトピックでは、Point-in-Time 復元を要求する方法について説明します。
 
 ポイントインタイム復元は、Microsoft Dynamics 365 for Finance and Operations で使用できる Microsoft Azure SQL データベース機能です。 ポイントインタイム復元では、破壊試験後に、非製造環境を既知の正常な状態にリセットします。 緊急の場合は、実稼働環境でポイントインタイム復元を実行することもできます。 ただし、生産復元を要求するには、このトピックに記載されているプロセスを使用しないでください。 代わりに、Microsoft サポートに問い合わせてください。
 
@@ -39,7 +38,7 @@ Microsoft Dynamics 365 for Finance and Operations で、要求の 35 日以内�
 [![ポイント イン タイム復元前後のデータベースの例](./media/pitrestorebehaviour.png)](./media/pitrestorebehaviour.png)
 
 ## <a name="code-versioning"></a>コード バージョン管理
-選択する復元時点を決定するときは、コード バージョン管理を考慮することが重要です。それは、コードの現在のバージョンが復元時点のデータベースの状態と互換性がない場合があるためです。 たとえば、今日のデータベースは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 2、およびいくつかのカスタマイズを実行しています。 ただし、10 日前には、2016 年 2 月にリリースされた Microsoft Dynamics AX、さらにそのビルドを作成されたカスタマイズが環境で実行されていました。 データベースを 10 日前の状態に復元しようとしましたが、環境でコードの最新バージョンが実行されている場合、データベースがアップグレードされているため、期待どおりに動作しない可能性があります。 問題を発生させることなく、データベースのバージョンとコードのバージョンを混在させることはできますが、問題が発生する可能性があることに注意してください。 一般に、Microsoft からの、またはカスタマイズのメジャー バージョンからのメジャー バージョン リリースを混同しないことをお勧めします。 ポイントインタイム復元を要求する最も一般的なシナリオを次に示します。
+選択する復元時点を決定するときは、コード バージョン管理を考慮することが重要です。それは、コードの現在のバージョンが復元時点のデータベースの状態と互換性がない場合があるためです。 たとえば、今日のデータベースは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 2、およびいくつかのカスタマイズを実行しています。 ただし、10 日前には、2016 年 2 月にリリースされた Microsoft Dynamics AX 、さらにそのビルドを作成されたカスタマイズが環境で実行されていました。 データベースを 10 日前の状態に復元しようとしましたが、環境でコードの最新バージョンが実行されている場合、データベースがアップグレードされているため、期待どおりに動作しない可能性があります。 問題を発生させることなく、データベースのバージョンとコードのバージョンを混在させることはできますが、問題が発生する可能性があることに注意してください。 一般に、Microsoft からの、またはカスタマイズのメジャー バージョンからのメジャー バージョン リリースを混同しないことをお勧めします。 ポイントインタイム復元を要求する最も一般的なシナリオを次に示します。
 
 - サンドボックス環境で実行されるユーザー テストにはいくつかのバグがあります。
 - バグは開発環境で修正され、新しいビルドはサンドボックス環境に展開されます。
@@ -64,7 +63,7 @@ Microsoft サービス エンジニアリング チームは、環境をオフ�
         > [!NOTE]
         > Azure SQL データベース環境のみを復元することができます。 したがって、Microsoft SQL Server に基づく 1 つのボックス環境は選択できません。
 
-    2. **データベース** フィールドでは、復元するデータベースは常に Microsoft Dynamics AX または Microsoft Dynamics 365 for Finance and Operations です。 エンティティ格納や財務報告など、他のデータベースでは、ポイントインタイム復元が現在サポートされていません。
+    2. **データベース** フィールドでは、復元するデータベースは常に Microsoft Dynamics AX または Microsoft Dynamics 365 for Finance and Operations です。 エンティティ格納や財務報告など、他のデータベースでは、ポイントインタイム復元が現在サポートされていません。
     3. **特定の時点の復元**フィールドに情報を入力します。 Azure SQL データベースを使用すると、要求を作成する日の 35 日前までの時点にデータベースを復元できます。 環境が 35 日未満の場合、または以前に復元されている場合は、最大時間が少なくなります。
     4. **ダウンタイム開始日を優先**および**ダウンタイム終了日を優先**フィールドに情報を入力します。 サイクル終了日は、サイクル開始日の少なくとも 1 時間後でなければなりません。 要求は、要求を完了するためにリソースを確実に使用できるようにするため、推奨されるダウンタイム期間の少なくとも 24 時間前までに送信する必要があります。
     5. チェック ボックスを隣に置いた 3 つのステートメントを注意深く読んで確認してください。
@@ -96,4 +95,3 @@ Microsoft サービス エンジニアリング チームは、環境をオフ�
 
 - Dynamics 365 for Finance and Operations データベースは、要求された時点の正確な状態のままになります。 バッチの保留または復元したデータベースへのアクセスの制限は行い **ません**。
 - LCS で**プロジェクト所有者**または**環境マネージャー**のロールを持つ LCS ユーザーは、すべての非実稼働環境の Azure SQL データベースとマシンの資格情報にアクセスします。 非実稼働環境にコピーされたデータのセキュリティを保証するには、これらのロールのメンバーシップを制限します。
-

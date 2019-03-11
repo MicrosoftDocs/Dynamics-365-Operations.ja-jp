@@ -1,32 +1,30 @@
 ---
-title: "サービス管理"
-description: "サービス契約とサービスの定期売買を締結し、サービス注文および顧客の照会を処理し、顧客へのサービスの配送を管理および分析するには、サービス管理を使用します。"
+title: サービス管理
+description: サービス契約とサービスの定期売買を締結し、サービス注文および顧客の照会を処理し、顧客へのサービスの配送を管理および分析するには、サービス管理を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
 ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343814"
 ---
-
-
 # <a name="service-management"></a>サービス管理 
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +48,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="business-processes"></a>業務プロセス
 
-次の図は、**サービス管理**の高レベルの業務プロセスを示し、Microsoft Dynamics 365 for Finance and Operations 内の他のモジュールとサービス プロセス統合場所を表示します。
+次の図は、**サービス管理**の上位レベルの業務プロセスを示し、Microsoft Dynamics 365 for Finance and Operations でサービス プロセスが他のモジュールと統合する場所を示しています。
 
 [![サービス管理の業務プロセス図](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
@@ -72,5 +70,4 @@ ms.lasthandoff: 08/09/2018
   - [人事管理](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   
-
 

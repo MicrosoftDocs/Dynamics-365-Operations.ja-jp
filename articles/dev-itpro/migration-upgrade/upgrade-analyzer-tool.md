@@ -1,30 +1,29 @@
 ---
-title: "AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画"
-description: "このトピックでは、アップグレード アナライザー ツールを使用して、Dynamics AX 2012 から Dynamics 365 for Finance and Operations へのアップグレードを計画する方法について説明します。"
+title: AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
+description: このトピックでは、アップグレード アナライザー ツールを使用して、Dynamics AX2012 から Dynamics 365 for Finance and Operations へのアップグレードを計画する方法について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.custom: 106163
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
 ms.openlocfilehash: 1df1e7cead3c802079bf4faba66b91fc30e3e947
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368653"
 ---
-
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
 [!include [banner](../includes/banner.md)]
@@ -48,4 +47,3 @@ AX 2012 環境内のシステム診断サービスを既に使用している場
 AX 2012 環境内のシステム診断サービスをコンフィギュレーションする方法の詳細については、[システム診断のインストールと実行 (AX 2012)](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md) を参照してください。
 
 システム診断サービスを構成してから数分で、AX 2012 環境が LCS プロジェクトに表示されます。
-

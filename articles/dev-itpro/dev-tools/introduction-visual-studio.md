@@ -1,13 +1,13 @@
 ---
-title: "開発ツールのチュートリアル"
-description: "このチュートリアルでは、Visual Studio の フリート管理 ソリューションとその開発ツールの概要を紹介します。"
+title: 開発ツールのチュートリアル
+description: このチュートリアルでは、Visual Studio の フリート管理 ソリューションとその開発ツールの概要を紹介します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,33 +17,32 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
 ms.openlocfilehash: cc1256320210a7e1e5dc6dcfbe093c3403c046e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369092"
 ---
-
 # <a name="development-tools-tutorial"></a>開発ツールのチュートリアル
 
 [!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、Visual Studio の フリート管理 ソリューションとその開発ツールの概要を紹介します。 
 
-このチュートリアルでは、Visual Studio のフリート管理ソリューションについて説明します。 Visual Studio 開発環境で、プロジェクトを体系化する方法が表示されます。 表示されるものの多くが標準の Visual Studio 機能を使用しており、新規にカスタマイズされたいくつかの機能が追加されたことを確認できます。 途中でこれらの新機能、およびカスタマイズされた機能や開発を簡単にする方法を指摘します。 このチュートリアルでは次の点に焦点を当てます。
+このチュートリアルでは、Visual Studio のフリート管理ソリューションについて説明します。 Visual Studio 開発環境で、プロジェクトを体系化する方法が分かります。 表示されるものの多くが標準の Visual Studio 機能を使用しており、新規にカスタマイズされたいくつかの機能が追加されたことを確認できます。 途中でこれらの新機能、およびカスタマイズされた機能や開発を簡単にする方法を指摘します。 このチュートリアルでは次の点に焦点を当てます。
 
 -   Visual Studio プロジェクトとその機能。
 -   開発で使用されるファイル。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングする必要があります。
 
-## <a name="setup"></a>段取り
+## <a name="setup"></a>セットアップ
 1.  **管理者として実行** を使用して Visual Studio を起動します。
 2.  **ファイル**メニューで、**開く**をポイントし、**プロジェクト/ソリューション**をクリックします。
 3.  **デスクトップ**を参照し、次に **FleetManagement** フォルダーを開きます。 ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。
-4.  **FleetManagement** という名前のソリューション ファイルを選択します。 表示されるファイル タイプは Microsoft Visual Studio Solution です (**SLN** ファイル)。
+4.  **FleetManagement** という名前のソリューション ファイルを選択します。 表示されるファイル タイプは Microsoft Visual Studio Solution (**SLN** file) です。
     -   フリート管理ソリューション ファイルは、ダウンロード可能で利用できます。
     -   VHD。
 
@@ -117,7 +116,6 @@ ms.lasthandoff: 08/09/2018
 3.  **表示**メニューで、**エラー リスト**をクリックして、ベスト プラクティス警告のリストを表示します。 この機能を示すために、ビルドにいくつかの警告を意図的に残しました。
 4.  警告メッセージをダブルクリックして、警告の原因となったコードまたはリソースを表示します。
 5.  **ウィンドウ** メニューで、**すべてのドキュメントを閉じる**をクリックして開いているすべてのドキュメントを閉じます。
-
 
 
 

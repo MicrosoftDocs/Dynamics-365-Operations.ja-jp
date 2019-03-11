@@ -1,13 +1,13 @@
---- 
-title: "テンプレートを使用した仕訳入力の作成"
-description: "転記済みの仕訳帳伝票は伝票テンプレートとして保存され、新しい仕訳伝票に適用できます。"
+---
+title: テンプレートを使用した仕訳入力の作成
+description: 転記済みの仕訳帳伝票は伝票テンプレートとして保存され、新しい仕訳伝票に適用できます。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4a749740b62e39202d502a112f947679f85ca085
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316812"
 ---
 # <a name="create-a-journal-entry-using-template"></a>テンプレートを使用した仕訳入力の作成
 
@@ -63,5 +63,4 @@ ms.lasthandoff: 10/16/2018
 29. [金額] フィールドに、伝票に適用する金額を入力します。
     * 伝票テンプレートが [割合] タイプ場合にのみ、金額フィールドが表示されます。  
 30. [OK] をクリックします。
-
 

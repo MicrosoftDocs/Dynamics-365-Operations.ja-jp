@@ -1,13 +1,13 @@
---- 
-title: "資産グループの減損損失の提案と転記"
-description: "日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。"
+---
+title: 資産グループの減損損失の提案と転記
+description: 日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: c5c8692381104d2a9beb4ac2ebecaa52cb320d5c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371068"
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit"></a>資産グループの減損損失の提案と転記
 
@@ -52,5 +52,4 @@ ms.lasthandoff: 10/16/2018
 7. [減損テスト ID] フィールドに、転記する認識テストの ID を入力します。
 8. [OK] をクリックします。
 9. [転記] をクリックします。
-
 

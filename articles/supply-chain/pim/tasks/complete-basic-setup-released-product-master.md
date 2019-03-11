@@ -1,13 +1,13 @@
---- 
-title: "リリース済み製品マスターの基本設定の完了"
-description: "この手順は、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。"
+---
+title: リリース済み製品マスターの基本設定の完了
+description: この手順は、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0d3a91977c38c0ce0f9fe114bec943c7cb32a5d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35617f5bec877fbe8a89d015eda16a66ee14d335
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354785"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>リリース済み製品マスターの基本設定の完了
 
@@ -63,5 +63,4 @@ ms.lasthandoff: 09/29/2017
     * [生産] を選択して、この製品マスターの既定の供給オプションが製品の生産であることを指定します。  
 24. ページを閉じます。
 25. [リリース製品の詳細] フォームを閉じます。
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Recruiting Power BI コンテンツの採用"
-description: "このトピックでは、Recruiting Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+title: Recruiting Power BI コンテンツ
+description: このトピックでは、Recruiting Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,25 +18,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348000"
 ---
-
-# <a name="recruiting-power-bi-content"></a>Recruiting Power BI コンテンツの採用
+# <a name="recruiting-power-bi-content"></a>Recruiting Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、**Recruiting** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**採用** Power BI コンテンツが**採用管理**ワークスペースで表示されます。
+**Recruiting** Power BI コンテンツが**採用管理**ワークスペースで表示されます。
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>採用管理ワークスペースでのレポートおよびビジュアル
-[**採用管理**] ワークスペースは、[**分析**] タブを含みます。このタブには、採用のための埋め込み Power BI コンテンツが含まれています。 このコンテンツには、[概要] タブと詳細が含まれる追加のタブがあります。 次の表に各タブのレポートを示します。
+**採用管理**ワークスペースは、**分析**タブを含みます。このタブには、採用のための埋め込み Power BI コンテンツが含まれています。 このコンテンツには、[概要] タブと詳細が含まれる追加のタブがあります。 次の表に各タブのレポートを示します。
 
 | レポート                | コンテンツ |
 |----------------------|----------|
@@ -46,7 +45,7 @@ ms.lasthandoff: 12/19/2017
 | 採用分析  | 正味採用率、平均雇用日数、悪い雇用者の割合、採用にかかる費用、採用プロジェクト数、申請者に対する雇用者数、採用プロジェクトによる申請者数と空き状況 |
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 次の表に、**Recruiting** Power BI コンテンツが基づいているエンティティを示します。
 
@@ -66,4 +65,3 @@ ms.lasthandoff: 12/19/2017
 | パフォーマンス          | 評価、説明、評価モデル                            | 申請者、採用済申請者、退職済申請者 |
 | 採用プロジェクト  | プロジェクト説明、プロジェクト ステータス、空き状況                | 申請者、採用済申請者、退職済申請者 |
 | 退職済申請者 | 退職済申請者、理由、パフォーマンス、終了日 | 会社、カレンダーのオフセット、日付、地理的な場所、パフォーマンス、人口統計、雇用、メディア、採用プロジェクト、申請者名 |
-

@@ -1,13 +1,13 @@
---- 
-title: "リーン スケジュール グループの定義"
-description: "リーン スケジュール グループは、かんばんスケジューリングの製品をグループ化して区別するために定義されます。"
+---
+title: リーン スケジュール グループの定義
+description: リーン スケジュール グループは、かんばんスケジューリングの製品をグループ化して区別するために定義されます。
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 787694b094f343445cca784d035554a8bfa25f5a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a5bc20c0a9e2396365caebeb3751d2090e4575a4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350530"
 ---
 # <a name="define-lean-schedule-groups"></a>リーン スケジュール グループの定義
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 09/29/2017
 2. [商品関係タイプ] フィールドで、グループを選択します。
 3. [品目配賦キー] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 4. 一覧で、選択された行のリンクをクリックします。
-
 

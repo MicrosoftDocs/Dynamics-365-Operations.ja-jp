@@ -1,13 +1,13 @@
 ---
-title: "スリーウェイ マッチング ポリシー"
-description: "このトピックは、スリーウェイ マッチングの例を示します。"
+title: スリーウェイ マッチング ポリシー
+description: このトピックは、スリーウェイ マッチングの例を示します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f02f6831709dcc0998c74a9ddd04216a2213970d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318951"
 ---
-
 # <a name="three-way-matching-policies"></a>スリーウェイ マッチング ポリシー
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Fabrikam は、世界の全域で複数の法人および従業員で運営し�
 1.  サミーは、Fabrikam の入荷部門の作業者であり、Contoso から出荷される機械の合計数量を受け取ります。 彼は、製品受領書にある数量 5 を入力します。 購買発注がすべて受領されているため、発注書のステータスは [受入済] に変わります。
 2.  エイプリルは、Fabrikam の買掛金勘定コーディネーターであり、Contoso から送信されてくる請求書を入力および確認します。 彼女は、次の情報を確認します。
     -   スリーウェイ マッチングを必要とする品目について、請求明細行の数量は入庫済数量と一致する。 入庫済数量は、請求書と照合する製品受領書に表示されます。
-    -   ツーウェイ マッチングまたはスリーウェイ マッチングを必要とする品目の場合、請求明細行の価格は Microsoft Dynamics 365 for Finance and Operations で定義された許容範囲内にあります。 これには、次のタイプの価格照合が含まれます。
+    -   ツーウェイ マッチングまたはスリーウェイ マッチングを必要とする品目については、請求明細行の価格は Microsoft Dynamics 365 for Finance and Operations で定義された許容範囲内にあります。 これには、次のタイプの価格照合が含まれます。
         -   正味単価照合 – 請求明細行の正味単価は、許容率の範囲内で、購買注文明細行の正味単価と一致します。 この例では、正味単価の許容範囲は +8% です。
         -   価格合計照合 – 請求明細行の正味金額が、許容する率、金額、または率と金額の範囲内で、購買注文明細行の正味金額に一致します。 この例では、価格合計照合の許容範囲は +15% です。
 
@@ -143,7 +142,6 @@ Finance および Operations では、請求明細行に次の情報が含まれ
 
 
 詳細については、「[買掛金請求書照合](accounts-payable-invoice-matching.md)」 を参照してください。
-
 
 
 

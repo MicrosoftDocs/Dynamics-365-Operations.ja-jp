@@ -1,13 +1,13 @@
 ---
-title: "個人のアクションのよく寄せられる質問"
-description: "このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。 個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。"
+title: 個人のアクションのよく寄せられる質問
+description: このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。 個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。
 author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 0e68154ec70fdf26d1d783de29a386a336fff92f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305156"
 ---
-
 # <a name="personnel-actions-faq"></a>個人のアクションのよく寄せられる質問
 
 [!include [banner](includes/banner.md)]
@@ -94,5 +93,4 @@ ms.lasthandoff: 08/09/2018
 - **作業者の退職** アクションのヘッダーにある有効日は **退職日** フィールドで入力した日付です。
 - **作業者の採用** アクションのヘッダーにある有効日は **雇用の開始日** フィールドで入力した日付です。
 - **作業者の振替** アクションのヘッダーにある有効日は作業者の **割り当て開始日** フィールドで入力した日付です。
-
 

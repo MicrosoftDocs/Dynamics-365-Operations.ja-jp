@@ -1,13 +1,13 @@
 ---
-title: "提案依頼 (RFP) の応答"
-description: "RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質問と、推奨される回答が含まれています。 このセクションの Microsoft Dynamics Lifecycle Services は、パートナー、販売前プロジェクトでのみ使用できます。"
+title: 提案依頼 (RFP) の応答
+description: RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質問と、推奨される回答が含まれています。 このセクションの Microsoft Dynamics Lifecycle Services は、パートナー、販売前プロジェクトでのみ使用できます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18611
 ms.assetid: b7a8bf2b-83f6-4022-b131-4e6bba3b46a8
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: df6220a073a9c5b0d8015801ec46654fe802b3c7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370015"
 ---
-
 # <a name="request-for-proposals-rfp-responses"></a>提案依頼 (RFP) の応答
 
 [!include [banner](../../includes/banner.md)]
@@ -48,7 +47,6 @@ RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質
 
 6.  すべてのフィルターをクリアするには、[アプリ] バーの **リセット** をクリックします。
 7.  選択したレスポンスをエクスポートするには、アプリ バーで **エクスポート** をクリックします。
-
 
 
 

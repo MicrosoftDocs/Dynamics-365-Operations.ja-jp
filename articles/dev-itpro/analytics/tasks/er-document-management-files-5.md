@@ -1,13 +1,13 @@
---- 
-title: "ER ドキュメント管理ファイルを形式出力で使用する (第 5 部 - 形式の変更および実行)"
-description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
+---
+title: ER ドキュメント管理ファイルを形式出力で使用する (第 5 部 - 形式の変更および実行)
+description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERComponentTypeDropDialog, ERExpressionDesignerFormula, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 23e91b6aee62157da9141cc7b6c4fae39c19ce32
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329186"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format"></a>ER 形式の出力 (パート 5: 形式の変更と実行) におけるドキュメント管理ファイルの使用
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/16/2018
 
 これらの手順を完了するには、まず「フォーマット出力でのドキュメント管理ファイルをER使用（パート4：フォーマットの実行）」の手順を実行する必要があります。
 
-この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format"></a>バイナリ形式のメッセージの生成に添付ファイルを設定するフォーマットを変更します。
@@ -96,5 +96,4 @@ ms.lasthandoff: 10/16/2018
 6. [OK] をクリックします。
 7. [OK] をクリックします。
     * 生成された出荷を確認します。 XML形式の請求書メッセージに加えて、各添付ファイルに対して単一ファイルが作成されたことに注意していください。 添付ファイルは、バイナリ形式のZIP出力で設定されます。  
-
 

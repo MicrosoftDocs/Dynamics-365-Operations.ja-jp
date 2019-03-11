@@ -1,13 +1,13 @@
 ---
-title: "予算計画"
-description: "このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。"
+title: 予算計画
+description: このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311637"
 ---
-
 # <a name="budget-planning"></a>予算計画
 
 [!include [banner](../includes/banner.md)]
@@ -260,7 +259,6 @@ B. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコン�
 C. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 [ワークフロー ステージ] タブで、[初期] および [送信済] というステージと共に、A ステップで作成された [自動承認] ワークフローを関連付けます 
 
 [![予算作成および予算計画](./media/screenshot42.png)](./media/screenshot42.png)  
-
 
 
 

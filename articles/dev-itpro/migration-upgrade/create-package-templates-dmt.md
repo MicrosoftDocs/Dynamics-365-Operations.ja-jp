@@ -1,13 +1,13 @@
 ---
-title: "AX 2009 の移行 － テンプレートの作成"
-description: "このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行するために使用できるパッケージ テンプレートを作成する方法について説明します。"
+title: AX 2009 の移行 － テンプレートの作成
+description: このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations へデータを移行するために使用できるパッケージ テンプレートを作成する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 5bae43939cd3bd5b8db3bbf689164c8c7026aab0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369183"
 ---
-
 # <a name="ax-2009-migration--create-package-templates"></a>AX 2009 の移行 － パッケージ テンプレートの作成
 
 [!include [banner](../includes/banner.md)]
@@ -37,11 +36,10 @@ ms.lasthandoff: 09/20/2018
 
 この手順に従って、移行用のテンプレートで使用されるエンティティの一覧を表示して選択します。
 
-1. Microsoft Dynamics AX 2009 で、**データ移行** \> **共通フォーム** \> **エンティティ リスト** をクリックし、**順序の適用** をクリックします。 メッセージ ボックスを閉じます。
+1. Microsoft Dynamics AX 2009 で、**データ移行** \> **共通フォーム** \> **エンティティ リスト**を順にクリックしてから、**順序の適用** をクリックします。 メッセージ ボックスを閉じます。
 2. 正しい法人が選択されていることを確認し、**表示** フィールドで、すべてのエンティティまたは移行のために考慮すべきエンティティのみのいずれを表示するかを選択します。
 3. **テンプレート名** フィールドで、テンプレートを選択します。
 4. **選択されているモジュール** ウィンドウで、移行するデータ エンティティを含むモジュールを選択します。
 5. **エンティティの詳細** タブで、移行するすべてのエンティティ行の **移行対象として選択** チェック ボックスをオンにします。
 6. **順序の適用** をクリックします。
 7. カスタマイズされたテンプレートを作成するには、アプリケーション オブジェクト ツリーで、**リソース** に移動し、XML 形式で新しいテンプレートを作成します。
-

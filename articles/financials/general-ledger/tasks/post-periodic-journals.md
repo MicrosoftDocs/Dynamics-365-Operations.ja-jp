@@ -1,13 +1,13 @@
---- 
-title: "定期処理仕訳帳の転記"
-description: "定期処理仕訳帳は、繰返しの仕訳帳とも呼ばれ、定期処理仕訳帳を取得するたびに数量、テキスト、およびその他の情報が繰り返されます。"
+---
+title: 定期処理仕訳帳の転記
+description: 定期処理仕訳帳は、繰返しの仕訳帳とも呼ばれ、定期処理仕訳帳を取得するたびに数量、テキスト、およびその他の情報が繰り返されます。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: deae523d922e1d6a4f7bb05433e9b1568c9c1ee9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 8eae11e0501db78e467e517b29a2bc19f5765e75
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351312"
 ---
 # <a name="post-periodic-journals"></a>定期処理仕訳帳の転記
 
@@ -67,5 +67,4 @@ ms.lasthandoff: 09/29/2017
 29. 一覧で、選択された行のリンクをクリックします。
 30. [OK] をクリックします。
     * 定期処理仕訳帳は条件および設定に応じて、確認、承認、または転記できます。  
-
 

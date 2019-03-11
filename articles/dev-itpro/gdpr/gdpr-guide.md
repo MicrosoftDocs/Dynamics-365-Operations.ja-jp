@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations の GDPR に関するガイド"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のユーザー ログ機能について説明します。"
+title: Finance and Operations の GDPR に関するガイド
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations でのユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5c48402abbccb89b46380f38d2d9e90de636aa3b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b156714292c31627d56b24c479ef3d8ecc27d018
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368735"
 ---
-
 # <a name="guide-to-the-gdpr-for-finance-and-operations"></a>Finance and Operations の GDPR に関するガイド
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ GDPR は、[規制](http://data.consilium.europa.eu/doc/document/ST-5419-2016-IN
 + **C1** - C1 は Microsoft の直接顧客 (エンタープライズ クラウドの IT 管理者) です。
 + **C2** - C2 は C1 の顧客です。
 
-Microsoft Dynamics 365 for Finance and Operations で、Microsoft はプロセッサとして動作します。 データ プロセッサとして、 Finance and Operations はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
+Microsoft Dynamics 365 for Finance and Operations では、Microsoft はプロセッサとして動作します。 データ プロセッサとして、 Finance and Operations はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
 
 次の図は、顧客から Finance and Operations データベースへのデータの流れ、およびお客様と Microsoft がそのプロセスで果たすロールを示しています。 Finance and Operations で、コントローラーはテナント管理者、Microsoft はプロセッサです。 このシナリオでは、データを保管、取得、並べ替えなどを行うことでデータを処理するプロセッサ (Microsoft) にデータが送信されます。
 
@@ -140,7 +139,7 @@ Microsoft Dynamics 365 for Finance and Operations で、Microsoft はプロセ�
 </td>
 <td>
 <ul>
-<li>Dynamics 365 for Finance and Operations を使用して、データを特定し、要求を満たします。 </li>
+<li>Dynamics 365 for Finance and Operations を使用してデータを検索し、要求を処理します。 </li>
 <li>カスタマイズを記述します。</li>
 <li>サード パーティに共有コントローラー DSR を求めます。</li>
 <li>Microsoft にアクティビティ データを求めます。</li> 
@@ -180,12 +179,12 @@ Microsoft Dynamics 365 for Finance and Operations で、Microsoft はプロセ�
 
 + 担当者検索レポートを使用して、個人データを検索および収集します。 このレポートは今後のリリースに使用できます。
 + 新しいエンティティを作成または既存のエンティティを拡張して、担当者検索レポートを拡張します。
-+ 検索機能とフィルター機能を使用して特定の個人データを検索し、そのデータを Microsoft Office のエクスポート機能を使用してエクスポートするか、ブラウザ拡張機能を使用して .pdf に印刷します。
++ 検索機能とフィルター機能を使用して特定の個人データを検索し、そのデータを Microsoft Office のエクスポート機能を使用してエクスポートするか、ブラウザーの拡張機能を使用して pdf に印刷します。
 + 提供されたドキュメントを使用して、コントローラーが個人データとして識別したデータを含むデータ テーブルを識別します。
 + 個人データを検索してエクスポートするカスタム フォームを作成します。
 + 認証された顧客が個人データを見ることを可能にする外部ポータルまたは Web サイトを作成します。
 
-Finance and Operations の将来のリリースで使用できる担当者検索レポートは、DSR 要求の対象となる個人データを検出するのに役立ちます。 レポートに探している情報が含まれていない場合は、情報が載っている修正プログラムの Microsoft Dynamics Lifecycle Services (LCS) サイトを確認します。 また、追加エンティティを作成、または提供されたエンティティを拡張することにより、レポートを自分で拡張することができます。
+Finance and Operations の将来のリリースで使用できる担当者検索レポートは、DSR 要求の対象となる個人データを検出するのに役立ちます。 レポートに探している情報が含まれていない場合は、 Microsoft Dynamics Lifecycle Services (LCS) サイトで、その情報が載っている修正プログラムがあるか確認します。 また、追加エンティティを作成、または提供されたエンティティを拡張することにより、レポートを自分で拡張することができます。
 
 担当者検索レポートに、データの件名を要求しているすべての情報が含まれていない場合、Microsoft が提供するツールを使用して拡張することができます。 個人検索レポートを拡張する方法の詳細については、[個人検索レポートを拡張](./gdpr-extend-person-search-report.md) を参照してください。
 
@@ -284,9 +283,9 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 コントローラーをサポートするために、このレポートでは、**データ管理** 作業領域で利用可能な既存のエンティティ モデル レポート機能を改善しています。 **データ管理** ワークスペースは、ほとんどのロールの種類のパッケージ化された表現のコレクションを提供します。 これらの表現はエンティティと呼ばれます。
 
 > [!Note]
-> 担当者検索レポートは、将来のリリースの Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent で使用することができます。 現在、このレポートは Microsoft Dynamics AX 2012 をサポートしていません。 
+> 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。 現在、レポートは Microsoft DynamicsAX 2012 をサポートしていません。 
 
-エンティティは特定のロールのインスタンスを表します。 データ管理機能を使用すると、コントローラーはエンティティ データをコロン区切り値、コンマ区切り値 (CSV)、セミコロン区切り値、タブ区切り値、Microsoft Excel、XML などの複数の形式にエクスポートできます。
+エンティティは特定のロールのインスタンスを表します。 データ管理機能を使用すると、コントローラーはエンティティ データを、コロン区切り値、コンマ区切り値 (CSV)、セミコロン区切り値、タブ区切り値、Microsoft Excel、および XML などの複数の形式にエクスポートできます。
 
 担当者検索レポートは、当事者と関連付けられた**すべて**のロール (および対応するエンティティ) を識別するために使用される当事者 ID を提供することにより、**データ管理**ワークスペースでエンティティ データをエクスポートする追加の機能を提供します。 この機能を使用すると、すべてのエンティティ データとトランザクション データを単一のアクションまたは単一の関係者または複数の関係者のいずれかでエクスポートできます。
 
@@ -296,7 +295,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 ## <a name="additional-notes-that-apply-to-requests-for-data"></a>データの要求に適用される追加のメモ
 
-+ Management Reporter および Microsoft Power BI プレゼンテーションのデータは、さまざまな財務書類に入力された情報から生成され、レポート目的でそれらのアプリケーションに転送されます。 レポート、Excel にエクスポートおよび個人検索レポートなどのツールを使用して Finance and Operations の財務書類からデータの要求を満たす必要があります。 基本機能を変更するカスタマイズを行わなかった場合は、GDPR 要求を満たすために、Management Reporter や Power BI から追加の報告を行う必要はありません。
++ Management Reporter および Microsoft Power BI プレゼンテーションのデータは、さまざまな財務書類に入力された情報から生成され、レポート目的でそれらのアプリケーションに転送されます。 レポート、Excel にエクスポートおよび個人検索レポートなどのツールを使用して Finance and Operations の財務書類からデータの要求を満たす必要があります。 基本機能を変更するカスタマイズを行わなかった場合は、GDPR 要求を満たすために、Management Reporter や Power BI から追加のレポートを行う必要はありません。
 + ドキュメントや添付ファイルに含まれる個人用のデータは、レポートに依存しないデータ件名に返す必要もあります。
 + マスター レコードに関連付けられているトランザクションのデータがある場合は削除できません。
 + 同様に、転記済または完了済みのトランザクションは削除できません。
@@ -327,7 +326,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 + 応募者
 + 競合他社
 
-個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用される Finance and Operations 内のページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSourceの [個人データの検索および管理の参照ドキュメント](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata) ページからスプレッドシートを表示したりダウンロードできます。 
+個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用される Finance and Operations 内のページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata)ページからスプレッドシートを表示したりダウンロードしたりできます。 
 
 ## <a name="detailed-inventory"></a>詳細な在庫
 
@@ -381,4 +380,3 @@ Finance and Operation の**情報**ボックスに、Microsoft のユーザー�
 + このドキュメントは、情報提供のみを目的としたものであり、法的なアドバイスとして、または GDPR がユーザーおよび組織にどのように適用されるかを判断するためには使用できません。 法的に資格のある専門家と連携して、GDPR、組織への GDPR の具体的な適用方法、およびコンプライアンスをもっとも確実にする方法について検討されることをお勧めします。
 + Microsoft はこのプレゼンテーションに記載されている情報に関して一切保証せず、明示的、暗示的、または法的に保証することもありません。 このドキュメントは、「現状のまま」で提供されています。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。
 + このドキュメントは、Microsoft 製品の知的財産に対する法的権利をお客様に提供するものではありません。 内部での参照目的のみの場合、このプレゼンテーションをコピーして使用できます。
-

@@ -1,13 +1,13 @@
 ---
-title: "プロジェクトの予測と予算"
-description: "Microsoft Dynamics 365 for Finance and Operations では、プロジェクトの予測とプロジェクトの予算で、プロジェクトの管理と制御を行えます。"
+title: プロジェクトの予測と予算
+description: Microsoft Dynamics 365 for Finance and Operations では、プロジェクトの予測およびプロジェクトの予算作成によりプロジェクトの管理と制御が行えます。
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310395"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>プロジェクトの予測と予算
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations では、プロジェクトの予測とプロジェクトの予算の 2 つの方法で、プロジェクトの管理と制御を行えます。 
+Microsoft Dynamics 365 for Finance and Operations では、プロジェクトの予測およびプロジェクトの予算作作成という、2種類の方法でプロジェクトの管理と制御が行えます。 
 
 組織に運用上の分析視点があり、特定のトランザクションからの収益と費用が重視されている場合は、プロジェクトの予測を使用します。 財務金額が組織で重視されている場合には、プロジェクトの予算作成を使用します。 
 
@@ -80,7 +79,6 @@ Microsoft Dynamics 365 for Finance and Operations では、プロジェクトの
 予測モデルは単層階層です。 これは、1 つのプロジェクト予測が、1 つの予測モデルに関連付ける必要があることを示します。
 
 プロジェクトの予測を使用すると、下位モデルとしてモデルを特定できます。 これにより、部門、期間、または地域別で予測を作成することができます。 たとえば、1 年間の予測モデルを作成でき、地域の責任者が提出する北東、南東、北西、および南西地区の予測に対して下位モデルを作成できます。 さまざまなオプションを選択することで、合計予測別または下位モデル別の情報を確認できます。
-
 
 
 

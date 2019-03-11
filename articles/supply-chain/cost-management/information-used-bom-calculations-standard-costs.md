@@ -1,13 +1,13 @@
 ---
-title: "標準原価を使用する BOM 計算で使用される情報"
-description: "部品表 (BOM) 計算では、さまざまなデータ ソースのデータで、製造品目の標準原価を計算します。 データ ソースには、品目、部品表の工順、間接原価の計算式、および原価バージョンについての情報があります。"
+title: 標準原価を使用する BOM 計算で使用される情報
+description: 部品表 (BOM) 計算では、さまざまなデータ ソースのデータで、製造品目の標準原価を計算します。 データ ソースには、品目、部品表の工順、間接原価の計算式、および原価バージョンについての情報があります。
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4ec6ffe41d6dae10693b1a1ebd6e5012c32bc2e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 187482f29e6982220b844777ef31997f0d5ef0d3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333763"
 ---
-
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>標準原価を使用する BOM 計算で使用される情報
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ ms.lasthandoff: 11/03/2017
 -   原価バージョンの内容には原価が含まれている必要がある : 内容には、原価が含まれている必要があります。 オプションで、製造品目の推奨販売価格を計算するための販売価格を含めることができます。
 
 BOM 計算を開始するときに、さまざまな情報ソースを指定できます。 サイト、計算日、原価バージョンなどを指定できます。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "販売プロセスでのシリアル番号の登録"
-description: "このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。"
+title: 販売プロセスでのシリアル番号の登録
+description: このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350415"
 ---
-
 # <a name="register-serial-numbers-in-the-sales-process"></a>販売プロセスでのシリアル番号の登録
 
 [!include [banner](../includes/banner.md)]
@@ -58,8 +57,8 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>販売注文に登録したシリアル番号を訂正または変更することができますか。
 はい。次の条件を満たす場合は、シリアル番号を訂正できます。
--   **請求書** – まだ請求されていない品目のシリアル番号を変更できます。 梱包明細もその後更新されます。 ただし、販売注文明細行が負の数量の登録して修正されると、販売注文明細行のシリアル番号を変更できません。
--   **梱包明細** – シリアル化された品目を含む梱包明細行を部分的には修正できません。 明細行の全数量を取り消す必要があります。 梱包明細がキャンセルまたは修正されている場合、同じシリアル化された品目に対して新しい梱包明細の作成する時に取り消されたシリアル番号を再登録する必要はありません。 登録された番号が使用されます。
+-   **請求書**  – まだ請求されていない品目のシリアル番号を変更できます。 梱包明細もその後更新されます。 ただし、販売注文明細行が負の数量の登録して修正されると、販売注文明細行のシリアル番号を変更できません。
+-   **梱包明細**  – シリアル化された品目を含む梱包明細行を部分的には修正できません。 明細行の全数量を取り消す必要があります。 梱包明細がキャンセルまたは修正されている場合、同じシリアル化された品目に対して新しい梱包明細の作成する時に取り消されたシリアル番号を再登録する必要はありません。 登録された番号が使用されます。
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>特定の梱包明細と共に出荷された、または請求書に含まれていたシリアル番号を表示できますか。
 はい。梱包明細仕訳帳明細行または請求仕訳帳明細行の照会を実行して、ドキュメントに含まれていたすべてのシリアル番号の一覧を表示できます。
@@ -78,7 +77,6 @@ ms.lasthandoff: 05/08/2018
 この機能は、販売梱包明細および売上請求書を管理できるすべてのロールが使用できます。 次の任務を実行すると、作業者によるシリアル番号の修正、および読み取りまたはスキャンできないシリアル番号に対する空白エントリの登録が可能となります。
 -   [シリアル番号の訂正の管理]
 -   [読み取り不可のシリアル番号の登録を管理]
-
 
 
 

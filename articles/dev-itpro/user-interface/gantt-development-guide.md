@@ -1,13 +1,13 @@
 ---
-title: "ガント管理作成ガイド"
-description: "このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。"
+title: ガント管理作成ガイド
+description: このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 90659ea7fb0eb6cbfa6ac7ce7e0deedcfab2e7c4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369308"
 ---
-
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 <a name="whats-new-for-gantt"></a>ガント チャートの新機能
 --------------------
 
-Microsoft Dynamics AX 2012 では、クライアントが Win32 アプリケーションで、拡張機能が Microsoft ActiveX、WinForm、または Microsoft Windows Presentation Foundation (WPF) のコントロールを使用していました。 ActiveX と ManagedHost コントロールは、HTML ベースのプラットフォームと互換性がないため、カスタム コントロールを追加するためには使用できなくなります。 代わりに、新しい拡張可能コントロール フレームワークで HTML と JavaScript を使用してコントロールを追加することができます。 新しいガント管理は、このフレームワークを使用して実装されています。 以前のバージョンとは異なり、独自のフォームの使用およびコントロールの拡張に追加のライセンス手数料を支払う必要はないことに注意してください。
+Microsoft Dynamics AX 2012 では、クライアントは Win32 アプリケーションで、拡張機能は Microsoft ActiveX、WinForm、または Microsoft Windows Presentation Foundation (WPF) のコントロールを使用していました。 ActiveX と ManagedHost コントロールは、HTML ベースのプラットフォームと互換性がないため、カスタム コントロールを追加するためには使用できなくなります。 代わりに、新しい拡張可能コントロール フレームワークで HTML と JavaScript を使用してコントロールを追加することができます。 新しいガント管理は、このフレームワークを使用して実装されています。 以前のバージョンとは異なり、独自のフォームの使用およびコントロールの拡張に追加のライセンス手数料を支払う必要はないことに注意してください。
 
 ## <a name="high-level-overview-of-the-control"></a>コントロールの高レベルの概要
 次の図は、ガント管理の視覚的要素を示しています。
@@ -71,7 +70,6 @@ Microsoft Dynamics AX 2012 では、クライアントが Win32 アプリケー�
 -   onActivityChanged(GanttControlActivityModification \_modification, GanttControlActivityModificationResponse \_response)
 
 これらすべてのイベントはクライアントからの一方向の通知です。 ただし、応答を設定できるため、**onActivityChanged** イベントは多少特殊なものです。 通常、ユーザーが変更を加えた場合 (たとえば、アクティビティを新しい時間にドラッグする)、他のアクティビティも更新するか、アクティビティ自体を調整する必要があります (たとえば、列テキストを変更する必要がある)。 **GanttControlActivityModificationResponse** 応答で、更新する必要のあるアクティビティの一覧を提示することができます。 ユーザーによる変更がそのまま受け入れられる場合、応答を設定する必要はありません。 ただし、少なくとも、新しい開始日と終了日を表示するよう保証するため、ほとんどの場合現在の活動の列テキストは更新される必要があります。 活動で、**parmAllowMove** フラグは、活動が移動できるかどうかを決定します。 ただし、**GanttControlConfiguration** の高レベルのフラグは、任意の活動を移動 (**parmAllowMoveActivities**) またはサイズを変更 (**parmAllowResizeActivities**) できるかどうか、または、活動の完了率を変更 (**parmAllowCompletionChange**) できるかどうかを決定します。
-
 
 
 

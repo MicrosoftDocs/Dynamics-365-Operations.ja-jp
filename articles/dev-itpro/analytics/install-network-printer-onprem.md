@@ -1,35 +1,34 @@
 ---
-title: "オンプレミス環境でのネットワーク プリンター デバイスのインストール"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。"
+title: オンプレミス環境でのネットワーク プリンター デバイスのインストール
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: a65db6abd3c11fa168fc788fb4a3bf1d30f13bcc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369377"
 ---
-
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の[印刷およびドキュメント サービス](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx)機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx)」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
 
 ネットワーク印刷サービスの構成には、次の 2 つの役割があります。
 
@@ -62,4 +61,3 @@ Finance and Operations のシステム管理者は、このセクションの情
 2. **ネットワーク プリンター**ページで、新しいプリンターを追加します。 各プリンターで、名前、説明、パス、およびステータスを指定します。 プリンター パスがインストールされているプリンターのネットワーク パスと一致していることを確認します。
 
 **有効**とマークされている項目は、すぐにアプリケーションのユーザーによって利用できるようになるので、ネットワーク プリンター デバイスで文書スタイル レポートの印刷を開始できます。
-

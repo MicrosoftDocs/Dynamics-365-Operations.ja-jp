@@ -1,13 +1,13 @@
 ---
-title: "統計ベースライン予測の生成"
-description: "この記事は、需要予測の計算に使用されるパラメータおよびフィルタについて説明しています。"
+title: 統計ベースライン予測の生成
+description: この記事は、需要予測の計算に使用されるパラメータおよびフィルタについて説明しています。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 30d0e70852febebad81e6e050499a99de8ccf65e
-ms.openlocfilehash: 052ebfa2c54ac2f383cd8e70f2fb4dd0c45ebf00
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/19/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326426"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>統計ベースライン予測の生成
 
 [!include [banner](../includes/banner.md)]
@@ -72,7 +71,6 @@ ms.lasthandoff: 04/19/2018
 [ベースライン予測の手動調整の実施](manual-adjustments-baseline-forecast.md)
 
 [調整された予測の承認](authorize-adjusted-forecast.md)
-
 
 
 

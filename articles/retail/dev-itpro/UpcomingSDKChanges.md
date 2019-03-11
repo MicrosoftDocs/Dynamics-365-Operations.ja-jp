@@ -1,29 +1,29 @@
 ---
-title: "Retail SDK の今後の変更"
-description: "このトピックでは、Retail ソフトウェア開発キット (SDK) の今後の変更の一覧を示します。"
+title: Retail SDK の今後の変更
+description: このトピックでは、Retail ソフトウェア開発キット (SDK) の今後の変更の一覧を示します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-09-11
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
 ms.openlocfilehash: a35d09f67d36d0d48fbcbd23b2f211f0e98e6e38
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368302"
 ---
 # <a name="upcoming-changes-in-the-retail-sdk"></a>Retail SDK の今後の変更
 [!include [banner](../includes/banner.md)]
@@ -44,7 +44,7 @@ Retail Modern POS でこの新しいパッケージ モデルをサポートで�
 
 Windows Server オペレーティング システムまたは LCS 開発ボックスでは、独立したパッケージ モデル開発はサポートされていません。独自の Windows 10 ボックスを使用する必要があります。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Visual Studio 2017、バージョン 15.1
 - Windows 10、バージョン 1703
@@ -65,4 +65,3 @@ Commerce Runtime、Retail サーバー、Retail プロキシ、Commerce ツー�
 
 ## <a name="retail-sdk-samples-to-github"></a>Retail SDK のサンプルを GitHub に移動
 Microsoft は、Retail SDK からサンプルを GitHub に移動する計画です。 サンプルはサンプル コードとしてのみ公開されているため、この変更は拡張機能に影響しません。 GitHub により、最新のサンプルが取得しやすくなります。 LCS プロセスを実行する必要がなくなります。
-

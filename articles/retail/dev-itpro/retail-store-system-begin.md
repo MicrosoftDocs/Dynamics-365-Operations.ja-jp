@@ -1,13 +1,13 @@
 ---
-title: "Retail Store スケール ユニット"
-description: "このトピックでは、Retail Store Scale Unit と、どんなときにそれを使用するかについて説明します。"
+title: Retail Store Scale Unit
+description: このトピックでは、Retail Store Scale Unit とそれを使用する場合について説明します。
 author: athinesh99
 manager: AnnBe
 ms.date: 12/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Retail
@@ -18,19 +18,18 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: eeccbe753cd4adf86665a3c6a372fdbfca371799
 ms.openlocfilehash: fe22915375f31ce8273b744685057dac2aff621c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368896"
 ---
-
-# <a name="retail-store-scale-unit"></a>Retail Store スケール ユニット
+# <a name="retail-store-scale-unit"></a>Retail Store Scale Unit
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Retail Store Scale Unit と、どんなときにそれを使用するかについて説明します。
+このトピックでは、Retail Store Scale Unit とそれを使用する場合について説明します。
 
 <a name="overview"></a>概要
 --------
@@ -53,13 +52,12 @@ Store スケール ユニットのセットアップを開始する前に、こ�
 
 ## <a name="get-started-with-store-scale-unit"></a>Store Scale Unit の使用を開始する
 
-開始するには、店舗規模単位の構成に関する [[Retail Store Scale Unit の設定およびインストール](retail-store-scale-unit-configuration-installation.md)] トピックを確認してください。
+開始するには、店舗規模単位の構成に関する [Retail Store Scale Unit の設定およびインストール](retail-store-scale-unit-configuration-installation.md) トピックを確認してください。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[セルフ サービスによる Retail Store スケール ユニットのダウンロードおよびコンフィギュレーション](retail-store-scale-unit-configuration-installation.md)
-
+[Retail Store Scale Unit ダウンロードおよびセルフ サービスでの構成](retail-store-scale-unit-configuration-installation.md)
 
 
 

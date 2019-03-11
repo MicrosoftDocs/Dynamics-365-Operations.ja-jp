@@ -1,13 +1,13 @@
 ---
-title: "Office の統合の概念と機能"
-description: "このトピックでは、Microsoft Office の統合の概念と機能について説明します。"
+title: Office の統合の概念と機能
+description: このトピックでは、Microsoft Office の統合の概念と機能について説明します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 06/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 84822c38ca77afc3bff5a76cc41c4a6fda4b37a2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368854"
 ---
-
 # <a name="office-integration-concepts-and-features"></a>Office の統合の概念と機能
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 このトピックでは、Microsoft Office の統合の概念と機能について説明します。 統合はいくつかの技術に依存します。
 
 -   Microsoft Azure での作業
--   Azure Active Directory での作業 (Azure AD)
+-   Azure Active Directory (Azure AD) での作業
 -   複数のブラウザーで Web クライアントを実行
 
 Microsoft Office の統合機能は、生産的環境を提供し、Office 製品を使用して作業を遂行するユーザーを支援します。
@@ -95,7 +94,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 エンティティが公開するデータを表示するには、**関連するフォームの表示**をクリックします。 このボタンは、**FormRef** プロパティ値を持つエンティティでのみ有効です。
 
 ## <a name="export-api"></a>API のエクスポート
-### <a name="the-open-in-microsoft-office-menu-and-static-exports"></a>[Microsoft Office で開く] メニューと静的なエクスポート
+### <a name="the-open-in-microsoft-office-menu-and-static-exports"></a>Microsoft Office で開くメニューと静的なエクスポート
 
 **Microsoft Office で開く** メニューは、データ ソースを持つすべてのページで使用できます。 **Microsoft Office で開く** メニューには、次の 3 種類のオプションが用意されています。
 
@@ -201,7 +200,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 ### <a name="document-preview"></a>ドキュメントのプレビュー
 
-サポート対象のファイルの種類のプレビューは、**プレビュー**クイック タブで提供されます。 PNG イメージやテキスト ファイルなどの基本的なドキュメント タイプは、既定でサポートされています。 Microsoft Word、Excel、および PowerPoint ファイルなどの Office ドキュメント タイプは、生産 Office Web Apps サーバーを使用する必要があり、OneBox コンフィギュレーションを利用できない場合もあます。
+サポート対象のファイルの種類のプレビューは、**プレビュー**クイック タブで提供されます。 PNG イメージやテキスト ファイルなどの基本的なドキュメント タイプは、既定でサポートされています。 Microsoft Word、Excel、および PowerPoint ファイルなどの Office ドキュメント タイプは、実稼動 Office Web Apps サーバーを使用する必要があり、OneBox コンフィギュレーションを利用できない場合もあます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -209,17 +208,16 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 #### <a name="what-office-365-licenses-are-available"></a>どのような Office 365 ライセンスがありますか ?
 
-[Office 365 ライセンス オプション](https://products.office.com/en-us/business/compare-office-365-for-business-plans)が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
+「[Office 365 ライセンス オプション](https://products.office.com/en-us/business/compare-office-365-for-business-plans)」が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
 
 #### <a name="after-purchasing-an-office-365-license-what-needs-to-be-done-to-set-up-sharepoint-storage-for-attachments"></a>Office 365 のライセンスを購入した後、添付ファイル用に SharePoint ストレージを設定するために何を行う必要がありますか?
 
-ドキュメント パラメーター フォームを開いて、SharePoint サーバーが自動的に検出および設定されていることを確認してください。 ここで、ドキュメント タイプを開くか作成し、「SharePoint」へのドキュメント タイプの場所を設定し、ファイルを保存する必要があるフォルダーを選択します。
+ドキュメント パラメーター フォームを開いて、SharePoint サーバーが自動的に検出および設定されていることを確認してください。 ここで、ドキュメント タイプを開くか作成し、"SharePoint" へのドキュメント タイプの場所を設定し、ファイルを保存する必要があるフォルダーを選択します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [Office 統合ラボとチュートリアル](office-integration-tutorial.md)
 
 [Office 統合のトラブルシューティング](office-integration-troubleshooting.md)
 
 [アプリケーション スタックおよびサーバーのアーキテクチャ](../dev-tools/application-stack-server-architecture.md)
-

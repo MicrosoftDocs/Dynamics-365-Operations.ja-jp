@@ -1,13 +1,13 @@
 ---
-title: "原価管理 Power BI コンテンツ"
-description: "このトピックでは、原価管理 Power BI コンテンツの内容について説明します。"
+title: 原価管理 Power BI コンテンツ
+description: このトピックでは、原価管理 Power BI コンテンツの内容について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327806"
 ---
-
 # <a name="cost-management-power-bi-content"></a>原価管理 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
@@ -36,13 +35,13 @@ ms.lasthandoff: 08/13/2018
 **原価管理** Microsoft Power BI コンテンツは、在庫経理担当者または在庫や進行中の作業 (WIP) を担当、または関心を持つ組織の担当者、または標準的な原価差異の分析を担当、または関心を持つ組織の担当者を対象としています。
 
 > [!NOTE]
-> このトピックで説明する**原価管理** Power BIコンテンツは Dynamics 365 for Finance and Operations 8.0 に適用されます。
+> このトピックで説明する**原価管理** Power BI コンテンツは、Dynamics 365 for Finance and Operations 8.0 に適用されます。
 > 
-> AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 非推奨に関しての詳細については [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) の記事を参照してください。
+> AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 非推奨に関しての詳細については [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) を参照してください。
 
 この Power BI コンテンツは、在庫のパフォーマンスを監視し、原価の流れを視覚化するのに役立つカテゴリ化された形式を提供します。 回転資本率、在庫を保持している日数、精度、「ABC分類」などの経営洞察力を、望ましい集計レベル (会社、品目、品目グループ、またはサイト) で得ることができます。 利用可能になった情報は、財務諸表の詳細な補足情報として使用できます。
 
-The Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に基づいて作成されます。これには、主なデータソースとして **CostObjectStatementCache** テーブルがあります。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ セット キャッシュの構成で更新頻度を変更したり、手動更新を有効にすることができます。 手動更新は、**原価管理**ワークスペースまたは**原価分析**ワークスペースのどちらでも実行することができます。
+Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定に基づいて作成されます。これには、主なデータ ソースとして **CostObjectStatementCache** テーブルがあります。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ セット キャッシュの構成で更新頻度を変更したり、手動更新を有効にすることができます。 手動更新は、**原価管理**ワークスペースまたは**原価分析**ワークスペースのどちらでも実行することができます。
 
 **CostObjectStatementCache** テーブルを更新するたびに、Power BI ビジュアル化内のデータを更新する前に **CostObjectStatementCacheMonthly** 集計測定を更新する必要があります。
 
@@ -63,11 +62,11 @@ The Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定
 - **製造会計分析** – このタブでは、Power BI コンテンツが表示されます。
 - **標準原価差異分析** – このタブでは、Power BI コンテンツが表示されます。
 
-## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート ページ
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Power BIコンテンツに含まれるレポート ページ
 
 **原価管理** Power BI コンテンツには、一連のメトリックスで構成されるレポート ページのセットが含まれています。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 
 
-次の表に、**原価管理** Power BI コンテンツの表示の概要を示します。
+次の表に、**原価管理** Power BI コンテンツの視覚化の概要を示します。
 
 ### <a name="inventory-accounting-status"></a>在庫会計ステータス
 
@@ -173,7 +172,7 @@ The Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-Microsoft Dynamics 365 for Finance and Operations からのデータは、**原価管理** Power BI コンテンツのレポート ページを入力するために使用されます。 このデータは、分析用に最適化された Microsoft SQL Server データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 詳細については、[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations からのデータは、**原価管理** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、分析用に最適化された Microsoft SQL Server データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 詳細については、[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
 
 次のオブジェクトのキー集計の測定は、Power BI コンテンツの基準として使用されます。
 
@@ -186,7 +185,7 @@ Microsoft Dynamics 365 for Finance and Operations からのデータは、**原�
 
 次の表は、Power BI コンテンツでキー計算された測定値を示しています。
 
-| 基準                            | 計算 |
+| 測定                            | 計算 |
 |------------------------------------|-------------|
 | 期首残高                  | 期首残高 = \[期末残高\]-\[差分変更\] |
 | 期首残高数量             | 期首残高数量 = \[期末残高数量\]-\[差分変更数量\] |
@@ -209,4 +208,3 @@ Microsoft Dynamics 365 for Finance and Operations からのデータは、**原�
 | 法人                                          | 法人名                              |
 | 会計カレンダー                                        | 会計カレンダー、年、四半期、期間、月   |
 | サイト                                                    | ID、名前、住所、都道府県、国               |
-

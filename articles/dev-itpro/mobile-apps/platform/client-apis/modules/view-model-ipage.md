@@ -1,28 +1,27 @@
 ---
-title: "ページ モジュール"
-description: "IPage インターフェイスは、さまざまなプロパティ、ライフ サイクル、およびワークスペース内のページに関連付けられているイベント フックをカプセル化します。"
+title: ページ モジュール
+description: IPage インターフェイスは、さまざまなプロパティ、ライフ サイクル、およびワークスペース内のページに関連付けられているイベント フックをカプセル化します。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 62aef0d08536df4b966e6e0c43c981d930d5d78e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369444"
 ---
-
 # <a name="page-module"></a>ページ モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -109,7 +108,7 @@ CompleteEventArgs <br>
 | [alignItems](../interfaces/view-model-ipage-idesign.md#alignitems) |alignItems: string (optional)  <br>|このプロパティは、CSS プロパティ「align-items」のエイリアスです。<br>  |
 | [alignSelf](../interfaces/view-model-ipage-idesign.md#alignself) |alignSelf: string (optional)  <br>|  |
 | [バインディング](../interfaces/view-model-ipage-idesign.md#bindings) |bindings: any (optional)  <br>|  |
-| [枠線](../interfaces/view-model-ipage-idesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  |
+| [枠線](../interfaces/view-model-ipage-idesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  |
 | [色](../interfaces/view-model-ipage-idesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  |
 | [flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  |
 | [flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。<br>  |
@@ -284,5 +283,4 @@ PageTarget <br>&nbsp;&nbsp;&nbsp;└─ [NavigationArgs](../interfaces/view-mode
 | ---- | --------- | ----------- |
 | [パラメーター](../interfaces/view-model-ipage-ipagetarget.md#params) |params: [PageOptions](../interfaces/view-model-ipage-ipageoptions.md) (省略可)  <br>|  |
 | [to](../interfaces/view-model-ipage-ipagetarget.md#to) |to: string (省略可)  <br>|  |
-
 

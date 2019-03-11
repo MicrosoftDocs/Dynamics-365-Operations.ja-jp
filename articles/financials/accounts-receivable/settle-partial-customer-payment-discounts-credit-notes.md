@@ -1,13 +1,13 @@
 ---
-title: "訂正票で割引がある一部の顧客支払の決済"
-description: "この記事は、貸方票に現金割引が適用され、元の請求書にも現金割引がある場合のシナリオについて説明します。"
+title: 訂正票で割引がある一部の顧客支払の決済
+description: この記事は、貸方票に現金割引が適用され、元の請求書にも現金割引がある場合のシナリオについて説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa641f996d1ee516f588fcd1520bdc23d5d25f86
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5402aa886d7194c4dcfad329aa30eb19bae3bc84
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333441"
 ---
-
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>訂正票で割引がある一部の顧客支払の決済
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Fabrikam は、一部支払または貸方票 (クレジット メモ)で顧客�
 | 選択済 | 標準            | FTI-10050  | 4035    | 2015 年 6 月 28 日 | 2015 年 7 月 28 日 | 10050    | 1,000.00                       | USD      | 990.00           |
 | オン | 標準            | CCRN-10050 | 4035    | 2015 年 6 月 28 日 | 2015 年 7 月 28 日 | CR-10050 | -100.00                        | USD      | -99.00           |
 
-割引の情報は [**トランザクションの決済**] ページの下部に表示されます。
+割引の情報は **トランザクションの決済** ページの下部に表示されます。
 
 |                              |           |
 |------------------------------|-----------|
@@ -61,7 +60,6 @@ Fabrikam は、一部支払または貸方票 (クレジット メモ)で顧客�
 | 適用する現金割引金額 | -1.00     |
 
 決済は 100.00 で、99.00 の支払、1.00 の割引が含まれます。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "C# および X++ ソース コードを使用したビジネス ロジックを記述する"
-description: "このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。"
+title: C# および X++ ソース コードを使用したビジネス ロジックを記述する
+description: このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
 author: pvillads
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 86259cb260d8ec7cb9c2ff0c397e50f01147bb71
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 4ffbf49a8117312fe3ad457c540e809b34a2fec1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369136"
 ---
-
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Dynamics AX を使用すると、Dynamics AX プロジェクトから、アセ�
 3.  **ファイル名**フィールドに、パターン \*LINQ\*.dll を入力してから **Enter** を押します。 LINQ という名前が入っている、アセンブリの一覧が表示されます。 その一覧から、次のファイルを選択し、**追加**をクリックします。
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.dll
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
-    -   Microsoft.Dynamics.AX.Frameowrk.Linq.Data.Msil.dll
+    -   Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
 
     [![SelectReferences\_LinqC](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
 4.  以下のコードで使用する共通タイプを含むサポート アセンブリも追加する必要があります。 **参照**をもう一度クリックし、フィールドに次のファイル名を入力します。
@@ -238,7 +237,7 @@ C\# では、次のイベント ハンドラー メソッドを記述して Driv
 
 ### <a name="run-the-test"></a>テストの実行
 
-このテストでは、書き込んだ C\# コードをデバッグします。 これを行うには、Visual Studio に C\# コードを含むアセンブリのシンボルを読み込むように通知する必要があります。 **Dynamics AX &gt; オプション &gt; デバッグ**の順に移動し、**ソリューション内の項目に対してのみシンボルを読み込む**チェック ボックスが選択されていないことを確認します。 [![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) **ヒント**: C\# コードでブレークポイントに到達できない場合、**モジュール**ウィンドウ (**デバッグ&gt;ウィンドウ&gt;モジュール**) で開けて、C\# モジュールを検索し、明示的に読み込みます。
+このテストでは、書き込んだ C\# コードをデバッグします。 これを行うには、Visual Studio に C\# コードを含むアセンブリのシンボルを読み込むように通知する必要があります。 **Dynamics AX &gt; オプション &gt; デバッグ**の順に移動し、**ソリューション内の項目に対してのみシンボルを読み込む**のチェック ボックスが選択されていないことを確認します。 [![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) **ヒント**: C\# コードでブレークポイントに到達できない場合、**モジュール**ウィンドウ (**デバッグ&gt;ウィンドウ&gt;モジュール**) で開けて、C\# モジュールを検索し、明示的に読み込みます。
 
 1.  **デバッグ &gt; デバッグを開始**とクリックします。 これにより、フリート アプリケーションが開始され、**FMRental** フォームのブラウザー ウィンドウが表示されます。
 2.  **車両レンタル ID** をクリックすると詳細が表示されます。
@@ -249,7 +248,6 @@ C\# では、次のイベント ハンドラー メソッドを記述して Driv
 7.  ブレークポイントの数行上で、変数の顧客を検索します。
 8.  顧客変数を右クリックし、**QuickWatch** をクリックします。 長整数値は、LINQ クエリが機能していることを証明します。 [![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)
 9.  **F5** キーを押して**保存**操作を完了します。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations のケースを構成する前に、計画プロセス中に決定する必要のある考慮事項について説明します。"
+title: ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations でケースをコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 audience: IT Pro
 ms.reviewer: kfend
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f879d20511967e8f58e250c8533c4f78bbf8a011
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: cd76fdb3514706992e5d4307063bc11206467153
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368390"
 ---
-
 # <a name="plan-case-category-security-case-processes-and-case-categories"></a>ケース カテゴリ セキュリティの計画、ケース プロセス、およびケース カテゴリ
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、Microsoft Dynamics 365 for Finance and Operations のケースを構成する前に、計画プロセス中に決定する必要のある考慮事項について説明します。
+この記事では、Microsoft Dynamics 365 for Finance and Operations でケースをコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。
 
 case 機能を使用すると、組織外の問題と内部の問題の両方を解決することができます。
 
@@ -85,4 +84,3 @@ case 機能を使用すると、組織外の問題と内部の問題の両方を
     - その場合は、活動のカテゴリ、タイプ、目的、およびフェーズは何でしょうか?
     - ケースのフォロー アップ活動を作成する必要がありますか。
     - その場合は、フォローアップ活動のカテゴリ、タイプ、目的、およびフェーズは何でしょうか?
-

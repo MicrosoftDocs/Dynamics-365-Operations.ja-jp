@@ -1,37 +1,36 @@
 ---
-title: "最適化アドバイザー"
-description: "このトピックでは、最適化アドバイザーを使用して Microsoft Dynamics 365 Finance and Operations の最適なコンフィギュレーションを保証する方法について説明します。"
+title: 最適化アドバイザー
+description: このトピックでは、最適化アドバイザーを使用して  Microsoft Dynamics 365 Finance and Operations の最適なコンフィギュレーションを保証する方法について説明します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335626"
 ---
-
 # <a name="optimization-advisor"></a>最適化アドバイザー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、最適化アドバイザーを使用して Microsoft Dynamics 365 Finance and Operations の最適なコンフィギュレーションを保証する方法について説明します。
+このトピックでは、最適化アドバイザーを使用して  Microsoft Dynamics 365 Finance and Operations の最適なコンフィギュレーションを保証する方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 08/09/2018
 
 **最適化アドバイザー** ワークスペースは、Power Users、業務アナリスト、機能コンサルタント、IT サポート機能がモジュールのコンフィギュレーションや業務データの問題を識別できるようにするツールです。 最適化アドバイザーは、モジュールのコンフィギュレーションのベスト プラクティスを提案し、古い形式または間違っている業務データを識別します。
 
-最適化アドバイザーは定期的に一連のベスト プラクティス ルールを実行します。 既定のルール セットは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) と共にリリースされます。 ただし、ユーザーは、独立系ソフトウェア ベンダー (ISV)、およびビジネス データから、カスタマイズ、ソリューションに固有のルールも作成できます。 ルールを作成する方法の詳細については、[新しいルールを作成](./create-rules-optimization-advisor.md) を参照してください。
+最適化アドバイザーは定期的に一連のベスト プラクティス ルールを実行します。 既定のルールは Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) と共にリリースされます。 ただし、ユーザーは、独立系ソフトウェア ベンダー (ISV)、およびビジネス データから、カスタマイズ、ソリューションに固有のルールも作成できます。 ルールを作成する方法の詳細については、[新しいルールを作成](./create-rules-optimization-advisor.md) を参照してください。
 
 ルールの違反が検出されると、最適化の機会が生成され、**最適化アドバイザー** ワークスペースに表示されます。 ユーザーは、**最適化アドバイザー** ワークスペースから直接適切な修正アクションを実行することができます。
 
@@ -49,7 +48,7 @@ ms.lasthandoff: 08/09/2018
 
 いくつかの最適化の機会を捉えると、システムは業務プロセスのランタイムの短縮という点で営業案件の影響を計算します。 ただし、すべての最適化の機会に対して、この機能は有効ではありません。
 
-最適化アドバイザーに関する詳細については、短い [Dynamics 365 for Finance and Operations の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ) ビデオを確認してください。
+最適化アドバイザーの詳細については、簡単なビデオ [Dynamics 365 for Finance and Operations の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ)をご視聴ください。 
 
 ## <a name="optimization-rules"></a>最適化ルール
 
@@ -91,9 +90,8 @@ ms.lasthandoff: 08/09/2018
 
 特定のルールの評価を無効にするには、ルールによって生成された営業案件を選択してから、**分析を無効化**を選択します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [新しいルールの作成](./create-rules-optimization-advisor.md)
 
 [Dynamics 365 for Finance and Operations の最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-

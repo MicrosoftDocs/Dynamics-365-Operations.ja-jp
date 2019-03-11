@@ -1,13 +1,13 @@
 ---
-title: "Onboard 仕入先"
-description: "このトピックでは、新しい仕入先の研修のプロセスを説明します。 このプロセス中に、さまざまなロールにより必要なアクションを説明します。"
+title: Onboard 仕入先
+description: このトピックでは、新しい仕入先の研修のプロセスを説明します。 このプロセス中に、さまざまなロールにより必要なアクションを説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322148"
 ---
-
 # <a name="onboard-vendors"></a>Onboard 仕入先
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +45,7 @@ ms.lasthandoff: 05/23/2018
 |--------------------------|---|---|---|---|---|---|
 | System                   | 新しい仕入先に対する要求がインポートされます。 | | | | | 仕入先要求が承諾された後、仕入先レコードが作成されます。 |
 | 調達担当者 | | 研修プロセスを開始します。 | | | 仕入先要求を承諾または拒否するかのいずれかを確認します。 | |
-| 管理者            | | | Finance and Operations および Microsoft Azureでユーザーを作成する | | | |
+| 管理者            | | | Finance and Operations および Microsoft Azure でユーザーを作成します。 | | | |
 | 仕入先の連絡担当者    | | | 連絡担当者に電子メールを送信します。 | 仕入先情報を登録します。 | | |
 
 仕入先のオンボーディング プロセスの簡単なデモに関しては、この短い YouTube ビデオをご覧ください: [Dynamics 365 for Finance and Operations での新しい仕入れ先に搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk}。
@@ -174,5 +173,4 @@ Finance and Operations にサインインする見込み仕入先ユーザーは
 |  仕入先要求が作成されました  |                                                                     仕入先登録ウィザードが完了しました。                                                                      | ユーザーを無効にする要求が作成され、見込み仕入先の登録要求、仕入先登録ウィザードに入力されたデータ、および仕入先要求が削除されます。<blockquote>[!NOTE]<br>仕入先要求がワークフロー内の確認プロセスにある場合、<strong>削除</strong> アクションを使用することはできません。</blockquote> |
 |         承認済         |                                                                               仕入先要求が承認されます。                                                                               |                                                                                                   見込み仕入先の登録要求、仕入先登録ウィザードに入力されたデータ、および仕入先要求が削除されます。                                                                                                    |
 |         拒否済         |                                                                               仕入先要求が否認されます。                                                                               |                                                                                                   見込み仕入先の登録要求、仕入先登録ウィザードに入力されたデータ、および仕入先要求が削除されます。                                                                                                    |
-
 

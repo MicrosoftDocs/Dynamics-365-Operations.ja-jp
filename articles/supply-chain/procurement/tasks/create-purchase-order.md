@@ -1,13 +1,13 @@
---- 
-title: "発注書の作成"
-description: "この手順では、手動での注文書の作成方法を説明します。"
+---
+title: 発注書の作成
+description: この手順では、手動での注文書の作成方法を説明します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 50bf9927626a2a78a5f007b0b73d338585bbf9ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 27ed15e6d9a376c4203e5446d056f221bd3eb730
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330911"
 ---
 # <a name="create-a-purchase-order"></a>発注書の作成
 
@@ -75,5 +75,4 @@ ms.lasthandoff: 09/29/2017
     * このダイアログ ボックスは、注文全体の合計を表示します。  
     * [選択] フィールドを使用して合計の計算方法の基準を変更できます。 たとえば、[製品受領書の数量] を選択して受領した製品の金額に関連する合計を表示したり、[注文済数量] を選択して注文した製品の金額を表示できます。  
 2. [OK] をクリックします。
-
 

@@ -1,13 +1,13 @@
 ---
-title: "加重平均日付"
-description: "加重平均日付とは加重平均原則に基づく在庫モデルで、在庫からの出庫は、在庫原価計算期間の 1 日ごとに、在庫に入庫された品目の平均額で決定されます。"
+title: 加重平均日付
+description: 加重平均日付とは加重平均原則に基づく在庫モデルで、在庫からの出庫は、在庫原価計算期間の 1 日ごとに、在庫に入庫された品目の平均額で決定されます。
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355406"
 ---
-
 # <a name="weighted-average-date"></a>加重平均日付
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ ms.lasthandoff: 11/03/2017
 
 決済は、原価計算日時点での正しい加重平均に払出を調整する在庫原価計算転記です。 
 
-**注記:** 決済の詳細については、在庫決算についての記事を参照してください。 次の例は、5 つのコンフィギュレーションで加重平均を使用した場合の影響を示しています。
+**注記:** 決済の詳細については、在庫決算についての記事を参照してください。 次の例は、5 つのコンフィギュレーションで加重平均を使用した場合の影響を示しています。
 
 -   **現物価格を含める**オプションを使用しない加重平均日直接決済
 -   **現物価格を含める**オプションを使用しない加重平均日集計決済
@@ -195,7 +194,6 @@ ms.lasthandoff: 11/03/2017
 -   各縦矢印には、*1a* のような連続した ID のラベルが付いています。 ID は、タイムラインでの在庫トランザクション転記の順序を示しています。
 -   在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。
 -   在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。
-
 
 
 

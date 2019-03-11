@@ -1,13 +1,13 @@
 ---
-title: "国際銀行番号 (IBAN) 口座の検証を管理"
-description: "このトピックでは、国際銀行番号 (IBAN) 口座の検証を管理する方法を説明します。"
+title: 国際銀行番号 (IBAN) 口座の検証を管理
+description: このトピックでは、国際銀行番号 (IBAN) 口座の検証を管理する方法を説明します。
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
 ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360006"
 ---
-
 # <a name="manage-international-bank-account-number-iban-validation"></a>国際銀行番号 (IBAN) の検証を管理する
 
 [!include [banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ IBAN の構造についての情報は、Microsoft Dynamics 365 for Finance and 
     検証では、銀行口座番号が銀行口座番号を表す IBAN の一部と一致していることも確認します。 銀行口座番号が一致しない場合は、警告メッセージが表示されます。 このメッセージは、警告のみです。 銀行口座番号と一致しない場合でも続行することができます。
 
     検証では、銀行支店コードが銀行支店コードを表す IBAN の一部と一致していることも確認します。 銀行支店コードには、銀行番号と、多くの場合は追加の銀行支店が含まれます。 銀行支店コードが一致しない場合は、警告メッセージが表示されます。 このメッセージは、警告のみです。 銀行支店コードが一致しない場合でも続行することができます。
-

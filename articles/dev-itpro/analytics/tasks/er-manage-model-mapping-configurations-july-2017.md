@@ -1,13 +1,13 @@
---- 
-title: "個別の ER コンフィギュレーションにおける ER モデル マッピングの管理"
-description: "次のステップでは、「システム管理者」または「電子レポート開発者」ロールに割り当てられたユーザーが、個別の ER コンフィギュレーションの電子申告 (ER) モデル マッピングを管理する方法を説明します。"
+---
+title: 個別の ER コンフィギュレーションにおける ER モデル マッピングの管理
+description: 次のステップでは、「システム管理者」または「電子レポート開発者」ロールに割り当てられたユーザーが、個別の ER コンフィギュレーションの電子申告 (ER) モデル マッピングを管理する方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349150"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>個別の ER コンフィギュレーションにおける ER モデル マッピングの管理
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/09/2018
 
 次のステップでは、「システム管理者」または「電子レポート開発者」ロールに割り当てられたユーザーが、個別の ER コンフィギュレーションの電子申告 (ER) モデル マッピングを管理する方法を説明します。 このタスク ガイドでは、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。このタスク ガイドを完了するには、まずタスク ガイド「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 
 
-ER コンフィギュレーションは会社間で共有されるので、選択した会社のデータ セットを使用してこのタスク ガイドを完了できます。 このタスク ガイドの機能は、次の修正プログラムのうち 1 つをインストールした場合に使用可能です。Dynamics AX バージョン 7.0 の https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 または Dynamics 365 for Operations バージョンの https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871。
+ER コンフィギュレーションは会社間で共有されるので、選択した会社のデータ セットを使用してこのタスク ガイドを完了できます。 このタスク ガイドの機能は、次の修正プログラムのうち 1 つをインストールした場合に使用可能です: Dynamics AX バージョン 7.0 の https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 または Dynamics 365 for Operations バージョンの https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、タスク ガイド「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」のステップをまず完了する必要があります。   
@@ -70,7 +70,7 @@ ER コンフィギュレーションは会社間で共有されるので、選�
 6. [デザイナー] をクリックします。
     * 作成されたモデル マッピング コンフィギュレーションには、作成されたコンフィギュレーションと同じ名前の新しい空白のマッピングが含まれていることに注意してください。 選択した親モデル コンフィギュレーションにモデル マッピングが含まれている場合、それは新しいモデル マッピング コンフィギュレーションにコピーされるので注意してください。   
 7. [デザイナー] をクリックします。
-8. ツリーで、[Dynamics 365 for Operations\Table] を選択します。
+8. ツリーで、'Dynamics 365 for Operations\Table を選択します。
 9. [ルートの追加] をクリックします。
 10. [名前] フィールドに、「Company」と入力します。
     * 法人  
@@ -123,7 +123,7 @@ ER コンフィギュレーションは会社間で共有されるので、選�
 5. [コンフィギュレーションの作成] をクリックします。
 6. [デザイナー] をクリックします。
 7. [デザイナー] をクリックします。
-8. ツリーで、[Dynamics 365 for Operations\Table] を選択します。
+8. ツリーで、'Dynamics 365 for Operations\Table を選択します。
 9. [ルートの追加] をクリックします。
 10. [名前] フィールドに、「Company」と入力します。
     * 法人  
@@ -161,5 +161,4 @@ ER コンフィギュレーションは会社間で共有されるので、選�
 6. [実行] をクリックします。
 7. [OK] をクリックします。
     * 既定のモデル マッピング コンフィギュレーションが、電子ドキュメントを生成するためにこの形式コンフィギュレーションによって使用されている (作成した出力に会社コードが含まれている) ことに注意してください。  
-
 

@@ -1,28 +1,27 @@
 ---
-title: "GroupDesign タイプ"
-description: "グループ デザインのオブジェクト タイプ。"
+title: GroupDesign タイプ
+description: グループ デザインのオブジェクト タイプ。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 3f3fbb9bcc711ddd45403ef0cbf85bab7ebaccf1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368378"
 ---
-
 # <a name="groupdesign-type"></a>GroupDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -112,7 +111,7 @@ bindings: any (optional)
 
 ### <a name="border"></a>border
 
-border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional) 
+border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可) 
 
 コントロールの境界動作。 このプロパティは、子によって継承されません。
 
@@ -182,7 +181,7 @@ True の場合、リストの各行の周りに境界線が表示されます。
 > [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md).[itemBorder](view-model-control-container-icontainercontrol-icontainercontroldesign.md#itemborder) から継承
 
 
-### <a name="items"></a>項目
+### <a name="items"></a>品目
 
 items: string &#124; [Design](view-model-ipage-idesign.md) \[ \] (省略可) 
 
@@ -245,6 +244,5 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 文字列としてのコントロールのタイプ。
 
 > [Design](view-model-ipage-idesign.md).[type](view-model-ipage-idesign.md#type) から継承
-
 
 

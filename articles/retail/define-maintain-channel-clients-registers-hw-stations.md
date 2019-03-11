@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) への周辺機器の接続"
-description: "このトピックでは、Retail POS に周辺機器を接続する方法について説明します。"
+title: 販売時点管理 (POS) への周辺機器の接続
+description: このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308785"
 ---
-
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>販売時点管理 (POS) への周辺機器の接続
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
 
 > [!NOTE]
-> 具体的なインストール手順については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) と [Retail Modern POS セルフ サービス ダウンロードとインストール、および Modern POS とクラウド POS のデバイスの有効化](retail-modern-pos-device-activation.md) を参照してください。
+> 具体的なインストール手順については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) と [Retail Modern POS セルフ サービス ダウンロードとインストール、および Modern POS と Cloud POS のデバイスの有効化](retail-modern-pos-device-activation.md) を参照してください。
 
 ## <a name="key-components"></a>主要コンポーネント
 
@@ -188,4 +187,3 @@ POS レジスターは、主にレジスター自体を介して管理され、�
 ### <a name="client-data-synchronization"></a>クライアント データ同期
 
 デバイス有効化の状態の変更を除いた POS クライアントへのすべての変更を、チャネル データベースに同期して有効にする必要があります。 チャネル データベースへの変更を同期するには、**小売** &gt; **小売 IT** &gt; **配布スケジュール**と移動して、必要な配布スケジュールを実行します。 クライアントの変更の場合、「レジスター」と「チャネルのコンフィギュレーション」の配布スケジュールを実行する必要があります。
-

@@ -1,13 +1,13 @@
 ---
-title: "C クラス"
-description: "文字 C で始まるシステム API クラス。"
+title: C クラス
+description: 文字 C で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0a95278d14b588888bccf8ec7be0f7cd77a1c8f2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369577"
 ---
-
 # <a name="c-classes"></a>C クラス
 
 [!include [banner](../includes/banner.md)]
@@ -465,7 +464,7 @@ ClrInterop クラスは、タイプ マーシャ リングおよび例外処理�
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                               | 説明                                                                                                                              |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -473,7 +472,7 @@ ClrInterop クラスは、タイプ マーシャ リングおよび例外処理�
 | ::public static CLRObject getLastException()                                         | 最新の CLR 例外を取得します。                                                                                                 |
 | ::public static CLRObject getObjectForAnyType(AnyType anyType)                       | X++ anytype データ型の値を CLRObject データ型の値に変換します。                                                     |
 | ::public static CLRObject getType(str clrTypeName)                                   |                                                                                                                                          |
-| ::public static boolean isNull(CLRObject clrObject)                                  | 指定された CLRObject インスタンスが nullNothingnullptrunita null 参照 (Visual Basic にはない) にセットされたかどうかを確認します。            |
+| ::public static boolean isNull(CLRObject clrObject)                                  | 指定された CLRObject インスタンスが nullNothingnullptrunita null 参照 (Visual Basic では Nothing) にセットされているかどうかを確認します。            |
 | ::public static CLRObject Null(str clrTypeName)                                      | nullNothingnullptrunita null 参照 (Visual Basic では Nothing) の値を持つ CLR データ型を返します。                            |
 | ::public static CLRObject parseClrEnum(str clrEnumTypeName, str enumValues)          | 1 つ以上の列挙定数の名前または数値の文字列で表したものを、等価の CLRObject インスタンスに変換します。 |
 | ::public static CLRObject staticInvoke(str className, str methodName, VarArg params) | CLR データ型の静的メソッドを呼び出します。                                                                                                |
@@ -497,7 +496,7 @@ X++ データ型に変換する CLR オブジェクト。
 
 #### <a name="remarks"></a>備考
 
-攻撃者が getAnyTypeForObject メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。 引数が、X++ のデータ型に変換することができない場合、Exception::ClrError タイプの例外がスローされます。
+攻撃者が getAnyTypeForObject メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。 引数 X++ のデータ型に変換することができない場合、Exception::ClrError タイプの例外がスローされます。
 
 #### <a name="examples"></a>例
 
@@ -528,7 +527,7 @@ X++ データ型に変換する CLR オブジェクト。
 
 #### <a name="return-value"></a>戻り値
 
-Exception::ClrError type 型の最新の例外。それ以外の場合は、nullNothingnullptrunita null 参照 (Visual Basic ではなし)。
+Exception::ClrError 型の最新の例外。それ以外の場合は、nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -586,7 +585,7 @@ CLRObject データ型の値に変換する X++ 値。
 
 #### <a name="remarks"></a>備考
 
-攻撃者が getObjectForAnyType メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。 引数が CLRObject 型に変換することができない場合、Exception::CLRError タイプの例外がスローされます。
+攻撃者が getObjectForAnyType メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。 引数を CLRObject 型に変換することができない場合、Exception::CLRError 型の例外がスローされます。
 
 #### <a name="examples"></a>例
 
@@ -622,7 +621,7 @@ clrTypeName
 
 ### <a name="method-isnull"></a>メソッド isNull
 
-指定された CLRObject インスタンスが nullNothingnullptrunita null 参照 (Visual Basic にはない) にセットされたかどうかを確認します。
+指定された CLRObject インスタンスが nullNothingnullptrunita null 参照 (Visual Basic では Nothing) にセットされているかどうかを確認します。
 
     public static boolean isNull(CLRObject clrObject)
 
@@ -633,15 +632,15 @@ clrObject
 
 #### <a name="return-value"></a>戻り値
 
-指定された CLRObject インスタンスが nullNothingnullptrunita null 参照 (Visual Basic にはない) にセットされた場合または初期化されていない場合は true。
+指定された CLRObject インスタンスが nullNothingnullptrunita null 参照 (Visual Basic では Nothing) にセットされた場合または初期化されていない場合は true。
 
 #### <a name="remarks"></a>備考
 
-CLN データ型が nullNothingnullptrunita null 参照 (Visual Basic にはない) であるかどうかを評価する条件ステートメントでは、X++ nullNothingnullptrunita null参照 (Visual Basic にはない) の代わりに isNull メソッドを使用する必要があります。
+CLR データ型が nullNothingnullptrunita null 参照 (Visual Basic では Nothing) であるかどうかを評価する条件ステートメントでは、X++ nullNothingnullptrunita null 参照 (Visual Basic では Nothing) の代わりに isNull メソッドを使用する必要があります。
 
 #### <a name="examples"></a>例
 
-次の例では、CLR 文字列データ型を nullNothingnullptrunita null 参照 (Visual Basic にはない) に設定し、タイプ値を CLR オブジェクトに割り当てます。 isNull メソッドを呼び出し、情報ログに結果を出力します。
+次の例では、CLR 文字列データ型を nullNothingnullptrunita null 参照 (Visual Basic では Nothing) に設定し、タイプ値を CLR オブジェクトに割り当てます。 isNull メソッドを呼び出し、情報ログに結果を出力します。
 
     static void Job5(Args _args) 
     { 
@@ -661,7 +660,7 @@ nullNothingnullptrunita null 参照 (Visual Basic では Nothing) の値を持�
 #### <a name="parameters"></a>パラメーター
 
 clrTypeName  
-nullNothingnullptrunita null参照 (Visual Basic にはない) に設定する必要がある CLR データ型。
+nullNothingnullptrunita null参照 (Visual Basic では Nothing) に設定する必要がある CLR データ型。
 
 #### <a name="return-value"></a>戻り値
 
@@ -669,11 +668,11 @@ nullNothingnullptrunita null参照 (Visual Basic にはない) に設定する�
 
 #### <a name="remarks"></a>備考
 
-X++ で CLR データ型を NullNothingnullptrunita null 参照 (Visual Basic ではなし) に直接設定する場合は、カーネル参照を nullNothingnullptrunita null 参照 (Visual Basic ではなし) にのみ設定します。 これにより、CLR データ型として型を使用することができなくなります。 CLRInterop:null("yourType") に CLR データ型を割り当てると、静的メソッド呼び出しのパラメーターとして、実行時にタイプを解析できます。
+X++ で CLR データ型を NullNothingnullptrunita null 参照 (Visual Basic では Nothing) に直接設定する場合は、カーネル参照を nullNothingnullptrunita null 参照 (Visual Basic では Nothing) にのみ設定します。 これにより、CLR データ型として型を使用することができなくなります。 CLRInterop:null("yourType") に CLR データ型を割り当てると、静的メソッド呼び出しのパラメーターとして、実行時にタイプを解析できます。
 
 #### <a name="examples"></a>例
 
-次の例では、CLR 文字列型を nullNothingnullptrunita nul l参照 (Visual Basic にはない) に設定し、型値を CLR オブジェクトに割り当てます。
+次の例では、CLR 文字列型を nullNothingnullptrunita null 参照 (Visual Basic では Nothing) に設定し、タイプ値を CLR オブジェクトに割り当てます。
 
     static void Job5(Args _args) 
     { 
@@ -748,7 +747,7 @@ params
 
 #### <a name="return-value"></a>戻り値
 
-静的 CLR メソッドによって返される値を含む CLRObject。それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic ではなし)。
+静的 CLR メソッドによって返される値を含む CLRObject。それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -852,7 +851,7 @@ params
 
 #### <a name="remarks"></a>備考
 
-CLRObject クラスのインスタンスは、CLR メソッドの呼び出しから返される値をラップするために使用されます。 攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、InteropPermission クラスからのアクセス許可が必要です。 ユーザーが新しいメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。 新しい ClrObject オブジェクトをインスタンス化できない場合、例外: 例外内部はスローします。 元の CLR 例外を取得するには、CLRInterop :: getLastException メソッドを呼び出します。
+CLRObject クラスのインスタンスは、CLR メソッドの呼び出しから返される値をラップするために使用されます。 攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、InteropPermission クラスからのアクセス許可が必要です。 ユーザーが新しいメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。 新しい ClrObject オブジェクトをインスタンス化できない場合、例外: 例外内部はスローします。 元の CLR 例外を取得するには、CLRInterop::getLastException メソッドを呼び出します。
 
 #### <a name="examples"></a>例
 
@@ -980,7 +979,7 @@ API を起動する前に、保護された API の派生クラスで assert メ
 -   サーバー静的メソッド
 -   RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド
 
-Finance and Operations は、同じ呼び出しコードで、Assert メソッドに対する複数の連続する呼び出しをサポートしません。 Assert メソッドへの各呼び出し間の CodeAccessPermission::revertAssert メソッドを呼び出すか、または CodeAccessPermission::assertMultiple メソッドを呼び出すかです。 assertmethod を複数にわたり連続して呼び出すと、コードを実行するときに Infolog によってエラーが表示されます。
+Finance and Operations は、同じ呼び出しコードで、Assert メソッドに対する複数の連続する呼び出しをサポートしません。 assert メソッドへの各呼び出し間で CodeAccessPermission::revertAssert メソッドを呼び出すか、または CodeAccessPermission::assertMultiple メソッドを呼び出すかのいずれかを行います。 assertmethod を複数にわたり連続して呼び出すと、コードを実行するときに Infolog によってエラーが表示されます。
 
 #### <a name="examples"></a>例
 
@@ -1027,11 +1026,11 @@ CodeAccessPermission.assert および CodeAccessPermission::assertMultiple メ�
 
 #### <a name="remarks"></a>備考
 
-同じ呼び出しコードで assert メソッドに複数の呼び出しをするときは、それぞれの呼び出しの間に revertAssert メソッドを呼び出す必要があります。 それ以外の場合、情報ログには、コードを実行するときにエラーが表示されます。 assert メソッドを1回だけ呼び出すとき、または CodeAccessPermission::assertMultiple メソッドを呼び出すときは、アサートの範囲を制限する保護された API の起動後にも、revertAssert メソッドを呼び出すことをお勧めします。
+同じ呼び出しコードで assert メソッドに複数の呼び出しをするときは、それぞれの呼び出しの間に revertAssert メソッドを呼び出す必要があります。 それ以外の場合、情報ログには、コードを実行するときにエラーが表示されます。 assert メソッドを1回だけ呼び出すとき、または CodeAccessPermission::assertMultiple メソッドを呼び出すときは、保護された API の起動後にも revertAssert メソッドを呼び出して、アサートの範囲を制限することをお勧めします。
 
 #### <a name="examples"></a>例
 
-次のコード例は、ユーザーが CodeAccessPermission.assert メソッドを呼び出した後の CodeAccessPermission :: revertAssert メソッドと、アクセス許可で保護されている AsciiIo クラスの呼び出しを示しています
+次のコード例は、ユーザーが CodeAccessPermission.assert メソッドとアクセス許可で保護されている AsciiIo クラスの呼び出しを呼び出した後の、 CodeAccessPermission::revertAssert メソッドへの呼び出しを示しています。
 
     server static void main(Args args) 
     { 
@@ -1066,7 +1065,7 @@ permissionSet
 
 #### <a name="examples"></a>例
 
-次のコード例は、CodeAccessPermission :: assertMultple メソッドを呼び出します。 コードのサンプルは WinAPIServer::createFile メソッドを呼び出します。これは、CodeAccessPermission::assertMultple メソッドへの前回の呼び出しがなく失敗します。 このコード例は、作成する新しいクラスに追加できる静的メソッドです。 MyClass::RunOnServerPermissionTest のようなコード行を使用して、X++ ジョブから静的メソッドを呼び出すことができます。 コードの例では、WinAPIServer クラスに、セキュリティで保護されたメソッドがいくつかあります。 WinAPIServer クラスは、クライアント層ではなく、サーバー層で実行されます。 したがって、コード例のメソッドはサーバー層でも実行する必要があります。 それ以外の場合、クライアント層で実行されたすべてのアクセス許可アサートは、サーバー層で実行されるメソッドにより無視されます。 このため、サーバー キーワードはコード例のメソッド宣言に含まれています。 メソッドのサーバー キーワードは、クラスで指定された RunOn プロパティ値よりも優先されます。
+次のコード例は、CodeAccessPermission::assertMultple メソッドを呼び出します。 このコード例は WinAPIServer::createFile メソッドを呼び出します。このメソッド、CodeAccessPermission::assertMultple メソッドへの事前の呼び出しがない場合は失敗します。 このコード例は、作成する新しいクラスに追加できる静的メソッドです。 MyClass::RunOnServerPermissionTest のようなコード行を使用して、X++ ジョブから静的メソッドを呼び出すことができます。 コードの例では、WinAPIServer クラスに、セキュリティで保護されたメソッドがいくつかあります。 WinAPIServer クラスは、クライアント層ではなく、サーバー層で実行されます。 したがって、コード例のメソッドはサーバー層でも実行する必要があります。 それ以外の場合、クライアント層で実行されたすべてのアクセス許可アサートは、サーバー層で実行されるメソッドにより無視されます。 このため、サーバー キーワードはコード例のメソッド宣言に含まれています。 メソッドのサーバー キーワードは、クラスで指定された RunOn プロパティ値よりも優先されます。
 
     server
         static public void RunOnServerPermissionTest()
@@ -1101,7 +1100,7 @@ COM クラスは、コンポーネント オブジェクト モデル (COM) オ�
 
 ### <a name="remarks"></a>備考
 
-COM クラスは、分散コンポーネント オブジェクト モデル (DCOM) もサポートしています。 DCOM は、DCOM をサポートするオブジェクトをリモート コンピュータで実行できるようにします。 COM クラスを使用して COM オブジェクトがインスタンス化されると、そのメソッドおよびプロパティに、COMDispFunction クラスかまたは COM クラスの 拡張構文を使用してアクセスできます。 拡張構文を使用すると、Lookup リストに表示されていなくても 、メソッドとプロパティを COM オブジェクトで直接呼び出すことができます (例: com.comMethod("Hello World");)。 拡張構文は、任意の数の引数を取るメソッドとプロパティへの呼び出しをサポートしています。 一部の COM オブジェクトは、省略可能な引数の概念をサポートします。 オプションのバリアント引数のみ省略できます。 オプションの引数を省略すると、COM オブジェクトは、既定値を使用します。 COM オブジェクトの引数を省略し、強制的に既定値を使用するには、次の例に示すように COMArgument :: NoValue 列挙型を指定します。
+COM クラスは、分散コンポーネント オブジェクト モデル (DCOM) もサポートしています。 DCOM は、DCOM をサポートするオブジェクトをリモート コンピュータで実行できるようにします。 COM クラスを使用して COM オブジェクトがインスタンス化されると、そのメソッドおよびプロパティに、COMDispFunction クラスかまたは COM クラスの 拡張構文を使用してアクセスできます。 拡張構文を使用すると、Lookup リストに表示されていなくても 、メソッドとプロパティを COM オブジェクトで直接呼び出すことができます (例: com.comMethod("Hello World");)。 拡張構文は、任意の数の引数を取るメソッドとプロパティへの呼び出しをサポートしています。 一部の COM オブジェクトは、省略可能な引数の概念をサポートします。 オプションのバリアント引数のみ省略できます。 オプションの引数を省略すると、COM オブジェクトは、既定値を使用します。 COM オブジェクトの引数を省略し、強制的に既定値を使用するには、次の例に示すように、COMArgument::NoValue 列挙型を指定します。
 
     com.comMethod(COMArgument::NoValue, "Hello Another World");
 
@@ -1286,7 +1285,7 @@ COM クラスの新しいインスタンスを作成するために使用する�
 
 #### <a name="return-value"></a>戻り値
 
-インターフェイス パラメーターで指定されている COM インターフェイスの COM クラスのインスタンス。COM クラスのインスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし) 。
+インターフェイス パラメーターで指定される COM インターフェイスの COM クラスのインスタンス。COM クラスのインスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -1305,7 +1304,7 @@ COM クラスの新しいインスタンスを作成するために使用する 
 
 #### <a name="return-value"></a>戻り値
 
-オブジェクト パラメーターで指定されている COM オブジェクトの COM クラスのインスタンス。COM クラスのインスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし) 。
+オブジェクト パラメーターで指定される COM オブジェクトの COM クラスのインスタンス。COM クラスのインスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -1324,7 +1323,7 @@ COM クラスの新しいインスタンスを作成するために使用する 
 
 #### <a name="return-value"></a>戻り値
 
-バリアント パラメーターで指定されている COM オブジェクトの COM クラスのインスタンス。COM クラスのインスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし) 。
+バリアント パラメーターで指定される COM オブジェクトの COM クラスのインスタンス。COM クラスのインスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -1343,7 +1342,7 @@ COM クラスのインスタンスを作成するために使用される COM �
 
 #### <a name="return-value"></a>戻り値
 
-className パラメーターで指定されているクラスの COM クラスのインスタンス。インスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし) 。
+className パラメーターで指定されるクラスの COM クラスのインスタンス。インスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -1396,7 +1395,7 @@ COM クラスのインスタンスを作成するために使用される COM �
 
 #### <a name="return-value"></a>戻り値
 
-filename パラメーターで指定されている COM クラスのインスタンス。インスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし) 。
+filename パラメーターで指定される COM クラスのインスタンス。インスタンスを作成できない場合は nullNothingnullptrunita null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -1459,7 +1458,7 @@ COM オブジェクトをインスタンス化するリモート コンピュー
 COM オブジェクトのクラス名は、そのプログラム識別子 (ProgID) またはそのクラス識別子 (CLSID) です。
 
 -   ProgID の形式: program.component.version
--   CLSIDs は 128 ビット値で、次の形式を持ちます: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+-   ClSID は 128 ビット値であり、その形式は {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx} です。
 
 攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、InteropPermission クラスからのアクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。
 
@@ -2255,7 +2254,7 @@ codepage
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                               | 説明 |
 |--------------------------------------|-------------|
@@ -2404,7 +2403,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_BOOL に設定されている場合、COMVariant オブジェクトはブール型です。 COM ブール値のデータ型は、"VARIANT\_BOOL" とも呼ばれることがあります。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_BOOL に設定されている場合、その COMVariant オブジェクトはブール型です。 COM ブール値のデータ型は、"VARIANT\_BOOL" とも呼ばれることがあります。
 
 #### <a name="examples"></a>例
 
@@ -2436,7 +2435,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_BSTR に設定されている場合、COMVariant オブジェクトは文字列データ型です。 BStr データ型は、文字列の処理に使用される COM データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_BSTR に設定されている場合、その COMVariant オブジェクトは文字列データ型です。 BStr データ型は、文字列の処理に使用される COM データ型です。
 
 #### <a name="examples"></a>例
 
@@ -2468,7 +2467,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_UI1 に設定されている場合、COMVariant オブジェクトはバイト データ型です。 また、「符号なし文字型」を使用して COM バイト データ型を参照することができます。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_UI1 に設定されている場合、その COMVariant オブジェクトは byte データ型です。 また、「符号なし文字型」を使用して COM バイト データ型を参照することができます。
 
 #### <a name="examples"></a>例
 
@@ -2500,7 +2499,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_I1 に設定されている場合、COMVariant オブジェクトは char データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_I1 に設定されている場合、その COMVariant オブジェクトは char データ型です。
 
 #### <a name="examples"></a>例
 
@@ -2613,7 +2612,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_CY に設定されている場合、COMVariant オブジェクトは 通貨データ型です。 通貨データ型は、通貨値に最適化された COM データ型です。 小数点以下 4 桁のある実数です。 場合によっては、COM 通貨データ型を参照するために "CY" も使用されます。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_CY に設定されている場合、その COMVariant オブジェクトは通貨データ型です。 通貨データ型は、通貨値に最適化された COM データ型です。 小数点以下 4 桁のある実数です。 場合によっては、COM 通貨データ型を参照するために "CY" も使用されます。
 
 #### <a name="examples"></a>例
 
@@ -2645,7 +2644,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_DATE に設定されている場合、COMVariant オブジェクトは 日時データ型です。 オブジェクトの値を設定するとき、日付に加えて、値の時刻の部分を設定する必要があります。 値の時間部分を設定するには、time プロパティを使用します。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_DATE に設定されている場合、その COMVariant オブジェクトは日時データ型です。 オブジェクトの値を設定するとき、日付に加えて、値の時刻の部分を設定する必要があります。 値の時間部分を設定するには、time プロパティを使用します。
 
 #### <a name="examples"></a>例
 
@@ -2678,7 +2677,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_DECIMAL に設定されている場合、COMVariant オブジェクトは 10 進型です。 10進データ型は、数値のサイズとスケールを提供する COM データ型です。 X++ には 10 進データ型と並行するものはありません。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_DECIMAL に設定されている場合、その COMVariant オブジェクトは 10 進型です。 10進データ型は、数値のサイズとスケールを提供する COM データ型です。 X++ には 10 進データ型と並行するものはありません。
 
 #### <a name="examples"></a>例
 
@@ -2710,7 +2709,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_R8 に設定されている場合、COMVariant オブジェクトはダブル データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_R8 に設定されている場合、その COMVariant オブジェクトは double データ型です。
 
 #### <a name="examples"></a>例
 
@@ -2742,7 +2741,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_R4 に設定されている場合、COMVariant オブジェクトは float 型です。 場合によっては、COM 浮動小数点データ型を参照するために "single" も使用されます。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_R4 に設定されている場合、COMVariant オブジェクトは float 型です。 場合によっては、COM 浮動小数点データ型を参照するために "single" も使用されます。
 
 #### <a name="examples"></a>例
 
@@ -2774,7 +2773,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_DISPATCH に設定されている場合、COMVariant オブジェクトは IDispatch データ型です。 IDispatch データ型は、COM IDispatch インターフェイスへのハンドルを提供する COM データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_DISPATCH に設定されている場合、その COMVariant オブジェクトは IDispatch データ型です。 IDispatch データ型は、COM IDispatch インターフェイスへのハンドルを提供する COM データ型です。
 
 #### <a name="examples"></a>例
 
@@ -2843,7 +2842,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、データ型の値に合わせて変更されます。 そのデータ型が COMVariantType::VT\_UNKNOWN に設定されている場合、COMVariant オブジェクトは IUnknown データ型です。 IUnknown データ型は、COM IUnknown インターフェイスへのハンドルを提供する COM データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、データ型の値に合わせて変更されます。 データ型が COMVariantType::VT\_UNKNOWN に設定されている場合、COMVariant オブジェクトは IUnknown データ型です。 IUnknown データ型は、COM IUnknown インターフェイスへのハンドルを提供する COM データ型です。
 
 #### <a name="examples"></a>例
 
@@ -2912,7 +2911,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_I8 に設定されている場合、COMVariant オブジェクトは longlong バリアント型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_I8 に設定されている場合、その COMVariant オブジェクトは longlong バリアント型です。
 
 #### <a name="examples"></a>例
 
@@ -2949,7 +2948,7 @@ newType
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_SAFEARRAY に設定されている場合、COMVariant オブジェクトは配列ブール型です。 セーフ配列は、COM の配列に相当します。 現在、1 次元セーフ配列のみがサポートされています。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_SAFEARRAY に設定されている場合、その COMVariant オブジェクトは配列ブール型です。 セーフ配列は、COM の配列に相当します。 現在、1 次元セーフ配列のみがサポートされています。
 
 #### <a name="examples"></a>例
 
@@ -2991,7 +2990,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_ERROR に設定されている場合、COMVariant オブジェクトは scode データ型です。 scode データ型は、COM 関数の戻り値として最もよく使用される Win32 HRESULT データ型と同等の COM データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_ERROR に設定されている場合、その COMVariant オブジェクトは scode データ型です。 scode データ型は、COM 関数の戻り値として最もよく使用される Win32 HRESULT データ型と同等の COM データ型です。
 
 #### <a name="examples"></a>例
 
@@ -3023,7 +3022,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_I2 に設定されている場合、COMVariant オブジェクトはショート データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_I2 に設定されている場合、その COMVariant オブジェクトは short データ型です。
 
 #### <a name="examples"></a>例
 
@@ -3055,7 +3054,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_DATE に設定されている場合、COMVariant オブジェクトは 日時データ型です。 オブジェクトの値を設定するとき、時刻に加えて、値の日付の部分を設定する必要があります。 値の日付部分を設定するには、date プロパティを使用します。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_DATE に設定されている場合、その COMVariant オブジェクトは日時データ型です。 オブジェクトの値を設定するとき、時刻に加えて、値の日付の部分を設定する必要があります。 値の日付部分を設定するには、date プロパティを使用します。
 
 #### <a name="examples"></a>例
 
@@ -3175,7 +3174,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_I8 に設定されている場合、COMVariant オブジェクトは未署名の longlong バリアント型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_I8 に設定されている場合、その COMVariant オブジェクトは unsigned longlong バリアント型です。
 
 #### <a name="examples"></a>例
 
@@ -3207,7 +3206,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_UI2 に設定されている場合、COMVariant オブジェクトは未署名の ショート データ型です。
+オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_UI2 に設定されている場合、その COMVariant オブジェクトは unsigned short データ型です。
 
 #### <a name="examples"></a>例
 
@@ -3239,7 +3238,7 @@ newValue
 
 #### <a name="remarks"></a>備考
 
-variant プロパティは、ある COMVariant オブジェクトを別の COMVariant オブジェクトにネストするために使用されます。 親オブジェクトを COMDispFunction.call への呼び出しまたは COM クラスへの呼び出しの引数として使用する場合、呼び出されたメソッドは自動的に入れ子になったオブジェクトのデータを抽出します。 このネスト機能は、COM オブジェクトのメソッドが複数のデータ型で動作できる場合に便利です。 バリアントの入れ子は 1 つのレベルのみ許可されます。 オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 そのデータ型が COMVariantType::VT\_VARIANT に設定されている場合、COMVariant オブジェクトはバリアント型です。
+variant プロパティは、ある COMVariant オブジェクトを別の COMVariant オブジェクトにネストするために使用されます。 親オブジェクトを COMDispFunction.call への呼び出しまたは COM クラスへの呼び出しの引数として使用する場合、呼び出されたメソッドは自動的に入れ子になったオブジェクトのデータを抽出します。 このネスト機能は、COM オブジェクトのメソッドが複数のデータ型で動作できる場合に便利です。 バリアントの入れ子は 1 つのレベルのみ許可されます。 オブジェクトと異なるデータ型の値を渡す場合は、オブジェクトのデータ型は、値のデータ型に合わせて変更されます。 データ型が COMVariantType::VT\_VARIANT に設定されている場合、その COMVariant オブジェクトはバリアント型です。
 
 #### <a name="examples"></a>例
 
@@ -3317,7 +3316,7 @@ newValue
 -   COMVariantInOut::IN
 -   COMVariantInOut::IN\_OUT
 -   COMVariantInOut::OUT
--   COMVariantInOut::OUT\_戻り値。
+-   COMVariantInOut::OUT\_RETVAL.
 
 InOutFlag 設定は、オブジェクトが COMDispFunction.call メソッドで引数として使用されたときに、オブジェクトに格納されているデータがどのように扱われるかを記述します。 InOutFlag 設定の使用可能な値は、Win32 SDK に記述されている COM オートメーション オブジェクトの値に対応します。 COMVariant オブジェクトに格納されたデータは、InOutFlag 設定が変更されても影響を受けません。
 
@@ -3356,14 +3355,14 @@ newValue パラメーターの使用可能な値は次のとおりです。
 -   COMVariantType::VT\_R4
 -   COMVariantType::VT\_R8
 -   COMVariantType::VT\_CY
--   COMVariantType::VT\_日付
+-   COMVariantType::VT\_DATE
 -   COMVariantType::VT\_BSTR
--   COMVariantType::VT\_出荷
--   COMVariantType::VT\_エラー
--   COMVariantType::VT\_ブール値
--   COMVariantType::VT\_バリアント
--   COMVariantType::VT\_不明
--   COMVariantType::VT\_10 進値
+-   COMVariantType::VT\_DISPATCH
+-   COMVariantType::VT\_ERROR
+-   COMVariantType::VT\_BOOL
+-   COMVariantType::VT\_VARIANT
+-   COMVariantType::VT\_UNKNOWN
+-   COMVariantType::VT\_DECIMAL
 -   COMVariantType::VT\_I1
 -   COMVariantType::VT\_UI1
 -   COMVariantType::VT\_UI2
@@ -3529,7 +3528,7 @@ inOutFlag パラメーターの使用可能な値は次のとおりです。
 -   COMVariantInOut::IN
 -   COMVariantInOut::IN\_OUT
 -   COMVariantInOut::OUT
--   COMVariantInOut::OUT\_戻り値
+-   COMVariantInOut::OUT\_RETVAL
 
 #### <a name="examples"></a>例
 
@@ -5107,7 +5106,6 @@ TreeNode クラスの新しいインスタンスを初期化します。
 
 cueReferenceName  
 このフォーム、レポート、テーブル、クエリ、または他のアプリケーション オブジェクトを識別するためのコードで使用される名前。
-
 
 
 

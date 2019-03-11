@@ -1,14 +1,14 @@
 ---
-title: "Attract での拡張性"
-description: "このトピックでは、Microsoft Power Platform を使用して Microsoft Dynamics 365 for Talent - Attract を拡張する方法について説明します。"
+title: Attract での拡張性
+description: このトピックでは、Microsoft Power Platform を使用して Microsoft Dynamics 365 for Talent - Attract を拡張する方法について説明します。
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 0af60a0aea0f7a5de793631445aaebb37dbb0d74
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305135"
 ---
-
 # <a name="extensibility-in-attract"></a>Attract での拡張性
 
 [!include[banner](../includes/banner.md)]
@@ -44,9 +43,9 @@ PowerApps を使用して、Attract データに接続し、Microsoft Excel の�
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Microsoft Flow を使用して、Attract データの上で実行するワークフローを自動作成できます。 コードの書き込みなしで、数百の人気のアプリおよびサービスに簡単に接続できます。 Common Data Service for Apps で Attract ジョブ、候補者、アプリケーション エンティティとやりとりするフローを構築することで、さまざまな活動を自動化できます。 たとえば、候補者がオファーを受け入れると、オンボード チームに通知を送信でき、または Twitter にニュースが発表されます。 フローの詳細については、[Microsoft Flow ドキュメント](https://docs.microsoft.com/en-us/flow/) を参照してください。
+Microsoft Flow を使用して、Attract データの上で実行するワークフローを自動作成できます。 コードの書き込みなしで、数百の人気のアプリおよびサービスに簡単に接続できます。 Common Data Service for Apps で Attract ジョブ、候補者、アプリケーション エンティティとやりとりするフローを構築することで、さまざまな活動を自動化できます。 たとえば、候補者がオファーを受け入れると、オンボード チームに通知を送信でき、または Twitter にニュースが発表されます。 フローの詳細については、[Microsoft Flow の開発者ドキュメント](https://docs.microsoft.com/en-us/flow/) を参照してください。
 
-### <a name="power-bi"></a>パワー BI
+### <a name="power-bi"></a>Power BI
 
 Power BI を使用すると、Attract データへのより深い洞察を与えるカスタム レポートおよびダッシュボードを構築し表示できます。 Power BI および対話型レポートとダッシュボードの作成方法の詳細については、[Power BI ドキュメント](https://docs.microsoft.com/en-us/power-bi/) を参照してください。
 
@@ -67,4 +66,3 @@ Web コンテンツ (iframe) 活動を使用して、採用プロセスまたは
 
 > [!NOTE]
 > Web コンテンツ活動は、包括採用アドオンでのみ使用できます。
-

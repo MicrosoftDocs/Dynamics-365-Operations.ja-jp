@@ -1,13 +1,13 @@
 ---
-title: "PowerBI.com ソリューションのホーム ページ"
-description: "このトピックでは、使用可能な PowerBI.com ソリューションの一覧を示し、ソリューションに関するリソースについて詳しく知ることができます。"
+title: PowerBI.com ソリューションのホーム ページ
+description: このトピックでは、使用可能な PowerBI.com ソリューションの一覧を示し、ソリューションに関するリソースについて詳しく知ることができます。
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,26 +18,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316697"
 ---
-
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com ソリューションのホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-次の PowerBI.com ソリューションは、Dynamics 365 for Finance and Operation 環境で使用可能です。
+次の PowerBI.com ソリューションは、Dynamics 365 for Finance and Operations 環境で使用可能です。
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から利用可能な PowerBI.com ソリューション
 
 次の PowerBI.com ソリューションは、LCS の共有資産ライブラリで使用可能です。 お使いの環境向けの正しいバージョンをダウンロードするには、共有資産ライブラリのバージョン情報を参照してください。
 
 > [!NOTE]
-> 次の一覧に含まれる PowerBI.com ソリューションのほとんどは、Dynamics 365 for Finance and Operation の最新バージョンの分析ワークスペースに埋め込まれています。 分析ワークスペースを使用すると、LCS の共有資産ライブラリからこれらのソリューションをダウンロードする必要がなくなります。 この一覧のトピックでは、これらの PowerBI.com ソリューションが Finance and Operations のどこに埋め込まれているかを示します (該当する場合)。
+> 次の一覧に含まれる PowerBI.com ソリューションのほとんどは、Dynamics 365 for Finance and Operations の最新バージョンの分析ワークスペースに埋め込まれています。 分析ワークスペースを使用すると、LCS の共有資産ライブラリからこれらのソリューションをダウンロードする必要がなくなります。 この一覧のトピックでは、これらの PowerBI.com ソリューションが Finance and Operations のどこに埋め込まれているかを示します (該当する場合)。
 
 - [実績対予算](ledger-budgets-power-bi.md)
 - [現金の概要](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
@@ -57,7 +56,7 @@ ms.lasthandoff: 08/09/2018
 - [倉庫のパフォーマンス](warehouse-power-bi-content.md)
 - [要員指標](workforce-analysis-power-bi-content-pack.md)
 
-## <a name="powerbicom-solutions-available-from-appsource"></a>AppSource から利用可能な PowerBI.com ソリューション
+## <a name="powerbicom-solutions-available-from-appsource"></a>AppSource から使用可能な PowerBI.com ソリューション
 
 次の PowerBI.com ソリューションは、[Microsoft AppSource](https://appsource.microsoft.com) から使用可能です。
 
@@ -67,4 +66,3 @@ ms.lasthandoff: 08/09/2018
 - 原価管理
 - [財務パフォーマンス](financial-performance-power-bi-content-pack.md)
 - [小売チャネルの実績](retail-channel-performance-dashboard-power-bi-data.md)
-

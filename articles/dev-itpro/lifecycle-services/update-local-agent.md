@@ -1,28 +1,28 @@
 ---
-title: "ローカル エージェントの更新"
-description: "このトピックでは、ローカル エージェントを更新する方法について説明します。"
+title: ローカル エージェントの更新
+description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 07/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 62dbf8ffd550f9369df1ac8399b25c76f3d57c93
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 4624d97d79cf8cd9706cf2a9d85560b48cc2e2ae
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369014"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="download-the-latest-local-agent-and-configuration-from-lcs"></a>LCS から最新のローカル エージェントおよびコンフィギュレーションをダウンロード
 
 > [!NOTE]
-> 現在の配置では、ローカル エージェントの以前のバージョンを要求する場合は、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリからそれをダウンロードします。 ローカルエージェント v1.1.0 をダウンロードするには、**共用資産ライブラリ - >モデル** に移動し、[Dynamics 365 for Finance and Operations オンプレミス - ローカルエージェント v1.1.0] をクリックします。
+> 現在の配置では、ローカル エージェントの以前のバージョンを要求する場合は、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリからそれをダウンロードします。 ローカルエージェント v1.1.0 をダウンロードするには、**共用資産ライブラリ - >モデル に移動し、Dynamics 365 for Finance and Operations オンプレミス - ローカルエージェント v1.1.0 をクリックします。**
 
 > [!IMPORTANT]
 > プラットフォーム更新プログラム 12 の展開および更新プログラム フローの完成には、バージョン 2.0.0 かそれ以降のバージョンが必要です。
@@ -91,4 +91,3 @@ ms.lasthandoff: 08/09/2018
 
 8. ローカル エージェントが正常にインストールされると、LCS のオンプレミス コネクタに戻るようにします。
 9. **設定の検証**タブで、**メッセージ エージェント**を選択して、新しいローカル エージェントへの LCS 接続をテストします。
-

@@ -1,13 +1,13 @@
 ---
-title: "財務報告"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。 これには、用意された既定の財務諸表の説明が含まれています。"
+title: 財務報告
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。 これには、用意された既定の財務諸表の説明が含まれています。
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316973"
 ---
-
 # <a name="financial-reporting"></a>財務報告
 
 [!include [banner](../includes/banner.md)]
@@ -122,7 +121,6 @@ ms.lasthandoff: 10/16/2018
 
 ## <a name="additional-resources"></a>その他のリソース
 - [財務諸表の表示](view-financial-reports.md)
-
 
 
 

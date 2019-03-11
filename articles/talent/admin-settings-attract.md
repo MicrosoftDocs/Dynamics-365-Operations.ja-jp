@@ -1,14 +1,14 @@
 ---
-title: "Attract での管理者設定"
-description: "このトピックでは、Attract 内のユーザーおよび組織との機能を有効にする方法について説明します。"
-author: 
+title: Attract での管理者設定
+description: このトピックでは、Attract 内のユーザーおよび組織との機能を有効にする方法について説明します。
+author: ''
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,18 +18,17 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305147"
 ---
-
 # <a name="admin-settings-in-attract"></a>Attract での管理者設定
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent の管理者センター: Attract には、構成設定、統合オプション、および Attract アプリケーションの設定オプションが含まれています。
+Microsoft Dynamics 365 for Talent: Attract には、構成設定、統合オプション、および Attract アプリケーションの設定オプションが含まれています。
 
 ## <a name="company-information"></a>会社情報
 
@@ -69,4 +68,3 @@ LinkedIn Recruiter System Connect (RSC) で統合を設定します。 LinkedIn 
 オファーの有効期限を設定し適用することもできます。 **すべてのオファーの有効期限を要求する**オプションを**はい**と設定した場合、指定した時間数または日数の後にオファーの期限は切れます。
 
 オファー管理の詳細については、[オファー管理の設定](./offer-setup.md) を参照してください。
-

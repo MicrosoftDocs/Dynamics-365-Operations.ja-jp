@@ -1,13 +1,13 @@
 ---
-title: "倉庫作業用のモバイル デバイスの設定"
-description: "このトピックでは、倉庫作業者がモバイル デバイスで作業を実行するために使用するメニュー項目をコンフィギュレーションする方法について説明します。"
+title: 倉庫作業用のモバイル デバイスの設定
+description: このトピックでは、倉庫作業者がモバイル デバイスで作業を実行するために使用するメニュー項目をコンフィギュレーションする方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347954"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業用のモバイル デバイスの設定
 
 [!include [banner](../includes/banner.md)]
@@ -174,7 +173,7 @@ ms.lasthandoff: 10/16/2018
 </tr>
 <tr>
 <td>ライセンス プレートの読み込み</td>
-<td>自分の倉庫を初めて設定するときに、このオプションを使用します。 倉庫内のすべての場所のライセンス プレートをすべてスキャンします。 これらの場所は、ライセンス プレートによって制御される必要があります。 <strong>シリアル番号</strong>または<strong>バッチ番号</strong>が在庫引当階層の<strong>場所</strong>の上部に表示された場合、このオプションは使用できません。</td>
+<td>自分の倉庫を初めて設定するときに、このオプションを使用します。 倉庫内のすべての場所のライセンス プレートをすべてスキャンします。 これらの場所は、ライセンス プレートによって制御される必要があります。 <strong>シリアル番号</strong>または<strong>バッチ番号</strong>が、在庫引当階層の<strong>場所</strong>の上部に表示された場合、このオプションは使用できません。</td>
 </tr>
 <tr>
 <td>循環棚卸</td>
@@ -208,7 +207,7 @@ ms.lasthandoff: 10/16/2018
 </thead>
 <tbody>
 <tr class="odd">
-<td>None</td>
+<td>なし</td>
 <td>この既定値は作業を処理しません。</td>
 </tr>
 <tr class="even">
@@ -225,7 +224,7 @@ ms.lasthandoff: 10/16/2018
 </tr>
 <tr class="odd">
 <td>システム グループ化</td>
-<td>Microsoft Dynamics 365 for Finance and Operations は、指定したフィールドに基づいて作業者の作業をグループ化します。 たとえば、作業者が出荷 ID、積荷 ID、または各作業単位をリンクできる値をスキャンするときに、ピッキング作業がグループ化されます。 このオプションを選択する場合、次のフィールドが要求されます。
+<td>Microsoft Dynamics 365 for Finance and Operations グループは指定したフィールドに基づいて作業者のために働きます。 たとえば、作業者が出荷 ID、積荷 ID、または各作業単位をリンクできる値をスキャンするときに、ピッキング作業がグループ化されます。 このオプションを選択する場合、次のフィールドが要求されます。
 <ul>
 <li><strong>システム グループ化フィールド</strong> – 作業者が作業をグループ化するためにスキャンするフィールドを選択します。</li>
 <li><strong>システム グループ化ラベル</strong> – 作業をグループ化するためにスキャンする内容を作業者に指示するテキストを入力します。</li>
@@ -246,7 +245,7 @@ ms.lasthandoff: 10/16/2018
 </tr>
 <tr class="even">
 <td>循環棚卸のグループ化</td>
-<td>作業者がゾーン、作業プール、または場所を選択すると、その選択に基づいて Microsoft Dynamics 365 for Finance and Operations が作業を割り当てます。 このオプションを選択すると、[アクション] ペインの<strong>循環棚卸</strong>をクリックすることで、表示する追加情報を指定でき、また、計数に相違が見つかった場合に作業者が計数を繰り返す必要のある回数を指定できます。</td>
+<td>作業者がゾーン、作業プール、または場所を選択し、Microsoft Dynamics 365 for Finance and Operations がその選択に基づいて作業を割り当てます。 このオプションを選択すると、[アクション] ペインの<strong>循環棚卸</strong>をクリックすることで、表示する追加情報を指定でき、また、計数に相違が見つかった場合に作業者が計数を繰り返す必要のある回数を指定できます。</td>
 </tr>
  <tr class="odd">
 <td>輸送積荷</td>
@@ -367,11 +366,11 @@ ms.lasthandoff: 10/16/2018
 </tr>
 <tr class="even">
 <td>システム グループ化フィールド</td>
-<td>Microsoft Dynamics 365 for Finance and Operations が作業者のピッキング作業をグループ化する方法を決定するためのフィールドを選択します。 たとえば、<strong>ShipmentId</strong> フィールドを選択した場合、作業者はピッキング作業をグループ化する出荷 ID をスキャンします。 出荷のすべての作業が作業者に割り当てられます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化ラベル</strong> フィールドに、スキャンする内容を作業者に指示するテキストを入力する必要があります。</td>
+<td>作業者のピッキング作業を Microsoft Dynamics 365 for Finance and Operations がグループ化する方法を決定するフィールドを選択します。 たとえば、<strong>ShipmentId</strong> フィールドを選択した場合、作業者はピッキング作業をグループ化する出荷 ID をスキャンします。 出荷のすべての作業が作業者に割り当てられます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化ラベル</strong> フィールドに、スキャンする内容を作業者に指示するテキストを入力する必要があります。</td>
 </tr>
 <tr class="odd">
 <td>システム グループ化ラベル</td>
-<td>Microsoft Dynamics 365 for Finance and Operations によってピッキング作業がグループ化されるときにスキャンする内容を作業者に指示するテキストを入力します。 たとえば、<strong>ShipmentId</strong> フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに<strong>出荷 ID</strong> を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化フィールド</strong> フィールドでグループ化するフィールドを選択する必要があります。</td>
+<td>Microsoft Dynamics 365 for Finance and Operations によってピッキング作業がグループ化されるときにスキャンする内容を作業者に指示するテキストを入力します。  <strong>ShipmentId</strong> フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに<strong>出荷 ID</strong> を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化フィールド</strong> フィールドでグループ化するフィールドを選択する必要があります。</td>
 </tr>
 <tr class="even">
 <td>既定のデータを使用します</td>
@@ -387,13 +386,13 @@ ms.lasthandoff: 10/16/2018
 </tr>
 <tr class="odd">
 <td>作業テンプレートのコード</td>
-<td>プロセスの作業を作成する作業テンプレートを選択します。 たとえば、発注書の品目を受け取る場合、プット アウェイ作業は、作業テンプレートに基づいて生成されます。 作業テンプレートを選択しない場合、クエリ基準に基づいて Microsoft Dynamics 365 for Finance and Operations がテンプレートを割り当てます。 作業のテンプレートの詳細については、<a href="control-warehouse-location-directives.md">作業テンプレートと場所ディレクティブでの倉庫作業の制御</a> を参照してください。</td>
+<td>プロセスの作業を作成する作業テンプレートを選択します。 たとえば、発注書の品目を受け取る場合、プット アウェイ作業は、作業テンプレートに基づいて生成されます。 作業テンプレートを選択しない場合、Microsoft Dynamics 365 for Finance and Operations はクエリ基準に基づいてテンプレートを割り当てます。 作業のテンプレートの詳細については、<a href="control-warehouse-location-directives.md">作業テンプレートと場所ディレクティブでの倉庫作業の制御</a> を参照してください。</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>品目のピッキング時に製品、場所、または数量の確認を作業者に要求
-倉庫内での作業時に場所や数量をモバイル デバイスで登録することを作業者に要求する、作業の確認を設定できます。 作業確認によって、作業者が正しい場所にいるか、または品目の正しい数量を処理しているかを確認することができます。 また、作業者の登録を自動的に確認するように Microsoft Dynamics 365 for Finance and Operations を設定することができます。 自動確認を有効にする場合は、場所または数量に対する確認を同時に要求することはできません。 作業の確認には製品と製品バリアントも含まれます。 また、バーコードのスキャンによって確認を登録できます。 製品および製品バリアントを確認するには、製品または製品バリアントの ID を入力する必要があります。 この ID には、製品 ID、製品検索 ID、外部 ID、GTIN、またはバーコードがあります。 ID の入力後、またはバーコードのスキャン後、製品バリアントの分析コードがモバイル デバイスに表示されます。 
+倉庫内での作業時に場所や数量をモバイル デバイスで登録することを作業者に要求する、作業の確認を設定できます。 作業確認によって、作業者が正しい場所にいるか、または品目の正しい数量を処理しているかを確認することができます。 また、作業者の登録を自動的に確認するように Microsoft Dynamics 365 for Finance and Operations を有効にすることができます。 自動確認を有効にする場合は、場所または数量に対する確認を同時に要求することはできません。 作業の確認には製品と製品バリアントも含まれます。 また、バーコードのスキャンによって確認を登録できます。 製品および製品バリアントを確認するには、製品または製品バリアントの ID を入力する必要があります。 この ID には、製品 ID、製品検索 ID、外部 ID、GTIN、またはバーコードがあります。 ID の入力後、またはバーコードのスキャン後、製品バリアントの分析コードがモバイル デバイスに表示されます。 
 
 次の表では、作業確認に使用できるさまざまな作業タイプを示します。
 
@@ -420,6 +419,5 @@ ms.lasthandoff: 10/16/2018
 
 [モバイル デバイス メニュー アイテムを設定して、受入アイテム (タスク ガイド) を登録する](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [在庫状態を使用する利点](../inventory/inventory-statuses.md)
-
 
 

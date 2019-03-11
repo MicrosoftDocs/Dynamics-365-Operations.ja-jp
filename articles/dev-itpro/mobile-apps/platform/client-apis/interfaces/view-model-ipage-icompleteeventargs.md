@@ -1,28 +1,27 @@
 ---
-title: "CompleteEventArgs タイプ"
-description: "CompleteEventArgs タイプ"
+title: CompleteEventArgs タイプ
+description: CompleteEventArgs タイプ
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: a16cc63d718abe769cfc99c18effdece85ef615b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369785"
 ---
-
 # <a name="completeeventargs-type"></a>CompleteEventArgs タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -58,7 +57,6 @@ navigation: [NavigationArgs](view-model-ipage-inavigationargs.md) (省略可)
 ### <a name="processed"></a>processed
 
 processed: boolean (省略可) 
-
 
 
 

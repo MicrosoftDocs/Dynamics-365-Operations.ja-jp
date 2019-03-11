@@ -1,13 +1,13 @@
 ---
-title: "独立系ソフトウェア ベンダー (ISV) ライセンス"
-description: "このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。"
+title: 独立系ソフトウェア ベンダー (ISV) ライセンス
+description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。
 author: robadawy
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
 ms.openlocfilehash: 6112bb81f4ccf140bf9c6da5871951c0e44ca2c0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369879"
 ---
-
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
 [!include [banner](../includes/banner.md)]
@@ -155,14 +154,14 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 
 
-3.  ライセンスをターゲット環境にインポートします。 **注記:** 運用システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。 詳細については、この記事の後半の「実稼働環境」セクションを参照してください。
+3.  ライセンスをターゲット環境にインポートします。 **注記:** 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。 詳細については、この記事の後半の「実稼働環境」セクションを参照してください。
 
     | パラメーター名                | 説明                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|
     | --setupmode importlicensefile | ライセンスが読み込まれることをセットアップ ツールに通知するには、このパラメーターを使用します。                             |
     | --metadatadir                 | メタデータ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。   |
     | --bindir                      | バイナリ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。   |
-    | --sqlserver                   | Microsoft SQL Server を指定するには、このパラメーターを使用します。 1 ボックス環境では、ピリオド (**.**) を使用します。 |
+    | --sqlserver                   | このパラメーターを使用して Microsoft SQL Server を指定します。 1 ボックス環境では、ピリオド (**.**) を使用します。 |
     | --sqluser                     | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **AOSUser** に渡す必要があります。                     |
     | --sqlpwd                      | SQL Server のパスワードを指定するには、このパラメーターを使用します。                                                 |
     | --licensefilename             | 読み込むライセンス ファイルを指定するには、このパラメーターを使用します。                                    |
@@ -225,7 +224,6 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     ただし、自己署名 ISV 証明書を使用していた場合、CA 証明書ではなくその証明書をインポートする必要があります。
 
         certutil -addstore root c:\temp\isvcert.cer
-
 
 
 

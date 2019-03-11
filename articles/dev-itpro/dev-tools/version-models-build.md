@@ -1,30 +1,29 @@
 ---
-title: "自動ビルドのモデル バージョンの更新"
-description: "このトピックでは、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。"
+title: 自動ビルドのモデル バージョンの更新
+description: このトピックでは、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。
 author: jorisdg
 manager: AnnBe
 ms.date: 05/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 26731
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 56bb21583635987cff1b7f9faa83b104622baa20
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368943"
 ---
-
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ LCS で、次の手順に従い、環境にインストールされているモ�
 コードが更新されると、環境に配置できる新しいパッケージを作成するためにビルドが使用されます。 Microsoft Azure DevOps は、前回のビルド以降に各ビルドに含まれた変更を追跡します。 ビルドのバージョン番号が生成されるモデルに含まれている場合、その番号によって、特定の環境で使用できるコードの変更の徹底した追跡可能性が提供されます。 ビルド番号を見つけてから、Azure DevOps でそのビルドに含まれている変更を確認することができます。 異なる分岐でビルドを使用する、または夜間ビルド、ゲート チェックイン ビルドまたは配置ビルド用の異なるビルド定義を使用する顧客およびパートナーについては、ビルドごとに異なるバージョン スキームを持つことができます。 この方法は、展開可能なパッケージのモデルメタデータを区別し、元のビルド定義に戻します。
 
 ## <a name="setting-up-versioning"></a>バージョン管理の設定
-プラットフォーム更新プログラム 6 または新しい配置により作成されるビルド定義については、モデルにビルド バージョンを含めるためのタスクが自動的に追加され有効になります。 Azure DevOps の新しいビルド定義の既定のビルド番号は、年、月、日、およびその日のビルドの増分番号で構成されます。 Azure DevOps のビルド番号、および使用できるオプションの詳細については、Microsoft Visual Studio ドキュメント サイトの [ビルド定義オプション](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) を参照してください。
+プラットフォーム更新プログラム 6 または新しい配置により作成されるビルド定義については、モデルにビルド バージョンを含めるためのタスクが自動的に追加され有効になります。 Azure DevOps の新しいビルド定義の既定のビルド番号は、年、月、日、およびその日のビルドの増分番号で構成されます。 Azure DevOps のビルド番号、および使用できるオプションの詳細については、Microsoft Visual Studio ドキュメント サイトの[ビルド定義オプション](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) を参照してください。
 
 自動ビルドは、構築されたモデルにビルド バージョン番号を適用します。
 
@@ -95,4 +94,3 @@ ISV または ISP レイヤーでソリューションを開発するサード �
 
 1. **変数**タブで、変数のリストの下部にある **+ 追加**をクリックします。 最初の列で、**名前**の変数に **ModelVersionExclusions** と入力します。
 1. 新しいタスクを保存するには、**保存**をクリックします。
-

@@ -1,13 +1,13 @@
 ---
-title: "耐用年数定額減価償却"
-description: "この記事は、耐用年数定額減価償却方法の概要を示します。"
+title: 耐用年数定額減価償却
+description: この記事は、耐用年数定額減価償却方法の概要を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b48cf3970379f8dd2ea529cd8a434c0bdc196a1e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb5715855c7e240cddf4fd264a4b26ca09a2f6c4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365687"
 ---
-
 # <a name="straight-line-service-life-depreciation"></a>耐用年数定額減価償却
 
 [!include [banner](../includes/banner.md)]
@@ -104,7 +103,6 @@ ms.lasthandoff: 11/03/2017
 | 年 6 | 残余 800\*                           | 1,800 – 800 = 1,000                   |
 
 \* 残余量は減価償却量を下回るため、残余量から救済量を差し引いた金額だけとなります。
-
 
 
 

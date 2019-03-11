@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER) コンフィギュレーションを作成する"
-description: "ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは電子申告ツールの使用によって国/地域別機能またはソリューション固有機能を実装する必要があります。"
+title: 電子申告 (ER) コンフィギュレーションを作成する
+description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは電子申告ツールの使用によって国/地域別機能またはソリューション固有機能を実装する必要があります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 13d0644ae4590803118e12038ae6d070cb678e73
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 4c65a2422519149e44357324c7fefdb45f1dc100
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369274"
 ---
-
 # <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションを作成する
 
 [!include [banner](../includes/banner.md)]
@@ -41,9 +40,9 @@ ms.lasthandoff: 08/09/2018
 - コンフィギュレーションはビジネス ユーザーが行うことができ、開発者は必要ありません。
 - データ モデルはビジネス用語で定義されています。
 - ビジュアル エディターは、GER コンフィギュレーションのすべてのコンポーネントの作成に使用されます。
-- Microsoft Excel のようなフォーミュラ言語はデータ変換に使用されます。
+- Microsoft Excel のような数式言語はデータ変換に使用されます。
 
-### <a name="one-configuration-for-multiple-microsoft-dynamics-365-for-finance-and-operations-releases"></a>Microsoft Dynamics 365 for Finance and Operations リリースの 1 つのコンフィギュレーション
+### <a name="one-configuration-for-multiple-microsoft-dynamics-365-for-finance-and-operations-releases"></a>複数の Microsoft Dynamics 365 for Finance and Operations リリースのための 1 つのコンフィギュレーション
 
 - ビジネス条項で定義される 1 つのドメイン固有のデータ モデルを管理します。
 - リリースに依存するデータ モデル マッピングで Finance and Operations のリリース仕様を分離します。
@@ -168,4 +167,3 @@ GER は、ユーザーが電子フォーマット構造を定義できるよう�
 [電子申告の概要](general-electronic-reporting.md)
 
 [電子申告コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
-

@@ -1,14 +1,14 @@
 ---
-title: "電子メール テンプレート"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent - Attract で作成および使用できる電子メール テンプレートについて説明します。"
+title: 電子メール テンプレート
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract で作成および使用できる電子メール テンプレートについて説明します。
 author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305201"
 ---
-
 # <a name="email-templates"></a>電子メール テンプレート
 [!include[banner](../includes/banner.md)]
 
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/04/2019
 
 カーボン コピー (Cc) 行に**採用者**または**採用担当マネージャー**などの役割を追加できます。 電子メールの送信時に、これらのロールは、職務のコンテキストに基づいて適切なユーザーに自動的に置き換えられます。
 
-件名行と本文コンテンツは、プレースホルダをサポートします。 **\#** を入力してプレースホルダを挿入でき、オート コンプリート ドロップダウン リストで適切なプレースホルダーを選択します。 使用可能なプレースホルダの一覧が、ページの右側に表示されます。 電子メールの送信時に、プレースホルダは、職務のコンテキストおよび受信者に基づいて自動的に置き換えられます。 たとえば、候補者に送信される電子メールに対するテンプレートには、プレースホルダ \#{候補者\_名前} が含まれます。 キャメロンという候補者に電子メールが送信される場合、そのプレースホルダはキャメロンの名前で置き換えられます。
+件名行と本文コンテンツは、プレースホルダをサポートします。 **\#** を入力してプレースホルダを挿入でき、オート コンプリート ドロップダウン リストで適切なプレースホルダーを選択します。 使用可能なプレースホルダの一覧が、ページの右側に表示されます。 電子メールの送信時に、プレースホルダは、職務のコンテキストおよび受信者に基づいて自動的に置き換えられます。 たとえば、候補者に送信される電子メールに対するテンプレートには、プレースホルダー\#{候補者\_名前}が含まれます。 キャメロンという候補者に電子メールが送信される場合、そのプレースホルダはキャメロンの名前で置き換えられます。
 
 本文コンテンツ エディターは、テキストのスタイルと形式を可能にするリッチ テキスト エディターです。 ハイパーリンクとアンカーを挿入することもできます。
 
@@ -81,4 +80,3 @@ ms.lasthandoff: 01/04/2019
 
 > [!NOTE] 
 > 自動的に送信される電子メールに対して、複数のテンプレートを作成できます。 ただし、1 つのテンプレートのみを有効なテンプレートとして設定できます。 このプロセスはイベントによってトリガーされるため、テンプレート ライブラリで**既定**および**自動送信**バッジの組み合わせに基づいて、管理者のみがどのテンプレートを使用するかを決定できます。
-

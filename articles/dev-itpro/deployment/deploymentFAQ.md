@@ -1,13 +1,13 @@
 ---
-title: "セルフサービス配置の FAQ"
-description: "このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。"
+title: セルフサービス配置の FAQ
+description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: aa3533a1ee22d5063db7e8bb66b03853056aa743
 ms.openlocfilehash: 3130b00a0e925cd50da433c0c3602e675f416bf1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369322"
 ---
-
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
 [!include[banner](../includes/banner.md)]
@@ -95,4 +94,3 @@ LCS を通じて環境で実行されるセルフサービス操作に関連す�
 ## <a name="i-dont-have-remote-desktop-access-to-my-sandbox-environment-and-the-critical-action-that-i-must-perform-isnt-listed-in-this-topic-how-do-i-get-help"></a>サンドボックス環境にリモート デスクトップ アクセスがなく、実行する必要がある重要なアクションがこのトピックに挙げられていません。 ヘルプを表示する方法を教えてください。
 
 重要なアクションのこのトピックの前方に掲載されていない場合、このトピックにコメントを追加するかドキュメンテーション バグを記録すると、Microsoft が要求に対応します。
-

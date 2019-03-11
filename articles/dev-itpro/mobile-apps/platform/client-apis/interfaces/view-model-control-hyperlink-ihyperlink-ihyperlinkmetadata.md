@@ -1,28 +1,27 @@
 ---
-title: "HyperLinkMetadata タイプ"
-description: "HyperLink メタデータ タイプ。"
+title: HyperLinkMetadata タイプ
+description: HyperLink メタデータ タイプ。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 687e3b74f127afb880c118348277381a9666ce94
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369898"
 ---
-
 # <a name="hyperlinkmetadata-type"></a>HyperLinkMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -197,6 +196,5 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 コントロール タイプを示す文字列。
 
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承
-
 
 

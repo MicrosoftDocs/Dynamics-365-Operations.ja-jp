@@ -1,13 +1,13 @@
 ---
-title: "X++ およびデバッガーの機能"
-description: "このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。 これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。"
+title: X++ およびデバッガーの機能
+description: このチュートリアルでは、開発者が X++ 言語の高度なコンストラクトを使用し、生産的なデバッガ機能を利用できるようにすることを目的としています。 これは、これらの機能を使用してプラクティスするための新しい機能のチュートリアルです。
 author: pvillads
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8b9b80b0e7d3d6b66f241e24e58dd9b91a55b975
 ms.openlocfilehash: 8706e9ea940c535271f01aabcee90f5f3a340c4d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369715"
 ---
-
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 
 [!include [banner](../includes/banner.md)]
@@ -612,7 +611,6 @@ Visual Studio デバッガーでは、条件付きブレークポイントと、
 ### <a name="the-immediate-window"></a>直接ウィンドウ
 
 直接ウィンドウは VS デバッガーの便利な機能で、ユーザーはいつでも評価するために式と明細書を入力できます。 この機能は現在、X++スタックには実装されていません。多くの言語、特に \# の場合と同様です。 ただし、それは精通したユーザーが直接ウィンドウから益を得られないという意味ではありません。 スニペットは X++ ではなく C\# で表す必要があることを示すだけです。 これがどのように大きな効果を発揮するかについての詳細を記述した、別のドキュメントがあります。
-
 
 
 

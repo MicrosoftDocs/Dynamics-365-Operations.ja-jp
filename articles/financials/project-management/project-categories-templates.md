@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations および Project Service Automation でプロジェクト経費カテゴリを同期させる"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Project Service Automation のプロジェクト経費カテゴリを同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
+title: Finance and Operations および Project Service Automation でプロジェクト経費カテゴリを同期させる
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Project Service Automation でプロジェクトの経費カテゴリを直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: c4d09fde2cf4335553243c136590f9f3135db97a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347839"
 ---
-
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Finance and Operations および Project Service Automation でプロジェクト経費カテゴリを同期させる
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Project Service Automation のプロジェクト経費カテゴリを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Project Service Automation でプロジェクトの経費カテゴリを直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 > [!NOTE]
 > - プロジェクト タスクの統合、経費トランザクションのカテゴリ、時間見積、経費見積、および機能ロックは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 で利用できます。
-> - 実績の統合は、Microsoft Dynamics 365 for Finance and Operations バージョン 8.01 以降で使用可能です。
+> - 実績の統合は、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0.1 以降で使用可能です。
 > - Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3.0 を使用している場合、KB 4132657 および KB 4132660 をインストールした後に、テンプレートを使用してプロジェクト タスクの統合、経費トランザクションのカテゴリ、時間見積、経費見積、実績、および機能ロックをコンフィギュレーションできます。 勘定配布をリセットする必要がある場合、KB 4131710 をインストールすることをお勧めします。
 
 ## <a name="data-flow-for-project-service-automation-and-finance-and-operations"></a>Project Service Automation および Finance and Operations のデータ フロー
@@ -125,4 +124,3 @@ Project Service Automation から同期する時に、Microsoft Power Query for 
 > マッピングは、Project Service Automation から Finance and Operations に同期するフィールド情報を表示します。
 
 [![テンプレートのマッピング](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)
-

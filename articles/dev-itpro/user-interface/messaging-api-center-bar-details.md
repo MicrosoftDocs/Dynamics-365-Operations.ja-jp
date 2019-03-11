@@ -1,13 +1,13 @@
 ---
-title: "メッセージ センター、メッセージ バー、およびメッセージ詳細 API"
-description: "このトピックでは、メッセージング システムについて説明します。"
+title: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
+description: このトピックでは、メッセージング システムについて説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8aad85a7d7a11a035faf2d6f43073e0b3717b6dc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 752bf07b13e4a04d54674f2c0b063f466ad0d04a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369228"
 ---
-
 # <a name="message-center-message-bar-and-message-details-api"></a>メッセージ センター、メッセージ バー、およびメッセージ詳細 API
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/20/2018
 <a name="message-api"></a>メッセージ API
 -----------
 
-Microsoft Dynamics AX 2012 には、**info()**、**warning()**、および **error()** に対する最も多い呼び出しの一覧を表示する「1 つのサイズですべてをまかなう」汎用的なウィンドウがあります。 このウィンドウは、適切かつ一般的には「情報ログ」または「Infolog」と略して呼ばれていました。 情報ログは場合によっては役に立つツールでしたが、「one size fits all」アプローチは重要度を区別し、ユーザーが中断すべきか否かを決定する必要性において効果がないとみなされました。 新しいメッセージング システムでは、エクスペリエンスが向上します。 このより豊かで強力なメッセージング システムには、次の機能が含まれています。
+Microsoft Dynamics AX 2012 には、**info()**、**warning()**、および **error()** に対する最も多い呼び出しの一覧を表示する "1 つのサイズですべてをまかなう" 汎用的なウィンドウがあります。 このウィンドウは、適切かつ一般的には「情報ログ」または「Infolog」と略して呼ばれていました。 情報ログは場合によっては役に立つツールでしたが、「one size fits all」アプローチは重要度を区別し、ユーザーが中断すべきか否かを決定する必要性において効果がないとみなされました。 新しいメッセージング システムでは、エクスペリエンスが向上します。 このより豊かで強力なメッセージング システムには、次の機能が含まれています。
 
 -   コンテキストのあるメッセージの関連性が強化されました (フォームとグローバル)。
 -   中断のレベル (なし、軽微、および中断) を強化しました。
@@ -48,7 +47,7 @@ Microsoft Dynamics AX 2012 には、**info()**、**warning()**、および **err
 **info()**、**warning()**/**checkfailed()**、または **error()** が非同期プロセス (たとえば、バッチ) から呼び出された場合、考慮するフォーム コンテキストはなく、メッセージはメッセージ センターに送信されます。 (メッセージ センターを開くには、ナビゲーション バーのフラグ アイコンをクリックします。) [![2\_API](./media/2_api.png)](./media/2_api.png)
 
 ## <a name="legacy-api-support-setprefix"></a>旧 API サポート: SetPrefix()
-このバージョンは **SetPrefix()** API もサポートしています。 これは、まだ下位互換性を維持しています。 ただし、Microsoft Dynamics 365 for Finance and Operations で、**SetPrefix()** の結果は積極的にユーザーを中断しません。 代わりに、結果は収集され、(以前のバージョンのように) 保存されて、メッセージ バーまたはメッセージ センターの通知がユーザーに表示されます。 この通知は、関連するタスクが完了し、ユーザーが確認する必要のあるメッセージがある可能性があることを示します。 「結果の通知」メッセージは、実際にはタスクによる **SetPrefix()** の最初の呼び出しを使ってメッセージをフレーム化します。 この動作は、最初の呼び出しが結果の「タイトル」であった以前のバージョンの動作に類似しています。 この例では、「転記結果」が **SetPrefix()** へのアプリケーションの最初の呼び出しから取得します。[![3\_API](./media/3_api.png)](./media/3_api.png) ユーザーは**メッセージの詳細**をクリックして新しい**メッセージの詳細**ウィンドウを開きます。 [![4\_API](./media/4_api.png)](./media/4_api.png)
+このバージョンは **SetPrefix()** API もサポートしています。 これは、まだ下位互換性を維持しています。 ただし、Microsoft Dynamics 365 for Finance and Operations では、**SetPrefix()** の結果は、積極的にユーザーを中断しません。 代わりに、結果は収集され、(以前のバージョンのように) 保存されて、メッセージ バーまたはメッセージ センターの通知がユーザーに表示されます。 この通知は、関連するタスクが完了し、ユーザーが確認する必要のあるメッセージがある可能性があることを示します。 「結果の通知」メッセージは、実際にはタスクによる **SetPrefix()** の最初の呼び出しを使ってメッセージをフレーム化します。 この動作は、最初の呼び出しが結果の「タイトル」であった以前のバージョンの動作に類似しています。 この例では、「転記結果」が **SetPrefix()** へのアプリケーションの最初の呼び出しから取得します。[![3\_API](./media/3_api.png)](./media/3_api.png) ユーザーは**メッセージの詳細**をクリックして新しい**メッセージの詳細**ウィンドウを開きます。 [![4\_API](./media/4_api.png)](./media/4_api.png)
 
 | メッセージ タイプ | 説明                                                                                                                                                                                                                                                                                                                                  |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,7 +70,6 @@ Microsoft Dynamics AX 2012 には、**info()**、**warning()**、および **err
 --------
 
 [ユーザー インターフェイス開発ホーム ページ](user-interface-development-home-page.md)
-
 
 
 

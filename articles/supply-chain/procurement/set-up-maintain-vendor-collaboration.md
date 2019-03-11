@@ -1,13 +1,13 @@
 ---
-title: "仕入先コラボレーションの設定と管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations においてベンダー コラボレーションをセットアップする方法について説明します。 また、新しい仕入先コラボレーション ユーザーのプロビジョニング方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。"
+title: 仕入先コラボレーションの設定と管理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを設定する方法について説明します。 また、新しい仕入先コラボレーション ユーザーのプロビジョニング方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 audience: IT Pro
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 23a83fdca0996c83a3ffea605b8da5073ca8dfc1
 ms.openlocfilehash: a1d0ec4c5aa5a3abf9ab6c38107b90b61c69c588
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369927"
 ---
-
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
 [!include [banner](../includes/banner.md)]
 
 仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する限られた情報を外部仕入先ユーザーに公開します。 このインターフェイスから、仕入先も見積依頼 (RFQ) に返信でき、会社の基本情報を表示および編集できます。
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations においてベンダー コラボレーションをセットアップする方法について説明します。 また、新しい仕入先コラボレーション ユーザーをプロビジョニングするワークフローの設定方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを設定する方法について説明します。 また、新しい仕入先コラボレーション ユーザーをプロビジョニングするワークフローの設定方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。
 
 > [!NOTE]
 > 仕入先コラボレーションのセキュリティ ロールの設定に関する情報は、Finance and Operations の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX 7.0 (2016 年 2 月) および Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) で、**仕入先ポータル** モジュールを使用して仕入先との共同作業を行います。 Microsoft Dynamics AX で仕入先ポータルのユーザーのアクセス許可の詳細については、[仕入先ポータルのユーザー セキュリティ](configure-security-vendor-portal-users.md) を参照してください。
@@ -119,7 +118,7 @@ Finance and Operations で提供されている **仕入先見込顧客 (外部)
 #### <a name="branch-to-provision-new-users"></a>新しいユーザーをプロビジョニングするための分岐
 
 1. 新しいユーザーに仕入先コラボレーション情報へのアクセスを許可することを承諾する担当者に、承認タスクを割り当てます。
-2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信**タスクを使用します。 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 以降のバージョンでは、B2B ユーザーを自動的に Azure AD にエクスポートすることができます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング** を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md) を参照してください。
+2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信**タスクを使用します。 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 以降のバージョンでは、B2B ユーザーを自動的に Azure AD にエクスポートすることができます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング**を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 3. 承認タスクを Azure にアップロードするユーザーに割り当てます。 勘定が正常に作成されていない場合、このユーザーはタスクを却下し、ワークフローを終了します。 この承認タスクは、B2B アプリケーション プログラミング インターフェイス (API) を使用して Azure に新しいユーザー アカウントを自動的にエクスポートするステップを含めるとスキップできます。
 4. Finance and Operations で新しいユーザーをプロビジョニングする自動化タスクを追加します。 この手順では、事前に定義された**ユーザーの自動プロビジョニング**タスクを使用します。
 5. 新しいユーザーに通知するタスクを追加します。 Finance and Operations の URL を含むようこそ電子メールを新しいユーザーに送信する可能性があります。 このメールでは、**電子メール メッセージ**ページで作成したテンプレートを使用して、**ユーザー ワークフロー パラメーター**ページを選択できます。 テンプレートには、**%portal URL%** タグを含めることができます。 ようこそ電子メールが生成されると、このタグは Finance and Operations のテナントの URL に置き換わります。
@@ -156,11 +155,10 @@ Finance and Operations で提供されている **仕入先見込顧客 (外部)
 
 新しいベンダー コラボレーション ユーザーの電子メール アドレスが、テナントとして Azure に登録されているドメインに属している場合 (つまり、管理対象ドメイン アカウントの場合)、電子メール アドレスは既存の Azure AD アカウントである必要があります。 それ以外の場合、プロビジョニング プロセスを実行することはできません。
 
-Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信**タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/) を参照してください
+Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信**タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/) を参照してください。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [外部仕入先との作業のために仕入先コラボレーションを使用する](vendor-collaboration-work-external-vendors.md)
 
 仕入先のオンボーディング プロセスの簡単なビデオ[新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)をご覧ください。
-

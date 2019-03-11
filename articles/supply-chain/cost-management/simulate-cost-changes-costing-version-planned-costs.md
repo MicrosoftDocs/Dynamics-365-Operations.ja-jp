@@ -1,13 +1,13 @@
 ---
-title: "予定原価に対する原価バージョンを使用した原価変更のシミュレーション"
-description: "この記事では、製造品目の算出原価に対する原価変更の影響を、予定原価の個別の原価バージョンを使用してシミュレーションする方法を説明します。"
+title: 予定原価に対する原価バージョンを使用した原価変更のシミュレーション
+description: この記事では、製造品目の算出原価に対する原価変更の影響を、予定原価の個別の原価バージョンを使用してシミュレーションする方法を説明します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318882"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>予定原価に対する原価バージョンを使用した原価変更のシミュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ ms.lasthandoff: 11/03/2017
 -   間接原価計算式における原価変更をシミュレーションします。 たとえば、原価変更は、製造諸経費に予想される上昇または下落を反映する場合があります。 間接原価計算式での変更を定義するには、**原価計算表設定**ページを使用して、シミュレーション原価バージョン内の保留中原価レコードを入力し、変更を検証して保存します。
 
 シミュレーション原価変更を入力した後、原価変更の影響を受ける製造品目の原価を計算します。 シミュレーション原価バージョンの**計算**ページを使用して、原価変更の影響を受ける製造品目を選択して指定します。 特定の品目を選択しない限り、BOM 計算はすべての製造品目に適用されます。 代わりに、使用場所更新の BOM 計算オプションを使用することもできます。 シミュレーション原価バージョン内の品目原価レコードを調べて、シミュレーション原価変更による選択した製造品目の原価への影響を分析します。 **品目価格**ページおよび**品目原価の計算**ページを使用して、原価を表示または分析します。
-
 
 
 

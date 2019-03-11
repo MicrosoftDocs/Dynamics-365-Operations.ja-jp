@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations ソリューションのステージおよび公開"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージのマーケティング コンテンツを Microsoft Cloud Partner Portal にアップロードする方法、およびソリューションを準備して発行する方法について説明します。"
+title: Finance and Operations ソリューションのステージおよび公開
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージのマーケティング コンテンツを Microsoft Cloud Partner Portal にアップロードする方法、およびソリューションを準備して発行する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
@@ -15,14 +15,13 @@ ms.custom: 196873
 ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d
 ms.search.region: Global
 ms.author: omarc
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 49d0c4265baf51345975f433999fc5092c749960
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368298"
 ---
-
 # <a name="stage-and-publish-finance-and-operations-solutions"></a>Finance and Operations ソリューションのステージおよび公開
 
 [!include [banner](../includes/banner.md)]
@@ -43,8 +42,7 @@ Cloud Partner Portal から新しい提案を作成して公開する手順に�
 
 [![公開方法](./media/CPP_HowtoPublish.png)](./media/CPP_HowtoPublish.png)
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
-

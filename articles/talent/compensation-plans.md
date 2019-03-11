@@ -1,13 +1,13 @@
 ---
-title: "報酬プラン"
-description: "報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。"
+title: 報酬プラン
+description: 報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: e80b3ebc9c374073ff5a2dfc8c2acf1d7f6c6287
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 86070204769b866b947405436437eb0eb746de11
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305139"
 ---
-
 # <a name="compensation-plans"></a>報酬プラン
 
 [!include [banner](includes/banner.md)]
@@ -65,7 +64,7 @@ ms.lasthandoff: 04/13/2018
 </tr>
 <tr class="odd">
 <td>給与レンジ到達割合マトリックス</td>
-<td>給与レンジ到達割合マトリックスでは、従業員を標準職務給に移行させることができます。 給与レンジ到達割合を使用して、従業員ごとの業績や会社全体の業績に関係のない、社内の支払レートのエクイティ (同一価値労働同一賃金原則) を管理することもできます。 たとえば、給与レンジの低い従業員は、給与レンジの高い従業員よりも高い昇給率が割り当てられます。 これにより、体系的に資本の差額を相殺できます。 給与レンジ到達割合は、"固定支払レート - 範囲の最低額 / 範囲の最高額 - 範囲の最低額" として計算されます。</td>
+<td>給与レンジ到達割合マトリックスでは、従業員を標準職務給に移行させることができます。 給与レンジ到達割合を使用して、各従業員の業績や会社全体の業績に関係のない、社内の支払レートの株式資本を管理することもできます。 たとえば、給与レンジの低い従業員は、給与レンジの高い従業員よりも高い昇給率が割り当てられます。 これにより、体系的に資本の差額を相殺できます。 給与レンジ到達割合は、"固定支払レート - 範囲の最低額 / 範囲の最高額 - 範囲の最低額" として計算されます。</td>
 </tr>
 <tr class="even">
 <td>基準点設定</td>
@@ -132,7 +131,6 @@ ms.lasthandoff: 04/13/2018
 
 ## <a name="recommendations"></a>推奨事項
 プロセス イベントを実行した後、プロセス イベントの計算された規定に基づいて従業員の昇給または報奨の金額の調整を認定できます。 従業員の認定を行うには、報酬プランの設定時またはプロセス イベントの設定時に認定を有効にする必要があります。
-
 
 
 

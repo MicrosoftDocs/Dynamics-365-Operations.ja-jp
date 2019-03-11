@@ -1,13 +1,13 @@
 ---
-title: "ワークスペースのタイルおよびリストのキャッシュ"
-description: "ワークスペースが正常に機能し、応答可能である (つまり、ワークスペースに表示されるデータが期待どおりに更新され、最新の状態である) ことが重要です。 このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワークのサポートについて説明します。"
+title: ワークスペースのタイルおよびリストのキャッシュ
+description: ワークスペースが正常に機能し、応答可能である (つまり、ワークスペースに表示されるデータが期待どおりに更新され、最新の状態である) ことが重要です。 このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワークのサポートについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4569a016ebea7ac87d68ee0fb398d06aa09c3272
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5a3ef84fb800fa4a3e5292ae7ad0f72bd5321f4f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369663"
 ---
-
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 
 [!include [banner](../includes/banner.md)]
@@ -169,7 +168,6 @@ ms.lasthandoff: 04/20/2018
     -   **インデックスがありません:** WHERE 条件を分析して、選択したインデックスが存在するかどうかを確認します。
     -   **同じテーブル/行の多数の処理:** 特に結合するときは、繰り返しをしないでください。 同じテーブル/行を処理する必要がある回数を最小化します。 結果セットの一部であるはずのテーブルがあり、結果セットを絞り込むために使用されていない場合は、(特にユニオン クエリーでは) それらを可能な限り遠くに移動します。
 -   **データの量をテスト。** クエリの問題を特定するには、常にボリューム データに対して実行します。
-
 
 
 

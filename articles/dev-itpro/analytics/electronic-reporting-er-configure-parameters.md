@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER) フレームワークの構成"
-description: "このトピックでは、電子レポート (ER) フレームワークのパラメーターを構成する方法について説明します。"
+title: 電子申告 (ER) フレームワークの構成
+description: このトピックでは、電子レポート (ER) フレームワークのパラメーターを構成する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 32d0b0c955212fce9260e8675c87aaf494aaf85c
 ms.openlocfilehash: 839bc9843cc4e339c3980ad0768389e08b62c8b8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/06/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369265"
 ---
-
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ ER を設定する前に、ドキュメント管理で必要なドキュメン�
 |----------------|-------------------------------------|
 | クラス          | **ファイルの添付**                     |
 | グループ化          | **ファイル**                            |
-| 保管場所       | **Azure ストレージ**または **SharePoint** |
+| 保管場所       | **Azure Storage** もしくは **SharePoint** |
 
 ## <a name="set-up-er"></a>ER の設定
 すべての法人に対して ER の基本機能を設定するには、次の手順を使用します。
@@ -81,4 +80,3 @@ ER を設定する前に、ドキュメント管理で必要なドキュメン�
 
 - [電子申告の概要](general-electronic-reporting.md)
 - [電子申告の送信先](electronic-reporting-destinations.md)
-

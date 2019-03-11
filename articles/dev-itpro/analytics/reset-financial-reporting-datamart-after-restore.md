@@ -1,13 +1,13 @@
 ---
-title: "財務報告のデータ マートのリセット"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations を復元した後に、財務報告データ マートをリセットする方法について説明します。"
+title: 財務報告のデータ マートのリセット
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務報告データ マートをリセットする方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 02/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
 ms.reviewer: shylaw
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 49aa58e90ab8dd03a20889d05c74ba4c589856e8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368785"
 ---
-
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations の次のバージョンの財務報告データ マートをリセットする方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations の次のバージョンの財務報告データ マートをリセットする方法について説明します:
 
 - 財務報告 7.2.6.0 以降のリリース
 - 財務報告 7.0.10000.4 以降のリリース
-- Microsoft Dynamics 365 for Finance and Operations (オンプレミス)
+- Microsoft Dynamics 365 for Finance and Operations (設置型)
 
 Finance and Operations の財務報告リリース 7.2.6.0 を取得するには、<https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514> から KB 4052514 をダウンロードします。
 
@@ -78,7 +77,7 @@ Finance and Operations 財務諸表 7.2.6.0 以前のリリースでデータ �
 
 [![Rデータ マートのチェックボックスをリセットします](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
-### <a name="reset-the-data-mart-and-select-a-reason-in-microsoft-dynamics-365-for-finance-and-operations-financial-reporting-release-730"></a>Microsoft Dynamics 365 for Finance and Operations Financial reporting 7.3.0 のリリースで、データ マートをリセットし、理由を選択してください。
+### <a name="reset-the-data-mart-and-select-a-reason-in-microsoft-dynamics-365-for-finance-and-operations-financial-reporting-release-730"></a>Microsoft Dynamics 365 for Finance and Operations Finance and Operations 財務諸表 7.3.0 のリリースで、データ マートをリセットし、理由を選択します。
 
 データ マートのリセットが必要であると判断した場合は、**データ マートのリセット** チェック ボックスを選択し、**理由** フィールドで理由を選択します。  次のオプションを使用できます。
 
@@ -130,7 +129,7 @@ Finance and Operations データベースをバックアップから復元した
 5. ファイル名を入力し、エクスポートされたレポート定義を保存できる安全な場所を選択します。
 6. **保存** を選択します。
 
-ファイルを安全な場所にコピーまたはアップロードできます。 これにより、ファイルは後に異なった環境にもインポートできます。 Microsoft Azure ストレージ アカウントの使用方法に関する情報は、[AzCopy Command-Line Utility でデータを転送する](/azure/storage/storage-use-azcopy) を参照してください。
+ファイルを安全な場所にコピーまたはアップロードできます。 これにより、ファイルは後に異なった環境にもインポートできます。 Microsoft Azure ストレージ アカウントの使用方法に関する情報は、「[AzCopy Command-Line Utility でデータを転送する](/azure/storage/storage-use-azcopy)」を参照してください。
 
 > [!NOTE]
 > Microsoft は、Finance and Operations の契約の一部としてストレージ アカウントを提供しません。 ストレージ アカウントを購入するか、別の Azure サブスクリプションからストレージ アカウントを使用する必要があります。
@@ -140,10 +139,10 @@ Finance and Operations データベースをバックアップから復元した
 
 ### <a name="stop-services"></a>サービスの停止
 
-次のMicrosoft Windows サービスは、Finance and Operations データベースへの接続が提供されます。 したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。
+次の Microsoft Windows サービスでは、Finance and Operations のデータベースへの接続が提供されます。 したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。
 
 - ワールド ワイド ウェブ公開サービス (すべての Application Object Server [AOS] コンピュータ上)
-- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
 - Management Reporter 2012 のプロセス サービス (ビジネス インテリジェンス [BI] コンピューターのみ)
 
 ### <a name="reset"></a>リセット
@@ -192,7 +191,7 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
 services.msc を使用して、以前に停止したサービスを再起動します。
 
 - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
 - Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
 #### <a name="import-report-definitions"></a>レポート定義のインポート
@@ -551,4 +550,3 @@ services.msc を使用して、以前に停止したサービスを再起動し�
     ```
 
     すべての行の **LastRunTime** 値、およびその **StateType** が **5** に設定されていることを確認してください。 **5** の **StateType** 値はデータが正常に再読み込みされたことを示します。 **7** の値はエラー状態を示します。 組織階層マップは、初めて実行される時にこの状態になることがあります。 ただし、エラー状態は自動的に解決されます。
-

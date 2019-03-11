@@ -1,13 +1,13 @@
 ---
-title: "ダイアログ削除のフォーム パターン"
-description: "このトピックでは、ドロップ ダイアログ フォームのパターンについて説明します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。"
+title: ダイアログ削除のフォーム パターン
+description: このトピックでは、ドロップ ダイアログ フォームのパターンについて説明します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 10/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 6db29d422e7dfd7b2481b4fcbc404278e37511d1
 ms.openlocfilehash: aefdc81b44c3bc2f0e07169b2689a601a164d84c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368811"
 ---
-
 # <a name="drop-dialog-form-pattern"></a>ダイアログ削除のフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -152,4 +151,3 @@ Form: **CustCollectionsNewActivityAction** (**売掛金勘定** &gt; **共通** 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![DropDialog(4)](./media/dropdialog4.png)](./media/dropdialog4.png)
-

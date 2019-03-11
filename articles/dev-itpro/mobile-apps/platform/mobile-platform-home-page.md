@@ -1,30 +1,29 @@
 ---
-title: "モバイル プラットフォームのホーム ページ"
-description: "モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。"
+title: モバイル プラットフォームのホーム ページ
+description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
 ms.date: 08/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: d6a281e2baa1b96e570850ea946669d3b2a90fb7
 ms.openlocfilehash: 86d3b62473b05cea7cff9a04ef00a6fc5b739942
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369780"
 ---
-
 # <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
 
 [!include [banner](../../includes/banner.md)]
@@ -88,7 +87,7 @@ ms.lasthandoff: 09/12/2018
 
 ### <a name="debugging-the-client-side"></a>クライアント側のデバッグ 
 
-#### <a name="prerequisites"></a>前提条件
+#### <a name="prerequisites"></a>必要条件
 - Android デバイスに加えて PC
 - Azure でホストされた開発マシン (モバイル デバイスで指定できます)
 
@@ -98,15 +97,15 @@ ms.lasthandoff: 09/12/2018
 2. Android デバイスで Unified Operations アプリの Android デバッグ apk をインストールします。
     - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ**の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう**未知のソース**を確認します。
     - Unified Operations アプリケーションのアンインストール - Unified Operations アプリケーションの以前のバージョンがアンインストールされていることを確認します。
-    - デバイスのブラウザーから apk ファイルをダウンロードして、[Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または [ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
+    - デバイスのブラウザーから apk ファイルをダウンロードして、「[Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk)」に移動し、**ダウンロード** (または「[ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)」) をクリックします。
     - Unified Operations apk ファイルをインストール - apk ファイル経由で Unified Operations アプリのインストールを確認します。
     - デバイスのデバッグ Unified Operations アプリケーションを実行し、サインインします。
 
 3. デバッグ マシンからデバイスに接続します。
 
-    - Azure でホストされた開発マシンまたは別の PC で、[リモート デバッグ Android デバイスで開始](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) する Android 開発者指示に従います。 また、[Android 用 Chrome のリモート デバッグ](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging) を検索することにより、YouTube 上で多様な説明ビデオを見つけることができます。 
+    - Azure でホストされた開発マシンまたは別の PC で、「[リモート デバッグ Android デバイスで開始](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)」する Android 開発者指示に従います。 また、「[Android 用 Chrome のリモート デバッグ](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging)」を検索することにより、YouTube 上で多様な説明ビデオを見つけることができます。 
     
-4. デバッガーに接続した後は、デバイスの有効タブを見つけます。 Android で **その他のタブを表示** をクリックすることが必要な場合があります。 タブのいずれかは、`/www.index.html#/app/appList`または`/www.index.html#/app/app_landing`のようになります。 
+4. デバッガーに接続した後は、デバイスの有効タブを見つけます。 Android で**その他のタブを表示**をクリックすることが必要な場合があります。 タブのいずれかは、`/www.index.html#/app/appList`または`/www.index.html#/app/app_landing`のようになります。 
 
     **ファイル** > (ドメインなし) > **ExpenseMobile.js** などのワークスペース JavaScript を表示するには、ノードを展開します。 JavaScript ファイルをクリックして表示し、ブレークポイントを追加します。
     
@@ -154,12 +153,11 @@ ADFS がドメインで使用されており、環境がオンプレミスであ
 ## <a name="troubleshooting"></a>トラブルシューティング
 ### <a name="the-mobile-client-app-is-not-working-correctly-on-particular-devices"></a>特定のデバイスでモバイル クライアント アプリケーションが正常に動作しない
 統合工程アプリケーションに関連付けられているキャッシュが破損しているか、古い形式なったため、クリアする必要がある場合があります。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
-アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Dynamics 365 Unified Operations** に移動し、**アプリの削除** をクリックしてアプリを完全にアンインストールしてください。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
+アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Dynamics 365 Unified Operations** に移動し、**アプリの削除**をクリックしてアプリを完全にアンインストールしてください。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
 
 ### <a name="i-cant-figure-out-how-to-build-or-change-something-in-my-mobile-client-content"></a>モバイル クライアント コンテンツをビルドまたは変更する方法がわかりません
 多くのリソースを活用して、モバイル クライアントのコンテンツをビルドまたは変更する方法を理解できます。
 - Dynamics 365 for Finance and Operations ヘルプ システムに用意されているドキュメントを確認します。
 - 例については、[フリート管理のサンプル](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)を確認してください。
 - たとえば、経費管理ワークスペース、および他の標準ワークスペースを発行して確認します。 USSI 企業のデモ データは、経費管理ワークスペースを使用する場合に便利です。 経費管理ワークスペースを構成するフォームおよび X++ コードは、接頭語 "ExpenseMobile" を検索してアプリケーション エクスプローラーで見つけることができます。
-- 答えを検索し、必要に応じて質問することにより、[Finance and Operations (AX) の Dynamics コミュニティ フォーラム](https://community.dynamics.com/ax/f/33)を活用してください。
-
+- 答えを検索し、必要に応じて質問することにより、「[Finance and Operations (AX) の Dynamics コミュニティ フォーラム (AX)](https://community.dynamics.com/ax/f/33)」を活用してください。

@@ -1,13 +1,13 @@
---- 
-title: "特別償却の設定"
-description: "この手順では、特別減価償却費を作成する方法およびそれを固定資産帳簿に関連付ける方法を説明します。"
+---
+title: 特別償却の設定
+description: この手順では、特別減価償却費を作成する方法およびそれを固定資産帳簿に関連付ける方法を説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6bbd6b78d05fcc9d95f6e6409db2619a210ad760
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e6ebb13084626b477b6e0b24acdc09e2c0d3d6d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339214"
 ---
 # <a name="set-up-bonus-depreciation"></a>特別償却の設定
 
@@ -48,5 +48,4 @@ ms.lasthandoff: 09/29/2017
 7. [特別減価償却費] フィールドで、値を入力または選択します。
     * 割合または金額の既定値は特別減価償却費の設定によって決まります。  
 8. [優先順位] フィールドに数値を入力します。
-
 

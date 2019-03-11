@@ -1,13 +1,13 @@
 ---
-title: "職務のコンポーネントの設定"
-description: "このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。"
+title: 職務のコンポーネントの設定
+description: このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 audience: Application User
 ms.author: rschloma
@@ -18,19 +18,17 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377162"
 ---
-
 # <a name="set-up-the-components-of-a-job"></a>職務のコンポーネントの設定
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。 
 
@@ -75,7 +73,7 @@ ms.lasthandoff: 08/09/2018
 <td>販売マネージャー</td>
 <td><ul>
 <li><strong>実績の確認</strong> – 各販売担当者の業績を確認します。</li>
-<li><strong>ABS 確認</strong> – 各販売担当者の登録または休暇要求を承認または否認します。</li>
+<li><strong>ABS 確認</strong> – 各販売担当者の登録または休暇要求を承認または却下します。</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -92,4 +90,3 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="steps-for-creating-a-job"></a>ジョブを作成する手順
 新しいジョブを作成するためのステップ バイ ステップの手順については次のトピック [新しいジョブの定義](../fin-and-ops/hr/tasks/define-new-jobs.md) を参照してください。 
-

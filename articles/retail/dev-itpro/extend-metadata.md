@@ -1,13 +1,13 @@
 ---
-title: "既定の Retail Server メタデータ コントローラーの拡張"
-description: "この記事では、CommerceModelFactory クラスを拡張するコードを説明します。"
+title: 既定の Retail Server メタデータ コントローラーの拡張
+description: この記事では、CommerceModelFactory クラスを拡張するコードを説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 13436f9705f03a34992bbfd1cbb129a54a2f0621
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368637"
 ---
-
 # <a name="extend-the-default-retail-server-metadata-controller"></a>既定の Retail Server メタデータ コントローラーの拡張
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,6 @@ OData を Microsoft Dynamics 365 for Retail と共に使用するとき、メタ
             }
         }
     }
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "ルックアップ コントロール"
-description: "この記事では、コントロールの検索動作を有効にする方法について説明します。 また、複数選択ルックアップを作成する方法について説明し、現在サポートされていないルックアップ シナリオの概要について説明します。"
+title: ルックアップ コントロール
+description: この記事では、コントロールの検索動作を有効にする方法について説明します。 また、複数選択ルックアップを作成する方法について説明し、現在サポートされていないルックアップ シナリオの概要について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 940ac764d70a224721a4c29f4dfc76a68a8712e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f20840c4a780d230f306c88f6a1b9e54588478c1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368372"
 ---
-
 # <a name="lookup-controls"></a>ルックアップ コントロール
 
 [!include [banner](../includes/banner.md)]
@@ -105,7 +104,6 @@ public void lookup() { Args args = new Args(formStr(<formName>)); args.caller(el
 ### <a name="creating-a-slider-dialog-instead-of-a-lookup-form-when-the-lookup-button-is-used"></a>ルックアップ ボタンを使用する際のスライダーのダイアログ (ルックアップ フォームの代わりに) を作成しています
 
 ルックアップ ボタンを使用すると、ルックアップ コントロールによってルックアップ フォームを開く必要があります (スライダー ダイアログまたはその他の種類のフォームではありません)。  これの第 1 の理由は、製品の整合性を保つことです。 2 番目の重要な理由は、ルックアップからスライダー ダイアログを開くことは、ルックアップの新しい先行入力機能と互換性がないことです。
-
 
 
 

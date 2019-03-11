@@ -1,13 +1,13 @@
 ---
-title: "小売オンライン ストア発行アーキテクチャ"
-description: "このトピックには、Retail モジュールから Microsoft SharePoint 2013 製品内のオンライン ストアにチャンネルおよびカタログを公開する方法を開発者およびシステム管理者が理解するための概念的情報が含まれています。 発行プロセスを理解することで、小売オンライン ストアの開発、管理、トラブルシューティングに役立ちます。"
+title: 小売オンライン ストア発行アーキテクチャ
+description: このトピックには、Retail モジュールから Microsoft SharePoint 2013 製品内のオンライン ストアにチャンネルおよびカタログを公開する方法を開発者およびシステム管理者が理解するための概念的情報が含まれています。 発行プロセスを理解することで、小売オンライン ストアの開発、管理、トラブルシューティングに役立ちます。
 author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 17502c50d3b95be1ae454afdeafb2c003609b51a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 528ab71e68604e122bfd4b97fbff8f57aa92bd88
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368725"
 ---
-
 # <a name="retail-online-store-publishing-architecture"></a>小売オンライン ストア発行アーキテクチャ
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/20/2018
 <a name="publish-a-retail-online-store-channel"></a>Retail オンライン ストア チャネルを発行
 -------------------------------------
 
-小売オンライン店舗チャネルを公開するとき、Microsoft Dynamics 365 for Retail と Microsoft SharePoint 間でオンライン ストアの基本構造をレプリケートします。 **小売** モジュールのオンライン ストア チャンネルの基本構造を作成します。 オンライン ストア チャネルを公開する前に、以下の設定タスクを実行する必要があります。
+小売オンライン店舗チャネルを公開するとき、Microsoft Dynamics 365 for Retail と SharePoint 間でオンライン ストアの基本構造をレプリケートします。 **小売** モジュールのオンライン ストア チャンネルの基本構造を作成します。 オンライン ストア チャネルを公開する前に、以下の設定タスクを実行する必要があります。
 
 1.  組織階層にオンライン ストアを追加します。
 2.  オンライン ストアを作成し、プロパティをコンフィギュレーションします。
@@ -65,7 +64,6 @@ ms.lasthandoff: 04/20/2018
 4.  システムは、リスティングに新しい属性が追加されたかどうかを判断します。 新しい属性が追加された場合 (例えば、一覧表示「赤いジーンズ」には、**テクスチャ**という名前の新しい属性が含まれ、この属性がチャンネル レベルで**組み込まれている**とマークされている場合)、システムではカスタム サイト内の列が作成されます。 また、リスト アイテムの新しいルールが作成され、「赤いジーンズ」リストの新しい行が作成され、SharePoint でプロセスが完了します。
 5.  CRT では、一覧の公開状況を記録します。
 6.  Async Server は、一覧の公開ステータスを他のすべての公開ステータスと同期します。 状態は、**公開済** または **エラー** のいずれかになります。
-
 
 
 

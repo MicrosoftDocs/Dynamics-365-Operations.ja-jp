@@ -1,31 +1,30 @@
 ---
-title: "定期売買販売価格"
-description: "定期売買を作成すると、販売価格 (定期売買) フォームで作成した販売価格設定から販売価格が派生します。"
+title: 定期売買販売価格
+description: 定期売買を作成すると、販売価格 (定期売買) フォームで作成した販売価格設定から販売価格が派生します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASalespriceSubscription
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5e18690f7e9b790ecbd0ac0de1955fc95ab1f082
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9d462121915ce3f800581a9540dc1ef8f6e785f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "352163"
 ---
-
 # <a name="subscription-sales-prices"></a>定期売買販売価格   
 
 [!include [banner](../includes/banner.md)]
@@ -379,6 +378,5 @@ ms.lasthandoff: 05/08/2018
 [定期売買販売価格の更新および指数化](update-and-index-subscription-sales-prices.md)
 
   
-
 
 

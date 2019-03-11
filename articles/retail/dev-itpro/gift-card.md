@@ -1,39 +1,38 @@
 ---
-title: "外部ギフト カードのサポート"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail で現在利用できる外部ギフト カードのサポートについて説明します。"
+title: 外部ギフト カードのサポート
+description: このトピックでは、Microsoft Dynamics 365 for Retail で現在利用できる外部ギフト カードのサポートについて説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
-ms.devlang: 
+ms.devlang: ''
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 49fa7bcbb137bd02c9a123543a6fc6ce003240aa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369061"
 ---
-
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
 [!include [banner](../../includes/banner.md)]
 
 顧客にシームレスなエクスペリエンスを提供するために、小売業者はさまざまな支払方法を受け入れることができることを望んでいます。 ギフト カードは、現金やクレジット カードの次に最も頻繁に使用される支払方法の 1 つです。 多くの小売業者にとっての重要な要件は、販売時点管理 (POS) でさまざまなタイプのギフト カードを各種プロバイダーから受け入れることです。
 
-Microsoft Dynamics 365 for Retail は、外部のギフト カードをサポートしています。 したがって、小売業者は、GiveX などのギフト カード プロバイダーからのサードパーティ ギフト カードを POS を使用して受け入れられます。 この機能を活用するには、外部のギフト カード サービス プロバイダのアカウントが必要です。 この機能は、ソリューションが提供していた標準のギフト カード サポートとは異なります。
+Microsoft Dynamics 365 for Retail は現在、外部ギフト カードをサポートします。 したがって、小売業者は、GiveX などのギフト カード プロバイダーからのサードパーティ ギフト カードを POS を使用して受け入れられます。 この機能を活用するには、外部のギフト カード サービス プロバイダのアカウントが必要です。 この機能は、ソリューションが提供していた標準のギフト カード サポートとは異なります。
 
 最初から用意されている Verifone Payment コネクタもアップデートされ、外部ギフト カードの機能をサポートしています。 最初の更新で GiveX との統合が可能になりました。
 
@@ -107,20 +106,20 @@ Microsoft Dynamics 365 for Retail は、外部のギフト カードをサポー
 23. **ダウンロード セッション**を検索してジョブのステータスを確認してください。
 24. すべてのジョブの横に **適用済** が表示されるまで待ってから、ブラウザーを閉じます。
 
-## <a name="reset-iis-if-youre-using-retail-store-scale-unit"></a>Retail Store スケール ユニットを使用している場合は、IIS をリセット
+## <a name="reset-iis-if-youre-using-retail-store-scale-unit"></a>Retail Store Scale Unit を使用している場合、IIS をリセットします。
 
-ストアにある小売店舗スケール ユニット (RSSU) を使用している場合は、管理者としてコマンド プロンプト ウィンドウを開き、**iisreset** と入力します。 それ以外の場合、Retail サーバーが更新されるまで待機します。
+ストアにある Retail Store Scale Unit (RSSU) を使用している場合は、管理者としてコマンド プロンプト ウィンドウを開き、**iisreset** と入力します。 それ以外の場合、Retail サーバーが更新されるまで待機します。
 
 ## <a name="update-merchant-properties"></a>商人プロパティの更新
 
 1. ファイル エクスプローラーで、**C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Hardware Station\\ConfigurationUtility** に移動します。
 2. **HardwareStationConfigurationUtility** 実行可能プログラムを実行します。
 3. 正しい Retail サーバー URL を入力してユーティリティをコンフィギュレーションし、**インストール**を選択します。
-4. ダウンロードが正常に完了したことを確認するには、**c:\\ProgramData\\Microsoft Dynamics AX\\Retail Hardware Station** に移動し、**MerchantInformation.xml** ファイルのタイムスタンプを確認します。 これは最新である必要があります。
+4. ダウンロードが正常に完了したことを確認するには、**C:\\ProgramData\\Microsoft Dynamics AX\\Retail Hardware Station** に移動し、**MerchantInformation.xml** ファイルのタイムスタンプを確認します。 これは最新である必要があります。
 
-## <a name="configure-and-test-retail-modern-pos"></a>Retail Modern POS のコンフィギュレーションおよびテスト
+## <a name="configure-and-test-retail-modern-pos"></a>Retail Modern POS のコンフィギュレーションとテスト
 
-1. Retail Modern POS (MPOS) アプリケーションを起動します。
+1. Retail Modern POS の申請を開始
 2. 標準の資格情報を使用してログインします。
 3. メッセージが表示されたら、**ドロワー以外の操作の実行** を選択します。
 4. メイン画面で、**ハードウェア ステーションの選択**を選択します。
@@ -156,4 +155,3 @@ Microsoft Dynamics 365 for Retail は、外部のギフト カードをサポー
 5. ファイルを保存して閉じます。
 6. MPOS を再起動します。
 7. 問題が解消しない場合は、MPOS を終了し、タスク マネージャーを使用して、実行中の dllhost.exe インスタンスを終了させ、インターネット インフォメーション サービス (IIS) のリセットを別に行います。
-

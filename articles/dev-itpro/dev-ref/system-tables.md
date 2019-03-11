@@ -1,13 +1,13 @@
 ---
-title: "システム テーブル"
-description: "このトピックでは、システム テーブルについて説明します。"
+title: システム テーブル
+description: このトピックでは、システム テーブルについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: reference
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4d0051b098e0cdf9c17a23f769cc42362bd7d125
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0729159230a052994004d9b001b1b516bc1c4d08
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369859"
 ---
-
 # <a name="system-tables"></a>システム テーブル
 
 [!include [banner](../includes/banner.md)]
@@ -203,7 +202,7 @@ DataArea テーブルには、データベースで作成された会社の一�
 | isVirtual    | 列挙    |               | ブール値          |                                                                                                                           |
 | 名前         | 文字列  | UserIdStr     |                  | 氏名                                                                                                                      |
 | パーティション    | Int64   | パーティション     |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId        | Int64   | RecId         |                  |                                                                                                                           |
+|  Recid        | Int64   |  Recid         |                  |                                                                                                                           |
 | recVersion   | 整数 | RecVersion    |                  |                                                                                                                           |
 | timeZone     | 列挙    |               | タイム ゾーン         |                                                                                                                           |
 
@@ -551,7 +550,7 @@ Partitions テーブルには、システム内のデータ パーティショ�
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS))               |
 | 名前              | 文字列      | UserIdStr         |                  | 名前 (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS))          |
 | PartitionKey      | 文字列      | PartitionKey      |                  | パーティション キー (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId             | Int64       | RecId             |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS))               |
+|  Recid             | Int64       |  Recid             |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS))               |
 | recVersion        | 整数     | RecVersion        |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS))               |
 
 ### <a name="field-groups"></a>フィールド グループ
@@ -599,7 +598,7 @@ PrintJobHeader テーブルには、現在のプリント ジョブに関する�
 | ジョブ タイプ             | 文字列      |                  |                  |                                                                                                                           |
 | ページ数       | Int         |                  |                  |                                                                                                                           |
 | パーティション           | Int64       | パーティション        |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| printedBy           | 文字列      | UserId           |                  | ユーザー ID                                                                                                           |
+| printedBy           | 文字列      | ユーザー ID           |                  | ユーザー ID                                                                                                           |
 | 印刷日         | 日付        |                  |                  |                                                                                                                           |
 | 印刷時刻         | Int         |                  |                  |                                                                                                                           |
 | printerInfo         | コンテナー   |                  |                  |                                                                                                                           |
@@ -645,7 +644,7 @@ PrintJobPages テーブルには、プリント ジョブの現在印刷中の�
 | pageNo           | Int       |               |                  |                                                                                                                           |
 | pagesHeaderRecId | Int64     | RecId         |                  | データベースのレコードの固有 ID                                                                                  |
 | パーティション        | Int64     | パーティション     |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId            | Int64     | RecId         |                  |                                                                                                                           |
+|  Recid            | Int64     |  Recid         |                  |                                                                                                                           |
 | recVersion       | 整数   | RecVersion    |                  |                                                                                                                           |
 
 ### <a name="relations"></a>リレーション
@@ -909,7 +908,7 @@ SecurityRole テーブルには、セキュリティ AOT ロール ノードで�
 | MembershipRuleDescription | 文字列      | MembershipRuleDescription |                  | 自動ロール メンバーシップ ルールの説明                                                                         |
 | MembershipRuleName        | 文字列      | MembershipRuleName        |                  | 自動ロール メンバーシップ ルールの名前                                                                                |
 | パーティション                 | Int64       | パーティション                 |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId                     | Int64       | RecId                     |                  |                                                                                                                           |
+|  Recid                     | Int64       |  Recid                     |                  |                                                                                                                           |
 | recVersion                | 整数     | RecVersion                |                  |                                                                                                                           |
 | RuleQuery                 | コンテナー   |                           |                  |                                                                                                                           |
 | SecurityRole              | Int64       | RecId                     |                  | データベースのレコードの固有 ID                                                                                  |
@@ -1162,10 +1161,10 @@ SecuritySegregationOfDutiesConflict テーブルには、ロールへのユー�
 | createdBy               | 文字列      | CreatedBy                          |                               |                                                                                                                           |
 | createdDateTime         | UtcDateTime | CreatedDateTime                    |                               |                                                                                                                           |
 | dEL\_CreatedTime        | 整数     | DEL\_CreatedTime                   |                               | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| DEL\_ExistingTask       | Int64       | RecId                              |                               |                                                                                                                           |
+| DEL\_ExistingTask       | Int64       |  Recid                              |                               |                                                                                                                           |
 | dEL\_ModifiedTime       | 整数     | DEL\_ModifiedTime                  |                               | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| DEL\_NewTask            | Int64       | RecId                              |                               |                                                                                                                           |
-| ExistingDuty            | Int64       | RecId                              |                               |                                                                                                                           |
+| DEL\_NewTask            | Int64       |  Recid                              |                               |                                                                                                                           |
+| ExistingDuty            | Int64       |  Recid                              |                               |                                                                                                                           |
 | ExistingRole            | Int64       | RecId                              |                               | データベースのレコードの固有 ID                                                                                  |
 | ExistingTask            | Int64       | RecId                              |                               | データベースのレコードの固有 ID                                                                                  |
 | modifiedBy              | 文字列      | ModifiedBy                         |                               |                                                                                                                           |
@@ -1545,7 +1544,7 @@ SecurityUserRole テーブルには、ユーザーからロールへのマッピ
 | AssignmentMode   | 列挙        |               | RoleAssignmentMode   |                                                                                                                           |
 | AssignmentStatus | 列挙        |               | RoleAssignmentStatus |                                                                                                                           |
 | パーティション        | Int64       | パーティション     |                      | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId            | Int64       | RecId         |                      |                                                                                                                           |
+|  Recid            | Int64       |  Recid         |                      |                                                                                                                           |
 | recVersion       | 整数     | RecVersion    |                      |                                                                                                                           |
 | SecurityRole     | Int64       | RecId         |                      | データベースのレコードの固有 ID                                                                                  |
 | ユーザー             | 文字列      | UserId        |                      | ユーザー ID                                                                                                           |
@@ -1587,7 +1586,7 @@ SecurityUserRoleCondition テーブルには、ユーザーからロールへの
 | ControllingKey   | int64   |               |                  |                                                                                                                           |
 | DataArea         | 文字列  | DataAreaId    |                  | データ領域の ID                                                                                                    |
 | パーティション        | Int64   | パーティション     |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId            | Int64   | RecId         |                  |                                                                                                                           |
+|  Recid            | Int64   |  Recid         |                  |                                                                                                                           |
 | recVersion       | 整数 | RecVersion    |                  |                                                                                                                           |
 | SecurityUserRole | Int64   | RecId         |                  | データベースのレコードの固有 ID                                                                                  |
 
@@ -1704,7 +1703,7 @@ SqlParameters テーブルは、パラメーターと値の組み合わせの形
 
 ### <a name="fields"></a>フィールド
 
-| フィールド      | 種類    | 拡張型 | 列挙型タイプ | 説明 |
+| フィールド      | 型    | 拡張型 | 列挙型タイプ | 説明 |
 |------------|---------|---------------|------------------|-------------|
 | id         | Int     |               |                  |             |
 | iParm      | Int     |               |                  |             |
@@ -1733,7 +1732,7 @@ SqlStatistics テーブルは、ユーザーの関連するデータベースの
 
 ### <a name="fields"></a>フィールド
 
-| フィールド             | 種類        | 拡張型     | 列挙型タイプ | 説明                                                                                                               |
+| フィールド             | 型        | 拡張型     | 列挙型タイプ | 説明                                                                                                               |
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | dEL\_ModifiedTime | 整数     | DEL\_ModifiedTime |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
 | indexId           | 整数     | IndexId           |                  | インデックス ID                                                                                                          |
@@ -1945,7 +1944,7 @@ SysBreakpointList テーブルには、MorphX にブレークポイントを持�
 | createdDateTime  | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
 | dEL\_CreatedTime | 整数     | DEL\_CreatedTime |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
 | machineName      | 文字列      | NetworkDomain    |                  |                                                                                                                           |
-| RecId            | Int64       | RecId            |                  |                                                                                                                           |
+|  Recid            | Int64       | RecId            |                  |                                                                                                                           |
 | recVersion       | 整数     | RecVersion       |                  |                                                                                                                           |
 | userId           | 文字列      | UserId           |                  | ユーザー ID                                                                                                           |
 | のバージョン          | Int         |                  |                  |                                                                                                                           |
@@ -2035,7 +2034,7 @@ SysCacheFlush テーブルには、複数の AOS サーバー間のキャッシ�
 | createdDateTime | UtcDateTime | CreatedDateTime |                  |                                                                                                                           |
 | EventsContainer | コンテナー   |                 |                  |                                                                                                                           |
 | パーティション       | Int64       | パーティション       |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId           | Int64       | RecId           |                  |                                                                                                                           |
+|  Recid           | Int64       |  Recid           |                  |                                                                                                                           |
 | recVersion      | 整数     | RecVersion      |                  |                                                                                                                           |
 | SessionId       | Int         |                 |                  |                                                                                                                           |
 
@@ -2244,7 +2243,7 @@ SysLastValue テーブルは、ユーザーがシステムを移動したとき�
 | elementName | 文字列    | UtilElementName    |                  | アプリケーション要素の名前です。                                                                                          |
 | Is Kernel    | 列挙      |                    | ブール値          |                                                                                                                           |
 | パーティション   | Int64     | パーティション          |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId       | Int64     | RecId              |                  |                                                                                                                           |
+|  Recid       | Int64     |  Recid              |                  |                                                                                                                           |
 | レコード タイプ  | 列挙      |                    | UtilElementType  |                                                                                                                           |
 | recVersion  | 整数   | RecVersion         |                  |                                                                                                                           |
 | userId      | 文字列    | UserId             |                  | ユーザー ID                                                                                                           |
@@ -2945,7 +2944,7 @@ SysRecordLevelSecurity テーブルには、システム管理者によって構
 | modifiedBy        | 文字列      | ModifiedBy         |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime   |                  |                                                                                                                           |
 | パーティション         | Int64       | パーティション          |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId             | Int64       | RecId              |                  |                                                                                                                           |
+|  Recid             | Int64       |  Recid              |                  |                                                                                                                           |
 | recVersion        | 整数     | RecVersion         |                  |                                                                                                                           |
 | 制限       | コンテナー   |                    |                  |                                                                                                                           |
 | SecurityRole      | Int64       | RecId              |                  | セキュリティ ロールの名前です                                                                                                 |
@@ -3081,7 +3080,7 @@ TableCollectionList テーブルには、テーブル コレクションと仮�
 | フィールド           | 種類    | 拡張型   | 列挙型タイプ | 説明                                                                                                               |
 |-----------------|---------|-----------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | パーティション       | Int64   | パーティション       |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId           | Int64   | RecId           |                  |                                                                                                                           |
+|  Recid           | Int64   |  Recid           |                  |                                                                                                                           |
 | recVersion      | 整数 | RecVersion      |                  |                                                                                                                           |
 | tableCollection | 文字列  | UtilElementName |                  | アプリケーション要素の名前です。                                                                                          |
 | virtualDataArea | 文字列  | VirtualDataArea |                  | 仮想会社の ID                                                                                                  |
@@ -3199,7 +3198,7 @@ UserDataAreaFilter テーブルには、ユーザーが選択できる会社の�
 |------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | DataArea   | 文字列  | DataAreaId    |                  | データ領域の ID                                                                                                    |
 | パーティション  | Int64   | パーティション     |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId      | Int64   | RecId         |                  |                                                                                                                           |
+|  Recid      | Int64   |  Recid         |                  |                                                                                                                           |
 | recVersion | 整数 | RecVersion    |                  |                                                                                                                           |
 | ユーザー       | 文字列  | UserId        |                  | ユーザー ID                                                                                                           |
 
@@ -3346,7 +3345,7 @@ UserInfoStartupModel テーブルには、各ユーザーの各レイヤーの�
 | レイヤー      | 列挙    |               | UtilEntryLevel   |                                                                                                                           |
 | ModelId    | Int64   | ModelRecid    |                  | モデルの ID です。                                                                                                      |
 | パーティション  | Int64   | パーティション     |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId      | Int64   | RecId         |                  |                                                                                                                           |
+|  Recid      | Int64   |  Recid         |                  |                                                                                                                           |
 | recVersion | 整数 | RecVersion    |                  |                                                                                                                           |
 | UserId     | 文字列  | UserGroupId   |                  | ユーザー グループの ID                                                                                                     |
 
@@ -3581,7 +3580,7 @@ VirtualDataAreaList テーブルには、実際の会社と仮想会社の間の
 |-----------------|---------|--------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | id              | 文字列  | SelectableDataArea |                  | 選択可能な会社の ID                                                                                         |
 | パーティション       | Int64   | パーティション          |                  | (このフィールドは次のバージョンにのみ適用されます: Microsoft Dynamics AX 2012 R3、Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId           | Int64   | RecId              |                  |                                                                                                                           |
+|  Recid           | Int64   |  Recid              |                  |                                                                                                                           |
 | recVersion      | 整数 | RecVersion         |                  |                                                                                                                           |
 | virtualDataArea | 文字列  | VirtualDataArea    |                  | 仮想会社の ID                                                                                                  |
 
@@ -3620,7 +3619,7 @@ VSAssembly テーブルには、AOT 内で Visual Studio プロジェクト ノ�
 
 ### <a name="fields"></a>フィールド
 
-| フィールド       | 種類        | 拡張型 | 列挙型タイプ | 説明 |
+| フィールド       | 型        | 拡張型 | 列挙型タイプ | 説明 |
 |-------------|-------------|---------------|------------------|-------------|
 | DeployTo    | 列挙        |               | DeployTo         |             |
 | 氏名        | 文字列      | AssemblyName  |                  |             |
@@ -3644,7 +3643,6 @@ VSAssembly テーブルには、AOT 内で Visual Studio プロジェクト ノ�
 ### <a name="inheritance-hierarchy"></a>継承階層
 
 [xRecord クラス](x-classes.md#class-xrecord) [共通テーブル](#common) [VSAssembly テーブル](#vsassembly)
-
 
 
 

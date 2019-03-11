@@ -1,13 +1,13 @@
 ---
-title: "ワークフローの承認プロセスでのアクション"
-description: "この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。"
+title: ワークフローの承認プロセスでのアクション
+description: この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 829ee16b8fd72a0808a657419524487d9c1b3123
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361754"
 ---
-
 # <a name="actions-in-workflow-approval-processes"></a>ワークフローの承認プロセスでのアクション
 
 [!include [banner](../includes/banner.md)]
@@ -143,4 +142,3 @@ Adventure Works の経費精算書部門のメンバーは、キューを監視�
 たとえば、康介が USD 12,000 の経費精算書を提出し、このドキュメントが政美に割り当てられています。 政美が変更を要求すると、経費精算書は康介に送り返されます。
 
 その後、康介は経費報告書を再送信できるようになります。 最初に変更を依頼することもできますが、または経費精算書のオリジナル バージョンを再送信することもできます。 康介が経費報告書を再送信すると、今度は承認プロセスの最初の承認者である卓也に承認のために送られます。
-

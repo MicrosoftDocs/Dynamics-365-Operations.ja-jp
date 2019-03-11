@@ -1,13 +1,13 @@
 ---
-title: "財務諸表デザイナーでの行の定義"
-description: "行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。 行定義は、複数の会社が使用できる構成要素グループを作成するために、列定義、レポート ツリー定義およびレポートの定義と組み合わせることができます。"
+title: 財務諸表デザイナーでの行の定義
+description: 行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。 行定義は、複数の会社が使用できる構成要素グループを作成するために、列定義、レポート ツリー定義およびレポートの定義と組み合わせることができます。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350438"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>財務諸表デザイナーでの行の定義
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ ms.lasthandoff: 08/13/2018
 
 ### <a name="format-row-text"></a>行のテキストの書式設定
 
-列定義で指定された書式は、レポート定義で指定された書式を上書きします。 テキスト形式を変更するには、書式設定ツールバーのコントロールを使用します。 これらのコントロールは Microsoft Windows の標準コントロールです。
+列定義で指定された書式は、レポート定義で指定された書式を上書きします。 テキスト形式を変更するには、書式設定ツールバーのコントロールを使用します。 これらのコントロールは Microsoft Windows 標準のコントロールです。
 
-1. レポート デザイナーで、変更する列定義を開きます。
+1. レポート デザイナーで、変更する行定義を開きます。
 2. 書式を設定するセルを選択します。 複数のセルを選択する場合は、Ctrl キーを押しながらセルを選択します。
 3. 適用するフォーマットのツール バーのボタンをクリックします。 たとえば行をインデントにするには、行を選択し、ツール バーの **インデントの増加** ![インデントの増加](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "インデントの増加") をクリックします。
 
@@ -189,4 +188,3 @@ ms.lasthandoff: 08/13/2018
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-

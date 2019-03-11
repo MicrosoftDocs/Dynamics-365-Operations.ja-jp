@@ -1,13 +1,13 @@
---- 
-title: "売掛金勘定のエイジング情報の設定および生成"
-description: "このガイドでは、エイジング期間の定義、顧客残高のエイジング、および [指定の期間に達している残高] リストと [回収] ページでの残高表示の設定方法を説明します。"
+---
+title: 売掛金勘定のエイジング情報の設定および生成
+description: このガイドでは、エイジング期間の定義、顧客残高のエイジング、および [指定の期間に達している残高] リストと [回収] ページでの残高表示の設定方法を説明します。
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9fd8738cfd3466464c9fec1760e9a369ff3a4a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2e9f393acaa47d485a583b99ace459474f30be6a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334637"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>売掛金勘定のエイジング情報の設定および生成
 
@@ -61,5 +61,4 @@ ms.lasthandoff: 09/29/2017
 2. 残高を持つ顧客を選択します。
 3. エイジングした残高を表示するには、[エイジング情報ボックス] の領域を展開します。
     * ファクト ボックスのエイジング期間の定義は、パラメータで指定されている既定のエイジング期間の定義から取得されます。 [収集] メニューを使用して変更できます。  
-
 

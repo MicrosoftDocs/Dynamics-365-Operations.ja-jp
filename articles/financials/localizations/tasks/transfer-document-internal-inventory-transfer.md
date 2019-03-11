@@ -1,13 +1,13 @@
---- 
-title: "内部在庫移動の移動文書の生成"
-description: "この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。"
+---
+title: 内部在庫移動の移動文書の生成
+description: この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4b9ef0026129d958b4214bb6e235c288de023d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 30e5f6ad184720d0e119f86fb703ed7211b27fab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321366"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>内部在庫移動の移動文書の生成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。 この手順はリトアニアに主たる所在地を置く法人のみが使用できます。 この手順は、リトアニアに主たる事務所を置く企業 DEMF のデモデータを使用して作成されました。 この手順を完了するには、「社内の製品移動に関わるドキュメントの設定」の手順を実施する必要があります。 この手順は在庫経理担当者を対象としています。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。 この手順はリトアニアに主たる所在地を置く法人のみが使用できます。 この手順は、リトアニアに主たる事務所を置く企業 DEMF のデモデータを使用して作成されました。 この手順を完了するには、「社内の製品移動に関わるドキュメントの設定」の手順を実施する必要があります。 この手順は在庫経理担当者を対象としています。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="create-a-transfer-order"></a>移動オーダーの作成
@@ -73,5 +73,4 @@ ms.lasthandoff: 09/29/2017
 9. アクション ウィンドウで、[発送] をクリックします。
 10. [梱包明細] をクリックします。
 11. [OK] をクリックします。
-
 

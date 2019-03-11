@@ -1,30 +1,29 @@
 ---
-title: "セキュリティ ロールによる個人住所へのアクセス"
-description: "このトピックでは、顧客が個人住所にアクセスできない問題を解決する方法について説明します。"
+title: セキュリティ ロールによる個人住所へのアクセス
+description: このトピックでは、顧客が個人住所にアクセスできない問題を解決する方法について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: c1c1c3ce1233408e73d177f9e04f1137f3171a49
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305109"
 ---
-
 # <a name="access-to-private-addresses-by-security-role"></a>セキュリティ ロールによる個人住所へのアクセス
 
 [!include [banner](includes/banner.md)]
@@ -42,4 +41,3 @@ ms.lasthandoff: 12/04/2018
 3. **保存** を選択します。
 
 ![グローバル アドレス帳パラメーター ページ](media/GAD-parameters.png)
-

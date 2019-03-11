@@ -1,13 +1,13 @@
 ---
-title: "サービス エンドポイント"
-description: "このトピックでは、使用できるサービス エンドポイントについて説明します。"
+title: サービス エンドポイント
+description: このトピックでは、使用できるサービス エンドポイントについて説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
 ms.openlocfilehash: 3d325ac7405a9f0ef54866ffdf44907e7780d445
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369405"
 ---
-
 # <a name="service-endpoints"></a>サービス エンドポイント
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 4. 登録している外部アプリケーションを識別する名前を入力します。 共有機密情報を使用して認証するアプリケーションについては、**Web アプリ/API** を選択します。 このコンテキストでは、サインオン URL は関係ありません。 したがって、**localhost** を使用します。
 5. 新しいアプリケーションを選択し、アプリケーション ID をコピーします。 Azure AD 認証トークンを要求するには、後で、アプリケーション ID が必要です。 **必要なアクセス許可** を選択します。
 6. **追加** を選択し、**API を選択** を選択します。
-7. **Microsoft Dynamics ERP (Microsoft.ERP)** を選択します。 **API を選択**の検索フィールドで **Microsoft Dynamics ERP** を検索すると、グレーで表示されることがあります。その場合は、上記のように完全名で検索することを確認してください。
+7. **Microsoft DynamicsERP (Microsoft.ERP)** を選択します。 **API を選択**の検索フィールドで **Microsoft Dynamics ERP** を検索すると、グレーで表示されることがあります。その場合は、上記のように完全名で検索することを確認してください。
 8. **委任アクセス権** で、少なくとも次のオプションを選択する必要があります。
 
     - Dynamics AX カスタム サービスへのアクセス
@@ -108,11 +107,11 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application-in-finance-and-operations"></a>Finance and Operations で外部のアプリケーションを登録する
 
-1. Finance and Operations で、**システム管理** &gt; **セットアップ** &gt; **Azure Active Directory アプリケーション** に移動します。
-2. **新規**を選択します。
+1. Finance and Operations で、**システム管理** &gt; **セットアップ** &gt; **Azure Active Directory アプリケーション**に移動します。
+2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 
-    - **クライアント Id** フィールドで、Azure AD に登録したアプリケーション ID を入力します。
+    - **クライアント ID** フィールドで、Azure AD に登録したアプリケーション ID を入力します。
     - **名前**フィールドに、アプリケーションの名前を入力します。
     - **ユーザー ID** フィールドで、適切なサービス アカウントのユーザー ID を選択します。 この例では、**管理者**ユーザーを選択しました。 ただし、実行する必要がある操作に対して適切なアクセス許可を持つ、専用のサービス アカウントをプロビジョニングすることをお勧めします。
 
@@ -157,4 +156,3 @@ REST メタデータ サービスは、読み取り専用サービスです。 �
 - **データ エンティティ** - システム内のすべてのデータ エンティティの JSON 形式の一覧を返します。
 
     **例:** `https://[baseURI\]/Metadata/DataEntities`
-

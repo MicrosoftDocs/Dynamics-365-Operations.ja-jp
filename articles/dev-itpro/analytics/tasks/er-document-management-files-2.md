@@ -1,13 +1,13 @@
---- 
-title: "ER ドキュメント管理ファイルを形式出力で使用する (第 2 部 - データ モデルの拡張)"
-description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
+---
+title: ER ドキュメント管理ファイルを形式出力で使用する (第 2 部 - データ モデルの拡張)
+description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320952"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER 形式の出力 (パート 2: データ モデルの拡張) におけるドキュメント管理ファイルの使用
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/16/2018
 
 これらの手順を完了するには、まず「フォーマット出力のドキュメント管理ファイルをER使用する (パート1：データモデルを作成）」の作業ガイドの手順を完了する必要があります。
 
-この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a>データモデルを拡張して、そのモデルにあるドキュメント管理ファイルを表示します。
@@ -58,7 +58,7 @@ ms.lasthandoff: 10/16/2018
 17. [品目タイプ] フィールドで、「String」を選択します。
 18. [追加] をクリックします。
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>新規データ モデル・エレメントを Dynamics 365 for Finance and Operations、Enterprise edition データ ソースにマッピングします
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>新しいデータ モデル要素を Dynamics 365 for Finance and Operations Enterprise Edition データ ソースにマップする
 1. [モデルからデータ ソースへのマップ] をクリックします。
 2. クイック フィルターを使用し、 「InvoiceCustomer」の値により「定義」フィールドでフィルターします。
     * 顧客への請求  
@@ -91,5 +91,4 @@ ms.lasthandoff: 10/16/2018
 25. [状態の変更] をクリックします。
 26. [完了] をクリックします。
 27. [OK] をクリックします。
-
 

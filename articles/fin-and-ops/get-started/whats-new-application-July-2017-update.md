@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) の新機能および変更された機能"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。"
+title: Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。
 author: tonyafehr
 manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7543124ef81fc39ad4841686ce9ab2137c9ead82
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369171"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +32,7 @@ ms.lasthandoff: 12/18/2018
 
 ## <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
 
-ユーザーと開発者に対して、更新された製品名 (「Microsoft Dynamics 365 for Finance and Operations」) と製品アイコンが Web クライアントに表示されます。 Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、Dynamics 365 for Talent により共有される一部のプラットフォーム コンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) は、"Dynamics 365 Unified Operations" と表示されるようになりました。
+ユーザーと開発者に対して、更新された製品名 ("Microsoft Dynamics 365 for Finance and Operations") と製品アイコンが Web クライアントに表示されます。 一部のプラットフォームのコンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) によって共有される Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent は、"Dynamics 365 Unified Operations." と表示されるようになりました。
 
 ## <a name="financial-management"></a>財務管理
 
@@ -47,7 +46,7 @@ ms.lasthandoff: 12/18/2018
 
 予算管理に対してドキュメントを再処理することができます。 ドキュメントは、予算管理を有効にする前に入力された予算登録エントリを含む潜在的な問題のリストに対してスキャンされ、読み取り専用の監査証跡が見つかったドキュメントおよび再処理の結果として保存されます。
 
-### <a name="budgeting-power-bi-for-actual-vs-budget"></a>実績対予算の予算作成 Power BI
+### <a name="budgeting-power-bi-for-actual-vs-budget"></a>実績対予算の 予算作成 Power BI
 
 実績対予算 Power BI コンテンツは、予算登録に基づいて予算差異の可視性を提供します。 次の詳細のいずれかを使用して、今年の予算を分析し、差異に対する理解を深めることができます。
 
@@ -57,13 +56,13 @@ ms.lasthandoff: 12/18/2018
 - 主勘定の説明
 - 会計年度期間
 
-詳細については、「[元帳予算 Power BI](../../dev-itpro/analytics/ledger-budgets-power-bi.md)」を参照してください。
+詳細については、[元帳予算 Power BI](../../dev-itpro/analytics/ledger-budgets-power-bi.md) を参照してください。
 
 ### <a name="cfo-overview-workspace"></a>CFO の概要ワークスペース
 
 CFO やアカウント マネージャーは、CFO 概要ワークスペースで事業の完全な状態を表示できます。 ワークスペースには一般的な KPI があり、組み込み分析を使用して財務、購買、販売、キャッシュフロー データを表示します。
 
-詳細については、「[Power BI コンテンツの CFO の概要](../../dev-itpro/analytics/CFO-power-bi.md)」を参照してください。
+詳細については、[CFO 概要 Power BI コンテンツ](../../dev-itpro/analytics/CFO-power-bi.md) を参照してください。
 
 ### <a name="data-validation"></a>データ検証
 
@@ -91,7 +90,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 具体的には、**経費管理** モバイル ワークスペースによって、ユーザーは次が実行できるようになります。
 
-- 領収書の写真を撮り、Microsoft Dynamics for Finance および Operations にアップロードします。 その後にユーザーはその写真を経費精算書に添付できます。
+- 領収書の写真を撮り、Microsoft Dynamics for Finance and Operations にアップロードします。 その後にユーザーはその写真を経費精算書に添付できます。
 - キャプチャした領収書としてファイルをアップロードします。 その後にユーザーはそのファイルを経費精算書に添付できます。
 - 新しい経費明細行を作成するには、添付されている領収書を使用します。 ユーザーはその後に、経費精算書に明細行品目を追加し、承認と払い戻しのために送信します。
 - 新しい経費精算書を作成します。
@@ -190,7 +189,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 財務諸表のレポート定義のレポートにどの財務分析コードが適しているかを選択することができます。 たとえば、貸借対照表を生成し、組織が主勘定および事業単位で評価のみをする場合、レポートの財務分析コードとしてそれらを選択できます。 これらは、ドリルダウンと分析で確認されます。 これにより、レポートをパーソナライズしてより合理化し、レポートに必要な情報のみを提示するのに役立ちます。
 
-### <a name="financial-dimensions-in-power-bi"></a>Power BI での財務分析コード
+### <a name="financial-dimensions-in-power-bi"></a>Power BI の財務分析コード
 
 財務パフォーマンス コンテンツ パックの財務分析コードが、財務データの分析に使用できるようになりました。 詳細については、「[財務パフォーマンス Power BI](../../dev-itpro/analytics/financial-performance-power-bi-content-pack.md)」を参照してください。
 
@@ -214,7 +213,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 ### <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
-コンフィギュレーション データ パッケージは、主要財務モジュールの Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、Dynamics 365 for Finance and Operations の設定を迅速化します。
+コンフィギュレーション データ パッケージは、主要財務モジュールの Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、Dynamics 365 for Finance and Operations の構成を迅速化します。
 
 データ パッケージにはコンフィギュレーション エンティティ スプレッドシートが含まれています。 これらのエンティティ スプレッドシートにはベスト プラクティス データがあり、これを使用して初期の「ゴールデン」ビルドを作成できます。 データ パッケージ内のデータ エンティティも適切に順序付けされ、1 回のクリックによるインポートを成功させるのに役立ちます。 詳細については、「[データ パッケージのコンフィギュレーション](../../dev-itpro/data-entities/configuration-data-packages.md)」を参照してください。
 
@@ -237,7 +236,7 @@ SharePoint にレポートを送信するための標準機能は、財務報告
 
 ### <a name="vendor-invoice-attachment-enhancements"></a>仕入先請求書の添付ファイル拡張
 
-買掛金勘定プロセスの合理化に目を向ける組織において、請求処理は多くの場合効率を必要とするプロセス領域の最上位にあると言えます。 多くの場合、組織は紙の請求書の処理からサード パーティ光学式文字認識 (OCR) サービス プロバイダにオフロードし、請求書のスキャンしたイメージと共に機械可読請求書メタデータを取得します。 自動化を支援するため、これらのアーティファクトを使用するための請求システムにソリューションが組み込まれています。 Dynamics 365 for Finance and Operations はこの自動化を可能にします。 
+買掛金勘定プロセスの合理化に目を向ける組織において、請求処理は多くの場合効率を必要とするプロセス領域の最上位にあると言えます。 多くの場合、組織は紙の請求書の処理からサード パーティ光学式文字認識 (OCR) サービス プロバイダにオフロードし、請求書のスキャンしたイメージと共に機械可読請求書メタデータを取得します。 自動化を支援するため、これらのアーティファクトを使用するための請求システムにソリューションが組み込まれています。 Dynamics 365 for Finance and Operations では、この自動化がそのまま有効です。 
 
 請求書自動化の大前提は、請求書ヘッダーと請求明細行の請求書メタデータ、および請求書に適用される添付ファイルを受け取ることができる標準インターフェイスを実現することです。 コンポーネントを生成し、インターフェイスに準拠している外部システムは、請求書および添付ファイルの自動処理のためのフィードを Finance and Operations に送信することができます。 
 
@@ -357,7 +356,7 @@ GDPdU\\GoBD サンプル電子レポート構成には、次の拡張機能が�
 
 ### <a name="global-coverage--retail"></a>グローバル補充 - Retail
 
-Dynamics 365 for Retail POS と会計デバイス (制御ユニット) の統合の例に加えて、キャッシュ レジスターの継続的使用に対する一般要件などのキャッシュ レジスターの現地要件をサポートするため、スウェーデンの規制 Retail 機能が追加されました。
+Dynamics 365 for Retail POS と会計デバイス (制御ユニット) の統合の例に加えて、キャッシュ レジスターの継続的使用に対する一般要件などのキャッシュ レジスターの現地要件をサポートするため、スウェーデンの規制の小売機能が追加されました。
 
 詳細については、「[スウェーデンのキャッシュ レジスター](../../retail/localizations/emea-swe-cash-registers.md)」を参照してください。
 
@@ -470,9 +469,9 @@ Finance and Operations により提供される柔軟性の高い総合的な分
 - 採用にかかる費用
 - 申請者のステータス
 
-詳細については、「[Power BI コンテンツ](../../dev-itpro/analytics/power-bi-home-page.md)」を参照してください。
+詳細については、[Power BI コンテンツ](../../dev-itpro/analytics/power-bi-home-page.md) を参照してください。
 
-## <a name="cash-flow-forecasting-power-bi"></a>キャッシュ フロー予測 Power BI
+## <a name="cash-flow-forecasting-power-bi"></a>キャッシュ フローの予測 Power BI
 
 キャッシュ フローの効率的な管理は、組織の財務部門の重要な機能です。 キャッシュ フロー分析 Power BI レポートは、キャッシュ フローを視覚化し、より良い意思決定を行い、健全なキャッシュ フローにつながる予測を提供します。
 
@@ -488,7 +487,7 @@ Finance and Operations により提供される柔軟性の高い総合的な分
 
 また、コスト オブジェクトごとに統計要素とコスト要素を結合することができます。
 
-詳細については、[原価会計分析の Power BI コンテンツ](../../dev-itpro/analytics/cost-accounting-analysis-content-pack.md) を参照してください。
+詳細については、[原価会計分析 Power BI コンテンツ](../../dev-itpro/analytics/cost-accounting-analysis-content-pack.md) を参照してください。
 
 ### <a name="credit-and-collections-management-power-bi"></a>与信および回収管理 Power BI
 
@@ -496,23 +495,23 @@ Finance and Operations により提供される柔軟性の高い総合的な分
 
 このツールを使用すると、顧客のコレクション パフォーマンスについて勘定および販売マネージャに豊富な見識を提供して貴重な顧客を識別できるようにします。 データで裏付けられた価値あるパートナーシップを追求するよう顧客と接するスタッフを励まし、価格と条件の適正な組み合わせにより製品とサービスを促進するよう販売担当者を励ますことができます。 Power BI レポートは、例外の管理のマスターとなるのに役立ちます。 与信限度額を超えているまたは近づいている顧客を識別して、支払い遅延の可能性と過去の支払い期限を理解し、遅くなりすぎる前に介入することができます。 レポートを使うと、過去の期限切れステージに到達する前に支払および顧客グループを検出できるため、期限切れの支払の可能性について理解し、例外発生時に通知するアラート条件を定義できるようになります。 Power BI に組み込まれた包括的なレポート作成およびダッシュボード機能により、コレクションとアカウント管理チームは積極的に顧客を管理できます。 
 
-詳細については、[Power BI コンテンツの与信および回収管理](../../financials/accounts-receivable/credit-collections-power-bi.md) を参照してください。
+詳細については、[与信および回収管理 Power BI コンテンツ](../../financials/accounts-receivable/credit-collections-power-bi.md) を参照してください。
 
 ### <a name="embedded-power-bi-reports-licensed-for-all-users"></a>すべてのユーザーに許可された埋め込み Power BI レポート
 
-Dynamics 365 for Operations (Dynamics AX 7.0 と呼ばれる) の 2016 年 8 月の更新プログラムで、ユーザーは Power BI レポートのページ全体をそのワークスペースにピン留めできるようになりました。 フル ページの対話型レポートでは、データを活用して、大量データの What-if 分析を実行することができます。 PowerBI.com のサブスクリプションが必要な Power BI レポートへのアクセスとピン留め。 Microsoft およびパートナー エコシステムによって追加のレポートが提供されるため、Power BI 機能は組織のすべてのユーザーにとって重要なレポート オプションになりつつあります。
+Dynamics 365 for Operations (Dynamics AX 7.0 と呼ばれる) の 2016 年 8 月の更新では、ユーザーは Power BI レポートの全ページをワークスペースに固定できます。 フル ページの対話型レポートでは、データを活用して、大量データの What-if 分析を実行することができます。 PowerBI.com のサブスクリプションが必要な Power BI レポートへのアクセスと固定を行います。 Microsoft およびパートナー エコシステムによって追加のレポートが提供されるため、Power BI 機能は組織のすべてのユーザーにとって重要なレポート オプションになりつつあります。
 
-すべてのユーザーは Dynamics 365 for Finance and Operations、Enterprise edition に含まれている運用データ ウェアハウスであるエンティティ格納に基づく Power BI レポートにアクセスできます。
+すべてのユーザーは Dynamics 365 for Finance and Operations、Enterprise Edition に含まれている運用データ ウェアハウスであるエンティティ格納に基づく Power BI レポートにアクセスできます。
 
 Finance and Operations アプリケーションに埋め込まれたこれらのレポートにアクセスするために必要な Power BI ライセンスはありません。 ユーザーは、このエンベデッド エクスペリエンス以外の Power BI レポートおよび機能にアクセスするには、Power BI ライセンスを別途取得する必要があります。 PowerBI.com からピン タイルおよびレポートに導入された機能は、引き続きサポートされます。
 
 ### <a name="embedded-practice-manager-power-bi-content"></a>埋め込みプラクティス マネージャー Power BI コンテンツ
 
-プラクティス マネージャー Power BI コンテンツ パックは、プロジェクト管理ワークスペースの **分析** タブに埋め込まれています。
+プラクティス マネージャー Power BI コンテンツ パックは、プロジェクト管理ワークスペースの**分析**タブに埋め込まれています。
 
 プラクティス マネージャー Power BI コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS.md) の共有アセット ライブラリにもあります。
 
-プラクティス マネージャー Power BI コンテンツは、プラクティス マネージャーおよびプロジェクト マネージャー用に作成されました。 組織が取り組んでいるプロジェクトに関連した主要メトリックスが提供されます。 コンテンツでは、プロジェクトおよび関連する顧客の概要を示します。 Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations のためにプロジェクト会計の集計の測定からデータを取得します。
+プラクティス マネージャー Power BI コンテンツは、プラクティス マネージャーおよびプロジェクト マネージャー用に作成されました。 組織が取り組んでいるプロジェクトに関連した主要メトリックスが提供されます。 コンテンツでは、プロジェクトおよび関連する顧客の概要を示します。 この Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations のプロジェクト会計集計の測定からデータを取得します。
 
 プラクティス マネージャー Power BI コンテンツには、5 つのレポート ページが含まれます。1 つの概要ページと、プロジェクト原価、収益、達成額管理、および時間測定値の詳細を示す 4 つのページで、さまざまな分析コードに分割されています。 詳細については、[プラクティス マネージャー Power BI コンテンツ](../../dev-itpro/analytics/practice-manager-power-bi.md) を参照してください。
 
@@ -526,11 +525,11 @@ Finance and Operations アプリケーションに埋め込まれたこれらの
 
 詳細については、[固定資産管理ワークスペース](../../financials/fixed-assets/fixed-asset-management-workspace.md) を参照してください。
 
-### <a name="power-bi-reporting-with-financial-dimensions"></a>財務分析コードを使用した Power BI のレポート
+### <a name="power-bi-reporting-with-financial-dimensions"></a>財務分析コードの Power BI レポート
 
 財務分析コードは、追加情報を保持する勘定科目表を有効にする、ユーザー定義された「コンフィギュレーション」データです。 財務分析コードを追加することにより、ユーザーは勘定科目表および財務諸表に含める追加のデータ フィールドを構成することができます。 これにより、元帳勘定科目表をそれらのフィールドで詳しく分析できます。
 
-これは、新しく追加された財務分析コードを使用して元帳データを調べることができるため、財務分析とレポート作成において非常に強力です。 この機能では、エンティティ格納が更新されるとき、すべての使用可能な財務分析コードが対応データ テーブル内で拡張されます。 ユーザーは、Power BI レポートを簡単によりくわしく分析することができます。
+これは、新しく追加された財務分析コードを使用して元帳データを調べることができるため、財務分析とレポート作成において非常に強力です。 この機能では、エンティティ格納が更新されるとき、すべての使用可能な財務分析コードが対応データ テーブル内で拡張されます。 ユーザーは、Power BI レポートを簡単により詳しく分析することができます。
 
 Finance における既存の Power BI レポートは、開発者が変更を加えなくてもこの機能からメリットを受けることができます。 ただし、パートナーまたは ISV 開発者として、エンティティ ストアに追加される財務分析コードを追加する方法をモデル化できます。 財務分析コード フィールドでバックアップされている集計の測定を定義するとき、エンティティ格納は、追加のテーブルとリレーションシップをデータ モデルに追加して、集計の測定を自動的に展開します。 
 
@@ -538,18 +537,18 @@ Finance における既存の Power BI レポートは、開発者が変更を�
 
 詳細については、[集計測定への務分析コードの追加](../../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md) を参照してください。
 
-### <a name="purchase-spend-analysis-power-bi-reports"></a>購買支出分析 Power BI レポート
+### <a name="purchase-spend-analysis-power-bi-reports"></a>購入支出分析 Power BI レポート
 
-Microsoft Power BI の購買先支出分析コンテンツ パックは購買部門のマネージャと予算を担当しているマネージャのために作成されました。 購買先支出を監視するために設計されました。 Dynamics 365 for Finance and Operations からの購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。 レポートでは時間経過に伴う購買支出の変化が強調表示されています。 そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。 チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。 カテゴリ マネージャおよび地域マネージャにとって、これらのチャートは支出行動の変化を識別するのに役立つかもしれません。 このコンテンツ パックを使用して、購買部門のマネージャーと予算を担当しているマネージャーは、次の方法で購入支出を分析できます。 
+Microsoft Power BI の購買先支出分析コンテンツ パックは購買部門のマネージャと予算を担当しているマネージャのために作成されました。 購買先支出を監視するために設計されました。 Dynamics 365 for Finance and Operations から購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。 レポートでは時間経過に伴う購買支出の変化が強調表示されています。 そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。 チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。 カテゴリ マネージャおよび地域マネージャにとって、これらのチャートは支出行動の変化を識別するのに役立つかもしれません。 このコンテンツ パックを使用して、購買部門のマネージャーと予算を担当しているマネージャーは、次の方法で購入支出を分析できます。 
 
 - 会計年度の購買 (仕入先グループと個々の仕入先、調達カテゴリと個々の製品、仕入先の場所)。
 - 前年比購買の変化 (仕入先グループと調達カテゴリ)。
 
 購買支出分析 Power BI コンテンツ パックは、Lifecycle Services (LCS) アセット ライブラリ経由で、Dynamics 365 for Finance and Operations の埋め込みレポートとして使用できます。
 
-詳細については、[Power BI のコンテンツ パックの購入](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md) を参照してください。
+詳細については、[Power BI の購買コンテンツ パック](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md) を参照してください。
 
-### <a name="purchasing-analysis-power-bi-content"></a>分析 Power BI コンテンツの購入
+### <a name="purchasing-analysis-power-bi-content"></a>購買分析 Power BI コンテンツ
 
 購買分析 Power BI コンテンツ パックは、購買マネージャーに、そのプロセスを合理化し、サプライヤーとの関係を築きながらキャッシュ フローを管理できるようにする高度な情報を与えます。
 
@@ -563,9 +562,9 @@ Power BI レポートでは、事前交渉された支払条件を遵守する�
 
 Power BI に組み込まれた包括的なレポート作成およびダッシュボード機能により、購買部門のマネージャはデータを監視、分析し、行動を起こすことができます。 IT のサポートを受けずにレポートや KPI を作成し、文脈的な洞察のためにワークスペースに固定配置することができます。
 
-### <a name="sales-and-profitability-performance-power-bi-reports"></a>販売および収益性パフォーマンス Power BI レポート
+### <a name="sales-and-profitability-performance-power-bi-reports"></a>販売と収益性のパフォーマンス Power BI レポート
 
-このコンテンツ パックは、販売マネージャが、収益、粗利益、および利益率の主要な販売メトリックスを監視するために作成されます。 Dynamics 365 for Finance and Operations, Enterprise edition からの販売トランザクション データを使用して、全社全体の販売実績、および顧客と製品の販売実績の内訳の両方の集計ビューを提供します。 時間経過に伴う収益および利益増加率の変更を強調表示することにより、マネージャーに個々の顧客や製品の正および負のトレンドに関して警告させるように、レポートを使用できます。 カテゴリおよび地域マネージャは、ラガードとリーダーを選び出すために、異なる製品カテゴリおよび顧客グループ同士の収益や収益性を比較するグラフが便利であることに気づきます。 顧客ごとの収益対利益率をプロットする包括的なレポートは、アカウント マネージャに、各顧客のそれぞれのプロファイルへ販売およびマーケティング活動を調和させるためにデータ サポートされた基盤を提供します。 販売および収益性パフォーマンス コンテンツ パックは、販売マネージャーが販売実績を次の方法で分析できるようにします。 
+このコンテンツ パックは、販売マネージャが、収益、粗利益、および利益率の主要な販売メトリックスを監視するために作成されます。 Dynamics 365 for Finance and Operations、Enterprise Edition から販売トランザクション データを使用して、全社全体の販売実績、および顧客と製品の販売実績の内訳の両方の集計ビューを提供します。 時間経過に伴う収益および利益増加率の変更を強調表示することにより、マネージャーに個々の顧客や製品の正および負のトレンドに関して警告させるように、レポートを使用できます。 カテゴリおよび地域マネージャは、ラガードとリーダーを選び出すために、異なる製品カテゴリおよび顧客グループ同士の収益や収益性を比較するグラフが便利であることに気づきます。 顧客ごとの収益対利益率をプロットする包括的なレポートは、アカウント マネージャに、各顧客のそれぞれのプロファイルへ販売およびマーケティング活動を調和させるためにデータ サポートされた基盤を提供します。 販売および収益性パフォーマンス コンテンツ パックは、販売マネージャーが販売実績を次の方法で分析できるようにします。 
 
 - 収益、年間累計 (顧客グループ、各顧客、販売カテゴリ、および個々の製品や地域による)。
 - 前年比収益の変更 (顧客および販売カテゴリによる)。
@@ -576,9 +575,9 @@ Power BI に組み込まれた包括的なレポート作成およびダッシ�
 - 粗利益は前年度と比べて変化します。
 - 顧客の収益性 (収益対粗利による) 。
 
-販売および収益性パフォーマンス Power BI コンテンツ パックは、Lifecycle Services (LCS) アセット ライブラリ経由で、Dynamics 365 for Finance and Operations の埋め込みレポートとして使用できます。
+販売と収益性パフォーマンスの Power BI コンテンツ パックは、Lifecycle Services (LCS) アセット ライブラリ経由で、Dynamics 365 for Finance and Operations の埋め込みレポートとして使用できます。
 
-詳細については、[販売および収益性パフォーマンス Power BI コンテンツ パック](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md) を参照してください。
+詳細については、[販売と収益性パフォーマンス Power BI コンテンツ パック](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md) を参照してください。
 
 ### <a name="vendor-payment-analysis-power-bi"></a>仕入先支払解析 Power BI
 
@@ -586,11 +585,11 @@ Power BI に組み込まれた包括的なレポート作成およびダッシ�
 
 詳細については、[仕入先の支払ワークスペース](../../financials/accounts-payable/Vendor-payments-workspace.md) を参照してください。
 
-### <a name="warehousing-power-bi-reports"></a>Warehousing Power BI レポート
+### <a name="warehousing-power-bi-reports"></a>倉庫 Power BI レポート
 
-Warehousing Power BI レポートでは、倉庫およびサプライ チェーンの管理者は豊富な視覚化機能およびダッシュボード機能を簡単に活用して、過去、現在および将来の倉庫のパフォーマンスを分析することができます。
+倉庫管理 Power BI レポートでは、倉庫およびサプライ チェーンの管理者は豊富な視覚化機能およびダッシュボード機能を簡単に活用して、過去、現在および将来の倉庫のパフォーマンスを分析することができます。
 
-倉庫マネージャーとオペレーション マネージャは、重要な入庫、出庫、および在庫の各指標を監視できます。 この機能は、Dynamics 365 for Finance and Operations の製品およびその他のトランザクション データを使用して、顧客、仕入先、製品グループ、製品サイト、および倉庫の倉庫パフォーマンスと内訳の両方の集計ビューを提供します。 詳細については、[倉庫パフォーマンス Power BI コンテンツ](../../dev-itpro/analytics/warehouse-power-bi-content.md) を参照してください。
+倉庫マネージャーとオペレーション マネージャは、重要な入庫、出庫、および在庫の各指標を監視できます。 この機能は、Dynamics 365 for Finance and Operations からの製品および他のトランザクション データを使用して、顧客、仕入先、製品グループ、製品サイト、および倉庫の倉庫パフォーマンスと内訳の両方の集計ビューを提供します。 詳細については、[倉庫パフォーマンス Power BI コンテンツ](../../dev-itpro/analytics/warehouse-power-bi-content.md) を参照してください。
 
 ## <a name="manufacturing"></a>製造
 
@@ -688,7 +687,7 @@ Warehousing Power BI レポートでは、倉庫およびサプライ チェー�
 
 ### <a name="upgrade"></a>アップグレード
 
-Dynamics AX 2012 から Dynamics 365 for Finance and Operations にアップグレードすることができます。 完全な Dynamics AX 2012 データベースを継承し、AX 2012 コードベース を Finance and Operations にアップグレードすることができます。 移行ツールセットを介して Dynamics AX 2009 から Finance and Operations に移行し、マスター データおよび開始残高を持ち出すことができます。
+Dynamics AX2012 から Dynamics 365 for Finance and Operations へ更新できます。 完全な Dynamics AX 2012 データベースを継承し、AX 2012 コードベース を Finance and Operations に更新することができます。 移行ツールセットを介して Dynamics AX 2009 から Finance and Operations に移行し、マスター データおよび開始残高を持ち出すことができます。
 
 アップグレードがより予測可能になり、アップグレード プロセスの全体的なコストが削減されます。 アップグレードは、自動分析フェーズで開始されます。このフェーズでは、アップグレードにかかる時間とコストを削減するために必要な準備作業と、Finance and Operations の継続的な将来のコストを定義します。 アップグレード後、自動検証フェーズでは、アップグレード プロセスの成功時に統計および測定値が表示されます。 検証の詳細を使用してアップグレードの状態を迅速に評価できるため、機能テストを続行してサインオフできます。
 
@@ -696,12 +695,12 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 
 詳細については、次のトピックを参照してください。
 
-- [AX 2012 から Dynamics 365 for Finance and Operations へのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
+- [AX 2012 から Dynamics 365 for Finance and Operations へ更新](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
 - [分析: アップグレード アナライザーを使用した移行作業の計画](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
 - [分析: コードのアップグレードの工数見積](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
 - [分析: サンドボックス環境の配置](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
 - [アップグレード: 開発環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/prepare-data-upgrade.md)
-- [アップグレード: AX 2012 データ アップグレード タスク](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
+- [更新: AX 2012 データ更新タスク](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
 - [アップグレード: サンドボックス環境でのデータ アップグレード](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
 - [検証: アップグレード プロセス後に完了するタスク](../../dev-itpro/migration-upgrade/app-validation-process.md)
 - 「[検証: 切替テスト](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)」
@@ -728,7 +727,7 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 
 統合を有効にするには、Dynamics 365 アドインがユーザーのクライアント Microsoft Project アプリケーションにインストールされている必要があります。 これは**プロジェクト管理ワークスペース**を使用して行われます。 **リンク**下の**設定**セクションにある**クライアント アドインの構成**リンクをクリックします。
 
-ドラフト ステータスの作業分解構造は、プロジェクト フォーム (**プロジェクト管理と会計\>プロジェクト\>すべてのプロジェクト**) から **Microsoft Project で開く**をクリックして Microsoft Project Client Application で開くことができます。または、**Dynamics 365 for Operations** タブの**開く**をクリックして Microsoft Project Client 内から開くこともできます。ユーザーは、リソースの割り当てを含む、ドラフトの作業分解構造に必要な変更を加えることができます。 プロジェクト チームがすでに Finance and Operations のプロジェクトに追加されている場合、リソース リストにはチームメンバーが配置されます。 プロジェクト チームがまだプロジェクトに追加されていない場合は、**Dynamics 365 for Operations** タブの**リソース** ボタンを選択して Microsoft Project Client 内のチームを作成することができます。作業内訳構造の編集は、Finance and Operations に公開されています。
+ドラフト ステータスの作業分解構造は、プロジェクト フォーム (**プロジェクト管理と会計\>プロジェクト\>すべてのプロジェクト**) から **Microsoft Project を開く**をクリックして Microsoft Project Client Application で開くことができます。または、**Dynamics 365 for Operations** タブで**開く**をクリックして Microsoft Project Clientin 内から開くこともできます。ユーザーは、リソースの割り当てを含む、ドラフトの作業分解構造に必要な変更を加えることができます。 プロジェクト チームがすでに Finance and Operations のプロジェクトに追加されている場合、リソース リストにはチームメンバーが配置されます。 プロジェクト チームがまだプロジェクトに追加されていない場合は、**Dynamics 365 for Operations** タブの**リソース**ボタンを選択して Microsoft Project Client 内のチームを作成することができます。作業内訳構造の編集は、Finance and Operations に公開されています。
 
 ### <a name="project-time-entry-mobile-workspace"></a>プロジェクト時間入力モバイル ワークスペース
 
@@ -742,7 +741,7 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 - プロジェクトに支払請求可能または非請求可能として時間を記録します。
 - 必要に応じて外部または内部コメントを入力します。
 
-**プロジェクト時間入力**モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](../../financials/project-management/project-time-entry-mobile-workspace.md) を参照してください。
+**プロジェクト タイム エントリ**モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](../../financials/project-management/project-time-entry-mobile-workspace.md) を参照してください。
 
 ### <a name="rename-project-stages"></a>プロジェクト ステージの名前の変更
 
@@ -788,7 +787,7 @@ POS 機能拡張フレームワークが再設計され、開発者エクスペ�
 
 **コードは Retail SDK から封印または削除されていますが、引き続き拡張ポイントと API を通じて拡張機能をサポートしています。新しいモデルでは、拡張パターンに従って、インラインで変更することなく製品をカスタマイズします。**
 
-すべての小売コンポーネントは完全に封緘され、インライン変更はサポートされず、このリリースで始まります。 任意の拡張機能については、拡張性パターンに従い、それを拡張する必要があります。 上記の小売コンポーネントのシールに加えて、本社もシールされます (オーバーレイなし)。 Dynamics 365 for Retail では、拡張性は拡張機能を通じてのみサポートされます。
+すべての小売コンポーネントは完全に封緘され、インライン変更はサポートされず、このリリースで始まります。 任意の拡張機能については、拡張性パターンに従い、それを拡張する必要があります。 上記の小売コンポーネントのシールに加えて、本社もシールされます (オーバーレイなし)。 Dynamics 365 for Retail では、拡張性は拡張子を通じてのみサポートされています。
 
 ### <a name="configuration-driven-extension"></a>コンフィギュレーション駆動型の拡張機能
 
@@ -837,7 +836,7 @@ CRT データ サービスは、カスタム拡張シナリオを実行するた
 
 ### <a name="retail-peripheral-compatibility"></a>小売の周辺機器互換性
 
-Dynamics 365 for Retail および Dynamics 365 for Finance and Operations に含まれている Retail の周辺機器シミュレーターでは、以前にリリースされた周辺機器シミュレーターの重要な更新プログラムが導入されています。 Retail の周辺機器シミュレーターの新機能は、それらのコンポーネントを配置する必要なく、Modern 販売時点管理およびハードウェア ステーションとの互換性について周辺機器をテストできる販売時点管理シミュレーターです。
+Dynamics 365 for Retail および Dynamics 365 for Finance and Operations に含まれる小売の周辺機器シミュレーターでは、以前にリリースされた周辺機器シミュレーションに重要な更新を紹介します。 Retail の周辺機器シミュレーターの新機能は、それらのコンポーネントを配置する必要なく、Modern 販売時点管理およびハードウェア ステーションとの互換性について周辺機器をテストできる販売時点管理シミュレーターです。
 
 シナリオに応じて、POS シミュレーターは、Modern POS に組み込まれた周辺ビジネス ロジックをシミュレートしたり、POS 周辺機器と相互作用するようにスタンドアロン ハードウェア ステーションをシミュレートすることができます。 従来、販売時点管理との互換性のためのデバイスのテストには、バック オフィスの展開、それに続く販売時点管理アプリケーションの設定と展開が必要でした。 販売時点管理シミュレーション機能では、互換性のための周辺機器テストのための製品知識またはアクセスが必要なくなりました。 これにより周辺機器メーカーは、物理デバイスを Microsoft または ISV に出荷してテストする必要なく、デバイスの互換性をテストできます。
 
@@ -891,11 +890,11 @@ Microsoft により以前にテストされた周辺機器の詳細について�
 
 ### <a name="upgrade-and-support-for-previous-versions"></a>アップグレードおよび以前のバージョンのサポート
 
-**アップグレード サポート** – Dynamics AX 2012 には、転記済みまたは未転記の履歴データがすべてアップグレードされた小売のデータ アップグレードを実行するオプションがありました。 現在は、Dynamics AX 2012 R3 から現在のバージョンの Dynamics 365 for Retail にアップグレードできます。 このプラットフォームは、アップグレードに対して、Dynamics AX 2012 R3 のすべての累積的な更新プログラムのバージョンをサポートします。一部の顧客では、既存の Dynamics AX 2012 R3 バージョンで、バック オフィスとチャンネル側がまとめてアップグレードされますが、その他の顧客は N-1 サポートを活用できます。 HQ のデータベースのアップグレードの視点からのすべての Dynamics AX 2012 R3 バージョンをサポートします。 N-1 をサポートしない Dynamics 365 for Retail にアップグレードする場合、小売業者は HQ とチャンネルの両方をアップグレードします。
+**更新サポート** – Dynamics AX 2012 では、転記済みまたは未転記の履歴データがすべてアップグレードされた小売のデータ アップグレードを実行するオプションがありました。 Dynamics AX2012 R3 から Dynamics 365 for Retail の現在のバージョンに更新できます。 このプラットフォームは、アップグレードに対して、Dynamics AX 2012 R3 のすべての累積的な更新プログラムのバージョンをサポートします。一部の顧客では、既存の Dynamics AX 2012 R3 バージョンで、バック オフィスとチャンネル側がまとめてアップグレードされますが、その他の顧客は N-1 サポートを活用できます。 HQ のデータベースのアップグレードの視点からのすべての Dynamics AX 2012 R3 バージョンをサポートします。 N-1 をサポートしない Dynamics 365 for Retail にアップグレードする場合、小売業者は HQ とチャンネルの両方をアップグレードします。
 
 Retail ユーザーは、Dynamics AX 2012 R3 CU11 以上を使用している場合、既存の店舗に影響を与えずに新しい HQ に対して実行するには、N-1 サポートのオプションを選択することもできます。 HQ でデータベースのアップグレードが完了した後、新しい Dynamics 365 Retail チャネルのサイド コンポーネントは、LCS 手法の一部として行われるため、新しいチャネルはアップグレードされた DB で使用できます。 小売業者は、HQ にアップグレードするときに、チャンネルの N-1 サポートを希望する場合は、チャンネルが 2012 R3 CU11 以上の値であることを確認する必要があります。
 
-**以前のバージョンのサポート** – Dynamics AX 2012 R3 を Dynamics 365 for Retail にアップグレードできます。 N-1 のサポートによって、既存の Dynamics AX 2012 の顧客は現在の業務プロセスへの影響を最小限にしつつ、より早くにクラウドを採用できるようになります。 N-1 のサポートによって、既存の Dynamics AX 2012 R3 CU 11 および CU12 の顧客は、Dynamics AX 2012 R3 CU 11 または CU12 で店舗を運営しつつ、Dynamics 365 Operations をハイブリッド モデルで HQ として使用して、ビジネスにおけるクラウドの利点を活用できるようになります。 これらすべては既存のインフラストラクチャを中断することなく行われます。 初期フェーズについては、N-1 サポートの Dynamics AX 2012 R3 CU 11 および 12 リリースで、顧客を対象としています。Dynamics AX 2012 のストア システムはオンプレミスで配分されているため、CU 11 および CU 12 バージョンにアップグレードした後 Dynamics 365 Operations HQ に接続する顧客の既存の Dynamics 2012 R3 ストア システムをサポートします。 これにより、店舗運営の混乱を最小限にできます。
+**以前のバージョンのサポート** – Dynamics AX 2012 R3 を Dynamics 365 for Retail へ更新できます。 N-1 のサポートによって、既存の Dynamics AX 2012 の顧客は現在の業務プロセスへの影響を最小限にしつつ、より早くにクラウドを採用できるようになります。 N-1 のサポートによって、既存の Dynamics AX 2012 R3 CU 11 および CU12 の顧客は、Dynamics AX 2012 R3 CU 11 または CU12 で店舗を運営しつつ、Dynamics 365 Operations をハイブリッド モデルで HQ として使用して、ビジネスにおけるクラウドの利点を活用できるようになります。 これらすべては既存のインフラストラクチャを中断することなく行われます。 初期フェーズについては、N-1 サポートの Dynamics AX 2012 R3 CU 11 および 12 リリースで、顧客を対象としています。Dynamics AX 2012 のストア システムはオンプレミスで配分されているため、CU 11 および CU 12 バージョンにアップグレードした後 Dynamics 365 Operations HQ に接続する顧客の既存の Dynamics 2012 R3 ストア システムをサポートします。 これにより、店舗運営の混乱を最小限にできます。
 
 N-1 サポートを有効にするには、Dynamics AX 2012 R3 CU 11 または CU12 ストアを新しい HQ に接続するための N-1 コンポーネントをインストールする必要があります。 顧客は、事前 CU 11バージョンを使用している場合、少なくとも Dynamics AX 2012 R3 CU 1 にアップグレードし、N-1 サポートを利用する必要があります。
 
@@ -935,24 +934,24 @@ N-1 サポートを有効にするには、Dynamics AX 2012 R3 CU 11 または C
 
 ### <a name="product-work-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品動作の確認
 
-Dynamics 365 for Finance and Operations は、クラスター ピッキング フローで項目のスキャンと検証をサポートするようになりました。
+Dynamics 365 for Finance and Operations では、クラスター ピッキング フローで品目をスキャンし、検証をサポートします。
 
 クラスタ ピッキングが適用される場合、クラスタに追加される品目を確認するための品目確認書は重要です。 クラスター ピッキング プロセス中にクラスター ピッキングの品目を確認することができるようになりました。 以前のバージョンでは、品目バーコードを確認し、バーコード スキャナーを使用して品目を検証できませんでした。 詳細については、[クラスター ピッキングの製品の確認](../../supply-chain/warehousing/cluster-picking-item-confirmation.md) を参照してください。
 
 ### <a name="prospect-to-cash-integration-capabilities"></a>見込顧客リストから現金化への統合
 
-見込顧客リストから現金化への統合機能は、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations Enterprise エディションの間に最初のパーティ統合を提供します。
+キャッシュ統合機能の見込顧客は、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise Edition 間で最初の関係者の統合を配送します。
 
-このソリューションは、個々の Dynamics 365 コンポーネントの強みを活用し、Common Data Service (CDS) を介してそれらを接続します。 データが Finance and Operations と Dynamics 365 for Sales との間をシームレスに流れている間、顧客は Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文の履行を処理することができます。 このソリューションは、サードパーティのソリューションに依存することなく、柔軟なソリューションとの強力な統合と統合プロセスの簡素化を実現します。 これらの進歩は、企業と労働者がより多くを達成するのに役立つ大幅な生産性の向上をもたらした、両世界のベストを提供します。
+このソリューションは、個々の Dynamics 365 コンポーネントの強みを活用し、Common Data Service (CDS) を介してそれらを接続します。 データは Finance and Operations と Dynamics 365 for Sales との間をシームレスに流れていますが、顧客は Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文の履行を処理することができます。 このソリューションは、サードパーティのソリューションに依存することなく、柔軟なソリューションとの強力な統合と統合プロセスの簡素化を実現します。 これらの進歩は、企業と労働者がより多くを達成するのに役立つ大幅な生産性の向上をもたらした、両世界のベストを提供します。
 
 - Dynamics 365 for Sales でアカウントを管理し、顧客として Finance and Operations に同期させます。
-- Dynamics 365 for Sales で連絡先を管理し、Finance and Operations に同期させます。
-- Finance and Operations で製品を管理し、Dynamics 365 for Sales で同期させます。
-- Dynamics 365 for Sales で見積を作成し、Finance and Operations に同期させます。
-- Finance and Operations で販売注文を生成し、Dynamics 365 for Sales に同期させます。
-- Finance and Operations で見積を作成し、Dynamics 365 for Sales に同期させます。
+- Dynamics 365 for Sales で連絡先を管理、および Finance and Operations へ同期します。
+- Finance and Operations で製品を管理し、Dynamics 365 for Sales へ同期します。
+- Dynamics 365 for Sales で見積を作成し、Finance and Operations へ同期します。
+- Finance and Operations で販売注文を作成し、Dynamics 365 for Sales へ同期します。
+- Finance and Operations で請求書を作成し、Dynamics 365 for Sales へ同期します。
 
-**Common Data Service の機能を使用してデータに簡単にアクセスする**
+**Common Data Service の機能を使用してデータへ簡単にアクセス**
 
 このソリューションは Azure Public Cloud の力を活用し、組み合わせたデータは Common Data Service を介して利用可能になります。 これにより、ビジネス ユーザーは、Power Apps、Power BI を使用して統一された Sales and Operations データにアクセスし、視覚化し、共有し、変更したり、さまざまなビジネス プロセスにあらかじめ定義されたテンプレートを使用してフローを使用してワークフローの自動化を作成できます。 これにより、Power BI ダッシュボードを使用すると、2 つのシステム間でビジネス プロセス情報をより正確に把握できるようになります。
 
@@ -962,7 +961,7 @@ Dynamics 365 for Finance and Operations は、クラスター ピッキング �
 
 **拡張されたシステムと柔軟な設定**
 
-統合には、経験を最適化するための豊富なソリューションがあり、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations との間の複雑なプロセスフローを可能にします。 Finance and Operations は拡張されたエンティティで整合性をサポートするため最適化されており、Dynamics 365 for Sales はソリューションで最適化されています。
+統合に豊富なソリューションを付属して、エクスペリエンスを最適化し、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations 間の複雑なプロセス フローを許可します。 Finance and Operations は拡張されたエンティティで整合性をサポートするため最適化されており、Dynamics 365 for Sales はソリューションで最適化されています。
 
 追加情報については、 [見込顧客を現金化](../..//supply-chain/sales-marketing/prospect-to-cash.md) を参照してください。
 
@@ -1018,4 +1017,3 @@ cXML プロトコルは、Finance and Operations と仕入先のシステムに�
 - 出庫フローの分割ロード シナリオをサポートします。
 - 完成品の一部分をリリースし、操作番号ごとにリリースすることを許可します。
 - 完了したとして報告する際に、便乗の X ドックの部分量を転送することを許可します。
-

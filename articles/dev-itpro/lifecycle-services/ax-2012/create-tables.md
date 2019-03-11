@@ -1,13 +1,13 @@
 ---
-title: "アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する"
-description: "このトピックでは、アプリケーション オブジェクト ツリー (AOT) を使用してデータを格納するテーブルを作成する方法について説明します。"
+title: アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する
+description: このトピックでは、アプリケーション オブジェクト ツリー (AOT) を使用してデータを格納するテーブルを作成する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18161
 ms.assetid: 96e1f184-d049-46c3-a4ef-12641361f356
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 36ff012c58152eb3b29a346269f7f5daa1d00b8f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368408"
 ---
-
 # <a name="create-tables-by-using-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する
 
 [!include [banner](../../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 
 | **メモ**                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 新しいテーブルを作成する前に、Microsoft Dynamics AX に付属のテーブルを確認して既存のテーブルを使用できるかどうかを決定してください。 詳細については、「[アプリケーション テーブル](http://msdn.microsoft.com/library/a905f039-ef71-4c61-8f3f-71dadf27b09e(AX.60).aspx)」を参照してください。 |
+| 新しいテーブルを作成する前に、Microsoft Dynamics AX に付属のテーブルを確認して既存のテーブルを使用できるかどうかを決定します。 詳細については、「[アプリケーション テーブル](http://msdn.microsoft.com/library/a905f039-ef71-4c61-8f3f-71dadf27b09e(AX.60).aspx)」を参照してください。 |
 
 テーブル フィールドは、プリミティブ データ型または拡張データ型に基づいています。 詳細については、[プリミティブ データ型](http://msdn.microsoft.com/library/29e7d464-b72d-4a86-a982-12f9e90e704e(AX.60).aspx) および [方法: 拡張データ型の作成](http://msdn.microsoft.com/library/6292481f-1d73-46e9-8b46-18ab7de9a71d(AX.60).aspx) を参照してください。 AutoReport および AutoLookup グループは、テーブルを作成するときに自動的に作成されます。 詳細については、[フォームの自動レポートの実装](http://msdn.microsoft.com/library/86ee1f62-8325-4bcb-a884-a5ae521355c8(AX.60).aspx) および [方法: ルックアップ フォームでコントロールの追加](http://msdn.microsoft.com/library/2e365e4b-842a-44eb-b0fa-6fa4c8c1e0fe(AX.60).aspx) を参照してください。 AOT オブジェクトの変更を管理するために、バージョン管理システムが利用できます。 詳細については、[バージョン管理システム](http://msdn.microsoft.com/library/522708f8-80a0-4bfd-9634-b7cb868d1874(AX.60).aspx) を参照してください。
 
@@ -72,7 +71,6 @@ ms.lasthandoff: 08/09/2018
 [方法: インデックスを作成する](http://msdn.microsoft.com/library/5c412c46-724b-4498-ab42-51725f15c71a(AX.60).aspx)
 
 [テーブル、ビュー、およびマップ](http://msdn.microsoft.com/library/9c62bde0-46a1-4b48-87b2-778a68627cd1(AX.60).aspx)
-
 
 
 

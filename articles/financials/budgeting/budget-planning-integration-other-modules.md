@@ -1,13 +1,13 @@
 ---
-title: "他のモジュールとの予算計画の統合"
-description: "予算計画はいくつかの異なるリソースから生成することもできます。 定期的なプロセスの基本要素は、すべてのリソースと同じです。"
+title: 他のモジュールとの予算計画の統合
+description: 予算計画はいくつかの異なるリソースから生成することもできます。 定期的なプロセスの基本要素は、すべてのリソースと同じです。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 97c33a222d31e690d2a395f972c0ddc4b89e8fdb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353037"
 ---
-
 # <a name="budget-planning-integration-with-other-modules"></a>他のモジュールとの予算計画の統合
 
 [!include [banner](../includes/banner.md)]
@@ -145,7 +144,6 @@ ms.lasthandoff: 05/08/2018
 **供給予測**と**需要予測**ボタンを使用してクエリを実行します。 どちらの場合も、クエリは、予算計画明細行を作成する可能性がある予測明細行を検索します。 
 
 **予算計画別予測職位**レポートを含む追加のレポートが使用できます。 このレポートは、職位が予算計画に正しく割り当てられたどうかを特定する場合に特に役立ちます。
-
 
 
 

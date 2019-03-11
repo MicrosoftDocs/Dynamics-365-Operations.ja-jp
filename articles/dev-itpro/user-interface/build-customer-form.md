@@ -1,13 +1,13 @@
 ---
-title: "顧客フォームの構築"
-description: "このラボでは、マスター詳細フォームを作成し、適切なフォームのパターンおよびサブパターンを適用します。 マスター詳細フォームには、多数のフィールドが含まれるプライマリ データが表示されます。 たとえば、作成するフォームは、顧客情報を表示します。"
+title: 顧客フォームの構築
+description: このラボでは、マスター詳細フォームを作成し、適切なフォームのパターンおよびサブパターンを適用します。 マスター詳細フォームには、多数のフィールドが含まれるプライマリ データが表示されます。 たとえば、作成するフォームは、顧客情報を表示します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a0b71da3ba67604138cdef3ab2dc3abcf96a7647
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d75e76c09ab179240dc980adad9239e65d80856f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368813"
 ---
-
 # <a name="build-the-customer-form"></a>顧客フォームの構築
 
 [!include [banner](../includes/banner.md)]
@@ -49,10 +48,10 @@ ms.lasthandoff: 04/20/2018
 -   Visual Studio とブラウザーを使用してフォームを表示します。
 -   モデル内で残っているパターンの作業の量を決定します。
 
-## <a name="setup"></a>段取り
+## <a name="setup"></a>セットアップ
 ### <a name="import-the-tutorial-project-and-transactional-data"></a>チュートリアル プロジェクトおよびトランザクション データのインポート
 
-Visual Studio を使用して、チュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。 これが作業する最初のチュートリアルである場合は、[アクセス インスタンス](../dev-tools/access-instances.md)を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。
+Visual Studio を使用してチュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。 これが作業する最初のチュートリアルである場合は、[アクセス インスタンス](../dev-tools/access-instances.md)を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。
 
 1.  フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
 2.  デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
@@ -70,15 +69,15 @@ Visual Studio を使用して、チュートリアル プロジェクトをイ�
 11. ビルドが完了すると、**Ctrl + F5** を押してプロジェクトを実行します。 ブラウザーが開き、データをインポートするクラスが実行されます。
 
 ## <a name="open-the-fmtutorial-project"></a>FMTutorial プロジェクトを開く
-Visual Studio を使用して、FMTutorial プロジェクトを開きます。 Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。
+Visual Studio を使用して FMTutorial プロジェクトを開きます。 Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。
 
-1.  開発環境がまだ開いていない場合は、デスクトップで開発環境への Visual Studio ショートカットをダブルクリックします。
+1.  開発環境がまだ開いていない場合は、デスクトップで開発環境への Visual Studio ショートカットをダブルクリックして開発環境を開きます。
 2.  **ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックします。
 3.  **プロジェクトを開く**ダイアログ ボックスで、C:\FmLab\FMTutorial を参照し、**FMTutorial** ソリューションを選択してから**開く**をクリックします。
 4.  FMTutorial プロジェクトが**ソリューション エクスプローラー**に表示されます。
 
 ## <a name="use-a-template-to-create-the-form"></a>テンプレートを使用してフォームを作成
-Visual Studio を使用し、**FmtCustomer** フォームを作成します。 テンプレートを使用して、新しいマスターの詳細フォームを作成します。 このチュートリアルのデータ ソースは、スターター形式によって提供されています。 ただし、グリッドと詳細ビューにフィールドを追加し、マスター詳細フォーム パターンを適用します。
+Visual Studio を使用して **FmtCustomer** フォームを作成します。 テンプレートを使用して、新しいマスターの詳細フォームを作成します。 このチュートリアルのデータ ソースは、スターター形式によって提供されています。 ただし、グリッドと詳細ビューにフィールドを追加し、マスター詳細フォーム パターンを適用します。
 
 1.  **ソリューション エクスプローラー**で、**FMTutorial** プロジェクトを右クリックして**追加**をポイントしてから**既存の項目**をクリックします。
 2.  **既存の品目を追加**ウィンドウで、C:\FmLab を参照し、**AxForm\_FmtCustomer** を選択してから**追加**をクリックします。 ソリューション エクスプローラーの **FMTutorial** プロジェクトの下に **FmtCustomer** フォームが表示されます。
@@ -130,7 +129,7 @@ Visual Studio を使用し、**FmtCustomer** フォームを作成します。 �
 
     [![CustForm4](./media/custform4-1024x567.png)](./media/custform4.png)
 
-3.  アプリケーション バーで、**Microsoft Office を開く** &gt; **Excel にエクスポート&gt;顧客**をクリックして、グリッド ビューの情報を Microsoft Excel スプレッドシートに送信します。 (ページを終了するかどうかを確認するダイアログが表示されたら、「このページを終了」をクリックします。) 求められたら、**開く**をクリックして Excel でデータを表示します。
+3.  アプリケーション バーで、**Microsoft Office を開く** &gt; **Excel にエクスポート &gt; 顧客** をクリックして、グリッド ビューの情報を Microsoft Excel スプレッドシートに送信します。 (ページを終了するかどうかを確認するダイアログが表示されたら、「このページを終了」をクリックします。) 求められたら、**開く**をクリックして Excel でデータを表示します。
 4.  Excel を閉じます。
 5.  **Tony** をクリックしてそのレコードの詳細ビューに移動します。 
 
@@ -259,7 +258,7 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 5.  Visual Studio に戻ります。
 
 ## <a name="add-subpatterns"></a>サブパターンの追加
-1.  Visual Studio のフォーム デザイナーで、**FmtCustomer** を右クリックし、**アドイン**をポイントしてから、**フォーム統計情報**を選択します。 
+1.  Visual Studio の、フォーム デザイナーで、**FmtCustomer** を右クリックして **アドイン** をポイントしてから、**フォーム統計情報** を選択します。 
 
     [![CustForm26](./media/custform26.png)](./media/custform26.png) 
 
@@ -309,7 +308,6 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 
 レポートには、現在適用されている最上位のフォーム パターンと、パターンでカバーされているフォーム上のコントロールの割合など、このモデルのフォームに関するパターン関連の情報が表示されます。 これは、1 つまたは複数のモデルの残りのパターンの作業を追跡するために使用できます。  
-
 
 
 

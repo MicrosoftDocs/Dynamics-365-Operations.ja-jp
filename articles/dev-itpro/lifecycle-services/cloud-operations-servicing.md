@@ -1,37 +1,37 @@
 ---
-title: "クラウドの工程とサービス"
-description: "Finance and Operations は、管理されたサービスとしての Microsoft のクラウド ERP です。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。"
+title: クラウドの工程とサービス
+description: Finance and Operations は、管理されたサービスとしての Microsoft のクラウド ERP です。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
 author: manalidongre
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1694da47da89f742be76c35a89ec7a9b51fc2af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 68f09306be3b06fc1bcdcc8b703df93323485f8f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368923"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
 [!include [banner](../includes/banner.md)]
 
-この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームでアクションのほとんどがセルフ サービスとなるよう確認する必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
+この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
-Microsoft Dynamics 365 for Finance and Operations のクラウド バージョンにおいて、クラウド サービスに対する正常なオンボーディング体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、[モニタリングおよび診断](monitoring-diagnostics.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations のクラウド バージョンで、クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、[モニタリングおよび診断](monitoring-diagnostics.md) を参照してください。
 
 ## <a name="update-your-environment"></a>環境の更新
 Go-Live の後、実稼働環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
@@ -43,7 +43,7 @@ Go-Live の後、実稼働環境は定期的に更新する必要があります
 - **アプリケーション**
   - アプリケーション修正プログラムはアプリケーションの問題を処理する X++ 修正プログラムです。
   - アプリケーションのカスタマイズは、パートナー/ISV が Microsoft により出荷する基本製品で開発するカスタマイズです。
-  - アプリケーションの新規リリース。 このような更新プログラムの詳細については、[Microsoft Dynamics 365 for Finance and Operations の最新の更新への移動の概要](../migration-upgrade/upgrade-latest-update.md) を参照してください。
+  - アプリケーションの新規リリース。 このような更新プログラムの詳細については、[Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md) の最新の更新プログラムへの移行の概要を参照してください。
 
 **クラウド インフラストラクチャ**
 - Microsoft は環境のインフラストラクチャの管理について責任を負います。 このため、計画済みメンテナンス ウィンドウで月ごとに実行される必要のあるオペレーティング システムの更新などの特定の更新があります。 その他の種類の更新プログラムには、インフラストラクチャ コンポーネントへの変更が含まれます。 
@@ -59,7 +59,7 @@ Go-Live の後、実稼働環境は定期的に更新する必要があります
   - プラットフォーム更新プログラム: プラットフォーム更新プログラムは累積的かつバイナリです。 つまり、プラットフォームの更新を環境に直接適用できます。 プラットフォームの更新プログラムがダウンロードされた後、アセット ライブラリを自動的に環境に適用させアップロードすることができます。
   - アプリケーションの修正プログラム: アプリケーションの修正プログラムはコードの変更です。 アプリケーションの修正プログラムをダウンロードした後、開発環境に適用して、配置可能なパッケージを生成する必要があります。 詳細については、[配置可能なパッケージの作成と適用](../deployment/create-apply-deployable-package.md) および [メタデータ修正プログラムのインストール](../migration-upgrade/install-metadata-hotfix-package.md) を参照してください。
   - アプリケーションのカスタマイズ: ISV またはパートナーが作成するカスタマイズです。 これらは展開可能なパッケージで、アセット ライブラリにアップロードされ、そこから適用することができます。
-- **更新の適用** Finance and Operations システムの配置可能パッケージを適用する手順については、[Finance and Operations 環境用の Microsoft Dynamics 365 で配置可能パッケージを適用する](../deployment/apply-deployable-package-system.md) トピック内の情報を使用してください。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
+- **更新の適用** [Microsoft Dynamics 365 for Finance and Operations 環境での配置可能パッケージの適用](../deployment/apply-deployable-package-system.md) トピック内の情報を使用して、Finance and Operations システムで配置可能パッケージを適用する手順を説明します。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
 - **更新の検証**更新の適用後、アプリケーションを検証する必要があります。
   - 更新プログラムが適用された問題を解決することを確認します。
   - 更新プログラムの適用によって回帰が発生していないことを確認します。
@@ -74,10 +74,9 @@ Dynamics 365 for Operation インスタンスを最新バージョンにアッ�
 これらは、ある環境から別の環境にデータベースをコピーする機能や、データベースを以前の状態に復元する機能など、データベースを管理するためのオプションです。
 - データベースの更新: 生産データベースのコピーを使用して、サンドボックス環境を更新します (Prod から Sandbox へのデータベース復元)。 データベースを Azure SQL データベース環境から他の場所にコピーするため、LCS でデータベースの更新要求を送信することができます。
 - ポイントインタイム復元: 非実稼働データベースを、リクエストから 35 日前までの特定の時点に復元するリクエストを送信できます。 データベース ポイントインタイム復元の詳細については、[非実稼働環境でのポイントインタイム データベース復元の要求](../database/request-point-in-time-restore.md) を参照してください。
-- データベースを Azure SQL データベースから SQL Server へ、またはその逆にエキスポートします。 詳細については、[Microsoft Dynamics 365 for Finance and Operations を SQL Server から Azure SQL データベース環境へのコピー](../database/copy-database-from-sql-server-to-azure-sql.md) および [Microsoft Dynamics 365 for Finance and Operations を Azure SQL データベースから SQL Server 環境へのコピー](../database/copy-database-from-azure-sql-to-sql-server.md) を参照してください。
+- データベースを Azure SQL データベースから SQL Server へ、またはその逆にエキスポートします。 詳細については、[SQL Server から Azure SQL データベース環境に Microsoft Dynamics 365 for Finance and Operations データベースをコピーする](../database/copy-database-from-sql-server-to-azure-sql.md)および[Azure SQL データベースから SQL Server 環境に Microsoft Dynamics 365 for Finance and Operations データベースをコピーする](../database/copy-database-from-azure-sql-to-sql-server.md)を参照してください。
 
 ## <a name="sign-up-for-cloud-operations-notifications"></a>クラウド操作通知にサインアップします。
 パッケージ アプリケーションのステータスが変更されると、LCS はプロジェクト内のすべてのユーザーに通知を送信します。 通知される追加の利害関係者は、通知リストに指定する必要があります。
 1. 利害関係者を追加するには、LCS の [環境詳細] ビューで [通知一覧] をクリックします。
 2. 通知する必要がある各ユーザーの電子メール アドレスを追加して、保存をクリックします。
-

@@ -1,13 +1,13 @@
 ---
-title: "N クラス"
-description: "文字 N で始まるシステム API クラス。"
+title: N クラス
+description: 文字 N で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 40bb5859dc9249fe0bc819854335d1197fe19988
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369573"
 ---
-
 # <a name="n-classes"></a>N クラス
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                                                                | 説明                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -160,7 +159,6 @@ blockSize
 NumberSequenceSessionLessCache クラスの新しいインスタンスを初期化します。
 
     public void new()
-
 
 
 

@@ -1,33 +1,32 @@
 ---
-title: "Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合"
-description: "このトピックでは、Talent と Finance and Operations の統合について説明します。"
+title: Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合
+description: このトピックでは、Talent と Finance and Operations の統合について説明します。
 author: jcart
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2018-10-8
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: ab6f4393cfc83aa9ab39dd3759a590fa4b5301b4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369880"
 ---
-
 # <a name="integration-from-dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Talent と Dynamics 365 for Finance and Operations の統合のために使用できる機能について説明します。 [データ インテグレーター](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)と共に使用可能な Talent から Finance and Operations へのテンプレートにより、ジョブ、職位、および作業者のデータのフローが可能になります。 Talent から Finance and Operations へのデータ フロー。 テンプレートでは、Finance and Operations から Talent にデータを戻す機能は提供されません。 
+このトピックでは、Dynamics 365 for Talent および Dynamics 365 for Finance and Operations から統合できる機能について説明します。 [データ インテグレーター](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)と共に使用可能な Talent から Finance and Operations へのテンプレートにより、ジョブ、職位、および作業者のデータのフローが可能になります。 Talent から Finance and Operations へのデータ フロー。 テンプレートでは、Finance and Operations から Talent にデータを戻す機能は提供されません。 
 
 ![Talent のから Finance and Operations への統合フロー](./media/TalentFinOpsFlow.png)
 
@@ -40,7 +39,7 @@ Talent から Finance and Operations へのソリューションは、次のタ�
 
 ## <a name="system-requirements-for-talent"></a>Talent のシステム要件
 統合ソリューションには、次のバージョンの Talent および Finance and Operations アプリケーションが必要です。 
-- CDS for Apps の Dynamics 365 for Talent。
+- アプリ用 CDS 上の Dynamics 365 for Talent。
 - Dynamics 365 for Finance and Operations バージョン 7.2 以降。
 
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
@@ -84,7 +83,6 @@ Talent から Finance and Operations にデータを統合する場合は、統�
 次の図は、データ インテグレーターのテンプレート マッピングの例を示しています。 
 
 ![テンプレートのマッピング](./media/IntegrationMapping.png)
-
 
 
 

@@ -1,28 +1,27 @@
 ---
-title: "PageLink タイプ"
-description: "Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。"
+title: PageLink タイプ
+description: Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 6a2f7c4c628bb70d222e5063a9a1aac4e7dc55a6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369193"
 ---
-
 # <a name="pagelink-type"></a>PageLink タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -142,7 +141,7 @@ getCount(): number &#124; string
 
 
 
-#### <a name="returns-number-124-string"></a>number &#124; string を返します
+#### <a name="returns-number-124-string"></a>Returns number &#124; string
 
 ### <a name="getdesign"></a>getDesign
 
@@ -230,5 +229,4 @@ showCount(): boolean
 
 
 #### <a name="returns-boolean"></a>ブール値を返します
-
 

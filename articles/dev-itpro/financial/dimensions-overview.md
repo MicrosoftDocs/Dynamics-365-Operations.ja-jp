@@ -1,13 +1,13 @@
 ---
-title: "Excel テンプレートへの分析コードの追加"
-description: "このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。"
+title: Excel テンプレートへの分析コードの追加
+description: このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: e945f2cce91704e9cc95e49e397f08cde00e5e7f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368754"
 ---
-
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ ms.lasthandoff: 08/09/2018
 
 **注記:** この情報は、リリースごとに変更されることがあります。 したがって、頻繁に最新の情報を確認してください。
 
-## <a name="add-dimensions--dynamics-365-for-operations-version-1611-build-7115413036-november-2016"></a>Dynamics 365 for Operations (バージョン 1611、ビルド 7.1.1541.3036+、2016 年 11 月) の分析コードの追加
+## <a name="add-dimensions--dynamics-365-for-operations-version-1611-build-7115413036-november-2016"></a>分析コードを追加 Dynamics 365 for Operations (バージョン 1611、ビルド 7.1.1541.3036+、2016 年 11 月)
 Visual Studio で OData アドイン用の財務分析コードを追加がリリースされ、**DimensionCombinationEntity** の変更が大幅に簡素化されています。 
 
 1. Microsoft Visual Studio で、**Dynamics 365** > **アドイン** > **Odata の財務分析コードの追加**をクリックします。
@@ -58,7 +57,7 @@ Visual Studio で OData アドイン用の財務分析コードを追加がリ�
 
     select * from DIMENSIONCOMBINATIONENTITY
 
-## <a name="add-dimensions--before-dynamics-365-for-finance-and-operations"></a>以前の Dynamics 365 for Finance and Operations の分析コードの追加
+## <a name="add-dimensions--before-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の前に分析コードを追加します。
 たとえば、Microsoft Excel との統合で、列に配置する分析コードとの相互作用をサポートするには、最初にカスタムを使用して分析コードの列を作成する必要があります。 
 
 1. Visual Studio で、アプリケーション エクスプローラーを開きます (**表示**&gt;**アプリケーション エクスプローラー**)。 
@@ -123,7 +122,6 @@ select * from DIMENSIONCOMBINATIONENTITY
 [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
 
 [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
-
 
 
 

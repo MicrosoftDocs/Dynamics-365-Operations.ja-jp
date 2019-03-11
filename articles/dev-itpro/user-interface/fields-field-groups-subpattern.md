@@ -1,13 +1,13 @@
 ---
-title: "フィールドおよびフィールド グループのサブパターン"
-description: "このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。"
+title: フィールドおよびフィールド グループのサブパターン
+description: このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cfe48630c2bfda898a800b0c2452c35fbb0fd051
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0eda74ef9ba22e9e5773e2906eab2e6f2a180fcf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368680"
 ---
-
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -109,4 +108,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 **InventLocation** [![FieldsFieldGroups(4)](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
-

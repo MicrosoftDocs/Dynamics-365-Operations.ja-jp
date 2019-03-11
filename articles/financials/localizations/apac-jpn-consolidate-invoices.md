@@ -1,13 +1,13 @@
 ---
-title: "日本向け月次締め請求書"
-description: "日本では、支払の請求書は毎月統合されます。 この記事は、月次締め請求書に関する情報を提供し、請求金額および期日の計算方法を説明します。"
+title: 日本向け月次締め請求書
+description: 日本では、支払の請求書は毎月統合されます。 この記事は、月次締め請求書に関する情報を提供し、請求金額および期日の計算方法を説明します。
 author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e59b4858395f3c0083f36214ee5198b94167a67e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 676e10a68d7c002c41d146f7750a6d60857a0364
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371064"
 ---
-
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ ms.lasthandoff: 11/03/2017
 | 請求書 002         | 2012 年 5 月 10 日 | 2012 年 5 月 10 日      | 2012 年 6 月 29 日 |
 | 請求書 003         | 2012 年 5 月 18 日 | 2012 年 6 月 10 日     | 2012 年 7 月 31 日 |
 | 請求書 004         | 2012 年 6 月 8 日 | 2012 年 6 月 10 日     | 2012 年 7 月 31 日 |
-
 
 
 

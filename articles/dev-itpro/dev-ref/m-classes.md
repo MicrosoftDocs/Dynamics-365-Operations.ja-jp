@@ -1,13 +1,13 @@
 ---
-title: "M クラス"
-description: "文字 M で始まるシステム API クラス。"
+title: M クラス
+description: 文字 M で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fe36d437c2e28ff44339066488372771eae93df7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: f08e5744f755fc2c65a40f301d8521ced7b9f3a1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369139"
 ---
-
 # <a name="m-classes"></a>M クラス
 
 [!include [banner](../includes/banner.md)]
@@ -2102,7 +2101,7 @@ MapiMessage クラスには、MAPI システムから送受信されるメッセ
 | public str dateReceived(\[Date theDate\])                     | メッセージを受信した日付を返します。                                                         |
 | public int flags(\[int flags\])                               | メッセージ ステータス フラグのビットを設定または取得します。                                                       |
 | public MapiFileDesc getFileNo(int fileNo)                     | メッセージからの添付ファイルを取得します。                                                                  |
-| public MapiRecipDesc getRecipNo(int recipentNo)               | MapiRecipDesc オブジェクトにあるメッセージの受信者に関する情報を取得します。                              |
+| public MapiRecipDesc getRecipNo(int recipientNo)               | MapiRecipDesc オブジェクトにあるメッセージの受信者に関する情報を取得します。                              |
 | public str messageType(\[str messageType\])                   | IPM (個人間メッセージ) タイプではないメッセージを示す文字列を取得または設定します。 |
 | public int numFiles(\[int numFiles\])                         |                                                                                                         |
 | public int numRecips(\[int numRecips\])                       |                                                                                                         |
@@ -2211,11 +2210,11 @@ fileNo
 
 MapiRecipDesc オブジェクトにあるメッセージの受信者に関する情報を取得します。
 
-    public MapiRecipDesc getRecipNo(int recipentNo)
+    public MapiRecipDesc getRecipNo(int recipientNo)
 
 #### <a name="parameters"></a>パラメーター
 
-recipentNo  
+recipientNo  
 取得する受信者の番号。 番号付けは 1 から始まり、numRecips メソッドを使用して受信者の総数を読み込むことができます。
 
 #### <a name="return-value"></a>戻り値
@@ -2839,7 +2838,7 @@ MemberFunction クラスは、フォーム、レポート、クラスなどの F
 
 #### <a name="remarks"></a>備考
 
-このメソッドは、AOT の指定されたノード (フォーム、レポート、クラスなど) に関連付けられます。 このメソッドは、主に MemberFunction :: AOTsetSource メソッドと組み合わせて使用されます。
+このメソッドは、AOT の指定されたノード (フォーム、レポート、クラスなど) に関連付けられます。 このメソッドは、主に MemberFunction::AOTsetSource メソッドと組み合わせて使用されます。
 
 ### <a name="method-name"></a>メソッド名
 
@@ -3214,11 +3213,11 @@ neededAccessLevel プロパティの現在の値。
 
 AccessType システム列挙値の使用可能な値は次のとおりです。
 
--   AccessType::NoAccess.
--   AccessType::View.
--   AccessType::Edit.
--   AccessType::Add.
--   AccessType::Delete.
+-   AccessType::NoAccess。
+-   AccessType::View。
+-   AccessType::Edit。
+-   AccessType::Add。
+-   AccessType::Delete。
 
 ### <a name="method-normalimage"></a>メソッド normalImage
 
@@ -4157,7 +4156,6 @@ arrayIndex
 MultiSelectionContext クラスの新しいインスタンスを初期化します。
 
     private void new()
-
 
 
 

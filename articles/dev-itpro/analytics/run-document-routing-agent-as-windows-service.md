@@ -1,13 +1,13 @@
 ---
-title: "ドキュメント回覧エージェントを Windows サービスとして実行する"
-description: "ドキュメント回覧エージェントは、デスクトップ アプリケーションまたは Microsoft Windows サービスのいずれかとして実行できます。 このトピックでは、正しく実行モードを選択するのに役立つ重要な情報を提供します。"
+title: ドキュメント回覧エージェントを Windows サービスとして実行する
+description: ドキュメント回覧エージェントは、デスクトップ アプリケーションまたは Microsoft Windows サービスのいずれかとして実行できます。 このトピックでは、正しく実行モードを選択するのに役立つ重要な情報を提供します。
 author: TJVass
 manager: AnnBe
 ms.date: 09/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e144c4e8b2e27ff17b1bb5972cae655cd17b5ffc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369735"
 ---
-
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 
 [!include [banner](../includes/banner.md)]
@@ -48,14 +47,14 @@ ms.lasthandoff: 08/13/2018
 ドキュメント回覧エージェントは、デスクトップ アプリケーションとして実行されるときは、Adobe Reader の活用する続行して、Microsoft Dynamics 365 for Finance and Operations で選択されている共有プリンター デバイスにドキュメントをスプールします。 カスタムの余白を設定したドキュメントを印刷する必要があるシナリオを処理するには、ドキュメント ルーティング エージェントを複数の場所にインストールすることをお勧めします。 デスクトップ アプリケーション モードで実行されるドキュメント ルーティング エージェントでのみ、これらのドキュメントを処理するプリンターをインストールします。 または、実行後のプロセスを使用してターゲット ディレクトリ内のファイルを取得し適切な方法でそれらを指示します。
 
 ## <a name="install-the-latest-build"></a>最新ビルドのインストール
-1. 現在のドキュメント回覧エージェント構成ファイルのコピーを保存します。 このファイルは、C:\\ ユーザー \\&lt;UserID&gt;\\AppData\\ ローカル \\Microsoft\\ Microsoft Dynamics 365 for Finance and Operations ドキュメント ルーティング \\Microsoft.Dynamics.AX.Framework.DocumentRouting.config にあります。このパスでは、&lt;UserID&gt; は、ドキュメント ルーティング エージェントがインストールされた Active Directory Domain Services (AD DS) のユーザー名です。
+1. 現在のドキュメント回覧エージェント構成ファイルのコピーを保存します。 このファイルは、C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config にあります。このパスでは、&lt;UserID&gt;は、ドキュメント ルーティング エージェントがインストールされた Active Directory Domain Services (AD DS) のユーザー名です。
 2. ドキュメント回覧エージェントの現在のバージョンをアンインストールします。
 3. [ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md)の手順に従ってドキュメント回覧エージェントの最新バージョンをインストールします。
 
     > [!NOTE]
     > この時点でアプリケーションをインストールしますが、まだ実行しないでください。
 
-4. 手順 1 の構成ファイルをコピーし、次のディレクトリに貼り付けます。C:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations のドキュメント回覧サービス。 このステップにより、ドキュメント回覧エージェント アプリケーションの新しいバージョンに以前のすべての構成設定が使用されていることを保証できます。
+4. 手順1では、コンフィギュレーション ファイルをコピーし、次のディレクトリに貼り付けます。c:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing。 このステップにより、ドキュメント回覧エージェント アプリケーションの新しいバージョンに以前のすべての構成設定が使用されていることを保証できます。
 5. ドキュメント回覧エージェントを実行します。
 6. Microsoft Azure Active Directory (Azure AD) または Finance and Operations の資格情報を使用してログインします。
 7. 適切なメニュー項目をクリックして、設定およびプリンターを表示して確認します。
@@ -75,9 +74,9 @@ ms.lasthandoff: 08/13/2018
 
 ### <a name="configure-and-start-the-windows-service"></a>Windows サービスのコンフィギュレーションおよび開始
 1. Windows で、Service Manager を開始します。
-2. 一覧で、**Microsoft Dynamics 365 for Finance and Operations のドキュメント回覧サービス**を選択します。
+2. 一覧で、**Microsoft Dynamics 365 for Finance and Operations ドキュメント ルーティング サービス**を選択します。
 3. 名前を右クリックし、**プロパティ** を選択します。
-4. **ログオン**タブで、**この勘定**オプションを選択し、サービスを実行するために使用される AD DS 資格情報を供給します。
+4. **ログオン**タブで、**この勘定**オプションを選択し、サービスを実行するために使用される AD DS 資格情報を入力します。
 
     > [!NOTE]
     > 選択したアカウントが共有ネットワーク デバイスにアクセスできることを確認します。
@@ -107,4 +106,3 @@ ms.lasthandoff: 08/13/2018
 ### <a name="review-the-event-logs"></a>イベント ログを確認
 1. ホスト コンピューターで、イベント ビューアーを開始します。
 2. **アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** \> **AX-DocumentRouting** でログを確認します。
-

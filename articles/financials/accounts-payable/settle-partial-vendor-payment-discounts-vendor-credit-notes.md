@@ -1,13 +1,13 @@
 ---
-title: "仕入先訂正票で割引がある一部の仕入先支払の決済"
-description: "この記事は、クレジット メモが請求書に対して決済されるシナリオについて説明します。"
+title: 仕入先訂正票で割引がある一部の仕入先支払の決済
+description: この記事は、クレジット メモが請求書に対して決済されるシナリオについて説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5c094b0c3c580a47e7ed876e682c83afc6d9d4c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ec2317f12142f726ad37e39fe11837847b0a5b04
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367895"
 ---
-
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>仕入先訂正票で割引がある一部の仕入先支払の決済
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,6 @@ Fabrikam の仕入先は、訂正票に対して現金割引を提供します�
 | Inv-10071  |                  | 2015 年 7 月 2 日  | CR10071 | 200.00                               |                                       | 0.00    | USD      |
 | DISC-10071 |  現金割引   | 2015 年 7 月 2 日  |         | 2.00                                 |                                       | 0.00    | USD      |
 | DISC-10071 |  現金割引   | 2015 年 7 月 2 日  |         |                                      | 2.00                                  | 0.00    | USD      |
-
 
 
 

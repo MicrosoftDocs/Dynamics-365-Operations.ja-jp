@@ -1,13 +1,13 @@
 ---
-title: "ツリー コントロールでのチェック ボックスのサポート"
-description: "この記事は、ツリー コントロールのチェック ボックス コントロールを使用するための入門書として作成されています。 ツリー コントロールを使用するための一般的な「方法」ではありません。"
+title: ツリー コントロールでのチェック ボックスのサポート
+description: この記事は、ツリー コントロールのチェック ボックス コントロールを使用するための入門書として作成されています。 ツリー コントロールを使用するための一般的な「方法」ではありません。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1fb7a5a3475ed18553f562fbe7f921d570109cf5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 429011a86b0a02d07c4315f55c7d5561fba66405
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369394"
 ---
-
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 
 [!include [banner](../includes/banner.md)]
 
 この記事は、ツリー コントロールのチェック ボックス コントロールを使用するための入門書として作成されています。 ツリー コントロールを使用するための一般的な「方法」ではありません。
 
-Microsoft Dynamics AX 2012 には、データをツリー階層で表示し、ユーザーがチェック ボックスを使用して 1 つまたは複数のノードを選択できるようにするために強化されたツリー コントロールの例がいくつか含まれています。 Dynamics AX 2012 では、ツリー コントロールにチェック ボックス コントロールの組み込みのサポートがありませんでした。 代わりに、チェック ボックスのイメージがツリー コントロール内の各ノードに対して追加されました。 ユーザーがチェックボックスをクリックすると、各ノードのイメージの状態が切り替わりました。 
+Microsoft Dynamics AX 2012 には、データをツリー階層で表示し、ユーザーがチェック ボックスを使用して 1 つまたは複数のノードを選択できるようにするために強化されたツリー コントロールの例がいくつか含まれています。 Dynamics AX 2012 では、ツリー コントロールには、チェック ボックスのコントロールに対して、組み込みのサポートがありませんでした。 代わりに、チェック ボックスのイメージがツリー コントロール内の各ノードに対して追加されました。 ユーザーがチェックボックスをクリックすると、各ノードのイメージの状態が切り替わりました。 
 
 ![TreeControl\_LegacyCheckbox](./media/treecontrol_legacycheckbox.png) 
 
@@ -151,7 +150,6 @@ Microsoft Dynamics AX 2012 には、データをツリー階層で表示し、�
     {
         super(_Idx, _newState);
     }
-
 
 
 

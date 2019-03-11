@@ -1,13 +1,13 @@
 ---
-title: "プロジェクト契約およびプロジェクトを Project Service Automation から Finance and Operations に直接同期します"
-description: "このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations へプロジェクト契約およびプロジェクトを、直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
+title: プロジェクト契約およびプロジェクトを Project Service Automation から Finance and Operations に直接同期します
+description: このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations にプロジェクト契約とプロジェクトを直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312120"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>プロジェクト契約およびプロジェクトを Project Service Automation から Finance and Operations に直接同期します
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations へプロジェクト契約およびプロジェクトを、直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations にプロジェクト契約とプロジェクトを直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 > [!NOTE] 
-> Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3.0 を使用している場合、KB 4074835 をインストールする必要があります。
+> Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 を使用している場合は、KB 4074835 をインストールする必要があります。
 
 ## <a name="data-flow-for-project-service-automation-to-finance-and-operations"></a>Project Service Automation から Finance and Operations のデータ フロー
 
@@ -95,8 +94,8 @@ Project Service Automation から Finance and Operations 統合ソリューシ�
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
 - プロジェクト契約とプロジェクトの同期を行う前に、勘定を同期する必要があります。
-- 接続の設定、**msdyn\_organizationalunits** の統合キー フィールドのマッピングを **msdyn\_名前\[名前\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) を参照してください。
-- 接続の設定、**msdyn\_プロジェクト**の統合キー フィールドのマッピングを **msdynce\_projectnumber \[プロジェクト番号\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) を参照してください。
+- 接続の設定、**msdyn\_organizationalunits** の統合キー フィールドのマッピングを **msdyn\_名前\[名前\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へのデータ統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)を参照してください。
+- 接続の設定、**msdyn\_プロジェクト**の統合キー フィールドのマッピングを **msdynce\_projectnumber \[プロジェクト番号\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へのデータ統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)を参照してください。
 - **SourceDataID** のプロジェクト契約およびプロジェクトは異なる値に更新、またはマッピングから削除することができます。 既定のテンプレート値は **Project Service Automation** です。
 - **PaymentTerms** マッピングは、Finance and Operations で有効な支払条件が反映できるように更新する必要があります。 プロジェクト タスクからマッピングを削除することもできます。 既定値のマップにはデモ データの既定値があります。 次のテーブルでは、Project Service Automation の値を示します。
 
@@ -111,7 +110,7 @@ Project Service Automation から Finance and Operations 統合ソリューシ�
 
 次の条件が満たされた場合、フィルター処理する Microsoft Power Query for Excel を使用する必要があります。
 
-- Microsoft Dynamics 365 for Sales の販売注文があります。
+- Microsoft Dynamics 365 for Sales に販売注文があります。
 - Project Service Automation に複数の組織単位があり、これらの組織単位は Finance and Operations の複数の法人にマップされます。
 
 Power Query を使用する必要がある場合は、これらのガイドラインに従います。
@@ -135,4 +134,3 @@ Power Query を使用する必要がある場合は、これらのガイドラ�
 [![テンプレートのマッピング](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![テンプレートのマッピング](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

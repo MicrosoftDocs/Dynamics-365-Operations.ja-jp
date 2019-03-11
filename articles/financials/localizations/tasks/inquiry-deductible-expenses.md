@@ -1,13 +1,13 @@
---- 
-title: "損金の照会"
-description: "このタスクでは、損金のクエリを実行する方法について説明します。"
+---
+title: 損金の照会
+description: このタスクでは、損金のクエリを実行する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepPreTaxDeductionDetails_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 57b455c9d639386b463e1d3d20b078644bc4fa23
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371050"
 ---
 # <a name="inquiry-on-deductible-expenses"></a>損金の照会
 
@@ -42,5 +42,4 @@ ms.lasthandoff: 10/16/2018
 5. [減価償却費の差額] をクリックします。
 6. [報告日] フィールドに日付を入力します。
     * 日付を変更して、他の会計年度を表示します。  
-
 

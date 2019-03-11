@@ -1,13 +1,13 @@
 ---
-title: "経費管理"
-description: "経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用します。"
+title: 経費管理
+description: 経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvExpenseWorkspace
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1cd637f1b74056db89520b762255d03afa3855ba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1e075a7f114efdea1d9cc62cf302eaaba63c7ba0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313408"
 ---
-
 # <a name="expense-management"></a>経費管理
 
 [!include [banner](../includes/banner.md)]
@@ -34,15 +33,15 @@ ms.lasthandoff: 02/07/2018
 
 [経費管理計画](plan-expense-management.md) 
 
-### <a name="additional-resources"></a>その他のリソース
+### <a name="additional-resources"></a>追加リソース
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 Roadmap (Dynamics 365 ロードマップ)](https://roadmap.dynamics.com/) を参照してください。 
+リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 
 
 #### <a name="blogs"></a>ブログ
 
-売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
+売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
 
 [Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、売掛金勘定に関する多くの投稿があります。 これらの投稿の一部は、以前のバージョンの売掛金勘定用に書かれたものですが、同じ概念が適用されます。 手順も、現在のバージョンと似ています。
 
@@ -53,8 +52,7 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 #### <a name="videos"></a>ビデオ
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
-
+「[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)」のハウツー ビデオをご覧ください。
 
 
 

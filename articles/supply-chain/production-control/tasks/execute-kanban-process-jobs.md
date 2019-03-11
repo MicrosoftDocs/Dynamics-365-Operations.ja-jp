@@ -1,13 +1,13 @@
---- 
-title: "かんばんプロセス ジョブの実行"
-description: "この手順は、かんばんプロセス ジョブの実行を対象としています。"
+---
+title: かんばんプロセス ジョブの実行
+description: この手順は、かんばんプロセス ジョブの実行を対象としています。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 62be1f116dfecbc4c6ba11053b94efc874baa3e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 752eab976f740606154d416678ba2381641697df
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357430"
 ---
 # <a name="execute-kanban-process-jobs"></a>かんばんプロセス ジョブの実行
 
@@ -56,5 +56,4 @@ ms.lasthandoff: 09/29/2017
 5. [エラー数量] フィールドに番号を入力します。
 6. [適正数量] フィールドに番号を入力します。
 7. [OK] をクリックします。
-
 

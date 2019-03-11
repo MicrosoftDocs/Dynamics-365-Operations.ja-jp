@@ -1,13 +1,13 @@
 ---
-title: "非推奨 API"
-description: "このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。"
+title: 非推奨 API
+description: このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。
 author: aneesmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0d16243902783722d87ce1a70a287f5acf1db1a4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368710"
 ---
-
 # <a name="deprecated-apis"></a>非推奨 API
 
 [!include [banner](../includes/banner.md)]
@@ -40,11 +39,11 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 - Chatty (サーバーとクライアントの間で多くの相互トラフィックを引き起こす)。
 - 冗長 (フレームワークは自動的にこれらを処理するようになりました)。
 
-次のテーブルを通じて、 <br/>**減価償却の理由** 見出し「クライアント」とは、Microsoft Dynamics 365 for Finance and Operations Web クライアントを指します。
+次のテーブルを通じて、 <br/>**廃止の理由**見出し、「クライアント」は Microsoft Dynamics 365 for Finance and Operations Webクライアントを参照する。
 
 ## <a name="list-of-deprecated-apis"></a>非推奨 API のリスト
 
-| オブジェクト | 種類 | 氏名 | 摘要 |
+| オブジェクト | 型 | 氏名 | 摘要 |
 |---|---|---|---|
 | ActionPane |方法 |tabChanged | ActionPanes (または ActionPanes の内部コントロール) への更新は、タブが有効になったときではなく、行が有効になったときに実行される必要があります。 |
 | ActionPaneTab |方法 | selectionChanged |ActionPaneTabs (または ActionPaneTabs の内部コントロール) への更新は、タブが有効になったときではなく、行が有効になったときに実行される必要があります。 |
@@ -149,10 +148,10 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | オブジェクト | 方法 | notify notifyAll wait | **概要** <br/>対話/操作をブロックして待機し、ブロック解除を通知するのに使用されます。<br/>**減価償却の理由** <br/>これらの呼び出しは、formRun とその派生を除くすべてのオブジェクトで廃止予定です。<br/>**移行のメモ** <br/>formRun からこれらの API への呼び出し、またはその派生が許可されています。  他のオブジェクトからこれらの API への呼び出しを削除する必要があります。 |
 | オブジェクト | 方法 | objectOnServer | **概要** <br/>オブジェクトがサーバーにあるかどうかを判断するために使用されます。<br/>**減価償却の理由** <br/>これは冗長であり、すべてのオブジェクトがサーバー上にあるため、もはや必要ありません。<br/>**移行のメモ** <br/>コードからこれらの API への呼び出しを安全に削除することができます。 常に true に評価します。 |
 | オブジェクト | 方法 | setTimeOut | **概要** <br/>このメソッドはオブジェクト上に存在しましたが、機能しませんでした。 FormRun の実装は、ロジックの実行を遅らせるタイマーとして使用しました。<br/>**減価償却の理由** <br/>ブラウザー ベースのクライアントは、この実装がサポートしなくなりました。<br/>**移行のメモ** <br/>代わりに FormRun で新しい setTimeOutEx メソッドを使用します。 setTimeOutEx メソッドは、myCallBack(AsyncTaskResult の結果) など、型 AsyncTaskResult のパラメーターを受け入れるためのコールバックを期待していることに注意してください。 |
-| PopupMenu | クラス |  | **概要** <br/>Dynamics AX 2012 で、分割された 2 つのパートのサイズをユーザーが変更できるようにするために使用されます。<br/>**減価償却の理由** <br/>Dynamics AX 2012 Windows クライアントに固有であり、クライアントと共に使用できない API に依存します。<br/>**移行のメモ** <br/>代わりに、ContextMenu を使用します。 |
+| PopupMenu | クラス |  | **概要** <br/>Dynamics AX 2012 で、分割された 2 つのパートのサイズをユーザーに変更させるスプリッターを取得するために使用されます。<br/>**減価償却の理由** <br/>Dynamics AX 2012 Windows クライアントに固有で、クライアントと共に使用できない API に依存します。<br/>**移行のメモ** <br/>代わりに、ContextMenu を使用します。 |
 | SysExcel | クラス |  | **概要** <br/>SysExcel クラスは、COM を使用して Excel ブックを作成および編集していました。<br/>**減価償却の理由** <br/>SysExcel は、クライアントからの Excel COM オブジェクトへの呼び出しに依存します。 これらの COM オブジェクトはサーバー上に存在しないため、COM 呼び出しは今後推奨されていません。<br/>**移行のメモ** <br/>代わりに OpenXML .NET framework API を使用します。 X++ から呼び出しやすくするために OpenXML をラップするアセンブリの作成を調査しています。 |
 | SysINetMai SysMailer SmmOutlook | クラス |  | **概要** <br/>これらのメール関連のクラスは、利用できなくなりました。または非常に落胆しているクライアント側の技術を主に使用していました。<br/>**減価償却の理由** <br/>SysINetMail クラスは、クライアント側 MAPI を使用していたために非推奨になっています。 SysMailer クラスは、CDO (OLE メッセージングのバリアント) を使用していたために非推奨になります。 SmmOutlook で始まるクラスは、Outlook COM オブジェクトを使用しているため廃止予定です。<br/>**移行のメモ** <br/>SysMailerNet クラスを使用した SMTP 経由の電子メールの送信が今後サポートされます。 また、マイクロソフトは、クライアント側の対話型電子メール機能にも積極的に取り組んでいます。 |
-| SysFormSplitter | クラス |  | **概要** <br/>Dynamics AX 2012 で、分割された 2 つのパートのサイズをユーザーが変更できるようにするために使用されます。<br/>**減価償却の理由** <br/>クライアントで不要になりました。<br/>**移行のメモ** <br/>コントロールは自動的に機能を提供します。 コードからこれらの API への任意の呼び出しを安全に削除することができます。 今後コード アップグレード ルールを作成して、使用状況を自動的に削除することができます。 |
+| SysFormSplitter | クラス |  | **概要** <br/>Dynamics AX 2012 で、分割された 2 つのパートのサイズをユーザーに変更させるスプリッターを取得するために使用されます。<br/>**減価償却の理由** <br/>クライアントで不要になりました。<br/>**移行のメモ** <br/>コントロールは自動的に機能を提供します。 コードからこれらの API への任意の呼び出しを安全に削除することができます。 今後コード アップグレード ルールを作成して、使用状況を自動的に削除することができます。 |
 | SysListPageHelper | クラス |  |  |
 | SysSetupFormRun | クラス |  | **概要** <br/>FormRun を間接的に拡張するためにクラスによって使用されます。<br/>**減価償却の理由** <br/>FormRun クラスと統合されました。<br/>**移行のメモ** <br/>代わりに FormRun クラスを使用します。 |
 | TextBuffer | 方法 | fromFile | 代わりに .NET StreamReader クラスを使用します。 |
@@ -161,7 +160,7 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | WinAPI | クラス |  | **概要** <br/>該当なし<br/>**減価償却の理由** <br/>Dynamics AX 2012 Windows クライアントに固有であり、クライアントと互換性がありません。<br/>**移行のメモ** <br/>コードからこれらの API の使用を削除します。 WinAPI::getTempPath、WinAPI::fileExists など、ファイル アクセス API を新しいファイル API に置き換えます。 |
 | WinAPIServer | 方法 | cryptProtectData cryptUnprotectData | **概要** <br/>WinAPIServer::cryptProtectData (CryptoBlob \_unEncryptedDataBlob) および WinAPIServer::cryptUnProtectData (CryptoBlob \_encryptedDataBlob) メソッドを使用して、機密データの暗号化および復号化が行われました。<br/>**減価償却の理由** <br/>これらのメソッドは、デスクトップの使用に最適で、Web ベースのアプリケーションの使用には推奨されません。 また、パフォーマンスに悪影響を及ぼします。<br/>**移行のメモ** <br/>代わりに .NET フレームワーク API とよく知られたハッシュ/セキュリティ アルゴリズムを使用します。 |
 | xApplication | 方法 | runAsync | **概要** <br/>Dynamics AX 2012 では、xApplication::runAsync メソッドがメソッドに対する非同期呼び出しに使用されていました。<br/>**減価償却の理由** <br/>クライアントに適したメソッドに置き換えられます。<br/>**移行のメモ** <br/>代わりに、Global クラスまたは FormRun クラスで runAsyncメ ソッドを使用します。 これらの新しいバージョンの runAsync を使用すると、呼び出し元は静的な X++ クラス メソッドへの非同期呼び出しを行うことができます。 これらは、.NET System.Threading.Tasks ライブラリを利用して、X++ で非同期メソッドを実行します。  System.Threading.Tasks.Task タイプを使用することで、開発者は .NET で利用可能な豊富な機能を利用できます。 |
-| xGlobal | 方法 | clientKind | **概要** <br/>通常、インタラクティブ セッションなどのクライアントの存在を検出するために使用します。<br/>**減価償却の理由** <br/>クライアントに適したメソッドに置き換えられます。<br/>**移行のメモ** <br/>代わりに global :: hasGUI メソッドを使用します。 |
+| xGlobal | 方法 | clientKind | **概要** <br/>通常、インタラクティブ セッションなどのクライアントの存在を検出するために使用します。<br/>**減価償却の理由** <br/>クライアントに適したメソッドに置き換えられます。<br/>**移行のメモ** <br/>代わりに global::hasGUI メソッドを使用します。 |
 | xGlobal | 方法 | computerName |  |
 | xGlobal | 方法 | forceFormPreload | **概要** <br/>Dynamics AX 2012 のプリロードで使用されます。<br/>**減価償却の理由** <br/>プリロードは、クライアントでは適用されません。<br/>**移行のメモ** <br/>コードからこれらの API への呼び出しを削除します。 |
 | xGlobal | 方法 | terminalServer |  |
@@ -170,5 +169,4 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | XmlDocument | 方法 | LoadSave |  |
 | XmlWriter | 方法 | CreateNewFile |  |
 | [XppCompiler] | クラス |  |  |
-
 

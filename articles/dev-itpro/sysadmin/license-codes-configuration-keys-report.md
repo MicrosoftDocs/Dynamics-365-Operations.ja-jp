@@ -1,13 +1,13 @@
 ---
-title: "ライセンス コードとコンフィギュレーション キーのレポート"
-description: "このトピックでは、Finance and Operations で使用できるライセンス コードと構成キーを一覧表示するレポートを示します。"
+title: ライセンス コードとコンフィギュレーション キーのレポート
+description: このトピックでは、Finance and Operations で使用できるライセンス コードと構成キーを一覧表示するレポートを示します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 2cae21373ceaf159be2ee58fa391bf4c110caf76
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 350b2c128970305b112649d96129e42ef3ae8e48
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369063"
 ---
-
 # <a name="license-codes-and-configuration-keys-report"></a>ライセンス コードとコンフィギュレーション キーのレポート
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Finance and Operations を購入したときは、すべての機能が含まれ
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
 [ライセンス コードとコンフィギュレーション キー レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、使用できる各コンフィギュレーション キーが一覧表示されています。 レポートには、各構成キーに関連付けられているライセンス コードとメニュー項目も表示されます。
-
 
 
 

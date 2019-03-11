@@ -1,13 +1,13 @@
 ---
-title: "日本の固定資産減価償却のよく寄せられる質問"
-description: "この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。"
+title: 日本の固定資産減価償却のよく寄せられる質問
+description: この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。
 author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetDepRate_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6a423f00e9ffeac15b41ff356639021e48ff5f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a819fb6aaf14fcc79e58ff3c6796cb3f5f3c59a9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371096"
 ---
-
 # <a name="fixed-asset-depreciation-for-japan-faq"></a>日本の固定資産減価償却のよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
@@ -156,6 +155,5 @@ ms.lasthandoff: 03/26/2018
 - [割増償却の提案](./tasks/propose-additional-depreciation.md)
 - [増加償却の提案と転記](./tasks/propose-post-accelerated-depreciation.md)
 - [特別償却の提案](./tasks/propose-special-depreciation.md)
-
 
 

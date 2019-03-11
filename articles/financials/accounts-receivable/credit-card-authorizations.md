@@ -1,13 +1,13 @@
 ---
-title: "クレジット カードの設定、認証、および取得"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations におけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。"
+title: クレジット カードの設定、認証、および取得
+description: この記事は、Microsoft Dynamics 365 for Finance and Operations でのクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343009"
 ---
-
 # <a name="credit-card-setup-authorization-and-capture"></a>クレジット カードの設定、認証、および取得
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations におけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
+この記事は、Microsoft Dynamics 365 for Finance and Operations でのクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
 
 <a name="setting-up-the-credit-card-payment-service"></a>クレジット カード支払サービスの設定
 ------------------------------------------
@@ -78,7 +77,6 @@ ms.lasthandoff: 03/26/2018
 
 ## <a name="voiding-an-authorization"></a>承認の無効化
 クレジット カード認証を無効にする場合、クレジット カード以外のタイプを持つ別の支払方法に変更できます。
-
 
 
 

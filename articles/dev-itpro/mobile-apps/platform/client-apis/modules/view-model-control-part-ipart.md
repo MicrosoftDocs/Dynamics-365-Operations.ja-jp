@@ -1,28 +1,27 @@
 ---
-title: "パート モジュール"
-description: "パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。"
+title: パート モジュール
+description: パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: e824fcde7e283fd618f4acf93f212b26bb4f15bc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369871"
 ---
-
 # <a name="part-module"></a>パート モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -88,7 +87,7 @@ ms.lasthandoff: 08/09/2018
 | [allowScroll](../interfaces/view-model-control-part-ipart-ipartdesign.md#allowscroll) |allowScroll: string (optional)  <br>|アイテムがコンテナーの空き領域に収まらないときにコンテナーがスクロールできる場合は true です。 コンテナーにスクロール可能なアイテムがある場合、スクロール領域が入れ子にならないように、このプロパティを false に設定します。<br>  [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[allowScroll](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#allowscroll) から継承 <br> |
 | [バックグラウンド](../interfaces/view-model-control-part-ipart-ipartdesign.md#background) |background: string (optional)  <br>|コンテナーの背景色。<br>  [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[background](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#background) から継承 <br> |
 | [バインディング](../interfaces/view-model-control-part-ipart-ipartdesign.md#bindings) |bindings: any (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings) から継承 <br> |
-| [枠線](../interfaces/view-model-control-part-ipart-ipartdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
+| [枠線](../interfaces/view-model-control-part-ipart-ipartdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
 | [色](../interfaces/view-model-control-part-ipart-ipartdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [デザイン](../interfaces/view-model-control-part-ipart-ipartdesign.md#design) |design: [PartDesign](../interfaces/view-model-control-part-ipart-ipartdesign.md) (optional)  <br>|ターゲット ページの設計をします。<br>  |
 | [flexFlow](../interfaces/view-model-control-part-ipart-ipartdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
@@ -130,5 +129,4 @@ ms.lasthandoff: 08/09/2018
 | [注文](../interfaces/view-model-control-part-ipart-ipartmetadata.md#order) |注文: 番号 (オプション)  <br>|コントロールがページに表示される順序を示す番号。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) から継承 <br> |
 | [ターゲット](../interfaces/view-model-control-part-ipart-ipartmetadata.md#target) |ターゲット: [PageTarget](../interfaces/view-model-ipage-ipagetarget.md) (オプション)  <br>|パーツのターゲット ページ。<br>  |
 | [[タイプ](../interfaces/view-model-control-part-ipart-ipartmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
-
 

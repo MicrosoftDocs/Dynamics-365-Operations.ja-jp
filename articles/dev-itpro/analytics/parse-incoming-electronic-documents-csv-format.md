@@ -1,29 +1,29 @@
 ---
-title: "CSV 形式で受信したドキュメントを解析する"
-description: "このトピックでは、受信した CSV 形式のドキュメントを解析するように電子報告 (ER) 形式を設定する方法について説明します。"
+title: CSV 形式で受信したドキュメントを解析する
+description: このトピックでは、受信した CSV 形式のドキュメントを解析するように電子報告 (ER) 形式を設定する方法について説明します。
 author: nickselin
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 27621
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 55ee537e4a113091b6e95aed71b195ccf84599ae
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368504"
 ---
 # <a name="parse-incoming-documents-in-csv-format"></a>CSV 形式で受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -70,4 +70,3 @@ ms.lasthandoff: 08/13/2018
 | 肩書き                  | ファイル名                                                       |
 |------------------------|-----------------------------------------------------------------|
 | ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
-

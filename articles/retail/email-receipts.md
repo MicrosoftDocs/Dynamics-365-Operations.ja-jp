@@ -1,13 +1,13 @@
 ---
-title: "電子メール受領を Retail Modern POS (MPOS) から送信"
-description: "Retail Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトランザクションが支払/入金されたときにレシートの電子メールを送信できます。"
+title: Retail Modern POS (MPOS) からの電子メール レシートの送信
+description: Retail Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトランザクションが支払/入金されたときにレシートの電子メールを送信できます。
 author: jashanno
 manager: AnnBe
 ms.date: 06/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, SysEmailTable,
 audience: IT Pro
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: e513a94cbef94fc8cfb393729b9df5fd2bf0aea6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368992"
 ---
-
-# <a name="send-email-receipts-from-retail-modern-pos-mpos"></a>電子メール受領を Retail Modern POS (MPOS) から送信
+# <a name="send-email-receipts-from-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) からの電子メール レシートの送信
 
 [!include [banner](includes/banner.md)]
 
@@ -108,4 +107,3 @@ Retail Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でト
 ## <a name="mpos-transactions"></a>MPOS トランザクション
 
 店舗への変更が同期された後、MPOS は、ユーザーに各トランザクションの電子メール アドレスを求めます (フィーチャーが有効な場合)。 電子メール アドレスが既に顧客のファイルに割り当てられている場合、そのアドレスは電子メール アドレス プロンプトに表示されます。 顧客の名前がない場合、または名前付き顧客の電子メール アドレスが入力されていない場合は、電子メール アドレスを入力して、**送信**を選択します。 トランザクションが確定すると、リアルタイム サービスによって、前に構成したとおり、メッセージの本文にレシートが含まれる電子メールが顧客に送信されます。
-

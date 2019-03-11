@@ -1,13 +1,13 @@
 ---
-title: "カスタマイズされた Retail Modern POS のデバイスの有効化"
-description: "このトピックでは、カスタマイズした Retail Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 バックオフィスを設定する方法について説明します。"
+title: カスタマイズされた Retail Modern POS のデバイスの有効化
+description: このトピックでは、カスタマイズした Retail Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作するように、Microsoft Dynamics 365 バックオフィスを設定する方法について説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Retail
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 8b092d2b9d3c3f5a728881cdc968eb95a57f7995
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368628"
 ---
-
 # <a name="device-activation-of-a-customized-retail-modern-pos"></a>カスタマイズされた Retail Modern POS のデバイスの有効化
 
 [!INCLUDE [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 08/29/2018
 > [!NOTE]
 > このセキュリティおよび機能拡張がは、2017 年 7 月 (7.2) リリースで導入され、その前の 1611 (7.1) リリースに追加されました。
 
-Retail Modern POS は、Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail のクライアント側コンポーネントです。 Retail Modern POS を使用するには、デバイスの有効化を実行する必要があります。 デバイスの有効化は、ユーザーを認証する Microsoft Azure Active Directory (Azure AD) を使用します。 この領域の拡張機能は、Web アカウント マネージャー サービスを活用するためにデバイスの有効化のフローを変更しました。 この拡張の一部として、認証承認プロセスのセキュリティが強化されました。 このセキュリティ強化では、コールバック URI に特定の一意の値が必要になるため、Retail Modern POS のカスタマイズ時に、Dynamics 365 バックオフィスで追加設定が必要です。 (コールバック URI は、返信 URI とも呼ばれます。)
+Retail Modern POS は、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail のクライアント側コンポーネントです。 Retail Modern POS を使用するには、デバイスの有効化を実行する必要があります。 デバイスの有効化は、ユーザーを認証する Azure Active Directory (Azure AD) を使用します。 この領域の拡張機能は、Web アカウント マネージャー サービスを活用するためにデバイスの有効化のフローを変更しました。 この拡張の一部として、認証承認プロセスのセキュリティが強化されました。 このセキュリティ強化では、コールバック URI に特定の一意の値が必要になるため、Retail Modern POS のカスタマイズ時に、Dynamics 365 バックオフィスで追加設定が必要です。 (コールバック URI は、返信 URI とも呼ばれます。)
 
 既定では、Retail Modern POS はこのコールバック URI に既に登録されています。 ただし、Retail Modern POS をカスタマイズするとき、コールバック URI が変更されます。 したがって、再度動作するように正しく構成する必要があります。 このトピックでは、この構成を完了するために従う必要がある手順について説明します。 この構成が完了しない場合、カスタマイズされた Retail Modern POS アプリケーションでデバイスの有効化を実行しようとすると、エラー メッセージが表示されます。 このエラー メッセージは次のようになります。
 
@@ -42,13 +41,13 @@ Retail Modern POS は、Microsoft Dynamics 365 for Finance and Operations and Mi
 > - Dynamics 365 バックオフィスを構成する前に、カスタマイズされた Retail Modern POS アプリケーションを 1 回使用することをお勧めします。 これにより、エラー メッセージがどのようなものかを確認し、カスタマイズされた返信アドレスをより簡単に取得できます。
 > - エラーは、Retail Modern POS アプリケーションに対応するアプリケーション ID に使用される返信アドレスを指定します。
 
-## <a name="setup"></a>段取り
+## <a name="setup"></a>セットアップ
 次の手順は、カスタマイズされた Retail Modern POS アプリケーションを使用する場合に、デバイスの有効化が正常に動作できるようにするために必要です。 2 つの Azure AD アプリケーションを作成します。1 つは Retail Modern POS 用、1 つは Retail Server 用です。 Retail Server Azure AD アプリケーションは、Retail Modern POS が Retail Server を通じてリソースを使用するために必要です。 したがって、Retail Modern POS が使用される場合は両方の Azure AD アプリケーションが使用されます。 このシナリオでは、Retail Server は、Retail Modern POS が要求する保護されているリソースのエンドポイントとして機能します。
 
 ### <a name="create-the-retail-server-azure-ad-application"></a>Retail サーバーの Azure AD アプリケーションを作成する
 1. Web ブラウザーで、<https://portal.azure.com/>に移動します。
 2. Azure AD アプリケーションを作成するための十分なアクセス許可を持つ Azure AD 資格情報を使用してログインします。
-3. **Azure Active Directory** \> **アプリケーション登録**を選択します。
+3. **Azure Active Directory** \> **App registrations** を選択します。
 4. **新しいアプリケーション登録**を選択して、次の値を入力することで、Retail サーバー Azure AD アプリケーションを作成します。
 
     - **名前:** **カスタマイズされた Retail Server** を入力します。 (他の固有の値を入力できますが、記録しておいてください。)
@@ -68,7 +67,7 @@ Retail Modern POS は、Microsoft Dynamics 365 for Finance and Operations and Mi
 ### <a name="update-the-retail-modern-pos-configuration"></a>Retail Modern POS 設定の更新
 1. ファイル エクスプローラーで、**C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker** に移動します。 (このパスは、コンピューターの Microsoft Windows オペレーティング システムが、x64 アーキテクチャ ベースであることを前提としています)。
 2. エクスプローラーで、**ファイル** \> **Windows PowerShell を開く** \> **管理者として Windows PowerShell を開く** を選択します。
-3. 表示された Microsoft Windows PowerShell ウィンドウで、**notepad DLLHost.exe.config**と入力して Enter キーを押します。 (Windows PowerShell ウィンドウは、現在のファイル ディレクトリを既にポイントしています。)
+3. 表示された Microsoft Windows PowerShell ウィンドウで、**notepad DLLHost.exe.config** と入力して Enter キーを押します。 (Windows PowerShell ウィンドウは、現在のファイル ディレクトリを既にポイントしています。)
 4. 表示されたメモ帳ウィンドウで、**AADRetailServerResourceId** キーに対応する値を見つけます。 (この値は、既定では `https://commerce.dynamics.com` です)。次に、前のセクションの手順 7 でコピーしたアプリケーション ID URI 値を貼り付けます。
 5. **ファイル** \> **保存** を選択します。
 
@@ -133,5 +132,4 @@ Retail Modern POS は、Microsoft Dynamics 365 for Finance and Operations and Mi
     > 最適な結果を得るため、Retail Modern POS が終了していることと、DLLHost.exe のインスタンスがタスク マネージャーに存在しないことを確認します。
 
 ### <a name="perform-retail-modern-pos-device-activation"></a>Retail Modern POS のデバイスの有効化の実行
-Retail Modern POS デバイスを有効化しようとしてください。 依然として問題が発生する場合は、Windowsでイベント ビューアーを開き、Retail Modern POS に対応するログを表示します。 前のセクションで見逃したステップを判断する際に役立つを警告やエラーを探します。
-
+Retail Modern POS デバイスを有効化してください。 依然として問題が発生する場合は、Windowsでイベント ビューアーを開き、Retail Modern POS に対応するログを表示します。 前のセクションで見逃したステップを判断する際に役立つを警告やエラーを探します。

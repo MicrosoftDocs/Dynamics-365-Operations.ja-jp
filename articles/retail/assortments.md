@@ -1,13 +1,13 @@
 ---
-title: "品揃え管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail での品揃え管理の基本概念について説明し、プロジェクトの実装に関する考慮事項を提供します。"
+title: 品揃え管理
+description: このトピックでは、Microsoft Dynamics 365 for Retail での品揃え管理の基本概念について説明し、プロジェクトの実装に関する考慮事項を提供します。
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365043"
 ---
-
 # <a name="assortment-management"></a>品揃え管理
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>概要
 
-Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用性を管理できる *品揃え* を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
+Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用性を管理できる*品揃え*を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
 
 小売で、品揃えは 1 つまたは複数のチャネル (または組織階層が使用される場合は一連のチャネル) を 1 つまたは複数の製品 (またはカテゴリ階層を使用する場合は製品のグループ) にマッピングします。
 
@@ -108,4 +107,3 @@ Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用�
 - **品揃えの範囲外の販売と返品** – この機能は、店舗のコア製品の組み合わせに属する製品に対して使用可能な製品の数を制限することで、小売業者が品揃えを効率的に管理できます。 この機能は、製品が誤って品揃えから除外された場合や製品が品揃えの有効期限外に返品された場合にも、小売業者が対応できるようにします。
 
 製品データがチャネル データベースに存在しない場合にも、製品の販売、返品、または顧客注文にすることができるように、POS は必要な情報を取得し、リアルタイムで本社に電話をかけることができます。 この方法で取得された製品情報は、そのトランザクションの範囲内でのみ使用できます。 製品は、品揃え定義に追加されません。 したがって、必要に応じて後続のリアルタイム コールが行われます。
-

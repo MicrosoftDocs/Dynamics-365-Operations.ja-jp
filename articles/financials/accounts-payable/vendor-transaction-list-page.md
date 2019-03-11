@@ -1,13 +1,13 @@
 ---
-title: "仕入先トランザクション リスト ページ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の仕入先トランザクション リスト ページについての情報を提供します。"
+title: 仕入先トランザクション リスト ページ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の仕入先トランザクション リスト ページについての情報を提供します。
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 99a169bd51e14f15c085f7547ec240b2787258cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341744"
 ---
-
 # <a name="vendor-transactions-list-page"></a>仕入先トランザクション リスト ページ
 
 [!include [banner](../includes/banner.md)]
@@ -40,10 +39,10 @@ ms.lasthandoff: 10/12/2018
 
 4. ダイアログ ボックスでは、さまざまなタスクを実行できます。 次の 1 つまたは複数の伝票を選択してから、次のいずれかのボタンを選択します。
 
-    - **関連項目の表示** – 選択したドキュメントに関連する支払仕訳帳で作成されたすべての支払仕訳帳トランザクションが表示されます。 さらに、これらの支払に関連するすべての決済が表示されます。 関連する支払が表示されているときは、ボタンのラベルで**決済を表示**に変更します。 **決済の表示**を選択して、**決済の表示**ダイアログ ボックスを最初に開いたときに表示されるトランザクションのみを表示します。
+    - **関連項目を表示する** – 一覧に表示されているドキュメントが作成された仕訳帳で作成された仕入先の、すべての支払仕訳帳トランザクションと一般仕訳帳トランザクションを表示します。 たとえば、支払が表示されている場合は、その支払が作成された支払仕訳帳のすべての支払が表示されます。 請求書または支払が表示されていて、それが一般仕訳帳で作成された場合は、それが作成された一般仕訳帳のすべてのドキュメントが表示されます。 ドキュメントのリストに関連するすべての決済も表示されます。 関連する支払が表示されているときは、ボタンのラベルで**決済を表示**に変更します。 **決済の表示**を選択して、**決済の表示**ダイアログ ボックスを最初に開いたときに表示されるトランザクションのみを表示します。
     - **履歴の表示** – 伝票の決済履歴を表示します。 **閉じる**を選択して、ダイアログ ボックスを閉じます。
     - **会計の表示** – 選択した伝票に関連するすべての伝票を表示します。 **閉じる**を選択して、ダイアログ ボックスを閉じます。
-    - **エクスポート**: 選択した伝票を Microsoft Excel にエクスポートします。
+    - **エクスポート** – 選択した伝票を Microsoft Excel にエクスポートします。
     - **トランザクションの決済** – 選択した元のドキュメントが完全に決済されなかった場合のみ、このボタンが表示されます。 このボタンを選択すると、**トランザクションの決済**ダイアログ ボックスが表示され、決済するトランザクションを選択できます。
     - **決済を元に戻す** – 選択した元のドキュメントが完全に決済された場合のみ、このボタンが表示されます。 このボタンを選択すると、**決済を元に戻す**ダイアログ ボックスが表示され、そのドキュメントで実行された決済を取り消すことができます。
 
@@ -98,4 +97,3 @@ ms.lasthandoff: 10/12/2018
 - **現金割引の条件を編集** - 基準日と現金割引条件に基づき、現金割引は変更されます。
 
 支払設定の編集を終えたら、**閉じる**を選び変更を保存します。
-

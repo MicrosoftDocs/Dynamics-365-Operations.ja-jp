@@ -1,13 +1,13 @@
 ---
-title: "日本"
-description: "このトピックでは、日本固有の機能の概要を示します。"
+title: 日本
+description: このトピックでは、日本固有の機能の概要を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: ae33873b2ccfc6b0557ce3b27066f633f3413a99
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371046"
 ---
-
 # <a name="japan"></a>日本
 
 [!include[banner](../includes/banner.md)]
 
-このトピックには、日本に基本住所を持つ法人に Dynamics 365 for Finance and Operations を設定するのに役立つ情報およびリソースへのリンクが含まれます。
+このトピックには、日本に基本住所を持つ法人に対して Dynamics 365 for Finance and Operations の設定に役立つ情報およびリソースへのリンクが含まれます。
 
 ## <a name="cash-and-bank-management"></a>現金および銀行管理
 
@@ -130,4 +129,3 @@ ms.lasthandoff: 08/13/2018
 - [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics のローカライズのポータル: オーストラリアのレポート (CustomerSource アカウントが必要です)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/japan.html)
-

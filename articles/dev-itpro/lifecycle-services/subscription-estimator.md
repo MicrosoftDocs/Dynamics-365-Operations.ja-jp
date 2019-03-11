@@ -1,28 +1,28 @@
 ---
-title: "Lifecycle Services (LCS) のサブスクリプション試算"
-description: "このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを Microsoft Dynamics 365 Finance and Operations で使用する方法について説明します。"
+title: Lifecycle Services (LCS) のサブスクリプション試算
+description: このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを Microsoft Dynamics 365 Finance and Operations で使用する方法について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3496becaa09451f48fdc6bc15dbdb8e7b031e29e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369461"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 
@@ -59,4 +59,3 @@ ms.lasthandoff: 08/09/2018
 - **見積が作成されますが、要件を満たしていません** - このエラーは、入力されたトランザクション明細行がサブスクリプション見積もりツールの制限内にない場合に発生します。 このエラーを解決するには、サポート要求を作成し、使用プロファイルを添付します。 次に、インスタンスのサイズを手動で変更できます。
 
 その他のエラー メッセージが表示されたり、その他の問題が発生した場合は、サポート チームがその問題に対処できるようにサポート リクエストを作成し、アクティブな見積もりを添付します。
-

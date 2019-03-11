@@ -1,13 +1,13 @@
 ---
-title: "見積依頼 (RFQs)"
-description: "このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。"
+title: 見積依頼 (RFQs)
+description: このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。
 author: mkirknel
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
-ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/21/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351289"
 ---
-
 # <a name="requests-for-quotation-rfqs"></a>見積依頼 (RFQs)
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ RFQケースを準備し、仕入先を追加したら、RFQ ケース上の **�
 仕入先から 2 回目の返信が必要な場合、**見積依頼** ページで **返信** を選択します。 返信アクションにより新しい仕訳帳とレポートが生成され、印刷設定に従って印刷、アーカイブおよび送信されます。
 
 > [!NOTE]
-> **見積依頼** ページの名前は変更されました。 Dynamics 365 for Finance and Operations の以前のリリースでは、**見積依頼の返信** ページと呼ばれます。
+> **見積依頼** ページの名前は変更されました。 Dynamics 365 for Finance and Operations 以前のリリースでは、**見積依頼の返信**ページと呼ばれます。
 
 RFQ ケースにスコア基準を追加した場合、RFQ ケースにはスコアを入力できるパネルが現れます。 **回答の比較** ページで回答を比較する時に、RFQ 上で合計のスコアが表示されます。 **回答の比較** ページには、明細行の価格、出荷日、および価格の合計などの他のデータ回答を比較できます。
 
@@ -268,5 +267,4 @@ RFQ ケースに関連付けられている RFQ 上のすべての明細行は�
 |------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
 | 入札のいずれかを承認します。 (または少なくとも 1 つの明細行) |                          受入済                           |                           承諾済                           |                    受入済                    |                    承諾済                     |                   受入済                   |                   承諾済                    |
 |           それ以外の全ての入札を却下します。           |                          拒否済                           |                           承諾済                           |                    拒否済                    |                    承諾済                     |                   拒否済                   |                   受入済                    |
-
 

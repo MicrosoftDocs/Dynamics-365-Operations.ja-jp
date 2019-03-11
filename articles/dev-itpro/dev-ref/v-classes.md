@@ -1,13 +1,13 @@
 ---
-title: "V クラス"
-description: "文字 V で始まるシステム API クラス。"
+title: V クラス
+description: 文字 V で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: f0bd05f773b43f8f9ca1a0a364b9810bad4feb5a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369618"
 ---
-
 # <a name="v-classes"></a>V クラス
 
 [!include [banner](../includes/banner.md)]
@@ -209,7 +208,7 @@ VSItemNode クラスは、Finance and Operations アプリケーション オブ
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -351,7 +350,7 @@ VSProjectFileNode クラスは、Finance and Operations アプリケーション
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -482,7 +481,7 @@ VSProjectFolderNode クラスは、Finance and Operations アプリケーショ�
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -639,7 +638,7 @@ VSProjectLinkNode クラスは、Finance and Operations アプリケーション
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                             | 説明                           |
 |--------------------------------------------------------------------|---------------------------------------|
@@ -663,7 +662,7 @@ VSProjectLinkNode クラスは、Finance and Operations アプリケーション
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -779,16 +778,16 @@ VSProjectNode クラスは、Finance and Operations アプリケーション オ
 | 方法                                                                | 説明                                                                                       |
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | public container extract(\[str path\], \[boolean extractReferenced\]) | ディスクにプロジェクト全体を展開します。                                                               |
-| public VSProjectFolderNode getContentNode()                           | Visual Studio プロジェクト ファイルが格納されているコンテンツの VSProjectFolderNode オブジェクトを取得します。        |
+| public VSProjectFolderNode getContentNode()                           | Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクトを取得します。        |
 | public DeployTo getDeployTo()                                         | deployTo プロパティの値を取得します。                                                              |
 | public VSProjectFolderNode getOutputNode()                            | Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクトを取得します。  |
 | public VSProjectFileNode getPrimaryOutputNode()                       | Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクトを取得します。 |
-| public str getPrimaryTargetFileName()                                 | Visual Studio プロジェクトの含むプライマリ ターゲット ファイル名を取得します。                                   |
+| public str getPrimaryTargetFileName()                                 | Visual Studio プロジェクトのプライマリ ターゲット ファイル名を取得します。                                   |
 | public Map getProxies()                                               | このプロジェクトでのプロキシを取得します。                                                                 |
 | public container getProxiesContainer()                                | このプロジェクトでのプロキシを取得します。                                                                 |
 | public str getReferencedProjectsInAOT()                               | この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスを取得します。             |
 | public str referencedProjects(\[str value\])                          |                                                                                                   |
-| public void setPrimaryTargetFileName(str targetFileName)              | Visual Studio プロジェクトの含むプライマリ ターゲット ファイル名を設定します。                                   |
+| public void setPrimaryTargetFileName(str targetFileName)              | Visual Studio プロジェクトのプライマリ ターゲット ファイル名を設定します。                                   |
 | public void extractToSpecificDir(str directory)                       |                                                                                                   |
 | public void setDeployTo(DeployTo deployTo)                            | deployTo プロパティの値を設定します。                                                          |
 
@@ -814,13 +813,13 @@ extractReferenced
 
 ### <a name="method-getcontentnode"></a>メソッド getContentNode
 
-Visual Studio プロジェクト ファイルが格納されているコンテンツの VSProjectFolderNode オブジェクトを取得します。
+Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクトを取得します。
 
     public VSProjectFolderNode getContentNode()
 
 #### <a name="return-value"></a>戻り値
 
-Visual Studio プロジェクト ファイルが格納されているコンテンツの VSProjectFolderNode オブジェクト。
+Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクト。
 
 ### <a name="method-getdeployto"></a>メソッド getDeployTo
 
@@ -854,13 +853,13 @@ Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オ�
 
 ### <a name="method-getprimarytargetfilename"></a>メソッド getPrimaryTargetFileName
 
-Visual Studio プロジェクトの含むプライマリ ターゲット ファイル名を取得します。
+Visual Studio プロジェクトのプライマリ ターゲット ファイル名を取得します。
 
     public str getPrimaryTargetFileName()
 
 #### <a name="return-value"></a>戻り値
 
-Visual Studio プロジェクトの含むプライマリ ターゲット ファイルの名前です。
+Visual Studio プロジェクトのプライマリ ターゲット ファイル名。
 
 ### <a name="method-getproxies"></a>メソッド getProxies
 
@@ -904,14 +903,14 @@ Visual Studio プロジェクトの含むプライマリ ターゲット ファ�
 
 ### <a name="method-setprimarytargetfilename"></a>メソッド setPrimaryTargetFileName
 
-Visual Studio プロジェクトの含むプライマリ ターゲット ファイル名を設定します。
+Visual Studio プロジェクトのプライマリ ターゲット ファイル名を設定します。
 
     public void setPrimaryTargetFileName(str targetFileName)
 
 #### <a name="parameters"></a>パラメーター
 
 targetFileName  
-Visual Studio プロジェクトの含むプライマリ ターゲット ファイルの名前です。
+Visual Studio プロジェクトのプライマリ ターゲット ファイル名。
 
 ### <a name="method-extracttospecificdir"></a>メソッド extractToSpecificDir
 
@@ -1065,7 +1064,7 @@ VSProjectTypeNode クラスは、AOT 内の Visual Studio プロジェクト ノ
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法 | 説明 |
 |--------|-------------|
@@ -1401,7 +1400,6 @@ newName
 VSSItem クラスの新しいインスタンスを初期化します。
 
     private void new()
-
 
 
 

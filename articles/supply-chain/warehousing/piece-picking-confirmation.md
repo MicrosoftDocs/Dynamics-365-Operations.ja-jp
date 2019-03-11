@@ -1,13 +1,13 @@
 ---
-title: "ピース ピッキング確認"
-description: "このトピックでは、モバイル デバイスからピース ピッキングの確認を設定して適用する方法について説明します。"
+title: ピース ピッキング確認
+description: このトピックでは、モバイル デバイスからピース ピッキングの確認を設定して適用する方法について説明します。
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9b85414dd1385dc3d8c97632eaaeb252759590ff
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ef9ab68c20ae095de03b0a0e05aa15ef5bf8a5d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349633"
 ---
-
 # <a name="piece-picking-confirmation"></a>ピース ピッキング確認
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="set-up-piece-picking"></a>ピッキング ピッキングの設定
 
-1.  モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: [倉庫管理] > [**倉庫管理**] > [**設定**] > [**モバイル デバイス**] > [**モバイル デバイスのメニュー項目**] に進みます。 
+1.  モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: [倉庫管理] > **倉庫管理** > **設定** > **モバイル デバイス** > **モバイル デバイスのメニュー項目** に進みます。 
 2. モバイル デバイス メニュー品目から、[作業確認の設定] を開きます。
 
 作業タイプが選択または集計の場合、以下のオプションが選択可能になります。
@@ -51,5 +50,4 @@ ms.lasthandoff: 11/03/2017
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ピース ピッキング確認 | 選択と棚卸作業タイプに使用できます。 製品の確認書が自動的に選択されます。 モバイル デバイスから各在庫を確認できます。 |
 |  ピースの最大数  |                   ピース ピッキングの確認が有効化された場合にピッキング作業に使用できます。 確認する必要がある在庫数の制限を設定します。                   |
-
 

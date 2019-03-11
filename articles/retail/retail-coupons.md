@@ -1,31 +1,30 @@
 ---
-title: "小売販売のクーポンの設定"
-description: "このトピックでは、小売クーポンの概要と設定方法について説明します。"
+title: 小売販売のクーポンの設定
+description: このトピックでは、小売クーポンの概要と設定方法について説明します。
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336592"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>小売販売のクーポンの設定
 
 [!include [banner](includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/04/2019
 クーポンを作成するには、割引とクーポンを別に作成します。 Microsoft Dynamics 365 for Retail のクーポン ページで割引を選択することでそれらをリンクします。
 
 > [!NOTE]
-> クーポンを割引にリンクすると、Microsoft Dynamics 365 for Retail の割引ページのいくつかのフィールドは、クーポンの設定で管理されているため読み取り専用になります。 これらのフィールドには、ステータスと標準の日付範囲のフィールドが含まれます。
+> クーポンが割引にリンクされると、Microsoft Dynamics 365 for Retail の割引ページのいくつかのフィールドは、クーポンの設定で管理されているため読み取り専用になります。 これらのフィールドには、ステータスと標準の日付範囲のフィールドが含まれます。
 
 ### <a name="limited-use-coupons"></a>専用クーポン
 
@@ -81,4 +80,3 @@ ms.lasthandoff: 01/04/2019
 - **HQ は部分的に更新されますが、Retail サーバーと POS は更新されません。** HQ 更新では、クーポンと割引ページが更新され、小売価格エンジンも更新されます。 これら 2 つのコンポーネントの一方だけが更新された場合、小売用の一部のページで価格計算データが一致しなくなります。 そのため、予期しない割引の計算やエラーが、割引の計算時に発生する可能性があります。
 - **HQ は更新されますが、Retail サーバーと POS は更新されません (N-1)。** すべての小売店舗を同時に更新できるわけではないため、小売店舗を更新する前に、HQ を更新することをお勧めします。 N-1 シナリオでは、クーポンに関連する新しい機能は、まだ更新されていない店舗では使用できません。 たとえば、クーポン機能は、明細行の「除外」について説明します。 割引に明細行の除外を使用する場合は、以前のバージョンを実行している小売店舗では適用されません。
 - **HQ は更新されず、Retail サーバーと POS が更新されます (N+1)。** Retail サーバーで更新された価格エンジンで価格の計算時にレガシ割引コードを処理できるので、このシナリオでは更新による機能の影響はありません。
-

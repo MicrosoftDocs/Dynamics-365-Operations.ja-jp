@@ -1,13 +1,13 @@
 ---
-title: "元帳決済"
-description: "このトピックでは、元帳決済 ページを使用して元帳トランザクションを決済する、および決済を取り消す方法について説明します。"
+title: 元帳決済
+description: このトピックでは、元帳決済 ページを使用して元帳トランザクションを決済する、および決済を取り消す方法について説明します。
 author: mikefalkner
 manager: aolson
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b02a1a066913c9959e9a55e78789e5ff1a175c56
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: ec659a53c187b1bdfd81565d6e2f20a59e08834c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308486"
 ---
-
 # <a name="ledger-settlements"></a>元帳決済
 
 [!include [banner](../includes/banner.md)]
@@ -76,4 +75,3 @@ ms.lasthandoff: 10/12/2018
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>トランザクションの一覧に含まれる勘定の一覧を更新します。
 
 **元帳決済勘定**を選択して、トランザクションの一覧に含まれる勘定を編集するダイアログ ボックスを開きます。 **新規**をクリックして、新しい勘定を一覧に追加します。 このリストは、**元帳決済**ページに表示されるトランザクションの一覧をフィルターするために使用します。
-

@@ -1,13 +1,13 @@
 ---
-title: "Retail チャネル拡張機能を最新の Retail SDK にアップグレード"
-description: "このトピックでは、以前のリリースから Retail チャネル拡張機能を Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。"
+title: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
+description: このトピックでは、以前のリリースから Retail チャネル拡張機能を Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfendd
 ms.search.scope: Operations, Retail
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.translationtype: HT
-ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
 ms.openlocfilehash: 767ffaf742dc794dc60fe74942d2b295ac918d07
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368901"
 ---
-
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。 プロセス全体とサポートされるシナリオの情報が含まれていますが、このトピックではプロセスの各ステップに関する詳細な指示は提示しません。 このトピックは、Dynamics 365 for Retail および Dynamics 365 for Finance and Operations 7.3 バージョン以上に適用されます。
+このトピックでは、以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。 プロセス全体とサポートされるシナリオの情報が含まれていますが、このトピックではプロセスの各ステップに関する詳細な指示は提示しません。 このトピックは、Dynamics 365 for Retail および Dynamics 365 for Finance and Operations 7.3 バージョンおよびそれ以上に適用されます。
 以下のセクションは新しい Retail SDK に拡張機能を手動で移動する方法を説明しますが、Azure DevOps または Git などのソース管理システムを使用してこれを行うことができます。
 
 ## <a name="update-the-retail-sdk"></a>Retail SDK の更新
@@ -158,4 +157,3 @@ SDK アップグレード プロセスは、バージョンによって異なり
 
 ## <a name="generate-a-deployable-package-for-validation"></a>検証用の配置可能パッケージを生成する
 トピック[配置可能な小売パッケージの作成](retail-sdk/retail-sdk-packaging.md)の手順を完了し、検証用の配置可能パッケージを生成します。
-

@@ -1,13 +1,13 @@
---- 
-title: "裏書済受取手形の取消"
-description: "このタスクは、裏書きされた為替手形の取消について説明します。"
+---
+title: 裏書済受取手形の取消
+description: このタスクは、裏書きされた為替手形の取消について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReverse, LedgerTransVoucher
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cae3ad98cec221277f65e62e72d2bb07895cd926
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371144"
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange"></a>裏書済受取手形の取消
 
@@ -44,5 +44,4 @@ ms.lasthandoff: 10/16/2018
 5. [照会] をクリックします。
 6. [伝票] をクリックします。
     * 会計伝票が取消に対して生成されていることを確認します。  
-
 

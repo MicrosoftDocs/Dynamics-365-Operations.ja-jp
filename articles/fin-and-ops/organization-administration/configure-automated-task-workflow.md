@@ -1,13 +1,13 @@
 ---
-title: "ワークフローでの自動化タスクのコンフィギュレーション"
-description: "このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。"
+title: ワークフローでの自動化タスクのコンフィギュレーション
+description: このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5a9f37228beedafa085987668d5c89b06c6c9d61
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 047abbf297b3514c7f97d2baa6c0f5cab6696cde
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365112"
 ---
-
 # <a name="configure-automated-tasks-in-a-workflow"></a>ワークフローでの自動化タスクのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ ms.lasthandoff: 08/09/2018
     </tr>
     <tr>
     <td>ユーザー</td>
-    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
+    <td>特定 Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
     <td>
     <ol>
     <li><strong>ユーザー</strong> を選択したのち、<strong>ユーザー</strong> タブをクリックします。</li>
@@ -112,4 +111,3 @@ ms.lasthandoff: 08/09/2018
     </table>
 
 8. ステップ 2 で選択したイベントごとに、ステップ 3～7 を繰り返します。
-

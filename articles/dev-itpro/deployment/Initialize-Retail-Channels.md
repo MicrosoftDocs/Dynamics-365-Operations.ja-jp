@@ -1,13 +1,13 @@
 ---
-title: "クラウドでホストされている Retail チャネル コンポーネントの初期化"
-description: "このトピックでは、クラウドでホストされている Retail チャネル コンポーネントの初期化方法について説明します。"
+title: クラウドでホストされている Retail チャネル コンポーネントの初期化
+description: このトピックでは、クラウドでホストされている Retail チャネル コンポーネントの初期化方法について説明します。
 author: AamirAllaq
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Retail, Operations
@@ -15,15 +15,13 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.translationtype: HT
-ms.sourcegitcommit: b8002c547b4f5e7ca485778af90d5b5293496f79
 ms.openlocfilehash: 797706f1411d1608919ee5060d65abd199707d36
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369315"
 ---
-
-
 # <a name="initialize-cloud-hosted-retail-channel-components"></a>クラウドでホストされている Retail チャネル コンポーネントの初期化
 
 [!include[banner](../includes/banner.md)]
@@ -60,7 +58,7 @@ Retail サーバーに依存する店舗およびオンライン チャネルの
 - クラウドでホストされている Retail チャンネルは機能しません (POS オフライン機能がオンの場合を除く)。
 - オフライン機能がオンになっている POS デバイスは機能が制限されます。
 - Retail サーバーに依存しているすべての電子商取引クライアントが中断されます。
-- Retail Store Scale Unit でホストされているチャネルは影響を受けません。
+- Retail Store Scale Unit でホストされているチャネルは影響されません。
 - 本社機能は影響を受けません。
 
 初期化が完了した後に起きる事柄を示します。
@@ -68,4 +66,3 @@ Retail サーバーに依存する店舗およびオンライン チャネルの
 - アクティブ化されたすべての POS デバイスのデバイス有効化状態は保持されます。 したがって、デバイスを再度有効化する必要はありません。
 - スタンドアロン ハードウェア ステーション インスタンスは引き続き機能します。
 - POS チャンネル側のレポートはリセットされ、データを初期化する前に表示されません。
-

@@ -1,13 +1,13 @@
 ---
-title: "G クラス"
-description: "文字 G で始まるシステム API クラス。"
+title: G クラス
+description: 文字 G で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0fc3d0cb464af61731efa9d048ab0551a1b2ea6d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369115"
 ---
-
 # <a name="g-classes"></a>G クラス
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,6 @@ GAC のアセンブリを表すコンテナーです。
 Gac クラスの新しいインスタンスを初期化します。
 
     public void new()
-
 
 
 

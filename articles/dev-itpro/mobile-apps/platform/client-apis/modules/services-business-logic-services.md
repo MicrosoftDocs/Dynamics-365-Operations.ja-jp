@@ -1,28 +1,27 @@
 ---
-title: "サービス モジュール"
-description: "クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。"
+title: サービス モジュール
+description: クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8a19ede998e8e4b30faef73ff401855dc5ae0e44
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369886"
 ---
-
 # <a name="services-module"></a>サービス モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -142,5 +141,4 @@ ExpressionOperator: 「Is」 &#124; 「IsNot」 &#124; 「Contains」 &#124; 「
 
 
 フィルターの定義およびその他の場所で使用される式演算子の使用可能な値を表します
-
 

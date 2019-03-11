@@ -1,31 +1,30 @@
 ---
-title: "返品による梱包明細票の更新"
-description: "返品品目を在庫に入庫する前に、それらの品目が属する注文の梱包明細を更新する必要があります。"
+title: 返品による梱包明細票の更新
+description: 返品品目を在庫に入庫する前に、それらの品目が属する注文の梱包明細を更新する必要があります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4aba61e6acf5fb959917da9ddea94c21fe1460d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7532c5b1debdb498c2d6bab129208a412387c8fa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344872"
 ---
-
 # <a name="packing-slip-updates-for-returns"></a>返品による梱包明細票の更新  
 
 [!include [banner](../includes/banner.md)]
@@ -48,6 +47,5 @@ ms.lasthandoff: 05/08/2018
 [返品による請求書更新の実行](perform-invoice-updates-for-returns.md)
 
   
-
 
 

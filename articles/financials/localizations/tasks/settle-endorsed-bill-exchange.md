@@ -1,13 +1,13 @@
---- 
-title: "裏書済受取手形の決済"
-description: "このタスクは、裏書きされた為替手形の決済について説明します。"
+---
+title: 裏書済受取手形の決済
+description: このタスクは、裏書きされた為替手形の決済について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillOfExchangeEndorseListPage, VendOpenTrans, CustBillOfExchangeEndorseSettle
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: a535a43cd006fb69369c884da5ec45693b7e6161
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371014"
 ---
 # <a name="settle-an-endorsed-bill-of-exchange"></a>裏書済受取手形の決済
 
@@ -56,5 +56,4 @@ ms.lasthandoff: 10/16/2018
 2. [裏書済為替手形の決済] をクリックします。
     * 決済日は、必要に応じて変更できます。  
     * ステータスが「裏書決済済」に更新されていることを確認します。  
-
 

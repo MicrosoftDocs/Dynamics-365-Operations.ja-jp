@@ -1,13 +1,13 @@
 ---
-title: "F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)"
-description: "文字 F で始まるシステム API クラス。"
+title: F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)
+description: 文字 F で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 799901536097cc07d3df0ae6fe8a85f3018d5a19
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370036"
 ---
-
 # <a name="f-classes-formbuildbuttoncontrol-to-formbuildfasttabsummaryseparator"></a>F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)
 
 [!include [banner](../includes/banner.md)]
@@ -380,7 +379,7 @@ FormBuildButtonControl クラスを使用すると、X++ コードとメタデ�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -1597,7 +1596,7 @@ FormBuildButtonGroupControl クラスを使用すると、X++ コードとメタ
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -4503,7 +4502,7 @@ FormBuildComboBoxControl クラスを使用すると、X++ コードとメタデ
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -5869,7 +5868,7 @@ FormBuildCommandButtonControl クラスを使用すると、X++ コードとメ�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -5905,7 +5904,7 @@ FormBuildCommandButtonControl クラスを使用すると、X++ コードとメ�
 | 値です。 | スタイル。                         |
 |--------|--------------------------------|
 | 0      | 既定。                       |
-| 1      | Microsoft Windows パレット。 |
+| 1      | Microsoft Windowsパレット。 |
 | 2      | 真の配色。         |
 
 ### <a name="method-command"></a>メソッド command
@@ -7445,7 +7444,7 @@ controlNo
 
 #### <a name="return-value"></a>戻り値
 
-コンテナー コントロールである場合は、指定されたインデックスを持つ子コントロールを表す FormBuildControl オブジェクト; それ以外の場合は、nullNothingnullptrunita null参照 (Visual Basicにはなし)。
+コンテナー コントロールである場合は、指定されたインデックスを持つ子コントロールを表す FormBuildControl オブジェクト; それ以外の場合は、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -8655,7 +8654,7 @@ FormBuildDateControl クラスを使用すると、X++ コードとメタデー�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -10146,7 +10145,7 @@ overrideObject
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -11647,7 +11646,7 @@ pushFront
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -12917,7 +12916,7 @@ insertAfterControlId
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -14185,7 +14184,7 @@ overrideObject
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -15239,7 +15238,7 @@ overrideObject
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -15833,7 +15832,6 @@ objectMethodToCall
 <!-- -->
 
 overrideObject  
-
 
 
 

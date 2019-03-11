@@ -1,13 +1,13 @@
 ---
-title: "原価会計用語"
-description: "このトピックでは、原価計算で使用する重要な用語を定義します。"
+title: 原価会計用語
+description: このトピックでは、原価計算で使用する重要な用語を定義します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365940"
 ---
-
 # <a name="cost-accounting-terminology"></a>原価会計用語
 
 [!include [banner](../includes/banner.md)]
@@ -98,7 +97,7 @@ ms.lasthandoff: 03/26/2018
 
 配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Finance と Operations では、相互配賦手法をサポートします。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行し、繰り返し処理する順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。
 
-[**原価配賦ポリシー**]
+**原価配賦ポリシー**
 
 原価配賦のポリシーは、配賦する必要がある数量と金額を定義します。 配賦ルールには配賦元のルールが含まれます。これは配賦されている原価の決定、および原価が割り当てられるところを決定する配賦先のルールを決定します。 たとえば、融資サービスのすべての原価は、組織 (つまり、配賦ターゲット) のさまざまな部門に割り当てることができる配賦ソースです。
 
@@ -204,6 +203,5 @@ ms.lasthandoff: 03/26/2018
 **バージョン**
 
 さまざまなバージョンがさまざまな結果をシミュレーション、表示および比較するために使用されます。 既定では、すべての実際原価は、*実績* として知られる 1 つの基準のバージョンで表示されます。 予算と計算のために、必要を満たす数多くのバージョンを使用できます。 たとえば、予算データをオリジナル版にインポートし、変更されたバージョンで予算を変更できます。 計算のために、複数のバージョンを作成できます。 これらのさまざまなバージョンでは、原価配賦に適用される異なる計算ルールを使用して、計算を作成できます。
-
 
 

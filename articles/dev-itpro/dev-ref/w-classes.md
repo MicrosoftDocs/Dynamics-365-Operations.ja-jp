@@ -1,13 +1,13 @@
 ---
-title: "W クラス"
-description: "文字 W で始まるシステム API クラス。"
+title: W クラス
+description: 文字 W で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 62d632a0bc881c3f310de2e0899e66e6d91f0fc8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368849"
 ---
-
 # <a name="w-classes"></a>W クラス
 
 [!include [banner](../includes/banner.md)]
@@ -731,7 +730,7 @@ MenuFunction クラスで実行されるオブジェクトに渡されるパラ�
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -1291,7 +1290,7 @@ Microsoft 社内のみで使用。
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -3407,7 +3406,7 @@ TreeNode クラスの新しいインスタンスを初期化します。
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                  | 説明                                           |
 |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -3592,7 +3591,6 @@ hGDIObject
 WinAPINative クラスの新しいインスタンスを初期化します。
 
     private void new()
-
 
 
 

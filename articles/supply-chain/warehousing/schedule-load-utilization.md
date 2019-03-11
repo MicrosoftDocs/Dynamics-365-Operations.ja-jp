@@ -1,13 +1,13 @@
 ---
-title: "貨物使用率のスケジュール設定"
-description: "このトピックでは、倉庫の負荷を設定およびスケジュールする方法について説明します。"
+title: 貨物使用率のスケジュール設定
+description: このトピックでは、倉庫の負荷を設定およびスケジュールする方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 15f3735f79671ac41789d39a5473722a5f35fde0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d52ad452c615a61739582431fcd100a7efa3d93a
-ms.openlocfilehash: 350666cee8f2643c53e9eed8ee73299bbea1e757
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332038"
 ---
-
 # <a name="schedule-load-utilization"></a>貨物使用率のスケジュール設定
 
 [!include[banner](../includes/banner.md)]
@@ -73,4 +72,3 @@ ms.lasthandoff: 04/26/2018
 
 4. **負荷タイプ** フィールドで、**量**または **重量**を選択し、空間を予測する倉庫の作業単位を指定します。
 5. **空間使用率の設定**フィールドで、予測の基になるべき空間使用率の設定を選択します。
-

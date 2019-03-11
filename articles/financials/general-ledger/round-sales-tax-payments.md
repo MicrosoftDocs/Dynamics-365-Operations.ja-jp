@@ -1,13 +1,13 @@
 ---
-title: "売上税の支払と丸めのルール"
-description: "この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。"
+title: 売上税の支払と丸めのルール
+description: この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f03336c834e74cd12d039c7b9692874843811746
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 13470282efc6b9135e86355cf8071b841aad3071
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367849"
 ---
-
 # <a name="sales-tax-payments-and-rounding-rules"></a>売上税の支払と丸めのルール
 
 [!include [banner](../includes/banner.md)]
@@ -68,6 +67,5 @@ ms.lasthandoff: 11/03/2017
 - [売上税支払の作成](tasks/create-sales-tax-payment.md)
 - [ドキュメントの売上トランザクションの作成](tasks/create-sales-tax-transactions-documents.md)
 - [転記された消費税トランザクションの表示](tasks/view-posted-sales-tax-transactions.md)
-
 
 

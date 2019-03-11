@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 for Unified Operations モバイル アプリのホームページ"
-description: "このトピックでは、Microsoft Dynamics 365 for Unified Operations モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。"
+title: Dynamics 365 for Unified Operations モバイル アプリのホームページ
+description: このトピックでは、Microsoft Dynamics 365 for Unified Operations Mobile アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321389"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Dynamics 365 for Unified Operations モバイル アプリのホームページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Unified Operations モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
+このトピックでは、Microsoft Dynamics 365 for Unified Operations Mobile アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 
 > [!NOTE]
-> 以前のモバイル アプリの名前は、*Microsoft Dynamics 365 for Finance and Operations* でした。
+> 以前のモバイル アプリの名前は *Microsoft Dynamics 365 for Finance and Operations* でした。
 
 <a name="overview"></a>概要
 --------
@@ -85,12 +84,12 @@ ms.lasthandoff: 10/26/2018
 <td>1</td>
 <td>システム管理者</td>
 <td>組織内の Finance and Operations を実装します。</td>
-<td><ul><li>まだ Microsoft Dynamics 365 のバージョンを配置していない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境を配置</a> を参照してください。</li><li>使用可能なモバイル ワークスペースの一覧は、<a href="mobile-workspaces-released.md">最近リリースされたモバイル ワークスペース</a> を参照してください。</li></ul></td>
+<td><ul><li>まだ Microsoft Dynamics 365 のバージョンを配置していない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a> を参照してください。</li><li>使用可能なモバイル ワークスペースの一覧は、<a href="mobile-workspaces-released.md">最近リリースされたモバイル ワークスペース</a> を参照してください。</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>システム管理者</td>
-<td><strong>Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合:</strong> Microsoft が提供するモバイル ワークスペースを有効にする KB をダウンロードしインストールします。</td>
+<td><strong>Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合は:</strong>Microsoft が提供するモバイル ワークスペースを有効にする KB をダウンロードしインストールします。</td>
 <td>詳細については、次のトピックを参照してください。
 <ul>
 
@@ -120,7 +119,7 @@ ms.lasthandoff: 10/26/2018
 <td>5</td>
 <td>ISV</td>
 <td>カスタム モバイル ワークスペースを含む配置可能パッケージを作成し、Microsoft Dynamics Lifecycle Services (LCS) にそのパッケージをアップロードします。</td>
-<td><a href="../deployment/create-apply-deployable-package.md">配置可能パッケージを作成</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">配置可能パッケージの作成</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
@@ -153,4 +152,3 @@ ms.lasthandoff: 10/26/2018
 </tr>
 </tbody>
 </table>
-

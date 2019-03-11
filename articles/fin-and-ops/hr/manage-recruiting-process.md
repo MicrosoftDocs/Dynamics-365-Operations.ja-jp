@@ -1,13 +1,13 @@
 ---
-title: "採用プロセスの管理"
-description: "この記事では、空いている職位の宣伝や申請者の採用、申請者および申請情報の追跡、申請者の面接、および 1 人以上の候補者を選択して組織内の空いている職位を埋めるといった活動を含む採用プロセスで、採用担当者がステップを追跡するために使用できるコンセプトについて説明します。"
+title: 採用プロセスの管理
+description: この記事では、空いている職位の宣伝や申請者の採用、申請者および申請情報の追跡、申請者の面接、および 1 人以上の候補者を選択して組織内の空いている職位を埋めるといった活動を含む採用プロセスで、採用担当者がステップを追跡するために使用できるコンセプトについて説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9695a7a3f98220f48627e85a51bc6dae5adb35c2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345677"
 ---
-
 # <a name="manage-recruiting-processes"></a>採用プロセスの管理
 
 [!include [banner](../includes/banner.md)]
@@ -105,4 +104,3 @@ web 上で申請者が提出した雇用申請は、職務広告に反応して�
 ## <a name="hiring-applicants"></a>雇用の申請者
 
 **申請**ページを使用して申請者を雇用します。 申請者を雇用する場合、申請レコードは **採用済** のステータスになり、申請者のグローバル アドレス帳のレコードは新しい作業者レコードに関連付けられます。 新しい作業者レコードのグローバル アドレス帳情報への変更は、申請者レコードにも表示されます。 新しい従業員があなたの企業内の別の仕事を申請した場合、これによりデータ入力を減らすことができます。 新しい職位に既存の作業者を雇用するには、**申請のステータス** ボックスの **職位の変更** をクリックして転送プロセスを開始します。
-

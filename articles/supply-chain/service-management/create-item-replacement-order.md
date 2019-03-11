@@ -1,30 +1,29 @@
 ---
-title: "品目の交換注文の作成"
-description: "品目交換注文は通常、製品が返品され、検査された後で作成されます。"
+title: 品目の交換注文の作成
+description: 品目交換注文は通常、製品が返品され、検査された後で作成されます。
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 784a2522c27e8131f211ffc52319552b3b928cc3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f0cd629658972f98e2233dfa287940c4444b82a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355015"
 ---
-
 # <a name="create-an-item-replacement-order"></a>品目の交換注文の作成 
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 05/08/2018
 
 1.  **販売とマーケティング** \> **共通** \> **返品注文** \> **すべての返品注文**の順にクリックします。
 
-2.  新しい返品注文を作成するか、一覧から返品注文を選択して**返品注文 - RMA 番号: %1、%2**フォームを開きます。
+2.  新しい返品注文を作成するか、一覧から返品済注文を選択して**返品注文 - RMA 番号: %1%2** フォームを開きます。
 
 3.  **返品行**をクリックして、**交換品目**を選択します。
 
@@ -50,13 +49,13 @@ ms.lasthandoff: 05/08/2018
 
 1.  **販売とマーケティング** \> **共通** \> **返品注文** \> **すべての返品注文**の順にクリックします。
 
-2.  新しい返品注文を作成するか、一覧から返品注文を選択して**返品注文 - RMA 番号: %1、%2**フォームを開きます。
+2.  新しい返品注文を作成するか、一覧から返品注文を選択して**返品注文 - RMA 番号: %1%2** フォームを開きます。
 
-3.  返品品目の販売注文を確認するには、**販売注文の検索**をクリックします。 **販売注文の検索**フォームを完了し、**OK**をクリックしてフォームを閉じ、**返品注文 - RMA 番号: %1、%2**フォームに返します。 返品品目の販売注文明細行が返品注文にコピーされます。
+3.  返品品目の販売注文を確認するには、**販売注文の検索**をクリックします。 **販売注文の検索**フォームを完了し、**OK** をクリックしてフォームを閉じ、**返品注文 - RMA 番号: %1%2** フォームに返します。 返品品目の販売注文明細行が返品注文にコピーされます。
 
 4.  **交換注文**をクリックして**販売注文の作成**フォームを開きます。
 
-5.  **返品注文明細行のコピー**チェック ボックスをオンにして、**返品注文 - RMA 番号: %1、%2** フォームで選択した返品注文からこの販売注文に詳細を転送します。
+5.  **返品注文明細行のコピー**チェック ボックスをオンにして、**返品注文 - RMA 番号: %1%2** フォームで選択した返品注文からこの販売注文に詳細を転送します。
 
 6.  必要に応じて、詳細を入力または変更します。
     
@@ -66,6 +65,5 @@ ms.lasthandoff: 05/08/2018
     
     販売契約書の ID が**販売契約書 ID**フィールドに自動的に表示される場合、販売契約書は品目交換注文の販売注文ヘッダーにリンク済みです。 実施されていない販売契約書に適用可能な確約があり、その販売契約書の期限が切れる前に販売注文が作成される場合、販売契約書の明細行と販売注文の明細行の間にリンクが設定されます。 したがって、品目の価格などの販売契約書からの情報は、新しい販売注文の明細行にコピーされます。 
   
-
 
 

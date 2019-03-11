@@ -1,36 +1,35 @@
 ---
-title: "Retail Modern POS (MPOS) かクラウド POS かの選択"
-description: "このトピックでは、Retail Modern POS およびクラウド POS の主な違いについて説明します。 Microsoft Dynamics 365 for Retail を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。"
+title: Retail Modern POS (MPOS) かクラウド POS かの選択
+description: このトピックでは、Retail Modern POS およびクラウド POS の主な違いについて説明します。 Microsoft Dynamics 365 for Retail を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336247"
 ---
-
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) かクラウド POS かの選択
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail を配置する際に考慮すべき要因に対する追加のバック グラウンド、ヒント、およびガイダンスを実装者に与えます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
+このトピックでは、Microsoft Dynamics 365 for Retail を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスを実装者に与えます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
 
 ## <a name="insights"></a>インサイト
 
@@ -43,7 +42,7 @@ Retail は、次の POS オプションをサポートします。
 - Microsoft Windows の Retail Modern POS (MPOS)
 - Microsoft Windows Phone の MPOS
 - Apple iPad または Google Android タブレットの MPOS
-- Microsoft Edge、Internet Explorer、および Google Chrome ブラウザをサポートするクラウド POS (CPOS)
+- Microsoft Edge、Internet Explorer と Google Chrome ブラウザーに対応しているクラウド POS (CPOS)
 
 いずれにしても、POS (MPOS および CPOS) は同じコア アプリケーション コードを共有します。 この点が重要なのは、以下の理由によります。
 
@@ -58,10 +57,10 @@ MPOS および CPOS は大部分は同じですが、理解しておくべき重
 
 #### <a name="mpos"></a>MPOS
 
-Windows、iOS、または Android デバイスの MPOSは、デバイスでパッケージ化され、インストールされ、およびサービス対象となるアプリケーションです。
+Windows、iOS、または Android デバイスの MPOS は、デバイスでパッケージ化され、インストールされ、およびサービス対象となるアプリケーションです。
 
 - **Windows** – Windows アプリケーションの MPOS には、すべてのアプリケーション コードおよび埋め込み型 Commerce Runtime (CRT) が含まれています。 
-- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション ードは Microsoft Azure または Retail Store スケール ユニット (RSSU) の CPOS サーバーから取得されます。 詳細については、[小売店舗スケール ユニットの概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)を参照してください。
+- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Microsoft Azure または Retail Store Scale Unit (RSSU) の CPOS サーバーから取得されます。 詳細については、[Retail Store Scale Unit 概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)をご覧ください。
 
 #### <a name="cpos"></a>CPOS
 
@@ -106,4 +105,3 @@ Windows 用 MPOS は、オフライン モードをサポートします。 オ�
 - **ハードウェア デバイス/周辺機器** – Retail POS システムの 1 つの重要な側面は、プリンター、キャッシュ ドロワー、および支払ターミナルなどの POS 周辺機器を使用する能力です。 使用可能なすべての POS オプションは周辺機器を使用できますが、Windows 用 MPOS のみそれらを直接サポートします。 その他のすべてのアプリケーションには、1 つまたは複数のハードウェア ステーションが必要です。 この方法により柔軟性が増しますが、追加コンポーネントは配置、コンフィギュレーション、およびサービスの対象となる必要があります。
 - **システム要件** – POS アプリケーションのシステム要件が異なります。 選択を行う前に、最新の情報を確認してください。 たとえば、ブラウザーで CPOS が実行されるため、より広範囲のオペレーティング システムをサポートします。 システム要件に関する詳細については、「[クラウド配置のシステム要件](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements)」を参照してください。
 - **配置およびサービス** – アプリケーションおよび配置の選択に応じて、配置とサービス要件の複雑度が異なります。 たとえば、クラウド ホスト環境の CPOS 展開では、すべてのデバイスにインストールおよび更新は必要ありません。 したがって、この方法は、複雑度および原価を大幅に減少します。 ただし、オフライン モードを有効にしてすべてのレジスターに MPOS を配置する場合、共有ハードウェア ステーションも配置し、管理する必要があるエンドポイントの数が大幅に増加します。
-

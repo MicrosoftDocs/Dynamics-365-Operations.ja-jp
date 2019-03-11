@@ -1,13 +1,13 @@
 ---
-title: "クラウド配置のシステム要件"
-description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド展開のシステム要件を一覧表示します。"
+title: クラウド配置のシステム要件
+description: このトピックは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド配置のシステム要件を一覧表示します。
 author: sericks007
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: eeccbe753cd4adf86665a3c6a372fdbfca371799
 ms.openlocfilehash: 7e778a06d64e4824c4604f80ea628a4f285a6a78
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368956"
 ---
-
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド展開のシステム要件を一覧表示します。 Finance and Operations をインストールする前に、このステップが適切な場合、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証する必要があります。
+このトピックは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド配置のシステム要件を一覧表示します。 Finance and Operations をインストールする前に、このステップが適切な場合、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証する必要があります。
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 
@@ -57,7 +56,7 @@ Retail Cloud 販売時点管理 (POS) は、指定されたオペレーティン
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
-- Finance and Operations は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 これは、ブラウザー クライアントから Finance and Operations をホストする Microsoft Azure データセンターまでの待機時間です。 ネットワー待ち時間を <http://www.azurespeed.com> でテストすることをお勧めします。
+- Finance and Operations は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 この待機時間は、ブラウザー クライアントから Finance and Operations をホストする Microsoft Azure データ センターまでの待機時間のことです。 ネットワー待ち時間を <http://www.azurespeed.com> でテストすることをお勧めします。
 - Finance and Operations の帯域幅の要件はシナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) を超える帯域幅が必要です。 ただし、ワークスペースや大がかりなカスタマイズを含む高度な伝送データ要件があるシナリオには、帯域幅を増やすことを勧めます。
 
 一般に、Finance and Operations は、インターネットに最適化されます。 ブラウザー クライアントから Azure データセンターへのラウンド トリップの数は非常に小さく、全伝送データは圧縮されます。
@@ -67,26 +66,26 @@ Retail Cloud 販売時点管理 (POS) は、指定されたオペレーティン
 
 ## <a name="net-framework-requirements"></a>.NET Framework 要件
 
-Finance and Operations では、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として、Microsoft NET Framework バージョン 4.6.2 が必要です。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+Finance and Operations では、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.6.2 が必要です。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 
-## <a name="supported-microsoft-office-applications"></a>サポートされている Microsoft Office アプリケーション
+## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
 次の Microsoft Office アプリケーションは、Finance and Operations のクラウドおよびオンプレミス配置でサポートされています。
 
 - Microsoft Excel と Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
-- [Excel にエクスポート] または [Word にエクスポート] 機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
+- Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
 ## <a name="retail-modern-pos-for-windows-requirements"></a>Windows 用 Retail Modern POS の要件
 
 > [!NOTE]
-> - Retai Modern POS でオフライン データベースを使う場合、コンピューターは Microsoft SQL Server のすべてのシステム要件を満たす必要があります。 Retail Modern POS のオフライン データベースは、Service Pack 3 以降の SQL Server 2012、Service Pack 2 以降の SQL Server 2014 、または SQL Server 2016 が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。
-> - 2018 年 10 月 1 日以降、Retail Modern POS や 他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+> - Retail Modern POS でオフライン データベースを使う場合、コンピューターは Microsoft SQL Server のすべてのシステム要件を満たす必要があります。 Retail Modern POS のオフライン データベースは、Service Pack 3 以降の SQL Server 2012、Service Pack 2 以降の SQL Server 2014 、または SQL Server 2016 が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。
+> - 2018 年 10 月 1 日以降、Retail Modern POS や他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 
 ### <a name="supported-windows-operating-systems"></a>サポートされる Windows オペレーティング システム
 
 - Retail Modern POS は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
 - Retail Modern POS は Windows Server 2016、Windows 10 Pro、Windows 10 Enterprise、Windows 10 Enterprise Long Term Service Branch (LTSB) エディションおよび Windows 10 IOT Enterprise Edition でサポートされています。 少なくとも、Windows 10 Anniversary Update (バージョン 1607)、ビルド 14393 をインストールする必要があります。
-- Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro で Retail Modern POS およびその他の Retail のコンポーネントの使用をお勧めしません。
+- Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro で Retail Modern POS および他の Retail コンポーネントの使用をお勧めしません。
 - 同じコンピューターで Retail Modern POS と他の Retail コンポーネントを組み合わせて使用することはお勧めできません。
 
 ### <a name="minimum-system-requirements"></a>最少システム要件
@@ -101,7 +100,7 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 
 ## <a name="retail-modern-pos-for-apple-iphone-or-ipad-requirements"></a>Apple iPhone または iPad 用 Retail Modern POS の要件
 
-- iOS 11 またはそれ以降
+- iOS 11 以降
 
 ## <a name="retail-modern-pos-for-android-phone-or-tablet-requirements"></a>Android 電話またはタブレット用 Retail Modern POS の要件
 
@@ -134,17 +133,17 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 - Microsoft Internet Information Services (IIS)
 - サード パーティのハードウェア
 
-## <a name="retail-store-scale-unit-requirements"></a>Retail Store スケール ユニット要件
+## <a name="retail-store-scale-unit-requirements"></a>Retail Store Scale Unit の要件
 
 > [!NOTE]
 > 2018 年 10 月 1 日以降、Retail Store Scale Unit や他のクライアント側コンポーネントを使用するには、.NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 
-以下に示す最小システム要件は、テスト シナリオでの機能へ Retail Store スケール ユニットを取得するのに必要最低限であることをご確認下さい。 以下は実際的な実稼働環境を表すものではありません。 適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。
+以下に示す最小システム要件は、テスト シナリオでの機能へ Retail Store Scale Unit を取得するのに必要最低限であることをご確認下さい。 以下は実際的な実稼働環境を表すものではありません。 適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。
 
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
-- Retail Store スケール ユニットは 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
-- Retail Store スケール ユニットは、以下のオペレーティング システムでサポートされます。
+- Retail Store Scale Unit は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
+- Retail Store Scale Unit は、以下のオペレーティング システムでサポートされます。
 
     - Windows 7 Professional、Enterprise、または Ultimate エディション。
 
@@ -154,7 +153,7 @@ Finance and Operations では、ドキュメント回覧エージェントなど
     - Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション。
     - Windows 10 Pro、Enterprise、Enterprise LTSB、および IOT Enterprise Edition。
     - Windows Server 2012 R2 および Windows Server 2016。
-    - Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro で Retail Store Scale Unit およびその他の Retail のコンポーネントの使用をお勧めしません。
+    - Windows 10 Pro がオペレーティング システムに対する更新を高度に管理できるドメイン内でない限り、Windows 10 Pro で Retail Store Scale Unit および他の Retail コンポーネントの使用をお勧めしません。
 
 ### <a name="minimum-system-requirements"></a>最少システム要件
 
@@ -210,4 +209,3 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 ## <a name="additional-resources"></a>その他のリソース
 
 [ベータ評価版の入手](../../dev-itpro/dev-tools/get-evaluation-copy.md)
-

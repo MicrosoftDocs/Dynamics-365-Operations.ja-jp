@@ -1,13 +1,13 @@
---- 
-title: "プロセス製造向けの生産ジョブの順序付け"
-description: "この手順では、色と梱包サイズの優先順位に従って計画オーダーを配列する方法を示す 1 例として、塗料製品が使用されます。"
+---
+title: プロセス製造向けの生産ジョブの順序付け
+description: この手順では、色と梱包サイズの優先順位に従って計画オーダーを配列する方法を示す 1 例として、塗料製品が使用されます。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4e064f55ed451d44f58e60ba0aa722166981c129
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a25a4575ca1600b07b2dac5949c8775bcd162650
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312258"
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>プロセス製造向けの生産ジョブの順序付け
 
@@ -70,5 +70,4 @@ ms.lasthandoff: 09/29/2017
 7. 一覧で、選択された行のリンクをクリックします。
 8. クイック フィルターを使用して、'P300' の値で品目番号フィールドにフィルターを適用します。
     * 今の注文が、色やサイズの優先順位に従って配列されていないと、計画オーダーが最も早い注文日付および配送日で開始することに注意してください。 スケジュールの詳細情報ボックスの注文日付列、または開始日を検証します。  
-
 

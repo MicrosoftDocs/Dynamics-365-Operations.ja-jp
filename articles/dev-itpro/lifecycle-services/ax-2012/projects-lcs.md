@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) のプロジェクト"
-description: "この記事では、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトに関する情報を提供します。 いくつかの重要な機能について説明し、プロジェクト方法のロールについても説明します。"
+title: Lifecycle Services (LCS) のプロジェクト
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトに関する情報を提供します。 いくつかの重要な機能について説明し、プロジェクト方法のロールについても説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c8ab1bae913527896817511ad15adf77ff0bebb3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 074cc926e74ed2dfafb79b288deee96376b85590
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368670"
 ---
-
 # <a name="projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のプロジェクト
 
 [!include [banner](../../includes/banner.md)]
@@ -44,7 +43,6 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="delete-a-project"></a>プロジェクトの削除 
 LCS を開くと、最新のプロジェクトに関する表示が得られます。 「すべてのプロジェクト」オプションをクリックします。 次に、リスト スタイル内のすべてのプロジェクトが表示されます。 プロジェクトを選択し、Trashbin アイコンをクリックします。 関連するすべての情報を含むプロジェクトは削除されます。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "HierarchyViewer コントロール"
-description: "この記事では、HierarchyViewer コントロールについて説明します。このコントロールを使用して、人、製品、または組織の階層関係を表現できます。"
+title: HierarchyViewer コントロール
+description: この記事では、HierarchyViewer コントロールについて説明します。このコントロールを使用して、人、製品、または組織の階層関係を表現できます。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 663104f4825910c5fcbc62da56dfb086988aa213
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 207a3c1c53b32524a6c7d0e15eed5640c81585de
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368942"
 ---
-
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 
 [!include [banner](../includes/banner.md)]
@@ -99,7 +98,6 @@ HierarchyViewer コントロールは、主に静的な方法でノードを移�
 
 ## <a name="changing-node-visuals"></a>ノード ビジュアルの変更
 ノードのビジュアルを変更することはできません。 **ExtendedStyle** プロパティを使用して操作することができる既定のレイアウトを持つ一連のバインドされていないコントロールをコントロールが提供して、作成者が選択できる既定の代替セットを提供することが設計の目的です。
-
 
 
 

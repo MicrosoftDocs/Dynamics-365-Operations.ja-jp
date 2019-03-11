@@ -1,13 +1,13 @@
 ---
-title: "不適合の作成および処理"
-description: "この手順を使用して、既存の品質指示に基づき不適合管理を実行します。"
+title: 不適合の作成および処理
+description: この手順を使用して、既存の品質指示に基づき不適合管理を実行します。
 author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e5187c44aac881273900b2fc0ca91045a65cd838
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336293"
 ---
 # <a name="create-and-process-a-conformance"></a>不適合の作成および処理
 
@@ -78,4 +78,3 @@ ms.lasthandoff: 09/29/2017
 3. [はい] をクリックします。
 4. ページを閉じます。
 5. ページを閉じます。
-

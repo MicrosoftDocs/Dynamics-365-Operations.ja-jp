@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティ"
-description: "このトピックは、データ エンティティを定義し、その概要について説明します。 これには、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドに関する情報が含まれています。"
+title: データ エンティティ
+description: このトピックは、データ エンティティを定義し、その概要について説明します。 これには、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドに関する情報が含まれています。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
 ms.openlocfilehash: ef86e9707455a1ed2bc6321e57d768ab5208d21c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369381"
 ---
-
 # <a name="data-entities"></a>データ エンティティ
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ ms.lasthandoff: 09/04/2018
 - AXD、データのインポート/エクスポート フレームワーク (DIXF) エンティティ、1 つの概念を持つ集計クエリの分岐して細分化された概念を置き換えます。
 - ビジネス ロジックをキャプチャして、インポート/エクスポート、統合、およびプログラマビリティなどのシナリオを有効にする 1 つのスタックを提供します。
 - これは、Application Lifecycle Management (ALM) およびデモ データ シナリオに関するデータ パッケージのエクスポートおよびインポートの主要なメカニズムとなります。
-- OData サービスとして公開して、表スタイルの同期統合シナリオおよび Microsoft Office の統合で使用できます。
+- OData サービスとして公開して、表スタイルの同期統合シナリオと Microsoft Office 統合で使用できます。
 
 [![データ エンティティ アーキテクチャ](./media/over1.png)](./media/over1.png)
 
@@ -87,7 +86,7 @@ ms.lasthandoff: 09/04/2018
 
 ##### <a name="configuration-data-provisioning"></a>コンフィギュレーション データのプロビジョニング
 
-システムの実装担当者は、ガイド付きデータ収集ウィザードとバルク データ入力メカニズムの両方を使用して、Microsoft Dynamics Lifecycle Services (LCS) の設定データを使用して**初期展開をブートストラップ** (またはモジュール) します。 コンフィギュレーションは、主に次のエンティティ カテゴリを対象としています。
+システムの実装担当者は、ガイド付きデータ収集ウィザードとバルク データ入力メカニズムの両方を使用して、Microsoft Dynamics Lifecycle Services (LCS) を介して、構成データで**初期展開 (またはモジュール) をブート**します。 コンフィギュレーションは、主に次のエンティティ カテゴリを対象としています。
 
 - すべてのパラメーター
 - 参照
@@ -97,7 +96,7 @@ ms.lasthandoff: 09/04/2018
 
 ##### <a name="data-migration-from-legacy-or-external-systems"></a>レガシ システムまたは外部システムからのデータ移行
 
-最初の配置が稼働した後、システム実装担当者は、Microsoft Dynamics 365 for Finance and Operationsに**顧客の既存データ資産の移行**を 、特に以下の資産に割り当てます。
+最初の配置が立ち上がって動作した後、システム実装担当者は、Microsoft Dynamics 365 for Finance and Operations に**顧客の既存データ資産を移行**します。特に、以下の資産を移行します。
 
 - マスター データ (たとえば、顧客および仕入先)
 - ドキュメント (たとえば、販売注文) のサブセット
@@ -244,4 +243,3 @@ Finance and Operations でコンフィギュレーション キーの詳細に�
 エンティティ、テーブル、またはフィールド レベルでコンフィギュレーション キーを更新する時はいつでも、データ管理フレームワークのエンティティ リストを更新する必要があります。 このプロセスでは、フレームワークが、最新のコンフィギュレーション キー設定をピックアップすることが保証されます。 エンティティ リストが更新されるまで、エンティティ リストのページに、次の警告メッセージが表示されます。 更新されたコンフィギュレーション キーの変更は、エンティティ リストが更新されたすぐ後に、有効になります。 コンフィギュレーション キーの変更が有効になった後、期待どおりに動作するかどうかを確認するため、既存のデータ プロジェクトおよびジョブを検証することをお勧めします。
 
 ![ターゲット フィールド](./media/Target_fields_3.png)
-

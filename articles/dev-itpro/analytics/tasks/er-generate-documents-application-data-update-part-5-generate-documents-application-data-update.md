@@ -1,13 +1,13 @@
---- 
-title: "アプリケーション データを含むドキュメントの生成"
-description: "この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4 - 形式の変更)」の手順を完了する必要があります。"
+---
+title: アプリケーション データを含むドキュメントの生成
+description: この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4 - 形式の変更)」の手順を完了する必要があります。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 90c6ebc456d3e137e43022fad7d59ce3ca2cdcab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363893"
 ---
 # <a name="generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントの生成
 
@@ -69,5 +69,4 @@ ms.lasthandoff: 08/09/2018
 5. ページを閉じます。
 6. ページを閉じます。
 7. ページを閉じます。
-
 

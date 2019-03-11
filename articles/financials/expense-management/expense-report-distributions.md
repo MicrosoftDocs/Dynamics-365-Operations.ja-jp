@@ -1,13 +1,13 @@
 ---
-title: "経費レポートでの配分"
-description: "経費精算書に経費を入力すると、組織内の複数のプロジェクト、法人、勘定に経費を配分できます。"
+title: 経費レポートでの配分
+description: 経費精算書に経費を入力すると、組織内の複数のプロジェクト、法人、勘定に経費を配分できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
 ms.openlocfilehash: 00d051a8f644a6a0bedb0acc3eaac9a3dd1109e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/15/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356763"
 ---
-
 # <a name="distributions-on-an-expense-report"></a>経費レポートでの配分
 
 [!include [banner](../includes/banner.md)]
@@ -39,5 +38,4 @@ ms.lasthandoff: 08/15/2018
 |トレーニング手数料   |DKK 578              |DKK 405                        |DKK 173                          |
 |ホテル         |EUR 725              |EUR 557                        |EUR 168                          |
 |食費         |EUR 346              |EUR 284                        |EUR 62                           |
-
 

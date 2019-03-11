@@ -1,13 +1,13 @@
 ---
-title: "在庫原価計算"
-description: "受入トランザクションと払出トランザクションを決済するプロセスの一環で、行った調整を総勘定元帳に反映して更新するように選択することもできます。"
+title: 在庫原価計算
+description: 受入トランザクションと払出トランザクションを決済するプロセスの一環で、行った調整を総勘定元帳に反映して更新するように選択することもできます。
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a705853ea27d117c99a00893b862348bbac0b9b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326495"
 ---
-
 # <a name="inventory-close"></a>在庫原価計算
 
 [!include [banner](../includes/banner.md)]
@@ -52,11 +51,11 @@ ms.lasthandoff: 11/03/2017
 
 更新が完了したら、これらのタスクの 1 つのせいで転記された元帳伝票を確認できます。
 
-1.  [**決算と調整**] ページの [**概要**] タブで、確認する更新を選択します。
-2.  [**詳細**] をクリックし、[**伝票**] を選択します。
+1.  **決算と調整** ページの **概要** タブで、確認する更新を選択します。
+2.  **詳細** をクリックし、**伝票** を選択します。
 
 ## <a name="effects-of-the-inventory-close-process-on-the-general-ledger"></a>総勘定元帳に対する在庫決算プロセスの影響
-[**決算と調整**] ページで実行できる作業のうち、いくつかの作業を行うと、総勘定元帳が更新されます。 たとえば、手持在庫での調整、在庫トランザクション調整、在庫再計算の実行、在庫決算の実行により総勘定元帳が更新されます。 
+**決算と調整** ページで実行できる作業のうち、いくつかの作業を行うと、総勘定元帳が更新されます。 たとえば、手持在庫での調整、在庫トランザクション調整、在庫再計算の実行、在庫決算の実行により総勘定元帳が更新されます。 
 
 このような作業によって更新される勘定科目は、元の在庫トランザクションにリンクされている科目です。 たとえば、販売注文が発注書に対して決算されると、元の販売注文に対して使用されている一般会計勘定が調整されます。 この動作は、販売注文の転記後に、この品目に割り当てられた品目グループの勘定科目が変更された場合も同様に発生します。 在庫決済によって決済金額が作成された後でも、決済金額は、品目に割り当てられた新しい勘定科目ではなく、元の勘定科目に転記されます。 在庫決算を取り消すと、総勘定元帳も更新される場合があります。 
 
@@ -87,7 +86,6 @@ ms.lasthandoff: 11/03/2017
 決済を調整前の状態に戻すために、完了した在庫決算を取り消す必要が生じる場合があります。 完了した在庫決算を取り消すと、在庫が再び開き、在庫決算に含まれる期間の転記ができるようになります。 総勘定元帳でも関連する変更が行われる可能性があります。 調整が終了してから、作業している期間に対して在庫決算を再び実行します。 
 
 **メモ:** 終了した最後の在庫期間のみ再オープンすることができます。 初期の在庫決算を取り消すには、最新の決算から在庫原価計算プロシージャを個別に取り消す必要があります。
-
 
 
 

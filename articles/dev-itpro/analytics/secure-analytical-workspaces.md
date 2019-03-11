@@ -1,42 +1,41 @@
 ---
-title: "Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護"
-description: "このトピックでは、Power BI Embedded を使用して提供されるレポートと、ビューアーのアクセス権に基づいてデータ セットへのアクセスを保護するための推奨方法について説明します。"
+title: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
+description: このトピックでは、Power BI Embedded を使用して提供されるレポートと、ビューアーのアクセス権に基づいてデータ セットへのアクセスを保護するための推奨方法について説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 21551
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 5ad0ad81f8cbf9c79559572e41da8edcbe3aea64
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369127"
 ---
-
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> この機能は、Microsoft Dynamics 365 for Finance and Operations、エンタープライズ版 (2017 年 7 月) (バージョン 7.2) 以降のリリースでサポートされています。
+> この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017年7月) (バージョン7.2) 以降のリリースでサポートされています。
 
 ## <a name="introduction"></a>はじめに
 このトピックでは、Microsoft Power BI Embedded を使用して提供される、分析ワークスペースとレポートのセキュリティ保護を支援するアプリケーション開発者向けにウォークスルーを提供します。 ビューアーのアクセス権に基づいてレポートおよびデータ セット両方へのアクセスを保護するための推奨方法について説明します。 このトピックに記載されている手法を使用することにより、ユーザーからレポートを非表示にし、有効な会社のコンテキストに基づいて、特定のユーザーに適したデータ セットを表示するためにレポートをフィルター処理することができます。
 
-## <a name="prerequisites"></a>前提条件
-+ プラットフォーム アップデート 8 以降の Microsoft Dynamics 365 for Finance and Operations、Enterprise エディション (2017 年 7 月) を実行する開発者環境にアクセスする
+## <a name="prerequisites"></a>必要条件
++ Microsoft Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 8 (2017年7月) 以降で実行する開発者環境にアクセスします。
 + Microsoft Power BI Desktop を使用して作成され、エンティティ格納 データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル) です。
 
 ## <a name="overview"></a>概要
@@ -53,7 +52,7 @@ Power BI Embedded を使用して分析ソリューションを開発する際�
     > [!NOTE]
     > これらの分析レポートは、中堅企業や大規模企業に影響を与えるデータを含むレポートを配信するために使用されることがよくあります。
 
-分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
+分析レポートを作成する方法の詳細については、[Power BI Desktop の使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
 
 ## <a name="help-secure-analytical-views-that-are-provided-through-embedded-power-bi-reports"></a>埋め込み Power BI レポートを通して提供される分析ビューのセキュリティを強化する
 Power BI レポート フィルターと **フィルター** ウィンドウは、**分析** タブに埋め込まれたレポートにセッション コンテキストを渡すためのメカニズムとして機能します。**フィルター** ウィンドウの表示のオンとオフを切り替える機能は、セキュリティ機能ではありません。 Power BI レポート フィルターと、**フィルター** ウィンドウを非表示および表示する機能は、アプリケーション デザイナーが行うユーザー エクスペリエンス (UX) の決定です。
@@ -106,4 +105,3 @@ Power BI ワークスペースとレポートは会社が保護できます (た
     3. **CompanyFilter** チェック ボックスをオンにします。
 
 これでレポートに、USMF 企業を経営しているかのようなデータが表示されます。
-

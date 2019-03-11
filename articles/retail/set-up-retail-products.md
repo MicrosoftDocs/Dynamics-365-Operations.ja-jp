@@ -1,13 +1,13 @@
 ---
-title: "小売製品の設定"
-description: "この記事では、Microsoft Dynamics 365 for Retail での小売製品の設定方法について説明します。"
+title: 小売製品の設定
+description: この記事では、Microsoft Dynamics 365 for Retail での小売製品の設定方法について説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 991546424a95463315eaa73c2776d0defe66def5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0906d83ea00edcbd4c04a1f21cc0911828286607
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357407"
 ---
-
 # <a name="set-up-retail-products"></a>小売製品の設定
 
 [!include [banner](includes/banner.md)]
@@ -41,4 +40,3 @@ ms.lasthandoff: 11/03/2017
 4. 製品を品揃えに追加します。 品揃えは、小売チャンネルで提供する製品の集まりを表します。 1 つまたは複数の品揃えを定義し、各製品を 1 つまたは複数の品揃えに割り当てることができます。 製品を小売チャンネルに割り当てるには、品揃えをそれらの小売チャンネルに割り当てます。 品揃えを作成すると、法人にまだにリリースされていない製品を追加できます。 ただし、製品を小売チャンネルで利用可能にする前に、それらの製品を法人にリリースする必要があります。
 5. ナビゲーション階層に製品を追加します。 製品がオンラインまたは販売時点管理 (POS) で閲覧できるようにするためには、[小売ナビゲーション階層] に分類する必要があります。
 6. 製品をカタログに追加します。 このステップは POS では省略可能ですが、オンライン ストアでは製品が少なくとも 1 つのカタログに含まれている必要があります。
-

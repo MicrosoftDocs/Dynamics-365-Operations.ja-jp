@@ -1,13 +1,13 @@
 ---
-title: "拡張機能とオーバーレイによってカスタマイズする"
-description: "このトピックでは、モデル要素のソース コードとメタ データをカスタマイズするオーバーレイと拡張機能の 2 つの方法、およびサポートされている拡張機能の詳細について説明します。"
+title: 拡張機能とオーバーレイによってカスタマイズする
+description: このトピックでは、モデル要素のソース コードとメタ データをカスタマイズするオーバーレイと拡張機能の 2 つの方法、およびサポートされている拡張機能の詳細について説明します。
 author: robadawy
 manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99d18081e16a98bc58dfe0684476e6c87e0e1b9c
 ms.openlocfilehash: a7eb1def57fc1a74e73c92226611550a35b528bf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/25/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369240"
 ---
-
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能とオーバーレイによってカスタマイズする
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,7 @@ Microsoft またはサードパーティの Microsoft パートナーによっ�
 
 ### <a name="events"></a>イベント
 
-イベントは、基本メソッドの前後の操作として生成されます。 つまり、基本メソッドが呼び出される前と完了後にコードを実行する機会があります。 Microsoft Dynamics AX 2012 で導入された XPP イベントが今回のリリースでも使用でき、拡張機能でサブスクライブできます。
+イベントは、基本メソッドの前後の操作として生成されます。 つまり、基本メソッドが呼び出される前と完了後にコードを実行する機会があります。 Microsoft Dynamics AX 2012 で XPP イベントが導入されました。このイベントは、今回のリリースでも使用でき、拡張機能でサブスクライブできます。
 
 ### <a name="plug-ins"></a>プラグイン
 
@@ -103,7 +102,7 @@ Microsoft またはサードパーティの Microsoft パートナーによっ�
 -   新しいデータ ソースを追加します。
 -   フォーム パーツを追加します。
 
-フォームでコントロールを並べ替えるなど、フォームをカスタマイズする他の方法は、将来のリリースに含まれる予定です。 Microsoft Dynamics AX 2012 では、フォームのメソッドをオーバーライドすることができました。 現在のバージョンでは、フォーム メソッドの基本実装から呼び出されるイベント ハンドラーを実装するのに拡張機能を使用します。 次のテーブルに、各メソッドとそれに関連するイベントを示します。
+フォームでコントロールを並べ替えるなど、フォームをカスタマイズする他の方法は、将来のリリースに含まれる予定です。 Microsoft Dynamics AX 2012 では、フォーム メソッドを上書きすることができます。 現在のバージョンでは、フォーム メソッドの基本実装から呼び出されるイベント ハンドラーを実装するのに拡張機能を使用します。 次のテーブルに、各メソッドとそれに関連するイベントを示します。
 
 |**公開済フォーム DataSource メソッド**|**前のイベント**|**後続のイベント**|
 |---|---|---|
@@ -325,7 +324,6 @@ Visual Studio は、現在のプロジェクトまたは新しいプロジェク
 ## <a name="additional-resources"></a>その他のリソース
 
 [拡張機能を使用してモデル要素をカスタマイズする](customize-model-elements-extensions.md)
-
 
 
 

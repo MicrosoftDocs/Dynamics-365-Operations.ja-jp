@@ -1,13 +1,13 @@
 ---
-title: "集計の測定への財務分析コードの追加"
-description: "このトピックでは、パワー ユーザーが既製の Power BI レポートに財務分析コードを組み込む方法について説明します。"
+title: 集計の測定への財務分析コードの追加
+description: このトピックでは、パワー ユーザーが既製の Power BI レポートに財務分析コードを組み込む方法について説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -16,26 +16,25 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: f458cca2955c9c808ba3d7ed54c16bb60e075a97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 64ac9244df725309f08c7cc4d5e9a756f4aa97a3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369765"
 ---
-
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 
 [!include [banner](../includes/banner.md)]
 
-この機能により、パワーユーザーは 既成の Microsoft Power BI レポートに財務分析コードを含めることができます。 Power User は、財務分析コードを使用する新しい Power BI レポートを作成することもできます。
+この機能により、パワーユーザーは 既成の Microsoft Power BI レポートに財務分析コードを含めることができます。 パワー ユーザーは、財務分析コードを使用する新しい Power BI レポートを作成することもできます。
 
 財務分析コードは、追加情報を保持する勘定科目表を有効にする、ユーザー定義されたコンフィギュレーション データです。 財務分析コードを追加することにより、ユーザーは勘定科目表および財務諸表に含まれる追加のデータ フィールドを構成することができます。 したがって、元帳勘定科目表をそれらのフィールドに基づいて詳しく分析できます。 この機能は、強力な財務報告を提供します。 たとえば、追加した新しい財務分析コードを使用して元帳データを参照できます。 リリースされるときに既製の Power BI レポートに財務分析コードが含まれていないため、これらの追加フィールドを既製のレポートに含める必要があります。 
 
 財務分析コード フィールドがレポートに含まれた後、他のユーザーとレポートを共有できます。 これらの他のユーザーは、財務分析コード フィールドのすべてまたは一部を含むことによって、チャートなどの既存のビジュアルを変更できます。
 
 > [!NOTE]
-> この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) で利用できます。 プラットフォーム アップデート 8 以降も必要です。 
+> この機能は Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) で使用可能です。 プラットフォーム アップデート 8 以降も必要です。 
 
 ## <a name="how-does-this-feature-work"></a>この機能はどのように作用しますか。
 
@@ -86,7 +85,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
 
 ## <a name="how-a-power-bi-report-author-can-create-reports-that-use-financial-dimensions"></a>Power BI レポート作成者が財務分析コードを使用するレポートを作成する方法
 
-ビジネス ユーザーは、Power BI デスクトップを使用して財務分析コードを使用する新しいレポートを作成できます。 財務分析コードを使用する既存のレポートを更新して、追加のフィールドを含めることができます。
+ビジネス ユーザーは、Power BI デスクトップを使用して財務分析コードを使用する新しいレポートを作成することができます。 財務分析コードを使用する既存のレポートを更新して、追加のフィールドを含めることができます。
 
 この例では、元帳活動メジャー グループを使用するレポートを作成するために Power BI デスクトップを使用します。 
 
@@ -97,7 +96,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
     - LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension
     - LedgerActivityMeasure\_DimensionCombination
 
-3. Power BI デスクトップの**リレーションシップの管理**オプションを使用して、テーブル フィールド間に以下のリレーションシップを定義します。
+3. Power BI デスクトップの **リレーションシップの管理** オプションを使用して、テーブル フィールド間に以下のリレーションシップを定義します。
 
     - **LedgerActivityMeasure\_LedgerActivityMeasureGroup.LEDGERDIMENSION** および **LedgerActivityMeasure\_DimensionCombination.DIMENTIONCOMBINATIONRECID** 間の結合を定義します。
     - **LedgerActivityMeasure\_LedgerActivityMeasureGroup.LEDGERGREGORIANDATEID** および **LedgerActivityMeasure\_FiscalPeriodDateAggregateDimension.LEDGERPERIODGREGORIANDATEID** 間の結合を定義します。
@@ -135,7 +134,7 @@ LedgerActivityMeasure\_DimensionCombination テーブルには、次の新しい
 
     ここで、レポートに財務分析コード テーブルを追加します。
 
-2. Power BI desktop で、メニューの**最近のソース**をクリックしてから、**AXDW** データ接続を選択します。 テーブル ナビゲーターが表示されます。
+2. Power BI desktop で、メニューの **最近のソース** をクリックしてから、**AXDW** データ接続を選択します。 テーブル ナビゲーターが表示されます。
 3. レポートの **LedgerActivityMeasure\_LegalEntity** テーブルを選択します。
 
     > [!NOTE]
@@ -179,4 +178,3 @@ LedgerActivityMeaureGroup の 2 つの分析コード参照をモデル化しま
 2 番目の参照、OffsetDimensionCombination は、同じ分析コードへの別の参照です。 DimensionCombination 集計分析コードを再使用し、それに新しい名前を付けました。 2 番目のケースでは、**OffsetLedgerDimension** フィールドを使用して参加できます。
 
 実行時に、システムは両方の分析コードを追加のフィールドに展開します。 したがって、主およびオフセットの分析コード フィールドについてレポートすることができます。
-

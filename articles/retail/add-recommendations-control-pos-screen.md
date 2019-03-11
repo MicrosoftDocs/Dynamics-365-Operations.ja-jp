@@ -1,13 +1,13 @@
 ---
-title: "POS デバイスのトランザクション画面への推奨事項コントロールの追加"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。"
+title: POS デバイスのトランザクション画面への推奨事項コントロールの追加
+description: このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320446"
 ---
-
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>POS デバイスのトランザクション画面への推奨事項コントロールの追加
 
 [!include [banner](includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/04/2019
 
 このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 
-Microsoft Dynamics 365 for Retail を使用するときに、POS デバイスに製品レコメンデーションを表示できます。 [*レコメンデーション*] は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目です。 製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。
+Microsoft Dynamics 365 for Retail を使用するときに、POS デバイスに製品レコメンデーションを表示できます。 *レコメンデーション* は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目です。 製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。
 
 ## <a name="open-layout-designer"></a>レイアウト デザイナーを開く
 
@@ -86,13 +85,12 @@ Microsoft Dynamics 365 for Retail を使用するときに、POS デバイスに
 
 6. **ラベル**フィールドに、このレコメンデーション タブの名前を入力します。たとえば、「お勧めの製品」と入力します。
 7. **画像**フィールドで、タブで表示する画像を選択します。
-8.  **OK** をクリックします。 新しいタブがボタン グリッドに表示されます。
+8.  **OK**をクリックします。 新しいタブがボタン グリッドに表示されます。
 9. **X** をクリックして、レイアウト デザイナーを保存して終了します。
-10. Dynamics 365 for Retail で、**小売り** &gt; **Retail IT** &gt; **配送スケジュール**に移動します。
+10. Dynamics 365 for Retail で、**小売り** &gt; **小売 IT** &gt; **配送スケジュール**に移動します。
 11. 一覧で、 **1090 レジスター**を選択します。
 12. **今すぐ実行**をクリックします。
 
 ## <a name="additional-resources"></a>その他のリソース
 
 [カスタマイズされた製品推奨事項の概要](personalized-product-recommendations.md)
-

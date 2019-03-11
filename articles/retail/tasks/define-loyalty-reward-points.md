@@ -1,13 +1,13 @@
---- 
-title: "ロイヤルティ報酬ポイントの定義"
-description: "この手順では、ロイヤルティ報酬ポイントを定義する方法を説明します。"
+---
+title: ロイヤルティ報酬ポイントの定義
+description: この手順では、ロイヤルティ報酬ポイントを定義する方法を説明します。
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyRewardPoints
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 85ae26123d41fa74d32b102ddb7f021e9846a676
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 26b5615df427fb01cc4a1764507fbaa11bf0d7a0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354509"
 ---
 # <a name="define-loyalty-reward-points"></a>ロイヤルティ報酬ポイントの定義
 
@@ -45,5 +45,4 @@ ms.lasthandoff: 02/07/2018
     * 報酬ポイントは、指定された日数、月数、または年数、ポイントが発行された後、有効になります。 「0」という値は、ロイヤルティ報酬ポイントに有効期限がないことを意味します。  
 10. [有効期限の単位] フィールドで、オプションを選択します。
 11. [保存] をクリックします。
-
 

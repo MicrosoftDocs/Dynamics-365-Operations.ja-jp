@@ -1,13 +1,13 @@
 ---
-title: "Retail ソフトウェア開発キット (SDK) のサンプル"
-description: "このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。"
+title: Retail ソフトウェア開発キット (SDK) のサンプル
+description: このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 8641b232707f26c58c552a65696924c1d3878855
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368793"
 ---
-
 # <a name="retail-software-development-kit-sdk-samples"></a>Retail ソフトウェア開発キット (SDK) のサンプル
 
 [!include [banner](../../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 <a name="override-message-handler-sample"></a>メッセージ ハンドラーのサンプルをオーバーライド
 -------------------------------
 
-**シナリオ:** Fabrikam の顧客の 1 人が顧客関係管理 (CRM) システムに参加していても、Microsoft Dynamics 365 for Retail にインポートされていない場合があります。 したがって、Fabrikam は、CRM システムと POS (販売時点管理) から顧客を検索したいと考えています。 業務要件を次に示します。
+**シナリオ:**  Fabrikam の顧客の 1 人が顧客関係管理 (CRM) システムに参加していても、Microsoft Dynamics 365 for Retail にインポートされていない場合があります。 したがって、Fabrikam は、CRM システムと POS (販売時点管理) から顧客を検索したいと考えています。 業務要件を次に示します。
 
 -   CRM システムと POS から顧客を検索します。
 -   結果をマージして、Retail Modern POS (MPOS) で統合された結果セットを表示します。
@@ -239,7 +238,6 @@ ms.lasthandoff: 08/09/2018
 ### <a name="best-practice"></a>ベスト プラクティス
 
 各カスタム受領書フィールドに対してデータベース呼び出しを行うことは避けてください。 代わりに、エンティティに前に設定された拡張機能プロパティを使用します。 カスタムのレシート タイプは、任意のロジック (販売明細行ごと、いくつかの条件ごとに 1 回) で呼び出すことができます。 包括的なシナリオのサンプルを参照してください。
-
 
 
 

@@ -1,30 +1,29 @@
 ---
-title: "拡張機能によって、フォームにデータ ソースを追加"
-description: "このトピックでは、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。"
+title: 拡張機能によって、フォームにデータ ソースを追加
+description: このトピックでは、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 2717528791eae83740d7ea667b54f660406eb9b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369700"
 ---
-
 # <a name="add-data-sources-to-forms-through-extension"></a>拡張機能によって、フォームにデータ ソースを追加
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ ms.lasthandoff: 08/09/2018
 1. 次の図に示されるように、これらの新しいフィールドおよびテーブル内でデータを表示して編集できるようになりました。
 
     ![新しいフィールド](media/AddFormDataSource04.jpg)
-

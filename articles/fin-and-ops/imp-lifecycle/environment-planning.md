@@ -1,30 +1,29 @@
 ---
-title: "環境計画"
-description: "このトピックでは、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。"
+title: 環境計画
+description: このトピックでは、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 08/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: af454de06ee41c953f9225658fdfa4163c95cbef
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369162"
 ---
-
 # <a name="environment-planning"></a>環境計画
 
 [!include[banner](../includes/banner.md)]
@@ -47,8 +46,8 @@ ms.lasthandoff: 12/18/2018
 
 - **標準**: この環境は、標準的なオファーに含まれ、Microsoft サブスクリプションで Microsoft が管理します。 標準環境には、製造環境、レベル 2 スタンダード承認テスト環境、およびレベル 1 開発およびテスト環境が含まれます。
 - **アドオン**: アドオン環境は、標準的なオファーに加えて、顧客が購入している Microsoft 管理のサブスクリプションにあります。 たとえば、アドオン環境は、パフォーマンスをテストするための追加のレベル 4 環境の場合があります。
-- **クラウド ホスト**: クラウド ホスト環境は、顧客またはパートナー Microsoft Azure サブスクリプションの顧客またはパートナーによって管理されている追加の環境です。 クラウド ホスト環境には、レベル 1 デモ環境を含めることができます。
-- **環境イメージ (VHD)**: これら追加のレベル 1 環境は、[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) からダウンロードできる仮想ハード ディスク (VHD) を使用してオンプレミスにホストされます。
+- **クラウド ホスト** - クラウド ホスト環境は、Microsoft Azure サブスクリプションの顧客またはパートナーである顧客またはパートナーによって管理されている追加の環境です。 クラウド ホスト環境には、レベル 1 デモ環境を含めることができます。
+- **環境イメージ (VHD)** - これら追加のレベル 1 環境は、[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) からダウンロードできる仮想ハード ディスク (VHD) を使用してオンプレミスにホストされます。
 
 > [!IMPORTANT]
 > *顧客またはパートナーの Azure サブスクリプション*では、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションをもって Finance and Operations 環境をそのサブスクリプションに配置します。 顧客やパートナーは、Azure サブスクリプションに展開されるリソースに対して支払います。 顧客やパートナーの支払額は、Azure 価格リストに基づきます。 これに対して、*Microsoft サブスクリプション*では、顧客は Finance and Operations ライセンスを購入します。 これらのライセンスは、顧客が Microsoft によって管理されている Azure サブスクリプションに環境を配置できるようにします。 したがって、顧客に別個の Azure の請求はありません。
@@ -58,8 +57,8 @@ ms.lasthandoff: 12/18/2018
 | レベル 1 | レベル 2 以上 |
 |--------|-------------------|
 | シングルボックス環境 | マルチボックス環境 |
-| すべてのコンポーネントは、同じサーバーにインストールされます。 これらのコンポーネントには、Application Object Server (AOS)、データベース、Microsoft Dynamics 365 for Retail、Management Reporter が含まれます。 | コンポーネントは、複数のサーバーにインストールされます。 |
-| Microsoft SQL Server が使用されます。 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/)が使用されます。 |
+| すべてのコンポーネントは、同じサーバーにインストールされます。 これらのコンポーネントには、アプリケーション オブジェクト サーバー (AOS)、データベース、Microsoft Dynamics 365 for Retail、および Management Reporter が含まれます。 | コンポーネントは、複数のサーバーにインストールされます。 |
+| Microsoft SQL Server で使用 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/)が使用されます。 |
 | アーキテクチャは、開発チームの効率を最大化するため、実稼働環境のアーキテクチャとは異なります。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 |
 | さまざまな方法で環境を配置することができます。 たとえば、アドオンとして配置する、クラウド ホストにする、または環境イメージ (VHD) として配置することができます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 |
 | この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
@@ -73,7 +72,7 @@ ms.lasthandoff: 12/18/2018
 - **実稼働環境**: テナントあたり 1 つの生産インスタンスが用意されています。 生産マルチ ボックス インスタンスには、障害復旧と高可用性が含まれています。 実装が運用段階に近づき、Microsoft Dynamics Lifecycle Services (LCS) 手法の必要なアクティビティと正常な運用評価が完了するとプロビジョニングされます。 また、いくらかのファイル ストレージとデータベース ストレージはサービスに含まれます。
 
     - **ファイル ストレージ:** すべての顧客は、ファイルまたはバイナリ データ用のファイル/Azure blob クラウド ストレージを 100 GB 受け取ります。 その他のファイル/blob ストレージは購入することができます。
-    - **データベース ストレージ:** すべての Finance and Operations サブスクリプションには、追加料金なしで顧客ごとに 10 GB の Azure SQL データベース ストレージが含まれています。 ユーザーとデバイス サービス ライセンスの数が増えると、組織には無償で追加のストレージ容量が提供されます。 さまざまな環境とさまざまな種類のストレージの詳細については、[Dynamics 365 の価格設](https://dynamics.microsoft.com/pricing/)定から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
+    - **データベース ストレージ:** すべての Finance and Operations サブスクリプションには、追加料金なしで顧客ごとに 10 GB の Azure SQL データベース ストレージが含まれています。 ユーザーとデバイス サービス ライセンスの数が増えると、組織には無償で追加のストレージ容量が提供されます。 さまざまな環境とさまざまな種類のストレージの詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
 
 ### <a name="provisioning-of-standard-environments"></a>標準環境のプロビジョニング
 
@@ -83,7 +82,7 @@ ms.lasthandoff: 12/18/2018
 |---------------------------------|-------------------------------|---------------------|
 | レベル 2 標準承認テスト | Microsoft FastTrack チームとのオンボード中 | 有 |
 | レベル 1 開発/ビルドおよびテスト   | 設計フェーズが開始したとき。 プロビジョニング プロセスでは、Microsoft Azure DevOps を構成することが必要です。 | 有 |
-| 実稼働                      | 生産システムの準備完了時 | 生産配置要求を LCS に提出する必要があります。 展開は、Dynamics サービス エンジニア リング (DSE) チームによって 2 営業日以内に行われます。 |
+| 生産                      | 生産システムの準備完了時 | 生産配置要求を LCS に提出する必要があります。 展開は、Dynamics サービス エンジニア リング (DSE) チームによって 2 営業日以内に行われます。 |
 
 > [!IMPORTANT]
 > 常に、`dynadmin@customer.com` などの**名前のない**アカウントを使用して環境を配置します。 このトポロジは、ビルド管理を簡略化し、Azure DevOps ソース リポジトリを自動的に初期化するため、作成およびテスト環境を展開して使用するには、ビルド トポロジを使用します。
@@ -184,4 +183,3 @@ ms.lasthandoff: 12/18/2018
 環境を識別した後は、アプリケーション ライフサイクル管理 (ALM) フローを構造化するために環境計画を使用できます。 たとえば、環境計画が完成したら、環境間でのコードおよびデータの構築と移動のためのフローを定義できます。
 
 [環境計画 TechTalk](https://infopedia.eventbuilder.com/event?eventid=o8a5q2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) をご覧になることを強くお勧めします。 リンク先のページからは、環境計画の演習を有利に始めることができるように、*サンプル環境計画演習*スプレッドシートをダウンロードすることもできます。
-

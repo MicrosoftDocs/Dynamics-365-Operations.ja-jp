@@ -1,41 +1,40 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations バージョン8.0 (2018 4 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/22/2018
+ms.date: 01/28/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: b265d51c-52d1-45c5-b578-64c5242c592a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: a233b65581edfabc286e4fa51b5fd3968dad6f3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: b3cdf7b242b47a8eecbdb92cf9d88fcd0d48273a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368753"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン8.0 (2018 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
-ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース ノート](https://aka.ms/businessappsreleasenotes)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations に含まれる新機能または変更された機能について詳細に説明します。
+ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース ノート](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
 
 ### <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
 
-ユーザーと開発者に対して、更新された製品名、「Microsoft Dynamics 365 for Finance and Operations」が表示されます。 バージョン 8.0 では Dynamics 365 製品がさらに簡素化され、顧客とエコシステムの選択がさらに簡単になります。 今後、Microsoft は、個別エディション (Business edition および Enterprise edition) を提供しなくなるため、この Dynamics 365 アプリケーションの製品名は Microsoft Dynamics 365 for Finance and Operations になります。
+ユーザーおよび開発者は、「Microsoft Dynamics 365 for Finance and Operations」という更新済の製品名を確認できます。 バージョン 8.0 では Dynamics 365 製品がさらに簡素化され、顧客とエコシステムの選択がさらに簡単になります。 今後 Microsoft は、個別エディション (Business Edition および Enterprise Edition) を提供しなくなるため、この Dynamics 365 アプリケーションの製品名は Microsoft Dynamics 365 for Finance and Operations になります。
 
 ## <a name="business-productivity"></a>業務の生産性
 
@@ -102,7 +101,7 @@ PowerApps を使用して、外部ソースからのデータを Finance and Ope
 
 ### <a name="integration-with-common-data-service-cds"></a>Common Data Service (CDS) との統合
 
-Dynamics 365 for Finance and Operations は、Finance and Operations と Dynamics 365 for Field Service の間、および Finance and Operations と Dynamics 365 for Project Service Automation の間のアプリケーション間のビジネス プロセスを可能にしました。 これらのシナリオは、拡張可能なデータ インテグレーター テンプレートと CDS を使用して構成され、クロス アプリケーション シナリオを実現します。
+Dynamics 365 for Finance and Operations では、Finance and Operations と Dynamics 365 for Field Service の間、および Finance and Operations と Dynamics 365 for Project Service Automation の間のクロス アプリケーションの業務プロセスを有効にしました。 これらのシナリオは、拡張可能なデータ インテグレーター テンプレートと CDS を使用して構成され、クロス アプリケーション シナリオを実現します。
 
 ### <a name="integration-with-dynamics-365-for-field-service"></a>Dynamics 365 for Field Service との統合
 
@@ -150,7 +149,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="analytical-workspaces-with-embedded-power-bi-for-cost-management"></a>原価管理のための Power BI が埋め込まれた分析ワークスペースです。
 
-原価管理のための新しい分析ワークスペースは、原価管理およびコスト分析のワークスペースに埋め込まれます。 コンテンツ パックには、期首残高、期末残高、正味調達および正味使用量などの措置が含まれています。 在庫回転率、手持在庫日数、在庫の精度などの一連の計算メジャーも含まれています。 **原価管理** Power BI コンテンツは、**原価管理**および**コスト分析**ワークスペースで表示されます。 詳細については、[原価管理の Power BI コンテンツ](../../dev-itpro/analytics/cost-management-content-pack.md) を参照してください。
+原価管理のための新しい分析ワークスペースは、原価管理およびコスト分析のワークスペースに埋め込まれます。 コンテンツ パックには、期首残高、期末残高、正味調達および正味使用量などの措置が含まれています。 在庫回転率、手持在庫日数、在庫の精度などの一連の計算メジャーも含まれています。 **原価管理** Power BI コンテンツは、**原価管理**および**コスト分析**ワークスペースで表示されます。 詳細については、[原価管理 Power BI コンテンツ](../../dev-itpro/analytics/cost-management-content-pack.md) を参照してください。
 
 ## <a name="globalization"></a>グローバリゼーション
 
@@ -189,4 +188,3 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 ### <a name="accessibility-enhancements"></a>アクセシビリティの拡張機能
 
 業界をリードするアクセシビリティ標準については [Trust Center](https://www.microsoft.com/trustcenter/compliance/accessibility) を参照してください。
-

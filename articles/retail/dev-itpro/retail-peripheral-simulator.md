@@ -1,13 +1,13 @@
 ---
-title: "小売の周辺機器シミュレーター"
-description: "このトピックでは、Dynamics 365 for Retail で提供される周辺機器シミュレーター ツールについて説明します。"
+title: 小売の周辺機器シミュレーター
+description: このトピックでは、Dynamics 365 for Retail で提供される周辺機器シミュレーター ツールについて説明します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 03/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 audience: IT Pro
 ms.reviewer: sericks
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
 ms.openlocfilehash: 49587e17c364af6c2cb2e5a87c557257c86d6189
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369797"
 ---
-
 # <a name="peripheral-simulator-for-retail"></a>小売の周辺機器シミュレーター
 
 [!include [banner](../includes/banner.md)]
@@ -487,14 +486,14 @@ Retail との互換性を一覧表示できるようにデバイスを送信す�
     <TechnicalContactName>Karen Berg</TechnicalContactName>  
     <TechnicalContactPhone>555-555-5555</TechnicalContactPhone>  
   </ManufacturerInfo>  
-  <DeviceInfo i:type="OposDevice">  
-   <DeviceDriverName>MockOPOSDrawer1</DeviceDriverName>  
+  <DeviceInfo i:type="OposDevice">  
+   <DeviceDriverName>MockOPOSDrawer1</DeviceDriverName>  
    <DeviceModel>Model1</DeviceModel>  
    <DriverVersion>V2</DriverVersion>  
    <FirmwareVersion>V1</FirmwareVersion>  
   <HardwareType>OPOS</HardwareType>  
   <ConnectionType>USB</ConnectionType>  
-  <DriverDownloadLink>htttp://model1.drivers.contoso.com</DriverDownloadLink>  
+  <DriverDownloadLink>htttp://model1.drivers.contoso.com</DriverDownloadLink>  
  <DeviceInfo i:type="OposDevice">
  <LogItems>  
   <LogMessage>  
@@ -528,11 +527,10 @@ Retail との互換性を一覧表示できるようにデバイスを送信す�
 
 最終的には、レポート (連絡先の個人情報を除く) に含まれているデータがデバイス互換性 Web サイトに表示されます。 顧客環境の管理に使用される設計および配置のツールでも表示されます。
 
-成功したログは drpc@microsoft.com へ送信します。 件名行に、メーカーの名前とデバイス モデルを含めます。
+正常なログを、drpc@microsoft.com に送信する必要があります。 件名行に、メーカーの名前とデバイス モデルを含めます。
 
 互換性のテストを実行しているサポート、およびその他の照会については、drpc@microsoft.com に電子メールを送信します。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [小売周辺機器の概要](../retail-peripherals-overview.md)
-

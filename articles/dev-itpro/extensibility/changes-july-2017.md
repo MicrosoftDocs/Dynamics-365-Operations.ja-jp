@@ -1,35 +1,34 @@
 ---
-title: "Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更"
-description: "これは、(2017 年 7 月) に実装された拡張機能の一覧です。"
+title: Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更
+description: これは、(2017 年 7 月) に実装された拡張機能の一覧です。
 author: FrankDahl
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: d29dda71a2785a35ab12297b5b57695053457291
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369548"
 ---
-
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a>Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
-これは、Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) に実装された拡張機能の一覧です。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
+これは、Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) に実装された拡張機能の一覧です。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
 
 ## <a name="soft-sealed-application-models"></a>ソフト シールされたアプリケーション モデル
 
@@ -905,5 +904,4 @@ ms.lasthandoff: 08/09/2018
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません          |
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません          |
 |            WhsRFControlData.processControl は switch ブロック内の _data ではなく WhsControl.data を参照する必要があります             |
-
 

@@ -1,13 +1,13 @@
 ---
-title: "不適合管理"
-description: "この記事は、不適合を使用するために必要な基本設定について説明します。 品質指示を使用する場合、追加の設定が必要になります。"
+title: 不適合管理
+description: この記事は、不適合を使用するために必要な基本設定について説明します。 品質指示を使用する場合、追加の設定が必要になります。
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fc1e1eb9d8ede1d07a873ca98a1c385cf0126c3f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316444"
 ---
-
 # <a name="nonconformance-management"></a>不適合管理
 
 [!include [banner](../includes/banner.md)]
@@ -55,4 +54,3 @@ ms.lasthandoff: 05/08/2018
 [品質管理プロセス](quality-management-processes.md)
 
 [不適合管理の前提条件の確認 (タスク ガイド)](tasks/set-up-prerequisites-nonconformance-management.md)
-

@@ -1,30 +1,29 @@
 ---
-title: "オンプレミス環境の設定と配置 (Platform update 12 以降)"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 12 以降 にオンプレミス環境を計画、設定、展開する方法について説明します。"
+title: オンプレミス環境の設定と配置 (Platform update 12 以降)
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 12 以降 にオンプレミス環境を計画、設定、展開する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
+ms.openlocfilehash: 95eb0d63cbc606e1b654cd4e79a9f949a4c62dad
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 248b72a96b5eed4d4b788d0a6f3de1dfce3d3670
-ms.openlocfilehash: c86682b2308d2d5660c848d695ad33a71a5d4f4e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369671"
 ---
-
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Finance and Operations アプリケーションは、次の 3 つの主要なコ
 これらのコンポーネントは、次のシステム ソフトウェアによって異なります。
 
 - Microsoft Windows Server 2016 (英語 OS のインストールのみがサポートされます)
-- 以下の特徴を有する Microsoft SQL Server 2016 SP1:
+- 以下の特徴を有する Microsoft SQL Server2016 SP1:
   - フルテキスト インデックス検索が有効にされている。
   - SQL Server Reporting Services (SSRS) - これは BI 仮想マシンに配置されます。
   - SQL Server Integration Services (SSIS) - これは AOS 仮想マシンに配置されます。
@@ -100,7 +99,7 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
-- Windows Server 2016 仮想マシン (VM) に基づく Standalone Service Fabric クラスター
+- Windows Server 2016 仮想マシン (VM) に基づく Standalone Service Fabric Cluster
 - Microsoft SQL Server (Clustered SQL と Always-On の両方がサポートされています)
 - 認証のための AD FS
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
@@ -419,13 +418,13 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. 次の Microsoft Windows Installers (MSIs) を全ての VMs でアクセス可能なファイル共有にダウンロードします。
+2. 次の Microsoft Windows Installers (MSI) を全ての VM でアクセス可能なファイル共有にダウンロードします。
 
 | コンポーネント | リンクのダウンロード |
 |-----------|---------------|
 | SNAC – ODBC ドライバー 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
 | SNAC – ODBC ドライバー 17 | <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
-| Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms> |
+| Microsoft SQL ServerManagement Studio 17.5 | <https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms> |
 | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
@@ -484,7 +483,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 2. ZIP ファイルを Service Fabric クラスター内のいずれかのノードにコピーし、解凍します。 **インフラストラクチャ**フォルダーが、このフォルダーにアクセスすることを確認します。
 
-3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric の ClusterConfig.json ファイルを生成します。
+3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric Cluster の ClusterConfig.json ファイルを生成します。
 
     ```powershell
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
@@ -659,7 +658,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     3. 証明書の拇印を HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate に追加します。 たとえば、SQL Server 2016 SP1: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. スタート メニューから、**regedit** をタイプし、**regedit** を選択してレジストリ エディターを開きます。
         2. 証明書に移動し、**変更**を右クリックしてから、証明書の拇印に値を置き換えます。
-    4. Microsoft SQL Server 構成マネージャーで、**ForceEncryption** を **はい** に設定します。
+    4. Microsoft SQL Server 構成マネージャーで、**ForceEncryption** を**はい**に設定します。
         1. **SQL Server 構成マネージャー**で、**SQL Server ネットワークの構成**を展開し、**サーバーのインスタンスのプロトコル**を右クリックしてから、**プロパティ**を選択します。
         2. **インスタンス名プロパティのプロトコル**ダイアログ ボックスの**証明書**タブで、**証明書**ボックスのドロップダウン メニューから目的の証明書を選択して、**OK** をクリックします。
         3. **フラグ**タブの **ForceEncryption** ボックスで、**はい**を選択してから、**OK** をクリックします。
@@ -682,7 +681,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 |-------|------|
 | オンプレミスの一般提供 (GA) リリース | Dynamics 365 for Operations オンプレミス - デモ データ |
 | オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations オンプレミス Enterprise Edition - 更新プログラム 11 デモ データ |
-| オンプレミスのプラットフォーム更新プログラム 2018 年 3 月 12 日リリース | Dynamics 365 for Operations オンプレミス、Enterprise Edition - 更新プログラム 12 デモ データ |
+| オンプレミスのプラットフォーム更新プログラム 2018 年 3 月 12 日リリース | Dynamics 365 for Operations オンプレミス Enterprise Edition - 更新プログラム 12 デモ データ |
 
 4. zip ファイルには空のデモデータ .bak ファイルが含まれています。 必要に応じて、.bak ファイルを選択します。 たとえば、デモ データが必要な場合は、AxBootstrapDB_Demodata.bak ファイルをダウンロードします。
 
@@ -859,7 +858,7 @@ Finance and Operations では、AD FS の既定で標準のコンフィギュレ
 
 AD FS が認証を交換するために Finance and Operations を信頼するためには、AD FS アプリケーション グループの下の AD FS にさまざまなアプリケーション エントリを登録する必要があります。 設定プロセスをスピードアップし、エラーを減らすために、次のスクリプトを使用して登録します。 Publish-ADFSApplicationGroup.ps1 スクリプトと D365FO-OP ディレクトリを、AD FS ロール サービスがインストールされているマシンにコピーします。 次に、AD FS を管理するための十分なアクセス許可を持つユーザー アカウントを使用してスクリプトを実行します。 (たとえば、管理者アカウントを使用します。)
 
-スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後の手順の LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を紛失した場合、AD FS がインストールされているコンピューターにログインし、**サーバー マネージャー** \> **ツール** \> **AD FS の管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations On-premises** を開き、ネイティブ アプリケーションでクライアント ID を見つけます。
+スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後の手順の LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を紛失した場合、AD FS がインストールされているコンピューターにログインし、**サーバー マネージャー** \> **ツール** \> **AD FS の管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations On-premises**を開き、ネイティブ アプリケーションでクライアント ID を見つけます。
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
@@ -966,7 +965,17 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 ![配置済み](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Finance and Operations (オンプレミス) 環境に接続する
-ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのトピックの [ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
+ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのトピックの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
+
+## <a name="additional-resources"></a>追加リソース
+- [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
+- [オンプレミス配置の再配置](redeploy-on-prem.md)
+- [ドキュメント管理のコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md)
+- [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
+- [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
+- [オンプレミス環境のリバース プロキシのコンフィギュレーション](onprem-reverseproxy.md)
+- [Finance and Operations の技術サポートの設定](../lifecycle-services/support-experience.md)
+- [クライアント インターネット接続](../user-interface/client-disconnected.md)
 
 ## <a name="known-issues"></a>既知の問題
 
@@ -990,8 +999,3 @@ Service Fabirc クラスターのすべてのマシンでコンピューター �
 
 ### <a name="error-admin0077-access-control-policy-does-not-exist-permit-everyone-when-running-the-publish-adfsapplicationgroup-cmdlet"></a>Publish-ADFSApplicationGroup cmdletを実行した際のエラー、「ADMIN0077: アクセス制御ポリシーが存在しません: すべてのユーザーを許可」
 英語以外のバージョンの Windows Server 2016 と共に AD FS をインストールすると、すべてのユーザーのアクセス許可のアクセス許可ポリシーがローカル言語で作成されます。 AccessControlPolicyName パラメーターを指定することによりコマンドレットを呼び出します: .\Publish-ADFSApplicationGroup.ps1 - HostUrl 'https://ax.d365ffo.onprem.contoso.com' - AccessControlPolicyName '<Permit everyone access control policy in your language>'。 
-
-## <a name="additional-resources"></a>その他のリソース
-- [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
-- [オンプレミス配置の再配置](redeploy-on-prem.md)
-

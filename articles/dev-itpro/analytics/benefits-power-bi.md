@@ -1,13 +1,13 @@
 ---
-title: "給付金 Power BI コンテンツ"
-description: "このトピックでは、給付金 Power BI コンテンツについて説明します。 含まれているレポートへのアクセス方法、およびコンテンツを作成するために使用したデータモデルとエンティティについて説明します。"
+title: 給付金 Power BI コンテンツ
+description: このトピックでは、給付金 Power BI コンテンツについて説明します。 含まれているレポートへのアクセス方法、およびコンテンツを作成するために使用したデータモデルとエンティティについて説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355245"
 ---
-
 # <a name="benefits-power-bi-content"></a>給付金 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 08/13/2018
 このトピックでは、**給付金** Microsoft Power BI コンテンツについて説明します。 含まれているレポートへのアクセス方法、およびコンテンツを作成するために使用したデータモデルとエンティティについて説明します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-次の製品のいずれかを使用する場合、**給付金** Power BI コンテンツは **給付金管理** ワークスペースに表示されます。
+次の製品のいずれかを使用する場合、**給付金** Power BI コンテンツは**給付金管理**ワークスペースに表示されます。
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
@@ -39,12 +38,12 @@ ms.lasthandoff: 08/13/2018
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 **給付金** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
-| レポート                       | コンテンツ                                                                                       |
+| レポート                      | コンテンツ                                                                                       |
 |-----------------------------|------------------------------------------------------------------------------------------------|
 | 給付金登録の概要 | 多くの場合そして最小の登録プランでは、従業員のグループ別に登録し、福利厚生計画のオプションを選択 |
 | 従業員手当           | 選択した給付金での従業員の登録                                                        |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 次のデータを使用して、**給付金** Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
@@ -71,4 +70,3 @@ ms.lasthandoff: 08/13/2018
 | 従業員名            | 名、姓、フルネーム                                                                       | 現在の従業員、退職済従業員、従業員のトレンド |
 | 従業員の肩書き           | 役職と勤続日数                                                                                   | 現在の従業員、退職済従業員、従業員のトレンド |
 | 従業員のトレンド           | 時間経過に伴う作業者、人員、会社、職位                                                        | 会社、報酬、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務、福利厚生 |
-

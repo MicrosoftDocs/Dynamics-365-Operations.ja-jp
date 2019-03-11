@@ -1,13 +1,13 @@
---- 
-title: "仕入先の支払条件の定義"
-description: "仕入先請求書の支払条件を設定します。"
+---
+title: 仕入先の支払条件の定義
+description: 仕入先請求書の支払条件を設定します。
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 68c69d5be5ccbdfb17fea7c61121cbf26fee48d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a00ca73b1bc301960132a86846749d12c39ed3f7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358557"
 ---
 # <a name="define-vendor-payment-terms"></a>仕入先の支払条件の定義
 
@@ -51,5 +51,4 @@ ms.lasthandoff: 09/29/2017
 17. 現金割引が転記される仕入先請求書用の主勘定を入力します。
     * 「割引の相手勘定」に「仕入先割引の主勘定を使用」が設定されている場合、主勘定が使用されるようになります。  オプションで「請求明細行の勘定」を選択した場合、現金割引は、請求書明細行の資産/経費用勘定に転記されるようになります。  
 18. [保存] をクリックします。
-
 

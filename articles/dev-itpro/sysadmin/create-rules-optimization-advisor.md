@@ -1,32 +1,31 @@
 ---
-title: "最適化アドバイザーのためのルールを作成します"
-description: "このトピックでは、最適化アドバイザーのための新しいルールを追加する方法について説明します。"
+title: 最適化アドバイザーのためのルールを作成します
+description: このトピックでは、最適化アドバイザーのための新しいルールを追加する方法について説明します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: ca73120a5a0da4dc348c2d16dca8e7654876af5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: a18fac31b5acb7d2a1ec40203122d4eb9d94a439
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354164"
 ---
-
 # <a name="create-rules-for-optimization-advisor"></a>最適化アドバイザーのためのルールを作成します
 
 [!include [banner](../includes/banner.md)]
@@ -196,7 +195,7 @@ class ScanNewRulesJob
 
 ルールは **診断検証ルール** フォームで表示され、**システム管理** > **定期処理のタスク** > **診断検証ルールの管理** からも使用できます。 それを評価するために、**システム管理** > **定期処理のタスク** > **診断検証ルールのスケジュール** に移動し、**毎日** のようなルールの頻度を選択します。 **OK** をクリックします。 **システム管理** > **最適化アドバイザー** に移動し、営業案件を表示します。 
 
-次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。 これにより、新しいルールの作成を開始することができます。 この例で使用するラベルおよびアクション メニュー項目は、デモ目的でのみ使用されます。
+次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。 これにより、新しいルールの作成を開始することができます。この例で使用するラベルおよびアクション メニュー項目は、デモ目的でのみ使用されます。
 
 ```
 [DiagnosticsRuleAttribute]
@@ -255,5 +254,4 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-詳細については、[Dynamics 365 for Finance and Operations の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ) の短い YouTube ビデオを確認してください。
-
+詳細については、短い YouTube ビデオを確認してください: [Dynamics 365 for Finance and Operations の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

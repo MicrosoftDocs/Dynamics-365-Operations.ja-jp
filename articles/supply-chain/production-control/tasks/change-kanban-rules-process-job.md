@@ -1,13 +1,13 @@
---- 
-title: "プロセス ジョブのかんばんルールの変更"
-description: "この手順は、使用されているかんばんルールの指定されたかんばんへの変更を対象としています。"
+---
+title: プロセス ジョブのかんばんルールの変更
+description: この手順は、使用されているかんばんルールの指定されたかんばんへの変更を対象としています。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, KanbanReassignRuleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 38d9ff0a7d6aeb0a589fd6b9ab34b818c46644cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f8b2a67e03a64deae9d4bc9c7e3e714d134443c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314949"
 ---
 # <a name="change-kanban-rules-for-a-process-job"></a>プロセス ジョブのかんばんルールの変更
 
@@ -48,5 +48,4 @@ ms.lasthandoff: 09/29/2017
     * 先に作成されたかんばんルールを選択します。 これは、最大数のかんばんルールです。  
 7. [完了] をクリックします。
     * ここでは、かんばん作業は別のかんばんルールを使用します。 これは負荷の作業セルのレベルに有用です。  
-
 

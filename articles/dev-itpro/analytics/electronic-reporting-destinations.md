@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER) の送信先"
-description: "各電子レポート (ER) 形式のコンフィギュレーション、および生産物コンポーネント (フォルダやファイル) の出力先をコンフィギュレーションできます。 適切なアクセス権が与えられているユーザーは、実行時に送信先の設定を変更することもできます。 この資料では、電子申告の送信先の管理、サポートされている送信先の種類とセキュリティに関する考慮事項について説明します。"
+title: 電子申告 (ER) の送信先
+description: 各電子レポート (ER) 形式のコンフィギュレーション、および生産物コンポーネント (フォルダやファイル) の出力先をコンフィギュレーションできます。 適切なアクセス権が与えられているユーザーは、実行時に送信先の設定を変更することもできます。 この資料では、電子申告の送信先の管理、サポートされている送信先の種類とセキュリティに関する考慮事項について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314926"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 08/13/2018
 ## <a name="availability-and-general-prerequisites"></a>可用性と一般的な前提条件
 電子申告の宛先の機能は、Microsoft Dynamics AX 7.0 (2016 年 2 月) では利用できません。 したがって、このトピックに記載されているすべての機能を使用するには Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) をインストールする必要があります。 または、次の前提条件のいずれかをインストールできます。 ただし、これらの代替条件は、ER 出力先のエクスペリエンスがさらに制限されることに注意してください。
 
-- Microsoft Dynamics AX application version 7.0.1 (2016 年 5 月)
+- Microsoft Dynamics AX アプリケーションのバージョン 7.0.1 (2016 年 5 月)
 - 電子申告宛先管理[アプリケーションの修正プログラム](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 インポートされた電子申告構成、および **電子申告コンフィギュレーション** ページで利用可能な形式に対してのみ送信先を設定することができます。
@@ -105,9 +104,9 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 #### <a name="sharepoint"></a>SharePoint
 
-指定された SharePoint フォルダーにファイルを保存することができます。 既定の SharePoint サーバーを **SharePoint** タブの **組織管理** &gt; **ドキュメント管理** &gt; **ドキュメント管理パラメーター** で定義します。SharePoint フォルダーを構成すると、そのドキュメント タイプ用に電子申告出力を保存するフォルダーとして選択できます。
+指定された SharePoint フォルダーにファイルを保存することができます。 既定の SharePoint サーバーを **SharePoint** タブの**組織管理** &gt; **ドキュメント管理** &gt; **ドキュメント管理パラメーター** で定義します。SharePoint フォルダーを構成すると、そのドキュメント タイプ用に電子申告出力を保存するフォルダーとして選択できます。
 
-[![SharePoint フォルダーを選択する](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
+[![SharePoint フォルダーの選択](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azure ストレージ
 
@@ -123,7 +122,7 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 ### <a name="power-bi-destination"></a>Power BI 出力先
 
-**有効** を **はい** に設定し、ER コンフィギュレーションを使用して Finance and Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。
+**有効**を**はい**に設定し、ER コンフィギュレーションを使用して Finance and Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、[Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md) を参照してください。
 
 > [!TIP]
 > 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
@@ -158,11 +157,10 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 フォーミュラは電子申告の構成に固有です。 たとえば、ISO 20022 クレジット転送の構成に使用する場合、**'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID** または **model.Payments.Creditor.Identification.SourceID** を使用して関連付けられている仕入先のアカウントを取得します。
 
-### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>形式のコンフィギュレーションの 1 つには、1 つのフォルダーにグループ化された複数のファイルが含まれています (たとえば、フォルダー 1 にファイル 1、ファイル 2、ファイル 3 が含まれる)。 Folder1.zip は全く作成されず、ファイル 1 は電子メールで送信され、ファイル 2 は SharePoint に送信され、構成を実行した後すぐにファイル 3 を開くには、どのように出力先を設定したらよいですか。
+### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>形式のコンフィギュレーションの 1 つには、1 つのフォルダーにグループ化された複数のファイルが含まれています (たとえば、フォルダー 1 にファイル 1、ファイル 2、ファイル 3 が含まれる)。 Folder1.zip は全く作成されず、ファイル 1 は電子メールで送信され、ファイル 2 は SharePoint に送信され、コンフィギュレーションを実行した後すぐにファイル 3 を開くには、どのように出力先を設定したらよいですか。
 
 前提条件では、電子申告の構成で利用可能な形式である必要があります。 自分の形式を持っている場合、**電子申告の送信先** ページを開き、この構成に新しい参照を作成します。 出力の各コンポーネントに 1 つずつ、4 つの出力先が必要です。 最初のファイルの出力先を作成し、**フォルダー** のように名前を付け、構成でフォルダーを表すファイル名を選択します。 それから **設定** をクリックし、すべての出力先が無効になっているかどうかを確認します。 このファイルの出力先にはフォルダーは作成されません。 既定では、ファイルと親フォルダーの階層構造の依存関係のため、ファイルは同じように動作します。 つまり、それらはどこにも送信されません。 既定動作を上書きするには、各ファイルに 1 つずつ、ファイルの出力先をさらに 3 つ作成する必要があります。 それぞれの出力先の設定では、ファイルが送信される出力先を有効にする必要があります。
 
 ## <a name="additional-resources"></a>その他のリソース
 
 [電子申告の概要](general-electronic-reporting.md)
-

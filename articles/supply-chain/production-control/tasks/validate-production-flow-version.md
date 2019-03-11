@@ -1,13 +1,13 @@
---- 
-title: "生産フローおよびバージョンの検証"
-description: "この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。"
+---
+title: 生産フローおよびバージョンの検証
+description: この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4ae4c5f55d317a99e23ba6e76fc50ddece1e55a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7fb52291f15bfe9063b2a9d4a572dcdc44286402
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352853"
 ---
 # <a name="validate-a-production-flow-and-version"></a>生産フローおよびバージョンの検証
 
@@ -63,5 +63,4 @@ ms.lasthandoff: 09/29/2017
 12. [実際のサイクル時間の期間] への日数の入力
     * 実際のサイクル時間の期間は、実際のサイクル時間を計算するために実際の分数を遡って集計されるジョブの日数です。 価は随時変更することができ、実際のサイクル時間の計算にのみ使用されます。  
 13. [保存] をクリックします。
-
 

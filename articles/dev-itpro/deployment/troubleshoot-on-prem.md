@@ -1,28 +1,28 @@
 ---
-title: "オンプレミス配置のトラブルシューティング"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。"
+title: オンプレミス配置のトラブルシューティング
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.translationtype: HT
-ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
 ms.openlocfilehash: 30a7f1b88be24ddbe5633655f8b110b5499d7b4d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368865"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -162,7 +162,7 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
 2. エラーが発生した場合は、**CleanFabric.ps1**コマンドを使用して、クラスタ内の特定のノードを削除します。 このコマンドは、C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code で検索することができます。
 3. 既定の場所を使用している場合、**C:\\ProgramData\\SF** フォルダーを削除します。 それ以外の場合、指定したフォルダーを削除します。
 
-    「アクセスが拒否されました」というエラーが表示された場合は、Microsoft Windows PowerShell またはマシンを再起動してください。
+    「アクセス拒否」エラーが発生した場合は、Microsoft Windows PowerShell を再起動するか、マシンを再起動します。
 
 ## <a name="clean-up-an-existing-environment-and-redeploy"></a>既存環境のクリーンアップと再配置
 
@@ -265,7 +265,7 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 
 ## <a name="local-agent-errors"></a>ローカル エージェント エラー
 
-### <a name="issue"></a>問題
+### <a name="issue"></a>出庫
 **エラー:**
 
 次のエラーが表示される場合があります。
@@ -656,7 +656,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 - Dynamics 365 リンクを信頼されているサイトの一覧に追加します。
 - 末尾にスラッシュ「/」を追加し、動作が変更されるかどうかを確認します。
 
-**ADFS** \> **アプリケーション グループ**の順に移動して、AD FS マネージャーを確認します。 **Microsoft Dynamics 365 for Operations on-premises** をダブルクリックします。 その後、**ネイティブ アプリケーション**で、**Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション**をダブルクリックします。
+**ADFS** \> **アプリケーション グループ**の順に移動して、AD FS マネージャーを確認します。 **Microsoft Dynamics 365 for Operations オンプレミス**をダブルクリックします。 その後、**ネイティブ アプリケーション**で、**Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション**をダブルクリックします。
 
 **リダイレクト URI** 値に注意してください。 Finance and Operations の DNS 前方参照ゾーンに一致させる必要があります。
 
@@ -811,7 +811,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 > 操作を完了する前にタイムアウト期間が経過したか、サーバーが応答していません。  
 > 明細書は終了しました。
 
-一度に 1 つの AOS マシンのみ DB Sync を実行できます。 AOS VM の 1 つが DB Sync を実行してされているため、および他の VM が実行できないという警告が表示されるため、このエラーは無視しても問題ありません。 DB Sync が実行されていることを確認するには、イベント ビューアの、警告を生成していない AOS VM で**アプリケーションおよびサービスのログ** \> **Microsoft** \> **Dynamics** \> **AX DatabaseSynchronize/Operational** の順に移動します。
+一度に 1 つの AOS マシンのみ DB Sync を実行できます。 AOS VM の 1 つが DB Sync を実行してされているため、および他の VM が実行できないという警告が表示されるため、このエラーは無視しても問題ありません。 DB Sync が実行されていることを確認するには、イベント ビューアの、警告を生成していない AOS VM で**アプリケーションおよびサービスのログ** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational** の順に移動します。
 
 ## <a name="error-requirenonce-is-true-default-but-validationcontextnonce-is-null"></a>エラー、「RequireNonce が True (既定) ですが、validationContext.Nonce は Null です」
 このエラーは、クライアントにサインインした後も Internet Explorer で HTTP エラー 500 として表示されます。 Internet Explorer がセキュリティ強化の構成になっている場合、発行された nonce は検証できません。
@@ -979,7 +979,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
     1. ネイティブ アプリケーション **Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション**を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
     2. ネイティブ アプリケーション **Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 - ネイティブ アプリケーション**を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
     3. Web API **Microsoft Dynamics 365 for Operations オンプレミス - Web API** を開きます。 新しい環境 (DNS) のリダイレクト URI の 2 つのエントリを追加します。
-    4. Web API **Microsoft Dynamics 365 for Operations オンプレミス - Financial Reporting Web API** を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
+    4. Web API **Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 Web API** を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
 
 ## <a name="redeploy-ssrs-reports"></a>SSRS レポートを再配置する
 SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動します。 AOS コンピューターは DB 同期を再実行し、レポートを配置します。
@@ -1085,4 +1085,3 @@ AOS サーバーにインストールされているすべてのネットワー�
 これを行うには、Finance and Operations にログインする必要があります。 リダイレクトは、ログインしてそのアクションを実行できるように、ブラウザー内でブロックされている必要があります。 Skype プレゼンスを無効にすると、リダイレクトをもう一度ブロック解除できます。
 
 Chrome ブラウザーでは、既定でリダイレクトがブロックされます。
-

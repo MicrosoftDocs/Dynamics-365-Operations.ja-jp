@@ -1,13 +1,13 @@
 ---
-title: "個人検索レポートを拡張"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の個人検索レポートを拡張するプロセスについて説明します。"
+title: 個人検索レポートを拡張
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートを拡張するためのプロセスを説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,22 +15,21 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 102fa4c3fd40059309d08f20aee601a5f0272f37
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369412"
 ---
-
-# <a name="extend-the-person-search-report"></a>個人検索レポートを拡張
+# <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートは、1 人のユーザーのエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。
+Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートは、1 人のエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。
 
 > [!Note]
-> 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent の今後のリリースで使用することができます。 このトピックの Finance and Operations への参照は、Retail と Talent にも当てはまります。 担当者検索レポートは現在、Microsoft Dynamics AX 2012 では使用できません。
+> 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、およびMicrosoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。 このトピックの Finance and Operations への参照は、Retail と Talent にも当てはまります。 Microsoft Dynamics AX 2012 では今のところ担当者検索レポートは使用できません。
 
 ## <a name="add-another-entity-to-the-default-template"></a>既定のテンプレートへの別のエンティティの追加
 
@@ -82,7 +81,7 @@ Microsoft Dynamics 365 for Finance and Operations の担当者検索レポート
     2. 結果のグリッドと**含む/除外**ボタンを使用して結果に新しいタブを追加します。
     3. **含む/除外**ボタンのイベント ハンドラーを作成して **PersonSearchResult** レコードを更新します。
 
-        **PersonSearchEventHandler::updateMarkedOnButtonClicked()** メソッドは利便性のために用意されています。
+        **PersonSearchEventHandler::updateMarkedOnButtonClicked()** メソッドが利便性のために用意されています。
 
 > [!NOTE]
 > 結果キャプションのレコード数を確認するには、**OnQueryExecuted** ビューのデータ ソース イベントでイベント ハンドラーを作成します。 次に、**PersonSearch** フォームで **setResultCountOnGridCaption()** メソッドを呼び出して、カウントを更新します。
@@ -120,11 +119,10 @@ Microsoft Dynamics 365 for Finance and Operations の担当者検索レポート
 
 ## <a name="additional-resources"></a>その他のリソース
 
-欧州連合の一般的なデータ保護規制 (GDPR) に基づくデータの依頼への応答の一部として、個人検索レポートを拡張している場合、この規制に関する詳細については、[Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](./gdpr-guide.md)から参照できます。
+欧州連合の一般的なデータ保護規制 (GDPR) に基づくデータの依頼への応答の一部として、個人検索レポートを拡張している場合、この規制に関する詳細については、[Microsoft Dynamics 365 for Finance and Operations のための GDPR ガイド](./gdpr-guide.md) でご覧いただけます。
 
 GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 
 ### <a name="disclaimer"></a>免責事項
 (c)2018 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。 
-

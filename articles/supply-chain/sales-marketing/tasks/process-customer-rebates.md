@@ -1,13 +1,13 @@
---- 
-title: "顧客リベートの生成および処理"
-description: "この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。"
+---
+title: 顧客リベートの生成および処理
+description: この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336454"
 ---
 # <a name="generate-and-process-customer-rebates"></a>顧客リベートの生成および処理
 
@@ -83,5 +83,4 @@ ms.lasthandoff: 09/29/2017
 9. [顧客] フィールドで値を入力または選択します。
 10. [OK] をクリックします。
     * メッセージは、リベートが正常に処理されたことを示し、要求の状態は [マーク] に変更されました。 これは、リベート見越計上仕訳帳の結果が転記されたことを意味します。a) 要求は、控除として一時顧客残高に転送されました。b) リベート見越計上勘定は、顧客に対する将来の負債を表すために貸方に転記されました。c) リベート経費勘定は、販売に関連して発生した費用を承認するため借方に転記されました。   
-
 

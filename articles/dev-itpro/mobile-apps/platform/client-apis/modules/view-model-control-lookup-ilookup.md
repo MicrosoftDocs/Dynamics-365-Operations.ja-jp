@@ -1,28 +1,27 @@
 ---
-title: "参照モジュール"
-description: "ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。"
+title: 参照モジュール
+description: ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8812aaf7b32edc1c21fbe16f7fc344c4b78f0e5c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369614"
 ---
-
 # <a name="lookup-module"></a>参照モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -92,7 +91,7 @@ ms.lasthandoff: 08/09/2018
 | [alignItems](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#alignitems) |alignItems: string (optional)  <br>|このプロパティは、CSS プロパティ「align-items」のエイリアスです。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[alignItems](../interfaces/view-model-ipage-idesign.md#alignitems) から継承 <br> |
 | [alignSelf](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#alignself) |alignSelf: string (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[alignSelf](../interfaces/view-model-ipage-idesign.md#alignself) から継承 <br> |
 | [バインディング](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#bindings) |bindings: any (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings) から継承 <br> |
-| [枠線](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
+| [枠線](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
 | [色](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [flexFlow](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
 | [flexSize](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
@@ -148,5 +147,4 @@ ms.lasthandoff: 08/09/2018
 | ---- | --------- | ----------- |
 | [OnOptionSelected](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#onoptionselected) |OnOptionSelected: 機能 (ルックアップ: すべて、lookupEntityData: すべて): 無効 (オプション)  <br>|オプションが選択されることによって発生するイベントです。<br>  |
 | [OnValueChanged](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#onvaluechanged) |OnValueChanged: 機能 (値 : すべて): 無効 (オプション)  <br>|値が変更されることによって発生するイベントです。<br>  |
-
 

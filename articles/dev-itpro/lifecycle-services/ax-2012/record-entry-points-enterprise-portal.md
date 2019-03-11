@@ -1,13 +1,13 @@
 ---
-title: "エンタープライズ ポータルのエントリ ポイントを記録"
-description: "イベント トレースを使用して、Microsoft Dynamics AX のエンタープライズ ポータルに業務プロセス フローを記録することができます。 セキュリティ開発ツールに業務プロセス フローを表示することができます。"
+title: エンタープライズ ポータルのエントリ ポイントを記録
+description: イベント トレースを使用して、Microsoft Dynamics AX のエンタープライズ ポータルに業務プロセス フローを記録することができます。 セキュリティ開発ツールに業務プロセス フローを表示することができます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 74812
 ms.assetid: 72a6964d-e8b6-4c3a-8b74-bd6550711f2a
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e8305fbcb38fc56bc33dcb29e78841a3cac4e5f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368612"
 ---
-
 # <a name="record-entry-points-in-enterprise-portal"></a>エンタープライズ ポータルのエントリ ポイントを記録
 
 [!include [banner](../../includes/banner.md)]
@@ -62,7 +61,6 @@ ms.lasthandoff: 08/09/2018
     | システム ユーザー ロール アクセス レベル列によってエントリ ポイントを並べ替え、システム ユーザー ロールのアクセス レベルが NoAccess 以外になっているすべてのエントリ ポイントを削除します。 |
 
 3.  記録されたエントリ ポイントのアクセス レベルを更新するには、一覧で複数の行を選択し、**記録済みとしてマーク** をクリックします。 メイン フォームに戻り、エントリ ポイントは記録済みとしてマークされます。 主要なフォームから、アクセス レベルを更新する**エントリ ポイントのアクセス許可を設定**機能を使用できます。 終了したら、**エンタープライズ ポータルのトレース データ ウィンドウに移動する** をクリックして、エンタープライズ ポータルのエントリ ポイントのトレース データを表示するウィンドウに切り替えることができます。
-
 
 
 

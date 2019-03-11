@@ -1,13 +1,13 @@
 ---
-title: "ダイアログ上のセグメント化されたエントリ コントロールをサポート"
-description: "セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。"
+title: ダイアログ上のセグメント化されたエントリ コントロールをサポート
+description: セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 50223d98a89fefddf056bf63fb69330ee3079f9f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368910"
 ---
-
 # <a name="support-for-segmented-entry-controls-on-dialogs"></a>ダイアログ上のセグメント化されたエントリ コントロールをサポート
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,6 @@ ms.lasthandoff: 08/09/2018
 [セグメント化されたエントリ コントロールの移行](segmented-entry-control-conversion.md)
 
 [セグメント化されたエントリ コントロール - 移行のガイダンス](segmented-entry-control-migration-guidance.md)
-
 
 
 

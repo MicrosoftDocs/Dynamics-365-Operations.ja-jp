@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) で トランザクションを中断し再開する"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail を使用して、ユーザーが進行中のトランザクションを中断して後で再開する、または別のレジスターで再開する方法について説明します。"
+title: 販売時点管理 (POS) で トランザクションを中断し再開する
+description: このトピックでは、Microsoft Dynamics 365 for Retail を使用して、ユーザーが進行中のトランザクションを中断して後で再開する、または別のレジスターで再開する方法について説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333901"
 ---
-
 # <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>販売時点管理 (POS) で トランザクションを中断し再開する
 
 [!include [banner](includes/banner.md)]
@@ -83,4 +82,3 @@ ms.lasthandoff: 01/04/2019
 ### <a name="void-a-suspended-transaction"></a>中断されたトランザクションの無効化
 
 トランザクションを呼び出してから**トランザクションの無効化**操作を実行するか、**トランザクションの呼び出し**リストを選択してアプリ バーの**無効化**を選択することによって、中断されたトランザクションを無効にすることができます。 または、ユーザーがシフトをクローズする時に中断されたトランザクションを無効にするように、店舗をコンフィギュレーションすることができます。
-

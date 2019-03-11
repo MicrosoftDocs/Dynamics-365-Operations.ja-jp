@@ -1,13 +1,13 @@
 ---
-title: "ワークスペースのフォーム パターン"
-description: "このトピックでは、ワークスペース フォーム パターンについて説明します。 ワークスペースはユーザーがタスクと特定のページに移動する主な方法です。 ワークスペースは、サポートされている重要な事業活動ごとに作成する必要があります。"
+title: ワークスペースのフォーム パターン
+description: このトピックでは、ワークスペース フォーム パターンについて説明します。 ワークスペースはユーザーがタスクと特定のページに移動する主な方法です。 ワークスペースは、サポートされている重要な事業活動ごとに作成する必要があります。
 author: jasongre
 manager: AnnBe
 ms.date: 05/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3060450516c36f91988b7d96bea2b6e4f9b60a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a16153c95a97ff30c942b1da8bbe28a684590013
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368660"
 ---
-
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ ms.lasthandoff: 04/20/2018
 
 [![ワークスペース (2)](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
-## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations のパターン変更
+## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations 用のパターンの変更
 Microsoft Dynamics AX 2012 ロール センターは、アクティビティに特化した複数のワークスペースで置き換えられました。
 
 ## <a name="model"></a>モデル
@@ -137,11 +136,11 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 
 ## <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ## <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-### <a name="ax-2012-links"></a>AX 2012 のリンク
+### <a name="ax-2012-links"></a>AX 2012 リンク
 
 -   [MSDN ロール センター ページ参照 \[AX 2012\]](http://msdn.microsoft.com/en-us/library/cc558235.aspx)
 -   [MSDN ロール センター ユーザー エクスペリエンス ガイドライン \[AX 2012\]](http://msdn.microsoft.com/en-us/library/gg886608.aspx)
@@ -149,4 +148,3 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 ### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![ワークスペース (5)](./media/workspace5.png)](./media/workspace5.png)
-

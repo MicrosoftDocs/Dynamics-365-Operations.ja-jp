@@ -1,13 +1,13 @@
 ---
-title: "ビルド操作"
-description: "このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。"
+title: ビルド操作
+description: このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 87928ab631c346d2c379c6fe977b5606985a5ba6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368329"
 ---
-
 # <a name="build-operations"></a>ビルド操作
 
 [!include [banner](../includes/banner.md)]
@@ -65,7 +64,7 @@ ms.lasthandoff: 08/09/2018
 プロジェクトのプロパティを使用して、プロジェクトをビルドするたびにデータベースの同期操作を実行するように指定できます。 これは、アプリケーションのテーブル構造を変更する場合に便利です。 ビルドを実行するたびに、データベースはプロジェクトで定義されているテーブルと同期されていることがわかります。 プロジェクト プロパティの設定方法の詳細については、[プロジェクト](projects.md) を参照してください。 アプリケーションに多数のテーブルがあり、アプリケーションをまだテストしていない場合、**ビルドでデータベースの同期**プロパティを **false** に設定できます。 この変更により、プロジェクトのビルドに必要な時間が短縮されます。 次にテストを開始するときは、必ずこのプロパティを **true** に設定してください。 プロジェクトに含まれるテーブルを手動で同期する必要がある場合は、ソリューション エクスプローラーで、プロジェクトを右クリックし、**同期 &lt; プロジェクト名 &gt; データベース**をクリックできます。 **Dynamics 365** メニューでプロセス (長いプロセスとなる可能性がある) データベース全体を同期させるには、**データベースの同期** をクリックします。します。
 
 > [!NOTE]
-> アセンブリを完全にコンパイルする前にデータベースを同期しようとすると、Visual Studio データベース同期ツールには、同期が正常に完了したことを示すメッセージが表示されますが、実際には同期は成功していません。
+> アセンブリを完全にコンパイルする前にデータベースを同期しようとすると、Visual Studio データベース同期ツールには同期が正常に完了したことを示すメッセージが表示されますが、実際には同期は成功していません。
 
 テーブルおよびビューは、完全にコンパイルするまでに、データベースに対して同期することはできません。 アプリケーション プラットフォーム、アプリケーション基準、およびアプリケーション スイートの完全なビルドを完了すると、Visual Studio での Dynamics 365 メニューからデータベース同期を完了することができます。 
 
@@ -123,7 +122,6 @@ Visual Studio の **エラー一覧** ウィンドウには、ビルド プロ�
 [開発ツールの概要](development-tools-overview.md)
 
 [開発者ホーム ページ](developer-home-page.md)
-
 
 
 

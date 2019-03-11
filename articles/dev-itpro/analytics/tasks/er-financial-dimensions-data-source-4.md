@@ -1,13 +1,13 @@
---- 
-title: "ER 財務分析コードをデータ ソースとして使用する (第 4 部 - レポートの実行)"
-description: "次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
+---
+title: ER 財務分析コードをデータ ソースとして使用する (第 4 部 - レポートの実行)
+description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 917eae141bbb8792f02d3323054e2a4096dae551
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345286"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4-run-the-report"></a>ER データ ソース (パート 4: レポートの実行) としての財務分析コードの使用
 
@@ -45,6 +45,5 @@ ms.lasthandoff: 10/16/2018
 9. [基準] フィールドで、「00057」と入力します。
 10. [OK] をクリックします。
 11. [OK] をクリックします。
-    * 生成された出荷を確認します。 選択したバッチの各トランザクションについては、相当する分析コードの財務分析コードが表示されます。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations、Enterprise Edition インスタンスに構成した分析コードの数に依存していないことを確認します。  
-
+    * 生成された出荷を確認します。 選択したバッチの各トランザクションについては、相当する分析コードの財務分析コードが表示されます。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations Enterprise Edition インスタンスに構成した分析コードの数に依存していないことを確認します。  
 

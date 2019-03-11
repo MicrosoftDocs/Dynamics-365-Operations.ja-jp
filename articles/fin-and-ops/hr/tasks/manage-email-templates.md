@@ -1,13 +1,13 @@
---- 
-title: "電子メール テンプレートの管理"
-description: "組織のデータベースから新しいドキュメントのブックマークに情報を転送し、申請者および候補者との効率的なやり取りを支援するテンプレートを使用できます。"
+---
+title: 電子メール テンプレートの管理
+description: 組織のデータベースから新しいドキュメントのブックマークに情報を転送し、申請者および候補者との効率的なやり取りを支援するテンプレートを使用できます。
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplicationWordBookmark, HRMApplicationEmailTemplate
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f8eface8fd47378e25c7baeca9a84fa41097dfbe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309613"
 ---
 # <a name="manage-email-templates"></a>電子メール テンプレートの管理
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-組織のデータベースから新しいドキュメントのブックマークに情報を転送し、申請者および候補者との効率的なやり取りを支援するテンプレートを使用できます。 これを行うには、標準テキストを含むテンプレートとシステム データの挿入先となるいくつかのブックマークを作成できます。 たとえば、申請者の住所と連絡先情報を、申請者とのやり取りに使用できる Microsoft Word ドキュメントに挿入します。 この手順の作成に使用するデモ データの会社は USMF です。
+組織のデータベースから新しいドキュメントのブックマークに情報を転送し、申請者および候補者との効率的なやり取りを支援するテンプレートを使用できます。 これを行うには、標準テキストを含むテンプレートとシステム データの挿入先となるいくつかのブックマークを作成できます。 たとえば、申請者の住所と連絡先情報を、申請者とのやり取りに使用できる Microsoft Word 文書に挿入します。 この手順の作成に使用するデモ データの会社は USMF です。
 
 
 ## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a>電子メール テンプレートで使用するブックマークの選択
@@ -50,5 +50,4 @@ ms.lasthandoff: 09/29/2017
 8. 電子メール メッセージの入力を続け、任意の箇所にブックマーク フィールドを挿入します。
     * 電子メール メッセージの入力を続け、任意の箇所にブックマーク フィールドを挿入します。  
 9. [保存] をクリックします。
-
 

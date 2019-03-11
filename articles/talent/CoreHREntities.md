@@ -1,36 +1,35 @@
 ---
-title: "Common Data Service for Apps における Core HR エンティティ"
-description: "Core HR は、Common Data Service (CD) for Apps を使用して、拡張性との統合シナリオを有効にします。"
+title: Common Data Service for Apps の Core HR エンティティ
+description: Core HR は、Common Data Service (CD) for Apps を使用して、拡張性シナリオおよび統合シナリオを有効にします。
 author: jcart
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.scope: Talent
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: jcart
 ms.search.validFrom: 2018-08-11
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3cc19a8e5f726495e698a3a2f4ccce7460a61657
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 017cc942dfa2cfc36bf10a7ae25cecbaa80df661
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369743"
 ---
-
 # <a name="core-hr-and-common-data-service-for-apps"></a>Core HR および Common Data Service for Apps
 
 [!include [banner](includes/banner.md)]
 
-Core HR は、Common Data Service (CD) for Apps を使用して、拡張性との統合シナリオを有効にします。
+Core HR は、Common Data Service (CD) for Apps を使用して、拡張性シナリオおよび統合シナリオを有効にします。
 
-CDS for Apps の詳細については、[Common Data Service for Apps とは](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)を参照してください。。
+CDS for Apps の詳細については、[Common Data Service for Apps とは](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)を参照してください。
 
 次の Core HR エンティティは、CDS for Apps で使用できます。
 
@@ -780,4 +779,3 @@ CDS for Apps の詳細については、[Common Data Service for Apps とは](ht
 | イベント タイプ            | オプション セット      | x            | x              |
 | 有効             | 2 つのオプション     | x            |                |
 | 氏名                  | テキスト            | x            | x              |
-

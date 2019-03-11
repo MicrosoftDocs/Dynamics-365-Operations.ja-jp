@@ -1,13 +1,13 @@
 ---
-title: "使用可能な SQL Server Reporting Services (SSRS) レポート"
-description: "このトピックでは、Finance and Operations で使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。"
+title: 使用可能な SQL Server Reporting Services (SSRS) レポート
+description: このトピックでは、Finance and Operations で使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。
 author: sericks007
 manager: AnnBe
 ms.date: 01/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: b77ee03e19b6266d8878857c1ccf5dfa0467bce8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368984"
 ---
-
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
 [!include [banner](../includes/banner.md)]
@@ -41,4 +40,3 @@ ms.lasthandoff: 08/13/2018
 
 ## <a name="to-view-the-report"></a>レポートを表示するには
 [SQL Server Reporting Services レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、利用可能な各レポートがリストされています。 レポートには、各レポートで使用されるデータ セットと、各レポートで使用可能なフィルターおよびフィールドが表示されます。
-

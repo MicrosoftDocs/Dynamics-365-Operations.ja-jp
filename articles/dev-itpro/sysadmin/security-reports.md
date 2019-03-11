@@ -1,13 +1,13 @@
 ---
-title: "すぐに使えるセキュリティ レポート"
-description: "Dynamics 365 for Finance and Operations では、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートが用意されています。"
+title: 最初から用意されているセキュリティ レポート
+description: Dynamics 365 for Finance and Operations では、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートが用意されています。
 author: maertenm
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecConfiguration, SrsReportViewerForm
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 55abffcc0f9f40289fca156ed53021da50c3a91b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368472"
 ---
-
-# <a name="out-of-box-security-reports"></a>すぐに使えるセキュリティ レポート
+# <a name="out-of-box-security-reports"></a>最初から用意されているセキュリティ レポート
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,5 +69,4 @@ Dynamics 365 for Finance and Operations では、環境内で実行されてい�
 上記のレポートのいずれかを、バッチ ジョブとして実行するように設定するには、レポートのパラメータ ウィンドウの**バックグラウンドで実行**セクションに移動します。 **バッチ処理** を **はい** に設定し、バッチ タスクジョブ名、バッチ グループ、ジョブをプライベートまたは重大なとして実行するかどうかを指定します。 バッチ タスクが実行されると、レポートが作成されます。
 
 ![レポートのバッチ処理](media/a6142c903497381171bf6c6b27495895.png)
-
 

@@ -1,13 +1,13 @@
 ---
-title: "財務諸表"
-description: "Finance および Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。 効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。"
+title: 財務諸表
+description: Finance および Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。 効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323781"
 ---
-
 # <a name="financial-reporting"></a>財務諸表
 
 [!include [banner](../includes/banner.md)]
@@ -98,4 +97,3 @@ Finance および Operations の財務報告では、財務およびビジネス
 
 ## <a name="additional-resources"></a>その他のリソース
 [財務諸表の生成](generate-financial-report.md)
-

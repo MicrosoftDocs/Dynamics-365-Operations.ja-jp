@@ -1,13 +1,13 @@
 ---
-title: "構成マネージャーの設定"
-description: "このトピックでは、構成マネージャーの設定方法について説明します。"
+title: 構成マネージャーの設定
+description: このトピックでは、構成マネージャーの設定方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations
@@ -15,16 +15,15 @@ ms.custom: 62673
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 ms.search.region: Global
 ms.author: robadawy
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
+ms.openlocfilehash: bb8279b09aa1c75536b275e60c8add254a570513
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 902a7ad41fd6e55a07130451905adbcd74f83909
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369347"
 ---
-
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="before-you-begin"></a>準備
 開始する前に、環境には次のコンポーネントが含まれている必要があります。
 
-- 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 をインストールする方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](http://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx) を参照してください。
+- 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 のインストール方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](http://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx)を参照してください。
 - 実行中のデータのインポート/エクスポート フレームワークのインスタンス。 データのインポート/エクスポート フレームワークをインストールする方法の詳細については、[データのインポート/エクスポート フレームワークをインストール (AX 2012)](./ax-2012/install-dixf.md) を参照してください。 
   > [!IMPORTANT]
   > データのインポート/エクスポート フレームワークへ接続するためには、構成マネージャー (ベータ) を有効にする DMFEntityExecutionStatusService および DMFService サービス グループを配置する必要があります。
@@ -82,10 +81,10 @@ ms.lasthandoff: 04/20/2018
 ## <a name="install-and-configure-the-local-component-of-the-system-diagnostics-lifecycle-services"></a>システム診断 (Lifecycle Services) のローカル コンポーネントのインストールと構成
 構成をエクスポートする環境で、次の手順を実行します。 
 > [!IMPORTANT]
-> プロジェクトおよび環境のシステム診断のローカル コンポーネントを既にインストールしている場合、**プログラムの追加と削除**を使用し、アンインストールする必要があります。 検出されたインスタンスの数にかかわらず、環境ごとに 1 つのMicrosoft Dynamics AX Application Object Server (AOS) だけが、コンフィギュレーションの管理と共に使用されます。
+> プロジェクトおよび環境のシステム診断のローカル コンポーネントを既にインストールしている場合、**プログラムの追加と削除**を使用し、アンインストールする必要があります。 検出されたインスタンスの数にかかわらず、環境ごとに 1 つの Microsoft Dynamics AX Application Object Server (AOS) だけが、コンフィギュレーションの管理と共に使用されます。
 
 1.  システム診断のローカル コンポーネントをインストールします。 詳細については、[システム診断のインストールと実行 (Lifecycle Services)](./ax-2012/install-run-system-diagnostics-lcs.md) を参照してください。 重要: この beta リリースでは、システム診断のサービス アカウントを AX 2012 R3 の sysadmin ロールに追加する必要があります。
-2.  **開始** &gt; **Microsoft Dynamics AX Lifecycle Services 診断サービス検索**の順にクリックします。
+2.  **開始** &gt; **Microsoft Dynamics AX Lifecycle Services 診断サービス検索の順にクリックします**。
 3.  **環境の検出**ウィンドウに、環境の名前と Microsoft SQL Server のインスタンスとデータベースの完全修飾名を入力します。 その後、[環境を検出] をクリックします。
 4.  探索を完了した後、**コンフィギュレーション管理 (ベータ)** セクションに値を入力し、**保存**をクリックして、**アップロード環境**をクリックします。
     <table>
@@ -148,7 +147,6 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="next-steps"></a>次のステップ
 この環境は、設定をコピーして管理するための準備が整いました。 詳細については、[コンフィギュレーションのコピー (Lifecycle Services、LCS)](copy-configuration-lcs.md) を参照してください。
-
 
 
 

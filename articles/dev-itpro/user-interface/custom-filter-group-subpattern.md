@@ -1,13 +1,13 @@
 ---
-title: "カスタム フィルター グループのサブパターン"
-description: "このトピックでは、カスタム フィルター グループのサブパターンについて説明します。"
+title: カスタム フィルター グループのサブパターン
+description: このトピックでは、カスタム フィルター グループのサブパターンについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 213be6cbedd90ee8c57fdfa4e8475b02b39e7c87
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8e4e72a7036b4fe93ea246b27e95f3ea105d98f1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370017"
 ---
-
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -41,10 +40,10 @@ ms.lasthandoff: 04/20/2018
 -   チェック ボックス
 -   クイック フィルター
 
-このドキュメントでは、2 つのパターンについて説明します。 これらのパターンの唯一の違いは、クイック フィルター コントロールが必須かオプションかを区別することです。
+このドキュメントでは、2 つのパターンについて説明します。 これらのパターンの唯一の違いは、クイック フィルター コントロールが必須かオプションかです。
 
--   **カスタム フィルター** - このサブパターンでは、QuickFilter コントロールはオプションです。
--   **カスタムおよびクイック フィルター** - このサブパターンでは、QuickFilter コントロールは必須です。
+-   **カスタム フィルター**  – このサブパターンでは、QuickFilter コントロールはオプションです。
+-   **カスタムおよびクイック フィルター**  – このサブパターンでは、QuickFilter コントロールは必須です。
 
 ## <a name="wireframes"></a>ワイヤーフレーム
 ### <a name="custom-filterscustomfiltergroup1mediacustomfiltergroup1pngmediacustomfiltergroup1png"></a>カスタム フィルター [![CustomFilterGroup(1)](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
@@ -54,7 +53,7 @@ ms.lasthandoff: 04/20/2018
 ![CustomFilterGroup(2)](./media/customfiltergroup2.png)
 
 ## <a name="model"></a>モデル
-### <a name="custom-filters--high-level-structure"></a>カスタム フィルタ - 高レベルの構造
+### <a name="custom-filters-high-level-structure"></a>カスタム フィルタ – 高レベルの構造
 
 - CustomFilter (グループ)
 
@@ -65,7 +64,7 @@ ms.lasthandoff: 04/20/2018
 
     - *フィールド ($ フィールド)\[0..N\]*
 
-### <a name="custom-and-quick-filters--high-level-structure"></a>カスタムおよびクイック フィルター ー 高レベルの構造
+### <a name="custom-and-quick-filters-high-level-structure"></a>カスタムおよびクイック フィルター – 高レベルの構造
 
 - CustomFilter (グループ)
 
@@ -99,7 +98,7 @@ None
     -   すべてのコントロール (QuickFilter を除く) は制約された入力コントロールです。 文字列、整数、および実数などの、自由回答式のコントロールを使用しないでください。
     -   フィールド ラベルは、容量を節約するようオフになっています。 たとえば、**未処理**、**終了済**、**転記済**、およびすべての値を持つコンボボックスに対して、ラベルは必要ありません。
         -   ユーザーがフィルターの動作を理解するための十分なコンテキストをフィルター値が提供していない場合は、ラベルを表示します。 たとえば、日付フィールドにはコンテキストがなく、ユーザーがどのタイプの日付が指定されているか (たとえば、**作成日**) を理解するためのラベルを必要とします。
-        -   すべてのラベルがオフか、またはオンになるかです。 ラベルが付いていないフィルターおよびラベルの付いたフィルターを混在させないでください。
+        -   すべてのラベルがオフになるか、またはオンになるかです。 ラベルが付いていないフィルターおよびラベルの付いたフィルターを混在させないでください。
         -   **例外:** チェック ボックス スタイルのブール値を使用すると、他のフィールドにラベルが表示されていなくても、ラベルを残すことができます。
     -   カスタム フィルター グループに配置するコントロールは 5 つ以下にしてください。
 
@@ -145,7 +144,7 @@ None
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-#### <a name="ax-2012-links"></a>AX 2012 のリンク
+#### <a name="ax-2012-links"></a>AX 2012 リンク
 
 -   [MSDN AX 2012 フィルター ウィンドウにコントロールを追加する方法](http://msdn.microsoft.com/EN-US/library/cc577231.aspx)
 -   [MSDN AX 2012 リスト ページの概要 – セクション フィルター ウィンドウ](http://msdn.microsoft.com/EN-US/library/cc616937.aspx)
@@ -153,4 +152,3 @@ None
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![CustomFilterGroup(5)](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
-

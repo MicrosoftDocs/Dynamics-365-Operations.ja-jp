@@ -1,13 +1,13 @@
 ---
-title: "利息コードに対する金利の設定"
-description: "利息コードには、利息がかかる日付と、支払期限を過ぎた勘定における計算方法を決める設定値が含まれます。"
+title: 利息コードに対する金利の設定
+description: 利息コードには、利息がかかる日付と、支払期限を過ぎた勘定における計算方法を決める設定値が含まれます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Interest
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 665c58fd29fb986bf51e10f5814c4793940c0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317778"
 ---
-
 # <a name="set-up-interest-rates-for-an-interest-code"></a>利息コードに対する金利の設定
 
 [!include [banner](../includes/banner.md)]
@@ -129,7 +128,6 @@ ms.lasthandoff: 05/08/2018
 利息コードは有効日です。 金利を変更する場合は、将来の日付で有効になる**新バージョン**を作成できます。
 
 異なるバージョンを表示するには、**現在の日付** メニューを使用して締日を選択できます。 また、**すべてのレコードを表示** を選択してページのすべての利息コードを表示することもできます。
-
 
 
 

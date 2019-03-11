@@ -1,30 +1,29 @@
 ---
-title: "Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 でリリースされた拡張機能を一覧表示します。"
+title: Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
+description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-08-31
 ms.dyn365.ops.version: App 8.0.3
+ms.openlocfilehash: e665277f718c5302618393b080d989fe05888966
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: fa342ba6746490f1738d4c944cff9687736df3ff
-ms.openlocfilehash: c68e3e318598ff5e5fc50142d7f8ce39ac7e34b1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369692"
 ---
-
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-803"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,7 @@ ms.lasthandoff: 08/09/2018
 |PriceDiscAdmSearch|
 |PriceDiscPolicyDialog.runPolicyDialog|
 |ProdBOM.checkIsItemsReleased|
-|ProdBOM:: 更新|
+|ProdBOM::update|
 |ProdJournalProd.Insert|
 |ProdPurch.createPurchTable|
 |ProdUpdHistoricalCost_Process.checkValidCoBy|
@@ -228,7 +227,7 @@ ms.lasthandoff: 08/09/2018
 |SalesFormletterParmDataConfirm::selectChooseLines|
 |SalesFormletterParmDataInvoice::mayJournalTransBePosted|
 |SalesFormletterParmDataInvoice::selectChooseLines|
-|SalesFormletterParmDataPackingslip::selectChooseLines|
+|SalesFormLetterParmDataPackingSlip::selectChooseLines|
 |SalesInvoiceDP.insertIntoSalesInvoiceTmp,insertIntoSalesInvoiceHeaderFooterTmp|
 |SalesInvoiceJournalCreate.createJournalLine|
 |SalesLine.CheckItemId|
@@ -311,4 +310,3 @@ ms.lasthandoff: 08/09/2018
 - EcoResProductSearchName の EDT の文字列のサイズを増加
 - AssetLedgerAccounts の CacheLookup プロパティを NotInTTS に変更します。
 - TaxOnItem、TaxJurisdiction、TaxGroupData、TaxData、およびAssetLedgerAcounts で CacheLookup プロパティを検出に変更します。
-

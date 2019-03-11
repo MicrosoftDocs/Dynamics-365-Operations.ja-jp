@@ -1,30 +1,29 @@
 ---
-title: "クラウドおよびオンプレミスの機能比較"
-description: "このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。"
+title: クラウドおよびオンプレミスの機能比較
+description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: robinarh
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
-ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313983"
 ---
-
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドおよびオンプレミスの機能比較
 
 [!include [banner](../includes/banner.md)]
@@ -32,13 +31,13 @@ ms.lasthandoff: 12/04/2018
 このトピックでは、各機能が次の製品で使用できるかを示します。
 
 + Dynamics 365 for Finance and Operations (クラウド)
-+ Dynamics 365 for Finance and Operations (オンプレミス)
++ Dynamics 365 for Finance and Operations (設置型)
 
 次の表では、製品の領域を一覧表示します。 クラウドおよびオンプレミスのサポートは、全体の機能として一覧表示されます。 特定の機能がエリア全体とは異なる場合、その機能は「機能」列の別の行で表示されます。
 
 ## <a name="dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations
 
-| 面 | 機能 | クラウド | オンプレミス |
+| エリア | 機能 | クラウド | オンプレミス |
 |---|---|---|---|
 | コンプライアンスおよび証明書 | | 有 | 有 |
 | | SOC 1 タイプ 1 証明書 | 有 | 無 |
@@ -58,11 +57,11 @@ ms.lasthandoff: 12/04/2018
 | 人事管理 | | 有 | 有 |
 | インテリジェンス | | 有 | 有 |
 | | 電子申告 (ER) - LCS との統合 | 有 | 無 |
-| | 電子申告 (ER) - SharePoint との統合 | 有 | 無 |
+| | 電子申告 (ER) - SharePoint の統合 | 有 | 無 |
 | | PowerBI.com との統合 | 有 | 無 |
 | | 分析ワークスペース | 有 | 無 |
 | | インテリジェントなビジネス プロセス: Recommendations | 有 | 無 |
-| | Power BI desktop または Excel PowerQuery ツールを使用して OData の Power BI レポートの作成 | 有 | 無 |
+| | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成 | 有 | 無 |
 | | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。 | 有 | 無 |
 | | テレメトリがクラウドへ転送されます | 有 | 無 |
 | 在庫管理 | | 有 | 有 |
@@ -78,14 +77,14 @@ ms.lasthandoff: 12/04/2018
 | | 口座振込 | 有 | 無 |
 | 調達 | | 有 | 有 |
 | | 購買要求から外部カタログへのパンチアウト | 有 | 無 |
-| | 購買支出分析 Power BI レポート | 有 | 無 |
+| | 購入支出分析 Power BI レポート | 有 | 無 |
 | 製品情報管理 | | 有 | 有 |
 | 製品マスター データ | | 有 | 有 |
-| 実稼働 | | 有 | 有 |
-| | 生産パフォーマンス Power BI レポート | 有 | 無 |
+| 生産 | | 有 | 有 |
+| | 生産実績 Power BI レポート | 有 | 無 |
 | プロジェクト管理および会計 | | 有 | 有 |
-| 売上 | | 有 | 有 |
-| | 販売および収益性パフォーマンス Power BI レポート | 有 | 無 |
+| 販売注文 | | 有 | 有 |
+| | 販売と収益性のパフォーマンス Power BI レポート | 有 | 無 |
 | セキュリティ | | 有 | 有 |
 | サービス管理 | | 有 | 有 |
 | サプライ チェーン マネジメント | | 有 | 有 |
@@ -93,7 +92,7 @@ ms.lasthandoff: 12/04/2018
 | 仕入先コラボレーション | | 有 | 無 |
 | 倉庫管理 | | 有 | 有 |
 | | モバイル倉庫アプリ | 有 | 有 |
-| | Warehousing Power BI レポート | 有 | 無 |
+| | 倉庫 Power BI レポート | 有 | 無 |
 | Web クライアント | | 有 | 有 |
 | | タスク レコーダー - BPM ライブラリからのタスク記録の保存または読み込み | 有 | 無 |
 | サポート | | 有 | 有 |
@@ -115,16 +114,15 @@ ms.lasthandoff: 12/04/2018
 | | アップグレードおよび以前のバージョンのサポート | 有 | 無 |
 | Visual Studio 開発 | | 有 | 有 |
 
-### <a name="retail"></a>Retail 
+### <a name="retail"></a>小売 
 オンプレミス展開で利用可能な小売機能の一覧を表示するには、「[オンプレミス展開で利用可能な小売機能](../../retail/retail-onprem.md)」を参照してください。
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
-| 面 | 機能 | クラウド | オンプレミス |
+| エリア | 機能 | クラウド | オンプレミス |
 |---|---|---|---|
 | すべての Talent エリア | すべての Talent 機能 | 有 | 無 |
 
 ## <a name="additional-resources"></a>その他のリソース
 
 - [オンプレミス配置で実装されていない機能](features-not-implemented-on-prem.md)
-

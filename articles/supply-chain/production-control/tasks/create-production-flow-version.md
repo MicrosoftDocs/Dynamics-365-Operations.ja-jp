@@ -1,13 +1,13 @@
---- 
-title: "生産フロー バージョンの作成"
-description: "この手順は、生産フローの新規バージョンに焦点を当てています。"
+---
+title: 生産フロー バージョンの作成
+description: この手順は、生産フローの新規バージョンに焦点を当てています。
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320676"
 ---
 # <a name="create-a-production-flow-version"></a>生産フロー バージョンの作成
 
@@ -63,5 +63,4 @@ ms.lasthandoff: 11/03/2017
 12. [実際のサイクル時間 (日) の期間] フィールドに数値を入力します。
     * [実際のサイクル時間の期間] に日数を入力します。 実際のサイクル時間の期間は、実際のサイクル時間を計算するために実際の分数を遡って集計されるジョブの日数です。 価は随時変更することができ、実際のサイクル時間の計算にのみ使用されます。  
 13. [保存] をクリックします。
-
 

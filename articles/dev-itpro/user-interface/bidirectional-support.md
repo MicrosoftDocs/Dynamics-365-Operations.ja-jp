@@ -1,13 +1,13 @@
 ---
-title: "右から左へ読み書きする言語のサポートと双方向のテキスト"
-description: "右から左 (RTL) の言語サポートの領域では、同じ文字列での RTL テキストと左から右 (LTR) のテキストの組み合わせを考慮します。 この記事では、双方向テキストの問題とその処理方法について説明します。"
+title: 右から左へ読み書きする言語のサポートと双方向のテキスト
+description: 右から左 (RTL) の言語サポートの領域では、同じ文字列での RTL テキストと左から右 (LTR) のテキストの組み合わせを考慮します。 この記事では、双方向テキストの問題とその処理方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: reference
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e5ad92635f595c6f578a904b7b0848631ce34b5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a65f11a1520918ce0907abc78d044b640c68b154
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369774"
 ---
-
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 
 [!include [banner](../includes/banner.md)]
@@ -202,7 +201,6 @@ WPF RichTxt コントロールには、文字列の最初の文字に従って�
 **回避策:** 英語を使用する場合はグループ化に脆弱なあるいは中立の文字を使用しないでください。 たとえば、「Dynamics DAT」を使用します。 
 
 **推奨:** いずれのコントロールも目的の動作を提供しません。 脆弱なあるいは中立文字が英語のテキストと共に使用される場合、基本的な動作についてユーザーを教育する必要があります。 英語の文字が各側に表示されない限り、脆弱なあるいは中立的な文字は使用しないでください。
-
 
 
 

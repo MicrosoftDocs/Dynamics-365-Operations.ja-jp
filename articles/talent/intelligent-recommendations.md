@@ -1,14 +1,14 @@
 ---
-title: "インテリジェントな推奨"
-description: "このトピックでは、機械学習を使用して、職務および職務候補者の推奨事項を提供する方法について説明します。"
+title: インテリジェントな推奨
+description: このトピックでは、機械学習を使用して、職務および職務候補者の推奨事項を提供する方法について説明します。
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305165"
 ---
-
 # <a name="intelligent-recommendations"></a>インテリジェントな推奨
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ ms.lasthandoff: 10/22/2018
 ## <a name="job-recommendations"></a>推奨職務 
 
 候補者がキャリア サイトを使用して求人に応募する場合は、組織の他の空いている職位が推奨されます。 これらの推奨事項は、候補者の過去の応募、および経歴書、または候補プロファイルに基づいています。 そのため、推奨職務は、候補者が自分に最も適した職務をすばやく見つけるのに役立ちます。 推奨職務は、10 以上のジョブ求人がキャリア サイトで投稿される場合に候補者に提供されます。 候補者は、推奨事項カードから人材募集の詳細を開くことができます。 将来の推奨事項を改善するために、候補者が推奨事項に関するフィードバックを提供することもできます。
-

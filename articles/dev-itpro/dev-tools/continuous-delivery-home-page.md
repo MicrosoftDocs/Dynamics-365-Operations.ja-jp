@@ -1,13 +1,13 @@
 ---
-title: "継続的な配信ホーム ページ"
-description: "以下のトピックでは、ソリューションのアプリケーション ライフサイクル管理と継続的な配信に関連するツールとガイドラインについて説明します。"
+title: 継続的な配信ホーム ページ
+description: 以下のトピックでは、ソリューションのアプリケーション ライフサイクル管理と継続的な配信に関連するツールとガイドラインについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 02/13/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8dbf278f287d6d2e72aa765e18b60eede1b2e8b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 8f8e9122d5636e414c77dc78f8eea3ef891181cc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369666"
 ---
-
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -41,6 +40,7 @@ ms.lasthandoff: 09/17/2018
 - [テストと検証](../perf-test/testing-validation.md)
 - [PERF103: PerfSDK および Visual Studio Online によるマルチ ユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
 - [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
 
 ### <a name="advanced-topics-in-build-automation"></a>ビルド自動化に関する詳細
 - [ビルド出力からテスト パッケージを除外](exclude-test-packages.md)
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/17/2018
 
 ### <a name="blogs"></a>ブログ
 
-- [開発者による ALM (ブログ)](https://blogs.msdn.microsoft.com/axdevalm/)
+- [開発とカスタマイズに関する内部者向けヒント (ブログ)](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
 
 ## <a name="servicing"></a>サービス
 - [Lifecycle Services からの修正プログラムのダウンロード](../migration-upgrade/download-hotfix-lcs.md)
@@ -57,4 +57,3 @@ ms.lasthandoff: 09/17/2018
 - [アプリケーション メタデータの修正プログラムのインストール](../migration-upgrade/install-metadata-hotfix-package.md)
 - [Reporting Service の修正](../migration-upgrade/patch-reporting-service-environment.md)
 - [Visual Studio 開発ツールの更新](update-development-tools.md)
-

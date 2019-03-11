@@ -1,13 +1,13 @@
 ---
-title: "スライダーとメッセージ ボックス ダイアログ"
-description: "既存のダイアログ ボックスである Slider と Dynamics AX 2012 の MessageBox の代わりに、2 つのダイアログがあります。"
+title: スライダーとメッセージ ボックス ダイアログ
+description: 既存のダイアログ ボックスである Slider と Dynamics AX 2012 の MessageBox の代わりに、2 つのダイアログがあります。
 author: robinarh
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 65823eae3ff1ca30eee6d057a9426dd9520318f5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369758"
 ---
-
-# <a name="slider-and-messagebox-dialogs"></a>スライダーとメッセージ ボックス ダイアログ
+# <a name="slider-and-messagebox-dialogs"></a>スライダー ダイアログとメッセージ ボックス ダイアログ
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,7 +55,6 @@ MessageBox は、既存のページ上に「ライト ボックス」として�
 [![2\_ダイアログ](./media/2_dialog.png)](./media/2_dialog.png) 
 
 MessageBox は、重要な状況について通知するためユーザーを中断させる必要がある場合に使用する正しいメカニズムです。 たとえば、ユーザーにメッセージ センターのエラー メッセージを表示するため、メッセージ ボックスが使用されます。 MessageBox はモーダルなので、ユーザーはその MessageBox が処理されるか、または却下されるまで MessageBox の下のページとやりとりができません。 前のスクリーン ショットで、ページが MessageBox によって見えづらくなっていることを確認します。 また、メッセージ ボックスの上下にある領域は、ページが現在インタラクションのために使用可能でないことをユーザーが理解するのを助けるために影付きで表示されます。 スライダーとは異なり、ユーザーは斜線領域の外側をクリックして MessageBox を閉じることはできません。 MessageBox は、Box アプリケーション プログラミング インターフェイス (API)、またはエラーの表示をトリガーするために前述したメソッドのいずれかを使用してトリガーできます。 詳細については、[メッセージ API: メッセージ センター、メッセージ バー、メッセージの詳細](messaging-api-center-bar-details.md) を参照してください。
-
 
 
 

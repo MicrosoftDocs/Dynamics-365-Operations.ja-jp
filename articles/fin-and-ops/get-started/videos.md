@@ -1,31 +1,30 @@
 ---
-title: "Finance and Operations に関するビデオ"
-description: "このページでは、YouTube および他のサイトで使用可能な Dynamics 365 for Finance and Operations に関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。"
+title: Finance and Operations に関するビデオ
+description: このページでは、YouTube および他のサイトで使用可能な Dynamics 365 for Finance and Operations に関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
 author: josaw1
 manager: AnnBe
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
+ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317824"
 ---
-
-# <a name="videos-for-finance-and-operations"></a>Finance and Operations に関するビデオ
+# <a name="videos-for-finance-and-operations"></a>Finance and Operations のビデオ
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,14 +32,14 @@ ms.lasthandoff: 10/16/2018
 
 ## <a name="dynamics-365-youtube-channel"></a>Dynamics 365 YouTube チャンネル
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)で、Dynamics 365 製品の幅広いビジネス ソリューションを示す、Microsoft によって作成されたビデオを見つけることができます。 このセクションでは、チャンネルでホストされている Dynamics 365 for Finance and Operations のハウツー ビデオを一覧表示します。
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) で、Dynamics 365 製品の幅広いビジネス ソリューションを示す、Microsoft によって作成されたビデオを見つけることができます。 このセクションでは、チャンネルでホストされている Dynamics 365 for Finance and Operations のハウツー ビデオを一覧表示します。
 
 ビデオは機能で一覧表示されるため、スクロール ダウンしてビデオ コンテンツの一覧全体を表示します。
 
 #### <a name="data-integration"></a>データ統合
 
 - [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg)
-- [Dynamics 365 for Field Service と Finance and Operations 間のワーク オーダーの同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Dynamics 365 for Field Service と Finance and Operations の間のワーク オーダーの同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>データ管理
 
@@ -136,16 +135,16 @@ ms.lasthandoff: 10/16/2018
 
 #### <a name="develop-and-customize"></a>開発およびカスタマイズ
 
-- [Dynamics 365 for Finance and Operationsの Azure 統合ツール (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for Finance and Operations の Azure 統合ツール (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [拡張性 (DYN384PAL2)](https://infopedia.eventbuilder.com/event?eventid=e0x4q5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [新しい分析ワークスペースの拡張またはビルド方法 (DYN321PAL)](https://infopedia.eventbuilder.com/event?eventid=r7z0f5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [パフォーマンス テスト アプローチ (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [パフォーマンス テスト アプローチ (DYN449PAL)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="financial-reporting"></a>財務諸表
+#### <a name="financial-reporting"></a>財務報告
 
 - [財務報告 (DYN305PAL)](https://infopedia.eventbuilder.com/event?eventid=s0d0n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) 
-- [Dynamics 365 for Finance and Operationsでのレポート オプション (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for Finance and Operations のレポート オプション (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="integration"></a>統合
 
@@ -170,9 +169,9 @@ ms.lasthandoff: 10/16/2018
 - [パンチアウト (DYN332PAL2)](https://infopedia.eventbuilder.com/event?eventid=w5u5q8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [仕入先コラボレーション (DYN327PAL)](https://infopedia.eventbuilder.com/event?eventid=c3e4c0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="retail"></a>Retail
+#### <a name="retail"></a>小売
 
-- [Dynamics 365 for Retail POS 拡張機能: 深い掘り下げ (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for Retail POS 機能拡張: 深い掘り下げ (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Retail アーキテクチャ & Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Dynamics 365 for Retail POS 拡張機能の新機能 (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
@@ -196,4 +195,3 @@ ms.lasthandoff: 10/16/2018
 - [ピースごとのピッキング プロセス (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [製造オーダーおよびかんばんの視覚的スケジューリング (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [生産との倉庫統合 (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [Warehousing モバイル アプリ (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-

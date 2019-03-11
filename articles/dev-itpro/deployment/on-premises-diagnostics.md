@@ -1,34 +1,34 @@
 ---
-title: "オンプレミス診断"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置の診断データを公開するための情報を提供します。"
+title: オンプレミス診断
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置の診断データを公開するための情報を提供します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 08/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.translationtype: HT
-ms.sourcegitcommit: 884a1372c6ebdcc665a812090d75c158c1fef895
 ms.openlocfilehash: 985bdc03b1c2c8f24ee81e936f369c35516563b8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369215"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations Term は、最新式の Azure Diagnostic Tool を使用して、クラウド ベースの顧客の機能を提供する Azure Services の正常性およびパフォーマンスを監視します。 Finance and Operations オンプレミスで実装し、オンプレミス ソリューションの正常性とパフォーマンスを監視できるようにするには、いくつかのサード パーティ製品が利用可能です。 
+Microsoft Dynamics 365 for Finance and Operations は、最新式の Azure Diagnostic Tool を使用して、クラウド ベースの顧客の機能を提供する Azure Services の正常性およびパフォーマンスを監視します。 Finance and Operations オンプレミスで実装し、オンプレミス ソリューションの正常性とパフォーマンスを監視できるようにするには、いくつかのサード パーティ製品が利用可能です。 
 
 このトピックでは、Elastic Stack の設定とコンフィギュレーション、サード パーティ製品、およびオンプレミス ソリューションの診断モニタリングを提供できる多くの選択肢の 1 つについて説明します。
 
@@ -94,7 +94,7 @@ Winlogbeat を除くすべての Elastic スタックのホストされている
 > Microsoft は、テスト目的で、ELK インストールのために オーケストレータ機械を使用しました。 オーケストレーション サービスから重要なリソースを奪う可能性があるため、実稼動環境または重要なサンドボックス環境で ELK のインストールにオーケストレータ マシンを使用しないでください。 代わりに、別のマシンを使用して ELK サービスをホストします。
 
 ### <a name="elasticsearch"></a>Elasticsearch
-Elasticsearch のインストールは、非常に簡単です。 テストでは、Microsoft が、[Microsoft Windows インストーラー (MSI) ファイル](https://www.elastic.co/downloads/elasticsearch)をオーケストレータ #1 および オーケストレータ #2 ノードにダウンロードしました。 インストーラの既定の設定のほとんどはそのままにしておくことができます。 このセクションでは、Microsoft が変更した設定について説明します。
+Elasticsearch のインストールは、非常に簡単です。 テストでは、Microsoft が、「[Microsoft Windows インストーラー (MSI) ファイル](https://www.elastic.co/downloads/elasticsearch)」をオーケストレータ #1 および オーケストレータ #2 ノードにダウンロードしました。 インストーラの既定の設定のほとんどはそのままにしておくことができます。 このセクションでは、Microsoft が変更した設定について説明します。
 
 オペレーティング システム (OS) が再起動された場合に、Elasticsearch がもう一度実行を開始するのを容易にするために、Microsoft は、それを Windows 上でサービスとしてインストールしました。 インストーラーを使用して、サービスを設定できます。
 
@@ -248,4 +248,3 @@ Kibana では、**検出**タブで、クエリを作成し、保存します。
 ## <a name="troubleshooting"></a>トラブルシューティング
 ### <a name="you-dont-receive-any-data-in-kibana"></a>Kibana 内のデータを受信しません
 Kibana で、何もデータを受け取っていない場合、Winlogbeat から Logstash、Elasticsearch、および Kibana のログを確認してください。 Winlogbeat のインストールでは、C:\\ProgramData\\winlogbeat\\Logs にログが記録されますが、他の Elastic スタック コンポーネントはログをインストール パスに近づけることに注意してください (例: C:\\ELK\\Elasticsearch\\logs)。
-

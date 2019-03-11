@@ -1,13 +1,13 @@
 ---
-title: "AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード"
-description: "このトピックでは、サンドボックス環境で Dynamics AX 2012 から Dynamics 365 for Finance and Operations にデータ アップグレードを実行する方法を説明します。"
+title: AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
+description: このトピックでは、サンドボックス環境で Dynamics AX 2012 から Dynamics 365 for Finance and Operations にデータ アップグレードを実行する方法を説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3fb4e890e02afb5d53b99c1d0933f0ecb47d475b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369712"
 ---
-
 # <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ AOS インスタンスをオフにする前に、実行しているすべての�
 
 AX 2012 環境と統合されている他のシステムをお持ちかもしれません。 AX 2012 をオフにするための計画には、これらのシステムも考慮する必要があります。 たとえば、AX 2012 自体をオフにする前に、統合システムをしばらくオフにして、残りのインフライト トランザクションを完了する必要があります。 統合システムの要件は、企業間で広く異なります。 したがって、専門家チームはこのシナリオを個別に計画する必要があります。
 
-## <a name="create-a-copy-of-the-ax-2012-database"></a>AX 2012 データベースのコピーを作成する
+## <a name="create-a-copy-of-the-ax-2012-database"></a>AX 2012 データベースのコピーの作成
 
 データベースから一部のオブジェクトを削除する必要があるため、アップグレードを実行している AX 2012 データベースのコピーを作成する必要があります。 これらのオブジェクトには、Microsoft Windows 認証ユーザーが含まれます。 これらの変更により、変更されたデータベースは AX 2012 で使用できなくなります。 この手順では、データベースのコピーを作成してこれらのオブジェクトを削除します。
 
@@ -80,7 +79,7 @@ AX 2012 環境と統合されている他のシステムをお持ちかもしれ
 ```
 ## <a name="run-the-t-sql-script-to-prepare-the-database"></a>データベースの準備のため T-SQL スクリプトを実行
 
-このスクリプトは、ユーザーを削除、AX 2012 RTM モデル ストアに関連するステップを削除、スキーマをクリーン アップ、ビューを削除、および tempDB への参照を削除によってデータベースを準備します。 
+このスクリプトは、ユーザーを削除、AX 2012 RTM モデル ストアに関連するステップを削除、スキーマをクリーンアップ、ビューを削除、および tempDB への参照を削除によってデータベースを準備します。 
 
 コピーが作成されたら、次の Transact-SQL (T-SQL) スクリプトを実行します。
 
@@ -212,7 +211,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 1. レベル 2 (またはそれ以上) サンドボックス環境により使用される Azure SQL データベース インスタンスには、環境自体の外からのアクセスを防ぐファイアウォール ルールがあります。
 2. Bacpac インポートのパフォーマンスは、Azure SQL データベース インスタンスとし同じ Azure データセンター コンピューターからインポートした場合、何倍も向上します。
 
-bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは[Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](http://storageexplorer.com/)を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
+bacpac ファイルを AOS マシンに移動する方法を選択することができます。自分の SFTP または他のセキュアな転送サービスがある可能性があります。 Azure ストレージを使用することをお勧めします。Azure ストレージを使用するには、ユーザー自身のサブスクリプション (Dynamics サブスクリプション自体に含まれていません)で独自の Azure ストレージ アカウントを取得する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure ストレージ エクスプローラー](http://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
 もう 1 つの (無料) オプションは、LCS 資産ライブラリを使用することですが、アップロードやダウンロードは Azure ストレージよりも時間がかかる場合があります。 このオプションを使用するには、次のようにします。
 1. LCS でプロジェクトにログインし、アセット ライブラリに移動します。
@@ -306,4 +305,3 @@ SQL データベース インスタンスへのアクセスを制限するファ
 ### <a name="upgrade-a-copy-of-the-database-in-a-development-environment"></a>データベースのコピーを開発環境でアップグレードする
 
 開発環境で同じデータベースをアップグレードすることを強くお勧めします。 開発環境で利用できるデータベースのコピーを使用する場合は、アップグレードされたサンドボックス環境で検出されるバグを調査する方がはるかに簡単です。
-

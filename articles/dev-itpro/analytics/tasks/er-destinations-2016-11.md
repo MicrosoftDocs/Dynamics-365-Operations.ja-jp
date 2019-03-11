@@ -1,13 +1,13 @@
---- 
-title: "ER コンフィギュレーション先"
-description: "この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。"
+---
+title: ER コンフィギュレーション先
+description: この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 83c6b8db609b83f94b51800616976eb9ce08d79b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309866"
 ---
 # <a name="er-configure-destinations"></a>ER コンフィギュレーション先
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/16/2018
 
 この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。 ドイツが法人の一次的住所のある国/地域になっていますが、この手順ではあらゆる法人を使用できます。 
 
-この例で使用する形式は ISO20022 債権移動ですが、既にインポートした形式であればどんな形式でも使用できます。 この手順は 1 つのファイルと1つの出力先からなる設定の例であることに注意してください。 電子申告の送信先管理に関する詳細については、Dynamics 365 for Finance and Operations ヘルプで確認できます。
+この例で使用する形式は ISO20022 債権移動ですが、既にインポートした形式であればどんな形式でも使用できます。 この手順は 1 つのファイルと1つの出力先からなる設定の例であることに注意してください。 電子レポート送信先管理に関する詳細については、Dynamics 365 for Finance and Operations ヘルプで確認できます。
 
 1. [組織管理] > [電子申告] > [電子申告の送信先] に選択します。
 2. 形式の送信先のための新しいセットを作成するには、[新規] をクリックします。
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/16/2018
 20. [OK] をクリックします。
 21. [件名] フィールドに値を入力します。
 22. [OK] をクリックします。
-
 

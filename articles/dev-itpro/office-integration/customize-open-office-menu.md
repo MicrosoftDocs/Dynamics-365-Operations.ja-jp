@@ -1,13 +1,13 @@
 ---
-title: "[Microsoft Office で開く] メニューのカスタマイズ"
-description: "ほとんどのページには、Microsoft Office で開くメニューが含まれます。 このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。"
+title: Microsoft Office で開くメニューのカスタマイズ
+description: ほとんどのページには、Microsoft Office で開くメニューが含まれます。 このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
+ms.openlocfilehash: 6b9638418fcf964bf19724c7ef017f63d97a1f7e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: aff8cc499fb4334899990a3cbfdb7358534d137c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368296"
 ---
-
-# <a name="customize-the-open-in-microsoft-office-menu"></a>[Microsoft Office で開く] メニューのカスタマイズ
+# <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,13 +33,13 @@ ms.lasthandoff: 04/20/2018
 <a name="overview"></a>概要
 --------
 
-**Microsoft Office で開く** メニュー ボタン (**Office で開く** メニュー) は、ページに表示されるシステム定義ボタンです。 **Office で開く** メニューには、Microsoft Excel や Microsoft Word などのさまざまな Office 製品にデータをエクスポートできるようにするためのメニュー項目が含まれています。 次のテーブルは、**Office で開く** メニューのメニュー項目について説明しています。
+**Microsoft Office で開く**メニュー ボタン (**Office で開く**メニュー) は、ページに表示されるシステム定義ボタンです。 **Office で開く**メニューには、Microsoft Excel や Microsoft Word などのさまざまな Office 製品にデータをエクスポートできるようにするためのメニュー項目が含まれています。 次のテーブルは、**Office で開く** メニューのメニュー項目について説明しています。
 
 | メニュー項目       | 説明                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このワークブックには、Microsoft Dynamics 365 for Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                               |
+| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには Microsoft Dynamics 365 for Finance and Operations への逆参照が含まれていないため、データを更新することはできません。                                                                                               |
 | Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                                           |
-| Excel で開く   | Microsoft Dynamics Office アドインを含むワークブックが作成されます。 ワークブックには Finance and Operations の参照が含まれており、アドインでホストされているデータ コネクタからデータをリフレッシュ、更新、公開することができます。 |
+| Excel で開く   | Microsoft Dynamics Office アドインを含むブックが作成されます。 ワークブックには Finance and Operations の参照が含まれており、アドインでホストされているデータ コネクタからデータをリフレッシュ、更新、公開することができます。 |
 
 ## <a name="how-menu-items-are-added-to-the-open-in-office-menu"></a>Office で開くメニューに、どのようにメニュー項目が追加されますか。
 エクスポート オプションは、次の方法で **Office で開く** メニューに追加されます。
@@ -258,7 +257,6 @@ ms.lasthandoff: 04/20/2018
 -   **パラメーター:** メニュー項目の ID
 
 その後、このメニュー項目ボタンをマウスでクリックすると、**Office で開く** メニューの対応するメニュー項目をマウスでクリックしたのと同じになります。
-
 
 
 

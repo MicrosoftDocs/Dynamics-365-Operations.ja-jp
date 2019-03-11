@@ -1,13 +1,13 @@
 ---
-title: "データ移行のエンティティの開発"
-description: "このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。"
+title: データ移行のエンティティの開発
+description: このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 23670175ec93dcfd3062875cc45c27ca834571b1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369039"
 ---
-
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 
 [!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。
 
-このチュートリアルは、2 つのセクションと 4 つの演習に分かれています。 最初のセクションでは、Visual Studio で**プロジェクト カテゴリ**を構築します。 次に、このエンティティを使用して、データをエクスポートします。 2 番目のセクションで、新しいデータのインポート/エクスポート フレームワークを使用することで、**顧客グループ**および**顧客**エンティティを使用して複数のセットのファイルをインポートします。
+このチュートリアルは、2 つのセクションと 4 つの演習に分かれています。 最初のセクションでは、Visual Studio で**プロジェクト カテゴリ** エンティティを構築します。 次に、このエンティティを使用して、データをエクスポートします。 2 番目のセクションで、新しいデータのインポート/エクスポート フレームワークを使用することで、**顧客グループ**および**顧客**エンティティを使用して複数のセットのファイルをインポートします。
 
 > [!NOTE]
 > このチュートリアルは、[データ エンティティの構築と消費](build-consuming-data-entities.md)よりもさらに少し難しく設計されています。 ステップ バイ ステップのガイドを提供するのではなく、シナリオ練習を設けて、期待される結果を示します。 エンティティをすでに理解していることを前提としています。
@@ -42,7 +41,7 @@ ms.lasthandoff: 08/13/2018
 ## <a name="base-url"></a>基準 URL
 このチュートリアルでは、「ベース URL」はインスタンスのベース URL を指します。
 
-- クラウド環境では、ベース URL を Microsoft Dynamics Lifecycle Services (LCS) から取得します。
+- クラウド環境では、ベース URL は Microsoft Dynamics Lifecycle Services (LCS) から取得されます。
 - ローカル仮想マシン (VM) の、基準 URL は https://usnconeboxax1aos.cloud.onebox.dynamics.com です。
 
 ## <a name="developing-an-entity-in-visual-studio-and-enabling-it-for-data-export"></a>Visual Studio でエンティティを開発し、データをエクスポートできるようにする
@@ -103,7 +102,7 @@ ms.lasthandoff: 08/13/2018
 
 #### <a name="expected-outcome"></a>予想される結果
 
-- Visual Studio で、**データ エンティティ** ウィザードを完了すると、次のアーティファクトがプロジェクトに表示されます。
+- Visual Studio で、**データ エンティティ** ウィザードを完了すると、次のコンポーネントがプロジェクトに表示されます。
 
     [![新規プロジェクト コンポーネント](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
 
@@ -151,7 +150,7 @@ ms.lasthandoff: 08/13/2018
 
 #### <a name="steps"></a>ステップ
 
-1. Microsoft Excel で以下のファイルを開いて、ローカル ディレクトリ内の CSV ファイルとして保存する:
+1. Microsoft Excel で以下のファイルを開いて、ローカル ディレクトリ内に CSV ファイルとして保存する:
 
     - [Customers1](https://go.microsoft.com/fwlink/?linkid=845211)
     - [CustomerGroups1](https://go.microsoft.com/fwlink/?linkid=845212)
@@ -204,4 +203,3 @@ ms.lasthandoff: 08/13/2018
 - **実行の概要** ページには、5 つのレコードが作成され、3 つのレコードが更新され、2 つのレコードにエラーがあることが表示されます。
 - ステージング ビューでは、2 つのレコードにエラーがあります。
 - レコードを修正し再度インポートを実行すると、ステージング ビューにすべてのレコードが完了したことが表示されます。
-

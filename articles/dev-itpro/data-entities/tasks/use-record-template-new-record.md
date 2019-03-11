@@ -1,13 +1,13 @@
---- 
-title: "レコード テンプレートを使用した新しいレコードの作成"
-description: "この手順は、定義済みのレコード テンプレートを使用して新しいレコードを作成する方法を示します。"
+---
+title: レコード テンプレートを使用した新しいレコードの作成
+description: この手順は、定義済みのレコード テンプレートを使用して新しいレコードを作成する方法を示します。
 author: margoc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, SysRecordTemplateSelect
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e32efc72a4f1f60afd9e2c699db1fae0b70d529c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355130"
 ---
 # <a name="use-record-template-to-create-a-new-record"></a>レコード テンプレートを使用した新しいレコードの作成
 
@@ -38,5 +38,4 @@ ms.lasthandoff: 10/16/2018
     * テンプレートの選択が求められます。 ビジネスのニーズに対応するものを選択します。  
 3. 一覧で、目的のレコードを見つけ、選択します。
 4. [OK] をクリックします。
-
 

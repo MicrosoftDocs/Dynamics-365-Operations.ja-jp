@@ -1,13 +1,13 @@
 ---
-title: "マスタ プランとマルチサイト機能"
-description: "マスター プランでは、サイトと倉庫の在庫分析コードの設定が考慮されます。"
+title: マスタ プランとマルチサイト機能
+description: マスター プランでは、サイトと倉庫の在庫分析コードの設定が考慮されます。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocation, InventSite
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10981e0fe201566c83fd28c792000865bc533cd3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6800668741bfd86555b72faf8cce01f73cb9a278
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317433"
 ---
-
 # <a name="master-planning-and-multisite-functionality"></a>マスタ プランとマルチサイト機能
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ ms.lasthandoff: 11/03/2017
 [マスター プラン - サイトの補充、倉庫は必須ではない](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [マスター プラン - BOM バージョンを決定する方法](master-plan-bom-version-determined.md)
-
 
 
 

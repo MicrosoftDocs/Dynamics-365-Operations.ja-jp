@@ -1,13 +1,13 @@
---- 
-title: "プロジェクト請求書の支払伝票形式の設定"
-description: "通常、企業は、顧客に役立つように印刷した支払伝票を請求書に添付し、転記および決済用に支払参照を提供します。"
+---
+title: プロジェクト請求書の支払伝票形式の設定
+description: 通常、企業は、顧客に役立つように印刷した支払伝票を請求書に添付し、転記および決済用に支払参照を提供します。
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b365585e884749bb73f8ba9054e446f210e10f37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9700571110a1b488e250dd8ee7b8c5c8f15cbc01
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345608"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>プロジェクト請求書の支払伝票形式の設定
 
@@ -65,5 +65,4 @@ ms.lasthandoff: 09/29/2017
     * [なし] – 支払伝票を印刷しません。 支払額がデンマーク クローネ (DKK) 以外の通貨場合は、このオプションを選択します。   [FIK 751] – 支払伝票に支払額および期日を手動で作成する場合は、FIK 751 支払伝票を印刷します。   [FIK 752] – 支払金額と期日事前が事前に印刷されたコンピュータで生成した支払伝票を使用する場合、FIK 752 支払伝票を印刷します。  
 16. [保存] をクリックします。
 17. ページを閉じます。
-
 

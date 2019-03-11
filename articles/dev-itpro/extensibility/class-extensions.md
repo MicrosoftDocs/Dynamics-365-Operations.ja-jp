@@ -1,13 +1,13 @@
 ---
-title: "X++ の拡張モデルのクラス"
-description: "この記事では、X++ で新しいクラス拡張モデルについて説明します。"
+title: X++ の拡張モデルのクラス
+description: この記事では、X++ で新しいクラス拡張モデルについて説明します。
 author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c4d1b5a7e4ff92510b466576d024cd4a4309a646
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370023"
 ---
-
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,6 @@ X++ はインスタンス コンストラクターおよび静的コンストラ
             staticState = 77;
         }
     }
-
 
 
 

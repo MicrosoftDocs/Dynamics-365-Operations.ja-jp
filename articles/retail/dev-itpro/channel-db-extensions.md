@@ -1,13 +1,13 @@
 ---
-title: "チャネル データベース 拡張機能"
-description: "このトピックでは、チャネル データベースを拡張する方法について説明します。"
+title: チャネル データベース 拡張機能
+description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,37 +16,36 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
 ms.openlocfilehash: ac3b987438503e57425eba26933c2d39ed3ea608
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368502"
 ---
-
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
 [!include [banner](../../includes/banner.md)]
 
 チャネル データベース (チャネル DB) は、オンライン ストアまたはブリックアンドモルタル ストアなどの 1 つまたは複数の小売チャネルからのトランザクションおよびマスターデータを保持します。 マスター データは、Commerce Data Exchange (CDX) を使用して小売用バックオフィス (Retail HQ) からチャネル データベースに適用されます。 チャネル データベースに格納されたトランザクション データは、CDX を使用して本社に引き戻されます。
 
-このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 ここで説明したステップは、Dynamics 365 for Retail、Dynamics 365 for Finance and Operations にのみ適用されます。
+このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 以下の手順は、Dynamics 365 for Retail、Dynamics 365 for Finance and Operations にのみ適用します。
 
 拡張機能のさまざまなシナリオを説明する前に、チャネル DB 拡張機能の最新の機能拡張を理解することが重要です。 
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) アプリケーション更新プログラム 5
-- Microsoft Dynamics 365 for Retail 7.2 アプリケーション更新プログラム 5 はすぐに入手できるようになります。
-- Microsoft Dynamics 365 for Retail 7.3 には、アプリケーション更新プログラム 5 が含まれます。
-- アプリケーション更新プログラム 5 を含む Microsoft Dynamics 365 for Finance and Operations 7.3。
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
+- Microsoft Dynamics 365 for Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)
+- Microsoft Dynamics 365 for Retail 7.3 (アプリケーション更新プログラム 5 を含みます)
+- Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
 
 ## <a name="ext-schema"></a>Ext スキーマ
 
-Dynamics 365 for Retail および Dynamics 365 Finance and Operations では、**ext スキーマ**と呼ばれる新しいスキーマを導入して拡張機能をサポートしました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Dynamics 365 for Retail および Dynamics 365 for Finance and Operations バージョンでは、CRT、AX、または DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマで変更する場合は、Lifecycle Service での配置は失敗します。 CRT、AX、および DBO スキーマを変更する権限を持たないエラー レポート。 
+Dynamics 365 for Retail および Dynamics 365 Finance and Operations では、**ext スキーマ**と呼ばれる新しいスキーマを導入して拡張機能をサポートしました。 以前のバージョンでは、チャネル DB に拡張機能を追加する場合、CRT または AX スキーマに追加していました。 Dynamics 365 for Retail および Dynamics 365 for Finance and Operations バージョンでは、CRT、AX、または DBO スキーマを変更することはできません。 すべての変更は **ext スキーマ**で行う必要があります。 CRT または AX スキーマのなにかを変更した場合、Lifecycle Services での展開に失敗します。 CRT、AX、および DBO スキーマを変更する権限がありませんというエラーが報告されます。 
 
 ## <a name="best-practices-for-channel-db-extensions"></a>チャネル DB 拡張機能のためのベスト プラクティス
 
-- CRT、AX、または DBO スキーマ内では何も変更しないでください。 すべての拡張シナリオで **ext スキーマ**を使用します。
+- CRT、AX、または DBO スキーマのいずれも変更しないでください。 すべての拡張シナリオで **ext スキーマ**を使用します。
 - **ext schema** 内で、CRT、AX、または DBO オブジェクトにアクセスしないでください。 任意のチャネル データベース コンポーネントにアクセスするには、商取引ランタイム データ サービスを使用する必要があります。
 
 ### <a name="dont-do-this"></a>このようにしない
@@ -196,14 +195,14 @@ GO
 
 ## <a name="deployment-checks"></a>配置のチェック
 
-配置プロセスは、データベースのコンポーネントに変更があるかどうかを判断します。 CRT、AX、または DBO スキーマ オブジェクトを変更しようとした場合、または SQL で直接シナリオに対してそれらにアクセスすると、展開は失敗します。
+配置プロセスは、データベースのコンポーネントに変更があるかどうかを判断します。 CRT、AX、または DBO スキーマ オブジェクトを変更しようとした場合、またはどのシナリオの場合でも SQL でそれらに直接アクセスすると、展開は失敗します。
 
 ## <a name="extension-scripts-and-deployment"></a>拡張スクリプトおよび展開
 
 チャンネル データベース拡張は、1 つまたは複数の T-SQL スクリプト ファイルを作成し、[展開可能なパッケージ](./retail-sdk/retail-sdk-packaging.md)に含めることで用意されます。 このプロセスについては、[Retail SDK](./retail-sdk/retail-sdk-overview.md) ドキュメントで説明します。
 
 拡張スクリプト ファイルは、[T-SQL](https://docs.microsoft.com/en-us/sql/t-sql/language-reference) を使用して記述され、[Azure SQL データベース](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-features)と互換性があります。
-スクリプト ファイルの末尾は *.sql* ファイル拡張子にする必要があります。その他のファイルは無視されます。または、パッケージングまたは配置障害を引き起こす可能性があります。 Retail Store Scale Unit または Modern POS の一部としてオフラインでチャンネル データベース拡張を展開する場合、スクリプトは SQL Express やそれらのコンポーネントに使用される SQL Server のバージョンとの互換性も必要です。
+スクリプト ファイルの末尾は *.sql* ファイル拡張子にする必要があります。その他のファイルは無視されます。または、パッケージングまたは配置障害を引き起こす可能性があります。 Retail Store Scale Unit または Modern POS の一部としてオフラインでチャネル データベース拡張機能を展開する場合、スクリプトは、それらのコンポーネントに対して使用される SQL Express または SQL Server のバージョンの両方またはいずれかと互換性があることも必要です。
 
 配置とインストール中、拡張子スクリプトは、スクリプト ファイル名に基づいたアルファベット順で実行されます。
 各スクリプトは、完了するまで実行され、拡張スクリプトの完了を追跡するため、メタデータ レコードはチャンネル データベースの CRT.RETAILUPGRADEHISTORY テーブルに追加されます。
@@ -246,5 +245,4 @@ GO
 
 ### <a name="do-not-assume-that-the-channel-database-data-is-perennial"></a>チャネル データベース データが永続すると仮定しない
 
-チャネル データベースは、Retail サーバーで実行される操作の記憶域サポートを提供するトランザクション データベースです。 長期間保存する必要があるチャネル データベースに格納されているすべてのデータは、[Commerce Data Exchange](./cdx-extensibility.md) を通じて本社にアップロードする必要があります。 本社にアップロードされたデータには、[Commerce Data Exchange リアルタイム サービス](./extend-commerce-data-exchange.md)によりアクセスすることができます。
-
+チャネル データベースは、Retail サーバーで実行される操作の記憶域サポートを提供するトランザクション データベースです。 長期間保存する必要があるチャネル データベースに格納されるすべてのデータは、[Commerce Data Exchange](./cdx-extensibility.md) を通じて本社にアップロードする必要があります。 本社にアップロードされたデータには、[Commerce Data Exchange リアルタイム サービス](./extend-commerce-data-exchange.md)によりアクセスすることができます。

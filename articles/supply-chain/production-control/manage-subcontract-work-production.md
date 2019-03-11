@@ -1,13 +1,13 @@
 ---
-title: "生産における外注作業の管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。"
+title: 生産における外注作業の管理
+description: このトピックでは、委託された操作が Microsoft Dynamics 365 for Finance and Operations でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326587"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>生産における外注作業の管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
+このトピックでは、委託された操作が Microsoft Dynamics 365 for Finance and Operations でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 
 [生産プロセス](production-process-overview.md) では、ベンダーが所有または管理するリソースによって作業を行うことができます。 通常ベンダーのリソースは、会社自身のリソースの利用可能なキャパシティを超過する需要超過を定期的に均等化するために使用されます。 ベンダーは特定の [リソースの能力](resource-capabilities.md) またはリソースを、低価格で提供することもできます。  
 
@@ -58,7 +57,7 @@ ms.lasthandoff: 11/03/2017
     -   原価管理は、独自の原価構成ブロックで外注作業を割り当てます。
 
 ## <a name="subcontracting-of-route-operations"></a>ルート業務の委託
-プロダクションまたはバッチ注文にルート操作の外注を使用するには、サービスの調達に使用されるサービス製品を**サービス**の種類の製品として定義する必要があります。 また、[**在庫ポリシー**] 下の [**在庫製品**] オプションが [**はい**] に設定されている品目モデル グループが必要です。 このオプションは、製品が製品受領在庫 (**在庫製品** = **はい**) として会計処理されるか、または製品が損益計算書で費用化されるか (**在庫製品** = **いいえ**) を定義します。 このような動作は矛盾しているように見えますが、このポリシーを持つ製品だけが在庫管理を作成し、計画原価を計算し、製造指図が終了したときの実際の原価を決定するために使用できます。  
+プロダクションまたはバッチ注文にルート操作の外注を使用するには、サービスの調達に使用されるサービス製品を**サービス**の種類の製品として定義する必要があります。 また、**在庫ポリシー** 下の **在庫製品** オプションが **はい** に設定されている品目モデル グループが必要です。 このオプションは、製品が製品受領在庫 (**在庫製品** = **はい**) として会計処理されるか、または製品が損益計算書で費用化されるか (**在庫製品** = **いいえ**) を定義します。 このような動作は矛盾しているように見えますが、このポリシーを持つ製品だけが在庫管理を作成し、計画原価を計算し、製造指図が終了したときの実際の原価を決定するために使用できます。  
 
 計画および原価計算を考慮するには、サービスを BOM に追加する必要があります。 BOM 行は、**Vendor** タイプでなければならず、サービスが割り当てられたルート操作に割り当てられている必要があります。 このルート操作には、操作と関連するサービスを対応するベンダーアカウントに接続する**Vendor**タイプのリソースを指し示す原価計算リソースとリソース要件が必要です。  
 
@@ -101,7 +100,6 @@ ms.lasthandoff: 11/03/2017
 **注:** 1 つの製造指図の生産経路は、複数のサイトをまたぐことはできません。 この規則は、外注作業にも適用されます。 したがって、ベンダーによって管理される品目の場所を表す倉庫は、そのルートで使用される内部リソースと同じサイトに定義する必要があります。 生産フローはサイトを横断することができますが、半製品をあるサイトから別のサイトに移送することはできません。これはコスト操作の変更を意味するためです。  
 
 通常、出力倉庫と下請けされたリソースグループの場所は、倉庫とルートまたは生産フローの操作の次のステップの場所に直接割り当てられます。 この設定は、発生するジョブの報告量を減らすか、モデリングする必要がある追加の転送操作の数を減らすのに役立ちます。
-
 
 
 

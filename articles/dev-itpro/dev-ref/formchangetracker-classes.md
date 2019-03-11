@@ -1,13 +1,13 @@
 ---
-title: "F クラス (FormChangeTracker から FormControlEventArgs)"
-description: "FormChangeTracker から FormControlEventArgs までのクラスの API 参照。"
+title: F クラス (FormChangeTracker から FormControlEventArgs)
+description: FormChangeTracker から FormControlEventArgs までのクラスの API 参照。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 40480a02df63f14eced8b422fc54e1e31c054a16
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368728"
 ---
-
 # <a name="f-classes-formchangetracker-to-formcontroleventargs"></a>F クラス (FormChangeTracker から FormControlEventArgs)
 
 [!include [banner](../includes/banner.md)]
@@ -411,7 +410,7 @@ chars
 | 値です。 | スタイル。                        |
 |--------|-------------------------------|
 | 0      | 既定。                      |
-| 1      | Microsoft Windows パレット。 |
+| 1      | Microsoft Windowsパレット。 |
 | 2      | 真の配色。        |
 
 ### <a name="method-configurationkey"></a>メソッド configurationKey
@@ -2628,7 +2627,7 @@ autoDeclaration プロパティに割り当てる値 (オプション)。
 #### <a name="parameters"></a>パラメーター
 
 値  
-コントロールの背景色として割り当てる値 (オプション)。 これは、コントロールの配色または Winapi :: RGB2int 値のいずれかの値にできます。
+コントロールの背景色として割り当てる値 (オプション)。 これは、コントロールの配色または Winapi::RGB2int 値のいずれかの値にできます。
 
 #### <a name="return-value"></a>戻り値
 
@@ -3359,7 +3358,7 @@ string
 
 #### <a name="return-value"></a>戻り値
 
-Tahoma や Verdana など、使用するフォントの名前。
+Tahoma や Verdana など、使用されるべきフォントの名前。
 
 #### <a name="examples"></a>例
 
@@ -6344,7 +6343,7 @@ chars
 | 値です。 | スタイル。                         |
 |--------|--------------------------------|
 | 0      | 既定。                       |
-| 1      | Microsoft Windows パレット。 |
+| 1      | Microsoft Windowsパレット。 |
 | 2      | 真の配色。         |
 
 ### <a name="method-command"></a>メソッド command
@@ -11872,7 +11871,7 @@ DragDrop プロパティがコントロールで有効で、beginDrag イベン�
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                      | 説明 |
 |---------------------------------------------|-------------|
@@ -11914,5 +11913,4 @@ DragDrop プロパティがコントロールで有効で、beginDrag イベン�
 | 方法 | 説明 |
 |--------|-------------|
 |        |             |
-
 

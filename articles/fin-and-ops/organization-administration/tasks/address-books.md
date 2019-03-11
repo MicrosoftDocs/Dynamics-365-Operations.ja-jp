@@ -1,13 +1,13 @@
---- 
-title: "アドレス帳の構成"
-description: "組織に追加のアドレス帳を設定するには、この手順と、グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画で行った決定を使用します。"
+---
+title: アドレス帳の構成
+description: 組織に追加のアドレス帳を設定するには、この手順と、グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画で行った決定を使用します。
 author: kfend
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 325e3974cb38afea46c2f735165ee2fd1a6a22ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e633b35cdd5441f7f9d1c1465dbc468e047cdee5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353221"
 ---
 # <a name="configure-address-books"></a>アドレス帳の構成
 
@@ -41,5 +41,4 @@ ms.lasthandoff: 09/29/2017
 6. 一覧で、目的のレコードを見つけ、選択します。
 7. アドレス帳に選択した利用可能なチームを追加するには、矢印をクリックします。
 8. [保存] をクリックします。
-
 

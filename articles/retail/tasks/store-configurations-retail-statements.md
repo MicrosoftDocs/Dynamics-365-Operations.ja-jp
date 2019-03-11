@@ -1,13 +1,13 @@
---- 
-title: "小売明細書の店舗のコンフィギュレーション"
-description: "この手順では、小売明細書の作成される影響を及ぼす、転記または小売店舗のコンフィギュレーションを説明します。"
+---
+title: 小売明細書の店舗のコンフィギュレーション
+description: この手順では、小売明細書の作成される影響を及ぼす、転記または小売店舗のコンフィギュレーションを説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9fddeb8434d916df1613d61da88110dec8fb4465
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cac676c9c6ebb6769fe7e30ac08a2c8334befc24
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354716"
 ---
 # <a name="store-configurations-for-retail-statements"></a>小売明細書の店舗のコンフィギュレーション
 
@@ -47,5 +47,4 @@ ms.lasthandoff: 09/29/2017
     * 午前 0 時より後に、前日に転記される必要のあるトランザクションが発生した場合は、「はい」を選択します。  
     * 定義された各明細書の方法で明細書が作成されるようにする場合は、「はい」を選択します。 これは、並列処理できる小さな明細書が大量に作成されるため、店舗の大量のトランザクションの転記のパフォーマンスを改善する必要がある場合に役立ちます。  
     * [既定の顧客] フィールドで、飛び込みの顧客への販売に使用する顧客口座を選択できます。  
-
 

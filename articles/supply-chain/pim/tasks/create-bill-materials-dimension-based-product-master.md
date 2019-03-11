@@ -1,13 +1,13 @@
---- 
-title: "分析コード ベースの製品マスターの部品表の作成"
-description: "この手順で、この一連の 8 つの記録において既に 4 つのガイドを完了している必要があります。"
+---
+title: 分析コード ベースの製品マスターの部品表の作成
+description: この手順で、この一連の 8 つの記録において既に 4 つのガイドを完了している必要があります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 19578f78c11bf0537708e8d516d478f00b13fa95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4f9f9473d0872d68571b87409b93e0cf5455364c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349748"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>分析コード ベースの製品マスターの部品表の作成
 
@@ -78,5 +78,4 @@ ms.lasthandoff: 09/29/2017
 4. [部品表も承認しますか?] で [はい] を選択します。] アクションを使用すると、このチェック ボックスは自動的にオンになります。
 5. [OK] をクリックします。
 6. [有効化] をクリックします。
-
 

@@ -1,13 +1,13 @@
 ---
-title: "新しいタスク ガイド (2016 年 2 月)"
-description: "このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。  発行されたライブラリには、Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。"
+title: 新しいタスク ガイド (2016 年 2 月)
+description: このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。  発行されたライブラリには、Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 2 月)、および作業の開始 (2016 年 2 月) が含まれます。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366446"
 ---
-
 # <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016 年 2 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。 発行されたライブラリには、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。
+このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。 発行されたライブラリには、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 2 月)、および作業の開始 (2016 年 2 月) が含まれます。
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 2 月)
 
@@ -647,4 +646,3 @@ APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリー
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
-

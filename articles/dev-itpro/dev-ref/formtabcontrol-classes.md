@@ -1,13 +1,13 @@
 ---
-title: "F クラス (FormTabControl から FormWindowControl)"
-description: "FormTabControl から FormWindowControl までのクラスの API 参照。"
+title: F クラス (FormTabControl から FormWindowControl)
+description: FormTabControl から FormWindowControl までのクラスの API 参照。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c40f95142967d83080e3bb332b6f13c6182325d8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369540"
 ---
-
 # <a name="f-classes-formtabcontrol-to-formwindowcontrol"></a>F クラス (FormTabControl から FormWindowControl)
 
 [!include [banner](../includes/banner.md)]
@@ -545,10 +544,10 @@ control
 
 配色は次の表に従って定義されます。
 
-| 先頭値 | スタイル                        |
+| 金額 | スタイル                        |
 |-------|------------------------------|
 | 0     | 既定                      |
-| 1     | Microsoft Windows パレット |
+| 1     | Microsoft Windows パレット。 |
 | 2     | 真の配色        |
 
 ### <a name="method-columns"></a>メソッド columns
@@ -2897,10 +2896,10 @@ column
 
 配色は次の表に従って定義されます。
 
-| 先頭値 | スタイル                        |
+| 金額 | スタイル                        |
 |-------|------------------------------|
 | 0     | 既定                      |
-| 1     | Microsoft Windows パレット |
+| 1     | Microsoft Windows パレット。 |
 | 2     | 真の配色        |
 
 ### <a name="method-column"></a>メソッド column
@@ -5157,10 +5156,10 @@ control
 
 配色は次の表に従って定義されます。
 
-| 先頭値 | スタイル                        |
+| 金額 | スタイル                        |
 |-------|------------------------------|
 | 0     | 既定                      |
-| 1     | Microsoft Windows パレット |
+| 1     | Microsoft Windows パレット。 |
 | 2     | 真の配色        |
 
 ### <a name="method-columns"></a>メソッド columns
@@ -7490,7 +7489,7 @@ chars
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -10477,7 +10476,7 @@ chars
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -13678,10 +13677,10 @@ chars
 
 配色は次の表に従って定義されます。
 
-| 先頭値 | スタイル                        |
+| 金額 | スタイル                        |
 |-------|------------------------------|
 | 0     | 既定                      |
-| 1     | Microsoft Windows パレット |
+| 1     | Microsoft Windows パレット。 |
 | 2     | 真の配色        |
 
 ### <a name="method-command"></a>メソッド command
@@ -15749,7 +15748,6 @@ x
 
 y  
 マウス位置の垂直クライアント座標を示す整数値。
-
 
 
 

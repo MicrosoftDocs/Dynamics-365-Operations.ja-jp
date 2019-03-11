@@ -1,15 +1,15 @@
 ---
-title: "選択したデータ型の小数点以下の精度の拡張"
-description: "このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。"
+title: 選択したデータ型の小数点以下の精度の拡張
+description: このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。
 author: LarsBlaaberg
-manager: 
+manager: ''
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
-ms.reviewer: 
+ms.reviewer: ''
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.translationtype: HT
-ms.sourcegitcommit: 3b7c2b72d97c42076e1f759e9c11c74cb17476c1
 ms.openlocfilehash: 8eef5c18b6cde5053bd16827dca3019dcd7cf607
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369854"
 ---
-
 # <a name="extending-decimal-point-precision-for-selected-data-types"></a>選択したデータ型の小数点以下の精度の拡張
 
 [!include [banner](../includes/banner.md)]
@@ -88,4 +87,3 @@ ms.lasthandoff: 10/17/2018
 **MarkupValue** 拡張データ型は、金額、ユニット数量、割合を格納して表示するために使用します。
 拡張データ型は、金額、ユニット数量、割合に対して必要な小数点以下の最大金額に拡張する必要があります。
 たとえば、金額は小数点以下 3 桁で維持する必要があり、ユニット金額は小数点以下 4 桁で維持する必要があり、割合は小数点以下 2 桁で維持する必要がある場合は、小数点以下 4 桁にデータ型を拡張する必要があります。
-

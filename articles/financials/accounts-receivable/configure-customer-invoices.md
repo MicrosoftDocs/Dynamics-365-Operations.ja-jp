@@ -1,13 +1,13 @@
 ---
-title: "顧客請求書の作成"
-description: "**販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。"
+title: 顧客請求書の作成
+description: '**販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。'
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: bb1ee5809c30b4f4836fef02a0491b6885e61219
 ms.openlocfilehash: 6d7c9a61f935503b74ac27b354c875df095d84b4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365273"
 ---
-
 # <a name="create-a-customer-invoice"></a>顧客請求書の作成
 
 [!include [banner](../includes/banner.md)]
@@ -118,7 +117,7 @@ ms.lasthandoff: 08/14/2018
 <li><strong>現在</strong> – 請求書ごとに更新された後でドキュメントを印刷します。</li>
 <li><strong>変更後</strong> – すべての請求書が更新された時点でドキュメントを印刷します。</li>
 </ul>
-<strong>注記:</strong> <strong>請求書の印刷</strong>、<strong>確認の印刷</strong>、<strong>ピッキング リストの印刷</strong>、または <strong>梱包明細の印刷</strong> オプションを選択した場合にのみ、<strong>印刷</strong> フィールドを使用することができます。 たとえば、<strong>フォームの並べ替え</strong>ページで、請求先/元 ID ごとに情報を並べ替えるようにシステムを設定したとします。 <strong>変更後</strong> を選択して、請求先/元 ID ごとにドキュメントをバッチ印刷することができます。 それ以外の場合、ドキュメントは処理が完了する前に印刷され、ドキュメントは <strong>フォームの並べ替え</strong> ページで指定された順序では並べ替えられません。</td>
+<strong>注記:</strong> <strong>請求書の印刷</strong>、<strong>確認の印刷</strong>、<strong>ピッキング リストの印刷</strong>、または <strong>梱包明細の印刷</strong> オプションを選択した場合にのみ、<strong>印刷</strong> フィールドを使用することができます。 たとえば、<strong>フォームの並べ替え</strong>ページで、請求先/元 ID ごとに情報を並べ替えるようにシステムを設定したとします。 <strong>変更後</strong> を選択して、請求先/元 ID ごとにドキュメントをバッチ印刷することができます。 それ以外の場合、ドキュメントは処理が完了する前に印刷され、ドキュメントは<strong>フォームの並べ替え</strong>ページ指定された順序では並べ替えられません。</td>
 </tr>
 <tr class="even">
 <td>請求書の印刷</td>
@@ -163,7 +162,6 @@ ms.lasthandoff: 08/14/2018
 </tr>
 </tbody>
 </table>
-
 
 
 

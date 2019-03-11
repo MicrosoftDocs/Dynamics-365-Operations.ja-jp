@@ -1,13 +1,13 @@
 ---
-title: "電子メールのコンフィギュレーションと送信"
-description: "電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。"
+title: 電子メールのコンフィギュレーションと送信
+description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysEmailParameters
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
 ms.openlocfilehash: 76933d3760bf7363de5e9644a1d2688f9d03f0fc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369984"
 ---
-
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
 [!include [banner](../includes/banner.md)]
@@ -54,10 +53,10 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 </thead>
 <tbody>
 <tr>
-<td>送信メール サーバー </td>
+<td>送信メール サーバー</td>
 <td>目的の SMTP サーバーのホスト名。
 <ul>
-<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 製品</a> (*.onmicrosoft.com アカウントを含む) は smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
+<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 製品</a> (*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
 <li>Outlook/Hotmail で smtp-mail.outlook.com を使用します。</li>
 </ul>
 </td>
@@ -68,7 +67,7 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 </tr>
 <tr>
 <td><strong>ユーザー名</strong>と<strong>パスワード</strong></td>
-<td>必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。 すべてのユーザーは SMTP アカウントを指定し <strong>送信者</strong>および <strong>代理送信</strong>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。 Send As 権限は Office 365 管理センター (portal.office.com/Admin) の、<strong>ユーザー</strong> &gt; <strong>有効なユーザー</strong> &gt; <strong>ユーザー</strong> &gt; <strong>メールボックスのアクセス許可を編集</strong> &gt; <strong>このメールボックスから電子メールを送信する</strong> で構成することができます。 詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a> を参照してください。</td>
+<td>必要に応じて、適切なメール アカウントを使用して電子メールの送信を指定します。 すべてのユーザーは SMTP アカウントを指定し <strong>送信者</strong>および <strong>代理送信</strong>許可をし、Simple Mail Transfer Protocol (SMTP) で送信する機能を有効にします。 Send As 権限は、Office 365 管理センター (portal.office.com/Admin) にて、<strong>ユーザー</strong> &gt; <strong>有効なユーザー</strong> &gt; <strong>ユーザー</strong> &gt; <strong>メールボックスのアクセス許可を編集</strong> &gt; <strong>このメールボックスから電子メールを送信する</strong> で構成することができます。 詳細については、<a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする</a>を参照してください。</td>
 </tr>
 <tr>
 <td>SSL が必須かどうかを指定します</td>
@@ -94,7 +93,7 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 | フィールド             | 説明 |
 |-------------------|-------------|
 | 電子メール プロバイダー ID | ユーザーは、電子メールを送信するときに使用する電子メール プロバイダーを選択できます。 ここでオプションを選択することは、**どのように電子メール送信しますか** ダイアログ ボックスで **今後確認しない** をオンにするのと同じです。 空白のオプション **使用する電子メール プロバイダーの入力を求める** を選択すると、メールが送信されるときに **電子メールを送信する方法** ダイアログ ボックスが表示されます。 |
-| 電子メール             | ユーザーが電子メールの**ソース**フィールドの電子メール アドレスの上書きを提供できるようにします。 既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの**ソース** フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。 SMTP で電子メールを送信するとき、ユーザーは適切な **Send As**および **Send On Behalf Of** アクセス許可を Exchange または SMTP サーバー上で構成する必要があります。<blockquote>[!NOTE] **Send As** および **Send On Behalf Of** 権限は Office 365 管理センター (portal.office.com/Admin) の **ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メール ボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。</blockquote> |
+| 電子メール             | ユーザーが電子メールの**ソース**フィールドの電子メール アドレスの上書きを提供できるようにします。 既定では、ユーザー アカウントに関連付けられた電子メール エイリアスは新しい電子メールの**ソース** フィールドとして使用されますが、このユーザー オプションの電子メール アドレスによって上書きされます。 SMTP で電子メールを送信するとき、ユーザーは適切な **Send As**および **Send On Behalf Of** アクセス許可を Exchange または SMTP サーバー上で構成する必要があります。<blockquote>[!NOTE] **Send As** および **Send On Behalf Of** 権限は、Office 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メール ボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する**で構成することができます。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。</blockquote> |
 
 ## <a name="user-optional-how-would-you-like-to-send-email-dialog-box"></a>ユーザー (省略可): 電子メール ダイアログ ボックスをどのように送信しますか
 
@@ -104,7 +103,7 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 |------------------------------------------------------------------------|-------------|
 | Outlook などの電子メール アプリケーションを使用します                                      | 生成された電子メール (.eml) を持つを提供します。 |
 | Exchange 電子メール サーバーを使用します                                              | テナントに関連付けられている Exchange Online サーバーを使用します。 電子メールは、Exchange Webサービス (EWS) を使用して送信されます。 オンプレミス Exchange サーバーは、この時点では **Exchange** メール プロバイダーでサポートされていません、 オンプレミス Exchange サーバーは、**SMTP** メール プロバイダーで正常に動作します。 |
-| Finance and Operations 電子メール クライアントのための Microsoft Dynamics 365 の使用 | **電子メール送信する**構成ダイアログ ボックスを開いて、結果を電子メールで SMTP 経由で送信します。 |
+| Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントを使用します | **電子メール送信する**構成ダイアログ ボックスを開いて、結果を電子メールで SMTP 経由で送信します。 |
 | 今後このメッセージを表示しない                                                       | このフィールドが選択されていない場合は、次回に電子メールが送信されたときに最後に選択したオプションが使用され、ダイアログ ボックスが表示されません。 |
 
 ## <a name="user-optional-send-email-dialog-box"></a>ユーザー (省略可): 電子メール ダイアログ ボックスを送信
@@ -125,13 +124,13 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 
 SysEmail フレームワークで有効になっている電子メール ワークフローでは、添付ファイルを含む電子メール メッセージ (.eml files) を生成できます。 これらのメッセージは Microsoft Outlook または他の電子メール クライアント経由で送信することができます。
 
-1. Internet Explorer で、**売掛金勘定** &gt; **顧客** &gt; **すべての顧客**に移動します。
+1. Internet Explorer で、**売掛金勘定** &gt; **顧客** &gt; **すべての顧客**の順に移動します。
 2. **US-008 Sparrow Retail** を選択します。
 3. **回収** &gt; **顧客残高** &gt; **コレクション**の順にクリックし、**コレクション** ページを開きます。
 4. **連絡** &gt; **電子メール** &gt; **連絡先に対する明細書**の順にクリックします。
 5. ダイアログ ボックスで既定値を承諾する場合は、**OK** をクリックします。
 6. メール オプションの使用を促すメッセージが表示された場合は、**再度確認しない**チェック ボックス (このオプションは**ユーザー オプション** ページから変更できます) をオフにし、**Outlook などの電子メール アプリケーションを使用**を選択し、**OK** をクリックします。
-7. コンピューター上で Internet Explorer を使用している場合は、生成される電子メール (.eml) ファイルを開きます。 VM 上で Internet Explorer を使用している場合は、ファイルをコンピューターにコピーして開きます。
+7. コンピューター上で Internet Explorer を使用している場合は、生成される電子メール (.eml) ファイルを開きます。 VM 上で Internet Explorer を使用している場合は、ファイルをコンピューターにコピーし、そのコンピュータでファイルを開きます。
 8. **宛先**フィールドの電子メール アドレスと生成されたブック添付ファイルに注意します。
 
 ### <a name="send-mail-via-smtp"></a>SMTP 経由でメールを送信
@@ -148,12 +147,12 @@ SysEmail フレームワークを介して有効になっている電子メー�
 4. ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
 5. **SSLRequired** を有効のままにして、**SMTP ポート番号**は **587** に設定したままにします。
 6. **保存** をクリックします。
-7. Internet Explorer で、**売掛金勘定** &gt; **顧客** &gt; **すべての顧客**に移動します。
+7. Internet Explorer で、**売掛金勘定** &gt; **顧客** &gt; **すべての顧客**の順に移動します。
 8. **US-008 Sparrow Retail** を選択します。
 9. **回収** &gt; **顧客残高** &gt; **コレクション**の順にクリックし、**コレクション** ページを開きます。
 10. **連絡** &gt; **電子メール** &gt; **連絡先に対する明細書**の順にクリックします。
 11. ダイアログ ボックスで既定値を承諾する場合は、**OK** をクリックします。
-12. メール オプションを使用するように求められたら、**Finance and Operations 電子メール クライアントのための Microsoft Dynamics 365の使用**を選択し、**OK**をクリックします。
+12. メール オプションを使用するように求められたら、**Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントの使用**を選択し、**OK** をクリックします。
 13. テスト メッセージを受信するには、**宛先アドレス**をメール アドレスに変更します。
 
     SMTP 設定で指定されたアカウントが、電子メール アカウントの **Send As** および **Send On Behalf Of** であることを確認します。 これを確実にするための最も簡単な方法は、電子メール アカウントを SMTP 設定で使用することです。
@@ -251,19 +250,18 @@ SysEmail フレームワークを介して有効になっている電子メー�
         2. 必要に応じてカウントを調整します。
 
 3. **システム管理** \> **定期処理のタスク** \> **電子メールの処理** \> **電子メール送信ステータス**の順に移動し、保留中の電子メールの状態を確認します。
-4. Office 365 管理者センターで、ユーザー メール アカウントが**送信者**および**代理送信**権限を SMTP アカウントに付与していることを確認します。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。
+4. Office 365 管理者センターで、ユーザー メール アカウントが **Send As** および **Send On Behalf Of** 権限を SMTP アカウントに付与していることを確認します。 詳細については、[Office 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)を参照してください。
 5. 有効かつログインできることを確認するために、すべてのユーザー メールボックスにログインします。
 6. SMTP を介して電子メールを送信すると問題が発生する場合は、SMTP サーバーとアカウントが有効であり、正しく機能していることを確認するには、[SMTPer.net](https://www.smtper.net/) のようなツールに SMTP アカウント情報を入力します。
 
 ## <a name="other-notes"></a>その他のメモ
 
-システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。 たとえば、標準の [オンライン送受信制限の交換](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) を適用します。
+システムは Exchange や一般的な電子メール クライアントのような SMTP サーバーと通信するため、標準の動作と制限が適用されます。 たとえば、標準の [Exchange Online 送受信制限](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits)が適用されます。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [Office 統合のトラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md)
 
 [Office 統合のチュートリアル](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
-[Microsoft Dynamics AX [AX 2012] で電子メール機能を設定する](https://technet.microsoft.com/library/aa834374.aspx)
-
+[Microsoft Dynamics AX での電子メール機能のコンフィギュレーション [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)

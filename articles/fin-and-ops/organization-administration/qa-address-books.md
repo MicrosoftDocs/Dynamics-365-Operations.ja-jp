@@ -1,13 +1,13 @@
 ---
-title: "アドレス帳 FAQ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のアドレス帳に関連するよく寄せられる質問に対する回答を示します。"
+title: アドレス帳 FAQ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のアドレス帳に関連するよく寄せられる質問に対する回答を示します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: bb0239fd9bd80ae15bd2cca08d5a5f5258aef638
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337811"
 ---
-
-# <a name="address-books-faq"></a>アドレス帳 FAQ
+# <a name="address-books-faq"></a>アドレス帳に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,4 +68,3 @@ ms.lasthandoff: 12/18/2018
 ## <a name="can-i-translate-address-information-for-party-records"></a>関係者レコードの住所情報を翻訳できますか。
 
 Microsoft Dynamics 365 for Finance and Operations のユーザーの言語 (システム言語) で情報を表示して、販売注文などのドキュメントでは別の言語で表示するように住所情報の翻訳を設定できます。 国/地域名、住所の目的、名前の順序の翻訳を入力できます。 たとえば、システム言語がデンマーク語で、フランスの顧客に販売注文を作成するとします。 この場合、プログラムではデンマーク語で顧客レコードを表示しつつ、印刷した販売注文にはフランス語で住所情報を表示することができます。 翻訳を設定した場合、一覧に各品目の翻訳を入力する必要があります。 翻訳が入力されていない品目は、システム言語で表示されます。 たとえば、システムの言語が、デンマーク語で、スペインの顧客にドキュメントを送信するとします。 住所情報にスペイン語 (ESP) の翻訳を入力しなかった場合、その情報は、システムと印刷資料ともにデンマーク語で表示されます。
-

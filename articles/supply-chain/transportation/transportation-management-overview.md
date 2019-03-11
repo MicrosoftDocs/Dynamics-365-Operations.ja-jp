@@ -1,13 +1,13 @@
 ---
-title: "輸送管理の概要"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance および Operations の輸送管理機能の概要が示されます。"
+title: 輸送管理の概要
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配送管理機能の概要が示されます。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4dc2c15d35d93d1563c866b20ad7f2bbb5c8457
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355613"
 ---
-
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance および Operations の輸送管理機能の概要が示されます。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配送管理機能の概要が示されます。
 
-輸送管理では、会社の配送の送受信オーダーの仕入先とルート指定の解決策の識別を使用できるようになります。 たとえば、出荷用の最速のルートまたは最低費用レートを識別できます。 次の表では、Microsoft Dynamics 365 for Finance および Operations で輸送管理を使用する主要なシナリオについて説明します。
+輸送管理では、会社の配送の送受信オーダーの仕入先とルート指定の解決策の識別を使用できるようになります。 たとえば、出荷用の最速のルートまたは最低費用レートを識別できます。 次の表では、Microsoft Dynamics 365 for Finance and Operations で輸送管理を使用する主要なシナリオについて説明します。
 
 <table>
 <colgroup>
@@ -52,11 +51,11 @@ ms.lasthandoff: 04/13/2018
 </tr>
 <tr class="even">
 <td>会社の固有フリートを、出荷または集配のために使用でき、配送料が顧客に渡されます。</td>
-<td>出荷プロセスで、配送料を確認し、顧客に渡すために輸送管理を使用できます。 ただし、配送業者の請求書調整プロセスは必要ありません。</td>
+<td>出荷プロセスで、配送料を確認し、顧客に渡すために輸送管理を使用できます。 ただし、配送業者の請求書の調整プロセスは必要ではありません。</td>
 </tr>
 <tr class="odd">
-<td>会社の固有フリートは、出荷または集配のために使用できますが、製品の価格に輸送費が含まれているため、配送料は顧客には渡されません。</td>
-<td>多くの輸送管理機能は必要ありません。 ただし、配送率を確認し、それに応じて販売価格を調整する場合、配送管理を使用できます。</td>
+<td>会社の固有フリートは、出荷または集配のために使用できますが、製品の価格に配送が含まれるため、配送料は顧客には渡されません。</td>
+<td>多くの輸送管理機能は必要ではありません。 ただし、配送率を確認し、それに応じて販売価格を調整する場合、配送管理を使用できます。</td>
 </tr>
 <tr class="even">
 <td>同じ会社の別の法人によって物流サービスが提供されます。</td>
@@ -84,8 +83,7 @@ ms.lasthandoff: 04/13/2018
 ![出庫積荷の計画および処理](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>積荷構築
-Finance および Operations には、容積ベースの積荷構築戦略という積荷構築戦略が用意されています。 この戦略を使用すると、積荷テンプレートの高さと重量に対して指定される最大値を使用できるし、または新しい値を入力して設定を上書きできます。 この戦略を使用するには、[**積荷構築ワークベンチ**] ページの [**設定**] クイック タブの [**積荷構築戦略**] フィールドで戦略を選択します。 また、アプリケーション オブジェクト ツリー (AOT) で新しいクラスを作成して、独自の積荷構築戦略を追加できます。
-
+Finance および Operations には、容積ベースの積荷構築戦略という積荷構築戦略が用意されています。 この戦略を使用すると、積荷テンプレートの高さと重量に対して指定される最大値を使用できるし、または新しい値を入力して設定を上書きできます。 この戦略を使用するには、**積荷構築ワークベンチ** ページの **設定** クイック タブの **積荷構築戦略** フィールドで戦略を選択します。 また、アプリケーション オブジェクト ツリー (AOT) で新しいクラスを作成して、独自の積荷構築戦略を追加できます。
 
 
 

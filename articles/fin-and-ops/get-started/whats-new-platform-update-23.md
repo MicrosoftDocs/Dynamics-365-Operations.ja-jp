@@ -1,34 +1,32 @@
 ---
-title: "Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について説明します。"
+title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 01/30/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
+ms.openlocfilehash: 86e759ac2ac647657cb06084c73f2b2df7e816c3
+ms.sourcegitcommit: 87a4f70fe44552487d4271c7619fc4a4ebcab107
 ms.translationtype: HT
-ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
-ms.openlocfilehash: b6d9b0670f1ec13b5ea36188e42d4023c01fae78
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "370045"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 の新機能または変更された機能について説明します。 このバージョンは、7.0.5126 のビルド番号を持ちます。
 
@@ -85,6 +83,11 @@ public void testIndexHintRegularTable()
 > [!NOTE]
 > インデックス ヒントは、悪影響よりもメリットの方が多いことが確信できるときのみ、慎重に使用してください。 新しい API により、知識と経験が豊富な開発者が必要なときに適切なヒントを渡すことができるようになります。 経験豊富な開発者は、注意してこの新しい機能を使用してください。 疑わしい場合は、インデックス ヒントを使用しないでください。
 
-## <a name="entity-store-as-a-data-lake"></a>Data Lake としてのエンティティ格納
-プラットフォーム更新 23 では、エンティティ格納を Data Lake として選択できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。 この機能にアクセスして使用する方法の詳細については、[エンティティ格納は Data Lake](../../dev-itpro/data-entities/entity-store-data-lake.md)を参照してください。
+## <a name="automated-refresh-of-entity-store-opt-in"></a>エンティティ格納の自動化更新 (オプトイン)
+更新を自分でスケジュールする代わりに、システムにエンティティ格納の更新を管理させることができます。 有効にすると、更新パターン (1 時間毎、1 日 2 回、毎日、または毎週) を選択できます。 指定すると、システムは選択されたパターンでエンティティ格納を更新します。 システムはまた、新しい更新フォームに切り替え、ここでステータスと更新の問題が通知されます。 詳細については、[エンティティ格納の自動化更新](../../dev-itpro/analytics/automated-entity-store-refresh.md)を参照してください。
 
+## <a name="entity-store-as-a-data-lake-preview"></a>Data Lake としてのエンティティ格納 (プレビュー)
+プラットフォーム更新プログラム 23 では、エンティティ格納を Data Lake として選択できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。 この機能をプレビューして使用するには、[Insider プログラム](https://experience.dynamics.com/insider)に是非ご参加ください。
+
+## <a name="extensibility-enhancements"></a>拡張性の強化
+プラットフォーム更新プログラム 23 に含まれる[プラットフォーム拡張機能の 4 番目の波](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility4)は、2018 年 10 月リリース ノートにドキュメントされています。 6 つの強化機能が詳細に説明されており、ハイライトの 1 つはクエリ データソースへの新しいリレーションの追加です。

@@ -1,32 +1,31 @@
 ---
-title: "小売製品カテゴリと製品を管理します。"
-description: "このトピックでは、販売促進マネージャーが小売製品カテゴリを使用して、小売製品階層とリリースされた製品の詳細な関係を管理する方法について説明します。"
+title: 小売製品カテゴリと製品を管理します。
+description: このトピックでは、販売促進マネージャーが小売製品カテゴリを使用して、小売製品階層とリリースされた製品の詳細な関係を管理する方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 19c972164474c972aab642c3cccc67cf396a6cb2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344688"
 ---
-
 # <a name="manage-retail-product-categories-and-products"></a>小売製品カテゴリと製品を管理します。
 
 [!include [banner](./includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 08/09/2018
 
 小売製品カテゴリの管理に関する詳細については、**カテゴリと製品の管理**ワークスペースの、**小売製品階層**タイルを選択してください。
 
-表示される **小売製品階層** ページの強化された構造を確認します。 Retail の以前のバージョンでは、製品のプロパティは適用性の範囲に基づいて [*基本的な製品プロパティ*] と [*小売製品プロパティ*] に分割されていました。 小売製品プロパティは適用範囲が*グローバル*です。 つまり、特定の小売製品のプロパティに、すべての法人で同じ値が共有されます。 対照的に、基本的な製品プロパティは*法人固有*です。 つまり、特定の製品のプロパティでは、各法人の個々の業務要件に応じて、法人間で値が異なる場合があります。
+表示される **小売製品階層** ページの強化された構造を確認します。 Retail の以前のバージョンでは、製品のプロパティは適用性の範囲に基づいて *基本的な製品プロパティ* と *小売製品プロパティ* に分割されていました。 小売製品プロパティは適用範囲が*グローバル*です。 つまり、特定の小売製品のプロパティに、すべての法人で同じ値が共有されます。 対照的に、基本的な製品プロパティは*法人固有*です。 つまり、特定の製品のプロパティでは、各法人の個々の業務要件に応じて、法人間で値が異なる場合があります。
 
 拡張された小売製品カテゴリ構造では、リリースされた製品の詳細フォーム構造の構造を反映するために、グループの適用性に基づいて製品プロパティが論理的に分離されます。
 
@@ -58,4 +57,3 @@ ms.lasthandoff: 08/09/2018
 新しい、拡張された製品プロパティ構造を使用して、関連付けられた製品にプッシュされる必要がある更新された製品プロパティを選択することができます。 **小売製品階層** ページのアクション ウィンドウで、**カテゴリ**を選択し、次に**製品の更新**を選択して **製品の更新** ダイアログ ボックスを開きます。
 
 ![製品の更新ダイアログ ボックス](media/NewUpdateProductsEnhancedView.PNG)
-

@@ -1,35 +1,35 @@
 ---
-title: "Commerce Runtime (CRT) のサービス"
-description: "このトピックでは、小売チャネルおよび価格設定機能のコア ビジネス ロジックを含むポータブル .NET ライブラリの集合である Commerce runtime (CRT) サービスについて説明します。"
+title: Commerce Runtime (CRT) のサービス
+description: このトピックでは、小売チャネルおよび価格設定機能のコア ビジネス ロジックを含むポータブル .NET ライブラリの集合である Commerce runtime (CRT) サービスについて説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 35182afafd3649b9669564b289cdfc5a39975e20
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369853"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce runtime (CRT) は、小売チャネルおよび価格設定機能のコア ビジネス ロジックを含む、ポータブル .NET ライブラリの集合です。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズする必要があります。 Retail Modern POS またはクラウド POS は、ビジネス ロジックの実行を要求するため CRT を呼び出します。 CRT は要求を処理し、小売販売時点管理に応答を送り返します。 小売販売時点管理はシン クライアントのようで、すべてのビジネス ロジックを CRT で実行する必要があります。
+Commerce runtime (CRT) は、小売チャネルおよび価格設定機能のコア ビジネス ロジックを含む、ポータブル .NET ライブラリの集合です。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズする必要があります。 Retail Modern POS またはクラウド POS は CRT を呼び出して、ビジネス ロジックの実行を要求します。 CRT は要求を処理し、小売販売時点管理に応答を送り返します。 小売販売時点管理はシン クライアントのようで、すべてのビジネス ロジックを CRT で実行する必要があります。
 
 CRT サービスは、要求/応答のグループです。 POS で作業する際はいつでも、POSは Retail サーバーに要求を送り、Retail サーバーは CRT を呼び出します。 CRT は要求を処理し、応答を送り返します。
 
@@ -87,7 +87,7 @@ CRT の多くのサービスは、小売チャンネルおよび店舗運営の�
 | ShippingService            | このサービスは、送料を計算し、現在の注文の出荷オプションを決定します。 |
 | StockCountService          | このサービスは在庫仕訳帳を作成し、コミット、および同期します。 |
 | StoreOperationService      | このサービスは、保存と削除、支払/入金申告、および仕訳帳の検索など店舗関連の工程のサービスを管理します。 |
-| TaxService                 | このサービスは、現在の注文に対する売上税を計算します。 Microsoft Dynamics 365 for Finance and Operations、またはサード パーティの売上税サービスから売上税情報を利用することができます。 |
+| TaxService                 | このサービスは、現在の注文に対する売上税を計算します。 Microsoft Dynamics 365 for Finance and Operations からの売上税情報を、またはサード パーティ売上税サービスからの売上税情報を使用できます。 |
 | TotalingService            | このサービスは、販売トランザクションおよび販売明細行の合計を計算します。 |
 
 拡張シナリオでは、サービス クラス内の要求のいずれかを上書きできます。 たとえば、顧客の検索フローを変更するには、**CustomerService** サービスから、**CustomersSearchServiceRequest** リクエストを拡張します。
@@ -445,4 +445,3 @@ public sealed class SaveCartRequestHandler : SingleRequestHandler<SaveCartReques
 | UpdateCommissionSalesGroupRequest | UpdateCommissionSalesGroupHandler       | この要求により、カートまたはカート行の販売担当者を更新するための要求がカプセル化されます。                    |
 | UploadOrderRequest                | UploadOrderRequestHandler               | この要求は、販売注文をアップロードします。                                                                                      |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | この要求は、チェックアウトのカートを検証します。                                                                              |
-

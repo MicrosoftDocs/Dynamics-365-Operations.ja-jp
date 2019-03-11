@@ -1,13 +1,13 @@
 ---
-title: "エンティティ格納と Power BI の統合"
-description: "エンティティ格納は、Microsoft Dynamics 365 for Finance and Operations に含まれている運用データ ストアです。 このトピックでは、エンティティ ストアで Power BI を Finance and Operations と統合する方法について説明します。"
+title: エンティティ格納と Power BI の統合
+description: エンティティ格納は、Microsoft Dynamics 365 for Finance and Operations に含まれている運用データ ストアです。 このトピックでは、エンティティ ストアで Power BI を Finance and Operations と統合する方法について説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 80d7e4d0837cebf48b82f76a8b01b550b11dfdc7
 ms.openlocfilehash: 8381c04636dc9ef3811a0021efef4c58f415adb3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369764"
 ---
-
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
 [!include [banner](../includes/banner.md)]
@@ -44,17 +43,17 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 - 大量のデータに対して Power BI レポートを作成することができます。
 - レポートは、Power BI を使って更新する必要がなくなります。 エンティティ格納が更新されると、レポートに最新のデータが反映されます。
 
-また、Power BI サービスにキャッシュされるデータがないため、データは、Dynamics 365 for Finance and Operations の環境から離れません。
+さらに、Power BI サービスにキャッシュされるデータがないため、データは、Dynamics 365 for Finance and Operations 環境から離れません。
 
 ## <a name="stage-aggregate-measurements-in-entity-store"></a>エンティティ格納における集計測定のステージング
 集計測定は分析シナリオのためにモデル化されたスター スキーマです。 2016 年 2 月のリリースでは、リアルタイムなメモリ内集計の測定が有効になりました。 リアルタイムの集計測定を使用することにより、データのリアルタイム操作に対応する埋め込みチャートおよび主要業績評価指標 (KPI) を有効にすることができます。 詳細については、[メモリ内リアルタイム集計モデルによる SSAS キューブの置換](../migration-upgrade/in-memory-real-time-aggregate-models.md) を参照してください。 リアルタイム集計測定は、インメモリの非クラスター化縦棒ストア インデックス (NCCI) の技術を活用します。 リアルタイムの集計の測定で作成されたビジュアルおよび集計計算に数秒以内のトランザクションが反映されます。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定を有効にしました。 エンティティ ストアで実施された集計測定は、Power BI を使用して大量のデータを調べる必要がある、ほぼリアルタイムの分析シナリオで使用できます。 開発者は、[モデリングおよび集計データを使用して](model-aggregate-data.md) 集計の測定でリアルタイム分析をモデル化する方法について学びました。 プラットフォーム更新プログラム 1 (2016 年 5 月) のリリースでは、エンティティ格納でステージングできる集計測定をモデル化する機能も追加しました。 Microsoft Visual Studio で、**StagedEntityStore** を集計の測定の用途プロパティとして指定します。 この新しいプロパティは、2016 年 5 月で追加されました。 以前は、**InMemoryRealTime** は用途プロパティとして使用できました。
 
-[![Visual Studio にある新しい StagedEntityStore の使用プロパティ](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS-300x242.png)](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS.png)
+[![Visual StudioVisual Studio にある新しい StagedEntityStore の使用プロパティ](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS-300x242.png)](https://msdnshared.blob.core.windows.net/media/2016/06/New-usage-property-in-VS.png)
 
 ただし、ステージングできるように集計測定をモデル化するのはなぜかと疑問に思われるかもしれません。 メモリ内リアルタイム集計測定を常に使用しないのはなぜですか。 **StagedEntityStore** パターンを使用する理由はいくつかあります。
 
 - 調査して分析する必要がある、大量のデータが存在する可能性があります。
-- コード アップグレード プロセスの一部として Microsoft Dynamics AX 2012 R3 から Dynamics 365 for Finance and Operations に移行する解析プロジェクト (つまり、キューブ) を所持する場合があります。 スキーマには複雑なビューと結合が存在するため、クエリ応答時間は埋め込まれたビジュアルには受け入れられない場合があります。 ただし、NCCI テクノロジーを直ちに活用するためにビジュアルをリファクタリングする必要はありません。
+- コード アップグレード プロセスの一部として、Microsoft DynamicsAX 2012 R3 から Dynamics 365 for Finance and Operations に移行する解析プロジェクト (つまり、キューブ) がある場合があります。 スキーマには複雑なビューと結合が存在するため、クエリ応答時間は埋め込まれたビジュアルには受け入れられない場合があります。 ただし、NCCI テクノロジーを直ちに活用するためにビジュアルをリファクタリングする必要はありません。
 - 運用データベースのスキーマとは異なり、エンティティ ストアのスキーマは特にレポートのためにモデル化されています。 したがって、エンティティ ストアのスキーマから新しいレポートを作成する方がはるかに簡単です。
 - 自分のシナリオが、操作の数秒以内での分析データの更新を必要としない場合があります。 データ検索を有効にするために構築されているほとんどの Power BI レポートは、このカテゴリに分類されます。 約 10 分でデータをリフレッシュすることがシナリオで許容される場合は、段階的なパターンを使用する場合があります。
 
@@ -82,4 +81,3 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
     * ログインは、axdwadmin となり、パスワードは LCS からの値となります。
 3. **オプション** ボタンを使用するか **接続のプロパティ** タブを参照して、**データベースに接続** プロパティを既定値から、LCS からの **データベース名** 値に変更します。
 4. **接続** をクリックしてデータベースにアクセスします。
-

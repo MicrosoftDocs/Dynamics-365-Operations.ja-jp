@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) API または POS 拡張からの工程を呼び出す"
-description: "Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。"
+title: 販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
+description: Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。
 author: mugunthanm
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,33 +16,32 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 3c59fcb1e2ec2593ff9b4a09f4c163f45e78f97c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369276"
 ---
-
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 
 [!include [banner](../../includes/banner.md)]
 
-Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。 たとえば、製品の詳細を取得し、価格を変更し、またはカートに品目を追加する新しい機能を追加する場合は、その作業を行うための POS API を呼び出します。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。 Commerce Runtime (RT)、POS、およびハードウェア ステーションの拡張パターンはすべて、要求/応答パターンを使用します。 
+Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。 たとえば、製品の詳細を取得し、価格を変更し、またはカートに品目を追加する新しい機能を追加する場合は、その作業を行うための POS API を呼び出します。 POS API は、拡張子パターンを合理化し、拡張機能を構築するために継続的なサポートを提供します。Commerce Runtime (RT)、POS、およびハードウェア ステーションの拡張パターンはすべて、要求/応答パターンを使用します。 
 
-このトピックは、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた、Dynamics 365 for Finance and Operations、および Dynamics 365 for Retail に適用されます。  
+このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。  
 
 ## <a name="scenarios"></a>シナリオ
 POS API は、3 つのさまざまなシナリオに分類されます。
 
-- **消費** - 拡張機能のパブリック API を使用します。 
-- **拡張** - 一部の追加ロジックを実行するパブリック API を拡張します。 
-- **作成** - POS インターフェイスを使用して新しい API を作成します。それは拡張機能全体で使用できます。 
+- **消費** - 拡張機能のパブリック API を使用します。 
+- **拡張** - 一部の追加ロジックを実行するパブリック API を拡張します。 
+- **作成** - POS インターフェイスを使用して新しい API を作成します。それは拡張機能全体で使用できます。 
 
 ## <a name="consume-pos-apis-in-extensions"></a>拡張機能で POS API を使用する
 API は要求/応答パターンを使用して公開されるため、ビジネス ロジックを実装するための外部 Web サービス呼び出しを行うことができます。 たとえばが、品目の価格を変更する場合、**PriceOverrideOperationRequest** を呼び出します。 API は、CRT、周辺機器、保存操作などのモジュールによりサブカテゴリ化されます。 
 
-多くの新しい API が追加されました。 すべての API のリストは **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts** ファイルで探すことができます。 
+多くの新しい API が追加されました。 すべての API のリストは **…Retail SDK\\POS\\Extensions\\Pos.Api.d.ts** ファイルで探すことができます。 
 
 ### <a name="how-to-consume-an-api-in-an-extension"></a>拡張機能で API を使用する方法
 拡張機能で  API を使用するには、次の手順を実行します。
@@ -365,4 +364,3 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
 2.  POS にログインし、任意の品目をトランザクションに追加します。
 3.  トランザクションに顧客を追加します。
 4.  **支払**ボタンをクリックし、トランザクションをコミットします。 属性を保存するかどうかをたずねるダイアログ ボックスが表示されます。
-

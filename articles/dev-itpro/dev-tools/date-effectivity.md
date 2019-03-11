@@ -1,13 +1,13 @@
 ---
-title: "日付の有効期間"
-description: "このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。 また、日付の有効性が読み取りおよび書き込みアクティビティに適用される方法についても説明します。"
+title: 日付の有効期間
+description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。 また、日付の有効性が読み取りおよび書き込みアクティビティに適用される方法についても説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 357ee5f87d821a97ec0cc138e0de553b1f2843f3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e469291f38b54630f6313b520accbc4361ce8e5a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369130"
 ---
-
 # <a name="date-effectivity"></a>日付の有効期間
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,7 @@ B. エンティティは有効日では*ない*、なぜならば ValidTimeState
 
 **FMVehicleRateEntity** という名前の新しいエンティティを作成し、プロジェクトに追加します。
 
-1.  左ウィンドウで、**Microsoft Dynamics 365 アーティファクト**を選択してから、メイン ウィンドウの左側にある**データ エンティティ**をクリックします。
+1.  左ウィンドウで **Microsoft Dynamics 365 アーティファクト**を選択してから、メイン ウィンドウの左側にある**データ エンティティ**をクリックします。
 2.  **追加** をクリックします。 **データ エンティティ ビュー** ウィザードが起動します。
 3.  次のスクリーン ショットに表示される作成するデータ エンティティのプロパティ値を指定します。 最も重要なフィールドは、**FMVehicleRate** を選択する **プライマリ データ ソース** です。 [![プライマリ データ ソース =FMVehicleRate](./media/date5.png)](./media/date5.png) **次へ**をクリックします。
 4.  プライマリ データ ソース、**FMVehicleRate** からエンティティにフィールドを追加します。
@@ -171,7 +170,6 @@ B. エンティティは有効日では*ない*、なぜならば ValidTimeState
 #### <a name="test-your-project"></a>プロジェクトをテスト
 
 -   プロジェクトを再度ビルドし、次の X++ ジョブを実行してプロジェクトをテストします。 [![プロジェクトのテスト](./media/capa-504x1024.png)](./media/capa.png)
-
 
 
 

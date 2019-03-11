@@ -1,37 +1,36 @@
 ---
-title: "AX 2012 からのアップグレード - アップグレード後のタスク"
-description: "このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要のある作業について説明します。"
+title: AX 2012 からのアップグレード - アップグレード後のタスク
+description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要がある作業について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.custom: 106163
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0c36dedc6d2a976488822f0bb7232f668b158884
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368840"
 ---
-
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要のある作業について説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
+このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要がある作業について説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
 
 ## <a name="document-management"></a>ドキュメント管理
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 
 印刷管理を使用する場合、AX 2012 のネットワーク プリンタへの参照は無効になります。 **ドキュメント回覧** ページのネットワーク プリンターを設定して参照する必要があります。 詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](../analytics/install-document-routing-agent.md) を参照してください。
 
-## <a name="retail"></a>Retail
+## <a name="retail"></a>小売
 
 AX 2012 からアップグレードを完了すると、レジスターおよびデバイスを構成する必要があります。
 
@@ -65,5 +64,4 @@ AX 2012 からのアップグレードが完了した後、予算計画の列と
 
 また、各予算ステージに適切なレイアウトを使用するための予算計画プロセスを更新する必要があります。 予算計画プロセスを更新するには、**予算作成** > **設定** > **予算計画** > **予算計画プロセス**をクリックします。
 
-予算計画のアップグレードの詳細については、[Microsoft Dynamics AX 2012 から予算計画にアップグレードする](upgrade-budget-planning.md) を参照してください。
-
+予算計画のアップグレードの詳細については、 [Microsoft Dynamics AX 2012 から予算計画にアップグレードする](upgrade-budget-planning.md)を参照してください。

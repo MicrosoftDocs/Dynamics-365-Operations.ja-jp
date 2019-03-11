@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) の新機能"
-description: "このトピックでは、LCS リリース ノートのブログ投稿へのリンクを提供します。"
+title: Lifecycle Services (LCS) の新機能
+description: このトピックでは、LCS リリース ノートのブログ投稿へのリンクを提供します。
 author: kfend
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 92d0a92b2880acdba250ea7eb13323c80e2e9111
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369668"
 ---
-
 # <a name="whats-new-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services は、事前販売からの実装および工程にいたるまで Microsoft Dynamics 365 for Finance and Operations のプロジェクトを管理するのに、顧客とそのパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 プロジェクトの局面および携わる業界に基づいて、このサイトはプロジェクトの管理を支援するチェックリストとツールを提供します。 このサイトは、ダッシュボードを提供し、単一の場所で最新のプロジェクト情報を取得できます。 Lifecycle Services [サイト](https://lcs.dynamics.com/en/) に移動します。 ドキュメントを参照: [Lifecycle Services Microsoft Dynamics ユーザー ガイド (LCS)](lcs-user-guide.md)。
+Microsoft Dynamics Lifecycle Services は、事前販売からの実装および工程にいたるまで Microsoft Dynamics 365 for Finance and Operations プロジェクトを管理するのに、顧客とそのパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 プロジェクトの局面および携わる業界に基づいて、このサイトはプロジェクトの管理を支援するチェックリストとツールを提供します。 このサイトは、ダッシュボードを提供し、単一の場所で最新のプロジェクト情報を取得できます。 Lifecycle Services [サイト](https://lcs.dynamics.com/en/)に移動します。 ドキュメントを参照: [Lifecycle Services for Microsoft Dynamics ユーザー ガイド (LCS)](lcs-user-guide.md)。
 
 次のリストは、過去 2 年間に発行された LCS の各リリース ノートのブログ投稿へのリンクを提供します。
 
@@ -58,4 +57,3 @@ Microsoft Dynamics Lifecycle Services は、事前販売からの実装および
 - [2016 年 1 月](https://blogs.msdn.microsoft.com/lcs/2016/01/29/january-2015-release-notes/)
 - [2015 年 12 月](https://blogs.msdn.microsoft.com/lcs/2015/12/18/december-2015-release-notes/)
 - [2015 年 11 月](https://blogs.msdn.microsoft.com/lcs/2015/11/23/november-2015-release-notes/)
-

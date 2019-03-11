@@ -1,30 +1,29 @@
 ---
-title: "Finance and Operations バージョン 8.0 の拡張機能の変更"
-description: "これは、Dynamics 365 for Finance and Operations バージョン 8.0 に実装された拡張機能の一覧です。"
+title: Finance and Operations バージョン 8.0 の拡張機能の変更
+description: これは、Dynamics 365 for Finance and Operations バージョン 8.0 に実装された拡張機能の一覧です。
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-04-04
 ms.dyn365.ops.version: Platform update 15
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 7719338e572a56cc6acf40f95d97655779fe8017
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368632"
 ---
-
 # <a name="extensibility-changes-in-the-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 の拡張機能の変更
 
 [!include[banner](../includes/banner.md)]
@@ -263,7 +262,7 @@ Dynamics 365 for Finance and Operations バージョン 8.0 では、Microsoft �
 |クラス ProjPlanVersionsManager|
 |クラス ProjPostItemJournal::projTransCreate|
 |クラス ProjProposalTotals.calc|
-|クラス PsaProjInvoiceDP::insertProformaPSAProjInvoiceTmp|
+|クラス PSAProjInvoiceDP::insertProformaPSAProjInvoiceTmp|
 |クラス PsacustomerRetention.createFeeTransactionForProposal|
 |クラス PurchAgreementGenerateReleaseOrder.check|
 |クラス PurchAgreementGenerateReleaseOrder.validatePurchLinesWithPurchQty|
@@ -577,4 +576,3 @@ Dynamics 365 for Finance and Operations バージョン 8.0 では、Microsoft �
 |インデックスの変更: テーブル InventTestAssociationTable|
 |パブリックに切り替えられたエンティティ UnitOfMeasureEntity|
 |パブリックに切り替えられたエンティティ UnitOfMeasureTranslationEntity|
-

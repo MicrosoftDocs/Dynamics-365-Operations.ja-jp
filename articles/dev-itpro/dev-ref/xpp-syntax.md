@@ -1,13 +1,13 @@
 ---
-title: "X++ 構文"
-description: "このトピックには、X++ の構文リファレンスが含まれています。"
+title: X++ 構文
+description: このトピックには、X++ の構文リファレンスが含まれています。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ea5c999dc8739a65b42e4be9f07f535c07f40d25
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a9c699fdea30db6f2ba852be9c645f73be6641ac
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369808"
 ---
-
 # <a name="x-syntax"></a>X++ 構文
 
 [!include [banner](../includes/banner.md)]
@@ -157,7 +156,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="even">
 <td><strong>&lt;/strong&gt;</td>
-<td>文字列でエスケープします。 余分な引用符およびタブの <span class="code">\t</span> などの特定の文字をエスケープします。</td>
+<td>文字列でエスケープします。 余分な引用符およびタブの <span class="code">\t</span>\t などの特定の文字をエスケープします。</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -172,7 +171,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="odd">
 <td><strong>::</strong></td>
-<td>静的 (class) メソッド: <span class="code">ClassName::methodName</span> を呼び出すときに使用します。</td>
+<td>静的 (class) メソッド <span class="code">ClassName::methodName</span> を呼び出すときに使用します。</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -467,7 +466,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="odd">
 <td><strong>forcePlaceholders</strong></td>
-<td> <code>select</code> 文で使用され、最適化時に <code>where</code> 句で使用される実際の値を Microsoft SQL Server データベースに公開しないようにカーネルに指示します。</td>
+<td><code>select</code>  文で使用され、最適化時に <code>where</code> 句で使用される実際の値を Microsoft SQL Server データベースに公開しないようにカーネルに指示します。</td>
 <td>ステートメント構文の選択</td>
 </tr>
 <tr class="even">
@@ -696,7 +695,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="even">
 <td><strong>この</strong></td>
-<td>クラスの現在のインスタンスへの参照。 クラスのメソッド内の X++ コードで使用されます。 Usクラスの<em>メソッド</em> メンバーを参照するのに使用されますが、クラスの<em>フィールド</em> メンバーは参照されません。<code>public str getFullName()</code>  <span class="code">{</span>  <span class="code">    // 次のステートメントは 'this' なしではコンパイルできません。</span>  <code>    return this.concatenateFirstAndLastNames();</code>  <span class="code">}</span></td>
+<td>クラスの現在のインスタンスへの参照。 クラスのメソッド内の X++ コードで使用されます。 Usクラスの<em>メソッド</em> メンバーを参照するのに使用されますが、クラスの<em>フィールド</em> メンバーは参照されません。<code>public str getFullName()</code>  <span class="code">{</span>  <span class="code">    // 次のステートメントは 「this」 なしではコンパイルできません。</span>  <code>    return this.concatenateFirstAndLastNames();</code>  <span class="code">}</span></td>
 <td><code>element</code> という名前のシステム変数とほぼ同様です。 フォーム コントロール メソッドの <code>element</code> を使用して、格納フォームを参照します。 詳細については、「フォームの変数を使用」を参照してください。</td>
 </tr>
 <tr class="odd">
@@ -772,12 +771,12 @@ X++ の式は数学的または論理的ないずれかの方法で使用され�
 |     式     | = | 簡易式  \[RelationalOperator Simple-expression \] |
 | RelationalOperator | = |                              =                              |
 | 簡易式  | = |                   簡易式 \[ +                    |
-|        期間        | = |           Compfactor {複数演算子 CompFactor }           |
+|        相談        | = |           Compfactor { 複数演算子 CompFactor }           |
 |   複数演算子    | = |                             \*                              |
 |     CompFactor     | = |                        \[ ! \] \[ -                         |
 |       係数       | = |                           リテラル                           |
 |        列挙        | = |                     EnumName :: リテラル                     |
-|      変動      | = |    識別子 \[ \[ 式 \] \] \[ . 式 \]     |
+|      変数      | = |    識別子 \[ \[ 式 \] \] \[ . 式 \]     |
 |    FunctionCall    | = |                      \[ 式 (.                       |
 |   If 式    | = |            Expression ? 式 : 式             |
 
@@ -812,7 +811,7 @@ Extended Backus Naur Form (EBNF) は metalanguage あり、このガイドでは
 
 ### <a name="example"></a>例
 
-Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この例は Work\_Team を `Manager` および一人またはそれ以上の `Employees` で構成されるように定義します。 `Employee` は、`Developer`、または `Tester` として定義されています。 この例で使用されているシンボルについては、次の表で説明します。
+Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この例は Work\_Team を `Manager` および一人またはそれ以上の `Employees` で構成されるように定義します。 `Employee` は、`Developer`、または `Tester` として定義されています。 この例で使用されているシンボルについては、次の表で説明します。
 
 ### <a name="special-symbols-in-ebnf"></a>EBNF の特殊記号
 
@@ -823,7 +822,7 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この
 | \[<em>式</em>\] |               オプション: \[ と \] の間の項目はオプションです。 すべてまたはいずれかの項目に括弧が含まれます。                |
 |      {Expression}       |                     繰り返し: { と } の間の項目はオプションですが、必要な回数繰り返し実行できます。                     |
 
-たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: 自転車\_アクセサリ = サドル\[ベル | クラクション\]{飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn`  サドル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー 飲料水\_ボトル\_ホルダーなど。
+たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: \_自転車アクセサリ = サドル\[ベル | クラクション\] {飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn`  サドル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー 飲料水\_ボトル\_ホルダーなど。
 
 ## <a name="x-grammar"></a>X++ 文法
 このトピックでは、X++ 言語の正式な文法を示します。
@@ -842,7 +841,7 @@ BNF コード
     BB ::= JJ_SYM
        ::= KK_SYM
 
- 
+ 
 
 `AA` は生産ルールの名前です。 `AA` は `BB` が必要で、続いて CC\_SYM となります。 `BB` も生産ルールです。 したがって、`BB` はターミナルではありません。 `BB` は、JJ\_SYM または KK\_SYM のいずれかである必要があります。 JJ\_SYM と KK\_SYM の両方は他の生産ルールの名前ではないためターミナルです。 CC\_SYM もターミナルです。
 
@@ -1352,7 +1351,7 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
     UNCHECKED_STMT ::= UNCHECKED_HEADER  STATEMENT
     UNCHECKED_HEADER ::= UNCHECKED_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
 
- 
+ 
 
 ## <a name="x-language-syntax-is-stricter-in-microsoft-dynamics-ax-2012"></a>X++ 言語の構文は Microsoft Dynamics AX 2012 では厳密です
 Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバージョンの製品より厳しくなっています。 このトピックでは、構文の変更について説明します。
@@ -1370,10 +1369,10 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 </colgroup>
 <thead>
 <tr class="header">
-<th>面</th>
+<th>エリア</th>
 <th>構文ルール</th>
-<th>Microsoft Dynamics AX 2012 より前</th>
-<th>Microsoft Dynamics AX 2012 以降</th>
+<th>Microsoft Dynamics AX 2012 以前</th>
+<th>Microsoft Dynamics AX 2012 で始まる</th>
 </tr>
 </thead>
 <tbody>
@@ -1392,8 +1391,8 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 <tr class="odd">
 <td>例外</td>
 <td><code>int</code> 値だけをスローおよび取得できるようになります</td>
-<td><code>throw &quot;hello world&quot;;</code> などの文字列および日付のようなスカラー式をスローでき、コンパイル エラーが発生しませんでした。 実行時には、<span class="code">catch {print(&quot;Catch worked.&quot;);}</span> などの特定の値で装飾されていない<code>catch</code>ブロックによって捉えることが可能です。</td>
-<td>現在、<strong>throw</strong> キーワードで配置できる唯一の式は、<code>int</code> です。 多くの場合、スローするための最もよい方法は、<span class="code">Global::error(&quot;説明&quot;);</span>。 多くの場合、見つけるための最もよい方法は、<code>Exception</code> 列挙の要素です。 詳細については、「トライおよびキャッチ キーワードで例外処理」を参照してください。</td>
+<td><code>throw &quot;hello world&quot;;</code> などの文字列および日付のようなスカラー式をスローでき、コンパイル エラーが発生しませんでした。 実行時には、<span class="code">catch {print(&quot;Catch worked.&quot;);}</span> などの特定の値で装飾されていない <code>catch</code> ブロックによって捉えることが可能です。</td>
+<td>現在、<strong>throw</strong> キーワードで配置できる唯一の式は、<code>int</code> です。 多くの場合、スローするための最もよい方法は、<span class="code">Global::error(&quot;説明&quot;);</span> です。 多くの場合、見つけるための最もよい方法は、<code>Exception</code> 列挙の要素です。 詳細については、「トライおよびキャッチ キーワードで例外処理」を参照してください。</td>
 </tr>
 <tr class="even">
 <td>継承</td>
@@ -1411,7 +1410,7 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 </tbody>
 </table></td>
 <td>単純な代入演算子である等号記号 (<code>=</code>) で派生オブジェクトに基本オブジェクトを代入することができました。 コンパイラはこれらの割り当てを受け入れましたが、実行時に不適切なダウンキャスト割り当てを誤って使用するとエラーが発生しました。</td>
-<td>現在は、ダウンキャストは明示的にできるようになりました。 これは、演算子と<strong>して</strong>新しく実行されます。 <strong>as</strong> キーワードによる明示的なダウンキャストは、<code>ThingClass</code> が <code>Object</code> で拡張する次のコード例で示されています。<code>ThingClass myThing = new ThingClass();</code><code>Object myObject = myThing;</code><code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> 詳細については、式の演算子: 継承の Is および As を参照してください。</td>
+<td>現在は、ダウンキャストは明示的にできるようになりました。 これは、演算子と<strong>して</strong>新しく実行されます。 <strong>as</strong> キーワードによる明示的なダウンキャストは、<code>ThingClass</code> が <code>Object</code> で拡張する次のコード例で示されています。<code>ThingClass myThing = new ThingClass();</code>  <code>Object myObject = myThing;</code>  <code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> 詳細については、式の演算子: 継承の Is および As を参照してください。</td>
 </tr>
 <tr class="odd">
 <td>継承</td>
@@ -1440,7 +1439,7 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 <tr class="odd">
 <td>モディファイア</td>
 <td><strong>静的</strong>修飾子をインターフェイスに適用しないでください</td>
-<td><span class="code">静的インターフェイス IMyInterface {}</span> を書き込むことができましたが、このコンテキストでは意味がないため、<strong>static</strong> モディファイアーに影響はありませんでした。</td>
+<td><span class="code">静的インターフェイス</span> IMyInterface {} を書き込むことができましたが、このコンテキストでは意味がないため、<strong>static</strong> モディファイアーに影響はありませんでした。</td>
 <td>Dynamics AX 2009 以降、X++ コンパイラがインターフェイス宣言上で<strong>静的</strong>モディファイアーの許可をやめることがあります。 詳細については、「インターフェイスの概要」を参照してください。</td>
 </tr>
 <tr class="even">
@@ -1492,7 +1491,6 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 --------
 
 [X++ 言語リファレンス](xpp-language-reference.md)
-
 
 
 

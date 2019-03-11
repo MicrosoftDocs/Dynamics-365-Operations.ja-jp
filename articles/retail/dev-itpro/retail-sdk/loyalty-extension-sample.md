@@ -1,31 +1,30 @@
 ---
-title: "ロイヤルティの拡張機能のサンプル"
-description: "このトピックでは、顧客がロイヤルティ ポイントを獲得し、同じトランザクションでロイヤルティ ポイントを使用して支払ができるようにシステムを設定する方法について説明します。"
+title: ロイヤルティの拡張機能のサンプル
+description: このトピックでは、顧客がロイヤルティ ポイントを獲得し、同じトランザクションでロイヤルティ ポイントを使用して支払ができるようにシステムを設定する方法について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
 ms.custom: 196163
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-05-15
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: ad2a43d543ee84145b2bea7c43e29f33e82d6b72
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a37fadda26c8edee5d50a2de5a047b8fb283bfb3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368433"
 ---
-
 # <a name="loyalty-extension-sample"></a>ロイヤルティの拡張機能のサンプル
 
 [!include [banner](../../../includes/banner.md)]
@@ -180,4 +179,3 @@ namespace Contoso
     }
 }
 ```
-

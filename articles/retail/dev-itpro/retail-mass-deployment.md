@@ -1,13 +1,13 @@
 ---
-title: "Retail セルフサービス コンポーネントの一括配置"
-description: "このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。"
+title: Retail セルフサービス コンポーネントの一括配置
+description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Retail
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
+ms.openlocfilehash: 515b79044364a30d24781725101d779da71d541e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c871adec65c1e8f11a1285119772da3b9326b6ca
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368344"
 ---
-
 # <a name="mass-deployment-of-retail-self-service-components"></a>Retail セルフサービス コンポーネントの一括配置
 
 [!include [banner](../includes/banner.md)]
@@ -51,9 +50,9 @@ ms.lasthandoff: 04/20/2018
 
 ### <a name="examples-of-commands-for-silent-servicing"></a>サイレント サービスのコマンド例
 
-このセクションでは、セルフサービスの大量展開に使用されるコマンドの例を示します。 これらのコマンドは、Retail Modern POS (オフラインでサポートされているインストーラーとオフラインでサポートされていないインストーラーの両方) 用インストーラー、ハードウェア ステーション、Retail Store スケール ユニットなど、すべての標準セルフサービス インストーラーで動作します。
+このセクションでは、セルフサービスの大量展開に使用されるコマンドの例を示します。 これらのコマンドは、Retail Modern POS (オフラインでサポートされているインストーラーとオフラインでサポートされていないインストーラーの両方) 用インストーラー、ハードウェア ステーション、Retail Store Scale Unit など、すべての標準セルフサービス インストーラーで動作します。
 
-#### <a name="silently-update-the-current-installation-of-retail-modern-pos"></a>Retail Modern POS の現在のインストールを自動的に更新
+#### <a name="silently-update-the-current-installation-of-retail-modern-pos"></a>Retail Modern POS の現在のインストールをサイレントに更新
 
 次のコマンドは、Retail Modern POS の現在のインストールをサイレント更新します。 このコマンドには、現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。 このコマンドは、構成ファイルが存在する場合は、インストーラーと同じファイルの場所にある構成ファイルを使用します。
 
@@ -62,11 +61,11 @@ ModernPOSSetup_V72.exe -S
 ```
 
 > [!NOTE]
-> Retail Store スケール ユニットにはまだコンフィギュレーション ファイルが必要です。 ただし、インストーラーは可能な場合はいつでも、現在インストールされているすべての値を保持します。
+> Retail Store Scale Unit ではコンフィギュレーション ファイルがまだ必要とされます。 ただし、インストーラーは可能な場合はいつでも、現在インストールされているすべての値を保持します。
 
-#### <a name="silently-update-the-current-installation-of-retail-store-scale-unit"></a>Retail Store Scale Unit の現在のインストールを自動的に更新
+#### <a name="silently-update-the-current-installation-of-retail-store-scale-unit"></a>Retail Store Scale Unit の現在のインストールをサイレントに更新
 
-次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Retail Store スケール ユニット の現在のインストールをサイレント更新します。 (このコンフィギュレーション ファイルは、インストーラーの実行可能ファイルと同じ場所にない可能性があります。) このコマンドは、前提条件のチェックをスキップし、インストール手順に進みます。 テストおよび開発の目的にのみ、このコマンドを使用することをお勧めします。
+次のコマンドは、特定のコンフィギュレーション ファイルを使用して、Retail Store Scale Unit の現在のインストールをサイレント更新します。 (このコンフィギュレーション ファイルは、インストーラーの実行可能ファイルと同じ場所にない可能性があります。) このコマンドは、前提条件のチェックをスキップし、インストール手順に進みます。 テストおよび開発の目的にのみ、このコマンドを使用することをお勧めします。
 
 ```
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
@@ -82,7 +81,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 このセクションでは、Retail Modern POS、オフラインの Retail Modern POS、およびオフライン サポートのないインストーラのセルフサービスの大量展開に使用されるコマンドの例を示します。 Windows PowerShell スクリプトの例では、ユーザーがインストールを実行する支援も含まれます。
 
-#### <a name="silently-install-retail-modern-pos"></a>Retail Modern POS をサイレント インストール
+#### <a name="silently-install-retail-modern-pos"></a>Retail Modern POS のサイレント インストール
 
 次のコマンドは、Retail Modern POS の現在のインストールをサイレント更新します。 このコマンドには、現在インストールされているコンポーネントのサイレント サービスに使用される標準的なコマンド構造があります。 この構造は **&lt;InstallerName&gt;.exe** の基本値とサイレント インストールのコマンド **-S** を使用します。 このコマンドは、構成ファイルが存在する場合は、インストーラーと同じファイルの場所にある構成ファイルを使用します。 このコマンドは、複数の構成ファイルを選択できる場合には使用しないでください。
 
@@ -91,7 +90,7 @@ ModernPOSSetup_V73.exe -S
 ```
 
 > [!NOTE]
-> Retail Modern POS にはコンフィギュレーション ファイルは不要です。 ただし、関連付けられている構成ファイルを読み込めない限り、インストールされた Retail Modern POS アプリは適切な方法では有効化されません。
+> Retail Modern POS ではコンフィギュレーション ファイルは必要ありません。 ただし、関連付けられている構成ファイルを読み込めない限り、インストールされた Retail Modern POS アプリは適切な方法では有効化されません。
 
 #### <a name="silently-install-retail-modern-pos-by-using-a-specific-configuration-file"></a>特定のコンフィギュレーション ファイルを使用して Retail Modern POS をサイレント インストール
 
@@ -100,4 +99,3 @@ ModernPOSSetup_V73.exe -S
 ```
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 ```
-

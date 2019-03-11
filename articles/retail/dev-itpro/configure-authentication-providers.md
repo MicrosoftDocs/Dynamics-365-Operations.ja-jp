@@ -1,13 +1,13 @@
 ---
-title: "認証プロバイダーのコンフィギュレーション"
-description: "このトピックでは、新しい OpenID 認証プロバイダを構成するためのプロセスの概要を示します。"
+title: 認証プロバイダーのコンフィギュレーション
+description: このトピックでは、新しい OpenID 認証プロバイダを構成するためのプロセスの概要を示します。
 author: kfend
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 4317007686ad5138f134ac5ce1859c19324d260e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6e52682c584b4f38b04000ba72754f08dbe3271b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368749"
 ---
-
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ Retail サーバーで使用できるようにするため、OpenID プロバイ
 3.  テスト オンライン ストアについては、次の例に示すように、正しいリダイレクト URL とドメインを指定できるように web.config ファイルを編集します。 第三者のオンライン ストアを使用している場合、この情報を必要に応じて保存できます。
 
         redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "国/地域コードとコンフィギュレーション キー"
-description: "この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。"
+title: 国/地域コードとコンフィギュレーション キー
+description: この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bdc3c7260047671acb12b229cf65d1928d0579e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 04f7016bcf840d0728c47b6437b3d0793c61ad41
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368701"
 ---
-
 # <a name="countryregion-codes-and-configuration-keys"></a>国/地域コードとコンフィギュレーション キー
 
 [!include [banner](../includes/banner.md)]
@@ -106,4 +105,3 @@ ms.lasthandoff: 04/20/2018
     |_F3 (UK inferred)
 
     |_F4 (UK inferred)
-

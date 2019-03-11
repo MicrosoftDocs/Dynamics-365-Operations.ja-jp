@@ -1,13 +1,13 @@
 ---
-title: "ワークフローでの条件付き意思決定のコンフィギュレーション"
-description: "条件判断のプロパティをコンフィギュレーションするには、次の手順に従います。"
+title: ワークフローでの条件付き意思決定のコンフィギュレーション
+description: 条件判断のプロパティをコンフィギュレーションするには、次の手順に従います。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a01290b3e2810aa1762f2230e8d01d219d6b10bf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64e8b2ed5c538cb982f9f03c1db24e38472be868
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328197"
 ---
-
 # <a name="configure-conditional-decisions-in-a-workflow"></a>ワークフローでの条件付き意思決定のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -54,4 +53,3 @@ ms.lasthandoff: 08/09/2018
     2. フォームの**条件の検証**領域でレコードを選択します。
     3. **テスト**をクリックします。 システムによってレコードが評価され、定義した条件を満たすかどうかが判定されます。
     4. **OK** または**キャンセル**をクリックして、**プロパティ**フォームに戻ります。
-

@@ -1,13 +1,13 @@
 ---
-title: "製品別の売上実績の評価"
-description: "Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。"
+title: 製品別の売上実績の評価
+description: Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -19,30 +19,28 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d40f51208503fe9d2dadca455bb0531bbe519a4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343975"
 ---
-
 # <a name="assess-sales-performance-by-product"></a>製品別の売上実績の評価
 
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。
 
-Dynamics 365 for Retail の一部として、ユーザーは次の基準の 1 つに基づいて、組織階層のさまざまなレベルで上位製品 (10 ~ 100) の収益性を調査することもできます。
+Dynamics 365 for Retail の一環として、ユーザーは次の基準の一つに基づいて、組織階層のさまざまなレベルで上位製品 (10 ~ 100) の収益性を調査できます:
 
 - 売上金額
 - 件数
 - 売上総利益率
 - 利益幅の割合
 
-この評価に関しては、次の場所のいずれかから開くことができる、[**上位製品**] レポートをすぐに使用できます:
+この評価に関しては、次の場所のいずれかから開くことができる、**上位製品**レポートをすぐに使用できます:
 
-- [**小売店舗管理**] ワークスペース &gt; [**小売**] &gt; [**チャンネル**] &gt; [**小売店舗管理**] &gt; [**レポート**] &gt; [**上位製品レポート**]
-- [**カテゴリと製品の管理**] ワークスペース &gt; [**小売**] &gt; [**チャネル**] &gt; [**小売店舗管理**] &gt; [**レポート**] &gt; [**上位製品レポート**]
-- [**照会とレポート**] セクション &gt; [**小売**] &gt; [**照会とレポート**] &gt; [**売上レポート**] &gt; [**上位製品レポート**]
-
+- **小売店舗管理** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **上位製品レポート**
+- **カテゴリと製品の管理** ワークスペース &gt; **小売** &gt; **チャネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **上位製品レポート**
+- **照会とレポート** セクション &gt; **小売** &gt; **照会とレポート** &gt; **売上レポート** &gt; **上位製品レポート**

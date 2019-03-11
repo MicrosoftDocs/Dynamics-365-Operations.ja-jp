@@ -1,13 +1,13 @@
 ---
-title: "ツールバーおよびリストのサブパターン"
-description: "この記事では、ツールバーとリストのフォームのサブパターンについて説明します。 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。"
+title: ツールバーおよびリストのサブパターン
+description: この記事では、ツールバーとリストのフォームのサブパターンについて説明します。 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 280fa2101b3c4c96b4c37300994dcd552c3cb21e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9f4284a527d7379324697800b5229e598bfb5d08
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368305"
 ---
-
 # <a name="toolbar-and-list-subpattern"></a>ツールバーおよびリストのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,7 @@ ms.lasthandoff: 04/20/2018
 
 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **ツールバー** **ガイドライン:**
 
@@ -125,9 +124,8 @@ ms.lasthandoff: 04/20/2018
 -   **移行コンテキストでアイコンのグループ間の区切り記号は重要ですか。**
     -   現在、ツールバーのボタン グループ間の区切り記号を表示しません。
 
-### <a name="microsoft-dynamics-ax-2012-content"></a>Microsoft Dynamics AX 2012 のコンテンツ
+### <a name="microsoft-dynamics-ax-2012-content"></a>Microsoft Dynamics AX 2012 コンテンツ
 
 **VendTable** 
 
 [![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
-

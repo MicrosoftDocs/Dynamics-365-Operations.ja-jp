@@ -1,13 +1,13 @@
 ---
-title: "カスタマイズをオフにして機能を廃止"
-description: "この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。 開発者は引き続きそのモデルを拡張することができます。 この記事では、古い形式の機能を廃止する方法についても説明します。"
+title: カスタマイズをオフにして機能を廃止
+description: この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。 開発者は引き続きそのモデルを拡張することができます。 この記事では、古い形式の機能を廃止する方法についても説明します。
 author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 284a1ab2b1cfb243c9a25e6b6927977eaa82a49b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f184f426d79eb363ac132286fdfb2a58ea61d787
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369957"
 ---
-
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。 開発者は引き続きそのモデルを拡張することができます。 この記事では、古い形式の機能を廃止する方法についても説明します。
 
-通常、他のモデルに依存するモデルでアプリケーションを構築します。 少なくとも、モデルは提供されているアプリケーション プラットフォーム モデルによって異なります。 Microsoft Dynamics 365 for Finance and Operations は、Microsoft Azure クラウド プラットフォームで実行されます。 つまり、Microsoft によって管理されているデータ センターでオフプレミスで実行されます。 基本的なモデルでは多数の仕入先からの変更をサポートできないため、アプリケーションはこれらのモデルのコンポーネントを重層化することができません。 したがって、アプリケーションをビルドするには、オーバーレイの代わりに拡張機能を使用する必要があります。 依存しているモデルのすべてのコンポーネントは、ドキュメント化のために利用可能ですが、他の人の知的財産をコンパイラし、クラウドで実行することはできません。
+通常、他のモデルに依存するモデルでアプリケーションを構築します。 少なくとも、モデルは提供されているアプリケーション プラットフォーム モデルによって異なります。 Microsoft Dynamics 365 for Finance and Operations は、Microsoft Azure クラウド プラットフォーム上で実行されます。 つまり、Microsoft によって管理されているデータ センターでオフプレミスで実行されます。 基本的なモデルでは多数の仕入先からの変更をサポートできないため、アプリケーションはこれらのモデルのコンポーネントを重層化することができません。 したがって、アプリケーションをビルドするには、オーバーレイの代わりに拡張機能を使用する必要があります。 依存しているモデルのすべてのコンポーネントは、ドキュメント化のために利用可能ですが、他の人の知的財産をコンパイラし、クラウドで実行することはできません。
 
 ## <a name="locking-customizations"></a>カスタマイズのロック
 オーバーレイヤーから拡張にモデルを移行するには、次の 3 つの手順が必要です。
@@ -147,7 +146,6 @@ ms.lasthandoff: 04/20/2018
 ### <a name="deprecating-metadata"></a>非推奨メタデータ
 
 モデル要素 (テーブル、データ エンティティ、EDT、列挙、など) の非推奨に関しては、すべてのモデル要素タイプで利用可能なプロパティの **IsObsolete** を使用します。 **IsObsolete** は、表、ビュー、およびデータ エンティティ フィールドでも使用できます。 **IsObsolete** を「はい」に設定すると、その要素またはフィールドへの参照によってコンパイル警告が発生します。
-
 
 
 

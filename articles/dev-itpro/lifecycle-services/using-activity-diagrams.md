@@ -1,30 +1,29 @@
 ---
-title: "ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する"
-description: "このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。"
+title: ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
+description: このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ntecklu
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 181e194028fe2f9ceb4e8a35b13e4bff03415e55
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369040"
 ---
-
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
 [!include [banner](../includes/banner.md)]
@@ -98,4 +97,3 @@ Visio ファイルを表示またはアップロードするには、次の手�
     Step 2
     =SubStep 2.1
     ```
-

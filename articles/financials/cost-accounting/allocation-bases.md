@@ -1,32 +1,31 @@
 ---
-title: "配賦基準"
-description: "このトピックでは、配賦基準について説明します。 配賦基準は原価計算での主要コンポーネントで、間接費を配賦するために主に使用されます。"
+title: 配賦基準
+description: このトピックでは、配賦基準について説明します。 配賦基準は原価計算での主要コンポーネントで、間接費を配賦するために主に使用されます。
 author: AndersGirke
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionMember
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 223174
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 92824cf0fb5ad361090d8dccfd64353d2c16317c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63f39a6c06a0c6b5df901f7aa4235aab3c4ac06e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311683"
 ---
-
 # <a name="allocation-bases"></a>配賦基準 
 
 [!include [banner](../includes/banner.md)]
@@ -290,7 +289,7 @@ ms.lasthandoff: 11/03/2017
 
 式の定義には次の演算子を使用できます。
 
-| 記号:  | テキスト           |
+| 記号: | テキスト           |
 |---------|----------------|
 | ( )     | かっこ    |
 | \<      | より小さい   |
@@ -334,7 +333,7 @@ ms.lasthandoff: 11/03/2017
 |-------------------|------------------------|-----------------------|---------|
 | 電気固定費 |                        | 統計要素  |         |
 
-[フォーミュラ] フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
+**フォーミュラ**フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
 
 **フォーミュラ配賦基準係数**
 
@@ -387,7 +386,7 @@ ms.lasthandoff: 11/03/2017
 |-------------------|------------------------|-----------------------|---------|
 | 電気使用量 |                        | 統計要素  |         |
 
-[フォーミュラ] フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
+**フォーミュラ**フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
 
 **フォーミュラ配賦基準係数**
 
@@ -430,5 +429,4 @@ ms.lasthandoff: 11/03/2017
 |    CC001    |     HR      | 1,837.50  | (1,837.50 ÷ 18,162.50) × 金額  |
 |    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) × 金額  |
 |    CC003    |     IT      | 13,250.00 | (13,250.00 ÷ 18,162.50) × 金額 |
-
 

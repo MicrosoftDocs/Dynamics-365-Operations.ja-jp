@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER)"
-description: "このトピックでは、電子申告 (ER) ツールの概要を示します。 重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。"
+title: 電子申告 (ER)
+description: このトピックでは、電子申告 (ER) ツールの概要を示します。 重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310809"
 ---
-
 # <a name="electronic-reporting-er"></a>電子申告 (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ER では、TEXT、XML、Microsoft Word 文書、および OPENXML ワークシ�
 ## <a name="capabilities"></a>処理能力
 ER エンジンには次の機能があります :
 
-- 異なるドメインでの電子申告に使用する 1 つの共有ツールを表し、何らかの Microsoft Dynamics 365 for Finance and Operations の電子申告を行う、20 以上の異なるエンジンを置き換えます。
+- 異なるドメインでの電子申告に使用する 1 つの共通ツールを表し、何らかの Microsoft Dynamics 365 for Finance and Operations の電子申告を行う、20 以上の異なるエンジンを置き換えます。
 - 現在の Dynamics 365 for Finance and Operations の実装から隔離されたレポートの形式を作成します。 つまり、形式は Dynamics 365 for Finance and Operations の異なるバージョンに適用されます。
 - 元の形式に基づいたカスタム書式の作成をサポートします。 ローカリゼーション/カスタマイズの要件により元の形式が変更したときに、自動的にカスタマイズされた形式をアップグレードするための機能も含まれています。
 - Microsoft ならびに Microsoft パートナーの両方の電子申告におけるローカライズ要件をサポートするための主要標準ツールとなります。
@@ -381,4 +380,3 @@ ER により、現在の派生コンポーネントのドラフト バージョ�
 [ローカリゼーションの要件は、電子申告トのコンフィギュレーションを作成することです。](electronic-reporting-configuration.md)
 
 [電子申告コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md)
-

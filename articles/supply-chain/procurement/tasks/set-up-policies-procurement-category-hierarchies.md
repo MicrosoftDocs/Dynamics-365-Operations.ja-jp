@@ -1,13 +1,13 @@
---- 
-title: "調達カテゴリ階層に対するポリシーの設定"
-description: "カテゴリの製品を発注するルールを設定するには、この手順を使用します。"
+---
+title: 調達カテゴリ階層に対するポリシーの設定
+description: カテゴリの製品を発注するルールを設定するには、この手順を使用します。
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d1fdf357466de12bd0188fc43cd266c67af762c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 50764f99be04d27e04047824f870e724336cb452
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323160"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>調達カテゴリ階層に対するポリシーの設定
 
@@ -58,5 +58,4 @@ ms.lasthandoff: 09/29/2017
     * ルールを選択し、請求の作成時に、どのタイプの仕入先がカテゴリに対して選択できるかを管理します。  
 7. [閉じる] をクリックします。
     * 定義したポリシー ルールは消費タイプの要求に対応するものです。 補充タイプの要求のポリシーを定義する場合は、「補充のカテゴリ アクセス ポリシー ルール」というポリシー ルール タイプのルールを作成します。  
-
 

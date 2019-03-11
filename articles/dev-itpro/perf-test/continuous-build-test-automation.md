@@ -1,30 +1,29 @@
 ---
-title: "継続的ビルドとテストの自動化をサポートするトポロジの配置"
-description: "このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。"
+title: 継続的ビルドとテストの自動化をサポートするトポロジの配置
+description: このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 13171
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cda5df9bec24bf8fc63ab3a5b2f3de9f84a03923
 ms.openlocfilehash: 860cf388ce7bc1f3848bd40e6cb146ff71c7b051
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369779"
 ---
-
 # <a name="deploy-topologies-that-support-continuous-build-and-test-automation"></a>継続的ビルドとテストの自動化をサポートするトポロジの配置
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Lifecycle Services (LCS) で Azure DevOps サブスクリプションを設定�
 
     [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
 
--   **無料の Azure DevOps アカウントには、ビルド エージェントが 1 つだけ用意されています**。 社内の Visual Studio Enterprise サブスクライバーにはそれぞれ、追加のパイプラインが付与されます。 
+-   **無料の Azure DevOps アカウントには、ビルド エージェントが 1 つだけ用意されています**。 組織内の Visual Studio Enterprise サブスクライバーのそれぞれに、追加のパイプラインが付与されます。 
 
 
 現在許可されているよりも多くのビルド パイプラインを使用するには、Azure DevOps アカウントを Azure 請求で設定します。[アカウントの請求を設定する](https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts) 
@@ -132,9 +131,9 @@ LCS では、開発トポロジ環境を配置するオプションが提供さ�
 8. 配置が完了したら、リモート デスクトップを使用して、開発者とビルド VMを表示することができます。
 
 ## <a name="use-a-developer-vm-environment"></a>開発者 VM 環境の使用
-開発者 VM が配置されると、ソース管理 (Azure DevOps) からのコードの同期に使用されるワークスペースで開発者 VM が自動構成されます。 この開発者 VM には Microsoft Dynamics 365 for Finance and Operations が配置されているため、テスト VM として使用することもできます。
+開発者 VM が配置されると、ソース管理 (Azure DevOps) からのコードの同期に使用されるワークスペースで開発者 VM が自動構成されます。 この開発者 VM には Microsoft Dynamics 365 for Finance and Operations が配置されているので、開発者 VM を テスト用 VM としても使用できます。
 
-### <a name="configure-visual-studio-to-connect-to-azure-devops"></a>Azure DevOps に接続するように Visual Studio をコンフィギュレーションする
+### <a name="configure-visual-studio-to-connect-to-azure-devops"></a>Azure DevOps に接続するために Visual Studio を構成
 
 開発者 VM で初めて Visual Studio を開くときは、自分の資格情報を使用して Azure DevOps に接続します。
 
@@ -192,7 +191,7 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 既定の構成に変更を加えて、そのビルド VM がビルドをトリガーできるようにすることができます。
 
 ## <a name="start-a-build-and-verify-the-build-and-test-execution-results"></a>ビルドを開始し、ビルドとテストの実行結果を確認します。
-既定のビルド構成を確認した後は、Visual Studio IDE または Azure DevOps Web インターフェイスからビルドを手動でトリガーできます。
+既定のビルド構成を確認した後、Visual Studio IDE または Azure DevOps Web インターフェイスからビルドを手動でトリガーできます。
 
 1.  ブラウザーを開き、Azure DevOps URL に接続します。
 2.  資格情報を使用してをログインします。
@@ -212,4 +211,3 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 [![build10](./media/build10-1024x446.jpg)](./media/build10.jpg) テストリンクをクリックして、テスト実行の失敗を視覚化します。 
 
 [![build11](./media/build11-1024x455.jpg)](./media/build11.jpg)
-

@@ -1,13 +1,13 @@
 ---
-title: "支払の FAQ"
-description: "このトピックでは、Dynamics 365 for Operations for Retail で使用できる支払オプションについて説明します。"
+title: 支払の FAQ
+description: このトピックでは、Dynamics 365 for Retail で使用できる支払いオプションについて説明します。
 author: athinesh99
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
 ms.openlocfilehash: 296f9aec795432254f965a09028b1d797f451af0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368810"
 ---
-# <a name="payments-faq"></a>支払の FAQ
+# <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
 [!include [banner](../../includes/banner.md)]
 
@@ -67,4 +67,3 @@ Verifone や Mastercard などの標準コネクタの SLA は、支払コネク
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [Verifone 支払コネクタ](https://dynamics.verifone.com/repo/)
 - [MasterCard 支払コネクタ](https://www.simplify.com/microsoft/) 
-

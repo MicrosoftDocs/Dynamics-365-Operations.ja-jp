@@ -1,13 +1,13 @@
---- 
-title: "ライセンス プレートにより制御されていない場所での完了レポート (申請、2016 年 5 月)"
-description: "このタスク ガイドでは、ライセンス プレートにより制御されていない場所への完了報告時の例を示します。"
+---
+title: ライセンス プレートにより制御されていない場所での完了レポート (申請、2016 年 5 月)
+description: このタスク ガイドでは、ライセンス プレートにより制御されていない場所への完了報告時の例を示します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdParmCostEstimation, ProdParmStartUp, ProdParmReportFinished, WHSWorkTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4da6868a2184a76c435efe824f4670504e1134e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344550"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>ライセンス プレートにより制御されていない場所での完了レポート (申請、2016 年 5 月)
 
@@ -61,5 +61,4 @@ ms.lasthandoff: 10/16/2018
 17. アクション ペインで [倉庫] をクリックします。
 18. [作業の詳細] をクリックします。
     * 製造オーダーが完了と報告されたときに、作業はプット アウェイに生成されませんでした。 これは、製品 L0101 が場所 001 に完了として報告されるときに作業が生成されないように作業ポリシーを定義しているために発生します。  
-
 

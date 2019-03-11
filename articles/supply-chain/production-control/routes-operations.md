@@ -1,13 +1,13 @@
 ---
-title: "工順と工程"
-description: "このトピックでは、工順と工程に関する情報を提供します。"
+title: 工順と工程
+description: このトピックでは、工順と工程に関する情報を提供します。
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
 ms.author: sorenand
 audience: Application User
@@ -19,14 +19,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333349"
 ---
-
 # <a name="routes-and-operations"></a>工順と工程
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 05/08/2018
 <a name="overview"></a>概要
 --------
 
-工順は、製品または製品バリアントの製造に必要な工程順序について説明します。 工程ごとに、工順は必要な運営リソース、工程を設定および実行するために必要な時間、およびコストを計算する方法も定義します。 複数の製品を生産するために同じ工順を使用するか、 各製品または製品バリアントへの固有の工順を定義したりできます。 同じ製品に複数の工順を使用することもできます。 この場合、使用される工順は必要な生産数量などの要因によって異なります。 Microsoft Dynamics 365 for Finance and Operations の工順の定義は、生産プロセスを表した 4 つの別々の要素をまとめて構成します。
+工順は、製品または製品バリアントの製造に必要な工程順序について説明します。 工程ごとに、工順は必要な運営リソース、工程を設定および実行するために必要な時間、およびコストを計算する方法も定義します。 複数の製品を生産するために同じ工順を使用するか、 各製品または製品バリアントへの固有の工順を定義したりできます。 同じ製品に複数の工順を使用することもできます。 この場合、使用される工順は必要な生産数量などの要因によって異なります。 Microsoft Dynamics 365 for Finance and Operations の工順の定義は、生産プロセスを表した 4 つの別々の要素をまとめて構成されます。
 
 -   **工順** – 工順は生産プロセスの構造を定義します。 つまり、工程順序を定義します。
 -   **工程** – 工程は **アセンブリ** など、工順で指定されたステップを識別します。 同じ工程を複数の工順で実行することができ、異なる工程番号を使用できます。
@@ -240,7 +239,6 @@ Finance and Operations がリリース済製品に最も関連する関連工程
 [リソースの能力](resource-capabilities.md)
 
 [電子署名の概要](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
-
 
 
 

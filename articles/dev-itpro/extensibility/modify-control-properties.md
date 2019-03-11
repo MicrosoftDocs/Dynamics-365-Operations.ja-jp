@@ -1,30 +1,29 @@
 ---
-title: "拡張機能を使用して、フォーム コントロールのプロパティを変更する"
-description: "このトピックでは、拡張機能を使用してコントロールのプロパティを変更する方法について説明します。"
+title: 拡張機能を使用して、フォーム コントロールのプロパティを変更する
+description: このトピックでは、拡張機能を使用してコントロールのプロパティを変更する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1d291fb0c7a1bca852e40a7f6beeee8f8e0a5c7c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368571"
 ---
-
 # <a name="modify-the-properties-of-form-controls-through-extension"></a>拡張機能を使用して、フォーム コントロールのプロパティを変更する
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ ms.lasthandoff: 08/09/2018
 
 > [!NOTE]
 > コントロールで **AutoDeclaration** プロパティを変更することはできません。 ただし、コードから名前でコントロールにアクセスすることはできます。 
-

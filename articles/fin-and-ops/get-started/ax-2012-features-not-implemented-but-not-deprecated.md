@@ -1,13 +1,13 @@
 ---
-title: "延期された AX 2012 の機能"
-description: "このトピックでは、Microsoft Dynamics AX 2012 の延期された機能と、その機能が AX 7.0 リリース以降に実装されているかどうかを示しています。"
+title: 延期された AX 2012 の機能
+description: このトピックでは、Microsoft Dynamics AX 2012 の延期された機能と、その機能が AX 7.0 リリース以降に実装されているかどうかを示しています。
 author: sericks007
 manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 5b204bbf8804caeaa35cd7e3247c9d41f241fa33
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368778"
 ---
-
 # <a name="ax-2012-features-that-were-postponed"></a>延期された AX 2012 の機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 の延期された機能を一覧表示します。 これらの機能は、Microsoft Dynamics AX 7.0 では実装されていませんでした。 次の表では、**現在の状態**列は AX 7.0 リリース以降に機能が実装されたかどうかを示します。
+このトピックでは、Microsoft Dynamics AX 2012 の延期された機能を一覧表示します。 これらの機能は Microsoft DynamicsAX 7.0 では実装されませんでした。 次の表では、**現在の状態** 列は AX 7.0 リリース以降に機能が実装されたかどうかを示します。
 
 製品の各バージョンがリリースされたときの詳細な一覧については、[ソフトウェアのライフ サイクルポリシーおよびクラウド リリース](../../dev-itpro/migration-upgrade/versions-update-policy.md) を参照してください。
 
@@ -411,7 +410,7 @@ ms.lasthandoff: 12/18/2018
 </tr>
 <tr>
 <td>仕入先コラボレーション (仕入先ポータル)</td>
-<td>Dynamics AX 2012 では、Enterprise Portal を介して仕入先のポータル機能を提供しました。 これらの機能は、Financial and Operations にポートされています。 バージョン 7.1 (Dynamics 365 for Operations 1611 とも呼ばれます) で、仕入先は発注書の表示および対応が可能になりました。
+<td>Dynamics AX 2012 では、エンタープライズ ポータルを介して仕入先のポータル機能を提供しました。 これらの機能は、Financial and Operations にポートされています。 バージョン 7.1 (Dynamics 365 for Operations 1611 とも呼ばれます) で、仕入先は発注書の表示および対応が可能になりました。
 <p>バージョン 7.3 では、仕入先は RFQ のものを表示および対応できます。 仕入先は、アドレス、連絡先情報、連絡担当者などの仕入先レコードから選択した情報を表示および編集し、証明書に関連したドキュメントをアップロードすることもできます。</p>
 </td>
 <td>バージョン 7.3 で実装済み</td>
@@ -546,4 +545,3 @@ ms.lasthandoff: 12/18/2018
 </tr>
 </tbody>
 </table>
-

@@ -1,13 +1,13 @@
 ---
-title: "Azure での Retail Essentials デモ環境の配置"
-description: "このトピックでは、Microsoft Azure に小売エッセンシャル デモを展開する方法について説明します。"
+title: Azure での Retail Essentials デモ環境の配置
+description: このトピックでは、Microsoft Azure にRetail essentials デモを配置する方法について説明します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: AX 2012
@@ -15,41 +15,40 @@ ms.custom: 13352
 ms.assetid: be08d43a-f05e-4580-ac75-52710d06a1d7
 ms.search.region: Global
 ms.author: aamiral
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 7ec1e8b15e574e2d96880ed9bf6680d60f6cbd85
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368980"
 ---
-
 # <a name="deploy-retail-essentials-demo-environments-on-azure"></a>Azure での Retail Essentials デモ環境の配置
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Azure に小売エッセンシャル デモを展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
+このトピックでは、Microsoft Azure にRetail essentials デモを配置する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 この記事の手順を実行する前に、次の条件が満たされていることを確認します。
 
 | カテゴリ       | 前提条件                                                                                                                                            |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure での Microsoft Dynamics AX 配置の計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure での Microsoft Dynamics AX 配置計画](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
-Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースを提供します。 Azure に Dynamics AX を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/)
+Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX の管理に使用できるクラウドベースの共同ワークスペースです。 Azure に Dynamics AX を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/)
 
 ## <a name="2-create-a-project"></a>2. プロジェクトの作成
 Lifecycle Services にログインした後、既存のプロジェクトを開くか、または新しいプロジェクトを作成します。 プロジェクトは、Lifecycle Services でのエクスペリエンスの主な開催者です。 プロジェクトに関連する手法は、既定でプロジェクトに含まれるフェーズとタスクを決定します。
 
 ## <a name="3-connect-the-project-to-your-azure-subscription"></a>3. Azure サブスクリプションにプロジェクトを接続する
-Azure サブスクリプションに Lifecycle Services プロジェクトを接続します。 これにより、Lifecycle Services は Dynamics AX 環境をサブスクリプションに展開できます。 Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。
+Azure サブスクリプションに Lifecycle Services プロジェクトを接続します。 これにより、Lifecycle Services は Dynamics AX 環境をサブスクリプションに配置できます。 Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。
 
-1. LCS プロジェクトで **環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ**領域で**追加**をクリックします。 
+1. LCS プロジェクトで**環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ領域**で**追加**をクリックします。 
    >[!Note]
-   > **Microsoft Azure 設定** オプションは、**クラウド ホスト環境** タイルをクリックしたときにも使用できます。
+   > **Microsoft Azure 設定**オプションは、**クラウド-ホスト環境タイル**をクリックしたときにも使用できます。
 2. Azure への接続を識別する名前を入力します。
 3. Azure サブスクリプション ID を入力します。 サブスクリプション ID を検索する必要がある場合は、次の手順を実行します。
    1.  ブラウザの別のインスタンスを開きます。
@@ -72,7 +71,7 @@ Azure サブスクリプションに Lifecycle Services プロジェクトを接
 >[!Note]
 > 証明書が期限切れになった場合は、新しいものを取得できます。 そのためには次の作業を行います。
 > 1. プロジェクトの設定の **Azure コネクタ** 領域で接続を選択し、**編集** をクリックします。
-> 2. **Microsoft Azure 設定** パネルが画面の横に表示されます。 **ダウンロード**をクリックして新しい証明書をダウンロードします。
+> 2. **Microsoft Azure 設定**パネルが画面の横に表示されます。 **ダウンロード**をクリックして新しい証明書をダウンロードします。
 > 3. 上の手順の手順 6 ～ 9 を繰り返します。
 
 ## <a name="4-deploy-a-retail-essentials-demo-environment-on-azure"></a>4. Azure での Retail Essentials デモ環境の配置
@@ -122,7 +121,7 @@ Azure に Retail Essentials デモ環境を配置するには、以下の手順�
     </tbody>
     </table>
 
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 配置の計画](plan-2012-r3-deployment-azure.md) を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 配置の計画](plan-2012-r3-deployment-azure.md)を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
 
 8.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -138,7 +137,6 @@ Dynamics AX クライアントがインストールされている仮想マシ�
 4.  ページの下部にある**開く**をクリックして、.rdp ファイルを開きます。
 5.  資格情報を求めるメッセージが表示されたら、&lt;DomainName&gt; 管理者アカウントのユーザー名とパスワードを入力します。 このアカウントのパスワードはこの環境の **クラウド ホスト環境** ページで見つけることができます。
 6.  仮想マシンのデスクトップが表示されたとき、**Microsoft Dynamics AX** アイコンをクリックして、Microsoft Dynamics AX クライアントを開きます。
-
 
 
 

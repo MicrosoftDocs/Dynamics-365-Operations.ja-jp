@@ -1,32 +1,30 @@
 ---
-title: "履行サービス契約の概要"
-description: "このトピックでは、サービス契約を履行するタスクについて説明します。"
+title: 履行サービス契約の概要
+description: このトピックでは、サービス契約を履行するタスクについて説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0d37ba306ae972158fb2cea27579d8f204d33010
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3c87171fb96e661eac2c25c1800f622d65b552ae
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348299"
 ---
-
-
 # <a name="fulfill-service-agreements-overview"></a>履行サービス契約の概要 
 
 [!include [banner](../includes/banner.md)]
@@ -69,9 +67,9 @@ ms.lasthandoff: 05/08/2018
 <td><p>サービス定期売買を作成し、管理します。</p></td>
 </tr>
 <tr class="odd">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>契約の監視と実装</p></td>
@@ -84,9 +82,9 @@ ms.lasthandoff: 05/08/2018
 <td><p>サービス注文を作成し、管理します。</p></td>
 </tr>
 <tr class="even">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="odd">
 <td><p>契約の更新および評価</p></td>
@@ -107,6 +105,5 @@ ms.lasthandoff: 05/08/2018
 </table>
 
   
-
 
 

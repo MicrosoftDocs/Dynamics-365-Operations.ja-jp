@@ -1,30 +1,29 @@
 ---
-title: "オーバーレイから拡張機能への移行"
-description: "このトピックでは、拡張機能の基準となるカスタマイズoverlayeredコードに基づいていますカスタマイズからの移行について説明します。"
+title: オーバーレイから拡張機能への移行
+description: このトピックでは、拡張機能の基準となるカスタマイズoverlayeredコードに基づいていますカスタマイズからの移行について説明します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 0dd2629923209dc1d10a3cb52a3bc2c70f536bfd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c63c93a0a4a4d421df0d64dd320b490595e298fb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369191"
 ---
-
 # <a name="migrate-from-overlayering-to-extensions"></a>オーバーレイから拡張機能への移行
 
 [!include [banner](../includes/banner.md)]
@@ -119,4 +118,3 @@ Microsoft Dynamics 365 for Finance and Operations の最初のリリース時に
 ソリューションに、拡張機能を通じて簡単に対応できない侵入的なカスタマイズが含まれていることがあります。 このようなカスタマイズの業務の値が拡張機能を通じて構築する手間を上回るかどうかを検討してください。 場合によっては、パートナーが拡張機能を通じてパーツを再構築することが困難で、それらのパーツはソリューションにとって重要ではないため、ソリューションのパーツを中止することを決定しました。
 
 アプリケーション全体でカスタマイズする小規模な修正プログラムの一部は、ソリューションのコアでない場合がありますが、関係するユーザーにとって重要です。 そのような場合、標準アプリケーションに類似の機能を実装するよう Microsoft に依頼するほうがよいかどうかを決定する必要があります。 この目的のために拡張性要求を入力することができます。 たとえば、顧客がシステムでの標準の業務プロセスを簡略化する場合、標準のアプリケーションでプロセスの手順を無効にするためのオプションを追加するよう、提案する可能性があります。
-

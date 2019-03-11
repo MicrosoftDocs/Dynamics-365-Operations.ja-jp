@@ -1,13 +1,13 @@
 ---
-title: "シフトとキャッシュ ドロワーの管理"
-description: "このトピックでは、小売販売時点管理 (POS) のシフトの設定および使用方法について説明します。"
+title: シフトとキャッシュ ドロワーの管理
+description: このトピックでは、小売販売時点管理 (POS) のシフトの設定および使用方法について説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313017"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>シフトとキャッシュ ドロワーの管理
 
 [!include [banner](includes/banner.md)]
@@ -70,7 +69,7 @@ Retail は、複数のコンフィギュレーション オプションおよび
 
 ## <a name="shift-and-drawer-operations"></a>シフトとドロワーの操作
 
-さまざまな操作によってシフトの状態の変更、またはキャッシュ ドロワーの合計金額の増減を実行することができます。 このセクションでは、Retail Modern POS およびクラウド POS に対する Microsoft Dynamics 365 に対するこれらのシフト操作について説明します。
+さまざまな操作によってシフトの状態の変更、またはキャッシュ ドロワーの合計金額の増減を実行することができます。 このセクションでは、Modern POS および Cloud POS に対する Microsoft Dynamics 365 for Retail のこれらのシフト操作について説明します。
 
 ### <a name="open-shift"></a>オープン シフト
 
@@ -159,4 +158,3 @@ POS でシフトおよびキャッシュ ドロワーの調整が使用される
 この設定により、バック オフィスの明細書が POS のシフトと同じトランザクションを含み、データがそのシフトごとに集計されていることが保証されます。
 
 明細書および決済方法の詳細については、[小売明細書の店舗のコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements) を参照してください。
-

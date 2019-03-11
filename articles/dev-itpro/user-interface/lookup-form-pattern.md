@@ -1,13 +1,13 @@
 ---
-title: "ルックアップのフォーム パターン"
-description: "このトピックでは、ルックアップ フォームのパターンについて説明します。"
+title: ルックアップのフォーム パターン
+description: このトピックでは、ルックアップ フォームのパターンについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5cda2c5d0418f837e59b8d6e9e2c94591a62317a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5bc5e3fe69f8c17549d81bb6f9e3d84a9c31568e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369645"
 ---
-
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -176,4 +175,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 **HcmWorkerLookup (プレビュー付きのルックアップ)** 
 
 ![LookupForm(9)](./media/lookupform9.png)
-

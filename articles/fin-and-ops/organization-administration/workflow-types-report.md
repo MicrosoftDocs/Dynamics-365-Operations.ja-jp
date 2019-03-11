@@ -1,13 +1,13 @@
 ---
-title: "ワークフロー タイプのレポート"
-description: "このトピックでは、Finance and Operations で使用できるワークフロー タイプを一覧表示するレポートを示します。"
+title: ワークフロー タイプのレポート
+description: このトピックでは、Finance and Operations で使用できるワークフロー タイプを一覧表示するレポートを示します。
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 6be3f1f1f0234b52c2d895fb817f7e8e044c4a6d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: dd3b2a9e84e780ac4d6fa3e756f3001c271129c1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369737"
 ---
-
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 
 [!include [banner](../includes/banner.md)]
@@ -36,4 +35,3 @@ ms.lasthandoff: 04/20/2018
 ## <a name="view-the-report"></a>レポートの表示
 
 [ワークフロー タイプ レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。
-

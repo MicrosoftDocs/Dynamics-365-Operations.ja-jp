@@ -1,13 +1,13 @@
 ---
-title: "原価会計ホーム ページ"
-description: "このトピックでは、原価会計に使用できるヘルプ トピックとその他のリソースの一覧を示します。"
+title: 原価会計ホーム ページ
+description: このトピックでは、原価会計に使用できるヘルプ トピックとその他のリソースの一覧を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 707cbb8f4a4a71d147e1aa3c048fb1eb3872f8d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 8f4a371664ceb7df9ac28cececc456bc73d655cb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346666"
 ---
-
 # <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -52,6 +51,5 @@ ms.lasthandoff: 05/23/2018
 |------------------------|--------------------|-----------------------------|
 | [原価会計の使用を開始する](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [原価会計モバイル ワークスペース](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [原価会計分析のための Excel の使用](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 |  |  |                             |
-
 
 

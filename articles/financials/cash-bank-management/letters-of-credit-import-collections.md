@@ -1,13 +1,13 @@
 ---
-title: "信用状および輸入取立"
-description: "この記事は、信用状および輸入取立に関する一般情報を提供します。 どちらのタイプの銀行ドキュメントも、国境をまたぐ商品売買によく使用されます。"
+title: 信用状および輸入取立
+description: この記事は、信用状および輸入取立に関する一般情報を提供します。 どちらのタイプの銀行ドキュメントも、国境をまたぐ商品売買によく使用されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebabff4d467df54b2e79485ba3a16344435140e6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323045"
 ---
-
 # <a name="letters-of-credit-and-import-collections"></a>信用状および輸入取立
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ ms.lasthandoff: 11/03/2017
 輸入取立は、船積書類を銀行を通じて国際輸入者 (買主) に届ける、銀行の同意に基づく、銀行と輸出者 (売主) との間の契約です。 銀行は、出荷された商品に対する支払を、現金または支払に対する署名済手形で受け取ったときに、船積書類を届けることになります。 
 
 輸入取立は、輸入された商品を受け取るための船積書類を買主が受領したときに、売主に確実に支払が行われることを保証します。
-
 
 
 

@@ -1,28 +1,27 @@
 ---
-title: "PageData タイプ"
-description: "ページに読み込まれたデータを表します。"
+title: PageData タイプ
+description: ページに読み込まれたデータを表します。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 6700a78eb05b516b8783c0a183de4d53b090de05
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368459"
 ---
-
 # <a name="pagedata-type"></a>PageData タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -76,5 +75,4 @@ setControlValue(controlName: string, value: any): any
 | 値|any|設定する値|
 
 #### <a name="returns-any"></a>any を返します
-
 

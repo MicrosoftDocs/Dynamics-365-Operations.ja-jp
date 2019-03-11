@@ -1,13 +1,13 @@
 ---
-title: "F くらす (FormGroupControl から FormIntControl)"
-description: "このトピックには、FormGroupControl から FormIntControl までのクラスの API リファレンス ドキュメントが含まれています。"
+title: F くらす (FormGroupControl から FormIntControl)
+description: このトピックには、FormGroupControl から FormIntControl までのクラスの API リファレンス ドキュメントが含まれています。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: ec320efee094b85a2550fdcdf358572875bb54dc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369558"
 ---
-
 # <a name="f-classes-formgroupcontrol-to-formintcontrol"></a>F くらす (FormGroupControl から FormIntControl)
 
 [!include [banner](../includes/banner.md)]
@@ -219,17 +218,17 @@ ms.lasthandoff: 08/09/2018
 #### <a name="parameters"></a>パラメーター
 
 controlType  
-コントロールの位置を示す値、オプション。 既定値は、nullNothingnullptrunita null参照 (Visual Basic にはない) です。
+コントロールの位置を示す値、オプション。 既定値は、nullNothingnullptrunita null 参照 (Visual Basic にはない) です。
 
 <!-- -->
 
 controlName  
-コントロールの位置を示す値、オプション。 既定値は、nullNothingnullptrunita null参照 (Visual Basic にはない) です。
+コントロールの位置を示す値、オプション。 既定値は、nullNothingnullptrunita null 参照 (Visual Basic にはない) です。
 
 <!-- -->
 
 insertAfter  
-コントロールの位置を示す値、オプション。 既定値は、nullNothingnullptrunita null参照 (Visual Basic にはない) です。
+コントロールの位置を示す値、オプション。 既定値は、nullNothingnullptrunita null 参照 (Visual Basic にはない) です。
 
 #### <a name="return-value"></a>戻り値
 
@@ -601,7 +600,7 @@ y
 
 #### <a name="return-value"></a>戻り値
 
-フォント サイズなどの他のフォーム設定に基づいて余白が自動的に調整される場合は AutoMode :: Auto です。それ以外の場合は、AutoMode :: Fixed です。
+フォント サイズなどの他のフォーム設定に基づいて余白が自動的に調整される場合は AutoMode::Auto です。それ以外の場合は、AutoMode::Fixed です。
 
 ### <a name="method-bottommarginvalue"></a>メソッド bottomMarginValue
 
@@ -739,7 +738,7 @@ control
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -1207,7 +1206,7 @@ expand
 
 #### <a name="return-value"></a>戻り値
 
-Tahoma や Verdana など、使用するフォントの名前。
+Tahoma や Verdana など、使用されるべきフォントの名前。
 
 ### <a name="method-fontsize"></a>メソッド fontSize
 
@@ -11258,7 +11257,6 @@ objectMethodToCall
 <!-- -->
 
 overrideObject  
-
 
 
 

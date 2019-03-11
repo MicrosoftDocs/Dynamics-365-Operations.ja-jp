@@ -1,13 +1,13 @@
 ---
-title: "顧客エンティティへの拡張プロパティの追加"
-description: "このチュートリアルでは、拡張プロパティを使用してエンティティを拡張する方法を示します。"
+title: 顧客エンティティへの拡張プロパティの追加
+description: このチュートリアルでは、拡張プロパティを使用してエンティティを拡張する方法を示します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,28 +17,27 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: b135cde1a902f6c3797bb2371975f0a09e48ccce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369390"
 ---
-
 # <a name="add-extension-properties-to-customer-entities"></a>顧客エンティティへの拡張プロパティの追加
 
 [!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、拡張プロパティを使用してエンティティを拡張する方法を示します。 
 
-このチュートリアルでは、エンティティが Microsoft 365 for Retail で拡張され、Retail とチャネル データベースの両方で保持されます。 これにより、販売時点管理 (POS) ユーザー インターフェイス (UI) で値にアクセスできます。 新しい値は、Commerce Data Exchange (CDX) トランザクション サービスを介して Dynamics AX に同期的に書き込まれます。 拡張機能プロパティは自動的にフローするため、Commerce Runtime または Retail サーバーに必要なカスタマイズはありません。 フォーム、テーブル、Real-time Service (RTS) クライアント、CDX、チャネル データベース、POS (Retail Modern POS およびクラウド POS の両方) の変更が必要です。 このチュートリアルでは、オフライン モードをサポートしていません。
+このチュートリアルでは、エンティティが Microsoft 365 for Retail で拡張され、Retail とチャネル データベースの両方で保持されます。 これにより、販売時点管理 (POS) ユーザー インターフェイス (UI) で値にアクセスできます。 また、新しい値は、Commerce Data Exchange (CDX) 取引サービスを介して Dynamics AX に同期的に書き込まれます。 拡張機能プロパティは自動的にフローするため、Commerce Runtime または Retail サーバーに必要なカスタマイズはありません。 フォーム、テーブル、Real-time Service (RTS) クライアント、CDX、チャネル データベース、POS (Retail Modern POS およびクラウド POS の両方) の変更が必要です。 このチュートリアルでは、オフライン モードをサポートしていません。
 
 <a name="create-a-new-dynamics-ax-project"></a>新しい Dynamics AX プロジェクトを作成します
 --------------------------------
 
 1.  **RetailCustPreference** という名前の新しいテーブルを作成し、CustTable テーブルを参照します。
-2.  Microsoft Visual Studio を開始します。
-3.  新しいモデルおよびプロジェクトを作成します。 **Dynamics AX** メニューで、**モデル管理** &gt; **モデルの作成**をクリックします。
+2.  Microsoft Visual Studio を起動します。
+3.  新しいモデルおよびプロジェクトを作成します。 **Dynamics AX** メニューで、**モデル管理** &gt; **モデルの作成** をクリックします。
 4.  USR レイヤーに新しいモデルを作成し、**次へ**をクリックします。
 5.  既存の ApplicationSuite パッケージへモデルを追加します。 **次へ**をクリックし、**完了**の順にクリックします。
 6.  プロジェクト名を入力し、**OK** をクリックします。
@@ -75,7 +74,7 @@ ms.lasthandoff: 08/09/2018
 
 7.  すべての変更を保存し、プロジェクトを再度ビルドします。
 8.  **iisreset** を実行します。
-9.  Dynamics 365 for Retail で、**売掛金勘定** &gt; **共通** &gt; **顧客** &gt; **すべての顧客**と移動します。
+9.  Dynamics 365 for Retail で、**売掛金勘定** &gt; **共通** &gt; **顧客** &gt; **すべての顧客** の順にクリックします。
 10. 顧客レコードを編集します。 **小売**クイック タブで、**電子メール申し込み**チェック ボックスをオンにし、変更を保存します。
 
 ## <a name="customize-the-existing-retailtransactionservice-class-so-that-it-handles-the-new-data-correctly"></a>新しいデータが正しく処理できるように、既存の RetailTransactionService クラスをカスタマイズします
@@ -187,7 +186,7 @@ ms.lasthandoff: 08/09/2018
 4.  プロジェクトをコンパイルします。
 
 ## <a name="configure-cdx-to-sync-the-new-table"></a>新しいテーブルを同期させる CDX をコンフィギュレーションします。
-1.  Dynamics 365 for Retail で、**Retail** &gt; **設定** &gt; **小売用スケジューラ** &gt; **小売チャネル** **スキーマ**と移動し、新しいテーブルを追加してチャネル スキーマを編集します。
+1.  Dynamics 365 for Retail で、**Retail** &gt; **設定** &gt; **小売用スケジューラ** &gt; **小売チャネル** **スキーマ** と移動し、新しいテーブルを追加してチャネル スキーマを編集します。
     1.  **チャネル テーブル**、**新規**の順にクリックします。
     2.  テーブルに **ax.RetailCustPreference** と名前を付けて保存します。
     3.  次のフィールドを追加します: **ACCOUNTNUM**、**DATAAREAID**、**EMAILOPTIN**、**RECID**。
@@ -209,7 +208,7 @@ ms.lasthandoff: 08/09/2018
             </LinkGroup>
         </Table>
 
-5.  **小売チャネル スキーマ**ページで、スキーマ名として **AX** を選択し、**クエリの生成**をクリックします。
+5.  **小売チャネル スキーマ** ページで、スキーマ名として **AX** を選択してから、**クエリの生成** をクリックします。
 
 ## <a name="channel-database"></a>チャネル データベース
 開発用チャンネル データベースを手動で変更します。 実際の展開については、このトピックで後述の「実際の展開」を参照してください。 新しいテーブルを追加するには ChannelDBUpgrade.sql から正しいチャンネル データベースへスキーマの変更を適用する必要があります。
@@ -281,7 +280,6 @@ ms.lasthandoff: 08/09/2018
 1.  データベース フォルダーにチャネル データベースの変更ファイルを追加し、**customization.settings** に登録します。
 2.  Retail SDK ソリューションに **msbuild** を実行します。 すべてのパッケージにはすべての適切な変更があります。
 3.  Microsoft Dynamics Lifecycle Services (LCS) を使用するか手動でパッケージを展開します。
-
 
 
 

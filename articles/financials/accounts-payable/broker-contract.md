@@ -1,13 +1,13 @@
 ---
-title: "ブローカー契約管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のブローカー契約管理について説明します。"
+title: ブローカー契約管理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のブローカー契約管理について説明します。
 author: t-benebo
 manager: AnnBe
 ms.date: 08/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: c3794535cf9230389d7da3f9dbde010e5c48cf2f
 ms.openlocfilehash: 34bacac65184ce879a7a571e40a7a1031c9428ad
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369654"
 ---
-
 # <a name="broker-contract-management"></a>ブローカー契約管理
 
 [!include [banner](../includes/banner.md)]
@@ -141,5 +140,4 @@ ms.lasthandoff: 08/17/2018
 
 > [!NOTE]
 > 損金処理経費勘定番号は、**差異の理由**ページの**主勘定**フィールドで、特定の理由コードにより指定されます。
-
 

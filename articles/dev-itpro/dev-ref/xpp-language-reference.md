@@ -1,13 +1,13 @@
 ---
-title: "X++ 言語リファレンス"
-description: "このトピックでは、X++ のプログラミング ガイドを提供します。"
+title: X++ 言語リファレンス
+description: このトピックでは、X++ のプログラミング ガイドを提供します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5fe5690b1f3a0f14b15fcc70a9ce5aaeb197208
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3c913f8161ecf9734a60acd3c0c29ac93076ae82
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369739"
 ---
-
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ X++ は、Microsoft Dynamics 365 for Finance and Operations がエンタープ�
 | **X++ 言語属性** | **説明** |
 |-----|-----|
 | **クラス**                 | システム クラスに加えて、Dynamics 365 for Finance and Operations はさまざまなタイプの業務プロセスを管理するためのアプリケーション クラスも提供します。 クラスのリフレクションがサポートされます。            |
-| **テーブル**                  | X++ のプログラマーは Dynamics 365 for Finance and Operations のリレーショナル テーブルにアクセスすることができます。 X++ には標準 SQL の大部分のキーワードと一致するキーワードが含まれます。 テーブルのリフレクションがサポートされます。 |
+| **テーブル**                  | X++ のプログラマーは、Dynamics 365 for Finance and Operations リレーショナル テーブルにアクセスすることができます。 X++ には標準 SQL の大部分のキーワードと一致するキーワードが含まれます。 テーブルのリフレクションがサポートされます。 |
 | **ユーザー インターフェイス**          | フォームやレポートなどのユーザー インターフェイス項目の操作。|
 | **推奨チェック**    | X++ コードはコンパイル中に構文エラーがチェックされます。 コンパイル プロセスでは、ベスト プラクティス チェックも実行されます。 ベスト プラクティスの違反によりコンパイラのメッセージを生成できます。|
 | **ガベージ コレクション**      | X++ ランタイム実行エンジンには、メモリ領域を再利用できるように、参照されなくなったオブジェクトを破棄する自動メカニズムがあります。 |
@@ -54,6 +53,5 @@ X++ 言語プログラミング ガイドは、以下のセクションに分か
 ## <a name="additional-resources"></a>その他のリソース
 + [X++ 構文](xpp-syntax.md)
 + [X++ と C# の比較](xpp-cs-comparison.md)
-
 
 

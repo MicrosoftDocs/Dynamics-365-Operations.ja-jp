@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations へのコードの移行の準備"
-description: "このトピックでは、Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にコードおよびメタデータを移行できる LCS コード アップグレード サービスおよび Visual Studio のツールについて説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。"
+title: Finance and Operations へのコードの移行の準備
+description: このトピックでは、LCS コード アップグレード サービスと、コードとデータを Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations に移行するのに役立つ Visual Studio ツールについて説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 04eb3ba177d9151bc34ce13e67564864e3e01563
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369101"
 ---
-
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にコードおよびメタデータを移行できる Lifecycle Services (LCS) コード アップグレード サービスおよび Visual Studio のツールについて説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
+このトピックでは、Lifecycle Services (LCS) コード アップグレード サービスと、コードとデータを Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations に移行するのに役立つ Visual Studio ツールについて説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
 
 <a name="prerequisites"></a>前提条件
 -------------
@@ -105,7 +104,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 ## <a name="best-practice-setup"></a>ベスト プラクティスの設定
 ベスト プラクティス フレームワークには、移行を完了するために解決する必要があるベスト プラクティス警告のサブセットがあります。 これは、Dynamics AX 2012 R3 またはそれ以前から移行する場合に適用されます。
 
-1.  Visual Studio で、**Dynamics 365 &gt; オプション &gt; ベスト プラクティス**とクリックします。
+1.  Visual Studio で、**Dynamics 365 &gt; オプション &gt; ベスト プラクティス**をクリックします。
 2.  **モデル** ドロップダウン メニューで、**アプリケーション スイート**を選択します (作業しているすべてのモデルで繰り返します)
 
 これらのルールは、ソリューションの移行中に「オン」に設定する必要があります。 この設定は、AxRuleSet フォルダー内の XML ファイルによって実行されます。 たとえば、C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet の下にある、アプリケーション スイート xml ファイル、BPRules.xml を参照してください。 [![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) 移行を完了するには、すべての移行固有のベストプラクティスルールを修正する必要があります。 エラーは警告としてエラー リストに表示されます。 エラー一覧には、コンパイラの警告やベスト プラクティスのエラーが表示されます。 ベスト プラクティスのエラーには接頭語として **BP** のテキストが付けられます。 たとえば、**BPErrorFormControlPatternUnspecified**。
@@ -121,7 +120,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 以下のこの例では、**PurchCommitment\_PSN** フォームを使用して、ナビゲーションを修正する移行タスクについて説明します。 具体的には、重複するボタンおよびアクション ウィンドウ TODO などの例が表示されます。
 
-### <a name="setup"></a>段取り
+### <a name="setup"></a>セットアップ
 
 1.  Visual Studio で、**アプリケーション エクスプローラー**を開き、フォーム PurchCommitment\_PSN を検索します。
 2.  **OK** をクリックします。
@@ -135,7 +134,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 ### <a name="navigation-migration-tasks"></a>ナビゲーション移行タスク
 
-1.  Visual Studio で、プロジェクトをビルドし、ツール バーで**表示** &gt; **タスク一覧**をクリックします。
+1.  Visual Studio で、プロジェクトをビルドし、ツール バーで**表示** &gt; **タスク一覧** をクリックします。
 2.  **コメント** ドロップダウン リストをクリックして、TO DO: (コード アップグレード) タスクを表示します。
 3.  一覧で、ActionPane TODO を検索します。
 
@@ -157,7 +156,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 **注記**: 以下のセクションでは、システム定義ボタンを複製するモデル化されたボタンのコードを移行および変更する方法の例を示します。 ただし、実際には、この記事で行われたのと同様の変更を加える前に、シナリオに関してコードをまず評価して、それがまだ必要かどうかを決定する必要があります。 最初に、システム定義の削除ボタンと重複する、DeleteCmdButton に対する TODO を修正します。
 
-1.  Visual Studio で、次に示す "仕事" を検索して、"仕事" をダブルクリックします。[![k](./media/k1.png)](./media/k1.png)
+1.  Visual Studio で、次に示す "TODO" を検索して、"TODO.[![k](./media/k1.png)](./media/k1.png)" をダブルクリックします。
 2.  以下に示すように、TODO とコード行を置き換えます。
     -   システム定義の **削除** ボタンの状態は、firstmaster データソースの AllowDelete プロパティによって制御されます。 AllowDelete を false に設定することにより、キーボード ショートカットが使用されている場合に削除タスクは実行されません。
 
@@ -170,7 +169,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 4.  **Ctrl+S** キーを押してフォームを保存します。
     -   次に、システム編集ボタンと重複する EditCmdButton に焦点を当てて、このボタンに関連付けられた 2 つの "仕事" の処理とこのボタンの削除を行います。
 
-5.  Visual Studio で、次に示す "仕事" を検索して、"仕事" をダブルクリックします。[![m](./media/m1.png)](./media/m1.png)
+5.  Visual Studio で、次に示す "TODO" を検索して、"TODO.[![m](./media/m1.png)](./media/m1.png)" をダブルクリックします。
 6.  **編集**ボタンの表示はフォームの表示/編集モードで制御されるため、このコードを変更してプロパティを設定する必要があります。 次の図に示すように、TODO とコード行を置き換えます。
 
         /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
@@ -293,7 +292,6 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 
 -   [コンテキスト メニュー](code-migration-context-menus.md)
 -   [マウスをダブルクリックします](code-migration-double-click.md)
-
 
 
 

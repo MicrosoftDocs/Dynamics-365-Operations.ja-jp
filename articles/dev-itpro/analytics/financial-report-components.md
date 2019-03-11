@@ -1,13 +1,13 @@
 ---
-title: "財務諸表コンポーネント"
-description: "この記事では、財務諸表でコンポーネント、またはレポート定義の構成要素ブロックを使用する方法について説明します。 これらの構成要素には、行定義、列定義、およびレポート ツリー定義が含まれます。 記事では、構成要素を整理およびロックする方法、および構成要素グループを操作する方法について説明します。"
+title: 財務諸表コンポーネント
+description: この記事では、財務諸表でコンポーネント、またはレポート定義の構成要素ブロックを使用する方法について説明します。 これらの構成要素には、行定義、列定義、およびレポート ツリー定義が含まれます。 記事では、構成要素を整理およびロックする方法、および構成要素グループを操作する方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368148"
 ---
-
 # <a name="financial-report-components"></a>財務諸表コンポーネント
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,7 @@ ms.lasthandoff: 08/13/2018
 
 ### <a name="export-a-building-block-group"></a>レポート パーツ グループのエクスポート
 
-レポート パーツ グループまたはレポート パーツ グループの特定のレポート パーツをエクスポートできます。 バックアップとしてエクスポートされたレポート パーツ グループを使用できます。 Finance and Operations のインストールの間でエクスポートしたデータをコピーすることもできます。 レポート デザイナーには、参照されているフォント スタイルおよび構成要素グループとともに分析コード セットが含まれています。
+レポート パーツ グループまたはレポート パーツ グループの特定のレポート パーツをエクスポートできます。バックアップとしてエクスポートされたレポート パーツ グループを使用できます。 Finance and Operations のインストールの間でエクスポートしたデータをコピーすることもできます。レポート デザイナーには、参照されているフォント スタイルおよびレポート パーツ グループとともに分析コード セットが含まれています。
 
 1. レポート デザイナーの **会社** メニューで、**構成要素グループ** をクリックします。
 2. **レポート パーツ グループ** ダイアログ ボックスで、エクスポートするレポート パーツ グループを選択し、**エクスポート** をクリックします。
@@ -128,4 +127,3 @@ ms.lasthandoff: 08/13/2018
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-

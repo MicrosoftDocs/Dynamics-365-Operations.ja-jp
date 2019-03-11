@@ -1,34 +1,34 @@
 ---
-title: "配置オプション"
-description: "Microsoft Dynamics 365 for Finance and Operations は、クラウドまたはオンプレミスでの業務プロセスの実行をサポートしています。 このトピックでは、各種の展開オプションについて説明します。"
+title: 配置オプション
+description: Microsoft Dynamics 365 for Finance and Operations は、クラウドまたはオンプレミスで、業務プロセスの実行をサポートするようになりました。 このトピックでは、各種の展開オプションについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: e5a34a5b116d53f53953290cff9f00c94778d506
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369622"
 ---
 # <a name="deployment-options"></a>配置オプション
 
 [!include [banner](../includes/banner.md)]
 
-これで、クラウドまたはオンプレミスの Microsoft Dynamics 365 for Finance and Operations を配置できます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
+Microsoft Dynamics 365 for Finance and Operations をクラウドにまたはオンプレミスで展開できるようになりました。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
 > [!IMPORTANT]
 > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。 
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="why-on-premises"></a>オンプレミスを使用する理由
 オンプレミス展開では、既存のデータ センター投資を活用することができます。 顧客は、ビジネスの規制およびコンプライアンスのニーズを満たすため、Azure データ センターがない地域のデータ主権ルールに準拠するように、または限られた公共インフラストラクチャを持つ地域でビジネス継続性を確保するように、企業のプリファレンスを構成することもできます。 
 
-顧客のビジネス データとプロセスはクラウドから切断され、顧客やパートナーのデータ センターのローカルで保存、および実行されます。 一部の接続は、クラウド ベースのアプリケーション ライフサイクル管理サービスである Microsoft Dynamics Lifecycle Services (LCS) を通じて有効になるシステムの管理と更新に必要です。 コンフィギュレーションおよびアプリケーションのカスタマイズに関連する顧客データは、クラウドに格納されている場合があります。 
+顧客のビジネス データとプロセスはクラウドから切断され、顧客やパートナーのデータ センターのローカルで保存、および実行されます。 なんらかの接続が、クラウド ベースのアプリケーション ライフサイクル管理サービスである Microsoft Dynamics Lifecycle Services (LCS) を通じて有効になるシステムの管理と更新に必要です。 コンフィギュレーションおよびアプリケーションのカスタマイズに関連する顧客データは、クラウドに格納されている場合があります。 
 
 独自のデータ センターで Finance and Operations を実行する選択をした顧客は、オンプレミス配置オプションはその他の配置オプションとして同様のユーザー インターフェイスおよびアプリケーション機能を持ちます。 ただし、顧客は次の責任を負う必要があります。
 
@@ -59,5 +59,4 @@ ms.lasthandoff: 08/09/2018
 これらの機能を配置および管理するための原価が増えると、配置コストおよび総保有コスト (TCO) の増大につながる可能性があります。 Finance and Operations ソフトウェアおよび更新プログラムを展開するためのツールは、Lifecycle Services を通じてパートナーおよび顧客に提供されます。 クラウド展開オプションとは異なり、Advanced Analytics サービスと Azure Machine Learning サービスはオンプレミス展開オプションに含まれていません。 
 
 オンプレミス オプションではまだ有効になっていない機能がいくつかあります。 これらの機能は、将来の更新で利用可能になります。 詳細については、[オンプレミス配置で実装されていない機能](../../fin-and-ops/get-started/features-not-implemented-on-prem.md) を参照してください。
-
 

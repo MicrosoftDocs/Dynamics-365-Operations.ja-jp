@@ -1,14 +1,14 @@
 ---
-title: "1 つの伝票"
-description: "財務仕訳帳の 1 つの伝票 (一般仕訳帳、固定資産仕訳帳、仕入先支払仕訳帳など) を使用して、1 つの伝票のコンテキストで複数の補助元帳トランザクションを入力できます。"
+title: 1 つの伝票
+description: 財務仕訳帳の 1 つの伝票 (一般仕訳帳、固定資産仕訳帳、仕入先支払仕訳帳など) を使用して、1 つの伝票のコンテキストで複数の補助元帳トランザクションを入力できます。
 author: kweekley
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
+ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 26ae31efe55eeaf6d09ef14112811ea8977bfb0a
-ms.openlocfilehash: 62c30ea748c49b0a3cfe544c7ba10eb52389c50a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/05/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308555"
 ---
-
 # <a name="one-voucher"></a>1 つの伝票
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ ms.lasthandoff: 11/05/2018
 - **2018 年春リリース** – 既定では、**総勘定元帳パラメーター** ページの**一般**タブの **1 つの伝票内で複数のトランザクションを許可する**パラメーターで、この機能は既定で無効になります。 ただし、組織にこのトピックの後半に記載されている機能的なギャップの 1 つに該当するシナリオがある場合、機能をオンにできます。
 
     - 顧客が 1 つの伝票を必要としないビジネス シナリオがある場合、機能をオンにしないでください。 Microsoft は、別のソリューションが存在するにもかかわらずこの機能が使用されている場合、このトピックで後から識別された領域の「バグ」を修正しません。
-    - 機能のギャップのいずれかに機能が必要でない限り、Microsoft Dynamics 365 for Finance and Operations への統合に 1 つの伝票を使用しないでください。
+    - 機能的なギャップのいずれかに必要な機能でない限り、 Microsoft Dynamics 365 for Finance and Operations への統合に 1 つの伝票を使用しないでください。
 
 - **以降のリリース** – すべての機能的なギャップが埋まります。 顧客および独立系ソフトウェア ベンダー (ISV) は、新機能に対応するのに十分な時間が必要なので、**機能的なギャップが埋まり新機能が提供された後に、 1 つの伝票が完全に無効になるまでには、少なくとも 1 年を要します**。 たとえば、業務プロセス、エンティティ、統合を更新する必要がある場合があります。
 

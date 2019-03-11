@@ -1,13 +1,13 @@
 ---
-title: "レポート ソリューションの作成"
-description: "このチュートリアルでは、データをエクスポートしてレポートを作成する方法、定義済みのビューを展開してチャートにナビゲーションを追加する方法、フリーフォームのレポート デザイナーを使用する方法、およびパラメータの操作方法をカスタマイズする方法について説明します。"
+title: レポート ソリューションの作成
+description: このチュートリアルでは、データをエクスポートしてレポートを作成する方法、定義済みのビューを展開してチャートにナビゲーションを追加する方法、フリーフォームのレポート デザイナーを使用する方法、およびパラメータの操作方法をカスタマイズする方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,29 +17,28 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4e5ff0918ad7154c5c9c2cda85e861ec241f7529
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369813"
 ---
-
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
 [!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、データをエクスポートしてレポートを作成する方法、定義済みのビューを展開してチャートにナビゲーションを追加する方法、フリーフォームのレポート デザイナーを使用する方法、およびパラメータの操作方法をカスタマイズする方法について説明します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
-このチュートリアルでは、Microsoft Dynamics 365 for Finance and Operations 環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。
+このチュートリアルでは、ユーザーは、Microsoft Dynamics 365 for Finance and Operations 環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。
 
 ## <a name="key-concepts"></a>重要な概念
 - Finance and Operations でレポートを作成および使用するさまざまな方法を説明する
 - フォームおよびワークスペースの埋め込みの集計レポートへの対話機能の追加
 - フレームワーク拡張を使用して、SSRS ベースのビジネス文書のパラメーター エクスペリエンスをカスタマイズする
-- Microsoft Excel を含む外部のツールを使用してレポートを作成するリスト ページのデータをエクスポート
+- Microsoft Excel を含む外部のツールを使用してレポートを作成するリスト ページのデータをエクスポートする
 - Visual Studio 2015 で強化された開発ツールを使用して最新のレポート デザインを作成する
 
 ## <a name="whats-new-in-reporting"></a>レポートの新機能とは
@@ -67,7 +66,7 @@ ms.lasthandoff: 08/13/2018
 - **Excel 統合** – Microsoft Excel を使用したデータ管理と分析が可能
 - **埋め込み分析** – グラフやグリッドなどのネイティブ コントロールを使用してワークスペースに集計データを追加する
 - **レポート サービス** – SSRS ベースのソリューションを使用して精度が必要なビジネス ドキュメントを作成します
-- **Power BI 統合** – どこにでもアクセスできる作成者とレポートの共有
+- **Power BI 統合** – どこからでもアクセスできるレポートの作成と共有
 - **Management Reporter** – 財務諸表を作成するユーザーを支援するように設計されています。
 
 次のテーブルを使用して、これらのレポート ツールの基本特性を比較できます。
@@ -77,7 +76,7 @@ ms.lasthandoff: 08/13/2018
 | Excel               | Power User | Power User | トランザクションの                | 外部品目番号          | 自由書式 |
 | 組み込み型 BI         | 開発者  | すべてのユーザー  | 集約                   | 内部          | モデル化済み   |
 | SSRS レポート         | 開発者  | すべてのユーザー  | トランザクションと集計 | 内部/外部 | 自由書式 |
-| パワー BI            | Power User | すべてのユーザー  | 集約                   | 内部/外部 | 自由書式 |
+| Power BI            | Power User | すべてのユーザー  | 集約                   | 内部/外部 | 自由書式 |
 | Management Reporter | Power User | Power User | トランザクションの                | 外部品目番号          | モデル化済み   |
 
 ## <a name="create-a-report-using-list-pages"></a>リスト ページを使用してレポートを作成する
@@ -112,11 +111,11 @@ ms.lasthandoff: 08/13/2018
 - リアルタイムのビジネス情報への直接アクセス
 
 ## <a name="expand-predefined-views-and-add-navigation-to-charts"></a>定義済みのビューを展開し、グラフへのナビゲーションを追加
-ビジネス インテリジェンスは組織のすべてのレベルで役に立ちます。 埋め込みコントロールを使用して、ターゲット ペルソナに基づいて最も関連性の高い情報を提供します。 Microsoft Dynamics 365 for Finance and Operations のネイティブ コントロールは、通知された意思決定を許可する集計データと対話する直観的かつ便利な方法をユーザーに提供します。
+ビジネス インテリジェンスは組織のすべてのレベルで役に立ちます。 埋め込みコントロールを使用して、ターゲット ペルソナに基づいて最も関連性の高い情報を提供します。 Microsoft Dynamics 365 for Finance and Operations のネイティブ コントロールは、集計データと対話する直観的かつ便利な方法をユーザーに提供し、十分な情報を得たうえでの意思決定を可能にします。
 
 ### <a name="create-development-project"></a>開発プロジェクトの作成
 
-1. デスクトップで、**Visual Studio 2015** ショートカットを右クリックし、**管理者として実行**を選択して開発環境を開きます。
+1. デスクトップで、**Visual Studio 2015** ショートカットを右クリックして、**管理者として実行**を選択して開発環境を開きます。
 2. ツール バーで、**表示**をクリックし、**アプリケーション エクスプローラー**を選択します。
 3. **フリート管理**モジュールで、**アプリケーション エクスプローラー**を使用して **FMReservationsReport** フォームを検索します。
 4. **アプリケーション エクスプローラーの**検索結果で、**FMReservationsReport** フォームを右クリックしてから、**新しいプロジェクトに追加**を選択します。
@@ -173,7 +172,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 
 [![レポート デザイナー](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
-上記は、Visual Studio 2015 Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は AX EDT に基づいてレポート本文のデータをフォーマットするために AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](https://msdn.microsoft.com/en-us/library/bb522712.aspx) を参照してください。
+上図は、Visual Studio 2015 Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](https://msdn.microsoft.com/en-us/library/bb522712.aspx) を参照してください。
 
 ## <a name="customizing-the-parameter-experience"></a>パラメータ経験のカスタマイズ
 レポート フレームワークは、モデル化されたソリューションを使用して対処できない要件を持つ先進的なソリューションを促進するため、サービスの拡張機能を通じて柔軟性を提供します。 VS デザイナーを使用して、基本的なパラメーターの書式設定、グループ化、入力の検証を追加します。 X++ ベースのデータ コントラクト検証はより高度なシナリオで使用可能です。 ユーザー インターフェイス (UI) ビルダ クラスを追加して、レポートを実行する前にセッション入力を促すパラメータ ウィンドウをカスタマイズすることを検討してください。 これらのカスタム拡張機能は、次の機能に有効です。
@@ -228,7 +227,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 ### <a name="import-the-section-resources"></a>セクション リソースをインポートします。
 
 1. ブラウザー セッションを終了して、Visual Studio プロジェクトに戻ります。
-2. ツールバーで、**DYNAMICS AX** をクリックし、**プロジェクトのインポート…** を選択します。
+2. ツールバーで、**DYNAMICS AX** をクリックして、**プロジェクトのインポート…** を選択します。
 3. ファイル名ウィンドウで、C:\\FmLab\\Lab10-3 を参照して、**FMRentalDetailsReport.axpp** を選択してから**開く**をクリックします。
 4. プロジェクト ファイルの場所テキスト ボックスに、C:\\FmLab\\Lab10-3 と入力します。
 5. **現在のソリューション** オプション ボタンをオンにします。
@@ -247,4 +246,3 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 - 電子メール サポート、バッチによるスケジュール実行、および印刷アーカイブを含む組み込みのバック オフィス ドキュメント管理機能
 - Finance and Operations フォームやその他のレポートへドリルダウン ナビゲーション可能なパラメーター化されたビュー
 - 地方自治体が規制するビジネス慣行に準拠した正確なドキュメントの作成に使用
-

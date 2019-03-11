@@ -1,13 +1,13 @@
---- 
-title: "継続的計画の作成"
-description: "組織が育ち、継続的計画を考慮すると、同様のスキルを持つ別の人物を見つけたい場合があります。"
+---
+title: 継続的計画の作成
+description: 組織が育ち、継続的計画を考慮すると、同様のスキルを持つ別の人物を見つけたい場合があります。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339191"
 ---
 # <a name="develop-succession-plan"></a>継続的計画の作成
 
@@ -59,5 +59,4 @@ ms.lasthandoff: 10/16/2018
 27. [結果] をクリックします。
 28. [レポート] をクリックします。
     * レポートでは、最適なマッチがレポートの先頭に一覧表示されます。  ギャップのある要素が一覧されていることを確認できます。  これは、スキル マッピングに表示されるレベルと、従業員に割り当てられたスキル レベルとの差です。  
-
 

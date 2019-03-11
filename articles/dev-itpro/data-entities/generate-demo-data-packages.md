@@ -1,13 +1,13 @@
 ---
-title: "データ パッケージを使用してデモ データを生成します"
-description: "このトピックでは、デモ データ パッケージを使用して、システムのデータを生成する方法について説明します。"
+title: データ パッケージを使用してデモ データを生成します
+description: このトピックでは、デモ データ パッケージを使用して、システムのデータを生成する方法について説明します。
 author: ryansandness
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: b2a8eb208cf65bcc91b00e4f3192355fef45e226
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368488"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 
 [!include [banner](../includes/banner.md)]
 
-以前のリリースでは、Microsoft Dynamics 365 for Finance and Operations のデモ データがデータベースとして配信されます。 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 では、デモ データのサブセットがデータ パッケージとしてリリースされています。 これらのパッケージは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリで使用できます。 パッケージは、空の環境に読み込むことができるように設計されています。
+以前のリリースでの Microsoft Dynamics 365 for Finance and Operations のデモ データはデータベースとして提供されます。 Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3では、デモ データのサブセットは、データ パッケージとしてリリースされています。 これらのパッケージは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリで使用できます。 パッケージは、空の環境に読み込むことができるように設計されています。
 
 デモ データを配信するため、データベースの代わりにデータ パッケージを使用する利点を次に示します。
 
@@ -239,4 +239,3 @@ ms.lasthandoff: 08/13/2018
 すべてのトランザクション エンティティの後でデータ プロジェクトの最後に**投稿準備完了**エンティティを挿入します。 データ プロジェクトで、トランザクション エンティティに使用される順序番号より大きい順序番号を指定します。
 
 複数のトランザクションが混在している場合、一部のトランザクションを処理する必要がある一方で、その他のトランザクションは処理できないため、日付とドキュメントの範囲を使用し処理されるトランザクションを制限します。 範囲を使用できない場合は、未転記のトランザクションの個別のデータ パッケージを使用する必要があります。
-

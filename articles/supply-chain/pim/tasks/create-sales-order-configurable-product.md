@@ -1,13 +1,13 @@
---- 
-title: "コンフィギュレーション可能な製品の販売注文の作成"
-description: "この手順では、販売注文で製品にコンフィギュレーション テンプレートを適用する方法を示します。"
+---
+title: コンフィギュレーション可能な製品の販売注文の作成
+description: この手順では、販売注文で製品にコンフィギュレーション テンプレートを適用する方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, PCRuntimeConfigurator, PCTemplateConfigurationSelection
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 882198bf07233867b54579b986f93f5c1b46c1b6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 646606237f593d24792a0ae072948f2e12782283
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364744"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>コンフィギュレーション可能な製品の販売注文の作成
 
@@ -52,5 +52,4 @@ ms.lasthandoff: 09/29/2017
 14. ページを閉じます。
 
 ## <a name="select-the-product-configuration"></a>製品コンフィギュレーションの選択
-
 

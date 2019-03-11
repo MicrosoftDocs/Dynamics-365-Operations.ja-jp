@@ -1,13 +1,13 @@
 ---
-title: "オンプレミス配置でのドキュメントの生成、発行、および印刷"
-description: "このトピックでは、オンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。"
+title: オンプレミス配置でのドキュメントの生成、発行、および印刷
+description: このトピックでは、オンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99b2caa8d0aeee8d09a29c50cbe3ad335367adce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368982"
 ---
-
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開におけるドキュメントの生成、発行、印刷の機能について説明します。 Finance and Operations は、Microsoft SQL Server Reporting Services (SSRS) によるエンタープライズ ドキュメントの生成に対する、完全に統合された経験を提供します。 任意のサポートされているデバイスからは、ユーザーは、業務プロセスにリンクされている業界標準のドキュメントを生成できます。 これらのドキュメントには、請求書、小切手、梱包明細が含まれています。 ユーザーがネットワーク プリンターに安全に接続できるように、管理者は組み込みのツールを使用してサービスを構成します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。 Finance and Operations は、Microsoft SQL Server Reporting Services (SSRS) によるエンタープライズ ドキュメントの生成に対する、完全に統合された経験を提供します。 任意のサポートされているデバイスからは、ユーザーは、業務プロセスにリンクされている業界標準のドキュメントを生成できます。 これらのドキュメントには、請求書、小切手、梱包明細が含まれています。 ユーザーがネットワーク プリンターに安全に接続できるように、管理者は組み込みのツールを使用してサービスを構成します。
 
 Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構築されたソリューションをアップグレード、または [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) で利用可能なモダン ソリューションを活用することができます。
 
@@ -83,4 +82,3 @@ class Controller extends SrsReportRunController
     }
 }
 ```
-

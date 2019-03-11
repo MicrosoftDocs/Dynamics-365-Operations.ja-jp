@@ -1,13 +1,13 @@
 ---
-title: "新規または更新されたタスク ガイド (2016 年 11 月)"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 -- すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。"
+title: 新規または更新されたタスク ガイド (2016 年 11 月)
+description: このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,28 +17,27 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348920"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>新規または更新されたタスク ガイド (2016 年 11 月)
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 – すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
-(2016 年 11 月 – すべての言語) APQC 統合ライブラリでは、Microsoft Dynamics 365 for Operations、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 3、Microsoft Dynamics AX Platform 更新プログラム 2、Dynamics AX 2016 年 5 月の更新プログラム、Microsoft Dynamics AX 2016 年 2 月のリリースのヘルプに使用されるタスク ガイドが含まれます。 これらのリリースに関する詳細については、[新規または変更](whats-new-changed.md)を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+APQC 統合ライブラリ (2016 年 11 月 – すべての言語) には、Microsoft Dynamics 365 for Operations、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 3、Microsoft DynamicsAX プラットフォーム更新プログラム 2、Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[新規または変更](whats-new-changed.md)を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
 
 > [!NOTE]
-> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイドが、Dynamics 365 for Operations 2016 年 11 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンでサポートされていません。
+> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイド  Dynamics 365 for Operations 2016 年 11 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。
 
 ### <a name="accounts-payable"></a>買掛金管理
 
-| BPM 明細行                                                                                           | 国/地域 |
+| BPM ライン                                                                                           | 国/地域 |
 |----------------------------------------------------------------------------------------------------|----------------|
 | 承認仕訳帳を使用した AP システムの主請求書データ                                               | グローバル         |
 | 仕入先請求書を使用した AP システムの主請求書データ (一致する仕入先請求書の入力と転記） | グローバル         |
@@ -549,4 +548,3 @@ ms.lasthandoff: 12/18/2018
 [利用可能な新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
 [利用可能な新規または更新されたタスク ガイド (2016 年 8 月](new-updated-task-guides-available-august-2016.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "積荷計画ワークベンチを使用した積荷および出荷の計画"
-description: "この手順では、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。"
+---
+title: 積荷計画ワークベンチを使用した積荷および出荷の計画
+description: この手順では、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f840a4c15305af5f55451ae7f1cec2da25e685a4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343906"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>積荷計画ワークベンチを使用した積荷および出荷の計画
 
@@ -65,5 +65,4 @@ ms.lasthandoff: 09/29/2017
 5. [割り当て] をクリックします。
 6. ページを閉じます。
 7. ページを閉じます。
-
 

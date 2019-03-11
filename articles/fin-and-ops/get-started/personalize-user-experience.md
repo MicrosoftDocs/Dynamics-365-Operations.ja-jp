@@ -1,13 +1,13 @@
 ---
-title: "ユーザー エクスペリエンスのパーソナライズ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations をカスタマイズする方法を説明します。"
+title: ユーザー エクスペリエンスのパーソナライズ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations を個人用設定する方法について説明します。
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
-ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363479"
 ---
-
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations をカスタマイズする方法を説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations を個人用設定する方法について説明します。
 
 Finance and Operations の個人用設定には 3 つの基本クラスがあります。
 
@@ -115,7 +114,7 @@ Finance and Operations の個人用設定には 3 つの基本クラスがあり
 - **挿入**ボタンを使用して、ページに挿入可能な要素の一覧を確認します。
 
     - **挿入**下の**フィールド**ツールを選択し、ページにフィールドを追加します。 **フィールド**ツールを使用する場合、ページの定義の一部ではあるが、ページに現在表示されていないフィールドのみを追加できます。 現在のページ定義に含まれない新しいフィールドを作成する方法の情報は、[カスタム フィールド](user-defined-fields.md)を参照してください。 **フィールド**ツールを選択したら、フィールドを追加したいグループまたはエリアを最初に選択する必要があります。 ダイアログ ボックスは、選択したグループまたはエリアに関連付けられたフィールドの一覧を表示します。 ダイアログ ボックスでは、追加する 1 つ以上のフィールドを選択してから、**挿入**を選択します。 以前に追加したフィールドを削除するには、プロセスを繰り返しますが、ダイアログ ボックスのフィールドの選択を解除します。
-    - **挿入**下の **PowerApp** ツールを選択して、Microsoft PowerApps を使用して作成されたアプリをページ内に埋め込みます。 PowerApps アプリをページに埋め込む方法の詳細については [PowerApps の埋め込み](embed-power-apps.md)を参照してください。
+    - Microsoft PowerApps を使用して作成されたアプリをページに埋め込むには、**挿入**の下の **PowerApp** ツールを選択します。 PowerApps アプリをページに埋め込む方法の詳細については [PowerApps の埋め込み](embed-power-apps.md)を参照してください。
 
 - **管理**ボタンを選択すると、現在のページのすべての個人用設定に関連する管理オプションのリストが表示されます。
 
@@ -171,4 +170,3 @@ Finance and Operations の個人用設定には 3 つの基本クラスがあり
 **分析コード表示設定**はすべてのページに適用され、個々のページの在庫分析コード フィールドの個人用設定をすべて上書きします。
 
 結果として、前の例では、バッチ番号在庫分析コードの列を表示したくない場合、テーブルの**寸法を表示**オプションの一部としてその寸法をクリアする必要があります。 最終的には、この変更は 1 つの特定のページにだけでなく、すべてのページに適用されます。
-

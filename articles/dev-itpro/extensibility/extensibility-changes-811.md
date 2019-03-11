@@ -1,30 +1,29 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.1 でリリースされた拡張機能を一覧表示します。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更
+description: これのトピック、Dynamics 365 for Finance and Operations バージョン 8.1.1 に実装された拡張機能を一覧します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 11/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-10-010
 ms.dyn365.ops.version: App 8.1.1
+ms.openlocfilehash: 2c8fc3af33d32d57073b48399bf212e42b388362
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d6c7c2af4dc6088d03a214ae2b289aaaa7244100
-ms.openlocfilehash: 29b6582fe2419115c57b369dac3b45e4ad6e35b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369699"
 ---
-
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-811"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
@@ -470,6 +469,5 @@ ms.lasthandoff: 11/03/2018
 
 - 分析コード ベースの割引
 - アルゴリズムを検索する InventPosting を再設計します 
-
 
 

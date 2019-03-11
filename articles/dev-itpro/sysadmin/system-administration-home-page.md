@@ -1,13 +1,13 @@
 ---
-title: "システム管理ホーム ページ"
-description: "このトピックは、システム管理者が利用できるリソースを一覧表示します。"
+title: システム管理ホーム ページ
+description: このトピックは、システム管理者が利用できるリソースを一覧表示します。
 author: sericks007
 manager: AnnBe
 ms.date: 11/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8b66a2df70c933845d8eb33a2775465337493b63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 02afb36ed6b8e1a65ab1b0c6b6abe58237be3ef7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369569"
 ---
-
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -95,12 +94,12 @@ Microsoft Office との統合により、Microsoft Office スイートを活用�
 - [Excel アドインの使用](../office-integration/use-excel-add-in.md)
 - [[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)
 - [[Excel で明細行を開く] メニューへのテンプレートの追加](../user-interface/add-templates-open-lines-excel-menu.md)
-- [[Microsoft Office で開く] メニューのカスタマイズ](../office-integration/customize-open-office-menu.md)
+- [Microsoft Office で開くメニューのカスタマイズ](../office-integration/customize-open-office-menu.md)
 - [電子メールのコンフィギュレーションと送信](../../fin-and-ops/organization-administration/configure-email.md)
 - [Office 統合のトラブルシューティング (タスク ガイド)](../office-integration/office-integration-troubleshooting.md)
 
 ## <a name="mobile"></a>携帯電話
-Microsoft Dynamics 365 for Unified Operations モバイル アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
+Microsoft Dynamics 365 for Unified Operations Mobile アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
 
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
 - [モバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)
@@ -113,4 +112,3 @@ Microsoft Dynamics 365 for Unified Operations モバイル アプリにより、
 - [メンテナンス モード](maintenance-mode.md)
 - [コンフィギュレーション済みのシステム アカウント](pre-configured-system-accounts.md)
 - [B2B ユーザーの Azure AD へのエクスポート](implement-b2b.md)
-

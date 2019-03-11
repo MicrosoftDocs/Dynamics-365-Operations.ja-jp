@@ -1,13 +1,13 @@
 ---
-title: "日本の固定資産配賦ルール"
-description: "この記事は、日本の固定資産配賦ルールについてよく寄せられる質問に回答します。"
+title: 日本の固定資産配賦ルール
+description: この記事は、日本の固定資産配賦ルールについてよく寄せられる質問に回答します。
 author: yijialuan
 manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e1eeea969350cafe570a17d6343722902458e672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 554c350961baed8be8f37854dd1b095d4342ae0e
-ms.openlocfilehash: f0a78d0407ad52c5f42fad18d0b369f5b6829ae1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/21/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371082"
 ---
-
 # <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ ms.lasthandoff: 03/21/2018
 
 ### <a name="rounded-up-currency"></a>通貨の切り上げ
 
-この例では、固定資産の減価償却費の金額が 170 通貨単位です。 自分の法人の 100 種類の分析コードごとに減価償却費の 1% を割り当てる配賦ルールを設定します。 2 つの通貨単位間の中間値よりも大きい小数の通貨単位は、もっとも近い通貨単位に切り上げることを指示する丸めルールを設定します。 このシナリオでの分析コードごとの減価償却費の計算方法をここに示します。
+この例では、固定資産の減価償却費の金額が 170 通貨単位です。 自分の法人の 100 種類の分析コードごとに減価償却費の 1% を割り当てる配賦ルールを設定します。 2 つの通貨単位間の中間値よりも大きい小数の通貨単位は、もっとも近い通貨単位に切り上げることを指示する丸めルールを設定します。このシナリオでの分析コードごとの減価償却費の計算方法をここに示します。
 
 -   分析コードごとの元の減価償却費 = 1.70 通貨単位
 -   切り上げた分析コードごとの減価償却費 = 2.00 通貨単位
@@ -62,4 +61,3 @@ ms.lasthandoff: 03/21/2018
 
 ## <a name="additional-resources"></a>その他のリソース
 - [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)
-

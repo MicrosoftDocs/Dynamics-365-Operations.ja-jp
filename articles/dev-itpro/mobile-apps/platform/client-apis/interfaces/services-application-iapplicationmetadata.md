@@ -1,28 +1,27 @@
 ---
-title: "ApplicationMetadata タイプ"
-description: "アプリケーションの宣言メタデータを表します"
+title: ApplicationMetadata タイプ
+description: アプリケーションの宣言メタデータを表します
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 3d38b632298ccb4457c6a741f3d42777f2aa8306
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368458"
 ---
-
 # <a name="applicationmetadata-type"></a>ApplicationMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -86,6 +85,5 @@ Id: 文字列
 タイトル: 文字列
 
 アプリケーションのタイトル。
-
 
 

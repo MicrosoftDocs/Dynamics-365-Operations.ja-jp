@@ -1,13 +1,13 @@
 ---
-title: "新しいウィンドウで開く機能を使用してページを並べて表示"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations でページを並べて表示する方法を説明します。"
+title: 新しいウィンドウで開く機能を使用してページを並べて表示
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations でページを並べて表示する方法を説明します。
 author: aneesmsft
 manager: AnnBe
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330175"
 ---
-
-# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>新しいウィンドウで開く機能を使用してページを並べて表示
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>[新しいウィンドウで開く] 機能を使用してページを並べて表示する
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、Microsoft Dynamics 365 for Finance and Operations でページを並べて表示する方法を説明します。
+この記事では、Microsoft Dynamics 365 for Finance and Operations でページを並べて表示する方法を説明します。
 
 Microsoft Dynamics 365 for Finance and Operations により、効率的にタスクを実行できます。 場合によっては、タスクをすばやく完了するために複数ページを並べて表示することができます。 たとえば、複数の仕訳帳で明細行を検証または入力することができます。 通常、そのためには、仕訳帳の一覧が表示されたページや特定の仕訳帳の明細行が表示されたページの間を行き来する必要があります。 ただし、**新しいウィンドウで開く**機能は、タスクをすばやく実行できるように、これらのページを並べて表示できます。
 
@@ -50,4 +49,3 @@ Microsoft Dynamics 365 for Finance and Operations により、効率的にタス
 **新しいウィンドウで開く**機能は、ウィンドウで 1 つ以上のページが開いている場合にのみ使用できます。 また、ポップアップ ウィンドウは、開いているページがなくなると (つまり、そのウィンドウで最後のページが閉じると) 自動的に閉じます。 アプリケーションの別の領域に移動すると、Finance and Operations も開いているページを閉じます。 したがって、ポップアップ ウィンドウが開いているときに、アプリケーションで別の領域に移動すると、システムがそれらのウィンドウ内のページを閉じるので、ポップアップ ウィンドウは自動的に閉じます。
 
 ポップアップ ウィンドウの上部バーは読み取り専用で、その中にページが開かれ、会社に関する情報が表示されます。 また、ポップアップ ウィンドウは、メインの Finance and Operations ブラウザー ウィンドウに依存します。 メイン ウィンドウが閉じるか、または更新されると、開いているすべてのポップアップ ウィンドウは、読み取り専用になります。 これは、これらのウィンドウに情報を表示することはできますが、その情報とやり取りができないことを示します。
-

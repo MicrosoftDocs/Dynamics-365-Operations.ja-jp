@@ -1,13 +1,13 @@
---- 
-title: "輸出信用状"
-description: "この手順は、[輸出信用状] のプロセスを説明します。"
+---
+title: 輸出信用状
+description: この手順は、[輸出信用状] のプロセスを説明します。
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, DefaultDashboard, SalesTableListPage, SalesCreateOrder, SalesTable, BankLCExport, SalesEditLines,  LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 730a6cc6ed4872f8d0ad92b89665587f472f6791
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335902"
 ---
 # <a name="export-letter-of-credit"></a>輸出信用状
 
@@ -139,5 +139,4 @@ ms.lasthandoff: 10/16/2018
 2. 一覧で、目的のレコードを見つけ、選択します。
 3. 一覧で、選択された行のリンクをクリックします。
     * [出荷ステータス] = [支払領収済] および [残高金額] = 0.00 となることを確認します。  
-
 

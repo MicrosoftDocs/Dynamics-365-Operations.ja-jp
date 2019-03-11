@@ -1,13 +1,13 @@
 ---
-title: "セキュリティ アップグレード アドバイザー ツールのユーザー ガイド"
-description: "Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前のバージョンの Microsoft Dynamics AX から Microsoft Dynamics AX 2012 にセキュリティ設定をアップグレードするプロセスを簡略化できます。"
+title: セキュリティ アップグレード アドバイザー ツールのユーザー ガイド
+description: Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前のバージョンの Microsoft Dynamics AX から Microsoft Dynamics AX 2012 にセキュリティ設定をアップグレードするプロセスを簡略化できます。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 30061
 ms.assetid: fda4d8e9-79a2-4ee2-831e-a90a9df2d980
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 6d5545580168dcd8fb335b6ebd4ac7ace11d83e2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369017"
 ---
-
 # <a name="security-upgrade-advisor-tool-user-guide"></a>セキュリティ アップグレード アドバイザー ツールのユーザー ガイド
 
 [!include [banner](../../includes/banner.md)]
@@ -64,7 +63,7 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 
 ### <a name="export-security-settings-from-an-environment-running-an-earlier-version-of-microsoft-dynamics-ax"></a>Microsoft Dynamics AX の以前のバージョンを実行している環境から、セキュリティ設定をエクスポート
 
-1.  Microsoft Dynamics AX の以前のバージョンを実行している環境で、次の XPO をインポートします: **Job\_ExportSecuritySettingsBulk.xpo**。
+1.  Microsoft Dynamics AX の以前のバージョンを実行している環境で、次の XPO をインポートします。**Job\_ExportSecuritySettingsBulk.xpo**。
 2.  X++ ジョブ **ExportSecuritySettingsBuild** を実行します。
 3.  メッセージが表示されたら、保存するファイルの名前を入力します。
 4.  ファイルを既知の場所にエクスポートして、後で取得します。
@@ -134,7 +133,7 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 </tr>
 <tr class="odd">
 <td><span class="ui">新規エントリ ポイント名</span></td>
-<td>エントリ ポイントが以前のバージョンの Microsoft Dynamics AX から Microsoft Dynamics AX 2012 に変更されている場合、スクリプトは、自動的に、新しいエントリ ポイント名に基づく特権をマップし、新しい名前でこの列に値を設定します。</td>
+<td>エントリ ポイントが以前のバージョンの Microsoft Dynamics AX から Microsoft Dynamics AX 2012 に変更されている場合、スクリプトは自動的に新しいエントリ ポイント名に基づく特権をマップし、新しい名前でこの列に値を設定します。</td>
 </tr>
 <tr class="even">
 <td><span class="ui">エントリ ポイント タイプ</span></td>
@@ -142,7 +141,7 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 </tr>
 <tr class="odd">
 <td><span class="ui">エントリ ポイント アクセス権限</span></td>
-<td>Microsoft Dynamics AX 2012 で一致するエントリ ポイントのアクセス許可。 この列には、<strong><span class="ui">ステータス</span></strong>列の値が<strong><span class="ui">完全一致</span></strong>または<strong><span class="ui">類似</span></strong>の場合にのみ値が含まれます。</td>
+<td>Microsoft DynamicsAX 2012 で一致するエントリ ポイントのアクセス許可。 この列には、<strong><span class="ui">ステータス</span></strong>列の値が<strong><span class="ui">完全一致</span></strong>または<strong><span class="ui">類似</span></strong>の場合にのみ値が含まれます。</td>
 </tr>
 <tr class="even">
 <td><span class="ui">エントリ ポイント 旧アクセス権限</span></td>
@@ -221,7 +220,7 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 
 一連番号 Excel のスプレッドシートを変更し、それらの設定を使用してロールを生成することはできません。 ただし、ツールを使用して、カスタム ロールおよび特権を生成できます。
 
-### <a name="what-happens-to-the-custom-menu-items-that-were-used-in-the-earlier-versions-of-microsoft-dynamics-ax"></a>Microsoft Dynamics AX の以前のバージョンで使用されていたカスタム メニュー項目はどうなったでしょうか ?
+### <a name="what-happens-to-the-custom-menu-items-that-were-used-in-the-earlier-versions-of-microsoft-dynamics-ax"></a>Microsoft Dynamics AX の以前のバージョンで使用されていたカスタム メニュー項目はどうなったでしょうか？
 
 コードのアップグレードが完了したシステムでこのツールを実行するとき、Microsoft Dynamics AX 2012 システムでメニュー項目と一致するものを検索します。 ただし、それらに対する権限はありません。 適用可能と思われる場合は、新しい権限を作成する必要があります。
 
@@ -244,7 +243,6 @@ Microsoft Dynamics AX Security Upgrade Advisor Tool を使用すると、以前�
 ### <a name="what-are-the-next-steps-to-complete-the-security-upgrade"></a>セキュリティのアップグレードを完了するための次の手順
 
 結果を使用して Excel スプレッドシートが生成された後は、ツールでロール生成と権限生成の機能を使用して、ロールと権限を自動的に作成することができます。 次に、ユーザーをそれらの役割に割り当ててシステムをテストし、アクセス権と公開されている機能が正確であることを検証します。
-
 
 
 

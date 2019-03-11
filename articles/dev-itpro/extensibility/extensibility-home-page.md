@@ -1,28 +1,28 @@
 ---
-title: "拡張機能のホーム ページ"
-description: "このトピックでは、拡張性に関するトピックへのリンクを提供します。"
+title: 拡張機能のホーム ページ
+description: このトピックでは、拡張性に関するトピックへのリンクを提供します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.translationtype: HT
-ms.sourcegitcommit: 3b7c2b72d97c42076e1f759e9c11c74cb17476c1
 ms.openlocfilehash: 6024a1654b9d16b381cbfd4c1cebcb917bdb8714
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369637"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 10/17/2018
 
 Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加価値再販業者 (VAR) や、さらには一部の顧客によって大幅にカスタマイズされます。 製品をカスタマイズする機能は、アプリケーション コードのオーバーレイによって長くサポートされてきた強みです。 クラウドへの移行を、柔軟なサービスの提供や頻繁な更新と合わせて行う場合、更新がカスタム ソリューションに及ぼす影響を小さくとどめるため、侵入性の低いカスタマイズが必要となります。 この新しいモデルは *拡張性* と呼ばれており、オーバーレイによるカスタマイズに取って代わる存在となりました。
 
-拡張性は、Microsoft Dynamics 365 for Finance and Operations と Microsoft Dynamics 365 for Retail における唯一のカスタマイズ フレームワークです。 オーバーレイはサポートされません。
+拡張性は、Finance and Operations と Microsoft Dynamics 365 for Retail における唯一のカスタマイズ フレームワークです。 オーバーレイはサポートされません。
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 
 この概要のトピックでは、カスタマイズに関する一般情報を取り上げています。 カスタマイズからオーバーレイを経て純粋な拡張ベース モデルに至る場合などに関する情報が含まれます。 このトピックでは、Microsoft への拡張性の要求を記録する方法と、よく寄せられる質問 (FAQ) への回答についても解説します。
 
@@ -43,9 +43,9 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 ## <a name="whats-new"></a>新機能
 このセクションでは、2017 年 7 月以降に行われた拡張性に関連する更新プログラムを一覧表示します。
 
-+ [Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張性の変更](changes-july-2017.md)
-+ [Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張性の変更](extensibility-changes-73.md)
-+ [Dynamics 365 for Finance and Operations リリース 8.0 の拡張性の変更](Changes-80.md)
++ [Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更](changes-july-2017.md)
++ [Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更](extensibility-changes-73.md)
++ [Dynamics 365 for Finance and Operations リリース 8.0 の拡張機能の変更](Changes-80.md)
 
 ## <a name="getting-started"></a>はじめに
 
@@ -105,7 +105,7 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 
 カスタマイズに関する情報は、さまざまなトピックが取り上げられるブログでも共有されます。 このセクションには、そのようなブログの一部への参照が含まれています。
 
-+ [Dynamics 365 for Finance and Operations の機能の拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
++ [Dynamics 365 for Finance and Operations の拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
 + [クラスの状態の機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
 + [拡張メソッド](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
 + [拡張可能な基本列挙型](http://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
@@ -113,7 +113,7 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 + [デリゲートを通じての応答](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
 + [onValidatingWrite へのサブスクライブ](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
 + [在庫分析コードの機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
-+ [Dynamics 365 for Finance and Operations での拡張機能の考え方の活用](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
++ [Dynamics 365 for Finance and Operations での拡張機能のご要望を採用します。](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
 
 ## <a name="how-do-i-create-an-extensible-solution"></a>拡張可能なソリューションを作成するには
 
@@ -131,4 +131,3 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 
 ## <a name="breaking-changes"></a>重大な変更
 ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。
-

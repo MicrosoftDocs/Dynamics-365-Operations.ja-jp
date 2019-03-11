@@ -1,33 +1,32 @@
 ---
-title: "新規または更新されたタスク ガイド (2017 年 12 月)"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 12 月 -- すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。"
+title: 新規または更新されたタスク ガイド (2017 年 12 月)
+description: このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 12 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 101eb8fd03303eb590dfef6f598ca507dc8f5548
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319641"
 ---
-
 # <a name="new-or-updated-task-guides-december-2017"></a>新規または更新されたタスク ガイド (2017 年 12 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 12 月 -- すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。
+このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 12 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。
 
 ## <a name="new-task-guides"></a>新規タスク ガイド
 
@@ -370,4 +369,3 @@ BPM 明細行が削除されると、BPM 明細行に関連付けられている
 **削除された BPM 明細行**
 
 - スケジュール済みかんばん作業の移動
-

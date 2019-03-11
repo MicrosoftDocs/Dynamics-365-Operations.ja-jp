@@ -1,13 +1,13 @@
 ---
-title: "店舗注文のフルフィルメント"
-description: "このトピックでは、店舗注文のフルフィルメントにおける概要を説明します。"
+title: 店舗注文のフルフィルメント
+description: このトピックでは、店舗注文のフルフィルメントにおける概要を説明します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363686"
 ---
-
 # <a name="store-order-fulfillment"></a>店舗注文のフルフィルメント
 
 [!include [banner](includes/banner.md)]
@@ -219,4 +218,3 @@ ms.lasthandoff: 01/04/2019
 - 作成日
 - 出荷日
 - 入荷日
-

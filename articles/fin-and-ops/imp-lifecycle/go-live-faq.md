@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの運用についてよく寄せられる質問に対する回答を提供します。"
+title: Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 author: sshashi7
 manager: AnnBe
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 0072548f50afbd6f11257c1ff3906ce20e636fd1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369918"
 ---
-
 # <a name="go-live-for-finance-and-operations-implementation-projects-faq"></a>Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの運用についてよく寄せられる質問に対する回答を提供します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 
 ## <a name="when-can-i-configure-and-request-my-production-environment"></a>実稼働環境をいつ構成および要求できますか ?
 
@@ -45,7 +44,7 @@ Go-live 評価/レビューは、[Microsoft FastTrack プログラム](../get-st
 
 ## <a name="i-want-to-request-my-production-environment-who-do-i-contact-for-a-go-live-assessmentreview"></a>実稼働環境を要求します。 Go-live アセスメント/レビューのために誰に連絡しますか。
 
-FastTrack ソリューション アーキテクトがプロジェクトに割り当てられている場合は、担当者に直接問い合わせます。 それ以外の場合、Microsoft Dynamics Lifecycle Services (LCS) に指定されている運用日付に基づいて、運用前チェックリストに記入し、運用日の数週間前に <go-live@microsoft.com> に送信するように指示する電子メールを受信します。 電子メールを受け取っておらず、稼動の準備ができている場合は、、[CustomerSource から稼働前のチェックリストをダウンロード](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops)でき、完了させ、<go-live@microsoft.com> に送信します。
+FastTrack ソリューション アーキテクトがプロジェクトに割り当てられている場合は、担当者に直接問い合わせます。 それ以外の場合、Microsoft Dynamics Lifecycle Services (LCS) に指定されている運用日付に基づいて、運用前チェックリストに記入し、運用日の数週間前に <go-live@microsoft.com> に送信するように指示する電子メールを受信します。 電子メールを受け取っておらず、稼働の準備ができている場合は、、[CustomerSource から稼働前のチェックリストをダウンロード](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops) して、それを完成させ、<go-live@microsoft.com> に送信します。
 
 ## <a name="the-production-button-isnt-available-in-lcs-how-do-i-request-my-production-environment"></a>生産ボタンは、LCS では使用できません。 実稼働環境を要求するにはどうすればよいですか。
 
@@ -116,4 +115,3 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>実稼働環境がダウンした場合はどうすればよいでしょうか ?
 
 稼働停止を報告するには、[[Lifecycle Services によって稼働停止を報告する新しいプロセス](https://blogs.msdn.microsoft.com/lcs/2017/12/18/report-production-outage-through-lcs/)] のブログ記事を参照してください。
-

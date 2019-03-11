@@ -1,30 +1,29 @@
 ---
-title: "モバイル ワークスペースのセキュリティを強化する"
-description: "このトピックでは、ワークスペースへのユーザー アクセスを制限する方法について説明します。"
+title: モバイル ワークスペースのセキュリティを強化する
+description: このトピックでは、ワークスペースへのユーザー アクセスを制限する方法について説明します。
 author: makhabaz
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
+ms.openlocfilehash: 97d5dff4d0715c39903a5e51d42c52efe084cd0e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a2fe5f66c3aca37f60025ecdc4698328e1b2e7e3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369363"
 ---
-
 # <a name="help-secure-mobile-workspaces"></a>モバイル ワークスペースのセキュリティを強化する
 
 [!include [banner](../../../includes/banner.md)]
@@ -51,4 +50,3 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="add-a-menu-item-and-override-the-workspacehidden-method"></a>メニュー項目を追加して、workspaceHidden メソッドを上書きする
 アプリで両方の先行メソッドを使用することができます。 メニュー項目はセキュリティ チェックを提供し、**workspaceHidden** メソッドには、ワークスペースの可視性に関連する追加ロジックが含まれています。
-

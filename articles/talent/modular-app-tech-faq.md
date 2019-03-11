@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 for Talent のモジュラー アプリのプロビジョニング"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent に含まれる Core Human Resources (HR) 機能を提供するために購入できるスタンドアロンのモジュラー アプリケーションをプロビジョニングする方法について説明します。 この機能は、Attract および Onboard などの追加エクスペリエンスを提供します。"
+title: Dynamics 365 for Talent のモジュラー アプリのプロビジョニング
+description: このトピックでは、Microsoft Dynamics 365 for Talent に含まれる Core Human Resources (HR) 機能を提供するために購入できるスタンドアロンのモジュラー アプリケーションをプロビジョニングする方法について説明します。 この機能は、Attract および Onboard などの追加エクスペリエンスを提供します。
 author: rschloma
 manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1e668c21baf6df584f47ed978b156b746ec3c180
 ms.openlocfilehash: 949695df931c2c01f1cc656478b39cde2c6d8879
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368489"
 ---
 # <a name="provisioning-for-the-dynamics-365-for-talent-modular-apps"></a>Dynamics 365 for Talent のモジュラー アプリのプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent には、Core Human Resources (HR) 機能および Attract や Onboard などの追加エクスペリエンスを提供する機能が含まれます。 この機能は、Web ダイレクトを通じたスタンドアロン モジュール アプリケーションとして購入することもできます。 Microsoft Dynamics 365 for Talent: Attract および Microsoft Dynamics 365 for Talent: Onboard SKU を含む例。 完全な Talent を購入するか、モジュラー アプリケーションを購入するのかによって、エクスペリエンスは多少異なります。
+Microsoft Dynamics 365 for Talent には、Core Human Resources (HR) 機能および Attract や Onboard などの追加エクスペリエンスを提供する機能が含まれます。 この機能は、Web ダイレクトを通じたスタンドアロン モジュール アプリケーションとして購入することもできます。 Microsoft Dynamics 365 for Talent: Attract および Microsoft Dynamics 365 for Talent: Onboard SKU などがその例です。 完全な Talent を購入するか、モジュラー アプリケーションを購入するのかによって、エクスペリエンスは多少異なります。
 
 モジュラー アプリケーションは、サービスの試用を開始したり、Web ダイレクトを通じて購入すると自動的にプロビジョニングされます。 顧客は Attract および Onboard の試用版を個別にサインアップできます。
 
@@ -45,4 +45,3 @@ Microsoft Dynamics Lifecycle Services (LCS) は Talent をプロビジョニン�
 [![国/地域に基づくモジュラー アプリケーションのプロビジョニング プロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
 Talent とは異なり、モジュラー アプリケーションでは各ユーザーがアクセス可能な環境のリストは維持されません。 ユーザーは、使用した最後の環境に自動的にサインインされます。 **設定**ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。
-

@@ -1,13 +1,13 @@
 ---
-title: "着荷の概要"
-description: "このトピックでは、着荷の概要の機能に関する情報を提供します。 着荷の概要ページはこの機能の一部で、受入品目として入庫が予定されているすべての品目の概要を提供します。"
+title: 着荷の概要
+description: このトピックでは、着荷の概要の機能に関する情報を提供します。 着荷の概要ページはこの機能の一部で、受入品目として入庫が予定されているすべての品目の概要を提供します。
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 43e49fb6e8deead7c6dfe24a25337aeb35f1fcc0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9c174dc7bf61ffab0d20c7685a29007e0b6e2e7e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356004"
 ---
-
 # <a name="arrival-overview"></a>着荷の概要
 
 [!include [banner](../includes/banner.md)]
@@ -122,4 +121,3 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="summary"></a>概要
 **着荷の概要**ページは、倉庫マネージャおよび倉庫作業者が、入荷プロセスの一部として実行する必要のある作業の概要を理解する助けになります。 このページは品目の着荷プロセスの開始にも使用でき、品目が倉庫入ってきた時から追跡できるよう保証します。
-

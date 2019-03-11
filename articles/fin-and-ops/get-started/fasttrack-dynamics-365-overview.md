@@ -1,13 +1,13 @@
 ---
 title: Microsoft FastTrack for Finance and Operations
-description: "このトピックでは、Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations の概要を示します。 FastTrack は、事業価値をより速く達成できるように、Microsoft Dynamics 365 を円滑かつ確実に移行できるように設計された顧客成功サービスです。"
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のMicrosoft FastTrack の概要を説明します。 FastTrack は、事業価値をより速く達成できるように、Microsoft Dynamics 365 を円滑かつ確実に移行できるように設計された顧客成功サービスです。
 author: margoc
 manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
+ms.openlocfilehash: 4500820beadb9057244dfbfe58ef5f02d70a3155
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
-ms.openlocfilehash: 3ff05fca0297411cd75511b359ef03f5e1dc884b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369989"
 ---
-
 # <a name="microsoft-fasttrack-for-finance-and-operations"></a>Microsoft FastTrack for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations は、事業価値をより速く達成できるように、Microsoft Dynamics 365 を円滑かつ確実に移行できるように設計された顧客成功サービスです。 FastTrack プログラムに参加すると、実装のベスト プラクティス、成功したロール アウトの計画、機能の拡張についてのガイダンスが受けられます。 ただし、自分のペースで実装します。 また、Finance and Operations を使用した経験を成功に導くためにコミットしている Microsoft エンジニアリング リソースにアクセスすることもできます。
+Microsoft Dynamics 365 for Finance and Operations の Microsoft FastTrack は、事業価値をより速く達成できように、Microsoft Dynamics を円滑かつ確実に移行できるように設計された顧客成功サービスです。 FastTrack プログラムに参加すると、実装のベスト プラクティス、成功したロール アウトの計画、機能の拡張についてのガイダンスが受けられます。 ただし、自分のペースで実装します。 また、Finance and Operations を使用した経験を成功に導くためにコミットしている Microsoft エンジニアリング リソースにアクセスすることもできます。
 
 ## <a name="microsoft-fasttrack-for-finance-and-operations-overview"></a>Microsoft FastTrack for Finance and Operations の概要
 
@@ -36,7 +35,7 @@ Finance and Operations はクラウドの異なる [配置オプション](../..
 
 ### <a name="fasttrack-for-cloud"></a>クラウドの FastTrack
 
-このサービスは、Finance and Operations をクラウドで実装している顧客向けに設計されています。 サービスは、新しい実装者のためだけではなく、既存の Microsoft Dynamics AX 2012 または Microsoft Dynamics AX 2009 実装からクラウド展開にアップグレードまたは移行している顧客のためにも設計されています。
+このサービスは、Finance and Operations をクラウドで実装している顧客向けに設計されています。 このサービスは、新しい実装のためだけではなく、既存の Microsoft Dynamics AX 2012 または Microsoft Dynamics AX 2009 の実装からクラウド展開にアップグレードまたは移行している顧客のためにも設計されています。
 
 ### <a name="fasttrack-for-on-premises"></a>オンプレミスの FastTrack
 
@@ -52,7 +51,7 @@ Finance and Operations はクラウドの異なる [配置オプション](../..
 
 ## <a name="eligibility-for-fasttrack-for-finance-and-operations"></a>FastTrack for Finance and Operations の適格性
 
-FastTrack を開始するには、プロジェクトがライセンスの最少要件を満たしている必要があります。 詳細については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)を参照してください。 現時点では、 Dynamics 365 Unified Operations 計画または同等のもののために最低20のシートがあります。
+FastTrack を開始するには、プロジェクトがライセンスの最少要件を満たしている必要があります。 詳細については、[Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。 現時点では、Dynamics 365 Unified Operations の計画または同等のもののために最低 20 のシートがあります。
 
 Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワークスペースがプロビジョニングされた後、FastTrack チームは現在のプロジェクト チームに連絡してプロジェクトに参加し、プログラムに関する情報を提供します。 必要なアクションはありません。 LCS のユーザー情報が最新の状態であり、設定の電子メール アドレスが監視されていることを確認する必要があります。
 
@@ -76,7 +75,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で**実装プロジェクト** ワ�
 
 TechTalks は、対象となるサブジェクト領域固有の技術解説およびベスト プラクティスを提供して、顧客とパートナーの両方をサポートすることに焦点を当てます。 これらの説明では、利用可能なツールと機能の概要を提供することがよくあります。 TechTalks は、最後に質問と応答 (Q&A) セッションを含む有効な Web キャスト形式で配信されます。 それらは要求に応じてアクセスすることができ、公開されています。 すべての技術解説を表示し、 今後の解説にサインアップするためには、[FastTrack Dynamics 365 for Finance & Operations - Enterprise Edition - 技術解説](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl)をご覧ください。
 
-TechTalks は、基本知識を提供し、提供されるワーク ショップの価値および効率性を増やします。 FastTrack チームは、特定のワークショップの準備に役立つ関連性のある TechTalks をガイドします。 ストリーミングまたはダウンロード可能なすべての記録された TechTalk の完全なインベントリについては、追加のハウツービデオをと共に、 [Dynamics 365 for Finance and Operations に関するビデオ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/videos)を参照してください。
+TechTalks は、基本知識を提供し、提供されるワーク ショップの価値および効率性を増やします。 FastTrack チームは、特定のワークショップの準備に役立つ関連性のある TechTalks をガイドします。 ストリーミングまたはダウンロード可能なすべての記録された TechTalk の完全なインベントリについては、追加のハウツービデオをと共に、[Dynamics 365 for Finance and Operations に関するビデオ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/videos)を参照してください。
 
 ## <a name="community"></a>コミュニティ
 FastTrack Finance and Operations コミュニティでは、顧客およびパートナーが質問を投稿し、ベスト プラクティスおよびガイダンスについて FastTrack ソリューションの設計者から回答を得ることができるプラットフォームを提供します。 コミュニティに参加するには、[FastTrack Finance and Operations フォーラム](https://community.dynamics.com/365/fasttrack/f/770)もしくは [FastTrack Finance and Operations オンプレミス フォーラム](https://community.dynamics.com/365/fasttrack/f/772)をご覧ください。
@@ -247,4 +246,3 @@ Go-live レビューの転記ワークショップは、FastTrack 契約をま�
 - サポートチームへの未処理の問題の引き渡し
 
 標準的な形式は、1.5 時間の Skype 呼び出しです。 推奨される出席者には、顧客、パートナー、Microsoft チームの重要な利害関係者が含まれます。 プロジェクト マネージャーは必須です。
-

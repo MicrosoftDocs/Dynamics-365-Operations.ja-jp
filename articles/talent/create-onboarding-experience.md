@@ -1,13 +1,13 @@
 ---
-title: "魅力的な新人研修エクスペリエンスの作成"
-description: "新人研修がうまくいけば、新規従業員が新しい組織で帰属意識を抱くのに役立ちます。"
+title: 魅力的な新人研修エクスペリエンスの作成
+description: 新人研修がうまくいけば、新規従業員が新しい組織で帰属意識を抱くのに役立ちます。
 author: tbisaacs
-manager: 
+manager: ''
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 audience: Application User
 ms.reviewer: rschloma
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: tbisaacs
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: 0dbc3247e1a5a8134184c8fe98fa8692fbf27c94
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 54caf2648766053ec5a662f48bd50a1ec9b8911a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305125"
 ---
-
 # <a name="create-an-engaging-onboarding-experience"></a>魅力的な新人研修エクスペリエンスの作成
 
 [!include [banner](includes/banner.md)]
 
-新人研修が効率的になされると、新規従業員は仕事の効率性を高めつつ、新しい役割に帰属意識を覚えるようにもなります。 新人研修を受けない場合と比べて、新規従業員は自分の新しい役割をより迅速にまた正確に理解できるようになり、成功に役立つ関係を確立する点で有利なスタートを切ることになります。 また、非効率的な新人研修エクスペリエンスでは、従業員が組織に加わるという自分の決定に疑問を抱くようになるかもしれません。 Gartner による 2014 に実施された調査によると、最初の 6 か月以内に辞職した 1,005 人の回答者の 3 分の 1 近くは、リーダーから与えられたガイドラインが明確でなかったこと、受けたトレーニングが効率的でなかったこと、または新しい環境で効果的な人間関係を築けなかったことが辞職の原因でした。
+新人研修が効率的になされると、新規従業員は仕事の効率性を高めつつ、新しい役割に帰属意識を覚えるようにもなります。 新人研修を受けない場合と比べて、新規従業員は自分の新しい役割をより迅速にまた正確に理解できるようになり、成功に役立つ関係を確立する点で有利なスタートを切ることになります。 また、非効率的な新人研修エクスペリエンスでは、従業員が組織に加わるという自分の決定に疑問を抱くようになるかもしれません。 Gartner により 2014 年に実施された調査によると、最初の 6 か月以内に辞職した 1,005 人の回答者の 3 分の 1 近くは、リーダーから与えられたガイドラインが明確でなかったこと、受けたトレーニングが効率的でなかったこと、または新しい環境で効果的な人間関係を築けなかったことが辞職の原因でした。
 
 ## <a name="have-an-onboarding-program-in-place"></a>新人研修プログラムを整える
 新人研修のプロセスを改善できる分野とその方法を理解することが大切です。 以下の質問は、新人研修のプロセスを体系的に分析して改善するのに役立ちます。
@@ -90,5 +89,4 @@ ms.lasthandoff: 03/08/2018
 - 新入社員間の満足度は高まっているか? 
 
 これらの詳細を測定し、各新入社員と共に小さな改善を行なっていきます。
-
 

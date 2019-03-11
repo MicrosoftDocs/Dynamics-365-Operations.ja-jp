@@ -1,13 +1,13 @@
 ---
-title: "Retail Modern POS (MPOS) のトリガーと印刷"
-description: "トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。"
+title: Retail Modern POS (MPOS) のトリガーと印刷
+description: トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 01/17/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.openlocfilehash: bfc4ef7d73ddf44e730a4c28dc46960d4afa5e6c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: e19fa12ce7608aa7105afdbe5c64fdd32ef1fe58
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369410"
 ---
-
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
 [!include [banner](../../includes/banner.md)]
 
-トリガーを使用すると、Retail Modern POS の操作前または後に発生するイベントを取得できます。 トリガーを使用すると、以下の実行を可能にする複数のビジネス ロジック シナリオがサポートされます。 
+トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。 トリガーを使用すると、以下の実行を可能にする複数のビジネス ロジック シナリオがサポートされます。 
 - 操作の実行前または完了後に、カスタム ロジックを挿入します。 これには、すべての POS 操作の開始と終了時に実行される PreOperationTrigger と PostOperationTrigger と呼ばれる操作固有のトリガーと汎用トリガーが含まれます。  
 - 操作を続行またはキャンセルします。 たとえば、検証が失敗するかまたはエラーが返される場合、前のトリガーで操作をキャンセルできます。 ポスト トリガーはキャンセル可能ではありません。
 - 標準ロジックが実行された後にカスタム メッセージを表示するか、カスタム フィールドを挿入するシナリオでは、ポスト トリガーを使用します。 
 
-このトピックは、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた、Dynamics 365 for Finance and Operations、および Dynamics 365 for Retail に適用されます。 
+このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。 
 
 次のテーブルは、使用可能なトリガーをリストし、それらを取り消すことができるかどうかを示しています。
 
@@ -131,8 +130,17 @@ ms.lasthandoff: 12/04/2018
 | PostVoidProductsTrigger    | キャンセル不可 | 製品がカートから無効となった後に実行されます。                    |
 | PostPriceCheckTrigger      | キャンセル不可 | 製品の価格確認が行われた後に実行されます。          |
 
+## <a name="sales-order-triggers"></a>販売注文トリガー
+
+| トリガー                 | 型           | 説明                                                         |
+|-------------------------|----------------|---------------------------------------------------------------------|
+| PreRecallCustomerOrderTrigger     | 解約可能     | 顧客の注文がリコールされる前に実行されます。 |
+| PostRecallCustomerOrderTrigger    | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。  |
+| PrePickUpCustomerOrderLinesTrigger    | 解約可能     | 顧客注文明細行が選択される前に実行されます。  |
+| PreChangeShippingOriginTrigger    | 解約可能     | 顧客先発注時に出荷元が変更される前に実行されます。|
+
 ## <a name="shift-triggers"></a>シフト トリガー
-| トリガー              | 種類           | 説明                                             |
+| トリガー              | 型           | 説明                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostOpenShiftTrigger | キャンセル不可 | このトリガーは、新しいシフトが開かれた後に実行されます。 |
 
@@ -364,7 +372,7 @@ ms.lasthandoff: 12/04/2018
 
 ## <a name="override-the-crt-receipt-request-to-generate-the-receipt-data"></a>受領書データを生成するために CRT 受領要求を上書きする
 
-このセクションでは、中断されたトランザクションのレシートを印刷するために既存の CRT 要求を上書きする方法について説明します。 このセクションは、Microsoft Dynamics 365 for Finance and Operations またはプラットフォーム更新プログラム 8 を備えた Microsoft Dynamics 365 for Retail に適用可能です。
+このセクションでは、中断されたトランザクションのレシートを印刷するために既存の CRT 要求を上書きする方法について説明します。 このセクションでは、Microsoft Dynamics 365 for Finance and Operations または Microsoft Dynamics 365 for Retail プラットフォーム更新プログラム 8 に適用されます。
 
 1. Visual Studio 2015 を起動します。
 2. **ファイル**メニューで、**開く \> プロジェクト/ソリューション**を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
@@ -625,12 +633,12 @@ ms.lasthandoff: 12/04/2018
 
 ## <a name="add-the-custom-receipt-layout"></a>カスタム レシート レイアウトの追加
 
-1. Dynamics 365 for Finance and Operations, Enterprise edition を開きます。
+1. Dynamics 365 for Finance and Operations Enterprise Edition を開きます。
 2. **小売** > **チャンネル設定** > **POS 設定** > **POS** > **受領書フォーマット**の順に移動します。
 3. **受領書フォーマット**内の**新規**をクリックします。
 4. **提出した受領書フォーマット** フィールドに、**中断**という形式名を入力します。 **受領書タイプ** フィールドで、**CustomReceiptType7** を選択します。
 5. **デザイナー**をクリックし、入庫デザイナーを開きます。
-6. インストールするようメッセージが表示されたら、指示に従います。 デザイナーを起動する Azure Active Directory (AAD) の資格情報を入力します。
+6. インストールするようメッセージが表示されたら、指示に従います。 Azure Active Directory (AAD) 資格情報を入力し、デザイナーを起動します。
 7. 必須のフィールドをヘッダー、明細行、またはフッターにドラッグおよびドロップします。 または、コピー機能を使用して既存のレシートの形式からコピーし、それを編集します。
 8. **保存** をクリックします。
 9. **小売** > **チャンネル設定** > **POS 設定** > **POS プロファイル** > **レシート プロファイル**の順に移動します。
@@ -655,4 +663,3 @@ ms.lasthandoff: 12/04/2018
 2. POS が開始されると、POS にサインインし、トランザクションへ品目を追加します。
 3. トランザクションを中断します。
 4. カスタム レシートが印刷されます。
-

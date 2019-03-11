@@ -1,13 +1,13 @@
---- 
-title: "連続プログラムの使用"
-description: "この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。"
+---
+title: 連続プログラムの使用
+description: この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 45bd4a3cc9f9b03c713d33638d6dc93aa696c581
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358166"
 ---
 # <a name="using-continuity-program"></a>連続プログラムの使用
 
@@ -61,5 +61,4 @@ ms.lasthandoff: 10/16/2018
 20. [販売注文] フィールドで、値を入力または選択します。
     * 前の手順でメモした販売注文番号を入力します。 これにより、この手順の処理時間は最小限に抑えられます。 [販売注文] フィールドはオプションです--いずれかのプログラムのすべての注文を処理することができます。  
 21. [OK] をクリックします。
-
 

@@ -1,13 +1,13 @@
---- 
-title: "ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成"
-description: "次の手順では、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルから Dynamics 365 for Finance and Operations, Enterprise Edition アプリケーションにデータをインポートする方法を説明します。"
+---
+title: ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
+description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルから Dynamics 365 for Finance and Operations Enterprise Edition アプリケーションにデータをインポートする方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "337374"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-次の手順では、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルから Dynamics 365 for Finance and Operations, Enterprise Edition アプリケーションにデータをインポートする方法を説明します。 この例では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まずタスク ガイド「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 これらのステップは、USMF データ セットを使用して完了することができます。 また、電子レポートの概要トピックからのリンク (https://go.microsoft.com/fwlink/?linkid=852550): を使用して、1099model.xml、1099format.xml、1099entries.xml、1099entries.xlsx のファイルをローカルにダウンロードして保存する必要があります。
+次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルから Dynamics 365 for Finance and Operations Enterprise Edition アプリケーションにデータをインポートする方法を説明します。 この例では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まずタスク ガイド「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 これらのステップは、USMF データ セットを使用して完了することができます。 また、電子レポートの概要トピックからのリンク (https://go.microsoft.com/fwlink/?linkid=852550): を使用して、1099model.xml、1099format.xml、1099entries.xml、1099entries.xlsx のファイルをローカルにダウンロードして保存する必要があります。
 
-    * ER は、ビジネス ユーザーに対し、Dynamics 365 for Finance and Operations, Enterprise Edition 内のテーブルに外部データ ファイルを、.XML または .TXT 形式でインポートするプロセスを構成するための機能を提供します。 最初に、インポートするデータを表す、抽象データ モデルと ER データ モデルのコンフィギュレーションを設計する必要があります。 次に、インポートするファイルの構造を定義、およびデータをファイルから抽象データ モデルにポートするために使用する方法を定義する必要があります。 その抽象データ モデルのために、設計されたデータ モデルに配置される ER 形式のコンフィギュレーションを作成する必要があります。 次に、インポート データが抽象データ モデル データとして存在する方法、および Dynamics 365 for Finance and Operations, Enterprise Edition 内のテーブルを更新するための使用方法を説明するマッピングで、データ モデルのコンフィギュレーションを拡張する必要があります。  ER データ モデルのコンフィギュレーションには、アプリケーションの送信先に対するデータ モデルのバインディングを説明する、新しいモデル マッピングを追加する必要があります。  
-    * 次のシナリオでは、ER データのインポート機能を示します。 これには、外部で追跡されてから、Dynamics 365 for Finance and Operations, Enterprise Edition にインポートされ、1099 の仕入先の決済で後から報告される、仕入先トランザクションが含まれます。   
+    * ER は、ビジネス ユーザーに対し、Dynamics 365 for Finance and Operations Enterprise Edition 内のテーブルに外部データ ファイルを、.XML または .TXT 形式でインポートするプロセスを構成するための機能を提供します。 最初に、インポートするデータを表す、抽象データ モデルと ER データ モデルのコンフィギュレーションを設計する必要があります。 次に、インポートするファイルの構造を定義、およびデータをファイルから抽象データ モデルにポートするために使用する方法を定義する必要があります。 その抽象データ モデルのために、設計されたデータ モデルに配置される ER 形式のコンフィギュレーションを作成する必要があります。 次に、インポート データが抽象データ モデル データとして存在する方法、および Dynamics 365 for Finance and Operations Enterprise Edition 内のテーブルを更新するための使用方法を説明するマッピングで、データ モデルのコンフィギュレーションを拡張する必要があります。  ER データ モデルのコンフィギュレーションには、アプリケーションの送信先に対するデータ モデルのバインディングを説明する、新しいモデル マッピングを追加する必要があります。  
+    * 次のシナリオでは、ER データのインポート機能を示します。 これには、外部で追跡されてから、Dynamics 365 for Finance and Operations Enterprise Edition にインポートされ、1099 の仕入先の決済で後から報告される、仕入先トランザクションが含まれます。   
 
 ## <a name="add-a-new-er-model-configuration"></a>新しい ER モデル コンフィギュレーションの追加
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 'Litware, Inc.' のコンフィギュレーション プロバイダーが 使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。   
 2. [コンフィギュレーションをレポートする] をクリックします。
-    * データのインポートをサポートするために新しいモデルを作成する代わりに、既にダウンロードしてあるファイル 1099model.xml をロードします。 このファイルには、仕入先のトランザクションのカスタム データ モデルが含まれています。 このデータ モデルは、AOT データ エンティティ内にある Dynamics 365 for Finance and Operations, Enterprise Edition のデータ コンポーネントにマッピングされます。   
+    * データのインポートをサポートするために新しいモデルを作成する代わりに、既にダウンロードしてあるファイル 1099model.xml をロードします。 このファイルには、仕入先のトランザクションのカスタム データ モデルが含まれています。 このデータ モデルは、AOT データ エンティティ内にある Dynamics 365 for Finance and Operations Enterprise Edition のデータ コンポーネントにマッピングされます。   
 3. [交換] をクリックします。
 4. [XML ファイルから読み込む] をクリックします。
     * [参照] をクリックし、以前ダウンロードした 1099model.xml ファイルに移動します。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 10/16/2018
 
 ## <a name="review-data-model-settings"></a>データ モデルの設定の確認
 1. [デザイナー] をクリックします。
-    * このモデルは、ビジネスの観点から仕入先のトランザクションを表すために設計されたもので、Dynamics 365 for Finance and Operations, Enterprise Edition 内の実装とは異なります。   
+    * このモデルは、ビジネスの観点から仕入先のトランザクションを表すために設計されたもので、Dynamics 365 for Finance and Operations Enterprise Edition 内の実装とは異なります。   
 2. ツリーで、[1099-MISC] を展開します。
 3. ツリーで、[1099-MISC\Transactions] を選択します。
 4. ツリーで、[1099-MISC\Transactions] を展開します。
@@ -107,7 +107,7 @@ ms.lasthandoff: 10/16/2018
 1. ツリーで、[1099 Payments model] を選択します。
 2. [デザイナー] をクリックします。
 3. [モデルからデータ ソースへのマップ] をクリックします。
-    * 1099 の手動トランザクション インポート用マッピングは、宛先の方向タイプで定義されました。 つまり、それはデータのインポートをサポートするために入力されており、Dynamics 365 for Finance and Operations, Enterprise Edition アプリケーション内のテーブルを更新するために、どのようにインポートされた外部ファイルおよび抽象データとして存在するモデルデータを使用するかを定義するルールの設定を含んでいます。  
+    * 1099 の手動トランザクション インポート用マッピングは、宛先の方向タイプで定義されました。 つまり、これはデータのインポートをサポートするための入力がされ、Dynamics 365 for Finance and Operations Enterprise Edition アプリケーション内のテーブルを更新するために、インポートされた外部ファイルおよび抽象データとして存在するモデルデータの使用方法を定義するルールの設定が含まれます。  
 4. [デザイナー] をクリックします。
 5. ツリーで、[model: Data model 1099 Payments model] を展開します。
 6. ツリーで、[model: Data model 1099 Payments model\Transactions: Record list] を展開します。
@@ -121,7 +121,7 @@ ms.lasthandoff: 10/16/2018
 12. ツリーで、[tax1099trans: Table 'VendSettlementTax1099' records= model.Validated] を選択します。
 13. [宛先の編集] をクリックします。
     * インポートされたデータでアプリケーション テーブルが更新される方法を指定するため、この ER 宛先が追加されました。 この場合、データ テーブル VendSettlementTax1099 が選択されました。 レコード アクションの挿入が選択されているため、インポートされたトランザクションは VendSettlementTax1099 テーブルに挿入されます。 単一のモデル マッピングに複数の宛先が含まれる場合があることに注意してください。 これは、インポートされたデータが同時に複数のアプリケーションのテーブルを更新するために使用可能であることを意味します。 テーブル、ビュー、およびデータ エンティティは、ER 宛先として使用することができます。   
-    * このアクションのために特別に設計された Dynamics 365 for Finance and Operations, Enterprise Edition アプリケーション (ボタンまたはメニュー項目など) 内のポイントからマッピングがコールされる場合、ER の宛先は統合ポイントとしてマークする必要があります。 この例では、ERTableDestination#VendSettlementTax1099 の点です。  
+    * このアクションのために特別に設計された Dynamics 365 for Finance and Operations Enterprise Edition アプリケーション (ボタンまたはメニュー項目など) 内のポイントからマッピングがコールされる場合、ER の宛先は統合ポイントとしてマークする必要があります。 この例では、ERTableDestination#VendSettlementTax1099 の点です。  
 14. [キャンセル] をクリックします。
 15. [すべて表示] をクリックします。
 16. [マップ済みのものだけを表示] をクリックします。
@@ -177,17 +177,16 @@ ms.lasthandoff: 10/16/2018
 18. ページを閉じます。
 19. ページを閉じます。
 20. [編集] をクリックします。
-    * 修正プログラム「KB 4012871 異なるバージョンの Dynamics 365 for Finance and Operations, Enterprise edition 上で展開するために異なる種類の要件を指定する機能を使用した別個のコンフィギュレーションでの GER モデル マッピングのサポート」 (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ) をインストールした場合、入力した形式のコンフィギュレーションのための次のステップ、「'モデル マッピングの既定'フラグをオンにする」を実行します。 それ以外の場合、次のステップをスキップします。  
+    * 修正プログラム「KB 4012871 異なるバージョンの Dynamics 365 for Finance and Operations Enterprise Edition 上で展開するために異なる種類の要件を指定する機能を使用した別個のコンフィギュレーションでの GER モデル マッピングのサポート」 (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) をインストールした場合、入力した形式のコンフィギュレーションのための次のステップ、「‘モデルマッピングの既定フラグ’をオンにする」を実行します。 それ以外の場合、次のステップをスキップします。  
 21. [モデル マッピング] フィールドの既定値で [はい] を選択します。
 22. ツリーで、[1099 Payments model] を選択します。
 23. [デザイナー] をクリックします。
 24. [モデルからデータ ソースへのマップ] をクリックします。
 25. [実行] をクリックします。
-    * 修正プログラム「KB 4012871 異なるバージョンの Dynamics 365 for Finance and Operations, Enterprise edition 上で展開するために異なる種類の要件を指定する機能を使用した別個のコンフィギュレーションでの GER モデル マッピングのサポート」 (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 )をインストールした場合、ルックアップ フィールドで目的のモデル マッピングを選択します。 修正プログラムをまだインストールしていない場合、マッピングは既定の書式設定の定義で既に選択されているため、次のステップに進みます。  
+    * 修正プログラム KB 4012871 異なるバージョンの Dynamics 365 for Finance and Operations Enterprise Edition 上で展開するために異なる種類の要件を指定する機能を使用した別個のコンフィギュレーションでの GER モデル マッピングのサポート (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) をインストールした場合、ルックアップ フィールドで目的のモデル マッピングを選択します。 修正プログラムをまだインストールしていない場合、マッピングは既定の書式設定の定義で既に選択されているため、次のステップに進みます。  
     * 修正プログラムの KB 4012871 がインストールされていない場合、インポートするファイルをパースするために使用する追加のモデル マッピング質問がダイアログ ボックスに含まれていることに注意してください。 次にデータはダイアログ ボックスからデータ モデルにポートされます。 現時点では、インポートする計画のファイル タイプに応じてどの書式マッピングを使用する必要があるか選択することができます。  
-    * アクション用に特別に設計された Dynamics 365 for Finance and Operations, Enterprise Edition 内のポイントからこのモデル マッピングをコールする場合は、ER の出力先および書式マッピングを統合の一部としてマークする必要があります。  
+    * アクション用に特別に設計された Dynamics 365 for Finance and Operations Enterprise Edition 内のポイントからこのモデル マッピングをコールする場合は、ER の出力先および書式マッピングを統合の一部としてマークする必要があります。  
 26. [キャンセル] をクリックします。
 27. ページを閉じます。
 28. ページを閉じます。
-
 

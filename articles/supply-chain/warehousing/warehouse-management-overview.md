@@ -1,13 +1,13 @@
 ---
-title: "倉庫管理"
-description: "倉庫プロセスを監視および自動化するために、倉庫管理を使用します。"
+title: 倉庫管理
+description: 倉庫プロセスを監視および自動化するために、倉庫管理を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c9613070e077bced4b272b136985de5f4ddbdd0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335258"
 ---
 # <a name="warehouse-management"></a>倉庫管理
 
@@ -64,14 +64,13 @@ Dynamics 365 for Finance and Operations の倉庫管理モジュールは、製�
 - クラスター ピッキング
 - シンプルクロスドッキング
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 ### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 Roadmap (Dynamics 365 ロードマップ)](https://roadmap.dynamics.com/) を参照してください。
+リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。
 
 ### <a name="blogs"></a>ブログ
-倉庫管理およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog) を参照してください。
+倉庫管理およびその他のソリューションに関する意見、ニュース、その他の情報については、「[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog)」を参照してください。
 
 
  
-
 

@@ -1,32 +1,31 @@
 ---
-title: "ジョブ スケジュールのガント チャート"
-description: "生産プランナーはガント チャートを使用して、生産計画のコントロールおよび最適化を行うことができます。"
+title: ジョブ スケジュールのガント チャート
+description: 生産プランナーはガント チャートを使用して、生産計画のコントロールおよび最適化を行うことができます。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 301db69fce18c2ed32e201e7418e628ac57db543
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335235"
 ---
-
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ ms.lasthandoff: 05/08/2018
 -   計画製造オーダーからのジョブ。
 -   時間予測タイプのジョブ スケジューリング済のプロジェクト活動。
 
-ガント チャートは、**発注ビュー** および **リソース ビュー**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true) の 2 つの異なるビューで開くことができます。 **注文の表示** では、活動は製造オーダーの下にグループ化されます。 これは、たとえば、同じ注文に属するすべてのジョブの概要を管理したい場合に役立ちます。 **リソース ビュー** では、すべてのジョブが個々のリソースの下にグループ化されます。 たとえば、機械や機械のグループなど、リソース レベルでの計画の最適化を行う場合、このビューは役に立ちます。 次に示す図で、ガント チャートは次の主要な要素とともに **注文の表示** および **リソース ビュー** を表示します。
+ガント チャートは、**発注ビュー** および **リソース ビュー** [](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true) の 2 つの異なるビューで開くことができます。 **注文の表示** では、活動は製造オーダーの下にグループ化されます。 これは、たとえば、同じ注文に属するすべてのジョブの概要を管理したい場合に役立ちます。 **リソース ビュー** では、すべてのジョブが個々のリソースの下にグループ化されます。 たとえば、機械や機械のグループなど、リソース レベルでの計画の最適化を行う場合、このビューは役に立ちます。 次に示す図で、ガント チャートは次の主要な要素とともに **注文の表示** および **リソース ビュー** を表示します。
 
 1.  ガント チャートの活動
 2.  材料不足アイコン
@@ -160,5 +159,4 @@ ms.lasthandoff: 05/08/2018
 [Visual scheduling with Gantt chart for production and batch orders (ビデオ)](https://youtu.be/BtbuShkGj4I)
 
 [生産 (デモ スクリプト) の視覚的スケジューリング](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
-
 

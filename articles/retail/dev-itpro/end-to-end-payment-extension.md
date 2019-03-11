@@ -1,30 +1,29 @@
 ---
-title: "支払端末のエンド・ツー・エンド支払統合を作成する"
-description: "このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成する方法について説明します。"
-author: 
+title: 支払端末のエンド・ツー・エンド支払統合を作成する
+description: このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成する方法について説明します。
+author: ''
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 49cce4a45177cec7652d89421d02026ce4f1924d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d617302e020c21a7a7fb077e4ce9481b6c80b796
-ms.openlocfilehash: 9ec7944b7c23c2ff3fd7eada328e2e91e4d7b603
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368519"
 ---
-
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
 [!include [banner](../../includes/banner.md)]
@@ -83,7 +82,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 }
 ```
 
-**HandlerName** 文字列は、Microsoft Dynamics 365 for Finance and Operations クライアントを通じて特定の POS で使用される支払コネクタを構成するために使用されます (このトピックの後半の情報を参照してください)。
+**HandlerName** 文字列は、Microsoft Dynamics 365 for Finance and Operations クライアントを通して特定の POS で使用される支払コネクタを構成するために使用されます (このトピックの後半の情報を参照してください)。
 
 #### <a name="implement-supported-payment-requests"></a>サポートされている支払要求の実装
 支払関連フローを処理するには、支払コネクタが処理できる、サポートされている要求タイプを定義する必要があります。 また、**実行**メソッドは、コネクタが指定されたメソッドをサポートする各要求をルーティングするために実装する必要があります。 次の例は、サポートされている要求のタイプの完全な一覧と、特定の要求 (すなわち、承認要求) の例を示しています。
@@ -682,4 +681,3 @@ public class SampleConnector : IPaymentProcessor
 | MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |
 
 \* この列のサンプル値を、独自の支払プロセッサの固有値に置き換える **必要があります** 。
-

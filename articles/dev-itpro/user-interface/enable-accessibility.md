@@ -1,13 +1,13 @@
 ---
-title: "フォーム、製品、およびコントロールのユーザー補助機能"
-description: "このトピックは、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。"
+title: フォーム、製品、およびコントロールのユーザー補助機能
+description: このトピックは、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
 author: RobinARH
 manager: AnnBe
 ms.date: 08/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: 415c1a94ffb146d4c1f7caca957a08249a961526
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369306"
 ---
-
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 
 [!include [banner](../includes/banner.md)]
@@ -138,7 +137,7 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 
 - *aria-expanded (状態)* - 要素または別のグループ化されている要素が、現在展開されているか折りたたまれているかを示します。
 
-**該当するコンテキスト メニューの説明** Microsoft Dynamics 365 for Finance and Operations は、コンテキスト メニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
+**該当するコンテキスト メニューの説明** Microsoft Dynamics 365 for Finance and Operations はコンテキスト メニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
 
 - *aria-haspopup* - 要素にポップアップ コンテキスト メニューまたはサブ レベルのメニューがあることを示します。
 
@@ -159,4 +158,3 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 - *aria-valuemax* - 範囲ウィジェットの最大許容値を定義します。
 
 - *aria-valuemin* - 範囲ウィジェットの最小許容値を定義します。
-

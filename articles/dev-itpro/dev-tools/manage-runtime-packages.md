@@ -1,30 +1,29 @@
 ---
-title: "ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理"
-description: "このトピックでは、サードパーティ ソリューションを管理、配布、展開するうえで推奨される戦略について説明します。"
+title: ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
+description: このトピックでは、サードパーティ ソリューションを管理、配布、展開するうえで推奨される戦略について説明します。
 author: jorisdg
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 26731
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: fde134e037e7ffa2c385d624eeb045f4076e5f69
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369294"
 ---
-
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 
 [!include [banner](../includes/banner.md)]
@@ -80,4 +79,3 @@ ms.lasthandoff: 09/17/2018
 現在のプラットフォーム更新プログラム 4 では、自動ビルド プロセスはランタイム パッケージも取得します。 したがって、ビルドされたパッケージの依存関係は正しく解決されます。 この機能は、修正プログラムを介してプラットフォーム更新プログラム 3 およびプラットフォーム更新プログラム 2 でも使用できます。
 
 プラットフォーム更新プログラム 6 では、ビルド プロセスで最終的な配置可能パッケージにこのランタイム パッケージが含まれます。 これにより、お客様は、展開可能なパッケージをビルドから取り出し、1 つのパッケージを環境に展開できます。 1 つのパッケージにはカスタム ソリューションとすべてのサード パーティ ソリューションが含まれています。
-

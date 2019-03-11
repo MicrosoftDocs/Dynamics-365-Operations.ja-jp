@@ -1,13 +1,13 @@
 ---
-title: "クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用"
-description: "このトピックでは、クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。"
+title: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+description: このトピックでは、クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
 manager: AnnBe
 ms.date: 12/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Retail, Operations
@@ -15,15 +15,13 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.translationtype: HT
-ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
 ms.openlocfilehash: 33a75b82197ce5c7df78fc918fd33d2678ef75bb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368775"
 ---
-
-
 # <a name="apply-updates-and-extensions-to-cloud-hosted-retail-channel-components"></a>クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
 
 [!include[banner](../includes/banner.md)]
@@ -61,4 +59,3 @@ Retail チャネル コンポーネントの更新は累積的です。 つま�
 
 > [!NOTE]
 > 拡張機能と更新プログラムを同時に適用するには、1 回のダウンタイムが必要なため、複数のダウンタイムを避ける効果的な方法です。
-

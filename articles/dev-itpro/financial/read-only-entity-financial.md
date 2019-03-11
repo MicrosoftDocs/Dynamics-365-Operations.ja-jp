@@ -1,13 +1,13 @@
 ---
-title: "財務分析コードを公開する読み取り専用エンティティの作成"
-description: "このトピックでは、登録済のトランザクションのエンティティを作成する方法について説明します。"
+title: 財務分析コードを公開する読み取り専用エンティティの作成
+description: このトピックでは、登録済のトランザクションのエンティティを作成する方法について説明します。
 author: margoc
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 092f7e566c6ac14421e772f538a61af6fa0ef2d7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369108"
 ---
-
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 "[!include [banner](../includes/banner.md)]"
 
@@ -86,15 +85,15 @@ VendInvoiceTrans の場合のように、ウィザードは自然キーを持た
 ## <a name="expose-financial-dimensions-as-fields"></a>財務分析コードをフィールドとして公開
 次の重要なステップは、財務分析コードをエンティティ上の異なるフィールドとして公開することです。 シナリオは転記済トランザクションの上に構築されるため、フィールドを DimensionCombinationentity エンティティに追加する必要があります。 拡張機能による方法を使用して復元力のある方法で調整を行います。これにより、コード ベースを新しいバージョンに今後アップグレードするとき、必要なメンテナンスは最小限になります。
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-version-1611"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition バージョン 1611
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-version-1611"></a>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition バージョン 1611
 
-バージョン 1611 以降については、Microsoft Visual Studio (**Dynamics 365** &gt; **アドイン** &gt; **Odata に財務分析コードの追加**で) で利用できるウィザードを使用する必要があります。 手順については、「[Microsoft Excel テンプレートに分析コードを追加する](dimensions-overview.md)」を参照してください。
+バージョン 1611 以降については、Microsoft Visual Studio (**Dynamics 365** &gt; **アドイン** &gt; **Odata の財務分析コードの追加**) で利用できるウィザードを使用する必要があります。 手順については、「[Microsoft Excel テンプレートに分析コードを追加する](dimensions-overview.md)」を参照してください。
 
 ### <a name="earlier-versions"></a>以前のバージョン
 
 以前のバージョンで作業している場合、ここで説明されている手順を完了する必要があります。 最初に、エンティティ拡張機能自体を追加します。 コンテキスト メニュー (ショートカット メニュー) で **拡張機能を作成** を選択します。 次に、データを取得するコードを作成します。 エンティティ拡張子が既に確立されているため、新しいクラスを作成する必要があります。 次の例では、**ProductLine** という名前の任意の分析コードを追加します。.
 
-  [ExtensionOf(dataentityviewstr(DimensionCombinationentity))] public final class DimensionCombinationentity_Extension { private static server str getEmptyOrDimensionValueSqlString(str _attributeName) { str sqlStatement;
+  [ExtensionOf(dataentityviewstr(DimensionCombinationentity))] public final class DimensionCombinationentity_Extension { private static server str getEmptyOrDimensionValueSqlString(str _attributeName) {str sqlStatement;
 
             DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(_attributeName);
 
@@ -158,10 +157,9 @@ AccountingDistributionCurrent と DimensionCombinationentity エンティティ�
 > [!NOTE]
 > このシナリオでは、LedgerDimension が DimensionCombinationentity エンティティに関連付けられました。 DefaultDimension があるシナリオでは、DimensionSetentity エンティティに関連付ける必要があります。 必要な強化と拡張は、DimensionCombinationentity エンティティに対して行った強化と拡張と同じです。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [Dynamics AX 7 のエンティティを自分の Azure SQL データベースにエクスポートする](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)
-
 
 

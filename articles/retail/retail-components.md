@@ -1,13 +1,13 @@
 ---
-title: "Retail コンポーネント"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail を構成するさまざまなコンポーネントについて説明します。"
+title: Retail のコンポーネント
+description: このトピックは、Microsoft Dynamics 365 for Retail を構成するさまざまなコンポーネントについて説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d113d83cce7145f1f42747832187d87adf291c19
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370009"
 ---
-
-# <a name="retail-components"></a>Retail コンポーネント
+# <a name="retail-components"></a>Retail のコンポーネント
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail を構成するさまざまなコンポーネントについて説明します。
+このトピックは、Microsoft Dynamics 365 for Retail を構成するさまざまなコンポーネントについて説明します。
 
 Dynamics 365 for Retail は、中規模市場および大規模小売業者に、オンラインと従来型のストアのサポートを含む完全な本社および販売時点管理 (POS) ソリューションを提供します. 小売業者が財務収益を高め、サービスを向上させ、成長を管理して、顧客に到達し、効率面を合理化できます。
 
@@ -44,14 +43,14 @@ Dynamics 365 for Retail は、中規模市場および大規模小売業者に�
 </thead>
 <tbody>
 <tr>
-<td>小売用バックオフィス</td>
+<td>Retail Headquarters</td>
 <td>Dynamics 365 for Retail 用小売用バックオフィスを使用すると、一連の店舗を 1 つの企業として管理することができます。 これは、日々の業務を管理し、チェーンの全店舗の販売情報を追跡します。 小売用スケジューラは、Dynamics 365 for Retail と店舗間の通信を調整します。 小売用バックオフィスは、POS 、または必要なデータを受信して転送できるオンライン店舗システムで使用できます。
 <blockquote>[!IMPORTANT] Dynamics 365 for Retail のカスタム POS またはオンライン ストア ソリューションの構築は、広範な計画、開発、およびテストが必要な複雑な作業です。</blockquote>
 </td>
 </tr>
 <tr>
 <td>Retail POS</td>
-<td>Dynamics 365 for Retail では、POS 経験の 2 つのタイプがサポートされます。
+<td>Dynamics 365 for Retail では POS エクスペリエンスの 2 種類のイベントがサポートされます。
 <ul>
 <li><strong>クラウド POS</strong> はブラウザベースの POS で、モバイルデバイスで使用できます。</li>
 <li><strong>Retail Modern POS</strong> (MPOS) は、PC、タブレット、電話などのクライアントで、販売トランザクション、顧客注文、日常業務を処理し、在庫管理を実行するために使用できます。</li>
@@ -67,8 +66,8 @@ Dynamics 365 for Retail は、中規模市場および大規模小売業者に�
 <td>Retail Hardware Station には、Retail POS クライアントと、プリンター、キャッシュ ドロワー、支払いデバイスなどの周辺基金が Retail Server と通信できるようにするサービスが用意されています。</td>
 </tr>
 <tr>
-<td>Retail Store スケール ユニット</td>
-<td>Retail Store スケール ユニットは、バック オフィスまたは本社 (HQ) への常時インターネット接続がない店舗で製品の販売をサポートする一連の機能です。 Store スケール ユニットは、店舗内の工程専用に設計されており、バック オフィスに接続していない場合でもターミナル間トランザクションおよびシフト操作が可能になります。</td>
+<td>Retail Store Scale Unit</td>
+<td>Retail Store Scale Unit は、バック オフィスまたは本社 (HQ) への常時インターネット接続がない店舗で製品の販売をサポートする一連の機能です。 Store スケール ユニットは、店舗内の工程専用に設計されており、バック オフィスに接続していない場合でもターミナル間トランザクションおよびシフト操作が可能になります。</td>
 </tr>
 <tr>
 <td>Commerce Runtime</td>
@@ -90,4 +89,3 @@ Dynamics 365 for Retail は、中規模市場および大規模小売業者に�
 </table>
 
 ![SystemArchitecture](./media/Dynamics-365-for-Retail-System-Architecture.PNG)
-

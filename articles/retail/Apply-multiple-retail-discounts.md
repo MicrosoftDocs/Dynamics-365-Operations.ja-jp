@@ -1,14 +1,14 @@
 ---
-title: "小売割引"
-description: "このトピックでは、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。"
+title: 小売割引
+description: このトピックでは、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。
 author: shajain
 manager: AnnBe
 ms.date: 10/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: e9729e7f8a870b0824c779d86c09386e44ae9f4e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369468"
 ---
-
 # <a name="apply-multiple-retail-discounts-to-a-product"></a>製品に対する複数の小売割引の適用
 
 [!include [banner](includes/banner.md)]
@@ -47,11 +46,11 @@ ms.lasthandoff: 01/04/2019
 
 割引の同時実行管理モデルでは、トランザクションの商品に複数の割引が適用されるタイミングおよび方法が変更されます。 **小売パラメーター** ページにある **割引** タブの **最良価格および組み入れ同時実行管理モデル** オプションは、各割引の **割引同時実行モード** とは異なります。
 
-Dynamics 365 for Retail の以前のバージョンでは、割引の **割引タイプ**、**割引同時実行モード**、および **価格決定優先順位** (使用する場合) プロパティに基づいて複数の割引を適用する方法は 1 つだけでした。 ここでは、割引同時実行管理モデル設定が、すべての割引がどのように競合してまとめられるかに影響します。
+Dynamics 365 for Retail の以前のバージョンでは、割引の **割引タイプ**、**割引同時実行モード**、および **価格決定優先順位** (使用する場合) プロパティに基づいて複数の割引を適用する方法は 1 つのみでした。 ここでは、割引同時実行管理モデル設定が、すべての割引がどのように競合してまとめられるかに影響します。
 
 ### <a name="background-on-why-this-change-was-made-in-dynamics-365-for-retail"></a>Dynamics 365 for Retail でこの変更が行われた理由に関する背景情報
 
-Dynamics 365 for Retail の以前のバージョンでは、価格エンジンでカスタム ビジネス ロジックをオーバーレイすることで、直接価格エンジンをカスタマイズできました。 オンライン サービスへの移行により、およびアプリケーション全体のライフ サイクル管理を向上させるため、Dynamics 365 アプリケーションがシールされ、オーバーレイ カスタマイズが許容されなくなりました。 最も一般的であった同じ種類のカスタマイズを有効にするため、新しい拡張ポイントが追加されました。 ほとんどの割引カスタマイズは、次のカテゴリのいずれかに該当します。
+Dynamics 365 for Retail の以前のバージョンでは、価格エンジンでカスタム ビジネス ロジックをオーバーレイすることで、価格エンジンを直接カスタマイズすることができました。 オンライン サービスへの移行により、およびアプリケーション全体のライフ サイクル管理を向上させるため、Dynamics 365 アプリケーションがシールされ、オーバーレイ カスタマイズが許容されなくなりました。 最も一般的であった同じ種類のカスタマイズを有効にするため、新しい拡張ポイントが追加されました。 ほとんどの割引カスタマイズは、次のカテゴリのいずれかに該当します。
 
 - **既存の割引のマイナーな変更:** たとえば、開始日と終了日を割引ヘッダーから割引行に移動しました。
 - **新しい割引タイプ:** 場合によっては、会社は新しい種類の割引を導入する必要があります。 たとえば、単純割引の場合、合計割引金額に上限を設定します。
@@ -242,4 +241,3 @@ Dynamics 365 for Retail の以前のバージョンでは、価格エンジン�
 
 > [!NOTE]
 > 同じ割引設定の場合、選択された割引同時実行管理モデルによって結果は大幅に異なります。
-

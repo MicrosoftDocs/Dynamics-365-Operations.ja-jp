@@ -1,30 +1,29 @@
 ---
-title: "モバイル ワークスペースのローカライズ"
-description: "このトピックでは、ワークスペース クラスを使用して、ワークスペースにローカライゼーション サポートを提供する方法について説明します。"
+title: モバイル ワークスペースのローカライズ
+description: このトピックでは、ワークスペース クラスを使用して、ワークスペースにローカライゼーション サポートを提供する方法について説明します。
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
+ms.openlocfilehash: ce0cd0570772b713a25fdfe5cfca430f82a5d7a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9225727682e5f010bf5d5178b31c8a3c0c7c298a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368827"
 ---
-
 # <a name="localize-mobile-workspaces"></a>モバイル ワークスペースのローカライズ
 
 [!include [banner](../../../includes/banner.md)]
@@ -83,4 +82,3 @@ ms.lasthandoff: 04/20/2018
 次の図は、英語とデンマーク語を使用する電話機のタイトルと説明を示しています。
 
 ![最終ワークスペース](media/workspace-api/LocalizeWorkspaceFinal.png)
-

@@ -1,13 +1,13 @@
 ---
-title: "固定資産の減価償却方法"
-description: "このトピックは、固定資産の減価償却方法の概要を示します。"
+title: 固定資産の減価償却方法
+description: このトピックは、固定資産の減価償却方法の概要を示します。
 author: saraschi2
 manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff8575749a33321450ea61fe1f01105c005e9092
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c69fd798c2e978935a63b079fb11c68d8555594c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337443"
 ---
-
 # <a name="fixed-asset-depreciation-conventions"></a>固定資産の減価償却方法
 
 [!include [banner](../includes/banner.md)]
@@ -45,5 +44,4 @@ ms.lasthandoff: 04/13/2018
 | 月中 (月の 15 日) |                                                                                                                                                        資産の供用年度で減価償却控除を計算するには、年間の減価償却に分数を乗算します。 この分数の分子 (上部番号) は、資産の供用年度の完全な月数、プラス 1/2 または (0.5) です。 分母 (下部番号) は 12 です。 償却期間が終了する前に資産を破棄する場合、同一の方法を使用して、廃棄年の減価償却控除を計算します。                                                                                                                                                        |
 | 半年 (開始年) |                                                                                                                                                                                                                                                          年の前半に <strong>サービス開始</strong> 日付を持つ資産は、その年 (1 年間) の最初の日に原価償却を開始します。 年の後半に <strong>サービス開始</strong> 日付を持つ資産は、その年の半ばで原価償却を開始します。                                                                                                                                                                                                                                                          |
 |   半年 (来年)   |                                                            年の前半に <strong>サービス開始</strong> 日付を持つ資産は、その年 (1 年間) の最初の日に原価償却を開始します。 年の前半に <strong>サービス開始</strong> 日付を持つ資産は、その翌年の最初の日に原価償却を開始します。 年の前半に廃棄になる資産は、前の年の最終日に減価償却用に廃棄されたと見なされます。 今年度に転記されている任意の減価償却は、取り消すかまたは調整する必要があります。年の後半に廃棄になる資産は、廃棄年の最後の日に減価償却用に廃棄されたと見なされます。                                                            |
-
 

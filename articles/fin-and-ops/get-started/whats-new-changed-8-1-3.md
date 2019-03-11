@@ -1,38 +1,36 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは、2019 年 1 月にリリースされます。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは、2019 年 1 月にリリースされます。
 author: tonyafehr
 manager: AnnBe
 ms.date: 01/02/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: b364a31d-34de-45c5-b698-64c5262c592e
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3
+ms.openlocfilehash: 4adb2e0665aff774b95a9c56760596591512c02c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
-ms.openlocfilehash: b446f44ffbd40f5a574e1fe409ae1f53c9d4da22
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/03/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369522"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-813-january-2019"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは 2019 年 1 月にリリースされ、ビルド番号は 8.1.227 です。
 
-Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更については、[Dynamics 365 for Retail の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new)を参照してください。
+Microsoft Dynamics 365 for Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
 
 ### <a name="dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノート
 
@@ -46,11 +44,11 @@ Finance and Operations 8.1.3 の一部である更新プログラムのそれぞ
 
 ### <a name="platform-update-23"></a>プラットフォーム update 23
 
-プラットフォーム更新プログラム 23 を含む Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3。 プラットフォーム更新プログラム 23 に関する詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能](whats-new-platform-update-23.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 には、プラットフォーム更新プログラム 23 が含まれています。 プラットフォーム更新プログラム 23 の詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について](whats-new-platform-update-23.md)を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳しくは、[Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-813.md)をご覧ください。
+Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 8.1.3 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-813.md)を参照してください。
 
 ## <a name="collection-letters"></a>督促状
 
@@ -93,4 +91,3 @@ ER モデル マッピングの国コンテキストを指定することがで�
 - 出力先 (RU).version.22.4への支払モデル マッピング
 - 口座取引明細書 (RU).version.22.6
 - 支払指示 (RU).version.22.4
-

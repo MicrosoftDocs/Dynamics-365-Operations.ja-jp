@@ -1,13 +1,13 @@
 ---
-title: "ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ"
-description: "この記事では、ビジネス プロセス モデラーで標準ビジネス プロセス ライブラリを表示する方法、ビジネス プロセス ライブラリをコピーおよび変更する方法、ビジネス プロセス ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。"
+title: ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
+description: この記事では、ビジネス プロセス モデラーで標準ビジネス プロセス ライブラリを表示する方法、ビジネス プロセス ライブラリをコピーおよび変更する方法、ビジネス プロセス ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations
@@ -15,16 +15,15 @@ ms.custom: 13301
 ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ms.search.region: Global
 ms.author: robadawy
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: bbdd725f4aa4dbb0cd889916d744039552ed9e9d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368656"
 ---
-
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,6 @@ ms.lasthandoff: 08/09/2018
 2.  業務プロセス ライブラリを開きます。
 3.  **主要な業務プロセス** リストで、ライブラリの最上位ノードを右クリックします。
 4.  アプリ バーで、**Doc** をクリックして、ドキュメントを保存します。
-
 
 
 

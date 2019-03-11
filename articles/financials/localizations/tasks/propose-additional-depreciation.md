@@ -1,13 +1,13 @@
---- 
-title: "割増償却の提案"
-description: "日本では、特定の条件下で割増償却が許可されています。"
+---
+title: 割増償却の提案
+description: 日本では、特定の条件下で割増償却が許可されています。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 2f023f18fd9d0e271385ee8f79ea22113455d1b0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371092"
 ---
 # <a name="propose-additional-depreciation"></a>割増償却の提案
 
@@ -50,5 +50,4 @@ ms.lasthandoff: 10/16/2018
 10. [OK] をクリックします。
 11. [OK] をクリックします。
 12. [転記] をクリックします。
-
 

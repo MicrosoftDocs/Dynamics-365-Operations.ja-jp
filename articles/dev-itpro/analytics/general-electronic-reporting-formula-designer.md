@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER) のフォーミュラ デザイナー"
-description: "このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。"
+title: 電子申告 (ER) のフォーミュラ デザイナー
+description: このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331279"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 10/22/2018
 
 ER はフォーミュラ デザイナーをサポートします。 したがって、設計時に次のタスクに使用できる式を実行時にコンフィギュレーションできます。
 
-- ER フォーマットのデータ ソースとして設計された ER データ モデルに入力する必要のある Microsoft Dynamics 365 for Finance and Operations データベースから受け取るデータの変換。 (たとえば、これらの変換にはフィルタ処理、グループ化、およびデータ型の変換が含まれる可能性があります。)
+- Microsoft Dynamics 365 for Finance and Operations データベースから受け取り、ER 形式のデータ ソースとして設計された ER データ モデルに入力する必要のあるデータを変換します。 (たとえば、これらの変換にはフィルタ処理、グループ化、およびデータ型の変換が含まれる可能性があります。)
 - 特定の ER フォーマットのレイアウトや条件に従って電子ドキュメントを生成するため、フォーマット データを送信する必要があります。 (たとえば、書式設定は、要求された言語またはカルチャ、またはエンコードに従って行われる可能性があります)。
 - 電子ドキュメントを作成するプロセスを制御します。 (たとえば、式は、実行しているデータによってフォーマットの特定の要素の出力を有効または無効にできます。 これらはドキュメントの作成プロセスを中断したり、またはユーザーにメッセージをスローすることもできます。)
 
@@ -625,7 +624,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </ul></li>
 <li>次のテキストを含む Finance and Operations ラベル SYS18389:
 <ul>
-<li><strong>EN-US 言語の場合:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
+<li><strong>EN-US 言語の場合:</strong> &quot;Customer%1 is stopped for %2.&quot;</li>
 <li><strong>DE 言語の場合:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
@@ -692,7 +691,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <tr>
 <td>JSONVALUE (ID、パス)</td>
 <td>指定した ID に基づくスカラー値を抽出するための指定したパスでアクセスする JavaScript Object Notation (JSON) 形式で、データを解析します。</td>
-<td>データ ソース<strong>$JsonField</strong> は JSON 形式の次のデータを含みます。<strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>。 このデータ ソースでは、</strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong>は、<strong>文字列</strong>データ型の値 <strong>7.3.1234.1</strong> を返します。</td>
+<td>データ ソース <strong>$JsonField</strong> は JSON 形式の次のデータを含みます: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>。 このデータ ソースでは、</strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong>は、<strong>文字列</strong>データ型の値 <strong>7.3.1234.1</strong> を返します。</td>
 </tr>
 </tbody>
 </table>
@@ -731,7 +730,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 | FA\_BALANCE (固定資産コード, 価値モデル コード, レポート年度, 報告日) | 固定資産残高の準備済データ コンテナーを返します。 レポート年度は、Finance and Operations の列挙の値 **AssetYear** として指定される必要があります。 | **FA\_SUM (「COMP-000001」、「Current」、AxEnumAssetYear.ThisYear、SESSIONTODAY ())** は、現在の Finance and Operations セッションの日付で、値モデル **現行** である固定資産 **COMP-000001** の残高の準備済データ コンテナーを返します。 |
 | TABLENAME2ID (文字列) | 指定されたテーブル名のテーブル ID の整数表現を返します。 | **TABLENAME2ID (「イントラスタット」)** は **1510** を返します。 |
 | ISVALIDCHARACTERISO7064 (文字列) | 指定された文字列が有効な国際銀行番号 (IBAN) を表す場合、ブール値 **TRUE** を返します。 それ以外の場合、ブール値 **FALSE** を返します。 | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** は **TRUE** を返します。 **ISVALIDCHARACTERISO7064 ("AT61")** は **FALSE** を返します。 |
-| NUMSEQVALUE (番号順序コード、スコープ、スコープ ID) | 指定された番号順序コード、スコープ、およびスコープ ID に基づいて、番号順序の新しく生成された値を返します。 スコープは、**ERExpressionNumberSequenceScopeType** 列挙 (**共有**、**法人**、または**会社**) の値として指定する必要があります。 **共有**スコープでは、スコープ ID として空の文字列を指定します。 **会社**および**法人**スコープでは、会社コードとスコープ ID を指定します。 **会社**および**法人**スコープでは、スコープ ID として空の文字列を指定した場合、現在の会社コードを使用します。 | モデル マッピングでは、次のデータ ソースを定義します。<ul><li>**ERExpressionNumberSequenceScopeType** 列挙を参照する **enumScope** (**Dynamics 365 for Operations 列挙**タイプ)</li><li>式 **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")** を含む **NumSeq** (**計算済フィールド**タイプ)</li></ul>**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。 |
+| NUMSEQVALUE (番号順序コード、スコープ、スコープ ID) | 指定された番号順序コード、スコープ、およびスコープ ID に基づいて、番号順序の新しく生成された値を返します。 スコープは、**ERExpressionNumberSequenceScopeType** 列挙 (**共有**、**法人**、または**会社**) の値として指定する必要があります。 **共有**スコープでは、スコープ ID として空の文字列を指定します。 **会社**および**法人**スコープでは、会社コードとスコープ ID を指定します。 **会社**および**法人**スコープでは、スコープ ID として空の文字列を指定した場合、現在の会社コードを使用します。 | モデル マッピングでは、次のデータ ソースを定義します。<ul><li>**ERExpressionNumberSequenceScopeType** 列挙を参照する **enumScope** (**Dynamics 365 for Operations 列挙タイプ**)</li><li>式 **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")** を含む **NumSeq** (**計算済フィールド**タイプ)</li></ul>**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。 |
 | NUMSEQVALUE (番号順序コード) | 指定された番号順序、**会社**スコープ、および (スコープIDとして) ER 形式が実行されているコンテキストを提供する会社のコードに基づいて、番号順序の新しく生成された値を返します。 | モデル マッピングに次のデータ ソースを定義します: **NumSeq** (**計算済フィールド**タイプ)。 このデータ ソースには、式 **NUMSEQVALUE ("Gene\_1")** が含まれています。 **NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。 |
 | NUMSEQVALUE (番号順序レコード ID) | 指定された番号順序レコード ID に基づいて、番号順序の新しく生成された値を返します。 | モデル マッピングでは、次のデータ ソースを定義します。<ul><li>LedgerParameters テーブルを参照する **LedgerParms** (**テーブル**タイプ)</li><li>式 **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)** を含む **NumSeq** (**計算済フィールド**タイプ)</li></ul>**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用に一般会計パラメーターでコンフィギュレーションされた、番号順序の新しく生成された値を返します。 この番号順序は、仕訳帳を一意に識別し、トランザクションをリンクするバッチ番号として機能します。 |
 
@@ -743,4 +742,3 @@ ER では ER の式で使用される関数の一覧を拡張できます。 こ
 
 - [電子申告の概要](general-electronic-reporting.md)
 - [電子申告 (ER) 関数の一覧の拡張](general-electronic-reporting-formulas-list-extension.md)
-

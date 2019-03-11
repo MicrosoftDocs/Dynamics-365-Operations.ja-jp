@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) のシステム診断"
-description: "このトピックでは、Lifecycle Services (LCS) のシステム診断に関する詳細情報を提供します。"
+title: Lifecycle Services (LCS) のシステム診断
+description: このトピックでは、Lifecycle Services (LCS) のシステム診断に関する詳細情報を提供します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 19061
 ms.assetid: 9a217373-f72b-4a28-adef-79900e40c872
 ms.search.region: Global
 ms.author: murtazac
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 597e24d95dd182db0df46c5deb0f76e7e4e44e3b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369688"
 ---
-
 # <a name="system-diagnostics-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のシステム診断
 
 [!include [banner](../../includes/banner.md)]
@@ -41,11 +40,11 @@ Microsoft Dynamics Lifecycle Services で、システム診断は管理者が 1 
 
 ![システム診断サービス (Lifecycle Services)](./media/systemdiagnosticservicelifecycleservices.png) システム診断では、Microsoft Dynamics AX の次のバージョンがサポートされています。
 -   Microsoft Dynamics AX 2012 R2
--   Microsoft Dynamics AX 2012 Feature Pack 
+-   Microsoft Dynamics AX 2012 Feature Pack
 -   Microsoft Dynamics AX 2012
 -   Microsoft Dynamics AX 2012 R3
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 システム診断を使用する前に、次の作業を行う必要があります。
 -   Diagnostic サービスのインストーラーをダウンロードして実行します。
 -   検出ウィザードを実行します。
@@ -55,7 +54,6 @@ Microsoft Dynamics Lifecycle Services で、システム診断は管理者が 1 
 次のトピックでは、システム診断をインストールして使用する方法について説明します。
 -   [システム診断のインストールと実行 (Lifecycle Services)](install-run-system-diagnostics-lcs.md)
 -   [システム診断を使用する (Lifecycle Services)](system-diagnostics-lcs.md)
-
 
 
 

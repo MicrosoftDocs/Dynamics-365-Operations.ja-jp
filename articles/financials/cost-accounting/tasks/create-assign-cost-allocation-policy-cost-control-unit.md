@@ -1,13 +1,13 @@
---- 
-title: "原価配賦ポリシーの作成と原価管理単位への割り当て"
-description: "原価配賦ポリシーと対応ルールを原価管理単位に作成し割り当てるには、この手順を使用します。"
+---
+title: 原価配賦ポリシーの作成と原価管理単位への割り当て
+description: 原価配賦ポリシーと対応ルールを原価管理単位に作成し割り当てるには、この手順を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 92f41eb99b84bbc596e79b413971f9d92f2555b6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 491d8292b7c951be930d2858362c8107caaa76ff
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324402"
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>原価配賦ポリシーの作成と原価管理単位への割り当て
 
@@ -65,5 +65,4 @@ ms.lasthandoff: 09/29/2017
     * ルールの日付は有効です。 新しいバージョンが作成された場合、ユーザーまたはシステムは、そのルールの期限を切ることが可能です。  
 5. [原価管理単位] フィールドで、値を入力または選択します。
 6. [保存] をクリックします。
-
 

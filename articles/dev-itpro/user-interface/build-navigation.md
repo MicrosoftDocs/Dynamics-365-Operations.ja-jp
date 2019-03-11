@@ -1,13 +1,13 @@
 ---
-title: "ナビゲーションの構築"
-description: "このチュートリアルでは、ワークスペースとナビゲーション ウィンドウにナビゲーション要素を追加します。"
+title: ナビゲーションの構築
+description: このチュートリアルでは、ワークスペースとナビゲーション ウィンドウにナビゲーション要素を追加します。
 author: aneesmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 653ed097932674e9a78e6363c69f473207cc6eae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9465891276c31c8b112b85c4524388cd080ecc63
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368890"
 ---
-
 # <a name="build-navigation"></a>ナビゲーションの構築
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ ms.lasthandoff: 04/20/2018
 フリート管理チュートリアル プロジェクトを既にインポートした場合は、次のセクションに進みます。
 
 1.  フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
-2.  Visual Studio の **Finance and Operations** メニューで、**プロジェクトのインポート**をクリックします。
+2.  Visual Studio の、**Finance and Operations** メニューで、**プロジェクトのインポート** をクリックします。
 3.  **プロジェクトのインポート** ウィンドウで、**ファイル名**テキスト ボックスの隣にある、省略記号ボタンをクリックします。
 4.  **インポートするファイルの選択**ウィンドウで、**C:\FMLab** を参照して **FMTutorialDataModel.axpp** をクリックしてから**開く**をクリックします。
 5.  プロジェクト ファイルの場所テキスト ボックスに、**C:\FMLab** と入力します。
@@ -97,7 +96,7 @@ ms.lasthandoff: 04/20/2018
 ### <a name="create-a-menu-item-that-points-to-the-fmtclerkworkspace-workspace"></a>FMTClerkWorkspace ワークスペースを指すメニュー項目を作成します
 
 1.  **FMTutorial** を右クリックして **追加** をポイントしてから **新しい項目** をクリックします。
-2.  **AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **表示メニュー項目**とクリックします。 **名前**プロパティで、**FMTClerkWorkspace** と入力します。
+2.  **AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **表示メニュー項目** の順にクリックします。 **名前**プロパティで、**FMTClerkWorkspace** と入力します。
 3.  **追加** をクリックします。
 4.  新しいメニュー項目の次のプロパティを指定します。
 
@@ -109,7 +108,7 @@ ms.lasthandoff: 04/20/2018
 ### <a name="create-a-tile-that-points-to-the-fmtclerkworkspace-workspace-menu-item"></a>FMTClerkWorkspace ワークスペース メニュー項目をポイントするタイルを作成する
 
 1.  **FMTutorial** を右クリックして **追加** をポイントしてから **新しい項目** をクリックします。
-2.  **AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **タイル**とクリックします。 **名前**プロパティで、**FMTClerkWorkspace** と入力します。
+2.  **AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **タイル** の順にクリックします。 **名前**プロパティで、**FMTClerkWorkspace** と入力します。
 3.  **追加** をクリックします。
 4.  新しいタイルの次のプロパティを指定します。
 
@@ -137,8 +136,8 @@ ms.lasthandoff: 04/20/2018
 
 ここで、チュートリアル ワークスペースを示すタイルを含む新しいメイン メニュー セクションを追加します。 次に、このセクションの同じフォームにリンクを追加します。 これは、非ワークスペースのフォーム リンクの外観を示します。
 
-1.  Visual Studio の**ソリューション エクスプローラー**で、**FMTutorial** を右クリックして**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **メニュー**とクリックします。 **名前**プロパティで、**FleetManagementTutorial** と入力します。
+1.  Visual Studio の、**ソリューション エクスプローラー** で、**FMTutorial** を右クリックして、**追加** をポイントしてから、**新しい項目** をクリックします。
+2.  **AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **メニュー** の順にクリックします。 **名前**プロパティで、**FleetManagementTutorial** と入力します。
 3.  **追加** をクリックします。
 4.  **ソリューション エクスプローラー**で、新しいメニュー **FleetManagementTutorial** をまだ開いていない場合はダブルクリックします。
 5.  プロパティ リストで、**ラベル** プロパティを**フリート管理のチュートリアル**に設定します。
@@ -182,7 +181,6 @@ ms.lasthandoff: 04/20/2018
     [![Nav5](./media/nav5.png)](./media/nav5.png) 
 
     **一般的な** サブメニューをクリックすると、モデル化されているメニュー項目が表示されます。 これらのリンクのいずれかをクリックして、参照を正しく設定したか確認することができます。 参照を正しく設定した場合は、作成中のチュートリアル ワークスペースをクリックすると、開きます。
-
 
 
 

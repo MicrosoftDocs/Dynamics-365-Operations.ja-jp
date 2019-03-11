@@ -1,13 +1,13 @@
 ---
-title: "フィールドの説明を表示およびエクスポートする"
-description: "この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。"
+title: フィールドの説明を表示およびエクスポートする
+description: この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: rschloma
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359339"
 ---
-
 # <a name="view-and-export-field-descriptions"></a>フィールドの説明を表示およびエクスポートする
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。
 
-Microsoft Dynamics 365 for Finance and Operations には、いくつかのさらに複雑なフィールドについての説明があります。 フィールド上に置くと、これらの説明が表示されます。 **フィールドの説明** ページを使用すると、フィールドの説明を表示およびエクスポートすることもできます。
+Microsoft Dynamics 365 for Finance and Operations には、より複雑なフィールドの説明がいくつかあります。 フィールド上に置くと、これらの説明が表示されます。 **フィールドの説明** ページを使用すると、フィールドの説明を表示およびエクスポートすることもできます。
 
 すべてのページにフィールドの説明があるわけではありません。 より複雑なフィールドだけに説明を提供し、フィールドの使用が明確な場合は提供しません。 したがって、一部のページは、任意のフィールドの説明がない、一部のページには説明がある、多くのパラメーターのページなど複雑なページには多くの説明があります。
 
@@ -70,7 +69,7 @@ Finance and Operations の開発環境に対するアクセス権を持つ場合
 ページの説明をエクスポートするには以下を実行します。
 
 1. **ページの選択** フィールドでページを選択します。
-2. 右上隅の **Microsoft Office で開く** ボタンをクリックしてから、**FieldDescriptionTmp** をクリックします。
+2. 右上隅の **Microsoft Office で開く**ボタンをクリックしてから、**FieldDescriptionTmp** をクリックします。
 
 ### <a name="searching-for-a-page"></a>ページを検索する
 
@@ -109,4 +108,3 @@ Finance and Operations の開発環境に対するアクセス権を持つ場合
 ## <a name="additional-resources"></a>その他のリソース
 
 [フィールド ヘルプのカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)
-

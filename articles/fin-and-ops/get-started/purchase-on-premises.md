@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations (オンプレミス) の購入"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations (オンプレミス) を購入して展開する方法について説明します。"
+title: Finance and Operations (on-premises) の購入
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations(設置型) を購入し、展開する方法を説明します。
 author: maertenm
 manager: AnnBe
 ms.date: 02/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d34fc5cc7f1657df9a4897691b4d69b6c153633f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369609"
 ---
-
-# <a name="buy-finance-and-operations-on-premises"></a>Finance and Operations (オンプレミス) の購入
+# <a name="buy-finance-and-operations-on-premises"></a>Finance and Operations (on-premises) の購入
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,8 +63,7 @@ Microsoft Online Services ID は、Finance and Operations (設置型) をエン�
 
 プロビジョニング ガイドへのアクセスについては、こちらを参照してください。
 
-- [CustomerSource のプロビジョニング ガイド](https://go.microsoft.com/fwlink/?linkid=852080)
+- [CustomerSource](https://go.microsoft.com/fwlink/?linkid=852080) のプロビジョニング ガイド
 - [PartnerSource のプロビジョニング ガイド](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
 
 LCS にログインすると、プロジェクトが自動的にプロビジョニングします。 LCS プロジェクトでは、Finance and Operations (設置型) を配置できます。 LCS プロジェクトの使用開始の詳細については、[Lifecycle Services でのオンプレミス プロジェクトの作成](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
-

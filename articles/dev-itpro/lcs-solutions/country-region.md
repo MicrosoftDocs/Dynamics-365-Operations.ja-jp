@@ -1,13 +1,13 @@
 ---
-title: "ローカライズと規制の機能"
-description: "このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。"
+title: ローカライズと規制の機能
+description: このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302551"
 ---
-
 # <a name="localization-and-regulatory-features"></a>ローカライズと規制の機能
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations には、[製品のローカライズおよび翻訳の対応状況に関するガイド](https://aka.ms/ax-availabilityguide) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
+Microsoft Dynamics 365 for Finance and Operations には、[製品のローカライズおよび翻訳の対応状況に関するガイド](https://aka.ms/dynamics_365_international_availability_deck)に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
 
 このトピックには、次の操作に役立つリソースの一覧が含まれます。 
 - 発展途上国/地域固有のソリューションの詳細について確認する
@@ -45,10 +44,11 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 -   [ローカライズ機能の分類](classify-localization-features.md)
 -   [国コード - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>ローカライズの更新とコミュニケーション
+## <a name="regulatory-updates-and-communication"></a>規制の更新と通知
 次のリソースでは、計画されているローカライズ機能と新しいローカライズ機能に関する情報を紹介しています。 
 
-### <a name="localization-updates"></a>ローカライズの更新
+### <a name="regulatory-updates"></a>規制の更新
+-   [規制の更新](../../financials/localizations/regulatory-updates.md)
 -   [ローカライズ ポータル](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (毎週更新)
 -   [LCS 問題検索](../lifecycle-services/issue-search-lcs.md) (毎日更新)
 
@@ -118,7 +118,6 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
         - [米国](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) で、コード アップグレード サービスを構成する"
-description: "このトピックでは、Lifecycle Services (LCS) の <strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Finance and Operations に移行する方法について説明します。"
+title: Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
+description: このトピックでは、Lifecycle Services (LCS) の <strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Finance and Operations に移行する方法について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 6f58086752c2b15f1000aa447174bb86a1cf1000
 ms.openlocfilehash: d4ea5a558eeb04d227f7f59d736379657a1a55b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368473"
 ---
-
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) で、コード アップグレード サービスを構成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Lifecycle Services (LCS) の <strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Dynamics 365 for Finance and Operations に移行する方法について説明します。
+このトピックでは、Lifecycle Services (LCS) の<strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Dynamics 365 for Finance and Operations に移行する方法について説明します。
 
 <a name="overview"></a>概要
 --------
@@ -38,7 +37,7 @@ ms.lasthandoff: 09/24/2018
 コードのアップグレード ツールは、Azure DevOps プロジェクトに接続し、トランク\\メインブランチを検索し、リリース\\\<バージョン番号\>という名前の新しいブランチに分岐してから、コードのアップグレードを実行します。 このプロセスが完了した後、Finance and Operations 開発環境を、リリース \\\<バージョン番号\> 下の新しいブランチに同期させ、競合を解決できます。 アップグレード後のコードをコンパイルしてテストしたとき、新しいブランチを Visual Studio のソース管理エクスプ ローラーを使用して Trunk\\Main にマージすると、プロセスが完了します。
 
 
-Dynamics 365 for Finance and Operations 8.0 およびこれ以降のバージョンでは、Microsoft モデルのオーバーレイ経由でのカスタマイズは許可されていません。 アップグレードする前に、カスタマイズを拡張機能にリファクターする計画が必要です。 詳細については、[拡張機能のホームページ](../extensibility/extensibility-home-page.md)および [8.0 環境でオーバーレイをリファクタリングする](../extensibility/refactoring-over-layering.md)を参照してください。
+Dynamics 365 for Finance and Operations バージョン 8.0 およびそれ以降では、Microsoft モデルをオーバーレイしてカスタマイズすることはできません。 アップグレードする前に、カスタマイズを拡張機能にリファクターする計画が必要です。 詳細については、[拡張機能のホームページ](../extensibility/extensibility-home-page.md)および [8.0 環境でオーバーレイをリファクタリングする](../extensibility/refactoring-over-layering.md)を参照してください。
 
 ## <a name="process"></a>プロセス
 ### <a name="create-the-trunkmain-folder-structure"></a>トランク\\メイン フォルダー構造を作成する
@@ -99,7 +98,7 @@ LCS のコードのアップグレード タイルは、移行元の Finance and
 
 [![ax7 バージョン ファイル](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) 
 
-どのアプリケーション バージョンを持っているか識別する方法の詳細については、[Microsoft Dynamics AX ビルド番号の概要](https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/) を参照してください。
+どのアプリケーション バージョンを持っているか識別する方法の詳細については、[Microsoft Dynamics AX ビルド番号の概要](https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/)を参照してください。
 
 ### <a name="execute-the-code-upgrade-tile"></a>コード アップグレード タイルを実行
 
@@ -107,8 +106,8 @@ LCS のコードのアップグレード タイルは、移行元の Finance and
 
    [![コード アップグレード タイル](./media/codeupgradetile.png)](./media/codeupgradetile.png)
 
-2. 画面の左下隅で、**追加**をクリックしてから名前と説明を入力します。 アップグレード元のバージョンとして Microsoft Dynamics AX 7 を選択し、**作成** をクリックします。
-   -   Dynamics AX 2012 R3 からコードをアップグレードする場合、アップグレード元のバージョンを選択します。 圧縮バージョンの Dynamics AX 2012 R3 モデル ストア ファイルをアップロードするように要求されます。
+2. 画面の左下隅で、**追加**をクリックしてから名前と説明を入力します。 アップグレード元のバージョンとして Microsoft Dynamics AX 7 を選択し、**作成**をクリックします。
+   -   Dynamics AX 2012 R3 からコードをアップグレードする場合は、アップグレード元のバージョンを選択します。 圧縮バージョンの Dynamics AX 2012 R3 モデル ストア ファイルをアップロードするように要求されます。
    -   **見積のみ**チェック ボックスがオンになっている場合、ツールはレポートのみを生成し、チェックインや Azure DevOps の新しいコード分岐の作成を行いません。 実際のアップグレードをコミットする前に、アップグレードに必要な作業の潜在的なサイズを評価する場合、このオプションを使用する必要があります。
 
    [![新規コード ブランチ](./media/codeupgrade_new.png)](./media/codeupgrade_new.png)
@@ -121,9 +120,8 @@ LCS のコードのアップグレード タイルは、移行元の Finance and
 
 ### <a name="merge-releases-back-into-trunkmain"></a>リリースを Trunk\\Main にマージ
 
-リリース\\\<バージョン番号\>のアップグレードされたコードが正常にコンパイルされ、コード移行とテストを完了したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、Visual Studio の開発環境で、[ソース管理エクスプローラー] ウィンドウを開き、**リリース\\\<バージョン番号\>** 分岐を右クリックし、コンテキスト メニューで **分岐とマージ** に進み、サブ メニューで **マージ** を選択します。
+リリース\\\<バージョン番号\>のアップグレードされたコードが正常にコンパイルされ、コード移行とテストを完了したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、Visual Studio の開発環境で、ソース管理エクスプローラー ウィンドウを開き、**リリース\\\<バージョン番号\>** 分岐を右クリックし、コンテキスト メニューで**分岐とマージ**に進み、サブ メニューで**マージ**を選択します。
 
 [![リリース ブランチのマージ](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
 これにより、[[ソース管理マージ ウィザード](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files#sourcecontrolwizard)] が開きます。これは、リリース\\\<のバージョン番号\>のブランチをトランク\\メインにマージする手順を案内します。 
-

@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations クライアントのよく寄せられる質問"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations クライアントについてよく寄せられる質問に対する回答を提供します。"
+title: Finance and Operations クライアントのよく寄せられる質問
+description: この記事じゃ、Microsoft Dynamics 365 for Finance and Operations クライアントについてよく寄せられる質問に対する回答を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 74f85f7a1c390d1f21d0423a794ff16c7250d9fa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316720"
 ---
-
 # <a name="finance-and-operations-client-faq"></a>Finance and Operations クライアントのよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、Microsoft Dynamics 365 for Finance and Operations クライアントについてよく寄せられる質問に対する回答を提供します。
+この記事じゃ、Microsoft Dynamics 365 for Finance and Operations クライアントについてよく寄せられる質問に対する回答を提供します。
 
 ## <a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a>Finance and Operations の使用時に、なぜ記号が読み込まれないのですか。
 
@@ -56,4 +55,3 @@ ms.lasthandoff: 12/18/2018
 
 - コントロールに**詳細の表示**機能がある場合、およびコントロールに値がある場合、その値はハイパーリンクとして表示されます。 ハイパーリンクをクリックすると、詳細を含むページを開くことができます。
 - また、**詳細の表示**は、Finance and Operations ショートカット メニューのオプションです。 右クリックしたときに、いつ Finance and Operations ショートカット メニューが表示されるかについては、前のセクションを参照してください。
-

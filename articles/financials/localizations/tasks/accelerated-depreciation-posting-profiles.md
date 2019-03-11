@@ -1,13 +1,13 @@
---- 
-title: "増加償却パラメーターおよび転記プロファイルのコンフィギュレーション"
-description: "日本では、加速償却は [レート係数]、[レートしきい値] および [計算方法] に基づいて計算されます。"
+---
+title: 増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
+description: 日本では、加速償却は [レート係数]、[レートしきい値] および [計算方法] に基づいて計算されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 87b3768043bccb5d308e08ac1d077dba6f691a4c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371070"
 ---
 # <a name="configure-accelerated-depreciation-parameters-and-posting-profiles"></a>増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
 
@@ -59,5 +59,4 @@ ms.lasthandoff: 10/16/2018
 1. [固定資産] > [設定] > [固定資産転記プロファイル] の順に移動します。
 2. [加速償却] セクションを展開または折りたたみます。
     * [加速償却] に使用する [主勘定] と [相手勘定] を指定します。  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "手持ち在庫モバイル ワークスペース"
-description: "このトピックでは、手持在庫モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関する情報を、いつでも、どこでも取得するのに役立ちます。"
+title: 手持ち在庫モバイル ワークスペース
+description: このトピックでは、手持在庫モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関する情報を、いつでも、どこでも取得するのに役立ちます。
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,24 +18,23 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: e2a99476da7ce3feab1d2c37e8510f0042cf4b63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 735a25d625774892ff71d4799932f15c258dfbfa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335603"
 ---
-
 # <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、[**手持ち在庫**] モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。
+このトピックでは、**手持ち在庫** モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。
 
-このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。
+このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations Mobile アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
-通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。 これらの動きは、常に手持ちの在庫ステータスを変更します。 [**手持ち在庫**] モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。 倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。 
+通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。 これらの動きは、常に手持ちの在庫ステータスを変更します。 **手持ち在庫** モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。 倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。 
 
 モバイル ワークスペースは、複数の設備の手持ち状態のインスタント ビューを提供します。 複数の設備での手持ち在庫、現在の原料の予約、および予約されていない手持ち在庫を表示できます。 また、品目番号を入力して手持ち在庫を照会したり、手持ち製品やバリアントのフィルター検索を行うこともできます。 
 
@@ -56,14 +55,14 @@ ms.lasthandoff: 03/26/2018
     -   現物引当済による (このビューは、引当済金額を表します)。
     -   引当可能現物数による (このビューは予約がない使用可能な残りの金額を表します)。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用している場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は [手持ち在庫] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用する場合の前提条件 
+Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は**手持在庫**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
-Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
+Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
 
 <table>
 <thead>
@@ -78,9 +77,9 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>KB 4013633 を実装します。</td>
 <td>システム管理者</td>
 
-<td>KB 4013633 は、[<strong>手持ち在庫</strong>] モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
+<td>KB 4013633 は、<strong>手持ち在庫</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li>
 <li><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
@@ -88,7 +87,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 </ol></td>
 </tr>
 <tr class="even">
-<td>[<strong>手持在庫</strong>] モバイル ワークスペースを公開します。</td>
+<td><strong>手持在庫</strong> モバイル ワークスペースを公開します。</td>
 <td>システム管理者</td>
 <td>「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
@@ -113,10 +112,10 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 ## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペースを使用して、製品の手持ち在庫を表示します。
 
-1.  モバイル デバイスで、[**手持ち在庫**] ワークスペースを選択します。
+1.  モバイル デバイスで、**手持ち在庫** ワークスペースを選択します。
 
-2.  [**品目の手持ち在庫の確認**] を選択します。 オフラインで使用する場合のために、アプリにロードされた製品のリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、開発者は [モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を確認する必要があります。
-3.  品目が一覧にない場合は、[**検索を続ける**] を選択します。 製品番号で検索するか、または製品名での検索に切り替えます。
+2.  **品目の手持ち在庫の確認** を選択します。 オフラインで使用する場合のために、アプリにロードされた製品のリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、開発者は [モバイル プラットフォーム](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md) を確認する必要があります。
+3.  品目が一覧にない場合は、**検索を続ける** を選択します。 製品番号で検索するか、または製品名での検索に切り替えます。
 
 4.  製品を選択します。 品目に画像が含まれる場合、画像が表示されます。
 5.  手持ち在庫の状態を表示するために次のオプションの 1 つを選択します。
@@ -131,4 +130,3 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
     -   現物在庫による (このビューは、合計金額を表します)。
     -   現物引当済による (このビューは、引当済金額を表します)。
     -   物理的に利用可能ごと (この表示は予約なしの利用可能な金額を表します。)
-

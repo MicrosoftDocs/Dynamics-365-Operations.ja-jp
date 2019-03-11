@@ -1,32 +1,31 @@
 ---
-title: "引き取りかんばんを使用した補充"
-description: "このトピックでは、製造活動における材料補充の引き取りかんばん使用方法を説明します。"
+title: 引き取りかんばんを使用した補充
+description: このトピックでは、製造活動における材料補充の引き取りかんばん使用方法を説明します。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 011da8cd894cc044b6af8b740e49ed8d7c3c0c67
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320929"
 ---
-
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="configure-the-withdrawal-kanban"></a>引き取りかんばんを構成
 
-引き取りかんばんに使用される転送活動は、リーン生産フローでアクティブ化された活動計画の一部として構成されます。 転送活動のコンフィギュレーションの一部として、転送の「開始」と「配置」場所を指定します。 転送活動を構成すると、[**引き取り**] タイプのかんばんルールに割り当てることができます。 引き取りかんばんにポリシーとコンフィギュレーションを設定し、かんばんルールとします。 かんばんの数量は、転送プロセス中で実行されるかんばんの材料取り扱い単位数を定義します。 固定補充方法を選択すると、固定かんばん数量が使用されます。 この数量は、需要のソース対して在庫を切らさないよう構築するために必要な数のかんばんを定義します。 固定数量は、実需、過去の需要、およびサービスのレベルに基づいて計算されます。 次の2つのシナリオでは、引き取りかんばんを使用する材料補充の管理方法について説明します。
+引き取りかんばんに使用される転送活動は、リーン生産フローでアクティブ化された活動計画の一部として構成されます。 転送活動のコンフィギュレーションの一部として、転送の「開始」と「配置」場所を指定します。 転送活動を構成すると、**引き取り** タイプのかんばんルールに割り当てることができます。 引き取りかんばんにポリシーとコンフィギュレーションを設定し、かんばんルールとします。 かんばんの数量は、転送プロセス中で実行されるかんばんの材料取り扱い単位数を定義します。 固定補充方法を選択すると、固定かんばん数量が使用されます。 この数量は、需要のソース対して在庫を切らさないよう構築するために必要な数のかんばんを定義します。 固定数量は、実需、過去の需要、およびサービスのレベルに基づいて計算されます。 次の2つのシナリオでは、引き取りかんばんを使用する材料補充の管理方法について説明します。
 
 ## <a name="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban"></a>シナリオ 1: 固定の引き取りかんばんを使用して、生産入庫の場所を補充
 
@@ -87,5 +86,4 @@ ms.lasthandoff: 11/03/2017
 6.  製造プロセス
 
 生産入庫の場所でかんばんを消費すると、空と報告され、新しいかんばんがフローに追加されます。 かんばんが作成されると、ウェーブ明細行がかんばんウェーブに追加されます。 かんばんウェーブが処理されるときは、かんばんピッキング用の倉庫作業が作成されます。 倉庫作業者は、かんばんピッキングの作業を処理すると倉庫場所のかんばん用材料をピッキングする作業を行うよう指示されます。 この倉庫作業者がピッキングを確認する際、かんばんは自動的に完了し、作業者は材料を生産入庫の場所に配置するようガイドされます。
-
 

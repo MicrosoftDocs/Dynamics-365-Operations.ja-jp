@@ -1,32 +1,30 @@
 ---
-title: "返品品目を受け取る"
-description: "返品荷物が到着したら、作成済みの返品注文と照合します。"
+title: 返品品目を受け取る
+description: 返品荷物が到着したら、作成済みの返品注文と照合します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d46f2b16c475cda9b99c1ba084538de47ec3dc7c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ea438b4e7bbceec6707e8259e1d6faead54cfbda
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365802"
 ---
-
-
 # <a name="receive-returned-items"></a>返品品目を受け取る 
 
 [!include [banner](../includes/banner.md)]
@@ -45,6 +43,5 @@ ms.lasthandoff: 05/08/2018
 [検査による返却品目の受入](take-returned-items-through-inspection.md)
 
   
-
 
 

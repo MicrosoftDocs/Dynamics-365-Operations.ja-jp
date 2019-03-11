@@ -1,13 +1,13 @@
---- 
-title: "受信したドキュメントへの ER コンフィギュレーションのデザイン"
-description: "この手順では、着信電子ドキュメントを解析するために電子申告 (ER) コンフィギュレーションをデザインする方法について説明します。"
+---
+title: 受信したドキュメントへの ER コンフィギュレーションのデザイン
+description: この手順では、着信電子ドキュメントを解析するために電子申告 (ER) コンフィギュレーションをデザインする方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326104"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>受信したドキュメントへの ER コンフィギュレーションのデザイン
 
@@ -110,5 +110,4 @@ ms.lasthandoff: 08/09/2018
     * [参照] をクリックして、Response4.xml ファイルを選択します。  
 16. [OK] をクリックします。
     * 生成された出荷を確認します。 応答タイプが今、 Response1.xml ファイルと同じものであると正しく認識されたことに注意してください。  
-
 

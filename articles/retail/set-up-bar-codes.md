@@ -1,13 +1,13 @@
 ---
-title: "バーコードの設定"
-description: "この記事では、Microsoft Dynamics 365 for Retail でのバーコードの使用方法について説明します。"
+title: バーコードの設定
+description: この記事は、Microsoft Dynamics 365 for Retail でのバーコードの使用方法について説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 15d12abe32d3f5a47348016c67a4fb02d0a5d8e3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347356"
 ---
-
 # <a name="set-up-bar-codes"></a>バーコードの設定
 
 [!include [banner](includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Retail でのバーコードの使用方法について説明します。
+この記事は、Microsoft Dynamics 365 for Retail でのバーコードの使用方法について説明します。
 
 バーコードを使用して、製品の購買および販売、製品バリアントの追跡、および顧客と従業員の設定を行うことができます。 また、バーコードを使用して、クーポン、ギフト カード、およびクレジット メモを発行して裏書きすることもできます。 標準バーコード、カスタム バーコード、社内バーコードを使用するように、小売製品を設定できます。 製品では、複数のバーコードを使用できます。 たとえば、製品をさまざまな製造業者から仕入れる場合、あるいは製品にサイズ、スタイル、または色に基づいたバリアントがある場合、製品で複数のバーコードを使用できます。 バーコードには、製品の重量や価格を含めることができます。 バーコード マスクは、バーコードの作成に使用されるテンプレートです。
 
@@ -48,4 +47,3 @@ ms.lasthandoff: 01/04/2019
 ## <a name="additional-resources"></a>その他のリソース
 
 [バーコード マスクの設定](set-up-bar-code-masks.md)
-

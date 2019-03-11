@@ -1,13 +1,13 @@
---- 
-title: "仕訳帳の支払手数料の照会"
-description: "このタスクでは、仕訳帳の支払手数料の集計を表示する方法について説明します。"
+---
+title: 仕訳帳の支払手数料の照会
+description: このタスクでは、仕訳帳の支払手数料の集計を表示する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymentFeeSummary_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: bb9f5f4b87fdff12dcc0666f28900732b0c44c9c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371106"
 ---
 # <a name="inquiries-of-payment-fee-on-journal"></a>仕訳帳の支払手数料の照会
 
@@ -44,5 +44,4 @@ ms.lasthandoff: 10/16/2018
 4. [照会] をクリックします。
 5. [支払手数料集計] をクリックします。
     * 仕入先の支払手数料集計を確認します。  
-
 

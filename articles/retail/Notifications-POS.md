@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) での注文通知の表示"
-description: "このトピックでは、販売時点管理および注文のフレームワークで注文の通知を有効にする方法について説明します。 最終的には、開発者は注文のフルフィルメント操作以外の操作に、これらの通知を拡張できるようになります。"
+title: 販売時点管理 (POS) での注文通知の表示
+description: このトピックでは、販売時点管理および注文のフレームワークで注文の通知を有効にする方法について説明します。 最終的には、開発者は注文のフルフィルメント操作以外の操作に、これらの通知を拡張できるようになります。
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361340"
 ---
-
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での注文通知の表示
 
 [!include [banner](includes/banner.md)]
 
-最新の小売環境では、店舗の関係者は、顧客の支援、トランザクションの入力、在庫棚卸、店舗での受注などのさまざまなタスクが割り当てられています。 販売時点管理 (POS) クライアントは、関係者がこれらすべてのタスクおよび他多数を実行できるよう、一つのアプリケーションを提供します。 日中に実行されるべきさまざまなタスクによって、関係者は注意が必要なときに通知を受ける必要があります。 POS の通知フレームワークは、小売業者がロール ベースの通知を構成できるようにします。 Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 5 では、これらの通知は POS の操作に対してのみ構成することができます。
+最新の小売環境では、店舗の関係者は、顧客の支援、トランザクションの入力、在庫棚卸、店舗での受注などのさまざまなタスクが割り当てられています。 販売時点管理 (POS) クライアントは、関係者がこれらすべてのタスクおよび他多数を実行できるよう、一つのアプリケーションを提供します。 日中に実行されるべきさまざまなタスクによって、関係者は注意が必要なときに通知を受ける必要があります。 POS の通知フレームワークは、小売業者がロール ベースの通知を構成できるようにします。 Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 5 では、これらの通知は POS の操作にのみ構成することができます。
 
 現時点では、システムは注文のフルフィルメント操作に対してのみ通知を表示できます。 ただし、フレームワークが拡張できるように設計されているために、開発者は最終的にあらゆる操作の通知ハンドラーを作成し、POS でその操作の通知を表示できます。
 
@@ -72,4 +71,3 @@ ms.lasthandoff: 08/09/2018
 次の図は、さまざまなサイズのボタンに対する**コンテンツの配置**フィールドで、**右上** と **センター** を選択することによる結果を示します。
 
 ![POS ボタンのライブ コンテンツ](./media/ButtonsWithLiveContent.png "POS ボタンのライブ コンテンツ")
-

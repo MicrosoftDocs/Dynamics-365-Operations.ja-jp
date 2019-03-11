@@ -1,39 +1,38 @@
 ---
-title: "Attract でジョブ求人の作成、承認、および転記"
-description: "このトピックでは、Attract でのジョブ求人の要素について説明します。 ジョブ求人を作成する方法についても説明します。"
+title: Attract でジョブ求人の作成、承認、および転記
+description: このトピックでは、Attract でのジョブ求人の要素について説明します。 ジョブ求人を作成する方法についても説明します。
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305181"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Attract でジョブ求人の作成、承認、および転記
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Talent: Attract でのジョブ求人の要素について説明します。 ジョブ求人を作成する方法についても説明します。
 
-## <a name="job-creation"></a>ジョブ求人の作成
+## <a name="job-creation"></a>職務の作成
 
 管理者、採用担当者、および採用マネージャーがジョブ求人を作成できます。 ジョブ求人を作成するときに、プロセスでのロールを選択するよう求められます: 採用マネージャーまたは採用担当者。 ロールを選択した後、プロセス テンプレートを選択するよう求められます。 **スキップ**を選択すると、既定のテンプレートが使用されます。 プロセス テンプレートの詳細については、[Attract でプロセス テンプレートの作成](./process-templates-attract.md) を参照してください。
 
@@ -127,7 +126,7 @@ Attract のジョブ求人は、承認用に申請できます。 すべての�
 
 ジョブ求人の一覧で、ジョブ ステータスでフィルター処理できます。
 
-承認は、会社内の任意の Microsoft Azure Active Directory (Azure AD) ユーザーに送信されます。 承認は、承認者として一覧表示されているすべての人に同時に送信されます。 ジョブ求人が承認された後に、有効になります。
+承認は、会社内の任意の Microsoft Azure Active Directory(Azure AD) ユーザーに送信できます。 承認は、承認者として一覧表示されているすべての人に同時に送信されます。 ジョブ求人が承認された後に、有効になります。
 
 承認者として一覧表示されている人は、Attract で承認する項目があるという通知を受け取ります。 承認項目は、ダッシュボードの**自分に割り当て済み**セクションにも表示されます。 誰かがジョブ求人を受け入れまたは承認した後に、採用チームが通知を受け取ります。 最後に、採用チームはジョブ求人が承認されたときに通知を受け取ります。
 
@@ -169,4 +168,3 @@ Attract のジョブ求人は、承認用に申請できます。 すべての�
 
 13. ジョブ求人を有効にするには、**有効化**を選択します。
 14. ジョブ求人を転記するには、**転記**に移動し、Talent Careers サイトまたは LinkedIn で**今すぐ転記**を選択します。
-

@@ -1,13 +1,13 @@
 ---
-title: "ワークフローでの手動タスクのコンフィギュレーション"
-description: "このトピックでは、手動タスクのプロパティをコンフィギュレーションする方法について説明します。"
+title: ワークフローでの手動タスクのコンフィギュレーション
+description: このトピックでは、手動タスクのプロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309751"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>ワークフローでの手動タスクのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ ms.lasthandoff: 12/18/2018
     </tr>
     <tr>
     <td>ユーザー</td>
-    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
+    <td>特定 Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
     <td>
     <ol>
     <li><strong>ユーザー</strong> を選択したのち、<strong>ユーザー</strong> タブをクリックします。</li>
@@ -383,4 +382,3 @@ ms.lasthandoff: 12/18/2018
 5. ユーザーがタスクを別のユーザーに割り当てることができるようにするには、**委任**チェック ボックスをオンにします。
 6. ユーザーが作業項目キューの他のユーザーにタスクを割り当て直すことができるようにするには、**再割り当て**チェック ボックスをオンにします。
 7. ユーザーが作業項目キューにタスクを割り当て直すことができるようにするには、**リリース**チェック ボックスをオンにします。 すると、別のユーザーがタスクを完了できます。
-

@@ -1,13 +1,13 @@
 ---
-title: "梱包材および費用"
-description: "梱包材費用は、一定の間隔でリサイクル会社に支払われます。 梱包単位を構成する各材料について、重量単位あたりの金額が支払われます。 梱包材費用は計算および報告されますが、所轄官庁に支払う必要がある税とは見なされないため、元帳トランザクションは転記されません。"
+title: 梱包材および費用
+description: 梱包材費用は、一定の間隔でリサイクル会社に支払われます。 梱包単位を構成する各材料について、重量単位あたりの金額が支払われます。 梱包材費用は計算および報告されますが、所轄官庁に支払う必要がある税とは見なされないため、元帳トランザクションは転記されません。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312304"
 ---
-
 # <a name="packing-materials-and-fees"></a>梱包材および費用
 
 [!include [banner](../includes/banner.md)]
@@ -56,13 +55,12 @@ ms.lasthandoff: 11/03/2017
 購買注文明細行の梱包材トランザクションは自動的には作成されません。 **梱包材の購買トランザクションの作成**ページで、請求済購買注文明細行に対するトランザクションを手動で作成します。
 
 ## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>顧客の梱包材費用ライセンス番号の設定
-顧客が梱包材費用を支払う場合は、**顧客**ページで顧客の梱包材費用ライセンス番号を指定します。 ライセンス番号が顧客に割り当てられている場合、販売注文が請求されるときに梱包材費用は自動的に計算されます。 請求後は、レポートの計算および印刷を行う必要がないため、**梱包材トランザクション** ページの [**手数料計算**] チェック ボックスがオフになります。 梱包材重量を請求書に印刷し、顧客が費用を支払うことを顧客に通知するように選択できます。 
+顧客が梱包材費用を支払う場合は、**顧客**ページで顧客の梱包材費用ライセンス番号を指定します。 ライセンス番号が顧客に割り当てられている場合、販売注文が請求されるときに梱包材費用は自動的に計算されます。 請求後は、レポートの計算および印刷を行う必要がないため、**梱包材トランザクション** ページの **手数料計算** チェック ボックスがオフになります。 梱包材重量を請求書に印刷し、顧客が費用を支払うことを顧客に通知するように選択できます。 
 
-法人が梱包材費用を支払う場合、顧客のライセンス番号を指定しないでください。 請求後は、**梱包材トランザクション** ページの [**手数料計算**] チェック ボックスが選択されます。 これにより、レポートが作成されるときに費用が計算されることが示されます。 請求書に重量を印刷し、法人が費用を支払うことを示すように選択できます。
+法人が梱包材費用を支払う場合、顧客のライセンス番号を指定しないでください。 請求後は、**梱包材トランザクション** ページの **手数料計算** チェック ボックスが選択されます。 これにより、レポートが作成されるときに費用が計算されることが示されます。 請求書に重量を印刷し、法人が費用を支払うことを示すように選択できます。
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>請求書への梱包材重量の印刷
 請求書に、梱包材重量を印刷し、だれが梱包材費用を支払うかを示すように選択できます。 重量は、梱包コードごとに集計されます。
-
 
 
 

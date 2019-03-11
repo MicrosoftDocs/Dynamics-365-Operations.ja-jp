@@ -1,29 +1,29 @@
 ---
-title: "Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。"
+title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)
+description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 844c23fc908c962203e644f1154cc480425d830b
 ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305084"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 12/18/2018
 
 ### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Finance and Operations との統合のマッピング エラー
 
-次の問題は Dynamics 365 for Finance and Operations と人材を統合するための現在のテンプレートで識別されています。 新しいテンプレートは、間もなく公開され、作成されたすべての新しい統合プロジェクトに適用されます。 既存の統合プロジェクトのために、タスク マッピングを更新できます。 更新されたマッピングについては、次の表を参照してください。 
+次の問題は、Dynamics 365 for Finance and Operations を統合するための現在のテンプレートで識別されています。 新しいテンプレートは、間もなく公開され、作成されたすべての新しい統合プロジェクトに適用されます。 既存の統合プロジェクトのために、タスク マッピングを更新できます。 更新されたマッピングについては、次の表を参照してください。 
 
 >[!NOTE]
 > ジョブ職位から職位親ジョブ割り当てタスクはデータが統合されていません。 この問題は現在調査中です。 現在のマッピングに回避策はありません。 
@@ -123,7 +123,7 @@ ms.lasthandoff: 12/18/2018
 | 既存のソース フィールド          | 新規ソース フィールド                   |
 | -------------------------------|------------------------------------|
 | cdm_name (名前)                | cdm_description (説明)      |
-| cdm_name (説明)         | cdm_jobdescription (職務明細書)|
+| cdm_name (名前)         | cdm_jobdescription (職務明細書)|
 
 
 更新されたマッピングは、以下の画像のようになります。
@@ -135,7 +135,7 @@ ms.lasthandoff: 12/18/2018
 | 既存のソース フィールド                 | 新規ソース フィールド                               |
 | --------------------------------------|------------------------------------------------|
 | cdm_emailaddress1 (電子メール アドレス 1)   | cdm_primaryemailaddress (主要な電子メール アドレス |
-| cdm_telephone1 (電話 1)          | cdm_primarytelephone (代表電話)       |
+| cdm_telephone1 (電話1)          | cdm_primarytelephone (代表電話)       |
 
 性別フィールドの変換は、更新する必要があります。 性別の**fn** (機能) マップを選択し、次の値のマッピングを更新します。
 
@@ -151,4 +151,3 @@ ms.lasthandoff: 12/18/2018
 ![作業者から作業者タスク](./media/WorkerMapping.png)
 
 ![性別フィールドの変換](./media/WorkerTransform.png)
-

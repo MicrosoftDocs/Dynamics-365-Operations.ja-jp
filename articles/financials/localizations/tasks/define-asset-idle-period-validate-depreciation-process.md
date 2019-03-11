@@ -1,13 +1,13 @@
---- 
-title: "資産のアイドル期間の定義および減価償却プロセスの検証"
-description: "このタスクでは、固定資産のアイドル期間の定義について説明します。"
+---
+title: 資産のアイドル期間の定義および減価償却プロセスの検証
+description: このタスクでは、固定資産のアイドル期間の定義について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, AssetIdlePeriodAssign_JP, AssetTable, AssetBook, AssetIdlePeriodUpdate_JP, AssetProfile, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 70867f19f405e202e44505a2e932e9c35ca550de
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371041"
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process"></a>資産のアイドル期間の定義および減価償却プロセスの検証
 
@@ -112,5 +112,4 @@ ms.lasthandoff: 10/16/2018
 16. [OK] をクリックします。
 17. [OK] をクリックします。
     * アイドル期間に対して作成された特別償却の仕訳帳は検証なし  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Operations リソース"
-description: "運営リソースはプロジェクトまたは生産プロセス活動を実行します。 これらはさまざまなタイプ、さまざまな能力が指定できます。"
+title: Operations リソース
+description: 運営リソースはプロジェクトまたは生産プロセス活動を実行します。 これらはさまざまなタイプ、さまざまな能力が指定できます。
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366607"
 ---
-
 # <a name="operations-resources"></a>Operations リソース
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="costing-resources"></a>原価計算リソース
 工順工程またはプロジェクトの時間予測などの活動を定義すると、特定の運営リソースまたはリソース グループの要件を指定できます。 ただし、特定のタイプの運営リソースの条件、または特定の機能またはコンピテンシーがある運営リソースの条件も指定できます。 したがって、実際のリソース割り当ては、活動がスケジューリングされ、能力を引当するまで行われません。 したがって、工程では、特定の運営リソースに基づいた見積と BOM 計算を行う必要があることを指定できます。 この運営リソースは、原価計算のリソースと呼ばれます。 また、原価計算のリソースから原価カテゴリと工程時間を、活動に転送できます。 工程をスケジューリングすると、見積と BOM 計算には、実際にスケジュールするリソースを使用します。
-
 
 
 

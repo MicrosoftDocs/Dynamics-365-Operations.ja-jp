@@ -1,13 +1,13 @@
---- 
-title: "主勘定の作成"
-description: "このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。"
+---
+title: 主勘定の作成
+description: このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5fd332121bae2be55ada39b33e5f381096c9b74d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331578"
 ---
 # <a name="create-a-main-account"></a>主勘定の作成
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/29/2017
 4. [名前] フィールドに値を入力します。
 5. [主勘定タイプ] フィールドで、財務諸表で勘定残高および場所を最も適切に表すタイプを選択します。
 6. 一覧から主勘定が属する勘定カテゴリを選択します。
-    * 勘定カテゴリは既定の財務レポートおよび Power BI ダッシュボードの内容に使用されます。  
+    * 勘定カテゴリは既定の財務報告および Power BI ダッシュボードの内容に使用されます。  
 7. 一覧で、選択された行のリンクをクリックします。
     * 既定の借方または貸方残高を変更します。  
 8. [既定通貨] フィールドで、通貨一覧から値を選択します。
@@ -53,5 +53,4 @@ ms.lasthandoff: 09/29/2017
 20. 一覧で、選択された行のリンクをクリックします。
 21. [為替換算タイプ] フィールドで、口座の為替レートの計算方法を選択します。
 22. ページを閉じます。
-
 

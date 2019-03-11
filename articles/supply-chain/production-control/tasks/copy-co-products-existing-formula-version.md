@@ -1,13 +1,13 @@
---- 
-title: "既存のフォーミュラ バージョンから連産品をコピー"
-description: "この手順では、既存のフォーミュラ バージョンから、リリース済製品の別のフォーミュラ バージョンに連産品をコピーする方法を示します。"
+---
+title: 既存のフォーミュラ バージョンから連産品をコピー
+description: この手順では、既存のフォーミュラ バージョンから、リリース済製品の別のフォーミュラ バージョンに連産品をコピーする方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, BOMConsistOf, PmfFormulaCoBy, BOMRouteCopyDialog
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 179c12da0c2ddc7b5e2f2fdddd21168eac121811
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 80543780c423b5beac3ec57f4fa035e560aaa4ce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319250"
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>既存のフォーミュラ バージョンから連産品をコピー
 
@@ -53,5 +53,4 @@ ms.lasthandoff: 09/29/2017
 5. [フォーミュラ バージョン] フィールドで、値を入力または選択します。
 6. [OK] をクリックします。
 7. ページを閉じます。
-
 

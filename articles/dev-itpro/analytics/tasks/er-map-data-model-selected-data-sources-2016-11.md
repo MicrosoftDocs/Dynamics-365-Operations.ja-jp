@@ -1,13 +1,13 @@
---- 
-title: "ER データ モデルを選択したデータ ソースにマップする"
-description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations, Enterprise Edition データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。"
+---
+title: ER データ モデルを選択したデータ ソースにマップする
+description: 次の手順では、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations Enterprise Edition データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
 ms.reviewer: kfend
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 249bf3f3806ed43eccf39086bdf9697a3e879c27
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331555"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER データ モデルを選択したデータ ソースにマップする
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations, Enterprise Edition データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。 このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。 この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。 これらの手順を完了するには、最初に「モデル マッピングのためのデータ ソースの選択」の手順でステップを完了する必要があります。
+次の手順では、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations Enterprise Edition データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。 このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。 この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。 これらの手順を完了するには、最初に「モデル マッピングのためのデータ ソースの選択」の手順でステップを完了する必要があります。
 
 
 ## <a name="open-er-configurations-tree"></a>ER コンフィギュレーション ツリーを開く
@@ -146,5 +146,4 @@ ms.lasthandoff: 10/16/2018
 4. [OK] をクリックします。
 5. 現在のコンフィギュレーションの完了したバージョンを選択します。
     * 作成したコンフィギュレーションが完了したバージョン 1 として保存されることに注意してください。  
-
 

@@ -1,14 +1,14 @@
 ---
-title: "Attract でのセキュリティおよびロール管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent - Attract におけるロール セキュリティについて説明します。"
+title: Attract でのセキュリティおよびロール管理
+description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract におけるデータ エンティティのセキュリティについて説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374783"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Attract でのセキュリティおよびロール管理
 
 [!include[banner](../includes/banner.md)]
@@ -108,7 +107,7 @@ Attract では 5 つの基本ユーザー ロールが提供されます。
 | ステージを進む           | ユーザーが採用チームの場合に拒否できます | ユーザーが採用チームの場合に継続できます | 不許可 |
 | オファー管理の起動 | オファー管理を開始できます | オファー活動にはコンフィギュレーション オプションがあります。 | 不許可 |
 
-\*\* [フィードバック活動の設定](./activities-attract.md#feedback-activity) のコンフィギュレーション オプションは、面接者が他の各フィードバックを参照できるかどうかを制御します。
+\*\* [フィードバック活動の設定](activities-attract.md#feedback-activity) のコンフィギュレーション オプションは、面接者が他の各フィードバックを参照できるかどうかを制御します。
 
 ## <a name="process-templates"></a>プロセス テンプレート
 
@@ -146,4 +145,3 @@ Attract では 5 つの基本ユーザー ロールが提供されます。
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | プロファイル – 候補者の詳細 | 作成、読み取り、更新、および削除 | 作成、読み取り、更新、および削除 | アクセス許可なし   |
 | ドキュメント                   | 作成、読み取り、更新、および削除 | 作成、読み取り、更新、および削除 | アクセス許可なし   |
-

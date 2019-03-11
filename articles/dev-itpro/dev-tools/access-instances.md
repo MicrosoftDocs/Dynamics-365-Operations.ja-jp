@@ -1,13 +1,13 @@
 ---
-title: "開発環境の配置とアクセス"
-description: "このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。"
+title: 開発環境の配置とアクセス
+description: このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 author: robadawy
 manager: AnnBe
 ms.date: 05/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
 ms.openlocfilehash: b65dd78e9c6561f1e642fe60b4b918435f544c23
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369536"
 ---
-
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
 [!include [banner](../includes/banner.md)]
@@ -167,7 +166,7 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 
 Retail もコンフィギュレーションしている場合は、このセクションの手順に従います。
 
-#### <a name="for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operations バージョン 1611 用
+#### <a name="for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operations の場合、バージョン 1611
 
 1.  RetailTenantUpdateTool を実行します。
     -   このツールのアイコンは、デスクトップ上で使用できます。
@@ -175,10 +174,10 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 2.  このツールを開始するには、アイコンをダブルクリックします。 自身の Azure AD 資格情報を求められます。 管理者ユーザーのプロビジョニング ツールで以前使用したものと同じ資格情報を使用する必要があります。
 
-#### <a name="for-dynamics-365-for-operations-70"></a>Dynamics 365 for Operations 7.0 用
+#### <a name="for-dynamics-365-for-operations-70"></a>Dynamics 365 for Operations 7.0 の場合
 
 1.  [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](http://go.microsoft.com/fwlink/?LinkID=286152) をインストールします。
-2.  [Windows PowerShell 用 Azure Active Directory モジュール (64 ビット バージョン)](http://go.microsoft.com/fwlink/p/?linkid=236297) をインストールします。
+2.  [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](http://go.microsoft.com/fwlink/p/?linkid=236297) をインストールします。
 3.  テナントとユーザー ID の Azure AD を照会します。 Windows PowerShell 統合スクリプト環境 (ISE) ウィンドウを管理者権限で開き、次のコマンドを実行します。 Azure AD 資格情報を求められます。 以前に管理者プロビジョニング ツールで使用したのと同じユーザー アカウントを使用します。
 
         $msocred = Get-Credential 
@@ -198,8 +197,8 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 4.  次の SQL スクリプトを更新し、その環境の AXDB で実行します。 上記の Windows PowerShell スクリプト出力から次のパラメーターの値を指定します。
 
-    -   **TenantID** – c83429a6-782b-4275-85cf-60ebe81250ee を例に取ります。
-    -   **UserId** – 例えば、a036b5d8-bc8c-4abe-8eec-17516ea913ec
+    -   **TenantID** – たとえば、c83429a6-782b-4275-85cf-60ebe81250ee
+    -   **UserId** – たとえば、a036b5d8-bc8c-4abe-8eec-17516ea913ec
 
     <!-- -->
 
@@ -262,7 +261,6 @@ Retail ソフトウェア開発キット (SDK) は、C:\RetailSDK にありま�
 2.  **AOSDeploy.cmd** を右クリックして**管理者として実行** をクリックします。
 
 このプロセス時間がかかる場合があります。 cmd.exe ウィンドウが終了すると、プロセスが完了します。 ランタイムを再配置せずに AOS を再起動するのみの場合は、管理者の **Command Prompt** ウィンドウから **iisreset** を実行するか、IIS から AOSWebApplication を再起動します。
-
 
 
 

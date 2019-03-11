@@ -1,13 +1,13 @@
 ---
-title: "警告のバッチ処理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の警告のバッチ処理に関する情報を提供します。"
+title: 警告のバッチ処理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の警告のバッチ処理に関する情報を提供します。
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 482cf30b4f82e8801ebc12e3925c1efb09f7eb1e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 74db212b2086bd7c94825d8a52d9a8b86ea7b739
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341928"
 ---
-
 # <a name="batch-processing-of-alerts"></a>警告のバッチ処理
 
 [!include [banner](../includes/banner.md)]
 
-警告は、Microsoft Dynamics 365 for Finance and Operations のバッチ処理機能により処理されます。 警告を通知するには、事前にバッチ処理を設定しておく必要があります。
+警告は Microsoft Dynamics 365 for Finance and Operations のバッチ処理機能により処理されます。 警告を通知するには、事前にバッチ処理を設定しておく必要があります。
 
 Finance and Operations は、2 種類のイベントをサポートしています。
 
@@ -84,4 +83,3 @@ Finance and Operations のデータは、期日によって発生したすべて
 
 1. **システム管理** &gt; **定期処理タスク** &gt; **警告** &gt; **期日の警告**に移動します。
 2. **期日の警告**ダイアログ ボックスで、適切な情報を入力します。
-

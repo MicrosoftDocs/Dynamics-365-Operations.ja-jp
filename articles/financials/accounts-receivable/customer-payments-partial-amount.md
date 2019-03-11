@@ -1,13 +1,13 @@
 ---
-title: "一部金額の顧客支払"
-description: "顧客は、請求金額未満の支払を行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。 利用できるオプションは、業務要件とコンフィギュレーションによって異なります。"
+title: 一部金額の顧客支払
+description: 顧客は、請求金額未満の支払を行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。 利用できるオプションは、業務要件とコンフィギュレーションによって異なります。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 510fda7bf35e459e0da5595b083e041bb708c873
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341376"
 ---
-
 # <a name="customer-payments-for-a-partial-amount"></a>一部金額の顧客支払
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/17/2018
 期日までに請求書の支払いをする場合の現金割引を顧客に提供できます。 たとえば、請求書が 10 日以内に支払われた場合は 2% の現金割引が指定される 100.00 の請求書を入力します。 期日の条件は 30 日になります。 10 日以内に 98.00 の支払を受け取った場合、98.00 の支払を入力します。 請求書が決済の対象としてマークされている場合、自動的に現金割引が実行されます。
 
 ## <a name="partial-payments-with-cash-discounts"></a>現金割引される一部支払
-顧客は全額請求書を決済するために追加の一部支払を作成するつもりで、一部支払を行う場合があります。 一部支払の現金割引を適用するには、[**売掛金勘定パラメーター**] ページで [**一部支払の現金割引を計算**] オプションを [**はい**] に設定する必要があります。 
+顧客は全額請求書を決済するために追加の一部支払を作成するつもりで、一部支払を行う場合があります。 一部支払の現金割引を適用するには、**売掛金勘定パラメーター** ページで **一部支払の現金割引を計算** オプションを **はい** に設定する必要があります。 
 
 たとえば、請求書が発行されてから 10 日以内に支払われた場合に、2% の割引が指定される現金割引を提供します。 請求書に 100.00 が転記されています。 10 日以内に 49.00 の支払を受け取る場合、支払仕訳帳に 49.00 の貸方を入力します。 一部支払を **トランザクションの決済** ページで決済すると、**適用する現金割引金額** フィールドに **1.00** が表示されます。 割引量が現金割引勘定に転記されます。 
 
@@ -61,4 +60,3 @@ ms.lasthandoff: 01/17/2018
 
 
 詳細については、「[顧客支払の預金](tasks/deposit-customer-payments.md)」を参照してください。
-

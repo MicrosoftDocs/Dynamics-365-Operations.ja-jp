@@ -1,13 +1,13 @@
 ---
-title: "F クラス (FieldBinding から FormBuildAnimateControl)"
-description: "文字 F で始まるシステム API クラス。"
+title: F クラス (FieldBinding から FormBuildAnimateControl)
+description: 文字 F で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fc20b0653558ad7391c1c768fa3fb65f120dec80
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370032"
 ---
-
 # <a name="f-classes-fieldbinding-to-formbuildanimatecontrol"></a>F クラス (FieldBinding から FormBuildAnimateControl)
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ FileIOPermission クラスは、ファイルおよびフォルダーへのアク
 
 ### <a name="remarks"></a>備考
 
-FileIoPermission クラスは、特定の API のアクセス許可をチェックするように設計されています。 アクセス許可によって保護されているすべての API のリストについては、「セキュリティで保護された API」を参照してください。 保護された API を実行する前に、対応する CodeAccessPermission::demand メソッドが呼び出されている同じ層、通常はサーバー層で、assert メソッドを呼び出す必要があります。 次のいずれかでサーバー層のメソッドを呼び出します:
+FileIoPermission クラスは、特定の API のアクセス許可をチェックするように設計されています。 アクセス許可によって保護されているすべての API のリストについては、「セキュリティで保護された API」を参照してください。 保護された API を実行する前に、対応する CodeAccessPermission:: demand メソッドが呼び出されている同じ層 (通常はサーバー層) で assert メソッドを呼び出す必要があります。 次のいずれかでサーバー層のメソッドを呼び出します:
 
 -   サーバー静的メソッド
 -   RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド
@@ -333,10 +332,10 @@ fvalue
 | public boolean isLoadedForInference()                                                                                            |                                                                                                                           |
 | public str name(\[str value\])                                                                                                   | フォーム、レポート、テーブル、クエリ、または別の MSDAX アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。 |
 | public Guid origin(\[Guid value\])                                                                                               |                                                                                                                           |
-| ::public static boolean formKernelObjectHasMethod(Object kernelObject, str methodName)                                           |                                                                                                                           |
-| ::public static boolean formObjectSetHasMethod(FormObjectSet formObjectSet, str methodName)                                      |                                                                                                                           |
-| ::public static boolean formRunHasMethod(xFormRun formRun, str methodName)                                                       |                                                                                                                           |
-| ::public static str getSetupUserQueryElementName(MenuItemType menuItemType, str menuItemName)                                    |                                                                                                                           |
+| ::::public static boolean formKernelObjectHasMethod (Object kernelObject, str methodName)                                           |                                                                                                                           |
+| ::::public static boolean formObjectSetHasMethod (FormObjectSet formObjectSet, str methodName)                                      |                                                                                                                           |
+| ::::public static boolean formRunHasMethod (xFormRun formRun, str methodName)                                                       |                                                                                                                           |
+| ::::public static str getSetupUserQueryElementName (MenuItemType menuItemType, str menuItemName)                                    |                                                                                                                           |
 | public void new(\[str name\], \[boolean buildMode\])                                                                             | Form クラスの新しいインスタンスを初期化します。                                                                             |
 | public void inInitializeDesign(\[boolean value\])                                                                                |                                                                                                                           |
 | public void save()                                                                                                               |                                                                                                                           |
@@ -3561,7 +3560,7 @@ DataField オブジェクトのフィールド バインディングを相対的
 
 #### <a name="remarks"></a>備考
 
-Use the FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
+FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
 
 ### <a name="method-dragover"></a>メソッド dragOver
 
@@ -5460,7 +5459,7 @@ DataField オブジェクトのフィールド バインディングを相対的
 
 #### <a name="remarks"></a>備考
 
-Use the FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
+FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
 
 ### <a name="method-dragover"></a>メソッド dragOver
 
@@ -7180,7 +7179,7 @@ DataField オブジェクトのフィールド バインディングを相対的
 
 #### <a name="remarks"></a>備考
 
-Use the FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
+FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
 
 ### <a name="method-dragover"></a>メソッド dragOver
 
@@ -8531,14 +8530,14 @@ overrideObject
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                                                                              | 説明                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| ::public static xFormRun buildLookupFormByField(FormControl controlHostingLookup, FieldBinding fieldBinding)                                                                        |                                                                |
-| ::public static xFormRun buildLookupFromCustomForm(FormControl controlHostingLookup, Form customLookupForm, FieldBinding fieldBinding, \[xArgs customArgs\], \[Query customQuery\]) |                                                                |
-| ::public static xFormRun buildReferenceLookupFromCustomForm(FormReferenceControl referenceControlHostingLookup, Form customLookupForm, \[xArgs customArgs\], \[Query customQuery\]) |                                                                |
-| ::public static void createLookupForClientsideControl(xFormRun parentForm, str targetId, str controlName, int tableId, int fieldId, str controlValue, boolean isInFilterMode)       |                                                                |
+| ::public static xFormRun buildLookupFormByField (FormControl controlHostingLookup, FieldBinding fieldBinding)                                                                        |                                                                |
+| ::public static xFormRun buildLookupFromCustomForm (FormControl controlHostingLookup, Form customLookupForm, FieldBinding fieldBinding, \[xArgs customArgs\], \[Query customQuery\]) |                                                                |
+| ::public static xFormRun buildReferenceLookupFromCustomForm (FormReferenceControl referenceControlHostingLookup, Form customLookupForm, \[xArgs customArgs\], \[Query customQuery\]) |                                                                |
+| ::public static void createLookupForClientsideControl (xFormRun parentForm, str targetId, str controlName, int tableId, int fieldId, str controlValue, boolean isInFilterMode)       |                                                                |
 | ::public static void performFormLookup(xFormRun lookupForm, \[boolean blockUntilLookupClosed\], \[FormControl controlHostingLookup\])                                               |                                                                |
 | private void new()                                                                                                                                                                  | FormAutoLookupFactory クラスの新しいインスタンスを初期化します。 |
 
@@ -12077,7 +12076,6 @@ objectMethodToCall
 <!-- -->
 
 overrideObject  
-
 
 
 

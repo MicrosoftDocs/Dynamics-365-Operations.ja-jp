@@ -1,28 +1,27 @@
 ---
-title: "データ検証チェックリスト ワークスペース"
-description: "データ検証チェックリスト ワークスペースを使用して、会社、エリア、人員に対してデータ検証プロセスの追跡ができます。 チェックリストは新規実装中、更新後、または移行後に使用できます。"
+title: データ検証チェックリスト ワークスペース
+description: データ検証チェックリスト ワークスペースを使用して、会社、エリア、人員に対してデータ検証プロセスの追跡ができます。 チェックリストは新規実装中、更新後、または移行後に使用できます。
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: dd758ac5698d84532c0b724485cc6f0da83bc8e0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364192"
 ---
-
 # <a name="data-validation-checklist-workspace"></a>データ検証チェックリスト ワークスペース
 
 [!include [banner](../includes/banner.md)]
@@ -59,4 +58,3 @@ ms.lasthandoff: 08/09/2018
 タスク領域を使用して、データ検証タスクを組織内の所有権の論理領域にグループ化します。 たとえば、買掛金勘定、売掛金勘定、または総勘定元帳がタスク領域として使用される場合があります。
 
 **メニュー項目名**はタスク作業工数に関連付けられており、ワークスペースのタスク リンクから関連するページに直接移動するために使用できます。 たとえば、買掛金勘定の **買掛金勘定エイジング** レポートを実行するデータ検証タスクは、**買掛金勘定エイジング レポート**ページにリンクできます。
-

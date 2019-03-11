@@ -1,28 +1,27 @@
 ---
-title: "NavigationArgs タイプ"
-description: "NavigationArgs タイプ"
+title: NavigationArgs タイプ
+description: NavigationArgs タイプ
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: b1e38920b7a3d529eebfd5b5039591aaaf88a79d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369126"
 ---
-
 # <a name="navigationargs-type"></a>NavigationArgs タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -88,6 +87,5 @@ to: string (省略可)
 url: string (省略可) 
 
 指定した場合、このリンクは直接開かれます。
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "アプリケーション エクスプローラー"
-description: "この記事では、アプリケーション エクスプローラ、およびその中のさまざまなビューとフィルター処理方法について説明します。 また、アプリケーション エクスプ ローラーで要素を操作する方法についても説明します。"
+title: アプリケーション エクスプローラー
+description: この記事では、アプリケーション エクスプローラ、およびその中のさまざまなビューとフィルター処理方法について説明します。 また、アプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d9c5914c2d0e860f50ae7bf0549863fffc18e63e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2ef4fa2ff8f026f1a64daf69bbceb36371495684
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369088"
 ---
-
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/20/2018
 <a name="application-explorer"></a>アプリケーション エクスプローラー
 --------------------
 
-アプリケーション エクスプローラーは、プロジェクトに追加する要素を検索し作業するために使用するツールです。 Application  Explorer にアクセスするには、**View** メニューで **Application Explorer**.をクリックします。 Microsoft Dynamics AX 2012 の MorphX 環境内のアプリケーション エクスプローラーとアプリケーション オブジェクト ツリー (AOT) 間での重要な違いは、アプリケーション エクスプローラーを使用してモデル要素を追加、または編集しないことです。 代わりに、要素の表示、コードの表示、選択した要素への参照の検索、およびプロジェクトへの要素の追加のために使用します。 モデル要素を作成、設計、編集、ビルドするには、**Microsoft Dynamics 365 for Finance and Operations** プロジェクトを使用する必要があります。
+アプリケーション エクスプローラーは、プロジェクトに追加する要素を検索し作業するために使用するツールです。 Application  Explorer にアクセスするには、**View** メニューで **Application Explorer**.をクリックします。 Microsoft Dynamics AX 2012 の MorphX 環境内のアプリケーション エクスプローラーとアプリケーション オブジェクト ツリー (AOT) 間での重要な違いは、アプリケーション エクスプローラーを使用してモデル要素を追加、または編集しないことです。 代わりに、要素の表示、コードの表示、選択した要素への参照の検索、およびプロジェクトへの要素の追加のために使用します。 モデル要素を作成、デザイン、編集、および作成するには、**Microsoft Dynamics 365 for Finance and Operations** プロジェクトを使用する必要があります。
 
 ### <a name="application-explorer-views"></a>アプリケーション エクスプローラー ビュー
 
@@ -81,7 +80,7 @@ ms.lasthandoff: 04/20/2018
 | コードの表示                       | 要素の X++ コードを表示および編集できるコード エディタを開きます。  |
 | 更新反映                         | 要素のメタデータを更新します。                                            |
 | 比較                         | 選択した要素の XML 表現と要素を比較します。 通常、要素をソース コード管理リポジトリとは異なるバージョンの要素と比較します。                   |
-| プロパティ                      | 要素のプロパティの設定を確認できるように、**プロパティ**ダイアログ ボックスを Visual Studio で開きます。                                                                                                        |
+| プロパティ                      | 要素のプロパティの設定を確認できるように、**プロパティ** ダイアログ ボックスを Visual Studio で開きます。                                                                                                        |
 
 一部の要素には、その要素のタイプのアクションを実行できるようにする固有のコマンドがあります。 たとえば、テーブル要素には、テーブルに関する追加情報を提供する 2 つのコマンドがあります。 最初は、**階層の表示** コマンドです。 テーブル要素を右クリックしてこのコマンドをクリックすると、テーブルが属するテーブル階層のグラフィカル表示が表示されます。 たとえば、次の図は、FMVehicle テーブルのテーブル階層を表示します。 [![10\_DevoToolsConcept](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) クラスには類似の階層ツールが用意されています。 2 番目のコマンドは**テーブル ブラウザーを開く**です。 このコマンドをクリックすると、テーブルからのデータがプログラム内の一覧として表示されます。  
 
@@ -122,7 +121,6 @@ ms.lasthandoff: 04/20/2018
 [技術概念ガイド](developer-home-page.md)
 
 [開発ツールの概要](development-tools-overview.md)
-
 
 
 

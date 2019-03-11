@@ -1,32 +1,31 @@
 ---
-title: "倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する"
-description: "このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。"
+title: 倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
+description: このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。
 author: perlynne
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338064"
 ---
-
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
 [!include [banner](../includes/banner.md)]
@@ -94,9 +93,8 @@ ms.lasthandoff: 05/23/2018
 
 **実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
 
-同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間のビデオをご覧ください: [Microsoft Dynamics 365 for Finance and Operations で倉庫テンプレートを使用したコンフィギュレーションのコピー](https://www.youtube.com/watch?v=K2WIfFlqJYs)。
+同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間ビデオをご覧ください: [Microsoft Dynamics 365 for Finance and Operations で倉庫テンプレートを使用したコンフィギュレーションのコピー](https://www.youtube.com/watch?v=K2WIfFlqJYs)。
 
 ## <a name="related-topic"></a>関連するトピック
 
 [コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)
-

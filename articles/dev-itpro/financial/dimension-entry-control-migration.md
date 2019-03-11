@@ -1,13 +1,13 @@
 ---
-title: "既定の分析コード コントロールを分析コード エントリ コントロールに移行する"
-description: "このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。"
+title: 既定の分析コード コントロールを分析コード エントリ コントロールに移行する
+description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 5a00de0c48171664e0f3e8a80a41b2a90d3aac45
 ms.openlocfilehash: 3c5f12bc04d2b2b7298381484062b62ace81ef71
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369720"
 ---
-
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 
 [!include [banner](../includes/banner.md)]
@@ -134,7 +133,6 @@ ms.lasthandoff: 10/26/2018
 
 - [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
 - [分析コード エントリ コントロール ダイアログのサポート](dimension-entry-control-dialog-support.md)
-
 
 
 

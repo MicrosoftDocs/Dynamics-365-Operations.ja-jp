@@ -1,13 +1,13 @@
 ---
-title: "Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能"
-description: "このトピックでは、Modern POS と Cloud POS のクライアント側のトリガー機能について説明します。"
+title: Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
+description: このトピックでは、Modern POS と Cloud POS のクライアント側のトリガー機能について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 779376807af5294ddcd996934582d03ff57c0e7b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 82eab3c07cd78fde9ccc97bb695284c113c6a85a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369235"
 ---
-
 # <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a>Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
+> このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、Modern POS と Cloud POS のクライアント側のトリガー機能について説明します。
 
 <a name="trigger-overview"></a>トリガーの概要
 ----------------
 
-トリガーは、Microsoft Dynamics 365 for Retail が Retail POS に対して発生するイベントです。 トリガーを使用すると、操作の前後にカスタム コードを挿入できます。 トリガーには事前トリガーと事後トリガーの 2 種類があります。
+トリガーは、Microsoft Dynamics 365 for Retailfor Retail POS によって発生するイベントです。 トリガーを使用すると、操作の前後にカスタム コードを挿入できます。 トリガーには事前トリガーと事後トリガーの 2 種類があります。
 
 | プレトリガー                                                                                                                                                                                                                                                    | ポスト トリガー                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -165,7 +164,7 @@ Modern POS およびクラウド POS では、トリガーはキャンセル可�
 
 **目的:** 最新の POS / Cloud POS を、会計登録に接続されているときに、スウェーデン語のローカライズ要件を実装して同じトランザクションに売却と返品の両方の行が含まれないようにカスタマイズします。 Modern POS プロジェクトを開き、トリガーの実装を追加するために新しい TypeScript (.ts) ファイルを追加します。 弊社のカスタマイズを製品コードから切り離してアップグレードを管理しやすくするために、カスタマイズ用の新しい TypeScript ファイルを作成します。
 
-1.  管理者として Microsoft Visual Studio 2015 を起動します。
+1.  Microsoft Visual Studio 2015 を管理者として起動します。
 2.  Modern POS ソリューションを、Retail SDK ディレクトリから開く:
     -   クラウド ホストしているコンピュータを使用している場合、パスは I:/RetailSDK になります。
     -   ローカルにダウンロードしたマシンを使用している場合は、パスは C:\\Microsoft Dynamics AX\\70\\Retail SDK です。
@@ -320,7 +319,6 @@ Modern POS およびクラウド POS では、トリガーはキャンセル可�
     2.  左のナビゲーション ウィンドウで、製品検索 (検索アイコン) を使用して、「シャツ」のテキストを検索します。
     3.  シャツ製品のいずれかを選択し、アプリケーション バーで、**今すぐ売る** をクリックします。
     4.  **IPreProductSaleTrigger** トリガーを実行されていることを確認します。 同じトランザクションの販売および返品が実行できないことを示すメッセージが表示されるはずです。
-
 
 
 

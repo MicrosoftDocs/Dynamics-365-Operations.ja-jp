@@ -1,13 +1,13 @@
 ---
-title: "カスタム パターンを使用したテスト フォーム"
-description: "このトピックでは、カスタム パターンを使用してフォームをテストする方法について説明します。"
+title: カスタム パターンを使用したテスト フォーム
+description: このトピックでは、カスタム パターンを使用してフォームをテストする方法について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 81acea25b6e502bc3cbe6e8c8fd280eb03539cf5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369564"
 ---
-
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 
 [!include [banner](../includes/banner.md)]
@@ -105,7 +104,6 @@ ms.lasthandoff: 08/09/2018
 ### <a name="informationguidelines-about-layout"></a>レイアウトに関する情報/ガイドライン
 
 レイアウトのプロパティに関する情報、および避ける必要があるシナリオに関するガイドラインについては、[ページ レイアウト](page-layout.md) を参照してください。
-
 
 
 

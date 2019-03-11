@@ -1,14 +1,14 @@
 ---
-title: "Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定"
-description: "このトピックでは、新しい環境、Microsoft Azure DevOps、および Microsoft Dynamics 365 for Retail の実装プロジェクトの分岐を設定するための推奨事項について説明します。"
+title: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
+description: このトピックでは、Microsoft Dynamics 365 for Retail 実装計画の新しい環境の設定、Microsoft Azure DevOps、およびブランチの推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
@@ -17,31 +17,30 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 78f2429d587a6e93269951034b977803f792fdbe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369607"
 ---
-
 # <a name="set-up-new-environments-azure-devops-and-branches-for-retail-projects"></a>Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics AX 7.0 以降では、ほとんどの環境がクラウドでホストされます。 それらは (Microsoft サブスクリプションで) Microsoft によってホストされるか、(顧客サブスクリプションで) クラウド ホストされています。 既定では、環境は、Microsoft によってホストされます。 通常、クラウド ホスト環境は、開発環境またはビルド環境を詳細に制御するために使用されます。 詳細については、「[Lifecycle Services (LCS) ユーザー ガイド](../../dev-itpro/lifecycle-services/lcs-user-guide.md)」をご覧ください。
+Microsoft DynamicsAX 7.0 以降では、ほとんどの環境がクラウドでホストされます。 それらは (Microsoft サブスクリプションで) Microsoft によってホストされるか、(顧客サブスクリプションで) クラウド ホストされています。 既定では、環境は、Microsoft によってホストされます。 通常、クラウド ホスト環境は、開発環境またはビルド環境を詳細に制御するために使用されます。 詳細については、「[Lifecycle Services (LCS) ユーザー ガイド](../../dev-itpro/lifecycle-services/lcs-user-guide.md)」をご覧ください。
 
 第 1 層のマシンは、開発者、または、ビルド環境です。
 
 ## <a name="development-tier-1-environments"></a>第 1 層環境の開発
 
-コード拡張を含む Microsoft Dynamics 365 for Retail の実装については、管理権限を持つ開発環境を使用することをお勧めします。 管理者特権のない開発環境を使用する場合は、他のプログラミング ツールおよびオペレーティング システム (OS) の機能をインストールまたはコンフィギュレーションできません。 代わりの設定は、別の Microsoft Azure サブスクリプションをホストされているマシンです。 (このタイプのマシンは Microsoft Dynamics Lifecycle Services [LCS] で「クラウド ホスト環境」としても呼ばれています。)
+コード拡張を含む Microsoft Dynamics 365 for Retail の実装については、管理権限を持つ開発環境を使用することをお勧めします。 管理者特権のない開発環境を使用する場合は、他のプログラミング ツールおよびオペレーティング システム (OS) の機能をインストールまたはコンフィギュレーションできません。 代わりの設定は、別の Microsoft Azure サブスクリプションをホストされているマシンです。 (このタイプのマシンは Microsoft Dynamics Lifecycle Services [LCS] で "クラウド ホスト環境" としても呼ばれています。)
 
 第 1 層の開発またはビルド環境には 3 つのホスト モデル : Microsoft によってホストされる環境、クラウドでホストされている環境、および自己ホストされダウンロードされた仮想マシン (VM) があります。
 
 チャネル コンポーネントを拡張する場合は、開発の準備を整えられるように、開発環境を構成する方法の詳細については、このトピックで後の「開発環境の準備」セクションを参照してください。
 
-使用するホスティング モデルの財務的影響のため、レベル 1 環境を単純なテスト環境または高品質なテスト環境として使用することで、ホスティング コストの一部を削減できます。 1 つのレベル 1 環境は、Microsoft Dynamics 定期売買では無料です。 このアプローチは理想的ではありませんが、ほとんどのプロジェクトで有効です。
+使用するホスティング モデルの財務的影響のため、レベル 1 環境を単純なテスト環境または高品質なテスト環境として使用することで、ホスティング コストの一部を削減できます。 1 つのレベル 1 環境は、Microsoft Dynamics サブスクリプションでは無料です。 このアプローチは理想的ではありませんが、ほとんどのプロジェクトで有効です。
 
 > [!NOTE]
 > いつでもクラウド ホスト環境をシャットダウンできます。 この機能は、ホスティングのコストを削減するのに役立ちます。
@@ -104,7 +103,7 @@ Microsoft Dynamics AX 7.0 以降では、ほとんどの環境がクラウドで
 >
 > ブランチを使用すると、チームや個人が並行して作業できるため、個々のソフトウェア資産の分離とコントロールが向上し、生産性が増します。 ただし、分岐を使用すると、後で分岐全体を再構成する必要があるため、マージ アクティビティの増加も必要になり、そのためリスクも増加します。
 
-Microsoft Dynamics 365 for Finance and Operations のための実装プロジェクトのデリバリーの詳細については、[Dynamics 365 for Operations を使用した継続的デリバリー (ビデオ)](https://mbspartner.microsoft.com/D365/Videos/101393) をご覧ください。
+Microsoft Dynamics 365 for Finance and Operations のための実装プロジェクトのデリバリーの詳細については、「[継続的な配信を使用してDynamics 365 for Operations を使用した継続的デリバリー (ビデオ)](https://mbspartner.microsoft.com/D365/Videos/101393)」をご覧ください。
 
 分岐を作成するうえで、唯一の最良な戦略はありません。 使用されるアプローチは、プロジェクト、および実装のサイズによって異なります。 Joris De Gruyter が上記のビデオで述べているアプローチは成功したメソッドです。
 
@@ -118,7 +117,7 @@ Microsoft Dynamics 365 for Finance and Operations のための実装プロジェ
 - **Main** ブランチ [1] は、品質基準を満たし、他のユーザーによるテストの準備ができている変更のためのものです。 このテストには、ユーザー承認テスト、パフォーマンス テスト、統合テスト、および修正プログラム後のサニティ テストが含まれる場合があります。 この分岐の配置可能パッケージは、ビルド環境で作成する必要があります。 ベスト プラクティスとして、レベル 1 環境で X++ パッケージを生成し、それらのパッケージを公式テストまたは実稼動環境に配置するべきではありません。 それ以外の場合は、コミットされていないソースの変更が含まれる可能性があります。 適切なアプローチは、常に正式なビルド環境でビルドされたパッケージを展開します。
 - **ProdRel1** ブランチ [3] は、任意の時点で実稼働環境に配備される際、全てのソース コードを保留します。 ビルド環境で使用できますが、必須ではありません。 Main ブランチからのパッケージが実稼働環境に配置されている場合、運用配置後に (Main から ProdRel1 へ) コードをマージする必要があります。 生産用分岐を用意することで、ビルドが必要な場合に、後で公式ビルドを生成することができます。
 - 3 つのすべての分岐は、 X++ コード (メタデータのフォルダー内の拡張機能および修正プログラム)、および Retail ソフトウェア開発キット (SDK) のコピーの両方を **RetailSdk** のフォルダー [5, 6, 7] 内に保持しています。 Retail SDKには、基準の Microsoft コードおよびコードの拡張子が含まれています。 この基本コードとコードの拡張機能は、各分岐で異なります。
-- **RetailSdk-mirror** フォルダー [4] は、Microsoft 変更を Retail SDK に持ち込むために使用されます。 開発またはビルドの目的で使用されていません。 新しいバージョンまたは修正プログラムを使用する場合にのみ更新する必要があります。 プロセスの詳細については [Dynamics 365 for Finance and Operations 修正プログラムおよび配置のチート シート](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/)を参照してください。
+- **RetailSdk-mirror** フォルダー [4] は、Microsoft 変更を Retail SDK に持ち込むために使用されます。 開発またはビルドの目的で使用されていません。 新しいバージョンまたは修正プログラムを使用する場合にのみ更新する必要があります。 プロセスの詳細については「[Dynamics 365 for Finance and Operations 修正プログラムおよび配置のチート シート](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/)」を参照してください。
 
 小規模な小売プロジェクトでは、分岐が 2 つしかなくても構いません (メイン = 開発分岐)。 ただし、コード送信はテスト ビルドの品質に即座に影響を与える可能性があるため、開発者は規範を守らなければなりません。 
 
@@ -192,7 +191,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 8. **Main** ブランチを右クリックし、**分岐とマージ** \>**分岐**を選択し、新しい分岐を **ProdRel1** と名付けます。
 9. **保留中の変更**を使用し、この変更内容を Azure DevOps に送信します。
 
-この時点で、 Visual Studio の Source Depot エクスプローラーは次の図のようになります。
+この時点で、Visual Studio の Source Depot エクスプローラーは次の図のようになります。
 
 ![Source Depot エクスプローラー](./media/7-source-depot-explorer.png)
 
@@ -210,7 +209,7 @@ LCS プロジェクトが Azure DevOps にリンクされたら、配置の準�
 
 2. ソース管理エクスプローラーでは、**トランク** フォルダーを右クリックし、**フォルダーへの品目の追加**を選択します。
 2. 小売 SDK でトップ フォルダーを選択し、**次へ**を選択します。
-3. Visual Studioは、追加されるファイルの数を示します。 **RetailSdk** フォルダーが**トランク** フォルダーの下にあることを確認してください。
+3. Visual Studio は、追加されるファイルの数を示します。 **RetailSdk** フォルダーが**トランク** フォルダーの下にあることを確認してください。
 4. 項目を選択してから、**項目を含む**を選択して、除外されたアイテムが 0 (ゼロ) であることを確認してください。
 
     ![ソース管理](./media/9-source-control.png)
@@ -288,7 +287,7 @@ X++ および Retail SDK をマップするには、現在のワークスペー�
 15. ブラウザー ウィンドウを開き、アドレス バーに URL を貼り付けます。 ローカル Retail サーバーを参照できるようになります。
 16. Finance and Operations では、(アクティブ化) のいずれかの作業者への外部ユーザーの資格情報を加え、パスワードを保存し、最初のサインインの際にパスワード リセットを許可しないでください。
 17. Finance and Operations では、**1060** (**AX/Distribution schedule**) ジョブを実行してください。
-18. 手順 16 で追加したものと同じ Azure Active Directory (Azure AD) ユーザーを使用して、MPOS を有効にします。 Retail サーバーの URL を貼り付け、ストアとレジスターを選択し、有効化を完了します。
+18. 手順 16 で追加したものと同じ Azure Active Directory(Azure AD) ユーザーを使用して、MPOS を有効にします。 Retail サーバーの URL を貼り付け、ストアとレジスターを選択し、有効化を完了します。
 
 ローカルのソースからデバッガで MPOS を実行できるようになりました。
 
@@ -350,4 +349,3 @@ LCS から配置する際、**PRODREL1** をエージェント プールの名�
 [コードおよび小売プロジェクトの環境の更新](./updating-environments.md)
 
 [テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
-

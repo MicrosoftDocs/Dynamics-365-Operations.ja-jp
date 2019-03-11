@@ -1,13 +1,13 @@
 ---
-title: "製造オーダーの原価分析"
-description: "この記事は、完了した製造オーダーおよび現在の製造オーダーに対して実行できる原価分析について説明します。 [価格計算] ページまたは [原価見積] レポートを使用して、見積原価および実際原価を分析できます。 コンポーネント品目、工順工程、および間接原価ごとに見積原価と実績原価 (および数量) についての情報を表示できます。"
+title: 製造オーダーの原価分析
+description: この記事は、完了した製造オーダーおよび現在の製造オーダーに対して実行できる原価分析について説明します。 [価格計算] ページまたは [原価見積] レポートを使用して、見積原価および実際原価を分析できます。 コンポーネント品目、工順工程、および間接原価ごとに見積原価と実績原価 (および数量) についての情報を表示できます。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f027d6521d5f57a7e2d2cac1bed8dc08ae9f20f1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353566"
 ---
-
 # <a name="production-order-cost-analysis"></a>製造オーダーの原価分析
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ ms.lasthandoff: 05/08/2018
 --------
 
 [製造差異の一般的な発生源](common-sources-of-production-variances.md)
-
 
 
 

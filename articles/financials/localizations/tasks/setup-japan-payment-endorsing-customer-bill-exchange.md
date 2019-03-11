@@ -1,13 +1,13 @@
---- 
-title: "顧客の為替手形の裏書きによって日本の支払を設定します"
-description: "このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。"
+---
+title: 顧客の為替手形の裏書きによって日本の支払を設定します
+description: このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPosting,  CustParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f509cada0dc12c0a2da00b85f560fc48e0be6d9e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371010"
 ---
 # <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a>顧客の為替手形の裏書きによって日本の支払を設定します
 
@@ -52,5 +52,4 @@ ms.lasthandoff: 10/16/2018
 4. [裏書為替手形] フィールドで、ドロップ ダウン ボタンをクリックしてルックアップを開きます。
 5. 一覧で、選択された行のリンクをクリックします。
 6. [保存] をクリックします。
-
 

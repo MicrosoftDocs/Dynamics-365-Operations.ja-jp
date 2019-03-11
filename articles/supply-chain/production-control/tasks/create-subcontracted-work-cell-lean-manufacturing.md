@@ -1,13 +1,13 @@
---- 
-title: "リーン生産の外注作業セルの作成"
-description: "リーン生産の外注作業をモデル化するには、作業を提供する仕入先に関連付けられている作業セルを作成する必要があります。"
+---
+title: リーン生産の外注作業セルの作成
+description: リーン生産の外注作業をモデル化するには、作業を提供する仕入先に関連付けられている作業セルを作成する必要があります。
 author: cvocph
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 58b725af456f1a5c7f158f01ffe48a2d8cdf056b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fc8dc0bc29c6bdb662c46808491abf5395f0be5d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319158"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>リーン生産の外注作業セルの作成
 
@@ -70,5 +70,4 @@ ms.lasthandoff: 09/29/2017
 23. [平均スループット数量] フィールドに数値を入力します。
 24. [単位] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 25. [単位の変更] を解決します。
-
 

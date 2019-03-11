@@ -1,13 +1,13 @@
 ---
-title: "ナビゲーション概念"
-description: "この記事では、ダッシュボード、新しいナビゲーション検索機能、ナビゲーション ペイン、ワークスペース、タイルなどの主要なナビゲーションの概念について説明します。"
+title: ナビゲーション概念
+description: この記事では、ダッシュボード、新しいナビゲーション検索機能、ナビゲーション ペイン、ワークスペース、タイルなどの主要なナビゲーションの概念について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 58e9df441f07d72166dac3d67500a51807133852
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368822"
 ---
-
 # <a name="navigation-concepts"></a>ナビゲーション概念
 
 [!include [banner](../includes/banner.md)]
@@ -123,7 +122,6 @@ Windows 8 ではタイルの概念が導入され、クライアントで使用�
 検索キーワードは、ナビゲーション要素のキャプションだけでなく、対応するパスにも一致します。 たとえば、キーワード「ven bal レポート」の検索は、キャプションで「仕入先残高」およびパスで「レポート」に一致する結果を返します。 
 
 [![navSearchExample2](./media/navsearchexample2.png)](./media/navsearchexample2.png)
-
 
 
 

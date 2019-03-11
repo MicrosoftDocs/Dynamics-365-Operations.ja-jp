@@ -1,13 +1,13 @@
---- 
-title: "従業員のけが/病気の情報の管理"
-description: "設定情報の一部をここで使用するため、「けがおよび病気の設定」タスク ガイドを最初に完了することをお勧めします。"
+---
+title: 従業員のけが/病気の情報の管理
+description: 設定情報の一部をここで使用するため、「けがおよび病気の設定」タスク ガイドを最初に完了することをお勧めします。
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 03d1e7f7b648e65cbe628aa4ff8b39dfa03ce96b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332613"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>従業員のけが/病気の情報の管理
 
@@ -92,5 +92,4 @@ ms.lasthandoff: 09/14/2018
     * 例 : x 線で骨折を確認、そえ木を装着  
 36. [保存] をクリックします。
     * ケース ステータスはいつでも更新できます。  傷害または疾病が処理中の場合、ケースを処理中に設定します。  インシデントを閉じた後は、コスト、治療、インシデント関連のファイリングのみ追加や削除ができます。  他の情報を変更するには、ケースを再度開きます。  
-
 

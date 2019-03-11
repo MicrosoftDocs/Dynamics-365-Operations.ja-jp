@@ -1,13 +1,13 @@
---- 
-title: "ER モデル マッピングの定義およびそのデータ ソースの選択"
-description: "次の手順では、システム管理者または電子申告開発者ロールのユーザーがどのように電子申告データ モデルのデータ ソースを選択できるか説明します。"
+---
+title: ER モデル マッピングの定義およびそのデータ ソースの選択
+description: 次の手順では、システム管理者または電子申告開発者ロールのユーザーがどのように電子申告データ モデルのデータ ソースを選択できるか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348874"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>ER モデル マッピングの定義およびそのデータ ソースの選択
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 10/16/2018
 
 ## <a name="define-required-data-sources-for-the-current-model-mapping"></a>現在のモデル マッピングに必要なデータ ソースの定義
 1. [デザイナー] をクリックします。
-2. ツリーで、[Dynamics 365 for Operations\Table records] を選択します。
+2. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 3. [ルートの追加] をクリックします。
     * 支払トランザクションにアクセスするために、このデータ ソースを入力します。  
 4. [名前] フィールドで、「Transactions」と入力します。
@@ -110,7 +110,7 @@ ms.lasthandoff: 10/16/2018
 41. ツリーで、[Transactions] を展開します。
 42. ツリーで、[Transactions\$Amount] を展開するかまた折りたたみます。
 43. ツリーで、「Transactions」を展開または折りたたみます。
-44. ツリーで、[Dynamics 365 for Operations\Table records] を選択します。
+44. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 45. [ルートの追加] をクリックします。
     * このデータ ソースを入力して、会社の銀行口座情報にアクセスします。  
 46. [名前] フィールドに、「BankAccount」と入力します。
@@ -157,5 +157,4 @@ ms.lasthandoff: 10/16/2018
 70. ページを閉じます。
 71. ページを閉じます。
 72. ページを閉じます。
-
 

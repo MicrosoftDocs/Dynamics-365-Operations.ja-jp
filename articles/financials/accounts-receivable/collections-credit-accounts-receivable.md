@@ -1,13 +1,13 @@
 ---
-title: "売掛金勘定の貸方転記と取立"
-description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Finance and Operations のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この一元化されたビューを使用します。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
+title: 売掛金勘定の貸方転記と取立
+description: 売掛金勘定回収情報は、一元化されたビューである Microsoft Dynamics 365 for Finance and Operations コレクション ページで集中管理します。 貸方および取立マネージャが回収を管理するには、この一元化されたビューを使用します。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c36e7a5d28baf149b982a0afd5fdd79fe8a91850
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 23fc1a160cf25255a1677ca0e501c374746b6e34
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351680"
 ---
-
 # <a name="credit-and-collections-in-accounts-receivable"></a>売掛金勘定の貸方転記と取立
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ ms.lasthandoff: 03/26/2018
 --------------------------------------------
 
 [回収] ページで NSF 支払をクリックして、NSF 支払を処理できます。 このボタンをクリックすると、支払をキャンセルします。 NSF 手数料を顧客に適用する場合は、費用トランザクションが支払仕訳帳で作成されます。 手数料の金額は、自動請求の設定に基づきます。 NSF 支払に適用される自動請求は、当該銀行口座の [銀行口座] ページで選択した費用グループで指定します。
-
 
 
 

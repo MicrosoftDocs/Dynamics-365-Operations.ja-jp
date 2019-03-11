@@ -1,13 +1,13 @@
 ---
-title: "小売販売時点管理 (POS) サンプルを実行"
-description: "このトピックでは、Retail POS サンプルを実行する方法について説明します。"
+title: 小売販売時点管理 (POS) サンプルを実行
+description: このトピックでは、Retail POS サンプルを実行する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,21 +16,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.openlocfilehash: ce0d4af4dae49f0661b8668a6b9f07ac7d174cf0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: dec83a01385cb3f7c9affde1ac0b93102d859fb7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368442"
 ---
-
 # <a name="run-the-retail-point-of-sale-pos-samples"></a>小売販売時点管理 (POS) サンプルを実行
 
 [!include [banner](../../includes/banner.md)]
 
 小売用拡張機能を示す Retail SDK にはいくつかのサンプルがあります。 このトピックでは、これらのサンプルを実行する方法について説明します。 
 
-このトピックは、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた、Dynamics 365 for Finance and Operations、および Dynamics 365 for Retail に適用されます。
+このトピックでは Dynamics 365 for Finance and Operations および Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。
 
 ## <a name="run-the-sampleextensions-in-pos"></a>POS で SampleExtensions を実行
 1. **Retail SDK\\POS** フォルダーから **ModernPos.Sln** あるいは **CloudPos.sln** を開きます。
@@ -103,11 +102,10 @@ ms.lasthandoff: 08/09/2018
     ],
     ```
     > [!Note] 
-    > その他の拡張機能パッケージ フォルダーは、Visual Studioプロジェクトに含まれていない場合でも、追加する予定でない場合は除外リストに含める必要があります。
+    > その他の拡張機能パッケージ フォルダーは、Visual Studio プロジェクトに含まれていない場合でも、追加する予定でない場合は除外リストに含める必要があります。
 6. 検証のために Modern POS を使用している場合、**ソリューション プラットフォーム** を **x86** に、**オプションの配置** を **ローカル コンピューター** または **シミュレーター** に設定します。
 7. **すべて保存**をクリックし、**F5** キーを押して拡張機能を検証します。
 
     > [!Note] 
-    > クラウド POS では、Visual Studio できれいな解決策を使用して、ソリューションを再構築します。
+    > クラウド POS では、Visual Studio でクリーン ソリューションを使用して、ソリューションを再構築します。
 8. 製品の検索画面に移動、または上部の検索バーを使用して製品を検索します。 グリッドおよび新しいアプリケーション バーのボタンのカスタム列が表示されます。
-

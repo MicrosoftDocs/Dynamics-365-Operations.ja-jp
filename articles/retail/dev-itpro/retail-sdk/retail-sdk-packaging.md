@@ -1,13 +1,13 @@
 ---
-title: "配置可能小売パッケージの作成"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。"
+title: 配置可能小売パッケージの作成
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 02/06/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 122164e5c289cb04bba463f2222ab0f12863781e
+ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: 06ebcfb1a43e4ab3300b13678f8ea415a71fd960
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/05/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376029"
 ---
-
-# <a name="create-retail-deployable-packages"></a>配置可能小売パッケージの作成
+# <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
@@ -36,13 +35,13 @@ ms.lasthandoff: 11/05/2018
 - Retail サーバー
 - Modern POS
 - クラウド POS
-- ハードウェア ステーション
+- Hardware Station
 - チャネル データベース スクリプト
 - 支払コネクタ
-- Retail Store スケール ユニット
+- Retail Store Scale Unit
 - ハイブリッド アプリ (IOS および Android POS アプリ)
 
-## <a name="retail-deployable-package"></a>配置可能小売パッケージ
+## <a name="retail-deployable-package"></a>配置可能 Retail パッケージ
 小売可能なパッケージは、配置に必要なすべてのメタデータと共に、すべてのカスタマイズを含む 1 つの結合されたパッケージです。 この小売展開可能パッケージを使用して、カスタマイズをさまざまな環境に展開できます。 LCS で自動フローを使用して、配置を行うことができます。またはパッケージ内に用意されているスクリプトを使用して手動で行うことができます。 このトピックでは、配置可能小売パッケージを生成するプロセスを説明します。
 
 > [!IMPORTANT]
@@ -212,6 +211,14 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 > - workflowFoundation.config
 > - ハードウェア ステーション - Web.config
 
+## <a name="install-nugetexe"></a>NuGet.exe のインストール 
+ファイルの結合およびSDKのサイズを最小限に抑えるため、いくつかの依存関係パッケージおよび参照を NuGet パッケージに移動します。 これらは NuGet.org からダウンロードできます。Retail SDK を作成すると、これらの依存関係は自動的に packages.config ファイルに基づいて NuGet.org から収集されます。 このためには、「[NuGet コマンド ライン インターフェイス](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#installing-nugetexe)」をインストールし、 NuGet.org から nuget.exe をダウンロードした後、nuget を Windows パスに追加する必要があります。次の手順は、Windows パスに nuget を追加する方法を示しています。
+
+  1. ウィンドウ メニューを開き、"パス" を入力します。 **システム環境変数を編集**を使用できます。 
+  2. メニューの右下の**環境変数**をクリックします。
+  3. 次のウィンドウで、**システム変数**の**パス**を選択し、**編集**をクリックします。
+  4. nuget.exe ファイルを保存するフォルダーのエントリを追加するか、既に登録されているフォルダーに nuget.exe ファイルを保存します。
+
 ## <a name="generate-a-retail-deployable-package"></a>配置可能小売パッケージを生成
 配置可能小売パッケージを生成するには、MSBuild ビルド コマンド プロンプト ウィンドウを開きます。 (開発者仮想マシンの、**開始**メニューで **msbuild** を検索します。) そして、次のコマンドを実行します。
 
@@ -221,7 +228,7 @@ msbuild /p:Configuration=Release
 
 Microsoft Visual Studio 2015 開発者コマンド ライン ツールで同じコマンドを実行することもできます。
 
-### <a name="packages"></a>パッケージ
+### <a name="packages"></a>梱包
 ビルドが完了した後、Retail SDK\\Packages\\RetailDeployablePackage フォルダーに、配置可能小売パッケージ が zip ファイルとして (RetailDeployablePackage.zip) が生成されます。
 
 > [!NOTE]
@@ -229,4 +236,3 @@ Microsoft Visual Studio 2015 開発者コマンド ライン ツールで同じ�
 
 ## <a name="deploy-the-retail-deployable-packages"></a>小売展開可能パッケージを配置する
 手動または LCS 自動化フローを使用してパッケージを配置する方法については、[配置可能なパッケージを適用する](../../../dev-itpro/deployment/apply-deployable-package-system.md)および[配置可能なパッケージをインストールする](../../../dev-itpro/deployment/install-deployable-package.md)を参照してください。
-

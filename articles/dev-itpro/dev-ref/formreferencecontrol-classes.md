@@ -1,13 +1,13 @@
 ---
-title: "F クラス (FormReferenceControl から FormStringControl)"
-description: "FormReferenceControl から FormStringControl までのクラスの API 参照。"
+title: F クラス (FormReferenceControl から FormStringControl)
+description: FormReferenceControl から FormStringControl までのクラスの API 参照。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3e1b4e228d2ed25305667ec4949e45df0c3e5043
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369298"
 ---
-
 # <a name="f-classes-formreferencecontrol-to-formstringcontrol"></a>F クラス (FormReferenceControl から FormStringControl)
 
 [!include [banner](../includes/banner.md)]
@@ -1375,7 +1374,7 @@ control
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -4080,7 +4079,7 @@ chars
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -7060,10 +7059,10 @@ chars
 
 配色は次の表に従って定義されます。
 
-| 先頭値 | スタイル                        |
+| 金額 | スタイル                        |
 |-------|------------------------------|
 | 0     | 既定                      |
-| 1     | Microsoft Windows パレット |
+| 1     | Microsoft Windows パレット。 |
 | 2     | 真の配色        |
 
 ### <a name="method-configurationkey"></a>メソッド configurationKey
@@ -8980,7 +8979,7 @@ FormsPreloadingManager クラスは、ワークスペースの関連付けとリ
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                              | 説明                                                                                  |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------|
@@ -9383,7 +9382,7 @@ chars
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -11509,7 +11508,7 @@ chars
 
 次のテーブルの値は、韓国語版 Microsoft Windows の値です。
 
-| 先頭値 | 説明    |
+| 金額 | 説明    |
 |-------|----------------|
 | 130   | JOHAB\_CHARSET |
 
@@ -13961,7 +13960,6 @@ y
 #### <a name="remarks"></a>備考
 
 DragDrop プロパティがコントロールで有効で、beginDrag イベントがすでに開始されていない限り、このイベントは発生しません。 コントロールをドラッグするには、コントロール領域内でマウス ボタンを押した後、マウス ポインターを移動します。
-
 
 
 

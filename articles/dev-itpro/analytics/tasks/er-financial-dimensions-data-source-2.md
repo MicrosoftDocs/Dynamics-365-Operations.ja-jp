@@ -1,13 +1,13 @@
---- 
-title: "ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)"
-description: "次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
+---
+title: ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)
+description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 92efd6a0b36471286c292a80542b81cd14a8eff3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319595"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2-model-mapping"></a>ER データ ソース (パート 2: モデル マッピング) としての財務分析コードの使用
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/16/2018
 8. [説明] フィールドで、「分析コードデータ・マッピング」と入力します。
 9. [保存] をクリックします。
 10. [デザイナー] をクリックします。
-11. ツリーで、[Dynamics 365 for Operations\Table] を選択します。
+11. ツリーで、'Dynamics 365 for Operations\Table を選択します。
 12. [ルートの追加] をクリックします。
 13. [名前] フィールドに、「Company」と入力します。
 14. [テーブル] フィールドに「CompanyInfo」と入力します。
@@ -59,7 +59,7 @@ ms.lasthandoff: 10/16/2018
 21. 「主勘定のフィールドを要求する」で、[はい] を選択します。
     * ユーザーが分析コードリストの一部として主勘定を選択できるように、「主勘定を要求する」に「はい」と設定します。   「いいえ」に設定しますと、主勘定は分析コードのリストに含まれなくなり、オプションの「主勘定を必須にしますか」が有効になります。 「主勘定を必須にしますか」のオプションが「はい」に設定されますと、ユーザーの選択にかかわらず主勘定が分析コードのリストに含まれます。  
 22. [OK] をクリックします。
-23. ツリーで、[Dynamics 365 for Operations\Table records] を選択します。
+23. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 24. [ルートの追加] をクリックします。
 25. [名称] フィールドで、「LedgerJournal」と入力します。
 26. [クエリの要求] フィールドで、[はい] を選択します。
@@ -143,5 +143,4 @@ ms.lasthandoff: 10/16/2018
 3. [状態の変更] をクリックします。
 4. [完了] をクリックします。
 5. [OK] をクリックします。
-
 

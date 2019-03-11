@@ -1,28 +1,28 @@
 ---
-title: "ユーザー サインインの追跡"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations にサインインして使用するユーザーの監査ログを作成する方法について説明します。"
+title: ユーザー サインインの追跡
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations にサインインして使用するユーザーの監査ログを作成する方法について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
+ms.openlocfilehash: 42010539b63c582bfd4729175ecf8e06663bb274
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 44c3734d12c54792612e0bd9cd72c8d69edbc961
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368652"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/20/2018
 
 多くの組織は、システムを使用したユーザーの監査証跡を管理する必要があります。 この要件は、コンプライアンス上の理由から、または不適切な使用が発生した場合にトラックバックを有効にできます。 
 
-Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft Dynamics AX 環境にアクセスしたユーザーを記録していました。 Microsoft Dynamics 365 for Finance and Operations では、この情報はテレメトリでキャプチャされます。 IT 管理者は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、この情報をダウンロードし、ログインしているユーザーの監査証跡を維持するためにオフライン ストレージに移動することができます。
+Microsoft Dynamics AX 2012 では、**監査ログ**フォームが Microsoft Dynamics AX 環境にアクセスしたユーザーを記録していました。 Microsoft Dynamics 365 for Finance and Operations では、この情報はテレメトリでキャプチャされます。 IT 管理者は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、この情報をダウンロードし、サインインしているユーザーの監査証跡を維持するためにオフライン ストレージに移動することができます。
 
 システムを使用したユーザーの監査ログを生成するには、次の手順を実行します。
 
@@ -44,4 +44,3 @@ Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft D
 8. レコードをエクスポートして長期間保存するには、**エクスポート グリッド** を選択します。
 
 完全な監査証跡を保証するために、IT 管理者は 7 日ごとにこの手順を完了する必要があります。
-

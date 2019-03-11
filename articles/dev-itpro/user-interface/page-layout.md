@@ -1,13 +1,13 @@
 ---
-title: "Web クライアントのページ レイアウト"
-description: "この記事では、Web クライアントのレイアウトについて説明します。 レイアウトは、ページ上にコントロールを表示する方法を指定するデザイン プロセスです。"
+title: Web クライアントのページ レイアウト
+description: この記事では、Web クライアントのレイアウトについて説明します。 レイアウトは、ページ上にコントロールを表示する方法を指定するデザイン プロセスです。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: f34628361f91a47bc0f8b0670e78e1a354aae04a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369422"
 ---
-
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 
 [!include [banner](../includes/banner.md)]
@@ -46,14 +45,14 @@ ms.lasthandoff: 08/09/2018
 
 グリッドとは、柔軟なサイズ変更 (**SizeToAvailable**) などいくつかのコンテナ動作を持つ特殊なタイプのコントロールです。 ただし、グリッドには特別な視覚化があり、汎用のコンテナー コントロールではありません。
 
-## <a name="layout-dynamics-ax-2012-vs-microsoft-dynamics-365-for-finance-and-operations"></a>レイアウト: Dynamics AX 2012 と Microsoft Dynamics 365 for Finance and Operations
+## <a name="layout-dynamics-ax-2012-vs-microsoft-dynamics-365-for-finance-and-operations"></a>レイアウト: Dynamics AX 2012 vs. Microsoft Dynamics 365 for Finance and Operations
 ### <a name="layout-in-dynamics-ax-2012"></a>Dynamics AX 2012 でのレイアウト
 
 Microsoft Dynamics AX 2012 では、コンテナーのコントロールの配置はほとんど必ず縦で、列を手動で設定して水平に拡大します。
 
 ### <a name="examples"></a>例
 
-**Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 Dynamics AX 2012 では、**高さ**プロパティと**幅**プロパティを使用してサイジングできます。 **高さ**および**幅**が**自動**と設定されている場合、サイズは子コントロールが必要とする大きさになります。 **高さ**および**幅**が**列**に設定されている場合、コンテナーは親コンテナー内に収まる大きさになります。 既定では、**高さ**と**幅**はすべてのコンテナーに対して**自動**に設定されています。
+**列** = **1** 1 2 3 **列** = **2** 1 4 2 5 3 Dynamics AX 2012 では、**高さ**プロパティと**幅h**プロパティを使用してサイジングできます。 **高さ**および**幅**が**自動**と設定されている場合、サイズは子コントロールが必要とする大きさになります。 **高さ**および**幅**が**列**に設定されている場合、コンテナーは親コンテナー内に収まる大きさになります。 既定では、**高さ**と**幅**はすべてのコンテナーに対して**自動**に設定されています。
 
 ### <a name="layout-in-finance-and-operations"></a>Finance and Operations でのレイアウト
 
@@ -178,7 +177,6 @@ Finance and Operations でも、サイズ プロパティ **WidthMode** + **幅*
 --------
 
 [ユーザー インターフェイス開発ホーム ページ](user-interface-development-home-page.md)
-
 
 
 

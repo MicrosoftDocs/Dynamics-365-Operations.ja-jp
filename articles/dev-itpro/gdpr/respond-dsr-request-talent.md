@@ -1,13 +1,13 @@
 ---
-title: "Talent での個人データ要求に対応"
-description: "このトピックでは、データ コントローラとして Microsoft Dynamics 365 for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。"
+title: Talent での個人データ要求に対応
+description: このトピックでは、データ コントローラとして Dynamics 365 for Talent for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。
 author: shielasogge
 manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 827baf656c34b0bdb35ba32d9dca7421df1c23b6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368614"
 ---
-
-
 # <a name="respond-to-requests-for-personal-data-in-talent"></a>Talent での個人データ要求に対応
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Talent を使用する企業と、パートナーおよび独立系ソフトウェア ベンダー (ISV) がデータ主体の権利 (DSR) 要求に適合しているとき、それらの両方の企業に役に立ちます。 欧州連合の一般データ保護規則 (GDPR) および Microsoft が提供する関連するリソースの詳細については、[Microsoft Dynamics 365 for Finance and Operation の GDPR に関するガイド](./gdpr-guide.md) を参照してください。
+このトピックは、Microsoft Dynamics 365 for Talent を使用する企業と、パートナーおよび独立系ソフトウェア ベンダー (ISV) がデータ主体の権利 (DSR) 要求に適合しているとき、それらの両方の企業に役に立ちます。 欧州連合の一般データ保護規則 (GDPR) および Microsoft が提供する関連するリソースの詳細については、[Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](./gdpr-guide.md) を参照してください。
 
 Talent で、Microsoft はプロセッサとして動作します。 データ プロセッサとして、 Talent はデータ コントローラとしての GDPR 責務に適応させるプロセスと機能を提供します。
 
@@ -106,13 +104,12 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 
 補償は契約者に割り当てられません。 したがって、これらのステップは、前のプロセスでスキップすることができます。
 
-管理者は <https://attract.talent.dynamics.com/personreport> を介して Microsoft Dynamics 365 for Talent:Attract および Microsoft Dynamics 365 for Talent: Onboarding で個人データを検索およびエクスポートできます。
+管理者は、Microsoft Dynamics 365 for Talent の個人データを検索し、エクスポートできます。Attract および Microsoft Dynamics 365 for Talent: <https://attract.talent.dynamics.com/personreport> 経由でのオンボーディングです。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 
 
 ### <a name="disclaimer"></a>免責事項
 (c)2018 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。
-

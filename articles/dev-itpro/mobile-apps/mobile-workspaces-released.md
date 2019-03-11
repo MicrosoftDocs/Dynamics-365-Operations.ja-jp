@@ -1,13 +1,13 @@
 ---
-title: "利用可能なモバイル ワークスペース"
-description: "このトピックは、使用可能なモバイル ワークスペースを一覧表示します。"
+title: 利用可能なモバイル ワークスペース
+description: このトピックは、使用可能なモバイル ワークスペースを一覧表示します。
 author: sericks007
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354969"
 ---
-
 # <a name="available-mobile-workspaces"></a>利用可能なモバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
@@ -30,9 +29,9 @@ ms.lasthandoff: 08/09/2018
 このトピックでは、Microsoft Dynamics 365 for Unified Operations モバイル アプリに使用可能なモバイル ワークスペースを一覧表示します。
 
 > [!NOTE]
-> 以前のモバイル アプリの名前は、*Microsoft Dynamics 365 for Finance and Operations* でした。
+> 以前のモバイル アプリの名前は *Microsoft Dynamics 365 for Finance and Operations* でした。
 
-| モバイル ワークスペース     | 説明   | 適用の対象   |
+| モバイル ワークスペース     | 説明   | 在庫状態   |
 |----------------------|---------------|--------------|
 |[会社のディレクトリ](company-directory-mobile-workspace.md)| 組織内の他の従業員を閲覧し、連絡を取ることができます。| 2017 年 6 月 |    
 |[自分のチーム](manager-self-service-mobile-workspace.md)| 直属の部下と拡張のスタッフを表示でき、レポート チェーン内の個人に称賛を送信することもできます。|2017 年 6 月 |     
@@ -44,5 +43,4 @@ ms.lasthandoff: 08/09/2018
 | [手持ち在庫](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | 予約済みおよび利用可能な在庫に関する情報を入手します。                                                                                                    |   2017 年 1 月       |
 | [販売注文](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | 販売注文を最新の状態に保つことができます。                                                                                                                          |  2017 年 1 月                  |
 | [仕入先コラボレーション](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | 仕入先は、承認のために送信された発注書を最新の状態を保つことができます。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。 |2017 年 1 月    |
-
 

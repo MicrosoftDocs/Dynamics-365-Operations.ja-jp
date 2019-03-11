@@ -1,28 +1,27 @@
 ---
-title: "マルチ参照モジュール"
-description: "複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。"
+title: マルチ参照モジュール
+description: 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 4b476037b3634de6bcc273e1be05386b084c2f3a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368993"
 ---
-
 # <a name="multi-lookup-module"></a>マルチ参照モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -57,7 +56,7 @@ ms.lasthandoff: 08/09/2018
 | [非表示](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#hidden) |hidden: boolean <br>|コントロールが非常時の場合は true です。<br>  [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden) から継承 <br> |
 | [setEntityRefs](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#setentityrefs) |setEntityRefs: function(ids: string [ ] &#124; number [ ]): Promise &lt;any&gt; <br>|  |
 
-#### <a name="methods"></a>メソッド
+#### <a name="methods"></a>方法
 
 | 氏名 | 署名 | 説明 |
 | ---- | --------- | ----------- |
@@ -90,7 +89,7 @@ ms.lasthandoff: 08/09/2018
 | [alignItems](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignitems) |alignItems: string (optional)  <br>|このプロパティは、CSS プロパティ「align-items」のエイリアスです。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[alignItems](../interfaces/view-model-ipage-idesign.md#alignitems) から継承 <br> |
 | [alignSelf](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignself) |alignSelf: string (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[alignSelf](../interfaces/view-model-ipage-idesign.md#alignself) から継承 <br> |
 | [バインディング](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#bindings) |bindings: any (optional)  <br>|  [Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings) から継承 <br> |
-| [枠線](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
+| [枠線](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)  <br>|コントロールの境界動作。 このプロパティは、子によって継承されません。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承 <br> |
 | [色](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [flexFlow](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
 | [flexSize](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 E.g. 「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
@@ -142,5 +141,4 @@ ms.lasthandoff: 08/09/2018
 | ---- | --------- | ----------- |
 | [OnLookupPageCreate](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate) |OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): (無効) オプション  <br>|  |
 | [OnLookupPageCreated](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated) |OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): 無効 (オプション)  <br>|  |
-
 

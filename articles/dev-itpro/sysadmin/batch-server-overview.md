@@ -1,13 +1,13 @@
 ---
-title: "バッチ処理とバッチ サーバー"
-description: "この記事では、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。"
+title: バッチ処理とバッチ サーバー
+description: この記事では、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
 author: maertenm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f3e3a22dbc343db1485190402371859861e46d1c
 ms.openlocfilehash: d758321f7a79e1d12363bd58a7477ec0d86a4dfe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369443"
 ---
-
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ ms.lasthandoff: 10/26/2018
 
 バッチ サーバーの 1 つの一般的な使用方法は、複数のサーバー間でジョブの負荷分散を行うことです。 バッチ サーバーが処理するスレッド数をセットすることができます。 
 
-バッチ サーバーは、Microsoft Dynamics 365 for Finance and Operations のクライアントおよびその他の関連付けられたコンポーネントからのサービス要求の有効な AOS インスタンスでもあるため、AOS インスタンスがバッチ処理に利用できるようにする場合は慎重に決定する必要があります。 
+バッチ サーバーは、Microsoft Dynamics 365 for Finance and Operations のクライアントおよびその他の関連付けられたコンポーネントからサービスが要求する有効な AOS インスタンスでもあるため、AOS インスタンスがバッチ処理に利用できるようにする場合は慎重に決定する必要があります。 
 
 
 ## <a name="walkthroughs"></a>チュートリアル
@@ -98,7 +97,6 @@ Batch1 が待機中のタスクをチェックし、そのスレッドにタス�
 名前付きバッチ グループ、BG1 を作成し、AOS2 および AOS3 で実行するように構成します。 したがって、BG1 のジョブからのタスクは、使用可能なスレッドの数に応じて、AOS2 または AOS3 でのみ実行されます。 AOS1 は、BG1 のジョブのタスクを処理しません。 同様に、AOS2 および AOS3 は BG1 からのみタスクを処理します。 
 
 AOS2 および AOS3 を構成して他のバッチ グループからタスクを処理することができます。 これらのバッチ グループには、既定のバッチ グループが含まれています。
-
 
 
 

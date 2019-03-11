@@ -1,13 +1,13 @@
 ---
-title: "コール センター チャネルの設定"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail を使用してコール センターの注文処理方法を説明します。"
+title: コール センター チャネルの設定
+description: このトピックでは、Microsoft Dynamics 365 for Retail を使用してコール センターの注文処理方法について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334844"
 ---
-
 # <a name="set-up-call-center-channels"></a>コール センター チャネルの設定
 
 [!include [banner](includes/banner.md)]
 
-会社では、Microsoft Dynamics 365 for Retail の複数のコール センター チャンネルを定義できます。 コール センター チャンネルは、**小売** \> **チャンネル** \> **コール センター** \> **すべてのコール センター** で設定され、法人に特有のものです。
+会社では、Microsoft Dynamics 365 for Retail の複数のコール センター チャネルを定義できます。 コール センター チャンネルは、**小売** \> **チャンネル** \> **コール センター** \> **すべてのコール センター** で設定され、法人に特有のものです。
 
 新しいコール センター チャンネルが作成されると、体系的に作業単位番号が割り当てられています。 作業単位としてコール センターが作成されるので、ユーザーが品揃え、カタログ、および特定の荷渡方法などのさまざまな小売機能にコール センター チャンネルをリンクすることができます。
 
@@ -77,7 +76,6 @@ ms.lasthandoff: 01/04/2019
 
 既定では、販売注文のヘッダーの **小売販売** フラッグは、コール センター ユーザーが作成するすべてのオーダーに対して有効になっています。 注文は、システムの小売固有の価格およびプロモーション機能を利用することができます。
 
-コール センター チャンネルにリンクされていないユーザーは、Microsoft Dynamics 365 for Finance and Operations の標準注文入力の機能を使用します。 これらのユーザーが販売注文入力フォームを通じて入力する注文は、小売注文として体系的に識別されません。 また、これらのユーザーによって入力された注文は、受注完了処理のルール、小売価格のロジック、またはコール センター チャネルの構成またはコール センター システムのパラメータで定義できる他の注文の検証の対象にはなりません。
+コール センター チャネルにリンクされていないユーザーは、Microsoft Dynamics 365 for Finance and Operations の標準注文入力の機能を使用します。 これらのユーザーが販売注文入力フォームを通じて入力する注文は、小売注文として体系的に識別されません。 また、これらのユーザーによって入力された注文は、受注完了処理のルール、小売価格のロジック、またはコール センター チャネルの構成またはコール センター システムのパラメータで定義できる他の注文の検証の対象にはなりません。
 
 コール センター チャネルの設定とチャネル ユーザーの定義が完了したら、必要なシステム動作を保証します。すべての必要なコール センター パラメータが、**小売** \> **チャンネル設定** \> **コール センター設定** \> **コール センター パラメータ** で定義されていることを確認してください。 関連する番号順序も定義されていることを確認してください。
-

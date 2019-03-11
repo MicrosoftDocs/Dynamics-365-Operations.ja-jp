@@ -1,13 +1,13 @@
 ---
-title: "開発およびカスタマイズ"
-description: "このトピックでは、開発に関するトピックへのリンクを提供します。"
+title: 開発およびカスタマイズ
+description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
 manager: AnnBe
 ms.date: 04/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 84ae968e4f0e309c6cb841c4d63ee92c7676bfab
 ms.openlocfilehash: 0de1e48aa9fbabdcd711aabded726066f9e341b1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369469"
 ---
-
 # <a name="develop-and-customize"></a>開発およびカスタマイズ 
 
 [!include [banner](../includes/banner.md)]
@@ -33,10 +32,10 @@ ms.lasthandoff: 10/05/2018
 
 ## <a name="overview"></a>概要
 
-Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供されている次世代エンタープライズ リソース プランニング (ERP) を表します。 これは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体の ERP アプリケーション スイートを有効にするために設計されています。 これは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 このリリースでは、開発環境が大幅に変更されています。 これらの変更の内容は以下の通りです。
+Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供された次世代エンタープライズ リソース プランニング (ERP) を表します。 これは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体の ERP アプリケーション スイートを有効にするために設計されています。 これは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 このリリースでは、開発環境が大幅に変更されています。 これらの変更の内容は以下の通りです。
 
 - 実行環境から切り離された開発ツール。 オンライン データベースではなく、ローカルの XML ベースのファイルに対して作成します。
-- Microsoft Visual Studio は開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
+- Microsoft Visual Studio が開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
 - X++ コンパイラは、すべての機能に対して一般的な中間的な言語 (CIL) を生成します。 CIL は C\# プログラミング言語などの他の .NET ベース (マネージド) の言語で使用されるものと同じ中間言語です。
 - ブラウザー ベースのクライアントおよびフォームのデザイン パターンを活用して、改善されたエンド ユーザー エクスペリエンスを提供することができます。
 - Application Lifecycle Model (ALM) は、ビルドの自動化、テストの自動化、およびクラウドへのモデルの配置をサポートします。
@@ -64,7 +63,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 ## <a name="development-tools"></a>開発ツール
 ### <a name="tutorials"></a>チュートリアル
 
--   [Visual Studio 開発の概要](introduction-visual-studio.md)
+-   [Visual Studio での開発の紹介](introduction-visual-studio.md)
 -   [簡易データモデルを作成する](create-data-model-elements.md)
 -   [プロジェクトの構築およびデバッグ](build-debug-project.md)
 -   [バージョン コントロール、メタデータ、検索、ナビゲーション、およびその他の機能](version-control-metadata-navigation.md)
@@ -79,7 +78,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [要素の利用状況](element-usage.md)
 -   [モデル](models.md)
 -   [ビルド操作](build-operations.md)
--   [Visual Studio コード エディター](code-editor.md)
+-   [Visual Studioコード エディター](code-editor.md)
 -   [開発者ツールのアドイン](developer-tools-add-ins.md)
 -   [モデルの配分: モデルをエクスポートおよびインポートする方法](models-export-import.md)
 -   [Visual Studio でのメタデータの検索](metadata-search-visual-studio.md)
@@ -119,7 +118,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 
 ## <a name="performance"></a>パフォーマンス
 - [Trace Parser でトレースを実行し、分析する](../perf-test/trace-trace-tutorial.md)
-- [Visual Studio Online を使用した PerfSDK およびマルチユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
+- [PerfSDK および Visual Studio Online によるマルチ ユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
 - [問題点の診断およびパフォーマンス問題の分析にTrace Parser のデスクトップ バージョンを使用する](../perf-test/trace-parser.md)
 - [パフォーマンス タイマー](../perf-test/performance-timer.md)
 <!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
@@ -147,7 +146,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 ## <a name="testing-support-in-visual-studio"></a>Visual Studio でのテストのサポート
 - [テストと検証](../perf-test/testing-validation.md)
 - [Visual Studio でのテストのサポート](../perf-test/testing-support.md)
-- [継続的なビルドとテストの自動化による開発者トポロジの配置](../perf-test/continuous-build-test-automation.md)
+- [継続的ビルドとテストの自動化を使用した開発者トポロジの展開](../perf-test/continuous-build-test-automation.md)
 - [タスク レコーダー](../user-interface/task-recorder.md)
 
 ## <a name="office-integration"></a>Office 統合
@@ -172,7 +171,6 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 
 ## <a name="additional-resources"></a>その他のリソース
 [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
-
 
 
 

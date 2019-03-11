@@ -1,13 +1,13 @@
 ---
-title: "AX 2012 から Finance and Operations へのアップグレード"
-description: "このトピックでは、Microsoft Dynamics AX 2012 を現在実行している顧客が、データとコードを Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に移動するために使用できるプロセスについて説明します。"
+title: AX 2012 から Finance and Operations へのアップグレード
+description: このトピックでは、Microsoft DynamicsAX 2012 を現在実行している顧客が、データとコードを Microsoft Dynamics 365 for Finance and Operations に移動するために使用できるプロセスについて説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,27 +15,26 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: b8002c547b4f5e7ca485778af90d5b5293496f79
 ms.openlocfilehash: 9cfd0433d00802cef07d148e79aaefefca5fefda
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369475"
 ---
-
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-プラットフォーム更新プログラム 8 および 2017 年 7 月のアプリケーション リリース以降を実行している Microsoft Dynamics 365 for Finance and Operations は現在 Microsoft Dynamics AX 2012 を実行している顧客がデータとコードを Finance and Operations に移動するために使用できるアップグレード パスを提供します。 現在、AX 2012 R3 および AX 2012 R2 からのアップグレードがサポートされています。 アップグレード プロセスは、次の要素を基に構築されています。
+プラットフォーム更新プログラム 8 および 2017 年 7 月のアプリケーション リリース以降を実行している Microsoft Dynamics 365 for Finance and Operations は、現在 Microsoft Dynamics AX 2012 を実行している顧客がデータとコードを Finance and Operations に移動するために使用できるアップグレード パスを提供します。 現在、AX 2012 R3 および AX 2012 R2 からのアップグレードがサポートされています。 アップグレード プロセスは、次の要素を基に構築されています。
 
 - AX 2012 から既存のカスタム アプリケーション コードを継承するのに役立つツール。
 - データベースを継承するのに使用できるデータ アップグレード プロセス。 したがって、完全なトランザクション履歴をアップグレードすることができます。
 
 > [!IMPORTANT]
-> 一部の[推奨されない機能](deprecated-features.md)を実行している Microsoft Dynamics AX 2012 の実装は、現在 Finance and Operations にアップグレードできません。 たとえば、仮想会社またはデータ パーティションのいずれかを使用しているシステムからのアップグレードはできません。 システムがアップグレードできるかどうか分からない場合は、アップグレード アナライザー ツールを実行します。 
+> 一部の[推奨されない機能](deprecated-features.md) を実行している Microsoft Dynamics AX 2012 の実装は、現在 Finance and Operations にアップグレードできません。 たとえば、仮想会社またはデータ パーティションのいずれかを使用しているシステムからのアップグレードはできません。 システムがアップグレードできるかどうか分からない場合は、アップグレード アナライザー ツールを実行します。 
 
 ## <a name="overview"></a>概要
 
@@ -85,7 +84,7 @@ LCS パートナー プロジェクトを取得する方法の詳細について
 
 このステップを完了するには、モデル ストア エクスポートとして AX 2012 からコードをエクスポートし、それを LCS コード アップグレード ツールにアップロードする必要があります。 コード アップグレード ツールは、コードのアップグレード バージョン、および解決の必要がある残りの競合に関するレポートを生成します。 開発者はその後、アップグレード済みのコードとレポートの両方を確認して、コード基準をアップグレードするために必要な工数を決定します。
 
-このステップの出力は、Microsoft Dynamics AX 開発者のアップグレード プロジェクト計画におけるワーク ストリームを表します。
+このステップの出力は、Microsoft Dynamics AX 開発者のアップグレード プロジェクト計画におけるワークストリームを表します。
 
 詳細については、「[分析: コード アップグレードの工数見積](analyze-code-upgrade.md)」を参照してください。
 
@@ -135,18 +134,18 @@ Finance and Operations のサブスクリプションを購入すると、新し
  
 データ アップグレードは、特殊なタイプの配置可能パッケージを介して行われます。 同じメカニズムを使用して、新しい Finance and Operations コードを 1 つの環境から別の環境へと配置します。
 
-このプロセス中にデータベース内のデータ変換に使用される基礎フレームワークは、**ReleaseUpdatexxx** クラスを実行する x++ バッチ ジョブに基づく AX 2012 のアップグレード フレームワークと大部分は同じです。
+このプロセス中にデータベース内のデータ変換に使用される基礎フレームワークは、**ReleaseUpdatexxx** クラスを実行する X++ バッチ ジョブに基づく AX 2012 のアップグレード フレームワークと大部分は同じです。
 
-詳細については、「[開発環境における AX 2012 から Dynamics 365 for Finance and Operations へのデータ アップグレード](data-upgrade-2012.md)」を参照してください。
+詳細については、[開発環境における AX 2012 から Dynamics 365 for Finance and Operations へのデータ アップグレード](data-upgrade-2012.md) を参照してください。
 
 ### <a name="data-upgrade-sandbox-environments"></a>データ アップグレード (サンドボックス環境)
-開発環境でのデータ アップグレードが完了したら、サンドボックス環境で同じプロセスを実行できます。 サンドボックス環境とは、アップグレードした AX 2012 のデータとコードを使用して、ビジネス ユーザーと機能チームのメンバーがビジネス プロセスをテストできる環境のことです。
+開発環境でのデータ アップグレードが完了したら、サンドボックス環境で同じプロセスを実行できます。 サンドボックス環境とは、アップグレードした AX 2012 のデータとコードを使用して、ビジネス ユーザーと機能チームのメンバーが業務プロセスをテストできる環境のことです。
 
 次の図では、サンドボックス環境でデータ アップグレードを実行するためのプロセスを示します。 ここでの違いは、従来の SQL バックアップに代わって bacpac ツールが使用されることです。 Microsoft SQL Server と Azure SQL データベース間の変換には、このツールが必要です。 これは標準の SQL ツールで、Finance and Operations に固有のものではありません。
 
 ![サンドボックス環境でのデータ アップグレード](./media/data-upgrade-sandbox.png)
 
-詳細については、「[サンドボックス環境における AX 2012 から Dynamics 365 for Finance and Operations へのデータ アップグレード](upgrade-data-sandbox.md)」を参照してください。
+詳細については、[サンドボックス環境における AX 2012 から Dynamics 365 for Finance and Operations へのデータ アップグレード](upgrade-data-sandbox.md) を参照してください。
  
 ## <a name="validate"></a>検証
 検証フェーズを入力すると、アップグレード済カスタム コードとアップグレード済データを含む環境が使用できるようになります。 このフェーズでは、アップグレード済の環境が要求通りに動作することを検証してテストするプロセスを説明します。 また、稼働準備のプロセスについても説明します。
@@ -173,7 +172,7 @@ Finance and Operations のサブスクリプションを購入すると、新し
 詳細については、「[検証: 機能テスト](upgrade-functional-validation.md)」を参照してください。
 
 ### <a name="pre-go-live-checklist"></a>稼働前のチェックリスト
-稼働前のチェックリストは、稼働への最終的な切替中のエラーの可能性を減らすのに役立つ推奨手順です。 稼働期限の 1 週間前に、AX 2012 で (つまり \<[モジュール]\> \ [設定] の下で) コンフィギュレーション変更を中止します。 コンフィギュレーション変更に対するこの制限は、単なる手順にすぎません。 Microsoft Dynamics AX のシステム管理者は、この時点ではこのタイプの変更を保留にすることに同意します。
+稼働前のチェックリストは、稼働への最終的な切替中のエラーの可能性を減らすのに役立つ推奨手順です。 稼働期限の 1 週間前に、AX 2012 で (つまり \<モジュール\> \設定で) コンフィギュレーション変更を中止します。 コンフィギュレーション変更に対するこの制限は、単なる手順にすぎません。 Microsoft Dynamics AX のシステム管理者は、この時点ではこのタイプの変更を保留にすることに同意します。
 
 Finance and Operations コード基準でコード変更を凍結することもお勧めします。 評価されており稼働をブロックしないことが示されている場合を除いて、さらなる変更は許可されるべきではありません。  
 
@@ -184,7 +183,7 @@ Finance and Operations コード基準でコード変更を凍結することも
 ### <a name="go-live"></a>Go live
 標準またはプレミア承認テスト環境 (サンドボックス レベル 2 またはそれ以上) でアップグレード テストを正常に完了した場合、および正常にテスト切替を完了した後、実稼働環境をアップグレードして稼働するその時が来ました。 
 
-*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、Microsoft Dynamics 365 for Finance and Operations をオンにする前に実行されるタスクで構成されています。 
+*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後かつ Microsoft Dynamics 365 for Finance and Operations をオンにする前に発生するタスクで構成されます。 
 
 詳細については、[AX 2012 からのアップグレード - 切替プロセス (Go live)](2012-upgrade-cutover.md) を参照してください
 
@@ -193,5 +192,4 @@ Finance and Operations コード基準でコード変更を凍結することも
 プライベート プレビューで、AX 2012 R2 および AX 2012 R3 からクラウド バージョンの Finance and Operations へのアップグレードがサポートされています。  
 
 Dynamics AX 2012 RTM からのアップグレードは現在サポートされていません。 オンプレミス バージョンへのアップグレードは現在サポートされていませんが、将来追加される予定です。 
-
 

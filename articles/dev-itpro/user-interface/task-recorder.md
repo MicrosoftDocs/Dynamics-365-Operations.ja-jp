@@ -1,13 +1,13 @@
 ---
-title: "タスク レコーダー"
-description: "このトピックでは、タスク レコーダーを使用して、クライアント機能を記録する方法について説明します。"
+title: タスク レコーダー
+description: このトピックでは、タスク レコーダーを使用して、クライアント機能を記録する方法について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysTaskRecorderPane
 audience: Developer
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: b40fa2f3b6afbbc26e58de930647bbf7c24dc9ba
 ms.openlocfilehash: 31193c92a3b610dd9a2b80c4e592e3a03834c96a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368780"
 ---
-
 # <a name="task-recorder"></a>タスク レコーダー
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Microsoft Dynamics 365 for Finance and Operations では、タスク レコー�
 タスク レコーダーはプレインストールされており、ユーザーは初めてクライアントを開いた直後に業務プロセスの記録を開始できます。 タスク レコーダーは、Microsoft Edge、Internet Explorer 11、および Google Chrome の最新バージョンをサポートします。
 
 > [!IMPORTANT]
-> **タスク ガイド** タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) でも利用可能な、手順を追ったヘルプ。
+> **タスク ガイド** タブは、現在 Microsoft の Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) でも利用可能な、手順を追ったヘルプ。
 
 ## <a name="create-a-recording"></a>記録の作成
 次の手順では、タスク レコーダーを使用して新しい記録を作成するプロセスを示します。
@@ -156,7 +155,7 @@ Microsoft Dynamics 365 for Finance and Operations では、タスク レコー�
    > ボタンをクリックする、フォームを開く、ルックアップからレコードを選択するなどの、フィールドに関連しない手順では、注記するときに*サンプル値ラベル*をオプションとして設定しません。
    
 - **ユーザーが指定した値のラベル**このステップ指示には、作成者が独自のテキストで記入できるプレースホルダー テキストが含まれています。 **サンプル値ラベル**オプションのある手順については、プレースホルダーが通常入力するデータを指定するテキストを置き換えます。 これは、**優先値ラベル**も**サンプル値ラベル**も、このステップで使用する必要のあるデータを十分に表現できないシナリオに役立ちます。
-  -   *ラベル例*: 名前フィールドに、*{テキストの例}* を入力します。
+  -   *ラベル例*: 名前フィールドに *{テキストの例}* を入力します。
   -   *プレースホルダー表示後のラベル例*: 名前フィールドで、顧客名を入力します。
 
   **サンプル値ラベル**オプションのない手順では、プレースホルダーがすべてのラベル テキストを置き換えることができます。 たとえば、ボタンに関連付けられている手順には**サンプル値ラベル**がないため、独自のテキストでラベル テキスト全体を置換する可能性があります。
@@ -370,7 +369,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 
 ### <a name="document-generation-setup-optional"></a>ドキュメント生成の設定 (オプション)
 
-**プレリリース**の Chrome 拡張機能を使用すると、ユーザーが業務プロセスを記録するとき、タスク レコーダーがブラウザーのスクリーン ショットを撮ることができます。 ユーザーが録音を完了すると、タスク レコーダーはこれらのスクリーン ショットを使用して Microsoft Word ドキュメントを生成します。 この機能を有効にするには、プレリリースの Google Chrome 拡張機能をインストールして、録画中にタスク レコーダーがスクリーンショットをキャプチャできるようにします。
+**プレリリース**の Chrome 拡張機能を使用すると、ユーザーが業務プロセスを記録するとき、タスク レコーダーがブラウザーのスクリーン ショットを撮ることができます。 ユーザーが録音を完了すると、タスク レコーダーはこれらのスクリーンショットを使用して Microsoft Word ドキュメントを生成します。 この機能を有効にするには、プレリリースの Google Chrome 拡張機能をインストールして、録画中にタスク レコーダーがスクリーンショットをキャプチャできるようにします。
 
 1.  Google Chrome を開きます。
 2.  **メニュー &gt; 追加ツール &gt; 拡張機能**の順に移動します。 
@@ -440,4 +439,3 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
   -   タスク ガイド中の「一般的な値」の表示をサポートしないでください。 現在、録音中に使用された値が表示されます。
 - フィルター ウィンドウは、左側から表示されるフィルターです
   -   タスク ガイドは、クリックする必要があるフィルタ ウィンドウ内の各要素を指定しません。
-

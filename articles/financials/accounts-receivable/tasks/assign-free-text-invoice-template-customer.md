@@ -1,13 +1,13 @@
---- 
-title: "自由書式の請求書のテンプレートを顧客へ割り当てる"
-description: "このタスクは顧客に自由書式の請求書テンプレートを割り当てる方法を示します。"
+---
+title: 自由書式の請求書のテンプレートを顧客へ割り当てる
+description: このタスクは顧客に自由書式の請求書テンプレートを割り当てる方法を示します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318928"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>自由書式の請求書のテンプレートを顧客へ割り当てる
 
@@ -48,5 +48,4 @@ ms.lasthandoff: 10/16/2018
 10. 定期的なアイテムのパターンを選択します。
     * [毎日] – [間隔] フィールドでこのオプションを選択し、日数を入力します。 たとえば、15 を入力すると、請求書はこの顧客に対して 15 日ごとに生成されます。  [毎週] – [間隔] フィールドでこのオプションを選択し、週の数を入力します。 たとえば、2 を入力すると、請求書はこの顧客に対して 2 週間おきに生成されます。  [毎月] – [間隔] フィールドでこのオプションを選択し、月数を入力します。 たとえば、6 を入力すると、請求書はこの顧客に対して 6 か月ごとに生成されます。  [毎年] – [間隔] フィールドでこのオプションを選択し、年数を入力します。 たとえば、2 を入力すると、請求書はこの顧客に対して 2 年ごとに生成されます。  
 11. [間隔] フィールドに数値を入力します。
-
 

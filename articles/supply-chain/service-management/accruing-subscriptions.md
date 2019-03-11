@@ -1,31 +1,30 @@
 ---
-title: "定期売買の発生"
-description: "サービスの定期売買では、手数料トランザクションを請求した日付に続く期間に、収益を手動で見越計上します。"
+title: 定期売買の発生
+description: サービスの定期売買では、手数料トランザクションを請求した日付に続く期間に、収益を手動で見越計上します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a183e17749c04b407eb17155ecb1363e96ade18a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: acbf7432c9487cbefaf24a2a98772c8f0ec7ffe6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317180"
 ---
-
 # <a name="accruing-subscriptions"></a>定期売買の発生 
 
 [!include [banner](../includes/banner.md)]
@@ -151,6 +150,5 @@ ms.lasthandoff: 05/08/2018
 [未収の定期売買収益](accrue-subscription-revenue.md)
 
   
-
 
 

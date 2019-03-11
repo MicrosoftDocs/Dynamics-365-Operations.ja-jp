@@ -1,28 +1,27 @@
 ---
-title: "PageState 列挙"
-description: "ページを配置できるさまざまな高レベルの状態を表します。"
+title: PageState 列挙
+description: ページを配置できるさまざまな高レベルの状態を表します。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 69b9bf62c6055e7c2a680c09b7fcda91a4496d00
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368393"
 ---
-
 # <a name="pagestate-enumeration"></a>PageState 列挙
 
 [!include [banner](../../../../includes/banner.md)]
@@ -64,6 +63,5 @@ offline: 1 ページはオフライン モードで読み込まれたので更�
 ### <a name="refreshing"></a>更新中
 
 更新中: 4 ページは現在データを更新中です。
-
 
 

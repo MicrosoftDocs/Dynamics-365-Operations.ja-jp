@@ -1,35 +1,34 @@
 ---
-title: "翻訳メモリ ファイル"
-description: "このトピックでは、翻訳メモリ ファイルを作成、編集、および使用して、Microsoft Dynamics 365 翻訳サービス (DTS) が高品質の翻訳出力ファイルを提供するのをいつ、どこで行うことができるかについて説明します。"
+title: 翻訳メモリ ファイル
+description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) が高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 6154
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 115832c4b6bf3e05e3bc621c0254a167e549e1af
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369096"
 ---
-
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 翻訳サービス (DTS) は、2 か国語 XML ローカライズ交換ファイル形式 (XLIFF) ファイルを使用して、ソース言語とターゲット言語のペアを格納します。 XLIFF は XML に基づいているため、任意のテキスト エディターで XLIFF ファイルを開くことができます。 ただし、この形式を使用するよう設計されている XLIFF エディターを使用することをお勧めします。 たとえば、[多言語アプリ ツールキット (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit) で利用できる無料の Microsoft 多言語エディターを使用することができます。
+Microsoft Dynamics 365 Translation Service (DTS) は、2 か国語 XML ローカライズ交換ファイル形式 (XLIFF) ファイルを使用して、ソース言語とターゲット言語のペアを格納します。 XLIFF は XML に基づいているため、任意のテキスト エディターで XLIFF ファイルを開くことができます。 ただし、この形式を使用するよう設計されている XLIFF エディターを使用することをお勧めします。 たとえば、[多言語アプリ ツールキット (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit) で利用できる無料の Microsoft 多言語エディターを使用することができます。
 
 DTS では、2 つの方法で XLIFF 翻訳メモリ (TM) を入手できます。
 
@@ -112,4 +111,3 @@ TM として使用する前に、整合された XLIFF ファイルを確認し�
 確認された文字列は **翻訳済み**、**最終**、または**サインオフ**とマークされ、再利用することができます。 **要レビュー**としてマークされている翻訳はリサイクルには含まれません。
 
 XLIFF TM を編集した後、DTS はリフレッシュされた出力ファイルをソース形式で再生成します。 ファイルを再生成する方法の詳細については、[出力ファイルの再生成](./use-translation-service.md#regenerate-output-files) を参照してください。
-

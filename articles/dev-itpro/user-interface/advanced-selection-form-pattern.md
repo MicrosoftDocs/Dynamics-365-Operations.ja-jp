@@ -1,13 +1,13 @@
 ---
-title: "高度な選択のフォーム パターン"
-description: "この記事では、高度な選択フォーム パターンに関する情報を提供します。 このダイアログ フォーム パターンを使用すると、ユーザーは大規模な全体のリストから項目をフィルターして選択できます。 リスト パネルのパターンと同様に、このパターンは主要なユーザー タスクが項目のセットを選択するときに使用する必要があります。"
+title: 高度な選択のフォーム パターン
+description: この記事では、高度な選択フォーム パターンに関する情報を提供します。 このダイアログ フォーム パターンを使用すると、ユーザーは大規模な全体のリストから項目をフィルターして選択できます。 リスト パネルのパターンと同様に、このパターンは主要なユーザー タスクが項目のセットを選択するときに使用する必要があります。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a63f24353ba0c79bc718f047331edd25a0a74a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 350eedf0579804ea4641daeba3796fd19897342f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368970"
 ---
-
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ ms.lasthandoff: 04/20/2018
     -   標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 -   **高度な選択のガイドライン:**
     -   既定では、クイック フィルターは名前または説明列を使用する必要があります。
-    -   リストには最大 15 の列を表示できます。 **注記:** このガイドラインは、Microsoft Dynamics AX 2012 以降に緩和されています。
+    -   リストには最大 15 の列を表示できます。 **注記:** このガイドラインは Microsoft Dynamics AX 2012 から緩和されています。
     -   主な指示は、ユーザーに何をする必要があるかを指示する必要があります。
     -   データが存在しないとき、グリッドは新しいレコードを自動的に追加できません。
 
@@ -72,7 +71,6 @@ ms.lasthandoff: 04/20/2018
 ### <a name="open-issues"></a>未処理の問題
 
 この時点ではなし
-
 
 
 

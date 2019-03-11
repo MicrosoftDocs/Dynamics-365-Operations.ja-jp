@@ -1,13 +1,13 @@
 ---
-title: "購買要求の概要"
-description: "このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。"
+title: 購買要求の概要
+description: このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309843"
 ---
-
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ ms.lasthandoff: 05/08/2018
 ## <a name="creating-purchase-requisitions"></a>購買要求の作成
 **自分の購買要求**ページで購買要求を作成して、必要な品目とサービスを選択できます。 組織が作成した調達カタログから品目を選択するか、またはそのカタログに品目が見つからなかった場合は、調達カテゴリを選択し、製品の詳細を入力して品目を請求できます。  
 
-確認のために購買要求を送信する前に、ワークフローを Microsoft Dynamics 365 for Finance and Operations でコンフィギュレーションする必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
+購買要求をレビューのために送信する前に、Microsoft Dynamics 365 for Finance and Operations でワークフローを構成する必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
 
 ### <a name="purchase-requisition-statuses"></a>購買要求のステータス
 
@@ -69,7 +68,7 @@ ms.lasthandoff: 05/08/2018
 <tr class="odd">
 <td>ドラフト</td>
 <td>ドラフト</td>
-<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 <strong>ドラフト</strong> のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、<strong>ドラフト</strong> のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
+<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 <strong>ドラフト</strong> のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、<strong>ドラフト</strong>のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
 </tr>
 <tr class="even">
 <td>確認中</td>
@@ -142,7 +141,7 @@ ms.lasthandoff: 05/08/2018
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>消費目的の要求
 
-消費目的の要求は、組織で内部的に使用される品目またはサービスの需要を表します。 この種類の要求によって作成される需要は、常に発注書によって満たされます。 Microsoft Dynamics 365 for Finance and Operations が発注書を自動的に作成するように設定されている場合、購買要求が承認された後に発注書が作成されます。
+消費目的の要求は、組織で内部的に使用される品目またはサービスの需要を表します。 この種類の要求によって作成される需要は、常に発注書によって満たされます。 Microsoft Dynamics 365 for Finance and Operations が発注書を自動的に生成するように設定されている場合、購買要求が承認された後に発注書が作成されます。
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>補充目的の要求
 
@@ -198,7 +197,6 @@ ms.lasthandoff: 05/08/2018
 [消費の要求の作成 (タスク ガイド)](tasks/create-requisition-consumption.md)
 
 [購買要求ワークフロー](purchase-requisitions-workflow.md)
-
 
 
 

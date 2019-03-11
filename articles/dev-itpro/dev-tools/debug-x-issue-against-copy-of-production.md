@@ -1,13 +1,13 @@
 ---
-title: "生産データベースのコピーに対する X++ のデバッグ"
-description: "このトピックでは、実稼働環境で問題を調査できるように X++ デバッグを構成する方法について説明します。"
+title: 生産データベースのコピーに対する X++ のデバッグ
+description: このトピックでは、実稼働環境で問題を調査できるように X++ デバッグを構成する方法について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: d3782fd56abecf7627446a700a2c961fd55f2883
 ms.openlocfilehash: e27236865d9621354e725192ce50c16955d83fc6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369751"
 ---
-
 # <a name="debug-x-against-copies-of-production-databases"></a>生産データベースのコピーに対する X++ のデバッグ
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 12/17/2018
 
 [![デバッグ プロセス](./media/debugxpp.jpg)](./media/debugxpp.jpg)
 
-1. Microsoft Dynamics Lifecycle Services (LCS) では、システム管理者がデータベースのコピーをサンドボックス ユーザー受け入れテスト (UAT) 環境に接続するよう要求します。 (つまり、データベース更新を要求します。)
+1. Microsoft Dynamics Lifecycle Services (LCS) では、システム管理者がデータベースのコピーをサンドボックス ユーザー受け入れテスト (UAT) に接続するよう要求します。 (つまり、データベース更新を要求します。)
 2. Microsoft Azure DevOps では、開発者が実稼働環境で実行されている同じビルドにローカル コードを同期します。
 3. Microsoft Azure SQL データベースのサンドボックス インスタンスでは、システム管理者が開発者に一時的な SQL サインインを作成します。 開発者は、サンドボックス データベースに接続するための環境を設定します。
 4. 開発環境がサンドボックスのデータベースに接続できるように、ファイアウォールに例外が追加されています。
@@ -63,7 +62,7 @@ ms.lasthandoff: 12/17/2018
 
 実稼動環境で問題が発生する場合は、システム管理者は LCS にサインインして、データベースのコピーをサンド ボックス環境に追加するように要求できます。 データベースのコピーの実行中、システム管理者は開発者に問題について通知することができます。 開発者は、コードの正しいビルドに同期して、実稼働環境に合わせることができます。
 
-1. Microsoft Visual Studio のソース管理エクスプローラーで、同期するブランチのルート ノードを右クリックしてから、**詳細** &gt; **特定のバージョンを取得**を選択します。
+1. Microsoft Visual Studio のソース管理エクスプローラーで、同期するブランチのルート ノードを右クリックしてから、**詳細** &gt; を選択して、**特定のバージョンを取得を選択します**。
 2. ダイアログ ボックスで、**Type=Label** を選択してから省略記号 (**...**) を選択します。
 3. ダイアログ ボックスで**検索**を選択します。 ビルド サーバーからのすべてのビルドがリストに記載されます。
 4. 実稼動環境に現在配置されているビルドを選択し、フル ビルドの実行を選択します。 データベースをコピーすると、システム管理者のみがサンド ボックス データベースにアクセスできます。 システム管理者は、次のタスクを完了する必要があります。
@@ -104,4 +103,3 @@ ms.lasthandoff: 12/17/2018
 4. 問題をデバッグします。
 
 開発者が終了すると、 システム管理者はサンドボックス データベースから devtempuser を削除できます。 このステップにより、開発者はサンドボックス データベースに永続的にアクセスできなくなります。
-

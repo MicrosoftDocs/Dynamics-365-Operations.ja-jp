@@ -1,32 +1,30 @@
 ---
-title: "返品品目の受取の登録"
-description: "着荷の概要フォームまたは登録フォームを使用して、返品品目の受取を登録することができます。"
+title: 返品品目の受取の登録
+description: 着荷の概要フォームまたは登録フォームを使用して、返品品目の受取を登録することができます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSArrivalOverview, InventTransRegister
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2be628d312e623e8ea6d92eb5edce12334190d9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 550b59a64fb0e81a56d6fea921e1b1df20c5f6e6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328082"
 ---
-
-
 # <a name="register-the-receipt-of-returned-items"></a>返品品目の受取の登録 
 
 [!include [banner](../includes/banner.md)]
@@ -113,6 +111,5 @@ ms.lasthandoff: 05/08/2018
 [着荷の概要 (フォーム)](https://technet.microsoft.com/en-us/library/hh227654\(v=ax.60\))
 
   
-
 
 

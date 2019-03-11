@@ -1,13 +1,13 @@
---- 
-title: "目標の作成"
-description: "目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。"
+---
+title: 目標の作成
+description: 目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350714"
 ---
 # <a name="create-a-goal"></a>目標の作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 1. [すべてのワークスペース] > [従業員セルフ サービス] に移動します。
 2. [すべての目標の表示] をクリックします。
@@ -59,5 +59,4 @@ ms.lasthandoff: 09/13/2018
     * チーム メンバーまたはすべての従業員に対して、同じまたは類似した目標を設定する場合が多くあります。     HR の管理者またはマネージャーは、これらの目標に対して目標テンプレートを作成できます。 テンプレートから目標を追加して、その後に時間帯に合わせて変更します。  
     * チーム メンバーまたはすべての従業員に対して、同じまたは類似した複数の目標を設定する場合が多くあります。     HR の管理者またはマネージャーは、1 つ以上の目標テンプレートが含まれた目標のグループを作成できます。 目標のグループから目標を追加して、その後に時間帯に合わせて変更します。  
     * レビューを作成すると、そのレビューに目標を追加できます。 レビューに目標を追加する方法は、タスク ガイドを参照してください。  
-
 

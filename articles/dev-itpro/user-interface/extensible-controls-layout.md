@@ -1,13 +1,13 @@
 ---
-title: "拡張可能なコントロール レイアウトのガイドライン"
-description: "この記事では、拡張可能なコントロールのレイアウトとサイズを指定するときに従うガイドラインについて説明します。"
+title: 拡張可能なコントロール レイアウトのガイドライン
+description: この記事では、拡張可能なコントロールのレイアウトとサイズを指定するときに従うガイドラインについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7d04dd393685d4e4a69cee6a3b4983b1dc7bdeca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 53cc63580550b851f50b3b6bb6358f8764b95c98
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368779"
 ---
-
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 
 [!include [banner](../includes/banner.md)]
@@ -105,7 +104,6 @@ ms.lasthandoff: 04/20/2018
     -   **$dyn.layout.Size.content** では、追加のクラスは存在すべきでなく、手動の高さと幅は要素で特定されたインラインである必要があります。
 
 これらのクラスが予期したとおりに表示されない場合、拘束力のあるハンドラーの使用状況を確認し、このページの注意事項の一覧を読んだことを確認します。
-
 
 
 

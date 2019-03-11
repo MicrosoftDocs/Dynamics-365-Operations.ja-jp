@@ -1,13 +1,13 @@
---- 
-title: "生産フロー バージョンへの既存の活動の追加"
-description: "生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。"
+---
+title: 生産フロー バージョンへの既存の活動の追加
+description: 生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 032855125ccd14fbdc1e1bdb735c92ce70853fb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a74fb34db71ba4b539c1b6ede361329aaeb94920
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313615"
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>生産フロー バージョンへの既存の活動の追加
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 09/29/2017
     * 新規生産フロー バージョンに追加される既存の活動を検索、選択します。  リストは、フローの以前のバージョンに代わるこの生産フローのために作成されたすべての活動を示すことに注意してください。  
 3. [活動] フィールドで値を入力または選択します。
 4. [OK] をクリックします。
-
 

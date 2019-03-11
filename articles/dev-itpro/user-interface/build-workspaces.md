@@ -1,13 +1,13 @@
 ---
-title: "運用ワークスペースの構築"
-description: "このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。"
+title: 運用ワークスペースの構築
+description: このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0e0d3e9b1a8a5c0f8d2a3c40bdcf31f541ca59fa
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a9a61ec21218e50542614ccd2b07c53213907d8b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369861"
 ---
-
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
 [!include [banner](../includes/banner.md)]
@@ -174,7 +173,6 @@ ms.lasthandoff: 04/20/2018
 #### <a name="count-tiles-have-queries-defined"></a>カウント タイルにはクエリが定義されています
 
 これらのフォームは通常複数のカウント タイルを含むため、タイル キャッシュ システムは、ワークスペースのパフォーマンスを向上させるために実装されています。 キャッシュ システムと共に正常に作動するこれらのカウント タイルについては、各タイルにはクエリが定義されている必要があります。 そのクエリは、タイル、またはタイルによって参照されるメニュー項目で定義されます。 この BP チェックの目的は、すべてのカウント タイルについてこれらの 2 つの場所のいずれかにクエリが確実に定義されるようにすることです。
-
 
 
 

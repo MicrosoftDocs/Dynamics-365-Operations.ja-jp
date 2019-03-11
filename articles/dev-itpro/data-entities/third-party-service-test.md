@@ -1,13 +1,13 @@
 ---
-title: "サード パーティ ユーティリティを使用したテスト サービス"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサービスをテストするサードパーティのユーティリティをセットアップする方法について説明します。"
+title: サード パーティ ユーティリティを使用したテスト サービス
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサービスをテストするサード パーティのユーティリティを設定する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
 ms.openlocfilehash: 4bc87f193c4e0deda4399ef7d2afffa0ea4440ae
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368630"
 ---
-
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
 [!include [banner](../includes/banner.md)]
 
-<https://github.com/Microsoft/Dynamics-AX-Integration> において、Microsoft は Microsoft Dynamics 365 for Finance and Operations のサービスを使用するためのサンプル コードを提供しています。 ただし、統合でのその他のエンドポイントは Microsoft スタックを使用しない可能性があるという多くのシナリオがあります。 他のエンドポイントが、たとえば Microsoft が利用できるオープン データ プロトコル (OData) クライアント コードを使用している場合でも、次の操作を実行すると便利です。
+<https://github.com/Microsoft/Dynamics-AX-Integration> で、マイクロソフトは、Microsoft Dynamics 365 for Finance and Operations のサービスを使用するためのサンプル コードを提供します。 ただし、統合でのその他のエンドポイントは Microsoft スタックを使用しない可能性があるという多くのシナリオがあります。 他のエンドポイントが、たとえば Microsoft が利用できるオープン データ プロトコル (OData) クライアント コードを使用している場合でも、次の操作を実行すると便利です。
 
 - インタラクションのメッセージがどのように構築されているかを調べ、分析します。
 - 既知の要求へのサービスの応答をテストします。
@@ -70,9 +69,9 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
     `https://login.microsoftonline.com/:tenant_id/oauth2/token` などの、**tenant\_id** 環境変数を参照する URL パラメーターを使用することができます。
 
-    ![Azure AD トークンを取得](./media/postman6.png)
+    ![Azure AD トークンの取得](./media/postman6.png)
 
-9. **本文**タブで、前に作成した環境変数を参照する要求パラメーターとして、本文要素を追加します。 **一括編集**を選択し、前の表のキーを入力し、コロン (:) を入力してキー名をもう一度入力しますが、二重中かっこで囲みます ({{}})。 行ごとに 1 つの要求パラメーターを入力します。 たとえば、**交付\_タイプ:{{交付\_タイプ}}** を入力します。 次に例を示します。
+9. **本文**タブで、前に作成した環境変数を参照する要求パラメーターとして、本文要素を追加します。 **一括編集** を選択して、上記の表のキーを入力し、コロン (:) を入力してからキーの名前を再入力しますが、二重中かっこ ({{}}) で囲みます。 行ごとに 1 つの要求パラメーターを入力します。 たとえば、**交付\_タイプ:{{交付\_タイプ}}** を入力します。 次に例を示します。
 
     ![本文要素](./media/postman8.png)
 
@@ -87,7 +86,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 11. **保存** を選択し、要求の名前とコレクションを入力して、**保存** を再度選択します。
 12. **送信** を選択して承認要求を行います。 **本文** タブには、その他の応答の詳細と共に、Azure AD トークンが含まれるようになりました。
 
-    ![Azure AD トークン](./media/postman11.png)
+    ![Azure ADトークン](./media/postman11.png)
 
 13. テスト コードのため、トークンは環境変数にあります。 **環境クイック表示** ボタン (目のボタン) を選択すると、トークンが環境変数であることがわかります。
 
@@ -159,4 +158,3 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
     ![結果の検証](./media/soapui8.png)
 
 ここでは、正常に認証されてから、SOAP を介して UserSessionService を照会しています。
-

@@ -1,13 +1,13 @@
 ---
-title: "RunBase クラスの拡張"
-description: "このトピックには、RunBase クラスを拡張できる方法を示した例が徹底的に含まれています。"
+title: RunBase クラスの拡張
+description: このトピックには、RunBase クラスを拡張できる方法を示した例が徹底的に含まれています。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 8e948a60ecfd2e98f258a8603b1e6446a2cb6b95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2a8850211e35950dfad38ff4de8565c811f5ee08
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369087"
 ---
-
 # <a name="extend-the-runbase-class"></a>RunBase クラスの拡張
 
 [!include [banner](../includes/banner.md)]
@@ -160,6 +159,5 @@ final class MySysUserLogCleanup_Extension
     }
 }
 ```
-
 
 

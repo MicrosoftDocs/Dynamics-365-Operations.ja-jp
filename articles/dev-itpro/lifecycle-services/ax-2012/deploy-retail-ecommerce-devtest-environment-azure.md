@@ -1,13 +1,13 @@
 ---
-title: "Azure での Retail E-commerce 開発/テスト環境の配置"
-description: "このトピックでは、Microsoft Azure に小売電子商取引開発環境またはテスト環境を展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。"
+title: Azure での Retail E-commerce 開発/テスト環境の配置
+description: このトピックでは、Microsoft Azure に小売電子商取引開発環境またはテスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: AX 2012
@@ -15,34 +15,33 @@ ms.custom: 13241
 ms.assetid: c69e8d08-b4f8-4660-b19f-53638170b13f
 ms.search.region: Global
 ms.author: aamiral
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5149b8da13b431a307fca8ce6910948290b2a025
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369370"
 ---
-
 # <a name="deploy-retail-e-commerce-devtest-environments-on-azure"></a>Azure での Retail E-commerce 開発/テスト環境の配置
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Azure に小売電子商取引開発環境またはテスト環境を展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。 
+このトピックでは、Microsoft Azure に小売電子商取引開発環境またはテスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 -------------
 
 このトピックの手順を完了する前に、次の条件が満たされていることを確認します。
 
 | カテゴリ       | 前提条件                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
 
-Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースを提供します。 Azure に Dynamics AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
+Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure に AX AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
 
 ## <a name="2-create-a-project"></a>2. プロジェクトの作成
 
@@ -51,9 +50,9 @@ LCS にログインした後、既存のプロジェクトを開くか、また�
 ## <a name="3-connect-the-project-to-your-azure-subscription"></a>3. Azure サブスクリプションにプロジェクトを接続する
 Azure サブスクリプションに LCS プロジェクトを接続します。 これにより、LCS は Dynamics AX 環境をサブスクリプションに展開できます。 Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。
 
-1. LCS プロジェクトで **環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ**領域で**追加**をクリックします。 
+1. LCS プロジェクトで**環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ領域**で**追加**をクリックします。 
    >[!Note]
-   > **Microsoft Azure 設定** オプションは、**クラウド ホスト環境** タイルをクリックしたときにも使用できます。
+   > **Microsoft Azure 設定**オプションは、**クラウド-ホスト環境タイル**をクリックしたときにも使用できます。
 2. Azure への接続を識別する名前を入力します。
 3. Azure サブスクリプション ID を入力します。 サブスクリプション ID を検索する必要がある場合は、次の手順を実行します。
    1.  ブラウザの別のインスタンスを開きます。
@@ -76,7 +75,7 @@ Azure サブスクリプションに LCS プロジェクトを接続します。
 >[!Note]
 > 証明書が期限切れになった場合は、新しいものを取得できます。 そのためには次の作業を行います。
 > 1. プロジェクトの設定の **Azure コネクタ** 領域で接続を選択し、**編集** をクリックします。
-> 2. **Microsoft Azure 設定** パネルが画面の横に表示されます。 **ダウンロード**をクリックして新しい証明書をダウンロードします。
+> 2. **Microsoft Azure 設定**パネルが画面の横に表示されます。 **ダウンロード**をクリックして新しい証明書をダウンロードします。
 > 3. 上の手順の手順 6 ～ 9 を繰り返します。
 
 ## <a name="4-deploy-a-retail-e-commerce-devtest-environment-on-azure"></a>4. Azure での Retail E-commerce 開発/テスト環境の配置
@@ -118,9 +117,9 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
 
 7. ドメインで作成されるサービス アカウントをカスタマイズするには、**サービス アカウントをカスタマイズ** をクリックします。 展開の [詳細設定] オプションを通じてサービス アカウントやサービス アカウントのパスワードを指定することができます。 どちらもが指定されていない場合は、既定の勘定が使用され、ランダムなパスワードが選択されています。 次の機能は、企業のアカウントの命名規則とパスワードの規則を管理する場合に使用します。 アカウントとパスワードのルール:
    - 有効なサービス名は、特殊文字を含まない 20 文字未満である必要があります。
-   - 有効なパスワードは 8 文字以上で、大文字、小文字、数字、および次の文字のうち少なくとも 1 つが含まれます: \[「@」、「!」、「=」、「\*」\] 次のような一般的なパスワードは使用できません: pass@word1
+   - 有効なパスワードは 8 文字以上で、大文字、小文字、数字、および次の文字のうち少なくとも 1 つが含まれます: \['@', '!', '=', '\*'\] 次のような一般的なパスワードは使用できません: pass@word1
 
-8. 使用する AX 2012 R3 のバージョンを選択するには、**サポートされているバージョン** をクリックします。 既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。 CU8 バージョンを使用しない場合は、**Dynamics ERP 2012 R3 RTM** をリストから選択します。
+8. 使用を希望する AX 2012 R3 のバージョンを選択するには、**サポートされているバージョン**をクリックします。 既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。 CU8 バージョンを使用しない場合は、**Dynamics ERP 2012 R3 RTM** をリストから選択します。
 9. 仮想マシン名をカスタマイズするには、**仮想マシン名をカスタマイズ** をクリックします。 一般的な IT 名前付けガイドラインをサポートするために、仮想マシンに名前を付ける機能がほとんどの配置トポロジの詳細設定に用意されています。 名前を定義することに加えて、各仮想マシン タイプに開始インデックスを選択できます。 インデックスは、配置される仮想マシン タイプのインスタンスごとに増加します。 仮想マシン名は 13 文字またはそれ以下にする必要があります。 インデックスはマシン名とハイフン (-) で区切られ、その後に最大 2 桁のインデックスが続きます。 例: ACustomVMName-99。 最初の展開後に、仮想マシンのインスタンスが環境に追加されるとき、配置サービスは、中断した場所で、仮想マシンの名前の増分を開始します。 たとえば、2 で始まるインデックスを持つ 4 つの AOS 仮想マシンを展開する場合、最後の AOS インスタンス名は AOS-6 になります。 もう 2 つ AOS インスタンスを追加する場合は、AOS-7 と AOS 8 になります。 展開内の仮想マシン タイプの 1 つがカスタマイズされている場合は、すべての仮想マシン名をカスタマイズする必要があります。 これは、仮想マシン名が誤って紛失してしまったため、長期的な展開が発生しないようにするためです。
 10. 仮想ネットワークの設定をカスタマイズするには、<strong>仮想ネットワークをカスタマイズする</strong> をクリックします。 情報を入力するには、次の表を使用してください。
     <table>
@@ -163,7 +162,7 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
 
 11. **完了** をクリックします。 **環境の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -171,18 +170,18 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
 15. **展開**をクリックして、環境を展開する準備が整ったことを確認します。 配置には数時間かかる場合があります。 配置が完了すると、**クラウド ホスト環境** ページの **配置** **ステータス** 列に **配置済み** が表示されます。 (これを表示するにはブラウザーを更新する必要があります。) 配置が失敗すると、すぐエラー メッセージが表示される場合があります。 配置プロセスでエラーが後に発生する場合に、エラーの詳細がページの右側の詳細ペインに表示されます。
 
 ## <a name="5-prepare-the-retail-e-commerce-devtest-environment-for-use"></a>5. 使用する Retail E-commerce 開発/テスト環境の配置
-Retail E-commerce 開発/テスト環境が Azure に配置されたので、オンプレミスまたは Azure に存在する Dynamics AX 環境に接続できます。 詳細については、以降のセクションを参照してください。
+小売電子商取引開発環境及びテスト環境が Azure に配置されたので、オンプレミスまたは Azure にある Dynamics AX 環境に接続できます。 詳細については、以降のセクションを参照してください。
 ### <a name="prerequisites"></a>前提条件
 
 以下の手順を実行する前に、次の条件が満たされていることを確認します。
 
-| 前提条件                                                                                                                                                    | 詳細情報                                                                                                                                                                                                                                                                                                            |
+| 前提条件                                                                                                                                                    | 詳細                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。 前述のように、AX 2012 R3 はオンプレミスまたは Azure にインストールできます。 | [Microsoft Dynamics AX のシステム設定](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                             |
-| Dynamics AX にデータをインポートします。                                                                                                                                   | Dynamics AX 環境にサンプル データをインストールする場合は、データ転送テスト ツールを使用してサンプル データをインストールします。 手順については、[Microsoft Dynamics AX 2012 R3 用のテスト データ転送ツール (ベータ版)](test-data-transfer-tool-beta-2012.md) を参照してください。 |
+| Dynamics AX にデータをインポートします。                                                                                                                                   | Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。 手順については、[Microsoft Dynamics AX 2012 R3 用のテスト データ転送ツール (ベータ版)](test-data-transfer-tool-beta-2012.md) を参照してください。 |
 | Async Server を設定およびコンフィギュレーションします。                                                                                                                              | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                               |
 | Real-time Service を設定およびコンフィギュレーションします。                                                                                                                         | [Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                          |
-| Commerce Data Exchange のメタデータを同期します。                                                                                                                       | [小売用スケジューラのパラメーターを入力する](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                              |
+| Commerce Data Exchange のメタデータの同期                                                                                                                       | [小売用スケジューラのパラメーターを入力する](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                              |
 | 新規作成、または既存のオンライン ストア チャネルの更新。                                                                                                       | [オンライン ストアの設定](https://technet.microsoft.com/EN-US/library/jj682095.aspx)                                                                                                                                                                                                                                         |
 
 
@@ -214,9 +213,9 @@ AOS がインストールされているサーバーまたは仮想マシンに�
 |    ドメイン アカウント    |                                                                                             説明                                                                                             |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    SQLServiceUser    |                                                     次のサービスを実行するために使用されるアカウント: SQL Server Analysis Services (MSSQLSERVER)。                                                      |
-| DynamicsInstallUser  |                                                                              Dynamics AX をインストールするために使用するアカウント。                                                                               |
-| ContosoSPServiceUser | 次のサービスを実行するために使用されるアカウント: AppFabric Caching Service、SharePoint Search Host Controller、SharePoint Server Search 15、SharePoint Timer Service、および SharePoint User Code Host。 |
-|  RetailServiceUser   |                                        次のサービスを実行するために使用されるアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。                                        |
+| DynamicsInstallUser  |                                                                              Dynamics AX をインストールするために使用したアカウント。                                                                               |
+| ContosoSPServiceUser | 次のサービスを実行するために使用したアカウント: AppFabric Caching Service、SharePoint Search Host Controller、SharePoint Server Search 15、SharePoint Timer Service、および SharePoint User Code Host。 |
+|  RetailServiceUser   |                                        次のサービスの実行に使用したアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。                                        |
 |     BCProxyUser      |                                                                          ビジネス コネクタ プロキシとして使用されるアカウント。                                                                          |
 
 > [!NOTE]
@@ -230,7 +229,6 @@ AOS がインストールされているサーバーまたは仮想マシンに�
 --------
 
 [オンライン ストア (TechNet)](http://technet.microsoft.com/library/56364854-9730-4afa-8cf7-ae337ce2257a(AX.60).aspx)
-
 
 
 

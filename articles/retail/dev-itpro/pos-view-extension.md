@@ -1,13 +1,13 @@
 ---
-title: "POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加"
-description: "このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。"
+title: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
+description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
 ms.openlocfilehash: c0fbd1dc5bc081a027f4896e055d22311861514d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369057"
 ---
-
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
 [!include [banner](../../includes/banner.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 12/04/2018
 このトピックでは、既存の [販売時点管理 (POS)] ビューを拡張する方法について説明します。 **トランザクション** 画面および **ようこそ** 画面を拡張するには、画面レイアウト デザイナーを使用します。 **顧客の追加/編集** 画面など、他のすべての POS ビューを拡張するには、Retail ソフトウェア開発キット (SDK) を使用します。 このトピックでは、Retail SDK による既存の POS ビューの拡張について説明します。
 
 > [!NOTE]
-> このトピックは、Microsoft Dynamics 365 for Finance and Operations と、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた Microsoft Dynamics 365 for Retail に適用されます。
+> このトピックでは Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムが適用されます。
 
 POS ビューでは、次の拡張ポイントとパターンがサポートされます。
 
@@ -82,7 +81,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 ## <a name="add-a-custom-column-and-an-app-bar-button"></a>カスタム列とアプリ バー ボタンの追加
 
-1. 管理者として Microsoft Visual Studio 2015 を起動します。
+1. Microsoft Visual Studio 2015 を管理者として起動します。
 2. **ModernPOS** ソリューションを **…\\RetailSDK\\POS** から開きます。
 3. **POS.Extensions** プロジェクトで、**SearchExtension** というフォルダーを作成します。
 4. **SearchExtension** フォルダーで、**ViewExtensions** というフォルダーを作成します。
@@ -408,4 +407,3 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     追加したカスタム列が表示されました。
 
 3. 顧客を選択し、新しいアプリケーション バーのボタンを選択します。 選択した顧客に関する詳細を含むダイアログ ボックスが表示されます。
-

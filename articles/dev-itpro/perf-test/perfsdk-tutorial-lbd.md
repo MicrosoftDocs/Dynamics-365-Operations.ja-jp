@@ -1,30 +1,29 @@
 ---
-title: "オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト"
-description: "このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。"
+title: オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
+description: このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
+ms.openlocfilehash: 297820a04b62a031554eb2fdf74d98cb9d5a73ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 929bd214ade5a28bd15bfe239c1ff040cb853b17
-ms.openlocfilehash: a67e2607a2b087052df2b05c0400bfcc2f7bc0ce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369302"
 ---
-
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
 [!include [banner](../includes/banner.md)]
@@ -65,7 +64,7 @@ ms.lasthandoff: 08/09/2018
 ### <a name="prepare-the-development-environment"></a>開発環境の準備
 開発環境でこれらの手順に従います。
 
-1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ** &gt; **システム** &gt; **システムの詳細設定**を選択します。 **TestRoot**環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
+1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ**  &gt; **システム** &gt; **システムの詳細設定**を選択します。 **TestRoot**環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
 
     [![TestRoot 環境変数](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
@@ -104,7 +103,7 @@ ms.lasthandoff: 08/09/2018
     ```
 
 8. Visual Studio で、**PerfSDK** フォルダにある **PerfSDKSample** プロジェクトを開きます。
-9. Visual Studio プロジェクトで、**PerfSDK\\Common\\External\\Selenium** フォルダーの **WebDriver.dll** ファイルへの参照を追加します。
+9. Visual Studio プロジェクトでは **PerfSDK\\Common\\External\\Selenium** フォルダーで **WebDriver.dll** への参照を追加します。
 10. **CloudEnvironment.Config** ファイルを開き、コンテンツを次のテンプレートに置き換えます。
 
     ```xml
@@ -151,7 +150,7 @@ ms.lasthandoff: 08/09/2018
 
 11. **CloudEnvironment.Config** ファイルで、次のキーの値を指定します。 これらの値は、テンプレートの角かっこ内のプレース ホルダーの値を置き換えます。
 
-    - **HostName** – Microsoft Dynamics 365 for Finance and Operations オンプレミス環境にアクセスするために使用される URL を指定します。 URL は、**\[yourD365FOdomain\]/namespaces/AXSF** です。
+    - **ホスト名** – Microsoft Dynamics 365 for Finance and Operations 設置環境へのアクセスに使用する URL を指定します。 URL は、**\[yourD365FOdomain\]/namespaces/AXSF** です。
     - **SoapHostName** –**HostName** に指定したものと同じ URL を指定します。
     - **SelfSigningCertificateThumbprint** – 手順 7 で Windows PowerShell から取得した拇印を指定します。
     - **UserFormat** – Finance and Operations のオンプレミス環境でシステム管理者の役割を持つユーザーの電子メール アドレスを指定します。 ユーザーは、Active Directory フェデレーション サービス (AD FS) ユーザーである必要があります。
@@ -265,7 +264,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
+2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** の **Visual Studio Online** フォルダーに配置します。
 3. **Visual Studio Online** フォルダで **setup.cmd** ファイルの内容を変更し、次のコードと一致するようにします。
 
     ```
@@ -295,14 +294,14 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
         - C:\\PerfSDK\\CloudEnvironment.Config
         - C:\\PerfSDK\\authcert.pfx
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-        - C:\\PerfSDK\\Visual Studio Online\\
+        - C:\\PerfSDK\\Visual Studio オンライン\\
 
         [![フィールドを配置するための追加ファイルおよびディレクトリ](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
         > [!NOTE]
         > PerfSDK フォルダーが異なっている場合があります。
 
-8. **スクリプトの設定とクリーンアップ**タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
+8. **スクリプトの設定とクリーンアップ** タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
 9. **ホスト**タブについて、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
 10. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 
@@ -335,9 +334,9 @@ Initialization method <Test class name>.TestSetup threw exception. System.Invali
 
 Internet Explorer で、次のレジストリ キーを変更することにより、ズーム係数を 100% に変更できます。
 
-- コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\ResetZoomOnStartup = 0
-- コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\ResetZoomOnStartup2 = 0
-- コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\Zoomfactor = 80000
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup = 0
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup2 = 0
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\Zoomfactor = 80000
 
 使用されているローカル コンピューターのバージョンによっては、リモート デスクトップ プロトコル (RDP) セッションを開始する前に、**テキスト、アプリ、その他のアイテムのサイズを変更**を選択する必要があります。 このフィールドは、Windows の**表示設定**で使用できます。 
 
@@ -539,4 +538,3 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### <a name="solution"></a>ソリューション
 
 この問題を解決する修正プログラムが利用可能です。 Microsoft サポート技術情報 (KB) 番号は 4095640 です。
-

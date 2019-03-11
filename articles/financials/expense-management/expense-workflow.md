@@ -1,13 +1,13 @@
 ---
-title: "経費ワークフロー"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations でワークフロー システムを使用する方法を説明し、経費管理で経費精算書の確認プロセスを設定します。"
+title: 経費ワークフロー
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations でワークフロー システムを使用する方法を説明し、経費管理で経費精算書の確認プロセスを設定します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowtableListPageRnr
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 037a6ae00b7d559f79860901f0cb2ad6ddddd7aa
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310119"
 ---
-
 # <a name="expense-workflow"></a>経費ワークフロー
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations でワークフロー システムを使用でき、経費管理で経費精算書の確認プロセスを設定します。 以下の条件を使用するワークフローを設定して、経費精算書を誰が承認するかを決定できます。
+Microsoft Dynamics 365 for Finance and Operations のワークフロー システムでは、経費管理で経費精算書の確認プロセスを設定できます。 以下の条件を使用するワークフローを設定して、経費精算書を誰が承認するかを決定できます。
 
 - 従業員の報告階層と定義済みの承認制限
 - 中間承認者および最終承認者をサポートする複数レベルの承認
@@ -58,4 +57,3 @@ Microsoft Dynamics 365 for Finance and Operations でワークフロー シス�
 これらの条件を確認したら、経費報告書は転記されます。
 
 経費精算書を転記すると、経費精算書の支払が承認され、従業員に払い戻しが行われます。
-

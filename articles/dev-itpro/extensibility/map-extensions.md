@@ -1,35 +1,34 @@
 ---
-title: "テーブル マップ拡張"
-description: "テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。"
+title: テーブル マップ拡張
+description: テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
+ms.openlocfilehash: eda53f7df22f1aa2bdfcfee6d0dd991d5f7f8044
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 89c22a4cbfa7001684ec87402a7d567e9e2426f2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369597"
 ---
-
 # <a name="table-map-extension"></a>テーブル マップ拡張
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 for Finance and Operations Enterprise edition 7.3 およびそれ以降に適用されます。
+このトピックは、Dynamics 365 for Finance and Operations, Enterprise edition 7.3 およびそれ以降に適用されます。
 
 テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。 このトピックでは、テーブルのマップを拡張するためのモデルが必要な理由を説明します。
 
@@ -64,5 +63,4 @@ ms.lasthandoff: 04/20/2018
 ![MapExtensionsProblem](media/MapExtensions3.png)
 
 コンパイラがテーブル マップのすべてのフィールドとメソッドを、テーブル マップを実装するすべてのテーブルにマップする必要がある場合でも、競合は解決されません。 マップされた新しいフィールドまたは実装された新しいメソッドがないテーブルは、追加されたフィールド/メソッドを含むモデルが適用されるときにコンパイルするため、ランタイム エラーを受け取る代わりに、フィールドまたはメソッドを追加することで重大な変更をクリアします。 テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。
-
 

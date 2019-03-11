@@ -1,13 +1,13 @@
---- 
-title: "誰かの代わりに製品を注文するためのアクセス許可の設定"
-description: "この手順では、他の作業者に代わって購買要求を作成するためのアクセス許可を作業者に付与する方法を示します。"
+---
+title: 誰かの代わりに製品を注文するためのアクセス許可の設定
+description: この手順では、他の作業者に代わって購買要求を作成するためのアクセス許可を作業者に付与する方法を示します。
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 35688d191cef06cc15251a6e10a2e8c9afb0e08b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9e003f953c05facd5516e2bfa6d1c83ba6381c15
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314811"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>誰かの代わりに製品を注文するためのアクセス許可の設定
 
@@ -47,5 +47,4 @@ ms.lasthandoff: 09/29/2017
 2. [クイック フィルター] を使用して、依頼者としてちょうど追加したばかりの作業者を検索します。
 3. 依頼者を選択します。
     * 作成者の一覧は、左ウィンドウで選択された要求者に代わって品目を注文するアクセス許可があるユーザーを表示します。   ここで追加の作成者を追加できます。   このビューは、そのユーザーの主要な法人および作業単位ではない場合の、法人および作業単位内で依頼人のアクセス許可を付与することができます。  
-
 

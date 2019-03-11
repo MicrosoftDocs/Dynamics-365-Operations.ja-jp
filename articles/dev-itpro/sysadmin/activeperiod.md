@@ -1,13 +1,13 @@
 ---
-title: "有効なバッチ期間"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations での有効なバッチ期間の設定と操作に関する情報を提供します。"
+title: 有効なバッチ期間
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の有効なバッチ期間のセットアップおよび作業に関する情報を説明します。
 author: hasaid
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 21
-ms.translationtype: HT
-ms.sourcegitcommit: f3e3a22dbc343db1485190402371859861e46d1c
 ms.openlocfilehash: 03ae30cb14770a7f930dbb72cbd77f27b7f538f1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369179"
 ---
-
 # <a name="active-batch-periods"></a>有効なバッチ期間
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ ms.lasthandoff: 10/26/2018
 
 ![有効期間の割り当て](./media/assign-active-period.png)
  
-

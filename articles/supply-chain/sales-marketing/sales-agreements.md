@@ -1,13 +1,13 @@
 ---
-title: "販売契約書"
-description: "このトピックでは、販売契約書について説明します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。"
+title: 販売契約書
+description: このトピックでは、販売契約書について説明します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309521"
 ---
-
 # <a name="sales-agreements"></a>販売契約書
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ ms.lasthandoff: 05/08/2018
 | 件数                                                          | **最大値の適用**チェック ボックスがオンになっている販売契約明細行で指定された数量を超える数量を指定した場合、次のように変更した数量の保存を求めるダイアログ ボックスが表示されます。 販売契約書明細行へのリンクを削除して価格を再計算するには、**はい** をクリックします。 価格を再計算せずに販売契約書明細行へのリンクを削除するには、**いいえ** をクリックします。                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>販売契約書から注文した品目の返品
-顧客が販売契約書に基づいて注文した製品を返品するとき、Microsoft Dynamics 365 for Finance and Operations は、数量または金額の変更を反映するために関連する販売契約書の確約を検索して自動的に更新することができます。 販売契約書にリンクされている元の販売注文に基づいて返品注文を作成することで、販売契約書の確約、販売注文明細行、および返品注文の請求書の間の関係を設定できます。  
+顧客が販売契約書に基づいて注文された製品を返品するとき、Microsoft Dynamics 365 for Finance and Operations は、数量または金額の変更を反映するために関連する販売契約書の確約を検索して自動的に更新することができます。 販売契約書にリンクされている元の販売注文に基づいて返品注文を作成することで、販売契約書の確約、販売注文明細行、および返品注文の請求書の間の関係を設定できます。  
 
 返品品目の数量を販売契約書の確約から差し引かない場合は、**返品注文**ページの**リンクの解除**コントロールを使用して、返品注文と販売契約書の確約との間のリンクを削除することができます。 リンクを後で再構築する必要がある場合、**リンクの作成**をクリックします。  
 
@@ -111,7 +110,6 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>販売契約の財務分析コード
 財務分析コードをドキュメントのヘッダーまたは販売契約の個別の明細行にコピーできます。 契約書ヘッダーまたは契約項目の分析コードはいつでも変更できます。 この場合、分析コードはリリース注文のリリース ヘッダーまたはリリース行に自動的にコピーされます。
-
 
 
 

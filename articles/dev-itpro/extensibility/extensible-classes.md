@@ -1,30 +1,29 @@
 ---
-title: "拡張可能クラスの書き込み"
-description: "このトピックでは、拡張可能クラスを書き込む方法について説明します。"
+title: 拡張可能クラスの書き込み
+description: このトピックでは、拡張可能クラスを書き込む方法について説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: Smitha Nataraj, Lars-Bo
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: 5ea198d50a34a89828277f924848a7f869e57555
 ms.openlocfilehash: 312e6af1f510b96269b1d19f61e08530946ea8e6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/06/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368624"
 ---
-
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 
 [!include [banner](../includes/banner.md)]
@@ -92,8 +91,7 @@ ms.lasthandoff: 09/06/2018
 クラス階層構造の詳細については、次のブログ記事を参照してください。
 
 + [SysExtension フレームワーク – 問題発生時](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
-+ [Dynamics 365 for Finance and Operations での拡張ミッドセットの取り込み #2 – SysExtension フレームワーク](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
++ [Dynamics 365 for Finance and Operations への拡張機能のご要望の採用 #2 - SysExtension フレームワーク](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 ## <a name="deprecation"></a>廃止
 クラスまたはパブリックまたは保護メソッドが不要になった場合、必ずまず警告を使用し、メソッドが廃止されたことをユーザーに通知します。 次に、すべてのユーザーは、変更または新しい API を取り込むことができ、メソッドを廃止できます。 クラスおよびメソッドの廃止 (または、それ以外の場合はクラス メンバーの削除) は、大きな変更点です。 詳細については、[重大な変更](breaking-changes.md)を参照してください。
-

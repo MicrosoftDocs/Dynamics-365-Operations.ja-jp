@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) デュアル ディスプレイ ビューの拡張"
-description: "このトピックでは、ユーザー情報が表示されるように、POS デュアル ディスプレイ ビューを拡張する方法について説明します。"
+title: 販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
+description: このトピックでは、ユーザー情報が表示されるように、POS デュアル ディスプレイ ビューを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Retail, Operations
@@ -16,19 +16,18 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: cc8c73d0f1f00eb1efb3084811ccd47aefc3a16e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369134"
 ---
-
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ユーザー情報が表示されるように、販売時点管理 (POS) デュアル ディスプレイ ビューを拡張する方法について説明します。 このトピックは、Microsoft Dynamics 365 for Finance and Operations 7.2 またはMicrosoft Dynamics 365 for Retail 7.2 with KB 4091080、およびそれ以降のバージョンに適用可能です。
+このトピックでは、ユーザー情報が表示されるように、販売時点管理 (POS) デュアル ディスプレイ ビューを拡張する方法について説明します。 このトピックでは、Microsoft Dynamics 365 for Finance and Operations 7.2 または Microsoft Dynamics 365 for Retail 7.2 および KB 4091080 とそれ以降のバージョンが適用されます。
 
 POS デュアル ディスプレイ ビューを拡張するには、カスタム コントロールを追加します。 カスタム コントロールでは、カスタム情報を表示する画像、POS データ リスト、ラベルなどを追加できます。
 
@@ -63,7 +62,7 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
 
 ## <a name="add-a-new-custom-control-for-extension-of-the-pos-dual-display-view"></a>POS デュアル ディスプレイ ビューの拡張子の新しいカスタム コントロールを追加
 
-1. 管理者モードで Microsoft Visual Studio 2015 を起動します。
+1. Microsoft Visual Studio 2015 を管理者モードで起動します。
 2. **ModernPOS** ソリューションを **…\\RetailSDK\\POS** から開きます。
 3. **POS.Extensions** プロジェクトで、**DualDisplayExtension** というフォルダーを作成します。
 4. **DualDisplayExtension** フォルダーで、**CustomControl** というフォルダーを作成します。
@@ -622,4 +621,3 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
 3. 品目をトランザクションに追加します。 たとえば、品目番号 **0005** を追加します。
 4. 顧客をトランザクションへ追加します。 たとえば、**Karen Berg** を追加します。
 5. デュアル ディスプレイには、買い物カゴ、合計、従業員、および顧客の詳細が表示される必要があります。
-

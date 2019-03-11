@@ -1,30 +1,29 @@
 ---
-title: "ビルド出力からテスト パッケージを除外"
-description: "このトピックでは、自動ビルドプロセスが生成するビルド出力で、特定のパッケージが展開可能パッケージに含まれないようにする方法について説明します。"
+title: ビルド出力からテスト パッケージを除外
+description: このトピックでは、自動ビルドプロセスが生成するビルド出力で、特定のパッケージが展開可能パッケージに含まれないようにする方法について説明します。
 author: jorisdg
 manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 26731
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 237f8771170a863ca20d713e83caf0921d2a386d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369414"
 ---
-
 # <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 09/17/2018
 
 この新機能は、ビルド プロセスにおけるパッケージ作成ステップの新しいオプション パラメーターを公開します。 このパラメーターはビルド変数で管理されるため、簡単に調整できます。
 
-1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの**ビルド**にある**すべての定義**タブでビルド定義を検索します。 省略記号 (...)、**編集**の順にクリックします。
+1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの**ビルド**にある**すべての定義タブ**でビルド定義を検索します。 省略記号 (...)、**編集**の順にクリックします。
 
     ![ビルド定義を編集](media/builddef_edit.png)
 
@@ -64,7 +63,7 @@ ms.lasthandoff: 09/17/2018
 1. **変数**タブで、ページの下部にある **+ 追加**をクリックします。
 1. **名前**列に、**PackagingExclusions** と入力します。 最後の列で、**キュー時に設定可能**チェック ボックスをオンにします。
 1. **タスク**タブで、**生成パッケージ**タスクを検索します。 クリックして選択します。
-1. ページの右側で、**引数**パラメーターを見つけます。 テキスト ボックスをクリックし、End キーを押すか、テキスト ボックスの最後までスクロールします。 新しいビルド定義には、前に定義した **PackagingExclusions** 変数を渡す新しい引数があります。 ただし、既存のビルド定義については、スペースを追加し、さらにパラメーターの末尾に次のテキストを追加します: **-ExclusionList $(PackagingExclusions)**
+1. ページの右側で、**引数**パラメーターを見つけます。 テキスト ボックスをクリックし、End キーを押すか、テキスト ボックスの最後までスクロールします。 新しいビルド定義には、前に定義した **PackagingExclusions** 変数を渡す新しい引数があります。 ただし、既存のビルド定義については、スペースを追加し、さらにパラメーターの末尾に次のテキストを追加します: **-ExclusionList "$(PackagingExclusions)"**
 
     **引数** テキスト ボックスは次のようになります。
 
@@ -73,4 +72,3 @@ ms.lasthandoff: 09/17/2018
 1. **保存** をクリックします。
 
 説明の通りに、新しいフィーチャーを使用することができるようになりました。
-

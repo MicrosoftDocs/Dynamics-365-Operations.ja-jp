@@ -1,13 +1,13 @@
 ---
-title: "学習 Power BI コンテンツ"
-description: "このトピックでは、学習 Power BI コンテンツについて説明します。"
+title: 学習 Power BI コンテンツ
+description: このトピックでは、学習 Power BI コンテンツについて説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,39 +15,38 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321458"
 ---
-
 # <a name="learning-power-bi-content"></a>学習 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、[**学習**] Microsoft Power BI コンテンツについて説明します。
+このトピックでは、**学習** Microsoft Power BI コンテンツについて説明します。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 
-[**学習**] Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
+**学習** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート                 | コンテンツ |
 |-----------------------|----------|
 | 学習の概要     | 他のレポートの集計 |
-| コースの分析       | 場所による登録、ステータスによる出席者、コース、会社ごとのタイプによるコース、およびジョブによるコースの出席 |
+| コースの分析       | 場所による登録、ステータスによる出席者、コース、会社ごとのタイプによるコース、およびジョブによるコースの出席 |
 | 登録分析 | 登録リスト |
 | コースのタイプ          | スキル別コース タイプ |
 | 講師分析   | 講師に対してコースの比率、講師の数、講師によるコース、講師あたりのコース、および講師によるコース議題 |
 | 提供されているコース       | コースの一覧 |
 | コースのデザイン        | コースの議題 |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-次のデータを使用して、[**学習**] Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
+次のデータを使用して、**学習** Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
 
 | エンティティ           | コンテンツ                                                         | 他のエンティティとの関係 |
 |------------------|------------------------------------------------------------------|-----------------------------------|
@@ -64,4 +63,3 @@ ms.lasthandoff: 04/13/2018
 | 配置         | 職位、タイトル、およびフルタイム相当額 (FTE)                  | コース議題、コース参加者 |
 | 従業員名    | 名、姓、フルネーム                             | コース出席者 |
 | 従業員の肩書き   | 役職と勤続日数                                         | コース出席者 |
-

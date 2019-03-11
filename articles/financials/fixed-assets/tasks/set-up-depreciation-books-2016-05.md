@@ -1,13 +1,13 @@
---- 
-title: "資産減価償却簿の設定 (2016 年 5 月)"
-description: "このタスク ガイドでは、新しい減価償却簿が作成さし、固定資産グループに関連付けます。"
+---
+title: 資産減価償却簿の設定 (2016 年 5 月)
+description: このタスク ガイドでは、新しい減価償却簿が作成さし、固定資産グループに関連付けます。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1fd53ea1dff9b116d19c525c5d6967ece0993b6f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355567"
 ---
 # <a name="set-up-depreciation-books-may-2016"></a>資産減価償却簿の設定 (2016 年 5 月)
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 10/16/2018
 5. [減価償却方法] フィールドで、オプションを選択します。
 6. [耐用年数] フィールドに数値を入力します。
     * 耐用年数を設定した後に減価償却期間のフィールド値が計算されます。  
-
 

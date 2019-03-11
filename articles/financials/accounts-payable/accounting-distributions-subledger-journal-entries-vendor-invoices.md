@@ -1,13 +1,13 @@
 ---
-title: "仕入先請求書の勘定配布と補助元帳仕訳"
-description: "勘定配布は、仕入先請求書における経費、税金、または手数料などの計上方法など、金額をどのように計上するかを定義します。 仕入先請求書を仕訳入力するときに計上しなければならない金額にはいずれも一つ以上の勘定配布があります。"
+title: 仕入先請求書の勘定配布と補助元帳仕訳
+description: 勘定配布は、仕入先請求書における経費、税金、または手数料などの計上方法など、金額をどのように計上するかを定義します。 仕入先請求書を仕訳入力するときに計上しなければならない金額にはいずれも一つ以上の勘定配布があります。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f59eb2f61bc6bc887461683408b57c4672ce5bf1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 00550b4e3fa52108533c516d7ae1de0454c065ec
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351358"
 ---
-
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>仕入先請求書の勘定配布と補助元帳仕訳
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 11/03/2017
 -------------------------
 
 [仕入先請求書] ページでは、次のボタンで、仕入先請求書の各金額の勘定配布を表示したり、場合によっては変更できます。
--   [金額の配分] – 税または請求金額などの明細行と子行の勘定配布を表示または変更します。 売上税トランザクション ページまたは諸費用トランザクション ページから子明細行の勘定配布を直接表示または変更することもできます。
+-   **金額の配分** – 税または請求金額などの明細行と子行の勘定配布を表示または変更します。 売上税トランザクション ページまたは諸費用トランザクション ページから子明細行の勘定配布を直接表示または変更することもできます。
     -   手数料や通貨の丸め金額など、仕入先請求書のヘッダー金額を変更します。
     -   仕入先請求書明細行金額を変更します。
 -   **配分の表示** – すべての伝票の明細行の勘定配布を表示します。 このビューで勘定配布を変更できません。
@@ -246,7 +245,6 @@ ms.lasthandoff: 11/03/2017
 仕入先請求書を転記する前に、請求書が正しい勘定に転記されていることを確認するため、借方と貸方がある請求書の全勘定項目を表示できます。 全勘定項目の表示は補助元帳と呼ばれます。 
 
 仕入先請求書に仕訳入力する前に、プレビューした結果、補助元帳仕訳が正しくない場合、補助元帳仕訳は変更できません。 代わりに、勘定配布または転記プロファイルを変更する必要があります。 勘定配布は、勘定項目の借方または貸方のいずれか一方を定義するために使用されます。 相殺補助元帳仕訳勘定項目は、仕入先勘定または税などの転記プロファイルから作成します。
-
 
 
 
