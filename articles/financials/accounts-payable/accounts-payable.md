@@ -3,7 +3,7 @@ title: 買掛金勘定ホーム ページ
 description: このトピックでは、買掛金勘定の概要を示します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302531"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403288"
 ---
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
@@ -123,15 +123,17 @@ ms.locfileid: "302531"
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158)を参照してください。 
 
 #### <a name="blogs"></a>ブログ
 
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)を参照してください。
-
-[Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、買掛金勘定に関する多くの投稿があります。 これらの投稿の一部は買掛金勘定の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
 [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+
+#### <a name="community-blogs"></a>コミュニティのブログ
+
+[Dynamics 365 for Finance and Operations で買掛金を管理する方法](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>タスク ガイド
 Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
