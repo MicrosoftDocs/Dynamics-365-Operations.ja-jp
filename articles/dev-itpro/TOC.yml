@@ -46,6 +46,10 @@ items:
       href: dev-tools/development-tools-overview.md
     - name: 開発ツールのチュートリアル
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: AppChecker に対する BaseX のインストール
+        href: dev-tools/install-basex.md
     - name: アプリケーション エクスプローラー
       href: dev-tools/application-explorer.md
     - name: プロジェクトのビルドおよびデバッグ
@@ -264,6 +268,8 @@ items:
         href: extensibility/extensibility-changes-812.md
       - name: 拡張機能の変更 (バージョン 8.1.3)
         href: extensibility/extensibility-changes-813.md
+      - name: 拡張機能の変更 (バージョン 10.0)
+        href: extensibility/extensibility-changes-10.md
     - name: 基本
       items:
       - name: 侵入的なカスタマイズ
@@ -887,6 +893,7 @@ items:
   - name: デモ環境の配置
     href: deployment/deploy-demo-environment.md
   - name: クラウド配置
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: セルフサービス配置
       href: deployment/infrastructure-stack.md
@@ -1071,12 +1078,14 @@ items:
       href: migration-upgrade/patch-reporting-service-environment.md
     - name: Visual Studio 開発ツールの更新
       href: dev-tools/update-development-tools.md
-  - name: 減価償却
+  - name: 廃止
     items:
-    - name: 非推奨 API
-      href: migration-upgrade/deprecated-apis.md
-    - name: 非推奨の機能
+    - name: 削除済みまたは非推奨の機能
       href: migration-upgrade/deprecated-features.md
+    - name: 方法とメタデータの要素の廃止
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: 非推奨 API (2017 年 6 月)
+      href: migration-upgrade/deprecated-apis.md
 - name: システム管理
   href: sysadmin/system-administration-home-page.md
   items:
@@ -1122,6 +1131,8 @@ items:
       href: sysadmin/activeperiod.md
     - name: バッチ マネージャーのセキュリティ ロール
       href: sysadmin/runby.md
+    - name: SQL インデックスの最適化を処理するためのバッチ ジョブ
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: 最適化アドバイザー
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1200,18 +1211,30 @@ items:
       href: lifecycle-services/use-translation-service-ua.md
     - name: 翻訳メモリ ファイル
       href: lifecycle-services/use-translation-service-tm.md
-- name: データベース管理
+- name: データベース移動操作
   items:
-  - name: Azure SQL Database から SQL Server 環境へのデータベースのコピー
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: SQL Server から Azure SQL Database の実稼働環境へのデータベースのコピー
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: 非実稼働環境でのデータベースの復元
-    href: database/request-point-in-time-restore.md
-  - name: 後で復元するデータベースのコピーのエクスポート
-    href: database/copy-operations-database.md
-  - name: サンドボックス データベース更新の要求
-    href: database/database-refresh.md
+  - name: 概要
+    href: database/dbmovement-operations.md
+  - name: クイック スタート ガイド
+    items:
+    - name: データベースの更新
+      href: database/database-refresh.md
+    - name: データベースのエクスポート
+      href: database/export-database.md
+    - name: データベースのインポート
+      href: database/import-database.md
+    - name: データベース ポイントインタイム復元
+      href: database/database-point-in-time-restore.md
+  - name: チュートリアル
+    items:
+    - name: トレーニング用の更新
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: デバッグおよび診断
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: ゴールデン コンフィギュレーション プロモーション
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: 破壊試験
+      href: database/dbmovement-scenario-destructivetests.md
 - name: サポート
   items:
   - name: Finance and Operations および Lifecycle Services のサポートの入手
@@ -1228,9 +1251,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Finance and Operations サポート エクスペリエンスの管理
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: 9baabd73eb9a6e0c33b41bc30a1ba0788a858ce9
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373326"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773805"
