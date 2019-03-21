@@ -1,14 +1,13 @@
 ---
-title: データベース移動操作
-description: このトピックでは、Lifecycle Services のデータベース移動機能の一部として使用可能な操作について説明します。
+title: データベース移動操作ホーム ページ
+description: このトピックでは、Lifecycle Services のデータベースの移動機能の使用可能なクイック スタート ガイドおよびチュートリアルへのリンクを示します。
 author: laneswenka
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -16,49 +15,34 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 103674f8eefce840e3c6064d4b922b1ae69d4012
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fe58e65201148702955f9c276dbdb08a4c913ec6
+ms.sourcegitcommit: 313e13afe17be45a53ae71bfee20ccb616fca62b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369150"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380281"
 ---
-# <a name="database-movement-operations"></a><span data-ttu-id="15321-103">データベース移動操作</span><span class="sxs-lookup"><span data-stu-id="15321-103">Database Movement operations</span></span>
+# <a name="database-movement-operations-home-page"></a><span data-ttu-id="d0b5d-103">データベース移動操作ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="d0b5d-103">Database movement operations home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/private-preview-banner.md)]
+<span data-ttu-id="d0b5d-104">データベース移動操作は、データ アプリケーション ライフ サイクル管理 (*DataALM* とも呼ばれます) の一部として使用できる一連のセルフ サービスのアクションです。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-104">Database movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).</span></span>  <span data-ttu-id="d0b5d-105">これらのアクションは、ゴールデン コンフィギュレーション プロモーション、デバッグ/診断、破壊試験、トレーニング目的での全般的な更新などの一般的な実装シナリオで構造化されたプロセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-105">These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging/diagnostics, destructive testing, and general refresh for training purposes.</span></span>
 
-<span data-ttu-id="15321-104">このトピックでは、Lifecycle Services (LCS) のデータベース移動機能の一部として使用可能な操作について説明します。</span><span class="sxs-lookup"><span data-stu-id="15321-104">This topic describes the operations that are available as part of the Database Movement features in Lifecycle Services (LCS).</span></span>  
+<span data-ttu-id="d0b5d-106">このトピックでは、データベース移動操作を使用して、更新、エクスポート、インポート、およびさまざまなタイプのポイントインタイム復元を実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-106">In this topic, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.</span></span>
 
-## <a name="sandbox-refresh"></a><span data-ttu-id="15321-105">サンドボックスの更新</span><span class="sxs-lookup"><span data-stu-id="15321-105">Sandbox refresh</span></span>
-<span data-ttu-id="15321-106">実稼働環境をサンドボックス環境に、またはサンドボックス環境を別のサンドボックス環境に更新するときは、ターゲット環境にコピーされない特定のデータベース要素があります。</span><span class="sxs-lookup"><span data-stu-id="15321-106">When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.</span></span>  <span data-ttu-id="15321-107">これらの要素として次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="15321-107">These elements include:</span></span>
-* <span data-ttu-id="15321-108">LogisticsElectronicAddress テーブル内の電子メール アドレス。</span><span class="sxs-lookup"><span data-stu-id="15321-108">Email addresses in the LogisticsElectronicAddress table.</span></span>
-* <span data-ttu-id="15321-109">BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルのバッチ ジョブ履歴。</span><span class="sxs-lookup"><span data-stu-id="15321-109">Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.</span></span>
-* <span data-ttu-id="15321-110">SysEmailSMTPPassword テーブルの SMTP パスワード。</span><span class="sxs-lookup"><span data-stu-id="15321-110">SMTP password in the SysEmailSMTPPassword table.</span></span>
-* <span data-ttu-id="15321-111">SysEmailParameters テーブルの SMTP 中継サーバー。</span><span class="sxs-lookup"><span data-stu-id="15321-111">SMTP Relay server in the SysEmailParameters table.</span></span>
-* <span data-ttu-id="15321-112">PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。</span><span class="sxs-lookup"><span data-stu-id="15321-112">Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.</span></span>
-* <span data-ttu-id="15321-113">SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。</span><span class="sxs-lookup"><span data-stu-id="15321-113">Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.</span></span>
-* <span data-ttu-id="15321-114">DocuValue テーブル内のドキュメント添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="15321-114">Document attachments in the DocuValue table.</span></span>
-* <span data-ttu-id="15321-115">管理者を除くすべてのユーザーが無効になります。</span><span class="sxs-lookup"><span data-stu-id="15321-115">All users except for the administrator are disabled.</span></span>
-* <span data-ttu-id="15321-116">すべてのバッチ ジョブは、[保留] 状態に設定されます。</span><span class="sxs-lookup"><span data-stu-id="15321-116">All batch jobs are set to Withhold status.</span></span>
+## <a name="database-movement-quick-start-guides"></a><span data-ttu-id="d0b5d-107">データベース移動クイック スタート ガイド</span><span class="sxs-lookup"><span data-stu-id="d0b5d-107">Database movement quick start guides</span></span>
+<span data-ttu-id="d0b5d-108">標準またはプレミア受け入れテスト環境で個々の操作を実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-108">Learn how to perform the individual operations on your Standard or Premier Acceptance Test environments:</span></span>
+ * [<span data-ttu-id="d0b5d-109">データベースの更新</span><span class="sxs-lookup"><span data-stu-id="d0b5d-109">Refresh database</span></span>](database-refresh.md)
+ * [<span data-ttu-id="d0b5d-110">データベースのエクスポート</span><span class="sxs-lookup"><span data-stu-id="d0b5d-110">Export a database</span></span>](export-database.md)
+ * [<span data-ttu-id="d0b5d-111">データベースのインポート</span><span class="sxs-lookup"><span data-stu-id="d0b5d-111">Import a database</span></span>](import-database.md)
+ * [<span data-ttu-id="d0b5d-112">データベース ポイントインタイム復元 (PITR)</span><span class="sxs-lookup"><span data-stu-id="d0b5d-112">Database point-in-time restore (PITR)</span></span>](database-point-in-time-restore.md)
 
-## <a name="import"></a><span data-ttu-id="15321-117">インポート元</span><span class="sxs-lookup"><span data-stu-id="15321-117">Import</span></span>
-<span data-ttu-id="15321-118">データベース バックアップをサンドボックス環境にインポートするときは、特定のアクティビティを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="15321-118">When importing a database backup in to a sandbox environment, there are certain activities which must be performed.</span></span>  <span data-ttu-id="15321-119">コピーされるフィールドは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="15321-119">These include:</span></span>
-* <span data-ttu-id="15321-120">要件に従って、電子メール機能が正しく再設定または無効化されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="15321-120">Ensure email capabilities are properly reconfigured or disabled, per your requirements.</span></span>
-* <span data-ttu-id="15321-121">AOS サーバーが必要なバッチ グループに追加されます。</span><span class="sxs-lookup"><span data-stu-id="15321-121">AOS servers are added back to required batch groups.</span></span>
-* <span data-ttu-id="15321-122">システム ヘルプとタスク ガイドに再接続されます。</span><span class="sxs-lookup"><span data-stu-id="15321-122">System Help and Task guides are reconnected.</span></span>
-* <span data-ttu-id="15321-123">バッチ ジョブは、[待機中] 状態に設定されます。</span><span class="sxs-lookup"><span data-stu-id="15321-123">Batch jobs are set to Waiting status.</span></span>
-* <span data-ttu-id="15321-124">ユーザーは再度有効になります。</span><span class="sxs-lookup"><span data-stu-id="15321-124">Users are re-enabled.</span></span>
-
-## <a name="export"></a><span data-ttu-id="15321-125">輸出</span><span class="sxs-lookup"><span data-stu-id="15321-125">Export</span></span>
-<span data-ttu-id="15321-126">環境からデータベース バックアップをエクスポートするときは、バックアップ ファイルにエクスポートされない特定のデータベース要素があります。</span><span class="sxs-lookup"><span data-stu-id="15321-126">When exporting a database backup from an environment, there are certain elements of the database that are not exported in the backup file.</span></span>  <span data-ttu-id="15321-127">これらの要素として次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="15321-127">These elements include:</span></span>
-* <span data-ttu-id="15321-128">LogisticsElectronicAddress テーブル内の電子メール アドレス。</span><span class="sxs-lookup"><span data-stu-id="15321-128">Email addresses in the LogisticsElectronicAddress table.</span></span>
-* <span data-ttu-id="15321-129">BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルのバッチ ジョブ履歴。</span><span class="sxs-lookup"><span data-stu-id="15321-129">Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.</span></span>
-* <span data-ttu-id="15321-130">SysEmailSMTPPassword テーブルの SMTP パスワード。</span><span class="sxs-lookup"><span data-stu-id="15321-130">SMTP password in the SysEmailSMTPPassword table.</span></span>
-* <span data-ttu-id="15321-131">SysEmailParameters テーブルの SMTP 中継サーバー。</span><span class="sxs-lookup"><span data-stu-id="15321-131">SMTP Relay server in the SysEmailParameters table.</span></span>
-* <span data-ttu-id="15321-132">PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。</span><span class="sxs-lookup"><span data-stu-id="15321-132">Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.</span></span>
-* <span data-ttu-id="15321-133">SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。</span><span class="sxs-lookup"><span data-stu-id="15321-133">Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.</span></span>
-* <span data-ttu-id="15321-134">DocuValue テーブル内のドキュメント添付ファイル。</span><span class="sxs-lookup"><span data-stu-id="15321-134">Document attachments in the DocuValue table.</span></span>
-* <span data-ttu-id="15321-135">管理者を除くすべてのユーザーが無効になります。</span><span class="sxs-lookup"><span data-stu-id="15321-135">All users except for the administrator are disabled.</span></span>
-* <span data-ttu-id="15321-136">すべてのバッチ ジョブは、[保留] 状態に設定されます。</span><span class="sxs-lookup"><span data-stu-id="15321-136">All batch jobs are set to Withhold status.</span></span>
+ ## <a name="step-by-step-tutorials"></a><span data-ttu-id="d0b5d-113">ステップバイステップ チュートリアル</span><span class="sxs-lookup"><span data-stu-id="d0b5d-113">Step-by-step tutorials</span></span>
+ <span data-ttu-id="d0b5d-114">お客様に合わせて DataALM を使用して実装の一般的なシナリオを達成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-114">Learn how to achieve common implementation scenarios using DataALM to your advantage:</span></span>
+ * [<span data-ttu-id="d0b5d-115">トレーニング用の更新</span><span class="sxs-lookup"><span data-stu-id="d0b5d-115">Refresh for training purposes</span></span>](dbmovement-scenario-general-refresh.md)
+ * [<span data-ttu-id="d0b5d-116">デバッグおよび診断</span><span class="sxs-lookup"><span data-stu-id="d0b5d-116">Debugging and diagnostics</span></span>](dbmovement-scenario-debugdiag.md)
+ * [<span data-ttu-id="d0b5d-117">ゴールデン コンフィギュレーション プロモーション</span><span class="sxs-lookup"><span data-stu-id="d0b5d-117">Golden configuration promotion</span></span>](dbmovement-scenario-goldenconfig.md)
+ * [<span data-ttu-id="d0b5d-118">破壊試験</span><span class="sxs-lookup"><span data-stu-id="d0b5d-118">Destructive testing</span></span>](dbmovement-scenario-destructivetests.md)
+ 
+ > [!Important]
+ > <span data-ttu-id="d0b5d-119">ポイントインタイム復元の新機能と、RESTful API は、プライベート プレビューです。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-119">New features around point-in-time restore, and RESTful APIs are in private preview.</span></span> <span data-ttu-id="d0b5d-120">プライベート プレビュー プログラムに登録するには、[プライベート プレビュー アンケート](https://aka.ms/SelfServiceDatabaseMovementPreview)に記入してください。</span><span class="sxs-lookup"><span data-stu-id="d0b5d-120">To sign up for the private preview program, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).</span></span>
