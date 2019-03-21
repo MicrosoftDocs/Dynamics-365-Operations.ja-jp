@@ -3,7 +3,7 @@ title: Finance and Operations ソリューションのデータ パッケージ�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの処理およびデータ パッケージを消費する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 04/13/2018
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 0dbd2e0105ec0a3b1a53e45dd4b85bd1ddd9ce05
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 98fe5a7f9aecc65b50aae1a547402ae453538577
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368734"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771271"
 ---
 # <a name="process-and-consume-data-packages-in-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータ パッケージの処理と使用
 
@@ -135,7 +135,6 @@ PDP を使用するには、次の手順に従います。
 2.  業務プロセスを選択し、右ウィンドウで**データ パッケージの適用**を選択します。
 3.  **プロセス データ パッケージの使用**ページで、パッケージを選択し、**適用**を選択します。
 4.  PDP にリンクされている対象の環境で相手方の会社を選択し、**適用**を選択します。
-=======
 -   手順1、「業務プロセスの確認」では、業務プロセス モデル (BPM) を確認し、**確認済としてマーク**をクリックします。 すべての依存プロセスのレビュー ステータスが更新され、その右側に緑色のバーが表示されます。 **確認者** フィールドと **完了日時** フィールドは、業務プロセスごとにも更新されます。[![緑色のバーがある確認済み業務プロセスと、値の更新された [確認者] および [完了]](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
 
 ### <a name="review-and-approve-data-packages-that-are-associated-with-a-bpm"></a>BPM に関連付けられているデータ パッケージの確認および承認
@@ -158,7 +157,6 @@ PDP を使用するには、次の手順に従います。
 -   **プロセス データ パッケージの使用**ページで、パッケージを選択し、**履歴**を選択します。 データ パッケージの状態をレビューすることができます。 利用可能な情報には、ターゲット環境、会社、パッケージ名、開始時刻と終了時刻、データ エンティティ別のステータス、およびデータ パッケージの全体的なステータスがあります。 発生したエラーの詳細を表示するには、ターゲット環境にサインインします。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+### <a name="additional-resources"></a>追加リソース
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)

@@ -15,12 +15,12 @@ ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: d67756a944106ce98c36a0c0f6a9ed053e422eea
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4c47453b0b247fc9553e143f4d24cb45afeffbaf
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368730"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377866"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータベースのバックアップ
 
@@ -36,7 +36,6 @@ ms.locfileid: "368730"
 
 [![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)

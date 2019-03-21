@@ -3,7 +3,7 @@ title: 拡張性 FAQ
 description: このトピックでは、拡張機能に関してよくある質問に対する回答を示します。
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 28568d7a959d3b29e7ea179c018c7e2fb9bd7e7e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c963f5c3e049f886752a0bab7e53169cbc73d497
+ms.sourcegitcommit: 5c785ccfa3af01f39f6d713765036d48ecb4840f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368733"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "759724"
 ---
 # <a name="extensibility-faq"></a>拡張性 FAQ
 
@@ -104,3 +104,8 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プ�
 - 要求: 拡張を通じてセキュリティ権限を変更可能にする。
 - 問題: セキュリティ権限を変更できると、変更が分割される可能性があります。これはセキュリティ メタデータの最下位レベルであるためです。
 - 対応策: 必要な場合は、新しいセキュリティ権限を作成し、それを使用します。
+
+### <a name="why-should-i-avoid-calling-and-extending-apis-that-are-marked-with-internaluseonlyattribute"></a>InternalUseOnlyAttribute でマークされている API を呼び出して拡張することを避けるべきなのはなぜですか。
+アプリケーション全体で、顧客、パートナー、または ISV によって行われた API への変更を破損しないようにする努力がはらわれています。 クラスまたはメソッドに **InternalUseOnlyAttribute** が適用されている場合、API は内部使用専用であり、警告なしで変更される可能性があることを意味します。 顧客、パートナー、または ISV が **InternalUseOnlyAttribute** のある API を使用または拡張した場合、問題が発生する可能性があります。API はいつでも変更される可能性があり、これによって更新を適用する前に拡張機能の変更が必要になるためです。 この結果、緊急の変更が必要になり、再コンパイルが必要になる場合があります。 開発者は、変更されないままのこれらのクラスおよびメソッドに依存しないでください。
+
+**InternalUseOnlyAttribute** のあるクラスおよびメソッドを呼び出すと、コンパイラの警告が発生します。 プラットフォーム 20 からプラットフォーム更新 24 までは、コマンド チェーンを使用する **InternalUseOnlyAttribute** のある対象のクラスおよびメソッドによりコンパイル エラーが発生します。 プラットフォーム更新 25 以降では、コンパイラ警告が発行され続ける予定です。 

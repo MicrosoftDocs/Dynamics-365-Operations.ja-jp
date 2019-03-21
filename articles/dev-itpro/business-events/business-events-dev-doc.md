@@ -3,7 +3,7 @@ title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/07/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 3183dc7ad0375827199b2573ebdd3ef506d04ef1
-ms.sourcegitcommit: 8d678bd8b670349bfe4273a49dae92242ae46e5e
+ms.openlocfilehash: b580541fe66b4a25088dfede4b947a82b0e3acc8
+ms.sourcegitcommit: 2e727bb651cf4dfa65d624f45f0dcdc1e7e8287c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "719407"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -29,9 +29,7 @@ ms.locfileid: "377025"
 
 このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 
-<a name="what-is-a-business-event-and-what-is-not-a-business-event"></a>何がビジネス イベントで、何がビジネス イベントではないか。
-==========================================================
-
+## <a name="what-is-a-business-event-and-what-is-not-a-business-event"></a>何がビジネス イベントで、何がビジネス イベントではないか。
 ビジネス イベントが役立つユース ケースについて考慮するたびに、この疑問が生じます。 仕入先の作成はビジネス イベントですか。 または、発注書の確認はビジネス イベントですか。 テーブル レベルでイベントをキャプチャする場合、それはビジネス イベントですか。 または、ビジネス イベントはビジネス プロセス内のビジネス ロジック レベルでのみキャプチャする必要がありますか。 これらは有効な質問であるだけでなく、統合のソリューションを計画および構築するときに考察するキー トピックです。 次のガイドラインは、この思考過程および決定作業を支援するために使用することができます。
 
 <a name="intent"></a>目的
@@ -81,7 +79,7 @@ ms.locfileid: "377025"
 
 #### <a name="naming-convention"></a>名前付け規則
 
-ビジネス イベントの名前は以下のパターンに従う必要があります: <名詞/名詞句><action phrase>BusinessEvent
+ビジネス イベントの名前は以下のパターンに従う必要があります: <名詞/名詞句><past tense action>BusinessEvent
 
 **例**
 
@@ -98,11 +96,11 @@ ms.locfileid: "377025"
 
     ```
     [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
-    public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     ```
 
-    **BusinessEvents** 属性に注意してください。 この属性は、ビジネス イベントの契約、名前、説明、および含まれるモジュールに関する情報を含む、ビジネス イベント フレームワークを提供します。 名前および説明の引数のためにラベルを定義する必要があります。
+    **BusinessEvents** 属性に注意してください。 この属性は、ビジネス イベントの契約、名前、説明、および含まれるモジュールに関する情報を含む、ビジネス イベント フレームワークを提供します。 ラベルは、名前と説明の引数に定義する必要がありますが、ローカライズされたデータの保存を避けるため、「@」記号なしで参照する必要があります。
 
 2. 静的 **newFrom<my_buffer>** メソッドを実装します。 メソッド名の <my_buffer> パートは通常、ビジネス イベント契約を初期化するために使用されるテーブル バッファです。
 
@@ -155,10 +153,10 @@ ms.locfileid: "377025"
 /// Sales order invoice posted business event.
 /// </summary>
 [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-'@AccountsReceivable:SalesOrderInvoicePostedBusinessEventName',
-'@AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',
+'AccountsReceivable:SalesOrderInvoicePostedBusinessEventName',
+'AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',
 ModuleAxapta::SalesOrder)]
-public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 {
     private CustInvoiceJour custInvoiceJour;
     private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour _custInvoiceJour =
@@ -255,7 +253,7 @@ public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
 5. 契約状態にアクセスするための **parm** メソッドを実装します。
 
     ```
-    [DataMember('InvoiceAccount')]
+    [DataMember('InvoiceAccount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAccount")]
     public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount = invoiceAccount)
     {
         invoiceAccount = _invoiceAccount;
@@ -263,7 +261,7 @@ public final class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     }
     ```
 
-    **parm** メソッドは **DataMember('<name>')** 属性に帰属する必要があります。 属性で提供する名前 (たとえば、 **'InvoiceAccount'**) はデータ契約消費者に対して表示されます。
+    **parm** メソッドは **DataMember('<name>')** および **BusinessEventsDataMember('<description>')** 属性に帰属する必要があります。 属性で提供する名前 (たとえば、 **'InvoiceAccount'**) はデータ契約消費者に対して表示されます。 BusinessEventsDataMember で指定された説明は、この契約のデータ メンバーを記述するときにビジネス イベント カタログ UI に表示されます。
 
 > [!NOTE]
 > - **RecId** 値はビジネス イベント ペイロードの一部にすることはできません。 代わりに代替キー (AK) を使用します。
@@ -319,51 +317,51 @@ BusinessEventsContract
     private void new()
     {
     }
-    [DataMember('InvoiceAccount')]
+    [DataMember('InvoiceAccount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAccount")]
     public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
     = invoiceAccount)
     {
         invoiceAccount = _invoiceAccount;
         return invoiceAccount;
     }
-    [DataMember('InvoiceId')]
+    [DataMember('InvoiceId'), BusinessEventsDataMember("@AccountsReceivable:BusinessEventInvoiceId")]
     public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId = invoiceId)
     {
     invoiceId = _invoiceId;
     return invoiceId;
     }
-    [DataMember('SalesOrderId')]
+    [DataMember('SalesOrderId'), BusinessEventsDataMember("@AccountsReceivable:SalesOrderId")]
     public SalesIdBase parmSaleOrderId(SalesIdBase _salesId = salesId)
     {
         salesId = _salesId;
         return salesId;
     }
-    [DataMember('InvoiceDate')]
+    [DataMember('InvoiceDate'), BusinessEventsDataMember("@AccountsReceivable:BusinessEventInvoiceDate")]
     public TransDate parmInvoiceDate(TransDate _invoiceDate = invoiceDate)
     {
         invoiceDate = _invoiceDate;
         return invoiceDate;
     }
-    [DataMember('InvoiceDueDate')]
+    [DataMember('InvoiceDueDate'), BusinessEventsDataMember("@AccountsReceivable:InvoiceDueDate")]
     public DueDate parmInvoiceDueDate(DueDate _invoiceDueDate = invoiceDueDate)
     {
         invoiceDueDate = _invoiceDueDate;
         return invoiceDueDate;
     }
-    [DataMember('InvoiceAmountInAccountingCurrency')]
+    [DataMember('InvoiceAmountInAccountingCurrency'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAmountInAccountingCurrency")]
     public AmountMST parmInvoiceAmount(AmountMST _invoiceAmount = invoiceAmount)
     {
         invoiceAmount = _invoiceAmount;
         return invoiceAmount;
     }
-    [DataMember('InvoiceTaxAmount')]
+    [DataMember('InvoiceTaxAmount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceTaxAmount")]
     public TaxAmount parmInvoiceTaxAmount(TaxAmount _invoiceTaxAmount =
     invoiceTaxAmount)
     {
         invoiceTaxAmount = _invoiceTaxAmount;
         return invoiceTaxAmount;
     }
-    [DataMember('LegalEntity')]
+    [DataMember('LegalEntity'), BusinessEventsDataMember("@AccountsReceivable:LegalEntity")]
     public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId _legalEntity
     = legalEntity)
     {
@@ -419,7 +417,7 @@ CollectionStatusUpdatedBusinessEvent()))
 
     ```
     [DataContract]
-    public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
+    public class CustFreeTextInvoicePostedBusinessEventExtendedContract
     extends BusinessEventsContract
     {
         // standard contract
@@ -494,7 +492,7 @@ _customerClassification = customerClassification)
 
 ```
 [DataContract]
-public final class CustFreeTextInvoicePostedBusinessEventExtendedContract
+public class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
 {
     // standard contract

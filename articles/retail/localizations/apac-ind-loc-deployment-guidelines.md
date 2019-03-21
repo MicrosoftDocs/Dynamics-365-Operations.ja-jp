@@ -1,7 +1,7 @@
 ---
 title: インドのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、インドの小売ローカライズ用配置ガイドです。
-author: ''
+author: AlexChern0v
 manager: ralin
 ms.date: 01/31/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.author: jiaqia
 ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 9c648912a7b6f8327140436b301498df47a8baf9
-ms.sourcegitcommit: cce4e478cdc867857b70f1e1938818de7cc283d4
+ms.openlocfilehash: a636ddaf42c4545cfd3c988d34f00e35cf714545
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "374250"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760767"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
@@ -33,7 +33,7 @@ ms.locfileid: "374250"
 
 このサンプルは Commerce runtime (CRT) の拡張機能で構成されます。 このサンプルを実行するには、CRT プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio オンライン (VSO) のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
-> [!NOTE] 
+> [!NOTE]
 > 使用しているバージョンによって、このトピックの手順の一部が異なります。 詳細については、[Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md)を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
@@ -56,31 +56,37 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 2. 以下のファイルを検索します:
 
     - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:
-      - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
+
+        - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
 
     - **Reference\\Newtonsoft.Json\\9.0.0.0** フォルダー内:
-      - Newtonsoft.Json.dll
+
+        - Newtonsoft.Json.dll
 
     - **Reference\\TaxEngine** フォルダー内:
-      - Microsoft.Dynamics365.Tax.Core.dll
-      - Microsoft.Dynamics365.Tax.DataAccessor.dll
-      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-      - Microsoft.Dynamics365.Tax.DataModel.dll
-      - Microsoft.Dynamics365.Tax.Metadata.dll
-      - Microsoft.Dynamics365.LocalizationFramework.dll
-      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
     - 以下のフォルダーを **Reference\\Z3** フォルダー内で見つけます:
-      - x86
-      - x64
+
+        - x86
+        - x64
 
 3. 11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:
+
     - **小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。
     - **Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。
 
 4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+
     - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
@@ -90,39 +96,49 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+
 # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
 1. **Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。
 2. 以下のファイルを検索します:
 
     - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:
-      - Contoso.Commerce.Runtime.GenericTaxEngine.dll
-  
-    - **References\\Newtonsoft.Json.9.0.1\lib\net45** フォルダー内:
-      - Newtonsoft.Json.dll
+
+        - Contoso.Commerce.Runtime.GenericTaxEngine.dll
+
+    - **References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:
+
+        - Newtonsoft.Json.dll
 
     - **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** フォルダー内:
-      - Microsoft.Dynamics365.LocalizationFramework.dll
-      - Microsoft.Dynamics365.Tax.Core.dll
-      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-      - Microsoft.Dynamics365.Tax.DataAccessor.dll
-      - Microsoft.Dynamics365.Tax.DataModel.dll
-      - Microsoft.Dynamics365.Tax.Metadata.dll
+
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
 
     - **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** フォルダー内:
-      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
     - 以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:
-      - x86
-      - x64
+
+        - x86
+        - x64
 
 3. 11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:
+
     - **小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。
     - **Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。
 
 4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+
     - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
@@ -131,40 +147,50 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-813-and-latertabretail-8-1-3"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
 
 1. **Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。
 2. 以下のファイルを検索します:
 
-    - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:  
-      - Contoso.Commerce.Runtime.GenericTaxEngine.dll
-    
-    - **References\\Newtonsoft.Json.9.0.1\lib\net45** フォルダー内:
-      - Newtonsoft.Json.dll
+    - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:
+
+        - Contoso.Commerce.Runtime.GenericTaxEngine.dll
+
+    - **References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:
+
+        - Newtonsoft.Json.dll
 
     - **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** フォルダー内:
-      - Microsoft.Dynamics365.LocalizationFramework.dll
-      - Microsoft.Dynamics365.Tax.Core.dll
-      - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-      - Microsoft.Dynamics365.Tax.DataAccessor.dll
-      - Microsoft.Dynamics365.Tax.DataModel.dll
-      - Microsoft.Dynamics365.Tax.Metadata.dll
+
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
 
     - **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** フォルダー内:
-      - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-      - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-      - Microsoft.Dynamics365.XppSupportLayer.dll
+
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
     - 以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:
-      - x86
-      - x64
+
+        - x86
+        - x64
 
 3. 11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:
+
     - **小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。
     - **Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。
 
 4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+
     - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
@@ -173,6 +199,9 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
 
@@ -188,9 +217,11 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
-    
-> [!WARNING]
-> commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+
+---
 
 ### <a name="set-up-required-parameters-in-retail-headquarters"></a>小売用バックオフィスで要求されるパラメーターを設定します。
 
@@ -203,21 +234,25 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 1. **RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
+
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
     ```
 
     # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
+
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
     # <a name="retail-813-and-latertabretail-8-1-3"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
+
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
     ```
 
     # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
+
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
@@ -289,24 +324,24 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-    以下の行を **ItemGroup** セクションに追加する
+    以下の行を **ItemGroup** セクションに追加します。
 
     ```xml
-      <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
-      <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
+    <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
+    <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
     ```
 
-    **Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します
+    **Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
 
     ```xml
-      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します
+    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
     ```xml
-      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
     # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
@@ -315,48 +350,51 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-    以下の行を **ItemGroup** セクションに追加する
+    以下の行を **ItemGroup** セクションに追加します。
 
     ```xml
-      <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
-      <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
+    <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
+    <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
     ```
 
-    **Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します
+    **Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
 
     ```xml
-      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します
+    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
+
     ```xml
-      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
     # <a name="retail-813-and-latertabretail-8-1-3"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
 
-    - Packages\\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj"
+    - Packages\\\_SharedPackagingProjectComponents\\Sdk.ModernPos.Shared.csproj
     - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
 
-    以下の行を **ItemGroup** セクションに追加する
+    以下の行を **ItemGroup** セクションに追加します。
+
      ```xml
-       <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
-       <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
+    <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
+    <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
      ```
 
-    **Sdk.ModernPos.Shared.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します
+    **Sdk.ModernPos.Shared.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
 
     ```xml
-      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します
+    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
+
     ```xml
-      <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-      <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
     # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
@@ -367,5 +405,4 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ---
 
 4. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
-
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。

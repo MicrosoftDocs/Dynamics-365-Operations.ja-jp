@@ -3,7 +3,7 @@ title: サード パーティ ユーティリティを使用したテスト サ�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサービスをテストするサード パーティのユーティリティを設定する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bc87f193c4e0deda4399ef7d2afffa0ea4440ae
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 99dab5ca0ad65f67b2677a913b1565ca234b8bf5
+ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368630"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "378127"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -60,7 +60,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
     | client\_id     | 前提条件のセットアップ中に登録した Azure AD アプリケーション ID                   |
     | client\_secret | 前提条件の設定中のアプリケーション登録中に生成した秘密キー |
     | grant\_type    | client\_credentials                                                                                 |
-    | リソース       | Finance and Operations インスタンスのベース URL                                                 |
+    | リソース       | 末尾の '/' を除いた Finance and Operationsインスタンスのベース URL                                                 |
 
 5. キーと値のペアが正しく解析できることを確認するには、**キー-値の編集** を選択し、結果を確認します。
 6. 環境ページを閉じます。
@@ -145,7 +145,7 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
     | grant\_type    | client\_credentials                                             |
     | client\_id     | Azure AD アプリケーション登録のアプリケーション ID   |
     | client\_secret | Azure AD アプリケーション登録の秘密キーの値 |
-    | リソース       | Finance and Operations インスタンスの URL                  |
+    | リソース       | 末尾の '/' を除いた Finance and Operationsインスタンスの URL                 |
 
 9. パラメーターが POST 本体にあることを確認するには、**Post QueryString** を選択し、**再生** を選択します。 アクセス トークンは応答ウィンドウに戻す必要があります。 **JSON 応答** タブを使用すると、値が最も読みやすくなります。アクセス トークンをコピーして、後続の要求の認証ヘッダーで使用できるようにします。
 10. **GetUserSessionInfo**SOAP サンプル要求で、最初の要求ノードに戻ります。 左側の要求ウィンドウで、プラス記号 (**+**) ボタンを選択して、**認証**というヘッダーを追加します。 アクセストークンを **Value** フィールドに貼り付け、プレフィックス **Bearer** を追加します。

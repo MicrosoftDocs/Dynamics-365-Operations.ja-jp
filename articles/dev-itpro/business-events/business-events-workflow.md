@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/30/2019
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a402b60286a2bc7b4b395453503c9c870d872828
-ms.sourcegitcommit: 0fe718d39602b42bf36aaa01894f620c50748622
+ms.openlocfilehash: 190bcf9aca5ad140a0df9ecbb640139cb2481a47
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "370050"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768846"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -48,7 +48,9 @@ ms.locfileid: "370050"
 
 ## <a name="workflow-business-event-categories"></a>ワークフロー ビジネス イベントのカテゴリ
 
-ワークフロー ビジネス イベントには 5 つの異なるカテゴリがあります。
+ワークフロー ビジネス イベントには 5 つの異なるカテゴリがあります。 カテゴリが Microsoft Flow に表示され、イベントを選択できます。
+
+![Microsoft Flow のビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Flow のビジネス イベント カテゴリ")
 - **カテゴリ: ワークフロー タイプ** 
      - これらのイベントは、開始および完了などのワークフロー イベントで発生します。 すべてのワークフロー インスタンスはこのカテゴリに相当します。
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID、たとえば、"Workflow_BudgetPlanReview_000002"

@@ -3,7 +3,7 @@ title: データ管理
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/18/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3515c3eaafd48d716396956cb2d9922d5eadd9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f0706abee25fc9f31766419b6ed471c3354ae8ac
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368351"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403344"
 ---
 # <a name="data-management"></a>データ管理
 
@@ -276,7 +276,7 @@ ms.locfileid: "368351"
 | ExportWhileDataEntityListIsBeingRefreshed     | 有効な場合、エンティティの更新の実行中にジョブがスケジューリングされると、マッピングで追加の検証が行われます。 この既定値はオフです。|
 | DMFDisableXSLTTransformationForCompositeEntity     | これは、複合エンティティで変換の適用を無効にできます。 |
 | DMFDisableInputFileCheckInPackageImport     | すべてのエンティティ ファイルがデータ パッケージから欠落している場合にエラー メッセージが表示されるように、追加の検証が行われます。 これは既定の動作です。 必要な場合、このフライトによりこれを OFF にできます。  |
-| FillEmptyXMLFileWhenExportingCompositeEntity     | プラットフォーム更新プログラム 15 よりも前は、エクスポートするレコードを持っていない複合エンティティをエクスポートするとき、生成された XML ファイルにはスキーマ要素は含まれませんでした。 この動作は変更されて、空のスキーマが出力されます。 ただし、必要な場合は、このフライトを有効にして、以前の動作に戻すことができます。  |
+| FillEmptyXMLFileWhenExportingCompositeEntity     | プラットフォーム更新プログラム 15 よりも前は、エクスポートするレコードを持っていない複合エンティティをエクスポートするとき、生成された XML ファイルにはスキーマ要素は含まれませんでした。 この動作は、このフライトを有効にすることで空のスキーマの出力に変更できます。 既定では、この動作は引き続き空のスキーマを出力します。  |
 | EnableNewNamingForPackageAPIExport     | エクスポートに対してパッケージ API を使用する実行 ID に一意の名前が使用されるように、修正が行われました。 これにより、実行 ID に対して新しい名前付け規約が使用されるようになりました。 前の名前付け規則に戻す必要がある場合、このフライトを有効にすることができます。 ただし、これを行うと、バグ 265164 で解決された問題が再発生します。 この問題は、名前付け規約で使用されるタイムスタンプは同じであるため、その結果、連続してすばやく呼び出しが行われるときにのみ発生します。 |
 | DMFDisableDoubleByteCharacterExport     | コード ページ 932 設定を使用するようにフォーマットがコンフィギュレーションされているときにデータをエクスポートできるように、修正が行われた。 2 バイト エクスポートに関連して問題が発生した場合、該当する場合は、このフライトを無効にしてブロック解除することによって、この修正を止めることができます。 |
 | DisablePendingRecordFromJobStatus     | インポート ジョブの最終ステータスの評価時に保留中のレコードを確実に考慮するように、修正が行われました。 実装がステータス評価ロジックに依存し、この変更が実装の重大な変更として見なされる場合、この新しいロジックをこのフライトを使用して無効にすることができます。  |

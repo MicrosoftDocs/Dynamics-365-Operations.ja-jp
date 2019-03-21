@@ -3,7 +3,7 @@ title: メンテナンス モード
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードは、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行できるシステム全体に適用される設定です。
 author: manalidongre
 manager: AnnBe
-ms.date: 12/13/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83cfa380120be25335e3feeb35f1fc09e8de0760
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0b1ced105f238b6cd97d17c114478128cc9ea6b1
+ms.sourcegitcommit: 980cf8280538f37d64c477576a67f66bb00252d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368826"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "776910"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -33,7 +33,7 @@ ms.locfileid: "368826"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
 
-## <a name="turn-maintenance-mode-on-and-off-in-sandbox-and-production-environments-through-lifecycle-services-in-preview"></a>Lifecycle Services を通じてサンドボックスおよび運用環境でメンテナンス モードを有効または無効にする (プレビュー)
+## <a name="turn-maintenance-mode-on-and-off-on-sandbox-and-production-environments-through-lifecycle-services"></a>Lifecycle Services を通じてサンドボックスおよび運用環境でメンテナンス モードを有効または無効にする 
 サンドボックスおよび運用環境で、Lifecycle Services (LCS) を通じて直接メンテナンス モードを有効または無効にできます。 これを行うには、次の手順を参照してください。
 
 1. 環境の詳細ページに移動し、**メンテナンス** メニューで **メンテナンス モードの構成** をクリックします。 プレビューに追加された顧客に対してこのメニュー項目が表示されます。
@@ -46,9 +46,9 @@ ms.locfileid: "368826"
 8. メンテナンス モードが有効または無効かを環境の履歴ページで確認することができます。 環境履歴ページに移動するには環境の詳細ページで **履歴** および **環境の変更** を選択します。
 
 サンドボックスおよび運用環境のメンテナンス モードをオン/オフにする操作と、サービス操作にとても似ています。 メンテナンス モードのオンまたはオフに失敗した場合は、**再開**、**ロールバック**、および **中止** などのオプションが表示されます。 操作に失敗した理由をトラブルシューティングするために**ログをダウンロード**するオプションもあります。
- 
-## <a name="turn-maintenance-mode-on-and-off"></a>メンテナンス モードのオン/オフを切り替える 
-### <a name="maintenance-mode-in-non-production-environments"></a>非実稼動環境でのメンテナンス モード
+
+## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-and-vhd-based-hosted-environments"></a>DevTest/デモ環境およびVHD ベースのホストされている環境でメンテナンス モードのオンとオフを切り替える
+
 次のコマンドを実行して、メンテナンス モードをローカルでオンにすることができます。 
 
 > [!Note]
@@ -77,14 +77,4 @@ Finance and Operations の Application Object Server (AOS) のインスタンス
 次のコマンドを実行して、メンテナンス モードをオフにすることができます。
 
     J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
-
-### <a name="maintenance-mode-in-production-environments"></a>実稼動環境でのメンテナンス モード
-実稼動環境でメンテナンス モードを有効にするには、**サービス要求** ページで LCS の **その他の要求** フォームを使用して、Dynamics サービス エンジニアリング (DSE) チームに要求を送信する必要があります。 LCS を通しての要求の送信の詳細については、[Dynamics サービス エンジニア リング チームへのサービス要求の送信](../lifecycle-services/submit-request-dynamics-service-engineering-team.md) を参照してください。 
-
-Dynamics サービス エンジニアリング チームは、システムをメンテナンス モードにし、お客様と連携してコンフィギュレーションの更新を完了します。 更新が完了したという確認をチームが受け取った後、メンテナンス モードからシステムが削除されます。
-
-## <a name="troubleshooting"></a>トラブルシューティング
-イベント ビューアーにエラーが検出できます。
-
-
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: d22944088f71eb188382166950e5b83848e71a22
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 60a9f824fd3bd0d67316b7c78bb6da2fe712f322
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369263"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760770"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -32,7 +32,7 @@ ms.locfileid: "369263"
 > [!NOTE]
 > このトピックは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail の両方に適用されます。
 
-## <a name="prerequisites"></a>必要条件 
+## <a name="prerequisites"></a>必要条件
 
 - Finance and Operations でのインド向け GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
 - 小売チャネル コンポーネントを構成します。 インド固有の機能を有効にするには、小売チャネル コンポーネントの拡張機能を構成する必要があります。 詳細については、[配置ガイドライン](./apac-ind-loc-deployment-guidelines.md)を参照してください。
@@ -177,7 +177,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     2. 取引を選択します。
     3. **レシート** を選択します。
 
-    ![レシート例](media/apac-ind-gst-s1-receipt1.png)
+    ![レシート例](media/apac-ind-gst-s1-receipt1.png)
 
 11. 小売用バックオフィスで販売注文および税ドキュメントを検証します:
 
@@ -200,7 +200,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 13. **正確** を選択して支払を処理します。
 14. 領収書を検証します。
 
-    ![レシート例](media/apac-ind-gst-s1-receipt2.png)
+    ![レシート例](media/apac-ind-gst-s1-receipt2.png)
 
 15. 伝票取引を検証します:
 
@@ -219,11 +219,11 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     5. **税務書類** を選択します。
     6. 領収書番号が取引 ID として更新されたことを確認します。
 
-    ![税務書類](media/apac-ind-gst-tax-document2.png)
+        ![税務書類](media/apac-ind-gst-tax-document2.png)
 
 ### <a name="scenario-2-sell-taxable-goods-to-a-consumer"></a>シナリオ 2: 顧客に対する課税対象商品の販売
 
-未登録の顧客に販売するとき、その販売は *企業と顧客間* (B2C) 販売と呼ばれます。 税は B2B および B2C 販売と同じ方法で計算されます。 
+未登録の顧客に販売するとき、その販売は *企業と顧客間* (B2C) 販売と呼ばれます。 税は B2B および B2C 販売と同じ方法で計算されます。
 
 1. POS へのサインイン
 2. 品目を入力してから、**入力** を選択します。
@@ -237,11 +237,11 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 4. **正確** を選択して支払を処理します。
 5. 領収書の検証:
 
-   1. **仕訳帳の表示** を選択します。
-   2. 取引を選択します。
-   3. **レシート** を選択します。
+    1. **仕訳帳の表示** を選択します。
+    2. 取引を選択します。
+    3. **レシート** を選択します。
 
-      ![領収書の検証](media/apac-ind-gst-receipt-validation.png)
+    ![領収書の検証](media/apac-ind-gst-receipt-validation.png)
 
 6. 小売用バックオフィスでの小売販売請求書を確認します:
 
@@ -293,19 +293,19 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 
 3. トランザクションの入力:
 
-   1. POS へのサインイン
-   2. 品目を入力してから、**入力** を選択します。 この例では、次の値を持つ品目を使用します:
+    1. POS へのサインイン
+    2. 品目を入力してから、**入力** を選択します。 この例では、次の値を持つ品目を使用します:
 
-       - **課税対象値:** 10,000.00
-       - **CGST:** 12 %
-       - **SGST:** 11 %
+        - **課税対象値:** 10,000.00
+        - **CGST:** 12 %
+        - **SGST:** 11 %
 
-      ![取引の例](media/apac-ind-gst-trx-example.png)
+    ![取引の例](media/apac-ind-gst-trx-example.png)
 
 4. **正確** を選択して支払を処理します。
 5. 領収書を検証します。
 
-    ![レシート例](media/apac-ind-gst-s3-receipt4.png)
+    ![レシート例](media/apac-ind-gst-s3-receipt4.png)
 
 6. 小売用バックオフィスでの小売販売請求書を確認します:
 
@@ -321,24 +321,22 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 
 8. 伝票取引を検証します:
 
-   1. **小売** \> **顧客** \> **すべての販売注文** の順に移動します。
-   2. 売上請求書を選択します。
-   3. アクション ウィンドウの、**請求書** タブで、**請求仕訳帳** を選択します。
-   4. **伝票** を選択します。
+    1. **小売** \> **顧客** \> **すべての販売注文** の順に移動します。
+    2. 売上請求書を選択します。
+    3. アクション ウィンドウの、**請求書** タブで、**請求仕訳帳** を選択します。
+    4. **伝票** を選択します。
 
+        | 勘定科目名  | 借方金額 (Rs.) | クレジット金額 (Rs.) |
+        |----------------------|--------------------|---------------------|
+        | 顧客口座     | 10,000.00          |                     |
+        | CGST 未払勘定 |                    | 975.61              |
+        | SGST 未払勘定 |                    | 894.31              |
+        | 売上勘定        |                    | 8,130.08            |
 
-      | 勘定科目名  | 借方金額 (Rs.) | クレジット金額 (Rs.) |
-      |----------------------|--------------------|---------------------|
-      |   顧客口座   |     10,000.00      |                     |
-      | CGST 未払勘定 |                    |       975.61        |
-      | SGST 未払勘定 |                    |       894.31        |
-      |    売上勘定     |                    |      8,130.08       |
+    5. **税務書類** を選択します。
+    6. GST 参照番号順序グループで定義されている GST 番号順序に従って取引 ID が更新されることを確認します。
 
-
-   5. **税務書類** を選択します。
-   6. GST 参照番号順序グループで定義されている GST 番号順序に従って取引 ID が更新されることを確認します。
-
-      ![税務書類のトランザクション ID](media/apac-ind-gst-tax-doc-trx-id.png)
+        ![税務書類のトランザクション ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
 ### <a name="scenario-4-sell-an-exempted-good"></a>シナリオ 4: 免税品の販売
 
@@ -390,10 +388,9 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     ![POS 返品取引](media/apac-ind-gst-return-trx.png)
 
 6. **正確** を選択します。
-
 7. 領収書を検証します。
 
-   ![レシート例](media/apac-ind-gst-receipt-5.png)
+    ![レシート例](media/apac-ind-gst-receipt-5.png)
 
 8. 小売用バックオフィスでの小売販売請求書を確認します:
 

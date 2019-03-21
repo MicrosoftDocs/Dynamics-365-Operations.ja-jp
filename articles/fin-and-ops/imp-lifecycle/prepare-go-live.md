@@ -3,7 +3,7 @@ title: Go-Live の準備
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1bff2f000e8927b9626ad2ebb8cf71ac9dd8b92b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d854d430460d6431a5561cafa5fac2bfc851d976
+ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368860"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768474"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
@@ -37,7 +37,7 @@ ms.locfileid: "368860"
 |---|--------|---------------|-----|-------|
 | 1 | LCS での運用日付の更新 | 遅くとも 2 ～ 3 か月前に | パートナー/顧客 | マイルストーンの日付は、継続的に最新のものにする必要があります |
 | 2 | チェック リストの完了および送信 | UAT 完了後 | パートナー/顧客 | このトピックの後半の「FastTrack Go live 評価」セクションの指示に従います。 |
-| 3 | プロジェクトの評価 (Fast Track Essentials) | 初期レポートに 2 営業日、必要に応じて、軽減のために時間が追加されます | FastTrack アーキテクト | アーキテクトは、チェックリストを受け取った後に評価を提供し、質問が明確化および軽減されるまでレビューを続行します。 |
+| 3 | プロジェクトの評価 (Fast Track Essentials) | 初期レポートに 3 営業日、必要に応じて、軽減のために時間が追加されます | FastTrack アーキテクト | アーキテクトは、チェックリストを受け取った後に評価を提供し、質問が明確化および軽減されるまでレビューを続行します。 |
 |   | プロジェクト工場 (Fast Track) | 設計担当者と協力するには | FastTrack アーキテクト | |
 | 4 | 運用配置のリリース。 | 正常完了したと評価された時 | FastTrack アーキテクト | 実動展開要求が既に送信されている場合は、展開が開始されます。 ただし、評価が正常に完了した後だけ生産要求を送信することを要求します。 |
 | 5 | 運用配置要求 | セルフサービス | 顧客 | 実動展開要求は、FastTrack Architect がアセスメントを完了した後にのみ、提出してください。 |

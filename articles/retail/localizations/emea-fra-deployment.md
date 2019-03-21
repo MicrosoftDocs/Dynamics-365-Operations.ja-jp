@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: d17d0253cbd719aac8c811e7237c669021aca889
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9523e764a5edf995457d54d7d5830742fd295d9c
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369447"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760772"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
@@ -38,6 +38,7 @@ ms.locfileid: "369447"
 デジタル署名拡張機能は、Retail Serverが配置されているマシンのローカルの証明書のストレージにインストールされている証明書を使用します。 コンフィギュレーション ファイルの証明書の拇印を指定する必要があります (このトピックで後述する [SequentialSignatureRegisterコンポーネント](#sequentialsignatureregister-component) を参照してください)。 実装のトポロジーに応じて、証明書は [Microsoft Azure Key Vault ストレージ](https://docs.microsoft.com/azure/key-vault/key-vault-get-started) に保存される必要があります。 フランス用小売ローカライズには、Azure Key Vault ストレージに保存されている証明書を使用して、署名フローを上書きし、販売取引に署名する方法を示すサンプル コードが含まれています。
 
 ### <a name="prerequisites"></a>必要条件
+
 Azure Key Vault ストレージに格納されている証明書を使用する前に、次の手順を完了する必要があります。
 
 - Azure Key Vault ストレージを作成する必要があります。 Retail Server と同じ地理的領域にストレージを配置することをお勧めします。
@@ -655,6 +656,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 7. 機能をテストします。
 
 ### <a name="set-up-required-parameters-in-retail-headquarters"></a>小売用バックオフィスで要求されるパラメーターを設定します。
+
 詳細については、「[フランスのキャッシュ レジスター](./emea-fra-cash-registers.md)」を参照してください。
 
 ## <a name="production-environment"></a>実稼働環境

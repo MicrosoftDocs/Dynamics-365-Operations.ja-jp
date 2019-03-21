@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 7600d436e4ec945d70036b749f1fbb100860ef4c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0965df99c4b58bbb5ec8dd0fceb3207e8a3eb644
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369278"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760769"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -33,7 +33,7 @@ ms.locfileid: "369278"
 
 このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio オンライン (VSO) のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
-> [!NOTE] 
+> [!NOTE]
 > 使用しているバージョンによって、このトピックの手順の一部が異なります。 詳細については、[Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md)を参照してください。
 
 ## <a name="development-environment"></a>開発環境
@@ -598,7 +598,6 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ---
 
 4. Retail Server のコンフィギュレーション ファイルを検索します。 ファイル名は **web.config** で、IIS Retail Server サイトがある場所の下のルート フォルダーにあります。
-
 5. コンフィギュレーションの **extensionComposition** セクションで Retail Server 拡張機能を登録します。
 
     ``` xml
@@ -615,24 +614,21 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
     2. ファイルを、IIS Retail Server サイトがある場所の下の **\\bin** フォルダーにコピーします。
-
     3. CRT 用コンフィギュレーション ファイルで CTR の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
-    ```
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+        ```
 
     # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later/)
 
     1. **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** フォルダーで、**Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** アセンブリ ファイルを検索します。
-
     2. ファイルをIIS Retail Server サイトがある場所の **\\bin** フォルダーにコピーします。
-
     3. CRT 用コンフィギュレーション ファイルで CTR の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
-    ```
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
+        ```
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -645,10 +641,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     > 作業は不要です。
 
     # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
+
     > [!NOTE]
     > 作業は不要です。
 
     # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
+
     > [!NOTE]
     > 作業は不要です。
 
@@ -666,30 +664,31 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
     ``` csharp
-        public Task<bool> SalesTransactionSignatureServiceIsReady()
-        {
-            throw new NotImplementedException();
-        }
-        public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<bool> SalesTransactionSignatureServiceIsReady()
+    {
+        throw new NotImplementedException();
+    }
+    public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
+    {
+        throw new NotImplementedException();
+    }
     ```
 
     # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
     ``` csharp
-        public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
-        {
-            throw new NotImplementedException();
-        }
-        public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
+    {
+        throw new NotImplementedException();
+    }
+    public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
+    {
+        throw new NotImplementedException();
+    }
     ```
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
+
     > [!NOTE]
     > このバージョンには、この手順は適用されません。
 
@@ -722,6 +721,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj** を開き、**RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\CommerceRuntime.Extensions.SalesTransactionSignatureSample.Messages** プロジェクトをソリューションに追加し、プロジェクト参照を **RetailProxy** プロジェクトと、**SalesTransactionSignatureSample.Messages**参照に追加します。
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
+
     > [!NOTE]
     > このバージョンには、この手順は適用されません。
 
@@ -747,27 +747,27 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
     ``` csharp
-        public Task<bool> SalesTransactionSignatureServiceIsReady()
-        {
-            return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<SalesTransactionSignatureServiceIsReadyResponse>(new SalesTransactionSignatureServiceIsReadyRequest(), null).IsReady);
-        }
-        public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
-        {
-            return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<GetLastFiscalTransactionResponse>(new GetLastFiscalTransactionRequest(), null).FiscalTransaction);
-        }
+    public Task<bool> SalesTransactionSignatureServiceIsReady()
+    {
+        return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<SalesTransactionSignatureServiceIsReadyResponse>(new SalesTransactionSignatureServiceIsReadyRequest(), null).IsReady);
+    }
+    public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
+    {
+        return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<GetLastFiscalTransactionResponse>(new GetLastFiscalTransactionRequest(), null).FiscalTransaction);
+    }
     ```
 
     # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
     ``` csharp
-        public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
-        {
-            return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<SalesTransactionSignatureServiceIsReadyResponse>(new SalesTransactionSignatureServiceIsReadyRequest(), null).IsReady);
-        }
-        public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
-        {
-            return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<GetLastFiscalTransactionResponse>(new GetLastFiscalTransactionRequest(), null).FiscalTransaction);
-        }
+    public Task<bool> SalesTransactionSignatureServiceIsReady(string correlationId)
+    {
+        return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<SalesTransactionSignatureServiceIsReadyResponse>(new SalesTransactionSignatureServiceIsReadyRequest(), null).IsReady);
+    }
+    public Task<FiscalTransaction> GetLastFiscalTransaction(string storeNumber, string terminalId)
+    {
+        return Task.Run(() => CommerceRuntimeManager.Runtime.Execute<GetLastFiscalTransactionResponse>(new GetLastFiscalTransactionRequest(), null).FiscalTransaction);
+    }
     ```
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
@@ -800,12 +800,11 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ```
 
 #### <a name="retail-proxy-extension-component-retail-731-and-later"></a>小売プロキシ拡張コンポーネント (Retail 7.3.1 およびそれ以降)
-Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次の手順を実行します。 
+
+Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次の手順を実行します。
 
 1. **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample**  フォルダーで、**RetailServer.Extensions.SalesTransactionSignatureSample** プロジェクトを検索し、構築します。
-
 2. **RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample\\bin\\Debug** フォルダーで、**Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample** アセンブリ ファイルを検索します。
-
 3. アセンブリ ファイルをローカル CRT クライアント ブローカーの下の **\\ext** フォルダーにコピーします。
 4. 拡張機能コンフィギュレーション ファイルで 小売プロキシの変更を登録します。 ファイル名は **RetailProxy.MPOSOffline.ext.config** で、ローカル CRT クライアント ブローカーの場所の下にあります。
 
@@ -868,7 +867,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
     # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
     - AuditEventExtensionSample
-    - SalesTransactionSignatureSample**
+    - SalesTransactionSignatureSample
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -921,6 +920,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
     ```
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
+
     ``` json
     {
         "baseUrl": "AuditEventExtensionSample"
@@ -1093,6 +1093,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
     ```
 
     # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
+
     ``` json
     {
         "baseUrl": "AuditEventExtensionSample"
@@ -1123,7 +1124,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.NO.Extension"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -1140,7 +1141,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.NO.Extension"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -1178,66 +1179,67 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
         ``` xml
-            <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
         # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
         ``` xml
-            <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
         # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
+
         ``` xml
-            <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
         # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
         ``` xml
-            <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
         # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
         ``` xml
-            <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
         # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
         ``` xml
-            <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
         ---
@@ -1299,6 +1301,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 3. **Customization.settings** パッケージ カスタマイズ コンフィギュレーション ファイルに以下の変更を加えます。
 
     1. 小売プロキシ カスタマイズを有効にします。
+
         # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
         **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** セクションに次の行を追加します。
@@ -1320,7 +1323,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         **ItemGroup** セクションに次の行を追加し、配置可能なパッケージに小売プロキシ拡張機能を含めます。
 
         ``` xml
-           <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
         ```
 
         # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
@@ -1328,7 +1331,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         **ItemGroup** セクションに次の行を追加し、配置可能なパッケージに小売プロキシ拡張機能を含めます。
 
         ``` xml
-            <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
         ```
 
         # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
@@ -1336,7 +1339,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         **ItemGroup** セクションに次の行を追加し、配置可能なパッケージに小売プロキシ拡張機能を含めます。
 
         ``` xml
-            <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
         ```
 
         # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
@@ -1344,7 +1347,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         **ItemGroup** セクションに次の行を追加し、配置可能なパッケージに小売プロキシ拡張機能を含めます。
 
         ``` xml
-            <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
         ```
 
         ---
@@ -1354,76 +1357,76 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
         ``` xml
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
         # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
         ``` xml
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
         # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
         ``` xml
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
         # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
         ``` xml
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
         # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
         ``` xml
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
         # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
         ``` xml
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
         ```
 
         ---
@@ -1433,40 +1436,40 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
         # <a name="application-update-4tabapp-update-4"></a>[アプリケーション 更新 4](#tab/app-update-4)
 
         ``` xml
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
         ```
 
         # <a name="application-update-5-and-latertabapp-update-5-and-later"></a>[アプリケーション更新プログラム 5 以降](#tab/app-update-5-and-later)
 
         ``` xml
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
         ```
 
         # <a name="retail-731tabretail-7-3-1"></a>[Retail 7.3.1](#tab/retail-7-3-1)
 
         ``` xml
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
         # <a name="retail-732-and-latertabretail-7-3-2"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
 
         ``` xml
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
         # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
         ``` xml
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
         # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
         ``` xml
-           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
         ---
@@ -1502,7 +1505,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 5. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\web.config** ファイルの **extensionComposition** セクションに次の行を追加します。
 
     ``` xml
-        <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
 6. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。

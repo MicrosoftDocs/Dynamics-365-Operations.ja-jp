@@ -1,5 +1,5 @@
 ---
-title: 非推奨 API
+title: 非推奨 API (2017 年 6 月)
 description: このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。
 author: aneesmsft
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d16243902783722d87ce1a70a287f5acf1db1a4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 57ab578355e1baf97f5bf272197fb9b0dcf07ef6
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368710"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773815"
 ---
-# <a name="deprecated-apis"></a>非推奨 API
+# <a name="deprecated-apis-june-2017"></a>非推奨 API (2017 年 6 月)
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@ title: 財務分析コードとして使用可能なバッキング テーブル
 description: このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
 author: aprilolson
 manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 03/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3a19200d222ca71c461bcbe92e8af309366f33b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e43eeb97b0032e35299280662c19cd7ec5a04010
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368576"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773788"
 ---
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 
@@ -118,7 +118,7 @@ public void delete()
 {
     if (!DimensionValidation::canDeleteEntityValue(this))
     {
-        throw error(strFmt("\@SYS134392", this.AccountNum));
+        throw error(strFmt("@SYS134392", this.AccountNum));
     }
       
     ttsbegin;
@@ -169,24 +169,21 @@ public void renamePrimaryKey()
 
 ```
 if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
-        {
-            this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
-        }
-
-
+{
+     this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+}
                                                                                                 
 e.g.
 
+public void persistEntity(DataEntityRuntimeContext _entityCtx)
+{
+     if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+     {
+          this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+     }
 
-  public void persistEntity(DataEntityRuntimeContext _entityCtx)
-    {
-        if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
-        {
-            this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
-        }
-
-        super(_entityCtx);
-    }
+     super(_entityCtx);
+}
 ```
 > [!NOTE]
 > これにより、分析コードが自身を既定の既定値として使用するようにする場合、情報が正しい順序で作成されます。

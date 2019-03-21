@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office で開くメニューのカスタマイズ
+title: '[Microsoft Office で開く] メニューのカスタマイズ'
 description: ほとんどのページには、Microsoft Office で開くメニューが含まれます。 このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 author: ChrisGarty
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 6b9638418fcf964bf19724c7ef017f63d97a1f7e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70cb9385b28a0fe8fe896005ff851fdbe30f5de4
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368296"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773790"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 

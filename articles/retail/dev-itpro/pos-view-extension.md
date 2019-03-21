@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c0fbd1dc5bc081a027f4896e055d22311861514d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0a11531ea4e30b882ad339553ba9606609917c3a
+ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369057"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403757"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -70,8 +70,9 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | ManageShiftView                 | 無                            | 無                           | 有                               |  
 | ReportDetailsView               | 無                            | 無                           | 有                               |
 | SearchReceiptsView              | 無                            | 無                           | 有                               |
-| StockCountDetailsView           | 無                            | 無                          | 有                               |
-| TransferOrderDetailsView        | 無                            | 無                          | 有                               |
+| StockCountDetailsView           | いいえ                            | いいえ                          | はい                               |
+| TransferOrderDetailsView        | いいえ                            | いいえ                          | はい                               |
+| FulfillmentLineView        | いいえ                            | はい                          | いいえ                               |
 
 
 > [!NOTE]

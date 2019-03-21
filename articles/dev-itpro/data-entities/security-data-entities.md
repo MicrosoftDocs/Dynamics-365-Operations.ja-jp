@@ -3,7 +3,7 @@ title: セキュリティとデータ エンティティ
 description: このトピックでは、データ エンティティのセキュリティについて説明します。 データ エンティティはエントリ ポイント セキュリティをサポートするため、ロール ベースのセキュリティ フレームワークによって制御されます。 データ エンティティのエントリ ポイントを権限および職務にマッピングするモデルは、ターゲット シナリオによって異なります。 したがって、データ エンティティでは、統合モードごとに個別のセキュリティ構成が可能です。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,16 +17,19 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47c2e908606a2c471f5effde36b58d2326328499
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 313cc68ae1622b44fec9aa17511c051613e27f22
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368373"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834677"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> データ エンティティは拡張可能なデータ セキュリティ (XDS) の概念をサポートしません。
 
 ## <a name="entry-points"></a>エントリ ポイント
 データ エンティティはエントリ ポイントのセキュリティをサポートします。 このサポートは、メニュー項目とページのサポートと似ています。 セキュリティ モデルを定義する際の柔軟性を高めるため、データ エンティティでは統合モードごとに個別のセキュリティ設定が可能となっています。 現在、データ エンティティに対して 2 つのエントリ ポイント/統合モードは識別されます。

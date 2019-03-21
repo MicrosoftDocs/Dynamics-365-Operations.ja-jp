@@ -1,4 +1,5 @@
 ---
+redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
 title: 非実稼働環境でのデータベースの復元
 description: Microsoft Dynamics 365 for Finance and Operations では、データベースを要求後 35 日以内の特定の時点に復元するように要求できます。 このトピックでは、Point-in-Time 復元を要求する方法について説明します。
 author: MargoC
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 362f10c87479d8e91e457bf1f2069a16378f12a4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 73da227045377f6eaebfac4fd4327050803c9ce7
+ms.sourcegitcommit: dcb78245c15423cce346dcdfd1f4cdd0d9a5ba48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368798"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380108"
 ---
 # <a name="restore-databases-in-non-production-environments"></a>非実稼働環境でのデータベースの復元
 

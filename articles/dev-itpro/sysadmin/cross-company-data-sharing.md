@@ -3,7 +3,7 @@ title: 会社間データ共有
 description: このトピックでは、企業間のデータ共有について説明します。 会社間共有は、Microsoft Dynamics 365 for Finance and Operations 展開で、参照およびグループ データを会社間で共有するためのメカニズムです。
 author: aprilolson
 manager: AnnBe
-ms.date: 01/08/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e0eb0e04e4ea1caf8a9bc72cf5945352d7118774
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c78921dd1e4d8e3aafc64443d1d187c9dbffb8f6
+ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369103"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403758"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 
@@ -86,6 +86,11 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 
 ## <a name="customer-and-vendor-master-data-sharing-preview"></a>顧客および仕入先のマスター データ共有 (プレビュー)
 顧客および仕入先のマスタ データ共有により、複数の会社間で顧客および仕入先のデータを共有することができます。 この機能は、バージョン 8.0 およびそれ以降の顧客が、制限のある状態で使用できます。 この機能のプレビュー プログラムに登録する場合は、調査票 [データ共有申請](https://aka.ms/MSDYN365FODataSharing) に記入し、製品サポートに問い合わせてください。
+
+> [!NOTE]
+> 顧客または仕入先に対する既定の分析コードの設定は、会社間で共有することはできません。 会社間のデータ共有用に顧客または仕入先レコードの構成すると、**DefaultDimension**フィールドが無効になり、データ共有ポリシーに含まれることができません。
+
+> 既定の分析コードには、背景の分析コード データに対する緩い外部キー参照が保持されます。これは、会社固有のデータと非会社固有のデータの両方を参照できます。 各分析コード値に適用される適切なアクションを決定することは本質的に複雑であり、現在の実装からの変更が必要です。これは、パフォーマンスに大幅な影響を与える可能性があります。
 
 ## <a name="download-a-cross-company-data-sharing-template-from-lcs"></a>会社間データ 供給テンプレートを LCS からダウンロード
 1.  LCS にサインインします。
