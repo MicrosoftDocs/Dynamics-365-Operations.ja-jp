@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 64362ae9e4ebb63ca6da2cd2f41376d1d9047694
+ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305083"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768488"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Talent システム要件と更新ポリシー
 
@@ -36,8 +36,8 @@ Microsoft Dynamics 365 for Talent Web アプリケーションは、指定され
 
 *   Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 *   Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
-*   Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン)
-*   Mac OS X 10.10 (Yosemite)、10.11 (El Capitan)、または 10.12 (Sierra)、または Apple iPad の Apple Safari (公開されている最新のバージョン)
+*   Google Chrome (公開されている最新バージョン)
+*   Apple Safari (公開されている最新バージョン)
 
 各 Web ブラウザの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。 
 

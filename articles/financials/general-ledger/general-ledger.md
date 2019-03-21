@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0b6683107f4b2dbe36af78749612ce950ea19582
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363364"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403240"
 ---
 # <a name="general-ledger"></a>一般会計 
 
@@ -51,23 +51,21 @@ ms.locfileid: "363364"
  - [消費税支払と丸めルール](round-sales-tax-payments.md)
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-### <a name="whats-new"></a>新機能
+#### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-リリースされた新機能については、[リリース ノート](https://docs.microsoft.com/en-us/business-applications-release-notes/) を参照してください。 
+計画されている新機能については、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
+
+#### <a name="blogs"></a>ブログ
+
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) および [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) を参照してください。
+
+[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
 ### <a name="videos"></a>ビデオ
 
-「[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)」のハウツー ビデオをご覧ください。
-
-### <a name="blogs"></a>ブログ
-
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)を参照してください。
-
-[Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、一般会計に関する多くの投稿があります。 これらの投稿の一部は一般会計の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
-
-[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
 
 #### <a name="community-blogs"></a>コミュニティのブログ
 

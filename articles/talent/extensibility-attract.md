@@ -3,7 +3,7 @@ title: Attract での拡張性
 description: このトピックでは、Microsoft Power Platform を使用して Microsoft Dynamics 365 for Talent - Attract を拡張する方法について説明します。
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305135"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789654"
 ---
 # <a name="extensibility-in-attract"></a>Attract での拡張性
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent は、アプリ プラットフォームの Common Data Service (CDS) の上に構築され、Microsoft Power Platform および Common Data Service for Apps が提供する機能を使用してさまざまな方法で拡張できます。 したがって、Microsoft PowerApps および Microsoft Flow を使用して、システムをコンフィギュレーションおよびカスタマイズできます。 Microsoft Power BI を使用して、人々に関する追加の分析を取得することもできます。 さらに、PowerApps および Web コンテンツ (iframe) 活動などの新しいカスタム活動は、採用プロセスをこれまで以上に適応しやすくします。 これらの活動を使用することにより、採用プロセスをビジネス ニーズとプロセスに合わせることができ、採用チームと候補者の両方にシームレスでカスタマイズされた経験があることを確認できます。
+
+## <a name="extending-option-sets-in-attract"></a>Attract のオプション セットの拡張
+
+**オプション セット** (候補リスト) は、エンティティに含めることができるフィールドのタイプです。 これは一連のオプションを定義します。 オプション セットがフォームに表示される場合、ドロップダウン リスト コントロールを使用します。  Attract には、オプション セットである複数のフィールドがあります。  不採用理由フィールド、雇用タイプフィールド、および勤続タイプフィールドをはじめとするオプション セットを拡張するための機能を導入します。   また、追加するオプションに対して、ローカライズされた表示ラベルを追加することができます。  詳細については、次のリンクを参照してください: [オプション セット ラベルのカスタマイズ](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> LinkedIn 機能へのジョブ求人転記には、**ジョブの詳細**ページの**雇用タイプ**および**勤続タイプ**フィールドの使用が必要です。 これらのフィールドの既定値は LinkedIn でサポートされ、ジョブが転記されるときに表示されます。 そのため、LinkedIn にジョブ求人を転記していて、これらのフィールドの既存のオプション セット値を変更した場合、ジョブ求人は転記されますが、LinkedIn はカスタム**雇用タイプ**および**勤続タイプ**の値を表示しません。  
+
+下の一覧は、**不採用理由**フィールドと業務に固有の値を更新する手順です。  
+
+1. **不採用理由**オプション セットを拡張するには、[PowerApps 管理 Web サイト](Https://admin.powerapps.microsoft.com) に移動します。
+2. アカウントにサインインするよう求められる可能性があります。 Dynamics365 や Office365 にサインインするために使用する userID およびパスワードの資格情報を指定し、**次へ**をクリックします。
+3. **環境**タブで管理する環境を選択し、ダブルクリックして**詳細**タブにアクセスします。
+4. **詳細**タブで **Dynamics 365 管理センター**を選択します。
+5. 変更するインスタンスを選択し、**開く**を選択します。
+6. **設定**、**カスタマイズ**に移動し、**システムをカスタマイズ**を選択します。
+7. **エンティティ**を選択し、グループを展開して、オプション セットを拡張するエンティティを検索します。 この例では、**求人応募エンティティ**になります。
+8. **フィールド** オプションを選択し、オプション セットを拡張するフィールドに移動します。 この例では、**msdyn_rejectionreason** になります。 フィールドをダブルクリックします。
+9. **オプション セット** フィールドで、**編集**を選択します。
+10. **+** アイコンを選択します。
+11. **ラベル**を入力します。  (これは重複しない、一意の値である必要があります)。
+12. **保存** を選択します。
+13. ページ上部の**発行**を選択します。
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Microsoft Power Platform を活用 
 

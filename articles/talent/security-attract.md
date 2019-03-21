@@ -3,7 +3,7 @@ title: Attract でのセキュリティおよびロール管理
 description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract におけるデータ エンティティのセキュリティについて説明します。
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374783"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789700"
 ---
 # <a name="security-and-role-management-in-attract"></a>Attract でのセキュリティおよびロール管理
 
@@ -100,14 +100,16 @@ Attract では 5 つの基本ユーザー ロールが提供されます。
 | データまたはアクション          | 採用担当者 | 採用マネージャー | 面接者 |
 |-------------------------|-----------|----------------|-------------|
 | 申請書   | ユーザーの採用チームの職務に対する作成、読み取り、更新、および削除 | ユーザーの採用チームの職務に対する作成、読み取り、更新、および削除 | 読み取り専用 |
-| 申請のメモ       | ユーザーの採用チームの職務に対する作成、読み取り、更新、および削除 | ユーザーの採用チームの職務に対する作成、読み取り、更新、および削除 | 新規 |
+| 申請のメモ       | ユーザーの採用チームの職務に対する作成、読み取り、更新、および削除 | ユーザーの採用チームの職務に対する作成、読み取り、更新、および削除 | 読み取り専用|
 | 申請活動    | ユーザーが採用チームの場合に表示 | ユーザーが採用チームの場合に表示 | 読み取り専用 |
 | 申請のフィードバック    | ユーザーが採用チームの場合、すべてのフィードバックの追加および表示 | ユーザーが採用チームの場合、すべてのフィードバックの追加および表示 | フィードバックを追加できます\*\* |
 | 申請の拒否      | ユーザーが採用チームの場合に拒否できます | 不許可 | 不許可 |
 | ステージを進む           | ユーザーが採用チームの場合に拒否できます | ユーザーが採用チームの場合に継続できます | 不許可 |
 | オファー管理の起動 | オファー管理を開始できます | オファー活動にはコンフィギュレーション オプションがあります。 | 不許可 |
 
-\*\* [フィードバック活動の設定](activities-attract.md#feedback-activity) のコンフィギュレーション オプションは、面接者が他の各フィードバックを参照できるかどうかを制御します。
+
+\*\* [フィードバック活動の設定](./activities-attract.md) のコンフィギュレーション オプションは、面接者が他の各フィードバックを参照できるかどうかを制御します。
+
 
 ## <a name="process-templates"></a>プロセス テンプレート
 

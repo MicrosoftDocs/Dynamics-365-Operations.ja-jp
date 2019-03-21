@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340732"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768417"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
@@ -86,7 +86,7 @@ ms.locfileid: "340732"
     - データベース ログやアラートなどの追加機能の使用。 極端なデータベース ロギングにより、コアあたりのスループットは 1 時間当たり 3K 以下にさらに低下します。
     - データ構成の複雑さ - シンプルな勘定科目表と細かい綿密な勘定科目表は、スループットに影響を与えます。
     - トランザクションの特性。
-    - 各コアの 2 GB から 4 BG までのメモリーです。
+    - 各コアの 2 GB から 16 BG までのメモリーです。
     - 管理リポーターや SSRS データベースなどの DB サーバー上の補助データベース。
     - Temp DB = 物理プロセッサと同数のファイルを持つ DB サイズの 15 ％。
     - 同時のトランザクション ボリューム/使用量の合計に基づく SAN サイズとスループット。

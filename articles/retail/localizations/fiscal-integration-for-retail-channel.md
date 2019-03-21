@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377138"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773280"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>小売チャネルの会計統合の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "377138"
 
 ## <a name="introduction"></a>はじめに
 
-このトピックは、Microsoft Dynamics 365 for Retail で使用できる会計統合の機能についての概要です。 会計統合には、小売業界での税金の詐欺防止を目的とした地方の会計法に従って、小売販売の会計登録を可能にするさまざまな会計デバイスおよびサービスとの統合が含まれます。 会計統合を使用してカバーすることができる典型的なシナリオを以下に示します: 
+このトピックは、Microsoft Dynamics 365 for Retail で使用できる会計統合の機能についての概要です。 会計統合には、小売業界での税金の詐欺防止を目的とした地方の会計法に従って、小売販売の会計登録を可能にするさまざまな会計デバイスおよびサービスとの統合が含まれます。 会計統合を使用してカバーすることができる典型的なシナリオを以下に示します:
 
 - 会計プリンターのような、Retail POS (販売時点管理) に接続している会計デバイスに小売販売を登録してから、顧客に会計レシートを印刷します。
 - Retail POS で完了した販売と返品に関する情報を、税務当局が運営する外部の Web サービスに安全に送信します。
@@ -87,6 +87,7 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 
 会計トランザクションは、*P ジョブ*によって小売トランザクションと共に小売用バックオフィスに転送されます。 **小売店舗のトランザクション**ページの**会計トランザクション**クイック タブで、小売トランザクションにリンクされている会計トランザクションを表示することができます。
 
+
 会計トランザクションには、次の詳細が格納されます:
 
 - 会計登録プロセスの詳細 (プロセス、コネクタ グループ、コネクタなど)。 この情報が会計応答に含まれている場合は、**登録番号**フィールドに、会計デバイスのシリアル番号も格納します。
@@ -115,4 +116,5 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 
 - [フランス向けデジタル署名](emea-fra-cash-registers.md)
 - [ノルウェー向けデジタル署名](emea-nor-cash-registers.md)
-- [スウェーデン向け制御ユニットの統合サンプル](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [スウェーデン向け制御ユニットの統合サンプル](./retail-sdk-control-unit-sample.md)
+

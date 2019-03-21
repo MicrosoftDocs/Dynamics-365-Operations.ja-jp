@@ -3,7 +3,7 @@ title: 輸入信用状
 description: この手順は、信用状のインポートのプロセスを説明します。
 author: kweekley
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3d5539fbd17c880d8bbadd47444c9cc53fce039c
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313569"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771234"
 ---
 # <a name="import-letter-of-credit"></a>輸入信用状
 
@@ -99,7 +99,7 @@ ms.locfileid: "313569"
 ## <a name="post-packing-slip"></a>[梱包明細] の転記
 1. アクション ウィンドウで、[入庫] をクリックします。
 2. [製品受領書] をクリックします。
-3. [PurchParmTable_Num] フィールドに値を入力します。
+3. PurchParmTable_Num フィールドに値を入力します。
     * [信用状] の照会と一緒に作成された [出荷番号] を選択します。  
 4. 一覧で、選択された行のリンクをクリックします。
 5. [製品受領書の日付] フィールドに日付を入力します。
@@ -111,8 +111,7 @@ ms.locfileid: "313569"
 1. [現金および銀行管理] > [信用状] > [輸入信用状] および [輸入取立] の順に移動します。
 2. 一覧で、目的のレコードを見つけ、選択します。
 3. 一覧で、選択された行のリンクをクリックします。
-    * [輸入信用状] の状態を確認します。    
-    *   
+    * [輸入信用状] の状態を確認します。     
 4. ページを閉じます。
 5. ページを閉じます。
 
