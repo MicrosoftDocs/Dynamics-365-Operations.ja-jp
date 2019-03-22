@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376510"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768885"
 ---
 # <a name="set-up-offer-management"></a>オファー管理の設定 
 
@@ -199,11 +199,11 @@ Attract 管理者によって設定可能なオファー作成プロセスの部
 - **候補者のオファー エクスペリエンス** - 管理者は、すべてのオファーに有効期限を設定するかどうかを決定することができます。有効期限を設定する場合は、有効期限の既定のオフセットを設定します。 候補者がオファーを拒否できるかどうかも設定することができます。
 
 - **電子署名** - 管理者として、候補者が署名に使用できる方法を選択することもできます。
-    - Adobe Sign - すべてのオファー パッケージは、Adobe Sign 経由で送信および署名されます。 オファーを公開する各オファー作成者は、Adobe Sign ライセンスを Attract に接続する必要があります。 
+    - Adobe Sign - すべてのオファー パッケージは、Adobe Sign 経由で送信および署名されます。 オファーを公開する各オファー作成者は、Adobe Sign アカウントを Attract に接続する必要があります。 Adobe Sign ライセンスおよび無料試用版については、この[リンク](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html)を参照してください。
 
+    - DocuSign - すべてのオファー パッケージは、DocuSign 経由で送信および署名されます。 オファーを公開する各オファー作成者は、DocuSign アカウントを Attract に接続する必要があります。 
+    
     - ESign - これは、すぐに使用できる既定のオプションで、ユーザーは名前とイニシャルを入力してオファーに署名することができます。
 
->[!NOTE]
-> Adobe Sign ライセンスおよび無料試用版については、この[リンク](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html)を参照してください。
 
 オファー作成プロセスの詳細については、[作成、承認、および署名](./creating-offers.md)を参照してください。

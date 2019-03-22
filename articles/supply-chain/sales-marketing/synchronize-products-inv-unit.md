@@ -3,7 +3,7 @@ title: Finance and Operations から Field Service への製品と在庫単位�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に製品と在庫単位を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359247"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836305"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Finance and Operations から Field Service への製品在庫単位の同期
 
@@ -34,9 +34,11 @@ ms.locfileid: "359247"
 
 [![Finance and Operations および Field Service 間の業務プロセスの同期](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-使用されている **Field Service 製品 (Finance and Operations から Field Service)** テンプレートは、見込顧客を現金化の**製品 (Finance and Operations から Sales) – 直接**テンプレートに基づいています。 詳細については、[製品 (Finance and Operations から Sales) - 直接](products-template-mapping-direct.md) を参照してください。
+使用された **Field Service 製品と在庫単位 (Finance and Operations から Field Service)** テンプレートは、**Field Service 製品 (Finance and Operations から Field Service)** テンプレートに基づきます。 詳細については、[Field Service 製品 (Finance and Operations から Field Service)](field-service-product.md) を参照してください。
 
-このトピックでは、**Field Service 製品 (Finance and Operations から Field Service)** および **Field Service 製品 (Finance and Operations から Field Service)** テンプレートの間の違いのみを説明します。
+このトピックでは、2 つのテンプレートの相違のみについて説明します: 
+- **在庫単位のある Field Service 製品 (Finance and Operations から 販売)**
+- **Field Service 製品 (Finance and Operations から Field Service)** 
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 

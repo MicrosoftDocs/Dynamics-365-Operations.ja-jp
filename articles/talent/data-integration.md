@@ -3,7 +3,7 @@ title: Dynamics 365 for Talent のデータ統合ガイド
 description: このトピックでは、Dynamics 365 for Talent で管理されているデータを統合するための各種オプションに関するガイドを提供します。
 author: Darinkramer
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: ee2d2d040e86c72da35ccd6867b07d575ebf9136
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 369b528c909dd91874e44d2cf8d170929f7dd94e
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369385"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778237"
 ---
 # <a name="data-integration-guidance-for-dynamics-365-for-talent"></a>Dynamics 365 for Talent のデータ統合ガイド
 
@@ -49,14 +49,14 @@ CDS は、Dynamics 365 for Talent の推奨のパブリック データ イン�
 CDS は、データ エンティティのためのプラットフォームと、これらのエンティティにアクセスするための API を提供します。 Dynamics 365 for Talent が組織に配置されると、Talent は CDS インスタンスに接続され、Talent データを維持するエンティティが CDS インスタンスに配置され、これにより、CDS インスタンスに接続できるすべてのアプリケーションがエンティティとそれらのデータを使用できるようになります。 使用する Talent アプリに基づいて、Talent は、CDS エンティティに対してデータの操作を直接実行する (Attract と Onboard の場合) か、またはCDS エンティティとの間でデータを同期します (これは、Core HR の場合)。
 
 統合アプリが必要とするデータを公開するデータ エンティティが CDS に存在すると、[CDS プラットフォームとそのプラットフォームがサポートする API](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer) を十分に活用することができます。
-サポートされる API の 1 つに [Dynamics 365 Web API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) があります。この API は、CDS データにアクセスするための OData 実装を提供します。
+サポートされる API の 1 つに [Dynamics 365 Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) があります。この API は、CDS データにアクセスするための OData 実装を提供します。
 
 CDS エンティティおよび関連付けられている API は、Web アプリケーション、Web サービス/API から、また OData フィードに接続するその他のアプリケーションから、Talent データにアクセスするための最良のオプションです。
 
 > [!NOTE]
-> アプリ用 CDS を Talent (Core HR) の優先データインターフェイスにする決定が比較的新しい場合、統合に必要な Core HR データ エンティティを CDS で使用できない場合があります。\* 統合に必要な Core HR エンティティをまだ使用できない場合は、データ エンティティが利用できるまで待つか、または以下に示すその他の統合テクノロジのいずれかを使用する必要があります。
+> アプリ用 CDS を Talent (Core HR) の優先データインターフェイスにする決定が比較的新しい場合、統合に必要な Core HR データ エンティティを CDS で使用できない場合があります<sup>1</sup>。 統合に必要な Core HR エンティティをまだ使用できない場合は、データ エンティティが利用できるまで待つか、または以下に示すその他の統合テクノロジのいずれかを使用する必要があります。
 
-
+<sup>1</sup>CDS で利用できる Core HR エンティティの一覧については、[Core HR およびアプリ用 Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities)を参照してください。 Attract と Onboard については、すべてのエンティティが CDS で利用可能です。
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF エンティティ
 Dynamics 365 for Finance and Operations と同じプラットフォーム上にもともと構築されている Dynamics 365 for Talent (Core HR) は、データ インポート エクスポート フレームワークまたは DIXF と呼ばれることもある、[データ管理フレームワーク (DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json) と、Talent との間のデータのインポートまたはエクスポートのために使用できる一連のデータ エンティティを提供します。 CDS エンティティは Talent の優先データ統合インターフェイスであり、DMF エンティティは次のような環境で有用です。
@@ -123,24 +123,22 @@ Power Query は、リッチな M formula language を含む、強力で柔軟な
 
 | テクノロジ/ツール/API    | 定期統合                   | 同期/非同期                    | API によるプログラム アクセス        | 適切なデータ量                                   | データ カバレージ                       |
 |------------------------|------------------------------------------|---------------------------------------------|-------------------------------------------|------------------------------------------------------------|-------------------------------------|
-| CDS エンティティ           | データ インテグレーターまたはミドルウェアを使用します | 同期、非同期、バッチ (データ インテグレーターを使用) | Dynamics 365 Web API (OData) を使用 | ユース ケースによって異なります (対話型の使用に対してページングをサポート) | 改善\*\*                       |
+| CDS エンティティ           | データ インテグレーターまたはミドルウェアを使用します | 同期、非同期、バッチ (データ インテグレーターを使用) | Dynamics 365 Web API (OData) を使用 | ユース ケースによって異なります (対話型の使用に対してページングをサポート) | 改善<sup>2</sup>                       |
 | DMF エンティティ           | ミドルウェアを使用してスケジュール        | 非同期、バッチ                                | DMF パッケージ REST API を使用         | 高 (数十万のレコード)                    | 高                                |
 | DMF パッケージ REST API   | ミドルウェアを使用してスケジュール        | 非同期、バッチ                                | 有                                       | 高 (数十万のレコード)                    | API はすべての DMF エンティティをサポートします       |
-| BYOD                   | 管理者による Talent でのスケジュール        | 非同期、バッチ                                | 番号\*\*\*                                    | 高 (数十万のレコード)                    | すべての DMF エンティティをサポートします           |
+| BYOD                   | 管理者による Talent でのスケジュール        | 非同期、バッチ                                | いいえ<sup>3</sup>                                    | 高 (数十万のレコード)                    | すべての DMF エンティティをサポートします           |
 | OData 対応エンティティ | ミドルウェアを使用                    | 同期                                        | Talent データ サービス (OData) を通じて  | ユース ケースによって異なります (対話型の使用に対してページングをサポート) | 高                                |
 | Excel アドイン           | 無                                       | 同期                                        | 無                                        | 中間 (数十万のレコード)                      | すべての OData 対応エンティティをサポートします |
-| データ インテグレーター        | データ インテグレーターでスケジュール        | 非同期、バッチ                                | 無                                        | ユース ケースによって異なります                                       | すべての CDS エンティティをサポートします           |
+| データ インテグレーター        | データ インテグレーターでスケジュール        | 非同期、バッチ                                | いいえ                                        | ユース ケースによって異なります                                       | すべての CDS エンティティをサポートします           |
 
+<sup>2</sup>Microsoft は、CDS エンティティのデータ カバレージの増加に重点を置いて投資しており、カバレージが得られるとき、CDS を優先データ インターフェイスとして推奨します。 現時点では、CDS データ カバレージは、DMF および OData 対応エンティティと比較すると低いです。
+
+<sup>3</sup>SQL データベースにプログラムを使用してアクセスできます。
 
 ## <a name="summary"></a>集計
 業務データは重要な資産ですが、特定の目的 (レポート、データ マッシュ アップ、またはカスタム アプリケーションなど) にデータを使用することが困難な場合、その価値は大幅に減少する可能性があります。 Dynamics 365 for Talent は、Talent アプリケーションのユーザー インターフェイス (UI) の外部にあるデータを操作するための複数のテクノロジを提供して、そのデータへの統合アプリケーション アクセスを可能にします。 このトピックでは、使用可能な統合テクノロジとその主要な特性の一部について説明しました。
 この情報は、統合プロジェクトに活用する方法に対してより良い決定するのに役立ちます。
 
-\*CDS で利用できる Core HR エンティティの一覧については、[Core HR およびアプリ用 Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities) を参照してください。
 
-> [!NOTE]
-> Attract と Onboard については、すべてのエンティティが CDS で利用可能です。
 
-\*\*Microsoft は、CDS エンティティのデータ カバレージの増加に重点を置いて投資しており、カバレージが得られるとき、CDS を優先データ インターフェイスとして推奨します。 現時点では、CDS データ カバレージは、DMF および OData 対応エンティティと比較すると低いです。
 
-\*\*\*SQL データベースにプログラムを使用してアクセスできます。

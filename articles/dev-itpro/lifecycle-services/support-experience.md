@@ -3,7 +3,7 @@ title: Finance and Operations の技術サポートの設定
 description: このトピックでは、クラウドおよびオンプレミスの展開のサポートについて説明します。 必要な設定およびサポートの問題を作成して対応する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa1c3e419edd33e814cd1bff9e086542da4e4eec
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a8d48d190beb7433ae4fc09ef7431181f85752dd
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368763"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403929"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations"></a>Finance and Operations の技術サポートの設定
 
@@ -96,7 +96,8 @@ Lifecycle Services (LCS) プロジェクトの**サポート** タイルは、Az
 ## <a name="create-an-issuein-the-finance-and-operationsclient-microsoft-dynamics-ax-70-dynamics-ax-platform-update-1-or-update-2-or-finance-and-operations-platform-update-3"></a>Finance and Operations のクライアント (Microsoft Dynamics AX 7.0、Dynamics AX プラットフォーム更新プログラム 1 または更新プログラム 2、または Finance and Operations プラットフォーム更新プログラム 3) に問題を作成する
 Finance and Operations プラットフォーム更新プログラム 4 を使用している場合、またはプラットフォーム更新プログラム 3 の KB 4010473 を消費した場合、次のセクションをスキップします。
 
-**重要:** オンプレミス配置の Finance and Operations の場合、既存の問題を検索し、オンプレミスの Dynamics 365 for Finance and Operations から Azure DevOps プロジェクトにサポート インシデントを送信するオプションは使用できません。
+[!WARNING]
+Finance and Operations をオンプレミスで配置している場合、既存の問題を検索して Dynamics 365 for Finance and Operations オンプレミス クライアントから Azure DevOps プロジェクトにサポート インシデントを送信することはできません。
 
 1.  クライアントで、右上隅の**ヘルプ** メニューまたは疑問符アイコンをクリックします。 [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  **サポート チームに連絡してください**をクリックします。
@@ -114,11 +115,13 @@ LCS に問題が送信されたことを示す確認メッセージが表示さ�
 ## <a name="create-an-issuein-the-finance-and-operationsclient-finance-and-operations-platform-update-4-and-platform-update-3-kb-4010473"></a>Finance and Operations のクライアントで問題を作成する (Finance and Operations プラットフォームのアップデート 4 およびプラットフォームのアップデート 3 KB 4010473)
 Finance and Operations のプラットフォーム更新プログラム 4 を使用しない場合、またはプラットフォーム更新プログラム 3 の KB 4010473 を消費していない場合は、前のセクションの手順を実行します。 Microsoft によって公開されている更新プログラムを表示するため、サポート エクスペリエンスが更新されました。 クライアントの上部バーで、 **?** をクリックしてから**サポート**をクリックします。 
 
-**重要:** オンプレミス配置の Finance and Operations の場合、既存の問題を検索し、オンプレミスの Dynamics 365 for Finance and Operations から Azure DevOps プロジェクトにサポート インシデントを送信するオプションは使用できません。
+[!WARNING]
+Finance and Operations をオンプレミスで配置している場合、既存の問題を検索して Dynamics 365 for Finance and Operations オンプレミス クライアントから Azure DevOps プロジェクトにサポート インシデントを送信することはできません。
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
-**注記:** Lifecycle Services (LCS) にまだ接続していない場合は、ダイアログボックスに接続できる場所が表示されます。 続行する前に、接続するリンクをクリックしてください。 
+[!NOTE]
+Lifecycle Services (LCS) にまだ接続していない場合は、ダイアログ ボックスに接続できる場所が表示されます。 続行する前に、接続するリンクをクリックしてください。 
     [![wiki2](./media/wiki2.png)](./media/wiki2.png)
 
 
@@ -126,11 +129,13 @@ Finance and Operations のプラットフォーム更新プログラム 4 を使
 
 LCS に接続した後は、既存の Microsoft 更新プログラムおよび修正を検索できます。 **検索**ボックスに問題を入力し、**入力**を押します。 
 
-**注記:**  すべてのユーザーに対して有効な既存の修正プログラムを検索する機能を使用しない場合は、**SearchExistingFixes**  の職務をシステム ユーザー ロールから削除し、この機能を追加するロールにのみ追加できます。 検索結果は、環境に関連する Microsoft 問題検索データに基づきます。 既にインストールした修正は、検索結果には含まれません。 特定の結果を表示するには、リンクをクリックして詳細を表示します。 
+[!NOTE]
+すべてのユーザーに対して有効な既存の修正プログラムを検索する機能を使用しない場合は、**SearchExistingFixes** の職務をシステム ユーザー ロールから削除し、この機能を追加するロールにのみ追加できます。 検索結果は、環境に関連する Microsoft 問題検索データに基づきます。 既にインストールした修正は、検索結果には含まれません。 特定の結果を表示するには、リンクをクリックして詳細を表示します。 
 
 割り当てられた職務に基づいて、**ダウンロード表示**または **要求表示**が表示されます。 
 - **ダウンロード表示** - 既定では、この表示はシステム管理者のみが利用できます。 このビューから、直接修正プログラムをダウンロードできます。 
-**注記:**  職務 **DownloadHotfix**  は、修正プログラムを要求するのではなく、LCS から直接ダウンロードする機能を制御します。 既定では、システム管理者のみそのアクセス権があります。 この職務権限をシステム管理者以外のユーザーに割り当てる場合は、職務権限を選択したロールに追加します。 
+[!NOTE]
+職務 **DownloadHotfix** は、修正プログラムを要求するのではなく、LCS から直接ダウンロードする機能を制御します。 既定では、システム管理者のみそのアクセス権があります。 この職務権限をシステム管理者以外のユーザーに割り当てる場合は、職務権限を選択したロールに追加します。 
 - **要求表示**  - 既定では、システム管理者ではないすべてのユーザーがこのビューを使用できます。 このビューから、修正プログラムのダウンロードを要求できます。 修正プログラムをダウンロードする要求を送信した後は、LCS プロジェクトに関連付けられている Azure DevOps プロジェクトに作業項目が作成されます。 顧客の IT 管理者は、LCS の**サポート** タイルをクリックし、**修正プログラムの要求**タブをクリックして、要求したすべての修正プログラムを表示できます。
 
 ### <a name="search-for-project-work-items-in-azure-devops"></a>Azure DevOps で、プロジェクトの作業項目を検索
@@ -143,7 +148,8 @@ Azure DevOps 管理者は、**#SearchableInFinanceAndOperations** を作業項�
 
 [![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
-**注記:** 発行済みの VSTS 作業項目は、組織のユーザーにのみ表示されます。  
+[!NOTE]
+発行済みの Azure DevOps 作業項目は、組織のユーザーにのみ表示されます。  
 
 ### <a name="create-and-submit-a-new-issue"></a>新しい問題の作成および送信
 検索結果から修正プログラムが見つからない場合は、**作成**をクリックし、新しい問題を作成できます。 これは以前のリリースで使用できる機能と同じで、以前の手順で説明しています。
@@ -161,12 +167,14 @@ LCS  **サポート** タイルでは、問題が LCS プロジェクトに関�
 1.  **問題**グリッドで、問題のタイトルをクリックします。
 2.  このトピックの最初のセクションで設定した Azure DevOps プロジェクトへのアクセス権を持つアカウントを使用して、Azure DevOps へログインし、**Azure DevOps プロジェクトを作成**します。 
 
-**注記:** Azure DevOps には、サインインが必要な場合に作業項目を編集するためのリンクが正しく機能しないという問題があります。 Azure DevOps にサインインした後に**自分自身に割り当て** クエリが表示された場合、LCS に戻って、問題グリッドで問題のタイトルをもう一度クリックします。
+[!NOTE]
+Azure DevOps には、サインインが必要な場合に作業項目を編集するためのリンクが正しく機能しないという問題があります。 Azure DevOps にサインインした後に**自分自身に割り当て** クエリが表示された場合、LCS に戻って、問題グリッドで問題のタイトルをもう一度クリックします。
 
 3.  Azure DevOps エディターが開きます。 問題点を編集し、変更を保存します。 変更は**サポート** タイルに反映されます。
 
 ### <a name="troubleshoot-issues"></a>問題のトラブルシューティング
-**注記:** このセクションの情報は、オンプレミスの配置には適用されません。
+[!NOTE]
+このセクションの情報は、オンプレミスの配置には適用されません。
 
 クライアントを使用して作成される問題には、環境に関するメタデータが含まれます。 **問題** グリッドでこれらの問題が選択されると、**トラブルシューティング** ボタンが使用できるようになります。 **トラブルシューティング**をクリックすると、**イベント監視** ページが開きます。 このページでは、問題に関連するイベントやログにアクセスできます。 このページには、活動、エラー メッセージ、および問題点が報告されてからこの 2 時間以内に発生したその他の情報が表示されます。 
 [![LCS-CPS-list-troubleshoot-1024x331](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png) 
@@ -176,7 +184,7 @@ LCS  **サポート** タイルでは、問題が LCS プロジェクトに関�
 
 Microsoft サポートに問題を送信することができます。 Microsoft に問題点を送信すると、問題に関する情報と添付ファイルを Microsoft サポート インシデントに含めることができます。 
 
-**注記:** Microsoft に問題を送信するためには、LCS ユーザーに有効な Microsoft サポート プランが必要です。 Microsoft に問題を報告する上で問題が発生している場合は、管理者と連携して、LCS 資格情報が、Microsoft Partner Source Business Center との組織のサポート計画に追加されている、または関連付けられているかを確認します。
+** ** Microsoft に問題を送信するためには、LCS ユーザーに有効な Microsoft サポート プランが必要です。 Microsoft に問題を報告する上で問題が発生している場合は、管理者と連携して、LCS 資格情報が、Microsoft Partner Source Business Center との組織のサポート計画に追加されている、または関連付けられているかを確認します。
 
 1.  **問題**グリッドで、Microsoft に送信する問題を選択して、**Microsoft に送信**をクリックします。
 2.  アカウントが複数のサポート組織に関連付けられている場合、使用する組織を選択して Microsoft サポート インシデントを作成します。
@@ -186,7 +194,8 @@ Microsoft サポートに問題を送信することができます。 Microsoft
 6.  問題を説明し、連絡先情報を入力してから、**送信**をクリックします。
 
 ## <a name="support-settings"></a>サポート設定 
-**注記:** このセクションの情報は、オンプレミスの配置には適用されません。 
+[!NOTE]
+このセクションの情報は、オンプレミスの配置には適用されません。 
 
 Finance and Operations を Lifecycle Services から配置するとき、構成は必要ありません。それは、サポート ツールが、配置された Finance and Operations の供給元の同じ LCS プロジェクトに問題を自動的に保存するためです。 サポートされている LCS プロジェクトを確認するには、**システム管理** > **設定** > **システム パラメーター** に移動し、**ヘルプ** > **サポートの連絡先** をクリックします。 
 [![連絡先の構成サポート](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)

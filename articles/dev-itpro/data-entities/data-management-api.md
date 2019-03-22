@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: b705a7b3004c75d6dbc2a407fc24dbed0bec043f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c14a98d67079cbcbc3009ad525cc470095d3b854
+ms.sourcegitcommit: 313e13afe17be45a53ae71bfee20ccb616fca62b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369816"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380282"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -132,7 +132,7 @@ HTTP/1.1 200 OK
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
 BODY
 {
-    "uniqueFileName":"<string>",
+    "uniqueFileName":"<string>"
 }
 ```
 

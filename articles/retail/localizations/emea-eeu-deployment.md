@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 82f3401f0f1712945c628e298159904d31ce3102
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3803d51578e8f5301b851d1c8b1e12d0a1c3385f
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368394"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760718"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
 
@@ -43,7 +43,7 @@ ms.locfileid: "368394"
 1. CRT 向け拡張機能のコンフィギュレーション ファイルを検索します。
 
     ファイル名は **commerceruntime.ext.config** で、IIS 小売サーバー サイトの下の **bin\\ext** フォルダーにあります。
-    
+
 2. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
@@ -62,38 +62,35 @@ ms.locfileid: "368394"
 
 2. 適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能が読み込まれるようにします。
 
-     ``` json
-     {
-         "extensionPackages": [
-             {
-                 "baseUrl": "Microsoft/AdvanceInvoice"
-             }
-         ]
-     }
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AdvanceInvoice"
+            }
+        ]
+    }
     ```
 
 3. ソリューションをリビルドします。
-
 4. デバッガーで Modern POS を実行し、機能をテストします。
 
 ### <a name="cloud-pos-extension-components"></a>クラウド POS 拡張コンポーネント
 
 1. **RetailSdk\\POS\\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。
-
 2. 適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能が読み込まれるようにします。
 
-     ``` json
-     {
-         "extensionPackages": [
-             {
-                 "baseUrl": "Microsoft/AdvanceInvoice"
-             }
-         ]
-     }
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AdvanceInvoice"
+            }
+        ]
+    }
     ```
 
 3. ソリューションをリビルドします。
-
 4. デバッガーでクラウド POS を実行し、機能をテストします。
 
 ### <a name="set-up-required-parameters-in-retail-headquarters"></a>小売用バックオフィスで要求されるパラメーターを設定します。
@@ -105,7 +102,6 @@ ms.locfileid: "368394"
 以下の手順に従い、小売コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。
 
 1. **クラウド POS 拡張コンポーネント**、またはこのトピックで既に見た**Modern POS 拡張コンポーネント**セクションで手順を完了します。
-
 2. **RetailSdk\\Assets** フォルダーの下にあるパッケージ構成ファイルに、次の変更を加えます。
 
     **Commerceruntime.ext.config** コンフィギュレーション ファイルで、**構成**セクションに次の行を追加します。
@@ -115,5 +111,4 @@ ms.locfileid: "368394"
     ```
 
 3. Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。
-
 4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。

@@ -3,7 +3,7 @@ title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 30a7f1b88be24ddbe5633655f8b110b5499d7b4d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: caba905bf6a00a5cde1978dd8a88463bbf567e11
+ms.sourcegitcommit: 32a5eda2a206f3de6d84b211993575f0a3e1d1b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368865"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "777852"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -1085,3 +1085,25 @@ AOS サーバーにインストールされているすべてのネットワー�
 これを行うには、Finance and Operations にログインする必要があります。 リダイレクトは、ログインしてそのアクションを実行できるように、ブラウザー内でブロックされている必要があります。 Skype プレゼンスを無効にすると、リダイレクトをもう一度ブロック解除できます。
 
 Chrome ブラウザーでは、既定でリダイレクトがブロックされます。
+
+## <a name="error-there-was-an-error-during-codepackage-activation-service-host-failed-to-activate-error0x8007052e"></a>エラー: CodePackage の有効化でエラーが発生しました。 サービス ホストの有効化に失敗しました。 エラー: 0x8007052e
+
+新規インストール時に下記のエラーが発生する可能性があります。
+
+> エラー イベント: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'。 CodePackage の有効化でエラーが発生しました。サービス ホストの有効化に失敗しました。 エラー: 0x8007052e 
+
+これにより AXSF サービスでも同じエラーで失敗します。
+
+この問題を解決するには、次の手順に従います:
+
+1. [エージェント共有パス](setup-deploy-on-premises-pu12.md#setupfile) から netstandard.dll を検索します。 たとえば: \wp\<名前>\StandaloneSetup-<ver>\Apps\AOS\AXServiceApp\AXSF\Code\bin\netstandard.dll
+2. それぞれの AOS サーバーでは、管理者として コマンド プロンプトを開き、そして次のコマンドを実行します。
+
+```
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
+```
+3. Service Fabric から AXBootstrapperApp を削除します。
+    1. fabric:/Bootstrapper/AXBootstrapper サービス を削除します。
+    2. fabric:/Bootstrapper アプリケーションを削除します。 
+    3. AXBootstrapperAppType 型をプロビジョニング解除します。
+4.  LCS から再試行して再配置します。

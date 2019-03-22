@@ -3,7 +3,7 @@ title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 07/02/2018
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4624d97d79cf8cd9706cf2a9d85560b48cc2e2ae
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e5ae325c41880d3b2ef82e884e9f9a13e62de090
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369014"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403251"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンはバージョン 2.0.0で、2018 年 3 月にリリースされました。
+このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンはバージョン 2.1.1 で、2019 年 2 月にリリースされました。
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
@@ -37,6 +37,7 @@ ms.locfileid: "369014"
 | 1.1.0               | このバージョンでは、正常に展開するために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になり、複数モデルのパッケージ展開が可能になり、プラットフォーム更新プログラム 8 および 11 が展開されます。 | 
 | 200               | このバージョンでは、サービス フローが可能になり、プラットフォーム更新プログラム 12 が展開されます。 |
 | 2.1.0               | このバージョンでは、**準備**および**更新**が 2 つの個別のステップである 2 段階サービスが可能になります。 |
+| 2.1.1               | このバージョンはダウンロードが失敗したときに発生する LCS 管理ボタンが利用できない問題を修正します。 その他の変更には、Azure Storage との通信を改善し TLS 1 を有効にする Azure Storage ライブラリの更新を含みます。  |
 
 ## <a name="whats-new-in-local-agent-210"></a>Local agent 2.1.0 の新機能
 - ローカル エージェント 2.1.0 では、**環境の準備**および**環境の更新**が 2 つの異なる手順および明示的アクションである 2 フェーズのサービスを有効にします。 事前準備を行い、ユーザーが準備中に環境を使用できるようにし、実際の更新環境アクションが発生する際にダウンタイムを通知することで、オンプレミス環境に更新プログラムを適用する場合に顧客が取る必要があるダウンタイムの合計が削減されます。

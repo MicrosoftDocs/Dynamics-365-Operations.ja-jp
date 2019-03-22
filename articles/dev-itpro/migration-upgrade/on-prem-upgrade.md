@@ -3,7 +3,7 @@ title: オンプレミス環境のインプレース アップグレード プ�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.x のオンプレミス環境を 8.1 にアップグレードする詳細プロセスを説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 01/31/2019
+ms.date: 03/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f6e9ad5c64fe728f1f0022bba30f62d152d3a5a3
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: 1eae099846f286a2c2d9e47875f67a04cecea3de
+ms.sourcegitcommit: 2f7e06a3c8813dac773d075c9868e4cfc040a64c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373428"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "780162"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.x のオンプレミス環境を 8.1 にアップグレードする詳細プロセスを説明します。  
 
-## <a name="on-premises-upgrade-from-version-7x-with-platform-update-15-20-to-81"></a>7.x (プラットフォーム更新プログラム 15 ~ 20) から 8.1 へのオンプレミス アップグレード
+## <a name="on-premises-upgrade-from-version-7x-with-platform-update-12-20-to-81"></a>7.x (プラットフォーム更新プログラム 12 ~ 20) から 8.1 へのオンプレミス アップグレード
 
 > [!NOTE]
 > このアップグレード プロセスは完了に時間がかかり、データ アップグレード中はずっと Finance and Operations が使用できなくなります。
@@ -71,9 +71,10 @@ ms.locfileid: "373428"
 6.  Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
 
 7.  オプション: 復元したデータベースの名前が AXDB ではない場合は、管理者権限を持つ PowerShell を使用して実行します。
-
-    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
-
+    
+    ```
+    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
+    ```
     > [!NOTE] 
     > (たとえば、AXDB などの) 適切な値に <DB-Name> を置き換えます。 値をさらに編集する場合は、付録 A を参照します。
 
@@ -109,7 +110,7 @@ ms.locfileid: "373428"
      
     d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database)の手順に従います。
 
-    e.  新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
+    e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
     f.  独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -123,12 +124,12 @@ ms.locfileid: "373428"
 
     a.  (省略可) 既存のデータベース (通常は AXDBold) の名前を変更し、新しいデータベース (通常は AXDB) の名前を変更します。 次の手順で、アップグレードされたデータベースの名前を入力することを確認します。
 
-    b.  新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。
+    b.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。
 
 15. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
@@ -147,8 +148,10 @@ ms.locfileid: "373428"
 6.  管理者としてコマンド プロンプトを開き、手順 5 で展開したフォルダーへディレクトリを変更します。
 
 7.  管理者として新しい PowerShell を開き、次のように実行します。
-
-    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\' -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\' -DatabasePassword \'\<Password\>\'
+    
+    ```
+    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
+    ```
 
     > [!NOTE]
     > \<\*\> を必要な値に置き換えます。
@@ -190,7 +193,7 @@ ms.locfileid: "373428"
 
     d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database)の手順に従います。
 
-    e.  新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 12 c (通常は AXDB) で作成したものにする必要があります。
+    e.  LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 12 c (通常は AXDB) で作成したものにする必要があります。
 
     f.  独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -209,7 +212,7 @@ ms.locfileid: "373428"
 14. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
@@ -277,8 +280,10 @@ ms.locfileid: "373428"
 6.  Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
 
 7.  (オプション) 復元したデータベースの名前が AXDB ではない場合は、管理者権限を持つ PowerShell を使用して実行します。
-
-    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\'
+    
+    ```
+    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
+    ```
 
     > [!NOTE] 
     > (通常、AXDB などの) 適切な値に \<DB-Name\> を置き換えます。 値をさらに編集する場合は、付録 A を参照します。
@@ -313,7 +318,7 @@ ms.locfileid: "373428"
 
 16. データベースを構成する必要があります。 [Finance and Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database)の手順に従います。
 
-17. 新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 15 (通常は AXDB) で作成したものにする必要があります。
+17. LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 15 (通常は AXDB) で作成したものにする必要があります。
 
 18. 独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -326,7 +331,7 @@ ms.locfileid: "373428"
 22. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 
@@ -346,7 +351,9 @@ ms.locfileid: "373428"
 
 7.  管理者として新しい PowerShell を開き、次のように実行します。
 
-    .\\Configure-On-Premises-Upgrade.ps1 -DatabaseName \'\<DB-name\>\' -DatabaseServer \'\<SqlServerName\>\' -DatabaseUser \'\<User\>\' -DatabasePassword \'\<Password\>\'
+    ```
+    .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
+    ```
 
     > [!NOTE]
     > \<\*\> を必要な値に置き換えます。
@@ -354,7 +361,7 @@ ms.locfileid: "373428"
     > [!NOTE]
     > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017)」を参照してください。
     >
-    > - SQL サーバー 証明書に署名した証明書証明機関を、信頼された Onebox 証明機関に追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。 
+    > - SQL サーバー 証明書に署名した証明書証明機関を、信頼された Onebox 証明機関に追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。 
     >
     > - 使用するデータベースのユーザーに、sysadmin サーバー ロールが割り当てられているか、またはアップグレードするデータベースに少なくともすべての特権があり、tempDB にアクセスする許可があるかを確認します。 これが該当しない場合は、アップグレード プロセスの手順 6 で失敗します。
     >
@@ -386,7 +393,7 @@ ms.locfileid: "373428"
 
 15. データベースを構成する必要があります。 [Finance and Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database)の手順に従います。
 
-16. 新しい環境を設定し、バージョン 8.1 で配置します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 14 (通常は AXDB) で作成したものにする必要があります。
+16. LCS で、新しい環境をセットアップし、それをバージョン 8.1 (再配置) で展開します。 詳細については、[オンプレミス環境での設定と配置](../deployment/setup-deploy-on-premises-pu12.md)を参照してください。 配置する場合、指定する必要があるデータベースは手順 14 (通常は AXDB) で作成したものにする必要があります。
 
 17. 独自のカスタマイズと同様に ISV/VAR モジュールを、新たに作成された 8.1 環境に適用します。 それ以外の場合、この環境が最初にデータベースと同期される時に、カスタマイズまたは拡張機能の関連データが削除されます。
 
@@ -399,7 +406,7 @@ ms.locfileid: "373428"
 21. (省略可) 新しい環境 (通常 AXDB) を使用しているデータベースでの財務レポート モジュールが失敗したために配置が失敗した場合は、次のコマンドを実行します。
 
     ```
-    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK\_RecId PRIMARY KEY
+    ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
 

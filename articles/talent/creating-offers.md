@@ -3,7 +3,7 @@ title: オファーの作成、承認、および署名
 description: このトピックでは、Dynamics 365 for Talent を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305203"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768908"
 ---
 # <a name="creating-approving-and-signing-offers"></a>オファーの作成、承認、および署名
 
@@ -104,15 +104,20 @@ Attract 管理者により設定されたテンプレートを使用して、オ
 
 -  オファーの承諾プロセスに含める追加のドキュメントがある場合があります。 必要なドキュメント タイプを一覧表示するオプションがあります。
 
-- 電子署名のオプション: Adobe Sign が電子署名の優先メソッドとして選択されている場合は、オファー作成者は、Adobe Sign ライセンスを接続する必要があります。 これを行うには 2 つの方法があります。 **Adobe Sign** に接続する**接続**の、**オファー**のユーザー**設定**に移動します。 または、ユーザー設定に基づいて接続がまだ確立されていない場合は、オファーの送信を候補者画面に接続するように求められます。 
+- 電子署名オプション: 選択した電子署名プロバイダーを接続する方法は 2 つあります。 **オファー**の**ユーザー設定**に移動し、**接続**にある **Adobe Sign** または **DocuSign** に接続します。 または、ユーザー設定に基づいて接続がまだ確立されていない場合は、**オファーを候補者に送信する**ページに接続するよう求められます。 電子署名アカウントは一度だけ接続する必要があります。 同じユーザーによって送信される今後のすべてのオファー パッケージには、同じユーザー ライセンスが使用されます。 
 
-> [!NOTE]
-> ユーザーは、Adobe Sign アカウントを 1 回だけ接続する必要があります。 同じユーザーによって送信される今後のすべてのオファー パッケージには、同じユーザー ライセンスが使用されます。 
+### <a name="adobe-sign"></a>Adobe Sign
+Adobe Sign が電子署名の優先メソッドとして選択されている場合は、オファー作成者は、この段階で Adobe Sign ライセンスに接続する必要があります。 
+
+### <a name="docusign"></a>DocuSign
+DocuSign が電子署名の優先メソッドとして選択されている場合は、オファー作成者は、DocuSign ライセンスに接続する必要があります。 サインインすると、ユーザーの DocuSign プロファイルに関連付けられている既定のアカウントおよびアクセス許可が Talent Attract に接続されます。 
 
 -  必要に応じて、電子メール テンプレートを表示および編集できます。
 
 オファーの準備ができ**候補者に送信**をクリックすると、候補者はオファーの確認が必要であるという電子メールを受信します。
 
+>[!NOTE]
+> Adobe Sign または DocuSign を使用していて候補者にオファーを送信中にエラーが発生した場合は、切断してから、**ユーザー設定**から電子署名ユーザーアカウントに再接続してみてください。 問題が解消しない場合は、**問題を報告する**リンクを使用してサポートにお問い合わせください。
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>オファーを受け取った後の候補者のアクション
 

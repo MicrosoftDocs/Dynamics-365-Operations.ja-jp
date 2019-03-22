@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302541"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380019"
 ---
 # <a name="distributed-order-management-dom"></a>分散型注文管理 (DOM)
 
@@ -63,7 +63,7 @@ DOM により、複雑にネットワーク化されたシステムやプロセ�
 
         1. Microsoft Dynamics Lifecycle Services で、共有アセット ライブラリを開き、アセット タイプとして **モデル** を選択して、**DOM ライセンス** ファイルをダウンロードします。
         2. Microsoft インターネット インフォメーション サービス (IIS) マネージャーを起動し、**AOSService Web サイト** を右クリックし、**エクスプローラ** を選択します。 エクスプローラー ウィンドウが開き、**\<AOS サービスのルート\>\\webroot** が表示されます。 \<AOS サービスのルート\> のパスをメモしておいてください。このパスは次の手順で使用します。
-        3. **\<AOS サービスのルート\>\\PackagesLocalDirectory\\DOM\\bin** ディレクトリにある構成ファイルをコピーします。
+        3. **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** ディレクトリにある構成ファイルをコピーします。
         4. Retail Headquarters クライアントで、**DOM パラメーター** ページを開きます。 **ソルバー** タブの **ソルバー タイプ** フィールドで、**本番ソルバー** を選択し、エラー メッセージが表示されないことを確認します。
 
         > [!NOTE]

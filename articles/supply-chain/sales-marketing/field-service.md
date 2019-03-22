@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: efda4e39f63155785386ecec6d21973e01a0f69f
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377881"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770896"
 ---
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Microsoft Dynamics 365 for Field Service との統合
 
@@ -75,11 +75,11 @@ Field Service および Finance and Operations 間のワーク オーダーを�
 ### <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 Field Service 統合は、次のバージョンがサポートされています。
 
-- Dynamics 365 for Finance and Operations バージョン 8.1.2 (2019 年 12 月) は、2019 年 12 月にリリースされ、アプリケーション ビルド番号 8.1.195、プラットフォーム更新 22 (7.0.5095) となっています。 
+- Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) は、2018 年 12 月にリリースされ、アプリケーション ビルド番号 8.1.195、プラットフォーム更新 22 (7.0.5095) となっています。 
 
 ### <a name="system-requirements-for-field-service"></a>Field Service のシステム要件
 Field Service 統合ソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
 
 - Field Service for Dynamics 365 (バージョン 8.2.0.286) または、Dynamics 365 9.1.x のそれ以降のバージョン - 2018 年 11 月リリース
-- Dynamics 365 for Sales バージョン 1.15.0.1 またはそれ以降のバージョンの見込顧客を現金化 (P2C) するソリューション。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) からダウンロードできます。
+- Dynamics 365 バージョン 1.15.0.1 またはそれ以降のバージョンの見込顧客を現金化 (P2C) するソリューション。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) からダウンロードできます。
 - Dynamics 365 の「Field Service 統合、プロジェクトと在庫」ソリューション、バージョン 2.0.0.0 またはそれ以降のバージョン。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2) からダウンロードできます。

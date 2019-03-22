@@ -3,7 +3,7 @@ title: 会計カレンダー、会計年度期間、および会計年度
 description: この記事は、法人、固定資産、予算作成で会計カレンダー、会計年度、会計期間を活用する方法について説明します。
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361662"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778204"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>会計カレンダー、会計年度期間、および会計年度
 
@@ -43,7 +43,7 @@ ms.locfileid: "361662"
 決算期間の作成時には、ステータスが [オープン] になっており、使用する日付が含まれている期間を選択します。 新しい決済期間には、既存期間の開始日と終了日がコピーされます。 元の期間も引き続き残ります。 たとえば、会計年度の最終期間にあたり、なおかつ 8 月 1 日から 8 月 31 日を含む [期間 12] を選択します。 決算期間に「決算」といった名前を入力します。 新しい決算期間を作成すると、元の期間と決算期間が作成されます。 両期間とも 8 月 1 日に始まり、8 月 31 日に終了します。
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>元帳、固定資産、および予算サイクル用の会計カレンダーを選択します。
-会計カレンダーは、固定資産減価償却、財務トランザクションおよび予算サイクルで使用されます。 会計カレンダーを作成すると、複数の目的に使用できます。 価値モデルまたは減価償却簿用の会計カレンダーを選択して、それを固定資産カレンダーにすることができます。 元帳用の会計カレンダーを選択して、それを元帳カレンダーにすることができます。 また、予算サイクル用の会計カレンダーを選択して、それを予算カレンダーにすることができます。 これらのすべてに対して、同じ会計カレンダーを使用できます。
+会計カレンダーは、固定資産減価償却、財務トランザクションおよび予算サイクルで使用されます。 会計カレンダーを作成すると、複数の目的に使用できます。 固定資産帳簿用の会計カレンダーを選択して、それを固定資産カレンダーにすることができます。 元帳用の会計カレンダーを選択して、それを元帳カレンダーにすることができます。 また、予算サイクル用の会計カレンダーを選択して、それを予算カレンダーにすることができます。 これらのすべてに対して、同じ会計カレンダーを使用できます。
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>自身の法人用の会計カレンダーの選択
 
@@ -51,7 +51,7 @@ ms.locfileid: "361662"
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>固定資産用の会計カレンダーの選択
 
-価値モデルまたは減価償却簿用の会計カレンダーを選択することができます。この会計カレンダーは、選択した価値モデルまたは減価償却簿を使用する固定資産によって使用されます。 会計カレンダーのページで定義されているすべての会計カレンダーから選択できます。
+固定資産帳簿用の会計カレンダーを選択することができます。この会計カレンダーは、選択した却簿を使用する固定資産によって使用されます。 会計カレンダーのページで定義されているすべての会計カレンダーから選択できます。
 
 ### <a name="define-budget-cycle-time-spans"></a>予算サイクル期間の定義
 

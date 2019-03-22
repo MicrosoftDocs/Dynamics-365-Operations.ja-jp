@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 1
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: e9b9957db66170f906195a3ba420ff9475e4b741
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 06799211b28944f579beb0735044c248ea1b86c9
+ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369199"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "378102"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -62,6 +62,15 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 ## <a name="intrastat-format-changes-for-belgium"></a>ベルギーのイントラスタット形式の変更
 今回のリリースには、2019 年の報告に適用されるベルギーの XML イントラスタット形式への変更が含まれています。 新しい形式を適用するには、LCS 共有資産ライブラリから ER コンフィギュレーションの次のバージョン (またはそれ以降のバージョン) をインポートする必要があります: Intrastat (BE).version.2.6.xml。 コンフィギュレーションをインポートする方法の詳細については、[Lifecycle Services からコンフィギュレーションをインポートする](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。 
+
+## <a name="india-specific-features"></a>インド固有の機能
+このリリースでは、[GTE](../../financials/general-ledger/tax-engine.md) が法人に対して有効になっている場合、一部のグローバル フィールドおよびボタンがユーザインターフェイスから非表示になります。 これは、GTEが使用されているときには適用されない発注書や販売注文のような課税対象文書のフィールドやボタンを非表示にすることで、ユーザーのユーザー インターフェースを簡素化します。 GTE が有効な場合、以下のフィールドやボタンが非表示になります。
+
+ - 消費税グループ
+ - 品目消費税グループ
+ - 売上税ボタン
+ 
+現在の標準 GST 構成には VAT が含まれておらず、そのためビジネスで VAT を処理する必要がある場合は、VAT を使用するように構成を拡張する必要があります。 詳細については [税エンジン構成の拡張](../../financials/general-ledger/extend-tax-engine-configurations.md) を参照してください。
 
 ## <a name="russian-specific-features"></a>ロシア固有の機能
 今回のリリースには、ロシアの固有の次の機能が含まれています。

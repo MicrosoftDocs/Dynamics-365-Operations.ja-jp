@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 277de741066c090d88d54565cb2fbac864480a4d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8f8f2144f1a957f78b052b5041ea9a389a1fa575
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368454"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377892"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義と設定をする
 
@@ -90,9 +90,9 @@ ms.locfileid: "368454"
 2. **製品 (1040)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。 このステップは、新しい属性、属性タイプ、または属性グループを追加した場合にのみ必要です。
 3. **チャネル コンフィギュレーション ジョブ (1070)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。
 
-# <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a>属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。
+## <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a>属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。
 
-## <a name="retail-headquarters"></a>Retail Headquarters
+### <a name="retail-headquarters"></a>Retail Headquarters
 
 1. **Retail > チャネル設定 > POS 設定 > POS > 画面レイアウト** を選択します。
 2. 画面レイアウトページで、**新規** をクリックして新しい画面レイアウトを作成するか、既存の画面レイアウトを選択します。
@@ -108,7 +108,7 @@ ms.locfileid: "368454"
     12. **小売 > 小売 IT > 配送スケジュール**の順に移動します。
     13. レジスター ジョブ (1090) を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、はい を選択します。
 
-## <a name="pos"></a>POS
+### <a name="pos"></a>POS
 
 1. POS を起動し、任意の品目をトランザクションに追加します。 ヘッダーと明細行の両方のコンフィギュレーション済の属性と共に、トランザクション画面に属性パネルが表示されます。
 2. 属性パネルで **編集** アイコンをクリックして、属性の値を更新します。

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: b8851c1d154fa7ab2de20fb247a9210e3358ec68
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 80582fa92a7c3f151602d4edf7bd37817b0d758e
+ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368381"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403759"
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
 [!include [banner](../includes/banner.md)]
@@ -203,8 +203,10 @@ currentCart = getCurrentCartClientResponse.data.result;
 | CarryoutSelectedProductsOperationRequest |
 | AddCouponsOperationRequest |
 | CreateNonSalesTransactionServiceRequest |
+| ReturnTransactionOperationRequest |
+| AddLoyaltyCardToCartOperationRequest |
 
-### <a name="payments"></a>支払利息
+### <a name="payments"></a>支払
 
 次に、支払に関連する機能を実行する公開されている API の一覧を示します。
 

@@ -1,9 +1,9 @@
 ---
 title: 確認後支払ファイルの設定と生成
-description: この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。
+description: このトピックでは、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346091"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778181"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>確認後支払ファイルの設定と生成
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。 
+このトピックでは、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。 
 
 確認後支払を設定し、銀行に渡す小切手の電子リストを生成します。 次に、小切手が銀行に提出されたら、銀行はそれを小切手リストと比較します。 小切手がリストの小切手と一致する場合、銀行は小切手を決済します。 小切手がリスト内の小切手と一致しない場合、銀行は確認のために小切手を保留にします。
 
@@ -72,7 +72,7 @@ ms.locfileid: "346091"
 </tr>
 <tr class="odd">
 <td><strong>確認後支払ファイルの概要</strong> ページで銀行の確認後支払ファイルを取り消します。</td>
-<td>\<strong>確認後支払ファイルの取り消し</strong>\] (BankPositivePayRecall)</td>
+<td><strong>確認後支払ファイルの取り消し</strong> (BankPositivePayRecall)</td>
 </tr>
 </tbody>
 </table>
@@ -94,7 +94,7 @@ ms.locfileid: "346091"
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />

@@ -3,7 +3,7 @@ title: 調達によって取得される資産の取得
 description: このトピックでは、固定資産と買掛金の統合を設定して、発注書または仕入先請求書から固定資産を自動作成する方法、また固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eef69de1c93de5c19b9f197838f1f2d3eb2e7645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ba3484e62caa790a5b05ae0693f69926514f6425
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355797"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778227"
 ---
 # <a name="acquire-assets-through-procurement"></a>調達によって取得される資産の取得
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、固定資産と買掛金の統合を設定して、発注書または仕入先請求書から固定資産を自動作成する方法、また固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。
+このトピックでは、固定資産と買掛金の統合を設定して、発注書または仕入先請求書から固定資産を自動作成する方法、また固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。 購買明細行の数量に関係なく、1 つの購買明細行が作成する資産は 1 つです。 複数の固定資産を作成する必要がある場合は、複数の購買明細行を作成する必要があります。
 
  固定資産と買掛金を統合するために使用できる次の方法があります。すべての固定資産で同一の方法を使用する必要があります。:
 -   発注書または仕入先請求書の明細行に固定資産番号を追加する前に、固定資産を手動で作成します。 仕入先請求書の転記時に、資産取得トランザクションが資産に自動的に転記されます。 既定では、この方法が選択されます。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7e778a06d64e4824c4604f80ea628a4f285a6a78
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 20356cc64f08d8344c054d615df2efcab8453091
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368956"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768848"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -36,8 +36,8 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 - Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 - Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
-- Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン)
-- Mac OS X 10.10 (Yosemite)、10.11 (El Capitan)、または 10.12 (Sierra)、または Apple iPad の Apple Safari (公開されている最新のバージョン)
+- Google Chrome (公開されている最新バージョン) 
+- Apple Safari (公開されている最新バージョン)
 
 各 Web ブラウザーの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。
 

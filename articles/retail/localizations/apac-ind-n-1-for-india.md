@@ -16,25 +16,24 @@ ms.search.industry: Retail
 ms.author: dmakimo
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9c47cd67664725cebad6760b3e3db54ce7d1a799
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e0b95c3f5d4a822100fb4343bf50ea79780faaaa
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369314"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760645"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インドにおけるアップグレードおよび N-1 のサポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、インドでの Phased Rollout (N-1) 小売コンポーネントの設定および使用に必要な手順を説明します。 N-1 のアップグレード手順およびワークフローは、基本的に一般的な Microsoft Dynamics 365 for Retail 環境のものと同じです。 N-1 のインストールおよび使用の一般的な情報は、[Retail のアップグレードおよび N-1 のサポート](../dev-itpro/overview-upgrade-n-minus1.md)を参照してください。 
+このトピックでは、インドでの Phased Rollout (N-1) 小売コンポーネントの設定および使用に必要な手順を説明します。 N-1 のアップグレード手順およびワークフローは、基本的に一般的な Microsoft Dynamics 365 for Retail 環境のものと同じです。 N-1 のインストールおよび使用の一般的な情報は、[Retail のアップグレードおよび N-1 のサポート](../dev-itpro/overview-upgrade-n-minus1.md)を参照してください。
 
 さらに、次の手順はアップグレードのために重要です。
 
 - Microsoft Dynamics 365 for Retail バックオフィスおよび AX 2012 Retail コンポーネントの両方が商品及びサービス税 (GST) 計算をサポートしている必要があります。 詳細については、[必要条件](#prerequisites) セクションを参照してください。
 - AX 2012 チャネル側で Microsoft Dynamics 365 for Retail のために準備されたコンフィギュレーションを使用するには、GST コンフィギュレーションのダウングレードが必要です。
 - 配送スケジュールには、Microsoft Dynamics 365 for Retail バックオフィスと AX 2012 チャンネル間で GST コンフィギュレーションおよび税計算結果を同期するために必要な、追加のアップロード ジョブおよびダウンロード ジョブが含まれます。
-
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -44,9 +43,9 @@ ms.locfileid: "369314"
 
 ## <a name="periodic-procedure-to-downgrade-tax-configuration"></a>税コンフィギュレーションをダウングレードする定期処理
 
-GST コンフィギュレーションは AX 2012 および Dynamics 365 for Retail のバージョン間で異なります。 データを変換するには、特別な定期処理手順を実行する必要があります。 この手順を実行するには、以下の内容を実行します: 
+GST コンフィギュレーションは AX 2012 および Dynamics 365 for Retail のバージョン間で異なります。 データを変換するには、特別な定期処理手順を実行する必要があります。 この手順を実行するには、以下の内容を実行します:
 
-1. 小売用バックオフィスにサインインして、**小売 > 小売 IT > N-1 から税構成を処理する** に移動します。
-2. **OK** をクリックします。
+1. Retail Headquarters にサインインして、**小売 \> Retail IT \> N-1 から税構成を処理する** に移動します。
+2. **OK**をクリックします。
 
 税構成の変更が行われて確定するたび、データを AX 2012 チャネルに送信する間に上記の操作を実行する必要があります。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
-ms.openlocfilehash: 86e759ac2ac647657cb06084c73f2b2df7e816c3
-ms.sourcegitcommit: 87a4f70fe44552487d4271c7619fc4a4ebcab107
+ms.openlocfilehash: dbead37a8b93a9eecd8de16f5eaac8329961d1c6
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "370045"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789759"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
@@ -86,7 +86,7 @@ public void testIndexHintRegularTable()
 ## <a name="automated-refresh-of-entity-store-opt-in"></a>エンティティ格納の自動化更新 (オプトイン)
 更新を自分でスケジュールする代わりに、システムにエンティティ格納の更新を管理させることができます。 有効にすると、更新パターン (1 時間毎、1 日 2 回、毎日、または毎週) を選択できます。 指定すると、システムは選択されたパターンでエンティティ格納を更新します。 システムはまた、新しい更新フォームに切り替え、ここでステータスと更新の問題が通知されます。 詳細については、[エンティティ格納の自動化更新](../../dev-itpro/analytics/automated-entity-store-refresh.md)を参照してください。
 
-## <a name="entity-store-as-a-data-lake-preview"></a>Data Lake としてのエンティティ格納 (プレビュー)
+## <a name="entity-store-as-a-data-lake-private-preview"></a>Data Lake としてのエンティティ格納 (プライベート プレビュー)
 プラットフォーム更新プログラム 23 では、エンティティ格納を Data Lake として選択できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake ストレージ Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。 この機能をプレビューして使用するには、[Insider プログラム](https://experience.dynamics.com/insider)に是非ご参加ください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化

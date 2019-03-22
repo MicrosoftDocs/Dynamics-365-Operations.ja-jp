@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b2a8eb208cf65bcc91b00e4f3192355fef45e226
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4680f221c78dd75678681821e4be149b6eb4ba36
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368488"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791407"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 
@@ -93,7 +93,7 @@ ms.locfileid: "368488"
 
 1. 特定のユーザーとしてログインする場合は、ユーザーの電子メール アドレスを、使用するサインイン アドレスに変更します。 **ユーザー情報** データ エンティティ スプレッドシートで、またはデータを読み込んだ後に **ユーザー** ページ (**システム管理** &gt; **ユーザー**) でこの変更を加えることができます。
 2. **投稿準備完了** バッチ スケジューラーを起動します。 このバッチ ジョブは、取引を自動的に転記します。 データが処理されるすべての法人のスケジューラを起動する必要があります。 このトピックで後述する「プロセス転記の準備完了」セクションの手順に従います。
-
+3. en-us ロケールを使用していない場合、パッケージが構築された形式と一致するようにソース データ形式を変更する必要があります。 データ エンティティを読み込んだら、ソース データ形式列をクリックします。値が Excel として指定される必要があります。 次のページから、Excel をもう一度選択します。 ソース データ形式ページでは、下部の高速タブは地域の設定となります。 en-us が指定されていない場合は、言語ロケールを en-us に変更します。 パッケージをロードしたら、元の en-us 以外の値に戻すことができます。 
 ## <a name="load-the-packages"></a>パッケージの読み込み
 
 データ パッケージは、特定の法人に特定の順序でロードする必要があります。 パッケージの名前の前の番号は、データを読み込む必要のある順序についてのガイダンスを提供します。 たとえば、HQUS 法人 **200-Financials-HQUS.zip** に対する Financials パッケージを読み込む前に、**100-System and Shared.zip** をインポートする必要があります。 その後、サプライ チェーン データを HQUS 法人に追加するために、**300-Supply chain 1 of 2-HQUS.zip** および **300-Supply chain 2 of 2-HQUS.zip** を読み込めます。

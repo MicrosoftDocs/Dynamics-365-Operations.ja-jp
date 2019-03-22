@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 12 以降 にオンプレミス環境を計画、設定、展開する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 95eb0d63cbc606e1b654cd4e79a9f949a4c62dad
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8811b30ab68133d5493ed7e35626140c05420561
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369671"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377918"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -530,7 +530,7 @@ Finance and Operations の展開とサービスは、オンプレミスのロー
    > テナントごとに証明書を正確に 1 回構成する必要があります。 すべてのオンプレミス環境では、同じ証明書を使用して LCS に接続できます。
    > Windows Server 2016 などのサーバー コンピューターでこれを実行する場合は、IE セキュリティ強化の構成を一時的にオフに必要があります。 そうしないと、Azure ログイン ウィンドウのコンテンツはブロックされます。
 
-1. Azure PowerShell の最新バージョンをクライアント マシンにダウンロードしてインストールします。 詳細については、[Azure PowerShell のインストールおよびコンフィギュレーション](/powershell/azure/install-azurerm-ps?view=azurermps-4.1.0&viewFallbackFrom=azurermps-4.0.0) を参照してください。
+1. Azure PowerShell の最新バージョンをクライアント マシンにダウンロードしてインストールします。 詳細については [Azure PowerShell サービス管理モジュールのインストール](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps?view=azuresmps-4.0.0) を参照してください。
 2. [顧客の Azure ポータル](https://portal.azure.com) にサインインして、グローバル管理者ディレクトリの役割があることを確認します。
 3. **インフラストラクチャ**フォルダから次のスクリプトを実行します。
     ```powershell

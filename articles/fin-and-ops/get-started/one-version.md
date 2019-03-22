@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新に関するよく寄せら�
 description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
 author: meeramahabala
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,28 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 53142252ad8b573dda45597a84944aa620b036e0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0a2559501f25df925977741367e992727f3ac368
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369804"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789807"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
 
 2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ [Dynamics 365 の更新の提供方法の変更](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/)を発表しました。 このよく寄せられる質問は、準備のために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。 必要に応じて、このトピックに追加情報を追加し続けします。
+
+## <a name="schedule-for-april-100-release"></a>4 月の 10.0 リリースのスケジュール
+
+### <a name="can-the-update-to-100-be-delayed-or-does-the-policy-for-delaying-updates-only-apply-if-you-are-using-100"></a>10.0 への更新を遅らせることができますか。 または更新を遅らせるポリシーは 10.0 を使用している場合にのみ適用されますか。
+8.1.2 または 8.1.3 を使用している場合、お客様は [10.0 リリース](whats-new-changed-10.md) を一時停止またはオプトアウトできます。 3 月上旬には、この構成をセットアップしたり、更新プログラムを一時停止する機能が LCS を通じて利用できるようになります。
+
+### <a name="with-a-release-date-in-early-april-which-ring-is-being-released-at-that-time-is-it-the-ga-ring-or-will-ga-be-released-several-weeks-later"></a>4 月上旬のリリース日について、その時点でどのリングがリリースされていますか。 それは GA リングですか。 それとも GA は数週間後にリリースされますか。
+月次リリースの [標準リリース / リング 4](public-preview-releases.md) 製品更新プログラムは、4 月の 1、2、3 週間目に予定されています。 LCS でセットアップした構成により、その特定の週に更新プログラムを受け取ります。
+ 
+4 月 10.0 リリースの場合、Microsoft は LCS でセットアップした構成に基づいて 4 月 6 日、4 月 13 日、または 4 月 20 日の週末に更新プログラムを実行します。 サンドボックスの更新プログラムは、常にその更新の 1 週間前にスケジュールされます。 コンフィギュレーション設定は 3 月上旬に利用可能になる予定です。
 
 ## <a name="service-updates"></a>サービスの更新
 
@@ -58,7 +68,9 @@ ms.locfileid: "369804"
 
 下位互換性では、バイナリと機能の互換性がカバーされます。 バイナリ互換性は、カスタマイズを再コンパイル、再設定、または再展開しなくても、あらゆるランタイム環境に更新プログラムを適用できることを意味します。 また、デザイン時の開発環境で、X++ パブリックおよび保護された API とメタデータが変更または削除されないことも意味します。 Microsoft が古い形式の API を削除することによって互換性をなくす必要がある場合、廃止スケジュールが 12 か月前に発表されます。 機能互換性は、ユーザー エクスペリエンスについてで、新しいエクスペリエンスはすべてオプトインになります。
 
-下位互換性には、非 X++/メタデータ API は含まれていません。 Microsoft は、事前に通知することなく、製品が使用する依存関係を更新し、依存関係を削除する権限を保有します。 Microsoftは、明記された場合を除いて、依存ソフトウェア ライブラリの下位互換性を維持することを約束しません。
+下位互換性には、非 X++/メタデータ API は含まれていません。 Microsoft は、事前に通知することなく、製品が使用する依存関係を更新し、依存関係を削除する権限を保有します。 Microsoftは、明記された場合を除いて、依存ソフトウェア ライブラリの下位互換性を維持することを約束しません。 
+
+非推奨のガイドライン、非推奨のメソッドおよびメタデータ要素の詳細については、[メソッドとメタデータの要素の非推奨](../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md) を参照してください。
 
 ### <a name="do-these-updates-apply-to-on-premises"></a>これらの更新プログラムはオンプレミスで適用されますか?
 
@@ -78,13 +90,25 @@ ms.locfileid: "369804"
 
 ユーザーは、LCS の環境の詳細ページでタイルを使用して最新バージョンに更新できます。 Microsoft により更新プログラムがリリースされたら、タイルに最新の更新プログラムが表示されます。 ユーザーは、サンドボックスと製造環境で更新エクスペリエンスを経由して独自に更新プログラムを適用することができます。 ドキュメントは docs.microsoft.com でも入手可能になります。
 
+### <a name="how-do-i-update-the-production-environment-to-the-same-version-after-microsoft-updates-the-sandbox-environment"></a>Microsoft がサンドボックス環境を更新した後で、実稼働環境を同じバージョンに更新する方法を教えてください。
+
+> [!Important]
+> このセクションでは現在利用できない機能について説明します。 機能性および機能は変更されることがあります。
+
+Microsoft がサンドボックス環境を更新すると、更新に使用されるパッケージはプロジェクトの資産ライブラリに保存されます。 パッケージ名の先頭には "サービスの更新" という語が付いています。 そのパッケージはすでにサンドボックス環境に適用済みのため、このパッケージをリリース候補としてマークできます。 その後で実稼働環境に移動し、他の更新プログラムを適用するのと同様にパッケージを適用するようスケジュールすることができます。
+
 ### <a name="what-is-the-expected-downtime"></a>予想されるダウンタイムはどのくらいですか ?
 
 更新が正常に完了するために予想されるダウンタイムは 1 時間 30 分です。 ただし、 更新プログラムの適用時に問題が発生する場合、3 時間のダウンタイムを要求します。 マイクロソフトは、必要とするダウンタイムを減らすために積極的に取り組んでいます。改善は数か月以内に反映されます。
 
 ### <a name="whats-the-process-for-deprecation"></a>廃止のプロセスを教えてください。
 
-廃止は、廃止の 12 か月前に通知により発表されます。 機能は、メジャー アップグレード時にのみ非推奨になります。
+[削除済または非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックで、削除済の機能と非推奨の機能の違いを次のように述べます:
+
+- *削除された*機能は製品では使用できません。
+- *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
+
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 ### <a name="can-i-delay-an-update"></a>更新プログラムを延期することはできますか?
 

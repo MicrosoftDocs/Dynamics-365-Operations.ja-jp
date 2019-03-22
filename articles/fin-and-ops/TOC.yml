@@ -35,24 +35,22 @@ items:
     - name: 新機能および変更された機能
       href: get-started/whats-new-changed.md
       items:
-      - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
-        href: get-started/one-version.md
-      - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
         href: get-started/mainstream-support-ax-2009-2012.md
-      - name: 削除済みまたは推奨されない機能
+      - name: 削除済みまたは非推奨の機能
         href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
       - name: 延期された AX 2012 の機能
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: オンプレミス配置で実装されていない機能
         href: get-started/features-not-implemented-on-prem.md
+      - name: Finance and Operations バージョン 10.0.1 (2019 年 4 月) の機能のプレビュー
+        href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations バージョン 10.0 (2019 年 4 月)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations バージョン 8.1.3 (2019 年 1 月)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Finance and Operations platform update 25 (2019 年 4 月) の機能のプレビュー
+        href: get-started/whats-new-platform-25.md
       - name: Platform update 24 (2019 年 3 月)
         href: get-started/whats-new-platform-update-24.md
       - name: Platform update 23 (2019 年 1 月)
@@ -202,6 +200,29 @@ items:
       href: get-started/move-lcs-implementation-project-tenant.md
     - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: 1 つのバージョンのサービス更新
+    href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+    items:
+    - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
+      href: get-started/one-version.md
+    - name: ソフトウェアのライフサイクル ポリシー - クラウド
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+    - name: ソフトウェアのライフサイクル ポリシー - オンプレミス
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: 標準および最初のリリース サービス更新
+      href: get-started/public-preview-releases.md
+    - name: クラウド環境への更新プログラムの適用
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md
+    - name: サービスの更新のコンフィギュレーション
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+    - name: サービスの更新の一時停止
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+    - name: サービスの更新に関する通知を受け取る
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+    - name: データ タスクの自動化
+      href: ../dev-itpro/data-entities/data-task-automation.md
+    - name: Regression Suite Automation Tool
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
   - name: ビジネス イベント
     href: ../dev-itpro/business-events/home-page.md
     items:
@@ -401,7 +422,7 @@ items:
             href: ../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Finance and Operations から Field Service への倉庫の同期
             href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-          - name: Finance and Operations から Field Service へのワーク オーダーの同期
+          - name: Field Service から Finance and Operations へのプロジェクトのワーク オーダーの同期
             href: ../supply-chain/sales-marketing/synchronize-work-orders.md
         - name: Project Service Automation 統合のコンフィギュレーション
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
@@ -1412,10 +1433,12 @@ items:
           href: ../financials/localizations/latam-bra-nfe-certs.md
         - name: NF E XML ドキュメントと DANFE の設定、インポートおよび確認
           href: ../financials/localizations/latam-bra-set-up-import-nfe.md
-        - name: NF-e 連邦税パラメーターの設定
+        - name: NF-e 連邦パラメーターの設定
           href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
         - name: 会計施設の NF-e パラメーターの設定
           href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+      - name: SPED ECD
+        href: ../financials/localizations/latam-bra-sped-ecd.md
       - name: SPED Reinf 税明細書
         href: ../financials/localizations/latam-bra-sped-reinf.md
       - name: 法人のパラメーター
@@ -2236,6 +2259,8 @@ items:
           href: ../financials/localizations/rus-sales-books-purchase-books.md
       - name: 固定資産
         items:
+        - name: 固定資産の設定
+          href: ../financials/localizations/rus-set-up-fixed-assets.md
         - name: 固定資産の取得および使用
           href: ../financials/localizations/rus-fixed-asset-acquisition.md
         - name: 固定資産取得の登録
@@ -2266,6 +2291,18 @@ items:
           href: ../financials/localizations/rus-bonus-depreciation.md
         - name: 減価償却の計算
           href: ../financials/localizations/rus-depreciation-calculation.md
+      - name: 買掛金勘定と売掛金勘定
+        items:
+        - name: 支払の請求書
+          href: ../financials/localizations/rus-invoice-payment.md
+        - name: 決済に関する分析コード コントロールの設定
+          href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: キャッシュ フロー管理
+          href: ../financials/localizations/rus-cash-flow.md
+      - name: レポート
+        items:
+        - name: 財務諸表
+          href: ../financials/localizations/rus-financial-reports.md
       - name: 会社の部門
         href: ../financials/localizations/rus-company-divisions.md
       - name: 通貨トランザクションに対する為替レートの設定
@@ -2280,12 +2317,14 @@ items:
         href: ../financials/localizations/rus-invoice-payment.md
       - name: 財務諸表
         href: ../financials/localizations/rus-financial-reports.md
-      - name: 購買帳簿の作成
-        href: ../financials/localizations/rus-sales-books-purchase-books.md
+      - name: 電子形式の会計レポート
+        href: ../financials/localizations/rus-accounting-reporting.md
+      - name: キャッシュ フロー管理
+        href: ../financials/localizations/rus-cash-flow.md
     - name: サウジアラビア
       href: ../financials/localizations/saudi-arabia.md
       items:
-      - name: 売上税
+      - name: 消費税
         href: ../financials/localizations/apac-sau-sales-tax.md
       - name: サウジアラビアのザカート レポート
         href: ../financials/localizations/emea-sau-zakat-reporting.md
@@ -2365,8 +2404,10 @@ items:
         href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
       - name: 受取人払い VAT 品目のグループ、ルール、およびパラメーターの設定
         href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-      - name: 受取人払い VAT の売上税グループの設定
+      - name: 受取人払い VAT の消費税グループの設定
         href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+      - name: VAT に関する税のデジタル化
+        href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
     - name: 米国
       href: ../financials/localizations/united-states.md
       items:
@@ -2827,6 +2868,8 @@ items:
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Application update 7.3 での電子申告フレームワーク API の変更
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: 生成されるドキュメントに対するカスタム ストレージの指定
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: 埋め込み型の解析ソリューション
       items:
       - name: ワークスペースの埋め込み Power BI
@@ -3281,6 +3324,8 @@ items:
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: ワークフロー タイプのレポート
         href: organization-administration/workflow-types-report.md
+      - name: ワークフローに関するよく寄せられる質問
+        href: organization-administration/workflow-FAQ.md
     - name: 警告
       href: get-started/alerts-overview.md
       items:
@@ -3799,8 +3844,6 @@ items:
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: 販売契約書の履行
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: 新しい売買契約の作成
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: 顧客リベートの生成および処理
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: 支払のリベートの処理
@@ -3827,6 +3870,8 @@ items:
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: 取引割引
       href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: 新しい売買契約の作成
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: サービス管理
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
@@ -4241,9 +4286,9 @@ items:
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-ms.openlocfilehash: cb58a9f8fa8305a3d8b956804ef74bef86ca04b9
-ms.sourcegitcommit: 7e0097bdd835e04521bffbce2fd802e6381dde0d
+ms.openlocfilehash: a1c64fd645063db11c632b34e8e0b934c97f2251
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "376921"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836399"

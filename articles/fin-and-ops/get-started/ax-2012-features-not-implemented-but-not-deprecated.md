@@ -3,7 +3,7 @@ title: 延期された AX 2012 の機能
 description: このトピックでは、Microsoft Dynamics AX 2012 の延期された機能と、その機能が AX 7.0 リリース以降に実装されているかどうかを示しています。
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 5b204bbf8804caeaa35cd7e3247c9d41f241fa33
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 82dc0dc6be87354fed7a93991e1f62c2927fce09
+ms.sourcegitcommit: d9c48adeff6fed1d6c84d74036f4a50a793503f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368778"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "377969"
 ---
 # <a name="ax-2012-features-that-were-postponed"></a>延期された AX 2012 の機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 の延期された機能を一覧表示します。 これらの機能は Microsoft DynamicsAX 7.0 では実装されませんでした。 次の表では、**現在の状態** 列は AX 7.0 リリース以降に機能が実装されたかどうかを示します。
+このトピックでは、Microsoft Dynamics AX 2012 の延期された機能を一覧表示します。 これらの機能は Microsoft Dynamics AX 7.0 では実装されませんでした。 次の表では、**現在の状態** 列は AX 7.0 リリース以降に機能が実装されたかどうかを示します。
 
 製品の各バージョンがリリースされたときの詳細な一覧については、[ソフトウェアのライフ サイクルポリシーおよびクラウド リリース](../../dev-itpro/migration-upgrade/versions-update-policy.md) を参照してください。
 
@@ -37,7 +37,7 @@ ms.locfileid: "368778"
 <tr>
 <th>延期された AX 2012 の機能</th>
 <th>説明</th>
-<th>現在の状態 (2018 年 10 月現在)</th>
+<th>現在の状態 (2019 年 2 月現在)</th>
 </tr>
 </thead>
 <tbody>

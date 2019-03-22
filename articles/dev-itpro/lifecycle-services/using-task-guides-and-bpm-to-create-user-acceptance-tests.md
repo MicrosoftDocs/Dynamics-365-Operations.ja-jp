@@ -1,5 +1,5 @@
 ---
-title: タスク ガイドおよび BPM を使用して、ユーザー承認テスト ライブラリを作成する
+title: ユーザー承認テストの Regression Suite Automation Tool
 description: このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。
 author: kfend
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d6264382fd859034135f4f129c441d9fdc6c9893
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8665f4e0739ca05fa552216841f97f82fbc82536
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369855"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789858"
 ---
-# <a name="create-user-acceptance-test-libraries-by-using-task-recordings-and-bpm"></a>タスク記録および BPM を使用して、ユーザー承認テスト ライブラリを作成する
+# <a name="regression-suite-automation-tool-for-user-acceptance-tests"></a>ユーザー承認テストの Regression Suite Automation Tool
 
 [!include [banner](../includes/banner.md)]
 

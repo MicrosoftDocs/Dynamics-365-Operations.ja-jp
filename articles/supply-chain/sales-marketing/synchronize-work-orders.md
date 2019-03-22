@@ -3,7 +3,7 @@ title: Field Service から Finance and Operations へのワーク オーダー�
 description: このトピックでは、Microsoft Dynamics 365 for Field Service から Microsoft Dynamics 365 for Finance and Operations にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329853"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836445"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Field Service から Finance and Operations へのワーク オーダーとプロジェクトの同期
 
@@ -34,9 +34,11 @@ ms.locfileid: "329853"
 
 [![Finance and Operations および Field Service 間の業務プロセスの同期](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-使用されている **Field Service 製品 (Finance and Operations から Field Service)** テンプレートは、見込顧客を現金化の**製品 (Finance and Operations から Sales) – 直接**テンプレートに基づいています。 詳細については、[製品 (Finance and Operations から Sales) - 直接](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct) を参照してください。
+使用されている**ワーク オーダーとプロジェクト (Field Service から Finance and Operations)** テンプレートは、**ワーク オーダー (Field Service から Finance and Operations)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Finance and Operations の販売注文との同期](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
-このトピックでは、**Field Service 製品 (Finance and Operations から Field Service)** および **Field Service 製品 (Finance and Operations から Field Service)** テンプレートの間の違いのみを説明します。
+このトピックでは、2 つのテンプレートの相違のみについて説明します:
+- **ワーク オーダーとプロジェクト (Field Service から Finance and Operations)**
+- **ワーク オーダー (Field Service から Finance and Operations)**
 
 主な違いは、このテンプレートには Field Service のワーク オーダーに割り当てられたプロジェクト番号のマッピングが含まれており、Finance and Operations で作成された販売注文にプロジェクト番号が含まれ、関連付けられているプロジェクトの請求が確実に行われるようにしていることです。 これに加え、テンプレートは高度なクエリおよびフィルター処理を使用します。
 
@@ -60,18 +62,18 @@ ms.locfileid: "329853"
 
 次の図は、データ統合のテンプレート マッピングを示しています。
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheader"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderHeader
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheader"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderHeader
 
 [![データ統合のテンプレートのマッピング](./media/FSWOP1.png)](./media/FSWOP1.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheaderproject"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderHeaderProject
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheaderproject"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderHeaderProject
 
 [![データ統合のテンプレートのマッピング](./media/FSWOP2.png)](./media/FSWOP2.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderproduct"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderProduct
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderproduct"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderProduct
 
 [![データ統合のテンプレートのマッピング](./media/FSWOP3.png)](./media/FSWOP3.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderService
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderservice"></a>ワーク オーダーとプロジェクト (Field Service から Finance and Operations): WorkOrderService
 
 [![データ統合のテンプレートのマッピング](./media/FSWOP4.png)](./media/FSWOP4.png)

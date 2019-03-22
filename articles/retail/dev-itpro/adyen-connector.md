@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6b84157df0da9ffb1960d4fe9d8a739d9643d333
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bac7daf6788b16d95b1aef58eb6275d7023d4ae5
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369453"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834678"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -36,8 +36,8 @@ ms.locfileid: "369453"
 | 相談 | 説明 |
 |---|---|
 | 支払コネクタ | Microsoft Dynamics 365 for Retail (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準の支払ソフトウェア開発キット (SDK) を使用して実装されました。 |
-| カードあり | **INamedRequestHandler** インターフェイスを使用して支払ターミナルが実装されるとき、通常はカードあり支払コネクタと呼ばれます。 このタイプの支払コネクタは物理カードがある取引をサポートするため、*カードあり* という語が使用されます。 |
-| カードなし | バック オフィス、コール センター、または電子商取引統合での使用を意図した支払コネクタは、**IPaymentProcessor** インターフェイスを使用して実装されます。 通常これらはカードなし支払コネクタと呼ばれます。 |
+| カードあり | Dynamics 365 販売時点管理への支払ターミナル コネクタで物理的なカードが提示および使用される支払トランザクションを参照します。 |
+| カードなし | 電子商取引またはコール センター シナリオなど、現物カードが提示されない支払トランザクションを参照します。 これらのシナリオでは、支払に関連する情報は、電子商取引Webサイト、コール センター フロー、または販売時点管理上または支払ターミナルで手動で入力されます。 |
 
 ## <a name="overview"></a>概要
 
@@ -47,77 +47,88 @@ ms.locfileid: "369453"
 - **[Adyen でサイン アップ](#Sign-up-with-Adyen)** – このセクションでは Adyen でマーチャント口座にサイン アップする方法について説明します。
 - **[設定およびコンフィギュレーション](#Setup-and-configuration)** – このセクションでは、販売時点管理 (POS)、コール センター、および電子商取引チャネルで Adyen 向け Dynamics 365 Payment Connector を設定およびコンフィギュレーションする方法について詳細に説明します。
 
-## <a name="supported-features-functionality-and-payment-terminals"></a>サポートされているフィーチャ、機能、および支払ターミナル
+## <a name="supported-features-functionality-versions-and-terminals"></a>サポートされているフィーチャ、機能、バージョン、およびターミナル
 
 独創的な Adyen 向け Dynamics 365 Payment Connector は標準支払 SDK を使用します。 そのため、他の支払コネクタのために使用することができない特別な機能はありません。
 
-### <a name="supported-versions-of-microsoft-dynamics"></a>サポートされているバージョンの Microsoft Dynamics
+### <a name="supported-versions"></a>サポートされているバージョン
 
+#### <a name="microsoft-dynamics-365-supported-versions"></a>Microsoft Dynamics 365 のサポートされているバージョン
 ファーストパーティーの独創的な Adyen 向け Dynamics 365 Payment Connector は Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) またはそれ以降、および Microsoft Dynamics 365 for Retail バージョン 8.1.3 またはそれ以降でサポートされます。 ただし、サード パーティは Microsoft Dynamics 365 の初期バージョンのために他の Adyen 用支払コネクタを開発することができます。
 
+#### <a name="supported-adyen-firmware-versions"></a>サポートされている Adyen ファームウェアバージョン
+次の表は、Microsoft Dynamics 365 for Retail POS の各バージョンでサポートされている最小および最大の Adyen ファームウェア バージョンを示しています。
+
+# <a name="813tab8-1-3"></a>[8.1.3](#tab/8-1-3)
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_35p15 |
+
+# <a name="100tab10-0"></a>[10.0](#tab/10-0)
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_35p15 |
+
+# <a name="1001tab10-0-1"></a>[10.0.1](#tab/10-0-1)
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_35p15 | adyen_v1_35p15 |
+
+---
+
 ### <a name="supported-payment-terminals"></a>サポートされる支払端末
-
 Adyen 向け Dynamics 365 Payment Connector はデバイスに依存しない [Adyen 支払端末 API](https://www.adyen.com/blog/introducing-the-terminal-api) を活用します。 このアプリケーション プログラミング インターフェイス (API) がサポートするすべての支払端末をサポートします。 サポート対象の支払端末の完全な一覧については、[Adyen POS 端末](https://www.adyen.com/pos-payments/terminals)ページを参照してください。
-
-### <a name="supported-input-methods"></a>サポートされている入力方法
-
-| コネクタ タイプ | ディップ | 機械に通す | タップ | 手動入力 |
-|---|---|---|---|---|
-| カードあり | 有 | 有 | 有 | 有 |
-| カードなし | 無 | 無 | 無 | 有 |
 
 ### <a name="supported-payment-instruments"></a>サポートされる支払機器
 
 #### <a name="supported-debit-and-credit-cards"></a>サポートされているデビット カードまたはクレジット カード
 
-| ブランド | バリアント | サポート | カードあり | カードなし |
-|---|---|---|---|---|
-| MasterCard | クレジット | ✔ | 有 | 有 |
-| MasterCard | デビット | ✔ | 有 | 有 |
-| MasterCard | Alpha Bank Bonus | ✔ | 有 | 有 |
-| MasterCard | Apple Pay | ✔ | 有 | 無 |
-| MasterCard | Samsung Pay | ✔ | 有 | 無 |
-| MasterCard | Maestro | ✔ | 有 | 有 |
-| MasterCard | Maestro Samsung Pay | ✔ | 有 | 無 |
-| MasterCard | Maestro UK | ✔ | 有 | 有 |
-| VISA | クレジット | ✔ | 有 | 有 |
-| VISA | デビット | ✔ | 有 | 有 |
-| VISA | Alpha Bank Bonus | ✔ | 有 | 有 |
-| VISA | Android Pay | ✔ | 有 | 無 |
-| VISA | Apple Pay | ✔ | 有 | 無 |
-| VISA | Samsung Pay | ✔ | 有 | 無 |
-| VISA | VISA Checkout | ✔ | 有 | 有 |
-| VISA | VISA Dankort | ✔ | 有 | 有 |
-| VISA | VISA Hipotecario | ✔ | 有 | 有 |
-| VISA | VISA Aravia Card | ✔ | 有 | 有 |
-| AMEX | クレジット | ✔ | 有 | 有 |
-| AMEX | デビット | ✔ | 有 | 有 |
-| AMEX | Android Pay | ✔ | 有 | 無 |
-| AMEX | Apple Pay | ✔ | 有 | 無 |
-| AMEX | Samsung Pay | ✔ | 有 | 無 |
-| AMEX | AMEX Commercial | ✔ | 有 | 有 |
-| AMEX | AMEX Consumer | ✔ | 有 | 有 |
-| AMEX | AMEX Corporate | ✔ | 有 | 有 |
-| AMEX | AMEX Small Business | ✔ | 有 | 有 |
-| 検出 | 標準 | ✔ | 有 | 有 |
-| 検出 | Android Pay | ✔ | 有 | 無 |
-| 検出 | Apple Pay | ✔ | 有 | 無 |
-| 検出 | Samsung Pay | ✔ | 有 | 無 |
-| Diners | 標準 | ✔ | 有 | 有 |
-| Dineromail | 標準 | ✔ | 有 | 有 |
-| JCB | 標準 | ✔ | 有 | 有 |
-| Union Pay* | 標準 | 将来のリリースでサポートが追加されます。 | 無 | 該当なし |
-| Interac Debit | 標準 | 将来のリリースでサポートが追加されます。 | 無 | 無 |
+| ブランド | バリアント | カードあり | 電子商取引 | コール センター |
+|---|---|:-:|:-:|:-:|
+| MasterCard | クレジット | ✔ | ✔ | ✔ |
+| MasterCard | デビット | ✔ | ✔ | ✔ |
+| MasterCard | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| MasterCard | Apple Pay | ✔ |  |  |
+| MasterCard | Samsung Pay | ✔ |  |  |
+| MasterCard | Maestro | ✔ | ✔ | ✔ |
+| MasterCard | Maestro Samsung Pay | ✔ |  |  |
+| MasterCard | Maestro UK | ✔ | ✔ | ✔ |
+| VISA | クレジット | ✔ | ✔ | ✔ |
+| VISA | デビット | ✔ | ✔ | ✔ |
+| VISA | Alpha Bank Bonus | ✔ | ✔ | ✔ |
+| VISA | Android Pay | ✔ |  |  |
+| VISA | Apple Pay | ✔ |  |  |
+| VISA | Samsung Pay | ✔ |  |  |
+| VISA | VISA Checkout | ✔ | ✔ | ✔ |
+| VISA | VISA Dankort | ✔ | ✔ | ✔ |
+| VISA | VISA Hipotecario | ✔ | ✔ | ✔ |
+| VISA | VISA Aravia Card | ✔ | ✔ | ✔ |
+| AMEX | クレジット | ✔ | ✔ | ✔ |
+| AMEX | デビット | ✔ | ✔ | ✔ |
+| AMEX | Android Pay | ✔ |  |  |
+| AMEX | Apple Pay | ✔ |  |  |
+| AMEX | Samsung Pay | ✔ |  |  |
+| AMEX | AMEX Commercial | ✔ | ✔ | ✔ |
+| AMEX | AMEX Consumer | ✔ | ✔ | ✔ |
+| AMEX | AMEX Corporate | ✔ | ✔ | ✔ |
+| AMEX | AMEX Small Business | ✔ | ✔ | ✔ |
+| 検出 | 標準 | ✔ | ✔ | ✔ |
+| 検出 | Android Pay | ✔ |  |  |
+| 検出 | Apple Pay | ✔ |  |  |
+| 検出 | Samsung Pay | ✔ |  |  |
+| Diners | 標準 | ✔ | ✔ | ✔ |
+| Dineromail | 標準 | ✔ | ✔ | ✔ |
+| JCB | 標準 | ✔ | ✔ | ✔ |
+| Union Pay* | 標準 | ✔ | 適用できません | 適用できません |
+| Interac Debit | 標準 | 将来のリリースでサポートが追加されます。 | 将来のリリースでサポートが追加されます。 | 将来のリリースでサポートが追加されます。 |
 
 *Adyen は Union Pay の自動更新 token をサポートしないため、カードなし購買で使用することはできません。
 
-
 #### <a name="supported-gift-cards"></a>サポートされるギフト カード
-
 | スキーム | カードあり | カードなし |
-|---|---|---|
-| Givex | ✔ (バージョン 8.1.3) | 将来のリリースでサポートが追加されます。 |
-| SVS | ✔ (バージョン 8.1.3) | 将来のリリースでサポートが追加されます。 |
+|---|:-:|---|
+| Givex | ✔ | 将来のリリースでサポートが追加されます。 |
+| SVS | ✔ | 将来のリリースでサポートが追加されます。 |
 
 Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフト カード スキーマをサポートするには、追加手順完了する必要があります。 詳細については、[外部ギフト カードのサポート](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card)を参照してください。
 
@@ -126,23 +137,72 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | スキーム | カードあり | カードなし |
 |---|---|---|
 | Alipay | 将来のリリースでサポートが追加されます。 | 無 |
-| WeChat | 将来のリリースでサポートが追加されます。 | 無 |
+| WeChat | 将来のリリースでサポートが追加されます。 | いいえ |
+
+#### <a name="supported-card-present-input-methods"></a>サポートされているカード提示入力方法
+| 入力方法 | サポート | 摘要 |
+|---|:-:|---|
+| ディップ | ✔ | |
+| 機械に通す | ✔ | |
+| タップ | ✔ | |
+| POS UI を通じて手動入力。 | ✔ | 暗証番号入力をサポートしていません。 |
+| 支払ターミナルを通じて手動入力。 |  | 暗証番号入力をサポートしています。 | 
+
+#### <a name="supported-card-present-countries"></a>カード提示がサポートされている国
+| 国 | サポート |
+| --- | :-: |
+| オーストラリア | ✔ |
+| オーストリア | ✔ |
+| ベルギー | ✔ |
+| カナダ | ✔ |
+| クロアチア | ✔ |
+| キプロス | ✔ |
+| チェコ共和国 | ✔ |
+| デンマーク | ✔ |
+| エストニア | ✔ |
+| フィンランド | ✔ |
+| フランス | ✔ |
+| ドイツ | ✔ |
+| ギリシャ | ✔ |
+| ハンガリー | ✔ |
+| 香港 | ✔ |
+| アイスランド | ✔ |
+| アイルランド | ✔ |
+| イタリア | ✔ |
+| ラトビア | ✔ |
+| リトアニア | ✔ |
+| オランダ | ✔ |
+| ノルウェー | ✔ |
+| ポーランド | ✔ |
+| ポルトガル | ✔ |
+| シンガポール | ✔ |
+| スロバキア | ✔ |
+| スロベニア | ✔ |
+| スイス | ✔ |
+| スペイン | ✔ |
+| スウェーデン | ✔ |
+| スイス | ✔ |
+| 英国 | ✔ |
+| 米国 | ✔ |
+| ブラジル | 2019 年第 1 四半期 |
+
+#### <a name="supported-card-not-present-countries"></a>カード不提示がサポートされている国
+電子商取引またはコール センターなどのカード不提示シナリオでは、特別な国間、通貨間、市場間の考慮事項が適用されます。 詳細は、<MicrosoftDynamics@adyen.com> にお問い合わせください
 
 #### <a name="supported-dynamics-365-payment-features"></a>サポートされる Dynamics 365 支払フィーチャ
-
 次の表は、Adyen 向け Dynamics 365 Payment Connector がサポートする一連の Dynamics 365 支払フィーチャを示します。 これらのフィーチャは、2018 年12 月に支払 SDK および一部の小売コンポーネントで導入された拡張機能を使用します。 それらは Adyen 向け Dynamics 365 Payment Connector 専用ではありません。 異なる支払端末に対するこれらの拡張機能を取得する方法の詳細については、[支払端末のエンドツーエンド支払統合を作成する](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)を参照してください。
 
 | スキーム | カードあり | カードなし |
-|---|---|---|
-| 重複支払保護 | はい (バージョン 8.1.3) | 無 |
-| オムニ チャネルのトークン化 | はい (バージョン 8.1.3) | はい (バージョン 8.1.3) |
-| リンクされた払戻 | 将来のリリースでサポートが追加されます。 | 将来のリリースでサポートが追加されます。 |
+|---|:-:|:-:|
+| [重複支払保護](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| オムニ チャネルのトークン化 | ✔ | ✔ |
+| リンクされた払戻 | ✔<br>(10.0.1 以降) | ✔<br>(10.0.1 以降) |
 
 ## <a name="sign-up-with-adyen"></a>Adyen でサインアップ
 
-Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使用する別の契約を保有している必要があります。 Adyen のサービスの詳細、または Adyen 向け Dynamics 365 Payment Connector で使用することができるテスト商業口座の作成の詳細については、[Adyen web サイト](https://www.adyen.com/partners)を参照してください。
+Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使用する別の契約を保有している必要があります。 Adyen のサービスの詳細について、またはテスト商業アカウントを作成するには、[Adyen Web サイト](https://www.adyen.com/partners)を参照してください。
 
-直接 Adyen から連絡を受けるようにするには、<partnerships@adyen.com> に電子メールを送信します。 電子メールの件名行でに、「Microsoft Dynamics コネクタ」という語を含めます。 電子メールの本文には、照会を正しくルーティングすることができるように、十分な情報を含める必要があります。
+直接 Adyen から連絡を受けるようにするには、<MicrosoftDynamics@adyen.com> に電子メールを送信します。 電子メールの件名行でに、「Microsoft Dynamics コネクタ」という語を含めます。 電子メールの本文には、照会を正しくルーティングすることができるように、十分な情報を含める必要があります。
 
 - 会社名
 - ビジネスの特性 (たとえば、「商社」または「Microsoft パートナー」)
@@ -179,12 +239,12 @@ POS 端末、コール センター、または電子商取引で支払を処理
 3. **支払サービス アカウント** タブで、以下の情報を入力します。
 
     | フィールド | 説明 | 必須 | 自動セット | サンプル値 |
-    |---|---|---|---|---|
-    | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector のアセンブリ名を入力します。 | 有 | 有 | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
-    | サービス アカウント ID | 商社のプロパティの設定のために一意の識別しを入力します。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | 有 | 有 | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+    |---|---|:-:|:-:|---|
+    | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
+    | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
-    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | `https://terminal-api-live.adyen.com/sync` |
+    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | このフィールドは、`Payment service account` 用 **クラウド** にセットする必要があります。 | 有 | 有 | クラウド |
     | ローカル パスワード フレーズ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
@@ -227,12 +287,12 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 3. **コネクタ プロパティ** セクションで、以下の情報を入力します。
 
     | フィールド | 説明 | 必須 | 自動セット | サンプル値 |
-    |---|---|---|---|---|
-    | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector のアセンブリ名を入力します。 | 有 | 有 | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
-    | サービス アカウント ID | 商社のプロパティの設定のために一意の識別しを入力します。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | 有 | 有 | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+    |---|---|:-:|:-:|---|
+    | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
+    | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
-    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | `https://terminal-api-live.adyen.com/sync` |
+    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | これは POS 端末では **ローカル** にセットする必要があります。 別のターミナル API アーキテクチャの詳細については、Adyen Web サイトの[ターミナル API の導入](https://www.adyen.com/blog/introducing-the-terminal-api)ページを参照してください。 | 有 | 有 | ローカル |
     | ローカル パスワード フレーズ | 支払端末の Adyen キー パスフレーズを入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | keypassphrase123 |
@@ -297,12 +357,12 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 5. 以下の追加情報を入力します。
 
     | フィールド | 説明 | 必須 | 自動セット | サンプル値 |
-    |---|---|---|---|---|
-    | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector のアセンブリ名を入力します。 | 有 | 有 | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
-    | サービス アカウント ID | 商社のプロパティの設定のために一意の識別しを入力します。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | 有 | 有 | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+    |---|---|:-:|:-:|---|
+    | アセンブリ名 | Adyen 向け Dynamics 365 Payment Connector の自動入力されたアセンブリ名。 | はい | はい | *バイナリ名* |
+    | サービス アカウント ID | 商社のプロパティの設定のための自動入力された一意の識別子。 この識別子は支払トランザクションで記録され、下位のプロセス (請求など) が使用する商業プロパティを識別します。 | はい | はい | *Guid* |
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 | 有 | 有 | ライブ |
-    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | `https://terminal-api-live.adyen.com/sync` |
+    | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
     | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
     | ローカル パスワード フレーズ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |

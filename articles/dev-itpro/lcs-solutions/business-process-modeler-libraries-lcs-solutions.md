@@ -15,12 +15,12 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 5a923da121bd7ee81027312b3a1b8c2908eb2a7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7fcac90fd8d0b3a96ebd8f60599173be81c6aedc
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369527"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377867"
 ---
 # <a name="set-up-business-process-modeler-libraries-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定
 
@@ -28,8 +28,7 @@ ms.locfileid: "369527"
 
 このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 
-<a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
----------------------------------
+## <a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
 
 BPM ライブラリを作成する 2 つの方法があります。 明細行記録またはタスク記録がない新しいライブラリを作成、または既存のライブラリをコピーすることができます。
 

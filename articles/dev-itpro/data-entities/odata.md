@@ -3,7 +3,7 @@ title: データ プロトコル (OData) を開く
 description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92c58076e05c8b7642ab8c7a7d82782014f3a713
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c6c488abef6ada46ccebf92609fb854fa14c02f0
+ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369335"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "378103"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -199,8 +199,9 @@ public int CalculateMaintenanceDuration()
 この例では、**SysODataActionAttribute** クラスがアクションとして公開されている **CalculateMaintenanceDuration** メソッドを修飾します。 属性の最初の引数は公開されているアクションの名前で、2 番目の引数はこのアクションが常に利用可能かどうかを示します。 アクションとして公開されているメソッドは、任意のプリミティブ型または別のパブリックの更新可能なビューを返すことができます。 このメソッドが公開されると、OData $ メタデータに表示されます。 次に例を示します。
 
 ```
-<Action Name="CalcMaintenanceDuration" m:IsAlwaysBindable="true" IsBindable="true" ReturnType="Edm.Int32">
+<Action Name="CalcMaintenanceDuration" IsBound="true">
     <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
+    <ReturnType Type="Edm.String" />
 </Action>
 
 ```
@@ -300,3 +301,6 @@ public static void CreateVendor(Resources context)
 
 ### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
 列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには、gitHub のヘルパー コード <https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs> を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で Odata ロジックの処理を進めるために使用できます。
+
+### <a name="array-fields"></a>配列フィールド
+OData はエンティティで配列フィールドをサポートしていません。 OData で使用されるエンティティを設計するときにこれを考慮する必要があります。

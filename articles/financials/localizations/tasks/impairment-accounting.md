@@ -3,7 +3,7 @@ title: 減損会計の共通パラメーターおよび転記プロファイル�
 description: このタスクでは、減損会計の共通パラメーターと転記プロファイルの定義方法が確認できます。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5bf676d03d5561d26ce84bbf64010e321725a49
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e92403a1929b92a8364c377c99e17a877b737f56
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371034"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771268"
 ---
 # <a name="setup-impairment-accounting-common-parameters-and-posting-profile"></a>減損会計の共通パラメーターおよび転記プロファイルの設定
 
@@ -43,9 +43,10 @@ ms.locfileid: "371034"
 2. [減損管理] セクションを展開します。
 3. [警告期間 (月数) ] フィールドに、数値を入力します。
     * 例: 6 か月  
-4. [番号順序] タブをクリックします。
-    * 次の番号順序コードが設定されていることを確認します: •減損のドキュメント ID •減損テスト ID •キャッシュ生成単位番号        
-    *   
+4. 番号順序タブをクリックし、次の番号順序コードが設定されていることを確定します。  
+ - 減損のドキュメント ID
+ - 減損損失テスト ID
+ - 資産グループ番号        
 
 ## <a name="set-up-posting-profile"></a>転記プロファイルを設定
 1. [固定資産] > [設定] > [固定資産転記プロファイル] の順に移動します。

@@ -3,7 +3,7 @@ title: 拡張機能のホーム ページ
 description: このトピックでは、拡張性に関するトピックへのリンクを提供します。
 author: FrankDahl
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 02/28/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 6024a1654b9d16b381cbfd4c1cebcb917bdb8714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 358e8fbc1f4ebb35744cf3acffc969a19a326411
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369637"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770929"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -114,6 +114,7 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 + [onValidatingWrite へのサブスクライブ](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
 + [在庫分析コードの機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Dynamics 365 for Finance and Operations での拡張機能のご要望を採用します。](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
++ [拡張可能な X++ - メソッドの署名](https://blogs.msdn.microsoft.com/mfp/2017/08/31/extensible-x-method-signatures/)
 
 ## <a name="how-do-i-create-an-extensible-solution"></a>拡張可能なソリューションを作成するには
 

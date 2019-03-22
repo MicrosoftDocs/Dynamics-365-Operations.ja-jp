@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: bfc4ef7d73ddf44e730a4c28dc46960d4afa5e6c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 25aacafac8e0c6dd137e013fadded5a41abb2aee
+ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369410"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403761"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -71,10 +71,11 @@ ms.locfileid: "369410"
 | PreCustomerSetTrigger     | 解約可能              | 顧客がカートに追加される前に実行されます。            |
 | PreCustomerSearchTrigger  | 解約可能              | 顧客検索が行われる前に実行されます。      |
 | PostCustomerSearchTrigger | キャンセル不可          | 顧客検索が行われた後に実行されます。       |
+| PostIssueLoyaltyCardTrigger  | キャンセル不可          | ロイヤルティ カードが発行された後に実行されます。       |
 
 ## <a name="discount-triggers"></a>割引のトリガー
 
-| トリガー                         | 種類           | 説明                                                                     |
+| トリガー                         | 型           | 説明                                                                     |
 |---------------------------------|----------------|---------------------------------------------------------------------------------|
 | PreLineDiscountAmountTrigger    | 解約可能     | 行割引金額がカート行に追加される前に実行されます。 |
 | PostLineDiscountAmountTrigger   | キャンセル不可 | 行割引金額がカート行に追加した後に実行されます。     |
@@ -92,6 +93,8 @@ ms.locfileid: "369410"
 | トリガー              | 種類           | 説明                                                                                                                                           |
 |----------------------|----------------|-------------------------|
 | PreOperationTrigger  | 解約可能     | すべての POS 操作前に実行される一般的なトリガー。 POS 操作で使用できる特定のトリガーがない場合は、このトリガーを使用することができます。 |
+| PreOperationValidationTrigger | 解約可能 | 操作の検証が始まる前に実行される一般的なトリガー。   |
+| OperationFailureTrigger | キャンセル不可 | 任意の POS 操作が失敗した後で実行される一般的なトリガー。  |
 | PostOperationTrigger | キャンセル不可 | すべての POS 操作の後に実行される一般的なトリガー。 POS 操作で使用できる特定のトリガーがない場合は、このトリガーを使用することができます。  |
 
 ## <a name="payment-triggers"></a>支払トリガー

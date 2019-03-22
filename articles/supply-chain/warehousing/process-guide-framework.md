@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: dc23b23a6812db8e9aa56c15ed49076363cc05bb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e3ee668aa5608790ee8d525aaf5faceeab65b6bd
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368908"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377894"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
@@ -60,8 +60,7 @@ ms.locfileid: "368908"
 
 その結果、再設計は、明確に定義されたクラスに独立した職責を持たせるという目標を持つ、持続可能なオプションです。 クラスの職責、変更する理由、拡張する理由は 1 つにする必要があります。
 
-<a name="design-overview"></a>設計の概要
-===============
+## <a name="design-overview"></a>設計の概要
 
 再設計されたフレームワークでは、中核的な戦略は 2 つの原則を中心に展開しています。実行フローを明確に定義された責任を持つ個々のコンポーネントに分割することと、各コンポーネントに適切に定義された拡張点を持つことです。
 
@@ -101,8 +100,7 @@ ms.locfileid: "368908"
 
 -   **ProcessGuideDataProcessor** - このクラスは、フィールド内のユーザーが入力したデータの処理を担当します。
 
-<a name="execution-flow"></a>実行フロー
-==============
+## <a name="execution-flow"></a>実行フロー
 
 実行フローの開始点は変更されないままです。 そのため、要求は引き続き同じエンドポイントに到着し、その後、コンテナーに XML が逆シリアル化されます。 このコンテナーは、**getNextFormState()** にに渡されます。
 
@@ -136,13 +134,11 @@ ms.locfileid: "368908"
 
 ![シーケンス図](media/sequence-diagram.png)
 
-<a name="building-a-new-process-using-the-processguide-framework"></a>ProcessGuide フレームワークを使用した新しいプロセスの構築
-=======================================================
+## <a name="building-a-new-process-using-the-processguide-framework"></a>ProcessGuide フレームワークを使用した新しいプロセスの構築
 
 制御フローを説明する最善の方法は、アプリケーションに存在している例を使用することです (生産開始プロセス)。
 
-<a name="overview-of-the-production-start-process"></a>生産開始プロセスの概要
-----------------------------------------
+## <a name="overview-of-the-production-start-process"></a>生産開始プロセスの概要
 
 まず、プロセス フローを理解しましょう。 最初の手順で、ユーザーは製造オーダー ID の入力を求められます。
 
@@ -153,8 +149,7 @@ ms.locfileid: "368908"
 ユーザーはキャンセルしてプロセスの開始に戻るか、**OK** をクリックして確認できます。 後者の場合は、製造オーダーが **開始済** ステータスに設定され、対応する仕訳帳が転記され、コントロールが最初の手順に戻り、ユーザーに ”作業完了" というメッセージが表示されます。
 
 
-<a name="creating-the-controller"></a>コントローラーの作成
------------------------
+## <a name="creating-the-controller"></a>コントローラーの作成
 
 業務プロセスの作成の最初の手順は、コントローラー クラスの作成です。これは、コントローラーのデフォルトの動作を実装する **ProcessGuideController** 抽象クラスから拡張されます。 新しいクラスの名前は **ProdProcessGuideProductionStartController** であり、**StartProdOrder** の **WHSWorkExecuteMode** で修飾されます。 **WHSWorkExecuteDisplay** クラスで使用されたのと同じ **SysExtension** ベースのインスタンス化が使用されます。これは、ユーザーがこのモードのメニュー項目を実行するときにコントローラーをインスタンス化するのに役立ちます。
 
@@ -166,8 +161,7 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 > クラスの名前付けパターンは、**\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller** です。 これは、コントローラー クラスに使用されるパターンであり、その他のクラスを拡張するためのものです。
 
 
-<a name="building-the-first-step"></a>最初のステップの作成
------------------------
+## <a name="building-the-first-step"></a>最初のステップの作成
 
 次に、最初のステップを定義するには、**ProcessGuideStep** から拡張して、**ProdProcessGuidePromptProductionIdStep** クラスを作成します。
 
@@ -258,8 +252,7 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
         return (prodId != '');
  }``   
 
-<a name="step-two-view-order-details-and-confirm"></a>ステップ 2: 注文の詳細を表示して確認
-----------------------------------------
+### <a name="step-two-view-order-details-and-confirm"></a>ステップ 2: 注文の詳細を表示して確認
 
 プロセスの 2 番目のステップでは、ユーザーに、注文に関する詳細を含む画面が表示されます。 ユーザーは **OK** ボタンをクリックして製造オーダーの開始を確認するか、**キャンセル** をクリックしてプロセスの開始に戻ることができます。 この例では、ステップ **ProdProcessGuideConfirmProductionOrderStep** とページ ビルダー クラス **ProdProcessGuideConfirmProductionOrderPageBuilder** を指定します。
 
@@ -282,8 +275,7 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 ![プロセス ガイド ページ ビルダー コード](media/process-guide-page-builder-code.png)
 
-<a name="step-three-start-the-production-order"></a>ステップ 3: 製造オーダーを開始する
---------------------------------------
+### <a name="step-3-start-the-production-order"></a>ステップ 3: 製造オーダーを開始する
 
 3 番目のステップでは、製造オーダーの開始のビジネス ロジックを実行します。 このステップは、ユーザー インターフェイスがないという点で前のステップとは少し異なります。 ユーザーが前のステップで **OK** をクリックすると、このステップがサイレントで実行されます。
 
@@ -299,8 +291,7 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 > **addProcessCompletionMessage()** の呼び出しは、ナビゲーション パラメーターに "作業完了" メッセージを追加します。 このメッセージは、(ユーザー インターフェイスがあると仮定した場合) 次のステップで表示されます。 基本クラスは、このロジックを処理するため、この動作を実現するために特定のコードをプロセス クラスに追加する必要はありません。
 
 
-<a name="building-the-navigation-through-the-steps"></a>ステップでのナビゲーションの構築
------------------------------------------
+### <a name="building-the-navigation-through-the-steps"></a>ステップでのナビゲーションの構築
 
 **ProcessGuideController** 基本クラスは、**ProcessGuideNavigationAgentDefault** クラスのインスタンスを作成します。これは、ソースおよび出力先のステップの簡単なマップである事前に定義されたナビゲーション工順に依存しています。 生産開始シナリオでは、条件分岐がないため、この実装で十分です。 したがって、必要があるのは、**initializeNavigationRoute()** メソッドをオーバーライドしてナビゲーション工順を定義することだけです。
 
@@ -316,8 +307,7 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 
 -   コントローラーで **navigationAgentFactory()** をオーバーライドして、上で作成したナビゲーション エージェント ファクトリのインスタンスを作成します。
 
-<a name="action-classes"></a>アクション クラス
---------------
+### <a name="action-classes"></a>アクション クラス
 
 アクション クラスはユーザーの操作を表すため、この例では、 **OK** アクションを使用して、アクションの作成方法を表示します。
 
@@ -346,8 +336,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 これを行うことにより、渡された名前のアクション クラスを作成するようステップに求め、そのアクションをボタンに関連付けます。
 
-<a name="to-summarize"></a>まとめ
-============
+### <a name="summary"></a>集計
 
 このトピックで説明したことをすべてまとめるため、プロセスに必要なコードの包括的な概要をここに示します。
 
@@ -399,13 +388,11 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 > 多くの一般的なパターン (エラー時の UI の再生成、設定プロセスの完了メッセージ、**OK** および **キャンセル** 動作) がフレームワークに移動された点に注意してください。したがって、エラーの発生しやすい定型コードと、プロセス間で不整合な動作をする危険性を備えた定型コードの両方をアプリケーション開発者が記述しなくてよくなります。 ただし、共通するパスとは異なるシナリオが必要な場合、アプリケーション開発者には、適切なメソッドをオーバーライドするオプションが用意されていますが、その場合、それは明示的なかつ追跡可能な意図的な誤差です。
 
 
-<a name="extending-a-business-process"></a>業務プロセスの拡張
-============================
+### <a name="extending-a-business-process"></a>業務プロセスの拡張
 
 これまでのところ、このトピックでは **ProcessGuide** フレームワークを使用して新しいプロセスを作成する方法が強調表示されています。 この最後のセクションでは、このビジネス プロセスを拡張する方法の例をいくつか示します。
 
-<a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>フローにおけるステップの追加 (ProcessGuideNavigationAgentDefault を使用)
----------------------------------------------------------------
+### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>フローにおけるステップの追加 (ProcessGuideNavigationAgentDefault を使用)
 
 拡張場所:
 
@@ -415,8 +402,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 -   コントローラー クラスで **initializeNavigationRoute()** メソッドを拡張し、**ProcessGuideNavigationRoute** クラスで **addFollowingStep()** を呼び出します。
 
-<a name="add-a-step-in-a-flow-using-custom-navigation-agent"></a>フローにおけるステップの追加 (カスタム ナビゲーション エージェントを使用)
-----------------------------------------------------
+### <a name="add-a-step-in-a-flow-using-custom-navigation-agent"></a>フローにおけるステップの追加 (カスタム ナビゲーション エージェントを使用)
 
 拡張場所:
 
@@ -430,8 +416,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 -   コントローラー クラスで **navigationAgentFactory()** メソッドを拡張し、上で作成したファクトリを返します。
 
-<a name="add-a-new-control-in-the-ui-of-an-existing-step"></a>既存のステップの UI で新しいコントロールを追加 
-------------------------------------------------
+### <a name="add-a-new-control-in-the-ui-of-an-existing-step"></a>既存のステップの UI で新しいコントロールを追加 
 
 拡張場所:
 
@@ -441,8 +426,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 -   **addDataControls()** メソッドを拡張し、その他のコントロールを追加します。
 
-<a name="complete-overhaul-of-the-user-interface-in-an-existing-step"></a>既存のステップでのユーザー インターフェイスの全体的な修正
------------------------------------------------------------
+### <a name="complete-overhaul-of-the-user-interface-in-an-existing-step"></a>既存のステップでのユーザー インターフェイスの全体的な修正
 
 拡張場所:
 
@@ -454,8 +438,7 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 
 -   ステップ クラスで **pageBuildeName()** メソッドを拡張し、上で作成したクラスの **ProcessGuidePageBuilderNameAttribute** を返します。
 
-<a name="alter-logic-when-a-step-is-considered-complete"></a>ステップが完了と見なされたときにロジックを変更します。
-----------------------------------------------
+### <a name="alter-logic-when-a-step-is-considered-complete"></a>ステップが完了と見なされたときにロジックを変更します。
 
 拡張場所:
 

@@ -3,7 +3,7 @@ title: ビジネス イベント
 description: このトピックは、外部システムが Dynamics 365 for Finance and Operations から通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,17 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 531175731bf9b95389f04da9a79515e0462d4307
-ms.sourcegitcommit: 8d678bd8b670349bfe4273a49dae92242ae46e5e
+ms.openlocfilehash: b1d2e78cde1f68706603d464cda4e4eeae7ec963
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377024"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777215"
 ---
 # <a name="business-events"></a>ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
+
 
 ビジネス イベントは外部システムが Microsoft Dynamics 365 for Finance and Operations から通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 
@@ -88,6 +88,9 @@ Finance and Operations では、ビジネス イベントは、最初から用�
 - Azure Service Bus キュー
 - Azure Service Bus トピック
 - Azure Event Grid
+- Azure イベント ハブ
+- HTTPS
+- Microsoft Flow
 
 消費者にビジネス イベントを組織化して配布するため、複数のエンドポイントが必要になる場合があります。 このようなシナリオをサポートするため、複数のエンドポイントを作成することができます。
 

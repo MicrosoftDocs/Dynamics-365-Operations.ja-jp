@@ -3,7 +3,7 @@ title: 倉庫管理による CW 製品の処理
 description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5161860e3b1c5b0ae795d109159268be085ec5af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334062"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777275"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
-[!include [preview banner](../../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
-**エクスポージャ機能**
+## <a name="feature-exposure"></a>エクスポージャ機能
 
 CW 製品を処理する倉庫管理を使用するには、ライセンス コンフィギュレーション キーを使用して、機能を有効にする必要があります。 (**システム管理\>設定\>ライセンス コンフィギュレーション**へ移動します。 その後、**コンフィギュレーション キー**タブで**取引\>倉庫および配送の管理**を展開し、**倉庫用 CW** のチェック ボックスを選択します)。
 
 > [!NOTE]
-> **倉庫および配送の管理**ライセンス コンフィギュレーション キーと **CW 流通処理**ライセンス コンフィギュレーション キーの両方をオンにする必要があります。
+> **倉庫および配送の管理**ライセンス コンフィギュレーション キーおよび**流通処理 \> CW** ライセンス コンフィギュレーション キーの両方をオンにする必要があります。
 
 ラインセンス コンフィギュレーション キーをオンにした後、リリースされた製品を作成する場合は、**CW** を選択できます。 **倉庫管理プロセスを使用**パラメーターが選択されている保管分析コードのグループで、リリースされた製品を関連付けることも可能です。
 

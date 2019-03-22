@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations プラットフォーム更新プ
 description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: 7bd2067046220eb4384e139c055bbd074f48a8bc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fdec6bc92be2c2ced7c823fc0cb14c4bca3a4231
+ms.sourcegitcommit: 2bced4ab07ac29dbbb6ee87398c5915d58466004
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368309"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "759665"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 
@@ -78,3 +78,8 @@ Excel へのエクスポート機能は、Finance and Operations のグリッド
 一部のタスクでは、Finance and Operations でデータのフィルター処理に使用する値の一覧が Excel に表示されることがあります。 たとえば、財務ユーザーは、システムで追加の調査を必要とする伝票のセットをレポートから特定している可能性があり、このユーザーが Excel から Finance and Operations のフィルター フィールドに直接リストをコピーできると最適な場合があります。
 
 プラットフォーム更新 22 以降では、フィルター ウィンドウおよびグリッド列フィルターの「次の値のいずれか」演算子が、フィルター フィールドに直接貼り付けることができるように、Excel からコピーされたリストを認識するようになりました。 これには、Excel のさまざまな行と列からコピーされた値のコレクションが含まれます。 この機能の詳細については、["次の値のいずれか" 演算子を使用して Excel からフィルター フィールドに一覧を貼り付ける](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel)を参照してください。
+
+## <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するバッチ ジョブ
+プラットフォーム更新プログラム 22 では、断片化したインデックスを再構築する新しいシステム バッチ ジョブが導入されました。 インデックスの断片化により、固有のシナリオでパフォーマンスが著しく低下します。 断片化の問題に対処し、データベースを最高のパフォーマンス状態に維持するため、このバッチ ジョブはスケジュールされた時間に定期的に激しく断片化したインデックスを再構築します。 既定では、そのジョブは毎日現地時間の午前 3:00 に最大 2 時間実行されるようにスケジュールされます。 再構築する必要がある断片化されたインデックスが多くないとバッチ ジョブが判断した場合は早期に完了します。  
+
+詳細については [SQL インデックスの最適化を処理するバッチ ジョブ](../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md) を参照してください。

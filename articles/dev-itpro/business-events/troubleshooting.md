@@ -3,7 +3,7 @@ title: ビジネス イベントのトラブルシューティング
 description: このトピックでは、ビジネス イベントのトラブルシューティングについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/06/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 968a1a36f04a59b4cbfe4a157e320955e746e82f
-ms.sourcegitcommit: 7e0097bdd835e04521bffbce2fd802e6381dde0d
+ms.openlocfilehash: 41acc0733619d0744f6d2cb819859af939472e76
+ms.sourcegitcommit: 2e727bb651cf4dfa65d624f45f0dcdc1e7e8287c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "376931"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "719408"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 
@@ -56,3 +56,17 @@ ms.locfileid: "376931"
 **エラー: テスト イベントをエンドポイントに送信することができません。例外メッセージ: 要求の送信中にエラーが発生しました。**
 
 **エンドポイント URL** フィールドのエンドポイントの指定された値が正しくない可能性があります。 Azure ポータルの**イベント グリッド**オブジェクトに移動し、**イベント グリッド**を開きます。 **概要**セクションで、この値が**トピック エンドポイント**になります。
+
+**ビジネス イベントはカタログに表示されません**
+
+ビジネス イベント カタログは、データベース全体の同期中に作成されます。その結果、以下に示すように、新しいビジネス イベントを確認するためにカタログを手動で更新する必要がある使用例がいくつかあります。 手動更新は **管理 > ビジネス イベント カタログの再構築** に移動することによってカタログから呼び出すことができます。
+
+Visual Studio でビジネス イベントを実装中のときは、新しくコード化されたビジネス イベントがカタログに表示されない場合があります。
+
+ワークフロー要素やステップなどの新しいワークフローが構成されていると、ビジネス イベント カタログに表示されない場合があります。
+
+他の状況では、特定のビジネス イベントが表示されない場合、手動更新を行うと問題が解決する可能性があります。
+
+**ビジネス イベントが発生した場合や、またはビジネス イベントが Service Bus トピックに表示されない場合、フロー アプリはトリガーされません**
+
+通常、これはビジネス イベント バッチのプロセッサが実行されていないことを示します。 その結果、ビジネス イベントがエンドポイントに送信されるよう処理されません。 バッチ プロセッサは **システム パラメーター > ビジネス イベント - プレビュー** タブから起動できます。 ビジネス イベントを確実に継続して処理するには、ジョブを定期的にバッチで実行するようにスケジュールする必要があります。

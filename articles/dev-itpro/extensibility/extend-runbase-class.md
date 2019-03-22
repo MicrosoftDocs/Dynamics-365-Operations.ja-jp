@@ -3,7 +3,7 @@ title: RunBase クラスの拡張
 description: このトピックには、RunBase クラスを拡張できる方法を示した例が徹底的に含まれています。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8e948a60ecfd2e98f258a8603b1e6446a2cb6b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: df556ae837fcd84790fc664f2cddf373a1220bf0
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369087"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770882"
 ---
 # <a name="extend-the-runbase-class"></a>RunBase クラスの拡張
 
@@ -57,16 +57,48 @@ final class MySysUserLogCleanup_Extension
         myArchive
     #endmacro
 
-    // Adding new instance methods
-    private void myDialog(Dialog _dialog)
+    public Object dialog()
     {
-        myDialogArchive = _dialog.addField(extendedtypestr(NoYesId), "Archive");
+        Dialog dialog = next dialog();
+
+        myDialogArchive = dialog.addField(extendedtypestr(NoYesId), "Archive");
         myDialogArchive.value(myArchive);
+
+        return dialog;
     }
-    private void myGetFromDialog()
+
+    public boolean getFromDialog()
     {
+        boolean result = next getFromDialog();
         myArchive = myDialogArchive.value();
+        return result;
     }
+    
+    public void initParmDefault()
+    {
+        next initParmDefault();
+        myArchive = true;
+    }    
+
+    public void run()
+    {
+        try
+        {
+            myRunningInstance = this;
+            next run();
+        }
+        finally
+        {
+            myRunningInstance = null;
+        }
+    }
+
+    public container pack()
+    {
+        container packedClass = next pack();
+        return SysPackExtensions::appendExtension(packedClass, classStr(MySysUserLogCleanup_Extension), this.myPack());
+    }
+
     private boolean myUnpack(container packedClass)
     {
         Integer version = RunBase::getVersion(packedClass);
@@ -80,14 +112,29 @@ final class MySysUserLogCleanup_Extension
         }
         return true;
     }
+
     private container myPack()
     {
         return [#CurrentVersion, #CurrentList];
     }
-    private void myInitParmDefault()
+
+    public boolean unpack(container _packedClass)
     {
-        myArchive = true;
+        boolean result = next unpack(_packedClass);
+
+        if (result)
+        {
+            container myState = SysPackExtensions::findExtension(_packedClass, classStr(MySysUserLogCleanup_Extension));
+            //Also unpack the extension
+            if (!this.myUnpack(myState))
+            {
+                result = false;
+            }
+        }
+
+        return result;
     }
+    
     private void myArchiveUserLog(SysUserLog _userLog)
     {
         if (myArchive)
@@ -96,63 +143,11 @@ final class MySysUserLogCleanup_Extension
         }
     }
 
-    // Wiring up event handlers...
-    [PostHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, dialog))]
-    public static void SysUserLogCleanup_Post_Dialog(XppPrePostArgs _args)
-    {
-        Dialog dialog = _args.getReturnValue();
-        SysUserLogCleanup instance = _args.getThis() as SysUserLogCleanup;
-        instance.myDialog(dialog);
-    }
-    [PostHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, getFromDialog))]
-    public static void SysUserLogCleanup_Post_GetFromDialog(XppPrePostArgs _args)
-    {
-        SysUserLogCleanup instance = _args.getThis() as SysUserLogCleanup;
-        instance.myGetFromDialog();
-    }
-    [PostHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, pack))]
-    public static void SysUserLogCleanup_Post_pack(XppPrePostArgs _args)
-    {
-        SysUserLogCleanup instance = _args.getThis() as SysUserLogCleanup;
-        //Also pack the extension
-        instance.packExtension(_args, classStr(MySysUserLogCleanup_Extension), instance.myPack());
-    }
-    [PostHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, unpack))]
-    public static void SysUserLogCleanup_Post_unpack(XppPrePostArgs _args)
-    {
-        SysUserLogCleanup instance = _args.getThis() as SysUserLogCleanup;
-        container myState = instance.unpackExtension(_args, classStr(MySysUserLogCleanup_Extension));
-        //Also unpack the extension
-        if (!instance.myUnpack(myState))
-        {
-            //Extension couldn't be unpacked - return false to trigger initParmDefault() gets called
-            _args.setReturnValue(false);
-        }
-    }
-    [PostHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, initParmDefault))]
-    public static void SysUserLogCleanup_Post_initParmDefault(XppPrePostArgs _args)
-    {
-        SysUserLogCleanup instance = _args.getThis() as SysUserLogCleanup;
-        instance.myInitParmDefault();
-    }
-    [PreHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, run))]
-    public static void SysUserLogCleanup_Pre_run(XppPrePostArgs _args)
-    {
-        //Store a static reference, so we can call it from SysUserLog_onDeleting.
-        myRunningInstance = _args.getThis() as SysUserLogCleanup;
-    }
-    [PostHandlerFor(classStr(SysUserLogCleanup), methodStr(SysUserLogCleanup, run))]
-    public static void SysUserLogCleanup_Post_run(XppPrePostArgs _args)
-    {
-        //Running complete 
-        myRunningInstance = null;
-    }
-
-    // Wiring up event handler for deletion of the record
+    // Wire up event handler for deletion of the record
     [DataEventHandler(tableStr(SysUserLog), DataEventType::Deleting)]
     static public void SysUserLog_onDeleting(Common _sender, DataEventArgs _e)
     {
-        if (runningInstance)
+        if (myRunningInstance)
         {
             myRunningInstance.myArchiveUserLog(_sender as SysUserLog);
         }

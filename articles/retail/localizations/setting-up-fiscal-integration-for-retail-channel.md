@@ -3,7 +3,7 @@ title: 小売チャネルの会計統合の設定
 description: このトピックでは、小売チャネルの会計統合機能を設定するためのガイドラインを提供します。
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3c2945c4310dc4c1ae74f215e9b28056e7d1ede9
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377315"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773330"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>小売チャネルの会計統合の設定
 
@@ -175,7 +175,7 @@ ms.locfileid: "377315"
     3. **会計レシートのテキスト** フィールドで、会計レシートに印刷する必要がある会計テキストを指定します。
 
     > [!NOTE]
-    > 同じトランザクション明細行にいくつかの割引が適用される場合、会計レシートにはそれらのトランザクション明細行にリンクされているすべての割引からの会計テキストが含まれます。 
+    > 同じトランザクション明細行にいくつかの割引が適用される場合、会計レシートにはそれらのトランザクション明細行にリンクされているすべての割引からの会計テキストが含まれます。
 
 ## <a name="set-error-handling-settings"></a>エラーの処理の設定
 
@@ -210,3 +210,4 @@ ms.locfileid: "377315"
     2. 新しいボタンを追加し、**会計 X を印刷**ボタン プロパティを設定します。
     3. 新しいボタンを追加し、**会計 Z を印刷**ボタン プロパティを設定します。
     4. **配送スケジュール** ページで、**1090** ジョブを実行してチャネル データベースに変更を転送します。
+
