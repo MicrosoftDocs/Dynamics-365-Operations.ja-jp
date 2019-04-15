@@ -278,9 +278,9 @@ items:
         href: extensibility/class-extensions.md
       - name: メソッドのラッピングとコマンド チェーンによるクラスの拡張
         href: extensibility/method-wrapping-coc.md
-      - name: モデル拡張機能の名前付けガイドライン
+      - name: 拡張機能の名前付けガイドライン
         href: extensibility/naming-guidelines-extensions.md
-      - name: オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
+      - name: オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
         href: extensibility/refactoring-over-layering.md
     - name: 拡張機能の作成
       items:
@@ -370,10 +370,32 @@ items:
       href: perf-test/testing-validation.md
     - name: Visual Studio のプロジェクトのテスト
       href: perf-test/testing-support.md
-    - name: 継続的ビルドとテストの自動化をサポートするトポロジの配置
+    - name: 継続的なビルドおよびテストの自動化をサポートするトポロジの配置
       href: perf-test/continuous-build-test-automation.md
     - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
       href: perf-test/systest-filtering.md
+    - name: 承認テスト ライブラリ
+      href: perf-test/acceptance-test-library.md
+    - name: ナビゲーション概念
+      href: perf-test/concepts-navigation.md
+    - name: テスト データ メソッド
+      href: perf-test/test-data-methods.md
+    - name: 承認テスト ライブラリのエンティティ
+      href: perf-test/concepts-entities.md
+    - name: 承認テスト ライブラリのコマンド
+      href: perf-test/concepts-commands.md
+    - name: 承認テスト ライブラリの作成者
+      href: perf-test/concepts-creators.md
+    - name: 承認テスト ライブラリのクエリ
+      href: perf-test/concepts-queries.md
+    - name: 詳細のクラス
+      href: perf-test/concepts-specifications.md
+    - name: 承認テスト ライブラリ コード生成ウィザード
+      href: perf-test/code-generation-wizard.md
+    - name: 承認テスト ライブラリのベスト プラクティス
+      href: perf-test/atl-best-practices.md
+    - name: よく寄せられる質問
+      href: perf-test/atl-faq.md
   - name: 日付の有効期間
     href: dev-tools/date-effectivity.md
   - name: ISV ライセンス
@@ -451,6 +473,8 @@ items:
       href: user-interface/control-checklist.md
   - name: メッセージ
     items:
+    - name: 機能のコールアウト
+      href: user-interface/feature-callouts.md
     - name: スライダー ダイアログとメッセージ ボックス ダイアログ
       href: user-interface/slider-messagebox.md
     - name: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
       href: deployment/Update-retail-channel.md
-    - name: クラウドでホストされている Retail チャネル コンポーネントの初期化
+    - name: Retail Cloud Scale Unit の初期化
       href: deployment/Initialize-Retail-Channels.md
   - name: オンプレミス配置
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: 最新の更新プログラムに移行するためのプロセス
       href: migration-upgrade/upgrade-latest-update.md
-    - name: バージョン 8.0 から 8.1 への環境の更新
+    - name: バージョン 8.0 から 8.1.X/10.X への環境の更新
       href: migration-upgrade/appupdate-80-81.md
     - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: SQL インデックスの最適化を処理するためのバッチ ジョブ
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: バッチ警告のコンフィギュレーション
+      href: sysadmin/alerts.md
+    - name: 拡張バッチ フォーム
+      href: sysadmin/enhanced-forms.md
+    - name: バッチ履歴のクリーンアップ
+      href: sysadmin/batch-history-cleanup.md
   - name: 最適化アドバイザー
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1229,8 +1259,10 @@ items:
     items:
     - name: トレーニング用の更新
       href: database/dbmovement-scenario-general-refresh.md
-    - name: デバッグおよび診断
+    - name: 生産データベースのコピーのデバッグ
       href: database/dbmovement-scenario-debugdiag.md
+    - name: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
+      href: database/dbmovement-scenario-exportuat.md
     - name: ゴールデン コンフィギュレーション プロモーション
       href: database/dbmovement-scenario-goldenconfig.md
     - name: 破壊試験
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Finance and Operations サポート エクスペリエンスの管理
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773805"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976015"

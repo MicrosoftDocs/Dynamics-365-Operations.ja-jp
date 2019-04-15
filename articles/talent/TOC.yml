@@ -2,12 +2,20 @@ items:
 - name: Dynamics 365 for Talent
   href: index.md
   items:
-  - name: 使用開始
+  - name: はじめに
     href: talent-get-started.md
     items:
     - name: Talent の新機能および変更された機能
       href: whats-new.md
       items:
+      - name: 2019 年 4 月 2 日
+        href: whats-new-talent-april-2-2019.md
+      - name: 2019 年 3 月 26 日
+        href: whats-new-talent-march-26-2019.md
+      - name: 2019 年 3 月 20 日
+        href: whats-new-talent-march-20.md
+      - name: 2019 年 3 月 14 日
+        href: whats-new-talent-march-14.md
       - name: 2019 年 3 月 5 日
         href: whats-new-talent-march-5.md
       - name: 2019 年 2 月 27 日
@@ -20,38 +28,42 @@ items:
         href: whats-new-talent-january-29.md
       - name: 2019 年 1 月 23 日
         href: whats-new-talent-january-23.md
-      - name: 2019 年 1 月 17 日
-        href: whats-new-talent-january-17.md
-      - name: 2019 年 1 月 11 日
-        href: whats-new-talent-january-11.md
-      - name: 2018 年 12 月 14 日
-        href: whats-new-talent-december-14.md
-      - name: 2018 年 12 月 6 日
-        href: whats-new-talent-december-6.md
-      - name: 2018 年 11 月 27 日
-        href: whats-new-talent-november-27.md
-      - name: 2018 年 11 月 15 日
-        href: whats-new-talent-november-15.md
-      - name: 2018 年 10 月 31 日
-        href: whats-new-talent-october-31.md
-      - name: 2018 年 10 月 19 日
-        href: whats-new-talent-october-19.md
-      - name: 2018 年 10 月 15 日
-        href: whats-new-talent-october-11.md
-      - name: 2018 年 10 月 8 日
-        href: whats-new-talent-october-8.md
-      - name: 2018 年 10 月 1 日
-        href: whats-new-talent-october-01.md
-      - name: 2018 年 9 月 24 日
-        href: whats-new-talent-september-24.md
-      - name: 2018 年 9 月 17 日
-        href: whats-new-talent-september-17-2018.md
-      - name: 2018 年 9 月 10 日
-        href: whats-new-talent-september-10.md
-      - name: 2018 年 8 月
-        href: whats-new-talent-august2018.md
-      - name: 2018 年 7 月
-        href: whats-new-talent-july2018.md
+      - name: 新機能アーカイブ 2019
+        items:
+        - name: 2019 年 1 月 17 日
+          href: whats-new-talent-january-17.md
+        - name: 2019 年 1 月 11 日
+          href: whats-new-talent-january-11.md
+      - name: 新機能アーカイブ 2018
+        items:
+        - name: 2018 年 12 月 14 日
+          href: whats-new-talent-december-14.md
+        - name: 2018 年 12 月 6 日
+          href: whats-new-talent-december-6.md
+        - name: 2018 年 11 月 27 日
+          href: whats-new-talent-november-27.md
+        - name: 2018 年 11 月 15 日
+          href: whats-new-talent-november-15.md
+        - name: 2018 年 10 月 31 日
+          href: whats-new-talent-october-31.md
+        - name: 2018 年 10 月 19 日
+          href: whats-new-talent-october-19.md
+        - name: 2018 年 10 月 15 日
+          href: whats-new-talent-october-11.md
+        - name: 2018 年 10 月 8 日
+          href: whats-new-talent-october-8.md
+        - name: 2018 年 10 月 1 日
+          href: whats-new-talent-october-01.md
+        - name: 2018 年 9 月 24 日
+          href: whats-new-talent-september-24.md
+        - name: 2018 年 9 月 17 日
+          href: whats-new-talent-september-17-2018.md
+        - name: 2018 年 9 月 10 日
+          href: whats-new-talent-september-10.md
+        - name: 2018 年 8 月
+          href: whats-new-talent-august2018.md
+        - name: 2018 年 7 月
+          href: whats-new-talent-july2018.md
     - name: システム要件と更新ポリシー
       href: talent-versions-update-policy.md
     - name: Talent のプロビジョニング
@@ -62,7 +74,7 @@ items:
       href: modular-app-tech-faq.md
     - name: PowerApps アプリの埋め込み
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Core HR および Common Data Service for Apps
+    - name: Core HR および Common Data Service
       href: CoreHREntities.md
     - name: プレビュー機能の利用
       href: access-preview-feature.md
@@ -100,8 +112,10 @@ items:
       href: attract-overview.md
     - name: Attract でのプロセス テンプレートの作成
       href: Process-templates-Attract.md
-    - name: Attract での職務の作成、承認、および転記
+    - name: Attract での職務の作成、承認、および募集
       href: Creating-jobs-Attract.md
+    - name: Attract から外部サイトへの職務の募集
+      href: posting-jobs-external.md
     - name: 人材プールによるソーシング
       href: attract-talent-pools.md
     - name: LinkedIn Recruiter によるソーシング
@@ -128,6 +142,8 @@ items:
       href: Intelligent-Recommendations.md
     - name: 魅力的な新人研修エクスペリエンスの作成
       href: create-onboarding-experience.md
+    - name: 候補者のプロファイルおよび応募のソースの追跡
+      href: source-tracking.md
     - name: Attract の包括採用アドオン機能
       href: attract-comprehensive-hiring.md
   - name: 従業員の動機付け
@@ -203,6 +219,14 @@ items:
       href: talent-fo-integration.md
     - name: Azure Logic Apps を使用した定期的なデータのエクスポート
       href: tutorial-integration-recurring-export.md
+  - name: 拡張性
+    items:
+    - name: PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
+      href: extensibility-examples.md
+    - name: Attract での拡張性
+      href: extensibility-attract.md
+    - name: Core HR のカスタム フィールド
+      href: corehr-custom-fields.md
   - name: Office 統合
     items:
     - name: Office 統合のチュートリアル
@@ -322,7 +346,7 @@ items:
       href: save-play-task-guides-LCS.md
     - name: セキュリティ ロールで個人住所にアクセスする
       href: security-roles-addresses.md
-    - name: Microsoft Dynamics 365 アプリ (CDS1.0) で Talent が表示されない
+    - name: Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない
       href: talent-not-in-home-CDS.md
     - name: ユーザーが Core HR にアクセスできるが、Onboard または Attract アプリにアクセスできない
       href: user-access-core-hr.md
@@ -332,9 +356,9 @@ items:
       href: talent-FO-integration.md
     - name: Azure Active Directory ユーザーが人員ピッカーで見つからない
       href: people-picker-user-not-found.md
-ms.openlocfilehash: 4123fb80126695bb35a02d3d2fc00b3ea38c1881
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: 0454094f05b3e571a38b8361fa9573c929647551
+ms.sourcegitcommit: 594fd4c7b937695396a7154a906563f43293926a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782755"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "969450"
