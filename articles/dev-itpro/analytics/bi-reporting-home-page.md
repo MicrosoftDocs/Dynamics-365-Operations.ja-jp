@@ -3,7 +3,7 @@ title: ビジネス インテリジェンス (BI) およびレポート作成の
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302519"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902845"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>ビジネス インテリジェンス (BI) およびレポート作成のホーム ページ
 
@@ -33,7 +33,7 @@ ms.locfileid: "302519"
 ## <a name="get-started"></a>使用開始
 - [情報へのアクセスとレポート](information-access-reporting.md)
 - [技術解説: レポート オプション](https://www.youtube.com/watch?v=NzZONjKs5xA) (ビデオ)
-- [Finance and Operations: ビジネス インテリジェンス](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (ブログ)
+- [Finance and Operations: Power BI Analytics & Reporting Services ブログ](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (ブログ)
 
 ## <a name="analytical-workspaces"></a>分析ワークスペース
 Finance and Operations は、アプリケーション ワークスペースにシームレスに統合される対話型レポートを備えています。 ワークスペースでは、Microsoft Power BI でサポートされている強力なインフォグラフィックやビジュアルを利用できます。 これらのインフォグラフィックおよびビジュアルの中には、サード パーティが提供しているさまざまなコントロールもあります。 そのため、ワークスペースでは、きわめて視覚的で対話性の高い環境がユーザーに提供されます。

@@ -1,11 +1,13 @@
 items:
 - name: Dynamics 365 for Retail へようこそ
   href: index.md
-- name: 使用開始
+- name: はじめに
   items:
   - name: 新機能および変更された機能
     href: get-started/whats-new.md
-  - name: Dynamics 365 for Retail 10.0.1 のプレビュー機能
+  - name: Dynamics 365 for Retail 10.0.2 の機能のプレビュー
+    href: get-started/whats-new-10-0-2.md
+  - name: Dynamics 365 for Retail 10.0.1 の新機能および変更された機能
     href: get-started/whats-new-10-0-1.md
   - name: Dynamics 365 for Retail (2019 年 4 月) の新機能と変更された機能
     href: get-started/april-whats-new.md
@@ -112,11 +114,11 @@ items:
     href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: 消費税コードの合計額と間隔計算オプション
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Omni チャンネルの高度な自動請求
+- name: Omni チャネルの高度な自動請求
   items:
   - name: 高度な自動請求のコンフィギュレーションおよび使用
     href: omni-auto-charges.md
-  - name: ヘッダーの自動請求の比例配分およびグループ化
+  - name: ヘッダー請求金額を一致する販売明細行に比例配分する
     href: pro-rate-charges-matching-lines.md
 - name: コール センター
   items:
@@ -274,7 +276,7 @@ items:
     href: price-management.md
   - name: 価格調整および割引
     href: price-adjustments-discounts.md
-  - name: 製品に対する複数の小売割引の適用
+  - name: 製品に対する複数の割引の適用
     href: Apply-multiple-retail-discounts.md
   - name: 重複する割引の最適な組み合わせの決定
     href: optimal-combination-overlapping-discounts.md
@@ -282,6 +284,8 @@ items:
     href: define-channel-specific-discounts.md
   - name: 小売製品の割引を回避するためのオプション
     href: prevent-discounts.md
+  - name: 出荷割引の概要
+    href: retail-shipping-discount.md
   - name: 小売販売のクーポンの設定
     href: retail-coupons.md
 - name: 製品と販売促進
@@ -354,6 +358,10 @@ items:
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: 小売チャネルの会計統合の設定
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: オーストリア
+    items:
+    - name: オーストリア向け会計登録サービス統合サンプル
+      href: localizations/emea-aut-fi-sample.md
   - name: 東ヨーロッパ
     items:
     - name: 東ヨーロッパにおける Retail の事前請求書
@@ -366,6 +374,8 @@ items:
       href: localizations/emea-eeu-deployment.md
     - name: ポーランド向け会計プリンター統合サンプル
       href: localizations/emea-pol-fpi-sample.md
+    - name: チェコ共和国向け会計登録サービス統合サンプル
+      href: localizations/emea-cze-fi-sample.md
   - name: フランス
     items:
     - name: キャッシュ レジスター機能
@@ -477,6 +487,8 @@ items:
       href: retail-components.md
     - name: Retail Server のアーキテクチャ
       href: dev-itpro/retail-server-architecture.md
+    - name: ストア内トポロジを選択します。
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchange と小売チャネルのコミュニケーション
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS のアーキテクチャ
@@ -562,7 +574,7 @@ items:
     - name: POS 要求ハンドラーのオーバーライド
       href: dev-itpro/pos-handler.md
     - name: POS 拡張パッケージ情報の表示
-      href: view-pos-extension-package-details.md
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station の拡張機能
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server の拡張機能
@@ -669,9 +681,9 @@ items:
     items:
     - name: ロイヤルティの拡張機能
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
-ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
+ms.openlocfilehash: 179295f4397120f46391885760c980b2c9baa028
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791641"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975923"
