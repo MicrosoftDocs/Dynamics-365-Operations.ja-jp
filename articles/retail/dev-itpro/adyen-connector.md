@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bac7daf6788b16d95b1aef58eb6275d7023d4ae5
-ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
+ms.openlocfilehash: 1b64d9f70121b8922dabc0bfcfa88b0648b468a9
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "834678"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992872"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -43,9 +43,9 @@ ms.locfileid: "834678"
 
 このトピックには、Adyen 向け Dynamics 365 Payment Connector の評価およびセットアップを支援するための以下のメイン セクションが含まれています。
 
-- **[サポートされているフィーチャ、機能、および支払ターミナル](#Supported-features-functionality-and-payment-terminals)** – このセクションでは、Adyen 向け Dynamics 365 Payment Connector がサポートする一連のフィーチャおよび機能について説明します。
-- **[Adyen でサイン アップ](#Sign-up-with-Adyen)** – このセクションでは Adyen でマーチャント口座にサイン アップする方法について説明します。
-- **[設定およびコンフィギュレーション](#Setup-and-configuration)** – このセクションでは、販売時点管理 (POS)、コール センター、および電子商取引チャネルで Adyen 向け Dynamics 365 Payment Connector を設定およびコンフィギュレーションする方法について詳細に説明します。
+- サポートされている仕様、機能、バージョン、およびターミナル – このセクションでは、Adyen 向け Dynamics 365 Payment Connector がサポートする一連の仕様および機能について説明します。
+- Adyen でサイン アップ – このセクションでは Adyen でマーチャント口座にサイン アップする方法について説明します。
+- 設定およびコンフィギュレーション – このセクションでは、販売時点管理 (POS)、コール センター、および電子商取引チャネルで Adyen 向け Dynamics 365 Payment Connector を設定およびコンフィギュレーションする方法について詳細に説明します。
 
 ## <a name="supported-features-functionality-versions-and-terminals"></a>サポートされているフィーチャ、機能、バージョン、およびターミナル
 
@@ -59,17 +59,22 @@ ms.locfileid: "834678"
 #### <a name="supported-adyen-firmware-versions"></a>サポートされている Adyen ファームウェアバージョン
 次の表は、Microsoft Dynamics 365 for Retail POS の各バージョンでサポートされている最小および最大の Adyen ファームウェア バージョンを示しています。
 
+---
+
 # <a name="813tab8-1-3"></a>[8.1.3](#tab/8-1-3)
+### <a name="dynamics-365-for-retail-pos-version-813"></a>Dynamics 365 for Retail POS バージョン 8.1.3
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # <a name="100tab10-0"></a>[10.0](#tab/10-0)
+### <a name="dynamics-365-for-retail-pos-version-100"></a>Dynamics 365 for Retail POS バージョン 10.0
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # <a name="1001tab10-0-1"></a>[10.0.1](#tab/10-0-1)
+### <a name="dynamics-365-for-retail-pos-version-1001"></a>Dynamics 365 for Retail POS バージョン 10.0.1
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
@@ -194,6 +199,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 
 | スキーム | カードあり | カードなし |
 |---|:-:|:-:|
+| [ギフト カードの残高を清算する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
 | [重複支払保護](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | オムニ チャネルのトークン化 | ✔ | ✔ |
 | リンクされた払戻 | ✔<br>(10.0.1 以降) | ✔<br>(10.0.1 以降) |

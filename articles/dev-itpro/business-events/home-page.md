@@ -3,7 +3,7 @@ title: ビジネス イベント
 description: このトピックは、外部システムが Dynamics 365 for Finance and Operations から通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 04/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b1d2e78cde1f68706603d464cda4e4eeae7ec963
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: 84349ce2b281067358b4240caaee07ad91507e3d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777215"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993704"
 ---
 # <a name="business-events"></a>ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
-
 
 ビジネス イベントは外部システムが Microsoft Dynamics 365 for Finance and Operations から通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 
@@ -36,30 +35,13 @@ Finance and Operations では、ユーザーが実行するビジネス アク�
 ## <a name="prerequisites"></a>必要条件
 
 - ビジネス イベントは Microsoft Flow およびAzureメッセージング サービス経由で利用できます。 したがって、ビジネス イベントを使用するには、顧客がこのようなアセットのサブスクリプションを契約している必要があります。
-- ビジネス イベントは、Platform 更新プログラム 24 以降で使用できます。 そのため、少なくともPlatform 更新プログラム 24 が必要です。
 
 > [!IMPORTANT]
 > ビジネス イベントを Finance and Operations からデータをエクスポートするためのメカニズムと考えることはできません。 定義上は、ビジネス イベントは簡易で軽快であることになっています。 データ エクスポートのシナリオを実行するために大量のペイロードを搭載することは想定していません。
 
-## <a name="enabling-business-events"></a>ビジネス イベントの有効化
-
-既定では、ビジネス イベント機能は無効になっています。 有効にするには、次のいずれかの手順に従います。
-
-- 非実稼働環境では、次のSQLステートメントを実行してBusinessEventsMaster フライトを有効にします。
-
-    ```
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 12719367)
-    ```
-
-- この SQL ステートメントを実行した後、各 AOS 上の web.config ファイル内に、以下が設定されていることを確認します。 key="DataAccess.FlightingServiceCatalogID" value="12719367"
-
-- IISRESETの実行
-
-- 実稼動環境では、Microsoft でサポート ケースを作成する必要があります。
-
 ## <a name="business-events-that-are-implemented-in-finance-and-operations"></a>Finance and Operationsに実装されているビジネス イベント
 
-Finance and Operations では、ビジネス イベントは、最初から用意されているいくつかのビジネス プロセスに実装されます。 これらのビジネス イベントには、ワークフローおよび非ワークフロー ビジネス イベントの両方が含まれます。 詳細については、「[アプリケーションのビジネス イベント](app-business-events.md)」および「[ワークフロー ビジネス イベント](business-events-workflow.md)」を参照してください。
+Finance and Operations では、ビジネス イベントは、最初から用意されているいくつかのビジネス プロセスに実装されます。 これらのビジネス イベントには、ワークフローおよび非ワークフロー ビジネス イベントの両方が含まれます。 詳細については [アプリケーション ビジネス イベント](app-business-events.md)、[ワークフロー ビジネス イベント](business-events-workflow.md)、[ビジネス イベントとしての警告](alerts-business-events.md) を参照してください。
 
 開発者は、拡張機能を使用して、新しいビジネス イベントを実装する必要があります。 詳細については、「[ビジネス イベント開発者ドキュメント](business-events-dev-doc.md)」を参照してください。
 
@@ -195,16 +177,27 @@ Key Vault の情報は、Azure Service Bus キュー エンドポイントの設
 
 ## <a name="business-event-consumption-models"></a>ビジネス イベント消費モデル
 
-実装の統合の要件と統合ソリューションの設計はさまざまです。 統合の要件は、ビジネス イベントの消費モデルの識別に影響します。 次の図は、Finance and Operations が利用できる消費モデルを示しています。
+実装の統合の要件と統合ソリューションの設計はさまざまです。 統合の要件は、ビジネス イベントの消費モデルの識別に影響します。 簡単に言うと、ビジネス イベントを使用した統合を設計する際に、次の点を考慮する必要があります。
 
-![ビジネス イベント消費モデル](../media/businesseventsconsumptionmodel.png)
-
-簡単に言うと、ビジネス イベントを使用した統合を設計する際に、次の点を考慮する必要があります。
-
-- ビジネス イベントは Microsoft Flow、Service Bus またはイベント グリッドで消費できます。
-- Microsoft Flow、Service Bus またはイベント グリッドを使用するには、顧客は自分でサブスクリプションを契約する必要があります。
+- ビジネス イベントは Microsoft Flow、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用して消費できます。
+- Microsoft Flow、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用するには、顧客は独自の購読を提供する必要があります。
 - ビジネス イベントは、すべての法人または特定の法人で有効化できます。
-- 法人のビジネス イベントは、1つのエンドポイントにのみ送信できます。 メッセージング ブローカーにより、一対多 (1: n) の消費が可能になります。
-- 特定の法人にまたがるビジネス イベントは、特定のエンドポイントまたは同一のエンドポイントに送信できます。
+- ビジネス イベントは、一意のエンドポイントまたは同一のエンドポイントに送信できます。
 - Microsoft Flow はビジネス イベントを直接購読できます。
-- Service Bus またはイベント グリッド エンドポイントなどのエンドポイントにより、*n* 個のコンシューマーがイベントを購読して受信できるようになります。
+
+## <a name="idempotency"></a>べき等
+ビジネス イベントはペイロードに管理番号を含めることで消費側でべき等の動作を有効にします。 制御番号は増加する番号であり、重複や故障出荷を検出するために消費アプリケーションによって追跡できます。 制御番号は連番にできないため、順序番号と読み間違えられることはありません。 番号付けスペースに間隔がある可能性があります。
+
+## <a name="filtering-in-azure-event-grid-and-azure-service-bus"></a>Azure Event Grid と Azure Service Bus でのフィルター処理
+Azure Service Bus と Azure Event Grid は受信メッセージの条件を指定してトピックの購読をサポートします。 詳細については [トピック フィルターとアクション](https://docs.microsoft.com/en-us/azure/service-bus-messaging/topic-filters) および [イベント グリッド購読のイベント フィルターを理解する](https://docs.microsoft.com/en-us/azure/event-grid/event-filtering) を参照してください。
+
+Azure Service Bus や Azure Event Grid に送信されるビジネス イベントは、この目的で使用できる次のフィールドを持ちます。 購読者はこの情報を使用して、必要に応じてさらに特定のトピックを購読できます。
+
+-   **カテゴリ** - これはビジネス イベント カタログに表示されたビジネス イベントのカテゴリです。 複数のカテゴリから共通トピックがビジネス イベントの受信に使用されていて、購読者が関心のあるカテゴリのビジネス イベントのみを受信する必要がある場合に、これはフィルター条件として役立ちます。
+
+-   **ビジネス イベント ID** – これはビジネス イベント カタログに表示されたビジネス イベント実装のクラス名です。 これはビジネス イベント (ビジネス イベントのインスタンスではない) を一意に識別して、したがって消費者側で受信したビジネス イベントを検証し、期待されるビジネス イベントが受信および処理されていることを検証するのに役立ちます。
+
+-   **法人** – これはビジネス イベントが発生した法人です。 消費側でのビジネス イベントの処理および配信が法人によって推進される必要がある場合、これは消費ロジックを基準とするのに役立つ情報です。
+
+> [!NOTE]
+> ビジネス イベントで送信されるフィルター処理可能フィールドは、カスタムフィールドを含むように変更できます。 これは開発者向けの環境です。

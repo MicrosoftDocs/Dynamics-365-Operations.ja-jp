@@ -3,7 +3,7 @@ title: 自分のデータベースの持ち込み (BYOD)
 description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 7e3b190d89ebde7a8af5f1ea8b48b6c8421c68d0
-ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
+ms.openlocfilehash: c5ddc592dc1a2dc194e462e71eb34889862ca099
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "834673"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "954112"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -147,6 +147,8 @@ BYOD からデータを読み取るレポート システムのシナリオで�
 
 複数のエンティティを持つデータ プロジェクトを作成することができます。 Finance and Operations バッチ フレームワークを使用することにより、このデータ プロジェクトの実行をスケジュールすることができます。 また、**バッチ処理でのエクスポート** オプションを選択することにより、データ エクスポート ジョブを定期的に実行するようにスケジュールします。
 
+同じジョブを使用してすべての会社からデータをエクスポートすることもできます。 [データ管理でフライトされる機能とフライトされた機能の有効化](../data-entities/data-entities-data-packages.md) で説明されているように、この機能はフライト DMFEnableAllCompanyExport を有効にすることで有効にできます。
+
 > [!NOTE]
 > BYOD のために **管理 > 定期的なデータ ジョブの管理** で定期的なエクスポートを使用することはお勧めしません。 **バッチ処理でのエクスポート** オプションを使用する必要があります。
 
@@ -172,10 +174,6 @@ BYOD 機能には、次の制限があります。
 #### <a name="there-should-be-no-active-locks-on-your-database-during-synchronization"></a>同期中、データベースにアクティブなロックが存在してはいけません
 BYOD は独自のデータベースであるため、Finance and Operations からデータが同期されているときは Azure SQL データベースにアクティブなロックがないことを確認する必要があります。 同期中にデータベースにアクティブなロックがあると、書き込み速度が低下したり Azure SQL データベースへのエクスポートの完全な失敗につながる可能性もあります。
 
-#### <a name="export-data-projects-are-specific-to-a-single-legal-entity"></a>エクスポート データ プロジェクトは単一の法人に固有です。
-
-複数の法人間では、データをエクスポートする 1 つのジョブを作成することはできません。 データをエクスポートするデータ プロジェクトを作成するとき、このジョブは現在の法人からのデータをエクスポートします。 複数の法人からデータをエクスポートする必要がある場合は、法人を切り替えることにより、複数のデータ プロジェクトを作成する必要があります。
-
 #### <a name="you-cant-export-composite-entities-into-your-own-database"></a>独自のデータベースに複合エンティティをエクスポートすることはできません。
 
 現在、複合エンティティがサポートされていません。 複合エンティティを構成する個々 のエンティティをエクスポートする必要があります。 ただし、同じデータ プロジェクト内の両方のエンティティをエクスポートすることができます。
@@ -183,3 +181,12 @@ BYOD は独自のデータベースであるため、Finance and Operations か�
 #### <a name="entities-that-dont-have-unique-keys-cant-be-exported-by-using-incremental-push"></a>固有キーを持たないエンティティは、増分プッシュを使用してエクスポートすることは不可能
 
 この制限は特に、数個の既製エンティティからレコードを段階的にエクスポートする場合に直面する可能性があります。 これらのエンティティは Finance and Operations にデータをインポートできるように設計されているため、固有のキーはありません。 ただし、変更追跡を、固有のキーがあるエンティティに対してのみ有効にすることができます。 したがって、増分プッシュには制限があります。 1 つの回避策は、必要なエンティティを拡張し、固有のキーを定義することです。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+### <a name="incremental-push-not-working-correctly"></a>増分プッシュが正常に機能しません
+
+**問題**- あるエンティティに対して完全プッシュが発生すると、SELECT ステートメントにより BYOD に大量のレコードが表示される可能性があります。 ただし、増分プッシュの結果は BYOD のレコード数個だけになります。 増分プッシュによってすべてのレコードが削除され、BYOD で変更されたレコードのみが追加されます。 
+
+**ソリューション**- このような場合、質問のエンティティの変更追跡を無効にしてから再度有効にすることをお勧めします。 SQL変更追跡テーブルの状態が、予期された状態になっていない可能性があります。 また、同じテーブル (DMF、MR、Retail) をカバーする他の増分エクスポートがないことを確認してください。
+

@@ -1,9 +1,9 @@
 ---
 title: オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 description: このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
-author: kfend
+author: hasaid
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 297820a04b62a031554eb2fdf74d98cb9d5a73ae
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0985bae74ed1032b8dfdef58fa7d4fa224d99c26
+ms.sourcegitcommit: c19d9cb1f1e77ce96ac4ec6e3212bc3c06288a7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369302"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "892571"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -30,7 +30,17 @@ ms.locfileid: "369302"
 
 このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
 
-## <a name="prerequisites"></a>前提条件
+  > [!IMPORTANT]
+  > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的には、代替ソリューションに向けた推奨案の提案に取り組んでいきます。  
+  
+  > - Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 サポート サイクルが終了するまで継続して使用することができます。 
+ 
+ >  - クラウド ベースの負荷テストサービスをご利用の場合は、同サービスは2020年3月31日までの間、継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 
+ 
+ > 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
+
+
+## <a name="prerequisites"></a>必要条件
 
 - 数量データのあるオンプレミス環境
 - 以下の特性を持つ開発環境。
@@ -264,8 +274,8 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** の **Visual Studio Online** フォルダーに配置します。
-3. **Visual Studio Online** フォルダで **setup.cmd** ファイルの内容を変更し、次のコードと一致するようにします。
+2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
+3. **Visual Studio Online** フォルダ内の **setup.cmd** ファイル内容を次のコードと一致するように変更します。
 
     ```
     setx testroot "%DeploymentDirectory%"
@@ -294,14 +304,14 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
         - C:\\PerfSDK\\CloudEnvironment.Config
         - C:\\PerfSDK\\authcert.pfx
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-        - C:\\PerfSDK\\Visual Studio オンライン\\
+        - C:\\PerfSDK\\ Visual Studio Online\\
 
         [![フィールドを配置するための追加ファイルおよびディレクトリ](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
         > [!NOTE]
         > PerfSDK フォルダーが異なっている場合があります。
 
-8. **スクリプトの設定とクリーンアップ** タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
+8. **設定とクリーンアップ** タブで、 **PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
 9. **ホスト**タブについて、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
 10. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 

@@ -3,7 +3,7 @@ title: 環境サービスの再開
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を通じて展開される環境で個々のサービスを再起動する方法について説明します。こ
 author: kfend
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: be24c3824399732e30ac442cf001a0a4032b4942
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dcee37628ee3c9230c1c51bcf8956f27827d6124
+ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369159"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898408"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 
@@ -36,7 +36,7 @@ Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使
 
 プロジェクト所有者、組織管理者、または環境マネージャーとして LCS プロジェクトに追加されたすべてのユーザーは、この機能を使用するアクセス許可を持っています。
 
-## <a name="restart-a-service"></a>サービスを再起動します
+## <a name="restart-a-specific-service"></a>特定のサービスを再起動する
 
 展開された環境で特定のサービスを再起動するには、次の手順を実行します。
 
@@ -50,3 +50,11 @@ Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使
 
     > [!NOTE]
     > サービスの再起動には数秒しかかからないため、**環境の状態**の値はすでに**配置済み**にリセットされている可能性があります。 再起動が完了すると、エントリが **履歴** ページに追加されます。
+    
+    
+ ## <a name="stop-and-start-all-services"></a>すべてのサービスを再起動する
+ 
+ **すべて** のサービスを再起動するには、環境の詳細 ページにて **停止** メニュー オプションを実行した後で、 **開始** オプションを実行します。
+ 
+  > [!NOTE]
+  > この機能は Tier-2+ Sandbox においてのみ利用可能となっています。プロダクション環境でがご利用いただけません。

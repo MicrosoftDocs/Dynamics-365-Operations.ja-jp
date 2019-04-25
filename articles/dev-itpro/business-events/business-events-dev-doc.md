@@ -15,17 +15,16 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b580541fe66b4a25088dfede4b947a82b0e3acc8
-ms.sourcegitcommit: 2e727bb651cf4dfa65d624f45f0dcdc1e7e8287c
+ms.openlocfilehash: 5ebf72da20a517e67433db9ff7134aa841ee7278
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "719407"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975839"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 
@@ -382,8 +381,7 @@ BusinessEventsContract
 ビジネス イベント フレームワークは、ビジネス イベントが消費者に公開されるかどうか決定します。 一般的なルールとして、ビジネス イベントが有効かどうかに関わらず、アプリケーションはビジネス イベントを常に送信する必要があります。 重要な追加ロジックが必要な場合、またはビジネス イベントを送信するためのロジックがパフォーマンスに影響する場合は、ビジネス イベントの送信に関連付けられたビジネス ロジックを実行する前に、アプリケーションは特定のビジネス イベントが有効化されているかどうか確認することができます。 この確認は **BusinessEventsConfigurationReader::isBusinessEventEnabled** メソッドを介して実行されます。
 
 ```
-if (BusinessEventsConfigurationReader::isBusinessEventEnabled(new
-CollectionStatusUpdatedBusinessEvent()))
+if (BusinessEventsConfigurationReader::isBusinessEventEnabled(classStr(CollectionStatusUpdatedBusinessEvent)))
 {
     while select dispute
     where dispute.Status == CustVendDisputeStatus::PromiseToPay

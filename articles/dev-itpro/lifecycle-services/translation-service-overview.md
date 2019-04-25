@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 Translation Service
 description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。 DTS はパートナーおよび ISV がソリューションの翻訳またはサポートされている Microsoft Dynamics 製品に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。
 author: ejcho
 manager: AnnBe
-ms.date: 09/13/2018
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 264bac810fb20417874727157069b188c3edad01
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7bbe43f5c112583b7c6e3b4a9f63b02c99a4ac02
+ms.sourcegitcommit: 5f76f1f458e93176a102ca7b4d40ec331748144e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "977219"
 ---
 # <a name="microsoft-dynamics-365-translation-service"></a>Microsoft Dynamics 365 Translation Service
 
@@ -40,7 +40,10 @@ DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一�
 既存の言語資産は、ローカライズ交換ファイル形式 (XLIFF) を使用する翻訳メモリ (TM) ファイルを含む zip ファイルに資産がアップロードされた場合にのみ再利用できます。 詳細については、[XLIFF 翻訳メモリ (TM)](./use-translation-service-tm.md) を参照してください。
 
 ## <a name="custom-trained-mt-system"></a>カスタム トレーニングされた MT システム
-DTS は、マイクロソフト リサーチ の Microsoft Translator Hub (MT Hub) を使用して、Microsoft Dynamics 製品の MT システムをカスタマイズします。 カスタム トレーニングを受けた MT システムは、パートナーおよび ISV が 10,000 を超える翻訳単位 (TU) を含む XLIFF TM ファイルをアップロードしない限り、Microsoft Dynamics の GA 言語でのみ使用できます。 (TU には、通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。) そのような場合、DTS は、XLIFF TM ファイルが提出される翻訳要求に固有のカスタムトレーニング MT システムを作成します。
+DTSは Microsoft Translator サービスとカスタム トランスレーターを使用して、Microsoft Dynamics 製品向けに Microsoft Translator の高度なニューラル機械翻訳をカスタマイズします。 カスタム トレーニングを受けた MT システムは、パートナーが 10,000 を超える翻訳単位 (TU) を含む XLIFF TM ファイルをアップロードしない限り、GA 言語でのみ使用できます。 (TU には、通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。) そのような場合、DTS は、XLIFF TM ファイルが提出される翻訳要求に固有のカスタムトレーニング MT システムを作成します。
+
+> [!NOTE]
+> Microsoft Translator は Microsoft Translator テキスト API を介したテキスト翻訳をサポートしています。 [Microsoft Translator Hub](https://www.microsoft.com/en-us/translator/business/hub/) の廃止により、V2 も 2019 年 4 月 30 日に廃止されます。そのため DTS は V3 Translator API を使用します。 V3 のサポート言語についての詳細は [Translator テキスト API の言語と地域のサポート](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support#customization) を参照してください。 
 
 ## <a name="supported-products"></a>サポートされている製品
 DTS では、現在次の製品バージョンがサポートされています。
@@ -48,10 +51,10 @@ DTS では、現在次の製品バージョンがサポートされています�
 | 製品名 | バージョン | ユーザー インターフェイス ファイルのサポートされている形式 | ドキュメント ファイルのサポートされている形式 | 摘要 |
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | すべてのバージョン | .ktd、.ald | .docx | |
-| Microsoft Dynamics 365 for Finance and Operations | すべてのバージョン | .label.txt | .docx | |
+| Microsoft Dynamics 365 for Finance and Operations | すべてのバージョン | .label.txt | .docx、.html | .txt は Finance and Operations で固有のラベル形式で、.html はカスタム ヘルプ ソリューションの形式です。 |
 | Microsoft Dynamics 365 for Retail | すべてのバージョン | .label.txt | .docx | |
-| Microsoft Dynamics CRM | 2011–2016 | .resx | .docx | |
-| Microsoft Dynamics NAV | 2015–2018 | .etx、.stx、.resx、.txt、.xml、.xlf | .docx | NAV 固有の形式は、.txt、.xml、.xlf ファイルに使用されます。 |
+| Microsoft Dynamics CRM | すべてのバージョン | .resx | .docx | |
+| Microsoft Dynamics NAV | すべてのバージョン | .etx、.stx、.resx、.txt、.xml、.xlf | .docx | .txt と .xml は NAV 固有の形式で、.xlf は Business Central の拡張リソース形式です。 |
 
 ## <a name="accessing-dts"></a>DTS へのアクセス
 LCS の次の 2 つの場所で DTS にアクセスすることができます。

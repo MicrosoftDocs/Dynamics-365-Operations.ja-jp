@@ -3,7 +3,7 @@ title: 拡張機能を使用してテーブルに関係を追加
 description: このトピックでは、テーブルにリレーションを追加する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: db426b2349414db4fb1adcaf6007c642dd668618
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b1412bd0f60600d83ce8fce57013eb3e977438b1
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369769"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "954086"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 
@@ -43,3 +43,11 @@ ms.locfileid: "369769"
 次の図は、新しいリレーションを示しています。
 
 ![新しい関係](media/AddRelationToExistingTable.jpg)
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+### <a name="navigation-property-methods-not-working"></a>ナビゲーション プロパティ メソッド が動作しない
+**問題** - テーブル拡張機能を使用して外部キー関係が作成されると、ナビゲーション プロパティ メソッドは動作しません。 コンパイラは拡張テーブルでナビゲーション メソッドの呼び出しを許可しません。
+
+**解決策** - ナビゲーション メソッドは現時点でサポートされていません。
+

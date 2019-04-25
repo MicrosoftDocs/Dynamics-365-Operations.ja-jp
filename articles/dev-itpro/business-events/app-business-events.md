@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: b9ba448adc202b02e63ed9e3040d802bac4bb1cc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5bfa0d8313c06211aa999b5904c4e50bc6575e23
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368972"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975742"
 ---
 # <a name="application-business-events"></a>アプリケーション ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
-[!include[preview-banner](../includes/preview-banner.md)]
 
 このトピックでは、アプリケーション ビジネス イベントを一覧します。
 

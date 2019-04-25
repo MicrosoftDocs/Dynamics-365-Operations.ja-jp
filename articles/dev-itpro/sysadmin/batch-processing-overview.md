@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ed136b3aae92977f253b4bea3a1e99c1ef91c94
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0f1bb582b25c7fe086cb4b18d455d74d4e1ea3a3
+ms.sourcegitcommit: 4e104ad3fc4a160a06f0d031974d60abcbb62829
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369244"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "851160"
 ---
 # <a name="batch-processing"></a>バッチ処理
 
@@ -55,3 +55,6 @@ Finance and Operations では、多くのタスクをバッチ ジョブの一�
 -  [バッチ マネージャー ロール](runby.md)
 -  [バッチ アクティブ期間](activeperiod.md)
 -  [バッチ ジョブのコピー](copy-batch-job.md)
+-  [バッチ警告のコンフィギュレーション](alerts.md)
+-  [バッチ化された フォーム](enhanced-forms.md)
+-  [バッチ履歴のクリーンアップ](batch-history-cleanup.md)

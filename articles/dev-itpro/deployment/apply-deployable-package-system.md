@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 86012fe3a81cad6c6f7ac1eeef0730134441ee68
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: f86f6948474efb95a9803a55867ee01e91417f80
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773762"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842593"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 for Finance and Operations 環境または Microsoft Dynamics 365 for Retail 環境のいずれかに更新を自動的に適用する方法を説明します。 展開可能なパッケージを使用して更新が適用されます。
+このトピックでは、Microsoft Dynamics Lifecycle Services を使用して、Microsoft Dynamics 365 for Finance and Operations 環境または Microsoft Dynamics 365 for Retail 環境のいずれかに更新を自動的に適用する方法を説明します。 展開可能なパッケージを使用して更新が適用されます。
 
 > [!IMPORTANT]
 > パッケージを適用するとシステムのダウンタイムが発生します。 すべて関連するサービスを停止、およびパッケージを適用中のときには環境を使用できなくなります。 それに応じた計画を立てる必要があります。
@@ -228,9 +228,9 @@ ms.locfileid: "773762"
 
 [![配置可能なパッケージの例](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
-**Runbook** – 展開ランブックは展開可能なパッケージを対象となる環境に適用させるために生成される一連の手順です。 一部のステップは自動化され、一部のステップは手動です。 AXUpdateInstaller は、これらの手順を一度に 1 つずつ正しい順序で実行できます。
+**Runbook** – 展開 runbook は展開可能なパッケージを対象となる環境に適用させるために生成される一連の手順です。 一部のステップは自動化され、一部のステップは手動です。 AXUpdateInstaller は、これらの手順を一度に 1 つずつ正しい順序で実行できます。
 
-[![展開ランブック の例](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
+[![展開 runbook の例](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
 
 **AXUpdateInstaller** - Microsoft Visual Studio または Microsoft バイナリ更新プログラムからカスタマイズ パッケージを作成すると、インストーラの実行可能ファイルが配置可能パッケージと共にバンドルされます。 インストーラーは、指定したトポロジの Runbook を生成します。 インストーラーは、特定のトポロジの Runbook に従って、手順を順番に実行することもできます。
 

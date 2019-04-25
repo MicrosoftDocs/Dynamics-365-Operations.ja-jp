@@ -3,7 +3,7 @@ title: 予定された保守ウィンドウのよく寄せられる質問
 description: このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,23 +16,21 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02d1ad0bbf4b18a57afdd0033d12ad284e827ab7
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 7a3e03e942aada5e7e41f11705b16c1bae92e132
+ms.sourcegitcommit: c19d9cb1f1e77ce96ac4ec6e3212bc3c06288a7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789809"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "892570"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/coming-soon.md)]
-
 ### <a name="what-is-a-planned-maintenance-window"></a>計画されているメンテナンス期間とは何ですか ?
-予定された保守ウィンドウは、重要な更新プログラムをクラウド サービスに適用するために Microsoft によってスケジュールされた時間枠です。
+メンテナンス予定期間は、機器設備や [サービス](../../fin-and-ops/get-started/one-version.md) に関する重要な更新を適用するために Microsoft がスケジュール設定をした時間枠です。
 
 ### <a name="how-does-a-planned-maintenance-window-work"></a>計画されているメンテナンス ウィンドウはどのように機能しますか。
-すべての計画的な保守については、パッチ適用枠が開始する **5 日** 前に Microsoft がすべての関係者に通知を送信します。 パッチ適用枠は環境にパッチが適用される期間です。 それは地理的な地域によって定義されます。 保守活動に関する詳細は、関係者に送信される通知に含まれます。
+すべての計画されたメンテナンスにつきましては、パッチ適用枠が開始する **5営業日** 前に Microsoft からすべての関係者にお知らせを送信します。 パッチ適用枠は環境にパッチが適用される期間です。 それは地理的な地域によって定義されます。 保守活動に関する詳細は、関係者に送信される通知に含まれます。
 
 ### <a name="when-is-this-planned-maintenance-window-taken"></a>この計画済みメンテナンス ウィンドウはいつ使用されますか ?
 ユーザーへの影響を制限するため、環境が配置されている地域に応じてメンテナンス ウィンドウが予定されています。 次のリストは、各地域のメンテナンス ウィンドウを示しています。 すべての環境は、これら 3 つの地域のいずれかに分類されます。 時間は協定世界時 (UTC、グリニッジ標準時) で表示されます。
@@ -61,7 +59,7 @@ Microsoft はサービスのダウンタイムの必要性を減らすよう継�
 ## <a name="microsoft-service-updates"></a>Microsoft のサービス更新プログラム 
 別のよく寄せられる質問 (FAQ) に Microsoft によって行われるサービス更新プログラムに関する詳細が記載されています。 [1 つのバージョンのサービス更新プログラムに関してよく寄せられる質問](../../fin-and-ops/get-started/one-version.md) を参照してください。
 
-## <a name="operating-systemlevel-updates"></a>オペレーティング システム レベルの更新 
+## <a name="infrastructure-updates"></a>機器設備の更新 
 
 ### <a name="how-long-is-the-maintenance-window"></a>メンテナンス ウィンドウの長さはどの程度ですか。
 ほとんどのオペレーティング システム レベルの更新は約 1 時間で完了します。 ただし、障害を処理してシステムを正常な状態に戻す時間があるため、Microsoft は 3 時間の時間枠を要求しています。 

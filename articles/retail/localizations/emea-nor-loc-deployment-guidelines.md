@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 0965df99c4b58bbb5ec8dd0fceb3207e8a3eb644
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 48b0938f7bd20fc7f288196bb42294d2917757d2
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760769"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "899040"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -31,7 +31,7 @@ ms.locfileid: "760769"
 
 このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio オンライン (VSO) のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
 > 使用しているバージョンによって、このトピックの手順の一部が異なります。 詳細については、[Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md)を参照してください。
@@ -53,12 +53,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを Microsoft インターネット インフォメーション サービス (IIS) Retail Serverのサイトがある場所の下の **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -76,12 +76,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
@@ -99,12 +99,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
@@ -124,12 +124,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -153,12 +153,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-6. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+6. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-7. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+7. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -178,12 +178,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -207,12 +207,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-6. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+6. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-7. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+7. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -230,12 +230,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -255,12 +255,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -284,12 +284,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-6. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+6. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-7. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+7. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -318,12 +318,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
@@ -347,10 +347,19 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-6. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+6. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+7. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturenorway-component"></a>SalesTransactionSignatureNorway コンポーネント
 
@@ -361,12 +370,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
@@ -393,12 +402,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -409,6 +418,22 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
+#### <a name="registerauditeventnorway-component"></a>RegisterAuditEvent ノルウェイ コンポーネント
+
+1. CRT 用拡張コンフィギュレーション ファイルを検索します。
+
+    - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
+    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+2. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+    ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+
 #### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister コンポーネント
 
 1. **Runtime.Extensions.SequentialSignatureRegister** プロジェクトを検索します。
@@ -424,10 +449,19 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-6. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+6. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+7. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturenorway-component"></a>SalesTransactionSignatureNorway コンポーネント
 
@@ -438,12 +472,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
@@ -470,12 +504,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -486,6 +520,22 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
+#### <a name="registerauditeventnorway-component"></a>RegisterAuditEvent ノルウェイ コンポーネント
+
+1. CRT 用拡張コンフィギュレーション ファイルを検索します。
+
+    - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
+    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+2. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+    ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
+
 #### <a name="sequentialsignatureregister-component"></a>SequentialSignatureRegister コンポーネント
 
 1. **Runtime.Extensions.SequentialSignatureRegister** プロジェクトを検索します。
@@ -501,10 +551,19 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-6. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+6. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+7. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    ```
+
+    > [!WARNING]
+    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては**いけません**。 これらのファイルはカスタマイズのためのものではありません。
 
 #### <a name="salestransactionsignaturenorway-component"></a>SalesTransactionSignatureNorway コンポーネント
 
@@ -515,12 +574,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
@@ -547,12 +606,12 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     - **Retail Server:** アセンブリを IIS Retail Server サイトがある場所の下にある **\\bin\\ext** フォルダーにコピーします。
     - **Local CRT on Modern POS:** アセンブリをローカル CRT クライアント ブローカーがある場所の下の **\\\ext** フォルダーにコピーします。
 
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
+4. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
     - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+5. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -614,7 +673,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
         - **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** コンフィギュレーション ファイル
 
     2. ファイルを、IIS Retail Server サイトがある場所の下の **\\bin** フォルダーにコピーします。
-    3. CRT 用コンフィギュレーション ファイルで CTR の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT用拡張機能コンフィギュレーションファイルでCRTの変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
@@ -624,7 +683,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
     1. **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** フォルダーで、**Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** アセンブリ ファイルを検索します。
     2. ファイルをIIS Retail Server サイトがある場所の **\\bin** フォルダーにコピーします。
-    3. CRT 用コンフィギュレーション ファイルで CTR の変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
+    3. CRT用拡張機能コンフィギュレーションファイルでCRTの変更を登録します。 ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin** フォルダーにあります。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
@@ -806,7 +865,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 1. **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample**  フォルダーで、**RetailServer.Extensions.SalesTransactionSignatureSample** プロジェクトを検索し、構築します。
 2. **RetailProxy\\RetailProxy.Extensions.SalesTransactionSignatureSample\\bin\\Debug** フォルダーで、**Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample** アセンブリ ファイルを検索します。
 3. アセンブリ ファイルをローカル CRT クライアント ブローカーの下の **\\ext** フォルダーにコピーします。
-4. 拡張機能コンフィギュレーション ファイルで 小売プロキシの変更を登録します。 ファイル名は **RetailProxy.MPOSOffline.ext.config** で、ローカル CRT クライアント ブローカーの場所の下にあります。
+4. 拡張機能コンフィギュレーション ファイルで Retail プロキシの変更を登録します。 ファイル名は **RetailProxy.MPOSOffline.ext.config** で、ローカル CRT クライアント ブローカーの場所の下にあります。
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -1223,6 +1282,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         ``` xml
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
         <add source="assembly" value="Contoso.Commerce.Runtime.RegisterAuditEventSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
@@ -1235,6 +1295,7 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
         ``` xml
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />

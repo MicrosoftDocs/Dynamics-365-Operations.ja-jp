@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) でサービス更新プログラムに関する
 description: このトピックでは環境へのサービス更新プログラムについて通知を受けるさまざまな方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a4247da70ec3c24c9d735a2b7ef57dc7af73c8a0
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: fd6e619fe2285b698213c91ee7000b85e120f4b0
+ms.sourcegitcommit: 901aebfac63e00c0b7125c53c63f5dfd437c3ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "790309"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "849128"
 ---
 # <a name="get-notified-about-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/coming-soon.md)]
 
 このトピックでは Microsoft からのサービス更新プログラムについて最新の状態に保つ方法を説明します。
 

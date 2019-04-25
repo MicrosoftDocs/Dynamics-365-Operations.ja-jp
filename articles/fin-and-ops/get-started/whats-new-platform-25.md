@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations プラットフォーム更新プ
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: 8325f7e274b8318cd51024056fa9062550aca2dd
-ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
+ms.openlocfilehash: 38bb8aa7a2b34fe4656e140cbcb5480521d50182
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "834674"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975744"
 ---
 # <a name="preview-features-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の機能をプレビューする
 
@@ -64,7 +64,17 @@ Azure Blob Storage はビジネス イベントのエンド ポイントとし�
 ビジネス イベントについての詳細は [ビジネス イベント](../../dev-itpro/business-events/home-page.md) を参照してください。 
 
 > [!Note]
-> ビジネス イベント機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 その機能を有効にする方法については [ビジネス イベントの有効化](../../dev-itpro/business-events/home-page.md#enabling-business-events) を参照してください。
+> ビジネス イベント機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 
+
+## <a name="batch-jobs-single-scheduler"></a>バッチ ジョブの単一スケジューラ
+バッチ フレームワークで行われた改善は、バッチ スケジューリング機能を最適化します。 一度にアクティブになるバッチス ケジューラはひとつだけで、それがより高いスループットを維持します。 これはプラットフォーム更新プログラム 25 では既定で有効です。
+
+## <a name="batch-jobs-enhanced-forms"></a>バッチ ジョブ拡張フォーム
+**バッチ ジョブ** フォームは生産性の向上し、ユーザー エクスペリエンスを高めるために拡張されています。 ユーザーは拡張形式とレガシ形式を切り替えることができます。 詳細については [バッチ拡張フォーム](../../dev-itpro/sysadmin/enhanced-forms.md) を参照してください。
+さらに、保存されているビューに対するサポートが追加され、将来のプラットフォーム更新プログラムでリリースされる予定です。 保存されているビューについては [リリース ノート](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views) を参照してください。
+
+## <a name="batch-jobs-alerts-and-notifications"></a>バッチ ジョブの警告および通知
+アクション センターでバッチ ジョブの通知を確認できます。 これらの通知はバッチ イベントについて欠かさず知らせます。 バッチ ジョブが終了したとき、エラーで終了したとき、またはキャンセルされたときに警告ルールを有効化できます。 警告を電子メールで送信するか、アクション センターにポップアップ通知として表示するかどうかを選択できます。 詳細については [警告](../../dev-itpro/sysadmin/alerts.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -83,3 +93,5 @@ Azure Blob Storage はビジネス イベントのエンド ポイントとし�
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+
+コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。

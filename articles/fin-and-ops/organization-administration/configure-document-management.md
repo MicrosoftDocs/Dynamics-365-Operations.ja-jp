@@ -3,7 +3,7 @@ title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64c5c291d659776487c7fb1ff8b434fcaa4fe672
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6f0552df9e3cce3cd2c44390a5b6feef39c4e1e0
+ms.sourcegitcommit: 6ac1ab669901082e8ac0d72979a3f9f067db2562
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369391"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902604"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -133,4 +133,12 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 ### <a name="how-does-the-default-storage-location-for-document-management-change-in-on-premises-environments"></a>オンプレミス環境では、ドキュメント管理の既定の保管場所はどのように変更されますか？
 
-オンプレミス環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダです。
+オンプレミス環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダとなります。
+
+### <a name="if-i-accidentally-delete-an-attachment-stored-in-azure-blob-storage-can-it-be-restored"></a>誤ってAzureブロブ ストレージに格納されている添付ファイルを削除した場合、復元できますか。
+
+Azureブロブ ストレージに格納されている添付ファイルが誤って削除された場合は、完全に削除されたことになり、ファイルへの参照情報も削除されてしまうため、復元や修復することができません。
+
+### <a name="is-the-database-information-about-attachments-stored-separately-from-the-attachments-themselves"></a>添付ファイルに関するデータベースの情報は、添付ファイルそのものとは別の場所に保存されていますか？
+
+添付ファイルの情報はDocuRefテーブルおよびDocuViewテーブルに格納されています。 DocuRefテーブルは、主に添付ファイルに関する情報を保持しています。 DocuRefの情報は、DocuViewレコードに関連付けられている情報と連携しています。 DocuRefテーブルは、添付ファイルを保持しています。 ファイルはデータベースの外に保存されるため、バックアップから復元するなどのデータベース上の操作は添付ファイルに関するデータベース情報のみに作用し、添付ファイルそのものには作用しません。

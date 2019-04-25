@@ -3,7 +3,7 @@ title: Azure Active Directory への企業間 (B2B) のユーザーのエクス�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で企業間のトランザクション機能を実装する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 04/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b20839a6847e4a23e82e4a5149b57fdcdfcdb424
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 21ab3afcd34608b6d79845f3a10c8d8fda734c94
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368991"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975741"
 ---
 # <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 
@@ -62,12 +62,15 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 8. **API アクセスの追加**ウィンドウで、次の操作を行います。
     1. **API を選択**タブをクリックします。**Microsoft Graph** をクリックし、**選択**をクリックします。
     
-    2. **アクセス許可の選択**タブで、以下の**アプリケーションのアクセス許可**を選択します。
+    2. **アクセス許可の選択**タブで、以下の**アプリケーションのアクセス許可**を選択して **はい** に設定します。
          - **ゲスト ユーザーを組織へ招待します**
          - **ディレクトリ データの読み取りと書き込み**
          - **すべてのユーザーの完全なプロファイルの読み取りと書き込み**
     
-    3. 次の委任されたアクセス許可を選択します。
+    3. 次の **委任されたアクセス許可** を選択して、**はい** に設定します。
+         - **ゲスト ユーザーを組織へ招待します**
+         - **ディレクトリ データの読み取りと書き込み**
+         - **すべてのユーザーの完全なプロファイルの読み取りと書き込み**
          - **サインインし、ユーザー プロファイルを読み取ります**
      
     4. **選択**および**完了**をクリックします。

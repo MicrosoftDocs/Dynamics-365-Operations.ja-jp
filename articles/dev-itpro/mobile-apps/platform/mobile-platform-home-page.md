@@ -3,7 +3,7 @@ title: モバイル プラットフォームのホーム ページ
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/3/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 86d3b62473b05cea7cff9a04ef00a6fc5b739942
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c7e1d18fbb62b671c7451f3e09379395753046a8
+ms.sourcegitcommit: 5d6c917b3b91149ce316aaaf839880d77f4671c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369780"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "907584"
 ---
 # <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
 
@@ -97,7 +97,7 @@ ms.locfileid: "369780"
 2. Android デバイスで Unified Operations アプリの Android デバッグ apk をインストールします。
     - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ**の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう**未知のソース**を確認します。
     - Unified Operations アプリケーションのアンインストール - Unified Operations アプリケーションの以前のバージョンがアンインストールされていることを確認します。
-    - デバイスのブラウザーから apk ファイルをダウンロードして、「[Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk)」に移動し、**ダウンロード** (または「[ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)」) をクリックします。
+    - デバイスのブラウザーから apk ファイルをダウンロードして、[Github 上の Unified Operations Android デバッグ apk](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または [ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
     - Unified Operations apk ファイルをインストール - apk ファイル経由で Unified Operations アプリのインストールを確認します。
     - デバイスのデバッグ Unified Operations アプリケーションを実行し、サインインします。
 
@@ -161,3 +161,28 @@ ADFS がドメインで使用されており、環境がオンプレミスであ
 - 例については、[フリート管理のサンプル](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)を確認してください。
 - たとえば、経費管理ワークスペース、および他の標準ワークスペースを発行して確認します。 USSI 企業のデモ データは、経費管理ワークスペースを使用する場合に便利です。 経費管理ワークスペースを構成するフォームおよび X++ コードは、接頭語 "ExpenseMobile" を検索してアプリケーション エクスプローラーで見つけることができます。
 - 答えを検索し、必要に応じて質問することにより、「[Finance and Operations (AX) の Dynamics コミュニティ フォーラム (AX)](https://community.dynamics.com/ax/f/33)」を活用してください。
+
+### <a name="tips-for-workspace-creation-and-modification"></a>ワークスペースの作成および変更に関するヒント
+ワークスペースの作成および変更に関するヒントを以下に示します。
+- 大規模で複雑なフォームを記録するのではなく、記録用の簡略化されたフォームを新しく作成します。
+- フォームを記録したら、**完了**をクリックする代わりにフォームを閉じる必要があります。そうしないと、フォームは開いたままです。
+- グリッドのあるページを記録し直す場合は、[詳細] ページへのリンクをもう一度記録する必要があります。そうしないと、リンクがページに含まれないためです。
+- アクションを記録するときは、フィールドに追加する値を変更します。 記録が完了したら、**保存**をクリックする代わりににフォームを閉じます。
+- 携帯のルックアップは、記録済みのリスト ページです。 **保存する値としてフィールドを使用する** (データ) および**ユーザーに表示するフィールド** (表示) を選択するには、それぞれ**フィールド データの選択**および**表示するフィールドを選択します**を使用します。
+- ルックアップを再記録する場合は、ルックアップの GUID が変更されるため、すべての参照も再記録する必要があります。
+- ページにフィールドを追加する場合は、すべてのフィールドをもう一度追加する必要があります。これは、各編集の最初にリストがクリアされるためです。 これは、タスク レコーダーの制限です。 並べ替えもできないことに注意してください。
+- XML のワークスペースでは、フォームやコントロールへの参照に名前ではなく GUID が使用されます。 GUID は一意性を確保するために使用されますが、これは保守に影響します。 これらの GUID は変更ごとに再生成されるため、部分的な編集は非常に困難です。 GUID の使用を変更するには多大なコストがかかるため、より簡単な文字列名の参照を使用するための変更が将来加えられる可能性はあまりありません。
+- フォームのデータソースの間のリレーションシップは、文字列ではなく RecordId を介する必要があります。 たとえば、データソースの主キーは文字列にできません。
+- 顧客やパートナーは、ワークスペースのコピーを作成してワークスペースをフォークしてから、必要に応じて変更を加えることができます。
+- モバイルにはチェック ボックスはありません。 JavaScript で、フィールドを Yes/No 列挙型に手動でバインドする必要があります。
+
+### <a name="common-problems-with-form-recordings"></a>フォームの記録に関する一般的な問題
+ワークスペースの記録を作成するときは、次のパターンやコントロールをフォームで使用しないでください。
+- DelayedJoin を使用するデータソース (トランザクション フォームに共通)。
+- クイック タブ (既存のフォームに共通)。
+    - 記録されるフォームには FastTabs は不要です (展開状態は記憶されます)。
+- 展開可能なリージョン、リージョンの表示/非表示などの状態を持つユーザー インターフェイス (UI)。
+- モバイルにはチェック ボックスはありません。 JavaScript で、フィールドを Yes/No 列挙型に手動でバインドする必要があります。
+
+### <a name="using-multi-factor-authentication-with-the-unified-operations-app"></a>Unified Operations アプリでの多要素認証の使用
+Unified Operations (モバイル クライアント) アプリでは、埋め込みブラウザー内に AAD サインインの Web ページを表示することにより、Azure Active Directory (AAD) でのユーザー認証を容易に行えるようにします。 サインインの後で、クッキーからユーザー トークンを取得し、Web クライアントと共有するユーザー インタラクション サービスと通信するときにこれを使用します。 同じデバイス上の別のアプリへの切り替えに関わる多要素認証メカニズムが原因で埋め込みブラウザーが終了して、サインインできないことがあります。 これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。

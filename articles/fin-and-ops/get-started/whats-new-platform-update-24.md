@@ -3,7 +3,7 @@ title: Finance and Operations プラットフォーム更新プログラム 24 (
 description: このトピックでは Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 24 (2019 年 3 月) でプレビューできる機能について説明します。
 author: tonyafehr
 manager: AnnBe
-ms.date: 3/05/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: 190c255a8cef89f71d149a246a5dcd0a21a06119
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: 788ab96c7108047d53a619bc2647f137a9afb328
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777191"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975738"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -74,7 +74,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 この新しい機能により、Finance and Operations の業務プロセスが実行されるときにビジネス イベントをキャプチャし、そのイベントを外部システムまたはアプリケーションに送信できるフレームワークが提供されます。
 
 > [!Note]
-> この機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 その機能を有効にする方法については [ビジネス イベントの有効化](../../dev-itpro/business-events/home-page.md#enabling-business-events) を参照してください。
+> この機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features) を参照してください。 
 
 これにより、たとえば、発注書の承認によって、仕入先組織でのフルフィルメントがすぐにトリガーされるようになります。また破損部品の受領書 1 枚で、仕入先クレーム処理をリアルタイムでトリガーすることもできます。 これらのイベントは業務プロセスのコンテキストで発生するため、*ビジネス イベント*と呼ばれ、*業務プロセスの統合*が可能になります。
 
@@ -114,5 +114,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+
+コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 

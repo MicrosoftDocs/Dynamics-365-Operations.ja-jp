@@ -3,7 +3,7 @@ title: Microsoft Flow 内のビジネス イベント
 description: このトピックでは、Finance and Operations コネクタを介して Microsoft Flow での消費に使用可能なビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,17 +15,16 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 40545536f5ea8b2cea601eb430af60dac0a852ec
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 34309ba5a1d2da66c7b01c0e5ba82560b0f685db
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369513"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976554"
 ---
 # <a name="business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベント
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 ビジネス イベントは Microsoft Finance and Operations コネクタを介して Microsoft Flow で消費することができます。  Finance and Operations コネクタには **ビジネス イベントの発生時** という名前のトリガーがあります。 このトリガーは、Microsoft Dynamics 365 for Finance and Operations のターゲット インスタンスで使用可能なビジネス イベントの購読に使用することができます。
 
@@ -48,9 +47,9 @@ ms.locfileid: "369513"
 
 フローが保存されると、選択したビジネス イベントに対するサブスクリプションが環境インスタンスに追加されます。 サブスクリプション プロセスの一部として、必要なエンドポイントが設定され、対応するビジネス イベントが有効にされます。
 
-トリガーまたはフローのいずれかが削除されると、ビジネス イベントは自動的に購読解除されます。
+トリガーまたはフローのいずれかを削除または無効化すると、ビジネス イベントは自動的に購読解除されます。
 
-複数のフローが、異なる法人内の同じビジネス イベントを購読することができます。
+複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。
 
 ## <a name="other-ways-to-consume-business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベントを消費する他の方法
 

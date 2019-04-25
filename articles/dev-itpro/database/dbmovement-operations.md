@@ -3,7 +3,7 @@ title: データベース移動操作ホーム ページ
 description: このトピックでは、Lifecycle Services のデータベースの移動機能の使用可能なクイック スタート ガイドおよびチュートリアルへのリンクを示します。
 author: laneswenka
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe58e65201148702955f9c276dbdb08a4c913ec6
-ms.sourcegitcommit: 313e13afe17be45a53ae71bfee20ccb616fca62b
+ms.openlocfilehash: b2bc1eb8bf05ec3dd112ce245e1113b3b45316dd
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "380281"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842237"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 
@@ -40,9 +40,10 @@ ms.locfileid: "380281"
  ## <a name="step-by-step-tutorials"></a>ステップバイステップ チュートリアル
  お客様に合わせて DataALM を使用して実装の一般的なシナリオを達成する方法を説明します。
  * [トレーニング用の更新](dbmovement-scenario-general-refresh.md)
- * [デバッグおよび診断](dbmovement-scenario-debugdiag.md)
+ * [生産データベースのコピーのデバッグ](dbmovement-scenario-debugdiag.md)
+ * [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](dbmovement-scenario-exportuat.md)
  * [ゴールデン コンフィギュレーション プロモーション](dbmovement-scenario-goldenconfig.md)
  * [破壊試験](dbmovement-scenario-destructivetests.md)
  
- > [!Important]
+ > [!IMPORTANT]
  > ポイントインタイム復元の新機能と、RESTful API は、プライベート プレビューです。 プライベート プレビュー プログラムに登録するには、[プライベート プレビュー アンケート](https://aka.ms/SelfServiceDatabaseMovementPreview)に記入してください。

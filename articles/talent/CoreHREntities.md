@@ -1,7 +1,7 @@
 ---
-title: Common Data Service for Apps の Core HR エンティティ
-description: Core HR は、Common Data Service (CD) for Apps を使用して、拡張性シナリオおよび統合シナリオを有効にします。
-author: jcart
+title: Common Data Service の Core HR エンティティ
+description: Core HR は、Common Data Service を使用して、拡張性シナリオおよび統合シナリオを有効にします。
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: article
@@ -9,29 +9,32 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 017cc942dfa2cfc36bf10a7ae25cecbaa80df661
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 08758dde0b22e5d488b75b31e0b3d4690b78f66d
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369743"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950120"
 ---
-# <a name="core-hr-and-common-data-service-for-apps"></a>Core HR および Common Data Service for Apps
+# <a name="core-hr-and-common-data-service"></a>Core HR および Common Data Service
 
 [!include [banner](includes/banner.md)]
 
-Core HR は、Common Data Service (CD) for Apps を使用して、拡張性シナリオおよび統合シナリオを有効にします。
+Core HR は、Common Data Service を使用して、拡張性シナリオおよび統合シナリオを有効にします。
 
-CDS for Apps の詳細については、[Common Data Service for Apps とは](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)を参照してください。
+Common Data Service の詳細については、[Common Data Service とは何か](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)を参照してください。
 
-次の Core HR エンティティは、CDS for Apps で使用できます。
+> [!IMPORTANT]
+> Common Data Service の以前のリリース (1.0) は、使用できなくなります。 2019 年 4 月 15 日、Core HR および Common Data Service (1.0) 間の統合がオフになります。 アップグレードの詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds)を参照してください。
+
+次の Core HR エンティティは、Common Data Service で使用できます。
 
 ## <a name="benefit-entities"></a>Benefit エンティティ
 
@@ -779,3 +782,23 @@ CDS for Apps の詳細については、[Common Data Service for Apps とは](ht
 | イベント タイプ            | オプション セット      | x            | x              |
 | 有効             | 2 つのオプション     | x            |                |
 | 氏名                  | テキスト            | x            | x              |
+
+## <a name="entity-relationship-models"></a>エンティティ関係モデル
+
+### <a name="worker"></a>ワーカー
+![ワーカー](./media/HCMCommon-worker-entity-diagram.png)
+
+### <a name="job-and-job-position"></a>職務および職位
+![職務および職位](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+
+### <a name="benefits"></a>福利厚生
+![福利厚生](./media/HCMCommon-benefits-entity-diagram.png)
+
+### <a name="compensation"></a>報酬
+![報酬](./media/HCMCommon-compensation-entity-diagram.png)
+
+### <a name="leave"></a>休暇
+![休暇](./media/HCMCommon-leave-entity-diagram.png)
+
+### <a name="work-calendar"></a>作業カレンダー
+![作業カレンダー](./media/HCMCommon-work-calendar-entity-diagram.png)

@@ -3,7 +3,7 @@ title: 顧客エンティティへの拡張プロパティの追加
 description: このチュートリアルでは、拡張プロパティを使用してエンティティを拡張する方法を示します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/17/2017
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,16 +17,19 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b135cde1a902f6c3797bb2371975f0a09e48ccce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c639438a93c81309ea9520915bd0542aacdc89be
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369390"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950322"
 ---
 # <a name="add-extension-properties-to-customer-entities"></a>顧客エンティティへの拡張プロパティの追加
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このチュートリアルでは、拡張プロパティを使用してエンティティを拡張する方法を示します。 
 

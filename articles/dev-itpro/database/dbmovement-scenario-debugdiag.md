@@ -1,9 +1,9 @@
 ---
-title: デバッグおよび診断
+title: 生産データベースのコピーのデバッグ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデバッグや診断シナリオについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/28/2019
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,227 +15,92 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 80490a3aff6ea52295fc4c4a21405c2eb1ff70f8
-ms.sourcegitcommit: 2f7e06a3c8813dac773d075c9868e4cfc040a64c
+ms.openlocfilehash: 2b1ba37a3c96a961c4cab2d0b642c84f9f9dffea
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "780158"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842498"
 ---
-# <a name="debugging-and-diagnostics"></a>デバッグおよび診断
+# <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 
 [!include [banner](../includes/banner.md)]
 
-データベース移動操作は、データ アプリケーション ライフ サイクル管理 (DataALM) の一部として使用できる一連のセルフ サービスのアクションです。 このチュートリアルでは、更新操作とエクスポート操作を組み合わせて、デバッグの目的での生産データの最新のコピーを取得する方法を説明します。
+データベース移動操作は、データ アプリケーション ライフ サイクル管理 (DataALM) の一部として使用できる一連のセルフ サービスのアクションです。 このチュートリアルでは、生産データの最新のコピーの特定のデータとトランザクションをデバッグする方法を示します。
 
 このチュートリアルでは、次の方法について説明します。
 
 > [!div class="checklist"]
 > * ユーザー受け入れテスト (UAT) 環境を更新します。
-> * Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリへのエクスポートを実行します。
-> * データベース バックアップをダウンロードします。
-> * データベースをインポートし、開発者環境で使用できるようにそれを準備します。
+> * 承認済リスト (「ホワイトリスト」) には、開発者の環境の IP アドレスを追加します。
+> * UAT データベースに接続できるように、開発者環境を更新します。
+> * ブレークポイントを設定し、データのデバッグを開始します。
 
-このシナリオの例として、Microsoft Dynamics 365 for Finance and Operations を既に稼働している顧客が、開発環境に生産トランザクションの最新のコピーを読み込もうとしています。 これにより、顧客は特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
+このシナリオの例として、Microsoft Dynamics 365 for Finance and Operations を既に稼働している顧客が、開発環境から生産トランザクションの最新のコピーをデバッグしようとしています。 これにより、顧客は止まっている特定のトランザクションをデバッグしたり、または実際的なデータセットを使用して新しい機能とレポートを開発できます。
 
 ## <a name="prerequisites"></a>必要条件
 
 更新操作を行うには、実稼働環境を配置している必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。 このチュートリアルを完了するには、開発者環境が配置されている必要があります。
 
-## <a name="refresh-the-uat-environment"></a>UAT 環境を更新
+> [!IMPORTANT]
+> デバッグの場合、UAT 環境で使用できるのと同じコードとビジネス ロジックを実行する DevTest 環境を使用することを強くお勧めします。 バージョン コントロールで複数のブランチを使用する場合は、最新の UAT または生産トランザクションをデバッグするために使用される DevTest 環境を、UAT のパッケージを構築するために使用する同じブランチに接続した後、生産に使用することをお勧めします。 これにより、互換性のあるスキーマになるため、DevTest 環境と UAT データベースの間でデータベースの同期を実行する必要がありません。 これまで、このような環境は、修正プログラム/サポート環境と呼ばれてきました。通常のコード プロモーション パス外となっているためです。
+
+## <a name="refresh-the-uat-environment"></a>UAT 環境を更新 
 
 この更新操作は、生産データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
 
-## <a name="back-up-to-the-asset-library"></a>資産ライブラリへのバックアップ
+## <a name="add-your-ip-address-to-a-whitelist"></a>IP アドレスをホワイトリストに追加します。
 
-[!include [dbmovement-export](../includes/dbmovement-export.md)]
+既定では、すべてのサンドボックス標準受け入れテスト環境で Microsoft Azure データベース プラットフォームとして SQL データベースを使用します。 このような環境のデータベースは、最初に配置された Application Object Server (AOS) へのアクセスを制限するファイアウォールで保護されています。
 
-## <a name="import-the-database"></a>データベースのインポート
+ただし、UAT データベースに直接開発環境 (クラウドにホストされているか、または Microsoft が管理) を接続できるように、例外を作ることができます。 開発者環境を UAT データベースに直接接続するには、開発者仮想マシン (VM) で IP アドレスを取得する必要があります。
 
-データベース バックアップ (.bacpac) ファイルをダウンロードした後、レベル 1 環境の手動インポート操作を開始することができます。 データベースをインポートするときは、これらのガイドラインに従うことお勧めします。
+サンドボックス AOS VM で、Microsoft SQL Server Management Studio (SSMS) を開き、Microsoft Dynamics Lifecycle Services (LCS) で環境の詳細のページから使用できる情報を使用してデータベースに接続します。 ユーザー名レコードで **axdbadmin** を検索し、**{sqlServer\\sqlDatabase}** 形式のサーバーとデータベースに注目します。
 
-- 必要な場合は、後で戻すことができるように、既存の AxDB データベースのコピーを保持します。
-- **AxDB\_fromProd** などの新しい名前の下に新しいデータベースをインポートします。
+SSMS で、SQL Server、ユーザー名、およびパスワードを入力します。 **接続のプロパティ** タブで、LCS の **axdbadmin** レコードから明示的にデータベース名を入力します。
 
-最高のパフォーマンスを保証するには、\*.bacpac ファイルをインポート元のローカル コンピューターにコピーします。 **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
+接続したら、データベースに対してクエリを開き、次の Transact-SQL (T-SQL) コマンドで IP アドレスを入力します。
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
-
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+-- Create database-level firewall setting for IP a.b.c.d 
+EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
 ```
 
-パラメータの説明を以下に示します。
-
-- **tsn (ターゲット サーバー名)** – インポートする Microsoft SQL Server インスタンスの名前。
-- **tdn(ターゲット データベース名)** – インポートするデータベースの名前。 データベースが既に存在していては**いけません**。
-- **sf(ソース ファイル)** – インポートするファイルのパスと名前。
+開発環境に戻って SSMS を開き、UAT データベースに対して同じ **axdbadmin** 資格情報を使用して接続を試みます。 次の手順に進む前に接続できることを確認します。
 
 > [!NOTE]
-> インポート中に、ユーザー名およびパスワードは必要ありません。 既定では、SQL Server は、現在サインインしているユーザーに対して Microsoft Windows 認証を使用します。
+> 更新を実行するたびにファイアウォール ホワイトリストはリセットされます。 将来の必要なときに、このデータベースに DevTest 環境を追加する必要があります。
 
-## <a name="update-the-database"></a>データベースの更新
+## <a name="update-a-onebox-devtest-environment-to-connect-to-the-uat-database"></a>UAT データベースに接続する OneBox DevTest 環境を更新する
 
-インポートされたデータベースに対して、次の SQL スクリプトを実行します。 このスクリプトは、ソース データベースから削除したユーザーを追加し、この SQL インスタンスの SQL のログインに正しくリンクします。 スクリプトはまた、変更の追跡を元に戻します。 必ず、データベースの名前を使用できるように、最後の **ALTER DATABASE** ステートメントを編集してください。
+開発者環境で、データベース接続を変更するために web.config ファイルを更新する必要があります。 この手順を使用すると、データベースに対して UAT からコンフィギュレーションされたローカル コードとバイナリを実行できます。
 
-```
-CREATE USER axdeployuser FROM LOGIN axdeployuser
-EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+サービス ドライブで **AoSService\\WebRoot** ディレクトリに移動します。 (通常は、サービス ドライブはドライブ J または K です)。web.config という名前のファイルを検索し、*バックアップを作成*します。 次に、メモ帳などのエディターで **web.config** ファイルを開き、次の構成を見つけます。
 
-CREATE USER axdbadmin FROM LOGIN axdbadmin
-EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+- DataAccess.Database
+- DataAccess.DBServer
+- DataAccess.SqlPwd
+- DataAccess.SqlUser
 
-CREATE USER axmrruntimeuser FROM LOGIN axmrruntimeuser
-EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
-
-CREATE USER axretaildatasyncuser FROM LOGIN axretaildatasyncuser
-EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
-
-CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
-EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
-
-CREATE USER axdeployextuser FROM LOGIN axdeployextuser
-EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
-
-CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
-EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
-
-UPDATE T1
-SET T1.storageproviderid = 0
-    , T1.accessinformation = ''
-    , T1.modifiedby = 'Admin'
-    , T1.modifieddatetime = getdate()
-FROM docuvalue T1
-WHERE T1.storageproviderid = 1 --Azure storage
-
-GO
-DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
-DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
-GO
--- Begin Refresh Retail FullText Catalogs
-DECLARE @RFTXNAME NVARCHAR(MAX);
-DECLARE @RFTXSQL NVARCHAR(MAX);
-DECLARE retail_ftx CURSOR FOR
-SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
-    WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
-OPEN retail_ftx;
-FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
-
-BEGIN TRY
-    WHILE @@FETCH_STATUS = 0 
-    BEGIN 
-        PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
-        EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
-        SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
-        EXEC SP_EXECUTESQL @RFTXSQL;
-        FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
-    END
-END TRY
-BEGIN CATCH
-    PRINT error_message()
-END CATCH
-
-CLOSE retail_ftx; 
-DEALLOCATE retail_ftx; 
--- End Refresh Retail FullText Catalogs
-```
-
-### <a name="turn-on-change-tracking"></a>変更追跡を有効にする
-
-ソース データベースで変更追跡が有効になっている場合は、**ALTER DATABASE** コマンドを使用して、ターゲット環境の新たなプロビジョニング データベースで有効にしてください。
+LCS で UAT 環境の環境詳細ページから値を使用するように、これらのコンフィギュレーションを更新します。
 
 ```
-ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
+<add key="DataAccess.Database" value="<example_axdb_fromAzure>" />
+<add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
+<add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
+<add key="DataAccess.SqlUser" value="axdbadmin" />
 ```
+ファイル保存します。 クラウドにホストされている環境で操作している場合は、IISRESET を実行します。 Microsoft が管理する開発者向けのコンピューターを使用していてアクセス許可が制限されている場合、必ず Microsoft Visual Studio を閉じてください。
 
-新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを保証するには、データ管理のデータ エンティティの変更追跡をオンまたはオフにする必要があります。 任意のエンティティを選択します。 ストアド プロシージャの更新を起動するには、この手順が必要です。
+最後に、Web ブラウザーを開き、DevTest 環境の URL に移動して、UAT データベースからデータを取得することを確認します。
 
-## <a name="start-to-use-the-new-database"></a>新しいデータベースの使用を開始します。
+## <a name="debug-transactions-in-the-devtest-environment"></a>DevTest 環境でトランザクションをデバッグする
 
-環境を切り替えて新しいデータベースを使用するには、最初に次のサービスを停止します。
+これで、環境が正しく再構成され、Visual Studio を開いてニーズを最も満たすアプリケーション コードでブレークポイントを設定できるようになりました。 UAT 環境のユーザーは、DevTest 環境でのデバッグ中に影響を受けないことに注意してください。
 
-- World Wide Web 公開サービス
-- Microsoft Dynamics 365 Unified Operations: バッチ管理サービス
-- Management Reporter 2012 処理サービス
+## <a name="best-practices"></a>ベスト プラクティス
 
-これらのサービスが停止した後、AxDB データベース **AxDB\_orig** の名前を変更し、新しくインポートしたデータベース **AxDB** の名前を変更し、そして 3 つのサービスを再起動します。
+デバッグ エクスペリエンスがすばやく、信頼性の高いものになり、組織内の他のユーザーに影響しないことを保証するのに役立ついくつかの一般的なベスト プラクティスを以下に示します。
 
-元のデータベースに戻すには、このプロセスを逆にします。 つまり、サービスを停止し、データベースの名前を変更してから、サービスを再起動します。
-
-### <a name="reprovision-the-target-environment"></a>対象の環境を再プロビジョニング
-
-[!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### <a name="reset-the-financial-reporting-database"></a>財務報告データベースのリセット
-
-財務報告を使用する場合は、[データベースを復元した後の財務報告のデータ マートのリセット](../analytics/reset-financial-reporting-datamart-after-restore.md)の手順に従って、財務報告データベースをリセットする必要があります。 (財務報告は以前は Management Reporter という名前でした)
-
-## <a name="reenter-data-from-encrypted-and-environment-specific-fields-in-the-target-database"></a>ターゲット データベースの暗号化された環境固有のフィールドからデータを再入力
-
-Finance and Operations クライアントでは、暗号化された環境固有のフィールドに記録した値を入力します。 次のフィールドが影響されます。 フィールド名は *Table.Field* 形式で指定されます。
-
-| フィールド名                                               | 値を設定する場所 |
-|----------------------------------------------------------|------------------------|
-| CreditCardAccountSetup.SecureMerchantProperties          | **売掛金勘定** &gt; **支払設定** &gt; **支払サービス** を選択します。 |
-| ExchangeRateProviderConfigurationDetails.Value           | **総勘定元帳** &gt; **通貨** &gt; **為替レート プロバイダーを構成する** を選択します。 |
-| FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
-| FiscalEstablishmentStaging.CSC                           | このフィールドは、データ インポート/エクスポート フレームワーク (DIXF) によって使用されます。 |
-| HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
-| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) でした。 |
-| SysEmailSMTPPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
-| SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、アプリケーション オブジェクト サーバー (AOS) により内部で使用されています。 これは無視できます。 |
-| SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
-
-## <a name="community-tools"></a>コミュニティ ツール
-
-開発者環境にバックアップ ファイルをインポートするための他のツールをお探しですか。 他の情報源を次に示します。
-
-* [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) には、コミュニティによって作成された多くの貴重なツールがあります。
-* [GitHub でコミュニティによって提供されたオープン ソース プロジェクト](https://github.com/search?q=dynamics+365+finance+operations&s=stars)。
-
-## <a name="known-issues"></a>既知の問題
-
-### <a name="i-cant-download-management-studio-installation-files"></a>Management Studio インストール ファイルをダウンロードできません
-
-Microsoft SQL Server Management Studio インストーラーをダウンロードしようとすると、次のエラー メッセージが表示される場合があります。
-
-> 現在のセキュリティ設定では、このファイルをダウンロードすることはできません。
-
-この問題を回避するには、次の手順を実行してファイルのダウンロードを有効にします。
-
-1. Web ブラウザーで**インターネット オプション**を開きます。
-2. **セキュリティ**タブで、**インターネット**ゾーンを選択し、**レベルのカスタマイズ**を選択します。
-3. **ダウンロード** までスクロールし、**ファイルのダウンロード** で **有効にする** オプションを選択します。
-
-### <a name="database-synchronization-fails"></a>データベース同期の失敗
-
-データベースを Microsoft Visual Studio から新しくインポートされたデータベースと同期させると、その同期は失敗することがあり、次のエラー メッセージが表示される場合があります。
-
-> コード 1 で終了した SQL connection syncengine.exe のオープンに失敗しました。
-
-この場合、次のメッセージも Windows アプリケーション ログのイベント ID 140 で記録されます。
-
-> オブジェクト サーバー データベース シンクロナイザー: データベースに格納されている内部システム テーブル バージョン番号が、カーネル (141/138) でサポートされているバージョンよりも大きくなっています。 新しい Microsoft Dynamics カーネルを使用するか、-REPAIR コマンドライン パラメーターを使用して Microsoft Dynamics を起動し、同期を強制します。
-
-この問題は、現在の環境のプラットフォーム ビルド番号がソース環境のプラットフォーム ビルド番号よりも低い場合に発生する可能性があります。 状況に応じて、LCS の環境ページの**更新**タイルを使用して、現在の環境のプラットフォームをソース環境のプラットフォームと一致するようにアップグレードするか、次のクエリを実行してデータベースの必要なバージョンを調整します。
-
-```
-UPDATE SQLSYSTEMVARIABLES
-
-SET VALUE = 138
-
-WHERE PARM = 'SYSTABVERSION'
-```
-
-> [!NOTE]
-> 前のクエリの値 **138** は、この特定の環境でバージョン 138 が予想されるイベント ログ メッセージから取得されます。
-
-### <a name="performance"></a>パフォーマンス
-
-次のガイドラインは、最適なパフォーマンスを達成するのに役立ちます。
-
-- 常に .bacpac ファイルを SQL Server インスタンスを実行するコンピューターにローカルでインポートします。 リモート マシンで Management Studio からインポートしないでください。
-- Microsoft Azure でホストされている Finance and Operations 1 ボックス環境では、インポートするときに D ドライブに .bacpac ファイルを配置します。 (ワンボックス環境はレベル 1 環境とも呼ばれます。) Azure 仮想マシン (VM) 上でのテンポラリー ドライブに関する詳細については、[Windows Azure 仮想マシンのテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) ブログ投稿を参照してください。
-- SQL Server Windows サービス [インスタンス ファイルの初期化](https://msdn.microsoft.com/library/ms175935.aspx) を実行するアカウントに権限を付与します。 この方法で、インポート処理の速度および \*.bak ファイルからの復元の速度を向上させることができます。 開発者環境では、axlocaladmin アカウントとして実行する SQL Server を設定することにより、SQL Server サービスを実行するアカウントがこれらの権限を持っていることを簡単に確認することができます。
+- DevTest 環境のコードとバイナリのバージョンが、UAT 環境のバージョンと正確に一致することを確認します。 展開用のパッケージを作成したのと同じブランチに DevTest 環境を接続します。 または、リリースされている最新のカスタマイズで最新の状態になっている "HotfixSupport" ブランチに接続します。
+- Visual Studio からデータベースの同期を実行しないでください。 そうしないと、UAT データベース内のスキーマの可用性に影響を与え、UAT 環境のユーザーに影響を与える可能性があります。

@@ -3,7 +3,7 @@ title: ソフトウェアのライフサイクル ポリシーおよびオンプ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations (設置型) リリースにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 author: meeramahabala
 manager: AnnBe
-ms.date: 01/23/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 75c0e957f5c3053c8a0ce8b0523c5a88f468c7b1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 05fd88c117ba25beeaef2f0012d9c8d42608662d
+ms.sourcegitcommit: 89fa3149e628d0bbe3003cc9196b5b164ce3b53e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368619"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "881265"
 ---
 # <a name="software-lifecycle-policy-and-on-premises-releases"></a>ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
 
@@ -53,6 +53,7 @@ Microsoft Dynamics 365 for Finance and Operations (設置型) ソフトウェア
 | リリース          |バージョン         | ビルド番号          | 在庫状態 | 有効期限  | 製品の有効期間 | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
 | [継続的なサービスの更新](on-prem-version-update-policy.md#continuous-service-updates)| - | - | - | - | - |
+|  Dynamics 365 for Finance and Operations (設置型) | 10.0 | 10.0.8 | 2019 年 3 月 | 2019 年 6 月 | 2027 年 12 月  |
 |  Dynamics 365 for Finance and Operations (設置型) | 8.1 | 8.1.136 | 2018 年 11 月 | 2019 年 4 月     | 2027 年 12 月  |
 |  Dynamics 365 for Finance and Operations、Enterprise edition (設置型) | 7.3 | 7.3.11971  | 2018 年 3 月 | 2020 年 4 月*     | 2027 年 12 月  |
 |  Dynamics 365 for Finance and Operations、Enterprise edition (設置型) | 2017 年 7 月 | 7.2.11792 | 2017 年 6 月 | 2019 年 4 月     | 2027 年 12 月  |

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8706e9ea940c535271f01aabcee90f5f3a340c4d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: aebae3e0e77b1dfe0d1d75972de0052f2c2e2f5f
+ms.sourcegitcommit: edeabf6ed7c54aa8ad5a22709f7da4dd2633e14d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369715"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993102"
 ---
 # <a name="x-and-debugger-features"></a>X++ およびデバッガーの機能
 
@@ -136,7 +136,7 @@ FMVehicleInventoryServiceClass のコードを変更して、より小さなス�
         instance = new Singleton();
       }
 
-      public static Singleton Instance()
+      public static Singleton instance()
       {
         return Singleton::instance;
       }
@@ -146,7 +146,7 @@ FMVehicleInventoryServiceClass のコードを変更して、より小さなス�
 
     {
         …
-        Singleton i = Singleton::Instance();
+        Singleton i = Singleton::instance();
       }
 
 ## <a name="assignment-of-field-members-inline"></a>フィールド メンバー インラインの割り当て
@@ -500,7 +500,7 @@ ToStringメソッド がオブジェクト クラスで定義されているた�
 しかし、実行時にエラーがスローされます。
 
 ## <a name="cross-company-clause-can-contain-arbitrary-expressions"></a>会社間の句には任意の式を含めることができます
-会社間の句は、検索ステートメントを考慮する必要のある会社を示すために select ステートメントで使用できます。 構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されていません。
+会社間の句は、検索ステートメントを考慮する必要のある会社を示すために select ステートメントで使用できます。 構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されています。
 
       private void SampleMethod()
       {

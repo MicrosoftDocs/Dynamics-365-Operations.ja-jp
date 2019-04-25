@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 04/02/2012
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbaa132b588240681034b666b357f82dc5b91bf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 79d04e955cdf57d73c6f0250784367f56b39fcc8
+ms.sourcegitcommit: e597ac963d541f521d253697bbf26ce1ca8630a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369455"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "949235"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -100,6 +100,21 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 オンプレミスを含むすべての環境で、Excel と Word のアドインとライブラリは複数のインターネット地点からロードされます。したがってインターネットが使用可能な場合にのみ実行します。 オンプレミス環境では、インターネットが利用できない場合、コンテンツ配信ネットワーク (CDN) にアクセスできず Excel アドインが実行されないため、Excel で開くオプションは非表示になります。 
 
+### <a name="can-the-excel-add-in-and-word-add-in-be-made-available-to-users-using-centralized-deployment"></a>一元化配置を使用して、Excel アドインと Word アドインをユーザーが利用できるようにできますか。
+
+はい、一元化配置はサポートされています。 詳細については、「[一元化配置](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment)」を参照してください。 
+
+**Office アプリのパラメータ** ページの **アプリ パラメータ** タブで重要な標準値:
+- アプリ ID: "WA104379629"
+- 店舗: "en-US"
+- 店舗のタイプ: "Office Store"
+
+> [!NOTE]
+>- **名前**、**バージョン**、および **メモ** は情報を提供する値ですが、Excel アドインを実行するために必要ではありません。
+>- これらの値は、ドキュメント テンプレートのフォームから実行されるときに Word アドインに対しても使用されます。
+
+一元化配置を使用するには、**店舗タイプ** を [一元化配置] に、**店舗** を [EXCatalog] に変更します。
+
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
 
 ### <a name="fixed-issue-during-sign-in-to-the-excel-add-in-i-receive-the-following-error-message-aadsts65001-the-user-or-administrator-has-not-consented-to-use-the-application-with-id-xyz"></a>\[固定\] 問題: Excel アドインへのサインイン中に、次のエラー メッセージが表示されます: 「AADSTS65001: ユーザーまたは管理者が ID XYZ のアプリケーションを使用することに同意していません」
@@ -143,7 +158,7 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 アクセス許可の SMTP ユーザー アカウントは `serviceacct@d365forops.onmicrosoft.com1` です。 
 
 > [!IMPORTANT]
-> すべてのユーザーは、SMTP アカウントに Office 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Office 365 Admin ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**Send As** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
+> すべてのユーザーは、SMTP アカウントに Office 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Office 365 Admin ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**送信者** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
 
 [![Office 365 で送信者アクセス許可を付与されている SMTP アカウント](./media/o365.png)](./media/o365.png)
 

@@ -3,7 +3,7 @@ title: データ タスクの自動化
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations でのデータ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法を説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: 1f2d5fb01a83a9fde45d8201aa8b15b7a6d02ce0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc29c6cd1a8320461635b6b3f732a3d7519c14e0
+ms.sourcegitcommit: 0ee991a48e271debbe1e0a9932ca8af0162d2275
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369344"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898664"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 
@@ -135,7 +135,7 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 | \<SharedSetup\>   | \<JobDefinition\>                | 1..n                | ID        | タスクでジョブ定義 ID を使用してデータ プロジェクトで使用する定義を参照できます。 |
 | \<JobDefinition\> | [\<操作\>]                    | 1..1                | \-        | 実行される操作は、次の値によって指定されます。 <br> - インポート <br> - エクスポート |
 |                   | \<切り詰め\>                     | 1..1                | \-        | これは、はいまたはいいえの値を持つブール値フィールドです。 これは操作が*インポート*に設定されている場合にのみ適用されます。 |
-|                   | \<モード\>                         | 1..1                | \-        | モードでは、操作を実行する必要があるメソッドを指定します。 使用可能な値は次のとおりです。<br>- 非同期インポート <br>- 非同期エクスポート <br>- 定期的なバッチ: これは、エンキュー/デキュー API を使用します。|
+|                   | \<モード\>                         | 1..1                | \-        | モードでは、操作を実行する必要があるメソッドを指定します。 使用可能な値は次のとおりです。<br>- 非同期インポート <br>- 非同期エクスポート <br>- 定期的に実行するバッチ: エンキュー API を使用します。 デキュー API には現在対応していません。 パッケージAPIは、エクスポートとインポートの両方に対応しています。|
 |                   | \<ConfigurationOnly\>            | 1..1                | \-        | これは、はいまたはいいえの値を持つブール値フィールドです。 タスクがデータ プロジェクトをコンフィギュレーションするのみで、指定された操作を実行しない場合は、はいに設定する必要があります。 |
 |                   | \<BatchFrequencyInMinutes\>      | 1..1                | \-        | バッチがスケジュール設定される頻度を指定します。 これはモードが*定期実行されるバッチ*に設定されている場合にのみ適用されます。 |
 |                   | \<NumberOfTimesToRunBatch\>      | 1..1                | \-        | これは、スケジュールされているバッチを実行する回数の制限を設定するために使用されます。 これはモードが*定期実行されるバッチ*に設定されている場合にのみ適用されます。 |

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 25aacafac8e0c6dd137e013fadded5a41abb2aee
-ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
+ms.openlocfilehash: a342791ff04c758e74830fd8aa3af93082360025
+ms.sourcegitcommit: 60aa392e7762d9b62baf007be27dec043bd078df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403761"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "884587"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -47,12 +47,16 @@ ms.locfileid: "403761"
 | PostLogOffTrigger         | キャンセル不可 | POS ログ オフ後に実行されます。                                                                                                      | 
 | PreLockTerminalTrigger    | 解約可能     | POS レジスターのロック前に実行されます。  |
 | PostLockTerminalTrigger   | キャンセル不可 | POS レジスターのロック後に実行されます。   | 
-| PostDeviceActivation      | キャンセル不可 | POS のアクティブ化後に実行されます。   | 
+| PreUnlockTerminalTrigger         | 解約可能     | POS レジスターのロック解除前に実行されます。  |
+| PostDeviceActivationTrigger      | キャンセル不可 | POS のアクティブ化後に実行されます。   | 
+| PreElevateUserTrigger      | 解約可能 | マネージャー オーバーライドの前に実行されます。   | 
+| PreRegisterAuditEventTrigger      | 解約可能 | 監査イベントの前に実行されます。   | 
+| PostRegisterAuditEventTrigger      | キャンセル不可 | 監査イベントの後に実行されます。   | 
 
 
 ## <a name="cash-management-triggers"></a>現金管理トリガー
 
-| トリガー                      | 種類           | 説明                                                 |
+| トリガー                      | 型           | 説明                                                 |
 |------------------------------|----------------|-------------------------------------------------------------|
 | PreTenderDeclarationTrigger  | 解約可能     | POS の支払または入金申告前に実行されます。 |
 | PostTenderDeclarationTrigger | キャンセル不可 | POS の支払または入金申告後に実行されます。  |

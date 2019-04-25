@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新の概要
 description: このトピックでは、1 つのバージョンの一部として Microsoft によって開始されたサービスの更新を管理するための体験を構成する、さまざまな手順の概要を説明します。
 author: meeram
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 7dc0e821b4d30ee7e31d6dc37e59e47a45c222a9
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: a33b481d238297294dfce2b08815e24233c540a4
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "790320"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842332"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -36,14 +36,14 @@ ms.locfileid: "790320"
 
 サービス更新の経験は 4 つの異なるステップから構成されています: 
 
-1. 研修
-2. 通知する
-3. 実行
+1. 構成
+2. 通知
+3. 更新
 4. 検証
 
 このトピックの残りでは各ステップについて説明し、関連トピックへのリンクを示します。
 
-## <a name="onboard"></a>研修
+## <a name="configure"></a>構成
 
 顧客はビジネスの制約に基づいて保守時間枠を選択できます。 Microsoft Dynamics Lifecycle Services (LCS) で、次の図に示すように **プロジェクト設定** ページの **設定の更新** タブで **実稼働環境の更新頻度** にあるフィールドを使用します。 今後の計画を立てるには次回の更新のカレンダーを利用できます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "790320"
 
 ユーザーは新機能をオプトインして有効にする必要があります。 すべての更新プログラムは最初にユーザー受け入れテスト (UAT) 環境に適用され、それから実稼働環境に適用されます。 したがって、顧客が必要な検証を行う時間があります。 顧客は更新される環境を選択できます。 最大で 3 か月まで更新プログラムを一時停止することもできます。
 
-## <a name="notify"></a>通知する
+## <a name="notice"></a>通知
 
 [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) を、今後の計画や何が変化しているのか理解するのを助けるためにできます。 最大で 3 か月前から次の新機能について学ぶことができます。 [新機能](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) のトピックでは特定の月の更新プログラムに関する詳細を提供します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "790320"
 
 [![LCS の次回の更新プログラムの通知](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
 
-## <a name="execute"></a>実行
+## <a name="update"></a>更新
 
 通知が送信された後、Microsoft は指定された保守時間枠で更新 (**自動更新**) を適用します。 この操作が完了した後、更新の状態を示す通知電子メールが送信されます。 LCS の標準的な更新エクスペリエンスを使用することで **自己更新** も可能になります。 詳細については、[クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)を参照してください。 
 
@@ -75,6 +75,6 @@ UAT 環境で更新が完了したら、基本的なビジネス プロセス �
 
 [![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
 
-一部の顧客は外部データ統合と内部データ統合の両方があります。 これらの顧客はテストに [Data task automation tool](../data-entities/data-task-automation.md) を使用することをお勧めします。
+一部の顧客は外部データ統合と内部データ統合の両方があります。 これらの顧客はテストに [データ タスクの自動化ツール](../data-entities/data-task-automation.md) を使用することをお勧めします。
 
 

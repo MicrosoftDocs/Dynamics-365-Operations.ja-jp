@@ -3,7 +3,7 @@ title: 配置可能小売パッケージの作成
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/06/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 122164e5c289cb04bba463f2222ab0f12863781e
-ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: dff0d0337654c54c58cc1b4f3bf9e52d67f0b72e
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376029"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894554"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、次のような Retail コンポーネントの拡張機能のカスタマイズをパッケージ化し、Microsoft Dynamics Lifecycle Services (LCS) を使用して、パッケージを環境に配置する方法について説明します。
+このトピックでは、次の小売コンポーネントに展開可能な小売パッケージ (すべての拡張機能を含む) の作成し、 Microsoft Dynamics Lifecycle Services (LCS) を使用して、このパッケージをご利用の環境に展開する方法を解説します。
 
 - Commerce Runtime (CRT)
 - Retail プロキシ
