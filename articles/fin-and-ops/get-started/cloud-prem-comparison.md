@@ -1,28 +1,28 @@
 ---
 title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 18f668bdc49da1022230278f1de8494150e8a5f9
+ms.sourcegitcommit: bdcdcdddcb0517f0c64d541258ccbd119b960719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313983"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "977209"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドおよびオンプレミスの機能比較
 
@@ -54,11 +54,14 @@ ms.locfileid: "313983"
 | ドキュメント管理 | | 有| 有 |
 | 財務管理 | | 有 | 有 |
 | ヘルプ | | 有 | 無 |
-| 人事管理 | | 有 | 有 |
-| インテリジェンス | | 有 | 有 |
-| | 電子申告 (ER) - LCS との統合 | 有 | 無 |
-| | 電子申告 (ER) - SharePoint の統合 | 有 | 無 |
-| | PowerBI.com との統合 | 有 | 無 |
+| 人事管理 | | はい | はい |
+| インテリジェンス | | はい | はい |
+| | 電子申告 (ER) | はい | はい |
+| | ER: LCS との統合 | はい | いいえ |
+| | ER: SharePoint との統合 | はい | いいえ |
+| | ER: 規制コンフィギュレーション サービス (RCS) との統合 | はい | いいえ |
+| | ER: ER リポジトリからアクセス可能な ER コンフィギュレーションの記憶域としてローカル ファイル システムを使用。 | いいえ | はい |
+| | PowerBI.com との統合 | はい | いいえ |
 | | 分析ワークスペース | 有 | 無 |
 | | インテリジェントなビジネス プロセス: Recommendations | 有 | 無 |
 | | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成 | 有 | 無 |

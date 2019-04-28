@@ -1,7 +1,7 @@
 ---
 title: 個人のアクションのよく寄せられる質問
 description: このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。 個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 0e68154ec70fdf26d1d783de29a386a336fff92f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 91b154a2379d6f0bdf8bea322c99be9e1c1925c9
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305156"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859854"
 ---
 # <a name="personnel-actions-faq"></a>個人のアクションのよく寄せられる質問
 

@@ -1,9 +1,9 @@
 ---
 title: 仕入先請求書の概要
 description: この記事は、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329761"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975805"
 ---
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事は、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。 
 
-<a name="vendor-invoices"></a>仕入先請求書
----------------
+## <a name="vendor-invoices"></a>仕入先請求書
 
 発注書からの仕入先請求書は、仕入先に配置された発注書に従って製品またはサービスを受けるときに生成される請求書です。 これには、ヘッダーと品目、またはサービスの 1 つ以上の明細行が含まれます。 仕入先請求書は、発注書から製品受領書、仕入先請求書のサイクルを完了します。 
 
@@ -79,8 +79,15 @@ ms.locfileid: "329761"
 
 複数の請求書で同時に作業し、それらの請求書をすべて同時に転記できます。 複数の請求書を作成する必要がある場合、**保留中の仕入先請求書**ページを使用します。 複数の仕入先請求書の転記および印刷が必要な場合、請求書承認仕訳帳ページを使用します。 請求書承認仕訳帳を使用している場合、発注書に対して少なくとも 1 つの製品受領書を転記し、発注書に対する請求書を仕入帳に転記している必要があります。 請求書の財務情報は、仕入帳に転記された請求書から取得されます。
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>使用中の仕入先請求書を回復します。
 
-詳細については、「」を参照してください。
+仕入先請求書を使用中は、他のユーザーによって編集できません。 ただし、請求書の状態は、請求書がアクティブに編集されていない場合でも、使用中であることを示す場合があります。 たとえば、請求書の編集中にアプリケーションが応答を停止したか、ユーザーが誤って請求書をアプリケーションで開いたままにした可能性があります。
+
+**仕入先請求書を回復**ページを使用して、4時間以上使用されている仕入先請求書を回復またはリリースし、編集できるようにすることができます。 このページは、**定期処理タスク**ナビゲーションまたは、**仕入先請求書の入力**ワークスペースのタイルから開くことができます。 請求書が復旧した後、**仕入先請求書**ページで編集可能になります。
+
+**仕入先請求書を回復**ページにアクセスできるのは、**使用中の仕入先請求書の回復**セキュリティ職務権限と権限が割り当てられている場合のみです。 また、**買掛金勘定パラメーター**ページの**仕入れ先請求書の回復を許可**パラメーターをオンにする必要があります。
+
+## <a name="additional-resources"></a>追加リソース
 
  - [仕入先請求ポリシーの設定](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

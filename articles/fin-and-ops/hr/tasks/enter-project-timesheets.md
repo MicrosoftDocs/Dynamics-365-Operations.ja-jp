@@ -1,7 +1,7 @@
 ---
 title: プロジェクト タイムシートの入力
 description: この手順で、空のタイム シートのフォームを使用して、タイム シートを作成できます。
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Operations, Talent
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1ccaeffde4c288667fe797d07e08b5a346b4716
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3f1be02f0080ee23359ad905b1e997d8cd5adfd2
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329554"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859140"
 ---
 # <a name="enter-project-timesheets"></a>プロジェクト タイムシートの入力
 

@@ -1,7 +1,7 @@
 ---
 title: 仕入先支払の取消
 description: この記事は、支払の取消、削除、無効化、および拒否の違いについて説明します。 また、仕入先チェックを取り消すための 2 つの方法を説明します。
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d58aac20f9ef54e4ee41464a30b7c8190ade26b7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 95bdb0a17dfcf3af35b6645ac5706262543d51d3
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329623"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896192"
 ---
 # <a name="reverse-a-vendor-payment"></a>仕入先支払の取消
 

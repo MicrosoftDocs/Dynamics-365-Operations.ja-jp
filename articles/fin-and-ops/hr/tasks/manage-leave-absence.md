@@ -1,7 +1,7 @@
 ---
 title: 休暇の管理
 description: この手順では、従業員の休暇レコードの作成について説明します。
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmEmploymentLeave
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7687d31fbf73a02b1b924d092e77ac28b573e694
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ce57495be4ae601d6ac06bb4780a2e1192dfcc5
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "337972"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859347"
 ---
 # <a name="manage-leave-of-absence"></a>休暇の管理
 

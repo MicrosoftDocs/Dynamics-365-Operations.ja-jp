@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782929"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949808"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 3 月 5 日)
 
@@ -35,7 +35,7 @@ ms.locfileid: "782929"
 
 ### <a name="extending-option-sets-in-attract"></a>Attract のオプション セットの拡張
 
-Attract には、Common Data Service (CDS) 内のオプション セットである複数のフィールドがあります。 **不採用**理由フィールド、**雇用タイプ**フィールド、および**勤続タイプ**フィールドをはじめとするオプション セットを拡張するための新しい機能が導入されました。
+Attract には、Common Data Service 内のオプション セットである複数のフィールドがあります。 **不採用**理由フィールド、**雇用タイプ**フィールド、および**勤続タイプ**フィールドをはじめとするオプション セットを拡張するための新しい機能が導入されました。
 
 > [!IMPORTANT]
 > LinkedIn 機能へのジョブ求人転記には、**ジョブの詳細**ページの**雇用タイプ**および**勤続タイプ**フィールドの使用が求められます。 これらのフィールドの既定値は LinkedIn でサポートされ、ジョブが転記されるときに表示されます。 LinkedIn にジョブ求人を転記していて、これらのフィールドの既存のオプション セット値を変更した場合、ジョブ求人は転記されますが、LinkedIn はカスタム**雇用タイプ**および**勤続タイプ**の値を表示しません。
@@ -70,8 +70,8 @@ Attract には、Common Data Service (CDS) 内のオプション セットであ
 ### <a name="other-miscellaneous-bug-fixes"></a>その他の雑費のバグ修正
 このリリースには、他のマイナーなバグ修正が含まれています。
 
-### <a name="upgrade-to-cds-for-apps"></a>アプリ用 CDS へのアップグレード
-アプリ用 CDS へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[アプリ用 Common Data Service へのアップグレード](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
+### <a name="upgrade-to-common-data-service"></a>Common Data Service へのアップグレード
+Common Data Service へのアップグレードの期限が近づいています。 データベースをアップグレードする必要があるかどうかを決定するために、PowerApps 管理者センターにサインインします。 期限およびアップグレードに必要な手順の詳細については、[Common Data Service へのアップグレード](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds) を参照してください。
 
 ## <a name="coming-soon"></a>間もなく公開
 

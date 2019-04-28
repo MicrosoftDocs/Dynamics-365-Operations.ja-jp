@@ -3,7 +3,7 @@ title: ワークフローの作業項目をデリゲート
 description: 事務所を不在にする予定がある場合や、作業項目を処理できない場合は、自分の作業項目を他のユーザーに委任 (再割り当て) することができます。
 author: jasongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 04/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,25 +16,26 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: feace647d7acef6abf86b13fcb8019c622c55ff6
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346252"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976784"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>ワークフローの作業項目をデリゲート
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-事務所を不在にする予定がある場合や、作業項目を処理できない場合は、自分の作業項目を他のユーザーに委任 (再割り当て) することができます。 この手順により、別のユーザーに作業項目を自動的に委任するシステムの構成が容易になります。
+## <a name="manually-delegate-a-work-item"></a>作業項目の手動委任
 
+個別の作業項目を委任するには、**ワークフロー**メニューの**委任**オプションを選択し、コメントとともに委任されるユーザーを入力します。 これにより、作業項目がユーザーに再度割り当てられ、完了させることができます。
 
+## <a name="automatically-delegate-work-items"></a>作業項目を自動的に委任
 
-この手順の作成に使用するデモ データの会社は USMF です。
+不在であることを計画している場合、またはその他の方法で一定期間作業項目に対処できない場合、**ユーザー オプション**ページにて、他のユーザーに新しい作業項目を自動的に委任することができます。
 
-
-## <a name="set-up-automatic-delegation"></a>自動委任の設定
+### <a name="set-up-automatic-delegation"></a>自動委任の設定
 1. [共通] > [設定] > [ユーザー オプション] の順に移動します。
 2. [ワークフロー] タブをクリックします。
     * [デリゲート] セクションが展開されていることを確認します。    他のユーザーに作業項目を自動的に委任するようにシステムをコンフィギュレーションするには、委任ルールを作成して、特定のタイプの作業項目についてその委任条件を指定する必要があります。 委任ルールを作成するには、次の手順に従います。  

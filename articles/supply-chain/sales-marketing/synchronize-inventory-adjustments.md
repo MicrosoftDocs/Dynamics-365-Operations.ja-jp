@@ -3,7 +3,7 @@ title: Field Service から Finance and Operations への在庫振替と調整�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に在庫調整と振替を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 75181661c41d238cdc06ffbb6969a2efd7d88d46
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308371"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842418"
 ---
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Field Service から Finance and Operations への在庫調整の同期
 
@@ -38,8 +38,8 @@ ms.locfileid: "308371"
 次のテンプレートと基本的なタスクは、Microsoft Dynamics 365 for Field Service から Microsoft Dynamics 365 for Finance and Operations への在庫調整と振替の同期を実行するために使用されます。
 
 **データ統合でのテンプレート**
-- 在庫調整 (Field Service から Finance and Operations)
-- 在庫振替 (Field Service から Finance and Operations)
+- 在庫調整 (Field Service から Fin and Ops)
+- 在庫振替 (Field Service から Fin and Ops)
 
 **データ統合プロジェクトのタスク:**
 - 在庫調整
@@ -71,11 +71,11 @@ ms.locfileid: "308371"
 
 次の図は、データ統合のテンプレート マッピングを示しています。
 
-### <a name="inventory-adjustment-field-service-to-finance-and-operations-inventory-adjustment"></a>在庫調整 (Field Service から Finance and Operations): 在庫調整
+### <a name="inventory-adjustment-field-service-to-fin-and-ops-inventory-adjustment"></a>在庫調整 (Field Service から Fin and Ops): 在庫調整
 
 [![データ統合のテンプレートのマッピング](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>在庫振替 (Field Service から Finance and Operations): 在庫振替
+### <a name="inventory-transfer-field-service-to-fin-and-ops-inventory-transfer"></a>在庫振替 (Field Service から Fin and Ops): 在庫振替
 
 [![データ統合のテンプレートのマッピング](./media/FSTrans1.png)](./media/FSTrans1.png)

@@ -3,7 +3,7 @@ title: 規制の更新
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の計画されたおよびリリース済の規制の更新の一覧を提供します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832104"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992839"
 ---
 # <a name="regulatory-updates"></a>規制の更新
 
@@ -28,12 +28,18 @@ ms.locfileid: "832104"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations でサポートされるローカライズでリリースが計画されている規制の更新を一覧表示します。 配送の時間帯は変更される可能性があり、プロジェクト機能も変更されるかリリースされない可能性があります。 詳細については、「[Microsoft ポリシー](https://go.microsoft.com/fwlink/p/?linkid=2007332)」をご覧ください。 
 
-規制の更新は、規制機能とは異なります。 計画されたまたはリリース済の規制機能については、次のリソースを参照してください。
+規制の更新は、新規または変更された国固有の法律をサポートするために実装されている機能です。 他の計画されたおよびリリース済の国固有の機能については、次のリソースを参照してください。
 
-- [Dynamics 365 およびパワー プラットフォーム リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Dynamics 365 および Power Platform リリース ノート](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Microsoft Dynamics 365 for Finance and Operations の新機能](../../fin-and-ops/get-started/whats-new-changed.md)
 
-日付列で 1 か月が使用されている場合、規制の更新はその月のいずれかの時点で配信される予定です。 配信日は、その月の最初の日とは限らず、その月内の任意の日となります。
+Microsoft は、新しい規制要件をできるだけ早く実装するよう努めています。 実際の納期日は、法律の発表日、地方自治体からの要件詳細の使用可能性、検証ツールの使用可能性、および変更の規模と複雑度によって異なります。 
+
+更新および施行日 (トランザクション規制の更新の場合) に対して準備のできた顧客に間に合うようにリリースされる、または最初の必須報告期限 (報告に関連する規制の更新の場合) に間に合うようにリリースされる 1 つのバージョンのサービス更新で、規制の更新を提供する予定です。 顧客およびパートナーは、Preview Early Adoption Program (PEAP) で新しい規制の更新をプレビューできます。
+
+発表日の遅れ、要件詳細または検証ツールの使用可能性の遅れ、または異常に大きく複雑な変更がある場合、毎月の更新の一般提供開始日までに規制更新が使用できない可能性があります。 そのような場合は、規制の更新は、一部の利用可能な毎月の更新の修正プログラムとして出荷されます。
+
+最新の規制更新計画に関しては、次の表を参照してください。 
 
 |予定されているリリース日:|リリース バージョン|国|規制の更新|
 |--------------------|---------------|-------|-------|
@@ -47,7 +53,9 @@ ms.locfileid: "832104"
 |      2019 年 4 月          |   10.0.1      |    英国     |[VAT 明細書の提出の変更 (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 年 4 月          |   10.0.1      |    ブラジル     |NF-e 新しい NT 2018.005         |
 |      2019 年 4 月          |   10.0.1      |    ロシア     |VAT 申告の形式が 2019 年から変更されます         |
-|      2019 年 4 月          |   10.0.1      |    ロシア     |VAT 申告の形式が 2019 年から変更されます (売上および購買帳簿形式)  |
+|      2019 年 4 月          |   10.0.1      |    ロシア     |VAT 申告の形式が 2019 年から変更されます (売上および購買帳簿) 
+|      2019 年 5 月            |   10.0.2      | ブラジル      |   SPED ECD レイアウト 7   |
+
 
 ## <a name="additional-resources"></a>追加リソース
 - [Lifecycle Service - 問題検索](https://lcs.dynamics.com/Logon/Index) (ログイン必須) ですべての計画されたおよびリリース済みの規制の更新を検索します。
