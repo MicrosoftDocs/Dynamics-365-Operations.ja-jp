@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,44 +18,44 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: 5cf1c17c3b833805a4797ec0fc7278ce3546ac2e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5a26f32dcf10565d988bf177eee0f42e6a4ceae3
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305193"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859071"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a><span data-ttu-id="8dbaa-103">Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 7 月)</span><span class="sxs-lookup"><span data-stu-id="8dbaa-103">What's new or changed in Dynamics 365 for Talent Core HR (July 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a><span data-ttu-id="26256-103">Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 7 月)</span><span class="sxs-lookup"><span data-stu-id="26256-103">What's new or changed in Dynamics 365 for Talent Core HR (July 2018)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="8dbaa-104">このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-104">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.</span></span>
+<span data-ttu-id="26256-104">このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="26256-104">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.</span></span>
 
-## <a name="powerapps-personalization"></a><span data-ttu-id="8dbaa-105">PowerApps の個人用設定</span><span class="sxs-lookup"><span data-stu-id="8dbaa-105">PowerApps personalization</span></span>
+## <a name="powerapps-personalization"></a><span data-ttu-id="26256-105">PowerApps の個人用設定</span><span class="sxs-lookup"><span data-stu-id="26256-105">PowerApps personalization</span></span>
 
-<span data-ttu-id="8dbaa-106">Microsoft Dynamics 365 for Talent は Microsoft PowerApps サービスとの統合をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-106">Microsoft Dynamics 365 for Talent supports integration with the Microsoft PowerApps service.</span></span> <span data-ttu-id="8dbaa-107">PowerApps では開発者と技術者以外のユーザーの両方がコードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築できます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-107">PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code.</span></span> <span data-ttu-id="8dbaa-108">PowerApps を使用するユーザー、組織、またはより幅広いエコシステム開発のアプリは、Talent のクライアントに組み込み、製品の機能を拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-108">Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality.</span></span> <span data-ttu-id="8dbaa-109">たとえば、別のシステムから取得した情報で Talent を追加するアプリを構築する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-109">For example, you might build an app that supplements Talent with information that is retrieved from another system.</span></span>
+<span data-ttu-id="26256-106">Microsoft Dynamics 365 for Talent は Microsoft PowerApps サービスとの統合をサポートします。</span><span class="sxs-lookup"><span data-stu-id="26256-106">Microsoft Dynamics 365 for Talent supports integration with the Microsoft PowerApps service.</span></span> <span data-ttu-id="26256-107">PowerApps では開発者と技術者以外のユーザーの両方がコードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築できます。</span><span class="sxs-lookup"><span data-stu-id="26256-107">PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code.</span></span> <span data-ttu-id="26256-108">PowerApps を使用するユーザー、組織、またはより幅広いエコシステム開発のアプリは、Talent のクライアントに組み込み、製品の機能を拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="26256-108">Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality.</span></span> <span data-ttu-id="26256-109">たとえば、別のシステムから取得した情報で Talent を追加するアプリを構築する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="26256-109">For example, you might build an app that supplements Talent with information that is retrieved from another system.</span></span>
 
-<span data-ttu-id="8dbaa-110">詳細については、[PowerApps の埋め込みアプリ](../fin-and-ops/get-started/embed-power-apps.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-110">For more information, see [Embed PowerApps apps](../fin-and-ops/get-started/embed-power-apps.md).</span></span>
+<span data-ttu-id="26256-110">詳細については、[PowerApps の埋め込みアプリ](../fin-and-ops/get-started/embed-power-apps.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26256-110">For more information, see [Embed PowerApps apps](../fin-and-ops/get-started/embed-power-apps.md).</span></span>
 
-## <a name="ceridian-payroll-integration"></a><span data-ttu-id="8dbaa-111">Ceridian 給与統合</span><span class="sxs-lookup"><span data-stu-id="8dbaa-111">Ceridian payroll integration</span></span>
+## <a name="ceridian-payroll-integration"></a><span data-ttu-id="26256-111">Ceridian 給与統合</span><span class="sxs-lookup"><span data-stu-id="26256-111">Ceridian payroll integration</span></span>
 
-<span data-ttu-id="8dbaa-112">米国、カナダ、およびメキシコの Talent と Ceridian Dayforce 間で統合できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-112">Integration between Talent and Ceridian Dayforce is now available for the US, Canada, and Mexico.</span></span> <span data-ttu-id="8dbaa-113">統合は広範なデータ カテゴリを使用します。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-113">The integration uses broad categories of data.</span></span> <span data-ttu-id="8dbaa-114">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-114">Here are some examples:</span></span>
+<span data-ttu-id="26256-112">米国、カナダ、およびメキシコの Talent と Ceridian Dayforce 間で統合できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="26256-112">Integration between Talent and Ceridian Dayforce is now available for the US, Canada, and Mexico.</span></span> <span data-ttu-id="26256-113">統合は広範なデータ カテゴリを使用します。</span><span class="sxs-lookup"><span data-stu-id="26256-113">The integration uses broad categories of data.</span></span> <span data-ttu-id="26256-114">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="26256-114">Here are some examples:</span></span>
 
-- <span data-ttu-id="8dbaa-115">人事管理データ</span><span class="sxs-lookup"><span data-stu-id="8dbaa-115">Human resources data</span></span>
-- <span data-ttu-id="8dbaa-116">報酬データ</span><span class="sxs-lookup"><span data-stu-id="8dbaa-116">Compensation data</span></span>
-- <span data-ttu-id="8dbaa-117">支払サイクル、支払期間、および所得コードなどの給与データ</span><span class="sxs-lookup"><span data-stu-id="8dbaa-117">Payroll data, such as pay cycles, pay periods, and earning codes</span></span>
-- <span data-ttu-id="8dbaa-118">作業者データ</span><span class="sxs-lookup"><span data-stu-id="8dbaa-118">Worker data</span></span>
+- <span data-ttu-id="26256-115">人事管理データ</span><span class="sxs-lookup"><span data-stu-id="26256-115">Human resources data</span></span>
+- <span data-ttu-id="26256-116">報酬データ</span><span class="sxs-lookup"><span data-stu-id="26256-116">Compensation data</span></span>
+- <span data-ttu-id="26256-117">支払サイクル、支払期間、および所得コードなどの給与データ</span><span class="sxs-lookup"><span data-stu-id="26256-117">Payroll data, such as pay cycles, pay periods, and earning codes</span></span>
+- <span data-ttu-id="26256-118">作業者データ</span><span class="sxs-lookup"><span data-stu-id="26256-118">Worker data</span></span>
 
-<span data-ttu-id="8dbaa-119">詳細については、[給与統合のコンフィギュレーション](configure-payroll-integration.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-119">For more information, see [Configure your payroll integration](configure-payroll-integration.md).</span></span>
+<span data-ttu-id="26256-119">詳細については、[給与統合のコンフィギュレーション](configure-payroll-integration.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26256-119">For more information, see [Configure your payroll integration](configure-payroll-integration.md).</span></span>
 
-## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a><span data-ttu-id="8dbaa-120">作業者の税地域が米国を超えて拡張されました</span><span class="sxs-lookup"><span data-stu-id="8dbaa-120">Worker tax regions have been expanded beyond the US</span></span>
+## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a><span data-ttu-id="26256-120">作業者の税地域が米国を超えて拡張されました</span><span class="sxs-lookup"><span data-stu-id="26256-120">Worker tax regions have been expanded beyond the US</span></span>
 
-<span data-ttu-id="8dbaa-121">米国以外の税地域に対するサポートが追加されました。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-121">Support has been added for tax regions outside the United States.</span></span> <span data-ttu-id="8dbaa-122">税地域が作業者に割り当てられると、税計算を操作して、外部給与ソリューションとの統合で使用できます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-122">When tax regions are assigned to workers, they can drive tax calculations and can be used in integrations with external payroll solutions.</span></span>
+<span data-ttu-id="26256-121">米国以外の税地域に対するサポートが追加されました。</span><span class="sxs-lookup"><span data-stu-id="26256-121">Support has been added for tax regions outside the United States.</span></span> <span data-ttu-id="26256-122">税地域が作業者に割り当てられると、税計算を操作して、外部給与ソリューションとの統合で使用できます。</span><span class="sxs-lookup"><span data-stu-id="26256-122">When tax regions are assigned to workers, they can drive tax calculations and can be used in integrations with external payroll solutions.</span></span>
 
-## <a name="the-title-field-has-been-expanded-in-talent"></a><span data-ttu-id="8dbaa-123">Talent でタイトル フィールドが展開されました</span><span class="sxs-lookup"><span data-stu-id="8dbaa-123">The title field has been expanded in Talent</span></span>
+## <a name="the-title-field-has-been-expanded-in-talent"></a><span data-ttu-id="26256-123">Talent でタイトル フィールドが展開されました</span><span class="sxs-lookup"><span data-stu-id="26256-123">The title field has been expanded in Talent</span></span>
 
-<span data-ttu-id="8dbaa-124">この更新プログラムでタイトルが展開されました。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-124">Titles have been expanded in this update.</span></span> <span data-ttu-id="8dbaa-125">フィールドは、65 文字になりました。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-125">The field is now 65 characters.</span></span> <span data-ttu-id="8dbaa-126">作業者、職位、およびジョブなどのタイトルが選択されているどの場所でも、この変更が実装されました。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-126">This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.</span></span>
+<span data-ttu-id="26256-124">この更新プログラムでタイトルが展開されました。</span><span class="sxs-lookup"><span data-stu-id="26256-124">Titles have been expanded in this update.</span></span> <span data-ttu-id="26256-125">フィールドは、65 文字になりました。</span><span class="sxs-lookup"><span data-stu-id="26256-125">The field is now 65 characters.</span></span> <span data-ttu-id="26256-126">作業者、職位、およびジョブなどのタイトルが選択されているどの場所でも、この変更が実装されました。</span><span class="sxs-lookup"><span data-stu-id="26256-126">This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.</span></span>
 
-## <a name="benefit-enrollment-status-report"></a><span data-ttu-id="8dbaa-127">給付金登録状態レポート</span><span class="sxs-lookup"><span data-stu-id="8dbaa-127">Benefit enrollment status report</span></span>
+## <a name="benefit-enrollment-status-report"></a><span data-ttu-id="26256-127">給付金登録状態レポート</span><span class="sxs-lookup"><span data-stu-id="26256-127">Benefit enrollment status report</span></span>
 
-<span data-ttu-id="8dbaa-128">給付金の自由登録に関する組み込みレポートは、従業員が自由登録プロセスのどの段階にいるかを容易に理解するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-128">Built-in reporting about open enrollment for benefits helps you easily understand where your employees are in the open enrollment process.</span></span> <span data-ttu-id="8dbaa-129">プロセスを完了した、現在完了中である、およびまだ開始していない従業員が何人いるかがわかります。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-129">You can learn how many employees have completed the process, are currently completing it, and haven't started it.</span></span> <span data-ttu-id="8dbaa-130">また、従業員の登録中に発生した問題およびすべての従業員が送信する完全なログをすばやく表示できます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-130">Additionally, you can quickly view any issues that occur during employee enrollment and a full log of all employee submissions.</span></span> <span data-ttu-id="8dbaa-131">したがって、簡単に確認して従業員の送信を監査できます。</span><span class="sxs-lookup"><span data-stu-id="8dbaa-131">Therefore, you can easily verify and audit employee submissions.</span></span>
+<span data-ttu-id="26256-128">給付金の自由登録に関する組み込みレポートは、従業員が自由登録プロセスのどの段階にいるかを容易に理解するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="26256-128">Built-in reporting about open enrollment for benefits helps you easily understand where your employees are in the open enrollment process.</span></span> <span data-ttu-id="26256-129">プロセスを完了した、現在完了中である、およびまだ開始していない従業員が何人いるかがわかります。</span><span class="sxs-lookup"><span data-stu-id="26256-129">You can learn how many employees have completed the process, are currently completing it, and haven't started it.</span></span> <span data-ttu-id="26256-130">また、従業員の登録中に発生した問題およびすべての従業員が送信する完全なログをすばやく表示できます。</span><span class="sxs-lookup"><span data-stu-id="26256-130">Additionally, you can quickly view any issues that occur during employee enrollment and a full log of all employee submissions.</span></span> <span data-ttu-id="26256-131">したがって、簡単に確認して従業員の送信を監査できます。</span><span class="sxs-lookup"><span data-stu-id="26256-131">Therefore, you can easily verify and audit employee submissions.</span></span>
