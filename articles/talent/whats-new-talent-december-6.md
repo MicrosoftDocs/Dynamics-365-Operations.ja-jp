@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 80d62492d58a436c15fac82df0d000ab9efa6ea5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305228"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949946"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)
 
@@ -135,7 +135,7 @@ Microsoft Dynamics 365 for Talent および Ceridian Dayforce の統合は、英
 
 性別フィールドの変換は、更新する必要があります。 性別の**fn** (機能) マップを選択し、次の値のマッピングを更新します。
 
-| CDS 値   | Finance and Operations 値 | | ------------|------------------ -----------| | 75440000    | 男性                         | | 75440001    | 女性                       | | 75440002    | なし                         | | 75440003    | 一般                  |
+| Common Data Service 値   | Finance and Operations 値 | | ------------|------------------ -----------| | 75440000    | 男性                         | | 75440001    | 女性                       | | 75440002    | なし                         | | 75440003    | 一般                  |
 
 更新されたマッピングは、次のようになります。
 

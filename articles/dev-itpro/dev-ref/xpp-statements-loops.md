@@ -3,7 +3,7 @@ title: X++ ステートメント、ループ、および例外処理
 description: このトピックでは、X++ の構文、ループ、および例外処理について説明します。
 author: RobinARH
 manager: AnnBe
-ms.date: 10/30/2018
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0eb1645c0f17456aec645420516f7bd25263eba8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c280a5faad44405b6c11646814d7d2d04ea880cd
+ms.sourcegitcommit: daf4b3eb7b121a95ef3c68a903f1695cf8e7b92d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369997"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "847806"
 ---
 # <a name="x-statements-loops-and-exception-handling"></a>X++ ステートメント、ループ、および例外処理
 
@@ -33,7 +33,7 @@ ms.locfileid: "369997"
 <a name="comments"></a>コメント
 --------
 
-コードにコメントを追加することをお勧めします。 コメントは、プログラムを読みやすく、またわかりやすくします。 コメントは、プログラムをコンパイルする際には無視されます。 コメントには、**//** スタイルまたは **/** スタイルのいずれかを使用できます。 ただし、ベスト プラクティスは、コメント、および複数行コメントの**//** スタイルを使用するためのものです。
+コードにコメントを追加することをお勧めします。 コメントは、プログラムを読みやすく、またわかりやすくします。 コメントは、プログラムをコンパイルする際には無視されます。 コメントには **//** スタイルまたは **/\*** スタイルのいずれかを使用できます。 ただし、ベスト プラクティスは、コメント、および複数行コメントの**//** スタイルを使用するためのものです。
 
     // This is an example of a comment.
     /* Here is another example of a comment. */

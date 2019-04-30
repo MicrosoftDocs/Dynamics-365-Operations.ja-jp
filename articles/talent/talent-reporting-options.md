@@ -1,7 +1,7 @@
 ---
 title: Talent のレポート オプション
 description: このトピックでは、顧客が Microsoft Dynamics 365 for Talent のレポートをカスタマイズしたり、新しいレポートを作成する場合の問題を解決する方法について説明します。
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 2007e6adec7255b0b3abda7490c2103a8583393f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7e00a6e4fc01f72e1ef2347e08754997135215ed
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305214"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950062"
 ---
 # <a name="reporting-options-in-talent"></a>Talent のレポート オプション
 
@@ -42,10 +42,10 @@ ms.locfileid: "305214"
 
 **ソリューション**
 
-- アプリ用 Common Data Service にフローする Core HR データは、Power BI Desktop に PowerApps CD コネクタ経由でレポートできます。 アプリ用 Common Data Service には Core HR データのサブセットが含まれていることに注意してください。 Power BI およびダッシュ ボードの詳細については、「[PowerApps Common Data Service を使用した Power BI レポートおよびダッシュ ボードの作成](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi)」を参照してください。
+- Common Data Service にフローする Core HR データは、Power BI Desktop に PowerApps Common Data Service コネクタ経由でレポートできます。 Common Data Service には Core HR データのサブセットが含まれていることに注意してください。 Power BI およびダッシュ ボードの詳細については、「[PowerApps Common Data Service を使用した Power BI レポートおよびダッシュ ボードの作成](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi)」を参照してください。
 - 電子申告 (ER) は、一部の Talent レポートで利用できます。 顧客主導のカスタマイズは、ER コンフィギュレーション オプション経由で実行できます。
 - データは、Microsoft Office 統合によって Talent が提供するさまざまなデータ エンティティを使用して、Microsoft Excel や Microsoft Word にエクスポートできます。
 
 **長期のソリューション**
 
-追加の Power BI オプションが利用可能になり、さらに多くのデータとエンティティがアプリ用 Common Data Service の一部になります。
+追加の Power BI オプションが利用可能になり、さらに多くのデータとエンティティが Common Data Service の一部になります。

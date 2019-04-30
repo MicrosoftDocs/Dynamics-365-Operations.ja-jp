@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305084"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949854"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)
 
@@ -65,7 +65,7 @@ ms.locfileid: "305084"
 
 ### <a name="integration-between-core-hr-and-attract"></a>Core HR と Attract 間の統合
 
-採用候補者に関連する Core HR と Attract の統合を更新するための変更が行われました。 採用候補者を**人事管理**ワークスペースに表示するため、次の CDS for Apps (CDS 2.0) エンティティが使用されます。
+採用候補者に関連する Core HR と Attract の統合を更新するための変更が行われました。 採用候補者を**人材管理**ワークスペースに表示するため、次の Common Data Service エンティティが使用されます。
 
 求人応募
 - 状態理由はオファー承諾済に設定する必要があります。
@@ -139,7 +139,7 @@ ms.locfileid: "305084"
 
 性別フィールドの変換は、更新する必要があります。 性別の**fn** (機能) マップを選択し、次の値のマッピングを更新します。
 
-| CDS 値                   | Finance and Operations 値                     |
+| Common Data Service 値                   | Finance and Operations 値                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | 男性                                             |
 | 75440001                    | 女性                                           |

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 958285e4dbbee486d92c171d52356199c12cdf4f
-ms.sourcegitcommit: 0e01d3907b70261aee2df3e3ce0dde2f1343a43a
+ms.openlocfilehash: b5c33ec0a3b88fca62181da06e03e4a8fa0b3fd9
+ms.sourcegitcommit: b5e2835e2245414837b7b37056af228dd000f756
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "770170"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "879866"
 ---
 # <a name="sample-for-retail-pos-integration-with-control-units-for-sweden"></a>スウェーデン用の管理単位との Retail POS の統合
 
@@ -37,7 +37,7 @@ ms.locfileid: "770170"
 
 このサンプルは、Retail ソフトウェア開発キット (SDK) の一部です。 Retail SDK をダウンロードして使用する方法については、[Retail SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このサンプルは、ハードウェア ステーション、Commerce Runtime (CRT)、および 販売時点管理 (POS) で構成されます。 このサンプルを実行するには、ハードウェア ステーション、CRT、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio オンライン (VSO) のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+このサンプルは、ハードウェア ステーション、Commerce Runtime (CRT)、および 販売時点管理 (POS) で構成されます。 このサンプルを実行するには、ハードウェア ステーション、CRT、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 
 > [!NOTE]
@@ -51,12 +51,34 @@ ms.locfileid: "770170"
 
    1. **RetailSDK\SampleExtensions\HardwareStation** で ハードウェア ステーション ソリューションを開きます。
    2. **HardwareStation.Extension.FiscalRegisterSample.csproj** 拡張機能プロジェクトを検索し、コンパイルします。
-   3. **Extension.FiscalRegisterSample\bin\Debug** で以下のファイルを検索します。
+   3. 拡張機能アセンブリおよび設定を検索します。
+      # <a name="retail-73-and-earliertabretail-7-3"></a>[Retail 7.3 以前](#tab/retail-7-3)
+
+      **Extension.FiscalRegisterSample\bin\Debug** で以下のファイルを検索します。
 
        - **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** アセンブリ
        - **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** コンフィギュレーション
        - **Interop.CleanCash_1_1.dll** アセンブリ
 
+      # <a name="retail-731-and-latertabretail-7-3-1"></a>[Retail 7.3.1 およびそれ以降](#tab/retail-7-3-1)
+
+      **Extension.FiscalRegisterSample\bin\Debug** で以下のファイルを検索します。
+
+       - **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** アセンブリ
+       - **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** コンフィギュレーション
+       - **Interop.CleanCash_1_1.dll** アセンブリ
+
+      # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
+
+      **Extension.FiscalRegisterSample\bin\Debug** で以下のファイルを検索します。
+
+       - **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** アセンブリ
+       - **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** コンフィギュレーション      
+      
+      **RetailSDK\References\Microsoft.Dynamics.Commerce.CleanCashInterop.1.0.1\lib\net451** にて次のファイルを検索します。
+
+       - **Interop.CleanCash_1_1.dll** アセンブリ
+    ---
    4. ファイルを配置した ハードウェア ステーション マシンにコピーします。
 
        - **リモート ハードウェア ステーション:** ファイルを、Microsoft インターネット インフォメーション サービス (IIS) ハードウェア ステーション サイトの場所の **bin** フォルダーにコピーします。
@@ -77,14 +99,37 @@ ms.locfileid: "770170"
       **リモート ハードウェア ステーション:** ファイルは IIS ハードウェア ステーション サイトの場所に保存されています。
 
       **ローカル ハードウェア ステーション:** ファイルは Modern POS クライアント ブローカーの場所にあります。
+      
+      # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
+
+      ファイルの名前は **HardwareStation.Extension.config** です。
+
+      **リモート ハードウェア ステーション:** ファイルは IIS ハードウェア ステーション サイトの場所に保存されています。
+
+      **ローカル ハードウェア ステーション:** ファイルは Modern POS クライアント ブローカーの場所にあります。
 
     ---
 
     6. コンフィギュレーション ファイルの **構成** セクションに、次のセクションを追加します。
 
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-        ```
+      # <a name="retail-73-and-earliertabretail-7-3"></a>[Retail 7.3 以前](#tab/retail-7-3)
+
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+      ```
+
+      # <a name="retail-731-and-latertabretail-7-3-1"></a>[Retail 7.3.1 およびそれ以降](#tab/retail-7-3-1)
+
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+      ```
+        
+      # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
+
+      ``` xml
+      <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+      ```
+    ---
 
     7. ハードウェア ステーション サービスを再起動します。
 
@@ -123,7 +168,7 @@ ms.locfileid: "770170"
     1. **RetailSdk\POS\ModernPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。 また、Modern POS が **Run** コマンドを使用して、Microsoft Visual Studio から実行できることを確認します。 (Modern POS をカスタマイズしないでください。 ユーザー アカウント制御 [UAC] を有効にして、必要に応じて以前にインストールした Modern POS のインスタンスをアンインストールする必要があります。)
     2. **Pos.Extensions** プロジェクトの **FiscalRegisterSample** を含めます。
     3. 除外リストから **FiscalRegisterSample** フォルダーを削除して、**tsconfig.json** でコンパイルされる拡張機能を有効にします。
-    3. 適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能を有効にします。
+    3. **InternalExtensions\extensions.json** にて拡張機能を有効にします。次に示す行を適切な箇所に追加します。
 
         ``` json
         {
@@ -140,7 +185,7 @@ ms.locfileid: "770170"
     1. **RetailSdk\POS\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。
     2. **Pos.Extensions** プロジェクトの **FiscalRegisterSample** を含めます。
     3. 除外リストから **FiscalRegisterSample** フォルダーを削除して、**tsconfig.json** でコンパイルされる拡張機能を有効にします。
-    3. 適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能を有効にします。
+    3. **InternalExtensions\extensions.json** にて拡張機能を有効にします。次に示す行を適切な箇所に追加します。
 
         ``` json
         {
@@ -162,7 +207,7 @@ ms.locfileid: "770170"
 1. POS コンポーネントの拡張
 
     1. 除外リストから **FiscalRegisterSample** フォルダーを削除して、**tsconfig.json** でコンパイルされる拡張機能を有効にします。
-    2. 適切な場所に次の行を追加して、**InternalExtensions\extensions.json** で拡張機能を有効にします。
+    2. **InternalExtensions\extensions.json** にて拡張機能を有効にします。次に示す行を適切な箇所に追加します。
 
         ``` json
         {
@@ -195,7 +240,14 @@ ms.locfileid: "770170"
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
         ```
+        
+        # <a name="retail-100-and-latertabretail-10-0"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
 
+        **HardwareStation.Extension.config** 構成ファイルを変更します。
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+        ```
         ---
 
 2. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。

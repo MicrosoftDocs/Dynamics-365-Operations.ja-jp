@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b622276000c56a5af1bb258dbc3c6c4a56af4d20
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782930"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949900"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Dynamics 365 for Talent の新機能および変更された機能 (2019 年 2 月 27 日)
 
@@ -87,7 +87,7 @@ Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-for-apps-to-finance-and-operations"></a>Core HR 統合テンプレートに対する変更 (アプリ用 Talent Common Data Service から Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Core HR 統合テンプレートに対する変更 (Talent Common Data Service から Finance and Operations)
 Core HR のテンプレートは、「高度なクエリ テンプレート」に更新されています。 したがって、既定では、高度なクエリはこのテンプレートを使用して作成されたプロジェクトに使用できます。 さらに、既定のマッピング機能は、高度なクエリ エディターでのみ表示されます。 (既定のマッピング機能は「FN」としてマッピングに表示されます)。
 
 マッピング エラーの詳細については、[Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年12月14 日)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14) を参照してください。
@@ -100,19 +100,19 @@ Core HR のテンプレートは、「高度なクエリ テンプレート」�
 
     - **ジョブ職位から職位:** このマッピングを削除します。
     - **ジョブ職位から職位親ジョブ割り当て:** このマッピングを削除します。
-    - **ジョブ職位から基本職位:** 新しいマッピングを**ジョブ職位**アプリ用 Common Data Service エンティティから**基本職位** Finance and Operations エンティティに追加します。 シーケンス内の職位 7 に移動します。
+    - **ジョブ職位から基本職位:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**基本職位** Finance and Operations エンティティに追加します。 シーケンス内の職位 7 に移動します。
 
         [![ジョブ職位から基本職位マッピング](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **ジョブ職位から職位の詳細:** 新しいマッピングを**ジョブ職位**アプリ用 Common Data Service エンティティから**職位の詳細** Finance and Operations エンティティに追加します。 シーケンス内の職位 8 に移動します。
+    - **ジョブ職位から職位の詳細:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**職位の詳細** Finance and Operations エンティティに追加します。 シーケンス内の職位 8 に移動します。
 
         [![ジョブ職位から職位の詳細マッピング](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **ジョブ職位から職位の期間:** 新しいマッピングを**ジョブ職位**アプリ用 Common Data Service エンティティから**職位の期間** Finance and Operations エンティティに追加します。
+    - **ジョブ職位から職位の期間:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**職位の期間** Finance and Operations エンティティに追加します。
 
         [![ジョブ職位から職位の期間マッピング](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **ジョブ職位から職位階層:** 新しいマッピングを**ジョブ職位**アプリ用 Common Data Service エンティティから**職位階層** Finance and Operations エンティティに追加します。 **高度なクエリ**を選択して、高度なクエリをプロジェクトに対して使用できるようにします。
+    - **ジョブ職位から職位階層:** 新しいマッピングを**ジョブ職位** Common Data Service エンティティから**職位階層** Finance and Operations エンティティに追加します。 **高度なクエリ**を選択して、高度なクエリをプロジェクトに対して使用できるようにします。
 
        [![高度なクエリ ボタン](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

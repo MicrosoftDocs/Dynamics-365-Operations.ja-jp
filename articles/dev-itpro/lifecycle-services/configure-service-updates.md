@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) によるサービスの更新の構成
 description: このトピックでは、環境の最新のサービスを受け取る方法とタイミングを指定する方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 35a710d210d99b5d28f7eea1b331a9c0b75bc830
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: e7b7b57e8a55c9dcea5e37d5e1a52fb1aeb074f7
+ms.sourcegitcommit: c131672b02407a99aafd38957d04816a82997264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "790312"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "892419"
 ---
 # <a name="configure-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の構成
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/coming-soon.md)]
 
 Microsoft Dynamics Lifecycle Services (LCS) では、Microsoft Dynamics 365 for Finance and Operations 環境のサービス更新を Microsoft から受け取る方法とタイミングを指定できます。
 
@@ -62,6 +60,9 @@ LCS で **プロジェクト所有者** ロールが割り当てられている�
 
         > [!NOTE]
         > 現時点では、曜日および時間帯オプションはいくつかのオプションのみ使用できます。 Microsoft は、顧客の平日など、他のオプションもすぐに追加します。
+        
+        > [!IMPORTANT]
+        > 上記の時間帯で要望を満たせない場合は、通常のサービスのフローを使用してご自身の環境にアップグレードを適用することで、ご都合のいい時間に変更するオプションを選択することができます。
 
  3. コンフィギュレーション オプションの設定が完了したら **保存** を選択します。
  

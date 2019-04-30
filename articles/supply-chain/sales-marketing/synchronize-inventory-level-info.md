@@ -3,7 +3,7 @@ title: Finance and Operations から Field Service への在庫レベル情報�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356786"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842559"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Finance and Operations から Field Service への在庫レベル情報の同期 
 
@@ -38,14 +38,14 @@ ms.locfileid: "356786"
 次のテンプレートと基本的なタスクは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service への手持在庫レベルの同期を実行するために使用されます。
 
 **データ統合でのテンプレート**
-- 製品在庫 (Finance and Operations から Field Service)
+- 製品在庫 (Fin and Ops から Field Service)
   
 **データ統合プロジェクトのタスク**
 - 製品在庫
 
 在庫レベルの同期が処理される前に、次の同期タスクが必要です。
 - 倉庫 (Finance and Operations から Field Service) 
-- 在庫単位のある Field Service 製品 (Finance and Operations から Sales) 
+- 在庫単位のある Field Service 製品 (Fin and Ops から Sales) 
 
 ## <a name="entity-set"></a>エンティティ セット
 
@@ -80,6 +80,6 @@ Finance and Operations は、在庫レベルのマスターとして機能しま
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>製品在庫 (Finance and Operations から Field Service): 製品在庫
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>製品在庫 (Fin and Ops から Field Service): 製品在庫
 
 [![データ統合のテンプレートのマッピング](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

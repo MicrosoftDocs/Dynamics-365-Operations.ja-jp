@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 9523e764a5edf995457d54d7d5830742fd295d9c
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 4700b5b880c5282cf9214bb95bc77e0e9ac810eb
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760772"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "899039"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
@@ -31,7 +31,7 @@ ms.locfileid: "760772"
 
 このローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このローカライズは、Commerce runtime (CRT)、Retail Servers、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio オンライン (VSO) のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+このローカライズは、Commerce runtime (CRT)、Retail Servers、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 ## <a name="storing-a-certificate-for-digital-signing-in-azure-key-vault"></a>Azure Key Vault にデジタル署名用証明書を保存します。
 
@@ -90,7 +90,7 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
 
 ## <a name="specifying-application-attributes-that-will-be-printed-on-receipts"></a>レシートに印刷されるアプリケーション属性を指定します。
 
-カスタム フィールドを使用して、次のようなアプリケーション属性をレシートに印刷<!-- (for more information, see [Cash registers for France](./emea-fra-cash-registers.md))-->できます。
+カスタム フィールドを使用することで、次のようなアプリケーション属性をレシートに印刷できます。<!-- (for more information, see [Cash registers for France](./emea-fra-cash-registers.md))-->:
 
 - **ビルド番号**- POS アプリケーションのソフトウェアのバージョン。 既定では、この値は、Microsoft が POS アプリケーションに割り当てた POS ビルド番号と等しくなります。
 - **証明書のカテゴリ**および**証明書の番号** - アプリケーションの認定証明を発行するカテゴリとコンプライアンスの証明書の数。 既定では、値はカテゴリとMicrosoft に与えられた証明書の数に等しい。
@@ -343,13 +343,29 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 # <a name="retail-735-and-latertabretail-7-3-5"></a>[Retail 7.3.5 およびそれ以降](#tab/retail-7-3-5)
 
-> [!NOTE]
-> 追加の作業は必要ありません。
+1. CRT 用拡張コンフィギュレーション ファイルを検索します。
+
+    - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
+    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+2. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    ```
 
 # <a name="retail-811-and-latertabretail-8-1-1"></a>[Retail 8.1.1 およびそれ以降](#tab/retail-8-1-1)
 
-> [!NOTE]
-> 追加の作業は必要ありません。
+1. CRT 用拡張コンフィギュレーション ファイルを検索します。
+
+    - **Retail Server:** ファイル名は **commerceruntime.ext.config** で、IIS Retail Server サイトがある場所の下の **bin\\ext** フォルダーにあります。
+    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
+
+2. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    ```
 
 ---
 

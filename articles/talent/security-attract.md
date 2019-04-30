@@ -1,7 +1,7 @@
 ---
 title: Attract でのセキュリティおよびロール管理
 description: このトピックでは、Microsoft Dynamics 365 for Talent - Attract におけるデータ エンティティのセキュリティについて説明します。
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 9c0f9d3304b1b15aa84fd1a296267d606bf9c59d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789700"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993694"
 ---
 # <a name="security-and-role-management-in-attract"></a>Attract でのセキュリティおよびロール管理
 
@@ -70,6 +70,16 @@ Attract では 5 つの基本ユーザー ロールが提供されます。
 
 読み取り専用ロールに割り当てられているユーザーには、Attract 環境のすべてのデータへの読み取り専用アクセスがあります。 ただし、データの作成または編集はできません。
 
+## <a name="find-out-which-roles-you-have"></a>ロールを確認する
+
+1.  Attract で、ページの右上隅にある疑問符 (**?**) をクリックします。
+
+2.  **情報**をクリックします。
+
+    表示されたウィンドウで、Attract のロールが表示されます。
+
+    ![Attract のライセンスの種類を表示](media/attract-license-types.png)
+    
 ## <a name="delegated-roles"></a>委任ロール
 
 採用チームの各職務について、採用担当者および採用マネージャーは自分たちのために 1 人以上の委任を指定することができます。 ただし、採用チームの他の人のために委任を指定することはできません。

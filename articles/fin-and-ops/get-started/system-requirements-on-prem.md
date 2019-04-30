@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 56844aba921d7daf7c1536e4e7f9a50695d752d8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0e72bf2af7019e7328bad495bb18004090efc12c
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368538"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "858965"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
@@ -264,7 +264,7 @@ Finance and Operations (オンプレミス) コンポーネントをインスト
 
 ## <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) のソフトウェア要件
 
-- SQL Server Integation Services (SSIS)
+- SQL Server Integration Services (SSIS)
 
 ## <a name="software-requirements-for-reporting-server-bi"></a>レポート サーバー (BI) のソフトウェア要件
 

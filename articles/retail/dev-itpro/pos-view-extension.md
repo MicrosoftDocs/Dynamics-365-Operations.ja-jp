@@ -3,7 +3,7 @@ title: POS ビューの拡張によるカスタム列およびアプリ バー �
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0a11531ea4e30b882ad339553ba9606609917c3a
-ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
+ms.openlocfilehash: 8897e674bf652f925b62bbcac12961791ff5e352
+ms.sourcegitcommit: 60aa392e7762d9b62baf007be27dec043bd078df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403757"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "884490"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -54,10 +54,10 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SearchView                      | 無                            | 有                          | 有                                  |
 | InventoryLookupView             | 無                            | 有                          | 有                                  |
 | ShowJournalView                 | 無                            | 有                          | 有                                  |
-| SimpleProductDetailsView        | 有                           | 無                           | 有                                  |
-| AddressAddEditView              | 有                           | 無                           | 無                                    |
-| PaymentView                     | 無                            | 無                           | 有                                  |
-| PriceCheckView                  | 有                           | 無                           | 無                                   |
+| SimpleProductDetailsView        | はい                           | いいえ                           | はい                                  |
+| AddressAddEditView              | はい                           | いいえ                           | はい                                    |
+| PaymentView                     | いいえ                            | いいえ                           | はい                                  |
+| PriceCheckView                  | はい                           | いいえ                           | いいえ                                   |
 | SearchOrdersView                | 無                            | 有                          | 無                                   |
 | SearchPickingAndReceivingView   | 無                            | 有                          | 有                                   |
 | CustomerOrderHistoryView        | 無                            | 有                          | 無                                   |
@@ -70,13 +70,17 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | ManageShiftView                 | 無                            | 無                           | 有                               |  
 | ReportDetailsView               | 無                            | 無                           | 有                               |
 | SearchReceiptsView              | 無                            | 無                           | 有                               |
-| StockCountDetailsView           | いいえ                            | いいえ                          | はい                               |
-| TransferOrderDetailsView        | いいえ                            | いいえ                          | はい                               |
-| FulfillmentLineView        | いいえ                            | はい                          | いいえ                               |
+| StockCountDetailsView           | いいえ                            | いいえ                           | はい                               |
+| TransferOrderDetailsView        | いいえ                            | いいえ                           | はい                               |
+| FulfillmentLineView             | いいえ                            | はい                          | いいえ                               |
+| ReturnTransactionView           | いいえ                            | はい                          | はい                               |
 
 
 > [!NOTE]
 > 上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 旧バージョンでは、これらの拡張ポイントの一部は使用できません。
+
+> [!NOTE]
+> 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューのカスタム列は、行サブ フィールドの使用をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
 
 フィルターの拡張機能は**仕訳帳ビューを表示**および**注文ビューを検索**でもサポートされ、カスタム フィルターを追加します。 
 

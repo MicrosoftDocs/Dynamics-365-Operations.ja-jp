@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 7c591b01efda25d7a730c10c3ca86ec2a576f94f
-ms.sourcegitcommit: dcb78245c15423cce346dcdfd1f4cdd0d9a5ba48
+ms.openlocfilehash: 2f25a100ed040e4410ad644d7d76c950039be29f
+ms.sourcegitcommit: e597ac963d541f521d253697bbf26ce1ca8630a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "380107"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "949236"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -119,7 +119,6 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 | パッケージ アプリケーション            | 生産 | 配置可能パッケージ アプリケーション | 5 時間 | 5 時間 |
 | サンドボックスのポイントインタイム復元 | レベル 2 またはそれ以上のサンドボックス | データベース ポイントインタイム復元 | 5 時間 | 4 時間 |
 | 実稼働環境のポイントインタイム復元 | 生産 | データベース ポイントインタイム復元 | 5 時間 | 4 時間 |
-| データベースの更新               | 生産から任意のレベル 2 またはそれ以上のサンドボックス、または任意の 2 つのレベル 2 またはそれ以上のサンド ボックス間 | データベースの更新 | 24 時間 | 4 時間 |
 | サンドボックス環境から実稼働環境          | 第 2 層以上のサンドボックスから実稼働環境 | サンドボックス環境から実稼働環境 | 5 時間 | 4 時間 |
 | 外                          | 生産 | メンテナンス モード | 5 時間 | 顧客はサービス要求においていつ環境のメンテナンス モードを再度終了する必要があるかを示しているため、適用不可 |
 |                                | 生産 | IP ホワイトリスト ルール | 5 時間 | 2 時間 |

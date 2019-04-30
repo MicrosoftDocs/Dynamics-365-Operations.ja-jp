@@ -3,7 +3,7 @@ title: 最新の Finance and Operations 更新プログラムへの移行の処�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1f4fb8b7c514342716395ae2616a63de3ef32d92
-ms.sourcegitcommit: 56ac3d30448e7251e8e8a67357c090cf5ccebef1
+ms.openlocfilehash: 3a300942d3894eb1a4b7a2c83ff6ba264137c3e5
+ms.sourcegitcommit: e0a27a98421b3fb897fe17903d6a9dc122142032
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "783227"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842984"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 
@@ -131,7 +131,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 ## <a name="scenario-3-upgrade-to-the-latest-application-release"></a>シナリオ 3: 最新のアプリケーション リリースにアップグレードする
 
 > [!IMPORTANT]
-> アプリケーションのバージョン 8.0 を使用していて、8.1 リリースに移行する場合は、[バージョン 8.0 から 8.1.X への環境の更新](./appupdate-80-81.md) にある簡略化された手順に従います。
+> アプリケーションのバージョン 8.0 を使用していて、8.1 または 10.0 のリリースに移行する場合は、 [バージョン 8.0 から 8.1.X/10.X への環境の更新](./appupdate-80-81.md) にある簡略化された手順に従ってください。
 
 これらの手順は、以前のリリースで稼動しており、最新のプラットフォームおよびアプリケーションの各リリースに完全にアップグレードする顧客に適用されます。 これらのステップは、まだ稼働していない場合でも、実稼働環境をすでに展開して構成しているお客様にも適用されます。 アプリケーションをアップグレードしていなく、プラットフォームをアップグレードする場合は、代わりに 4 つのシナリオを使用します。
 
@@ -290,7 +290,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 
 **アップグレードはコミットされますが、環境は " アップグレードのクリーンアップの進行中" 状態のままです。**
 
-これは、一部のサンドボックスと運用環境で発生した問題です。 この問題を解決するためにバグが作成されました。 それまでの間、この問題が発生するときが事前に警告が表示され、環境の状態が手動でクリーンアップされます。 バグが解決されたとき、この問題を既知の問題の一覧から削除します。
+これは、一部のサンドボックスと運用環境で発生した問題です。 この問題を解決するためにバグが作成されました。 問題解決までの間、この問題が発生した際にアラートを設定し、環境の状態を手動でクリーンアップします。 バグが解決されたとき、この問題を既知の問題の一覧から削除します。
 
 ## <a name="scenario-4-upgrade-to-the-most-current-platform-only"></a>シナリオ 4: 最新のプラットフォームのみにアップグレードする
 

@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 for Talent のモジュラー アプリのプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 for Talent に含まれる Core Human Resources (HR) 機能を提供するために購入できるスタンドアロンのモジュラー アプリケーションをプロビジョニングする方法について説明します。 この機能は、Attract および Onboard などの追加エクスペリエンスを提供します。
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: 949695df931c2c01f1cc656478b39cde2c6d8879
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: aa02b016e4193c2280d959b351dab1f5c74b4c2e
+ms.sourcegitcommit: 3630054272c42bbfb8949c128b0284fc830254bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368489"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "907923"
 ---
 # <a name="provisioning-for-the-dynamics-365-for-talent-modular-apps"></a>Dynamics 365 for Talent のモジュラー アプリのプロビジョニング
 
@@ -40,7 +40,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は Talent をプロビジョニン�
 + PowerApps 環境が存在しない場合は、組織の既存のテナントの場所は
 + Talent が現在サポートするデータ センター
 
-サポートされている国または地域でのみ、モジュラー アプリケーションがプロビジョニングされます。 次の図は、使用されるロジックを示しています。 (サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。)
+サポートされている国または地域でのみ、モジュラー アプリケーションがプロビジョニングされます。 次の図は、使用されるロジックを示しています。 サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。 サポートされている国と地域の一覧は、『[Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/en-us/dynamics365/get-started/availability)』を参照してください。
 
 [![国/地域に基づくモジュラー アプリケーションのプロビジョニング プロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 

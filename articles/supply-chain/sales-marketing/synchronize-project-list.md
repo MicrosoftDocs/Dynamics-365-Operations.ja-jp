@@ -3,7 +3,7 @@ title: Finance and Operations から Field Service へのプロジェクト リ�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea5c188891bb97ba73d2d022e86bbff50897381b
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312511"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842607"
 ---
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Finance and Operations から Field Service へのプロジェクト リストの同期
 
@@ -64,6 +64,6 @@ Finance and Operations にプロジェクトが作成されます。 **プロジ
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
 
-### <a name="projects-finance-and-operations-to-field-service-projects"></a>プロジェクト (Finance and Operations から Field Service): プロジェクト
+### <a name="projects-fin-and-ops-to-field-service-projects"></a>プロジェクト (Finance and Operations から Field Service): プロジェクト
 
 [![データ統合のテンプレートのマッピング](./media/FSProject1.png)](./media/FSProject1.png)

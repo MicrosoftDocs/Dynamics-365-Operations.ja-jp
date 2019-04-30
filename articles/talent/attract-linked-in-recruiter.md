@@ -1,7 +1,7 @@
 ---
 title: LinkedIn Recruiter によるソーシング
 description: このトピックでは、ジョブおよびジョブ候補の推奨事項を取得する機械学習の使用に関する情報を提供します。
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,31 +10,31 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ac7a302e5bf589beb2b560b0ff5818e90c67139
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305107"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859577"
 ---
 # <a name="sourcing-with-linkedin-recruiter"></a>LinkedIn Recruiter によるソーシング
 [!include[banner](../includes/banner.md)]
 
-LinkedIn は世界最大の人材データベースで、多くの場合、採用担当者が検索、やり取りおよび採用担当者による入力を検討するジョブの候補者ソースを使用するプライマリ システムです。 Dynamics 365 for Talent Talent と LinkedIn Recruiter の統合: Attract は、ユーザー用に採用および 2 つのシステム間で同期するデータの保存ができます。
+LinkedIn は世界最大の人材データベースで、多くの場合、採用担当者が検索、やり取りおよび採用担当者による入力を検討するジョブの候補者ソースを使用するプライマリ システムです。 Dynamics 365 for Talent の LinkedIn Recruiter 統合: Attract は、ユーザー用に採用および 2 つのシステム間で同期するデータの保存ができます。
 
 > [!NOTE]
-> Attract と統合する LinkedIn Recruiter を使えるようにするには、包括採用アドオンおよび LinkedIn Recruiter 席が必要です。
+> Attract で LinkedIn Recruiter 統合を使えるようにするには、包括採用アドオンおよび LinkedIn Recruiter シートが必要です。
 
-## <a name="set-up-linkedin-recruiter-with-attract"></a>Attract と LinkedIn Recruiter を設定 
+## <a name="set-up-linkedin-recruiter-with-attract"></a>Attract で LinkedIn Recruiter を設定 
 
 LinkedIn Recruiter 能力を使用するには、Attract インスタンスで契約レベルまたは会社レベルのアクセスをコンフィギュレーションする必要があります。 コンフィギュレーション プロセスを完了するには、LinkedIn Recruiter 契約の管理者であるユーザーを処理する必要があります。 Attract で LinkedIn Recruiter をコンフィギュレーションするには、以下の手順を実行します。
 
@@ -42,7 +42,7 @@ LinkedIn Recruiter 能力を使用するには、Attract インスタンスで�
 
 2.  左ウィンドウで **LinkedIn 統合**タブをクリックします。
 
-[![LinkedIn Recruiter 統合を開始する Attract 管理者ビュー](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+[![ LinkedIn Recruiter 統合を開始する Attract 管理者ビュー](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
 3.  **接続**をクリックして設定を開始すると、LinkedIn サインイン手順のガイドが表示されます。
 
@@ -50,7 +50,7 @@ LinkedIn Recruiter 能力を使用するには、Attract インスタンスで�
 
 5.  LinkedIn ウィジェットでは、表示されている統合一覧で管理者の設定を読み込みます。 **Recruiter System 接続**で、**要求**をクリックします。
 
-[![要求 LinkedIn Recruiter 統合への Attract 管理者ビュー](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+[![ LinkedIn Recruiter 統合を要求する Attract 管理者ビュー](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
 6.  統合が Attract から要求されると、**パートナー準備完了**と表示され、**採用管理者設定**から有効にする準備が可能です。 このページで**通知パートナー**が表示されたら、しばらく待ち、**通知パートナー**をクリックしてページを最新の情報に更新します。 **パートナー準備完了**と表示されます。
 
@@ -58,7 +58,7 @@ LinkedIn Recruiter 能力を使用するには、Attract インスタンスで�
 
 次の手順を完了するには、LinkedIn Recruiter 契約に関する管理特権が必要です。
 
-7.  管理者アカウントを使用して LinkedIn にサインインし、右上の LinkedIn Recruiter に移動します。 
+7.  管理者アカウントを使用して LinkedIn にサイン インし、右上の LinkedIn Recruiter に移動します。 
 
 8. 画面上部にある**詳細**メニューで、**管理者設定**をクリックしてから **ATS** タブをクリックします。
 
@@ -66,13 +66,13 @@ Attract システムでは、使用可能なオプションがいくつか表示
 
 9. **In-ATS インジケータ**と **In-ATS プロファイル ウィジェット**に 1 クリック エキスポートのみ有効にする場合、**会社レベルのアクセスを**を選択します。 InMail 履歴、メモの履歴および InMail スタブ プロファイル アクセスをプラスした会社レベル アクセスの機能を有効にする場合は、**契約レベル アクセス**を選択します。
 
-10. LinkedIn Recrioter の**管理者 ATS** 設定から必要なアクセス レベルをオンにします。
+10. LinkedIn Recruiter の**管理者 ATS** 設定から必要なアクセス レベルをオンにします。
 
-[![LinkedIn Recruiter 管理者ビューから Attract 統合にオン](./media/EnableRSC.png)](./media/EnableRSC.png)
+[![LinkedIn Recruiter の管理者ビューから Attract 統合にオン](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 12. AttractAdmin として Attract 管理者設定に戻り**LinkedIn 統合**タブを選択します。選択されたアクセス レベルをオンにし、**有効**と表示された Linkedln ウィジェットの積荷を確認できます。
 
-[![LinkedIn Recruiter 統合完了](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+[![LinkedIn Recruiter 統合の完了](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
 ## <a name="using-linkedin-recruiter-capabilities"></a>LinkedIn Recruiter 能力を使用
 
@@ -107,7 +107,7 @@ LinkedIn の候補者を調達する間、候補者を現在開いているジ�
 
 ### <a name="in-ats-indicator"></a>In-ATS インジケーター 
 
-LinkedIn Recruiter を使用すると、候補者が組織内の他のジョブに適用するかどうかの追跡が可能で、ジョブ アプリケーションの異なるステージであることの確認および LinkedIn Recruiter の Attract からフィードバックとコメントの表示が可能です。
+LinkedIn recruiter を使用すると、候補者が組織内の他のジョブに適用するかどうかの追跡が可能で、ジョブ アプリケーションの異なるステージであることを確認および LinkedIn Recruiter の Attract からフィードバックとコメントの表示が可能です。
 
 1.  LinkedIn Recruiter を開き、探している候補者プロファイルを特定します。
 

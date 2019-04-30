@@ -15,17 +15,16 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 41acc0733619d0744f6d2cb819859af939472e76
-ms.sourcegitcommit: 2e727bb651cf4dfa65d624f45f0dcdc1e7e8287c
+ms.openlocfilehash: 6f6cdc482ba184549a4e160fb5431a03c53d4bf6
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "719408"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975743"
 ---
 # <a name="troubleshoot-business-events"></a>ビジネス イベントのトラブルシューティング
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 このトピックでは、ビジネス イベントに関する問題を解決するためのヒントをいくつか示します。
 

@@ -3,7 +3,7 @@ title: 売上税の支払と丸めのルール
 description: この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: vstehman
+ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f03336c834e74cd12d039c7b9692874843811746
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1e1c1bb1c792eb79888a1df209f2eebaf14a38dd
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "367849"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842441"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>売上税の支払と丸めのルール
 
@@ -37,7 +37,7 @@ ms.locfileid: "367849"
 
 下の例では、売上税所轄官庁の丸めルールがどのように機能するかを説明します。
 
-### <a name="example"></a>例:
+## <a name="examples"></a>例
 
 ある期間の合計売上税として -98,765.43 の貸方残高があるとします。 法人が支払ったよりも多くの売上税を徴収したためです。 したがって、法人が税務当局に金銭を負っています。 
 
@@ -59,6 +59,67 @@ ms.locfileid: "367849"
 | 自社の利益、与信残高に対して | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                |
 | 自社の利益、借方残高に対して  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
 
+
+### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>丸めが 0.00 であるため、丸めは全くありません
+
+丸め (1.0151, 0.00) = 1.0151 丸め (1.0149, 0.00) = 1.0149
+
+### <a name="normal-round-and-round-precision-is-001"></a>通常の丸め、および丸め精度は 0.01
+
+<table>
+  <tr>
+    <td>丸め
+    </td>
+    <td>計算プロセス
+    </td>
+  </tr>
+    <tr>
+    <td>丸め (1.015, 0.01) = 1.02
+    </td>
+    <td>
+      <ol>
+        <li>丸め (1.015 / 0.01, 0) = 丸め (101.5, 0) = 102
+        </li>
+        <li>102 * 0.01 = 1.02
+        </li>
+      </ol>
+    </td>
+  </tr>
+    <tr>
+    <td>丸め (1.014, 0.01) = 1.01
+    </td>
+    <td> <ol>
+        <li>丸め (1.014 / 0.01, 0) = 丸め (101.4, 0) = 101
+        </li>
+        <li>101 * 0.01 = 1.01
+        </li>
+      </ol>
+    </td>
+  </tr>
+    <tr>
+    <td>丸め (1.011, 0.02) = 1.02
+    </td>
+    <td> <ol>
+        <li>丸め (1.011 / 0.02, 0) = 丸め (50.55, 0) = 51
+        </li>
+        <li>51 * 0.02 = 1.02
+        </li>
+      </ol>
+    </td>
+  </tr>
+    <tr>
+    <td>丸め (1.009, 0.02) = 1.00
+    </td>
+    <td> <ol>
+        <li>丸め (1.009 / 0.02, 0) = 丸め (50.45, 0) = 50
+        </li>
+        <li>50 * 0.02 = 1.00
+        </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
 > [!NOTE]                                                                                  
 > [自社の利益] を選択した場合、丸めは常に、法人の利益になります。 
 
@@ -66,6 +127,7 @@ ms.locfileid: "367849"
 - [消費税の概要](indirect-taxes-overview.md)
 - [売上税支払の作成](tasks/create-sales-tax-payment.md)
 - [ドキュメントの売上トランザクションの作成](tasks/create-sales-tax-transactions-documents.md)
-- [転記された消費税トランザクションの表示](tasks/view-posted-sales-tax-transactions.md)
+- [転記された売上税トランザクションの表示](tasks/view-posted-sales-tax-transactions.md)
+- [round 関数](https://msdn.microsoft.com/en-us/library/aa850656.aspx)
 
 

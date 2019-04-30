@@ -17,18 +17,21 @@ ms.search.region: China (PRC)
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 10160b47a11bcb8c3be21598725374a0107e6dcd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c957ec8ddc91a59b5b52c3f596a6037379f48b28
+ms.sourcegitcommit: b5e2835e2245414837b7b37056af228dd000f756
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369143"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "879864"
 ---
 # <a name="import-the-chinese-golden-tax-data-entity"></a>中国金税データ エンティティのインポート
 
 [!include [banner](../includes/banner.md)]
-
+  
 このトピックでは、中国金税データ エンティティを Microsoft Dynamics 365 for Finance and Operations にインポートする方法について説明します。
+
+> [!NOTE] 
+> Dynamics 365 for Finance and Operations の10.0以降のバージョンでは、中国で使用されている金税システムのデータ エンティティをインポートする必要はありません。 
 
 中国金税データ エンティティをインポートするには、以下の手順を実行します。
 

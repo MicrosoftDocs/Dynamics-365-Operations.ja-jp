@@ -1,7 +1,7 @@
 ---
 title: 仕入先請求仕訳帳および請求書承認仕訳帳の既定の相手勘定
 description: このトピックは、請求仕訳の既定の勘定を割り当てる場所を決定するのに役立ちます。
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f876e5dfdab67dd98b2449993c3ba2baacde1587
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5cf772a0f0f9f99519322be1f37f961dc0ab2500
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "320262"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896767"
 ---
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>仕入先請求仕訳帳および請求書承認仕訳帳の既定の相手勘定
 

@@ -1,7 +1,7 @@
 ---
 title: 仕入先支払を使用して仕入先請求書を作成
 description: このトピックでは、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 54c3d2b6ecae1481fd9b979e5d4ced217a67f5aa
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327415"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896859"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>支払提案を使用した仕入先支払の作成
 

@@ -1,15 +1,15 @@
 ---
 title: パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
-description: このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。
-author: kfend
+description: このトピックでは、パフォーマンス SDK および、 Visual Studio Online Online を使用したマルチユーザー テストを行う方法について解説します。
+author: hasaid
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -17,18 +17,27 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0348149280bffe9e83e16cd994c1021b5876a6aa
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 923c38d18c414fc3a0b0164e55ae1b652fe555d3
+ms.sourcegitcommit: c19d9cb1f1e77ce96ac4ec6e3212bc3c06288a7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368419"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "892569"
 ---
 # <a name="performance-sdk-and-multiuser-testing-via-visual-studio-online"></a>パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) について説明し、Microsoft Visual Studio Online を使用してマルチユーザー テストを実行する方法について説明します。 また、タスク レコーダーで記録したシナリオをシングルユーザー テスト、そしてマルチユーザー テストに変換する方法についても説明します。
+このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) および、Microsoft Visual Studio Online Online を使用したマルチユーザー テストを行う方法について解説します。 また、タスク レコーダーで記録したシナリオをシングルユーザー テスト、そしてマルチユーザー テストに変換する方法についても説明します。
+
+   > [!IMPORTANT]
+  > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的には、代替ソリューションに向けた推奨案の提案に取り組んでいきます。
+  
+  > - Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 サポート サイクルが終了するまで継続して使用することができます。 
+ 
+ >  - クラウド ベースの負荷テストサービスをご利用の場合は、同サービスは2020年3月31日までの間、継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 
+   
+   > 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
 
 > [!NOTE]
 > 管理者として環境を利用できる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
@@ -214,7 +223,7 @@ _userContext.Dispose();
 
 ### <a name="test-the-sandbox-environment"></a>サンドボックス環境をテスト
 
-ここまでは、手順で、AOS マシンが開発マシンでもある開発者トポロジを使用していることを前提としていました。 Azure DevOps でロード テストを実行するには、テスト環境がサンドボックス環境である必要があります。 サンドボックス環境と負荷テストを実行するコンピューター間の信頼関係を確立するには、いくつかの追加手順を完了する必要があります。 負荷テストを実行するコンピューターは、開発マシンまたは Visual Studio Online で作成されたテスト エージェントのいずれかです。
+ここまでは、手順で、AOS マシンが開発マシンでもある開発者トポロジを使用していることを前提としていました。 Azure DevOps でロード テストを実行するには、テスト環境がサンドボックス環境である必要があります。 サンドボックス環境と負荷テストを実行するコンピューター間の信頼関係を確立するには、いくつかの追加手順を完了する必要があります。 負荷テストを実行できるコンピューターは、開発マシンまたは Visual Studio Online  にて作成したテスト エージェントのいずれかです。
 
 1. サンドボックス AOS マシンへのリモート デスクトップ の接続を確立し、**.cer** ファイルを上書きします。 ファイルをダブルクリックして、インストールします。 証明書ストアの入力を要求するメッセージが表示されたら、**個人** を選択します。
 2. IIS を起動し、サイトの一覧で **AOSService** を見つけます。 その後、**エクスプローラー** を選択して、**wif.config** ファイルを検索します。 **Wif.config** ファイルで、**AxTokenIssuer** という機関を検索します。 この権限の捺印のリストに捺印を追加する必要があります。 (以前に生成した証明書の値を使用します。)
@@ -241,8 +250,8 @@ _userContext.Dispose();
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** の **Visual Studio Online** フォルダーに配置します。
-3. **Visual Studio Online** フォルダで **setup.cmd** ファイルの内容を変更し、次のコードと一致するようにします。
+2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
+3. **Visual Studio Online** フォルダ内の **setup.cmd** ファイル内容を次のコードと一致するように変更します。
 
     ```
     setx testroot "%DeploymentDirectory%"
@@ -270,14 +279,14 @@ _userContext.Dispose();
         - C:\\PerfSDK\\CloudEnvironment.Config
         - C:\\PerfSDK\\authcert.pfx
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-        - C:\\PerfSDK\\Visual Studio オンライン\\
+        - C:\\PerfSDK\\ Visual Studio Online\\
 
         [![フィールドを配置するための追加ファイルおよびディレクトリ](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
         > [!NOTE]
         > PerfSDK フォルダーが異なっている場合があります。
 
-7. **スクリプトの設定とクリーンアップ** タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
+7. **設定とクリーンアップ** タブで、 **PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
 8. **追加設定**タブで、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
 9. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 
@@ -386,7 +395,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 これらのキーで指定された Web アドレスは、テスト実施中の環境である必要があります。 開発者マシンの Web ブラウザで、**HostName** キーによって指定された Web アドレスを開けれることを確認します。
 
-オンライン負荷テストでは、CloudEnvironment.Config ファイルの **HostName** キーで指定された環境に、どのマシンからも公にアクセスできる必要があります。 したがって、1 ボックス環境をテストする必要がある場合、Visual Studio Online を使用して負荷テストを実行することはできません。これは、エンドポイントが 1 ボックス環境の外部にアクセスできないためです。
+オンライン負荷テストでは、CloudEnvironment.Config ファイルの **HostName** キーで指定された環境に、どのマシンからも公にアクセスできる必要があります。 したがって、ワンボックス開発環境をテストする必要がある場合、 Visual Studio Online Online を使用した負荷テストの実行はできません。これは、エンドポイントが ワンボックス環境の外部にアクセスできないためです。
 
 ### <a name="users-cant-be-enumerated"></a>ユーザーを列挙できません
 
@@ -546,7 +555,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### <a name="service-w3svc-was-not-found-on-computer"></a>コンピューターでサービス w3svc が見つかりませんでした
 
-このエラーは、Visual Studio Online を使用してロード テストを実行する場合にのみ発生します。
+このエラーは、 Visual Studio Online を使用して負荷テストを実行する場合にのみ発生します。
 
 #### <a name="error-example"></a>エラーの例
 ```

@@ -3,7 +3,7 @@ title: ソフトウェアのライフサイクル ポリシーおよびクラウ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 author: RyanCCarlson2
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 9335dd1c0720093984cb29a474fab7245b3c91e8
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 75563f668d0772c925f9df47693aa5dab45b3177
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836362"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976794"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 
@@ -33,7 +33,7 @@ ms.locfileid: "836362"
 ## <a name="modern-lifecycle-policy"></a>Modern Lifecycle ポリシー
 Dynamics 365 for Finance and Operations オンライン サービスは、Modern Lifecycle ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/en-us/help/30881) を参照してください。 ライセンス供与された顧客は、次のサービスとシステムの要件に従って、Dynamics 365 for Finance and Operations オンライン サービスに対する更新で最新の状態にする必要があります:
 
-- Microsoft Dynamics 365 for Finance and Operations のサブスクリプションを購入し、以下のアプリケーション バージョンで運用している顧客には、プラットフォームおよび財務諸表の継続的な更新が行われます。 Microsoft は、30 日まで更新プログラムを延期するオプションでこれらのコンポーネントを継続的に更新します。
+- Microsoft Dynamics 365 for Finance and Operations のサブスクリプションを購入し、以下のアプリケーション バージョンで運用している顧客には、プラットフォームおよび財務諸表の継続的な更新が行われます。 Microsoft は最大 2 回の連続したサービス更新プログラムを延期するオプションを付きで、これらのコンポーネントを継続的に更新します。
     - Dynamics 365 for Operations バージョン 1611 (2016 年 11 月)
     - Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月)
     - Dynamics 365 for Finance and Operations、Enterprise edition 7.3
@@ -72,7 +72,7 @@ Dynamics 365 for Finance and Operations オンライン サービスは、Modern
 | Dynamics 365 for Finance and Operations | メジャー リリース                       | [10.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10) | 10.0.8          | 2019 年 4 月     | 該当なし (継続的に更新)\* |
 | Dynamics 365 for Finance and Operations | メジャー リリース                       | [8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-october-2018) | 8.1.136          | 2018 年 10 月     | 該当なし (継続的に更新)\* |
 
-\*サービスの更新を通じて更新するのにメジャー リリースが必要なことを示します。 サービス更新は本質的に累積的であり、次の一部またはすべてのコンポーネントの更新が含まれることがあります: プラットフォーム、アプリケーション、財務報告、Retail、およびオペレーティング システムの更新。  3 か月以内に更新する必要があります。 8.1.x バージョン シリーズは、バージョン 10.0 によって置き換えられます。2019 年 4 月リリースを目標としています。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../../fin-and-ops/get-started/one-version.md)を参照してください。
+\*サービスの更新を通じて更新するのにメジャー リリースが必要なことを示します。 サービス更新は本質的に累積的であり、次の一部またはすべてのコンポーネントの更新が含まれることがあります: プラットフォーム、アプリケーション、財務報告、Retail、およびオペレーティング システムの更新。  3 つより古くないサービス更新プログラムに更新する必要があります。 8.1.x バージョン シリーズは、バージョン 10.0 によって置き換えられます。2019 年 4 月リリースを目標としています。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../../fin-and-ops/get-started/one-version.md)を参照してください。
 
 ### <a name="table-2-application-releases"></a>テーブル 2: アプリケーション リリース
 
@@ -80,10 +80,10 @@ Dynamics 365 for Finance and Operations オンライン サービスは、Modern
 
 | **リリース**                                                 | **メジャーまたはマイナー リリース** | **バージョン**                                                                                                                                           | **ビルド番号** | **在庫状態** | **サービス終了** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
-| Dynamics 365 for Finance and Operations                     | メジャー リリース              | [8.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-0-april-2018)                       | 8.0.30           | 2018 年 4 月       | 2019 年 4 月         |
-| Dynamics 365 for Finance and Operations、Enterprise Edition | メジャー リリース              | [7.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-7.3-update)                       | 7.3.11971.56116  | 2017 年 12 月    | 2019 年 4 月\*       |
-| Dynamics 365 for Finance and Operations、Enterprise Edition | メジャー リリース              | [2017 年 7 月](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-july-2017-update)           | 7.2.11792.56024  | 2017 年 6 月        | 2019 年 4 月         |
-| Dynamics 365 for Operations                                 | メジャー リリース              | [1611](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-dynamics-365-operations-1611)                | 7.1.1541.3036    | 2016 年 11 月    | 2019 年 4 月         |
+| Dynamics 365 for Finance and Operations                     | メジャー リリース              | [8.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-0-april-2018)                       | 8.0.30           | 2018 年 4 月       | 2019 年 4 月 30 日         |
+| Dynamics 365 for Finance and Operations、Enterprise Edition | メジャー リリース              | [7.3](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-7.3-update)                       | 7.3.11971.56116  | 2017 年 12 月    | 2019 年 4 月 30 日\*       |
+| Dynamics 365 for Finance and Operations、Enterprise Edition | メジャー リリース              | [2017 年 7 月](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-application-july-2017-update)           | 7.2.11792.56024  | 2017 年 6 月        | 2019 年 4 月 30 日         |
+| Dynamics 365 for Operations                                 | メジャー リリース              | [1611](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-dynamics-365-operations-1611)                | 7.1.1541.3036    | 2016 年 11 月    | 2019 年 4 月 30 日         |
 | Dynamics AX                                                 | マイナー リリース              | [7.0.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016) | 7.0.1265.23014   | 2016 年 5 月         | 2017 年 6 月          |
 | Dynamics AX                                                 | メジャー リリース              | [7.0](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-7-0-february-2016)                    | 7.0.1265.3015    | 2016 年 2 月    | 2017 年 6 月          |
 
@@ -96,6 +96,7 @@ Dynamics 365 for Finance and Operations オンライン サービスは、Modern
 
 | **リリース**                                                                                                                                                  | **ビルド番号** | **在庫状態** | **有効期限**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|----------------------------|
+| [プラットフォーム update 25](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-25)               | 7.0.5222        | 2019 年 4 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 24](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24)               | 7.0.5179          | 2019 年 3 月   | 該当なし (継続的に更新) |
 | [プラットフォーム update 23](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23)               | 7.0.5126          | 2019 月 1 日   | 該当なし (継続的に更新) |
 | [プラットフォーム update 22](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-22)               | 7.0.5095         | 2018 年 12 月   | 該当なし (継続的に更新 / 破棄) |

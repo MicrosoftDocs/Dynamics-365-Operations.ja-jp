@@ -1,7 +1,7 @@
 ---
 title: 報酬処理
 description: 報酬処理では、賃金調整、昇給目標、およびパフォーマンスに基づいて、従業員の新しい基本報酬金額を計算することができます。
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 3ecadaf20ea82cd1328b266907d2ba43515d76c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 30b09f09875e37a6a909d0aad04117e577c5cd98
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305178"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856925"
 ---
 # <a name="process-compensation"></a>報酬処理
 

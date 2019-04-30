@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c53a38eb6afdf8d3cc1a316c8da5e84549ab60d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e3e8ffa6cee7742de1cd98c9c83d134b6d5e4a89
+ms.sourcegitcommit: 529763612e8af315d588e85ba807a5c849df57bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361432"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894681"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>品目を使用して、基本倉庫が有効な品目の品目を着荷仕訳帳登録します。
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、在庫管理モジュールで、「基本倉庫」を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。 これは通常、入荷係により行われます。 表示されているサンプル値を使用して、デモ データの会社 USMF でこの手順を実行できます。  USMF を使用していない場合、このガイドを開始する前に、未処理の発注書明細行と共に確認済の発注書が必要です。 明細行の品目は在庫がある必要があり、製品バリアントの使用および追跡用分析コードの保有はできません。 その品目は、倉庫管理プロセスが有効化された保管分析コード グループと関連付けられている必要があります。
+この手順では、在庫管理モジュールで、「基本倉庫」を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。 これは通常、入荷係により行われます。 表示されているサンプル値を使用して、デモ データの会社 USMF でこの手順を実行できます。  USMF を使用していない場合、このガイドを開始する前に、未処理の発注書明細行と共に確認済の発注書が必要です。 明細行の品目は在庫がある必要があります。 その品目は、倉庫管理プロセスが有効化された保管分析コード グループと関連付けられている必要があります。
 
 
 ## <a name="create-item-arrival-journal-header"></a>着荷仕訳帳ヘッダーの作成

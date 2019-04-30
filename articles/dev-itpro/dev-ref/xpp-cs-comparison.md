@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 564d86ea7f29eb5f4bd5cbb3692e5848381d43eb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 36b022b94742adef2fe9a23f92b642e7df226818
+ms.sourcegitcommit: 0b9d7d4c163992a9949bd8c8fffa18eb4ad9fa64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369251"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "845113"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -1102,11 +1102,46 @@ End of X++ retry program.
                 if (bReturnCode)
                 {
                     bReturnCode = this
-  .Rs008b_CSharp_ExceptionsAndRetry_Callee (ref iIndex); } else { break; } } Console.WriteLine("End of C# caller method."); } private bool Rs008b_CSharp_ExceptionsAndRetry_Callee (ref int iIndex) { bool bReturnCode = true; // このメソッドを再び呼び出します。
-string[] sStrings = new string[4]; string sTemp; sStrings[0] = "最初の配列要素。"; try { Console.WriteLine("try ブロックのトップで: " + iIndex.ToString()); sTemp = sStrings[iIndex]; Console.WriteLine( "配列要素は: " + sTemp ); bReturnCode = false; // このメソッドを再び呼び出さないことを意味します。
-} catch (Exception) { Console.WriteLine ("In catch of -- Exception. Entering catch."); ++iIndex; // The 'ref' parameter in C#。
-Console.WriteLine ("In catch of -- Exception. catch をそのままにします。」)。//retry; // C# では caller メソッドに retry キーワードが // X++ で行う作業をさせます。
-} Console.WriteLine("End of C# callee method."); return bReturnCode; } }
+     .Rs008b_CSharp_ExceptionsAndRetry_Callee
+    (ref iIndex);
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Console.WriteLine("End of C# caller method.");
+        }
+        private bool Rs008b_CSharp_ExceptionsAndRetry_Callee
+                (ref int iIndex)
+        {
+            bool bReturnCode = true; // Means call this method again.
+            string[] sStrings = new string[4];
+            string sTemp;
+            sStrings[0] = "First array element.";
+            try
+            {
+                Console.WriteLine("At top of try block: "
+                    + iIndex.ToString());
+                sTemp = sStrings[iIndex];
+                Console.WriteLine( "The array element is: " + sTemp );
+                bReturnCode = false; // Means do not call this method again.
+            }
+            catch (Exception)
+            {
+                Console.WriteLine
+                    ("In catch of -- Exception. Entering catch.");
+                ++iIndex; // The 'ref' parameter in C#.
+                Console.WriteLine
+                    ("In catch of -- Exception. Leaving catch.");
+                //retry;
+                // In C# we let the caller method do the work
+                // that the retry keyword does in X++.
+            }
+            Console.WriteLine("End of C# callee method.");
+            return bReturnCode;
+        }
+    }
 
 
  

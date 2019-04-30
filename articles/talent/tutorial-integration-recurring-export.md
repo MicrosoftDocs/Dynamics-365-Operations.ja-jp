@@ -1,7 +1,7 @@
 ---
 title: Azure Logic アプリを使用した定期的なデータ エクスポート
 description: このチュートリアルでは Dynamics 365 for Talent から定期的なスケジュールでデータをエクスポートする Azure ロジック アプリを作成する方法を説明します。
-author: gregboyko
+author: andreabichsel
 manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
-ms.author: gboyko
+ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
-ms.openlocfilehash: 72481e47058b9e8b108369d48c14cb4cce6bb4d1
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 4d57e30d12cc5ef5cd574f58d4ded3d85c444ba0
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789834"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "857858"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
 

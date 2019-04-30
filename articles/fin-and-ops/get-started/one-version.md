@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新に関するよく寄せら�
 description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
 author: meeramahabala
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0a2559501f25df925977741367e992727f3ac368
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 40513f626198a16e66f0380887fc71b1088d33d9
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789807"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969389"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -31,12 +31,18 @@ ms.locfileid: "789807"
 ## <a name="schedule-for-april-100-release"></a>4 月の 10.0 リリースのスケジュール
 
 ### <a name="can-the-update-to-100-be-delayed-or-does-the-policy-for-delaying-updates-only-apply-if-you-are-using-100"></a>10.0 への更新を遅らせることができますか。 または更新を遅らせるポリシーは 10.0 を使用している場合にのみ適用されますか。
-8.1.2 または 8.1.3 を使用している場合、お客様は [10.0 リリース](whats-new-changed-10.md) を一時停止またはオプトアウトできます。 3 月上旬には、この構成をセットアップしたり、更新プログラムを一時停止する機能が LCS を通じて利用できるようになります。
+8.1.2 または 8.1.3 を使用している場合、お客様は [10.0 リリース](whats-new-changed-10.md) を一時停止またはオプトアウトできます。 この構成をセットアップしたり、更新プログラムを一時停止する機能は LCS を通じて利用できます。 ユーザーは連続する更新プログラムを 2 つまで一時停止できます。 次にいくつか例を挙げます。
 
-### <a name="with-a-release-date-in-early-april-which-ring-is-being-released-at-that-time-is-it-the-ga-ring-or-will-ga-be-released-several-weeks-later"></a>4 月上旬のリリース日について、その時点でどのリングがリリースされていますか。 それは GA リングですか。 それとも GA は数週間後にリリースされますか。
-月次リリースの [標準リリース / リング 4](public-preview-releases.md) 製品更新プログラムは、4 月の 1、2、3 週間目に予定されています。 LCS でセットアップした構成により、その特定の週に更新プログラムを受け取ります。
+- 顧客は、現在バージョン 8.1.2 を使用しており、バージョン 10 を一時停止することができます。 ユーザーはバージョン 10.0.1 にする必要があります
+- 顧客は、現在バージョン 8.1.3 を使用しており、バージョン 10 とバージョン 10.0.1 を一時停止することができます。 ユーザーはサービス更新プログラム 10.0.2 にする必要があります。  
+
+
+### <a name="with-a-release-date-in-early-april-when-will-the-ga-package-be-made-available"></a>4月の始めのリリースで、GA パッケージはいつ使用可能になりますか。
+月次リリースの製品更新プログラムは、4 月の 1、2、3 週間目に予定されています。 LCS でセットアップした構成により、その特定の週に更新プログラムを受け取ります。
  
-4 月 10.0 リリースの場合、Microsoft は LCS でセットアップした構成に基づいて 4 月 6 日、4 月 13 日、または 4 月 20 日の週末に更新プログラムを実行します。 サンドボックスの更新プログラムは、常にその更新の 1 週間前にスケジュールされます。 コンフィギュレーション設定は 3 月上旬に利用可能になる予定です。
+4 月 10.0 リリースの場合、Microsoft は LCS でセットアップした構成に基づいて 4 月 6 日、4 月 13 日、または 4 月 20 日の週末に更新プログラムを実行します。 サンドボックスの更新プログラムは、常にその更新の 1 週間前にスケジュールされます。 コンフィギュレーション設定は LCS で利用できます。
+
+ユーザーは、Lifecycle Services で提示されているよりも早い時期、またはより都合のいい時間に更新プログラムを適用することを選択できます。  顧客が最新バージョンを使用している場合、自動更新がキャンセルされます。  
 
 ## <a name="service-updates"></a>サービスの更新
 
@@ -44,13 +50,13 @@ ms.locfileid: "789807"
 
 | バージョン       | 説明 |
 |---------------|-------------|
-| 8.1 以降 | 8.1 以降のすべてのユーザーは、2018 年 11 月以降アプリケーションとプラットフォーム更新が結合された毎月の更新プログラムがスケジュールされています。 3 か月以内に更新する必要があります。 |
-| 8.0           | 8.0 のユーザーは、毎月のプラットフォームおよび財務報告の更新を受け取ります。 3 か月以内に更新する必要があります。 2019 年 4 月で 8.0 ライフサイクルが終了します。 8.0 のユーザーは、2018 年 12 月 1 日までに 8.1 に更新することをお勧めします。 このプロセスは、通常のパッケージの更新に似ています。 詳細なドキュメントについては、[バージョン 8.0 から 8.1 への環境の更新](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81)トピックを参照してください。 | 
-| 7.x           | 7.x のユーザーは、毎月のプラットフォームおよび財務報告の更新を受け取ります。 3 か月以内に更新する必要があります。 2019 年 4 月より前に 8.1 にアップグレードする必要があります (拡張機能が入手可能でない限り、市場で唯一のオーバーレイ バージョンはバージョン 7.3 になります)。 2019 年 4 月から、サービスはバージョン 10.0 に更新されます。 |
+| 8.1 以降 | 8.1 以降のすべてのユーザーは、2018 年 11 月以降アプリケーションとプラットフォーム更新が結合された毎月の自動更新プログラムがスケジュールされています。 3 か月以内または 2 つのサービス更新プログラム以内に更新する必要があります。 更新を一時停止するには、[サービスの更新の一時停止](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates)を参照してください。 |
+| 8.0           | 8.0 のユーザーは、毎月の自動プラットフォームおよび財務報告の更新プログラムを受け取ります。 3 か月または 2 つのサービス更新以内に更新する必要があります。 2019 年 4 月で 8.0 アプリケーションのライフサイクルが終了します。 8.0 を使用している顧客は、サポートを維持するには 4 月 30 日までに更新する必要があります。 バージョン 8.0 のままでも、自動プラットフォーム更新プログラムを毎月受け取ります。 サポートされているアプリケーションを使用し続けるには、顧客は最新バージョンに更新するプロセスに従う必要があります。[バージョン 8.0 から 8.1 に環境を更新する方法](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81)に関するページを参照します。 | 
+| 7.x           | 7.x のユーザーは、毎月の自動プラットフォームおよび財務報告の更新プログラムを受け取ります。 3 か月以内および 2 つのサービス更新プログラム以内に更新する必要があります。 7.x を使用している顧客は、サポートを維持するには 4 月 30 日までに更新する必要があります。 2019 年 4 月 30 日を過ぎてバージョン 7.x のままでも、自動プラットフォーム更新プログラムを毎月受け取ります。 2019 年 4 月までに 8.1 にアップグレードする必要があります (拡張機能が入手可能でない限り、市場で唯一のオーバーレイ バージョンはバージョン 7.3 になります)。 
 
-### <a name="what-does-the-update-contain"></a>更新プログラムには何が含まれていますか?
+### <a name="what-does-the-service-update-contain"></a>サービス更新プログラムには何が含まれていますか?
 
-8.1 以降では、サービスの更新には、規制の更新を含むサービスの重要な改良であるアプリケーション (財務、レポート、小売を含む) とプラットフォームの変更が含められます。 新しいエクスペリエンスはオプトインになります。 サービス更新プログラムには、下位互換性があります。 この更新プログラムを代表する 1 つのバージョンがあります。
+リリース 8.1 以降では、サービスの更新には、規制の更新を含むサービスの重要な改良であるアプリケーション (財務、レポート、小売を含む) とプラットフォームの変更が含められます。 新しいエクスペリエンスは構成可能になります。 サービス更新プログラムには、下位互換性があります。 この更新プログラムを代表する 1 つのバージョンがあります。
 
 ### <a name="what-is-a-regulatory-update"></a>規制の更新とは何ですか?
 
@@ -58,7 +64,7 @@ ms.locfileid: "789807"
 
 ### <a name="whats-the-upcoming-schedule-of-updates"></a>更新の将来のスケジュールとは何ですか?
 
-サービスの更新は、2018 年 11 月から毎月提供されます。 Microsoft は、選択された保守時間帯に基づいて更新プログラムを毎月適用します。 3 か月以内に更新する必要があります。
+サービスの更新は、2018 年 11 月から提供されています。 都合の良いときに更新プログラムを適用したり、選択された保守時間帯に基づいてマイクロソフトがサービス更新を自動適用するようにしたりするオプションがあります。 3 か月以内に更新する必要があります。
 
 ### <a name="are-there-any-major-updates-post-81"></a>8.1 以降のメジャー アップデートはありますか?
 
@@ -72,9 +78,17 @@ ms.locfileid: "789807"
 
 非推奨のガイドライン、非推奨のメソッドおよびメタデータ要素の詳細については、[メソッドとメタデータの要素の非推奨](../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md) を参照してください。
 
+### <a name="can-i-apply-a-platform-service-update-to-my-existing-81-or-later-environments"></a>プラットフォーム サービスの更新を既存の 8.1 以降の環境に適用することができますか。
+
+8.1 以降の顧客は、8.1.x または v10.x のサービス更新プログラムのみ適用することができます。 プラットフォームのみのサービスの更新をバージョン 8.1 以降に適用することはできません。 プラットフォームのサービスの更新はバージョン 7.x または 8.0 にのみ適用できます。
+
+### <a name="will-platform-updates-be-able-to-be-scheduled-and-delaypause-by-customers"></a>プラットフォームの更新をユーザーがスケジュール設定して遅らせたり一時停止させることはできますか。
+
+はい、今後数か月以内に、バージョン 7.x または 8.0 を使用している顧客は、Lifecycle Services で直接プラットフォーム更新をスケジュールできるようになります。 遅延/一時停止エクスペリエンスも利用可能になります。
+
 ### <a name="do-these-updates-apply-to-on-premises"></a>これらの更新プログラムはオンプレミスで適用されますか?
 
-使用しているバージョンの具体的な有効期限については、[ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json)を参照してください。 このトピックで説明されている更新のプロセスは、クラウド サービスにのみ適用されます。
+使用しているバージョンの具体的な有効期限については、[ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json)を参照してください。 一般に 3 か月の有効期限があります。 ただし、このトピックで説明されている更新のプロセスは、クラウド サービスにのみ適用されます。
 
 ## <a name="process"></a>処理
 
@@ -84,16 +98,17 @@ ms.locfileid: "789807"
 
 ### <a name="can-i-select-the-day-and-time-to-update"></a>更新する日時は選択できますか?
 
-ユーザーは、Lifecycle Services (LCS) に日と保守の時間枠を構成できます。 更新方法に含まれる手順をが記載された LCS 通知を受信するように選択したユーザーには、メールが送信されます。 ユーザーは、更新プログラムの指定された階層 2/UAT サンドボックスを選択できるようになります。 ユーザーは、テストと検証に 5 営業日かけることができます。 ユーザーは、Lifecycle Services を通じてより早い時期に (または早期アクセス プログラムを通じてさらに早く) すべての環境に更新プログラムを適用することをオプションで選択できます。 ユーザーには、更新を追加サンドボックスまたは開発者/ビルド (階層 1) 環境に展開する責任があります。
+ユーザーは、LCS に日と保守の時間枠を構成できます。 更新方法に含まれる手順をが記載された LCS 通知を受信するように選択したユーザーには、メールが送信されます。 ユーザーは、更新プログラムの指定された階層 2/UAT サンドボックスを選択できるようになります。 ユーザーは、テストと検証に 7 カレンダー日かけることができます。 お客様は、LCS からのすべての環境に対して、以前の更新を適用することもできます。 実稼働準備ができた配置可能パッケージは、Lifecycle services のアクション センターからすべての顧客が入手できます。 ユーザーには、更新を追加サンドボックスまたは開発者/ビルド (階層 1) 環境に展開する責任があります。
+
+### <a name="a-service-update-was-applied-to-the-environment-when-looking-at-the-tile-in-lifecycle-services-for-this-environment-what-does-the-number-on-the-tile-represent"></a>サービスの更新が環境に適用されたて、この環境の Lifecycle Services のタイルを見たとき、タイルの番号に表示される数字は何を表しますか。
+
+同じサービス更新が、Microsoft によってすべての顧客に自動適用されます。 Microsoft は、引き続き最新の更新プログラムを提供します。 その環境の LCS のタイルは、環境に適用できる修正プログラム数の累計を表します。 Microsoft は、すべての顧客に同じバージョンのみ自動適用するため、必要な場合、お客様には累積的な修正プログラム パッケージを適用する責任があります。
 
 ### <a name="how-do-i-update-to-the-latest-version"></a>最新バージョンに更新する方法を教えてください。
 
 ユーザーは、LCS の環境の詳細ページでタイルを使用して最新バージョンに更新できます。 Microsoft により更新プログラムがリリースされたら、タイルに最新の更新プログラムが表示されます。 ユーザーは、サンドボックスと製造環境で更新エクスペリエンスを経由して独自に更新プログラムを適用することができます。 ドキュメントは docs.microsoft.com でも入手可能になります。
 
 ### <a name="how-do-i-update-the-production-environment-to-the-same-version-after-microsoft-updates-the-sandbox-environment"></a>Microsoft がサンドボックス環境を更新した後で、実稼働環境を同じバージョンに更新する方法を教えてください。
-
-> [!Important]
-> このセクションでは現在利用できない機能について説明します。 機能性および機能は変更されることがあります。
 
 Microsoft がサンドボックス環境を更新すると、更新に使用されるパッケージはプロジェクトの資産ライブラリに保存されます。 パッケージ名の先頭には "サービスの更新" という語が付いています。 そのパッケージはすでにサンドボックス環境に適用済みのため、このパッケージをリリース候補としてマークできます。 その後で実稼働環境に移動し、他の更新プログラムを適用するのと同様にパッケージを適用するようスケジュールすることができます。
 
@@ -110,21 +125,42 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
+コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
 ### <a name="can-i-delay-an-update"></a>更新プログラムを延期することはできますか?
 
-LCS コンフィギュレーションを介して最大 3 か月更新を延期できます。 この期間後は、更新プログラムがスケジュールされ、月単位の更新が再開されます。 遅延更新用の更新エクスペリエンスにより、さらなるダウンタイムが発生します。
+LCS コンフィギュレーションを介して最大 3 か月または連続する 2 つのサービス更新プログラムの更新を延期できます。 この期間後は、更新プログラムがスケジュールされ、Microsoft により自動適用されます。 遅延更新用の更新エクスペリエンスにより、さらなるダウンタイムが発生します。
+
+### <a name="can-i-delay-an-update-for-longer-than-2-consecutive-service-updates-due-to-seasonal-activity-or-other-business-reason"></a>季節的なアクティビティやその他のビジネス上の理由により、2 つの連続したサービス更新よりも長く更新を遅らせることはできますか。 
+
+いいえ、サービス更新はサンドボックスに自動的に適用された後、環境に適用されているサービス更新が 2 つ前より前のものの場合、7 日後に更新が実稼働環境に適用されます。 顧客は、最大 2 つの連続した更新のみ連続して一時停止できます。 たとえば、バージョン 10.0 の顧客が 10.0.1 および 10.0.2 の更新を一時停止する場合、サービスの更新プログラム 10.0.3 はサンドボックスに自動適用されます。 
 
 ### <a name="what-if-i-find-an-issue-during-the-sandbox-update"></a>サンドボックスの更新中に問題が発生した場合はどうなりますか?
 
-サンドボックス環境で検証を行うときに問題が見つかった場合は、有効なサポート チケット番号と業務の妥当性を提供することで直接 LCS を通じて更新をスキップするように要求できます。 要求は、Microsoft により校閲され、承認された場合、その月の更新から除外されます。
+サンドボックス環境で検証を行うときに問題が見つかった場合は、有効なサポート チケット番号と業務の妥当性を提供することで直接 LCS を通じて更新をスキップするように要求できます。 
+
+### <a name="what-if-i-find-a-critical-issue-during-sandbox-testing-and-i-am-not-able-to-pause-the-production-auto-update"></a>サンド ボックスのテスト中に重大な問題が見つかり、実稼働環境の自動更新プログラムを一時停止できない場合はどうなりますか。
+
+識別されたらすぐに、重要な問題は常に Lifecycle Services 経由でサポート チームに送信される必要があります。 サポート スタッフは、重要な問題に対する解決策を扱います。
 
 ### <a name="how-much-time-do-i-get-for-validation"></a>検証にかけることができる時間はどのぐらいですか?
 
-更新がサンドボックス環境に適用されてから、5 日間検証できます。 より多くの時間を必要とする場合は、いずれかのサンドボックス環境に早期アクセス自動更新を登録することができます。 これで、生産ロールアウトよりも前に更新をテストする追加の時間が提供されます。このプログラムの詳細については、まもなく公開されます。
+更新がサンドボックス環境に適用されてから、7 暦日間検証できます。 もっと多くの時間が必要な場合、Lifecycle Service のアクション センターを使用して配置可能なパッケージにアクセスし、環境に適用できます。 これで、生産ロールアウトよりも前に更新をテストする追加の時間が得られます。
 
-### <a name="will-rollback-be-supported-after-an-update-is-applied"></a>更新プログラムが適用された後、ロールバックはサポートされますか?
+### <a name="what-happens-when-the-service-update-is-complete"></a>サービスの更新が完了するとどうなりますか。
 
-数か月後にロールバックがサポートされます。
+サービス更新が Microsoft によって適用されると、更新が成功したか、適用できなかった場合に通知を受け取ります。  更新プログラムを適用できないいくつかの理由があります。
+
+- 保留中のパッケージ サインオフ - パッケージがサインオフで保留中の場合、Microsoft はサービスの更新を実稼働環境に適用しません。  
+- 配置エラー - 配置エラーが発生した場合、環境は元の状態にロールバックされます。
+ 
+### <a name="if-there-is-a-failure-can-i-reschedule-the-update-to-be-auto-applied"></a>失敗した場合、更新プログラムが自動的に適用されるようにスケジュールを再設定できますか。
+
+更新プログラムを再スケジュールすることはできませんが、他の更新プログラムの適用をスケジュールするのと同じように、都合の良いときにパッケージを適用することができます。
+
+### <a name="will-critical-hotfixes-be-automatically-applied-to-my-sandbox-production-environment-during-auto-update"></a>重要なホットフィックスは、自動更新中にサンドボックス環境や実稼働環境に自動的に適用されますか。
+
+一般提供されてすべての顧客に自動適用されるサービスの更新には、修正プログラムや潜在的な新しい機能が含まれます。  サービスの更新が適用された後に重要な問題点が報告されると、顧客は Lifecycle Services のタイルから累積的な修正プログラムを取り込むことができます。  
 
 ### <a name="how-will-my-isvs-stay-current"></a>私の ISV は常に最新ですか?
 
@@ -142,7 +178,12 @@ LCS コンフィギュレーションを介して最大 3 か月更新を延期�
 
 ### <a name="how-can-i-get-early-access-to-non-released-platform-updates"></a>非リリースのプラットフォーム更新プログラムへの早期アクセスをどのように取得できますか。
 
-[初回リリース プログラム](https://experience.dynamics.com/insider/)に参加できます。Microsoft は、常に最新の更新プログラムによってシステムを最新の状態に保ちます。
+[初回リリース プログラム](https://experience.dynamics.com/insider/)に参加できます。Microsoft は、常に最新の更新プログラムによってシステムを最新の状態に保ちます。 まだ Dynamics 365 Insider プログラムのメンバーとなっていない場合、次の作業が必要です。
+
+1. この URL を使用して Insider プログラムに登録する: https//experience.dynamics.com
+2. Dynamics 365 Insider になるための条件に同意します。
+3. 申請が承認された後 (約 24 時間)、Insider Portal にサインインして、参加できるさまざまなプレビュー プログラムを検索することができます。 
+4. プレビュー アーリー アクセス プログラム (PEAP) と初回リリース: Finance and Operations プログラムに参加するには追加の条項に同意する必要があります。 ノミネートが受け入られた後、Dynamics 365 Insider プログラム内でこれらのプログラムを参照してください。
 
 ### <a name="is-there-tooling-available-to-support-testing-the-latest-release"></a>最新のリリースのテストをサポートするために使用可能なツールはありますか?
 
@@ -154,7 +195,11 @@ Finance and Operations 用の「[Regression Suite Automation Tool](https://docs.
 
 ### <a name="how-can-i-determine-whats-changed-in-a-service-update"></a>サービス更新プログラムの変更内容はどのようにわかりますか?
 
-[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/)は、リリースのすべての新機能と変更の情報の主要ソースです。 必要に応じて、機能には docs.microsoft.com のヘルプ トピックも含められます。 影響分析ツールは、使用する機能への影響を理解するために LCS で利用可能になります。
+「新機能および変更された機能」ドキュメントは、各サービス更新に含まれている詳細の主要ソースです。 [リリース ノート](https://docs.microsoft.com/business-applications-release-notes/)は、今後のリリースのすべての新機能と変更の情報の主要ソースです。 必要に応じて、機能には docs.microsoft.com のヘルプ トピックも含められます。 影響分析ツールは、使用する機能への影響を理解するために LCS で利用可能になります。
+
+### <a name="how-will-i-know-if-there-is-a-deprecated-feature-that-will-impact-me-if-im-not-doing-active-development-recompile-my-code"></a>現在開発中でない、またはコードを再コンパイルしない場合、推奨されない機能があるかどうかはどうすればわかりますか。 
+
+非推奨の機能については、リリースのたびに記載されます。  詳細については、[削除済みまたは非推奨の機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/fin-and-ops/toc.json) を参照してください。  
 
 ## <a name="preparing-for-one-version"></a>1 つのバージョンの準備
 
@@ -169,7 +214,7 @@ Finance and Operations 用の「[Regression Suite Automation Tool](https://docs.
 
 ### <a name="what-does-end-of-service-mean"></a>サービスの終了にはどのような意味がありますか?
 
-Microsoft は、サービスの終了に達しているバージョンの問題を修正しません。 Microsoft は、以前のバージョンで発生した問題の調査とトラブルシューティングも行いません。 サービスの終了に達したバージョンで問題が発生した場合は、最新の更新プログラムに更新し、それでも問題が解決されない場合は、その問題を報告する必要があります。
+Microsoft は、サービスの終了に達しているバージョンの問題を修正しません。 Microsoft は、3 か月以上前のバージョンで発生した問題の調査とトラブルシューティングも行いません。 サービスの終了に達したバージョンで問題が発生した場合は、最新の更新プログラムに更新し、それでも問題が解決されない場合は、その問題を報告する必要があります。
 
 すべての環境は、引き続き Microsoft によって運用されます。 環境に関するすべての自動プロセス (監視や自動修復など) も、引き続きそのままです。
 
@@ -177,15 +222,15 @@ Microsoft は、サービスの終了に達しているバージョンの問題�
 
 8.1 以降、個別の修正プログラムはサポートされません。 ユーザーは、最新の累積的な更新プログラムに更新して修正プログラム (8.1.1 など) を適用する必要があります。 さらに、重要な修正プログラムは累積的であり、LCS サービス エクスペリエンスを通じて使用可能になります。
 
+### <a name="will-you-notify-me-about-critical-hotfixes-released-for-the-monthly-update-that-im-on"></a>利用している毎月の更新プログラムに関してリリースされる重要は修正プログラムに関する通知は送信されますか。 
+
+顧客が報告した問題は、Lifecycle Services 問題検索で検索できます。  未解決の問題が解決されたときに通知を受けるようにサインアップすることができます。  
+
 ### <a name="how-can-i-upgrade-to-8x"></a>8.x にアップグレードする方法を教えてください。
 
 最新のアプリケーションにアップグレードする方法については、[Finance and Operations の最新の更新プログラムに移行するためのプロセス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1)を参照してください。 [8.0 から 8.1 への](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81)更新では、データのアップグレードは不要です。ダウンタイムが大幅に削減されるセルフ サービスの更新になります。
 
 ## <a name="retail-service-updates"></a>小売サービスの更新プログラム
-
-### <a name="what-components-of-my-solution-will-be-impacted-by-one-version-service-updates"></a>1 つのバージョンのサービス更新プログラムの影響を受けるソリューションのコンポーネントはどれですか?
-
-Retail サーバーおよびクラウド POS などのすべてのクラウド コンポーネントは、Dynamics 365 バックオフィスと同じ進捗で更新されます。
 
 ### <a name="what-options-are-available-to-minimize-impact-to-my-retail-cloud-components"></a>Retail クラウド コンポーネントへの影響を最小限に抑えるためにどのオプションを使用できますか?
 

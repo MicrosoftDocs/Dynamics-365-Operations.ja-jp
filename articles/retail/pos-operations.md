@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353819"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842725"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 
@@ -93,7 +93,7 @@ ms.locfileid: "353819"
 | 614 | 顧客注文の編集 | 選択した注文を取り消してから、POS で変更できるようにします。 | 無 | 無 | 無 | 無 | 無 |
 | 615 | 見積書の編集 | 選択した見積書を取り消してから、POS で変更できるようにします。 | 無 | 無 | 無 | 無 | 無 |
 | 518 | 経費勘定 | 臨時の経費のためにキャッシュ ドロワーから取り出された金額を記録します。 | 有 | 有 | 有 | 有 | 無 |
-| 919 | 拡張ログオン | バーコードをスキャンするか、カードを機械に通すことで、サイン インするアクセス許可を割り当てるか、削除します。 | 有 | 有 | 有 | 無 | 無 |
+| 919 | 拡張ログオン | バーコードをスキャンするか、カードを機械に通すことで、サイン インするアクセス許可を割り当てるか、削除します。 | はい | はい | はい | はい | いいえ |
 | 1201 | 釣銭入力 | この操作により、ユーザーは現在のドロワーまたはシフトに追加の金額を追加することができます。 | 有 | 有 | 有 | 有 | 無 |
 | 1218 | 周辺機器を強制的にロック解除 | システムはこの操作を内部的に使用して POS 周辺機器のロックを解除します。 | 適用できません | 適用できません | 適用できません | 適用できません | 無 |
 | 520 | ギフト カード残高 | ギフト カードの残高を表示します。 | 有 | 有 | 無 | 無 | 無 |

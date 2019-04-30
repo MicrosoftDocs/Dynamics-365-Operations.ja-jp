@@ -3,7 +3,7 @@ title: Retail のコンポーネント
 description: このトピックは、Microsoft Dynamics 365 for Retail を構成するさまざまなコンポーネントについて説明します。
 author: sericks007
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d113d83cce7145f1f42747832187d87adf291c19
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2261f17ad380c71ed0e1ce43ddbc8db9d5f3b793
+ms.sourcegitcommit: 975d87af5490c93db1c7a6b499880d89a933fb48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370009"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "899223"
 ---
 # <a name="retail-components"></a>Retail のコンポーネント
 
@@ -69,6 +69,9 @@ Dynamics 365 for Retail は、中規模市場および大規模小売業者に�
 <td>Retail Store Scale Unit</td>
 <td>Retail Store Scale Unit は、バック オフィスまたは本社 (HQ) への常時インターネット接続がない店舗で製品の販売をサポートする一連の機能です。 Store スケール ユニットは、店舗内の工程専用に設計されており、バック オフィスに接続していない場合でもターミナル間トランザクションおよびシフト操作が可能になります。</td>
 </tr>
+<tr>
+<td>Retail Cloud Scale Unit</td>
+<td>Retail Cloud Scale Unit は、店頭または電子商取引において小売チャンネルの操作 (販売時点情報管理など) を可能にする一連のコンポーネントです。 Retail Cloud Scale Unit には小売サーバー、小売チャンネル データベース、およびクラウドPOSが含まれます。 Retail Cloud Scale Unit はMicrosoftによって提供、管理されています。 Retail Cloud Scale Unit はクラウド ホスト型小売サーバー、小売チャンネルのデータベース、およびクラウドPOSなどの旧製品の改良版です。</td>
 <tr>
 <td>Commerce Runtime</td>
 <td>Commerce Runtime (CRT) は、さまざまなチャネル全体にビジネス ロジックをサポートするコア エンジンとして使用されます。 Commerce Runtime には、データ アクセス レイヤー、サービス レイヤー、ワークフロー レイヤーおよびアプリケーション プログラミング インターフェイス (API) レイヤーが含まれています。</td>

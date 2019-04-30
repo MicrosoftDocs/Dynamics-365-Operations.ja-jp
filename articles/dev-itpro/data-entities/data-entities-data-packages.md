@@ -3,7 +3,7 @@ title: データ管理
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0706abee25fc9f31766419b6ed471c3354ae8ac
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: 5dab078594a00be41a5846c5faa842864169bfaa
+ms.sourcegitcommit: 3d15c9a8f7e69b934b79ac7881eaef9ae1d4c445
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403344"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "890924"
 ---
 # <a name="data-management"></a>データ管理
 
@@ -156,7 +156,7 @@ ms.locfileid: "403344"
 
 マッピング視覚化ビュー (既定値) とマッピング詳細ビューを提供します。 赤いアスタリスク (\*) によりエンティティの必須フィールドを識別します。 エンティティを使用して作業するために、これらのフィールドをマップする必要があります。 エンティティを使用して作業する際、必要に応じて他のフィールドのマップ解除をすることができます。
 
-- フィールドのマップ解除をするには、いずれかの列 (**エンティティ**または**ソース**) でフィールドを強調表示し、**選択項目を削除** をクリックしてから **Save** をクリックします。 保存したら、フォームを閉じてプロジェクトに戻ります。
+- フィールドのマップ解除をするには、いずれかの列 (**エンティティ**または**ソース**) でフィールドを強調表示し、**選択項目を削除** をクリックしてから **保存** をクリックします。 保存したら、フォームを閉じてプロジェクトに戻ります。
 
 ソースからステージングへのフィールド マッピングも、同じプロセスを使用してインポートした後で編集できます。
 
@@ -228,7 +228,7 @@ ms.locfileid: "403344"
 - 各パッケージの新しいジョブを作成し、上記の手順 4(a) から 4(d) をパッケージごとに繰り返します。 
 - 1 つのジョブを作成して、複数のパッケージをシーケンス内にインポートします。 インポートする必要があるすべてのパッケージで上記の手順 4(a) ～ 4(c) を繰り返します。 パッケージを選択した後に、ステップ 4 (d) を実行し選択したデータ パッケージから単一のジョブでデータをインポートします。
 
-    [![Multiple data packages](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
+    [![複数のデータ パッケージ](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
 
 **インポート**をクリックした後、ステージング テーブルを使用してデータがインポートされます。 インポートの進行状況は、画面の右上にある **更新** ボタンを使用して追跡できます。
 
@@ -264,7 +264,7 @@ ms.locfileid: "403344"
 
 | フライト名                           | 説明 |
 |---------------------------------------|---------------|
-| DMFEnableAllCompanyExport             | 同じエクスポート ジョブ内のすべての会社から BYOD エクスポートを使用できます。 この既定値はオフです。 |
+| DMFEnableAllCompanyExport             | 同一のエクスポート ジョブ内のすべての会社からのBYODエクスポートを有効にします。(BYODファイルのみが対象となります) この既定値はオフです。 |
 | DMFExportToPackageForceSync           | データ パッケージ API エクスポートの同期実行を実行できます。 既定では、非同期式です。 |
 | EntityNamesInPascalCaseInXMLFiles     | エンティティの XML ファイルでエンティティの名前が Pascal Case である場合の動作が有効になります。 既定では、名前は大文字です。 |
 | DMFByodMissingDelete                  | 特定の条件下で、変更の追跡を使用して特定の削除操作が BYOD に同期されなかった場合の以前の動作が有効になります。 |

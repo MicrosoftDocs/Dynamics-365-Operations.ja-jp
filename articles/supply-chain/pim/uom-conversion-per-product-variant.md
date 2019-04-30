@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 9d5d6fd65717cd886f1c6576aabf2bc59ca4fcaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: a47f705976b7a5b34492294e28aa8cd47ea38825
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
+ms.lasthandoff: 03/22/2019
 ms.locfileid: "345930"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>製品バリアントごとの測定単位の変換
@@ -92,4 +92,4 @@ ms.locfileid: "345930"
 
 製品に異なる単位変換を持つ製品バリアントが多くある場合、**単位変換**ページから Excel スプレッドシートに単位変換をエクスポートして変換を更新し、Finance and Operations に再度発行することをお勧めします。
 
-Excel にエクスポートし、編集を再度 Finance and Operations に発行するオプションは、**単位変換**ページのアクション ペインの **Microsoft Office で開く**メニューから有効にすることができます。
+Excel にエクスポートし、編集を再度 Finance and Operations に発行するオプションは、**単位変換**ページのアクション ペインの **Microsoft office で開く**メニューから有効にすることができます。

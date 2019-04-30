@@ -1,9 +1,9 @@
 ---
-title: モデルの拡張機能の名前付けガイドライン
-description: このトピックでは、モデル拡張機能の名前付けガイドラインについて説明します。 モデル内の要素は、インストール時にすべてのモデルで一意の名前が必要です。
+title: 拡張機能の名前付けのガイドライン
+description: このトピックでは、拡張機能の名前付けガイドラインについて説明します。 拡張によって追加されるアーティファクトは、インストール時にすべてのモデルで一意の名前が必要です。
 author: LarsBlaaberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: adaa578bea6f7c12c8b6446c9e4b83e12944e2c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c50e4b372d6b683d63120b7cf45f6613702d48ae
+ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369691"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "878323"
 ---
-# <a name="naming-guidelines-for-model-extensions"></a>モデルの拡張機能の名前付けガイドライン
+# <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 
 [!include [banner](../includes/banner.md)]
+
+**高レベルのガイダンス: 接頭語を使用して競合数を削減し、識別を向上させる**
 
 ## <a name="naming-model-elements"></a>モデル要素に名前を付ける
 モデル内のすべての要素は、インストール時にすべてのモデルで一意の名前が必要です。 ただし、インストール時に、すべてのモデルの名前がわからず、モデルが一緒にインストールされる場合があります。 この状況に対応するには、すべての要素名に、ソリューション固有の接頭辞を含める必要があります。 モデルの要素に名前を付ける場合にこの接頭語を含めることで、名前の競合のリスクを大幅に軽減します。
@@ -53,13 +55,13 @@ ms.locfileid: "369691"
 + 拡張子要素があるモデルの名前、または拡張子が関連付けられている接頭語のいずれかを含めます。 たとえば、ウェアハウジング モジュールは ContactPerson テーブルを拡張する拡張クラスを使用し、他のすべての要素の名前で **WHS** 接頭語を使用します。 この場合、拡張クラスに **ContactPersonWHS\_Extension** という名前が付けられます。 モジュール内の他の要素に名前を付けるために使用される接頭語が、接中辞として挿入されることを確認します。 別の例として、拡張クラスがアプリケーション スイート モデルの ContactPerson テーブルのすべての拡張機能を含むことを意図している場合、アプリケーション スイート モデルの ContactPerson テーブル を増補する拡張クラスは、**ContactPersonApplicationSuite\_拡張子**という名前が付けられます。
 + 拡張子名を **&lt;Element that is being extended&gt;\_Extension** としないでください。 たとえば、競合のリスクが大きすぎるため、InventLocation テーブルを補強する拡張クラスには、**InventLocation\_拡張子**という名前を付ける必要はありません。
 
-## <a name="naming-fields-field-groups-indexes-relations-and-other-metadata-nodes-in-extension-elements"></a>拡張要素のフィールド、フィールド グループ、インデックス、関係およびその他のメタデータ ノードに名前を付ける
+## <a name="naming-fields-field-groups-indexes-relations-and-metadata-elements-added-in-extensions"></a>拡張で追加されるフィールド、フィールド グループ、インデックス、関係、およびメタデータ要素に名前を付ける
 
-拡張要素のフィールド、インデックス、関係、およびその他のメタデータ要素は、拡張されておりその他の拡張要素両方の要素間で一意である名前を持っている必要があります。 したがって、これらのメタデータ ノードには、モデル間の競合のリスクを最小限にする用語、省略形、接頭辞のいずれかが含まれている必要があります。
+拡張で追加されるフィールド、フィールド グループ、インデックス、関係、およびメタデータ要素は、拡張される要素およびその他の拡張要素の両方で一意である名前を持っている必要があります。 したがって、モデル間での競合のリスクを最小化する**接頭辞をこれらのアーティファクトに含める必要があります**。 また、これらのアーティファクトは、容易に理解できるように、わかりやすい用語と省略形にすることが必要です。 
 
 + メタデータ ノードの名前の先頭に接頭語、用語、または省略形を含めます。 たとえば、承認する作業者の外部キー フィールドはテーブルの拡張機能の一部として追加され、**WHS** はホスト モデル内の他の要素に専用である接頭語の 1 つです。 この場合、フィールドに **WHSApprovingWorker** という名前が付けられます。
 
-## <a name="naming-members-in-extension-classes"></a>拡張クラス内のメンバーの名前を付ける
-クラス レベルの変数および拡張クラスのメソッドは、拡張される型、および同じ型を拡張するその他の拡張クラスの両方で一意の名前を持つ必要があります。
+## <a name="naming-variables-and-methods-added-in-extension-classes"></a>拡張クラスに追加される変数およびメソッドの名前を付ける
+拡張クラスに追加される変数およびメソッドは、拡張される型、および同じ型を拡張するその他の拡張クラスの両方で一意の名前を持つ必要があります。 したがって、モデル間での競合のリスクを最小化する**接頭辞をこれらの変数とメソッドに含める必要があります**。 
 
 + メンバー名の先頭に接頭語、用語、または省略形を含めます。 たとえば、**WHS** がモデル内の他の要素で使用される接頭語の 1 つである場合、承認する作業者のクラス レベルの変数には、**WHSApprovingWorker** という名前が付けられます。 **approveWork** メソッドの名前を **WHSApproveWork** とつける場合 **WHS** はホスティング モデルでその他の要素によって使用される接頭語の 1 つです。

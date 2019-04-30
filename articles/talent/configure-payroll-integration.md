@@ -1,26 +1,26 @@
 ---
 title: Talent と Dayforce 間での給与統合のコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 for Talent と Ceridian Dayforce 間での統合をコンフィギュレーションして、支払実行を処理する方法について説明します。
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
+ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "305131"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898447"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Talent と Dayforce 間の給与統合のコンフィギュレーション
 
@@ -358,7 +358,10 @@ Dayforce は、報酬情報を使用して、従業員の時間または年間�
 - 職位に部門が必要です。
 - 原価部門を財務分析コードとして設定し、既定の財務分析コード文字列の最初の要素とする必要があります。
 
-### <a name="job-types"></a>ジョブ タイプ
+> [!NOTE] 
+> 職位が部門を指定するように人材を設定することができます。 この作業を実行するには、**人事管理共有職位 > 職位 > 職位の部門を要求**に移動します。 この設定は、システムの統合に適用することをお勧めします。
+
+### <a name="job-types"></a>職務タイプ
 
 職務タイプは、類似した職務をカテゴリにグループ化するために使用されます。 職務タイプは、米国およびカナダでの給与を処理するために必要です。 職務タイプの例には、フルタイムおよびパートタイム、または給与払いおよび時給払いが含まれます。 職務タイプは、従業員が時給払いかあるいは給与払いなのかを示す支払タイプとして Dayforce にマップされます。
 

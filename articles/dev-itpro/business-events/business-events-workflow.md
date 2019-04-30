@@ -3,7 +3,7 @@ title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,15 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 190bcf9aca5ad140a0df9ecbb640139cb2481a47
-ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
+ms.openlocfilehash: 620620fbe426d5823836942488ee4458b2aeb759
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "768846"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975740"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。   
 
@@ -71,3 +70,15 @@ ms.locfileid: "768846"
      - これらのイベントはユーザーに対してワークフロー作業項目が作成されるときに発生します。 ワークフロー インスタンス内のすべての有効なワークフロータスクおよびワークフロー承認はこのカテゴリに相当します。 
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID + "_" + ワークフロー要素名 + "_WorkItem"、たとえば、"Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
      - **名前の形式** - ワークフロー ラベル + " (" + ワークフロー インスタンス ID ") - " + ワークフロー要素ラベル、たとえば、"Prepare department budget (000002) - Activate associated budget plan"
+
+## <a name="completion-of-a-work-item-in-flow"></a>フローでの作業項目の完了
+ワークフロー ビジネス イベント は承認フローのトリガーに優れたターゲットです。 **ワークフロー作業項目** イベントは、フローの作業項目の完了を容易にするために、validate および OData 完了アクションと組み合わせて使用できます。
+
+承認やタスク作業項目は、次の手順を使用してフローで完了できます:
+- 適切な **ワークフロー作業項目** イベントをターゲットにした **ビジネス イベントが発生した場合** トリガーを使用して、フローをトリガーします。
+- **WorkflowWorkItems** エンティティで **検証** メソッドを呼び出すことで、**ワークフロー作業項目** に有効な一連の情報が含まれ、完了の準備が出来ていることを検証します。 
+- 作業項目に完了する準備ができていない場合は、割り当てられたユーザーに通知を送信して、注意が必要な作業項目があることを知らせます。
+- 作業項目に完了す準備ができている場合は、使用可能な回答オプションをユーザーに送信して、割り当てられたユーザーに回答を要求します。
+- 回答が提供された後で **WorkflowWorkItems** エンティティの **完了** メソッドを呼び出して、その回答で作業項目を完了します。 
+
+これらのシナリオのテンプレートの例は間もなく利用可能になる予定で、リンクがここで簡単に参照できるように提供されます。
