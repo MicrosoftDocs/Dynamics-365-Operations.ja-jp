@@ -1,26 +1,30 @@
 ---
-# required metadata
 title: サプライ チェーン マネジメントのホーム ページ
 description: このページでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: 'Core, Operations'
-ms.custom: null
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
-ms.search.industry: null
+ms.search.industry: ''
 ms.author: shylaw
-ms.search.validFrom: '2016-11-30'
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: b46b95a10d257c56fdf20b016fbb598225d1f930
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517106"
 ---
-
 # <a name="supply-chain-management-home-page"></a>サプライ チェーン マネジメントのホーム ページ
 
 [!include [banner](includes/banner.md)]
