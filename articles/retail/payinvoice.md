@@ -18,31 +18,31 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 158d8ca8a97c473e940f76dd3f35cecc4e9dd7f4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302535"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517107"
 ---
-# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="151ef-103">請求書の支払シナリオを設定する</span><span class="sxs-lookup"><span data-stu-id="151ef-103">Set up pay invoice scenarios</span></span>
+# <a name="set-up-pay-invoice-scenarios"></a><span data-ttu-id="a2db6-103">請求書の支払シナリオを設定する</span><span class="sxs-lookup"><span data-stu-id="a2db6-103">Set up pay invoice scenarios</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="151ef-104">Dynamics 365 for Retail の請求書の支払機能は拡張され、以下の機能がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="151ef-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
+<span data-ttu-id="a2db6-104">Dynamics 365 for Retail の請求書の支払機能は拡張され、以下の機能がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="a2db6-104">The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:</span></span>
 
-- <span data-ttu-id="151ef-105">1 回の POS トランザクションでの複数の販売注文の請求書の支払。</span><span class="sxs-lookup"><span data-stu-id="151ef-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
-- <span data-ttu-id="151ef-106">自由書式の請求書、プロジェクト ベースの請求書、訂正表を含む、さまざまな種類の顧客請求書の支払。</span><span class="sxs-lookup"><span data-stu-id="151ef-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
+- <span data-ttu-id="a2db6-105">1 回の POS トランザクションでの複数の販売注文の請求書の支払。</span><span class="sxs-lookup"><span data-stu-id="a2db6-105">Payoff of multiple sales order invoices in a single POS transaction.</span></span>
+- <span data-ttu-id="a2db6-106">自由書式の請求書、プロジェクト ベースの請求書、訂正表を含む、さまざまな種類の顧客請求書の支払。</span><span class="sxs-lookup"><span data-stu-id="a2db6-106">Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.</span></span>
 
-<span data-ttu-id="151ef-107">これらのシナリオに対応するには、以下に説明するように、店舗用の機能プロファイルを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="151ef-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
+<span data-ttu-id="a2db6-107">これらのシナリオに対応するには、以下に説明するように、店舗用の機能プロファイルを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a2db6-107">To enable these scenarios, the functionality profile for stores must be configured as outlined in below.</span></span>
 
-1. <span data-ttu-id="151ef-108">**小売 \> チャネル設定 \> POS の設定 \> POS プロファイル \> 機能プロファイル** の順にクリックし、変更する店舗にリンクされているプロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="151ef-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
-2. <span data-ttu-id="151ef-109">**機能** タブで、必要に応じて、以下のパラメーターを構成します。</span><span class="sxs-lookup"><span data-stu-id="151ef-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
+1. <span data-ttu-id="a2db6-108">**小売 \> チャネル設定 \> POS の設定 \> POS プロファイル \> 機能プロファイル** の順にクリックし、変更する店舗にリンクされているプロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="a2db6-108">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.</span></span>
+2. <span data-ttu-id="a2db6-109">**機能** タブで、必要に応じて、以下のパラメーターを構成します。</span><span class="sxs-lookup"><span data-stu-id="a2db6-109">On the **Functions** tab, configure the following parameters as needed.</span></span>
 
-    - <span data-ttu-id="151ef-110">**販売注文請求書** – 単一の POS トランザクションで 1 つ以上の販売注文に基づく請求書の支払をユーザーが行えるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="151ef-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="151ef-111">**自由書式の請求書** – 単一の POS トランザクションで 1 つ以上の自由書式の請求書の支払をユーザーが行えるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="151ef-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="151ef-112">**プロジェクト請求書** – 単一の POS トランザクションで 1 つ以上のプロジェクト ベースの請求書の支払をユーザーが行えるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="151ef-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
-    - <span data-ttu-id="151ef-113">**販売注文 - 訂正票** – 未処理の請求書に対する複数の販売注文ベースの訂正表の決済をユーザーができるようにする、または未処理の訂正表について顧客への払戻を処理できるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="151ef-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
+    - <span data-ttu-id="a2db6-110">**販売注文請求書** – 単一の POS トランザクションで 1 つ以上の販売注文に基づく請求書の支払をユーザーが行えるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a2db6-110">**Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="a2db6-111">**自由書式の請求書** – 単一の POS トランザクションで 1 つ以上の自由書式の請求書の支払をユーザーが行えるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a2db6-111">**Free text invoice** – Select **Yes** to allow users to pay one or more free text-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="a2db6-112">**プロジェクト請求書** – 単一の POS トランザクションで 1 つ以上のプロジェクト ベースの請求書の支払をユーザーが行えるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a2db6-112">**Project invoice** – Select **Yes** to allow users to pay one or more project-based invoices in a single POS transaction.</span></span>
+    - <span data-ttu-id="a2db6-113">**販売注文 - 訂正票** – 未処理の請求書に対する複数の販売注文ベースの訂正表の決済をユーザーができるようにする、または未処理の訂正表について顧客への払戻を処理できるようにするには、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a2db6-113">**Sales order credit note** – Select **Yes** to allow users to settle multiple sales order-based credit notes against open invoices or process a refund to the customer for an open credit note.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="151ef-114">金額の部分的な支払や決済は、まだサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="151ef-114">Payment or settlement of partial amounts is not yet supported.</span></span>
+> <span data-ttu-id="a2db6-114">金額の部分的な支払や決済は、まだサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a2db6-114">Payment or settlement of partial amounts is not yet supported.</span></span>
