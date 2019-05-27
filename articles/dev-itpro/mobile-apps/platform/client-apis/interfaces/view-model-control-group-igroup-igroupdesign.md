@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f3fbb9bcc711ddd45403ef0cbf85bab7ebaccf1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e842c2e948743f45d390e7d316260e3b61ab0d40
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537173"
 ---
 # <a name="groupdesign-type"></a>GroupDesign タイプ
 

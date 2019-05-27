@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 849c108929f143926c8b45e3dbc7bb18eb4fc734
-ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.openlocfilehash: ee87d68b1e975a0d639584c026ae560efa0ff901
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "369093"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537152"
 ---
 # <a name="hyperlink-type"></a>HyperLink タイプ
 

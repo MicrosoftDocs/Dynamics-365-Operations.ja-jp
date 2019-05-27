@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 1e1b5dbdb6cf09dcb7e9e03a4bc23398678ac5b9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3fa8d7151cc65a55593851ae36551b1a541b0fa3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537092"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 

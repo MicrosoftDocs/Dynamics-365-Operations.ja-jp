@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: eea801a8ff3b750b87316abf165c9ed8eb7f44e5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4d484aa6a75f8c0db238949eb161f67708ca8166
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369761"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537379"
 ---
 # <a name="deploy-retail-essentials-devtest-environments-on-azure"></a>Azure での Retail Essentials 開発/テスト環境の配置
 

@@ -3,7 +3,7 @@ title: 管理者アクセスを許可しない開発用 VM および ビルド�
 description: このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。
 author: yukonpeegs
 manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: f58d29a67607f529469c0259acfa7eb7cbb7741a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e04b10465b4fbcf60a93133e6d1b5c4370341f10
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368876"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537131"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -67,7 +67,7 @@ IIS Express および Unified Operations Visual Studio プロジェクトでデ�
 いいえ、管理者として Windows PowerShell コマンドおよびコマンド プロンプトのコマンドを実行できません。
 
 ## <a name="is-the-trace-parser-supported"></a>Trace Parser はサポートされていますか。
-現在 Trace Parser を使用するには、ユーザーが管理者であることが必要です。
+現在 Trace Parser を使用するには、ユーザーが管理者であることが必要です。 Microsoft によって管理され、管理者アクセスを許可しない開発 / テスト環境ではサポートされていません。
 
 ## <a name="is-the-admin-user-provisioning-tool-supported"></a>管理者ユーザー プロビジョニング ツールはサポートされますか?
 **管理者ユーザー プロビジョニング** ツールを使用するには現在、ユーザーが管理者である必要があります。 **管理者ユーザー プロビジョニング** ツールは通常、環境のテナントを変更するために使用され、必要ありません。 管理者ユーザーまたは他のユーザーのデータベースで情報を更新またはサインインすることができます。 この環境または同じテナントの別の環境にアクセスできるユーザーからの SID およびネットワーク エイリアス (電子メール アドレスなど) のみ必要です。 多くの場合、SID とネットワーク エイリアスは当初の環境に付属していたデータベースにあります。 次のコマンドを実行してソース環境から適切な SID とネットワーク エイリアスを取得し、それぞれ対象の環境で更新します。

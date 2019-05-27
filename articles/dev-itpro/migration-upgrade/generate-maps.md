@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 56095b255c114d7862f0627282ef3a8fe82d70fe
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d3ee558e14c3ec8a7672b833a691185d4f546929
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368975"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537190"
 ---
 # <a name="ax-2009-migration--generate-maps"></a>AX 2009 の移行 － マップの生成
 

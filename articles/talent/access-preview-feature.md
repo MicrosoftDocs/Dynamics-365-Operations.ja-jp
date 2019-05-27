@@ -1,12 +1,12 @@
 ---
 title: Talent のプレビュー機能の利用
 description: このトピックでは、管理者がプレビュー機能を有効にできる方法について説明し、プレビューで現在有効な機能を一覧表示します。
-author: andreabichsel
+author: tracykeya
 manager: AnnBe
-ms.date: 04/17/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,15 +15,15 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: trkeya
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 060a36185641d5bb7912631b7c857c5c4331c8b7
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
+ms.openlocfilehash: 72e2a3c62c7aab0f5cf8900c540a22d91be00609
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856327"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518500"
 ---
 # <a name="access-preview-features-in-talent"></a>Talent のプレビュー機能の利用
 
@@ -72,6 +72,7 @@ Microsoft Dynamics 365 for Talent 管理者センターでプレビュー機能�
 
 - **候補者の適用**– 内部および外部の候補者が、キャリア サイトのジョブ ページから直接適用できるようになりました。
 - **オファー管理**– ユーザーはプレースホルダーを含むテンプレートからオファー レターを作成できるようになります。 オファー ステージに進む候補者として、採用担当者および雇用マネージャーは、テンプレートを通して候補者の正式なオファーを準備するオファー ツールを使用でき、内部認証のオファーを送信し、さらに最終的に署名のために候補者にオファーを送信できます。 時間の経過と共に多くの新しい機能がオファー ツールに追加され、プレビューにリリースする準備が整っているため、プレビュー機能がこれらの機能により更新されます。
+- **[分析レポート](analytic-reports.md)** – 採用チームは、職務分析を使用して単一ジョブの主要メトリックスを表示したり、分析ハブ内のすべてのジョブにわたる集計されたメトリックスを表示することができます。
 
 ### <a name="core-hr"></a>Core HR
 

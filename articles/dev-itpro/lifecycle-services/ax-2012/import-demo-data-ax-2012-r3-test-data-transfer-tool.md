@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2383184dffd2b04c9770fba94db9d08170f361e1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: eade4169a22d588fd89999e3109cf3c3357f84dc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368471"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537242"
 ---
 # <a name="import-demo-data-for-ax-2012-r3-by-using-the-test-data-transfer-tool"></a>テスト データ転送ツールを使用した AX 2012 R3 のデモ データのインポート
 

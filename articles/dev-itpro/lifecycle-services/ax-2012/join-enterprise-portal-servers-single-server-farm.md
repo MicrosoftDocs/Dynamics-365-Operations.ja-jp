@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 488afaea08cf10ead1768ec888e0bd8219073a1b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 31fd1f1ff148b956a7330f29da2e4f82e4a633ca
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368932"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537338"
 ---
 # <a name="join-enterprise-portal-servers-into-a-single-server-farm"></a>エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: c69143953d77d25de7eda971875b4ff9a81addb0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f3d5184b037f8ae11337578c614a8eff2a5c372f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537220"
 ---
 # <a name="ax-2009-upgrade---use-the-data-migration-tool-to-migrate-from-dynamics-ax-2009-to-dynamics-365-for-finance-and-operations"></a>AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009から Dynamics 365 for Finance and Operations へ移行します。 
 
 [!include [banner](../includes/banner.md)]
 
-AX 2009 から Microsoft Dynamics 365 for Finance and Operations へデータを移行するため Microsoft Dynamics AX 2009 データ移行ツール (DMT) を使用することができます。 DMT の使用は、AXAX 2009 から Finance and Operations への唯一サポートされているアップグレードパスです。 DMT は、AX 2009 と Finance and Operations のテーブルスキーマ間を検索してその間のギャップを埋めることができ、また、データを移動も行います。 
+AX 2009 から Microsoft Dynamics 365 for Finance and Operations へデータを移行するため Microsoft Dynamics AX 2009 データ移行ツール (DMT) を使用することができます。 DMT の使用は、AX 2009 から Finance and Operations への唯一サポートされているアップグレードパスです。 DMT は、AX 2009 と Finance and Operations のテーブルスキーマ間を検索してその間のギャップを埋めることができ、また、データを移動も行います。 
 
 ## <a name="archictecture"></a>アーキテクチャ
 次の図では、DMT のアーキテクチャ、また、ソース システム (AX 2009) のデータの処理方法とターゲット システム (Finance and Operations) への移動方法について説明します。

@@ -3,7 +3,7 @@ title: Finance and Operations コネクタ
 description: このトピックでは、Finance and Operations Connector for Microsoft Flow およびロジック アプリの情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/31/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,18 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 36aff7651cb7947c6c735a752a6f5f07c0e84a23
-ms.sourcegitcommit: e597ac963d541f521d253697bbf26ce1ca8630a3
+ms.openlocfilehash: a7429d8f6d1dd9f7e198a919e1eaffe93ffd22f8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "949234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505416"
 ---
 # <a name="finance-and-operations-connector"></a>Finance and Operations コネクタ
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
-Dynamics 365 for Finance and Operations Connector を使用して Microsoft Flow、PowerApps、データ インテグレーター、およびロジック アプリを Dynamics 365 for Finance and Operations のインスタンスと統合できます。 統合で使用可能なアクションを使って、ターゲット インスタンスでの作成、更新、または削除の操作に影響を与えることができます。 
+Dynamics 365 for Finance and Operations Connector を使用して Microsoft Flow、PowerApps、データ インテグレーター、およびロジック アプリを Dynamics 365 for Finance and Operations のインスタンスと統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、Finance and Operations と統合することできます。
 
 ## <a name="prerequisites"></a>必要条件
 先に進む前に、コネクタについて理解するための前提条件として、次のトピックをお読みください。

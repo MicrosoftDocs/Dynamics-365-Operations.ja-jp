@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: d34603e22aabeb7c5925a286aab7e402c42cb0bd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b69c6cdee21299a0ca154575da9e029c1a162ebe
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369242"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537229"
 ---
 # <a name="test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ)
 

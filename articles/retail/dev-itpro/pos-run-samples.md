@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ce0d4af4dae49f0661b8668a6b9f07ac7d174cf0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ed5b24ca69d86ba5a6651478748a71c004487ce1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537529"
 ---
 # <a name="run-the-retail-point-of-sale-pos-samples"></a>小売販売時点管理 (POS) サンプルを実行
 

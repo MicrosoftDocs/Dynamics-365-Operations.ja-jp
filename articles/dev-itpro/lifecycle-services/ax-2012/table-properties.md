@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b52bf9b7c8a6abcdd362d16c178a14fa12fef31b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e943d52be34b95991ec31be98f362aa1c5eed84d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369185"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537234"
 ---
 # <a name="table-properties-in-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 

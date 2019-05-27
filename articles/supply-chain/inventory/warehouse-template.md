@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562441"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 

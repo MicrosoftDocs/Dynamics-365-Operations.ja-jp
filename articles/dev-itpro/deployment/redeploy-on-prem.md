@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: aa187dc35edb11428052df8c917458956f4d1db2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 411883fc9035f02acc20f2fb864ac1bd064fd959
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369976"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537029"
 ---
 # <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 

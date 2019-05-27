@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 8568b5f4933ae58bc2d55a169c798668e03bed2a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333786"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573283"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>コンフィギュレーション可能な製品の属性ベースの価格決定の設定
 
@@ -52,7 +52,7 @@ ms.locfileid: "333786"
     * 価格の式の名前は、価格要素が表す内容を識別する場合に役立ちます。 この例では、シタンのスピーカー キャビネットの仕上げオプションに対する価格要素を作成します。  
 5. [条件の編集] をクリックします。
     * 価格の条件によって、属性の特定の組み合わせがある場合にのみ、価格の式の要素を確実に販売価格に含められます。  
-6. [ConstraintBody] フィールドで、「CabinetFinish=="シタン"」と入力します。
+6. ConstraintBody フィールドで、「CabinetFinish=="シタン"」と入力します。
 7. [OK] をクリックします。
 8. [式フィールド] に値を入力します。
     * たとえば、「50」と入力します。  

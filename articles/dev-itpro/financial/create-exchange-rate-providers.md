@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d80d9173bb8f3ae82fd02d717cda37e0824350e4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 854337fae18a9f366fef502c88ea0b426e2b4bf3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368839"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537395"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 

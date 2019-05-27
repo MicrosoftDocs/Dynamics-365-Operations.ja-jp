@@ -16,11 +16,11 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4b4e9a52a383d4acc0bf2adc669fd88c0c0f7402
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357453"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550354"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>請求管理グループを使用した AP システムへの請求書データの入力
 

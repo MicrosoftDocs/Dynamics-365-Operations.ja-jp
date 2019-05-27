@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 2a1c89c1f4004ae835df006cb464aae7dba8e5f7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c9ae2393736c1fd43eb702649ed90d7c79bc02f5
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369711"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537058"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -84,7 +84,7 @@ Finance and Operations の開発経験は、クラウドとオンプレミスの
 - Active Directory を実行している 2 台以上のコンピューター
 
 ## <a name="service-fabric"></a>Service Fabric
-オンプレミス配置では Azure Service Fabric スタンドアロン クラスターを使用します。 Service Fabric は、企業規模の大規模なアプリケーションを構築および管理するための次世代の Microsoft ミドルウェア プラットフォームです。 Service Fabric スタンドアロン クラスターは、Windows Server を実行しているどのコンピューターにも展開することができます。
+オンプレミス配置では、 Azure Service Fabric スタンドアロンクラスターが使用されます。 Service Fabric は、企業規模の大規模なアプリケーションを構築および管理するための次世代の Microsoft ミドルウェア プラットフォームです。 Service Fabric スタンドアロン クラスターは、Windows Server を実行しているどのコンピューターにも展開することができます。
 
 オンプレミス配置には、各サンドボックス環境のスタンドアロン クラスターと各実稼働環境のスタンドアロン クラスターがあります。 両方のタイプのクラスターに、次のロールまたはノード タイプが配置されます。
 - Application Object Servers (AOS) – Finance and Operations アプリケーション機能をクライアント、バッチ、およびインポート/エクスポートのシナリオで実行する機能を提供します。
@@ -98,8 +98,8 @@ Finance and Operations の開発経験は、クラウドとオンプレミスの
 
 ### <a name="service-fabric-resources"></a>Service Fabric リソース
 Service Fabric の詳細については、次のトピックを参照してください。
-- [Azure Service Fabric ドキュメント](https://docs.microsoft.com/en-us/azure/service-fabric) - Service Fabric の詳細については、こちらを参照してください。
-- [Service Fabric アプリケーション アップグレード](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade)- Azure Service Fabric アプリケーションは、定期的なアップグレードを必要とするサービスのコレクションです。
+- [Azure Service Fabric documentation](https://docs.microsoft.com/en-us/azure/service-fabric) - サービスファブリックの詳細について。
+- [Service Fabric application upgrade](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade)- Azure Service Fabric アプリケーションは、定期的なアップグレードを必要となるサービスです。
 - [Service Fabric のスタンドアロン クラスター展開の計画と準備](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Service Fabric クラスターおよびウィルス対策の除外に関する追加情報
 
 ## <a name="system-requirements"></a>システム要件

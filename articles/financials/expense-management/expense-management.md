@@ -1,9 +1,9 @@
 ---
 title: 経費管理
-description: 経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用します。
+description: このトピックは、経費管理に関する一般情報、および追加のリソースへのリンクを提供します。 経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用できます。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,41 +18,44 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11445390acef5ddfd57a1a0017e8bc423cdb1914
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403217"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538612"
 ---
 # <a name="expense-management"></a>経費管理
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用します。 また、経費ポリシーを定義し、旅行経費の払い戻しを自動化することもできます。 
+経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用できます。 また、経費ポリシーを定義し、旅行経費の払い戻しを自動化することもできます。
 
-[経費管理計画](plan-expense-management.md) 
+詳細については、[経費管理のコンフィギュレーション](plan-expense-management.md) を参照してください。
 
-### <a name="additional-resources"></a>追加リソース
+## <a name="additional-resources"></a>追加リソース
 
-#### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
+### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-計画されている新機能については、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース ノート](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。
 
-#### <a name="blogs"></a>ブログ
+#### <a name="expense-report-entry"></a>経費精算書エントリ
 
-意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) および [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) を参照してください。
+経費精算書エントリは、エクスペリエンスを単純化し、経費レポートの完成に必要な時間を節約するために再設計されています。 この機能は、機能管理でオンにすることができます。 新しい設定ページを追加して、経費フィールドの表示をコンフィギュレーションし、経費精算書が入力されるときに必要なデータ、オプション、または使用できないデータを指定することができます。 この機能が有効になっているときは、新しい経費のワークスペースを使用できます。 このワークスペースは、以前の経費ワークスペースを置き換え、入力のエクスペリエンスを向上させるランディング ページです。
 
-[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。 
+詳細については、[経費精算書の再設計](ExpenseWorkspaceNew.md) を参照してください。
 
-#### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
+### <a name="blogs"></a>ブログ
 
-#### <a name="videos"></a>ビデオ
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+
+[Microsoft Dynamics Operations Partner Community ブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Microsoft Dynamics パートナーへ MBS Operations に関する最新情報とトレンドを知るための単一のリソースを提供します。
+
+### <a name="task-guides"></a>タスク ガイド
+
+追加のヘルプは、Microsoft Dynamics 365 for Finance and Operations 内のタスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの**ヘルプ**ボタンを選択します。
+
+### <a name="videos"></a>ビデオ
 
 [Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
-
-
-
-
-

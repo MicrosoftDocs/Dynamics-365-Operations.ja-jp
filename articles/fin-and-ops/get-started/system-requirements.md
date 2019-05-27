@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 20356cc64f08d8344c054d615df2efcab8453091
-ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
+ms.openlocfilehash: d9094dde503bdb4700d6334f3dca2e3fc7c4b356
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "768848"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537451"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 

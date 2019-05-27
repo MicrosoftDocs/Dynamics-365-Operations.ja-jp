@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b06b87bb82892d0deb03329431946e8bd0390919
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ab0511d0e6891252636e7e3980132dd254fd1429
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537245"
 ---
 # <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 
@@ -396,7 +396,7 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 | <DomainName>DynamicsInstallUser | AX 2012 R3 をインストールするために使用したアカウント。                                                                                                                                                                                                                                                                                                                 |
 | <DomainName>SPServiceUser       | 次のサービスを EP-<GUID> 仮想マシンで実行するために使用されたアカウント: AppFabric Caching Service、SharePoint Search Host Controller、SharePoint Server Search 15、SharePoint Timer Service、および SharePoint User Code Host。                                                                                                                       |
 | <DomainName>BCProxyUser         | ビジネス コネクタ プロキシとして使用されるアカウント。                                                                                                                                                                                                                                                                                                       |
-| <DomainName>AXServiceUser       | 次のサービスを AOS-<GUID> 仮想マシンで実行するために使用されたアカウント: Microsoft Dynamics AX データ インポート/エクスポート フレームワーク サービスおよび Microsoft Dynamics ERP RapidStart Connector。 アカウントは、次のサービスを CLI-<GUID> 仮想マシンで実行するためにも使用されます: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。 |
+| <DomainName>AXServiceUser       | AOS<GUID> 仮想マシンで次のサービスを実行するためにアカウントが使用されます: Microsoft Dynamics AX Data Import/Export Framework Service および Microsoft Dynamics ERP RapidStart Connector。 アカウントは、次のサービスを CLI-<GUID> 仮想マシンで実行するためにも使用されます: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。 |
 
 注記: パスワードは、[Lifecycle Services](https://lifecycleservices.dynamics.com/en/) のクラウド ホスト環境ページに表示されます。
 

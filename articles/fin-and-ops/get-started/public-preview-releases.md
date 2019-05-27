@@ -18,11 +18,11 @@ ms.author: meeram
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
 ms.openlocfilehash: 73b2ed3329321c2265dbf1cd700109614ef52722
-ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "850682"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537415"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 

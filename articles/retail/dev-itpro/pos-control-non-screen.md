@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 187b1b6a8431d0a8078960e411753470b44ca761
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2ffcbf10444d5ae88ffdc976141275d143e9511f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369732"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537544"
 ---
 # <a name="add-custom-controls-to-pos-views-that-arent-screen-layout-designer-based"></a>デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します
 

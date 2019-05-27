@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b65dd78e9c6561f1e642fe60b4b918435f544c23
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 52fa6e53a95ef2a51316e2a69688989a7e03cbea
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369536"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537015"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 

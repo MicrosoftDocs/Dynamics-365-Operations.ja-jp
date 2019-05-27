@@ -17,11 +17,11 @@ ms.author: v-alexec
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 ms.openlocfilehash: 48b0938f7bd20fc7f288196bb42294d2917757d2
-ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "899040"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1515744"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 

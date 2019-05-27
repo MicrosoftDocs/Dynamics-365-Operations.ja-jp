@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8c1bb3937620ce9e71f9555067c12183b7606c4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b49facc03d28b0c839467dcf14288adf63d92503
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369584"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507648"
 ---
 # <a name="workflow-system-architecture"></a>ワークフロー システムのアーキテクチャ
 

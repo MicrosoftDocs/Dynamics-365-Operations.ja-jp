@@ -1,5 +1,5 @@
 ---
-title: 継続的ビルドとテストの自動化をサポートするトポロジの配置
+title: 継続的なビルドとテストの自動化をサポートする環境を配置して使用する
 description: このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
 author: RobinARH
 manager: AnnBe
@@ -17,65 +17,60 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 860cf388ce7bc1f3848bd40e6cb146ff71c7b051
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 941aad8dfc61248fb3542bd089f1146bca1c483e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537596"
 ---
-# <a name="deploy-topologies-that-support-continuous-build-and-test-automation"></a>継続的ビルドとテストの自動化をサポートするトポロジの配置
+# <a name="deploy-and-use-an-environment-that-supports-continuous-build-and-test-automation"></a>継続的なビルドとテストの自動化をサポートする環境を配置して使用する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
+このトピックでは継続的なビルドとテストの自動化をサポートする環境を配置して使用する方法を説明します。
 
-前提条件: これには、クラウド VM 展開用の Azure DevOps アカウントが必要です。
+## <a name="prerequisites"></a>必要条件
+
+仮想マシン (VM) のクラウド配置には Microsoft Azure DevOps サブスクリプションが必要です。
 
 ## <a name="workflow"></a>ワークフロー
-Lifecycle Services (LCS) で Azure DevOps サブスクリプションを設定した後、開発者トポロジの配置をトリガーして開発者およびビルド VM の設定をすることができます。 この配置では、開発者用 VM は Azure DevOps プロジェクトに対して開発するためにワークスペース マッピングで構成されます。 ビルド VM は、モジュール Azure DevOps プロジェクトを構築し、検証用の外部エンドポイントを使用して自動テストを実行するために、ビルド エージェント/コントローラーを使用して自動構成されます。 カスタム テスト コードの記述またはビルド インフラストラクチャと統合する自動テスト コードを生成する方法については、[テストと検証](testing-validation.md) を参照してください。 一般的なワークフローまたは使用シナリオを次に示します。 
 
-[![build12](./media/build12-1024x693.jpg)](./media/build12.jpg)
+Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプションを構成した後、LCS を使用して開発者 VM やビルド / テスト VM を配置できます。 LCS は開発者 VM を構成し、それは Azure DevOps プロジェクトへのワークスペース マッピングを持ちます。 LCS は、Azure DevOps プロジェクトからモジュールを構築し、検証のための外部エンド ポイントを持つ自動テストを実行するビルド エージェント / コントローラーを持つビルド VM も構成します。 次の図は通常のワークフローを示します。
+
+![LCS、Azure DevOps、および VM の関係](./media/deploy-build-test.png)
+
+このワークフローには、Azure の開発者 VM とビルド / テスト VM の LCS 配置が含まれています。
+
++ LCS は Azure で開発者 VM とビルド / テスト VM を作成します。 VM を作成するために、LCS は Azure DevOps プロジェクトのソース コードがどこにあるか特定できる必要があります。
++ 開発者は開発者 VM のソース コードで作業し、その作業は Azure DevOps プロジェクトに同期されます。
++ ビルド プロセスは、コード、モジュール、およびパッケージを Azure DevOps からビルド / テスト VM に移動します。 コード、モジュール、およびパッケージは、開発 VM からビルド / テスト VM へのフローを直接持ちません。 これらは Azure DevOps を通して同期されます。
+
+カスタム テスト コードの記述またはビルド インフラストラクチャと統合するための自動テスト コードを生成する方法の詳細は、[テストと検証](testing-validation.md) を参照してください。
 
 ## <a name="set-up-azure-devops"></a>Azure DevOps の設定
-組織の必要な Azure DevOps 機能を比較します。<https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs>
 
--   **TFVC vs GIT**: 現在 TFVC がサポートされているのはソース管理リポジトリのみで、Git はサポートされていません。
--   **現在のビルドの中断:** 既にビルド定義が作成されている既存の Azure DevOps プロジェクトにビルド エージェントを展開している場合、ビルドをキューに入れるための有効なトリガーがないことを確認してください。 また、ビルド プールに対して、スケジュールされた/キューに格納されたビルドがないことを確認してください。 
+### <a name="choose-a-plan"></a>計画を選択
 
-    [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
-
--   **無料の Azure DevOps アカウントには、ビルド エージェントが 1 つだけ用意されています**。 組織内の Visual Studio Enterprise サブスクライバーのそれぞれに、追加のパイプラインが付与されます。 
-
-
-現在許可されているよりも多くのビルド パイプラインを使用するには、Azure DevOps アカウントを Azure 請求で設定します。[アカウントの請求を設定する](https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts) 
-
-[![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
-
--   Azure サブスクリプションを使用してアカウントにリンクした後、Azure 管理ポータルの指示に従い、より多くの同時パイプラインを購入します [VSTS の同時パイプライン](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs-vsts?branch=master&view=vsts) 
-
-
-[![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
+最初のステップは組織に [Azure DevOps プランを選ぶ](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) ことです。
 
 > [!NOTE]
-> 支払済オプションで、「プライベート エージェント」を増やしてください。 
+> TFVC はサポートされている唯一のソース管理リポジトリです。 Git はサポートされていません。
 
-[![VSTS3](./media/vsts3-300x191.jpg)](./media/vsts3.jpg)
+### <a name="set-up-azure-devops"></a>Azure DevOps の設定
 
--   **ビルド エージェント プールのロールとアクセス許可:**<https://msdn.microsoft.com/library/vs/alm/build/agents/admin#agent-pools>
+Azure DevOps をセットアップするには、次の手順に従います。
 
-ビルド エージェントが追加されたら、ユーザー (LCS から VM を配置構築) を「エージェント プール管理者」ロールにします。 
+1. [個人用アクセス トークンの作成](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops). トークンはすべての LCS バックグラウンド アクションに使用されます。 これらのアクションにはアップグレードと配置が含まれます。 ユーザーが LCS からアクションを起動すると、LCS はこれらのユーザーが Azure DevOps に追加されることを期待しています。 ユーザーは彼らのために Azure DevOps への LCS アクセスを認可する必要があります。
+1. [LCS の構成](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops)。
 
-[![VSTS4](./media/vsts4.jpg)](./media/vsts4.jpg)
+LCS の Azure DevOps へのアクセスを承認するまで、アクション センターに次のメッセージが表示されます。
 
--   **管理エージェント:** 複数のエージェントがコンフィギュレーションされていて、1 つを削除する場合は、エージェントを選択し、ステータス列の右側にある削除ボタンを使用します。
+![LCS エラーでの VSTS 設定](./media/vsts-setup-in-lcs_may27.jpg)
 
-    [![build14](./media/build14.jpg)](./media/build14.jpg)
+### <a name="suspend-current-builds"></a>現在のビルドの中断
 
--   **既定のプールの削除:** 何らかの理由でデフォルト プールを削除した場合は、「既定」という名前の新しいプールを作成しないでください。 代わりに、別の名前で新しい管理グループを作成し、配置の際に LCS の「詳細設定」のカスタマイズから管理グループ名を渡します。
--   **個人用アクセス トークン:** このトークンは、アップグレードおよび配置を含む Lifecycle Services (LCS) のバックグラウンド アクションで使用されます。 ユーザーが LCS からアクションを起動すると、LCS はユーザーが Azure DevOps に追加されることを期待しています。 ユーザーは、ユーザーの代わりに Azure DevOps への LCS アクセスを認可する必要があります。 プロジェクトのユーザーが Azure DevOps で承認されるまで、アクション センターに以下のメッセージが表示されます。 
-
-[![LCS の VSTS 設定\_5 月 27 日](./media/vsts-setup-in-lcs_may27-300x216.jpg)](./media/vsts-setup-in-lcs_may27.jpg)
+既にビルド定義がある既存の Azure DevOps プロジェクトにビルド エージェントを配置している場合、ビルドをキューに入れるアクティブなトリガーがないことを確認してください。 また、ビルド プールに対して、スケジュールされたりキューに格納されたビルドがないことを確認してください。
 
 ## <a name="deploy-developer-topology-from-lcs"></a>LCS から開発者トポロジを配置する
 LCS では、開発トポロジ環境を配置するオプションが提供されます。 このオプションでは、Azure DevOps プロジェクトに接続されたクラウド内に、開発者を配置して VM をビルドすることができます。
