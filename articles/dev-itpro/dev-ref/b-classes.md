@@ -17,347 +17,347 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8da457acad0b65ed8f99e5f103c38935f7df59c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 35ba03d65f0c72ca54506606a678318b8206dc15
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369865"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537019"
 ---
-# <a name="b-classes"></a><span data-ttu-id="0a4a1-103">B クラス</span><span class="sxs-lookup"><span data-stu-id="0a4a1-103">B classes</span></span>
+# <a name="b-classes"></a><span data-ttu-id="f712a-103">B クラス</span><span class="sxs-lookup"><span data-stu-id="f712a-103">B classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0a4a1-104">文字 B で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-104">System API classes that start with the letter B.</span></span>
+<span data-ttu-id="f712a-104">文字 B で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="f712a-104">System API classes that start with the letter B.</span></span>
 
-<a name="class-binary"></a><span data-ttu-id="0a4a1-105">クラス バイナリ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-105">Class Binary</span></span>
+<a name="class-binary"></a><span data-ttu-id="f712a-105">クラス バイナリ</span><span class="sxs-lookup"><span data-stu-id="f712a-105">Class Binary</span></span>
 ------------
 
     class Binary extends Object
 
-### <a name="remarks"></a><span data-ttu-id="0a4a1-106">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-106">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="f712a-106">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-106">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="0a4a1-107">例</span><span class="sxs-lookup"><span data-stu-id="0a4a1-107">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="f712a-107">例</span><span class="sxs-lookup"><span data-stu-id="f712a-107">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="0a4a1-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="0a4a1-108">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="f712a-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="f712a-108">Methods</span></span>
 
-| <span data-ttu-id="0a4a1-109">方法</span><span class="sxs-lookup"><span data-stu-id="0a4a1-109">Method</span></span>                                                                   | <span data-ttu-id="0a4a1-110">説明</span><span class="sxs-lookup"><span data-stu-id="0a4a1-110">Description</span></span>                                     |
+| <span data-ttu-id="f712a-109">方法</span><span class="sxs-lookup"><span data-stu-id="f712a-109">Method</span></span>                                                                   | <span data-ttu-id="f712a-110">説明</span><span class="sxs-lookup"><span data-stu-id="f712a-110">Description</span></span>                                     |
 |--------------------------------------------------------------------------|-------------------------------------------------|
-| <span data-ttu-id="0a4a1-111">public int byte(int offset, \[int value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-111">public int byte(int offset, \[int value\])</span></span>                               |                                                 |
-| <span data-ttu-id="0a4a1-112">public Real double(int offset, \[Real value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-112">public Real double(int offset, \[Real value\])</span></span>                           |                                                 |
-| <span data-ttu-id="0a4a1-113">public int dWord(int offset, \[int value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-113">public int dWord(int offset, \[int value\])</span></span>                              |                                                 |
-| <span data-ttu-id="0a4a1-114">public container getContainer()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-114">public container getContainer()</span></span>                                          |                                                 |
-| <span data-ttu-id="0a4a1-115">public CLRObject getMemoryStream()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-115">public CLRObject getMemoryStream()</span></span>                                       |                                                 |
-| <span data-ttu-id="0a4a1-116">public Int64 qWord(int offset, \[Int64 value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-116">public Int64 qWord(int offset, \[Int64 value\])</span></span>                          |                                                 |
-| <span data-ttu-id="0a4a1-117">public str string(int offset, \[str value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-117">public str string(int offset, \[str value\])</span></span>                             |                                                 |
-| <span data-ttu-id="0a4a1-118">public int strLenBytes(int offset)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-118">public int strLenBytes(int offset)</span></span>                                       |                                                 |
-| <span data-ttu-id="0a4a1-119">public int word(int offset, \[int value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-119">public int word(int offset, \[int value\])</span></span>                               |                                                 |
-| <span data-ttu-id="0a4a1-120">public str wString(int offset, \[str value\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-120">public str wString(int offset, \[str value\])</span></span>                            |                                                 |
-| <span data-ttu-id="0a4a1-121">::public static Binary constructFromContainer(container data)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-121">::public static Binary constructFromContainer(container data)</span></span>            |                                                 |
-| <span data-ttu-id="0a4a1-122">::public static Binary constructFromMemoryStream(CLRObject memoryStream)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-122">::public static Binary constructFromMemoryStream(CLRObject memoryStream)</span></span> |                                                 |
-| <span data-ttu-id="0a4a1-123">public void attach(Int64 bufPtr, int bufSize)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-123">public void attach(Int64 bufPtr, int bufSize)</span></span>                            |                                                 |
-| <span data-ttu-id="0a4a1-124">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-124">public void finalize()</span></span>                                                   |                                                 |
-| <span data-ttu-id="0a4a1-125">public void appendSubString(\[str string\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-125">public void appendSubString(\[str string\])</span></span>                              |                                                 |
-| <span data-ttu-id="0a4a1-126">public void setBinaryValue(int offset, Binary value)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-126">public void setBinaryValue(int offset, Binary value)</span></span>                     |                                                 |
-| <span data-ttu-id="0a4a1-127">public void new(AnyType buffersizeOrString, \[boolean wideString\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-127">public void new(AnyType buffersizeOrString, \[boolean wideString\])</span></span>      | <span data-ttu-id="0a4a1-128">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-128">Initializes a new instance of the Object class.</span></span> |
+| <span data-ttu-id="f712a-111">public int byte(int offset, \[int value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-111">public int byte(int offset, \[int value\])</span></span>                               |                                                 |
+| <span data-ttu-id="f712a-112">public Real double(int offset, \[Real value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-112">public Real double(int offset, \[Real value\])</span></span>                           |                                                 |
+| <span data-ttu-id="f712a-113">public int dWord(int offset, \[int value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-113">public int dWord(int offset, \[int value\])</span></span>                              |                                                 |
+| <span data-ttu-id="f712a-114">public container getContainer()</span><span class="sxs-lookup"><span data-stu-id="f712a-114">public container getContainer()</span></span>                                          |                                                 |
+| <span data-ttu-id="f712a-115">public CLRObject getMemoryStream()</span><span class="sxs-lookup"><span data-stu-id="f712a-115">public CLRObject getMemoryStream()</span></span>                                       |                                                 |
+| <span data-ttu-id="f712a-116">public Int64 qWord(int offset, \[Int64 value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-116">public Int64 qWord(int offset, \[Int64 value\])</span></span>                          |                                                 |
+| <span data-ttu-id="f712a-117">public str string(int offset, \[str value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-117">public str string(int offset, \[str value\])</span></span>                             |                                                 |
+| <span data-ttu-id="f712a-118">public int strLenBytes(int offset)</span><span class="sxs-lookup"><span data-stu-id="f712a-118">public int strLenBytes(int offset)</span></span>                                       |                                                 |
+| <span data-ttu-id="f712a-119">public int word(int offset, \[int value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-119">public int word(int offset, \[int value\])</span></span>                               |                                                 |
+| <span data-ttu-id="f712a-120">public str wString(int offset, \[str value\])</span><span class="sxs-lookup"><span data-stu-id="f712a-120">public str wString(int offset, \[str value\])</span></span>                            |                                                 |
+| <span data-ttu-id="f712a-121">::public static Binary constructFromContainer(container data)</span><span class="sxs-lookup"><span data-stu-id="f712a-121">::public static Binary constructFromContainer(container data)</span></span>            |                                                 |
+| <span data-ttu-id="f712a-122">::public static Binary constructFromMemoryStream(CLRObject memoryStream)</span><span class="sxs-lookup"><span data-stu-id="f712a-122">::public static Binary constructFromMemoryStream(CLRObject memoryStream)</span></span> |                                                 |
+| <span data-ttu-id="f712a-123">public void attach(Int64 bufPtr, int bufSize)</span><span class="sxs-lookup"><span data-stu-id="f712a-123">public void attach(Int64 bufPtr, int bufSize)</span></span>                            |                                                 |
+| <span data-ttu-id="f712a-124">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="f712a-124">public void finalize()</span></span>                                                   |                                                 |
+| <span data-ttu-id="f712a-125">public void appendSubString(\[str string\])</span><span class="sxs-lookup"><span data-stu-id="f712a-125">public void appendSubString(\[str string\])</span></span>                              |                                                 |
+| <span data-ttu-id="f712a-126">public void setBinaryValue(int offset, Binary value)</span><span class="sxs-lookup"><span data-stu-id="f712a-126">public void setBinaryValue(int offset, Binary value)</span></span>                     |                                                 |
+| <span data-ttu-id="f712a-127">public void new(AnyType buffersizeOrString, \[boolean wideString\])</span><span class="sxs-lookup"><span data-stu-id="f712a-127">public void new(AnyType buffersizeOrString, \[boolean wideString\])</span></span>      | <span data-ttu-id="f712a-128">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="f712a-128">Initializes a new instance of the Object class.</span></span> |
 
-### <a name="method-byte"></a><span data-ttu-id="0a4a1-129">メソッド byte</span><span class="sxs-lookup"><span data-stu-id="0a4a1-129">Method byte</span></span>
+### <a name="method-byte"></a><span data-ttu-id="f712a-129">メソッド byte</span><span class="sxs-lookup"><span data-stu-id="f712a-129">Method byte</span></span>
 
     public int byte(int offset, [int value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-130">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-130">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-131">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-131">offset</span></span>  
+<span data-ttu-id="f712a-131">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-131">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-132">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-132">value</span></span>  
+<span data-ttu-id="f712a-132">値</span><span class="sxs-lookup"><span data-stu-id="f712a-132">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-133">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-133">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-133">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-133">Return Value</span></span>
 
-### <a name="method-double"></a><span data-ttu-id="0a4a1-134">メソッド double</span><span class="sxs-lookup"><span data-stu-id="0a4a1-134">Method double</span></span>
+### <a name="method-double"></a><span data-ttu-id="f712a-134">メソッド double</span><span class="sxs-lookup"><span data-stu-id="f712a-134">Method double</span></span>
 
     public Real double(int offset, [Real value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-135">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-135">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-136">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-136">offset</span></span>  
+<span data-ttu-id="f712a-136">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-136">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-137">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-137">value</span></span>  
+<span data-ttu-id="f712a-137">値</span><span class="sxs-lookup"><span data-stu-id="f712a-137">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-138">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-138">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-138">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-138">Return Value</span></span>
 
-### <a name="method-dword"></a><span data-ttu-id="0a4a1-139">メソッド dWord</span><span class="sxs-lookup"><span data-stu-id="0a4a1-139">Method dWord</span></span>
+### <a name="method-dword"></a><span data-ttu-id="f712a-139">メソッド dWord</span><span class="sxs-lookup"><span data-stu-id="f712a-139">Method dWord</span></span>
 
     public int dWord(int offset, [int value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-140">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-140">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-140">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-140">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-141">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-141">offset</span></span>  
+<span data-ttu-id="f712a-141">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-141">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-142">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-142">value</span></span>  
+<span data-ttu-id="f712a-142">値</span><span class="sxs-lookup"><span data-stu-id="f712a-142">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-143">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-143">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-143">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-143">Return Value</span></span>
 
-### <a name="method-getcontainer"></a><span data-ttu-id="0a4a1-144">メソッド getContainer</span><span class="sxs-lookup"><span data-stu-id="0a4a1-144">Method getContainer</span></span>
+### <a name="method-getcontainer"></a><span data-ttu-id="f712a-144">メソッド getContainer</span><span class="sxs-lookup"><span data-stu-id="f712a-144">Method getContainer</span></span>
 
     public container getContainer()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-145">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-145">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-145">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-145">Return Value</span></span>
 
-### <a name="method-getmemorystream"></a><span data-ttu-id="0a4a1-146">メソッド getMemoryStream</span><span class="sxs-lookup"><span data-stu-id="0a4a1-146">Method getMemoryStream</span></span>
+### <a name="method-getmemorystream"></a><span data-ttu-id="f712a-146">メソッド getMemoryStream</span><span class="sxs-lookup"><span data-stu-id="f712a-146">Method getMemoryStream</span></span>
 
     public CLRObject getMemoryStream()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-147">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-147">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-147">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-147">Return Value</span></span>
 
-### <a name="method-qword"></a><span data-ttu-id="0a4a1-148">メソッド qWord</span><span class="sxs-lookup"><span data-stu-id="0a4a1-148">Method qWord</span></span>
+### <a name="method-qword"></a><span data-ttu-id="f712a-148">メソッド qWord</span><span class="sxs-lookup"><span data-stu-id="f712a-148">Method qWord</span></span>
 
     public Int64 qWord(int offset, [Int64 value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-149">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-149">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-149">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-149">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-150">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-150">offset</span></span>  
+<span data-ttu-id="f712a-150">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-150">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-151">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-151">value</span></span>  
+<span data-ttu-id="f712a-151">値</span><span class="sxs-lookup"><span data-stu-id="f712a-151">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-152">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-152">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-152">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-152">Return Value</span></span>
 
-### <a name="method-string"></a><span data-ttu-id="0a4a1-153">メソッド string</span><span class="sxs-lookup"><span data-stu-id="0a4a1-153">Method string</span></span>
+### <a name="method-string"></a><span data-ttu-id="f712a-153">メソッド string</span><span class="sxs-lookup"><span data-stu-id="f712a-153">Method string</span></span>
 
     public str string(int offset, [str value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-154">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-154">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-154">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-154">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-155">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-155">offset</span></span>  
+<span data-ttu-id="f712a-155">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-155">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-156">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-156">value</span></span>  
+<span data-ttu-id="f712a-156">値</span><span class="sxs-lookup"><span data-stu-id="f712a-156">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-157">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-157">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-157">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-157">Return Value</span></span>
 
-### <a name="method-strlenbytes"></a><span data-ttu-id="0a4a1-158">メソッド strLenBytes</span><span class="sxs-lookup"><span data-stu-id="0a4a1-158">Method strLenBytes</span></span>
+### <a name="method-strlenbytes"></a><span data-ttu-id="f712a-158">メソッド strLenBytes</span><span class="sxs-lookup"><span data-stu-id="f712a-158">Method strLenBytes</span></span>
 
     public int strLenBytes(int offset)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-159">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-159">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-159">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-159">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-160">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-160">offset</span></span>  
+<span data-ttu-id="f712a-160">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-160">offset</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-161">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-161">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-161">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-161">Return Value</span></span>
 
-### <a name="method-word"></a><span data-ttu-id="0a4a1-162">メソッド word</span><span class="sxs-lookup"><span data-stu-id="0a4a1-162">Method word</span></span>
+### <a name="method-word"></a><span data-ttu-id="f712a-162">メソッド word</span><span class="sxs-lookup"><span data-stu-id="f712a-162">Method word</span></span>
 
     public int word(int offset, [int value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-163">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-163">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-163">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-163">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-164">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-164">offset</span></span>  
+<span data-ttu-id="f712a-164">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-164">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-165">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-165">value</span></span>  
+<span data-ttu-id="f712a-165">値</span><span class="sxs-lookup"><span data-stu-id="f712a-165">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-166">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-166">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-166">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-166">Return Value</span></span>
 
-### <a name="method-wstring"></a><span data-ttu-id="0a4a1-167">メソッド wString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-167">Method wString</span></span>
+### <a name="method-wstring"></a><span data-ttu-id="f712a-167">メソッド wString</span><span class="sxs-lookup"><span data-stu-id="f712a-167">Method wString</span></span>
 
     public str wString(int offset, [str value])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-168">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-168">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-168">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-168">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-169">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-169">offset</span></span>  
+<span data-ttu-id="f712a-169">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-169">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-170">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-170">value</span></span>  
+<span data-ttu-id="f712a-170">値</span><span class="sxs-lookup"><span data-stu-id="f712a-170">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-171">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-171">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-171">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-171">Return Value</span></span>
 
-### <a name="method-constructfromcontainer"></a><span data-ttu-id="0a4a1-172">メソッド constructFromContainer</span><span class="sxs-lookup"><span data-stu-id="0a4a1-172">Method constructFromContainer</span></span>
+### <a name="method-constructfromcontainer"></a><span data-ttu-id="f712a-172">メソッド constructFromContainer</span><span class="sxs-lookup"><span data-stu-id="f712a-172">Method constructFromContainer</span></span>
 
     public static Binary constructFromContainer(container data)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-173">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-173">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-174">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-174">data</span></span>  
+<span data-ttu-id="f712a-174">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-174">data</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-175">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-175">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-175">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-175">Return Value</span></span>
 
-### <a name="method-constructfrommemorystream"></a><span data-ttu-id="0a4a1-176">メソッド constructFromMemoryStream</span><span class="sxs-lookup"><span data-stu-id="0a4a1-176">Method constructFromMemoryStream</span></span>
+### <a name="method-constructfrommemorystream"></a><span data-ttu-id="f712a-176">メソッド constructFromMemoryStream</span><span class="sxs-lookup"><span data-stu-id="f712a-176">Method constructFromMemoryStream</span></span>
 
     public static Binary constructFromMemoryStream(CLRObject memoryStream)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-177">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-177">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-177">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-177">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-178">memoryStream</span><span class="sxs-lookup"><span data-stu-id="0a4a1-178">memoryStream</span></span>  
+<span data-ttu-id="f712a-178">memoryStream</span><span class="sxs-lookup"><span data-stu-id="f712a-178">memoryStream</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-179">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-179">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-179">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-179">Return Value</span></span>
 
-### <a name="method-attach"></a><span data-ttu-id="0a4a1-180">メソッド attach</span><span class="sxs-lookup"><span data-stu-id="0a4a1-180">Method attach</span></span>
+### <a name="method-attach"></a><span data-ttu-id="f712a-180">メソッド attach</span><span class="sxs-lookup"><span data-stu-id="f712a-180">Method attach</span></span>
 
     public void attach(Int64 bufPtr, int bufSize)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-181">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-181">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-181">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-181">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-182">bufPtr</span><span class="sxs-lookup"><span data-stu-id="0a4a1-182">bufPtr</span></span>  
+<span data-ttu-id="f712a-182">bufPtr</span><span class="sxs-lookup"><span data-stu-id="f712a-182">bufPtr</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-183">bufSize</span><span class="sxs-lookup"><span data-stu-id="0a4a1-183">bufSize</span></span>  
+<span data-ttu-id="f712a-183">bufSize</span><span class="sxs-lookup"><span data-stu-id="f712a-183">bufSize</span></span>  
 
-### <a name="method-finalize"></a><span data-ttu-id="0a4a1-184">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0a4a1-184">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="f712a-184">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="f712a-184">Method finalize</span></span>
 
     public void finalize()
 
-### <a name="method-appendsubstring"></a><span data-ttu-id="0a4a1-185">メソッド appendSubString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-185">Method appendSubString</span></span>
+### <a name="method-appendsubstring"></a><span data-ttu-id="f712a-185">メソッド appendSubString</span><span class="sxs-lookup"><span data-stu-id="f712a-185">Method appendSubString</span></span>
 
     public void appendSubString([str string])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-186">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-186">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-187">string</span><span class="sxs-lookup"><span data-stu-id="0a4a1-187">string</span></span>  
+<span data-ttu-id="f712a-187">string</span><span class="sxs-lookup"><span data-stu-id="f712a-187">string</span></span>  
 
-### <a name="method-setbinaryvalue"></a><span data-ttu-id="0a4a1-188">メソッド setBinaryValue</span><span class="sxs-lookup"><span data-stu-id="0a4a1-188">Method setBinaryValue</span></span>
+### <a name="method-setbinaryvalue"></a><span data-ttu-id="f712a-188">メソッド setBinaryValue</span><span class="sxs-lookup"><span data-stu-id="f712a-188">Method setBinaryValue</span></span>
 
     public void setBinaryValue(int offset, Binary value)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-189">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-189">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-189">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-189">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-190">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-190">offset</span></span>  
+<span data-ttu-id="f712a-190">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-190">offset</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-191">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-191">value</span></span>  
+<span data-ttu-id="f712a-191">値</span><span class="sxs-lookup"><span data-stu-id="f712a-191">value</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="0a4a1-192">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0a4a1-192">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="f712a-192">メソッド new</span><span class="sxs-lookup"><span data-stu-id="f712a-192">Method new</span></span>
 
-<span data-ttu-id="0a4a1-193">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-193">Initializes a new instance of the Object class.</span></span>
+<span data-ttu-id="f712a-193">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="f712a-193">Initializes a new instance of the Object class.</span></span>
 
     public void new(AnyType buffersizeOrString, [boolean wideString])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-194">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-194">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-194">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-194">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-195">buffersizeOrString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-195">buffersizeOrString</span></span>  
+<span data-ttu-id="f712a-195">buffersizeOrString</span><span class="sxs-lookup"><span data-stu-id="f712a-195">buffersizeOrString</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-196">wideString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-196">wideString</span></span>  
+<span data-ttu-id="f712a-196">wideString</span><span class="sxs-lookup"><span data-stu-id="f712a-196">wideString</span></span>  
 
-## <a name="class-binaryio"></a><span data-ttu-id="0a4a1-197">クラス BinaryIo</span><span class="sxs-lookup"><span data-stu-id="0a4a1-197">Class BinaryIo</span></span>
+## <a name="class-binaryio"></a><span data-ttu-id="f712a-197">クラス BinaryIo</span><span class="sxs-lookup"><span data-stu-id="f712a-197">Class BinaryIo</span></span>
     class BinaryIo extends Io
 
-### <a name="remarks"></a><span data-ttu-id="0a4a1-198">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-198">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="f712a-198">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-198">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="0a4a1-199">例</span><span class="sxs-lookup"><span data-stu-id="0a4a1-199">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="f712a-199">例</span><span class="sxs-lookup"><span data-stu-id="f712a-199">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="0a4a1-200">メソッド</span><span class="sxs-lookup"><span data-stu-id="0a4a1-200">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="f712a-200">メソッド</span><span class="sxs-lookup"><span data-stu-id="f712a-200">Methods</span></span>
 
-| <span data-ttu-id="0a4a1-201">方法</span><span class="sxs-lookup"><span data-stu-id="0a4a1-201">Method</span></span>                                  | <span data-ttu-id="0a4a1-202">説明</span><span class="sxs-lookup"><span data-stu-id="0a4a1-202">Description</span></span>                                                                     |
+| <span data-ttu-id="f712a-201">方法</span><span class="sxs-lookup"><span data-stu-id="f712a-201">Method</span></span>                                  | <span data-ttu-id="f712a-202">説明</span><span class="sxs-lookup"><span data-stu-id="f712a-202">Description</span></span>                                                                     |
 |-----------------------------------------|---------------------------------------------------------------------------------|
-| <span data-ttu-id="0a4a1-203">public container read()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-203">public container read()</span></span>                 | <span data-ttu-id="0a4a1-204">Io オブジェクトから次の完全なレコードを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-204">Reads the next full record from the Io object.</span></span>                                  |
-| <span data-ttu-id="0a4a1-205">public IO\_Status status()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-205">public IO\_Status status()</span></span>              | <span data-ttu-id="0a4a1-206">Io オブジェクトで実行された最後の操作のステータスを取得します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-206">Retrieves the status of the last operation that was performed on the Io object.</span></span> |
-| <span data-ttu-id="0a4a1-207">public boolean write(VarArg values)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-207">public boolean write(VarArg values)</span></span>     | <span data-ttu-id="0a4a1-208">単純型の値を記述します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-208">Writes values of a simple type.</span></span>                                                 |
-| <span data-ttu-id="0a4a1-209">public boolean writeExp(container data)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-209">public boolean writeExp(container data)</span></span> | <span data-ttu-id="0a4a1-210">コンテナのコンテンツをファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-210">Writes the content of a container to a file.</span></span>                                    |
-| <span data-ttu-id="0a4a1-211">public void new(str filename, str mode)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-211">public void new(str filename, str mode)</span></span> | <span data-ttu-id="0a4a1-212">BinaryIo クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-212">Creates an instance of the BinaryIo class.</span></span>                                      |
-| <span data-ttu-id="0a4a1-213">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-213">public void finalize()</span></span>                  | <span data-ttu-id="0a4a1-214">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-214">Closes the file and, if data was written, flushes the file buffers to disk.</span></span>     |
+| <span data-ttu-id="f712a-203">public container read()</span><span class="sxs-lookup"><span data-stu-id="f712a-203">public container read()</span></span>                 | <span data-ttu-id="f712a-204">Io オブジェクトから次の完全なレコードを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="f712a-204">Reads the next full record from the Io object.</span></span>                                  |
+| <span data-ttu-id="f712a-205">public IO\_Status status()</span><span class="sxs-lookup"><span data-stu-id="f712a-205">public IO\_Status status()</span></span>              | <span data-ttu-id="f712a-206">Io オブジェクトで実行された最後の操作のステータスを取得します。</span><span class="sxs-lookup"><span data-stu-id="f712a-206">Retrieves the status of the last operation that was performed on the Io object.</span></span> |
+| <span data-ttu-id="f712a-207">public boolean write(VarArg values)</span><span class="sxs-lookup"><span data-stu-id="f712a-207">public boolean write(VarArg values)</span></span>     | <span data-ttu-id="f712a-208">単純型の値を記述します。</span><span class="sxs-lookup"><span data-stu-id="f712a-208">Writes values of a simple type.</span></span>                                                 |
+| <span data-ttu-id="f712a-209">public boolean writeExp(container data)</span><span class="sxs-lookup"><span data-stu-id="f712a-209">public boolean writeExp(container data)</span></span> | <span data-ttu-id="f712a-210">コンテナのコンテンツをファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="f712a-210">Writes the content of a container to a file.</span></span>                                    |
+| <span data-ttu-id="f712a-211">public void new(str filename, str mode)</span><span class="sxs-lookup"><span data-stu-id="f712a-211">public void new(str filename, str mode)</span></span> | <span data-ttu-id="f712a-212">BinaryIo クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="f712a-212">Creates an instance of the BinaryIo class.</span></span>                                      |
+| <span data-ttu-id="f712a-213">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="f712a-213">public void finalize()</span></span>                  | <span data-ttu-id="f712a-214">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="f712a-214">Closes the file and, if data was written, flushes the file buffers to disk.</span></span>     |
 
-### <a name="method-read"></a><span data-ttu-id="0a4a1-215">メソッド read</span><span class="sxs-lookup"><span data-stu-id="0a4a1-215">Method read</span></span>
+### <a name="method-read"></a><span data-ttu-id="f712a-215">メソッド read</span><span class="sxs-lookup"><span data-stu-id="f712a-215">Method read</span></span>
 
-<span data-ttu-id="0a4a1-216">Io オブジェクトから次の完全なレコードを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-216">Reads the next full record from the Io object.</span></span>
+<span data-ttu-id="f712a-216">Io オブジェクトから次の完全なレコードを読み取ります。</span><span class="sxs-lookup"><span data-stu-id="f712a-216">Reads the next full record from the Io object.</span></span>
 
     public container read()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-217">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-217">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-217">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-217">Return Value</span></span>
 
-<span data-ttu-id="0a4a1-218">入出力オブジェクトから次の完全なレコードを保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-218">A container that holds the next full record from the Io object.</span></span>
+<span data-ttu-id="f712a-218">入出力オブジェクトから次の完全なレコードを保持するコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="f712a-218">A container that holds the next full record from the Io object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-219">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-219">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-219">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-219">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-220">次の完全なレコードの定義は、次のプロパティ、inFieldDelimiter、inRecordDelimiter、および inRecordLength メソッド プロパティによって制御されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-220">The definition of the next full record is controlled by the inFieldDelimiter, inRecordDelimiter, and inRecordLength method properties.</span></span> <span data-ttu-id="0a4a1-221">レコードはコンテナーとして返されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-221">The record is returned as a container.</span></span> <span data-ttu-id="0a4a1-222">コンテナー内の各エントリは、レコードの 1 つのフィールドと同じです。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-222">Each entry in the container equals one field in the record.</span></span> <span data-ttu-id="0a4a1-223">そべての特殊な Io クラスには、inFieldDelimiter、inRecordDelimiter、および inRecordLength のプロパティのデフォルト設定があります。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-223">Every specialized Io class has default settings for the inFieldDelimiter, inRecordDelimiter, and inRecordLength properties.</span></span> <span data-ttu-id="0a4a1-224">これらの既定の設定では、最も一般的な形式の入力と出力が可能です。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-224">These default settings enable input and output of the most common formats.</span></span> <span data-ttu-id="0a4a1-225">使用する形式をサポートするために、これらの設定の調整が生じる場合があります。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-225">You might have to adjust these settings to support the format that you want to use.</span></span>
+<span data-ttu-id="f712a-220">次の完全なレコードの定義は、次のプロパティ、inFieldDelimiter、inRecordDelimiter、および inRecordLength メソッド プロパティによって制御されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-220">The definition of the next full record is controlled by the inFieldDelimiter, inRecordDelimiter, and inRecordLength method properties.</span></span> <span data-ttu-id="f712a-221">レコードはコンテナーとして返されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-221">The record is returned as a container.</span></span> <span data-ttu-id="f712a-222">コンテナー内の各エントリは、レコードの 1 つのフィールドと同じです。</span><span class="sxs-lookup"><span data-stu-id="f712a-222">Each entry in the container equals one field in the record.</span></span> <span data-ttu-id="f712a-223">そべての特殊な Io クラスには、inFieldDelimiter、inRecordDelimiter、および inRecordLength のプロパティのデフォルト設定があります。</span><span class="sxs-lookup"><span data-stu-id="f712a-223">Every specialized Io class has default settings for the inFieldDelimiter, inRecordDelimiter, and inRecordLength properties.</span></span> <span data-ttu-id="f712a-224">これらの既定の設定では、最も一般的な形式の入力と出力が可能です。</span><span class="sxs-lookup"><span data-stu-id="f712a-224">These default settings enable input and output of the most common formats.</span></span> <span data-ttu-id="f712a-225">使用する形式をサポートするために、これらの設定の調整が生じる場合があります。</span><span class="sxs-lookup"><span data-stu-id="f712a-225">You might have to adjust these settings to support the format that you want to use.</span></span>
 
-### <a name="method-status"></a><span data-ttu-id="0a4a1-226">メソッド status</span><span class="sxs-lookup"><span data-stu-id="0a4a1-226">Method status</span></span>
+### <a name="method-status"></a><span data-ttu-id="f712a-226">メソッド status</span><span class="sxs-lookup"><span data-stu-id="f712a-226">Method status</span></span>
 
-<span data-ttu-id="0a4a1-227">Io オブジェクトで実行された最後の操作のステータスを取得します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-227">Retrieves the status of the last operation that was performed on the Io object.</span></span>
+<span data-ttu-id="f712a-227">Io オブジェクトで実行された最後の操作のステータスを取得します。</span><span class="sxs-lookup"><span data-stu-id="f712a-227">Retrieves the status of the last operation that was performed on the Io object.</span></span>
 
     public IO_Status status()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-228">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-228">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-228">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-228">Return Value</span></span>
 
-<span data-ttu-id="0a4a1-229">IO\_Status システム列挙値としての最後の操作の状態。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-229">The status of the last operation as an IO\_Status system enumeration value.</span></span>
+<span data-ttu-id="f712a-229">IO\_Status システム列挙値としての最後の操作の状態。</span><span class="sxs-lookup"><span data-stu-id="f712a-229">The status of the last operation as an IO\_Status system enumeration value.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-230">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-230">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-230">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-230">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-231">返される可能性のある IO\_Status の値の範囲は、Io クラスによって異なります。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-231">The range of possible IO\_Status values that are returned varies, depending on the Io class.</span></span>
+<span data-ttu-id="f712a-231">返される可能性のある IO\_Status の値の範囲は、Io クラスによって異なります。</span><span class="sxs-lookup"><span data-stu-id="f712a-231">The range of possible IO\_Status values that are returned varies, depending on the Io class.</span></span>
 
-### <a name="method-write"></a><span data-ttu-id="0a4a1-232">メソッド write</span><span class="sxs-lookup"><span data-stu-id="0a4a1-232">Method write</span></span>
+### <a name="method-write"></a><span data-ttu-id="f712a-232">メソッド write</span><span class="sxs-lookup"><span data-stu-id="f712a-232">Method write</span></span>
 
-<span data-ttu-id="0a4a1-233">単純型の値を記述します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-233">Writes values of a simple type.</span></span>
+<span data-ttu-id="f712a-233">単純型の値を記述します。</span><span class="sxs-lookup"><span data-stu-id="f712a-233">Writes values of a simple type.</span></span>
 
     public boolean write(VarArg values)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-234">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-234">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-234">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-234">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-235">値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-235">values</span></span>  
-<span data-ttu-id="0a4a1-236">単純型。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-236">The simple type.</span></span> <span data-ttu-id="0a4a1-237">単純型は、文字列、整数、実数、列挙型、日付です。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-237">The simple types are string, integer, real, enum, and date.</span></span>
+<span data-ttu-id="f712a-235">値</span><span class="sxs-lookup"><span data-stu-id="f712a-235">values</span></span>  
+<span data-ttu-id="f712a-236">単純型。</span><span class="sxs-lookup"><span data-stu-id="f712a-236">The simple type.</span></span> <span data-ttu-id="f712a-237">単純型は、文字列、整数、実数、列挙型、日付です。</span><span class="sxs-lookup"><span data-stu-id="f712a-237">The simple types are string, integer, real, enum, and date.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-238">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-238">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-238">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-238">Return Value</span></span>
 
-<span data-ttu-id="0a4a1-239">書き込み操作が成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-239">true if the write operation succeeds; otherwise, false.</span></span> <span data-ttu-id="0a4a1-240">書き込み操作が失敗すると、ステータス メソッドで原因について確認できます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-240">If the write operation is unsuccessful, you can check the status method for the cause.</span></span>
+<span data-ttu-id="f712a-239">書き込み操作が成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="f712a-239">true if the write operation succeeds; otherwise, false.</span></span> <span data-ttu-id="f712a-240">書き込み操作が失敗すると、ステータス メソッドで原因について確認できます。</span><span class="sxs-lookup"><span data-stu-id="f712a-240">If the write operation is unsuccessful, you can check the status method for the cause.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-241">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-241">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-241">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-241">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-242">このメソッドは、可変数の引数を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-242">This method accepts a variable number of arguments.</span></span> <span data-ttu-id="0a4a1-243">指定された各値は、フィールドとして出力レコードに配置されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-243">Each value that is specified is put into the output record as a field.</span></span> <span data-ttu-id="0a4a1-244">最初の引数は最初のフィールドであり、2 番目の引数は 2 番目のフィールドなどになります。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-244">The first argument is the first field, the second argument is the second field, and so on.</span></span> <span data-ttu-id="0a4a1-245">フィールドは、outFieldDelimiter メソッドで指定されたフィールド区切り記号で区切られます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-245">The fields are separated by the field delimiter that is specified in the outFieldDelimiter method.</span></span> <span data-ttu-id="0a4a1-246">各レコードは、outRecordDelimiter メソッドで指定されるレコード 区切り記号で区切られます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-246">Each record is separated by the record delimiter that is specified in the outRecordDelimiter method.</span></span> <span data-ttu-id="0a4a1-247">完全なコンテナーを書き込むには、writeExp メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-247">To write complete containers, use the writeExp method.</span></span>
+<span data-ttu-id="f712a-242">このメソッドは、可変数の引数を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="f712a-242">This method accepts a variable number of arguments.</span></span> <span data-ttu-id="f712a-243">指定された各値は、フィールドとして出力レコードに配置されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-243">Each value that is specified is put into the output record as a field.</span></span> <span data-ttu-id="f712a-244">最初の引数は最初のフィールドであり、2 番目の引数は 2 番目のフィールドなどになります。</span><span class="sxs-lookup"><span data-stu-id="f712a-244">The first argument is the first field, the second argument is the second field, and so on.</span></span> <span data-ttu-id="f712a-245">フィールドは、outFieldDelimiter メソッドで指定されたフィールド区切り記号で区切られます。</span><span class="sxs-lookup"><span data-stu-id="f712a-245">The fields are separated by the field delimiter that is specified in the outFieldDelimiter method.</span></span> <span data-ttu-id="f712a-246">各レコードは、outRecordDelimiter メソッドで指定されるレコード 区切り記号で区切られます。</span><span class="sxs-lookup"><span data-stu-id="f712a-246">Each record is separated by the record delimiter that is specified in the outRecordDelimiter method.</span></span> <span data-ttu-id="f712a-247">完全なコンテナーを書き込むには、writeExp メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f712a-247">To write complete containers, use the writeExp method.</span></span>
 
-### <a name="method-writeexp"></a><span data-ttu-id="0a4a1-248">メソッド writeExp</span><span class="sxs-lookup"><span data-stu-id="0a4a1-248">Method writeExp</span></span>
+### <a name="method-writeexp"></a><span data-ttu-id="f712a-248">メソッド writeExp</span><span class="sxs-lookup"><span data-stu-id="f712a-248">Method writeExp</span></span>
 
-<span data-ttu-id="0a4a1-249">コンテナのコンテンツをファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-249">Writes the content of a container to a file.</span></span>
+<span data-ttu-id="f712a-249">コンテナのコンテンツをファイルに記述します。</span><span class="sxs-lookup"><span data-stu-id="f712a-249">Writes the content of a container to a file.</span></span>
 
     public boolean writeExp(container data)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-250">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-250">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-250">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-250">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-251">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-251">data</span></span>  
-<span data-ttu-id="0a4a1-252">レコードのデータを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-252">The container that holds data for the record.</span></span>
+<span data-ttu-id="f712a-251">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-251">data</span></span>  
+<span data-ttu-id="f712a-252">レコードのデータを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="f712a-252">The container that holds data for the record.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-253">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-253">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-253">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-253">Return Value</span></span>
 
-<span data-ttu-id="0a4a1-254">操作が成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-254">true if the operation is successful; otherwise, false.</span></span>
+<span data-ttu-id="f712a-254">操作が成功する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="f712a-254">true if the operation is successful; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-255">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-255">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-255">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-255">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-256">このメソッドが false を返す場合、ステータス メソッドで原因を確認します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-256">If this method returns false, check the status method for the cause.</span></span> <span data-ttu-id="0a4a1-257">コンテナー内のエントリはフィールドとして扱われ、コンテナーは完全なレコードとして扱われます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-257">The entries in the container are treated as fields, and the container is treated as a full record.</span></span> <span data-ttu-id="0a4a1-258">フィールド区切り記号は、outFieldDelimiter メソッドで定義されています。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-258">The field separator is defined in the outFieldDelimiter method.</span></span> <span data-ttu-id="0a4a1-259">レコード区切りは outRecordDelimiter メソッドで定義されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-259">The record separator is defined in the outRecordDelimiter method.</span></span>
+<span data-ttu-id="f712a-256">このメソッドが false を返す場合、ステータス メソッドで原因を確認します。</span><span class="sxs-lookup"><span data-stu-id="f712a-256">If this method returns false, check the status method for the cause.</span></span> <span data-ttu-id="f712a-257">コンテナー内のエントリはフィールドとして扱われ、コンテナーは完全なレコードとして扱われます。</span><span class="sxs-lookup"><span data-stu-id="f712a-257">The entries in the container are treated as fields, and the container is treated as a full record.</span></span> <span data-ttu-id="f712a-258">フィールド区切り記号は、outFieldDelimiter メソッドで定義されています。</span><span class="sxs-lookup"><span data-stu-id="f712a-258">The field separator is defined in the outFieldDelimiter method.</span></span> <span data-ttu-id="f712a-259">レコード区切りは outRecordDelimiter メソッドで定義されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-259">The record separator is defined in the outRecordDelimiter method.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="0a4a1-260">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0a4a1-260">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="f712a-260">メソッド new</span><span class="sxs-lookup"><span data-stu-id="f712a-260">Method new</span></span>
 
-<span data-ttu-id="0a4a1-261">BinaryIo クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-261">Creates an instance of the BinaryIo class.</span></span>
+<span data-ttu-id="f712a-261">BinaryIo クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="f712a-261">Creates an instance of the BinaryIo class.</span></span>
 
     public void new(str filename, str mode)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-262">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-262">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-262">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-262">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-263">filename</span><span class="sxs-lookup"><span data-stu-id="0a4a1-263">filename</span></span>  
-<span data-ttu-id="0a4a1-264">BinaryIo クラスのインスタンスを作成するために使用するモード。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-264">The mode to use to create the instance of the BinaryIo class.</span></span>
+<span data-ttu-id="f712a-263">filename</span><span class="sxs-lookup"><span data-stu-id="f712a-263">filename</span></span>  
+<span data-ttu-id="f712a-264">BinaryIo クラスのインスタンスを作成するために使用するモード。</span><span class="sxs-lookup"><span data-stu-id="f712a-264">The mode to use to create the instance of the BinaryIo class.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-265">モード</span><span class="sxs-lookup"><span data-stu-id="0a4a1-265">mode</span></span>  
-<span data-ttu-id="0a4a1-266">BinaryIo クラスのインスタンスを作成するために使用するモード。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-266">The mode to use to create the instance of the BinaryIo class.</span></span>
+<span data-ttu-id="f712a-265">モード</span><span class="sxs-lookup"><span data-stu-id="f712a-265">mode</span></span>  
+<span data-ttu-id="f712a-266">BinaryIo クラスのインスタンスを作成するために使用するモード。</span><span class="sxs-lookup"><span data-stu-id="f712a-266">The mode to use to create the instance of the BinaryIo class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-267">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-267">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-267">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-267">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-268">攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-268">If an attacker can control input to the new method, a security risk exists.</span></span> <span data-ttu-id="0a4a1-269">したがって、このメソッドはクラス下で実行されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-269">Therefore, this method runs under class.</span></span> <span data-ttu-id="0a4a1-270">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-270">Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
+<span data-ttu-id="f712a-268">攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="f712a-268">If an attacker can control input to the new method, a security risk exists.</span></span> <span data-ttu-id="f712a-269">したがって、このメソッドはクラス下で実行されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-269">Therefore, this method runs under class.</span></span> <span data-ttu-id="f712a-270">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f712a-270">Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="0a4a1-271">例</span><span class="sxs-lookup"><span data-stu-id="0a4a1-271">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="f712a-271">例</span><span class="sxs-lookup"><span data-stu-id="f712a-271">Examples</span></span>
 
-<span data-ttu-id="0a4a1-272">この例では、BinaryIo クラスを使用して、ExampleFile のテキスト ファイルからデータを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-272">This example uses the BinaryIo class to read data from the ExampleFile text file.</span></span>
+<span data-ttu-id="f712a-272">この例では、BinaryIo クラスを使用して、ExampleFile のテキスト ファイルからデータを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="f712a-272">This example uses the BinaryIo class to read data from the ExampleFile text file.</span></span>
 
     static void BinaryIoExampleW2(Args _args)
     {     
@@ -425,274 +425,274 @@ ms.locfileid: "369865"
      }
     /*** Output copied from Infolog:Message (11:22:16 am)w binaryIoObject is NOT null, Good.r binaryIoObject is NOT null, Good.hello worldgoodbye solar systemr, no more records.***/
 
-### <a name="method-finalize"></a><span data-ttu-id="0a4a1-273">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0a4a1-273">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="f712a-273">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="f712a-273">Method finalize</span></span>
 
-<span data-ttu-id="0a4a1-274">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-274">Closes the file and, if data was written, flushes the file buffers to disk.</span></span>
+<span data-ttu-id="f712a-274">ファイルを閉じ、データが書き込まれている場合、ファイル バッファーをディスクにフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="f712a-274">Closes the file and, if data was written, flushes the file buffers to disk.</span></span>
 
     public void finalize()
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-275">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-275">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-275">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-275">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-276">通常、スコープを離れることでオブジェクトを確定します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-276">Typically, you finalize the object by leaving the scope.</span></span> <span data-ttu-id="0a4a1-277">したがって、確定メソッドは、通常は直接呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-277">Therefore, the finalize method is not usually called directly.</span></span> <span data-ttu-id="0a4a1-278">記述された出力はオブジェクトが終了するまで無効です。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-278">Written output is not valid until the object is finalized.</span></span>
+<span data-ttu-id="f712a-276">通常、スコープを離れることでオブジェクトを確定します。</span><span class="sxs-lookup"><span data-stu-id="f712a-276">Typically, you finalize the object by leaving the scope.</span></span> <span data-ttu-id="f712a-277">したがって、確定メソッドは、通常は直接呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="f712a-277">Therefore, the finalize method is not usually called directly.</span></span> <span data-ttu-id="f712a-278">記述された出力はオブジェクトが終了するまで無効です。</span><span class="sxs-lookup"><span data-stu-id="f712a-278">Written output is not valid until the object is finalized.</span></span>
 
-## <a name="class-bindata"></a><span data-ttu-id="0a4a1-279">クラス BinData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-279">Class BinData</span></span>
+## <a name="class-bindata"></a><span data-ttu-id="f712a-279">クラス BinData</span><span class="sxs-lookup"><span data-stu-id="f712a-279">Class BinData</span></span>
     class BinData extends Object
 
-### <a name="remarks"></a><span data-ttu-id="0a4a1-280">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-280">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="f712a-280">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-280">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="0a4a1-281">例</span><span class="sxs-lookup"><span data-stu-id="0a4a1-281">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="f712a-281">例</span><span class="sxs-lookup"><span data-stu-id="f712a-281">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="0a4a1-282">メソッド</span><span class="sxs-lookup"><span data-stu-id="0a4a1-282">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="f712a-282">メソッド</span><span class="sxs-lookup"><span data-stu-id="f712a-282">Methods</span></span>
 
-| <span data-ttu-id="0a4a1-283">方法</span><span class="sxs-lookup"><span data-stu-id="0a4a1-283">Method</span></span>                                                                | <span data-ttu-id="0a4a1-284">説明</span><span class="sxs-lookup"><span data-stu-id="0a4a1-284">Description</span></span>                                   |
+| <span data-ttu-id="f712a-283">方法</span><span class="sxs-lookup"><span data-stu-id="f712a-283">Method</span></span>                                                                | <span data-ttu-id="f712a-284">説明</span><span class="sxs-lookup"><span data-stu-id="f712a-284">Description</span></span>                                   |
 |-----------------------------------------------------------------------|-----------------------------------------------|
-| <span data-ttu-id="0a4a1-285">public boolean appendToFile(str filename)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-285">public boolean appendToFile(str filename)</span></span>                             |                                               |
-| <span data-ttu-id="0a4a1-286">public str ascii85Encode()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-286">public str ascii85Encode()</span></span>                                            |                                               |
-| <span data-ttu-id="0a4a1-287">public str base64Encode()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-287">public str base64Encode()</span></span>                                             |                                               |
-| <span data-ttu-id="0a4a1-288">public int compressLZ77(int windowBits)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-288">public int compressLZ77(int windowBits)</span></span>                               |                                               |
-| <span data-ttu-id="0a4a1-289">public boolean copyData(BinData data, \[int offset\], \[int length\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-289">public boolean copyData(BinData data, \[int offset\], \[int length\])</span></span> |                                               |
-| <span data-ttu-id="0a4a1-290">public int decompressLZ77()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-290">public int decompressLZ77()</span></span>                                           |                                               |
-| <span data-ttu-id="0a4a1-291">public str getAsciiData()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-291">public str getAsciiData()</span></span>                                             |                                               |
-| <span data-ttu-id="0a4a1-292">public container getData()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-292">public container getData()</span></span>                                            |                                               |
-| <span data-ttu-id="0a4a1-293">public str getStrData()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-293">public str getStrData()</span></span>                                               |                                               |
-| <span data-ttu-id="0a4a1-294">public COMVariant getVariant()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-294">public COMVariant getVariant()</span></span>                                        |                                               |
-| <span data-ttu-id="0a4a1-295">public boolean loadFile(str filename, \[int offset\], \[int length\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-295">public boolean loadFile(str filename, \[int offset\], \[int length\])</span></span> |                                               |
-| <span data-ttu-id="0a4a1-296">public boolean saveFile(str filename)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-296">public boolean saveFile(str filename)</span></span>                                 |                                               |
-| <span data-ttu-id="0a4a1-297">public int size()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-297">public int size()</span></span>                                                     |                                               |
-| <span data-ttu-id="0a4a1-298">::public static str dataToString(container data)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-298">::public static str dataToString(container data)</span></span>                      |                                               |
-| <span data-ttu-id="0a4a1-299">::public static container loadFromAscii85(str ascii85EncodedString)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-299">::public static container loadFromAscii85(str ascii85EncodedString)</span></span>   |                                               |
-| <span data-ttu-id="0a4a1-300">::public static container loadFromBase64(str base64EncodedString)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-300">::public static container loadFromBase64(str base64EncodedString)</span></span>     |                                               |
-| <span data-ttu-id="0a4a1-301">::public static container stringToData(str string)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-301">::public static container stringToData(str string)</span></span>                    |                                               |
-| <span data-ttu-id="0a4a1-302">public void setStrData(str data)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-302">public void setStrData(str data)</span></span>                                      |                                               |
-| <span data-ttu-id="0a4a1-303">public void setVariant(COMVariant data)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-303">public void setVariant(COMVariant data)</span></span>                               |                                               |
-| <span data-ttu-id="0a4a1-304">public void appendData(BinData binData)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-304">public void appendData(BinData binData)</span></span>                               |                                               |
-| <span data-ttu-id="0a4a1-305">public void new()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-305">public void new()</span></span>                                                     | <span data-ttu-id="0a4a1-306">BinData クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-306">Initializes an instance of the BinData class.</span></span> |
-| <span data-ttu-id="0a4a1-307">public void setBinaryData(Binary binary)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-307">public void setBinaryData(Binary binary)</span></span>                              |                                               |
-| <span data-ttu-id="0a4a1-308">public void setAsciiData(str data, \[int codePage\])</span><span class="sxs-lookup"><span data-stu-id="0a4a1-308">public void setAsciiData(str data, \[int codePage\])</span></span>                  |                                               |
-| <span data-ttu-id="0a4a1-309">public void setData(container data)</span><span class="sxs-lookup"><span data-stu-id="0a4a1-309">public void setData(container data)</span></span>                                   |                                               |
-| <span data-ttu-id="0a4a1-310">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="0a4a1-310">public void finalize()</span></span>                                                |                                               |
+| <span data-ttu-id="f712a-285">public boolean appendToFile(str filename)</span><span class="sxs-lookup"><span data-stu-id="f712a-285">public boolean appendToFile(str filename)</span></span>                             |                                               |
+| <span data-ttu-id="f712a-286">public str ascii85Encode()</span><span class="sxs-lookup"><span data-stu-id="f712a-286">public str ascii85Encode()</span></span>                                            |                                               |
+| <span data-ttu-id="f712a-287">public str base64Encode()</span><span class="sxs-lookup"><span data-stu-id="f712a-287">public str base64Encode()</span></span>                                             |                                               |
+| <span data-ttu-id="f712a-288">public int compressLZ77(int windowBits)</span><span class="sxs-lookup"><span data-stu-id="f712a-288">public int compressLZ77(int windowBits)</span></span>                               |                                               |
+| <span data-ttu-id="f712a-289">public boolean copyData(BinData data, \[int offset\], \[int length\])</span><span class="sxs-lookup"><span data-stu-id="f712a-289">public boolean copyData(BinData data, \[int offset\], \[int length\])</span></span> |                                               |
+| <span data-ttu-id="f712a-290">public int decompressLZ77()</span><span class="sxs-lookup"><span data-stu-id="f712a-290">public int decompressLZ77()</span></span>                                           |                                               |
+| <span data-ttu-id="f712a-291">public str getAsciiData()</span><span class="sxs-lookup"><span data-stu-id="f712a-291">public str getAsciiData()</span></span>                                             |                                               |
+| <span data-ttu-id="f712a-292">public container getData()</span><span class="sxs-lookup"><span data-stu-id="f712a-292">public container getData()</span></span>                                            |                                               |
+| <span data-ttu-id="f712a-293">public str getStrData()</span><span class="sxs-lookup"><span data-stu-id="f712a-293">public str getStrData()</span></span>                                               |                                               |
+| <span data-ttu-id="f712a-294">public COMVariant getVariant()</span><span class="sxs-lookup"><span data-stu-id="f712a-294">public COMVariant getVariant()</span></span>                                        |                                               |
+| <span data-ttu-id="f712a-295">public boolean loadFile(str filename, \[int offset\], \[int length\])</span><span class="sxs-lookup"><span data-stu-id="f712a-295">public boolean loadFile(str filename, \[int offset\], \[int length\])</span></span> |                                               |
+| <span data-ttu-id="f712a-296">public boolean saveFile(str filename)</span><span class="sxs-lookup"><span data-stu-id="f712a-296">public boolean saveFile(str filename)</span></span>                                 |                                               |
+| <span data-ttu-id="f712a-297">public int size()</span><span class="sxs-lookup"><span data-stu-id="f712a-297">public int size()</span></span>                                                     |                                               |
+| <span data-ttu-id="f712a-298">::public static str dataToString(container data)</span><span class="sxs-lookup"><span data-stu-id="f712a-298">::public static str dataToString(container data)</span></span>                      |                                               |
+| <span data-ttu-id="f712a-299">::public static container loadFromAscii85(str ascii85EncodedString)</span><span class="sxs-lookup"><span data-stu-id="f712a-299">::public static container loadFromAscii85(str ascii85EncodedString)</span></span>   |                                               |
+| <span data-ttu-id="f712a-300">::public static container loadFromBase64(str base64EncodedString)</span><span class="sxs-lookup"><span data-stu-id="f712a-300">::public static container loadFromBase64(str base64EncodedString)</span></span>     |                                               |
+| <span data-ttu-id="f712a-301">::public static container stringToData(str string)</span><span class="sxs-lookup"><span data-stu-id="f712a-301">::public static container stringToData(str string)</span></span>                    |                                               |
+| <span data-ttu-id="f712a-302">public void setStrData(str data)</span><span class="sxs-lookup"><span data-stu-id="f712a-302">public void setStrData(str data)</span></span>                                      |                                               |
+| <span data-ttu-id="f712a-303">public void setVariant(COMVariant data)</span><span class="sxs-lookup"><span data-stu-id="f712a-303">public void setVariant(COMVariant data)</span></span>                               |                                               |
+| <span data-ttu-id="f712a-304">public void appendData(BinData binData)</span><span class="sxs-lookup"><span data-stu-id="f712a-304">public void appendData(BinData binData)</span></span>                               |                                               |
+| <span data-ttu-id="f712a-305">public void new()</span><span class="sxs-lookup"><span data-stu-id="f712a-305">public void new()</span></span>                                                     | <span data-ttu-id="f712a-306">BinData クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="f712a-306">Initializes an instance of the BinData class.</span></span> |
+| <span data-ttu-id="f712a-307">public void setBinaryData(Binary binary)</span><span class="sxs-lookup"><span data-stu-id="f712a-307">public void setBinaryData(Binary binary)</span></span>                              |                                               |
+| <span data-ttu-id="f712a-308">public void setAsciiData(str data, \[int codePage\])</span><span class="sxs-lookup"><span data-stu-id="f712a-308">public void setAsciiData(str data, \[int codePage\])</span></span>                  |                                               |
+| <span data-ttu-id="f712a-309">public void setData(container data)</span><span class="sxs-lookup"><span data-stu-id="f712a-309">public void setData(container data)</span></span>                                   |                                               |
+| <span data-ttu-id="f712a-310">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="f712a-310">public void finalize()</span></span>                                                |                                               |
 
-### <a name="method-appendtofile"></a><span data-ttu-id="0a4a1-311">メソッド appendToFile</span><span class="sxs-lookup"><span data-stu-id="0a4a1-311">Method appendToFile</span></span>
+### <a name="method-appendtofile"></a><span data-ttu-id="f712a-311">メソッド appendToFile</span><span class="sxs-lookup"><span data-stu-id="f712a-311">Method appendToFile</span></span>
 
     public boolean appendToFile(str filename)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-312">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-312">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-312">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-312">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-313">filename</span><span class="sxs-lookup"><span data-stu-id="0a4a1-313">filename</span></span>  
+<span data-ttu-id="f712a-313">filename</span><span class="sxs-lookup"><span data-stu-id="f712a-313">filename</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-314">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-314">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-314">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-314">Return Value</span></span>
 
-### <a name="method-ascii85encode"></a><span data-ttu-id="0a4a1-315">メソッド ascii85Encode</span><span class="sxs-lookup"><span data-stu-id="0a4a1-315">Method ascii85Encode</span></span>
+### <a name="method-ascii85encode"></a><span data-ttu-id="f712a-315">メソッド ascii85Encode</span><span class="sxs-lookup"><span data-stu-id="f712a-315">Method ascii85Encode</span></span>
 
     public str ascii85Encode()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-316">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-316">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-316">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-316">Return Value</span></span>
 
-### <a name="method-base64encode"></a><span data-ttu-id="0a4a1-317">メソッド base64Encode</span><span class="sxs-lookup"><span data-stu-id="0a4a1-317">Method base64Encode</span></span>
+### <a name="method-base64encode"></a><span data-ttu-id="f712a-317">メソッド base64Encode</span><span class="sxs-lookup"><span data-stu-id="f712a-317">Method base64Encode</span></span>
 
     public str base64Encode()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-318">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-318">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-318">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-318">Return Value</span></span>
 
-### <a name="method-compresslz77"></a><span data-ttu-id="0a4a1-319">メソッド compressLZ77</span><span class="sxs-lookup"><span data-stu-id="0a4a1-319">Method compressLZ77</span></span>
+### <a name="method-compresslz77"></a><span data-ttu-id="f712a-319">メソッド compressLZ77</span><span class="sxs-lookup"><span data-stu-id="f712a-319">Method compressLZ77</span></span>
 
     public int compressLZ77(int windowBits)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-320">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-320">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-320">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-320">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-321">windowBits</span><span class="sxs-lookup"><span data-stu-id="0a4a1-321">windowBits</span></span>  
+<span data-ttu-id="f712a-321">windowBits</span><span class="sxs-lookup"><span data-stu-id="f712a-321">windowBits</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-322">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-322">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-322">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-322">Return Value</span></span>
 
-### <a name="method-copydata"></a><span data-ttu-id="0a4a1-323">メソッド copyData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-323">Method copyData</span></span>
+### <a name="method-copydata"></a><span data-ttu-id="f712a-323">メソッド copyData</span><span class="sxs-lookup"><span data-stu-id="f712a-323">Method copyData</span></span>
 
     public boolean copyData(BinData data, [int offset], [int length])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-324">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-324">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-324">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-324">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-325">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-325">data</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="0a4a1-326">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-326">offset</span></span>  
+<span data-ttu-id="f712a-325">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-325">data</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-327">length</span><span class="sxs-lookup"><span data-stu-id="0a4a1-327">length</span></span>  
+<span data-ttu-id="f712a-326">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-326">offset</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-328">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-328">Return Value</span></span>
+<!-- -->
 
-### <a name="method-decompresslz77"></a><span data-ttu-id="0a4a1-329">メソッド decompressLZ77</span><span class="sxs-lookup"><span data-stu-id="0a4a1-329">Method decompressLZ77</span></span>
+<span data-ttu-id="f712a-327">length</span><span class="sxs-lookup"><span data-stu-id="f712a-327">length</span></span>  
+
+#### <a name="return-value"></a><span data-ttu-id="f712a-328">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-328">Return Value</span></span>
+
+### <a name="method-decompresslz77"></a><span data-ttu-id="f712a-329">メソッド decompressLZ77</span><span class="sxs-lookup"><span data-stu-id="f712a-329">Method decompressLZ77</span></span>
 
     public int decompressLZ77()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-330">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-330">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-330">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-330">Return Value</span></span>
 
-### <a name="method-getasciidata"></a><span data-ttu-id="0a4a1-331">メソッド getAsciiData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-331">Method getAsciiData</span></span>
+### <a name="method-getasciidata"></a><span data-ttu-id="f712a-331">メソッド getAsciiData</span><span class="sxs-lookup"><span data-stu-id="f712a-331">Method getAsciiData</span></span>
 
     public str getAsciiData()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-332">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-332">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-332">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-332">Return Value</span></span>
 
-### <a name="method-getdata"></a><span data-ttu-id="0a4a1-333">メソッド getData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-333">Method getData</span></span>
+### <a name="method-getdata"></a><span data-ttu-id="f712a-333">メソッド getData</span><span class="sxs-lookup"><span data-stu-id="f712a-333">Method getData</span></span>
 
     public container getData()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-334">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-334">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-334">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-334">Return Value</span></span>
 
-### <a name="method-getstrdata"></a><span data-ttu-id="0a4a1-335">メソッド getStrData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-335">Method getStrData</span></span>
+### <a name="method-getstrdata"></a><span data-ttu-id="f712a-335">メソッド getStrData</span><span class="sxs-lookup"><span data-stu-id="f712a-335">Method getStrData</span></span>
 
     public str getStrData()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-336">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-336">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-336">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-336">Return Value</span></span>
 
-### <a name="method-getvariant"></a><span data-ttu-id="0a4a1-337">メソッド getVariant</span><span class="sxs-lookup"><span data-stu-id="0a4a1-337">Method getVariant</span></span>
+### <a name="method-getvariant"></a><span data-ttu-id="f712a-337">メソッド getVariant</span><span class="sxs-lookup"><span data-stu-id="f712a-337">Method getVariant</span></span>
 
     public COMVariant getVariant()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-338">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-338">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-338">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-338">Return Value</span></span>
 
-### <a name="method-loadfile"></a><span data-ttu-id="0a4a1-339">メソッド loadFile</span><span class="sxs-lookup"><span data-stu-id="0a4a1-339">Method loadFile</span></span>
+### <a name="method-loadfile"></a><span data-ttu-id="f712a-339">メソッド loadFile</span><span class="sxs-lookup"><span data-stu-id="f712a-339">Method loadFile</span></span>
 
     public boolean loadFile(str filename, [int offset], [int length])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-340">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-340">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-340">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-340">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-341">filename</span><span class="sxs-lookup"><span data-stu-id="0a4a1-341">filename</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="0a4a1-342">相殺</span><span class="sxs-lookup"><span data-stu-id="0a4a1-342">offset</span></span>  
+<span data-ttu-id="f712a-341">filename</span><span class="sxs-lookup"><span data-stu-id="f712a-341">filename</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-343">length</span><span class="sxs-lookup"><span data-stu-id="0a4a1-343">length</span></span>  
+<span data-ttu-id="f712a-342">相殺</span><span class="sxs-lookup"><span data-stu-id="f712a-342">offset</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-344">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-344">Return Value</span></span>
+<!-- -->
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-345">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-345">Remarks</span></span>
+<span data-ttu-id="f712a-343">length</span><span class="sxs-lookup"><span data-stu-id="f712a-343">length</span></span>  
 
-<span data-ttu-id="0a4a1-346">攻撃者が loadFile メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-346">If an attacker can control input to the loadFile method, a security risk exists.</span></span> <span data-ttu-id="0a4a1-347">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-347">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="0a4a1-348">サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-348">Calls to this method on the server require permission.</span></span> <span data-ttu-id="0a4a1-349">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-349">Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-344">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-344">Return Value</span></span>
 
-### <a name="method-savefile"></a><span data-ttu-id="0a4a1-350">メソッド saveFile</span><span class="sxs-lookup"><span data-stu-id="0a4a1-350">Method saveFile</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-345">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-345">Remarks</span></span>
+
+<span data-ttu-id="f712a-346">攻撃者が loadFile メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="f712a-346">If an attacker can control input to the loadFile method, a security risk exists.</span></span> <span data-ttu-id="f712a-347">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-347">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="f712a-348">サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="f712a-348">Calls to this method on the server require permission.</span></span> <span data-ttu-id="f712a-349">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f712a-349">Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
+
+### <a name="method-savefile"></a><span data-ttu-id="f712a-350">メソッド saveFile</span><span class="sxs-lookup"><span data-stu-id="f712a-350">Method saveFile</span></span>
 
     public boolean saveFile(str filename)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-351">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-351">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-351">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-351">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-352">filename</span><span class="sxs-lookup"><span data-stu-id="0a4a1-352">filename</span></span>  
+<span data-ttu-id="f712a-352">filename</span><span class="sxs-lookup"><span data-stu-id="f712a-352">filename</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-353">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-353">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-353">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-353">Return Value</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="0a4a1-354">備考</span><span class="sxs-lookup"><span data-stu-id="0a4a1-354">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="f712a-354">備考</span><span class="sxs-lookup"><span data-stu-id="f712a-354">Remarks</span></span>
 
-<span data-ttu-id="0a4a1-355">攻撃者が saveFile メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-355">If an attacker can control input to the saveFile method, a security risk exists.</span></span> <span data-ttu-id="0a4a1-356">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-356">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="0a4a1-357">サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-357">Calls to this method on the server require permission.</span></span> <span data-ttu-id="0a4a1-358">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-358">Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
+<span data-ttu-id="f712a-355">攻撃者が saveFile メソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。</span><span class="sxs-lookup"><span data-stu-id="f712a-355">If an attacker can control input to the saveFile method, a security risk exists.</span></span> <span data-ttu-id="f712a-356">したがって、このメソッドは、コード アクセス セキュリティで実行されます。</span><span class="sxs-lookup"><span data-stu-id="f712a-356">Therefore, this method runs under Code Access Security.</span></span> <span data-ttu-id="f712a-357">サーバー上でこのメソッドを呼び出すには、アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="f712a-357">Calls to this method on the server require permission.</span></span> <span data-ttu-id="f712a-358">ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f712a-358">Make sure that the user has development privileges by setting the security key to SysDevelopment on the control that calls this method.</span></span>
 
-### <a name="method-size"></a><span data-ttu-id="0a4a1-359">メソッド size</span><span class="sxs-lookup"><span data-stu-id="0a4a1-359">Method size</span></span>
+### <a name="method-size"></a><span data-ttu-id="f712a-359">メソッド size</span><span class="sxs-lookup"><span data-stu-id="f712a-359">Method size</span></span>
 
     public int size()
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-360">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-360">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-360">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-360">Return Value</span></span>
 
-### <a name="method-datatostring"></a><span data-ttu-id="0a4a1-361">メソッド dataToString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-361">Method dataToString</span></span>
+### <a name="method-datatostring"></a><span data-ttu-id="f712a-361">メソッド dataToString</span><span class="sxs-lookup"><span data-stu-id="f712a-361">Method dataToString</span></span>
 
     public static str dataToString(container data)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-362">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-362">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-362">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-362">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-363">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-363">data</span></span>  
+<span data-ttu-id="f712a-363">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-363">data</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-364">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-364">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-364">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-364">Return Value</span></span>
 
-### <a name="method-loadfromascii85"></a><span data-ttu-id="0a4a1-365">メソッド loadFromAscii85</span><span class="sxs-lookup"><span data-stu-id="0a4a1-365">Method loadFromAscii85</span></span>
+### <a name="method-loadfromascii85"></a><span data-ttu-id="f712a-365">メソッド loadFromAscii85</span><span class="sxs-lookup"><span data-stu-id="f712a-365">Method loadFromAscii85</span></span>
 
     public static container loadFromAscii85(str ascii85EncodedString)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-366">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-366">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-366">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-366">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-367">ascii85EncodedString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-367">ascii85EncodedString</span></span>  
+<span data-ttu-id="f712a-367">ascii85EncodedString</span><span class="sxs-lookup"><span data-stu-id="f712a-367">ascii85EncodedString</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-368">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-368">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-368">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-368">Return Value</span></span>
 
-### <a name="method-loadfrombase64"></a><span data-ttu-id="0a4a1-369">メソッド loadFromBase64</span><span class="sxs-lookup"><span data-stu-id="0a4a1-369">Method loadFromBase64</span></span>
+### <a name="method-loadfrombase64"></a><span data-ttu-id="f712a-369">メソッド loadFromBase64</span><span class="sxs-lookup"><span data-stu-id="f712a-369">Method loadFromBase64</span></span>
 
     public static container loadFromBase64(str base64EncodedString)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-370">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-370">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-370">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-371">base64EncodedString</span><span class="sxs-lookup"><span data-stu-id="0a4a1-371">base64EncodedString</span></span>  
+<span data-ttu-id="f712a-371">base64EncodedString</span><span class="sxs-lookup"><span data-stu-id="f712a-371">base64EncodedString</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-372">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-372">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-372">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-372">Return Value</span></span>
 
-### <a name="method-stringtodata"></a><span data-ttu-id="0a4a1-373">メソッド stringToData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-373">Method stringToData</span></span>
+### <a name="method-stringtodata"></a><span data-ttu-id="f712a-373">メソッド stringToData</span><span class="sxs-lookup"><span data-stu-id="f712a-373">Method stringToData</span></span>
 
     public static container stringToData(str string)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-374">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-374">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-374">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-374">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-375">string</span><span class="sxs-lookup"><span data-stu-id="0a4a1-375">string</span></span>  
+<span data-ttu-id="f712a-375">string</span><span class="sxs-lookup"><span data-stu-id="f712a-375">string</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="0a4a1-376">戻り値</span><span class="sxs-lookup"><span data-stu-id="0a4a1-376">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="f712a-376">戻り値</span><span class="sxs-lookup"><span data-stu-id="f712a-376">Return Value</span></span>
 
-### <a name="method-setstrdata"></a><span data-ttu-id="0a4a1-377">メソッド setStrData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-377">Method setStrData</span></span>
+### <a name="method-setstrdata"></a><span data-ttu-id="f712a-377">メソッド setStrData</span><span class="sxs-lookup"><span data-stu-id="f712a-377">Method setStrData</span></span>
 
     public void setStrData(str data)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-378">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-378">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-378">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-378">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-379">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-379">data</span></span>  
+<span data-ttu-id="f712a-379">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-379">data</span></span>  
 
-### <a name="method-setvariant"></a><span data-ttu-id="0a4a1-380">メソッド setVariant</span><span class="sxs-lookup"><span data-stu-id="0a4a1-380">Method setVariant</span></span>
+### <a name="method-setvariant"></a><span data-ttu-id="f712a-380">メソッド setVariant</span><span class="sxs-lookup"><span data-stu-id="f712a-380">Method setVariant</span></span>
 
     public void setVariant(COMVariant data)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-381">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-381">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-381">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-381">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-382">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-382">data</span></span>  
+<span data-ttu-id="f712a-382">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-382">data</span></span>  
 
-### <a name="method-appenddata"></a><span data-ttu-id="0a4a1-383">メソッド appendData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-383">Method appendData</span></span>
+### <a name="method-appenddata"></a><span data-ttu-id="f712a-383">メソッド appendData</span><span class="sxs-lookup"><span data-stu-id="f712a-383">Method appendData</span></span>
 
     public void appendData(BinData binData)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-384">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-384">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-384">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-384">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-385">binData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-385">binData</span></span>  
+<span data-ttu-id="f712a-385">binData</span><span class="sxs-lookup"><span data-stu-id="f712a-385">binData</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="0a4a1-386">メソッド new</span><span class="sxs-lookup"><span data-stu-id="0a4a1-386">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="f712a-386">メソッド new</span><span class="sxs-lookup"><span data-stu-id="f712a-386">Method new</span></span>
 
-<span data-ttu-id="0a4a1-387">BinData クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="0a4a1-387">Initializes an instance of the BinData class.</span></span>
+<span data-ttu-id="f712a-387">BinData クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="f712a-387">Initializes an instance of the BinData class.</span></span>
 
     public void new()
 
-### <a name="method-setbinarydata"></a><span data-ttu-id="0a4a1-388">メソッド setBinaryData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-388">Method setBinaryData</span></span>
+### <a name="method-setbinarydata"></a><span data-ttu-id="f712a-388">メソッド setBinaryData</span><span class="sxs-lookup"><span data-stu-id="f712a-388">Method setBinaryData</span></span>
 
     public void setBinaryData(Binary binary)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-389">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-389">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-389">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-389">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-390">binary</span><span class="sxs-lookup"><span data-stu-id="0a4a1-390">binary</span></span>  
+<span data-ttu-id="f712a-390">binary</span><span class="sxs-lookup"><span data-stu-id="f712a-390">binary</span></span>  
 
-### <a name="method-setasciidata"></a><span data-ttu-id="0a4a1-391">メソッド setAsciiData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-391">Method setAsciiData</span></span>
+### <a name="method-setasciidata"></a><span data-ttu-id="f712a-391">メソッド setAsciiData</span><span class="sxs-lookup"><span data-stu-id="f712a-391">Method setAsciiData</span></span>
 
     public void setAsciiData(str data, [int codePage])
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-392">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-392">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-392">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-392">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-393">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-393">data</span></span>  
+<span data-ttu-id="f712a-393">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-393">data</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="0a4a1-394">codePage</span><span class="sxs-lookup"><span data-stu-id="0a4a1-394">codePage</span></span>  
+<span data-ttu-id="f712a-394">codePage</span><span class="sxs-lookup"><span data-stu-id="f712a-394">codePage</span></span>  
 
-### <a name="method-setdata"></a><span data-ttu-id="0a4a1-395">メソッド setData</span><span class="sxs-lookup"><span data-stu-id="0a4a1-395">Method setData</span></span>
+### <a name="method-setdata"></a><span data-ttu-id="f712a-395">メソッド setData</span><span class="sxs-lookup"><span data-stu-id="f712a-395">Method setData</span></span>
 
     public void setData(container data)
 
-#### <a name="parameters"></a><span data-ttu-id="0a4a1-396">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0a4a1-396">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="f712a-396">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f712a-396">Parameters</span></span>
 
-<span data-ttu-id="0a4a1-397">データ</span><span class="sxs-lookup"><span data-stu-id="0a4a1-397">data</span></span>  
+<span data-ttu-id="f712a-397">データ</span><span class="sxs-lookup"><span data-stu-id="f712a-397">data</span></span>  
 
-### <a name="method-finalize"></a><span data-ttu-id="0a4a1-398">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="0a4a1-398">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="f712a-398">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="f712a-398">Method finalize</span></span>
 
     public void finalize()
 

@@ -17,49 +17,49 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 7b7540a1bffff8dea1a69f36cfad9317747f57c7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0036a1d6ea408f58ca84de0d2a782b0e0142ad2d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370028"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537282"
 ---
-# <a name="complete-tasks-in-business-process-modeler-bpm"></a><span data-ttu-id="6fef5-104">ビジネス プロセス モデラー (BPM) でのタスクの完了</span><span class="sxs-lookup"><span data-stu-id="6fef5-104">Complete tasks in Business process modeler (BPM)</span></span>
+# <a name="complete-tasks-in-business-process-modeler-bpm"></a><span data-ttu-id="4943c-104">ビジネス プロセス モデラー (BPM) でのタスクの完了</span><span class="sxs-lookup"><span data-stu-id="4943c-104">Complete tasks in Business process modeler (BPM)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="upload-a-task-recording"></a><span data-ttu-id="6fef5-105">タスク記録のアップロード</span><span class="sxs-lookup"><span data-stu-id="6fef5-105">Upload a task recording</span></span>
+## <a name="upload-a-task-recording"></a><span data-ttu-id="4943c-105">タスク記録のアップロード</span><span class="sxs-lookup"><span data-stu-id="4943c-105">Upload a task recording</span></span>
 
-1. <span data-ttu-id="6fef5-106">Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトの**業務プロセス ライブラリ**ページにて、タスク記録をアップロードするライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-106">In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.</span></span>
+1. <span data-ttu-id="4943c-106">Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトの**業務プロセス ライブラリ**ページにて、タスク記録をアップロードするライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="4943c-106">In Microsoft Dynamics Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.</span></span>
 
-    <span data-ttu-id="6fef5-107">![業務プロセス ライブラリ ページのライブラリ](./media/choose-library.PNG "業務プロセス ライブラリ ページのライブラリ")</span><span class="sxs-lookup"><span data-stu-id="6fef5-107">![Libraries on the Business process libraries page](./media/choose-library.PNG "Libraries on the Business process libraries page")</span></span>
+    <span data-ttu-id="4943c-107">![業務プロセス ライブラリ ページのライブラリ](./media/choose-library.PNG "業務プロセス ライブラリ ページのライブラリ")</span><span class="sxs-lookup"><span data-stu-id="4943c-107">![Libraries on the Business process libraries page](./media/choose-library.PNG "Libraries on the Business process libraries page")</span></span>
 
-2. <span data-ttu-id="6fef5-108">タスクの記録をアップロードするプロセスを選択します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-108">Select the process to upload the task recording to.</span></span> 
+2. <span data-ttu-id="4943c-108">タスクの記録をアップロードするプロセスを選択します。</span><span class="sxs-lookup"><span data-stu-id="4943c-108">Select the process to upload the task recording to.</span></span> 
 
-    <span data-ttu-id="6fef5-109">![プロセスを選択](./media/select-upload.PNG "プロセスを選択")</span><span class="sxs-lookup"><span data-stu-id="6fef5-109">![Selecting a process](./media/select-upload.PNG "Selecting a process")</span></span>
+    <span data-ttu-id="4943c-109">![プロセスを選択](./media/select-upload.PNG "プロセスを選択")</span><span class="sxs-lookup"><span data-stu-id="4943c-109">![Selecting a process](./media/select-upload.PNG "Selecting a process")</span></span>
 
-3. <span data-ttu-id="6fef5-110">右ウィンドウで**アップロード**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-110">In the right pane, select **Upload**.</span></span> <span data-ttu-id="6fef5-111">**参照** を選択して、アップロードするファイルを検索して選択し、次に **アップロード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-111">Select **Browse** to find and select the file to upload, and then select **Upload**.</span></span>
+3. <span data-ttu-id="4943c-110">右ウィンドウで**アップロード**を選択します。</span><span class="sxs-lookup"><span data-stu-id="4943c-110">In the right pane, select **Upload**.</span></span> <span data-ttu-id="4943c-111">**参照** を選択して、アップロードするファイルを検索して選択し、次に **アップロード** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4943c-111">Select **Browse** to find and select the file to upload, and then select **Upload**.</span></span>
 
-    <span data-ttu-id="6fef5-112">![AXTR ダイアログ ボックスのアップロード](./media/upload.PNG "AXTR ダイアログ ボックスのアップロード")</span><span class="sxs-lookup"><span data-stu-id="6fef5-112">![Upload AXTR dialog box](./media/upload.PNG "Upload AXTR dialog box")</span></span>
+    <span data-ttu-id="4943c-112">![AXTR ダイアログ ボックスのアップロード](./media/upload.PNG "AXTR ダイアログ ボックスのアップロード")</span><span class="sxs-lookup"><span data-stu-id="4943c-112">![Upload AXTR dialog box](./media/upload.PNG "Upload AXTR dialog box")</span></span>
 
-## <a name="export-a-methodology-to-word"></a><span data-ttu-id="6fef5-113">方法を Word へエクスポート</span><span class="sxs-lookup"><span data-stu-id="6fef5-113">Export a methodology to Word</span></span>
+## <a name="export-a-methodology-to-word"></a><span data-ttu-id="4943c-113">方法を Word へエクスポート</span><span class="sxs-lookup"><span data-stu-id="4943c-113">Export a methodology to Word</span></span>
 
-1. <span data-ttu-id="6fef5-114">LCS プロジェクトの**業務プロセス ライブラリ** ページで、エクスポートするライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-114">In your LCS project, on the **Business process libraries** page, select the library to export.</span></span>
-2. <span data-ttu-id="6fef5-115">エクスポートするプロセスを選択し、右ウィンドウで **ドキュメント** を選択してダウンロードを開始します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-115">Select the process to export, and then, in the right pane, select **Doc** to begin the download.</span></span>
+1. <span data-ttu-id="4943c-114">LCS プロジェクトの**業務プロセス ライブラリ** ページで、エクスポートするライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="4943c-114">In your LCS project, on the **Business process libraries** page, select the library to export.</span></span>
+2. <span data-ttu-id="4943c-115">エクスポートするプロセスを選択し、右ウィンドウで **ドキュメント** を選択してダウンロードを開始します。</span><span class="sxs-lookup"><span data-stu-id="4943c-115">Select the process to export, and then, in the right pane, select **Doc** to begin the download.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="6fef5-116">この手法は、選択したプロセス ステップから開始されます。</span><span class="sxs-lookup"><span data-stu-id="6fef5-116">The methodology will begin from the process step that you selected.</span></span>
+    > <span data-ttu-id="4943c-116">この手法は、選択したプロセス ステップから開始されます。</span><span class="sxs-lookup"><span data-stu-id="4943c-116">The methodology will begin from the process step that you selected.</span></span>
 
-## <a name="publish-a-bpm-library"></a><span data-ttu-id="6fef5-117">BPM ライブラリの公開</span><span class="sxs-lookup"><span data-stu-id="6fef5-117">Publish a BPM library</span></span>
+## <a name="publish-a-bpm-library"></a><span data-ttu-id="4943c-117">BPM ライブラリの公開</span><span class="sxs-lookup"><span data-stu-id="4943c-117">Publish a BPM library</span></span>
 
-- <span data-ttu-id="6fef5-118">LCS プロジェクトの**業務プロセス ライブラリ** ページで、コピーするライブラリのタイルの省略記号ボタン (...) を選択し、**パブリッシュ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-118">In your LCS project, on the **Business process libraries** page, on the tile for the library that you want to copy, select the ellipsis button (…), and then select **Publish**.</span></span>
+- <span data-ttu-id="4943c-118">LCS プロジェクトの**業務プロセス ライブラリ** ページで、コピーするライブラリのタイルの省略記号ボタン (...) を選択し、**パブリッシュ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="4943c-118">In your LCS project, on the **Business process libraries** page, on the tile for the library that you want to copy, select the ellipsis button (…), and then select **Publish**.</span></span>
 
-    <span data-ttu-id="6fef5-119">![BPM ライブラリを発行する](./media/PUB_DIS.png "BPM ライブラリを発行する")</span><span class="sxs-lookup"><span data-stu-id="6fef5-119">![Publishing a BPM library](./media/PUB_DIS.png "Publishing a BPM library")</span></span>
+    <span data-ttu-id="4943c-119">![BPM ライブラリを発行する](./media/PUB_DIS.png "BPM ライブラリを発行する")</span><span class="sxs-lookup"><span data-stu-id="4943c-119">![Publishing a BPM library](./media/PUB_DIS.png "Publishing a BPM library")</span></span>
 
-## <a name="distribute-a-bpm-library"></a><span data-ttu-id="6fef5-120">BPM ライブラリを配分</span><span class="sxs-lookup"><span data-stu-id="6fef5-120">Distribute a BPM library</span></span>
+## <a name="distribute-a-bpm-library"></a><span data-ttu-id="4943c-120">BPM ライブラリを配分</span><span class="sxs-lookup"><span data-stu-id="4943c-120">Distribute a BPM library</span></span>
 
-<span data-ttu-id="6fef5-121">BPM ライブラリを配布すると、そのライブラリは、組織に所属するすべてのユーザーが利用できます。</span><span class="sxs-lookup"><span data-stu-id="6fef5-121">When you distribute a BPM library, the library will be available to all users who are a part of your organization.</span></span> <span data-ttu-id="6fef5-122">つまり、組織のドメインを使用して LCS にサインインするすべてのユーザー (たとえば、 @contoso.com アカウントを持つすべてのユーザー)が利用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="6fef5-122">In other words, it will be available to all users who sign in to LCS by using your organization's domain (for example, all users who have an @contoso.com account).</span></span>
+<span data-ttu-id="4943c-121">BPM ライブラリを配布すると、そのライブラリは、組織に所属するすべてのユーザーが利用できます。</span><span class="sxs-lookup"><span data-stu-id="4943c-121">When you distribute a BPM library, the library will be available to all users who are a part of your organization.</span></span> <span data-ttu-id="4943c-122">つまり、組織のドメインを使用して LCS にサインインするすべてのユーザー (たとえば、 @contoso.com アカウントを持つすべてのユーザー)が利用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="4943c-122">In other words, it will be available to all users who sign in to LCS by using your organization's domain (for example, all users who have an @contoso.com account).</span></span>
 
-1. <span data-ttu-id="6fef5-123">プロジェクトに招待するよう顧客に依頼します。</span><span class="sxs-lookup"><span data-stu-id="6fef5-123">Ask the customer to invite you to his or her project.</span></span>
-2. <span data-ttu-id="6fef5-124">組織のアカウントを使用して、顧客の LCS プロジェクトにログインします。</span><span class="sxs-lookup"><span data-stu-id="6fef5-124">Sign in to the customer's LCS project by using your organization's account.</span></span>
-3. <span data-ttu-id="6fef5-125">**業務プロセス ライブラリ**ページで、ライブラリを**コーポレート ライブラリ**ウィンドウから、顧客のプロジェクトにコピーします。</span><span class="sxs-lookup"><span data-stu-id="6fef5-125">On the **Business process libraries** page, copy the library from the **Corporate libraries** pane to the customer's project.</span></span>
+1. <span data-ttu-id="4943c-123">プロジェクトに招待するよう顧客に依頼します。</span><span class="sxs-lookup"><span data-stu-id="4943c-123">Ask the customer to invite you to his or her project.</span></span>
+2. <span data-ttu-id="4943c-124">組織のアカウントを使用して、顧客の LCS プロジェクトにログインします。</span><span class="sxs-lookup"><span data-stu-id="4943c-124">Sign in to the customer's LCS project by using your organization's account.</span></span>
+3. <span data-ttu-id="4943c-125">**業務プロセス ライブラリ**ページで、ライブラリを**コーポレート ライブラリ**ウィンドウから、顧客のプロジェクトにコピーします。</span><span class="sxs-lookup"><span data-stu-id="4943c-125">On the **Business process libraries** page, copy the library from the **Corporate libraries** pane to the customer's project.</span></span>

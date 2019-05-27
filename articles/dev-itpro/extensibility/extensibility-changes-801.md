@@ -17,78 +17,78 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: App 8.0.1
-ms.openlocfilehash: e1e1b716a0bd15cc4a1ef47d8b8e741bce38a040
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6eb8bb075c90ea108d88a7bf5263c367ffeecc46
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369681"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537496"
 ---
-# <a name="extensibility-changes-in-finance-and-operations-update-801"></a><span data-ttu-id="95aff-103">Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="95aff-103">Extensibility changes in Finance and Operations update 8.0.1</span></span>
+# <a name="extensibility-changes-in-finance-and-operations-update-801"></a><span data-ttu-id="814f2-103">Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="814f2-103">Extensibility changes in Finance and Operations update 8.0.1</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="95aff-104">これは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 に実装された拡張機能の一覧です。</span><span class="sxs-lookup"><span data-stu-id="95aff-104">This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations update 8.0.1.</span></span> <span data-ttu-id="95aff-105">拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95aff-105">For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).</span></span>
+<span data-ttu-id="814f2-104">これは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 に実装された拡張機能の一覧です。</span><span class="sxs-lookup"><span data-stu-id="814f2-104">This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations update 8.0.1.</span></span> <span data-ttu-id="814f2-105">拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="814f2-105">For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).</span></span>
 
-## <a name="refactored-methods-to-support-extensibility"></a><span data-ttu-id="95aff-106">拡張性をサポートするためにリファクターされたメソッド</span><span class="sxs-lookup"><span data-stu-id="95aff-106">Refactored methods to support extensibility</span></span>
+## <a name="refactored-methods-to-support-extensibility"></a><span data-ttu-id="814f2-106">拡張性をサポートするためにリファクターされたメソッド</span><span class="sxs-lookup"><span data-stu-id="814f2-106">Refactored methods to support extensibility</span></span>
 
-<span data-ttu-id="95aff-107">これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。</span><span class="sxs-lookup"><span data-stu-id="95aff-107">These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.</span></span>
+<span data-ttu-id="814f2-107">これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。</span><span class="sxs-lookup"><span data-stu-id="814f2-107">These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.</span></span>
 
-| <span data-ttu-id="95aff-108">方法</span><span class="sxs-lookup"><span data-stu-id="95aff-108">Method</span></span>|
+| <span data-ttu-id="814f2-108">方法</span><span class="sxs-lookup"><span data-stu-id="814f2-108">Method</span></span>|
 | --------------- |
-|<span data-ttu-id="95aff-109">クラス ProjControlPeriod::PeriodInsert</span><span class="sxs-lookup"><span data-stu-id="95aff-109">Class ProjControlPeriod::PeriodInsert</span></span>|
-|<span data-ttu-id="95aff-110">クラス ProjInvoiceChoose::doSalesLine</span><span class="sxs-lookup"><span data-stu-id="95aff-110">Class ProjInvoiceChoose::doSalesLine</span></span>|
-|<span data-ttu-id="95aff-111">クラス CustInvoiceJour::printFreeTextJournal</span><span class="sxs-lookup"><span data-stu-id="95aff-111">Class CustInvoiceJour::printFreeTextJournal</span></span>|
-|<span data-ttu-id="95aff-112">クラス ProjCostControl.createEmptyTransactionType</span><span class="sxs-lookup"><span data-stu-id="95aff-112">Class ProjCostControl.createEmptyTransactionType</span></span>|
-|<span data-ttu-id="95aff-113">クラス ProjEstimate::autoGenerateEstimateLinesFromTask</span><span class="sxs-lookup"><span data-stu-id="95aff-113">Class ProjEstimate::autoGenerateEstimateLinesFromTask</span></span>|
-|<span data-ttu-id="95aff-114">クラス ProjEstimateDataContract.updateEstimates</span><span class="sxs-lookup"><span data-stu-id="95aff-114">Class ProjEstimateDataContract.updateEstimates</span></span>|
-|<span data-ttu-id="95aff-115">クラス ProjForecastBudget.Run</span><span class="sxs-lookup"><span data-stu-id="95aff-115">Class ProjForecastBudget.Run</span></span>|
-|<span data-ttu-id="95aff-116">クラス ProjHierarchyProvider.preDeleteHierarchy</span><span class="sxs-lookup"><span data-stu-id="95aff-116">Class ProjHierarchyProvider.preDeleteHierarchy</span></span>|
-|<span data-ttu-id="95aff-117">クラス ProjPlanVersionsManager::CopyTasks</span><span class="sxs-lookup"><span data-stu-id="95aff-117">Class ProjPlanVersionsManager::CopyTasks</span></span>|
-|<span data-ttu-id="95aff-118">クラス ProjPlanVersionsManager.createDraftFromPublishedVersion</span><span class="sxs-lookup"><span data-stu-id="95aff-118">Class ProjPlanVersionsManager.createDraftFromPublishedVersion</span></span>|
-|<span data-ttu-id="95aff-119">クラス ProjPlanVersionsManager.PublishQuotationSubHierarchy</span><span class="sxs-lookup"><span data-stu-id="95aff-119">Class ProjPlanVersionsManager.PublishQuotationSubHierarchy</span></span>|
-|<span data-ttu-id="95aff-120">クラス ProjPlanVersionsManager.CreateDraftVersion</span><span class="sxs-lookup"><span data-stu-id="95aff-120">Class ProjPlanVersionsManager.CreateDraftVersion</span></span>|
-|<span data-ttu-id="95aff-121">クラス ProjTask.addTask</span><span class="sxs-lookup"><span data-stu-id="95aff-121">Class ProjTask.addTask</span></span>|
-|<span data-ttu-id="95aff-122">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="95aff-122">Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
-|<span data-ttu-id="95aff-123">クラス VendOpenTrans.editMarkTrans</span><span class="sxs-lookup"><span data-stu-id="95aff-123">Class VendOpenTrans.editMarkTrans</span></span>|
-|<span data-ttu-id="95aff-124">クラス CustVendReversePosting.reverseTaxWithholdTrans</span><span class="sxs-lookup"><span data-stu-id="95aff-124">Class CustVendReversePosting.reverseTaxWithholdTrans</span></span>|
-|<span data-ttu-id="95aff-125">クラス CustVendSettle.postPennyDiff</span><span class="sxs-lookup"><span data-stu-id="95aff-125">Class CustVendSettle.postPennyDiff</span></span>|
-|<span data-ttu-id="95aff-126">クラス CustVendSettle.processStillOpenTransactions</span><span class="sxs-lookup"><span data-stu-id="95aff-126">Class CustVendSettle.processStillOpenTransactions</span></span>|
-|<span data-ttu-id="95aff-127">クラス InventTransferOrderOverviewDP.insertTmp</span><span class="sxs-lookup"><span data-stu-id="95aff-127">Class InventTransferOrderOverviewDP.insertTmp</span></span>|
-|<span data-ttu-id="95aff-128">クラス LedgerJournalTransCost.LedgerJournalTrans.Create</span><span class="sxs-lookup"><span data-stu-id="95aff-128">Class LedgerJournalTransCost.LedgerJournalTrans.Create</span></span>|
-|<span data-ttu-id="95aff-129">クラス ProjAdjustmentSelect.dialog</span><span class="sxs-lookup"><span data-stu-id="95aff-129">Class ProjAdjustmentSelect.dialog</span></span>|
-|<span data-ttu-id="95aff-130">クラス ProjEstimate.syncEstimateLinesFromTask</span><span class="sxs-lookup"><span data-stu-id="95aff-130">Class ProjEstimate.syncEstimateLinesFromTask</span></span>|
-|<span data-ttu-id="95aff-131">クラス ProjEstimateDataContract.UpdateEstimates</span><span class="sxs-lookup"><span data-stu-id="95aff-131">Class ProjEstimateDataContract.UpdateEstimates</span></span>|
-|<span data-ttu-id="95aff-132">クラス ProjForecastTransferFromWbs.transferToForecast</span><span class="sxs-lookup"><span data-stu-id="95aff-132">Class ProjForecastTransferFromWbs.transferToForecast</span></span>|
-|<span data-ttu-id="95aff-133">クラス ProjWizardActivityCtrl.insertDBOnServer</span><span class="sxs-lookup"><span data-stu-id="95aff-133">Class ProjWizardActivityCtrl.insertDBOnServer</span></span>|
-|<span data-ttu-id="95aff-134">クラス ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</span><span class="sxs-lookup"><span data-stu-id="95aff-134">Class ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</span></span>|
-|<span data-ttu-id="95aff-135">クラス ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</span><span class="sxs-lookup"><span data-stu-id="95aff-135">Class ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</span></span>|
-|<span data-ttu-id="95aff-136">クラス ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</span><span class="sxs-lookup"><span data-stu-id="95aff-136">Class ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</span></span>|
-|<span data-ttu-id="95aff-137">クラス ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</span><span class="sxs-lookup"><span data-stu-id="95aff-137">Class ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</span></span>|
-|<span data-ttu-id="95aff-138">クラス ProjWbsCostPlanningServerActions.executeDataRetrievalAction</span><span class="sxs-lookup"><span data-stu-id="95aff-138">Class ProjWbsCostPlanningServerActions.executeDataRetrievalAction</span></span>|
-|<span data-ttu-id="95aff-139">クラス ProjWbsCostPlanningServerActions.getProjectCategoryTypes</span><span class="sxs-lookup"><span data-stu-id="95aff-139">Class ProjWbsCostPlanningServerActions.getProjectCategoryTypes</span></span>|
-|<span data-ttu-id="95aff-140">クラス ProjWbsSchedulePlanningServerActions.executeAction</span><span class="sxs-lookup"><span data-stu-id="95aff-140">Class ProjWbsSchedulePlanningServerActions.executeAction</span></span>|
-|<span data-ttu-id="95aff-141">クラス ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</span><span class="sxs-lookup"><span data-stu-id="95aff-141">Class ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</span></span>|
-|<span data-ttu-id="95aff-142">クラス ProjStatisticCalc.validate</span><span class="sxs-lookup"><span data-stu-id="95aff-142">Class ProjStatisticCalc.validate</span></span>|
-|<span data-ttu-id="95aff-143">クラス WHSInventReserve.insert</span><span class="sxs-lookup"><span data-stu-id="95aff-143">Class WHSInventReserve.insert</span></span>|
-|<span data-ttu-id="95aff-144">クラス WHSInventReserveDelta.insert</span><span class="sxs-lookup"><span data-stu-id="95aff-144">Class WHSInventReserveDelta.insert</span></span>|
-|<span data-ttu-id="95aff-145">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="95aff-145">Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
-|<span data-ttu-id="95aff-146">クラス ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</span><span class="sxs-lookup"><span data-stu-id="95aff-146">Class ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</span></span>|
-|<span data-ttu-id="95aff-147">クラス LedgerJournalEngine.initTaxItemGroup</span><span class="sxs-lookup"><span data-stu-id="95aff-147">Class LedgerJournalEngine.initTaxItemGroup</span></span>|
-|<span data-ttu-id="95aff-148">クラス LedgerJournalEngine.initValue</span><span class="sxs-lookup"><span data-stu-id="95aff-148">Class LedgerJournalEngine.initValue</span></span>|
-|<span data-ttu-id="95aff-149">クラス ProjJournalTrans.mergeResourceDimensionDefault</span><span class="sxs-lookup"><span data-stu-id="95aff-149">Class ProjJournalTrans.mergeResourceDimensionDefault</span></span>|
-|<span data-ttu-id="95aff-150">クラス ProjTask.setTaskinfo</span><span class="sxs-lookup"><span data-stu-id="95aff-150">Class ProjTask.setTaskinfo</span></span>|
-|<span data-ttu-id="95aff-151">クラス ProjJournalName.standardJournalName</span><span class="sxs-lookup"><span data-stu-id="95aff-151">Class ProjJournalName.standardJournalName</span></span>|
-|<span data-ttu-id="95aff-152">フォーム ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="95aff-152">Form ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
+|<span data-ttu-id="814f2-109">クラス ProjControlPeriod::PeriodInsert</span><span class="sxs-lookup"><span data-stu-id="814f2-109">Class ProjControlPeriod::PeriodInsert</span></span>|
+|<span data-ttu-id="814f2-110">クラス ProjInvoiceChoose::doSalesLine</span><span class="sxs-lookup"><span data-stu-id="814f2-110">Class ProjInvoiceChoose::doSalesLine</span></span>|
+|<span data-ttu-id="814f2-111">クラス CustInvoiceJour::printFreeTextJournal</span><span class="sxs-lookup"><span data-stu-id="814f2-111">Class CustInvoiceJour::printFreeTextJournal</span></span>|
+|<span data-ttu-id="814f2-112">クラス ProjCostControl.createEmptyTransactionType</span><span class="sxs-lookup"><span data-stu-id="814f2-112">Class ProjCostControl.createEmptyTransactionType</span></span>|
+|<span data-ttu-id="814f2-113">クラス ProjEstimate::autoGenerateEstimateLinesFromTask</span><span class="sxs-lookup"><span data-stu-id="814f2-113">Class ProjEstimate::autoGenerateEstimateLinesFromTask</span></span>|
+|<span data-ttu-id="814f2-114">クラス ProjEstimateDataContract.updateEstimates</span><span class="sxs-lookup"><span data-stu-id="814f2-114">Class ProjEstimateDataContract.updateEstimates</span></span>|
+|<span data-ttu-id="814f2-115">クラス ProjForecastBudget.Run</span><span class="sxs-lookup"><span data-stu-id="814f2-115">Class ProjForecastBudget.Run</span></span>|
+|<span data-ttu-id="814f2-116">クラス ProjHierarchyProvider.preDeleteHierarchy</span><span class="sxs-lookup"><span data-stu-id="814f2-116">Class ProjHierarchyProvider.preDeleteHierarchy</span></span>|
+|<span data-ttu-id="814f2-117">クラス ProjPlanVersionsManager::CopyTasks</span><span class="sxs-lookup"><span data-stu-id="814f2-117">Class ProjPlanVersionsManager::CopyTasks</span></span>|
+|<span data-ttu-id="814f2-118">クラス ProjPlanVersionsManager.createDraftFromPublishedVersion</span><span class="sxs-lookup"><span data-stu-id="814f2-118">Class ProjPlanVersionsManager.createDraftFromPublishedVersion</span></span>|
+|<span data-ttu-id="814f2-119">クラス ProjPlanVersionsManager.PublishQuotationSubHierarchy</span><span class="sxs-lookup"><span data-stu-id="814f2-119">Class ProjPlanVersionsManager.PublishQuotationSubHierarchy</span></span>|
+|<span data-ttu-id="814f2-120">クラス ProjPlanVersionsManager.CreateDraftVersion</span><span class="sxs-lookup"><span data-stu-id="814f2-120">Class ProjPlanVersionsManager.CreateDraftVersion</span></span>|
+|<span data-ttu-id="814f2-121">クラス ProjTask.addTask</span><span class="sxs-lookup"><span data-stu-id="814f2-121">Class ProjTask.addTask</span></span>|
+|<span data-ttu-id="814f2-122">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="814f2-122">Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
+|<span data-ttu-id="814f2-123">クラス VendOpenTrans.editMarkTrans</span><span class="sxs-lookup"><span data-stu-id="814f2-123">Class VendOpenTrans.editMarkTrans</span></span>|
+|<span data-ttu-id="814f2-124">クラス CustVendReversePosting.reverseTaxWithholdTrans</span><span class="sxs-lookup"><span data-stu-id="814f2-124">Class CustVendReversePosting.reverseTaxWithholdTrans</span></span>|
+|<span data-ttu-id="814f2-125">クラス CustVendSettle.postPennyDiff</span><span class="sxs-lookup"><span data-stu-id="814f2-125">Class CustVendSettle.postPennyDiff</span></span>|
+|<span data-ttu-id="814f2-126">クラス CustVendSettle.processStillOpenTransactions</span><span class="sxs-lookup"><span data-stu-id="814f2-126">Class CustVendSettle.processStillOpenTransactions</span></span>|
+|<span data-ttu-id="814f2-127">クラス InventTransferOrderOverviewDP.insertTmp</span><span class="sxs-lookup"><span data-stu-id="814f2-127">Class InventTransferOrderOverviewDP.insertTmp</span></span>|
+|<span data-ttu-id="814f2-128">クラス LedgerJournalTransCost.LedgerJournalTrans.Create</span><span class="sxs-lookup"><span data-stu-id="814f2-128">Class LedgerJournalTransCost.LedgerJournalTrans.Create</span></span>|
+|<span data-ttu-id="814f2-129">クラス ProjAdjustmentSelect.dialog</span><span class="sxs-lookup"><span data-stu-id="814f2-129">Class ProjAdjustmentSelect.dialog</span></span>|
+|<span data-ttu-id="814f2-130">クラス ProjEstimate.syncEstimateLinesFromTask</span><span class="sxs-lookup"><span data-stu-id="814f2-130">Class ProjEstimate.syncEstimateLinesFromTask</span></span>|
+|<span data-ttu-id="814f2-131">クラス ProjEstimateDataContract.UpdateEstimates</span><span class="sxs-lookup"><span data-stu-id="814f2-131">Class ProjEstimateDataContract.UpdateEstimates</span></span>|
+|<span data-ttu-id="814f2-132">クラス ProjForecastTransferFromWbs.transferToForecast</span><span class="sxs-lookup"><span data-stu-id="814f2-132">Class ProjForecastTransferFromWbs.transferToForecast</span></span>|
+|<span data-ttu-id="814f2-133">クラス ProjWizardActivityCtrl.insertDBOnServer</span><span class="sxs-lookup"><span data-stu-id="814f2-133">Class ProjWizardActivityCtrl.insertDBOnServer</span></span>|
+|<span data-ttu-id="814f2-134">クラス ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</span><span class="sxs-lookup"><span data-stu-id="814f2-134">Class ProjTaskEstimatesSynchronizer.calcTotalEstimateLineHours</span></span>|
+|<span data-ttu-id="814f2-135">クラス ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</span><span class="sxs-lookup"><span data-stu-id="814f2-135">Class ProjTaskEstimatesSynchronizer.countNumberOfHourEstimateLines</span></span>|
+|<span data-ttu-id="814f2-136">クラス ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</span><span class="sxs-lookup"><span data-stu-id="814f2-136">Class ProjTaskEstimatesSynchronizer.syncExistingHourEstimatesWithTask</span></span>|
+|<span data-ttu-id="814f2-137">クラス ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</span><span class="sxs-lookup"><span data-stu-id="814f2-137">Class ProjTaskEstimatesSynchronizer.syncHourEstimatesWithTaskEffort</span></span>|
+|<span data-ttu-id="814f2-138">クラス ProjWbsCostPlanningServerActions.executeDataRetrievalAction</span><span class="sxs-lookup"><span data-stu-id="814f2-138">Class ProjWbsCostPlanningServerActions.executeDataRetrievalAction</span></span>|
+|<span data-ttu-id="814f2-139">クラス ProjWbsCostPlanningServerActions.getProjectCategoryTypes</span><span class="sxs-lookup"><span data-stu-id="814f2-139">Class ProjWbsCostPlanningServerActions.getProjectCategoryTypes</span></span>|
+|<span data-ttu-id="814f2-140">クラス ProjWbsSchedulePlanningServerActions.executeAction</span><span class="sxs-lookup"><span data-stu-id="814f2-140">Class ProjWbsSchedulePlanningServerActions.executeAction</span></span>|
+|<span data-ttu-id="814f2-141">クラス ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</span><span class="sxs-lookup"><span data-stu-id="814f2-141">Class ProjWbsSchedulePlanningServerActions.executeDataRetrievalAction</span></span>|
+|<span data-ttu-id="814f2-142">クラス ProjStatisticCalc.validate</span><span class="sxs-lookup"><span data-stu-id="814f2-142">Class ProjStatisticCalc.validate</span></span>|
+|<span data-ttu-id="814f2-143">クラス WHSInventReserve.insert</span><span class="sxs-lookup"><span data-stu-id="814f2-143">Class WHSInventReserve.insert</span></span>|
+|<span data-ttu-id="814f2-144">クラス WHSInventReserveDelta.insert</span><span class="sxs-lookup"><span data-stu-id="814f2-144">Class WHSInventReserveDelta.insert</span></span>|
+|<span data-ttu-id="814f2-145">クラス ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="814f2-145">Class ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
+|<span data-ttu-id="814f2-146">クラス ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</span><span class="sxs-lookup"><span data-stu-id="814f2-146">Class ProjJournalTransEmpl - Datasource: ProjJournalTrans.Validate</span></span>|
+|<span data-ttu-id="814f2-147">クラス LedgerJournalEngine.initTaxItemGroup</span><span class="sxs-lookup"><span data-stu-id="814f2-147">Class LedgerJournalEngine.initTaxItemGroup</span></span>|
+|<span data-ttu-id="814f2-148">クラス LedgerJournalEngine.initValue</span><span class="sxs-lookup"><span data-stu-id="814f2-148">Class LedgerJournalEngine.initValue</span></span>|
+|<span data-ttu-id="814f2-149">クラス ProjJournalTrans.mergeResourceDimensionDefault</span><span class="sxs-lookup"><span data-stu-id="814f2-149">Class ProjJournalTrans.mergeResourceDimensionDefault</span></span>|
+|<span data-ttu-id="814f2-150">クラス ProjTask.setTaskinfo</span><span class="sxs-lookup"><span data-stu-id="814f2-150">Class ProjTask.setTaskinfo</span></span>|
+|<span data-ttu-id="814f2-151">クラス ProjJournalName.standardJournalName</span><span class="sxs-lookup"><span data-stu-id="814f2-151">Class ProjJournalName.standardJournalName</span></span>|
+|<span data-ttu-id="814f2-152">フォーム ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span><span class="sxs-lookup"><span data-stu-id="814f2-152">Form ProjInvoiceProposalCreateLines.performTransTypeSelectionCtrlLookup</span></span>|
 
-## <a name="other-extensibility-enhancements"></a><span data-ttu-id="95aff-153">その他の拡張性の強化</span><span class="sxs-lookup"><span data-stu-id="95aff-153">Other extensibility enhancements</span></span>
+## <a name="other-extensibility-enhancements"></a><span data-ttu-id="814f2-153">その他の拡張性の強化</span><span class="sxs-lookup"><span data-stu-id="814f2-153">Other extensibility enhancements</span></span>
 
-<span data-ttu-id="95aff-154">リファクタされたメソッドに加えて、次の拡張性の強化が実行されました。</span><span class="sxs-lookup"><span data-stu-id="95aff-154">In addition to the refactored methods, the following extensibility enhancements have been made.</span></span>
+<span data-ttu-id="814f2-154">リファクタされたメソッドに加えて、次の拡張性の強化が実行されました。</span><span class="sxs-lookup"><span data-stu-id="814f2-154">In addition to the refactored methods, the following extensibility enhancements have been made.</span></span>
 
-- <span data-ttu-id="95aff-155">小数点以下の変数番号のサポート - InventTestLowerLimit</span><span class="sxs-lookup"><span data-stu-id="95aff-155">Support variable number of decimals - InventTestLowerLimit</span></span>
-- <span data-ttu-id="95aff-156">小数点以下の変数番号のサポート - InventTestLowerTolerance</span><span class="sxs-lookup"><span data-stu-id="95aff-156">Support variable number of decimals -  InventTestLowerTolerance</span></span>
-- <span data-ttu-id="95aff-157">小数点以下の変数番号のサポート - InventTestStandardValue</span><span class="sxs-lookup"><span data-stu-id="95aff-157">Support variable number of decimals -  InventTestStandardValue</span></span> 
-- <span data-ttu-id="95aff-158">小数点以下の変数番号のサポート - InventTestUpperLimit</span><span class="sxs-lookup"><span data-stu-id="95aff-158">Support variable number of decimals -  InventTestUpperLimit</span></span>
-- <span data-ttu-id="95aff-159">小数点以下の変数番号のサポート - InventTestUpperTolerance</span><span class="sxs-lookup"><span data-stu-id="95aff-159">Support variable number of decimals - InventTestUpperTolerance</span></span>
-- <span data-ttu-id="95aff-160">トランザクションの取消でスキップ確認をサポートします。</span><span class="sxs-lookup"><span data-stu-id="95aff-160">Support to skip prompt on transaction reversal</span></span>
-- <span data-ttu-id="95aff-161">PSAProjQuotationApproval ワークフローの拡張機能の有効化</span><span class="sxs-lookup"><span data-stu-id="95aff-161">Enable extension of PSAProjQuotationApproval workflow</span></span>
+- <span data-ttu-id="814f2-155">小数点以下の変数番号のサポート - InventTestLowerLimit</span><span class="sxs-lookup"><span data-stu-id="814f2-155">Support variable number of decimals - InventTestLowerLimit</span></span>
+- <span data-ttu-id="814f2-156">小数点以下の変数番号のサポート - InventTestLowerTolerance</span><span class="sxs-lookup"><span data-stu-id="814f2-156">Support variable number of decimals -  InventTestLowerTolerance</span></span>
+- <span data-ttu-id="814f2-157">小数点以下の変数番号のサポート - InventTestStandardValue</span><span class="sxs-lookup"><span data-stu-id="814f2-157">Support variable number of decimals -  InventTestStandardValue</span></span> 
+- <span data-ttu-id="814f2-158">小数点以下の変数番号のサポート - InventTestUpperLimit</span><span class="sxs-lookup"><span data-stu-id="814f2-158">Support variable number of decimals -  InventTestUpperLimit</span></span>
+- <span data-ttu-id="814f2-159">小数点以下の変数番号のサポート - InventTestUpperTolerance</span><span class="sxs-lookup"><span data-stu-id="814f2-159">Support variable number of decimals - InventTestUpperTolerance</span></span>
+- <span data-ttu-id="814f2-160">トランザクションの取消でスキップ確認をサポートします。</span><span class="sxs-lookup"><span data-stu-id="814f2-160">Support to skip prompt on transaction reversal</span></span>
+- <span data-ttu-id="814f2-161">PSAProjQuotationApproval ワークフローの拡張機能の有効化</span><span class="sxs-lookup"><span data-stu-id="814f2-161">Enable extension of PSAProjQuotationApproval workflow</span></span>

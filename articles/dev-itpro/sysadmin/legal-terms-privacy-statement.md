@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-ms.openlocfilehash: d6be446626c1faf932c094fee61658730560685f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 57d47864f2951ee7874cedbcb5f6e2c32095ed49
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369036"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537127"
 ---
-# <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a><span data-ttu-id="5b833-103">組織の法律条項およびプライバシーに関する声明へのリンクの追加</span><span class="sxs-lookup"><span data-stu-id="5b833-103">Add links to your organization's legal terms and privacy statement</span></span>
+# <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a><span data-ttu-id="93305-103">組織の法律条項およびプライバシーに関する声明へのリンクの追加</span><span class="sxs-lookup"><span data-stu-id="93305-103">Add links to your organization's legal terms and privacy statement</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5b833-104">このトピックでは、管理者が Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail の<strong>バージョン情報</strong>ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5b833-104">This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="93305-104">このトピックでは、管理者が Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail の<strong>バージョン情報</strong>ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="93305-104">This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail.</span></span>
 
-<span data-ttu-id="5b833-105">組織は、多くの場合、法的およびコンプライアンス要件を満たすため、その法的な条件およびプライバシーに関する声明へのリンクをユーザーがすぐに入手して表示できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b833-105">Organizations often need to ensure that the links to their legal terms and privacy statement are readily available and visible to users in order to meet legal and compliance requirements.</span></span> <span data-ttu-id="5b833-106">組織の管理者は、以下の手順に従って、**バージョン情報**ウィンドウ (**設定** &gt; **バージョン情報**) で利用可能である法律条項とプライバシーに関する声明へのリンクを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="5b833-106">Administrators of an organization can follow these steps to have the links to their legal terms and privacy statement be available in the **About** pane (**Settings** &gt; **About**).</span></span>
+<span data-ttu-id="93305-105">組織は、多くの場合、法的およびコンプライアンス要件を満たすため、その法的な条件およびプライバシーに関する声明へのリンクをユーザーがすぐに入手して表示できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="93305-105">Organizations often need to ensure that the links to their legal terms and privacy statement are readily available and visible to users in order to meet legal and compliance requirements.</span></span> <span data-ttu-id="93305-106">組織の管理者は、以下の手順に従って、**バージョン情報**ウィンドウ (**設定** &gt; **バージョン情報**) で利用可能である法律条項とプライバシーに関する声明へのリンクを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="93305-106">Administrators of an organization can follow these steps to have the links to their legal terms and privacy statement be available in the **About** pane (**Settings** &gt; **About**).</span></span>
 
-## <a name="add-links"></a><span data-ttu-id="5b833-107">リンクの追加</span><span class="sxs-lookup"><span data-stu-id="5b833-107">Add links</span></span>
-1.  <span data-ttu-id="5b833-108">**システム パラメーター**ページに移動し、**法的情報およびプライバシー**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b833-108">Go to the **System parameters** page and click **Legal and Privacy.**</span></span> <span data-ttu-id="5b833-109">このページでは:</span><span class="sxs-lookup"><span data-stu-id="5b833-109">On this page:</span></span>
+## <a name="add-links"></a><span data-ttu-id="93305-107">リンクの追加</span><span class="sxs-lookup"><span data-stu-id="93305-107">Add links</span></span>
+1.  <span data-ttu-id="93305-108">**システム パラメーター**ページに移動し、**法的情報およびプライバシー**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93305-108">Go to the **System parameters** page and click **Legal and Privacy.**</span></span> <span data-ttu-id="93305-109">このページでは:</span><span class="sxs-lookup"><span data-stu-id="93305-109">On this page:</span></span>
 
-    1.  <span data-ttu-id="5b833-110">組織の法的条件を説明するページへのリンクを入力します。</span><span class="sxs-lookup"><span data-stu-id="5b833-110">Enter the link to a page that outlines the legal terms for your organization.</span></span>
+    1.  <span data-ttu-id="93305-110">組織の法的条件を説明するページへのリンクを入力します。</span><span class="sxs-lookup"><span data-stu-id="93305-110">Enter the link to a page that outlines the legal terms for your organization.</span></span>
 
-    2.  <span data-ttu-id="5b833-111">組織のプライバシーに関する声明を説明するページへのリンクを入力します。</span><span class="sxs-lookup"><span data-stu-id="5b833-111">Enter the link to a page that outlines the privacy statement for your organization.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="5b833-112">*https* または *http* のいずれかで始まる完全な URL を入力していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="5b833-112">Make sure that you enter the full URL, starting with either *https* or *http*.</span></span>
-
-2.  <span data-ttu-id="5b833-113">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b833-113">Click **Save**.</span></span>
-
-3.  <span data-ttu-id="5b833-114">Dynamics 365 for Retail を使用している場合は、**配送スケジュール** ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="5b833-114">If you are using Dynamics 365 for Retail, go to the **Distribution schedules** page.</span></span> <span data-ttu-id="5b833-115">このページでは:</span><span class="sxs-lookup"><span data-stu-id="5b833-115">On this page:</span></span>
-
-    1.  <span data-ttu-id="5b833-116">**1110 – グローバル構成** ジョブを選択します。</span><span class="sxs-lookup"><span data-stu-id="5b833-116">Select the **1110 – Global configuration** job.</span></span>
-
-    2.  <span data-ttu-id="5b833-117">**今すぐ実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b833-117">Click **Run now**.</span></span>
-
->   <span data-ttu-id="5b833-118">ジョブが完了したことを確認するには、**ダウンロード セッション** ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="5b833-118">To verify that the job completed, go to the **Download sessions** page.</span></span>
-
-## <a name="validate-links"></a><span data-ttu-id="5b833-119">リンクの検証</span><span class="sxs-lookup"><span data-stu-id="5b833-119">Validate links</span></span>
-
-### <a name="validate-the-links-in-finance-and-operations-and-retail"></a><span data-ttu-id="5b833-120">Finance and Operations および Retail のリンクの検証</span><span class="sxs-lookup"><span data-stu-id="5b833-120">Validate the links in Finance and Operations and Retail</span></span>
-<span data-ttu-id="5b833-121">リンクが追加されたことを確認するには、ページ上部のツールバーで **設定** アイコンをクリックし、**詳細** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b833-121">To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**.</span></span> <span data-ttu-id="5b833-122">ウィンドウの**リンク** セクションに 2 つの新しいリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5b833-122">In the **Links** section of the pane, you should see two new links:</span></span>
-
--   <span data-ttu-id="5b833-123">**お客様の組織の法律条項**</span><span class="sxs-lookup"><span data-stu-id="5b833-123">**Your organization’s Legal terms**</span></span>
--   <span data-ttu-id="5b833-124">**お客様の組織のプライバシーと Cookie**</span><span class="sxs-lookup"><span data-stu-id="5b833-124">**Your organization’s Privacy and Cookies**</span></span>
-
-<span data-ttu-id="5b833-125">これらのリンクをクリックして、適切なページが開いていることを検証します。</span><span class="sxs-lookup"><span data-stu-id="5b833-125">Click these links to validate that the appropriate pages open.</span></span> 
+    2.  <span data-ttu-id="93305-111">組織のプライバシーに関する声明を説明するページへのリンクを入力します。</span><span class="sxs-lookup"><span data-stu-id="93305-111">Enter the link to a page that outlines the privacy statement for your organization.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5b833-126">リンクが新しいウィンドウで開きますので、ポップアップ ブロッカーが有効になっている場合は、ポップアップ ブロック設定に例外を追加して新しいウィンドウを起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b833-126">The links open in a new window, so if you have a pop-up blocker enabled, you will need to add an exception to your pop-up blocker settings to launch a new window.</span></span>
+> <span data-ttu-id="93305-112">*https* または *http* のいずれかで始まる完全な URL を入力していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="93305-112">Make sure that you enter the full URL, starting with either *https* or *http*.</span></span>
 
-### <a name="validate-the-links-in-modern-point-of-sale-mpos-and-cloud-point-of-sale-cpos"></a><span data-ttu-id="5b833-127">Modern POS (MPOS) およびクラウド POS (CPOS) のリンクの検証</span><span class="sxs-lookup"><span data-stu-id="5b833-127">Validate the links in Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS)</span></span>
-<span data-ttu-id="5b833-128">リンクが追加されたことを検証するには、**設定** ページにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="5b833-128">To validate that the links have been added, go to the **Settings** page.</span></span> <span data-ttu-id="5b833-129">**情報**セクションで、適切なページが開くことを検証するためにリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b833-129">In the **About** section, click the links to validate that the appropriate pages open.</span></span>
+2.  <span data-ttu-id="93305-113">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93305-113">Click **Save**.</span></span>
+
+3.  <span data-ttu-id="93305-114">Dynamics 365 for Retail を使用している場合は、**配送スケジュール** ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="93305-114">If you are using Dynamics 365 for Retail, go to the **Distribution schedules** page.</span></span> <span data-ttu-id="93305-115">このページでは:</span><span class="sxs-lookup"><span data-stu-id="93305-115">On this page:</span></span>
+
+    1.  <span data-ttu-id="93305-116">**1110 – グローバル構成** ジョブを選択します。</span><span class="sxs-lookup"><span data-stu-id="93305-116">Select the **1110 – Global configuration** job.</span></span>
+
+    2.  <span data-ttu-id="93305-117">**今すぐ実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93305-117">Click **Run now**.</span></span>
+
+>   <span data-ttu-id="93305-118">ジョブが完了したことを確認するには、**ダウンロード セッション** ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="93305-118">To verify that the job completed, go to the **Download sessions** page.</span></span>
+
+## <a name="validate-links"></a><span data-ttu-id="93305-119">リンクの検証</span><span class="sxs-lookup"><span data-stu-id="93305-119">Validate links</span></span>
+
+### <a name="validate-the-links-in-finance-and-operations-and-retail"></a><span data-ttu-id="93305-120">Finance and Operations および Retail のリンクの検証</span><span class="sxs-lookup"><span data-stu-id="93305-120">Validate the links in Finance and Operations and Retail</span></span>
+<span data-ttu-id="93305-121">リンクが追加されたことを確認するには、ページ上部のツールバーで **設定** アイコンをクリックし、**詳細** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93305-121">To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**.</span></span> <span data-ttu-id="93305-122">ウィンドウの**リンク** セクションに 2 つの新しいリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="93305-122">In the **Links** section of the pane, you should see two new links:</span></span>
+
+-   <span data-ttu-id="93305-123">**お客様の組織の法律条項**</span><span class="sxs-lookup"><span data-stu-id="93305-123">**Your organization’s Legal terms**</span></span>
+-   <span data-ttu-id="93305-124">**お客様の組織のプライバシーと Cookie**</span><span class="sxs-lookup"><span data-stu-id="93305-124">**Your organization’s Privacy and Cookies**</span></span>
+
+<span data-ttu-id="93305-125">これらのリンクをクリックして、適切なページが開いていることを検証します。</span><span class="sxs-lookup"><span data-stu-id="93305-125">Click these links to validate that the appropriate pages open.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="93305-126">リンクが新しいウィンドウで開きますので、ポップアップ ブロッカーが有効になっている場合は、ポップアップ ブロック設定に例外を追加して新しいウィンドウを起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="93305-126">The links open in a new window, so if you have a pop-up blocker enabled, you will need to add an exception to your pop-up blocker settings to launch a new window.</span></span>
+
+### <a name="validate-the-links-in-modern-point-of-sale-mpos-and-cloud-point-of-sale-cpos"></a><span data-ttu-id="93305-127">Modern POS (MPOS) およびクラウド POS (CPOS) のリンクの検証</span><span class="sxs-lookup"><span data-stu-id="93305-127">Validate the links in Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS)</span></span>
+<span data-ttu-id="93305-128">リンクが追加されたことを検証するには、**設定** ページにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="93305-128">To validate that the links have been added, go to the **Settings** page.</span></span> <span data-ttu-id="93305-129">**情報**セクションで、適切なページが開くことを検証するためにリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="93305-129">In the **About** section, click the links to validate that the appropriate pages open.</span></span>

@@ -19,39 +19,39 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.openlocfilehash: ad179e505d045dc40898105e1cfd090daafa09a8
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "855965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518504"
 ---
-# <a name="benefit-eligibility-policies"></a><span data-ttu-id="2b41b-103">給付金の適格性ポリシー</span><span class="sxs-lookup"><span data-stu-id="2b41b-103">Benefit eligibility policies</span></span>
+# <a name="benefit-eligibility-policies"></a><span data-ttu-id="30bd9-103">給付金の適格性ポリシー</span><span class="sxs-lookup"><span data-stu-id="30bd9-103">Benefit eligibility policies</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="2b41b-104">このトピックは、だれに特定の給付金の受給資格があるのかを定義するのに役立つ給付金の適格性ポリシーに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
+<span data-ttu-id="30bd9-104">このトピックは、だれに特定の給付金の受給資格があるのかを定義するのに役立つ給付金の適格性ポリシーに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 
-<span data-ttu-id="2b41b-105">給付金を作成する場合、どの従業員がどの給付金を利用できるかを決定します。</span><span class="sxs-lookup"><span data-stu-id="2b41b-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="2b41b-106">次の表では、特定の従業員が利用できる給付金の例を示します。</span><span class="sxs-lookup"><span data-stu-id="2b41b-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
+<span data-ttu-id="30bd9-105">給付金を作成する場合、どの従業員がどの給付金を利用できるかを決定します。</span><span class="sxs-lookup"><span data-stu-id="30bd9-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="30bd9-106">次の表では、特定の従業員が利用できる給付金の例を示します。</span><span class="sxs-lookup"><span data-stu-id="30bd9-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
 
-| <span data-ttu-id="2b41b-107">給付金</span><span class="sxs-lookup"><span data-stu-id="2b41b-107">Benefit</span></span>          | <span data-ttu-id="2b41b-108">給付金を利用できる人</span><span class="sxs-lookup"><span data-stu-id="2b41b-108">Who the benefit is available to</span></span> |
+| <span data-ttu-id="30bd9-107">給付金</span><span class="sxs-lookup"><span data-stu-id="30bd9-107">Benefit</span></span>          | <span data-ttu-id="30bd9-108">給付金を利用できる人</span><span class="sxs-lookup"><span data-stu-id="30bd9-108">Who the benefit is available to</span></span> |
 |------------------|---------------------------------|
-| <span data-ttu-id="2b41b-109">健康保険</span><span class="sxs-lookup"><span data-stu-id="2b41b-109">Health insurance</span></span> | <span data-ttu-id="2b41b-110">全従業員</span><span class="sxs-lookup"><span data-stu-id="2b41b-110">All employees</span></span>                   |
-| <span data-ttu-id="2b41b-111">携帯電話</span><span class="sxs-lookup"><span data-stu-id="2b41b-111">Mobile phone</span></span>     | <span data-ttu-id="2b41b-112">販売スタッフ、経営幹部</span><span class="sxs-lookup"><span data-stu-id="2b41b-112">Sales staff, executives</span></span>         |
-| <span data-ttu-id="2b41b-113">駐車許可証</span><span class="sxs-lookup"><span data-stu-id="2b41b-113">Parking passes</span></span>   | <span data-ttu-id="2b41b-114">経営幹部</span><span class="sxs-lookup"><span data-stu-id="2b41b-114">Executives</span></span>                      |
+| <span data-ttu-id="30bd9-109">健康保険</span><span class="sxs-lookup"><span data-stu-id="30bd9-109">Health insurance</span></span> | <span data-ttu-id="30bd9-110">全従業員</span><span class="sxs-lookup"><span data-stu-id="30bd9-110">All employees</span></span>                   |
+| <span data-ttu-id="30bd9-111">携帯電話</span><span class="sxs-lookup"><span data-stu-id="30bd9-111">Mobile phone</span></span>     | <span data-ttu-id="30bd9-112">販売スタッフ、経営幹部</span><span class="sxs-lookup"><span data-stu-id="30bd9-112">Sales staff, executives</span></span>         |
+| <span data-ttu-id="30bd9-113">駐車許可証</span><span class="sxs-lookup"><span data-stu-id="30bd9-113">Parking passes</span></span>   | <span data-ttu-id="30bd9-114">経営幹部</span><span class="sxs-lookup"><span data-stu-id="30bd9-114">Executives</span></span>                      |
 
-<span data-ttu-id="2b41b-115">次のコンポーネントは、適格性ポリシーの作成に使用されます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-115">The following components in are used to create eligibility policies:</span></span>
+<span data-ttu-id="30bd9-115">次のコンポーネントは、適格性ポリシーの作成に使用されます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-115">The following components in are used to create eligibility policies:</span></span>
 
--   <span data-ttu-id="2b41b-116">ポリシー ルール タイプ</span><span class="sxs-lookup"><span data-stu-id="2b41b-116">Policy rule types</span></span>
--   <span data-ttu-id="2b41b-117">給付金の適格性ポリシー</span><span class="sxs-lookup"><span data-stu-id="2b41b-117">Benefit eligibility policies</span></span>
+-   <span data-ttu-id="30bd9-116">ポリシー ルール タイプ</span><span class="sxs-lookup"><span data-stu-id="30bd9-116">Policy rule types</span></span>
+-   <span data-ttu-id="30bd9-117">給付金の適格性ポリシー</span><span class="sxs-lookup"><span data-stu-id="30bd9-117">Benefit eligibility policies</span></span>
 
-<span data-ttu-id="2b41b-118">ポリシー ルール タイプは、特定のポリシー ルールを作成する際に使用するクエリ パラメーターを定義します。</span><span class="sxs-lookup"><span data-stu-id="2b41b-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="2b41b-119">ポリシー ルール タイプを作成した後、給付金の適格性ポリシーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="2b41b-120">ポリシーでは、1 つ以上の法人に適用される一連のルールを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="2b41b-121">各ポリシー内では、先に作成した給付金の適格性ポリシー ルール タイプを表示できます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
+<span data-ttu-id="30bd9-118">ポリシー ルール タイプは、特定のポリシー ルールを作成する際に使用するクエリ パラメーターを定義します。</span><span class="sxs-lookup"><span data-stu-id="30bd9-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="30bd9-119">ポリシー ルール タイプを作成した後、給付金の適格性ポリシーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="30bd9-120">ポリシーでは、1 つ以上の法人に適用される一連のルールを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="30bd9-121">各ポリシー内では、先に作成した給付金の適格性ポリシー ルール タイプを表示できます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
 
-<span data-ttu-id="2b41b-122">ポリシー内のルールの範囲を定義します。</span><span class="sxs-lookup"><span data-stu-id="2b41b-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="2b41b-123">たとえば、**経営幹部**という名前の給付金の適格性ポリシー ルール タイプを作成する場合、そのポリシー内にどのようなルールがあるかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="2b41b-124">この例は、そのルールでは、「経営幹部」という言葉を含んだ肩書きがルールに含まれていることを示しています。</span><span class="sxs-lookup"><span data-stu-id="2b41b-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="2b41b-125">ルールのパラメーターまたはポリシーに含まれるルールを定義した後、給付金に特定のルールを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="2b41b-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
+<span data-ttu-id="30bd9-122">ポリシー内のルールの範囲を定義します。</span><span class="sxs-lookup"><span data-stu-id="30bd9-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="30bd9-123">たとえば、**経営幹部**という名前の給付金の適格性ポリシー ルール タイプを作成する場合、そのポリシー内にどのようなルールがあるかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="30bd9-124">この例は、そのルールでは、「経営幹部」という言葉を含んだ肩書きがルールに含まれていることを示しています。</span><span class="sxs-lookup"><span data-stu-id="30bd9-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="30bd9-125">ルールのパラメーターまたはポリシーに含まれるルールを定義した後、給付金に特定のルールを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="30bd9-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="2b41b-126">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="2b41b-126">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="30bd9-126">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="30bd9-126">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="2b41b-127">給付金プログラムの定義および管理</span><span class="sxs-lookup"><span data-stu-id="2b41b-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
+[<span data-ttu-id="30bd9-127">給付金プログラムの定義および管理</span><span class="sxs-lookup"><span data-stu-id="30bd9-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
 
 
 

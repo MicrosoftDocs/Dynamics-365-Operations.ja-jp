@@ -17,28 +17,28 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 48784ef4eb12a4a1cae3387e3a45afdf34f2a0fd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546435"
 ---
-# <a name="set-up-fixed-asset-groups"></a><span data-ttu-id="079f5-103">固定資産グループを設定します</span><span class="sxs-lookup"><span data-stu-id="079f5-103">Set up fixed asset groups</span></span>
+# <a name="set-up-fixed-asset-groups"></a><span data-ttu-id="9d69a-103">固定資産グループを設定します</span><span class="sxs-lookup"><span data-stu-id="9d69a-103">Set up fixed asset groups</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="079f5-104">この手順では、新しい固定資産グループを作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="079f5-104">This procedure shows how to create a new fixed asset group.</span></span> <span data-ttu-id="079f5-105">これは USMF の法人に対して経理担当ロールとデモ データを使用します。</span><span class="sxs-lookup"><span data-stu-id="079f5-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="9d69a-104">この手順では、新しい固定資産グループを作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-104">This procedure shows how to create a new fixed asset group.</span></span> <span data-ttu-id="9d69a-105">これは USMF の法人に対して経理担当ロールとデモ データを使用します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
 
-1. <span data-ttu-id="079f5-106">[固定資産] > [設定] > [固定資産グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="079f5-106">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
-2. <span data-ttu-id="079f5-107">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="079f5-107">Click New.</span></span>
-3. <span data-ttu-id="079f5-108">[固定資産グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="079f5-108">In the Fixed asset group field, type a value.</span></span>
-4. <span data-ttu-id="079f5-109">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="079f5-109">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="079f5-110">固定資産グループにおける固定資産の自動採番と番号順序コードは、固定資産のパラメータの設定より優先されます。</span><span class="sxs-lookup"><span data-stu-id="079f5-110">Autonumber fixed assets and Number sequence code on the Fixed asset group will override the settings on the Fixed assets parameters.</span></span> <span data-ttu-id="079f5-111">この固定資産グループの資産に他のグループからの異なる番号付けがある場合、ここでこれを変更できます。</span><span class="sxs-lookup"><span data-stu-id="079f5-111">You can change it here if the assets in this fixed asset group will have different numbering from other groups.</span></span>  
-5. <span data-ttu-id="079f5-112">[帳簿] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="079f5-112">Click Books.</span></span>
-6. <span data-ttu-id="079f5-113">[帳簿] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="079f5-113">In the Book field, enter or select a value.</span></span>
-    * <span data-ttu-id="079f5-114">[減価償却の計算] フィールドが [はい] に設定されている場合、資産帳簿は償却提案に含まれます。</span><span class="sxs-lookup"><span data-stu-id="079f5-114">The Calculate depreciation field is set to Yes, so the asset book will be included in depreciation proposals.</span></span> <span data-ttu-id="079f5-115">減価償却の計算が [いいえ] に設定されている場合、資産は自動的に償却されません。</span><span class="sxs-lookup"><span data-stu-id="079f5-115">If Calculate depreciation is set to No, the asset will not be automatically depreciated.</span></span>  
-7. <span data-ttu-id="079f5-116">資産の耐用年数を設定します。</span><span class="sxs-lookup"><span data-stu-id="079f5-116">Set the Service life of the asset, in years.</span></span>
-    * <span data-ttu-id="079f5-117">耐用年数を設定した後に減価償却期間のフィールド値が計算されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="079f5-117">Note that the Depreciation periods field value is calculated after setting the Service life.</span></span>  
-8. <span data-ttu-id="079f5-118">[減価償却方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="079f5-118">In the Depreciation convention field, select an option.</span></span>
-9. <span data-ttu-id="079f5-119">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="079f5-119">Close the page.</span></span>
+1. <span data-ttu-id="9d69a-106">[固定資産] > [設定] > [固定資産グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-106">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="9d69a-107">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d69a-107">Click New.</span></span>
+3. <span data-ttu-id="9d69a-108">[固定資産グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-108">In the Fixed asset group field, type a value.</span></span>
+4. <span data-ttu-id="9d69a-109">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-109">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="9d69a-110">固定資産グループにおける固定資産の自動採番と番号順序コードは、固定資産のパラメータの設定より優先されます。</span><span class="sxs-lookup"><span data-stu-id="9d69a-110">Autonumber fixed assets and Number sequence code on the Fixed asset group will override the settings on the Fixed assets parameters.</span></span> <span data-ttu-id="9d69a-111">この固定資産グループの資産に他のグループからの異なる番号付けがある場合、ここでこれを変更できます。</span><span class="sxs-lookup"><span data-stu-id="9d69a-111">You can change it here if the assets in this fixed asset group will have different numbering from other groups.</span></span>  
+5. <span data-ttu-id="9d69a-112">[帳簿] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d69a-112">Click Books.</span></span>
+6. <span data-ttu-id="9d69a-113">[帳簿] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-113">In the Book field, enter or select a value.</span></span>
+    * <span data-ttu-id="9d69a-114">[減価償却の計算] フィールドが [はい] に設定されている場合、資産帳簿は償却提案に含まれます。</span><span class="sxs-lookup"><span data-stu-id="9d69a-114">The Calculate depreciation field is set to Yes, so the asset book will be included in depreciation proposals.</span></span> <span data-ttu-id="9d69a-115">減価償却の計算が [いいえ] に設定されている場合、資産は自動的に償却されません。</span><span class="sxs-lookup"><span data-stu-id="9d69a-115">If Calculate depreciation is set to No, the asset will not be automatically depreciated.</span></span>  
+7. <span data-ttu-id="9d69a-116">資産の耐用年数を設定します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-116">Set the Service life of the asset, in years.</span></span>
+    * <span data-ttu-id="9d69a-117">耐用年数を設定した後に減価償却期間のフィールド値が計算されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="9d69a-117">Note that the Depreciation periods field value is calculated after setting the Service life.</span></span>  
+8. <span data-ttu-id="9d69a-118">[減価償却方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="9d69a-118">In the Depreciation convention field, select an option.</span></span>
+9. <span data-ttu-id="9d69a-119">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9d69a-119">Close the page.</span></span>
 
