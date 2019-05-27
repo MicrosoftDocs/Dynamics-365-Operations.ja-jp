@@ -17,89 +17,89 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60be0e67f88ec5523b62f0a5f667695f409038f7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0dcf12776c6f08bb3464a5be21256d14a57ceb3f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368340"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537284"
 ---
-# <a name="horizontal-fields-and-buttons-group-subpattern"></a><span data-ttu-id="4fc83-104">水平フィールドおよびボタン グループのサブパターン</span><span class="sxs-lookup"><span data-stu-id="4fc83-104">Horizontal Fields and Buttons Group subpattern</span></span>
+# <a name="horizontal-fields-and-buttons-group-subpattern"></a><span data-ttu-id="70cf7-104">水平フィールドおよびボタン グループのサブパターン</span><span class="sxs-lookup"><span data-stu-id="70cf7-104">Horizontal Fields and Buttons Group subpattern</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4fc83-105">この記事では、水平フィールドおよびボタン グループ フォームのサブパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4fc83-105">This article provides information about the Horizontal Fields and Buttons Group form subpattern.</span></span> <span data-ttu-id="4fc83-106">このサブパターンは、フォーム上の個々のフィールドのアクションを定義する必要があるときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="4fc83-106">This subpattern is used when actions must be defined for an individual field on a form.</span></span>
+<span data-ttu-id="70cf7-105">この記事では、水平フィールドおよびボタン グループ フォームのサブパターンに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="70cf7-105">This article provides information about the Horizontal Fields and Buttons Group form subpattern.</span></span> <span data-ttu-id="70cf7-106">このサブパターンは、フォーム上の個々のフィールドのアクションを定義する必要があるときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="70cf7-106">This subpattern is used when actions must be defined for an individual field on a form.</span></span>
 
-<a name="usage"></a><span data-ttu-id="4fc83-107">用途</span><span class="sxs-lookup"><span data-stu-id="4fc83-107">Usage</span></span>
+<a name="usage"></a><span data-ttu-id="70cf7-107">用途</span><span class="sxs-lookup"><span data-stu-id="70cf7-107">Usage</span></span>
 -----
 
-<span data-ttu-id="4fc83-108">このサブパターンは、フォーム上の個々のフィールドのアクションを定義する必要があるときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="4fc83-108">This subpattern is used when actions must be defined for an individual field on a form.</span></span> <span data-ttu-id="4fc83-109">これらのボタンはフィールドの右側に配置され、アクションをフィールドと視覚的に関連付けます。</span><span class="sxs-lookup"><span data-stu-id="4fc83-109">The buttons are laid out just to the right of the field to visually associate the actions with the field.</span></span> <span data-ttu-id="4fc83-110">ボタンには、アイコンのみ (テキストなし) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4fc83-110">The buttons should display only an icon (no text).</span></span> <span data-ttu-id="4fc83-111">セクションまたはフォーム全体に関連付けられているアクションは、そのセクションまたはフォーム上にあるツールバーまたは ActionPane に配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fc83-111">Actions that are associated with a section or an entire form should be placed in a Toolbar or ActionPane above that section or form.</span></span>
+<span data-ttu-id="70cf7-108">このサブパターンは、フォーム上の個々のフィールドのアクションを定義する必要があるときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="70cf7-108">This subpattern is used when actions must be defined for an individual field on a form.</span></span> <span data-ttu-id="70cf7-109">これらのボタンはフィールドの右側に配置され、アクションをフィールドと視覚的に関連付けます。</span><span class="sxs-lookup"><span data-stu-id="70cf7-109">The buttons are laid out just to the right of the field to visually associate the actions with the field.</span></span> <span data-ttu-id="70cf7-110">ボタンには、アイコンのみ (テキストなし) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="70cf7-110">The buttons should display only an icon (no text).</span></span> <span data-ttu-id="70cf7-111">セクションまたはフォーム全体に関連付けられているアクションは、そのセクションまたはフォーム上にあるツールバーまたは ActionPane に配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="70cf7-111">Actions that are associated with a section or an entire form should be placed in a Toolbar or ActionPane above that section or form.</span></span>
 
-### <a name="typical-contents"></a><span data-ttu-id="4fc83-112">標準的な内容</span><span class="sxs-lookup"><span data-stu-id="4fc83-112">Typical contents</span></span>
+### <a name="typical-contents"></a><span data-ttu-id="70cf7-112">標準的な内容</span><span class="sxs-lookup"><span data-stu-id="70cf7-112">Typical contents</span></span>
 
--   <span data-ttu-id="4fc83-113">1-2 フィールド</span><span class="sxs-lookup"><span data-stu-id="4fc83-113">1–2 fields</span></span>
--   <span data-ttu-id="4fc83-114">1-3 ボタン</span><span class="sxs-lookup"><span data-stu-id="4fc83-114">1–3 buttons</span></span>
+-   <span data-ttu-id="70cf7-113">1-2 フィールド</span><span class="sxs-lookup"><span data-stu-id="70cf7-113">1–2 fields</span></span>
+-   <span data-ttu-id="70cf7-114">1-3 ボタン</span><span class="sxs-lookup"><span data-stu-id="70cf7-114">1–3 buttons</span></span>
 
-## <a name="wireframe"></a><span data-ttu-id="4fc83-115">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="4fc83-115">Wireframe</span></span>
-<span data-ttu-id="4fc83-116">[![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)</span><span class="sxs-lookup"><span data-stu-id="4fc83-116">[![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)</span></span>
+## <a name="wireframe"></a><span data-ttu-id="70cf7-115">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="70cf7-115">Wireframe</span></span>
+<span data-ttu-id="70cf7-116">[![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)</span><span class="sxs-lookup"><span data-stu-id="70cf7-116">[![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)</span></span>
 
-## <a name="pattern-changes"></a><span data-ttu-id="4fc83-117">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="4fc83-117">Pattern changes</span></span>
-<span data-ttu-id="4fc83-118">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4fc83-118">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
+## <a name="pattern-changes"></a><span data-ttu-id="70cf7-117">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="70cf7-117">Pattern changes</span></span>
+<span data-ttu-id="70cf7-118">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="70cf7-118">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
 
--   <span data-ttu-id="4fc83-119">フィールドとボタンのレイアウトには、**ArrangeMethod**=**HorizontalLeft** という単一の列が使用されます。</span><span class="sxs-lookup"><span data-stu-id="4fc83-119">The layout of fields and buttons will use a single column, where **ArrangeMethod**=**HorizontalLeft**.</span></span>
+-   <span data-ttu-id="70cf7-119">フィールドとボタンのレイアウトには、**ArrangeMethod**=**HorizontalLeft** という単一の列が使用されます。</span><span class="sxs-lookup"><span data-stu-id="70cf7-119">The layout of fields and buttons will use a single column, where **ArrangeMethod**=**HorizontalLeft**.</span></span>
 
-## <a name="model"></a><span data-ttu-id="4fc83-120">モデル</span><span class="sxs-lookup"><span data-stu-id="4fc83-120">Model</span></span>
-### <a name="high-level-structure"></a><span data-ttu-id="4fc83-121">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="4fc83-121">High-level structure</span></span>
+## <a name="model"></a><span data-ttu-id="70cf7-120">モデル</span><span class="sxs-lookup"><span data-stu-id="70cf7-120">Model</span></span>
+### <a name="high-level-structure"></a><span data-ttu-id="70cf7-121">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="70cf7-121">High-level structure</span></span>
 
-- <span data-ttu-id="4fc83-122">グループ (ArrangeMethod=HorizontalLeft)</span><span class="sxs-lookup"><span data-stu-id="4fc83-122">Group (ArrangeMethod=HorizontalLeft)</span></span>
+- <span data-ttu-id="70cf7-122">グループ (ArrangeMethod=HorizontalLeft)</span><span class="sxs-lookup"><span data-stu-id="70cf7-122">Group (ArrangeMethod=HorizontalLeft)</span></span>
 
-    - <span data-ttu-id="4fc83-123">フィールド</span><span class="sxs-lookup"><span data-stu-id="4fc83-123">Field</span></span>
-    - <span data-ttu-id="4fc83-124">*フィールド (オプション)*</span><span class="sxs-lookup"><span data-stu-id="4fc83-124">*Field (optional)*</span></span>
-    - <span data-ttu-id="4fc83-125">ボタン (1-3 ボタン)</span><span class="sxs-lookup"><span data-stu-id="4fc83-125">Buttons (1–3 buttons)</span></span>
+    - <span data-ttu-id="70cf7-123">フィールド</span><span class="sxs-lookup"><span data-stu-id="70cf7-123">Field</span></span>
+    - <span data-ttu-id="70cf7-124">*フィールド (オプション)*</span><span class="sxs-lookup"><span data-stu-id="70cf7-124">*Field (optional)*</span></span>
+    - <span data-ttu-id="70cf7-125">ボタン (1-3 ボタン)</span><span class="sxs-lookup"><span data-stu-id="70cf7-125">Buttons (1–3 buttons)</span></span>
 
-### <a name="core-components"></a><span data-ttu-id="4fc83-126">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="4fc83-126">Core components</span></span>
+### <a name="core-components"></a><span data-ttu-id="70cf7-126">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="70cf7-126">Core components</span></span>
 
--   <span data-ttu-id="4fc83-127">HorizontalFieldsButtonsGroup サブパターンをコンテナー コントロールに適用します。</span><span class="sxs-lookup"><span data-stu-id="4fc83-127">Apply the HorizontalFieldsButtonsGroup subpattern to the container control.</span></span>
--   <span data-ttu-id="4fc83-128">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="4fc83-128">Address BP Warnings:</span></span>
-    -   <span data-ttu-id="4fc83-129">ボタンは 3 つ以下にしてください。</span><span class="sxs-lookup"><span data-stu-id="4fc83-129">There should be no more than three buttons.</span></span>
-    -   <span data-ttu-id="4fc83-130">繰り越された AX6.3 BP チェック以外に必要な追加の BP チェックはありません。</span><span class="sxs-lookup"><span data-stu-id="4fc83-130">No additional BP checks are required beyond the AX6.3 BP checks that were carried forward.</span></span>
+-   <span data-ttu-id="70cf7-127">HorizontalFieldsButtonsGroup サブパターンをコンテナー コントロールに適用します。</span><span class="sxs-lookup"><span data-stu-id="70cf7-127">Apply the HorizontalFieldsButtonsGroup subpattern to the container control.</span></span>
+-   <span data-ttu-id="70cf7-128">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="70cf7-128">Address BP Warnings:</span></span>
+    -   <span data-ttu-id="70cf7-129">ボタンは 3 つ以下にしてください。</span><span class="sxs-lookup"><span data-stu-id="70cf7-129">There should be no more than three buttons.</span></span>
+    -   <span data-ttu-id="70cf7-130">繰り越された AX6.3 BP チェック以外に必要な追加の BP チェックはありません。</span><span class="sxs-lookup"><span data-stu-id="70cf7-130">No additional BP checks are required beyond the AX6.3 BP checks that were carried forward.</span></span>
 
-### <a name="related-patterns"></a><span data-ttu-id="4fc83-131">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="4fc83-131">Related patterns</span></span>
+### <a name="related-patterns"></a><span data-ttu-id="70cf7-131">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="70cf7-131">Related patterns</span></span>
 
--   [<span data-ttu-id="4fc83-132">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="4fc83-132">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
--   <span data-ttu-id="4fc83-133">水平フィールド</span><span class="sxs-lookup"><span data-stu-id="4fc83-133">Horizontal Fields</span></span>
+-   [<span data-ttu-id="70cf7-132">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="70cf7-132">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
+-   <span data-ttu-id="70cf7-133">水平フィールド</span><span class="sxs-lookup"><span data-stu-id="70cf7-133">Horizontal Fields</span></span>
 
-## <a name="ux-guidelines"></a><span data-ttu-id="4fc83-134">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="4fc83-134">UX guidelines</span></span>
-<span data-ttu-id="4fc83-135">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="4fc83-135">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="4fc83-136">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="4fc83-136">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="4fc83-137">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="4fc83-137">Open the form in a browser, and walk through these steps.</span></span>
+## <a name="ux-guidelines"></a><span data-ttu-id="70cf7-134">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="70cf7-134">UX guidelines</span></span>
+<span data-ttu-id="70cf7-135">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="70cf7-135">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="70cf7-136">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="70cf7-136">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="70cf7-137">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="70cf7-137">Open the form in a browser, and walk through these steps.</span></span>
 
--   <span data-ttu-id="4fc83-138">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="4fc83-138">**Standard form guidelines:**</span></span>
-    -   <span data-ttu-id="4fc83-139">標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="4fc83-139">Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.</span></span>
--   <span data-ttu-id="4fc83-140">**水平フィールドおよびボタン グループのガイドライン**</span><span class="sxs-lookup"><span data-stu-id="4fc83-140">**Horizontal Fields and Buttons Group guidelines:**</span></span>
-    -   <span data-ttu-id="4fc83-141">フィールド + ボタンの幅は、列の標準サイズを超えてはいけません。</span><span class="sxs-lookup"><span data-stu-id="4fc83-141">The width of the fields + buttons should not exceed the standard size of a column.</span></span>
-    -   <span data-ttu-id="4fc83-142">ボタンにはシンボル イメージが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fc83-142">Buttons should have a symbol image assigned.</span></span>
-    -   <span data-ttu-id="4fc83-143">ボタンにはツールヒントが必要です。</span><span class="sxs-lookup"><span data-stu-id="4fc83-143">Buttons should have tooltips.</span></span>
-    -   <span data-ttu-id="4fc83-144">最大 3 つのボタンが必要です。</span><span class="sxs-lookup"><span data-stu-id="4fc83-144">There should be a maximum of three buttons.</span></span> <span data-ttu-id="4fc83-145">最後のボタンはメニュー ボタンです。</span><span class="sxs-lookup"><span data-stu-id="4fc83-145">The last button can be a menu button.</span></span>
+-   <span data-ttu-id="70cf7-138">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="70cf7-138">**Standard form guidelines:**</span></span>
+    -   <span data-ttu-id="70cf7-139">標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="70cf7-139">Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.</span></span>
+-   <span data-ttu-id="70cf7-140">**水平フィールドおよびボタン グループのガイドライン**</span><span class="sxs-lookup"><span data-stu-id="70cf7-140">**Horizontal Fields and Buttons Group guidelines:**</span></span>
+    -   <span data-ttu-id="70cf7-141">フィールド + ボタンの幅は、列の標準サイズを超えてはいけません。</span><span class="sxs-lookup"><span data-stu-id="70cf7-141">The width of the fields + buttons should not exceed the standard size of a column.</span></span>
+    -   <span data-ttu-id="70cf7-142">ボタンにはシンボル イメージが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="70cf7-142">Buttons should have a symbol image assigned.</span></span>
+    -   <span data-ttu-id="70cf7-143">ボタンにはツールヒントが必要です。</span><span class="sxs-lookup"><span data-stu-id="70cf7-143">Buttons should have tooltips.</span></span>
+    -   <span data-ttu-id="70cf7-144">最大 3 つのボタンが必要です。</span><span class="sxs-lookup"><span data-stu-id="70cf7-144">There should be a maximum of three buttons.</span></span> <span data-ttu-id="70cf7-145">最後のボタンはメニュー ボタンです。</span><span class="sxs-lookup"><span data-stu-id="70cf7-145">The last button can be a menu button.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4fc83-146">例</span><span class="sxs-lookup"><span data-stu-id="4fc83-146">Examples</span></span>
-<span data-ttu-id="4fc83-147">フォーム: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButtons(2)](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)</span><span class="sxs-lookup"><span data-stu-id="4fc83-147">Form: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButtons(2)](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)</span></span>
+## <a name="examples"></a><span data-ttu-id="70cf7-146">例</span><span class="sxs-lookup"><span data-stu-id="70cf7-146">Examples</span></span>
+<span data-ttu-id="70cf7-147">フォーム: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButtons(2)](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)</span><span class="sxs-lookup"><span data-stu-id="70cf7-147">Form: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButtons(2)](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)</span></span>
 
-## <a name="resources"></a><span data-ttu-id="4fc83-148">リソース</span><span class="sxs-lookup"><span data-stu-id="4fc83-148">Resources</span></span>
-### <a name="typically-used-by-patterns"></a><span data-ttu-id="4fc83-149">通常、パターンによって使用される</span><span class="sxs-lookup"><span data-stu-id="4fc83-149">Typically used by patterns</span></span>
+## <a name="resources"></a><span data-ttu-id="70cf7-148">リソース</span><span class="sxs-lookup"><span data-stu-id="70cf7-148">Resources</span></span>
+### <a name="typically-used-by-patterns"></a><span data-ttu-id="70cf7-149">通常、パターンによって使用される</span><span class="sxs-lookup"><span data-stu-id="70cf7-149">Typically used by patterns</span></span>
 
--   [<span data-ttu-id="4fc83-150">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="4fc83-150">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
--   [<span data-ttu-id="4fc83-151">目次</span><span class="sxs-lookup"><span data-stu-id="4fc83-151">Table of Contents</span></span>](table-of-contents-form-pattern.md)
--   [<span data-ttu-id="4fc83-152">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="4fc83-152">Details Master</span></span>](details-master-form-pattern.md)
--   [<span data-ttu-id="4fc83-153">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="4fc83-153">Details Transaction</span></span>](details-transaction-form-pattern.md)
+-   [<span data-ttu-id="70cf7-150">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="70cf7-150">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
+-   [<span data-ttu-id="70cf7-151">目次</span><span class="sxs-lookup"><span data-stu-id="70cf7-151">Table of Contents</span></span>](table-of-contents-form-pattern.md)
+-   [<span data-ttu-id="70cf7-152">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="70cf7-152">Details Master</span></span>](details-master-form-pattern.md)
+-   [<span data-ttu-id="70cf7-153">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="70cf7-153">Details Transaction</span></span>](details-transaction-form-pattern.md)
 
-## <a name="appendix"></a><span data-ttu-id="4fc83-154">付録</span><span class="sxs-lookup"><span data-stu-id="4fc83-154">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="4fc83-155">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="4fc83-155">Frequently asked questions</span></span>
+## <a name="appendix"></a><span data-ttu-id="70cf7-154">付録</span><span class="sxs-lookup"><span data-stu-id="70cf7-154">Appendix</span></span>
+### <a name="frequently-asked-questions"></a><span data-ttu-id="70cf7-155">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="70cf7-155">Frequently asked questions</span></span>
 
-<span data-ttu-id="4fc83-156">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="4fc83-156">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
+<span data-ttu-id="70cf7-156">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="70cf7-156">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
 
-### <a name="open-issues"></a><span data-ttu-id="4fc83-157">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="4fc83-157">Open issues</span></span>
+### <a name="open-issues"></a><span data-ttu-id="70cf7-157">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="70cf7-157">Open issues</span></span>
 
--   <span data-ttu-id="4fc83-158">なし</span><span class="sxs-lookup"><span data-stu-id="4fc83-158">None</span></span>
+-   <span data-ttu-id="70cf7-158">なし</span><span class="sxs-lookup"><span data-stu-id="70cf7-158">None</span></span>
 
-### <a name="dynamics-ax-2012-content"></a><span data-ttu-id="4fc83-159">Dynamics AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="4fc83-159">Dynamics AX 2012 content</span></span>
+### <a name="dynamics-ax-2012-content"></a><span data-ttu-id="70cf7-159">Dynamics AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="70cf7-159">Dynamics AX 2012 content</span></span>
 
-<span data-ttu-id="4fc83-160">**SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)</span><span class="sxs-lookup"><span data-stu-id="4fc83-160">**SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)</span></span>
+<span data-ttu-id="70cf7-160">**SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)</span><span class="sxs-lookup"><span data-stu-id="70cf7-160">**SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)</span></span>

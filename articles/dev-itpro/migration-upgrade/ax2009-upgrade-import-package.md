@@ -15,36 +15,36 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 676c38e8d8134448210097ab634010bba194ad97
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e773b4bbded556bd03d8c48e4e5e2b3a5350a7fa
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369673"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537182"
 ---
-# <a name="ax-2009-migration--import-packages"></a><span data-ttu-id="dfc03-103">AX 2009 の移行 - パッケージのインポート</span><span class="sxs-lookup"><span data-stu-id="dfc03-103">AX 2009 migration – Import packages</span></span>
+# <a name="ax-2009-migration--import-packages"></a><span data-ttu-id="d3a44-103">AX 2009 の移行 - パッケージのインポート</span><span class="sxs-lookup"><span data-stu-id="d3a44-103">AX 2009 migration – Import packages</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="dfc03-104">データは、正しい順序で配列された論理的に関連するエンティティのグループにインポートできます。</span><span class="sxs-lookup"><span data-stu-id="dfc03-104">Data can be imported for a group of logically related entities that are sequenced in the correct order.</span></span> <span data-ttu-id="dfc03-105">Microsoft Dynamics 365 for Finance and Operations に移行する Microsoft Dynamics AX 2009 データをインポートするための、以下の 3 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="dfc03-105">You have three options for importing Microsoft Dynamics AX 2009 data that you want to migrate to Microsoft Dynamics 365 for Finance and Operations:</span></span>
+<span data-ttu-id="d3a44-104">データは、正しい順序で配列された論理的に関連するエンティティのグループにインポートできます。</span><span class="sxs-lookup"><span data-stu-id="d3a44-104">Data can be imported for a group of logically related entities that are sequenced in the correct order.</span></span> <span data-ttu-id="d3a44-105">Microsoft Dynamics 365 for Finance and Operations に移行する Microsoft Dynamics AX 2009 データをインポートするための、以下の 3 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="d3a44-105">You have three options for importing Microsoft Dynamics AX 2009 data that you want to migrate to Microsoft Dynamics 365 for Finance and Operations:</span></span>
 
-- <span data-ttu-id="dfc03-106">AX 2009</span><span class="sxs-lookup"><span data-stu-id="dfc03-106">AX 2009</span></span>
-- <span data-ttu-id="dfc03-107">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="dfc03-107">Finance and Operations</span></span>
+- <span data-ttu-id="d3a44-106">AX 2009</span><span class="sxs-lookup"><span data-stu-id="d3a44-106">AX 2009</span></span>
+- <span data-ttu-id="d3a44-107">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="d3a44-107">Finance and Operations</span></span>
 
-## <a name="ax-2009"></a><span data-ttu-id="dfc03-108">AX 2009</span><span class="sxs-lookup"><span data-stu-id="dfc03-108">AX 2009</span></span>
-<span data-ttu-id="dfc03-109">移行のデータは、ソース システムから直接インポートできます。</span><span class="sxs-lookup"><span data-stu-id="dfc03-109">You can import data for migration directly from the source system.</span></span> <span data-ttu-id="dfc03-110">以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-110">Follow these steps.</span></span>
+## <a name="ax-2009"></a><span data-ttu-id="d3a44-108">AX 2009</span><span class="sxs-lookup"><span data-stu-id="d3a44-108">AX 2009</span></span>
+<span data-ttu-id="d3a44-109">移行のデータは、ソース システムから直接インポートできます。</span><span class="sxs-lookup"><span data-stu-id="d3a44-109">You can import data for migration directly from the source system.</span></span> <span data-ttu-id="d3a44-110">以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-110">Follow these steps.</span></span>
 
-1. <span data-ttu-id="dfc03-111">AX 2009 の、ナビゲーション ウィンドウで、**データ移行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfc03-111">In AX 2009, in the navigation pane, click **Data migration**.</span></span>
-2. <span data-ttu-id="dfc03-112">**共通** \> **移行グループの作成** に移動します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-112">Go to **Common** \> **Create migration group**.</span></span>
-3. <span data-ttu-id="dfc03-113">**移行グループ** フォームで、エクスポートする移行グループを選択し、**今すぐエクスポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfc03-113">In the **Migration group** form, select the migration group to export, and then click **Export now**.</span></span>
-4. <span data-ttu-id="dfc03-114">**データのエクスポート** フォームで、**ターゲットにパッケージをインポートする** チェック ボックスをオンにし、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dfc03-114">In the **Export data** form, select the **Import package in target** check box, and then click **OK**.</span></span>
+1. <span data-ttu-id="d3a44-111">AX 2009 の、ナビゲーション ウィンドウで、**データ移行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d3a44-111">In AX 2009, in the navigation pane, click **Data migration**.</span></span>
+2. <span data-ttu-id="d3a44-112">**共通** \> **移行グループの作成** に移動します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-112">Go to **Common** \> **Create migration group**.</span></span>
+3. <span data-ttu-id="d3a44-113">**移行グループ** フォームで、エクスポートする移行グループを選択し、**今すぐエクスポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d3a44-113">In the **Migration group** form, select the migration group to export, and then click **Export now**.</span></span>
+4. <span data-ttu-id="d3a44-114">**データのエクスポート** フォームで、**ターゲットにパッケージをインポートする** チェック ボックスをオンにし、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d3a44-114">In the **Export data** form, select the **Import package in target** check box, and then click **OK**.</span></span>
 
-## <a name="finance-and-operations"></a><span data-ttu-id="dfc03-115">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="dfc03-115">Finance and Operations</span></span>
-<span data-ttu-id="dfc03-116">Finance and Operations 環境を使用して、移行のデータをインポートできます。</span><span class="sxs-lookup"><span data-stu-id="dfc03-116">You can import data for migration by using your Finance and Operations environment.</span></span> <span data-ttu-id="dfc03-117">以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-117">Follow these steps.</span></span>
+## <a name="finance-and-operations"></a><span data-ttu-id="d3a44-115">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="d3a44-115">Finance and Operations</span></span>
+<span data-ttu-id="d3a44-116">Finance and Operations 環境を使用して、移行のデータをインポートできます。</span><span class="sxs-lookup"><span data-stu-id="d3a44-116">You can import data for migration by using your Finance and Operations environment.</span></span> <span data-ttu-id="d3a44-117">以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-117">Follow these steps.</span></span>
 
-1. <span data-ttu-id="dfc03-118">管理者ロールを使用して、Finance and Operations 環境にログインします。</span><span class="sxs-lookup"><span data-stu-id="dfc03-118">Sign in to your Finance and Operations environment by using an Administrator role.</span></span>
-2. <span data-ttu-id="dfc03-119">ダッシュボードで、**データ管理**ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-119">On the dashboard, select the **Data Management** workspace.</span></span>
-3. <span data-ttu-id="dfc03-120">**インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-120">Select **Import**.</span></span>
-4. <span data-ttu-id="dfc03-121">パッケージの名前を入力し、**ソースのデータ形式** フィールドで **パッケージ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-121">Enter the name of the package, and then, in the **Source data format** field, select **Package**.</span></span>
-5. <span data-ttu-id="dfc03-122">**アップロード** を選択し、インポートするデータの場所から適切なパッケージ ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="dfc03-122">Select **Upload**, and then select the appropriate package file from the location for the data that is being imported.</span></span> <span data-ttu-id="dfc03-123">パッケージからすべてのファイルがインポートされます。</span><span class="sxs-lookup"><span data-stu-id="dfc03-123">All the files from the package are imported.</span></span>
+1. <span data-ttu-id="d3a44-118">管理者ロールを使用して、Finance and Operations 環境にログインします。</span><span class="sxs-lookup"><span data-stu-id="d3a44-118">Sign in to your Finance and Operations environment by using an Administrator role.</span></span>
+2. <span data-ttu-id="d3a44-119">ダッシュボードで、**データ管理**ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-119">On the dashboard, select the **Data Management** workspace.</span></span>
+3. <span data-ttu-id="d3a44-120">**インポート** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-120">Select **Import**.</span></span>
+4. <span data-ttu-id="d3a44-121">パッケージの名前を入力し、**ソースのデータ形式** フィールドで **パッケージ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-121">Enter the name of the package, and then, in the **Source data format** field, select **Package**.</span></span>
+5. <span data-ttu-id="d3a44-122">**アップロード** を選択し、インポートするデータの場所から適切なパッケージ ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="d3a44-122">Select **Upload**, and then select the appropriate package file from the location for the data that is being imported.</span></span> <span data-ttu-id="d3a44-123">パッケージからすべてのファイルがインポートされます。</span><span class="sxs-lookup"><span data-stu-id="d3a44-123">All the files from the package are imported.</span></span>
 

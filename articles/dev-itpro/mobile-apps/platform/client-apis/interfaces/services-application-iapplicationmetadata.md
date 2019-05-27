@@ -15,75 +15,75 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3d38b632298ccb4457c6a741f3d42777f2aa8306
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ed0b0b4021e196f7dd91cb27f895d6d9bc9a1ee1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368458"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537347"
 ---
-# <a name="applicationmetadata-type"></a><span data-ttu-id="8dfdc-103">ApplicationMetadata タイプ</span><span class="sxs-lookup"><span data-stu-id="8dfdc-103">ApplicationMetadata type</span></span>
+# <a name="applicationmetadata-type"></a><span data-ttu-id="e8849-103">ApplicationMetadata タイプ</span><span class="sxs-lookup"><span data-stu-id="e8849-103">ApplicationMetadata type</span></span>
 
 [!include [banner](../../../../includes/banner.md)]
 
-<span data-ttu-id="8dfdc-104">アプリケーションの宣言メタデータを表します</span><span class="sxs-lookup"><span data-stu-id="8dfdc-104">Represents the declarative metadata of an application</span></span>
+<span data-ttu-id="e8849-104">アプリケーションの宣言メタデータを表します</span><span class="sxs-lookup"><span data-stu-id="e8849-104">Represents the declarative metadata of an application</span></span>
 
-### <a name="hierarchy"></a><span data-ttu-id="8dfdc-105">階層</span><span class="sxs-lookup"><span data-stu-id="8dfdc-105">Hierarchy</span></span>
+### <a name="hierarchy"></a><span data-ttu-id="e8849-105">階層</span><span class="sxs-lookup"><span data-stu-id="e8849-105">Hierarchy</span></span>
 
-<span data-ttu-id="8dfdc-106">ApplicationMetadata</span><span class="sxs-lookup"><span data-stu-id="8dfdc-106">ApplicationMetadata</span></span> <br>
+<span data-ttu-id="e8849-106">ApplicationMetadata</span><span class="sxs-lookup"><span data-stu-id="e8849-106">ApplicationMetadata</span></span> <br>
 
-## <a name="index"></a><span data-ttu-id="8dfdc-107">指数</span><span class="sxs-lookup"><span data-stu-id="8dfdc-107">Index</span></span>
+## <a name="index"></a><span data-ttu-id="e8849-107">指数</span><span class="sxs-lookup"><span data-stu-id="e8849-107">Index</span></span>
 
-### <a name="properties"></a><span data-ttu-id="8dfdc-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8dfdc-108">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="e8849-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e8849-108">Properties</span></span>
 
-* [<span data-ttu-id="8dfdc-109">ColorName</span><span class="sxs-lookup"><span data-stu-id="8dfdc-109">ColorName</span></span>](services-application-iapplicationmetadata.md#colorname)
-* [<span data-ttu-id="8dfdc-110">Configs</span><span class="sxs-lookup"><span data-stu-id="8dfdc-110">Configs</span></span>](services-application-iapplicationmetadata.md#configs)
-* [<span data-ttu-id="8dfdc-111">説明</span><span class="sxs-lookup"><span data-stu-id="8dfdc-111">Description</span></span>](services-application-iapplicationmetadata.md#description)
-* [<span data-ttu-id="8dfdc-112">IconName</span><span class="sxs-lookup"><span data-stu-id="8dfdc-112">IconName</span></span>](services-application-iapplicationmetadata.md#iconname)
-* [<span data-ttu-id="8dfdc-113">ID</span><span class="sxs-lookup"><span data-stu-id="8dfdc-113">Id</span></span>](services-application-iapplicationmetadata.md#id)
-* [<span data-ttu-id="8dfdc-114">タイトル</span><span class="sxs-lookup"><span data-stu-id="8dfdc-114">Title</span></span>](services-application-iapplicationmetadata.md#title)
+* [<span data-ttu-id="e8849-109">ColorName</span><span class="sxs-lookup"><span data-stu-id="e8849-109">ColorName</span></span>](services-application-iapplicationmetadata.md#colorname)
+* [<span data-ttu-id="e8849-110">Configs</span><span class="sxs-lookup"><span data-stu-id="e8849-110">Configs</span></span>](services-application-iapplicationmetadata.md#configs)
+* [<span data-ttu-id="e8849-111">説明</span><span class="sxs-lookup"><span data-stu-id="e8849-111">Description</span></span>](services-application-iapplicationmetadata.md#description)
+* [<span data-ttu-id="e8849-112">IconName</span><span class="sxs-lookup"><span data-stu-id="e8849-112">IconName</span></span>](services-application-iapplicationmetadata.md#iconname)
+* [<span data-ttu-id="e8849-113">ID</span><span class="sxs-lookup"><span data-stu-id="e8849-113">Id</span></span>](services-application-iapplicationmetadata.md#id)
+* [<span data-ttu-id="e8849-114">タイトル</span><span class="sxs-lookup"><span data-stu-id="e8849-114">Title</span></span>](services-application-iapplicationmetadata.md#title)
 
-## <a name="properties"></a><span data-ttu-id="8dfdc-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8dfdc-115">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e8849-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e8849-115">Properties</span></span>
 
-### <a name="colorname"></a><span data-ttu-id="8dfdc-116">ColorName</span><span class="sxs-lookup"><span data-stu-id="8dfdc-116">ColorName</span></span>
+### <a name="colorname"></a><span data-ttu-id="e8849-116">ColorName</span><span class="sxs-lookup"><span data-stu-id="e8849-116">ColorName</span></span>
 
-<span data-ttu-id="8dfdc-117">ColorName: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="8dfdc-117">ColorName: string (optional)</span></span> 
+<span data-ttu-id="e8849-117">ColorName: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="e8849-117">ColorName: string (optional)</span></span> 
 
-<span data-ttu-id="8dfdc-118">アプリケーションのテーマ色。</span><span class="sxs-lookup"><span data-stu-id="8dfdc-118">The theme color of the application</span></span>
-
-
-### <a name="configs"></a><span data-ttu-id="8dfdc-119">Configs</span><span class="sxs-lookup"><span data-stu-id="8dfdc-119">Configs</span></span>
-
-<span data-ttu-id="8dfdc-120">Configs: [名前: 文字列]: 任意 (オプション)</span><span class="sxs-lookup"><span data-stu-id="8dfdc-120">Configs: [name: string]: any (optional)</span></span> 
-
-<span data-ttu-id="8dfdc-121">アプリケーションは作成者またはリソース プロバイダーにより指定された名前付き構成のセットを持つことができます</span><span class="sxs-lookup"><span data-stu-id="8dfdc-121">An application can have a set of named config supplied by the author or the resource provider</span></span>
+<span data-ttu-id="e8849-118">アプリケーションのテーマ色。</span><span class="sxs-lookup"><span data-stu-id="e8849-118">The theme color of the application</span></span>
 
 
-### <a name="description"></a><span data-ttu-id="8dfdc-122">説明</span><span class="sxs-lookup"><span data-stu-id="8dfdc-122">Description</span></span>
+### <a name="configs"></a><span data-ttu-id="e8849-119">Configs</span><span class="sxs-lookup"><span data-stu-id="e8849-119">Configs</span></span>
 
-<span data-ttu-id="8dfdc-123">説明:文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="8dfdc-123">Description: string (optional)</span></span> 
+<span data-ttu-id="e8849-120">Configs: [名前: 文字列]: 任意 (オプション)</span><span class="sxs-lookup"><span data-stu-id="e8849-120">Configs: [name: string]: any (optional)</span></span> 
 
-<span data-ttu-id="8dfdc-124">アプリケーションの説明</span><span class="sxs-lookup"><span data-stu-id="8dfdc-124">The description of the application</span></span>
-
-
-### <a name="iconname"></a><span data-ttu-id="8dfdc-125">IconName</span><span class="sxs-lookup"><span data-stu-id="8dfdc-125">IconName</span></span>
-
-<span data-ttu-id="8dfdc-126">IconName: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="8dfdc-126">IconName: string (optional)</span></span> 
-
-<span data-ttu-id="8dfdc-127">アプリケーションの代表的なアイコン</span><span class="sxs-lookup"><span data-stu-id="8dfdc-127">The representative icon of the application</span></span>
+<span data-ttu-id="e8849-121">アプリケーションは作成者またはリソース プロバイダーにより指定された名前付き構成のセットを持つことができます</span><span class="sxs-lookup"><span data-stu-id="e8849-121">An application can have a set of named config supplied by the author or the resource provider</span></span>
 
 
-### <a name="id"></a><span data-ttu-id="8dfdc-128">ID</span><span class="sxs-lookup"><span data-stu-id="8dfdc-128">Id</span></span>
+### <a name="description"></a><span data-ttu-id="e8849-122">説明</span><span class="sxs-lookup"><span data-stu-id="e8849-122">Description</span></span>
 
-<span data-ttu-id="8dfdc-129">Id: 文字列</span><span class="sxs-lookup"><span data-stu-id="8dfdc-129">Id: string</span></span>
+<span data-ttu-id="e8849-123">説明:文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="e8849-123">Description: string (optional)</span></span> 
 
-<span data-ttu-id="8dfdc-130">アプリケーションの一意の識別子</span><span class="sxs-lookup"><span data-stu-id="8dfdc-130">The unique identifier of the application</span></span>
+<span data-ttu-id="e8849-124">アプリケーションの説明</span><span class="sxs-lookup"><span data-stu-id="e8849-124">The description of the application</span></span>
 
 
-### <a name="title"></a><span data-ttu-id="8dfdc-131">肩書き</span><span class="sxs-lookup"><span data-stu-id="8dfdc-131">Title</span></span>
+### <a name="iconname"></a><span data-ttu-id="e8849-125">IconName</span><span class="sxs-lookup"><span data-stu-id="e8849-125">IconName</span></span>
 
-<span data-ttu-id="8dfdc-132">タイトル: 文字列</span><span class="sxs-lookup"><span data-stu-id="8dfdc-132">Title: string</span></span>
+<span data-ttu-id="e8849-126">IconName: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="e8849-126">IconName: string (optional)</span></span> 
 
-<span data-ttu-id="8dfdc-133">アプリケーションのタイトル。</span><span class="sxs-lookup"><span data-stu-id="8dfdc-133">The title of the application</span></span>
+<span data-ttu-id="e8849-127">アプリケーションの代表的なアイコン</span><span class="sxs-lookup"><span data-stu-id="e8849-127">The representative icon of the application</span></span>
+
+
+### <a name="id"></a><span data-ttu-id="e8849-128">ID</span><span class="sxs-lookup"><span data-stu-id="e8849-128">Id</span></span>
+
+<span data-ttu-id="e8849-129">Id: 文字列</span><span class="sxs-lookup"><span data-stu-id="e8849-129">Id: string</span></span>
+
+<span data-ttu-id="e8849-130">アプリケーションの一意の識別子</span><span class="sxs-lookup"><span data-stu-id="e8849-130">The unique identifier of the application</span></span>
+
+
+### <a name="title"></a><span data-ttu-id="e8849-131">肩書き</span><span class="sxs-lookup"><span data-stu-id="e8849-131">Title</span></span>
+
+<span data-ttu-id="e8849-132">タイトル: 文字列</span><span class="sxs-lookup"><span data-stu-id="e8849-132">Title: string</span></span>
+
+<span data-ttu-id="e8849-133">アプリケーションのタイトル。</span><span class="sxs-lookup"><span data-stu-id="e8849-133">The title of the application</span></span>
 
 

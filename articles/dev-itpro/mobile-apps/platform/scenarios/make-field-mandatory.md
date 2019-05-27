@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 3a915c4ff49a0f01603e7eb34eafa3aef56b46d6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ac09b3c6318096466da09103ea52a1df98f60d17
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537339"
 ---
-# <a name="make-fields-mandatory-by-using-workspace-classes"></a><span data-ttu-id="8337b-103">ワークスペースのクラスを使用してフィールドを必須にする</span><span class="sxs-lookup"><span data-stu-id="8337b-103">Make fields mandatory by using workspace classes</span></span>
+# <a name="make-fields-mandatory-by-using-workspace-classes"></a><span data-ttu-id="f6de3-103">ワークスペースのクラスを使用してフィールドを必須にする</span><span class="sxs-lookup"><span data-stu-id="f6de3-103">Make fields mandatory by using workspace classes</span></span>
 
 [!include [banner](../../../includes/banner.md)]
 
-<span data-ttu-id="8337b-104">モバイル アプリ デザイナーを使用してアクション用のフィールドを選択するとき、一部のプロパティは推定できます。</span><span class="sxs-lookup"><span data-stu-id="8337b-104">When you use the mobile app designer to select fields for actions, some properties can be inferred.</span></span> <span data-ttu-id="8337b-105">これらのプロパティには、フィールドの長さ、タイプ、フィールドが必須かどうかが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8337b-105">These properties include the field length, the type, and whether the field is mandatory.</span></span> <span data-ttu-id="8337b-106">これらのプロパティを更新するには、ワークスペース クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="8337b-106">The workspace classes can be used to update these properties.</span></span> <span data-ttu-id="8337b-107">たとえば、次の図に示すように、顧客レコードが作成されると**名前**フィールドが必須になるよう指定する場合があります。</span><span class="sxs-lookup"><span data-stu-id="8337b-107">For example, you might want to specify that the **Name** field is mandatory when a customer record is created, as shown in the following images.</span></span>
+<span data-ttu-id="f6de3-104">モバイル アプリ デザイナーを使用してアクション用のフィールドを選択するとき、一部のプロパティは推定できます。</span><span class="sxs-lookup"><span data-stu-id="f6de3-104">When you use the mobile app designer to select fields for actions, some properties can be inferred.</span></span> <span data-ttu-id="f6de3-105">これらのプロパティには、フィールドの長さ、タイプ、フィールドが必須かどうかが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f6de3-105">These properties include the field length, the type, and whether the field is mandatory.</span></span> <span data-ttu-id="f6de3-106">これらのプロパティを更新するには、ワークスペース クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="f6de3-106">The workspace classes can be used to update these properties.</span></span> <span data-ttu-id="f6de3-107">たとえば、次の図に示すように、顧客レコードが作成されると**名前**フィールドが必須になるよう指定する場合があります。</span><span class="sxs-lookup"><span data-stu-id="f6de3-107">For example, you might want to specify that the **Name** field is mandatory when a customer record is created, as shown in the following images.</span></span>
 
 ![アクションおよびフィールド](media/workspace-api/MarkFieldAsMandatoryDesigner.png)
 
 ![必須フィールドがマークされているアクション](media/workspace-api/MarkFieldAsMandatoryAction.png)
 
-<span data-ttu-id="8337b-110">ワークスペース クラスを使用して**配送条件**フィールドを必須にするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="8337b-110">Follow these steps to make the **Delivery terms** field mandatory by using the workspace class.</span></span>
+<span data-ttu-id="f6de3-110">ワークスペース クラスを使用して**配送条件**フィールドを必須にするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f6de3-110">Follow these steps to make the **Delivery terms** field mandatory by using the workspace class.</span></span>
 
-1. <span data-ttu-id="8337b-111">アプリ デザイナーを使用して、コントロール名を取得します。</span><span class="sxs-lookup"><span data-stu-id="8337b-111">Get the control name by using the app designer.</span></span> <span data-ttu-id="8337b-112">この例では、コントロール名は **DynamicDetail_DlvTerm** です。</span><span class="sxs-lookup"><span data-stu-id="8337b-112">In this example, the control name is **DynamicDetail_DlvTerm**.</span></span>
-2. <span data-ttu-id="8337b-113">次のコードを追加して、コントロールの**必須**プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="8337b-113">Add the following code to set the **Mandatory** property for the control.</span></span> <span data-ttu-id="8337b-114">このコードでは、リフレクションベースの **setProperty** メソッドを使用して**必須**プロパティを設定しています。</span><span class="sxs-lookup"><span data-stu-id="8337b-114">This code uses the reflection-based **setProperty** method to set the **Mandatory** property.</span></span>
+1. <span data-ttu-id="f6de3-111">アプリ デザイナーを使用して、コントロール名を取得します。</span><span class="sxs-lookup"><span data-stu-id="f6de3-111">Get the control name by using the app designer.</span></span> <span data-ttu-id="f6de3-112">この例では、コントロール名は **DynamicDetail_DlvTerm** です。</span><span class="sxs-lookup"><span data-stu-id="f6de3-112">In this example, the control name is **DynamicDetail_DlvTerm**.</span></span>
+2. <span data-ttu-id="f6de3-113">次のコードを追加して、コントロールの**必須**プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="f6de3-113">Add the following code to set the **Mandatory** property for the control.</span></span> <span data-ttu-id="f6de3-114">このコードでは、リフレクションベースの **setProperty** メソッドを使用して**必須**プロパティを設定しています。</span><span class="sxs-lookup"><span data-stu-id="f6de3-114">This code uses the reflection-based **setProperty** method to set the **Mandatory** property.</span></span>
 
     ```javascript
     public SysAppWorkspaceMetadata getWorkspaceMetadata()
@@ -55,8 +55,8 @@ ms.locfileid: "369718"
     }
     ```
 
-3. <span data-ttu-id="8337b-115">ソリューションをビルドし、モバイル アプリでアプリのメタデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="8337b-115">Build the solution, and then update the app metadata on the mobile app.</span></span>
+3. <span data-ttu-id="f6de3-115">ソリューションをビルドし、モバイル アプリでアプリのメタデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="f6de3-115">Build the solution, and then update the app metadata on the mobile app.</span></span>
 
-<span data-ttu-id="8337b-116">**配送条件** フィールドは、次の図に示すように **必須** としてマークされるようになりました。</span><span class="sxs-lookup"><span data-stu-id="8337b-116">The **Delivery terms** field is now marked as **Mandatory**, as shown in the following illustration.</span></span>
+<span data-ttu-id="f6de3-116">**配送条件** フィールドは、次の図に示すように **必須** としてマークされるようになりました。</span><span class="sxs-lookup"><span data-stu-id="f6de3-116">The **Delivery terms** field is now marked as **Mandatory**, as shown in the following illustration.</span></span>
 
 ![配信条件フィールドは必須とマークされています](media/workspace-api/MarkFieldAsMandatoryFinal.png)

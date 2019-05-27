@@ -18,38 +18,38 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: ad5add2b572ccb6bff175806b965f63b53986152
-ms.sourcegitcommit: 45b79d1e587e03f5cde2766cdec4eaa7a2a897a3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "949785"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518507"
 ---
-# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a><span data-ttu-id="ee1b8-103">Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない</span><span class="sxs-lookup"><span data-stu-id="ee1b8-103">Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)</span></span>
+# <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a><span data-ttu-id="750d6-103">Microsoft Dynamics 365 アプリ (Common Data Service 1.0) で Talent が表示されない</span><span class="sxs-lookup"><span data-stu-id="750d6-103">Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)</span></span>
 
 [!include [banner](includes/banner.md)]
 
-**<span data-ttu-id="ee1b8-104">問題点</span><span class="sxs-lookup"><span data-stu-id="ee1b8-104">Issue</span></span>**
+<span data-ttu-id="750d6-104">**問題点**</span><span class="sxs-lookup"><span data-stu-id="750d6-104">**Issue**</span></span>
 
-<span data-ttu-id="ee1b8-105">顧客は、Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 for Talent アプリを表示できません。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-105">The customer doesn't see the Microsoft Dynamics 365 for Talent app among the Microsoft Dynamics 365 apps.</span></span>
+<span data-ttu-id="750d6-105">顧客は、Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 for Talent アプリを表示できません。</span><span class="sxs-lookup"><span data-stu-id="750d6-105">The customer doesn't see the Microsoft Dynamics 365 for Talent app among the Microsoft Dynamics 365 apps.</span></span>
 
-**<span data-ttu-id="ee1b8-106">解像度</span><span class="sxs-lookup"><span data-stu-id="ee1b8-106">Resolution</span></span>**
+<span data-ttu-id="750d6-106">**解像度**</span><span class="sxs-lookup"><span data-stu-id="750d6-106">**Resolution**</span></span>
 
-<span data-ttu-id="ee1b8-107">ユーザーは、Microsoft PowerApps の環境の、環境メーカー ロールに追加される必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-107">The user must be added to the Environment Maker role for the environment in Microsoft PowerApps.</span></span>
+<span data-ttu-id="750d6-107">ユーザーは、Microsoft PowerApps の環境の、環境メーカー ロールに追加される必要があります。</span><span class="sxs-lookup"><span data-stu-id="750d6-107">The user must be added to the Environment Maker role for the environment in Microsoft PowerApps.</span></span>
 
-1. <span data-ttu-id="ee1b8-108">PowerApps プラン 2 ライセンスを持つ管理者ユーザーは、[PowerApps 管理ポータル](https://preview.admin.powerapps.com/) を開く必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-108">The admin user who has a PowerApps Plan 2 license must open the [PowerApps Admin portal](https://preview.admin.powerapps.com/).</span></span>
-2. <span data-ttu-id="ee1b8-109">**環境**を選択してから、Talent の正しい環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-109">Select **Environments**, and select the correct environment for Talent.</span></span>
-3. <span data-ttu-id="ee1b8-110">**セキュリティ**タブの、**環境ロール**タブで、**環境メーカー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-110">On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.</span></span>
+1. <span data-ttu-id="750d6-108">PowerApps プラン 2 ライセンスを持つ管理者ユーザーは、[PowerApps 管理ポータル](https://preview.admin.powerapps.com/) を開く必要があります。</span><span class="sxs-lookup"><span data-stu-id="750d6-108">The admin user who has a PowerApps Plan 2 license must open the [PowerApps Admin portal](https://preview.admin.powerapps.com/).</span></span>
+2. <span data-ttu-id="750d6-109">**環境**を選択してから、Talent の正しい環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="750d6-109">Select **Environments**, and select the correct environment for Talent.</span></span>
+3. <span data-ttu-id="750d6-110">**セキュリティ**タブの、**環境ロール**タブで、**環境メーカー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="750d6-110">On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.</span></span>
 
     ![環境ロール タブ](media/environment-roles.png)
 
-4. <span data-ttu-id="ee1b8-112">**ユーザー**タブで、ユーザーまたは組織を追加します。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-112">On the **Users** tab, add the user or your organization.</span></span>
+4. <span data-ttu-id="750d6-112">**ユーザー**タブで、ユーザーまたは組織を追加します。</span><span class="sxs-lookup"><span data-stu-id="750d6-112">On the **Users** tab, add the user or your organization.</span></span>
 
     ![ユーザー タブ](media/environment-maker.png)
 
-5. <span data-ttu-id="ee1b8-114">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-114">Select **Save**.</span></span>
-6. <span data-ttu-id="ee1b8-115">ユーザーはこの時点で [Microsoft Dynamics 365](https://home.dynamics.com/) にサインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-115">The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).</span></span>
-7. <span data-ttu-id="ee1b8-116">**同期**を選択してユーザー アプリを更新します。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-116">Select **Sync** to update the user apps.</span></span>
+5. <span data-ttu-id="750d6-114">**保存** を選択します。</span><span class="sxs-lookup"><span data-stu-id="750d6-114">Select **Save**.</span></span>
+6. <span data-ttu-id="750d6-115">ユーザーはこの時点で [Microsoft Dynamics 365](https://home.dynamics.com/) にサインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="750d6-115">The user must now sign in to [Microsoft Dynamics 365](https://home.dynamics.com/).</span></span>
+7. <span data-ttu-id="750d6-116">**同期**を選択してユーザー アプリを更新します。</span><span class="sxs-lookup"><span data-stu-id="750d6-116">Select **Sync** to update the user apps.</span></span>
 
     ![同期ボタン](media/get-more.png)
 
-    <span data-ttu-id="ee1b8-118">同期が完了した後、Talent はホーム ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="ee1b8-118">After synchronization is completed, Talent will appear on the home page.</span></span>
+    <span data-ttu-id="750d6-118">同期が完了した後、Talent はホーム ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="750d6-118">After synchronization is completed, Talent will appear on the home page.</span></span>

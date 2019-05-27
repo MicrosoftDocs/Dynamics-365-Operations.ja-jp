@@ -16,33 +16,33 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20889ed88dde2eb1064f9d51e04b60a9033981f5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 948a7c953933b51a5ea37a201fa31e4afd710b12
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368732"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537253"
 ---
-# <a name="asset-classifications"></a><span data-ttu-id="14b33-103">資産分類</span><span class="sxs-lookup"><span data-stu-id="14b33-103">Asset classifications</span></span>
+# <a name="asset-classifications"></a><span data-ttu-id="29965-103">資産分類</span><span class="sxs-lookup"><span data-stu-id="29965-103">Asset classifications</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="14b33-104">Microsoft Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent は各テーブルに格納されているデータの種類の既定の分類のセットを提供します。</span><span class="sxs-lookup"><span data-stu-id="14b33-104">Microsoft Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent provide a default set of classifications for the kinds of data that are stored in each table.</span></span> <span data-ttu-id="14b33-105">これらの分類は、さまざまな種類のデータを識別するために必要に応じて変更されることができます。</span><span class="sxs-lookup"><span data-stu-id="14b33-105">These classifications are subject to change depending on the need to identify different kinds of data.</span></span> <span data-ttu-id="14b33-106">各テーブルの各フィールドの実際の分類は、データを識別するための異なるニーズに応じて、いつでも変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="14b33-106">The actual classification for each field in each table can change at any time, depending on differing needs for identifying data.</span></span>
+<span data-ttu-id="29965-104">Microsoft Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent は各テーブルに格納されているデータの種類の既定の分類のセットを提供します。</span><span class="sxs-lookup"><span data-stu-id="29965-104">Microsoft Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent provide a default set of classifications for the kinds of data that are stored in each table.</span></span> <span data-ttu-id="29965-105">これらの分類は、さまざまな種類のデータを識別するために必要に応じて変更されることができます。</span><span class="sxs-lookup"><span data-stu-id="29965-105">These classifications are subject to change depending on the need to identify different kinds of data.</span></span> <span data-ttu-id="29965-106">各テーブルの各フィールドの実際の分類は、データを識別するための異なるニーズに応じて、いつでも変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="29965-106">The actual classification for each field in each table can change at any time, depending on differing needs for identifying data.</span></span>
 
-<span data-ttu-id="14b33-107">カスタマイズによって、独自の分類や追跡ニーズに合わせて次のデータ分類を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="14b33-107">Through customization, you can change the classification of the following data to meet your own classification and tracking needs.</span></span>
+<span data-ttu-id="29965-107">カスタマイズによって、独自の分類や追跡ニーズに合わせて次のデータ分類を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="29965-107">Through customization, you can change the classification of the following data to meet your own classification and tracking needs.</span></span>
 
--  <span data-ttu-id="14b33-108">**顧客コンテンツ** - コントローラーによって収集され、管理されるデータ (一部は個人データ)。</span><span class="sxs-lookup"><span data-stu-id="14b33-108">**Customer content** – Data collected and managed by the controller (some of which can be personal data).</span></span>
+-  <span data-ttu-id="29965-108">**顧客コンテンツ** - コントローラーによって収集され、管理されるデータ (一部は個人データ)。</span><span class="sxs-lookup"><span data-stu-id="29965-108">**Customer content** – Data collected and managed by the controller (some of which can be personal data).</span></span>
 
--  <span data-ttu-id="14b33-109">**エンド ユーザー識別情報** (EUII) - サービスのユーザーを識別するために使用されるナチュラル値。</span><span class="sxs-lookup"><span data-stu-id="14b33-109">**End User Identifiable Information** (EUII) – A natural value used to identify a user of the service.</span></span>
+-  <span data-ttu-id="29965-109">**エンド ユーザー識別情報** (EUII) - サービスのユーザーを識別するために使用されるナチュラル値。</span><span class="sxs-lookup"><span data-stu-id="29965-109">**End User Identifiable Information** (EUII) – A natural value used to identify a user of the service.</span></span>
 
--  <span data-ttu-id="14b33-110">**エンド ユーザー匿名情報** (EUPI) - サービスのユーザーを識別するために使用される生成された値。</span><span class="sxs-lookup"><span data-stu-id="14b33-110">**End User Pseudonymous Information** (EUPI) – A generated value used to identify the user of the service.</span></span> 
+-  <span data-ttu-id="29965-110">**エンド ユーザー匿名情報** (EUPI) - サービスのユーザーを識別するために使用される生成された値。</span><span class="sxs-lookup"><span data-stu-id="29965-110">**End User Pseudonymous Information** (EUPI) – A generated value used to identify the user of the service.</span></span> 
 
--  <span data-ttu-id="14b33-111">**組織識別情報** (OII) – サービスを使用する組織を識別するために使用される値。</span><span class="sxs-lookup"><span data-stu-id="14b33-111">**Organizational Identifiable Information** (OII) – A value used to identify the organization using the service.</span></span>
+-  <span data-ttu-id="29965-111">**組織識別情報** (OII) – サービスを使用する組織を識別するために使用される値。</span><span class="sxs-lookup"><span data-stu-id="29965-111">**Organizational Identifiable Information** (OII) – A value used to identify the organization using the service.</span></span>
 
--  <span data-ttu-id="14b33-112">**システム メタデータ** – ソフトウェアを説明する、またはソフトウェアで使用する、通常ソフトウェアで生成される値。</span><span class="sxs-lookup"><span data-stu-id="14b33-112">**System metadata** – A value that describes the software or used by the software, typically generated by the software.</span></span>
+-  <span data-ttu-id="29965-112">**システム メタデータ** – ソフトウェアを説明する、またはソフトウェアで使用する、通常ソフトウェアで生成される値。</span><span class="sxs-lookup"><span data-stu-id="29965-112">**System metadata** – A value that describes the software or used by the software, typically generated by the software.</span></span>
 
--  <span data-ttu-id="14b33-113">**オブジェクト メタデータ** – ソフトウェアのテナントまたはユーザーが提供できる、ソフトウェアを説明する値、またはソフトウェアで使用する値。</span><span class="sxs-lookup"><span data-stu-id="14b33-113">**Object metadata** – A value that describes the software or used by the software, but can be provided by the tenant or user of the software.</span></span>
+-  <span data-ttu-id="29965-113">**オブジェクト メタデータ** – ソフトウェアのテナントまたはユーザーが提供できる、ソフトウェアを説明する値、またはソフトウェアで使用する値。</span><span class="sxs-lookup"><span data-stu-id="29965-113">**Object metadata** – A value that describes the software or used by the software, but can be provided by the tenant or user of the software.</span></span>
 
--  <span data-ttu-id="14b33-114">**勘定データ** - 請求情報を識別したり、テナントが使用しているソフトウェアを特定するために、テナントによって提供または使用される値。</span><span class="sxs-lookup"><span data-stu-id="14b33-114">**Account data** – A value provided by or used by the tenant to identify the billing information or identify the software used by the tenant.</span></span>
+-  <span data-ttu-id="29965-114">**勘定データ** - 請求情報を識別したり、テナントが使用しているソフトウェアを特定するために、テナントによって提供または使用される値。</span><span class="sxs-lookup"><span data-stu-id="29965-114">**Account data** – A value provided by or used by the tenant to identify the billing information or identify the software used by the tenant.</span></span>
 
--  <span data-ttu-id="14b33-115">**データのサポート** – 顧客サポートを提供するために使用される情報。</span><span class="sxs-lookup"><span data-stu-id="14b33-115">**Support data** – Information used to provide customer support.</span></span>
+-  <span data-ttu-id="29965-115">**データのサポート** – 顧客サポートを提供するために使用される情報。</span><span class="sxs-lookup"><span data-stu-id="29965-115">**Support data** – Information used to provide customer support.</span></span>
