@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ac3b987438503e57425eba26933c2d39ed3ea608
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02109e44a5f4c68e66808df23ad05ef1965ad7f9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512711"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
 [!include [banner](../../includes/banner.md)]
 
-チャネル データベース (チャネル DB) は、オンライン ストアまたはブリックアンドモルタル ストアなどの 1 つまたは複数の小売チャネルからのトランザクションおよびマスターデータを保持します。 マスター データは、Commerce Data Exchange (CDX) を使用して小売用バックオフィス (Retail HQ) からチャネル データベースに適用されます。 チャネル データベースに格納されたトランザクション データは、CDX を使用して本社に引き戻されます。
+チャネル データベース (チャネル DB) は、オンライン ストアまたはブリックアンドモルタル ストアなどの 1 つまたは複数の小売チャネルからのトランザクションおよびマスターデータを保持します。 Commerce Data Exchange (CDX) を使用して、マスター データは Retail Headquarters (Retail HQ) からチャネル データベースにプッシュされます。 チャネル データベースに格納されたトランザクション データは、CDX を使用して本社に引き戻されます。
 
 このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 以下の手順は、Dynamics 365 for Retail、Dynamics 365 for Finance and Operations にのみ適用します。
 

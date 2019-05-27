@@ -18,11 +18,11 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340640"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554993"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Excel でエンティティ データを開き、Excel アドインを使用して更新する
 
@@ -45,7 +45,7 @@ Excel アドインの使用に関する詳細については、短い [Dynamics 
 2. **Excel で開く** オプションを選択し、生成されるブックを開きます。 このブックには、エンティティのバインディング情報、環境へのポインター、また Excel アドインへのポインターがあります。
 3. Excel で **編集機能を有効にする** を選択し、Excel アドインが実行されるようにします。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4. 初めて Excel アドインを実行する場合は、**このアドインを信頼します** を選択します。
-5. サインインするようにとのメッセージが表示されたら、**サインイン** を選択し、Dynamics 365 for Finance and Operations へのサインインに使用するのと同じ資格情報を用いてサインインします。 可能な場合、Excel アドインは Internet Explorer のサインイン コンテキストを使用し、自動的にサインインします。 そのため、Excel アドインの右上隅のユーザー名を確認します。
+5. サインインするようにとのメッセージが表示されたら、**サインイン** を選択し、Finance and Operations へのサインインに使用するのと同じ資格情報を用いてサインインします。 可能な場合、Excel アドインは Internet Explorer のサインイン コンテキストを使用し、自動的にサインインします。 そのため、Excel アドインの右上隅のユーザー名を確認します。
 
 Excel アドインが、選択したエンティティのデータを自動的に読み取ります。 Excel アドインが読み込むまでブックにデータはないことに注意してください。
 

@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 7944a0371fbb62ce6aeab7db2168766d43046c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371107"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564997"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した仕入先月次締め請求書の決済
 

@@ -3,7 +3,7 @@ title: 選択したデータ型の小数点以下の精度の拡張
 description: このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。
 author: LarsBlaaberg
 manager: ''
-ms.date: 10/10/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 8eef5c18b6cde5053bd16827dca3019dcd7cf607
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b6941256a37d2113730d979f538e9b5555decdd5
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1511278"
 ---
 # <a name="extending-decimal-point-precision-for-selected-data-types"></a>選択したデータ型の小数点以下の精度の拡張
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。 特定のシナリオの小数点精度を変更するため、Real 型の特定の拡張データ型の拡張機能を作成することができます。
+このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。 特定のシナリオの小数点精度を変更するため、Real 型の特定の拡張データ型の拡張機能を作成することができます。 小数点以下の桁数を変更するには、必要に応じて **NoOfDecimals** プロパティを変更します。
 
 ## <a name="weight"></a>太さ
 既定では、小数点以下最大 2 桁の重量データを維持できます。 小数点以下精度が最大 6 桁の重量データを入力、管理、および表示する必要がある場合、**WeightBase** 拡張データ型の小数点の精度を拡張する必要があります。

@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f4893351baf50e36bc1f2246565357eb210e3346
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371032"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555173"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-book"></a>帳簿の資産耐用年数期間中の減価償却方法の変更
 

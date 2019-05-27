@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 7e441105b35bbfe53d208195c8164458c816a7a0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371035"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568108"
 ---
 # <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 

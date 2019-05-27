@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f6ba5193e0c2fb14ce5e28379b5e1d92eb79839
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 21a5dfe1d05932707c067c964f51be3ba99b88f2
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537031"
 ---
 # <a name="l-classes"></a>L クラス
 

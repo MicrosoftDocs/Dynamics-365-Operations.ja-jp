@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b48cf3970379f8dd2ea529cd8a434c0bdc196a1e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365687"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560812"
 ---
 # <a name="straight-line-service-life-depreciation"></a>耐用年数定額減価償却
 

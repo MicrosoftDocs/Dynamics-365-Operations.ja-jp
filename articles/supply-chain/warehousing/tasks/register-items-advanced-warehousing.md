@@ -18,11 +18,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 392884d2a87c10a5f38bf6f51967f879c68c1ca6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355498"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558083"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
 

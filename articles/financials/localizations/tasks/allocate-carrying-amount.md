@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ca6d9e1888240f463e02c16882d6da79917e5432
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568084"
 ---
 # <a name="allocate-carrying-amount-of-shared-asset-and-goodwill-to-cash-generating-units"></a>資産グループへの共有資産とのれんの帳簿価額の配賦
 

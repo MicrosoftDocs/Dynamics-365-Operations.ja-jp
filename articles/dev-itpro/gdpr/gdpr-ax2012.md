@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryanc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d72803e0ff4e8e18518879c53324b2abefe4bb78
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a89eee8e9d5eca939cabbc1f6fe1e143f4483567
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369789"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537487"
 ---
 # <a name="respond-to-requests-for-personal-data-in-ax-2012"></a>AX 2012 の個人データ要求への対応
 

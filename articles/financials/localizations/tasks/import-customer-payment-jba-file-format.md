@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: cec09cfdf677b518ece268f5fb40c162ce7bc859
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556588"
 ---
 # <a name="import-customer-payment-with-jba-file-format"></a>JBA のファイル形式の顧客支払のインポート
 

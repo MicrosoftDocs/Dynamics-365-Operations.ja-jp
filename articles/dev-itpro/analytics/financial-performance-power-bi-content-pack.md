@@ -18,11 +18,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "315110"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553955"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>財務パフォーマンス PowerBI.com ソリューション
 
@@ -34,7 +34,7 @@ ms.locfileid: "315110"
 このトピックでは、**財務パフォーマンス** PowerBI.com ソリューションについて説明します。 含まれているダッシュボードおよびレポートについて説明し、ソリューションを作成するために使用したデータ モデルとエンティティに関する情報を提供します。
 
 ## <a name="main-account-setup"></a>主勘定の設定
-組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを **負債** または **収益** に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
+組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを **負債** または **収益** に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>PowerBI.com ソリューションに含まれるダッシュボードおよびレポート
 ダッシュボードには、基になるレポートに基づいて集計されたデータ タイルが含まれます。 各タイルには、組織のすべての会社間での今年度における集計情報が含まれます。 次にタイルの例を示します。

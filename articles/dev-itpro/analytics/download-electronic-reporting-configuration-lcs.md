@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 8686d2639a3ab7f2e79944cc5eed51571d463261
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "315754"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550425"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lifecycle Services から電子申告コンフィギュレーションをダウンロードする
 
@@ -33,7 +33,7 @@ ms.locfileid: "315754"
 
 このチュートリアル ガイドは Microsoft Dynamics Lifecycle Services (LCS) から 電子申告 (ER) コンフィギュレーションの最新バージョンをダウンロードするプロセスを説明します。
 
-1. 次のロールの 1 つを使用して Dynamics 365 for Finance and Operations にサインインします。
+1. 次のロールの 1 つを使用して Finance and Operations にサインインします。
 
     - 電子申告開発者
     - 電子申告機能コンサルタント

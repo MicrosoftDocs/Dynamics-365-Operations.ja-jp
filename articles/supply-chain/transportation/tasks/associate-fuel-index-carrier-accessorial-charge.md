@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ae0aa90cfd673704bcd8e19f795499283ff01d44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349794"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560958"
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>付帯サービス請求金額としての燃料インデックスの配送業者への関連付け
 

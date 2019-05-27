@@ -3,7 +3,7 @@ title: Talent システム要件と更新ポリシー
 description: このトピックは、Dynamics 365 for Talent の要件を一覧表示します。 同様に、その更新ポリシーについても説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2389f00b22ec3b5284eeffb2c015533b7a3d13e0
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856304"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518473"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Talent システム要件と更新ポリシー
 
 [!include [banner](includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Talent の要件を一覧表示します。 同様に、その更新ポリシーについても説明します。
+このトピックでは、Attract、Onboard、および Core HR を含め、Microsoft Dynamics 365 for Talent の要件について説明します。 また、Talent が利用可能な国および地域、Talent データの言語とローカライズの概要について説明します。 さらに、このトピックでは Talent の更新ポリシーについて説明します。
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 
@@ -57,8 +57,17 @@ Microsoft Dynamics 365 for Talent Web アプリケーションは、指定され
 * Microsoft Excel と Word のアドインを実行するには、Windows または Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要件の詳細については、[Office 統合トラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office 統合トラブルシューティング") を参照してください。
 * Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
+## <a name="regional-availability-languages-and-localization"></a>地域の使用可用性、言語、およびローカライズ
+
+Talent がサポートする国、地域、および言語に関する PDF ファイルを [Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/dynamics365/get-started/availability) からダウンロードすることができます。 
+
+> [!NOTE]
+> ユーザー インターフェイスは他の言語にローカライズされますが、ユーザーデータすべては入力された言語で保存されます。 電子メールおよびテンプレートは他の言語で作成できますが、スケジューリング情報などのデータは、現時点では英語でのみ使用可能です。
+
+国や地域固有のカスタマイズの作成、または現在 Microsoft にサポートされていない国や地域用のソリューションの作成に関心のある開発者は、[グローバリゼーション](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region) を参照してください。
+
 ## <a name="update-policy"></a>更新ポリシー
 
 Microsoft Dynamics 365 for Talent はクラウドの提供としてサービスされます。 Dynamics 365 for Talent の更新は、Microsoft によって連続的かつ自動的に適用されます。
 
-更新プログラムは一定の調子でリリースされ、すべての環境で行われます。  Dynamics 365 for Talent は、[Microsoft Support Lifecycle ポリシー](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle") に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。
+更新プログラムは一定の調子でリリースされ、すべての環境で行われます。 Dynamics 365 for Talent は、[Microsoft Support Lifecycle ポリシー](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle") に従ってサポートされています。ここでは、製品サポートの使用可能性における一貫した予測可能なガイドラインを提供します。

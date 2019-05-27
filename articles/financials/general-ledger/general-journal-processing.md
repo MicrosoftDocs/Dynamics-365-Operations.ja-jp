@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "358442"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550331"
 ---
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 

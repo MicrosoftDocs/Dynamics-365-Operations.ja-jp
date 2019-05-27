@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f9d2d681bbfcd9d3f5968fd7186b59c71d7f8618
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570019"
 ---
 # <a name="create-lump-sum-depreciation-assets-using-equally-divided-method"></a>均等償却を使用した一括比例配分減価償却資産の作成
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3828997488c7e9f770dd8da6e8b906ea58600b51
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bdd366b49edfa5dfcc26b921f059b63785b11418
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368721"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537554"
 ---
 # <a name="add-customer-preference-data-to-channel-databases"></a>顧客の基本設定データをチャネル データベースに追加
 
@@ -48,7 +48,7 @@ ms.locfileid: "368721"
 ## <a name="create-a-subjob"></a>サブジョブの作成
 次に、チャネル データベースに新しいテーブルのデータを移動するために、CustTable ジョブのサブジョブを作成します。
 
-1. 小売用バックオフィスで、**Retail** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **スケジューラ サブジョブ**をクリックしてから、**新規**をクリックします。
+1. Retail Headquarters で **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **スケジューラ サブジョブ** とクリックして、そして **新規** をクリックします。
 2. **サブジョブ番号**および**説明**フィールドに **RetailCustPreference** を入力します。
 3. **小売チャネル スキーマ** フィールドで、**Dynamics 365 for Retail** を選択します。
 4. **チャネル テーブル名**フィールドで、**ax.RetailCustPreference** を選択します。

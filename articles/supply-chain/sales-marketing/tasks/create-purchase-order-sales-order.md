@@ -17,11 +17,11 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 7991476b86ace92cda513ae8906c62ba7fbbe915
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "325759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547426"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>販売注文からの発注書の作成
 

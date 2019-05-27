@@ -1,6 +1,6 @@
 ---
 title: 予算計画のアップグレード
-description: Microsoft DynamicsAX 2012 および Microsoft Dynamics 365 for Finance and Operations 間の予算計画には大きな違いがあります。 一部の機能はアップグレードされていないため、再コンフィギュレーションが必要です。 このトピックでは、どのような再コンフィギュレーションが必要かを説明し、アップグレードの完了後に考慮すべき新機能についても説明します。
+description: Microsoft Dynamics AX 2012 および Microsoft Dynamics 365 for Finance and Operations 間の予算計画には大きな違いがあります。 一部の機能はアップグレードされていないため、再コンフィギュレーションが必要です。 このトピックでは、どのような再コンフィギュレーションが必要かを説明し、アップグレードの完了後に考慮すべき新機能についても説明します。
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
@@ -18,19 +18,19 @@ ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554499"
 ---
 # <a name="upgrade-budget-planning"></a>予算計画のアップグレード
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft DynamicsAX 2012 および Microsoft Dynamics 365 for Finance and Operations 間の予算計画には大きな違いがあります。 一部の機能はアップグレードされていないため、再コンフィギュレーションが必要です。 このトピックでは、どのような再コンフィギュレーションが必要かを説明し、アップグレードの完了後に考慮すべき新機能についても説明します。  
+Microsoft Dynamics AX 2012 および Microsoft Dynamics 365 for Finance and Operations 間の予算計画には大きな違いがあります。 一部の機能はアップグレードされていないため、再コンフィギュレーションが必要です。 このトピックでは、どのような再コンフィギュレーションが必要かを説明し、アップグレードの完了後に考慮すべき新機能についても説明します。  
 
-Microsoft Dynamics 365 for Finance and Operations の予算計画には、Microsoft DynamicsAX 2012 で使用できなかった多くの拡張機能があります。 このトピックでは、アップグレードを行う顧客に必要な変更について説明します。 アップグレード プロセス中に考慮すべき新機能も示されています。 変更の範囲のために、既存の予算計画は、このトピックの説明にある変更が行われるまで開くことができません。 ただし、レポートは作業を続行でき、追加の変更は必要ありません。
+Microsoft Dynamics 365 for Finance and Operations の予算計画には、Microsoft Dynamics AX 2012 で使用できなかった多くの拡張機能があります。 このトピックでは、アップグレードを行う顧客に必要な変更について説明します。 アップグレード プロセス中に考慮すべき新機能も示されています。 変更の範囲のために、既存の予算計画は、このトピックの説明にある変更が行われるまで開くことができません。 ただし、レポートは作業を続行でき、追加の変更は必要ありません。
 
 ## <a name="overview-of-changes"></a>変更の概要
 Finance and Operations の予算作成に大幅な変更が加えられています。 これらの変更は、予算作成をより簡単にコンフィギュレーションし、再利用の可能性を高め、年次メンテナンスと設定を削減することを目的としています。 AX 2012 の次の領域は、Finance and Operations にはもう存在しません。

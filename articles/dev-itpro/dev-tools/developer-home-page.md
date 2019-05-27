@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0de1e48aa9fbabdcd711aabded726066f9e341b1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: acb9d6a19497038205cd9bb44e737d17b88b4599
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536958"
 ---
 # <a name="develop-and-customize"></a>開発およびカスタマイズ 
 
@@ -85,7 +85,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [Visual Studio を使用して競合を解決する](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [新しいユーザー アカウントを開発 VM で開発できるようにする](enable-development-machine.md)
 -   [Visual Studio 開発ツールの更新](update-development-tools.md)
--   [管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)
+-   [仮想マシンが管理者のアクセスを許可しない事象に関するFAQ](../sysadmin/VMs-no-admin-access.md)
 <!--  [Configure version control with Azure DevOps (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
@@ -118,7 +118,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 
 ## <a name="performance"></a>パフォーマンス
 - [Trace Parser でトレースを実行し、分析する](../perf-test/trace-trace-tutorial.md)
-- [PerfSDK および Visual Studio Online によるマルチ ユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
+- [PerfSDKの概要および Visual Studio Onlineを使用したマルチユーザー テスト](../perf-test/perfsdk-tutorial.md)
 - [問題点の診断およびパフォーマンス問題の分析にTrace Parser のデスクトップ バージョンを使用する](../perf-test/trace-parser.md)
 - [パフォーマンス タイマー](../perf-test/performance-timer.md)
 <!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)

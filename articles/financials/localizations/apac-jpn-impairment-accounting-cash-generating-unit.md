@@ -18,11 +18,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0edb9e2292ea3aa219e6143e7019eafa47c49d31
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371027"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568837"
 ---
 # <a name="fixed-asset-impairment-accounting-on-cash-generating-units-for-japan"></a>日本のキャッシュ生成単位の固定資産減損会計
 

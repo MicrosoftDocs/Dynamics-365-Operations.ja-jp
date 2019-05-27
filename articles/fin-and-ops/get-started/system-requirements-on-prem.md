@@ -18,11 +18,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.openlocfilehash: 0e72bf2af7019e7328bad495bb18004090efc12c
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "858965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537478"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 

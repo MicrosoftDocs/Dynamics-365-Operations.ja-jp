@@ -17,11 +17,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e7d7d79b1d496223b027d800beca105ecaa0bd4c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552451"
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>顧客の設定と ISO20022 口座引落用の顧客銀行口座の設定
 

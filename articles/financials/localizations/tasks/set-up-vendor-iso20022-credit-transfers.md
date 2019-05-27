@@ -17,11 +17,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 13b3c37f5d013dd896a456018813f20e5e70350b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "311614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565046"
 ---
 # <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a>仕入先の設定と ISO20022 口座振替用の仕入先銀行口座の設定
 

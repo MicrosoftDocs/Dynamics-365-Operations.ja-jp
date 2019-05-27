@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 358e8fbc1f4ebb35744cf3acffc969a19a326411
-ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
+ms.openlocfilehash: 65780daf29286a4812110dfbb78d574bd1f5ef05
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "770929"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510970"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 
 + [オーバーレイから拡張機能への移行](migrate-overlayer-extension.md)
 + [拡張機能を使用したモデル要素のカスタマイズ (チュートリアル)](customize-model-elements-extensions.md)
-+ [カスタマイズ: オーバーレイと拡張機能](customization-overlayering-extensions.md)
++ [カスタマイズ: オーバーレイと機能拡張](customization-overlayering-extensions.md)
 <!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## <a name="fundamentals-on-extensions"></a>拡張機能の基本

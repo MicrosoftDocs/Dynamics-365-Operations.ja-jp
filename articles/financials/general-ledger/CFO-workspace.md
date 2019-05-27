@@ -19,11 +19,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: a15414eff99751d4e77e5b3bf315a556efb7ad5d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "332682"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566836"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>CFO ワークスペースへの財務分析コードの追加
 
@@ -34,7 +34,7 @@ ms.locfileid: "332682"
 1. Finance and Operations の **エンティティ格納** ページで、**LedgerActivityMeasure** および **BudgetActivityMeasure** 措置を更新します。
 2. Microsoft Visual Studio で、アプリケーション エクスプローラーを開き、**LedgerCFO** を検索します。
 3. **リソース**で、**LedgerCFOWorkspacePBIX**を開きます。
-4. Microsoft Power BI Desktop でリソースを開く場合、**データの取得**を選択し、**SQL Server データベース**を選択し、**接続**を選択します。
+4. Microsoft Power BI desktop でリソースを開く場合、**データの取得**を選択し、**SQL Server データベース**を選択し、**接続**を選択します。
 5. サーバー名を入力し、**AxDW** をデータベースとして入力します。 **DirectQuery**を選択し **OK**を選択します。
 6. **LedgerActivityMeasure\_DimensionCombination**を検索して選択し、**読み込み**を選択します。
 

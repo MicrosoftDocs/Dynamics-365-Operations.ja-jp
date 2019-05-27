@@ -3,7 +3,7 @@ title: メンテナンス モード
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードは、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行できるシステム全体に適用される設定です。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b1ced105f238b6cd97d17c114478128cc9ea6b1
-ms.sourcegitcommit: 980cf8280538f37d64c477576a67f66bb00252d3
+ms.openlocfilehash: ef05d66145f40958f9bb0bb57df05f90c025938f
+ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "776910"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540878"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
@@ -36,18 +36,26 @@ ms.locfileid: "776910"
 ## <a name="turn-maintenance-mode-on-and-off-on-sandbox-and-production-environments-through-lifecycle-services"></a>Lifecycle Services を通じてサンドボックスおよび運用環境でメンテナンス モードを有効または無効にする 
 サンドボックスおよび運用環境で、Lifecycle Services (LCS) を通じて直接メンテナンス モードを有効または無効にできます。 これを行うには、次の手順を参照してください。
 
-1. 環境の詳細ページに移動し、**メンテナンス** メニューで **メンテナンス モードの構成** をクリックします。 プレビューに追加された顧客に対してこのメニュー項目が表示されます。
+1. 環境の詳細ページに移動し、 **メンテナンス** メニューで **メンテナンス モードの有効化** をクリックします。 
 2. スライダーで、環境の **メンテナンス モードを有効にする** を設定し、**確認** を選択します。
 3. サービス工程が開始され、システムがメンテナンス モードになります。
 4. 完了時、環境の状態が **メンテナンス中** になります。 この時点では、システム管理者だけが環境にアクセスできます。
-5. システム全体にわたる変更を完了した後、環境更新セクションで **メンテナンス モードの無効化** をクリックすることで、メンテナンス モードをオフにすることができます。
+5. システム全体の変更を完了後、 **メンテナンス** メニューの **メンテナンスモードの無効化** をクリックすることで、メンテナンス モードをオフにすることができます。
 6. これにより、環境のメンテナンス モードを終了するサービス操作が開始されます。 環境の詳細ページで、工程の進捗状況を確認できます。
 7. これが完了すると、環境が **配置中** 状態に戻ります。 すべてのユーザーが環境にログオンできるようになりました。
 8. メンテナンス モードが有効または無効かを環境の履歴ページで確認することができます。 環境履歴ページに移動するには環境の詳細ページで **履歴** および **環境の変更** を選択します。
 
 サンドボックスおよび運用環境のメンテナンス モードをオン/オフにする操作と、サービス操作にとても似ています。 メンテナンス モードのオンまたはオフに失敗した場合は、**再開**、**ロールバック**、および **中止** などのオプションが表示されます。 操作に失敗した理由をトラブルシューティングするために**ログをダウンロード**するオプションもあります。
 
-## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-and-vhd-based-hosted-environments"></a>DevTest/デモ環境およびVHD ベースのホストされている環境でメンテナンス モードのオンとオフを切り替える
+## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-hosted-in-a-microsoft-subscription"></a>Microsoft サブスクリプションで動作している開発テスト環境またはデモ環境にてメンテナンス モードをオンにする/オフにする。
+1. 開発者のマシンに RDP の接続を確立します。
+2. 開発者のマシンで、LCS から axdbadmin ユーザーの資格情報を使用して SQL Server にサインインします。 次に、AXDB データベースに切り替えて、次のコマンドを実行します。
+      update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+3. **World Wide Web 公開サービス** を再起動して IIS をリセットします。
+4. サービスが再起動されると、システムはメンテナンス モードになります。
+5. メンテナンス モードの活動を完了したら、ステップ 2 および 3 を繰り返しますが、値はステップ 2 で 0 に設定します。
+
+## <a name="turn-maintenance-mode-on-and-off-in-devtestdemo-environments-and-vhd-based-environments-hosted-in-customers-subscription"></a>サブスクリプションで動作しているVHDベースの環境あるいは、開発テスト環境またはデモ環境にて、メンテナンス モードをオンにする/オフにする。
 
 次のコマンドを実行して、メンテナンス モードをローカルでオンにすることができます。 
 

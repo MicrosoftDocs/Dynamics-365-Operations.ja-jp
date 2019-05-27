@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "314926"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550401"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -118,7 +118,7 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 ### <a name="screen-destination"></a>画面出力先
 
-**有効** を **はい** に設定すると、出力のプレビューが作成されます。 ブラウザー ウィンドウで直接 XML、TXT、PDF などの一部のファイル タイプを表示できます。 Microsoft Excel や Microsoft Word などの他のファイル タイプについては、Microsoft Office Online サービスが使用されます。
+**有効** を **はい** に設定すると、出力のプレビューが作成されます。 ブラウザー ウィンドウで直接 XML、TXT、PDF などの一部のファイル タイプを表示できます。 Microsoft Excel や Word などの他のファイル タイプについては、Microsoft Office Online サービスが使用されます。
 
 ### <a name="power-bi-destination"></a>Power BI 出力先
 

@@ -18,11 +18,11 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330175"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558955"
 ---
 # <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>[新しいウィンドウで開く] 機能を使用してページを並べて表示する
 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 for Finance and Operations により、効率的にタス
 
 一部のページには、グリッド ビュー、ヘッダー ビュー、詳細ビューなどの複数のビューがあります。 **新しいウィンドウで開く**アイコンにより、ページ全体を新しいブラウザー ウィンドウで開くことができます。 したがって、**新しいウィンドウで開く**機能では、同じページの 2 つのビューを並べて表示することはできません。 ただし、このようなページのほとんどすべてには、レコードの切り替えや同様の操作を達成するために使用できるナビゲーション リストがあります。
 
-**新しいウィンドウで開く**機能を使用する前に、ブラウザーのポップアップ ブロッカーをコンフィギュレーションして、Dynamics 365 for Finance and Operations サイトの URL からのポップアップを許可する必要があります。 たとえば、「\*.dynamics.com」からのポップアップを許可することができます。
+**新しいウィンドウで開く**機能を使用する前に、ブラウザーのポップアップ ブロッカーをコンフィギュレーションして、Finance and Operations サイトの URL からのポップアップを許可する必要があります。 たとえば、「\*.dynamics.com」からのポップアップを許可することができます。
 
 **新しいウィンドウで開く**機能は、ウィンドウで 1 つ以上のページが開いている場合にのみ使用できます。 また、ポップアップ ウィンドウは、開いているページがなくなると (つまり、そのウィンドウで最後のページが閉じると) 自動的に閉じます。 アプリケーションの別の領域に移動すると、Finance and Operations も開いているページを閉じます。 したがって、ポップアップ ウィンドウが開いているときに、アプリケーションで別の領域に移動すると、システムがそれらのウィンドウ内のページを閉じるので、ポップアップ ウィンドウは自動的に閉じます。
 

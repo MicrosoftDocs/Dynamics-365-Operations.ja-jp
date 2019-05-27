@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f05c40e5b8e22d295e1c49ee608f92458f4823b6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b12e4466cfbb3d73b0cc4c6b35fd440227faf964
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537495"
 ---
 # <a name="extend-the-scope-of-number-sequences"></a>番号順序スコープの拡張
 

@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
 ms.openlocfilehash: 199c019d7cd444ded3a7f5320839d556b5d3a917
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975736"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537518"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail (2019 年 4 月) の新機能や変更された機能
 

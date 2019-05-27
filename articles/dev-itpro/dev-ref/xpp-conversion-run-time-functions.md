@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9997740a69f1e6ea449ee2cceaab4c0bc8753652
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 712b838f04f7e0cd3bead324392fa30a89c3ac95
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536992"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 

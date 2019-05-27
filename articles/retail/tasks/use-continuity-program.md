@@ -18,11 +18,11 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 45bd4a3cc9f9b03c713d33638d6dc93aa696c581
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "358166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564912"
 ---
 # <a name="using-continuity-program"></a>連続プログラムの使用
 
@@ -31,7 +31,7 @@ ms.locfileid: "358166"
 この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。 この手順を完了するには、コール センターのユーザーとして設定する必要があります。 この手順では、デモ データの会社 USRT を使用します。
 
 1. [小売りとコマース] > [顧客] > [顧客サービス] に移動します。
-2. [SearchText] フィールドに、「Karen」を入力し、[タブ] キーを押します。
+2. SearchText フィールドに、「Karen」を入力し、タブ キーを押します。
     * 高度な検索ダイアログがポップアップするはずです。 表示されない場合は、このフィールドの右側にある [検索] をクリックします。  
 3. 一覧で、選択された行をマークします。
     * Karen Berg の表示は 1 行のみのはずです。 グリッドの左側のチェックマークの列をクリックして行を選択します。  

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e513a94cbef94fc8cfb393729b9df5fd2bf0aea6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6be0dc860cba95d9b83bd929c26e25578da3e722
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368992"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537519"
 ---
 # <a name="send-email-receipts-from-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) からの電子メール レシートの送信
 

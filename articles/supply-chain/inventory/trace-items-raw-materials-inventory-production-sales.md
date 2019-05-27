@@ -19,11 +19,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310073"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562533"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>在庫、生産、および販売における品目と原材料の追跡
 

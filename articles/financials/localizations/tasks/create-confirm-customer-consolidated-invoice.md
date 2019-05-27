@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 70d6dce40bce225ef24d5aeb5e2e074259e16477
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371023"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549493"
 ---
 # <a name="create-and-confirm-a-customer-consolidated-invoice"></a>顧客月次締め請求書の作成および確認
 

@@ -3,7 +3,7 @@ title: 販売注文の Sales、Finance and Operations 間の直接同期
 description: このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339122"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539117"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>販売注文の Sales と Finance and Operations の間の直接同期
 
@@ -146,6 +146,16 @@ Sales での割引計算モデルは、Finance and Operations の割引計算モ
 ### <a name="setup-in-finance-and-operations"></a>Finance and Operations での設定
 
 - **販売とマーケティング**&gt;**定期処理のタスク**&gt;**販売合計を計算する**の順に移動してから、バッチ ジョブとして実行されるようにジョブを設定します。 **販売注文合計を計算する**オプションを**はい**に設定します。 販売合計が計算された販売注文のみが Sales に同期されるため、このステップは重要です。 バッチジョブの頻度は、販売注文同期の頻度と一致させる必要があります。
+
+ワークオーダー統合も使用する場合は、販売元を設定する必要があります。 販売元は、Field Service のワーク オーダーから作成された Finance and Operations の販売注文を区別するために使用されます。 販売注文に**ワーク オーダー統合**タイプの販売元がある場合、**外部ワーク オーダー ステータス** フィールドが販売注文ヘッダーに表示されます。 また販売元は、Field Service のワーク オーダーから作成された販売注文が、Finance and Operations から Field Service への販売注文同期の間に除外されることを保証します。
+
+1. **販売とマーケティング** \> **設定** \> **販売注文** \> **販売元** に移動します。
+2. **新規**を選択し、新しい販売元を作成します。
+3. **販売元**フィールドに、**SalesOrder** のような販売元の名前を入力します。
+4. **説明**フィールドに、**販売からの販売注文**のような説明を入力します。
+5. **発生元タイプの割り当て** チェック ボックスを選択します。
+6. **販売元タイプ**フィールドを**販売注文統合**に設定します。
+7. **保存** を選択します。
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>販売注文のセット アップ (Sales から Finance and Operations) - ダイレクト データ統合プロジェクト
 

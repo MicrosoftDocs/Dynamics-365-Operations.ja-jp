@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: d1c05750c200614feeb9bba934329a924b46a0a8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371086"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565009"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した仕入先月次締め請求書の決済
 

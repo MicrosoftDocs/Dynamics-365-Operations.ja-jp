@@ -20,11 +20,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "343515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558576"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 

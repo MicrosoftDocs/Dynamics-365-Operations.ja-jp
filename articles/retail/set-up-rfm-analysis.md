@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336638"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553048"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency、頻度、および金融 (RFM) 分析の設定
 

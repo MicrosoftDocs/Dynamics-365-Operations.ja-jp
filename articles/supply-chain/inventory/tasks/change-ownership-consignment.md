@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: d1324da6996230eb383e2f37d3a133ec35cb0f41
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "319020"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550045"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>生産需要に基づく委託販売在庫の所有権の変更
 

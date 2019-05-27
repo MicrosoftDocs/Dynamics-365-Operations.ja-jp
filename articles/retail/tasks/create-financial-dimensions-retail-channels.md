@@ -17,11 +17,11 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cf32d17a36fd699141ce697d23e20b2eb5cbfa54
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "354532"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566459"
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
 
@@ -47,7 +47,7 @@ ms.locfileid: "354532"
 16. [Retailchannel] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 17. リストで、更新された店舗の分析コード値を参照して選択します。
 18. 一覧で、選択された行のリンクをクリックします。
-19. [CostCenter] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+19. CostCenter フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 20. 一覧で、目的のレコードを見つけ、選択します。
 21. 一覧で、選択された行のリンクをクリックします。
 22. [部門] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
