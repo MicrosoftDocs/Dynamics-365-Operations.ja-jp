@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 443130ff1a79fb4d5d0ee0358a957d7eee83ef16
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 26b1a1109393b18fcc034bc2bbc30826247c6a46
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368457"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537062"
 ---
 # <a name="extend-analytical-solutions-and-host-them-on-powerbicom"></a>解析ソリューションを拡張して、PowerBI.com でホストします。
 

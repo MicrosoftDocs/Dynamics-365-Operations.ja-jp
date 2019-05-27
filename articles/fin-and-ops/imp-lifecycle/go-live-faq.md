@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0072548f50afbd6f11257c1ff3906ce20e636fd1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4113d18b3322e09c9214a4fa3dbc39064204a4ea
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369918"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538480"
 ---
 # <a name="go-live-for-finance-and-operations-implementation-projects-faq"></a>Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問
 

@@ -3,7 +3,7 @@ title: 予定された保守ウィンドウのよく寄せられる質問
 description: このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a3e03e942aada5e7e41f11705b16c1bae92e132
-ms.sourcegitcommit: c19d9cb1f1e77ce96ac4ec6e3212bc3c06288a7d
+ms.openlocfilehash: 8eeee27b964fa4412ecb008836f4f1ef30c2b942
+ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "892570"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540876"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
@@ -94,4 +94,4 @@ Microsoft はサービスのダウンタイムの必要性を減らすよう継�
 Microsoft は計画的なメンテナンスを再スケジュールするためのオプションを提供していません。 ただし、現在の月の保守サイクルから除外するように選択できます。 
 
 ### <a name="how-do-i-opt-out-of-the-current-maintenance-cycle"></a>現在のメンテナンス サイクルを停止するにはどうすればよいですか。
-現在のメンテナンス サイクルを無効にするには、Microsoft にサポート チケットを提出してください。 ご使用の環境は、今月の保守サイクルから除外されます。 ただし、お客様の環境は翌月に更新されます。
+現在のメンテナンス サイクルを無効にするには、Microsoft にサポート チケットを提出してください。 無効化の要求をするサポートチケットの提出期限は、通知メールに記載されています。 無効化の要求は、締め切りを過ぎて送信された場合には受け付けられません。 ご利用の環境は当月のメンテナンスサイクルの対象から除外されますが、翌月には再度更新されます。

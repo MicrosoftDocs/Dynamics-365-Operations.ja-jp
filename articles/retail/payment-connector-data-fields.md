@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: 62f620ee665ad152f861d03a0ebaf989e6e2c9be
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2e2b5e50c2f531101e399bb0b8d6e41eba911606
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369436"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539451"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -40,8 +40,8 @@ ms.locfileid: "369436"
 
 このトピックでは、支払コネクタによって管理されているデータに関して次の領域に関する特定の詳細情報を提供します。
 
-- **[カードありシナリオで使用されるデータ](#Data-used-in-card-present-scenarios)**: このセクションでは、カードありシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。
-- **[カードなしシナリオで使用されるデータ](#Data-used-in-card-not-present-scenarios)**: このセクションでは、カードなしシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。
+- **[カードありシナリオで使用されるデータ](#data-used-in-card-present-scenarios)**: このセクションでは、カードありシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。
+- **[カードなしシナリオで使用されるデータ](#data-used-in-card-not-present-scenarios)**: このセクションでは、カードなしシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。
 
 ## <a name="data-used-in-card-present-scenarios"></a>カードありシナリオで使用されるデータ
 
@@ -80,7 +80,7 @@ ms.locfileid: "369436"
 |---|---|
 | 金額 | 取得する金額。 |
 | 通貨 | 取得する金額の通貨。 |
-| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、このトピックで後述する[支払 SDK データ](#Payment-SDK-data) セクションを参照してください。 |
+| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、このトピックで後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。 |
 
 #### <a name="voidpaymentterminaldevicerequest"></a>VoidPaymentTerminalDeviceRequest
 
@@ -88,7 +88,7 @@ ms.locfileid: "369436"
 |---|---|
 | 金額 | 支払いが無効になる金額。 |
 | 通貨 | 支払いが無効になる通貨。 |
-| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、このトピックで後述する[支払 SDK データ](#Payment-SDK-data) セクションを参照してください。 |
+| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、このトピックで後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。 |
 
 #### <a name="refundpaymentterminaldevicerequest"></a>RefundPaymentTerminalDeviceRequest
 
@@ -161,8 +161,8 @@ ms.locfileid: "369436"
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 | TransactionData | TerminalId | トランザクションが発生した端末の一意の識別子。 |
-| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#L2-data) セクションを参照してください。 |
-| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#L3-data) セクションを参照してください。 |
+| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。 |
+| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。 |
 
 #### <a name="capture"></a>キャプチャ
 
@@ -171,8 +171,8 @@ ms.locfileid: "369436"
 | MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
-| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#L2-data) セクションを参照してください。 |
-| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#L3-data) セクションを参照してください。 |
+| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。 |
+| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。 |
 
 #### <a name="void"></a>無効
 
@@ -200,8 +200,8 @@ ms.locfileid: "369436"
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 | TransactionData | TerminalId | トランザクションが発生した端末の一意の識別子。 |
-| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#L2-data) セクションを参照してください。 |
-| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#L3-data) セクションを参照してください。 |
+| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。 |
+| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。 |
 
 #### <a name="getpaymentacceptpoint"></a>GetPaymentAcceptPoint 
 

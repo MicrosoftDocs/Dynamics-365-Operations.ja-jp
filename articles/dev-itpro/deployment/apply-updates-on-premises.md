@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 0d81ce02b308d2328322dab0f6a5d2e6aa479530
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c671784b5eb100c7d96bc58e1099fdd1c4963a3e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369983"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537084"
 ---
 # <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置への更新プログラムの適用
 

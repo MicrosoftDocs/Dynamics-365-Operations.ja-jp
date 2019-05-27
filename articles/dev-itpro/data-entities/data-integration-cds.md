@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c928ed4ea8b05f4507fddebae0db7f5504d94d0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 109ae9e4d0ff5fcc8d766265a7a2952cef04c938
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369505"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505420"
 ---
 # <a name="data-integration-by-using-common-data-service"></a>Common Data Service を使用したデータ統合
 

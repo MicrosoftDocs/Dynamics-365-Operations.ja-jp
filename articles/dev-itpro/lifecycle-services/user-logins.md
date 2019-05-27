@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 42010539b63c582bfd4729175ecf8e06663bb274
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d21a5f11ae624a1839c1568855bc8dab4bb490e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368652"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537200"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b1ebea19e0fbb21b32c047579b2d56866a1358e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e5c36f11113a51ff82a8b84e828b3c4468eeabe4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369876"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506215"
 ---
 # <a name="genericvalue-type"></a>GenericValue タイプ
 

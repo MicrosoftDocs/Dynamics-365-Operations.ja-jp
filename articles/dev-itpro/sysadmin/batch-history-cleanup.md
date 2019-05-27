@@ -18,11 +18,11 @@ ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
 ms.openlocfilehash: 1fbb7dd6daea1ff2f5c44558e6f3705c6876458b
-ms.sourcegitcommit: ce27fe8b01ec19cca342acc507eadb9bb9b4bd5c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "853801"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537335"
 ---
 # <a name="clean-up-the-job-batch-history"></a>バッチジョブ履歴のクリーンアップ
 

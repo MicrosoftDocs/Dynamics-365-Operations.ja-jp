@@ -3,7 +3,7 @@ title: 二重通貨
 description: このトピックでは、レポート通貨が Microsoft Dynamics 365 for Finance and Operations の 2 番目の会計通貨として使用されている二重通貨に関する情報を提供します。
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330313"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532251"
 ---
 # <a name="dual-currency"></a>二重通貨
 
@@ -61,6 +61,9 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
 ## <a name="financial-journals"></a>財務仕訳帳
 
 一般仕訳帳および仕入先請求仕訳帳などの財務仕訳帳が、レポート通貨に関する追加情報が含まれるよう更新されています。 伝票および仕訳帳の合計はレポート通貨で表示されます。 さらに、レポート通貨の為替レートに関する情報は、仕訳帳明細行の**一般**タブで表示されるようになります。 したがって、トランザクションを入力するときに、レポート通貨の為替レートを上書きできます。
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>仕入先請求書、販売注文、および販売契約書
+仕入先請求書、販売注文、および販売契約書が更新され、レポート通貨に固定為替レートが含まれるようになりました。 固定為替レートは、トランザクション通貨が異なる場合に、会計通貨とレポート通貨の両方に対して定義できます。 会計通貨とレポート通貨が同じである場合、固定為替レートは、会計通貨の固定レートをレポート通貨の固定レートとして使用することによって、同期されたままになります。 このコンフィギュレーションでは、レポート通貨の固定為替レートを変更できません。 会計通貨とレポート通貨が異なる場合には、トランザクションの入力中、固定為替レートを会計通貨とレポート通貨の両方に対して定義できます。 元帳にレポート通貨が定義されていない場合は**レポート通貨の固定為替**フィールドは有効にならず、レポート通貨金額は計算されません。
 
 ## <a name="module-changes"></a>モジュール変更
 

@@ -3,7 +3,7 @@ title: 1 つのバージョンのサービス更新の概要
 description: このトピックでは、1 つのバージョンの一部として Microsoft によって開始されたサービスの更新を管理するための体験を構成する、さまざまな手順の概要を説明します。
 author: meeram
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a33b481d238297294dfce2b08815e24233c540a4
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 730a0ee44f69348c25a9911cb98fe71bc0aaffc4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842332"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537560"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/coming-soon.md)]
 
 次の一連のトピックでは Microsoft Dynamics 365 for Finance and Operations **バージョン 8.1 (2018 年 10 月) 以降** のサービス更新に関連する情報を提供しています。 これはクラウド リリースにのみ適用されます。
 

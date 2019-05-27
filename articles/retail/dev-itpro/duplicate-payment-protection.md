@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11c00c2d95b4493482f696ff126cdd573bd5805
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c22cc4b6ed1f7a7e902c58461c152fb8a4c4907c
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369485"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539444"
 ---
 #  <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 
@@ -32,10 +32,10 @@ ms.locfileid: "369485"
 
 ## <a name="overview"></a>概要
 
-- [必読](#Required-reading) - 支払コネクタに重複支払保護機能の実装を開始する前に必ず読むべきトピックの一覧。 
-- [前提条件](#Prerequisites) - 支払コネクタの実装に重複支払保護を有効にする前提条件の一覧。
-- [重複支払保護フローを理解する](#Understanding-duplicate-payment-protection-flows) - 重複支払保護が POS で呼び出される時のさまざまなフローについて説明します。
-- [重複支払要求の実装](#Implement-duplicate-payment-requests) - 重複支払保護機能をサポートするために実装する必要があるさまざまな支払に関連する要求について説明します。
+- [必読](#required-reading) - 支払コネクタに重複支払保護機能の実装を開始する前に必ず読むべきトピックの一覧。 
+- [前提条件](#prerequisites) - 支払コネクタの実装に重複支払保護を有効にする前提条件の一覧。
+- [重複支払保護フローを理解する](#understanding-duplicate-payment-protection-flows) - 重複支払保護が POS で呼び出される時のさまざまなフローについて説明します。
+- [重複支払要求の実装](#implement-duplicate-payment-requests) - 重複支払保護機能をサポートするために実装する必要があるさまざまな支払に関連する要求について説明します。
 
 ## <a name="required-reading"></a>読む必要があります
 指定された支払コネクタで重複支払保護を有効にする前に次のトピックを必ず読むようにしてください。
@@ -181,7 +181,7 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceRequest(string l
 | 変数 | 説明 |
 |---|---|
 | lockToken | 支払端末が最初の取引のためにロックされたときに生成される一意のトークン値。 |
-| transactionReferenceData | プロパティ バッグは、支払取引を一意に識別するために使用されるさまざまなプロパティを含みます。 詳細については、このトピック [PaymentTransactionReferenceData](#PaymentTransactionReferenceData) セクションを参照してください。 |
+| transactionReferenceData | プロパティ バッグは、支払取引を一意に識別するために使用されるさまざまなプロパティを含みます。 詳細については、このトピック [PaymentTransactionReferenceData](#paymenttransactionreferencedata) セクションを参照してください。 |
 
 #### <a name="response-signature"></a>署名への応答
 ``` csharp

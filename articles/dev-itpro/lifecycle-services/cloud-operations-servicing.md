@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1694da47da89f742be76c35a89ec7a9b51fc2af1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0f85a97216f0a606bd26f6dc9240d92b01e2aba9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537226"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 

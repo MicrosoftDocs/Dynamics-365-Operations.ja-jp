@@ -17,11 +17,11 @@ ms.author: v-alexec
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 ms.openlocfilehash: 4700b5b880c5282cf9214bb95bc77e0e9ac810eb
-ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "899039"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512514"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 

@@ -18,11 +18,11 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 36b022b94742adef2fe9a23f92b642e7df226818
-ms.sourcegitcommit: 0b9d7d4c163992a9949bd8c8fffa18eb4ad9fa64
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "845113"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536996"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 

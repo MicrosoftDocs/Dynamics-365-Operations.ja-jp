@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87928ab631c346d2c379c6fe977b5606985a5ba6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d617cb8da84ae2a2b3ab6e690bfa08a257ff027d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368329"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537000"
 ---
 # <a name="build-operations"></a>ビルド操作
 

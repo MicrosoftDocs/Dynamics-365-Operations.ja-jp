@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d87d53510c5b7d35457f81d6981d33cf1b8074f1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a32ea69d35961fee392d1dd2be2ffea8a7b5f820
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368841"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1503093"
 ---
 # <a name="embed-images-and-shapes-in-documents-that-you-generate-by-using-er"></a>ER を使用して生成されるドキュメントへの画像や図形の埋め込み
 

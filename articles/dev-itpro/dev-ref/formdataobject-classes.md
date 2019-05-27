@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db5f8f67c2a07c4e9e042b876c85c84dcea41732
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 399d27757efe2484cad4f4cd54777e9d4e843229
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369473"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537051"
 ---
 # <a name="f-classes-formdataobject-to-formfasttabheadercontrol"></a>F クラス (FormDataObject から FormFastTabHeaderControl)
 

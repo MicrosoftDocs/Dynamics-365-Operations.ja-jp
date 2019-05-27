@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 799901536097cc07d3df0ae6fe8a85f3018d5a19
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bf816b77e26dda2b33ce2c9c056462e80903921c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370036"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537046"
 ---
 # <a name="f-classes-formbuildbuttoncontrol-to-formbuildfasttabsummaryseparator"></a>F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)
 

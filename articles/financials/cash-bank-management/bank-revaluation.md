@@ -3,7 +3,7 @@ title: 銀行の外貨再評価
 description: このトピックでは、銀行の外貨再評価プロセスの概要を示します。 設定およびプロセスの実行と計算、再評価取引の取消に関する情報が含まれています。
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976677"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538635"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>銀行の外貨再評価
 
@@ -52,7 +52,7 @@ ms.locfileid: "976677"
 3. **番号順序**タブで、外貨再評価の番号順序を追加します。
 4. 区分ページの**定期処理タスク**セクションにある**外貨再評価**を表示するには、ブラウザーを更新します。
 
-外貨再評価を使用するすべての法人機能をオンにする必要があります。
+外貨再評価を使用するすべての法人機能をオンにする必要があります。 システム管理者ロールまたは機能管理ロールに割り当てられている場合は、**機能管理**ワークスペースで**パラメーターなしで銀行再評価を有効にする**という機能を有効にすることにより、このステップを削除できます。
 
 > [!NOTE]
 > 法人がロシア語、ポーランド語、またはハンガリー語の国/地域コードを使用している場合は、すでに銀行の外貨再評価を実行できます。 その他の国や地域で使用される外貨再評価を使用することはできません。

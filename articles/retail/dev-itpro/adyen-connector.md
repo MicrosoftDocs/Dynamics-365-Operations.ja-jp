@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1b64d9f70121b8922dabc0bfcfa88b0648b468a9
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: bb5e91863612ed593f541499b0c78efc18af814d
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992872"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539443"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector
 
@@ -251,7 +251,7 @@ POS 端末、コール センター、または電子商取引で支払を処理
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
     | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
-    | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
+    | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | このフィールドは、`Payment service account` 用 **クラウド** にセットする必要があります。 | 有 | 有 | クラウド |
     | ローカル パスワード フレーズ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
     | ローカル キー識別子 | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
@@ -269,12 +269,12 @@ POS 端末、コール センター、または電子商取引で支払を処理
 > [!NOTE]
 > 次の手順では、Adyen 支払端末へのアクセス権を保持していると仮定します。
 
-Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/point-of-sale)ページに移動して、指示に従って Adyen 支払端末をオンボードします。 Adyen 固有のアプリのダウンロードを指示するステップをスキップします。 オンボード プロセス中、各支払端末のための以下の情報を書き留めてください。 この情報は、このトピックの後半の[支払端末の IP アドレスおよび EFT POS 登録番号の構成](#Configure-the-payment-terminal-IP-address-and-EFT-POS-register-number)セクションで必要です。
+Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/point-of-sale)ページに移動して、指示に従って Adyen 支払端末をオンボードします。 Adyen 固有のアプリのダウンロードを指示するステップをスキップします。 オンボード プロセス中、各支払端末のための以下の情報を書き留めてください。 この情報は、このトピックの後半の[支払端末の IP アドレスおよび EFT POS 登録番号の構成](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number)セクションで必要です。
 
 - 支払端末の IP アドレス
 - POIID (POIID はデバイスのシリアル番号およびモデル番号で構成されます。 これはデバイスを一意に識別するために使用されます。)
 
-支払端末のオンボード後、[Adyen の顧客領域](https://ca-test.adyen.com/ca/ca/login.shtml)にサインインして、構成対称の端末に移動し、各支払端末のための以下の情報を書き留めてください。 この情報は、このトピックの後半の [EFT サービス](#EFT-service) セクションで必要になります。
+支払端末のオンボード後、[Adyen の顧客領域](https://ca-test.adyen.com/ca/ca/login.shtml)にサインインして、構成対称の端末に移動し、各支払端末のための以下の情報を書き留めてください。 この情報は、このトピックの後半の [EFT サービス](#eft-service) セクションで必要になります。
 
 - キー識別子
 - キー パスフレーズ
@@ -284,7 +284,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 
 1. 小売り用バックオフィスにサインインして、**Retail \> チャネル設定\> POS 設定\> POS プロファイル\> ハードウェア プロファイル** の順に移動します。
 2. Adyen 向け Dynamics 365 Payment Connector を追加するためのハードウェア プロファイルを選択します。
-3. [EFT サービス](#EFT-service)、および続く [PIN パッド](#PIN-pad) セクションの手順に従います。
+3. [EFT サービス](#eft-service)、および続く [PIN パッド](#pin-pad) セクションの手順に従います。
 
 ##### <a name="eft-service"></a>EFT サービス
 
@@ -299,11 +299,11 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 このフィールドは、生産デバイスおよびトランザクションでのみ **ライブ** にセットする必要があります。 | 有 | 有 | ライブ |
     | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
-    | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
+    | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | これは POS 端末では **ローカル** にセットする必要があります。 別のターミナル API アーキテクチャの詳細については、Adyen Web サイトの[ターミナル API の導入](https://www.adyen.com/blog/introducing-the-terminal-api)ページを参照してください。 | 有 | 有 | ローカル |
-    | ローカル パスワード フレーズ | 支払端末の Adyen キー パスフレーズを入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | keypassphrase123 |
-    | ローカル キー識別子 | 支払端末の Adyen キー識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | mykey |
-    | ローカル キー バージョン | 支払端末の Adyen キー バージョンを入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | 0 |
+    | ローカル パスワード フレーズ | 支払端末の Adyen キー パスフレーズを入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | keypassphrase123 |
+    | ローカル キー識別子 | 支払端末の Adyen キー識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | mykey |
+    | ローカル キー バージョン | 支払端末の Adyen キー バージョンを入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | 0 |
     | ローカル Cryptor バージョン | Adyen ゲートウェイとやり取りするときに使用する Adyen cryptor バージョンを入力します。 このフィールドは **1** にセットする必要があります。 | 有 | 有 | 1 |
     | クラウド API キー | このフィールドは、カードあり支払統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
     | サポートされている通貨 | コネクタが処理する必要がある通貨を入力します。 カードありのシナリオでは、トランザクション要求が支払端末に送信された後、Adyen は[動的通過換算](https://www.adyen.com/pos-payments/dynamic-currency-conversion)を使用した追加通過をすることができることに注意してください。 サポートされている通貨の一覧を取得するには、Adyen サポートに問い合わせてください。 | 有 | 有 | USD;EUR |
@@ -317,7 +317,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 1. **PIN パッド** クイックタブの、**PIN パッド** フィールドで、**ネットワーク** を選択します。
 2. **デバイス名** フィールドに、**MicrosoftAdyenDeviceV001** と入力します。
 
-#### <a id="Set-up-a-Dynamics-365-register"></a>Dynamics 365 レジスターの設定
+#### <a id="set-up-a-dynamics-365-register"></a>Dynamics 365 レジスターの設定
 
 > [!NOTE]
 > 次の手順では、POS レジスターと Adyen 支払端末の間の専用マッピングがあることを前提としています。 Microsoft Internet Information Services (IIS) に基づくハードウェア ステーションの場合、**Retail \> チャネル\> 小売り店舗\> すべての小売り店舗** に移動して、設定対象の店舗を選択します。 次に、その店舗のページの、**ハードウェア ステーション** クイック タブで、同じ手順を実行します。
@@ -332,7 +332,7 @@ Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/poi
 6. アクション ウィンドウで、**レジスター** タブの、**ハードウェア** グループで、**IP アドレスのコンフィギュレーション** を選択します。
 7. **IP アドレスのコンフィギュレーション** ページの、**PIN パッド** クイックタブの、**IP アドレス** フィールドで、端末の IP アドレスを以下の書式で入力します: `https://<IP address>:8443/nexo/<POIID>`。 ここで、**\<IP アドレス\>** および **\<POIID\>** は、Adyen 支払端末をオンボードしたときに記録した値です。 次に例を示します: `https://192.168.1.3:8443/nexo/MX925-123456789`。
 
-#### <a id="Update-the-Modern-POS-or-IIS-Hardware-Station-configuration"></a>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新
+#### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新
 
 Retail SDK を使用して Modern POS バージョンをパッキングする場合、インストーラーがパッケージ化される前に、SDK コードで 1 回のみこれらの手順を実行する必要があります。 それ以外の場合、標準 Modern POS または IIS ハードウェア ステーションがインストールされた後にこれらの手順を実行する必要があります。
 
@@ -352,7 +352,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 
 ### <a name="call-center"></a>コール センター
 
-コール センターの支払のために Adyen 向け Dynamics 365 Payment Connector を構成するには、このトピックの前半の[新しいクレジット カードのプロセッサの設定](#Set-up-a-processor-for-new-credit-cards)セクションの指示に従います。
+コール センターの支払のために Adyen 向け Dynamics 365 Payment Connector を構成するには、このトピックの前半の[新しいクレジット カードのプロセッサの設定](#set-up-a-processor-for-new-credit-cards)セクションの指示に従います。
 
 ### <a name="e-commerce"></a>電子商取引
 
@@ -369,7 +369,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
     | バージョン | 使用する Adyen 向け Dynamics 365 Payment Connector のバージョンを入力します。 現在、バージョン V001 のみがサポートされています。 | 有 | 有 | V001 |
     | ゲートウェイ環境 | マップ対称の Adyen ゲートウェイ環境を入力します。 可能な値は **テスト** および **ライブ** です。 | 有 | 有 | ライブ |
     | オプション ドメイン | 支払要求が Adyen に実行されるときに使用するドメインを入力します。 | 無 | 無 | https://terminal-api-live.adyen.com/sync |
-    | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#Sign-up-with-Adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
+    | マーチャント口座 ID | 一意の Adyen 商業識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | MerchantIdenfier |
     | ターミナル アーキテクチャ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
     | ローカル パスワード フレーズ | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
     | ローカル キー識別子 | このフィールドは、POS 支払端末統合に対してのみ使用され、空白のままにする必要があります。 | 無 | 有 | *このフィールドは空白のままにします。* |
@@ -432,7 +432,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 <td>この問題は、<strong>EFT POS 登録番号</strong>フィールドが レジスターまたは IIS ハードウェア ステーション上で設定されていないときに発生する場合があります。 また、値が設定されていても、POS 端末に正しく同期されていない場合に発生する場合があります。 さらに、値がキャッシュされるときに発生する場合があります。</td>
 </tr>
 <td><strong>修正</strong></td>
-<td>このトピックの前半の <a href="#Set-up-a-Dynamics-365-register">Dynamics 365 レジスターの設定</a>のし手順に従います。 次に、<strong>1070</strong> および <strong>1090</strong> 配送スケジュールを実行します。 問題が解決されない場合は、<strong>EFT POS 登録番号</strong>フィールドがキャッシュされてリセットする必要がある可能性があるため、Modern POS の再アクティブ化を考慮します。</td>
+<td>このトピックの前半の <a href="#set-up-a-dynamics-365-register">Dynamics 365 レジスターの設定</a>のし手順に従います。 次に、<strong>1070</strong> および <strong>1090</strong> 配送スケジュールを実行します。 問題が解決されない場合は、<strong>EFT POS 登録番号</strong>フィールドがキャッシュされてリセットする必要がある可能性があるため、Modern POS の再アクティブ化を考慮します。</td>
 </tr>
 </tbody>
 </table>
@@ -454,7 +454,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 <td>POS が再配置されていても、dllhost.config ファイルが更新されていない場合に、この問題が発生する場合があります。</td>
 </tr>
 <td><strong>修正</strong></td>
-<td>このトピックの前半の <a href='#Update-the-Modern-POS-or-IIS-Hardware-Station-configuration'>Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新</a>セクションの手順に従います。 次に、タスク マネージャーの<strong>詳細</strong>タブで dllhost.exe タスクを終了して、Modern POS を再度開きます。 IIS ハードウェア ステーションを使用している場合は、IIS をリセットします。</td>
+<td>このトピックの前半の <a href="#update-the-modern-pos-or-iis-hardware-station-configuration">Modern POS または IIS ハードウェア ステーションのコンフィギュレーションの更新</a>セクションの手順に従います。 次に、タスク マネージャーの<strong>詳細</strong>タブで dllhost.exe タスクを終了して、Modern POS を再度開きます。 IIS ハードウェア ステーションを使用している場合は、IIS をリセットします。</td>
 </tr>
 </tbody>
 </table>

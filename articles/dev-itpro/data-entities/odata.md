@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6c488abef6ada46ccebf92609fb854fa14c02f0
-ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
+ms.openlocfilehash: 574f87a4907b97d2149fe33a02db46e76004d999
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "378103"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537099"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 

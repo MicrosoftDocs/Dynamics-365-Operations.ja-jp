@@ -3,7 +3,7 @@ title: モバイル プラットフォームのホーム ページ
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
 author: RobinARH
 manager: AnnBe
-ms.date: 03/3/2019
+ms.date: 05/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c7e1d18fbb62b671c7451f3e09379395753046a8
-ms.sourcegitcommit: 5d6c917b3b91149ce316aaaf839880d77f4671c3
+ms.openlocfilehash: 66265bac176e0b5f6b09fe84d944c8314a6fea92
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "907584"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537297"
 ---
 # <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
 
@@ -185,4 +185,23 @@ ADFS がドメインで使用されており、環境がオンプレミスであ
 - モバイルにはチェック ボックスはありません。 JavaScript で、フィールドを Yes/No 列挙型に手動でバインドする必要があります。
 
 ### <a name="using-multi-factor-authentication-with-the-unified-operations-app"></a>Unified Operations アプリでの多要素認証の使用
-Unified Operations (モバイル クライアント) アプリでは、埋め込みブラウザー内に AAD サインインの Web ページを表示することにより、Azure Active Directory (AAD) でのユーザー認証を容易に行えるようにします。 サインインの後で、クッキーからユーザー トークンを取得し、Web クライアントと共有するユーザー インタラクション サービスと通信するときにこれを使用します。 同じデバイス上の別のアプリへの切り替えに関わる多要素認証メカニズムが原因で埋め込みブラウザーが終了して、サインインできないことがあります。 これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
+Unified Operations アプリ および Unified Operations (モバイルクライアント) アプリ で多要素認証を使うと、埋め込みブラウザー内で Azure AD サインインwebページを表示し、 Azure Active Directory (Azure AD) によるユーザー認証を容易にします。 サインインの後で、クッキーからユーザー トークンを取得し、Web クライアントと共有するユーザー インタラクション サービスと通信するときにこれを使用します。 多要素認証の仕様上、デバイス内で別のアプリへの切り替えを行うと埋め込みブラウザが閉じられてしまうため、サインインができなくなることがあります。 この回避策は次を参照してください
+- 別のデバイス - 別のデバイスを使って多要素認証への応答をすることで、元のデバイス上ではUnified Operations アプリ がアクティブな状態を維持することができます。
+- 電話を使った多要素認証 - 多要素認証の応答に電話を使用することでアプリの切り替えが不要になります。
+- これを回避するには、認証通知を「長押し」したまま**承諾**オプションをクリックします。 通知の承諾ではアプリの切り替えは必要ないため、サインインが通常どおりに実行されます。
+
+### <a name="trouble-signing-out-of-the-app-and-signing-in-with-new-credentials"></a>新しい資格情報でアプリからサインアウト、またはログインすると問題が発生します。
+新しい資格情報を使用してアプリからサインアウト、またはログインすることで問題が発生する場合は、 Azure AD サインイン画面にて [古い資格情報の破棄] を選択する必要があります。
+- アプリからサインアウトするには、次の手順に従ってください
+    - アプリを開く
+    - アプリからサインアウトします。
+    - アプリを強制終了します。
+- 古い資格情報を破棄するには、次の手順に従ってください。
+    - アプリを開く
+    - サーバーに接続します。
+    - Azure AD のサインイン画面で、資格情報が保存されている場合は、そのカードの省略記号 (...) ボタンをクリックし、 **資格情報の破棄** を選択します。
+    - アプリを強制終了します。
+- アプリにサインインするには、次の手順に従ってください
+    - アプリを開く
+    - サーバーに接続します。
+    - Azure AD のサインイン画面にてログインします。

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fc536f70a5f91f6c058e14fb28469f7a966a383
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f01b9bbb3b1c6f8eccd8658f4ec99822850e41b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369554"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537006"
 ---
 # <a name="t-classes"></a>T クラス
 

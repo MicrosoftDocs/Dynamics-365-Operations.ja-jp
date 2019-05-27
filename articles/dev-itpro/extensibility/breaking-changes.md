@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 06bde311e2d272e20b0e088b28f7e3c01932809c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f2c207cfe20e3e7fc9b5c47ef9cc3a8097dde801
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537493"
 ---
 # <a name="breaking-changes"></a>変更の分割
 

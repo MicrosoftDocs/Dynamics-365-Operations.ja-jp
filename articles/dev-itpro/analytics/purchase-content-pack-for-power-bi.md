@@ -3,7 +3,7 @@ title: 購買支出の分析 Power BI コンテンツ
 description: このトピックでは、購買支出の分析 Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527720"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>購買支出の分析 Power BI コンテンツ
 
@@ -33,7 +33,7 @@ ms.locfileid: "313845"
 
 ## <a name="overview"></a>概要
 
-**購買支出の分析** Power BI コンテンツは、予算を担当する購買部門のマネージャーおよびマネージャーが購買支出に留意するように設計されています。 マネージャーは、以下の方法で購買支出を分析できます:
+**購買支出の分析** Power BI コンテンツは、予算を担当する購買部門のマネージャーおよびマネージャーが購買支出を追跡できるように設計されています。 マネージャーは、以下の方法で購買支出を分析できます:
 
 - 会計年度の購買 (仕入先グループと個々の仕入先、調達カテゴリと個々の製品、仕入先の場所)
 - 前年比購買の変化 (仕入先グループと調達カテゴリ)
@@ -44,88 +44,88 @@ ms.locfileid: "313845"
 **購買支出の分析** Power BI コンテンツは**購買支出の分析**ページ (**調達** \> **照会およびレポート** \> **購買パフォーマンスの分析** \> **購買支出の分析**) に表示されます。
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
-**購買支出の分析** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、視覚エフェクトの概要を示します。
+**購買支出の分析** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 
 
-<table>
-<thead>
-<tr>
-<th>レポート ページ</th>
-<th>グラフ</th>
-<th>タイル</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>仕入先別購買</td>
-<td><ul>
-<li>購買別トップ 10 の仕入先 (積み上げ棒グラフ)</li>
-<li>仕入先グループ、国、名前別購買合計 (円グラフ)</li>
-<li>仕入先グループ、国、名前別購買 (円柱グラフ)</li>
-<li>仕入先グループ、国、名前別平均購買 (円柱グラフ)</li>
-</ul></td>
-<td><ul>
-<li>購買の合計</li>
-<li>前年比購買成長</li>
-<li>合計仕入先数</li>
-<li>有効な仕入先合計数</li>
-</ul></td>
-</tr>
-<tr>
-<td>製品別購買</td>
-<td><ul>
-<li>調達カテゴリまたは製品名別購買 (円柱グラフ)</li>
-<li>調達カテゴリまたは製品名 (円グラフ) 別購買合計</li>
-<li>購買別トップ 10 製品 (積み上げ棒グラフ)</li>
-</ul></td>
-<td><ul>
-<li>製品の合計数</li>
-<li>製品合計数の有効な製品の合計割合</li>
-<li>購買の 80% を占める製品の数</li>
-</ul></td>
-</tr>
-<tr>
-<td>期間別購買*</td>
-<td><ul>
-<li>月/日別の購買 (円柱グラフ)</li>
-<li>累計購買金額の前年比差異 (伝播)</li>
-<li>合計購買金額の前年比成長 (円柱グラフ)</li>
-<li>調達明細書 (マトリックス)</li>
-</ul></td>
-<td><ul>
-<li>前年比購買成長</li>
-<li>前年比購買成長の割合 %</li>
-</ul></td>
-</tr>
-<tr>
-<td>仕入先の場所別購買</td>
-<td><ul>
-<li>市町村別の購買</li>
-<li>購買額の前年比成長の割合 %</li>
-<li>購買国</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>時間別購買先支出の分析</td>
-<td><ul>
-<li>月/日別今年度の購買 (折れ線グラフ)</li>
-<li>今年度および昨年度の購買 (線と円柱グラフ)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>仕入先別購買先支出の分析</td>
-<td><ul>
-<li>トップ 10 の仕入先の購買割合 % (じょうご)</li>
-<li>トップ 10 仕入先による増加支出額の前年比</li>
-<li>トップ 10 仕入先による減少支出額の前年比</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+次の表は、視覚化の概要を示しています。
 
-\* 今年度と昨年度の購買、調達カテゴリによる成長
+### <a name="purchase-by-vendor-report-page"></a>仕入先別購入レポートページ
+**グラフ**
+- 購買別トップ 10 の仕入先 (積み上げ棒グラフ)
+- 仕入先グループ、国、名前別購買合計 (円グラフ)
+- 仕入先グループ、国、名前別購買 (円柱グラフ)
+- 仕入先グループ、国、名前別平均購買 (円柱グラフ)
+
+**タイル**
+- 購買の合計
+- 前年比購買成長
+- 合計仕入先数
+- 有効な仕入先合計数
+
+**例**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>製品別購買レポートページ
+
+**グラフ**
+- 調達カテゴリまたは製品名別購買 (円柱グラフ)
+- 調達カテゴリまたは製品名 (円グラフ) 別購買合計
+- 購買別トップ 10 製品 (積み上げ棒グラフ)
+
+**タイル**
+- 製品の合計数</li>
+- 製品合計数の有効な製品の合計割合
+- 購買の 80% を占める製品の数
+
+**例**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>期間別購買レポートページ
+このページでは、今年度と昨年度の購買、および調達カテゴリによる成長が表示されます。
+
+**グラフ** 
+- 月/日別の購買 (円柱グラフ)
+- 累計購買金額の前年比差異 (伝播)
+- 合計購買金額の前年比成長 (円柱グラフ)
+- 調達明細書 (マトリックス)
+
+**タイル**
+- 前年比購買成長
+- 前年比購買成長の割合 %
+
+**例**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>仕入先場所別購買レポートページ
+
+**グラフ**
+- 市町村別の購買
+- 購買額の前年比成長の割合 %
+- 購買国
+
+**例**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>時間別購買先支出の分析レポートページ
+
+**グラフ** 
+- 月/日別今年度の購買 (折れ線グラフ)
+- 今年度および昨年度の購買 (線と円柱グラフ)
+
+**例**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>仕入先別購買先支出の分析レポートページ
+
+**グラフ** 
+- トップ 10 の仕入先の購買割合 % (じょうご)
+- トップ 10 仕入先による増加支出額の前年比
+- トップ 10 仕入先による減少支出額の前年比
+
+**例** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>データ モデルおよびエンティティ
 次のデータは、**購買支出の分析** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
@@ -134,7 +134,7 @@ ms.locfileid: "313845"
 
 | エンティティ        | キー集計の測定 | データ ソース                                 | フィールド              | 説明                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
-| 請求明細行 | 購買                   | VendInvoiceTrans                            | 合計 (LineAmountMST)  | 会計通貨での金額。 |
+| 請求明細行 | 購買                   | VendInvoiceTrans                            | 合計 (LineAmountMST) | 会計通貨での金額。 |
 
 次の表は、請求明細行のエンティティのコンテンツで計算される主要な測定単位を示します。
 

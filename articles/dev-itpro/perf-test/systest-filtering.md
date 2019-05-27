@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f26dd879e421ad1dee43f54745c9466871127642
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 237798c18474bff9265b4411c2dc5e48840a721a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537130"
 ---
 # <a name="systest-filtering-using-class-and-method-attributes"></a>クラスおよびメソッドの属性を使用した SysTest フィルター処理
 

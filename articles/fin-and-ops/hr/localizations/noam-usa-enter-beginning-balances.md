@@ -3,13 +3,13 @@ title: 給与の期首残高を入力します。
 description: 所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。 この情報は、パートナーが別のシステムから新しい給与実装のデータを移行または転送する場合に役立ちます。
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e7bdfca55e1bdaba0b5ebdf55b46744e584ab2c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e4bb8f565f5bf5630a7c5f8602b96e569692bc7c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312994"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507987"
 ---
 # <a name="enter-payroll-beginning-balances"></a>給与の期首残高を入力します。
 
@@ -67,13 +67,13 @@ ms.locfileid: "312994"
 
     行 1: **所得明細行** タブ
 
-    | フィールド            | 先頭値       |
+    | フィールド            | 金額       |
     |------------------|-------------|
     | 所得コード    | 通常の支払 |
     | 件数         | 1.00        |
-    | 平均             | 30,000      |
+    | 率             | 30,000      |
     | [行の詳細] タブ |             |
-    | 手動           | (マーク済)    |
+    | マニュアル           | (マーク済)    |
 
     行 2: **所得明細行** タブ
 

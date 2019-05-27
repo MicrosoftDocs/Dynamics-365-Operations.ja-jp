@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) のアセット ライブラリ
 description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82d6c21d4ed63f406da286b0e2767f15829fa874
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fe05bf9749f786088504c5dfe2bd1729541fbb63
+ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368958"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540874"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 
@@ -37,6 +37,9 @@ ms.locfileid: "368958"
 - **プロジェクト レベルのアセット ライブラリ** – プロジェクト レベルの資産ライブラリは、LCS のプロジェクト内の環境全体で資産を共有するために使用されます。 このライブラリはプロジェクト内のすべてのユーザーがアクセスできます。 。プロジェクト レベルのアセット ライブラリにアクセスするには、LCS にサイン インし、プロジェクトを開きます。 ハンバーガー メニューで、**アセット ライブラリ** をクリックします。
 
     [![プロジェクト レベル資産ライブラリを開きます](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    
+    > [!NOTE]
+    > プロジェクト アセット ライブラリ内で同じアセットのバージョンのアップロードはサポートされていません。 
 
 ## <a name="asset-library-support"></a>アセット ライブラリ サポート
 アセット ライブラリは、複数のタイプの資産をサポートしています。 頻繁に使用されるいくつかの資産タイプを次に示します。

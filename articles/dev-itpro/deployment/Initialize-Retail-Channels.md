@@ -16,11 +16,11 @@ ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
 ms.openlocfilehash: 7d51286065d09ed3bb61565c2f9e4763100fd4d2
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "969285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537083"
 ---
 # <a name="initialize-retail-cloud-scale-unit"></a>Retail Cloud Scale Unit の初期化
 

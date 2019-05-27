@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 869fd15f586d48f39d2efd3826cd69bcfc9aa300
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc338e757fe87464aa311d008d4813d5a9c35bdd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368645"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512636"
 ---
 # <a name="retail-server-architecture"></a>レポート サーバーのアーキテクチャ
 
@@ -33,7 +33,7 @@ ms.locfileid: "368645"
 <a name="retail-server-architecture"></a>レポート サーバーのアーキテクチャ
 --------------------------
 
-Commerce Runtime は Retail サーバー レイヤーにラップされます。 Retail サーバーは、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。 Commerce Runtime は、Commerce Data Exchange サービスを通じて小売用バックオフィスと通信します。 次の図は、Retail サーバーのアーキテクチャを示しています。 
+Commerce Runtime は Retail サーバー レイヤーにラップされます。 Retail サーバーは、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。 Commerce Runtime は Commerce Data Exchange サービスを通じて Retail Headquarters と通信します。 次の図は、Retail サーバーのアーキテクチャを示しています。 
 
 [![RetailServer](./media/retailserver.png)](./media/retailserver.png) 
 

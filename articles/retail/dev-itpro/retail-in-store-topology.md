@@ -3,7 +3,7 @@ title: ストア内トポロジを選択します。
 description: このトピックでは、様々な Dynamics 365 for Retail の実店舗構成図を提供します。
 author: rassadi
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: Dynamics-365-retail
@@ -16,12 +16,12 @@ ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 062e4490306f09f11d7821f40044de3a901f4067
-ms.sourcegitcommit: 308d116994e4a5a6e92750ed24b471c90b5f3cfc
+ms.openlocfilehash: aed5ff32cd9ddc7b327e550c626c38e960440b97
+ms.sourcegitcommit: 987d7ef5a5df53e2272db6814fe6ef78be1a9aab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "897888"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540173"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 
@@ -59,6 +59,7 @@ POSが本部との接続を失った場合にサポートしている宗さん�
 | Retail サーバー | IIS Web サービス | 1つ以上の店舗で使用する小売 Serverのインスタンスの単位を計測します。 |
 | チャンネル データベース | SQL データベース | 1つ以上の店舗で使用するデータを提供する、特定のチャンネルデータベースインスタンスの店舗単位を計測します。 |
 | Async Client サービス | Windows サービス | マスター レコード データを本部から店舗へ、取引データを店舗から本部へと同期するためのコンポーネント |
+| クラウド POS | IIS Web サービス | Web ブラウザーを使用して POS 機能をホストするクラウド POS アプリケーション。 |
 
 ## <a name="additional-resources"></a>追加リソース
 ### <a name="mpos-offline-mode"></a>MPOS オフライン モード

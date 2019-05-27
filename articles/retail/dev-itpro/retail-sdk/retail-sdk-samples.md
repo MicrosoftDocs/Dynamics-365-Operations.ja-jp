@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8641b232707f26c58c552a65696924c1d3878855
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 89009a7bc110d3e151f61bdeebb4123d656db287
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368793"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512587"
 ---
 # <a name="retail-software-development-kit-sdk-samples"></a>Retail ソフトウェア開発キット (SDK) のサンプル
 

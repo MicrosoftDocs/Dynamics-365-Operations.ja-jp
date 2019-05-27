@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2c24e6770fc13172074c7e44d459c03811fd262d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0041dfbddae39c8aac8cc469585e1c40cfdcc9f8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537361"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 

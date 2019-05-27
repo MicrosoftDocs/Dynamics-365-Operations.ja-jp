@@ -18,11 +18,11 @@ ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
 ms.openlocfilehash: 0985bae74ed1032b8dfdef58fa7d4fa224d99c26
-ms.sourcegitcommit: c19d9cb1f1e77ce96ac4ec6e3212bc3c06288a7d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "892571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537307"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 

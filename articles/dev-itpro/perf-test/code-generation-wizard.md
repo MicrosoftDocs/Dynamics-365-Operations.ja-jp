@@ -18,11 +18,11 @@ ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
 ms.openlocfilehash: 665d0b17a7e89f54cdb4c2d2ed38b384e9da9861
-ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "976719"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537142"
 ---
 # <a name="acceptance-test-library-code-generation-wizard"></a>受け入れテスト ライブラリ コード生成ウィザード
 

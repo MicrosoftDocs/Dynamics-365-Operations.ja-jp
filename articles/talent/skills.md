@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.openlocfilehash: 0dd1f00cd2558c69941279e5f41256be621d7c74
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "857178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518493"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>個人スキルと業務ニーズの調整
 

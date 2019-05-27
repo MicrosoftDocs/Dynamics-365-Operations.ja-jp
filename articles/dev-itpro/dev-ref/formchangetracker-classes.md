@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40480a02df63f14eced8b422fc54e1e31c054a16
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a2315e3622a1a8687ece956cc4d24d1bc97aacea
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368728"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537049"
 ---
 # <a name="f-classes-formchangetracker-to-formcontroleventargs"></a>F クラス (FormChangeTracker から FormControlEventArgs)
 
@@ -410,7 +410,7 @@ chars
 | 値です。 | スタイル。                        |
 |--------|-------------------------------|
 | 0      | 既定。                      |
-| 1      | Microsoft Windowsパレット。 |
+| 1      | Microsoft Windows パレット。 |
 | 2      | 真の配色。        |
 
 ### <a name="method-configurationkey"></a>メソッド configurationKey

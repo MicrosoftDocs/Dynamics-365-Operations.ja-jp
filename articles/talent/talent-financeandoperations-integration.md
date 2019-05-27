@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: fc4d6f88e54ebcdb9b82889c9315391eeee31d4d
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "950072"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537614"
 ---
 # <a name="integration-from-dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Talent から Dynamics 365 for Finance and Operations への統合
 

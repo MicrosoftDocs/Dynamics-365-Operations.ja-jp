@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 0b3ca9a009ae0e04fd9066be89a9cec40c526ebf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3312904d3690d5a8b4117e25f2e51704d8fa9a99
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369261"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537077"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 

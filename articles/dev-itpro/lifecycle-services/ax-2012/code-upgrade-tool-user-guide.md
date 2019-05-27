@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 441bff1b4b8a59c3a6fc6e3726c7c231b870c211
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8080f27e8179dffc05c418eb6834beeeb1b7ba39
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369482"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506090"
 ---
 # <a name="code-upgrade-service-user-guide"></a>コード アップグレード サービス ユーザー ガイド
 

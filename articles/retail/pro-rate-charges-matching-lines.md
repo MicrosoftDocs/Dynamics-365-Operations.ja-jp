@@ -3,7 +3,7 @@ title: ヘッダーの諸費用を一致する販売明細行に比例配分す�
 description: このトピックでは、高度な自動請求機能を使用して、自動請求を小売チャネル注文に計算および適用するための追加の機能について説明します。
 author: hhaines
 manager: annbe
-ms.date: 03/05/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: d225f1ed3922f72c33e77fc3c488db8d1f2bc8d5
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "790224"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1526018"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>ヘッダーの諸費用を一致する販売明細行に比例配分する
 
-[!include [banner](includes/preview-banner.md)]
 
 [!include [banner](includes/banner.md)]
 

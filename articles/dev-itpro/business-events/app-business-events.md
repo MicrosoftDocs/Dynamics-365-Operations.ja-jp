@@ -16,11 +16,11 @@ ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ms.openlocfilehash: 5bfa0d8313c06211aa999b5904c4e50bc6575e23
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505430"
 ---
 # <a name="application-business-events"></a>アプリケーション ビジネス イベント
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 333d337ba1acf603c5a190f8bfccfb3282263fe2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 466c6e85e7f6d0fae446ea19dd631bd036c1d4ad
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368829"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539445"
 ---
 # <a name="x-runtime-functions"></a>X++ ランタイム関数
 
@@ -55,9 +55,9 @@ X++ ランタイム関数のロジックは、次の .NET アセンブリでも�
 | [コンテナ](#container)   | X++ のコンテナー データ型で操作する機能。 詳細については、[X++ コンテナー ランタイム関数](xpp-container-run-time-functions.md) を参照してください。                               |
 | [換算](#conversion) | 1 つのタイプのデータを別のタイプのデータに翻訳する機能。 詳細については、[X++ 換算ランタイム関数](xpp-conversion-run-time-functions.md) を参照してください。                  |
 | [日付](#date)             | 日付データ型で操作する機能。 詳細については、[X++ 日付ランタイム関数](xpp-date-run-time-functions.md) を参照してください。                                                     |
-| [計算](#Math)             | 数学的な計算を実行する機能。 詳細については、[X++ 数学ランタイム関数](xpp-math-run-time-functions.md) を参照してください。                                                 |
+| [計算](#math)             | 数学的な計算を実行する機能。 詳細については、[X++ 数学ランタイム関数](xpp-math-run-time-functions.md) を参照してください。                                                 |
 | [反映](#reflection) | オブジェクトに関するメタデータにアクセスし、それらに関するその他のメタデータを返す機能。 詳細については、[X++ リフレクションランタイム関数](xpp-reflection-run-time-functions.md) を参照してください。 |
-| [セッション](#Session)       | 現在のユーザー接続のコンテキストで変更またはレポートする機能。 詳細については、[X++ セッション ランタイム関数](xpp-session-run-time-functions.md) を参照してください。             |
+| [セッション](#session)       | 現在のユーザー接続のコンテキストで変更またはレポートする機能。 詳細については、[X++ セッション ランタイム関数](xpp-session-run-time-functions.md) を参照してください。             |
 | [文字列](#string)         | str データ型で操作する機能。 詳細については、[X++ 文字列ランタイム関数](xpp-string-run-time-functions.md) を参照してください。                                                 |
 | 外                     | [ビープ音](#beep)、[newGuid](#newguid)、[スリープ](#sleep)                                                                                                                                                                        |
 

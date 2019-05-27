@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 59d031b6e1b7e303331741ed0c175fc9b0fb7f14
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 75d90b3a41f5c9381a8b2ef5e7f931f6aac1cabb
+ms.sourcegitcommit: 3d1b0e7d0f165fbcbec9c92783e5e936b282d757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "989541"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1540140"
 ---
 # <a name="preview-features-in-finance-and-operations-version-1002-may-2019"></a>Finance and Operations バージョン 10.0.2 (2019 年 5 月) の機能のプレビュー
 
@@ -59,6 +59,10 @@ Microsoft Dynamics 365 for Retail の新機能と変更についての最新の�
 
 ## <a name="regulatory-updates"></a>規制の更新
 Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../financials/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+
+## <a name="extensibility-enhancements"></a>拡張性の強化
+
+このFinance and Operations のリリースでは、拡張性をサポートするために多くの機能拡張が行われています。 たとえば、列挙体、メタデータ、メソッドに拡張性の機能拡張が行われています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 10.0.2 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-10-2.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

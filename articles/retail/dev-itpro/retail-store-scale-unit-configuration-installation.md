@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 639b7c4af0614ee5f0a292c8823390edbd4eea9d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3fe8383629d6f8ae875ade28df17a95328675a2e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368599"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537526"
 ---
 # <a name="configure-and-install-retail-store-scale-unit"></a>Retail Store Scale Unit のコンフィギュレーションとインストール
 

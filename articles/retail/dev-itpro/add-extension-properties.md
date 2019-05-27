@@ -18,11 +18,11 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: c639438a93c81309ea9520915bd0542aacdc89be
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "950322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537573"
 ---
 # <a name="add-extension-properties-to-customer-entities"></a>顧客エンティティへの拡張プロパティの追加
 

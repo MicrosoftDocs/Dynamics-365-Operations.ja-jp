@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d34fc5cc7f1657df9a4897691b4d69b6c153633f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1a9d60a2ec1bedd3e46ba6c078c9a2aeb96d3654
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369609"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537453"
 ---
 # <a name="buy-finance-and-operations-on-premises"></a>Finance and Operations (on-premises) の購入
 
@@ -63,7 +63,7 @@ Microsoft Online Services ID は、Finance and Operations (設置型) をエン�
 
 プロビジョニング ガイドへのアクセスについては、こちらを参照してください。
 
-- [CustomerSource](https://go.microsoft.com/fwlink/?linkid=852080) のプロビジョニング ガイド
+- [CustomerSource のプロビジョニング ガイド](https://go.microsoft.com/fwlink/?linkid=852080)
 - [PartnerSource のプロビジョニング ガイド](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
 
 LCS にログインすると、プロジェクトが自動的にプロビジョニングします。 LCS プロジェクトでは、Finance and Operations (設置型) を配置できます。 LCS プロジェクトの使用開始の詳細については、[Lifecycle Services でのオンプレミス プロジェクトの作成](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。

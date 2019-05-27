@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 95081cad287028d1cd636a57440e3ae74f9efe85
-ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: a0be0d20c93d65d23115e1f7cf8af27c6cde1c83
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "375979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537598"
 ---
 # <a name="merge-the-build-systems-for-retail-and-finance-and-operations"></a>Retail および Finance and Operations 用ビルド システムのマージ
 

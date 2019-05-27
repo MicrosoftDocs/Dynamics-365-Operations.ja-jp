@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4ff53598a5968c59c0da627420cdc35cb63bbd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 19a39bbd5317beb3ab6d88f741738eb590b0af0a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537263"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 

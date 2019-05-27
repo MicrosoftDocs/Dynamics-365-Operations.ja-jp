@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Smitha Nataraj, Lars-Bo
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 312e6af1f510b96269b1d19f61e08530946ea8e6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e3a65a147629842f75fc3d02642ce128d9a91d55
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368624"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537491"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 

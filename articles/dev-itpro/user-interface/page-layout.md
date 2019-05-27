@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f34628361f91a47bc0f8b0670e78e1a354aae04a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 99be7b9b1ed87ccadee0611d225c397c4d7c74a2
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537432"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 

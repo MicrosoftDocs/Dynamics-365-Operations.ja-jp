@@ -18,11 +18,11 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6e39471a22055a82fed83bed0e4ae30a95686f06
-ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "898409"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537466"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 

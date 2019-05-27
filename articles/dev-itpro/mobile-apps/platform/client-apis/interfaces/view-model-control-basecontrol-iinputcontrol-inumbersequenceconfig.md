@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 449d302fa1cc8502f2b8fb39960bc040ee43c7b7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0e0a9d2d79b2039fe69429056eb882cf7df44173
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537325"
 ---
 # <a name="numbersequenceconfig-type"></a>NumberSequenceConfig タイプ
 

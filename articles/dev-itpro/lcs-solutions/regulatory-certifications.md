@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 61657fff7be0377545a227c2238c17a21138af12
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 67dc99d11df923416e8890a3ab22a6fe74990ebc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537248"
 ---
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 

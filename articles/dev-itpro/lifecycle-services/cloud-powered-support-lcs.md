@@ -3,7 +3,7 @@ title: Finance and Operations サポート エクスペリエンスの管理
 description: このトピックでは、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
 author: kfend
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad18ed011b1f7fff9cb976073f617c0c7041cd76
-ms.sourcegitcommit: 89fa3149e628d0bbe3003cc9196b5b164ce3b53e
+ms.openlocfilehash: 2291dbdf7596668cb83e1a1f0bffba93d72c4e47
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "881261"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537424"
 ---
 # <a name="manage-finance-and-operations-support-experiences"></a>Finance and Operations サポート エクスペリエンスの管理
 
@@ -136,3 +136,9 @@ PartnerSourceビジネス センター アカウントが見つからない場�
    
 ## <a name="report-production-outage"></a>稼働停止のレポート
 プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [Report a production outage](report-production-outage.md) をご確認ください。
+
+## <a name="phone-support"></a>電話サポート
+[新しいインシデントを開く](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、次のいずれかのオプションで電話サポートを受けることができます:
+
+- [プレミア電話サポート](https://support.microsoft.com/en-us/premier/contacts)
+- [広範な商業電話サポート](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/global_support_contacts_eng)

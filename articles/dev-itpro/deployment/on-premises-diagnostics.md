@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 985bdc03b1c2c8f24ee81e936f369c35516563b8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 893872268385b005d216c07a93e309fbd3894424
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369215"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537061"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 

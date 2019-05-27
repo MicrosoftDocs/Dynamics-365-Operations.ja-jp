@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 8f8f2144f1a957f78b052b5041ea9a389a1fa575
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: 8b20ba301be0b76b5408b1efe096211a8d2ec02c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377892"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537550"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義と設定をする
 

@@ -3,7 +3,7 @@ title: オンプレミス配置で実装されていない機能
 description: このトピックでは、オンプレミス展開で実装されていない機能を一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 01/23/2019
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0ff6d4a9c2d144ef56ab8be79ee8e14e56cd5417
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 370a06f0c69af01e2e3401a1fa6ff64b7fc0ef25
+ms.sourcegitcommit: 0ae1a94c88dbf56e9b45e45ada980f7136ae640a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369279"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539154"
 ---
 # <a name="features-that-arent-implemented-in-on-premises-deployments"></a>オンプレミス配置で実装されていない機能
 
@@ -41,6 +41,7 @@ ms.locfileid: "369279"
 | タスク レコーダー                                                    | Lifecycle Services (LCS) のタスク レコーダー ライブラリはサポートされていません。 タスクの記録は、ローカル ファイル システムから読み込むか保存できます。 |
 | **サポート** ウィンドウ                                                 | **サポート** ウィンドウ (**ヘルプとサポート** \> **サポート**) はまだ使用できません。 |
 | PowerBI.com 統合                                          | PowerBI.com 統合は、まだオンプレミス展開では使用できません。 たとえば、タイルをピン留めする、またはワークスペースに PowerBI.com 定期売買からレポートする機能は使用できません。 |
+| 定期統合 API                                       | 継続的に統合が行われるAPIフレームワークでは、定期的なデータジョブの運用をサポートしていません。 オンプレミス環境ではデータ管理APIフレームワークのみに対応しています。 |
 | Microsoft Office 統合                                             | SharePoint オンプレミス サポートは、まだ使用できません。 SharePoint オンラインもまだサポートされていません (認証の問題のため)。<br><br>Skype for Business オンプレミスはサポートされていません。  |
 | 電子申告 (ER) と LCS の統合                   | LCS との ER 統合はサポートされません。 ER 構成は、LCS から Finance and Operations へ直接ダウンロードことはできません。                                   |
 | SharePoint との ER 統合            | SharePoint との統合はサポートされていません。 SharePoint サーバーを、ER を使用して生成された電子ドキュメントの出力先として構成することはできません。                           |

@@ -18,11 +18,11 @@ ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
 ms.openlocfilehash: 8423651e425717adfd245b5025d6dbae580de187
-ms.sourcegitcommit: 185d13bc3e2b2a51569471368671d5cc3023ab14
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992911"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537166"
 ---
 # <a name="best-practices-for-the-acceptance-test-library"></a>承認テスト ライブラリのベスト プラクティス
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 908ea8ea8d609de145c6d078203328d97682e6b1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d791670a7b7942b83be7c3f688a335fb68283b02
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369297"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537258"
 ---
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
@@ -331,7 +331,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>小売コンポーネント:
 <ul>
 <li>Retail POS</li>
-<li>小売用バックオフィス</li>
+<li>Retail Headquarters</li>
 <li>Commerce Data Exchange コンポーネント
 <ul>
 <li>Synch Service</li>
@@ -344,7 +344,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>小売オンライン チャネル</li>
 <li>Retail サーバー</li>
 <li>Retail 一括配置ツールキット</li>
-<li>Retail チャンネル データベース</li>
+<li>小売チャネル データベース</li>
 </ul></li>
 <li>RapidStart Connector</li>
 <li>データのインポート/エクスポート フレームワーク コンポーネント。
@@ -412,8 +412,8 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>小売コンポーネント:
 <ul>
-<li>小売用バックオフィス</li>
-<li>Commerce Data Exchange コンポーネント:
+<li>Retail Headquarters</li>
+<li>Commerce Data Exchange コンポーネント
 <ul>
 <li>Real-time Service</li>
 <li>Async Server</li>
@@ -508,8 +508,8 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>管理ユーティリティ</li>
 <li>小売コンポーネント:
 <ul>
-<li>小売用バックオフィス</li>
-<li>Commerce Data Exchange コンポーネント:
+<li>Retail Headquarters</li>
+<li>Commerce Data Exchange コンポーネント
 <ul>
 <li>Synch Service</li>
 <li>Real-time Service</li>
@@ -699,8 +699,8 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>小売コンポーネント:
 <ul>
-<li>小売用バックオフィス</li>
-<li>Commerce Data Exchange コンポーネント:
+<li>Retail Headquarters</li>
+<li>Commerce Data Exchange コンポーネント
 <ul>
 <li>Real-time Service</li>
 <li>Async Server</li>
@@ -872,8 +872,8 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>管理ユーティリティ</li>
 <li>小売コンポーネント:
 <ul>
-<li>小売用バックオフィス</li>
-<li>Commerce Data Exchange コンポーネント:
+<li>Retail Headquarters</li>
+<li>Commerce Data Exchange コンポーネント
 <ul>
 <li>Synch Service</li>
 <li>Real-time Service</li>

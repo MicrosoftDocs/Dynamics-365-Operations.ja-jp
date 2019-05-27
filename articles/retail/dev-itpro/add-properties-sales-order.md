@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6cb99d6ce863b464c6ed8d7c3a96c5e6a2e8e04c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e037592a38d732eff514ac371501121ab6b28435
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369748"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512735"
 ---
 # <a name="add-properties-to-sales-orders"></a>プロパティを販売注文に追加
 

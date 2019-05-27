@@ -3,7 +3,7 @@ title: モデルの配置可能パッケージを作成する
 description: このトピックでは、展開可能なパッケージを作成および適用するためのワークフローについて説明します。
 author: robadawy
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 702e7eac1dbbc2aee54f581ebdf24217c867ffe6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b3669590cf544e6530cc873acc2150f14095e7ea
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368522"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537105"
 ---
 # <a name="create-deployable-packages-of-models"></a>モデルの配置可能パッケージを作成する
 
@@ -38,8 +38,12 @@ AOT パッケージは、Microsoft Dynamics 365 for Finance and Operations 環�
 > [!NOTE]
 > アプリケーション配置可能パッケージにはソース コードが含まれていません。
 
+> 本番環境への移行を目的にした配置可能パッケージを作成するには、ビルド環境を使用することを常にお勧めします。
+
 ## <a name="create-a-deployable-package"></a>配置可能パッケージの作成
-開発ステージを完了すると、以下の手順に従って Visual Studio から配置可能パッケージを作成します。
+配置可能パッケージを作成するにはビルド環境を使用することをお勧めします。 開発環境で配置可能パッケージを作成することもできます。 
+
+開発環境では、開発とテストを完了した後で、次の手順に従って Visual Studio で配置可能パッケージを作成します。
 
 1.  Microsoft Visual Studio で、**Dynamics 365** &gt; **配置** &gt; **配置パッケージの作成**を選択します。
 ![配置パッケージの作成](./media/createdeploymentpackage-986x1024.png)

@@ -3,7 +3,7 @@ title: POS 要求ハンドラーのオーバーライド
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、Retail クライアントがリアルタイムで小売機能を操作できるようします。
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: fb6198f958f837ada8dab094269d8adba702631e
-ms.sourcegitcommit: 60aa392e7762d9b62baf007be27dec043bd078df
+ms.openlocfilehash: 2933463c3e3fd2ca274a11153136e1fd0d54708f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "884588"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537530"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -103,13 +103,14 @@ ms.locfileid: "884588"
 
 **店舗運営要求ハンドラー**
 
-| 要求名                                       | 説明                                                        |
-|----------------------------------------------------|--------------------------------------------------------------------|
-| CreateTenderRemovalTransactionClientRequestHandler | POS で支払/入金の削除操作を行うときに実行されます。              |
-| CreateFloatEntryTransactionClientRequestHandler    | POS で釣銭入力操作を行うときに実行されます。                 |
-| SelectZipCodeInfoClientRequestHandler              | POS で住所の追加/編集ビューで郵便番号を入力するときに実行されます。 |
+| 要求名                                        | 説明                                                        |
+|---------------------------------------------------- |--------------------------------------------------------------------|
+| CreateTenderRemovalTransactionClientRequestHandler  | POS で支払/入金の削除操作を行うときに実行されます。              |
+| CreateFloatEntryTransactionClientRequestHandler     | POS で釣銭入力操作を行うときに実行されます。                 |
+| SelectZipCodeInfoClientRequestHandler               | POS で住所の追加/編集ビューで郵便番号を入力するときに実行されます。 |
 | CreateStartingAmountTransactionClientRequestHandler | POS で開始金額申告を行うときに実行されます。 |
-| LoyaltyCardPointsBalanceOperationRequestHandler     | POS でロイヤルティ カード残高操作を行うときに実行されます。 | 
+| LoyaltyCardPointsBalanceOperationRequestHandler     | POS でロイヤルティ カード残高操作を行うときに実行されます。 |
+| GetReportParametersClientRequestHandler             | レポート パラメーターを行うときに実行されます。 POS レポートに入力パラメーターが必要な場合は、このダイアログが実行されてパラメーターを取得します。 | 
 
 
 **支払/入金計算要求ハンドラー**
@@ -128,7 +129,8 @@ ms.locfileid: "884588"
 | 要求名                                           | 説明                                               |
 |--------------------------------------------------------|-----------------------------------------------------------|
 | GetGiftReceiptsClientRequestHandler                | POS でギフト レシートを印刷するときに実行されます。          |
-| SelectCustomerOrderTypeClientRequestHandler        | 顧客注文または見積のどちらかを選択するためのオプションがあるダイアログ ボックスを取得するときに実行されます。          |
+| SelectCustomerOrderTypeClientRequestHandler        | 顧客注文または見積のどちらかを選択するオプションがあるダイアログ ボックスを取得するときに実行されます。          |
+| GetCancellationChargeClientRequestHandler      | 顧客注文ワークフロー中にキャンセル出荷費用を入力するダイアログ ボックスが表示されたときに実行されます。          |
 
 
 

@@ -16,12 +16,12 @@ ms.author: jiaqia
 ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: a636ddaf42c4545cfd3c988d34f00e35cf714545
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 80d8b50458be0b35b2d681812ed317763b9cadd8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760767"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537513"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
@@ -31,7 +31,7 @@ ms.locfileid: "760767"
 
 このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 リテール SDK をダウンロードして使用する方法については、[リテール SDK ドキュメント](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このサンプルは Commerce runtime (CRT) の拡張機能で構成されます。 このサンプルを実行するには、CRT プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio オンライン (VSO) のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+このサンプルは Commerce runtime (CRT) の拡張機能で構成されます。 このサンプルを実行するには、CRT プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
 > 使用しているバージョンによって、このトピックの手順の一部が異なります。 詳細については、[Dynamics 365 for Retail の新機能および変更された機能](../get-started/whats-new.md)を参照してください。

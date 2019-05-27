@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 629dfff6a6f96eafe5714963de1be3a5f89b2264
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 25a51d1df99886da34bddf324b97fc1ea8a0715a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537372"
 ---
 # <a name="usage-profiler-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の使用状況プロファイル
 

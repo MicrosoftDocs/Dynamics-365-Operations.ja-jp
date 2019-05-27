@@ -3,7 +3,7 @@ title: データ タスクの自動化
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations でのデータ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法を説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: dc29c6cd1a8320461635b6b3f732a3d7519c14e0
-ms.sourcegitcommit: 0ee991a48e271debbe1e0a9932ca8af0162d2275
+ms.openlocfilehash: 807cf80e223f3add053367a7d21e20caa78d0e54
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "898664"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505419"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 
@@ -30,6 +30,8 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 
 > [!IMPORTANT]
 > 現時点では、オンプレミス環境ではデータ タスクの自動化はサポートされていません。
+
+> データタスクの自動化を実行するユーザーは、Finance and Operations の環境およびLCSプロジェクトと同じテナントに存在するユーザーである必要があります。
 
 データ タスクの自動化のために次の方法をお勧めします。
 
@@ -146,7 +148,6 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 |                   | \<PreventUploadWhenZeroRecords\> | 1..1                |           | これは、はいまたはいいえの値を持つブール値フィールドです。 これはモードが*定期実行されるバッチ*に設定されており、操作が*エクスポート*の場合にのみ適用されます。 |
 |                   | \<UseCompanyFromMessage\>        | 1..1                |           | これははい、またはいいえに設定できるブール値フィールドです。 これはモードが*定期実行されるバッチ*に設定されており、操作が*インポート*の場合にのみ適用されます。 |
 |                   | \<LegalEntity\>                  | 1..1                |           | これをは、インポート/エクスポート ジョブを実行する必要がある法人を指定するために使用されます。 |
-|                   | \<ConfigurationOnly\>            | 1..1                |           | これを使用して、データのプロジェクトおよび構成する定期的なスケジュールを作成できます。 インポートまたはエクスポートの操作は実行されません。 ただし、データ プロジェクトを正しく設定するには、操作とモードを指定する必要があります。 これは、はいまたはいいえを取るブール値フィールドです。 |
 |                   | \<PackageAPIExecute\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは、"true" または "false" を取るブール値フィールドです。 |
 |                   | \<PackageAPIOverwrite\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは、"true" または "false" を取るブール値フィールドです。 |
 |                   | \<PackageAPIReexecute\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは、"true" または "false" を取るブール値フィールドです。 |

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8cf63a63ff98b6168bdc61536334c9d7a44579b0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 213c51d83f18c85ae934ef5d245d13e861097073
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370005"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537247"
 ---
 # <a name="deploy-retail-mobility-devtest-environments-on-azure"></a>Azure での Retail Mobility 開発/テスト環境の配置
 
@@ -205,7 +205,7 @@ AOS がインストールされているサーバーまたは仮想マシンに�
 
 ### <a name="install-modern-pos-on-external-devices"></a>外部デバイスに Modern POS をインストールします。
 
-Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の販売時点管理アプリを含みます。 インストールする方法の詳細については、[Retail Modern POS のインストールRetail Modern POS](https://technet.microsoft.com/EN-US/library/dn741434.aspx)を参照してください。
+Dynamics AX は、Modern POS、PC、タブレットおよび携帯電話用の販売時点管理アプリを含みます。 インストールする方法の詳細については、[Retail Modern POS のインストール](https://technet.microsoft.com/EN-US/library/dn741434.aspx)を参照してください。
 
 ## <a name="6-learn-more-about-the-service-accounts-for-this-environment"></a>6. この環境のサービス アカウントに関する詳細
 次のセクションでは、環境を配置したときに作成されたサービス アカウントについて説明します。

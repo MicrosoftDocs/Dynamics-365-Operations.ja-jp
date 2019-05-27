@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 04c1a7dd5430fbb0476ad0889dbf8d2a2e7a07e2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 57416c8463205a59c77b3c45889820632485d707
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369488"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506327"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 

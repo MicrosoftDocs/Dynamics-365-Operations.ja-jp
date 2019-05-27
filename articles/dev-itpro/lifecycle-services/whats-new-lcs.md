@@ -18,11 +18,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 09675cfae39d64bd529f0a252073ad5791e509c7
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "954087"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537470"
 ---
 # <a name="whats-new-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ce0cd0570772b713a25fdfe5cfca430f82a5d7a1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5c8ca3a51587190bf05323f5efb9a01ad92c8ded
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537409"
 ---
 # <a name="localize-mobile-workspaces"></a>モバイル ワークスペースのローカライズ
 

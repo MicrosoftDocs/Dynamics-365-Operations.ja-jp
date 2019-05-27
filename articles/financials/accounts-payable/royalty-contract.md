@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e2970adcaa5021e28877569c412f99739940dad4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e44f09d0be8b2881a0eaba499d495b63a509b1dc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512634"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 

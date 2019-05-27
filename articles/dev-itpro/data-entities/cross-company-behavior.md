@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c44fbb29c5c66abf59f1a6089ce1cef4d64a4e2c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 19f2207085cfb2e1f3111859fc1f173341652670
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506082"
 ---
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 

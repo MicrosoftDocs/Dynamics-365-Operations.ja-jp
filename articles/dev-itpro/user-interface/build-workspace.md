@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0575ccabff214367c354908615233ffbb34b03
-ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.openlocfilehash: ddb58d774272826480f1460dc966561d1335a7f9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "369082"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537414"
 ---
 # <a name="build-workspaces"></a>ワークスペースの構築
 

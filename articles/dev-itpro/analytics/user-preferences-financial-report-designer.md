@@ -19,11 +19,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "324218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544313"
 ---
 # <a name="user-preferences-in-financial-report-designer"></a>財務諸表デザイナーでのユーザーの基本設定
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 5149b8da13b431a307fca8ce6910948290b2a025
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0aeb1c8ba079e9456b3e2798a3efdc3a6f0f90e4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537246"
 ---
 # <a name="deploy-retail-e-commerce-devtest-environments-on-azure"></a>Azure での Retail E-commerce 開発/テスト環境の配置
 
@@ -41,7 +41,7 @@ ms.locfileid: "369370"
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
 
-Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure に AX AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
+Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure に AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
 
 ## <a name="2-create-a-project"></a>2. プロジェクトの作成
 
@@ -180,7 +180,7 @@ Azure に Retail e-commerce 開発/テスト環境を配置するには、以下
 | Dynamics AX アプリケーション オブジェクト サーバー (AOS)、データベース、およびクライアントを設定して構成します。 前述のように、AX 2012 R3 はオンプレミスまたは Azure にインストールできます。 | [Microsoft Dynamics AX のシステム設定](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                             |
 | Dynamics AX にデータをインポートします。                                                                                                                                   | Dynamics AX 環境にサンプル データをインストールする場合は、テスト データ転送ツールを使用してサンプル データをインストールします。 手順については、[Microsoft Dynamics AX 2012 R3 用のテスト データ転送ツール (ベータ版)](test-data-transfer-tool-beta-2012.md) を参照してください。 |
 | Async Server を設定およびコンフィギュレーションします。                                                                                                                              | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                               |
-| Real-time Service を設定およびコンフィギュレーションします。                                                                                                                         | [Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                          |
+| Real-time Service を設定およびコンフィギュレーションします。                                                                                                                         | [Commerce Data Exchange Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                          |
 | Commerce Data Exchange のメタデータの同期                                                                                                                       | [小売用スケジューラのパラメーターを入力する](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                              |
 | 新規作成、または既存のオンライン ストア チャネルの更新。                                                                                                       | [オンライン ストアの設定](https://technet.microsoft.com/EN-US/library/jj682095.aspx)                                                                                                                                                                                                                                         |
 

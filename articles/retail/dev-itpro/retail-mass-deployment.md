@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 515b79044364a30d24781725101d779da71d541e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5a061d8f3138e3194d9afac242b92003c1c05250
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368344"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537537"
 ---
 # <a name="mass-deployment-of-retail-self-service-components"></a>Retail セルフサービス コンポーネントの一括配置
 

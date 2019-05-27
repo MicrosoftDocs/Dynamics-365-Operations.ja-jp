@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7be92d5b32d006f67e3d2595cab87b9124da357
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 652a496140512a8b11cc17e633f9f59a4c78249c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369305"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537367"
 ---
 # <a name="resources-for-responding-to-gdpr-data-requests"></a>GDPR データ要求に対応するためのリソース
 

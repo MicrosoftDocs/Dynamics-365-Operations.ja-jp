@@ -17,18 +17,17 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: dec36261014d361b9acd8577bb4899f13352907e
-ms.sourcegitcommit: 4e104ad3fc4a160a06f0d031974d60abcbb62829
+ms.openlocfilehash: a9dcc8013bb6811b92e46b98cdeb226c4c038b77
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "851217"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506024"
 ---
 # <a name="enhanced-batch-forms"></a>拡張バッチ フォーム
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 拡張された詳細トランザクション フォーム (ページ) が Microsoft Dynamics 365 for Finance and Operations に追加されました。 このフォームは、バッチ ジョブのジョブ ID を選択して開くことができます。 拡張フォームにはヘッダーと明細行があり、選択したバッチ ジョブに関連付けられているバッチ タスクおよび制約の概要を示します。
 

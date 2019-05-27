@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: amarshall
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d6b9c8b50b87dbdf04433bffcf9fc3a18b636cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b396e98326e277ec7cc730e094cc9332d7ac8230
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369360"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537402"
 ---
 # <a name="get-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムを入手
 

@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 for Talent のモジュラー アプリのプロビジョニング
-description: このトピックでは、Microsoft Dynamics 365 for Talent に含まれる Core Human Resources (HR) 機能を提供するために購入できるスタンドアロンのモジュラー アプリケーションをプロビジョニングする方法について説明します。 この機能は、Attract および Onboard などの追加エクスペリエンスを提供します。
+title: Dynamics 365 for Talent - Onboard アプリのプロビジョニング
+description: このトピックでは、スタンドアロン Dynamics 365 for Talent - Onboard アプリをプロビジョニングする方法について説明します。
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/03/2018
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,31 +17,31 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-ms.openlocfilehash: aa02b016e4193c2280d959b351dab1f5c74b4c2e
-ms.sourcegitcommit: 3630054272c42bbfb8949c128b0284fc830254bc
+ms.openlocfilehash: cca8ef2d858a6ba53d021aa2f95c746c8fa8e3c0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "907923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537270"
 ---
-# <a name="provisioning-for-the-dynamics-365-for-talent-modular-apps"></a>Dynamics 365 for Talent のモジュラー アプリのプロビジョニング
+# <a name="provisioning-for-the-onboard-app"></a>Onboard アプリのプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent には、Core Human Resources (HR) 機能および Attract や Onboard などの追加エクスペリエンスを提供する機能が含まれます。 この機能は、Web ダイレクトを通じたスタンドアロン モジュール アプリケーションとして購入することもできます。 Microsoft Dynamics 365 for Talent: Attract および Microsoft Dynamics 365 for Talent: Onboard SKU などがその例です。 完全な Talent を購入するか、モジュラー アプリケーションを購入するのかによって、エクスペリエンスは多少異なります。
+Microsoft Dynamics 365 for Talent の完全版には、中核人事 (Core HR) 機能に加えて Attract と Onboard が含まれており、社内の 採用と オンボードのプロセス を認識することができます。 また、オンボード アプリのスタンドアロンバージョンを購入することもできます。 Talent の完全版とスタンドアロンのオンボードアプリのどちらを購入したかによって、プロビジョニング内容が若干異なります。
 
-モジュラー アプリケーションは、サービスの試用を開始したり、Web ダイレクトを通じて購入すると自動的にプロビジョニングされます。 顧客は Attract および Onboard の試用版を個別にサインアップできます。
+オンボードアプリは、試用版を起動するか、またはオンラインで購入したときに自動的に準備されます。 完全版の Talent を使用するにはプロビジョニングのために Microsoft Dynamics Lifecycle Services (LCS) が必要となりますが、スタンドアロンの Onboard アプリには LCS は必要ありません。
 
-Microsoft Dynamics Lifecycle Services (LCS) は Talent をプロビジョニングするために使用されますが、モジュラー アプリケーションのプロビジョニングには使用されません。
+スタンドアロンの Onboard アプリでは、プロビジョニングの対象を選択をすることはありません。 そのかわりに、以下の要素によって Onboard がプロビジョニングされる場所が決まります。
 
-顧客は、モジュラー アプリケーションをプロビジョニングする必要な正確な場所を選択しません。 代わりに、次の要因により、モジュラー アプリケーションがプロビジョニングされる場所が決定します。
+- Microsoft PowerApps 環境が存在する場合は同環境の場所を参照します
+- PowerApps 環境が存在しない場合は、テナントの場所を参照します
+- Talent が現在対応しているデータ センター
 
-+ 組織の既存の Microsoft PowerApps 環境の場所
-+ PowerApps 環境が存在しない場合は、組織の既存のテナントの場所は
-+ Talent が現在サポートするデータ センター
+Onboard アプリは、対応する国または地域でのみで提供しています。 サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。 サポートされている国と地域の一覧は、『[Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/en-us/dynamics365/get-started/availability)』を参照してください。
 
-サポートされている国または地域でのみ、モジュラー アプリケーションがプロビジョニングされます。 次の図は、使用されるロジックを示しています。 サポートされている国と地域は Microsoft Trust Center for Talent データ透過性で定義されています。 サポートされている国と地域の一覧は、『[Microsoft Dynamics 365 の国際可用性ガイド](https://docs.microsoft.com/en-us/dynamics365/get-started/availability)』を参照してください。
+以下の図では、スタンドアロンの Onboard アプリを提供するにあたって使用されているロジックを示しています。
 
-[![国/地域に基づくモジュラー アプリケーションのプロビジョニング プロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
+[![国/地域にもとづいた、スタンドアロン Onboardアプリの プロビジョニングプロセス](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
-Talent とは異なり、モジュラー アプリケーションでは各ユーザーがアクセス可能な環境のリストは維持されません。 ユーザーは、使用した最後の環境に自動的にサインインされます。 **設定**ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。
+完全版の Talent とは異なり、スタンドアロンの Onboard アプリ では、各ユーザーがアクセス可能となる環境の一覧を管理していません。 ユーザーは、最後に使用した環境に自動的にサインインします。 **設定**ボタン (ギヤ記号) を使用して、さまざまな環境を選択できます。

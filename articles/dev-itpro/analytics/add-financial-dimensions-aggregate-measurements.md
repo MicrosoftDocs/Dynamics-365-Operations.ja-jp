@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f458cca2955c9c808ba3d7ed54c16bb60e075a97
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e5a7ca773ba01fc7db4333ccb8296bbe34749e11
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1503626"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 

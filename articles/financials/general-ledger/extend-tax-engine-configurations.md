@@ -16,18 +16,18 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: be0458c2f5dd08ff81913eadd42ab4d2c89bd768
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d539e9ce9724b4b8315235b80c10d13e9125f99f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537618"
 ---
 # <a name="extending-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張
 
 [!include [banner](../includes/banner.md)]
 
-[税エンジン](tax-engine.md) (GTE とも呼ばれる) は、税の適用、計算、転記、および決済を判断する、法律上およびビジネス要求に基づく税の諸規則を決定を構成することができます。 このトピックでは、インドに適用される次のシナリオを使用して、税エンジン コンフィギュレーション拡張プロセスについて説明します。
+[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。 このトピックでは、インドに適用される次のシナリオを使用して、税エンジン コンフィギュレーション拡張プロセスについて説明します。
 
 -   連邦直轄領商品およびサービス税 (UTGST) の税エンジンのコンフィギュレーションを拡張します。
 -   参照モデルを使用すると、さまざまな国/地域からの商品輸入の注文の税率の基本的な関税 (BCD) を適用できます。
@@ -46,7 +46,7 @@ ms.locfileid: "368707"
 |BCD| 基本関税|
 
 ## <a name="prerequisites"></a>必要条件
-例のシナリオを完了する前に、次の作業、[LCS から GTE コンフィギュレーションをインポート](tax-engine-import-configuration.md) を完了します。
+シナリオ例の作成に取りかかる前に、次の作業を完了させてください。 [LCSから GTE び設定内容をインポートする](tax-engine-import-configuration.md)
 
 ### <a name="add-a-configuration-provider-and-make-it-the-active-provider"></a>コンフィギュレーション プロバイダーを追加し、アクティブなプロバイダーとする。
 1. **組織管理** > **ワークスペース** > **電子申告**の順に移動します。
@@ -126,7 +126,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
  11. ステータスが**完了**に更新されると、コンフィギュレーションを配置できる状態です。
 
 ### <a name="complete-data-mapping-for-the-extended-taxable-document"></a>拡張された課税対象ドキュメントのデータ マッピングを完了します。
-発注書または販売注文、および課税対象のドキュメントでの参照モードなどの各課税対象ドキュメントのデータ マッピングがあります。 データ マッピングの目的は、課税対象取引から値を取得し、税の適用または税の計算のために GTE に渡すことです。 利便性のために、**課税対象ドキュメント ソース**と呼ばれ、課税金額、HSN、SAC などの最も一般的な税に関連するフィールドをカプセル化する特別なデータ ソースがあります。 したがって、拡張課税対象ドキュメントに追加のフィールドの値を取得し、マップするための2つの方法があります。
+発注書または販売注文、および課税対象のドキュメントでの参照モードなどの各課税対象ドキュメントのデータ マッピングがあります。 データ マッピングの目的は、課税対象取引から取得した値を GTE に渡し、税の適用または税の計算に使用することです。 利便性のために、**課税対象ドキュメント ソース**と呼ばれ、課税金額、HSN、SAC などの最も一般的な税に関連するフィールドをカプセル化する特別なデータ ソースがあります。 したがって、拡張課税対象ドキュメントに追加のフィールドの値を取得し、マップするための2つの方法があります。
 
 -   方法 1 : 既存の課税対象ドキュメントのソースで追加のフィールドを有効にします。
 -   方法 2 : 電子レポート (ER) データ マッピングを使用します。
@@ -138,7 +138,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
     1. **組織管理** > **グローバル アドレス帳** > **アドレス** > **アドレスの設定**の順に移動します。 
     2. **連邦直轄領**列を右クリックし、**フォーム情報** > **フォーム名: LogisticsAddressSetup** をクリックします。 たとえば、列のシステムの名前が **LogisticsAddressState.UnionTerritory_IN** であることを確認します。
 
-![連邦直轄領の GTE 拡張機能](media/gte-extension-union-territory-form-info.png)
+![連邦直轄領のGTE 拡張](media/gte-extension-union-territory-form-info.png)
 
 2. 連邦直轄領内のイントラスタット取引の税エンジン モデル フィールドを追加します。 
     1. AOT で、**クラス** > **TaxableDocRowDataProviderExtensionLine** を開き、連邦直轄領内のイントラスタット取引の ```const str``` を追加します。
@@ -176,7 +176,7 @@ private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
     return  isIntraStateWithUnionTerritory;
 }
 ```
-4. TaxableDocRowDataProviderExtensionLine.fillInExtensionFields() で GTE にフラグを渡します
+4. TaxableDocRowDataProviderExtensionLine.fillInExtensionFields() にて GTE へとフラグを渡します
 
 ```
 _lineObj.setFieldValue(IsIntraStateInUnionTerritory, this.IsIntraStateWithUnionTerritory(_lineObj));

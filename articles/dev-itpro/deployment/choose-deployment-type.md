@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: e5a34a5b116d53f53953290cff9f00c94778d506
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7a22977c393d99cf9055982a8c482a1bae8e90aa
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537090"
 ---
 # <a name="deployment-options"></a>配置オプション
 

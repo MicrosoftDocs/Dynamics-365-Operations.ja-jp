@@ -15,12 +15,12 @@ ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 4c47453b0b247fc9553e143f4d24cb45afeffbaf
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: d9a78c42b1cdb770d42aa4028bfe7f7efe36bb4b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537494"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータベースのバックアップ
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 60a9f824fd3bd0d67316b7c78bb6da2fe712f322
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: 46e9045867265dbe1cd051ffba79d1a31abdd76c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760770"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537610"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -119,7 +119,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 
 ## <a name="run-a-distribution-schedule"></a>配送スケジュールの実行
 
-小売用バックオフィスから POS データベースに Tax Engine (GTE) データを同期するには、ジョブを **配送スケジュール** ページに追加する必要があります。
+小売用バックオフィスからの税エンジン (GTE) データを POS データベースに同期させるには、**配送スケジュール** ページにジョブを追加する必要があります。
 
 以下の手順に従い、ジョブが存在していることを検証して、ジョブを実行します。
 

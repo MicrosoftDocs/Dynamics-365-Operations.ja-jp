@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) によるサービスの更新の構成
 description: このトピックでは、環境の最新のサービスを受け取る方法とタイミングを指定する方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 03/22/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e7b7b57e8a55c9dcea5e37d5e1a52fb1aeb074f7
-ms.sourcegitcommit: c131672b02407a99aafd38957d04816a82997264
+ms.openlocfilehash: c14e14cf34f9f7864c9bf96a29ae857e53aae6d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "892419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506085"
 ---
 # <a name="configure-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の構成
 
@@ -29,7 +29,7 @@ ms.locfileid: "892419"
 Microsoft Dynamics Lifecycle Services (LCS) では、Microsoft Dynamics 365 for Finance and Operations 環境のサービス更新を Microsoft から受け取る方法とタイミングを指定できます。
 
 > [!IMPORTANT]
-> この機能は **Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) 以降** を使用していて[最初のリリース](../../fin-and-ops/get-started/public-preview-releases.md) プログラムの一部で **ない** 顧客だけが利用できます。 Microsoft はこの機能を最初のリリースのお客様、および古いバージョンの製品を使用しているお客様もご利用いただけるよう努めています。 
+> この機能は **バージョン 8.1 以降** を使用しているお客様、または **バージョン 7.3** を使用していて、[初回リリース](../../fin-and-ops/get-started/public-preview-releases.md) プログラムに参加して **いない** お客様だけが利用できます。 Microsoft はこの機能を初回リリースのお客様が利用できるようにすることを目指しています。 バージョン 7.1、7.2、または 8.0 のお客様は、通常のサービス フローを使用して手動で更新を行うことができます。
 
 LCS で **プロジェクト所有者** ロールが割り当てられているユーザー (顧客またはパートナー) のみが更新を構成できます。 さらに、更新は **実装プロジェクト** に対してのみ構成できます。
 

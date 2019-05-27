@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 07c16619c050751a4fb8739456267ff61d708aa4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9d5943b694fd747654f8abb4af9af6ae932e5743
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369636"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537230"
 ---
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 

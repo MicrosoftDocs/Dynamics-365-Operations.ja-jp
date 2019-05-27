@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
-ms.openlocfilehash: 5f387c7ae6225951529cdae51be614f467c764ab
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: de01f405ef1c570fc74aa9509909140361935133
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537004"
 ---
 # <a name="sql-connection-error-x-exception"></a>X++ の SQL 接続エラー例外
 

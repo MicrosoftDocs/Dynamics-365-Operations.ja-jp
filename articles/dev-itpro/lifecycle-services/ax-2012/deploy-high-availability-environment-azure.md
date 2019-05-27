@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 278c8cec9dca760bb97c0f59863697240b2468b2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: af384c62339800b55546bcc830602e10ad41812f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537422"
 ---
 # <a name="deploy-high-availability-environments-on-azure"></a>Azure での高可用性環境の配置
 
@@ -346,7 +346,7 @@ AX 2012 R3 クライアントを開いて、初期化チェックリストを完
 ユーザが AX 2012 R3 にアクセスできるようにするには、以下のタスクを実行します。
 
 -   CLI- 仮想マシンのリモート デスクトップ ユーザー グループに各ユーザーのドメイン アカウントを追加します。
--   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AXで新しいユーザーを作成する](https://technet.microsoft.com/en-us/library/aa548139.aspx)を参照してください。
+-   ユーザーに AX 2012 R3 へのアクセス許可を付与します。 手順については、 [Microsoft Dynamics AXで新しいユーザーを作成する](https://technet.microsoft.com/en-us/library/aa548139.aspx) を参照してください。
 
 **注記:** VPN 接続とドメイン信頼を作成しない場合でも、ユーザーに AX 2012 R3 へのアクセス権を与えることができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
 
@@ -418,9 +418,9 @@ Azure 上で AX 2012 R3 を設定およびコンフィギュレーションす�
 
 高可用性環境には、仮想マシンの層ごとに設定された可用性が含まれます。 たとえば、ドメイン コントローラ、データベース サーバー、AOS サーバーなどの、可用性セットがあります。
 
-### <a name="install-the-data-importexport-framework-and-rapidstart-connector"></a>データのインポート/エクスポート フレームワークおよび RapidStart Connector のインストール
+### <a name="install-the-data-importexport-framework-and-rapidstart-connector"></a>Data import/export framework および RapidStart Connector のインストールを行う
 
-高可用性については、**データのインポート/エクスポート フレームワーク**および **RapidStart Connector** が AOS サーバーであるすべての仮想マシンでインストールされる必要があります。 これらのコンポーネントをインストールすることが必要な場合があります。 手順については、以下を参照してください: • [データのインポート/エクスポート フレームワークをインストール (DIXF、DMF)](install-dixf.md) • [RapidStart Connector をインストール](https://technet.microsoft.com/en-us/library/hh771574.aspx)
+可用性を高めるためにには、 **Data import/export framework** と **RapidStart Connector** をAOSサーバーであるすべての仮想マシンにインストールする必要があります。 これらのコンポーネントをインストールすることが必要な場合があります。 手順については、次を参照してください: • [Install the Data import/export framework (DIXF, DMF)](install-dixf.md) • [Install the RapidStart Connector](https://technet.microsoft.com/en-us/library/hh771574.aspx)
 
 ### <a name="configure-microsoft-sql-server-reporting-services-for-load-balancing"></a>負荷分散のための Microsoft SQL Server Reporting Services のコンフィギュレーション
 
@@ -457,7 +457,7 @@ Lifecycle Services でエンタープライズ ポータル サーバーが配�
 | <DomainName>DynamicsInstallUser | Dynamics AX 2012 R3 をインストールするために使用したアカウント。                                                                                                                                                    |
 | <DomainName>SPServiceUser       | 次のサービスを実行するために使用したアカウント: AppFabric Caching Service、SharePoint Search Host Controller、SharePoint Server Search 15、SharePoint Timer Service、および SharePoint User Code Host。 |
 | <DomainName>BCProxyUser         | ビジネス コネクタ プロキシとして使用されるアカウント。                                                                                                                                                   |
-| <DomainName>AXServiceUser       | 次のサービスの実行に使用したアカウント: Microsoft Dynamics AX データのインポート/エクスポート フレームワーク サービスおよび Microsoft Dynamics ERP RapidStart Connector。                                         |
+| <DomainName>AXServiceUser       | 次のサービスの実行に使用したアカウント: Microsoft Dynamics AX Data Import/Export Framework Service and Microsoft Dynamics ERP RapidStart Connector.                                         |
 | <DomainName>RetailServiceUser   | 次のサービスの実行に使用したアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。                                                                               |
 
 注記: パスワードは、[Lifecycle Services](https://lifecycleservices.dynamics.com/en/) のクラウド ホスト環境ページに表示されます。

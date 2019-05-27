@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2fc183e925356d8fcc559042d78bdb4ddc7c988
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4e0028ab8f5d84c42ac2166d1824117f92e68076
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512635"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 

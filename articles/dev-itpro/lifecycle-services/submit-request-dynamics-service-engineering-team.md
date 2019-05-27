@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 2f25a100ed040e4410ad644d7d76c950039be29f
-ms.sourcegitcommit: e597ac963d541f521d253697bbf26ce1ca8630a3
+ms.openlocfilehash: 6b75c8627d5c80e3f65e17884d34550b89c5a24b
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "949236"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539418"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
@@ -88,7 +88,7 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
         > [!NOTE]
         > 切替フェーズでサンドボックス環境から実稼働環境にデータベースをリフレッシュする必要がある場合は、**サンドボックスから実稼働** タイプを選択します。
 
-    - **サンドボックスから生産** - 切り替えフェーズで、コンフィギュレーション データの実稼働環境へのデータベース更新を実行します。 詳細については、[Finance and Operations データベースを SQL Server から Azure SQL データベース環境にコピー](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database) の「データベースのコピーにサービス要求を送信する」セクションを参照してください。
+    - **サンドボックスから生産** - 切り替えフェーズで、コンフィギュレーション データの実稼働環境へのデータベース更新を実行します。 詳細については、[Finance and Operations データベースを SQL Server から Azure SQL データベース環境にコピー](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database) の "データベースのコピーにサービス要求を送信する" セクションを参照してください。
 
    - **その他の要求** – **その他の要求** タイプをここで説明されているとおりに使用する必要があります。 DSE チームに明確ではない方法でリクエストを言葉で言うと、チームは説明を求めるコメントを入力し、リクエストが遅れます。 下記に記載されていないリクエストに対して**その他の要求**タイプを使用すると、リクエストは拒否されます。 DSE チームが次のアクションのいずれかを実行することを要求するには、この要求タイプを選択します。
 

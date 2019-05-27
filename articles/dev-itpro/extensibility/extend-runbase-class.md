@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: df556ae837fcd84790fc664f2cddf373a1220bf0
-ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
+ms.openlocfilehash: 411de5cc3ab28f43fa3176949d2c2c3e72643a6b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "770882"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510977"
 ---
 # <a name="extend-the-runbase-class"></a>RunBase クラスの拡張
 

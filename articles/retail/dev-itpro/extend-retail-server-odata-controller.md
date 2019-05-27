@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 496ab6512cfb1478ed762eb165a760c872e7e222
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6234906ad04df54171eec1fed1ff3718e6bb0e8e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369749"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537559"
 ---
 # <a name="extend-a-retail-server-odata-controller"></a>Retail Server OData コントローラーの拡張
 

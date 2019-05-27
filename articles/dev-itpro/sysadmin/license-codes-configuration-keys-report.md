@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2cae21373ceaf159be2ee58fa391bf4c110caf76
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e1218292cdc1e2794a30e8d447e072b13285f083
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369063"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537272"
 ---
 # <a name="license-codes-and-configuration-keys-report"></a>ライセンス コードとコンフィギュレーション キーのレポート
 

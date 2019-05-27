@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: LaneSwenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 62e0d3fcea6c1de70c6d2a328c5395befa891f16
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c6aa023502ed05a58e1cb2eb8a0cea3e9d1dac08
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368951"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537110"
 ---
 # <a name="export-copies-of-finance-and-operations-databases-to-restore-later"></a>後で復元する Finance and Operations のデータベースのコピーをエクスポートする
 

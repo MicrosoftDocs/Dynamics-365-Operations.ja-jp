@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884cd388cd6f400bd404f62baaa751158ef1e4a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 95f4a9569b6cb44fc763b435dba88890afb6780d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369745"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505923"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。 この記事には、マップされていないフィールドのプロパティに関する情報と、それらの作成、使用、テストの方法を示す例が含まれています。
+
+サンプルコードは、ユーザーが所有しているソリューションの一部であるエンティティの作成または変更を行う用途で使用します。  既存のエンティティを拡張するには、若干の変更を加える必要があります。
 
 ## <a name="overview"></a>概要
 
@@ -99,7 +101,7 @@ ms.locfileid: "369745"
 
 1. Microsoft Visual Studio で、プロジェクトを右クリックし、既存の **FMCustomerEntity** を追加します。
 2. ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから**開く**をクリックします。
-3. **FMCustomerEntity** のデザイナーで、**FMCustomerEntity** ノードを右クリックしてから、**新規** &gt; **マップされていない文字列フィールド**をクリックします。
+3. **FMCustomerEntity** のデザイナービューで、 **Fields** ノードを右クリックし、 **New** &gt; **String Unmapped Field** とクリックします。
 
     [![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
 
@@ -125,14 +127,14 @@ ms.locfileid: "369745"
         fieldList.addEnd(SysComputedColumn::returnLiteral(" "));
         fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMCustomer), fieldstr(FMCustomer, LastName)));
         fieldList.addEnd(SysComputedColumn::returnLiteral("; "));
-        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, AddressLine1)));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, AddressLine1)));
         fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, City)));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, City)));
         fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, State)));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, State)));
         fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
         fieldList.addEnd(SysComputedColumn::cast(
-            SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, ZipCode)), "NVARCHAR"));
+            SysComputedColumn::returnField(DataEntityName, identifierstr(FMAddressTable), fieldstr(FMAddressTable, ZipCode)), "NVARCHAR"));
         return SysComputedColumn::addList(fieldList);
     }
 

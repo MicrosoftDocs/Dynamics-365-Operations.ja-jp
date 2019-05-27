@@ -18,11 +18,11 @@ ms.author: laneswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8139de581c322b248fa0721aaad4a5762dc10354
-ms.sourcegitcommit: e597ac963d541f521d253697bbf26ce1ca8630a3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "949237"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537102"
 ---
 # <a name="refresh-database"></a>データベースの更新 
 

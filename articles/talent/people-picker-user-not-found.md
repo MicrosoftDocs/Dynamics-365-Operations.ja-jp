@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859508"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518454"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory ユーザーが人員ピッカーで見つからない
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 006618c4e1073cbfa00aac6e9d51fa2b9608571f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1a41df866316c0b1c945f71553e154819ffdc7c3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537290"
 ---
 # <a name="security-development-tool"></a>セキュリティ開発ツール
 

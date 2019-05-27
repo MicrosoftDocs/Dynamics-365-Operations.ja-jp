@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 06799211b28944f579beb0735044c248ea1b86c9
-ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
+ms.openlocfilehash: c919a4d00753519cfffe957f67dfe5f12990a7ec
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "378102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1508236"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -64,7 +64,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 今回のリリースには、2019 年の報告に適用されるベルギーの XML イントラスタット形式への変更が含まれています。 新しい形式を適用するには、LCS 共有資産ライブラリから ER コンフィギュレーションの次のバージョン (またはそれ以降のバージョン) をインポートする必要があります: Intrastat (BE).version.2.6.xml。 コンフィギュレーションをインポートする方法の詳細については、[Lifecycle Services からコンフィギュレーションをインポートする](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。 
 
 ## <a name="india-specific-features"></a>インド固有の機能
-このリリースでは、[GTE](../../financials/general-ledger/tax-engine.md) が法人に対して有効になっている場合、一部のグローバル フィールドおよびボタンがユーザインターフェイスから非表示になります。 これは、GTEが使用されているときには適用されない発注書や販売注文のような課税対象文書のフィールドやボタンを非表示にすることで、ユーザーのユーザー インターフェースを簡素化します。 GTE が有効な場合、以下のフィールドやボタンが非表示になります。
+このリリースでは、[GTE](../../financials/general-ledger/tax-engine.md) が法人に対して有効になっている場合、一部のグローバル フィールドとボタンがユーザー インターフェイスから非表示になります。 これは、GTE が使用されているときには適用されない発注書や販売注文のような課税対象文書のフィールドやボタンを非表示にすることで、ユーザーのユーザー インターフェースを簡素化します。 GTE が有効な場合、以下のフィールドやボタンが非表示になります。
 
  - 消費税グループ
  - 品目消費税グループ

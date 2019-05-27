@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f45103470c0a43750dff9af5c246a2c9e7873f56
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5a74ad211ee22f20476906cb987ca663d44fb1c1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537302"
 ---
 # <a name="value-module"></a>値モジュール
 

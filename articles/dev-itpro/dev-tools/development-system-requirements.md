@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d75e8f137fa318ffff3e1b348813374db6926de3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b9862a98778ccfc0a7e077fdc17dcb64866fe1ff
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368647"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536962"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 

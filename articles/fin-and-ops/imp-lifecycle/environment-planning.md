@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: af454de06ee41c953f9225658fdfa4163c95cbef
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6c0cfc68fc9235516c2ab88a9a653b8c17db66b6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369162"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510941"
 ---
 # <a name="environment-planning"></a>環境計画
 

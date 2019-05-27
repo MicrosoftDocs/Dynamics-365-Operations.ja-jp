@@ -3,7 +3,7 @@ title: POS 拡張パッケージ情報の表示
 description: このトピックでは、販売時点管理 (POS) の設定ビューの拡張パッケージ セクションに関する情報を提供します。 この新しいセクションは、コア POS の一部として含まれる拡張パッケージを一覧表示するとともに、ステータス情報やその他の詳細を表示できます。
 author: mumani
 manager: AnnBe
-ms.date: 02/25/2019
+ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: 8e13b1415f66be999e90fe94acdaae57b07dc112
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: e69f850d8eb53d2a0f8c96f26c74d021e0d9a99a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "790317"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537527"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 
-[!include [banner](../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
 
@@ -42,6 +42,9 @@ ms.locfileid: "790317"
 - **スキップ** – パッケージはスキップされ、読み込まれませんでした。 拡張マニフェストでパッケージが **en-fr** など特定のロケールに対して読み込まれ、他のすべてのロケールに対してはスキップするよう指定できます。
 
 [![POS 設定ビューの拡張パッケージ セクション](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
+
+> [!NOTE]
+> クラウド POS は **POS 設定** ページの **情報** セクションの下の Customization.settings ファイルに拡張機能のバージョンを表示せず、Microsoft アプリ パッケージのバージョンのみを表示します。 拡張機能パッケージのバージョンは **拡張機能の詳細** セクションからのみ表示できます。
 
 ## <a name="extension-package-details"></a>拡張パッケージの詳細
 

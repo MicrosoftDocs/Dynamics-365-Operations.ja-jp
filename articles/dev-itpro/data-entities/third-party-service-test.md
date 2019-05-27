@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99dab5ca0ad65f67b2677a913b1565ca234b8bf5
-ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
+ms.openlocfilehash: 359f95f2686d8eccd6271ef624d34499d526e7e1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "378127"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537162"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 

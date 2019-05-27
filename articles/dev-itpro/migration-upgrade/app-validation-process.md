@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0c36dedc6d2a976488822f0bb7232f668b158884
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b9058f0d658a72f1ecc733e45ed15bef4855fdb6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368840"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537212"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 

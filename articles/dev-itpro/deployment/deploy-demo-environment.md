@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 460db6ea6a5cd744a2497efc19e54c7cc1eaea5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 87137f7ea58bf4c409a3111cf94e5a134794cee3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370024"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537085"
 ---
 # <a name="deploy-demo-environments"></a>デモ環境の配置
 

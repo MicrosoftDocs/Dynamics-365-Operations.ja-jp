@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e4ff2a805b73a3036b6acd31f6fcf81e9b901c0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fa79ded2524f17afdbbefa5192860670017b3b86
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369932"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536966"
 ---
 # <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 

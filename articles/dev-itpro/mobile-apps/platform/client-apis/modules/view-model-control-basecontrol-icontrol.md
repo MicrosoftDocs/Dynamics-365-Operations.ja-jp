@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20a3457e8e5b609af4653f658ebe650c8ae7d0e7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a52e1041dd915109e3f53190d4df9c5f2f010569
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368626"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537313"
 ---
 # <a name="control-module"></a>管理モジュール
 

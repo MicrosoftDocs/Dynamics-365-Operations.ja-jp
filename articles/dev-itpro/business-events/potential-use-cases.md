@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 08ea9e6bc91abf1cae67f6777e3a7e9ec5bdac53
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: d36899cb2b81c7130dce05364892af2b788fdf5c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975735"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505428"
 ---
 # <a name="use-cases-for-business-events"></a>ビジネス イベントのユースケース
 
 [!include[banner](../includes/banner.md)]
 
-以下は、ビジネス イベントの想定されるユースケースです。 これは想定されるユース ケースの完全な一覧ではありません。 また、これらのユース ケースのうちのいくつかは、マイクロソフトやその他の組織によってまだ実装されていない可能性に注意してください。 これらはアイデアを提供して特定のビジネス イベントの理解を助けるものです。
+以下は、ビジネス イベントの想定されるユースケースです。 これは想定されるユース ケースの完全な一覧ではありません。 また、これらのユース ケースのうちのいくつかは、マイクロソフトやその他の組織によってまだ実装されていない可能性に注意してください。 これらはアイデアを提供してビジネス イベントの理解を助けるものです。
 
 | **ユース ケース**                         | **金額**  |
 |----------------------------------------|----------|

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: fc4af6525beb7a8d26a074da3db06a5e025f645b
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: a0026c75b897f102f41c6132b4397f3cae62cd0d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773889"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537189"
 ---
 # <a name="deprecation-of-methods-and-metadata-elements"></a>方法とメタデータの要素の廃止
 

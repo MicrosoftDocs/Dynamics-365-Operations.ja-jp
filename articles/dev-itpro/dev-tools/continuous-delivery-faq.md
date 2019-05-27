@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 28f4d159477bc294adee3187e5471e0e2b8a03a3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 664a5db46f9305665163b63328425ad9c203aaab
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536999"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 

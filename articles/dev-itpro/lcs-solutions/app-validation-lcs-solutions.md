@@ -15,12 +15,12 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 6f33dbcb90fc5b1cafdbfc48152ad9847df6c555
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 58d74f9ce7ac404320cfb27c21d60cbea6d5a0a6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368437"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537385"
 ---
 # <a name="validate-applications-for-finance-and-operations"></a>Finance and Operations 用のアプリケーションを検証する
 

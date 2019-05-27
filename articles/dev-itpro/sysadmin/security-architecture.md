@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e1b8b42c4df43554fd4464909db071e687b58e5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0cfbe635465afaf2c7e214d57ae1c7031f6d3c34
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537276"
 ---
 # <a name="security-architecture"></a>セキュリティ アーキテクチャ
 [!include [banner](../includes/banner.md)]

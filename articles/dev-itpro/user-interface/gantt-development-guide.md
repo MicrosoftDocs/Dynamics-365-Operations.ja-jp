@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90659ea7fb0eb6cbfa6ac7ce7e0deedcfab2e7c4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4a11fe9ccbc44b548f20260ffee605a7ed87fa77
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369308"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537175"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 465ee69fb1024821350949c0f6757db292a78bcd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d763ee52fbfeadb29fb9d095958ed4abf3db1766
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368981"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537227"
 ---
 # <a name="view-purge-and-archive-jobs"></a>削除およびアーカイブ ジョブの表示
 

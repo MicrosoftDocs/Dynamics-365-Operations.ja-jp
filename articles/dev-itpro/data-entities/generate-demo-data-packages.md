@@ -17,11 +17,11 @@ ms.author: ryansand
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.openlocfilehash: 4680f221c78dd75678681821e4be149b6eb4ba36
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791407"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537107"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 

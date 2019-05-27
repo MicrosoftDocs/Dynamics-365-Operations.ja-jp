@@ -19,11 +19,11 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
 ms.openlocfilehash: 21ab3afcd34608b6d79845f3a10c8d8fda734c94
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975741"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506190"
 ---
 # <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353796"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530871"
 ---
 # <a name="define-financial-dimensions"></a>財務分析コードの定義
 
@@ -33,7 +33,7 @@ ms.locfileid: "353796"
 ## <a name="create-an-entity-backed-financial-dimension"></a>エンティティがサポートする財務分析コードの作成
 1. [総勘定元帳] > [勘定科目表] > [分析コード] > [財務分析コード] に移動します。
 2. [新規] をクリックします。
-3. [ユーザー値の使用元] フィールドで、財務分析コードの基になるシステム定義のエンティティを選択します。 
+3. ユーザー値の使用元フィールドで、財務分析コードの基になるシステム定義のエンティティを選択します。 
 4. [分析コード名] フィールドに財務分析コードを説明する値を入力します。
     * 名前はシステムで定義されたエンティティとは異なるものにできますが、特殊文字やスペースは使用できません。  
 5. [有効化] をクリックします。
@@ -47,7 +47,7 @@ ms.locfileid: "353796"
 ## <a name="create-a-custom-financial-dimension"></a>カスタム財務分析コードの作成
 1. ページを閉じます。
 2. [新規] をクリックします。
-3. [値の使用元] フィールドで <Custom dimension>を選択します。
+3. [値の使用元] フィールドで、カスタム分析コード を選択します。
 4. [分析コード名] フィールドに財務分析コードを説明する値を入力します。
     * 名前にはスペースや特殊文字を使用することはできません。  
     * また主勘定マスクを指定して、分析コード値に対して入力できる情報の量やタイプを制限することもできます。   
