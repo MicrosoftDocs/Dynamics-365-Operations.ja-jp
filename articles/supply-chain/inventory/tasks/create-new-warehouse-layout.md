@@ -18,61 +18,61 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 26314f9015feded41f105814b85069fff0c62964
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360535"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572768"
 ---
-# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="9fa94-103">新しい倉庫レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="9fa94-103">Create a new warehouse layout</span></span>
+# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="937a5-103">新しい倉庫レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="937a5-103">Create a new warehouse layout</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="9fa94-104">この手順は、倉庫での場所に関する情報を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="9fa94-105">これは、[在庫管理] モジュールで「基本倉庫」を使用して作成された倉庫のみが対象で、[倉庫管理] モジュールで作成された倉庫には適用されません。</span><span class="sxs-lookup"><span data-stu-id="9fa94-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="9fa94-106">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="9fa94-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
+<span data-ttu-id="937a5-104">この手順は、倉庫での場所に関する情報を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="937a5-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="937a5-105">これは、[在庫管理] モジュールで「基本倉庫」を使用して作成された倉庫のみが対象で、[倉庫管理] モジュールで作成された倉庫には適用されません。</span><span class="sxs-lookup"><span data-stu-id="937a5-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="937a5-106">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="937a5-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 
 
-## <a name="set-the-default-location-capacity"></a><span data-ttu-id="9fa94-107">既定の場所の能力を設定します</span><span class="sxs-lookup"><span data-stu-id="9fa94-107">Set the default location capacity</span></span>
-1. <span data-ttu-id="9fa94-108">[在庫管理] > [設定] > [在庫および倉庫管理パラメーター] を表示します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-108">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
-2. <span data-ttu-id="9fa94-109">[場所] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-109">Click the Locations tab.</span></span>
-3. <span data-ttu-id="9fa94-110">[標準の幅] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-110">In the Standard width field, enter a number.</span></span>
-4. <span data-ttu-id="9fa94-111">[標準の奥行き] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-111">In the Standard depth field, enter a number.</span></span>
-5. <span data-ttu-id="9fa94-112">[標準の高さ] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-112">In the Standard height field, enter a number.</span></span>
-6. <span data-ttu-id="9fa94-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-113">Click Save.</span></span>
-7. <span data-ttu-id="9fa94-114">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9fa94-114">Close the page.</span></span>
+## <a name="set-the-default-location-capacity"></a><span data-ttu-id="937a5-107">既定の場所の能力を設定します</span><span class="sxs-lookup"><span data-stu-id="937a5-107">Set the default location capacity</span></span>
+1. <span data-ttu-id="937a5-108">[在庫管理] > [設定] > [在庫および倉庫管理パラメーター] を表示します。</span><span class="sxs-lookup"><span data-stu-id="937a5-108">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="937a5-109">[場所] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-109">Click the Locations tab.</span></span>
+3. <span data-ttu-id="937a5-110">[標準の幅] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-110">In the Standard width field, enter a number.</span></span>
+4. <span data-ttu-id="937a5-111">[標準の奥行き] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-111">In the Standard depth field, enter a number.</span></span>
+5. <span data-ttu-id="937a5-112">[標準の高さ] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-112">In the Standard height field, enter a number.</span></span>
+6. <span data-ttu-id="937a5-113">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-113">Click Save.</span></span>
+7. <span data-ttu-id="937a5-114">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="937a5-114">Close the page.</span></span>
 
-## <a name="define-the-location-name-format"></a><span data-ttu-id="9fa94-115">場所の名前の形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-115">Define the location name format</span></span>
-1. <span data-ttu-id="9fa94-116">[在庫管理] > [設定] > [在庫詳細] > [倉庫] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-116">Go to Inventory management > Setup > Inventory breakdown > Warehouses.</span></span>
-2. <span data-ttu-id="9fa94-117">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-117">Click New.</span></span>
-3. <span data-ttu-id="9fa94-118">[倉庫] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-118">In the Warehouse field, type a value.</span></span>
-4. <span data-ttu-id="9fa94-119">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-119">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="9fa94-120">[サイト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="9fa94-120">In the Site field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="9fa94-121">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-121">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="9fa94-122">場所の名前セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="9fa94-122">Toggle the expansion of the Location names section.</span></span>
-    * <span data-ttu-id="9fa94-123">このセクションのオプションは、場所の名前の既定の形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="9fa94-124">上記の例では、通路番号、ラック番号、棚番号が含まれます。</span><span class="sxs-lookup"><span data-stu-id="9fa94-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
-8. <span data-ttu-id="9fa94-125">[通路を含める] オプションをオンに設定します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-125">Set the Include aisle option to Yes.</span></span>
-9. <span data-ttu-id="9fa94-126">[ラックを含める] オプションをオンに設定します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-126">Set the Include rack option to Yes.</span></span> 
-10. <span data-ttu-id="9fa94-127">ラックの [形式] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-127">In the Format field, for the rack, type a value.</span></span>
-    * <span data-ttu-id="9fa94-128">例: -##</span><span class="sxs-lookup"><span data-stu-id="9fa94-128">For example: -##</span></span>  
-11. <span data-ttu-id="9fa94-129">[棚を含める] オプションをオンに設定します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-129">Set the Include shelf option to Yes.</span></span>
-12. <span data-ttu-id="9fa94-130">棚の [形式] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-130">In the Format field, for the shelf, type a value.</span></span>
-    * <span data-ttu-id="9fa94-131">例: -##</span><span class="sxs-lookup"><span data-stu-id="9fa94-131">For example: -##</span></span>  
+## <a name="define-the-location-name-format"></a><span data-ttu-id="937a5-115">場所の名前の形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="937a5-115">Define the location name format</span></span>
+1. <span data-ttu-id="937a5-116">[在庫管理] > [設定] > [在庫詳細] > [倉庫] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="937a5-116">Go to Inventory management > Setup > Inventory breakdown > Warehouses.</span></span>
+2. <span data-ttu-id="937a5-117">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-117">Click New.</span></span>
+3. <span data-ttu-id="937a5-118">[倉庫] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-118">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="937a5-119">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-119">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="937a5-120">[サイト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="937a5-120">In the Site field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="937a5-121">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="937a5-121">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="937a5-122">場所の名前セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="937a5-122">Toggle the expansion of the Location names section.</span></span>
+    * <span data-ttu-id="937a5-123">このセクションのオプションは、場所の名前の既定の形式を定義します。</span><span class="sxs-lookup"><span data-stu-id="937a5-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="937a5-124">上記の例では、通路番号、ラック番号、棚番号が含まれます。</span><span class="sxs-lookup"><span data-stu-id="937a5-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
+8. <span data-ttu-id="937a5-125">[通路を含める] オプションをオンに設定します。</span><span class="sxs-lookup"><span data-stu-id="937a5-125">Set the Include aisle option to Yes.</span></span>
+9. <span data-ttu-id="937a5-126">[ラックを含める] オプションをオンに設定します。</span><span class="sxs-lookup"><span data-stu-id="937a5-126">Set the Include rack option to Yes.</span></span> 
+10. <span data-ttu-id="937a5-127">ラックの [形式] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-127">In the Format field, for the rack, type a value.</span></span>
+    * <span data-ttu-id="937a5-128">例: -##</span><span class="sxs-lookup"><span data-stu-id="937a5-128">For example: -##</span></span>  
+11. <span data-ttu-id="937a5-129">[棚を含める] オプションをオンに設定します。</span><span class="sxs-lookup"><span data-stu-id="937a5-129">Set the Include shelf option to Yes.</span></span>
+12. <span data-ttu-id="937a5-130">棚の [形式] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="937a5-130">In the Format field, for the shelf, type a value.</span></span>
+    * <span data-ttu-id="937a5-131">例: -##</span><span class="sxs-lookup"><span data-stu-id="937a5-131">For example: -##</span></span>  
 
-## <a name="define-warehouse-locations"></a><span data-ttu-id="9fa94-132">倉庫の場所の定義</span><span class="sxs-lookup"><span data-stu-id="9fa94-132">Define warehouse locations</span></span>
-1. <span data-ttu-id="9fa94-133">アクション ペインで [倉庫] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-133">On the Action Pane, click Warehouse.</span></span>
-2. <span data-ttu-id="9fa94-134">[場所ウィザード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-134">Click Location Wizard.</span></span>
-3. <span data-ttu-id="9fa94-135">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-135">Click Next.</span></span>
-4. <span data-ttu-id="9fa94-136">[出荷ドック] オプションを選択解除します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-136">De-select the Outbound docks option</span></span>
-5. <span data-ttu-id="9fa94-137">[バルク場所] オプションを選択解除します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-137">De-select the Bulk locations option</span></span>
-6. <span data-ttu-id="9fa94-138">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-138">Click Next.</span></span>
-7. <span data-ttu-id="9fa94-139">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-139">Click Next.</span></span>
-8. <span data-ttu-id="9fa94-140">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-140">Click Next.</span></span>
-9. <span data-ttu-id="9fa94-141">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-141">Click Next.</span></span>
-10. <span data-ttu-id="9fa94-142">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-142">Click Next.</span></span>
-11. <span data-ttu-id="9fa94-143">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-143">Click Next.</span></span>
-12. <span data-ttu-id="9fa94-144">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-144">Click Next.</span></span>
-    * <span data-ttu-id="9fa94-145">このページに表示される物理的な寸法は、この手順の開始時に指定したものであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="9fa94-145">Note that the physical dimensions shown on this page are the ones that you set at the start of this procedure.</span></span>  
-13. <span data-ttu-id="9fa94-146">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-146">Click Next.</span></span>
-14. <span data-ttu-id="9fa94-147">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9fa94-147">Click Finish.</span></span>
-15. <span data-ttu-id="9fa94-148">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9fa94-148">Close the page.</span></span>
-16. <span data-ttu-id="9fa94-149">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="9fa94-149">Refresh the page.</span></span>
+## <a name="define-warehouse-locations"></a><span data-ttu-id="937a5-132">倉庫の場所の定義</span><span class="sxs-lookup"><span data-stu-id="937a5-132">Define warehouse locations</span></span>
+1. <span data-ttu-id="937a5-133">アクション ペインで [倉庫] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-133">On the Action Pane, click Warehouse.</span></span>
+2. <span data-ttu-id="937a5-134">[場所ウィザード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-134">Click Location Wizard.</span></span>
+3. <span data-ttu-id="937a5-135">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-135">Click Next.</span></span>
+4. <span data-ttu-id="937a5-136">[出荷ドック] オプションを選択解除します。</span><span class="sxs-lookup"><span data-stu-id="937a5-136">De-select the Outbound docks option</span></span>
+5. <span data-ttu-id="937a5-137">[バルク場所] オプションを選択解除します。</span><span class="sxs-lookup"><span data-stu-id="937a5-137">De-select the Bulk locations option</span></span>
+6. <span data-ttu-id="937a5-138">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-138">Click Next.</span></span>
+7. <span data-ttu-id="937a5-139">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-139">Click Next.</span></span>
+8. <span data-ttu-id="937a5-140">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-140">Click Next.</span></span>
+9. <span data-ttu-id="937a5-141">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-141">Click Next.</span></span>
+10. <span data-ttu-id="937a5-142">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-142">Click Next.</span></span>
+11. <span data-ttu-id="937a5-143">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-143">Click Next.</span></span>
+12. <span data-ttu-id="937a5-144">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-144">Click Next.</span></span>
+    * <span data-ttu-id="937a5-145">このページに表示される物理的な寸法は、この手順の開始時に指定したものであることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="937a5-145">Note that the physical dimensions shown on this page are the ones that you set at the start of this procedure.</span></span>  
+13. <span data-ttu-id="937a5-146">[次へ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-146">Click Next.</span></span>
+14. <span data-ttu-id="937a5-147">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="937a5-147">Click Finish.</span></span>
+15. <span data-ttu-id="937a5-148">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="937a5-148">Close the page.</span></span>
+16. <span data-ttu-id="937a5-149">ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="937a5-149">Refresh the page.</span></span>
 

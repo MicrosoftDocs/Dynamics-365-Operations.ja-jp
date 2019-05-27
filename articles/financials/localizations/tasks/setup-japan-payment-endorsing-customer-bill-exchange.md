@@ -17,39 +17,39 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f509cada0dc12c0a2da00b85f560fc48e0be6d9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559352"
 ---
-# <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a><span data-ttu-id="b62ca-103">顧客の為替手形の裏書きによって日本の支払を設定します</span><span class="sxs-lookup"><span data-stu-id="b62ca-103">Setup Japan payment by endorsing a customer bill of exchange</span></span>
+# <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a><span data-ttu-id="b5120-103">顧客の為替手形の裏書きによって日本の支払を設定します</span><span class="sxs-lookup"><span data-stu-id="b5120-103">Setup Japan payment by endorsing a customer bill of exchange</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b62ca-104">このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-104">This task walks you through setting up payments by endorsing a customer bills of exchange for Japan.</span></span>
+<span data-ttu-id="b5120-104">このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="b5120-104">This task walks you through setting up payments by endorsing a customer bills of exchange for Japan.</span></span>
 
 
 
-<span data-ttu-id="b62ca-105">このタスクは デモ データ会社 JPMF を使用してレコードされました。</span><span class="sxs-lookup"><span data-stu-id="b62ca-105">This task was recorded using the demo data company JPMF.</span></span>
+<span data-ttu-id="b5120-105">このタスクは デモ データ会社 JPMF を使用してレコードされました。</span><span class="sxs-lookup"><span data-stu-id="b5120-105">This task was recorded using the demo data company JPMF.</span></span>
 
 
-## <a name="set-up-a-posting-profile-for-endorsing-bills-of-exchange"></a><span data-ttu-id="b62ca-106">為替手形の転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="b62ca-106">Set up a posting profile for endorsing bills of exchange</span></span>
-1. <span data-ttu-id="b62ca-107">[売掛金勘定] > [設定] > [顧客転記プロファイル] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-107">Go to Accounts receivable > Setup > Customer posting profiles.</span></span>
-2. <span data-ttu-id="b62ca-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b62ca-108">Click New.</span></span>
-3. <span data-ttu-id="b62ca-109">[転記プロファイル] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-109">In the Posting profile field, type a value.</span></span>
-    * <span data-ttu-id="b62ca-110">例: 「新しい BoE」と入力します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-110">For example:  enter 'New BoE'.</span></span>  
-4. <span data-ttu-id="b62ca-111">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b62ca-111">Click Add.</span></span>
-5. <span data-ttu-id="b62ca-112">[会計コード] フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-112">In the Account code field, select an option.</span></span>
-    * <span data-ttu-id="b62ca-113">例えば、「すべて」を選択します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-113">For example, select "All".</span></span>  
-6. <span data-ttu-id="b62ca-114">[裏書勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-114">In the Endorse account field, specify the desired values.</span></span>
-7. <span data-ttu-id="b62ca-115">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b62ca-115">Click Save.</span></span>
+## <a name="set-up-a-posting-profile-for-endorsing-bills-of-exchange"></a><span data-ttu-id="b5120-106">為替手形の転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="b5120-106">Set up a posting profile for endorsing bills of exchange</span></span>
+1. <span data-ttu-id="b5120-107">[売掛金勘定] > [設定] > [顧客転記プロファイル] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5120-107">Go to Accounts receivable > Setup > Customer posting profiles.</span></span>
+2. <span data-ttu-id="b5120-108">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5120-108">Click New.</span></span>
+3. <span data-ttu-id="b5120-109">[転記プロファイル] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b5120-109">In the Posting profile field, type a value.</span></span>
+    * <span data-ttu-id="b5120-110">例: 「新しい BoE」と入力します。</span><span class="sxs-lookup"><span data-stu-id="b5120-110">For example:  enter 'New BoE'.</span></span>  
+4. <span data-ttu-id="b5120-111">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5120-111">Click Add.</span></span>
+5. <span data-ttu-id="b5120-112">[会計コード] フィールドでオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b5120-112">In the Account code field, select an option.</span></span>
+    * <span data-ttu-id="b5120-113">例えば、「すべて」を選択します。</span><span class="sxs-lookup"><span data-stu-id="b5120-113">For example, select "All".</span></span>  
+6. <span data-ttu-id="b5120-114">[裏書勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="b5120-114">In the Endorse account field, specify the desired values.</span></span>
+7. <span data-ttu-id="b5120-115">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5120-115">Click Save.</span></span>
 
-## <a name="set-up-bills-of-exchange-information-in-accounts-receivable-parameters"></a><span data-ttu-id="b62ca-116">売掛金勘定パラメータでの為替手形情報の設定</span><span class="sxs-lookup"><span data-stu-id="b62ca-116">Set up bills of exchange information in accounts receivable parameters</span></span>
-1. <span data-ttu-id="b62ca-117">[売掛金勘定] > [設定] > [売掛金勘定パラメーター] に移動します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-117">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
-2. <span data-ttu-id="b62ca-118">[元帳と売上税] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b62ca-118">Click the Ledger and sales tax tab.</span></span>
-3. <span data-ttu-id="b62ca-119">[為替手形] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b62ca-119">Expand the Bill of exchange section.</span></span>
-4. <span data-ttu-id="b62ca-120">[裏書為替手形] フィールドで、ドロップ ダウン ボタンをクリックしてルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="b62ca-120">In the Endorse Bill of Exchange field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="b62ca-121">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b62ca-121">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="b62ca-122">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b62ca-122">Click Save.</span></span>
+## <a name="set-up-bills-of-exchange-information-in-accounts-receivable-parameters"></a><span data-ttu-id="b5120-116">売掛金勘定パラメータでの為替手形情報の設定</span><span class="sxs-lookup"><span data-stu-id="b5120-116">Set up bills of exchange information in accounts receivable parameters</span></span>
+1. <span data-ttu-id="b5120-117">[売掛金勘定] > [設定] > [売掛金勘定パラメーター] に移動します。</span><span class="sxs-lookup"><span data-stu-id="b5120-117">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="b5120-118">[元帳と売上税] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5120-118">Click the Ledger and sales tax tab.</span></span>
+3. <span data-ttu-id="b5120-119">[為替手形] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="b5120-119">Expand the Bill of exchange section.</span></span>
+4. <span data-ttu-id="b5120-120">[裏書為替手形] フィールドで、ドロップ ダウン ボタンをクリックしてルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="b5120-120">In the Endorse Bill of Exchange field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="b5120-121">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5120-121">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="b5120-122">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b5120-122">Click Save.</span></span>
 

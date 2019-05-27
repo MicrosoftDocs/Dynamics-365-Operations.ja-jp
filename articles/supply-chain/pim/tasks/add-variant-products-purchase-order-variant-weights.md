@@ -16,34 +16,34 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 446260a09bd5177877637ac8a288ad584dfa2b2b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345493"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568699"
 ---
-# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="d1a88-103">バリアント重量を使用した発注書へのバリアント製品の追加</span><span class="sxs-lookup"><span data-stu-id="d1a88-103">Add variant products to purchase orders using variant weights</span></span>
+# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="a3e28-103">バリアント重量を使用した発注書へのバリアント製品の追加</span><span class="sxs-lookup"><span data-stu-id="a3e28-103">Add variant products to purchase orders using variant weights</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d1a88-104">この手順では、自動事前設定の購買注文明細行に製品のバリアントごとに異なる重量を使用するための手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="d1a88-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="d1a88-105">自分が購買する製品の数量を選択すると、製品バリアントの重量コンフィギュレーションに基づく推奨数量のすべての製品のバリアントに、購買注文明細行が作成されます。</span><span class="sxs-lookup"><span data-stu-id="d1a88-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="d1a88-106">この手順には、製品分析コードおよび製品バリアントの重量の値をコンフィギュレーションするステップは含まれません。</span><span class="sxs-lookup"><span data-stu-id="d1a88-106">This procedure doesn’t include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="d1a88-107">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="d1a88-107">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="a3e28-104">この手順では、自動事前設定の購買注文明細行に製品のバリアントごとに異なる重量を使用するための手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="a3e28-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="a3e28-105">自分が購買する製品の数量を選択すると、製品バリアントの重量コンフィギュレーションに基づく推奨数量のすべての製品のバリアントに、購買注文明細行が作成されます。</span><span class="sxs-lookup"><span data-stu-id="a3e28-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="a3e28-106">この手順には、製品分析コードおよび製品バリアントの重量の値をコンフィギュレーションするステップは含まれません。</span><span class="sxs-lookup"><span data-stu-id="a3e28-106">This procedure doesn’t include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="a3e28-107">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="a3e28-107">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="d1a88-108">[買掛金勘定] > [発注書] > [すべての発注書] に移動します。</span><span class="sxs-lookup"><span data-stu-id="d1a88-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="d1a88-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-109">Click New.</span></span>
-3. <span data-ttu-id="d1a88-110">[仕入先] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="d1a88-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="d1a88-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="d1a88-112">[一般] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="d1a88-112">Toggle the expansion of the General section.</span></span>
-6. <span data-ttu-id="d1a88-113">[サイト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="d1a88-113">In the Site field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="d1a88-114">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="d1a88-115">[倉庫] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="d1a88-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="d1a88-116">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="d1a88-116">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="d1a88-117">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-117">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="d1a88-118">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-118">Click OK.</span></span>
-12. <span data-ttu-id="d1a88-119">[明細行の詳細] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="d1a88-119">Toggle the expansion of the Line details section.</span></span>
-13. <span data-ttu-id="d1a88-120">[バリアント] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-120">Click the Variants tab.</span></span>
-14. <span data-ttu-id="d1a88-121">[行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-121">Click Add line.</span></span>
-15. <span data-ttu-id="d1a88-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-122">In the list, mark the selected row.</span></span>
-16. <span data-ttu-id="d1a88-123">[品目番号] フィールドで「0140」と入力します。</span><span class="sxs-lookup"><span data-stu-id="d1a88-123">In the Item number field, type '0140'.</span></span>
-17. <span data-ttu-id="d1a88-124">数量を '1000' に設定します。</span><span class="sxs-lookup"><span data-stu-id="d1a88-124">Set Quantity to '1000'.</span></span>
-18. <span data-ttu-id="d1a88-125">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1a88-125">Click Save.</span></span>
+1. <span data-ttu-id="a3e28-108">[買掛金勘定] > [発注書] > [すべての発注書] に移動します。</span><span class="sxs-lookup"><span data-stu-id="a3e28-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="a3e28-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-109">Click New.</span></span>
+3. <span data-ttu-id="a3e28-110">[仕入先] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="a3e28-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="a3e28-111">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="a3e28-112">[一般] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="a3e28-112">Toggle the expansion of the General section.</span></span>
+6. <span data-ttu-id="a3e28-113">[サイト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="a3e28-113">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="a3e28-114">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="a3e28-115">[倉庫] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="a3e28-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="a3e28-116">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="a3e28-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="a3e28-117">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="a3e28-118">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-118">Click OK.</span></span>
+12. <span data-ttu-id="a3e28-119">[明細行の詳細] セクションの展開を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="a3e28-119">Toggle the expansion of the Line details section.</span></span>
+13. <span data-ttu-id="a3e28-120">[バリアント] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-120">Click the Variants tab.</span></span>
+14. <span data-ttu-id="a3e28-121">[行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-121">Click Add line.</span></span>
+15. <span data-ttu-id="a3e28-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="a3e28-123">[品目番号] フィールドで「0140」と入力します。</span><span class="sxs-lookup"><span data-stu-id="a3e28-123">In the Item number field, type '0140'.</span></span>
+17. <span data-ttu-id="a3e28-124">数量を '1000' に設定します。</span><span class="sxs-lookup"><span data-stu-id="a3e28-124">Set Quantity to '1000'.</span></span>
+18. <span data-ttu-id="a3e28-125">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a3e28-125">Click Save.</span></span>
 

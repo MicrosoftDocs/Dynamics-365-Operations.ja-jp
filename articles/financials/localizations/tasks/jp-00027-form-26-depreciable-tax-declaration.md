@@ -17,87 +17,87 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: dde62161f1b7020d9ce21efce8df7d4784b04a3d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561000"
 ---
-# <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a><span data-ttu-id="af1f8-103">JP-00027 減価償却税申告のフォーム 26</span><span class="sxs-lookup"><span data-stu-id="af1f8-103">JP-00027 Form 26 for depreciable tax declaration</span></span>
+# <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a><span data-ttu-id="72cd9-103">JP-00027 減価償却税申告のフォーム 26</span><span class="sxs-lookup"><span data-stu-id="72cd9-103">JP-00027 Form 26 for depreciable tax declaration</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="af1f8-104">このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-104">This task walks you through assigning a registration number to a fixed asset and printing the form 26 report.</span></span>
+<span data-ttu-id="72cd9-104">このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-104">This task walks you through assigning a registration number to a fixed asset and printing the form 26 report.</span></span>
 
-<span data-ttu-id="af1f8-105">このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af1f8-105">In order to complete this task, the Fixed Assets configuration key must be selected.</span></span>
+<span data-ttu-id="72cd9-105">このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="72cd9-105">In order to complete this task, the Fixed Assets configuration key must be selected.</span></span>
 
-<span data-ttu-id="af1f8-106">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-106">This task uses the JPMF demo company data.</span></span> <span data-ttu-id="af1f8-107">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="af1f8-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="72cd9-106">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-106">This task uses the JPMF demo company data.</span></span> <span data-ttu-id="72cd9-107">この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="72cd9-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-registration-number"></a><span data-ttu-id="af1f8-108">登録番号の作成</span><span class="sxs-lookup"><span data-stu-id="af1f8-108">Create a registration number</span></span>
-1. <span data-ttu-id="af1f8-109">[組織管理] > [組織] > [法人] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-109">Go to Organization administration > Organizations > Legal entities.</span></span>
-2. <span data-ttu-id="af1f8-110">登録 ID をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-110">Click Registration IDs.</span></span>
-3. <span data-ttu-id="af1f8-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-111">Click New.</span></span>
-4. <span data-ttu-id="af1f8-112">[目的] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-112">In the Purpose field, enter or select a value.</span></span>
-    * <span data-ttu-id="af1f8-113">目的 = 固定資産</span><span class="sxs-lookup"><span data-stu-id="af1f8-113">Purpose = Fixed asset</span></span>  
-5. <span data-ttu-id="af1f8-114">[名前または説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-114">In the Name or description field, type a value.</span></span>
-6. <span data-ttu-id="af1f8-115">[住所] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-115">Expand the Address section.</span></span>
-7. <span data-ttu-id="af1f8-116">[国/地域] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-116">In the Country/region field, type a value.</span></span>
-8. <span data-ttu-id="af1f8-117">[都道府県] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-117">In the State field, enter or select a value.</span></span>
-9. <span data-ttu-id="af1f8-118">[市町村] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-118">In the City field, enter or select a value.</span></span>
-10. <span data-ttu-id="af1f8-119">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-119">Click Save.</span></span>
-11. <span data-ttu-id="af1f8-120">[登録 ID] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-120">Expand the Registration ID section.</span></span>
-12. <span data-ttu-id="af1f8-121">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-121">Click Add.</span></span>
-13. <span data-ttu-id="af1f8-122">[登録タイプ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-122">In the Registration type field, enter or select a value.</span></span>
-14. <span data-ttu-id="af1f8-123">[登録番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-123">In the Registration number field, type a value.</span></span>
-15. <span data-ttu-id="af1f8-124">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-124">Click the General tab.</span></span>
-16. <span data-ttu-id="af1f8-125">[有効開始] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-125">In the Effective field, enter a date.</span></span>
-17. <span data-ttu-id="af1f8-126">[減価償却方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-126">In the Depreciation method field, select an option.</span></span>
-18. <span data-ttu-id="af1f8-127">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-127">Click Save.</span></span>
+## <a name="create-a-registration-number"></a><span data-ttu-id="72cd9-108">登録番号の作成</span><span class="sxs-lookup"><span data-stu-id="72cd9-108">Create a registration number</span></span>
+1. <span data-ttu-id="72cd9-109">[組織管理] > [組織] > [法人] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-109">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="72cd9-110">登録 ID をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-110">Click Registration IDs.</span></span>
+3. <span data-ttu-id="72cd9-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-111">Click New.</span></span>
+4. <span data-ttu-id="72cd9-112">[目的] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-112">In the Purpose field, enter or select a value.</span></span>
+    * <span data-ttu-id="72cd9-113">目的 = 固定資産</span><span class="sxs-lookup"><span data-stu-id="72cd9-113">Purpose = Fixed asset</span></span>  
+5. <span data-ttu-id="72cd9-114">[名前または説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-114">In the Name or description field, type a value.</span></span>
+6. <span data-ttu-id="72cd9-115">[住所] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-115">Expand the Address section.</span></span>
+7. <span data-ttu-id="72cd9-116">[国/地域] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-116">In the Country/region field, type a value.</span></span>
+8. <span data-ttu-id="72cd9-117">[都道府県] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-117">In the State field, enter or select a value.</span></span>
+9. <span data-ttu-id="72cd9-118">[市町村] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-118">In the City field, enter or select a value.</span></span>
+10. <span data-ttu-id="72cd9-119">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-119">Click Save.</span></span>
+11. <span data-ttu-id="72cd9-120">[登録 ID] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-120">Expand the Registration ID section.</span></span>
+12. <span data-ttu-id="72cd9-121">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-121">Click Add.</span></span>
+13. <span data-ttu-id="72cd9-122">[登録タイプ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-122">In the Registration type field, enter or select a value.</span></span>
+14. <span data-ttu-id="72cd9-123">[登録番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-123">In the Registration number field, type a value.</span></span>
+15. <span data-ttu-id="72cd9-124">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-124">Click the General tab.</span></span>
+16. <span data-ttu-id="72cd9-125">[有効開始] フィールドで、日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-125">In the Effective field, enter a date.</span></span>
+17. <span data-ttu-id="72cd9-126">[減価償却方法] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-126">In the Depreciation method field, select an option.</span></span>
+18. <span data-ttu-id="72cd9-127">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-127">Click Save.</span></span>
 
-## <a name="create-a-fixed-asset-location-and-assign-registration-number"></a><span data-ttu-id="af1f8-128">固定資産の場所の作成および登録番号の割り当て</span><span class="sxs-lookup"><span data-stu-id="af1f8-128">Create a fixed asset location and assign registration number</span></span>
-1. <span data-ttu-id="af1f8-129">[固定資産] > [設定] > [固定資産の属性] > [固定資産の場所] に移動します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-129">Go to Fixed assets > Setup > Fixed asset attributes > Fixed assets locations.</span></span>
-2. <span data-ttu-id="af1f8-130">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-130">Click New.</span></span>
-3. <span data-ttu-id="af1f8-131">[場所] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-131">In the Location field, type a value.</span></span>
-4. <span data-ttu-id="af1f8-132">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-132">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="af1f8-133">[住所] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-133">Expand the Address section.</span></span>
-6. <span data-ttu-id="af1f8-134">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-134">Click New.</span></span>
-7. <span data-ttu-id="af1f8-135">[名前または説明] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-135">In the Name or description field, enter or select a value.</span></span>
-8. <span data-ttu-id="af1f8-136">[登録番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-136">In the Registration number field, enter or select a value.</span></span>
-9. <span data-ttu-id="af1f8-137">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-137">Click OK.</span></span>
-10. <span data-ttu-id="af1f8-138">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-138">Click Save.</span></span>
+## <a name="create-a-fixed-asset-location-and-assign-registration-number"></a><span data-ttu-id="72cd9-128">固定資産の場所の作成および登録番号の割り当て</span><span class="sxs-lookup"><span data-stu-id="72cd9-128">Create a fixed asset location and assign registration number</span></span>
+1. <span data-ttu-id="72cd9-129">[固定資産] > [設定] > [固定資産の属性] > [固定資産の場所] に移動します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-129">Go to Fixed assets > Setup > Fixed asset attributes > Fixed assets locations.</span></span>
+2. <span data-ttu-id="72cd9-130">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-130">Click New.</span></span>
+3. <span data-ttu-id="72cd9-131">[場所] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-131">In the Location field, type a value.</span></span>
+4. <span data-ttu-id="72cd9-132">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-132">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="72cd9-133">[住所] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-133">Expand the Address section.</span></span>
+6. <span data-ttu-id="72cd9-134">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-134">Click New.</span></span>
+7. <span data-ttu-id="72cd9-135">[名前または説明] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-135">In the Name or description field, enter or select a value.</span></span>
+8. <span data-ttu-id="72cd9-136">[登録番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-136">In the Registration number field, enter or select a value.</span></span>
+9. <span data-ttu-id="72cd9-137">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-137">Click OK.</span></span>
+10. <span data-ttu-id="72cd9-138">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-138">Click Save.</span></span>
 
-## <a name="define-location-to-the-fixed-asset-group"></a><span data-ttu-id="af1f8-139">固定資産グループへの場所の定義</span><span class="sxs-lookup"><span data-stu-id="af1f8-139">Define location to the Fixed asset group</span></span>
-1. <span data-ttu-id="af1f8-140">[固定資産] > [設定] > [固定資産グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-140">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
-2. <span data-ttu-id="af1f8-141">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-141">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="af1f8-142">たとえば、[VEHI-A] を選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-142">For example, select VEHI-A.</span></span>  
-3. <span data-ttu-id="af1f8-143">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-143">Click Edit.</span></span>
-4. <span data-ttu-id="af1f8-144">[場所] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-144">In the Location field, enter or select a value.</span></span>
-5. <span data-ttu-id="af1f8-145">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-145">Click Save.</span></span>
+## <a name="define-location-to-the-fixed-asset-group"></a><span data-ttu-id="72cd9-139">固定資産グループへの場所の定義</span><span class="sxs-lookup"><span data-stu-id="72cd9-139">Define location to the Fixed asset group</span></span>
+1. <span data-ttu-id="72cd9-140">[固定資産] > [設定] > [固定資産グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-140">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="72cd9-141">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-141">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="72cd9-142">たとえば、[VEHI-A] を選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-142">For example, select VEHI-A.</span></span>  
+3. <span data-ttu-id="72cd9-143">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-143">Click Edit.</span></span>
+4. <span data-ttu-id="72cd9-144">[場所] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-144">In the Location field, enter or select a value.</span></span>
+5. <span data-ttu-id="72cd9-145">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-145">Click Save.</span></span>
 
-## <a name="create-a-fixed-asset"></a><span data-ttu-id="af1f8-146">固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="af1f8-146">Create a fixed asset</span></span>
-1. <span data-ttu-id="af1f8-147">[固定資産] > [固定資産] > [固定資産] に移動します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-147">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="af1f8-148">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-148">Click New.</span></span>
-3. <span data-ttu-id="af1f8-149">[固定資産グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-149">In the Fixed asset group field, enter or select a value.</span></span>
-4. <span data-ttu-id="af1f8-150">[場所] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-150">Expand the Location section.</span></span>
-    * <span data-ttu-id="af1f8-151">固定資産の場所の既定値の検証</span><span class="sxs-lookup"><span data-stu-id="af1f8-151">Validate Location defaults for the fixed asset</span></span>  
+## <a name="create-a-fixed-asset"></a><span data-ttu-id="72cd9-146">固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="72cd9-146">Create a fixed asset</span></span>
+1. <span data-ttu-id="72cd9-147">[固定資産] > [固定資産] > [固定資産] に移動します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-147">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="72cd9-148">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-148">Click New.</span></span>
+3. <span data-ttu-id="72cd9-149">[固定資産グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-149">In the Fixed asset group field, enter or select a value.</span></span>
+4. <span data-ttu-id="72cd9-150">[場所] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-150">Expand the Location section.</span></span>
+    * <span data-ttu-id="72cd9-151">固定資産の場所の既定値の検証</span><span class="sxs-lookup"><span data-stu-id="72cd9-151">Validate Location defaults for the fixed asset</span></span>  
 
-## <a name="create-an-acquisition"></a><span data-ttu-id="af1f8-152">取得の作成</span><span class="sxs-lookup"><span data-stu-id="af1f8-152">Create an acquisition</span></span>
-1. <span data-ttu-id="af1f8-153">[固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-153">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
-2. <span data-ttu-id="af1f8-154">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-154">Click New.</span></span>
-3. <span data-ttu-id="af1f8-155">[名前] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-155">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="af1f8-156">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-156">Click Save.</span></span>
-5. <span data-ttu-id="af1f8-157">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-157">Click Lines.</span></span>
-6. <span data-ttu-id="af1f8-158">[日付] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-158">In the Date field, enter a date.</span></span>
-7. <span data-ttu-id="af1f8-159">[勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-159">In the Account field, specify the desired values.</span></span>
-8. <span data-ttu-id="af1f8-160">[借方] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-160">In the Debit field, enter a number.</span></span>
-9. <span data-ttu-id="af1f8-161">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="af1f8-161">Click Post.</span></span>
+## <a name="create-an-acquisition"></a><span data-ttu-id="72cd9-152">取得の作成</span><span class="sxs-lookup"><span data-stu-id="72cd9-152">Create an acquisition</span></span>
+1. <span data-ttu-id="72cd9-153">[固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-153">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="72cd9-154">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-154">Click New.</span></span>
+3. <span data-ttu-id="72cd9-155">[名前] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-155">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="72cd9-156">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-156">Click Save.</span></span>
+5. <span data-ttu-id="72cd9-157">[明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-157">Click Lines.</span></span>
+6. <span data-ttu-id="72cd9-158">[日付] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-158">In the Date field, enter a date.</span></span>
+7. <span data-ttu-id="72cd9-159">[勘定] フィールドで、任意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-159">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="72cd9-160">[借方] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-160">In the Debit field, enter a number.</span></span>
+9. <span data-ttu-id="72cd9-161">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72cd9-161">Click Post.</span></span>
 
-## <a name="verify-the-form-26-report"></a><span data-ttu-id="af1f8-162">申告 26 レポートの確認</span><span class="sxs-lookup"><span data-stu-id="af1f8-162">Verify the Form 26 report</span></span>
-1. <span data-ttu-id="af1f8-163">[固定資産] > [照会およびレポート] > [減価償却資産申告レポート] > [申告 26: 償却資産税の元帳レポート] と移動します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-163">Go to Fixed assets > Inquiries and reports > Depreciable asset declaration reports > Form 26: Depreciable assets taxation ledger report.</span></span>
-2. <span data-ttu-id="af1f8-164">[暦年] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-164">In the Calendar year field, enter or select a value.</span></span>
-3. <span data-ttu-id="af1f8-165">[事業所用家屋資産番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-165">In the Office building asset number field, enter or select a value.</span></span>
-4. <span data-ttu-id="af1f8-166">[登録番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-166">In the Registration number field, enter or select a value.</span></span>
-    * <span data-ttu-id="af1f8-167">必要な場所でレポートを表示/保存します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-167">Open/save the report in the required location.</span></span>  <span data-ttu-id="af1f8-168">印刷レポートの検証、固定資産を登録番号ごとに分類してグループ化します。</span><span class="sxs-lookup"><span data-stu-id="af1f8-168">Validate the printed report,  the Fixed assets been sorted and grouped by registration number</span></span>  
-    * <span data-ttu-id="af1f8-169">同様の固定資産の分類 n グループが、申告 26-1 n 申告 26-2 レポートに提示されます</span><span class="sxs-lookup"><span data-stu-id="af1f8-169">Similar sorting n grouping of fixed asset is provided for the Form 26-1 n Form 26-2 reports</span></span>  
+## <a name="verify-the-form-26-report"></a><span data-ttu-id="72cd9-162">申告 26 レポートの確認</span><span class="sxs-lookup"><span data-stu-id="72cd9-162">Verify the Form 26 report</span></span>
+1. <span data-ttu-id="72cd9-163">[固定資産] > [照会およびレポート] > [減価償却資産申告レポート] > [申告 26: 償却資産税の元帳レポート] と移動します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-163">Go to Fixed assets > Inquiries and reports > Depreciable asset declaration reports > Form 26: Depreciable assets taxation ledger report.</span></span>
+2. <span data-ttu-id="72cd9-164">[暦年] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-164">In the Calendar year field, enter or select a value.</span></span>
+3. <span data-ttu-id="72cd9-165">[事業所用家屋資産番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-165">In the Office building asset number field, enter or select a value.</span></span>
+4. <span data-ttu-id="72cd9-166">[登録番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-166">In the Registration number field, enter or select a value.</span></span>
+    * <span data-ttu-id="72cd9-167">必要な場所でレポートを表示/保存します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-167">Open/save the report in the required location.</span></span>  <span data-ttu-id="72cd9-168">印刷レポートの検証、固定資産を登録番号ごとに分類してグループ化します。</span><span class="sxs-lookup"><span data-stu-id="72cd9-168">Validate the printed report,  the Fixed assets been sorted and grouped by registration number</span></span>  
+    * <span data-ttu-id="72cd9-169">同様の固定資産の分類 n グループが、申告 26-1 n 申告 26-2 レポートに提示されます</span><span class="sxs-lookup"><span data-stu-id="72cd9-169">Similar sorting n grouping of fixed asset is provided for the Form 26-1 n Form 26-2 reports</span></span>  
 

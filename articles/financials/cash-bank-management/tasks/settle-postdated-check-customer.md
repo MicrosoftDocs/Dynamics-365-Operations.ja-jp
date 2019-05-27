@@ -17,42 +17,42 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 86cefaac99a1ce5aa777f4f62456c3248045cc27
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565998"
 ---
-# <a name="settle-a-postdated-check-from-a-customer"></a><span data-ttu-id="636dd-103">顧客からの先日付小切手の決済</span><span class="sxs-lookup"><span data-stu-id="636dd-103">Settle a postdated check from a customer</span></span>
+# <a name="settle-a-postdated-check-from-a-customer"></a><span data-ttu-id="76416-103">顧客からの先日付小切手の決済</span><span class="sxs-lookup"><span data-stu-id="76416-103">Settle a postdated check from a customer</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="636dd-104">先日付小切手は、銀行で精算された後に決済できます。</span><span class="sxs-lookup"><span data-stu-id="636dd-104">You can settle a postdated check after the check has been cleared by the bank.</span></span> <span data-ttu-id="636dd-105">この財務トランザクションによって、先日付小切手のつなぎ勘定トランザクションも精算されます。</span><span class="sxs-lookup"><span data-stu-id="636dd-105">This financial transaction also clears the bridge account transaction for the postdated check.</span></span> 
+<span data-ttu-id="76416-104">先日付小切手は、銀行で精算された後に決済できます。</span><span class="sxs-lookup"><span data-stu-id="76416-104">You can settle a postdated check after the check has been cleared by the bank.</span></span> <span data-ttu-id="76416-105">この財務トランザクションによって、先日付小切手のつなぎ勘定トランザクションも精算されます。</span><span class="sxs-lookup"><span data-stu-id="76416-105">This financial transaction also clears the bridge account transaction for the postdated check.</span></span> 
 
-<span data-ttu-id="636dd-106">こちらを始める前に、次のタスクを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="636dd-106">The following tasks must be complete before you start this one.</span></span>
+<span data-ttu-id="76416-106">こちらを始める前に、次のタスクを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76416-106">The following tasks must be complete before you start this one.</span></span>
 
-1) <span data-ttu-id="636dd-107">先日付小切手の設定</span><span class="sxs-lookup"><span data-stu-id="636dd-107">Set up postdated checks</span></span>
+1) <span data-ttu-id="76416-107">先日付小切手の設定</span><span class="sxs-lookup"><span data-stu-id="76416-107">Set up postdated checks</span></span>
 
-2) <span data-ttu-id="636dd-108">顧客の先日付小切手の登録および転記</span><span class="sxs-lookup"><span data-stu-id="636dd-108">Register and post a postdated check for a customer</span></span> 
-
-
-
-<span data-ttu-id="636dd-109">このタスク ガイドのロールは会計登録者です。</span><span class="sxs-lookup"><span data-stu-id="636dd-109">The role of this task guides is Treasurer.</span></span>
+2) <span data-ttu-id="76416-108">顧客の先日付小切手の登録および転記</span><span class="sxs-lookup"><span data-stu-id="76416-108">Register and post a postdated check for a customer</span></span> 
 
 
 
-<span data-ttu-id="636dd-110">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="636dd-110">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="76416-109">このタスク ガイドのロールは会計登録者です。</span><span class="sxs-lookup"><span data-stu-id="76416-109">The role of this task guides is Treasurer.</span></span>
 
-1. <span data-ttu-id="636dd-111">[貸方転記および取立] > [照会およびレポート] > [支払] > [顧客の先日付小切手] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="636dd-111">Go to Credit and collections > Inquiries and reports > Payments > Customer postdated checks.</span></span>
-2. <span data-ttu-id="636dd-112">[決済] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="636dd-112">Click Settle.</span></span>
-3. <span data-ttu-id="636dd-113">[清算項目の決済] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="636dd-113">Click Settle clearing entries.</span></span>
-    * <span data-ttu-id="636dd-114">小切手トランザクションの顧客 ID を決済します。</span><span class="sxs-lookup"><span data-stu-id="636dd-114">Settle the customer account for the check transaction.</span></span>  
-4. <span data-ttu-id="636dd-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="636dd-115">Close the page.</span></span>
-5. <span data-ttu-id="636dd-116">[総勘定元帳] > [総勘定元帳] > [仕訳入力] > [一般仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="636dd-116">Go to General ledger > Journal entries > General journals.</span></span>
-6. <span data-ttu-id="636dd-117">[表示] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="636dd-117">In the Show field, select an option.</span></span>
-7. <span data-ttu-id="636dd-118">[作成ユーザーのみ表示] チェック ボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="636dd-118">Select or clear the Show user-created only check box.</span></span>
-8. <span data-ttu-id="636dd-119">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="636dd-119">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="636dd-120">[行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="636dd-120">Click Lines.</span></span>
-10. <span data-ttu-id="636dd-121">[伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="636dd-121">Click Voucher.</span></span>
-11. <span data-ttu-id="636dd-122">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="636dd-122">Close the page.</span></span>
+
+
+<span data-ttu-id="76416-110">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="76416-110">This procedure uses the USMF demo company.</span></span>
+
+1. <span data-ttu-id="76416-111">[貸方転記および取立] > [照会およびレポート] > [支払] > [顧客の先日付小切手] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="76416-111">Go to Credit and collections > Inquiries and reports > Payments > Customer postdated checks.</span></span>
+2. <span data-ttu-id="76416-112">[決済] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76416-112">Click Settle.</span></span>
+3. <span data-ttu-id="76416-113">[清算項目の決済] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76416-113">Click Settle clearing entries.</span></span>
+    * <span data-ttu-id="76416-114">小切手トランザクションの顧客 ID を決済します。</span><span class="sxs-lookup"><span data-stu-id="76416-114">Settle the customer account for the check transaction.</span></span>  
+4. <span data-ttu-id="76416-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="76416-115">Close the page.</span></span>
+5. <span data-ttu-id="76416-116">[総勘定元帳] > [総勘定元帳] > [仕訳入力] > [一般仕訳帳] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="76416-116">Go to General ledger > Journal entries > General journals.</span></span>
+6. <span data-ttu-id="76416-117">[表示] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="76416-117">In the Show field, select an option.</span></span>
+7. <span data-ttu-id="76416-118">[作成ユーザーのみ表示] チェック ボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="76416-118">Select or clear the Show user-created only check box.</span></span>
+8. <span data-ttu-id="76416-119">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="76416-119">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="76416-120">[行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76416-120">Click Lines.</span></span>
+10. <span data-ttu-id="76416-121">[伝票] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="76416-121">Click Voucher.</span></span>
+11. <span data-ttu-id="76416-122">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="76416-122">Close the page.</span></span>
 

@@ -19,40 +19,40 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 70aafb752b2c847d5d48236fd5d201a73e088c24
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556786"
 ---
-# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="e7e7f-103">返品品目を検査に渡す</span><span class="sxs-lookup"><span data-stu-id="e7e7f-103">Pass returned items on to inspection</span></span> 
+# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="8836f-103">返品品目を検査に渡す</span><span class="sxs-lookup"><span data-stu-id="8836f-103">Pass returned items on to inspection</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="e7e7f-104">返品品目を登録する場合、品目を在庫に戻すか、なんらかの手段で処分する前に、品目を検査に送ることがあります。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
+<span data-ttu-id="8836f-104">返品品目を登録する場合、品目を在庫に戻すか、なんらかの手段で処分する前に、品目を検査に送ることがあります。</span><span class="sxs-lookup"><span data-stu-id="8836f-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
 
-1.  <span data-ttu-id="e7e7f-105">**在庫管理** \> **仕訳帳** \> **品目到着** \> **品目到着**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
+1.  <span data-ttu-id="8836f-105">**在庫管理** \> **仕訳帳** \> **品目到着** \> **品目到着**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="8836f-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
     
-    <span data-ttu-id="e7e7f-106">\-または-</span><span class="sxs-lookup"><span data-stu-id="e7e7f-106">\-or-</span></span>
+    <span data-ttu-id="8836f-106">\-または-</span><span class="sxs-lookup"><span data-stu-id="8836f-106">\-or-</span></span>
     
-    <span data-ttu-id="e7e7f-107">**在庫管理** \> **仕訳帳** \> **品目到着** \> **生産入力**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
+    <span data-ttu-id="8836f-107">**在庫管理** \> **仕訳帳** \> **品目到着** \> **生産入力**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="8836f-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
 
-2.  <span data-ttu-id="e7e7f-108">通常どおり、**在庫場所仕訳帳**フォームで、品目の受入を登録してください。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
+2.  <span data-ttu-id="8836f-108">通常どおり、**在庫場所仕訳帳**フォームで、品目の受入を登録してください。</span><span class="sxs-lookup"><span data-stu-id="8836f-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="e7e7f-109">返品品目の受入登録の詳細については、<A href="register-the-receipt-of-returned-items.md">返品品目の受取の登録</A>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
+    > <P><span data-ttu-id="8836f-109">返品品目の受入登録の詳細については、<A href="register-the-receipt-of-returned-items.md">返品品目の受取の登録</A>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8836f-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
 
 
 
-3.  <span data-ttu-id="e7e7f-110">**既定値**タブの、**取扱方法**領域で、**検査管理**ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
+3.  <span data-ttu-id="8836f-110">**既定値**タブの、**取扱方法**領域で、**検査管理**ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="8836f-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
 
-<span data-ttu-id="e7e7f-111">システムから検査指示が作成され、検査の担当者または担当部署が**検査指示**フォームを使ってこの指示に対応します。</span><span class="sxs-lookup"><span data-stu-id="e7e7f-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
+<span data-ttu-id="8836f-111">システムから検査指示が作成され、検査の担当者または担当部署が**検査指示**フォームを使ってこの指示に対応します。</span><span class="sxs-lookup"><span data-stu-id="8836f-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e7e7f-112">参照</span><span class="sxs-lookup"><span data-stu-id="e7e7f-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8836f-112">参照</span><span class="sxs-lookup"><span data-stu-id="8836f-112">See also</span></span>
 
-[<span data-ttu-id="e7e7f-113">検査による返却品目の受入</span><span class="sxs-lookup"><span data-stu-id="e7e7f-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="8836f-113">検査による返却品目の受入</span><span class="sxs-lookup"><span data-stu-id="8836f-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
-[<span data-ttu-id="e7e7f-114">返品品目の廃棄方法の指定</span><span class="sxs-lookup"><span data-stu-id="e7e7f-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
+[<span data-ttu-id="8836f-114">返品品目の廃棄方法の指定</span><span class="sxs-lookup"><span data-stu-id="8836f-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
 

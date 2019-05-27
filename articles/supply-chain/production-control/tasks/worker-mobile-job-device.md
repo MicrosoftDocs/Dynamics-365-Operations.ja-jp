@@ -18,55 +18,55 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1bb4d806810660e55ef13a9ff21c07e0ce194496
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327392"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571361"
 ---
-# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="a4f04-103">モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a4f04-103">Configure a worker using the mobile job device</span></span>
+# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="7a66f-103">モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="7a66f-103">Configure a worker using the mobile job device</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a4f04-104">この手順では、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行うことをできるようになります。</span><span class="sxs-lookup"><span data-stu-id="a4f04-104">This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
+<span data-ttu-id="7a66f-104">この手順では、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行うことをできるようになります。</span><span class="sxs-lookup"><span data-stu-id="7a66f-104">This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
 
 
-## <a name="assign-roles-to-user-account"></a><span data-ttu-id="a4f04-105">ユーザー アカウントへのロールの割り当て</span><span class="sxs-lookup"><span data-stu-id="a4f04-105">Assign roles to user account</span></span>
-1. <span data-ttu-id="a4f04-106">[システム管理] > [ユーザー] > [ユーザー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-106">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="a4f04-107">ユーザー アカウントが機械オペレータのロールに関連付けられる場合に、[クイック フィルター] を使用して、作業者の名前をフィルターします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-107">Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role.</span></span> <span data-ttu-id="a4f04-108">サンプル データでは、名前はシャノンです。</span><span class="sxs-lookup"><span data-stu-id="a4f04-108">In the sample data, the name would be Shannon.</span></span>
-3. <span data-ttu-id="a4f04-109">ユーザー アカウントのレコードを強調表示します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-109">Highlight the user account record.</span></span>
-4. <span data-ttu-id="a4f04-110">一覧から、選択した行で「名前」のリンクをクリックして、ユーザー アカウントの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-110">In the list, click the "Name" link in the selected row to view the details of the user account.</span></span>
-5. <span data-ttu-id="a4f04-111">ツリーで、「Roles\Machine operator」を選択します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-111">In the tree, select 'Roles\Machine operator'.</span></span>
-6. <span data-ttu-id="a4f04-112">ユーザー アカウントの詳細ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-112">Close the user account details page.</span></span>
-7. <span data-ttu-id="a4f04-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-113">Close the page.</span></span>
+## <a name="assign-roles-to-user-account"></a><span data-ttu-id="7a66f-105">ユーザー アカウントへのロールの割り当て</span><span class="sxs-lookup"><span data-stu-id="7a66f-105">Assign roles to user account</span></span>
+1. <span data-ttu-id="7a66f-106">[システム管理] > [ユーザー] > [ユーザー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-106">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="7a66f-107">ユーザー アカウントが機械オペレータのロールに関連付けられる場合に、[クイック フィルター] を使用して、作業者の名前をフィルターします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-107">Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role.</span></span> <span data-ttu-id="7a66f-108">サンプル データでは、名前はシャノンです。</span><span class="sxs-lookup"><span data-stu-id="7a66f-108">In the sample data, the name would be Shannon.</span></span>
+3. <span data-ttu-id="7a66f-109">ユーザー アカウントのレコードを強調表示します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-109">Highlight the user account record.</span></span>
+4. <span data-ttu-id="7a66f-110">一覧から、選択した行で「名前」のリンクをクリックして、ユーザー アカウントの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-110">In the list, click the "Name" link in the selected row to view the details of the user account.</span></span>
+5. <span data-ttu-id="7a66f-111">ツリーで、「Roles\Machine operator」を選択します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-111">In the tree, select 'Roles\Machine operator'.</span></span>
+6. <span data-ttu-id="7a66f-112">ユーザー アカウントの詳細ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-112">Close the user account details page.</span></span>
+7. <span data-ttu-id="7a66f-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-113">Close the page.</span></span>
 
-## <a name="configure-worker-account"></a><span data-ttu-id="a4f04-114">作業者のアカウントを構成します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-114">Configure worker account.</span></span>
-1. <span data-ttu-id="a4f04-115">[人事管理] > [作業者] > [作業者] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-115">Go to Human resources > Workers > Workers.</span></span>
-2. <span data-ttu-id="a4f04-116">ユーザー アカウントが機械オペレータのロールに関連付けられる場合に、[クイック フィルター] を使用して、作業者の名前をフィルターします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-116">Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role.</span></span> <span data-ttu-id="a4f04-117">サンプル データでは、名前はシャノンです。</span><span class="sxs-lookup"><span data-stu-id="a4f04-117">In the sample data, the name would be Shannon.</span></span>
-3. <span data-ttu-id="a4f04-118">ユーザー アカウントのレコードを強調表示します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-118">Highlight the user account record.</span></span>
-4. <span data-ttu-id="a4f04-119">一覧から、選択した行で「名前」のリンクをクリックして、ユーザー アカウントの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-119">In the list, click the "Name" link in the selected row to view the details of the user account.</span></span>
-5. <span data-ttu-id="a4f04-120">[雇用] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-120">Click the Employment tab.</span></span>
-6. <span data-ttu-id="a4f04-121">[時間登録のクイックタブ] を展開し、[登録ターミナルで有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-121">Expand the Time registration FastTab and click Activate on registration terminals.</span></span>
-7. <span data-ttu-id="a4f04-122">[登録ターミナルで有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-122">Click Activate on registration terminals.</span></span>
-8. <span data-ttu-id="a4f04-123">[計算グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-123">In the Calculation group field, enter or select a value.</span></span>
-9. <span data-ttu-id="a4f04-124">[既定の計算グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-124">In the Default calculation group field, enter or select a value.</span></span>
-10. <span data-ttu-id="a4f04-125">[承認グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-125">In the Approval group field, enter or select a value.</span></span>
-11. <span data-ttu-id="a4f04-126">[標準プロファイル] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-126">In the Standard profile field, enter or select a value.</span></span>
-12. <span data-ttu-id="a4f04-127">[プロファイル グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-127">In the Profile group field, enter or select a value.</span></span>
-13. <span data-ttu-id="a4f04-128">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-128">Click OK.</span></span>
-14. <span data-ttu-id="a4f04-129">[編集] をクリックして、新しい時間登録作業者のバッジ番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-129">Click Edit to enter a badge number for the new time registration worker.</span></span>
-15. <span data-ttu-id="a4f04-130">[バッジ ID] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-130">In the Badge ID field, type a value.</span></span>
-16. <span data-ttu-id="a4f04-131">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-131">Click Save.</span></span>
-17. <span data-ttu-id="a4f04-132">[ショートカットの記録保存] を使用します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-132">Use the SaveRecord shortcut.</span></span>
-18. <span data-ttu-id="a4f04-133">作業者の詳細ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-133">Close the worker details page.</span></span>
-19. <span data-ttu-id="a4f04-134">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-134">Close the page.</span></span>
+## <a name="configure-worker-account"></a><span data-ttu-id="7a66f-114">作業者のアカウントを構成します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-114">Configure worker account.</span></span>
+1. <span data-ttu-id="7a66f-115">[人事管理] > [作業者] > [作業者] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-115">Go to Human resources > Workers > Workers.</span></span>
+2. <span data-ttu-id="7a66f-116">ユーザー アカウントが機械オペレータのロールに関連付けられる場合に、[クイック フィルター] を使用して、作業者の名前をフィルターします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-116">Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role.</span></span> <span data-ttu-id="7a66f-117">サンプル データでは、名前はシャノンです。</span><span class="sxs-lookup"><span data-stu-id="7a66f-117">In the sample data, the name would be Shannon.</span></span>
+3. <span data-ttu-id="7a66f-118">ユーザー アカウントのレコードを強調表示します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-118">Highlight the user account record.</span></span>
+4. <span data-ttu-id="7a66f-119">一覧から、選択した行で「名前」のリンクをクリックして、ユーザー アカウントの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-119">In the list, click the "Name" link in the selected row to view the details of the user account.</span></span>
+5. <span data-ttu-id="7a66f-120">[雇用] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-120">Click the Employment tab.</span></span>
+6. <span data-ttu-id="7a66f-121">[時間登録のクイックタブ] を展開し、[登録ターミナルで有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-121">Expand the Time registration FastTab and click Activate on registration terminals.</span></span>
+7. <span data-ttu-id="7a66f-122">[登録ターミナルで有効化] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-122">Click Activate on registration terminals.</span></span>
+8. <span data-ttu-id="7a66f-123">[計算グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-123">In the Calculation group field, enter or select a value.</span></span>
+9. <span data-ttu-id="7a66f-124">[既定の計算グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-124">In the Default calculation group field, enter or select a value.</span></span>
+10. <span data-ttu-id="7a66f-125">[承認グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-125">In the Approval group field, enter or select a value.</span></span>
+11. <span data-ttu-id="7a66f-126">[標準プロファイル] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-126">In the Standard profile field, enter or select a value.</span></span>
+12. <span data-ttu-id="7a66f-127">[プロファイル グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-127">In the Profile group field, enter or select a value.</span></span>
+13. <span data-ttu-id="7a66f-128">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-128">Click OK.</span></span>
+14. <span data-ttu-id="7a66f-129">[編集] をクリックして、新しい時間登録作業者のバッジ番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-129">Click Edit to enter a badge number for the new time registration worker.</span></span>
+15. <span data-ttu-id="7a66f-130">[バッジ ID] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-130">In the Badge ID field, type a value.</span></span>
+16. <span data-ttu-id="7a66f-131">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-131">Click Save.</span></span>
+17. <span data-ttu-id="7a66f-132">[ショートカットの記録保存] を使用します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-132">Use the SaveRecord shortcut.</span></span>
+18. <span data-ttu-id="7a66f-133">作業者の詳細ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-133">Close the worker details page.</span></span>
+19. <span data-ttu-id="7a66f-134">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-134">Close the page.</span></span>
 
-## <a name="assign-worker-to-device-group"></a><span data-ttu-id="a4f04-135">デバイス グループに作業者を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-135">Assign worker to device group.</span></span>
-1. <span data-ttu-id="a4f04-136">[生産管理] > [設定] > [製造実行] > [デバイスのジョブ カードのコンフィギュレーション] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a4f04-136">Go to Production control > Setup > Manufacturing execution > Configure job card for devices.</span></span>
-2. <span data-ttu-id="a4f04-137">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-137">Click Add.</span></span>
-3. <span data-ttu-id="a4f04-138">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-138">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="a4f04-139">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-139">Click OK.</span></span>
-5. <span data-ttu-id="a4f04-140">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a4f04-140">Click Edit.</span></span>
-6. <span data-ttu-id="a4f04-141">[生産単位] フィールドで、作業者の既定のフィルターを設定できます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="a4f04-142">これにより作業者がデバイスにログオンするときに、選択した生産単位の生産ジョブのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
-7. <span data-ttu-id="a4f04-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="a4f04-143">Close the page.</span></span>
+## <a name="assign-worker-to-device-group"></a><span data-ttu-id="7a66f-135">デバイス グループに作業者を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-135">Assign worker to device group.</span></span>
+1. <span data-ttu-id="7a66f-136">[生産管理] > [設定] > [製造実行] > [デバイスのジョブ カードのコンフィギュレーション] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7a66f-136">Go to Production control > Setup > Manufacturing execution > Configure job card for devices.</span></span>
+2. <span data-ttu-id="7a66f-137">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-137">Click Add.</span></span>
+3. <span data-ttu-id="7a66f-138">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-138">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="7a66f-139">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-139">Click OK.</span></span>
+5. <span data-ttu-id="7a66f-140">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7a66f-140">Click Edit.</span></span>
+6. <span data-ttu-id="7a66f-141">[生産単位] フィールドで、作業者の既定のフィルターを設定できます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="7a66f-142">これにより作業者がデバイスにログオンするときに、選択した生産単位の生産ジョブのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
+7. <span data-ttu-id="7a66f-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7a66f-143">Close the page.</span></span>
 

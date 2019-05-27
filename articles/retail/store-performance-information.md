@@ -20,28 +20,28 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569266"
 ---
-# <a name="analyze-store-performance"></a><span data-ttu-id="d3763-103">店舗のパフォーマンスの分析</span><span class="sxs-lookup"><span data-stu-id="d3763-103">Analyze store performance</span></span>
+# <a name="analyze-store-performance"></a><span data-ttu-id="8d222-103">店舗のパフォーマンスの分析</span><span class="sxs-lookup"><span data-stu-id="8d222-103">Analyze store performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="d3763-104">この記事では、アクセスしたり、参照したり、Microsoft Dynamics 365 for Retail データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d3763-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span>
+<span data-ttu-id="8d222-104">この記事では、アクセスしたり、参照したり、Microsoft Dynamics 365 for Retail データに基づいて、店舗パフォーマンスについての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8d222-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span>
 
-<span data-ttu-id="d3763-105">Dynamics 365 for Retail の一部として、次の場所のいずれかから最初から用意されている**チャンネル概要**レポートを開くことにより、選択した期間における組織階層のさまざまなレベルでリアルタイムに店舗パフォーマンスを調査できます。</span><span class="sxs-lookup"><span data-stu-id="d3763-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
+<span data-ttu-id="8d222-105">Dynamics 365 for Retail の一部として、次の場所のいずれかから最初から用意されている**チャンネル概要**レポートを開くことにより、選択した期間における組織階層のさまざまなレベルでリアルタイムに店舗パフォーマンスを調査できます。</span><span class="sxs-lookup"><span data-stu-id="8d222-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
-- <span data-ttu-id="d3763-106">**小売店舗管理** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **チャンネルの集計レポート**</span><span class="sxs-lookup"><span data-stu-id="d3763-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="d3763-107">**小売店舗の財務** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗の財務** &gt; **レポート** &gt; **チャンネルの集計レポート**</span><span class="sxs-lookup"><span data-stu-id="d3763-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="d3763-108">**照会とレポート** セクション &gt; **小売** &gt; **照会とレポート** &gt; **売上レポート** &gt; **チャネル集計レポート**</span><span class="sxs-lookup"><span data-stu-id="d3763-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="8d222-106">**小売店舗管理** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗管理** &gt; **レポート** &gt; **チャンネルの集計レポート**</span><span class="sxs-lookup"><span data-stu-id="8d222-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="8d222-107">**小売店舗の財務** ワークスペース &gt; **小売** &gt; **チャンネル** &gt; **小売店舗の財務** &gt; **レポート** &gt; **チャンネルの集計レポート**</span><span class="sxs-lookup"><span data-stu-id="8d222-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="8d222-108">**照会とレポート** セクション &gt; **小売** &gt; **照会とレポート** &gt; **売上レポート** &gt; **チャネル集計レポート**</span><span class="sxs-lookup"><span data-stu-id="8d222-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-<span data-ttu-id="d3763-109">このレポートは、店舗パフォーマンスの一部として次のスナップショットの概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="d3763-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
+<span data-ttu-id="8d222-109">このレポートは、店舗パフォーマンスの一部として次のスナップショットの概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="8d222-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
-- <span data-ttu-id="d3763-110">総売上集計</span><span class="sxs-lookup"><span data-stu-id="d3763-110">Gross sales summary</span></span>
-- <span data-ttu-id="d3763-111">支払/入金タイプ集計</span><span class="sxs-lookup"><span data-stu-id="d3763-111">Tender type summary</span></span>
-- <span data-ttu-id="d3763-112">税集計</span><span class="sxs-lookup"><span data-stu-id="d3763-112">Tax summary</span></span>
-- <span data-ttu-id="d3763-113">価格変更の概要</span><span class="sxs-lookup"><span data-stu-id="d3763-113">Price overrides summary</span></span>
-- <span data-ttu-id="d3763-114">割引概要</span><span class="sxs-lookup"><span data-stu-id="d3763-114">Discounts summary</span></span>
+- <span data-ttu-id="8d222-110">総売上集計</span><span class="sxs-lookup"><span data-stu-id="8d222-110">Gross sales summary</span></span>
+- <span data-ttu-id="8d222-111">支払/入金タイプ集計</span><span class="sxs-lookup"><span data-stu-id="8d222-111">Tender type summary</span></span>
+- <span data-ttu-id="8d222-112">税集計</span><span class="sxs-lookup"><span data-stu-id="8d222-112">Tax summary</span></span>
+- <span data-ttu-id="8d222-113">価格変更の概要</span><span class="sxs-lookup"><span data-stu-id="8d222-113">Price overrides summary</span></span>
+- <span data-ttu-id="8d222-114">割引概要</span><span class="sxs-lookup"><span data-stu-id="8d222-114">Discounts summary</span></span>

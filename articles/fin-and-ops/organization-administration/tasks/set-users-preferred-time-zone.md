@@ -17,23 +17,23 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: b5eac00d5054296921c3f22004f8c8e710727afc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "309728"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560524"
 ---
-# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="583b6-103">ユーザーの優先タイム ゾーンの設定</span><span class="sxs-lookup"><span data-stu-id="583b6-103">Set a user's preferred time zone</span></span>
+# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="17b78-103">ユーザーの優先タイム ゾーンの設定</span><span class="sxs-lookup"><span data-stu-id="17b78-103">Set a user's preferred time zone</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="583b6-104">次の手順は、システム管理者ロールのユーザーがユーザーのタイム ゾーンを設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="583b6-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
+<span data-ttu-id="17b78-104">次の手順は、システム管理者ロールのユーザーがユーザーのタイム ゾーンを設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="17b78-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 
-1. <span data-ttu-id="583b6-105">[システム管理] > [ユーザー] > [ユーザー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="583b6-105">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="583b6-106">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="583b6-106">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="583b6-107">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="583b6-107">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="583b6-108">[ユーザー オプション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="583b6-108">Click User options.</span></span>
-5. <span data-ttu-id="583b6-109">[基本設定] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="583b6-109">Click the Preferences tab.</span></span>
-6. <span data-ttu-id="583b6-110">[タイム ゾーン] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="583b6-110">In the Time zone field, select an option.</span></span>
-7. <span data-ttu-id="583b6-111">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="583b6-111">Click Save.</span></span>
+1. <span data-ttu-id="17b78-105">[システム管理] > [ユーザー] > [ユーザー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="17b78-105">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="17b78-106">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="17b78-106">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="17b78-107">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="17b78-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="17b78-108">[ユーザー オプション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="17b78-108">Click User options.</span></span>
+5. <span data-ttu-id="17b78-109">[基本設定] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="17b78-109">Click the Preferences tab.</span></span>
+6. <span data-ttu-id="17b78-110">[タイム ゾーン] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="17b78-110">In the Time zone field, select an option.</span></span>
+7. <span data-ttu-id="17b78-111">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="17b78-111">Click Save.</span></span>
 

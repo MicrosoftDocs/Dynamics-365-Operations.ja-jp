@@ -18,77 +18,77 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6484c1954ff4cc600938adb07b5384f1edce8bf7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "343124"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545905"
 ---
-# <a name="batch-order-lifecycle-from-create-to-start"></a><span data-ttu-id="84c6b-103">作成から開始までのバッチ オーダーのライフサイクル</span><span class="sxs-lookup"><span data-stu-id="84c6b-103">Batch order lifecycle from create to start</span></span>
+# <a name="batch-order-lifecycle-from-create-to-start"></a><span data-ttu-id="7b168-103">作成から開始までのバッチ オーダーのライフサイクル</span><span class="sxs-lookup"><span data-stu-id="7b168-103">Batch order lifecycle from create to start</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="84c6b-104">この手順では、バッチ オーダーのライフ サイクルの最初の部分を説明します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-104">This procedure takes you through the first part of the life cycle of a batch order.</span></span>
+<span data-ttu-id="7b168-104">この手順では、バッチ オーダーのライフ サイクルの最初の部分を説明します。</span><span class="sxs-lookup"><span data-stu-id="7b168-104">This procedure takes you through the first part of the life cycle of a batch order.</span></span>
 
-<span data-ttu-id="84c6b-105">作成、原価見積、超過生産ジョブ スケジュールからバッチ オーダーの実際の開始までです。</span><span class="sxs-lookup"><span data-stu-id="84c6b-105">From creation, cost estimation, and over production job scheduling to the actual start of a batch order.</span></span>
-
-
-
-<span data-ttu-id="84c6b-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="84c6b-106">The demo data company used to create this procedure is USMF.</span></span> 
+<span data-ttu-id="7b168-105">作成、原価見積、超過生産ジョブ スケジュールからバッチ オーダーの実際の開始までです。</span><span class="sxs-lookup"><span data-stu-id="7b168-105">From creation, cost estimation, and over production job scheduling to the actual start of a batch order.</span></span>
 
 
 
-<span data-ttu-id="84c6b-107">別のデータセットの手順を実行する前提条件は、有効なフォーミュラおよび工順バージョンを含むリリース済製品です。</span><span class="sxs-lookup"><span data-stu-id="84c6b-107">The prerequisites for running the procedure with another dataset are a released product with an active formula and route version.</span></span>
+<span data-ttu-id="7b168-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="7b168-106">The demo data company used to create this procedure is USMF.</span></span> 
 
 
-## <a name="create-a-batch-order"></a><span data-ttu-id="84c6b-108">バッチ オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="84c6b-108">Create a batch order</span></span>
-1. <span data-ttu-id="84c6b-109">[すべての製造オーダー] に移動します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-109">Go to All production orders.</span></span>
-2. <span data-ttu-id="84c6b-110">[新しいバッチ オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-110">Click New batch order.</span></span>
-3. <span data-ttu-id="84c6b-111">[品目番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-111">In the Item number field, enter or select a value.</span></span>
-4. <span data-ttu-id="84c6b-112">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-112">Click Create.</span></span>
-5. <span data-ttu-id="84c6b-113">[クイック フィルター] を使用して、値が「b」である [生産] フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-113">Use the Quick Filter to filter on the Production field with a value of 'b'.</span></span>
 
-## <a name="view-production-formula-and-expected-co-products"></a><span data-ttu-id="84c6b-114">生産フォーミュラおよび予想される連産品の表示</span><span class="sxs-lookup"><span data-stu-id="84c6b-114">View production formula and expected co-products</span></span>
-1. <span data-ttu-id="84c6b-115">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-115">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="84c6b-116">[式] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-116">Click Formula.</span></span>
-3. <span data-ttu-id="84c6b-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-117">Close the page.</span></span>
-4. <span data-ttu-id="84c6b-118">[連産品 (複数)] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-118">Click Co-products.</span></span>
-5. <span data-ttu-id="84c6b-119">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-119">Close the page.</span></span>
+<span data-ttu-id="7b168-107">別のデータセットの手順を実行する前提条件は、有効なフォーミュラおよび工順バージョンを含むリリース済製品です。</span><span class="sxs-lookup"><span data-stu-id="7b168-107">The prerequisites for running the procedure with another dataset are a released product with an active formula and route version.</span></span>
 
-## <a name="estimate-the-batch-order"></a><span data-ttu-id="84c6b-120">バッチ オーダーの見積</span><span class="sxs-lookup"><span data-stu-id="84c6b-120">Estimate the batch order</span></span>
-1. <span data-ttu-id="84c6b-121">[見積] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-121">Click Estimate.</span></span>
-2. <span data-ttu-id="84c6b-122">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-122">Click OK.</span></span>
-3. <span data-ttu-id="84c6b-123">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-123">On the Action Pane, click Manage costs.</span></span>
-4. <span data-ttu-id="84c6b-124">[計算の詳細の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-124">Click View calculation details.</span></span>
-5. <span data-ttu-id="84c6b-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-125">Close the page.</span></span>
 
-## <a name="release-the-batch-order"></a><span data-ttu-id="84c6b-126">バッチ オーダーのリリース</span><span class="sxs-lookup"><span data-stu-id="84c6b-126">Release the batch order</span></span>
-1. <span data-ttu-id="84c6b-127">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-127">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="84c6b-128">[リリース] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-128">Click Release.</span></span>
-3. <span data-ttu-id="84c6b-129">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-129">Click OK.</span></span>
+## <a name="create-a-batch-order"></a><span data-ttu-id="7b168-108">バッチ オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="7b168-108">Create a batch order</span></span>
+1. <span data-ttu-id="7b168-109">[すべての製造オーダー] に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b168-109">Go to All production orders.</span></span>
+2. <span data-ttu-id="7b168-110">[新しいバッチ オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-110">Click New batch order.</span></span>
+3. <span data-ttu-id="7b168-111">[品目番号] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="7b168-111">In the Item number field, enter or select a value.</span></span>
+4. <span data-ttu-id="7b168-112">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-112">Click Create.</span></span>
+5. <span data-ttu-id="7b168-113">[クイック フィルター] を使用して、値が「b」である [生産] フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="7b168-113">Use the Quick Filter to filter on the Production field with a value of 'b'.</span></span>
 
-## <a name="schedule-production-jobs"></a><span data-ttu-id="84c6b-130">生産ジョブのスケジュール</span><span class="sxs-lookup"><span data-stu-id="84c6b-130">Schedule production jobs</span></span>
-1. <span data-ttu-id="84c6b-131">[アクション ペイン] で、[スケジュール] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-131">On the Action Pane, click Schedule.</span></span>
-2. <span data-ttu-id="84c6b-132">[ジョブのスケジュール設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-132">Click Schedule jobs.</span></span>
-3. <span data-ttu-id="84c6b-133">[有限能力] フィールドで [いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-133">Select No in the Finite capacity field.</span></span>
-4. <span data-ttu-id="84c6b-134">[有限原材料] フィールドで [いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-134">Select No in the Finite material field.</span></span>
-5. <span data-ttu-id="84c6b-135">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-135">Click OK.</span></span>
-6. <span data-ttu-id="84c6b-136">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-136">On the Action Pane, click Production order.</span></span>
-7. <span data-ttu-id="84c6b-137">[すべてのジョブ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-137">Click All jobs.</span></span>
-8. <span data-ttu-id="84c6b-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-138">Close the page.</span></span>
+## <a name="view-production-formula-and-expected-co-products"></a><span data-ttu-id="7b168-114">生産フォーミュラおよび予想される連産品の表示</span><span class="sxs-lookup"><span data-stu-id="7b168-114">View production formula and expected co-products</span></span>
+1. <span data-ttu-id="7b168-115">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-115">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="7b168-116">[式] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-116">Click Formula.</span></span>
+3. <span data-ttu-id="7b168-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-117">Close the page.</span></span>
+4. <span data-ttu-id="7b168-118">[連産品 (複数)] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-118">Click Co-products.</span></span>
+5. <span data-ttu-id="7b168-119">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-119">Close the page.</span></span>
 
-## <a name="start-the-batch-order"></a><span data-ttu-id="84c6b-139">バッチ オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="84c6b-139">Start the batch order</span></span>
-1. <span data-ttu-id="84c6b-140">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-140">Click Start.</span></span>
-2. <span data-ttu-id="84c6b-141">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-141">Click the General tab.</span></span>
-3. <span data-ttu-id="84c6b-142">[ピッキング リスト転記] フィールドで、[いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="84c6b-142">Select No in the Post picking list now field.</span></span>
-4. <span data-ttu-id="84c6b-143">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-143">Click OK.</span></span>
-5. <span data-ttu-id="84c6b-144">アクション ウィンドウで、[表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-144">On the Action Pane, click View.</span></span>
-6. <span data-ttu-id="84c6b-145">[ピッキング リスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-145">Click Picking list.</span></span>
-7. <span data-ttu-id="84c6b-146">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-146">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="84c6b-147">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-147">Close the page.</span></span>
-9. <span data-ttu-id="84c6b-148">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-148">Close the page.</span></span>
-10. <span data-ttu-id="84c6b-149">[工順カード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-149">Click Route card.</span></span>
-11. <span data-ttu-id="84c6b-150">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="84c6b-150">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="84c6b-151">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-151">Close the page.</span></span>
-13. <span data-ttu-id="84c6b-152">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="84c6b-152">Close the page.</span></span>
+## <a name="estimate-the-batch-order"></a><span data-ttu-id="7b168-120">バッチ オーダーの見積</span><span class="sxs-lookup"><span data-stu-id="7b168-120">Estimate the batch order</span></span>
+1. <span data-ttu-id="7b168-121">[見積] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-121">Click Estimate.</span></span>
+2. <span data-ttu-id="7b168-122">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-122">Click OK.</span></span>
+3. <span data-ttu-id="7b168-123">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-123">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="7b168-124">[計算の詳細の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-124">Click View calculation details.</span></span>
+5. <span data-ttu-id="7b168-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-125">Close the page.</span></span>
+
+## <a name="release-the-batch-order"></a><span data-ttu-id="7b168-126">バッチ オーダーのリリース</span><span class="sxs-lookup"><span data-stu-id="7b168-126">Release the batch order</span></span>
+1. <span data-ttu-id="7b168-127">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-127">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="7b168-128">[リリース] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-128">Click Release.</span></span>
+3. <span data-ttu-id="7b168-129">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-129">Click OK.</span></span>
+
+## <a name="schedule-production-jobs"></a><span data-ttu-id="7b168-130">生産ジョブのスケジュール</span><span class="sxs-lookup"><span data-stu-id="7b168-130">Schedule production jobs</span></span>
+1. <span data-ttu-id="7b168-131">[アクション ペイン] で、[スケジュール] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-131">On the Action Pane, click Schedule.</span></span>
+2. <span data-ttu-id="7b168-132">[ジョブのスケジュール設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-132">Click Schedule jobs.</span></span>
+3. <span data-ttu-id="7b168-133">[有限能力] フィールドで [いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b168-133">Select No in the Finite capacity field.</span></span>
+4. <span data-ttu-id="7b168-134">[有限原材料] フィールドで [いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b168-134">Select No in the Finite material field.</span></span>
+5. <span data-ttu-id="7b168-135">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-135">Click OK.</span></span>
+6. <span data-ttu-id="7b168-136">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-136">On the Action Pane, click Production order.</span></span>
+7. <span data-ttu-id="7b168-137">[すべてのジョブ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-137">Click All jobs.</span></span>
+8. <span data-ttu-id="7b168-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-138">Close the page.</span></span>
+
+## <a name="start-the-batch-order"></a><span data-ttu-id="7b168-139">バッチ オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="7b168-139">Start the batch order</span></span>
+1. <span data-ttu-id="7b168-140">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-140">Click Start.</span></span>
+2. <span data-ttu-id="7b168-141">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-141">Click the General tab.</span></span>
+3. <span data-ttu-id="7b168-142">[ピッキング リスト転記] フィールドで、[いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7b168-142">Select No in the Post picking list now field.</span></span>
+4. <span data-ttu-id="7b168-143">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-143">Click OK.</span></span>
+5. <span data-ttu-id="7b168-144">アクション ウィンドウで、[表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-144">On the Action Pane, click View.</span></span>
+6. <span data-ttu-id="7b168-145">[ピッキング リスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-145">Click Picking list.</span></span>
+7. <span data-ttu-id="7b168-146">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-146">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="7b168-147">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-147">Close the page.</span></span>
+9. <span data-ttu-id="7b168-148">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-148">Close the page.</span></span>
+10. <span data-ttu-id="7b168-149">[工順カード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-149">Click Route card.</span></span>
+11. <span data-ttu-id="7b168-150">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b168-150">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="7b168-151">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-151">Close the page.</span></span>
+13. <span data-ttu-id="7b168-152">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7b168-152">Close the page.</span></span>
 

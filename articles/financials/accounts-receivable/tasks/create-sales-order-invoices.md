@@ -17,61 +17,61 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 5a57d204c0dcb44cbce7a0cc4d2f00b75b57e219
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565209"
 ---
-# <a name="create-sales-order-invoices"></a><span data-ttu-id="a844e-103">販売注文請求書の作成</span><span class="sxs-lookup"><span data-stu-id="a844e-103">Create sales order invoices</span></span>
+# <a name="create-sales-order-invoices"></a><span data-ttu-id="682db-103">販売注文請求書の作成</span><span class="sxs-lookup"><span data-stu-id="682db-103">Create sales order invoices</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a844e-104">このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。</span><span class="sxs-lookup"><span data-stu-id="a844e-104">This task guide describes invoicing a sales order, including merging invoices and batch processing.</span></span> <span data-ttu-id="a844e-105">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="a844e-105">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="682db-104">このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。</span><span class="sxs-lookup"><span data-stu-id="682db-104">This task guide describes invoicing a sales order, including merging invoices and batch processing.</span></span> <span data-ttu-id="682db-105">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="682db-105">This procedure uses the USMF demo company.</span></span>
 
 
-## <a name="create-an-invoice-from-a-sales-order"></a><span data-ttu-id="a844e-106">販売注文から請求書を作成します。</span><span class="sxs-lookup"><span data-stu-id="a844e-106">Create an invoice from a sales order</span></span>
-1. <span data-ttu-id="a844e-107">[売掛金勘定] > [注文] > [出荷済で未請求の販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a844e-107">Go to Accounts receivable > Orders > Shipped but not invoiced sales orders.</span></span>
-2. <span data-ttu-id="a844e-108">一覧で販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-108">Select a sales order in the list.</span></span> 
-3. <span data-ttu-id="a844e-109">アクション ウィンドウで、[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-109">On the Action Pane, click Invoice.</span></span>
-4. <span data-ttu-id="a844e-110">[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-110">Click Invoice.</span></span>
-    * <span data-ttu-id="a844e-111">この販売注文に関連付けられる複数の梱包明細があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a844e-111">Note that this sales order has multiple packing slips associated with it.</span></span> <span data-ttu-id="a844e-112">この場合、梱包明細番号ではなく <multiple> という表示になります。</span><span class="sxs-lookup"><span data-stu-id="a844e-112">It will only show the word <multiple> instead of the packing slip number.</span></span>  
-5. <span data-ttu-id="a844e-113">[パラメーター] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="a844e-113">Expand the Parameters section.</span></span>
-    * <span data-ttu-id="a844e-114">請求書に転記するには、転記を「オン」に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a844e-114">Posting must be set to Yes to post the invoice.</span></span> <span data-ttu-id="a844e-115">また、転記をオフにし、請求書の印刷のみを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="a844e-115">You can also turn off posting and just print the invoice.</span></span> <span data-ttu-id="a844e-116">ただし、請求書のほかに、見積請求書の作成でも同じ操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="a844e-116">However, you can accomplish the same result by creating a proforma invoice instead of an invoice.</span></span>  
-    * <span data-ttu-id="a844e-117">このオプションはバッチ ジョブに使用されます。</span><span class="sxs-lookup"><span data-stu-id="a844e-117">This option is used for batch jobs.</span></span> <span data-ttu-id="a844e-118">クエリは、バッチ ジョブの実行時に実行されます。</span><span class="sxs-lookup"><span data-stu-id="a844e-118">The query is run when the batch job is run.</span></span>    
-6. <span data-ttu-id="a844e-119">[印刷] フィールドで [変更後] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-119">In the Print field, select 'After'.</span></span>
-7. <span data-ttu-id="a844e-120">[請求書の印刷] に対してオンを選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-120">Select Yes for Print invoice.</span></span>
-    * <span data-ttu-id="a844e-121">印刷管理では、請求書を複数印刷できます。また、請求書を PDF ファイルとして電子メールで送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="a844e-121">Print management can print  multiple copies of the invoice and also send the invoice via email as a PDF file.</span></span>  
-8. <span data-ttu-id="a844e-122">[請求金額の印刷] フィールドで [集計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-122">In the Print charges field, select 'Summarize'.</span></span>
-9. <span data-ttu-id="a844e-123">小切手の与信限度額フィールドで [残高] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-123">In the Check credit limit field, select 'Balance'.</span></span>
-10. <span data-ttu-id="a844e-124">[キャンセル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-124">Click Cancel.</span></span>
+## <a name="create-an-invoice-from-a-sales-order"></a><span data-ttu-id="682db-106">販売注文から請求書を作成します。</span><span class="sxs-lookup"><span data-stu-id="682db-106">Create an invoice from a sales order</span></span>
+1. <span data-ttu-id="682db-107">[売掛金勘定] > [注文] > [出荷済で未請求の販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="682db-107">Go to Accounts receivable > Orders > Shipped but not invoiced sales orders.</span></span>
+2. <span data-ttu-id="682db-108">一覧で販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-108">Select a sales order in the list.</span></span> 
+3. <span data-ttu-id="682db-109">アクション ウィンドウで、[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-109">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="682db-110">[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-110">Click Invoice.</span></span>
+    * <span data-ttu-id="682db-111">この販売注文に関連付けられる複数の梱包明細があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="682db-111">Note that this sales order has multiple packing slips associated with it.</span></span> <span data-ttu-id="682db-112">この場合、梱包明細番号ではなく <multiple> という表示になります。</span><span class="sxs-lookup"><span data-stu-id="682db-112">It will only show the word <multiple> instead of the packing slip number.</span></span>  
+5. <span data-ttu-id="682db-113">[パラメーター] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="682db-113">Expand the Parameters section.</span></span>
+    * <span data-ttu-id="682db-114">請求書に転記するには、転記を「オン」に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="682db-114">Posting must be set to Yes to post the invoice.</span></span> <span data-ttu-id="682db-115">また、転記をオフにし、請求書の印刷のみを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="682db-115">You can also turn off posting and just print the invoice.</span></span> <span data-ttu-id="682db-116">ただし、請求書のほかに、見積請求書の作成でも同じ操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="682db-116">However, you can accomplish the same result by creating a proforma invoice instead of an invoice.</span></span>  
+    * <span data-ttu-id="682db-117">このオプションはバッチ ジョブに使用されます。</span><span class="sxs-lookup"><span data-stu-id="682db-117">This option is used for batch jobs.</span></span> <span data-ttu-id="682db-118">クエリは、バッチ ジョブの実行時に実行されます。</span><span class="sxs-lookup"><span data-stu-id="682db-118">The query is run when the batch job is run.</span></span>    
+6. <span data-ttu-id="682db-119">[印刷] フィールドで [変更後] を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-119">In the Print field, select 'After'.</span></span>
+7. <span data-ttu-id="682db-120">[請求書の印刷] に対してオンを選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-120">Select Yes for Print invoice.</span></span>
+    * <span data-ttu-id="682db-121">印刷管理では、請求書を複数印刷できます。また、請求書を PDF ファイルとして電子メールで送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="682db-121">Print management can print  multiple copies of the invoice and also send the invoice via email as a PDF file.</span></span>  
+8. <span data-ttu-id="682db-122">[請求金額の印刷] フィールドで [集計] を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-122">In the Print charges field, select 'Summarize'.</span></span>
+9. <span data-ttu-id="682db-123">小切手の与信限度額フィールドで [残高] を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-123">In the Check credit limit field, select 'Balance'.</span></span>
+10. <span data-ttu-id="682db-124">[キャンセル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-124">Click Cancel.</span></span>
 
-## <a name="combine-orders-into-a-single-invoice"></a><span data-ttu-id="a844e-125">注文を 1 つの請求書に連結します。</span><span class="sxs-lookup"><span data-stu-id="a844e-125">Combine orders into a single invoice</span></span>
-1. <span data-ttu-id="a844e-126">[売掛金勘定] > [注文] > [すべての販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a844e-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="a844e-127">未処理請求書が複数ある顧客を検索します。</span><span class="sxs-lookup"><span data-stu-id="a844e-127">Locate a customer that has multiple invoices open.</span></span>
-3. <span data-ttu-id="a844e-128">未処理販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-128">Select an open sales order.</span></span>
-4. <span data-ttu-id="a844e-129">同一の顧客の未処理の販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-129">Select another open sales order for the same customer.</span></span>
-5. <span data-ttu-id="a844e-130">アクション ウィンドウで、[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-130">On the Action Pane, click Invoice.</span></span>
-6. <span data-ttu-id="a844e-131">[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-131">Click Invoice.</span></span>
-7. <span data-ttu-id="a844e-132">[パラメーター] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="a844e-132">Expand the Parameters section.</span></span>
-8. <span data-ttu-id="a844e-133">[数量] フィールドで、「すべて」を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-133">In the Quantity field, select 'All'.</span></span>
-    * <span data-ttu-id="a844e-134">概要セクションに 2 つの請求書が表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a844e-134">Note that there are two invoices listed in the overview section.</span></span> <span data-ttu-id="a844e-135">ここでは、それらを 1 つの請求書にマージします。</span><span class="sxs-lookup"><span data-stu-id="a844e-135">Now let's merge them into a single invoice.</span></span>  
-9. <span data-ttu-id="a844e-136">[集計更新] フィールドで [請求元仕入先] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a844e-136">In the Summary update for field, select 'Invoice account'.</span></span>
-10. <span data-ttu-id="a844e-137">調整をクリックすると、販売注文を 1 つの請求書にマージします。</span><span class="sxs-lookup"><span data-stu-id="a844e-137">Click Arrange to merge the sales orders into a single invoice.</span></span>
-    * <span data-ttu-id="a844e-138">2 つの販売注文が 1 つの請求書にマージされました。</span><span class="sxs-lookup"><span data-stu-id="a844e-138">The two sales orders are now merged into a single invoice.</span></span>   
-11. <span data-ttu-id="a844e-139">[キャンセル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-139">Click Cancel.</span></span>
-12. <span data-ttu-id="a844e-140">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-140">Click Yes.</span></span>
+## <a name="combine-orders-into-a-single-invoice"></a><span data-ttu-id="682db-125">注文を 1 つの請求書に連結します。</span><span class="sxs-lookup"><span data-stu-id="682db-125">Combine orders into a single invoice</span></span>
+1. <span data-ttu-id="682db-126">[売掛金勘定] > [注文] > [すべての販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="682db-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="682db-127">未処理請求書が複数ある顧客を検索します。</span><span class="sxs-lookup"><span data-stu-id="682db-127">Locate a customer that has multiple invoices open.</span></span>
+3. <span data-ttu-id="682db-128">未処理販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-128">Select an open sales order.</span></span>
+4. <span data-ttu-id="682db-129">同一の顧客の未処理の販売注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-129">Select another open sales order for the same customer.</span></span>
+5. <span data-ttu-id="682db-130">アクション ウィンドウで、[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-130">On the Action Pane, click Invoice.</span></span>
+6. <span data-ttu-id="682db-131">[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-131">Click Invoice.</span></span>
+7. <span data-ttu-id="682db-132">[パラメーター] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="682db-132">Expand the Parameters section.</span></span>
+8. <span data-ttu-id="682db-133">[数量] フィールドで、「すべて」を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-133">In the Quantity field, select 'All'.</span></span>
+    * <span data-ttu-id="682db-134">概要セクションに 2 つの請求書が表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="682db-134">Note that there are two invoices listed in the overview section.</span></span> <span data-ttu-id="682db-135">ここでは、それらを 1 つの請求書にマージします。</span><span class="sxs-lookup"><span data-stu-id="682db-135">Now let's merge them into a single invoice.</span></span>  
+9. <span data-ttu-id="682db-136">[集計更新] フィールドで [請求元仕入先] を選択します。</span><span class="sxs-lookup"><span data-stu-id="682db-136">In the Summary update for field, select 'Invoice account'.</span></span>
+10. <span data-ttu-id="682db-137">調整をクリックすると、販売注文を 1 つの請求書にマージします。</span><span class="sxs-lookup"><span data-stu-id="682db-137">Click Arrange to merge the sales orders into a single invoice.</span></span>
+    * <span data-ttu-id="682db-138">2 つの販売注文が 1 つの請求書にマージされました。</span><span class="sxs-lookup"><span data-stu-id="682db-138">The two sales orders are now merged into a single invoice.</span></span>   
+11. <span data-ttu-id="682db-139">[キャンセル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-139">Click Cancel.</span></span>
+12. <span data-ttu-id="682db-140">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-140">Click Yes.</span></span>
 
-## <a name="post-invoices-in-a-batch"></a><span data-ttu-id="a844e-141">バッチの請求書転記</span><span class="sxs-lookup"><span data-stu-id="a844e-141">Post invoices in a batch</span></span>
-1. <span data-ttu-id="a844e-142">[売掛金勘定] > [請求書] > [バッチ請求] > [請求書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a844e-142">Go to Accounts receivable > Invoices > Batch invoicing > Invoice.</span></span>
-2. <span data-ttu-id="a844e-143">[選択] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-143">Click Select.</span></span>
-3. <span data-ttu-id="a844e-144">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-144">Click OK.</span></span>
-4. <span data-ttu-id="a844e-145">[バッチ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-145">Click Batch.</span></span>
-5. <span data-ttu-id="a844e-146">バッチ処理を有効にするには [はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-146">Click on Yes to turn on batch processing.</span></span>
-6. <span data-ttu-id="a844e-147">[再実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-147">Click Recurrence.</span></span>
-7. <span data-ttu-id="a844e-148">日数の選択</span><span class="sxs-lookup"><span data-stu-id="a844e-148">Select Days</span></span>
-8. <span data-ttu-id="a844e-149">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-149">Click OK.</span></span>
-9. <span data-ttu-id="a844e-150">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-150">Click OK.</span></span>
-10. <span data-ttu-id="a844e-151">[キャンセル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-151">Click Cancel.</span></span>
-11. <span data-ttu-id="a844e-152">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a844e-152">Click Yes.</span></span>
+## <a name="post-invoices-in-a-batch"></a><span data-ttu-id="682db-141">バッチの請求書転記</span><span class="sxs-lookup"><span data-stu-id="682db-141">Post invoices in a batch</span></span>
+1. <span data-ttu-id="682db-142">[売掛金勘定] > [請求書] > [バッチ請求] > [請求書] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="682db-142">Go to Accounts receivable > Invoices > Batch invoicing > Invoice.</span></span>
+2. <span data-ttu-id="682db-143">[選択] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-143">Click Select.</span></span>
+3. <span data-ttu-id="682db-144">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-144">Click OK.</span></span>
+4. <span data-ttu-id="682db-145">[バッチ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-145">Click Batch.</span></span>
+5. <span data-ttu-id="682db-146">バッチ処理を有効にするには [はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-146">Click on Yes to turn on batch processing.</span></span>
+6. <span data-ttu-id="682db-147">[再実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-147">Click Recurrence.</span></span>
+7. <span data-ttu-id="682db-148">日数の選択</span><span class="sxs-lookup"><span data-stu-id="682db-148">Select Days</span></span>
+8. <span data-ttu-id="682db-149">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-149">Click OK.</span></span>
+9. <span data-ttu-id="682db-150">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-150">Click OK.</span></span>
+10. <span data-ttu-id="682db-151">[キャンセル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-151">Click Cancel.</span></span>
+11. <span data-ttu-id="682db-152">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="682db-152">Click Yes.</span></span>
 

@@ -19,55 +19,55 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a5a730ae945af15c7bd4020c734bac971d8186e2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312212"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553418"
 ---
-# <a name="create-item-requirements-for-service-orders"></a><span data-ttu-id="f03f9-103">サービス注文の在庫品目要求の作成</span><span class="sxs-lookup"><span data-stu-id="f03f9-103">Create item requirements for service orders</span></span> 
+# <a name="create-item-requirements-for-service-orders"></a><span data-ttu-id="aa39e-103">サービス注文の在庫品目要求の作成</span><span class="sxs-lookup"><span data-stu-id="aa39e-103">Create item requirements for service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="f03f9-104">顧客に提供するサービスを追跡および管理するサービス注文を作成できます。</span><span class="sxs-lookup"><span data-stu-id="f03f9-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="f03f9-105">サービス注文に特定の品目を引き当てる必要がある場合、その在庫品目要求を作成できます。</span><span class="sxs-lookup"><span data-stu-id="f03f9-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="f03f9-106">品目要求を在庫からすぐ消費したり、その品目の製造オーダーを開始できます。</span><span class="sxs-lookup"><span data-stu-id="f03f9-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
+<span data-ttu-id="aa39e-104">顧客に提供するサービスを追跡および管理するサービス注文を作成できます。</span><span class="sxs-lookup"><span data-stu-id="aa39e-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="aa39e-105">サービス注文に特定の品目を引き当てる必要がある場合、その在庫品目要求を作成できます。</span><span class="sxs-lookup"><span data-stu-id="aa39e-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="aa39e-106">品目要求を在庫からすぐ消費したり、その品目の製造オーダーを開始できます。</span><span class="sxs-lookup"><span data-stu-id="aa39e-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
 
-<span data-ttu-id="f03f9-107">品目トランザクションではなく在庫品目要求を使用することによって、品目が実際に使用される直前の配送を計画したり、発注書を作成したり、品目を売買契約の枠組みに含めたり、在庫品目要求を生産計画に含めたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="f03f9-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
+<span data-ttu-id="aa39e-107">品目トランザクションではなく在庫品目要求を使用することによって、品目が実際に使用される直前の配送を計画したり、発注書を作成したり、品目を売買契約の枠組みに含めたり、在庫品目要求を生産計画に含めたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="aa39e-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
 
-<span data-ttu-id="f03f9-108">サービス注文に関する要求はプロジェクトを通じて処理します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="f03f9-109">サービス注文に対して在庫品目要求を作成するには、サービス注文をプロジェクトに関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="f03f9-109">To create an item requirement on a service order, the service order must be assigned to a project.</span></span> <span data-ttu-id="f03f9-110">サービス注文に対して在庫品目要求を作成した後、選択したプロジェクトの**プロジェクト**フォームに在庫品目要求を表示できます。</span><span class="sxs-lookup"><span data-stu-id="f03f9-110">After you create an item requirement for a service order, you can view the item requirement in the **Projects** form for the selected project.</span></span>
+<span data-ttu-id="aa39e-108">サービス注文に関する要求はプロジェクトを通じて処理します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="aa39e-109">サービス注文に対して在庫品目要求を作成するには、サービス注文をプロジェクトに関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="aa39e-109">To create an item requirement on a service order, the service order must be assigned to a project.</span></span> <span data-ttu-id="aa39e-110">サービス注文に対して在庫品目要求を作成した後、選択したプロジェクトの**プロジェクト**フォームに在庫品目要求を表示できます。</span><span class="sxs-lookup"><span data-stu-id="aa39e-110">After you create an item requirement for a service order, you can view the item requirement in the **Projects** form for the selected project.</span></span>
 
-## <a name="create-an-item-requirement-for-a-service-order"></a><span data-ttu-id="f03f9-111">サービス注文の在庫品目要求の作成</span><span class="sxs-lookup"><span data-stu-id="f03f9-111">Create an item requirement for a service order</span></span>
+## <a name="create-an-item-requirement-for-a-service-order"></a><span data-ttu-id="aa39e-111">サービス注文の在庫品目要求の作成</span><span class="sxs-lookup"><span data-stu-id="aa39e-111">Create an item requirement for a service order</span></span>
 
-1.  <span data-ttu-id="f03f9-112">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="f03f9-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="aa39e-112">**サービス管理** \> **共通** \> **サービス注文** \> **サービス注文**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa39e-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="f03f9-113">在庫品目要求を作成するサービス注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-113">Select the service order that you want to create an item requirement for.</span></span>
+2.  <span data-ttu-id="aa39e-113">在庫品目要求を作成するサービス注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-113">Select the service order that you want to create an item requirement for.</span></span>
 
-3.  <span data-ttu-id="f03f9-114">**アクション ウィンドウ**の**出荷**タブで、**在庫品目要求**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f03f9-114">On the **Action Pane**, on the **Dispatch** tab, click **Item requirement**.</span></span>
+3.  <span data-ttu-id="aa39e-114">**アクション ウィンドウ**の**出荷**タブで、**在庫品目要求**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa39e-114">On the **Action Pane**, on the **Dispatch** tab, click **Item requirement**.</span></span>
 
-4.  <span data-ttu-id="f03f9-115">**在庫品目要求**フォームで、必要な品目の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-115">In the **Item requirements** form, enter information for the required item.</span></span> <span data-ttu-id="f03f9-116">フォームのそれぞれのフィールドについては、[在庫品目要求 (フォーム)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f03f9-116">For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).</span></span>
+4.  <span data-ttu-id="aa39e-115">**在庫品目要求**フォームで、必要な品目の情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-115">In the **Item requirements** form, enter information for the required item.</span></span> <span data-ttu-id="aa39e-116">フォームのそれぞれのフィールドについては、[在庫品目要求 (フォーム)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="aa39e-116">For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).</span></span>
 
-## <a name="create-an-item-requirement-for-a-service-agreement"></a><span data-ttu-id="f03f9-117">サービス契約の在庫品目要求の作成</span><span class="sxs-lookup"><span data-stu-id="f03f9-117">Create an item requirement for a service agreement</span></span>
+## <a name="create-an-item-requirement-for-a-service-agreement"></a><span data-ttu-id="aa39e-117">サービス契約の在庫品目要求の作成</span><span class="sxs-lookup"><span data-stu-id="aa39e-117">Create an item requirement for a service agreement</span></span>
 
-1.  <span data-ttu-id="f03f9-118">**サービス管理** \> **共通** \> **サービス契約** \> **サービス契約**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="f03f9-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="aa39e-118">**サービス管理** \> **共通** \> **サービス契約** \> **サービス契約**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa39e-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="f03f9-119">在庫品目要求を作成するサービス契約を開きます。</span><span class="sxs-lookup"><span data-stu-id="f03f9-119">Open the service agreement for which you want to create an item requirement.</span></span>
+2.  <span data-ttu-id="aa39e-119">在庫品目要求を作成するサービス契約を開きます。</span><span class="sxs-lookup"><span data-stu-id="aa39e-119">Open the service agreement for which you want to create an item requirement.</span></span>
 
-3.  <span data-ttu-id="f03f9-120">**明細行**クイックタブで、**追加**をクリックして明細行を新規作成します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-120">On the **Lines** FastTab, click **Add** to create a new line.</span></span>
+3.  <span data-ttu-id="aa39e-120">**明細行**クイックタブで、**追加**をクリックして明細行を新規作成します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-120">On the **Lines** FastTab, click **Add** to create a new line.</span></span>
 
-4.  <span data-ttu-id="f03f9-121">**トランザクション タイプ**フィールドで、**品目**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-121">In the **Transaction type** field, select **Item**.</span></span>
+4.  <span data-ttu-id="aa39e-121">**トランザクション タイプ**フィールドで、**品目**を選択します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-121">In the **Transaction type** field, select **Item**.</span></span>
 
-5.  <span data-ttu-id="f03f9-122">**項目の設定**フィールドで、**在庫品目要求**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-122">In the **Item setup** field, select **Item requirement**.</span></span>
+5.  <span data-ttu-id="aa39e-122">**項目の設定**フィールドで、**在庫品目要求**を選択します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-122">In the **Item setup** field, select **Item requirement**.</span></span>
 
-6.  <span data-ttu-id="f03f9-123">**品目番号**フィールドで、サービス契約に必要な品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-123">In the **Item number** field, select the item that is required for the service agreement.</span></span>
+6.  <span data-ttu-id="aa39e-123">**品目番号**フィールドで、サービス契約に必要な品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-123">In the **Item number** field, select the item that is required for the service agreement.</span></span>
 
-7.  <span data-ttu-id="f03f9-124">**サイト**フィールドの、**製品分析コード**タブにおける、**明細行の詳細**クイック タブで、品目の在庫サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-124">On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.</span></span>
+7.  <span data-ttu-id="aa39e-124">**サイト**フィールドの、**製品分析コード**タブにおける、**明細行の詳細**クイック タブで、品目の在庫サイトを選択します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-124">On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.</span></span>
 
-8.  <span data-ttu-id="f03f9-125">契約項目からサービス注文を作成するには、**明細行**クイック タブで**サービス注文の作成**をクリックし、**サービス注文の作成**フォームに、関連情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="f03f9-125">To create a service order from the agreement line, on the **Lines** FastTab, click **Create service orders**, and then enter the relevant information in the **Create service orders** form.</span></span> 
+8.  <span data-ttu-id="aa39e-125">契約項目からサービス注文を作成するには、**明細行**クイック タブで**サービス注文の作成**をクリックし、**サービス注文の作成**フォームに、関連情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="aa39e-125">To create a service order from the agreement line, on the **Lines** FastTab, click **Create service orders**, and then enter the relevant information in the **Create service orders** form.</span></span> 
 
 
-## <a name="see-also"></a><span data-ttu-id="f03f9-126">参照</span><span class="sxs-lookup"><span data-stu-id="f03f9-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aa39e-126">参照</span><span class="sxs-lookup"><span data-stu-id="aa39e-126">See also</span></span>
 
-<span data-ttu-id="f03f9-127">[サービス注文の自動作成](create-service-orders-automatically.md)。</span><span class="sxs-lookup"><span data-stu-id="f03f9-127">[Create service orders automatically](create-service-orders-automatically.md).</span></span>
+<span data-ttu-id="aa39e-127">[サービス注文の自動作成](create-service-orders-automatically.md)。</span><span class="sxs-lookup"><span data-stu-id="aa39e-127">[Create service orders automatically](create-service-orders-automatically.md).</span></span>
 
   
 

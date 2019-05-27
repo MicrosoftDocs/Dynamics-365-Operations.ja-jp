@@ -20,52 +20,52 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556901"
 ---
-# <a name="initialize-seed-data-in-new-retail-environments"></a><span data-ttu-id="381e7-103">新しい Retail 環境でのシード データの初期化</span><span class="sxs-lookup"><span data-stu-id="381e7-103">Initialize seed data in new Retail environments</span></span>
+# <a name="initialize-seed-data-in-new-retail-environments"></a><span data-ttu-id="e8114-103">新しい Retail 環境でのシード データの初期化</span><span class="sxs-lookup"><span data-stu-id="e8114-103">Initialize seed data in new Retail environments</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="381e7-104">この記事では、Microsoft Dynamics 365 for Retail の初期化プロセスの一部として作成されるデータについて説明します。</span><span class="sxs-lookup"><span data-stu-id="381e7-104">This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="e8114-104">この記事では、Microsoft Dynamics 365 for Retail の初期化プロセスの一部として作成されるデータについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e8114-104">This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.</span></span>
 
-<span data-ttu-id="381e7-105">小売ソリューションが Microsoft Dynamics Lifecycle Services (LCS) によって配置された後、基本的なコンフィギュレーション データを作成するために、小売コンフィギュレーションを初期化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="381e7-105">After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data.</span></span>
+<span data-ttu-id="e8114-105">小売ソリューションが Microsoft Dynamics Lifecycle Services (LCS) によって配置された後、基本的なコンフィギュレーション データを作成するために、小売コンフィギュレーションを初期化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8114-105">After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="381e7-106">小売コンフィギュレーションを初期化する前に、小売店舗を設定する法人ごとの言語と住所が指定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="381e7-106">Before you initialize the retail configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up retail stores.</span></span> <span data-ttu-id="381e7-107">この手順は、小売に使用する法人ごとに完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="381e7-107">This step must be completed for each legal entity that you use for retail.</span></span>
+> <span data-ttu-id="e8114-106">小売コンフィギュレーションを初期化する前に、小売店舗を設定する法人ごとの言語と住所が指定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e8114-106">Before you initialize the retail configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up retail stores.</span></span> <span data-ttu-id="e8114-107">この手順は、小売に使用する法人ごとに完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8114-107">This step must be completed for each legal entity that you use for retail.</span></span>
 
-<span data-ttu-id="381e7-108">小売のコンフィギュレーションを初期化するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="381e7-108">To initialize the retail configuration, follow these steps.</span></span>
+<span data-ttu-id="e8114-108">小売のコンフィギュレーションを初期化するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e8114-108">To initialize the retail configuration, follow these steps.</span></span>
 
-1. <span data-ttu-id="381e7-109">Dynamics 365 for Retail クライアントを起動します。</span><span class="sxs-lookup"><span data-stu-id="381e7-109">Start the Dynamics 365 for Retail client.</span></span>
-2. <span data-ttu-id="381e7-110">**小売** &gt; **本社の設定** &gt; **パラメーター** &gt; **小売パラメーター**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="381e7-110">Click **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.</span></span>
-3. <span data-ttu-id="381e7-111">**初期化**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="381e7-111">Click **Initialize**.</span></span>
+1. <span data-ttu-id="e8114-109">Dynamics 365 for Retail クライアントを起動します。</span><span class="sxs-lookup"><span data-stu-id="e8114-109">Start the Dynamics 365 for Retail client.</span></span>
+2. <span data-ttu-id="e8114-110">**小売** &gt; **本社の設定** &gt; **パラメーター** &gt; **小売パラメーター**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e8114-110">Click **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.</span></span>
+3. <span data-ttu-id="e8114-111">**初期化**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e8114-111">Click **Initialize**.</span></span>
 
-<span data-ttu-id="381e7-112">初期化によって、次の既定のコンフィギュレーション データを作成します:</span><span class="sxs-lookup"><span data-stu-id="381e7-112">Initialization creates the following default configuration data:</span></span>
+<span data-ttu-id="e8114-112">初期化によって、次の既定のコンフィギュレーション データを作成します:</span><span class="sxs-lookup"><span data-stu-id="e8114-112">Initialization creates the following default configuration data:</span></span>
 
-- <span data-ttu-id="381e7-113">小売用スケジューラ ジョブとサブジョブ</span><span class="sxs-lookup"><span data-stu-id="381e7-113">Retail scheduler jobs and subjobs</span></span>
-- <span data-ttu-id="381e7-114">小売チャンネル スキーマ</span><span class="sxs-lookup"><span data-stu-id="381e7-114">Retail channel schema</span></span>
-- <span data-ttu-id="381e7-115">小売配送スケジュール</span><span class="sxs-lookup"><span data-stu-id="381e7-115">Retail distribution schedules</span></span>
-- <span data-ttu-id="381e7-116">ボタン グリッドと画像、テーマを含む、既定の画面レイアウト</span><span class="sxs-lookup"><span data-stu-id="381e7-116">Default screen layouts, which include button grids, images, and themes</span></span>
-- <span data-ttu-id="381e7-117">タイムゾーン情報</span><span class="sxs-lookup"><span data-stu-id="381e7-117">Time zone information</span></span>
-- <span data-ttu-id="381e7-118">販売時点管理 (POS) 操作</span><span class="sxs-lookup"><span data-stu-id="381e7-118">Point-of-sale (POS) operations</span></span>
-- <span data-ttu-id="381e7-119">POS アクセス許可</span><span class="sxs-lookup"><span data-stu-id="381e7-119">POS permissions</span></span>
-- <span data-ttu-id="381e7-120">チャンネル レポート</span><span class="sxs-lookup"><span data-stu-id="381e7-120">Channel reports</span></span>
-- <span data-ttu-id="381e7-121">属性メタデータ</span><span class="sxs-lookup"><span data-stu-id="381e7-121">Attribute metadata</span></span>
-- <span data-ttu-id="381e7-122">エンティティ検証テンプレート</span><span class="sxs-lookup"><span data-stu-id="381e7-122">Entity validation templates</span></span>
-- <span data-ttu-id="381e7-123">Commerce Data Exchange セッション履歴を削除するバッチ ジョブ</span><span class="sxs-lookup"><span data-stu-id="381e7-123">Batch job to purge Commerce Data Exchange session history</span></span>
+- <span data-ttu-id="e8114-113">小売用スケジューラ ジョブとサブジョブ</span><span class="sxs-lookup"><span data-stu-id="e8114-113">Retail scheduler jobs and subjobs</span></span>
+- <span data-ttu-id="e8114-114">小売チャンネル スキーマ</span><span class="sxs-lookup"><span data-stu-id="e8114-114">Retail channel schema</span></span>
+- <span data-ttu-id="e8114-115">小売配送スケジュール</span><span class="sxs-lookup"><span data-stu-id="e8114-115">Retail distribution schedules</span></span>
+- <span data-ttu-id="e8114-116">ボタン グリッドと画像、テーマを含む、既定の画面レイアウト</span><span class="sxs-lookup"><span data-stu-id="e8114-116">Default screen layouts, which include button grids, images, and themes</span></span>
+- <span data-ttu-id="e8114-117">タイムゾーン情報</span><span class="sxs-lookup"><span data-stu-id="e8114-117">Time zone information</span></span>
+- <span data-ttu-id="e8114-118">販売時点管理 (POS) 操作</span><span class="sxs-lookup"><span data-stu-id="e8114-118">Point-of-sale (POS) operations</span></span>
+- <span data-ttu-id="e8114-119">POS アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e8114-119">POS permissions</span></span>
+- <span data-ttu-id="e8114-120">チャンネル レポート</span><span class="sxs-lookup"><span data-stu-id="e8114-120">Channel reports</span></span>
+- <span data-ttu-id="e8114-121">属性メタデータ</span><span class="sxs-lookup"><span data-stu-id="e8114-121">Attribute metadata</span></span>
+- <span data-ttu-id="e8114-122">エンティティ検証テンプレート</span><span class="sxs-lookup"><span data-stu-id="e8114-122">Entity validation templates</span></span>
+- <span data-ttu-id="e8114-123">Commerce Data Exchange セッション履歴を削除するバッチ ジョブ</span><span class="sxs-lookup"><span data-stu-id="e8114-123">Batch job to purge Commerce Data Exchange session history</span></span>
 
-<span data-ttu-id="381e7-124">また、Payment Card Industry (PCI) に関連付けられるログが Dynamics 365 for Retail データベースに対して有効になります。</span><span class="sxs-lookup"><span data-stu-id="381e7-124">Additionally, logging that is related to the payment card industry (PCI) is enabled for the Dynamics 365 for Retail database.</span></span>
+<span data-ttu-id="e8114-124">また、Payment Card Industry (PCI) に関連付けられるログが Dynamics 365 for Retail データベースに対して有効になります。</span><span class="sxs-lookup"><span data-stu-id="e8114-124">Additionally, logging that is related to the payment card industry (PCI) is enabled for the Dynamics 365 for Retail database.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="381e7-125">別々に小売用スケジューラをコンフィギュレーションするオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="381e7-125">There is an option to separately configure the Retail scheduler.</span></span> <span data-ttu-id="381e7-126">このオプションで、小売用スケジューラのコンフィギュレーションを既定の設定にリセットすることができます。</span><span class="sxs-lookup"><span data-stu-id="381e7-126">This option lets you reset the Retail scheduler configuration to its default settings.</span></span>
+> <span data-ttu-id="e8114-125">別々に小売用スケジューラをコンフィギュレーションするオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="e8114-125">There is an option to separately configure the Retail scheduler.</span></span> <span data-ttu-id="e8114-126">このオプションで、小売用スケジューラのコンフィギュレーションを既定の設定にリセットすることができます。</span><span class="sxs-lookup"><span data-stu-id="e8114-126">This option lets you reset the Retail scheduler configuration to its default settings.</span></span>
 
-<span data-ttu-id="381e7-127">初期化の完了後に、追加の小売データをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="381e7-127">After initialization is completed, you must configure additional retail data.</span></span> <span data-ttu-id="381e7-128">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="381e7-128">Here are some examples:</span></span>
+<span data-ttu-id="e8114-127">初期化の完了後に、追加の小売データをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8114-127">After initialization is completed, you must configure additional retail data.</span></span> <span data-ttu-id="e8114-128">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="e8114-128">Here are some examples:</span></span>
 
-- <span data-ttu-id="381e7-129">小売パラメーター</span><span class="sxs-lookup"><span data-stu-id="381e7-129">Retail parameters</span></span>
-- <span data-ttu-id="381e7-130">小売用スケジューラのパラメーター</span><span class="sxs-lookup"><span data-stu-id="381e7-130">Retail scheduler parameters</span></span>
-- <span data-ttu-id="381e7-131">小売チャンネル</span><span class="sxs-lookup"><span data-stu-id="381e7-131">Retail channels</span></span>
-- <span data-ttu-id="381e7-132">レジスターとデバイス</span><span class="sxs-lookup"><span data-stu-id="381e7-132">Registers and devices</span></span>
-- <span data-ttu-id="381e7-133">品揃え</span><span class="sxs-lookup"><span data-stu-id="381e7-133">Assortments</span></span>
+- <span data-ttu-id="e8114-129">小売パラメーター</span><span class="sxs-lookup"><span data-stu-id="e8114-129">Retail parameters</span></span>
+- <span data-ttu-id="e8114-130">小売用スケジューラのパラメーター</span><span class="sxs-lookup"><span data-stu-id="e8114-130">Retail scheduler parameters</span></span>
+- <span data-ttu-id="e8114-131">小売チャンネル</span><span class="sxs-lookup"><span data-stu-id="e8114-131">Retail channels</span></span>
+- <span data-ttu-id="e8114-132">レジスターとデバイス</span><span class="sxs-lookup"><span data-stu-id="e8114-132">Registers and devices</span></span>
+- <span data-ttu-id="e8114-133">品揃え</span><span class="sxs-lookup"><span data-stu-id="e8114-133">Assortments</span></span>
