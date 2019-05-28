@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0bdde92813a8d6b54b2713382ec6fd62350c92ee
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371018"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552465"
 ---
 # <a name="propose-and-post-accelerated-depreciation"></a>増加償却の提案と転記
 

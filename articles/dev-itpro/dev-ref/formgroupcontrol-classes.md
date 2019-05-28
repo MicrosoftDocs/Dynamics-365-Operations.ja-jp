@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec320efee094b85a2550fdcdf358572875bb54dc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bcec4579be48c4b7dea2cd8dd04336a1717f54bc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537048"
 ---
 # <a name="f-classes-formgroupcontrol-to-formintcontrol"></a>F くらす (FormGroupControl から FormIntControl)
 

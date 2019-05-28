@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6bc858ded5e61741e1b47f25d70af7b5f7bb926
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e72a6d324a853d17dca4ee896bf40cbc19e73a7
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369402"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536964"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 

@@ -20,11 +20,11 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: c2db59d3fa4dc8acd59c40c9ecf5739bfdc8917e
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "969338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537074"
 ---
 # <a name="shipping-discount-overview"></a>出荷割引の概要
 

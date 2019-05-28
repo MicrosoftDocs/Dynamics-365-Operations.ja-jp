@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 55a85776f7d6212d376caa63166844470a8350cc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c7c42db5c976f98b61dde1eef5b95c17e6f268d4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370013"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510945"
 ---
 # <a name="modify-table-properties-through-extension"></a>拡張機能を使用して、テーブルのプロパティを変更する
 

@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0195c30f7582f85a6e7cb52323e793df4e7a8324
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 33ee0b20327ead0d7e0a74b21fd1d45546ee5777
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369919"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537580"
 ---
 # <a name="peripheral-compatibility-for-retail"></a>Retail の周辺機器互換性
 

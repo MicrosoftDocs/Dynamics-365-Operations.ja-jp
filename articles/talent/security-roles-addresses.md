@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: f8aaa33e5fda404b48548f9a57977dd0ccd53dc1
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518456"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>セキュリティ ロールによる個人住所へのアクセス
 

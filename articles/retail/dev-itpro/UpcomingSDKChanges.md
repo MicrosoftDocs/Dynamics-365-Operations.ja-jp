@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-09-11
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 2ee949b50e560e6df0cf0360d0282fa19cb6118f
-ms.sourcegitcommit: 4f45bd3f5ef1da02901cadbe3e24adad66be14b9
+ms.openlocfilehash: 337d66e77f42fcf8c0afb3493a165139083ccafd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "722100"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512737"
 ---
 # <a name="upcoming-changes-in-the-retail-sdk"></a>Retail SDK の今後の変更
 [!include [banner](../includes/banner.md)]

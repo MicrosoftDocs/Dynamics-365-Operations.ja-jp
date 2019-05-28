@@ -3,7 +3,7 @@ title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/02/2012
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79d04e955cdf57d73c6f0250784367f56b39fcc8
-ms.sourcegitcommit: e597ac963d541f521d253697bbf26ce1ca8630a3
+ms.openlocfilehash: 327a2202382864c19363f6773a6cccba7e0e7cdd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "949235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537303"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
@@ -223,7 +223,15 @@ Office の更新プログラムをインストールできない場合、次の�
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
-## <a name="additional-resources"></a>その他のリソース
+### <a name="issue-the-excel-add-in-needs-an-explicit-sign-out-after-encountering-an-aadsts50058-silent-sign-in-failed-error"></a>問題: AADSTS50058 "サイレント サインインが失敗しました" エラーが発生した後に、Excelアドインで明示的にサインアウトする必要がある。
+
+**問題:** ユーザーが、一定期間操作が行われなかった後にExcelアドインにログインしようとすると、AADSTS50058 "サイレント サインインが失敗しました" というエラーが発生し、強制的にサインアウトが要求されます。
+
+**説明:** Excelアドインは認証に Azure AD を使用します。 認証が行われると、ユーザーにトークンが作成されます。 このトークンには有効期限があります。 トークンの有効期限が切れると、AADSTS50058エラーが発生し "サイレントログインに失敗しました" という内容のが表示されます。
+
+**解決策** : ユーザーは一度サインアウトしてから、再度サインインする必要があります。 この挙動については来的には改善をする予定です。自動的にユーザーをログアウトさせることで、より迅速なログインを実現します。
+
+## <a name="additional-resources"></a>追加リソース
 
 [Office 統合](office-integration.md)
 

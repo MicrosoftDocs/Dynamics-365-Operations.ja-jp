@@ -3,7 +3,7 @@ title: Retail Modern POS (MPOS) 画面レイアウトへのカスタム コン�
 description: このトピックでは、最新POS (MPOS) の画面レイアウトに新しいカスタム コントロールを追加する方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,16 +17,19 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57dc1e2c085da5eac5d25030bd34ff0037e29ee1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f566e64ec24f90fbc9bddd9b09c6da640d5e11c3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369889"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537571"
 ---
 # <a name="add-custom-controls-to-retail-modern-pos-mpos-screen-layouts"></a>Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> このトピックはバージョン 7.1 以前のバージョンにのみ適用されます。
 
 このトピックでは、最新POS (MPOS) の画面レイアウトに新しいカスタム コントロールを追加する方法について説明します。
 
@@ -133,7 +136,3 @@ ms.locfileid: "369889"
 2.  ようこそ画面で、**現在のトランザクション**ボタンをクリックします。
 3.  トランザクションに任意の品目を追加し、合計数量がカスタム コントロールに正しく表示されることを確認します。
 4.  トランザクション内で任意の明細行を無効化し、無効にされた行の数がカスタム コントロールに正しく表示されることを確認します。
-
-
-
-

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 115832c4b6bf3e05e3bc621c0254a167e549e1af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 40d5865770de36be1edd9377f98bee07471fa411
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369096"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537532"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 

@@ -1,16 +1,16 @@
 ---
 title: 財務諸表の高度な形式オプション
 description: 財務報告レポートを作成する場合は、追加の形式機能が使用できます。これには分析コードのフィルター、列とレポート単位への制限、ノン プリンティング行、計算の IF/THEN/ELSE 明細書が含まれます。
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335580"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502568"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>財務諸表の高度な形式オプション
 
@@ -41,6 +41,7 @@ ms.locfileid: "335580"
 | [列の制限]         | 行定義の列の制限は、レポートのある行にのみ関連する値を非表示にするために役立ちます。 行で比率計算を実行するときに、列の制限は、それらの数値が適用されない場合に合計列または他の列が印刷されることを防ぎます。 |
 | [段区切り]               | 行定義で段区切りを追加して、レポート情報を並べて表示できます。 1 つの行定義で複数の段区切りを追加することができ、列のヘッダーは段区切り後の各列の上部に繰り返されます。 レポートのコメントは、段区切りの間に表示されます。 |
 | [IF/THEN/ELSE] 明細書     | 行定義または列定義で計算を変更できます。 |
+| 分析コード値には単一引用符 ('') およびアンパサンド (&) を使用します。 | レポート デザインにはアンパサンド記号を含む分析コード値を使用できます。 |
 
 ## <a name="advanced-cell-placement"></a>[高度な配置セル]
 [高度な配置セル]、または *強制* には、特定のセルへの特定の値の配置が含まれます。 たとえば、強制は、キャッシュ フロー明細書の正しい残高を移動する場合などによく使用されます。 たとえば、強制を次を目的で使用できます。
@@ -297,3 +298,9 @@ ms.locfileid: "335580"
 
 > [!NOTE]
 > 他の列には計算の結果を入力できません。 結果は式を含む列にする必要があります。
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>行、列、またはツリーの分析コード値には単一引用符およびアンパサンドを使用します。
+
+アンパサンドを含む分析コード値を使用してレポートを設計できます。 
+
+任意の**財務分析コードにリンク**のフィールド内に、**'P&L'** のような値を入力します。 分析コード値の両側に単一引用符 (' ') を含めることは、(&) アンパサンド記号を含めるなど、リテラル値を使用していることを示します。 

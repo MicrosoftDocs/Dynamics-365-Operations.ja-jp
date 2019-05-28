@@ -3,7 +3,7 @@ title: 稼働停止のレポート
 description: このトピックでは、Lifecycle Services (LCS) を通じて生産停止を報告する方法について説明します。
 author: manalidongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 5ab265e54a6bbfba6f1e5c49021526ebff71fbaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4c5aea63cea51b80fa660ec8f197bdceeea3c35b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369605"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537254"
 ---
 # <a name="report-a-production-outage"></a>稼働停止のレポート
 
@@ -60,6 +60,8 @@ Lifecycle Services (LCS) には、**レポート生産停止**と呼ばれる機
 5. 停止に関するタイトルと詳細を追加して、**次**をクリックします。
 6. 連絡先の情報を入力し、**次へ** をクリックします。
 7. **完了** をクリックします。 
+
+LCS で稼働停止をレポートできない場合は [電話サポート](cloud-powered-support-lcs.md#phone-support) が利用可能です。 
 
 > [!Note]
 > 停止シナリオに状況が一覧表示されていない場合は、LCS を通じてサポート インシデントを入力します。 Microsoft のサポート エンジニアによる最初の調査中に、状況が現在の稼働停止シナリオのリストに合っていないことがわかった場合、サポート インシデントが現在のサポート計画に基づいて正しいサポート チームおよびサービス レベル契約 (SLA)  に転送されます。

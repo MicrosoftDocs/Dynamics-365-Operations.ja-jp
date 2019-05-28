@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9bdc139e3a65bd11d77cbaa94ddbae1e607c55aa
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556599"
 ---
 # <a name="setup-fixed-asset-depreciation-allocation"></a>固定資産減価償却配賦の設定
 
@@ -45,13 +45,13 @@ ms.locfileid: "371112"
 4. [説明] フィールドに値を入力します。
 5. [分析コード名] フィールドで、値を入力します。
 6. [追加] をクリックします。
-7. [BusinessUnit] フィールドに値を入力します。
+7. BusinessUnit フィールドに値を入力します。
     * 最初の配賦のターゲットに関する情報を入力します。  
 8. [割合] フィールドに数値を入力します。
     * すべての配賦のターゲットの合計は 100 にする必要があります。  
 9. [相殺勘定] フィールドで、任意の値を指定します。
 10. [追加] をクリックします。
-11. [BusinessUnit] フィールドに値を入力します。
+11. BusinessUnit フィールドに値を入力します。
 12. [割合] フィールドに数値を入力します。
     * すべての配賦のターゲットの合計は 100 にする必要があります。  
 13. [相殺勘定] フィールドで、任意の値を指定します。

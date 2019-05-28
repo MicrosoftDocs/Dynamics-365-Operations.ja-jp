@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1eae099846f286a2c2d9e47875f67a04cecea3de
-ms.sourcegitcommit: 2f7e06a3c8813dac773d075c9868e4cfc040a64c
+ms.openlocfilehash: 296d394562eb3d345a2fc37659076b29ab4c3015
+ms.sourcegitcommit: ab88de98a1958734213eb9d9b1988508b055f748
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "780162"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538762"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.x のオンプレミス環境を 8.1 にアップグレードする詳細プロセスを説明します。  
 
-## <a name="on-premises-upgrade-from-version-7x-with-platform-update-12-20-to-81"></a>7.x (プラットフォーム更新プログラム 12 ~ 20) から 8.1 へのオンプレミス アップグレード
+## <a name="on-premises-upgrade-from-version-7x-with-platform-update-8-20-to-81"></a>7.x (プラットフォーム更新プログラム 8 ~ 20) から 8.1 へのオンプレミス アップグレード
 
 > [!NOTE]
 > このアップグレード プロセスは完了に時間がかかり、データ アップグレード中はずっと Finance and Operations が使用できなくなります。

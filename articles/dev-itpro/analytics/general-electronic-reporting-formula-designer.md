@@ -3,7 +3,7 @@ title: 電子申告 (ER) のフォーミュラ デザイナー
 description: このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331279"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541271"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -439,6 +439,11 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>FILTER (リスト, 条件)</td>
 <td>指定した条件に対してフィルター処理するためクエリが変更された後、指定されたリストを返します。 この関数は <strong>WHERE</strong> 関数とは異なります。指定された条件がデータベース レベルで <strong>テーブル レコード</strong> タイプの任意の ER データ ソースに適用されるためです。 テーブルおよび関係を使用して、リストと条件を定義することができます。</td>
 <td><strong>仕入先</strong>を VendTable テーブルを参照する ER データ ソースとしてコンフィギュレーションすると、<strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> は仕入先グループ 40 に属している仕入先のみのリストを返します。 <strong>仕入先</strong>が VendTable テーブルを参照する ER データ ソースとしてコンフィギュレーションされ、<strong>parmVendorBankGroup</strong> が <strong>文字列</strong>データ型の値を返す ER データ ソースとしてコンフィギュレーションされている場合、 <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> が特定の銀行グループに属する仕入先の一覧を返します。</td>
+</tr>
+<tr>
+<td>インデックス (リスト、インデックス)</td>
+<td>この関数は、リスト内の特定の数値インデックスで選択されているレコードを返します。 インデックスがリスト内のレコードの範囲外である場合は、例外がスローされます。</td>
+<td><strong>計算済フィールド</strong>タイプにデータ ソース <strong>DS</strong> を入力していて、式 <strong>SPLIT ("A|B|C", “|”), 2)</strong> が含まれている場合、式 <strong>DS.Value</strong> はテキスト値、「B」を返します。 式<strong>インデックス (SPLIT ("A|B|C", “|”), 2) 値</strong>は、「B」テキスト値も返します。</td>
 </tr>
 </tbody>
 </table>

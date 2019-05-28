@@ -1,30 +1,28 @@
 ---
-title: 開発環境、デモ環境、サンドボックス環境でのデータのアップグレード
+title: 開発環境またはデモ環境でデータをアップグレードする
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを最新の更新プログラムにアップグレードするプロセスについて説明します。
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-ms.date: 09/17/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 106163
-ms.assetid: 0c78b7a9-a360-4ef8-92ef-e4e9ff70cee7
 ms.search.region: Global
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: f0031fea2190eac9d4b18e921696887df23fe247
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 213d7e01e0d174cf6b0181df6d7b7c23ea117ac9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506222"
 ---
-# <a name="upgrade-data-in-development-demo-or-sandbox-environments"></a>開発環境、デモ環境、サンドボックス環境でのデータのアップグレード
+# <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +30,7 @@ ms.locfileid: "369307"
 
 トピックでは、Microsoft Dynamics 365 for Finance and Operations のレベル 1 環境のデータベースを最新の更新プログラムにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 
 
-運用環境を含むレベル 2 以上の環境では、[Finance and Operations の最新の更新プログラムに移動するためのプロセス](upgrade-latest-update.md)で説明されているセルフ サービスのアップグレード手順を実行します。
+運用環境を含むレベル 2 以上の環境では、[最新バージョンへのセルフサービス アップグレード](self-service-upgrade.md) で説明されているセルフ サービスのアップグレード手順を実行します。
 
 > [!IMPORTANT]
 > - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) から Microsoft Dynamics 365 for Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
@@ -55,9 +53,9 @@ ms.locfileid: "369307"
 
 4. **ソース**環境では、アップグレードする前のバージョンに応じて次の修正プログラムのいずれかをインストールする必要があります。 これらの修正プログラムは、SysSetupLog ロジックの問題を修正するため、アップグレード プロセスでアップグレード元のバージョンが検出されます。
 
-   - **(RTW または 7.0 とも呼ばれる)、2016 年 2 月リリースからアップグレードする場合 (ビルド 7.0.1265.3015):** KB 4023685、「最新のアプリケーションリリースにアップグレードすると、「ソース システムのバージョン情報が見つかりませんでした」というエラーが表示されます」。
-   - **(1611 または 7.1 とも呼ばれる)、2016 年 11 月リリースからアップグレードする場合 (ビルド 7.1.1541.3036):** KB 4023686、「最新のアプリケーションリリースにアップグレードすると、「ソース システムのバージョン情報が見つかりませんでした」というエラーが表示されます」。
-   - **2017 年 7 月リリース (7.2 とも呼ばれる) からアップグレードする場合 (ビルド 7.2.11792.56024):** このバージョンに修正プログラムは必要ありません。
+   - **2016 年 2 月リリースからアップグレードする場合 (RTW または 7.0 とも呼ばれる、ビルド 7.0.1265.3015):** KB 4023685、"最新のアプリケーションリリースにアップグレードすると、'ソース システムのバージョン情報が見つかりませんでした' というエラーが表示されます。"
+   - **2016 年 11 月リリースからアップグレードする場合 (1611 または 7.1 とも呼ばれる、ビルド 7.1.1541.3036):** KB 4023686、"最新のアプリケーションリリースにアップグレードすると、'ソース システムのバージョン情報が見つかりませんでした' というエラーが表示されます。"
+   - **2017 年 7 月リリース からアップグレードする場合 (7.2 とも呼ばれる、ビルド 7.2.11792.56024):** このバージョンに修正プログラムは必要ありません。
    - このステップで必要なアプリケーション修正プログラムをインストールした後は、完全なデータベース同期を実行します。 このステップは、ゴールデン データベース環境で特に重要です。 データベース全体の同期では、データベースをアップグレードするときに使用される SysSetupLog テーブルを設定します。 SysSetup インターフェイスはトリガーされないため、この手順で Microsoft Visual Studio からデータベース同期を実行しないでください。 SysSetup インターフェイスを起動するには、管理者の **コマンド プロンプト** ウィンドウで次のコマンドを実行します。
 
      ```
@@ -90,20 +88,17 @@ ms.locfileid: "369307"
 
 ## <a name="select-the-correct-data-upgrade-deployable-package"></a>適切なデータ アップグレード展開可能なパッケージを選択
 
-最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共有アセット ライブラリから最新のバイナリ更新プログラムをダウンロードします。
-1. http://lcs.dynamics.com/ にサインイン
-2. **共有資産ライブラリ** ライブライ タイルを選択
+最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共有アセット ライブラリからダウンロードします。
+1. http://lcs.dynamics.com/ へサインインします。
+2. **共有資産** ライブラリ タイルを選択します。
 3. 共有アセット ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
 4. 配置可能パッケージ ファイルの一覧で、アップグレードに対応するデータ アップグレード パッケージを検索します。
 
-    - AX 2012 をアップグレードする場合、パッケージ名は **AX2012DataUpgrade** から始まります。 アップグレードするリリースに対応するパッケージを選択します。 例: **AX2012DataUpgrade-July2017**
-    - Finance and Operations の以前のリリースを 2017 年 7 月リリース (7.2) にアップグレードする場合、パッケージ名は **DataUpgrade-July2017** から始まります。 アップグレードするリリースに対応するパッケージを選択します。 
-    - Finance and Operations の以前のリリースをリリース 7.3 (2017 年 12 月) にアップグレードする場合、パッケージ名は **DataUpgrade-7-3** から始まります。
-    - Finance and Operations の以前のリリースをリリース 8.0 (2018 年 4 月) にアップグレードする場合、パッケージ名は **DataUpgrade-8-0** から始まります。
-    - Finance and Operations の以前のリリースをリリース 8.1 (2018 年 10 月) にアップグレードする場合、パッケージ名は **DataUpgrade-8-1** から始まります。
+    - AX 2012 をアップグレードする場合、パッケージ名は **AX2012DataUpgrade** から始まります。 アップグレードするリリースに対応するパッケージを選択します。 たとえば、**AX2012DataUpgrade-10-0**。
+    - Finance and Operations の以前のリリースを最新の 10.0.X リリースにアップグレードする場合、パッケージ名は **DataUpgrade-10-0** です。 
+    - 以前のリリースからプレビュー リリースにアップグレードする場合は、パッケージ名に PREVIEW が含まれます。 たとえば、**DataUpgrade-10-0-2-PREVIEW** です。
+5. アップグレードする先のリリースに対応するパッケージを選択します。 
 
-> [!NOTE]
-> LCS から展開されたコンピュータには、ローカル データ アップグレード パッケージが既に用意されています。 ただし、これらのファイルは最新ではない可能性があります。 常に LCS から最新のデータのアップグレード パッケージをダウンロードします。
 
 ### <a name="fix-the-duplicate-key-issue-february-2016-release-only"></a>重複する重要な問題 (2016 年 2 月リリースのみ) を修正します。
 
@@ -127,7 +122,7 @@ ms.locfileid: "369307"
 2. アップグレード対象の最新の Finance and Operations の更新プログラムが既に実行されているデモ環境または開発環境に、ソース データベース (アップグレードするデータベース) のバックアップをインポートまたは復元します。 既存のデータベースをそのままにして、新しいデータベースに **imported\_new** という名前を付けます。
 
     > [!NOTE]
-    > 以前のリリースで実行されている生産データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには、[Microsoft Dynamics 365 for Finance and Operations データベースを Azure SQL データベースから Microsoft SQL Server 環境にコピーする](../database/copy-database-from-azure-sql-to-sql-server.md) の手順に従います。   
+    > 以前のリリースで実行されている実稼働データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。   
     > 
     > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) を参照してください。
 
@@ -138,14 +133,14 @@ ms.locfileid: "369307"
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
 
-4. 元のデータベースに戻す必要がある場合に備えて、ソース データベースのバックアップを作成します。 次のステップでソース データベースを変更するため、このステップは重要です。
+4. 元のデータベースに戻す必要がある場合に備えて、ソース データベースのバックアップを作成します。 次のステップでソース データベースを変更するためこのステップは重要です。
 
 5. **c:\\Temp\\DataUpgrade** フォルダー (展開可能なパッケージを以前に展開した場所) からデータ アップグレード パッケージを実行します。 データ アップグレード パッケージの実行は、ソフトウェア展開可能パッケージのインストールと同様です。 詳細な指示については、[配置可能パッケージのインストール](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology) を参照してください。 **トポロジから Runbook を生成します** というセクションで開始し、**配置可能パッケージのインストール** セクションの手順を実行します。 
 
 > [!NOTE]
 > 開発環境上のデータベースをアップグレードする場合は、代わりに **管理 > 適用更新** サービス機能を使用して、LCS 環境ページから直接データ アップグレード パッケージを実行できます。 これは、ユーザーが開発用 VM のローカル管理者である必要はありません。 これは LCS の[2 月](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/)リリースから利用可能です。 
 
-これにより、Finance and Operations のデータベース、小売チャネルのデータベースが更新され、財務報告データベースがリセットされます。
+> これにより、Finance and Operations のデータベース、小売チャネルのデータベースが更新され、財務報告データベースがリセットされます。
 
 ## <a name="re-enable-sql-change-tracking"></a>SQL 変更履歴の再有効化
 
@@ -433,4 +428,4 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
+[最新の Finance and Operations 更新プログラムへの移行の処理](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)

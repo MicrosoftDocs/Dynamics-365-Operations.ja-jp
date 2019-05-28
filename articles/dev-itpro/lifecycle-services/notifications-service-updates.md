@@ -16,11 +16,11 @@ ms.author: manado
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
 ms.openlocfilehash: fd6e619fe2285b698213c91ee7000b85e120f4b0
-ms.sourcegitcommit: 901aebfac63e00c0b7125c53c63f5dfd437c3ea5
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "849128"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537500"
 ---
 # <a name="get-notified-about-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る
 

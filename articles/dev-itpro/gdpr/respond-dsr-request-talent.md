@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 827baf656c34b0bdb35ba32d9dca7421df1c23b6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a2ac85249cbb97ae0f8aa1850972a1faf3bc0439
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537486"
 ---
 # <a name="respond-to-requests-for-personal-data-in-talent"></a>Talent での個人データ要求に対応
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 20f6c0b29f7c5444326918176fb210359cbe1422
-ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
+ms.openlocfilehash: 7ea4bea33ef08ba1547bfc8cf70aff643dc8e144
+ms.sourcegitcommit: 987d7ef5a5df53e2272db6814fe6ef78be1a9aab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "993775"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540168"
 ---
 # <a name="delivering-isv-solutions---one-version-guidelines"></a>ISV ソリューションの提供 - 1 つのバージョンのガイドライン
 
@@ -92,7 +92,7 @@ Microsoft がリリースする新しい更新プログラムはすべて、ラ�
 
 ランタイム互換性は、以前のプラットフォームでコンパイルされたカスタマイズに対してプラットフォームの変更が下位互換性があることも意味します。 これらの変更はコンパイラへの変更を含みます。
 
-互換性は下位のみです。 カスタマイズは新しいプラットフォームでコンパイルが可能で、そのバージョンまたはそれ以降のバージョンにまだ更新されていない顧客環境に配置できます。
+バイナリ後方互換性にのみ対応しています。 古いバージョンのアプリケーションとプラットフォームにカスタマイズをコンパイルし、それを新しいバージョンの顧客環境に展開することが可能となります。 コードをコンパイルして展開する際は、展開先の環境で稼働しているバージョンよりも新しいバージョンでコンパイルしたコードを展開することはできません。
 
 ### <a name="design-time-compatibility"></a>デザイン時の互換性
 

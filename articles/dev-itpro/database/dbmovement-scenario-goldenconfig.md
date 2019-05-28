@@ -3,7 +3,7 @@ title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 4e211952765364f97ee9abb983bcff9f6721484c
-ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
+ms.openlocfilehash: 3418fc37315905391b5fed45d2736152914b5be0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "771270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537094"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -108,7 +108,7 @@ update sysglobalconfiguration
 set value = 1
 where name = 'TEMPTABLEINAXDB'
 
-drop procedure XU_DisableEnableNonClusteredIndexes
+drop procedure if exists XU_DisableEnableNonClusteredIndexes
 drop procedure if exists SP_ConfigureTablesForChangeTracking
 drop procedure if exists SP_ConfigureTablesForChangeTracking_V2
 drop schema [NT AUTHORITY\NETWORK SERVICE]

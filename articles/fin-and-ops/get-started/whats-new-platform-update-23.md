@@ -18,11 +18,11 @@ ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
 ms.openlocfilehash: f55f94516f4ac771ef60db0a8f2074aec72acb17
-ms.sourcegitcommit: 0ae919c9596f04471192c91408283971ceba174d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "878838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1508237"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 

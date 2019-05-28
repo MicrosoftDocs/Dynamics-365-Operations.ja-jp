@@ -16,11 +16,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d9a06a67f851e4a73df90f999683d5ea27f38e66
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365503"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1543936"
 ---
 # <a name="create-an-organization-report-hierarchy"></a>組織レポート階層の作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "365503"
 
 1. [原価会計] > [分析コード] > [分析コード階層] に移動します。
 2. [新規] をクリックします。
-3. [HierarchyTypeComboBox] フィールドでは、「分析コード分類階層」を選択します。
+3. HierarchyTypeComboBox フィールドでは、「分析コード分類階層」を選択します。
     * [分析コード分類階層] を選択します。 [分析コード分類階層] タイプはルールの定義、およびレポート用に使用します。 コスト オブジェクト、コスト要素、および統計分析コードなどのすべての分析コードをサポートします。  
 4. [作成] をクリックします。
 5. [分析コード階層名] フィールドで、「組織 USP2」を入力します。

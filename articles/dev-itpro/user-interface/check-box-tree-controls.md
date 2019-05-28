@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fb7a5a3475ed18553f562fbe7f921d570109cf5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3ea592328e969fc2b1a0fc7f0d6f0d8c6d5a3500
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369394"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537331"
 ---
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 

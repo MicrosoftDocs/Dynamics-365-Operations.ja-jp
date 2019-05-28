@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2c9d40e65dad4032d44ad7e94f925e6b6b74a199
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 35c3a86f3c818228b7993be7da7ba8b48915ffb3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368524"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537103"
 ---
 # <a name="complete-the-azure-resource-manager-arm-onboarding-process"></a>Azure Resource Manager (ARM) の研修プロセスを完了します。
 

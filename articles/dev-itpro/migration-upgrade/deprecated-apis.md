@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57ab578355e1baf97f5bf272197fb9b0dcf07ef6
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 4fbce7082fd1a2dcda4c80cbca6ba68b1a719249
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773815"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537191"
 ---
 # <a name="deprecated-apis-june-2017"></a>非推奨 API (2017 年 6 月)
 

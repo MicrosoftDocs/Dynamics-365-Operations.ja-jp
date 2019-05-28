@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb0632ee46ff4680184c94b9da0910ade158d2b0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 743890900936414bd239d7ee555cb64d2706a4cc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369359"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506054"
 ---
 # <a name="upgrades-updates-and-hotfixes-home-page"></a>アップグレード、更新プログラム、および修正プログラム ホームページ
 

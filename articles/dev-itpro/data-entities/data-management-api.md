@@ -2,7 +2,7 @@
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
 author: Sunil-Garg
-ms.date: 12/26/2018
+ms.date: 05/09/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: c14a98d67079cbcbc3009ad525cc470095d3b854
-ms.sourcegitcommit: 313e13afe17be45a53ae71bfee20ccb616fca62b
+ms.openlocfilehash: 773e6d98cfd1f090613f5b11e5de606aefdd948d
+ms.sourcegitcommit: 0ae1a94c88dbf56e9b45e45ada980f7136ae640a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "380282"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539153"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -41,7 +41,7 @@ Finance and Operations の 2 つの API である、データ管理フレーム�
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
 | サービス タイプ        | 顧客サービス | データ プロトコル (OData) アクションを開きます |
-| 在庫状態        | Microsoft Dynamics AX 7.0 (2016 年 2 月) (RTW) およびそれ以降 | Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
+| 在庫状態        | Microsoft Dynamics Finance and Operations (2016年2月) 以降。 注意: この機能は、オンプレミス バージョンの Dynamics 365 for Finance and Operations には対応していません。 | Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
 
 定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 このトピックの残りの部分では、データ管理フレームワークのパッケージ API について説明します。
 
@@ -57,6 +57,79 @@ Finance and Operations の 2 つの API である、データ管理フレーム�
 ## <a name="import-apis"></a>API のインポート
 
 ファイル (データ パッケージ) のインポートには、次の API が使用されます。
+
+### <a name="getimportstagingerrorfileurl"></a>GetImportStagingErrorFileUrl
+
+GetImportStagingErrorFileUrl API は、エラーファイルのURLを取得します。エラーファイルには単一のエンティティに対するインポートの過程で、ステージング段階で失敗したデータが格納されています。 エラーファイルが生成されなかった場合は、空の文字列が返されます。
+
+POST /Data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportStagingErrorFileUrl
+
+    Body
+    {
+        "executionId":"<string>",
+        "entityName":"<string>"
+    }
+
+
+    Successful Response:
+
+    HTTP/1.1 200 OK
+    {
+      "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+      "value":"<errorfileurl>"
+    }
+
+**入力パラメーター**
+
+| パラメーター     | 説明 |
+|---------------------|--------------------------------------|
+| string executionId          | インポート処理の実行ID。 |
+| string entityName        | エラー ファイルの取得対象となるエンティティの名前。 |
+
+
+**出力パラメーター**
+
+| パラメーター         | 説明 |
+|-------------------|-------------|
+| string errorkeysfileurl | エラーファイルのURL。 エラーファイルが生成されなかった場合は、空の戻り値が返されます。 |
+
+
+### <a name="generateimporttargeterrorkeysfile"></a>GenerateImportTargetErrorKeysFile
+
+GenerateImportTargetErrorKeysFile API は、エラーファイルを生成します。エラーファイルには単一のエンティティに対するインポートの過程で、ステージングからターゲットの段階で失敗したインポート レコードのキーが格納されています。  
+
+このAPIがtrueを返す場合は、GetImportTargetErrorKeysFileUrl API を使用して、生成されたエラーキーファイルのURLを取得します。
+
+
+POST /Data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GenerateImportTargetErrorKeysFile
+
+    Body
+
+    {
+      "executionId":"<string>",
+      "entityName":"<string>"
+    }
+
+    Successful Response:
+
+    HTTP/1.1 200 OK
+    {
+      "@odata.context":"https://<baseurl>/data/$metadata#Edm.Boolean",
+      "value": <errorsExist>
+    }
+
+**入力パラメーター**
+
+| パラメーター     | 説明 |
+|---------------------|--------------------------------------|
+| string executionId          | インポート処理の実行ID。 |
+| string entityName        | エラー ファイルの取得対象となるエンティティの名前。 |
+
+**出力パラメーター**
+
+| パラメーター     | 説明 |
+|---------------------|--------------------------------------|
+| ブール値エラーが発生しています     | インポートエラーが発生した場合はtrue、 インポートエラーが発生しなかった場合はfalseとします |
 
 ### <a name="getimporttargeterrorkeysfileurl"></a>GetImportTargetErrorKeysFileUrl
 
@@ -120,6 +193,7 @@ HTTP/1.1 200 OK
 | パラメーター         | 説明 |
 |-------------------|-------------|
 | string errorkeysfileurl | エラー キー ファイルが使用可能な場合、そのファイルの URL。 エラー ファイルがまだ生成中の場合、またはエラー ファイルが存在しない場合は、このメソッドは空の文字列を返します。 |
+
 
 ### <a name="getazurewritableurl"></a>GetAzureWritableUrl
 

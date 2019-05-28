@@ -16,11 +16,11 @@ ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 2b1ba37a3c96a961c4cab2d0b642c84f9f9dffea
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842498"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537087"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
 

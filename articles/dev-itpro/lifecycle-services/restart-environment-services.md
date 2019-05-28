@@ -16,11 +16,11 @@ ms.author: manado
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: dcee37628ee3c9230c1c51bcf8956f27827d6124
-ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "898408"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537475"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 

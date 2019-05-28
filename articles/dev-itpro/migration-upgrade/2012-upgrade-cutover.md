@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: bf662bd96bd26e342e696c6de6902d2fc15636aa
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 28b7d56c29ec9f958acf4a89ce9780158ad861cc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368648"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537219"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 

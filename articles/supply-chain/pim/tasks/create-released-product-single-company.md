@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9265ee4311ac89ae88ff7dd089519251828b1e3c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "315961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552627"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>1 つの会社に対するリリース済製品の作成
 
@@ -90,16 +90,16 @@ ms.locfileid: "315961"
 
 ## <a name="add-financial-dimensions"></a>財務分析コードの追加
 1. [財務分析コード] セクションを展開または折りたたみます。
-2. [BusinessUnit] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+2. BusinessUnit フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 3. 一覧で、目的のレコードを見つけ、選択します。
 4. 一覧で、選択された行のリンクをクリックします。
-5. [CostCenter] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+5. CostCenter フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 6. 一覧で、目的のレコードを見つけ、選択します。
 7. 一覧で、選択された行のリンクをクリックします。
 8. [部門] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 9. 一覧で、目的のレコードを見つけ、選択します。
 10. 一覧で、選択された行のリンクをクリックします。
-11. [ItemGroup] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+11. ItemGroup フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 12. 一覧で、目的のレコードを見つけ、選択します。
 13. 一覧で、選択された行のリンクをクリックします。
 

@@ -18,11 +18,11 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7bbe43f5c112583b7c6e3b4a9f63b02c99a4ac02
-ms.sourcegitcommit: 5f76f1f458e93176a102ca7b4d40ec331748144e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "977219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537499"
 ---
 # <a name="microsoft-dynamics-365-translation-service"></a>Microsoft Dynamics 365 Translation Service
 

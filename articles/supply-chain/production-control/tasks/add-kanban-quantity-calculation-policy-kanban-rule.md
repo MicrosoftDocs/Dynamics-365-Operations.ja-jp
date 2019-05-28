@@ -17,11 +17,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: fffd623104dc403e230128c9234521ad1e39c7bb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "352140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568331"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>かんばん数量計算ポリシーのかんばんルールへの追加
 
@@ -37,7 +37,7 @@ ms.locfileid: "352140"
     * たとえば、「Speaker2016」と入力します。  
 4. [マスター プラン] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 5. 一覧で、目的のレコードを見つけ、選択します。
-    * [StaticPlan] を選択して、需要を計算します。  
+    * StaticPlan を選択して、需要を計算します。  
 6. 一覧で、選択された行のリンクをクリックします。
 7. [保存] をクリックします。
 8. [最小かんばん数量] フィールドに、「1」を入力します。

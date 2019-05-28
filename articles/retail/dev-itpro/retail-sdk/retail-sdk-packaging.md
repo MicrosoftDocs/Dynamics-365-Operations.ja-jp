@@ -18,11 +18,11 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: dff0d0337654c54c58cc1b4f3bf9e52d67f0b72e
-ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "894554"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512637"
 ---
 # <a name="create-retail-deployable-packages"></a>配置可能な小売パッケージの作成
 

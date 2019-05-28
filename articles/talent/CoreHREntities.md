@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 08758dde0b22e5d488b75b31e0b3d4690b78f66d
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "950120"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537109"
 ---
 # <a name="core-hr-and-common-data-service"></a>Core HR および Common Data Service
 

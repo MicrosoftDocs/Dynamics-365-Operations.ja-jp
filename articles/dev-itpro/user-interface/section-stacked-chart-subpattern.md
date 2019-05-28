@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb39a61d4c7bc4791edf84654da4af476da6271b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0e668baa1716f7ed8a68e082cde4a5cda2e63ccb
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369821"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1508796"
 ---
 # <a name="section-stacked-chart-subpattern"></a>セクション積み上げグラフのサブパターン
 

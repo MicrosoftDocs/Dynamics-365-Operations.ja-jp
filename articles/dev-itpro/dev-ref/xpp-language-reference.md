@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5fe5690b1f3a0f14b15fcc70a9ce5aaeb197208
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7eaa2cd3f79363de75f4f9f9af694093b73acd7c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536972"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 

@@ -18,11 +18,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: c957ec8ddc91a59b5b52c3f596a6037379f48b28
-ms.sourcegitcommit: b5e2835e2245414837b7b37056af228dd000f756
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "879864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537608"
 ---
 # <a name="import-the-chinese-golden-tax-data-entity"></a>中国金税データ エンティティのインポート
 

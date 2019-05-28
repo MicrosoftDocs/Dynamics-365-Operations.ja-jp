@@ -3,14 +3,14 @@ title: PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリ
 description: このトピックでは、Microsoft PowerApps および Microsoft Flow を使用する Microsoft Dynamics 365 for Talent の拡張性シナリオのいくつかの例を説明します。
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518442"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>PowerApps と Microsoft Flow を使用した Talent の拡張 - シナリオ例
 
@@ -101,7 +101,21 @@ PowerApps を使用して作成されたアプリケーションは、Attract �
 
 **フロー – SharePoint 統合** テンプレートをダウンロードするには、Microsoft ダウンロード センターの [フロー – SharePoint 統合](https://go.microsoft.com/fwlink/?linkid=2082109) に移動します。
 
+## <a name="admin-console-to-manage-talent-pools"></a>人材プールの管理するための管理コンソール
 
+LinkedIn との統合を有効にすると、自動的に LinkedIn の人材プールを作成します。 採用担当者は LinkedIn を介して InMail を新入社員と交換すると、新入社員にはプロファイルが作成され、Llinkedin 人材プールのメンバーとなります。 この PowerApps アプリは、スキルに基づいて人材プールの候補者を再編成する場合に便利です。
+
+次のタスクを実行するには、この PowerApps アプリを管理コンソールとして実行します。
+
+- 人材プールに候補者をリスト
+- 人材プールから候補者を追加および削除
+- 候補者を別のプールへ移動
+- 候補者を移動する前に、その候補者が人材プールの一部であるかどうかを判断
+- 別の人材プールに移動する前に、その候補者のスキルを確認
+
+この PowerApps アプリは多対多リレーションシップを使用するため、多対多リレーションシップを持つレコードを抽出する必要がある他のシナリオのテンプレートとして使用できます。
+
+**人材プールを扱う管理コンソール**テンプレートをダウンロードするには、Microsoft Download Center で[人材プールを扱う管理コンソール](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) へ移動します。
 
 ## <a name="additional-resources"></a>追加リソース
 

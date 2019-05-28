@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 56f94b82f8b2642b12a993bde7d6bb323da79f98
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360581"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547151"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>製品コンフィギュレーション モデルへ式の制約の追加
 
@@ -43,8 +43,8 @@ ms.locfileid: "360581"
 
 ## <a name="enter-expression"></a>式の入力
 1. [式の編集] をクリックします。
-    * この段階で、タスク記録のユーザー インターフェイスのロックを解除する場合、制約式の構築のため、[IntelliSense] と記号のリストを使用できます。  
-2. [ConstraintBody] フィールドで、「Implies[FrontGrill=="Metal", CornerProtection]」と入力します。
+    * この段階で、タスク記録のユーザー インターフェイスのロックを解除する場合、制約式の構築のため、IntelliSense と記号のリストを使用できます。  
+2. ConstraintBody フィールドで、「Implies[FrontGrill=="Metal", CornerProtection]」と入力します。
     * この式ロジックの状態 : [前グリル] が金属の場合、角の保護オプションを選択する必要があります。  
 3. [検証] をクリックします。
     * 検証機能は、制約式に対して実行され、構文エラーを確認します。  

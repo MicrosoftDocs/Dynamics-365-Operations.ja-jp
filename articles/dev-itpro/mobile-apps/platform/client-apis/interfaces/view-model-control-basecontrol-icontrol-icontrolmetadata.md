@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b521ec2b1881fa5dcbb44667775a817ae75a87d3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3ebf648fff6ecea25362945540ff3a9929b79a1d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369464"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537330"
 ---
 # <a name="controlmetadata-type"></a>ControlMetadata タイプ
 

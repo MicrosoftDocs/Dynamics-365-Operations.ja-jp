@@ -18,11 +18,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e3e8ffa6cee7742de1cd98c9c83d134b6d5e4a89
-ms.sourcegitcommit: 529763612e8af315d588e85ba807a5c849df57bf
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "894681"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528801"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>品目を使用して、基本倉庫が有効な品目の品目を着荷仕訳帳登録します。
 

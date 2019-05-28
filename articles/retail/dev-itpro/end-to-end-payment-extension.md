@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49cce4a45177cec7652d89421d02026ce4f1924d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 60c2324d4c3bb20facad901015aed45d96ef1d2d
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368519"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539446"
 ---
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
@@ -44,8 +44,8 @@ ms.locfileid: "368519"
 
 このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成するために必要な以下の手順について説明します。
 
-- **[支払コネクタの記述](#Write-a-payment-connector):** 支払コネクタは POS と支払ターミナルの間の主要な統合ポイントです。 このステップのセクションでは、支払要求 (たとえば、承認、払い戻し、無効化要求) を支払端末に中継できる、新しい支払コネクタを実装し、設定する方法について説明します。 
-- **[支払プロセッサの記述](#Write-a-payment-processor):** 支払プロセッサは、支払の統合の一部として使用される商社プロパティを定義するために使用します。 このステップのセクションでは、新しい支払プロセッサを実装する方法について説明します。 これには、実装する必要があるインターフェイスおよび従う必要があるパターンに関する情報が含まれています。
+- **[支払コネクタの記述](#write-a-payment-connector):** 支払コネクタは POS と支払ターミナルの間の主要な統合ポイントです。 このステップのセクションでは、支払要求 (たとえば、承認、払い戻し、無効化要求) を支払端末に中継できる、新しい支払コネクタを実装し、設定する方法について説明します。 
+- **[支払プロセッサの記述](#write-a-payment-processor):** 支払プロセッサは、支払の統合の一部として使用される商社プロパティを定義するために使用します。 このステップのセクションでは、新しい支払プロセッサを実装する方法について説明します。 これには、実装する必要があるインターフェイスおよび従う必要があるパターンに関する情報が含まれています。
 
 ## <a name="write-a-payment-connector"></a>支払コネクタの記述
 次のこのセクションでは、新しい支払コネクタを記述する方法について説明します。

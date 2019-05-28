@@ -3,7 +3,7 @@ title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 5ebf72da20a517e67433db9ff7134aa841ee7278
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 7f7ccbee6dbf60a29de4b107277d2d655bba1e3a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975839"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505431"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -91,17 +91,7 @@ ms.locfileid: "975839"
 
 **BusinessEventsBase** 拡張機能を実装するプロセスは簡単です。 **BusinessEventsBase** クラスの拡張、および静的コンストラクター メソッドの実装、プライベート **新規** メソッド、内部状態を保持するメソッド、および **buildContract** メソッドが含まれます。
 
-1. **BusinessEventsBase** クラスを拡張します。
-
-    ```
-    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
-    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
-    ```
-
-    **BusinessEvents** 属性に注意してください。 この属性は、ビジネス イベントの契約、名前、説明、および含まれるモジュールに関する情報を含む、ビジネス イベント フレームワークを提供します。 ラベルは、名前と説明の引数に定義する必要がありますが、ローカライズされたデータの保存を避けるため、「@」記号なしで参照する必要があります。
-
-2. 静的 **newFrom<my_buffer>** メソッドを実装します。 メソッド名の <my_buffer> パートは通常、ビジネス イベント契約を初期化するために使用されるテーブル バッファです。
+1. 静的 **newFrom<my_buffer>** メソッドを実装します。 メソッド名の <my_buffer> パートは通常、ビジネス イベント契約を初期化するために使用されるテーブル バッファです。
 
     ```
     static public SalesInvoicePostedBusinessEvent
@@ -113,6 +103,16 @@ ms.locfileid: "975839"
         return businessEvent;
     }
     ```
+
+2. **BusinessEventsBase** クラスを拡張します。
+
+    ```
+    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
+    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+    ```
+
+    **BusinessEvents** 属性に注意してください。 この属性は、ビジネス イベントの契約、名前、説明、および含まれるモジュールに関する情報を含む、ビジネス イベント フレームワークを提供します。 ラベルは、名前と説明の引数に定義する必要がありますが、ローカライズされたデータの保存を避けるため、「@」記号なしで参照する必要があります。
 
 3. プライベート **新規** メソッドを実装します。 このメソッドは静的コンストラクター メソッドからのみ呼び出されます。
 

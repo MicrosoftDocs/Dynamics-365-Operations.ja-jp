@@ -1,6 +1,6 @@
 ---
-title: メッセージ センター、メッセージ バー、およびメッセージ詳細のよく寄せられる質問
-description: このトピックでは、Microsoft Dynamics AX 2012 で使用されていた Infolog ウィンドウに代わる強力なメッセージング システムについて説明します。
+title: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
+description: このトピックでは、 Microsoft Dynamics AX 2012 に実装されていた Infolog ウィンドウの後継版となる強力なメッセージング システムについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/09/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b552ffcf24966811b09af9cece25aaf92f07c384
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea97288f1cb0c7f793bc0ff10b54681c7a1e3ae2
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537525"
 ---
 # <a name="message-center-message-bar-and-message-details-faq"></a>メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 で使用されていた Infolog ウィンドウに代わる強力なメッセージング システムについて説明します。
+このトピックでは、 Microsoft Dynamics AX 2012 に実装されていた Infolog ウィンドウの後継版となる強力なメッセージング システムについて説明します。
 
 Microsoft Dynamics AX 2012 は汎用ウィンドウを使用して、最近報告された情報のメッセージ、警告、またはエラーの一覧を表示します。 このウィンドウは、適切かつ一般的には情報ログまたは Infolog と呼ばれます。 情報ログは場合によっては有益なツールですが、「one size fits all」アプローチはメッセージの重要度を区別し、ユーザーを中断する必要性において効果がないと判断されました。 より豊富で強力なメッセージング システム:
 

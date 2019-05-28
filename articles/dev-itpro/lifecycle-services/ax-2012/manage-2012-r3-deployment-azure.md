@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 4fbbf4489f1121d08245f03944e1493b9944e40b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8971022c23da2064c90d1251e5e3378b95b2ec77
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537376"
 ---
 # <a name="manage-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 の 配置管理
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ceea39d29c5eb594f2f8b7f952f5e85cf37955
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 971a5df879cb9d4d55f5860c475a1012bc17be22
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368560"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537139"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 

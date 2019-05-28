@@ -18,11 +18,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 326a0039d2769ee5f459a87c302c93604d2379aa
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "337558"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545882"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。
 
@@ -44,7 +44,7 @@ ms.locfileid: "337558"
     * [在庫状態の表示] フィールドは、モバイル デバイス上の倉庫の作業者に、手持在庫の在庫のステータスが表示されるかどうかを決定します。  
 7. [指示者] フィールドで [システム グループ化] を選択します。
     * [指示者] フィールドから何かを選択すると、このページの [概要] セクションに追加のフィールドが表示されます。 表示されるフィールドは選択内容によって異なります。 [システム グループ化] を選択すると、新しいフィールドが 2 つ追加されます。 これらについて以下に詳しく説明します。  
-8. [システム グループ化] フィールドで [WorkPoolId] を選択します。
+8. システム グループ化フィールドで 「WorkPoolId」 を選択します。
     * 倉庫作業者が、このメニュー項目を開くと、[作業プール ID] をスキャンするように求められます。 この [作業プール ID] を使用するワーク オーダーすべてと、このメニュー項目に追加された作業クラスの 1 つを使用するオープン ワーク オーダー明細行が、ユーザーにプッシュされます。  
 9. [システム グループ化ラベル] フィールドに値を入力します。
     * これが、モバイル デバイスのユーザーに表示されるテキストです。 たとえば、「Work pool」と入力できます。  

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1d0ec4c5aa5a3abf9ab6c38107b90b61c69c588
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7824b5bdf97c356525ae73bf09897e3f8aed2677
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369927"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539450"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
@@ -80,7 +80,7 @@ Finance and Operations で提供される **仕入先管理者 (外部)** およ
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>見込み仕入先がオンボーディングされたときに使用されるセキュリティ ロールの設定
 
-見込み仕入先の登録要求によって開始されるオンボードの仕入先には、外部のセキュリティ ロールを設定する必要があります。 このロールは、**ユーザー リクエスト ワークフロー (プラットフォーム)** タイプのワークフローによって制御されるプロビジョニングのプロセス中に新規ユーザーに割り当てられます。 詳細については、このトピックで後述の [仕入先コラボレーションのユーザー要求を処理するワークフローの設定](#Set-up-workflows-to-process-vendor-collaboration-user-requests) を参照してください。
+見込み仕入先の登録要求によって開始されるオンボードの仕入先には、外部のセキュリティ ロールを設定する必要があります。 このロールは、**ユーザー リクエスト ワークフロー (プラットフォーム)** タイプのワークフローによって制御されるプロビジョニングのプロセス中に新規ユーザーに割り当てられます。 詳細については、このトピックで後述の [仕入先コラボレーションのユーザー要求を処理するワークフローの設定](#set-up-workflows-to-process-vendor-collaboration-user-requests) を参照してください。
 
 見込み仕入先のオンボードを行う方法の詳細については、[仕入先のオンボーディング](vendor-onboarding.md) を参照してください。
 

@@ -18,11 +18,11 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552816"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>SharePoint からのデータ インポートをコンフィギュレーションする
 
@@ -117,7 +117,7 @@ ms.locfileid: "331095"
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>SharePoint フォルダーにある Excel ファイルからのデータをインポートする
 1. SharePoint では、仕入先トランザクションを含む Microsoft Excel ファイル **1099import data.xlsx** を、以前に作成した**ファイルのインポート ソース (メイン)** SharePoint フォルダーにアップロードします。
 
-    [![SharePointコンテンツ – インポート用 Microsoft Excel ファイル](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![SharePoint コンテンツ – インポート用 Microsoft Excel ファイル](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. Finance and Operations では、**ソースのファイルの状態**ページで、**更新**を選択してページを更新します。 このページに表示される SharePoint にアップロードされた Excel ファイルの状態が**準備完了**となることに注意してください。 次のステータスは、現在サポートされています。
 

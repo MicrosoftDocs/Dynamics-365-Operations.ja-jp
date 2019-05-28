@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "314512"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561646"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
 
@@ -49,7 +49,7 @@ ms.locfileid: "314512"
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| 財務レポートのデータ マートを再構築します。 | Dynamics AX データベースを環境間で移動したり、Dynamics AX 環境への他の侵害となる変更をする場合、財務レポート データベースを再構築する必要があります。 その再構築をするために Windows PowerShell スクリプトが提供されています。 |
+| 財務レポートのデータ マートを再構築します。 | Dynamics AX データベースを環境間で移動したり、環境への他の侵害となる変更をする場合、財務レポート データベースを再構築する必要があります。 その再構築をするために Windows PowerShell スクリプトが提供されています。 |
 | 有効ではないレポート デザイナー オプションを選択する必要はありません。 | Management Reporter の市場バージョンで使用されていたいくつかのレポート デザイナー オプションは、この Dynamics AX バージョンには適用されません。 これらのオプションは、財務諸表のデザイン、出力、およびリンクに関連していました。 これらのオプションは、ユーザーによるエラーを防ぐために財務諸表デザイナーから削除されました。 |
 
 ## <a name="financial-management"></a>財務管理

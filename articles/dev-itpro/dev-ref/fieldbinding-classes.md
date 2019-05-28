@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc20b0653558ad7391c1c768fa3fb65f120dec80
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e2e6792725dc9006b519a6b7a8bd30afe49e724e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370032"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537050"
 ---
 # <a name="f-classes-fieldbinding-to-formbuildanimatecontrol"></a>F クラス (FieldBinding から FormBuildAnimateControl)
 
@@ -332,10 +332,10 @@ fvalue
 | public boolean isLoadedForInference()                                                                                            |                                                                                                                           |
 | public str name(\[str value\])                                                                                                   | フォーム、レポート、テーブル、クエリ、または別の MSDAX アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。 |
 | public Guid origin(\[Guid value\])                                                                                               |                                                                                                                           |
-| ::::public static boolean formKernelObjectHasMethod (Object kernelObject, str methodName)                                           |                                                                                                                           |
-| ::::public static boolean formObjectSetHasMethod (FormObjectSet formObjectSet, str methodName)                                      |                                                                                                                           |
-| ::::public static boolean formRunHasMethod (xFormRun formRun, str methodName)                                                       |                                                                                                                           |
-| ::::public static str getSetupUserQueryElementName (MenuItemType menuItemType, str menuItemName)                                    |                                                                                                                           |
+| ::public static boolean formKernelObjectHasMethod (Object kernelObject, str methodName)                                           |                                                                                                                           |
+| ::public static boolean formObjectSetHasMethod (FormObjectSet formObjectSet, str methodName)                                      |                                                                                                                           |
+| ::public static boolean formRunHasMethod (xFormRun formRun, str methodName)                                                       |                                                                                                                           |
+| ::public static str getSetupUserQueryElementName (MenuItemType menuItemType, str menuItemName)                                    |                                                                                                                           |
 | public void new(\[str name\], \[boolean buildMode\])                                                                             | Form クラスの新しいインスタンスを初期化します。                                                                             |
 | public void inInitializeDesign(\[boolean value\])                                                                                |                                                                                                                           |
 | public void save()                                                                                                               |                                                                                                                           |

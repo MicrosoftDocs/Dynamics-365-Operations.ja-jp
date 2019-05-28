@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: cae6334cd39a91eaf3a2a79f30edc705f484bc8c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333579"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571760"
 ---
 # <a name="budget-planning-justification-documents"></a>予算計画の妥当性ドキュメント
 
@@ -59,7 +59,7 @@ ms.locfileid: "333579"
 1.  Finance and Operations で、**予算作成** &gt; **設定** &gt; **予算計画** &gt; **妥当性ドキュメント テンプレート**の順に移動します。
 2.  **新規**をクリックして、新しく作成された Microsoft Word 文書を参照します。
 3.  テンプレートの表示名と説明を入力します。 **OK** をクリックします。
-4.  **予算作成** &gt; **設定** &gt; **予算計画** &gt; **予算計画プロセス**の順に移動します。
+4.  **予算作成** &gt; **設定** &gt; **予算** **計画** &gt; **予算計画プロセス**の順に移動します。
 5.  妥当性テンプレートを使用する必要があるプロセスを選択して、**編集**をクリックします。
 6.  **妥当性ドキュメント テンプレート**フィールドで、適切なテンプレートを選択して保存します。
 

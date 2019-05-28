@@ -1,28 +1,28 @@
 ---
 title: BPM ライブラリと Azure DevOps の同期
 description: このトピックでは、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。
-author: kfend
+author: amarshall
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ntecklu
+ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 748df4712bfdbff14ee09f32aed6c415065675e9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 37f2de832ba3b4d0a93aa4dce13c6295f9609fdc
+ms.sourcegitcommit: f7a1e74a639dfbe470f7d57d4fc55e3bf4c6a74a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369025"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540879"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
@@ -113,16 +113,28 @@ BPM ライブラリを Azure DevOps プロジェクトと同期させるには�
 
 ![レビュー列の例](./media/newbpm_BlogPost28.png)
 
-BPM ライブラリが Azure DevOps プロジェクトと同期され、プロセスを BPM でレビュー済みとマークすると、そのステータスは Azure DevOps の **Active** に変更されます。
-
 Azure DevOps に接続されている業務プロセスを確認するとき、Azure DevOps プロジェクトに要求を直接追加することができます。
 
 1. ビジネス プロセスを選択します。
 2. 右ウィンドウの**要件**タブで、**要件を追加**を選択します。
 3. 名前、説明、およびタイプを入力し、次に**作成**を選択します。
 
-    ![要件を作成しています](./media/newbpm_BlogPost29.png)
-
     Azure DevOps では、現在の業務プロセスに関連付けられている要求作業項目が作成されます。
 
 現在の業務プロセスに関連付けられている Azure DevOps 作業項目に移動するには、**要件** タブで適切なリンクを選択します。
+
+## <a name="common-syncing-errors"></a>一般的な同期エラー
+
+BPM から Azure DevOps への同期が失敗した場合、失敗したプロセス名、作業項目の種類、およびエラー メッセージが表示されます。 
+
+![BPM 同期エラー](./media/BPMsyncError.jpg)
+
+ここでいくつか一般的な原因と、エラーを解決するために推奨するアクションを示します。
+
+| **考えられる原因** | **エラー メッセージ** | **推奨される解決策** | 
+|---------|--------|--------|
+| 必須フィールドが追加されました | 作業項目の作成に失敗しました。 必須フィールドがこの作業項目の種類に追加されましたが、サポートされていません。 この要件を削除するか、プロセス テンプレートで既定値を提供して、操作をブロック解除します。 | 必須フィールドを削除するか、既定値を提供します。 | 
+| 作業項目の種類が無効です | 作業項目の作成に失敗しました。 作業項目の種類がプロセス テンプレートで無効になっています。 作業項目の種類を有効にして、操作をブロック解除します。 | 作業項目の種類をプロセス テンプレートで有効にします。 |  
+| 更新する作業項目が見つかりませんでした | 作業項目の更新に失敗しました。 作業項目が存在しないか、読み取るためのアクセス許可がありません。 プロジェクト設定で PAT コンフィギュレーションを確認するか、作業項目が DevOps プロジェクトから直接削除されている場合は作業項目を復元します。 | 削除された場合はごみ箱から作業項目を復元するか、新しい個人用アクセス トークン (PAT) を作成して完全なアクセス許可があることを確認します。 |  
+| 個人用アクセス トークンの期限が切れています | Visual Studio Team Services との同期に失敗しました。 要求応答は次のとおりです: 無許可。 PAT が正しく設定されていてまだ有効なことを確認し、エラーが引き続き発生する場合は再試行してサポートに連絡してください。 | Azure DevOps から新しい個人用アクセス トークン (PAT) を作成し、LCS プロジェクト設定で PAT 値を更新します。 | 
+| 一般的なエラー | Visual Studio Team Services との同期に失敗しました。 要求応答は次のとおりです: {0}。 PAT が正しく設定されていてまだ有効なことを確認し、エラーが引き続き発生する場合は再試行してサポートに連絡してください。 | 同期エラーの原因となった要求応答で、顧客サポートに問い合わせてください。 | 

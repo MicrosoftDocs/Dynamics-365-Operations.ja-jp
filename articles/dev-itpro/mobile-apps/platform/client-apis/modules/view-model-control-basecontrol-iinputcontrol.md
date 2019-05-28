@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9ff053a652f68c3e979e908a92eba3e7ed057051
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0ce178501f25c456e143d3a6ebe2ae8cc9a3c595
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537310"
 ---
 # <a name="input-module"></a>入力モジュール
 

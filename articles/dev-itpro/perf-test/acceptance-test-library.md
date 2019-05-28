@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: dcc7ecd5099402bc0f5e84b778f2486f009011bf
-ms.sourcegitcommit: 185d13bc3e2b2a51569471368671d5cc3023ab14
+ms.openlocfilehash: 126d2624d6f7df48bc5a5324b11b57ad3879b713
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992912"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537289"
 ---
 # <a name="acceptance-test-library"></a>承認テスト ライブラリ
 
@@ -59,8 +59,8 @@ salesLine.reserve().setQty(3).execute();
 
 // Verify inventory transactions that are associated with the sales line using the inventoryTransactions query and specifications
 salesLine.inventoryTransactions().assertExpectedLines(
-    invent.trans().spec().withStatusIssue(StatusIssue::OnOrder).withInventDims([warehouse]).withQty(-3),
-    invent.trans().spec().withStatusIssue(StatusIssue::ReservPhysical).withInventDims([warehouse]).withQty(-7)); 
+    invent.trans().spec().withStatusIssue(StatusIssue::OnOrder).withInventDims([warehouse]).withQty(-7),
+    invent.trans().spec().withStatusIssue(StatusIssue::ReservPhysical).withInventDims([warehouse]).withQty(-3)); 
 ```
 
 ## <a name="concepts"></a>概念

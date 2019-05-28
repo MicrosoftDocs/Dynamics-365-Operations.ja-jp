@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea5c999dc8739a65b42e4be9f07f535c07f40d25
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 06e85c33b1a02c85a67850a663cafba8d64d14f6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369808"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536983"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -156,7 +156,7 @@ ms.locfileid: "369808"
 </tr>
 <tr class="even">
 <td><strong>&lt;/strong&gt;</td>
-<td>文字列でエスケープします。 余分な引用符およびタブの <span class="code">\t</span>\t などの特定の文字をエスケープします。</td>
+<td>文字列でエスケープします。 余分な引用符およびタブの <span class="code">\t</span> などの特定の文字をエスケープします。</td>
 <td></td>
 </tr>
 <tr class="odd">

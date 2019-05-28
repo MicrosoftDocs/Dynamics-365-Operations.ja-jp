@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-alexec
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 155c521969626c61434f1c97ae86087e399bf46d
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 035acda7b07d4254cf88db5c3dcdf346f23ffcf9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537508"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -169,7 +169,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 3. ソリューションをリビルドします。
 4. **実行**コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
 
-### <a name="set-up-required-parameters-in-retail-headquarters"></a>小売用バックオフィスで要求されるパラメーターを設定
+### <a name="set-up-required-parameters-in-retail-headquarters"></a>Retail Headquartersにて必要パラメーターを設定します。
 
 #### <a name="set-up-the-registration-process"></a>登録プロセスの設定
 
@@ -235,4 +235,4 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
-6. [小売用バックオフィスで要求されるパラメーターを設定](#set-up-required-parameters-in-retail-headquarters)を完了します
+6. [Retail Headquartersにおいて設定が必要なパラメーター](#set-up-required-parameters-in-retail-headquarters)の入力を完了します

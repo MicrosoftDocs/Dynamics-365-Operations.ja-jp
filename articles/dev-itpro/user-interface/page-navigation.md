@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58e9df441f07d72166dac3d67500a51807133852
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 25d6654c8ee0b5c4416f09aca57812f316e4f4da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512709"
 ---
 # <a name="navigation-concepts"></a>ナビゲーション概念
 

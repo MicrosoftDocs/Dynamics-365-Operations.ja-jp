@@ -16,11 +16,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e82e40d67547f5932a4805f2580e8c9f58def284
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "366538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569986"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>予算に基づく発注書の作成
 

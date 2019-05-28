@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fe22915375f31ce8273b744685057dac2aff621c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1cf8dcfb993d934e22d5a791e1f32c9b26d3d1e9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368896"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512515"
 ---
 # <a name="retail-store-scale-unit"></a>Retail Store Scale Unit
 

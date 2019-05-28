@@ -3,7 +3,7 @@ title: Retail Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2019
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a342791ff04c758e74830fd8aa3af93082360025
-ms.sourcegitcommit: 60aa392e7762d9b62baf007be27dec043bd078df
+ms.openlocfilehash: 6de12858d9cbac7c7253459edc3776fbf5596e75
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "884587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537541"
 ---
 # <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
@@ -145,6 +145,10 @@ ms.locfileid: "884587"
 | PostRecallCustomerOrderTrigger    | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。  |
 | PrePickUpCustomerOrderLinesTrigger    | 解約可能     | 顧客注文明細行が選択される前に実行されます。  |
 | PreChangeShippingOriginTrigger    | 解約可能     | 顧客先発注時に出荷元が変更される前に実行されます。|
+| PreShipFulfillmentLinesTrigger    | 解約可能     | 出荷ボタンをクリックすることで、注文フルフィルメント ビューから出荷が行われる前に実行されます。|
+| PreMarkFulfillmentLinesAsPackedTrigger    | 解約可能     | 梱包ボタンをクリックすることで、注文フルフィルメント ビューから梱包としてマーク オプションがトリガーされる前に実行されます。|
+| PreCreatePackingSlipTrigger   | 解約可能     | 梱包明細の作成オプションがトリガーされる前に、注文フルフィルメント ビューから梱包ボタンをクリックして実行されます。|
+
 
 ## <a name="shift-triggers"></a>シフト トリガー
 | トリガー              | 型           | 説明                                             |

@@ -3,7 +3,7 @@ title: Finance and Operations から Field Service への在庫レベル情報�
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Field Service に在庫レベル情報を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: c7dce4427810b93e0ee4f1a27881c2b1b04fb125
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842559"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1535701"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Finance and Operations から Field Service への在庫レベル情報の同期 
 
@@ -75,6 +75,14 @@ Finance and Operations は、在庫レベルのマスターとして機能しま
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
+### <a name="data-integration"></a>データ統合
+プロジェクトを機能させるには、統合キーが msdynce_externalproductinventories 用に更新されていることを確認する必要があります。
+1.  **データ統合 > 接続セット**に移動します。
+2.  使用する接続設定を選択します。
+3.  **統合キー**タブで、次のキーが msdynce_externalproductinventories に追加されていることを確認します。
+      - msdynce_productnumber (製品番号)
+      - msdynce_warehouseid (倉庫 ID)
+      
 ### <a name="data-integration-project"></a>データ統合プロジェクト
 フィルターを高度なクエリおよびフィルタリングに適用し、特定の製品および倉庫のみが在庫レベル情報を Finance and Operations から Field Service に送信するようにします。
 

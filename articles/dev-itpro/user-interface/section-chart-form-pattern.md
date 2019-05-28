@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a25c66c54b72f23ee4e7ecbf34b5e9c11ef09065
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 654fc486251d818aee5894fc70d80a5d3cdee766
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369860"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537479"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 

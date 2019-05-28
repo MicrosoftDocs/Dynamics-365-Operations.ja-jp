@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: 財務管理ホーム ページ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: 206434
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d57d3bdc5354823888d695ed6bf734584bff95d1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513268"
 ---
-
 # <a name="financial-management-home-page"></a>財務管理ホーム ページ
 
 [!include [banner](includes/banner.md)]

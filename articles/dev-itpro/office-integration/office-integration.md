@@ -3,7 +3,7 @@ title: Office の統合の概念と機能
 description: このトピックでは、Microsoft Office の統合の概念と機能について説明します。
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/18/2018
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84822c38ca77afc3bff5a76cc41c4a6fda4b37a2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ab2a8af52550f0c0275d55722c138317b98705ce
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537359"
 ---
 # <a name="office-integration-concepts-and-features"></a>Office の統合の概念と機能
 
@@ -92,100 +92,6 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 ブックを作成するには、アプリ バーの **ブックの作成** をクリックします。 
 
 エンティティが公開するデータを表示するには、**関連するフォームの表示**をクリックします。 このボタンは、**FormRef** プロパティ値を持つエンティティでのみ有効です。
-
-## <a name="export-api"></a>API のエクスポート
-### <a name="the-open-in-microsoft-office-menu-and-static-exports"></a>Microsoft Office で開くメニューと静的なエクスポート
-
-**Microsoft Office で開く** メニューは、データ ソースを持つすべてのページで使用できます。 **Microsoft Office で開く** メニューには、次の 3 種類のオプションが用意されています。
-
--   **Excel で開く**オプションは、現在のページと同じルート データ ソースを共有するエンティティおよびエンティティに基づくテンプレートに自動的に追加されます。 これらのオプションにより、データを Excel に読み込み、それらのエンティティの OData サービスにデータ変更を公開しやすくなります。
--   **Excel で開く**オプションは、エクスポート API を使用して手動で追加します。 これらのオプションは、カスタム生成のエクスポートまたはカスタム テンプレートのエクスポートとすることができます。
--   **Excel にエクスポート**オプションは、ページ上のすべての表示可能なグリッドに対して自動的に追加されるオプションです。 これらのオプションは、グリッドからのデータの静的なエクスポートです。
-
-### <a name="export-api"></a>API のエクスポート
-
-エクスポート API は、そのページのカスタム エクスポート オプションを提供するためのページで使用されます。 エクスポート API は、開発者が次の作業を実行できる 3 つの部分で構成されます。
-
--   ページの **エクスポート** ページに表示されるカスタム エクスポート オプションのセットを提供します。
--   カスタム生成のエクスポートのためのコンテキストを提供します。
--   カスタム テンプレート エクスポートのためのテンプレートを提供します。
-
-### <a name="custom-generated-exports"></a>カスタム生成されたエクスポート
-
-カスタム生成のエクスポートを提供するには、ExporttoExcelIGeneratedCustomExport インターフェイスを実装します。 次に例を示します。
-
-    public class FMCustomer extends FormRun implements ExportToExcelIGeneratedCustomExport
-
-**getExportOptions** メソッドを実装し、返されるリストにエクスポート オプションを追加して、エクスポート オプションを追加します。 次に例を示します。
-
-```
-    public List getExportOptions()
-    {
-        List exportOptions = new List(Types::Class); 
-        ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated);
-        exportOption.setDisplayNameWithDataEntity(tablestr(FMCustomerEntity));
-        exportOptions.addEnd(exportOption); 
-        return exportOptions;
-    }
-```
-
-**ExportToExcelExportOption.id()** メソッドをチェックした後、**getDataEntityContext** メソッドを実装して適切な **exportOption** の **ExportToExcelDataEntityContext** を返すことにより、エクスポート コンテキストを提供します。 コンテキストは、生成されるブックに含めるデータ エンティティとフィールドを指定します。 次に例を示します。 
-
-```
-    public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
-    {
-        ExportToExcelDataEntityContext context = null;
-        if (_exportOption.id() == ExportToExcelExportOption::DefaultId)
-        {
-            context = ExportToExcelDataEntityContext::construct(tablestr(FMCustomerEntity), tablefieldgroupstr(FMCustomerEntity, AutoReport));
-        }
-        return context;
-    }
-```
-
-### <a name="custom-template-exports"></a>カスタム テンプレートのエクスポート
-
-カスタム テンプレートのエクスポートを提供するには、**ExportToExcelITemplateCustomExport** インターフェイスを実装します。 次に例を示します。
-
-```
-    public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
-```
-
-**getExportOptions** メソッドを実装し、返されるリストにエクスポート オプションを追加して、エクスポート オプションを追加します。 次に例を示します。
-
-```
-    public List getExportOptions()
-    {
-        List exportOptions = new List(Types::Class);
-        //Other options...
-        ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
-        exportOption2.displayName("Analyze rentals");
-        exportOptions.addEnd(exportOption2);        
-        return exportOptions;
-    }
-```
-
-**ExportToExcelExportOption.id** メソッドをチェックした後、**getTemplate** メソッドを実装して適切な **exportOption** の **System.IO.Stream** を返すことにより、エクスポート テンプレートを提供します。 テンプレートは、アプリケーション オブジェクト ツリー (AOT) のリソースとして保存でき、**Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream** メソッドを使用して実行時に取得できます。 次に例を示します。
-
-```
-    public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
-    {
-        System.IO.Stream stream = null;
-        if (_exportOption.id() == int2str(2))
-        {
-            stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
-        }
-        return stream;
-    }
-```
-
-インターフェイスを満たすために **updateTemplateSettings** メソッドを実装する必要もあります。 最終的に、このメソッドはフィルタリング情報を提供するために使用されますが、その機能はまだ開発中です。 次に例を示します。
-
-```
-    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
-    {
-    }
-```
 
 ## <a name="document-management"></a>ドキュメント管理
 ドキュメントの管理は、Azure Blob storage および SharePoint Online でレコードの添付ファイルの保存をサポートします。 データベースの記憶域は非推奨です。 ドキュメントはアプリケーションを介してのみアクセスでき、データベースのパフォーマンスに悪影響を及ぼさないストレージを提供できるという利点があるため Azure Blob ストレージは、データベースのストレージと同等です。 Azure blob storage は既定でありすぐに動作します。 SharePoint テナントは自動的に検出されるため、O365 ライセンスを持っている場合 SharePoint の記憶域がすぐに機能します。例: TenantA.onmicrosoft.com O365/AAD テナントのユーザーは SharePoint サイトとして TenantA.sharepoint.com を取得します。 ユーザーがドキュメントの管理が無効になっている場合、それを有効にするには、**オプション &gt; 一般 &gt; その他**をクリックし、**ドキュメント処理の有効オプション**を**はい**に設定します。 

@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: bb9f5f4b87fdff12dcc0666f28900732b0c44c9c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371106"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573106"
 ---
 # <a name="inquiries-of-payment-fee-on-journal"></a>仕訳帳の支払手数料の照会
 

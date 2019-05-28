@@ -3,7 +3,7 @@ title: ユーザー エクスペリエンスのパーソナライズ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations を個人用設定する方法について説明します。
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528847"
 ---
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
@@ -75,7 +75,7 @@ Finance and Operations の個人用設定には 3 つの基本クラスがあり
 
 さらに、明示的な個人用設定の最も基本的なタイプは、要素を右クリックし、**個人用設定**を選択することで利用可能です。 (ページ上のすべての要素が個人用に設定できるわけではないことに注意してください。) 個人用設定のこの方法を使用すると、要素のプロパティ ウィンドウが表示されます。
 
-[![要素のプロパティの個人用設定](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![要素のプロパティの個人用設定](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 プロパティ ウィンドウを使用して、次の方法で、要素を個人用に設定できます。
 
@@ -91,7 +91,7 @@ Finance and Operations の個人用設定には 3 つの基本クラスがあり
 
 ページに複数の変更を加える、または他のメカニズム (要素の並べ替えなど) によって利用できない変更を加える場合は、**個人用設定**ツールバーを使用できます。 **個人用設定**ツールバーを開くには、要素のプロパティ ウィンドウで**このフォームのパーソナライズ**を選択します。 各ページのアクション ウィンドウの**オプション**タブ上の**個人用設定**グループにある、**このフォームのパーソナライズ**を選択することもできます。
 
-[![個人用設定ツールバー](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![個人用設定ツールバー](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>ページのナビゲーション
 

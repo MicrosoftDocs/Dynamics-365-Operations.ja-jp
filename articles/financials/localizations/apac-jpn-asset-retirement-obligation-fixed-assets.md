@@ -18,11 +18,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a7a8605027295a6e6cc09958113e1e3c095b45bf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371012"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552473"
 ---
 # <a name="set-up-asset-retirement-obligation-for-japan"></a>日本での資産除去責務の設定
 

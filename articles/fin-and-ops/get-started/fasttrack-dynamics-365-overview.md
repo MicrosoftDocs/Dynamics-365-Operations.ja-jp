@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
-ms.openlocfilehash: 4500820beadb9057244dfbfe58ef5f02d70a3155
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b76cdae060dbc66952816c982c5682f3d09236c6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537418"
 ---
 # <a name="microsoft-fasttrack-for-finance-and-operations"></a>Microsoft FastTrack for Finance and Operations
 

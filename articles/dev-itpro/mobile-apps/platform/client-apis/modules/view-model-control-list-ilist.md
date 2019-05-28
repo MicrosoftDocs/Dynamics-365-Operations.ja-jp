@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ae13379cc0fc4a83092503efdb253f91782381ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5403378365f6f314253b80b6d0904c44d58e11d4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537306"
 ---
 # <a name="list-module"></a>リスト モジュール
 

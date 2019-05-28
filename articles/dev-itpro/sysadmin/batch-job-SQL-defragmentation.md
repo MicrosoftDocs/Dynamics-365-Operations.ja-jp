@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ganas
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform update 22
-ms.openlocfilehash: c02a91b9c8d2e5943b2c4945769e86a6abdda0a6
-ms.sourcegitcommit: 2bced4ab07ac29dbbb6ee87398c5915d58466004
+ms.openlocfilehash: 4e5d9246ea6684b3210395b4d56d74c1f41f0495
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "759718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537138"
 ---
 # <a name="batch-job-to-handle-sql-index-defragmentation"></a>SQL インデックスの最適化を処理するバッチ ジョブ
 

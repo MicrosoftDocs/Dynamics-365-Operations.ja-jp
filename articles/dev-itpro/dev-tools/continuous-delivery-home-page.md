@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8dbf278f287d6d2e72aa765e18b60eede1b2e8b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 50165a4df6cdcec36b232941b83fbd1957c0ab9e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536965"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 
@@ -33,14 +33,15 @@ ms.locfileid: "369666"
 <a name="faq-and-guidelines"></a>よく寄せられる質問とガイドライン
 ------------------
 
-- [開発と継続的な配信のよく寄せられる質問](continuous-delivery-faq.md)
+- [開発と継続的な配信に関するよく寄せられる質問](continuous-delivery-faq.md)
 
 ## <a name="build-and-test-automation"></a>ビルドおよびテストの自動化
-- [継続的ビルドとテストの自動化を使用した開発者トポロジの展開](../perf-test/continuous-build-test-automation.md)
+- [継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md)
 - [テストと検証](../perf-test/testing-validation.md)
-- [PERF103: PerfSDK および Visual Studio Online によるマルチ ユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
+- [PERF103: Visual Studio Online を使用した PerfSDK およびマルチユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
 - [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [クラスおよびメソッドの属性を使用した SysTest フィルター処理](../perf-test/systest-filtering.md)
+- [承認テスト ライブラリ](../perf-test/acceptance-test-library.md)
 
 ### <a name="advanced-topics-in-build-automation"></a>ビルド自動化に関する詳細
 - [ビルド出力からテスト パッケージを除外](exclude-test-packages.md)

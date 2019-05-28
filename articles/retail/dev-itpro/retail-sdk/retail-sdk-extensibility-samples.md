@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 33c2ea2172fd234fed3edf08fc37a0b8ff58cba3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bbfaa8f5822638aa6a7e8268c548aea66db5f32d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512516"
 ---
 # <a name="retail-software-development-kit-sdk-extensibility-samples"></a>Retail ソフトウェア開発キット (SDK) の拡張機能サンプル
 

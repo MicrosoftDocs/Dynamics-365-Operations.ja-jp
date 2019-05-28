@@ -16,18 +16,18 @@ ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d3d3f09bc0dfb0299f9f4ef374eb920f16001cd3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4b3b670219ce5471a275f7900003ecf27bf0461
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368855"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537612"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
 [!include [banner](../includes/banner.md)]
 
-[税エンジン](tax-engine.md) (GTE とも呼ばれる) は、税の適用、計算、転記、および決済を判断する、法律上およびビジネス要求に基づく税の諸規則を決定を構成することができます。 このトピックでは、GTE が税金の適用性を処理する方法を理解するのに役立つ税エンジンコンフィギュレーションについて説明します。
+[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。 このトピックでは GTE が税金の適用性を処理する方法を理解するのに役立つ税エンジン構成について説明します。
 
 > [!NOTE]
 > 税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。
@@ -38,7 +38,7 @@ ms.locfileid: "368855"
 ## <a name="overview"></a>概要
 税の適用性とは、税タイプ、税コンポーネント、または税率が適用される条件です。 たとえば、インドの GST では、ある州から別の州に商品を販売する場合、IGST を請求する必要があります。販売している商品によって税率が決まります。 税エンジンは 2 種類の方法で、税の適用、ルックアップおよび条件を処理します。 ルックアップは主に動的適用ルールを処理するために使用され、条件は静的適用ルールを処理するために使用されます。
 
-以下の GTE コンポーネントは、税の適用に関連しています。
+以下の GTE コンポーネントは、税の適用性に関連しています。
 
 |GTE コンポーネント | ルックアップ/条件 | 備考 |
 |--------------|------------------|----------|

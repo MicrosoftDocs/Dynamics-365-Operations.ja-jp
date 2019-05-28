@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3cf485e8ab08145ae09125df8afde2e3c487cd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 86cf5be96bce7b0e8682143421141a15338a6538
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536974"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 

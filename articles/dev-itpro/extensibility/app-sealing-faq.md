@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c963f5c3e049f886752a0bab7e53169cbc73d497
-ms.sourcegitcommit: 5c785ccfa3af01f39f6d713765036d48ecb4840f
+ms.openlocfilehash: cf05164e2d79d6ca4f999c1d841f4eee0a456ded
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "759724"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1509793"
 ---
 # <a name="extensibility-faq"></a>拡張性 FAQ
 

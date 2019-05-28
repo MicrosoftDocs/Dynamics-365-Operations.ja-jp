@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 296f9aec795432254f965a09028b1d797f451af0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4cc1c0dd57940eaad06fd63464e1f572958383f1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537548"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 

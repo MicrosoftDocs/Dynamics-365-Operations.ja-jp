@@ -18,11 +18,11 @@ ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
 ms.openlocfilehash: 1239f0d77e0e317c730f8c130e0bcc3d5246c95d
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976717"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537140"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 

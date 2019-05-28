@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 44eeaa4c68c4f27d9e02bf2564fe1e188505d803
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: eaeb569b979f2a8a9ec51464f2530c5060905339
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506230"
 ---
 # <a name="define-or-edit-entry-point-permissions"></a>エントリ ポイントのアクセス許可の定義または編集
 

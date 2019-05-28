@@ -1,9 +1,9 @@
 ---
 title: 販売時点管理 (POS) での注文通知の表示
-description: このトピックでは、販売時点管理および注文のフレームワークで注文の通知を有効にする方法について説明します。 最終的には、開発者は注文のフルフィルメント操作以外の操作に、これらの通知を拡張できるようになります。
+description: このトピックでは、販売時点管理および注文のフレームワークで注文の通知を有効にする方法について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361340"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530273"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での注文通知の表示
 
@@ -67,6 +67,10 @@ ms.locfileid: "361340"
 次の図は、ボタン グリッド デザイナーでのライブ コンテンツ設定を示します。
 
 ![ボタン グリッド デザイナーでのライブ コンテンツ設定](./media/ButtonGridDesigner.png "ボタン グリッド デザイナーでのライブ コンテンツ設定")
+
+ボタンに通知カウントを表示するには、正しい画面レイアウトが更新されていることを確認する必要があります。 POS によって使用されている画面レイアウトを確認するには、右上隅の**設定**アイコンを選択し、**画面レイアウト ID** と**レイアウトの解像度**を確認します。 ここで Edge ブラウザを使用して、Dynamics 365 for Finance and Operations の**画面レイアウト**ページに移動し、上の**画面レイアウト ID** と**レイアウトの解像度**を見つけて、**ライブ コンテンツを有効化する**チェックボックスを選択します。 **小売 > 小売 IT > 配送スケジュール**に移動し、レイアウトの変更を同期するために 1090 (レジスター) ジョブを実行します。 
+
+![POS で使用される画面レイアウトの検索](./media/Choose_screen_layout.png "画面レイアウトの検索")
 
 次の図は、さまざまなサイズのボタンに対する**コンテンツの配置**フィールドで、**右上** と **センター** を選択することによる結果を示します。
 

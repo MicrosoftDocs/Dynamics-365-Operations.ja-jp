@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 20bb5b641c3c1a0eac0a3e7489f23da885d25449
-ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
+ms.openlocfilehash: c130d54550cd21115e2fd3df80c8e732385dcfca
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "760776"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512540"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 

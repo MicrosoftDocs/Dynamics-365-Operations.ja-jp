@@ -17,11 +17,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e6c36338cc67855c79ec97d88bb8b633417b85c7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "316421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562464"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>買掛金勘定からの資産の作成と取得
 

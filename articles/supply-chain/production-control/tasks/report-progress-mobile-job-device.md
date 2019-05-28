@@ -18,11 +18,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1f5d06b0165a7a3cf7ed9dab46d0bca4d37fdc12
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330405"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573047"
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>モバイル ジョブ デバイスでの進捗のレポート
 
@@ -35,7 +35,7 @@ ms.locfileid: "330405"
 この手順を実行するには、「システム管理者」または「機械オペレーター」ロールがユーザー アカウントと関連付けられている必要があります。
 
 1. [生産管理] > [製造実行] > [ジョブ カード デバイス] に移動します。
-2. [WorkerTextField] のフィールドで、作業者のバッジを入力します。 USMF のデモ データに、クリスティーナ Portra の「 123 」を入力します。
+2. WorkerTextField のフィールドで、作業者のバッジを入力します。 USMF のデモ データに、クリスティーナ Portra の「 123 」を入力します。
 3. [ログイン] をクリックします。
 4. [フィルター] ボタンをクリックしてください。
 5. [コンフィギュレーション フィルターの適用] チェック ボックスをオンまたはオフにします。 フィルターを設定すると、USMF の生産単位フィルタ 110 を使用できます。
@@ -55,7 +55,7 @@ ms.locfileid: "330405"
 19. [終了] ボタンをクリックします。
 20. ログアウトする場合に選択します。
 21. [OK] をクリックします。
-22. [WorkerTextField] のフィールドで、再度ログインします。 USMF のデモ データ で、作業者「123」を選択できます。
+22. WorkerTextField のフィールドで、再度ログインします。 USMF のデモ データ で、作業者「123」を選択できます。
 23. [ログイン] をクリックします。
 24. [休憩を中止] をクリックします。
 25. [活動] ボタンをクリックします。

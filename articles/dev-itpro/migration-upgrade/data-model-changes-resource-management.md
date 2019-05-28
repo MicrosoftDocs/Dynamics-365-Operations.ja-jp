@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f7b5499458e8dfedaa5e2abb946f7ad6954a2920
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 40fe12f67a32eaaf6784ff14ef3f2b580707c12a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369904"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537210"
 ---
 # <a name="project-resource-scheduling-data-model"></a>プロジェクト リソースのスケジューリング データ モデル
 

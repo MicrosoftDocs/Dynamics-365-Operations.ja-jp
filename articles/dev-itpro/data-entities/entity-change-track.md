@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22bd043c6a21b8fae2f4f76ba21e3556ce3f06a3
-ms.sourcegitcommit: 916c969a89bc436f7ea7ddcc6f3370e4f1eef632
+ms.openlocfilehash: f65224712bbd93d42ce5a2c523bfa24dab1a259e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "378100"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505418"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 65ec59516b56561a1bfe6fe43bac4519b8cef0cc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f46aa1de148c8da3eccf1c3962a2922e28fd2e5
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368764"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505417"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 このトピックでは、特定のエラーが表示されるときのシナリオを示します。 これはエラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。 このトピックが最新の状態になるように、フィードバック依頼を優先するよう努めます。

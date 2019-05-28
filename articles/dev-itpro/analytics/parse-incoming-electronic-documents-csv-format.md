@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 55ee537e4a113091b6e95aed71b195ccf84599ae
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 861ac77ccd75c175d2c720023269b1fa79ef2ac3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368504"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537076"
 ---
 # <a name="parse-incoming-documents-in-csv-format"></a>CSV 形式で受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]

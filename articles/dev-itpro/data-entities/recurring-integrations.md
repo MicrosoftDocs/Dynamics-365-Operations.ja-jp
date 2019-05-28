@@ -3,7 +3,7 @@ title: 定期統合
 description: このトピックでは、定期的な統合について説明します。 データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a5c8e4844b575732bf5be7753ef0535fe0822b2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0fa739009e55b61791db755fdcedca1710da2f12
+ms.sourcegitcommit: 0ae1a94c88dbf56e9b45e45ada980f7136ae640a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368476"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539152"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
@@ -45,6 +45,9 @@ ms.locfileid: "368476"
 
 ## <a name="authorization-for-the-integration-rest-api"></a>統合 REST API の承認
 統合 REST API は、他のサービス エンドポイントと同じ OAuth 2.0 認証モデルを使用します。 統合クライアント アプリケーションがこのエンドポイントを使用する前に、Microsoft Azure Active Directory (Azure AD) にアプリケーション ID を作成し、Finance and Operations に適切なアクセス許可を付与する必要があります。 定期的なジョブを作成して有効にするとき、その定期的なジョブとやり取りする Azure AD アプリケーション ID を入力するように求められます。 したがって、アプリケーション ID をメモしておいてください。
+
+> [!NOTE]
+> この機能は、オンプレミス バージョンの Dynamics 365 for Finance and Operations ではサポートされていません。
 
 ## <a name="set-up-a-data-project-and-recurring-data-jobs"></a>データ プロジェクトと定期的なデータ ジョブを設定
 ### <a name="create-a-data-project"></a>データ プロジェクトの作成

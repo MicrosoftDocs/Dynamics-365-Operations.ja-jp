@@ -3,7 +3,7 @@ title: Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月)
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/26/2017
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7543124ef81fc39ad4841686ce9ab2137c9ead82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 108a3d8a536d7b7601db7facd775f8bb6b0eb7a1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369171"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541304"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations、Enterprise Edition (2017 7 月) の新機能および変更された機能
 
@@ -72,9 +72,7 @@ CFO やアカウント マネージャーは、CFO 概要ワークスペース�
 
 ### <a name="delete-a-main-account-and-dimension-value"></a>主勘定とディメンション値を削除する
 
-会社が稼働するにつれて、不要になったと判断した主勘定や分析コード値があるのが一般的です。 この機能を使用すると、ポストされたトランザクションが存在しない場合でも、主勘定と分析コード値を削除して、元のゴールデン テンプレートをそのまま維持できます。
-
-詳細については、「[財務分析コード](../../financials/general-ledger/financial-dimensions.md)」を参照してください。
+会社が稼働すると、不要になった主勘定や分析コード値が存在することがよくあります。 財務分析コードをいつ削除できるかについての詳細は [財務分析コード](../../financials/general-ledger/financial-dimensions.md) を参照してください。
 
 ### <a name="display-payment-information-for-an-expense"></a>経費の支払情報を表示
 
@@ -687,7 +685,7 @@ Power BI に組み込まれた包括的なレポート作成およびダッシ�
 
 ### <a name="upgrade"></a>アップグレード
 
-Dynamics AX2012 から Dynamics 365 for Finance and Operations へ更新できます。 完全な Dynamics AX 2012 データベースを継承し、AX 2012 コードベース を Finance and Operations に更新することができます。 移行ツールセットを介して Dynamics AX 2009 から Finance and Operations に移行し、マスター データおよび開始残高を持ち出すことができます。
+Dynamics  AX 2012 から Dynamics 365 for Finance and Operations へ更新できます。 完全な Dynamics AX 2012 データベースを継承し、AX 2012 コードベース を Finance and Operations に更新することができます。 移行ツールセットを介して Dynamics AX 2009 から Finance and Operations に移行し、マスター データおよび開始残高を持ち出すことができます。
 
 アップグレードがより予測可能になり、アップグレード プロセスの全体的なコストが削減されます。 アップグレードは、自動分析フェーズで開始されます。このフェーズでは、アップグレードにかかる時間とコストを削減するために必要な準備作業と、Finance and Operations の継続的な将来のコストを定義します。 アップグレード後、自動検証フェーズでは、アップグレード プロセスの成功時に統計および測定値が表示されます。 検証の詳細を使用してアップグレードの状態を迅速に評価できるため、機能テストを続行してサインオフできます。
 
@@ -890,7 +888,7 @@ Microsoft により以前にテストされた周辺機器の詳細について�
 
 ### <a name="upgrade-and-support-for-previous-versions"></a>アップグレードおよび以前のバージョンのサポート
 
-**更新サポート** – Dynamics AX 2012 では、転記済みまたは未転記の履歴データがすべてアップグレードされた小売のデータ アップグレードを実行するオプションがありました。 Dynamics AX2012 R3 から Dynamics 365 for Retail の現在のバージョンに更新できます。 このプラットフォームは、アップグレードに対して、Dynamics AX 2012 R3 のすべての累積的な更新プログラムのバージョンをサポートします。一部の顧客では、既存の Dynamics AX 2012 R3 バージョンで、バック オフィスとチャンネル側がまとめてアップグレードされますが、その他の顧客は N-1 サポートを活用できます。 HQ のデータベースのアップグレードの視点からのすべての Dynamics AX 2012 R3 バージョンをサポートします。 N-1 をサポートしない Dynamics 365 for Retail にアップグレードする場合、小売業者は HQ とチャンネルの両方をアップグレードします。
+**更新サポート** – Dynamics AX 2012 では、転記済みまたは未転記の履歴データがすべてアップグレードされた小売のデータ アップグレードを実行するオプションがありました。 Dynamics AX 2012 R3 から Dynamics 365 for Retail の現在のバージョンに更新できます。 このプラットフォームは、アップグレードに対して、Dynamics AX 2012 R3 のすべての累積的な更新プログラムのバージョンをサポートします。一部の顧客では、既存の Dynamics AX 2012 R3 バージョンで、バック オフィスとチャンネル側がまとめてアップグレードされますが、その他の顧客は N-1 サポートを活用できます。 HQ のデータベースのアップグレードの視点からのすべての Dynamics AX 2012 R3 バージョンをサポートします。 N-1 をサポートしない Dynamics 365 for Retail にアップグレードする場合、小売業者は HQ とチャンネルの両方をアップグレードします。
 
 Retail ユーザーは、Dynamics AX 2012 R3 CU11 以上を使用している場合、既存の店舗に影響を与えずに新しい HQ に対して実行するには、N-1 サポートのオプションを選択することもできます。 HQ でデータベースのアップグレードが完了した後、新しい Dynamics 365 Retail チャネルのサイド コンポーネントは、LCS 手法の一部として行われるため、新しいチャネルはアップグレードされた DB で使用できます。 小売業者は、HQ にアップグレードするときに、チャンネルの N-1 サポートを希望する場合は、チャンネルが 2012 R3 CU11 以上の値であることを確認する必要があります。
 

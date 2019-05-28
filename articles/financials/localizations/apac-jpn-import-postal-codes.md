@@ -17,11 +17,11 @@ ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: e4a876b3a41c92d6247dde581bfb164d3ad9958e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550885"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 

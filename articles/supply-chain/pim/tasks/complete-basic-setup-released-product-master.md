@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0d3a91977c38c0ce0f9fe114bec943c7cb32a5d4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "354785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568775"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>リリース済み製品マスターの基本設定の完了
 
@@ -55,7 +55,7 @@ ms.locfileid: "354785"
 17. [原価の管理] セクションを展開または折りたたみます。
 18. [品目グループ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 19. 一覧で、目的のレコードを見つけ、選択します。
-    * 品目グループは、在庫品目の分類による在庫管理に使用されます。 この手順では [CarAudio] を選択します。  
+    * 品目グループは、在庫品目の分類による在庫管理に使用されます。 この手順では CarAudio を選択します。  
 20. 一覧で、選択された行のリンクをクリックします。
 21. アクション ウィンドウで、[計画] をクリックします。
 22. [既定の注文設定] をクリックします。

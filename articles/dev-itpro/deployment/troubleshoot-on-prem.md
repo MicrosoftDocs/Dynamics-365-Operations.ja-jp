@@ -18,11 +18,11 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.openlocfilehash: 54639b39870f970ae639c128729de21edf3eb4a3
-ms.sourcegitcommit: 89fa3149e628d0bbe3003cc9196b5b164ce3b53e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "881263"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537063"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 

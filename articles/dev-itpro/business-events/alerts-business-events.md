@@ -16,11 +16,11 @@ ms.author: sunilg
 ms.search.validFrom: Platform update 25
 ms.dyn365.ops.version: 2019-02-28
 ms.openlocfilehash: da2242f032b8793d00ea6851134041aed9223033
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505504"
 ---
 # <a name="alerts-as-business-events"></a>ビジネス イベントとしての警告
 

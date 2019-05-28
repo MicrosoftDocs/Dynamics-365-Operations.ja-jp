@@ -3,7 +3,7 @@ title: オンプレミス環境の設定と配置 (Platform update 12 以降)
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 12 以降 にオンプレミス環境を計画、設定、展開する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
-ms.date: 02/07/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 8811b30ab68133d5493ed7e35626140c05420561
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: 664eba0b21a6e9d476710f0598eb4b397770ff4e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537067"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
@@ -57,7 +57,7 @@ Finance and Operations アプリケーションは、次の 3 つの主要なコ
     > 完全なテキスト検索を有効にする必要があります。
 
 - SQL Server Management Studio
-- Standalone Microsoft Azure Service Fabric
+- スタンドアロン Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 以降
 - Windows Server 2016 での Active Directory Federation Services (AD FS)
 - ドメイン コントローラー
@@ -206,19 +206,27 @@ Service Fabric クラスターと展開されているすべてのアプリケ�
 
 自己署名証明書は、テスト目的でのみ使用できます。 便宜上、LCS で提供されるセットアップ スクリプトには、自己署名証明書を生成およびエクスポートするスクリプトが含まれます。 自己署名スクリプトを使用している場合は、後の手順で作成スクリプトを実行するように指示されます。 先に述べたように、これらの証明書はテスト目的でのみ使用できます。
 
+証明書の推奨設定は次のとおりです:
+- 署名アルゴリズム: sha256RSA
+- 署名ハッシュ アルゴリズム: sha256
+- 公開キー: RSA (2048 ビット)
+- Thumbprint アルゴリズム: sha1
+
 | 目的                                      | 説明 | 追加条件 |
 |----------------------------------------------|-------------|-------------------------|
-| SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | 証明書の場合、ドメイン名は、SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが DAX7SQLAOSQLA のコンピューターにホストされている場合、証明書の DNS 名は、DAX7SQLAOSQLA.contoso.com です。 |
-| Service Fabric Server 証明書            | <p>この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。</p> <p> この証明書は、クラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。</p> | ドメインの SSL ワイルドカード証明書を使用することができます。 たとえば、\*.contoso.com です。 **注記:** ワイルド カード証明書は、発行先となるドメインの最初のレベル サブドメインのみをセキュリティ保護できるようにします。<p>この例では、Service Fabric ドメインが sf.d365ffo.onprem.contoso.com であるため、証明書にサブジェクト代替名 (SAN) としてこれを含める必要があります。 証明機関と連携して、追加の SAN を取得する必要があります。</p> |
-| Service Fabric Client 証明書            | この証明書は、クライアントによって Service Fabric クラスターを表示および管理するために使用されます。 | |
-| 証明書の暗号化                     | この証明書は、SQL Server パスワードとユーザー アカウントのパスワードなどの重要な情報を暗号化するために使用されます。  | <p> 証明書は、プロバイダー **Microsoft Enhanced Cryptographic Provider v1.0** を使用して作成する必要があります。 </p><p>証明書キーの使用にはデータ暗号化 (10) が含まれている必要があり、サーバー認証またはクライアント認証は含めないでください。</p><p>詳細については、[Service Fabric アプリケーションでの機密情報の管理](/azure/service-fabric/service-fabric-application-secret-management) を参照してください。</p> |
-| AOS SSL 証明書                          | <p>この証明書は、AOS Web サイトに接続するクライアントに提示されるサーバー証明書としても使用されます。 また、WCF (Windows Communication Foundation) / SOAP (Simple Object Access Protocol) 証明書を有効にするためにも使用されます。</p><p>Service Fabric サーバー証明書として使用するのと同じワイルドカード証明書を使用することができます。</p> | <p>この例では、ドメイン名 ax.d365ffo.onprem.contoso.com を、Service Fabric Server 証明書としてサブジェクト代替名 (SAN) に追加する必要があります。</p> |
-| セッション認証証明書           | この証明書は、AOS がユーザーのセッション情報を保護するために使用します。 | この証明書は、LCS からの展開時に使用されるファイル共有証明書です。 |
-| データの暗号化証明書                  | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | これはプロバイダー **Microsoft Enhanced RSA および AES Cryptographic Provider** を使用して作成する必要があります。 |
-| データ署名の証明書                     | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | これは、データ暗号化証明書とは別のもので、プロバイダー**Microsoft の拡張された RSA および AES 暗号化プロバイダー**を使用して作成する必要があります。 |
-| 財務報告クライアント証明書       | この証明書は、財務報告サービスと AOS 間の通信を保護するのに役立ちます。   この証明書を使用して、財務報告サービスと AOS 間の通信を保護します。 |  |
-| 報告証明書                        | この証明書を使用して、SSRS と AOS 間の通信を保護します。| **財務報告クライアント証明書を再利用しないでください。** |
-| オンプレミス ローカル エージェント証明書           | <p>この証明書は、オンプレミスと LCS でホストされているローカル エージェント間の通信を保護するのに役立ちます。</p><p>この証明書を使用すると、Azure AD テナントに代わってローカル エージェントが動作し、LCS と通信して配置を編成および監視することができます。</p><p>**注記:** テナントにはオンプレミス ローカル エージェント証明書が 1 つだけ必要です。</p> | |
+| SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | <p>証明書の場合、ドメイン名は SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが DAX7SQLAOSQLA のコンピューターにホストされている場合、証明書の DNS 名は、DAX7SQLAOSQLA.contoso.com です。</p> <p>CN: DAX7SQLAOSQLA.contoso.com <br> DNS 名: DAX7SQLAOSQLA.contoso.com</p> |
+| Service Fabric Server 証明書            | <p>この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。</p> <p> この証明書は、クラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。</p> | <p>この証明書には、ドメインの SSL ワイルド カード証明書も使用できます。 たとえば、\*.contoso.com です。 これについて下の表で詳しく説明します。 それ以外の場合は、次の値を使用します:</p> <p>CN: sf.d365ffo.onprem.contoso.com <br> DNS 名: sf.d365ffo.onprem.contoso.com</p> |
+| Service Fabric Client 証明書            | この証明書は、クライアントによって Service Fabric クラスターを表示および管理するために使用されます。 | CN: client.d365ffo.onprem.contoso.com <br> DNS 名: client.d365ffo.onprem.contoso.com |
+| 証明書の暗号化                     | この証明書は、SQL Server パスワードとユーザー アカウントのパスワードなどの重要な情報を暗号化するために使用されます。 | <p> 証明書は、プロバイダー **Microsoft Enhanced Cryptographic Provider v1.0** を使用して作成する必要があります。 </p><p>証明書キーの使用にはデータ暗号化 (10) が含まれている必要があり、サーバー認証またはクライアント認証は含めないでください。</p><p>詳細については、[Service Fabric アプリケーションでの機密情報の管理](/azure/service-fabric/service-fabric-application-secret-management) を参照してください。</p> <p> CN: axdataenciphermentcert <br> DNS 名: axdataenciphermentcert </p> |
+| AOS SSL 証明書                          | <p>この証明書は、AOS Web サイトに接続するクライアントに提示されるサーバー証明書としても使用されます。 また、WCF (Windows Communication Foundation) / SOAP (Simple Object Access Protocol) 証明書を有効にするためにも使用されます。</p> | <p>Service Fabric サーバー証明書として使用するのと同じワイルドカード証明書を使用することができます。 それ以外の場合は、次の値を使用します:</p> <p> CN: ax.d365ffo.onprem.contoso.com <br> DNS 名: ax.d365ffo.onprem.contoso.com </p> |
+| セッション認証証明書           | この証明書は、AOS がユーザーのセッション情報を保護するために使用します。 | <p> この証明書は、LCS からの展開時に使用されるファイル共有証明書です。</p> <p> CN: SessionAuthentication <br> DNS 名: SessionAuthentication </p> |
+| データの暗号化証明書                  | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | <p>これはプロバイダー **Microsoft Enhanced RSA および AES Cryptographic Provider** を使用して作成する必要があります。 </p> <p> CN: DataEncryption <br> DNS 名: DataEncryption </p> |
+| データ署名の証明書                     | これらの証明書は、機密情報を暗号化するために AOS によって使用されます。  | <p> これは、データ暗号化証明書とは別のもので、プロバイダー**Microsoft の拡張された RSA および AES 暗号化プロバイダー**を使用して作成する必要があります。 </p> <p> CN: DataSigning <br> DNS 名: DataSigning </p> |
+| 財務報告クライアント証明書       | この証明書は、財務報告サービスと AOS 間の通信を保護するのに役立ちます。   この証明書を使用して、財務報告サービスと AOS 間の通信を保護します。 | <p>CN: FinancialReporting <br> DNS 名: FinancialReporting </p>  |
+| 報告証明書                        | この証明書を使用して、SSRS と AOS 間の通信を保護します。| <p> **財務報告クライアント証明書を再利用しないでください。** </p> <p> CN: ReportingService <br> DNS 名: ReportingService </p> |
+| オンプレミス ローカル エージェント証明書           | <p>この証明書は、オンプレミスと LCS でホストされているローカル エージェント間の通信を保護するのに役立ちます。</p><p>この証明書を使用すると、Azure AD テナントに代わってローカル エージェントが動作し、LCS と通信して配置を編成および監視することができます。</p><p>**注記:** テナントにはオンプレミス ローカル エージェント証明書が 1 つだけ必要です。</p> | <p> CN: OnPremLocalAgent <br> DNS 名: OnPremLocalAgent </p> |
+
+ドメインの SSL ワイルド カード証明書を使用して、Service Fabric サーバー証明書と AOS SSL 証明書を結合できます。
 
 以下は、AOS SSL 証明書と組み合わせた Service Fabric Server 証明書の例です。
 
@@ -235,6 +243,9 @@ DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
 ```
+
+> [!NOTE]
+> ワイルド カード証明書は、発行先となるドメインの最初のレベル サブドメインのみをセキュリティ保護できるようにします。
 
 ### <a name="plansvcacct"></a> 3. ユーザーとサービス アカウントの計画
 
@@ -802,8 +813,8 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
     > [!IMPORTANT]
-    > *Invoke-ServiceFabricEncryptText* を呼び出す前に、[Microsoft Azure Service Fabric SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only) をインストールする必要があります。
-    > Azure Service Fabric SDK をインストールした後、「Invoke-ServiceFabricEncryptText は認識されないコマンドです」というエラーが発生した場合は、コンピューターを再起動して再試行してください。
+    > *Invoke-ServiceFabricEncryptText* を起動する前に、[Microsoft Azure Service Fabric SDK](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only) をインストールする必要があります。
+    > Azure Service Fabric SDK をインストールした後で、"Invoke-ServiceFabricEncryptText は認識されないコマンドです" というエラーが発生した場合は、コンピューターを再起動して再試行してください。
 
 ### <a name="setupssis"></a> 16. SSIS の設定
 
@@ -983,7 +994,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 ドメインでグループ管理サービス アカウント パスワードを初めて作成し生成する場合は、最初に**キー配分サービス KDS ルート キー**を作成する必要があります。 詳細については、[キー配分サービス KDS ルート キーの作成](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)を参照してください。
 
 ### <a name="error-the-winrm-client-cannot-process-the-request-when-running-the-remoting-script-configure-prereqs-allvms-cmdlet"></a>リモート処理スクリプト Configure-Prereqs-AllVms cmdlet を実行した際のエラー、「WinRM クライアントは要求を処理できません」
-Service Fabirc クラスターのすべてのマシンでコンピューター ポリシー**新しい資格情報委任を許可**を有効にするには、エラー メッセージの指示に従う必要があります。
+Service Fabric Cluster のすべてのマシンでコンピューター ポリシー **新しい資格情報委任を許可** を有効にするには、エラー メッセージの指示に従う必要があります。
 
 ### <a name="error-not-process-argument-transformation-on-parameter-test-cannot-convert-value-systemstring-to-type-systemmanagementautomationswitchparameter-when-running-the-config-prereqs-allvms-cmdlet"></a>エラー、「'テスト'パラメータでの引数変換を処理できません」 Config-Prereqs-AllVms cmdlet 実行時、値 "System.String" を、タイプ "System.Management.Automation.SwitchParameter" に変換することはできません
 このエラーを回避するには、**インフラストラクチャ** フォルダーにある Config-Prereqs-AllVms.ps1 の 56 行目の「-Test:$Test」を削除します。

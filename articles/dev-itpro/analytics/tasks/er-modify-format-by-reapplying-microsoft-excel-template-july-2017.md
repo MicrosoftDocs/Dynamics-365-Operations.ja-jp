@@ -16,11 +16,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327116"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551164"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Excel テンプレートの再適用による形式の変更
 
@@ -28,7 +28,7 @@ ms.locfileid: "327116"
 
 この手順にあるステップを完了するには、まず「ER - OPENXML 形式でレポートを生成するコンフィギュレーションの設計」の手順を完了する必要があります。
 
-この手順では、変更された Microsoft Excel テンプレートの更新を再適用して、電子申告 (ER) 形式コンフィギュレーションを変更する方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した ER 形式コンフィギュレーションへ変更した Excel テンプレートをインポートし、電子ドキュメントを生成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールを持つユーザーを対象としています。 これらのステップは、GBSI データ セットを使用して完了することができます。 開始する前に、ヘルプトピック「Microsoft Excel テンプレートを再適用して電子申告形式を変更」 (modify-electronic-reporting-format-reapply-excel-template/) 内で一覧表示されている SampleVendPaymWsReport2.xlsx ファイルをダウンロードして保存します。
+この手順では、変更された Microsoft Excel テンプレートの更新を再適用して、電子申告 (ER) 形式コンフィギュレーションを変更する方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した ER 形式コンフィギュレーションへ変更した Excel テンプレートをインポートし、電子ドキュメントを生成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールを持つユーザーを対象としています。 これらのステップは、GBSI データ セットを使用して完了することができます。 開始する前に、ヘルプトピック「Excel テンプレートを再適用して電子申告形式を変更」 (modify-electronic-reporting-format-reapply-excel-template/) 内で一覧表示されている SampleVendPaymWsReport2.xlsx ファイルをダウンロードして保存します。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。  

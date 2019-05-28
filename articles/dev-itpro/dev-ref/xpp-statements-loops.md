@@ -18,11 +18,11 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c280a5faad44405b6c11646814d7d2d04ea880cd
-ms.sourcegitcommit: daf4b3eb7b121a95ef3c68a903f1695cf8e7b92d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "847806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536963"
 ---
 # <a name="x-statements-loops-and-exception-handling"></a>X++ ステートメント、ループ、および例外処理
 

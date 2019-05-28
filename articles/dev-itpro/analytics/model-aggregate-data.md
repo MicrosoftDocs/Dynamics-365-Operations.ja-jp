@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a3f5fba3c3b1309834e9ee3a13651d9d6784753
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: adf4b5d641b7ef9808ad4e6f8000519ecf336dd9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369829"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537119"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 

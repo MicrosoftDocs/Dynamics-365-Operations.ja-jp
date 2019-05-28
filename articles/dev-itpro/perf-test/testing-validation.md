@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f6f57cf0d12a1873ec4f1eb0e59bee47bab2c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 074518feb533f470b824d8a7803f6b2047ea059d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369177"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537582"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 

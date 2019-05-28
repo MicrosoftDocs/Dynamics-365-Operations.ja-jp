@@ -16,11 +16,11 @@ ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: b2bc1eb8bf05ec3dd112ce245e1113b3b45316dd
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842237"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537088"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 

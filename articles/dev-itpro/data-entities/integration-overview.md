@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d59e8e6a703dab0e0ccdbb9f7fcbf7994535646c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a25093c6862b4e62bc7fbd594ad03428c0f217be
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505643"
 ---
 # <a name="choose-a-data-integration-importexport-strategy"></a>データ統合方法 (インポート/エクスポート) の選択
 

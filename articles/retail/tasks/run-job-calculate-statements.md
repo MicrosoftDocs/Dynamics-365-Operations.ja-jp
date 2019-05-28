@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f52603672e95d0ae4973844851c4ed260484e5f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550165"
 ---
 # <a name="configure-and-run-job-to-calculate-statements"></a>明細書を計算するジョブの構成および実行
 
@@ -40,7 +40,7 @@ ms.locfileid: "365181"
 6. [開始日] フィールドに日付を入力します。
 7. [開始時刻] フィールドに時刻を入力します。
 8. [終了日なし] のオプションを選択します。
-9. [PatternUnit] フィールドに「日数」を入力します。
+9. PatternUnit フィールドに「日数」を入力します。
 10. [間隔] フィールドに数値を入力します。
 11. [OK] をクリックします。
 12. [OK] をクリックします。

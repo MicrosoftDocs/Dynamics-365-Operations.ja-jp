@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 56652c076a3f95c8cde9d41c6516af39ba3b1ab4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0e07e6f1ce82c832d61ba60f4fc3c772c4e76f8b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368833"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537170"
 ---
 # <a name="imagedesign-type"></a>ImageDesign タイプ
 

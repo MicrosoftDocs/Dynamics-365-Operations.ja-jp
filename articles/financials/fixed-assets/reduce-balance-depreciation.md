@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e36a7e1a5d83a95de53b70b8e3c3b667aae9c6c0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553671"
 ---
 # <a name="reduce-balance-depreciation"></a>逓減残高による減価償却
 

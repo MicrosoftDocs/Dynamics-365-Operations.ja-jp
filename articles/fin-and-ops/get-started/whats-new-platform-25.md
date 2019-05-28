@@ -18,11 +18,11 @@ ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
 ms.openlocfilehash: 38bb8aa7a2b34fe4656e140cbcb5480521d50182
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975744"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1508425"
 ---
 # <a name="preview-features-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の機能をプレビューする
 

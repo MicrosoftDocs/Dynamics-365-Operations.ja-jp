@@ -15,18 +15,18 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 34309ba5a1d2da66c7b01c0e5ba82560b0f685db
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c3e87143e33876e8950b12e4040f60e0736af8cf
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976554"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538645"
 ---
 # <a name="business-events-in-microsoft-flow"></a>Microsoft Flow 内のビジネス イベント
 
 [!include[banner](../includes/banner.md)]
 
-ビジネス イベントは Microsoft Finance and Operations コネクタを介して Microsoft Flow で消費することができます。  Finance and Operations コネクタには **ビジネス イベントの発生時** という名前のトリガーがあります。 このトリガーは、Microsoft Dynamics 365 for Finance and Operations のターゲット インスタンスで使用可能なビジネス イベントの購読に使用することができます。
+ビジネス イベントは Microsoft Finance and Operations コネクタを介して Microsoft Flow で消費することができます。  Finance and Operations コネクタには **ビジネス イベントが発生した場合** という名前のトリガーがあります。 このトリガーは、Microsoft Dynamics 365 for Finance and Operations のターゲット インスタンスで使用可能なビジネス イベントの購読に使用することができます。
 
 ## <a name="prerequisite"></a>前提条件
 

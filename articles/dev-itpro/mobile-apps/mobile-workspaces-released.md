@@ -16,17 +16,17 @@ ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "354969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560621"
 ---
 # <a name="available-mobile-workspaces"></a>利用可能なモバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Unified Operations モバイル アプリに使用可能なモバイル ワークスペースを一覧表示します。
+このトピックでは、Dynamics 365 for Unified Operations モバイル アプリに使用可能なモバイル ワークスペースを一覧表示します。
 
 > [!NOTE]
 > 以前のモバイル アプリの名前は *Microsoft Dynamics 365 for Finance and Operations* でした。

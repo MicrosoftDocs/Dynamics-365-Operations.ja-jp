@@ -15,12 +15,12 @@ ms.custom: 196873
 ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 49d0c4265baf51345975f433999fc5092c749960
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d7a276b8de54fb7e8a8611e084a0cc16f0a71f87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537488"
 ---
 # <a name="stage-and-publish-finance-and-operations-solutions"></a>Finance and Operations ソリューションのステージおよび公開
 

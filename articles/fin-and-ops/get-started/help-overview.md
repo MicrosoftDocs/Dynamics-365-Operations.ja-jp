@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
+ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350737"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1538959"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations のヘルプ システム
 
@@ -90,8 +90,6 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。
 
 1. **フィードバック**をクリックしてページ下部のコメントに移動し、**製品のフィードバック**、または**サインインしてフィードバックを送信**をクリックします。
-
-    ![フィードバック](./media/comments.png)
 
 2. コメントを入力して、**フィードバックを送信**をクリックします。
 

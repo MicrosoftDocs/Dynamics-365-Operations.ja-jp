@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c48402abbccb89b46380f38d2d9e90de636aa3b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f3d9bd0d37e18b9f1a9b5e5aa1194502c8b46b2f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368735"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537524"
 ---
 # <a name="guide-to-the-gdpr-for-finance-and-operations"></a>Finance and Operations の GDPR に関するガイド
 
@@ -283,7 +283,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 コントローラーをサポートするために、このレポートでは、**データ管理** 作業領域で利用可能な既存のエンティティ モデル レポート機能を改善しています。 **データ管理** ワークスペースは、ほとんどのロールの種類のパッケージ化された表現のコレクションを提供します。 これらの表現はエンティティと呼ばれます。
 
 > [!Note]
-> 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。 現在、レポートは Microsoft DynamicsAX 2012 をサポートしていません。 
+> 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。 現在、レポートは Microsoft Dynamics AX 2012 をサポートしていません。 
 
 エンティティは特定のロールのインスタンスを表します。 データ管理機能を使用すると、コントローラーはエンティティ データを、コロン区切り値、コンマ区切り値 (CSV)、セミコロン区切り値、タブ区切り値、Microsoft Excel、および XML などの複数の形式にエクスポートできます。
 

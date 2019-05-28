@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: b7aa02a9ce2c6a56d494e33ee282c75877187340
-ms.sourcegitcommit: cbc5a4f0d752d4f147fe269e4d7a2460f772c95b
+ms.openlocfilehash: fc1c855fdfdc2ebc0a64940cdc9b7df16af7acd6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "370052"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537448"
 ---
 # <a name="supplemental-terms-of-use-for-microsoft-dynamics-365-previews"></a>Microsoft Dynamics 365 プレビューの追加使用条件 
 

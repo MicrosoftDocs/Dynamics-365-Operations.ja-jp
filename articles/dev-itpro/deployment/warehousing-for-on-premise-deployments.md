@@ -3,7 +3,7 @@ title: オンプレミス配置の倉庫管理アプリを構成
 description: このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 820a557dc77f259c9503f02c7eac9eadfa8f9512
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f6408bc601536e31e8318089c374af6c20133ab3
+ms.sourcegitcommit: 987d7ef5a5df53e2272db6814fe6ef78be1a9aab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369023"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "1540171"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -107,3 +107,5 @@ AD FS アプリケーションを使用して Finance and Operations サーバ�
 4.  アプリケーションの左上隅にある **戻る** ボタンを選択します。
 
     アプリケーションは Finance and Operations サーバーに接続し、倉庫ワーカーのログイン画面が表示されます。
+    
+5. 倉庫アプリのテレメトリ ID がない場合、いくつかエラーが発生する可能性があります。 これは、既知の問題です。 回避策は既存のクライアントにサインインしてテレメトリ ID を取得することです。 この問題は、将来のリリースで修正されます。

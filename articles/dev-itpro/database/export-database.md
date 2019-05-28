@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d604f485b3c5656cd3aee8a9a0ae70fa9993310f
-ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
+ms.openlocfilehash: ab31d1ae5a6333c751496a7fe641b0c7ebae530b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "771215"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537114"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 

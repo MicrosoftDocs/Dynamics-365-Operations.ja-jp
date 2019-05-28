@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbe795c61312ada89ca8c6ed08f00411d9c35812
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 07d1ef1c1da43d381df23f2e9d4bbe4d7299cba6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369825"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537271"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 

@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Talent January 2019 update
 ms.openlocfilehash: 4d57e30d12cc5ef5cd574f58d4ded3d85c444ba0
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "857858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537617"
 ---
 # <a name="recurring-data-export-using-azure-logic-apps"></a>Azure Logic アプリを使用した定期的なデータ エクスポート
 

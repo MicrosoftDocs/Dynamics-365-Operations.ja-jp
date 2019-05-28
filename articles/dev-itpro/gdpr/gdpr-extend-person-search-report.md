@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 102fa4c3fd40059309d08f20aee601a5f0272f37
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2b81a5d5910121641833bb0fd2f17dcfa00b0c79
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369412"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537383"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 

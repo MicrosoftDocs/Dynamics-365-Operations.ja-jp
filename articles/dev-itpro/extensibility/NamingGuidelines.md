@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: acc8d70394c41cba51f8a7cebb75b8750ea72651
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dba95c22057d6bb07cab747eb349e70c311e0184
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369249"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537261"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けのガイドライン
 

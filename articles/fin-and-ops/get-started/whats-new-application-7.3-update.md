@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: e459d93afa87fced766c700b114288d3cf2c47e6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2ceac7e72e9132d5aa556733aaf31abe076ee643
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537452"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 
@@ -144,7 +144,7 @@ Power BI を使用した財務報告についての追加情報を表示する�
 - TDS および TCS を含む、源泉徴収税。
 - 固定資産は、会社法による減価償却、所得税法による減価償却、および特別償却を含みます。
 - 付加価値税 (VAT)
-- 関税およびインドの商品及びサービス税 (GST)。 詳細については、このトピックの「税エンジン (GTE): インドの GST のみ」セクションを参照してください。
+- 関税およびインドの商品及びサービス税 (GST)。 詳細については、このトピックの "税エンジン (GTE) – インドの販売税のみ" セクションを参照してください。
 
 ## <a name="master-and-reference-data-entities-for-warehouse-and-transportation-management"></a>倉庫と輸送の管理のためのマスターおよび参照データ エンティティ
 
@@ -267,9 +267,9 @@ Power BI を使用した財務報告についての追加情報を表示する�
 
 詳細については、[品目に対する安全在庫フルフィルメント](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/safety-stock-replenishment) を参照してください。
 
-## <a name="tax-engine-gte--india-gst-only"></a>税エンジン (GTE): インド GST のみ
+## <a name="tax-engine-gte--india-gst-only"></a>税エンジン (GTE) – インドの販売税のみ
 
-税エンジン (GTE) は、Finance and Operations のコンフィギュレーション可能なビジネス アプリケーション経験の重要な部分です。 これにより、高度なカスタマイズが可能になり、ビジネス ユーザー、機能のコンサルタントまたはパワー ユーザーが法的およびビジネスの要件に基づいて税の適用、計算、転記、および決済を決定する税ルールを構成することができます。 税コンフィギュレーションは、GTE より柔軟です。 より簡単な拡張機能エクスペリエンスを提供し、AOT 内のデータ プロバイダーにとって拡張機能のシナリオをサポートするためのコード変更がほとんど必要ありません。
+税エンジン (GTE) は、Finance and Operations の構成可能なビジネス アプリケーション エクスペリエンスの重要な部分です。 これにより、高度なカスタマイズが可能になり、ビジネス ユーザー、機能のコンサルタントまたはパワー ユーザーが法的およびビジネスの要件に基づいて税の適用、計算、転記、および決済を決定する税ルールを構成することができます。 税コンフィギュレーションは GTE より柔軟です。 より簡単な拡張機能エクスペリエンスを提供し、AOT 内のデータ プロバイダーにとって拡張機能のシナリオをサポートするためのコード変更がほとんど必要ありません。
 
 ### <a name="more-information"></a>詳細情報
 

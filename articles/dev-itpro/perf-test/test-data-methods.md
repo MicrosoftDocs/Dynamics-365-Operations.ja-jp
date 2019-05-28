@@ -18,11 +18,11 @@ ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
 ms.openlocfilehash: 2fdebc96c3f031c4170f2f7f4be9e86846f27ab7
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976730"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537280"
 ---
 # <a name="test-data-methods"></a>テスト データ メソッド
 

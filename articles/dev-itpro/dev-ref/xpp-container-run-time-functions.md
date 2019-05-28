@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05013113f563178b62f3436178e7ff57376179e4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 681289d22b9427c7dd81b15e461d8e92bc6c6a6f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369135"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536986"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 

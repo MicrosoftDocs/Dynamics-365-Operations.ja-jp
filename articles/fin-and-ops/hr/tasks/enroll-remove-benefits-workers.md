@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 92da6d24f3fc4282de5673a8155b6ab6316e55aa
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "857479"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510431"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>作業者の福利厚生の登録および削除
 

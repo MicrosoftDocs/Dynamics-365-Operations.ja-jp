@@ -15,12 +15,12 @@ ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: e0caa16eba5ba3c3ef248e88a61797c28c1d9f6f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2d984a95e0223f50fc9aa041516f21841c94666a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537485"
 ---
 # <a name="migrate-code-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのコードの移行
 

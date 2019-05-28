@@ -3,7 +3,7 @@ title: ビジネス イベント
 description: このトピックは、外部システムが Dynamics 365 for Finance and Operations から通知を受信するためのメカニズムを提供するビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/15/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,17 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 84349ce2b281067358b4240caaee07ad91507e3d
-ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
+ms.openlocfilehash: 0129106ab430bb08d8274d7c9397c7a3fe42344b
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "993704"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538646"
 ---
 # <a name="business-events"></a>ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 ビジネス イベントは外部システムが Microsoft Dynamics 365 for Finance and Operations から通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 
@@ -34,7 +35,7 @@ Finance and Operations では、ユーザーが実行するビジネス アク�
 
 ## <a name="prerequisites"></a>必要条件
 
-- ビジネス イベントは Microsoft Flow およびAzureメッセージング サービス経由で利用できます。 したがって、ビジネス イベントを使用するには、顧客がこのようなアセットのサブスクリプションを契約している必要があります。
+- ビジネス イベントは Microsoft Flow およびAzureメッセージング サービスにて利用できます。 したがって、ビジネス イベントを使用する際には、顧客が該当するアセットのサブスクリプションを契約している必要があります。
 
 > [!IMPORTANT]
 > ビジネス イベントを Finance and Operations からデータをエクスポートするためのメカニズムと考えることはできません。 定義上は、ビジネス イベントは簡易で軽快であることになっています。 データ エクスポートのシナリオを実行するために大量のペイロードを搭載することは想定していません。
@@ -47,7 +48,7 @@ Finance and Operations では、ビジネス イベントは、最初から用�
 
 ## <a name="business-event-catalog"></a>ビジネス イベント カタログ
 
-ビジネス イベント カタログには、使用している Finance and Operations のインスタンスで使用できるビジネス イベントが一覧表示されます。 カタログは、どのビジネス イベントが使用可能かを示し、カテゴリ、ビジネス イベントのIDおよび名前でフィルタ処理することができるため、便利です。
+ビジネスイベントカタログには、**システム管理 > > ビジネスイベント**を設定するためにアクセスできます。 ビジネス イベント カタログには、使用している Finance and Operations のインスタンスで使用できるビジネス イベントが一覧表示されます。 カタログは、どのビジネス イベントが使用可能かを示し、カテゴリ、ビジネス イベントのIDおよび名前でフィルタ処理することができるため、便利です。
 
 ビジネス イベントのカテゴリは、Finance and Operationsにおいて、そのソースを識別します。 ワークフロー システムから生成されたビジネス イベントは、**ワークフロー** カテゴリに割り当てられます。 他のモジュールから生成されたビジネス イベントについては、モジュール名はカテゴリ名として使用されます。 
 
@@ -62,6 +63,11 @@ Finance and Operations では、ビジネス イベントは、最初から用�
 簡単に言うと、ビジネス イベント カタログは、実装に必要なビジネス イベントを識別するのに役立ちます。 各ビジネス イベントのスキーマを識別することもできます。
 
 次のステップでは、エンドポイントを管理します。
+
+## <a name="business-events-processing"></a>RFID 業務プロセス
+Finance and Operations では、ほぼリアルタイムでビジネスイベントを処理する専用のバッチスレッドが割り当てられます。 スレッドの最大数は、システムで使用可能なスレッドの合計を超えることはできません (**System administration > Server configuration**)。 スレッドはすべてのバッチ処理と共有されているリソースであるため、ビジネスイベントのスレッド割り当てを変更する場合は注意が必要です。 ビジネスイベントに割り当てられるスレッドの合計数は、ビジネスイベント パラメータ テーブル内のパラメータを使用して管理されています。 この設定は、ユーザーインターフェイス (UI) 上では非表示となっており、運用環境においてはデータベースへのアクセスが必要となるため、この変更を行うにはサポート案件として対応する必要があります。
+
+従来のビジネスイベントでのバッチ処理ジョブは利用可能となっており、必要に応じて利用することで専用処理を運用する際の問題を軽減する回避策となります。 ユーザーの混乱を回避するために、ビジネスイベントでのバッチ処理を設定するメニューは削除されています。 メニュー上表示されてはいませんが、バッチ UI から BusinessEventsBundleBatchProcessor クラスを使用することでバッチジョブを手動で作成できます。 回避策として必要不可欠な場合を除き、この手動バッチジョブを実行しないように留意してください。 このバッチジョブが古いプラットフォームのいずれかで設定されていた場合は、最新のプラットフォームに更新された際にこのバッチが無効となり、専用処理が自動で実行されます。 この挙動は、ビジネスイベント パラメータ テーブル の パラメータ を使用して管理されており、ここでは手動バッチジョブが初期設定では無効になっているためです。
 
 ## <a name="managing-endpoints"></a>エンドポイントの管理
 
@@ -129,7 +135,7 @@ Service Bus トピックにエンドポイントを作成するには、**新規
 
 ![ビジネス イベントのイベント グリッド エンドポイントの値](../media/BusinessEventsEGTopicsEndpoint.PNG)
 
-Key Vault の情報は、Azure Service Bus キュー エンドポイントの設定と同じ方法で設定されますが、Key Vault シークレットだけはService Bus 接続文字列ではなく、イベント グリッドの資格情報に設定する必要があります。  イベント グリッドの資格情報は、設定セクションの**アクセス キー**で作成されたイベント グリッドで確認できます。 
+Key Vault の情報は、Azure Service Bus キュー エンドポイントの設定と同じ方法で設定されますが、Key Vault シークレットだけはService Bus 接続文字列ではなく、イベント グリッドの資格情報に設定する必要があります。  イベント グリッドの資格情報は、設定セクションの **Access Keys** で作成されたイベント グリッドで確認できます。 
 
 ![ビジネス イベントのイベント グリッド資格情報の値](../media/BusinessEventsEGKeyValue.PNG)
 
@@ -154,7 +160,7 @@ Key Vault の情報は、Azure Service Bus キュー エンドポイントの設
 
 **の有効なイベント**タブで、ビジネス イベントを無効にできます。 システムは、無効化されたイベントには発信処理を行いません。
 
-ビジネス イベントが無効化されると、**無効なイベント**タブに表示されます。
+ビジネス イベントが無効化されると、 それらは **無効なイベント** タブに表示されます。
 
 ![無効なビジネス イベント](../media/businesseventsinactivetab.png)
 

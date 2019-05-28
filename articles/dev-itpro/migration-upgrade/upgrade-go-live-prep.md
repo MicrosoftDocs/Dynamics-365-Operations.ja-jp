@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 4f1c1dfc7f177d026eb1fd9af873f7aeb4de7087
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b565d8adeb36a6b986025fd3b23aea8f0636ca2c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369746"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537360"
 ---
 # <a name="upgrade-from-ax-2012---prepare-for-go-live"></a>AX 2012 からのアップグレード - 稼働の準備
 

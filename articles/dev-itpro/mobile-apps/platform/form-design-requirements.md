@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 90ec551775477a92aa5b8535afe88288c1c29231
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ca9fa55418aa1df8cb49cd9111194c65b23deb36
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368903"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537326"
 ---
 # <a name="form-design-requirements"></a>フォーム デザインの要件
 

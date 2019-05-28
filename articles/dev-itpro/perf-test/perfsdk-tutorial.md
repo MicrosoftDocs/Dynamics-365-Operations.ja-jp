@@ -18,11 +18,11 @@ ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 923c38d18c414fc3a0b0164e55ae1b652fe555d3
-ms.sourcegitcommit: c19d9cb1f1e77ce96ac4ec6e3212bc3c06288a7d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "892569"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537476"
 ---
 # <a name="performance-sdk-and-multiuser-testing-via-visual-studio-online"></a>パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
 

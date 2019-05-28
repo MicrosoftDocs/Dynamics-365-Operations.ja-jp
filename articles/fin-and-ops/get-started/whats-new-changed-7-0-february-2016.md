@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334890"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561813"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -549,7 +549,7 @@ ms.locfileid: "334890"
 | 販売注文や製造オーダーが予定日までに配送準備できない場合は、ユーザーに警告します。 | マスター プランによって作成された警告を、*計画メッセージ*と呼びます。 *計画*は、本日同意されている価格 (*計算価格*) で資産を購入または販売する 2 当事者間の契約ですが、配送および支払は将来の時点 (*出荷日*) で発送します。 | *計画メッセージ*および*計画期日*は、それぞれ、*計算済遅延*および*遅延日*に名称を変更されました。 | AX 2012 で使用されている用語は正確でなく、間違った翻訳を招いていました。 |
 | マスター プランの実行ステータス、緊急の計画オーダー、および遅延を引き起こす計画オーダーに関する概略情報を取得します。 | この情報は提供されていますが、複数のフォームに分散しています。 | **マスター プラン**ワークスペースは、前回のマスター プランの実行が完了した時刻、エラーが発生したかどうか、いずれの緊急計画オーダーであるのか、遅延を引き起こした計画オーダーはどれかに関する一覧情報を提供します。 | このワークスペースに概要が示されることによるメリットがあります。 マスター プランの設定方法を説明し、生産性を向上させるために関連情報がまとめられています。 |
 | Excel を使用して需要予測を更新します。 | 使用不可 | 需要予測の入力、更新、需要予測の削除を行う際に、Excel とのシームレスな統合を活用できます。 | これは、効率と生産性の向上に役立ちます。 |
-| トランザクション データの履歴に基づいて将来の需要を見積もり、需要予測を作成します。 | Microsoft DynamicsAX 2012 R3 では、Microsoft SQL Server Analysis Service の予測モデルを使用して、需要予測の予想を作成します。 | Microsoft Azure Machine Learning クラウド サービスの能力と拡張性を利用して将来の需要を見積ります。 Machine Learning にある予測モデルは、簡単に使用でき、顧客の要求を満たすように拡張できます。 このサービスでは、最大一致モデル選択を実行し、予測の正確性を計算するために使用できる主要業績評価指標 (KPI) を提供します。 | Machine Learning 技術を使用して、さらに正確な予測を生成します。 |
+| トランザクション データの履歴に基づいて将来の需要を見積もり、需要予測を作成します。 | Microsoft Dynamics AX 2012 R3 では、Microsoft SQL Server Analysis Service の予測モデルを使用して、需要予測の予想を作成します。 | Microsoft Azure Machine Learning クラウド サービスの能力と拡張性を利用して将来の需要を見積ります。 Machine Learning にある予測モデルは、簡単に使用でき、顧客の要求を満たすように拡張できます。 このサービスでは、最大一致モデル選択を実行し、予測の正確性を計算するために使用できる主要業績評価指標 (KPI) を提供します。 | Machine Learning 技術を使用して、さらに正確な予測を生成します。 |
 | マスター プランを実行して得られた、関連するアクションの概要を視覚化した情報に基づいて、注文の日付と数量を最適化します。 | アクションの概要グラフは使用できますが、関連するすべてのアクションが表示されます。 適用されたアクションは、ビューからすぐに表示されなくなります。 | アクション グラフは、把握しやすい概要を提供します。 適用したアクションおよび直接関連するアクションのみを表示できるオプションが含まれています。 適用したアクションは、グレー表示ですが、引き続き表示されます。 したがって、概要が維持されます。 1 ページにデータを表示するために、追加情報がアクション グラフに追加されています。 | 関連するアクションのみに焦点を合わせるため、生産性が向上するというメリットがあります。 |
 
 ## <a name="procurement-and-sourcing"></a>調達
@@ -623,7 +623,7 @@ Microsoft Azure でホストされた Retail HQ は、Web クライアントに�
 <ul>
 <li>新しいチャンネルおよび関連するエンティティを作成およびコンフィギュレーションする。</li>
 <li>店舗の日常の活動を管理する。</li>
-<li>Microsoft DynamicsAX で小売トランザクションを処理し、小売明細書を生成し、Microsoft DynamicsAX の在庫と財務を更新します。</li>
+<li>Microsoft Dynamics AX で小売トランザクションを処理し、小売明細書を生成し、Microsoft Dynamics AX の在庫と財務を更新します。</li>
 </ul>
 </td>
 <td><strong>チャンネル配置</strong>ワークスペースでは、次の作業を行うことができます。
@@ -733,13 +733,13 @@ Retail サーバーとデータ管理によって、オンライン、店舗、�
 <td>これによって、サードパーティのオンライン店舗で使用できる、ホストされたスケーラブルな電子商取引サービスが実現されます。</td>
 </tr>
 <tr>
-<td>Commerce Data Exchange を使用して、Microsoft DynamicsAX のバック オフィスとチャンネルの間でデータを移動します。</td>
+<td>Commerce Data Exchange を使用して、Microsoft Dynamics AX のバック オフィスとチャンネルの間でデータを移動します。</td>
 <td>Commerce Data Exchange は、Microsoft Dynamics AX およびオンライン ストア、実際の店舗などの小売チャンネルの間でデータを転送するシステムです。 詳細については、「<a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>」を参照してください。</td>
 <td>Microsoft Dynamics AX 2012 CU8 と同等の機能を備えています。 ただし、次の詳細に留意してください。
 <ul>
 <li>Commerce Data Exchange はクラウド用に再設計されました。</li>
 <li>Async サービスでは、チャンネル データベースへの直接データベース アクセスを使用します。</li>
-<li>Commerce Data Exchange: リアルタイム サービスは、Microsoft DynamicsAX のカスタム サービスとしてホストされます。</li>
+<li>Commerce Data Exchange: リアルタイム サービスは、Microsoft Dynamics AX のカスタム サービスとしてホストされます。</li>
 <li>MPOS がオフライン データベースと Retail サーバー間の同期を管理します。</li>
 </ul></td>
 <td>Commerce Data Exchange はクラウド プラットフォーム用に再設計されました。 引き続き、Microsoft Dynamics AX と、オンライン ストア、実際の店舗などの小売チャンネル間のデータ転送を管理します。</td>

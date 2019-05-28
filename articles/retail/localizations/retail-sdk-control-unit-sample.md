@@ -17,11 +17,11 @@ ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 ms.openlocfilehash: b5c33ec0a3b88fca62181da06e03e4a8fa0b3fd9
-ms.sourcegitcommit: b5e2835e2245414837b7b37056af228dd000f756
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "879866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537073"
 ---
 # <a name="sample-for-retail-pos-integration-with-control-units-for-sweden"></a>スウェーデン用の管理単位との Retail POS の統合
 

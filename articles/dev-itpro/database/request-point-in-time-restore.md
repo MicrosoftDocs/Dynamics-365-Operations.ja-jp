@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73da227045377f6eaebfac4fd4327050803c9ce7
-ms.sourcegitcommit: dcb78245c15423cce346dcdfd1f4cdd0d9a5ba48
+ms.openlocfilehash: 06c9954b756508dfce5e5ee377b616fcc3cc000b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "380108"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537106"
 ---
 # <a name="restore-databases-in-non-production-environments"></a>非実稼働環境でのデータベースの復元
 

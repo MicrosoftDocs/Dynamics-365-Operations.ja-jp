@@ -18,11 +18,11 @@ ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.openlocfilehash: c50e4b372d6b683d63120b7cf45f6613702d48ae
-ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "878323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537391"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 

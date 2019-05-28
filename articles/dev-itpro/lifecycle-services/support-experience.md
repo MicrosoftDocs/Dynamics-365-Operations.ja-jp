@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8d48d190beb7433ae4fc09ef7431181f85752dd
-ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
+ms.openlocfilehash: 506844306d67c5e7098c5fe5c0f3677e19aac2a7
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "403929"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537605"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations"></a>Finance and Operations の技術サポートの設定
 
@@ -90,7 +90,7 @@ Lifecycle Services (LCS) プロジェクトの**サポート** タイルは、Az
 9.  **保存** をクリックします。
 10. **承認**をクリックします。
 11. 確認メッセージ ボックスで、**OK** をクリックします。
-12. Visual Studio Online にサインインします。
+12. Visual Studio Online へサインインします。
 13. **承認** をクリックします。
 
 ## <a name="create-an-issuein-the-finance-and-operationsclient-microsoft-dynamics-ax-70-dynamics-ax-platform-update-1-or-update-2-or-finance-and-operations-platform-update-3"></a>Finance and Operations のクライアント (Microsoft Dynamics AX 7.0、Dynamics AX プラットフォーム更新プログラム 1 または更新プログラム 2、または Finance and Operations プラットフォーム更新プログラム 3) に問題を作成する

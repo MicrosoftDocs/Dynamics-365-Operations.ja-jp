@@ -18,11 +18,11 @@ ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.openlocfilehash: 9a967da9ba191d80056a5b29f618b024bbb319a8
-ms.sourcegitcommit: 185d13bc3e2b2a51569471368671d5cc3023ab14
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992916"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536969"
 ---
 # <a name="x-data-selection-and-manipulation"></a>X++ データの選択と操作
 

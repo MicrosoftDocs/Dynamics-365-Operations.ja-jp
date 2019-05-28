@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 80582fa92a7c3f151602d4edf7bd37817b0d758e
-ms.sourcegitcommit: dbf560d131ef5a230303ba7b9294e453b799dcc2
+ms.openlocfilehash: decdbad7f9670f26a02421576be8ba88e289f5f3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403759"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537574"
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
 [!include [banner](../includes/banner.md)]

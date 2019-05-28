@@ -1,5 +1,5 @@
 ---
-title: ユーザー承認テストの Regression Suite Automation Tool
+title: ユーザー受け入れテストの作成と自動化
 description: このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。
 author: kfend
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: ntecklu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 8665f4e0739ca05fa552216841f97f82fbc82536
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: e90755122b0ee9cb7a37364994bbadc365017309
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537413"
 ---
-# <a name="regression-suite-automation-tool-for-user-acceptance-tests"></a>ユーザー承認テストの Regression Suite Automation Tool
+# <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
 [!include [banner](../includes/banner.md)]
 

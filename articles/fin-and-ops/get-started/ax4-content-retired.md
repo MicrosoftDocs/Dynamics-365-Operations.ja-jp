@@ -18,11 +18,11 @@ ms.author: margoc
 ms.search.validFrom: 2018-04-10
 ms.dyn365.ops.version: AX 2012
 ms.openlocfilehash: 7455a10f3e2fc603b6699d77127376cde12f2144
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359270"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546919"
 ---
 # <a name="ax-40-content-that-has-been-retired"></a>破棄された AX 4.0 コンテンツ
 

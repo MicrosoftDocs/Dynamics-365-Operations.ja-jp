@@ -16,11 +16,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e81ca3966cf7dae88468ccf107b52b8c3d7b323d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "366561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560652"
 ---
 # <a name="create-a-requisition-for-consumption"></a>消費要求の作成
 
@@ -59,14 +59,14 @@ ms.locfileid: "366561"
     * これは、製品カタログで製品を検索できるオプションです。    
 2. [調達カテゴリ ノードの検索] フィールドで、探しているカテゴリの名前の最初の部分を入力し、[入力] ボタンをクリックします。
     * たとえば、「comput」と入力します。  
-3. [InvokeDefaultButton] ショートカットを使用します。
+3. InvokeDefaultButton ショートカットを使用します。
 4. 選択されているカタログの製品リストをフィルター処理するためには [フィルター] 使用します。
 5. 要求に追加する製品カードを選択します。
 6. [明細行に追加] をクリックします。
 7. [数量] フィールドに数値を入力します。
 8. [調達カテゴリ ノードの検索] フィールドで、探しているカテゴリの名前の最初の部分を入力し、[入力] ボタンをクリックします。
     * たとえば、「High」(蛍光ペン) と入力します。  
-9. [InvokeDefaultButton] ショートカットを使用します。
+9. InvokeDefaultButton ショートカットを使用します。
 10. [リストに記載されていない製品を明細行に追加] をクリックして、調達カタログに記載されていない製品を追加します。
 11. [製品名] フィールドに値を入力します。
 12. [単位] フィールドに値を入力します。

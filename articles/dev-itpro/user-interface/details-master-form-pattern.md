@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f8e6f7e678d0d53f5d468ac6f9de4aa7cbe8a37
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f8f98af0dc024f34159205b2c6addbde9bdd59a3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537595"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 

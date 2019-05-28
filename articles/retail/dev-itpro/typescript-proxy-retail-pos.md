@@ -3,7 +3,7 @@ title: Typescript および小売販売時点管理 (POS) の C# プロキシ
 description: このトピックでは、Retail プロキシに関する情報と、その生成方法について説明します。
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 511aac96e0c67be2fa2a67946b16003a1721345b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f2a2ad56d7492a87069a6204081fba079e53fa1b
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369206"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537522"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -51,6 +51,9 @@ Typescript プロキシを生成する手順と C# プロキシを生成する�
 
 POS の Typescript プロキシを生成するには、Retail SDK\\Reference フォルダーから CommerceProxyGenerator.exe ファイルを使用します。
 
+[!NOTE] 
+> 最新版の Retail には CommerceProxyGenerator.x.x.x.x (x.x.x.x はバージョン番号で SDK のバージョンによって異なります) という名前のフォルダがあります。 このフォルダは、CommerceProxyGenerator.exe および手順 1 で示すすべてのライブラリと共に RetailSDK\Code\References\, の下に事前コピーされているため、以下で説明する手順 1 を実行する必要はありません。 プロキシを生成するには、このフォルダーから CommerceProxyGenerator を使用する必要があります。
+
 1. プロキシを生成する前に、次のライブラリを **Retail SDK\\Reference\\..** から **Retail SDK\\Reference** フォルダーにコピーします。
 
     - Microsoft.OData.Core.dll@ 6.11.0.0
@@ -64,94 +67,98 @@ POS の Typescript プロキシを生成するには、Retail SDK\\Reference フ
 
     ```
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-    ```
+    
+> [!NOTE]
+> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from RetailSDK\Code\References\Microsoft.Dynamics.Retail.RetailServerLibrary.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version).
 
-    次に例を示します。
+Here is an example.
 
     ``` 
     CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
     ```
 
-    実行するコマンドで、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** をカスタム Retail サーバー拡張子ライブラリの名前に変えます。 POS プロジェクトに生成されたファイルを含めます。 このコマンドは、拡張ライブラリに基づいた 2 つのファイル、DataServiceEntities.g.ts と DataServiceRequests.g.tss を生成します。
+
+
+    In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
 
     > [!NOTE]
-    > すべての Retail サーバー拡張機能のプロキシを生成する必要があります。
+    > You must generate the proxy for all Retail Server extensions.
 
-## <a name="generate-the-c-proxy-71-and-72"></a>C# プロキシ (7.1 および 7.2) の生成
+## Generate the C# proxy (7.1 and 7.2)
 
 > [!IMPORTANT]
-> 7.3 以降のバージョンには、次の手順は適用されません。
+> The following procedure doesn't apply to version 7.3 and later.
 
-1. **Customization.settings** ファイルを **...Retail SDK\\BuildTools** から開きます。
-2. **RetailServerLibraryPathForProxyGeneration** ノードの下には、次に示すように、すべてのカスタム Retail サーバー拡張ライブラリを含めます。
+1. Open the **Customization.settings** file from **...Retail SDK\\BuildTools**.
+2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all your custom Retail Server extension libraries, as shown here.
 
     ```
     <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>;
     ```
 
-    この例では、カスタム ライブラリは **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** の 1 つだけあります。 ただし、カスタム Retail サーバー拡張ライブラリが含まれるようにします。
+    In this example, there is just one custom library, **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll**. However, be sure to include all your custom Retail Server extension libraries.
 
-3. **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj** を開きます。
-4. カスタム CRT プロジェクト ライブラリを **Proxies.RetailProxy.csproj** への参照として含めます。
-5. ソリューションの **RetailSDK\\Proxies\\RetailProxy\\Adapters\\UsingStatements.Extensions.txt** を開きます。
-6. **UsingStatements.Extensions.txt** で、CRT エンティティの名前空間および要求/応答の名前空間の **using** ステートメントを追加します。 たとえば、CRT 拡張機能で **Contoso.Commerce.Runtime.DataModel** 名前空間を使用する場合、ここに示すように、追加プロキシを生成するため **UsingStatements.Extensions.txt** にその名前空間を追加します。
+3. Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**.
+4. Include your custom CRT project library as a reference to **Proxies.RetailProxy.csproj**.
+5. Open **RetailSDK\\Proxies\\RetailProxy\\Adapters\\UsingStatements.Extensions.txt** in the solution.
+6. In **UsingStatements.Extensions.txt**, add the **using** statement for your CRT entity namespace and request/response namespace. For example, if you use the **Contoso.Commerce.Runtime.DataModel** namespace in your CRT extension, add that namespace in **UsingStatements.Extensions.txt** to generate the proxy, as shown here.
 
     ```
-    using Contoso.Commerce.Runtime.DataModel;
+    Contoso.Commerce.Runtime.DataModel を使用します;
     ```
 
-7. プロジェクトを構築します。
-8. **アダプタ** フォルダの新しいクラスを追加します。 アダプター フォルダーの他のマネージャー クラスをテンプレートとして使用すると、名前空間全体が含まれます。
-9. インターフェイス マネージャーからクラスを拡張し、必要なインターフェイス メソッドのみを実装します。
+7. Build the project.
+8. Add a new class under the **Adapters** folder. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
+9. Extend the class from the interface manager, and implement only the required interface methods.
   
-    インターフェイス クラスとマネージャ クラスの生成方法については、Retail SDK の Store Hours サンプルを参照してください。 指示は、**RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** ファイルにあります。
+    To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** file.
 
-## <a name="generate-the-c-proxy-73"></a>C# プロキシ (7.3) の生成
+## Generate the C# proxy (7.3)
 
 > [!IMPORTANT]
-> 次の手順は、POS と電子商取引の両方に適用されます。
+> The following procedure applies to both the POS and e-Commerce.
 
-Retail サーバー拡張機能ごとに、別個のプロキシを生成する必要があります。
+For each Retail Server extension, you must generate a separate proxy.
 
-1. **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample** に移動します。
-2. Microsoft Visual Studio で、**Proxies.RetailProxy.Extensions.StoreHoursSample** プロジェクト ファイルを開きます。
-3. 右クリックし、プロジェクトのアンロードを選択します。
-4. プロジェクトを右クリックし、**Proxies.RetailProxy.Extensions.StoreHoursSample.csproj** を選択して編集します。
-5. 最初のプロパティ グループ セクションで、次のノードを更新します。
+1. Navigate to **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample**.
+2. In Microsoft Visual Studio, open the **Proxies.RetailProxy.Extensions.StoreHoursSample** project file.
+3. Right-click, and select to unload the project.
+4. Right-click the project, and select to edit the **Proxies.RetailProxy.Extensions.StoreHoursSample.csproj** file.
+5. In the first property group section, update the following nodes:
 
-    - **&lt;RootNamespace&gt;** – ユーザー設定の名前空間を指定します。
-    - **&lt;AssemblyName&gt;** – プロキシのカスタム出力ライブラリ名を指定します。
+    - **&lt;RootNamespace&gt;** – Specify your custom namespace.
+    - **&lt;AssemblyName&gt;** – Specify your custom output library name for the proxy.
 
-6. Retail サーバーの拡張機能ライブラリ名を指定して、**CommerceProxyGeneratorExtendedAssemblyPaths** 要素を更新します。
+6. Update the **CommerceProxyGeneratorExtendedAssemblyPaths** element by specifying the name of your Retail Server extension library.
 
-    次に例を示します。
+    Here is an example.
 
     ```
     <CommerceProxyGeneratorExtendedAssemblyPaths Include="..\..\RetailServer\Extensions.StoreHoursSample\bin\$(Configuration)\net451\$(AssemblyNamePrefix).RetailServer.StoreHoursSample.dll" />
     ```
 
     > [!NOTE]
-    > **.RetailServer.StoreHoursSample.dll** は、Retail サーバー拡張アセンブリの名前です。残りの値は、接頭語 (接頭語がある場合) と、プロキシ エンジンがこのアセンブリを見つけることができるアセンブリのパスです。 プロキシは、このアセンブリに基づいて生成されます。
+    > **.RetailServer.StoreHoursSample.dll** is the name of the Retail Server extension assembly, and the rest of the value is the prefix (if there is a prefix) and the path of the assembly where the proxy engine can find this assembly. The proxy is generated based on this assembly.
 
-7. ファイルを保存し、プロジェクトを再度読み込みます。
-8. 拡張パターンに従って、プロジェクトの名前を変更します。
-9. プロジェクトが読み込まれた後、**アダプタ** フォルダから **StoreDayHoursManager.cs** ファイルを削除します。
-10. すべての関連する CRT と Retail サーバー ライブラリをプロジェクトまたはアセンブリ参照としてプロキシ プロジェクトに追加します。
-11. プロジェクトをリビルドします。
+7. Save the file, and load the project again.
+8. Rename the project according to your extension pattern.
+9. After the project is loaded, delete the **StoreDayHoursManager.cs** file from the **Adapters** folder.
+10. Add all the relevant CRT and Retail Server libraries to the proxy project as project or assembly references.
+11. Rebuild the project.
 
-    アダプタ フォルダー内で新しい Interfaces.g.cs ファイルが生成されると表示されます。
-
-    > [!NOTE]
-    > プロキシ プロジェクトを作成する前に、すべての CRT および Retail サーバー拡張ライブラリを再構築して、**RetailSDK\\References** フォルダーにドロップしてください。
-
-12. プロキシ プロジェクト内に新しい **Interfaces.g.cs** ファイルを含めます。 ただし、このファイルを変更しないでください。
-13. **アダプタ** フォルダーで、新しいクラス ファイルを追加し、拡張機能のパターンに従って名前をつけます。
-14. インターフェイス マネージャー クラスからクラスを拡張し、必要なインターフェイス メソッドのみを実装します。
+    You will see that a new Interfaces.g.cs file is generated inside the Adapters folder.
 
     > [!NOTE]
-    > Interfaces.g.cs ファイルで、インターフェイス マネージャー クラスの名前を見つけることが できます。
+    > Before you build the proxy project, rebuild all your CRT and Retail Server extension libraries, and drop them into the **RetailSDK\\References** folder.
 
-    次の例では、**IStoreDayHoursManager** はインターフェイスの名前です。
+12. Include the new **Interfaces.g.cs** file in the proxy project. However, don't modify this file.
+13. Under the **Adapters** folder, add a new class file, and name it according to your extension pattern.
+14. Extend the class from the interface manager class, and implement only the interface methods that are required.
+
+    > [!NOTE]
+    > You can find the name of the interface manager class in the Interfaces.g.cs. file.
+
+    In the following example, **IStoreDayHoursManager** is the name of the interface.
 
     ```C#
     public interface IStoreDayHoursManager : Microsoft.Dynamics.Commerce.RetailProxy.IEntityManager

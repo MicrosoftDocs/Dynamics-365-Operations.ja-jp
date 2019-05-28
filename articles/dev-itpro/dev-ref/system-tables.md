@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d0051b098e0cdf9c17a23f769cc42362bd7d125
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 91df47727f6608d416a21d94ad1ebaf3ac2c82cc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537010"
 ---
 # <a name="system-tables"></a>システム テーブル
 

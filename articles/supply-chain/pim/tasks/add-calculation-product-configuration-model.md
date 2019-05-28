@@ -17,11 +17,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9754c46010e7bbdb2edef0d6e68162f344bb1257
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "343170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570414"
 ---
 # <a name="add-a-calculation-to-a-product-configuration-model"></a>製品コンフィギュレーション モデルへの計算の追加
 
@@ -34,7 +34,7 @@ ms.locfileid: "343170"
 
 ## <a name="create-calculation-expression"></a>計算式の作成
 1. [式の編集] をクリックします。
-2. [ConstraintBody] フィールドで、「If[CabinetFinish=="White", 10, 15]」を入力します。
+2. ConstraintBody フィールドで、「If[CabinetFinish=="White", 10, 15]」を入力します。
 3. [検証] をクリックします。
 4. [閉じる] をクリックします。
 5. [OK] をクリックします。

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8952725b266d63411cdfad0adbd2005306eafd18
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: 94fcb6414f3ebe4eb64e281b3282c4099c04fefb
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537533"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 このトピックは、Dynamics 365 for Retail Modern POS の重複支払防止機能の概要を提供します。
@@ -35,10 +35,10 @@ ms.locfileid: "377864"
 
 このトピックでは、重複支払保護機能の次の側面について説明します。
 
-- [前提条件](#Prerequisites) - Dynamics 365 for Retail Modern POS でこの機能を活用するため、一連の前提条件を設定します。
-- [シナリオの詳細](#Scenario-details) - 重複支払保護機能の対象となるシナリオの詳細な説明。
-- [トラブルシューティングの手順](#Troubleshooting) - 重複支払保護機能で問題が発生したときに実行する手順です。
-- [追加リソース](#Additional-resources) - 重複支払保護機能を使用する場合に役に立つ関連記事の一覧。
+- [前提条件](#prerequisites) - Dynamics 365 for Retail Modern POS でこの機能を活用するため、一連の前提条件を設定します。
+- [シナリオの詳細](#scenario-details) - 重複支払保護機能の対象となるシナリオの詳細な説明。
+- [トラブルシューティングの手順](#troubleshooting) - 重複支払保護機能で問題が発生したときに実行する手順です。
+- [追加リソース](#additional-resources) - 重複支払保護機能を使用する場合に役に立つ関連記事の一覧。
 
 ## <a name="prerequisites"></a>必要条件
 - 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、この機能をサポートする必要があります。 *支払コネクタ*は、Dynamics 365 for Retail (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準支払 SDK を使用して実装されています。
@@ -95,7 +95,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 ![支払の回復をスキップします](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### <a name="what-to-do-if-the-customer-leaves-the-store"></a>顧客が店舗を出てしまった場合にすること
-場合によっては、レジ担当者が取引を確定する前に顧客が店舗から出て行ってしまうことがあります。 そのような場合は、[支払の回復をスキップする方法](#How-to-skip-payment-recovery)セクションで説明されている手順に従い、取引を無効にして、支払ゲートウェイ/プロセッサのポータルで支払を手動で無効にします。
+場合によっては、レジ担当者が取引を確定する前に顧客が店舗から出て行ってしまうことがあります。 そのような場合は、[支払の回復をスキップする方法](#how-to-skip-payment-recovery)セクションで説明されている手順に従い、取引を無効にして、支払ゲートウェイ/プロセッサのポータルで支払を手動で無効にします。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -108,7 +108,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 重複支払保護機能が有効になっている場合でも、販売者が、二重請求が発生していないことを検証することをお勧めします。 これを行うには、対応する支払ゲートウェイ/プロセッサ ポータル上のすべての取引を確認します。
 
 ### <a name="payment-recovery-fails"></a>支払の回復が失敗する時
-Dynamics 365 for Retail Modern POS で、前の支払の復元中にエラーが発生する可能性があります。 これは、支払コネクタまたは支払ゲートウェイ/プロセッサが前の支払の復元を許可しないという問題がある時に発生します。 この問題を解決するには、前の支払を復元できないために起きているので、レジ担当者は[支払の回復をスキップする方法](#How-to-skip-payment-recovery)セクションで説明されているように、回復をスキップしなければなりません。 | 
+Dynamics 365 for Retail Modern POS で、前の支払の復元中にエラーが発生する可能性があります。 これは、支払コネクタまたは支払ゲートウェイ/プロセッサが前の支払の復元を許可しないという問題がある時に発生します。 この問題を解決するには、前の支払を復元できないために起きているので、レジ担当者は[支払の回復をスキップする方法](#how-to-skip-payment-recovery)セクションで説明されているように、回復をスキップしなければなりません。 | 
 
 ## <a name="additional-resources"></a>追加リソース
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/payments-retail)

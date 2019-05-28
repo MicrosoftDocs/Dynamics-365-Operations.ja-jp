@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69b9bf62c6055e7c2a680c09b7fcda91a4496d00
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9db917a813208b010b0aa6c26b4d83f3b4015eba
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368393"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537350"
 ---
 # <a name="pagestate-enumeration"></a>PageState 列挙
 

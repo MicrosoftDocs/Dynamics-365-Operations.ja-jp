@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: 788ab96c7108047d53a619bc2647f137a9afb328
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: a58d3bde816d9f3d07f80d314d3a883f0d370ef6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512662"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -32,7 +32,13 @@ ms.locfileid: "975738"
 
 ## <a name="new-apis"></a>新しい API
 
-データ プロジェクトのインポート実行中に発生したエラーをデータ統合が取得するために、新しい API が追加されました。 詳細については、[データ管理パッケージ REST API](../../dev-itpro/data-entities/data-management-api.md) を参照してください。
+データ プロジェクトのインポート実行中に発生したエラーをデータ統合が取得するために、新しい API が追加されました。 これらの API は次のとおりです:
+
+- GetImportTargetErrorKeysFileUrl
+- GenerateImportTargetErrorKeysFile
+- GetImportStagingErrorFileUrl 
+
+詳細については、[データ管理パッケージ REST API](../../dev-itpro/data-entities/data-management-api.md) を参照してください。
 
 ## <a name="clear-identification-of-preview-builds"></a>プレビュー ビルドの明確な ID
 一部のパートナー、ISV、および顧客は、Preview Early Access Program (PEAP) に参加することによって、またはサービスの公開プレビューを使用することによって、Finance and Operations の運用前ビルドにアクセスできます。 このプレビュー フェーズは、最新の機能についてのフィードバックおよびカスタマイズ検証のメカニズムとなることを意図しています。 ただし、これらの初期リリースは実稼働環境での使用を許可されていません。 Finance and Operations のリリース プロセスの詳細については [標準および最初のリリース サービス更新](public-preview-releases.md) を参照してください。

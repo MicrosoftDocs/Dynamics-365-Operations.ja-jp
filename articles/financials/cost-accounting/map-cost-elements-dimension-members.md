@@ -19,11 +19,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: e5c9387d74443ec6ca5dc70ad923b67f962181dc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "318146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566964"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ
 

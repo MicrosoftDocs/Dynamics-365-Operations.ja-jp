@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: f730acbd259cb588f051809c38c913cdf91ff51d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e60b77015a7ac84a01161b5786299426f9ca070
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368444"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537355"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 

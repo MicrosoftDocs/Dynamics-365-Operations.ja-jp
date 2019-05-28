@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 5b313b07ee4751ccb0e710edf82792a9ec59071f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 25ab6aac36164612143a3385bc03821d01c1c18f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537232"
 ---
 # <a name="upgrade-the-dynamics-ax-platform-to-the-august-2016-release"></a>2016 年 8 月リリースへの AX プラットフォームのアップグレード
 

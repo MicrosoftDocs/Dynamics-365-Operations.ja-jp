@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 36ff012c58152eb3b29a346269f7f5daa1d00b8f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dfb8141be8cf06b0b1c15d5fba572f3969e09ba5
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368408"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506227"
 ---
 # <a name="create-tables-by-using-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する
 

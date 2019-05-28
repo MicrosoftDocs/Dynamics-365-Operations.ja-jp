@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 6f9b02081fdfdead8b9c26e43992fcbd4bc5b7d4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01e1476f5ff339176833ce945d40560a2a6c7233
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537481"
 ---
 # <a name="extended-data-types"></a>拡張データ型
 [!include [banner](../includes/banner.md)]

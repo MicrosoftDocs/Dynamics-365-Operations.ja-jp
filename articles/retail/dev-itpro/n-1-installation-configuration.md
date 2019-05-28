@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9542ceaed1d0c3fccf9636fe8f06313f8b7392fa
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f2dec055788ea60839ef026b18d9847c6e7442b2
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369213"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537589"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 
@@ -39,12 +39,12 @@ ms.locfileid: "369213"
 ## <a name="overview"></a>概要
 このトピックのセクションでは、N-1 コンポーネントを所持する環境の設定を行う必要がある以下の手順について説明します。 これらの手順では、Retail バック オフィスが既に配置され、AX 2012 R3 環境が現在実行中であることを前提としています。
 
-- **[Azure AD アカウントを設定](#Set-up-Azure-AD-accounts)** – このセクションでは、小売用バックオフィスに接続するために使用する N-1 コンポーネントの Microsoft Azure Active Directory (Azure AD) アカウントの設定方法について説明します。
-- **[N-1コンポーネントを構成する](#Configure-N-1-components)** – このセクションでは、小売用バックオフィスで N-1コンポーネントを構成する方法について説明します。
-- **[N-1 コンポーネントのインストール](#Install-N-1-components)** – このセクションでは既存の AX 2012 R3 環境で N-1 コンポーネントをダウンロードおよびインストールする方法について説明します。
-- **[N-1 に切り替えるための切替手順](#Cutover-steps-to-switch-to-N-1)** – このセクションでは、既存の AX 2012 R3 環境を AX 2012 R3 バックオフィスから Dynamics 365 小売用バックオフィスに切り替えるために、新しい N-1 コンポーネントを使用する方法について説明します。
-- **[トラブルシューティングの手順](#Troubleshooting-steps)** – このセクションでは、一般的な問題のトラブルシューティングの手順について説明します。
-- **[N-1 に必要な KB](#Required-KBs-for-N-1)** – このセクションでは、N-1 環境を設定するために必要な Microsoft サポート技術情報の記事番号 (KB) が一覧で表示されます。
+- **[Azure AD アカウントを設定](#set-up-azure-ad-accounts)** – このセクションでは、小売用バックオフィスに接続するために使用する N-1 コンポーネントの Microsoft Azure Active Directory (Azure AD) アカウントの設定方法について説明します。
+- **[N-1コンポーネントを構成する](#configure-n-1-components)** – このセクションでは、小売用バックオフィスで N-1コンポーネントを構成する方法について説明します。
+- **[N-1 コンポーネントのインストール](#install-n-1-components)** – このセクションでは既存の AX 2012 R3 環境で N-1 コンポーネントをダウンロードおよびインストールする方法について説明します。
+- **[N-1 に切り替えるための切替手順](#cutover-steps-to-switch-to-n-1)** – このセクションでは、既存の AX 2012 R3 環境を AX 2012 R3 バックオフィスから Dynamics 365 小売用バックオフィスに切り替えるために、新しい N-1 コンポーネントを使用する方法について説明します。
+- **[トラブルシューティングの手順](#troubleshooting-steps)** – このセクションでは、一般的な問題のトラブルシューティングの手順について説明します。
+- **[N-1 に必要な KB](#required-kbs-for-n-1)** – このセクションでは、N-1 環境を設定するために必要な Microsoft サポート技術情報の記事番号 (KB) が一覧で表示されます。
 
 ### <a name="high-level-architecture"></a>高レベル アーキテクチャ
 次の図は、N-1 手順の高レベル概要を示しています。
@@ -284,10 +284,10 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
 | ステップ | 詳細情報 | タイムライン |
 |---|---|---|
 | 1. 小売用バックオフィスを配置します。 | 小売用バックオフィスを稼働します。 Microsoft Dynamics 365 for Retail クラウド POS (CPOS) は、環境内の機能を検証するために使用できます。 | 切替前の数週間または数か月 |
-| 2. Microsoft Dynamics 365 for Retail アプリケーション (X++) KB をインストールします。 | N-1 に関連するすべての問題が解決されていることを確認するには、[N-1 に必要な KB](#Required-KBs-for-N-1) セクションに記載されている KB をインストールします。 | 切替前の数週間または数か月 |
-| 3. Azure AD アカウントを設定します。 | [Set up Azure AD アカウントの設定](#Set-up-Azure-AD-accounts) セクションの指示に従い、N-1 コンポーネントに必要なアカウントを作成し、小売用バックオフィスに対して認証します。 | 切替前の数週間または数か月 |
-| 4. 小売用バックオフィスのコンフィギュレーション | [N-1 コンポーネントを構成する](#Configure-N-1-components) セクションの指示に従い、N-1 コンポーネントをインストールする前にすべての設定を構成します。 | 切替前の数週間または数か月 |
-| 5. N-1 コンポーネントのインストール。 | [N-1 コンポーネントのインストール](#Install-N-1-components) セクションの指示に従い、N-1 コンポーネントをインストールします。 N-1 Async Server Connector Service コンポーネントはインストールする必要がありますが、AX 2012 R3 と Dynamics 365 CDX パッケージが混在しないようにするには、すぐに無効にする必要があることに注意してください。 | 切替前の数週間または数か月 |
+| 2. Microsoft Dynamics 365 for Retail アプリケーション (X++) KB をインストールします。 | N-1 に関連するすべての問題が解決されていることを確認するには、[N-1 に必要な KB](#required-kbs-for-n-1) セクションに記載されている KB をインストールします。 | 切替前の数週間または数か月 |
+| 3. Azure AD アカウントを設定します。 | [Set up Azure AD アカウントの設定](#set-up-azure-ad-accounts) セクションの指示に従い、N-1 コンポーネントに必要なアカウントを作成し、小売用バックオフィスに対して認証します。 | 切替前の数週間または数か月 |
+| 4. 小売用バックオフィスのコンフィギュレーション | [N-1 コンポーネントを構成する](#configure-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールする前にすべての設定を構成します。 | 切替前の数週間または数か月 |
+| 5. N-1 コンポーネントのインストール。 | [N-1 コンポーネントのインストール](#install-n-1-components) セクションの指示に従い、N-1 コンポーネントをインストールします。 N-1 Async Server Connector Service コンポーネントはインストールする必要がありますが、AX 2012 R3 と Dynamics 365 CDX パッケージが混在しないようにするには、すぐに無効にする必要があることに注意してください。 | 切替前の数週間または数か月 |
 
 ### <a name="preparation"></a>準備
 切り替えがスケジュールされる数日前に、これらの手順に従って準備します。

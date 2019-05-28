@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 9ec1db4f5c3a01300cc2678d4371eab7392c6223
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c98464d75ef51e8a97404577cebbcead9f432f29
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537042"
 ---
 # <a name="update-an-environment"></a>環境の更新
 

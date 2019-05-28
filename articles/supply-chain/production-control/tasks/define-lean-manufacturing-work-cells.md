@@ -18,11 +18,11 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 8f31fbd2ed8e20b92527af88fc3c955d3c66a364
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350392"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566545"
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>リーン生産作業セルの定義
 
@@ -89,11 +89,11 @@ ms.locfileid: "350392"
 ## <a name="add-a-financial-dimension"></a>財務分析コードの追加
 1. [財務分析コード] セクションを展開または折りたたみます。
     * 生産フローで定義されている財務分析コードが、所定の作業セルの財務分析コードを上書きすることに注意してください。    選択できる財務分析コードは、システムの財務分析コードのコンフィギュレーションによって決まります。 次の手順は、USMF 会社のデモ データ セットに対応します。 異なるデータを使用すると、この手順は当てはまらない場合があります。  
-2. [CostCenter] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+2. CostCenter フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 3. 一覧で、目的のレコードを見つけ、選択します。
     * リーン作業セルで選択する必要がある分析コードは、特定の法人の会計モデルの財務分析コードの実装によって異なります。  
 4. 一覧で、選択された行のリンクをクリックします。
-5. [ItemGroup] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
+5. CostCenter フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 6. 一覧で、目的のレコードを見つけ、選択します。
 7. 一覧で、選択された行のリンクをクリックします。
 

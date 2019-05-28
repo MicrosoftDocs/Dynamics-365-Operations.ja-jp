@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 6877ab4ddf756b3ac9ea3f50b4176755996592e5
-ms.sourcegitcommit: 4e104ad3fc4a160a06f0d031974d60abcbb62829
+ms.openlocfilehash: d45d27b11beb70630df1cd1d17939468e734c908
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "851216"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537177"
 ---
 # <a name="set-up-alerts"></a>警告の設定
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations の重大なイベントの通知システムは、警告によって形成されます。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。 警告ルールの組み合わせを設定できます。そうすることでバッチ ジョブの終了時にエラーが発生した場合、またはキャンセルされた場合に警告を表示させることができます。 警告を電子メールで送信するか、アクション センターに通知として表示するかどうかを選択することができます。 警告はバッチ ジョブおよびユーザーごとに設定が可能です。
 

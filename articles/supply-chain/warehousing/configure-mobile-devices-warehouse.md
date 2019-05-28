@@ -3,7 +3,7 @@ title: 倉庫作業用のモバイル デバイスの設定
 description: このトピックでは、倉庫作業者がモバイル デバイスで作業を実行するために使用するメニュー項目をコンフィギュレーションする方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536552"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業用のモバイル デバイスの設定
 
@@ -410,10 +410,8 @@ ms.locfileid: "347954"
 
 **注意:** ピッキングとプット作業タイプに対してのみ製品の確認を要求できます。
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
-
-[倉庫モバイル デバイスの表示設定](change-warehouse-mobile-device-displays.md)
 
 [発注書 (タスク ガイド) タイプの作業を完了するためのモバイル デバイス メニュー アイテムの設定](tasks/set-up-mobile-device-menu.md)
 

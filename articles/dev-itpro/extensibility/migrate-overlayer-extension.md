@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 0dd2629923209dc1d10a3cb52a3bc2c70f536bfd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: cb927598d6d1ce6d9302bef3277ae8b9304a835d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369191"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1506139"
 ---
 # <a name="migrate-from-overlayering-to-extensions"></a>オーバーレイから拡張機能への移行
 

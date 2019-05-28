@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ea117efdbe3c905cc67286080b15a2553a8039dc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: cc6c4f09d63fb98b503d1276f5a60cb2042e6636
+ms.sourcegitcommit: 1f269e1afd876bd592f88eee683664bc93fa64bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369908"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539449"
 ---
 # <a name="create-custom-localized-error-messages-for-payment-terminal-extensions"></a>支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 
@@ -39,8 +39,8 @@ ms.locfileid: "369908"
 ## <a name="overview"></a>概要
 このトピックの残りのセクションでは、支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する次の手順について説明します。
 
-- **[カスタム エラー メッセージを作成します](#Create-custom-error-messages)** – このセクションでは、返すことが可能で POS に表示される支払コネクタでカスタム エラー メッセージを作成する方法について説明します。
-- **[ローカライズ済みエラー メッセージを作成します](#Create-localized-error-messages)** – このセクションでは、返され、POS に表示される支払コネクタでエラー メッセージをローカライズする方法について説明します。
+- **[カスタム エラー メッセージを作成します](#create-custom-error-messages)** – このセクションでは、返すことが可能で POS に表示される支払コネクタでカスタム エラー メッセージを作成する方法について説明します。
+- **[ローカライズ済みエラー メッセージを作成します](#create-localized-error-messages)** – このセクションでは、返され、POS に表示される支払コネクタでエラー メッセージをローカライズする方法について説明します。
 
 ## <a name="create-custom-error-messages"></a>カスタム エラー メッセージを作成する
 POS でカスタム エラー メッセージをトリガーするには、**AuthorizePaymentTerminalDeviceResponse** オブジェクトに渡される **paymentInfo** の**エラー**プロパティに、適切なエラーを設定する必要があります。 具体的には、辞退済の支払の組み込みエラー メッセージの代わりに、カスタム エラー メッセージを使用する POS を強制するように、**PaymentError** オブジェクトのコンストラクター上の **isLocalized** パラメーターを **true** に設定する必要があります。

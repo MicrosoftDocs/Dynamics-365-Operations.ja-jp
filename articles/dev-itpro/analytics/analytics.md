@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4ce1b55f051d934ab7e852f090f9e3ef997bf5b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0fa659934d9d96d50d456207e2655ff08c3a2bc1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502766"
 ---
 # <a name="analytics-aggregate-measurements-and-kpi-modeling"></a>分析、集計の測定、および KPI モデリング
 

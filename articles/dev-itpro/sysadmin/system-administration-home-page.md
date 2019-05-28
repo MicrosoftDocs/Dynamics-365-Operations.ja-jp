@@ -3,7 +3,7 @@ title: システム管理ホーム ページ
 description: このトピックは、システム管理者が利用できるリソースを一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 05/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,29 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b66a2df70c933845d8eb33a2775465337493b63
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7aa4dc8a2d516230abe825a084020cb716b66678
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369569"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537126"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。
+
+## <a name="one-version"></a>1 つのバージョン
+2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態するために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
+
+- [1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md)
+- [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-and-ops/get-started/one-version.md)
+- [サービス更新の可用性](../../fin-and-ops/get-started/public-preview-releases.md)
+- [クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)
+- [Lifecycle Services (LCS) によるサービスの更新の構成](../lifecycle-services/configure-service-updates.md)
+- [Lifecycle Services (LCS) によるサービスの更新の一時停止](../lifecycle-services/pause-service-updates.md)
+- [Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る](../lifecycle-services/notifications-service-updates.md)
 
 ## <a name="implementation-management-with-lifecycle-services"></a>Lifecycle Services を使用した実装管理
 Microsoft Dynamics Lifecycle Services (LCS) は、Finance and Operations 実装のライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。

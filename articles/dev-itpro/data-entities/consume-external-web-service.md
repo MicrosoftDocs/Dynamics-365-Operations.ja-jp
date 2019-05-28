@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf7a214fd77a55da46b6281aaf64e6883a3e3a42
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 649ce39e2326b8ab662867525020c43d75405d42
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369047"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505424"
 ---
 # <a name="consume-external-web-services-in-finance-and-operations"></a>Finance and Operations における外部 Web サービスの使用
 
@@ -32,15 +32,17 @@ Microsoft Dynamics 365 for Finance and Operations に新しいクラス ライ�
 
 次の手順は、X++ から外部 StockQuote サービスを使用する方法を示しています。
 
+このサンプルの Web サービスの URL は架空のものであることに注意してください。  http://www.contoso.net/stockquote.asmx に既知の Web サービスはありません。  このコードを機能させるには、それを特定の Web サービスに適応させる必要があります。
+
 1. Visual Studio で新しいクラス ライブラリ プロジェクトを作成し、**ExternalServiceLibrary.csproj** という名前を付けます。
-2. Visual Studio プロジェクトで、外部 Web サービス `http://www.webservicex.net/stockquote.asmx` へのサービス参照を追加します。
+2. Visual Studio プロジェクトで、外部 Web サービス `http://www.contoso.net/stockquote.asmx` へのサービス参照を追加します。
 3. 新しい静的クラスを作成し、次の例に示すように StockQuote サービス操作をラップします。
 
     ```
     public static string GetQuote(string s)
     {
         var binding = new System.ServiceModel.BasicHttpBinding();
-        var endpointAddress = new EndpointAddress("http://www.webservicex.net/stockquote.asmx");
+        var endpointAddress = new EndpointAddress("http://www.contoso.net/stockquote.asmx");
         ServiceLibrary.QuoteReference.StockQuoteSoapClient client = new ServiceLibrary.QuoteReference.StockQuoteSoapClient(binding, endpointAddress);
 
         //GetQuote is the operation on the StockQuote service
@@ -51,7 +53,7 @@ Microsoft Dynamics 365 for Finance and Operations に新しいクラス ライ�
 4. プロジェクトを構築します。 バイナリ ExternalServiceLibrary.dll が作成されます。
 5. Visual Studio で、新しい Dynamics プロジェクトを作成します。
 6. 参照として **ExternalServiceLibrary.dll** を追加します。
-7. X++ クラスでは、ExternalesrviceLibrary.dll で参照されていた外部 Web サービスを使用することができます。
+7. X++ クラスでは、ExternalServiceLibrary.dll で参照されていた外部 Web サービスを使用することができます。
 
     ```
     public static void main(Args _args)

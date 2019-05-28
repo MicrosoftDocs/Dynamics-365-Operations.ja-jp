@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
 ms.openlocfilehash: 1754d2338c7bf803b16c3c6a5bc9fbf25d7e031f
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976716"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537516"
 ---
 # <a name="preview-features-in-dynamics-365-for-retail-version-1002"></a>Dynamics 365 for Retail バージョン 10.0.2 の機能をプレビューする
 

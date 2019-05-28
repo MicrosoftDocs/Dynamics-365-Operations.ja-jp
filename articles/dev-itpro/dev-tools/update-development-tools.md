@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dbe4329ad97c4812c85cc15c06eab632fc9f895
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 92bd5c4985c4a2dcc5d348e62bf0de3251b04c7d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368605"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1510971"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 

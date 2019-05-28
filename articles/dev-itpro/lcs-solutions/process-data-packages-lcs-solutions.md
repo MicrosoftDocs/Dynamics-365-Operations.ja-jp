@@ -16,11 +16,11 @@ ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
 ms.openlocfilehash: 7ef04d0e05447055ee36daea0031146a88baf866
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537309"
 ---
 # <a name="process-and-consume-data-packages-in-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータ パッケージの処理と使用
 

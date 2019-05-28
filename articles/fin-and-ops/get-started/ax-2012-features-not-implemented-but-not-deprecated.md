@@ -3,7 +3,7 @@ title: 延期された AX 2012 の機能
 description: このトピックでは、Microsoft Dynamics AX 2012 の延期された機能と、その機能が AX 7.0 リリース以降に実装されているかどうかを示しています。
 author: sericks007
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 82dc0dc6be87354fed7a93991e1f62c2927fce09
-ms.sourcegitcommit: d9c48adeff6fed1d6c84d74036f4a50a793503f1
+ms.openlocfilehash: 18d81425c6a4ef8a850b0f72669e6325644d08e0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "377969"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537463"
 ---
 # <a name="ax-2012-features-that-were-postponed"></a>延期された AX 2012 の機能
 
@@ -105,8 +105,8 @@ ms.locfileid: "377969"
 </tr>
 <tr>
 <td>一般予算引当</td>
-<td>一般予算引当はコミットメントと呼ばれることがあります。 公的機関法人はよく、このドキュメントを使用して、予算財源を取置きしたり、他の目的に使用できないようにします。 この機能は、将来の更新に追加されます。</td>
-<td>実装されていません</td>
+<td>一般予算引当はコミットメントと呼ばれることがあります。 公的機関法人はよく、このドキュメントを使用して、予算財源を取置きしたり、他の目的に使用できないようにします。</td>
+<td>バージョン 8.1 で実装済み</td>
 </tr>
 <tr>
 <td><strong>固定資産価値モデル</strong>および<strong>減価償却簿プロファイル</strong>ページの<strong>グラフィック</strong>タブ</td>

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c86c0a2fa1e6d33e0e584c796b65480b618aeac9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5bf84c699ddc73991e5a1bff7c0b33a0c30ebf9a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369109"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537199"
 ---
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 

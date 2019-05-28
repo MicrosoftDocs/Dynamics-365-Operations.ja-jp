@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 092f7e566c6ac14421e772f538a61af6fa0ef2d7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bf05deef23bda6e260e7bbc17a8e4ad7cb4104c3
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "369108"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537411"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 "[!include [banner](../includes/banner.md)]"

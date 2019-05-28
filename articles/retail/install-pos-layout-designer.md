@@ -20,11 +20,11 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327645"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572083"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール
 
@@ -36,7 +36,7 @@ MPOS、またはクラウド POS のグラフィカル デザイン インター
 
 ## <a name="install-the-one-click-designer"></a>ワンクリック デザイナーをインストールする
 
-1. Microsoft Dynamics 365 for Retail では、左上のメニューを使って、**小売とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS** &gt; **画面レイアウト**の順に移動します。
+1. Microsoft Dynamics 365 for Retail では、左上のメニューを使って、**小売** **とコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS** &gt; **画面レイアウト**の順に移動します。
 2. **Windows のモダン POS** または**クラウド POS**のアプリケーション タイプを持つレイアウトを選択し、**レイアウト デザイナー** をクリックします。
 3. ワンクリック デザイナーをインストールする場合、Internet Explorer ウィンドウの下部に表示される通知バーの**開始**をクリックします。 (通知バーは、他のブラウザでは別の場所に表示される場合があります。)
 4. 表示される **アプリケーションの実行 - セキュリティの警告** メッセージ ボックスで、**実行** をクリックし、Retail デザイナー ホストをインストールします。 インストールの進捗状況を進捗状況インジケータが表示します。

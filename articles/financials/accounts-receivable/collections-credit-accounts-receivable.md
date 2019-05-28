@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c36e7a5d28baf149b982a0afd5fdd79fe8a91850
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351680"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562953"
 ---
 # <a name="credit-and-collections-in-accounts-receivable"></a>売掛金勘定の貸方転記と取立
 

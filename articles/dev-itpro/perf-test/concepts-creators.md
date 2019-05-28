@@ -18,11 +18,11 @@ ms.author: MichaelFruergaardPontoppidan
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: App Update 10.0.2
 ms.openlocfilehash: 1e4254f638ee0a04bfc95a1ee952940f2e803deb
-ms.sourcegitcommit: 185d13bc3e2b2a51569471368671d5cc3023ab14
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992909"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537141"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 

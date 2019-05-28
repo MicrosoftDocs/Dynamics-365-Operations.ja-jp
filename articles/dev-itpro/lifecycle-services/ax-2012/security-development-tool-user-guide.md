@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b86108616f3c7705dfdf637abcafc60517421bb7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 54763b43629e941d4b3073c5fb5a0976f55a1125
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "368297"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537231"
 ---
 # <a name="security-development-tool-user-guide"></a>セキュリティ開発ツールのユーザー ガイド
 
