@@ -1,684 +1,1056 @@
-- name: Dynamics 365 for Retail へようこそ
-  href: index.md
-- name: 使用開始
-  items:
-    - name: 新機能および変更された機能
-      href: get-started/whats-new.md
-    - name: Dynamics 365 for Retail 10.0.3 の機能のプレビュー
-      href: get-started/whats-new-10-0-3.md
-    - name: Dynamics 365 for Retail 10.0.2 の機能のプレビュー
-      href: get-started/whats-new-10-0-2.md
-    - name: Dynamics 365 for Retail 10.0.1 の新機能および変更された機能
-      href: get-started/whats-new-10-0-1.md
-    - name: Dynamics 365 for Retail (2019 年 4 月) の新機能と変更された機能
-      href: get-started/april-whats-new.md
-    - name: Retail を購入する前に
-      href: get-started/before-you-buy.md
-    - name: プレビュー サブスクリプションのサインアップ
-      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: デモ環境の配置
-      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
-    - name: 配置オプション
-      href: dev-itpro/choose-deployment.md
-    - name: Retail に関するサポートの利用
-      href: retail-support.md
-    - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
-      href: ../fin-and-ops/get-started/one-version.md
-- name: 実装ライフサイクルの理解
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
-  items:
-    - name: Microsoft FastTrack for Dynamics 365
-      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-    - name: Onboarding
-      href: ../fin-and-ops/imp-lifecycle/onboard.md
-    - name: Go-Live の準備
-      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
-    - name: Go-Live に関するよく寄せられる質問
-      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
-    - name: サービス要求の送信
-      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-    - name: サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
-      href: ../fin-and-ops/get-started/subscription-overview.md
-    - name: データ センター間で環境を移動する
-      href: ../fin-and-ops/get-started/move-environments-data-center.md
-    - name: 契約タイプ間でライセンスを移動する
-      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
-    - name: LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する
-      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
-    - name: 複数の LCS プロジェクトと実稼働環境を同じ Azure Active Directory テナント上に実装する
-      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Finance and Operations Retail プロジェクトの実装
-      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
-      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-    - name: Retail プロジェクトのコードと環境の更新
-      href: dev-itpro/updating-environments.md
-    - name: テストおよびパフォーマンスに関する問題
-      href: dev-itpro/retail-implementation-testing-performance.md
-- name: 分散型注文管理 (DOM)
-  href: dom.md
-- name: 支払
-  items:
-    - name: 支払方法
-      href: payment-methods.md
-    - name: クレジット カードの設定、認証、および取得
-      href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: POS の現金貨幣単位の構成
-      href: cash-denominations.md
-    - name: Adyen 向け Dynamics 365 Payment Connector
-      href: dev-itpro/adyen-connector.md
-    - name: 請求書の支払シナリオを設定する
-      href: payinvoice.md
-    - name: 支払に関してよく寄せられる質問
-      href: dev-itpro/payments-retail.md
-    - name: 重複支払の防止
-      href: duplicate-payment-protection.md
-- name: 発注書
-  items:
-    - name: 発注書の概要
-      href: ../supply-chain/procurement/purchase-order-overview.md
-    - name: 発注書の作成
-      href: ../supply-chain/procurement/purchase-order-creation.md
-    - name: 発注書に対する製品受領書
-      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
-    - name: 発注書の承認と確認
-      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
-    - name: 発注書承認モバイル ワークスペース
-      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
-- name: 明細書
-  items:
-    - name: 小売明細書
-      href: retail-statements.md
-    - name: 小売トランザクションの整合性チェック
-      href: valid-checker.md
-    - name: 小売店舗の明細書の作成、計算、および転記
-      href: tasks/create-calculate-post-statement-retail-store.md
-    - name: 明細書転記機能に関する強化事項
-      href: statement-posting-EOD.md
-    - name: 小売明細書に影響を及ぼす Retail のパラメーターのコンフィギュレーション
-      href: tasks/parameter-configurations-retail-statements.md
-    - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
-      href: tasks/payment-configurations-retail-statements.md
-    - name: 明細書を計算するジョブのコンフィギュレーションおよび実行
-      href: tasks/run-job-calculate-statements.md
-    - name: 明細書を転記するジョブのコンフィギュレーションおよび実行
-      href: tasks/run-job-post-statements.md
-    - name: 小売明細書に影響を及ぼす店舗設定のコンフィギュレーション
-      href: tasks/store-configurations-retail-statements.md
-- name: 消費税
-  items:
-    - name: 消費税の概要
-      href: ../financials/general-ledger/indirect-taxes-overview.md
-    - name: '[発生元] フィールドでの消費税計算方法'
-      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-    - name: 売上税の割り当ておよび上書き
-      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
-    - name: 消費税コードの合計額と間隔計算オプション
-      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Omni チャネルの高度な自動請求
-  items:
-    - name: 高度な自動請求のコンフィギュレーションおよび使用
-      href: omni-auto-charges.md
-    - name: ヘッダー請求金額を一致する販売明細行に比例配分する
-      href: pro-rate-charges-matching-lines.md
-- name: コール センター
-  items:
-    - name: コール センターの販売機能
-      href: call-center-functionality.md
-    - name: コール センターのカタログ
-      href: call-center-catalogs.md
-    - name: 出荷モードと雑費のコンフィギュレーション
-      href: configure-call-center-delivery.md
-    - name: 詐欺警告の設定および使用
-      href: set-up-fraud-alerts.md
-    - name: コール センター チャネルの設定
-      href: set-up-order-processing-options.md
-    - name: コール センターの連続プログラムの設定
-      href: set-up-continuity-program.md
-    - name: コール センターの注文保留のコンフィギュレーションおよび作業
-      href: work-with-order-holds.md
-    - name: 支払方法
-      href: work-with-payments.md
-- name: チャネルの設定と管理
-  items:
-    - name: 新しい Retail 環境でのシード データの初期化
-      href: enable-configure-retail-functionality.md
-    - name: 小売チャネルの定義と管理
-      href: define-maintain-retail-channels.md
-    - name: 品揃え管理
-      href: assortments.md
-    - name: オンライン ストアの設定
-      href: online-stores.md
-    - name: Retail Hardware Station のコンフィギュレーションおよびインストール
-      href: retail-hardware-station-configuration-installation.md
-    - name: Retail の時刻と出勤
-      href: retail-time-attendance.md
-- name: Modern Point of Sale (MPOS) および Cloud POS
-  items:
-    - name: MPOS か Cloud POS かの選択
-      href: MPOS-or-CPOS.md
-    - name: オンラインおよびオフラインの POS 操作
-      href: pos-operations.md
-    - name: カスタマイズされた Retail Modern POS のデバイスの有効化
-      href: dev-itpro/retail-POS-activation-changes.md
-    - name: MPOS および Cloud POS のデモ データ画面レイアウト
-      href: demo-data.md
-    - name: POS での製品および顧客の検索
-      href: POS-search-improvements.md
-    - name: POS での在庫検索
-      href: product-variants-POS.md
-    - name: POS でのトランザクションの中断および再開
-      href: pos-suspend-recall-transactions.md
-    - name: ハードウェア周辺機器
-      items:
-        - name: Retail 周辺機器
-          href: retail-peripherals-overview.md
-        - name: Retail 周辺機器シミュレーター
-          href: dev-itpro/retail-peripheral-simulator.md
-        - name: POS への周辺機器の接続
-          href: define-maintain-channel-clients-registers-hw-stations.md
-    - name: 画面レイアウト
-      items:
-        - name: MPOS/CPOS のデモ データ画面レイアウト
-          href: demo-data.md
-        - name: POS の画面レイアウト
-          href: pos-screen-layouts.md
-        - name: Retail POS のレイアウト デザイナーのインストール
-          href: install-pos-layout-designer.md
-        - name: 通知設定の選択
-          href: Notifications-POS.md
-        - name: POS アプリケーションとユーザー言語設定
-          href: pos-application-user-language-settings.md
-        - name: MPOS のイメージの設定および管理
-          href: set-up-manage-images-retail-mpos.md
-    - name: 情報コードおよび情報コード グループ
-      href: info-codes-retail.md
-    - name: シリアル化された製品の POS 改善
-      href: serialized-inventory.md
-    - name: 製品推奨事項
-      items:
-        - name: カスタマイズされた製品推奨事項
-          href: personalized-product-recommendations.md
-        - name: POS デバイスでの推奨事項コントロールの追加
-          href: add-recommendations-control-pos-screen.md
-    - name: オフライン POS 機能
-      href: pos-offline-functionality.md
-    - name: シフトとキャッシュ ドロワーの管理
-      href: shift-drawer-management.md
-    - name: ギフト カードのキャッシュ アウト残高
-      href: dev-itpro/gift-card-cash-out.md
-    - name: 顧客注文
-      items:
-        - name: MPOS の顧客注文
-          href: customer-orders-overview.md
-        - name: ハイブリッド顧客注文
-          href: hybrid-customer-orders.md
-    - name: 店員
-      items:
-        - name: 売上グループを使用した POS でのコミッションの追跡
-          href: pos-sales-groups-track-commissions.md
-    - name: 別の店舗からの注文の出荷
-      href: charge-send.md
-    - name: デバイスの有効化
-      items:
-        - name: MPOS のインストール、コンフィギュレーション、有効化
-          href: retail-modern-pos-device-activation.md
-        - name: MPOS および Cloud POS の拡張ログオン機能の設定
-          href: extended-logon.md
-        - name: Retail アクティベーション アカウントの管理とデバイスの検証
-          href: set-up-activation-accounts-validate-devices-hq.md
-    - name: 受領書
-      items:
-        - name: 受領書フォーマットの設定およびデザイン
-          href: receipt-templates-printing.md
-        - name: MPOS からの電子メール レシートの送信
-          href: email-receipts.md
-    - name: MPOS および Cloud POS のタスク レコーダーとヘルプ
-      href: task-recorder-retail-pos.md
-- name: 注文のフルフィルメント
-  items:
-    - name: 店舗注文のフルフィルメント
-      href: Order-fulfillment-overview.md
-    - name: 店舗における注文のフルフィルメントの設定
-      href: Order-fulfillment-POS-setup.md
-    - name: POS の注文通知の表示
-      href: Notifications-POS.md
-- name: 返品
-  items:
-    - name: 店舗の品揃えに含まれていない製品の販売および返品
-      href: sell-return-outside-assortments.md
-    - name: 返品注文に対する交換のコンフィギュレーションとプロセス
-      href: orderexchanges.md
-    - name: レシートのない返品の支払方法の制限
-      href: payment-methods-restrictions.md
-    - name: 複数の顧客注文および請求書間での品目の返品
-      href: multireturn.md
-- name: 監視と分析
-  items:
-    - name: 販売と利益幅のパフォーマンスの監視
-      href: monitor-sales-margin-performance.md
-    - name: 販売のトレンドとパターンの分析
-      href: analyze-sales-trends-patterns.md
-    - name: 製品別の売上実績の評価
-      href: sales-performance-products.md
-    - name: 顧客と製品の収益性の評価
-      href: assess-customer-product-profitability.md
-    - name: 店舗のパフォーマンスの分析
-      href: store-performance-information.md
-    - name: 最新、頻度、金額 (RFM) 分析の設定
-      href: set-up-rfm-analysis.md
-- name: 小売価格レポート
-  href: price-report.md
-- name: 価格決定と割引
-  items:
-    - name: 小売割引
-      href: retail-discounts-overview.md
-    - name: 小売販売価格の管理
-      href: price-management.md
-    - name: 価格調整および割引
-      href: price-adjustments-discounts.md
-    - name: 製品に対する複数の割引の適用
-      href: Apply-multiple-retail-discounts.md
-    - name: 重複する割引の最適な組み合わせの決定
-      href: optimal-combination-overlapping-discounts.md
-    - name: チャネル固有の割引の定義
-      href: define-channel-specific-discounts.md
-    - name: 小売製品の割引を回避するためのオプション
-      href: prevent-discounts.md
-    - name: 出荷割引の概要
-      href: retail-shipping-discount.md
-    - name: 小売販売のクーポンの設定
-      href: retail-coupons.md
-- name: 製品と販売促進
-  items:
-    - name: 製品情報の概要
-      href: ../supply-chain/pim/product-information.md
-    - name: 小売階層
-      href: retail-hierarchies.md
-    - name: 属性および属性グループ
-      href: attribute-attributegroups-lifecycle.md
-    - name: 属性の作成と管理
-      href: create-manage-attributes.md
-    - name: 小売製品の設定
-      href: set-up-retail-products.md
-    - name: Retail 製品カテゴリおよび製品の管理
-      href: category-management-product-creation.md
-    - name: 製品分析コード
-      href: ../supply-chain/pim/product-dimensions.md
-    - name: バーコードの設定
-      href: set-up-bar-codes.md
-    - name: バーコード マスクの設定
-      href: set-up-bar-code-masks.md
-    - name: 品揃えの設定
-      href: set-up-assortments.md
-    - name: 店舗の品揃えに含まれていない製品の販売および返品
-      href: sell-return-outside-assortments.md
-    - name: 分析コードおよび製品バリアントの既定の注文設定
-      href: ../supply-chain/production-control/default-order-settings.md
-    - name: 注文入力時の製品および製品バリアントの検索
-      href: ../supply-chain/pim/search-products-product-variants.md
-- name: ロイヤルティ
-  items:
-    - name: ロイヤルティの概要
-      href: set-up-customer-loyalty-program.md
-- name: 在庫
-  items:
-    - name: 店舗在庫管理
-      href: work-with-store-inventory.md
-    - name: 販売プロセスでのシリアル番号の登録
-      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
-    - name: 在庫仕訳帳
-      href: ../supply-chain/inventory/inventory-journals.md
-    - name: 在庫タグ棚卸
-      href: ../supply-chain/inventory/inventory-tag-counting.md
-    - name: 現物価格とマーキングを使用した先入れ先出し (FIFO)
-      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
-    - name: 現物価格とマーキングを使用した後入れ先出し (LIFO) 日付
-      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
-    - name: 現物価格とマーキングを使用した後入れ先出し (LIFO)
-      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
-    - name: 加重平均日付
-      href: ../supply-chain/cost-management/weighted-average-date.md
-    - name: 現物価格とマーキングを使用した加重平均
-      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
-    - name: 検査指示
-      href: ../supply-chain/inventory/quarantine-orders.md
-    - name: 移動平均原価価格
-      href: ../supply-chain/cost-management/running-average-cost-price.md
-    - name: 在庫分析コード当たりの移動平均原価の追跡
-      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
-- name: 人事管理
-  items:
-    - name: 部門、職務、職位を使用した従業員の編成
-      href: ../talent/departments-jobs-positions.md
-    - name: 職務のコンポーネントの設定
-      href: ../talent/create-job.md
-- name: ローカライズと規制の機能
-  items:
-    - name: 小売チャネルの会計統合の概要
-      href: localizations/fiscal-integration-for-retail-channel.md
-    - name: 小売チャネルの会計統合の設定
-      href: localizations/setting-up-fiscal-integration-for-retail-channel.md
-    - name: オーストリア
-      items:
-        - name: オーストリア向け会計登録サービス統合サンプル
-          href: localizations/emea-aut-fi-sample.md
-    - name: 東ヨーロッパ
-      items:
-        - name: 東ヨーロッパにおける Retail の事前請求書
-          href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: 東ヨーロッパにおける Retail の小口現金管理
-          href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: 東ヨーロッパ諸国での Retail 顧客請求書および返品販売注文
-          href: localizations/emea-eeu-retail-invoices.md
-        - name: チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
-          href: localizations/emea-eeu-deployment.md
-        - name: ポーランド向け会計プリンター統合サンプル
-          href: localizations/emea-pol-fpi-sample.md
-        - name: チェコ共和国向け会計登録サービス統合サンプル
-          href: localizations/emea-cze-fi-sample.md
-    - name: フランス
-      items:
-        - name: キャッシュ レジスター機能
-          href: localizations/emea-fra-cash-registers.md
-        - name: キャッシュ レジスターの配置ガイドライン
-          href: localizations/emea-fra-deployment.md
-    - name: インド
-      items:
-        - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
-          href: localizations/apac-ind-cash-registers.md
-        - name: キャッシュ レジスターの配置ガイドライン
-          href: localizations/apac-ind-loc-deployment-guidelines.md
-        - name: インドにおけるアップグレードおよび N-1 のサポート
-          href: localizations/apac-ind-n-1-for-india.md
-    - name: イタリア
-      items:
-        - name: イタリア向け会計プリンター統合サンプル
-          href: localizations/emea-ita-fpi-sample.md
-    - name: ノルウェー
-      items:
-        - name: キャッシュ レジスター機能
-          href: localizations/emea-nor-cash-registers.md
-        - name: キャッシュ レジスターの配置ガイドライン
-          href: localizations/emea-nor-loc-deployment-guidelines.md
-    - name: スウェーデン
-      items:
-        - name: キャッシュ レジスター機能
-          href: localizations/emea-swe-cash-registers.md
-        - name: 管理単位との Retail POS の統合サンプル
-          href: localizations/retail-sdk-control-unit-sample.md
-- name: Retail タスク
-  items:
-    - name: 製品の作成
-      href: ../supply-chain/pim/tasks/create-product.md
-    - name: リンクされた製品のコンフィギュレーション
-      href: ../supply-chain/pim/tasks/configure-linked-products.md
-    - name: 法人に対する製品/製品マスターのリリース
-      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
-    - name: チャネル固有の売買契約の作成
-      href: tasks/base-price-trade-agreements.md
-    - name: カテゴリの価格決定ルールを使用した売買契約の作成
-      href: tasks/category-pricing-rules-trade-agreements.md
-    - name: クレジット カード処理のコンフィギュレーション
-      href: tasks/configure-credit-card-processing.md
-    - name: 販売担当者の機能プロファイルのコンフィギュレーション
-      href: tasks/configure-functionality-profile-sales-representative.md
-    - name: 機械学習を利用する製品の推奨事項のコンフィギュレーション
-      href: tasks/configure-machine-learning-product-recommendations.md
-    - name: デバイスの作成およびレジスターとの関連付け
-      href: tasks/create-associate-device.md
-    - name: Hardware Station の作成
-      href: tasks/create-associate-hardware-station.md
-    - name: POS レジスターの作成
-      href: tasks/create-associate-registers.md
-    - name: コール センター注文の作成
-      href: tasks/create-call-center-orders.md
-    - name: POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション
-      href: tasks/create-financial-dimensions-pos.md
-    - name: 小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
-      href: tasks/create-financial-dimensions-retail-channels.md
-    - name: オンライン チャネルの作成とチャネルの属性の定義
-      href: tasks/create-online-channel-define-channel-attributes.md
-    - name: POS アクセス許可グループの作成
-      href: tasks/create-pos-permission-groups.md
-    - name: POS 視覚プロファイルの作成
-      href: tasks/create-pos-visual-profile-2016-02.md
-    - name: 発注書の製品パッケージの作成
-      href: tasks/create-product-packages-purchase-orders.md
-    - name: コール センター チャネルの作成およびチャネル属性の定義
-      href: tasks/define-call-center-channel-channel-attributes.md
-    - name: チャネル属性の定義
-      href: tasks/define-channel-attributes.md
-    - name: 連続スケジュールの定義
-      href: tasks/define-continuity-schedules.md
-    - name: ロイヤルティ プログラムの定義
-      href: tasks/define-loyalty-programs.md
-    - name: ロイヤルティ報酬ポイントの定義
-      href: tasks/define-loyalty-reward-points.md
-    - name: ロイヤルティ スキーマの定義
-      href: tasks/define-loyalty-schemes.md
-    - name: 組織単位間のリレーションシップのデザイン
-      href: tasks/design-relationships-between-organizational-units.md
-    - name: 品揃えの管理
-      href: tasks/manage-assortments-2016-11.md
-    - name: セルフサービスを使用した Hardware Station のダウンロード
-      href: tasks/perform-self-service-download-hardware-station.md
-    - name: オンラインの販売と支払の転記
-      href: tasks/posting-online-sales-payments.md
-    - name: ロイヤルティ報酬ポイントの処理の調整
-      href: tasks/process-loyalty-reward-point-adjustments.md
-    - name: 集中的購買を介した物流センターから店舗への製品の配送
-      href: tasks/push-products-distribution-center-store-buyers-push.md
-    - name: 小売価格調整の作成
-      href: tasks/retail-price-adjustments.md
-    - name: 最初から用意されているレポートの生成および実行
-      href: tasks/run-out-box-reports.md
-    - name: クロス ドッキングおよび集中的購買のルールとパラメーターの設定
-      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-    - name: 連続プログラムの販売と販売注文の処理
-      href: tasks/use-continuity-program.md
-    - name: 小売作業者のコンフィギュレーション
-      href: tasks/worker.md
-- name: 小売開発と管理
-  href: dev-itpro/dev-retail-home-page.md
-  items:
-    - name: アーキテクチャ
-      items:
-        - name: Retail のコンポーネント
-          href: retail-components.md
-        - name: Retail Server のアーキテクチャ
-          href: dev-itpro/retail-server-architecture.md
-        - name: ストア内トポロジを選択します。
-          href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange と小売チャネルのコミュニケーション
-          href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: Retail Modern POS のアーキテクチャ
-          href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Retail オンライン ストア発行アーキテクチャ
-          href: dev-itpro/retail-online-store-publishing-architecture.md
-        - name: Retail Channel Performance Power BI コンテンツ
-          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
-        - name: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
-          href: dev-itpro/PA-DSS-Certification.md
-        - name: オンプレミス配置で使用できる小売機能
-          href: retail-onprem.md
-    - name: 配置と修正プログラム
-      items:
-        - name: Retail Store Scale Unit
-          href: dev-itpro/retail-store-system-begin.md
-        - name: Retail Store Scale Unit のコンフィギュレーションとインストール
-          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-        - name: Retail Modern POS のコンフィギュレーションとインストール
-          href: retail-modern-pos-device-activation.md
-        - name: 本社からの Retail アカウントとデバイスの管理
-          href: set-up-activation-accounts-validate-devices-hq.md
-        - name: Retail POS デバイスのライセンス認証
-          href: dev-itpro/retail-device-activation.md
-        - name: 共有環境の Cloud POS のセキュリティ保護
-          href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Retail Hardware Station のコンフィギュレーションとインストール
-          href: retail-hardware-station-configuration-installation.md
-        - name: Retail セルフサービス コンポーネントの一括配置
-          href: dev-itpro/retail-mass-deployment.md
-        - name: 診断とトラブルシューティングの Retail コンポーネント イベント
-          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
-        - name: 配置可能パッケージの適用
-          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
-    - name: アップグレードおよび N-1 のサポート
-      items:
-        - name: Retail のアップグレードおよび N-1 のサポート
-          href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: Phased Rollout (N-1) のインストール、構成、切替
-          href: dev-itpro/n-1-installation-configuration.md
-        - name: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
-          href: dev-itpro/retailSDK-update.md
-    - name: 実装ガイダンス
-      items:
-        - name: デバイス管理実装ガイダンス
-          href: implementation-considerations-devices.md
-    - name: 環境のコンフィギュレーション
-      items:
-        - name: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
-          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
-        - name: Bing地図の管理
-          href: dev-itpro/manage-bing-maps.md
-    - name: Retail 拡張リソースおよびラベル ファイルのローカライズ
-      href: dev-itpro/extension-resource-localization.md
-    - name: 販売時点管理の拡張機能
-      items:
-        - name: Retail POS 画面レイアウト
-          href: pos-screen-layouts.md
-        - name: POS で URL を開く
-          href: Open-URL-in-POS.md
-        - name: POS のレイアウト デザイナーのインストール
-          href: install-pos-layout-designer.md
-        - name: オフライン モードの Retail Modern POS
-          href: dev-itpro/retail-modern-pos-offline.md
-        - name: POS Dual ディスプレイ ビューの拡張
-          href: dev-itpro/pos-dual-display-extension.md
-        - name: Retail Modern POS およびクラウド POS のトリガー拡張機能
-          href: dev-itpro/modern-pos-trigger-extensibility.md
-        - name: POS ビューへのカスタム コントロールの追加
-          href: dev-itpro/pos-custom-control.md
-        - name: ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加
-          href: dev-itpro/add-POS-operations.md
-        - name: Retail POS API
-          href: dev-itpro/POS-APIs.md
-        - name: POS 支払拡張機能
-          href: dev-itpro/pos-payment-extension.md
-        - name: 外部ギフト カードのサポート
-          href: dev-itpro/gift-card.md
-        - name: ブランドの作成と Retail Experience アプリへの適用
-          href: dev-itpro/create-retail-experience-app.md
-        - name: Android および iOS での POS Hybrid アプリのセットアップ
-          href: dev-itpro/hybridApp.md
-        - name: POS 要求ハンドラーのオーバーライド
-          href: dev-itpro/pos-handler.md
-        - name: POS 拡張パッケージ情報の表示
-          href: dev-itpro/view-pos-extension-package-details.md
-    - name: Hardware Station の拡張機能
-      href: dev-itpro/hardware-station-extensibility.md
-    - name: Retail Server の拡張機能
-      items:
-        - name: Retail Server OData コントローラーの拡張
-          href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Retail Server 用 Web API コント ローラーの作成
-          href: dev-itpro/odata-controllers-api.md
-        - name: Retail Server の顧客およびコンシューマー API
-          href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: 既定の Retail Server のメタデータ コント ローラーの拡張
-          href: dev-itpro/extend-metadata.md
-        - name: オフライン モードでの CRT サービスの呼び出し
-          href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce runtime (CRT) の拡張機能
-      items:
-        - name: CRT のアーキテクチャおよびコンフィギュレーション
-          href: dev-itpro/commerce-runtime-overview.md
-        - name: CRT サービス
-          href: dev-itpro/crt-services.md
-        - name: CRT および Retail Server の拡張機能
-          href: dev-itpro/commerce-runtime-extensibility.md
-        - name: 顧客の基本設定データをチャネル データベースに追加
-          href: dev-itpro/add-customer-preference-channel.md
-        - name: プロパティを販売注文に追加
-          href: dev-itpro/add-properties-sales-order.md
-        - name: CRT の拡張機能およびトリガー
-          href: dev-itpro/commerce-runtime-extensibility-trigger.md
-        - name: トリガーを使用したトランザクションのブロック
-          href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: トリガーを使用する返品ポリシーの実装
-          href: dev-itpro/trigger-example-return-policy.md
-    - name: E コマースの拡張機能
-      items:
-        - name: オンライン ストアのコンフィギュレーション
-          href: dev-itpro/configure-online-store.md
-        - name: 認証プロバイダーのコンフィギュレーション
-          href: dev-itpro/configure-authentication-providers.md
-        - name: E コマース プラットフォーム
-          href: dev-itpro/ecommerce-platform.md
-        - name: E コマース プラットフォーム SDK
-          href: dev-itpro/ecommerce-platform-sdk.md
-    - name: 支払コネクタの拡張機能
-      items:
-        - name: 支払ターミナルの支払統合の作成
-          href: dev-itpro/end-to-end-payment-extension.md
-        - name: 支払コネクタと支払デバイスの実装 (ホワイト ペーパー)
-          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
-        - name: 支払コネクタの配置
-          href: dev-itpro/deploy-payment-connector.md
-        - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
-          href: dev-itpro/payment-custom-error-messages.md
-        - name: 支払コネクタ用の Windows インストーラーの作成
-          href: dev-itpro/create-windows-installer-payment-connector.md
-        - name: 支払データの使用
-          href: payment-connector-data-fields.md
-        - name: 支払コネクタの重複支払保護の有効化
-          href: dev-itpro/duplicate-payment-protection.md
-    - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
-      items:
-        - name: Retail SDK の今後の変更
-          href: dev-itpro/UpcomingSDKChanges.md
-        - name: Retail および Finance and Operations 用ビルド システムのマージ
-          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-        - name: Retail SDK の拡張機能サンプル
-          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: 配置可能な小売パッケージの作成
-          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: Retail SDK サンプル
-          href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: 梱包明細の拡張ポイント
-              href: dev-itpro/extensions-shipping-carrier-integration.md
-        - name: チャネル データベース拡張機能
-          href: dev-itpro/channel-db-extensions.md
-        - name: 拡張機能を介したカスタム CDX 同期の有効化
-          href: dev-itpro/cdx-extensibility.md
-        - name: POS Totals パネルへのカスタム フィールドの追加
-          href: dev-itpro/custom-field-pos-totals.md
-        - name: 注文属性の定義および設定
-          href: dev-itpro/order-attributes.md
-        - name: 顧客属性
-          href: dev-itpro/customer-attributes.md
-        - name: 'Retail Typescript と C# プロキシ'
-          href: dev-itpro/typescript-proxy-retail-pos.md
-        - name: Retail POS サンプルの実行
-          href: dev-itpro/pos-run-samples.md
-        - name: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
-          href: dev-itpro/pos-view-extension.md
-        - name: Retail Modern POS トランザクション ページへのカスタム コントロールの追加
-          href: dev-itpro/pos-custom-transaction.md
-        - name: POS トランザクション グリッドへのカスタム列の追加
-          href: dev-itpro/pos-custom-transaction-column.md
-        - name: POS 拡張機能からの POS API または POS 操作の呼び出し
-          href: dev-itpro/pos-api-extension.md
-        - name: Retail Modern POS のトリガーと印刷
-          href: dev-itpro/pos-trigger-printing.md
-        - name: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
-          href: dev-itpro/pos-control-non-screen.md
-        - name: 管理者のアクセス権を使用しないクラウド ホスト開発環境での開発
-          href: dev-itpro/cloud-dev-box.md
-    - name: Commerce Runtime
-      items:
-        - name: ロイヤルティの拡張機能
-          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="TOC.yml" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>TOC.1b20fc.88485598ac4a9d5d2829a3021361885065ad76a4.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>88485598ac4a9d5d2829a3021361885065ad76a4</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>bbc9aa0d6b94a942e1f4d5b038601509dcc87937</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\TOC.yml</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101">
+          <source>Welcome to Dynamics 365 for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail へようこそ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102">
+          <source>Get started</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">使用開始</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>What's new or changed</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">新機能および変更された機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Preview features in Dynamics 365 for Retail 10.0.3</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Dynamics 365 for Retail 10.0.3 の機能のプレビュー</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>What's new or changed in Dynamics 365 for Retail 10.0.2</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Dynamics 365 for Retail 10.0.2 の新機能および変更された機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>What's new ot changed in Dynamics 365 for Retail 10.0.1</source><target logoport:matchpercent="87" state="translated" state-qualifier="x-fuzzy-match-unedited">Dynamics 365 for Retail 10.0.1 の新機能および変更された機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>What's new or changed in Dynamics 365 for Retail (April 2019)</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Dynamics 365 for Retail (2019 年 4 月) の新機能および変更された機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Before you buy Retail</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Retail を購入する前に</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Sign up for a preview subscription</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">プレビュー サブスクリプションのサインアップ</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Deploy a demo environment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デモ環境の配置</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Deployment options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置オプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Get support for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail に関するサポートの利用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>One Version service updates FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つのバージョンのサービス更新に関するよく寄せられる質問</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Understand the implementation lifecycle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実装ライフサイクルの理解</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Microsoft FastTrack for Dynamics 365</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft FastTrack for Dynamics 365</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Onboarding</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Onboarding</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Preparing for go-live</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Go-Live の準備</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Go-live FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Go-Live に関するよく寄せられる質問</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Submit a service request</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス要求の送信</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Subscriptions, LCS projects, and Azure Active Directory tenants FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Move environments between data centers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ センター間で環境を移動する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Move licenses between agreement types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">契約タイプ間でライセンスを移動する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Move an LCS Implementation project to another Azure Active Directory tenant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Implement multiple LCS projects and production environments on the same Azure Active Directory tenant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の LCS プロジェクトと実稼働環境を同じ Azure Active Directory テナント上に実装する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Implement Finance and Operations Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Finance and Operations Retail プロジェクトの実装</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Set up new environments, Azure DevOps, and branches for Retail projects</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Retail プロジェクトの新しい環境、Azure DevOps、ブランチの設定</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Update code and environments for Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Retail プロジェクトのコードと環境の更新</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Testing and performance issues</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">テストおよびパフォーマンスに関する問題</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Distributed order management (DOM)</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">配分済み注文の管理 (DOM)</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>DOM overview</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">DOM 概要</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Cost configuration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">原価コンフィギュレーション</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Payments</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">支払</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Payment methods</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">支払方法</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Credit card setup, authorization, and capture</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">クレジット カードの設定、認証、および取得</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Configure cash denominations for the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">POS の現金貨幣単位の構成</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Dynamics 365 Payment Connector for Adyen</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Adyen 向け Dynamics 365 Payment Connector</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Saving online payment instruments with the Adyen connector</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">オンライン支払手段を Adyen コネクタで保存</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Set up pay invoice scenarios</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">請求書の支払シナリオを設定する</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Payments FAQ</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">支払に関してよく寄せられる質問</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Duplicate payments prevention</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">重複支払の防止</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Purchase order overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書の概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Create purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Product receipt against purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書に対する製品受領書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Approve and confirm purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書の承認と確認</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Purchase order approval mobile workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書承認モバイル ワークスペース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Retail statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売明細書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Retail transaction consistency checker</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売トランザクションの整合性チェック</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Create, calculate, and post statements for a retail store</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">小売店舗の明細書の作成、計算、および転記</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Improvements to statement posting functionality</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">明細書転記機能に関する強化事項</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Improved handling of batch tracked items</source><target logoport:matchpercent="98" state="translated" state-qualifier="x-fuzzy-match-unedited">バッチ追跡品目の処理の改善</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Configure Retail parameters that affect retail statements</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">小売明細書に影響を及ぼす 小売パラメーターのコンフィギュレーション</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Configure payment method settings that affect retail statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Configure and run a job to calculate statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細書を計算するジョブのコンフィギュレーションおよび実行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Configure and run a job to post statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細書を転記するジョブのコンフィギュレーションおよび実行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Configure store settings that affect retail statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売明細書に影響を及ぼす店舗設定のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Sales tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Sales tax overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税の概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Sales tax calculation methods in the Origin field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[発生元] フィールドでの消費税計算方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Sales tax assignment and overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上税の割り当ておよび上書き</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Whole amount and Interval calculation options for sales tax codes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">消費税コードの合計額と間隔計算オプション</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Omni-channel payments overview</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">オムニ チャネル支払の概要</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Omni-channel advanced auto charges</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">オムニ チャネルの高度な自動請求</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Configure and use advanced auto charges</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">高度な自動請求のコンフィギュレーションおよび使用</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Prorate header charges to matching sales lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘッダー請求金額を一致する販売明細行に比例配分する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Call center</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Call center sales functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センターの販売機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Call center catalogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センターのカタログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Configure delivery modes and charges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷モードと雑費のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Set up and work with fraud alerts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詐欺警告の設定および使用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Set up call center channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センター チャネルの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Set up continuity programs for call centers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センターの連続プログラムの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Configure and work with call center order holds</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センターの注文保留のコンフィギュレーションおよび作業</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Payment methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Channel setup and management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネルの設定と管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Initialize seed data in new Retail environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい Retail 環境でのシード データの初期化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Define and maintain retail channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネルの定義と管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Assortment management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品揃え管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Set up online stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン ストアの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Configure and install Retail hardware station</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Hardware Station のコンフィギュレーションおよびインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Time and attendance in Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail の時刻と出勤</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Modern Point of Sale (MPOS) and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern Point of Sale (MPOS) および Cloud POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Choose between MPOS and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS か Cloud POS かの選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Online and offline POS operations</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">オンラインおよびオフラインの POS 操作</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Device activation of a customized Retail MPOS</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">カスタマイズされた Retail MPOS のデバイスの有効化</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Demo data screen layouts in MPOS and Cloud POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">MPOS および Cloud POS のデモ データ画面レイアウト</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Product and customer search in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">POS での製品および顧客の検索</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Cash management improvements</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">現金管理の改善</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Inventory lookup in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">POS での在庫検索</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Suspend and resume transactions in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">POS でのトランザクションの中断および再開</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Hardware peripherals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ハードウェア周辺機器</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Retail peripherals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 周辺機器</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Retail peripheral simulator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 周辺機器シミュレーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Connect peripherals to the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS への周辺機器の接続</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Screen layouts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Demo data screen layouts in MPOS/CPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS/CPOS のデモ データ画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Screen layouts for the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS の画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Install the Retail POS layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS のレイアウト デザイナーのインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Choose notification settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知設定の選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>POS application and user language settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS アプリケーションとユーザー言語設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Set up and manage images for MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS のイメージの設定および管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Info codes and info code groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">情報コードおよび情報コード グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>POS improvements for serialized products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シリアル化された製品の POS 改善</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品推奨事項</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Personalized product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズされた製品推奨事項</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Add a recommendations control on POS devices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS デバイスでの推奨事項コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Offline POS functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オフライン POS 機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Shift and cash drawer management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シフトとキャッシュ ドロワーの管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Cash out gift card balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト カードのキャッシュ アウト残高</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Customer orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客注文</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Customer orders in MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS の顧客注文</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Hybrid customer orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ハイブリッド顧客注文</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Sales associates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店員</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Track commissions in the POS using sales groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上グループを使用した POS でのコミッションの追跡</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Ship orders from another store</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">別の店舗からの注文の出荷</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Device activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイスの有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Configure, install and activate MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS のインストール、コンフィギュレーション、有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Set up extended logon functionality for MPOS and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS および Cloud POS の拡張ログオン機能の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Manage Retail activation accounts and validate devices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail アクティベーション アカウントの管理とデバイスの検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Receipts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">受領書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Set up and design receipt formats</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">受領書フォーマットの設定およびデザイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Send email receipts from MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS からの電子メール レシートの送信</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Task recorder and Help for MPOS and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MPOS および Cloud POS のタスク レコーダーとヘルプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Order fulfillment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文のフルフィルメント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Store order fulfillment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗注文のフルフィルメント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Set up order fulfillment for stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗における注文のフルフィルメントの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Show order notifications in the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS の注文通知の表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Returns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返品</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Sell and return products not included in a store's assortment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗の品揃えに含まれていない製品の販売および返品</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Configure and process an exchange on a return order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返品注文に対する交換のコンフィギュレーションとプロセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Restrict payment methods for returns without a receipt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レシートのない返品の支払方法の制限</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Return items across multiple customer orders and invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の顧客注文および請求書間での品目の返品</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Monitoring and analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">監視と分析</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Monitor sales and margin performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売と利益幅のパフォーマンスの監視</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Analyze sales trends and patterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売のトレンドとパターンの分析</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Assess sales performance by product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品別の売上実績の評価</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Assess customer and product profitability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客と製品の収益性の評価</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Analyze store performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗のパフォーマンスの分析</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最新、頻度、金額 (RFM) 分析の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Retail price reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売価格レポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Pricing and discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格決定と割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Retail discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Retail sales price management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売販売価格の管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Price adjustments and discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格調整および割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Apply multiple discounts to a product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品に対する複数の割引の適用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Determine the optimal combination of overlapping discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">重複する割引の最適な組み合わせの決定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Define channel-specific discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル固有の割引の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Options for preventing discounts for retail products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売製品の割引を回避するためのオプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Shipping discount overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷割引の概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Set up coupons for retail sales</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売販売のクーポンの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Products and merchandising</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品と販売促進</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Product information overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品情報の概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Retail hierarchies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Attributes and attribute groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性および属性グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Create and manage attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性の作成と管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Set up retail products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売製品の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Manage Retail product categories and products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 製品カテゴリおよび製品の管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Product dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品分析コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Set up bar codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バーコードの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Set up bar code masks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バーコード マスクの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Set up assortments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品揃えの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Sell and return products not included in a store's assortment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗の品揃えに含まれていない製品の販売および返品</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Default order settings for dimensions and product variants</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コードおよび製品バリアントの既定の注文設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Search for products and product variants during order entry</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文入力時の製品および製品バリアントの検索</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Loyalty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Loyalty overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティの概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Inventory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Store inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗在庫管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Register serial numbers in the sales process</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売プロセスでのシリアル番号の登録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Inventory journals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫仕訳帳</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Inventory tag counting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫タグ棚卸</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>FIFO with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現物価格とマーキングを使用した先入れ先出し (FIFO)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>LIFO Date with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現物価格とマーキングを使用した後入れ先出し (LIFO) 日付</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>LIFO with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現物価格とマーキングを使用した後入れ先出し (LIFO)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Weighted average date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">加重平均日付</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Weighted average with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現物価格とマーキングを使用した加重平均</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Quarantine orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検査指示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Running average cost price</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">移動平均原価価格</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Track running average cost per inventory dimension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫分析コード当たりの移動平均原価の追跡</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Human resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">人事管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Organize your workforce using departments, jobs, and positions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">部門、職務、職位を使用した従業員の編成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Set up the components of a job</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">職務のコンポーネントの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Localization and regulatory features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズと規制の機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Fiscal integration overview for Retail channel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネルの会計統合の概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Set up fiscal integration for Retail channel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネルの会計統合の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーストリア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Fiscal registration service integration sample for Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーストリア向け会計登録サービス統合サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">東ヨーロッパ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Advance invoices for Retail for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">東ヨーロッパにおける Retail の事前請求書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Petty cash management for Retail for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">東ヨーロッパにおける Retail の小口現金管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Retail customer invoices and return sales orders in Eastern European countries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">東ヨーロッパ諸国での Retail 顧客請求書および返品販売注文</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Fiscal printer integration sample for Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポーランド向け会計プリンター統合サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Fiscal registration service integration sample for Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェコ共和国向け会計登録サービス統合サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>France</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フランス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Cash register functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスター機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Deployment guidelines for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスターの配置ガイドライン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Goods and Services Tax (GST) integration for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスターの商品及びサービス税 (GST) 統合</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Deployment guidelines for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスターの配置ガイドライン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Support for upgrade and N-1 for India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インドにおけるアップグレードおよび N-1 のサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Italy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イタリア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Fiscal printer integration sample for Italy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イタリア向け会計プリンター統合サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ノルウェー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Cash register functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスター機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Deployment guidelines for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスターの配置ガイドライン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Sweden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スウェーデン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Cash register functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キャッシュ レジスター機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Sample for Retail POS integration with control units</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理単位との Retail POS の統合サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Retail tasks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail タスク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Create a product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Configure linked products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リンクされた製品のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>Release a product/product master to legal entities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">法人に対する製品/製品マスターのリリース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Create channel-specific trade agreements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル固有の売買契約の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Create trade agreements using category pricing rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリの価格決定ルールを使用した売買契約の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Configure credit card processing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クレジット カード処理のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Configure functionality profiles for sales representatives</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売担当者の機能プロファイルのコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Configure machine learning-powered product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機械学習を利用する製品の推奨事項のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Create devices and associate them with registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイスの作成およびレジスターとの関連付け</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Create hardware stations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardware Station の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Create POS registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS レジスターの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Create call center orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センター注文の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Create financial dimensions for POS registers and configure dimension values on registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Create financial dimensions for retail channels and configure dimension values on stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Create online channels and define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン チャネルの作成とチャネルの属性の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Create POS permission groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS アクセス許可グループの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Create POS visual profiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 視覚プロファイルの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Create product packages for purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">発注書の製品パッケージの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Create call center channels and define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センター チャネルの作成およびチャネル属性の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル属性の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Define continuity schedules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連続スケジュールの定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Define loyalty programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ プログラムの定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Define loyalty reward points</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ報酬ポイントの定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Define loyalty schemes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ スキーマの定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Design the relationships between organizational units</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織単位間のリレーションシップのデザイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Manage assortments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品揃えの管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Download hardware stations by using self-service</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルフサービスを使用した Hardware Station のダウンロード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Post online sales and payments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンラインの販売と支払の転記</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Process adjustments of loyalty reward points</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ報酬ポイントの処理の調整</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Push products from distribution centers to stores via buyer's push</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集中的購買を介した物流センターから店舗への製品の配送</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Create retail price adjustments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売価格調整の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Generate and run out-of-box reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初から用意されているレポートの生成および実行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Set up rules and parameters for cross-docking and buyer's push</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クロス ドッキングおよび集中的購買のルールとパラメーターの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Selling continuity programs and processing sales orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連続プログラムの販売と販売注文の処理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Configure retail workers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売作業者のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Retail development and administration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売開発と管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーキテクチャ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Retail components</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail のコンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Retail Server architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server のアーキテクチャ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Select an in-store topology</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ストア内トポロジを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Commerce Data Exchange and retail channel communications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Data Exchange と小売チャネルのコミュニケーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Retail Modern POS architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS のアーキテクチャ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Retail online store publishing architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail オンライン ストア発行アーキテクチャ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Retail Channel Performance Power BI content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Channel Performance Power BI コンテンツ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Payment Application Data Security Standards (PA-DSS) certification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Retail capabilities available in on-premises deployments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置で使用できる小売機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Deployment and hotfixes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置と修正プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Retail Store Scale Unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Store Scale Unit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Configure and install Retail Store Scale Unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Store Scale Unit のコンフィギュレーションとインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Retail Modern POS configuration and installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS のコンフィギュレーションとインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>Manage Retail accounts and devices from headquarters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">本社からの Retail アカウントとデバイスの管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Retail POS device activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS デバイスのライセンス認証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Help secure Cloud POS in shared environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有環境の Cloud POS のセキュリティ保護</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Retail Hardware Station configuration and installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Hardware Station のコンフィギュレーションとインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Mass deployment of Retail self-service components</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail セルフサービス コンポーネントの一括配置</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Retail component events for diagnostics and troubleshooting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">診断とトラブルシューティングの Retail コンポーネント イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Apply a deployable package</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージの適用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Upgrade and N-1 support</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードおよび N-1 のサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Upgrade and N-1 support for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail のアップグレードおよび N-1 のサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Phased Rollout (N-1) installation, configuration, and cutover</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Phased Rollout (N-1) のインストール、構成、切替</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Upgrade the Retail channel extension to the latest Retail SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail チャネル拡張機能を最新の Retail SDK にアップグレード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Implementation guidance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実装ガイダンス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Device management implementation guidance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイス管理実装ガイダンス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Environment configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境のコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>Add links to your organization's legal terms and privacy statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織の法律条項およびプライバシーに関する声明へのリンクの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Manage Bing Maps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bing地図の管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Localize Retail extension resources and label files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 拡張リソースおよびラベル ファイルのローカライズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Point of sale extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売時点管理の拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Retail POS screen layouts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS 画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Open URL in POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で URL を開く</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Install the POS Layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS のレイアウト デザイナーのインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Retail Modern POS in offline mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オフライン モードの Retail Modern POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Extend the POS Dual display view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS Dual ディスプレイ ビューの拡張</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Retail Modern POS and Cloud POS trigger extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS およびクラウド POS のトリガー拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Add custom controls to POS views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビューへのカスタム コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Add POS operations to POS layouts using Button grid designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Retail POS APIs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS API</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>POS payment extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 支払拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Support for external gift cards</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">外部ギフト カードのサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Create and apply branding to the Retail Experience app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブランドの作成と Retail Experience アプリへの適用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Set up POS Hybrid app on Android and iOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Android および iOS での POS Hybrid アプリのセットアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Override POS request handler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 要求ハンドラーのオーバーライド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>View POS extension package information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 拡張パッケージ情報の表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Hardware Station and extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardware Station の拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Retail Server extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server の拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Extend a Retail Server OData controller</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server OData コントローラーの拡張</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>Create a Web API controller for Retail Server</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server 用 Web API コント ローラーの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Retail Server customer and consumer APIs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Server の顧客およびコンシューマー API</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Extend the default Retail Server metadata controller</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">既定の Retail Server のメタデータ コント ローラーの拡張</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Call the CRT service in offline mode</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">オフライン モードでの CRT サービスの呼び出し</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Commerce runtime (CRT) extensibility</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Commerce Runtime (CRT) の拡張機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>CRT architecture and configuration</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">CRT のアーキテクチャおよびコンフィギュレーション</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>CRT services</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">CRT サービス</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>CRT and Retail Server extensibility</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">CRT および Retail Server の拡張機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Add customer preference data to channel databases</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">顧客の基本設定データをチャネル データベースに追加</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Add properties to sales orders</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">プロパティを販売注文に追加</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>CRT extensibility and triggers</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">CRT の拡張機能およびトリガー</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Block transactions using triggers</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">トリガーを使用したトランザクションのブロック</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Implement a return policy using triggers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トリガーを使用する返品ポリシーの実装</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>e-Commerce extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E コマースの拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Configure online stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン ストアのコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Configure authentication providers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">認証プロバイダーのコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>e-Commerce platform</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E コマース プラットフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>e-Commerce platform SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E コマース プラットフォーム SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Payment connector extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタの拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Create a payment integration for a payment terminal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナルの支払統合の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Implementing a payment connector and payment device (white paper)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタと支払デバイスの実装 (ホワイト ペーパー)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Deploy payment connectors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタの配置</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>Create custom localized error messages for payment terminal extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Create Windows installers for payment connectors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタ用の Windows インストーラーの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Payment data use</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払データの使用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Enable duplicate payment protection for payment connector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払コネクタの重複支払保護の有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Retail SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Upcoming changes in the Retail SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK の今後の変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Merge the build systems for Retail and Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail および Finance and Operations 用ビルド システムのマージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>Retail SDK extensibility samples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK の拡張機能サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Create retail deployable packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能な小売パッケージの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Retail SDK samples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK サンプル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Extension points for packing slips</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">梱包明細の拡張ポイント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>Channel database extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル データベース拡張機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Enable custom CDX synchronization via extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能を介したカスタム CDX 同期の有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Add custom fields to the POS Totals panel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS Totals パネルへのカスタム フィールドの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Define and set order attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文属性の定義および設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Customer attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客属性</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Retail Typescript and C# proxies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Typescript と C# プロキシ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Run the Retail POS samples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS サンプルの実行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Extend POS views to add custom columns and app bar buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>Add custom controls to Retail Modern POS transaction pages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS トランザクション ページへのカスタム コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Add custom columns to a POS transaction grid</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS トランザクション グリッドへのカスタム列の追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>Call POS APIs or operations from POS extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 拡張機能からの POS API または POS 操作の呼び出し</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Retail Modern POS triggers and printing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS のトリガーと印刷</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Add custom controls to non-screen designer-based POS views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非画面デザイナー ベース POS ビューへのカスタム コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Development in cloud-hosted dev environments without admin access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者のアクセス権を使用しないクラウド ホスト開発環境での開発</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Commerce runtime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Runtime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Loyalty extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティの拡張機能</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
