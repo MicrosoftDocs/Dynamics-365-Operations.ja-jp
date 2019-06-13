@@ -1,72 +1,105 @@
----
-title: 財務管理ホーム ページ
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2018
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 206434
-ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
-ms.search.region: Global
-ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d57d3bdc5354823888d695ed6bf734584bff95d1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513268"
----
-# <a name="financial-management-home-page"></a>財務管理ホーム ページ
-
-[!include [banner](includes/banner.md)]
-
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
-
-機能領域を選択すると詳細が表示されます。
-
-:::row:::
-    :::column:::
-        - [買掛金勘定](accounts-payable/accounts-payable.md) 
-        - [売掛金勘定](accounts-receivable/accounts-receivable.md)
-        - [予算作成](budgeting/budgeting-overview.md) 
-        - [現金および銀行管理](cash-bank-management/cash-bank-management.md)
-        - [原価会計](cost-accounting/cost-accounting-home-page.md)
-    :::column-end:::
-    :::column:::
-        - [経費管理](expense-management/expense-management.md)
-        - [財務諸表](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
-        - [固定資産](fixed-assets/fixed-assets.md)
-        - [一般会計](general-ledger/general-ledger.md) 
-        - [プロジェクト管理](project-management/overview-project-management-accounting.md)
-        - [公的機関](public-sector/public-sector-functionality.md) 
-    :::column-end:::
-:::row-end:::
-
-
-## <a name="additional-resources"></a>追加リソース
-
-### <a name="blogs"></a>ブログ
-
-- [Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
-- [Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) 
-- [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
-
-### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
-
-### <a name="videos"></a>ビデオ
-
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
-
-### <a name="countryregion-functionality"></a>国/地域の機能
-
-それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、ヘルプ コンテンツにある[ローカライズと規制の機能](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) のセクションを参照してください。
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="index.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>index.84b867.437c9ba7142dadcb49c9255b119586598511453d.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>437c9ba7142dadcb49c9255b119586598511453d</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\index.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Financial management home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務管理ホーム ページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Financial management home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務管理ホーム ページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Select a feature area to learn more about it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機能領域を選択すると詳細が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source><bpt id="p1">[</bpt>Accounts payable<ept id="p1">](accounts-payable/accounts-payable.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>買掛金勘定<ept id="p1">](accounts-payable/accounts-payable.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source><bpt id="p1">[</bpt>Accounts receivable<ept id="p1">](accounts-receivable/accounts-receivable.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>売掛金勘定<ept id="p1">](accounts-receivable/accounts-receivable.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">[</bpt>Budgeting<ept id="p1">](budgeting/budgeting-overview.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>予算作成<ept id="p1">](budgeting/budgeting-overview.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>Cash and bank management<ept id="p1">](cash-bank-management/cash-bank-management.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>現金および銀行管理<ept id="p1">](cash-bank-management/cash-bank-management.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">[</bpt>Cost accounting<ept id="p1">](cost-accounting/cost-accounting-home-page.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>原価会計<ept id="p1">](cost-accounting/cost-accounting-home-page.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">[</bpt>Expense management<ept id="p1">](expense-management/expense-management.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>経費管理<ept id="p1">](expense-management/expense-management.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">[</bpt>Financial reporting<ept id="p1">](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>財務諸表<ept id="p1">](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>Fixed assets<ept id="p1">](fixed-assets/fixed-assets.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>固定資産<ept id="p1">](fixed-assets/fixed-assets.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt>General ledger<ept id="p1">](general-ledger/general-ledger.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>一般会計<ept id="p1">](general-ledger/general-ledger.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">[</bpt>Project management<ept id="p1">](project-management/overview-project-management-accounting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プロジェクト管理<ept id="p1">](project-management/overview-project-management-accounting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">[</bpt>Public sector<ept id="p1">](public-sector/public-sector-functionality.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>公的機関<ept id="p1">](public-sector/public-sector-functionality.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Blogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>Microsoft Dynamics 365 blog<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics 365 ブログ<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt>Financials blog<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Financials のブログ<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Task guides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク ガイド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Additional help is available as task guides inside Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>To access task guides, click the Help button on any page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Videos</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビデオ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Check out the how-to videos that are now available on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube Channel<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube チャンネル<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept> のハウツー ビデオをご覧ください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Country/region functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">国/地域の機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Country/region regulations affect tax setup and other areas of financial management.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Refer to the <bpt id="p1">[</bpt>Localization and regulatory features<ept id="p1">](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)</ept> section of our help content to learn about country/region-specific functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定の国や地域に固有の機能については、ヘルプ コンテンツにある<bpt id="p1">[</bpt>ローカライズと規制の機能<ept id="p1">](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)</ept> のセクションを参照してください。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
