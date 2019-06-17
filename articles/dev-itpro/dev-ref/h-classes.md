@@ -1,903 +1,1176 @@
----
-title: H クラス
-description: 文字 H で始まるシステム API クラス。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 52591
-ms.assetid: c27e2044-28c2-432a-b15f-a41d26a83a52
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40e4ccefb7389571b6ea84d37b54d8fbf5822867
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537026"
----
-# <a name="h-classes"></a>H クラス
-
-[!include [banner](../includes/banner.md)]
-
-文字 H で始まるシステム API クラス。
-
-<a name="class-heapcheck"></a>クラス HeapCheck
----------------
-
-    class HeapCheck extends Object
-
-### <a name="remarks"></a>備考
-
-### <a name="examples"></a>例
-
-### <a name="methods"></a>メソッド
-
-| 方法                                                                                      | 説明                                     |
-|---------------------------------------------------------------------------------------------|-------------------------------------------------|
-| public int accessCnt()                                                                      |                                                 |
-| public int addRefCnt()                                                                      |                                                 |
-| public Int64 blocksAllocated(\[int pool\])                                                  |                                                 |
-| public int breakCount(\[int count\])                                                        |                                                 |
-| public Int64 bytesAllocated(\[int pool\])                                                   |                                                 |
-| public Int64 ceiling(int pool, \[int ceiling\])                                             |                                                 |
-| public int context(\[int context\])                                                         |                                                 |
-| public int count(\[int count\])                                                             |                                                 |
-| public int countObjects(int classId)                                                        |                                                 |
-| public container createAContainer()                                                         |                                                 |
-| public int csCallCnt()                                                                      |                                                 |
-| public int csSweepCnt()                                                                     |                                                 |
-| public container dataByContext(\[int poolNo\], \[int context\])                             |                                                 |
-| public int dumpCursors()                                                                    |                                                 |
-| public int dumpObjects()                                                                    |                                                 |
-| public int filename(\[str filename\])                                                       |                                                 |
-| public int fixedBlockSize(int pool, \[int blockSize\])                                      |                                                 |
-| public int floor(int pool, \[int floor\])                                                   |                                                 |
-| public int freeRefCnt()                                                                     |                                                 |
-| public int getRuntimeBugcheckFlags()                                                        |                                                 |
-| public Common getUnfreedCursor()                                                            |                                                 |
-| public Common getUnfreedObject()                                                            |                                                 |
-| public boolean include(int objectNo, \[boolean include\])                                   |                                                 |
-| public boolean moreUnfreedCursors()                                                         |                                                 |
-| public boolean moreUnfreedObjects()                                                         |                                                 |
-| public int objectContext(int objNo, \[int context\])                                        |                                                 |
-| public int pageSize(int pool, \[int pageSize\])                                             |                                                 |
-| public int poolCount()                                                                      |                                                 |
-| public str poolName(int poolNo)                                                             |                                                 |
-| public int smallBlockSize(int pool, \[int blockSize\])                                      |                                                 |
-| public int sweepCnt()                                                                       |                                                 |
-| public int testBlocks(\[int arg1\])                                                         |                                                 |
-| public str unfreedObjectClass()                                                             |                                                 |
-| public boolean unfreedObjectClient()                                                        |                                                 |
-| public boolean unfreedObjectFinalized()                                                     |                                                 |
-| public int unfreedObjectHandle()                                                            |                                                 |
-| public int unfreedObjectIdent()                                                             |                                                 |
-| public int unfreedObjectUseCount()                                                          |                                                 |
-| public str version()                                                                        |                                                 |
-| public void checkHeap(str Description, \[int context\], \[int pool\], \[boolean detailed\]) |                                                 |
-| public void shrinkPool(\[int poolNo\])                                                      |                                                 |
-| public void postCompactingMessage()                                                         |                                                 |
-| public void checkHeapDif(str Description, \[int context\], \[int pool\])                    |                                                 |
-| public void clearHeapContext()                                                              |                                                 |
-| public void writeString(str text)                                                           |                                                 |
-| public void firstUnfreedCursor()                                                            |                                                 |
-| public void dumpDGMLGraph()                                                                 |                                                 |
-| public void firstUnfreedObject()                                                            |                                                 |
-| public void setHeapContext(str description)                                                 |                                                 |
-| public void new(\[str Filename\])                                                           | Object クラスの新しいインスタンスを初期化します。 |
-| public void nextUnfreedObject()                                                             |                                                 |
-| public void checkHeapStop()                                                                 |                                                 |
-| public void nextUnfreedCursor()                                                             |                                                 |
-| public void setRuntimeBugcheckFlags(int flags)                                              |                                                 |
-| public void checkHeapStart()                                                                |                                                 |
-
-### <a name="method-accesscnt"></a>メソッド accessCnt
-
-    public int accessCnt()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-addrefcnt"></a>メソッド addRefCnt
-
-    public int addRefCnt()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-blocksallocated"></a>メソッド blocksAllocated
-
-    public Int64 blocksAllocated([int pool])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-breakcount"></a>メソッド breakCount
-
-    public int breakCount([int count])
-
-#### <a name="parameters"></a>パラメーター
-
-カウント  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-bytesallocated"></a>メソッド bytesAllocated
-
-    public Int64 bytesAllocated([int pool])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-ceiling"></a>メソッド ceiling
-
-    public Int64 ceiling(int pool, [int ceiling])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-<!-- -->
-
-ceiling  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-context"></a>メソッド context
-
-    public int context([int context])
-
-#### <a name="parameters"></a>パラメーター
-
-context  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-count"></a>メソッド count
-
-    public int count([int count])
-
-#### <a name="parameters"></a>パラメーター
-
-カウント  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-countobjects"></a>メソッド countObjects
-
-    public int countObjects(int classId)
-
-#### <a name="parameters"></a>パラメーター
-
-classId  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-createacontainer"></a>メソッド createAContainer
-
-    public container createAContainer()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-cscallcnt"></a>メソッド csCallCnt
-
-    public int csCallCnt()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-cssweepcnt"></a>メソッド csSweepCnt
-
-    public int csSweepCnt()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-databycontext"></a>メソッド dataByContext
-
-    public container dataByContext([int poolNo], [int context])
-
-#### <a name="parameters"></a>パラメーター
-
-poolNo  
-
-<!-- -->
-
-context  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-dumpcursors"></a>メソッド dumpCursors
-
-    public int dumpCursors()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-dumpobjects"></a>メソッド dumpObjects
-
-    public int dumpObjects()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-filename"></a>メソッド filename
-
-    public int filename([str filename])
-
-#### <a name="parameters"></a>パラメーター
-
-filename  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-fixedblocksize"></a>メソッド fixedBlockSize
-
-    public int fixedBlockSize(int pool, [int blockSize])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-<!-- -->
-
-blockSize  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-floor"></a>メソッド floor
-
-    public int floor(int pool, [int floor])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-<!-- -->
-
-floor  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-freerefcnt"></a>メソッド freeRefCnt
-
-    public int freeRefCnt()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-getruntimebugcheckflags"></a>メソッド getRuntimeBugcheckFlags
-
-    public int getRuntimeBugcheckFlags()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-getunfreedcursor"></a>メソッド getUnfreedCursor
-
-    public Common getUnfreedCursor()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-getunfreedobject"></a>メソッド getUnfreedObject
-
-    public Common getUnfreedObject()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-include"></a>メソッド include
-
-    public boolean include(int objectNo, [boolean include])
-
-#### <a name="parameters"></a>パラメーター
-
-objectNo  
-
-<!-- -->
-
-include  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-moreunfreedcursors"></a>メソッド moreUnfreedCursors
-
-    public boolean moreUnfreedCursors()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-moreunfreedobjects"></a>メソッド moreUnfreedObjects
-
-    public boolean moreUnfreedObjects()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-objectcontext"></a>メソッド objectContext
-
-    public int objectContext(int objNo, [int context])
-
-#### <a name="parameters"></a>パラメーター
-
-objNo  
-
-<!-- -->
-
-context  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-pagesize"></a>メソッド pageSize
-
-    public int pageSize(int pool, [int pageSize])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-<!-- -->
-
-pageSize  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-poolcount"></a>メソッド poolCount
-
-    public int poolCount()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-poolname"></a>メソッド poolName
-
-    public str poolName(int poolNo)
-
-#### <a name="parameters"></a>パラメーター
-
-poolNo  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-smallblocksize"></a>メソッド smallBlockSize
-
-    public int smallBlockSize(int pool, [int blockSize])
-
-#### <a name="parameters"></a>パラメーター
-
-管理グループ  
-
-<!-- -->
-
-blockSize  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-sweepcnt"></a>メソッド sweepCnt
-
-    public int sweepCnt()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-testblocks"></a>メソッド testBlocks
-
-    public int testBlocks([int arg1])
-
-#### <a name="parameters"></a>パラメーター
-
-arg1  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-unfreedobjectclass"></a>メソッド unfreedObjectClass
-
-    public str unfreedObjectClass()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-unfreedobjectclient"></a>メソッド unfreedObjectClient
-
-    public boolean unfreedObjectClient()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-unfreedobjectfinalized"></a>メソッド unfreedObjectFinalized
-
-    public boolean unfreedObjectFinalized()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-unfreedobjecthandle"></a>メソッド unfreedObjectHandle
-
-    public int unfreedObjectHandle()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-unfreedobjectident"></a>メソッド unfreedObjectIdent
-
-    public int unfreedObjectIdent()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-unfreedobjectusecount"></a>メソッド unfreedObjectUseCount
-
-    public int unfreedObjectUseCount()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-version"></a>メソッド version
-
-    public str version()
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-checkheap"></a>メソッド checkHeap
-
-    public void checkHeap(str Description, [int context], [int pool], [boolean detailed])
-
-#### <a name="parameters"></a>パラメーター
-
-説明  
-
-<!-- -->
-
-context  
-
-<!-- -->
-
-管理グループ  
-
-<!-- -->
-
-detailed  
-
-### <a name="method-shrinkpool"></a>メソッド shrinkPool
-
-    public void shrinkPool([int poolNo])
-
-#### <a name="parameters"></a>パラメーター
-
-poolNo  
-
-### <a name="method-postcompactingmessage"></a>メソッド postCompactingMessage
-
-    public void postCompactingMessage()
-
-### <a name="method-checkheapdif"></a>メソッド checkHeapDif
-
-    public void checkHeapDif(str Description, [int context], [int pool])
-
-#### <a name="parameters"></a>パラメーター
-
-説明  
-
-<!-- -->
-
-context  
-
-<!-- -->
-
-管理グループ  
-
-### <a name="method-clearheapcontext"></a>メソッド clearHeapContext
-
-    public void clearHeapContext()
-
-### <a name="method-writestring"></a>メソッド writeString
-
-    public void writeString(str text)
-
-#### <a name="parameters"></a>パラメーター
-
-テキスト  
-
-### <a name="method-firstunfreedcursor"></a>メソッド firstUnfreedCursor
-
-    public void firstUnfreedCursor()
-
-### <a name="method-dumpdgmlgraph"></a>メソッド dumpDGMLGraph
-
-    public void dumpDGMLGraph()
-
-### <a name="method-firstunfreedobject"></a>メソッド firstUnfreedObject
-
-    public void firstUnfreedObject()
-
-### <a name="method-setheapcontext"></a>メソッド setHeapContext
-
-    public void setHeapContext(str description)
-
-#### <a name="parameters"></a>パラメーター
-
-description  
-
-### <a name="method-new"></a>メソッド new
-
-Object クラスの新しいインスタンスを初期化します。
-
-    public void new([str Filename])
-
-#### <a name="parameters"></a>パラメーター
-
-ファイル名  
-
-### <a name="method-nextunfreedobject"></a>メソッド nextUnfreedObject
-
-    public void nextUnfreedObject()
-
-### <a name="method-checkheapstop"></a>メソッド checkHeapStop
-
-    public void checkHeapStop()
-
-### <a name="method-nextunfreedcursor"></a>メソッド nextUnfreedCursor
-
-    public void nextUnfreedCursor()
-
-### <a name="method-setruntimebugcheckflags"></a>メソッド setRuntimeBugcheckFlags
-
-    public void setRuntimeBugcheckFlags(int flags)
-
-#### <a name="parameters"></a>パラメーター
-
-flags  
-
-### <a name="method-checkheapstart"></a>メソッド checkHeapStart
-
-    public void checkHeapStart()
-
-## <a name="class-helpdocsetnode"></a>クラス HelpDocSetNode
-    class HelpDocSetNode extends TreeNode
-
-### <a name="remarks"></a>備考
-
-### <a name="examples"></a>例
-
-### <a name="methods"></a>メソッド
-
-| 方法                                                     | 説明                                                                |
-|------------------------------------------------------------|----------------------------------------------------------------------------|
-| public boolean addToApplicationHelpMenu(\[boolean value\]) |                                                                            |
-| public boolean addToDeveloperHelpMenu(\[boolean value\])   |                                                                            |
-| public str changedBy(\[str value\])                        | アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。 |
-| public Date changedDate(\[Date value\])                    | アプリケーション オブジェクトが最後に変更された日付を取得または設定します。              |
-| public str changedTime(\[str value\])                      | アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。              |
-| public int contentLocation(\[int value\])                  |                                                                            |
-| public str createdBy(\[str value\])                        | アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。      |
-| public Date creationDate(\[Date value\])                   | アプリケーション オブジェクトが作成された日付を取得または設定します。                   |
-| public str creationTime(\[str value\])                     |                                                                            |
-| public boolean developerDocumentSet(\[boolean value\])     |                                                                            |
-| public str documentSetDescription(\[str value\])           |                                                                            |
-| public str documentSetName(\[str value\])                  |                                                                            |
-| public str helpProviderClass(\[str value\])                |                                                                            |
-| public Guid origin(\[Guid value\])                         |                                                                            |
-| public boolean userDocumentSet(\[boolean value\])          |                                                                            |
-| public void new(str DocSetName)                            | TreeNode クラスの新しいインスタンスを初期化します。                          |
-
-### <a name="method-addtoapplicationhelpmenu"></a>メソッド addToApplicationHelpMenu
-
-    public boolean addToApplicationHelpMenu([boolean value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-addtodeveloperhelpmenu"></a>メソッド addToDeveloperHelpMenu
-
-    public boolean addToDeveloperHelpMenu([boolean value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-changedby"></a>メソッド changedBy
-
-アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。
-
-    public str changedBy([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-ユーザーの名前。
-
-### <a name="method-changeddate"></a>メソッド changedDate
-
-アプリケーション オブジェクトが最後に変更された日付を取得または設定します。
-
-    public Date changedDate([Date value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-アプリケーション オブジェクトが最後に変更された日付。
-
-### <a name="method-changedtime"></a>メソッド changedTime
-
-アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。
-
-    public str changedTime([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-アプリケーション オブジェクトが最後に変更された時間。
-
-### <a name="method-contentlocation"></a>メソッド contentLocation
-
-    public int contentLocation([int value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-createdby"></a>メソッド createdBy
-
-アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。
-
-    public str createdBy([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-ユーザーの名前。
-
-### <a name="method-creationdate"></a>メソッド creationDate
-
-アプリケーション オブジェクトが作成された日付を取得または設定します。
-
-    public Date creationDate([Date value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-アプリケーション オブジェクトが作成された日付。
-
-### <a name="method-creationtime"></a>メソッド creationTime
-
-    public str creationTime([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-developerdocumentset"></a>メソッド developerDocumentSet
-
-    public boolean developerDocumentSet([boolean value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-documentsetdescription"></a>メソッド documentSetDescription
-
-    public str documentSetDescription([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-documentsetname"></a>メソッド documentSetName
-
-    public str documentSetName([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-helpproviderclass"></a>メソッド helpProviderClass
-
-    public str helpProviderClass([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-origin"></a>メソッド origin
-
-    public Guid origin([Guid value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-userdocumentset"></a>メソッド userDocumentSet
-
-    public boolean userDocumentSet([boolean value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-new"></a>メソッド new
-
-TreeNode クラスの新しいインスタンスを初期化します。
-
-    public void new(str DocSetName)
-
-#### <a name="parameters"></a>パラメーター
-
-DocSetName  
-
-## <a name="class-helpdocumentmanager"></a>クラス HelpDocumentManager
-    class HelpDocumentManager extends Object
-
-### <a name="remarks"></a>備考
-
-### <a name="examples"></a>例
-
-### <a name="methods"></a>メソッド
-
-| 方法                                                                                                              | 説明                                                  |
-|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| public void new()                                                                                                   | HelpDocumentManager クラスの新しいインスタンスを初期化します。 |
-| ::public static void showHelpTopic(\[str topic\], \[str documentSet\], \[str contentLanguage\], \[str uiLanguage\]) |                                                              |
-| public void finalize()                                                                                              |                                                              |
-
-### <a name="method-new"></a>メソッド new
-
-HelpDocumentManager クラスの新しいインスタンスを初期化します。
-
-    public void new()
-
-### <a name="method-showhelptopic"></a>メソッド showHelpTopic
-
-    public static void showHelpTopic([str topic], [str documentSet], [str contentLanguage], [str uiLanguage])
-
-#### <a name="parameters"></a>パラメーター
-
-トピック  
-
-<!-- -->
-
-documentSet  
-
-<!-- -->
-
-contentLanguage  
-
-<!-- -->
-
-uiLanguage  
-
-### <a name="method-finalize"></a>メソッド finalize
-
-    public void finalize()
-
-## <a name="class-htmlfont"></a>クラス HtmlFont
-    class HtmlFont extends Object
-
-### <a name="remarks"></a>備考
-
-### <a name="examples"></a>例
-
-### <a name="methods"></a>メソッド
-
-| 方法                                                                                                    | 説明                                     |
-|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| public int backColor(\[int value\])                                                                       |                                                 |
-| public str fontName(\[str value\])                                                                        |                                                 |
-| public int pointSize(\[int value\])                                                                       |                                                 |
-| public int style(\[int value\])                                                                           |                                                 |
-| public int textColor(\[int value\])                                                                       |                                                 |
-| public void new(\[str TypeFace\], \[int PointSize\], \[int Style\], \[int TextColor\], \[int BackColor\]) | Object クラスの新しいインスタンスを初期化します。 |
-| public void finalize()                                                                                    |                                                 |
-
-### <a name="method-backcolor"></a>メソッド backColor
-
-    public int backColor([int value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-fontname"></a>メソッド fontName
-
-    public str fontName([str value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-pointsize"></a>メソッド pointSize
-
-    public int pointSize([int value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-style"></a>メソッド style
-
-    public int style([int value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-textcolor"></a>メソッド textColor
-
-    public int textColor([int value])
-
-#### <a name="parameters"></a>パラメーター
-
-値  
-
-#### <a name="return-value"></a>戻り値
-
-### <a name="method-new"></a>メソッド new
-
-Object クラスの新しいインスタンスを初期化します。
-
-    public void new([str TypeFace], [int PointSize], [int Style], [int TextColor], [int BackColor])
-
-#### <a name="parameters"></a>パラメーター
-
-TypeFace  
-
-<!-- -->
-
-PointSize  
-
-<!-- -->
-
-スタイル  
-
-<!-- -->
-
-TextColor  
-
-<!-- -->
-
-BackColor  
-
-### <a name="method-finalize"></a>メソッド finalize
-
-    public void finalize()
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="h-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>h-classes.d339d9.10685f30092d0ce4d72c4e6a93b604ced49a5d6e.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>10685f30092d0ce4d72c4e6a93b604ced49a5d6e</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\h-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>H classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">H クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>System API classes that start with the letter H.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 H で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>H classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">H クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>System API classes that start with the letter H.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 H で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Class HeapCheck</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス HeapCheck</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>public int accessCnt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int accessCnt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>public int addRefCnt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addRefCnt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>public Int64 blocksAllocated(<ph id="ph1">\[</ph>int pool<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Int64 blocksAllocated(<ph id="ph1">\[</ph>int pool<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>public int breakCount(<ph id="ph1">\[</ph>int count<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int breakCount(<ph id="ph1">\[</ph>int count<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>public Int64 bytesAllocated(<ph id="ph1">\[</ph>int pool<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Int64 bytesAllocated(<ph id="ph1">\[</ph>int pool<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>public Int64 ceiling(int pool, <ph id="ph1">\[</ph>int ceiling<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Int64 ceiling(int pool, <ph id="ph1">\[</ph>int ceiling<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>public int context(<ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int context(<ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>public int count(<ph id="ph1">\[</ph>int count<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int count(<ph id="ph1">\[</ph>int count<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>public int countObjects(int classId)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int countObjects(int classId)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>public container createAContainer()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container createAContainer()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>public int csCallCnt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int csCallCnt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>public int csSweepCnt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int csSweepCnt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>public container dataByContext(<ph id="ph1">\[</ph>int poolNo<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int context<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container dataByContext(<ph id="ph1">\[</ph>int poolNo<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int context<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>public int dumpCursors()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int dumpCursors()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>public int dumpObjects()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int dumpObjects()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>public int filename(<ph id="ph1">\[</ph>str filename<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int filename(<ph id="ph1">\[</ph>str filename<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>public int fixedBlockSize(int pool, <ph id="ph1">\[</ph>int blockSize<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fixedBlockSize(int pool, <ph id="ph1">\[</ph>int blockSize<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>public int floor(int pool, <ph id="ph1">\[</ph>int floor<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int floor(int pool, <ph id="ph1">\[</ph>int floor<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>public int freeRefCnt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int freeRefCnt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>public int getRuntimeBugcheckFlags()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getRuntimeBugcheckFlags()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>public Common getUnfreedCursor()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Common getUnfreedCursor()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>public Common getUnfreedObject()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Common getUnfreedObject()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>public boolean include(int objectNo, <ph id="ph1">\[</ph>boolean include<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean include(int objectNo, <ph id="ph1">\[</ph>boolean include<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>public boolean moreUnfreedCursors()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean moreUnfreedCursors()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>public boolean moreUnfreedObjects()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean moreUnfreedObjects()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>public int objectContext(int objNo, <ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int objectContext(int objNo, <ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>public int pageSize(int pool, <ph id="ph1">\[</ph>int pageSize<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int pageSize(int pool, <ph id="ph1">\[</ph>int pageSize<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>public int poolCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int poolCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>public str poolName(int poolNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str poolName(int poolNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>public int smallBlockSize(int pool, <ph id="ph1">\[</ph>int blockSize<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int smallBlockSize(int pool, <ph id="ph1">\[</ph>int blockSize<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>public int sweepCnt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int sweepCnt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>public int testBlocks(<ph id="ph1">\[</ph>int arg1<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int testBlocks(<ph id="ph1">\[</ph>int arg1<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>public str unfreedObjectClass()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str unfreedObjectClass()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>public boolean unfreedObjectClient()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean unfreedObjectClient()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>public boolean unfreedObjectFinalized()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean unfreedObjectFinalized()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>public int unfreedObjectHandle()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unfreedObjectHandle()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>public int unfreedObjectIdent()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unfreedObjectIdent()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>public int unfreedObjectUseCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unfreedObjectUseCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>public str version()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str version()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>public void checkHeap(str Description, <ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int pool<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean detailed<ph id="ph6">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkHeap(str Description, <ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int pool<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean detailed<ph id="ph6">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>public void shrinkPool(<ph id="ph1">\[</ph>int poolNo<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void shrinkPool(<ph id="ph1">\[</ph>int poolNo<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>public void postCompactingMessage()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void postCompactingMessage()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>public void checkHeapDif(str Description, <ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int pool<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkHeapDif(str Description, <ph id="ph1">\[</ph>int context<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int pool<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>public void clearHeapContext()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearHeapContext()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>public void writeString(str text)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void writeString(str text)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>public void firstUnfreedCursor()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void firstUnfreedCursor()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>public void dumpDGMLGraph()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void dumpDGMLGraph()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>public void firstUnfreedObject()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void firstUnfreedObject()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>public void setHeapContext(str description)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setHeapContext(str description)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>public void new(<ph id="ph1">\[</ph>str Filename<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(<ph id="ph1">\[</ph>str Filename<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>public void nextUnfreedObject()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void nextUnfreedObject()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>public void checkHeapStop()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkHeapStop()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>public void nextUnfreedCursor()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void nextUnfreedCursor()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>public void setRuntimeBugcheckFlags(int flags)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setRuntimeBugcheckFlags(int flags)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>public void checkHeapStart()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkHeapStart()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Method accessCnt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド accessCnt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Method addRefCnt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addRefCnt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Method blocksAllocated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド blocksAllocated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Method breakCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド breakCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>count</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カウント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Method bytesAllocated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド bytesAllocated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Method ceiling</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド ceiling</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>ceiling</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ceiling</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Method context</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド context</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>context</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">context</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Method count</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド count</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>count</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カウント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Method countObjects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド countObjects</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>classId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">classId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Method createAContainer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createAContainer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Method csCallCnt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド csCallCnt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Method csSweepCnt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド csSweepCnt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Method dataByContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataByContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>poolNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">poolNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>context</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">context</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Method dumpCursors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dumpCursors</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Method dumpObjects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dumpObjects</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Method filename</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド filename</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>filename</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filename</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Method fixedBlockSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fixedBlockSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>blockSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">blockSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Method floor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド floor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>floor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">floor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Method freeRefCnt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド freeRefCnt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Method getRuntimeBugcheckFlags</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getRuntimeBugcheckFlags</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Method getUnfreedCursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getUnfreedCursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Method getUnfreedObject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getUnfreedObject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Method include</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド include</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>objectNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">objectNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>include</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">include</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Method moreUnfreedCursors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド moreUnfreedCursors</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Method moreUnfreedObjects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド moreUnfreedObjects</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Method objectContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド objectContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>objNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">objNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>context</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">context</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Method pageSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド pageSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>pageSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pageSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Method poolCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド poolCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Method poolName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド poolName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>poolNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">poolNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Method smallBlockSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド smallBlockSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>blockSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">blockSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Method sweepCnt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sweepCnt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Method testBlocks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド testBlocks</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>arg1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arg1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Method unfreedObjectClass</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unfreedObjectClass</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Method unfreedObjectClient</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unfreedObjectClient</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Method unfreedObjectFinalized</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unfreedObjectFinalized</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Method unfreedObjectHandle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unfreedObjectHandle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Method unfreedObjectIdent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unfreedObjectIdent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Method unfreedObjectUseCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unfreedObjectUseCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Method version</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド version</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Method checkHeap</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkHeap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>context</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">context</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>detailed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">detailed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Method shrinkPool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド shrinkPool</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>poolNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">poolNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Method postCompactingMessage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド postCompactingMessage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Method checkHeapDif</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkHeapDif</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>context</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">context</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>pool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Method clearHeapContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearHeapContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Method writeString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド writeString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>text</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テキスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Method firstUnfreedCursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstUnfreedCursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Method dumpDGMLGraph</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dumpDGMLGraph</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Method firstUnfreedObject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstUnfreedObject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Method setHeapContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setHeapContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">description</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Filename</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Method nextUnfreedObject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextUnfreedObject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Method checkHeapStop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkHeapStop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Method nextUnfreedCursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextUnfreedCursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Method setRuntimeBugcheckFlags</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setRuntimeBugcheckFlags</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>flags</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flags</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Method checkHeapStart</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkHeapStart</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Class HelpDocSetNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス HelpDocSetNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>public boolean addToApplicationHelpMenu(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean addToApplicationHelpMenu(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>public boolean addToDeveloperHelpMenu(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean addToDeveloperHelpMenu(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Gets or sets the name of the user who last changed the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Gets or sets the date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Gets or sets the time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>public int contentLocation(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int contentLocation(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Gets or sets the name of the user who created the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Gets or sets the date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>public boolean developerDocumentSet(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean developerDocumentSet(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>public str documentSetDescription(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str documentSetDescription(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>public str documentSetName(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str documentSetName(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>public str helpProviderClass(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str helpProviderClass(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>public boolean userDocumentSet(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean userDocumentSet(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>public void new(str DocSetName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(str DocSetName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Initializes a new instance of the TreeNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TreeNode クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Method addToApplicationHelpMenu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addToApplicationHelpMenu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Method addToDeveloperHelpMenu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addToDeveloperHelpMenu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Method changedBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Gets or sets the name of the user who last changed the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>The name of the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Method changedDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Gets or sets the date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>The date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Method changedTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Gets or sets the time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>The time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時間。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Method contentLocation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド contentLocation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Method createdBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createdBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Gets or sets the name of the user who created the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>The name of the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Method creationDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Gets or sets the date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>The date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Method creationTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Method developerDocumentSet</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド developerDocumentSet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Method documentSetDescription</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド documentSetDescription</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Method documentSetName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド documentSetName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Method helpProviderClass</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド helpProviderClass</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Method origin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド origin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Method userDocumentSet</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド userDocumentSet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Initializes a new instance of the TreeNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TreeNode クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>DocSetName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DocSetName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Class HelpDocumentManager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス HelpDocumentManager</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Initializes a new instance of the HelpDocumentManager class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HelpDocumentManager クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>::public static void showHelpTopic(<ph id="ph1">\[</ph>str topic<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str documentSet<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>str contentLanguage<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str uiLanguage<ph id="ph8">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void showHelpTopic(<ph id="ph1">\[</ph>str topic<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str documentSet<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>str contentLanguage<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str uiLanguage<ph id="ph8">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Initializes a new instance of the HelpDocumentManager class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HelpDocumentManager クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Method showHelpTopic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showHelpTopic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>topic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トピック</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>documentSet</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">documentSet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>contentLanguage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">contentLanguage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>uiLanguage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">uiLanguage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Class HtmlFont</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス HtmlFont</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>public int backColor(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int backColor(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>public str fontName(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str fontName(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>public int pointSize(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int pointSize(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>public int style(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int style(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>public int textColor(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int textColor(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>public void new(<ph id="ph1">\[</ph>str TypeFace<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int PointSize<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int Style<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int TextColor<ph id="ph8">\]</ph>, <ph id="ph9">\[</ph>int BackColor<ph id="ph10">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(<ph id="ph1">\[</ph>str TypeFace<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int PointSize<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int Style<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int TextColor<ph id="ph8">\]</ph>, <ph id="ph9">\[</ph>int BackColor<ph id="ph10">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Method backColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド backColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Method fontName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fontName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Method pointSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド pointSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>Method style</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド style</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Method textColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド textColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>TypeFace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TypeFace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>PointSize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PointSize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>Style</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>TextColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TextColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>BackColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BackColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
