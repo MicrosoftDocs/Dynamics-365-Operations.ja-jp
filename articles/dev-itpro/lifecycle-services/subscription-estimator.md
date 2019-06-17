@@ -1,61 +1,117 @@
----
-title: Lifecycle Services (LCS) のサブスクリプション試算
-description: このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを Microsoft Dynamics 365 Finance and Operations で使用する方法について説明します。
-author: manalidongre
-manager: AnnBe
-ms.date: 03/13/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: Operations
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: Global
-ms.author: manado
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 3a065af6c684df4a6ca0bf247668fce82dbb9a08
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537215"
----
-# <a name="subscription-estimator-in-lifecycle-services-lcs"></a><span data-ttu-id="cbafa-103">Lifecycle Services (LCS) のサブスクリプション試算</span><span class="sxs-lookup"><span data-stu-id="cbafa-103">Subscription estimator in Lifecycle Services (LCS)</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="cbafa-104">サブスクリプション見積もりツールは、Microsoft Dynamics Lifecycle Services (LCS) で使用できるツールです。</span><span class="sxs-lookup"><span data-stu-id="cbafa-104">Subscription estimator is a tool that is available in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="cbafa-105">Microsoft は、このツールを使用して、顧客に対して準備する必要がある実稼働環境の初期サイズを見積ります。</span><span class="sxs-lookup"><span data-stu-id="cbafa-105">Microsoft uses this tool to estimate the initial size of the production environment that must be provisioned for a customer.</span></span> <span data-ttu-id="cbafa-106">顧客が実稼働環境の配置を要求する前に、トランザクション カウントの観点からピーク作業負荷を見積もり、その情報を LCS にアップロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbafa-106">Before customers can request deployment of a production environment, they must estimate their peak workloads in terms of transaction counts and then upload that information to LCS.</span></span> <span data-ttu-id="cbafa-107">ユーザー ライセンスの詳細およびトランザクション カウントを使用してサブスクリプション要件を推測することにより、サブスクリプション見積もりツールは、プロビジョニングされた環境が顧客の業務要件を満たしていることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-107">By using the details of user licenses and transaction counts to infer subscription requirements, the Subscription estimator tool helps ensure that the provisioned environment meets the customer's business requirements.</span></span>
-
-<span data-ttu-id="cbafa-108">サブスクリプション試算ツールを使用するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cbafa-108">Follow these steps to use the Subscription estimator tool.</span></span>
-
-1. <span data-ttu-id="cbafa-109">LCS で、Finance and Operations の実装プロジェクトに関連付けられているプロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-109">In LCS, open the project that is associated with the implementation project for Finance and Operations.</span></span>
-2. <span data-ttu-id="cbafa-110">ページの上部にあるハンバーガー アイコン選択し、**サブスクリプション見積もりツール**を選択します。</span><span class="sxs-lookup"><span data-stu-id="cbafa-110">At the top of the page, select the hamburger icon, and then select **Subscription estimator**.</span></span>
-<span data-ttu-id="cbafa-111">[![サブスクリプション見積もりツール](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)</span><span class="sxs-lookup"><span data-stu-id="cbafa-111">[![subscription estimator](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)</span></span>
-3. <span data-ttu-id="cbafa-112">サンプルの使用状況プロファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="cbafa-112">Download the sample usage profile.</span></span>
-4. <span data-ttu-id="cbafa-113">各タブで必要な質問に回答します。小売顧客の場合は、**Retail と Commerce** タブ上の質問に回答してください。</span><span class="sxs-lookup"><span data-stu-id="cbafa-113">Answer the required questions on each tab. If you're a Retail customer, be sure to answer the questions on the **Retail and Commerce** tab.</span></span>
-5. <span data-ttu-id="cbafa-114">使用状況プロファイルをローカルに保存します。</span><span class="sxs-lookup"><span data-stu-id="cbafa-114">Save the usage profile locally.</span></span>
-6. <span data-ttu-id="cbafa-115">使用プロファイルをアップロードするには、**新しい見積もり** を選択し、見積もりに名前を付け、使用プロファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="cbafa-115">To upload the usage profile, select **New estimate**, name the estimate, and then upload the usage profile.</span></span>
-7. <span data-ttu-id="cbafa-116">アップロードが完了した後、**アクティブとしてマークする**を選択し見積もりを有効にします。</span><span class="sxs-lookup"><span data-stu-id="cbafa-116">After the upload is completed, select **Mark as Active** to activate an estimate.</span></span> <span data-ttu-id="cbafa-117">生産の配置をコンフィギュレーションするために有効な見積が必要です。</span><span class="sxs-lookup"><span data-stu-id="cbafa-117">An active estimate is required in order to configure a production deployment.</span></span>
-
-<span data-ttu-id="cbafa-118">有効でアクティブな見積があるときは、**構成** ボタンが使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="cbafa-118">When there is a valid active estimate, the **Configure** button becomes available.</span></span> <span data-ttu-id="cbafa-119">このボタンを使用すると、製造環境の展開を要求することができます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-119">You can use this button to request a production environment deployment.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="cbafa-120">複数の見積を使用できますが、1 つの見積に**アクティブ**とマークする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbafa-120">Although you can have multiple estimates, one estimate must be marked as **Active**.</span></span> <span data-ttu-id="cbafa-121">実稼動環境が配置された後、または環境の配置がサインオフされた後、アクティブな見積もりはロックされます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-121">After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked.</span></span> <span data-ttu-id="cbafa-122">別の見積もりを有効見積もりとしてマークするには、LCS のサポート ポータルを使用してサポート要求を作成します。</span><span class="sxs-lookup"><span data-stu-id="cbafa-122">To mark a different estimate as the active estimate, create a support request by using the Support portal in LCS.</span></span>
-
-## <a name="frequently-asked-questions"></a><span data-ttu-id="cbafa-123">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="cbafa-123">Frequently asked questions</span></span>
-
-<span data-ttu-id="cbafa-124">**質問:** アクティブな見積もりがあるにもかかわらず、実稼動環境の**コンフィギュレーション**ボタンが有効なのはなぜですか。</span><span class="sxs-lookup"><span data-stu-id="cbafa-124">**Question:** Why isn't the **Configure** button for deploying a production environment available, even though there is an active estimate?</span></span> <span data-ttu-id="cbafa-125">また、プロジェクト ダッシュ ボード上のアクション センターに警告メッセージが表示されるのはなぜでしょうか。</span><span class="sxs-lookup"><span data-stu-id="cbafa-125">And why does a warning message appear in the Action center on the project dashboard?</span></span>
-
-<span data-ttu-id="cbafa-126">**回答:** 複数の実装プロジェクトがある場合、**コンフィギュレーション**ボタンを有効にされていない可能性があり、アクション センターに不足しているライセンス数に関する警告メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-126">**Answer:** If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the Action center regarding an insufficient number of licenses.</span></span> <span data-ttu-id="cbafa-127">サポート リクエストを記録すると、サポート チームがこの問題を解決できます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-127">Log a support request, and the support team can help resolve this issue.</span></span>
-
-<span data-ttu-id="cbafa-128">**質問:** 見積もりに**有効**とマークするとエラーが発生するのはなぜですか。</span><span class="sxs-lookup"><span data-stu-id="cbafa-128">**Question:** Why does an error occur when I mark an estimate as **Active**?</span></span>
-
-<span data-ttu-id="cbafa-129">**回答:** 見積を**有効**とマークすると、次のエラー メッセージが表示されることがあります。</span><span class="sxs-lookup"><span data-stu-id="cbafa-129">**Answer:** When you mark an estimate as **Active**, you might receive the following error message:</span></span>
-
-- <span data-ttu-id="cbafa-130">**見積が作成されますが、要件を満たしていません** - このエラーは、入力されたトランザクション明細行がサブスクリプション見積もりツールの制限内にない場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="cbafa-130">**Estimate created but does not meet requirements** – This error occurs if transaction lines that are entered aren't within the limits of the Subscription estimation tool.</span></span> <span data-ttu-id="cbafa-131">このエラーを解決するには、サポート要求を作成し、使用プロファイルを添付します。</span><span class="sxs-lookup"><span data-stu-id="cbafa-131">To resolve this error, create a support request, and attach the usage profile.</span></span> <span data-ttu-id="cbafa-132">次に、インスタンスのサイズを手動で変更できます。</span><span class="sxs-lookup"><span data-stu-id="cbafa-132">Your instance can then be manually sized.</span></span>
-
-<span data-ttu-id="cbafa-133">その他のエラー メッセージが表示されたり、その他の問題が発生した場合は、サポート チームがその問題に対処できるようにサポート リクエストを作成し、アクティブな見積もりを添付します。</span><span class="sxs-lookup"><span data-stu-id="cbafa-133">If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the support team can address the issue.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="subscription-estimator.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>subscription-estimator.62fd8f.3496becaa09451f48fdc6bc15dbdb8e7b031e29e.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>3496becaa09451f48fdc6bc15dbdb8e7b031e29e</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\lifecycle-services\subscription-estimator.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Subscription estimator in Lifecycle Services (LCS)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS) のサブスクリプション試算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS) for Microsoft Dynamics 365 Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを Microsoft Dynamics 365 Finance and Operations で使用する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Subscription estimator in Lifecycle Services (LCS)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS) のサブスクリプション試算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Subscription estimator is a tool that is available in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクリプション見積もりツールは、Microsoft Dynamics Lifecycle Services (LCS) で使用できるツールです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Microsoft uses this tool to estimate the initial size of the production environment that must be provisioned for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft は、このツールを使用して、顧客に対して準備する必要がある実稼働環境の初期サイズを見積ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Before customers can request deployment of a production environment, they must estimate their peak workloads in terms of transaction counts and then upload that information to LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客が実稼働環境の配置を要求する前に、トランザクション カウントの観点からピーク作業負荷を見積もり、その情報を LCS にアップロードする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>By using the details of user licenses and transaction counts to infer subscription requirements, the Subscription estimator tool helps ensure that the provisioned environment meets the customer's business requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー ライセンスの詳細およびトランザクション カウントを使用してサブスクリプション要件を推測することにより、サブスクリプション見積もりツールは、プロビジョニングされた環境が顧客の業務要件を満たしていることを確認できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Follow these steps to use the Subscription estimator tool.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクリプション試算ツールを使用するには、これらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>In LCS, open the project that is associated with the implementation project for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS で、Finance and Operations の実装プロジェクトに関連付けられているプロジェクトを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>At the top of the page, select the hamburger icon, and then select <bpt id="p1">**</bpt>Subscription estimator<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページの上部にあるハンバーガー アイコン選択し、<bpt id="p1">**</bpt>サブスクリプション見積もりツール<ept id="p1">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>subscription estimator<ept id="p1">](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>サブスクリプション見積もりツール<ept id="p1">](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Download the sample usage profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サンプルの使用状況プロファイルをダウンロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Answer the required questions on each tab. If you're a Retail customer, be sure to answer the questions on the <bpt id="p1">**</bpt>Retail and Commerce<ept id="p1">**</ept> tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各タブで必要な質問に回答します。小売顧客の場合は、<bpt id="p1">**</bpt>Retail と Commerce<ept id="p1">**</ept> タブ上の質問に回答してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Save the usage profile locally.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用状況プロファイルをローカルに保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>To upload the usage profile, select <bpt id="p1">**</bpt>New estimate<ept id="p1">**</ept>, name the estimate, and then upload the usage profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用プロファイルをアップロードするには、<bpt id="p1">**</bpt>新しい見積もり<ept id="p1">**</ept> を選択し、見積もりに名前を付け、使用プロファイルをアップロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>After the upload is completed, select <bpt id="p1">**</bpt>Mark as Active<ept id="p1">**</ept> to activate an estimate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップロードが完了した後、<bpt id="p1">**</bpt>アクティブとしてマークする<ept id="p1">**</ept>を選択し見積もりを有効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>An active estimate is required in order to configure a production deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生産の配置をコンフィギュレーションするために有効な見積が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>When there is a valid active estimate, the <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> button becomes available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効でアクティブな見積があるときは、<bpt id="p1">**</bpt>構成<ept id="p1">**</ept> ボタンが使用できるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>You can use this button to request a production environment deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このボタンを使用すると、製造環境の展開を要求することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Although you can have multiple estimates, one estimate must be marked as <bpt id="p1">**</bpt>Active<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の見積を使用できますが、1 つの見積に<bpt id="p1">**</bpt>アクティブ<ept id="p1">**</ept>とマークする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼動環境が配置された後、または環境の配置がサインオフされた後、アクティブな見積もりはロックされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>To mark a different estimate as the active estimate, create a support request by using the Support portal in LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">別の見積もりを有効見積もりとしてマークするには、LCS のサポート ポータルを使用してサポート要求を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Frequently asked questions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく寄せられる質問</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Why isn't the <bpt id="p2">**</bpt>Configure<ept id="p2">**</ept> button for deploying a production environment available, even though there is an active estimate?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>質問:<ept id="p1">**</ept> アクティブな見積もりがあるにもかかわらず、実稼動環境の<bpt id="p2">**</bpt>コンフィギュレーション<ept id="p2">**</ept>ボタンが有効なのはなぜですか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>And why does a warning message appear in the Action center on the project dashboard?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、プロジェクト ダッシュ ボード上のアクション センターに警告メッセージが表示されるのはなぜでしょうか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> If you have multiple implementation projects, the <bpt id="p2">**</bpt>Configure<ept id="p2">**</ept> button might not be enabled and a warning message will appear in the Action center regarding an insufficient number of licenses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>回答:<ept id="p1">**</ept> 複数の実装プロジェクトがある場合、<bpt id="p2">**</bpt>コンフィギュレーション<ept id="p2">**</ept>ボタンを有効にされていない可能性があり、アクション センターに不足しているライセンス数に関する警告メッセージが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Log a support request, and the support team can help resolve this issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポート リクエストを記録すると、サポート チームがこの問題を解決できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Why does an error occur when I mark an estimate as <bpt id="p2">**</bpt>Active<ept id="p2">**</ept>?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>質問:<ept id="p1">**</ept> 見積もりに<bpt id="p2">**</bpt>有効<ept id="p2">**</ept>とマークするとエラーが発生するのはなぜですか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> When you mark an estimate as <bpt id="p2">**</bpt>Active<ept id="p2">**</ept>, you might receive the following error message:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>回答:<ept id="p1">**</ept> 見積を<bpt id="p2">**</bpt>有効<ept id="p2">**</ept>とマークすると、次のエラー メッセージが表示されることがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Estimate created but does not meet requirements<ept id="p1">**</ept> – This error occurs if transaction lines that are entered aren't within the limits of the Subscription estimation tool.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>見積が作成されますが、要件を満たしていません<ept id="p1">**</ept> - このエラーは、入力されたトランザクション明細行がサブスクリプション見積もりツールの制限内にない場合に発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>To resolve this error, create a support request, and attach the usage profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーを解決するには、サポート要求を作成し、使用プロファイルを添付します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Your instance can then be manually sized.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、インスタンスのサイズを手動で変更できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the support team can address the issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のエラー メッセージが表示されたり、その他の問題が発生した場合は、サポート チームがその問題に対処できるようにサポート リクエストを作成し、アクティブな見積もりを添付します。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

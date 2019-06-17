@@ -1,76 +1,114 @@
----
-title: アップグレード、更新プログラム、および修正プログラム ホームページ
-description: これらのトピックでは、Dynamics 365 for Finance and Operations の環境およびデータのアップグレード、更新、および修正プログラムの適用のためのプロセスについて説明します。
-author: margoc
-manager: AnnBe
-ms.date: 02/14/2018
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: margoc
-ms.search.scope: Operations
-ms.search.region: Global
-ms.author: margoc
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 743890900936414bd239d7ee555cb64d2706a4cc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506054"
----
-# <a name="upgrades-updates-and-hotfixes-home-page"></a><span data-ttu-id="aa6a5-103">アップグレード、更新プログラム、および修正プログラム ホームページ</span><span class="sxs-lookup"><span data-stu-id="aa6a5-103">Upgrades, updates, and hotfixes home page</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="aa6a5-104">アップグレード、更新プログラム、および修正プログラムには、新しい製品バージョン、コードの移行、およびアップグレードへの移行、更新プログラムへの移行、または修正プログラムの配置を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-104">Upgrades, updates, and hotfixes can include moving to new product versions, code migration and upgrade, moving to an update, or deploying a hotfix.</span></span> 
-
-<span data-ttu-id="aa6a5-105">アップグレードの各タイプのプロセスは似ていますが、開始する前に特定のタスクのトピックを確認する必要があるほど異なっています。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-105">The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.</span></span>
-
-## <a name="upgrade-from-microsoft-dynamics-ax-2012-to-microsoft-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="aa6a5-106">Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations へのアップグレード</span><span class="sxs-lookup"><span data-stu-id="aa6a5-106">Upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations</span></span>
-
-<span data-ttu-id="aa6a5-107">開始するには、次のトピックを確認します。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-107">To get started, review the following topics:</span></span>
-
-- [<span data-ttu-id="aa6a5-108">AX 2012 から Finance and Operations へのアップグレードの概要</span><span class="sxs-lookup"><span data-stu-id="aa6a5-108">Overview of upgrade from AX 2012 to Finance and Operations</span></span>](upgrade-overview-2012.md)
-
-- [<span data-ttu-id="aa6a5-109">AX 2012 から Finance and Operations へのコードの移行の準備</span><span class="sxs-lookup"><span data-stu-id="aa6a5-109">Prepare to migrate code from AX 2012 to Finance and Operations</span></span>](prepare-migration.md)
-
-## <a name="migration-from-microsoft-dynamics-ax-2009-to-finance-and-operations"></a><span data-ttu-id="aa6a5-110">Microsoft Dynamics AX 2009 から Finance and Operations への移行</span><span class="sxs-lookup"><span data-stu-id="aa6a5-110">Migration from Microsoft Dynamics AX 2009 to Finance and Operations</span></span>
-<span data-ttu-id="aa6a5-111">この技術解説ビデオでは、AX 2009 から Finance and Operations への移行の概要を説明しています: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4)。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-111">This Tech Talk video provides an introduction to migration from AX 2009 to Finance and Operations: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4).</span></span>
-
-## <a name="upgrade-from-a-previous-version-of-finance-and-operations"></a><span data-ttu-id="aa6a5-112">Finance and Operations の以前のバージョンからのアップグレード</span><span class="sxs-lookup"><span data-stu-id="aa6a5-112">Upgrade from a previous version of Finance and Operations</span></span>
-
-<span data-ttu-id="aa6a5-113">更新とアップグレードを適用するための手順は、クラウドとオンプレミスの実装では異なります。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-113">The steps for applying updates and upgrading differ between cloud and on-premises implementations.</span></span> 
-
-### <a name="cloud"></a><span data-ttu-id="aa6a5-114">クラウド</span><span class="sxs-lookup"><span data-stu-id="aa6a5-114">Cloud</span></span>
-<span data-ttu-id="aa6a5-115">Finance and Operations のクラウド バージョンをアップグレードする場合は、次のトピックを確認してください。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-115">If you are upgrading a cloud version of Finance and Operations, review the following topics:</span></span>
-
-- [<span data-ttu-id="aa6a5-116">最新の Finance and Operations 更新プログラムへの移行の概要</span><span class="sxs-lookup"><span data-stu-id="aa6a5-116">Overview of moving to the latest Finance and Operations update</span></span>](upgrade-latest-update.md)
-
-- [<span data-ttu-id="aa6a5-117">Finance and Operations 環境への最新のプラットフォーム更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="aa6a5-117">Apply the latest platform update to your Finance and Operations environment</span></span>](upgrade-latest-platform-update.md)
-
-- [<span data-ttu-id="aa6a5-118">Lifecycle Services からの Finance and Operations 修正プログラムのダウンロード</span><span class="sxs-lookup"><span data-stu-id="aa6a5-118">Download Finance and Operations hotfixes from Lifecycle Services</span></span>](download-hotfix-lcs.md)
-
-
-### <a name="on-premises"></a><span data-ttu-id="aa6a5-119">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="aa6a5-119">On-premises</span></span>
-<span data-ttu-id="aa6a5-120">Finance and Operations のクラウド バージョンに更新プログラムを適用する場合は、次のトピックを確認してください。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-120">If you are applying updates to a cloud version of Finance and Operations, review the following topic:</span></span>
-
-- [<span data-ttu-id="aa6a5-121">オンプレミス配置への更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="aa6a5-121">Apply updates to an on-premises deployment</span></span>](../deployment/apply-updates-on-premises.md)
-- [<span data-ttu-id="aa6a5-122">オンプレミス配置の再配置</span><span class="sxs-lookup"><span data-stu-id="aa6a5-122">Redeploy an on-premises deployment</span></span>](../deployment/redeploy-on-prem.md)
-
-## <a name="hotfixes"></a><span data-ttu-id="aa6a5-123">修正プログラム</span><span class="sxs-lookup"><span data-stu-id="aa6a5-123">Hotfixes</span></span>
-
-- [<span data-ttu-id="aa6a5-124">Lifecycle Services からの修正プログラムのダウンロード</span><span class="sxs-lookup"><span data-stu-id="aa6a5-124">Download hotfixes from Lifecycle Services</span></span>](download-hotfix-lcs.md)
-- [<span data-ttu-id="aa6a5-125">クラウド環境への更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="aa6a5-125">Apply updates to a cloud environment</span></span>](../deployment/apply-deployable-package-system.md)
-- [<span data-ttu-id="aa6a5-126">メタデータ修正プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="aa6a5-126">Install a metadata hotfix</span></span>](install-metadata-hotfix-package.md)
-- [<span data-ttu-id="aa6a5-127">1 ボックス環境の Reporting Services への修正プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="aa6a5-127">Patch Reporting Services in a one-box environment</span></span>](patch-reporting-service-environment.md)
-- [<span data-ttu-id="aa6a5-128">Visual Studio 開発ツールの更新</span><span class="sxs-lookup"><span data-stu-id="aa6a5-128">Update Visual Studio development tools</span></span>](../dev-tools/update-development-tools.md)
-
-<span data-ttu-id="aa6a5-129">この技術解説ビデオでは、導入サービス (コードの更新の適用、サンドボックス データベースの更新の要求、およびサポート リクエストの提出) について説明します: [Dynamics 365 for Operations – Tech Talk: Servicing](https://www.youtube.com/watch?v=QkcdBI_ipTM)。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-129">This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests): [Dynamics 365 for Operations – Tech Talk: Servicing](https://www.youtube.com/watch?v=QkcdBI_ipTM).</span></span>
-
- <span data-ttu-id="aa6a5-130">詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="aa6a5-130">For more information, see:</span></span> 
-- [<span data-ttu-id="aa6a5-131">サンドボックス データベース更新の要求</span><span class="sxs-lookup"><span data-stu-id="aa6a5-131">Request a sandbox database refresh</span></span>](../database/database-refresh.md)
-- [<span data-ttu-id="aa6a5-132">テクニカル サポートの設定</span><span class="sxs-lookup"><span data-stu-id="aa6a5-132">Set up technical support</span></span>](../lifecycle-services/support-experience.md) 
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="upgrade-home-page.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>upgrade-home-page.6d85ec.eb0632ee46ff4680184c94b9da0910ade158d2b0.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>eb0632ee46ff4680184c94b9da0910ade158d2b0</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\upgrade-home-page.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Upgrades, updates, and hotfixes home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレード、更新プログラム、および修正プログラム ホームページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>These topics describe the process for upgrading, updating, and applying hotfixes to your Dynamics 365 for Finance and Operations environment and data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのトピックでは、Dynamics 365 for Finance and Operations の環境およびデータのアップグレード、更新、および修正プログラムの適用のためのプロセスについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Upgrades, updates, and hotfixes home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレード、更新プログラム、および修正プログラム ホームページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Upgrades, updates, and hotfixes can include moving to new product versions, code migration and upgrade, moving to an update, or deploying a hotfix.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレード、更新プログラム、および修正プログラムには、新しい製品バージョン、コードの移行、およびアップグレードへの移行、更新プログラムへの移行、または修正プログラムの配置を含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードの各タイプのプロセスは似ていますが、開始する前に特定のタスクのトピックを確認する必要があるほど異なっています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations へのアップグレード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To get started, review the following topics:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開始するには、次のトピックを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">[</bpt>Overview of upgrade from AX 2012 to Finance and Operations<ept id="p1">](upgrade-overview-2012.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>AX 2012 から Finance and Operations へのアップグレードの概要<ept id="p1">](upgrade-overview-2012.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>Prepare to migrate code from AX 2012 to Finance and Operations<ept id="p1">](prepare-migration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>AX 2012 から Finance and Operations へのコードの移行の準備<ept id="p1">](prepare-migration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Migration from Microsoft Dynamics AX 2009 to Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2009 から Finance and Operations への移行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>This Tech Talk video provides an introduction to migration from AX 2009 to Finance and Operations: <bpt id="p1">[</bpt>Dynamics 365 for Operations – Tech Talk: Migration tools<ept id="p1">](https://www.youtube.com/watch?v=kdQ58arACP4)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この技術解説ビデオでは、AX 2009 から Finance and Operations への移行の概要を説明しています: <bpt id="p1">[</bpt>Dynamics 365 for Operations – Tech Talk: Migration tools<ept id="p1">](https://www.youtube.com/watch?v=kdQ58arACP4)</ept>。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Upgrade from a previous version of Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の以前のバージョンからのアップグレード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The steps for applying updates and upgrading differ between cloud and on-premises implementations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新とアップグレードを適用するための手順は、クラウドとオンプレミスの実装では異なります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Cloud</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラウド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>If you are upgrading a cloud version of Finance and Operations, review the following topics:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations のクラウド バージョンをアップグレードする場合は、次のトピックを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">[</bpt>Overview of moving to the latest Finance and Operations update<ept id="p1">](upgrade-latest-update.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>最新の Finance and Operations 更新プログラムへの移行の概要<ept id="p1">](upgrade-latest-update.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>Apply the latest platform update to your Finance and Operations environment<ept id="p1">](upgrade-latest-platform-update.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Finance and Operations 環境への最新のプラットフォーム更新プログラムの適用<ept id="p1">](upgrade-latest-platform-update.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">[</bpt>Download Finance and Operations hotfixes from Lifecycle Services<ept id="p1">](download-hotfix-lcs.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lifecycle Services からの Finance and Operations 修正プログラムのダウンロード<ept id="p1">](download-hotfix-lcs.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>On-premises</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>If you are applying updates to a cloud version of Finance and Operations, review the following topic:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations のクラウド バージョンに更新プログラムを適用する場合は、次のトピックを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>Apply updates to an on-premises deployment<ept id="p1">](../deployment/apply-updates-on-premises.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>オンプレミス配置への更新プログラムの適用<ept id="p1">](../deployment/apply-updates-on-premises.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">[</bpt>Redeploy an on-premises deployment<ept id="p1">](../deployment/redeploy-on-prem.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>オンプレミス配置の再配置<ept id="p1">](../deployment/redeploy-on-prem.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Hotfixes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">修正プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">[</bpt>Download hotfixes from Lifecycle Services<ept id="p1">](download-hotfix-lcs.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lifecycle Services からの修正プログラムのダウンロード<ept id="p1">](download-hotfix-lcs.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">[</bpt>Apply updates to a cloud environment<ept id="p1">](../deployment/apply-deployable-package-system.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>クラウド環境への更新プログラムの適用<ept id="p1">](../deployment/apply-deployable-package-system.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>Install a metadata hotfix<ept id="p1">](install-metadata-hotfix-package.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>メタデータ修正プログラムのインストール<ept id="p1">](install-metadata-hotfix-package.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">[</bpt>Patch Reporting Services in a one-box environment<ept id="p1">](patch-reporting-service-environment.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>1 ボックス環境の Reporting Services への修正プログラムの適用<ept id="p1">](patch-reporting-service-environment.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">[</bpt>Update Visual Studio development tools<ept id="p1">](../dev-tools/update-development-tools.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Visual Studio 開発ツールの更新<ept id="p1">](../dev-tools/update-development-tools.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests): <bpt id="p1">[</bpt>Dynamics 365 for Operations – Tech Talk: Servicing<ept id="p1">](https://www.youtube.com/watch?v=QkcdBI_ipTM)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この技術解説ビデオでは、導入サービス (コードの更新の適用、サンドボックス データベースの更新の要求、およびサポート リクエストの提出) について説明します: <bpt id="p1">[</bpt>Dynamics 365 for Operations – Tech Talk: Servicing<ept id="p1">](https://www.youtube.com/watch?v=QkcdBI_ipTM)</ept>。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>For more information, see:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、以下を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">[</bpt>Request a sandbox database refresh<ept id="p1">](../database/database-refresh.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>サンドボックス データベース更新の要求<ept id="p1">](../database/database-refresh.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt>Set up technical support<ept id="p1">](../lifecycle-services/support-experience.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>テクニカル サポートの設定<ept id="p1">](../lifecycle-services/support-experience.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

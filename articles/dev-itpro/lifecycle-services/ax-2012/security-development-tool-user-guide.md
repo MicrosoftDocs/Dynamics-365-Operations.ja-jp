@@ -1,51 +1,75 @@
----
-title: セキュリティ開発ツールのユーザー ガイド
-description: このトピックでは、セキュリティ開発ツールを使用して、ロール、職務、権限などのセキュリティ アーティファクトを作成および管理する方法について説明します。
-author: kfend
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: dynamics-ax-2012
-ms.service: ''
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: AX 2012
-ms.custom: 18451
-ms.assetid: fc61e23f-f20d-4149-800a-3614d13828a6
-ms.search.region: Global
-ms.author: kfend
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 54763b43629e941d4b3073c5fb5a0976f55a1125
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537231"
----
-# <a name="security-development-tool-user-guide"></a><span data-ttu-id="f9b86-103">セキュリティ開発ツールのユーザー ガイド</span><span class="sxs-lookup"><span data-stu-id="f9b86-103">Security Development Tool user guide</span></span>
-
-[!include [banner](../../includes/banner.md)]
-
-| <span data-ttu-id="f9b86-104">**メモ**</span><span class="sxs-lookup"><span data-stu-id="f9b86-104">**Note**</span></span>                                                                                                                                                                                   |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f9b86-105">これは、予備的なプレリリース ドキュメントで、予告なしに変更される場合があります。</span><span class="sxs-lookup"><span data-stu-id="f9b86-105">This is pre-release documentation of a preliminary nature and is subject to change at any time without notice.</span></span> <span data-ttu-id="f9b86-106">ここで提供されている情報の正確さは保障されていません。</span><span class="sxs-lookup"><span data-stu-id="f9b86-106">Microsoft cannot guarantee the accuracy of any information provided herein.</span></span> |
-
-<span data-ttu-id="f9b86-107">Microsoft Dynamics AX 2012 のセキュリティ開発ツールは、ロール、職務、および特権などのセキュリティ コンポーネントを簡単に管理および維持できるようにすることを目的としています。</span><span class="sxs-lookup"><span data-stu-id="f9b86-107">The Security Development Tool for Microsoft Dynamics AX 2012 is intended to help you more easily create and maintain security artifacts such as roles, duties, and privileges.</span></span> <span data-ttu-id="f9b86-108">このツールは、特定の役割、義務、権限に対するエントリポイントのアクセス許可を表示します。</span><span class="sxs-lookup"><span data-stu-id="f9b86-108">The tool displays entry point permissions for a given role, duty, or privilege.</span></span> <span data-ttu-id="f9b86-109">追加のツールは、エントリ ポイント用のアクセス レベルの更新を使用して説明します。</span><span class="sxs-lookup"><span data-stu-id="f9b86-109">Additional tools guide you through updates of the access levels for entry points.</span></span> <span data-ttu-id="f9b86-110">また、異なるテスト ユーザー アカウントを使用せずに、新規作成または修正したセキュリティ ロール、職務権限、または権限を同じインターフェイスからテストするために、ツールを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="f9b86-110">You can also use the tool to test a newly created or modified security role, duty, or privilege from the same interface, without using a different test user account.</span></span> <span data-ttu-id="f9b86-111">また、このツールを使用して業務プロセス フローを記録し、使用されるエントリ ポイントを識別することができます。</span><span class="sxs-lookup"><span data-stu-id="f9b86-111">Additionally, you can use the tool to record business process flows and identify the entry points that are used.</span></span> <span data-ttu-id="f9b86-112">セキュリティ開発ツールが移動されました。</span><span class="sxs-lookup"><span data-stu-id="f9b86-112">The Security Development Tool has moved.</span></span> <span data-ttu-id="f9b86-113">Microsoft Dynamics Lifecycle Services のダウンロード可能なツール セクションから利用できます。</span><span class="sxs-lookup"><span data-stu-id="f9b86-113">It is now available from the Downloadable tools section of Microsoft Dynamics Lifecycle Services.</span></span> <span data-ttu-id="f9b86-114">[Lifecycle Services に移動](https://lcs.dynamics.com).</span><span class="sxs-lookup"><span data-stu-id="f9b86-114">[Go to Lifecycle Services](https://lcs.dynamics.com).</span></span>
-
-
-
-<a name="additional-resources"></a><span data-ttu-id="f9b86-115">追加リソース</span><span class="sxs-lookup"><span data-stu-id="f9b86-115">Additional resources</span></span>
---------
-
-[<span data-ttu-id="f9b86-116">セキュリティ開発ツール ユーザー インターフェイス (AX 2012) の概要</span><span class="sxs-lookup"><span data-stu-id="f9b86-116">Overview of the Security Development Tool user interface (AX 2012)</span></span>](overview-security-development-tool-user-interface.md)
-
-[<span data-ttu-id="f9b86-117">セキュリティ開発ツール (AX 2012) をインストールする</span><span class="sxs-lookup"><span data-stu-id="f9b86-117">Install the Security Development Tool (AX 2012)</span></span>](install-security-development-tool.md)
-
-[<span data-ttu-id="f9b86-118">エントリ ポイントのアクセス許可 (AX 2012) の定義または編集</span><span class="sxs-lookup"><span data-stu-id="f9b86-118">Define or edit entry point permissions (AX 2012)</span></span>](define-edit-entry-point-permissions.md)
-
-[<span data-ttu-id="f9b86-119">Microsoft Dynamics AX エンタープライズ ポータルのエントリ ポイントを記録</span><span class="sxs-lookup"><span data-stu-id="f9b86-119">Record entry points in Microsoft Dynamics AX Enterprise Portal</span></span>](record-entry-points-enterprise-portal.md)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="security-development-tool-user-guide.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>security-development-tool-user-guide.bc11c5.b86108616f3c7705dfdf637abcafc60517421bb7.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b86108616f3c7705dfdf637abcafc60517421bb7</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\lifecycle-services\ax-2012\security-development-tool-user-guide.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Security Development Tool user guide</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティ開発ツールのユーザー ガイド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about how to create and maintain security artifacts such as roles, duties, and privileges by using the Security Development Tool.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、セキュリティ開発ツールを使用して、ロール、職務、権限などのセキュリティ アーティファクトを作成および管理する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Security Development Tool user guide</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティ開発ツールのユーザー ガイド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>メモ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This is pre-release documentation of a preliminary nature and is subject to change at any time without notice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、予備的なプレリリース ドキュメントで、予告なしに変更される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Microsoft cannot guarantee the accuracy of any information provided herein.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここで提供されている情報の正確さは保障されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The Security Development Tool for Microsoft Dynamics AX 2012 is intended to help you more easily create and maintain security artifacts such as roles, duties, and privileges.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 のセキュリティ開発ツールは、ロール、職務、および特権などのセキュリティ コンポーネントを簡単に管理および維持できるようにすることを目的としています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The tool displays entry point permissions for a given role, duty, or privilege.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このツールは、特定の役割、義務、権限に対するエントリポイントのアクセス許可を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Additional tools guide you through updates of the access levels for entry points.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のツールは、エントリ ポイント用のアクセス レベルの更新を使用して説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>You can also use the tool to test a newly created or modified security role, duty, or privilege from the same interface, without using a different test user account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、異なるテスト ユーザー アカウントを使用せずに、新規作成または修正したセキュリティ ロール、職務権限、または権限を同じインターフェイスからテストするために、ツールを使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Additionally, you can use the tool to record business process flows and identify the entry points that are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、このツールを使用して業務プロセス フローを記録し、使用されるエントリ ポイントを識別することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>The Security Development Tool has moved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティ開発ツールが移動されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>It is now available from the Downloadable tools section of Microsoft Dynamics Lifecycle Services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services のダウンロード可能なツール セクションから利用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt>Go to Lifecycle Services<ept id="p1">](https://lcs.dynamics.com)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lifecycle Services に移動<ept id="p1">](https://lcs.dynamics.com)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">[</bpt>Overview of the Security Development Tool user interface (AX 2012)<ept id="p1">](overview-security-development-tool-user-interface.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セキュリティ開発ツール ユーザー インターフェイス (AX 2012) の概要<ept id="p1">](overview-security-development-tool-user-interface.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>Install the Security Development Tool (AX 2012)<ept id="p1">](install-security-development-tool.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セキュリティ開発ツール (AX 2012) をインストールする<ept id="p1">](install-security-development-tool.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">[</bpt>Define or edit entry point permissions (AX 2012)<ept id="p1">](define-edit-entry-point-permissions.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>エントリ ポイントのアクセス許可 (AX 2012) の定義または編集<ept id="p1">](define-edit-entry-point-permissions.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>Record entry points in Microsoft Dynamics AX Enterprise Portal<ept id="p1">](record-entry-points-enterprise-portal.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics AX エンタープライズ ポータルのエントリ ポイントを記録<ept id="p1">](record-entry-points-enterprise-portal.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

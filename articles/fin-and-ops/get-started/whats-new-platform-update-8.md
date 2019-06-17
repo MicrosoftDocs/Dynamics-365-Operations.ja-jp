@@ -1,73 +1,195 @@
----
-title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。
-author: tonyafehr
-manager: AnnBe
-ms.date: 06/26/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
-ms.custom: ''
-ms.search.region: Global
-ms.author: tfehr
-ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d14bf9cb1dc3ba4ff16db159a712bfe7719983ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1510857"
----
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a><span data-ttu-id="dac9e-104">Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="dac9e-104">What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017)</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="dac9e-105">このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="dac9e-105">This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8.</span></span> <span data-ttu-id="dac9e-106">このバージョンは 2017 年 6 月にリリースされ、ビルド番号は 7.0.4565.16212 です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-106">This version was released in June 2017 and has a build number of 7.0.4565.16212.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="dac9e-107">現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。</span><span class="sxs-lookup"><span data-stu-id="dac9e-107">Dynamics 365 for Operations (on-premises) is currently being renamed.</span></span> <span data-ttu-id="dac9e-108">通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-108">You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides.</span></span> <span data-ttu-id="dac9e-109">製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations Enterprise Edition です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-109">The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="dac9e-110">これらの名前はどちらも同じ製品を指しています。</span><span class="sxs-lookup"><span data-stu-id="dac9e-110">Both of these names refer to the same product.</span></span>
-
-<span data-ttu-id="dac9e-111">新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dac9e-111">Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development.</span></span> <span data-ttu-id="dac9e-112">プラットフォーム更新プログラム 8 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=852224) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dac9e-112">For information about the bug fixes included in Platform update 8, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=852224).</span></span>
-
-## <a name="introducing-dynamics-365-for-finance-and-operations-enterprise-edition"></a><span data-ttu-id="dac9e-113">Dynamics 365 for Finance and Operations Enterprise Edition を含みます</span><span class="sxs-lookup"><span data-stu-id="dac9e-113">Introducing Dynamics 365 for Finance and Operations, Enterprise edition</span></span>
-
-<span data-ttu-id="dac9e-114">ユーザーと開発者に対して、更新された製品名 ("Microsoft Dynamics 365 for Finance and Operations Enterprise Edition") と製品アイコンが Web クライアントに表示されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-114">Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client.</span></span> <span data-ttu-id="dac9e-115">一部のプラットフォームのコンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) によって共有される Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent は、"Dynamics 365 Unified Operations." と表示されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="dac9e-115">Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as "Dynamics 365 Unified Operations."</span></span>
-
-## <a name="development-and-customization--changing-the-extended-data-type-edt-on-a-table-field-using-table-extensions"></a><span data-ttu-id="dac9e-116">開発およびカスタマイズ - テーブル拡張を使用してテーブル フィールドの拡張データ タイプ (EDT) を変更する</span><span class="sxs-lookup"><span data-stu-id="dac9e-116">Development and customization – Changing the extended data type (EDT) on a table field using table extensions</span></span>
-
-<span data-ttu-id="dac9e-117">開発者は、テーブル拡張機能を使用して、テーブル フィールドの **拡張データ型** (EDT) プロパティを変更できます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-117">Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field.</span></span> <span data-ttu-id="dac9e-118">開発者は、現在のものから派生した EDT のみを選択できます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-118">Developers can only select EDTs that are derived from the current one.</span></span> <span data-ttu-id="dac9e-119">詳細については、[拡張機能およびオーバーレイによってカスタマイズする](../../dev-itpro/extensibility/customization-overlayering-extensions.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dac9e-119">For more information, see [Customize with extensions and overlayering](../../dev-itpro/extensibility/customization-overlayering-extensions.md).</span></span>
-
-## <a name="improved-viewing-experience-for-application-reports"></a><span data-ttu-id="dac9e-120">アプリケーション レポートの表示エクスペリエンスの強化</span><span class="sxs-lookup"><span data-stu-id="dac9e-120">Improved viewing experience for Application reports</span></span>
-
-<span data-ttu-id="dac9e-121">Dynamics 365 for Finance and Operations Enterprise Edition の分析レポートおよび運用レポートとやり取りする際、顧客にとって改善された新しい表示エクスペリエンスがあります。</span><span class="sxs-lookup"><span data-stu-id="dac9e-121">There is a new and improved viewing experience for customers when interacting with Analytical and Operational reports in Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="dac9e-122">この変更により、PDF ファイルとしてレンダリングされるか、プリンタに直接送信されるときに生成されるドキュメントの簡素化されたツールバーとクリア プレビューが提供されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-122">This change offers a streamlined toolbar and clear preview of the document that is produced when rendered as a PDF file or sent directly to the printer.</span></span> <span data-ttu-id="dac9e-123">現在までに、顧客は SQL Server Reporting Services (SSRS) によって 110 万件以上のドキュメント レポートを作成しています。</span><span class="sxs-lookup"><span data-stu-id="dac9e-123">To date, customers have rendered over 1.1 million document reports powered by SQL Server Reporting Services (SSRS).</span></span> <span data-ttu-id="dac9e-124">さらに、Dynamics 365 for Finance and Operations Enterprise Edition (2017 年 7 月) には、Power BI Desktop を使用して作成された 20 以上の分析レポートが含まれています。</span><span class="sxs-lookup"><span data-stu-id="dac9e-124">In addition, the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) includes 20+ analytical reports authored using Power BI Desktop.</span></span> <span data-ttu-id="dac9e-125">この機能は、ドキュメントと分析スタイルのアプリケーション レポートの両方と対話しながら、大幅に強化された表示エクスペリエンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="dac9e-125">This feature offers a significantly enhanced viewing experience while interacting with both document and analytical style application reports.</span></span>
-<span data-ttu-id="dac9e-126">顧客のメリット。</span><span class="sxs-lookup"><span data-stu-id="dac9e-126">Customer benefits:</span></span>
-
-- <span data-ttu-id="dac9e-127">**信頼性** - 顧客には、ドキュメントがプリンターに直接送信されたときの出力と一致するビューが表示されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="dac9e-127">**Reliability** – Customers will now be presented with a view that is consistent with the output when documents are sent directly to the printer.</span></span> <span data-ttu-id="dac9e-128">直接のフィードバックに基づいて、画面上でレポートを表示する最も一般的なユース ケースは他のユーザーと共有される出力をプレビューすることです。ほとんどの場合、電子メールが使用されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-128">Based on direct feedback, the most common use case for viewing a report on screen is to preview the output that will be shared with others, most often by email.</span></span> <span data-ttu-id="dac9e-129">現在、税金は SSRS によって作成された文書により合致するスクリーン表記に依存して利用できます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-129">Customs can now rely on a screen rendition that more closely matches the document produced by SSRS.</span></span>
-- <span data-ttu-id="dac9e-130">**シンプルさ** - ユーザーは、比較的小さな画面のモバイル デバイスを使用してアプリケーション レポートを十分に操作できます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-130">**Simplicity** – Customers can fully engage with application reports using mobile devices with relatively small screens.</span></span> <span data-ttu-id="dac9e-131">これらのデバイスでは、画面のインチ間隔が重要です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-131">On these devices, every inch of the screen is important.</span></span> <span data-ttu-id="dac9e-132">ページ キャプションを削除することで、ユーザーにとってアプリケーション レポートを表示したり操作するための画面スペースがより広くなります。</span><span class="sxs-lookup"><span data-stu-id="dac9e-132">By removing the page caption, users have more screen space with which to view and interact with application reports.</span></span>
-
-## <a name="table-browser-is-now-in-read-only-mode"></a><span data-ttu-id="dac9e-133">テーブル ブラウザーが読み取り専用モードになりました</span><span class="sxs-lookup"><span data-stu-id="dac9e-133">Table browser is now in read-only mode</span></span>
-
-<span data-ttu-id="dac9e-134">ランタイム環境 (サンドボックス Tier-2 および実稼働) でテーブル ブラウザー フォームが読み取り専用モードになりました。</span><span class="sxs-lookup"><span data-stu-id="dac9e-134">The table browser form is now in read-only mode on runtime environments (Sandbox Tier-2 and Production).</span></span>
-
-<span data-ttu-id="dac9e-135">開発者が開発環境でテスト データをすばやく作成して編集できるように、テーブル ブラウザー フォームが設計されています。</span><span class="sxs-lookup"><span data-stu-id="dac9e-135">The table browser form is designed for developers to quickly create and edit test data on development environments.</span></span> <span data-ttu-id="dac9e-136">これはランタイム環境でシステム管理者にも使用できました。</span><span class="sxs-lookup"><span data-stu-id="dac9e-136">It was also available to system administrators on runtime environments.</span></span> <span data-ttu-id="dac9e-137">現在のプラットフォーム更新プログラム 8 では、システム管理者はランタイム環境で読み取り専用モードでのみテーブル ブラウザにアクセスできます。これは、システム管理者が稼働中のシステム データを誤って編集したり削除したりしたときに、人為的なエラーが発生したことを受けての対応です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-137">As of Platform update 8, system administrators can only access the table browser in read-only mode on runtime environments, this is in reaction to live incidents caused by human error when system administrators inadvertently edited or removed live system data.</span></span>
-
-## <a name="deployment-option-on-premises"></a><span data-ttu-id="dac9e-138">配置オプション (オンプレミス)</span><span class="sxs-lookup"><span data-stu-id="dac9e-138">Deployment option (on-premises)</span></span>
-
-<span data-ttu-id="dac9e-139">組織によっては、クラウドに自社のミッション クリティカルなデータを格納する準備ができていません。</span><span class="sxs-lookup"><span data-stu-id="dac9e-139">Some organizations are not ready to store their company's mission critical data in the cloud.</span></span> <span data-ttu-id="dac9e-140">この要件は、多くの場合、業界の規制、国または地理的なクラウドの採用、最近のデータセンターへの投資、または組織のエンタープライズ標準によるものです。</span><span class="sxs-lookup"><span data-stu-id="dac9e-140">This requirement, in many cases, is due to industry regulations, country or geographic cloud adoption, recent data center investments, or an organization's enterprise standards.</span></span> <span data-ttu-id="dac9e-141">これらの顧客については、クラウドに格納する、業務データを必要としない新しい配置オプションについてお知らせできるのをうれしく思います。</span><span class="sxs-lookup"><span data-stu-id="dac9e-141">For these customers, we are excited to announce a new deployment option that will not require business data to be stored in the cloud.</span></span>
-
-<span data-ttu-id="dac9e-142">この展開オプションは、を Microsoft クラウドに複製することなく、社内のビジネス プロセスの実行、ローカル トランザクションのサポート、ローカルの格納をサポートします。</span><span class="sxs-lookup"><span data-stu-id="dac9e-142">This deployment option supports running your business processes on-premises, supporting local transactions and storage of local business data, without replication of your business data to the Microsoft cloud.</span></span> <span data-ttu-id="dac9e-143">そのような場合、Microsoft クラウド (クラウドとエッジのシナリオで参照) での業務データの一般的なレプリケーションはオフになります。</span><span class="sxs-lookup"><span data-stu-id="dac9e-143">In these cases, the typical replication of business data in the Microsoft cloud (referenced in the cloud and edge scenario) is simply switched off.</span></span>
-
-<span data-ttu-id="dac9e-144">データのクラウド同期により、Microsoft は業務プロセスにインテリジェンスを組み込むことができます。埋め込まれた分析、機械学習、および広範囲の機能は、Microsoft クラウドで最も効果的に提供されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-144">Cloud synchronization of data enables Microsoft to embed intelligence into business processes – embedded analytics, machine learning, and a vast range of capabilities are best served from the Microsoft cloud.</span></span> <span data-ttu-id="dac9e-145">このオプションでは、顧客はビジネス データのクラウド同期をオンまたはオフにするオプションを選択できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="dac9e-145">With this option, customers now have a choice – an option to turn on or turn off cloud synchronization of their business data.</span></span> <span data-ttu-id="dac9e-146">顧客がクラウド同期をオフにしている場合、業務データにその受託者の境界が残ることはありません。</span><span class="sxs-lookup"><span data-stu-id="dac9e-146">If customers turn off cloud synchronization, no business data leaves their trustee's boundaries.</span></span> <span data-ttu-id="dac9e-147">また、組み込み Power BI、集計ビュー、Azure Machine Learning サービス ベースの効率性などの機能は、クラウド データ同期をオフにしても使用できません。</span><span class="sxs-lookup"><span data-stu-id="dac9e-147">Also, functions like embedded Power BI, Aggregated Views, and Azure Machine Learning services-based efficiencies are not available when cloud data synchronization is turned off.</span></span> <span data-ttu-id="dac9e-148">顧客は、クラウドへのデータ同期をオンにするだけで、組み込みインテリジェンス機能を利用することができます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-148">Customers can choose to take advantage of the embedded intelligence functions by simply turning on data synchronization to the cloud.</span></span>
-
-<span data-ttu-id="dac9e-149">オンプレミス ビジネス データおよびクラウド データ同期の両方の環境はクラウド + Edge 配置オプションと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-149">An environment with both on-premises business data and cloud data synchronization is referred to as a Cloud + Edge deployment option.</span></span> <span data-ttu-id="dac9e-150">これらのオプションの相違をより詳しく比較するには、表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dac9e-150">Refer to the table for a closer comparison of differences between these options.</span></span>
-
-<span data-ttu-id="dac9e-151">診断、監視、使用状況の遠隔測定、および生産の更新など、クラウド ベースのアプリケーション ライフ サイクル管理 (ALM) 機能は、Microsoft Dynamics Lifecycle Services (LCS) を通じて提供されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-151">Our cloud-based Application Lifecycle Management (ALM) functions, including diagnostics, monitoring, usage telemetry, and production updates, are provided through Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="dac9e-152">LCS は、すべての配置オプションでの Dynamics 365 for Finance and Operations ソリューションの効率的な維持および運用に必要です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-152">LCS is required for efficient upkeep and operation of your Dynamics 365 for Finance and Operations solutions in all deployment options.</span></span> <span data-ttu-id="dac9e-153">クラウド サービスを稼働させてから 1 年近く経った今、LCS ベースの管理により、さらに予測可能な配置が可能になり、より優れたサポートとサービス エクスペリエンスをお客様に提供できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="dac9e-153">After nearly a year of operating the cloud service, we have seen that LCS-based management leads to more predictable deployments and provides customers with a better support and service experience.</span></span> <span data-ttu-id="dac9e-154">Finance and Operations のすべての配置オプションではその操作のために LCS が必要です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-154">All deployment options for Finance and Operations require LCS for their operation.</span></span>
-
-<span data-ttu-id="dac9e-155">オンプレミス配置シナリオでは、アプリケーション サーバーおよび SQL データベースは顧客またはパートナーのデータ センター内で実行されます。</span><span class="sxs-lookup"><span data-stu-id="dac9e-155">For the on-premises deployment scenario, the application servers and SQL database will run in a customer's or partner's data center.</span></span> <span data-ttu-id="dac9e-156">顧客とパートナーは、業務プロセスの設計、オンプレミス ノードに展開するためのソフトウェア イメージの作成と展開、システム ヘルス ダッシュボードのオンプレミス ノードの監視、およびメンテナンスを含むマイクロソフト クラウドの LCS を通じてアプリケーション ライフサイクルを管理します。 Microsoft のイノベーションです。</span><span class="sxs-lookup"><span data-stu-id="dac9e-156">Customers and partners manage the application lifecycle through LCS in the Microsoft cloud, including designing the business processes, creating and deploying the software image to deploy onto the on-premises nodes, monitoring the on-premises nodes in a system health dashboard, and keeping up with innovation from Microsoft.</span></span>
-
-<span data-ttu-id="dac9e-157">詳細については、[ビジネスに適したクラウド オプション](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dac9e-157">For more information, see [The right cloud option for your business](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business).</span></span> <span data-ttu-id="dac9e-158">このブログ記事は、「ローカル ビジネス データ」展開機能を参照しています。</span><span class="sxs-lookup"><span data-stu-id="dac9e-158">This blog post refers to the "local business data" deployment capability.</span></span> <span data-ttu-id="dac9e-159">これは、製品とドキュメントの「オンプレミス」と呼ばれる機能です。</span><span class="sxs-lookup"><span data-stu-id="dac9e-159">This is the capability that's called "on-premises" in the product and documentation.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="whats-new-platform-update-8.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>whats-new-platform-update-8.970651.4dd697d86f4175c48a8b6460f1ad516bb06a14e5.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>4dd697d86f4175c48a8b6460f1ad516bb06a14e5</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\fin-and-ops\get-started\whats-new-platform-update-8.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>This version was released in June 2017.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このバージョンは 2017 年 6 月にリリースされました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This version was released in June 2017 and has a build number of 7.0.4565.16212.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このバージョンは 2017 年 6 月にリリースされ、ビルド番号は 7.0.4565.16212 です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Dynamics 365 for Operations (on-premises) is currently being renamed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス) が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations Enterprise Edition です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Both of these names refer to the same product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの名前はどちらも同じ製品を指しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Go to the <bpt id="p1">[</bpt>Dynamics 365 Roadmap<ept id="p1">](https://roadmap.dynamics.com/)</ept> to find supplemental information about new features and learn more about what new features are in development.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新機能についての補足情報の検索および開発中の新機能に関する詳細については、<bpt id="p1">[</bpt>Dynamics 365 ロードマップ<ept id="p1">](https://roadmap.dynamics.com/)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For information about the bug fixes included in Platform update 8, log in to Lifecycle Services (LCS) and view this <bpt id="p1">[</bpt>KB article<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=852224)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォーム更新プログラム 8 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この <bpt id="p1">[</bpt>サポート技術情報記事<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=852224)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Introducing Dynamics 365 for Finance and Operations, Enterprise edition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations Enterprise Edition を含みます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーと開発者に対して、更新された製品名 ("Microsoft Dynamics 365 for Finance and Operations Enterprise Edition") と製品アイコンが Web クライアントに表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent will now appear as "Dynamics 365 Unified Operations."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部のプラットフォームのコンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) によって共有される Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent は、"Dynamics 365 Unified Operations." と表示されるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Development and customization – Changing the extended data type (EDT) on a table field using table extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発およびカスタマイズ - テーブル拡張を使用してテーブル フィールドの拡張データ タイプ (EDT) を変更する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Using table extensions, a developer can change the <bpt id="p1">**</bpt>Extended Data Type<ept id="p1">**</ept> (EDT) property of a table field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者は、テーブル拡張機能を使用して、テーブル フィールドの <bpt id="p1">**</bpt>拡張データ型<ept id="p1">**</ept> (EDT) プロパティを変更できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Developers can only select EDTs that are derived from the current one.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者は、現在のものから派生した EDT のみを選択できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>For more information, see <bpt id="p1">[</bpt>Customize with extensions and overlayering<ept id="p1">](../../dev-itpro/extensibility/customization-overlayering-extensions.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>拡張機能およびオーバーレイによってカスタマイズする<ept id="p1">](../../dev-itpro/extensibility/customization-overlayering-extensions.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Improved viewing experience for Application reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション レポートの表示エクスペリエンスの強化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>There is a new and improved viewing experience for customers when interacting with Analytical and Operational reports in Dynamics 365 for Finance and Operations, Enterprise edition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations Enterprise Edition の分析レポートおよび運用レポートとやり取りする際、顧客にとって改善された新しい表示エクスペリエンスがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>This change offers a streamlined toolbar and clear preview of the document that is produced when rendered as a PDF file or sent directly to the printer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この変更により、PDF ファイルとしてレンダリングされるか、プリンタに直接送信されるときに生成されるドキュメントの簡素化されたツールバーとクリア プレビューが提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>To date, customers have rendered over 1.1 million document reports powered by SQL Server Reporting Services (SSRS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在までに、顧客は SQL Server Reporting Services (SSRS) によって 110 万件以上のドキュメント レポートを作成しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>In addition, the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) includes 20+ analytical reports authored using Power BI Desktop.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに、Dynamics 365 for Finance and Operations Enterprise Edition (2017 年 7 月) には、Power BI Desktop を使用して作成された 20 以上の分析レポートが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>This feature offers a significantly enhanced viewing experience while interacting with both document and analytical style application reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、ドキュメントと分析スタイルのアプリケーション レポートの両方と対話しながら、大幅に強化された表示エクスペリエンスを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Customer benefits:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のメリット。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">**</bpt>Reliability<ept id="p1">**</ept> – Customers will now be presented with a view that is consistent with the output when documents are sent directly to the printer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>信頼性<ept id="p1">**</ept> - 顧客には、ドキュメントがプリンターに直接送信されたときの出力と一致するビューが表示されるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Based on direct feedback, the most common use case for viewing a report on screen is to preview the output that will be shared with others, most often by email.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">直接のフィードバックに基づいて、画面上でレポートを表示する最も一般的なユース ケースは他のユーザーと共有される出力をプレビューすることです。ほとんどの場合、電子メールが使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Customs can now rely on a screen rendition that more closely matches the document produced by SSRS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在、税金は SSRS によって作成された文書により合致するスクリーン表記に依存して利用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Simplicity<ept id="p1">**</ept> – Customers can fully engage with application reports using mobile devices with relatively small screens.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>シンプルさ<ept id="p1">**</ept> - ユーザーは、比較的小さな画面のモバイル デバイスを使用してアプリケーション レポートを十分に操作できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>On these devices, every inch of the screen is important.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのデバイスでは、画面のインチ間隔が重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>By removing the page caption, users have more screen space with which to view and interact with application reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページ キャプションを削除することで、ユーザーにとってアプリケーション レポートを表示したり操作するための画面スペースがより広くなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Table browser is now in read-only mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル ブラウザーが読み取り専用モードになりました</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The table browser form is now in read-only mode on runtime environments (Sandbox Tier-2 and Production).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム環境 (サンドボックス Tier-2 および実稼働) でテーブル ブラウザー フォームが読み取り専用モードになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The table browser form is designed for developers to quickly create and edit test data on development environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者が開発環境でテスト データをすばやく作成して編集できるように、テーブル ブラウザー フォームが設計されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>It was also available to system administrators on runtime environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これはランタイム環境でシステム管理者にも使用できました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>As of Platform update 8, system administrators can only access the table browser in read-only mode on runtime environments, this is in reaction to live incidents caused by human error when system administrators inadvertently edited or removed live system data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のプラットフォーム更新プログラム 8 では、システム管理者はランタイム環境で読み取り専用モードでのみテーブル ブラウザにアクセスできます。これは、システム管理者が稼働中のシステム データを誤って編集したり削除したりしたときに、人為的なエラーが発生したことを受けての対応です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Deployment option (on-premises)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置オプション (オンプレミス)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Some organizations are not ready to store their company's mission critical data in the cloud.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織によっては、クラウドに自社のミッション クリティカルなデータを格納する準備ができていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>This requirement, in many cases, is due to industry regulations, country or geographic cloud adoption, recent data center investments, or an organization's enterprise standards.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この要件は、多くの場合、業界の規制、国または地理的なクラウドの採用、最近のデータセンターへの投資、または組織のエンタープライズ標準によるものです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>For these customers, we are excited to announce a new deployment option that will not require business data to be stored in the cloud.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの顧客については、クラウドに格納する、業務データを必要としない新しい配置オプションについてお知らせできるのをうれしく思います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>This deployment option supports running your business processes on-premises, supporting local transactions and storage of local business data, without replication of your business data to the Microsoft cloud.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この展開オプションは、を Microsoft クラウドに複製することなく、社内のビジネス プロセスの実行、ローカル トランザクションのサポート、ローカルの格納をサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In these cases, the typical replication of business data in the Microsoft cloud (referenced in the cloud and edge scenario) is simply switched off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのような場合、Microsoft クラウド (クラウドとエッジのシナリオで参照) での業務データの一般的なレプリケーションはオフになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Cloud synchronization of data enables Microsoft to embed intelligence into business processes – embedded analytics, machine learning, and a vast range of capabilities are best served from the Microsoft cloud.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データのクラウド同期により、Microsoft は業務プロセスにインテリジェンスを組み込むことができます。埋め込まれた分析、機械学習、および広範囲の機能は、Microsoft クラウドで最も効果的に提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>With this option, customers now have a choice – an option to turn on or turn off cloud synchronization of their business data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションでは、顧客はビジネス データのクラウド同期をオンまたはオフにするオプションを選択できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>If customers turn off cloud synchronization, no business data leaves their trustee's boundaries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客がクラウド同期をオフにしている場合、業務データにその受託者の境界が残ることはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Also, functions like embedded Power BI, Aggregated Views, and Azure Machine Learning services-based efficiencies are not available when cloud data synchronization is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、組み込み Power BI、集計ビュー、Azure Machine Learning サービス ベースの効率性などの機能は、クラウド データ同期をオフにしても使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Customers can choose to take advantage of the embedded intelligence functions by simply turning on data synchronization to the cloud.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客は、クラウドへのデータ同期をオンにするだけで、組み込みインテリジェンス機能を利用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>An environment with both on-premises business data and cloud data synchronization is referred to as a Cloud + Edge deployment option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス ビジネス データおよびクラウド データ同期の両方の環境はクラウド + Edge 配置オプションと呼ばれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Refer to the table for a closer comparison of differences between these options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのオプションの相違をより詳しく比較するには、表を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Our cloud-based Application Lifecycle Management (ALM) functions, including diagnostics, monitoring, usage telemetry, and production updates, are provided through Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">診断、監視、使用状況の遠隔測定、および生産の更新など、クラウド ベースのアプリケーション ライフ サイクル管理 (ALM) 機能は、Microsoft Dynamics Lifecycle Services (LCS) を通じて提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>LCS is required for efficient upkeep and operation of your Dynamics 365 for Finance and Operations solutions in all deployment options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS は、すべての配置オプションでの Dynamics 365 for Finance and Operations ソリューションの効率的な維持および運用に必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>After nearly a year of operating the cloud service, we have seen that LCS-based management leads to more predictable deployments and provides customers with a better support and service experience.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラウド サービスを稼働させてから 1 年近く経った今、LCS ベースの管理により、さらに予測可能な配置が可能になり、より優れたサポートとサービス エクスペリエンスをお客様に提供できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>All deployment options for Finance and Operations require LCS for their operation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations のすべての配置オプションではその操作のために LCS が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>For the on-premises deployment scenario, the application servers and SQL database will run in a customer's or partner's data center.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置シナリオでは、アプリケーション サーバーおよび SQL データベースは顧客またはパートナーのデータ センター内で実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Customers and partners manage the application lifecycle through LCS in the Microsoft cloud, including designing the business processes, creating and deploying the software image to deploy onto the on-premises nodes, monitoring the on-premises nodes in a system health dashboard, and keeping up with innovation from Microsoft.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客とパートナーは、業務プロセスの設計、オンプレミス ノードに展開するためのソフトウェア イメージの作成と展開、システム ヘルス ダッシュボードのオンプレミス ノードの監視、およびメンテナンスを含むマイクロソフト クラウドの LCS を通じてアプリケーション ライフサイクルを管理します。 Microsoft のイノベーションです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>For more information, see <bpt id="p1">[</bpt>The right cloud option for your business<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>ビジネスに適したクラウド オプション<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>This blog post refers to the "local business data" deployment capability.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このブログ記事は、「ローカル ビジネス データ」展開機能を参照しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>This is the capability that's called "on-premises" in the product and documentation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、製品とドキュメントの「オンプレミス」と呼ばれる機能です。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

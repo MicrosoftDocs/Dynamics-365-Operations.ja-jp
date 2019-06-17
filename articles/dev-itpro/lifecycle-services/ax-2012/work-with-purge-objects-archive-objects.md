@@ -1,332 +1,1083 @@
----
-title: オブジェクトの削除とアーカイブを使用する
-description: このトピックでは、インテリジェント データ管理フレームワーク (IDMF) のパージ オブジェクトとアーカイブ オブジェクトについて説明します。
-author: kfend
-manager: AnnBe
-ms.date: 10/27/2017
-ms.topic: article
-ms.prod: dynamics-ax-2012
-ms.service: ''
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: AX 2012
-ms.custom: 17521
-ms.assetid: 3def0657-94c4-419b-905b-ed99a527cd7f
-ms.search.region: Global
-ms.author: kfend
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 2012
-ms.openlocfilehash: aa134d7baa66f0bdfd448e12cb5b1d90f404cbb1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537366"
----
-# <a name="work-with-purge-and-archive-objects"></a><span data-ttu-id="53f17-103">オブジェクトの削除とアーカイブを使用する</span><span class="sxs-lookup"><span data-stu-id="53f17-103">Work with purge and archive objects</span></span>
-
-[!include [banner](../../includes/banner.md)]
-
-<a name="addedit-rules"></a><span data-ttu-id="53f17-104">ルールの追加/編集</span><span class="sxs-lookup"><span data-stu-id="53f17-104">Add/Edit rules</span></span>
---------------
-
-<span data-ttu-id="53f17-105">ルールは、削除タスクまたはアーカイブ タスクの実行時に、レコードをフィルター処理するために使用される基準です。</span><span class="sxs-lookup"><span data-stu-id="53f17-105">A rule is the criterion that is used to filter records when a purge task or an archive task runs.</span></span> <span data-ttu-id="53f17-106">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクト内のルールを操作できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-106">This command lets you work with rules in a Purge Object or an Archive Object.</span></span> <span data-ttu-id="53f17-107">ルールは一般的にドライバー テーブルに適用されますが、関連する子テーブルにも適用できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-107">The rules generally apply to the driver table, but can also be applied to a related child table.</span></span> <span data-ttu-id="53f17-108">たとえば、削除オブジェクト **ProdJournalTable** には、**ProdTable** のルールが含まれ、ドライバー テーブルではありません。</span><span class="sxs-lookup"><span data-stu-id="53f17-108">For example, the Purge Object **ProdJournalTable** includes a rule for the **ProdTable**, which is not the driver table.</span></span> <span data-ttu-id="53f17-109">これらのルールを作成する方法に関係なく、"where" 句はドライバー テーブルに常に適用されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-109">Regardless of how you create these rules, the "where" clause always applies to the driver table.</span></span> <span data-ttu-id="53f17-110">どのようなルールを適用する場合も、適用前にルールの削除オブジェクトまたはアーカイブ オブジェクトへの影響について理解する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-110">You must understand the effect of your rule on the Purge Object or Archive Object before applying any rule.</span></span> <span data-ttu-id="53f17-111">ツールバーで、**ルールの追加/編集**をクリックして、**ルールの追加/編集**ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-111">On the toolbar, click **Add/Edit rules** to open the **Add/Edit rules** window.</span></span>
-
-### <a name="navigation-of-the-addedit-rules-window"></a><span data-ttu-id="53f17-112">ルールの追加/編集ウィンドウのナビゲーション</span><span class="sxs-lookup"><span data-stu-id="53f17-112">Navigation of the Add/Edit rules window</span></span>
-
-<span data-ttu-id="53f17-113">次のテーブルで、**ルールの追加/編集** ウィンドウのコントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="53f17-113">The following tables provide descriptions for the controls in the **Add/Edit rules** window.</span></span>
-#### <a name="panes"></a><span data-ttu-id="53f17-114">ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-114">Panes</span></span>
-
-| <span data-ttu-id="53f17-115">ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-115">Pane</span></span>                          | <span data-ttu-id="53f17-116">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-116">Description</span></span>                                                                                                                                                                           |
-|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-117">**ルール コレクション**</span><span class="sxs-lookup"><span data-stu-id="53f17-117">**Rule collection**</span></span>           | <span data-ttu-id="53f17-118">削除オブジェクトまたはアーカイブ オブジェクト内のルールのリスト、および新しいルールの作成、既存のルールへの式の追加、またはルールまたは式の削除のコマンドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="53f17-118">Contains a list of the rules in the Purge Object or Archive Object, and commands to create a new rule, add an expression to the existing rule, or delete a rule or an expression.</span></span>     |
-| <span data-ttu-id="53f17-119">**削除のルールのコンフィギュレーション**</span><span class="sxs-lookup"><span data-stu-id="53f17-119">**Configure rules for purge**</span></span> | <span data-ttu-id="53f17-120">ルールの名前、説明、および条件を入力または変更する領域を提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-120">Provides an area to enter or modify the rule name, description, and conditions.</span></span> <span data-ttu-id="53f17-121">また、**ルール コレクション**ウィンドウの一覧に、ルールを追加、または更新するコマンドが提供されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-121">Also provides commands to add the rule to, or update it in, the list in the **Rule collection** pane.</span></span> |
-| <span data-ttu-id="53f17-122">**条件付き情報**</span><span class="sxs-lookup"><span data-stu-id="53f17-122">**Conditional information**</span></span>   | <span data-ttu-id="53f17-123">削除オブジェクトの条件または選択基準を指定できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-123">Lets you specify conditions, or the selection criteria, for the Purge Object.</span></span>                                                                                                         |
-
-#### 
-
-#### <a name="buttons"></a><span data-ttu-id="53f17-124">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-124">Buttons</span></span>
-
-#### <a name="addedit-rules-window"></a><span data-ttu-id="53f17-125">ルール ウィンドウの追加/編集</span><span class="sxs-lookup"><span data-stu-id="53f17-125">Add/Edit rules window</span></span>
-
-| <span data-ttu-id="53f17-126">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-126">Button</span></span>    | <span data-ttu-id="53f17-127">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-127">Description</span></span>                                                                                                                                                 |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-128">**保存**</span><span class="sxs-lookup"><span data-stu-id="53f17-128">**Save**</span></span>  | <span data-ttu-id="53f17-129">**ルール コレクション** ウィンドウの一覧に対して行った変更をデータベースに保存します。</span><span class="sxs-lookup"><span data-stu-id="53f17-129">Save the changes that you made to the list in the **Rule collection** pane to the database.</span></span>                                                                 |
-| <span data-ttu-id="53f17-130">**閉じる**</span><span class="sxs-lookup"><span data-stu-id="53f17-130">**Close**</span></span> | <span data-ttu-id="53f17-131">**ルールの追加/編集**ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53f17-131">Close the **Add/Edit rules** window.</span></span> <span data-ttu-id="53f17-132">変更を保存せずにウィンドウを閉じようとする場合、閉じるか変更を保存するかの確認を求められます。</span><span class="sxs-lookup"><span data-stu-id="53f17-132">You are prompted to confirm the close or save your changes if you try to close the window without saving your changes.</span></span> |
-
-#### 
-
-#### <a name="rule-collection-pane"></a><span data-ttu-id="53f17-133">ルール コレクション ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-133">Rule collection pane</span></span>
-
-| <span data-ttu-id="53f17-134">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-134">Button</span></span>             | <span data-ttu-id="53f17-135">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-135">Description</span></span>                                                                                                                                                                  |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-136">**新規作成**</span><span class="sxs-lookup"><span data-stu-id="53f17-136">**New rule**</span></span>       | <span data-ttu-id="53f17-137">新しいルールの作成。</span><span class="sxs-lookup"><span data-stu-id="53f17-137">Create a new rule.</span></span> <span data-ttu-id="53f17-138">削除オブジェクトまたはアーカイブ オブジェクトに複数のルールがある場合、それらのルールは、SQL ステートメントの "WHERE" 句の "AND" 条件を形成します。</span><span class="sxs-lookup"><span data-stu-id="53f17-138">When you have multiple rules in the Purge Object or Archive Object, they form the "and" condition in the "where" clause of the SQL statement.</span></span>             |
-| <span data-ttu-id="53f17-139">**式を追加**</span><span class="sxs-lookup"><span data-stu-id="53f17-139">**Add expression**</span></span> | <span data-ttu-id="53f17-140">新しい式を作成します。</span><span class="sxs-lookup"><span data-stu-id="53f17-140">Create a new expression.</span></span> <span data-ttu-id="53f17-141">式は既存のルールに追加される条件です。</span><span class="sxs-lookup"><span data-stu-id="53f17-141">An expression is a condition that is added to an existing rule.</span></span> <span data-ttu-id="53f17-142">式は SQL ステートメントの「where」句に「or」の条件を作成します。</span><span class="sxs-lookup"><span data-stu-id="53f17-142">An expression creates an "or" condition in the "where" clause of the SQL statement.</span></span> |
-| <span data-ttu-id="53f17-143">**削除**</span><span class="sxs-lookup"><span data-stu-id="53f17-143">**Delete**</span></span>         | <span data-ttu-id="53f17-144">選択したルールまたは式を削除します。</span><span class="sxs-lookup"><span data-stu-id="53f17-144">Delete the selected rule or expression.</span></span>                                                                                                                                      |
-
-#### 
-
-#### <a name="configure-rules-pane"></a><span data-ttu-id="53f17-145">ルール ウィンドウのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="53f17-145">Configure rules pane</span></span>
-
-| <span data-ttu-id="53f17-146">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-146">Button</span></span>     | <span data-ttu-id="53f17-147">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-147">Description</span></span>                                                                         |
-|------------|-------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-148">**追加**</span><span class="sxs-lookup"><span data-stu-id="53f17-148">**Add**</span></span>    | <span data-ttu-id="53f17-149">**ルール コレクション** ウィンドウの一覧に新しいルールまたは式を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-149">Add the new rule or expression to the list in the **Rule collection** pane.</span></span>         |
-| <span data-ttu-id="53f17-150">**更新**</span><span class="sxs-lookup"><span data-stu-id="53f17-150">**Update**</span></span> | <span data-ttu-id="53f17-151">**ルール コレクション** ウィンドウの一覧で選択したルールまたは式を更新します。</span><span class="sxs-lookup"><span data-stu-id="53f17-151">Update the selected rule or expression in the list in the **Rule collection** pane.</span></span> |
-| <span data-ttu-id="53f17-152">**キャンセル**</span><span class="sxs-lookup"><span data-stu-id="53f17-152">**Cancel**</span></span> | <span data-ttu-id="53f17-153">追加、または更新アクションをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="53f17-153">Cancel the add or update action.</span></span>                                                    |
-
-#### 
-
-#### <a name="fields-across-all-panes"></a><span data-ttu-id="53f17-154">フィールド (すべてのウィンドウ間)</span><span class="sxs-lookup"><span data-stu-id="53f17-154">Fields (across all panes)</span></span>
-
-| <span data-ttu-id="53f17-155">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-155">Field</span></span>                | <span data-ttu-id="53f17-156">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-156">Description</span></span>                                                                                                                                                                                        |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-157">**ルール名**</span><span class="sxs-lookup"><span data-stu-id="53f17-157">**Rule name**</span></span>        | <span data-ttu-id="53f17-158">ルールまたは式の名前。</span><span class="sxs-lookup"><span data-stu-id="53f17-158">The name of the rule or expression.</span></span>                                                                                                                                                                |
-| <span data-ttu-id="53f17-159">**ルール**</span><span class="sxs-lookup"><span data-stu-id="53f17-159">**Rule**</span></span>             | <span data-ttu-id="53f17-160">テーブル名、フィールド名、および条件付き演算子に基づいて作成する条件。</span><span class="sxs-lookup"><span data-stu-id="53f17-160">The condition that you create based on the table name, the field name, and a conditional operator.</span></span> <span data-ttu-id="53f17-161">この条件は、SQL ステートメントの「where」句を構成します。</span><span class="sxs-lookup"><span data-stu-id="53f17-161">This condition forms the "where" clause in the SQL statement.</span></span>                                   |
-| <span data-ttu-id="53f17-162">**ルールの説明**</span><span class="sxs-lookup"><span data-stu-id="53f17-162">**Rule description**</span></span> | <span data-ttu-id="53f17-163">ルールの説明。</span><span class="sxs-lookup"><span data-stu-id="53f17-163">A description of the rule.</span></span> <span data-ttu-id="53f17-164">新しい説明を入力またはここに既存の説明を変更します。</span><span class="sxs-lookup"><span data-stu-id="53f17-164">Enter a new description or modify an existing description here.</span></span>                                                                                                         |
-| <span data-ttu-id="53f17-165">**テーブル名**</span><span class="sxs-lookup"><span data-stu-id="53f17-165">**Table name**</span></span>       | <span data-ttu-id="53f17-166">削除オブジェクトまたはアーカイブ オブジェクトのすべてのテーブルのリストから選択したテーブル。</span><span class="sxs-lookup"><span data-stu-id="53f17-166">The table that you select from the list of all tables in the Purge Object or Archive Object.</span></span>                                                                                                       |
-| <span data-ttu-id="53f17-167">**フィールド名**</span><span class="sxs-lookup"><span data-stu-id="53f17-167">**Field name**</span></span>       | <span data-ttu-id="53f17-168">選択したテーブルのすべてのフィールドのリストから選択するフィールドの名前。</span><span class="sxs-lookup"><span data-stu-id="53f17-168">The name of the field that you select from the list of all fields for the selected table.</span></span>                                                                                                          |
-| <span data-ttu-id="53f17-169">**条件**</span><span class="sxs-lookup"><span data-stu-id="53f17-169">**Condition**</span></span>        | <span data-ttu-id="53f17-170">ユーザーがテーブルとフィールドに配置する条件。</span><span class="sxs-lookup"><span data-stu-id="53f17-170">The condition that you place on the table and the field.</span></span> <span data-ttu-id="53f17-171">フィールドの選択に応じて、条件リストが変更されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-171">The condition list changes, depending on the field selections.</span></span>                                                                            |
-| <span data-ttu-id="53f17-172">**値**</span><span class="sxs-lookup"><span data-stu-id="53f17-172">**Value**</span></span>            | <span data-ttu-id="53f17-173">**値** フィールドは、テキスト ボックスとリストを切り替えます。</span><span class="sxs-lookup"><span data-stu-id="53f17-173">The **Value** field switches between a text box and a list.</span></span> <span data-ttu-id="53f17-174">リストから値を選択することができますが、ここではテキスト ボックスに値を入力することができません。</span><span class="sxs-lookup"><span data-stu-id="53f17-174">You can select a value from the list, but cannot enter a value in the text box here.</span></span> <span data-ttu-id="53f17-175">削除タスクを作成する場合には、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-175">You enter the value when you create a purge task.</span></span> |
-
-### 
-
-### <a name="walkthrough-add-or-modify-a-rule-in-a-purge-object"></a><span data-ttu-id="53f17-176">チュートリアル: 削除オブジェクトへのルールの追加または削除</span><span class="sxs-lookup"><span data-stu-id="53f17-176">Walkthrough: Add or modify a rule in a Purge Object</span></span>
-
-<span data-ttu-id="53f17-177">このセクションでは、削除オブジェクトのルールを追加または変更するためのチュートリアルを提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-177">This section provides a walkthrough to add or modify a rule in a Purge Object.</span></span>
-
-| <span data-ttu-id="53f17-178">**注意**</span><span class="sxs-lookup"><span data-stu-id="53f17-178">**Caution**</span></span>                                                                                                                                                                                                                                                                                                                                                                                           |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-179">このチュートリアルでは、学習を容易にするためにパージ オブジェクトから既存のルールを削除し、再作成します。</span><span class="sxs-lookup"><span data-stu-id="53f17-179">This walkthrough deletes and recreates an existing rule from the Purge Object for ease of learning.</span></span> <span data-ttu-id="53f17-180">ルールを扱うには、データベース設計、データ フロー、プロセス フロー、および Microsoft Dynamics AX アプリケーションの機能について明確に理解している必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-180">You must have an excellent understanding of the database design, data flow, process flow, and application functionality of the Microsoft Dynamics AX application to work with rules.</span></span> <span data-ttu-id="53f17-181">エラーは完全なデータベースおよびアプリケーションの復旧を必要とするデータの破損やアプリケーションのダウンタイムを引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-181">An error can cause data corruption or application downtime requiring full database and application recovery.</span></span> |
-
-1.  <span data-ttu-id="53f17-182">**構成** &gt; **削除テンプレート/削除オブジェクト** &gt; **PurchParmTable** とクリックし、**PurchParmTable** 削除オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-182">Click **Configure** &gt; **Purge templates/Purge Object** &gt; **PurchParmTable** to open the **PurchParmTable** Purge Object.</span></span> <span data-ttu-id="53f17-183">このチュートリアルでは、既定のパージ テンプレートから作成されたパージ オブジェクトを使用して作業することを前提としています。</span><span class="sxs-lookup"><span data-stu-id="53f17-183">This walkthrough assumes that you are working with the Purge Object that was created from the default purge template.</span></span> <span data-ttu-id="53f17-184">任意の方法で削除オブジェクトを変更した場合は、**復元**をクリックして削除オブジェクトを元のバージョンに復元します。</span><span class="sxs-lookup"><span data-stu-id="53f17-184">If you have modified the Purge Object in any way, click **Restore** to restore the Purge Object to the original version.</span></span>
-2.  <span data-ttu-id="53f17-185">ツールバーで、**ルールの追加/編集**をクリックして、**ルールの追加/編集**ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-185">On the toolbar, click **Add/Edit rules** to open the **Add/Edit rules** window.</span></span>
-3.  <span data-ttu-id="53f17-186">**ルール コレクション** ウィンドウで、データ グリッドの最初の行をクリックして **PurchParmTable.ParmJobStatus = Executed** のルールを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-186">In the **Rule collection** pane, click the first row in the data grid to select the rule **PurchParmTable.ParmJobStatus = Executed**.</span></span> <span data-ttu-id="53f17-187">**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-187">Click **Delete**.</span></span> <span data-ttu-id="53f17-188">**削除**ダイアログ ボックスで、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-188">Click **OK** in the **Delete** dialog box.</span></span>
-4.  <span data-ttu-id="53f17-189">**新しいルール**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-189">Click **New rule**.</span></span> <span data-ttu-id="53f17-190">**削除のルールを構成**で、次のフィールド値を設定します。</span><span class="sxs-lookup"><span data-stu-id="53f17-190">In **Configure rules for purge**, set the following field values:</span></span>
-    1.  <span data-ttu-id="53f17-191">**ルール名**フィールドに、「クリーンアップ」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-191">In the **Rule name** field, type Clean up.</span></span>
-    2.  <span data-ttu-id="53f17-192">**ルールの説明**フィールドに、「どれをクリーンアップする必要がありますか」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-192">In the **Rule description** field, type What should be cleaned up?</span></span>
-    3.  <span data-ttu-id="53f17-193">**テーブル名**リストで、**PurchParmTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-193">In the **Table name** list, select **PurchParmTable**.</span></span>
-    4.  <span data-ttu-id="53f17-194">**フィールド名**リストで、**ParmJobStatus** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-194">In the **Field name** list, select **ParmJobStatus**.</span></span>
-    5.  <span data-ttu-id="53f17-195">**条件**リストで、**=** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-195">In the **Condition** list, select **=**.</span></span>
-    6.  <span data-ttu-id="53f17-196">**値**フィールドで、リストから**実行済**を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-196">In the **Value** field, select **Executed** from the list.</span></span>
-
-5.  <span data-ttu-id="53f17-197">**追加**をクリックし、ルールが**ルール コレクション** ウィンドウのデータグリッドに追加されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-197">Click **Add**, and verify that the rule is added to the data grid in the **Rule collection** pane.</span></span>
-6.  <span data-ttu-id="53f17-198">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-198">Click **Save**.</span></span> <span data-ttu-id="53f17-199">**ルール** ダイアログ ボックスで **OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-199">In the **Rules** dialog box, click **OK** to continue.</span></span>
-7.  <span data-ttu-id="53f17-200">**閉じる**をクリックしてウィンドウを閉じ、削除オブジェクトに戻ります。</span><span class="sxs-lookup"><span data-stu-id="53f17-200">Click **Close** to close the window and return to the Purge Object.</span></span>
-
-### <a name="walkthrough-add-or-modify-a-rule-in-an-archive-object"></a><span data-ttu-id="53f17-201">チュートリアル: アーカイブ オブジェクトへのルールの追加または削除</span><span class="sxs-lookup"><span data-stu-id="53f17-201">Walkthrough: Add or modify a rule in an Archive Object</span></span>
-
-<span data-ttu-id="53f17-202">このセクションでは、アーカイブ オブジェクトのルールを追加または変更するためのチュートリアルを提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-202">This section provides a walkthrough to add or modify a rule in an Archive Object.</span></span>
-1.  <span data-ttu-id="53f17-203">**構成** &gt; **アーカイブ テンプレート/アーカイブ オブジェクト** &gt; **SalesTable** とクリックして **SalesTable** アーカイブ オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-203">Click **Configure** &gt; **Archive templates/Archive Objects** &gt; **SalesTable** to open the **SalesTable** Archive Object.</span></span> <span data-ttu-id="53f17-204">このチュートリアルでは、既定のアーカイブ テンプレートから作成されたアーカイブ オブジェクトを使用して作業することを前提としています。</span><span class="sxs-lookup"><span data-stu-id="53f17-204">This walkthrough assumes that you are working with the Archive Object that was created from the default archive template.</span></span> <span data-ttu-id="53f17-205">アーカイブ オブジェクトを変更した場合は、ツールバーの**バージョンを表示**コマンドを使用して、データ管理フレームワークに含まれている元のアーカイブ テンプレートに戻します。</span><span class="sxs-lookup"><span data-stu-id="53f17-205">If you have modified the Archive Object in any way, use the **Show versions** command on the toolbar to revert to the original archive template that is included with the Data Management Framework.</span></span>
-2.  <span data-ttu-id="53f17-206">ツールバーで、**ルールの追加/編集**をクリックして、**ルールの追加/編集**ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-206">On the toolbar, click **Add/Edit rules** to open the **Add/Edit rules** window.</span></span>
-3.  <span data-ttu-id="53f17-207">**ルール コレクション** ウィンドウで、データ グリッドの 2 行目をクリックして **SalesTable.SalesStatus In Canceled, Invoiced** のルールを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-207">In the **Rule collection** pane, click the second row in the data grid to select the rule **SalesTable.SalesStatus In Canceled, Invoiced**.</span></span> <span data-ttu-id="53f17-208">**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-208">Click **Delete**.</span></span> <span data-ttu-id="53f17-209">**削除**ダイアログ ボックスで、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-209">Click **OK** in the **Delete** dialog box.</span></span>
-4.  <span data-ttu-id="53f17-210">**ルール コレクション**ウィンドウで、**拡張機能の追加**をクリックし、次のフィールド値を設定します。</span><span class="sxs-lookup"><span data-stu-id="53f17-210">In the **Rule collection** pane, click **Add expression**, and set the following field values:</span></span>
-    1.  <span data-ttu-id="53f17-211">**ルール名**フィールドに、「ステータス」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-211">In the **Rule name** field, type Status.</span></span>
-    2.  <span data-ttu-id="53f17-212">**ルールの説明**フィールドに、アーカイブ用とみなされるステータスの値を入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-212">In the **Rule description** field, type Status values considered for archival.</span></span>
-
-5.  <span data-ttu-id="53f17-213">**条件付き情報**ウィンドウで、次のフィールド値を設定します。</span><span class="sxs-lookup"><span data-stu-id="53f17-213">In the **Conditional information** pane, set the following field values:</span></span>
-    1.  <span data-ttu-id="53f17-214">**テーブル名**リストで、**SalesTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-214">In the **Table name** list, select **SalesTable**.</span></span>
-    2.  <span data-ttu-id="53f17-215">**フィールド名**リストで、**SalesStatus** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-215">In the **Field name** list, select **SalesStatus**.</span></span>
-    3.  <span data-ttu-id="53f17-216">**条件**リストで、**In** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-216">In the **Condition** list, select **In**.</span></span>
-    4.  <span data-ttu-id="53f17-217">**値**フィールドで、リストから**キャンセル済および請求済**を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-217">In the **Value** field, select **Cancelled and Invoiced** from the list.</span></span>
-
-6.  <span data-ttu-id="53f17-218">**追加**をクリックし、ルールが**ルール コレクション** ウィンドウのデータグリッドに追加されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-218">Click **Add**, and verify that the rule is added to the data grid in the **Rule collection** pane.</span></span>
-7.  <span data-ttu-id="53f17-219">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-219">Click **Save**.</span></span> <span data-ttu-id="53f17-220">**ルール** ダイアログ ボックスで **OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-220">In the **Rules** dialog box, click **OK** to continue.</span></span>
-8.  <span data-ttu-id="53f17-221">**閉じる**をクリックしてウィンドウを閉じ、アーカイブ オブジェクトに戻ります。</span><span class="sxs-lookup"><span data-stu-id="53f17-221">Click **Close** to close the window and return to the Archive Object.</span></span>
-
-## <a name="add-relations"></a><span data-ttu-id="53f17-222">リレーションの追加</span><span class="sxs-lookup"><span data-stu-id="53f17-222">Add relations</span></span>
-<span data-ttu-id="53f17-223">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクトに手動でテーブルを追加し、関係を確立できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-223">This command lets you manually add a table to the Purge Object or Archive Object, and establish a relationship.</span></span> <span data-ttu-id="53f17-224">Microsoft Dynamics AX アプリケーションにアプリケーション オブジェクト ツリー (AOT) のメタデータ リレーションシップなしのカスタム テーブルがある場合、リレーションシップの手動の追加が必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-224">You may have to manually add a relationship if you have custom tables in the Microsoft Dynamics AX application without a metadata relationship in the Application Object Tree (AOT).</span></span> <span data-ttu-id="53f17-225">リレーションを追加するには、リレーションシップ ツリー ダイアグラムでテーブルをクリックして選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-225">To add a relation, select a table by clicking it in the relationship tree diagram.</span></span> <span data-ttu-id="53f17-226">選択したテーブルが親テーブルになり、追加するテーブルがリレーションシップの子になります。</span><span class="sxs-lookup"><span data-stu-id="53f17-226">The table you select becomes the parent table, and the table you add becomes the child in the relationship.</span></span> <span data-ttu-id="53f17-227">ツールバーで、**関係を追加**をクリックして、**関係を追加**ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-227">On the toolbar, click **Add relations** to open the **Add relations** window.</span></span>
-### <a name="navigation-of-the-add-relations-window"></a><span data-ttu-id="53f17-228">関係の追加ウィンドウのナビゲーション</span><span class="sxs-lookup"><span data-stu-id="53f17-228">Navigation of the Add relations window</span></span>
-
-<span data-ttu-id="53f17-229">次のテーブルで、**関係の追加** ウィンドウのコントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="53f17-229">The following tables provide descriptions for the controls in the **Add relations** window.</span></span>
-#### <a name="panes"></a><span data-ttu-id="53f17-230">ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-230">Panes</span></span>
-
-| <span data-ttu-id="53f17-231">ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-231">Pane</span></span>                    | <span data-ttu-id="53f17-232">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-232">Description</span></span>                                                                                                                                                                                                                        |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-233">**関係**</span><span class="sxs-lookup"><span data-stu-id="53f17-233">**Relationships**</span></span>       | <span data-ttu-id="53f17-234">削除オブジェクトまたはアーカイブ オブジェクトで作成した関係の一覧を提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-234">Provides a list of relations that you created in the Purge Object or Archive Object.</span></span> <span data-ttu-id="53f17-235">また、新しい関係を作成するコマンドや、既存の関係を削除するコマンドも提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-235">Also provides commands to create a new relation or delete an existing relation.</span></span>                                                               |
-| <span data-ttu-id="53f17-236">**関係のコンフィギュレーション**</span><span class="sxs-lookup"><span data-stu-id="53f17-236">**Configure relations**</span></span> | <span data-ttu-id="53f17-237">関係の名前、説明、および条件を入力または変更する領域を提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-237">Provides an area to enter or modify the relation name, description, and conditions.</span></span> <span data-ttu-id="53f17-238">また、**リレーションシップ**ウィンドウの一覧にリレーションの追加、一覧内での更新や、追加または更新アクションをキャンセルしたりするためのコマンドも用意されています。</span><span class="sxs-lookup"><span data-stu-id="53f17-238">Also provides commands to add the relation to, or update it in, the list in the **Relationships** pane, or to cancel the add or update action.</span></span> |
-
-#### 
-
-#### <a name="buttons"></a><span data-ttu-id="53f17-239">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-239">Buttons</span></span>
-
-| <span data-ttu-id="53f17-240">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-240">Button</span></span>    | <span data-ttu-id="53f17-241">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-241">Description</span></span>                                                                                                                                                 |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-242">**保存**</span><span class="sxs-lookup"><span data-stu-id="53f17-242">**Save**</span></span>  | <span data-ttu-id="53f17-243">**関係** ウィンドウの一覧に対して行った変更をデータベースに保存します。</span><span class="sxs-lookup"><span data-stu-id="53f17-243">Save the changes that you made to the list in the **Relationships** pane to the database.</span></span>                                                                   |
-| <span data-ttu-id="53f17-244">**閉じる**</span><span class="sxs-lookup"><span data-stu-id="53f17-244">**Close**</span></span> | <span data-ttu-id="53f17-245">**関係の追加**ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53f17-245">Close the **Add relations** window.</span></span> <span data-ttu-id="53f17-246">変更を保存せずにウィンドウを閉じようとする場合、閉じることを確認するメッセージまたは変更の保存を求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-246">If you try to close the window without saving your changes, you are prompted to confirm the close or save your changes.</span></span> |
-
-#### 
-
-#### <a name="relationships-pane"></a><span data-ttu-id="53f17-247">リレーションシップ ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-247">Relationships pane</span></span>
-
-| <span data-ttu-id="53f17-248">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-248">Button</span></span>           | <span data-ttu-id="53f17-249">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-249">Description</span></span>                                                                                                                                               |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-250">**新しい関係**</span><span class="sxs-lookup"><span data-stu-id="53f17-250">**New relation**</span></span> | <span data-ttu-id="53f17-251">新しいリレーションを作成するか、既存のリレーションの新しい条件を作成します。</span><span class="sxs-lookup"><span data-stu-id="53f17-251">Create a new relation, or a new condition for an existing relation.</span></span>                                                                                       |
-| <span data-ttu-id="53f17-252">**削除**</span><span class="sxs-lookup"><span data-stu-id="53f17-252">**Delete**</span></span>       | <span data-ttu-id="53f17-253">選択した関係または条件を削除します。</span><span class="sxs-lookup"><span data-stu-id="53f17-253">Delete the selected relation or condition.</span></span> <span data-ttu-id="53f17-254">追加の関係を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="53f17-254">You cannot modify added relations.</span></span> <span data-ttu-id="53f17-255">関係を削除してから、変更を加えるために、関係を再度追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-255">You must delete the relations, and then add them again to make any changes.</span></span> |
-
-#### 
-
-#### <a name="configure-relations-pane"></a><span data-ttu-id="53f17-256">関係ウィンドウのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="53f17-256">Configure relations pane</span></span>
-
-| <span data-ttu-id="53f17-257">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-257">Button</span></span>     | <span data-ttu-id="53f17-258">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-258">Description</span></span>                                                                          |
-|------------|--------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-259">**追加**</span><span class="sxs-lookup"><span data-stu-id="53f17-259">**Add**</span></span>    | <span data-ttu-id="53f17-260">**リレーションシップ** ウィンドウのリストに新しい関係または条件を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-260">Add a new relation or condition to the list in the **Relationships** pane.</span></span>           |
-| <span data-ttu-id="53f17-261">**更新**</span><span class="sxs-lookup"><span data-stu-id="53f17-261">**Update**</span></span> | <span data-ttu-id="53f17-262">**リレーションシップ** ウィンドウの一覧で選択したリレーションまたは条件を更新します。</span><span class="sxs-lookup"><span data-stu-id="53f17-262">Update the selected relation or condition in the list in the **Relationships** pane.</span></span> |
-| <span data-ttu-id="53f17-263">**キャンセル**</span><span class="sxs-lookup"><span data-stu-id="53f17-263">**Cancel**</span></span> | <span data-ttu-id="53f17-264">追加または更新アクションをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="53f17-264">Cancel an add or update action.</span></span>                                                      |
-
-#### 
-
-#### <a name="fields"></a><span data-ttu-id="53f17-265">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-265">Fields</span></span>
-
-| <span data-ttu-id="53f17-266">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-266">Field</span></span>                       | <span data-ttu-id="53f17-267">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-267">Description</span></span>                                                                                                                                                                                                                                           |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-268">**子関係を含める**</span><span class="sxs-lookup"><span data-stu-id="53f17-268">**Include child relations**</span></span> | <span data-ttu-id="53f17-269">関係ツリーに追加する関係のすべての子エンティティを追加する必要がある場合は、このフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-269">Select this field if you have to add all the child entities of the relation that you are adding to the relationship tree.</span></span> <span data-ttu-id="53f17-270">このフィールドをクリアにすると、追加するテーブルの子エンティティは削除オブジェクトまたはアーカイブ オブジェクトに追加されません。</span><span class="sxs-lookup"><span data-stu-id="53f17-270">If you clear the field, the child entities of the table you are adding are not added to the Purge Object or Archive Object.</span></span> |
-
-#### 
-
-#### <a name="relationships-pane"></a><span data-ttu-id="53f17-271">リレーションシップ ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="53f17-271">Relationships pane</span></span>
-
-| <span data-ttu-id="53f17-272">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-272">Field</span></span>                | <span data-ttu-id="53f17-273">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-273">Description</span></span>                                                                                                                                                            |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-274">**RelationsDefined**</span><span class="sxs-lookup"><span data-stu-id="53f17-274">**RelationsDefined**</span></span> | <span data-ttu-id="53f17-275">削除オブジェクトまたはアーカイブ オブジェクトの関係、および各関係の条件の一覧。</span><span class="sxs-lookup"><span data-stu-id="53f17-275">A list of the relations in the Purge Object or Archive Object, and the conditions for each relation.</span></span> <span data-ttu-id="53f17-276">このフィールドは、リレーションを追加するときにリスト内で使用可能になります。</span><span class="sxs-lookup"><span data-stu-id="53f17-276">This field becomes available in the list when you add a relation.</span></span> |
-
-#### 
-
-#### <a name="configure-relations-pane-table-relations-area"></a><span data-ttu-id="53f17-277">関係ウィンドウのコンフィギュレーション、テーブル リレーション領域</span><span class="sxs-lookup"><span data-stu-id="53f17-277">Configure relations pane, Table relations area</span></span>
-
-| <span data-ttu-id="53f17-278">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-278">Field</span></span>                  | <span data-ttu-id="53f17-279">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-279">Description</span></span>                                                                                                                                                        |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-280">**関係名**</span><span class="sxs-lookup"><span data-stu-id="53f17-280">**Relation name**</span></span>      | <span data-ttu-id="53f17-281">リレーションの名前。</span><span class="sxs-lookup"><span data-stu-id="53f17-281">The name of the relation.</span></span> <span data-ttu-id="53f17-282">続行するリレーション名を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-282">You must enter a relation name to continue.</span></span>                                                                                              |
-| <span data-ttu-id="53f17-283">**テーブル名**</span><span class="sxs-lookup"><span data-stu-id="53f17-283">**Table name**</span></span>         | <span data-ttu-id="53f17-284">削除オブジェクトまたはアーカイブ オブジェクトで選択したテーブル。</span><span class="sxs-lookup"><span data-stu-id="53f17-284">The table that you selected in the Purge Object or Archive Object.</span></span> <span data-ttu-id="53f17-285">ウィンドウのこの値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="53f17-285">You can't change this value in the window.</span></span> <span data-ttu-id="53f17-286">このテーブルは、リレーションシップ内の親エンティティです。</span><span class="sxs-lookup"><span data-stu-id="53f17-286">This table is the parent entity in the relationship.</span></span> |
-| <span data-ttu-id="53f17-287">**フィールド名**</span><span class="sxs-lookup"><span data-stu-id="53f17-287">**Field name**</span></span>         | <span data-ttu-id="53f17-288">関係で使用するフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-288">Select the field that you want to use in the relationship.</span></span>                                                                                                         |
-| <span data-ttu-id="53f17-289">**条件**</span><span class="sxs-lookup"><span data-stu-id="53f17-289">**Condition**</span></span>          | <span data-ttu-id="53f17-290">既定では、条件は **=** です。</span><span class="sxs-lookup"><span data-stu-id="53f17-290">By default, the condition is **=**.</span></span> <span data-ttu-id="53f17-291">条件は変更できません。</span><span class="sxs-lookup"><span data-stu-id="53f17-291">You cannot change the condition.</span></span>                                                                                               |
-| <span data-ttu-id="53f17-292">**関連テーブル名**</span><span class="sxs-lookup"><span data-stu-id="53f17-292">**Related table name**</span></span> | <span data-ttu-id="53f17-293">一覧から追加するテーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-293">Select the table that you are adding from the list.</span></span> <span data-ttu-id="53f17-294">このテーブルは、リレーションシップ内の子エンティティです。</span><span class="sxs-lookup"><span data-stu-id="53f17-294">This table is the child entity in the relationship.</span></span>                                                            |
-| <span data-ttu-id="53f17-295">**関連フィールド名**</span><span class="sxs-lookup"><span data-stu-id="53f17-295">**Related field name**</span></span> | <span data-ttu-id="53f17-296">関係で使用するフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-296">Select the field that you want to use in the relationship.</span></span>                                                                                                         |
-
-#### 
-
-#### <a name="configure-relations-pane-conditional-information-area"></a><span data-ttu-id="53f17-297">関係ウィンドウのコンフィギュレーション、条件付情報エリア</span><span class="sxs-lookup"><span data-stu-id="53f17-297">Configure relations pane, Conditional information area</span></span>
-
-| <span data-ttu-id="53f17-298">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-298">Field</span></span>          | <span data-ttu-id="53f17-299">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-299">Description</span></span>                                                                                        |
-|----------------|----------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-300">**テーブル名**</span><span class="sxs-lookup"><span data-stu-id="53f17-300">**Table name**</span></span> | <span data-ttu-id="53f17-301">一覧からテーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-301">Select a table from the list.</span></span> <span data-ttu-id="53f17-302">リレーションシップから親または子のいずれかを選択することができます。</span><span class="sxs-lookup"><span data-stu-id="53f17-302">You can select either the parent or the child from the relationship.</span></span> |
-| <span data-ttu-id="53f17-303">**フィールド名**</span><span class="sxs-lookup"><span data-stu-id="53f17-303">**Field name**</span></span> | <span data-ttu-id="53f17-304">条件で使用するフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-304">Select the field that you want to use in the condition.</span></span>                                            |
-| <span data-ttu-id="53f17-305">**条件**</span><span class="sxs-lookup"><span data-stu-id="53f17-305">**Condition**</span></span>  | <span data-ttu-id="53f17-306">使用する条件を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-306">Select the condition that you want to use.</span></span>                                                         |
-| <span data-ttu-id="53f17-307">**値**</span><span class="sxs-lookup"><span data-stu-id="53f17-307">**Value**</span></span>      | <span data-ttu-id="53f17-308">条件の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-308">Enter the value for the condition.</span></span>                                                                 |
-
-### 
-
-### <a name="walkthrough-add-a-relation-in-a-purge-object"></a><span data-ttu-id="53f17-309">チュートリアル: 削除オブジェクトへのリレーションの追加</span><span class="sxs-lookup"><span data-stu-id="53f17-309">Walkthrough: Add a relation in a Purge Object</span></span>
-
-<span data-ttu-id="53f17-310">このセクションでは、削除オブジェクトにリレーションを追加するためのチュートリアルを提供します。</span><span class="sxs-lookup"><span data-stu-id="53f17-310">This section provides a walkthrough to add a relation in a Purge Object.</span></span>
-1.  <span data-ttu-id="53f17-311">**構成** &gt; **削除テンプレート/削除オブジェクト**とクリックして、ドロップダウン リストから **ProjJournalTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-311">Click **Configure** &gt; **Purge templates/Purge Objects**, and then select **ProjJournalTable** from the drop-down list.</span></span>
-2.  <span data-ttu-id="53f17-312">削除オブジェクトで、レベル 0 の **ProjJournalTable** テーブルをクリックしてから、ツール バーで**関係の追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-312">In the Purge Object, click the **ProjJournalTable** table in level 0, and then click **Add relations** on the toolbar.</span></span>
-3.  <span data-ttu-id="53f17-313">**関係の追加**ダイアログ ボックスで、**新しい関係**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-313">In the **Add relations** dialog box, click **New relation**.</span></span>
-4.  <span data-ttu-id="53f17-314">**関係名**フィールドに、関係に対する有効な名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-314">In the **Relation name** field, enter a valid name for the relation.</span></span>
-5.  <span data-ttu-id="53f17-315">**テーブル リレーション**領域で、これらの手順に従って関係を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-315">In the **Table relations** area, follow these steps to add the relation:</span></span>
-    1.  <span data-ttu-id="53f17-316">**フィールド名**の一覧から、**JournalId** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-316">From **Field name** list, select **JournalId**.</span></span>
-    2.  <span data-ttu-id="53f17-317">**関連テーブル**の名前リストから **JournalError** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-317">From the **Related table** name list, select **JournalError**.</span></span>
-    3.  <span data-ttu-id="53f17-318">**関連フィールド名**リストから **JournalId** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-318">From the **Related field name** list, select **JournalId**.</span></span>
-
-6.  <span data-ttu-id="53f17-319">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-319">Click **Add**.</span></span>
-7.  <span data-ttu-id="53f17-320">**関係の追加**ダイアログ ボックスで、**新しい関係**をクリックして、今追加した関係に対する条件を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-320">In the **Add Relations** dialog box, click **New relation** to add a condition to the relation you just added.</span></span>
-8.  <span data-ttu-id="53f17-321">**条件付き情報**領域で、これらの手順に従って条件を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-321">In the **Conditional information** area, follow these steps to add a condition:</span></span>
-    1.  <span data-ttu-id="53f17-322">**テーブル名**リストから条件で使用するテーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-322">From the **Table name** list, select a table that you want to use in the condition.</span></span>
-    2.  <span data-ttu-id="53f17-323">**フィールド名**リストから条件で使用するフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-323">From the **Field name** list, select the field that you want to use in the condition.</span></span>
-    3.  <span data-ttu-id="53f17-324">**条件**リストから、条件を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-324">From the **Condition** list, select the condition.</span></span>
-    4.  <span data-ttu-id="53f17-325">**値**リストから値を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-325">From the **Value** list, select the value.</span></span>
-
-9.  <span data-ttu-id="53f17-326">条件をデータ グリッドに追加するには、**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-326">Click **Add** to add the condition to the data grid.</span></span>
-10. <span data-ttu-id="53f17-327">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-327">Click **Save**.</span></span> <span data-ttu-id="53f17-328">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-328">Click **OK** to continue.</span></span>
-11. <span data-ttu-id="53f17-329">削除オブジェクトで、追加した JournalError テーブルがレベル 1 の子エンティティで表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-329">In the Purge Object, verify that the JournalError table you just added is shown as a child entity in level 1.</span></span>
-12. <span data-ttu-id="53f17-330">削除オブジェクトを保存します。</span><span class="sxs-lookup"><span data-stu-id="53f17-330">Save the Purge Object.</span></span>
-
-### <a name="walkthrough-add-a-relation-in-an-archive-object"></a><span data-ttu-id="53f17-331">チュートリアル: アーカイブ オブジェクトへのリレーションの追加</span><span class="sxs-lookup"><span data-stu-id="53f17-331">Walkthrough: Add a relation in an Archive Object</span></span>
-
-1.  <span data-ttu-id="53f17-332">**構成** &gt; **アーカイブ テンプレート/アーカイブ オブジェクト**とクリックして、ドロップダウン リストから **SalesTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-332">Click **Configure** &gt; **Archive templates/Archive Objects**, and then select **SalesTable** from the drop-down list.</span></span>
-2.  <span data-ttu-id="53f17-333">アーカイブ オブジェクトで、レベル 1 の **DocuRef** テーブルをクリックしてから、ツール バーで**関係の追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-333">In the Archive Object, click the **DocuRef** table in level 1, and then click **Add relations** on the toolbar.</span></span>
-3.  <span data-ttu-id="53f17-334">**関係の追加**ダイアログ ボックスで、**新しい関係**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-334">In the **Add relations** dialog box, click **New relation**.</span></span>
-4.  <span data-ttu-id="53f17-335">**関係名**フィールドに、関係に対する有効な名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-335">In the **Relation name** field, enter a valid name for the relation.</span></span>
-5.  <span data-ttu-id="53f17-336">**テーブル リレーション**領域で、これらの手順に従って関係を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-336">In the **Table relations** area, follow these steps to add the relation.</span></span>
-    1.  <span data-ttu-id="53f17-337">**フィールド名**リストから **ValueRecId** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-337">From the **Field name** list, select **ValueRecId**.</span></span>
-    2.  <span data-ttu-id="53f17-338">**関連テーブル名**リストから **DocuValue** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-338">From the **Related table name** list, select **DocuValue**.</span></span>
-    3.  <span data-ttu-id="53f17-339">**関連フィールド名**リストから **RecId** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-339">From the **Related field name** list, select **RecId**.</span></span>
-    4.  <span data-ttu-id="53f17-340">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-340">Click **Add**.</span></span>
-
-6.  <span data-ttu-id="53f17-341">**関係の追加**ダイアログ ボックスで、**新しい関係**をクリックして、今追加した関係に対する条件を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-341">In the **Add Relations** dialog box, click **New relation** to add a condition to the relation you just added.</span></span>
-7.  <span data-ttu-id="53f17-342">条件付き**情報**領域で、これらの手順に従って条件を追加します。</span><span class="sxs-lookup"><span data-stu-id="53f17-342">In the Conditional **information** area, follow these steps to add a condition:</span></span>
-    1.  <span data-ttu-id="53f17-343">**テーブル名**リストから条件で使用するテーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-343">From the **Table name** list, select a table that you want to use in the condition.</span></span>
-    2.  <span data-ttu-id="53f17-344">**フィールド名**リストから条件で使用するフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-344">From the **Field name** list, select the field that you want to use in the condition.</span></span>
-    3.  <span data-ttu-id="53f17-345">**条件**リストから、条件を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-345">From the **Condition** list, select the condition.</span></span>
-    4.  <span data-ttu-id="53f17-346">**値**リストから値を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-346">From the **Value** list, select the value.</span></span>
-    5.  <span data-ttu-id="53f17-347">条件をデータ グリッドに追加するには、**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-347">Click **Add** to add the condition to the data grid.</span></span>
-
-8.  <span data-ttu-id="53f17-348">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-348">Click **Save**.</span></span> <span data-ttu-id="53f17-349">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-349">Click **OK** to continue.</span></span>
-9.  <span data-ttu-id="53f17-350">アーカイブ オブジェクトで、追加した **DocuValue** テーブルがレベル 1 の子エンティティで表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-350">In the Archive Object, verify that the **DocuValue** table you just added is shown as a child entity in level 1.</span></span>
-10. <span data-ttu-id="53f17-351">アーカイブ オブジェクトを保存します。</span><span class="sxs-lookup"><span data-stu-id="53f17-351">Save the Archive Object.</span></span>
-
-## <a name="export"></a><span data-ttu-id="53f17-352">輸出</span><span class="sxs-lookup"><span data-stu-id="53f17-352">Export</span></span>
-<span data-ttu-id="53f17-353">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクトを XML 形式のファイルにエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="53f17-353">This command lets you export a Purge Object or an Archive Object to a file in XML format.</span></span> <span data-ttu-id="53f17-354">削除オブジェクトをエクスポートするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="53f17-354">Follow these steps to export a Purge Object:</span></span>
-1.  <span data-ttu-id="53f17-355">**構成** &gt; **削除テンプレート/削除オブジェクト**とクリックして、リストから **PurchParmTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-355">Click **Configure** &gt; **Purge template/Purge Objects**, and then select **PurchParmTable** from the list.</span></span>
-2.  <span data-ttu-id="53f17-356">ツールで、**エクスポート**をクリックして、**エクスポート オブジェクト**ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-356">On the toolbar, click **Export** to open the **Export Object** dialog box.</span></span>
-3.  <span data-ttu-id="53f17-357">既定では、ファイル名はドライバー テーブルで、この場合は **PurchParmTable** です。</span><span class="sxs-lookup"><span data-stu-id="53f17-357">By default, the file name is the driver table, which is **PurchParmTable** in this case.</span></span> <span data-ttu-id="53f17-358">場所に移動してから、**保存**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-358">Navigate to a location, and then click **Save**.</span></span> <span data-ttu-id="53f17-359">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-359">Click **OK** to continue.</span></span>
-4.  <span data-ttu-id="53f17-360">保存されたファイルを検索し、Web ブラウザーで開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-360">Locate the saved file, and open it in a Web browser.</span></span> <span data-ttu-id="53f17-361">スキーマと、削除オブジェクトのグラフィカル表示とのその関係を理解するファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-361">Review the file to understand the schema and its relationship to the graphical representation of the Purge Object.</span></span> <span data-ttu-id="53f17-362">**注記:** 同様の手順でアーカイブ オブジェクトをエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="53f17-362">**Note:** You can take similar steps to export an Archive Object.</span></span> <span data-ttu-id="53f17-363">**注記:** ツールバーの**インポート**コマンドは、**エクスポート**コマンドの前に表示されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-363">**Note:** On the toolbar, the **Import** command appears before the **Export** command.</span></span>
-
-## <a name="import"></a><span data-ttu-id="53f17-364">インポート元</span><span class="sxs-lookup"><span data-stu-id="53f17-364">Import</span></span>
-<span data-ttu-id="53f17-365">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクトを XML 形式でインポートできます。</span><span class="sxs-lookup"><span data-stu-id="53f17-365">This command lets you import a Purge Object or an Archive Object in XML format.</span></span> <span data-ttu-id="53f17-366">次のチュートリアルでは、変更されたパージ オブジェクトをエクスポート時の状態に復帰させる実践的な指示が提供されています。</span><span class="sxs-lookup"><span data-stu-id="53f17-366">The following walkthrough provides hands-on instruction to reinstate a modified Purge Object to the state it was in at the time of export:</span></span>
-1.  <span data-ttu-id="53f17-367">**構成** &gt; **削除テンプレート/削除オブジェクト**とクリックして、ドロップダウン リストから **PurchParmTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-367">Click **Configure** &gt; **Purge template/Purge Objects**, and then select **PurchParmTable** from the drop-down list.</span></span>
-2.  <span data-ttu-id="53f17-368">**詳細** フィルターを使用して、**テーブル削除** ウィンドウでデータ グリッドをフィルター処理し、レベル 1 のテーブルのみを表示します。</span><span class="sxs-lookup"><span data-stu-id="53f17-368">Use the **Advanced** filter to filter the data grid in the **Remove table** pane so that it shows only tables in level 1.</span></span>
-3.  <span data-ttu-id="53f17-369">データ グリッドですべてのテーブルを選択し、**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-369">Select all tables in the data grid, and then click **Remove**.</span></span>
-4.  <span data-ttu-id="53f17-370">リレーションシップ ツリーに **PurchParmTable** のみが含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-370">Confirm that the relationship tree contains only **PurchParmTable**.</span></span>
-5.  <span data-ttu-id="53f17-371">ツール バーで、**保存**をクリックして削除オブジェクトを保存します。</span><span class="sxs-lookup"><span data-stu-id="53f17-371">On the toolbar, click **Save** to save the Purge Object.</span></span> <span data-ttu-id="53f17-372">プロンプトに応答し、オブジェクトを上書きします。</span><span class="sxs-lookup"><span data-stu-id="53f17-372">Respond to the prompt, and overwrite the object.</span></span>
-6.  <span data-ttu-id="53f17-373">ツール バーで、**インポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-373">On the toolbar, click **Import**.</span></span> <span data-ttu-id="53f17-374">**有効な XML ファイルを選択**ダイアログ ボックスで、前のセクションからファイルの場所に移動してから**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-374">In the **Select a valid XML file** dialog box, navigate to the location of the file from the previous section, and then click **Open**.</span></span> <span data-ttu-id="53f17-375">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-375">Click **OK** to continue.</span></span>
-7.  <span data-ttu-id="53f17-376">削除オブジェクトは、前のセクションでエクスポートしたときと同じ状態になりました。</span><span class="sxs-lookup"><span data-stu-id="53f17-376">The Purge Object is now in the same state it was in when you exported it in the previous section.</span></span> <span data-ttu-id="53f17-377">**注記:** 同様の手順でアーカイブ オブジェクトをインポートできます。</span><span class="sxs-lookup"><span data-stu-id="53f17-377">**Note:** You can take similar steps to import an Archive Object.</span></span>
-
-## <a name="save"></a><span data-ttu-id="53f17-378">保存</span><span class="sxs-lookup"><span data-stu-id="53f17-378">Save</span></span>
-<span data-ttu-id="53f17-379">このコマンドを使用すると、削除オブジェクトを保存したり、新しいバージョンのアーカイブ オブジェクトを保存できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-379">This command lets you save a Purge Object, or save a newer version of an Archive Object.</span></span> <span data-ttu-id="53f17-380">削除タスクで使用する前に削除オブジェクトとして削除テンプレートを保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-380">You must save a purge template as a Purge Object before you can use it in a purge task.</span></span> <span data-ttu-id="53f17-381">アーカイブ タスクで使用する前に、アーカイブ オブジェクトとしてアーカイブ テンプレートを保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-381">You must save an archive template as an Archive Object before you can use it in an archive task.</span></span> <span data-ttu-id="53f17-382">アーカイブ機能では、既存のアーカイブ オブジェクトを上書きすることはできません。</span><span class="sxs-lookup"><span data-stu-id="53f17-382">The archive function does not let you overwrite an existing Archive Object.</span></span> <span data-ttu-id="53f17-383">アーカイブ テンプレートまたはアーカイブ オブジェクトを保存するときは、アーカイブ オブジェクトの新しいバージョンをかならず作成してください。</span><span class="sxs-lookup"><span data-stu-id="53f17-383">When you save an archive template or an Archive Object, you always create a new version of the Archive Object.</span></span> <span data-ttu-id="53f17-384">アーカイブ タスクは常に、保存しているアーカイブ オブジェクトの最新のバージョンを使用します。</span><span class="sxs-lookup"><span data-stu-id="53f17-384">The archive task always uses the most recent version of the Archive Object you save.</span></span> <span data-ttu-id="53f17-385">異なるバージョンのアーカイブ オブジェクトの作業については、このトピックの後半で説明されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-385">Working with different versions of Archive Objects is covered in a later section of this topic.</span></span>
-
-## <a name="show-versions"></a><span data-ttu-id="53f17-386">バージョンの表示</span><span class="sxs-lookup"><span data-stu-id="53f17-386">Show versions</span></span>
-<span data-ttu-id="53f17-387">このコマンドを使用すると、さまざまなバージョンのアーカイブ オブジェクトで作業できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-387">This command lets you work with different versions of an Archive Object.</span></span> <span data-ttu-id="53f17-388">この機能を理解するのにには、次のチュートリアルを使用します。</span><span class="sxs-lookup"><span data-stu-id="53f17-388">Use the following walkthrough to understand this functionality:</span></span>
-1.  <span data-ttu-id="53f17-389">**構成** &gt; **アーカイブ テンプレート/アーカイブ オブジェクト** &gt; **BankDeposit** とクリックして **BankDeposit** アーカイブ オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-389">Click **Configure** &gt; **Archive templates/Archive Object** &gt; **BankDeposit** to open the **BankDeposit** Archive Object.</span></span>
-2.  <span data-ttu-id="53f17-390">このアーカイブ オブジェクトに含まれるリレーションシップの階層構造、テーブル、およびルールが、Microsoft Dynamics AX の実装に適用されることを確認するアーカイブ オブジェクトを確認します。</span><span class="sxs-lookup"><span data-stu-id="53f17-390">Review the Archive Object to make sure that the relationship hierarchy, tables, and rules that are contained in this Archive Object apply to your Microsoft Dynamics AX implementation.</span></span>
-3.  <span data-ttu-id="53f17-391">ツール バーの **保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-391">On the toolbar, click **Save**.</span></span> <span data-ttu-id="53f17-392">**名前を付けて保存**ダイアログ ボックスで、アーカイブ オブジェクトの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="53f17-392">In the **Save as** dialog box, enter a name for the Archive Object.</span></span> <span data-ttu-id="53f17-393">このバージョンの Archive Object に、新しく名前を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-393">You must provide a new name for this version of the Archive Object.</span></span> <span data-ttu-id="53f17-394">入力した名前が既にアーカイブ オブジェクトの別のバージョンで使用されている場合、エラー メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-394">If the name that you provide is already used by a different version of the Archive Object, you receive an error message.</span></span> <span data-ttu-id="53f17-395">BankDeposit\_1 と入力し、**保存**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-395">Enter BankDeposit\_1, and then click **Save**.</span></span>
-4.  <span data-ttu-id="53f17-396">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="53f17-396">Click **OK** to continue.</span></span>
-5.  <span data-ttu-id="53f17-397">ツール バーで、**バージョンの表示**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53f17-397">On the toolbar, click **Show versions**.</span></span> <span data-ttu-id="53f17-398">**バージョン履歴**ダイアログ ボックスで、**BankDeposit** を**アーカイブ テンプレート** リストから選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-398">In the **Version history** dialog box, select **BankDeposit** from the **Archive template** list.</span></span> <span data-ttu-id="53f17-399">アーカイブ オブジェクトの一覧には、保存したアーカイブ オブジェクトのさまざまなバージョンが含まれています。</span><span class="sxs-lookup"><span data-stu-id="53f17-399">The Archive Object list contains the different versions of the Archive Object you saved.</span></span> <span data-ttu-id="53f17-400">リストには最新のバージョンが一番上に表示されているので、リストの一番上に BankDeposit\_1 が表示されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-400">The list contains the most recent version at the top, and therefore you see BankDeposit\_1 at the top of the list.</span></span>
-6.  <span data-ttu-id="53f17-401">すべてのバージョンを選択し、**アーカイブ オブジェクトの一覧に表示** をクリックし、アーカイブ オブジェクトのバージョンを操作します。</span><span class="sxs-lookup"><span data-stu-id="53f17-401">Select any version, and then click **Show in the Archive Object list** to work with that version of the Archive Object.</span></span> <span data-ttu-id="53f17-402">このバージョンを変更して保存すると、保存されたバージョンは最新バージョンになり、実行時にアーカイブ タスクによって使用されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-402">If you make any changes to this version and save it, the saved version becomes the most recent version and is used by the archive task at run time.</span></span>
-7.  <span data-ttu-id="53f17-403">**閉じる**をクリックして、**バージョン履歴**ダイアログ ボックスを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53f17-403">Click **Close** to close the **Version history** dialog box.</span></span>
-8.  <span data-ttu-id="53f17-404">ツールバーで、**アーカイブ テンプレート/アーカイブ オブジェクト** &gt; **BankDeposit** をクリックして開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-404">On the toolbar, click **Archive templates/Archive Object** &gt; **BankDeposit** to open the .</span></span> <span data-ttu-id="53f17-405">**注記:** データ管理フレームワークは、保存したアーカイブ オブジェクトの最新バージョンを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-405">**Note:** The Data Management Framework opens the most recent version of the Archive Object that you saved.</span></span> <span data-ttu-id="53f17-406">アーカイブ タスクは実行時に、アーカイブ オブジェクトの最新のバージョンを使用します。</span><span class="sxs-lookup"><span data-stu-id="53f17-406">The archive task uses the most recent version of the Archive Object at run time.</span></span>
-
-## <a name="validate-all"></a><span data-ttu-id="53f17-407">すべて検証</span><span class="sxs-lookup"><span data-stu-id="53f17-407">Validate all</span></span>
-<span data-ttu-id="53f17-408">このコマンドを使用すると、すべてのテンプレートとオブジェクトをプログラムで検証できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-408">This command lets you programmatically validate all templates and objects.</span></span> <span data-ttu-id="53f17-409">Data Management Framework に含まれている削除テンプレートとアーカイブ テンプレートは、標準の Microsoft Dynamics AX アプリケーションの機能検証に基づいて作成されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-409">The purge templates and archive templates that are included with the Data Management Framework are created based on functional validation of a standard Microsoft Dynamics AX application.</span></span> <span data-ttu-id="53f17-410">インストールに、同じライセンス、コンフィギュレーション、およびセキュリティ キーが含まれていないことがあります。</span><span class="sxs-lookup"><span data-stu-id="53f17-410">Your installation may not have the same license, configuration, and security keys.</span></span> <span data-ttu-id="53f17-411">結果として、アーカイブ オブジェクトまたは削除オブジェクトとして使用する前に、既定テンプレートを実装に対して検証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-411">As a result, you have to validate the default templates against your implementation before you can use them as Archive Objects or Purge Objects.</span></span> <span data-ttu-id="53f17-412">このコマンドを使用すると、すべての削除テンプレートまたはすべてのアーカイブ テンプレートをシングル クリックでプログラムで検証できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-412">This command provides a programmatic way to validate all purge templates or all archive templates with a single click.</span></span> <span data-ttu-id="53f17-413">この機能は、まだ検証されていないテンプレートでのみ動作し、以前に検証されたテンプレートは無視されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-413">This functionality only works with templates that are not validated yet, and ignores any previously validated templates.</span></span> <span data-ttu-id="53f17-414">妥当性確認のプロセス中に、Data Management Framework はこれらの特性を持つすべてのテンプレートとオブジェクトからテーブルを削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="53f17-414">During the validation process, the Data Management Framework optionally removes tables from all templates and objects that have these characteristics:</span></span>
--   <span data-ttu-id="53f17-415">Microsoft Dynamics AX 実装の実稼働データベースにはありません。</span><span class="sxs-lookup"><span data-stu-id="53f17-415">They are not in the production database of your Microsoft Dynamics AX implementation.</span></span>
--   <span data-ttu-id="53f17-416">実稼働データベースに無効な構成キーがあるフィールドに、リレーションシップまたはルールがあります。</span><span class="sxs-lookup"><span data-stu-id="53f17-416">They have a relationship or a rule on a field that has a disabled configuration key in the production database.</span></span>
--   <span data-ttu-id="53f17-417">0 (ゼロ) のレコード数があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-417">They have a record count of 0 (zero).</span></span>
-
-<span data-ttu-id="53f17-418">ツール バーで、**すべて検証**をクリックして、**すべてのテンプレートとオブジェクトの検証**ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="53f17-418">On the toolbar, click **Validate all** to open the **Validate all templates and Objects** window.</span></span>
-### <a name="navigation-of-the-validate-all-templates-and-objects-window"></a><span data-ttu-id="53f17-419">すべてのテンプレートとオブジェクトの検証ウィンドウのナビゲーション</span><span class="sxs-lookup"><span data-stu-id="53f17-419">Navigation of the Validate all templates and Objects window</span></span>
-
-<span data-ttu-id="53f17-420">次のテーブルで、**すべてのテンプレートとオブジェクトの検証** ウィンドウのコントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="53f17-420">The following tables provide descriptions for the controls in the **Validate all templates and Objects** window.</span></span>
-#### <a name="buttons"></a><span data-ttu-id="53f17-421">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-421">Buttons</span></span>
-
-| <span data-ttu-id="53f17-422">ボタン</span><span class="sxs-lookup"><span data-stu-id="53f17-422">Button</span></span>    | <span data-ttu-id="53f17-423">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-423">Description</span></span>                                                                                                                                                                                                                                                                                                           |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-424">**保存**</span><span class="sxs-lookup"><span data-stu-id="53f17-424">**Save**</span></span>  | <span data-ttu-id="53f17-425">変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="53f17-425">Save the changes.</span></span> <span data-ttu-id="53f17-426">削除テンプレートと削除オブジェクトを操作するときは、すべての既存の削除テンプレートと削除オブジェクトは上書きされます。</span><span class="sxs-lookup"><span data-stu-id="53f17-426">When you work with purge templates and Purge Objects, all existing purge templates and Purge Objects are overwritten.</span></span> <span data-ttu-id="53f17-427">アーカイブ テンプレートとアーカイブ オブジェクトを使用するときは、接尾語を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-427">When working with archive templates and Archive Objects, you must provide a suffix.</span></span> <span data-ttu-id="53f17-428">変更は新しいバージョンとして保存され、新しい名前に使用される接尾語値が使用されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-428">The changes are saved as new versions, with a suffix value that is used for the new name.</span></span> |
-| <span data-ttu-id="53f17-429">**クリア**</span><span class="sxs-lookup"><span data-stu-id="53f17-429">**Clear**</span></span> | <span data-ttu-id="53f17-430">ウィンドウ内のすべてのフィールドの値をクリアします。</span><span class="sxs-lookup"><span data-stu-id="53f17-430">Clear the values for all the fields in the window.</span></span>                                                                                                                                                                                                                                                                    |
-| <span data-ttu-id="53f17-431">**閉じる**</span><span class="sxs-lookup"><span data-stu-id="53f17-431">**Close**</span></span> | <span data-ttu-id="53f17-432">ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53f17-432">Close the window.</span></span>                                                                                                                                                                                                                                                                                                     |
-
-#### 
-
-#### <a name="fields"></a><span data-ttu-id="53f17-433">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-433">Fields</span></span>
-
-| <span data-ttu-id="53f17-434">フィールド</span><span class="sxs-lookup"><span data-stu-id="53f17-434">Field</span></span>                                 | <span data-ttu-id="53f17-435">説明</span><span class="sxs-lookup"><span data-stu-id="53f17-435">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="53f17-436">**オブジェクトのタイプを選択**</span><span class="sxs-lookup"><span data-stu-id="53f17-436">**Select an object type**</span></span>             | <span data-ttu-id="53f17-437">一覧から、**削除**を選択してすべての削除テンプレートと削除オブジェクトを検証します。</span><span class="sxs-lookup"><span data-stu-id="53f17-437">From the list, select **Purge** to validate all purge templates and Purge Objects.</span></span> <span data-ttu-id="53f17-438">**アーカイブ** を選択し、アーカイブ テンプレートとアーカイブ オブジェクトをすべて検証します。</span><span class="sxs-lookup"><span data-stu-id="53f17-438">Select **Archive** to validate all archive templates and Archive Objects.</span></span>                                                                                                                                                                                                                                                                                                                                                                |
-| <span data-ttu-id="53f17-439">**接尾辞名**</span><span class="sxs-lookup"><span data-stu-id="53f17-439">**Suffix name**</span></span>                       | <span data-ttu-id="53f17-440">このフィールドは、**オブジェクト タイプの選択**リストから**アーカイブ**を選択した場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="53f17-440">This field is only available when you select **Archive** from the **Select an object type** list.</span></span> <span data-ttu-id="53f17-441">オブジェクトを検証するとき、既存の削除テンプレートと削除オブジェクトを上書きします。</span><span class="sxs-lookup"><span data-stu-id="53f17-441">When validating objects, you overwrite existing purge templates and Purge Objects.</span></span> <span data-ttu-id="53f17-442">ただし、接尾語値を使用してアーカイブ テンプレートとアーカイブ オブジェクトの新しいバージョンを保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-442">However, you must use a suffix value to save the new versions of archive templates and Archive Objects.</span></span> <span data-ttu-id="53f17-443">接尾語値は、アーカイブ テンプレートとアーカイブ オブジェクトの新しい名前を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-443">The suffix value is used to create a new name for the archive templates and Archive Objects.</span></span> <span data-ttu-id="53f17-444">たとえば、接尾辞名として 1 を入力すると、BankDeposit アーカイブ テンプレートは BankDeposit\_1 として保存されます。</span><span class="sxs-lookup"><span data-stu-id="53f17-444">For example, if you enter 1 as the suffix name, the BankDeposit archive template is saved as BankDeposit\_1.</span></span>                      |
-| <span data-ttu-id="53f17-445">**無効なテーブルの削除**</span><span class="sxs-lookup"><span data-stu-id="53f17-445">**Remove invalid tables**</span></span>             | <span data-ttu-id="53f17-446">生産データベースにないテンプレートおよびオブジェクトに格納されているすべてのテーブルを削除するには、このフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-446">Select this field to remove all tables that are contained in templates and objects that are not in the production database.</span></span> <span data-ttu-id="53f17-447">テンプレートとオブジェクトからテーブルを削除すると、リレーションシップ階層からも関連する子テーブルが削除されます (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="53f17-447">Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</span></span>                                                                                                                                                                                                                                                            |
-| <span data-ttu-id="53f17-448">**無効なフィールドを含むテーブルの削除**</span><span class="sxs-lookup"><span data-stu-id="53f17-448">**Remove tables with invalid fields**</span></span> | <span data-ttu-id="53f17-449">テンプレートとオブジェクトは、関係やルールで無効なフィールドを使用している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-449">The templates and objects may be using invalid fields in relationships and rules.</span></span> <span data-ttu-id="53f17-450">無効なフィールドは、ライセンス、無効なセキュリティ キー、無効なコンフィギュレーション キー、またはデータベースの同期など、未完了のインストール後のタスクによって発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="53f17-450">A field that is not valid can be caused by your license, disabled security keys, disabled configuration keys, or incomplete post-installation tasks, such as the database synchronization.</span></span> <span data-ttu-id="53f17-451">テンプレートおよびオブジェクトから有効でないフィールドを格納しているすべてのテーブルを削除するには、このフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-451">Select this field to remove all tables that contain fields that are not valid from templates and objects.</span></span> <span data-ttu-id="53f17-452">テンプレートとオブジェクトからテーブルを削除すると、リレーションシップ階層からも関連する子テーブルが削除されます (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="53f17-452">Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</span></span> |
-| <span data-ttu-id="53f17-453">**ゼロの行を含むテーブルの削除**</span><span class="sxs-lookup"><span data-stu-id="53f17-453">**Remove tables with zero row**</span></span>       | <span data-ttu-id="53f17-454">すべてのテンプレートとオブジェクトから行のないすべてのテーブルを削除するには、このフィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="53f17-454">Select this field to remove all tables without rows from all templates and objects.</span></span> <span data-ttu-id="53f17-455">テンプレートとオブジェクトからテーブルを削除すると、リレーションシップ階層からも関連する子テーブルが削除されます (ある場合)。</span><span class="sxs-lookup"><span data-stu-id="53f17-455">Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</span></span>                                                                                                                                                                                                                                                                                                    |
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="work-with-purge-objects-archive-objects.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>work-with-purge-objects-archive-objects.b47f7b.f02fe16d6f7917c28b6930ec8f0c338c7d47ef53.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>f02fe16d6f7917c28b6930ec8f0c338c7d47ef53</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\lifecycle-services\ax-2012\work-with-purge-objects-archive-objects.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Work with purge and archive objects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの削除とアーカイブを使用する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about purge and archive objects in the Intelligent Data Management Framework (IDMF).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、インテリジェント データ管理フレームワーク (IDMF) のパージ オブジェクトとアーカイブ オブジェクトについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Work with purge and archive objects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの削除とアーカイブを使用する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Add/Edit rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールの追加/編集</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>A rule is the criterion that is used to filter records when a purge task or an archive task runs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールは、削除タスクまたはアーカイブ タスクの実行時に、レコードをフィルター処理するために使用される基準です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This command lets you work with rules in a Purge Object or an Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクト内のルールを操作できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The rules generally apply to the driver table, but can also be applied to a related child table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールは一般的にドライバー テーブルに適用されますが、関連する子テーブルにも適用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>For example, the Purge Object <bpt id="p1">**</bpt>ProdJournalTable<ept id="p1">**</ept> includes a rule for the <bpt id="p2">**</bpt>ProdTable<ept id="p2">**</ept>, which is not the driver table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、削除オブジェクト <bpt id="p1">**</bpt>ProdJournalTable<ept id="p1">**</ept> には、<bpt id="p2">**</bpt>ProdTable<ept id="p2">**</ept> のルールが含まれ、ドライバー テーブルではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Regardless of how you create these rules, the "where" clause always applies to the driver table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのルールを作成する方法に関係なく、"where" 句はドライバー テーブルに常に適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>You must understand the effect of your rule on the Purge Object or Archive Object before applying any rule.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">どのようなルールを適用する場合も、適用前にルールの削除オブジェクトまたはアーカイブ オブジェクトへの影響について理解する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add/Edit rules<ept id="p2">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>ルールの追加/編集<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>ルールの追加/編集<ept id="p2">**</ept>ウィンドウを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Navigation of the Add/Edit rules window</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールの追加/編集ウィンドウのナビゲーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The following tables provide descriptions for the controls in the <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルで、<bpt id="p1">**</bpt>ルールの追加/編集<ept id="p1">**</ept> ウィンドウのコントロールについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Panes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Contains a list of the rules in the Purge Object or Archive Object, and commands to create a new rule, add an expression to the existing rule, or delete a rule or an expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトまたはアーカイブ オブジェクト内のルールのリスト、および新しいルールの作成、既存のルールへの式の追加、またはルールまたは式の削除のコマンドが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">**</bpt>Configure rules for purge<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除のルールのコンフィギュレーション<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Provides an area to enter or modify the rule name, description, and conditions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールの名前、説明、および条件を入力または変更する領域を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Also provides commands to add the rule to, or update it in, the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、<bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept>ウィンドウの一覧に、ルールを追加、または更新するコマンドが提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">**</bpt>Conditional information<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件付き情報<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Lets you specify conditions, or the selection criteria, for the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトの条件または選択基準を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Add/Edit rules window</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルール ウィンドウの追加/編集</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Save the changes that you made to the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane to the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept> ウィンドウの一覧に対して行った変更をデータベースに保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Close<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Close the <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルールの追加/編集<ept id="p1">**</ept>ウィンドウを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>You are prompted to confirm the close or save your changes if you try to close the window without saving your changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更を保存せずにウィンドウを閉じようとする場合、閉じるか変更を保存するかの確認を求められます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Rule collection pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルール コレクション ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>New rule<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規作成<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Create a new rule.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいルールの作成。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>When you have multiple rules in the Purge Object or Archive Object, they form the "and" condition in the "where" clause of the SQL statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトまたはアーカイブ オブジェクトに複数のルールがある場合、それらのルールは、SQL ステートメントの "WHERE" 句の "AND" 条件を形成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">**</bpt>Add expression<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>式を追加<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Create a new expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい式を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>An expression is a condition that is added to an existing rule.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">式は既存のルールに追加される条件です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>An expression creates an "or" condition in the "where" clause of the SQL statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">式は SQL ステートメントの「where」句に「or」の条件を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>Delete<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Delete the selected rule or expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したルールまたは式を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Configure rules pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルール ウィンドウのコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">**</bpt>Add<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Add the new rule or expression to the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept> ウィンドウの一覧に新しいルールまたは式を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source><bpt id="p1">**</bpt>Update<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>更新<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Update the selected rule or expression in the list in the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept> ウィンドウの一覧で選択したルールまたは式を更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>キャンセル<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Cancel the add or update action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加、または更新アクションをキャンセルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Fields (across all panes)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド (すべてのウィンドウ間)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source><bpt id="p1">**</bpt>Rule name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The name of the rule or expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールまたは式の名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source><bpt id="p1">**</bpt>Rule<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The condition that you create based on the table name, the field name, and a conditional operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル名、フィールド名、および条件付き演算子に基づいて作成する条件。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>This condition forms the "where" clause in the SQL statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この条件は、SQL ステートメントの「where」句を構成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">**</bpt>Rule description<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルールの説明<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>A description of the rule.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールの説明。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Enter a new description or modify an existing description here.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい説明を入力またはここに既存の説明を変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>The table that you select from the list of all tables in the Purge Object or Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトまたはアーカイブ オブジェクトのすべてのテーブルのリストから選択したテーブル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>The name of the field that you select from the list of all fields for the selected table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したテーブルのすべてのフィールドのリストから選択するフィールドの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source><bpt id="p1">**</bpt>Condition<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>The condition that you place on the table and the field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがテーブルとフィールドに配置する条件。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>The condition list changes, depending on the field selections.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドの選択に応じて、条件リストが変更されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>The <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field switches between a text box and a list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept> フィールドは、テキスト ボックスとリストを切り替えます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>You can select a value from the list, but cannot enter a value in the text box here.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストから値を選択することができますが、ここではテキスト ボックスに値を入力することができません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>You enter the value when you create a purge task.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除タスクを作成する場合には、値を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Walkthrough: Add or modify a rule in a Purge Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: 削除オブジェクトへのルールの追加または削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>This section provides a walkthrough to add or modify a rule in a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、削除オブジェクトのルールを追加または変更するためのチュートリアルを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注意<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>This walkthrough deletes and recreates an existing rule from the Purge Object for ease of learning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、学習を容易にするためにパージ オブジェクトから既存のルールを削除し、再作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>You must have an excellent understanding of the database design, data flow, process flow, and application functionality of the Microsoft Dynamics AX application to work with rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルールを扱うには、データベース設計、データ フロー、プロセス フロー、および Microsoft Dynamics AX アプリケーションの機能について明確に理解している必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>An error can cause data corruption or application downtime requiring full database and application recovery.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーは完全なデータベースおよびアプリケーションの復旧を必要とするデータの破損やアプリケーションのダウンタイムを引き起こす可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge templates/Purge Object<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>PurchParmTable<ept id="p4">**</ept> Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>削除テンプレート/削除オブジェクト<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> とクリックし、<bpt id="p4">**</bpt>PurchParmTable<ept id="p4">**</ept> 削除オブジェクトを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>This walkthrough assumes that you are working with the Purge Object that was created from the default purge template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、既定のパージ テンプレートから作成されたパージ オブジェクトを使用して作業することを前提としています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>If you have modified the Purge Object in any way, click <bpt id="p1">**</bpt>Restore<ept id="p1">**</ept> to restore the Purge Object to the original version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">任意の方法で削除オブジェクトを変更した場合は、<bpt id="p1">**</bpt>復元<ept id="p1">**</ept>をクリックして削除オブジェクトを元のバージョンに復元します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add/Edit rules<ept id="p2">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>ルールの追加/編集<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>ルールの追加/編集<ept id="p2">**</ept>ウィンドウを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>In the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane, click the first row in the data grid to select the rule <bpt id="p2">**</bpt>PurchParmTable.ParmJobStatus = Executed<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept> ウィンドウで、データ グリッドの最初の行をクリックして <bpt id="p2">**</bpt>PurchParmTable.ParmJobStatus = Executed<ept id="p2">**</ept> のルールを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>削除<ept id="p2">**</ept>ダイアログ ボックスで、<bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Click <bpt id="p1">**</bpt>New rule<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しいルール<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>In <bpt id="p1">**</bpt>Configure rules for purge<ept id="p1">**</ept>, set the following field values:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除のルールを構成<ept id="p1">**</ept>で、次のフィールド値を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>In the <bpt id="p1">**</bpt>Rule name<ept id="p1">**</ept> field, type Clean up.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール名<ept id="p1">**</ept>フィールドに、「クリーンアップ」と入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>In the <bpt id="p1">**</bpt>Rule description<ept id="p1">**</ept> field, type What should be cleaned up?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルールの説明<ept id="p1">**</ept>フィールドに、「どれをクリーンアップする必要がありますか」と入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>In the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>PurchParmTable<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept>リストで、<bpt id="p2">**</bpt>PurchParmTable<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>In the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>ParmJobStatus<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept>リストで、<bpt id="p2">**</bpt>ParmJobStatus<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>In the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt><ph id="ph1">=</ph><ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept>リストで、<bpt id="p2">**</bpt><ph id="ph1">=</ph><ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>In the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Executed<ept id="p2">**</ept> from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept>フィールドで、リストから<bpt id="p2">**</bpt>実行済<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and verify that the rule is added to the data grid in the <bpt id="p2">**</bpt>Rule collection<ept id="p2">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックし、ルールが<bpt id="p2">**</bpt>ルール コレクション<ept id="p2">**</ept> ウィンドウのデータグリッドに追加されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>In the <bpt id="p1">**</bpt>Rules<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール<ept id="p1">**</ept> ダイアログ ボックスで <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to close the window and return to the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>をクリックしてウィンドウを閉じ、削除オブジェクトに戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Walkthrough: Add or modify a rule in an Archive Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: アーカイブ オブジェクトへのルールの追加または削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>This section provides a walkthrough to add or modify a rule in an Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、アーカイブ オブジェクトのルールを追加または変更するためのチュートリアルを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Archive templates/Archive Objects<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>SalesTable<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>SalesTable<ept id="p4">**</ept> Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>アーカイブ テンプレート/アーカイブ オブジェクト<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>SalesTable<ept id="p3">**</ept> とクリックして <bpt id="p4">**</bpt>SalesTable<ept id="p4">**</ept> アーカイブ オブジェクトを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>This walkthrough assumes that you are working with the Archive Object that was created from the default archive template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、既定のアーカイブ テンプレートから作成されたアーカイブ オブジェクトを使用して作業することを前提としています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>If you have modified the Archive Object in any way, use the <bpt id="p1">**</bpt>Show versions<ept id="p1">**</ept> command on the toolbar to revert to the original archive template that is included with the Data Management Framework.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ オブジェクトを変更した場合は、ツールバーの<bpt id="p1">**</bpt>バージョンを表示<ept id="p1">**</ept>コマンドを使用して、データ管理フレームワークに含まれている元のアーカイブ テンプレートに戻します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add/Edit rules<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add/Edit rules<ept id="p2">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>ルールの追加/編集<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>ルールの追加/編集<ept id="p2">**</ept>ウィンドウを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>In the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane, click the second row in the data grid to select the rule <bpt id="p2">**</bpt>SalesTable.SalesStatus In Canceled, Invoiced<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept> ウィンドウで、データ グリッドの 2 行目をクリックして <bpt id="p2">**</bpt>SalesTable.SalesStatus In Canceled, Invoiced<ept id="p2">**</ept> のルールを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>削除<ept id="p2">**</ept>ダイアログ ボックスで、<bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>In the <bpt id="p1">**</bpt>Rule collection<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Add expression<ept id="p2">**</ept>, and set the following field values:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール コレクション<ept id="p1">**</ept>ウィンドウで、<bpt id="p2">**</bpt>拡張機能の追加<ept id="p2">**</ept>をクリックし、次のフィールド値を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>In the <bpt id="p1">**</bpt>Rule name<ept id="p1">**</ept> field, type Status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール名<ept id="p1">**</ept>フィールドに、「ステータス」と入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>In the <bpt id="p1">**</bpt>Rule description<ept id="p1">**</ept> field, type Status values considered for archival.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルールの説明<ept id="p1">**</ept>フィールドに、アーカイブ用とみなされるステータスの値を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>In the <bpt id="p1">**</bpt>Conditional information<ept id="p1">**</ept> pane, set the following field values:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件付き情報<ept id="p1">**</ept>ウィンドウで、次のフィールド値を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>In the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>SalesTable<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept>リストで、<bpt id="p2">**</bpt>SalesTable<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>In the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>SalesStatus<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept>リストで、<bpt id="p2">**</bpt>SalesStatus<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>In the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>In<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept>リストで、<bpt id="p2">**</bpt>In<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>In the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Cancelled and Invoiced<ept id="p2">**</ept> from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept>フィールドで、リストから<bpt id="p2">**</bpt>キャンセル済および請求済<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and verify that the rule is added to the data grid in the <bpt id="p2">**</bpt>Rule collection<ept id="p2">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックし、ルールが<bpt id="p2">**</bpt>ルール コレクション<ept id="p2">**</ept> ウィンドウのデータグリッドに追加されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>In the <bpt id="p1">**</bpt>Rules<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ルール<ept id="p1">**</ept> ダイアログ ボックスで <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to close the window and return to the Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>をクリックしてウィンドウを閉じ、アーカイブ オブジェクトに戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Add relations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>This command lets you manually add a table to the Purge Object or Archive Object, and establish a relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクトに手動でテーブルを追加し、関係を確立できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>You may have to manually add a relationship if you have custom tables in the Microsoft Dynamics AX application without a metadata relationship in the Application Object Tree (AOT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX アプリケーションにアプリケーション オブジェクト ツリー (AOT) のメタデータ リレーションシップなしのカスタム テーブルがある場合、リレーションシップの手動の追加が必要な場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>To add a relation, select a table by clicking it in the relationship tree diagram.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションを追加するには、リレーションシップ ツリー ダイアグラムでテーブルをクリックして選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>The table you select becomes the parent table, and the table you add becomes the child in the relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したテーブルが親テーブルになり、追加するテーブルがリレーションシップの子になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Add relations<ept id="p2">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>関係を追加<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>関係を追加<ept id="p2">**</ept>ウィンドウを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Navigation of the Add relations window</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係の追加ウィンドウのナビゲーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>The following tables provide descriptions for the controls in the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルで、<bpt id="p1">**</bpt>関係の追加<ept id="p1">**</ept> ウィンドウのコントロールについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Panes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source><bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Provides a list of relations that you created in the Purge Object or Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトまたはアーカイブ オブジェクトで作成した関係の一覧を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Also provides commands to create a new relation or delete an existing relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、新しい関係を作成するコマンドや、既存の関係を削除するコマンドも提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source><bpt id="p1">**</bpt>Configure relations<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係のコンフィギュレーション<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Provides an area to enter or modify the relation name, description, and conditions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係の名前、説明、および条件を入力または変更する領域を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Also provides commands to add the relation to, or update it in, the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane, or to cancel the add or update action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、<bpt id="p1">**</bpt>リレーションシップ<ept id="p1">**</ept>ウィンドウの一覧にリレーションの追加、一覧内での更新や、追加または更新アクションをキャンセルしたりするためのコマンドも用意されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Save the changes that you made to the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane to the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係<ept id="p1">**</ept> ウィンドウの一覧に対して行った変更をデータベースに保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source><bpt id="p1">**</bpt>Close<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Close the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の追加<ept id="p1">**</ept>ウィンドウを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>If you try to close the window without saving your changes, you are prompted to confirm the close or save your changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更を保存せずにウィンドウを閉じようとする場合、閉じることを確認するメッセージまたは変更の保存を求めるメッセージが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Relationships pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source><bpt id="p1">**</bpt>New relation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しい関係<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Create a new relation, or a new condition for an existing relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいリレーションを作成するか、既存のリレーションの新しい条件を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source><bpt id="p1">**</bpt>Delete<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Delete the selected relation or condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択した関係または条件を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>You cannot modify added relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加の関係を変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>You must delete the relations, and then add them again to make any changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係を削除してから、変更を加えるために、関係を再度追加する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Configure relations pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係ウィンドウのコンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source><bpt id="p1">**</bpt>Add<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Add a new relation or condition to the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>リレーションシップ<ept id="p1">**</ept> ウィンドウのリストに新しい関係または条件を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source><bpt id="p1">**</bpt>Update<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>更新<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Update the selected relation or condition in the list in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>リレーションシップ<ept id="p1">**</ept> ウィンドウの一覧で選択したリレーションまたは条件を更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source><bpt id="p1">**</bpt>Cancel<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>キャンセル<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Cancel an add or update action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加または更新アクションをキャンセルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source><bpt id="p1">**</bpt>Include child relations<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>子関係を含める<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Select this field if you have to add all the child entities of the relation that you are adding to the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係ツリーに追加する関係のすべての子エンティティを追加する必要がある場合は、このフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>If you clear the field, the child entities of the table you are adding are not added to the Purge Object or Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドをクリアにすると、追加するテーブルの子エンティティは削除オブジェクトまたはアーカイブ オブジェクトに追加されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Relationships pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source><bpt id="p1">**</bpt>RelationsDefined<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>RelationsDefined<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>A list of the relations in the Purge Object or Archive Object, and the conditions for each relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトまたはアーカイブ オブジェクトの関係、および各関係の条件の一覧。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>This field becomes available in the list when you add a relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドは、リレーションを追加するときにリスト内で使用可能になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Configure relations pane, Table relations area</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係ウィンドウのコンフィギュレーション、テーブル リレーション領域</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source><bpt id="p1">**</bpt>Relation name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>The name of the relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>You must enter a relation name to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">続行するリレーション名を入力する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>The table that you selected in the Purge Object or Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトまたはアーカイブ オブジェクトで選択したテーブル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>You can't change this value in the window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウのこの値を変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>This table is the parent entity in the relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルは、リレーションシップ内の親エンティティです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Select the field that you want to use in the relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係で使用するフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source><bpt id="p1">**</bpt>Condition<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>By default, the condition is <bpt id="p1">**</bpt><ph id="ph1">=</ph><ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、条件は <bpt id="p1">**</bpt><ph id="ph1">=</ph><ept id="p1">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>You cannot change the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件は変更できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source><bpt id="p1">**</bpt>Related table name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関連テーブル名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Select the table that you are adding from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧から追加するテーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>This table is the child entity in the relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルは、リレーションシップ内の子エンティティです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source><bpt id="p1">**</bpt>Related field name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関連フィールド名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Select the field that you want to use in the relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係で使用するフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Configure relations pane, Conditional information area</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係ウィンドウのコンフィギュレーション、条件付情報エリア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Select a table from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧からテーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>You can select either the parent or the child from the relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップから親または子のいずれかを選択することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source><bpt id="p1">**</bpt>Field name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Select the field that you want to use in the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件で使用するフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source><bpt id="p1">**</bpt>Condition<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Select the condition that you want to use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用する条件を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Enter the value for the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件の値を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Walkthrough: Add a relation in a Purge Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: 削除オブジェクトへのリレーションの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>This section provides a walkthrough to add a relation in a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、削除オブジェクトにリレーションを追加するためのチュートリアルを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge templates/Purge Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>ProjJournalTable<ept id="p3">**</ept> from the drop-down list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>削除テンプレート/削除オブジェクト<ept id="p2">**</ept>とクリックして、ドロップダウン リストから <bpt id="p3">**</bpt>ProjJournalTable<ept id="p3">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>In the Purge Object, click the <bpt id="p1">**</bpt>ProjJournalTable<ept id="p1">**</ept> table in level 0, and then click <bpt id="p2">**</bpt>Add relations<ept id="p2">**</ept> on the toolbar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトで、レベル 0 の <bpt id="p1">**</bpt>ProjJournalTable<ept id="p1">**</ept> テーブルをクリックしてから、ツール バーで<bpt id="p2">**</bpt>関係の追加<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>In the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の追加<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>新しい関係<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>In the <bpt id="p1">**</bpt>Relation name<ept id="p1">**</ept> field, enter a valid name for the relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係名<ept id="p1">**</ept>フィールドに、関係に対する有効な名前を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>In the <bpt id="p1">**</bpt>Table relations<ept id="p1">**</ept> area, follow these steps to add the relation:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル リレーション<ept id="p1">**</ept>領域で、これらの手順に従って関係を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>From <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>JournalId<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept>の一覧から、<bpt id="p2">**</bpt>JournalId<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>From the <bpt id="p1">**</bpt>Related table<ept id="p1">**</ept> name list, select <bpt id="p2">**</bpt>JournalError<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関連テーブル<ept id="p1">**</ept>の名前リストから <bpt id="p2">**</bpt>JournalError<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>From the <bpt id="p1">**</bpt>Related field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>JournalId<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関連フィールド名<ept id="p1">**</ept>リストから <bpt id="p2">**</bpt>JournalId<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>In the <bpt id="p1">**</bpt>Add Relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept> to add a condition to the relation you just added.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の追加<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>新しい関係<ept id="p2">**</ept>をクリックして、今追加した関係に対する条件を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>In the <bpt id="p1">**</bpt>Conditional information<ept id="p1">**</ept> area, follow these steps to add a condition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件付き情報<ept id="p1">**</ept>領域で、これらの手順に従って条件を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>From the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select a table that you want to use in the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept>リストから条件で使用するテーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>From the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select the field that you want to use in the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept>リストから条件で使用するフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>From the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept>リストから、条件を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>From the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> list, select the value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept>リストから値を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to add the condition to the data grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件をデータ グリッドに追加するには、<bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>In the Purge Object, verify that the JournalError table you just added is shown as a child entity in level 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトで、追加した JournalError テーブルがレベル 1 の子エンティティで表示されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Save the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトを保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Walkthrough: Add a relation in an Archive Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: アーカイブ オブジェクトへのリレーションの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Archive templates/Archive Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>SalesTable<ept id="p3">**</ept> from the drop-down list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>アーカイブ テンプレート/アーカイブ オブジェクト<ept id="p2">**</ept>とクリックして、ドロップダウン リストから <bpt id="p3">**</bpt>SalesTable<ept id="p3">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>In the Archive Object, click the <bpt id="p1">**</bpt>DocuRef<ept id="p1">**</ept> table in level 1, and then click <bpt id="p2">**</bpt>Add relations<ept id="p2">**</ept> on the toolbar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ オブジェクトで、レベル 1 の <bpt id="p1">**</bpt>DocuRef<ept id="p1">**</ept> テーブルをクリックしてから、ツール バーで<bpt id="p2">**</bpt>関係の追加<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>In the <bpt id="p1">**</bpt>Add relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の追加<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>新しい関係<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>In the <bpt id="p1">**</bpt>Relation name<ept id="p1">**</ept> field, enter a valid name for the relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係名<ept id="p1">**</ept>フィールドに、関係に対する有効な名前を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>In the <bpt id="p1">**</bpt>Table relations<ept id="p1">**</ept> area, follow these steps to add the relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル リレーション<ept id="p1">**</ept>領域で、これらの手順に従って関係を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>From the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>ValueRecId<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept>リストから <bpt id="p2">**</bpt>ValueRecId<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>From the <bpt id="p1">**</bpt>Related table name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>DocuValue<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関連テーブル名<ept id="p1">**</ept>リストから <bpt id="p2">**</bpt>DocuValue<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>From the <bpt id="p1">**</bpt>Related field name<ept id="p1">**</ept> list, select <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関連フィールド名<ept id="p1">**</ept>リストから <bpt id="p2">**</bpt>RecId<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>In the <bpt id="p1">**</bpt>Add Relations<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>New relation<ept id="p2">**</ept> to add a condition to the relation you just added.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の追加<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>新しい関係<ept id="p2">**</ept>をクリックして、今追加した関係に対する条件を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>In the Conditional <bpt id="p1">**</bpt>information<ept id="p1">**</ept> area, follow these steps to add a condition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件付き<bpt id="p1">**</bpt>情報<ept id="p1">**</ept>領域で、これらの手順に従って条件を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>From the <bpt id="p1">**</bpt>Table name<ept id="p1">**</ept> list, select a table that you want to use in the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept>リストから条件で使用するテーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>From the <bpt id="p1">**</bpt>Field name<ept id="p1">**</ept> list, select the field that you want to use in the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールド名<ept id="p1">**</ept>リストから条件で使用するフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>From the <bpt id="p1">**</bpt>Condition<ept id="p1">**</ept> list, select the condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>条件<ept id="p1">**</ept>リストから、条件を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>From the <bpt id="p1">**</bpt>Value<ept id="p1">**</ept> list, select the value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept>リストから値を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to add the condition to the data grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件をデータ グリッドに追加するには、<bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>In the Archive Object, verify that the <bpt id="p1">**</bpt>DocuValue<ept id="p1">**</ept> table you just added is shown as a child entity in level 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ オブジェクトで、追加した <bpt id="p1">**</bpt>DocuValue<ept id="p1">**</ept> テーブルがレベル 1 の子エンティティで表示されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Save the Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ オブジェクトを保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">輸出</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>This command lets you export a Purge Object or an Archive Object to a file in XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクトを XML 形式のファイルにエクスポートできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Follow these steps to export a Purge Object:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトをエクスポートするには、これらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge template/Purge Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>削除テンプレート/削除オブジェクト<ept id="p2">**</ept>とクリックして、リストから <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Export Object<ept id="p2">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールで、<bpt id="p1">**</bpt>エクスポート<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>エクスポート オブジェクト<ept id="p2">**</ept>ダイアログ ボックスを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>By default, the file name is the driver table, which is <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> in this case.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、ファイル名はドライバー テーブルで、この場合は <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Navigate to a location, and then click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場所に移動してから、<bpt id="p1">**</bpt>保存<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Locate the saved file, and open it in a Web browser.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保存されたファイルを検索し、Web ブラウザーで開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Review the file to understand the schema and its relationship to the graphical representation of the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スキーマと、削除オブジェクトのグラフィカル表示とのその関係を理解するファイルを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can take similar steps to export an Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 同様の手順でアーカイブ オブジェクトをエクスポートできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> On the toolbar, the <bpt id="p2">**</bpt>Import<ept id="p2">**</ept> command appears before the <bpt id="p3">**</bpt>Export<ept id="p3">**</ept> command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> ツールバーの<bpt id="p2">**</bpt>インポート<ept id="p2">**</ept>コマンドは、<bpt id="p3">**</bpt>エクスポート<ept id="p3">**</ept>コマンドの前に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インポート元</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>This command lets you import a Purge Object or an Archive Object in XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、削除オブジェクトまたはアーカイブ オブジェクトを XML 形式でインポートできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>The following walkthrough provides hands-on instruction to reinstate a modified Purge Object to the state it was in at the time of export:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のチュートリアルでは、変更されたパージ オブジェクトをエクスポート時の状態に復帰させる実践的な指示が提供されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Purge template/Purge Objects<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> from the drop-down list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>削除テンプレート/削除オブジェクト<ept id="p2">**</ept>とクリックして、ドロップダウン リストから <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Use the <bpt id="p1">**</bpt>Advanced<ept id="p1">**</ept> filter to filter the data grid in the <bpt id="p2">**</bpt>Remove table<ept id="p2">**</ept> pane so that it shows only tables in level 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>詳細<ept id="p1">**</ept> フィルターを使用して、<bpt id="p2">**</bpt>テーブル削除<ept id="p2">**</ept> ウィンドウでデータ グリッドをフィルター処理し、レベル 1 のテーブルのみを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Select all tables in the data grid, and then click <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ グリッドですべてのテーブルを選択し、<bpt id="p1">**</bpt>削除<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Confirm that the relationship tree contains only <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーに <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> のみが含まれていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> to save the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーで、<bpt id="p1">**</bpt>保存<ept id="p1">**</ept>をクリックして削除オブジェクトを保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Respond to the prompt, and overwrite the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロンプトに応答し、オブジェクトを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーで、<bpt id="p1">**</bpt>インポート<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>In the <bpt id="p1">**</bpt>Select a valid XML file<ept id="p1">**</ept> dialog box, navigate to the location of the file from the previous section, and then click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>有効な XML ファイルを選択<ept id="p1">**</ept>ダイアログ ボックスで、前のセクションからファイルの場所に移動してから<bpt id="p2">**</bpt>開く<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>The Purge Object is now in the same state it was in when you exported it in the previous section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトは、前のセクションでエクスポートしたときと同じ状態になりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can take similar steps to import an Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 同様の手順でアーカイブ オブジェクトをインポートできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Save</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保存</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>This command lets you save a Purge Object, or save a newer version of an Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、削除オブジェクトを保存したり、新しいバージョンのアーカイブ オブジェクトを保存できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>You must save a purge template as a Purge Object before you can use it in a purge task.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除タスクで使用する前に削除オブジェクトとして削除テンプレートを保存する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>You must save an archive template as an Archive Object before you can use it in an archive task.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ タスクで使用する前に、アーカイブ オブジェクトとしてアーカイブ テンプレートを保存する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>The archive function does not let you overwrite an existing Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ機能では、既存のアーカイブ オブジェクトを上書きすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>When you save an archive template or an Archive Object, you always create a new version of the Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ テンプレートまたはアーカイブ オブジェクトを保存するときは、アーカイブ オブジェクトの新しいバージョンをかならず作成してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>The archive task always uses the most recent version of the Archive Object you save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ タスクは常に、保存しているアーカイブ オブジェクトの最新のバージョンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Working with different versions of Archive Objects is covered in a later section of this topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">異なるバージョンのアーカイブ オブジェクトの作業については、このトピックの後半で説明されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Show versions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バージョンの表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>This command lets you work with different versions of an Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、さまざまなバージョンのアーカイブ オブジェクトで作業できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Use the following walkthrough to understand this functionality:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能を理解するのにには、次のチュートリアルを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Click <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Archive templates/Archive Object<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>BankDeposit<ept id="p3">**</ept> to open the <bpt id="p4">**</bpt>BankDeposit<ept id="p4">**</ept> Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>構成<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>アーカイブ テンプレート/アーカイブ オブジェクト<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>BankDeposit<ept id="p3">**</ept> とクリックして <bpt id="p4">**</bpt>BankDeposit<ept id="p4">**</ept> アーカイブ オブジェクトを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Review the Archive Object to make sure that the relationship hierarchy, tables, and rules that are contained in this Archive Object apply to your Microsoft Dynamics AX implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアーカイブ オブジェクトに含まれるリレーションシップの階層構造、テーブル、およびルールが、Microsoft Dynamics AX の実装に適用されることを確認するアーカイブ オブジェクトを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーの <bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>In the <bpt id="p1">**</bpt>Save as<ept id="p1">**</ept> dialog box, enter a name for the Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前を付けて保存<ept id="p1">**</ept>ダイアログ ボックスで、アーカイブ オブジェクトの名前を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>You must provide a new name for this version of the Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このバージョンの Archive Object に、新しく名前を指定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>If the name that you provide is already used by a different version of the Archive Object, you receive an error message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">入力した名前が既にアーカイブ オブジェクトの別のバージョンで使用されている場合、エラー メッセージが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Enter BankDeposit<ph id="ph1">\_</ph>1, and then click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BankDeposit<ph id="ph1">\_</ph>1 と入力し、<bpt id="p1">**</bpt>保存<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Show versions<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーで、<bpt id="p1">**</bpt>バージョンの表示<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>In the <bpt id="p1">**</bpt>Version history<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>BankDeposit<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Archive template<ept id="p3">**</ept> list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>バージョン履歴<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>BankDeposit<ept id="p2">**</ept> を<bpt id="p3">**</bpt>アーカイブ テンプレート<ept id="p3">**</ept> リストから選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>The Archive Object list contains the different versions of the Archive Object you saved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ オブジェクトの一覧には、保存したアーカイブ オブジェクトのさまざまなバージョンが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>The list contains the most recent version at the top, and therefore you see BankDeposit<ph id="ph1">\_</ph>1 at the top of the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストには最新のバージョンが一番上に表示されているので、リストの一番上に BankDeposit<ph id="ph1">\_</ph>1 が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Select any version, and then click <bpt id="p1">**</bpt>Show in the Archive Object list<ept id="p1">**</ept> to work with that version of the Archive Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのバージョンを選択し、<bpt id="p1">**</bpt>アーカイブ オブジェクトの一覧に表示<ept id="p1">**</ept> をクリックし、アーカイブ オブジェクトのバージョンを操作します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>If you make any changes to this version and save it, the saved version becomes the most recent version and is used by the archive task at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このバージョンを変更して保存すると、保存されたバージョンは最新バージョンになり、実行時にアーカイブ タスクによって使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Click <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> to close the <bpt id="p2">**</bpt>Version history<ept id="p2">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>バージョン履歴<ept id="p2">**</ept>ダイアログ ボックスを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Archive templates/Archive Object<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>BankDeposit<ept id="p2">**</ept> to open the .</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>アーカイブ テンプレート/アーカイブ オブジェクト<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>BankDeposit<ept id="p2">**</ept> をクリックして開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The Data Management Framework opens the most recent version of the Archive Object that you saved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> データ管理フレームワークは、保存したアーカイブ オブジェクトの最新バージョンを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>The archive task uses the most recent version of the Archive Object at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ タスクは実行時に、アーカイブ オブジェクトの最新のバージョンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Validate all</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべて検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>This command lets you programmatically validate all templates and objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、すべてのテンプレートとオブジェクトをプログラムで検証できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>The purge templates and archive templates that are included with the Data Management Framework are created based on functional validation of a standard Microsoft Dynamics AX application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data Management Framework に含まれている削除テンプレートとアーカイブ テンプレートは、標準の Microsoft Dynamics AX アプリケーションの機能検証に基づいて作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Your installation may not have the same license, configuration, and security keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インストールに、同じライセンス、コンフィギュレーション、およびセキュリティ キーが含まれていないことがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>As a result, you have to validate the default templates against your implementation before you can use them as Archive Objects or Purge Objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結果として、アーカイブ オブジェクトまたは削除オブジェクトとして使用する前に、既定テンプレートを実装に対して検証する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>This command provides a programmatic way to validate all purge templates or all archive templates with a single click.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドを使用すると、すべての削除テンプレートまたはすべてのアーカイブ テンプレートをシングル クリックでプログラムで検証できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>This functionality only works with templates that are not validated yet, and ignores any previously validated templates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、まだ検証されていないテンプレートでのみ動作し、以前に検証されたテンプレートは無視されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>During the validation process, the Data Management Framework optionally removes tables from all templates and objects that have these characteristics:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">妥当性確認のプロセス中に、Data Management Framework はこれらの特性を持つすべてのテンプレートとオブジェクトからテーブルを削除することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>They are not in the production database of your Microsoft Dynamics AX implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 実装の実稼働データベースにはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>They have a relationship or a rule on a field that has a disabled configuration key in the production database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働データベースに無効な構成キーがあるフィールドに、リレーションシップまたはルールがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>They have a record count of 0 (zero).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 (ゼロ) のレコード数があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Validate all<ept id="p1">**</ept> to open the <bpt id="p2">**</bpt>Validate all templates and Objects<ept id="p2">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーで、<bpt id="p1">**</bpt>すべて検証<ept id="p1">**</ept>をクリックして、<bpt id="p2">**</bpt>すべてのテンプレートとオブジェクトの検証<ept id="p2">**</ept>ウィンドウを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Navigation of the Validate all templates and Objects window</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのテンプレートとオブジェクトの検証ウィンドウのナビゲーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>The following tables provide descriptions for the controls in the <bpt id="p1">**</bpt>Validate all templates and Objects<ept id="p1">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルで、<bpt id="p1">**</bpt>すべてのテンプレートとオブジェクトの検証<ept id="p1">**</ept> ウィンドウのコントロールについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source><bpt id="p1">**</bpt>Save<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Save the changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更を保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>When you work with purge templates and Purge Objects, all existing purge templates and Purge Objects are overwritten.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除テンプレートと削除オブジェクトを操作するときは、すべての既存の削除テンプレートと削除オブジェクトは上書きされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>When working with archive templates and Archive Objects, you must provide a suffix.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーカイブ テンプレートとアーカイブ オブジェクトを使用するときは、接尾語を指定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>The changes are saved as new versions, with a suffix value that is used for the new name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更は新しいバージョンとして保存され、新しい名前に使用される接尾語値が使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source><bpt id="p1">**</bpt>Clear<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クリア<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Clear the values for all the fields in the window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ内のすべてのフィールドの値をクリアします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source><bpt id="p1">**</bpt>Close<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Close the window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source><bpt id="p1">**</bpt>Select an object type<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>オブジェクトのタイプを選択<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>From the list, select <bpt id="p1">**</bpt>Purge<ept id="p1">**</ept> to validate all purge templates and Purge Objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧から、<bpt id="p1">**</bpt>削除<ept id="p1">**</ept>を選択してすべての削除テンプレートと削除オブジェクトを検証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Select <bpt id="p1">**</bpt>Archive<ept id="p1">**</ept> to validate all archive templates and Archive Objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アーカイブ<ept id="p1">**</ept> を選択し、アーカイブ テンプレートとアーカイブ オブジェクトをすべて検証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source><bpt id="p1">**</bpt>Suffix name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>接尾辞名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>This field is only available when you select <bpt id="p1">**</bpt>Archive<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Select an object type<ept id="p2">**</ept> list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドは、<bpt id="p2">**</bpt>オブジェクト タイプの選択<ept id="p2">**</ept>リストから<bpt id="p1">**</bpt>アーカイブ<ept id="p1">**</ept>を選択した場合にのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>When validating objects, you overwrite existing purge templates and Purge Objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを検証するとき、既存の削除テンプレートと削除オブジェクトを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>However, you must use a suffix value to save the new versions of archive templates and Archive Objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、接尾語値を使用してアーカイブ テンプレートとアーカイブ オブジェクトの新しいバージョンを保存する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>The suffix value is used to create a new name for the archive templates and Archive Objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">接尾語値は、アーカイブ テンプレートとアーカイブ オブジェクトの新しい名前を作成するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>For example, if you enter 1 as the suffix name, the BankDeposit archive template is saved as BankDeposit<ph id="ph1">\_</ph>1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、接尾辞名として 1 を入力すると、BankDeposit アーカイブ テンプレートは BankDeposit<ph id="ph1">\_</ph>1 として保存されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source><bpt id="p1">**</bpt>Remove invalid tables<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>無効なテーブルの削除<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Select this field to remove all tables that are contained in templates and objects that are not in the production database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生産データベースにないテンプレートおよびオブジェクトに格納されているすべてのテーブルを削除するには、このフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートとオブジェクトからテーブルを削除すると、リレーションシップ階層からも関連する子テーブルが削除されます (ある場合)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source><bpt id="p1">**</bpt>Remove tables with invalid fields<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>無効なフィールドを含むテーブルの削除<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>The templates and objects may be using invalid fields in relationships and rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートとオブジェクトは、関係やルールで無効なフィールドを使用している可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>A field that is not valid can be caused by your license, disabled security keys, disabled configuration keys, or incomplete post-installation tasks, such as the database synchronization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効なフィールドは、ライセンス、無効なセキュリティ キー、無効なコンフィギュレーション キー、またはデータベースの同期など、未完了のインストール後のタスクによって発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>Select this field to remove all tables that contain fields that are not valid from templates and objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートおよびオブジェクトから有効でないフィールドを格納しているすべてのテーブルを削除するには、このフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートとオブジェクトからテーブルを削除すると、リレーションシップ階層からも関連する子テーブルが削除されます (ある場合)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source><bpt id="p1">**</bpt>Remove tables with zero row<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ゼロの行を含むテーブルの削除<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>Select this field to remove all tables without rows from all templates and objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのテンプレートとオブジェクトから行のないすべてのテーブルを削除するには、このフィールドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートとオブジェクトからテーブルを削除すると、リレーションシップ階層からも関連する子テーブルが削除されます (ある場合)。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

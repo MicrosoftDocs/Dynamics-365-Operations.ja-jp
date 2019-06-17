@@ -1,347 +1,3201 @@
----
-title: 共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
-description: Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
-author: pdp1207
-manager: AnnBe
-ms.date: 11/14/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations, Retail
-ms.custom: 257674
-ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
-ms.search.region: Global
-ms.author: prabhup
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65ee725feb70ed2314c7a157cbce3154c45b4aeb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537528"
----
-# <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a><span data-ttu-id="fabe4-104">共有環境におけるクラウド POS のセキュリティ ベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="fabe4-104">Security best practices for Cloud POS in shared environments</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="fabe4-105">Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="fabe4-105">Retail Cloud POS is a web application that runs in the context of a browser.</span></span> <span data-ttu-id="fabe4-106">このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-106">This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.</span></span>
-
-<a name="background"></a><span data-ttu-id="fabe4-107">バックグラウンド</span><span class="sxs-lookup"><span data-stu-id="fabe4-107">Background</span></span>
-----------
-
-<span data-ttu-id="fabe4-108">Retail Cloud POS は、Web ブラウザーのコンテキストで動作する Web アプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="fabe4-108">Retail Cloud POS is a web application that runs in the context of a web browser.</span></span> <span data-ttu-id="fabe4-109">したがって、ユーザーが Web アプリケーションのコンテキストで任意のスクリプトを実行できるときに攻撃するのは脆弱です。</span><span class="sxs-lookup"><span data-stu-id="fabe4-109">Therefore, it's vulnerable to attack when a user can run any script in the context of the web application.</span></span> <span data-ttu-id="fabe4-110">このような攻撃の要件の 1 つは、個人またはリモート デスクトップ接続を使用して、ユーザーがコンピューターへ物理的にアクセスすることです。</span><span class="sxs-lookup"><span data-stu-id="fabe4-110">One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection.</span></span> <span data-ttu-id="fabe4-111">攻撃に対する脆弱性は、開発者ツールを提供するほとんどのブラウザーの、また権限の十分な制御なしで実行されるスクリプトを有効にするほとんどのブラウザーの既存の問題です。</span><span class="sxs-lookup"><span data-stu-id="fabe4-111">Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control.</span></span> <span data-ttu-id="fabe4-112">Web アプリケーションはホスティング環境にほとんど影響力をもたないため、セキュリティの問題を軽減する方法の 1 つは多層防御を追加することです。</span><span class="sxs-lookup"><span data-stu-id="fabe4-112">Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth.</span></span> <span data-ttu-id="fabe4-113">ブラウザーおよびオペレーティング システムの両方の制限の厳しい強いポリシーを活用して、多層防御を構築できます。</span><span class="sxs-lookup"><span data-stu-id="fabe4-113">The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.</span></span>
-
-## <a name="hardening-instructions-for-a-retail-cloud-pos-computer"></a><span data-ttu-id="fabe4-114">Retail Cloud POS コンピュータの強化手順</span><span class="sxs-lookup"><span data-stu-id="fabe4-114">Hardening instructions for a Retail Cloud POS computer</span></span>
-<span data-ttu-id="fabe4-115">Retail Cloud POS のアクティブ化されたインスタンスを持つオペレーティング システムまたはブラウザーの多層防御の推奨事項を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-115">Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Retail Cloud POS.</span></span> <span data-ttu-id="fabe4-116">設定は、オペレーティング システムの権限の高いアカウントによって有効にするか、設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabe4-116">The settings should be enabled or set by a high-privileged account for the operating system.</span></span> <span data-ttu-id="fabe4-117">Retail Cloud POS は、これらの設定を上書きすることができない低い特権のアカウントで使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabe4-117">Retail Cloud POS should be used by a low-privileged account that can't override those settings.</span></span> <span data-ttu-id="fabe4-118">次のすべての設定を有効にすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-118">We recommend that you enable all the following settings.</span></span> <span data-ttu-id="fabe4-119">それ以外の場合、セキュリティを悪用されやすくなるセキュリティ ループホールができます。</span><span class="sxs-lookup"><span data-stu-id="fabe4-119">Otherwise, you could create a security loophole that will be prone to security exploitation.</span></span>
-
--   <span data-ttu-id="fabe4-120">**必須** - ブラウザーのアドレス バーでスクリプトの実行を無効にします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-120">**Required** - Disable script execution in the browser's address bar.</span></span>
--   <span data-ttu-id="fabe4-121">**必須** - ブラウザーの開発者コンソールを無効にします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-121">**Required** - Disable the browser's developer console.</span></span>
--   <span data-ttu-id="fabe4-122">**必須** - 権限の低いユーザーが Retail Cloud POS にアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabe4-122">**Required** - Retail Cloud POS should be accessed by a low-privileged user.</span></span>
--   <span data-ttu-id="fabe4-123">**必須** - キオスク セッションを有効にするグループ ポリシーを設定します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-123">**Required** - Set up group policies to enable a kiosk session.</span></span>
--   <span data-ttu-id="fabe4-124">**推奨** - ホワイトリストに登録されたウェブサイトのみにアクセスするプロキシを設定します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-124">**Recommended** - Set up a proxy to access only whitelisted websites.</span></span>
-
-## <a name="disable-script-execution-in-the-address-bar-of-the-browser-that-runs-retail-cloud-pos"></a><span data-ttu-id="fabe4-125">Retail Cloud POS を実行するブラウザのアドレスバーでスクリプトの実行を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-125">Disable script execution in the address bar of the browser that runs Retail Cloud POS</span></span>
-### <a name="internet-explorer"></a><span data-ttu-id="fabe4-126">Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-126">Internet Explorer</span></span>
-
-<span data-ttu-id="fabe4-127">Internet Explorer のアドレス バーでスクリプトの実行を無効にするオプションはありません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-127">There is no option to disable script execution in the address bar in Internet Explorer.</span></span> <span data-ttu-id="fabe4-128">1 つの方法は、アドレス バー自体を非表示にすることです。</span><span class="sxs-lookup"><span data-stu-id="fabe4-128">One alternative is to hide the address bar itself.</span></span>
-
-1.  <span data-ttu-id="fabe4-129">Retail Cloud POS URL のショートカットを作成し、各作業者の Microsoft Windows デスクトップにコピーします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-129">Create a shortcut for the Retail Cloud POS URL, and copy it to each store worker's Microsoft Windows desktop.</span></span>
-2.  <span data-ttu-id="fabe4-130">**regedit.exe** を実行し、Internet Explorer アドレス バーを無効にするレジストリを変更します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-130">Run **regedit.exe** to change the registry to disable the Internet Explorer address bar.</span></span> <span data-ttu-id="fabe4-131">\[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\ToolBars\\Restrictions\] "NoNavBar"=dword:00000001</span><span class="sxs-lookup"><span data-stu-id="fabe4-131">\[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\ToolBars\\Restrictions\] "NoNavBar"=dword:00000001</span></span>
-
-### <a name="microsoft-edge"></a><span data-ttu-id="fabe4-132">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fabe4-132">Microsoft Edge</span></span>
-
-<span data-ttu-id="fabe4-133">意図的に、Microsoft Edge はアドレス バーでのスクリプトの実行を防ぎます。</span><span class="sxs-lookup"><span data-stu-id="fabe4-133">By design, Microsoft Edge prevents script execution in the address bar.</span></span> <span data-ttu-id="fabe4-134">したがって、何もする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-134">Therefore, no action is required.</span></span>
-
-## <a name="disable-the-developer-console-in-the-browser-that-runs-retail-cloud-pos"></a><span data-ttu-id="fabe4-135">Retail Cloud POS を実行するブラウザーで開発者コンソールを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-135">Disable the developer console in the browser that runs Retail Cloud POS</span></span>
-### <a name="internet-explorer"></a><span data-ttu-id="fabe4-136">Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-136">Internet Explorer</span></span>
-
-<span data-ttu-id="fabe4-137">グループ ポリシー エディターを使用し、次のグループ ポリシーを有効にして Internet Explorer の開発者コンソールを無効にします。\\管理用テンプレート\\Windows コンポーネント\\Internet Explorer\\ツール バー\\開発者ツール="有効" を無効。</span><span class="sxs-lookup"><span data-stu-id="fabe4-137">Use Group Policy Editor to enable the following group policy to disable the Internet Explorer developer console: \\Administrative Templates\\Windows Components\\Internet Explorer\\Toolbars\\Turn off Developer Tools="Enabled"</span></span>
-
-### <a name="microsoft-edge"></a><span data-ttu-id="fabe4-138">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fabe4-138">Microsoft Edge</span></span>
-
-<span data-ttu-id="fabe4-139">**regedit.exe** を実行し、開発者コンソールを無効にするレジストリを変更します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-139">Run **regedit.exe** to change the registry to disable the developer console.</span></span> <span data-ttu-id="fabe4-140">\[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\F12\] "AllowDeveloperTools"=dword:00000000</span><span class="sxs-lookup"><span data-stu-id="fabe4-140">\[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\F12\] "AllowDeveloperTools"=dword:00000000</span></span>
-
-## <a name="retail-cloud-pos-should-be-accessed-by-a-low-privileged-user"></a><span data-ttu-id="fabe4-141">権限の低いユーザーが Retail Cloud POS にアクセスする必要があります</span><span class="sxs-lookup"><span data-stu-id="fabe4-141">Retail Cloud POS should be accessed by a low-privileged user</span></span>
-<span data-ttu-id="fabe4-142">販売時点管理 (POS) ユーザーは、適用されたポリシーを変更する権限を持たない管理者以外のアカウントである必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabe4-142">A point of sale (POS) user must be a non-administrative account that doesn't have privileges to change applied policies.</span></span>
-
-## <a name="set-up-group-policies-to-enable-a-kiosk-session"></a><span data-ttu-id="fabe4-143">キオスク セッションを有効にするグループ ポリシーを設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-143">Set up group policies to enable a kiosk session</span></span>
-<span data-ttu-id="fabe4-144">Retail Cloud POS ユーザーに次の制限を適用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-144">We recommend that you apply the following restrictions for Retail Cloud POS users:</span></span>
-
--   <span data-ttu-id="fabe4-145">ファイル システムへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-145">Restrict access to the file system.</span></span>
--   <span data-ttu-id="fabe4-146">コントロール パネルへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-146">Restrict access to Control Panel.</span></span>
--   <span data-ttu-id="fabe4-147">リムーバブル ドライブへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-147">Restrict access to removable drives.</span></span>
--   <span data-ttu-id="fabe4-148">コマンドを実行するシェルへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-148">Restrict access to shells that run commands.</span></span>
--   <span data-ttu-id="fabe4-149">レジストリへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-149">Restrict access to the registry.</span></span>
--   <span data-ttu-id="fabe4-150">アプリケーション管理へのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-150">Restrict access to application management.</span></span>
-
-<span data-ttu-id="fabe4-151">次のテーブルに、キオスク モードを有効にするグループ ポリシーを示します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-151">The following table lists the group policies to enable kiosk mode.</span></span> <span data-ttu-id="fabe4-152">一連のポリシーでは、ログイン スクリプトでブラウザーを起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabe4-152">The set of policies requires that you start your browser at the sign-in script.</span></span> <span data-ttu-id="fabe4-153">これらのポリシーは要件に合わせて調整できます。</span><span class="sxs-lookup"><span data-stu-id="fabe4-153">These policies can be adjusted to your requirements.</span></span> <span data-ttu-id="fabe4-154">常に、セキュリティへの影響を評価するか、専門家に相談する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabe4-154">You should always assess any security implications or talk to a specialist.</span></span>
-
-| <span data-ttu-id="fabe4-155">設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-155">Setting</span></span>                                                                                                                                                                  | <span data-ttu-id="fabe4-156">行政単位 (区画)</span><span class="sxs-lookup"><span data-stu-id="fabe4-156">State</span></span>    | <span data-ttu-id="fabe4-157">コメント</span><span class="sxs-lookup"><span data-stu-id="fabe4-157">Comment</span></span> | <span data-ttu-id="fabe4-158">パス</span><span class="sxs-lookup"><span data-stu-id="fabe4-158">Path</span></span>                                                                        |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------|-----------------------------------------------------------------------------|
-| <span data-ttu-id="fabe4-159">スクリーン セーバーの有効化</span><span class="sxs-lookup"><span data-stu-id="fabe4-159">Enable screen saver</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-160">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-160">Disabled</span></span> | <span data-ttu-id="fabe4-161">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-161">No</span></span>      | <span data-ttu-id="fabe4-162">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-162">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-163">DFS ルートの公開をできるように許可します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-163">Allow DFS roots to be published</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-164">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-164">Disabled</span></span> | <span data-ttu-id="fabe4-165">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-165">No</span></span>      | <span data-ttu-id="fabe4-166">\\共有フォルダー</span><span class="sxs-lookup"><span data-stu-id="fabe4-166">\\Shared Folders</span></span>                                                            |
-| <span data-ttu-id="fabe4-167">共有フォルダーの公開を許可</span><span class="sxs-lookup"><span data-stu-id="fabe4-167">Allow shared folders to be published</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-168">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-168">Disabled</span></span> | <span data-ttu-id="fabe4-169">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-169">No</span></span>      | <span data-ttu-id="fabe4-170">\\共有フォルダー</span><span class="sxs-lookup"><span data-stu-id="fabe4-170">\\Shared Folders</span></span>                                                            |
-| <span data-ttu-id="fabe4-171">スタート メニューに検索インターネット リンクを追加します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-171">Add Search Internet link to Start Menu</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-172">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-172">Disabled</span></span> | <span data-ttu-id="fabe4-173">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-173">No</span></span>      | <span data-ttu-id="fabe4-174">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-174">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-175">タスク バーにサイド リンク バーを表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-175">Show Quick Launch on Taskbar</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-176">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-176">Disabled</span></span> | <span data-ttu-id="fabe4-177">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-177">No</span></span>      | <span data-ttu-id="fabe4-178">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-178">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-179">ユーザーが [スタート] に移動したときにアプリケーションのビューを自動的に表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-179">Show the Apps view automatically when the user goes to Start</span></span>                                                                                                             | <span data-ttu-id="fabe4-180">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-180">Disabled</span></span> | <span data-ttu-id="fabe4-181">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-181">No</span></span>      | <span data-ttu-id="fabe4-182">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-182">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-183">起動時に [別のユーザーとして実行] コマンドを表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-183">Show "Run as different user" command on Start</span></span>                                                                                                                            | <span data-ttu-id="fabe4-184">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-184">Disabled</span></span> | <span data-ttu-id="fabe4-185">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-185">No</span></span>      | <span data-ttu-id="fabe4-186">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-186">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-187">スタート メニューへの実行コマンドの追加</span><span class="sxs-lookup"><span data-stu-id="fabe4-187">Add the Run command to the Start Menu</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-188">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-188">Disabled</span></span> | <span data-ttu-id="fabe4-189">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-189">No</span></span>      | <span data-ttu-id="fabe4-190">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-190">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-191">Windows ロゴ キーを押すと、ユーザーが使用しているディスプレイに [スタート] を表示する</span><span class="sxs-lookup"><span data-stu-id="fabe4-191">Show Start on the display the user is using when they press the Windows logo key</span></span>                                                                                         | <span data-ttu-id="fabe4-192">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-192">Disabled</span></span> | <span data-ttu-id="fabe4-193">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-193">No</span></span>      | <span data-ttu-id="fabe4-194">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-194">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-195">Windows ストア アプリをタスク バーを表示する</span><span class="sxs-lookup"><span data-stu-id="fabe4-195">Show Windows Store apps on the taskbar</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-196">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-196">Disabled</span></span> | <span data-ttu-id="fabe4-197">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-197">No</span></span>      | <span data-ttu-id="fabe4-198">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-198">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-199">シェル プロトコルの保護モードをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-199">Turn off shell protocol protected mode</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-200">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-200">Disabled</span></span> | <span data-ttu-id="fabe4-201">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-201">No</span></span>      | <span data-ttu-id="fabe4-202">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-202">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-203">既定でメニュー バーをオンにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-203">Turn on menu bar by default</span></span>                                                                                                                                              | <span data-ttu-id="fabe4-204">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-204">Disabled</span></span> | <span data-ttu-id="fabe4-205">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-205">No</span></span>      | <span data-ttu-id="fabe4-206">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-206">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-207">スクリプト実行をオンにします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-207">Turn on Script Execution</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-208">無効</span><span class="sxs-lookup"><span data-stu-id="fabe4-208">Disabled</span></span> | <span data-ttu-id="fabe4-209">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-209">No</span></span>      | <span data-ttu-id="fabe4-210">\\Windows コンポーネント\\Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="fabe4-210">\\Windows Components\\Windows PowerShell</span></span>                                    |
-| <span data-ttu-id="fabe4-211">「CD-ROM またはフロッピーディスクからプログラムの追加」オプションの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-211">Hide the "Add a program from CD-ROM or floppy disk" option</span></span>                                                                                                               | <span data-ttu-id="fabe4-212">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-212">Enabled</span></span>  | <span data-ttu-id="fabe4-213">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-213">No</span></span>      | <span data-ttu-id="fabe4-214">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-214">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-215">「Microsoft からプログラムの追加」オプションの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-215">Hide the "Add programs from Microsoft" option</span></span>                                                                                                                            | <span data-ttu-id="fabe4-216">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-216">Enabled</span></span>  | <span data-ttu-id="fabe4-217">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-217">No</span></span>      | <span data-ttu-id="fabe4-218">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-218">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-219">「ネットワークからプログラムの追加」オプションの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-219">Hide the "Add programs from your network" option</span></span>                                                                                                                         | <span data-ttu-id="fabe4-220">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-220">Enabled</span></span>  | <span data-ttu-id="fabe4-221">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-221">No</span></span>      | <span data-ttu-id="fabe4-222">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-222">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-223">新しいプログラムの追加ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-223">Hide Add New Programs page</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-224">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-224">Enabled</span></span>  | <span data-ttu-id="fabe4-225">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-225">No</span></span>      | <span data-ttu-id="fabe4-226">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-226">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-227">プログラムの追加と削除を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-227">Remove Add or Remove Programs</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-228">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-228">Enabled</span></span>  | <span data-ttu-id="fabe4-229">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-229">No</span></span>      | <span data-ttu-id="fabe4-230">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-230">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-231">プログラム アクセスおよび既定の設定ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-231">Hide the Set Program Access and Defaults page</span></span>                                                                                                                            | <span data-ttu-id="fabe4-232">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-232">Enabled</span></span>  | <span data-ttu-id="fabe4-233">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-233">No</span></span>      | <span data-ttu-id="fabe4-234">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-234">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-235">プログラムの変更または削除ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-235">Hide Change or Remove Programs page</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-236">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-236">Enabled</span></span>  | <span data-ttu-id="fabe4-237">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-237">No</span></span>      | <span data-ttu-id="fabe4-238">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-238">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-239">コンポーネント ウィザードに直接移動します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-239">Go directly to Components Wizard</span></span>                                                                                                                                         | <span data-ttu-id="fabe4-240">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-240">Enabled</span></span>  | <span data-ttu-id="fabe4-241">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-241">No</span></span>      | <span data-ttu-id="fabe4-242">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-242">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-243">サポート情報を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-243">Remove Support Information</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-244">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-244">Enabled</span></span>  | <span data-ttu-id="fabe4-245">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-245">No</span></span>      | <span data-ttu-id="fabe4-246">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-246">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-247">Windows コンポーネントの追加と削除の非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-247">Hide Add/Remove Windows Components page</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-248">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-248">Enabled</span></span>  | <span data-ttu-id="fabe4-249">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-249">No</span></span>      | <span data-ttu-id="fabe4-250">\\コントロール パネル\\プログラムの追加と削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-250">\\Control Panel\\Add or Remove Programs</span></span>                                     |
-| <span data-ttu-id="fabe4-251">コントロール パネルの表示を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-251">Disable the Display Control Panel</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-252">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-252">Enabled</span></span>  | <span data-ttu-id="fabe4-253">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-253">No</span></span>      | <span data-ttu-id="fabe4-254">\\コントロール パネル\\表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-254">\\Control Panel\\Display</span></span>                                                    |
-| <span data-ttu-id="fabe4-255">設定タブの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-255">Hide Settings tab</span></span>                                                                                                                                                        | <span data-ttu-id="fabe4-256">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-256">Enabled</span></span>  | <span data-ttu-id="fabe4-257">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-257">No</span></span>      | <span data-ttu-id="fabe4-258">\\コントロール パネル\\表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-258">\\Control Panel\\Display</span></span>                                                    |
-| <span data-ttu-id="fabe4-259">変化する配色を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-259">Prevent changing color scheme</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-260">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-260">Enabled</span></span>  | <span data-ttu-id="fabe4-261">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-261">No</span></span>      | <span data-ttu-id="fabe4-262">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-262">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-263">テーマの変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-263">Prevent changing theme</span></span>                                                                                                                                                   | <span data-ttu-id="fabe4-264">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-264">Enabled</span></span>  | <span data-ttu-id="fabe4-265">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-265">No</span></span>      | <span data-ttu-id="fabe4-266">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-266">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-267">Windows およびボタンの視覚スタイルの変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-267">Prevent changing visual style for windows and buttons</span></span>                                                                                                                    | <span data-ttu-id="fabe4-268">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-268">Enabled</span></span>  | <span data-ttu-id="fabe4-269">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-269">No</span></span>      | <span data-ttu-id="fabe4-270">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-270">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-271">フォント サイズの表示スタイルの選択を禁止</span><span class="sxs-lookup"><span data-stu-id="fabe4-271">Prohibit selection of visual style font size</span></span>                                                                                                                             | <span data-ttu-id="fabe4-272">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-272">Enabled</span></span>  | <span data-ttu-id="fabe4-273">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-273">No</span></span>      | <span data-ttu-id="fabe4-274">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-274">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-275">色や外観の変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-275">Prevent changing color and appearance</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-276">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-276">Enabled</span></span>  | <span data-ttu-id="fabe4-277">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-277">No</span></span>      | <span data-ttu-id="fabe4-278">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-278">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-279">デスクトップ背景の変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-279">Prevent changing desktop background</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-280">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-280">Enabled</span></span>  | <span data-ttu-id="fabe4-281">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-281">No</span></span>      | <span data-ttu-id="fabe4-282">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-282">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-283">デスクトップ アイコンの変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-283">Prevent changing desktop icons</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-284">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-284">Enabled</span></span>  | <span data-ttu-id="fabe4-285">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-285">No</span></span>      | <span data-ttu-id="fabe4-286">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-286">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-287">マウス ポインターの変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-287">Prevent changing mouse pointers</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-288">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-288">Enabled</span></span>  | <span data-ttu-id="fabe4-289">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-289">No</span></span>      | <span data-ttu-id="fabe4-290">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-290">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-291">スクリーン セーバーの変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-291">Prevent changing screen saver</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-292">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-292">Enabled</span></span>  | <span data-ttu-id="fabe4-293">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-293">No</span></span>      | <span data-ttu-id="fabe4-294">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-294">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-295">サウンドの変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-295">Prevent changing sounds</span></span>                                                                                                                                                  | <span data-ttu-id="fabe4-296">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-296">Enabled</span></span>  | <span data-ttu-id="fabe4-297">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-297">No</span></span>      | <span data-ttu-id="fabe4-298">\\コントロール パネル\\個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-298">\\Control Panel\\Personalization</span></span>                                            |
-| <span data-ttu-id="fabe4-299">プリンターの追加を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-299">Prevent addition of printers</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-300">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-300">Enabled</span></span>  | <span data-ttu-id="fabe4-301">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-301">No</span></span>      | <span data-ttu-id="fabe4-302">\\コントロール パネル\\プリンター</span><span class="sxs-lookup"><span data-stu-id="fabe4-302">\\Control Panel\\Printers</span></span>                                                   |
-| <span data-ttu-id="fabe4-303">プリンターの削除を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-303">Prevent deletion of printers</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-304">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-304">Enabled</span></span>  | <span data-ttu-id="fabe4-305">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-305">No</span></span>      | <span data-ttu-id="fabe4-306">\\コントロール パネル\\プリンター</span><span class="sxs-lookup"><span data-stu-id="fabe4-306">\\Control Panel\\Printers</span></span>                                                   |
-| <span data-ttu-id="fabe4-307">「プログラム アクセスおよびコンピューター既定の設定」ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-307">Hide "Set Program Access and Computer Defaults" page</span></span>                                                                                                                     | <span data-ttu-id="fabe4-308">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-308">Enabled</span></span>  | <span data-ttu-id="fabe4-309">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-309">No</span></span>      | <span data-ttu-id="fabe4-310">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-310">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-311">「プログラムの取得」ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-311">Hide "Get Programs" page</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-312">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-312">Enabled</span></span>  | <span data-ttu-id="fabe4-313">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-313">No</span></span>      | <span data-ttu-id="fabe4-314">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-314">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-315">「インストールされた更新プログラム」ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-315">Hide "Installed Updates" page</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-316">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-316">Enabled</span></span>  | <span data-ttu-id="fabe4-317">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-317">No</span></span>      | <span data-ttu-id="fabe4-318">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-318">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-319">「プログラムと機能」ページの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-319">Hide "Programs and Features" page</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-320">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-320">Enabled</span></span>  | <span data-ttu-id="fabe4-321">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-321">No</span></span>      | <span data-ttu-id="fabe4-322">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-322">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-323">プログラムのコントロール パネルの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-323">Hide the Programs Control Panel</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-324">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-324">Enabled</span></span>  | <span data-ttu-id="fabe4-325">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-325">No</span></span>      | <span data-ttu-id="fabe4-326">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-326">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-327">「Windows の機能」の非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-327">Hide "Windows Features"</span></span>                                                                                                                                                  | <span data-ttu-id="fabe4-328">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-328">Enabled</span></span>  | <span data-ttu-id="fabe4-329">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-329">No</span></span>      | <span data-ttu-id="fabe4-330">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-330">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-331">「Windows マーケットプレース」の非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-331">Hide "Windows Marketplace"</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-332">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-332">Enabled</span></span>  | <span data-ttu-id="fabe4-333">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-333">No</span></span>      | <span data-ttu-id="fabe4-334">\\コントロール パネル\\プログラム</span><span class="sxs-lookup"><span data-stu-id="fabe4-334">\\Control Panel\\Programs</span></span>                                                   |
-| <span data-ttu-id="fabe4-335">自動学習をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-335">Turn off automatic learning</span></span>                                                                                                                                              | <span data-ttu-id="fabe4-336">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-336">Enabled</span></span>  | <span data-ttu-id="fabe4-337">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-337">No</span></span>      | <span data-ttu-id="fabe4-338">\\コントロール パネル\\地域と言語のオプション\\手書きの個人用設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-338">\\Control Panel\\Regional and Language Options\\Handwriting personalization</span></span> |
-| <span data-ttu-id="fabe4-339">地域と言語オプションの管理オプションの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-339">Hide Regional and Language Options administrative options</span></span>                                                                                                                | <span data-ttu-id="fabe4-340">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-340">Enabled</span></span>  | <span data-ttu-id="fabe4-341">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-341">No</span></span>      | <span data-ttu-id="fabe4-342">\\コントロール パネル\\地域と言語のオプション</span><span class="sxs-lookup"><span data-stu-id="fabe4-342">\\Control Panel\\Regional and Language Options</span></span>                              |
-| <span data-ttu-id="fabe4-343">デスクトップ上のすべての項目の非表示および無効化</span><span class="sxs-lookup"><span data-stu-id="fabe4-343">Hide and disable all items on the desktop</span></span>                                                                                                                                | <span data-ttu-id="fabe4-344">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-344">Enabled</span></span>  | <span data-ttu-id="fabe4-345">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-345">No</span></span>      | <span data-ttu-id="fabe4-346">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-346">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-347">デスクトップ クリーンアップ ウィザードを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-347">Remove the Desktop Cleanup Wizard</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-348">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-348">Enabled</span></span>  | <span data-ttu-id="fabe4-349">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-349">No</span></span>      | <span data-ttu-id="fabe4-350">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-350">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-351">デスクトップでの Internet Explorer アイコンの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-351">Hide Internet Explorer icon on desktop</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-352">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-352">Enabled</span></span>  | <span data-ttu-id="fabe4-353">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-353">No</span></span>      | <span data-ttu-id="fabe4-354">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-354">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-355">デスクトップのコンピューター アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-355">Remove Computer icon on the desktop</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-356">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-356">Enabled</span></span>  | <span data-ttu-id="fabe4-357">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-357">No</span></span>      | <span data-ttu-id="fabe4-358">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-358">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-359">デスクトップのマイ ドキュメント アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-359">Remove My Documents icon on the desktop</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-360">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-360">Enabled</span></span>  | <span data-ttu-id="fabe4-361">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-361">No</span></span>      | <span data-ttu-id="fabe4-362">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-362">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-363">デスクトップでネットワークの場所のアイコンの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-363">Hide Network Locations icon on desktop</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-364">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-364">Enabled</span></span>  | <span data-ttu-id="fabe4-365">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-365">No</span></span>      | <span data-ttu-id="fabe4-366">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-366">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-367">コンピュータ アイコン コンテキスト メニューからプロパティを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-367">Remove Properties from the Computer icon context menu</span></span>                                                                                                                    | <span data-ttu-id="fabe4-368">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-368">Enabled</span></span>  | <span data-ttu-id="fabe4-369">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-369">No</span></span>      | <span data-ttu-id="fabe4-370">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-370">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-371">ドキュメント アイコン コンテキスト メニューからプロパティを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-371">Remove Properties from the Documents icon context menu</span></span>                                                                                                                   | <span data-ttu-id="fabe4-372">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-372">Enabled</span></span>  | <span data-ttu-id="fabe4-373">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-373">No</span></span>      | <span data-ttu-id="fabe4-374">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-374">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-375">最近開いたドキュメントの共有をネットワークの場所に追加しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-375">Do not add shares of recently opened documents to Network Locations</span></span>                                                                                                      | <span data-ttu-id="fabe4-376">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-376">Enabled</span></span>  | <span data-ttu-id="fabe4-377">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-377">No</span></span>      | <span data-ttu-id="fabe4-378">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-378">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-379">デスクトップから [ごみ箱] アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-379">Remove Recycle Bin icon from desktop</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-380">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-380">Enabled</span></span>  | <span data-ttu-id="fabe4-381">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-381">No</span></span>      | <span data-ttu-id="fabe4-382">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-382">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-383">ごみ箱コンテキスト メニューからプロパティを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-383">Remove Properties from the Recycle Bin context menu</span></span>                                                                                                                      | <span data-ttu-id="fabe4-384">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-384">Enabled</span></span>  | <span data-ttu-id="fabe4-385">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-385">No</span></span>      | <span data-ttu-id="fabe4-386">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-386">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-387">終了時に、設定を保存しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-387">Do not save settings at exit</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-388">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-388">Enabled</span></span>  | <span data-ttu-id="fabe4-389">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-389">No</span></span>      | <span data-ttu-id="fabe4-390">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-390">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-391">マウス ジェスチャーを最小化する Aero Shake ウィンドウをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-391">Turn off Aero Shake window minimizing mouse gesture</span></span>                                                                                                                      | <span data-ttu-id="fabe4-392">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-392">Enabled</span></span>  | <span data-ttu-id="fabe4-393">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-393">No</span></span>      | <span data-ttu-id="fabe4-394">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-394">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-395">タスク バーのツールバーの追加、ドラッグ アンド ドロップ、終了を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-395">Prevent adding, dragging dropping and closing the Taskbar's toolbars</span></span>                                                                                                     |          |         | <span data-ttu-id="fabe4-396">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-396">Enabled</span></span>                                                                     |
-| <span data-ttu-id="fabe4-397">ツール バーの調整を禁止</span><span class="sxs-lookup"><span data-stu-id="fabe4-397">Prohibit adjusting desktop toolbars</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-398">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-398">Enabled</span></span>  | <span data-ttu-id="fabe4-399">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-399">No</span></span>      | <span data-ttu-id="fabe4-400">\\デスクトップ</span><span class="sxs-lookup"><span data-stu-id="fabe4-400">\\Desktop</span></span>                                                                   |
-| <span data-ttu-id="fabe4-401">全画面のサイズまたはメニュー サイズのいずれかで強制スタート</span><span class="sxs-lookup"><span data-stu-id="fabe4-401">Force Start to be either full screen size or menu size</span></span>                                                                                                                   | <span data-ttu-id="fabe4-402">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-402">Enabled</span></span>  | <span data-ttu-id="fabe4-403">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-403">No</span></span>      | <span data-ttu-id="fabe4-404">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-404">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-405">サインイン時に、開始ではなくデスクトップに移動します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-405">Go to the desktop instead of Start when signing in</span></span>                                                                                                                       | <span data-ttu-id="fabe4-406">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-406">Enabled</span></span>  | <span data-ttu-id="fabe4-407">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-407">No</span></span>      | <span data-ttu-id="fabe4-408">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-408">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-409">パーソナライズされたメニューをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-409">Turn off personalized menus</span></span>                                                                                                                                              | <span data-ttu-id="fabe4-410">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-410">Enabled</span></span>  | <span data-ttu-id="fabe4-411">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-411">No</span></span>      | <span data-ttu-id="fabe4-412">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-412">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-413">タスク バーのロック</span><span class="sxs-lookup"><span data-stu-id="fabe4-413">Lock the Taskbar</span></span>                                                                                                                                                         | <span data-ttu-id="fabe4-414">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-414">Enabled</span></span>  | <span data-ttu-id="fabe4-415">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-415">No</span></span>      | <span data-ttu-id="fabe4-416">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-416">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-417">通知領域のクリーンアップをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-417">Turn off notification area cleanup</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-418">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-418">Enabled</span></span>  | <span data-ttu-id="fabe4-419">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-419">No</span></span>      | <span data-ttu-id="fabe4-420">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-420">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-421">[スタート] メニューの項目のバルーン ヒントを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-421">Remove Balloon Tips on Start Menu items</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-422">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-422">Enabled</span></span>  | <span data-ttu-id="fabe4-423">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-423">No</span></span>      | <span data-ttu-id="fabe4-424">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-424">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-425">ユーザーが開始画面をカスタマイズできないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-425">Prevent users from customizing their Start Screen</span></span>                                                                                                                        | <span data-ttu-id="fabe4-426">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-426">Enabled</span></span>  | <span data-ttu-id="fabe4-427">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-427">No</span></span>      | <span data-ttu-id="fabe4-428">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-428">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-429">[スタート] メニューから共通プログラム グループを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-429">Remove common program groups from Start Menu</span></span>                                                                                                                             | <span data-ttu-id="fabe4-430">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-430">Enabled</span></span>  | <span data-ttu-id="fabe4-431">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-431">No</span></span>      | <span data-ttu-id="fabe4-432">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-432">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-433">スタート メニューから [お気に入り] メニューを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-433">Remove Favorites menu from Start Menu</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-434">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-434">Enabled</span></span>  | <span data-ttu-id="fabe4-435">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-435">No</span></span>      | <span data-ttu-id="fabe4-436">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-436">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-437">スタート メニューから検索リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-437">Remove Search link from Start Menu</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-438">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-438">Enabled</span></span>  | <span data-ttu-id="fabe4-439">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-439">No</span></span>      | <span data-ttu-id="fabe4-440">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-440">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-441">スタート メニューからよく使うプログラムの一覧を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-441">Remove frequent programs list from the Start Menu</span></span>                                                                                                                        | <span data-ttu-id="fabe4-442">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-442">Enabled</span></span>  | <span data-ttu-id="fabe4-443">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-443">No</span></span>      | <span data-ttu-id="fabe4-444">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-444">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-445">スタート メニューからゲーム リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-445">Remove Games link from Start Menu</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-446">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-446">Enabled</span></span>  | <span data-ttu-id="fabe4-447">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-447">No</span></span>      | <span data-ttu-id="fabe4-448">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-448">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-449">スタート メニューから [ヘルプ] メニューを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-449">Remove Help menu from Start Menu</span></span>                                                                                                                                         | <span data-ttu-id="fabe4-450">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-450">Enabled</span></span>  | <span data-ttu-id="fabe4-451">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-451">No</span></span>      | <span data-ttu-id="fabe4-452">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-452">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-453">ユーザーの追跡をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-453">Turn off user tracking</span></span>                                                                                                                                                   | <span data-ttu-id="fabe4-454">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-454">Enabled</span></span>  | <span data-ttu-id="fabe4-455">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-455">No</span></span>      | <span data-ttu-id="fabe4-456">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-456">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-457">スタート メニューからすべてのプログラムの一覧を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-457">Remove All Programs list from the Start menu</span></span>                                                                                                                             | <span data-ttu-id="fabe4-458">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-458">Enabled</span></span>  | <span data-ttu-id="fabe4-459">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-459">No</span></span>      | <span data-ttu-id="fabe4-460">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-460">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-461">スタート メニューからネットワーク接続を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-461">Remove Network Connections from Start Menu</span></span>                                                                                                                               | <span data-ttu-id="fabe4-462">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-462">Enabled</span></span>  | <span data-ttu-id="fabe4-463">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-463">No</span></span>      | <span data-ttu-id="fabe4-464">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-464">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-465">スタート メニューからピン留めされたプログラムの一覧を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-465">Remove pinned programs list from the Start Menu</span></span>                                                                                                                          | <span data-ttu-id="fabe4-466">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-466">Enabled</span></span>  | <span data-ttu-id="fabe4-467">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-467">No</span></span>      | <span data-ttu-id="fabe4-468">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-468">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-469">最近使用したファイルの履歴を保存しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-469">Do not keep history of recently opened documents</span></span>                                                                                                                         | <span data-ttu-id="fabe4-470">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-470">Enabled</span></span>  | <span data-ttu-id="fabe4-471">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-471">No</span></span>      | <span data-ttu-id="fabe4-472">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-472">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-473">スタート メニューから [最近使った項目] メニューを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-473">Remove Recent Items menu from Start Menu</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-474">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-474">Enabled</span></span>  | <span data-ttu-id="fabe4-475">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-475">No</span></span>      | <span data-ttu-id="fabe4-476">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-476">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-477">シェルのショートカットを解決する際は、検索に基づくメソッドを使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-477">Do not use the search-based method when resolving shell shortcuts</span></span>                                                                                                        | <span data-ttu-id="fabe4-478">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-478">Enabled</span></span>  | <span data-ttu-id="fabe4-479">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-479">No</span></span>      | <span data-ttu-id="fabe4-480">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-480">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-481">シェルのショートカットを解決する際は、追跡に基づくメソッドを使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-481">Do not use the tracking-based method when resolving shell shortcuts</span></span>                                                                                                      | <span data-ttu-id="fabe4-482">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-482">Enabled</span></span>  | <span data-ttu-id="fabe4-483">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-483">No</span></span>      | <span data-ttu-id="fabe4-484">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-484">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-485">スタート メニューから [ファイル名を指定して実行] メニューを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-485">Remove Run menu from Start Menu</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-486">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-486">Enabled</span></span>  | <span data-ttu-id="fabe4-487">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-487">No</span></span>      | <span data-ttu-id="fabe4-488">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-488">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-489">スタート メニューから既定のプログラム リンクを削除します。</span><span class="sxs-lookup"><span data-stu-id="fabe4-489">Remove Default Programs link from the Start menu.</span></span>                                                                                                                        | <span data-ttu-id="fabe4-490">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-490">Enabled</span></span>  | <span data-ttu-id="fabe4-491">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-491">No</span></span>      | <span data-ttu-id="fabe4-492">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-492">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-493">スタート メニューからドキュメント アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-493">Remove Documents icon from Start Menu</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-494">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-494">Enabled</span></span>  | <span data-ttu-id="fabe4-495">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-495">No</span></span>      | <span data-ttu-id="fabe4-496">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-496">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-497">スタート メニューからミュージック アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-497">Remove Music icon from Start Menu</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-498">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-498">Enabled</span></span>  | <span data-ttu-id="fabe4-499">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-499">No</span></span>      | <span data-ttu-id="fabe4-500">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-500">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-501">スタート メニューからネットワーク アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-501">Remove Network icon from Start Menu</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-502">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-502">Enabled</span></span>  | <span data-ttu-id="fabe4-503">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-503">No</span></span>      | <span data-ttu-id="fabe4-504">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-504">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-505">スタート メニューからピクチャ アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-505">Remove Pictures icon from Start Menu</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-506">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-506">Enabled</span></span>  | <span data-ttu-id="fabe4-507">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-507">No</span></span>      | <span data-ttu-id="fabe4-508">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-508">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-509">コミュニケーションを検索しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-509">Do not search communications</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-510">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-510">Enabled</span></span>  | <span data-ttu-id="fabe4-511">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-511">No</span></span>      | <span data-ttu-id="fabe4-512">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-512">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-513">コンピューターを検索リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-513">Remove Search Computer link</span></span>                                                                                                                                              | <span data-ttu-id="fabe4-514">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-514">Enabled</span></span>  | <span data-ttu-id="fabe4-515">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-515">No</span></span>      | <span data-ttu-id="fabe4-516">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-516">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-517">さらに結果を表示/すべての場所の検索リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-517">Remove See More Results / Search Everywhere link</span></span>                                                                                                                         | <span data-ttu-id="fabe4-518">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-518">Enabled</span></span>  | <span data-ttu-id="fabe4-519">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-519">No</span></span>      | <span data-ttu-id="fabe4-520">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-520">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-521">ファイルを検索しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-521">Do not search for files</span></span>                                                                                                                                                  | <span data-ttu-id="fabe4-522">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-522">Enabled</span></span>  | <span data-ttu-id="fabe4-523">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-523">No</span></span>      | <span data-ttu-id="fabe4-524">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-524">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-525">インターネットを検索しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-525">Do not search Internet</span></span>                                                                                                                                                   | <span data-ttu-id="fabe4-526">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-526">Enabled</span></span>  | <span data-ttu-id="fabe4-527">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-527">No</span></span>      | <span data-ttu-id="fabe4-528">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-528">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-529">プログラムやコントロール パネルの項目を検索しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-529">Do not search programs and Control Panel items</span></span>                                                                                                                           | <span data-ttu-id="fabe4-530">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-530">Enabled</span></span>  | <span data-ttu-id="fabe4-531">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-531">No</span></span>      | <span data-ttu-id="fabe4-532">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-532">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-533">[設定] メニューのプログラムを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-533">Remove programs on Settings menu</span></span>                                                                                                                                         | <span data-ttu-id="fabe4-534">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-534">Enabled</span></span>  | <span data-ttu-id="fabe4-535">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-535">No</span></span>      | <span data-ttu-id="fabe4-536">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-536">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-537">タスク バーとスタート メニューの設定を変更できないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-537">Prevent changes to Taskbar and Start Menu Settings</span></span>                                                                                                                       | <span data-ttu-id="fabe4-538">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-538">Enabled</span></span>  | <span data-ttu-id="fabe4-539">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-539">No</span></span>      | <span data-ttu-id="fabe4-540">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-540">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-541">スタート メニューからダウンロード リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-541">Remove Downloads link from Start Menu</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-542">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-542">Enabled</span></span>  | <span data-ttu-id="fabe4-543">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-543">No</span></span>      | <span data-ttu-id="fabe4-544">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-544">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-545">スタート メニューからホームグループ リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-545">Remove Homegroup link from Start Menu</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-546">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-546">Enabled</span></span>  | <span data-ttu-id="fabe4-547">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-547">No</span></span>      | <span data-ttu-id="fabe4-548">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-548">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-549">スタート メニューから録画された TV リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-549">Remove Recorded TV link from Start Menu</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-550">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-550">Enabled</span></span>  | <span data-ttu-id="fabe4-551">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-551">No</span></span>      | <span data-ttu-id="fabe4-552">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-552">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-553">スタート メニューからユーザーのフォルダーを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-553">Remove user's folders from the Start Menu</span></span>                                                                                                                                | <span data-ttu-id="fabe4-554">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-554">Enabled</span></span>  | <span data-ttu-id="fabe4-555">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-555">No</span></span>      | <span data-ttu-id="fabe4-556">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-556">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-557">スタート メニューからビデオ リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-557">Remove Videos link from Start Menu</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-558">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-558">Enabled</span></span>  | <span data-ttu-id="fabe4-559">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-559">No</span></span>      | <span data-ttu-id="fabe4-560">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-560">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-561">従来のスタート メニューの強制</span><span class="sxs-lookup"><span data-stu-id="fabe4-561">Force classic Start Menu</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-562">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-562">Enabled</span></span>  | <span data-ttu-id="fabe4-563">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-563">No</span></span>      | <span data-ttu-id="fabe4-564">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-564">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-565">システム通知領域から時計を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-565">Remove Clock from the system notification area</span></span>                                                                                                                           | <span data-ttu-id="fabe4-566">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-566">Enabled</span></span>  | <span data-ttu-id="fabe4-567">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-567">No</span></span>      | <span data-ttu-id="fabe4-568">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-568">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-569">タスク バー項目のグループ化を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-569">Prevent grouping of taskbar items</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-570">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-570">Enabled</span></span>  | <span data-ttu-id="fabe4-571">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-571">No</span></span>      | <span data-ttu-id="fabe4-572">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-572">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-573">タスク バーで顧客ツールバーを表示しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-573">Do not display any custom toolbars in the taskbar</span></span>                                                                                                                        | <span data-ttu-id="fabe4-574">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-574">Enabled</span></span>  | <span data-ttu-id="fabe4-575">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-575">No</span></span>      | <span data-ttu-id="fabe4-576">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-576">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-577">タスク バーのコンテキスト メニューへのアクセス許可を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-577">Remove access to the context menus for the taskbar</span></span>                                                                                                                       | <span data-ttu-id="fabe4-578">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-578">Enabled</span></span>  | <span data-ttu-id="fabe4-579">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-579">No</span></span>      | <span data-ttu-id="fabe4-580">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-580">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-581">通知領域の非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-581">Hide the notification area</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-582">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-582">Enabled</span></span>  | <span data-ttu-id="fabe4-583">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-583">No</span></span>      | <span data-ttu-id="fabe4-584">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-584">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-585">ユーザーが [スタート] からアプリケーションをアンインストールできないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-585">Prevent users from uninstalling applications from Start</span></span>                                                                                                                  | <span data-ttu-id="fabe4-586">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-586">Enabled</span></span>  | <span data-ttu-id="fabe4-587">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-587">No</span></span>      | <span data-ttu-id="fabe4-588">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-588">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-589">スタート メニューからユーザー フォルダー リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-589">Remove user folder link from Start Menu</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-590">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-590">Enabled</span></span>  | <span data-ttu-id="fabe4-591">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-591">No</span></span>      | <span data-ttu-id="fabe4-592">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-592">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-593">スタート メニューからユーザー名を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-593">Remove user name from Start Menu</span></span>                                                                                                                                         | <span data-ttu-id="fabe4-594">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-594">Enabled</span></span>  | <span data-ttu-id="fabe4-595">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-595">No</span></span>      | <span data-ttu-id="fabe4-596">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-596">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-597">Windows Update へのリンクおよびアクセスを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-597">Remove links and access to Windows Update</span></span>                                                                                                                                | <span data-ttu-id="fabe4-598">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-598">Enabled</span></span>  | <span data-ttu-id="fabe4-599">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-599">No</span></span>      | <span data-ttu-id="fabe4-600">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-600">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-601">スタート メニューから [PC の固定解除] ボタンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-601">Remove the "Undock PC" button from the Start Menu</span></span>                                                                                                                        | <span data-ttu-id="fabe4-602">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-602">Enabled</span></span>  | <span data-ttu-id="fabe4-603">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-603">No</span></span>      | <span data-ttu-id="fabe4-604">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-604">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-605">通知とアクション センターを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-605">Remove Notifications and Action Center</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-606">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-606">Enabled</span></span>  | <span data-ttu-id="fabe4-607">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-607">No</span></span>      | <span data-ttu-id="fabe4-608">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-608">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-609">バルーン通知をトーストとして表示しないようにします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-609">Disable showing balloon notifications as toasts.</span></span>                                                                                                                         | <span data-ttu-id="fabe4-610">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-610">Enabled</span></span>  | <span data-ttu-id="fabe4-611">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-611">No</span></span>      | <span data-ttu-id="fabe4-612">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-612">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-613">セキュリティと保守アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-613">Remove the Security and Maintenance icon</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-614">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-614">Enabled</span></span>  | <span data-ttu-id="fabe4-615">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-615">No</span></span>      | <span data-ttu-id="fabe4-616">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-616">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-617">ネットワーク アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-617">Remove the networking icon</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-618">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-618">Enabled</span></span>  | <span data-ttu-id="fabe4-619">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-619">No</span></span>      | <span data-ttu-id="fabe4-620">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-620">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-621">バッテリ メーターを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-621">Remove the battery meter</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-622">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-622">Enabled</span></span>  | <span data-ttu-id="fabe4-623">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-623">No</span></span>      | <span data-ttu-id="fabe4-624">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-624">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-625">音量コントロール アイコンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-625">Remove the volume control icon</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-626">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-626">Enabled</span></span>  | <span data-ttu-id="fabe4-627">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-627">No</span></span>      | <span data-ttu-id="fabe4-628">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-628">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-629">フィーチャー広告バルーン通知をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-629">Turn off feature advertisement balloon notifications</span></span>                                                                                                                     | <span data-ttu-id="fabe4-630">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-630">Enabled</span></span>  | <span data-ttu-id="fabe4-631">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-631">No</span></span>      | <span data-ttu-id="fabe4-632">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-632">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-633">ストア アプリをタスクバーに固定することを許可しません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-633">Do not allow pinning Store app to the Taskbar</span></span>                                                                                                                            | <span data-ttu-id="fabe4-634">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-634">Enabled</span></span>  | <span data-ttu-id="fabe4-635">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-635">No</span></span>      | <span data-ttu-id="fabe4-636">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-636">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-637">項目をジャンプ リストに固定することを許可しません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-637">Do not allow pinning items in Jump Lists</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-638">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-638">Enabled</span></span>  | <span data-ttu-id="fabe4-639">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-639">No</span></span>      | <span data-ttu-id="fabe4-640">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-640">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-641">プログラムをタスクバーに固定することを許可しません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-641">Do not allow pinning programs to the Taskbar</span></span>                                                                                                                             | <span data-ttu-id="fabe4-642">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-642">Enabled</span></span>  | <span data-ttu-id="fabe4-643">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-643">No</span></span>      | <span data-ttu-id="fabe4-644">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-644">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-645">遠隔拠点からジャンプ リストの品目を表示または追跡しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-645">Do not display or track items in Jump Lists from remote locations</span></span>                                                                                                        | <span data-ttu-id="fabe4-646">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-646">Enabled</span></span>  | <span data-ttu-id="fabe4-647">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-647">No</span></span>      | <span data-ttu-id="fabe4-648">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-648">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-649">タスクバーへの通知アイコンの自動プロモーションをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-649">Turn off automatic promotion of notification icons to the taskbar</span></span>                                                                                                        | <span data-ttu-id="fabe4-650">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-650">Enabled</span></span>  | <span data-ttu-id="fabe4-651">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-651">No</span></span>      | <span data-ttu-id="fabe4-652">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-652">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-653">すべてのタスク バー設定のロック</span><span class="sxs-lookup"><span data-stu-id="fabe4-653">Lock all taskbar settings</span></span>                                                                                                                                                | <span data-ttu-id="fabe4-654">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-654">Enabled</span></span>  | <span data-ttu-id="fabe4-655">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-655">No</span></span>      | <span data-ttu-id="fabe4-656">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-656">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-657">ユーザーがツールバーの追加または削除できないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-657">Prevent users from adding or removing toolbars</span></span>                                                                                                                           | <span data-ttu-id="fabe4-658">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-658">Enabled</span></span>  | <span data-ttu-id="fabe4-659">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-659">No</span></span>      | <span data-ttu-id="fabe4-660">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-660">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-661">ユーザーがツールバーの配置を変更できないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-661">Prevent users from rearranging toolbars</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-662">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-662">Enabled</span></span>  | <span data-ttu-id="fabe4-663">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-663">No</span></span>      | <span data-ttu-id="fabe4-664">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-664">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-665">1 つ以上のディスプレイにタスク バーを許可しません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-665">Do not allow taskbars on more than one display</span></span>                                                                                                                           | <span data-ttu-id="fabe4-666">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-666">Enabled</span></span>  | <span data-ttu-id="fabe4-667">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-667">No</span></span>      | <span data-ttu-id="fabe4-668">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-668">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-669">すべてのバルーン通知をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-669">Turn off all balloon notifications</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-670">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-670">Enabled</span></span>  | <span data-ttu-id="fabe4-671">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-671">No</span></span>      | <span data-ttu-id="fabe4-672">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-672">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-673">タスク バーからピン留めされたプログラムを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-673">Remove pinned programs from the Taskbar</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-674">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-674">Enabled</span></span>  | <span data-ttu-id="fabe4-675">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-675">No</span></span>      | <span data-ttu-id="fabe4-676">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-676">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-677">ユーザーがタスク バーを別の画面ドックの場所に移動することを防ぐ</span><span class="sxs-lookup"><span data-stu-id="fabe4-677">Prevent users from moving taskbar to another screen dock location</span></span>                                                                                                        | <span data-ttu-id="fabe4-678">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-678">Enabled</span></span>  | <span data-ttu-id="fabe4-679">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-679">No</span></span>      | <span data-ttu-id="fabe4-680">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-680">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-681">ユーザーがタスク バーのサイズを変更できないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-681">Prevent users from resizing the taskbar</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-682">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-682">Enabled</span></span>  | <span data-ttu-id="fabe4-683">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-683">No</span></span>      | <span data-ttu-id="fabe4-684">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-684">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-685">タスクバーのサムネイルをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-685">Turn off taskbar thumbnails</span></span>                                                                                                                                              | <span data-ttu-id="fabe4-686">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-686">Enabled</span></span>  | <span data-ttu-id="fabe4-687">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-687">No</span></span>      | <span data-ttu-id="fabe4-688">\\スタート メニューとタスクバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-688">\\Start Menu and Taskbar</span></span>                                                    |
-| <span data-ttu-id="fabe4-689">タスク マネージャーの削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-689">Remove Task Manager</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-690">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-690">Enabled</span></span>  | <span data-ttu-id="fabe4-691">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-691">No</span></span>      | <span data-ttu-id="fabe4-692">\\システム\\Ctrl+Alt+Del オプション</span><span class="sxs-lookup"><span data-stu-id="fabe4-692">\\System\\Ctrl+Alt+Del Options</span></span>                                              |
-| <span data-ttu-id="fabe4-693">デバイス ドライバーのコード署名</span><span class="sxs-lookup"><span data-stu-id="fabe4-693">Code signing for device drivers</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-694">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-694">Enabled</span></span>  | <span data-ttu-id="fabe4-695">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-695">No</span></span>      | <span data-ttu-id="fabe4-696">\\システム\\ドライバーのインストール</span><span class="sxs-lookup"><span data-stu-id="fabe4-696">\\System\\Driver Installation</span></span>                                               |
-| <span data-ttu-id="fabe4-697">Windows Update デバイス ドライバーの検索プロンプトをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-697">Turn off Windows Update device driver search prompt</span></span>                                                                                                                      | <span data-ttu-id="fabe4-698">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-698">Enabled</span></span>  | <span data-ttu-id="fabe4-699">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-699">No</span></span>      | <span data-ttu-id="fabe4-700">\\システム\\ドライバーのインストール</span><span class="sxs-lookup"><span data-stu-id="fabe4-700">\\System\\Driver Installation</span></span>                                               |
-| <span data-ttu-id="fabe4-701">カスタム ロケールの選択を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-701">Disallow selection of Custom Locales</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-702">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-702">Enabled</span></span>  | <span data-ttu-id="fabe4-703">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-703">No</span></span>      | <span data-ttu-id="fabe4-704">\\システム\\ロケール サービス</span><span class="sxs-lookup"><span data-stu-id="fabe4-704">\\System\\Locale Services</span></span>                                                   |
-| <span data-ttu-id="fabe4-705">地理的位置の変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-705">Disallow changing of geographic location</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-706">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-706">Enabled</span></span>  | <span data-ttu-id="fabe4-707">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-707">No</span></span>      | <span data-ttu-id="fabe4-708">\\システム\\ロケール サービス</span><span class="sxs-lookup"><span data-stu-id="fabe4-708">\\System\\Locale Services</span></span>                                                   |
-| <span data-ttu-id="fabe4-709">ロケール設定のユーザーによる上書きを禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-709">Disallow user override of locale settings</span></span>                                                                                                                                | <span data-ttu-id="fabe4-710">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-710">Enabled</span></span>  | <span data-ttu-id="fabe4-711">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-711">No</span></span>      | <span data-ttu-id="fabe4-712">\\システム\\ロケール サービス</span><span class="sxs-lookup"><span data-stu-id="fabe4-712">\\System\\Locale Services</span></span>                                                   |
-| <span data-ttu-id="fabe4-713">CD および DVD: 読み取りアクセス権を拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-713">CD and DVD: Deny read access</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-714">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-714">Enabled</span></span>  | <span data-ttu-id="fabe4-715">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-715">No</span></span>      | <span data-ttu-id="fabe4-716">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-716">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-717">CD および DVD: 書き込みアクセス権を拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-717">CD and DVD: Deny write access</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-718">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-718">Enabled</span></span>  | <span data-ttu-id="fabe4-719">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-719">No</span></span>      | <span data-ttu-id="fabe4-720">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-720">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-721">フロッピー ドライブ: 読み取りアクセスを拒否します</span><span class="sxs-lookup"><span data-stu-id="fabe4-721">Floppy Drives: Deny read access</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-722">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-722">Enabled</span></span>  | <span data-ttu-id="fabe4-723">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-723">No</span></span>      | <span data-ttu-id="fabe4-724">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-724">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-725">フロッピー ドライブ: 書き込みアクセスを拒否します</span><span class="sxs-lookup"><span data-stu-id="fabe4-725">Floppy Drives: Deny write access</span></span>                                                                                                                                         | <span data-ttu-id="fabe4-726">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-726">Enabled</span></span>  | <span data-ttu-id="fabe4-727">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-727">No</span></span>      | <span data-ttu-id="fabe4-728">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-728">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-729">リムーバブル ディスク: 読み取りアクセスを拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-729">Removable Disks: Deny read access</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-730">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-730">Enabled</span></span>  | <span data-ttu-id="fabe4-731">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-731">No</span></span>      | <span data-ttu-id="fabe4-732">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-732">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-733">リムーバブル ディスク: 書き込みアクセスを拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-733">Removable Disks: Deny write access</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-734">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-734">Enabled</span></span>  | <span data-ttu-id="fabe4-735">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-735">No</span></span>      | <span data-ttu-id="fabe4-736">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-736">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-737">すべてのリムーバブル ストレージ クラス: すべてのアクセスを拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-737">All Removable Storage classes: Deny all access</span></span>                                                                                                                           | <span data-ttu-id="fabe4-738">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-738">Enabled</span></span>  | <span data-ttu-id="fabe4-739">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-739">No</span></span>      | <span data-ttu-id="fabe4-740">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-740">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-741">テープ ドライブ: 読み取りアクセスを拒否します</span><span class="sxs-lookup"><span data-stu-id="fabe4-741">Tape Drives: Deny read access</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-742">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-742">Enabled</span></span>  | <span data-ttu-id="fabe4-743">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-743">No</span></span>      | <span data-ttu-id="fabe4-744">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-744">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-745">テープ ドライブ: 書き込みアクセスを拒否します</span><span class="sxs-lookup"><span data-stu-id="fabe4-745">Tape Drives: Deny write access</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-746">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-746">Enabled</span></span>  | <span data-ttu-id="fabe4-747">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-747">No</span></span>      | <span data-ttu-id="fabe4-748">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-748">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-749">WPD デバイス: 読み取りアクセスを拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-749">WPD Devices: Deny read access</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-750">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-750">Enabled</span></span>  | <span data-ttu-id="fabe4-751">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-751">No</span></span>      | <span data-ttu-id="fabe4-752">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-752">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-753">WPD デバイス: 書き込みアクセスを拒否</span><span class="sxs-lookup"><span data-stu-id="fabe4-753">WPD Devices: Deny write access</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-754">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-754">Enabled</span></span>  | <span data-ttu-id="fabe4-755">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-755">No</span></span>      | <span data-ttu-id="fabe4-756">\\システム\\リムーバル ストレージ アクセス</span><span class="sxs-lookup"><span data-stu-id="fabe4-756">\\System\\Removable Storage Access</span></span>                                          |
-| <span data-ttu-id="fabe4-757">コマンド プロンプトへのアクセスを禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-757">Prevent access to the command prompt</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-758">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-758">Enabled</span></span>  | <span data-ttu-id="fabe4-759">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-759">No</span></span>      | <span data-ttu-id="fabe4-760">\\System</span><span class="sxs-lookup"><span data-stu-id="fabe4-760">\\System</span></span>                                                                    |
-| <span data-ttu-id="fabe4-761">レジストリ編集ツールへのアクセスを禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-761">Prevent access to registry editing tools</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-762">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-762">Enabled</span></span>  | <span data-ttu-id="fabe4-763">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-763">No</span></span>      | <span data-ttu-id="fabe4-764">\\System</span><span class="sxs-lookup"><span data-stu-id="fabe4-764">\\System</span></span>                                                                    |
-| <span data-ttu-id="fabe4-765">ウィザードが実行されないようにします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-765">Prevent the wizard from running.</span></span>                                                                                                                                         | <span data-ttu-id="fabe4-766">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-766">Enabled</span></span>  | <span data-ttu-id="fabe4-767">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-767">No</span></span>      | <span data-ttu-id="fabe4-768">\\Windows コンポーネント\\Windows 10 への機能の追加</span><span class="sxs-lookup"><span data-stu-id="fabe4-768">\\Windows Components\\Add features to Windows 10</span></span>                            |
-| <span data-ttu-id="fabe4-769">プログラム互換性アシスタントをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-769">Turn off Program Compatibility Assistant</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-770">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-770">Enabled</span></span>  | <span data-ttu-id="fabe4-771">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-771">No</span></span>      | <span data-ttu-id="fabe4-772">\\Windows コンポーネント\\アプリケーションの互換性</span><span class="sxs-lookup"><span data-stu-id="fabe4-772">\\Windows Components\\Application Compatibility</span></span>                             |
-| <span data-ttu-id="fabe4-773">マウスが画面の右上隅をポイントしたとき、検索、共有、開始、デバイスおよび設定は表示されません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-773">Search, Share, Start, Devices and Settings don't appear when the mouse is pointing to the upper-right corner of the screen</span></span>                                               | <span data-ttu-id="fabe4-774">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-774">Enabled</span></span>  | <span data-ttu-id="fabe4-775">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-775">No</span></span>      | <span data-ttu-id="fabe4-776">\\Windows コンポーネント\\Edge UI</span><span class="sxs-lookup"><span data-stu-id="fabe4-776">\\Windows Components\\Edge UI</span></span>                                               |
-| <span data-ttu-id="fabe4-777">ヘルプ ヒントを無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-777">Disable help tips</span></span>                                                                                                                                                        | <span data-ttu-id="fabe4-778">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-778">Enabled</span></span>  | <span data-ttu-id="fabe4-779">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-779">No</span></span>      | <span data-ttu-id="fabe4-780">\\Windows コンポーネント\\Edge UI</span><span class="sxs-lookup"><span data-stu-id="fabe4-780">\\Windows Components\\Edge UI</span></span>                                               |
-| <span data-ttu-id="fabe4-781">アプリケーションの使用状況の追跡をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-781">Turn off tracking of app usage</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-782">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-782">Enabled</span></span>  | <span data-ttu-id="fabe4-783">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-783">No</span></span>      | <span data-ttu-id="fabe4-784">\\Windows コンポーネント\\Edge UI</span><span class="sxs-lookup"><span data-stu-id="fabe4-784">\\Windows Components\\Edge UI</span></span>                                               |
-| <span data-ttu-id="fabe4-785">画面の左上にマウスをポイントした際は、最新のアプリケーションを表示しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-785">Do not show recent apps when the mouse is pointing to the upper-left corner of the screen</span></span>                                                                                | <span data-ttu-id="fabe4-786">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-786">Enabled</span></span>  | <span data-ttu-id="fabe4-787">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-787">No</span></span>      | <span data-ttu-id="fabe4-788">\\Windows コンポーネント\\Edge UI</span><span class="sxs-lookup"><span data-stu-id="fabe4-788">\\Windows Components\\Edge UI</span></span>                                               |
-| <span data-ttu-id="fabe4-789">ユーザーが、左下隅を右クリックするか、Windows ロゴ キーを押しながら X キーを押したときに表示される Windows PowerShell にコマンド プロンプトを置き換えることができないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-789">Prevent users from replacing the Command Prompt with Windows PowerShell in the menu they see when they right-click the lower-left corner or press the Windows logo key+X</span></span> | <span data-ttu-id="fabe4-790">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-790">Enabled</span></span>  | <span data-ttu-id="fabe4-791">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-791">No</span></span>      | <span data-ttu-id="fabe4-792">\\Windows コンポーネント\\Edge UI</span><span class="sxs-lookup"><span data-stu-id="fabe4-792">\\Windows Components\\Edge UI</span></span>                                               |
-| <span data-ttu-id="fabe4-793">最近アプリの切り替えをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-793">Turn off switching between recent apps</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-794">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-794">Enabled</span></span>  | <span data-ttu-id="fabe4-795">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-795">No</span></span>      | <span data-ttu-id="fabe4-796">\\Windows コンポーネント\\Edge UI</span><span class="sxs-lookup"><span data-stu-id="fabe4-796">\\Windows Components\\Edge UI</span></span>                                               |
-| <span data-ttu-id="fabe4-797">詳細ウィンドウのオン/オフを切り替え</span><span class="sxs-lookup"><span data-stu-id="fabe4-797">Turn on or off details pane</span></span>                                                                                                                                              | <span data-ttu-id="fabe4-798">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-798">Enabled</span></span>  | <span data-ttu-id="fabe4-799">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-799">No</span></span>      | <span data-ttu-id="fabe4-800">\\Windows コンポーネント\\ファイル エクスプローラー\\エクスプローラー フレーム ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="fabe4-800">\\Windows Components\\File Explorer\\Explorer Frame Pane</span></span>                    |
-| <span data-ttu-id="fabe4-801">[プレビュー] ウィンドウをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-801">Turn off Preview Pane</span></span>                                                                                                                                                    | <span data-ttu-id="fabe4-802">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-802">Enabled</span></span>  | <span data-ttu-id="fabe4-803">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-803">No</span></span>      | <span data-ttu-id="fabe4-804">\\Windows コンポーネント\\ファイル エクスプローラー\\エクスプローラー フレーム ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="fabe4-804">\\Windows Components\\File Explorer\\Explorer Frame Pane</span></span>                    |
-| <span data-ttu-id="fabe4-805">ユーザーのログオン時に、ウェルカム センターを表示しないでください。</span><span class="sxs-lookup"><span data-stu-id="fabe4-805">Do not display the Welcome Center at user logon</span></span>                                                                                                                          | <span data-ttu-id="fabe4-806">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-806">Enabled</span></span>  | <span data-ttu-id="fabe4-807">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-807">No</span></span>      | <span data-ttu-id="fabe4-808">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-808">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-809">クラシック シェルにオンにします。</span><span class="sxs-lookup"><span data-stu-id="fabe4-809">Turn on Classic Shell</span></span>                                                                                                                                                    | <span data-ttu-id="fabe4-810">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-810">Enabled</span></span>  | <span data-ttu-id="fabe4-811">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-811">No</span></span>      | <span data-ttu-id="fabe4-812">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-812">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-813">CD 作成機能を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-813">Remove CD Burning features</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-814">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-814">Enabled</span></span>  | <span data-ttu-id="fabe4-815">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-815">No</span></span>      | <span data-ttu-id="fabe4-816">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-816">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-817">DFS タブの削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-817">Remove DFS tab</span></span>                                                                                                                                                           | <span data-ttu-id="fabe4-818">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-818">Enabled</span></span>  | <span data-ttu-id="fabe4-819">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-819">No</span></span>      | <span data-ttu-id="fabe4-820">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-820">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-821">マイ コンピュータで指定したこれらのドライブの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-821">Hide these specified drives in My Computer</span></span>                                                                                                                               | <span data-ttu-id="fabe4-822">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-822">Enabled</span></span>  | <span data-ttu-id="fabe4-823">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-823">No</span></span>      | <span data-ttu-id="fabe4-824">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-824">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-825">ネットワークの場所でネットワーク全体がありません</span><span class="sxs-lookup"><span data-stu-id="fabe4-825">No Entire Network in Network Locations</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-826">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-826">Enabled</span></span>  | <span data-ttu-id="fabe4-827">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-827">No</span></span>      | <span data-ttu-id="fabe4-828">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-828">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-829">エクスプローラーから [ファイル] メニューを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-829">Remove File menu from File Explorer</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-830">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-830">Enabled</span></span>  | <span data-ttu-id="fabe4-831">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-831">No</span></span>      | <span data-ttu-id="fabe4-832">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-832">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-833">フォルダー オプションを、リボンの表示タブ上のオプション ボタンから開くことを許可しません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-833">Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon</span></span>                                                                           | <span data-ttu-id="fabe4-834">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-834">Enabled</span></span>  | <span data-ttu-id="fabe4-835">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-835">No</span></span>      | <span data-ttu-id="fabe4-836">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-836">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-837">[ハードウェア] タブの削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-837">Remove Hardware tab</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-838">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-838">Enabled</span></span>  | <span data-ttu-id="fabe4-839">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-839">No</span></span>      | <span data-ttu-id="fabe4-840">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-840">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-841">ファイル エクスプ ローラーのコンテキスト メニューで管理項目の非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-841">Hide the Manage item on the File Explorer context menu</span></span>                                                                                                                   | <span data-ttu-id="fabe4-842">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-842">Enabled</span></span>  | <span data-ttu-id="fabe4-843">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-843">No</span></span>      | <span data-ttu-id="fabe4-844">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-844">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-845">マイ コンピューターから共有ドキュメントを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-845">Remove Shared Documents from My Computer</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-846">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-846">Enabled</span></span>  | <span data-ttu-id="fabe4-847">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-847">No</span></span>      | <span data-ttu-id="fabe4-848">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-848">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-849">「ネットワーク ドライブの割り当て」および「ネットワーク ドライブの切断」を削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-849">Remove "Map Network Drive" and "Disconnect Network Drive"</span></span>                                                                                                                | <span data-ttu-id="fabe4-850">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-850">Enabled</span></span>  | <span data-ttu-id="fabe4-851">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-851">No</span></span>      | <span data-ttu-id="fabe4-852">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-852">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-853">インターネット検索の「再度検索」リンクを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-853">Remove the Search the Internet "Search again" link</span></span>                                                                                                                       | <span data-ttu-id="fabe4-854">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-854">Enabled</span></span>  | <span data-ttu-id="fabe4-855">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-855">No</span></span>      | <span data-ttu-id="fabe4-856">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-856">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-857">[セキュリティ] タブを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-857">Remove Security tab</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-858">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-858">Enabled</span></span>  | <span data-ttu-id="fabe4-859">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-859">No</span></span>      | <span data-ttu-id="fabe4-860">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-860">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-861">エクスプローラーから検索ボタンを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-861">Remove Search button from File Explorer</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-862">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-862">Enabled</span></span>  | <span data-ttu-id="fabe4-863">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-863">No</span></span>      | <span data-ttu-id="fabe4-864">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-864">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-865">エクスプローラーの既定のコンテキスト メニューを削除</span><span class="sxs-lookup"><span data-stu-id="fabe4-865">Remove File Explorer's default context menu</span></span>                                                                                                                              | <span data-ttu-id="fabe4-866">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-866">Enabled</span></span>  | <span data-ttu-id="fabe4-867">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-867">No</span></span>      | <span data-ttu-id="fabe4-868">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-868">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-869">マイ コンピューターからドライブへのアクセスを禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-869">Prevent access to drives from My Computer</span></span>                                                                                                                                | <span data-ttu-id="fabe4-870">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-870">Enabled</span></span>  | <span data-ttu-id="fabe4-871">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-871">No</span></span>      | <span data-ttu-id="fabe4-872">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-872">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-873">Windows+X のホットキーをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-873">Turn off Windows+X hotkeys</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-874">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-874">Enabled</span></span>  | <span data-ttu-id="fabe4-875">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-875">No</span></span>      | <span data-ttu-id="fabe4-876">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-876">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-877">ネットワークの場所で近くにコンピューターがありません</span><span class="sxs-lookup"><span data-stu-id="fabe4-877">No Computers Near Me in Network Locations</span></span>                                                                                                                                | <span data-ttu-id="fabe4-878">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-878">Enabled</span></span>  | <span data-ttu-id="fabe4-879">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-879">No</span></span>      | <span data-ttu-id="fabe4-880">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-880">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-881">ネットワークのインストールの資格情報を要求</span><span class="sxs-lookup"><span data-stu-id="fabe4-881">Request credentials for network installations</span></span>                                                                                                                            | <span data-ttu-id="fabe4-882">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-882">Enabled</span></span>  | <span data-ttu-id="fabe4-883">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-883">No</span></span>      | <span data-ttu-id="fabe4-884">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-884">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-885">ユーザーが、ユーザー ファイル フォルダーのルートにファイルを追加するを防ぎます。</span><span class="sxs-lookup"><span data-stu-id="fabe4-885">Prevent users from adding files to the root of their Users Files folder.</span></span>                                                                                                 | <span data-ttu-id="fabe4-886">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-886">Enabled</span></span>  | <span data-ttu-id="fabe4-887">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-887">No</span></span>      | <span data-ttu-id="fabe4-888">\\Windows コンポーネント\\ファイル エクスプローラー</span><span class="sxs-lookup"><span data-stu-id="fabe4-888">\\Windows Components\\File Explorer</span></span>                                         |
-| <span data-ttu-id="fabe4-889">アクセラレータをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-889">Turn off Accelerators</span></span>                                                                                                                                                    | <span data-ttu-id="fabe4-890">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-890">Enabled</span></span>  | <span data-ttu-id="fabe4-891">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-891">No</span></span>      | <span data-ttu-id="fabe4-892">\\Windows コンポーネント\\Internet Explorer\\アクセラレータ</span><span class="sxs-lookup"><span data-stu-id="fabe4-892">\\Windows Components\\Internet Explorer\\Accelerators</span></span>                       |
-| <span data-ttu-id="fabe4-893">ファイル メニュー: ブラウザーおよびエクスプ ローラー ウィンドウを閉じるを無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-893">File menu: Disable closing the browser and Explorer windows</span></span>                                                                                                              | <span data-ttu-id="fabe4-894">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-894">Enabled</span></span>  | <span data-ttu-id="fabe4-895">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-895">No</span></span>      | <span data-ttu-id="fabe4-896">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-896">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-897">ファイル メニュー: ... メニュー オプションとして保存を無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-897">File menu: Disable Save As... menu option</span></span>                                                                                                                                | <span data-ttu-id="fabe4-898">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-898">Enabled</span></span>  | <span data-ttu-id="fabe4-899">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-899">No</span></span>      | <span data-ttu-id="fabe4-900">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-900">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-901">ファイル メニュー: Web ページの完了として保存を無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-901">File menu: Disable Save As Web Page Complete</span></span>                                                                                                                             | <span data-ttu-id="fabe4-902">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-902">Enabled</span></span>  | <span data-ttu-id="fabe4-903">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-903">No</span></span>      | <span data-ttu-id="fabe4-904">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-904">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-905">ファイル メニュー: 新しいメニュー オプションを無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-905">File menu: Disable New menu option</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-906">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-906">Enabled</span></span>  | <span data-ttu-id="fabe4-907">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-907">No</span></span>      | <span data-ttu-id="fabe4-908">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-908">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-909">ファイル メニュー: オープン メニュー オプションを無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-909">File menu: Disable Open menu option</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-910">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-910">Enabled</span></span>  | <span data-ttu-id="fabe4-911">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-911">No</span></span>      | <span data-ttu-id="fabe4-912">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-912">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-913">ヘルプ メニュー: 「フィードバックの送信」メニュー オプションを削除します</span><span class="sxs-lookup"><span data-stu-id="fabe4-913">Help menu: Remove 'Send Feedback' menu option</span></span>                                                                                                                            | <span data-ttu-id="fabe4-914">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-914">Enabled</span></span>  | <span data-ttu-id="fabe4-915">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-915">No</span></span>      | <span data-ttu-id="fabe4-916">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-916">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-917">ヘルプ メニュー: 「ネットスケープ ユーザー用」メニュー オプションを削除します</span><span class="sxs-lookup"><span data-stu-id="fabe4-917">Help menu: Remove 'For Netscape Users' menu option</span></span>                                                                                                                       | <span data-ttu-id="fabe4-918">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-918">Enabled</span></span>  | <span data-ttu-id="fabe4-919">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-919">No</span></span>      | <span data-ttu-id="fabe4-920">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-920">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-921">ヘルプ メニュー: 「今日のヒント」メニュー オプションを削除します</span><span class="sxs-lookup"><span data-stu-id="fabe4-921">Help menu: Remove 'Tip of the Day' menu option</span></span>                                                                                                                           | <span data-ttu-id="fabe4-922">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-922">Enabled</span></span>  | <span data-ttu-id="fabe4-923">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-923">No</span></span>      | <span data-ttu-id="fabe4-924">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-924">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-925">ヘルプ メニュー: 「ツアー」メニュー オプションを削除します</span><span class="sxs-lookup"><span data-stu-id="fabe4-925">Help menu: Remove 'Tour' menu option</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-926">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-926">Enabled</span></span>  | <span data-ttu-id="fabe4-927">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-927">No</span></span>      | <span data-ttu-id="fabe4-928">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-928">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-929">[ショートカット] メニューをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-929">Turn off Shortcut Menu</span></span>                                                                                                                                                   | <span data-ttu-id="fabe4-930">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-930">Enabled</span></span>  | <span data-ttu-id="fabe4-931">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-931">No</span></span>      | <span data-ttu-id="fabe4-932">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-932">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-933">お気に入りメニューの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-933">Hide Favorites menu</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-934">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-934">Enabled</span></span>  | <span data-ttu-id="fabe4-935">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-935">No</span></span>      | <span data-ttu-id="fabe4-936">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-936">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-937">新しいウィンドウ メニュー オプションで開くを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-937">Disable Open in New Window menu option</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-938">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-938">Enabled</span></span>  | <span data-ttu-id="fabe4-939">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-939">No</span></span>      | <span data-ttu-id="fabe4-940">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-940">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-941">[印刷] メニューをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-941">Turn off Print Menu</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-942">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-942">Enabled</span></span>  | <span data-ttu-id="fabe4-943">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-943">No</span></span>      | <span data-ttu-id="fabe4-944">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-944">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-945">メニュー オプションを使用してレポート サイトの問題を起動する機能をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-945">Turn off the ability to launch report site problems using a menu option</span></span>                                                                                                  | <span data-ttu-id="fabe4-946">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-946">Enabled</span></span>  | <span data-ttu-id="fabe4-947">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-947">No</span></span>      | <span data-ttu-id="fabe4-948">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-948">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-949">このプログラムをディスクに保存するオプションを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-949">Disable Save this program to disk option</span></span>                                                                                                                                 | <span data-ttu-id="fabe4-950">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-950">Enabled</span></span>  | <span data-ttu-id="fabe4-951">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-951">No</span></span>      | <span data-ttu-id="fabe4-952">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-952">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-953">[ツール] メニュー: インターネット オプションを無効にする...メニュー オプション</span><span class="sxs-lookup"><span data-stu-id="fabe4-953">Tools menu: Disable Internet Options... menu option</span></span>                                                                                                                      | <span data-ttu-id="fabe4-954">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-954">Enabled</span></span>  | <span data-ttu-id="fabe4-955">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-955">No</span></span>      | <span data-ttu-id="fabe4-956">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-956">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-957">表示メニュー: 全画面表示メニューのオプションの無効化</span><span class="sxs-lookup"><span data-stu-id="fabe4-957">View menu: Disable Full Screen menu option</span></span>                                                                                                                               | <span data-ttu-id="fabe4-958">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-958">Enabled</span></span>  | <span data-ttu-id="fabe4-959">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-959">No</span></span>      | <span data-ttu-id="fabe4-960">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-960">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-961">表示メニュー: ソース メニュー オプションの無効化</span><span class="sxs-lookup"><span data-stu-id="fabe4-961">View menu: Disable Source menu option</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-962">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-962">Enabled</span></span>  | <span data-ttu-id="fabe4-963">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-963">No</span></span>      | <span data-ttu-id="fabe4-964">\\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー</span><span class="sxs-lookup"><span data-stu-id="fabe4-964">\\Windows Components\\Internet Explorer\\Browser menus</span></span>                      |
-| <span data-ttu-id="fabe4-965">開発者ツールをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-965">Turn off Developer Tools</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-966">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-966">Enabled</span></span>  | <span data-ttu-id="fabe4-967">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-967">No</span></span>      | <span data-ttu-id="fabe4-968">\\Windows コンポーネント\\Internet Explorer\\ツールバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-968">\\Windows Components\\Internet Explorer\\Toolbars</span></span>                           |
-| <span data-ttu-id="fabe4-969">ツールバーのアップグレード ツールをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-969">Turn off toolbar upgrade tool</span></span>                                                                                                                                            | <span data-ttu-id="fabe4-970">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-970">Enabled</span></span>  | <span data-ttu-id="fabe4-971">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-971">No</span></span>      | <span data-ttu-id="fabe4-972">\\Windows コンポーネント\\Internet Explorer\\ツールバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-972">\\Windows Components\\Internet Explorer\\Toolbars</span></span>                           |
-| <span data-ttu-id="fabe4-973">コマンド バーの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-973">Hide the Command bar</span></span>                                                                                                                                                     | <span data-ttu-id="fabe4-974">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-974">Enabled</span></span>  | <span data-ttu-id="fabe4-975">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-975">No</span></span>      | <span data-ttu-id="fabe4-976">\\Windows コンポーネント\\Internet Explorer\\ツールバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-976">\\Windows Components\\Internet Explorer\\Toolbars</span></span>                           |
-| <span data-ttu-id="fabe4-977">ステータス バーの非表示</span><span class="sxs-lookup"><span data-stu-id="fabe4-977">Hide the status bar</span></span>                                                                                                                                                      | <span data-ttu-id="fabe4-978">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-978">Enabled</span></span>  | <span data-ttu-id="fabe4-979">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-979">No</span></span>      | <span data-ttu-id="fabe4-980">\\Windows コンポーネント\\Internet Explorer\\ツールバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-980">\\Windows Components\\Internet Explorer\\Toolbars</span></span>                           |
-| <span data-ttu-id="fabe4-981">ブラウザー ツールバーのカスタマイズを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-981">Disable customizing browser toolbars</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-982">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-982">Enabled</span></span>  | <span data-ttu-id="fabe4-983">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-983">No</span></span>      | <span data-ttu-id="fabe4-984">\\Windows コンポーネント\\Internet Explorer\\ツールバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-984">\\Windows Components\\Internet Explorer\\Toolbars</span></span>                           |
-| <span data-ttu-id="fabe4-985">ブラウザー ツールバーのカスタマイズ ボタンを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-985">Disable customizing browser toolbar buttons</span></span>                                                                                                                              | <span data-ttu-id="fabe4-986">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-986">Enabled</span></span>  | <span data-ttu-id="fabe4-987">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-987">No</span></span>      | <span data-ttu-id="fabe4-988">\\Windows コンポーネント\\Internet Explorer\\ツールバー</span><span class="sxs-lookup"><span data-stu-id="fabe4-988">\\Windows Components\\Internet Explorer\\Toolbars</span></span>                           |
-| <span data-ttu-id="fabe4-989">アドオンのパフォーマンス通知をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-989">Turn off add-on performance notifications</span></span>                                                                                                                                | <span data-ttu-id="fabe4-990">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-990">Enabled</span></span>  | <span data-ttu-id="fabe4-991">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-991">No</span></span>      | <span data-ttu-id="fabe4-992">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-992">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-993">ユーザーに有効または無効アドオンを許可しません。</span><span class="sxs-lookup"><span data-stu-id="fabe4-993">Do not allow users to enable or disable add-ons</span></span>                                                                                                                          | <span data-ttu-id="fabe4-994">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-994">Enabled</span></span>  | <span data-ttu-id="fabe4-995">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-995">No</span></span>      | <span data-ttu-id="fabe4-996">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-996">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-997">高度なページ設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-997">Disable changing Advanced page settings</span></span>                                                                                                                                  | <span data-ttu-id="fabe4-998">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-998">Enabled</span></span>  | <span data-ttu-id="fabe4-999">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-999">No</span></span>      | <span data-ttu-id="fabe4-1000">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1000">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1001">お気に入りバーをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1001">Turn off Favorites bar</span></span>                                                                                                                                                   | <span data-ttu-id="fabe4-1002">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1002">Enabled</span></span>  | <span data-ttu-id="fabe4-1003">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1003">No</span></span>      | <span data-ttu-id="fabe4-1004">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1004">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1005">ActiveX コントロールのユーザー単位のインストールを禁止しする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1005">Prevent per-user installation of ActiveX controls</span></span>                                                                                                                        | <span data-ttu-id="fabe4-1006">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1006">Enabled</span></span>  | <span data-ttu-id="fabe4-1007">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1007">No</span></span>      | <span data-ttu-id="fabe4-1008">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1008">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1009">最終閲覧セッションの再開をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1009">Turn off Reopen Last Browsing Session</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-1010">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1010">Enabled</span></span>  | <span data-ttu-id="fabe4-1011">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1011">No</span></span>      | <span data-ttu-id="fabe4-1012">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1012">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1013">タブのグループ化をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1013">Turn off Tab Grouping</span></span>                                                                                                                                                    | <span data-ttu-id="fabe4-1014">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1014">Enabled</span></span>  | <span data-ttu-id="fabe4-1015">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1015">No</span></span>      | <span data-ttu-id="fabe4-1016">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1016">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1017">フィッシング フィルターの管理を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-1017">Prevent managing the phishing filter</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-1018">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1018">Enabled</span></span>  | <span data-ttu-id="fabe4-1019">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1019">No</span></span>      | <span data-ttu-id="fabe4-1020">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1020">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1021">Internet Explorer 8 で SmartScreen フィルターの管理をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1021">Turn off Managing SmartScreen Filter for Internet Explorer 8</span></span>                                                                                                             | <span data-ttu-id="fabe4-1022">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1022">Enabled</span></span>  | <span data-ttu-id="fabe4-1023">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1023">No</span></span>      | <span data-ttu-id="fabe4-1024">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1024">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1025">SmartScreen フィルターの管理を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-1025">Prevent managing SmartScreen Filter</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-1026">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1026">Enabled</span></span>  | <span data-ttu-id="fabe4-1027">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1027">No</span></span>      | <span data-ttu-id="fabe4-1028">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1028">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1029">セキュリティ設定のチェック機能をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1029">Turn off the Security Settings Check feature</span></span>                                                                                                                             | <span data-ttu-id="fabe4-1030">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1030">Enabled</span></span>  | <span data-ttu-id="fabe4-1031">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1031">No</span></span>      | <span data-ttu-id="fabe4-1032">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1032">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1033">フルスクリーン モードの実施</span><span class="sxs-lookup"><span data-stu-id="fabe4-1033">Enforce full-screen mode</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-1034">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1034">Enabled</span></span>  | <span data-ttu-id="fabe4-1035">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1035">No</span></span>      | <span data-ttu-id="fabe4-1036">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1036">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1037">インポート/エクスポート設定ウィザードを無効にします</span><span class="sxs-lookup"><span data-stu-id="fabe4-1037">Disable Import/Export Settings wizard</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-1038">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1038">Enabled</span></span>  | <span data-ttu-id="fabe4-1039">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1039">No</span></span>      | <span data-ttu-id="fabe4-1040">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1040">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1041">Internet Explorer 検索ボックスが表示されないようにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1041">Prevent Internet Explorer Search box from appearing</span></span>                                                                                                                      | <span data-ttu-id="fabe4-1042">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1042">Enabled</span></span>  | <span data-ttu-id="fabe4-1043">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1043">No</span></span>      | <span data-ttu-id="fabe4-1044">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1044">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1045">クイック タブの機能をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1045">Turn off Quick Tabs functionality</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-1046">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1046">Enabled</span></span>  | <span data-ttu-id="fabe4-1047">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1047">No</span></span>      | <span data-ttu-id="fabe4-1048">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1048">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1049">タブ ブラウズをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1049">Turn off tabbed browsing</span></span>                                                                                                                                                 | <span data-ttu-id="fabe4-1050">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1050">Enabled</span></span>  | <span data-ttu-id="fabe4-1051">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1051">No</span></span>      | <span data-ttu-id="fabe4-1052">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1052">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1053">自動構成設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1053">Disable changing Automatic Configuration settings</span></span>                                                                                                                        | <span data-ttu-id="fabe4-1054">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1054">Enabled</span></span>  | <span data-ttu-id="fabe4-1055">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1055">No</span></span>      | <span data-ttu-id="fabe4-1056">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1056">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1057">インターネット一時ファイル設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1057">Disable changing Temporary Internet files settings</span></span>                                                                                                                       | <span data-ttu-id="fabe4-1058">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1058">Enabled</span></span>  | <span data-ttu-id="fabe4-1059">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1059">No</span></span>      | <span data-ttu-id="fabe4-1060">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1060">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1061">予定表と連絡先の設定を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1061">Disable changing Calendar and Contact settings</span></span>                                                                                                                           | <span data-ttu-id="fabe4-1062">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1062">Enabled</span></span>  | <span data-ttu-id="fabe4-1063">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1063">No</span></span>      | <span data-ttu-id="fabe4-1064">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1064">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1065">証明書設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1065">Disable changing certificate settings</span></span>                                                                                                                                    | <span data-ttu-id="fabe4-1066">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1066">Enabled</span></span>  | <span data-ttu-id="fabe4-1067">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1067">No</span></span>      | <span data-ttu-id="fabe4-1068">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1068">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1069">既定のブラウザー チェックを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1069">Disable changing default browser check</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-1070">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1070">Enabled</span></span>  | <span data-ttu-id="fabe4-1071">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1071">No</span></span>      | <span data-ttu-id="fabe4-1072">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1072">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1073">カラー設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1073">Disable changing color settings</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-1074">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1074">Enabled</span></span>  | <span data-ttu-id="fabe4-1075">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1075">No</span></span>      | <span data-ttu-id="fabe4-1076">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1076">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1077">接続設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1077">Disable changing connection settings</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-1078">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1078">Enabled</span></span>  | <span data-ttu-id="fabe4-1079">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1079">No</span></span>      | <span data-ttu-id="fabe4-1080">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1080">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1081">フォント設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1081">Disable changing font settings</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-1082">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1082">Enabled</span></span>  | <span data-ttu-id="fabe4-1083">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1083">No</span></span>      | <span data-ttu-id="fabe4-1084">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1084">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1085">言語設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1085">Disable changing language settings</span></span>                                                                                                                                       | <span data-ttu-id="fabe4-1086">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1086">Enabled</span></span>  | <span data-ttu-id="fabe4-1087">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1087">No</span></span>      | <span data-ttu-id="fabe4-1088">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1088">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1089">リンク カラー設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1089">Disable changing link color settings</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-1090">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1090">Enabled</span></span>  | <span data-ttu-id="fabe4-1091">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1091">No</span></span>      | <span data-ttu-id="fabe4-1092">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1092">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1093">メッセージ設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1093">Disable changing Messaging settings</span></span>                                                                                                                                      | <span data-ttu-id="fabe4-1094">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1094">Enabled</span></span>  | <span data-ttu-id="fabe4-1095">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1095">No</span></span>      | <span data-ttu-id="fabe4-1096">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1096">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1097">ポップアップ例外一覧の管理を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-1097">Prevent managing pop-up exception list</span></span>                                                                                                                                   | <span data-ttu-id="fabe4-1098">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1098">Enabled</span></span>  | <span data-ttu-id="fabe4-1099">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1099">No</span></span>      | <span data-ttu-id="fabe4-1100">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1100">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1101">ポップアップ管理をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1101">Turn off pop-up management</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-1102">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1102">Enabled</span></span>  | <span data-ttu-id="fabe4-1103">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1103">No</span></span>      | <span data-ttu-id="fabe4-1104">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1104">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1105">プロファイル アシスタント設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1105">Disable changing Profile Assistant settings</span></span>                                                                                                                              | <span data-ttu-id="fabe4-1106">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1106">Enabled</span></span>  | <span data-ttu-id="fabe4-1107">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1107">No</span></span>      | <span data-ttu-id="fabe4-1108">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1108">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1109">プロキシ設定の変更を禁止する</span><span class="sxs-lookup"><span data-stu-id="fabe4-1109">Prevent changing proxy settings</span></span>                                                                                                                                          | <span data-ttu-id="fabe4-1110">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1110">Enabled</span></span>  | <span data-ttu-id="fabe4-1111">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1111">No</span></span>      | <span data-ttu-id="fabe4-1112">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1112">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1113">評価設定の変更を無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1113">Disable changing ratings settings</span></span>                                                                                                                                        | <span data-ttu-id="fabe4-1114">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1114">Enabled</span></span>  | <span data-ttu-id="fabe4-1115">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1115">No</span></span>      | <span data-ttu-id="fabe4-1116">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1116">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1117">Web アドレスの自動補完機能をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1117">Turn off the auto-complete feature for web addresses</span></span>                                                                                                                     | <span data-ttu-id="fabe4-1118">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1118">Enabled</span></span>  | <span data-ttu-id="fabe4-1119">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1119">No</span></span>      | <span data-ttu-id="fabe4-1120">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1120">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1121">ユーザーがインストールしたすべてのプロバイダの推奨事項をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1121">Turn off suggestions for all user-installed providers</span></span>                                                                                                                    | <span data-ttu-id="fabe4-1122">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1122">Enabled</span></span>  | <span data-ttu-id="fabe4-1123">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1123">No</span></span>      | <span data-ttu-id="fabe4-1124">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1124">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1125">[クイック ピック] メニューをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1125">Turn off the quick pick menu</span></span>                                                                                                                                             | <span data-ttu-id="fabe4-1126">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1126">Enabled</span></span>  | <span data-ttu-id="fabe4-1127">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1127">No</span></span>      | <span data-ttu-id="fabe4-1128">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1128">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1129">検索: ブラウザー内で F3 キーを使用したファイルの検索を無効化する</span><span class="sxs-lookup"><span data-stu-id="fabe4-1129">Search: Disable Find Files via F3 within the browser</span></span>                                                                                                                     | <span data-ttu-id="fabe4-1130">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1130">Enabled</span></span>  | <span data-ttu-id="fabe4-1131">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1131">No</span></span>      | <span data-ttu-id="fabe4-1132">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1132">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1133">検索: 検索のカスタマイズを無効にする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1133">Search: Disable Search Customization</span></span>                                                                                                                                     | <span data-ttu-id="fabe4-1134">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1134">Enabled</span></span>  | <span data-ttu-id="fabe4-1135">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1135">No</span></span>      | <span data-ttu-id="fabe4-1136">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1136">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1137">デスクトップの Internet Explorer でサイトをピン留めする機能をオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1137">Turn off ability to pin sites in Internet Explorer on the desktop</span></span>                                                                                                        | <span data-ttu-id="fabe4-1138">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1138">Enabled</span></span>  | <span data-ttu-id="fabe4-1139">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1139">No</span></span>      | <span data-ttu-id="fabe4-1140">\\Windows コンポーネント\\Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="fabe4-1140">\\Windows Components\\Internet Explorer</span></span>                                     |
-| <span data-ttu-id="fabe4-1141">Windows の最新バージョンに更新するオファーをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1141">Turn off the offer to update to the latest version of Windows</span></span>                                                                                                            | <span data-ttu-id="fabe4-1142">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1142">Enabled</span></span>  | <span data-ttu-id="fabe4-1143">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1143">No</span></span>      | <span data-ttu-id="fabe4-1144">\\Windows コンポーネント\\ストア</span><span class="sxs-lookup"><span data-stu-id="fabe4-1144">\\Windows Components\\Store</span></span>                                                 |
-| <span data-ttu-id="fabe4-1145">店舗アプリケーションをオフにする</span><span class="sxs-lookup"><span data-stu-id="fabe4-1145">Turn off the Store application</span></span>                                                                                                                                           | <span data-ttu-id="fabe4-1146">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1146">Enabled</span></span>  | <span data-ttu-id="fabe4-1147">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1147">No</span></span>      | <span data-ttu-id="fabe4-1148">\\Windows コンポーネント\\ストア</span><span class="sxs-lookup"><span data-stu-id="fabe4-1148">\\Windows Components\\Store</span></span>                                                 |
-| <span data-ttu-id="fabe4-1149">新しいタスクの作成を禁止</span><span class="sxs-lookup"><span data-stu-id="fabe4-1149">Prohibit New Task Creation</span></span>                                                                                                                                               | <span data-ttu-id="fabe4-1150">有効</span><span class="sxs-lookup"><span data-stu-id="fabe4-1150">Enabled</span></span>  | <span data-ttu-id="fabe4-1151">無</span><span class="sxs-lookup"><span data-stu-id="fabe4-1151">No</span></span>      | <span data-ttu-id="fabe4-1152">\\Windows コンポーネント\\タスク スケジューラ</span><span class="sxs-lookup"><span data-stu-id="fabe4-1152">\\Windows Components\\Task Scheduler</span></span>                                        |
-
-## <a name="set-up-a-proxy-to-access-only-whitelisted-websites"></a><span data-ttu-id="fabe4-1153">ホワイトリストに登録されたウェブサイトのみにアクセスするプロキシを設定</span><span class="sxs-lookup"><span data-stu-id="fabe4-1153">Set up a proxy to access only whitelisted websites</span></span>
-<span data-ttu-id="fabe4-1154">日常業務で店員 (レジ担当者) が必要とする Web サイトの一覧を定義し、これらの Web サイトにのみアクセス権を持つ管理者制御のプロキシを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="fabe4-1154">You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites.</span></span> <span data-ttu-id="fabe4-1155">Retail Cloud POS には、次の Web サイトへのアクセスが必要です。</span><span class="sxs-lookup"><span data-stu-id="fabe4-1155">Retail Cloud POS requires access to the following websites:</span></span>
-
--   <span data-ttu-id="fabe4-1156">Retail Cloud POS Web サイト</span><span class="sxs-lookup"><span data-stu-id="fabe4-1156">Retail Cloud POS website</span></span>
--   <span data-ttu-id="fabe4-1157">Microsoft Azure Active Directory のサインイン ページ</span><span class="sxs-lookup"><span data-stu-id="fabe4-1157">Microsoft Azure Active Directory sign-in page</span></span>
--   <span data-ttu-id="fabe4-1158">Retail サーバー Web サイト</span><span class="sxs-lookup"><span data-stu-id="fabe4-1158">Retail Server website</span></span>
--   <span data-ttu-id="fabe4-1159">Bing Maps リソース</span><span class="sxs-lookup"><span data-stu-id="fabe4-1159">Bing Maps resources</span></span>
--   <span data-ttu-id="fabe4-1160">メディア リソース</span><span class="sxs-lookup"><span data-stu-id="fabe4-1160">Media resources</span></span>
--   <span data-ttu-id="fabe4-1161">クレジット カード支払引受ページ (オプション)</span><span class="sxs-lookup"><span data-stu-id="fabe4-1161">Credit Card Payment acceptance page (optional)</span></span>
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="secure-retail-cloud-pos.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>secure-retail-cloud-pos.045409.ee7e400ea5878ceb1cc84b10c87d0baf3ae4ec90.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>ee7e400ea5878ceb1cc84b10c87d0baf3ae4ec90</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\secure-retail-cloud-pos.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Security best practices for Cloud POS in shared environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有環境におけるクラウド POS のセキュリティ ベスト プラクティス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Retail Cloud POS is a web application that runs in the context of a browser.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Security best practices for Cloud POS in shared environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有環境におけるクラウド POS のセキュリティ ベスト プラクティス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Retail Cloud POS is a web application that runs in the context of a browser.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Background</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バックグラウンド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Retail Cloud POS is a web application that runs in the context of a web browser.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS は、Web ブラウザーのコンテキストで動作する Web アプリケーションです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Therefore, it's vulnerable to attack when a user can run any script in the context of the web application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、ユーザーが Web アプリケーションのコンテキストで任意のスクリプトを実行できるときに攻撃するのは脆弱です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このような攻撃の要件の 1 つは、個人またはリモート デスクトップ接続を使用して、ユーザーがコンピューターへ物理的にアクセスすることです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">攻撃に対する脆弱性は、開発者ツールを提供するほとんどのブラウザーの、また権限の十分な制御なしで実行されるスクリプトを有効にするほとんどのブラウザーの既存の問題です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Web アプリケーションはホスティング環境にほとんど影響力をもたないため、セキュリティの問題を軽減する方法の 1 つは多層防御を追加することです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーおよびオペレーティング システムの両方の制限の厳しい強いポリシーを活用して、多層防御を構築できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Hardening instructions for a Retail Cloud POS computer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS コンピュータの強化手順</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Retail Cloud POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS のアクティブ化されたインスタンスを持つオペレーティング システムまたはブラウザーの多層防御の推奨事項を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>The settings should be enabled or set by a high-privileged account for the operating system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定は、オペレーティング システムの権限の高いアカウントによって有効にするか、設定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Retail Cloud POS should be used by a low-privileged account that can't override those settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS は、これらの設定を上書きすることができない低い特権のアカウントで使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>We recommend that you enable all the following settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のすべての設定を有効にすることをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Otherwise, you could create a security loophole that will be prone to security exploitation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、セキュリティを悪用されやすくなるセキュリティ ループホールができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Disable script execution in the browser's address bar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>必須<ept id="p1">**</ept> - ブラウザーのアドレス バーでスクリプトの実行を無効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Disable the browser's developer console.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>必須<ept id="p1">**</ept> - ブラウザーの開発者コンソールを無効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Retail Cloud POS should be accessed by a low-privileged user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>必須<ept id="p1">**</ept> - 権限の低いユーザーが Retail Cloud POS にアクセスする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source><bpt id="p1">**</bpt>Required<ept id="p1">**</ept> - Set up group policies to enable a kiosk session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>必須<ept id="p1">**</ept> - キオスク セッションを有効にするグループ ポリシーを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">**</bpt>Recommended<ept id="p1">**</ept> - Set up a proxy to access only whitelisted websites.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>推奨<ept id="p1">**</ept> - ホワイトリストに登録されたウェブサイトのみにアクセスするプロキシを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Disable script execution in the address bar of the browser that runs Retail Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS を実行するブラウザのアドレスバーでスクリプトの実行を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>There is no option to disable script execution in the address bar in Internet Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer のアドレス バーでスクリプトの実行を無効にするオプションはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>One alternative is to hide the address bar itself.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つの方法は、アドレス バー自体を非表示にすることです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Create a shortcut for the Retail Cloud POS URL, and copy it to each store worker's Microsoft Windows desktop.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS URL のショートカットを作成し、各作業者の Microsoft Windows デスクトップにコピーします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Run <bpt id="p1">**</bpt>regedit.exe<ept id="p1">**</ept> to change the registry to disable the Internet Explorer address bar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>regedit.exe<ept id="p1">**</ept> を実行し、Internet Explorer アドレス バーを無効にするレジストリを変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>LOCAL<ph id="ph3">\_</ph>MACHINE<ph id="ph4">\\</ph>SOFTWARE<ph id="ph5">\\</ph>Policies<ph id="ph6">\\</ph>Microsoft<ph id="ph7">\\</ph>Internet Explorer<ph id="ph8">\\</ph>ToolBars<ph id="ph9">\\</ph>Restrictions<ph id="ph10">\]</ph> "NoNavBar"=dword:00000001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>LOCAL<ph id="ph3">\_</ph>MACHINE<ph id="ph4">\\</ph>SOFTWARE<ph id="ph5">\\</ph>Policies<ph id="ph6">\\</ph>Microsoft<ph id="ph7">\\</ph>Internet Explorer<ph id="ph8">\\</ph>ToolBars<ph id="ph9">\\</ph>Restrictions<ph id="ph10">\]</ph> "NoNavBar"=dword:00000001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Microsoft Edge</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Edge</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>By design, Microsoft Edge prevents script execution in the address bar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">意図的に、Microsoft Edge はアドレス バーでのスクリプトの実行を防ぎます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Therefore, no action is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、何もする必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Disable the developer console in the browser that runs Retail Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS を実行するブラウザーで開発者コンソールを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Use Group Policy Editor to enable the following group policy to disable the Internet Explorer developer console: <ph id="ph1">\\</ph>Administrative Templates<ph id="ph2">\\</ph>Windows Components<ph id="ph3">\\</ph>Internet Explorer<ph id="ph4">\\</ph>Toolbars<ph id="ph5">\\</ph>Turn off Developer Tools="Enabled"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グループ ポリシー エディターを使用し、次のグループ ポリシーを有効にして Internet Explorer の開発者コンソールを無効にします。<ph id="ph1">\\</ph>管理用テンプレート<ph id="ph2">\\</ph>Windows コンポーネント<ph id="ph3">\\</ph>Internet Explorer<ph id="ph4">\\</ph>ツール バー<ph id="ph5">\\</ph>開発者ツール="有効" を無効。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Microsoft Edge</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Edge</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Run <bpt id="p1">**</bpt>regedit.exe<ept id="p1">**</ept> to change the registry to disable the developer console.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>regedit.exe<ept id="p1">**</ept> を実行し、開発者コンソールを無効にするレジストリを変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>LOCAL<ph id="ph3">\_</ph>MACHINE<ph id="ph4">\\</ph>SOFTWARE<ph id="ph5">\\</ph>Policies<ph id="ph6">\\</ph>Microsoft<ph id="ph7">\\</ph>MicrosoftEdge<ph id="ph8">\\</ph>F12<ph id="ph9">\]</ph> "AllowDeveloperTools"=dword:00000000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>HKEY<ph id="ph2">\_</ph>LOCAL<ph id="ph3">\_</ph>MACHINE<ph id="ph4">\\</ph>SOFTWARE<ph id="ph5">\\</ph>Policies<ph id="ph6">\\</ph>Microsoft<ph id="ph7">\\</ph>MicrosoftEdge<ph id="ph8">\\</ph>F12<ph id="ph9">\]</ph> "AllowDeveloperTools"=dword:00000000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Retail Cloud POS should be accessed by a low-privileged user</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">権限の低いユーザーが Retail Cloud POS にアクセスする必要があります</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>A point of sale (POS) user must be a non-administrative account that doesn't have privileges to change applied policies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売時点管理 (POS) ユーザーは、適用されたポリシーを変更する権限を持たない管理者以外のアカウントである必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Set up group policies to enable a kiosk session</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キオスク セッションを有効にするグループ ポリシーを設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>We recommend that you apply the following restrictions for Retail Cloud POS users:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS ユーザーに次の制限を適用することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Restrict access to the file system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル システムへのアクセスを制限します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Restrict access to Control Panel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール パネルへのアクセスを制限します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Restrict access to removable drives.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リムーバブル ドライブへのアクセスを制限します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Restrict access to shells that run commands.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドを実行するシェルへのアクセスを制限します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Restrict access to the registry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジストリへのアクセスを制限します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Restrict access to application management.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション管理へのアクセスを制限します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The following table lists the group policies to enable kiosk mode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、キオスク モードを有効にするグループ ポリシーを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>The set of policies requires that you start your browser at the sign-in script.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一連のポリシーでは、ログイン スクリプトでブラウザーを起動する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>These policies can be adjusted to your requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのポリシーは要件に合わせて調整できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>You should always assess any security implications or talk to a specialist.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">常に、セキュリティへの影響を評価するか、専門家に相談する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Setting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>State</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行政単位 (区画)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Comment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コメント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Path</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Enable screen saver</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スクリーン セーバーの有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Allow DFS roots to be published</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DFS ルートの公開をできるように許可します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source><ph id="ph1">\\</ph>Shared Folders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>共有フォルダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Allow shared folders to be published</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共有フォルダーの公開を許可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><ph id="ph1">\\</ph>Shared Folders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>共有フォルダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Add Search Internet link to Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューに検索インターネット リンクを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Show Quick Launch on Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーにサイド リンク バーを表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Show the Apps view automatically when the user goes to Start</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが [スタート] に移動したときにアプリケーションのビューを自動的に表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Show "Run as different user" command on Start</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">起動時に [別のユーザーとして実行] コマンドを表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Add the Run command to the Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューへの実行コマンドの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Show Start on the display the user is using when they press the Windows logo key</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows ロゴ キーを押すと、ユーザーが使用しているディスプレイに [スタート] を表示する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Show Windows Store apps on the taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows ストア アプリをタスク バーを表示する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Turn off shell protocol protected mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シェル プロトコルの保護モードをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Turn on menu bar by default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定でメニュー バーをオンにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Turn on Script Execution</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スクリプト実行をオンにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Disabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Windows PowerShell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Windows PowerShell</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Hide the "Add a program from CD-ROM or floppy disk" option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「CD-ROM またはフロッピーディスクからプログラムの追加」オプションの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Hide the "Add programs from Microsoft" option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「Microsoft からプログラムの追加」オプションの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Hide the "Add programs from your network" option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「ネットワークからプログラムの追加」オプションの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Hide Add New Programs page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいプログラムの追加ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Remove Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラムの追加と削除を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Hide the Set Program Access and Defaults page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラム アクセスおよび既定の設定ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Hide Change or Remove Programs page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラムの変更または削除ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Go directly to Components Wizard</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント ウィザードに直接移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Remove Support Information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポート情報を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Hide Add/Remove Windows Components page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows コンポーネントの追加と削除の非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Add or Remove Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラムの追加と削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Disable the Display Control Panel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール パネルの表示を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Display</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Hide Settings tab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定タブの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Display</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Prevent changing color scheme</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変化する配色を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Prevent changing theme</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーマの変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Prevent changing visual style for windows and buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows およびボタンの視覚スタイルの変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Prohibit selection of visual style font size</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォント サイズの表示スタイルの選択を禁止</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Prevent changing color and appearance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">色や外観の変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Prevent changing desktop background</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップ背景の変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Prevent changing desktop icons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップ アイコンの変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Prevent changing mouse pointers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マウス ポインターの変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Prevent changing screen saver</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スクリーン セーバーの変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Prevent changing sounds</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サウンドの変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Prevent addition of printers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プリンターの追加を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Printers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プリンター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Prevent deletion of printers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プリンターの削除を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Printers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プリンター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Hide "Set Program Access and Computer Defaults" page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「プログラム アクセスおよびコンピューター既定の設定」ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Hide "Get Programs" page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「プログラムの取得」ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Hide "Installed Updates" page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「インストールされた更新プログラム」ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Hide "Programs and Features" page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「プログラムと機能」ページの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Hide the Programs Control Panel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラムのコントロール パネルの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Hide "Windows Features"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「Windows の機能」の非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Hide "Windows Marketplace"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「Windows マーケットプレース」の非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>プログラム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Turn off automatic learning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動学習をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Regional and Language Options<ph id="ph3">\\</ph>Handwriting personalization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>地域と言語のオプション<ph id="ph3">\\</ph>手書きの個人用設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Hide Regional and Language Options administrative options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">地域と言語オプションの管理オプションの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source><ph id="ph1">\\</ph>Control Panel<ph id="ph2">\\</ph>Regional and Language Options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>コントロール パネル<ph id="ph2">\\</ph>地域と言語のオプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Hide and disable all items on the desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップ上のすべての項目の非表示および無効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Remove the Desktop Cleanup Wizard</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップ クリーンアップ ウィザードを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Hide Internet Explorer icon on desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップでの Internet Explorer アイコンの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Remove Computer icon on the desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップのコンピューター アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Remove My Documents icon on the desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップのマイ ドキュメント アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Hide Network Locations icon on desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップでネットワークの場所のアイコンの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Remove Properties from the Computer icon context menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピュータ アイコン コンテキスト メニューからプロパティを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Remove Properties from the Documents icon context menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドキュメント アイコン コンテキスト メニューからプロパティを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Do not add shares of recently opened documents to Network Locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最近開いたドキュメントの共有をネットワークの場所に追加しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Remove Recycle Bin icon from desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップから [ごみ箱] アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Remove Properties from the Recycle Bin context menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ごみ箱コンテキスト メニューからプロパティを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Do not save settings at exit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">終了時に、設定を保存しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Turn off Aero Shake window minimizing mouse gesture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マウス ジェスチャーを最小化する Aero Shake ウィンドウをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Prevent adding, dragging dropping and closing the Taskbar's toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーのツールバーの追加、ドラッグ アンド ドロップ、終了を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Prohibit adjusting desktop toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーの調整を禁止</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source><ph id="ph1">\\</ph>Desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>デスクトップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Force Start to be either full screen size or menu size</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">全画面のサイズまたはメニュー サイズのいずれかで強制スタート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Go to the desktop instead of Start when signing in</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインイン時に、開始ではなくデスクトップに移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Turn off personalized menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パーソナライズされたメニューをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Lock the Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーのロック</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Turn off notification area cleanup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知領域のクリーンアップをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Remove Balloon Tips on Start Menu items</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[スタート] メニューの項目のバルーン ヒントを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Prevent users from customizing their Start Screen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが開始画面をカスタマイズできないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Remove common program groups from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[スタート] メニューから共通プログラム グループを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Remove Favorites menu from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから [お気に入り] メニューを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Remove Search link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから検索リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>Remove frequent programs list from the Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからよく使うプログラムの一覧を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Remove Games link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからゲーム リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>Remove Help menu from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから [ヘルプ] メニューを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Turn off user tracking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの追跡をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Remove All Programs list from the Start menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからすべてのプログラムの一覧を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>Remove Network Connections from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからネットワーク接続を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Remove pinned programs list from the Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからピン留めされたプログラムの一覧を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>Do not keep history of recently opened documents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最近使用したファイルの履歴を保存しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Remove Recent Items menu from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから [最近使った項目] メニューを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Do not use the search-based method when resolving shell shortcuts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シェルのショートカットを解決する際は、検索に基づくメソッドを使用しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>Do not use the tracking-based method when resolving shell shortcuts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シェルのショートカットを解決する際は、追跡に基づくメソッドを使用しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Remove Run menu from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから [ファイル名を指定して実行] メニューを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Remove Default Programs link from the Start menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから既定のプログラム リンクを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>Remove Documents icon from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからドキュメント アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>Remove Music icon from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからミュージック アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Remove Network icon from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからネットワーク アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Remove Pictures icon from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからピクチャ アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Do not search communications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミュニケーションを検索しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>Remove Search Computer link</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューターを検索リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Remove See More Results / Search Everywhere link</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに結果を表示/すべての場所の検索リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>Do not search for files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを検索しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>Do not search Internet</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターネットを検索しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>Do not search programs and Control Panel items</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラムやコントロール パネルの項目を検索しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>Remove programs on Settings menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[設定] メニューのプログラムを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Prevent changes to Taskbar and Start Menu Settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーとスタート メニューの設定を変更できないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Remove Downloads link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからダウンロード リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>Remove Homegroup link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからホームグループ リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Remove Recorded TV link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから録画された TV リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>Remove user's folders from the Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからユーザーのフォルダーを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>Remove Videos link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからビデオ リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>Force classic Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従来のスタート メニューの強制</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>Remove Clock from the system notification area</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム通知領域から時計を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>Prevent grouping of taskbar items</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バー項目のグループ化を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>Do not display any custom toolbars in the taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーで顧客ツールバーを表示しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>Remove access to the context menus for the taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーのコンテキスト メニューへのアクセス許可を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>Hide the notification area</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知領域の非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>Prevent users from uninstalling applications from Start</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが [スタート] からアプリケーションをアンインストールできないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>Remove user folder link from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからユーザー フォルダー リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>Remove user name from Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューからユーザー名を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>Remove links and access to Windows Update</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows Update へのリンクおよびアクセスを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>Remove the "Undock PC" button from the Start Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタート メニューから [PC の固定解除] ボタンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>Remove Notifications and Action Center</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知とアクション センターを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>Disable showing balloon notifications as toasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バルーン通知をトーストとして表示しないようにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>Remove the Security and Maintenance icon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティと保守アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Remove the networking icon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ネットワーク アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>Remove the battery meter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッテリ メーターを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>Remove the volume control icon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">音量コントロール アイコンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>Turn off feature advertisement balloon notifications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィーチャー広告バルーン通知をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>Do not allow pinning Store app to the Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ストア アプリをタスクバーに固定することを許可しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>Do not allow pinning items in Jump Lists</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">項目をジャンプ リストに固定することを許可しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>Do not allow pinning programs to the Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラムをタスクバーに固定することを許可しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>Do not display or track items in Jump Lists from remote locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">遠隔拠点からジャンプ リストの品目を表示または追跡しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>Turn off automatic promotion of notification icons to the taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスクバーへの通知アイコンの自動プロモーションをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source>Lock all taskbar settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのタスク バー設定のロック</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>Prevent users from adding or removing toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがツールバーの追加または削除できないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Prevent users from rearranging toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがツールバーの配置を変更できないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>Do not allow taskbars on more than one display</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つ以上のディスプレイにタスク バーを許可しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>Turn off all balloon notifications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのバルーン通知をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>Remove pinned programs from the Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク バーからピン留めされたプログラムを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>Prevent users from moving taskbar to another screen dock location</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがタスク バーを別の画面ドックの場所に移動することを防ぐ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>Prevent users from resizing the taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがタスク バーのサイズを変更できないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>Turn off taskbar thumbnails</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスクバーのサムネイルをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source><ph id="ph1">\\</ph>Start Menu and Taskbar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>スタート メニューとタスクバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>Remove Task Manager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク マネージャーの削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Ctrl+Alt+Del Options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>Ctrl+Alt+Del オプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>Code signing for device drivers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイス ドライバーのコード署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Driver Installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>ドライバーのインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>Turn off Windows Update device driver search prompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows Update デバイス ドライバーの検索プロンプトをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Driver Installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>ドライバーのインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>Disallow selection of Custom Locales</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム ロケールの選択を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Locale Services</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>ロケール サービス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>Disallow changing of geographic location</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">地理的位置の変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Locale Services</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>ロケール サービス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>Disallow user override of locale settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロケール設定のユーザーによる上書きを禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Locale Services</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>ロケール サービス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>CD and DVD: Deny read access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CD および DVD: 読み取りアクセス権を拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>CD and DVD: Deny write access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CD および DVD: 書き込みアクセス権を拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>Floppy Drives: Deny read access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フロッピー ドライブ: 読み取りアクセスを拒否します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>Floppy Drives: Deny write access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フロッピー ドライブ: 書き込みアクセスを拒否します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>Removable Disks: Deny read access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リムーバブル ディスク: 読み取りアクセスを拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>Removable Disks: Deny write access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リムーバブル ディスク: 書き込みアクセスを拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>All Removable Storage classes: Deny all access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのリムーバブル ストレージ クラス: すべてのアクセスを拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Tape Drives: Deny read access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テープ ドライブ: 読み取りアクセスを拒否します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>Tape Drives: Deny write access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テープ ドライブ: 書き込みアクセスを拒否します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>WPD Devices: Deny read access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WPD デバイス: 読み取りアクセスを拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>WPD Devices: Deny write access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WPD デバイス: 書き込みアクセスを拒否</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source><ph id="ph1">\\</ph>System<ph id="ph2">\\</ph>Removable Storage Access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>システム<ph id="ph2">\\</ph>リムーバル ストレージ アクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>Prevent access to the command prompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンド プロンプトへのアクセスを禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source><ph id="ph1">\\</ph>System</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>System</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>Prevent access to registry editing tools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジストリ編集ツールへのアクセスを禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source><ph id="ph1">\\</ph>System</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>System</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>Prevent the wizard from running.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィザードが実行されないようにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Add features to Windows 10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Windows 10 への機能の追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>Turn off Program Compatibility Assistant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラム互換性アシスタントをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Application Compatibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>アプリケーションの互換性</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>Search, Share, Start, Devices and Settings don't appear when the mouse is pointing to the upper-right corner of the screen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マウスが画面の右上隅をポイントしたとき、検索、共有、開始、デバイスおよび設定は表示されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Edge UI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>Disable help tips</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘルプ ヒントを無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Edge UI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>Turn off tracking of app usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションの使用状況の追跡をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Edge UI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>Do not show recent apps when the mouse is pointing to the upper-left corner of the screen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面の左上にマウスをポイントした際は、最新のアプリケーションを表示しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Edge UI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>Prevent users from replacing the Command Prompt with Windows PowerShell in the menu they see when they right-click the lower-left corner or press the Windows logo key+X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが、左下隅を右クリックするか、Windows ロゴ キーを押しながら X キーを押したときに表示される Windows PowerShell にコマンド プロンプトを置き換えることができないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Edge UI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>Turn off switching between recent apps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最近アプリの切り替えをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Edge UI</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Edge UI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>Turn on or off details pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ウィンドウのオン/オフを切り替え</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer<ph id="ph3">\\</ph>Explorer Frame Pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー<ph id="ph3">\\</ph>エクスプローラー フレーム ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>Turn off Preview Pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[プレビュー] ウィンドウをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer<ph id="ph3">\\</ph>Explorer Frame Pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー<ph id="ph3">\\</ph>エクスプローラー フレーム ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>Do not display the Welcome Center at user logon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーのログオン時に、ウェルカム センターを表示しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>Turn on Classic Shell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラシック シェルにオンにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>Remove CD Burning features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CD 作成機能を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>Remove DFS tab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DFS タブの削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>Hide these specified drives in My Computer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マイ コンピュータで指定したこれらのドライブの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>No Entire Network in Network Locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ネットワークの場所でネットワーク全体がありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>Remove File menu from File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エクスプローラーから [ファイル] メニューを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォルダー オプションを、リボンの表示タブ上のオプション ボタンから開くことを許可しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>Remove Hardware tab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[ハードウェア] タブの削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>Hide the Manage item on the File Explorer context menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル エクスプ ローラーのコンテキスト メニューで管理項目の非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>Remove Shared Documents from My Computer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マイ コンピューターから共有ドキュメントを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>Remove "Map Network Drive" and "Disconnect Network Drive"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「ネットワーク ドライブの割り当て」および「ネットワーク ドライブの切断」を削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>Remove the Search the Internet "Search again" link</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターネット検索の「再度検索」リンクを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>Remove Security tab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[セキュリティ] タブを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>Remove Search button from File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エクスプローラーから検索ボタンを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>Remove File Explorer's default context menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エクスプローラーの既定のコンテキスト メニューを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>Prevent access to drives from My Computer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マイ コンピューターからドライブへのアクセスを禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source>Turn off Windows+X hotkeys</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows+X のホットキーをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="875">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="876">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="877">
+          <source>No Computers Near Me in Network Locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ネットワークの場所で近くにコンピューターがありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="878">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="879">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="880">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="881">
+          <source>Request credentials for network installations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ネットワークのインストールの資格情報を要求</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="882">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="883">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="884">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="885">
+          <source>Prevent users from adding files to the root of their Users Files folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが、ユーザー ファイル フォルダーのルートにファイルを追加するを防ぎます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="886">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="887">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="888">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>File Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ファイル エクスプローラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="889">
+          <source>Turn off Accelerators</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセラレータをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="890">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="891">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="892">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Accelerators</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>アクセラレータ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="893">
+          <source>File menu: Disable closing the browser and Explorer windows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル メニュー: ブラウザーおよびエクスプ ローラー ウィンドウを閉じるを無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="894">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="895">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="896">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="897">
+          <source>File menu: Disable Save As... menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル メニュー: ... メニュー オプションとして保存を無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="898">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="899">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="900">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="901">
+          <source>File menu: Disable Save As Web Page Complete</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル メニュー: Web ページの完了として保存を無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="902">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="903">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="904">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="905">
+          <source>File menu: Disable New menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル メニュー: 新しいメニュー オプションを無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="906">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="907">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="908">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="909">
+          <source>File menu: Disable Open menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル メニュー: オープン メニュー オプションを無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="910">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="911">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="912">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="913">
+          <source>Help menu: Remove 'Send Feedback' menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘルプ メニュー: 「フィードバックの送信」メニュー オプションを削除します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="914">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="915">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="916">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="917">
+          <source>Help menu: Remove 'For Netscape Users' menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘルプ メニュー: 「ネットスケープ ユーザー用」メニュー オプションを削除します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="918">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="919">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="920">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="921">
+          <source>Help menu: Remove 'Tip of the Day' menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘルプ メニュー: 「今日のヒント」メニュー オプションを削除します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="922">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="923">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="924">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="925">
+          <source>Help menu: Remove 'Tour' menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘルプ メニュー: 「ツアー」メニュー オプションを削除します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="926">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="927">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="928">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="929">
+          <source>Turn off Shortcut Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[ショートカット] メニューをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="930">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="931">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="932">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="933">
+          <source>Hide Favorites menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">お気に入りメニューの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="934">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="935">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="936">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="937">
+          <source>Disable Open in New Window menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいウィンドウ メニュー オプションで開くを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="938">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="939">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="940">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="941">
+          <source>Turn off Print Menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[印刷] メニューをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="942">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="943">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="944">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="945">
+          <source>Turn off the ability to launch report site problems using a menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メニュー オプションを使用してレポート サイトの問題を起動する機能をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="946">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="947">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="948">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="949">
+          <source>Disable Save this program to disk option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプログラムをディスクに保存するオプションを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="950">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="951">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="952">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="953">
+          <source>Tools menu: Disable Internet Options... menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[ツール] メニュー: インターネット オプションを無効にする...メニュー オプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="954">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="955">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="956">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="957">
+          <source>View menu: Disable Full Screen menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示メニュー: 全画面表示メニューのオプションの無効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="958">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="959">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="960">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="961">
+          <source>View menu: Disable Source menu option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示メニュー: ソース メニュー オプションの無効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="962">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="963">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="964">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Browser menus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ブラウザー メニュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="965">
+          <source>Turn off Developer Tools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者ツールをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="966">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="967">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="968">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ツールバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="969">
+          <source>Turn off toolbar upgrade tool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーのアップグレード ツールをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="970">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="971">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="972">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ツールバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="973">
+          <source>Hide the Command bar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンド バーの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="974">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="975">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="976">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ツールバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="977">
+          <source>Hide the status bar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステータス バーの非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="978">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="979">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="980">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ツールバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="981">
+          <source>Disable customizing browser toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザー ツールバーのカスタマイズを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="982">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="983">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="984">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ツールバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="985">
+          <source>Disable customizing browser toolbar buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザー ツールバーのカスタマイズ ボタンを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="986">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="987">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="988">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>Toolbars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer<ph id="ph3">\\</ph>ツールバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="989">
+          <source>Turn off add-on performance notifications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドオンのパフォーマンス通知をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="990">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="991">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="992">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="993">
+          <source>Do not allow users to enable or disable add-ons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーに有効または無効アドオンを許可しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="994">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="995">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="996">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="997">
+          <source>Disable changing Advanced page settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高度なページ設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="998">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="999">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1000">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1001">
+          <source>Turn off Favorites bar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">お気に入りバーをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1002">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1003">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1004">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1005">
+          <source>Prevent per-user installation of ActiveX controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActiveX コントロールのユーザー単位のインストールを禁止しする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1006">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1007">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1008">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1009">
+          <source>Turn off Reopen Last Browsing Session</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最終閲覧セッションの再開をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1010">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1011">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1012">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1013">
+          <source>Turn off Tab Grouping</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タブのグループ化をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1014">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1015">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1016">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1017">
+          <source>Prevent managing the phishing filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィッシング フィルターの管理を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1018">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1019">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1020">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1021">
+          <source>Turn off Managing SmartScreen Filter for Internet Explorer 8</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer 8 で SmartScreen フィルターの管理をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1022">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1023">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1024">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1025">
+          <source>Prevent managing SmartScreen Filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SmartScreen フィルターの管理を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1026">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1027">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1028">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1029">
+          <source>Turn off the Security Settings Check feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティ設定のチェック機能をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1030">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1031">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1032">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1033">
+          <source>Enforce full-screen mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フルスクリーン モードの実施</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1034">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1035">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1036">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1037">
+          <source>Disable Import/Export Settings wizard</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インポート/エクスポート設定ウィザードを無効にします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1038">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1039">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1040">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1041">
+          <source>Prevent Internet Explorer Search box from appearing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer 検索ボックスが表示されないようにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1042">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1043">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1044">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1045">
+          <source>Turn off Quick Tabs functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クイック タブの機能をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1046">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1047">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1048">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1049">
+          <source>Turn off tabbed browsing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タブ ブラウズをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1050">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1051">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1052">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1053">
+          <source>Disable changing Automatic Configuration settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動構成設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1054">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1055">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1056">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1057">
+          <source>Disable changing Temporary Internet files settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターネット一時ファイル設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1058">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1059">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1060">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1061">
+          <source>Disable changing Calendar and Contact settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">予定表と連絡先の設定を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1062">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1063">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1064">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1065">
+          <source>Disable changing certificate settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1066">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1067">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1068">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1069">
+          <source>Disable changing default browser check</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のブラウザー チェックを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1070">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1071">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1072">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1073">
+          <source>Disable changing color settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カラー設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1074">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1075">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1076">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1077">
+          <source>Disable changing connection settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">接続設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1078">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1079">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1080">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1081">
+          <source>Disable changing font settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォント設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1082">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1083">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1084">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1085">
+          <source>Disable changing language settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">言語設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1086">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1087">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1088">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1089">
+          <source>Disable changing link color settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リンク カラー設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1090">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1091">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1092">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1093">
+          <source>Disable changing Messaging settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メッセージ設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1094">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1095">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1096">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1097">
+          <source>Prevent managing pop-up exception list</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポップアップ例外一覧の管理を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1098">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1099">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1100">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1101">
+          <source>Turn off pop-up management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポップアップ管理をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1102">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1103">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1104">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1105">
+          <source>Disable changing Profile Assistant settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロファイル アシスタント設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1106">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1107">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1108">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1109">
+          <source>Prevent changing proxy settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロキシ設定の変更を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1110">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1111">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1112">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1113">
+          <source>Disable changing ratings settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">評価設定の変更を無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1114">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1115">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1116">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1117">
+          <source>Turn off the auto-complete feature for web addresses</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Web アドレスの自動補完機能をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1118">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1119">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1120">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1121">
+          <source>Turn off suggestions for all user-installed providers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがインストールしたすべてのプロバイダの推奨事項をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1122">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1123">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1124">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1125">
+          <source>Turn off the quick pick menu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[クイック ピック] メニューをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1126">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1127">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1128">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1129">
+          <source>Search: Disable Find Files via F3 within the browser</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検索: ブラウザー内で F3 キーを使用したファイルの検索を無効化する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1130">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1131">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1132">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1133">
+          <source>Search: Disable Search Customization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検索: 検索のカスタマイズを無効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1134">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1135">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1136">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1137">
+          <source>Turn off ability to pin sites in Internet Explorer on the desktop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップの Internet Explorer でサイトをピン留めする機能をオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1138">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1139">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1140">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Internet Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>Internet Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1141">
+          <source>Turn off the offer to update to the latest version of Windows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows の最新バージョンに更新するオファーをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1142">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1143">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1144">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Store</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ストア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1145">
+          <source>Turn off the Store application</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">店舗アプリケーションをオフにする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1146">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1147">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1148">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Store</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>ストア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1149">
+          <source>Prohibit New Task Creation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいタスクの作成を禁止</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1150">
+          <source>Enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1151">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1152">
+          <source><ph id="ph1">\\</ph>Windows Components<ph id="ph2">\\</ph>Task Scheduler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Windows コンポーネント<ph id="ph2">\\</ph>タスク スケジューラ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1153">
+          <source>Set up a proxy to access only whitelisted websites</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ホワイトリストに登録されたウェブサイトのみにアクセスするプロキシを設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1154">
+          <source>You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">日常業務で店員 (レジ担当者) が必要とする Web サイトの一覧を定義し、これらの Web サイトにのみアクセス権を持つ管理者制御のプロキシを設定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1155">
+          <source>Retail Cloud POS requires access to the following websites:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS には、次の Web サイトへのアクセスが必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1156">
+          <source>Retail Cloud POS website</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Cloud POS Web サイト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1157">
+          <source>Microsoft Azure Active Directory sign-in page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Azure Active Directory のサインイン ページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1158">
+          <source>Retail Server website</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバー Web サイト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1159">
+          <source>Bing Maps resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bing Maps リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1160">
+          <source>Media resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メディア リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1161">
+          <source>Credit Card Payment acceptance page (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クレジット カード支払引受ページ (オプション)</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

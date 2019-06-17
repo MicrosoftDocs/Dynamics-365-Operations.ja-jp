@@ -1,181 +1,279 @@
----
-title: PartMetadata タイプ
-description: パーツ メタデータ タイプ。
-author: shadykdc
-manager: AnnBe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: ''
-ms.search.region: Global
-ms.author: kashea
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e9dcdae6782179157e7189cea904ee597183aeb
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537319"
----
-# <a name="partmetadata-type"></a><span data-ttu-id="9a6a3-103">PartMetadata タイプ</span><span class="sxs-lookup"><span data-stu-id="9a6a3-103">PartMetadata type</span></span>
-
-[!include [banner](../../../../includes/banner.md)]
-
-<span data-ttu-id="9a6a3-104">パーツ メタデータ タイプ。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-104">Part metadata type.</span></span>
-
-### <a name="hierarchy"></a><span data-ttu-id="9a6a3-105">階層</span><span class="sxs-lookup"><span data-stu-id="9a6a3-105">Hierarchy</span></span>
-
-[<span data-ttu-id="9a6a3-106">ContainerControlMetadata</span><span class="sxs-lookup"><span data-stu-id="9a6a3-106">ContainerControlMetadata</span></span>](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md) <br><span data-ttu-id="9a6a3-107">&nbsp;&nbsp;&nbsp;└─ PartMetadata</span><span class="sxs-lookup"><span data-stu-id="9a6a3-107">&nbsp;&nbsp;&nbsp;└─ PartMetadata</span></span> <br>
-
-## <a name="index"></a><span data-ttu-id="9a6a3-108">指数</span><span class="sxs-lookup"><span data-stu-id="9a6a3-108">Index</span></span>
-
-### <a name="properties"></a><span data-ttu-id="9a6a3-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a6a3-109">Properties</span></span>
-
-* [<span data-ttu-id="9a6a3-110">BoundEntity</span><span class="sxs-lookup"><span data-stu-id="9a6a3-110">BoundEntity</span></span>](view-model-control-part-ipart-ipartmetadata.md#boundentity)
-* [<span data-ttu-id="9a6a3-111">BoundField</span><span class="sxs-lookup"><span data-stu-id="9a6a3-111">BoundField</span></span>](view-model-control-part-ipart-ipartmetadata.md#boundfield)
-* [<span data-ttu-id="9a6a3-112">説明</span><span class="sxs-lookup"><span data-stu-id="9a6a3-112">Description</span></span>](view-model-control-part-ipart-ipartmetadata.md#description)
-* [<span data-ttu-id="9a6a3-113">Design</span><span class="sxs-lookup"><span data-stu-id="9a6a3-113">Design</span></span>](view-model-control-part-ipart-ipartmetadata.md#design)
-* [<span data-ttu-id="9a6a3-114">編集可能</span><span class="sxs-lookup"><span data-stu-id="9a6a3-114">Editable</span></span>](view-model-control-part-ipart-ipartmetadata.md#editable)
-* [<span data-ttu-id="9a6a3-115">ExtType</span><span class="sxs-lookup"><span data-stu-id="9a6a3-115">ExtType</span></span>](view-model-control-part-ipart-ipartmetadata.md#exttype)
-* [<span data-ttu-id="9a6a3-116">HelpText</span><span class="sxs-lookup"><span data-stu-id="9a6a3-116">HelpText</span></span>](view-model-control-part-ipart-ipartmetadata.md#helptext)
-* [<span data-ttu-id="9a6a3-117">非表示</span><span class="sxs-lookup"><span data-stu-id="9a6a3-117">Hidden</span></span>](view-model-control-part-ipart-ipartmetadata.md#hidden)
-* [<span data-ttu-id="9a6a3-118">ID</span><span class="sxs-lookup"><span data-stu-id="9a6a3-118">Id</span></span>](view-model-control-part-ipart-ipartmetadata.md#id)
-* [<span data-ttu-id="9a6a3-119">ラベル</span><span class="sxs-lookup"><span data-stu-id="9a6a3-119">Label</span></span>](view-model-control-part-ipart-ipartmetadata.md#label)
-* [<span data-ttu-id="9a6a3-120">名前</span><span class="sxs-lookup"><span data-stu-id="9a6a3-120">Name</span></span>](view-model-control-part-ipart-ipartmetadata.md#name)
-* [<span data-ttu-id="9a6a3-121">注文</span><span class="sxs-lookup"><span data-stu-id="9a6a3-121">Order</span></span>](view-model-control-part-ipart-ipartmetadata.md#order)
-* [<span data-ttu-id="9a6a3-122">ターゲット</span><span class="sxs-lookup"><span data-stu-id="9a6a3-122">Target</span></span>](view-model-control-part-ipart-ipartmetadata.md#target)
-* <span data-ttu-id="9a6a3-123">[[タイプ](view-model-control-part-ipart-ipartmetadata.md#type)]</span><span class="sxs-lookup"><span data-stu-id="9a6a3-123">[Type](view-model-control-part-ipart-ipartmetadata.md#type)</span></span>
-
-## <a name="properties"></a><span data-ttu-id="9a6a3-124">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a6a3-124">Properties</span></span>
-
-### <a name="boundentity"></a><span data-ttu-id="9a6a3-125">BoundEntity</span><span class="sxs-lookup"><span data-stu-id="9a6a3-125">BoundEntity</span></span>
-
-<span data-ttu-id="9a6a3-126">BoundEntity: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-126">BoundEntity: string (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-127">コントロールがバインドされるエンティティ。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-127">The entity to which the control is bound.</span></span>
-
-> <span data-ttu-id="9a6a3-128">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-128">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)</span></span>
-
-
-### <a name="boundfield"></a><span data-ttu-id="9a6a3-129">BoundField</span><span class="sxs-lookup"><span data-stu-id="9a6a3-129">BoundField</span></span>
-
-<span data-ttu-id="9a6a3-130">BoundField: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-130">BoundField: string (optional)</span></span> 
-
-
-
-> <span data-ttu-id="9a6a3-131">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-131">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)</span></span>
-
-
-### <a name="description"></a><span data-ttu-id="9a6a3-132">説明</span><span class="sxs-lookup"><span data-stu-id="9a6a3-132">Description</span></span>
-
-<span data-ttu-id="9a6a3-133">説明:文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-133">Description: string (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-134">コントロールの説明。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-134">Description of the control.</span></span>
-
-> <span data-ttu-id="9a6a3-135">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](view-model-control-basecontrol-icontrol-icontrolmetadata.md#description) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-135">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)</span></span>
-
-
-### <a name="design"></a><span data-ttu-id="9a6a3-136">デザイン</span><span class="sxs-lookup"><span data-stu-id="9a6a3-136">Design</span></span>
-
-<span data-ttu-id="9a6a3-137">デザイン: [PartDesign](view-model-control-part-ipart-ipartdesign.md) (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-137">Design: [PartDesign](view-model-control-part-ipart-ipartdesign.md) (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-138">ターゲット ページの設計をします。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-138">Design for the target page.</span></span>
-
-
-### <a name="editable"></a><span data-ttu-id="9a6a3-139">編集可能</span><span class="sxs-lookup"><span data-stu-id="9a6a3-139">Editable</span></span>
-
-<span data-ttu-id="9a6a3-140">編集可能: プール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-140">Editable: boolean (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-141">コントロールが編集可能かどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-141">Boolean indicating if the control is editable.</span></span>
-<span data-ttu-id="9a6a3-142">コントロールまたはその親が編集可能でない場合は、False です。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-142">False when either the control or it's parent is not editable.</span></span>
-<span data-ttu-id="9a6a3-143">コントロールとその親の両方が編集可能な場合、true です。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-143">True when both the control and it's parent are editable.</span></span>
-<span data-ttu-id="9a6a3-144">コントロールまたはその親が編集可能で、もう一方が未定義の場合は true です。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-144">True when either the control or it's parent is editable and the other is undefined.</span></span>
-<span data-ttu-id="9a6a3-145">コントロールの編集機能と親の編集機能の両方が未定義の場合は未定義です。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-145">Undefined if both the control's edit-ability and it's parent's edit-ability is undefined.</span></span>
-
-> <span data-ttu-id="9a6a3-146">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-146">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)</span></span>
-
-
-### <a name="exttype"></a><span data-ttu-id="9a6a3-147">ExtType</span><span class="sxs-lookup"><span data-stu-id="9a6a3-147">ExtType</span></span>
-
-<span data-ttu-id="9a6a3-148">ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-148">ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-149">拡張されたコントロール タイプです。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-149">The extended control type.</span></span> <span data-ttu-id="9a6a3-150">E.g.</span><span class="sxs-lookup"><span data-stu-id="9a6a3-150">E.g.</span></span> <span data-ttu-id="9a6a3-151">コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-151">a control of type Input might have an extended type of Barcode.</span></span>
-
-> <span data-ttu-id="9a6a3-152">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-152">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)</span></span>
-
-
-### <a name="helptext"></a><span data-ttu-id="9a6a3-153">HelpText</span><span class="sxs-lookup"><span data-stu-id="9a6a3-153">HelpText</span></span>
-
-<span data-ttu-id="9a6a3-154">HelpText: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-154">HelpText: string (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-155">コマンドのキーボード ショートカットです。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-155">The keyboard shortcut for a command.</span></span> <span data-ttu-id="9a6a3-156">E.g.</span><span class="sxs-lookup"><span data-stu-id="9a6a3-156">E.g.</span></span> <span data-ttu-id="9a6a3-157">「(Shift + F5)」</span><span class="sxs-lookup"><span data-stu-id="9a6a3-157">"(Shift+F5)"</span></span>
-
-> <span data-ttu-id="9a6a3-158">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-158">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)</span></span>
-
-
-### <a name="hidden"></a><span data-ttu-id="9a6a3-159">非表示</span><span class="sxs-lookup"><span data-stu-id="9a6a3-159">Hidden</span></span>
-
-<span data-ttu-id="9a6a3-160">非表示: ブール値 (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-160">Hidden: boolean (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-161">コントロールを非表示にするかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-161">Boolean indicating if the control is hidden or not.</span></span>
-
-> <span data-ttu-id="9a6a3-162">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-162">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)</span></span>
-
-
-### <a name="id"></a><span data-ttu-id="9a6a3-163">ID</span><span class="sxs-lookup"><span data-stu-id="9a6a3-163">Id</span></span>
-
-<span data-ttu-id="9a6a3-164">Id: string (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-164">Id: string (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-165">コントロールの ID 文字列です。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-165">Identification string for a control.</span></span>
-
-> <span data-ttu-id="9a6a3-166">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-166">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)</span></span>
-
-
-### <a name="label"></a><span data-ttu-id="9a6a3-167">ラベル</span><span class="sxs-lookup"><span data-stu-id="9a6a3-167">Label</span></span>
-
-<span data-ttu-id="9a6a3-168">ラベル: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-168">Label: string (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-169">コントロールのラベル。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-169">Label for a control.</span></span> <span data-ttu-id="9a6a3-170">E.g.</span><span class="sxs-lookup"><span data-stu-id="9a6a3-170">E.g.</span></span> <span data-ttu-id="9a6a3-171">個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-171">a control representing a person's first name might have a label "First Name".</span></span>
-
-> <span data-ttu-id="9a6a3-172">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-172">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)</span></span>
-
-
-### <a name="name"></a><span data-ttu-id="9a6a3-173">氏名</span><span class="sxs-lookup"><span data-stu-id="9a6a3-173">Name</span></span>
-
-<span data-ttu-id="9a6a3-174">Name: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-174">Name: string (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-175">コントロールの名前です。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-175">Name of a control.</span></span>
-
-> <span data-ttu-id="9a6a3-176">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-176">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)</span></span>
-
-
-### <a name="order"></a><span data-ttu-id="9a6a3-177">注文</span><span class="sxs-lookup"><span data-stu-id="9a6a3-177">Order</span></span>
-
-<span data-ttu-id="9a6a3-178">注文: 番号 (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-178">Order: number (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-179">コントロールがページに表示される順序を示す番号。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-179">Number indicating the order in which a control will appear on a page.</span></span>
-
-> <span data-ttu-id="9a6a3-180">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-180">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)</span></span>
-
-
-### <a name="target"></a><span data-ttu-id="9a6a3-181">ターゲット</span><span class="sxs-lookup"><span data-stu-id="9a6a3-181">Target</span></span>
-
-<span data-ttu-id="9a6a3-182">ターゲット: [PageTarget](view-model-ipage-ipagetarget.md) (オプション)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-182">Target: [PageTarget](view-model-ipage-ipagetarget.md) (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-183">パーツのターゲット ページ。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-183">Target page of the part.</span></span>
-
-
-### <a name="type"></a><span data-ttu-id="9a6a3-184">種類</span><span class="sxs-lookup"><span data-stu-id="9a6a3-184">Type</span></span>
-
-<span data-ttu-id="9a6a3-185">Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="9a6a3-185">Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span> 
-
-<span data-ttu-id="9a6a3-186">コントロール タイプを示す文字列。</span><span class="sxs-lookup"><span data-stu-id="9a6a3-186">String indicating the control type.</span></span>
-
-> <span data-ttu-id="9a6a3-187">[ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承</span><span class="sxs-lookup"><span data-stu-id="9a6a3-187">Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)</span></span>
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="view-model-control-part-ipart-ipartmetadata.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>view-model-control-part-ipart-ipartmetadata.62db2a.020ce3277b756f2adc185bdf7b1b0652bbd5c3d6.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>020ce3277b756f2adc185bdf7b1b0652bbd5c3d6</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\interfaces\view-model-control-part-ipart-ipartmetadata.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>PartMetadata type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PartMetadata タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Part metadata type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パーツ メタデータ タイプ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>PartMetadata type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PartMetadata タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Part metadata type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パーツ メタデータ タイプ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source><bpt id="p1">[</bpt>ContainerControlMetadata<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ContainerControlMetadata<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ PartMetadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ PartMetadata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">[</bpt>BoundEntity<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#boundentity)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>BoundEntity<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#boundentity)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">[</bpt>BoundField<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#boundfield)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>BoundField<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#boundfield)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">[</bpt>Description<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#description)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>説明<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#description)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>Design<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#design)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#design)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt>Editable<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#editable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>編集可能<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#editable)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">[</bpt>ExtType<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#exttype)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ExtType<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#exttype)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">[</bpt>HelpText<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#helptext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>HelpText<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#helptext)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>Hidden<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>非表示<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#hidden)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">[</bpt>Id<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#id)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ID<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#id)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>Label<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#label)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ラベル<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#label)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt>Name<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#name)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>名前<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#name)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>Order<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#order)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>注文<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#order)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">[</bpt>Target<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#target)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ターゲット<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#target)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source><bpt id="p1">[</bpt>Type<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#type)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[<bpt id="p1">[</bpt>タイプ<ept id="p1">](view-model-control-part-ipart-ipartmetadata.md#type)</ept>]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>BoundEntity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BoundEntity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>BoundEntity: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BoundEntity: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>The entity to which the control is bound.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールがバインドされるエンティティ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundEntity<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundEntity<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>BoundField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BoundField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>BoundField: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BoundField: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundField<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundField<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Description: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明:文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Description of the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの説明。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Description<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Description<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Design</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Design: <bpt id="p1">[</bpt>PartDesign<ept id="p1">](view-model-control-part-ipart-ipartdesign.md)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン: <bpt id="p1">[</bpt>PartDesign<ept id="p1">](view-model-control-part-ipart-ipartdesign.md)</ept> (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Design for the target page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ターゲット ページの設計をします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Editable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">編集可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Editable: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">編集可能: プール値 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Boolean indicating if the control is editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが編集可能かどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>False when either the control or it's parent is not editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはその親が編集可能でない場合は、False です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>True when both the control and it's parent are editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールとその親の両方が編集可能な場合、true です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>True when either the control or it's parent is editable and the other is undefined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはその親が編集可能で、もう一方が未定義の場合は true です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Undefined if both the control's edit-ability and it's parent's edit-ability is undefined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの編集機能と親の編集機能の両方が未定義の場合は未定義です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Editable<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Editable<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>ExtType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExtType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>ExtType: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExtType: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept> (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The extended control type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張されたコントロール タイプです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>a control of type Input might have an extended type of Barcode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>ExtType<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>ExtType<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>HelpText</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HelpText</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>HelpText: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HelpText: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>The keyboard shortcut for a command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドのキーボード ショートカットです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>"(Shift+F5)"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「(Shift + F5)」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>HelpText<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>HelpText<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Hidden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Hidden: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非表示: ブール値 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Boolean indicating if the control is hidden or not.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールを非表示にするかどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Hidden<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Hidden<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Id</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Id: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Id: string (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Identification string for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの ID 文字列です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Id<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Id<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Label: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル: 文字列 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>a control representing a person's first name might have a label "First Name".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Label<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Label<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Name: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Name: 文字列 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Name of a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの名前です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Name<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Name<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Order: number (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文: 番号 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Number indicating the order in which a control will appear on a page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールがページに表示される順序を示す番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Order<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Order<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Target</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ターゲット</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Target: <bpt id="p1">[</bpt>PageTarget<ept id="p1">](view-model-ipage-ipagetarget.md)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ターゲット: <bpt id="p1">[</bpt>PageTarget<ept id="p1">](view-model-ipage-ipagetarget.md)</ept> (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Target page of the part.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パーツのターゲット ページ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](../modules/view-model-control-basecontrol-icontrol.md#controltype)</ept> (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>String indicating the control type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール タイプを示す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Type<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Type<ept id="p2">](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)</ept> から継承</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

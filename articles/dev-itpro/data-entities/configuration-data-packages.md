@@ -1,325 +1,1572 @@
----
-title: コンフィギュレーション データ パッケージ
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
-author: saraschi2
-manager: AnnBe
-ms.date: 12/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: margoc
-ms.search.scope: Operations
-ms.custom: ''
-ms.search.region: Global
-ms.author: saraschi
-ms.search.validFrom: 2017-06-26
-ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 8ecc266731f307d433e163f1336aed01fe947c94
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505415"
----
-# <a name="configuration-data-packages"></a><span data-ttu-id="b26c4-103">コンフィギュレーション データ パッケージ</span><span class="sxs-lookup"><span data-stu-id="b26c4-103">Configuration data packages</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-> [!IMPORTANT]
-> <span data-ttu-id="b26c4-104">このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-104">This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="b26c4-105">今後のリリースを実行している場合、「[コンフィギュレーションのコピー](copy-configuration.md)」というトピックを参照します。</span><span class="sxs-lookup"><span data-stu-id="b26c4-105">If you are running a later release, refer to the topic [Copy configuration](copy-configuration.md).</span></span> 
-
-<span data-ttu-id="b26c4-106">コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-106">Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="b26c4-107">これらのデータ パッケージは、実装の再現性を向上させ、Microsoft Dynamics 365 for Finance and Operations の構成を迅速化します。</span><span class="sxs-lookup"><span data-stu-id="b26c4-107">These data packages can help improve the repeatability of implementations and accelerate the configuration of Microsoft Dynamics 365 for Finance and Operations.</span></span>
-
-<span data-ttu-id="b26c4-108">データ パッケージにはコンフィギュレーション エンティティ スプレッドシートが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b26c4-108">Data packages contain configuration entity spreadsheets.</span></span> <span data-ttu-id="b26c4-109">これらのエンティティ スプレッドシートには、初期のゴールデン ビルドを作成するために使用できるベスト プラクティス データが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b26c4-109">These entity spreadsheets contain best practice data that you can use to create an initial golden build.</span></span> <span data-ttu-id="b26c4-110">データ パッケージ内のデータ エンティティも適切に順序付けされ、1 回のクリックによるインポートを成功させるのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-110">The data entities in the data packages are also sequenced appropriately to help guarantee a successful single-click import of the data.</span></span> 
-
-<span data-ttu-id="b26c4-111">エンティティのスプレッドシートには、次の 3 種類のデータが含まれます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-111">The entity spreadsheets include three types of data:</span></span>
-
-- <span data-ttu-id="b26c4-112">**業務データ** - スプレッドシートには、中規模の貿易会社または小売企業の標準的なビジネス データが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b26c4-112">**Business data** – The spreadsheet contains standard business data for a mid-sized trade or retail company.</span></span> <span data-ttu-id="b26c4-113">このデータは、ベスト プラクティスとビジネス標準を組み合わせて、構成の始点として使用できます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-113">This data combines best practices and business standards that can be used as a starting point for your configuration.</span></span>
-- <span data-ttu-id="b26c4-114">**サンプル データ** – スプレッドシートには、ビジネス特有のデータの例として使用できるデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b26c4-114">**Sample data** – The spreadsheet contains data that can be used as an example for business-specific data.</span></span> <span data-ttu-id="b26c4-115">このデータは例としてインポートして使用できますが、個々の業務内容で変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b26c4-115">This data can be imported and used as an example, but it must be changed for individual business practices.</span></span>
-- <span data-ttu-id="b26c4-116">**データなし** – スプレッドシートにデータが含まれていません。</span><span class="sxs-lookup"><span data-stu-id="b26c4-116">**No data** – The spreadsheet doesn't contain any data.</span></span> <span data-ttu-id="b26c4-117">製品のいくつかの領域は、各業務とその業務内容に固有です。</span><span class="sxs-lookup"><span data-stu-id="b26c4-117">Several areas of the product are unique to each business and its business practices.</span></span> <span data-ttu-id="b26c4-118">これらの領域は組織専用に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b26c4-118">These areas must be configured specifically for the organization.</span></span> <span data-ttu-id="b26c4-119">これらのスプレッドシートは、必要に応じて組織のために見直し、更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b26c4-119">These spreadsheets should be reviewed and updated for the organization as appropriate.</span></span>
-
-<span data-ttu-id="b26c4-120">パッケージデータで、エンティティ スプレッドシートに含まれるデータのタイプの詳細については、このトピックの [データ パッケージ](#data-packages-system) セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b26c4-120">For more information about the type of data that is included in each entity spreadsheet in the data packages see the [Data packages](#data-packages-system) section of this topic.</span></span> <span data-ttu-id="b26c4-121">データ パッケージをインポートする前に個々のスプレッドシートを修正するか、提供されるときにデータ パッケージをインポートしてからシステムでデータを更新することができます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-121">You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they have been supplied and then update your data in the system.</span></span>
-
-## <a name="using-configuration-data-packages"></a><span data-ttu-id="b26c4-122">コンフィギュレーション データ パッケージの使用</span><span class="sxs-lookup"><span data-stu-id="b26c4-122">Using configuration data packages</span></span>
-<span data-ttu-id="b26c4-123">LCS から構成データ パッケージにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-123">You can access configuration data packages from LCS.</span></span> <span data-ttu-id="b26c4-124">それらを LCS 環境に適用するか、Finance and Operations に手動でインポートすることができるようにダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-124">You can either apply them to an LCS environment, or download them so that you can manually import them into Finance and Operations.</span></span>
-
-1. <span data-ttu-id="b26c4-125">LCS プロジェクトを開いて、アセット ライブラリを開きます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-125">Open your LCS project, and open the Asset library.</span></span>
-2. <span data-ttu-id="b26c4-126">アセット タイプの一覧で、**プロセス データ パッケージ**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b26c4-126">In the list of asset types, select **Process data package**.</span></span>
-3. <span data-ttu-id="b26c4-127">**インポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b26c4-127">Click **Import**.</span></span>
-4. <span data-ttu-id="b26c4-128">コンフィギュレーション データ パッケージを選択します。</span><span class="sxs-lookup"><span data-stu-id="b26c4-128">Select the configuration data package.</span></span>
-5. <span data-ttu-id="b26c4-129">**ピック**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b26c4-129">Click **Pick**.</span></span>
-
-<span data-ttu-id="b26c4-130">この時点で**消費**関数を使用してプロセス データ パッケージを LCS 環境に適用することができます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-130">At this point, you can use the **Consume** function to apply the process data package to an LCS environment.</span></span> 
-
-<span data-ttu-id="b26c4-131">また、個々のデータ パッケージ ファイルを **データ パッケージ** 領域からダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-131">You can also download the individual data package files from the **Data package** area.</span></span> <span data-ttu-id="b26c4-132">Finance and Operations の **データ管理** ワークスペースを使用して、LCS からデータ パッケージをインポートします。</span><span class="sxs-lookup"><span data-stu-id="b26c4-132">Use the **Data management** workspace in Finance and Operations to import the data packages from LCS.</span></span> <span data-ttu-id="b26c4-133">コンフィギュレーションをインポートおよびエクスポートする方法の詳細については、[会社間でのコンフィギュレーション データのコピー](copy-configuration.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b26c4-133">For more information about how to import and export configurations, see [Copy configuration data between companies](copy-configuration.md).</span></span>
-
-## <a name="special-considerations"></a><span data-ttu-id="b26c4-134">特別な注意事項</span><span class="sxs-lookup"><span data-stu-id="b26c4-134">Special considerations</span></span>
-### <a name="system-setup"></a><span data-ttu-id="b26c4-135">システム設定</span><span class="sxs-lookup"><span data-stu-id="b26c4-135">System setup</span></span>
-<span data-ttu-id="b26c4-136">システム データ パッケージは、他のデータ パッケージの前にインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b26c4-136">The System data package must be imported before any other data package.</span></span> <span data-ttu-id="b26c4-137">既定では、システム データ パッケージは **ST01** という名前の新しい法人を作成します。</span><span class="sxs-lookup"><span data-stu-id="b26c4-137">By default, the System data package creates a new legal entity that is named **ST01**.</span></span> <span data-ttu-id="b26c4-138">モジュールのエリアのデータ パッケージは、この法人によって異なります。</span><span class="sxs-lookup"><span data-stu-id="b26c4-138">The data packages for the module areas depend on this legal entity.</span></span>
-
-### <a name="general-ledger"></a><span data-ttu-id="b26c4-139">一般会計</span><span class="sxs-lookup"><span data-stu-id="b26c4-139">General ledger</span></span>
-<span data-ttu-id="b26c4-140">一般的な勘定科目表は、コンフィギュレーション データ パッケージに含まれます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-140">A generic chart of accounts is included in the configuration data packages.</span></span> <span data-ttu-id="b26c4-141">このデータが主勘定エンティティ スプレッドシートで定義されているように使用されると、システム全体の転記プロファイルには既定の転記データが入力されます。</span><span class="sxs-lookup"><span data-stu-id="b26c4-141">When this data is used as it's defined in the Main account entity spreadsheet, posting profiles across the system are filled with default posting data.</span></span> <span data-ttu-id="b26c4-142">勘定科目表に使用される勘定を変更する場合は、個々の転記プロファイルおよび転記領域ごとの勘定も更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b26c4-142">If you change the main accounts that are used for the chart of accounts, you must also update the individual posting profiles and posting accounts for each area.</span></span>
-
-## <a name="data-packages-system"></a><span data-ttu-id="b26c4-143">データ パッケージ: システム</span><span class="sxs-lookup"><span data-stu-id="b26c4-143">Data packages: System</span></span>
-
-### <a name="010--system-setup"></a><span data-ttu-id="b26c4-144">010 - システム設定</span><span class="sxs-lookup"><span data-stu-id="b26c4-144">010 – System Setup</span></span>
-
-|                                         | <span data-ttu-id="b26c4-145">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-145">Spreadsheet content</span></span> |                 |             |
-|-----------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-146">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-146">**Entity spreadsheet**</span></span>                  | <span data-ttu-id="b26c4-147">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-147">**Business data**</span></span>   | <span data-ttu-id="b26c4-148">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-148">**Sample data**</span></span> | <span data-ttu-id="b26c4-149">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-149">**No data**</span></span> |
-| <span data-ttu-id="b26c4-150">住所と連絡先情報の目的</span><span class="sxs-lookup"><span data-stu-id="b26c4-150">Address and contact information purpose</span></span> | <span data-ttu-id="b26c4-151">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-151">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-152">アドレス帳</span><span class="sxs-lookup"><span data-stu-id="b26c4-152">Address books</span></span>                           |                     |                 | <span data-ttu-id="b26c4-153">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-153">X</span></span>           |
-| <span data-ttu-id="b26c4-154">住所書式行</span><span class="sxs-lookup"><span data-stu-id="b26c4-154">Address format lines</span></span>                    | <span data-ttu-id="b26c4-155">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-155">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-156">住所の形式</span><span class="sxs-lookup"><span data-stu-id="b26c4-156">Address format</span></span>                          | <span data-ttu-id="b26c4-157">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-157">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-158">住所パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-158">Address parameters</span></span>                      | <span data-ttu-id="b26c4-159">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-159">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-160">カレンダー</span><span class="sxs-lookup"><span data-stu-id="b26c4-160">Calendar</span></span>                                |                     |                 | <span data-ttu-id="b26c4-161">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-161">X</span></span>           |
-| <span data-ttu-id="b26c4-162">市町村</span><span class="sxs-lookup"><span data-stu-id="b26c4-162">Cities</span></span>                                  | <span data-ttu-id="b26c4-163">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-163">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-164">市区郡</span><span class="sxs-lookup"><span data-stu-id="b26c4-164">Counties</span></span>                                | <span data-ttu-id="b26c4-165">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-165">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-166">CountryRegions</span><span class="sxs-lookup"><span data-stu-id="b26c4-166">CountryRegions</span></span>                          | <span data-ttu-id="b26c4-167">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-167">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-168">通貨</span><span class="sxs-lookup"><span data-stu-id="b26c4-168">Currencies</span></span>                              | <span data-ttu-id="b26c4-169">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-169">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-170">地域</span><span class="sxs-lookup"><span data-stu-id="b26c4-170">Districts</span></span>                               | <span data-ttu-id="b26c4-171">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-171">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-172">為替レート</span><span class="sxs-lookup"><span data-stu-id="b26c4-172">Exchange rates</span></span>                          |                     | <span data-ttu-id="b26c4-173">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-173">X</span></span>               |             |
-| <span data-ttu-id="b26c4-174">グローバル アドレス帳パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-174">Global address book parameters</span></span>          | <span data-ttu-id="b26c4-175">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-175">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-176">グローバル アドレス帳</span><span class="sxs-lookup"><span data-stu-id="b26c4-176">Global address book</span></span>                     |                     |                 | <span data-ttu-id="b26c4-177">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-177">X</span></span>           |
-| <span data-ttu-id="b26c4-178">法人</span><span class="sxs-lookup"><span data-stu-id="b26c4-178">Legal entities</span></span>                          |                     | <span data-ttu-id="b26c4-179">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-179">X</span></span>               |             |
-| <span data-ttu-id="b26c4-180">名前の接辞</span><span class="sxs-lookup"><span data-stu-id="b26c4-180">Name affixes</span></span>                            | <span data-ttu-id="b26c4-181">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-181">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-182">名前の順序</span><span class="sxs-lookup"><span data-stu-id="b26c4-182">Name sequences</span></span>                          | <span data-ttu-id="b26c4-183">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-183">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-184">作業単位</span><span class="sxs-lookup"><span data-stu-id="b26c4-184">Operating unit</span></span>                          |                     | <span data-ttu-id="b26c4-185">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-185">X</span></span>               |             |
-| <span data-ttu-id="b26c4-186">組織階層の目的</span><span class="sxs-lookup"><span data-stu-id="b26c4-186">Organization hierarchy purposes</span></span>         |                     |                 | <span data-ttu-id="b26c4-187">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-187">X</span></span>           |
-| <span data-ttu-id="b26c4-188">組織階層タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-188">Organization hierarchy type</span></span>             |                     |                 | <span data-ttu-id="b26c4-189">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-189">X</span></span>           |
-| <span data-ttu-id="b26c4-190">組織階層</span><span class="sxs-lookup"><span data-stu-id="b26c4-190">Organization hierarchy</span></span>                  |                     |                 | <span data-ttu-id="b26c4-191">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-191">X</span></span>           |
-| <span data-ttu-id="b26c4-192">関係者の連絡先</span><span class="sxs-lookup"><span data-stu-id="b26c4-192">Party contacts</span></span>                          |                     |                 | <span data-ttu-id="b26c4-193">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-193">X</span></span>           |
-| <span data-ttu-id="b26c4-194">関係者の配送先</span><span class="sxs-lookup"><span data-stu-id="b26c4-194">Party postal addresses</span></span>                  |                     |                 | <span data-ttu-id="b26c4-195">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-195">X</span></span>           |
-| <span data-ttu-id="b26c4-196">関係者のリレーションシップ</span><span class="sxs-lookup"><span data-stu-id="b26c4-196">Party relationships</span></span>                     |                     |                 | <span data-ttu-id="b26c4-197">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-197">X</span></span>           |
-| <span data-ttu-id="b26c4-198">郵便番号</span><span class="sxs-lookup"><span data-stu-id="b26c4-198">Postal codes</span></span>                            | <span data-ttu-id="b26c4-199">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-199">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-200">関係タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-200">Relationship types</span></span>                      | <span data-ttu-id="b26c4-201">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-201">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-202">都道府県</span><span class="sxs-lookup"><span data-stu-id="b26c4-202">States</span></span>                                  | <span data-ttu-id="b26c4-203">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-203">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-204">システム パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-204">System parameters</span></span>                       | <span data-ttu-id="b26c4-205">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-205">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-206">チーム タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-206">Team types</span></span>                              |                     |                 | <span data-ttu-id="b26c4-207">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-207">X</span></span>           |
-| <span data-ttu-id="b26c4-208">チーム</span><span class="sxs-lookup"><span data-stu-id="b26c4-208">Teams</span></span>                                   |                     |                 | <span data-ttu-id="b26c4-209">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-209">X</span></span>           |
-| <span data-ttu-id="b26c4-210">単位換算</span><span class="sxs-lookup"><span data-stu-id="b26c4-210">Unit conversions</span></span>                        | <span data-ttu-id="b26c4-211">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-211">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-212">単位の変換</span><span class="sxs-lookup"><span data-stu-id="b26c4-212">Unit translations</span></span>                       | <span data-ttu-id="b26c4-213">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-213">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-214">単位</span><span class="sxs-lookup"><span data-stu-id="b26c4-214">Units</span></span>                                   | <span data-ttu-id="b26c4-215">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-215">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-216">ユーザー グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-216">User groups</span></span>                             |                     |                 | <span data-ttu-id="b26c4-217">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-217">X</span></span>           |
-| <span data-ttu-id="b26c4-218">ユーザー情報</span><span class="sxs-lookup"><span data-stu-id="b26c4-218">User information</span></span>                        |                     |                 | <span data-ttu-id="b26c4-219">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-219">X</span></span>           |
-
-## <a name="data-packages-financials"></a><span data-ttu-id="b26c4-220">データ パッケージ: 財務</span><span class="sxs-lookup"><span data-stu-id="b26c4-220">Data packages: Financials</span></span> 
-
-### <a name="020--gl-shared"></a><span data-ttu-id="b26c4-221">020 - GL 共有</span><span class="sxs-lookup"><span data-stu-id="b26c4-221">020 – GL Shared</span></span>
-
-|                                        | <span data-ttu-id="b26c4-222">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-222">Spreadsheet content</span></span> |                 |             |
-|----------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-223">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-223">**Entity spreadsheet**</span></span>                 | <span data-ttu-id="b26c4-224">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-224">**Business data**</span></span>   | <span data-ttu-id="b26c4-225">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-225">**Sample data**</span></span> | <span data-ttu-id="b26c4-226">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-226">**No data**</span></span> |
-| <span data-ttu-id="b26c4-227">勘定構造の有効化</span><span class="sxs-lookup"><span data-stu-id="b26c4-227">Account structure activation</span></span>           |                     | <span data-ttu-id="b26c4-228">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-228">X</span></span>               |             |
-| <span data-ttu-id="b26c4-229">勘定構造の許可値</span><span class="sxs-lookup"><span data-stu-id="b26c4-229">Account structure allowed values</span></span>       |                     | <span data-ttu-id="b26c4-230">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-230">X</span></span>               |             |
-| <span data-ttu-id="b26c4-231">勘定構造</span><span class="sxs-lookup"><span data-stu-id="b26c4-231">Account structures</span></span>                     |                     | <span data-ttu-id="b26c4-232">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-232">X</span></span>               |             |
-| <span data-ttu-id="b26c4-233">詳細ルールの基準</span><span class="sxs-lookup"><span data-stu-id="b26c4-233">Advanced rule criteria</span></span>                 |                     | <span data-ttu-id="b26c4-234">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-234">X</span></span>               |             |
-| <span data-ttu-id="b26c4-235">詳細ルール構造の有効化</span><span class="sxs-lookup"><span data-stu-id="b26c4-235">Advanced rule structure activation</span></span>     |                     | <span data-ttu-id="b26c4-236">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-236">X</span></span>               |             |
-| <span data-ttu-id="b26c4-237">詳細ルール構造の許可値</span><span class="sxs-lookup"><span data-stu-id="b26c4-237">Advanced rule structure allowed values</span></span> |                     | <span data-ttu-id="b26c4-238">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-238">X</span></span>               |             |
-| <span data-ttu-id="b26c4-239">詳細なルール構造</span><span class="sxs-lookup"><span data-stu-id="b26c4-239">Advanced rule structures</span></span>               |                     | <span data-ttu-id="b26c4-240">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-240">X</span></span>               |             |
-| <span data-ttu-id="b26c4-241">詳細ルール</span><span class="sxs-lookup"><span data-stu-id="b26c4-241">Advanced rules</span></span>                         |                     | <span data-ttu-id="b26c4-242">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-242">X</span></span>               |             |
-| <span data-ttu-id="b26c4-243">勘定科目表</span><span class="sxs-lookup"><span data-stu-id="b26c4-243">Chart of accounts</span></span>                      | <span data-ttu-id="b26c4-244">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-244">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-245">連結グループおよび勘定</span><span class="sxs-lookup"><span data-stu-id="b26c4-245">Consolidation groups and accounts</span></span>      |                     | <span data-ttu-id="b26c4-246">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-246">X</span></span>               |             |
-| <span data-ttu-id="b26c4-247">分析コード属性の有効化</span><span class="sxs-lookup"><span data-stu-id="b26c4-247">Dimension attribute activation</span></span>         |                     | <span data-ttu-id="b26c4-248">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-248">X</span></span>               |             |
-| <span data-ttu-id="b26c4-249">財務分析コード形式</span><span class="sxs-lookup"><span data-stu-id="b26c4-249">Financial dimension format</span></span>             |                     | <span data-ttu-id="b26c4-250">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-250">X</span></span>               |             |
-| <span data-ttu-id="b26c4-251">財務分析コード セット</span><span class="sxs-lookup"><span data-stu-id="b26c4-251">Financial dimension sets</span></span>               |                     | <span data-ttu-id="b26c4-252">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-252">X</span></span>               |             |
-| <span data-ttu-id="b26c4-253">財務分析コードの翻訳</span><span class="sxs-lookup"><span data-stu-id="b26c4-253">Financial dimension translations</span></span>       |                     |                 | <span data-ttu-id="b26c4-254">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-254">X</span></span>           |
-| <span data-ttu-id="b26c4-255">財務分析コード値の翻訳</span><span class="sxs-lookup"><span data-stu-id="b26c4-255">Financial dimension value translations</span></span> |                     |                 | <span data-ttu-id="b26c4-256">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-256">X</span></span>           |
-| <span data-ttu-id="b26c4-257">財務分析コード値</span><span class="sxs-lookup"><span data-stu-id="b26c4-257">Financial dimension values</span></span>             |                     |                 | <span data-ttu-id="b26c4-258">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-258">X</span></span>           |
-| <span data-ttu-id="b26c4-259">財務分析コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-259">Financial dimensions</span></span>                   |                     | <span data-ttu-id="b26c4-260">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-260">X</span></span>               |             |
-| <span data-ttu-id="b26c4-261">会計カレンダー期間</span><span class="sxs-lookup"><span data-stu-id="b26c4-261">Fiscal calendar period</span></span>                 |                     | <span data-ttu-id="b26c4-262">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-262">X</span></span>               |             |
-| <span data-ttu-id="b26c4-263">会計カレンダー</span><span class="sxs-lookup"><span data-stu-id="b26c4-263">Fiscal calendar</span></span>                        |                     | <span data-ttu-id="b26c4-264">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-264">X</span></span>               |             |
-| <span data-ttu-id="b26c4-265">主勘定カテゴリ</span><span class="sxs-lookup"><span data-stu-id="b26c4-265">Main account categories</span></span>                | <span data-ttu-id="b26c4-266">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-266">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-267">主勘定</span><span class="sxs-lookup"><span data-stu-id="b26c4-267">Main account</span></span>                           | <span data-ttu-id="b26c4-268">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-268">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-269">番号順序コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-269">Number sequence code</span></span>                   |                     | <span data-ttu-id="b26c4-270">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-270">X</span></span>               |             |
-| <span data-ttu-id="b26c4-271">番号順序グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-271">Number sequence group</span></span>                  |                     |                 | <span data-ttu-id="b26c4-272">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-272">X</span></span>           |
-| <span data-ttu-id="b26c4-273">番号順序の参照</span><span class="sxs-lookup"><span data-stu-id="b26c4-273">Number sequence references</span></span>             |                     | <span data-ttu-id="b26c4-274">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-274">X</span></span>               |             |
-
-### <a name="025--gl"></a><span data-ttu-id="b26c4-275">025 - GL</span><span class="sxs-lookup"><span data-stu-id="b26c4-275">025 – GL</span></span>
-
-|                                                  | <span data-ttu-id="b26c4-276">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-276">Spreadsheet content</span></span> |                 |             |
-|--------------------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-277">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-277">**Entity spreadsheet**</span></span>                           | <span data-ttu-id="b26c4-278">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-278">**Business data**</span></span>   | <span data-ttu-id="b26c4-279">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-279">**Sample data**</span></span> | <span data-ttu-id="b26c4-280">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-280">**No data**</span></span> |
-| <span data-ttu-id="b26c4-281">自動トランザクションの勘定</span><span class="sxs-lookup"><span data-stu-id="b26c4-281">Accounts for automatic transactions</span></span>              | <span data-ttu-id="b26c4-282">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-282">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-283">残高統制勘定</span><span class="sxs-lookup"><span data-stu-id="b26c4-283">Balance control accounts</span></span>                         |                     |                 | <span data-ttu-id="b26c4-284">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-284">X</span></span>           |
-| <span data-ttu-id="b26c4-285">カレンダー</span><span class="sxs-lookup"><span data-stu-id="b26c4-285">Calendar</span></span>                                         |                     |                 | <span data-ttu-id="b26c4-286">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-286">X</span></span>           |
-| <span data-ttu-id="b26c4-287">日付範囲</span><span class="sxs-lookup"><span data-stu-id="b26c4-287">Date intervals</span></span>                                   | <span data-ttu-id="b26c4-288">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-288">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-289">既定の説明</span><span class="sxs-lookup"><span data-stu-id="b26c4-289">Default descriptions</span></span>                             |                     | <span data-ttu-id="b26c4-290">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-290">X</span></span>               |             |
-| <span data-ttu-id="b26c4-291">分析コード パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-291">Dimension parameters</span></span>                             | <span data-ttu-id="b26c4-292">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-292">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-293">ドキュメント タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-293">Document types</span></span>                                   | <span data-ttu-id="b26c4-294">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-294">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-295">財務分析コード値法人手数料</span><span class="sxs-lookup"><span data-stu-id="b26c4-295">Financial dimension value legal entity overrides</span></span> |                     |                 | <span data-ttu-id="b26c4-296">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-296">X</span></span>           |
-| <span data-ttu-id="b26c4-297">財務理由</span><span class="sxs-lookup"><span data-stu-id="b26c4-297">Financial reasons</span></span>                                | <span data-ttu-id="b26c4-298">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-298">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-299">仕訳帳の説明</span><span class="sxs-lookup"><span data-stu-id="b26c4-299">Journal descriptions</span></span>                             | <span data-ttu-id="b26c4-300">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-300">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-301">仕訳帳名</span><span class="sxs-lookup"><span data-stu-id="b26c4-301">Journal names</span></span>                                    | <span data-ttu-id="b26c4-302">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-302">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-303">元帳配賦基準の入力元</span><span class="sxs-lookup"><span data-stu-id="b26c4-303">Ledger allocation basis source</span></span>                   |                     |                 | <span data-ttu-id="b26c4-304">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-304">X</span></span>           |
-| <span data-ttu-id="b26c4-305">元帳配賦基準</span><span class="sxs-lookup"><span data-stu-id="b26c4-305">Ledger allocation basis</span></span>                          |                     |                 | <span data-ttu-id="b26c4-306">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-306">X</span></span>           |
-| <span data-ttu-id="b26c4-307">元帳配賦ルールの出力先</span><span class="sxs-lookup"><span data-stu-id="b26c4-307">Ledger allocation rule destination</span></span>               |                     |                 | <span data-ttu-id="b26c4-308">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-308">X</span></span>           |
-| <span data-ttu-id="b26c4-309">元帳配賦ルールの入力元</span><span class="sxs-lookup"><span data-stu-id="b26c4-309">Ledger allocation rule source</span></span>                    |                     |                 | <span data-ttu-id="b26c4-310">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-310">X</span></span>           |
-| <span data-ttu-id="b26c4-311">元帳配賦ルール</span><span class="sxs-lookup"><span data-stu-id="b26c4-311">Ledger allocation rule</span></span>                           |                     |                 | <span data-ttu-id="b26c4-312">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-312">X</span></span>           |
-| <span data-ttu-id="b26c4-313">元帳の会計カレンダー期間</span><span class="sxs-lookup"><span data-stu-id="b26c4-313">Ledger fiscal calendar period</span></span>                    |                     | <span data-ttu-id="b26c4-314">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-314">X</span></span>               |             |
-| <span data-ttu-id="b26c4-315">元帳の会計暦年</span><span class="sxs-lookup"><span data-stu-id="b26c4-315">Ledger fiscal calendar year</span></span>                      |                     | <span data-ttu-id="b26c4-316">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-316">X</span></span>               |             |
-| <span data-ttu-id="b26c4-317">元帳パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-317">Ledger parameters</span></span>                                | <span data-ttu-id="b26c4-318">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-318">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-319">Ledger</span><span class="sxs-lookup"><span data-stu-id="b26c4-319">Ledger</span></span>                                           |                     | <span data-ttu-id="b26c4-320">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-320">X</span></span>               |             |
-| <span data-ttu-id="b26c4-321">主勘定法人の上書き</span><span class="sxs-lookup"><span data-stu-id="b26c4-321">Main account legal entity overrides</span></span>              |                     |                 | <span data-ttu-id="b26c4-322">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-322">X</span></span>           |
-| <span data-ttu-id="b26c4-323">組織の電子メール テンプレート メッセージ</span><span class="sxs-lookup"><span data-stu-id="b26c4-323">Organization email template message</span></span>              |                     |                 | <span data-ttu-id="b26c4-324">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-324">X</span></span>           |
-| <span data-ttu-id="b26c4-325">組織の電子メール テンプレート</span><span class="sxs-lookup"><span data-stu-id="b26c4-325">Organization email template</span></span>                      |                     |                 | <span data-ttu-id="b26c4-326">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-326">X</span></span>           |
-| <span data-ttu-id="b26c4-327">補助元帳仕訳転送ルール</span><span class="sxs-lookup"><span data-stu-id="b26c4-327">Subledger journal transfer rule</span></span>                  | <span data-ttu-id="b26c4-328">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-328">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-329">ワークフロー組織パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-329">Workflow organization parameters</span></span>                 |                     |                 | <span data-ttu-id="b26c4-330">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-330">X</span></span>           |
-| <span data-ttu-id="b26c4-331">作業時間</span><span class="sxs-lookup"><span data-stu-id="b26c4-331">Working times</span></span>                                    |                     |                 | <span data-ttu-id="b26c4-332">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-332">X</span></span>           |
-
-### <a name="100--bank"></a><span data-ttu-id="b26c4-333">100 - 銀行</span><span class="sxs-lookup"><span data-stu-id="b26c4-333">100 – Bank</span></span>
-
-|                                                   | <span data-ttu-id="b26c4-334">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-334">Spreadsheet content</span></span> |                 |             |
-|---------------------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-335">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-335">**Entity spreadsheet**</span></span>                            | <span data-ttu-id="b26c4-336">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-336">**Business data**</span></span>   | <span data-ttu-id="b26c4-337">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-337">**Sample data**</span></span> | <span data-ttu-id="b26c4-338">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-338">**No data**</span></span> |
-| <span data-ttu-id="b26c4-339">銀行口座</span><span class="sxs-lookup"><span data-stu-id="b26c4-339">Bank accounts</span></span>                                     |                     | <span data-ttu-id="b26c4-340">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-340">X</span></span>               |             |
-| <span data-ttu-id="b26c4-341">銀行融資のグループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-341">Bank facility groups</span></span>                              |                     |                 | <span data-ttu-id="b26c4-342">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-342">X</span></span>           |
-| <span data-ttu-id="b26c4-343">銀行融資タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-343">Bank facility types</span></span>                               |                     |                 | <span data-ttu-id="b26c4-344">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-344">X</span></span>           |
-| <span data-ttu-id="b26c4-345">銀行グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-345">Bank groups</span></span>                                       |                     | <span data-ttu-id="b26c4-346">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-346">X</span></span>               |             |
-| <span data-ttu-id="b26c4-347">銀行パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-347">Bank parameters</span></span>                                   | <span data-ttu-id="b26c4-348">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-348">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-349">銀行転記プロファイル</span><span class="sxs-lookup"><span data-stu-id="b26c4-349">Bank posting profiles</span></span>                             |                     |                 | <span data-ttu-id="b26c4-350">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-350">X</span></span>           |
-| <span data-ttu-id="b26c4-351">一般仕訳帳の口座取引明細書のインポート方法</span><span class="sxs-lookup"><span data-stu-id="b26c4-351">Bank statement import methods for general journal</span></span> |                     |                 | <span data-ttu-id="b26c4-352">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-352">X</span></span>           |
-| <span data-ttu-id="b26c4-353">銀行トランザクション グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-353">Bank transaction groups</span></span>                           | <span data-ttu-id="b26c4-354">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-354">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-355">銀行トランザクション タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-355">Bank transaction type</span></span>                             | <span data-ttu-id="b26c4-356">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-356">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-357">レイアウトの確認</span><span class="sxs-lookup"><span data-stu-id="b26c4-357">Check layout</span></span>                                      |                     | <span data-ttu-id="b26c4-358">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-358">X</span></span>               |             |
-| <span data-ttu-id="b26c4-359">顧客請求金額グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-359">Customer charge groups</span></span>                            |                     |                 | <span data-ttu-id="b26c4-360">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-360">X</span></span>           |
-| <span data-ttu-id="b26c4-361">支払目的コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-361">Payment purpose codes</span></span>                             |                     |                 | <span data-ttu-id="b26c4-362">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-362">X</span></span>           |
-| <span data-ttu-id="b26c4-363">調整照合ルール セット</span><span class="sxs-lookup"><span data-stu-id="b26c4-363">Reconciliation matching rule sets</span></span>                 |                     |                 | <span data-ttu-id="b26c4-364">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-364">X</span></span>           |
-| <span data-ttu-id="b26c4-365">調整照合ルール</span><span class="sxs-lookup"><span data-stu-id="b26c4-365">Reconciliation matching rules</span></span>                     |                     |                 | <span data-ttu-id="b26c4-366">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-366">X</span></span>           |
-| <span data-ttu-id="b26c4-367">取引コードのマッピング</span><span class="sxs-lookup"><span data-stu-id="b26c4-367">Transaction code mapping</span></span>                          |                     |                 | <span data-ttu-id="b26c4-368">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-368">X</span></span>           |
-
-### <a name="120--ap"></a><span data-ttu-id="b26c4-369">120 - AP</span><span class="sxs-lookup"><span data-stu-id="b26c4-369">120 – AP</span></span>
-
-|                                             | <span data-ttu-id="b26c4-370">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-370">Spreadsheet content</span></span> |                 |             |
-|---------------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-371">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-371">**Entity spreadsheet**</span></span>                      | <span data-ttu-id="b26c4-372">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-372">**Business data**</span></span>   | <span data-ttu-id="b26c4-373">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-373">**Sample data**</span></span> | <span data-ttu-id="b26c4-374">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-374">**No data**</span></span> |
-| <span data-ttu-id="b26c4-375">エイジング期間の定義</span><span class="sxs-lookup"><span data-stu-id="b26c4-375">Aging period definitions</span></span>                    |                     |                 | <span data-ttu-id="b26c4-376">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-376">X</span></span>           |
-| <span data-ttu-id="b26c4-377">業務区分</span><span class="sxs-lookup"><span data-stu-id="b26c4-377">Business segments</span></span>                           |                     |                 | <span data-ttu-id="b26c4-378">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-378">X</span></span>           |
-| <span data-ttu-id="b26c4-379">業務サブ区分</span><span class="sxs-lookup"><span data-stu-id="b26c4-379">Business subsegments</span></span>                        |                     |                 | <span data-ttu-id="b26c4-380">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-380">X</span></span>           |
-| <span data-ttu-id="b26c4-381">購入担当グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-381">Buyer groups</span></span>                                |                     |                 | <span data-ttu-id="b26c4-382">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-382">X</span></span>           |
-| <span data-ttu-id="b26c4-383">現金割引</span><span class="sxs-lookup"><span data-stu-id="b26c4-383">Cash discount</span></span>                               |                     |                 | <span data-ttu-id="b26c4-384">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-384">X</span></span>           |
-| <span data-ttu-id="b26c4-385">配送の諸費用グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-385">Delivery charges groups</span></span>                     |                     |                 | <span data-ttu-id="b26c4-386">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-386">X</span></span>           |
-| <span data-ttu-id="b26c4-387">出荷先コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-387">Destination code</span></span>                            |                     |                 | <span data-ttu-id="b26c4-388">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-388">X</span></span>           |
-| <span data-ttu-id="b26c4-389">急送コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-389">Expedite codes</span></span>                              |                     |                 | <span data-ttu-id="b26c4-390">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-390">X</span></span>           |
-| <span data-ttu-id="b26c4-391">品目請求金額グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-391">Item charge groups</span></span>                          |                     |                 | <span data-ttu-id="b26c4-392">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-392">X</span></span>           |
-| <span data-ttu-id="b26c4-393">行割引仕入先グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-393">Line discount vendor groups</span></span>                 |                     |                 | <span data-ttu-id="b26c4-394">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-394">X</span></span>           |
-| <span data-ttu-id="b26c4-395">業種</span><span class="sxs-lookup"><span data-stu-id="b26c4-395">Line of business</span></span>                            |                     | <span data-ttu-id="b26c4-396">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-396">X</span></span>               |             |
-| <span data-ttu-id="b26c4-397">荷渡方法</span><span class="sxs-lookup"><span data-stu-id="b26c4-397">Modes of delivery</span></span>                           |                     |                 | <span data-ttu-id="b26c4-398">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-398">X</span></span>           |
-| <span data-ttu-id="b26c4-399">複数行割引仕入先グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-399">Multiline discount vendor groups</span></span>            |                     |                 | <span data-ttu-id="b26c4-400">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-400">X</span></span>           |
-| <span data-ttu-id="b26c4-401">支払カレンダー ルール</span><span class="sxs-lookup"><span data-stu-id="b26c4-401">Payment calendar rule</span></span>                       |                     |                 | <span data-ttu-id="b26c4-402">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-402">X</span></span>           |
-| <span data-ttu-id="b26c4-403">支払カレンダー</span><span class="sxs-lookup"><span data-stu-id="b26c4-403">Payment calendar</span></span>                            |                     |                 | <span data-ttu-id="b26c4-404">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-404">X</span></span>           |
-| <span data-ttu-id="b26c4-405">支払期日明細行</span><span class="sxs-lookup"><span data-stu-id="b26c4-405">Payment day lines</span></span>                           |                     | <span data-ttu-id="b26c4-406">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-406">X</span></span>               |             |
-| <span data-ttu-id="b26c4-407">支払スケジュール行</span><span class="sxs-lookup"><span data-stu-id="b26c4-407">Payment schedule lines</span></span>                      |                     | <span data-ttu-id="b26c4-408">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-408">X</span></span>               |             |
-| <span data-ttu-id="b26c4-409">支払スケジュール</span><span class="sxs-lookup"><span data-stu-id="b26c4-409">Payment schedule</span></span>                            |                     | <span data-ttu-id="b26c4-410">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-410">X</span></span>               |             |
-| <span data-ttu-id="b26c4-411">価格仕入先グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-411">Price vendor groups</span></span>                         |                     |                 | <span data-ttu-id="b26c4-412">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-412">X</span></span>           |
-| <span data-ttu-id="b26c4-413">調達請求コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-413">Procurement charge codes</span></span>                    |                     |                 | <span data-ttu-id="b26c4-414">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-414">X</span></span>           |
-| <span data-ttu-id="b26c4-415">製品カテゴリ</span><span class="sxs-lookup"><span data-stu-id="b26c4-415">Product categories</span></span>                          |                     |                 | <span data-ttu-id="b26c4-416">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-416">X</span></span>           |
-| <span data-ttu-id="b26c4-417">製品カテゴリ階層</span><span class="sxs-lookup"><span data-stu-id="b26c4-417">Product category hierarchies</span></span>                |                     |                 | <span data-ttu-id="b26c4-418">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-418">X</span></span>           |
-| <span data-ttu-id="b26c4-419">製品カテゴリ階層ロール</span><span class="sxs-lookup"><span data-stu-id="b26c4-419">Product category hierarchy roles</span></span>            |                     |                 | <span data-ttu-id="b26c4-420">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-420">X</span></span>           |
-| <span data-ttu-id="b26c4-421">製品カテゴリ階層の翻訳</span><span class="sxs-lookup"><span data-stu-id="b26c4-421">Product category hierarchy translations</span></span>     |                     |                 | <span data-ttu-id="b26c4-422">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-422">X</span></span>           |
-| <span data-ttu-id="b26c4-423">購買管理グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-423">Purchase pools</span></span>                              |                     |                 | <span data-ttu-id="b26c4-424">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-424">X</span></span>           |
-| <span data-ttu-id="b26c4-425">消費税グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-425">Sales tax groups</span></span>                            |                     |                 | <span data-ttu-id="b26c4-426">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-426">X</span></span>           |
-| <span data-ttu-id="b26c4-427">配送条件</span><span class="sxs-lookup"><span data-stu-id="b26c4-427">Terms of delivery</span></span>                           |                     |                 | <span data-ttu-id="b26c4-428">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-428">X</span></span>           |
-| <span data-ttu-id="b26c4-429">支払条件</span><span class="sxs-lookup"><span data-stu-id="b26c4-429">Terms of payment</span></span>                            | <span data-ttu-id="b26c4-430">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-430">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-431">割引合計仕入先グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-431">Total discount vendor groups</span></span>                |                     |                 | <span data-ttu-id="b26c4-432">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-432">X</span></span>           |
-| <span data-ttu-id="b26c4-433">仕入先の銀行口座</span><span class="sxs-lookup"><span data-stu-id="b26c4-433">Vendor bank accounts</span></span>                        |                     |                 | <span data-ttu-id="b26c4-434">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-434">X</span></span>           |
-| <span data-ttu-id="b26c4-435">仕入先の諸費用グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-435">Vendor charges group</span></span>                        |                     |                 | <span data-ttu-id="b26c4-436">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-436">X</span></span>           |
-| <span data-ttu-id="b26c4-437">仕入先例外グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-437">Vendor exception groups</span></span>                     |                     |                 | <span data-ttu-id="b26c4-438">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-438">X</span></span>           |
-| <span data-ttu-id="b26c4-439">仕入先グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-439">Vendor groups</span></span>                               |                     |                 | <span data-ttu-id="b26c4-440">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-440">X</span></span>           |
-| <span data-ttu-id="b26c4-441">"仕入先請求書" フォーム印刷構成</span><span class="sxs-lookup"><span data-stu-id="b26c4-441">Vendor invoice form printing configurations</span></span> |                     |                 | <span data-ttu-id="b26c4-442">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-442">X</span></span>           |
-| <span data-ttu-id="b26c4-443">仕入先請求ポリシー ルール タイプ</span><span class="sxs-lookup"><span data-stu-id="b26c4-443">Vendor invoice policy rule types</span></span>            |                     |                 | <span data-ttu-id="b26c4-444">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-444">X</span></span>           |
-| <span data-ttu-id="b26c4-445">仕入先の勘定科目</span><span class="sxs-lookup"><span data-stu-id="b26c4-445">Vendor ledger accounts</span></span>                      | <span data-ttu-id="b26c4-446">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-446">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-447">仕入先パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-447">Vendor parameters</span></span>                           | <span data-ttu-id="b26c4-448">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-448">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-449">仕入先支払手数料</span><span class="sxs-lookup"><span data-stu-id="b26c4-449">Vendor payment fee</span></span>                          |                     |                 | <span data-ttu-id="b26c4-450">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-450">X</span></span>           |
-| <span data-ttu-id="b26c4-451">仕入先支払形式</span><span class="sxs-lookup"><span data-stu-id="b26c4-451">Vendor payment format</span></span>                       |                     |                 | <span data-ttu-id="b26c4-452">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-452">X</span></span>           |
-| <span data-ttu-id="b26c4-453">仕入先支払方法の詳細</span><span class="sxs-lookup"><span data-stu-id="b26c4-453">Vendor payment method specification</span></span>         |                     |                 | <span data-ttu-id="b26c4-454">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-454">X</span></span>           |
-| <span data-ttu-id="b26c4-455">仕入先支払方法</span><span class="sxs-lookup"><span data-stu-id="b26c4-455">Vendor payment method</span></span>                       |                     | <span data-ttu-id="b26c4-456">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-456">X</span></span>               |             |
-| <span data-ttu-id="b26c4-457">仕入先転記プロファイル</span><span class="sxs-lookup"><span data-stu-id="b26c4-457">Vendor posting profile</span></span>                      | <span data-ttu-id="b26c4-458">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-458">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-459">仕入先価格許容範囲グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-459">Vendor price tolerance groups</span></span>               |                     |                 | <span data-ttu-id="b26c4-460">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-460">X</span></span>           |
-| <span data-ttu-id="b26c4-461">仕入先の理由</span><span class="sxs-lookup"><span data-stu-id="b26c4-461">Vendor reasons</span></span>                              | <span data-ttu-id="b26c4-462">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-462">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-463">仕入先、フォーム パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-463">Vendor, form parameters</span></span>                     |                     |                 | <span data-ttu-id="b26c4-464">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-464">X</span></span>           |
-| <span data-ttu-id="b26c4-465">仕入先</span><span class="sxs-lookup"><span data-stu-id="b26c4-465">Vendors</span></span>                                     |                     |                 | <span data-ttu-id="b26c4-466">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-466">X</span></span>           |
-
-### <a name="130--tax"></a><span data-ttu-id="b26c4-467">130 - Tax</span><span class="sxs-lookup"><span data-stu-id="b26c4-467">130 – Tax</span></span>
-
-|                                    | <span data-ttu-id="b26c4-468">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-468">Spreadsheet content</span></span> |                 |             |
-|------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-469">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-469">**Entity spreadsheet**</span></span>             | <span data-ttu-id="b26c4-470">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-470">**Business data**</span></span>   | <span data-ttu-id="b26c4-471">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-471">**Sample data**</span></span> | <span data-ttu-id="b26c4-472">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-472">**No data**</span></span> |
-| <span data-ttu-id="b26c4-473">消費税所轄官庁</span><span class="sxs-lookup"><span data-stu-id="b26c4-473">Sales tax authorities</span></span>              |                     | <span data-ttu-id="b26c4-474">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-474">X</span></span>               |             |
-| <span data-ttu-id="b26c4-475">消費税コードの上限</span><span class="sxs-lookup"><span data-stu-id="b26c4-475">Sales tax code limits</span></span>              |                     |                 | <span data-ttu-id="b26c4-476">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-476">X</span></span>           |
-| <span data-ttu-id="b26c4-477">消費税コードの値</span><span class="sxs-lookup"><span data-stu-id="b26c4-477">Sales tax code values</span></span>              |                     | <span data-ttu-id="b26c4-478">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-478">X</span></span>               |             |
-| <span data-ttu-id="b26c4-479">消費税コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-479">Sales tax codes</span></span>                    |                     | <span data-ttu-id="b26c4-480">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-480">X</span></span>               |             |
-| <span data-ttu-id="b26c4-481">消費税非課税コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-481">Sales tax exempt code</span></span>              | <span data-ttu-id="b26c4-482">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-482">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-483">消費税非課税番号</span><span class="sxs-lookup"><span data-stu-id="b26c4-483">Sales tax exempt numbers</span></span>           |                     |                 | <span data-ttu-id="b26c4-484">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-484">X</span></span>           |
-| <span data-ttu-id="b26c4-485">消費税グループの詳細</span><span class="sxs-lookup"><span data-stu-id="b26c4-485">Sales tax group details</span></span>            |                     | <span data-ttu-id="b26c4-486">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-486">X</span></span>               |             |
-| <span data-ttu-id="b26c4-487">消費税グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-487">Sales tax groups</span></span>                   |                     | <span data-ttu-id="b26c4-488">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-488">X</span></span>               |             |
-| <span data-ttu-id="b26c4-489">消費税品目グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-489">Sales tax item groups</span></span>              |                     | <span data-ttu-id="b26c4-490">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-490">X</span></span>               |             |
-| <span data-ttu-id="b26c4-491">消費税元帳転記グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-491">Sales tax ledger posting groups</span></span>    | <span data-ttu-id="b26c4-492">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-492">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-493">消費税パラメーターの事前設定エンティティ</span><span class="sxs-lookup"><span data-stu-id="b26c4-493">Sales tax parameters preset entity</span></span> |                     |                 | <span data-ttu-id="b26c4-494">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-494">X</span></span>           |
-| <span data-ttu-id="b26c4-495">消費税パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-495">Sales tax parameters</span></span>               | <span data-ttu-id="b26c4-496">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-496">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-497">消費税期間の設定</span><span class="sxs-lookup"><span data-stu-id="b26c4-497">Sales tax period setup</span></span>             |                     | <span data-ttu-id="b26c4-498">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-498">X</span></span>               |             |
-| <span data-ttu-id="b26c4-499">消費税レポート コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-499">Sales tax reporting codes</span></span>          |                     |                 | <span data-ttu-id="b26c4-500">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-500">X</span></span>           |
-| <span data-ttu-id="b26c4-501">トランザクション コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-501">Transaction codes</span></span>                  |                     |                 | <span data-ttu-id="b26c4-502">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-502">X</span></span>           |
-| <span data-ttu-id="b26c4-503">源泉徴収税コードの値</span><span class="sxs-lookup"><span data-stu-id="b26c4-503">Withholding tax code values</span></span>        |                     | <span data-ttu-id="b26c4-504">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-504">X</span></span>               |             |
-| <span data-ttu-id="b26c4-505">源泉徴収税コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-505">Withholding tax codes</span></span>              |                     | <span data-ttu-id="b26c4-506">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-506">X</span></span>               |             |
-| <span data-ttu-id="b26c4-507">源泉徴収税グループの詳細</span><span class="sxs-lookup"><span data-stu-id="b26c4-507">Withholding tax group details</span></span>      |                     |                 | <span data-ttu-id="b26c4-508">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-508">X</span></span>           |
-| <span data-ttu-id="b26c4-509">源泉徴収税グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-509">Withholding tax groups</span></span>             |                     | <span data-ttu-id="b26c4-510">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-510">X</span></span>               |             |
-| <span data-ttu-id="b26c4-511">源泉徴収税の上限</span><span class="sxs-lookup"><span data-stu-id="b26c4-511">Withholding tax limits</span></span>             |                     |                 | <span data-ttu-id="b26c4-512">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-512">X</span></span>           |
-
-### <a name="140--ar"></a><span data-ttu-id="b26c4-513">140 - AR</span><span class="sxs-lookup"><span data-stu-id="b26c4-513">140 – AR</span></span>
-
-|                                                         | <span data-ttu-id="b26c4-514">スプレッドシートの内容</span><span class="sxs-lookup"><span data-stu-id="b26c4-514">Spreadsheet content</span></span> |                 |             |
-|---------------------------------------------------------|---------------------|-----------------|-------------|
-| <span data-ttu-id="b26c4-515">**エンティティ スプレッドシート**</span><span class="sxs-lookup"><span data-stu-id="b26c4-515">**Entity spreadsheet**</span></span>                                  | <span data-ttu-id="b26c4-516">**業務データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-516">**Business data**</span></span>   | <span data-ttu-id="b26c4-517">**サンプル データ**</span><span class="sxs-lookup"><span data-stu-id="b26c4-517">**Sample data**</span></span> | <span data-ttu-id="b26c4-518">**データなし**</span><span class="sxs-lookup"><span data-stu-id="b26c4-518">**No data**</span></span> |
-| <span data-ttu-id="b26c4-519">エイジング期間の定義</span><span class="sxs-lookup"><span data-stu-id="b26c4-519">Aging period definitions</span></span>                                | <span data-ttu-id="b26c4-520">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-520">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-521">業務区分</span><span class="sxs-lookup"><span data-stu-id="b26c4-521">Business segments</span></span>                                       |                     |                 | <span data-ttu-id="b26c4-522">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-522">X</span></span>           |
-| <span data-ttu-id="b26c4-523">業務サブ区分</span><span class="sxs-lookup"><span data-stu-id="b26c4-523">Business subsegments</span></span>                                    |                     |                 | <span data-ttu-id="b26c4-524">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-524">X</span></span>           |
-| <span data-ttu-id="b26c4-525">現金割引</span><span class="sxs-lookup"><span data-stu-id="b26c4-525">Cash discount</span></span>                                           |                     |                 | <span data-ttu-id="b26c4-526">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-526">X</span></span>           |
-| <span data-ttu-id="b26c4-527">"督促状" フォーム印刷構成</span><span class="sxs-lookup"><span data-stu-id="b26c4-527">Collection letter form printing configurations</span></span>          |                     |                 | <span data-ttu-id="b26c4-528">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-528">X</span></span>           |
-| <span data-ttu-id="b26c4-529">督促状の設定</span><span class="sxs-lookup"><span data-stu-id="b26c4-529">Collection letter setup</span></span>                                 | <span data-ttu-id="b26c4-530">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-530">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-531">手数料計算</span><span class="sxs-lookup"><span data-stu-id="b26c4-531">Commission calculation</span></span>                                  |                     |                 | <span data-ttu-id="b26c4-532">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-532">X</span></span>           |
-| <span data-ttu-id="b26c4-533">コミッション顧客グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-533">Commission customer group</span></span>                               |                     |                 | <span data-ttu-id="b26c4-534">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-534">X</span></span>           |
-| <span data-ttu-id="b26c4-535">コミッション品目グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-535">Commission item group</span></span>                                   |                     |                 | <span data-ttu-id="b26c4-536">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-536">X</span></span>           |
-| <span data-ttu-id="b26c4-537">コミッション売上グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-537">Commission sales group</span></span>                                  |                     |                 | <span data-ttu-id="b26c4-538">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-538">X</span></span>           |
-| <span data-ttu-id="b26c4-539">"顧客勘定明細書" フォーム印刷構成</span><span class="sxs-lookup"><span data-stu-id="b26c4-539">Customer account statement form printing configurations</span></span> |                     |                 | <span data-ttu-id="b26c4-540">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-540">X</span></span>           |
-| <span data-ttu-id="b26c4-541">顧客の銀行口座</span><span class="sxs-lookup"><span data-stu-id="b26c4-541">Customer bank accounts</span></span>                                  |                     |                 | <span data-ttu-id="b26c4-542">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-542">X</span></span>           |
-| <span data-ttu-id="b26c4-543">顧客請求金額グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-543">Customer charge groups</span></span>                                  |                     |                 | <span data-ttu-id="b26c4-544">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-544">X</span></span>           |
-| <span data-ttu-id="b26c4-545">顧客の定義</span><span class="sxs-lookup"><span data-stu-id="b26c4-545">Customer definitions</span></span>                                    |                     |                 | <span data-ttu-id="b26c4-546">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-546">X</span></span>           |
-| <span data-ttu-id="b26c4-547">顧客の詳細</span><span class="sxs-lookup"><span data-stu-id="b26c4-547">Customer details</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-548">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-548">X</span></span>           |
-| <span data-ttu-id="b26c4-549">"顧客フェーシング" フォーム印刷構成</span><span class="sxs-lookup"><span data-stu-id="b26c4-549">Customer facing form printing configurations</span></span>            |                     |                 | <span data-ttu-id="b26c4-550">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-550">X</span></span>           |
-| <span data-ttu-id="b26c4-551">顧客グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-551">Customer groups</span></span>                                         |                     | <span data-ttu-id="b26c4-552">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-552">X</span></span>               |             |
-| <span data-ttu-id="b26c4-553">顧客の勘定科目</span><span class="sxs-lookup"><span data-stu-id="b26c4-553">Customer ledger accounts</span></span>                                | <span data-ttu-id="b26c4-554">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-554">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-555">顧客パラメーター</span><span class="sxs-lookup"><span data-stu-id="b26c4-555">Customer parameters</span></span>                                     | <span data-ttu-id="b26c4-556">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-556">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-557">顧客支払手数料</span><span class="sxs-lookup"><span data-stu-id="b26c4-557">Customer payment fee</span></span>                                    |                     |                 | <span data-ttu-id="b26c4-558">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-558">X</span></span>           |
-| <span data-ttu-id="b26c4-559">顧客支払方法の詳細</span><span class="sxs-lookup"><span data-stu-id="b26c4-559">Customer payment method specification</span></span>                   |                     |                 | <span data-ttu-id="b26c4-560">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-560">X</span></span>           |
-| <span data-ttu-id="b26c4-561">顧客支払方法</span><span class="sxs-lookup"><span data-stu-id="b26c4-561">Customer payment method</span></span>                                 |                     | <span data-ttu-id="b26c4-562">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-562">X</span></span>               |             |
-| <span data-ttu-id="b26c4-563">顧客転記プロファイル</span><span class="sxs-lookup"><span data-stu-id="b26c4-563">Customer posting profiles</span></span>                               | <span data-ttu-id="b26c4-564">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-564">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-565">顧客の理由</span><span class="sxs-lookup"><span data-stu-id="b26c4-565">Customer reasons</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-566">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-566">X</span></span>           |
-| <span data-ttu-id="b26c4-567">顧客損金処理理由コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-567">Customer write-off reason codes</span></span>                         | <span data-ttu-id="b26c4-568">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-568">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-569">顧客</span><span class="sxs-lookup"><span data-stu-id="b26c4-569">Customers</span></span>                                               |                     |                 | <span data-ttu-id="b26c4-570">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-570">X</span></span>           |
-| <span data-ttu-id="b26c4-571">配送の諸費用グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-571">Delivery charges groups</span></span>                                 |                     |                 | <span data-ttu-id="b26c4-572">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-572">X</span></span>           |
-| <span data-ttu-id="b26c4-573">急送コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-573">Expedite codes</span></span>                                          |                     |                 | <span data-ttu-id="b26c4-574">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-574">X</span></span>           |
-| <span data-ttu-id="b26c4-575">"自由書式の請求書" フォーム印刷構成</span><span class="sxs-lookup"><span data-stu-id="b26c4-575">Free text invoice form printing configurations</span></span>          |                     |                 | <span data-ttu-id="b26c4-576">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-576">X</span></span>           |
-| <span data-ttu-id="b26c4-577">利息コードと手数料</span><span class="sxs-lookup"><span data-stu-id="b26c4-577">Interest codes with fees</span></span>                                |                     |                 | <span data-ttu-id="b26c4-578">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-578">X</span></span>           |
-| <span data-ttu-id="b26c4-579">利息コードと範囲</span><span class="sxs-lookup"><span data-stu-id="b26c4-579">Interest codes with ranges</span></span>                              |                     |                 | <span data-ttu-id="b26c4-580">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-580">X</span></span>           |
-| <span data-ttu-id="b26c4-581">利息コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-581">Interest codes</span></span>                                          | <span data-ttu-id="b26c4-582">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-582">X</span></span>                   |                 |             |
-| <span data-ttu-id="b26c4-583">"利子計算書" フォーム印刷構成</span><span class="sxs-lookup"><span data-stu-id="b26c4-583">Interest note form printing configurations</span></span>              |                     |                 | <span data-ttu-id="b26c4-584">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-584">X</span></span>           |
-| <span data-ttu-id="b26c4-585">品目請求金額グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-585">Item charge groups</span></span>                                      |                     |                 | <span data-ttu-id="b26c4-586">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-586">X</span></span>           |
-| <span data-ttu-id="b26c4-587">行割引顧客グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-587">Line discount customer groups</span></span>                           |                     |                 | <span data-ttu-id="b26c4-588">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-588">X</span></span>           |
-| <span data-ttu-id="b26c4-589">業種</span><span class="sxs-lookup"><span data-stu-id="b26c4-589">Line of business</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-590">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-590">X</span></span>           |
-| <span data-ttu-id="b26c4-591">荷渡方法</span><span class="sxs-lookup"><span data-stu-id="b26c4-591">Modes of delivery</span></span>                                       |                     |                 | <span data-ttu-id="b26c4-592">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-592">X</span></span>           |
-| <span data-ttu-id="b26c4-593">支払カレンダー</span><span class="sxs-lookup"><span data-stu-id="b26c4-593">Payment calendar</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-594">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-594">X</span></span>           |
-| <span data-ttu-id="b26c4-595">支払期日明細行</span><span class="sxs-lookup"><span data-stu-id="b26c4-595">Payment day lines</span></span>                                       |                     |                 | <span data-ttu-id="b26c4-596">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-596">X</span></span>           |
-| <span data-ttu-id="b26c4-597">支払スケジュール行</span><span class="sxs-lookup"><span data-stu-id="b26c4-597">Payment schedule lines</span></span>                                  |                     |                 | <span data-ttu-id="b26c4-598">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-598">X</span></span>           |
-| <span data-ttu-id="b26c4-599">支払スケジュール</span><span class="sxs-lookup"><span data-stu-id="b26c4-599">Payment schedule</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-600">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-600">X</span></span>           |
-| <span data-ttu-id="b26c4-601">価格顧客グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-601">Price customer groups</span></span>                                   |                     |                 | <span data-ttu-id="b26c4-602">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-602">X</span></span>           |
-| <span data-ttu-id="b26c4-603">印刷済フォームのメモ</span><span class="sxs-lookup"><span data-stu-id="b26c4-603">Printed form notes</span></span>                                      |                     |                 | <span data-ttu-id="b26c4-604">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-604">X</span></span>           |
-| <span data-ttu-id="b26c4-605">売上諸掛コード</span><span class="sxs-lookup"><span data-stu-id="b26c4-605">Sales charge codes</span></span>                                      |                     |                 | <span data-ttu-id="b26c4-606">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-606">X</span></span>           |
-| <span data-ttu-id="b26c4-607">販売地域</span><span class="sxs-lookup"><span data-stu-id="b26c4-607">Sales districts</span></span>                                         |                     |                 | <span data-ttu-id="b26c4-608">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-608">X</span></span>           |
-| <span data-ttu-id="b26c4-609">販売注文プール</span><span class="sxs-lookup"><span data-stu-id="b26c4-609">Sales order pools</span></span>                                       |                     |                 | <span data-ttu-id="b26c4-610">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-610">X</span></span>           |
-| <span data-ttu-id="b26c4-611">統計グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-611">Statistics group</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-612">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-612">X</span></span>           |
-| <span data-ttu-id="b26c4-613">配送条件</span><span class="sxs-lookup"><span data-stu-id="b26c4-613">Terms of delivery</span></span>                                       |                     |                 | <span data-ttu-id="b26c4-614">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-614">X</span></span>           |
-| <span data-ttu-id="b26c4-615">支払条件</span><span class="sxs-lookup"><span data-stu-id="b26c4-615">Terms of payment</span></span>                                        |                     |                 | <span data-ttu-id="b26c4-616">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-616">X</span></span>           |
-| <span data-ttu-id="b26c4-617">割引合計顧客グループ</span><span class="sxs-lookup"><span data-stu-id="b26c4-617">Total discount customer groups</span></span>                          |                     |                 | <span data-ttu-id="b26c4-618">x</span><span class="sxs-lookup"><span data-stu-id="b26c4-618">X</span></span>           |
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="configuration-data-packages.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>configuration-data-packages.6c731d.2f82c01eeec45a1bbfca319229027f4bebe41164.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>2f82c01eeec45a1bbfca319229027f4bebe41164</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\data-entities\configuration-data-packages.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Configuration data packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション データ パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Configuration data packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション データ パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>If you are running a later release, refer to the topic <bpt id="p1">[</bpt>Copy configuration<ept id="p1">](copy-configuration.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">今後のリリースを実行している場合、「<bpt id="p1">[</bpt>コンフィギュレーションのコピー<ept id="p1">](copy-configuration.md)</ept>」というトピックを参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>These data packages can help improve the repeatability of implementations and accelerate the configuration of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのデータ パッケージは、実装の再現性を向上させ、Microsoft Dynamics 365 for Finance and Operations の構成を迅速化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Data packages contain configuration entity spreadsheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージにはコンフィギュレーション エンティティ スプレッドシートが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>These entity spreadsheets contain best practice data that you can use to create an initial golden build.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのエンティティ スプレッドシートには、初期のゴールデン ビルドを作成するために使用できるベスト プラクティス データが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The data entities in the data packages are also sequenced appropriately to help guarantee a successful single-click import of the data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージ内のデータ エンティティも適切に順序付けされ、1 回のクリックによるインポートを成功させるのに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The entity spreadsheets include three types of data:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エンティティのスプレッドシートには、次の 3 種類のデータが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept> – The spreadsheet contains standard business data for a mid-sized trade or retail company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept> - スプレッドシートには、中規模の貿易会社または小売企業の標準的なビジネス データが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>This data combines best practices and business standards that can be used as a starting point for your configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータは、ベスト プラクティスとビジネス標準を組み合わせて、構成の始点として使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept> – The spreadsheet contains data that can be used as an example for business-specific data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept> – スプレッドシートには、ビジネス特有のデータの例として使用できるデータが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>This data can be imported and used as an example, but it must be changed for individual business practices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータは例としてインポートして使用できますが、個々の業務内容で変更する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept> – The spreadsheet doesn't contain any data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept> – スプレッドシートにデータが含まれていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Several areas of the product are unique to each business and its business practices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品のいくつかの領域は、各業務とその業務内容に固有です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>These areas must be configured specifically for the organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの領域は組織専用に設定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>These spreadsheets should be reviewed and updated for the organization as appropriate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのスプレッドシートは、必要に応じて組織のために見直し、更新する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>For more information about the type of data that is included in each entity spreadsheet in the data packages see the <bpt id="p1">[</bpt>Data packages<ept id="p1">](#data-packages-system)</ept> section of this topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージデータで、エンティティ スプレッドシートに含まれるデータのタイプの詳細については、このトピックの <bpt id="p1">[</bpt>データ パッケージ<ept id="p1">](#data-packages-system)</ept> セクションを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they have been supplied and then update your data in the system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージをインポートする前に個々のスプレッドシートを修正するか、提供されるときにデータ パッケージをインポートしてからシステムでデータを更新することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Using configuration data packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション データ パッケージの使用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>You can access configuration data packages from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS から構成データ パッケージにアクセスすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>You can either apply them to an LCS environment, or download them so that you can manually import them into Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それらを LCS 環境に適用するか、Finance and Operations に手動でインポートすることができるようにダウンロードすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Open your LCS project, and open the Asset library.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS プロジェクトを開いて、アセット ライブラリを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>In the list of asset types, select <bpt id="p1">**</bpt>Process data package<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アセット タイプの一覧で、<bpt id="p1">**</bpt>プロセス データ パッケージ<ept id="p1">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Click <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>インポート<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Select the configuration data package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション データ パッケージを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Click <bpt id="p1">**</bpt>Pick<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ピック<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>At this point, you can use the <bpt id="p1">**</bpt>Consume<ept id="p1">**</ept> function to apply the process data package to an LCS environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この時点で<bpt id="p1">**</bpt>消費<ept id="p1">**</ept>関数を使用してプロセス データ パッケージを LCS 環境に適用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>You can also download the individual data package files from the <bpt id="p1">**</bpt>Data package<ept id="p1">**</ept> area.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、個々のデータ パッケージ ファイルを <bpt id="p1">**</bpt>データ パッケージ<ept id="p1">**</ept> 領域からダウンロードすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Use the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace in Finance and Operations to import the data packages from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の <bpt id="p1">**</bpt>データ管理<ept id="p1">**</ept> ワークスペースを使用して、LCS からデータ パッケージをインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>For more information about how to import and export configurations, see <bpt id="p1">[</bpt>Copy configuration data between companies<ept id="p1">](copy-configuration.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーションをインポートおよびエクスポートする方法の詳細については、<bpt id="p1">[</bpt>会社間でのコンフィギュレーション データのコピー<ept id="p1">](copy-configuration.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Special considerations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特別な注意事項</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>System setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>The System data package must be imported before any other data package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム データ パッケージは、他のデータ パッケージの前にインポートする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>By default, the System data package creates a new legal entity that is named <bpt id="p1">**</bpt>ST01<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、システム データ パッケージは <bpt id="p1">**</bpt>ST01<ept id="p1">**</ept> という名前の新しい法人を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>The data packages for the module areas depend on this legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モジュールのエリアのデータ パッケージは、この法人によって異なります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般会計</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>A generic chart of accounts is included in the configuration data packages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般的な勘定科目表は、コンフィギュレーション データ パッケージに含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>When this data is used as it's defined in the Main account entity spreadsheet, posting profiles across the system are filled with default posting data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータが主勘定エンティティ スプレッドシートで定義されているように使用されると、システム全体の転記プロファイルには既定の転記データが入力されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>If you change the main accounts that are used for the chart of accounts, you must also update the individual posting profiles and posting accounts for each area.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">勘定科目表に使用される勘定を変更する場合は、個々の転記プロファイルおよび転記領域ごとの勘定も更新する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Data packages: System</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージ: システム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>010 – System Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">010 - システム設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Address and contact information purpose</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">住所と連絡先情報の目的</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Address books</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレス帳</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Address format lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">住所書式行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Address format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">住所の形式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Address parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">住所パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カレンダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Cities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">市町村</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Counties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">市区郡</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>CountryRegions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CountryRegions</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Currencies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通貨</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Districts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">地域</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Exchange rates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">為替レート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Global address book parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グローバル アドレス帳パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Global address book</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グローバル アドレス帳</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Legal entities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">法人</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Name affixes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前の接辞</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Name sequences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前の順序</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Operating unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作業単位</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Organization hierarchy purposes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織階層の目的</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Organization hierarchy type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織階層タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Organization hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Party contacts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係者の連絡先</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Party postal addresses</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係者の配送先</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Party relationships</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係者のリレーションシップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Postal codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">郵便番号</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Relationship types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>States</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">都道府県</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>System parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Team types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チーム タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Teams</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Unit conversions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単位換算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Unit translations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単位の変換</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Units</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単位</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>User groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>User information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー情報</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Data packages: Financials</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージ: 財務</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>020 – GL Shared</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">020 - GL 共有</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Account structure activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">勘定構造の有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Account structure allowed values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">勘定構造の許可値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Account structures</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">勘定構造</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Advanced rule criteria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ルールの基準</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Advanced rule structure activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ルール構造の有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Advanced rule structure allowed values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ルール構造の許可値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Advanced rule structures</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細なルール構造</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Advanced rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ルール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Chart of accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">勘定科目表</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Consolidation groups and accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連結グループおよび勘定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Dimension attribute activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード属性の有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Financial dimension format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コード形式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Financial dimension sets</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コード セット</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Financial dimension translations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コードの翻訳</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Financial dimension value translations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コード値の翻訳</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Financial dimension values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コード値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Financial dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Fiscal calendar period</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">会計カレンダー期間</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Fiscal calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">会計カレンダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Main account categories</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主勘定カテゴリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Main account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主勘定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Number sequence code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">番号順序コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Number sequence group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">番号順序グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Number sequence references</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">番号順序の参照</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>025 – GL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">025 - GL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Accounts for automatic transactions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動トランザクションの勘定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Balance control accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残高統制勘定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カレンダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Date intervals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">日付範囲</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Default descriptions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Dimension parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Document types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドキュメント タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Financial dimension value legal entity overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務分析コード値法人手数料</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Financial reasons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務理由</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Journal descriptions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕訳帳の説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Journal names</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕訳帳名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Ledger allocation basis source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳配賦基準の入力元</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Ledger allocation basis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳配賦基準</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Ledger allocation rule destination</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳配賦ルールの出力先</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Ledger allocation rule source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳配賦ルールの入力元</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Ledger allocation rule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳配賦ルール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Ledger fiscal calendar period</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳の会計カレンダー期間</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Ledger fiscal calendar year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳の会計暦年</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Ledger parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Main account legal entity overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主勘定法人の上書き</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Organization email template message</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織の電子メール テンプレート メッセージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Organization email template</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組織の電子メール テンプレート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Subledger journal transfer rule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">補助元帳仕訳転送ルール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Workflow organization parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー組織パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Working times</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作業時間</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>100 – Bank</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">100 - 銀行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Bank accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行口座</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Bank facility groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行融資のグループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Bank facility types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行融資タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Bank groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Bank parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Bank posting profiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行転記プロファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Bank statement import methods for general journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般仕訳帳の口座取引明細書のインポート方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Bank transaction groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行トランザクション グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Bank transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">銀行トランザクション タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Check layout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レイアウトの確認</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Customer charge groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客請求金額グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Payment purpose codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払目的コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Reconciliation matching rule sets</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">調整照合ルール セット</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Reconciliation matching rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">調整照合ルール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Transaction code mapping</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取引コードのマッピング</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>120 – AP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120 - AP</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Aging period definitions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エイジング期間の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Business segments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業務区分</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Business subsegments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業務サブ区分</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Buyer groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">購入担当グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Cash discount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現金割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Delivery charges groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配送の諸費用グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Destination code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出荷先コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Expedite codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">急送コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Item charge groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品目請求金額グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Line discount vendor groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行割引仕入先グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Line of business</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業種</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Modes of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">荷渡方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Multiline discount vendor groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数行割引仕入先グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Payment calendar rule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払カレンダー ルール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Payment calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払カレンダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Payment day lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払期日明細行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Payment schedule lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払スケジュール行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Payment schedule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払スケジュール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>Price vendor groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格仕入先グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Procurement charge codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">調達請求コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>Product categories</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品カテゴリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Product category hierarchies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品カテゴリ階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Product category hierarchy roles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品カテゴリ階層ロール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Product category hierarchy translations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品カテゴリ階層の翻訳</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Purchase pools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">購買管理グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Sales tax groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>Terms of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配送条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Terms of payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>Total discount vendor groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">割引合計仕入先グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Vendor bank accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先の銀行口座</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Vendor charges group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先の諸費用グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Vendor exception groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先例外グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>Vendor groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>Vendor invoice form printing configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"仕入先請求書" フォーム印刷構成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Vendor invoice policy rule types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先請求ポリシー ルール タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Vendor ledger accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先の勘定科目</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Vendor parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>Vendor payment fee</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先支払手数料</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>Vendor payment format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先支払形式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Vendor payment method specification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先支払方法の詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>Vendor payment method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先支払方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Vendor posting profile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先転記プロファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Vendor price tolerance groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先価格許容範囲グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>Vendor reasons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先の理由</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>Vendor, form parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先、フォーム パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Vendors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>130 – Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">130 - Tax</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Sales tax authorities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税所轄官庁</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>Sales tax code limits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税コードの上限</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Sales tax code values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税コードの値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>Sales tax codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>Sales tax exempt code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税非課税コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>Sales tax exempt numbers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税非課税番号</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Sales tax group details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税グループの詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>Sales tax groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Sales tax item groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税品目グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>Sales tax ledger posting groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税元帳転記グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>Sales tax parameters preset entity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税パラメーターの事前設定エンティティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Sales tax parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>Sales tax period setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税期間の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>Sales tax reporting codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税レポート コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Transaction codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクション コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>Withholding tax code values</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">源泉徴収税コードの値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Withholding tax codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">源泉徴収税コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Withholding tax group details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">源泉徴収税グループの詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Withholding tax groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">源泉徴収税グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>Withholding tax limits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">源泉徴収税の上限</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>140 – AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">140 - AR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>Spreadsheet content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スプレッドシートの内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source><bpt id="p1">**</bpt>Entity spreadsheet<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エンティティ スプレッドシート<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source><bpt id="p1">**</bpt>Business data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>業務データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source><bpt id="p1">**</bpt>Sample data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サンプル データ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source><bpt id="p1">**</bpt>No data<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データなし<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>Aging period definitions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エイジング期間の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>Business segments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業務区分</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>Business subsegments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業務サブ区分</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>Cash discount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現金割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>Collection letter form printing configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"督促状" フォーム印刷構成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>Collection letter setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">督促状の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>Commission calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手数料計算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>Commission customer group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミッション顧客グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>Commission item group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミッション品目グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Commission sales group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミッション売上グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Customer account statement form printing configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"顧客勘定明細書" フォーム印刷構成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Customer bank accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の銀行口座</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>Customer charge groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客請求金額グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>Customer definitions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の定義</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>Customer details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Customer facing form printing configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"顧客フェーシング" フォーム印刷構成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>Customer groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>Customer ledger accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の勘定科目</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Customer parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>Customer payment fee</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客支払手数料</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>Customer payment method specification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客支払方法の詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>Customer payment method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客支払方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Customer posting profiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客転記プロファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>Customer reasons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の理由</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>Customer write-off reason codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客損金処理理由コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>Customers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>Delivery charges groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配送の諸費用グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>Expedite codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">急送コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>Free text invoice form printing configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"自由書式の請求書" フォーム印刷構成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>Interest codes with fees</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利息コードと手数料</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>Interest codes with ranges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利息コードと範囲</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>Interest codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利息コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>Interest note form printing configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"利子計算書" フォーム印刷構成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>Item charge groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品目請求金額グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>Line discount customer groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行割引顧客グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>Line of business</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">業種</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>Modes of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">荷渡方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>Payment calendar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払カレンダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>Payment day lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払期日明細行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>Payment schedule lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払スケジュール行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>Payment schedule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払スケジュール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>Price customer groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格顧客グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>Printed form notes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">印刷済フォームのメモ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>Sales charge codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上諸掛コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>Sales districts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売地域</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>Sales order pools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文プール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>Statistics group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">統計グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>Terms of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配送条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>Terms of payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">支払条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Total discount customer groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">割引合計顧客グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

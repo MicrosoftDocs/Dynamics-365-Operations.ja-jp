@@ -1,1405 +1,1971 @@
----
-title: V クラス
-description: 文字 V で始まるシステム API クラス。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 55841
-ms.assetid: fd3859a7-c0e5-41b3-9bd3-fc68099e727f
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b1c8d013b92bba4f8c844fc1b8e29a6e90ed791
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537005"
----
-# <a name="v-classes"></a><span data-ttu-id="ed15a-103">V クラス</span><span class="sxs-lookup"><span data-stu-id="ed15a-103">V classes</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="ed15a-104">文字 V で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="ed15a-104">System API classes that start with the letter V.</span></span>
-
-<a name="class-validateeventargs"></a><span data-ttu-id="ed15a-105">クラス ValidateEventArgs</span><span class="sxs-lookup"><span data-stu-id="ed15a-105">Class ValidateEventArgs</span></span>
------------------------
-
-    class ValidateEventArgs extends DataEventArgs
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-106">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-106">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-107">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-107">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-108">Methods</span></span>
-
-| <span data-ttu-id="ed15a-109">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-109">Method</span></span>                                                | <span data-ttu-id="ed15a-110">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-110">Description</span></span> |
-|-------------------------------------------------------|-------------|
-| <span data-ttu-id="ed15a-111">public boolean parmValidateResult(\[boolean result\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-111">public boolean parmValidateResult(\[boolean result\])</span></span> |             |
-| <span data-ttu-id="ed15a-112">public void new(boolean result)</span><span class="sxs-lookup"><span data-stu-id="ed15a-112">public void new(boolean result)</span></span>                       |             |
-
-### <a name="method-parmvalidateresult"></a><span data-ttu-id="ed15a-113">メソッド parmValidateResult</span><span class="sxs-lookup"><span data-stu-id="ed15a-113">Method parmValidateResult</span></span>
-
-    public boolean parmValidateResult([boolean result])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-114">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-114">Parameters</span></span>
-
-<span data-ttu-id="ed15a-115">件の結果</span><span class="sxs-lookup"><span data-stu-id="ed15a-115">result</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-116">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="ed15a-117">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ed15a-117">Method new</span></span>
-
-    public void new(boolean result)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-118">Parameters</span></span>
-
-<span data-ttu-id="ed15a-119">件の結果</span><span class="sxs-lookup"><span data-stu-id="ed15a-119">result</span></span>  
-
-## <a name="class-validatefieldeventargs"></a><span data-ttu-id="ed15a-120">クラス ValidateFieldEventArgs</span><span class="sxs-lookup"><span data-stu-id="ed15a-120">Class ValidateFieldEventArgs</span></span>
-    class ValidateFieldEventArgs extends ValidateEventArgs
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-121">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-121">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-122">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-122">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-123">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-123">Methods</span></span>
-
-| <span data-ttu-id="ed15a-124">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-124">Method</span></span>                                       | <span data-ttu-id="ed15a-125">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-125">Description</span></span> |
-|----------------------------------------------|-------------|
-| <span data-ttu-id="ed15a-126">public int parmFieldId()</span><span class="sxs-lookup"><span data-stu-id="ed15a-126">public int parmFieldId()</span></span>                     |             |
-| <span data-ttu-id="ed15a-127">public void new(int fieldId, boolean result)</span><span class="sxs-lookup"><span data-stu-id="ed15a-127">public void new(int fieldId, boolean result)</span></span> |             |
-
-### <a name="method-parmfieldid"></a><span data-ttu-id="ed15a-128">メソッド parmFieldId</span><span class="sxs-lookup"><span data-stu-id="ed15a-128">Method parmFieldId</span></span>
-
-    public int parmFieldId()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-129">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-129">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="ed15a-130">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ed15a-130">Method new</span></span>
-
-    public void new(int fieldId, boolean result)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-131">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-131">Parameters</span></span>
-
-<span data-ttu-id="ed15a-132">fieldId</span><span class="sxs-lookup"><span data-stu-id="ed15a-132">fieldId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-133">件の結果</span><span class="sxs-lookup"><span data-stu-id="ed15a-133">result</span></span>  
-
-## <a name="class-validatefieldvalueeventargs"></a><span data-ttu-id="ed15a-134">クラス ValidateFieldValueEventArgs</span><span class="sxs-lookup"><span data-stu-id="ed15a-134">Class ValidateFieldValueEventArgs</span></span>
-    class ValidateFieldValueEventArgs extends ValidateEventArgs
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-135">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-135">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-136">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-136">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-137">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-137">Methods</span></span>
-
-| <span data-ttu-id="ed15a-138">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-138">Method</span></span>                                                         | <span data-ttu-id="ed15a-139">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-139">Description</span></span> |
-|----------------------------------------------------------------|-------------|
-| <span data-ttu-id="ed15a-140">public str parmFieldName()</span><span class="sxs-lookup"><span data-stu-id="ed15a-140">public str parmFieldName()</span></span>                                     |             |
-| <span data-ttu-id="ed15a-141">public int parmArrayIndex()</span><span class="sxs-lookup"><span data-stu-id="ed15a-141">public int parmArrayIndex()</span></span>                                    |             |
-| <span data-ttu-id="ed15a-142">public void new(str fieldName, int arrayIndex, boolean result)</span><span class="sxs-lookup"><span data-stu-id="ed15a-142">public void new(str fieldName, int arrayIndex, boolean result)</span></span> |             |
-
-### <a name="method-parmfieldname"></a><span data-ttu-id="ed15a-143">メソッド parmFieldName</span><span class="sxs-lookup"><span data-stu-id="ed15a-143">Method parmFieldName</span></span>
-
-    public str parmFieldName()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-144">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-144">Return Value</span></span>
-
-### <a name="method-parmarrayindex"></a><span data-ttu-id="ed15a-145">メソッド parmArrayIndex</span><span class="sxs-lookup"><span data-stu-id="ed15a-145">Method parmArrayIndex</span></span>
-
-    public int parmArrayIndex()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-146">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-146">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="ed15a-147">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ed15a-147">Method new</span></span>
-
-    public void new(str fieldName, int arrayIndex, boolean result)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-148">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-148">Parameters</span></span>
-
-<span data-ttu-id="ed15a-149">fieldName</span><span class="sxs-lookup"><span data-stu-id="ed15a-149">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-150">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="ed15a-150">arrayIndex</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-151">件の結果</span><span class="sxs-lookup"><span data-stu-id="ed15a-151">result</span></span>  
-
-## <a name="class-virtualchannelmanager"></a><span data-ttu-id="ed15a-152">クラス VirtualChannelManager</span><span class="sxs-lookup"><span data-stu-id="ed15a-152">Class VirtualChannelManager</span></span>
-    class VirtualChannelManager extends Object
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-153">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-153">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-154">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-154">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-155">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-155">Methods</span></span>
-
-| <span data-ttu-id="ed15a-156">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-156">Method</span></span>                                         | <span data-ttu-id="ed15a-157">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-157">Description</span></span>                                                    |
-|------------------------------------------------|----------------------------------------------------------------|
-| <span data-ttu-id="ed15a-158">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="ed15a-158">public void finalize()</span></span>                         |                                                                |
-| <span data-ttu-id="ed15a-159">public void new()</span><span class="sxs-lookup"><span data-stu-id="ed15a-159">public void new()</span></span>                              | <span data-ttu-id="ed15a-160">VirtualChannelManager クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-160">Initializes a new instance of the VirtualChannelManager class.</span></span> |
-| <span data-ttu-id="ed15a-161">public void sendData(int listenerId, str data)</span><span class="sxs-lookup"><span data-stu-id="ed15a-161">public void sendData(int listenerId, str data)</span></span> |                                                                |
-
-### <a name="method-finalize"></a><span data-ttu-id="ed15a-162">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="ed15a-162">Method finalize</span></span>
-
-    public void finalize()
-
-### <a name="method-new"></a><span data-ttu-id="ed15a-163">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ed15a-163">Method new</span></span>
-
-<span data-ttu-id="ed15a-164">VirtualChannelManager クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-164">Initializes a new instance of the VirtualChannelManager class.</span></span>
-
-    public void new()
-
-### <a name="method-senddata"></a><span data-ttu-id="ed15a-165">メソッド sendData</span><span class="sxs-lookup"><span data-stu-id="ed15a-165">Method sendData</span></span>
-
-    public void sendData(int listenerId, str data)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-166">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-166">Parameters</span></span>
-
-<span data-ttu-id="ed15a-167">listenerId</span><span class="sxs-lookup"><span data-stu-id="ed15a-167">listenerId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-168">データ</span><span class="sxs-lookup"><span data-stu-id="ed15a-168">data</span></span>  
-
-## <a name="class-vsitemnode"></a><span data-ttu-id="ed15a-169">クラス VSItemNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-169">Class VSItemNode</span></span>
-    class VSItemNode extends TreeNode
-
-<span data-ttu-id="ed15a-170">VSItemNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードの基本クラスです。</span><span class="sxs-lookup"><span data-stu-id="ed15a-170">The VSItemNode class is a base class for Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-171">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-171">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-172">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-172">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-173">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-173">Methods</span></span>
-
-| <span data-ttu-id="ed15a-174">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-174">Method</span></span>                                                             | <span data-ttu-id="ed15a-175">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-175">Description</span></span>                                          |
-|--------------------------------------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="ed15a-176">public str AOTgetSource()</span><span class="sxs-lookup"><span data-stu-id="ed15a-176">public str AOTgetSource()</span></span>                                          | <span data-ttu-id="ed15a-177">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-177">Returns the source code of this node.</span></span>                |
-| <span data-ttu-id="ed15a-178">public BinData getFileData()</span><span class="sxs-lookup"><span data-stu-id="ed15a-178">public BinData getFileData()</span></span>                                       |                                                      |
-| <span data-ttu-id="ed15a-179">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span><span class="sxs-lookup"><span data-stu-id="ed15a-179">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span></span> | <span data-ttu-id="ed15a-180">ファイルが削除されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-180">Notifies listeners that a file has been deleted.</span></span>     |
-| <span data-ttu-id="ed15a-181">::public static void notifyFileUpdated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-181">::public static void notifyFileUpdated(TreeNode node)</span></span>              | <span data-ttu-id="ed15a-182">ファイルが更新されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-182">Notifies listeners that a file has been updated.</span></span>     |
-| <span data-ttu-id="ed15a-183">public void setFileData(BinData data)</span><span class="sxs-lookup"><span data-stu-id="ed15a-183">public void setFileData(BinData data)</span></span>                              |                                                      |
-| <span data-ttu-id="ed15a-184">public void AOTsetSource(str source, \[boolean isStatic\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-184">public void AOTsetSource(str source, \[boolean isStatic\])</span></span>         | <span data-ttu-id="ed15a-185">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-185">Sets the source code of this node.</span></span>                   |
-| <span data-ttu-id="ed15a-186">public void getFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-186">public void getFile(str fileName)</span></span>                                  |                                                      |
-| <span data-ttu-id="ed15a-187">::public static void notifyFileCreated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-187">::public static void notifyFileCreated(TreeNode node)</span></span>              | <span data-ttu-id="ed15a-188">新しいファイルが作成されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-188">Notifies listeners that a new file has been created.</span></span> |
-| <span data-ttu-id="ed15a-189">::public static void notifyFileRenamed(TreeNode node, str oldName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-189">::public static void notifyFileRenamed(TreeNode node, str oldName)</span></span> | <span data-ttu-id="ed15a-190">ファイルの名前が変更されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-190">Notifies listeners that a file has been renamed.</span></span>     |
-| <span data-ttu-id="ed15a-191">public void setFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-191">public void setFile(str fileName)</span></span>                                  |                                                      |
-
-### <a name="method-aotgetsource"></a><span data-ttu-id="ed15a-192">メソッド AOTgetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-192">Method AOTgetSource</span></span>
-
-<span data-ttu-id="ed15a-193">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-193">Returns the source code of this node.</span></span>
-
-    public str AOTgetSource()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-194">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-194">Return Value</span></span>
-
-<span data-ttu-id="ed15a-195">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-195">The string that contains the source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-196">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-196">Remarks</span></span>
-
-<span data-ttu-id="ed15a-197">この関数はソース コードを持つノードによってオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-197">This function is overridden by nodes that have source code.</span></span>
-
-### <a name="method-getfiledata"></a><span data-ttu-id="ed15a-198">メソッド getFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-198">Method getFileData</span></span>
-
-    public BinData getFileData()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-199">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-199">Return Value</span></span>
-
-### <a name="method-notifyfiledeleted"></a><span data-ttu-id="ed15a-200">メソッド notifyFileDeleted</span><span class="sxs-lookup"><span data-stu-id="ed15a-200">Method notifyFileDeleted</span></span>
-
-<span data-ttu-id="ed15a-201">ファイルが削除されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-201">Notifies listeners that a file has been deleted.</span></span>
-
-    public static void notifyFileDeleted(TreeNode node, str aotPath)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-202">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-202">Parameters</span></span>
-
-<span data-ttu-id="ed15a-203">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-203">node</span></span>  
-<span data-ttu-id="ed15a-204">ファイルの AOT パス。</span><span class="sxs-lookup"><span data-stu-id="ed15a-204">The AOT path of the file.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-205">aotPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-205">aotPath</span></span>  
-<span data-ttu-id="ed15a-206">ファイルの AOT パス。</span><span class="sxs-lookup"><span data-stu-id="ed15a-206">The AOT path of the file.</span></span>
-
-### <a name="method-notifyfileupdated"></a><span data-ttu-id="ed15a-207">メソッド notifyFileUpdated</span><span class="sxs-lookup"><span data-stu-id="ed15a-207">Method notifyFileUpdated</span></span>
-
-<span data-ttu-id="ed15a-208">ファイルが更新されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-208">Notifies listeners that a file has been updated.</span></span>
-
-    public static void notifyFileUpdated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-209">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-209">Parameters</span></span>
-
-<span data-ttu-id="ed15a-210">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-210">node</span></span>  
-<span data-ttu-id="ed15a-211">更新ノード。</span><span class="sxs-lookup"><span data-stu-id="ed15a-211">The node that has been updated.</span></span>
-
-### <a name="method-setfiledata"></a><span data-ttu-id="ed15a-212">メソッド setFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-212">Method setFileData</span></span>
-
-    public void setFileData(BinData data)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-213">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-213">Parameters</span></span>
-
-<span data-ttu-id="ed15a-214">データ</span><span class="sxs-lookup"><span data-stu-id="ed15a-214">data</span></span>  
-
-### <a name="method-aotsetsource"></a><span data-ttu-id="ed15a-215">メソッド AOTsetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-215">Method AOTsetSource</span></span>
-
-<span data-ttu-id="ed15a-216">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-216">Sets the source code of this node.</span></span>
-
-    public void AOTsetSource(str source, [boolean isStatic])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-217">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-217">Parameters</span></span>
-
-<span data-ttu-id="ed15a-218">ソース</span><span class="sxs-lookup"><span data-stu-id="ed15a-218">source</span></span>  
-<span data-ttu-id="ed15a-219">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-219">The value that specifies whether the method is static; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-220">isStatic</span><span class="sxs-lookup"><span data-stu-id="ed15a-220">isStatic</span></span>  
-<span data-ttu-id="ed15a-221">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-221">The value that specifies whether the method is static; optional.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-222">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-222">Remarks</span></span>
-
-<span data-ttu-id="ed15a-223">このメソッドは、ソース コードを持つノードによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-223">This method is overridden by nodes that have source code.</span></span>
-
-### <a name="method-getfile"></a><span data-ttu-id="ed15a-224">メソッド getFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-224">Method getFile</span></span>
-
-    public void getFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-225">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-225">Parameters</span></span>
-
-<span data-ttu-id="ed15a-226">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-226">fileName</span></span>  
-
-### <a name="method-notifyfilecreated"></a><span data-ttu-id="ed15a-227">メソッド notifyFileCreated</span><span class="sxs-lookup"><span data-stu-id="ed15a-227">Method notifyFileCreated</span></span>
-
-<span data-ttu-id="ed15a-228">新しいファイルが作成されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-228">Notifies listeners that a new file has been created.</span></span>
-
-    public static void notifyFileCreated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-229">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-229">Parameters</span></span>
-
-<span data-ttu-id="ed15a-230">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-230">node</span></span>  
-<span data-ttu-id="ed15a-231">作成されたノード。</span><span class="sxs-lookup"><span data-stu-id="ed15a-231">The node that has been created.</span></span>
-
-### <a name="method-notifyfilerenamed"></a><span data-ttu-id="ed15a-232">メソッド notifyFileRenamed</span><span class="sxs-lookup"><span data-stu-id="ed15a-232">Method notifyFileRenamed</span></span>
-
-<span data-ttu-id="ed15a-233">ファイルの名前が変更されたことをリスナーに通知します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-233">Notifies listeners that a file has been renamed.</span></span>
-
-    public static void notifyFileRenamed(TreeNode node, str oldName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-234">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-234">Parameters</span></span>
-
-<span data-ttu-id="ed15a-235">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-235">node</span></span>  
-<span data-ttu-id="ed15a-236">ファイルの古い名前。</span><span class="sxs-lookup"><span data-stu-id="ed15a-236">The old name of the file.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-237">oldName</span><span class="sxs-lookup"><span data-stu-id="ed15a-237">oldName</span></span>  
-<span data-ttu-id="ed15a-238">ファイルの古い名前。</span><span class="sxs-lookup"><span data-stu-id="ed15a-238">The old name of the file.</span></span>
-
-### <a name="method-setfile"></a><span data-ttu-id="ed15a-239">メソッド setFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-239">Method setFile</span></span>
-
-    public void setFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-240">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-240">Parameters</span></span>
-
-<span data-ttu-id="ed15a-241">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-241">fileName</span></span>  
-
-## <a name="class-vsprojectfilenode"></a><span data-ttu-id="ed15a-242">クラス VSProjectFileNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-242">Class VSProjectFileNode</span></span>
-    class VSProjectFileNode extends VSItemNode
-
-<span data-ttu-id="ed15a-243">VSProjectFileNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードでファイルを表します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-243">The VSProjectFileNode class represents files in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-244">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-244">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-245">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-245">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-246">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-246">Methods</span></span>
-
-| <span data-ttu-id="ed15a-247">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-247">Method</span></span>                                                             | <span data-ttu-id="ed15a-248">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-248">Description</span></span>                           |
-|--------------------------------------------------------------------|---------------------------------------|
-| <span data-ttu-id="ed15a-249">public str AOTgetSource()</span><span class="sxs-lookup"><span data-stu-id="ed15a-249">public str AOTgetSource()</span></span>                                          | <span data-ttu-id="ed15a-250">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-250">Returns the source code of this node.</span></span> |
-| <span data-ttu-id="ed15a-251">public BinData getFileData()</span><span class="sxs-lookup"><span data-stu-id="ed15a-251">public BinData getFileData()</span></span>                                       |                                       |
-| <span data-ttu-id="ed15a-252">::public static void notifyFileCreated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-252">::public static void notifyFileCreated(TreeNode node)</span></span>              |                                       |
-| <span data-ttu-id="ed15a-253">public void setFileData(BinData data)</span><span class="sxs-lookup"><span data-stu-id="ed15a-253">public void setFileData(BinData data)</span></span>                              |                                       |
-| <span data-ttu-id="ed15a-254">public void getFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-254">public void getFile(str fileName)</span></span>                                  |                                       |
-| <span data-ttu-id="ed15a-255">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span><span class="sxs-lookup"><span data-stu-id="ed15a-255">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span></span> |                                       |
-| <span data-ttu-id="ed15a-256">::public static void notifyFileUpdated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-256">::public static void notifyFileUpdated(TreeNode node)</span></span>              |                                       |
-| <span data-ttu-id="ed15a-257">public void setFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-257">public void setFile(str fileName)</span></span>                                  |                                       |
-| <span data-ttu-id="ed15a-258">::public static void notifyFileRenamed(TreeNode node, str oldName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-258">::public static void notifyFileRenamed(TreeNode node, str oldName)</span></span> |                                       |
-| <span data-ttu-id="ed15a-259">public void AOTsetSource(str source, \[boolean isStatic\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-259">public void AOTsetSource(str source, \[boolean isStatic\])</span></span>         | <span data-ttu-id="ed15a-260">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-260">Sets the source code of this node.</span></span>    |
-
-### <a name="method-aotgetsource"></a><span data-ttu-id="ed15a-261">メソッド AOTgetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-261">Method AOTgetSource</span></span>
-
-<span data-ttu-id="ed15a-262">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-262">Returns the source code of this node.</span></span>
-
-    public str AOTgetSource()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-263">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-263">Return Value</span></span>
-
-<span data-ttu-id="ed15a-264">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-264">The string that contains source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-265">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-265">Remarks</span></span>
-
-<span data-ttu-id="ed15a-266">この関数はソース コードを持つノードによってオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-266">This function is overridden by nodes that have source code.</span></span>
-
-### <a name="method-getfiledata"></a><span data-ttu-id="ed15a-267">メソッド getFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-267">Method getFileData</span></span>
-
-    public BinData getFileData()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-268">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-268">Return Value</span></span>
-
-### <a name="method-notifyfilecreated"></a><span data-ttu-id="ed15a-269">メソッド notifyFileCreated</span><span class="sxs-lookup"><span data-stu-id="ed15a-269">Method notifyFileCreated</span></span>
-
-    public static void notifyFileCreated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-270">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-270">Parameters</span></span>
-
-<span data-ttu-id="ed15a-271">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-271">node</span></span>  
-
-### <a name="method-setfiledata"></a><span data-ttu-id="ed15a-272">メソッド setFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-272">Method setFileData</span></span>
-
-    public void setFileData(BinData data)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-273">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-273">Parameters</span></span>
-
-<span data-ttu-id="ed15a-274">データ</span><span class="sxs-lookup"><span data-stu-id="ed15a-274">data</span></span>  
-
-### <a name="method-getfile"></a><span data-ttu-id="ed15a-275">メソッド getFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-275">Method getFile</span></span>
-
-    public void getFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-276">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-276">Parameters</span></span>
-
-<span data-ttu-id="ed15a-277">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-277">fileName</span></span>  
-
-### <a name="method-notifyfiledeleted"></a><span data-ttu-id="ed15a-278">メソッド notifyFileDeleted</span><span class="sxs-lookup"><span data-stu-id="ed15a-278">Method notifyFileDeleted</span></span>
-
-    public static void notifyFileDeleted(TreeNode node, str aotPath)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-279">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-279">Parameters</span></span>
-
-<span data-ttu-id="ed15a-280">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-280">node</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-281">aotPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-281">aotPath</span></span>  
-
-### <a name="method-notifyfileupdated"></a><span data-ttu-id="ed15a-282">メソッド notifyFileUpdated</span><span class="sxs-lookup"><span data-stu-id="ed15a-282">Method notifyFileUpdated</span></span>
-
-    public static void notifyFileUpdated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-283">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-283">Parameters</span></span>
-
-<span data-ttu-id="ed15a-284">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-284">node</span></span>  
-
-### <a name="method-setfile"></a><span data-ttu-id="ed15a-285">メソッド setFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-285">Method setFile</span></span>
-
-    public void setFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-286">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-286">Parameters</span></span>
-
-<span data-ttu-id="ed15a-287">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-287">fileName</span></span>  
-
-### <a name="method-notifyfilerenamed"></a><span data-ttu-id="ed15a-288">メソッド notifyFileRenamed</span><span class="sxs-lookup"><span data-stu-id="ed15a-288">Method notifyFileRenamed</span></span>
-
-    public static void notifyFileRenamed(TreeNode node, str oldName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-289">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-289">Parameters</span></span>
-
-<span data-ttu-id="ed15a-290">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-290">node</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-291">oldName</span><span class="sxs-lookup"><span data-stu-id="ed15a-291">oldName</span></span>  
-
-### <a name="method-aotsetsource"></a><span data-ttu-id="ed15a-292">メソッド AOTsetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-292">Method AOTsetSource</span></span>
-
-<span data-ttu-id="ed15a-293">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-293">Sets the source code of this node.</span></span>
-
-    public void AOTsetSource(str source, [boolean isStatic])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-294">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-294">Parameters</span></span>
-
-<span data-ttu-id="ed15a-295">ソース</span><span class="sxs-lookup"><span data-stu-id="ed15a-295">source</span></span>  
-<span data-ttu-id="ed15a-296">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-296">The value that specifies whether the method is static; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-297">isStatic</span><span class="sxs-lookup"><span data-stu-id="ed15a-297">isStatic</span></span>  
-<span data-ttu-id="ed15a-298">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-298">The value that specifies whether the method is static; optional.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-299">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-299">Remarks</span></span>
-
-<span data-ttu-id="ed15a-300">このメソッドは、ソース コードを持つノードによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-300">This method is overridden by nodes that have source code.</span></span>
-
-## <a name="class-vsprojectfoldernode"></a><span data-ttu-id="ed15a-301">クラス VSProjectFolderNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-301">Class VSProjectFolderNode</span></span>
-    class VSProjectFolderNode extends TreeNode
-
-<span data-ttu-id="ed15a-302">VSProjectFolderNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードでフォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-302">The VSProjectFolderNode class represents folders in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-303">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-303">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-304">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-304">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-305">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-305">Methods</span></span>
-
-| <span data-ttu-id="ed15a-306">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-306">Method</span></span>                                                                                       | <span data-ttu-id="ed15a-307">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-307">Description</span></span>                                                                                              |
-|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ed15a-308">public str AOTgetSource()</span><span class="sxs-lookup"><span data-stu-id="ed15a-308">public str AOTgetSource()</span></span>                                                                    | <span data-ttu-id="ed15a-309">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-309">Returns the source code of this node.</span></span>                                                                    |
-| <span data-ttu-id="ed15a-310">public VSProjectFileNode createFileNode(str name)</span><span class="sxs-lookup"><span data-stu-id="ed15a-310">public VSProjectFileNode createFileNode(str name)</span></span>                                            | <span data-ttu-id="ed15a-311">この VSProjectFolderNode インスタンスの子として、VSProjectFileNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-311">Creates a new instance of the VSProjectFileNode class as a child of this VSProjectFolderNode instance.</span></span>   |
-| <span data-ttu-id="ed15a-312">public VSProjectFolderNode createFolderNode(str name)</span><span class="sxs-lookup"><span data-stu-id="ed15a-312">public VSProjectFolderNode createFolderNode(str name)</span></span>                                        | <span data-ttu-id="ed15a-313">この VSProjectFolderNode インスタンスの子として、VSProjectFolderNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-313">Creates a new instance of the VSProjectFolderNode class as a child of this VSProjectFolderNode instance.</span></span> |
-| <span data-ttu-id="ed15a-314">public VSProjectLinkNode createLinkNode(str name, str aotPath, \[boolean createLinkedNode\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-314">public VSProjectLinkNode createLinkNode(str name, str aotPath, \[boolean createLinkedNode\])</span></span> | <span data-ttu-id="ed15a-315">この VSProjectFolderNode インスタンスの子として、VSProjectLinkNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-315">Creates a new instance of the VSProjectLinkNode class as a child of this VSProjectFolderNode instance.</span></span>   |
-| <span data-ttu-id="ed15a-316">public BinData getFileData()</span><span class="sxs-lookup"><span data-stu-id="ed15a-316">public BinData getFileData()</span></span>                                                                 |                                                                                                          |
-| <span data-ttu-id="ed15a-317">::public static void notifyFileUpdated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-317">::public static void notifyFileUpdated(TreeNode node)</span></span>                                        |                                                                                                          |
-| <span data-ttu-id="ed15a-318">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span><span class="sxs-lookup"><span data-stu-id="ed15a-318">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span></span>                           |                                                                                                          |
-| <span data-ttu-id="ed15a-319">public void setFileData(BinData data)</span><span class="sxs-lookup"><span data-stu-id="ed15a-319">public void setFileData(BinData data)</span></span>                                                        |                                                                                                          |
-| <span data-ttu-id="ed15a-320">public void AOTsetSource(str source, \[boolean isStatic\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-320">public void AOTsetSource(str source, \[boolean isStatic\])</span></span>                                   | <span data-ttu-id="ed15a-321">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-321">Sets the source code of this node.</span></span>                                                                       |
-| <span data-ttu-id="ed15a-322">public void getFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-322">public void getFile(str fileName)</span></span>                                                            |                                                                                                          |
-| <span data-ttu-id="ed15a-323">::public static void notifyFileCreated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-323">::public static void notifyFileCreated(TreeNode node)</span></span>                                        |                                                                                                          |
-| <span data-ttu-id="ed15a-324">::public static void notifyFileRenamed(TreeNode node, str oldName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-324">::public static void notifyFileRenamed(TreeNode node, str oldName)</span></span>                           |                                                                                                          |
-| <span data-ttu-id="ed15a-325">public void setFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-325">public void setFile(str fileName)</span></span>                                                            |                                                                                                          |
-
-### <a name="method-aotgetsource"></a><span data-ttu-id="ed15a-326">メソッド AOTgetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-326">Method AOTgetSource</span></span>
-
-<span data-ttu-id="ed15a-327">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-327">Returns the source code of this node.</span></span>
-
-    public str AOTgetSource()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-328">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-328">Return Value</span></span>
-
-<span data-ttu-id="ed15a-329">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-329">The string that contains source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-330">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-330">Remarks</span></span>
-
-<span data-ttu-id="ed15a-331">この関数はソース コードを持つノードによってオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-331">This function is overridden by nodes that have source code.</span></span>
-
-### <a name="method-createfilenode"></a><span data-ttu-id="ed15a-332">メソッド createFileNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-332">Method createFileNode</span></span>
-
-<span data-ttu-id="ed15a-333">この VSProjectFolderNode インスタンスの子として、VSProjectFileNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-333">Creates a new instance of the VSProjectFileNode class as a child of this VSProjectFolderNode instance.</span></span>
-
-    public VSProjectFileNode createFileNode(str name)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-334">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-334">Parameters</span></span>
-
-<span data-ttu-id="ed15a-335">名前</span><span class="sxs-lookup"><span data-stu-id="ed15a-335">name</span></span>  
-<span data-ttu-id="ed15a-336">ファイル ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="ed15a-336">The name of the file node.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-337">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-337">Return Value</span></span>
-
-<span data-ttu-id="ed15a-338">VSProjectFileNode クラスの新しいインスタンス。</span><span class="sxs-lookup"><span data-stu-id="ed15a-338">The new instance of the VSProjectFileNode class.</span></span>
-
-### <a name="method-createfoldernode"></a><span data-ttu-id="ed15a-339">メソッド createFolderNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-339">Method createFolderNode</span></span>
-
-<span data-ttu-id="ed15a-340">この VSProjectFolderNode インスタンスの子として、VSProjectFolderNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-340">Creates a new instance of the VSProjectFolderNode class as a child of this VSProjectFolderNode instance.</span></span>
-
-    public VSProjectFolderNode createFolderNode(str name)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-341">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-341">Parameters</span></span>
-
-<span data-ttu-id="ed15a-342">名前</span><span class="sxs-lookup"><span data-stu-id="ed15a-342">name</span></span>  
-<span data-ttu-id="ed15a-343">フォルダー ノードの名前。</span><span class="sxs-lookup"><span data-stu-id="ed15a-343">The name of the folder node.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-344">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-344">Return Value</span></span>
-
-<span data-ttu-id="ed15a-345">VSProjectFolderNode クラスの新しいインスタンス。</span><span class="sxs-lookup"><span data-stu-id="ed15a-345">The new instance of the VSProjectFolderNode class.</span></span>
-
-### <a name="method-createlinknode"></a><span data-ttu-id="ed15a-346">メソッド createLinkNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-346">Method createLinkNode</span></span>
-
-<span data-ttu-id="ed15a-347">この VSProjectFolderNode インスタンスの子として、VSProjectLinkNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-347">Creates a new instance of the VSProjectLinkNode class as a child of this VSProjectFolderNode instance.</span></span>
-
-    public VSProjectLinkNode createLinkNode(str name, str aotPath, [boolean createLinkedNode])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-348">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-348">Parameters</span></span>
-
-<span data-ttu-id="ed15a-349">名前</span><span class="sxs-lookup"><span data-stu-id="ed15a-349">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-350">aotPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-350">aotPath</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-351">createLinkedNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-351">createLinkedNode</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-352">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-352">Return Value</span></span>
-
-<span data-ttu-id="ed15a-353">VSProjectLinkNode クラスの新しいインスタンス。</span><span class="sxs-lookup"><span data-stu-id="ed15a-353">The new instance of the VSProjectLinkNode class.</span></span>
-
-### <a name="method-getfiledata"></a><span data-ttu-id="ed15a-354">メソッド getFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-354">Method getFileData</span></span>
-
-    public BinData getFileData()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-355">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-355">Return Value</span></span>
-
-### <a name="method-notifyfileupdated"></a><span data-ttu-id="ed15a-356">メソッド notifyFileUpdated</span><span class="sxs-lookup"><span data-stu-id="ed15a-356">Method notifyFileUpdated</span></span>
-
-    public static void notifyFileUpdated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-357">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-357">Parameters</span></span>
-
-<span data-ttu-id="ed15a-358">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-358">node</span></span>  
-
-### <a name="method-notifyfiledeleted"></a><span data-ttu-id="ed15a-359">メソッド notifyFileDeleted</span><span class="sxs-lookup"><span data-stu-id="ed15a-359">Method notifyFileDeleted</span></span>
-
-    public static void notifyFileDeleted(TreeNode node, str aotPath)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-360">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-360">Parameters</span></span>
-
-<span data-ttu-id="ed15a-361">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-361">node</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-362">aotPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-362">aotPath</span></span>  
-
-### <a name="method-setfiledata"></a><span data-ttu-id="ed15a-363">メソッド setFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-363">Method setFileData</span></span>
-
-    public void setFileData(BinData data)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-364">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-364">Parameters</span></span>
-
-<span data-ttu-id="ed15a-365">データ</span><span class="sxs-lookup"><span data-stu-id="ed15a-365">data</span></span>  
-
-### <a name="method-aotsetsource"></a><span data-ttu-id="ed15a-366">メソッド AOTsetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-366">Method AOTsetSource</span></span>
-
-<span data-ttu-id="ed15a-367">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-367">Sets the source code of this node.</span></span>
-
-    public void AOTsetSource(str source, [boolean isStatic])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-368">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-368">Parameters</span></span>
-
-<span data-ttu-id="ed15a-369">ソース</span><span class="sxs-lookup"><span data-stu-id="ed15a-369">source</span></span>  
-<span data-ttu-id="ed15a-370">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-370">The value that specifies whether the method is static; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-371">isStatic</span><span class="sxs-lookup"><span data-stu-id="ed15a-371">isStatic</span></span>  
-<span data-ttu-id="ed15a-372">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-372">The value that specifies whether the method is static; optional.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-373">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-373">Remarks</span></span>
-
-<span data-ttu-id="ed15a-374">このメソッドは、ソース コードを持つノードによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-374">This method is overridden by nodes that have source code.</span></span>
-
-### <a name="method-getfile"></a><span data-ttu-id="ed15a-375">メソッド getFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-375">Method getFile</span></span>
-
-    public void getFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-376">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-376">Parameters</span></span>
-
-<span data-ttu-id="ed15a-377">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-377">fileName</span></span>  
-
-### <a name="method-notifyfilecreated"></a><span data-ttu-id="ed15a-378">メソッド notifyFileCreated</span><span class="sxs-lookup"><span data-stu-id="ed15a-378">Method notifyFileCreated</span></span>
-
-    public static void notifyFileCreated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-379">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-379">Parameters</span></span>
-
-<span data-ttu-id="ed15a-380">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-380">node</span></span>  
-
-### <a name="method-notifyfilerenamed"></a><span data-ttu-id="ed15a-381">メソッド notifyFileRenamed</span><span class="sxs-lookup"><span data-stu-id="ed15a-381">Method notifyFileRenamed</span></span>
-
-    public static void notifyFileRenamed(TreeNode node, str oldName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-382">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-382">Parameters</span></span>
-
-<span data-ttu-id="ed15a-383">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-383">node</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-384">oldName</span><span class="sxs-lookup"><span data-stu-id="ed15a-384">oldName</span></span>  
-
-### <a name="method-setfile"></a><span data-ttu-id="ed15a-385">メソッド setFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-385">Method setFile</span></span>
-
-    public void setFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-386">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-386">Parameters</span></span>
-
-<span data-ttu-id="ed15a-387">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-387">fileName</span></span>  
-
-## <a name="class-vsprojectlinknode"></a><span data-ttu-id="ed15a-388">クラス VSProjectLinkNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-388">Class VSProjectLinkNode</span></span>
-    class VSProjectLinkNode extends VSItemNode
-
-<span data-ttu-id="ed15a-389">VSProjectLinkNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードにある別の Finance and Operations AOT へのリンクを表します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-389">The VSProjectLinkNode class represents links to other Finance and Operations Application Object Tree (AOT) nodes in the Microsoft Visual Studio project nodes in the AOT.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-390">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-390">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-391">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-391">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-392">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-392">Methods</span></span>
-
-| <span data-ttu-id="ed15a-393">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-393">Method</span></span>                                                             | <span data-ttu-id="ed15a-394">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-394">Description</span></span>                           |
-|--------------------------------------------------------------------|---------------------------------------|
-| <span data-ttu-id="ed15a-395">public str AOTgetSource()</span><span class="sxs-lookup"><span data-stu-id="ed15a-395">public str AOTgetSource()</span></span>                                          | <span data-ttu-id="ed15a-396">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-396">Returns the source code of this node.</span></span> |
-| <span data-ttu-id="ed15a-397">public str getAOTPath()</span><span class="sxs-lookup"><span data-stu-id="ed15a-397">public str getAOTPath()</span></span>                                            |                                       |
-| <span data-ttu-id="ed15a-398">public BinData getFileData()</span><span class="sxs-lookup"><span data-stu-id="ed15a-398">public BinData getFileData()</span></span>                                       |                                       |
-| <span data-ttu-id="ed15a-399">::public static void notifyFileCreated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-399">::public static void notifyFileCreated(TreeNode node)</span></span>              |                                       |
-| <span data-ttu-id="ed15a-400">public void setFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-400">public void setFile(str fileName)</span></span>                                  |                                       |
-| <span data-ttu-id="ed15a-401">public void setFileData(BinData data)</span><span class="sxs-lookup"><span data-stu-id="ed15a-401">public void setFileData(BinData data)</span></span>                              |                                       |
-| <span data-ttu-id="ed15a-402">public void getFile(str fileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-402">public void getFile(str fileName)</span></span>                                  |                                       |
-| <span data-ttu-id="ed15a-403">::public static void notifyFileUpdated(TreeNode node)</span><span class="sxs-lookup"><span data-stu-id="ed15a-403">::public static void notifyFileUpdated(TreeNode node)</span></span>              |                                       |
-| <span data-ttu-id="ed15a-404">public void AOTsetSource(str source, \[boolean isStatic\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-404">public void AOTsetSource(str source, \[boolean isStatic\])</span></span>         | <span data-ttu-id="ed15a-405">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-405">Sets the source code of this node.</span></span>    |
-| <span data-ttu-id="ed15a-406">::public static void notifyFileRenamed(TreeNode node, str oldName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-406">::public static void notifyFileRenamed(TreeNode node, str oldName)</span></span> |                                       |
-| <span data-ttu-id="ed15a-407">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span><span class="sxs-lookup"><span data-stu-id="ed15a-407">::public static void notifyFileDeleted(TreeNode node, str aotPath)</span></span> |                                       |
-
-### <a name="method-aotgetsource"></a><span data-ttu-id="ed15a-408">メソッド AOTgetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-408">Method AOTgetSource</span></span>
-
-<span data-ttu-id="ed15a-409">このノードのソース コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-409">Returns the source code of this node.</span></span>
-
-    public str AOTgetSource()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-410">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-410">Return Value</span></span>
-
-<span data-ttu-id="ed15a-411">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-411">The string that contains source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-412">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-412">Remarks</span></span>
-
-<span data-ttu-id="ed15a-413">この関数はソース コードを持つノードによってオーバーライドされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-413">This function is overridden by nodes that have source code.</span></span>
-
-### <a name="method-getaotpath"></a><span data-ttu-id="ed15a-414">メソッド getAOTPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-414">Method getAOTPath</span></span>
-
-    public str getAOTPath()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-415">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-415">Return Value</span></span>
-
-### <a name="method-getfiledata"></a><span data-ttu-id="ed15a-416">メソッド getFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-416">Method getFileData</span></span>
-
-    public BinData getFileData()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-417">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-417">Return Value</span></span>
-
-### <a name="method-notifyfilecreated"></a><span data-ttu-id="ed15a-418">メソッド notifyFileCreated</span><span class="sxs-lookup"><span data-stu-id="ed15a-418">Method notifyFileCreated</span></span>
-
-    public static void notifyFileCreated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-419">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-419">Parameters</span></span>
-
-<span data-ttu-id="ed15a-420">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-420">node</span></span>  
-
-### <a name="method-setfile"></a><span data-ttu-id="ed15a-421">メソッド setFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-421">Method setFile</span></span>
-
-    public void setFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-422">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-422">Parameters</span></span>
-
-<span data-ttu-id="ed15a-423">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-423">fileName</span></span>  
-
-### <a name="method-setfiledata"></a><span data-ttu-id="ed15a-424">メソッド setFileData</span><span class="sxs-lookup"><span data-stu-id="ed15a-424">Method setFileData</span></span>
-
-    public void setFileData(BinData data)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-425">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-425">Parameters</span></span>
-
-<span data-ttu-id="ed15a-426">データ</span><span class="sxs-lookup"><span data-stu-id="ed15a-426">data</span></span>  
-
-### <a name="method-getfile"></a><span data-ttu-id="ed15a-427">メソッド getFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-427">Method getFile</span></span>
-
-    public void getFile(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-428">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-428">Parameters</span></span>
-
-<span data-ttu-id="ed15a-429">fileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-429">fileName</span></span>  
-
-### <a name="method-notifyfileupdated"></a><span data-ttu-id="ed15a-430">メソッド notifyFileUpdated</span><span class="sxs-lookup"><span data-stu-id="ed15a-430">Method notifyFileUpdated</span></span>
-
-    public static void notifyFileUpdated(TreeNode node)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-431">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-431">Parameters</span></span>
-
-<span data-ttu-id="ed15a-432">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-432">node</span></span>  
-
-### <a name="method-aotsetsource"></a><span data-ttu-id="ed15a-433">メソッド AOTsetSource</span><span class="sxs-lookup"><span data-stu-id="ed15a-433">Method AOTsetSource</span></span>
-
-<span data-ttu-id="ed15a-434">このノードのソース コードを設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-434">Sets the source code of this node.</span></span>
-
-    public void AOTsetSource(str source, [boolean isStatic])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-435">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-435">Parameters</span></span>
-
-<span data-ttu-id="ed15a-436">ソース</span><span class="sxs-lookup"><span data-stu-id="ed15a-436">source</span></span>  
-<span data-ttu-id="ed15a-437">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-437">The value that specifies whether the method is static; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-438">isStatic</span><span class="sxs-lookup"><span data-stu-id="ed15a-438">isStatic</span></span>  
-<span data-ttu-id="ed15a-439">メソッドが静的かどうかを指定する値 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="ed15a-439">The value that specifies whether the method is static; optional.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-440">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-440">Remarks</span></span>
-
-<span data-ttu-id="ed15a-441">このメソッドは、ソース コードを持つノードによって上書きされます。</span><span class="sxs-lookup"><span data-stu-id="ed15a-441">This method is overridden by nodes that have source code.</span></span>
-
-### <a name="method-notifyfilerenamed"></a><span data-ttu-id="ed15a-442">メソッド notifyFileRenamed</span><span class="sxs-lookup"><span data-stu-id="ed15a-442">Method notifyFileRenamed</span></span>
-
-    public static void notifyFileRenamed(TreeNode node, str oldName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-443">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-443">Parameters</span></span>
-
-<span data-ttu-id="ed15a-444">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-444">node</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-445">oldName</span><span class="sxs-lookup"><span data-stu-id="ed15a-445">oldName</span></span>  
-
-### <a name="method-notifyfiledeleted"></a><span data-ttu-id="ed15a-446">メソッド notifyFileDeleted</span><span class="sxs-lookup"><span data-stu-id="ed15a-446">Method notifyFileDeleted</span></span>
-
-    public static void notifyFileDeleted(TreeNode node, str aotPath)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-447">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-447">Parameters</span></span>
-
-<span data-ttu-id="ed15a-448">node</span><span class="sxs-lookup"><span data-stu-id="ed15a-448">node</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-449">aotPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-449">aotPath</span></span>  
-
-## <a name="class-vsprojectnode"></a><span data-ttu-id="ed15a-450">クラス VSProjectNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-450">Class VSProjectNode</span></span>
-    class VSProjectNode extends xResourceNode
-
-<span data-ttu-id="ed15a-451">VSProjectNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードでプロジェクトを表します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-451">The VSProjectNode class represents projects in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-452">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-452">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-453">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-453">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-454">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-454">Methods</span></span>
-
-| <span data-ttu-id="ed15a-455">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-455">Method</span></span>                                                                | <span data-ttu-id="ed15a-456">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-456">Description</span></span>                                                                                       |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ed15a-457">public container extract(\[str path\], \[boolean extractReferenced\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-457">public container extract(\[str path\], \[boolean extractReferenced\])</span></span> | <span data-ttu-id="ed15a-458">ディスクにプロジェクト全体を展開します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-458">Extracts the whole project to disk.</span></span>                                                               |
-| <span data-ttu-id="ed15a-459">public VSProjectFolderNode getContentNode()</span><span class="sxs-lookup"><span data-stu-id="ed15a-459">public VSProjectFolderNode getContentNode()</span></span>                           | <span data-ttu-id="ed15a-460">Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-460">Gets the content VSProjectFolderNode object that contains the Visual Studio project files.</span></span>        |
-| <span data-ttu-id="ed15a-461">public DeployTo getDeployTo()</span><span class="sxs-lookup"><span data-stu-id="ed15a-461">public DeployTo getDeployTo()</span></span>                                         | <span data-ttu-id="ed15a-462">deployTo プロパティの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-462">Gets value of the deployTo property.</span></span>                                                              |
-| <span data-ttu-id="ed15a-463">public VSProjectFolderNode getOutputNode()</span><span class="sxs-lookup"><span data-stu-id="ed15a-463">public VSProjectFolderNode getOutputNode()</span></span>                            | <span data-ttu-id="ed15a-464">Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-464">Gets the output VSProjectFolderNode object that contains the Visual Studio project output files.</span></span>  |
-| <span data-ttu-id="ed15a-465">public VSProjectFileNode getPrimaryOutputNode()</span><span class="sxs-lookup"><span data-stu-id="ed15a-465">public VSProjectFileNode getPrimaryOutputNode()</span></span>                       | <span data-ttu-id="ed15a-466">Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-466">Gets the VSProjectFileNode object that represent the primary output of the Visual Studio project.</span></span> |
-| <span data-ttu-id="ed15a-467">public str getPrimaryTargetFileName()</span><span class="sxs-lookup"><span data-stu-id="ed15a-467">public str getPrimaryTargetFileName()</span></span>                                 | <span data-ttu-id="ed15a-468">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-468">Gets the primary target file name of the Visual Studio project.</span></span>                                   |
-| <span data-ttu-id="ed15a-469">public Map getProxies()</span><span class="sxs-lookup"><span data-stu-id="ed15a-469">public Map getProxies()</span></span>                                               | <span data-ttu-id="ed15a-470">このプロジェクトでのプロキシを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-470">Gets the proxies in this project.</span></span>                                                                 |
-| <span data-ttu-id="ed15a-471">public container getProxiesContainer()</span><span class="sxs-lookup"><span data-stu-id="ed15a-471">public container getProxiesContainer()</span></span>                                | <span data-ttu-id="ed15a-472">このプロジェクトでのプロキシを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-472">Gets the proxies in this project.</span></span>                                                                 |
-| <span data-ttu-id="ed15a-473">public str getReferencedProjectsInAOT()</span><span class="sxs-lookup"><span data-stu-id="ed15a-473">public str getReferencedProjectsInAOT()</span></span>                               | <span data-ttu-id="ed15a-474">この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-474">Gets the AOT paths of the projects that are referenced by this Visual Studio project.</span></span>             |
-| <span data-ttu-id="ed15a-475">public str referencedProjects(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-475">public str referencedProjects(\[str value\])</span></span>                          |                                                                                                   |
-| <span data-ttu-id="ed15a-476">public void setPrimaryTargetFileName(str targetFileName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-476">public void setPrimaryTargetFileName(str targetFileName)</span></span>              | <span data-ttu-id="ed15a-477">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-477">Sets the primary target file name of the Visual Studio project.</span></span>                                   |
-| <span data-ttu-id="ed15a-478">public void extractToSpecificDir(str directory)</span><span class="sxs-lookup"><span data-stu-id="ed15a-478">public void extractToSpecificDir(str directory)</span></span>                       |                                                                                                   |
-| <span data-ttu-id="ed15a-479">public void setDeployTo(DeployTo deployTo)</span><span class="sxs-lookup"><span data-stu-id="ed15a-479">public void setDeployTo(DeployTo deployTo)</span></span>                            | <span data-ttu-id="ed15a-480">deployTo プロパティの値を設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-480">Sets the value of the deployTo property.</span></span>                                                          |
-
-### <a name="method-extract"></a><span data-ttu-id="ed15a-481">メソッド extract</span><span class="sxs-lookup"><span data-stu-id="ed15a-481">Method extract</span></span>
-
-<span data-ttu-id="ed15a-482">ディスクにプロジェクト全体を展開します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-482">Extracts the whole project to disk.</span></span>
-
-    public container extract([str path], [boolean extractReferenced])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-483">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-483">Parameters</span></span>
-
-<span data-ttu-id="ed15a-484">path</span><span class="sxs-lookup"><span data-stu-id="ed15a-484">path</span></span>  
-<span data-ttu-id="ed15a-485">参照されるプロジェクトを抽出するかどうかを決定するブール値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-485">A Boolean value that determines whether to extract the referenced projects.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-486">extractReferenced</span><span class="sxs-lookup"><span data-stu-id="ed15a-486">extractReferenced</span></span>  
-<span data-ttu-id="ed15a-487">参照されるプロジェクトを抽出するかどうかを決定するブール値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-487">A Boolean value that determines whether to extract the referenced projects.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-488">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-488">Return Value</span></span>
-
-<span data-ttu-id="ed15a-489">プロジェクトの展開先のパスの一覧。</span><span class="sxs-lookup"><span data-stu-id="ed15a-489">A list of paths where the project was extracted.</span></span>
-
-### <a name="method-getcontentnode"></a><span data-ttu-id="ed15a-490">メソッド getContentNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-490">Method getContentNode</span></span>
-
-<span data-ttu-id="ed15a-491">Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-491">Gets the content VSProjectFolderNode object that contains the Visual Studio project files.</span></span>
-
-    public VSProjectFolderNode getContentNode()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-492">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-492">Return Value</span></span>
-
-<span data-ttu-id="ed15a-493">Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ed15a-493">The content VSProjectFolderNode object that contains the Visual Studio project files.</span></span>
-
-### <a name="method-getdeployto"></a><span data-ttu-id="ed15a-494">メソッド getDeployTo</span><span class="sxs-lookup"><span data-stu-id="ed15a-494">Method getDeployTo</span></span>
-
-<span data-ttu-id="ed15a-495">deployTo プロパティの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-495">Gets value of the deployTo property.</span></span>
-
-    public DeployTo getDeployTo()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-496">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-496">Return Value</span></span>
-
-<span data-ttu-id="ed15a-497">deployTo プロパティ値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-497">The deployTo property value.</span></span>
-
-### <a name="method-getoutputnode"></a><span data-ttu-id="ed15a-498">メソッド getOutputNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-498">Method getOutputNode</span></span>
-
-<span data-ttu-id="ed15a-499">Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-499">Gets the output VSProjectFolderNode object that contains the Visual Studio project output files.</span></span>
-
-    public VSProjectFolderNode getOutputNode()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-500">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-500">Return Value</span></span>
-
-<span data-ttu-id="ed15a-501">Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ed15a-501">The output VSProjectFolderNode object that contains the Visual Studio project output files.</span></span>
-
-### <a name="method-getprimaryoutputnode"></a><span data-ttu-id="ed15a-502">メソッド getPrimaryOutputNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-502">Method getPrimaryOutputNode</span></span>
-
-<span data-ttu-id="ed15a-503">Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-503">Gets the VSProjectFileNode object that represent the primary output of the Visual Studio project.</span></span>
-
-    public VSProjectFileNode getPrimaryOutputNode()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-504">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-504">Return Value</span></span>
-
-<span data-ttu-id="ed15a-505">Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ed15a-505">A VSProjectFileNode object that represent the primary output of the Visual Studio project.</span></span>
-
-### <a name="method-getprimarytargetfilename"></a><span data-ttu-id="ed15a-506">メソッド getPrimaryTargetFileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-506">Method getPrimaryTargetFileName</span></span>
-
-<span data-ttu-id="ed15a-507">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-507">Gets the primary target file name of the Visual Studio project.</span></span>
-
-    public str getPrimaryTargetFileName()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-508">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-508">Return Value</span></span>
-
-<span data-ttu-id="ed15a-509">Visual Studio プロジェクトのプライマリ ターゲット ファイル名。</span><span class="sxs-lookup"><span data-stu-id="ed15a-509">The primary target file name of the Visual Studio project.</span></span>
-
-### <a name="method-getproxies"></a><span data-ttu-id="ed15a-510">メソッド getProxies</span><span class="sxs-lookup"><span data-stu-id="ed15a-510">Method getProxies</span></span>
-
-<span data-ttu-id="ed15a-511">このプロジェクトでのプロキシを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-511">Gets the proxies in this project.</span></span>
-
-    public Map getProxies()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-512">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-512">Return Value</span></span>
-
-<span data-ttu-id="ed15a-513">クラス、列挙、およびテーブルのキーを含むマップ。</span><span class="sxs-lookup"><span data-stu-id="ed15a-513">A map that contains the Class, Enum, and Table keys.</span></span> <span data-ttu-id="ed15a-514">各キーには、プロキシのリストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed15a-514">Each key contains a list of proxies.</span></span>
-
-### <a name="method-getproxiescontainer"></a><span data-ttu-id="ed15a-515">メソッド getProxiesContainer</span><span class="sxs-lookup"><span data-stu-id="ed15a-515">Method getProxiesContainer</span></span>
-
-<span data-ttu-id="ed15a-516">このプロジェクトでのプロキシを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-516">Gets the proxies in this project.</span></span>
-
-    public container getProxiesContainer()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-517">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-517">Return Value</span></span>
-
-<span data-ttu-id="ed15a-518">マップの梱包済み表現を保持するコンテナーには、Class、Enum、Table のキーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed15a-518">A container that holds the packed representation of a map that contains the Class, Enum, and Table keys.</span></span> <span data-ttu-id="ed15a-519">各キーには、プロキシのリストが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed15a-519">Each key contains a list of proxies.</span></span>
-
-### <a name="method-getreferencedprojectsinaot"></a><span data-ttu-id="ed15a-520">メソッド getReferencedProjectsInAOT</span><span class="sxs-lookup"><span data-stu-id="ed15a-520">Method getReferencedProjectsInAOT</span></span>
-
-<span data-ttu-id="ed15a-521">この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-521">Gets the AOT paths of the projects that are referenced by this Visual Studio project.</span></span>
-
-    public str getReferencedProjectsInAOT()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-522">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-522">Return Value</span></span>
-
-<span data-ttu-id="ed15a-523">この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスの一覧。</span><span class="sxs-lookup"><span data-stu-id="ed15a-523">A list of AOT paths of the projects that are referenced by this Visual Studio project.</span></span>
-
-### <a name="method-referencedprojects"></a><span data-ttu-id="ed15a-524">メソッド referencedProjects</span><span class="sxs-lookup"><span data-stu-id="ed15a-524">Method referencedProjects</span></span>
-
-    public str referencedProjects([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-525">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-525">Parameters</span></span>
-
-<span data-ttu-id="ed15a-526">値</span><span class="sxs-lookup"><span data-stu-id="ed15a-526">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-527">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-527">Return Value</span></span>
-
-### <a name="method-setprimarytargetfilename"></a><span data-ttu-id="ed15a-528">メソッド setPrimaryTargetFileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-528">Method setPrimaryTargetFileName</span></span>
-
-<span data-ttu-id="ed15a-529">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-529">Sets the primary target file name of the Visual Studio project.</span></span>
-
-    public void setPrimaryTargetFileName(str targetFileName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-530">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-530">Parameters</span></span>
-
-<span data-ttu-id="ed15a-531">targetFileName</span><span class="sxs-lookup"><span data-stu-id="ed15a-531">targetFileName</span></span>  
-<span data-ttu-id="ed15a-532">Visual Studio プロジェクトのプライマリ ターゲット ファイル名。</span><span class="sxs-lookup"><span data-stu-id="ed15a-532">The primary target file name of the Visual Studio project.</span></span>
-
-### <a name="method-extracttospecificdir"></a><span data-ttu-id="ed15a-533">メソッド extractToSpecificDir</span><span class="sxs-lookup"><span data-stu-id="ed15a-533">Method extractToSpecificDir</span></span>
-
-    public void extractToSpecificDir(str directory)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-534">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-534">Parameters</span></span>
-
-<span data-ttu-id="ed15a-535">directory</span><span class="sxs-lookup"><span data-stu-id="ed15a-535">directory</span></span>  
-
-### <a name="method-setdeployto"></a><span data-ttu-id="ed15a-536">メソッド setDeployTo</span><span class="sxs-lookup"><span data-stu-id="ed15a-536">Method setDeployTo</span></span>
-
-<span data-ttu-id="ed15a-537">deployTo プロパティの値を設定します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-537">Sets the value of the deployTo property.</span></span>
-
-    public void setDeployTo(DeployTo deployTo)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-538">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-538">Parameters</span></span>
-
-<span data-ttu-id="ed15a-539">deployTo</span><span class="sxs-lookup"><span data-stu-id="ed15a-539">deployTo</span></span>  
-<span data-ttu-id="ed15a-540">deployTo プロパティ値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-540">The deployTo property value.</span></span>
-
-## <a name="class-vsprojectsnode"></a><span data-ttu-id="ed15a-541">クラス VSProjectsNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-541">Class VSProjectsNode</span></span>
-    class VSProjectsNode extends xResourceNode
-
-<span data-ttu-id="ed15a-542">VSProjectNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードのルートです。</span><span class="sxs-lookup"><span data-stu-id="ed15a-542">The VSProjectNode class is the root of the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-543">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-543">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-544">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-544">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-545">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-545">Methods</span></span>
-
-| <span data-ttu-id="ed15a-546">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-546">Method</span></span>                                                                                            | <span data-ttu-id="ed15a-547">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-547">Description</span></span>                                                                                |
-|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ed15a-548">public TreeNode AOTfindChild(str name, \[int nodeType\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-548">public TreeNode AOTfindChild(str name, \[int nodeType\])</span></span>                                          | <span data-ttu-id="ed15a-549">このノードの指定した子ノードを検索します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-549">Finds the specified child node of this node.</span></span>                                               |
-| <span data-ttu-id="ed15a-550">public VSProjectNode createProjectNode(str name, str projectTypesString, \[boolean virtualNode\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-550">public VSProjectNode createProjectNode(str name, str projectTypesString, \[boolean virtualNode\])</span></span> | <span data-ttu-id="ed15a-551">VSProjectNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-551">Creates a new instance of the VSProjectNode class.</span></span>                                         |
-| <span data-ttu-id="ed15a-552">public container getProjectsDeployingTo(DeployTo deployTo)</span><span class="sxs-lookup"><span data-stu-id="ed15a-552">public container getProjectsDeployingTo(DeployTo deployTo)</span></span>                                        | <span data-ttu-id="ed15a-553">指定した deployToプ ロパティを持つ VSProjectNode オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-553">Gets a list of VSProjectNode objects that have the specified deployTo property.</span></span>            |
-| <span data-ttu-id="ed15a-554">public container getProjectsModifiedAfter(DateTime timestamp)</span><span class="sxs-lookup"><span data-stu-id="ed15a-554">public container getProjectsModifiedAfter(DateTime timestamp)</span></span>                                     | <span data-ttu-id="ed15a-555">指定された日時の後に変更された VSProjectNode オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-555">Gets a list of VSProjectNode objects that were modified after the specified date and time.</span></span> |
-| <span data-ttu-id="ed15a-556">public VSProjectTypeNode getTypeNodeFromGuid(str projectTypesString)</span><span class="sxs-lookup"><span data-stu-id="ed15a-556">public VSProjectTypeNode getTypeNodeFromGuid(str projectTypesString)</span></span>                              |                                                                                            |
-| <span data-ttu-id="ed15a-557">public Object getVSProjectNodeObservable()</span><span class="sxs-lookup"><span data-stu-id="ed15a-557">public Object getVSProjectNodeObservable()</span></span>                                                        | <span data-ttu-id="ed15a-558">VSProjectNodeObservable オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-558">Gets the VSProjectNodeObservable object.</span></span>                                                   |
-| <span data-ttu-id="ed15a-559">public void AOTrefresh()</span><span class="sxs-lookup"><span data-stu-id="ed15a-559">public void AOTrefresh()</span></span>                                                                          | <span data-ttu-id="ed15a-560">.aod ファイルを最新版に変更することによりノードを更新します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-560">Updates the node with the latest changes to the .aod file.</span></span>                                 |
-
-### <a name="method-aotfindchild"></a><span data-ttu-id="ed15a-561">メソッド AOTfindChild</span><span class="sxs-lookup"><span data-stu-id="ed15a-561">Method AOTfindChild</span></span>
-
-<span data-ttu-id="ed15a-562">このノードの指定した子ノードを検索します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-562">Finds the specified child node of this node.</span></span>
-
-    public TreeNode AOTfindChild(str name, [int nodeType])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-563">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-563">Parameters</span></span>
-
-<span data-ttu-id="ed15a-564">名前</span><span class="sxs-lookup"><span data-stu-id="ed15a-564">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-565">nodeType</span><span class="sxs-lookup"><span data-stu-id="ed15a-565">nodeType</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-566">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-566">Return Value</span></span>
-
-<span data-ttu-id="ed15a-567">指定したツリー ノード。</span><span class="sxs-lookup"><span data-stu-id="ed15a-567">The specified tree node.</span></span>
-
-### <a name="method-createprojectnode"></a><span data-ttu-id="ed15a-568">メソッド createProjectNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-568">Method createProjectNode</span></span>
-
-<span data-ttu-id="ed15a-569">VSProjectNode クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-569">Creates a new instance of the VSProjectNode class.</span></span>
-
-    public VSProjectNode createProjectNode(str name, str projectTypesString, [boolean virtualNode])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-570">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-570">Parameters</span></span>
-
-<span data-ttu-id="ed15a-571">名前</span><span class="sxs-lookup"><span data-stu-id="ed15a-571">name</span></span>  
-<span data-ttu-id="ed15a-572">ノードがメモリ内でのみ作成されるかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-572">A Boolean value that indicates whether the node is created only in memory.</span></span> <span data-ttu-id="ed15a-573">この場合、ノードは Finance and Operations ストアで保持されません。</span><span class="sxs-lookup"><span data-stu-id="ed15a-573">In this case, the node will not be persisted in the Finance and Operations Store.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-574">projectTypesString</span><span class="sxs-lookup"><span data-stu-id="ed15a-574">projectTypesString</span></span>  
-<span data-ttu-id="ed15a-575">ノードがメモリ内でのみ作成されるかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-575">A Boolean value that indicates whether the node is created only in memory.</span></span> <span data-ttu-id="ed15a-576">この場合、ノードは Finance and Operations ストアで保持されません。</span><span class="sxs-lookup"><span data-stu-id="ed15a-576">In this case, the node will not be persisted in the Finance and Operations Store.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="ed15a-577">virtualNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-577">virtualNode</span></span>  
-<span data-ttu-id="ed15a-578">ノードがメモリ内でのみ作成されるかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-578">A Boolean value that indicates whether the node is created only in memory.</span></span> <span data-ttu-id="ed15a-579">この場合、ノードは Finance and Operations ストアで保持されません。</span><span class="sxs-lookup"><span data-stu-id="ed15a-579">In this case, the node will not be persisted in the Finance and Operations Store.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-580">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-580">Return Value</span></span>
-
-<span data-ttu-id="ed15a-581">作成された VSProjectNode オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ed15a-581">The VSProjectNode object that is created.</span></span>
-
-### <a name="method-getprojectsdeployingto"></a><span data-ttu-id="ed15a-582">メソッド getProjectsDeployingTo</span><span class="sxs-lookup"><span data-stu-id="ed15a-582">Method getProjectsDeployingTo</span></span>
-
-<span data-ttu-id="ed15a-583">指定した deployToプ ロパティを持つ VSProjectNode オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-583">Gets a list of VSProjectNode objects that have the specified deployTo property.</span></span>
-
-    public container getProjectsDeployingTo(DeployTo deployTo)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-584">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-584">Parameters</span></span>
-
-<span data-ttu-id="ed15a-585">deployTo</span><span class="sxs-lookup"><span data-stu-id="ed15a-585">deployTo</span></span>  
-<span data-ttu-id="ed15a-586">deployTo プロパティの値。</span><span class="sxs-lookup"><span data-stu-id="ed15a-586">The value of the deployTo property.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-587">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-587">Return Value</span></span>
-
-<span data-ttu-id="ed15a-588">VSProjectNode オブジェクトの一覧。</span><span class="sxs-lookup"><span data-stu-id="ed15a-588">A list of VSProjectNode objects.</span></span>
-
-### <a name="method-getprojectsmodifiedafter"></a><span data-ttu-id="ed15a-589">メソッド getProjectsModifiedAfter</span><span class="sxs-lookup"><span data-stu-id="ed15a-589">Method getProjectsModifiedAfter</span></span>
-
-<span data-ttu-id="ed15a-590">指定された日時の後に変更された VSProjectNode オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-590">Gets a list of VSProjectNode objects that were modified after the specified date and time.</span></span>
-
-    public container getProjectsModifiedAfter(DateTime timestamp)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-591">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-591">Parameters</span></span>
-
-<span data-ttu-id="ed15a-592">timestamp</span><span class="sxs-lookup"><span data-stu-id="ed15a-592">timestamp</span></span>  
-<span data-ttu-id="ed15a-593">DB\_DATETIME\_TYPE 値としての日時。</span><span class="sxs-lookup"><span data-stu-id="ed15a-593">The date and time as a DB\_DATETIME\_TYPE value.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-594">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-594">Return Value</span></span>
-
-<span data-ttu-id="ed15a-595">VSProjectNode オブジェクトの一覧。</span><span class="sxs-lookup"><span data-stu-id="ed15a-595">A list of VSProjectNode objects.</span></span>
-
-### <a name="method-gettypenodefromguid"></a><span data-ttu-id="ed15a-596">メソッド getTypeNodeFromGuid</span><span class="sxs-lookup"><span data-stu-id="ed15a-596">Method getTypeNodeFromGuid</span></span>
-
-    public VSProjectTypeNode getTypeNodeFromGuid(str projectTypesString)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-597">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-597">Parameters</span></span>
-
-<span data-ttu-id="ed15a-598">projectTypesString</span><span class="sxs-lookup"><span data-stu-id="ed15a-598">projectTypesString</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-599">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-599">Return Value</span></span>
-
-### <a name="method-getvsprojectnodeobservable"></a><span data-ttu-id="ed15a-600">メソッド getVSProjectNodeObservable</span><span class="sxs-lookup"><span data-stu-id="ed15a-600">Method getVSProjectNodeObservable</span></span>
-
-<span data-ttu-id="ed15a-601">VSProjectNodeObservable オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-601">Gets the VSProjectNodeObservable object.</span></span>
-
-    public Object getVSProjectNodeObservable()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-602">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-602">Return Value</span></span>
-
-<span data-ttu-id="ed15a-603">VSProjectNodeObservable オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="ed15a-603">The VSProjectNodeObservable object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="ed15a-604">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-604">Remarks</span></span>
-
-<span data-ttu-id="ed15a-605">オブザーバーはこれで登録でき、Visual Studio プロジェクトで CRUD 操作の通知を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="ed15a-605">Observers can register with this and get notified of CRUD operations on Visual Studio projects.</span></span>
-
-### <a name="method-aotrefresh"></a><span data-ttu-id="ed15a-606">メソッド AOTrefresh</span><span class="sxs-lookup"><span data-stu-id="ed15a-606">Method AOTrefresh</span></span>
-
-<span data-ttu-id="ed15a-607">.aod ファイルを最新版に変更することによりノードを更新します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-607">Updates the node with the latest changes to the .aod file.</span></span>
-
-    public void AOTrefresh()
-
-## <a name="class-vsprojecttypenode"></a><span data-ttu-id="ed15a-608">クラス VSProjectTypeNode</span><span class="sxs-lookup"><span data-stu-id="ed15a-608">Class VSProjectTypeNode</span></span>
-    class VSProjectTypeNode extends TreeNode
-
-<span data-ttu-id="ed15a-609">VSProjectTypeNode クラスは、AOT 内の Visual Studio プロジェクト ノードでプロジェクトの種類を表します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-609">The VSProjectTypeNode class represents project types in the Visual Studio Project nodes in the AOT.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-610">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-610">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-611">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-611">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-612">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-612">Methods</span></span>
-
-| <span data-ttu-id="ed15a-613">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-613">Method</span></span> | <span data-ttu-id="ed15a-614">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-614">Description</span></span> |
-|--------|-------------|
-|        |             |
-
-## <a name="class-vss"></a><span data-ttu-id="ed15a-615">クラス VSS</span><span class="sxs-lookup"><span data-stu-id="ed15a-615">Class VSS</span></span>
-    class VSS extends Object
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-616">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-616">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-617">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-617">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-618">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-618">Methods</span></span>
-
-| <span data-ttu-id="ed15a-619">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-619">Method</span></span>                                                                                                        | <span data-ttu-id="ed15a-620">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-620">Description</span></span>                               |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <span data-ttu-id="ed15a-621">public boolean connect()</span><span class="sxs-lookup"><span data-stu-id="ed15a-621">public boolean connect()</span></span>                                                                                      |                                           |
-| <span data-ttu-id="ed15a-622">public boolean connected()</span><span class="sxs-lookup"><span data-stu-id="ed15a-622">public boolean connected()</span></span>                                                                                    |                                           |
-| <span data-ttu-id="ed15a-623">public boolean disconnect()</span><span class="sxs-lookup"><span data-stu-id="ed15a-623">public boolean disconnect()</span></span>                                                                                   |                                           |
-| <span data-ttu-id="ed15a-624">public container getCheckedoutFiles()</span><span class="sxs-lookup"><span data-stu-id="ed15a-624">public container getCheckedoutFiles()</span></span>                                                                         |                                           |
-| <span data-ttu-id="ed15a-625">public container getConnectionInfo()</span><span class="sxs-lookup"><span data-stu-id="ed15a-625">public container getConnectionInfo()</span></span>                                                                          |                                           |
-| <span data-ttu-id="ed15a-626">public VSSItem getVSSItem(str vssItemPath, str localFilePath, \[boolean completePath\], \[int version\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-626">public VSSItem getVSSItem(str vssItemPath, str localFilePath, \[boolean completePath\], \[int version\])</span></span>      |                                           |
-| <span data-ttu-id="ed15a-627">public boolean init(str vssIni, str vssPrjRoot, str vssWorkingFolder, str vssUser, str vssPwd)</span><span class="sxs-lookup"><span data-stu-id="ed15a-627">public boolean init(str vssIni, str vssPrjRoot, str vssWorkingFolder, str vssUser, str vssPwd)</span></span>                |                                           |
-| <span data-ttu-id="ed15a-628">public VSSItem newSubProject(str name, str localPath)</span><span class="sxs-lookup"><span data-stu-id="ed15a-628">public VSSItem newSubProject(str name, str localPath)</span></span>                                                         |                                           |
-| <span data-ttu-id="ed15a-629">public Map synchronizeProjects(\[Set projects\], \[boolean force\], \[boolean delLocalFiles\], \[str label\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-629">public Map synchronizeProjects(\[Set projects\], \[boolean force\], \[boolean delLocalFiles\], \[str label\])</span></span> |                                           |
-| <span data-ttu-id="ed15a-630">public void new()</span><span class="sxs-lookup"><span data-stu-id="ed15a-630">public void new()</span></span>                                                                                             | <span data-ttu-id="ed15a-631">VSS クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-631">Initializes an instance of the VSS class.</span></span> |
-
-### <a name="method-connect"></a><span data-ttu-id="ed15a-632">メソッド connect</span><span class="sxs-lookup"><span data-stu-id="ed15a-632">Method connect</span></span>
-
-    public boolean connect()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-633">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-633">Return Value</span></span>
-
-### <a name="method-connected"></a><span data-ttu-id="ed15a-634">メソッド connected</span><span class="sxs-lookup"><span data-stu-id="ed15a-634">Method connected</span></span>
-
-    public boolean connected()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-635">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-635">Return Value</span></span>
-
-### <a name="method-disconnect"></a><span data-ttu-id="ed15a-636">メソッド disconnect</span><span class="sxs-lookup"><span data-stu-id="ed15a-636">Method disconnect</span></span>
-
-    public boolean disconnect()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-637">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-637">Return Value</span></span>
-
-### <a name="method-getcheckedoutfiles"></a><span data-ttu-id="ed15a-638">メソッド getCheckedoutFiles</span><span class="sxs-lookup"><span data-stu-id="ed15a-638">Method getCheckedoutFiles</span></span>
-
-    public container getCheckedoutFiles()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-639">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-639">Return Value</span></span>
-
-### <a name="method-getconnectioninfo"></a><span data-ttu-id="ed15a-640">メソッド getConnectionInfo</span><span class="sxs-lookup"><span data-stu-id="ed15a-640">Method getConnectionInfo</span></span>
-
-    public container getConnectionInfo()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-641">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-641">Return Value</span></span>
-
-### <a name="method-getvssitem"></a><span data-ttu-id="ed15a-642">メソッド getVSSItem</span><span class="sxs-lookup"><span data-stu-id="ed15a-642">Method getVSSItem</span></span>
-
-    public VSSItem getVSSItem(str vssItemPath, str localFilePath, [boolean completePath], [int version])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-643">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-643">Parameters</span></span>
-
-<span data-ttu-id="ed15a-644">vssItemPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-644">vssItemPath</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-645">localFilePath</span><span class="sxs-lookup"><span data-stu-id="ed15a-645">localFilePath</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-646">completePath</span><span class="sxs-lookup"><span data-stu-id="ed15a-646">completePath</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-647">のバージョン</span><span class="sxs-lookup"><span data-stu-id="ed15a-647">version</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-648">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-648">Return Value</span></span>
-
-### <a name="method-init"></a><span data-ttu-id="ed15a-649">メソッド init</span><span class="sxs-lookup"><span data-stu-id="ed15a-649">Method init</span></span>
-
-    public boolean init(str vssIni, str vssPrjRoot, str vssWorkingFolder, str vssUser, str vssPwd)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-650">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-650">Parameters</span></span>
-
-<span data-ttu-id="ed15a-651">vssIni</span><span class="sxs-lookup"><span data-stu-id="ed15a-651">vssIni</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-652">vssPrjRoot</span><span class="sxs-lookup"><span data-stu-id="ed15a-652">vssPrjRoot</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-653">vssWorkingFolder</span><span class="sxs-lookup"><span data-stu-id="ed15a-653">vssWorkingFolder</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-654">vssUser</span><span class="sxs-lookup"><span data-stu-id="ed15a-654">vssUser</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-655">vssPwd</span><span class="sxs-lookup"><span data-stu-id="ed15a-655">vssPwd</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-656">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-656">Return Value</span></span>
-
-### <a name="method-newsubproject"></a><span data-ttu-id="ed15a-657">メソッド newSubProject</span><span class="sxs-lookup"><span data-stu-id="ed15a-657">Method newSubProject</span></span>
-
-    public VSSItem newSubProject(str name, str localPath)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-658">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-658">Parameters</span></span>
-
-<span data-ttu-id="ed15a-659">名前</span><span class="sxs-lookup"><span data-stu-id="ed15a-659">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-660">localPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-660">localPath</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-661">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-661">Return Value</span></span>
-
-### <a name="method-synchronizeprojects"></a><span data-ttu-id="ed15a-662">メソッド synchronizeProjects</span><span class="sxs-lookup"><span data-stu-id="ed15a-662">Method synchronizeProjects</span></span>
-
-    public Map synchronizeProjects([Set projects], [boolean force], [boolean delLocalFiles], [str label])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-663">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-663">Parameters</span></span>
-
-<span data-ttu-id="ed15a-664">プロジェクト</span><span class="sxs-lookup"><span data-stu-id="ed15a-664">projects</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-665">force</span><span class="sxs-lookup"><span data-stu-id="ed15a-665">force</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-666">delLocalFiles</span><span class="sxs-lookup"><span data-stu-id="ed15a-666">delLocalFiles</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-667">ラベル</span><span class="sxs-lookup"><span data-stu-id="ed15a-667">label</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-668">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-668">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="ed15a-669">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ed15a-669">Method new</span></span>
-
-<span data-ttu-id="ed15a-670">VSS クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-670">Initializes an instance of the VSS class.</span></span>
-
-    public void new()
-
-## <a name="class-vssitem"></a><span data-ttu-id="ed15a-671">クラス VSSItem</span><span class="sxs-lookup"><span data-stu-id="ed15a-671">Class VSSItem</span></span>
-    class VSSItem extends Object
-
-### <a name="remarks"></a><span data-ttu-id="ed15a-672">備考</span><span class="sxs-lookup"><span data-stu-id="ed15a-672">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="ed15a-673">例</span><span class="sxs-lookup"><span data-stu-id="ed15a-673">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="ed15a-674">メソッド</span><span class="sxs-lookup"><span data-stu-id="ed15a-674">Methods</span></span>
-
-| <span data-ttu-id="ed15a-675">方法</span><span class="sxs-lookup"><span data-stu-id="ed15a-675">Method</span></span>                                                                               | <span data-ttu-id="ed15a-676">説明</span><span class="sxs-lookup"><span data-stu-id="ed15a-676">Description</span></span>                                      |
-|--------------------------------------------------------------------------------------|--------------------------------------------------|
-| <span data-ttu-id="ed15a-677">public boolean add(\[boolean keepCheckedout\], \[str comment\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-677">public boolean add(\[boolean keepCheckedout\], \[str comment\])</span></span>                      |                                                  |
-| <span data-ttu-id="ed15a-678">public boolean checkin(\[str comment\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-678">public boolean checkin(\[str comment\])</span></span>                                              |                                                  |
-| <span data-ttu-id="ed15a-679">public boolean checkout(\[boolean allowMultipleCheckout\], \[boolean replaceLocal\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-679">public boolean checkout(\[boolean allowMultipleCheckout\], \[boolean replaceLocal\])</span></span> |                                                  |
-| <span data-ttu-id="ed15a-680">public boolean delete()</span><span class="sxs-lookup"><span data-stu-id="ed15a-680">public boolean delete()</span></span>                                                              |                                                  |
-| <span data-ttu-id="ed15a-681">public boolean destroy()</span><span class="sxs-lookup"><span data-stu-id="ed15a-681">public boolean destroy()</span></span>                                                             |                                                  |
-| <span data-ttu-id="ed15a-682">public Map get(\[boolean force\], \[int version\], \[str label\], \[str localFile\])</span><span class="sxs-lookup"><span data-stu-id="ed15a-682">public Map get(\[boolean force\], \[int version\], \[str label\], \[str localFile\])</span></span> |                                                  |
-| <span data-ttu-id="ed15a-683">public str getActionText()</span><span class="sxs-lookup"><span data-stu-id="ed15a-683">public str getActionText()</span></span>                                                           |                                                  |
-| <span data-ttu-id="ed15a-684">public container getCheckedOutTo()</span><span class="sxs-lookup"><span data-stu-id="ed15a-684">public container getCheckedOutTo()</span></span>                                                   |                                                  |
-| <span data-ttu-id="ed15a-685">public int getCheckoutVersion()</span><span class="sxs-lookup"><span data-stu-id="ed15a-685">public int getCheckoutVersion()</span></span>                                                      |                                                  |
-| <span data-ttu-id="ed15a-686">public container getHistory()</span><span class="sxs-lookup"><span data-stu-id="ed15a-686">public container getHistory()</span></span>                                                        |                                                  |
-| <span data-ttu-id="ed15a-687">public ComInterface getIUnknown()</span><span class="sxs-lookup"><span data-stu-id="ed15a-687">public ComInterface getIUnknown()</span></span>                                                    |                                                  |
-| <span data-ttu-id="ed15a-688">public int getVersionNo()</span><span class="sxs-lookup"><span data-stu-id="ed15a-688">public int getVersionNo()</span></span>                                                            |                                                  |
-| <span data-ttu-id="ed15a-689">public str getVSSPath()</span><span class="sxs-lookup"><span data-stu-id="ed15a-689">public str getVSSPath()</span></span>                                                              |                                                  |
-| <span data-ttu-id="ed15a-690">public boolean isCheckedOut()</span><span class="sxs-lookup"><span data-stu-id="ed15a-690">public boolean isCheckedOut()</span></span>                                                        |                                                  |
-| <span data-ttu-id="ed15a-691">public boolean isRenamed()</span><span class="sxs-lookup"><span data-stu-id="ed15a-691">public boolean isRenamed()</span></span>                                                           |                                                  |
-| <span data-ttu-id="ed15a-692">public str name(str newName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-692">public str name(str newName)</span></span>                                                         |                                                  |
-| <span data-ttu-id="ed15a-693">public boolean rename(str newName)</span><span class="sxs-lookup"><span data-stu-id="ed15a-693">public boolean rename(str newName)</span></span>                                                   |                                                  |
-| <span data-ttu-id="ed15a-694">public boolean undoCheckout()</span><span class="sxs-lookup"><span data-stu-id="ed15a-694">public boolean undoCheckout()</span></span>                                                        |                                                  |
-| <span data-ttu-id="ed15a-695">private void new()</span><span class="sxs-lookup"><span data-stu-id="ed15a-695">private void new()</span></span>                                                                   | <span data-ttu-id="ed15a-696">VSSItem クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-696">Initializes a new instance of the VSSItem class.</span></span> |
-
-### <a name="method-add"></a><span data-ttu-id="ed15a-697">メソッド add</span><span class="sxs-lookup"><span data-stu-id="ed15a-697">Method add</span></span>
-
-    public boolean add([boolean keepCheckedout], [str comment])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-698">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-698">Parameters</span></span>
-
-<span data-ttu-id="ed15a-699">keepCheckedout</span><span class="sxs-lookup"><span data-stu-id="ed15a-699">keepCheckedout</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-700">comment</span><span class="sxs-lookup"><span data-stu-id="ed15a-700">comment</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-701">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-701">Return Value</span></span>
-
-### <a name="method-checkin"></a><span data-ttu-id="ed15a-702">メソッド checkin</span><span class="sxs-lookup"><span data-stu-id="ed15a-702">Method checkin</span></span>
-
-    public boolean checkin([str comment])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-703">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-703">Parameters</span></span>
-
-<span data-ttu-id="ed15a-704">comment</span><span class="sxs-lookup"><span data-stu-id="ed15a-704">comment</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-705">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-705">Return Value</span></span>
-
-### <a name="method-checkout"></a><span data-ttu-id="ed15a-706">メソッド checkout</span><span class="sxs-lookup"><span data-stu-id="ed15a-706">Method checkout</span></span>
-
-    public boolean checkout([boolean allowMultipleCheckout], [boolean replaceLocal])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-707">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-707">Parameters</span></span>
-
-<span data-ttu-id="ed15a-708">allowMultipleCheckout</span><span class="sxs-lookup"><span data-stu-id="ed15a-708">allowMultipleCheckout</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-709">replaceLocal</span><span class="sxs-lookup"><span data-stu-id="ed15a-709">replaceLocal</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-710">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-710">Return Value</span></span>
-
-### <a name="method-delete"></a><span data-ttu-id="ed15a-711">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="ed15a-711">Method delete</span></span>
-
-    public boolean delete()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-712">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-712">Return Value</span></span>
-
-### <a name="method-destroy"></a><span data-ttu-id="ed15a-713">メソッド destroy</span><span class="sxs-lookup"><span data-stu-id="ed15a-713">Method destroy</span></span>
-
-    public boolean destroy()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-714">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-714">Return Value</span></span>
-
-### <a name="method-get"></a><span data-ttu-id="ed15a-715">メソッド get</span><span class="sxs-lookup"><span data-stu-id="ed15a-715">Method get</span></span>
-
-    public Map get([boolean force], [int version], [str label], [str localFile])
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-716">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-716">Parameters</span></span>
-
-<span data-ttu-id="ed15a-717">force</span><span class="sxs-lookup"><span data-stu-id="ed15a-717">force</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-718">のバージョン</span><span class="sxs-lookup"><span data-stu-id="ed15a-718">version</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-719">ラベル</span><span class="sxs-lookup"><span data-stu-id="ed15a-719">label</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="ed15a-720">localFile</span><span class="sxs-lookup"><span data-stu-id="ed15a-720">localFile</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-721">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-721">Return Value</span></span>
-
-### <a name="method-getactiontext"></a><span data-ttu-id="ed15a-722">メソッド getActionText</span><span class="sxs-lookup"><span data-stu-id="ed15a-722">Method getActionText</span></span>
-
-    public str getActionText()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-723">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-723">Return Value</span></span>
-
-### <a name="method-getcheckedoutto"></a><span data-ttu-id="ed15a-724">メソッド getCheckedOutTo</span><span class="sxs-lookup"><span data-stu-id="ed15a-724">Method getCheckedOutTo</span></span>
-
-    public container getCheckedOutTo()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-725">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-725">Return Value</span></span>
-
-### <a name="method-getcheckoutversion"></a><span data-ttu-id="ed15a-726">メソッド getCheckoutVersion</span><span class="sxs-lookup"><span data-stu-id="ed15a-726">Method getCheckoutVersion</span></span>
-
-    public int getCheckoutVersion()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-727">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-727">Return Value</span></span>
-
-### <a name="method-gethistory"></a><span data-ttu-id="ed15a-728">メソッド getHistory</span><span class="sxs-lookup"><span data-stu-id="ed15a-728">Method getHistory</span></span>
-
-    public container getHistory()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-729">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-729">Return Value</span></span>
-
-### <a name="method-getiunknown"></a><span data-ttu-id="ed15a-730">メソッド getIUnknown</span><span class="sxs-lookup"><span data-stu-id="ed15a-730">Method getIUnknown</span></span>
-
-    public ComInterface getIUnknown()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-731">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-731">Return Value</span></span>
-
-### <a name="method-getversionno"></a><span data-ttu-id="ed15a-732">メソッド getVersionNo</span><span class="sxs-lookup"><span data-stu-id="ed15a-732">Method getVersionNo</span></span>
-
-    public int getVersionNo()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-733">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-733">Return Value</span></span>
-
-### <a name="method-getvsspath"></a><span data-ttu-id="ed15a-734">メソッド getVSSPath</span><span class="sxs-lookup"><span data-stu-id="ed15a-734">Method getVSSPath</span></span>
-
-    public str getVSSPath()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-735">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-735">Return Value</span></span>
-
-### <a name="method-ischeckedout"></a><span data-ttu-id="ed15a-736">メソッド isCheckedOut</span><span class="sxs-lookup"><span data-stu-id="ed15a-736">Method isCheckedOut</span></span>
-
-    public boolean isCheckedOut()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-737">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-737">Return Value</span></span>
-
-### <a name="method-isrenamed"></a><span data-ttu-id="ed15a-738">メソッド isRenamed</span><span class="sxs-lookup"><span data-stu-id="ed15a-738">Method isRenamed</span></span>
-
-    public boolean isRenamed()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-739">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-739">Return Value</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="ed15a-740">メソッド名</span><span class="sxs-lookup"><span data-stu-id="ed15a-740">Method name</span></span>
-
-    public str name(str newName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-741">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-741">Parameters</span></span>
-
-<span data-ttu-id="ed15a-742">newName</span><span class="sxs-lookup"><span data-stu-id="ed15a-742">newName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-743">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-743">Return Value</span></span>
-
-### <a name="method-rename"></a><span data-ttu-id="ed15a-744">メソッド rename</span><span class="sxs-lookup"><span data-stu-id="ed15a-744">Method rename</span></span>
-
-    public boolean rename(str newName)
-
-#### <a name="parameters"></a><span data-ttu-id="ed15a-745">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed15a-745">Parameters</span></span>
-
-<span data-ttu-id="ed15a-746">newName</span><span class="sxs-lookup"><span data-stu-id="ed15a-746">newName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-747">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-747">Return Value</span></span>
-
-### <a name="method-undocheckout"></a><span data-ttu-id="ed15a-748">メソッド undoCheckout</span><span class="sxs-lookup"><span data-stu-id="ed15a-748">Method undoCheckout</span></span>
-
-    public boolean undoCheckout()
-
-#### <a name="return-value"></a><span data-ttu-id="ed15a-749">戻り値</span><span class="sxs-lookup"><span data-stu-id="ed15a-749">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="ed15a-750">メソッド new</span><span class="sxs-lookup"><span data-stu-id="ed15a-750">Method new</span></span>
-
-<span data-ttu-id="ed15a-751">VSSItem クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed15a-751">Initializes a new instance of the VSSItem class.</span></span>
-
-    private void new()
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="v-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>v-classes.f0c446.f0bd05f773b43f8f9ca1a0a364b9810bad4feb5a.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>f0bd05f773b43f8f9ca1a0a364b9810bad4feb5a</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\v-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>V classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>System API classes that start with the letter V.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 V で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>V classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>System API classes that start with the letter V.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 V で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Class ValidateEventArgs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ValidateEventArgs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>public boolean parmValidateResult(<ph id="ph1">\[</ph>boolean result<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean parmValidateResult(<ph id="ph1">\[</ph>boolean result<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>public void new(boolean result)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(boolean result)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Method parmValidateResult</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド parmValidateResult</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>result</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">件の結果</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>result</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">件の結果</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Class ValidateFieldEventArgs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ValidateFieldEventArgs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>public int parmFieldId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int parmFieldId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>public void new(int fieldId, boolean result)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(int fieldId, boolean result)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Method parmFieldId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド parmFieldId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>fieldId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>result</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">件の結果</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Class ValidateFieldValueEventArgs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ValidateFieldValueEventArgs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>public str parmFieldName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str parmFieldName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>public int parmArrayIndex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int parmArrayIndex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>public void new(str fieldName, int arrayIndex, boolean result)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(str fieldName, int arrayIndex, boolean result)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Method parmFieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド parmFieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Method parmArrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド parmArrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>result</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">件の結果</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Class VirtualChannelManager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VirtualChannelManager</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Initializes a new instance of the VirtualChannelManager class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VirtualChannelManager クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>public void sendData(int listenerId, str data)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void sendData(int listenerId, str data)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Initializes a new instance of the VirtualChannelManager class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VirtualChannelManager クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Method sendData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sendData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>listenerId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">listenerId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Class VSItemNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSItemNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>The VSItemNode class is a base class for Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSItemNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードの基本クラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>public str AOTgetSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str AOTgetSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>public BinData getFileData()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public BinData getFileData()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>::public static void notifyFileDeleted(TreeNode node, str aotPath)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileDeleted(TreeNode node, str aotPath)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Notifies listeners that a file has been deleted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルが削除されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>::public static void notifyFileUpdated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileUpdated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Notifies listeners that a file has been updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルが更新されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>public void setFileData(BinData data)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFileData(BinData data)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>public void getFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void getFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>::public static void notifyFileCreated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileCreated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Notifies listeners that a new file has been created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいファイルが作成されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>::public static void notifyFileRenamed(TreeNode node, str oldName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileRenamed(TreeNode node, str oldName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Notifies listeners that a file has been renamed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの名前が変更されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>public void setFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Method AOTgetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTgetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>The string that contains the source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>This function is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数はソース コードを持つノードによってオーバーライドされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Method getFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Method notifyFileDeleted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileDeleted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Notifies listeners that a file has been deleted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルが削除されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>The AOT path of the file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの AOT パス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>aotPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aotPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>The AOT path of the file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの AOT パス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Method notifyFileUpdated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileUpdated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Notifies listeners that a file has been updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルが更新されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>The node that has been updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新ノード。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Method setFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Method AOTsetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTsetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>isStatic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isStatic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>This method is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、ソース コードを持つノードによって上書きされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Method getFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Method notifyFileCreated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileCreated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Notifies listeners that a new file has been created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいファイルが作成されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>The node that has been created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成されたノード。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Method notifyFileRenamed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileRenamed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Notifies listeners that a file has been renamed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの名前が変更されたことをリスナーに通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>The old name of the file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの古い名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>oldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">oldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>The old name of the file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの古い名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Method setFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Class VSProjectFileNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSProjectFileNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>The VSProjectFileNode class represents files in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectFileNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードでファイルを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>public str AOTgetSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str AOTgetSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>public BinData getFileData()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public BinData getFileData()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>::public static void notifyFileCreated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileCreated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>public void setFileData(BinData data)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFileData(BinData data)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>public void getFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void getFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>::public static void notifyFileDeleted(TreeNode node, str aotPath)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileDeleted(TreeNode node, str aotPath)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>::public static void notifyFileUpdated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileUpdated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>public void setFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>::public static void notifyFileRenamed(TreeNode node, str oldName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileRenamed(TreeNode node, str oldName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Method AOTgetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTgetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>The string that contains source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>This function is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数はソース コードを持つノードによってオーバーライドされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Method getFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Method notifyFileCreated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileCreated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Method setFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Method getFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Method notifyFileDeleted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileDeleted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>aotPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aotPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Method notifyFileUpdated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileUpdated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Method setFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Method notifyFileRenamed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileRenamed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>oldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">oldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Method AOTsetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTsetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>isStatic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isStatic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>This method is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、ソース コードを持つノードによって上書きされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Class VSProjectFolderNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSProjectFolderNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>The VSProjectFolderNode class represents folders in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectFolderNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードでフォルダーを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>public str AOTgetSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str AOTgetSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>public VSProjectFileNode createFileNode(str name)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectFileNode createFileNode(str name)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Creates a new instance of the VSProjectFileNode class as a child of this VSProjectFolderNode instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この VSProjectFolderNode インスタンスの子として、VSProjectFileNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>public VSProjectFolderNode createFolderNode(str name)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectFolderNode createFolderNode(str name)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Creates a new instance of the VSProjectFolderNode class as a child of this VSProjectFolderNode instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この VSProjectFolderNode インスタンスの子として、VSProjectFolderNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>public VSProjectLinkNode createLinkNode(str name, str aotPath, <ph id="ph1">\[</ph>boolean createLinkedNode<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectLinkNode createLinkNode(str name, str aotPath, <ph id="ph1">\[</ph>boolean createLinkedNode<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Creates a new instance of the VSProjectLinkNode class as a child of this VSProjectFolderNode instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この VSProjectFolderNode インスタンスの子として、VSProjectLinkNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>public BinData getFileData()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public BinData getFileData()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>::public static void notifyFileUpdated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileUpdated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>::public static void notifyFileDeleted(TreeNode node, str aotPath)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileDeleted(TreeNode node, str aotPath)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>public void setFileData(BinData data)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFileData(BinData data)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>public void getFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void getFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>::public static void notifyFileCreated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileCreated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>::public static void notifyFileRenamed(TreeNode node, str oldName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileRenamed(TreeNode node, str oldName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>public void setFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Method AOTgetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTgetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>The string that contains source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>This function is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数はソース コードを持つノードによってオーバーライドされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Method createFileNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createFileNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Creates a new instance of the VSProjectFileNode class as a child of this VSProjectFolderNode instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この VSProjectFolderNode インスタンスの子として、VSProjectFileNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>The name of the file node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル ノードの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>The new instance of the VSProjectFileNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectFileNode クラスの新しいインスタンス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Method createFolderNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createFolderNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Creates a new instance of the VSProjectFolderNode class as a child of this VSProjectFolderNode instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この VSProjectFolderNode インスタンスの子として、VSProjectFolderNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>The name of the folder node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォルダー ノードの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>The new instance of the VSProjectFolderNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectFolderNode クラスの新しいインスタンス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Method createLinkNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createLinkNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Creates a new instance of the VSProjectLinkNode class as a child of this VSProjectFolderNode instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この VSProjectFolderNode インスタンスの子として、VSProjectLinkNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>aotPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aotPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>createLinkedNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">createLinkedNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>The new instance of the VSProjectLinkNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectLinkNode クラスの新しいインスタンス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Method getFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Method notifyFileUpdated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileUpdated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Method notifyFileDeleted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileDeleted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>aotPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aotPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Method setFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Method AOTsetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTsetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>isStatic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isStatic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>This method is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、ソース コードを持つノードによって上書きされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Method getFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Method notifyFileCreated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileCreated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Method notifyFileRenamed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileRenamed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>oldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">oldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Method setFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Class VSProjectLinkNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSProjectLinkNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>The VSProjectLinkNode class represents links to other Finance and Operations Application Object Tree (AOT) nodes in the Microsoft Visual Studio project nodes in the AOT.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectLinkNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードにある別の Finance and Operations AOT へのリンクを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>public str AOTgetSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str AOTgetSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>public str getAOTPath()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getAOTPath()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>public BinData getFileData()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public BinData getFileData()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>::public static void notifyFileCreated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileCreated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>public void setFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>public void setFileData(BinData data)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setFileData(BinData data)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>public void getFile(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void getFile(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>::public static void notifyFileUpdated(TreeNode node)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileUpdated(TreeNode node)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void AOTsetSource(str source, <ph id="ph1">\[</ph>boolean isStatic<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>::public static void notifyFileRenamed(TreeNode node, str oldName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileRenamed(TreeNode node, str oldName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>::public static void notifyFileDeleted(TreeNode node, str aotPath)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void notifyFileDeleted(TreeNode node, str aotPath)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>Method AOTgetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTgetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Returns the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>The string that contains source code, if there is any; otherwise, nullNothingnullptrunita null reference (Nothing in Visual Basic).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null 参照 (Visual Basic にはなし)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>This function is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数はソース コードを持つノードによってオーバーライドされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Method getAOTPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getAOTPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Method getFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Method notifyFileCreated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileCreated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Method setFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Method setFileData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setFileData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>Method getFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Method notifyFileUpdated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileUpdated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Method AOTsetSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTsetSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Sets the source code of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードのソース コードを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>isStatic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isStatic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>The value that specifies whether the method is static; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが静的かどうかを指定する値 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>This method is overridden by nodes that have source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、ソース コードを持つノードによって上書きされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Method notifyFileRenamed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileRenamed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>oldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">oldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Method notifyFileDeleted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyFileDeleted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>node</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">node</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>aotPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aotPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>Class VSProjectNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSProjectNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>The VSProjectNode class represents projects in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードでプロジェクトを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>public container extract(<ph id="ph1">\[</ph>str path<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean extractReferenced<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container extract(<ph id="ph1">\[</ph>str path<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean extractReferenced<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Extracts the whole project to disk.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ディスクにプロジェクト全体を展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>public VSProjectFolderNode getContentNode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectFolderNode getContentNode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>Gets the content VSProjectFolderNode object that contains the Visual Studio project files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>public DeployTo getDeployTo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public DeployTo getDeployTo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Gets value of the deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティの値を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>public VSProjectFolderNode getOutputNode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectFolderNode getOutputNode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Gets the output VSProjectFolderNode object that contains the Visual Studio project output files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>public VSProjectFileNode getPrimaryOutputNode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectFileNode getPrimaryOutputNode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Gets the VSProjectFileNode object that represent the primary output of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>public str getPrimaryTargetFileName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getPrimaryTargetFileName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>Gets the primary target file name of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>public Map getProxies()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Map getProxies()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>Gets the proxies in this project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロジェクトでのプロキシを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>public container getProxiesContainer()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getProxiesContainer()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>Gets the proxies in this project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロジェクトでのプロキシを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>public str getReferencedProjectsInAOT()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getReferencedProjectsInAOT()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Gets the AOT paths of the projects that are referenced by this Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>public str referencedProjects(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str referencedProjects(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>public void setPrimaryTargetFileName(str targetFileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setPrimaryTargetFileName(str targetFileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Sets the primary target file name of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>public void extractToSpecificDir(str directory)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void extractToSpecificDir(str directory)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>public void setDeployTo(DeployTo deployTo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setDeployTo(DeployTo deployTo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Sets the value of the deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティの値を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>Method extract</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド extract</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Extracts the whole project to disk.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ディスクにプロジェクト全体を展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>path</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">path</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>A Boolean value that determines whether to extract the referenced projects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">参照されるプロジェクトを抽出するかどうかを決定するブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>extractReferenced</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">extractReferenced</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>A Boolean value that determines whether to extract the referenced projects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">参照されるプロジェクトを抽出するかどうかを決定するブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>A list of paths where the project was extracted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトの展開先のパスの一覧。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Method getContentNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getContentNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>Gets the content VSProjectFolderNode object that contains the Visual Studio project files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>The content VSProjectFolderNode object that contains the Visual Studio project files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクト ファイルを含むコンテンツの VSProjectFolderNode オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>Method getDeployTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getDeployTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Gets value of the deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティの値を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>The deployTo property value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティ値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>Method getOutputNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getOutputNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>Gets the output VSProjectFolderNode object that contains the Visual Studio project output files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>The output VSProjectFolderNode object that contains the Visual Studio project output files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクト出力ファイルを含む、出力 VSProjectFolderNode オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Method getPrimaryOutputNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getPrimaryOutputNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>Gets the VSProjectFileNode object that represent the primary output of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>A VSProjectFileNode object that represent the primary output of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトの基本出力を表す VSProjectFileNode オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Method getPrimaryTargetFileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getPrimaryTargetFileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Gets the primary target file name of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>The primary target file name of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトのプライマリ ターゲット ファイル名。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Method getProxies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getProxies</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>Gets the proxies in this project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロジェクトでのプロキシを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>A map that contains the Class, Enum, and Table keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス、列挙、およびテーブルのキーを含むマップ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>Each key contains a list of proxies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各キーには、プロキシのリストが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>Method getProxiesContainer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getProxiesContainer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>Gets the proxies in this project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロジェクトでのプロキシを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>A container that holds the packed representation of a map that contains the Class, Enum, and Table keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マップの梱包済み表現を保持するコンテナーには、Class、Enum、Table のキーが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>Each key contains a list of proxies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各キーには、プロキシのリストが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>Method getReferencedProjectsInAOT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getReferencedProjectsInAOT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>Gets the AOT paths of the projects that are referenced by this Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>A list of AOT paths of the projects that are referenced by this Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この Visual Studio プロジェクトで参照されているプロジェクトの AOT パスの一覧。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>Method referencedProjects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド referencedProjects</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>Method setPrimaryTargetFileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setPrimaryTargetFileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>Sets the primary target file name of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトのプライマリ ターゲット ファイル名を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>targetFileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">targetFileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>The primary target file name of the Visual Studio project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio プロジェクトのプライマリ ターゲット ファイル名。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>Method extractToSpecificDir</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド extractToSpecificDir</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>directory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">directory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>Method setDeployTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setDeployTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Sets the value of the deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティの値を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>deployTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>The deployTo property value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティ値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Class VSProjectsNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSProjectsNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>The VSProjectNode class is the root of the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNode クラスは、Finance and Operations アプリケーション オブジェクト ツリー (AOT) 内の Microsoft Visual Studio プロジェクト ノードのルートです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>public TreeNode AOTfindChild(str name, <ph id="ph1">\[</ph>int nodeType<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TreeNode AOTfindChild(str name, <ph id="ph1">\[</ph>int nodeType<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Finds the specified child node of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードの指定した子ノードを検索します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>public VSProjectNode createProjectNode(str name, str projectTypesString, <ph id="ph1">\[</ph>boolean virtualNode<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectNode createProjectNode(str name, str projectTypesString, <ph id="ph1">\[</ph>boolean virtualNode<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>Creates a new instance of the VSProjectNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>public container getProjectsDeployingTo(DeployTo deployTo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getProjectsDeployingTo(DeployTo deployTo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>Gets a list of VSProjectNode objects that have the specified deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定した deployToプ ロパティを持つ VSProjectNode オブジェクトの一覧を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>public container getProjectsModifiedAfter(DateTime timestamp)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getProjectsModifiedAfter(DateTime timestamp)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Gets a list of VSProjectNode objects that were modified after the specified date and time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された日時の後に変更された VSProjectNode オブジェクトの一覧を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>public VSProjectTypeNode getTypeNodeFromGuid(str projectTypesString)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSProjectTypeNode getTypeNodeFromGuid(str projectTypesString)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>public Object getVSProjectNodeObservable()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Object getVSProjectNodeObservable()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>Gets the VSProjectNodeObservable object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNodeObservable オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>public void AOTrefresh()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void AOTrefresh()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>Updates the node with the latest changes to the .aod file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.aod ファイルを最新版に変更することによりノードを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>Method AOTfindChild</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTfindChild</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Finds the specified child node of this node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このノードの指定した子ノードを検索します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>nodeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">nodeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>The specified tree node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したツリー ノード。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>Method createProjectNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createProjectNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>Creates a new instance of the VSProjectNode class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNode クラスの新しいインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>A Boolean value that indicates whether the node is created only in memory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ノードがメモリ内でのみ作成されるかどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>In this case, the node will not be persisted in the Finance and Operations Store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、ノードは Finance and Operations ストアで保持されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>projectTypesString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">projectTypesString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>A Boolean value that indicates whether the node is created only in memory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ノードがメモリ内でのみ作成されるかどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>In this case, the node will not be persisted in the Finance and Operations Store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、ノードは Finance and Operations ストアで保持されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>virtualNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">virtualNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>A Boolean value that indicates whether the node is created only in memory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ノードがメモリ内でのみ作成されるかどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>In this case, the node will not be persisted in the Finance and Operations Store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、ノードは Finance and Operations ストアで保持されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>The VSProjectNode object that is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成された VSProjectNode オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Method getProjectsDeployingTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getProjectsDeployingTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>Gets a list of VSProjectNode objects that have the specified deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定した deployToプ ロパティを持つ VSProjectNode オブジェクトの一覧を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>deployTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>The value of the deployTo property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">deployTo プロパティの値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>A list of VSProjectNode objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNode オブジェクトの一覧。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>Method getProjectsModifiedAfter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getProjectsModifiedAfter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>Gets a list of VSProjectNode objects that were modified after the specified date and time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された日時の後に変更された VSProjectNode オブジェクトの一覧を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>timestamp</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">timestamp</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>The date and time as a DB<ph id="ph1">\_</ph>DATETIME<ph id="ph2">\_</ph>TYPE value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DB<ph id="ph1">\_</ph>DATETIME<ph id="ph2">\_</ph>TYPE 値としての日時。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>A list of VSProjectNode objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNode オブジェクトの一覧。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>Method getTypeNodeFromGuid</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getTypeNodeFromGuid</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>projectTypesString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">projectTypesString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>Method getVSProjectNodeObservable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getVSProjectNodeObservable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>Gets the VSProjectNodeObservable object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNodeObservable オブジェクトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>The VSProjectNodeObservable object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectNodeObservable オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>Observers can register with this and get notified of CRUD operations on Visual Studio projects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブザーバーはこれで登録でき、Visual Studio プロジェクトで CRUD 操作の通知を受け取ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>Method AOTrefresh</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド AOTrefresh</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>Updates the node with the latest changes to the .aod file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.aod ファイルを最新版に変更することによりノードを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>Class VSProjectTypeNode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSProjectTypeNode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>The VSProjectTypeNode class represents project types in the Visual Studio Project nodes in the AOT.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSProjectTypeNode クラスは、AOT 内の Visual Studio プロジェクト ノードでプロジェクトの種類を表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>Class VSS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>public boolean connect()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean connect()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>public boolean connected()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean connected()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>public boolean disconnect()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean disconnect()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>public container getCheckedoutFiles()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getCheckedoutFiles()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>public container getConnectionInfo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getConnectionInfo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>public VSSItem getVSSItem(str vssItemPath, str localFilePath, <ph id="ph1">\[</ph>boolean completePath<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int version<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSSItem getVSSItem(str vssItemPath, str localFilePath, <ph id="ph1">\[</ph>boolean completePath<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int version<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>public boolean init(str vssIni, str vssPrjRoot, str vssWorkingFolder, str vssUser, str vssPwd)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean init(str vssIni, str vssPrjRoot, str vssWorkingFolder, str vssUser, str vssPwd)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>public VSSItem newSubProject(str name, str localPath)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public VSSItem newSubProject(str name, str localPath)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>public Map synchronizeProjects(<ph id="ph1">\[</ph>Set projects<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean force<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean delLocalFiles<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str label<ph id="ph8">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Map synchronizeProjects(<ph id="ph1">\[</ph>Set projects<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean force<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean delLocalFiles<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str label<ph id="ph8">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>Initializes an instance of the VSS class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSS クラスのインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>Method connect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド connect</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>Method connected</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド connected</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>Method disconnect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド disconnect</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>Method getCheckedoutFiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getCheckedoutFiles</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>Method getConnectionInfo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getConnectionInfo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>Method getVSSItem</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getVSSItem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>vssItemPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vssItemPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>localFilePath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">localFilePath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>completePath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">completePath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>version</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">のバージョン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>Method init</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド init</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>vssIni</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vssIni</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>vssPrjRoot</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vssPrjRoot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source>vssWorkingFolder</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vssWorkingFolder</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>vssUser</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vssUser</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>vssPwd</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vssPwd</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>Method newSubProject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド newSubProject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>localPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">localPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>Method synchronizeProjects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド synchronizeProjects</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>projects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>force</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">force</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>delLocalFiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">delLocalFiles</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>Initializes an instance of the VSS class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSS クラスのインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>Class VSSItem</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VSSItem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>public boolean add(<ph id="ph1">\[</ph>boolean keepCheckedout<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str comment<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean add(<ph id="ph1">\[</ph>boolean keepCheckedout<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str comment<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>public boolean checkin(<ph id="ph1">\[</ph>str comment<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean checkin(<ph id="ph1">\[</ph>str comment<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>public boolean checkout(<ph id="ph1">\[</ph>boolean allowMultipleCheckout<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean replaceLocal<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean checkout(<ph id="ph1">\[</ph>boolean allowMultipleCheckout<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean replaceLocal<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>public boolean delete()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean delete()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>public boolean destroy()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean destroy()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>public Map get(<ph id="ph1">\[</ph>boolean force<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int version<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>str label<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str localFile<ph id="ph8">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Map get(<ph id="ph1">\[</ph>boolean force<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int version<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>str label<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str localFile<ph id="ph8">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>public str getActionText()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getActionText()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>public container getCheckedOutTo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getCheckedOutTo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>public int getCheckoutVersion()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getCheckoutVersion()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>public container getHistory()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getHistory()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>public ComInterface getIUnknown()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ComInterface getIUnknown()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>public int getVersionNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getVersionNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>public str getVSSPath()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getVSSPath()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>public boolean isCheckedOut()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isCheckedOut()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>public boolean isRenamed()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isRenamed()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>public str name(str newName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(str newName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>public boolean rename(str newName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean rename(str newName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>public boolean undoCheckout()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean undoCheckout()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>private void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">private void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>Initializes a new instance of the VSSItem class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSSItem クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>Method add</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド add</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>keepCheckedout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">keepCheckedout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>comment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">comment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>Method checkin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>comment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">comment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Method checkout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>allowMultipleCheckout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">allowMultipleCheckout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>replaceLocal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">replaceLocal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>Method delete</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド delete</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>Method destroy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド destroy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>Method get</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド get</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>force</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">force</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>version</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">のバージョン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>localFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">localFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>Method getActionText</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getActionText</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>Method getCheckedOutTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getCheckedOutTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>Method getCheckoutVersion</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getCheckoutVersion</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>Method getHistory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getHistory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>Method getIUnknown</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getIUnknown</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>Method getVersionNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getVersionNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>Method getVSSPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getVSSPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>Method isCheckedOut</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isCheckedOut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>Method isRenamed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isRenamed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>newName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">newName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source>Method rename</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rename</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>newName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">newName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>Method undoCheckout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド undoCheckout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>Initializes a new instance of the VSSItem class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VSSItem クラスの新しいインスタンスを初期化します。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

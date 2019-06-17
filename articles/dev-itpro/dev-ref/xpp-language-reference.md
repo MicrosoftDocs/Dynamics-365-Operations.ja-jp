@@ -1,57 +1,135 @@
----
-title: X++ 言語リファレンス
-description: このトピックでは、X++ のプログラミング ガイドを提供します。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 72181
-ms.assetid: fe5d3cdd-8b3d-4967-98a2-dadada18a421
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eaa2cd3f79363de75f4f9f9af694093b73acd7c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536972"
----
-# <a name="x-language-reference"></a><span data-ttu-id="1d761-103">X++ 言語リファレンス</span><span class="sxs-lookup"><span data-stu-id="1d761-103">X++ language reference</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="1d761-104">X++ は、Microsoft Dynamics 365 for Finance and Operations がエンタープライズ リソース プランニング (ERP) プログラミングおよびデータベース アプリケーションで使用する、オブジェクト指向、アプリケーション対応、およびデータ対応のプログラミング言語です。</span><span class="sxs-lookup"><span data-stu-id="1d761-104">X++ is an object-oriented, application-aware, and data-aware programming language that Microsoft Dynamics 365 for Finance and Operations uses in enterprise resource planning (ERP) programming and in database applications.</span></span> <span data-ttu-id="1d761-105">次の表で強調表示された幅広いシステム プログラミング領域のシステム クラスを提供します。</span><span class="sxs-lookup"><span data-stu-id="1d761-105">It provides system classes for a broad range of system programming areas, highlighted in the following table.</span></span>
-
-| <span data-ttu-id="1d761-106">**X++ 言語属性**</span><span class="sxs-lookup"><span data-stu-id="1d761-106">**X++ language attributes**</span></span> | <span data-ttu-id="1d761-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="1d761-107">**Description**</span></span> |
-|-----|-----|
-| <span data-ttu-id="1d761-108">**クラス**</span><span class="sxs-lookup"><span data-stu-id="1d761-108">**Classes**</span></span>                 | <span data-ttu-id="1d761-109">システム クラスに加えて、Dynamics 365 for Finance and Operations はさまざまなタイプの業務プロセスを管理するためのアプリケーション クラスも提供します。</span><span class="sxs-lookup"><span data-stu-id="1d761-109">In addition to system classes, Dynamics 365 for Finance and Operations also provides application classes for managing many types of business processes.</span></span> <span data-ttu-id="1d761-110">クラスのリフレクションがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="1d761-110">Reflection on classes is supported.</span></span>            |
-| <span data-ttu-id="1d761-111">**テーブル**</span><span class="sxs-lookup"><span data-stu-id="1d761-111">**Tables**</span></span>                  | <span data-ttu-id="1d761-112">X++ のプログラマーは、Dynamics 365 for Finance and Operations リレーショナル テーブルにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="1d761-112">X++ programmers can access the relational tables in Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="1d761-113">X++ には標準 SQL の大部分のキーワードと一致するキーワードが含まれます。</span><span class="sxs-lookup"><span data-stu-id="1d761-113">X++ includes keywords that match most of the keywords in standard SQL.</span></span> <span data-ttu-id="1d761-114">テーブルのリフレクションがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="1d761-114">Reflection on tables is supported.</span></span> |
-| <span data-ttu-id="1d761-115">**ユーザー インターフェイス**</span><span class="sxs-lookup"><span data-stu-id="1d761-115">**User interface**</span></span>          | <span data-ttu-id="1d761-116">フォームやレポートなどのユーザー インターフェイス項目の操作。</span><span class="sxs-lookup"><span data-stu-id="1d761-116">Manipulation of user interface items, such as forms and reports.</span></span>|
-| <span data-ttu-id="1d761-117">**推奨チェック**</span><span class="sxs-lookup"><span data-stu-id="1d761-117">**Best practice checks**</span></span>    | <span data-ttu-id="1d761-118">X++ コードはコンパイル中に構文エラーがチェックされます。</span><span class="sxs-lookup"><span data-stu-id="1d761-118">X++ code is checked for syntax errors during compile time.</span></span> <span data-ttu-id="1d761-119">コンパイル プロセスでは、ベスト プラクティス チェックも実行されます。</span><span class="sxs-lookup"><span data-stu-id="1d761-119">The compile process also performs best practice checks.</span></span> <span data-ttu-id="1d761-120">ベスト プラクティスの違反によりコンパイラのメッセージを生成できます。</span><span class="sxs-lookup"><span data-stu-id="1d761-120">Violations of best practices can generate compiler messages.</span></span>|
-| <span data-ttu-id="1d761-121">**ガベージ コレクション**</span><span class="sxs-lookup"><span data-stu-id="1d761-121">**Garbage collection**</span></span>      | <span data-ttu-id="1d761-122">X++ ランタイム実行エンジンには、メモリ領域を再利用できるように、参照されなくなったオブジェクトを破棄する自動メカニズムがあります。</span><span class="sxs-lookup"><span data-stu-id="1d761-122">The X++ runtime execution engines have automatic mechanisms to discard objects that are no longer referenced, so that memory space can be reused.</span></span> |
-| <span data-ttu-id="1d761-123">**相互運用性**</span><span class="sxs-lookup"><span data-stu-id="1d761-123">**Interoperability**</span></span>        | <span data-ttu-id="1d761-124">Dynamics 365 for Finance and Operations は、X++ および C\# (または他の .NET Framework 言語) で書かれたクラス間の相互運用性をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1d761-124">Dynamics 365 for Finance and Operations supports interoperability between classes written in X++ and in C\# (or other .NET Framework languages).</span></span>                                                       |
-| <span data-ttu-id="1d761-125">**ファイルの操作**</span><span class="sxs-lookup"><span data-stu-id="1d761-125">**File manipulation**</span></span>       | <span data-ttu-id="1d761-126">ファイル入力および出力はサポートされており、XML 構築および解析を含みます。</span><span class="sxs-lookup"><span data-stu-id="1d761-126">File input and output is supported, including XML building and parsing.</span></span> |
-| <span data-ttu-id="1d761-127">**取立**</span><span class="sxs-lookup"><span data-stu-id="1d761-127">**Collections**</span></span>             | <span data-ttu-id="1d761-128">動的配列はサポートされ、X++ にはいくつかのコレクション オブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1d761-128">Dynamic arrays are supported and the X++ includes several collection objects.</span></span>|
-
-<span data-ttu-id="1d761-129">X++ 言語プログラミング ガイドは、以下のセクションに分かれています。</span><span class="sxs-lookup"><span data-stu-id="1d761-129">The X++ language programming guide is divided into these sections:</span></span> 
-+ [<span data-ttu-id="1d761-130">X++ 属性クラス</span><span class="sxs-lookup"><span data-stu-id="1d761-130">X++ attribute classes</span></span>](xpp-attribute-classes.md) 
-+ [<span data-ttu-id="1d761-131">X++ クラスおよびメソッド</span><span class="sxs-lookup"><span data-stu-id="1d761-131">X++ classes and methods</span></span>](xpp-classes-methods.md) 
-+ [<span data-ttu-id="1d761-132">X++ データの選択と操作</span><span class="sxs-lookup"><span data-stu-id="1d761-132">X++ data selection and manipulation</span></span>](xpp-data-query.md) 
-+ [<span data-ttu-id="1d761-133">X++ マクロ</span><span class="sxs-lookup"><span data-stu-id="1d761-133">X++ macros</span></span>](xpp-macros.md) 
-+ [<span data-ttu-id="1d761-134">X++ 演算子</span><span class="sxs-lookup"><span data-stu-id="1d761-134">X++ operators</span></span>](xpp-operators.md) 
-+ [<span data-ttu-id="1d761-135">X++ ステートメントおよびループ</span><span class="sxs-lookup"><span data-stu-id="1d761-135">X++ statements and loops</span></span>](xpp-statements-loops.md)
-+ [<span data-ttu-id="1d761-136">X++ の変数とデータ型</span><span class="sxs-lookup"><span data-stu-id="1d761-136">X++ variables and data types</span></span>](xpp-variables-data-types.md)
-
-## <a name="additional-resources"></a><span data-ttu-id="1d761-137">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="1d761-137">Additional resources</span></span>
-+ [<span data-ttu-id="1d761-138">X++ 構文</span><span class="sxs-lookup"><span data-stu-id="1d761-138">X++ Syntax</span></span>](xpp-syntax.md)
-+ [<span data-ttu-id="1d761-139">X++ と C# の比較</span><span class="sxs-lookup"><span data-stu-id="1d761-139">X++ and C# Comparison</span></span>](xpp-cs-comparison.md)
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="xpp-language-reference.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>xpp-language-reference.3a5d1d.b5fe5690b1f3a0f14b15fcc70a9ce5aaeb197208.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b5fe5690b1f3a0f14b15fcc70a9ce5aaeb197208</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\xpp-language-reference.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>X++ language reference</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ 言語リファレンス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides programming guidance for X++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、X++ のプログラミング ガイドを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>X++ language reference</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ 言語リファレンス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>X++ is an object-oriented, application-aware, and data-aware programming language that Microsoft Dynamics 365 for Finance and Operations uses in enterprise resource planning (ERP) programming and in database applications.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ は、Microsoft Dynamics 365 for Finance and Operations がエンタープライズ リソース プランニング (ERP) プログラミングおよびデータベース アプリケーションで使用する、オブジェクト指向、アプリケーション対応、およびデータ対応のプログラミング言語です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>It provides system classes for a broad range of system programming areas, highlighted in the following table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の表で強調表示された幅広いシステム プログラミング領域のシステム クラスを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source><bpt id="p1">**</bpt>X++ language attributes<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>X++ 言語属性<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">**</bpt>Classes<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クラス<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>In addition to system classes, Dynamics 365 for Finance and Operations also provides application classes for managing many types of business processes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラスに加えて、Dynamics 365 for Finance and Operations はさまざまなタイプの業務プロセスを管理するためのアプリケーション クラスも提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Reflection on classes is supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスのリフレクションがサポートされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Tables<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>X++ programmers can access the relational tables in Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ のプログラマーは、Dynamics 365 for Finance and Operations リレーショナル テーブルにアクセスすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>X++ includes keywords that match most of the keywords in standard SQL.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ には標準 SQL の大部分のキーワードと一致するキーワードが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Reflection on tables is supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルのリフレクションがサポートされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>User interface<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ユーザー インターフェイス<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Manipulation of user interface items, such as forms and reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームやレポートなどのユーザー インターフェイス項目の操作。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Best practice checks<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>推奨チェック<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>X++ code is checked for syntax errors during compile time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードはコンパイル中に構文エラーがチェックされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The compile process also performs best practice checks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパイル プロセスでは、ベスト プラクティス チェックも実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Violations of best practices can generate compiler messages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベスト プラクティスの違反によりコンパイラのメッセージを生成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">**</bpt>Garbage collection<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ガベージ コレクション<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>The X++ runtime execution engines have automatic mechanisms to discard objects that are no longer referenced, so that memory space can be reused.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ ランタイム実行エンジンには、メモリ領域を再利用できるように、参照されなくなったオブジェクトを破棄する自動メカニズムがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source><bpt id="p1">**</bpt>Interoperability<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>相互運用性<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Dynamics 365 for Finance and Operations supports interoperability between classes written in X++ and in C<ph id="ph1">\#</ph> (or other .NET Framework languages).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations は、X++ および C<ph id="ph1">\#</ph> (または他の .NET Framework 言語) で書かれたクラス間の相互運用性をサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">**</bpt>File manipulation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ファイルの操作<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>File input and output is supported, including XML building and parsing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル入力および出力はサポートされており、XML 構築および解析を含みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">**</bpt>Collections<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>取立<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Dynamic arrays are supported and the X++ includes several collection objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的配列はサポートされ、X++ にはいくつかのコレクション オブジェクトが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>The X++ language programming guide is divided into these sections:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ 言語プログラミング ガイドは、以下のセクションに分かれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>X++ attribute classes<ept id="p1">](xpp-attribute-classes.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ 属性クラス<ept id="p1">](xpp-attribute-classes.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">[</bpt>X++ classes and methods<ept id="p1">](xpp-classes-methods.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ クラスおよびメソッド<ept id="p1">](xpp-classes-methods.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt>X++ data selection and manipulation<ept id="p1">](xpp-data-query.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ データの選択と操作<ept id="p1">](xpp-data-query.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">[</bpt>X++ macros<ept id="p1">](xpp-macros.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ マクロ<ept id="p1">](xpp-macros.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">[</bpt>X++ operators<ept id="p1">](xpp-operators.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ 演算子<ept id="p1">](xpp-operators.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">[</bpt>X++ statements and loops<ept id="p1">](xpp-statements-loops.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ ステートメントおよびループ<ept id="p1">](xpp-statements-loops.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">[</bpt>X++ variables and data types<ept id="p1">](xpp-variables-data-types.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ の変数とデータ型<ept id="p1">](xpp-variables-data-types.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">[</bpt>X++ Syntax<ept id="p1">](xpp-syntax.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ 構文<ept id="p1">](xpp-syntax.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">[</bpt>X++ and C# Comparison<ept id="p1">](xpp-cs-comparison.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>X++ と C# の比較<ept id="p1">](xpp-cs-comparison.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

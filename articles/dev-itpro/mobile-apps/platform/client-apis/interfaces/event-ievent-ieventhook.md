@@ -1,83 +1,123 @@
----
-title: EventHook タイプ<T>
-description: EventHook タイプ
-author: shadykdc
-manager: AnnBe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: ''
-ms.search.region: Global
-ms.author: kashea
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: aad614dc41cc682e21768fe6324ea849a2680fcc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506217"
----
-# <a name="eventhook-typelttgt"></a><span data-ttu-id="39c84-103">EventHook タイプ&lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="39c84-103">EventHook type&lt;T&gt;</span></span>
-
-[!include [banner](../../../../includes/banner.md)]
-
-### <a name="hierarchy"></a><span data-ttu-id="39c84-104">階層</span><span class="sxs-lookup"><span data-stu-id="39c84-104">Hierarchy</span></span>
-
-<span data-ttu-id="39c84-105">EventHook</span><span class="sxs-lookup"><span data-stu-id="39c84-105">EventHook</span></span> <br>
-
-## <a name="index"></a><span data-ttu-id="39c84-106">指数</span><span class="sxs-lookup"><span data-stu-id="39c84-106">Index</span></span>
-
-### <a name="methods"></a><span data-ttu-id="39c84-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="39c84-107">Methods</span></span>
-
-* [<span data-ttu-id="39c84-108">サブスクライブ</span><span class="sxs-lookup"><span data-stu-id="39c84-108">subscribe</span></span>](event-ievent-ieventhook.md#subscribe)
-* [<span data-ttu-id="39c84-109">unsubscribe</span><span class="sxs-lookup"><span data-stu-id="39c84-109">unsubscribe</span></span>](event-ievent-ieventhook.md#unsubscribe)
-* [<span data-ttu-id="39c84-110">unsubscribeAll</span><span class="sxs-lookup"><span data-stu-id="39c84-110">unsubscribeAll</span></span>](event-ievent-ieventhook.md#unsubscribeall)
-
-## <a name="methods"></a><span data-ttu-id="39c84-111">メソッド</span><span class="sxs-lookup"><span data-stu-id="39c84-111">Methods</span></span>
-
-### <a name="subscribe"></a><span data-ttu-id="39c84-112">subscribe</span><span class="sxs-lookup"><span data-stu-id="39c84-112">subscribe</span></span>
-
-
-<span data-ttu-id="39c84-113">subscribe(listener: [IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;): void</span><span class="sxs-lookup"><span data-stu-id="39c84-113">subscribe(listener: [IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;): void</span></span>
-
-<span data-ttu-id="39c84-114">このイベントにリスナーをサブスクライブします。</span><span class="sxs-lookup"><span data-stu-id="39c84-114">Subscribe a listener to this event.</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="39c84-115">パラメーター</span><span class="sxs-lookup"><span data-stu-id="39c84-115">Parameters</span></span>
-
-| <span data-ttu-id="39c84-116">氏名</span><span class="sxs-lookup"><span data-stu-id="39c84-116">Name</span></span> | <span data-ttu-id="39c84-117">種類</span><span class="sxs-lookup"><span data-stu-id="39c84-117">Type</span></span> | <span data-ttu-id="39c84-118">説明</span><span class="sxs-lookup"><span data-stu-id="39c84-118">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="39c84-119">listener</span><span class="sxs-lookup"><span data-stu-id="39c84-119">listener</span></span>|<span data-ttu-id="39c84-120">[IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="39c84-120">[IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;</span></span>||
-
-#### <a name="returns-void"></a><span data-ttu-id="39c84-121">void を返します</span><span class="sxs-lookup"><span data-stu-id="39c84-121">Returns void</span></span>
-
-### <a name="unsubscribe"></a><span data-ttu-id="39c84-122">unsubscribe</span><span class="sxs-lookup"><span data-stu-id="39c84-122">unsubscribe</span></span>
-
-
-<span data-ttu-id="39c84-123">unsubscribe(listener: [IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;): void</span><span class="sxs-lookup"><span data-stu-id="39c84-123">unsubscribe(listener: [IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;): void</span></span>
-
-<span data-ttu-id="39c84-124">このイベントからリスナーを解除します。</span><span class="sxs-lookup"><span data-stu-id="39c84-124">Unsubscribe a listener from this event.</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="39c84-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="39c84-125">Parameters</span></span>
-
-| <span data-ttu-id="39c84-126">氏名</span><span class="sxs-lookup"><span data-stu-id="39c84-126">Name</span></span> | <span data-ttu-id="39c84-127">種類</span><span class="sxs-lookup"><span data-stu-id="39c84-127">Type</span></span> | <span data-ttu-id="39c84-128">説明</span><span class="sxs-lookup"><span data-stu-id="39c84-128">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="39c84-129">listener</span><span class="sxs-lookup"><span data-stu-id="39c84-129">listener</span></span>|<span data-ttu-id="39c84-130">[IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="39c84-130">[IEventListener](../modules/event-ievent.md#ieventlistener) &lt;T&gt;</span></span>||
-
-#### <a name="returns-void"></a><span data-ttu-id="39c84-131">void を返します</span><span class="sxs-lookup"><span data-stu-id="39c84-131">Returns void</span></span>
-
-### <a name="unsubscribeall"></a><span data-ttu-id="39c84-132">unsubscribeAll</span><span class="sxs-lookup"><span data-stu-id="39c84-132">unsubscribeAll</span></span>
-
-
-<span data-ttu-id="39c84-133">unsubscribeAll(): void</span><span class="sxs-lookup"><span data-stu-id="39c84-133">unsubscribeAll(): void</span></span>
-
-<span data-ttu-id="39c84-134">このイベントからすべてのリスナーを削除します。</span><span class="sxs-lookup"><span data-stu-id="39c84-134">Remove all listeners from this event.</span></span>
-
-#### <a name="returns-void"></a><span data-ttu-id="39c84-135">void を返します</span><span class="sxs-lookup"><span data-stu-id="39c84-135">Returns void</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="event-ievent-ieventhook.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>event-ievent-ieventhook.a43129.a08a44a7c107d4c4207711a28ee855b91c5616df.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a08a44a7c107d4c4207711a28ee855b91c5616df</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\interfaces\event-ievent-ieventhook.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EventHook type<ph id="ph1">&lt;T&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EventHook タイプ<ph id="ph1">&lt;T&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>EventHook type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EventHook タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EventHook type<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EventHook タイプ<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>EventHook</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EventHook</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">[</bpt>subscribe<ept id="p1">](event-ievent-ieventhook.md#subscribe)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>サブスクライブ<ept id="p1">](event-ievent-ieventhook.md#subscribe)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>unsubscribe<ept id="p1">](event-ievent-ieventhook.md#unsubscribe)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>unsubscribe<ept id="p1">](event-ievent-ieventhook.md#unsubscribe)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">[</bpt>unsubscribeAll<ept id="p1">](event-ievent-ieventhook.md#unsubscribeall)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>unsubscribeAll<ept id="p1">](event-ievent-ieventhook.md#unsubscribeall)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>subscribe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">subscribe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>subscribe(listener: <bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">subscribe(listener: <bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Subscribe a listener to this event.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このイベントにリスナーをサブスクライブします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>listener</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">listener</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>unsubscribe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">unsubscribe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>unsubscribe(listener: <bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">unsubscribe(listener: <bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph>): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Unsubscribe a listener from this event.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このイベントからリスナーを解除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>listener</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">listener</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>IEventListener<ept id="p1">](../modules/event-ievent.md#ieventlistener)</ept> <ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>unsubscribeAll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">unsubscribeAll</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>unsubscribeAll(): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">unsubscribeAll(): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Remove all listeners from this event.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このイベントからすべてのリスナーを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

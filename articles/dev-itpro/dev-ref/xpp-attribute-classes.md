@@ -1,171 +1,171 @@
----
-title: X++ 属性クラス
-description: このトピックでは、X++ での属性の使用について説明します。
-author: pvillads
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 150243
-ms.assetid: 9c927660-3268-4a77-9a83-97759a487483
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 883e369cf9d3e589c6954af4f4a8ea7ed8340d3a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536987"
----
-# <a name="x-attribute-classes"></a><span data-ttu-id="b6e99-103">X++ 属性クラス</span><span class="sxs-lookup"><span data-stu-id="b6e99-103">X++ attribute classes</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="b6e99-104">このトピックでは、X++ での属性の使用について説明します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-104">This topic describes the use of attributes in X++.</span></span>
-
-<span data-ttu-id="b6e99-105">属性は、**SysAttribute** クラスを拡張 (継承) する非抽象クラスです。</span><span class="sxs-lookup"><span data-stu-id="b6e99-105">An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class.</span></span> <span data-ttu-id="b6e99-106">属性は型およびメソッドに関するメタデータを表すか、または保存します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-106">Attributes represent or store metadata about types and methods.</span></span> <span data-ttu-id="b6e99-107">属性はクラス、インターフェイス、クラスのメソッド、インターフェイスまたはテーブルに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-107">An attribute can be attached to a class, an interface, or a method of a class, interface, or table.</span></span>
-
-## <a name="creating-an-attribute-class"></a><span data-ttu-id="b6e99-108">属性クラスを作成しています</span><span class="sxs-lookup"><span data-stu-id="b6e99-108">Creating an attribute class</span></span>
-<span data-ttu-id="b6e99-109">属性クラスは **SysAttribute** クラスを直接拡張したり、**SysAttribute** クラスのすべての子孫を拡張することもできます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-109">An attribute class can extend the **SysAttribute** class directly, or it can extend any descendant of the **SysAttribute** class.</span></span> <span data-ttu-id="b6e99-110">**SysAttribute** クラスは、**abstract** と宣言されているため、属性として使用できません。</span><span class="sxs-lookup"><span data-stu-id="b6e99-110">The **SysAttribute** class cannot be used as an attribute because it is declared **abstract**.</span></span> <span data-ttu-id="b6e99-111">次の例は、作成できる通常の属性クラスの宣言とデザインを示しています。</span><span class="sxs-lookup"><span data-stu-id="b6e99-111">The following example shows the declaration and design of an ordinary attribute class that you could create.</span></span>
-
-    public class PracticeAttribute extends SysAttribute
-    {
-        // Fields in the classDeclaration.
-        StartEnd startEndEnum;
-        str reason;
-        // Constructor.
-        public void new(StartEnd _startEndEnum, str _reason)
-        {
-            startEndEnum  = _startEndEnum;
-            reason = _reason;
-        }
-        // Other methods can go here.
-    }
-
-### <a name="decorating-a-class-with-an-attribute"></a><span data-ttu-id="b6e99-112">属性を持つクラスの修飾</span><span class="sxs-lookup"><span data-stu-id="b6e99-112">Decorating a class with an attribute</span></span>
-
-<span data-ttu-id="b6e99-113">次の例では、前の例で与えられた **PracticeAttribute** で装飾されたクラスとメソッドを示しています。</span><span class="sxs-lookup"><span data-stu-id="b6e99-113">The following example shows a class and a method that are decorated with the **PracticeAttribute** given in the previous example.</span></span> <span data-ttu-id="b6e99-114">属性のコンストラクターがパラメーターを取らない場合、パラメーターのかっこはオプションになります。</span><span class="sxs-lookup"><span data-stu-id="b6e99-114">If the constructor of the attribute takes no parameters, the parentheses for the parameters are optional.</span></span> <span data-ttu-id="b6e99-115">属性の修飾は、かっこのない `[AnotherAttribute]` であり可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b6e99-115">The attribute decoration could be `[AnotherAttribute]` without parentheses.</span></span>
-
-    [PracticeAttribute(StartEnd::End, "Use the RegularClass class at the end.")]
-    public class RegularClass
-    {
-        [PracticeAttribute(Startend::Start, "Use the rehearse method at the start.")]
-        public int rehearse()
-        {
-            // Logic goes here.
-        }
-        // More fields and methods belong here.
-    }
-
-### <a name="attribute-constructors"></a><span data-ttu-id="b6e99-116">属性コンストラクター</span><span class="sxs-lookup"><span data-stu-id="b6e99-116">Attribute constructors</span></span>
-
-<span data-ttu-id="b6e99-117">コンストラクターがパラメーターを持つようにすることで、クラスを修飾するためにメタデータが使用されるたびに、属性クラスが作成済みメタデータを格納するようにできます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-117">You can enable your attribute class to store tailored metadata each time it is used to decorate a class, by having its constructor take parameters.</span></span> <span data-ttu-id="b6e99-118">コンストラクターのパラメータは、**int**、**enum**、または **str** などの、プリミティブ型のリテラルにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b6e99-118">The parameters for the constructor must be literals of the primitive types, such as **int,** **enum,** or **str**.</span></span> <span data-ttu-id="b6e99-119">コンパイラは、属性クラスのインスタンスを構築しません。</span><span class="sxs-lookup"><span data-stu-id="b6e99-119">The compiler does not construct an instance of the attribute class.</span></span> <span data-ttu-id="b6e99-120">属性クラスの名前、およびコンストラクターのリテラル値を格納します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-120">It stores the name of the attribute class, plus the literal values for its constructor.</span></span> <span data-ttu-id="b6e99-121">したがって、属性コンストラクター内のロジックが例外をスローすると、その属性を持つクラスを修飾することによって例外が見つかりません。</span><span class="sxs-lookup"><span data-stu-id="b6e99-121">Therefore, if the logic in an attribute constructor would throw an exception, the exception would not be found by decorating a class with the attribute.</span></span> <span data-ttu-id="b6e99-122">例外は、後でプロセスがクラスを調べて、それが装飾されている属性を見るときに見つかります。</span><span class="sxs-lookup"><span data-stu-id="b6e99-122">The exception would be found later when a process looks at a class to see the attribute it is decorated with.</span></span> <span data-ttu-id="b6e99-123">属性が作成されたときです。</span><span class="sxs-lookup"><span data-stu-id="b6e99-123">That is when the attribute is constructed.</span></span>
-
-### <a name="naming-conventions"></a><span data-ttu-id="b6e99-124">名前付け規則</span><span class="sxs-lookup"><span data-stu-id="b6e99-124">Naming conventions</span></span>
-
-<span data-ttu-id="b6e99-125">すべての属性クラスには名前に接尾語**属性**があります。</span><span class="sxs-lookup"><span data-stu-id="b6e99-125">All attribute classes have the suffix **Attribute** in their name.</span></span> <span data-ttu-id="b6e99-126">**属性** サフィックスは、推奨される名前付け規則ですが、システム要件ではありません。</span><span class="sxs-lookup"><span data-stu-id="b6e99-126">The **Attribute** suffix is the name convention that we recommend, but it is not a system requirement.</span></span> <span data-ttu-id="b6e99-127">**アプリケーション エクスプローラー** 内のクラスを選択して **プロパティ** ウインドウで **拡張** プロパティを確認することにより、クラスが **SysAttribute** から直接 **拡張** されるか決定することができます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-127">You can determine whether a class **extends** directly from **SysAttribute** by selecting the class in the **Application Explorer** and reviewing the **Extends** property in the **Properties** window.</span></span>
-
-## <a name="sysobsoleteattribute"></a><span data-ttu-id="b6e99-128">SysObsoleteAttribute</span><span class="sxs-lookup"><span data-stu-id="b6e99-128">SysObsoleteAttribute</span></span>
-<span data-ttu-id="b6e99-129">システムは、**SysObsoleteAttribute** クラスを含むいくつかの属性を提供します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-129">The system provides several attributes, including the **SysObsoleteAttribute** class.</span></span> <span data-ttu-id="b6e99-130">**SysObsoleteAttribute** クラスの 1 つの使用方法は、ソース コード内の特定のメソッドが呼び出された場合、コンパイルが失敗することをコンパイラに通知することです。</span><span class="sxs-lookup"><span data-stu-id="b6e99-130">One use of the **SysObsoleteAttribute** class is to notify the compiler that the compile should fail if a particular method is called in the source code.</span></span> <span data-ttu-id="b6e99-131">コンパイラはコンパイルを拒否し、この属性の使用に格納されている特定のメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-131">The compiler rejects the compile, and displays the specific message that is stored in this use of the attribute.</span></span> <span data-ttu-id="b6e99-132">**SysObsoleteAttribute** クラスを使用すると、エラーではなく問題の警告メッセージをコンパイラに通知することもできます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-132">The **SysObsoleteAttribute** class can also be used to notify the compiler to issue warning messages instead of errors.</span></span>
-
-### <a name="sysobsoleteattribute-code-example"></a><span data-ttu-id="b6e99-133">SysObsoleteAttribute コードの例</span><span class="sxs-lookup"><span data-stu-id="b6e99-133">SysObsoleteAttribute code example</span></span>
-
-    [SysObsoleteAttribute("The Automobile class might have faster performance.", false)]
-    class Bicycle
-    {
-        // Members of the Bicycle class go here.
-    }
-
-## <a name="metadata-reflection"></a><span data-ttu-id="b6e99-134">メタデータ リフレクション</span><span class="sxs-lookup"><span data-stu-id="b6e99-134">Metadata reflection</span></span>
-<span data-ttu-id="b6e99-135">クラスに関連付けられている属性メタデータを検索するには、リフレクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-135">You use reflection to find the attribute metadata that is attached to a class.</span></span> <span data-ttu-id="b6e99-136">属性リフレクションに使用するクラスは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b6e99-136">The classes to use for attribute reflection are as follows:</span></span>
-
--   <span data-ttu-id="b6e99-137">**DictClass** クラス - クラスおよびインタフェース用です。</span><span class="sxs-lookup"><span data-stu-id="b6e99-137">**DictClass** class – For classes and interfaces.</span></span>
--   <span data-ttu-id="b6e99-138">**DictMethod** クラス - クラス、インターフェイス、またはテーブルのメソッド用です。</span><span class="sxs-lookup"><span data-stu-id="b6e99-138">**DictMethod** class – For methods on classes, interfaces, or tables.</span></span>
-
-<span data-ttu-id="b6e99-139">前のリフレクション クラスで、属性メタデータを反映した方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b6e99-139">On the previous reflection classes, the methods for reflecting on attribute metadata are as follows:</span></span>
-
--   <span data-ttu-id="b6e99-140">**getAllAttributes** メソッド</span><span class="sxs-lookup"><span data-stu-id="b6e99-140">**getAllAttributes** method</span></span>
--   <span data-ttu-id="b6e99-141">**getAttribute** メソッド</span><span class="sxs-lookup"><span data-stu-id="b6e99-141">**getAttribute** method</span></span>
--   <span data-ttu-id="b6e99-142">**getAttributedClasses** メソッド</span><span class="sxs-lookup"><span data-stu-id="b6e99-142">**getAttributedClasses** method</span></span>
--   <span data-ttu-id="b6e99-143">**getAttributes** メソッド</span><span class="sxs-lookup"><span data-stu-id="b6e99-143">**getAttributes** method</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="b6e99-144">X++ コードから特定の属性で飾られたすべてのメソッドまたはクラスをリストするメカニズムはありません。</span><span class="sxs-lookup"><span data-stu-id="b6e99-144">There is no mechanism for listing all methods or classes that are adorned with a particular attribute from X++ code.</span></span> <span data-ttu-id="b6e99-145">ただし、X++ コンパイラは、相互参照データベースにこの情報を記録するため、そこから情報を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-145">However, because the X++ compiler records this information in the cross reference database, the information can be mined from there.</span></span>
-
-### <a name="metadata-reflection-code-example"></a><span data-ttu-id="b6e99-146">メタデータ リフレクションのコードの例</span><span class="sxs-lookup"><span data-stu-id="b6e99-146">Metadata reflection code example</span></span>
-
-<span data-ttu-id="b6e99-147">メソッドを修飾する属性のメタデータ値を検索するには、**DictMethod** クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="b6e99-147">You use the **DictMethod** class to find the metadata value of an attribute that is decoration on a method.</span></span> <span data-ttu-id="b6e99-148">次のコード例では、**SysEntryPointAttribute** クラスを属性として使用しています。</span><span class="sxs-lookup"><span data-stu-id="b6e99-148">The following code example uses the **SysEntryPointAttribute** class as the attribute.</span></span> <span data-ttu-id="b6e99-149">メソッド名およびそのメソッドを含むクラスの名前にパラメーター値を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="b6e99-149">It accepts your parameter values for the method name, and for the name of the class that contains the method.</span></span> <span data-ttu-id="b6e99-150">**parmChecked** メソッドは、**SysEntryPointAttribute** クラスに固有であり、基本クラス **SysAttribute** からから継承されません。</span><span class="sxs-lookup"><span data-stu-id="b6e99-150">The **parmChecked** method is particular to the **SysEntryPointAttribute** class, and it is not inherited from its base class **SysAttribute**.</span></span> <span data-ttu-id="b6e99-151">各属性クラスは、メタデータの独自のメソッド名を持つことが可能です。</span><span class="sxs-lookup"><span data-stu-id="b6e99-151">Each attribute class can have its own method name for its metadata.</span></span>
-
-    static public int MetadataOfSysEntryPointAttributeOnMethod
-                (
-                str _sNameOfClass,
-                str _sNameOfMethod
-                )
-    {
-        // Return Values:
-        // 0 == Has the attribute, its metadata value is false;
-        // 1 == Has the attribute, its metadata value is true;
-        // 2 == The method lacks the SysEntryPointAttribute.
-        int nReturnValue = -1,
-            nClassId;
-        boolean boolParmChecked;
-        DictMethod dm;
-        Object attributeAsObject;
-        SysEntryPointAttribute sepAttribute;
-        Global::info("Starting AttributeReflection" 
-            + " ::MetadataOfSysEntryPointAttributeOnMethod ....");
-        Global::info(strFmt
-            ("Parameters are: _sNameOfClass = %1 ,  _sNameOfMethod = %2 .", 
-            _sNameOfClass, _sNameOfMethod)
-            );
-        nClassId = Global::className2Id(_sNameOfClass);
-        dm = new DictMethod
-            (UtilElementType::ClassInstanceMethod,
-            nClassId,
-            _sNameOfMethod
-            );
-        attributeAsObject = dm.getAttribute("SysEntryPointAttribute");
-        if (attributeAsObject is SysEntryPointAttribute)
-        {
-            sepAttribute = attributeAsObject as SysEntryPointAttribute;
-            boolParmChecked = sepAttribute.parmChecked();
-            if (boolParmChecked)
-                nReturnValue = 1;
-            else
-                nReturnValue = 0;
-            Global::info(
-                strFmt("Return value is %1.",
-                    nReturnValue)
-                );
-        }
-        else
-        {
-            nReturnValue = 2;
-            Global::error("Object is not a SysEntryPointAttribute??");
-        }
-        return nReturnValue;
-    }
-    /*** Output displayed in the Infolog.
-    Message (05:03:22 pm)
-    Starting AttributeReflection ::MetadataOfSysEntryPointAttributeOnMethod ....
-    Parameters are: _sNameOfClass = CustCustomerService ,  _sNameOfMethod = create .
-    Return value is 1.
-    ***/
-    /**************
-    // Simple AOT > Jobs job to run the method.
-    static void AttributeReflection33Job(Args _args)
-    {
-        AttributeReflection::MetadataOfSysEntryPointAttributeOnMethod
-            ("CustCustomerService", "create");
-    }
-    **************/
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="xpp-attribute-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>xpp-attribute-classes.191623.6dfeb8e739f6dc26d73501001c83eb15ee3a0fd5.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>6dfeb8e739f6dc26d73501001c83eb15ee3a0fd5</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\xpp-attribute-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>X++ attribute classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ 属性クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes the use of attributes in X++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、X++ での属性の使用について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>X++ attribute classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ 属性クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes the use of attributes in X++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、X++ での属性の使用について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>An attribute is a non-abstract class that extends (inherits from) the <bpt id="p1">**</bpt>SysAttribute<ept id="p1">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性は、<bpt id="p1">**</bpt>SysAttribute<ept id="p1">**</ept> クラスを拡張 (継承) する非抽象クラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Attributes represent or store metadata about types and methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性は型およびメソッドに関するメタデータを表すか、または保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>An attribute can be attached to a class, an interface, or a method of a class, interface, or table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性はクラス、インターフェイス、クラスのメソッド、インターフェイスまたはテーブルに関連付けることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Creating an attribute class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性クラスを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>An attribute class can extend the <bpt id="p1">**</bpt>SysAttribute<ept id="p1">**</ept> class directly, or it can extend any descendant of the <bpt id="p2">**</bpt>SysAttribute<ept id="p2">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性クラスは <bpt id="p1">**</bpt>SysAttribute<ept id="p1">**</ept> クラスを直接拡張したり、<bpt id="p2">**</bpt>SysAttribute<ept id="p2">**</ept> クラスのすべての子孫を拡張することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The <bpt id="p1">**</bpt>SysAttribute<ept id="p1">**</ept> class cannot be used as an attribute because it is declared <bpt id="p2">**</bpt>abstract<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SysAttribute<ept id="p1">**</ept> クラスは、<bpt id="p2">**</bpt>abstract<ept id="p2">**</ept> と宣言されているため、属性として使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The following example shows the declaration and design of an ordinary attribute class that you could create.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、作成できる通常の属性クラスの宣言とデザインを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Decorating a class with an attribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性を持つクラスの修飾</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The following example shows a class and a method that are decorated with the <bpt id="p1">**</bpt>PracticeAttribute<ept id="p1">**</ept> given in the previous example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、前の例で与えられた <bpt id="p1">**</bpt>PracticeAttribute<ept id="p1">**</ept> で装飾されたクラスとメソッドを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>If the constructor of the attribute takes no parameters, the parentheses for the parameters are optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性のコンストラクターがパラメーターを取らない場合、パラメーターのかっこはオプションになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The attribute decoration could be <ph id="ph1">`[AnotherAttribute]`</ph> without parentheses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性の修飾は、かっこのない <ph id="ph1">`[AnotherAttribute]`</ph> であり可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Attribute constructors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性コンストラクター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>You can enable your attribute class to store tailored metadata each time it is used to decorate a class, by having its constructor take parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンストラクターがパラメーターを持つようにすることで、クラスを修飾するためにメタデータが使用されるたびに、属性クラスが作成済みメタデータを格納するようにできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The parameters for the constructor must be literals of the primitive types, such as <bpt id="p1">**</bpt>int,<ept id="p1">**</ept> <bpt id="p2">**</bpt>enum,<ept id="p2">**</ept> or <bpt id="p3">**</bpt>str<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンストラクターのパラメータは、<bpt id="p1">**</bpt>int<ept id="p1">**</ept>、<bpt id="p2">**</bpt>enum<ept id="p2">**</ept>、または <bpt id="p3">**</bpt>str<ept id="p3">**</ept> などの、プリミティブ型のリテラルにする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The compiler does not construct an instance of the attribute class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパイラは、属性クラスのインスタンスを構築しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>It stores the name of the attribute class, plus the literal values for its constructor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性クラスの名前、およびコンストラクターのリテラル値を格納します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Therefore, if the logic in an attribute constructor would throw an exception, the exception would not be found by decorating a class with the attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、属性コンストラクター内のロジックが例外をスローすると、その属性を持つクラスを修飾することによって例外が見つかりません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>The exception would be found later when a process looks at a class to see the attribute it is decorated with.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例外は、後でプロセスがクラスを調べて、それが装飾されている属性を見るときに見つかります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>That is when the attribute is constructed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性が作成されたときです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Naming conventions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前付け規則</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>All attribute classes have the suffix <bpt id="p1">**</bpt>Attribute<ept id="p1">**</ept> in their name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての属性クラスには名前に接尾語<bpt id="p1">**</bpt>属性<ept id="p1">**</ept>があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>The <bpt id="p1">**</bpt>Attribute<ept id="p1">**</ept> suffix is the name convention that we recommend, but it is not a system requirement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>属性<ept id="p1">**</ept> サフィックスは、推奨される名前付け規則ですが、システム要件ではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>You can determine whether a class <bpt id="p1">**</bpt>extends<ept id="p1">**</ept> directly from <bpt id="p2">**</bpt>SysAttribute<ept id="p2">**</ept> by selecting the class in the <bpt id="p3">**</bpt>Application Explorer<ept id="p3">**</ept> and reviewing the <bpt id="p4">**</bpt>Extends<ept id="p4">**</ept> property in the <bpt id="p5">**</bpt>Properties<ept id="p5">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p3">**</bpt>アプリケーション エクスプローラー<ept id="p3">**</ept> 内のクラスを選択して <bpt id="p5">**</bpt>プロパティ<ept id="p5">**</ept> ウインドウで <bpt id="p4">**</bpt>拡張<ept id="p4">**</ept> プロパティを確認することにより、クラスが <bpt id="p2">**</bpt>SysAttribute<ept id="p2">**</ept> から直接 <bpt id="p1">**</bpt>拡張<ept id="p1">**</ept> されるか決定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>SysObsoleteAttribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysObsoleteAttribute</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>The system provides several attributes, including the <bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システムは、<bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> クラスを含むいくつかの属性を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>One use of the <bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> class is to notify the compiler that the compile should fail if a particular method is called in the source code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> クラスの 1 つの使用方法は、ソース コード内の特定のメソッドが呼び出された場合、コンパイルが失敗することをコンパイラに通知することです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The compiler rejects the compile, and displays the specific message that is stored in this use of the attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパイラはコンパイルを拒否し、この属性の使用に格納されている特定のメッセージを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The <bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> class can also be used to notify the compiler to issue warning messages instead of errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SysObsoleteAttribute<ept id="p1">**</ept> クラスを使用すると、エラーではなく問題の警告メッセージをコンパイラに通知することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>SysObsoleteAttribute code example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysObsoleteAttribute コードの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Metadata reflection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ リフレクション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>You use reflection to find the attribute metadata that is attached to a class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスに関連付けられている属性メタデータを検索するには、リフレクションを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>The classes to use for attribute reflection are as follows:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性リフレクションに使用するクラスは次のとおりです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">**</bpt>DictClass<ept id="p1">**</ept> class – For classes and interfaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DictClass<ept id="p1">**</ept> クラス - クラスおよびインタフェース用です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">**</bpt>DictMethod<ept id="p1">**</ept> class – For methods on classes, interfaces, or tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DictMethod<ept id="p1">**</ept> クラス - クラス、インターフェイス、またはテーブルのメソッド用です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>On the previous reflection classes, the methods for reflecting on attribute metadata are as follows:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前のリフレクション クラスで、属性メタデータを反映した方法は次のとおりです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">**</bpt>getAllAttributes<ept id="p1">**</ept> method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>getAllAttributes<ept id="p1">**</ept> メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">**</bpt>getAttribute<ept id="p1">**</ept> method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>getAttribute<ept id="p1">**</ept> メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">**</bpt>getAttributedClasses<ept id="p1">**</ept> method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>getAttributedClasses<ept id="p1">**</ept> メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>getAttributes<ept id="p1">**</ept> method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>getAttributes<ept id="p1">**</ept> メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>There is no mechanism for listing all methods or classes that are adorned with a particular attribute from X++ code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードから特定の属性で飾られたすべてのメソッドまたはクラスをリストするメカニズムはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>However, because the X++ compiler records this information in the cross reference database, the information can be mined from there.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、X++ コンパイラは、相互参照データベースにこの情報を記録するため、そこから情報を得ることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Metadata reflection code example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ リフレクションのコードの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>You use the <bpt id="p1">**</bpt>DictMethod<ept id="p1">**</ept> class to find the metadata value of an attribute that is decoration on a method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドを修飾する属性のメタデータ値を検索するには、<bpt id="p1">**</bpt>DictMethod<ept id="p1">**</ept> クラスを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The following code example uses the <bpt id="p1">**</bpt>SysEntryPointAttribute<ept id="p1">**</ept> class as the attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコード例では、<bpt id="p1">**</bpt>SysEntryPointAttribute<ept id="p1">**</ept> クラスを属性として使用しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>It accepts your parameter values for the method name, and for the name of the class that contains the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名およびそのメソッドを含むクラスの名前にパラメーター値を受け入れます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The <bpt id="p1">**</bpt>parmChecked<ept id="p1">**</ept> method is particular to the <bpt id="p2">**</bpt>SysEntryPointAttribute<ept id="p2">**</ept> class, and it is not inherited from its base class <bpt id="p3">**</bpt>SysAttribute<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>parmChecked<ept id="p1">**</ept> メソッドは、<bpt id="p2">**</bpt>SysEntryPointAttribute<ept id="p2">**</ept> クラスに固有であり、基本クラス <bpt id="p3">**</bpt>SysAttribute<ept id="p3">**</ept> からから継承されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Each attribute class can have its own method name for its metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各属性クラスは、メタデータの独自のメソッド名を持つことが可能です。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

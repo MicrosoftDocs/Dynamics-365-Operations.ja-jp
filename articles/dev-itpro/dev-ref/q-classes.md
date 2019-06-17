@@ -1,4288 +1,5988 @@
----
-title: Q クラス
-description: 文字 Q で始まるシステム API クラス。
-author: RobinARH
-manager: AnnBe
-ms.date: 11/07/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 51831
-ms.assetid: 279efb4c-e228-4ab5-be7d-c96d91064787
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85bab7b4a98e351e45157e1168939d30e08b0505
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537032"
----
-# <a name="q-classes"></a><span data-ttu-id="4e468-103">Q クラス</span><span class="sxs-lookup"><span data-stu-id="4e468-103">Q classes</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="4e468-104">文字 Q で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="4e468-104">System API classes that start with the letter Q.</span></span>
-
-<a name="class-query"></a><span data-ttu-id="4e468-105">クラス クエリ</span><span class="sxs-lookup"><span data-stu-id="4e468-105">Class Query</span></span>
------------
-
-    class Query extends TreeNode
-
-<span data-ttu-id="4e468-106">クエリ クラスには、クエリの構造が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4e468-106">The Query class embodies the structure of a query.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-107">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-107">Remarks</span></span>
-
-<span data-ttu-id="4e468-108">このタイプのオブジェクトは、データベースからレコードをフェッチするために使用されません。</span><span class="sxs-lookup"><span data-stu-id="4e468-108">Objects of this kind are not used to fetch records from the database.</span></span> <span data-ttu-id="4e468-109">代わりに、クエリ オブジェクトを割り当てることができる QueryRun オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="4e468-109">Instead, use a QueryRun object that can be assigned a query object.</span></span> <span data-ttu-id="4e468-110">クエリの動的な動作は、QueryRun クラスによって定義されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-110">The dynamic behavior of a query is defined by the QueryRun class.</span></span> <span data-ttu-id="4e468-111">静的なビヘイビアーは、Query クラスによって定義されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-111">The static behavior is defined by the Query class.</span></span> <span data-ttu-id="4e468-112">クエリには、データベース内のテーブルに対応する 1 つまたは複数のデータ ソースが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4e468-112">Queries contain one or more data sources that correspond to tables in the database.</span></span> <span data-ttu-id="4e468-113">データ ソースを指定するには、QueryBuildDataSource オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="4e468-113">The data sources are specified by using QueryBuildDataSource objects.</span></span> <span data-ttu-id="4e468-114">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-114">This class lets you create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="4e468-115">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="4e468-115">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span> <span data-ttu-id="4e468-116">クエリは、ユーザーが、たとえばフォームなどによりフェッチされるレコードを変更する場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-116">Queries are used when the user wants to modify the records that are fetched by, for example, a form.</span></span> <span data-ttu-id="4e468-117">多くの場合、1 つ以上の範囲は既存のデータ ソースに追加されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-117">One or more ranges are often added to an existing data source.</span></span> <span data-ttu-id="4e468-118">範囲を指定するには、queryBuildRange オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="4e468-118">Ranges are specified by using queryBuildRange objects.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-119">例</span><span class="sxs-lookup"><span data-stu-id="4e468-119">Examples</span></span>
-
-<span data-ttu-id="4e468-120">次の例では、QueryRun オブジェクトを作成するために使用されるクエリ オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4e468-120">The following example creates a query object that is used to create a QueryRun object.</span></span>
-
-    { 
-        Query q = new Query (QueryStr(Cust)); 
-        // Use the query to build a queryRun object. 
-        QueryRun qr = new QueryRun (q); 
-        // Traverse some records. 
-        while (qr.next()) 
-        { 
-            // ... 
-        } 
-    }
-
-### <a name="methods"></a><span data-ttu-id="4e468-121">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-121">Methods</span></span>
-
-| <span data-ttu-id="4e468-122">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-122">Method</span></span>                                                                                                                                                                 | <span data-ttu-id="4e468-123">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-123">Description</span></span>                                                                                                                               |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4e468-124">public Query addBaseQuery(str queryName)</span><span class="sxs-lookup"><span data-stu-id="4e468-124">public Query addBaseQuery(str queryName)</span></span>                                                                                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-125">public QueryBuildDataSource addDataSource(TableId table, \[str name\], \[UnionType unionType\], \[boolean emptyFieldList\])</span><span class="sxs-lookup"><span data-stu-id="4e468-125">public QueryBuildDataSource addDataSource(TableId table, \[str name\], \[UnionType unionType\], \[boolean emptyFieldList\])</span></span>                                            | <span data-ttu-id="4e468-126">クエリのトップ レベルにデータ ソースを追加します。</span><span class="sxs-lookup"><span data-stu-id="4e468-126">Adds a data source to the top level of the query.</span></span>                                                                                         |
-| <span data-ttu-id="4e468-127">public QueryHavingFilter addHavingFilter(QueryBuildDataSource dataSource, str fieldName, AggregateFunction aggregateFunction, \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-127">public QueryHavingFilter addHavingFilter(QueryBuildDataSource dataSource, str fieldName, AggregateFunction aggregateFunction, \[int arrayIndex\])</span></span>                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-128">public QueryFilter addQueryFilter(QueryBuildDataSource dataSource, str fieldName, \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-128">public QueryFilter addQueryFilter(QueryBuildDataSource dataSource, str fieldName, \[int arrayIndex\])</span></span>                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-129">public boolean allowCheck(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-129">public boolean allowCheck(\[boolean value\])</span></span>                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-130">public boolean allowCrossCompany(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-130">public boolean allowCrossCompany(\[boolean value\])</span></span>                                                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-131">public boolean allowHavingFilters(QueryBuildDataSource dataSource, FieldName fieldName, AggregateFunction aggregateFunction)</span><span class="sxs-lookup"><span data-stu-id="4e468-131">public boolean allowHavingFilters(QueryBuildDataSource dataSource, FieldName fieldName, AggregateFunction aggregateFunction)</span></span>                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-132">public boolean allowQueryFilters(QueryBuildDataSource dataSource)</span><span class="sxs-lookup"><span data-stu-id="4e468-132">public boolean allowQueryFilters(QueryBuildDataSource dataSource)</span></span>                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-133">public str changedBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-133">public str changedBy(\[str value\])</span></span>                                                                                                                                    | <span data-ttu-id="4e468-134">クエリ オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-134">Gets or sets the name of the user who last changed the Query object.</span></span>                                                                      |
-| <span data-ttu-id="4e468-135">public Date changedDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-135">public Date changedDate(\[Date value\])</span></span>                                                                                                                                | <span data-ttu-id="4e468-136">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-136">Gets or sets the date an application object was last changed.</span></span>                                                                             |
-| <span data-ttu-id="4e468-137">public str changedTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-137">public str changedTime(\[str value\])</span></span>                                                                                                                                  | <span data-ttu-id="4e468-138">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-138">Gets or sets the time an application object was last changed.</span></span>                                                                             |
-| <span data-ttu-id="4e468-139">public int childDataSourceCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-139">public int childDataSourceCount()</span></span>                                                                                                                                      | <span data-ttu-id="4e468-140">クエリに関連するデータ ソースの数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="4e468-140">Counts the number of data sources that are related to the query.</span></span>                                                                          |
-| <span data-ttu-id="4e468-141">public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-141">public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</span></span>                                                                                                        | <span data-ttu-id="4e468-142">指定された番号に対応するデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-142">Returns the child data source that corresponds to the specified number.</span></span>                                                                   |
-| <span data-ttu-id="4e468-143">public boolean containsAggregateFields()</span><span class="sxs-lookup"><span data-stu-id="4e468-143">public boolean containsAggregateFields()</span></span>                                                                                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-144">public str createdBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-144">public str createdBy(\[str value\])</span></span>                                                                                                                                    | <span data-ttu-id="4e468-145">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-145">Gets or sets the name of the user who created the application object.</span></span>                                                                     |
-| <span data-ttu-id="4e468-146">public Date creationDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-146">public Date creationDate(\[Date value\])</span></span>                                                                                                                               | <span data-ttu-id="4e468-147">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-147">Gets or sets the date an application object was created.</span></span>                                                                                  |
-| <span data-ttu-id="4e468-148">public str creationTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-148">public str creationTime(\[str value\])</span></span>                                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-149">public int dataSourceCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-149">public int dataSourceCount()</span></span>                                                                                                                                           | <span data-ttu-id="4e468-150">埋め込みデータ ソースを含む、クエリのデータ ソースの合計数を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-150">Returns the total number of data sources for the query, including any embedded data sources.</span></span>                                              |
-| <span data-ttu-id="4e468-151">public QueryBuildDataSource dataSourceName(str name)</span><span class="sxs-lookup"><span data-stu-id="4e468-151">public QueryBuildDataSource dataSourceName(str name)</span></span>                                                                                                                   | <span data-ttu-id="4e468-152">指定された名前を持つデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-152">Returns the data source that has the specified name.</span></span>                                                                                      |
-| <span data-ttu-id="4e468-153">public QueryBuildDataSource dataSourceNo(int dataSourceNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-153">public QueryBuildDataSource dataSourceNo(int dataSourceNo)</span></span>                                                                                                             | <span data-ttu-id="4e468-154">データ ソース番号により指定されたデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-154">Returns the data source that is specified by the data source number.</span></span>                                                                      |
-| <span data-ttu-id="4e468-155">public QueryBuildDataSource dataSourceTable(TableId table, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-155">public QueryBuildDataSource dataSourceTable(TableId table, \[int occurrence\])</span></span>                                                                                         | <span data-ttu-id="4e468-156">指定されたテーブルが割り当てられているデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-156">Returns the data source that the specified table is assigned to.</span></span>                                                                          |
-| <span data-ttu-id="4e468-157">public QueryBuildDataSource dataSourceUniqueId(int uniqueId)</span><span class="sxs-lookup"><span data-stu-id="4e468-157">public QueryBuildDataSource dataSourceUniqueId(int uniqueId)</span></span>                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-158">public str description(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-158">public str description(\[str value\])</span></span>                                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-159">public boolean equal(Object record)</span><span class="sxs-lookup"><span data-stu-id="4e468-159">public boolean equal(Object record)</span></span>                                                                                                                                    | <span data-ttu-id="4e468-160">あるクエリが別のクエリと等しいかどうかを評価します。</span><span class="sxs-lookup"><span data-stu-id="4e468-160">Evaluates whether one query is equal to another.</span></span>                                                                                          |
-| <span data-ttu-id="4e468-161">public str exportXML()</span><span class="sxs-lookup"><span data-stu-id="4e468-161">public str exportXML()</span></span>                                                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-162">public QueryHavingFilter findHavingFilterByField(QueryBuildDataSource dataSource, FieldName fieldName, \[int occurrence\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-162">public QueryHavingFilter findHavingFilterByField(QueryBuildDataSource dataSource, FieldName fieldName, \[int occurrence\], \[int arrayIndex\])</span></span>                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-163">public QueryFilter findQueryFilter(QueryBuildDataSource dataSource, FieldName fieldName, \[int occurrence\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-163">public QueryFilter findQueryFilter(QueryBuildDataSource dataSource, FieldName fieldName, \[int occurrence\], \[int arrayIndex\])</span></span>                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-164">public QueryBuildDataSource firstTopLevelDataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-164">public QueryBuildDataSource firstTopLevelDataSource()</span></span>                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-165">public boolean forceNestedLoop(boolean arg)</span><span class="sxs-lookup"><span data-stu-id="4e468-165">public boolean forceNestedLoop(boolean arg)</span></span>                                                                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-166">public boolean forceSelectOrder(boolean arg)</span><span class="sxs-lookup"><span data-stu-id="4e468-166">public boolean forceSelectOrder(boolean arg)</span></span>                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-167">public str form(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-167">public str form(\[str value\])</span></span>                                                                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-168">public container getCompanyRange()</span><span class="sxs-lookup"><span data-stu-id="4e468-168">public container getCompanyRange()</span></span>                                                                                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-169">public int getMostRestrictedQueryFilterStatus(QueryBuildDataSource dataSource, FieldName fieldName, \[int fieldId\])</span><span class="sxs-lookup"><span data-stu-id="4e468-169">public int getMostRestrictedQueryFilterStatus(QueryBuildDataSource dataSource, FieldName fieldName, \[int fieldId\])</span></span>                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-170">public int getNextUniqueId()</span><span class="sxs-lookup"><span data-stu-id="4e468-170">public int getNextUniqueId()</span></span>                                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-171">public str getSQLStatement(\[boolean noRuntimeOptimization\])</span><span class="sxs-lookup"><span data-stu-id="4e468-171">public str getSQLStatement(\[boolean noRuntimeOptimization\])</span></span>                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-172">public container getValidTimeStateDateRange()</span><span class="sxs-lookup"><span data-stu-id="4e468-172">public container getValidTimeStateDateRange()</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-173">public container getValidTimeStateDateTimeRange()</span><span class="sxs-lookup"><span data-stu-id="4e468-173">public container getValidTimeStateDateTimeRange()</span></span>                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-174">public ValidTimeStateQueryType getValidTimeStateQueryType()</span><span class="sxs-lookup"><span data-stu-id="4e468-174">public ValidTimeStateQueryType getValidTimeStateQueryType()</span></span>                                                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-175">public QueryGroupByField groupByField(int index, \[QueryBuildDataSource dataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-175">public QueryGroupByField groupByField(int index, \[QueryBuildDataSource dataSource\])</span></span>                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-176">public int groupByFieldCount(\[QueryBuildDataSource dataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-176">public int groupByFieldCount(\[QueryBuildDataSource dataSource\])</span></span>                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-177">public boolean hasMultipleTopLevelDataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-177">public boolean hasMultipleTopLevelDataSource()</span></span>                                                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-178">public boolean hasRangeOrFilter(QueryBuildDataSource dataSource)</span><span class="sxs-lookup"><span data-stu-id="4e468-178">public boolean hasRangeOrFilter(QueryBuildDataSource dataSource)</span></span>                                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-179">public QueryHavingFilter havingFilter(int count, \[QueryBuildDataSource dataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-179">public QueryHavingFilter havingFilter(int count, \[QueryBuildDataSource dataSource\])</span></span>                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-180">public int havingFilterCount(\[QueryBuildDataSource dataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-180">public int havingFilterCount(\[QueryBuildDataSource dataSource\])</span></span>                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-181">public boolean inReport()</span><span class="sxs-lookup"><span data-stu-id="4e468-181">public boolean inReport()</span></span>                                                                                                                                              | <span data-ttu-id="4e468-182">クエリがレポートの一部であるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-182">Determines whether the query is part of a report.</span></span>                                                                                         |
-| <span data-ttu-id="4e468-183">public boolean interactive(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-183">public boolean interactive(\[boolean value\])</span></span>                                                                                                                          | <span data-ttu-id="4e468-184">クエリが対話的かどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-184">Specifies whether the query is interactive.</span></span>                                                                                               |
-| <span data-ttu-id="4e468-185">public boolean isCompositeQuery()</span><span class="sxs-lookup"><span data-stu-id="4e468-185">public boolean isCompositeQuery()</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-186">public boolean isExplicitlyOrdered()</span><span class="sxs-lookup"><span data-stu-id="4e468-186">public boolean isExplicitlyOrdered()</span></span>                                                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-187">public boolean isExplicitlyGrouped()</span><span class="sxs-lookup"><span data-stu-id="4e468-187">public boolean isExplicitlyGrouped()</span></span>                                                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-188">public boolean isPureUnionAll()</span><span class="sxs-lookup"><span data-stu-id="4e468-188">public boolean isPureUnionAll()</span></span>                                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-189">public boolean isUnionType()</span><span class="sxs-lookup"><span data-stu-id="4e468-189">public boolean isUnionType()</span></span>                                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-190">public int levelNo(int dataSourceNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-190">public int levelNo(int dataSourceNo)</span></span>                                                                                                                                   | <span data-ttu-id="4e468-191">指定されたデータ ソースのインデントのレベルを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-191">Determines the level of indentation of the specified data source.</span></span>                                                                         |
-| <span data-ttu-id="4e468-192">public int levelTable(TableId table, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-192">public int levelTable(TableId table, \[int occurrence\])</span></span>                                                                                                               | <span data-ttu-id="4e468-193">指定したテーブルに割り当てられているデータ ソースのツリー レベルを、データ ソースの階層内で決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-193">Determines the tree level, in the hierarchy of data sources, of the data source that is assigned to the specified table.</span></span>                  |
-| <span data-ttu-id="4e468-194">public int literals(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-194">public int literals(\[int value\])</span></span>                                                                                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-195">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-195">public str name(\[str value\])</span></span>                                                                                                                                         | <span data-ttu-id="4e468-196">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-196">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="4e468-197">public Query newObject(AnyType source)</span><span class="sxs-lookup"><span data-stu-id="4e468-197">public Query newObject(AnyType source)</span></span>                                                                                                                                 | <span data-ttu-id="4e468-198">ソース クエリとして同じクライアント側、またはサーバー側で存在するクエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="4e468-198">Creates a query that exists on the same client side or server side as the source query.</span></span>                                                   |
-| <span data-ttu-id="4e468-199">public int nextUniqueId(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-199">public int nextUniqueId(\[int value\])</span></span>                                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-200">public QueryOrderByField orderByField(int index, \[QueryBuildDataSource dataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-200">public QueryOrderByField orderByField(int index, \[QueryBuildDataSource dataSource\])</span></span>                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-201">public int orderByFieldCount(\[QueryBuildDataSource dataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-201">public int orderByFieldCount(\[QueryBuildDataSource dataSource\])</span></span>                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-202">public Guid origin(\[Guid value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-202">public Guid origin(\[Guid value\])</span></span>                                                                                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-203">public container pack(\[boolean doCheck\])</span><span class="sxs-lookup"><span data-stu-id="4e468-203">public container pack(\[boolean doCheck\])</span></span>                                                                                                                             | <span data-ttu-id="4e468-204">コンテナーにクエリをパックし、クエリを作成するときに使用できるようにそのコンテナーを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-204">Packs the query into a container and returns that container, so that it can be used when you create a query.</span></span>                              |
-| <span data-ttu-id="4e468-205">public container packInternals()</span><span class="sxs-lookup"><span data-stu-id="4e468-205">public container packInternals()</span></span>                                                                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-206">public QueryFilter queryFilter(int count, \[QueryBuildDataSource rootDataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-206">public QueryFilter queryFilter(int count, \[QueryBuildDataSource rootDataSource\])</span></span>                                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-207">public int queryFilterCount(\[QueryBuildDataSource rootDataSource\])</span><span class="sxs-lookup"><span data-stu-id="4e468-207">public int queryFilterCount(\[QueryBuildDataSource rootDataSource\])</span></span>                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-208">public int queryType(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-208">public int queryType(\[int value\])</span></span>                                                                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-209">public str quickFilterValue()</span><span class="sxs-lookup"><span data-stu-id="4e468-209">public str quickFilterValue()</span></span>                                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-210">public int quickFilterControlId()</span><span class="sxs-lookup"><span data-stu-id="4e468-210">public int quickFilterControlId()</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-211">public boolean recordLevelSecurity(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-211">public boolean recordLevelSecurity(\[boolean value\])</span></span>                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-212">public Report report()</span><span class="sxs-lookup"><span data-stu-id="4e468-212">public Report report()</span></span>                                                                                                                                                 | <span data-ttu-id="4e468-213">レポートが存在する場合、クエリが定義されているレポートを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-213">Returns the report in which the query is defined, if the report exists.</span></span>                                                                   |
-| <span data-ttu-id="4e468-214">public boolean saved()</span><span class="sxs-lookup"><span data-stu-id="4e468-214">public boolean saved()</span></span>                                                                                                                                                 | <span data-ttu-id="4e468-215">クエリがディスクに保存されたかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="4e468-215">Indicates whether the query has been saved to disk.</span></span>                                                                                       |
-| <span data-ttu-id="4e468-216">public boolean searchable(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-216">public boolean searchable(\[boolean value\])</span></span>                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-217">public Guid importSession(\[Guid value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-217">public Guid importSession(\[Guid value\])</span></span>                                                                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-218">public str title(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-218">public str title(\[str value\])</span></span>                                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-219">public int topRows(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-219">public int topRows(\[int value\])</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-220">public str toString()</span><span class="sxs-lookup"><span data-stu-id="4e468-220">public str toString()</span></span>                                                                                                                                                  | <span data-ttu-id="4e468-221">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-221">Returns a string that represents the current object.</span></span>                                                                                      |
-| <span data-ttu-id="4e468-222">public boolean userUpdate(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-222">public boolean userUpdate(\[boolean value\])</span></span>                                                                                                                           | <span data-ttu-id="4e468-223">フェッチされたレコードをクエリが更新できるかどうかを示す値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-223">Gets or sets a value that indicates whether the query can update the records that it fetches.</span></span>                                             |
-| <span data-ttu-id="4e468-224">public Date validTimeStateAsOfDate(\[Date asOfDate\])</span><span class="sxs-lookup"><span data-stu-id="4e468-224">public Date validTimeStateAsOfDate(\[Date asOfDate\])</span></span>                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-225">public DateTime validTimeStateAsOfDateTime(\[DateTime asOfDateTime\])</span><span class="sxs-lookup"><span data-stu-id="4e468-225">public DateTime validTimeStateAsOfDateTime(\[DateTime asOfDateTime\])</span></span>                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-226">public int validTimeStateFlags(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-226">public int validTimeStateFlags(\[int value\])</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-227">public int version(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-227">public int version(\[int value\])</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-228">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="4e468-228">public str xml(\[int indent\])</span></span>                                                                                                                                         | <span data-ttu-id="4e468-229">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-229">Returns an XML string that represents the current object.</span></span>                                                                                 |
-| <span data-ttu-id="4e468-230">public void clearBaseQueries()</span><span class="sxs-lookup"><span data-stu-id="4e468-230">public void clearBaseQueries()</span></span>                                                                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-231">public void addCompanyRange(str companyName)</span><span class="sxs-lookup"><span data-stu-id="4e468-231">public void addCompanyRange(str companyName)</span></span>                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-232">public void checkRangeParsingErrors(boolean setCheckRangeParsingErrors)</span><span class="sxs-lookup"><span data-stu-id="4e468-232">public void checkRangeParsingErrors(boolean setCheckRangeParsingErrors)</span></span>                                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-233">public void clearCompanyRange()</span><span class="sxs-lookup"><span data-stu-id="4e468-233">public void clearCompanyRange()</span></span>                                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-234">public void unpackInternals(container internalData)</span><span class="sxs-lookup"><span data-stu-id="4e468-234">public void unpackInternals(container internalData)</span></span>                                                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-235">public void new(\[AnyType source\])</span><span class="sxs-lookup"><span data-stu-id="4e468-235">public void new(\[AnyType source\])</span></span>                                                                                                                                    | <span data-ttu-id="4e468-236">クエリ オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4e468-236">Creates a query object.</span></span>                                                                                                                   |
-| <span data-ttu-id="4e468-237">public void checkFieldAccess(boolean setCheckFieldAccess)</span><span class="sxs-lookup"><span data-stu-id="4e468-237">public void checkFieldAccess(boolean setCheckFieldAccess)</span></span>                                                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-238">public void useDbCacheOnGeneratedCursors(\[int fetchsize\])</span><span class="sxs-lookup"><span data-stu-id="4e468-238">public void useDbCacheOnGeneratedCursors(\[int fetchsize\])</span></span>                                                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-239">public void setValidTimeStateQueryType(\[ValidTimeStateQueryType type\])</span><span class="sxs-lookup"><span data-stu-id="4e468-239">public void setValidTimeStateQueryType(\[ValidTimeStateQueryType type\])</span></span>                                                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-240">public void validTimeStateDateRange(\[Date fromDate\], \[Date toDate\])</span><span class="sxs-lookup"><span data-stu-id="4e468-240">public void validTimeStateDateRange(\[Date fromDate\], \[Date toDate\])</span></span>                                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-241">public void clearHavingFilters(\[QueryBuildDataSource dataSource\], \[str fieldName\], \[int occurence\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-241">public void clearHavingFilters(\[QueryBuildDataSource dataSource\], \[str fieldName\], \[int occurence\], \[int arrayIndex\])</span></span>                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-242">public void quickFilter(\[str dataSourceName\], \[int tableId\], \[int fieldId\], \[str filterValue\], \[int controlId\], \[boolean useEqualityComparisonForStrings\])</span><span class="sxs-lookup"><span data-stu-id="4e468-242">public void quickFilter(\[str dataSourceName\], \[int tableId\], \[int fieldId\], \[str filterValue\], \[int controlId\], \[boolean useEqualityComparisonForStrings\])</span></span> |                                                                                                                                           |
-| <span data-ttu-id="4e468-243">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-243">public void finalize()</span></span>                                                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-244">public void clearQueryFilters(\[QueryBuildDataSource dataSource\], \[str fieldName\], \[int occurence\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-244">public void clearQueryFilters(\[QueryBuildDataSource dataSource\], \[str fieldName\], \[int occurence\], \[int arrayIndex\])</span></span>                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-245">public void clearOrderBy()</span><span class="sxs-lookup"><span data-stu-id="4e468-245">public void clearOrderBy()</span></span>                                                                                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-246">public void clearAllFields()</span><span class="sxs-lookup"><span data-stu-id="4e468-246">public void clearAllFields()</span></span>                                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-247">public void clearGroupBy()</span><span class="sxs-lookup"><span data-stu-id="4e468-247">public void clearGroupBy()</span></span>                                                                                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-248">public void autoAuthzMode(AutoAuthzMode mode)</span><span class="sxs-lookup"><span data-stu-id="4e468-248">public void autoAuthzMode(AutoAuthzMode mode)</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-249">::public static void insert\_recordset(Common targetCursor, Map targetToSourceMap, Query sourceQuery)</span><span class="sxs-lookup"><span data-stu-id="4e468-249">::public static void insert\_recordset(Common targetCursor, Map targetToSourceMap, Query sourceQuery)</span></span>                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-250">public void generateCursors()</span><span class="sxs-lookup"><span data-stu-id="4e468-250">public void generateCursors()</span></span>                                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-251">public void checkAuthorizationOnOpenRanges(boolean setCheckAuthorizationOnOpenRanges)</span><span class="sxs-lookup"><span data-stu-id="4e468-251">public void checkAuthorizationOnOpenRanges(boolean setCheckAuthorizationOnOpenRanges)</span></span>                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-252">public void addContains(str containsValue, \[boolean prefixSearch\])</span><span class="sxs-lookup"><span data-stu-id="4e468-252">public void addContains(str containsValue, \[boolean prefixSearch\])</span></span>                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-253">public void resetValidTimeStateQueryType()</span><span class="sxs-lookup"><span data-stu-id="4e468-253">public void resetValidTimeStateQueryType()</span></span>                                                                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-254">public void validTimeStateDateTimeRange(\[DateTime fromDateTime\], \[DateTime toDateTime\])</span><span class="sxs-lookup"><span data-stu-id="4e468-254">public void validTimeStateDateTimeRange(\[DateTime fromDateTime\], \[DateTime toDateTime\])</span></span>                                                                            |                                                                                                                                           |
-
-### <a name="method-addbasequery"></a><span data-ttu-id="4e468-255">メソッド addBaseQuery</span><span class="sxs-lookup"><span data-stu-id="4e468-255">Method addBaseQuery</span></span>
-
-    public Query addBaseQuery(str queryName)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-256">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-256">Parameters</span></span>
-
-<span data-ttu-id="4e468-257">queryName</span><span class="sxs-lookup"><span data-stu-id="4e468-257">queryName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-258">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-258">Return Value</span></span>
-
-### <a name="method-adddatasource"></a><span data-ttu-id="4e468-259">メソッド addDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-259">Method addDataSource</span></span>
-
-<span data-ttu-id="4e468-260">クエリのトップ レベルにデータ ソースを追加します。</span><span class="sxs-lookup"><span data-stu-id="4e468-260">Adds a data source to the top level of the query.</span></span>
-
-    public QueryBuildDataSource addDataSource(TableId table, [str name], [UnionType unionType], [boolean emptyFieldList])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-261">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-261">Parameters</span></span>
-
-<span data-ttu-id="4e468-262">テーブル</span><span class="sxs-lookup"><span data-stu-id="4e468-262">table</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-263">名前</span><span class="sxs-lookup"><span data-stu-id="4e468-263">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-264">unionType</span><span class="sxs-lookup"><span data-stu-id="4e468-264">unionType</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-265">emptyFieldList</span><span class="sxs-lookup"><span data-stu-id="4e468-265">emptyFieldList</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-266">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-266">Return Value</span></span>
-
-<span data-ttu-id="4e468-267">作成されたデータ ソース オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="4e468-267">The data source object that is created.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-268">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-268">Remarks</span></span>
-
-<span data-ttu-id="4e468-269">文書作成のために名前の値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-269">A name value can be specified for documentation purposes.</span></span> <span data-ttu-id="4e468-270">dataSourceName メソッドを使用してデータ ソースをフェッチする名前を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-270">You can use the name to fetch the data source by using the dataSourceName method.</span></span>
-
-### <a name="method-addhavingfilter"></a><span data-ttu-id="4e468-271">メソッド addHavingFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-271">Method addHavingFilter</span></span>
-
-    public QueryHavingFilter addHavingFilter(QueryBuildDataSource dataSource, str fieldName, AggregateFunction aggregateFunction, [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-272">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-272">Parameters</span></span>
-
-<span data-ttu-id="4e468-273">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-273">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-274">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-274">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-275">aggregateFunction</span><span class="sxs-lookup"><span data-stu-id="4e468-275">aggregateFunction</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-276">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-276">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-277">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-277">Return Value</span></span>
-
-### <a name="method-addqueryfilter"></a><span data-ttu-id="4e468-278">メソッド addQueryFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-278">Method addQueryFilter</span></span>
-
-    public QueryFilter addQueryFilter(QueryBuildDataSource dataSource, str fieldName, [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-279">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-279">Parameters</span></span>
-
-<span data-ttu-id="4e468-280">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-280">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-281">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-281">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-282">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-282">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-283">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-283">Return Value</span></span>
-
-### <a name="method-allowcheck"></a><span data-ttu-id="4e468-284">メソッド allowCheck</span><span class="sxs-lookup"><span data-stu-id="4e468-284">Method allowCheck</span></span>
-
-    public boolean allowCheck([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-285">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-285">Parameters</span></span>
-
-<span data-ttu-id="4e468-286">値</span><span class="sxs-lookup"><span data-stu-id="4e468-286">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-287">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-287">Return Value</span></span>
-
-### <a name="method-allowcrosscompany"></a><span data-ttu-id="4e468-288">メソッド allowCrossCompany</span><span class="sxs-lookup"><span data-stu-id="4e468-288">Method allowCrossCompany</span></span>
-
-    public boolean allowCrossCompany([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-289">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-289">Parameters</span></span>
-
-<span data-ttu-id="4e468-290">値</span><span class="sxs-lookup"><span data-stu-id="4e468-290">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-291">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-291">Return Value</span></span>
-
-### <a name="method-allowhavingfilters"></a><span data-ttu-id="4e468-292">メソッド allowHavingFilters</span><span class="sxs-lookup"><span data-stu-id="4e468-292">Method allowHavingFilters</span></span>
-
-    public boolean allowHavingFilters(QueryBuildDataSource dataSource, FieldName fieldName, AggregateFunction aggregateFunction)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-293">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-293">Parameters</span></span>
-
-<span data-ttu-id="4e468-294">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-294">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-295">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-295">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-296">aggregateFunction</span><span class="sxs-lookup"><span data-stu-id="4e468-296">aggregateFunction</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-297">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-297">Return Value</span></span>
-
-### <a name="method-allowqueryfilters"></a><span data-ttu-id="4e468-298">メソッド allowQueryFilters</span><span class="sxs-lookup"><span data-stu-id="4e468-298">Method allowQueryFilters</span></span>
-
-    public boolean allowQueryFilters(QueryBuildDataSource dataSource)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-299">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-299">Parameters</span></span>
-
-<span data-ttu-id="4e468-300">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-300">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-301">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-301">Return Value</span></span>
-
-### <a name="method-changedby"></a><span data-ttu-id="4e468-302">メソッド changedBy</span><span class="sxs-lookup"><span data-stu-id="4e468-302">Method changedBy</span></span>
-
-<span data-ttu-id="4e468-303">クエリ オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-303">Gets or sets the name of the user who last changed the Query object.</span></span>
-
-    public str changedBy([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-304">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-304">Parameters</span></span>
-
-<span data-ttu-id="4e468-305">値</span><span class="sxs-lookup"><span data-stu-id="4e468-305">value</span></span>  
-<span data-ttu-id="4e468-306">クエリ オブジェクトを最後に変更したユーザーの名前 (オプション)。</span><span class="sxs-lookup"><span data-stu-id="4e468-306">The name of the user who last changed the Query object; optional.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-307">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-307">Return Value</span></span>
-
-<span data-ttu-id="4e468-308">クエリ オブジェクトを最後に変更したユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-308">The name of the user who last changed the Query object.</span></span>
-
-### <a name="method-changeddate"></a><span data-ttu-id="4e468-309">メソッド changedDate</span><span class="sxs-lookup"><span data-stu-id="4e468-309">Method changedDate</span></span>
-
-<span data-ttu-id="4e468-310">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-310">Gets or sets the date an application object was last changed.</span></span>
-
-    public Date changedDate([Date value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-311">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-311">Parameters</span></span>
-
-<span data-ttu-id="4e468-312">値</span><span class="sxs-lookup"><span data-stu-id="4e468-312">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-313">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-313">Return Value</span></span>
-
-<span data-ttu-id="4e468-314">アプリケーション オブジェクトが最後に変更された日付。</span><span class="sxs-lookup"><span data-stu-id="4e468-314">The date an application object was last changed.</span></span>
-
-### <a name="method-changedtime"></a><span data-ttu-id="4e468-315">メソッド changedTime</span><span class="sxs-lookup"><span data-stu-id="4e468-315">Method changedTime</span></span>
-
-<span data-ttu-id="4e468-316">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-316">Gets or sets the time an application object was last changed.</span></span>
-
-    public str changedTime([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-317">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-317">Parameters</span></span>
-
-<span data-ttu-id="4e468-318">値</span><span class="sxs-lookup"><span data-stu-id="4e468-318">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-319">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-319">Return Value</span></span>
-
-<span data-ttu-id="4e468-320">アプリケーション オブジェクトが最後に変更された時間。</span><span class="sxs-lookup"><span data-stu-id="4e468-320">The time an application object was last changed.</span></span>
-
-### <a name="method-childdatasourcecount"></a><span data-ttu-id="4e468-321">メソッド childDataSourceCount</span><span class="sxs-lookup"><span data-stu-id="4e468-321">Method childDataSourceCount</span></span>
-
-<span data-ttu-id="4e468-322">クエリに関連するデータ ソースの数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="4e468-322">Counts the number of data sources that are related to the query.</span></span>
-
-    public int childDataSourceCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-323">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-323">Return Value</span></span>
-
-<span data-ttu-id="4e468-324">このクエリに関連するデータ ソースの数。</span><span class="sxs-lookup"><span data-stu-id="4e468-324">The number of data sources that are related to the query.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-325">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-325">Remarks</span></span>
-
-<span data-ttu-id="4e468-326">このメソッドは、トップレベルのクエリに使用されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-326">This method is used for the top-level query.</span></span> <span data-ttu-id="4e468-327">別のデータ ソースに埋め込まれているデータ ソースの数を確認するには、childDataSourceCount メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="4e468-327">To determine the number of data sources that are embedded in another data source, use the childDataSourceCount method.</span></span>
-
-### <a name="method-childdatasourceno"></a><span data-ttu-id="4e468-328">メソッド childDataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-328">Method childDataSourceNo</span></span>
-
-<span data-ttu-id="4e468-329">指定された番号に対応するデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-329">Returns the child data source that corresponds to the specified number.</span></span>
-
-    public QueryBuildDataSource childDataSourceNo(int dataSourceNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-330">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-330">Parameters</span></span>
-
-<span data-ttu-id="4e468-331">dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-331">dataSourceNo</span></span>  
-<span data-ttu-id="4e468-332">子データ ソースの番号。</span><span class="sxs-lookup"><span data-stu-id="4e468-332">The number of the child data source.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-333">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-333">Return Value</span></span>
-
-<span data-ttu-id="4e468-334">指定された番号を持つ子データ ソース。</span><span class="sxs-lookup"><span data-stu-id="4e468-334">The child data source that has the specified number.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-335">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-335">Remarks</span></span>
-
-<span data-ttu-id="4e468-336">指定された数値は、クエリのすぐ下にあるデータ ソースを表す必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-336">The number that is specified must represent a data source that is immediately underneath the query.</span></span> <span data-ttu-id="4e468-337">通常、このようなデータ ソースは 1 つだけです。</span><span class="sxs-lookup"><span data-stu-id="4e468-337">Typically, there is only one such data source.</span></span>
-
-### <a name="method-containsaggregatefields"></a><span data-ttu-id="4e468-338">メソッド containsAggregateFields</span><span class="sxs-lookup"><span data-stu-id="4e468-338">Method containsAggregateFields</span></span>
-
-    public boolean containsAggregateFields()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-339">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-339">Return Value</span></span>
-
-### <a name="method-createdby"></a><span data-ttu-id="4e468-340">メソッド createdBy</span><span class="sxs-lookup"><span data-stu-id="4e468-340">Method createdBy</span></span>
-
-<span data-ttu-id="4e468-341">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-341">Gets or sets the name of the user who created the application object.</span></span>
-
-    public str createdBy([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-342">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-342">Parameters</span></span>
-
-<span data-ttu-id="4e468-343">値</span><span class="sxs-lookup"><span data-stu-id="4e468-343">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-344">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-344">Return Value</span></span>
-
-<span data-ttu-id="4e468-345">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-345">The name of the user.</span></span>
-
-### <a name="method-creationdate"></a><span data-ttu-id="4e468-346">メソッド creationDate</span><span class="sxs-lookup"><span data-stu-id="4e468-346">Method creationDate</span></span>
-
-<span data-ttu-id="4e468-347">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-347">Gets or sets the date an application object was created.</span></span>
-
-    public Date creationDate([Date value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-348">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-348">Parameters</span></span>
-
-<span data-ttu-id="4e468-349">値</span><span class="sxs-lookup"><span data-stu-id="4e468-349">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-350">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-350">Return Value</span></span>
-
-<span data-ttu-id="4e468-351">アプリケーション オブジェクトが作成された日付。</span><span class="sxs-lookup"><span data-stu-id="4e468-351">The date an application object was created.</span></span>
-
-### <a name="method-creationtime"></a><span data-ttu-id="4e468-352">メソッド creationTime</span><span class="sxs-lookup"><span data-stu-id="4e468-352">Method creationTime</span></span>
-
-    public str creationTime([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-353">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-353">Parameters</span></span>
-
-<span data-ttu-id="4e468-354">値</span><span class="sxs-lookup"><span data-stu-id="4e468-354">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-355">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-355">Return Value</span></span>
-
-### <a name="method-datasourcecount"></a><span data-ttu-id="4e468-356">メソッド dataSourceCount</span><span class="sxs-lookup"><span data-stu-id="4e468-356">Method dataSourceCount</span></span>
-
-<span data-ttu-id="4e468-357">埋め込みデータ ソースを含む、クエリのデータ ソースの合計数を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-357">Returns the total number of data sources for the query, including any embedded data sources.</span></span>
-
-    public int dataSourceCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-358">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-358">Return Value</span></span>
-
-<span data-ttu-id="4e468-359">このクエリのデータ ソースの数。</span><span class="sxs-lookup"><span data-stu-id="4e468-359">The number of data sources for this query.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-360">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-360">Remarks</span></span>
-
-<span data-ttu-id="4e468-361">この番号は、データ ソースの推移的な番号であり、任意の埋め込みデータ ソースが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4e468-361">The number is the transitive number of data sources and includes any embedded data sources.</span></span>
-
-### <a name="method-datasourcename"></a><span data-ttu-id="4e468-362">メソッド dataSourceName</span><span class="sxs-lookup"><span data-stu-id="4e468-362">Method dataSourceName</span></span>
-
-<span data-ttu-id="4e468-363">指定された名前を持つデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-363">Returns the data source that has the specified name.</span></span>
-
-    public QueryBuildDataSource dataSourceName(str name)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-364">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-364">Parameters</span></span>
-
-<span data-ttu-id="4e468-365">名前</span><span class="sxs-lookup"><span data-stu-id="4e468-365">name</span></span>  
-<span data-ttu-id="4e468-366">返すデータソースの名前を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-366">The string that contains the name of the data source to return.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-367">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-367">Return Value</span></span>
-
-<span data-ttu-id="4e468-368">指定した名前を持つデータ ソース。指定されたデータ ソースが存在しない場合は、初期化されていないオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="4e468-368">The data source that has the specified name; an uninitialized object if the specified data source does not exist.</span></span>
-
-### <a name="method-datasourceno"></a><span data-ttu-id="4e468-369">メソッド dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-369">Method dataSourceNo</span></span>
-
-<span data-ttu-id="4e468-370">データ ソース番号により指定されたデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-370">Returns the data source that is specified by the data source number.</span></span>
-
-    public QueryBuildDataSource dataSourceNo(int dataSourceNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-371">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-371">Parameters</span></span>
-
-<span data-ttu-id="4e468-372">dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-372">dataSourceNo</span></span>  
-<span data-ttu-id="4e468-373">データ ソースの番号。</span><span class="sxs-lookup"><span data-stu-id="4e468-373">The number of the data source.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-374">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-374">Return Value</span></span>
-
-<span data-ttu-id="4e468-375">指定した番号を持つデータ ソース。指定されたデータ ソースが存在しない場合は、初期化されていないオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="4e468-375">The data source that has the specified number; an uninitialized object if the specified data source does not exist.</span></span>
-
-### <a name="method-datasourcetable"></a><span data-ttu-id="4e468-376">メソッド dataSourceTable</span><span class="sxs-lookup"><span data-stu-id="4e468-376">Method dataSourceTable</span></span>
-
-<span data-ttu-id="4e468-377">指定されたテーブルが割り当てられているデータ ソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-377">Returns the data source that the specified table is assigned to.</span></span>
-
-    public QueryBuildDataSource dataSourceTable(TableId table, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-378">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-378">Parameters</span></span>
-
-<span data-ttu-id="4e468-379">テーブル</span><span class="sxs-lookup"><span data-stu-id="4e468-379">table</span></span>  
-<span data-ttu-id="4e468-380">複数のデータ ソースが指定されたテーブル ID を使用する場合に使用される整数。オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-380">An integer that is used when more than one data source uses the specified table ID; optional.</span></span> <span data-ttu-id="4e468-381">既定値は 1で、最初の (通常は唯一の) インスタンスを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-381">The default value is 1, which specifies the first (and typically only) instance.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="4e468-382">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-382">occurrence</span></span>  
-<span data-ttu-id="4e468-383">複数のデータ ソースが指定されたテーブル ID を使用する場合に使用される整数。オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-383">An integer that is used when more than one data source uses the specified table ID; optional.</span></span> <span data-ttu-id="4e468-384">既定値は 1で、最初の (通常は唯一の) インスタンスを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-384">The default value is 1, which specifies the first (and typically only) instance.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-385">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-385">Return Value</span></span>
-
-<span data-ttu-id="4e468-386">指定されたテーブルが割り当てられているデータ ソース。</span><span class="sxs-lookup"><span data-stu-id="4e468-386">The data source that the specified table is assigned to.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-387">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-387">Remarks</span></span>
-
-<span data-ttu-id="4e468-388">データ ソースは、dataSourceNo メソッドまたは dataSourceName メソッドを呼び出すことによって取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-388">The data source can also be retrieved by calling the dataSourceNo method or the dataSourceName method.</span></span>
-
-### <a name="method-datasourceuniqueid"></a><span data-ttu-id="4e468-389">メソッド dataSourceUniqueId</span><span class="sxs-lookup"><span data-stu-id="4e468-389">Method dataSourceUniqueId</span></span>
-
-    public QueryBuildDataSource dataSourceUniqueId(int uniqueId)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-390">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-390">Parameters</span></span>
-
-<span data-ttu-id="4e468-391">uniqueId</span><span class="sxs-lookup"><span data-stu-id="4e468-391">uniqueId</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-392">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-392">Return Value</span></span>
-
-### <a name="method-description"></a><span data-ttu-id="4e468-393">メソッドの説明</span><span class="sxs-lookup"><span data-stu-id="4e468-393">Method description</span></span>
-
-    public str description([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-394">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-394">Parameters</span></span>
-
-<span data-ttu-id="4e468-395">値</span><span class="sxs-lookup"><span data-stu-id="4e468-395">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-396">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-396">Return Value</span></span>
-
-### <a name="method-equal"></a><span data-ttu-id="4e468-397">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="4e468-397">Method equal</span></span>
-
-<span data-ttu-id="4e468-398">あるクエリが別のクエリと等しいかどうかを評価します。</span><span class="sxs-lookup"><span data-stu-id="4e468-398">Evaluates whether one query is equal to another.</span></span>
-
-    public boolean equal(Object record)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-399">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-399">Parameters</span></span>
-
-<span data-ttu-id="4e468-400">記録</span><span class="sxs-lookup"><span data-stu-id="4e468-400">record</span></span>  
-<span data-ttu-id="4e468-401">比較として使用するクエリです。</span><span class="sxs-lookup"><span data-stu-id="4e468-401">The query to use as a comparison.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-402">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-402">Return Value</span></span>
-
-<span data-ttu-id="4e468-403">クエリが等しい場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-403">true if the queries are equal; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-404">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-404">Remarks</span></span>
-
-<span data-ttu-id="4e468-405">この場合、「等しい」は、クエリが比較されるクエリと構造的に同一であることを意味します。</span><span class="sxs-lookup"><span data-stu-id="4e468-405">"Equal" in this case means that the query is structurally identical to the query that it is compared to.</span></span> <span data-ttu-id="4e468-406">クエリには、同じファイルに割り当てられたデータ ソースと同じ数のデータ ソースがあり、同じ数の範囲があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-406">The query has the same number of data sources assigned to the same files, and it has the same number of ranges.</span></span>
-
-### <a name="method-exportxml"></a><span data-ttu-id="4e468-407">メソッド exportXML</span><span class="sxs-lookup"><span data-stu-id="4e468-407">Method exportXML</span></span>
-
-    public str exportXML()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-408">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-408">Return Value</span></span>
-
-### <a name="method-findhavingfilterbyfield"></a><span data-ttu-id="4e468-409">メソッド findHavingFilterByField</span><span class="sxs-lookup"><span data-stu-id="4e468-409">Method findHavingFilterByField</span></span>
-
-    public QueryHavingFilter findHavingFilterByField(QueryBuildDataSource dataSource, FieldName fieldName, [int occurrence], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-410">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-410">Parameters</span></span>
-
-<span data-ttu-id="4e468-411">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-411">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-412">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-412">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-413">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-413">occurrence</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-414">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-414">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-415">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-415">Return Value</span></span>
-
-### <a name="method-findqueryfilter"></a><span data-ttu-id="4e468-416">メソッド findQueryFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-416">Method findQueryFilter</span></span>
-
-    public QueryFilter findQueryFilter(QueryBuildDataSource dataSource, FieldName fieldName, [int occurrence], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-417">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-417">Parameters</span></span>
-
-<span data-ttu-id="4e468-418">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-418">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-419">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-419">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-420">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-420">occurrence</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-421">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-421">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-422">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-422">Return Value</span></span>
-
-### <a name="method-firsttopleveldatasource"></a><span data-ttu-id="4e468-423">メソッド firstTopLevelDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-423">Method firstTopLevelDataSource</span></span>
-
-    public QueryBuildDataSource firstTopLevelDataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-424">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-424">Return Value</span></span>
-
-### <a name="method-forcenestedloop"></a><span data-ttu-id="4e468-425">メソッド forceNestedLoop</span><span class="sxs-lookup"><span data-stu-id="4e468-425">Method forceNestedLoop</span></span>
-
-    public boolean forceNestedLoop(boolean arg)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-426">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-426">Parameters</span></span>
-
-<span data-ttu-id="4e468-427">arg</span><span class="sxs-lookup"><span data-stu-id="4e468-427">arg</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-428">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-428">Return Value</span></span>
-
-### <a name="method-forceselectorder"></a><span data-ttu-id="4e468-429">メソッド forceSelectOrder</span><span class="sxs-lookup"><span data-stu-id="4e468-429">Method forceSelectOrder</span></span>
-
-    public boolean forceSelectOrder(boolean arg)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-430">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-430">Parameters</span></span>
-
-<span data-ttu-id="4e468-431">arg</span><span class="sxs-lookup"><span data-stu-id="4e468-431">arg</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-432">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-432">Return Value</span></span>
-
-### <a name="method-form"></a><span data-ttu-id="4e468-433">メソッド form</span><span class="sxs-lookup"><span data-stu-id="4e468-433">Method form</span></span>
-
-    public str form([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-434">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-434">Parameters</span></span>
-
-<span data-ttu-id="4e468-435">値</span><span class="sxs-lookup"><span data-stu-id="4e468-435">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-436">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-436">Return Value</span></span>
-
-### <a name="method-getcompanyrange"></a><span data-ttu-id="4e468-437">メソッド getCompanyRange</span><span class="sxs-lookup"><span data-stu-id="4e468-437">Method getCompanyRange</span></span>
-
-    public container getCompanyRange()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-438">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-438">Return Value</span></span>
-
-### <a name="method-getmostrestrictedqueryfilterstatus"></a><span data-ttu-id="4e468-439">メソッド getMostRestrictedQueryFilterStatus</span><span class="sxs-lookup"><span data-stu-id="4e468-439">Method getMostRestrictedQueryFilterStatus</span></span>
-
-    public int getMostRestrictedQueryFilterStatus(QueryBuildDataSource dataSource, FieldName fieldName, [int fieldId])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-440">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-440">Parameters</span></span>
-
-<span data-ttu-id="4e468-441">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-441">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-442">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-442">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-443">fieldId</span><span class="sxs-lookup"><span data-stu-id="4e468-443">fieldId</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-444">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-444">Return Value</span></span>
-
-### <a name="method-getnextuniqueid"></a><span data-ttu-id="4e468-445">メソッド getNextUniqueId</span><span class="sxs-lookup"><span data-stu-id="4e468-445">Method getNextUniqueId</span></span>
-
-    public int getNextUniqueId()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-446">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-446">Return Value</span></span>
-
-### <a name="method-getsqlstatement"></a><span data-ttu-id="4e468-447">メソッド getSQLStatement</span><span class="sxs-lookup"><span data-stu-id="4e468-447">Method getSQLStatement</span></span>
-
-    public str getSQLStatement([boolean noRuntimeOptimization])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-448">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-448">Parameters</span></span>
-
-<span data-ttu-id="4e468-449">noRuntimeOptimization</span><span class="sxs-lookup"><span data-stu-id="4e468-449">noRuntimeOptimization</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-450">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-450">Return Value</span></span>
-
-### <a name="method-getvalidtimestatedaterange"></a><span data-ttu-id="4e468-451">メソッド getValidTimeStateDateRange</span><span class="sxs-lookup"><span data-stu-id="4e468-451">Method getValidTimeStateDateRange</span></span>
-
-    public container getValidTimeStateDateRange()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-452">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-452">Return Value</span></span>
-
-### <a name="method-getvalidtimestatedatetimerange"></a><span data-ttu-id="4e468-453">メソッド getValidTimeStateDateTimeRange</span><span class="sxs-lookup"><span data-stu-id="4e468-453">Method getValidTimeStateDateTimeRange</span></span>
-
-    public container getValidTimeStateDateTimeRange()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-454">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-454">Return Value</span></span>
-
-### <a name="method-getvalidtimestatequerytype"></a><span data-ttu-id="4e468-455">メソッド getValidTimeStateQueryType</span><span class="sxs-lookup"><span data-stu-id="4e468-455">Method getValidTimeStateQueryType</span></span>
-
-    public ValidTimeStateQueryType getValidTimeStateQueryType()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-456">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-456">Return Value</span></span>
-
-### <a name="method-groupbyfield"></a><span data-ttu-id="4e468-457">メソッド groupByField</span><span class="sxs-lookup"><span data-stu-id="4e468-457">Method groupByField</span></span>
-
-    public QueryGroupByField groupByField(int index, [QueryBuildDataSource dataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-458">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-458">Parameters</span></span>
-
-<span data-ttu-id="4e468-459">指数</span><span class="sxs-lookup"><span data-stu-id="4e468-459">index</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-460">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-460">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-461">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-461">Return Value</span></span>
-
-### <a name="method-groupbyfieldcount"></a><span data-ttu-id="4e468-462">メソッド groupByFieldCount</span><span class="sxs-lookup"><span data-stu-id="4e468-462">Method groupByFieldCount</span></span>
-
-    public int groupByFieldCount([QueryBuildDataSource dataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-463">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-463">Parameters</span></span>
-
-<span data-ttu-id="4e468-464">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-464">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-465">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-465">Return Value</span></span>
-
-### <a name="method-hasmultipletopleveldatasource"></a><span data-ttu-id="4e468-466">メソッド hasMultipleTopLevelDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-466">Method hasMultipleTopLevelDataSource</span></span>
-
-    public boolean hasMultipleTopLevelDataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-467">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-467">Return Value</span></span>
-
-### <a name="method-hasrangeorfilter"></a><span data-ttu-id="4e468-468">メソッド hasRangeOrFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-468">Method hasRangeOrFilter</span></span>
-
-    public boolean hasRangeOrFilter(QueryBuildDataSource dataSource)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-469">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-469">Parameters</span></span>
-
-<span data-ttu-id="4e468-470">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-470">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-471">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-471">Return Value</span></span>
-
-### <a name="method-havingfilter"></a><span data-ttu-id="4e468-472">メソッド havingFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-472">Method havingFilter</span></span>
-
-    public QueryHavingFilter havingFilter(int count, [QueryBuildDataSource dataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-473">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-473">Parameters</span></span>
-
-<span data-ttu-id="4e468-474">カウント</span><span class="sxs-lookup"><span data-stu-id="4e468-474">count</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-475">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-475">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-476">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-476">Return Value</span></span>
-
-### <a name="method-havingfiltercount"></a><span data-ttu-id="4e468-477">メソッド havingFilterCount</span><span class="sxs-lookup"><span data-stu-id="4e468-477">Method havingFilterCount</span></span>
-
-    public int havingFilterCount([QueryBuildDataSource dataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-478">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-478">Parameters</span></span>
-
-<span data-ttu-id="4e468-479">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-479">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-480">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-480">Return Value</span></span>
-
-### <a name="method-inreport"></a><span data-ttu-id="4e468-481">メソッド inReport</span><span class="sxs-lookup"><span data-stu-id="4e468-481">Method inReport</span></span>
-
-<span data-ttu-id="4e468-482">クエリがレポートの一部であるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-482">Determines whether the query is part of a report.</span></span>
-
-    public boolean inReport()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-483">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-483">Return Value</span></span>
-
-<span data-ttu-id="4e468-484">クエリがレポートの一部である場合は (レポートのデータ ソース ノードの下にある場合は) true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-484">true if the query is part of a report (is found under a report's data sources node); otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-485">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-485">Remarks</span></span>
-
-<span data-ttu-id="4e468-486">この関数は、通常アプリケーション コードでは使用されません。</span><span class="sxs-lookup"><span data-stu-id="4e468-486">This function is not typically used by application code.</span></span> <span data-ttu-id="4e468-487">メソッドが true を返す場合は、レポート メソッドはクエリが定義されているレポートにアクセスするために使用することができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-487">If the method returns true, the report method can be used to access the report in which the query is defined.</span></span>
-
-### <a name="method-interactive"></a><span data-ttu-id="4e468-488">メソッド interactive</span><span class="sxs-lookup"><span data-stu-id="4e468-488">Method interactive</span></span>
-
-<span data-ttu-id="4e468-489">クエリが対話的かどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-489">Specifies whether the query is interactive.</span></span>
-
-    public boolean interactive([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-490">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-490">Parameters</span></span>
-
-<span data-ttu-id="4e468-491">値</span><span class="sxs-lookup"><span data-stu-id="4e468-491">value</span></span>  
-<span data-ttu-id="4e468-492">クエリがインタラクティブかどうかを示す値、オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-492">A value that indicates whether the query is interactive; optional.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-493">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-493">Return Value</span></span>
-
-<span data-ttu-id="4e468-494">クエリが対話形式である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-494">true if the query is interactive; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-495">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-495">Remarks</span></span>
-
-<span data-ttu-id="4e468-496">対話型クエリでは、たとえば prompt メソッドが呼び出されたときに、クエリはユーザーにダイアログ ボックスを提示できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-496">In an interactive query, the query can, for example, present the user with a dialog box when the prompt method is called.</span></span> <span data-ttu-id="4e468-497">この機能は、コードをバッチに送信する場合や、コードを無人で実行する必要がある場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-497">This functionality is used when code will be submitted to a batch and in other situations where code must run unattended.</span></span>
-
-### <a name="method-iscompositequery"></a><span data-ttu-id="4e468-498">メソッド isCompositeQuery</span><span class="sxs-lookup"><span data-stu-id="4e468-498">Method isCompositeQuery</span></span>
-
-    public boolean isCompositeQuery()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-499">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-499">Return Value</span></span>
-
-### <a name="method-isexplicitlyordered"></a><span data-ttu-id="4e468-500">メソッド isExplicitlyOrdered</span><span class="sxs-lookup"><span data-stu-id="4e468-500">Method isExplicitlyOrdered</span></span>
-
-    public boolean isExplicitlyOrdered()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-501">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-501">Return Value</span></span>
-
-### <a name="method-isexplicitlygrouped"></a><span data-ttu-id="4e468-502">メソッド isExplicitlyGrouped</span><span class="sxs-lookup"><span data-stu-id="4e468-502">Method isExplicitlyGrouped</span></span>
-
-    public boolean isExplicitlyGrouped()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-503">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-503">Return Value</span></span>
-
-### <a name="method-ispureunionall"></a><span data-ttu-id="4e468-504">メソッド isPureUnionAll</span><span class="sxs-lookup"><span data-stu-id="4e468-504">Method isPureUnionAll</span></span>
-
-    public boolean isPureUnionAll()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-505">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-505">Return Value</span></span>
-
-### <a name="method-isuniontype"></a><span data-ttu-id="4e468-506">メソッド isUnionType</span><span class="sxs-lookup"><span data-stu-id="4e468-506">Method isUnionType</span></span>
-
-    public boolean isUnionType()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-507">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-507">Return Value</span></span>
-
-### <a name="method-levelno"></a><span data-ttu-id="4e468-508">メソッド levelNo</span><span class="sxs-lookup"><span data-stu-id="4e468-508">Method levelNo</span></span>
-
-<span data-ttu-id="4e468-509">指定されたデータ ソースのインデントのレベルを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-509">Determines the level of indentation of the specified data source.</span></span>
-
-    public int levelNo(int dataSourceNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-510">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-510">Parameters</span></span>
-
-<span data-ttu-id="4e468-511">dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-511">dataSourceNo</span></span>  
-<span data-ttu-id="4e468-512">データ ソースのレベルを決定する番号。</span><span class="sxs-lookup"><span data-stu-id="4e468-512">The data source number to determine the level for.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-513">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-513">Return Value</span></span>
-
-<span data-ttu-id="4e468-514">指定されたデータ ソースのレベル番号。</span><span class="sxs-lookup"><span data-stu-id="4e468-514">The level number of the specified data source.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-515">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-515">Remarks</span></span>
-
-<span data-ttu-id="4e468-516">データソースは、1 から順に番号付けされます。</span><span class="sxs-lookup"><span data-stu-id="4e468-516">The data sources are numbered consecutively, starting at 1.</span></span>
-
-### <a name="method-leveltable"></a><span data-ttu-id="4e468-517">メソッド levelTable</span><span class="sxs-lookup"><span data-stu-id="4e468-517">Method levelTable</span></span>
-
-<span data-ttu-id="4e468-518">指定したテーブルに割り当てられているデータ ソースのツリー レベルを、データ ソースの階層内で決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-518">Determines the tree level, in the hierarchy of data sources, of the data source that is assigned to the specified table.</span></span>
-
-    public int levelTable(TableId table, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-519">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-519">Parameters</span></span>
-
-<span data-ttu-id="4e468-520">テーブル</span><span class="sxs-lookup"><span data-stu-id="4e468-520">table</span></span>  
-<span data-ttu-id="4e468-521">複数のデータ ソースが同じテーブルに割り当てられる場合に使用される整数。オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-521">The integer that is used if more than one data source is assigned to the same table; optional.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="4e468-522">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-522">occurrence</span></span>  
-<span data-ttu-id="4e468-523">複数のデータ ソースが同じテーブルに割り当てられる場合に使用される整数。オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-523">The integer that is used if more than one data source is assigned to the same table; optional.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-524">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-524">Return Value</span></span>
-
-<span data-ttu-id="4e468-525">クエリの指定されたデータ ソースのレベル番号。</span><span class="sxs-lookup"><span data-stu-id="4e468-525">The level number of the query's specified data source.</span></span>
-
-### <a name="method-literals"></a><span data-ttu-id="4e468-526">メソッド literals</span><span class="sxs-lookup"><span data-stu-id="4e468-526">Method literals</span></span>
-
-    public int literals([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-527">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-527">Parameters</span></span>
-
-<span data-ttu-id="4e468-528">値</span><span class="sxs-lookup"><span data-stu-id="4e468-528">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-529">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-529">Return Value</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="4e468-530">メソッド名</span><span class="sxs-lookup"><span data-stu-id="4e468-530">Method name</span></span>
-
-<span data-ttu-id="4e468-531">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-531">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
-
-    public str name([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-532">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-532">Parameters</span></span>
-
-<span data-ttu-id="4e468-533">値</span><span class="sxs-lookup"><span data-stu-id="4e468-533">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-534">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-534">Return Value</span></span>
-
-<span data-ttu-id="4e468-535">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-535">The name that is used in code to identify an application object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-536">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-536">Remarks</span></span>
-
-<span data-ttu-id="4e468-537">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-537">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
-
--   <span data-ttu-id="4e468-538">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="4e468-538">Begins with a letter.</span></span>
--   <span data-ttu-id="4e468-539">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="4e468-539">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="4e468-540">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-540">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="4e468-541">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-541">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="4e468-542">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-542">Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</span></span>
-
-### <a name="method-newobject"></a><span data-ttu-id="4e468-543">メソッド newObject</span><span class="sxs-lookup"><span data-stu-id="4e468-543">Method newObject</span></span>
-
-<span data-ttu-id="4e468-544">ソース クエリとして同じクライアント側、またはサーバー側で存在するクエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="4e468-544">Creates a query that exists on the same client side or server side as the source query.</span></span>
-
-    public Query newObject(AnyType source)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-545">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-545">Parameters</span></span>
-
-<span data-ttu-id="4e468-546">ソース</span><span class="sxs-lookup"><span data-stu-id="4e468-546">source</span></span>  
-<span data-ttu-id="4e468-547">ソース クエリ。</span><span class="sxs-lookup"><span data-stu-id="4e468-547">The source query.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-548">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-548">Return Value</span></span>
-
-<span data-ttu-id="4e468-549">新しいクエリ。</span><span class="sxs-lookup"><span data-stu-id="4e468-549">The new query.</span></span>
-
-### <a name="method-nextuniqueid"></a><span data-ttu-id="4e468-550">メソッド nextUniqueId</span><span class="sxs-lookup"><span data-stu-id="4e468-550">Method nextUniqueId</span></span>
-
-    public int nextUniqueId([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-551">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-551">Parameters</span></span>
-
-<span data-ttu-id="4e468-552">値</span><span class="sxs-lookup"><span data-stu-id="4e468-552">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-553">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-553">Return Value</span></span>
-
-### <a name="method-orderbyfield"></a><span data-ttu-id="4e468-554">メソッド orderByField</span><span class="sxs-lookup"><span data-stu-id="4e468-554">Method orderByField</span></span>
-
-    public QueryOrderByField orderByField(int index, [QueryBuildDataSource dataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-555">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-555">Parameters</span></span>
-
-<span data-ttu-id="4e468-556">指数</span><span class="sxs-lookup"><span data-stu-id="4e468-556">index</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-557">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-557">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-558">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-558">Return Value</span></span>
-
-### <a name="method-orderbyfieldcount"></a><span data-ttu-id="4e468-559">メソッド orderByFieldCount</span><span class="sxs-lookup"><span data-stu-id="4e468-559">Method orderByFieldCount</span></span>
-
-    public int orderByFieldCount([QueryBuildDataSource dataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-560">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-560">Parameters</span></span>
-
-<span data-ttu-id="4e468-561">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-561">dataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-562">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-562">Return Value</span></span>
-
-### <a name="method-origin"></a><span data-ttu-id="4e468-563">メソッド origin</span><span class="sxs-lookup"><span data-stu-id="4e468-563">Method origin</span></span>
-
-    public Guid origin([Guid value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-564">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-564">Parameters</span></span>
-
-<span data-ttu-id="4e468-565">値</span><span class="sxs-lookup"><span data-stu-id="4e468-565">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-566">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-566">Return Value</span></span>
-
-### <a name="method-pack"></a><span data-ttu-id="4e468-567">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="4e468-567">Method pack</span></span>
-
-<span data-ttu-id="4e468-568">コンテナーにクエリをパックし、クエリを作成するときに使用できるようにそのコンテナーを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-568">Packs the query into a container and returns that container, so that it can be used when you create a query.</span></span>
-
-    public container pack([boolean doCheck])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-569">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-569">Parameters</span></span>
-
-<span data-ttu-id="4e468-570">doCheck</span><span class="sxs-lookup"><span data-stu-id="4e468-570">doCheck</span></span>  
-<span data-ttu-id="4e468-571">クエリのデーターソースが外部のカーソルを参照する (クエリのデータソースを外部のカーソルへリンクするなど) ときに、エラーフラグを設定するかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-571">A Boolean value that indicates whether to flag an error when a data source in the query references an outside cursor, such as a link to a cursor that is foreign to the query's data source; optional.</span></span> <span data-ttu-id="4e468-572">既定値は、true で、制約が適用されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-572">The default value is true, which enforces the constraint.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-573">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-573">Return Value</span></span>
-
-<span data-ttu-id="4e468-574">クエリを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="4e468-574">The container that holds the query.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-575">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-575">Remarks</span></span>
-
-<span data-ttu-id="4e468-576">このメソッドで作成されたコンテナーは、新しいメソッドまたは newObject メソッドのいずれかを使用して query オブジェクトまたは queryRun オブジェクトをインスタンス化するときに入力として機能します。</span><span class="sxs-lookup"><span data-stu-id="4e468-576">The container that is created by this method can serve as input when you instantiate a query or queryRun object by using either the new method or the newObject method.</span></span> <span data-ttu-id="4e468-577">クエリのデータ ソースとは異なるカーソルへのリンクは、コンテナーにパックされません。</span><span class="sxs-lookup"><span data-stu-id="4e468-577">Links to cursors that are foreign to the query's data source are not packed into the container.</span></span> <span data-ttu-id="4e468-578">この種類のリンクをパックする必要がある場合は、カーソルのデータのスナップショットを取得し、各フィールドの範囲を作成します。</span><span class="sxs-lookup"><span data-stu-id="4e468-578">If you must pack this kind of link, you should take a snapshot of the cursor's data and construct ranges for each field.</span></span>
-
-### <a name="method-packinternals"></a><span data-ttu-id="4e468-579">メソッド packInternals</span><span class="sxs-lookup"><span data-stu-id="4e468-579">Method packInternals</span></span>
-
-    public container packInternals()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-580">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-580">Return Value</span></span>
-
-### <a name="method-queryfilter"></a><span data-ttu-id="4e468-581">メソッド queryFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-581">Method queryFilter</span></span>
-
-    public QueryFilter queryFilter(int count, [QueryBuildDataSource rootDataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-582">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-582">Parameters</span></span>
-
-<span data-ttu-id="4e468-583">カウント</span><span class="sxs-lookup"><span data-stu-id="4e468-583">count</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-584">rootDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-584">rootDataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-585">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-585">Return Value</span></span>
-
-### <a name="method-queryfiltercount"></a><span data-ttu-id="4e468-586">メソッド queryFilterCount</span><span class="sxs-lookup"><span data-stu-id="4e468-586">Method queryFilterCount</span></span>
-
-    public int queryFilterCount([QueryBuildDataSource rootDataSource])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-587">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-587">Parameters</span></span>
-
-<span data-ttu-id="4e468-588">rootDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-588">rootDataSource</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-589">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-589">Return Value</span></span>
-
-### <a name="method-querytype"></a><span data-ttu-id="4e468-590">メソッド queryType</span><span class="sxs-lookup"><span data-stu-id="4e468-590">Method queryType</span></span>
-
-    public int queryType([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-591">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-591">Parameters</span></span>
-
-<span data-ttu-id="4e468-592">値</span><span class="sxs-lookup"><span data-stu-id="4e468-592">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-593">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-593">Return Value</span></span>
-
-### <a name="method-quickfiltervalue"></a><span data-ttu-id="4e468-594">メソッド quickFilterValue</span><span class="sxs-lookup"><span data-stu-id="4e468-594">Method quickFilterValue</span></span>
-
-    public str quickFilterValue()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-595">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-595">Return Value</span></span>
-
-### <a name="method-quickfiltercontrolid"></a><span data-ttu-id="4e468-596">メソッド quickFilterControlId</span><span class="sxs-lookup"><span data-stu-id="4e468-596">Method quickFilterControlId</span></span>
-
-    public int quickFilterControlId()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-597">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-597">Return Value</span></span>
-
-### <a name="method-recordlevelsecurity"></a><span data-ttu-id="4e468-598">メソッド recordLevelSecurity</span><span class="sxs-lookup"><span data-stu-id="4e468-598">Method recordLevelSecurity</span></span>
-
-    public boolean recordLevelSecurity([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-599">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-599">Parameters</span></span>
-
-<span data-ttu-id="4e468-600">値</span><span class="sxs-lookup"><span data-stu-id="4e468-600">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-601">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-601">Return Value</span></span>
-
-### <a name="method-report"></a><span data-ttu-id="4e468-602">メソッド report</span><span class="sxs-lookup"><span data-stu-id="4e468-602">Method report</span></span>
-
-<span data-ttu-id="4e468-603">レポートが存在する場合、クエリが定義されているレポートを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-603">Returns the report in which the query is defined, if the report exists.</span></span>
-
-    public Report report()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-604">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-604">Return Value</span></span>
-
-<span data-ttu-id="4e468-605">クエリがデータ ソース ノードの下で定義されているレポート。</span><span class="sxs-lookup"><span data-stu-id="4e468-605">The report in which the query is defined under the data sources node.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-606">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-606">Remarks</span></span>
-
-<span data-ttu-id="4e468-607">クエリは、必ずしもレポートのコンテキストで定義されているとは限りません。</span><span class="sxs-lookup"><span data-stu-id="4e468-607">A query is not necessarily defined in the context of a report.</span></span> <span data-ttu-id="4e468-608">レポートのコンテキストでクエリが定義されているかどうかを確認するには、inReport メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="4e468-608">To determine whether a query is defined in the context of a report, you can use the inReport method.</span></span>
-
-### <a name="method-saved"></a><span data-ttu-id="4e468-609">メソッド saved</span><span class="sxs-lookup"><span data-stu-id="4e468-609">Method saved</span></span>
-
-<span data-ttu-id="4e468-610">クエリがディスクに保存されたかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="4e468-610">Indicates whether the query has been saved to disk.</span></span>
-
-    public boolean saved()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-611">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-611">Return Value</span></span>
-
-<span data-ttu-id="4e468-612">クエリがディスクに保存されている場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-612">true if the query has been saved to disk; otherwise, false.</span></span>
-
-### <a name="method-searchable"></a><span data-ttu-id="4e468-613">メソッド searchable</span><span class="sxs-lookup"><span data-stu-id="4e468-613">Method searchable</span></span>
-
-    public boolean searchable([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-614">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-614">Parameters</span></span>
-
-<span data-ttu-id="4e468-615">値</span><span class="sxs-lookup"><span data-stu-id="4e468-615">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-616">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-616">Return Value</span></span>
-
-### <a name="method-importsession"></a><span data-ttu-id="4e468-617">メソッド importSession</span><span class="sxs-lookup"><span data-stu-id="4e468-617">Method importSession</span></span>
-
-    public Guid importSession([Guid value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-618">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-618">Parameters</span></span>
-
-<span data-ttu-id="4e468-619">値</span><span class="sxs-lookup"><span data-stu-id="4e468-619">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-620">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-620">Return Value</span></span>
-
-### <a name="method-title"></a><span data-ttu-id="4e468-621">メソッド title</span><span class="sxs-lookup"><span data-stu-id="4e468-621">Method title</span></span>
-
-    public str title([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-622">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-622">Parameters</span></span>
-
-<span data-ttu-id="4e468-623">値</span><span class="sxs-lookup"><span data-stu-id="4e468-623">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-624">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-624">Return Value</span></span>
-
-### <a name="method-toprows"></a><span data-ttu-id="4e468-625">メソッド topRows</span><span class="sxs-lookup"><span data-stu-id="4e468-625">Method topRows</span></span>
-
-    public int topRows([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-626">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-626">Parameters</span></span>
-
-<span data-ttu-id="4e468-627">値</span><span class="sxs-lookup"><span data-stu-id="4e468-627">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-628">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-628">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="4e468-629">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="4e468-629">Method toString</span></span>
-
-<span data-ttu-id="4e468-630">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-630">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-631">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-631">Return Value</span></span>
-
-<span data-ttu-id="4e468-632">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-632">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-633">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-633">Remarks</span></span>
-
-<span data-ttu-id="4e468-634">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-634">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="4e468-635">ただし、メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-635">However, the method can be overridden in a derived class so that it returns values that are meaningful for that type.</span></span> <span data-ttu-id="4e468-636">たとえば、SysMethodInfo クラスのインスタンスは、メソッド名、およびインスタンスまたは静的などのメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-636">For example, an instance of the SysMethodInfo class returns the method name, and the type of method, such as Instance or Static.</span></span>
-
-### <a name="method-userupdate"></a><span data-ttu-id="4e468-637">メソッド userUpdate</span><span class="sxs-lookup"><span data-stu-id="4e468-637">Method userUpdate</span></span>
-
-<span data-ttu-id="4e468-638">フェッチされたレコードをクエリが更新できるかどうかを示す値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-638">Gets or sets a value that indicates whether the query can update the records that it fetches.</span></span>
-
-    public boolean userUpdate([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-639">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-639">Parameters</span></span>
-
-<span data-ttu-id="4e468-640">値</span><span class="sxs-lookup"><span data-stu-id="4e468-640">value</span></span>  
-<span data-ttu-id="4e468-641">フェッチされたレコードをクエリが更新できるかどうかを示すブール値; オプション。</span><span class="sxs-lookup"><span data-stu-id="4e468-641">A Boolean value that indicates whether the query can update the records that it fetches; optional.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-642">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-642">Return Value</span></span>
-
-<span data-ttu-id="4e468-643">クエリがフェッチ対象のレコードを現在更新することができる場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="4e468-643">true if the query can currently update records that it fetches; otherwise false.</span></span>
-
-### <a name="method-validtimestateasofdate"></a><span data-ttu-id="4e468-644">メソッド validTimeStateAsOfDate</span><span class="sxs-lookup"><span data-stu-id="4e468-644">Method validTimeStateAsOfDate</span></span>
-
-    public Date validTimeStateAsOfDate([Date asOfDate])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-645">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-645">Parameters</span></span>
-
-<span data-ttu-id="4e468-646">asOfDate</span><span class="sxs-lookup"><span data-stu-id="4e468-646">asOfDate</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-647">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-647">Return Value</span></span>
-
-### <a name="method-validtimestateasofdatetime"></a><span data-ttu-id="4e468-648">メソッド validTimeStateAsOfDateTime</span><span class="sxs-lookup"><span data-stu-id="4e468-648">Method validTimeStateAsOfDateTime</span></span>
-
-    public DateTime validTimeStateAsOfDateTime([DateTime asOfDateTime])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-649">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-649">Parameters</span></span>
-
-<span data-ttu-id="4e468-650">asOfDateTime</span><span class="sxs-lookup"><span data-stu-id="4e468-650">asOfDateTime</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-651">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-651">Return Value</span></span>
-
-### <a name="method-validtimestateflags"></a><span data-ttu-id="4e468-652">メソッド validTimeStateFlags</span><span class="sxs-lookup"><span data-stu-id="4e468-652">Method validTimeStateFlags</span></span>
-
-    public int validTimeStateFlags([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-653">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-653">Parameters</span></span>
-
-<span data-ttu-id="4e468-654">値</span><span class="sxs-lookup"><span data-stu-id="4e468-654">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-655">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-655">Return Value</span></span>
-
-### <a name="method-version"></a><span data-ttu-id="4e468-656">メソッド version</span><span class="sxs-lookup"><span data-stu-id="4e468-656">Method version</span></span>
-
-    public int version([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-657">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-657">Parameters</span></span>
-
-<span data-ttu-id="4e468-658">値</span><span class="sxs-lookup"><span data-stu-id="4e468-658">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-659">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-659">Return Value</span></span>
-
-### <a name="method-xml"></a><span data-ttu-id="4e468-660">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="4e468-660">Method xml</span></span>
-
-<span data-ttu-id="4e468-661">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-661">Returns an XML string that represents the current object.</span></span>
-
-    public str xml([int indent])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-662">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-662">Parameters</span></span>
-
-<span data-ttu-id="4e468-663">インデント</span><span class="sxs-lookup"><span data-stu-id="4e468-663">indent</span></span>  
-<span data-ttu-id="4e468-664">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="4e468-664">The amount of indentation for the returned XML string; optional.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-665">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-665">Return Value</span></span>
-
-<span data-ttu-id="4e468-666">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="4e468-666">An XML string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-667">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-667">Remarks</span></span>
-
-<span data-ttu-id="4e468-668">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-668">This method can be overridden to return values that are meaningful for that type.</span></span>
-
-### <a name="method-clearbasequeries"></a><span data-ttu-id="4e468-669">メソッド clearBaseQueries</span><span class="sxs-lookup"><span data-stu-id="4e468-669">Method clearBaseQueries</span></span>
-
-    public void clearBaseQueries()
-
-### <a name="method-addcompanyrange"></a><span data-ttu-id="4e468-670">メソッド addCompanyRange</span><span class="sxs-lookup"><span data-stu-id="4e468-670">Method addCompanyRange</span></span>
-
-    public void addCompanyRange(str companyName)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-671">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-671">Parameters</span></span>
-
-<span data-ttu-id="4e468-672">companyName</span><span class="sxs-lookup"><span data-stu-id="4e468-672">companyName</span></span>  
-
-### <a name="method-checkrangeparsingerrors"></a><span data-ttu-id="4e468-673">メソッド checkRangeParsingErrors</span><span class="sxs-lookup"><span data-stu-id="4e468-673">Method checkRangeParsingErrors</span></span>
-
-    public void checkRangeParsingErrors(boolean setCheckRangeParsingErrors)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-674">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-674">Parameters</span></span>
-
-<span data-ttu-id="4e468-675">setCheckRangeParsingErrors</span><span class="sxs-lookup"><span data-stu-id="4e468-675">setCheckRangeParsingErrors</span></span>  
-
-### <a name="method-clearcompanyrange"></a><span data-ttu-id="4e468-676">メソッド clearCompanyRange</span><span class="sxs-lookup"><span data-stu-id="4e468-676">Method clearCompanyRange</span></span>
-
-    public void clearCompanyRange()
-
-### <a name="method-unpackinternals"></a><span data-ttu-id="4e468-677">メソッド unpackInternals</span><span class="sxs-lookup"><span data-stu-id="4e468-677">Method unpackInternals</span></span>
-
-    public void unpackInternals(container internalData)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-678">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-678">Parameters</span></span>
-
-<span data-ttu-id="4e468-679">internalData</span><span class="sxs-lookup"><span data-stu-id="4e468-679">internalData</span></span>  
-
-### <a name="method-new"></a><span data-ttu-id="4e468-680">メソッド new</span><span class="sxs-lookup"><span data-stu-id="4e468-680">Method new</span></span>
-
-<span data-ttu-id="4e468-681">クエリ オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4e468-681">Creates a query object.</span></span>
-
-    public void new([AnyType source])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-682">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-682">Parameters</span></span>
-
-<span data-ttu-id="4e468-683">ソース</span><span class="sxs-lookup"><span data-stu-id="4e468-683">source</span></span>  
-<span data-ttu-id="4e468-684">クエリ オブジェクトを基にするソース (オプション)。</span><span class="sxs-lookup"><span data-stu-id="4e468-684">The source to base the query object on; optional.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-685">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-685">Remarks</span></span>
-
-<span data-ttu-id="4e468-686">このメソッドが呼び出されときに引数を指定すると、将来使用するために、Finance and Operations アプリケーション オブジェクト ツリー (AOT) で保存されていない一時的なクエリが作成されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-686">If no arguments are supplied when this method is called, a temporary query is created that is not stored in the Finance and Operations Application Object Tree (AOT) for subsequent use.</span></span>
-
-### <a name="method-checkfieldaccess"></a><span data-ttu-id="4e468-687">メソッド checkFieldAccess</span><span class="sxs-lookup"><span data-stu-id="4e468-687">Method checkFieldAccess</span></span>
-
-    public void checkFieldAccess(boolean setCheckFieldAccess)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-688">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-688">Parameters</span></span>
-
-<span data-ttu-id="4e468-689">setCheckFieldAccess</span><span class="sxs-lookup"><span data-stu-id="4e468-689">setCheckFieldAccess</span></span>  
-
-### <a name="method-usedbcacheongeneratedcursors"></a><span data-ttu-id="4e468-690">メソッド useDbCacheOnGeneratedCursors</span><span class="sxs-lookup"><span data-stu-id="4e468-690">Method useDbCacheOnGeneratedCursors</span></span>
-
-    public void useDbCacheOnGeneratedCursors([int fetchsize])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-691">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-691">Parameters</span></span>
-
-<span data-ttu-id="4e468-692">fetchsize</span><span class="sxs-lookup"><span data-stu-id="4e468-692">fetchsize</span></span>  
-
-### <a name="method-setvalidtimestatequerytype"></a><span data-ttu-id="4e468-693">メソッド setValidTimeStateQueryType</span><span class="sxs-lookup"><span data-stu-id="4e468-693">Method setValidTimeStateQueryType</span></span>
-
-    public void setValidTimeStateQueryType([ValidTimeStateQueryType type])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-694">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-694">Parameters</span></span>
-
-<span data-ttu-id="4e468-695">タイプ</span><span class="sxs-lookup"><span data-stu-id="4e468-695">type</span></span>  
-
-### <a name="method-validtimestatedaterange"></a><span data-ttu-id="4e468-696">メソッド validTimeStateDateRange</span><span class="sxs-lookup"><span data-stu-id="4e468-696">Method validTimeStateDateRange</span></span>
-
-    public void validTimeStateDateRange([Date fromDate], [Date toDate])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-697">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-697">Parameters</span></span>
-
-<span data-ttu-id="4e468-698">fromDate</span><span class="sxs-lookup"><span data-stu-id="4e468-698">fromDate</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-699">toDate</span><span class="sxs-lookup"><span data-stu-id="4e468-699">toDate</span></span>  
-
-### <a name="method-clearhavingfilters"></a><span data-ttu-id="4e468-700">メソッド clearHavingFilters</span><span class="sxs-lookup"><span data-stu-id="4e468-700">Method clearHavingFilters</span></span>
-
-    public void clearHavingFilters([QueryBuildDataSource dataSource], [str fieldName], [int occurence], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-701">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-701">Parameters</span></span>
-
-<span data-ttu-id="4e468-702">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-702">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-703">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-703">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-704">occurence</span><span class="sxs-lookup"><span data-stu-id="4e468-704">occurence</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-705">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-705">arrayIndex</span></span>  
-
-### <a name="method-quickfilter"></a><span data-ttu-id="4e468-706">メソッド quickFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-706">Method quickFilter</span></span>
-
-    public void quickFilter([str dataSourceName], [int tableId], [int fieldId], [str filterValue], [int controlId], [boolean useEqualityComparisonForStrings])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-707">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-707">Parameters</span></span>
-
-<span data-ttu-id="4e468-708">dataSourceName</span><span class="sxs-lookup"><span data-stu-id="4e468-708">dataSourceName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-709">tableId</span><span class="sxs-lookup"><span data-stu-id="4e468-709">tableId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-710">fieldId</span><span class="sxs-lookup"><span data-stu-id="4e468-710">fieldId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-711">filterValue</span><span class="sxs-lookup"><span data-stu-id="4e468-711">filterValue</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-712">controlId</span><span class="sxs-lookup"><span data-stu-id="4e468-712">controlId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-713">useEqualityComparisonForStrings</span><span class="sxs-lookup"><span data-stu-id="4e468-713">useEqualityComparisonForStrings</span></span>  
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-714">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-714">Method finalize</span></span>
-
-    public void finalize()
-
-### <a name="method-clearqueryfilters"></a><span data-ttu-id="4e468-715">メソッド clearQueryFilters</span><span class="sxs-lookup"><span data-stu-id="4e468-715">Method clearQueryFilters</span></span>
-
-    public void clearQueryFilters([QueryBuildDataSource dataSource], [str fieldName], [int occurence], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-716">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-716">Parameters</span></span>
-
-<span data-ttu-id="4e468-717">dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-717">dataSource</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-718">fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-718">fieldName</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-719">occurence</span><span class="sxs-lookup"><span data-stu-id="4e468-719">occurence</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-720">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-720">arrayIndex</span></span>  
-
-### <a name="method-clearorderby"></a><span data-ttu-id="4e468-721">メソッド clearOrderBy</span><span class="sxs-lookup"><span data-stu-id="4e468-721">Method clearOrderBy</span></span>
-
-    public void clearOrderBy()
-
-### <a name="method-clearallfields"></a><span data-ttu-id="4e468-722">メソッド clearAllFields</span><span class="sxs-lookup"><span data-stu-id="4e468-722">Method clearAllFields</span></span>
-
-    public void clearAllFields()
-
-### <a name="method-cleargroupby"></a><span data-ttu-id="4e468-723">メソッド clearGroupBy</span><span class="sxs-lookup"><span data-stu-id="4e468-723">Method clearGroupBy</span></span>
-
-    public void clearGroupBy()
-
-### <a name="method-autoauthzmode"></a><span data-ttu-id="4e468-724">メソッド autoAuthzMode</span><span class="sxs-lookup"><span data-stu-id="4e468-724">Method autoAuthzMode</span></span>
-
-    public void autoAuthzMode(AutoAuthzMode mode)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-725">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-725">Parameters</span></span>
-
-<span data-ttu-id="4e468-726">モード</span><span class="sxs-lookup"><span data-stu-id="4e468-726">mode</span></span>  
-
-### <a name="method-insertrecordset"></a><span data-ttu-id="4e468-727">メソッド insert\_recordset</span><span class="sxs-lookup"><span data-stu-id="4e468-727">Method insert\_recordset</span></span>
-
-    public static void insert_recordset(Common targetCursor, Map targetToSourceMap, Query sourceQuery)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-728">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-728">Parameters</span></span>
-
-<span data-ttu-id="4e468-729">targetCursor</span><span class="sxs-lookup"><span data-stu-id="4e468-729">targetCursor</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-730">targetToSourceMap</span><span class="sxs-lookup"><span data-stu-id="4e468-730">targetToSourceMap</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-731">sourceQuery</span><span class="sxs-lookup"><span data-stu-id="4e468-731">sourceQuery</span></span>  
-
-### <a name="method-generatecursors"></a><span data-ttu-id="4e468-732">メソッド generateCursors</span><span class="sxs-lookup"><span data-stu-id="4e468-732">Method generateCursors</span></span>
-
-    public void generateCursors()
-
-### <a name="method-checkauthorizationonopenranges"></a><span data-ttu-id="4e468-733">メソッド checkAuthorizationOnOpenRanges</span><span class="sxs-lookup"><span data-stu-id="4e468-733">Method checkAuthorizationOnOpenRanges</span></span>
-
-    public void checkAuthorizationOnOpenRanges(boolean setCheckAuthorizationOnOpenRanges)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-734">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-734">Parameters</span></span>
-
-<span data-ttu-id="4e468-735">setCheckAuthorizationOnOpenRanges</span><span class="sxs-lookup"><span data-stu-id="4e468-735">setCheckAuthorizationOnOpenRanges</span></span>  
-
-### <a name="method-addcontains"></a><span data-ttu-id="4e468-736">メソッド addContains</span><span class="sxs-lookup"><span data-stu-id="4e468-736">Method addContains</span></span>
-
-    public void addContains(str containsValue, [boolean prefixSearch])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-737">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-737">Parameters</span></span>
-
-<span data-ttu-id="4e468-738">containsValue</span><span class="sxs-lookup"><span data-stu-id="4e468-738">containsValue</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-739">prefixSearch</span><span class="sxs-lookup"><span data-stu-id="4e468-739">prefixSearch</span></span>  
-
-### <a name="method-resetvalidtimestatequerytype"></a><span data-ttu-id="4e468-740">メソッド resetValidTimeStateQueryType</span><span class="sxs-lookup"><span data-stu-id="4e468-740">Method resetValidTimeStateQueryType</span></span>
-
-    public void resetValidTimeStateQueryType()
-
-### <a name="method-validtimestatedatetimerange"></a><span data-ttu-id="4e468-741">メソッド validTimeStateDateTimeRange</span><span class="sxs-lookup"><span data-stu-id="4e468-741">Method validTimeStateDateTimeRange</span></span>
-
-    public void validTimeStateDateTimeRange([DateTime fromDateTime], [DateTime toDateTime])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-742">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-742">Parameters</span></span>
-
-<span data-ttu-id="4e468-743">fromDateTime</span><span class="sxs-lookup"><span data-stu-id="4e468-743">fromDateTime</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-744">toDateTime</span><span class="sxs-lookup"><span data-stu-id="4e468-744">toDateTime</span></span>  
-
-## <a name="class-querybuilddatasource"></a><span data-ttu-id="4e468-745">クラス QueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-745">Class QueryBuildDataSource</span></span>
-    class QueryBuildDataSource extends TreeNode
-
-<span data-ttu-id="4e468-746">QueryBuildDataSource クラスは、クエリが構成されているレポート パーツを提供します。</span><span class="sxs-lookup"><span data-stu-id="4e468-746">The QueryBuildDataSource class provides the building blocks that queries are made of.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-747">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-747">Remarks</span></span>
-
-<span data-ttu-id="4e468-748">データ ソースは、データ ソースに割り当てられたテーブルからレコードがフェッチされる順序を定義する階層内で配置されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-748">Data sources are arranged in hierarchies that define the sequence in which records are fetched from the tables that are assigned to the data sources.</span></span> <span data-ttu-id="4e468-749">各データ ソースでは、レコードがフェッチされる順序および選択されたレコードによって満たされなければならない基準を定義します。</span><span class="sxs-lookup"><span data-stu-id="4e468-749">Each data source defines the order in which the records are fetched, and also the criteria that must be met by the selected records.</span></span> <span data-ttu-id="4e468-750">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-750">This class lets you create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="4e468-751">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="4e468-751">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-752">例</span><span class="sxs-lookup"><span data-stu-id="4e468-752">Examples</span></span>
-
-    {    QueryBuildDataSource ds;    Query q = new Query();        ds = q.addDataSource(        TableNum(CustTable));}
-
-### <a name="methods"></a><span data-ttu-id="4e468-753">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-753">Methods</span></span>
-
-| <span data-ttu-id="4e468-754">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-754">Method</span></span>                                                                                                                                                       | <span data-ttu-id="4e468-755">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-755">Description</span></span>                                                                                                                               |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4e468-756">public int addAllFields(TableName tableName)</span><span class="sxs-lookup"><span data-stu-id="4e468-756">public int addAllFields(TableName tableName)</span></span>                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-757">public QueryBuildDataSource addDataSource(AnyType arg, \[str name\], \[boolean emptyFieldList\])</span><span class="sxs-lookup"><span data-stu-id="4e468-757">public QueryBuildDataSource addDataSource(AnyType arg, \[str name\], \[boolean emptyFieldList\])</span></span>                                                             | <span data-ttu-id="4e468-758">このデータ ソースに埋め込まれているデータ ソースを追加します。</span><span class="sxs-lookup"><span data-stu-id="4e468-758">Adds a data source that is embedded in this data source.</span></span>                                                                                  |
-| <span data-ttu-id="4e468-759">public QueryBuildDynalink addDynalink(FieldId field, Common dynamicFile, FieldId dynamicField, \[int fieldArrayIndex\], \[int dynamicFieldArrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-759">public QueryBuildDynalink addDynalink(FieldId field, Common dynamicFile, FieldId dynamicField, \[int fieldArrayIndex\], \[int dynamicFieldArrayIndex\])</span></span>      |                                                                                                                                           |
-| <span data-ttu-id="4e468-760">public QueryBuildLink addForeignkeyRelation(str relatedTableRole, \[str parentDatasourceName\])</span><span class="sxs-lookup"><span data-stu-id="4e468-760">public QueryBuildLink addForeignkeyRelation(str relatedTableRole, \[str parentDatasourceName\])</span></span>                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-761">public QueryGroupByField addGroupByField(FieldId fieldID, \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-761">public QueryGroupByField addGroupByField(FieldId fieldID, \[int arrayIndex\])</span></span>                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-762">public QueryBuildLink addLink(FieldId parentField, FieldId thisField, \[str parentDatasourceName\])</span><span class="sxs-lookup"><span data-stu-id="4e468-762">public QueryBuildLink addLink(FieldId parentField, FieldId thisField, \[str parentDatasourceName\])</span></span>                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-763">public QueryOrderByField addOrderByAggregateField(SelectionField fieldType, FieldId fieldID, \[SortOrder direction\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-763">public QueryOrderByField addOrderByAggregateField(SelectionField fieldType, FieldId fieldID, \[SortOrder direction\], \[int arrayIndex\])</span></span>                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-764">public QueryOrderByField addOrderByCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, \[SortOrder direction\])</span><span class="sxs-lookup"><span data-stu-id="4e468-764">public QueryOrderByField addOrderByCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, \[SortOrder direction\])</span></span> |                                                                                                                                           |
-| <span data-ttu-id="4e468-765">public QueryOrderByField addOrderByField(FieldId fieldID, \[SortOrder direction\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-765">public QueryOrderByField addOrderByField(FieldId fieldID, \[SortOrder direction\], \[int arrayIndex\])</span></span>                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-766">public QueryBuildRange addRange(FieldId field, \[int arrayIndex\], \[QueryRangeType rangeType\])</span><span class="sxs-lookup"><span data-stu-id="4e468-766">public QueryBuildRange addRange(FieldId field, \[int arrayIndex\], \[QueryRangeType rangeType\])</span></span>                                                             | <span data-ttu-id="4e468-767">データ ソースに範囲を追加します。</span><span class="sxs-lookup"><span data-stu-id="4e468-767">Adds a range to the data source.</span></span>                                                                                                          |
-| <span data-ttu-id="4e468-768">public int addSortField(FieldId sortField, \[SortOrder direction\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-768">public int addSortField(FieldId sortField, \[SortOrder direction\], \[int arrayIndex\])</span></span>                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-769">public int addSortIndex(IndexId index)</span><span class="sxs-lookup"><span data-stu-id="4e468-769">public int addSortIndex(IndexId index)</span></span>                                                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-770">public int allowAdd(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-770">public int allowAdd(\[int value\])</span></span>                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-771">public boolean applyFilter(FilterValue filterValue)</span><span class="sxs-lookup"><span data-stu-id="4e468-771">public boolean applyFilter(FilterValue filterValue)</span></span>                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-772">public boolean autoHeader(FieldId field, \[boolean orderNo\])</span><span class="sxs-lookup"><span data-stu-id="4e468-772">public boolean autoHeader(FieldId field, \[boolean orderNo\])</span></span>                                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-773">public int autoHeaderDetailLevel(FieldId field, \[int orderNo\])</span><span class="sxs-lookup"><span data-stu-id="4e468-773">public int autoHeaderDetailLevel(FieldId field, \[int orderNo\])</span></span>                                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-774">public boolean autoSum(FieldId field, \[boolean orderNo\])</span><span class="sxs-lookup"><span data-stu-id="4e468-774">public boolean autoSum(FieldId field, \[boolean orderNo\])</span></span>                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-775">public int autoSumDetailLevel(FieldId field, \[int orderNo\])</span><span class="sxs-lookup"><span data-stu-id="4e468-775">public int autoSumDetailLevel(FieldId field, \[int orderNo\])</span></span>                                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-776">public boolean changedNo()</span><span class="sxs-lookup"><span data-stu-id="4e468-776">public boolean changedNo()</span></span>                                                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-777">public int childDataSourceCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-777">public int childDataSourceCount()</span></span>                                                                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-778">public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-778">public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</span></span>                                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-779">public str company(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-779">public str company(\[str value\])</span></span>                                                                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-780">public int concurrencyModel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-780">public int concurrencyModel(\[int value\])</span></span>                                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-781">public QueryBuildDynalink dynalink(int dynalinkNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-781">public QueryBuildDynalink dynalink(int dynalinkNo)</span></span>                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-782">public int dynalinkCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-782">public int dynalinkCount()</span></span>                                                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-783">public boolean embedded()</span><span class="sxs-lookup"><span data-stu-id="4e468-783">public boolean embedded()</span></span>                                                                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-784">public boolean enabled(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-784">public boolean enabled(\[boolean value\])</span></span>                                                                                                                    | <span data-ttu-id="4e468-785">オブジェクトを有効または無効にするかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-785">Determines whether to enable or disable the object.</span></span>                                                                                       |
-| <span data-ttu-id="4e468-786">public boolean existsMeanOrExists(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-786">public boolean existsMeanOrExists(\[boolean value\])</span></span>                                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-787">public int fetchMode(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-787">public int fetchMode(\[int value\])</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-788">public QueryBuildFieldList fields()</span><span class="sxs-lookup"><span data-stu-id="4e468-788">public QueryBuildFieldList fields()</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-789">public TableId file()</span><span class="sxs-lookup"><span data-stu-id="4e468-789">public TableId file()</span></span>                                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-790">public QueryBuildRange findRange(FieldId field, \[int occurrence\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-790">public QueryBuildRange findRange(FieldId field, \[int occurrence\], \[int arrayIndex\])</span></span>                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-791">public boolean firstFast(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-791">public boolean firstFast(\[boolean value\])</span></span>                                                                                                                  | <span data-ttu-id="4e468-792">他のレコードの前にクエリから最初のレコードを取得するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-792">Determines whether to retrieve the first record from the query before the other records.</span></span>                                                  |
-| <span data-ttu-id="4e468-793">public boolean firstOnly(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-793">public boolean firstOnly(\[boolean value\])</span></span>                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-794">public int getMostRestrictedQueryBuildRangeStatus(FieldId field, \[int occurrence\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-794">public int getMostRestrictedQueryBuildRangeStatus(FieldId field, \[int occurrence\], \[int arrayIndex\])</span></span>                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-795">public Common getNo()</span><span class="sxs-lookup"><span data-stu-id="4e468-795">public Common getNo()</span></span>                                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-796">public int id()</span><span class="sxs-lookup"><span data-stu-id="4e468-796">public int id()</span></span>                                                                                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-797">public boolean indexIsHint(boolean arg)</span><span class="sxs-lookup"><span data-stu-id="4e468-797">public boolean indexIsHint(boolean arg)</span></span>                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-798">public boolean isPartOfSubQueryInBaseQuery()</span><span class="sxs-lookup"><span data-stu-id="4e468-798">public boolean isPartOfSubQueryInBaseQuery()</span></span>                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-799">public boolean joined()</span><span class="sxs-lookup"><span data-stu-id="4e468-799">public boolean joined()</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-800">public container joinedDataSources()</span><span class="sxs-lookup"><span data-stu-id="4e468-800">public container joinedDataSources()</span></span>                                                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-801">public int joinMode(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-801">public int joinMode(\[int value\])</span></span>                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-802">public str label(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-802">public str label(\[str value\])</span></span>                                                                                                                              | <span data-ttu-id="4e468-803">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-803">Gets or sets the label for a control.</span></span>                                                                                                     |
-| <span data-ttu-id="4e468-804">public int level()</span><span class="sxs-lookup"><span data-stu-id="4e468-804">public int level()</span></span>                                                                                                                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-805">public QueryBuildLink link(int associationNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-805">public QueryBuildLink link(int associationNo)</span></span>                                                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-806">public int linkCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-806">public int linkCount()</span></span>                                                                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-807">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-807">public str name(\[str value\])</span></span>                                                                                                                               | <span data-ttu-id="4e468-808">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-808">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="4e468-809">public container oneToOneDataSources()</span><span class="sxs-lookup"><span data-stu-id="4e468-809">public container oneToOneDataSources()</span></span>                                                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-810">public int orderMode(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-810">public int orderMode(\[int value\])</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-811">public QueryBuildDataSource parentDataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-811">public QueryBuildDataSource parentDataSource()</span></span>                                                                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-812">public str policyContext(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-812">public str policyContext(\[str value\])</span></span>                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-813">public QueryBuildRange range(int rangeNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-813">public QueryBuildRange range(int rangeNo)</span></span>                                                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-814">public int rangeCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-814">public int rangeCount()</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-815">public QueryBuildRange rangeField(FieldId field, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-815">public QueryBuildRange rangeField(FieldId field, \[int occurrence\])</span></span>                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-816">public boolean relations(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-816">public boolean relations(\[boolean value\])</span></span>                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-817">public int selectionCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-817">public int selectionCount()</span></span>                                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-818">public boolean selectWithRepeatableRead(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-818">public boolean selectWithRepeatableRead(\[boolean value\])</span></span>                                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-819">public SortOrder sortDirection(FieldId field, \[SortOrder direction\])</span><span class="sxs-lookup"><span data-stu-id="4e468-819">public SortOrder sortDirection(FieldId field, \[SortOrder direction\])</span></span>                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-820">public FieldId sortField(FieldId field)</span><span class="sxs-lookup"><span data-stu-id="4e468-820">public FieldId sortField(FieldId field)</span></span>                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-821">public int sortFieldCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-821">public int sortFieldCount()</span></span>                                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-822">public IndexId sortIndex(int indexNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-822">public IndexId sortIndex(int indexNo)</span></span>                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-823">public int sortIndexCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-823">public int sortIndexCount()</span></span>                                                                                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-824">public QueryBuildStaticlink staticlink(int staticlinkNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-824">public QueryBuildStaticlink staticlink(int staticlinkNo)</span></span>                                                                                                     | <span data-ttu-id="4e468-825">クエリのデータ ソースで静的リンク オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-825">Returns a static Link object on the query’s data source.</span></span>                                                                                  |
-| <span data-ttu-id="4e468-826">public int staticlinkCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-826">public int staticlinkCount()</span></span>                                                                                                                                 | <span data-ttu-id="4e468-827">QueryBuildDataSource オブジェクトに対して定義されている静的リンクの数が与えられます。</span><span class="sxs-lookup"><span data-stu-id="4e468-827">Gives the number of static links that are defined on the QueryBuildDataSource object.</span></span>                                                     |
-| <span data-ttu-id="4e468-828">public TableId table(\[TableId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-828">public TableId table(\[TableId value\])</span></span>                                                                                                                      | <span data-ttu-id="4e468-829">オブジェクトに関連付けられているテーブル ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-829">Gets or sets the table ID that is associated with the object.</span></span>                                                                             |
-| <span data-ttu-id="4e468-830">public str toString()</span><span class="sxs-lookup"><span data-stu-id="4e468-830">public str toString()</span></span>                                                                                                                                        | <span data-ttu-id="4e468-831">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-831">Returns a string that represents the current object.</span></span>                                                                                      |
-| <span data-ttu-id="4e468-832">public int unionType(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-832">public int unionType(\[int value\])</span></span>                                                                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-833">public int uniqueId()</span><span class="sxs-lookup"><span data-stu-id="4e468-833">public int uniqueId()</span></span>                                                                                                                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-834">public boolean update(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-834">public boolean update(\[boolean value\])</span></span>                                                                                                                     | <span data-ttu-id="4e468-835">このデータ ソースによってフェッチされたレコードを更新できるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-835">Determines whether the records fetched by this data source can be updated.</span></span>                                                                |
-| <span data-ttu-id="4e468-836">public void clearLinks()</span><span class="sxs-lookup"><span data-stu-id="4e468-836">public void clearLinks()</span></span>                                                                                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-837">public void clearDynalinks()</span><span class="sxs-lookup"><span data-stu-id="4e468-837">public void clearDynalinks()</span></span>                                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-838">public void clearRange(FieldId field, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-838">public void clearRange(FieldId field, \[int occurrence\])</span></span>                                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-839">public void sortClear()</span><span class="sxs-lookup"><span data-stu-id="4e468-839">public void sortClear()</span></span>                                                                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-840">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-840">public void finalize()</span></span>                                                                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-841">public void addSelectionFieldWithAlias(str alias, FieldId field, \[SelectionField fieldType\])</span><span class="sxs-lookup"><span data-stu-id="4e468-841">public void addSelectionFieldWithAlias(str alias, FieldId field, \[SelectionField fieldType\])</span></span>                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-842">public void addCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, str alias)</span><span class="sxs-lookup"><span data-stu-id="4e468-842">public void addCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, str alias)</span></span>                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-843">public void addForeignKeyDynalink(Common dynamicFile, str relatedRole)</span><span class="sxs-lookup"><span data-stu-id="4e468-843">public void addForeignKeyDynalink(Common dynamicFile, str relatedRole)</span></span>                                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-844">public void addRelation(DictRelation relation, \[TableScope tableScope\])</span><span class="sxs-lookup"><span data-stu-id="4e468-844">public void addRelation(DictRelation relation, \[TableScope tableScope\])</span></span>                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-845">public void clearSortIndex()</span><span class="sxs-lookup"><span data-stu-id="4e468-845">public void clearSortIndex()</span></span>                                                                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-846">public void clearRanges()</span><span class="sxs-lookup"><span data-stu-id="4e468-846">public void clearRanges()</span></span>                                                                                                                                    | <span data-ttu-id="4e468-847">データ ソースに関連付けられているすべての範囲を削除します。</span><span class="sxs-lookup"><span data-stu-id="4e468-847">Deletes all ranges that are associated with the data source.</span></span>                                                                              |
-| <span data-ttu-id="4e468-848">public void linkFields(str parentField, str thisField, \[str parentDatasourceName\])</span><span class="sxs-lookup"><span data-stu-id="4e468-848">public void linkFields(str parentField, str thisField, \[str parentDatasourceName\])</span></span>                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-849">public void addSelectionField(FieldId field, \[SelectionField fieldType\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-849">public void addSelectionField(FieldId field, \[SelectionField fieldType\], \[int arrayIndex\])</span></span>                                                               |                                                                                                                                           |
-
-### <a name="method-addallfields"></a><span data-ttu-id="4e468-850">メソッド addAllFields</span><span class="sxs-lookup"><span data-stu-id="4e468-850">Method addAllFields</span></span>
-
-    public int addAllFields(TableName tableName)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-851">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-851">Parameters</span></span>
-
-<span data-ttu-id="4e468-852">tableName</span><span class="sxs-lookup"><span data-stu-id="4e468-852">tableName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-853">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-853">Return Value</span></span>
-
-### <a name="method-adddatasource"></a><span data-ttu-id="4e468-854">メソッド addDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-854">Method addDataSource</span></span>
-
-<span data-ttu-id="4e468-855">このデータ ソースに埋め込まれているデータ ソースを追加します。</span><span class="sxs-lookup"><span data-stu-id="4e468-855">Adds a data source that is embedded in this data source.</span></span>
-
-    public QueryBuildDataSource addDataSource(AnyType arg, [str name], [boolean emptyFieldList])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-856">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-856">Parameters</span></span>
-
-<span data-ttu-id="4e468-857">arg</span><span class="sxs-lookup"><span data-stu-id="4e468-857">arg</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-858">名前</span><span class="sxs-lookup"><span data-stu-id="4e468-858">name</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-859">emptyFieldList</span><span class="sxs-lookup"><span data-stu-id="4e468-859">emptyFieldList</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-860">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-860">Return Value</span></span>
-
-<span data-ttu-id="4e468-861">新しいデータ ソースを選択します。</span><span class="sxs-lookup"><span data-stu-id="4e468-861">The new data source.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-862">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-862">Remarks</span></span>
-
-<span data-ttu-id="4e468-863">最上位レベルのデータ ソースは、addDataSource メソッドを使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-863">Top-level data sources are created by using the addDataSource method.</span></span>
-
-### <a name="method-adddynalink"></a><span data-ttu-id="4e468-864">メソッド addDynalink</span><span class="sxs-lookup"><span data-stu-id="4e468-864">Method addDynalink</span></span>
-
-    public QueryBuildDynalink addDynalink(FieldId field, Common dynamicFile, FieldId dynamicField, [int fieldArrayIndex], [int dynamicFieldArrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-865">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-865">Parameters</span></span>
-
-<span data-ttu-id="4e468-866">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-866">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-867">dynamicFile</span><span class="sxs-lookup"><span data-stu-id="4e468-867">dynamicFile</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-868">dynamicField</span><span class="sxs-lookup"><span data-stu-id="4e468-868">dynamicField</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-869">fieldArrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-869">fieldArrayIndex</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-870">dynamicFieldArrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-870">dynamicFieldArrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-871">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-871">Return Value</span></span>
-
-### <a name="method-addforeignkeyrelation"></a><span data-ttu-id="4e468-872">メソッド addForeignkeyRelation</span><span class="sxs-lookup"><span data-stu-id="4e468-872">Method addForeignkeyRelation</span></span>
-
-    public QueryBuildLink addForeignkeyRelation(str relatedTableRole, [str parentDatasourceName])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-873">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-873">Parameters</span></span>
-
-<span data-ttu-id="4e468-874">relatedTableRole</span><span class="sxs-lookup"><span data-stu-id="4e468-874">relatedTableRole</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-875">parentDatasourceName</span><span class="sxs-lookup"><span data-stu-id="4e468-875">parentDatasourceName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-876">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-876">Return Value</span></span>
-
-### <a name="method-addgroupbyfield"></a><span data-ttu-id="4e468-877">メソッド addGroupByField</span><span class="sxs-lookup"><span data-stu-id="4e468-877">Method addGroupByField</span></span>
-
-    public QueryGroupByField addGroupByField(FieldId fieldID, [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-878">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-878">Parameters</span></span>
-
-<span data-ttu-id="4e468-879">fieldID</span><span class="sxs-lookup"><span data-stu-id="4e468-879">fieldID</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-880">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-880">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-881">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-881">Return Value</span></span>
-
-### <a name="method-addlink"></a><span data-ttu-id="4e468-882">メソッド addLink</span><span class="sxs-lookup"><span data-stu-id="4e468-882">Method addLink</span></span>
-
-    public QueryBuildLink addLink(FieldId parentField, FieldId thisField, [str parentDatasourceName])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-883">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-883">Parameters</span></span>
-
-<span data-ttu-id="4e468-884">parentField</span><span class="sxs-lookup"><span data-stu-id="4e468-884">parentField</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-885">thisField</span><span class="sxs-lookup"><span data-stu-id="4e468-885">thisField</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-886">parentDatasourceName</span><span class="sxs-lookup"><span data-stu-id="4e468-886">parentDatasourceName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-887">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-887">Return Value</span></span>
-
-### <a name="method-addorderbyaggregatefield"></a><span data-ttu-id="4e468-888">メソッド addOrderByAggregateField</span><span class="sxs-lookup"><span data-stu-id="4e468-888">Method addOrderByAggregateField</span></span>
-
-    public QueryOrderByField addOrderByAggregateField(SelectionField fieldType, FieldId fieldID, [SortOrder direction], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-889">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-889">Parameters</span></span>
-
-<span data-ttu-id="4e468-890">fieldType</span><span class="sxs-lookup"><span data-stu-id="4e468-890">fieldType</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-891">fieldID</span><span class="sxs-lookup"><span data-stu-id="4e468-891">fieldID</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-892">direction</span><span class="sxs-lookup"><span data-stu-id="4e468-892">direction</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-893">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-893">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-894">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-894">Return Value</span></span>
-
-### <a name="method-addorderbycalculationfield"></a><span data-ttu-id="4e468-895">メソッド addOrderByCalculationField</span><span class="sxs-lookup"><span data-stu-id="4e468-895">Method addOrderByCalculationField</span></span>
-
-    public QueryOrderByField addOrderByCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, [SortOrder direction])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-896">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-896">Parameters</span></span>
-
-<span data-ttu-id="4e468-897">計算</span><span class="sxs-lookup"><span data-stu-id="4e468-897">calculation</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-898">direction</span><span class="sxs-lookup"><span data-stu-id="4e468-898">direction</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-899">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-899">Return Value</span></span>
-
-### <a name="method-addorderbyfield"></a><span data-ttu-id="4e468-900">メソッド addOrderByField</span><span class="sxs-lookup"><span data-stu-id="4e468-900">Method addOrderByField</span></span>
-
-    public QueryOrderByField addOrderByField(FieldId fieldID, [SortOrder direction], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-901">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-901">Parameters</span></span>
-
-<span data-ttu-id="4e468-902">fieldID</span><span class="sxs-lookup"><span data-stu-id="4e468-902">fieldID</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-903">direction</span><span class="sxs-lookup"><span data-stu-id="4e468-903">direction</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-904">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-904">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-905">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-905">Return Value</span></span>
-
-### <a name="method-addrange"></a><span data-ttu-id="4e468-906">メソッド addRange</span><span class="sxs-lookup"><span data-stu-id="4e468-906">Method addRange</span></span>
-
-<span data-ttu-id="4e468-907">データ ソースに範囲を追加します。</span><span class="sxs-lookup"><span data-stu-id="4e468-907">Adds a range to the data source.</span></span>
-
-    public QueryBuildRange addRange(FieldId field, [int arrayIndex], [QueryRangeType rangeType])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-908">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-908">Parameters</span></span>
-
-<span data-ttu-id="4e468-909">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-909">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-910">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-910">arrayIndex</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-911">rangeType</span><span class="sxs-lookup"><span data-stu-id="4e468-911">rangeType</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-912">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-912">Return Value</span></span>
-
-<span data-ttu-id="4e468-913">データ ソースの新しい範囲。</span><span class="sxs-lookup"><span data-stu-id="4e468-913">A new range for the data source.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-914">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-914">Remarks</span></span>
-
-<span data-ttu-id="4e468-915">範囲は、データ ソースのテーブルのレコードが満たす必要がある値を定義します。</span><span class="sxs-lookup"><span data-stu-id="4e468-915">Ranges define the values that records from the data source's table must satisfy.</span></span> <span data-ttu-id="4e468-916">いくつかの値の範囲は、特定のデータ ソース内の同じフィールドに存在することができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-916">Several range values can exist for the same field in a particular data source.</span></span> <span data-ttu-id="4e468-917">この場合、レコードが提供される値のいずれかにが適用される場合、値はクエリに含まれます。</span><span class="sxs-lookup"><span data-stu-id="4e468-917">In this case, the values are included in the query if the record qualifies for any of the values that are supplied.</span></span> <span data-ttu-id="4e468-918">複数のフィールドの範囲が含まれているときは、両方の条件によって提供される制約を満たすレコードだけが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4e468-918">When ranges are included for multiple fields, only records that satisfy the constraints that are supplied by both criteria are included.</span></span> <span data-ttu-id="4e468-919">制約は値のメソッドで指定されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-919">The constraints are specified in the value method.</span></span>
-
-### <a name="method-addsortfield"></a><span data-ttu-id="4e468-920">メソッド addSortField</span><span class="sxs-lookup"><span data-stu-id="4e468-920">Method addSortField</span></span>
-
-    public int addSortField(FieldId sortField, [SortOrder direction], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-921">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-921">Parameters</span></span>
-
-<span data-ttu-id="4e468-922">sortField</span><span class="sxs-lookup"><span data-stu-id="4e468-922">sortField</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-923">direction</span><span class="sxs-lookup"><span data-stu-id="4e468-923">direction</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-924">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-924">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-925">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-925">Return Value</span></span>
-
-### <a name="method-addsortindex"></a><span data-ttu-id="4e468-926">メソッド addSortIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-926">Method addSortIndex</span></span>
-
-    public int addSortIndex(IndexId index)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-927">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-927">Parameters</span></span>
-
-<span data-ttu-id="4e468-928">指数</span><span class="sxs-lookup"><span data-stu-id="4e468-928">index</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-929">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-929">Return Value</span></span>
-
-### <a name="method-allowadd"></a><span data-ttu-id="4e468-930">メソッド allowAdd</span><span class="sxs-lookup"><span data-stu-id="4e468-930">Method allowAdd</span></span>
-
-    public int allowAdd([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-931">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-931">Parameters</span></span>
-
-<span data-ttu-id="4e468-932">値</span><span class="sxs-lookup"><span data-stu-id="4e468-932">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-933">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-933">Return Value</span></span>
-
-### <a name="method-applyfilter"></a><span data-ttu-id="4e468-934">メソッド applyFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-934">Method applyFilter</span></span>
-
-    public boolean applyFilter(FilterValue filterValue)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-935">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-935">Parameters</span></span>
-
-<span data-ttu-id="4e468-936">filterValue</span><span class="sxs-lookup"><span data-stu-id="4e468-936">filterValue</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-937">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-937">Return Value</span></span>
-
-### <a name="method-autoheader"></a><span data-ttu-id="4e468-938">メソッド autoHeader</span><span class="sxs-lookup"><span data-stu-id="4e468-938">Method autoHeader</span></span>
-
-    public boolean autoHeader(FieldId field, [boolean orderNo])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-939">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-939">Parameters</span></span>
-
-<span data-ttu-id="4e468-940">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-940">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-941">orderNo</span><span class="sxs-lookup"><span data-stu-id="4e468-941">orderNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-942">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-942">Return Value</span></span>
-
-### <a name="method-autoheaderdetaillevel"></a><span data-ttu-id="4e468-943">メソッド autoHeaderDetailLevel</span><span class="sxs-lookup"><span data-stu-id="4e468-943">Method autoHeaderDetailLevel</span></span>
-
-    public int autoHeaderDetailLevel(FieldId field, [int orderNo])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-944">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-944">Parameters</span></span>
-
-<span data-ttu-id="4e468-945">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-945">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-946">orderNo</span><span class="sxs-lookup"><span data-stu-id="4e468-946">orderNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-947">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-947">Return Value</span></span>
-
-### <a name="method-autosum"></a><span data-ttu-id="4e468-948">メソッド autoSum</span><span class="sxs-lookup"><span data-stu-id="4e468-948">Method autoSum</span></span>
-
-    public boolean autoSum(FieldId field, [boolean orderNo])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-949">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-949">Parameters</span></span>
-
-<span data-ttu-id="4e468-950">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-950">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-951">orderNo</span><span class="sxs-lookup"><span data-stu-id="4e468-951">orderNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-952">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-952">Return Value</span></span>
-
-### <a name="method-autosumdetaillevel"></a><span data-ttu-id="4e468-953">メソッド autoSumDetailLevel</span><span class="sxs-lookup"><span data-stu-id="4e468-953">Method autoSumDetailLevel</span></span>
-
-    public int autoSumDetailLevel(FieldId field, [int orderNo])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-954">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-954">Parameters</span></span>
-
-<span data-ttu-id="4e468-955">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-955">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-956">orderNo</span><span class="sxs-lookup"><span data-stu-id="4e468-956">orderNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-957">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-957">Return Value</span></span>
-
-### <a name="method-changedno"></a><span data-ttu-id="4e468-958">メソッド changedNo</span><span class="sxs-lookup"><span data-stu-id="4e468-958">Method changedNo</span></span>
-
-    public boolean changedNo()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-959">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-959">Return Value</span></span>
-
-### <a name="method-childdatasourcecount"></a><span data-ttu-id="4e468-960">メソッド childDataSourceCount</span><span class="sxs-lookup"><span data-stu-id="4e468-960">Method childDataSourceCount</span></span>
-
-    public int childDataSourceCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-961">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-961">Return Value</span></span>
-
-### <a name="method-childdatasourceno"></a><span data-ttu-id="4e468-962">メソッド childDataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-962">Method childDataSourceNo</span></span>
-
-    public QueryBuildDataSource childDataSourceNo(int dataSourceNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-963">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-963">Parameters</span></span>
-
-<span data-ttu-id="4e468-964">dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-964">dataSourceNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-965">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-965">Return Value</span></span>
-
-### <a name="method-company"></a><span data-ttu-id="4e468-966">メソッド company</span><span class="sxs-lookup"><span data-stu-id="4e468-966">Method company</span></span>
-
-    public str company([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-967">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-967">Parameters</span></span>
-
-<span data-ttu-id="4e468-968">値</span><span class="sxs-lookup"><span data-stu-id="4e468-968">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-969">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-969">Return Value</span></span>
-
-### <a name="method-concurrencymodel"></a><span data-ttu-id="4e468-970">メソッド concurrencyModel</span><span class="sxs-lookup"><span data-stu-id="4e468-970">Method concurrencyModel</span></span>
-
-    public int concurrencyModel([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-971">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-971">Parameters</span></span>
-
-<span data-ttu-id="4e468-972">値</span><span class="sxs-lookup"><span data-stu-id="4e468-972">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-973">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-973">Return Value</span></span>
-
-### <a name="method-dynalink"></a><span data-ttu-id="4e468-974">メソッド dynalink</span><span class="sxs-lookup"><span data-stu-id="4e468-974">Method dynalink</span></span>
-
-    public QueryBuildDynalink dynalink(int dynalinkNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-975">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-975">Parameters</span></span>
-
-<span data-ttu-id="4e468-976">dynalinkNo</span><span class="sxs-lookup"><span data-stu-id="4e468-976">dynalinkNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-977">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-977">Return Value</span></span>
-
-### <a name="method-dynalinkcount"></a><span data-ttu-id="4e468-978">メソッド dynalinkCount</span><span class="sxs-lookup"><span data-stu-id="4e468-978">Method dynalinkCount</span></span>
-
-    public int dynalinkCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-979">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-979">Return Value</span></span>
-
-### <a name="method-embedded"></a><span data-ttu-id="4e468-980">メソッド embedded</span><span class="sxs-lookup"><span data-stu-id="4e468-980">Method embedded</span></span>
-
-    public boolean embedded()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-981">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-981">Return Value</span></span>
-
-### <a name="method-enabled"></a><span data-ttu-id="4e468-982">メソッド enabled</span><span class="sxs-lookup"><span data-stu-id="4e468-982">Method enabled</span></span>
-
-<span data-ttu-id="4e468-983">オブジェクトを有効または無効にするかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-983">Determines whether to enable or disable the object.</span></span>
-
-    public boolean enabled([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-984">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-984">Parameters</span></span>
-
-<span data-ttu-id="4e468-985">値</span><span class="sxs-lookup"><span data-stu-id="4e468-985">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-986">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-986">Return Value</span></span>
-
-<span data-ttu-id="4e468-987">オブジェクトが有効である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-987">true if the object is enabled; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-988">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-988">Remarks</span></span>
-
-<span data-ttu-id="4e468-989">有効になっているプロパティを使用すると、実行時にコントロールを有効または無効にできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-989">The enabled property enables controls to be enabled or disabled at run time.</span></span> <span data-ttu-id="4e468-990">たとえば、アプリケーションの現在の状態には適用されないオブジェクトを無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-990">For example, you can disable objects that do not apply to the current state of the application.</span></span> <span data-ttu-id="4e468-991">また、読み取り専用情報を提供する、エラー メッセージなどの、表示のためにのみ使用されるコントロールを無効にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-991">You can also disable a control that is used only for display purposes, such as an error message, which provides read-only information.</span></span>
-
-### <a name="method-existsmeanorexists"></a><span data-ttu-id="4e468-992">メソッド existsMeanOrExists</span><span class="sxs-lookup"><span data-stu-id="4e468-992">Method existsMeanOrExists</span></span>
-
-    public boolean existsMeanOrExists([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-993">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-993">Parameters</span></span>
-
-<span data-ttu-id="4e468-994">値</span><span class="sxs-lookup"><span data-stu-id="4e468-994">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-995">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-995">Return Value</span></span>
-
-### <a name="method-fetchmode"></a><span data-ttu-id="4e468-996">メソッド fetchMode</span><span class="sxs-lookup"><span data-stu-id="4e468-996">Method fetchMode</span></span>
-
-    public int fetchMode([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-997">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-997">Parameters</span></span>
-
-<span data-ttu-id="4e468-998">値</span><span class="sxs-lookup"><span data-stu-id="4e468-998">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-999">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-999">Return Value</span></span>
-
-### <a name="method-fields"></a><span data-ttu-id="4e468-1000">メソッド fields</span><span class="sxs-lookup"><span data-stu-id="4e468-1000">Method fields</span></span>
-
-    public QueryBuildFieldList fields()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1001">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1001">Return Value</span></span>
-
-### <a name="method-file"></a><span data-ttu-id="4e468-1002">メソッド file</span><span class="sxs-lookup"><span data-stu-id="4e468-1002">Method file</span></span>
-
-    public TableId file()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1003">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1003">Return Value</span></span>
-
-### <a name="method-findrange"></a><span data-ttu-id="4e468-1004">メソッド findRange</span><span class="sxs-lookup"><span data-stu-id="4e468-1004">Method findRange</span></span>
-
-    public QueryBuildRange findRange(FieldId field, [int occurrence], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1005">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1005">Parameters</span></span>
-
-<span data-ttu-id="4e468-1006">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1006">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1007">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-1007">occurrence</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1008">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1008">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1009">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1009">Return Value</span></span>
-
-### <a name="method-firstfast"></a><span data-ttu-id="4e468-1010">メソッド firstFast</span><span class="sxs-lookup"><span data-stu-id="4e468-1010">Method firstFast</span></span>
-
-<span data-ttu-id="4e468-1011">他のレコードの前にクエリから最初のレコードを取得するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1011">Determines whether to retrieve the first record from the query before the other records.</span></span>
-
-    public boolean firstFast([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1012">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1012">Parameters</span></span>
-
-<span data-ttu-id="4e468-1013">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1013">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1014">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1014">Return Value</span></span>
-
-<span data-ttu-id="4e468-1015">最初のレコードが最初に取得される場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1015">true if the first record is retrieved first; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1016">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1016">Remarks</span></span>
-
-<span data-ttu-id="4e468-1017">firstFast プロパティは、一部のデータベース システムでレコードの取得を最適化できるため、パフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1017">The firstFast property enables some database systems to optimize record retrieval, which improves performance.</span></span> <span data-ttu-id="4e468-1018">データベースはこのプロパティをサポートしていない場合は無視されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1018">If the database does not support this property, it is ignored.</span></span>
-
-### <a name="method-firstonly"></a><span data-ttu-id="4e468-1019">メソッド firstOnly</span><span class="sxs-lookup"><span data-stu-id="4e468-1019">Method firstOnly</span></span>
-
-    public boolean firstOnly([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1020">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1020">Parameters</span></span>
-
-<span data-ttu-id="4e468-1021">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1021">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1022">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1022">Return Value</span></span>
-
-### <a name="method-getmostrestrictedquerybuildrangestatus"></a><span data-ttu-id="4e468-1023">メソッド getMostRestrictedQueryBuildRangeStatus</span><span class="sxs-lookup"><span data-stu-id="4e468-1023">Method getMostRestrictedQueryBuildRangeStatus</span></span>
-
-    public int getMostRestrictedQueryBuildRangeStatus(FieldId field, [int occurrence], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1024">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1024">Parameters</span></span>
-
-<span data-ttu-id="4e468-1025">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1025">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1026">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-1026">occurrence</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1027">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1027">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1028">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1028">Return Value</span></span>
-
-### <a name="method-getno"></a><span data-ttu-id="4e468-1029">メソッド getNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1029">Method getNo</span></span>
-
-    public Common getNo()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1030">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1030">Return Value</span></span>
-
-### <a name="method-id"></a><span data-ttu-id="4e468-1031">メソッド id</span><span class="sxs-lookup"><span data-stu-id="4e468-1031">Method id</span></span>
-
-    public int id()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1032">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1032">Return Value</span></span>
-
-### <a name="method-indexishint"></a><span data-ttu-id="4e468-1033">メソッド indexIsHint</span><span class="sxs-lookup"><span data-stu-id="4e468-1033">Method indexIsHint</span></span>
-
-    public boolean indexIsHint(boolean arg)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1034">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1034">Parameters</span></span>
-
-<span data-ttu-id="4e468-1035">arg</span><span class="sxs-lookup"><span data-stu-id="4e468-1035">arg</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1036">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1036">Return Value</span></span>
-
-### <a name="method-ispartofsubqueryinbasequery"></a><span data-ttu-id="4e468-1037">メソッド isPartOfSubQueryInBaseQuery</span><span class="sxs-lookup"><span data-stu-id="4e468-1037">Method isPartOfSubQueryInBaseQuery</span></span>
-
-    public boolean isPartOfSubQueryInBaseQuery()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1038">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1038">Return Value</span></span>
-
-### <a name="method-joined"></a><span data-ttu-id="4e468-1039">メソッド joined</span><span class="sxs-lookup"><span data-stu-id="4e468-1039">Method joined</span></span>
-
-    public boolean joined()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1040">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1040">Return Value</span></span>
-
-### <a name="method-joineddatasources"></a><span data-ttu-id="4e468-1041">メソッド joinedDataSources</span><span class="sxs-lookup"><span data-stu-id="4e468-1041">Method joinedDataSources</span></span>
-
-    public container joinedDataSources()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1042">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1042">Return Value</span></span>
-
-### <a name="method-joinmode"></a><span data-ttu-id="4e468-1043">メソッド joinMode</span><span class="sxs-lookup"><span data-stu-id="4e468-1043">Method joinMode</span></span>
-
-    public int joinMode([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1044">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1044">Parameters</span></span>
-
-<span data-ttu-id="4e468-1045">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1045">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1046">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1046">Return Value</span></span>
-
-### <a name="method-label"></a><span data-ttu-id="4e468-1047">メソッド label</span><span class="sxs-lookup"><span data-stu-id="4e468-1047">Method label</span></span>
-
-<span data-ttu-id="4e468-1048">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1048">Gets or sets the label for a control.</span></span>
-
-    public str label([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1049">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1049">Parameters</span></span>
-
-<span data-ttu-id="4e468-1050">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1050">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1051">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1051">Return Value</span></span>
-
-<span data-ttu-id="4e468-1052">ラベル文字列の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1052">The current value of the label string.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1053">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1053">Remarks</span></span>
-
-<span data-ttu-id="4e468-1054">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1054">The label determines which text is displayed in the control or adjacent to it.</span></span> <span data-ttu-id="4e468-1055">ラベルのプロパティ値は 250 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1055">The label property value cannot exceed 250 characters.</span></span>
-
-### <a name="method-level"></a><span data-ttu-id="4e468-1056">メソッド level</span><span class="sxs-lookup"><span data-stu-id="4e468-1056">Method level</span></span>
-
-    public int level()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1057">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1057">Return Value</span></span>
-
-### <a name="method-link"></a><span data-ttu-id="4e468-1058">メソッド link</span><span class="sxs-lookup"><span data-stu-id="4e468-1058">Method link</span></span>
-
-    public QueryBuildLink link(int associationNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1059">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1059">Parameters</span></span>
-
-<span data-ttu-id="4e468-1060">associationNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1060">associationNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1061">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1061">Return Value</span></span>
-
-### <a name="method-linkcount"></a><span data-ttu-id="4e468-1062">メソッド linkCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1062">Method linkCount</span></span>
-
-    public int linkCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1063">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1063">Return Value</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="4e468-1064">メソッド名</span><span class="sxs-lookup"><span data-stu-id="4e468-1064">Method name</span></span>
-
-<span data-ttu-id="4e468-1065">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1065">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
-
-    public str name([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1066">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1066">Parameters</span></span>
-
-<span data-ttu-id="4e468-1067">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1067">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1068">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1068">Return Value</span></span>
-
-<span data-ttu-id="4e468-1069">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-1069">The name that is used in code to identify an application object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1070">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1070">Remarks</span></span>
-
-<span data-ttu-id="4e468-1071">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1071">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
-
--   <span data-ttu-id="4e468-1072">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1072">Begins with a letter.</span></span>
--   <span data-ttu-id="4e468-1073">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="4e468-1073">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="4e468-1074">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1074">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="4e468-1075">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1075">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="4e468-1076">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1076">Tables cannot have the same name as other public objects, such as extended data types, base enums, or classes.</span></span>
-
-### <a name="method-onetoonedatasources"></a><span data-ttu-id="4e468-1077">メソッド oneToOneDataSources</span><span class="sxs-lookup"><span data-stu-id="4e468-1077">Method oneToOneDataSources</span></span>
-
-    public container oneToOneDataSources()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1078">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1078">Return Value</span></span>
-
-### <a name="method-ordermode"></a><span data-ttu-id="4e468-1079">メソッド orderMode</span><span class="sxs-lookup"><span data-stu-id="4e468-1079">Method orderMode</span></span>
-
-    public int orderMode([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1080">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1080">Parameters</span></span>
-
-<span data-ttu-id="4e468-1081">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1081">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1082">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1082">Return Value</span></span>
-
-### <a name="method-parentdatasource"></a><span data-ttu-id="4e468-1083">メソッド parentDataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1083">Method parentDataSource</span></span>
-
-    public QueryBuildDataSource parentDataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1084">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1084">Return Value</span></span>
-
-### <a name="method-policycontext"></a><span data-ttu-id="4e468-1085">メソッド policyContext</span><span class="sxs-lookup"><span data-stu-id="4e468-1085">Method policyContext</span></span>
-
-    public str policyContext([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1086">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1086">Parameters</span></span>
-
-<span data-ttu-id="4e468-1087">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1087">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1088">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1088">Return Value</span></span>
-
-### <a name="method-range"></a><span data-ttu-id="4e468-1089">メソッド range</span><span class="sxs-lookup"><span data-stu-id="4e468-1089">Method range</span></span>
-
-    public QueryBuildRange range(int rangeNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1090">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1090">Parameters</span></span>
-
-<span data-ttu-id="4e468-1091">rangeNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1091">rangeNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1092">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1092">Return Value</span></span>
-
-### <a name="method-rangecount"></a><span data-ttu-id="4e468-1093">メソッド rangeCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1093">Method rangeCount</span></span>
-
-    public int rangeCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1094">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1094">Return Value</span></span>
-
-### <a name="method-rangefield"></a><span data-ttu-id="4e468-1095">メソッド rangeField</span><span class="sxs-lookup"><span data-stu-id="4e468-1095">Method rangeField</span></span>
-
-    public QueryBuildRange rangeField(FieldId field, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1096">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1096">Parameters</span></span>
-
-<span data-ttu-id="4e468-1097">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1097">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1098">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-1098">occurrence</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1099">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1099">Return Value</span></span>
-
-### <a name="method-relations"></a><span data-ttu-id="4e468-1100">メソッド relations</span><span class="sxs-lookup"><span data-stu-id="4e468-1100">Method relations</span></span>
-
-    public boolean relations([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1101">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1101">Parameters</span></span>
-
-<span data-ttu-id="4e468-1102">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1102">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1103">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1103">Return Value</span></span>
-
-### <a name="method-selectioncount"></a><span data-ttu-id="4e468-1104">メソッド selectionCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1104">Method selectionCount</span></span>
-
-    public int selectionCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1105">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1105">Return Value</span></span>
-
-### <a name="method-selectwithrepeatableread"></a><span data-ttu-id="4e468-1106">メソッド selectWithRepeatableRead</span><span class="sxs-lookup"><span data-stu-id="4e468-1106">Method selectWithRepeatableRead</span></span>
-
-    public boolean selectWithRepeatableRead([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1107">Parameters</span></span>
-
-<span data-ttu-id="4e468-1108">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1108">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1109">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1109">Return Value</span></span>
-
-### <a name="method-sortdirection"></a><span data-ttu-id="4e468-1110">メソッド sortDirection</span><span class="sxs-lookup"><span data-stu-id="4e468-1110">Method sortDirection</span></span>
-
-    public SortOrder sortDirection(FieldId field, [SortOrder direction])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1111">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1111">Parameters</span></span>
-
-<span data-ttu-id="4e468-1112">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1112">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1113">direction</span><span class="sxs-lookup"><span data-stu-id="4e468-1113">direction</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1114">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1114">Return Value</span></span>
-
-### <a name="method-sortfield"></a><span data-ttu-id="4e468-1115">メソッド sortField</span><span class="sxs-lookup"><span data-stu-id="4e468-1115">Method sortField</span></span>
-
-    public FieldId sortField(FieldId field)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1116">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1116">Parameters</span></span>
-
-<span data-ttu-id="4e468-1117">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1117">field</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1118">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1118">Return Value</span></span>
-
-### <a name="method-sortfieldcount"></a><span data-ttu-id="4e468-1119">メソッド sortFieldCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1119">Method sortFieldCount</span></span>
-
-    public int sortFieldCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1120">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1120">Return Value</span></span>
-
-### <a name="method-sortindex"></a><span data-ttu-id="4e468-1121">メソッド sortIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1121">Method sortIndex</span></span>
-
-    public IndexId sortIndex(int indexNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1122">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1122">Parameters</span></span>
-
-<span data-ttu-id="4e468-1123">indexNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1123">indexNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1124">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1124">Return Value</span></span>
-
-### <a name="method-sortindexcount"></a><span data-ttu-id="4e468-1125">メソッド sortIndexCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1125">Method sortIndexCount</span></span>
-
-    public int sortIndexCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1126">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1126">Return Value</span></span>
-
-### <a name="method-staticlink"></a><span data-ttu-id="4e468-1127">メソッド staticlink</span><span class="sxs-lookup"><span data-stu-id="4e468-1127">Method staticlink</span></span>
-
-<span data-ttu-id="4e468-1128">クエリのデータ ソースで静的リンク オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1128">Returns a static Link object on the query’s data source.</span></span>
-
-    public QueryBuildStaticlink staticlink(int staticlinkNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1129">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1129">Parameters</span></span>
-
-<span data-ttu-id="4e468-1130">staticlinkNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1130">staticlinkNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1131">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1131">Return Value</span></span>
-
-<span data-ttu-id="4e468-1132">\_staticLinkNo インデックスの静的リンク オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="4e468-1132">The static Link object at the \_staticLinkNo index.</span></span>
-
-### <a name="method-staticlinkcount"></a><span data-ttu-id="4e468-1133">メソッド staticlinkCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1133">Method staticlinkCount</span></span>
-
-<span data-ttu-id="4e468-1134">QueryBuildDataSource オブジェクトに対して定義されている静的リンクの数が与えられます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1134">Gives the number of static links that are defined on the QueryBuildDataSource object.</span></span>
-
-    public int staticlinkCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1135">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1135">Return Value</span></span>
-
-<span data-ttu-id="4e468-1136">QueryBuildDataSource オブジェクトに対して定義されている静的リンクの数。</span><span class="sxs-lookup"><span data-stu-id="4e468-1136">The number of static links that are defined on the QueryBuildDataSource object.</span></span>
-
-### <a name="method-table"></a><span data-ttu-id="4e468-1137">メソッド table</span><span class="sxs-lookup"><span data-stu-id="4e468-1137">Method table</span></span>
-
-<span data-ttu-id="4e468-1138">オブジェクトに関連付けられているテーブル ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1138">Gets or sets the table ID that is associated with the object.</span></span>
-
-    public TableId table([TableId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1139">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1139">Parameters</span></span>
-
-<span data-ttu-id="4e468-1140">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1140">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1141">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1141">Return Value</span></span>
-
-<span data-ttu-id="4e468-1142">オブジェクトに関連付けられたテーブル ID の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1142">The current value of the table ID that is associated with the object.</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="4e468-1143">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="4e468-1143">Method toString</span></span>
-
-<span data-ttu-id="4e468-1144">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1144">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1145">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1145">Return Value</span></span>
-
-<span data-ttu-id="4e468-1146">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-1146">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1147">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1147">Remarks</span></span>
-
-<span data-ttu-id="4e468-1148">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1148">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="4e468-1149">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1149">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="4e468-1150">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1150">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-### <a name="method-uniontype"></a><span data-ttu-id="4e468-1151">メソッド unionType</span><span class="sxs-lookup"><span data-stu-id="4e468-1151">Method unionType</span></span>
-
-    public int unionType([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1152">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1152">Parameters</span></span>
-
-<span data-ttu-id="4e468-1153">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1153">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1154">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1154">Return Value</span></span>
-
-### <a name="method-uniqueid"></a><span data-ttu-id="4e468-1155">メソッド uniqueId</span><span class="sxs-lookup"><span data-stu-id="4e468-1155">Method uniqueId</span></span>
-
-    public int uniqueId()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1156">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1156">Return Value</span></span>
-
-### <a name="method-update"></a><span data-ttu-id="4e468-1157">メソッド update</span><span class="sxs-lookup"><span data-stu-id="4e468-1157">Method update</span></span>
-
-<span data-ttu-id="4e468-1158">このデータ ソースによってフェッチされたレコードを更新できるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1158">Determines whether the records fetched by this data source can be updated.</span></span>
-
-    public boolean update([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1159">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1159">Parameters</span></span>
-
-<span data-ttu-id="4e468-1160">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1160">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1161">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1161">Return Value</span></span>
-
-<span data-ttu-id="4e468-1162">レコードを更新することができる場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1162">true if the records can be updated; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1163">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1163">Remarks</span></span>
-
-<span data-ttu-id="4e468-1164">レコードを更新するには、ttsBegin および ttsCommit メソッドを使用して別のトランザクションを開始します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1164">To update the records, start a separate transaction by using the ttsBegin and ttsCommit methods.</span></span>
-
-### <a name="method-clearlinks"></a><span data-ttu-id="4e468-1165">メソッド clearLinks</span><span class="sxs-lookup"><span data-stu-id="4e468-1165">Method clearLinks</span></span>
-
-    public void clearLinks()
-
-### <a name="method-cleardynalinks"></a><span data-ttu-id="4e468-1166">メソッド clearDynalinks</span><span class="sxs-lookup"><span data-stu-id="4e468-1166">Method clearDynalinks</span></span>
-
-    public void clearDynalinks()
-
-### <a name="method-clearrange"></a><span data-ttu-id="4e468-1167">メソッド clearRange</span><span class="sxs-lookup"><span data-stu-id="4e468-1167">Method clearRange</span></span>
-
-    public void clearRange(FieldId field, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1168">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1168">Parameters</span></span>
-
-<span data-ttu-id="4e468-1169">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1169">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1170">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-1170">occurrence</span></span>  
-
-### <a name="method-sortclear"></a><span data-ttu-id="4e468-1171">メソッド sortClear</span><span class="sxs-lookup"><span data-stu-id="4e468-1171">Method sortClear</span></span>
-
-    public void sortClear()
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1172">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1172">Method finalize</span></span>
-
-    public void finalize()
-
-### <a name="method-addselectionfieldwithalias"></a><span data-ttu-id="4e468-1173">メソッド addSelectionFieldWithAlias</span><span class="sxs-lookup"><span data-stu-id="4e468-1173">Method addSelectionFieldWithAlias</span></span>
-
-    public void addSelectionFieldWithAlias(str alias, FieldId field, [SelectionField fieldType])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1174">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1174">Parameters</span></span>
-
-<span data-ttu-id="4e468-1175">エイリアス</span><span class="sxs-lookup"><span data-stu-id="4e468-1175">alias</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1176">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1176">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1177">fieldType</span><span class="sxs-lookup"><span data-stu-id="4e468-1177">fieldType</span></span>  
-
-### <a name="method-addcalculationfield"></a><span data-ttu-id="4e468-1178">メソッド addCalculationField</span><span class="sxs-lookup"><span data-stu-id="4e468-1178">Method addCalculationField</span></span>
-
-    public void addCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, str alias)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1179">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1179">Parameters</span></span>
-
-<span data-ttu-id="4e468-1180">計算</span><span class="sxs-lookup"><span data-stu-id="4e468-1180">calculation</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1181">エイリアス</span><span class="sxs-lookup"><span data-stu-id="4e468-1181">alias</span></span>  
-
-### <a name="method-addforeignkeydynalink"></a><span data-ttu-id="4e468-1182">メソッド addForeignKeyDynalink</span><span class="sxs-lookup"><span data-stu-id="4e468-1182">Method addForeignKeyDynalink</span></span>
-
-    public void addForeignKeyDynalink(Common dynamicFile, str relatedRole)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1183">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1183">Parameters</span></span>
-
-<span data-ttu-id="4e468-1184">dynamicFile</span><span class="sxs-lookup"><span data-stu-id="4e468-1184">dynamicFile</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1185">relatedRole</span><span class="sxs-lookup"><span data-stu-id="4e468-1185">relatedRole</span></span>  
-
-### <a name="method-addrelation"></a><span data-ttu-id="4e468-1186">メソッド addRelation</span><span class="sxs-lookup"><span data-stu-id="4e468-1186">Method addRelation</span></span>
-
-    public void addRelation(DictRelation relation, [TableScope tableScope])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1187">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1187">Parameters</span></span>
-
-<span data-ttu-id="4e468-1188">関係</span><span class="sxs-lookup"><span data-stu-id="4e468-1188">relation</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1189">tableScope</span><span class="sxs-lookup"><span data-stu-id="4e468-1189">tableScope</span></span>  
-
-### <a name="method-clearsortindex"></a><span data-ttu-id="4e468-1190">メソッド clearSortIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1190">Method clearSortIndex</span></span>
-
-    public void clearSortIndex()
-
-### <a name="method-clearranges"></a><span data-ttu-id="4e468-1191">メソッド clearRanges</span><span class="sxs-lookup"><span data-stu-id="4e468-1191">Method clearRanges</span></span>
-
-<span data-ttu-id="4e468-1192">データ ソースに関連付けられているすべての範囲を削除します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1192">Deletes all ranges that are associated with the data source.</span></span>
-
-    public void clearRanges()
-
-#### <a name="examples"></a><span data-ttu-id="4e468-1193">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1193">Examples</span></span>
-
-<span data-ttu-id="4e468-1194">次の例では、範囲を追加し、データソースから範囲を削除します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1194">The following example adds ranges and then removes them from a data source.</span></span>
-
-    Query Q = new Query(); 
-    QueryBuildDataSource ds = q.addDataSource(TableNum(CustTable)); 
-    QueryBuildRange r = ds.addRange(FieldNum(CustTable, recId)); 
-    print ds.rangeCount(); 
-    ds.clearRanges(); 
-    print ds.rangeCount(); 
-    pause;
-
-### <a name="method-linkfields"></a><span data-ttu-id="4e468-1195">メソッド linkFields</span><span class="sxs-lookup"><span data-stu-id="4e468-1195">Method linkFields</span></span>
-
-    public void linkFields(str parentField, str thisField, [str parentDatasourceName])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1196">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1196">Parameters</span></span>
-
-<span data-ttu-id="4e468-1197">parentField</span><span class="sxs-lookup"><span data-stu-id="4e468-1197">parentField</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1198">thisField</span><span class="sxs-lookup"><span data-stu-id="4e468-1198">thisField</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1199">parentDatasourceName</span><span class="sxs-lookup"><span data-stu-id="4e468-1199">parentDatasourceName</span></span>  
-
-### <a name="method-addselectionfield"></a><span data-ttu-id="4e468-1200">メソッド addSelectionField</span><span class="sxs-lookup"><span data-stu-id="4e468-1200">Method addSelectionField</span></span>
-
-    public void addSelectionField(FieldId field, [SelectionField fieldType], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1201">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1201">Parameters</span></span>
-
-<span data-ttu-id="4e468-1202">フィールド</span><span class="sxs-lookup"><span data-stu-id="4e468-1202">field</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1203">fieldType</span><span class="sxs-lookup"><span data-stu-id="4e468-1203">fieldType</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1204">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1204">arrayIndex</span></span>  
-
-## <a name="class-querybuilddynalink"></a><span data-ttu-id="4e468-1205">クラス QueryBuildDynalink</span><span class="sxs-lookup"><span data-stu-id="4e468-1205">Class QueryBuildDynalink</span></span>
-    class QueryBuildDynalink extends Object
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1206">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1206">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1207">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1207">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1208">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1208">Methods</span></span>
-
-| <span data-ttu-id="4e468-1209">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1209">Method</span></span>                                                | <span data-ttu-id="4e468-1210">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1210">Description</span></span> |
-|-------------------------------------------------------|-------------|
-| <span data-ttu-id="4e468-1211">public Common cursor(\[Common cursor\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1211">public Common cursor(\[Common cursor\])</span></span>               |             |
-| <span data-ttu-id="4e468-1212">public QueryBuildDataSource dataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-1212">public QueryBuildDataSource dataSource()</span></span>              |             |
-| <span data-ttu-id="4e468-1213">public FieldId dynamicField(\[FieldId dynamicField\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1213">public FieldId dynamicField(\[FieldId dynamicField\])</span></span> |             |
-| <span data-ttu-id="4e468-1214">public FieldId field(\[FieldId fieldId\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1214">public FieldId field(\[FieldId fieldId\])</span></span>             |             |
-| <span data-ttu-id="4e468-1215">public int fieldArrayIndex()</span><span class="sxs-lookup"><span data-stu-id="4e468-1215">public int fieldArrayIndex()</span></span>                          |             |
-| <span data-ttu-id="4e468-1216">public FieldName fieldName()</span><span class="sxs-lookup"><span data-stu-id="4e468-1216">public FieldName fieldName()</span></span>                          |             |
-| <span data-ttu-id="4e468-1217">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1217">public void finalize()</span></span>                                |             |
-
-### <a name="method-cursor"></a><span data-ttu-id="4e468-1218">メソッド cursor</span><span class="sxs-lookup"><span data-stu-id="4e468-1218">Method cursor</span></span>
-
-    public Common cursor([Common cursor])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1219">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1219">Parameters</span></span>
-
-<span data-ttu-id="4e468-1220">cursor</span><span class="sxs-lookup"><span data-stu-id="4e468-1220">cursor</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1221">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1221">Return Value</span></span>
-
-### <a name="method-datasource"></a><span data-ttu-id="4e468-1222">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1222">Method dataSource</span></span>
-
-    public QueryBuildDataSource dataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1223">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1223">Return Value</span></span>
-
-### <a name="method-dynamicfield"></a><span data-ttu-id="4e468-1224">メソッド dynamicField</span><span class="sxs-lookup"><span data-stu-id="4e468-1224">Method dynamicField</span></span>
-
-    public FieldId dynamicField([FieldId dynamicField])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1225">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1225">Parameters</span></span>
-
-<span data-ttu-id="4e468-1226">dynamicField</span><span class="sxs-lookup"><span data-stu-id="4e468-1226">dynamicField</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1227">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1227">Return Value</span></span>
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1228">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1228">Method field</span></span>
-
-    public FieldId field([FieldId fieldId])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1229">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1229">Parameters</span></span>
-
-<span data-ttu-id="4e468-1230">fieldId</span><span class="sxs-lookup"><span data-stu-id="4e468-1230">fieldId</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1231">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1231">Return Value</span></span>
-
-### <a name="method-fieldarrayindex"></a><span data-ttu-id="4e468-1232">メソッド fieldArrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1232">Method fieldArrayIndex</span></span>
-
-    public int fieldArrayIndex()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1233">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1233">Return Value</span></span>
-
-### <a name="method-fieldname"></a><span data-ttu-id="4e468-1234">メソッド fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-1234">Method fieldName</span></span>
-
-    public FieldName fieldName()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1235">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1235">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1236">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1236">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-querybuildfieldlist"></a><span data-ttu-id="4e468-1237">クラス QueryBuildFieldList</span><span class="sxs-lookup"><span data-stu-id="4e468-1237">Class QueryBuildFieldList</span></span>
-    class QueryBuildFieldList extends TreeNode
-
-<span data-ttu-id="4e468-1238">QueryBuildFieldList クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1238">The QueryBuildFieldList class lets you create, read, update, and delete X++ code and metadata.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1239">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1239">Remarks</span></span>
-
-<span data-ttu-id="4e468-1240">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1240">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1241">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1241">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1242">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1242">Methods</span></span>
-
-| <span data-ttu-id="4e468-1243">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1243">Method</span></span>                                                                                                 | <span data-ttu-id="4e468-1244">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1244">Description</span></span> |
-|--------------------------------------------------------------------------------------------------------|-------------|
-| <span data-ttu-id="4e468-1245">public int addAllFields(TableName tableName)</span><span class="sxs-lookup"><span data-stu-id="4e468-1245">public int addAllFields(TableName tableName)</span></span>                                                           |             |
-| <span data-ttu-id="4e468-1246">public QueryBuildFieldList addField(FieldId fieldId, \[SelectionField fieldType\], \[int arrayIndex\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1246">public QueryBuildFieldList addField(FieldId fieldId, \[SelectionField fieldType\], \[int arrayIndex\])</span></span> |             |
-| <span data-ttu-id="4e468-1247">public int dynamic(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1247">public int dynamic(\[int value\])</span></span>                                                                      |             |
-| <span data-ttu-id="4e468-1248">public FieldId field(int index)</span><span class="sxs-lookup"><span data-stu-id="4e468-1248">public FieldId field(int index)</span></span>                                                                        |             |
-| <span data-ttu-id="4e468-1249">public int fieldCount()</span><span class="sxs-lookup"><span data-stu-id="4e468-1249">public int fieldCount()</span></span>                                                                                |             |
-| <span data-ttu-id="4e468-1250">public SelectionField fieldKind(int index)</span><span class="sxs-lookup"><span data-stu-id="4e468-1250">public SelectionField fieldKind(int index)</span></span>                                                             |             |
-| <span data-ttu-id="4e468-1251">public TableId tableSelector(int index)</span><span class="sxs-lookup"><span data-stu-id="4e468-1251">public TableId tableSelector(int index)</span></span>                                                                |             |
-| <span data-ttu-id="4e468-1252">public void clearFieldList()</span><span class="sxs-lookup"><span data-stu-id="4e468-1252">public void clearFieldList()</span></span>                                                                           |             |
-
-### <a name="method-addallfields"></a><span data-ttu-id="4e468-1253">メソッド addAllFields</span><span class="sxs-lookup"><span data-stu-id="4e468-1253">Method addAllFields</span></span>
-
-    public int addAllFields(TableName tableName)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1254">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1254">Parameters</span></span>
-
-<span data-ttu-id="4e468-1255">tableName</span><span class="sxs-lookup"><span data-stu-id="4e468-1255">tableName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1256">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1256">Return Value</span></span>
-
-### <a name="method-addfield"></a><span data-ttu-id="4e468-1257">メソッド addField</span><span class="sxs-lookup"><span data-stu-id="4e468-1257">Method addField</span></span>
-
-    public QueryBuildFieldList addField(FieldId fieldId, [SelectionField fieldType], [int arrayIndex])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1258">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1258">Parameters</span></span>
-
-<span data-ttu-id="4e468-1259">fieldId</span><span class="sxs-lookup"><span data-stu-id="4e468-1259">fieldId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1260">fieldType</span><span class="sxs-lookup"><span data-stu-id="4e468-1260">fieldType</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1261">arrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1261">arrayIndex</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1262">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1262">Return Value</span></span>
-
-### <a name="method-dynamic"></a><span data-ttu-id="4e468-1263">メソッド dynamic</span><span class="sxs-lookup"><span data-stu-id="4e468-1263">Method dynamic</span></span>
-
-    public int dynamic([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1264">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1264">Parameters</span></span>
-
-<span data-ttu-id="4e468-1265">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1265">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1266">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1266">Return Value</span></span>
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1267">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1267">Method field</span></span>
-
-    public FieldId field(int index)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1268">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1268">Parameters</span></span>
-
-<span data-ttu-id="4e468-1269">指数</span><span class="sxs-lookup"><span data-stu-id="4e468-1269">index</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1270">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1270">Return Value</span></span>
-
-### <a name="method-fieldcount"></a><span data-ttu-id="4e468-1271">メソッド fieldCount</span><span class="sxs-lookup"><span data-stu-id="4e468-1271">Method fieldCount</span></span>
-
-    public int fieldCount()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1272">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1272">Return Value</span></span>
-
-### <a name="method-fieldkind"></a><span data-ttu-id="4e468-1273">メソッド fieldKind</span><span class="sxs-lookup"><span data-stu-id="4e468-1273">Method fieldKind</span></span>
-
-    public SelectionField fieldKind(int index)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1274">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1274">Parameters</span></span>
-
-<span data-ttu-id="4e468-1275">指数</span><span class="sxs-lookup"><span data-stu-id="4e468-1275">index</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1276">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1276">Return Value</span></span>
-
-### <a name="method-tableselector"></a><span data-ttu-id="4e468-1277">メソッド tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1277">Method tableSelector</span></span>
-
-    public TableId tableSelector(int index)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1278">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1278">Parameters</span></span>
-
-<span data-ttu-id="4e468-1279">指数</span><span class="sxs-lookup"><span data-stu-id="4e468-1279">index</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1280">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1280">Return Value</span></span>
-
-### <a name="method-clearfieldlist"></a><span data-ttu-id="4e468-1281">メソッド clearFieldList</span><span class="sxs-lookup"><span data-stu-id="4e468-1281">Method clearFieldList</span></span>
-
-    public void clearFieldList()
-
-## <a name="class-querybuildlink"></a><span data-ttu-id="4e468-1282">クラス QueryBuildLink</span><span class="sxs-lookup"><span data-stu-id="4e468-1282">Class QueryBuildLink</span></span>
-    class QueryBuildLink extends TreeNode
-
-<span data-ttu-id="4e468-1283">QueryBuildLink クラスは、X++ コードおよびメタデータの作成、読み取り、更新、および削除を可能にします。</span><span class="sxs-lookup"><span data-stu-id="4e468-1283">The QueryBuildLink class enables for the creating, reading, updating, and deleting of X++ code and metadata.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1284">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1284">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1285">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1285">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1286">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1286">Methods</span></span>
-
-| <span data-ttu-id="4e468-1287">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1287">Method</span></span>                      | <span data-ttu-id="4e468-1288">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1288">Description</span></span> |
-|-----------------------------|-------------|
-| <span data-ttu-id="4e468-1289">public int delete()</span><span class="sxs-lookup"><span data-stu-id="4e468-1289">public int delete()</span></span>         |             |
-| <span data-ttu-id="4e468-1290">public int field()</span><span class="sxs-lookup"><span data-stu-id="4e468-1290">public int field()</span></span>          |             |
-| <span data-ttu-id="4e468-1291">public boolean incomplete()</span><span class="sxs-lookup"><span data-stu-id="4e468-1291">public boolean incomplete()</span></span> |             |
-| <span data-ttu-id="4e468-1292">public str joinRelation()</span><span class="sxs-lookup"><span data-stu-id="4e468-1292">public str joinRelation()</span></span>   |             |
-| <span data-ttu-id="4e468-1293">public int relatedField()</span><span class="sxs-lookup"><span data-stu-id="4e468-1293">public int relatedField()</span></span>   |             |
-| <span data-ttu-id="4e468-1294">public int relatedTable()</span><span class="sxs-lookup"><span data-stu-id="4e468-1294">public int relatedTable()</span></span>   |             |
-| <span data-ttu-id="4e468-1295">public int table()</span><span class="sxs-lookup"><span data-stu-id="4e468-1295">public int table()</span></span>          |             |
-| <span data-ttu-id="4e468-1296">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1296">public void finalize()</span></span>      |             |
-
-### <a name="method-delete"></a><span data-ttu-id="4e468-1297">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="4e468-1297">Method delete</span></span>
-
-    public int delete()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1298">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1298">Return Value</span></span>
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1299">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1299">Method field</span></span>
-
-    public int field()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1300">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1300">Return Value</span></span>
-
-### <a name="method-incomplete"></a><span data-ttu-id="4e468-1301">メソッド incomplete</span><span class="sxs-lookup"><span data-stu-id="4e468-1301">Method incomplete</span></span>
-
-    public boolean incomplete()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1302">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1302">Return Value</span></span>
-
-### <a name="method-joinrelation"></a><span data-ttu-id="4e468-1303">メソッド joinRelation</span><span class="sxs-lookup"><span data-stu-id="4e468-1303">Method joinRelation</span></span>
-
-    public str joinRelation()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1304">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1304">Return Value</span></span>
-
-### <a name="method-relatedfield"></a><span data-ttu-id="4e468-1305">メソッド relatedField</span><span class="sxs-lookup"><span data-stu-id="4e468-1305">Method relatedField</span></span>
-
-    public int relatedField()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1306">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1306">Return Value</span></span>
-
-### <a name="method-relatedtable"></a><span data-ttu-id="4e468-1307">メソッド relatedTable</span><span class="sxs-lookup"><span data-stu-id="4e468-1307">Method relatedTable</span></span>
-
-    public int relatedTable()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1308">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1308">Return Value</span></span>
-
-### <a name="method-table"></a><span data-ttu-id="4e468-1309">メソッド table</span><span class="sxs-lookup"><span data-stu-id="4e468-1309">Method table</span></span>
-
-    public int table()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1310">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1310">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1311">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1311">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-querybuildrange"></a><span data-ttu-id="4e468-1312">クラス QueryBuildRange</span><span class="sxs-lookup"><span data-stu-id="4e468-1312">Class QueryBuildRange</span></span>
-    class QueryBuildRange extends TreeNode
-
-<span data-ttu-id="4e468-1313">QueryBuildRange クラスは、QueryBuildRange クラスが関連付けられているデータ ソースからフェッチするレコードを定義する範囲を表します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1313">The QueryBuildRange class represents the ranges that define which records should be fetched from the data source in which the QueryBuildRange class is associated.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1314">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1314">Remarks</span></span>
-
-<span data-ttu-id="4e468-1315">value プロパティを使用して、範囲を定義する文字列を設定できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1315">The value property can be used to set the string that defines the range.</span></span> <span data-ttu-id="4e468-1316">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1316">This class lets you create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="4e468-1317">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1317">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span> <span data-ttu-id="4e468-1318">特定のデータ ソースは、任意の数の範囲を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1318">A particular data source can have any number of ranges.</span></span> <span data-ttu-id="4e468-1319">複数の範囲は、同じデータ ソース フィールドに対して有効です。</span><span class="sxs-lookup"><span data-stu-id="4e468-1319">Multiple ranges are valid for the same data source field.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1320">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1320">Examples</span></span>
-
-<span data-ttu-id="4e468-1321">次の基本的な例は、QueryBuildRange クラスを使用して特定のデータ フィールドの対象範囲を指定する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="4e468-1321">The following basic example shows how to use the QueryBuildRange class to specify the range of interest for a specific data field.</span></span>
-
-    Query                   query; 
-    QueryRun                queryRun; 
-    QueryBuildDataSource    queryBuildDataSource; 
-    QueryBuildRange         queryBuildRange; 
-    CustTable               custTable; 
-    query = new Query(); 
-    queryBuildDataSource = query.addDataSource( 
-       TableNum(CustTable)); 
-    queryBuildRange = queryBuildDataSource.addRange( 
-        FieldNum(CustTable,AccountNum)); 
-    queryBuildRange.value("4000..5000"); 
-    queryRun = new queryRun(query); 
-    if (queryRun.prompt()) 
-    { 
-        while (queryRun.next()) 
-        { 
-            custTable = queryRun.get(TableNum(CustTable)); 
-            print custTable.AccountNum; 
-        } 
-    }
-
-### <a name="methods"></a><span data-ttu-id="4e468-1322">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1322">Methods</span></span>
-
-| <span data-ttu-id="4e468-1323">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1323">Method</span></span>                                                        | <span data-ttu-id="4e468-1324">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1324">Description</span></span>                                                                                                                               |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4e468-1325">public QueryBuildDataSource dataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-1325">public QueryBuildDataSource dataSource()</span></span>                      | <span data-ttu-id="4e468-1326">QueryBuildRange オブジェクトのインスタンスを作成するために使用されたデータソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1326">Returns the data source that was used to instantiate the QueryBuildRange object.</span></span>                                                          |
-| <span data-ttu-id="4e468-1327">public boolean doesRangeNodeBelongToCompositeQuery()</span><span class="sxs-lookup"><span data-stu-id="4e468-1327">public boolean doesRangeNodeBelongToCompositeQuery()</span></span>          |                                                                                                                                           |
-| <span data-ttu-id="4e468-1328">public boolean enabled(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1328">public boolean enabled(\[boolean value\])</span></span>                     | <span data-ttu-id="4e468-1329">オブジェクトを有効または無効にするかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1329">Determines whether to enable or disable the object.</span></span>                                                                                       |
-| <span data-ttu-id="4e468-1330">public FieldId field(\[FieldId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1330">public FieldId field(\[FieldId value\])</span></span>                       | <span data-ttu-id="4e468-1331">オブジェクトに関連付けられているフィールド ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1331">Gets or sets the field ID associated with the object.</span></span>                                                                                     |
-| <span data-ttu-id="4e468-1332">public int fieldArrayIndex()</span><span class="sxs-lookup"><span data-stu-id="4e468-1332">public int fieldArrayIndex()</span></span>                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-1333">public FieldName fieldName()</span><span class="sxs-lookup"><span data-stu-id="4e468-1333">public FieldName fieldName()</span></span>                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-1334">public str label(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1334">public str label(\[str value\])</span></span>                               | <span data-ttu-id="4e468-1335">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1335">Gets or sets the label for a control.</span></span>                                                                                                     |
-| <span data-ttu-id="4e468-1336">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1336">public str name(\[str value\])</span></span>                                | <span data-ttu-id="4e468-1337">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1337">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="4e468-1338">public str prompt()</span><span class="sxs-lookup"><span data-stu-id="4e468-1338">public str prompt()</span></span>                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-1339">public QueryRangeType rangeType(\[QueryRangeType rangeType\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1339">public QueryRangeType rangeType(\[QueryRangeType rangeType\])</span></span> |                                                                                                                                           |
-| <span data-ttu-id="4e468-1340">public int status(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1340">public int status(\[int value\])</span></span>                              | <span data-ttu-id="4e468-1341">オブジェクトの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1341">Gets or sets the status of an object.</span></span>                                                                                                     |
-| <span data-ttu-id="4e468-1342">public TableId table(\[TableId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1342">public TableId table(\[TableId value\])</span></span>                       | <span data-ttu-id="4e468-1343">オブジェクトに関連付けられているテーブル ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1343">Gets or sets the table ID that is associated with the object.</span></span>                                                                             |
-| <span data-ttu-id="4e468-1344">public TableId tableSelector(\[TableId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1344">public TableId tableSelector(\[TableId value\])</span></span>               |                                                                                                                                           |
-| <span data-ttu-id="4e468-1345">public str toString()</span><span class="sxs-lookup"><span data-stu-id="4e468-1345">public str toString()</span></span>                                         | <span data-ttu-id="4e468-1346">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1346">Returns a string that represents the current object.</span></span>                                                                                      |
-| <span data-ttu-id="4e468-1347">public int typeof()</span><span class="sxs-lookup"><span data-stu-id="4e468-1347">public int typeof()</span></span>                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-1348">public boolean valid()</span><span class="sxs-lookup"><span data-stu-id="4e468-1348">public boolean valid()</span></span>                                        |                                                                                                                                           |
-| <span data-ttu-id="4e468-1349">public str value(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1349">public str value(\[str value\])</span></span>                               | <span data-ttu-id="4e468-1350">取得するために一致する必要がある照会されたレコードの値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1350">Gets or sets the value that queried records must match to be retrieved.</span></span>                                                                   |
-| <span data-ttu-id="4e468-1351">public void associateRangeNodeToCompositeQuery()</span><span class="sxs-lookup"><span data-stu-id="4e468-1351">public void associateRangeNodeToCompositeQuery()</span></span>              |                                                                                                                                           |
-| <span data-ttu-id="4e468-1352">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1352">public void finalize()</span></span>                                        |                                                                                                                                           |
-
-### <a name="method-datasource"></a><span data-ttu-id="4e468-1353">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1353">Method dataSource</span></span>
-
-<span data-ttu-id="4e468-1354">QueryBuildRange オブジェクトのインスタンスを作成するために使用されたデータソースを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1354">Returns the data source that was used to instantiate the QueryBuildRange object.</span></span>
-
-    public QueryBuildDataSource dataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1355">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1355">Return Value</span></span>
-
-<span data-ttu-id="4e468-1356">QueryBuildRange クラスオブジェクトのインスタンスを作成するために使用されたデータソース。</span><span class="sxs-lookup"><span data-stu-id="4e468-1356">The data source that was used to instantiate the QueryBuildRange class object.</span></span>
-
-### <a name="method-doesrangenodebelongtocompositequery"></a><span data-ttu-id="4e468-1357">メソッド doesRangeNodeBelongToCompositeQuery</span><span class="sxs-lookup"><span data-stu-id="4e468-1357">Method doesRangeNodeBelongToCompositeQuery</span></span>
-
-    public boolean doesRangeNodeBelongToCompositeQuery()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1358">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1358">Return Value</span></span>
-
-### <a name="method-enabled"></a><span data-ttu-id="4e468-1359">メソッド enabled</span><span class="sxs-lookup"><span data-stu-id="4e468-1359">Method enabled</span></span>
-
-<span data-ttu-id="4e468-1360">オブジェクトを有効または無効にするかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1360">Determines whether to enable or disable the object.</span></span>
-
-    public boolean enabled([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1361">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1361">Parameters</span></span>
-
-<span data-ttu-id="4e468-1362">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1362">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1363">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1363">Return Value</span></span>
-
-<span data-ttu-id="4e468-1364">オブジェクトが有効である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1364">true if the object is enabled; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1365">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1365">Remarks</span></span>
-
-<span data-ttu-id="4e468-1366">有効になっているプロパティを使用すると、実行時にコントロールを有効または無効にできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1366">The enabled property enables controls to be enabled or disabled at run time.</span></span> <span data-ttu-id="4e468-1367">たとえば、アプリケーションの現在の状態には適用されないオブジェクトを無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1367">For example, you can disable objects that do not apply to the current state of the application.</span></span> <span data-ttu-id="4e468-1368">また、読み取り専用情報を提供する、エラー メッセージなどの、表示のためにのみ使用されるコントロールを無効にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1368">You can also disable a control that is used only for display purposes, such as an error message, which provides read-only information.</span></span>
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1369">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1369">Method field</span></span>
-
-<span data-ttu-id="4e468-1370">オブジェクトに関連付けられているフィールド ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1370">Gets or sets the field ID associated with the object.</span></span>
-
-    public FieldId field([FieldId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1371">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1371">Parameters</span></span>
-
-<span data-ttu-id="4e468-1372">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1372">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1373">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1373">Return Value</span></span>
-
-<span data-ttu-id="4e468-1374">オブジェクトに関連付けられたフィールド ID の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1374">The current value of the field ID associated with the object.</span></span>
-
-### <a name="method-fieldarrayindex"></a><span data-ttu-id="4e468-1375">メソッド fieldArrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1375">Method fieldArrayIndex</span></span>
-
-    public int fieldArrayIndex()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1376">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1376">Return Value</span></span>
-
-### <a name="method-fieldname"></a><span data-ttu-id="4e468-1377">メソッド fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-1377">Method fieldName</span></span>
-
-    public FieldName fieldName()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1378">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1378">Return Value</span></span>
-
-### <a name="method-label"></a><span data-ttu-id="4e468-1379">メソッド label</span><span class="sxs-lookup"><span data-stu-id="4e468-1379">Method label</span></span>
-
-<span data-ttu-id="4e468-1380">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1380">Gets or sets the label for a control.</span></span>
-
-    public str label([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1381">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1381">Parameters</span></span>
-
-<span data-ttu-id="4e468-1382">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1382">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1383">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1383">Return Value</span></span>
-
-<span data-ttu-id="4e468-1384">ラベル文字列の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1384">The current value of the label string.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1385">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1385">Remarks</span></span>
-
-<span data-ttu-id="4e468-1386">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1386">The label determines which text is displayed in the control or adjacent to it.</span></span> <span data-ttu-id="4e468-1387">ラベルのプロパティ値は 250 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1387">The label property value cannot exceed 250 characters.</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="4e468-1388">メソッド名</span><span class="sxs-lookup"><span data-stu-id="4e468-1388">Method name</span></span>
-
-<span data-ttu-id="4e468-1389">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1389">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
-
-    public str name([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1390">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1390">Parameters</span></span>
-
-<span data-ttu-id="4e468-1391">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1391">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1392">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1392">Return Value</span></span>
-
-<span data-ttu-id="4e468-1393">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-1393">The name that is used in code to identify an application object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1394">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1394">Remarks</span></span>
-
-<span data-ttu-id="4e468-1395">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1395">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
-
--   <span data-ttu-id="4e468-1396">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1396">Begins with a letter.</span></span>
--   <span data-ttu-id="4e468-1397">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="4e468-1397">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="4e468-1398">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1398">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="4e468-1399">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1399">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="4e468-1400">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1400">Tables cannot have the same name as other public objects, such as extended data types, base enums, or classes.</span></span>
-
-### <a name="method-prompt"></a><span data-ttu-id="4e468-1401">メソッド prompt</span><span class="sxs-lookup"><span data-stu-id="4e468-1401">Method prompt</span></span>
-
-    public str prompt()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1402">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1402">Return Value</span></span>
-
-### <a name="method-rangetype"></a><span data-ttu-id="4e468-1403">メソッド rangeType</span><span class="sxs-lookup"><span data-stu-id="4e468-1403">Method rangeType</span></span>
-
-    public QueryRangeType rangeType([QueryRangeType rangeType])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1404">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1404">Parameters</span></span>
-
-<span data-ttu-id="4e468-1405">rangeType</span><span class="sxs-lookup"><span data-stu-id="4e468-1405">rangeType</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1406">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1406">Return Value</span></span>
-
-### <a name="method-status"></a><span data-ttu-id="4e468-1407">メソッド status</span><span class="sxs-lookup"><span data-stu-id="4e468-1407">Method status</span></span>
-
-<span data-ttu-id="4e468-1408">オブジェクトの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1408">Gets or sets the status of an object.</span></span>
-
-    public int status([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1409">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1409">Parameters</span></span>
-
-<span data-ttu-id="4e468-1410">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1410">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1411">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1411">Return Value</span></span>
-
-<span data-ttu-id="4e468-1412">オブジェクトの現在の状態</span><span class="sxs-lookup"><span data-stu-id="4e468-1412">The current status of the object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1413">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1413">Remarks</span></span>
-
-<span data-ttu-id="4e468-1414">ステータスには次の値があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1414">The following values are possible for the status:</span></span>
-
--   <span data-ttu-id="4e468-1415">0 - ステータス オープン。</span><span class="sxs-lookup"><span data-stu-id="4e468-1415">0 – Status Open.</span></span>
--   <span data-ttu-id="4e468-1416">1 - ステータス ロック。</span><span class="sxs-lookup"><span data-stu-id="4e468-1416">1 – Status Lock.</span></span>
--   <span data-ttu-id="4e468-1417">2 - ステータスが非表示です。</span><span class="sxs-lookup"><span data-stu-id="4e468-1417">2 – Status Hide.</span></span>
-
-### <a name="method-table"></a><span data-ttu-id="4e468-1418">メソッド table</span><span class="sxs-lookup"><span data-stu-id="4e468-1418">Method table</span></span>
-
-<span data-ttu-id="4e468-1419">オブジェクトに関連付けられているテーブル ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1419">Gets or sets the table ID that is associated with the object.</span></span>
-
-    public TableId table([TableId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1420">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1420">Parameters</span></span>
-
-<span data-ttu-id="4e468-1421">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1421">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1422">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1422">Return Value</span></span>
-
-<span data-ttu-id="4e468-1423">オブジェクトに関連付けられたテーブル ID の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1423">The current value of the table ID that is associated with the object.</span></span>
-
-### <a name="method-tableselector"></a><span data-ttu-id="4e468-1424">メソッド tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1424">Method tableSelector</span></span>
-
-    public TableId tableSelector([TableId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1425">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1425">Parameters</span></span>
-
-<span data-ttu-id="4e468-1426">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1426">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1427">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1427">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="4e468-1428">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="4e468-1428">Method toString</span></span>
-
-<span data-ttu-id="4e468-1429">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1429">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1430">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1430">Return Value</span></span>
-
-<span data-ttu-id="4e468-1431">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-1431">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1432">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1432">Remarks</span></span>
-
-<span data-ttu-id="4e468-1433">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1433">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="4e468-1434">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1434">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="4e468-1435">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1435">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-### <a name="method-typeof"></a><span data-ttu-id="4e468-1436">メソッド typeof</span><span class="sxs-lookup"><span data-stu-id="4e468-1436">Method typeof</span></span>
-
-    public int typeof()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1437">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1437">Return Value</span></span>
-
-### <a name="method-valid"></a><span data-ttu-id="4e468-1438">メソッド valid</span><span class="sxs-lookup"><span data-stu-id="4e468-1438">Method valid</span></span>
-
-    public boolean valid()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1439">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1439">Return Value</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="4e468-1440">メソッド value</span><span class="sxs-lookup"><span data-stu-id="4e468-1440">Method value</span></span>
-
-<span data-ttu-id="4e468-1441">取得するために一致する必要がある照会されたレコードの値を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1441">Gets or sets the value that queried records must match to be retrieved.</span></span>
-
-    public str value([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1442">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1442">Parameters</span></span>
-
-<span data-ttu-id="4e468-1443">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1443">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1444">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1444">Return Value</span></span>
-
-<span data-ttu-id="4e468-1445">範囲の文字列値</span><span class="sxs-lookup"><span data-stu-id="4e468-1445">The string value for the range.</span></span>
-
-### <a name="method-associaterangenodetocompositequery"></a><span data-ttu-id="4e468-1446">メソッド associateRangeNodeToCompositeQuery</span><span class="sxs-lookup"><span data-stu-id="4e468-1446">Method associateRangeNodeToCompositeQuery</span></span>
-
-    public void associateRangeNodeToCompositeQuery()
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1447">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1447">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-querybuildstaticlink"></a><span data-ttu-id="4e468-1448">クラス QueryBuildStaticlink</span><span class="sxs-lookup"><span data-stu-id="4e468-1448">Class QueryBuildStaticlink</span></span>
-    class QueryBuildStaticlink extends Object
-
-<span data-ttu-id="4e468-1449">QueryBuildStaticLink クラスは、QueryBuildDataSource クラスで定義されている静的リンクに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1449">The QueryBuildStaticLink class provides the information about the static links that are defined on a QueryBuildDataSource class.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1450">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1450">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1451">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1451">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1452">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1452">Methods</span></span>
-
-| <span data-ttu-id="4e468-1453">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1453">Method</span></span>                 | <span data-ttu-id="4e468-1454">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1454">Description</span></span>                                                         |
-|------------------------|---------------------------------------------------------------------|
-| <span data-ttu-id="4e468-1455">public FieldId field()</span><span class="sxs-lookup"><span data-stu-id="4e468-1455">public FieldId field()</span></span> | <span data-ttu-id="4e468-1456">静的リンクが定義されているフィールド情報を提供します/</span><span class="sxs-lookup"><span data-stu-id="4e468-1456">Provides the field information on which the static link is defined/</span></span> |
-| <span data-ttu-id="4e468-1457">public AnyType value()</span><span class="sxs-lookup"><span data-stu-id="4e468-1457">public AnyType value()</span></span> | <span data-ttu-id="4e468-1458">静的リンクが定義されているフィールドの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1458">Gets the value of the field on which the static link is defined.</span></span>    |
-| <span data-ttu-id="4e468-1459">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1459">public void finalize()</span></span> |                                                                     |
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1460">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1460">Method field</span></span>
-
-<span data-ttu-id="4e468-1461">静的リンクが定義されているフィールド情報を提供します/</span><span class="sxs-lookup"><span data-stu-id="4e468-1461">Provides the field information on which the static link is defined/</span></span>
-
-    public FieldId field()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1462">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1462">Return Value</span></span>
-
-<span data-ttu-id="4e468-1463">静的リンクが定義されているフィールドの FieldId 値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1463">The FieldId value of the field on which the static link is defined.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="4e468-1464">メソッド value</span><span class="sxs-lookup"><span data-stu-id="4e468-1464">Method value</span></span>
-
-<span data-ttu-id="4e468-1465">静的リンクが定義されているフィールドの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1465">Gets the value of the field on which the static link is defined.</span></span>
-
-    public AnyType value()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1466">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1466">Return Value</span></span>
-
-<span data-ttu-id="4e468-1467">静的リンクの値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1467">The value of the static link.</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1468">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1468">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-queryfilter"></a><span data-ttu-id="4e468-1469">クラス QueryFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-1469">Class QueryFilter</span></span>
-    class QueryFilter extends Object
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1470">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1470">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1471">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1471">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1472">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1472">Methods</span></span>
-
-| <span data-ttu-id="4e468-1473">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1473">Method</span></span>                                                        | <span data-ttu-id="4e468-1474">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1474">Description</span></span>                                          |
-|---------------------------------------------------------------|------------------------------------------------------|
-| <span data-ttu-id="4e468-1475">public QueryBuildDataSource dataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-1475">public QueryBuildDataSource dataSource()</span></span>                      |                                                      |
-| <span data-ttu-id="4e468-1476">public FieldName field()</span><span class="sxs-lookup"><span data-stu-id="4e468-1476">public FieldName field()</span></span>                                      |                                                      |
-| <span data-ttu-id="4e468-1477">public QueryRangeType rangeType(\[QueryRangeType rangeType\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1477">public QueryRangeType rangeType(\[QueryRangeType rangeType\])</span></span> |                                                      |
-| <span data-ttu-id="4e468-1478">public int status(\[int status\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1478">public int status(\[int status\])</span></span>                             |                                                      |
-| <span data-ttu-id="4e468-1479">public str toString()</span><span class="sxs-lookup"><span data-stu-id="4e468-1479">public str toString()</span></span>                                         | <span data-ttu-id="4e468-1480">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1480">Returns a string that represents the current object.</span></span> |
-| <span data-ttu-id="4e468-1481">public str value(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1481">public str value(\[str value\])</span></span>                               |                                                      |
-| <span data-ttu-id="4e468-1482">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1482">public void finalize()</span></span>                                        |                                                      |
-
-### <a name="method-datasource"></a><span data-ttu-id="4e468-1483">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1483">Method dataSource</span></span>
-
-    public QueryBuildDataSource dataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1484">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1484">Return Value</span></span>
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1485">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1485">Method field</span></span>
-
-    public FieldName field()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1486">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1486">Return Value</span></span>
-
-### <a name="method-rangetype"></a><span data-ttu-id="4e468-1487">メソッド rangeType</span><span class="sxs-lookup"><span data-stu-id="4e468-1487">Method rangeType</span></span>
-
-    public QueryRangeType rangeType([QueryRangeType rangeType])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1488">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1488">Parameters</span></span>
-
-<span data-ttu-id="4e468-1489">rangeType</span><span class="sxs-lookup"><span data-stu-id="4e468-1489">rangeType</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1490">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1490">Return Value</span></span>
-
-### <a name="method-status"></a><span data-ttu-id="4e468-1491">メソッド status</span><span class="sxs-lookup"><span data-stu-id="4e468-1491">Method status</span></span>
-
-    public int status([int status])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1492">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1492">Parameters</span></span>
-
-<span data-ttu-id="4e468-1493">ステータス</span><span class="sxs-lookup"><span data-stu-id="4e468-1493">status</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1494">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1494">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="4e468-1495">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="4e468-1495">Method toString</span></span>
-
-<span data-ttu-id="4e468-1496">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1496">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1497">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1497">Return Value</span></span>
-
-<span data-ttu-id="4e468-1498">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-1498">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1499">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1499">Remarks</span></span>
-
-<span data-ttu-id="4e468-1500">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1500">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="4e468-1501">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1501">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="4e468-1502">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1502">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="4e468-1503">メソッド value</span><span class="sxs-lookup"><span data-stu-id="4e468-1503">Method value</span></span>
-
-    public str value([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1504">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1504">Parameters</span></span>
-
-<span data-ttu-id="4e468-1505">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1505">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1506">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1506">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1507">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1507">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-querygroupbyfield"></a><span data-ttu-id="4e468-1508">クラス QueryGroupByField</span><span class="sxs-lookup"><span data-stu-id="4e468-1508">Class QueryGroupByField</span></span>
-    class QueryGroupByField extends TreeNode
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1509">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1509">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1510">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1510">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1511">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1511">Methods</span></span>
-
-| <span data-ttu-id="4e468-1512">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1512">Method</span></span>                                                  | <span data-ttu-id="4e468-1513">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1513">Description</span></span> |
-|---------------------------------------------------------|-------------|
-| <span data-ttu-id="4e468-1514">public boolean autoHeader(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1514">public boolean autoHeader(\[boolean value\])</span></span>            |             |
-| <span data-ttu-id="4e468-1515">public int autoHeaderDetailLevel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1515">public int autoHeaderDetailLevel(\[int value\])</span></span>         |             |
-| <span data-ttu-id="4e468-1516">public boolean autoSum(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1516">public boolean autoSum(\[boolean value\])</span></span>               |             |
-| <span data-ttu-id="4e468-1517">public int autoSumDetailLevel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1517">public int autoSumDetailLevel(\[int value\])</span></span>            |             |
-| <span data-ttu-id="4e468-1518">public QueryBuildDataSource dataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-1518">public QueryBuildDataSource dataSource()</span></span>                |             |
-| <span data-ttu-id="4e468-1519">public int fieldID()</span><span class="sxs-lookup"><span data-stu-id="4e468-1519">public int fieldID()</span></span>                                    |             |
-| <span data-ttu-id="4e468-1520">public TableId tableSelector(\[TableId tableSelector\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1520">public TableId tableSelector(\[TableId tableSelector\])</span></span> |             |
-| <span data-ttu-id="4e468-1521">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1521">public void finalize()</span></span>                                  |             |
-
-### <a name="method-autoheader"></a><span data-ttu-id="4e468-1522">メソッド autoHeader</span><span class="sxs-lookup"><span data-stu-id="4e468-1522">Method autoHeader</span></span>
-
-    public boolean autoHeader([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1523">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1523">Parameters</span></span>
-
-<span data-ttu-id="4e468-1524">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1524">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1525">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1525">Return Value</span></span>
-
-### <a name="method-autoheaderdetaillevel"></a><span data-ttu-id="4e468-1526">メソッド autoHeaderDetailLevel</span><span class="sxs-lookup"><span data-stu-id="4e468-1526">Method autoHeaderDetailLevel</span></span>
-
-    public int autoHeaderDetailLevel([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1527">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1527">Parameters</span></span>
-
-<span data-ttu-id="4e468-1528">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1528">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1529">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1529">Return Value</span></span>
-
-### <a name="method-autosum"></a><span data-ttu-id="4e468-1530">メソッド autoSum</span><span class="sxs-lookup"><span data-stu-id="4e468-1530">Method autoSum</span></span>
-
-    public boolean autoSum([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1531">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1531">Parameters</span></span>
-
-<span data-ttu-id="4e468-1532">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1532">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1533">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1533">Return Value</span></span>
-
-### <a name="method-autosumdetaillevel"></a><span data-ttu-id="4e468-1534">メソッド autoSumDetailLevel</span><span class="sxs-lookup"><span data-stu-id="4e468-1534">Method autoSumDetailLevel</span></span>
-
-    public int autoSumDetailLevel([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1535">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1535">Parameters</span></span>
-
-<span data-ttu-id="4e468-1536">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1536">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1537">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1537">Return Value</span></span>
-
-### <a name="method-datasource"></a><span data-ttu-id="4e468-1538">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1538">Method dataSource</span></span>
-
-    public QueryBuildDataSource dataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1539">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1539">Return Value</span></span>
-
-### <a name="method-fieldid"></a><span data-ttu-id="4e468-1540">メソッド fieldID</span><span class="sxs-lookup"><span data-stu-id="4e468-1540">Method fieldID</span></span>
-
-    public int fieldID()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1541">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1541">Return Value</span></span>
-
-### <a name="method-tableselector"></a><span data-ttu-id="4e468-1542">メソッド tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1542">Method tableSelector</span></span>
-
-    public TableId tableSelector([TableId tableSelector])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1543">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1543">Parameters</span></span>
-
-<span data-ttu-id="4e468-1544">tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1544">tableSelector</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1545">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1545">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1546">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1546">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-queryhavingfilter"></a><span data-ttu-id="4e468-1547">クラス QueryHavingFilter</span><span class="sxs-lookup"><span data-stu-id="4e468-1547">Class QueryHavingFilter</span></span>
-    class QueryHavingFilter extends TreeNode
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1548">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1548">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1549">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1549">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1550">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1550">Methods</span></span>
-
-| <span data-ttu-id="4e468-1551">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1551">Method</span></span>                                          | <span data-ttu-id="4e468-1552">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1552">Description</span></span>                                                                                                                               |
-|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4e468-1553">public AggregateFunction aggregateFunction()</span><span class="sxs-lookup"><span data-stu-id="4e468-1553">public AggregateFunction aggregateFunction()</span></span>    |                                                                                                                                           |
-| <span data-ttu-id="4e468-1554">public QueryBuildDataSource dataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-1554">public QueryBuildDataSource dataSource()</span></span>        |                                                                                                                                           |
-| <span data-ttu-id="4e468-1555">public boolean enabled(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1555">public boolean enabled(\[boolean value\])</span></span>       | <span data-ttu-id="4e468-1556">オブジェクトを有効または無効にするかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1556">Determines whether to enable or disable the object.</span></span>                                                                                       |
-| <span data-ttu-id="4e468-1557">public FieldId field(\[FieldId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1557">public FieldId field(\[FieldId value\])</span></span>         | <span data-ttu-id="4e468-1558">オブジェクトに関連付けられているフィールド ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1558">Gets or sets the field ID associated with the object.</span></span>                                                                                     |
-| <span data-ttu-id="4e468-1559">public int fieldArrayIndex()</span><span class="sxs-lookup"><span data-stu-id="4e468-1559">public int fieldArrayIndex()</span></span>                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-1560">public FieldName fieldName()</span><span class="sxs-lookup"><span data-stu-id="4e468-1560">public FieldName fieldName()</span></span>                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-1561">public str label(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1561">public str label(\[str value\])</span></span>                 | <span data-ttu-id="4e468-1562">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1562">Gets or sets the label for a control.</span></span>                                                                                                     |
-| <span data-ttu-id="4e468-1563">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1563">public str name(\[str value\])</span></span>                  | <span data-ttu-id="4e468-1564">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1564">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="4e468-1565">public str prompt()</span><span class="sxs-lookup"><span data-stu-id="4e468-1565">public str prompt()</span></span>                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-1566">public int status(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1566">public int status(\[int value\])</span></span>                | <span data-ttu-id="4e468-1567">オブジェクトの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1567">Gets or sets the status of an object.</span></span>                                                                                                     |
-| <span data-ttu-id="4e468-1568">public TableId table(\[TableId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1568">public TableId table(\[TableId value\])</span></span>         | <span data-ttu-id="4e468-1569">オブジェクトに関連付けられているテーブル ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1569">Gets or sets the table ID that is associated with the object.</span></span>                                                                             |
-| <span data-ttu-id="4e468-1570">public TableId tableSelector(\[TableId value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1570">public TableId tableSelector(\[TableId value\])</span></span> |                                                                                                                                           |
-| <span data-ttu-id="4e468-1571">public str toString()</span><span class="sxs-lookup"><span data-stu-id="4e468-1571">public str toString()</span></span>                           | <span data-ttu-id="4e468-1572">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1572">Returns a string that represents the current object.</span></span>                                                                                      |
-| <span data-ttu-id="4e468-1573">public int typeof()</span><span class="sxs-lookup"><span data-stu-id="4e468-1573">public int typeof()</span></span>                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-1574">public boolean valid()</span><span class="sxs-lookup"><span data-stu-id="4e468-1574">public boolean valid()</span></span>                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-1575">public str value(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1575">public str value(\[str value\])</span></span>                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-1576">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1576">public void finalize()</span></span>                          |                                                                                                                                           |
-
-### <a name="method-aggregatefunction"></a><span data-ttu-id="4e468-1577">メソッド aggregateFunction</span><span class="sxs-lookup"><span data-stu-id="4e468-1577">Method aggregateFunction</span></span>
-
-    public AggregateFunction aggregateFunction()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1578">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1578">Return Value</span></span>
-
-### <a name="method-datasource"></a><span data-ttu-id="4e468-1579">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1579">Method dataSource</span></span>
-
-    public QueryBuildDataSource dataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1580">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1580">Return Value</span></span>
-
-### <a name="method-enabled"></a><span data-ttu-id="4e468-1581">メソッド enabled</span><span class="sxs-lookup"><span data-stu-id="4e468-1581">Method enabled</span></span>
-
-<span data-ttu-id="4e468-1582">オブジェクトを有効または無効にするかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1582">Determines whether to enable or disable the object.</span></span>
-
-    public boolean enabled([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1583">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1583">Parameters</span></span>
-
-<span data-ttu-id="4e468-1584">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1584">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1585">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1585">Return Value</span></span>
-
-<span data-ttu-id="4e468-1586">オブジェクトが有効である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1586">true if the object is enabled; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1587">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1587">Remarks</span></span>
-
-<span data-ttu-id="4e468-1588">有効になっているプロパティを使用すると、実行時にコントロールを有効または無効にできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1588">The enabled property enables controls to be enabled or disabled at run time.</span></span> <span data-ttu-id="4e468-1589">たとえば、アプリケーションの現在の状態には適用されないオブジェクトを無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1589">For example, you can disable objects that do not apply to the current state of the application.</span></span> <span data-ttu-id="4e468-1590">また、読み取り専用情報を提供する、エラー メッセージなどの、表示のためにのみ使用されるコントロールを無効にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1590">You can also disable a control that is used only for display purposes, such as an error message, which provides read-only information.</span></span>
-
-### <a name="method-field"></a><span data-ttu-id="4e468-1591">メソッド field</span><span class="sxs-lookup"><span data-stu-id="4e468-1591">Method field</span></span>
-
-<span data-ttu-id="4e468-1592">オブジェクトに関連付けられているフィールド ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1592">Gets or sets the field ID associated with the object.</span></span>
-
-    public FieldId field([FieldId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1593">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1593">Parameters</span></span>
-
-<span data-ttu-id="4e468-1594">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1594">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1595">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1595">Return Value</span></span>
-
-<span data-ttu-id="4e468-1596">オブジェクトに関連付けられたフィールド ID の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1596">The current value of the field ID associated with the object.</span></span>
-
-### <a name="method-fieldarrayindex"></a><span data-ttu-id="4e468-1597">メソッド fieldArrayIndex</span><span class="sxs-lookup"><span data-stu-id="4e468-1597">Method fieldArrayIndex</span></span>
-
-    public int fieldArrayIndex()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1598">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1598">Return Value</span></span>
-
-### <a name="method-fieldname"></a><span data-ttu-id="4e468-1599">メソッド fieldName</span><span class="sxs-lookup"><span data-stu-id="4e468-1599">Method fieldName</span></span>
-
-    public FieldName fieldName()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1600">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1600">Return Value</span></span>
-
-### <a name="method-label"></a><span data-ttu-id="4e468-1601">メソッド label</span><span class="sxs-lookup"><span data-stu-id="4e468-1601">Method label</span></span>
-
-<span data-ttu-id="4e468-1602">コントロールのラベルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1602">Gets or sets the label for a control.</span></span>
-
-    public str label([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1603">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1603">Parameters</span></span>
-
-<span data-ttu-id="4e468-1604">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1604">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1605">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1605">Return Value</span></span>
-
-<span data-ttu-id="4e468-1606">ラベル文字列の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1606">The current value of the label string.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1607">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1607">Remarks</span></span>
-
-<span data-ttu-id="4e468-1608">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1608">The label determines which text is displayed in the control or adjacent to it.</span></span> <span data-ttu-id="4e468-1609">ラベルのプロパティ値は 250 文字を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1609">The label property value cannot exceed 250 characters.</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="4e468-1610">メソッド名</span><span class="sxs-lookup"><span data-stu-id="4e468-1610">Method name</span></span>
-
-<span data-ttu-id="4e468-1611">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1611">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
-
-    public str name([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1612">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1612">Parameters</span></span>
-
-<span data-ttu-id="4e468-1613">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1613">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1614">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1614">Return Value</span></span>
-
-<span data-ttu-id="4e468-1615">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-1615">The name that is used in code to identify an application object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1616">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1616">Remarks</span></span>
-
-<span data-ttu-id="4e468-1617">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1617">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
-
--   <span data-ttu-id="4e468-1618">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1618">Begins with a letter.</span></span>
--   <span data-ttu-id="4e468-1619">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="4e468-1619">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="4e468-1620">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1620">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="4e468-1621">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1621">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="4e468-1622">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1622">Tables cannot have the same name as other public objects, such as extended data types, base enums, or classes.</span></span>
-
-### <a name="method-prompt"></a><span data-ttu-id="4e468-1623">メソッド prompt</span><span class="sxs-lookup"><span data-stu-id="4e468-1623">Method prompt</span></span>
-
-    public str prompt()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1624">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1624">Return Value</span></span>
-
-### <a name="method-status"></a><span data-ttu-id="4e468-1625">メソッド status</span><span class="sxs-lookup"><span data-stu-id="4e468-1625">Method status</span></span>
-
-<span data-ttu-id="4e468-1626">オブジェクトの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1626">Gets or sets the status of an object.</span></span>
-
-    public int status([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1627">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1627">Parameters</span></span>
-
-<span data-ttu-id="4e468-1628">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1628">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1629">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1629">Return Value</span></span>
-
-<span data-ttu-id="4e468-1630">オブジェクトのステータスの現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1630">The current value of the status of the object.</span></span>
-
-### <a name="method-table"></a><span data-ttu-id="4e468-1631">メソッド table</span><span class="sxs-lookup"><span data-stu-id="4e468-1631">Method table</span></span>
-
-<span data-ttu-id="4e468-1632">オブジェクトに関連付けられているテーブル ID を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1632">Gets or sets the table ID that is associated with the object.</span></span>
-
-    public TableId table([TableId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1633">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1633">Parameters</span></span>
-
-<span data-ttu-id="4e468-1634">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1634">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1635">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1635">Return Value</span></span>
-
-<span data-ttu-id="4e468-1636">オブジェクトに関連付けられたテーブル ID の現在の値。</span><span class="sxs-lookup"><span data-stu-id="4e468-1636">The current value of the table ID that is associated with the object.</span></span>
-
-### <a name="method-tableselector"></a><span data-ttu-id="4e468-1637">メソッド tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1637">Method tableSelector</span></span>
-
-    public TableId tableSelector([TableId value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1638">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1638">Parameters</span></span>
-
-<span data-ttu-id="4e468-1639">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1639">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1640">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1640">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="4e468-1641">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="4e468-1641">Method toString</span></span>
-
-<span data-ttu-id="4e468-1642">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1642">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1643">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1643">Return Value</span></span>
-
-<span data-ttu-id="4e468-1644">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-1644">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1645">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1645">Remarks</span></span>
-
-<span data-ttu-id="4e468-1646">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1646">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="4e468-1647">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1647">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="4e468-1648">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1648">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-### <a name="method-typeof"></a><span data-ttu-id="4e468-1649">メソッド typeof</span><span class="sxs-lookup"><span data-stu-id="4e468-1649">Method typeof</span></span>
-
-    public int typeof()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1650">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1650">Return Value</span></span>
-
-### <a name="method-valid"></a><span data-ttu-id="4e468-1651">メソッド valid</span><span class="sxs-lookup"><span data-stu-id="4e468-1651">Method valid</span></span>
-
-    public boolean valid()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1652">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1652">Return Value</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="4e468-1653">メソッド value</span><span class="sxs-lookup"><span data-stu-id="4e468-1653">Method value</span></span>
-
-    public str value([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1654">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1654">Parameters</span></span>
-
-<span data-ttu-id="4e468-1655">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1655">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1656">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1656">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1657">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1657">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-queryorderbyfield"></a><span data-ttu-id="4e468-1658">クラス QueryOrderByField</span><span class="sxs-lookup"><span data-stu-id="4e468-1658">Class QueryOrderByField</span></span>
-    class QueryOrderByField extends TreeNode
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1659">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1659">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1660">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1660">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="4e468-1661">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1661">Methods</span></span>
-
-| <span data-ttu-id="4e468-1662">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1662">Method</span></span>                                                  | <span data-ttu-id="4e468-1663">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1663">Description</span></span> |
-|---------------------------------------------------------|-------------|
-| <span data-ttu-id="4e468-1664">public boolean autoHeader(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1664">public boolean autoHeader(\[boolean value\])</span></span>            |             |
-| <span data-ttu-id="4e468-1665">public int autoHeaderDetailLevel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1665">public int autoHeaderDetailLevel(\[int value\])</span></span>         |             |
-| <span data-ttu-id="4e468-1666">public boolean autoSum(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1666">public boolean autoSum(\[boolean value\])</span></span>               |             |
-| <span data-ttu-id="4e468-1667">public int autoSumDetailLevel(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1667">public int autoSumDetailLevel(\[int value\])</span></span>            |             |
-| <span data-ttu-id="4e468-1668">public QueryBuildDataSource dataSource()</span><span class="sxs-lookup"><span data-stu-id="4e468-1668">public QueryBuildDataSource dataSource()</span></span>                |             |
-| <span data-ttu-id="4e468-1669">public SortOrder direction()</span><span class="sxs-lookup"><span data-stu-id="4e468-1669">public SortOrder direction()</span></span>                            |             |
-| <span data-ttu-id="4e468-1670">public int fieldID()</span><span class="sxs-lookup"><span data-stu-id="4e468-1670">public int fieldID()</span></span>                                    |             |
-| <span data-ttu-id="4e468-1671">public TableId tableSelector(\[TableId tableSelector\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1671">public TableId tableSelector(\[TableId tableSelector\])</span></span> |             |
-| <span data-ttu-id="4e468-1672">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="4e468-1672">public void finalize()</span></span>                                  |             |
-
-### <a name="method-autoheader"></a><span data-ttu-id="4e468-1673">メソッド autoHeader</span><span class="sxs-lookup"><span data-stu-id="4e468-1673">Method autoHeader</span></span>
-
-    public boolean autoHeader([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1674">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1674">Parameters</span></span>
-
-<span data-ttu-id="4e468-1675">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1675">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1676">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1676">Return Value</span></span>
-
-### <a name="method-autoheaderdetaillevel"></a><span data-ttu-id="4e468-1677">メソッド autoHeaderDetailLevel</span><span class="sxs-lookup"><span data-stu-id="4e468-1677">Method autoHeaderDetailLevel</span></span>
-
-    public int autoHeaderDetailLevel([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1678">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1678">Parameters</span></span>
-
-<span data-ttu-id="4e468-1679">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1679">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1680">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1680">Return Value</span></span>
-
-### <a name="method-autosum"></a><span data-ttu-id="4e468-1681">メソッド autoSum</span><span class="sxs-lookup"><span data-stu-id="4e468-1681">Method autoSum</span></span>
-
-    public boolean autoSum([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1682">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1682">Parameters</span></span>
-
-<span data-ttu-id="4e468-1683">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1683">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1684">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1684">Return Value</span></span>
-
-### <a name="method-autosumdetaillevel"></a><span data-ttu-id="4e468-1685">メソッド autoSumDetailLevel</span><span class="sxs-lookup"><span data-stu-id="4e468-1685">Method autoSumDetailLevel</span></span>
-
-    public int autoSumDetailLevel([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1686">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1686">Parameters</span></span>
-
-<span data-ttu-id="4e468-1687">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1687">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1688">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1688">Return Value</span></span>
-
-### <a name="method-datasource"></a><span data-ttu-id="4e468-1689">メソッド dataSource</span><span class="sxs-lookup"><span data-stu-id="4e468-1689">Method dataSource</span></span>
-
-    public QueryBuildDataSource dataSource()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1690">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1690">Return Value</span></span>
-
-### <a name="method-direction"></a><span data-ttu-id="4e468-1691">メソッド direction</span><span class="sxs-lookup"><span data-stu-id="4e468-1691">Method direction</span></span>
-
-    public SortOrder direction()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1692">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1692">Return Value</span></span>
-
-### <a name="method-fieldid"></a><span data-ttu-id="4e468-1693">メソッド fieldID</span><span class="sxs-lookup"><span data-stu-id="4e468-1693">Method fieldID</span></span>
-
-    public int fieldID()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1694">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1694">Return Value</span></span>
-
-### <a name="method-tableselector"></a><span data-ttu-id="4e468-1695">メソッド tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1695">Method tableSelector</span></span>
-
-    public TableId tableSelector([TableId tableSelector])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1696">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1696">Parameters</span></span>
-
-<span data-ttu-id="4e468-1697">tableSelector</span><span class="sxs-lookup"><span data-stu-id="4e468-1697">tableSelector</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1698">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1698">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="4e468-1699">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="4e468-1699">Method finalize</span></span>
-
-    public void finalize()
-
-## <a name="class-queryrun"></a><span data-ttu-id="4e468-1700">クラス QueryRun</span><span class="sxs-lookup"><span data-stu-id="4e468-1700">Class QueryRun</span></span>
-    class QueryRun extends ObjectRun
-
-<span data-ttu-id="4e468-1701">QueryRun クラスは、データベース内のテーブルをスキャンし、ユーザーによって与えられている制約を満たすレコードをフェッチして、ユーザー入力からこのような制約を収集するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1701">The QueryRun class traverses tables in the database, fetches records that satisfy constraints that are given by the user, and helps to gather such constraints from user input.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="4e468-1702">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1702">Remarks</span></span>
-
-<span data-ttu-id="4e468-1703">QueryRun オブジェクトは、データベース内のテーブルをスキャンし、ユーザーが指定した制約を満たすレコードをフェッチするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1703">QueryRun objects are used to traverse tables in the database and fetch records that satisfy the constraints that are given by the user.</span></span> <span data-ttu-id="4e468-1704">QueryRun オブジェクトは、ユーザーがそのような制限を入力できるように、ユーザーと通信することができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1704">A QueryRun object may interact with the user to let the user enter such constraints.</span></span> <span data-ttu-id="4e468-1705">クエリは、レポートに表示するデータを記述してフェッチするためにレポートにより内部的に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1705">Queries are used internally by reports to delineate and fetch the data to be presented in the report.</span></span> <span data-ttu-id="4e468-1706">QueryRun オブジェクトは、クエリ オブジェクト を使用してクエリの構造を定義します (たとえば、どのテーブルを検索するか、レコードをどのように並び替えるかなど)。</span><span class="sxs-lookup"><span data-stu-id="4e468-1706">A QueryRun object relies on a Query object to define the structure of the query (for example, which tables are searched and how the records are sorted).</span></span> <span data-ttu-id="4e468-1707">QueryRun オブジェクトは、クエリの動的動作を定義しますが、クエリ オブジェクトはクエリの静的特性を定義します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1707">A QueryRun object defines the dynamic behavior of the query, whereas a Query object defines the static characteristics of the query.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="4e468-1708">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1708">Examples</span></span>
-
-<span data-ttu-id="4e468-1709">次の例では、Finance and Operations のアプリケーション オブジェクト ツリー (AOT) での顧客という名前のクエリがあり、そこに 1 つのデータ ソース CustTable テーブルがあると見なされます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1709">In the following example, it is assumed that there is a query named Customer in the Finance and Operations Application Object Tree (AOT), and that it has one data source, the CustTable table.</span></span>
-
-    static void example() 
-    { 
-        // Create a QueryRun object from a query stored in the AOT. 
-        QueryRun qr = new QueryRun ("Customer"); 
-        CustTable customerRecord; 
-        // Display a window enabling the user to choose which records to print. 
-        if (qr.prompt()) 
-        { 
-            // The user clicked OK. 
-            while (qr.next()) 
-            { 
-                // Get the fetched record. 
-                CustomerRecord = qr.GetNo(1); 
-                // Do something with it 
-                print CustomerRecord.AccountNum; 
-            } 
-        } 
-        else 
-        { 
-            // The user pressed Cancel, so do nothing. 
-        } 
-    }
-
-### <a name="methods"></a><span data-ttu-id="4e468-1710">メソッド</span><span class="sxs-lookup"><span data-stu-id="4e468-1710">Methods</span></span>
-
-| <span data-ttu-id="4e468-1711">方法</span><span class="sxs-lookup"><span data-stu-id="4e468-1711">Method</span></span>                                                                                                         | <span data-ttu-id="4e468-1712">説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1712">Description</span></span>                                                                                                                               |
-|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4e468-1713">public boolean allowCheck(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1713">public boolean allowCheck(\[boolean value\])</span></span>                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-1714">public boolean allowCrossCompany(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1714">public boolean allowCrossCompany(\[boolean value\])</span></span>                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-1715">public boolean canPage(\[boolean skipOrderByCheck\], \[boolean throwIfNotPagable\], \[boolean isValuePaging\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1715">public boolean canPage(\[boolean skipOrderByCheck\], \[boolean throwIfNotPagable\], \[boolean isValuePaging\])</span></span> |                                                                                                                                           |
-| <span data-ttu-id="4e468-1716">public boolean changed(TableId table, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1716">public boolean changed(TableId table, \[int occurrence\])</span></span>                                                      | <span data-ttu-id="4e468-1717">QueryRun.next メソッドの最後の呼び出し以降に、指定されたデータ ソースが新しい値をフェッチしたかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1717">Determines whether the specified data source has fetched a new value since the last call to the QueryRun.next method.</span></span>                     |
-| <span data-ttu-id="4e468-1718">public str changedBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1718">public str changedBy(\[str value\])</span></span>                                                                            | <span data-ttu-id="4e468-1719">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1719">Gets or sets the name of the user who last changed the application object.</span></span>                                                                |
-| <span data-ttu-id="4e468-1720">public Date changedDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1720">public Date changedDate(\[Date value\])</span></span>                                                                        | <span data-ttu-id="4e468-1721">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1721">Gets or sets the date an application object was last changed.</span></span>                                                                             |
-| <span data-ttu-id="4e468-1722">public boolean changedNo(int dataSourceNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-1722">public boolean changedNo(int dataSourceNo)</span></span>                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-1723">public str changedTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1723">public str changedTime(\[str value\])</span></span>                                                                          | <span data-ttu-id="4e468-1724">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1724">Gets or sets the time an application object was last changed.</span></span>                                                                             |
-| <span data-ttu-id="4e468-1725">public str createdBy(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1725">public str createdBy(\[str value\])</span></span>                                                                            | <span data-ttu-id="4e468-1726">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1726">Gets or sets the name of the user who created the application object.</span></span>                                                                     |
-| <span data-ttu-id="4e468-1727">public Date creationDate(\[Date value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1727">public Date creationDate(\[Date value\])</span></span>                                                                       | <span data-ttu-id="4e468-1728">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1728">Gets or sets the date an application object was created.</span></span>                                                                                  |
-| <span data-ttu-id="4e468-1729">public str creationTime(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1729">public str creationTime(\[str value\])</span></span>                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-1730">public str description(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1730">public str description(\[str value\])</span></span>                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-1731">public boolean equal(Object obj)</span><span class="sxs-lookup"><span data-stu-id="4e468-1731">public boolean equal(Object obj)</span></span>                                                                               | <span data-ttu-id="4e468-1732">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1732">Determines whether the specified object is equal to the current object.</span></span>                                                                   |
-| <span data-ttu-id="4e468-1733">public str form(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1733">public str form(\[str value\])</span></span>                                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-1734">public Common get(TableId table, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1734">public Common get(TableId table, \[int occurrence\])</span></span>                                                           | <span data-ttu-id="4e468-1735">次のメソッドの前の呼び出しによってフェッチされたレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1735">Retrieves the record fetched by the previous call to next method.</span></span>                                                                         |
-| <span data-ttu-id="4e468-1736">public System.Type getImpExpDataContractType()</span><span class="sxs-lookup"><span data-stu-id="4e468-1736">public System.Type getImpExpDataContractType()</span></span>                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-1737">public Common getNo(int dataSourceNo)</span><span class="sxs-lookup"><span data-stu-id="4e468-1737">public Common getNo(int dataSourceNo)</span></span>                                                                          | <span data-ttu-id="4e468-1738">QueryRun.next メソッドの前の呼び出しによってフェッチされたレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1738">Retrieves the record fetched by the previous call to QueryRun.next Method.</span></span>                                                                |
-| <span data-ttu-id="4e468-1739">public boolean importable()</span><span class="sxs-lookup"><span data-stu-id="4e468-1739">public boolean importable()</span></span>                                                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-1740">public boolean interactive(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1740">public boolean interactive(\[boolean value\])</span></span>                                                                  |                                                                                                                                           |
-| <span data-ttu-id="4e468-1741">public boolean isPositionPagingEnabled()</span><span class="sxs-lookup"><span data-stu-id="4e468-1741">public boolean isPositionPagingEnabled()</span></span>                                                                       |                                                                                                                                           |
-| <span data-ttu-id="4e468-1742">public boolean isQueryTimedout()</span><span class="sxs-lookup"><span data-stu-id="4e468-1742">public boolean isQueryTimedout()</span></span>                                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-1743">public boolean isValueBasedPagingEnabled()</span><span class="sxs-lookup"><span data-stu-id="4e468-1743">public boolean isValueBasedPagingEnabled()</span></span>                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-1744">public int literals(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1744">public int literals(\[int value\])</span></span>                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-1745">public Guid loadCsv(str fileName)</span><span class="sxs-lookup"><span data-stu-id="4e468-1745">public Guid loadCsv(str fileName)</span></span>                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-1746">public Guid loadXml(str fileName)</span><span class="sxs-lookup"><span data-stu-id="4e468-1746">public Guid loadXml(str fileName)</span></span>                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-1747">public str name(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1747">public str name(\[str value\])</span></span>                                                                                 | <span data-ttu-id="4e468-1748">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1748">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span> |
-| <span data-ttu-id="4e468-1749">public QueryRun newObject(AnyType source)</span><span class="sxs-lookup"><span data-stu-id="4e468-1749">public QueryRun newObject(AnyType source)</span></span>                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-1750">public boolean next()</span><span class="sxs-lookup"><span data-stu-id="4e468-1750">public boolean next()</span></span>                                                                                          | <span data-ttu-id="4e468-1751">クエリから次のレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1751">Retrieves the next record from the query.</span></span>                                                                                                 |
-| <span data-ttu-id="4e468-1752">public int nextUniqueId(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1752">public int nextUniqueId(\[int value\])</span></span>                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-1753">public Guid origin(\[Guid value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1753">public Guid origin(\[Guid value\])</span></span>                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-1754">public container pack(\[boolean doCheck\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1754">public container pack(\[boolean doCheck\])</span></span>                                                                     |                                                                                                                                           |
-| <span data-ttu-id="4e468-1755">public boolean prompt()</span><span class="sxs-lookup"><span data-stu-id="4e468-1755">public boolean prompt()</span></span>                                                                                        | <span data-ttu-id="4e468-1756">クエリによってフェッチするレコードを定義するためのオプションをユーザーに表示します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1756">Presents, to the user, the options for defining the records to be fetched by the query.</span></span>                                                   |
-| <span data-ttu-id="4e468-1757">public Query query(\[Query query\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1757">public Query query(\[Query query\])</span></span>                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-1758">public int queryType(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1758">public int queryType(\[int value\])</span></span>                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-1759">public boolean recordLevelSecurity(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1759">public boolean recordLevelSecurity(\[boolean value\])</span></span>                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-1760">public ReportRun report()</span><span class="sxs-lookup"><span data-stu-id="4e468-1760">public ReportRun report()</span></span>                                                                                      |                                                                                                                                           |
-| <span data-ttu-id="4e468-1761">public ReportRun reportRun()</span><span class="sxs-lookup"><span data-stu-id="4e468-1761">public ReportRun reportRun()</span></span>                                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-1762">public boolean saved()</span><span class="sxs-lookup"><span data-stu-id="4e468-1762">public boolean saved()</span></span>                                                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-1763">public boolean saveUserSetup(\[boolean saveIt\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1763">public boolean saveUserSetup(\[boolean saveIt\])</span></span>                                                               | <span data-ttu-id="4e468-1764">ユーザー設定を保存します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1764">Saves the user setup.</span></span>                                                                                                                     |
-| <span data-ttu-id="4e468-1765">public boolean searchable(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1765">public boolean searchable(\[boolean value\])</span></span>                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-1766">public boolean setCursor(Common record, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1766">public boolean setCursor(Common record, \[int occurrence\])</span></span>                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-1767">public boolean setRecord(Common record, \[int occurrence\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1767">public boolean setRecord(Common record, \[int occurrence\])</span></span>                                                    |                                                                                                                                           |
-| <span data-ttu-id="4e468-1768">public str title(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1768">public str title(\[str value\])</span></span>                                                                                |                                                                                                                                           |
-| <span data-ttu-id="4e468-1769">public str toString()</span><span class="sxs-lookup"><span data-stu-id="4e468-1769">public str toString()</span></span>                                                                                          | <span data-ttu-id="4e468-1770">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1770">Returns a string that represents the current object.</span></span>                                                                                      |
-| <span data-ttu-id="4e468-1771">public boolean userUpdate(\[boolean value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1771">public boolean userUpdate(\[boolean value\])</span></span>                                                                   |                                                                                                                                           |
-| <span data-ttu-id="4e468-1772">public int version(\[int value\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1772">public int version(\[int value\])</span></span>                                                                              |                                                                                                                                           |
-| <span data-ttu-id="4e468-1773">::public static int getQueryRowCount(Query query, int maxRows)</span><span class="sxs-lookup"><span data-stu-id="4e468-1773">::public static int getQueryRowCount(Query query, int maxRows)</span></span>                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-1774">::public static int runAndPopulate(Query sourceRuery, Common targetTable, Map queryAliasesAndTargetColumnsMap)</span><span class="sxs-lookup"><span data-stu-id="4e468-1774">::public static int runAndPopulate(Query sourceRuery, Common targetTable, Map queryAliasesAndTargetColumnsMap)</span></span> |                                                                                                                                           |
-| <span data-ttu-id="4e468-1775">public void run()</span><span class="sxs-lookup"><span data-stu-id="4e468-1775">public void run()</span></span>                                                                                              | <span data-ttu-id="4e468-1776">ユーザーからクエリに関する情報を取得するために使用されるフォームを開いて、一致するレコードをフェッチします。</span><span class="sxs-lookup"><span data-stu-id="4e468-1776">Opens a form used to obtain information about the query from the user, and fetches the matching records.</span></span>                                  |
-| <span data-ttu-id="4e468-1777">public void new(AnyType source)</span><span class="sxs-lookup"><span data-stu-id="4e468-1777">public void new(AnyType source)</span></span>                                                                                | <span data-ttu-id="4e468-1778">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1778">Initializes a new instance of the Object class.</span></span>                                                                                           |
-| <span data-ttu-id="4e468-1779">public void addPageRange(\[Int64 startingPosition\], \[Int64 numberOfRecordsToFetch\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1779">public void addPageRange(\[Int64 startingPosition\], \[Int64 numberOfRecordsToFetch\])</span></span>                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-1780">public void reset()</span><span class="sxs-lookup"><span data-stu-id="4e468-1780">public void reset()</span></span>                                                                                            |                                                                                                                                           |
-| <span data-ttu-id="4e468-1781">public void setImportSession(Guid importSession)</span><span class="sxs-lookup"><span data-stu-id="4e468-1781">public void setImportSession(Guid importSession)</span></span>                                                               |                                                                                                                                           |
-| <span data-ttu-id="4e468-1782">public void setQuerytimeout(int seconds, \[boolean raiseException\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1782">public void setQuerytimeout(int seconds, \[boolean raiseException\])</span></span>                                           |                                                                                                                                           |
-| <span data-ttu-id="4e468-1783">public void init()</span><span class="sxs-lookup"><span data-stu-id="4e468-1783">public void init()</span></span>                                                                                             |                                                                                                                                           |
-| <span data-ttu-id="4e468-1784">public void enablePositionPaging(\[boolean enabled\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1784">public void enablePositionPaging(\[boolean enabled\])</span></span>                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-1785">public void shred(Guid importSession)</span><span class="sxs-lookup"><span data-stu-id="4e468-1785">public void shred(Guid importSession)</span></span>                                                                          |                                                                                                                                           |
-| <span data-ttu-id="4e468-1786">public void enableValueBasedPaging(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1786">public void enableValueBasedPaging(\[boolean enable\])</span></span>                                                         |                                                                                                                                           |
-| <span data-ttu-id="4e468-1787">public void bulkNext(\[boolean fetchAllData\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1787">public void bulkNext(\[boolean fetchAllData\])</span></span>                                                                 |                                                                                                                                           |
-| <span data-ttu-id="4e468-1788">public void applyValueBasedPaging(\[Common sourceCursor\], \[boolean isForward\])</span><span class="sxs-lookup"><span data-stu-id="4e468-1788">public void applyValueBasedPaging(\[Common sourceCursor\], \[boolean isForward\])</span></span>                              |                                                                                                                                           |
-
-### <a name="method-allowcheck"></a><span data-ttu-id="4e468-1789">メソッド allowCheck</span><span class="sxs-lookup"><span data-stu-id="4e468-1789">Method allowCheck</span></span>
-
-    public boolean allowCheck([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1790">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1790">Parameters</span></span>
-
-<span data-ttu-id="4e468-1791">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1791">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1792">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1792">Return Value</span></span>
-
-### <a name="method-allowcrosscompany"></a><span data-ttu-id="4e468-1793">メソッド allowCrossCompany</span><span class="sxs-lookup"><span data-stu-id="4e468-1793">Method allowCrossCompany</span></span>
-
-    public boolean allowCrossCompany([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1794">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1794">Parameters</span></span>
-
-<span data-ttu-id="4e468-1795">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1795">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1796">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1796">Return Value</span></span>
-
-### <a name="method-canpage"></a><span data-ttu-id="4e468-1797">メソッド canPage</span><span class="sxs-lookup"><span data-stu-id="4e468-1797">Method canPage</span></span>
-
-    public boolean canPage([boolean skipOrderByCheck], [boolean throwIfNotPagable], [boolean isValuePaging])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1798">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1798">Parameters</span></span>
-
-<span data-ttu-id="4e468-1799">skipOrderByCheck</span><span class="sxs-lookup"><span data-stu-id="4e468-1799">skipOrderByCheck</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1800">throwIfNotPagable</span><span class="sxs-lookup"><span data-stu-id="4e468-1800">throwIfNotPagable</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-1801">isValuePaging</span><span class="sxs-lookup"><span data-stu-id="4e468-1801">isValuePaging</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1802">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1802">Return Value</span></span>
-
-### <a name="method-changed"></a><span data-ttu-id="4e468-1803">メソッド changed</span><span class="sxs-lookup"><span data-stu-id="4e468-1803">Method changed</span></span>
-
-<span data-ttu-id="4e468-1804">QueryRun.next メソッドの最後の呼び出し以降に、指定されたデータ ソースが新しい値をフェッチしたかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1804">Determines whether the specified data source has fetched a new value since the last call to the QueryRun.next method.</span></span>
-
-    public boolean changed(TableId table, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1805">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1805">Parameters</span></span>
-
-<span data-ttu-id="4e468-1806">テーブル</span><span class="sxs-lookup"><span data-stu-id="4e468-1806">table</span></span>  
-<span data-ttu-id="4e468-1807">確認するデータソース (オプション)。</span><span class="sxs-lookup"><span data-stu-id="4e468-1807">The data source to check; optional.</span></span> <span data-ttu-id="4e468-1808">1 つ以上のデータ ソースが指定されたテーブルに割り当てられている場合、この引数が確認するデータ ソースを決定するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1808">If more than one data source is assigned to a given table, this argument can be used to determine which data source to check.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="4e468-1809">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-1809">occurrence</span></span>  
-<span data-ttu-id="4e468-1810">確認するデータソース (オプション)。</span><span class="sxs-lookup"><span data-stu-id="4e468-1810">The data source to check; optional.</span></span> <span data-ttu-id="4e468-1811">1 つ以上のデータ ソースが指定されたテーブルに割り当てられている場合、この引数が確認するデータ ソースを決定するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1811">If more than one data source is assigned to a given table, this argument can be used to determine which data source to check.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1812">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1812">Return Value</span></span>
-
-<span data-ttu-id="4e468-1813">QueryRun.next に対する最後の呼び出し後に指定データ ソースが変更された場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1813">true if the specified data source has changed since the last call to QueryRun.next; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1814">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1814">Remarks</span></span>
-
-<span data-ttu-id="4e468-1815">このメソッドは、データ ソースが階層構造になっている場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="4e468-1815">This method is useful when data sources are hierarchically structured.</span></span> <span data-ttu-id="4e468-1816">埋め込みデータ ソースは、何回でも変更できます (顧客トランザクションなど)。</span><span class="sxs-lookup"><span data-stu-id="4e468-1816">A more embedded data source may change many times (such as the customer transactions).</span></span> <span data-ttu-id="4e468-1817">これは、埋め込まれていないデータソース (顧客テーブルなど) が新しいレコード (別の顧客) をフェッチするたびに発生します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1817">This occurs every time that a less embedded data source (such as the customer table) fetches a new record (another customer).</span></span> <span data-ttu-id="4e468-1818">この関数の代わりに changedNo メソッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1818">The changedNo method can be used instead of this function.</span></span>
-
-### <a name="method-changedby"></a><span data-ttu-id="4e468-1819">メソッド changedBy</span><span class="sxs-lookup"><span data-stu-id="4e468-1819">Method changedBy</span></span>
-
-<span data-ttu-id="4e468-1820">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1820">Gets or sets the name of the user who last changed the application object.</span></span>
-
-    public str changedBy([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1821">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1821">Parameters</span></span>
-
-<span data-ttu-id="4e468-1822">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1822">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1823">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1823">Return Value</span></span>
-
-<span data-ttu-id="4e468-1824">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-1824">The name of the user.</span></span>
-
-### <a name="method-changeddate"></a><span data-ttu-id="4e468-1825">メソッド changedDate</span><span class="sxs-lookup"><span data-stu-id="4e468-1825">Method changedDate</span></span>
-
-<span data-ttu-id="4e468-1826">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1826">Gets or sets the date an application object was last changed.</span></span>
-
-    public Date changedDate([Date value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1827">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1827">Parameters</span></span>
-
-<span data-ttu-id="4e468-1828">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1828">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1829">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1829">Return Value</span></span>
-
-<span data-ttu-id="4e468-1830">アプリケーション オブジェクトが最後に変更された日付。</span><span class="sxs-lookup"><span data-stu-id="4e468-1830">The date an application object was last changed.</span></span>
-
-### <a name="method-changedno"></a><span data-ttu-id="4e468-1831">メソッド changedNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1831">Method changedNo</span></span>
-
-    public boolean changedNo(int dataSourceNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1832">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1832">Parameters</span></span>
-
-<span data-ttu-id="4e468-1833">dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1833">dataSourceNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1834">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1834">Return Value</span></span>
-
-### <a name="method-changedtime"></a><span data-ttu-id="4e468-1835">メソッド changedTime</span><span class="sxs-lookup"><span data-stu-id="4e468-1835">Method changedTime</span></span>
-
-<span data-ttu-id="4e468-1836">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1836">Gets or sets the time an application object was last changed.</span></span>
-
-    public str changedTime([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1837">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1837">Parameters</span></span>
-
-<span data-ttu-id="4e468-1838">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1838">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1839">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1839">Return Value</span></span>
-
-<span data-ttu-id="4e468-1840">アプリケーション オブジェクトが最後に変更された時間。</span><span class="sxs-lookup"><span data-stu-id="4e468-1840">The time an application object was last changed.</span></span>
-
-### <a name="method-createdby"></a><span data-ttu-id="4e468-1841">メソッド createdBy</span><span class="sxs-lookup"><span data-stu-id="4e468-1841">Method createdBy</span></span>
-
-<span data-ttu-id="4e468-1842">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1842">Gets or sets the name of the user who created the application object.</span></span>
-
-    public str createdBy([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1843">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1843">Parameters</span></span>
-
-<span data-ttu-id="4e468-1844">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1844">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1845">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1845">Return Value</span></span>
-
-<span data-ttu-id="4e468-1846">ユーザーの名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-1846">The name of the user.</span></span>
-
-### <a name="method-creationdate"></a><span data-ttu-id="4e468-1847">メソッド creationDate</span><span class="sxs-lookup"><span data-stu-id="4e468-1847">Method creationDate</span></span>
-
-<span data-ttu-id="4e468-1848">アプリケーション オブジェクトが作成された日付を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1848">Gets or sets the date an application object was created.</span></span>
-
-    public Date creationDate([Date value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1849">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1849">Parameters</span></span>
-
-<span data-ttu-id="4e468-1850">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1850">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1851">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1851">Return Value</span></span>
-
-<span data-ttu-id="4e468-1852">アプリケーション オブジェクトが作成された日付。</span><span class="sxs-lookup"><span data-stu-id="4e468-1852">The date an application object was created.</span></span>
-
-### <a name="method-creationtime"></a><span data-ttu-id="4e468-1853">メソッド creationTime</span><span class="sxs-lookup"><span data-stu-id="4e468-1853">Method creationTime</span></span>
-
-    public str creationTime([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1854">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1854">Parameters</span></span>
-
-<span data-ttu-id="4e468-1855">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1855">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1856">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1856">Return Value</span></span>
-
-### <a name="method-description"></a><span data-ttu-id="4e468-1857">メソッドの説明</span><span class="sxs-lookup"><span data-stu-id="4e468-1857">Method description</span></span>
-
-    public str description([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1858">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1858">Parameters</span></span>
-
-<span data-ttu-id="4e468-1859">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1859">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1860">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1860">Return Value</span></span>
-
-### <a name="method-equal"></a><span data-ttu-id="4e468-1861">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="4e468-1861">Method equal</span></span>
-
-<span data-ttu-id="4e468-1862">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1862">Determines whether the specified object is equal to the current object.</span></span>
-
-    public boolean equal(Object obj)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1863">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1863">Parameters</span></span>
-
-<span data-ttu-id="4e468-1864">obj</span><span class="sxs-lookup"><span data-stu-id="4e468-1864">obj</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1865">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1865">Return Value</span></span>
-
-<span data-ttu-id="4e468-1866">指定したオブジェクトが現在のオブジェクトと等しい場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1866">true if the specified object is equal to the current object; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1867">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1867">Remarks</span></span>
-
-<span data-ttu-id="4e468-1868">Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="4e468-1868">The default implementation of the Object::equal method supports only reference equality.</span></span> <span data-ttu-id="4e468-1869">ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドをオーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1869">However, derived classes can override the Object::equal method to support value equality.</span></span>
-
-### <a name="method-form"></a><span data-ttu-id="4e468-1870">メソッド form</span><span class="sxs-lookup"><span data-stu-id="4e468-1870">Method form</span></span>
-
-    public str form([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1871">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1871">Parameters</span></span>
-
-<span data-ttu-id="4e468-1872">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1872">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1873">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1873">Return Value</span></span>
-
-### <a name="method-get"></a><span data-ttu-id="4e468-1874">メソッド get</span><span class="sxs-lookup"><span data-stu-id="4e468-1874">Method get</span></span>
-
-<span data-ttu-id="4e468-1875">次のメソッドの前の呼び出しによってフェッチされたレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1875">Retrieves the record fetched by the previous call to next method.</span></span>
-
-    public Common get(TableId table, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1876">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1876">Parameters</span></span>
-
-<span data-ttu-id="4e468-1877">テーブル</span><span class="sxs-lookup"><span data-stu-id="4e468-1877">table</span></span>  
-<span data-ttu-id="4e468-1878">アドレス指定されるデータソース (オプション)。</span><span class="sxs-lookup"><span data-stu-id="4e468-1878">The data source to be addressed; optional.</span></span> <span data-ttu-id="4e468-1879">指定されたテーブルを持つデータ ソースの番号。1 ベース。</span><span class="sxs-lookup"><span data-stu-id="4e468-1879">The number of the data source with the given table; 1-based.</span></span> <span data-ttu-id="4e468-1880">同じテーブルに割り当てられたデータ ソースが 1 つ以上ある場合は、この (オプションの) パラメーターを使用して、どのパラメーターを指定するかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1880">If more than one data source has the same table assigned to it, this (optional) parameter can be used to specify which one is to be addressed.</span></span> <span data-ttu-id="4e468-1881">指定されたテーブルを持つデータ ソースの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1881">It specifies the number of the data source with the given table.</span></span> <span data-ttu-id="4e468-1882">したがって、CustTable テーブルが 2 つのデータ ソースに割り当てられ、2 番目のデータ ソースが必要な場合、この引数は 2 の値である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1882">Thus, if the CustTable table is assigned to two data sources, and the second data source is required, this argument should have the value 2.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="4e468-1883">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-1883">occurrence</span></span>  
-<span data-ttu-id="4e468-1884">アドレス指定されるデータソース (オプション)。</span><span class="sxs-lookup"><span data-stu-id="4e468-1884">The data source to be addressed; optional.</span></span> <span data-ttu-id="4e468-1885">指定されたテーブルを持つデータ ソースの番号。1 ベース。</span><span class="sxs-lookup"><span data-stu-id="4e468-1885">The number of the data source with the given table; 1-based.</span></span> <span data-ttu-id="4e468-1886">同じテーブルに割り当てられたデータ ソースが 1 つ以上ある場合は、この (オプションの) パラメーターを使用して、どのパラメーターを指定するかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1886">If more than one data source has the same table assigned to it, this (optional) parameter can be used to specify which one is to be addressed.</span></span> <span data-ttu-id="4e468-1887">指定されたテーブルを持つデータ ソースの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1887">It specifies the number of the data source with the given table.</span></span> <span data-ttu-id="4e468-1888">したがって、CustTable テーブルが 2 つのデータ ソースに割り当てられ、2 番目のデータ ソースが必要な場合、この引数は 2 の値である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1888">Thus, if the CustTable table is assigned to two data sources, and the second data source is required, this argument should have the value 2.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1889">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1889">Return Value</span></span>
-
-<span data-ttu-id="4e468-1890">引数で識別されるデータ ソースからフェッチされたレコードを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1890">Returns the record fetched from the data source identified by the arguments.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1891">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1891">Remarks</span></span>
-
-<span data-ttu-id="4e468-1892">レコードを取得するデータ ソースは、データ ソースに割り当てられたテーブルとオプションのパラメーターによって指定されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1892">The data source from which to retrieve the record is specified by the table assigned to the data source and by an optional parameter.</span></span> <span data-ttu-id="4e468-1893">テーブル (およびオプションのパラメーター) を指定するのではなく、getNo メソッドを使用して、データ ソースの数を引数として取得できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1893">Instead of supplying the table (and optional parameter), you can use the getNo method, which takes the data source number as an argument.</span></span>
-
-### <a name="method-getimpexpdatacontracttype"></a><span data-ttu-id="4e468-1894">メソッド getImpExpDataContractType</span><span class="sxs-lookup"><span data-stu-id="4e468-1894">Method getImpExpDataContractType</span></span>
-
-    public System.Type getImpExpDataContractType()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1895">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1895">Return Value</span></span>
-
-### <a name="method-getno"></a><span data-ttu-id="4e468-1896">メソッド getNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1896">Method getNo</span></span>
-
-<span data-ttu-id="4e468-1897">QueryRun.next メソッドの前の呼び出しによってフェッチされたレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1897">Retrieves the record fetched by the previous call to QueryRun.next Method.</span></span>
-
-    public Common getNo(int dataSourceNo)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1898">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1898">Parameters</span></span>
-
-<span data-ttu-id="4e468-1899">dataSourceNo</span><span class="sxs-lookup"><span data-stu-id="4e468-1899">dataSourceNo</span></span>  
-<span data-ttu-id="4e468-1900">現在選択されているレコードを取得する元のデータ ソースの番号。</span><span class="sxs-lookup"><span data-stu-id="4e468-1900">The number of the data source from which to get the currently selected record.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1901">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1901">Return Value</span></span>
-
-<span data-ttu-id="4e468-1902">引数で識別されるデータ ソースのフェッチされたレコードを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1902">Returns the record fetched for the data source identified by the argument.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1903">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1903">Remarks</span></span>
-
-<span data-ttu-id="4e468-1904">レコードを取り出すデータ ソースは、データ ソースの番号で指定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1904">The data source from which to retrieve the record is specified by the number of the data source.</span></span> <span data-ttu-id="4e468-1905">データソースは、1 から順にカウントされます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1905">The data sources are counted consecutively, starting from 1.</span></span> <span data-ttu-id="4e468-1906">代わりに QueryRun.get メソッドを使用できます。このメソッドは、データ ソースを定義するテーブル (およびオプション パラメーター) を使用して指定されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1906">The QueryRun.get Method method can be used instead; that method is supplied with the table (and an optional parameter), that defines the data source.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="4e468-1907">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1907">Examples</span></span>
-
-    { 
-        QueryRun qr; 
-        // Consider a query with CustTable/CustTrans datasources. 
-        // Traverse all records found in CustTable/CustTrans: 
-        while (qr.next()) 
-        { 
-            if (qr.Changed(TableNum(CustTable)))
-            { 
-                // A new CustTable record 
-                CustTableRecord = qr.GetNo(1); 
-            } 
-            if (qr.Changed(TableNum(CustTrans))) 
-            { 
-                // A new CustTrans record 
-                CustTransRecord = qr.GetNo(1); 
-            } 
-        } 
-    }
-
-### <a name="method-importable"></a><span data-ttu-id="4e468-1908">メソッド importable</span><span class="sxs-lookup"><span data-stu-id="4e468-1908">Method importable</span></span>
-
-    public boolean importable()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1909">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1909">Return Value</span></span>
-
-### <a name="method-interactive"></a><span data-ttu-id="4e468-1910">メソッド interactive</span><span class="sxs-lookup"><span data-stu-id="4e468-1910">Method interactive</span></span>
-
-    public boolean interactive([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1911">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1911">Parameters</span></span>
-
-<span data-ttu-id="4e468-1912">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1912">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1913">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1913">Return Value</span></span>
-
-### <a name="method-ispositionpagingenabled"></a><span data-ttu-id="4e468-1914">メソッド isPositionPagingEnabled</span><span class="sxs-lookup"><span data-stu-id="4e468-1914">Method isPositionPagingEnabled</span></span>
-
-    public boolean isPositionPagingEnabled()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1915">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1915">Return Value</span></span>
-
-### <a name="method-isquerytimedout"></a><span data-ttu-id="4e468-1916">メソッド isQueryTimedout</span><span class="sxs-lookup"><span data-stu-id="4e468-1916">Method isQueryTimedout</span></span>
-
-    public boolean isQueryTimedout()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1917">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1917">Return Value</span></span>
-
-### <a name="method-isvaluebasedpagingenabled"></a><span data-ttu-id="4e468-1918">メソッド isValueBasedPagingEnabled</span><span class="sxs-lookup"><span data-stu-id="4e468-1918">Method isValueBasedPagingEnabled</span></span>
-
-    public boolean isValueBasedPagingEnabled()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1919">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1919">Return Value</span></span>
-
-### <a name="method-literals"></a><span data-ttu-id="4e468-1920">メソッド literals</span><span class="sxs-lookup"><span data-stu-id="4e468-1920">Method literals</span></span>
-
-    public int literals([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1921">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1921">Parameters</span></span>
-
-<span data-ttu-id="4e468-1922">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1922">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1923">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1923">Return Value</span></span>
-
-### <a name="method-loadcsv"></a><span data-ttu-id="4e468-1924">メソッド loadCsv</span><span class="sxs-lookup"><span data-stu-id="4e468-1924">Method loadCsv</span></span>
-
-    public Guid loadCsv(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1925">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1925">Parameters</span></span>
-
-<span data-ttu-id="4e468-1926">fileName</span><span class="sxs-lookup"><span data-stu-id="4e468-1926">fileName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1927">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1927">Return Value</span></span>
-
-### <a name="method-loadxml"></a><span data-ttu-id="4e468-1928">メソッド loadXml</span><span class="sxs-lookup"><span data-stu-id="4e468-1928">Method loadXml</span></span>
-
-    public Guid loadXml(str fileName)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1929">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1929">Parameters</span></span>
-
-<span data-ttu-id="4e468-1930">fileName</span><span class="sxs-lookup"><span data-stu-id="4e468-1930">fileName</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1931">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1931">Return Value</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="4e468-1932">メソッド名</span><span class="sxs-lookup"><span data-stu-id="4e468-1932">Method name</span></span>
-
-<span data-ttu-id="4e468-1933">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1933">Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</span></span>
-
-    public str name([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1934">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1934">Parameters</span></span>
-
-<span data-ttu-id="4e468-1935">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1935">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1936">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1936">Return Value</span></span>
-
-<span data-ttu-id="4e468-1937">アプリケーション オブジェクトを識別するためにコードで使用される名前。</span><span class="sxs-lookup"><span data-stu-id="4e468-1937">The name that is used in code to identify an application object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1938">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1938">Remarks</span></span>
-
-<span data-ttu-id="4e468-1939">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1939">The name property value of an object must meet the following criteria to avoid code conflicts:</span></span>
-
--   <span data-ttu-id="4e468-1940">文字で始めます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1940">Begins with a letter.</span></span>
--   <span data-ttu-id="4e468-1941">250 文字を超えないでください。</span><span class="sxs-lookup"><span data-stu-id="4e468-1941">Doesn't exceed 250 characters.</span></span>
--   <span data-ttu-id="4e468-1942">数字とアンダースコア文字を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1942">Can include numbers and underscore characters.</span></span>
--   <span data-ttu-id="4e468-1943">句読点やスペースを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1943">Cannot include punctuation or spaces.</span></span>
--   <span data-ttu-id="4e468-1944">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</span><span class="sxs-lookup"><span data-stu-id="4e468-1944">Tables cannot have the same name as other public objects, such as extended data types, base enumerations, or classes.</span></span>
-
-### <a name="method-newobject"></a><span data-ttu-id="4e468-1945">メソッド newObject</span><span class="sxs-lookup"><span data-stu-id="4e468-1945">Method newObject</span></span>
-
-    public QueryRun newObject(AnyType source)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1946">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1946">Parameters</span></span>
-
-<span data-ttu-id="4e468-1947">ソース</span><span class="sxs-lookup"><span data-stu-id="4e468-1947">source</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1948">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1948">Return Value</span></span>
-
-### <a name="method-next"></a><span data-ttu-id="4e468-1949">メソッド next</span><span class="sxs-lookup"><span data-stu-id="4e468-1949">Method next</span></span>
-
-<span data-ttu-id="4e468-1950">クエリから次のレコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1950">Retrieves the next record from the query.</span></span>
-
-    public boolean next()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1951">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1951">Return Value</span></span>
-
-<span data-ttu-id="4e468-1952">次のレコードが利用可能で getNo メソッドまたは get メソッドで取得することができる場合は true。クエリ内に設定された制約を満たすレコードがそれ以上存在しない場合は false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1952">true if the next record is available and can be fetched with the getNo method or get method; false if no there are no more records that satisfy the constraint set up in the query.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1953">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1953">Remarks</span></span>
-
-<span data-ttu-id="4e468-1954">変更されたメソッドまたは changedNo メソッドを使用して、指定されたデータ ソースのレコードが前回の次のメソッド呼び出しから変更されたかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1954">The changed method or changedNo method can be used to check whether the record from the given data source has changed since the previous call to the next method.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="4e468-1955">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1955">Examples</span></span>
-
-    { 
-        queryRun qr; 
-        CustTable ct; 
-        // ... 
-        if (qr.prompt()) 
-        { 
-            while (qr.next()) 
-            { 
-                if (qr.Changed(tableNum(CustTable))) 
-                { 
-                    ct = qr.Get (tableNum(CustTable)); 
-                    print ct.AccountNum; 
-                } 
-            } 
-        } 
-    }
-
-### <a name="method-nextuniqueid"></a><span data-ttu-id="4e468-1956">メソッド nextUniqueId</span><span class="sxs-lookup"><span data-stu-id="4e468-1956">Method nextUniqueId</span></span>
-
-    public int nextUniqueId([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1957">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1957">Parameters</span></span>
-
-<span data-ttu-id="4e468-1958">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1958">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1959">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1959">Return Value</span></span>
-
-### <a name="method-origin"></a><span data-ttu-id="4e468-1960">メソッド origin</span><span class="sxs-lookup"><span data-stu-id="4e468-1960">Method origin</span></span>
-
-    public Guid origin([Guid value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1961">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1961">Parameters</span></span>
-
-<span data-ttu-id="4e468-1962">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1962">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1963">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1963">Return Value</span></span>
-
-### <a name="method-pack"></a><span data-ttu-id="4e468-1964">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="4e468-1964">Method pack</span></span>
-
-    public container pack([boolean doCheck])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1965">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1965">Parameters</span></span>
-
-<span data-ttu-id="4e468-1966">doCheck</span><span class="sxs-lookup"><span data-stu-id="4e468-1966">doCheck</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1967">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1967">Return Value</span></span>
-
-### <a name="method-prompt"></a><span data-ttu-id="4e468-1968">メソッド prompt</span><span class="sxs-lookup"><span data-stu-id="4e468-1968">Method prompt</span></span>
-
-<span data-ttu-id="4e468-1969">クエリによってフェッチするレコードを定義するためのオプションをユーザーに表示します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1969">Presents, to the user, the options for defining the records to be fetched by the query.</span></span>
-
-    public boolean prompt()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1970">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1970">Return Value</span></span>
-
-<span data-ttu-id="4e468-1971">ユーザーが OK をクリックして検索が続行される場合は true。ユーザーがキャンセルをクリックして検索を停止した場合は false。</span><span class="sxs-lookup"><span data-stu-id="4e468-1971">true if the user clicked OK and the search is to continue; false if the user clicked Cancel to stop the search.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-1972">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-1972">Remarks</span></span>
-
-<span data-ttu-id="4e468-1973">ユーザーには、フェッチされたレコードによって実行される制約を定義する範囲を与えるためのフォームが提示される。</span><span class="sxs-lookup"><span data-stu-id="4e468-1973">The user is presented with a form to give ranges that define constraints to be fulfilled by the fetched records.</span></span> <span data-ttu-id="4e468-1974">または、ユーザーは新しいフィールドを追加し、区切ったり、変更したり、並べ替えたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1974">Or the user may add new fields to delimit, change the sorting, and so on.</span></span> <span data-ttu-id="4e468-1975">このメソッドをオーバーロードすると、事前定義されたクエリ フォームではなく、アプリケーション定義の方法でユーザーにプロンプトを表示できます。</span><span class="sxs-lookup"><span data-stu-id="4e468-1975">This method can be overloaded to prompt the user in an application-defined way instead of in through the predefined query form.</span></span> <span data-ttu-id="4e468-1976">または、この方法は、フェッチされるレコードをユーザーがコントロールできないように、オーバーロードされることがあります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1976">Or this method can be overloaded to avoid giving the user control over which records are fetched.</span></span> <span data-ttu-id="4e468-1977">これらの結果を生成するには、継承したメソッドを呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="4e468-1977">To produce these results, do not call the inherited method.</span></span> <span data-ttu-id="4e468-1978">いずれの場合でも、関数はクエリが続行する場合は true、それ以外の場合は false を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-1978">In any case, the function should return true if the query is to continue, and false otherwise.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="4e468-1979">例</span><span class="sxs-lookup"><span data-stu-id="4e468-1979">Examples</span></span>
-
-    { 
-        QueryRun qr; 
-        // ... 
-        if (qr.prompt()) 
-        { 
-            // The user pressed OK. Go ahead and do whatever is required. 
-        } 
-        else 
-        { 
-            // The user pressed Cancel. 
-        } 
-    }
-
-### <a name="method-query"></a><span data-ttu-id="4e468-1980">メソッド query</span><span class="sxs-lookup"><span data-stu-id="4e468-1980">Method query</span></span>
-
-    public Query query([Query query])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1981">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1981">Parameters</span></span>
-
-<span data-ttu-id="4e468-1982">クエリ</span><span class="sxs-lookup"><span data-stu-id="4e468-1982">query</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1983">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1983">Return Value</span></span>
-
-### <a name="method-querytype"></a><span data-ttu-id="4e468-1984">メソッド queryType</span><span class="sxs-lookup"><span data-stu-id="4e468-1984">Method queryType</span></span>
-
-    public int queryType([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1985">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1985">Parameters</span></span>
-
-<span data-ttu-id="4e468-1986">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1986">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1987">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1987">Return Value</span></span>
-
-### <a name="method-recordlevelsecurity"></a><span data-ttu-id="4e468-1988">メソッド recordLevelSecurity</span><span class="sxs-lookup"><span data-stu-id="4e468-1988">Method recordLevelSecurity</span></span>
-
-    public boolean recordLevelSecurity([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-1989">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-1989">Parameters</span></span>
-
-<span data-ttu-id="4e468-1990">値</span><span class="sxs-lookup"><span data-stu-id="4e468-1990">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1991">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1991">Return Value</span></span>
-
-### <a name="method-report"></a><span data-ttu-id="4e468-1992">メソッド report</span><span class="sxs-lookup"><span data-stu-id="4e468-1992">Method report</span></span>
-
-    public ReportRun report()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1993">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1993">Return Value</span></span>
-
-### <a name="method-reportrun"></a><span data-ttu-id="4e468-1994">メソッド reportRun</span><span class="sxs-lookup"><span data-stu-id="4e468-1994">Method reportRun</span></span>
-
-    public ReportRun reportRun()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1995">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1995">Return Value</span></span>
-
-### <a name="method-saved"></a><span data-ttu-id="4e468-1996">メソッド saved</span><span class="sxs-lookup"><span data-stu-id="4e468-1996">Method saved</span></span>
-
-    public boolean saved()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-1997">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-1997">Return Value</span></span>
-
-### <a name="method-saveusersetup"></a><span data-ttu-id="4e468-1998">メソッド saveUserSetup</span><span class="sxs-lookup"><span data-stu-id="4e468-1998">Method saveUserSetup</span></span>
-
-<span data-ttu-id="4e468-1999">ユーザー設定を保存します。</span><span class="sxs-lookup"><span data-stu-id="4e468-1999">Saves the user setup.</span></span>
-
-    public boolean saveUserSetup([boolean saveIt])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2000">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2000">Parameters</span></span>
-
-<span data-ttu-id="4e468-2001">saveIt</span><span class="sxs-lookup"><span data-stu-id="4e468-2001">saveIt</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2002">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2002">Return Value</span></span>
-
-<span data-ttu-id="4e468-2003">設定が正常に保存された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="4e468-2003">true if the setup was successfully saved; otherwise false.</span></span>
-
-### <a name="method-searchable"></a><span data-ttu-id="4e468-2004">メソッド searchable</span><span class="sxs-lookup"><span data-stu-id="4e468-2004">Method searchable</span></span>
-
-    public boolean searchable([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2005">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2005">Parameters</span></span>
-
-<span data-ttu-id="4e468-2006">値</span><span class="sxs-lookup"><span data-stu-id="4e468-2006">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2007">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2007">Return Value</span></span>
-
-### <a name="method-setcursor"></a><span data-ttu-id="4e468-2008">メソッド setCursor</span><span class="sxs-lookup"><span data-stu-id="4e468-2008">Method setCursor</span></span>
-
-    public boolean setCursor(Common record, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2009">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2009">Parameters</span></span>
-
-<span data-ttu-id="4e468-2010">記録</span><span class="sxs-lookup"><span data-stu-id="4e468-2010">record</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2011">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-2011">occurrence</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2012">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2012">Return Value</span></span>
-
-### <a name="method-setrecord"></a><span data-ttu-id="4e468-2013">メソッド setRecord</span><span class="sxs-lookup"><span data-stu-id="4e468-2013">Method setRecord</span></span>
-
-    public boolean setRecord(Common record, [int occurrence])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2014">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2014">Parameters</span></span>
-
-<span data-ttu-id="4e468-2015">記録</span><span class="sxs-lookup"><span data-stu-id="4e468-2015">record</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2016">occurrence</span><span class="sxs-lookup"><span data-stu-id="4e468-2016">occurrence</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2017">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2017">Return Value</span></span>
-
-### <a name="method-title"></a><span data-ttu-id="4e468-2018">メソッド title</span><span class="sxs-lookup"><span data-stu-id="4e468-2018">Method title</span></span>
-
-    public str title([str value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2019">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2019">Parameters</span></span>
-
-<span data-ttu-id="4e468-2020">値</span><span class="sxs-lookup"><span data-stu-id="4e468-2020">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2021">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2021">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="4e468-2022">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="4e468-2022">Method toString</span></span>
-
-<span data-ttu-id="4e468-2023">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-2023">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2024">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2024">Return Value</span></span>
-
-<span data-ttu-id="4e468-2025">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="4e468-2025">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-2026">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-2026">Remarks</span></span>
-
-<span data-ttu-id="4e468-2027">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-2027">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="4e468-2028">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-2028">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="4e468-2029">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="4e468-2029">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-### <a name="method-userupdate"></a><span data-ttu-id="4e468-2030">メソッド userUpdate</span><span class="sxs-lookup"><span data-stu-id="4e468-2030">Method userUpdate</span></span>
-
-    public boolean userUpdate([boolean value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2031">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2031">Parameters</span></span>
-
-<span data-ttu-id="4e468-2032">値</span><span class="sxs-lookup"><span data-stu-id="4e468-2032">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2033">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2033">Return Value</span></span>
-
-### <a name="method-version"></a><span data-ttu-id="4e468-2034">メソッド version</span><span class="sxs-lookup"><span data-stu-id="4e468-2034">Method version</span></span>
-
-    public int version([int value])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2035">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2035">Parameters</span></span>
-
-<span data-ttu-id="4e468-2036">値</span><span class="sxs-lookup"><span data-stu-id="4e468-2036">value</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2037">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2037">Return Value</span></span>
-
-### <a name="method-getqueryrowcount"></a><span data-ttu-id="4e468-2038">メソッド getQueryRowCount</span><span class="sxs-lookup"><span data-stu-id="4e468-2038">Method getQueryRowCount</span></span>
-
-    public static int getQueryRowCount(Query query, int maxRows)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2039">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2039">Parameters</span></span>
-
-<span data-ttu-id="4e468-2040">クエリ</span><span class="sxs-lookup"><span data-stu-id="4e468-2040">query</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2041">maxRows</span><span class="sxs-lookup"><span data-stu-id="4e468-2041">maxRows</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2042">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2042">Return Value</span></span>
-
-### <a name="method-runandpopulate"></a><span data-ttu-id="4e468-2043">メソッド runAndPopulate</span><span class="sxs-lookup"><span data-stu-id="4e468-2043">Method runAndPopulate</span></span>
-
-    public static int runAndPopulate(Query sourceRuery, Common targetTable, Map queryAliasesAndTargetColumnsMap)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2044">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2044">Parameters</span></span>
-
-<span data-ttu-id="4e468-2045">sourceRuery</span><span class="sxs-lookup"><span data-stu-id="4e468-2045">sourceRuery</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2046">targetTable</span><span class="sxs-lookup"><span data-stu-id="4e468-2046">targetTable</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2047">queryAliasesAndTargetColumnsMap</span><span class="sxs-lookup"><span data-stu-id="4e468-2047">queryAliasesAndTargetColumnsMap</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="4e468-2048">戻り値</span><span class="sxs-lookup"><span data-stu-id="4e468-2048">Return Value</span></span>
-
-### <a name="method-run"></a><span data-ttu-id="4e468-2049">メソッド run</span><span class="sxs-lookup"><span data-stu-id="4e468-2049">Method run</span></span>
-
-<span data-ttu-id="4e468-2050">ユーザーからクエリに関する情報を取得するために使用されるフォームを開いて、一致するレコードをフェッチします。</span><span class="sxs-lookup"><span data-stu-id="4e468-2050">Opens a form used to obtain information about the query from the user, and fetches the matching records.</span></span>
-
-    public void run()
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-2051">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-2051">Remarks</span></span>
-
-<span data-ttu-id="4e468-2052">クエリを実行すると、ユーザーによって入力された制約を満たすレコードが検索されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-2052">Running the query will find the records that satisfy the constraints entered by the user.</span></span> <span data-ttu-id="4e468-2053">ただし、この方法でのクエリの実行には副作用がありません。</span><span class="sxs-lookup"><span data-stu-id="4e468-2053">However, running the query in this manner has no side effects.</span></span> <span data-ttu-id="4e468-2054">扱いやすくするために、1 つ以上の継承されたメソッドをオーバーロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e468-2054">In order to be useful, one or more of the inherited methods must be overloaded.</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="4e468-2055">メソッド new</span><span class="sxs-lookup"><span data-stu-id="4e468-2055">Method new</span></span>
-
-<span data-ttu-id="4e468-2056">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="4e468-2056">Initializes a new instance of the Object class.</span></span>
-
-    public void new(AnyType source)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2057">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2057">Parameters</span></span>
-
-<span data-ttu-id="4e468-2058">ソース</span><span class="sxs-lookup"><span data-stu-id="4e468-2058">source</span></span>  
-
-#### <a name="remarks"></a><span data-ttu-id="4e468-2059">備考</span><span class="sxs-lookup"><span data-stu-id="4e468-2059">Remarks</span></span>
-
-<span data-ttu-id="4e468-2060">クエリ クラスのインスタンスを QueryRun クラスのコンストラクターに渡すと、クエリ オブジェクトのコピーが作成されます。</span><span class="sxs-lookup"><span data-stu-id="4e468-2060">When you pass an instance of the Query class into this constructor of the QueryRun class, a copy of the Query object is created.</span></span> <span data-ttu-id="4e468-2061">このクエリ オブジェクト のコピーに加えられた変更は、元のクエリ オブジェクトには影響しません。</span><span class="sxs-lookup"><span data-stu-id="4e468-2061">Changes that are made to this copy of the Query object do not affect the original Query object.</span></span>
-
-### <a name="method-addpagerange"></a><span data-ttu-id="4e468-2062">メソッド addPageRange</span><span class="sxs-lookup"><span data-stu-id="4e468-2062">Method addPageRange</span></span>
-
-    public void addPageRange([Int64 startingPosition], [Int64 numberOfRecordsToFetch])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2063">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2063">Parameters</span></span>
-
-<span data-ttu-id="4e468-2064">startingPosition</span><span class="sxs-lookup"><span data-stu-id="4e468-2064">startingPosition</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2065">numberOfRecordsToFetch</span><span class="sxs-lookup"><span data-stu-id="4e468-2065">numberOfRecordsToFetch</span></span>  
-
-### <a name="method-reset"></a><span data-ttu-id="4e468-2066">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="4e468-2066">Method reset</span></span>
-
-    public void reset()
-
-### <a name="method-setimportsession"></a><span data-ttu-id="4e468-2067">メソッド setImportSession</span><span class="sxs-lookup"><span data-stu-id="4e468-2067">Method setImportSession</span></span>
-
-    public void setImportSession(Guid importSession)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2068">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2068">Parameters</span></span>
-
-<span data-ttu-id="4e468-2069">importSession</span><span class="sxs-lookup"><span data-stu-id="4e468-2069">importSession</span></span>  
-
-### <a name="method-setquerytimeout"></a><span data-ttu-id="4e468-2070">メソッド setQuerytimeout</span><span class="sxs-lookup"><span data-stu-id="4e468-2070">Method setQuerytimeout</span></span>
-
-    public void setQuerytimeout(int seconds, [boolean raiseException])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2071">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2071">Parameters</span></span>
-
-<span data-ttu-id="4e468-2072"> 秒</span><span class="sxs-lookup"><span data-stu-id="4e468-2072">seconds</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2073">raiseException</span><span class="sxs-lookup"><span data-stu-id="4e468-2073">raiseException</span></span>  
-
-### <a name="method-init"></a><span data-ttu-id="4e468-2074">メソッド init</span><span class="sxs-lookup"><span data-stu-id="4e468-2074">Method init</span></span>
-
-    public void init()
-
-### <a name="method-enablepositionpaging"></a><span data-ttu-id="4e468-2075">メソッド enablePositionPaging</span><span class="sxs-lookup"><span data-stu-id="4e468-2075">Method enablePositionPaging</span></span>
-
-    public void enablePositionPaging([boolean enabled])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2076">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2076">Parameters</span></span>
-
-<span data-ttu-id="4e468-2077">有効</span><span class="sxs-lookup"><span data-stu-id="4e468-2077">enabled</span></span>  
-
-### <a name="method-shred"></a><span data-ttu-id="4e468-2078">メソッド shred</span><span class="sxs-lookup"><span data-stu-id="4e468-2078">Method shred</span></span>
-
-    public void shred(Guid importSession)
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2079">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2079">Parameters</span></span>
-
-<span data-ttu-id="4e468-2080">importSession</span><span class="sxs-lookup"><span data-stu-id="4e468-2080">importSession</span></span>  
-
-### <a name="method-enablevaluebasedpaging"></a><span data-ttu-id="4e468-2081">メソッド enableValueBasedPaging</span><span class="sxs-lookup"><span data-stu-id="4e468-2081">Method enableValueBasedPaging</span></span>
-
-    public void enableValueBasedPaging([boolean enable])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2082">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2082">Parameters</span></span>
-
-<span data-ttu-id="4e468-2083">enable</span><span class="sxs-lookup"><span data-stu-id="4e468-2083">enable</span></span>  
-
-### <a name="method-bulknext"></a><span data-ttu-id="4e468-2084">メソッド bulkNext</span><span class="sxs-lookup"><span data-stu-id="4e468-2084">Method bulkNext</span></span>
-
-    public void bulkNext([boolean fetchAllData])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2085">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2085">Parameters</span></span>
-
-<span data-ttu-id="4e468-2086">fetchAllData</span><span class="sxs-lookup"><span data-stu-id="4e468-2086">fetchAllData</span></span>  
-
-### <a name="method-applyvaluebasedpaging"></a><span data-ttu-id="4e468-2087">メソッド applyValueBasedPaging</span><span class="sxs-lookup"><span data-stu-id="4e468-2087">Method applyValueBasedPaging</span></span>
-
-    public void applyValueBasedPaging([Common sourceCursor], [boolean isForward])
-
-#### <a name="parameters"></a><span data-ttu-id="4e468-2088">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e468-2088">Parameters</span></span>
-
-<span data-ttu-id="4e468-2089">sourceCursor</span><span class="sxs-lookup"><span data-stu-id="4e468-2089">sourceCursor</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="4e468-2090">isForward</span><span class="sxs-lookup"><span data-stu-id="4e468-2090">isForward</span></span>  
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="q-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>q-classes.4ea0e1.478236c6d1436ee428768ca7a596cfaf4d345dcb.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>478236c6d1436ee428768ca7a596cfaf4d345dcb</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\q-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Q classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Q クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>System API classes that start with the letter Q.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 Q で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Q classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Q クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>System API classes that start with the letter Q.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 Q で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Class Query</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス クエリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The Query class embodies the structure of a query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ クラスには、クエリの構造が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Objects of this kind are not used to fetch records from the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このタイプのオブジェクトは、データベースからレコードをフェッチするために使用されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Instead, use a QueryRun object that can be assigned a query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、クエリ オブジェクトを割り当てることができる QueryRun オブジェクトを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The dynamic behavior of a query is defined by the QueryRun class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリの動的な動作は、QueryRun クラスによって定義されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The static behavior is defined by the Query class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的なビヘイビアーは、Query クラスによって定義されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Queries contain one or more data sources that correspond to tables in the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリには、データベース内のテーブルに対応する 1 つまたは複数のデータ ソースが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The data sources are specified by using QueryBuildDataSource objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースを指定するには、QueryBuildDataSource オブジェクトを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>This class lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Queries are used when the user wants to modify the records that are fetched by, for example, a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリは、ユーザーが、たとえばフォームなどによりフェッチされるレコードを変更する場合に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>One or more ranges are often added to an existing data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">多くの場合、1 つ以上の範囲は既存のデータ ソースに追加されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Ranges are specified by using queryBuildRange objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">範囲を指定するには、queryBuildRange オブジェクトを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The following example creates a query object that is used to create a QueryRun object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、QueryRun オブジェクトを作成するために使用されるクエリ オブジェクトを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>public Query addBaseQuery(str queryName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Query addBaseQuery(str queryName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>public QueryBuildDataSource addDataSource(TableId table, <ph id="ph1">\[</ph>str name<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>UnionType unionType<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean emptyFieldList<ph id="ph6">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource addDataSource(TableId table, <ph id="ph1">\[</ph>str name<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>UnionType unionType<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean emptyFieldList<ph id="ph6">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Adds a data source to the top level of the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリのトップ レベルにデータ ソースを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>public QueryHavingFilter addHavingFilter(QueryBuildDataSource dataSource, str fieldName, AggregateFunction aggregateFunction, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryHavingFilter addHavingFilter(QueryBuildDataSource dataSource, str fieldName, AggregateFunction aggregateFunction, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>public QueryFilter addQueryFilter(QueryBuildDataSource dataSource, str fieldName, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryFilter addQueryFilter(QueryBuildDataSource dataSource, str fieldName, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>public boolean allowCheck(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean allowCheck(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>public boolean allowCrossCompany(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean allowCrossCompany(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>public boolean allowHavingFilters(QueryBuildDataSource dataSource, FieldName fieldName, AggregateFunction aggregateFunction)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean allowHavingFilters(QueryBuildDataSource dataSource, FieldName fieldName, AggregateFunction aggregateFunction)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>public boolean allowQueryFilters(QueryBuildDataSource dataSource)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean allowQueryFilters(QueryBuildDataSource dataSource)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Gets or sets the name of the user who last changed the Query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Gets or sets the date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Gets or sets the time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>public int childDataSourceCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int childDataSourceCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Counts the number of data sources that are related to the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリに関連するデータ ソースの数をカウントします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Returns the child data source that corresponds to the specified number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された番号に対応するデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>public boolean containsAggregateFields()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean containsAggregateFields()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Gets or sets the name of the user who created the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Gets or sets the date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>public int dataSourceCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int dataSourceCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Returns the total number of data sources for the query, including any embedded data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">埋め込みデータ ソースを含む、クエリのデータ ソースの合計数を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>public QueryBuildDataSource dataSourceName(str name)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSourceName(str name)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Returns the data source that has the specified name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された名前を持つデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>public QueryBuildDataSource dataSourceNo(int dataSourceNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSourceNo(int dataSourceNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Returns the data source that is specified by the data source number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース番号により指定されたデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>public QueryBuildDataSource dataSourceTable(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSourceTable(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Returns the data source that the specified table is assigned to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルが割り当てられているデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>public QueryBuildDataSource dataSourceUniqueId(int uniqueId)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSourceUniqueId(int uniqueId)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>public str description(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str description(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>public boolean equal(Object record)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean equal(Object record)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Evaluates whether one query is equal to another.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">あるクエリが別のクエリと等しいかどうかを評価します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>public str exportXML()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str exportXML()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>public QueryHavingFilter findHavingFilterByField(QueryBuildDataSource dataSource, FieldName fieldName, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryHavingFilter findHavingFilterByField(QueryBuildDataSource dataSource, FieldName fieldName, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>public QueryFilter findQueryFilter(QueryBuildDataSource dataSource, FieldName fieldName, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryFilter findQueryFilter(QueryBuildDataSource dataSource, FieldName fieldName, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>public QueryBuildDataSource firstTopLevelDataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource firstTopLevelDataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>public boolean forceNestedLoop(boolean arg)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean forceNestedLoop(boolean arg)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>public boolean forceSelectOrder(boolean arg)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean forceSelectOrder(boolean arg)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>public str form(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str form(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>public container getCompanyRange()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getCompanyRange()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>public int getMostRestrictedQueryFilterStatus(QueryBuildDataSource dataSource, FieldName fieldName, <ph id="ph1">\[</ph>int fieldId<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getMostRestrictedQueryFilterStatus(QueryBuildDataSource dataSource, FieldName fieldName, <ph id="ph1">\[</ph>int fieldId<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>public int getNextUniqueId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getNextUniqueId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>public str getSQLStatement(<ph id="ph1">\[</ph>boolean noRuntimeOptimization<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getSQLStatement(<ph id="ph1">\[</ph>boolean noRuntimeOptimization<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>public container getValidTimeStateDateRange()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getValidTimeStateDateRange()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>public container getValidTimeStateDateTimeRange()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container getValidTimeStateDateTimeRange()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>public ValidTimeStateQueryType getValidTimeStateQueryType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ValidTimeStateQueryType getValidTimeStateQueryType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>public QueryGroupByField groupByField(int index, <ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryGroupByField groupByField(int index, <ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>public int groupByFieldCount(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int groupByFieldCount(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>public boolean hasMultipleTopLevelDataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean hasMultipleTopLevelDataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>public boolean hasRangeOrFilter(QueryBuildDataSource dataSource)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean hasRangeOrFilter(QueryBuildDataSource dataSource)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>public QueryHavingFilter havingFilter(int count, <ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryHavingFilter havingFilter(int count, <ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>public int havingFilterCount(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int havingFilterCount(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>public boolean inReport()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean inReport()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Determines whether the query is part of a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがレポートの一部であるかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>public boolean interactive(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean interactive(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Specifies whether the query is interactive.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリが対話的かどうかを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>public boolean isCompositeQuery()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isCompositeQuery()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>public boolean isExplicitlyOrdered()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isExplicitlyOrdered()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>public boolean isExplicitlyGrouped()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isExplicitlyGrouped()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>public boolean isPureUnionAll()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isPureUnionAll()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>public boolean isUnionType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isUnionType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>public int levelNo(int dataSourceNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int levelNo(int dataSourceNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Determines the level of indentation of the specified data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたデータ ソースのインデントのレベルを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>public int levelTable(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int levelTable(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Determines the tree level, in the hierarchy of data sources, of the data source that is assigned to the specified table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したテーブルに割り当てられているデータ ソースのツリー レベルを、データ ソースの階層内で決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>public int literals(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int literals(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>public Query newObject(AnyType source)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Query newObject(AnyType source)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Creates a query that exists on the same client side or server side as the source query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース クエリとして同じクライアント側、またはサーバー側で存在するクエリを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>public int nextUniqueId(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int nextUniqueId(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>public QueryOrderByField orderByField(int index, <ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryOrderByField orderByField(int index, <ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>public int orderByFieldCount(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int orderByFieldCount(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>public container pack(<ph id="ph1">\[</ph>boolean doCheck<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container pack(<ph id="ph1">\[</ph>boolean doCheck<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Packs the query into a container and returns that container, so that it can be used when you create a query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナーにクエリをパックし、クエリを作成するときに使用できるようにそのコンテナーを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>public container packInternals()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container packInternals()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>public QueryFilter queryFilter(int count, <ph id="ph1">\[</ph>QueryBuildDataSource rootDataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryFilter queryFilter(int count, <ph id="ph1">\[</ph>QueryBuildDataSource rootDataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>public int queryFilterCount(<ph id="ph1">\[</ph>QueryBuildDataSource rootDataSource<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int queryFilterCount(<ph id="ph1">\[</ph>QueryBuildDataSource rootDataSource<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>public int queryType(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int queryType(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>public str quickFilterValue()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str quickFilterValue()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>public int quickFilterControlId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int quickFilterControlId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>public boolean recordLevelSecurity(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean recordLevelSecurity(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>public Report report()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Report report()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Returns the report in which the query is defined, if the report exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートが存在する場合、クエリが定義されているレポートを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>public boolean saved()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean saved()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Indicates whether the query has been saved to disk.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがディスクに保存されたかどうかを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>public boolean searchable(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean searchable(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>public Guid importSession(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid importSession(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>public str title(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str title(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>public int topRows(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int topRows(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>public boolean userUpdate(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean userUpdate(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Gets or sets a value that indicates whether the query can update the records that it fetches.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フェッチされたレコードをクエリが更新できるかどうかを示す値を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>public Date validTimeStateAsOfDate(<ph id="ph1">\[</ph>Date asOfDate<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date validTimeStateAsOfDate(<ph id="ph1">\[</ph>Date asOfDate<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>public DateTime validTimeStateAsOfDateTime(<ph id="ph1">\[</ph>DateTime asOfDateTime<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public DateTime validTimeStateAsOfDateTime(<ph id="ph1">\[</ph>DateTime asOfDateTime<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>public int validTimeStateFlags(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int validTimeStateFlags(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>public int version(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int version(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>public str xml(<ph id="ph1">\[</ph>int indent<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str xml(<ph id="ph1">\[</ph>int indent<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Returns an XML string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す XML 文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>public void clearBaseQueries()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearBaseQueries()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>public void addCompanyRange(str companyName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addCompanyRange(str companyName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>public void checkRangeParsingErrors(boolean setCheckRangeParsingErrors)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkRangeParsingErrors(boolean setCheckRangeParsingErrors)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>public void clearCompanyRange()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearCompanyRange()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>public void unpackInternals(container internalData)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void unpackInternals(container internalData)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>public void new(<ph id="ph1">\[</ph>AnyType source<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(<ph id="ph1">\[</ph>AnyType source<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Creates a query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>public void checkFieldAccess(boolean setCheckFieldAccess)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkFieldAccess(boolean setCheckFieldAccess)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>public void useDbCacheOnGeneratedCursors(<ph id="ph1">\[</ph>int fetchsize<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void useDbCacheOnGeneratedCursors(<ph id="ph1">\[</ph>int fetchsize<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>public void setValidTimeStateQueryType(<ph id="ph1">\[</ph>ValidTimeStateQueryType type<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setValidTimeStateQueryType(<ph id="ph1">\[</ph>ValidTimeStateQueryType type<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>public void validTimeStateDateRange(<ph id="ph1">\[</ph>Date fromDate<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>Date toDate<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void validTimeStateDateRange(<ph id="ph1">\[</ph>Date fromDate<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>Date toDate<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>public void clearHavingFilters(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str fieldName<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int occurence<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int arrayIndex<ph id="ph8">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearHavingFilters(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str fieldName<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int occurence<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int arrayIndex<ph id="ph8">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>public void quickFilter(<ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int tableId<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int fieldId<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str filterValue<ph id="ph8">\]</ph>, <ph id="ph9">\[</ph>int controlId<ph id="ph10">\]</ph>, <ph id="ph11">\[</ph>boolean useEqualityComparisonForStrings<ph id="ph12">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void quickFilter(<ph id="ph1">\[</ph>str dataSourceName<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int tableId<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int fieldId<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>str filterValue<ph id="ph8">\]</ph>, <ph id="ph9">\[</ph>int controlId<ph id="ph10">\]</ph>, <ph id="ph11">\[</ph>boolean useEqualityComparisonForStrings<ph id="ph12">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>public void clearQueryFilters(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str fieldName<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int occurence<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int arrayIndex<ph id="ph8">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearQueryFilters(<ph id="ph1">\[</ph>QueryBuildDataSource dataSource<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>str fieldName<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>int occurence<ph id="ph6">\]</ph>, <ph id="ph7">\[</ph>int arrayIndex<ph id="ph8">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>public void clearOrderBy()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearOrderBy()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>public void clearAllFields()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearAllFields()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>public void clearGroupBy()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearGroupBy()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>public void autoAuthzMode(AutoAuthzMode mode)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void autoAuthzMode(AutoAuthzMode mode)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>::public static void insert<ph id="ph1">\_</ph>recordset(Common targetCursor, Map targetToSourceMap, Query sourceQuery)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static void insert<ph id="ph1">\_</ph>recordset(Common targetCursor, Map targetToSourceMap, Query sourceQuery)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>public void generateCursors()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void generateCursors()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>public void checkAuthorizationOnOpenRanges(boolean setCheckAuthorizationOnOpenRanges)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void checkAuthorizationOnOpenRanges(boolean setCheckAuthorizationOnOpenRanges)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>public void addContains(str containsValue, <ph id="ph1">\[</ph>boolean prefixSearch<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addContains(str containsValue, <ph id="ph1">\[</ph>boolean prefixSearch<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>public void resetValidTimeStateQueryType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void resetValidTimeStateQueryType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>public void validTimeStateDateTimeRange(<ph id="ph1">\[</ph>DateTime fromDateTime<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>DateTime toDateTime<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void validTimeStateDateTimeRange(<ph id="ph1">\[</ph>DateTime fromDateTime<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>DateTime toDateTime<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Method addBaseQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addBaseQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>queryName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">queryName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Method addDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Adds a data source to the top level of the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリのトップ レベルにデータ ソースを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>unionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">unionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>emptyFieldList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">emptyFieldList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>The data source object that is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成されたデータ ソース オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>A name value can be specified for documentation purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文書作成のために名前の値を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>You can use the name to fetch the data source by using the dataSourceName method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceName メソッドを使用してデータ ソースをフェッチする名前を使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Method addHavingFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addHavingFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>aggregateFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aggregateFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Method addQueryFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addQueryFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Method allowCheck</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowCheck</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Method allowCrossCompany</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowCrossCompany</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Method allowHavingFilters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowHavingFilters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>aggregateFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">aggregateFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Method allowQueryFilters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowQueryFilters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Method changedBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Gets or sets the name of the user who last changed the Query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>The name of the user who last changed the Query object; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを最後に変更したユーザーの名前 (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>The name of the user who last changed the Query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを最後に変更したユーザーの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Method changedDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Gets or sets the date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>The date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Method changedTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Gets or sets the time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>The time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時間。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Method childDataSourceCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド childDataSourceCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Counts the number of data sources that are related to the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリに関連するデータ ソースの数をカウントします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>The number of data sources that are related to the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクエリに関連するデータ ソースの数。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>This method is used for the top-level query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、トップレベルのクエリに使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>To determine the number of data sources that are embedded in another data source, use the childDataSourceCount method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">別のデータ ソースに埋め込まれているデータ ソースの数を確認するには、childDataSourceCount メソッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Method childDataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド childDataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Returns the child data source that corresponds to the specified number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された番号に対応するデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>The number of the child data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">子データ ソースの番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>The child data source that has the specified number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された番号を持つ子データ ソース。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>The number that is specified must represent a data source that is immediately underneath the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された数値は、クエリのすぐ下にあるデータ ソースを表す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Typically, there is only one such data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、このようなデータ ソースは 1 つだけです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Method containsAggregateFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド containsAggregateFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Method createdBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createdBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Gets or sets the name of the user who created the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>The name of the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Method creationDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Gets or sets the date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>The date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Method creationTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Method dataSourceCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSourceCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Returns the total number of data sources for the query, including any embedded data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">埋め込みデータ ソースを含む、クエリのデータ ソースの合計数を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>The number of data sources for this query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクエリのデータ ソースの数。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>The number is the transitive number of data sources and includes any embedded data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この番号は、データ ソースの推移的な番号であり、任意の埋め込みデータ ソースが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>Method dataSourceName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSourceName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Returns the data source that has the specified name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定された名前を持つデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>The string that contains the name of the data source to return.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返すデータソースの名前を含む文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>The data source that has the specified name; an uninitialized object if the specified data source does not exist.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定した名前を持つデータ ソース。指定されたデータ ソースが存在しない場合は、初期化されていないオブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Method dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Returns the data source that is specified by the data source number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース番号により指定されたデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>The number of the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースの番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>The data source that has the specified number; an uninitialized object if the specified data source does not exist.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定した番号を持つデータ ソース。指定されたデータ ソースが存在しない場合は、初期化されていないオブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>Method dataSourceTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSourceTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Returns the data source that the specified table is assigned to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルが割り当てられているデータ ソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>An integer that is used when more than one data source uses the specified table ID; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のデータ ソースが指定されたテーブル ID を使用する場合に使用される整数。オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>The default value is 1, which specifies the first (and typically only) instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定値は 1で、最初の (通常は唯一の) インスタンスを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>An integer that is used when more than one data source uses the specified table ID; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のデータ ソースが指定されたテーブル ID を使用する場合に使用される整数。オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>The default value is 1, which specifies the first (and typically only) instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定値は 1で、最初の (通常は唯一の) インスタンスを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>The data source that the specified table is assigned to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルが割り当てられているデータ ソース。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>The data source can also be retrieved by calling the dataSourceNo method or the dataSourceName method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースは、dataSourceNo メソッドまたは dataSourceName メソッドを呼び出すことによって取得することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Method dataSourceUniqueId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSourceUniqueId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>uniqueId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">uniqueId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Method description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Method equal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド equal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>Evaluates whether one query is equal to another.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">あるクエリが別のクエリと等しいかどうかを評価します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>The query to use as a comparison.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">比較として使用するクエリです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>true if the queries are equal; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリが等しい場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>"Equal" in this case means that the query is structurally identical to the query that it is compared to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、「等しい」は、クエリが比較されるクエリと構造的に同一であることを意味します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>The query has the same number of data sources assigned to the same files, and it has the same number of ranges.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリには、同じファイルに割り当てられたデータ ソースと同じ数のデータ ソースがあり、同じ数の範囲があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Method exportXML</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド exportXML</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Method findHavingFilterByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド findHavingFilterByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Method findQueryFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド findQueryFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Method firstTopLevelDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstTopLevelDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Method forceNestedLoop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド forceNestedLoop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>arg</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Method forceSelectOrder</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド forceSelectOrder</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>arg</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Method form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド form</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Method getCompanyRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getCompanyRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>Method getMostRestrictedQueryFilterStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getMostRestrictedQueryFilterStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>fieldId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Method getNextUniqueId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getNextUniqueId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Method getSQLStatement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getSQLStatement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>noRuntimeOptimization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">noRuntimeOptimization</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>Method getValidTimeStateDateRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getValidTimeStateDateRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Method getValidTimeStateDateTimeRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getValidTimeStateDateTimeRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>Method getValidTimeStateQueryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getValidTimeStateQueryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Method groupByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド groupByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Method groupByFieldCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド groupByFieldCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Method hasMultipleTopLevelDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド hasMultipleTopLevelDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>Method hasRangeOrFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド hasRangeOrFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>Method havingFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド havingFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>count</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カウント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Method havingFilterCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド havingFilterCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>Method inReport</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド inReport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Determines whether the query is part of a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがレポートの一部であるかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>true if the query is part of a report (is found under a report's data sources node); otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがレポートの一部である場合は (レポートのデータ ソース ノードの下にある場合は) true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>This function is not typically used by application code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数は、通常アプリケーション コードでは使用されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>If the method returns true, the report method can be used to access the report in which the query is defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが true を返す場合は、レポート メソッドはクエリが定義されているレポートにアクセスするために使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>Method interactive</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interactive</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Specifies whether the query is interactive.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリが対話的かどうかを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>A value that indicates whether the query is interactive; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがインタラクティブかどうかを示す値、オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>true if the query is interactive; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリが対話形式である場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>In an interactive query, the query can, for example, present the user with a dialog box when the prompt method is called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対話型クエリでは、たとえば prompt メソッドが呼び出されたときに、クエリはユーザーにダイアログ ボックスを提示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>This functionality is used when code will be submitted to a batch and in other situations where code must run unattended.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、コードをバッチに送信する場合や、コードを無人で実行する必要がある場合に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>Method isCompositeQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isCompositeQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Method isExplicitlyOrdered</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isExplicitlyOrdered</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Method isExplicitlyGrouped</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isExplicitlyGrouped</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>Method isPureUnionAll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isPureUnionAll</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Method isUnionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isUnionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>Method levelNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド levelNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Determines the level of indentation of the specified data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたデータ ソースのインデントのレベルを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>The data source number to determine the level for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースのレベルを決定する番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>The level number of the specified data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたデータ ソースのレベル番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>The data sources are numbered consecutively, starting at 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データソースは、1 から順に番号付けされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Method levelTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド levelTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>Determines the tree level, in the hierarchy of data sources, of the data source that is assigned to the specified table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したテーブルに割り当てられているデータ ソースのツリー レベルを、データ ソースの階層内で決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>The integer that is used if more than one data source is assigned to the same table; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のデータ ソースが同じテーブルに割り当てられる場合に使用される整数。オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>The integer that is used if more than one data source is assigned to the same table; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のデータ ソースが同じテーブルに割り当てられる場合に使用される整数。オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>The level number of the query's specified data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリの指定されたデータ ソースのレベル番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Method literals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド literals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>The name that is used in code to identify an application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>Begins with a letter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Doesn't exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>Can include numbers and underscore characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Cannot include punctuation or spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>Method newObject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド newObject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>Creates a query that exists on the same client side or server side as the source query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース クエリとして同じクライアント側、またはサーバー側で存在するクエリを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>The source query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース クエリ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>The new query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいクエリ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>Method nextUniqueId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextUniqueId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>Method orderByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド orderByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>Method orderByFieldCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド orderByFieldCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Method origin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド origin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>Method pack</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド pack</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>Packs the query into a container and returns that container, so that it can be used when you create a query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナーにクエリをパックし、クエリを作成するときに使用できるようにそのコンテナーを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>doCheck</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">doCheck</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>A Boolean value that indicates whether to flag an error when a data source in the query references an outside cursor, such as a link to a cursor that is foreign to the query's data source; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリのデーターソースが外部のカーソルを参照する (クエリのデータソースを外部のカーソルへリンクするなど) ときに、エラーフラグを設定するかどうかを示すブール値; オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>The default value is true, which enforces the constraint.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定値は、true で、制約が適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>The container that holds the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリを保持するコンテナー。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>The container that is created by this method can serve as input when you instantiate a query or queryRun object by using either the new method or the newObject method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドで作成されたコンテナーは、新しいメソッドまたは newObject メソッドのいずれかを使用して query オブジェクトまたは queryRun オブジェクトをインスタンス化するときに入力として機能します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>Links to cursors that are foreign to the query's data source are not packed into the container.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリのデータ ソースとは異なるカーソルへのリンクは、コンテナーにパックされません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>If you must pack this kind of link, you should take a snapshot of the cursor's data and construct ranges for each field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この種類のリンクをパックする必要がある場合は、カーソルのデータのスナップショットを取得し、各フィールドの範囲を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>Method packInternals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド packInternals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>Method queryFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド queryFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>count</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カウント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>rootDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rootDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>Method queryFilterCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド queryFilterCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>rootDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rootDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>Method queryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド queryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>Method quickFilterValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド quickFilterValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>Method quickFilterControlId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド quickFilterControlId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>Method recordLevelSecurity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド recordLevelSecurity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>Method report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド report</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>Returns the report in which the query is defined, if the report exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートが存在する場合、クエリが定義されているレポートを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>The report in which the query is defined under the data sources node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがデータ ソース ノードの下で定義されているレポート。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>A query is not necessarily defined in the context of a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリは、必ずしもレポートのコンテキストで定義されているとは限りません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>To determine whether a query is defined in the context of a report, you can use the inReport method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートのコンテキストでクエリが定義されているかどうかを確認するには、inReport メソッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>Method saved</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド saved</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>Indicates whether the query has been saved to disk.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがディスクに保存されたかどうかを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>true if the query has been saved to disk; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがディスクに保存されている場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>Method searchable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド searchable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Method importSession</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド importSession</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>Method title</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド title</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>Method topRows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド topRows</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>However, the method can be overridden in a derived class so that it returns values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>For example, an instance of the SysMethodInfo class returns the method name, and the type of method, such as Instance or Static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、メソッド名、およびインスタンスまたは静的などのメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>Method userUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド userUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>Gets or sets a value that indicates whether the query can update the records that it fetches.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フェッチされたレコードをクエリが更新できるかどうかを示す値を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>A Boolean value that indicates whether the query can update the records that it fetches; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フェッチされたレコードをクエリが更新できるかどうかを示すブール値; オプション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>true if the query can currently update records that it fetches; otherwise false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリがフェッチ対象のレコードを現在更新することができる場合は true。それ以外の場合は false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>Method validTimeStateAsOfDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド validTimeStateAsOfDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>asOfDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">asOfDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source>Method validTimeStateAsOfDateTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド validTimeStateAsOfDateTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>asOfDateTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">asOfDateTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>Method validTimeStateFlags</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド validTimeStateFlags</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>Method version</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド version</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>Method xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Returns an XML string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す XML 文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>indent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インデント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>The amount of indentation for the returned XML string; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返された XML 文字列のインデントの量 (省略可能)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>An XML string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す XML 文字列です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source>This method can be overridden to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>Method clearBaseQueries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearBaseQueries</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>Method addCompanyRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addCompanyRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>companyName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">companyName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>Method checkRangeParsingErrors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkRangeParsingErrors</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>setCheckRangeParsingErrors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setCheckRangeParsingErrors</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>Method clearCompanyRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearCompanyRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>Method unpackInternals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unpackInternals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>internalData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">internalData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>Creates a query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>The source to base the query object on; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトを基にするソース (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>If no arguments are supplied when this method is called, a temporary query is created that is not stored in the Finance and Operations Application Object Tree (AOT) for subsequent use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドが呼び出されときに引数を指定すると、将来使用するために、Finance and Operations アプリケーション オブジェクト ツリー (AOT) で保存されていない一時的なクエリが作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>Method checkFieldAccess</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkFieldAccess</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>setCheckFieldAccess</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setCheckFieldAccess</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>Method useDbCacheOnGeneratedCursors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド useDbCacheOnGeneratedCursors</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>fetchsize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fetchsize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>Method setValidTimeStateQueryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setValidTimeStateQueryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>Method validTimeStateDateRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド validTimeStateDateRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>fromDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fromDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>toDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">toDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>Method clearHavingFilters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearHavingFilters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>occurence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Method quickFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド quickFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>dataSourceName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>tableId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tableId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>fieldId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>filterValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filterValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>controlId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>useEqualityComparisonForStrings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">useEqualityComparisonForStrings</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>Method clearQueryFilters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearQueryFilters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>occurence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>Method clearOrderBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearOrderBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>Method clearAllFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearAllFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>Method clearGroupBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearGroupBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>Method autoAuthzMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoAuthzMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>Method insert<ph id="ph1">\_</ph>recordset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド insert<ph id="ph1">\_</ph>recordset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>targetCursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">targetCursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>targetToSourceMap</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">targetToSourceMap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>sourceQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">sourceQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>Method generateCursors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド generateCursors</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>Method checkAuthorizationOnOpenRanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド checkAuthorizationOnOpenRanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>setCheckAuthorizationOnOpenRanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setCheckAuthorizationOnOpenRanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>Method addContains</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addContains</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>containsValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">containsValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>prefixSearch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">prefixSearch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>Method resetValidTimeStateQueryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド resetValidTimeStateQueryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Method validTimeStateDateTimeRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド validTimeStateDateTimeRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>fromDateTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fromDateTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source>toDateTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">toDateTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>Class QueryBuildDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryBuildDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>The QueryBuildDataSource class provides the building blocks that queries are made of.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildDataSource クラスは、クエリが構成されているレポート パーツを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>Data sources are arranged in hierarchies that define the sequence in which records are fetched from the tables that are assigned to the data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースは、データ ソースに割り当てられたテーブルからレコードがフェッチされる順序を定義する階層内で配置されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>Each data source defines the order in which the records are fetched, and also the criteria that must be met by the selected records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各データ ソースでは、レコードがフェッチされる順序および選択されたレコードによって満たされなければならない基準を定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>This class lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>public int addAllFields(TableName tableName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addAllFields(TableName tableName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>public QueryBuildDataSource addDataSource(AnyType arg, <ph id="ph1">\[</ph>str name<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean emptyFieldList<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource addDataSource(AnyType arg, <ph id="ph1">\[</ph>str name<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean emptyFieldList<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>Adds a data source that is embedded in this data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータ ソースに埋め込まれているデータ ソースを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>public QueryBuildDynalink addDynalink(FieldId field, Common dynamicFile, FieldId dynamicField, <ph id="ph1">\[</ph>int fieldArrayIndex<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int dynamicFieldArrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDynalink addDynalink(FieldId field, Common dynamicFile, FieldId dynamicField, <ph id="ph1">\[</ph>int fieldArrayIndex<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int dynamicFieldArrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source>public QueryBuildLink addForeignkeyRelation(str relatedTableRole, <ph id="ph1">\[</ph>str parentDatasourceName<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildLink addForeignkeyRelation(str relatedTableRole, <ph id="ph1">\[</ph>str parentDatasourceName<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>public QueryGroupByField addGroupByField(FieldId fieldID, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryGroupByField addGroupByField(FieldId fieldID, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>public QueryBuildLink addLink(FieldId parentField, FieldId thisField, <ph id="ph1">\[</ph>str parentDatasourceName<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildLink addLink(FieldId parentField, FieldId thisField, <ph id="ph1">\[</ph>str parentDatasourceName<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>public QueryOrderByField addOrderByAggregateField(SelectionField fieldType, FieldId fieldID, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryOrderByField addOrderByAggregateField(SelectionField fieldType, FieldId fieldID, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source>public QueryOrderByField addOrderByCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryOrderByField addOrderByCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>public QueryOrderByField addOrderByField(FieldId fieldID, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryOrderByField addOrderByField(FieldId fieldID, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>public QueryBuildRange addRange(FieldId field, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>QueryRangeType rangeType<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildRange addRange(FieldId field, <ph id="ph1">\[</ph>int arrayIndex<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>QueryRangeType rangeType<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>Adds a range to the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースに範囲を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source>public int addSortField(FieldId sortField, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addSortField(FieldId sortField, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>public int addSortIndex(IndexId index)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addSortIndex(IndexId index)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>public int allowAdd(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int allowAdd(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>public boolean applyFilter(FilterValue filterValue)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean applyFilter(FilterValue filterValue)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source>public boolean autoHeader(FieldId field, <ph id="ph1">\[</ph>boolean orderNo<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoHeader(FieldId field, <ph id="ph1">\[</ph>boolean orderNo<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>public int autoHeaderDetailLevel(FieldId field, <ph id="ph1">\[</ph>int orderNo<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int autoHeaderDetailLevel(FieldId field, <ph id="ph1">\[</ph>int orderNo<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>public boolean autoSum(FieldId field, <ph id="ph1">\[</ph>boolean orderNo<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoSum(FieldId field, <ph id="ph1">\[</ph>boolean orderNo<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>public int autoSumDetailLevel(FieldId field, <ph id="ph1">\[</ph>int orderNo<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int autoSumDetailLevel(FieldId field, <ph id="ph1">\[</ph>int orderNo<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source>public boolean changedNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean changedNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>public int childDataSourceCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int childDataSourceCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource childDataSourceNo(int dataSourceNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>public str company(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str company(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source>public int concurrencyModel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int concurrencyModel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>public QueryBuildDynalink dynalink(int dynalinkNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDynalink dynalink(int dynalinkNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>public int dynalinkCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int dynalinkCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>public boolean embedded()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean embedded()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>public boolean enabled(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean enabled(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>Determines whether to enable or disable the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを有効または無効にするかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>public boolean existsMeanOrExists(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean existsMeanOrExists(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>public int fetchMode(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fetchMode(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>public QueryBuildFieldList fields()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildFieldList fields()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>public TableId file()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId file()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source>public QueryBuildRange findRange(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildRange findRange(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source>public boolean firstFast(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean firstFast(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source>Determines whether to retrieve the first record from the query before the other records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他のレコードの前にクエリから最初のレコードを取得するかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>public boolean firstOnly(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean firstOnly(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>public int getMostRestrictedQueryBuildRangeStatus(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getMostRestrictedQueryBuildRangeStatus(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>public Common getNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Common getNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source>public int id()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int id()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>public boolean indexIsHint(boolean arg)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean indexIsHint(boolean arg)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source>public boolean isPartOfSubQueryInBaseQuery()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isPartOfSubQueryInBaseQuery()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>public boolean joined()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean joined()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source>public container joinedDataSources()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container joinedDataSources()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>public int joinMode(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int joinMode(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>Gets or sets the label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source>public int level()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int level()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>public QueryBuildLink link(int associationNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildLink link(int associationNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>public int linkCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int linkCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>public container oneToOneDataSources()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container oneToOneDataSources()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>public int orderMode(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int orderMode(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source>public QueryBuildDataSource parentDataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource parentDataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source>public str policyContext(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str policyContext(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>public QueryBuildRange range(int rangeNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildRange range(int rangeNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>public int rangeCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int rangeCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>public QueryBuildRange rangeField(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildRange rangeField(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source>public boolean relations(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean relations(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>public int selectionCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int selectionCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>public boolean selectWithRepeatableRead(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean selectWithRepeatableRead(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source>public SortOrder sortDirection(FieldId field, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public SortOrder sortDirection(FieldId field, <ph id="ph1">\[</ph>SortOrder direction<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>public FieldId sortField(FieldId field)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId sortField(FieldId field)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>public int sortFieldCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int sortFieldCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>public IndexId sortIndex(int indexNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public IndexId sortIndex(int indexNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>public int sortIndexCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int sortIndexCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>public QueryBuildStaticlink staticlink(int staticlinkNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildStaticlink staticlink(int staticlinkNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>Returns a static Link object on the query’s data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリのデータ ソースで静的リンク オブジェクトを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>public int staticlinkCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int staticlinkCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>Gives the number of static links that are defined on the QueryBuildDataSource object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildDataSource オブジェクトに対して定義されている静的リンクの数が与えられます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source>public TableId table(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId table(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>Gets or sets the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているテーブル ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source>public int unionType(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unionType(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>public int uniqueId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int uniqueId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>public boolean update(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean update(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>Determines whether the records fetched by this data source can be updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータ ソースによってフェッチされたレコードを更新できるかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>public void clearLinks()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearLinks()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>public void clearDynalinks()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearDynalinks()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>public void clearRange(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearRange(FieldId field, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>public void sortClear()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void sortClear()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>public void addSelectionFieldWithAlias(str alias, FieldId field, <ph id="ph1">\[</ph>SelectionField fieldType<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addSelectionFieldWithAlias(str alias, FieldId field, <ph id="ph1">\[</ph>SelectionField fieldType<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>public void addCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, str alias)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addCalculationField(Microsoft.Dynamics.AX.Analytics.CalculationModel.NumericExpression calculation, str alias)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>public void addForeignKeyDynalink(Common dynamicFile, str relatedRole)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addForeignKeyDynalink(Common dynamicFile, str relatedRole)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source>public void addRelation(DictRelation relation, <ph id="ph1">\[</ph>TableScope tableScope<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addRelation(DictRelation relation, <ph id="ph1">\[</ph>TableScope tableScope<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>public void clearSortIndex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearSortIndex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>public void clearRanges()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearRanges()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>Deletes all ranges that are associated with the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースに関連付けられているすべての範囲を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source>public void linkFields(str parentField, str thisField, <ph id="ph1">\[</ph>str parentDatasourceName<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void linkFields(str parentField, str thisField, <ph id="ph1">\[</ph>str parentDatasourceName<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>public void addSelectionField(FieldId field, <ph id="ph1">\[</ph>SelectionField fieldType<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addSelectionField(FieldId field, <ph id="ph1">\[</ph>SelectionField fieldType<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source>Method addAllFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addAllFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source>tableName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tableName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source>Method addDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>Adds a data source that is embedded in this data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータ ソースに埋め込まれているデータ ソースを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>arg</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source>emptyFieldList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">emptyFieldList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>The new data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいデータ ソースを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>Top-level data sources are created by using the addDataSource method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最上位レベルのデータ ソースは、addDataSource メソッドを使用して作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source>Method addDynalink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addDynalink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source>dynamicFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dynamicFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source>dynamicField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dynamicField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>fieldArrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldArrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source>dynamicFieldArrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dynamicFieldArrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source>Method addForeignkeyRelation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addForeignkeyRelation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source>relatedTableRole</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">relatedTableRole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="875">
+          <source>parentDatasourceName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parentDatasourceName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="876">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="877">
+          <source>Method addGroupByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addGroupByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="878">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="879">
+          <source>fieldID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="880">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="881">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="882">
+          <source>Method addLink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addLink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="883">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="884">
+          <source>parentField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parentField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="885">
+          <source>thisField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">thisField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="886">
+          <source>parentDatasourceName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parentDatasourceName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="887">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="888">
+          <source>Method addOrderByAggregateField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addOrderByAggregateField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="889">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="890">
+          <source>fieldType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="891">
+          <source>fieldID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="892">
+          <source>direction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">direction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="893">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="894">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="895">
+          <source>Method addOrderByCalculationField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addOrderByCalculationField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="896">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="897">
+          <source>calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">計算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="898">
+          <source>direction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">direction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="899">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="900">
+          <source>Method addOrderByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addOrderByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="901">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="902">
+          <source>fieldID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="903">
+          <source>direction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">direction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="904">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="905">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="906">
+          <source>Method addRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="907">
+          <source>Adds a range to the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースに範囲を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="908">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="909">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="910">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="911">
+          <source>rangeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rangeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="912">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="913">
+          <source>A new range for the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースの新しい範囲。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="914">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="915">
+          <source>Ranges define the values that records from the data source's table must satisfy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">範囲は、データ ソースのテーブルのレコードが満たす必要がある値を定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="916">
+          <source>Several range values can exist for the same field in a particular data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いくつかの値の範囲は、特定のデータ ソース内の同じフィールドに存在することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="917">
+          <source>In this case, the values are included in the query if the record qualifies for any of the values that are supplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、レコードが提供される値のいずれかにが適用される場合、値はクエリに含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="918">
+          <source>When ranges are included for multiple fields, only records that satisfy the constraints that are supplied by both criteria are included.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のフィールドの範囲が含まれているときは、両方の条件によって提供される制約を満たすレコードだけが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="919">
+          <source>The constraints are specified in the value method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">制約は値のメソッドで指定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="920">
+          <source>Method addSortField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addSortField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="921">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="922">
+          <source>sortField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">sortField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="923">
+          <source>direction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">direction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="924">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="925">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="926">
+          <source>Method addSortIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addSortIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="927">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="928">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="929">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="930">
+          <source>Method allowAdd</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowAdd</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="931">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="932">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="933">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="934">
+          <source>Method applyFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド applyFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="935">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="936">
+          <source>filterValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">filterValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="937">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="938">
+          <source>Method autoHeader</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoHeader</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="939">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="940">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="941">
+          <source>orderNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">orderNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="942">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="943">
+          <source>Method autoHeaderDetailLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoHeaderDetailLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="944">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="945">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="946">
+          <source>orderNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">orderNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="947">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="948">
+          <source>Method autoSum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoSum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="949">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="950">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="951">
+          <source>orderNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">orderNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="952">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="953">
+          <source>Method autoSumDetailLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoSumDetailLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="954">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="955">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="956">
+          <source>orderNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">orderNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="957">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="958">
+          <source>Method changedNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="959">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="960">
+          <source>Method childDataSourceCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド childDataSourceCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="961">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="962">
+          <source>Method childDataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド childDataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="963">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="964">
+          <source>dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="965">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="966">
+          <source>Method company</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド company</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="967">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="968">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="969">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="970">
+          <source>Method concurrencyModel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド concurrencyModel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="971">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="972">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="973">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="974">
+          <source>Method dynalink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dynalink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="975">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="976">
+          <source>dynalinkNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dynalinkNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="977">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="978">
+          <source>Method dynalinkCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dynalinkCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="979">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="980">
+          <source>Method embedded</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド embedded</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="981">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="982">
+          <source>Method enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド enabled</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="983">
+          <source>Determines whether to enable or disable the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを有効または無効にするかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="984">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="985">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="986">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="987">
+          <source>true if the object is enabled; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが有効である場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="988">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="989">
+          <source>The enabled property enables controls to be enabled or disabled at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効になっているプロパティを使用すると、実行時にコントロールを有効または無効にできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="990">
+          <source>For example, you can disable objects that do not apply to the current state of the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、アプリケーションの現在の状態には適用されないオブジェクトを無効にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="991">
+          <source>You can also disable a control that is used only for display purposes, such as an error message, which provides read-only information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、読み取り専用情報を提供する、エラー メッセージなどの、表示のためにのみ使用されるコントロールを無効にすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="992">
+          <source>Method existsMeanOrExists</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド existsMeanOrExists</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="993">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="994">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="995">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="996">
+          <source>Method fetchMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fetchMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="997">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="998">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="999">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1000">
+          <source>Method fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1001">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1002">
+          <source>Method file</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド file</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1003">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1004">
+          <source>Method findRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド findRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1005">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1006">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1007">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1008">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1009">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1010">
+          <source>Method firstFast</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstFast</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1011">
+          <source>Determines whether to retrieve the first record from the query before the other records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他のレコードの前にクエリから最初のレコードを取得するかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1012">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1013">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1014">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1015">
+          <source>true if the first record is retrieved first; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初のレコードが最初に取得される場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1016">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1017">
+          <source>The firstFast property enables some database systems to optimize record retrieval, which improves performance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">firstFast プロパティは、一部のデータベース システムでレコードの取得を最適化できるため、パフォーマンスが向上します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1018">
+          <source>If the database does not support this property, it is ignored.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースはこのプロパティをサポートしていない場合は無視されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1019">
+          <source>Method firstOnly</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstOnly</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1020">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1021">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1022">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1023">
+          <source>Method getMostRestrictedQueryBuildRangeStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getMostRestrictedQueryBuildRangeStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1024">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1025">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1026">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1027">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1028">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1029">
+          <source>Method getNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1030">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1031">
+          <source>Method id</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド id</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1032">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1033">
+          <source>Method indexIsHint</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド indexIsHint</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1034">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1035">
+          <source>arg</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1036">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1037">
+          <source>Method isPartOfSubQueryInBaseQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isPartOfSubQueryInBaseQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1038">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1039">
+          <source>Method joined</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド joined</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1040">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1041">
+          <source>Method joinedDataSources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド joinedDataSources</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1042">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1043">
+          <source>Method joinMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド joinMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1044">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1045">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1046">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1047">
+          <source>Method label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド label</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1048">
+          <source>Gets or sets the label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1049">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1050">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1051">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1052">
+          <source>The current value of the label string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル文字列の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1053">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1054">
+          <source>The label determines which text is displayed in the control or adjacent to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1055">
+          <source>The label property value cannot exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルのプロパティ値は 250 文字を超えることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1056">
+          <source>Method level</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド level</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1057">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1058">
+          <source>Method link</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド link</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1059">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1060">
+          <source>associationNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">associationNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1061">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1062">
+          <source>Method linkCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド linkCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1063">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1064">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1065">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1066">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1067">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1068">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1069">
+          <source>The name that is used in code to identify an application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1070">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1071">
+          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1072">
+          <source>Begins with a letter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1073">
+          <source>Doesn't exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1074">
+          <source>Can include numbers and underscore characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1075">
+          <source>Cannot include punctuation or spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1076">
+          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, or classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1077">
+          <source>Method oneToOneDataSources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド oneToOneDataSources</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1078">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1079">
+          <source>Method orderMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド orderMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1080">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1081">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1082">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1083">
+          <source>Method parentDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド parentDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1084">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1085">
+          <source>Method policyContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド policyContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1086">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1087">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1088">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1089">
+          <source>Method range</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド range</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1090">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1091">
+          <source>rangeNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rangeNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1092">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1093">
+          <source>Method rangeCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rangeCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1094">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1095">
+          <source>Method rangeField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rangeField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1096">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1097">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1098">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1099">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1100">
+          <source>Method relations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド relations</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1101">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1102">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1103">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1104">
+          <source>Method selectionCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド selectionCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1105">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1106">
+          <source>Method selectWithRepeatableRead</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド selectWithRepeatableRead</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1107">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1108">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1109">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1110">
+          <source>Method sortDirection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sortDirection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1111">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1112">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1113">
+          <source>direction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">direction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1114">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1115">
+          <source>Method sortField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sortField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1116">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1117">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1118">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1119">
+          <source>Method sortFieldCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sortFieldCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1120">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1121">
+          <source>Method sortIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sortIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1122">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1123">
+          <source>indexNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">indexNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1124">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1125">
+          <source>Method sortIndexCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sortIndexCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1126">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1127">
+          <source>Method staticlink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド staticlink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1128">
+          <source>Returns a static Link object on the query’s data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリのデータ ソースで静的リンク オブジェクトを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1129">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1130">
+          <source>staticlinkNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">staticlinkNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1131">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1132">
+          <source>The static Link object at the <ph id="ph1">\_</ph>staticLinkNo index.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\_</ph>staticLinkNo インデックスの静的リンク オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1133">
+          <source>Method staticlinkCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド staticlinkCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1134">
+          <source>Gives the number of static links that are defined on the QueryBuildDataSource object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildDataSource オブジェクトに対して定義されている静的リンクの数が与えられます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1135">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1136">
+          <source>The number of static links that are defined on the QueryBuildDataSource object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildDataSource オブジェクトに対して定義されている静的リンクの数。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1137">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1138">
+          <source>Gets or sets the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているテーブル ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1139">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1140">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1141">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1142">
+          <source>The current value of the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられたテーブル ID の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1143">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1144">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1145">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1146">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1147">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1148">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1149">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1150">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1151">
+          <source>Method unionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1152">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1153">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1154">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1155">
+          <source>Method uniqueId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド uniqueId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1156">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1157">
+          <source>Method update</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド update</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1158">
+          <source>Determines whether the records fetched by this data source can be updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータ ソースによってフェッチされたレコードを更新できるかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1159">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1160">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1161">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1162">
+          <source>true if the records can be updated; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードを更新することができる場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1163">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1164">
+          <source>To update the records, start a separate transaction by using the ttsBegin and ttsCommit methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードを更新するには、ttsBegin および ttsCommit メソッドを使用して別のトランザクションを開始します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1165">
+          <source>Method clearLinks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearLinks</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1166">
+          <source>Method clearDynalinks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearDynalinks</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1167">
+          <source>Method clearRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1168">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1169">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1170">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1171">
+          <source>Method sortClear</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sortClear</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1172">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1173">
+          <source>Method addSelectionFieldWithAlias</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addSelectionFieldWithAlias</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1174">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1175">
+          <source>alias</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エイリアス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1176">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1177">
+          <source>fieldType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1178">
+          <source>Method addCalculationField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addCalculationField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1179">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1180">
+          <source>calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">計算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1181">
+          <source>alias</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エイリアス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1182">
+          <source>Method addForeignKeyDynalink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addForeignKeyDynalink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1183">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1184">
+          <source>dynamicFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dynamicFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1185">
+          <source>relatedRole</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">relatedRole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1186">
+          <source>Method addRelation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addRelation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1187">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1188">
+          <source>relation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1189">
+          <source>tableScope</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tableScope</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1190">
+          <source>Method clearSortIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearSortIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1191">
+          <source>Method clearRanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearRanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1192">
+          <source>Deletes all ranges that are associated with the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースに関連付けられているすべての範囲を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1193">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1194">
+          <source>The following example adds ranges and then removes them from a data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、範囲を追加し、データソースから範囲を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1195">
+          <source>Method linkFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド linkFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1196">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1197">
+          <source>parentField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parentField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1198">
+          <source>thisField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">thisField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1199">
+          <source>parentDatasourceName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parentDatasourceName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1200">
+          <source>Method addSelectionField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addSelectionField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1201">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1202">
+          <source>field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1203">
+          <source>fieldType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1204">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1205">
+          <source>Class QueryBuildDynalink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryBuildDynalink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1206">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1207">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1208">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1209">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1210">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1211">
+          <source>public Common cursor(<ph id="ph1">\[</ph>Common cursor<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Common cursor(<ph id="ph1">\[</ph>Common cursor<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1212">
+          <source>public QueryBuildDataSource dataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1213">
+          <source>public FieldId dynamicField(<ph id="ph1">\[</ph>FieldId dynamicField<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId dynamicField(<ph id="ph1">\[</ph>FieldId dynamicField<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1214">
+          <source>public FieldId field(<ph id="ph1">\[</ph>FieldId fieldId<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId field(<ph id="ph1">\[</ph>FieldId fieldId<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1215">
+          <source>public int fieldArrayIndex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fieldArrayIndex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1216">
+          <source>public FieldName fieldName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldName fieldName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1217">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1218">
+          <source>Method cursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド cursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1219">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1220">
+          <source>cursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1221">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1222">
+          <source>Method dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1223">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1224">
+          <source>Method dynamicField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dynamicField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1225">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1226">
+          <source>dynamicField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dynamicField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1227">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1228">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1229">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1230">
+          <source>fieldId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1231">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1232">
+          <source>Method fieldArrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldArrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1233">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1234">
+          <source>Method fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1235">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1236">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1237">
+          <source>Class QueryBuildFieldList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryBuildFieldList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1238">
+          <source>The QueryBuildFieldList class lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildFieldList クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1239">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1240">
+          <source>Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1241">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1242">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1243">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1244">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1245">
+          <source>public int addAllFields(TableName tableName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int addAllFields(TableName tableName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1246">
+          <source>public QueryBuildFieldList addField(FieldId fieldId, <ph id="ph1">\[</ph>SelectionField fieldType<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildFieldList addField(FieldId fieldId, <ph id="ph1">\[</ph>SelectionField fieldType<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>int arrayIndex<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1247">
+          <source>public int dynamic(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int dynamic(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1248">
+          <source>public FieldId field(int index)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId field(int index)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1249">
+          <source>public int fieldCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fieldCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1250">
+          <source>public SelectionField fieldKind(int index)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public SelectionField fieldKind(int index)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1251">
+          <source>public TableId tableSelector(int index)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId tableSelector(int index)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1252">
+          <source>public void clearFieldList()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clearFieldList()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1253">
+          <source>Method addAllFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addAllFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1254">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1255">
+          <source>tableName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tableName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1256">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1257">
+          <source>Method addField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1258">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1259">
+          <source>fieldId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1260">
+          <source>fieldType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fieldType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1261">
+          <source>arrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1262">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1263">
+          <source>Method dynamic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dynamic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1264">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1265">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1266">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1267">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1268">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1269">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1270">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1271">
+          <source>Method fieldCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1272">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1273">
+          <source>Method fieldKind</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldKind</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1274">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1275">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1276">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1277">
+          <source>Method tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1278">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1279">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1280">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1281">
+          <source>Method clearFieldList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clearFieldList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1282">
+          <source>Class QueryBuildLink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryBuildLink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1283">
+          <source>The QueryBuildLink class enables for the creating, reading, updating, and deleting of X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildLink クラスは、X++ コードおよびメタデータの作成、読み取り、更新、および削除を可能にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1284">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1285">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1286">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1287">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1288">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1289">
+          <source>public int delete()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int delete()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1290">
+          <source>public int field()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int field()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1291">
+          <source>public boolean incomplete()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean incomplete()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1292">
+          <source>public str joinRelation()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str joinRelation()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1293">
+          <source>public int relatedField()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int relatedField()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1294">
+          <source>public int relatedTable()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int relatedTable()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1295">
+          <source>public int table()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int table()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1296">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1297">
+          <source>Method delete</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド delete</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1298">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1299">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1300">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1301">
+          <source>Method incomplete</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド incomplete</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1302">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1303">
+          <source>Method joinRelation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド joinRelation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1304">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1305">
+          <source>Method relatedField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド relatedField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1306">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1307">
+          <source>Method relatedTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド relatedTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1308">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1309">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1310">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1311">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1312">
+          <source>Class QueryBuildRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryBuildRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1313">
+          <source>The QueryBuildRange class represents the ranges that define which records should be fetched from the data source in which the QueryBuildRange class is associated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildRange クラスは、QueryBuildRange クラスが関連付けられているデータ ソースからフェッチするレコードを定義する範囲を表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1314">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1315">
+          <source>The value property can be used to set the string that defines the range.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">value プロパティを使用して、範囲を定義する文字列を設定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1316">
+          <source>This class lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1317">
+          <source>Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1318">
+          <source>A particular data source can have any number of ranges.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のデータ ソースは、任意の数の範囲を持つことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1319">
+          <source>Multiple ranges are valid for the same data source field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の範囲は、同じデータ ソース フィールドに対して有効です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1320">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1321">
+          <source>The following basic example shows how to use the QueryBuildRange class to specify the range of interest for a specific data field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の基本的な例は、QueryBuildRange クラスを使用して特定のデータ フィールドの対象範囲を指定する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1322">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1323">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1324">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1325">
+          <source>public QueryBuildDataSource dataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1326">
+          <source>Returns the data source that was used to instantiate the QueryBuildRange object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildRange オブジェクトのインスタンスを作成するために使用されたデータソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1327">
+          <source>public boolean doesRangeNodeBelongToCompositeQuery()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean doesRangeNodeBelongToCompositeQuery()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1328">
+          <source>public boolean enabled(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean enabled(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1329">
+          <source>Determines whether to enable or disable the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを有効または無効にするかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1330">
+          <source>public FieldId field(<ph id="ph1">\[</ph>FieldId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId field(<ph id="ph1">\[</ph>FieldId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1331">
+          <source>Gets or sets the field ID associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているフィールド ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1332">
+          <source>public int fieldArrayIndex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fieldArrayIndex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1333">
+          <source>public FieldName fieldName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldName fieldName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1334">
+          <source>public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1335">
+          <source>Gets or sets the label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1336">
+          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1337">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1338">
+          <source>public str prompt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str prompt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1339">
+          <source>public QueryRangeType rangeType(<ph id="ph1">\[</ph>QueryRangeType rangeType<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryRangeType rangeType(<ph id="ph1">\[</ph>QueryRangeType rangeType<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1340">
+          <source>public int status(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int status(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1341">
+          <source>Gets or sets the status of an object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの状態を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1342">
+          <source>public TableId table(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId table(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1343">
+          <source>Gets or sets the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているテーブル ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1344">
+          <source>public TableId tableSelector(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId tableSelector(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1345">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1346">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1347">
+          <source>public int typeof()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int typeof()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1348">
+          <source>public boolean valid()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean valid()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1349">
+          <source>public str value(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1350">
+          <source>Gets or sets the value that queried records must match to be retrieved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得するために一致する必要がある照会されたレコードの値を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1351">
+          <source>public void associateRangeNodeToCompositeQuery()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void associateRangeNodeToCompositeQuery()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1352">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1353">
+          <source>Method dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1354">
+          <source>Returns the data source that was used to instantiate the QueryBuildRange object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildRange オブジェクトのインスタンスを作成するために使用されたデータソースを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1355">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1356">
+          <source>The data source that was used to instantiate the QueryBuildRange class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildRange クラスオブジェクトのインスタンスを作成するために使用されたデータソース。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1357">
+          <source>Method doesRangeNodeBelongToCompositeQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド doesRangeNodeBelongToCompositeQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1358">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1359">
+          <source>Method enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド enabled</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1360">
+          <source>Determines whether to enable or disable the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを有効または無効にするかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1361">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1362">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1363">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1364">
+          <source>true if the object is enabled; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが有効である場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1365">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1366">
+          <source>The enabled property enables controls to be enabled or disabled at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効になっているプロパティを使用すると、実行時にコントロールを有効または無効にできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1367">
+          <source>For example, you can disable objects that do not apply to the current state of the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、アプリケーションの現在の状態には適用されないオブジェクトを無効にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1368">
+          <source>You can also disable a control that is used only for display purposes, such as an error message, which provides read-only information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、読み取り専用情報を提供する、エラー メッセージなどの、表示のためにのみ使用されるコントロールを無効にすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1369">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1370">
+          <source>Gets or sets the field ID associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているフィールド ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1371">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1372">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1373">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1374">
+          <source>The current value of the field ID associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられたフィールド ID の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1375">
+          <source>Method fieldArrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldArrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1376">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1377">
+          <source>Method fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1378">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1379">
+          <source>Method label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド label</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1380">
+          <source>Gets or sets the label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1381">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1382">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1383">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1384">
+          <source>The current value of the label string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル文字列の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1385">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1386">
+          <source>The label determines which text is displayed in the control or adjacent to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1387">
+          <source>The label property value cannot exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルのプロパティ値は 250 文字を超えることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1388">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1389">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1390">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1391">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1392">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1393">
+          <source>The name that is used in code to identify an application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1394">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1395">
+          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1396">
+          <source>Begins with a letter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1397">
+          <source>Doesn't exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1398">
+          <source>Can include numbers and underscore characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1399">
+          <source>Cannot include punctuation or spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1400">
+          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, or classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1401">
+          <source>Method prompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド prompt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1402">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1403">
+          <source>Method rangeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rangeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1404">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1405">
+          <source>rangeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rangeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1406">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1407">
+          <source>Method status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド status</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1408">
+          <source>Gets or sets the status of an object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの状態を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1409">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1410">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1411">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1412">
+          <source>The current status of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの現在の状態</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1413">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1414">
+          <source>The following values are possible for the status:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステータスには次の値があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1415">
+          <source>0 – Status Open.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 - ステータス オープン。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1416">
+          <source>1 – Status Lock.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 - ステータス ロック。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1417">
+          <source>2 – Status Hide.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 - ステータスが非表示です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1418">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1419">
+          <source>Gets or sets the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているテーブル ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1420">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1421">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1422">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1423">
+          <source>The current value of the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられたテーブル ID の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1424">
+          <source>Method tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1425">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1426">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1427">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1428">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1429">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1430">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1431">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1432">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1433">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1434">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1435">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1436">
+          <source>Method typeof</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド typeof</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1437">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1438">
+          <source>Method valid</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド valid</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1439">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1440">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1441">
+          <source>Gets or sets the value that queried records must match to be retrieved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得するために一致する必要がある照会されたレコードの値を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1442">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1443">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1444">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1445">
+          <source>The string value for the range.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">範囲の文字列値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1446">
+          <source>Method associateRangeNodeToCompositeQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド associateRangeNodeToCompositeQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1447">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1448">
+          <source>Class QueryBuildStaticlink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryBuildStaticlink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1449">
+          <source>The QueryBuildStaticLink class provides the information about the static links that are defined on a QueryBuildDataSource class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildStaticLink クラスは、QueryBuildDataSource クラスで定義されている静的リンクに関する情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1450">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1451">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1452">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1453">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1454">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1455">
+          <source>public FieldId field()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId field()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1456">
+          <source>Provides the field information on which the static link is defined/</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的リンクが定義されているフィールド情報を提供します/</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1457">
+          <source>public AnyType value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public AnyType value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1458">
+          <source>Gets the value of the field on which the static link is defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的リンクが定義されているフィールドの値を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1459">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1460">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1461">
+          <source>Provides the field information on which the static link is defined/</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的リンクが定義されているフィールド情報を提供します/</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1462">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1463">
+          <source>The FieldId value of the field on which the static link is defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的リンクが定義されているフィールドの FieldId 値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1464">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1465">
+          <source>Gets the value of the field on which the static link is defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的リンクが定義されているフィールドの値を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1466">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1467">
+          <source>The value of the static link.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的リンクの値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1468">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1469">
+          <source>Class QueryFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1470">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1471">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1472">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1473">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1474">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1475">
+          <source>public QueryBuildDataSource dataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1476">
+          <source>public FieldName field()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldName field()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1477">
+          <source>public QueryRangeType rangeType(<ph id="ph1">\[</ph>QueryRangeType rangeType<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryRangeType rangeType(<ph id="ph1">\[</ph>QueryRangeType rangeType<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1478">
+          <source>public int status(<ph id="ph1">\[</ph>int status<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int status(<ph id="ph1">\[</ph>int status<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1479">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1480">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1481">
+          <source>public str value(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1482">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1483">
+          <source>Method dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1484">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1485">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1486">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1487">
+          <source>Method rangeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rangeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1488">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1489">
+          <source>rangeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">rangeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1490">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1491">
+          <source>Method status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド status</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1492">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1493">
+          <source>status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1494">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1495">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1496">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1497">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1498">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1499">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1500">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1501">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1502">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1503">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1504">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1505">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1506">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1507">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1508">
+          <source>Class QueryGroupByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryGroupByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1509">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1510">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1511">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1512">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1513">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1514">
+          <source>public boolean autoHeader(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoHeader(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1515">
+          <source>public int autoHeaderDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int autoHeaderDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1516">
+          <source>public boolean autoSum(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoSum(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1517">
+          <source>public int autoSumDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int autoSumDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1518">
+          <source>public QueryBuildDataSource dataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1519">
+          <source>public int fieldID()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fieldID()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1520">
+          <source>public TableId tableSelector(<ph id="ph1">\[</ph>TableId tableSelector<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId tableSelector(<ph id="ph1">\[</ph>TableId tableSelector<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1521">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1522">
+          <source>Method autoHeader</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoHeader</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1523">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1524">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1525">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1526">
+          <source>Method autoHeaderDetailLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoHeaderDetailLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1527">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1528">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1529">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1530">
+          <source>Method autoSum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoSum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1531">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1532">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1533">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1534">
+          <source>Method autoSumDetailLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoSumDetailLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1535">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1536">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1537">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1538">
+          <source>Method dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1539">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1540">
+          <source>Method fieldID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1541">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1542">
+          <source>Method tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1543">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1544">
+          <source>tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1545">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1546">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1547">
+          <source>Class QueryHavingFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryHavingFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1548">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1549">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1550">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1551">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1552">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1553">
+          <source>public AggregateFunction aggregateFunction()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public AggregateFunction aggregateFunction()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1554">
+          <source>public QueryBuildDataSource dataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1555">
+          <source>public boolean enabled(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean enabled(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1556">
+          <source>Determines whether to enable or disable the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを有効または無効にするかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1557">
+          <source>public FieldId field(<ph id="ph1">\[</ph>FieldId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId field(<ph id="ph1">\[</ph>FieldId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1558">
+          <source>Gets or sets the field ID associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているフィールド ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1559">
+          <source>public int fieldArrayIndex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fieldArrayIndex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1560">
+          <source>public FieldName fieldName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldName fieldName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1561">
+          <source>public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str label(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1562">
+          <source>Gets or sets the label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1563">
+          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1564">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1565">
+          <source>public str prompt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str prompt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1566">
+          <source>public int status(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int status(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1567">
+          <source>Gets or sets the status of an object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの状態を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1568">
+          <source>public TableId table(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId table(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1569">
+          <source>Gets or sets the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているテーブル ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1570">
+          <source>public TableId tableSelector(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId tableSelector(<ph id="ph1">\[</ph>TableId value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1571">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1572">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1573">
+          <source>public int typeof()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int typeof()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1574">
+          <source>public boolean valid()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean valid()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1575">
+          <source>public str value(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1576">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1577">
+          <source>Method aggregateFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド aggregateFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1578">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1579">
+          <source>Method dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1580">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1581">
+          <source>Method enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド enabled</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1582">
+          <source>Determines whether to enable or disable the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを有効または無効にするかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1583">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1584">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1585">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1586">
+          <source>true if the object is enabled; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが有効である場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1587">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1588">
+          <source>The enabled property enables controls to be enabled or disabled at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効になっているプロパティを使用すると、実行時にコントロールを有効または無効にできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1589">
+          <source>For example, you can disable objects that do not apply to the current state of the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、アプリケーションの現在の状態には適用されないオブジェクトを無効にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1590">
+          <source>You can also disable a control that is used only for display purposes, such as an error message, which provides read-only information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、読み取り専用情報を提供する、エラー メッセージなどの、表示のためにのみ使用されるコントロールを無効にすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1591">
+          <source>Method field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1592">
+          <source>Gets or sets the field ID associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているフィールド ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1593">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1594">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1595">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1596">
+          <source>The current value of the field ID associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられたフィールド ID の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1597">
+          <source>Method fieldArrayIndex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldArrayIndex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1598">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1599">
+          <source>Method fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1600">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1601">
+          <source>Method label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド label</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1602">
+          <source>Gets or sets the label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベルを取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1603">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1604">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1605">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1606">
+          <source>The current value of the label string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル文字列の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1607">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1608">
+          <source>The label determines which text is displayed in the control or adjacent to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルは、コントロール内に表示されているテキストまたはそれに隣接するテキストを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1609">
+          <source>The label property value cannot exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルのプロパティ値は 250 文字を超えることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1610">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1611">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1612">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1613">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1614">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1615">
+          <source>The name that is used in code to identify an application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1616">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1617">
+          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1618">
+          <source>Begins with a letter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1619">
+          <source>Doesn't exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1620">
+          <source>Can include numbers and underscore characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1621">
+          <source>Cannot include punctuation or spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1622">
+          <source>Tables cannot have the same name as other public objects, such as extended data types, base enums, or classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1623">
+          <source>Method prompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド prompt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1624">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1625">
+          <source>Method status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド status</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1626">
+          <source>Gets or sets the status of an object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの状態を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1627">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1628">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1629">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1630">
+          <source>The current value of the status of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのステータスの現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1631">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1632">
+          <source>Gets or sets the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられているテーブル ID を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1633">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1634">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1635">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1636">
+          <source>The current value of the table ID that is associated with the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトに関連付けられたテーブル ID の現在の値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1637">
+          <source>Method tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1638">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1639">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1640">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1641">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1642">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1643">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1644">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1645">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1646">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1647">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1648">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1649">
+          <source>Method typeof</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド typeof</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1650">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1651">
+          <source>Method valid</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド valid</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1652">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1653">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1654">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1655">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1656">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1657">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1658">
+          <source>Class QueryOrderByField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryOrderByField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1659">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1660">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1661">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1662">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1663">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1664">
+          <source>public boolean autoHeader(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoHeader(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1665">
+          <source>public int autoHeaderDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int autoHeaderDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1666">
+          <source>public boolean autoSum(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean autoSum(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1667">
+          <source>public int autoSumDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int autoSumDetailLevel(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1668">
+          <source>public QueryBuildDataSource dataSource()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryBuildDataSource dataSource()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1669">
+          <source>public SortOrder direction()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public SortOrder direction()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1670">
+          <source>public int fieldID()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fieldID()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1671">
+          <source>public TableId tableSelector(<ph id="ph1">\[</ph>TableId tableSelector<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId tableSelector(<ph id="ph1">\[</ph>TableId tableSelector<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1672">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1673">
+          <source>Method autoHeader</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoHeader</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1674">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1675">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1676">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1677">
+          <source>Method autoHeaderDetailLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoHeaderDetailLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1678">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1679">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1680">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1681">
+          <source>Method autoSum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoSum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1682">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1683">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1684">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1685">
+          <source>Method autoSumDetailLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド autoSumDetailLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1686">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1687">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1688">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1689">
+          <source>Method dataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1690">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1691">
+          <source>Method direction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド direction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1692">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1693">
+          <source>Method fieldID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1694">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1695">
+          <source>Method tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1696">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1697">
+          <source>tableSelector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tableSelector</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1698">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1699">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1700">
+          <source>Class QueryRun</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス QueryRun</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1701">
+          <source>The QueryRun class traverses tables in the database, fetches records that satisfy constraints that are given by the user, and helps to gather such constraints from user input.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun クラスは、データベース内のテーブルをスキャンし、ユーザーによって与えられている制約を満たすレコードをフェッチして、ユーザー入力からこのような制約を収集するのに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1702">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1703">
+          <source>QueryRun objects are used to traverse tables in the database and fetch records that satisfy the constraints that are given by the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun オブジェクトは、データベース内のテーブルをスキャンし、ユーザーが指定した制約を満たすレコードをフェッチするために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1704">
+          <source>A QueryRun object may interact with the user to let the user enter such constraints.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun オブジェクトは、ユーザーがそのような制限を入力できるように、ユーザーと通信することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1705">
+          <source>Queries are used internally by reports to delineate and fetch the data to be presented in the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリは、レポートに表示するデータを記述してフェッチするためにレポートにより内部的に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1706">
+          <source>A QueryRun object relies on a Query object to define the structure of the query (for example, which tables are searched and how the records are sorted).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun オブジェクトは、クエリ オブジェクト を使用してクエリの構造を定義します (たとえば、どのテーブルを検索するか、レコードをどのように並び替えるかなど)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1707">
+          <source>A QueryRun object defines the dynamic behavior of the query, whereas a Query object defines the static characteristics of the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun オブジェクトは、クエリの動的動作を定義しますが、クエリ オブジェクトはクエリの静的特性を定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1708">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1709">
+          <source>In the following example, it is assumed that there is a query named Customer in the Finance and Operations Application Object Tree (AOT), and that it has one data source, the CustTable table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、Finance and Operations のアプリケーション オブジェクト ツリー (AOT) での顧客という名前のクエリがあり、そこに 1 つのデータ ソース CustTable テーブルがあると見なされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1710">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1711">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1712">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1713">
+          <source>public boolean allowCheck(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean allowCheck(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1714">
+          <source>public boolean allowCrossCompany(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean allowCrossCompany(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1715">
+          <source>public boolean canPage(<ph id="ph1">\[</ph>boolean skipOrderByCheck<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean throwIfNotPagable<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean isValuePaging<ph id="ph6">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean canPage(<ph id="ph1">\[</ph>boolean skipOrderByCheck<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean throwIfNotPagable<ph id="ph4">\]</ph>, <ph id="ph5">\[</ph>boolean isValuePaging<ph id="ph6">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1716">
+          <source>public boolean changed(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean changed(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1717">
+          <source>Determines whether the specified data source has fetched a new value since the last call to the QueryRun.next method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun.next メソッドの最後の呼び出し以降に、指定されたデータ ソースが新しい値をフェッチしたかどうかを判断します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1718">
+          <source>public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1719">
+          <source>Gets or sets the name of the user who last changed the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1720">
+          <source>public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date changedDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1721">
+          <source>Gets or sets the date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1722">
+          <source>public boolean changedNo(int dataSourceNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean changedNo(int dataSourceNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1723">
+          <source>public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str changedTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1724">
+          <source>Gets or sets the time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1725">
+          <source>public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str createdBy(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1726">
+          <source>Gets or sets the name of the user who created the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1727">
+          <source>public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date creationDate(<ph id="ph1">\[</ph>Date value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1728">
+          <source>Gets or sets the date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1729">
+          <source>public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str creationTime(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1730">
+          <source>public str description(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str description(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1731">
+          <source>public boolean equal(Object obj)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean equal(Object obj)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1732">
+          <source>Determines whether the specified object is equal to the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1733">
+          <source>public str form(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str form(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1734">
+          <source>public Common get(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Common get(TableId table, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1735">
+          <source>Retrieves the record fetched by the previous call to next method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のメソッドの前の呼び出しによってフェッチされたレコードを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1736">
+          <source>public System.Type getImpExpDataContractType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public System.Type getImpExpDataContractType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1737">
+          <source>public Common getNo(int dataSourceNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Common getNo(int dataSourceNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1738">
+          <source>Retrieves the record fetched by the previous call to QueryRun.next Method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun.next メソッドの前の呼び出しによってフェッチされたレコードを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1739">
+          <source>public boolean importable()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean importable()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1740">
+          <source>public boolean interactive(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean interactive(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1741">
+          <source>public boolean isPositionPagingEnabled()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isPositionPagingEnabled()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1742">
+          <source>public boolean isQueryTimedout()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isQueryTimedout()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1743">
+          <source>public boolean isValueBasedPagingEnabled()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isValueBasedPagingEnabled()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1744">
+          <source>public int literals(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int literals(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1745">
+          <source>public Guid loadCsv(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid loadCsv(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1746">
+          <source>public Guid loadXml(str fileName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid loadXml(str fileName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1747">
+          <source>public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1748">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1749">
+          <source>public QueryRun newObject(AnyType source)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public QueryRun newObject(AnyType source)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1750">
+          <source>public boolean next()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean next()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1751">
+          <source>Retrieves the next record from the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリから次のレコードを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1752">
+          <source>public int nextUniqueId(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int nextUniqueId(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1753">
+          <source>public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Guid origin(<ph id="ph1">\[</ph>Guid value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1754">
+          <source>public container pack(<ph id="ph1">\[</ph>boolean doCheck<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container pack(<ph id="ph1">\[</ph>boolean doCheck<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1755">
+          <source>public boolean prompt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean prompt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1756">
+          <source>Presents, to the user, the options for defining the records to be fetched by the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリによってフェッチするレコードを定義するためのオプションをユーザーに表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1757">
+          <source>public Query query(<ph id="ph1">\[</ph>Query query<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Query query(<ph id="ph1">\[</ph>Query query<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1758">
+          <source>public int queryType(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int queryType(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1759">
+          <source>public boolean recordLevelSecurity(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean recordLevelSecurity(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1760">
+          <source>public ReportRun report()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ReportRun report()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1761">
+          <source>public ReportRun reportRun()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ReportRun reportRun()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1762">
+          <source>public boolean saved()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean saved()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1763">
+          <source>public boolean saveUserSetup(<ph id="ph1">\[</ph>boolean saveIt<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean saveUserSetup(<ph id="ph1">\[</ph>boolean saveIt<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1764">
+          <source>Saves the user setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー設定を保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1765">
+          <source>public boolean searchable(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean searchable(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1766">
+          <source>public boolean setCursor(Common record, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean setCursor(Common record, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1767">
+          <source>public boolean setRecord(Common record, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean setRecord(Common record, <ph id="ph1">\[</ph>int occurrence<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1768">
+          <source>public str title(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str title(<ph id="ph1">\[</ph>str value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1769">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1770">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1771">
+          <source>public boolean userUpdate(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean userUpdate(<ph id="ph1">\[</ph>boolean value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1772">
+          <source>public int version(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int version(<ph id="ph1">\[</ph>int value<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1773">
+          <source>::public static int getQueryRowCount(Query query, int maxRows)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int getQueryRowCount(Query query, int maxRows)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1774">
+          <source>::public static int runAndPopulate(Query sourceRuery, Common targetTable, Map queryAliasesAndTargetColumnsMap)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static int runAndPopulate(Query sourceRuery, Common targetTable, Map queryAliasesAndTargetColumnsMap)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1775">
+          <source>public void run()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void run()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1776">
+          <source>Opens a form used to obtain information about the query from the user, and fetches the matching records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーからクエリに関する情報を取得するために使用されるフォームを開いて、一致するレコードをフェッチします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1777">
+          <source>public void new(AnyType source)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(AnyType source)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1778">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1779">
+          <source>public void addPageRange(<ph id="ph1">\[</ph>Int64 startingPosition<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>Int64 numberOfRecordsToFetch<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void addPageRange(<ph id="ph1">\[</ph>Int64 startingPosition<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>Int64 numberOfRecordsToFetch<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1780">
+          <source>public void reset()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void reset()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1781">
+          <source>public void setImportSession(Guid importSession)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setImportSession(Guid importSession)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1782">
+          <source>public void setQuerytimeout(int seconds, <ph id="ph1">\[</ph>boolean raiseException<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setQuerytimeout(int seconds, <ph id="ph1">\[</ph>boolean raiseException<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1783">
+          <source>public void init()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void init()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1784">
+          <source>public void enablePositionPaging(<ph id="ph1">\[</ph>boolean enabled<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void enablePositionPaging(<ph id="ph1">\[</ph>boolean enabled<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1785">
+          <source>public void shred(Guid importSession)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void shred(Guid importSession)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1786">
+          <source>public void enableValueBasedPaging(<ph id="ph1">\[</ph>boolean enable<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void enableValueBasedPaging(<ph id="ph1">\[</ph>boolean enable<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1787">
+          <source>public void bulkNext(<ph id="ph1">\[</ph>boolean fetchAllData<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void bulkNext(<ph id="ph1">\[</ph>boolean fetchAllData<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1788">
+          <source>public void applyValueBasedPaging(<ph id="ph1">\[</ph>Common sourceCursor<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean isForward<ph id="ph4">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void applyValueBasedPaging(<ph id="ph1">\[</ph>Common sourceCursor<ph id="ph2">\]</ph>, <ph id="ph3">\[</ph>boolean isForward<ph id="ph4">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1789">
+          <source>Method allowCheck</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowCheck</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1790">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1791">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1792">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1793">
+          <source>Method allowCrossCompany</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド allowCrossCompany</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1794">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1795">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1796">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1797">
+          <source>Method canPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド canPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1798">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1799">
+          <source>skipOrderByCheck</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">skipOrderByCheck</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1800">
+          <source>throwIfNotPagable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">throwIfNotPagable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1801">
+          <source>isValuePaging</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isValuePaging</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1802">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1803">
+          <source>Method changed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1804">
+          <source>Determines whether the specified data source has fetched a new value since the last call to the QueryRun.next method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun.next メソッドの最後の呼び出し以降に、指定されたデータ ソースが新しい値をフェッチしたかどうかを判断します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1805">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1806">
+          <source>table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1807">
+          <source>The data source to check; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">確認するデータソース (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1808">
+          <source>If more than one data source is assigned to a given table, this argument can be used to determine which data source to check.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つ以上のデータ ソースが指定されたテーブルに割り当てられている場合、この引数が確認するデータ ソースを決定するために使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1809">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1810">
+          <source>The data source to check; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">確認するデータソース (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1811">
+          <source>If more than one data source is assigned to a given table, this argument can be used to determine which data source to check.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つ以上のデータ ソースが指定されたテーブルに割り当てられている場合、この引数が確認するデータ ソースを決定するために使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1812">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1813">
+          <source>true if the specified data source has changed since the last call to QueryRun.next; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun.next に対する最後の呼び出し後に指定データ ソースが変更された場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1814">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1815">
+          <source>This method is useful when data sources are hierarchically structured.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、データ ソースが階層構造になっている場合に便利です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1816">
+          <source>A more embedded data source may change many times (such as the customer transactions).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">埋め込みデータ ソースは、何回でも変更できます (顧客トランザクションなど)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1817">
+          <source>This occurs every time that a less embedded data source (such as the customer table) fetches a new record (another customer).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、埋め込まれていないデータソース (顧客テーブルなど) が新しいレコード (別の顧客) をフェッチするたびに発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1818">
+          <source>The changedNo method can be used instead of this function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数の代わりに changedNo メソッドを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1819">
+          <source>Method changedBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1820">
+          <source>Gets or sets the name of the user who last changed the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを最後に変更したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1821">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1822">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1823">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1824">
+          <source>The name of the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1825">
+          <source>Method changedDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1826">
+          <source>Gets or sets the date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1827">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1828">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1829">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1830">
+          <source>The date an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された日付。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1831">
+          <source>Method changedNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1832">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1833">
+          <source>dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1834">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1835">
+          <source>Method changedTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド changedTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1836">
+          <source>Gets or sets the time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時刻を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1837">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1838">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1839">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1840">
+          <source>The time an application object was last changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが最後に変更された時間。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1841">
+          <source>Method createdBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createdBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1842">
+          <source>Gets or sets the name of the user who created the application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを作成したユーザーの名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1843">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1844">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1845">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1846">
+          <source>The name of the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1847">
+          <source>Method creationDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1848">
+          <source>Gets or sets the date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1849">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1850">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1851">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1852">
+          <source>The date an application object was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトが作成された日付。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1853">
+          <source>Method creationTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド creationTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1854">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1855">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1856">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1857">
+          <source>Method description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1858">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1859">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1860">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1861">
+          <source>Method equal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド equal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1862">
+          <source>Determines whether the specified object is equal to the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1863">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1864">
+          <source>obj</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">obj</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1865">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1866">
+          <source>true if the specified object is equal to the current object; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したオブジェクトが現在のオブジェクトと等しい場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1867">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1868">
+          <source>The default implementation of the Object::equal method supports only reference equality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1869">
+          <source>However, derived classes can override the Object::equal method to support value equality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドをオーバーライドできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1870">
+          <source>Method form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド form</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1871">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1872">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1873">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1874">
+          <source>Method get</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド get</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1875">
+          <source>Retrieves the record fetched by the previous call to next method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のメソッドの前の呼び出しによってフェッチされたレコードを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1876">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1877">
+          <source>table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1878">
+          <source>The data source to be addressed; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレス指定されるデータソース (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1879">
+          <source>The number of the data source with the given table; 1-based.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルを持つデータ ソースの番号。1 ベース。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1880">
+          <source>If more than one data source has the same table assigned to it, this (optional) parameter can be used to specify which one is to be addressed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同じテーブルに割り当てられたデータ ソースが 1 つ以上ある場合は、この (オプションの) パラメーターを使用して、どのパラメーターを指定するかを指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1881">
+          <source>It specifies the number of the data source with the given table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルを持つデータ ソースの数を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1882">
+          <source>Thus, if the CustTable table is assigned to two data sources, and the second data source is required, this argument should have the value 2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、CustTable テーブルが 2 つのデータ ソースに割り当てられ、2 番目のデータ ソースが必要な場合、この引数は 2 の値である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1883">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1884">
+          <source>The data source to be addressed; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレス指定されるデータソース (オプション)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1885">
+          <source>The number of the data source with the given table; 1-based.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルを持つデータ ソースの番号。1 ベース。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1886">
+          <source>If more than one data source has the same table assigned to it, this (optional) parameter can be used to specify which one is to be addressed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同じテーブルに割り当てられたデータ ソースが 1 つ以上ある場合は、この (オプションの) パラメーターを使用して、どのパラメーターを指定するかを指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1887">
+          <source>It specifies the number of the data source with the given table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたテーブルを持つデータ ソースの数を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1888">
+          <source>Thus, if the CustTable table is assigned to two data sources, and the second data source is required, this argument should have the value 2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、CustTable テーブルが 2 つのデータ ソースに割り当てられ、2 番目のデータ ソースが必要な場合、この引数は 2 の値である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1889">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1890">
+          <source>Returns the record fetched from the data source identified by the arguments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">引数で識別されるデータ ソースからフェッチされたレコードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1891">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1892">
+          <source>The data source from which to retrieve the record is specified by the table assigned to the data source and by an optional parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードを取得するデータ ソースは、データ ソースに割り当てられたテーブルとオプションのパラメーターによって指定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1893">
+          <source>Instead of supplying the table (and optional parameter), you can use the getNo method, which takes the data source number as an argument.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル (およびオプションのパラメーター) を指定するのではなく、getNo メソッドを使用して、データ ソースの数を引数として取得できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1894">
+          <source>Method getImpExpDataContractType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getImpExpDataContractType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1895">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1896">
+          <source>Method getNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1897">
+          <source>Retrieves the record fetched by the previous call to QueryRun.next Method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun.next メソッドの前の呼び出しによってフェッチされたレコードを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1898">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1899">
+          <source>dataSourceNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataSourceNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1900">
+          <source>The number of the data source from which to get the currently selected record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在選択されているレコードを取得する元のデータ ソースの番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1901">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1902">
+          <source>Returns the record fetched for the data source identified by the argument.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">引数で識別されるデータ ソースのフェッチされたレコードを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1903">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1904">
+          <source>The data source from which to retrieve the record is specified by the number of the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードを取り出すデータ ソースは、データ ソースの番号で指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1905">
+          <source>The data sources are counted consecutively, starting from 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データソースは、1 から順にカウントされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1906">
+          <source>The QueryRun.get Method method can be used instead; that method is supplied with the table (and an optional parameter), that defines the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに QueryRun.get メソッドを使用できます。このメソッドは、データ ソースを定義するテーブル (およびオプション パラメーター) を使用して指定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1907">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1908">
+          <source>Method importable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド importable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1909">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1910">
+          <source>Method interactive</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド interactive</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1911">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1912">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1913">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1914">
+          <source>Method isPositionPagingEnabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isPositionPagingEnabled</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1915">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1916">
+          <source>Method isQueryTimedout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isQueryTimedout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1917">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1918">
+          <source>Method isValueBasedPagingEnabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isValueBasedPagingEnabled</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1919">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1920">
+          <source>Method literals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド literals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1921">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1922">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1923">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1924">
+          <source>Method loadCsv</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド loadCsv</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1925">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1926">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1927">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1928">
+          <source>Method loadXml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド loadXml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1929">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1930">
+          <source>fileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1931">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1932">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1933">
+          <source>Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム、レポート、テーブル、クエリ、または別の Finance and Operations アプリケーション オブジェクトを識別するためのコードで使用される名前を取得または設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1934">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1935">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1936">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1937">
+          <source>The name that is used in code to identify an application object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクトを識別するためにコードで使用される名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1938">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1939">
+          <source>The name property value of an object must meet the following criteria to avoid code conflicts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの名前プロパティ値は、コードの競合を避けるために、次の基準を満たしている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1940">
+          <source>Begins with a letter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字で始めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1941">
+          <source>Doesn't exceed 250 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">250 文字を超えないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1942">
+          <source>Can include numbers and underscore characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数字とアンダースコア文字を含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1943">
+          <source>Cannot include punctuation or spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">句読点やスペースを含めることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1944">
+          <source>Tables cannot have the same name as other public objects, such as extended data types, base enumerations, or classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、拡張データ型、基本列挙型、クラスなどの他のパブリック オブジェクトと同じ名前を持つことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1945">
+          <source>Method newObject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド newObject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1946">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1947">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1948">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1949">
+          <source>Method next</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド next</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1950">
+          <source>Retrieves the next record from the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリから次のレコードを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1951">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1952">
+          <source>true if the next record is available and can be fetched with the getNo method or get method; false if no there are no more records that satisfy the constraint set up in the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のレコードが利用可能で getNo メソッドまたは get メソッドで取得することができる場合は true。クエリ内に設定された制約を満たすレコードがそれ以上存在しない場合は false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1953">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1954">
+          <source>The changed method or changedNo method can be used to check whether the record from the given data source has changed since the previous call to the next method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更されたメソッドまたは changedNo メソッドを使用して、指定されたデータ ソースのレコードが前回の次のメソッド呼び出しから変更されたかどうかを確認できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1955">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1956">
+          <source>Method nextUniqueId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextUniqueId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1957">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1958">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1959">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1960">
+          <source>Method origin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド origin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1961">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1962">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1963">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1964">
+          <source>Method pack</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド pack</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1965">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1966">
+          <source>doCheck</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">doCheck</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1967">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1968">
+          <source>Method prompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド prompt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1969">
+          <source>Presents, to the user, the options for defining the records to be fetched by the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリによってフェッチするレコードを定義するためのオプションをユーザーに表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1970">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1971">
+          <source>true if the user clicked OK and the search is to continue; false if the user clicked Cancel to stop the search.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが OK をクリックして検索が続行される場合は true。ユーザーがキャンセルをクリックして検索を停止した場合は false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1972">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1973">
+          <source>The user is presented with a form to give ranges that define constraints to be fulfilled by the fetched records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーには、フェッチされたレコードによって実行される制約を定義する範囲を与えるためのフォームが提示される。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1974">
+          <source>Or the user may add new fields to delimit, change the sorting, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、ユーザーは新しいフィールドを追加し、区切ったり、変更したり、並べ替えたりすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1975">
+          <source>This method can be overloaded to prompt the user in an application-defined way instead of in through the predefined query form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドをオーバーロードすると、事前定義されたクエリ フォームではなく、アプリケーション定義の方法でユーザーにプロンプトを表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1976">
+          <source>Or this method can be overloaded to avoid giving the user control over which records are fetched.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、この方法は、フェッチされるレコードをユーザーがコントロールできないように、オーバーロードされることがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1977">
+          <source>To produce these results, do not call the inherited method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの結果を生成するには、継承したメソッドを呼び出さないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1978">
+          <source>In any case, the function should return true if the query is to continue, and false otherwise.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いずれの場合でも、関数はクエリが続行する場合は true、それ以外の場合は false を返す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1979">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1980">
+          <source>Method query</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド query</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1981">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1982">
+          <source>query</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1983">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1984">
+          <source>Method queryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド queryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1985">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1986">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1987">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1988">
+          <source>Method recordLevelSecurity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド recordLevelSecurity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1989">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1990">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1991">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1992">
+          <source>Method report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド report</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1993">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1994">
+          <source>Method reportRun</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド reportRun</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1995">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1996">
+          <source>Method saved</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド saved</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1997">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1998">
+          <source>Method saveUserSetup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド saveUserSetup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1999">
+          <source>Saves the user setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー設定を保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2000">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2001">
+          <source>saveIt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">saveIt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2002">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2003">
+          <source>true if the setup was successfully saved; otherwise false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定が正常に保存された場合は true。それ以外の場合は false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2004">
+          <source>Method searchable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド searchable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2005">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2006">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2007">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2008">
+          <source>Method setCursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setCursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2009">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2010">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2011">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2012">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2013">
+          <source>Method setRecord</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setRecord</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2014">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2015">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2016">
+          <source>occurrence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">occurrence</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2017">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2018">
+          <source>Method title</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド title</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2019">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2020">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2021">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2022">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2023">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2024">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2025">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2026">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2027">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2028">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2029">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2030">
+          <source>Method userUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド userUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2031">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2032">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2033">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2034">
+          <source>Method version</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド version</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2035">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2036">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2037">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2038">
+          <source>Method getQueryRowCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getQueryRowCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2039">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2040">
+          <source>query</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2041">
+          <source>maxRows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">maxRows</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2042">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2043">
+          <source>Method runAndPopulate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド runAndPopulate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2044">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2045">
+          <source>sourceRuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">sourceRuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2046">
+          <source>targetTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">targetTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2047">
+          <source>queryAliasesAndTargetColumnsMap</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">queryAliasesAndTargetColumnsMap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2048">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2049">
+          <source>Method run</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド run</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2050">
+          <source>Opens a form used to obtain information about the query from the user, and fetches the matching records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーからクエリに関する情報を取得するために使用されるフォームを開いて、一致するレコードをフェッチします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2051">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2052">
+          <source>Running the query will find the records that satisfy the constraints entered by the user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリを実行すると、ユーザーによって入力された制約を満たすレコードが検索されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2053">
+          <source>However, running the query in this manner has no side effects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、この方法でのクエリの実行には副作用がありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2054">
+          <source>In order to be useful, one or more of the inherited methods must be overloaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">扱いやすくするために、1 つ以上の継承されたメソッドをオーバーロードする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2055">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2056">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2057">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2058">
+          <source>source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2059">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2060">
+          <source>When you pass an instance of the Query class into this constructor of the QueryRun class, a copy of the Query object is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ クラスのインスタンスを QueryRun クラスのコンストラクターに渡すと、クエリ オブジェクトのコピーが作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2061">
+          <source>Changes that are made to this copy of the Query object do not affect the original Query object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクエリ オブジェクト のコピーに加えられた変更は、元のクエリ オブジェクトには影響しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2062">
+          <source>Method addPageRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド addPageRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2063">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2064">
+          <source>startingPosition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">startingPosition</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2065">
+          <source>numberOfRecordsToFetch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">numberOfRecordsToFetch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2066">
+          <source>Method reset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド reset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2067">
+          <source>Method setImportSession</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setImportSession</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2068">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2069">
+          <source>importSession</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">importSession</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2070">
+          <source>Method setQuerytimeout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setQuerytimeout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2071">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2072">
+          <source>seconds</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> 秒</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2073">
+          <source>raiseException</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">raiseException</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2074">
+          <source>Method init</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド init</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2075">
+          <source>Method enablePositionPaging</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド enablePositionPaging</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2076">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2077">
+          <source>enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2078">
+          <source>Method shred</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド shred</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2079">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2080">
+          <source>importSession</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">importSession</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2081">
+          <source>Method enableValueBasedPaging</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド enableValueBasedPaging</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2082">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2083">
+          <source>enable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2084">
+          <source>Method bulkNext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド bulkNext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2085">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2086">
+          <source>fetchAllData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fetchAllData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2087">
+          <source>Method applyValueBasedPaging</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド applyValueBasedPaging</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2088">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2089">
+          <source>sourceCursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">sourceCursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="2090">
+          <source>isForward</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isForward</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

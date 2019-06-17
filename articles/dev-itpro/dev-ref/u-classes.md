@@ -1,342 +1,423 @@
----
-title: U クラス
-description: 文字 U で始まるシステム API クラス。
-author: RobinARH
-manager: AnnBe
-ms.date: 01/14/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 51691
-ms.assetid: 92bfbb9c-4f45-464a-8ccb-71fb227780fe
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73658479ac9fdb72de0fc9f2cd82c0f081975af7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537003"
----
-# <a name="u-classes"></a><span data-ttu-id="04114-103">U クラス</span><span class="sxs-lookup"><span data-stu-id="04114-103">U classes</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="04114-104">文字 U で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="04114-104">System API classes that start with the letter U.</span></span>
-
-<a name="class-unitofwork"></a><span data-ttu-id="04114-105">クラス UnitofWork</span><span class="sxs-lookup"><span data-stu-id="04114-105">Class UnitofWork</span></span>
-----------------
-
-    class UnitofWork extends Object
-
-### <a name="remarks"></a><span data-ttu-id="04114-106">備考</span><span class="sxs-lookup"><span data-stu-id="04114-106">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="04114-107">例</span><span class="sxs-lookup"><span data-stu-id="04114-107">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="04114-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="04114-108">Methods</span></span>
-
-| <span data-ttu-id="04114-109">方法</span><span class="sxs-lookup"><span data-stu-id="04114-109">Method</span></span>                                                       | <span data-ttu-id="04114-110">説明</span><span class="sxs-lookup"><span data-stu-id="04114-110">Description</span></span>                                         |
-|--------------------------------------------------------------|-----------------------------------------------------|
-| <span data-ttu-id="04114-111">public boolean getByKey(Common record)</span><span class="sxs-lookup"><span data-stu-id="04114-111">public boolean getByKey(Common record)</span></span>                       |                                                     |
-| <span data-ttu-id="04114-112">public void updateonSaveChanges(Common record)</span><span class="sxs-lookup"><span data-stu-id="04114-112">public void updateonSaveChanges(Common record)</span></span>               |                                                     |
-| <span data-ttu-id="04114-113">public void saveChanges(\[UserConnection user\_connection\])</span><span class="sxs-lookup"><span data-stu-id="04114-113">public void saveChanges(\[UserConnection user\_connection\])</span></span> |                                                     |
-| <span data-ttu-id="04114-114">public void deleteonSaveChanges(Common record)</span><span class="sxs-lookup"><span data-stu-id="04114-114">public void deleteonSaveChanges(Common record)</span></span>               |                                                     |
-| <span data-ttu-id="04114-115">public void insertonSaveChanges(Common record)</span><span class="sxs-lookup"><span data-stu-id="04114-115">public void insertonSaveChanges(Common record)</span></span>               |                                                     |
-| <span data-ttu-id="04114-116">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="04114-116">public void finalize()</span></span>                                       |                                                     |
-| <span data-ttu-id="04114-117">public void new()</span><span class="sxs-lookup"><span data-stu-id="04114-117">public void new()</span></span>                                            | <span data-ttu-id="04114-118">UnitofWork クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="04114-118">Initializes a new instance of the UnitofWork class.</span></span> |
-| <span data-ttu-id="04114-119">public void clear()</span><span class="sxs-lookup"><span data-stu-id="04114-119">public void clear()</span></span>                                          |                                                     |
-
-### <a name="method-getbykey"></a><span data-ttu-id="04114-120">メソッド getByKey</span><span class="sxs-lookup"><span data-stu-id="04114-120">Method getByKey</span></span>
-
-    public boolean getByKey(Common record)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-121">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-121">Parameters</span></span>
-
-<span data-ttu-id="04114-122">記録</span><span class="sxs-lookup"><span data-stu-id="04114-122">record</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="04114-123">戻り値</span><span class="sxs-lookup"><span data-stu-id="04114-123">Return Value</span></span>
-
-### <a name="method-updateonsavechanges"></a><span data-ttu-id="04114-124">メソッド updateonSaveChanges</span><span class="sxs-lookup"><span data-stu-id="04114-124">Method updateonSaveChanges</span></span>
-
-    public void updateonSaveChanges(Common record)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-125">Parameters</span></span>
-
-<span data-ttu-id="04114-126">記録</span><span class="sxs-lookup"><span data-stu-id="04114-126">record</span></span>  
-
-### <a name="method-savechanges"></a><span data-ttu-id="04114-127">メソッド saveChanges</span><span class="sxs-lookup"><span data-stu-id="04114-127">Method saveChanges</span></span>
-
-    public void saveChanges([UserConnection user_connection])
-
-#### <a name="parameters"></a><span data-ttu-id="04114-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-128">Parameters</span></span>
-
-<span data-ttu-id="04114-129">user\_connection</span><span class="sxs-lookup"><span data-stu-id="04114-129">user\_connection</span></span>  
-
-### <a name="method-deleteonsavechanges"></a><span data-ttu-id="04114-130">メソッド deleteonSaveChanges</span><span class="sxs-lookup"><span data-stu-id="04114-130">Method deleteonSaveChanges</span></span>
-
-    public void deleteonSaveChanges(Common record)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-131">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-131">Parameters</span></span>
-
-<span data-ttu-id="04114-132">記録</span><span class="sxs-lookup"><span data-stu-id="04114-132">record</span></span>  
-
-### <a name="method-insertonsavechanges"></a><span data-ttu-id="04114-133">メソッド insertonSaveChanges</span><span class="sxs-lookup"><span data-stu-id="04114-133">Method insertonSaveChanges</span></span>
-
-    public void insertonSaveChanges(Common record)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-134">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-134">Parameters</span></span>
-
-<span data-ttu-id="04114-135">記録</span><span class="sxs-lookup"><span data-stu-id="04114-135">record</span></span>  
-
-### <a name="method-finalize"></a><span data-ttu-id="04114-136">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="04114-136">Method finalize</span></span>
-
-    public void finalize()
-
-### <a name="method-new"></a><span data-ttu-id="04114-137">メソッド new</span><span class="sxs-lookup"><span data-stu-id="04114-137">Method new</span></span>
-
-<span data-ttu-id="04114-138">UnitofWork クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="04114-138">Initializes a new instance of the UnitofWork class.</span></span>
-
-    public void new()
-
-### <a name="method-clear"></a><span data-ttu-id="04114-139">メソッド clear</span><span class="sxs-lookup"><span data-stu-id="04114-139">Method clear</span></span>
-
-    public void clear()
-
-## <a name="class-userconnection"></a><span data-ttu-id="04114-140">クラス UserConnection</span><span class="sxs-lookup"><span data-stu-id="04114-140">Class UserConnection</span></span>
-    class UserConnection extends Connection
-
-<span data-ttu-id="04114-141">UserConnection クラスは、主要な接続と同じログオン プロパティに基づいて、SQL データベースへの補助接続を表します。</span><span class="sxs-lookup"><span data-stu-id="04114-141">The UserConnection class represents an auxiliary connection to the SQL database, based on the same logon properties as the main connection.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="04114-142">備考</span><span class="sxs-lookup"><span data-stu-id="04114-142">Remarks</span></span>
-
-<span data-ttu-id="04114-143">SQL ステートメントが実行され、結果が UserConnection クラスのコンテキストで返されます。</span><span class="sxs-lookup"><span data-stu-id="04114-143">SQL statements are executed, and results are returned in the context of a UserConnection class.</span></span> <span data-ttu-id="04114-144">UserConnection クラスを使用して、別個のトランザクション スコープを取得できます。</span><span class="sxs-lookup"><span data-stu-id="04114-144">The UserConnection class can be used to obtain a separate transaction scope.</span></span>
-
-<span data-ttu-id="04114-145">注記: ユーザー接続リークを防ぐため、finally ブロックで Userconnection.finalize() を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="04114-145">Note: Userconnection.finalize() needs to be called in the finally block to prevent user connection leak.</span></span>  <span data-ttu-id="04114-146">オープン ユーザー接続の数がサーバー上で制限されており、制限に達すると、それ以上接続を開くことができなくなり、ビジネス ロジックのエラーになる可能性があります</span><span class="sxs-lookup"><span data-stu-id="04114-146">Number of open user connections is limited on the server, when it reaches the limit, no more connections can be opened, which can leads to business logic failures</span></span>
-
-### <a name="examples"></a><span data-ttu-id="04114-147">例</span><span class="sxs-lookup"><span data-stu-id="04114-147">Examples</span></span>
-
-    static void example()  
-    { 
-        UserConnection Con;
-        try
-        {
-            Statement Stmt; 
-            Str sql; 
-            ResultSet R; 
-            SqlStatementExecutePermission perm; 
-            Con = new UserConnection(); 
-            sql = 'SELECT VALUE FROM SQLSYSTEMVARIABLES'; 
-            Stmt = Con.createStatement(); 
-            perm = new SqlStatementExecutePermission(sql); 
-            // Check for permission to use the statement. 
-            perm.assert(); 
-            R = Stmt.executeQuery(sql); 
-            while ( R.next() ) 
-            { 
-                print R.getString(1); 
-            } 
-        }
-        finally
-        {
-            con.finalize();
-        }
-     }
-
-### <a name="methods"></a><span data-ttu-id="04114-148">方法</span><span class="sxs-lookup"><span data-stu-id="04114-148">Methods</span></span>
-
-| <span data-ttu-id="04114-149">方法</span><span class="sxs-lookup"><span data-stu-id="04114-149">Method</span></span>                                                | <span data-ttu-id="04114-150">説明</span><span class="sxs-lookup"><span data-stu-id="04114-150">Description</span></span>                                         |
-|-------------------------------------------------------|-----------------------------------------------------|
-| <span data-ttu-id="04114-151">public void new(\[boolean generateNewTransactionID\])</span><span class="sxs-lookup"><span data-stu-id="04114-151">public void new(\[boolean generateNewTransactionID\])</span></span> | <span data-ttu-id="04114-152">Connection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="04114-152">Initializes a new instance of the Connection class.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="04114-153">メソッド new</span><span class="sxs-lookup"><span data-stu-id="04114-153">Method new</span></span>
-
-<span data-ttu-id="04114-154">Connection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="04114-154">Initializes a new instance of the Connection class.</span></span>
-
-    public void new([boolean generateNewTransactionID])
-
-#### <a name="parameters"></a><span data-ttu-id="04114-155">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-155">Parameters</span></span>
-
-<span data-ttu-id="04114-156">generateNewTransactionID</span><span class="sxs-lookup"><span data-stu-id="04114-156">generateNewTransactionID</span></span>  
-
-## <a name="class-usermenulist"></a><span data-ttu-id="04114-157">クラス UserMenuList</span><span class="sxs-lookup"><span data-stu-id="04114-157">Class UserMenuList</span></span>
-    class UserMenuList extends TreeNode
-
-<span data-ttu-id="04114-158">UserMenuList クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="04114-158">The UserMenuList class enables you to create, read, update, and delete X++ code and metadata.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="04114-159">備考</span><span class="sxs-lookup"><span data-stu-id="04114-159">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="04114-160">例</span><span class="sxs-lookup"><span data-stu-id="04114-160">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="04114-161">メソッド</span><span class="sxs-lookup"><span data-stu-id="04114-161">Methods</span></span>
-
-| <span data-ttu-id="04114-162">方法</span><span class="sxs-lookup"><span data-stu-id="04114-162">Method</span></span>                               | <span data-ttu-id="04114-163">説明</span><span class="sxs-lookup"><span data-stu-id="04114-163">Description</span></span> |
-|--------------------------------------|-------------|
-| <span data-ttu-id="04114-164">public void createMenu(\[str name\])</span><span class="sxs-lookup"><span data-stu-id="04114-164">public void createMenu(\[str name\])</span></span> |             |
-
-### <a name="method-createmenu"></a><span data-ttu-id="04114-165">メソッド createMenu</span><span class="sxs-lookup"><span data-stu-id="04114-165">Method createMenu</span></span>
-
-    public void createMenu([str name])
-
-#### <a name="parameters"></a><span data-ttu-id="04114-166">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-166">Parameters</span></span>
-
-<span data-ttu-id="04114-167">名前</span><span class="sxs-lookup"><span data-stu-id="04114-167">name</span></span>  
-
-## <a name="class-usersetup"></a><span data-ttu-id="04114-168">クラス UserSetup</span><span class="sxs-lookup"><span data-stu-id="04114-168">Class UserSetup</span></span>
-    class UserSetup extends TreeNode
-
-<span data-ttu-id="04114-169">UserSetup クラスは、ユーザー パラメーターを設定するためのインターフェイスを提供します。</span><span class="sxs-lookup"><span data-stu-id="04114-169">The UserSetup class provides an interface for setting user parameters.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="04114-170">備考</span><span class="sxs-lookup"><span data-stu-id="04114-170">Remarks</span></span>
-
-<span data-ttu-id="04114-171">このクラスは、主に SysUserSetup フォームで使用されます。</span><span class="sxs-lookup"><span data-stu-id="04114-171">This class is used mainly in the SysUserSetup form.</span></span> <span data-ttu-id="04114-172">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</span><span class="sxs-lookup"><span data-stu-id="04114-172">This class lets you create, read, update, and delete X++ code and metadata.</span></span> <span data-ttu-id="04114-173">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="04114-173">Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="04114-174">例</span><span class="sxs-lookup"><span data-stu-id="04114-174">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="04114-175">メソッド</span><span class="sxs-lookup"><span data-stu-id="04114-175">Methods</span></span>
-
-| <span data-ttu-id="04114-176">方法</span><span class="sxs-lookup"><span data-stu-id="04114-176">Method</span></span>                                  | <span data-ttu-id="04114-177">説明</span><span class="sxs-lookup"><span data-stu-id="04114-177">Description</span></span> |
-|-----------------------------------------|-------------|
-| <span data-ttu-id="04114-178">public boolean xRef(\[boolean enable\])</span><span class="sxs-lookup"><span data-stu-id="04114-178">public boolean xRef(\[boolean enable\])</span></span> |             |
-| <span data-ttu-id="04114-179">public void setUserSetup(Common cursor)</span><span class="sxs-lookup"><span data-stu-id="04114-179">public void setUserSetup(Common cursor)</span></span> |             |
-| <span data-ttu-id="04114-180">public void setDefaults(Common cursor)</span><span class="sxs-lookup"><span data-stu-id="04114-180">public void setDefaults(Common cursor)</span></span>  |             |
-
-### <a name="method-xref"></a><span data-ttu-id="04114-181">メソッド xRef</span><span class="sxs-lookup"><span data-stu-id="04114-181">Method xRef</span></span>
-
-    public boolean xRef([boolean enable])
-
-#### <a name="parameters"></a><span data-ttu-id="04114-182">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-182">Parameters</span></span>
-
-<span data-ttu-id="04114-183">enable</span><span class="sxs-lookup"><span data-stu-id="04114-183">enable</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="04114-184">戻り値</span><span class="sxs-lookup"><span data-stu-id="04114-184">Return Value</span></span>
-
-### <a name="method-setusersetup"></a><span data-ttu-id="04114-185">メソッド setUserSetup</span><span class="sxs-lookup"><span data-stu-id="04114-185">Method setUserSetup</span></span>
-
-    public void setUserSetup(Common cursor)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-186">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-186">Parameters</span></span>
-
-<span data-ttu-id="04114-187">cursor</span><span class="sxs-lookup"><span data-stu-id="04114-187">cursor</span></span>  
-
-### <a name="method-setdefaults"></a><span data-ttu-id="04114-188">メソッド setDefaults</span><span class="sxs-lookup"><span data-stu-id="04114-188">Method setDefaults</span></span>
-
-    public void setDefaults(Common cursor)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-189">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-189">Parameters</span></span>
-
-<span data-ttu-id="04114-190">cursor</span><span class="sxs-lookup"><span data-stu-id="04114-190">cursor</span></span>  
-
-## <a name="class-utilfile"></a><span data-ttu-id="04114-191">クラス UtilFile</span><span class="sxs-lookup"><span data-stu-id="04114-191">Class UtilFile</span></span>
-    class UtilFile extends Object
-
-### <a name="remarks"></a><span data-ttu-id="04114-192">備考</span><span class="sxs-lookup"><span data-stu-id="04114-192">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="04114-193">例</span><span class="sxs-lookup"><span data-stu-id="04114-193">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="04114-194">メソッド</span><span class="sxs-lookup"><span data-stu-id="04114-194">Methods</span></span>
-
-| <span data-ttu-id="04114-195">方法</span><span class="sxs-lookup"><span data-stu-id="04114-195">Method</span></span>                                                      | <span data-ttu-id="04114-196">説明</span><span class="sxs-lookup"><span data-stu-id="04114-196">Description</span></span>                                                      |
-|-------------------------------------------------------------|------------------------------------------------------------------|
-| <span data-ttu-id="04114-197">public boolean aodFileExist(UtilEntryLevel layer)</span><span class="sxs-lookup"><span data-stu-id="04114-197">public boolean aodFileExist(UtilEntryLevel layer)</span></span>           |                                                                  |
-| <span data-ttu-id="04114-198">public int importAODFile(UtilEntryLevel layer, int modelId)</span><span class="sxs-lookup"><span data-stu-id="04114-198">public int importAODFile(UtilEntryLevel layer, int modelId)</span></span> |                                                                  |
-| <span data-ttu-id="04114-199">public str layers()</span><span class="sxs-lookup"><span data-stu-id="04114-199">public str layers()</span></span>                                         |                                                                  |
-| <span data-ttu-id="04114-200">public boolean needReindex()</span><span class="sxs-lookup"><span data-stu-id="04114-200">public boolean needReindex()</span></span>                                |                                                                  |
-| <span data-ttu-id="04114-201">public void check(str layer, str action)</span><span class="sxs-lookup"><span data-stu-id="04114-201">public void check(str layer, str action)</span></span>                    |                                                                  |
-| <span data-ttu-id="04114-202">public void new(str fileType)</span><span class="sxs-lookup"><span data-stu-id="04114-202">public void new(str fileType)</span></span>                               | <span data-ttu-id="04114-203">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="04114-203">Initializes a new instance of the Object class.</span></span>                  |
-| <span data-ttu-id="04114-204">public void reindex()</span><span class="sxs-lookup"><span data-stu-id="04114-204">public void reindex()</span></span>                                       | <span data-ttu-id="04114-205">X++ コードとメタデータの作成、読み取り、更新、および削除ができます。</span><span class="sxs-lookup"><span data-stu-id="04114-205">Lets you create, read, update, and delete X++ code and metadata.</span></span> |
-| <span data-ttu-id="04114-206">public void flushCache()</span><span class="sxs-lookup"><span data-stu-id="04114-206">public void flushCache()</span></span>                                    |                                                                  |
-
-### <a name="method-aodfileexist"></a><span data-ttu-id="04114-207">メソッド aodFileExist</span><span class="sxs-lookup"><span data-stu-id="04114-207">Method aodFileExist</span></span>
-
-    public boolean aodFileExist(UtilEntryLevel layer)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-208">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-208">Parameters</span></span>
-
-<span data-ttu-id="04114-209"> レイヤー</span><span class="sxs-lookup"><span data-stu-id="04114-209">layer</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="04114-210">戻り値</span><span class="sxs-lookup"><span data-stu-id="04114-210">Return Value</span></span>
-
-### <a name="method-importaodfile"></a><span data-ttu-id="04114-211">メソッド importAODFile</span><span class="sxs-lookup"><span data-stu-id="04114-211">Method importAODFile</span></span>
-
-    public int importAODFile(UtilEntryLevel layer, int modelId)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-212">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-212">Parameters</span></span>
-
-<span data-ttu-id="04114-213"> レイヤー</span><span class="sxs-lookup"><span data-stu-id="04114-213">layer</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="04114-214">modelId</span><span class="sxs-lookup"><span data-stu-id="04114-214">modelId</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="04114-215">戻り値</span><span class="sxs-lookup"><span data-stu-id="04114-215">Return Value</span></span>
-
-### <a name="method-layers"></a><span data-ttu-id="04114-216">メソッド layers</span><span class="sxs-lookup"><span data-stu-id="04114-216">Method layers</span></span>
-
-    public str layers()
-
-#### <a name="return-value"></a><span data-ttu-id="04114-217">戻り値</span><span class="sxs-lookup"><span data-stu-id="04114-217">Return Value</span></span>
-
-### <a name="method-needreindex"></a><span data-ttu-id="04114-218">メソッド needReindex</span><span class="sxs-lookup"><span data-stu-id="04114-218">Method needReindex</span></span>
-
-    public boolean needReindex()
-
-#### <a name="return-value"></a><span data-ttu-id="04114-219">戻り値</span><span class="sxs-lookup"><span data-stu-id="04114-219">Return Value</span></span>
-
-### <a name="method-check"></a><span data-ttu-id="04114-220">メソッド check</span><span class="sxs-lookup"><span data-stu-id="04114-220">Method check</span></span>
-
-    public void check(str layer, str action)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-221">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-221">Parameters</span></span>
-
-<span data-ttu-id="04114-222"> レイヤー</span><span class="sxs-lookup"><span data-stu-id="04114-222">layer</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="04114-223">アクション</span><span class="sxs-lookup"><span data-stu-id="04114-223">action</span></span>  
-
-### <a name="method-new"></a><span data-ttu-id="04114-224">メソッド new</span><span class="sxs-lookup"><span data-stu-id="04114-224">Method new</span></span>
-
-<span data-ttu-id="04114-225">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="04114-225">Initializes a new instance of the Object class.</span></span>
-
-    public void new(str fileType)
-
-#### <a name="parameters"></a><span data-ttu-id="04114-226">パラメーター</span><span class="sxs-lookup"><span data-stu-id="04114-226">Parameters</span></span>
-
-<span data-ttu-id="04114-227">fileType</span><span class="sxs-lookup"><span data-stu-id="04114-227">fileType</span></span>  
-
-### <a name="method-reindex"></a><span data-ttu-id="04114-228">メソッド reindex</span><span class="sxs-lookup"><span data-stu-id="04114-228">Method reindex</span></span>
-
-<span data-ttu-id="04114-229">X++ コードとメタデータの作成、読み取り、更新、および削除ができます。</span><span class="sxs-lookup"><span data-stu-id="04114-229">Lets you create, read, update, and delete X++ code and metadata.</span></span>
-
-    public void reindex()
-
-#### <a name="remarks"></a><span data-ttu-id="04114-230">備考</span><span class="sxs-lookup"><span data-stu-id="04114-230">Remarks</span></span>
-
-<span data-ttu-id="04114-231">この API を呼び出す前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="04114-231">Make sure that the user has access to the development security key (SysDevelopment) before you call this API.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="04114-232">例</span><span class="sxs-lookup"><span data-stu-id="04114-232">Examples</span></span>
-
-<span data-ttu-id="04114-233">次の例では、UtilFile.reindex メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="04114-233">The following example calls the UtilFile.reindex method.</span></span> <span data-ttu-id="04114-234">変更を実行する前に、ユーザーが必要なセキュリティ キーを持っているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="04114-234">It checks whether the user has the required security key before you perform a modification.</span></span>
-
-    server static public void Main(Args _args) 
-    { 
-        UtilFile u; 
-        u = new UtilFile("util"); 
-        if (u) 
-        { 
-            u.reindex(); 
-        } 
-    }
-
-### <a name="method-flushcache"></a><span data-ttu-id="04114-235">メソッド flushCache</span><span class="sxs-lookup"><span data-stu-id="04114-235">Method flushCache</span></span>
-
-    public void flushCache()
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="u-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>u-classes.da208e.a65999588a5c3f9c5feec4acb66d481707a2ebcd.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a65999588a5c3f9c5feec4acb66d481707a2ebcd</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\u-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>U classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">U クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>System API classes that start with the letter U.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 U で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>U classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">U クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>System API classes that start with the letter U.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 U で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Class UnitofWork</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス UnitofWork</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>public boolean getByKey(Common record)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean getByKey(Common record)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>public void updateonSaveChanges(Common record)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void updateonSaveChanges(Common record)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>public void saveChanges(<ph id="ph1">\[</ph>UserConnection user<ph id="ph2">\_</ph>connection<ph id="ph3">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void saveChanges(<ph id="ph1">\[</ph>UserConnection user<ph id="ph2">\_</ph>connection<ph id="ph3">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>public void deleteonSaveChanges(Common record)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void deleteonSaveChanges(Common record)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>public void insertonSaveChanges(Common record)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void insertonSaveChanges(Common record)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Initializes a new instance of the UnitofWork class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UnitofWork クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>public void clear()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void clear()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Method getByKey</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getByKey</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Method updateonSaveChanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド updateonSaveChanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Method saveChanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド saveChanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>user<ph id="ph1">\_</ph>connection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">user<ph id="ph1">\_</ph>connection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Method deleteonSaveChanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド deleteonSaveChanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Method insertonSaveChanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド insertonSaveChanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">記録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Initializes a new instance of the UnitofWork class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UnitofWork クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Method clear</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド clear</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Class UserConnection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス UserConnection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>The UserConnection class represents an auxiliary connection to the SQL database, based on the same logon properties as the main connection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UserConnection クラスは、主要な接続と同じログオン プロパティに基づいて、SQL データベースへの補助接続を表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>SQL statements are executed, and results are returned in the context of a UserConnection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL ステートメントが実行され、結果が UserConnection クラスのコンテキストで返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>The UserConnection class can be used to obtain a separate transaction scope.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UserConnection クラスを使用して、別個のトランザクション スコープを取得できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Note: Userconnection.finalize() needs to be called in the finally block to prevent user connection leak.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注記: ユーザー接続リークを防ぐため、finally ブロックで Userconnection.finalize() を呼び出す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Number of open user connections is limited on the server, when it reaches the limit, no more connections can be opened, which can leads to business logic failures</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オープン ユーザー接続の数がサーバー上で制限されており、制限に達すると、それ以上接続を開くことができなくなり、ビジネス ロジックのエラーになる可能性があります</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>public void new(<ph id="ph1">\[</ph>boolean generateNewTransactionID<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(<ph id="ph1">\[</ph>boolean generateNewTransactionID<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Initializes a new instance of the Connection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Connection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Initializes a new instance of the Connection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Connection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>generateNewTransactionID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">generateNewTransactionID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Class UserMenuList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス UserMenuList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The UserMenuList class enables you to create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UserMenuList クラスを使用すると、X++ コードとメタデータの作成、読み取り、更新、および削除を行うことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>public void createMenu(<ph id="ph1">\[</ph>str name<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void createMenu(<ph id="ph1">\[</ph>str name<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Method createMenu</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド createMenu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Class UserSetup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス UserSetup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>The UserSetup class provides an interface for setting user parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UserSetup クラスは、ユーザー パラメーターを設定するためのインターフェイスを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>This class is used mainly in the SysUserSetup form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、主に SysUserSetup フォームで使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>This class lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスでは、作成、読み取り、更新、および X++ コードとメタデータを削除できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Make sure that the user has access to the development security key (SysDevelopment) before this API is called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この API が呼び出される前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>public boolean xRef(<ph id="ph1">\[</ph>boolean enable<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean xRef(<ph id="ph1">\[</ph>boolean enable<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>public void setUserSetup(Common cursor)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setUserSetup(Common cursor)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>public void setDefaults(Common cursor)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void setDefaults(Common cursor)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Method xRef</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド xRef</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>enable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Method setUserSetup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setUserSetup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>cursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Method setDefaults</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド setDefaults</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>cursor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cursor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Class UtilFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス UtilFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>public boolean aodFileExist(UtilEntryLevel layer)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean aodFileExist(UtilEntryLevel layer)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>public int importAODFile(UtilEntryLevel layer, int modelId)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int importAODFile(UtilEntryLevel layer, int modelId)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>public str layers()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str layers()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>public boolean needReindex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean needReindex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>public void check(str layer, str action)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void check(str layer, str action)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>public void new(str fileType)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(str fileType)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>public void reindex()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void reindex()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードとメタデータの作成、読み取り、更新、および削除ができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>public void flushCache()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void flushCache()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Method aodFileExist</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド aodFileExist</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>layer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> レイヤー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Method importAODFile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド importAODFile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>layer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> レイヤー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>modelId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">modelId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Method layers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド layers</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Method needReindex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド needReindex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Method check</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド check</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>layer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> レイヤー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>action</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>fileType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fileType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Method reindex</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド reindex</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Lets you create, read, update, and delete X++ code and metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードとメタデータの作成、読み取り、更新、および削除ができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Make sure that the user has access to the development security key (SysDevelopment) before you call this API.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この API を呼び出す前に、ユーザーが開発セキュリティ キー (SysDevelopment) にアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The following example calls the UtilFile.reindex method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、UtilFile.reindex メソッドを呼び出します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>It checks whether the user has the required security key before you perform a modification.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更を実行する前に、ユーザーが必要なセキュリティ キーを持っているかどうかを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Method flushCache</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド flushCache</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

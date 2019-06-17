@@ -1,78 +1,138 @@
----
-title: PageData タイプ
-description: ページに読み込まれたデータを表します。
-author: shadykdc
-manager: AnnBe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: ''
-ms.search.region: Global
-ms.author: kashea
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: de83eeb55c6ccb09ef55bcb76cae3b46e9009e4b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537346"
----
-# <a name="pagedata-type"></a><span data-ttu-id="d4d7d-103">PageData タイプ</span><span class="sxs-lookup"><span data-stu-id="d4d7d-103">PageData type</span></span>
-
-[!include [banner](../../../../includes/banner.md)]
-
-<span data-ttu-id="d4d7d-104">ページに読み込まれたデータを表します。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-104">Represents the data that is loaded into a page.</span></span>
-
-### <a name="hierarchy"></a><span data-ttu-id="d4d7d-105">階層</span><span class="sxs-lookup"><span data-stu-id="d4d7d-105">Hierarchy</span></span>
-
-<span data-ttu-id="d4d7d-106">PageData</span><span class="sxs-lookup"><span data-stu-id="d4d7d-106">PageData</span></span> <br>
-
-## <a name="index"></a><span data-ttu-id="d4d7d-107">指数</span><span class="sxs-lookup"><span data-stu-id="d4d7d-107">Index</span></span>
-
-### <a name="methods"></a><span data-ttu-id="d4d7d-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="d4d7d-108">Methods</span></span>
-
-* [<span data-ttu-id="d4d7d-109">getControlValue</span><span class="sxs-lookup"><span data-stu-id="d4d7d-109">getControlValue</span></span>](services-business-logic-services-ipagedata.md#getcontrolvalue)
-* [<span data-ttu-id="d4d7d-110">setControlValue</span><span class="sxs-lookup"><span data-stu-id="d4d7d-110">setControlValue</span></span>](services-business-logic-services-ipagedata.md#setcontrolvalue)
-
-## <a name="methods"></a><span data-ttu-id="d4d7d-111">メソッド</span><span class="sxs-lookup"><span data-stu-id="d4d7d-111">Methods</span></span>
-
-### <a name="getcontrolvalue"></a><span data-ttu-id="d4d7d-112">getControlValue</span><span class="sxs-lookup"><span data-stu-id="d4d7d-112">getControlValue</span></span>
-
-
-<span data-ttu-id="d4d7d-113">getControlValue(controlName: string): any</span><span class="sxs-lookup"><span data-stu-id="d4d7d-113">getControlValue(controlName: string): any</span></span>
-
-<span data-ttu-id="d4d7d-114">ページでデータ セットから直接読み込まれるコントロールの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-114">Gets the value of a control directly from the data set loaded in the page.</span></span>
-<span data-ttu-id="d4d7d-115">「値」は、あらゆる種類のコントロールで柔軟に定義されており、通常は、コントロールと共に表示または操作されるプライマリ単一フィールド値を示します。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-115">The "value" is loosely defined across all different types of controls and generally indicates the primary single field value displayed or interacted with the control.</span></span> <span data-ttu-id="d4d7d-116">一部の複雑なコントロール (ルックアップやリストなど) には、単純な値がない場合があるため、この API を通じてアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-116">Some complex controls (e.g a lookup or a list) may not have a simple value and thus cannot be accessed via this API.</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="d4d7d-117">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d4d7d-117">Parameters</span></span>
-
-| <span data-ttu-id="d4d7d-118">氏名</span><span class="sxs-lookup"><span data-stu-id="d4d7d-118">Name</span></span> | <span data-ttu-id="d4d7d-119">種類</span><span class="sxs-lookup"><span data-stu-id="d4d7d-119">Type</span></span> | <span data-ttu-id="d4d7d-120">説明</span><span class="sxs-lookup"><span data-stu-id="d4d7d-120">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="d4d7d-121">controlName</span><span class="sxs-lookup"><span data-stu-id="d4d7d-121">controlName</span></span>|<span data-ttu-id="d4d7d-122">string</span><span class="sxs-lookup"><span data-stu-id="d4d7d-122">string</span></span>|<span data-ttu-id="d4d7d-123">値を取得する対象のコントロールの名前</span><span class="sxs-lookup"><span data-stu-id="d4d7d-123">name of the control whose value is to be retrieved</span></span>|
-
-#### <a name="returns-any"></a><span data-ttu-id="d4d7d-124">any を返します</span><span class="sxs-lookup"><span data-stu-id="d4d7d-124">Returns any</span></span>
-
-### <a name="setcontrolvalue"></a><span data-ttu-id="d4d7d-125">setControlValue</span><span class="sxs-lookup"><span data-stu-id="d4d7d-125">setControlValue</span></span>
-
-
-<span data-ttu-id="d4d7d-126">setControlValue(controlName: string, value: any): any</span><span class="sxs-lookup"><span data-stu-id="d4d7d-126">setControlValue(controlName: string, value: any): any</span></span>
-
-<span data-ttu-id="d4d7d-127">ページでデータ セットに直接読み込まれるコントロールの値を設定します。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-127">Sets the value of a control directly into the data set loaded in the page.</span></span>
-<span data-ttu-id="d4d7d-128">「値」は、あらゆる種類のコントロールで柔軟に定義されており、通常は、コントロールと共に表示または操作されるプライマリ単一フィールド値を示します。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-128">The "value" is loosely defined across all different types of controls and generally indicates the primary single field value displayed or interacted with the control.</span></span> <span data-ttu-id="d4d7d-129">一部の複雑なコントロール (ルックアップやリストなど) には、単純な値がない場合があるため、この API を通じてアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="d4d7d-129">Some complex controls (e.g a lookup or a list) may not have a simple value and thus cannot be accessed via this API.</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="d4d7d-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d4d7d-130">Parameters</span></span>
-
-| <span data-ttu-id="d4d7d-131">氏名</span><span class="sxs-lookup"><span data-stu-id="d4d7d-131">Name</span></span> | <span data-ttu-id="d4d7d-132">種類</span><span class="sxs-lookup"><span data-stu-id="d4d7d-132">Type</span></span> | <span data-ttu-id="d4d7d-133">説明</span><span class="sxs-lookup"><span data-stu-id="d4d7d-133">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="d4d7d-134">controlName</span><span class="sxs-lookup"><span data-stu-id="d4d7d-134">controlName</span></span>|<span data-ttu-id="d4d7d-135">string</span><span class="sxs-lookup"><span data-stu-id="d4d7d-135">string</span></span>|<span data-ttu-id="d4d7d-136">値を設定する対象のコントロールの名前</span><span class="sxs-lookup"><span data-stu-id="d4d7d-136">Name of the control whose value is to be set</span></span>|
-| <span data-ttu-id="d4d7d-137">値</span><span class="sxs-lookup"><span data-stu-id="d4d7d-137">value</span></span>|<span data-ttu-id="d4d7d-138">any</span><span class="sxs-lookup"><span data-stu-id="d4d7d-138">any</span></span>|<span data-ttu-id="d4d7d-139">設定する値</span><span class="sxs-lookup"><span data-stu-id="d4d7d-139">The value to be set</span></span>|
-
-#### <a name="returns-any"></a><span data-ttu-id="d4d7d-140">any を返します</span><span class="sxs-lookup"><span data-stu-id="d4d7d-140">Returns any</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="services-business-logic-services-ipagedata.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>services-business-logic-services-ipagedata.fea7e2.6700a78eb05b516b8783c0a183de4d53b090de05.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>6700a78eb05b516b8783c0a183de4d53b090de05</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\interfaces\services-business-logic-services-ipagedata.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>PageData type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PageData タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Represents the data that is loaded into a page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページに読み込まれたデータを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>PageData type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PageData タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Represents the data that is loaded into a page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページに読み込まれたデータを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>PageData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PageData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>getControlValue<ept id="p1">](services-business-logic-services-ipagedata.md#getcontrolvalue)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getControlValue<ept id="p1">](services-business-logic-services-ipagedata.md#getcontrolvalue)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><bpt id="p1">[</bpt>setControlValue<ept id="p1">](services-business-logic-services-ipagedata.md#setcontrolvalue)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>setControlValue<ept id="p1">](services-business-logic-services-ipagedata.md#setcontrolvalue)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>getControlValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>getControlValue(controlName: string): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlValue(controlName: string): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Gets the value of a control directly from the data set loaded in the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページでデータ セットから直接読み込まれるコントロールの値を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The "value" is loosely defined across all different types of controls and generally indicates the primary single field value displayed or interacted with the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「値」は、あらゆる種類のコントロールで柔軟に定義されており、通常は、コントロールと共に表示または操作されるプライマリ単一フィールド値を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Some complex controls (e.g a lookup or a list) may not have a simple value and thus cannot be accessed via this API.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の複雑なコントロール (ルックアップやリストなど) には、単純な値がない場合があるため、この API を通じてアクセスできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>controlName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>name of the control whose value is to be retrieved</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値を取得する対象のコントロールの名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Returns any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>setControlValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setControlValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>setControlValue(controlName: string, value: any): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setControlValue(controlName: string, value: any): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Sets the value of a control directly into the data set loaded in the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページでデータ セットに直接読み込まれるコントロールの値を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>The "value" is loosely defined across all different types of controls and generally indicates the primary single field value displayed or interacted with the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「値」は、あらゆる種類のコントロールで柔軟に定義されており、通常は、コントロールと共に表示または操作されるプライマリ単一フィールド値を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Some complex controls (e.g a lookup or a list) may not have a simple value and thus cannot be accessed via this API.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の複雑なコントロール (ルックアップやリストなど) には、単純な値がない場合があるため、この API を通じてアクセスできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>controlName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Name of the control whose value is to be set</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値を設定する対象のコントロールの名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>The value to be set</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設定する値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Returns any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

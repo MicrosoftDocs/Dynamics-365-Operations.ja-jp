@@ -1,70 +1,132 @@
----
-title: Visual Studio で、デバッガーを使用して X++ コードをデバッグする
-description: このトピックでは、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 23921
-ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
-ms.search.region: Global
-ms.author: robadawy
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1092f92ccce110b89f72fe5f2d87f5c06094d45a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536998"
----
-# <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a><span data-ttu-id="f71cf-103">Visual Studio で、デバッガーを使用して X++ コードをデバッグする</span><span class="sxs-lookup"><span data-stu-id="f71cf-103">Debug X++ code by using the debugger in Visual Studio</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="f71cf-104">このトピックでは、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-104">This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.</span></span> 
-
-<span data-ttu-id="f71cf-105">X++ コードをデバッグするには、Microsoft Visual Studio でデバッガを使用します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-105">To debug X++ code, you use the debugger in Microsoft Visual Studio.</span></span> <span data-ttu-id="f71cf-106">このプロセスは、Visual Studio で作成される他のアプリケーションで使用されるプロセスに似ています。</span><span class="sxs-lookup"><span data-stu-id="f71cf-106">The process is similar to the process that is used for any other application that is created in Visual Studio.</span></span> <span data-ttu-id="f71cf-107">たとえば、コードがブレークポイントで停止するときに、アプリケーションを検証する標準のツールを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-107">For example, the standard tools for examining the application are available when your code is stopped at a breakpoint.</span></span>
-
-## <a name="debug-your-code"></a><span data-ttu-id="f71cf-108">コードのデバッグ</span><span class="sxs-lookup"><span data-stu-id="f71cf-108">Debug your code</span></span>
-<span data-ttu-id="f71cf-109">X++ コードをデバッグするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-109">To debug X++ code, follow these steps.</span></span>
-
-1. <span data-ttu-id="f71cf-110">Visual Studio で、デバッグする X++ コードを開きます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-110">In Visual Studio, open the X++ code to debug.</span></span>
-2. <span data-ttu-id="f71cf-111">停止を実行する行または明細行を検索し、それらの明細行でブレークポイントを設定します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-111">Find the line or lines where you want execution to stop, and set breakpoints in those lines.</span></span> <span data-ttu-id="f71cf-112">行にブレークポイントを設定するには、コード エディターの左の列をクリックするか、カーソルがその行にある間に F9 を押します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-112">To set a breakpoint in a line, click in the left column of the code editor or press F9 while the cursor is on that line.</span></span> <span data-ttu-id="f71cf-113">赤いドットは、ブレークポイントが設定されていることを示します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-113">A red dot indicates that a breakpoint has been set.</span></span> 
-
-   <span data-ttu-id="f71cf-114">[![赤い丸](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)</span><span class="sxs-lookup"><span data-stu-id="f71cf-114">[![Red dot](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)</span></span>
-
-3. <span data-ttu-id="f71cf-115">スタートアップ プロジェクトおよびスタートアップ オブジェクトを設定します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-115">Set a startup project and a startup object.</span></span> <span data-ttu-id="f71cf-116">スタートアップ オブジェクトは、任意のフォーム、**main** メソッドを持つ任意のクラス、または任意のメニュー項目にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-116">Startup objects can be any form, any class that has the **main** method, or any menu item.</span></span> <span data-ttu-id="f71cf-117">スタートアップ オブジェクトはプロジェクトの **プロパティ** ウィンドウで設定することができます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-117">You can set the startup object in the **Properties** pane for the project.</span></span> <span data-ttu-id="f71cf-118">または、ソリューション エクスプローラーで要素を右クリックし、その後**スタートアップ オブジェクトとして設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f71cf-118">Alternatively, right-click the element in Solution Explorer, and then click **Set as Startup Object**.</span></span>
-
-   ![スタートアップ オブジェクトとして設定](./media/setasstartupobject.jpg)
-
-4. <span data-ttu-id="f71cf-120">**デバッグ**メニューで、**デバッグの開始**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f71cf-120">On the **Debug** menu, click **Start Debugging**.</span></span>
-5. <span data-ttu-id="f71cf-121">アプリケーションで、目的のコードを実行させるアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-121">In the application, perform the action that causes the code that you're interested in to run.</span></span> <span data-ttu-id="f71cf-122">標準的なアクションには、フォームを開くことが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-122">Typical actions include opening a form.</span></span> <span data-ttu-id="f71cf-123">処理は、設定したブレークポイントで停止します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-123">Processing stops at the breakpoints that you set.</span></span> 
-
-   <span data-ttu-id="f71cf-124">[![実行](./media/33_DevoToolsConcept.png)](./media/33_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="f71cf-124">[![Run](./media/33_DevoToolsConcept.png)](./media/33_devotoolsconcept.png)</span></span>
-
-6. <span data-ttu-id="f71cf-125">Visual Studio のツールを使用して、アプリケーションを調べます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-125">Use the tools in Visual Studio to examine the application.</span></span> <span data-ttu-id="f71cf-126">たとえば、その値を表示するため、X++ コード内の変数をポイントします。</span><span class="sxs-lookup"><span data-stu-id="f71cf-126">For example, you can hover over variables in the X++ code to see their values.</span></span> <span data-ttu-id="f71cf-127">また、**デバッグ** メニュー上のコマンドを使用してコードを進めることができます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-127">You can also use commands on the **Debug** menu to step through the code.</span></span> <span data-ttu-id="f71cf-128">また、Visual Studio の **Autos** ウィンドウのようなツールは、アプリケーションの状態に関する重要な情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-128">Additionally, tools such as the **Autos** pane in Visual Studio will show important information about the state of the application.</span></span> 
-
-   <span data-ttu-id="f71cf-129">[![ホバー](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="f71cf-129">[![Hover](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)</span></span>
-
-   <span data-ttu-id="f71cf-130">Finance and Operations に固有の、もう 1 つのツールは情報ログです。</span><span class="sxs-lookup"><span data-stu-id="f71cf-130">Another tool that is specific to Finance and Operations is the Infolog.</span></span> <span data-ttu-id="f71cf-131">多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-131">Often, **info()** statements are added to code to log status messages while the application is running.</span></span> <span data-ttu-id="f71cf-132">これらの情報ログ メッセージは、Visual Studio で直接表示できます。</span><span class="sxs-lookup"><span data-stu-id="f71cf-132">You can view these Infolog messages directly in Visual Studio.</span></span> <span data-ttu-id="f71cf-133">**表示**メニューで、**情報ログ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f71cf-133">On the **View** menu, click **Infolog**.</span></span> 
-
-   <span data-ttu-id="f71cf-134">[![情報ログ](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="f71cf-134">[![Infolog](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)</span></span>
-
-7. <span data-ttu-id="f71cf-135">アプリケーションのデバッグが終了した後、Finance and Operations を終了します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-135">After you've finished debugging the application, exit Finance and Operations .</span></span> <span data-ttu-id="f71cf-136">Visual Studio はデバッグ モードを終了します。</span><span class="sxs-lookup"><span data-stu-id="f71cf-136">Visual Studio will exit debugging mode.</span></span>
-
-
-<a name="additional-resources"></a><span data-ttu-id="f71cf-137">追加リソース</span><span class="sxs-lookup"><span data-stu-id="f71cf-137">Additional resources</span></span>
---------
-
-[<span data-ttu-id="f71cf-138">開発者ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="f71cf-138">Developer home page</span></span>](developer-home-page.md)
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="debug-xpp.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>debug-xpp.35530b.a20c9a41bb9dca10b5ba6f45be96b36140a31345.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a20c9a41bb9dca10b5ba6f45be96b36140a31345</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-tools\debug-xpp.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Debug X++ code by using the debugger in Visual Studio</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、デバッガーを使用して X++ コードをデバッグする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Debug X++ code by using the debugger in Visual Studio</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、デバッガーを使用して X++ コードをデバッグする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>To debug X++ code, you use the debugger in Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードをデバッグするには、Microsoft Visual Studio でデバッガを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The process is similar to the process that is used for any other application that is created in Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロセスは、Visual Studio で作成される他のアプリケーションで使用されるプロセスに似ています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>For example, the standard tools for examining the application are available when your code is stopped at a breakpoint.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、コードがブレークポイントで停止するときに、アプリケーションを検証する標準のツールを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Debug your code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードのデバッグ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>To debug X++ code, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードをデバッグするには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>In Visual Studio, open the X++ code to debug.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio で、デバッグする X++ コードを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Find the line or lines where you want execution to stop, and set breakpoints in those lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">停止を実行する行または明細行を検索し、それらの明細行でブレークポイントを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>To set a breakpoint in a line, click in the left column of the code editor or press F9 while the cursor is on that line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行にブレークポイントを設定するには、コード エディターの左の列をクリックするか、カーソルがその行にある間に F9 を押します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>A red dot indicates that a breakpoint has been set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">赤いドットは、ブレークポイントが設定されていることを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Red dot<ept id="p1">](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>赤い丸<ept id="p1">](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Set a startup project and a startup object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタートアップ プロジェクトおよびスタートアップ オブジェクトを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Startup objects can be any form, any class that has the <bpt id="p1">**</bpt>main<ept id="p1">**</ept> method, or any menu item.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタートアップ オブジェクトは、任意のフォーム、<bpt id="p1">**</bpt>main<ept id="p1">**</ept> メソッドを持つ任意のクラス、または任意のメニュー項目にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>You can set the startup object in the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane for the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタートアップ オブジェクトはプロジェクトの <bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで設定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Alternatively, right-click the element in Solution Explorer, and then click <bpt id="p1">**</bpt>Set as Startup Object<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、ソリューション エクスプローラーで要素を右クリックし、その後<bpt id="p1">**</bpt>スタートアップ オブジェクトとして設定<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Set as startup object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタートアップ オブジェクトとして設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>On the <bpt id="p1">**</bpt>Debug<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Start Debugging<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デバッグ<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>デバッグの開始<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In the application, perform the action that causes the code that you're interested in to run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションで、目的のコードを実行させるアクションを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Typical actions include opening a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準的なアクションには、フォームを開くことが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Processing stops at the breakpoints that you set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">処理は、設定したブレークポイントで停止します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Run<ept id="p1">](./media/33_DevoToolsConcept.png)](./media/33_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>実行<ept id="p1">](./media/33_DevoToolsConcept.png)](./media/33_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Use the tools in Visual Studio to examine the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio のツールを使用して、アプリケーションを調べます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>For example, you can hover over variables in the X++ code to see their values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、その値を表示するため、X++ コード内の変数をポイントします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>You can also use commands on the <bpt id="p1">**</bpt>Debug<ept id="p1">**</ept> menu to step through the code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、<bpt id="p1">**</bpt>デバッグ<ept id="p1">**</ept> メニュー上のコマンドを使用してコードを進めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Additionally, tools such as the <bpt id="p1">**</bpt>Autos<ept id="p1">**</ept> pane in Visual Studio will show important information about the state of the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、Visual Studio の <bpt id="p1">**</bpt>Autos<ept id="p1">**</ept> ウィンドウのようなツールは、アプリケーションの状態に関する重要な情報を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Hover<ept id="p1">](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ホバー<ept id="p1">](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Another tool that is specific to Finance and Operations is the Infolog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations に固有の、もう 1 つのツールは情報ログです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Often, <bpt id="p1">**</bpt>info()<ept id="p1">**</ept> statements are added to code to log status messages while the application is running.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">多くの場合、<bpt id="p1">**</bpt>info()<ept id="p1">**</ept> ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>You can view these Infolog messages directly in Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの情報ログ メッセージは、Visual Studio で直接表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>On the <bpt id="p1">**</bpt>View<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Infolog<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>表示<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>情報ログ<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Infolog<ept id="p1">](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>情報ログ<ept id="p1">](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>After you've finished debugging the application, exit Finance and Operations .</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションのデバッグが終了した後、Finance and Operations を終了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Visual Studio will exit debugging mode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio はデバッグ モードを終了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">[</bpt>Developer home page<ept id="p1">](developer-home-page.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>開発者ホーム ページ<ept id="p1">](developer-home-page.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

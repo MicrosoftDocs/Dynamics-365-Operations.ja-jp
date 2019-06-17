@@ -1,2046 +1,2982 @@
----
-title: O クラス
-description: 文字 O で始まるシステム API クラス。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 52201
-ms.assetid: 63f93d3d-54a5-46c2-b356-fe5863b6f927
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4dcb2a12dca3e76cabd40f052dd4cceb1a16dc50
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537030"
----
-# <a name="o-classes"></a><span data-ttu-id="158c0-103">O クラス</span><span class="sxs-lookup"><span data-stu-id="158c0-103">O classes</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="158c0-104">文字 O で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="158c0-104">System API classes that start with the letter O.</span></span>
-
-<a name="class-object"></a><span data-ttu-id="158c0-105">クラス オブジェクト</span><span class="sxs-lookup"><span data-stu-id="158c0-105">Class Object</span></span>
-------------
-
-    class Object
-
-<span data-ttu-id="158c0-106">Object クラスは、その他のすべてのクラスの派生元となる基本クラスです。</span><span class="sxs-lookup"><span data-stu-id="158c0-106">The Object class is the base class from which all other classes are derived.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="158c0-107">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-107">Remarks</span></span>
-
-<span data-ttu-id="158c0-108">オブジェクト クラスのメソッドは、任意のオブジェクトに対して呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="158c0-108">Methods in the Object class can be called for any object.</span></span> <span data-ttu-id="158c0-109">Object クラスは、開発者がオブジェクトの実際のタイプを知らなくても、割り当ておよび等価チェックを実行できるようにするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-109">The Object class is used to allow assignment and equality checks to be performed without the developer having to know the actual type of the object.</span></span> <span data-ttu-id="158c0-110">メソッドは 3 つのグループにグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="158c0-110">The methods can be grouped into three groups:</span></span>
-
--   <span data-ttu-id="158c0-111">タイム アウト メソッド - 指定した時間が経過した後にメソッドをアクティブにするために使用できます。</span><span class="sxs-lookup"><span data-stu-id="158c0-111">Time out methods - can be used to activate a method after a specified period of time has passed.</span></span>
--   <span data-ttu-id="158c0-112">プロセス フローを制御したり、別のオブジェクトがそのタスクを終了するを待機するために使用される、Wait、Notify、NotifyAll メソッドなどのメソッドを処理します。</span><span class="sxs-lookup"><span data-stu-id="158c0-112">Process methods, such as the Wait, Notify, and NotifyAll method - used to control process flow and to wait for another object to finish its task.</span></span>
--   <span data-ttu-id="158c0-113">クラス メソッド - オブジェクトに関する基本情報を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-113">Class methods - return basic information about the object.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-114">例</span><span class="sxs-lookup"><span data-stu-id="158c0-114">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-115">Methods</span></span>
-
-| <span data-ttu-id="158c0-116">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-116">Method</span></span>                                                                      | <span data-ttu-id="158c0-117">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-117">Description</span></span>                                                                                                 |
-|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="158c0-118">public boolean equal(Object object)</span><span class="sxs-lookup"><span data-stu-id="158c0-118">public boolean equal(Object object)</span></span>                                         | <span data-ttu-id="158c0-119">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="158c0-119">Determines whether the specified object is equal to the current one.</span></span>                                        |
-| <span data-ttu-id="158c0-120">public int getTimeOutTimerHandle()</span><span class="sxs-lookup"><span data-stu-id="158c0-120">public int getTimeOutTimerHandle()</span></span>                                          | <span data-ttu-id="158c0-121">オブジェクトのタイマー ハンドルを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-121">Returns the timer handle for the object.</span></span>                                                                    |
-| <span data-ttu-id="158c0-122">public ClassId handle()</span><span class="sxs-lookup"><span data-stu-id="158c0-122">public ClassId handle()</span></span>                                                     | <span data-ttu-id="158c0-123">オブジェクトのクラスのハンドルを取得します。</span><span class="sxs-lookup"><span data-stu-id="158c0-123">Retrieves the handle of the class of the object.</span></span>                                                            |
-| <span data-ttu-id="158c0-124">public boolean SysObsoleteAttribute()</span><span class="sxs-lookup"><span data-stu-id="158c0-124">public boolean SysObsoleteAttribute()</span></span>                                       |                                                                                                             |
-| <span data-ttu-id="158c0-125">public int SysObsoleteAttribute(str Method, int WaitTime, \[boolean idle\])</span><span class="sxs-lookup"><span data-stu-id="158c0-125">public int SysObsoleteAttribute(str Method, int WaitTime, \[boolean idle\])</span></span> |                                                                                                             |
-| <span data-ttu-id="158c0-126">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-126">public str toString()</span></span>                                                       | <span data-ttu-id="158c0-127">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-127">Returns a string that represents the current object.</span></span>                                                        |
-| <span data-ttu-id="158c0-128">public int usageCount()</span><span class="sxs-lookup"><span data-stu-id="158c0-128">public int usageCount()</span></span>                                                     | <span data-ttu-id="158c0-129">オブジェクトが持つ参照 (つまり、参照カウンターの値) の現在の番号を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-129">Returns the current number of references, that is, the value of the reference counter, that the object has.</span></span> |
-| <span data-ttu-id="158c0-130">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="158c0-130">public str xml(\[int indent\])</span></span>                                              | <span data-ttu-id="158c0-131">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-131">Returns an XML string that represents the current object.</span></span>                                                   |
-| <span data-ttu-id="158c0-132">public boolean Equals(System.Object obj)</span><span class="sxs-lookup"><span data-stu-id="158c0-132">public boolean Equals(System.Object obj)</span></span>                                    |                                                                                                             |
-| <span data-ttu-id="158c0-133">public int GetHashCode()</span><span class="sxs-lookup"><span data-stu-id="158c0-133">public int GetHashCode()</span></span>                                                    |                                                                                                             |
-| <span data-ttu-id="158c0-134">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="158c0-134">public void finalize()</span></span>                                                      |                                                                                                             |
-| <span data-ttu-id="158c0-135">public void wait()</span><span class="sxs-lookup"><span data-stu-id="158c0-135">public void wait()</span></span>                                                          | <span data-ttu-id="158c0-136">プロセスを一時停止します。</span><span class="sxs-lookup"><span data-stu-id="158c0-136">Pauses a process.</span></span>                                                                                           |
-| <span data-ttu-id="158c0-137">public void cancelTimeOut(int timerHandle)</span><span class="sxs-lookup"><span data-stu-id="158c0-137">public void cancelTimeOut(int timerHandle)</span></span>                                  | <span data-ttu-id="158c0-138">setTimeOut メソッドへ以前のメソッド呼び出しをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="158c0-138">Cancels a previous method call to the setTimeOut method.</span></span>                                                    |
-| <span data-ttu-id="158c0-139">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-139">public void new()</span></span>                                                           | <span data-ttu-id="158c0-140">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-140">Initializes a new instance of the Object class.</span></span>                                                             |
-| <span data-ttu-id="158c0-141">public void notify()</span><span class="sxs-lookup"><span data-stu-id="158c0-141">public void notify()</span></span>                                                        | <span data-ttu-id="158c0-142">このオブジェクトの待機メソッドを呼び出したオブジェクトのホールドを解放します。</span><span class="sxs-lookup"><span data-stu-id="158c0-142">Releases the hold on an object that has called the wait method on this object.</span></span>                              |
-| <span data-ttu-id="158c0-143">public void notifyAll()</span><span class="sxs-lookup"><span data-stu-id="158c0-143">public void notifyAll()</span></span>                                                     | <span data-ttu-id="158c0-144">このオブジェクトの待機メソッドによって発行されたオブジェクトのロックを解放します。</span><span class="sxs-lookup"><span data-stu-id="158c0-144">Releases a lock on the object that was issued by the wait method on this object.</span></span>                            |
-
-### <a name="method-equal"></a><span data-ttu-id="158c0-145">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="158c0-145">Method equal</span></span>
-
-<span data-ttu-id="158c0-146">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="158c0-146">Determines whether the specified object is equal to the current one.</span></span>
-
-    public boolean equal(Object object)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-147">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-147">Parameters</span></span>
-
-<span data-ttu-id="158c0-148">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="158c0-148">object</span></span>  
-<span data-ttu-id="158c0-149">現在のオブジェクトと比較するオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="158c0-149">The object to compare with the current object.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-150">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-150">Return Value</span></span>
-
-<span data-ttu-id="158c0-151">指定したオブジェクトが現在のオブジェクトと等しい場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="158c0-151">true if the specified object is equal to the current object; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-152">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-152">Remarks</span></span>
-
-<span data-ttu-id="158c0-153">Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="158c0-153">The default implementation of the Object::equal method supports only reference equality.</span></span> <span data-ttu-id="158c0-154">ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドをオーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="158c0-154">Derived classes can, however, override the Object::equal method to support value equality.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-155">例</span><span class="sxs-lookup"><span data-stu-id="158c0-155">Examples</span></span>
-
-<span data-ttu-id="158c0-156">次の例では、現在のインスタンスと別のオブジェクトを比較します。</span><span class="sxs-lookup"><span data-stu-id="158c0-156">The following example compares the current instance with another object.</span></span>
-
-    static void Object_Equal(Args _args) 
-    { 
-        Object objA = new Object(); 
-        Object objB = new Object(); 
-        print objA.equal(objA);  // true. 
-        print objA.equal(objB);  // false. 
-        objA = objB; 
-        print objA.equal(objB);  // true. 
-     }
-
-### <a name="method-gettimeouttimerhandle"></a><span data-ttu-id="158c0-157">メソッド getTimeOutTimerHandle</span><span class="sxs-lookup"><span data-stu-id="158c0-157">Method getTimeOutTimerHandle</span></span>
-
-<span data-ttu-id="158c0-158">オブジェクトのタイマー ハンドルを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-158">Returns the timer handle for the object.</span></span>
-
-    public int getTimeOutTimerHandle()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-159">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-159">Return Value</span></span>
-
-<span data-ttu-id="158c0-160">オブジェクトのタイマー ハンドル。</span><span class="sxs-lookup"><span data-stu-id="158c0-160">The timer handle of the object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-161">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-161">Remarks</span></span>
-
-<span data-ttu-id="158c0-162">オブジェクトのタイマー ハンドルは、setTimeOut メソッドを呼び出すことによって設定されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-162">The timer handle of the object is set by calling the setTimeOut method.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-163">例</span><span class="sxs-lookup"><span data-stu-id="158c0-163">Examples</span></span>
-
-<span data-ttu-id="158c0-164">次の例では、タイムアウトを設定してから、タイムアウトをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="158c0-164">The following example sets a timeout, and then cancels it.</span></span>
-
-    public void myJob() 
-    { 
-        int timerHandle = 0; 
-        this.setTimeOut(identifierstr(workerFunction), 0); 
-        //Perform some operations. 
-        timerHandle = this.getTimeOutTimerHandle(); 
-        this.cancelTimeOut( timerHandle ); 
-    }
-
-### <a name="method-handle"></a><span data-ttu-id="158c0-165">メソッド handle</span><span class="sxs-lookup"><span data-stu-id="158c0-165">Method handle</span></span>
-
-<span data-ttu-id="158c0-166">オブジェクトのクラスのハンドルを取得します。</span><span class="sxs-lookup"><span data-stu-id="158c0-166">Retrieves the handle of the class of the object.</span></span>
-
-    public ClassId handle()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-167">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-167">Return Value</span></span>
-
-<span data-ttu-id="158c0-168">現在のオブジェクトのクラスのハンドル、つまり classId プロパティです。</span><span class="sxs-lookup"><span data-stu-id="158c0-168">The handle, that is, the classId property, of the class of the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-169">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-169">Remarks</span></span>
-
-<span data-ttu-id="158c0-170">クラスの処理が後のリリースで変更されない、またはユーザー定義クラスのエクスポートまたはインポートの後に変更されないという保証はありません。</span><span class="sxs-lookup"><span data-stu-id="158c0-170">There is no guarantee that the handle of a class will remain unchanged in later releases, or after an export or import for user-defined classes.</span></span> <span data-ttu-id="158c0-171">このメソッドによって返される値を、クラスを参照する永続的な定数として使用しないことを強くお勧めします。</span><span class="sxs-lookup"><span data-stu-id="158c0-171">It is strongly advised that the value that is returned by this method will not be used as a persistent constant to refer to the class.</span></span>
-
-### <a name="method-sysobsoleteattribute"></a><span data-ttu-id="158c0-172">メソッド SysObsoleteAttribute</span><span class="sxs-lookup"><span data-stu-id="158c0-172">Method SysObsoleteAttribute</span></span>
-
-    public boolean SysObsoleteAttribute()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-173">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-173">Return Value</span></span>
-
-### <a name="method-sysobsoleteattribute"></a><span data-ttu-id="158c0-174">メソッド SysObsoleteAttribute</span><span class="sxs-lookup"><span data-stu-id="158c0-174">Method SysObsoleteAttribute</span></span>
-
-    public int SysObsoleteAttribute(str Method, int WaitTime, [boolean idle])
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-175">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-175">Parameters</span></span>
-
-<span data-ttu-id="158c0-176">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-176">Method</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="158c0-177">WaitTime</span><span class="sxs-lookup"><span data-stu-id="158c0-177">WaitTime</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="158c0-178">idle</span><span class="sxs-lookup"><span data-stu-id="158c0-178">idle</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-179">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-179">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-180">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-180">Method toString</span></span>
-
-<span data-ttu-id="158c0-181">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-181">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-182">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-182">Return Value</span></span>
-
-<span data-ttu-id="158c0-183">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-183">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-184">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-184">Remarks</span></span>
-
-<span data-ttu-id="158c0-185">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-185">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-186">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-186">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-187">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-187">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-188">例</span><span class="sxs-lookup"><span data-stu-id="158c0-188">Examples</span></span>
-
-<span data-ttu-id="158c0-189">次の例では、o のクラス名を出力します。</span><span class="sxs-lookup"><span data-stu-id="158c0-189">The following example prints out the class name of o.</span></span>
-
-    static void Object_ToString_Job(Args _args) 
-    { 
-        Object o = new Object(); 
-        print o.toString();  // Prints out: "Class Object" 
-        pause; 
-    }
-
-### <a name="method-usagecount"></a><span data-ttu-id="158c0-190">メソッド usageCount</span><span class="sxs-lookup"><span data-stu-id="158c0-190">Method usageCount</span></span>
-
-<span data-ttu-id="158c0-191">オブジェクトが持つ参照 (つまり、参照カウンターの値) の現在の番号を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-191">Returns the current number of references, that is, the value of the reference counter, that the object has.</span></span>
-
-    public int usageCount()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-192">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-192">Return Value</span></span>
-
-<span data-ttu-id="158c0-193">オブジェクトが持つ参照の現在の数。</span><span class="sxs-lookup"><span data-stu-id="158c0-193">The current number of references that the object has.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-194">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-194">Remarks</span></span>
-
-<span data-ttu-id="158c0-195">オブジェクトが作成されると、その参照カウンターが 1 になります。</span><span class="sxs-lookup"><span data-stu-id="158c0-195">When an object is created, its reference counter equals 1.</span></span> <span data-ttu-id="158c0-196">新しい参照が作成されると、その値が増加します。</span><span class="sxs-lookup"><span data-stu-id="158c0-196">When a new reference is created, its value increases.</span></span> <span data-ttu-id="158c0-197">スコープ外の参照は、値が減少します。</span><span class="sxs-lookup"><span data-stu-id="158c0-197">As a reference goes out of scope, its value decreases.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-198">例</span><span class="sxs-lookup"><span data-stu-id="158c0-198">Examples</span></span>
-
-<span data-ttu-id="158c0-199">次の例では、objA の参照の数を出力ウィンドウに出力します。</span><span class="sxs-lookup"><span data-stu-id="158c0-199">The following example prints the number of references for objA to the output window.</span></span>
-
-    static void Object_UsageCount(Args _args) 
-    { 
-        Object objA = new Object(); 
-        Object objB; 
-        print objA.usageCount();    // Prints 1. 
-        objB = objA;                // objB is a reference to objA. 
-        print objA.usageCount();    // prints 2 
-        pause; 
-    }
-
-### <a name="method-xml"></a><span data-ttu-id="158c0-200">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="158c0-200">Method xml</span></span>
-
-<span data-ttu-id="158c0-201">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-201">Returns an XML string that represents the current object.</span></span>
-
-    public str xml([int indent])
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-202">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-202">Parameters</span></span>
-
-<span data-ttu-id="158c0-203">インデント</span><span class="sxs-lookup"><span data-stu-id="158c0-203">indent</span></span>  
-<span data-ttu-id="158c0-204">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="158c0-204">The amount of indentation of the returned XML string; optional.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-205">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-205">Return Value</span></span>
-
-<span data-ttu-id="158c0-206">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="158c0-206">An XML string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-207">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-207">Remarks</span></span>
-
-<span data-ttu-id="158c0-208">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="158c0-208">This method can be overridden to return values that are meaningful for that type.</span></span>
-
-### <a name="method-equals"></a><span data-ttu-id="158c0-209">メソッド Equals</span><span class="sxs-lookup"><span data-stu-id="158c0-209">Method Equals</span></span>
-
-    public boolean Equals(System.Object obj)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-210">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-210">Parameters</span></span>
-
-<span data-ttu-id="158c0-211">obj</span><span class="sxs-lookup"><span data-stu-id="158c0-211">obj</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-212">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-212">Return Value</span></span>
-
-### <a name="method-gethashcode"></a><span data-ttu-id="158c0-213">メソッド GetHashCode</span><span class="sxs-lookup"><span data-stu-id="158c0-213">Method GetHashCode</span></span>
-
-    public int GetHashCode()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-214">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-214">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="158c0-215">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="158c0-215">Method finalize</span></span>
-
-    public void finalize()
-
-### <a name="method-wait"></a><span data-ttu-id="158c0-216">メソッド wait</span><span class="sxs-lookup"><span data-stu-id="158c0-216">Method wait</span></span>
-
-<span data-ttu-id="158c0-217">プロセスを一時停止します。</span><span class="sxs-lookup"><span data-stu-id="158c0-217">Pauses a process.</span></span>
-
-    public void wait()
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-218">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-218">Remarks</span></span>
-
-<span data-ttu-id="158c0-219">このメソッドの最も一般的な使い方は、ユーザーに何らかの入力を求めるオブジェクトを開始し、そのオブジェクト (フォームなど) の wait メソッドを呼び出すことです。</span><span class="sxs-lookup"><span data-stu-id="158c0-219">The most common use for this method is to start an object that asks the user for some input and then call the wait method on that object, such as a form.</span></span> <span data-ttu-id="158c0-220">次のコード行は、オブジェクトが notify メソッド または notifyAll メソッドを呼び出すまで実行されません。</span><span class="sxs-lookup"><span data-stu-id="158c0-220">The next line of code is not executed until the object has called the notify or notifyAll method.</span></span> <span data-ttu-id="158c0-221">フォームから wait メソッドが呼び出されるとき、ユーザーは通知メソッドを手動で呼び出す必要はありません。それは、ユーザーがフォームを閉じるか、または [適用] ボタンを押すと、フォームが Object.notifyAll メソッドを呼び出すためです。</span><span class="sxs-lookup"><span data-stu-id="158c0-221">When the wait method is called from a form, you do not have to call the notify methods manually because forms call the Object.notifyAll method when the user either closes the form or presses the Apply button.</span></span> <span data-ttu-id="158c0-222">このメソッドはスレッドの同期のためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="158c0-222">This method is not meant for thread synchronization.</span></span> <span data-ttu-id="158c0-223">代わりに waitUntilSignaled メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="158c0-223">Use the waitUntilSignaled method instead.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-224">例</span><span class="sxs-lookup"><span data-stu-id="158c0-224">Examples</span></span>
-
-<span data-ttu-id="158c0-225">次の例では、GetUserInput ダイアログを開き、ブロックし、ユーザーがフォームを閉じるまで待機します。</span><span class="sxs-lookup"><span data-stu-id="158c0-225">The following example opens the GetUserInput dialog, blocks, and waits until the user has closed the form.</span></span>
-
-    { 
-        Args a = new Args("GetUserInput"); 
-        formRun fr = new formRun(a); 
-        fr.init(); 
-        fr.run(); 
-        fr.wait(); 
-        // Execution will resume at this point, only after 
-        // the user has closed the form. 
-    }
-
-### <a name="method-canceltimeout"></a><span data-ttu-id="158c0-226">メソッド cancelTimeOut</span><span class="sxs-lookup"><span data-stu-id="158c0-226">Method cancelTimeOut</span></span>
-
-<span data-ttu-id="158c0-227">setTimeOut メソッドへ以前のメソッド呼び出しをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="158c0-227">Cancels a previous method call to the setTimeOut method.</span></span>
-
-    public void cancelTimeOut(int timerHandle)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-228">Parameters</span></span>
-
-<span data-ttu-id="158c0-229">timerHandle</span><span class="sxs-lookup"><span data-stu-id="158c0-229">timerHandle</span></span>  
-<span data-ttu-id="158c0-230">削除する予定イベントのハンドル。</span><span class="sxs-lookup"><span data-stu-id="158c0-230">The handle of the scheduled event to delete.</span></span> <span data-ttu-id="158c0-231">ハンドルは、Object.setTimeOut メソッドによって返される値です。</span><span class="sxs-lookup"><span data-stu-id="158c0-231">The handle is the value that is returned by the Object.setTimeOut method.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-232">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-232">Remarks</span></span>
-
-<span data-ttu-id="158c0-233">まだ処理されていないスケジュールされたタイムアウト呼び出しは、オブジェクト自体が削除されると自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-233">Any scheduled time-out calls that have not yet been processed are automatically deleted when the object itself is deleted.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-234">例</span><span class="sxs-lookup"><span data-stu-id="158c0-234">Examples</span></span>
-
-<span data-ttu-id="158c0-235">次の例では、Object.setTimeOut メソッドを呼び出した後、タイムアウトをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="158c0-235">The following example calls the Object.setTimeOut method, and then cancels the time-out.</span></span>
-
-    void Object_cancelTimeOut(Args _args) 
-    { 
-        int th; // timerHandle. 
-        // timedMethod is a worker method. 
-        th = this.setTimeOut( "timedMethod", 2000 ); 
-        //.... 
-        // Remove timeOut later. 
-        CancelTimeOut(th); 
-    }
-
-### <a name="method-new"></a><span data-ttu-id="158c0-236">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-236">Method new</span></span>
-
-<span data-ttu-id="158c0-237">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-237">Initializes a new instance of the Object class.</span></span>
-
-    public void new()
-
-### <a name="method-notify"></a><span data-ttu-id="158c0-238">メソッド notify</span><span class="sxs-lookup"><span data-stu-id="158c0-238">Method notify</span></span>
-
-<span data-ttu-id="158c0-239">このオブジェクトの待機メソッドを呼び出したオブジェクトのホールドを解放します。</span><span class="sxs-lookup"><span data-stu-id="158c0-239">Releases the hold on an object that has called the wait method on this object.</span></span>
-
-    public void notify()
-
-#### <a name="examples"></a><span data-ttu-id="158c0-240">例</span><span class="sxs-lookup"><span data-stu-id="158c0-240">Examples</span></span>
-
-<span data-ttu-id="158c0-241">次の例では、オブジェクトをロックしてから解放します。</span><span class="sxs-lookup"><span data-stu-id="158c0-241">The following example locks an object, and then releases it.</span></span>
-
-    public void doWork() 
-    { 
-        // Perform some actions. 
-        this.setTimeOut(identifierstr(workerFunction), 0); 
-        this.wait(); // Lock and wait for notify to be called. 
-    } 
-    public void workerFunction() 
-    { 
-        // Perform some actions. 
-        // Work is done; unlock the doWork method. 
-        this.notify(); 
-    }
-
-### <a name="method-notifyall"></a><span data-ttu-id="158c0-242">メソッド notifyAll</span><span class="sxs-lookup"><span data-stu-id="158c0-242">Method notifyAll</span></span>
-
-<span data-ttu-id="158c0-243">このオブジェクトの待機メソッドによって発行されたオブジェクトのロックを解放します。</span><span class="sxs-lookup"><span data-stu-id="158c0-243">Releases a lock on the object that was issued by the wait method on this object.</span></span>
-
-    public void notifyAll()
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-244">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-244">Remarks</span></span>
-
-<span data-ttu-id="158c0-245">このメソッドの現在の実装では、notify メソッドと notifyAll メソッドの呼び出しに違いはありません。</span><span class="sxs-lookup"><span data-stu-id="158c0-245">In the current implementation of this method, there is no difference between calling the notify method and the notifyAll method.</span></span> <span data-ttu-id="158c0-246">フォームは、ユーザーがフォームを閉じるまたは「適用」ボタンを押す際に、notifyAll メソッドを自動で呼び出します。</span><span class="sxs-lookup"><span data-stu-id="158c0-246">Forms will automatically call the notifyAll method when the user closes the form or presses the Apply button.</span></span>
-
-#### <a name="examples"></a><span data-ttu-id="158c0-247">例</span><span class="sxs-lookup"><span data-stu-id="158c0-247">Examples</span></span>
-
-<span data-ttu-id="158c0-248">次の例では、notifyAll メソッドの使用方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="158c0-248">The following example demonstrates the usage of the notifyAll method.</span></span>
-
-    public void doWork() 
-    { 
-          //Do some work. 
-          this.setTimeOut(identifierstr(workerFunction), 0); 
-          this.wait(); // block and wait for notify. 
-    } 
-    public void workerFunction() 
-    { 
-    // Do some work. 
-    //... 
-    // Work is done. Notify an unblock. 
-    this.notify(); 
-    } 
-
-## <a name="class-objectident"></a><span data-ttu-id="158c0-249">クラス ObjectIdent</span><span class="sxs-lookup"><span data-stu-id="158c0-249">Class ObjectIdent</span></span>
-    class ObjectIdent extends Object
-
-### <a name="remarks"></a><span data-ttu-id="158c0-250">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-250">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-251">例</span><span class="sxs-lookup"><span data-stu-id="158c0-251">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-252">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-252">Methods</span></span>
-
-| <span data-ttu-id="158c0-253">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-253">Method</span></span>                         | <span data-ttu-id="158c0-254">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-254">Description</span></span>                                     |
-|--------------------------------|-------------------------------------------------|
-| <span data-ttu-id="158c0-255">public Object object()</span><span class="sxs-lookup"><span data-stu-id="158c0-255">public Object object()</span></span>         |                                                 |
-| <span data-ttu-id="158c0-256">public void new(Object object)</span><span class="sxs-lookup"><span data-stu-id="158c0-256">public void new(Object object)</span></span> | <span data-ttu-id="158c0-257">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-257">Initializes a new instance of the Object class.</span></span> |
-
-### <a name="method-object"></a><span data-ttu-id="158c0-258">メソッド object</span><span class="sxs-lookup"><span data-stu-id="158c0-258">Method object</span></span>
-
-    public Object object()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-259">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-259">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-260">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-260">Method new</span></span>
-
-<span data-ttu-id="158c0-261">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-261">Initializes a new instance of the Object class.</span></span>
-
-    public void new(Object object)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-262">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-262">Parameters</span></span>
-
-<span data-ttu-id="158c0-263">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="158c0-263">object</span></span>  
-
-## <a name="class-objectrun"></a><span data-ttu-id="158c0-264">クラス ObjectRun</span><span class="sxs-lookup"><span data-stu-id="158c0-264">Class ObjectRun</span></span>
-    class ObjectRun extends Object
-
-<span data-ttu-id="158c0-265">FormRun クラスおよび ReportRun クラスの基本クラスとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-265">Used as the base class for the FormRun and ReportRun classes.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="158c0-266">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-266">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-267">例</span><span class="sxs-lookup"><span data-stu-id="158c0-267">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-268">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-268">Methods</span></span>
-
-| <span data-ttu-id="158c0-269">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-269">Method</span></span>                      | <span data-ttu-id="158c0-270">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-270">Description</span></span>                                                                                                                                                             |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="158c0-271">public xArgs args()</span><span class="sxs-lookup"><span data-stu-id="158c0-271">public xArgs args()</span></span>         | <span data-ttu-id="158c0-272">オブジェクトが作成された引数を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-272">Returns the arguments that the object was constructed with.</span></span>                                                                                                             |
-| <span data-ttu-id="158c0-273">public boolean isDetached()</span><span class="sxs-lookup"><span data-stu-id="158c0-273">public boolean isDetached()</span></span> | <span data-ttu-id="158c0-274">このオブジェクトに対して ObjectRun.detach メソッド呼び出しが行われたかどうかを通知します。</span><span class="sxs-lookup"><span data-stu-id="158c0-274">Communicates whether an ObjectRun.detach method call has been made on this object.</span></span>                                                                                      |
-| <span data-ttu-id="158c0-275">public void attach()</span><span class="sxs-lookup"><span data-stu-id="158c0-275">public void attach()</span></span>        | <span data-ttu-id="158c0-276">メソッドの呼び出しが取り消されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-276">Reverses a call to the method.</span></span> <span data-ttu-id="158c0-277">これは、ObjectRun.detach メソッドの呼び出しの逆です。</span><span class="sxs-lookup"><span data-stu-id="158c0-277">This is the reverse of calling the ObjectRun.detach method.</span></span> <span data-ttu-id="158c0-278">呼び出しを取り消すと、ウィンドウ間で今後フォーカスを切り替えることができなくなります。</span><span class="sxs-lookup"><span data-stu-id="158c0-278">Reversing the call disallows any further switching of focus between windows.</span></span> |
-| <span data-ttu-id="158c0-279">public void detach()</span><span class="sxs-lookup"><span data-stu-id="158c0-279">public void detach()</span></span>        | <span data-ttu-id="158c0-280">フォーカスをウィンドウ間で切り替えられるように許可します。</span><span class="sxs-lookup"><span data-stu-id="158c0-280">Allows focus to be switched between windows.</span></span>                                                                                                                            |
-
-### <a name="method-args"></a><span data-ttu-id="158c0-281">メソッド args</span><span class="sxs-lookup"><span data-stu-id="158c0-281">Method args</span></span>
-
-<span data-ttu-id="158c0-282">オブジェクトが作成された引数を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-282">Returns the arguments that the object was constructed with.</span></span>
-
-    public xArgs args()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-283">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-283">Return Value</span></span>
-
-<span data-ttu-id="158c0-284">オブジェクトの引数を含む Args クラス オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="158c0-284">An Args Class object that contains the arguments for the object.</span></span>
-
-### <a name="method-isdetached"></a><span data-ttu-id="158c0-285">メソッド isDetached</span><span class="sxs-lookup"><span data-stu-id="158c0-285">Method isDetached</span></span>
-
-<span data-ttu-id="158c0-286">このオブジェクトに対して ObjectRun.detach メソッド呼び出しが行われたかどうかを通知します。</span><span class="sxs-lookup"><span data-stu-id="158c0-286">Communicates whether an ObjectRun.detach method call has been made on this object.</span></span>
-
-    public boolean isDetached()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-287">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-287">Return Value</span></span>
-
-<span data-ttu-id="158c0-288">デタッチが呼び出された場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="158c0-288">true if detach has been called; otherwise, false.</span></span>
-
-### <a name="method-attach"></a><span data-ttu-id="158c0-289">メソッド attach</span><span class="sxs-lookup"><span data-stu-id="158c0-289">Method attach</span></span>
-
-<span data-ttu-id="158c0-290">メソッドの呼び出しが取り消されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-290">Reverses a call to the method.</span></span> <span data-ttu-id="158c0-291">これは、ObjectRun.detach メソッドの呼び出しの逆です。</span><span class="sxs-lookup"><span data-stu-id="158c0-291">This is the reverse of calling the ObjectRun.detach method.</span></span> <span data-ttu-id="158c0-292">呼び出しを取り消すと、ウィンドウ間で今後フォーカスを切り替えることができなくなります。</span><span class="sxs-lookup"><span data-stu-id="158c0-292">Reversing the call disallows any further switching of focus between windows.</span></span>
-
-    public void attach()
-
-### <a name="method-detach"></a><span data-ttu-id="158c0-293">メソッド detach</span><span class="sxs-lookup"><span data-stu-id="158c0-293">Method detach</span></span>
-
-<span data-ttu-id="158c0-294">フォーカスをウィンドウ間で切り替えられるように許可します。</span><span class="sxs-lookup"><span data-stu-id="158c0-294">Allows focus to be switched between windows.</span></span>
-
-    public void detach()
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-295">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-295">Remarks</span></span>
-
-<span data-ttu-id="158c0-296">たとえば、新しいフォームの実行方法を呼び出すことにより、新しいフォームが既存のフォームから作成されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-296">For example, a new form is created from an existing form by calling the new form's run method.</span></span> <span data-ttu-id="158c0-297">実行メソッドを呼び出すと、フォーカスが新しいフォームに変更されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-297">Calling a run method changes the focus to the new form.</span></span> <span data-ttu-id="158c0-298">解除メソッドを呼び出すと、ユーザーは 2 番目のフォームを閉じることなく最初のフォームに戻ることができます。</span><span class="sxs-lookup"><span data-stu-id="158c0-298">Calling the detach method allows the user to return to the first form without closing the second form.</span></span> <span data-ttu-id="158c0-299">ObjectRun.attach Method メソッドの呼び出しは、解除メソッドの影響を取り消します。</span><span class="sxs-lookup"><span data-stu-id="158c0-299">Calling the ObjectRun.attach Method method reverses the effects of the detach method.</span></span>
-
-## <a name="class-ociconnection"></a><span data-ttu-id="158c0-300">クラス OciConnection</span><span class="sxs-lookup"><span data-stu-id="158c0-300">Class OciConnection</span></span>
-    class OciConnection extends Connection
-
-<span data-ttu-id="158c0-301">OciConnection クラスは、Oci (Oracle 呼び出しインターフェイス) を使用するデータベース接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="158c0-301">The OciConnection class establishes a database connection that uses Oci (Oracle Call Interface).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="158c0-302">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-302">Remarks</span></span>
-
-<span data-ttu-id="158c0-303">OciConnection インスタンスのコンテキストでは、SQL ステートメントが実行され、結果が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-303">In the context of an OciConnection instance, SQL statements are run, and results are returned.</span></span> <span data-ttu-id="158c0-304">LoginProperty インスタンスに対して指定されている情報を基に、接続を確立できない場合、例外および理由は、情報ログに転記されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-304">If the connection cannot be established based on the information that is specified for the LoginProperty instance, an exception is thrown, and the reason is posted in the Infolog.</span></span> <span data-ttu-id="158c0-305">このクラスは、Oracle クライアント ソフトウェアがインストールされている場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="158c0-305">This class can be used only when Oracle client software is installed.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-306">例</span><span class="sxs-lookup"><span data-stu-id="158c0-306">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-307">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-307">Methods</span></span>
-
-| <span data-ttu-id="158c0-308">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-308">Method</span></span>                               | <span data-ttu-id="158c0-309">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-309">Description</span></span>                                                                                                   |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="158c0-310">public void new(LoginProperty Login)</span><span class="sxs-lookup"><span data-stu-id="158c0-310">public void new(LoginProperty Login)</span></span> | <span data-ttu-id="158c0-311">ユーザー名とパスワードなどのログオン プロパティに基づいた、Oracle データベースへの接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="158c0-311">Establishes a connection to an Oracle database, based on logon properties such as the user name and password.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="158c0-312">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-312">Method new</span></span>
-
-<span data-ttu-id="158c0-313">ユーザー名とパスワードなどのログオン プロパティに基づいた、Oracle データベースへの接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="158c0-313">Establishes a connection to an Oracle database, based on logon properties such as the user name and password.</span></span>
-
-    public void new(LoginProperty Login)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-314">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-314">Parameters</span></span>
-
-<span data-ttu-id="158c0-315">ログイン</span><span class="sxs-lookup"><span data-stu-id="158c0-315">Login</span></span>  
-<span data-ttu-id="158c0-316">ユーザー名、パスワード、データ ソース名、データベース、などを含む LoginProperty クラスのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="158c0-316">A LoginProperty class instance that contains the user name, password, data source name, database, and so on.</span></span>
-
-## <a name="class-odbcconnection"></a><span data-ttu-id="158c0-317">クラス OdbcConnection</span><span class="sxs-lookup"><span data-stu-id="158c0-317">Class OdbcConnection</span></span>
-    class OdbcConnection extends Connection
-
-<span data-ttu-id="158c0-318">OdbcConnection クラスは、ODBC (Open Database Connectivity) を使用してデータベース接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="158c0-318">The OdbcConnection class establishes a database connection by using ODBC (Open Database Connectivity).</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="158c0-319">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-319">Remarks</span></span>
-
-<span data-ttu-id="158c0-320">OdbcConnection インスタンスのコンテキストでは、SQL ステートメントが実行され、結果が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-320">In the context of an OdbcConnection instance, SQL statements are run, and results are returned.</span></span> <span data-ttu-id="158c0-321">ODBC データ ソースへの接続を確立できない場合、例外がスローされ、その原因が Infolog に転記されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-321">If a connection to the ODBC data source cannot be established, an exception is thrown, and the reason is posted in the Infolog.</span></span> <span data-ttu-id="158c0-322">このクラスは、正しい ODBC ドライバーがインストールされ、コントロール パネルの ODBC マネージャーで構成されている場合にのみ機能します。</span><span class="sxs-lookup"><span data-stu-id="158c0-322">This class works only if the correct ODBC drivers have been installed and configured in ODBC Manager in Control Panel.</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-323">例</span><span class="sxs-lookup"><span data-stu-id="158c0-323">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-324">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-324">Methods</span></span>
-
-| <span data-ttu-id="158c0-325">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-325">Method</span></span>                               | <span data-ttu-id="158c0-326">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-326">Description</span></span>                                                                                              |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="158c0-327">public void new(LoginProperty Login)</span><span class="sxs-lookup"><span data-stu-id="158c0-327">public void new(LoginProperty Login)</span></span> | <span data-ttu-id="158c0-328">ユーザー名とパスワードなどのログオン プロパティに基づいた、データ ソースへの接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="158c0-328">Establishes a connection to a data source, based on logon properties such as the user name and password.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="158c0-329">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-329">Method new</span></span>
-
-<span data-ttu-id="158c0-330">ユーザー名とパスワードなどのログオン プロパティに基づいた、データ ソースへの接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="158c0-330">Establishes a connection to a data source, based on logon properties such as the user name and password.</span></span>
-
-    public void new(LoginProperty Login)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-331">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-331">Parameters</span></span>
-
-<span data-ttu-id="158c0-332">ログイン</span><span class="sxs-lookup"><span data-stu-id="158c0-332">Login</span></span>  
-<span data-ttu-id="158c0-333">ユーザー名、パスワード、データ ソース名、データベース、などを含む LoginProperty クラスのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="158c0-333">A LoginProperty class instance that contains the user name, password, data source name, database, and so on.</span></span>
-
-## <a name="class-olecommand"></a><span data-ttu-id="158c0-334">クラス OleCommand</span><span class="sxs-lookup"><span data-stu-id="158c0-334">Class OleCommand</span></span>
-    class OleCommand extends Object
-
-### <a name="remarks"></a><span data-ttu-id="158c0-335">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-335">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-336">例</span><span class="sxs-lookup"><span data-stu-id="158c0-336">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-337">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-337">Methods</span></span>
-
-| <span data-ttu-id="158c0-338">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-338">Method</span></span>                                                                              | <span data-ttu-id="158c0-339">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-339">Description</span></span>                                     |
-|-------------------------------------------------------------------------------------|-------------------------------------------------|
-| <span data-ttu-id="158c0-340">public COMVariant exec(str cmdGroup, int cmdId, int cmdExecOption, COMVariant parm)</span><span class="sxs-lookup"><span data-stu-id="158c0-340">public COMVariant exec(str cmdGroup, int cmdId, int cmdExecOption, COMVariant parm)</span></span> |                                                 |
-| <span data-ttu-id="158c0-341">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="158c0-341">public void finalize()</span></span>                                                              |                                                 |
-| <span data-ttu-id="158c0-342">public void new(ComInterface comObject)</span><span class="sxs-lookup"><span data-stu-id="158c0-342">public void new(ComInterface comObject)</span></span>                                             | <span data-ttu-id="158c0-343">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-343">Initializes a new instance of the Object class.</span></span> |
-
-### <a name="method-exec"></a><span data-ttu-id="158c0-344">メソッド exec</span><span class="sxs-lookup"><span data-stu-id="158c0-344">Method exec</span></span>
-
-    public COMVariant exec(str cmdGroup, int cmdId, int cmdExecOption, COMVariant parm)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-345">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-345">Parameters</span></span>
-
-<span data-ttu-id="158c0-346">cmdGroup</span><span class="sxs-lookup"><span data-stu-id="158c0-346">cmdGroup</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="158c0-347">cmdId</span><span class="sxs-lookup"><span data-stu-id="158c0-347">cmdId</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="158c0-348">cmdExecOption</span><span class="sxs-lookup"><span data-stu-id="158c0-348">cmdExecOption</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="158c0-349">parm</span><span class="sxs-lookup"><span data-stu-id="158c0-349">parm</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-350">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-350">Return Value</span></span>
-
-### <a name="method-finalize"></a><span data-ttu-id="158c0-351">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="158c0-351">Method finalize</span></span>
-
-    public void finalize()
-
-### <a name="method-new"></a><span data-ttu-id="158c0-352">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-352">Method new</span></span>
-
-<span data-ttu-id="158c0-353">Object クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-353">Initializes a new instance of the Object class.</span></span>
-
-    public void new(ComInterface comObject)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-354">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-354">Parameters</span></span>
-
-<span data-ttu-id="158c0-355">comObject</span><span class="sxs-lookup"><span data-stu-id="158c0-355">comObject</span></span>  
-
-## <a name="class-ouputsection"></a><span data-ttu-id="158c0-356">クラス OuputSection</span><span class="sxs-lookup"><span data-stu-id="158c0-356">Class OuputSection</span></span>
-    class OuputSection extends Object
-
-### <a name="remarks"></a><span data-ttu-id="158c0-357">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-357">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-358">例</span><span class="sxs-lookup"><span data-stu-id="158c0-358">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-359">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-359">Methods</span></span>
-
-| <span data-ttu-id="158c0-360">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-360">Method</span></span>                                           | <span data-ttu-id="158c0-361">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-361">Description</span></span>                                           |
-|--------------------------------------------------|-------------------------------------------------------|
-| <span data-ttu-id="158c0-362">public int arrangeMethod()</span><span class="sxs-lookup"><span data-stu-id="158c0-362">public int arrangeMethod()</span></span>                       |                                                       |
-| <span data-ttu-id="158c0-363">public int backgroundColor()</span><span class="sxs-lookup"><span data-stu-id="158c0-363">public int backgroundColor()</span></span>                     |                                                       |
-| <span data-ttu-id="158c0-364">public LineThickness borderWidth()</span><span class="sxs-lookup"><span data-stu-id="158c0-364">public LineThickness borderWidth()</span></span>               |                                                       |
-| <span data-ttu-id="158c0-365">public int bottomMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-365">public int bottomMargin()</span></span>                        |                                                       |
-| <span data-ttu-id="158c0-366">public HeadingsStrategy columnHeadingsStrategy()</span><span class="sxs-lookup"><span data-stu-id="158c0-366">public HeadingsStrategy columnHeadingsStrategy()</span></span> |                                                       |
-| <span data-ttu-id="158c0-367">public str fontName()</span><span class="sxs-lookup"><span data-stu-id="158c0-367">public str fontName()</span></span>                            |                                                       |
-| <span data-ttu-id="158c0-368">public int leftMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-368">public int leftMargin()</span></span>                          |                                                       |
-| <span data-ttu-id="158c0-369">public LineType lineBottom()</span><span class="sxs-lookup"><span data-stu-id="158c0-369">public LineType lineBottom()</span></span>                     |                                                       |
-| <span data-ttu-id="158c0-370">public LineType lineLeft()</span><span class="sxs-lookup"><span data-stu-id="158c0-370">public LineType lineLeft()</span></span>                       |                                                       |
-| <span data-ttu-id="158c0-371">public LineType lineRight()</span><span class="sxs-lookup"><span data-stu-id="158c0-371">public LineType lineRight()</span></span>                      |                                                       |
-| <span data-ttu-id="158c0-372">public LineType lineTop()</span><span class="sxs-lookup"><span data-stu-id="158c0-372">public LineType lineTop()</span></span>                        |                                                       |
-| <span data-ttu-id="158c0-373">public int nextVerticalPos()</span><span class="sxs-lookup"><span data-stu-id="158c0-373">public int nextVerticalPos()</span></span>                     |                                                       |
-| <span data-ttu-id="158c0-374">public int rightMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-374">public int rightMargin()</span></span>                         |                                                       |
-| <span data-ttu-id="158c0-375">public ReportBlockType sectionType()</span><span class="sxs-lookup"><span data-stu-id="158c0-375">public ReportBlockType sectionType()</span></span>             |                                                       |
-| <span data-ttu-id="158c0-376">public int topMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-376">public int topMargin()</span></span>                           |                                                       |
-| <span data-ttu-id="158c0-377">public int type()</span><span class="sxs-lookup"><span data-stu-id="158c0-377">public int type()</span></span>                                |                                                       |
-| <span data-ttu-id="158c0-378">public int verticalPos()</span><span class="sxs-lookup"><span data-stu-id="158c0-378">public int verticalPos()</span></span>                         |                                                       |
-| <span data-ttu-id="158c0-379">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-379">public void new()</span></span>                                | <span data-ttu-id="158c0-380">OuputSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-380">Initializes a new instance of the OuputSection class.</span></span> |
-
-### <a name="method-arrangemethod"></a><span data-ttu-id="158c0-381">メソッド arrangeMethod</span><span class="sxs-lookup"><span data-stu-id="158c0-381">Method arrangeMethod</span></span>
-
-    public int arrangeMethod()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-382">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-382">Return Value</span></span>
-
-### <a name="method-backgroundcolor"></a><span data-ttu-id="158c0-383">メソッド backgroundColor</span><span class="sxs-lookup"><span data-stu-id="158c0-383">Method backgroundColor</span></span>
-
-    public int backgroundColor()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-384">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-384">Return Value</span></span>
-
-### <a name="method-borderwidth"></a><span data-ttu-id="158c0-385">メソッド borderWidth</span><span class="sxs-lookup"><span data-stu-id="158c0-385">Method borderWidth</span></span>
-
-    public LineThickness borderWidth()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-386">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-386">Return Value</span></span>
-
-### <a name="method-bottommargin"></a><span data-ttu-id="158c0-387">メソッド bottomMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-387">Method bottomMargin</span></span>
-
-    public int bottomMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-388">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-388">Return Value</span></span>
-
-### <a name="method-columnheadingsstrategy"></a><span data-ttu-id="158c0-389">メソッド columnHeadingsStrategy</span><span class="sxs-lookup"><span data-stu-id="158c0-389">Method columnHeadingsStrategy</span></span>
-
-    public HeadingsStrategy columnHeadingsStrategy()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-390">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-390">Return Value</span></span>
-
-### <a name="method-fontname"></a><span data-ttu-id="158c0-391">メソッド fontName</span><span class="sxs-lookup"><span data-stu-id="158c0-391">Method fontName</span></span>
-
-    public str fontName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-392">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-392">Return Value</span></span>
-
-### <a name="method-leftmargin"></a><span data-ttu-id="158c0-393">メソッド leftMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-393">Method leftMargin</span></span>
-
-    public int leftMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-394">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-394">Return Value</span></span>
-
-### <a name="method-linebottom"></a><span data-ttu-id="158c0-395">メソッド lineBottom</span><span class="sxs-lookup"><span data-stu-id="158c0-395">Method lineBottom</span></span>
-
-    public LineType lineBottom()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-396">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-396">Return Value</span></span>
-
-### <a name="method-lineleft"></a><span data-ttu-id="158c0-397">メソッド lineLeft</span><span class="sxs-lookup"><span data-stu-id="158c0-397">Method lineLeft</span></span>
-
-    public LineType lineLeft()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-398">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-398">Return Value</span></span>
-
-### <a name="method-lineright"></a><span data-ttu-id="158c0-399">メソッド lineRight</span><span class="sxs-lookup"><span data-stu-id="158c0-399">Method lineRight</span></span>
-
-    public LineType lineRight()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-400">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-400">Return Value</span></span>
-
-### <a name="method-linetop"></a><span data-ttu-id="158c0-401">メソッド lineTop</span><span class="sxs-lookup"><span data-stu-id="158c0-401">Method lineTop</span></span>
-
-    public LineType lineTop()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-402">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-402">Return Value</span></span>
-
-### <a name="method-nextverticalpos"></a><span data-ttu-id="158c0-403">メソッド nextVerticalPos</span><span class="sxs-lookup"><span data-stu-id="158c0-403">Method nextVerticalPos</span></span>
-
-    public int nextVerticalPos()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-404">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-404">Return Value</span></span>
-
-### <a name="method-rightmargin"></a><span data-ttu-id="158c0-405">メソッド rightMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-405">Method rightMargin</span></span>
-
-    public int rightMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-406">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-406">Return Value</span></span>
-
-### <a name="method-sectiontype"></a><span data-ttu-id="158c0-407">メソッド sectionType</span><span class="sxs-lookup"><span data-stu-id="158c0-407">Method sectionType</span></span>
-
-    public ReportBlockType sectionType()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-408">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-408">Return Value</span></span>
-
-### <a name="method-topmargin"></a><span data-ttu-id="158c0-409">メソッド topMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-409">Method topMargin</span></span>
-
-    public int topMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-410">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-410">Return Value</span></span>
-
-### <a name="method-type"></a><span data-ttu-id="158c0-411">メソッドのタイプ</span><span class="sxs-lookup"><span data-stu-id="158c0-411">Method type</span></span>
-
-    public int type()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-412">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-412">Return Value</span></span>
-
-### <a name="method-verticalpos"></a><span data-ttu-id="158c0-413">メソッド verticalPos</span><span class="sxs-lookup"><span data-stu-id="158c0-413">Method verticalPos</span></span>
-
-    public int verticalPos()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-414">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-414">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-415">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-415">Method new</span></span>
-
-<span data-ttu-id="158c0-416">OuputSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-416">Initializes a new instance of the OuputSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputautolabelfield"></a><span data-ttu-id="158c0-417">クラス OutputAutoLabelField</span><span class="sxs-lookup"><span data-stu-id="158c0-417">Class OutputAutoLabelField</span></span>
-    class OutputAutoLabelField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-418">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-418">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-419">例</span><span class="sxs-lookup"><span data-stu-id="158c0-419">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-420">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-420">Methods</span></span>
-
-| <span data-ttu-id="158c0-421">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-421">Method</span></span>                  | <span data-ttu-id="158c0-422">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-422">Description</span></span>                                                   |
-|-------------------------|---------------------------------------------------------------|
-| <span data-ttu-id="158c0-423">public boolean leadIn()</span><span class="sxs-lookup"><span data-stu-id="158c0-423">public boolean leadIn()</span></span> |                                                               |
-| <span data-ttu-id="158c0-424">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-424">public str toString()</span></span>   | <span data-ttu-id="158c0-425">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-425">Returns a string that represents the current object.</span></span>          |
-| <span data-ttu-id="158c0-426">public str value()</span><span class="sxs-lookup"><span data-stu-id="158c0-426">public str value()</span></span>      |                                                               |
-| <span data-ttu-id="158c0-427">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-427">public void new()</span></span>       | <span data-ttu-id="158c0-428">OutputAutoLabelField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-428">Initializes a new instance of the OutputAutoLabelField class.</span></span> |
-
-### <a name="method-leadin"></a><span data-ttu-id="158c0-429">メソッド leadIn</span><span class="sxs-lookup"><span data-stu-id="158c0-429">Method leadIn</span></span>
-
-    public boolean leadIn()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-430">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-430">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-431">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-431">Method toString</span></span>
-
-<span data-ttu-id="158c0-432">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-432">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-433">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-433">Return Value</span></span>
-
-<span data-ttu-id="158c0-434">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-434">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-435">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-435">Remarks</span></span>
-
-<span data-ttu-id="158c0-436">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-436">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-437">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-437">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-438">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-438">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-439">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-439">Method value</span></span>
-
-    public str value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-440">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-440">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-441">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-441">Method new</span></span>
-
-<span data-ttu-id="158c0-442">OutputAutoLabelField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-442">Initializes a new instance of the OutputAutoLabelField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputbitmapfield"></a><span data-ttu-id="158c0-443">クラス OutputBitmapField</span><span class="sxs-lookup"><span data-stu-id="158c0-443">Class OutputBitmapField</span></span>
-    class OutputBitmapField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-444">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-444">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-445">例</span><span class="sxs-lookup"><span data-stu-id="158c0-445">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-446">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-446">Methods</span></span>
-
-| <span data-ttu-id="158c0-447">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-447">Method</span></span>                     | <span data-ttu-id="158c0-448">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-448">Description</span></span>                                                |
-|----------------------------|------------------------------------------------------------|
-| <span data-ttu-id="158c0-449">public str imageFileName()</span><span class="sxs-lookup"><span data-stu-id="158c0-449">public str imageFileName()</span></span> |                                                            |
-| <span data-ttu-id="158c0-450">public boolean resize()</span><span class="sxs-lookup"><span data-stu-id="158c0-450">public boolean resize()</span></span>    |                                                            |
-| <span data-ttu-id="158c0-451">public int resourceId()</span><span class="sxs-lookup"><span data-stu-id="158c0-451">public int resourceId()</span></span>    |                                                            |
-| <span data-ttu-id="158c0-452">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-452">public str toString()</span></span>      | <span data-ttu-id="158c0-453">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-453">Returns a string that represents the current object.</span></span>       |
-| <span data-ttu-id="158c0-454">public container value()</span><span class="sxs-lookup"><span data-stu-id="158c0-454">public container value()</span></span>   |                                                            |
-| <span data-ttu-id="158c0-455">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-455">public void new()</span></span>          | <span data-ttu-id="158c0-456">OutputBitmapField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-456">Initializes a new instance of the OutputBitmapField class.</span></span> |
-
-### <a name="method-imagefilename"></a><span data-ttu-id="158c0-457">メソッド imageFileName</span><span class="sxs-lookup"><span data-stu-id="158c0-457">Method imageFileName</span></span>
-
-    public str imageFileName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-458">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-458">Return Value</span></span>
-
-### <a name="method-resize"></a><span data-ttu-id="158c0-459">メソッド resize</span><span class="sxs-lookup"><span data-stu-id="158c0-459">Method resize</span></span>
-
-    public boolean resize()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-460">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-460">Return Value</span></span>
-
-### <a name="method-resourceid"></a><span data-ttu-id="158c0-461">メソッド resourceId</span><span class="sxs-lookup"><span data-stu-id="158c0-461">Method resourceId</span></span>
-
-    public int resourceId()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-462">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-462">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-463">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-463">Method toString</span></span>
-
-<span data-ttu-id="158c0-464">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-464">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-465">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-465">Return Value</span></span>
-
-<span data-ttu-id="158c0-466">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-466">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-467">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-467">Remarks</span></span>
-
-<span data-ttu-id="158c0-468">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-468">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-469">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-469">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-470">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-470">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-471">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-471">Method value</span></span>
-
-    public container value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-472">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-472">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-473">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-473">Method new</span></span>
-
-<span data-ttu-id="158c0-474">OutputBitmapField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-474">Initializes a new instance of the OutputBitmapField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputbodysection"></a><span data-ttu-id="158c0-475">クラス OutputBodySection</span><span class="sxs-lookup"><span data-stu-id="158c0-475">Class OutputBodySection</span></span>
-    class OutputBodySection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-476">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-476">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-477">例</span><span class="sxs-lookup"><span data-stu-id="158c0-477">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-478">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-478">Methods</span></span>
-
-| <span data-ttu-id="158c0-479">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-479">Method</span></span>             | <span data-ttu-id="158c0-480">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-480">Description</span></span>                                                |
-|--------------------|------------------------------------------------------------|
-| <span data-ttu-id="158c0-481">public int recId()</span><span class="sxs-lookup"><span data-stu-id="158c0-481">public int recId()</span></span> |                                                            |
-| <span data-ttu-id="158c0-482">public int table()</span><span class="sxs-lookup"><span data-stu-id="158c0-482">public int table()</span></span> |                                                            |
-| <span data-ttu-id="158c0-483">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-483">public void new()</span></span>  | <span data-ttu-id="158c0-484">OutputBodySection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-484">Initializes a new instance of the OutputBodySection class.</span></span> |
-
-### <a name="method-recid"></a><span data-ttu-id="158c0-485">メソッド recId</span><span class="sxs-lookup"><span data-stu-id="158c0-485">Method recId</span></span>
-
-    public int recId()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-486">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-486">Return Value</span></span>
-
-### <a name="method-table"></a><span data-ttu-id="158c0-487">メソッド table</span><span class="sxs-lookup"><span data-stu-id="158c0-487">Method table</span></span>
-
-    public int table()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-488">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-488">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-489">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-489">Method new</span></span>
-
-<span data-ttu-id="158c0-490">OutputBodySection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-490">Initializes a new instance of the OutputBodySection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputcolumnheadingssection"></a><span data-ttu-id="158c0-491">クラス OutputColumnHeadingsSection</span><span class="sxs-lookup"><span data-stu-id="158c0-491">Class OutputColumnHeadingsSection</span></span>
-    class OutputColumnHeadingsSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-492">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-492">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-493">例</span><span class="sxs-lookup"><span data-stu-id="158c0-493">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-494">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-494">Methods</span></span>
-
-| <span data-ttu-id="158c0-495">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-495">Method</span></span>             | <span data-ttu-id="158c0-496">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-496">Description</span></span>                                                          |
-|--------------------|----------------------------------------------------------------------|
-| <span data-ttu-id="158c0-497">public str table()</span><span class="sxs-lookup"><span data-stu-id="158c0-497">public str table()</span></span> |                                                                      |
-| <span data-ttu-id="158c0-498">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-498">public void new()</span></span>  | <span data-ttu-id="158c0-499">OutputColumnHeadingsSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-499">Initializes a new instance of the OutputColumnHeadingsSection class.</span></span> |
-
-### <a name="method-table"></a><span data-ttu-id="158c0-500">メソッド table</span><span class="sxs-lookup"><span data-stu-id="158c0-500">Method table</span></span>
-
-    public str table()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-501">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-501">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-502">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-502">Method new</span></span>
-
-<span data-ttu-id="158c0-503">OutputColumnHeadingsSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-503">Initializes a new instance of the OutputColumnHeadingsSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputdatefield"></a><span data-ttu-id="158c0-504">クラス OutputDateField</span><span class="sxs-lookup"><span data-stu-id="158c0-504">Class OutputDateField</span></span>
-    class OutputDateField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-505">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-505">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-506">例</span><span class="sxs-lookup"><span data-stu-id="158c0-506">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-507">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-507">Methods</span></span>
-
-| <span data-ttu-id="158c0-508">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-508">Method</span></span>                | <span data-ttu-id="158c0-509">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-509">Description</span></span>                                              |
-|-----------------------|----------------------------------------------------------|
-| <span data-ttu-id="158c0-510">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-510">public str toString()</span></span> | <span data-ttu-id="158c0-511">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-511">Returns a string that represents the current object.</span></span>     |
-| <span data-ttu-id="158c0-512">public Date value()</span><span class="sxs-lookup"><span data-stu-id="158c0-512">public Date value()</span></span>   |                                                          |
-| <span data-ttu-id="158c0-513">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-513">public void new()</span></span>     | <span data-ttu-id="158c0-514">OutputDateField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-514">Initializes a new instance of the OutputDateField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-515">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-515">Method toString</span></span>
-
-<span data-ttu-id="158c0-516">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-516">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-517">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-517">Return Value</span></span>
-
-<span data-ttu-id="158c0-518">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-518">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-519">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-519">Remarks</span></span>
-
-<span data-ttu-id="158c0-520">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-520">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-521">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-521">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-522">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-522">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-523">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-523">Method value</span></span>
-
-    public Date value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-524">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-524">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-525">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-525">Method new</span></span>
-
-<span data-ttu-id="158c0-526">OutputDateField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-526">Initializes a new instance of the OutputDateField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputdatetimefield"></a><span data-ttu-id="158c0-527">クラス OutputDateTimeField</span><span class="sxs-lookup"><span data-stu-id="158c0-527">Class OutputDateTimeField</span></span>
-    class OutputDateTimeField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-528">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-528">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-529">例</span><span class="sxs-lookup"><span data-stu-id="158c0-529">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-530">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-530">Methods</span></span>
-
-| <span data-ttu-id="158c0-531">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-531">Method</span></span>                  | <span data-ttu-id="158c0-532">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-532">Description</span></span>                                                  |
-|-------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="158c0-533">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-533">public str toString()</span></span>   | <span data-ttu-id="158c0-534">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-534">Returns a string that represents the current object.</span></span>         |
-| <span data-ttu-id="158c0-535">public DateTime value()</span><span class="sxs-lookup"><span data-stu-id="158c0-535">public DateTime value()</span></span> |                                                              |
-| <span data-ttu-id="158c0-536">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-536">public void new()</span></span>       | <span data-ttu-id="158c0-537">OutputDateTimeField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-537">Initializes a new instance of the OutputDateTimeField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-538">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-538">Method toString</span></span>
-
-<span data-ttu-id="158c0-539">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-539">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-540">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-540">Return Value</span></span>
-
-<span data-ttu-id="158c0-541">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-541">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-542">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-542">Remarks</span></span>
-
-<span data-ttu-id="158c0-543">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-543">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-544">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-544">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-545">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-545">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-546">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-546">Method value</span></span>
-
-    public DateTime value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-547">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-547">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-548">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-548">Method new</span></span>
-
-<span data-ttu-id="158c0-549">OutputDateTimeField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-549">Initializes a new instance of the OutputDateTimeField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputenumfield"></a><span data-ttu-id="158c0-550">クラス OutputEnumField</span><span class="sxs-lookup"><span data-stu-id="158c0-550">Class OutputEnumField</span></span>
-    class OutputEnumField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-551">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-551">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-552">例</span><span class="sxs-lookup"><span data-stu-id="158c0-552">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-553">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-553">Methods</span></span>
-
-| <span data-ttu-id="158c0-554">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-554">Method</span></span>                 | <span data-ttu-id="158c0-555">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-555">Description</span></span>                                              |
-|------------------------|----------------------------------------------------------|
-| <span data-ttu-id="158c0-556">public str getString()</span><span class="sxs-lookup"><span data-stu-id="158c0-556">public str getString()</span></span> |                                                          |
-| <span data-ttu-id="158c0-557">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-557">public void new()</span></span>      | <span data-ttu-id="158c0-558">OutputEnumField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-558">Initializes a new instance of the OutputEnumField class.</span></span> |
-
-### <a name="method-getstring"></a><span data-ttu-id="158c0-559">メソッド getString</span><span class="sxs-lookup"><span data-stu-id="158c0-559">Method getString</span></span>
-
-    public str getString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-560">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-560">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-561">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-561">Method new</span></span>
-
-<span data-ttu-id="158c0-562">OutputEnumField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-562">Initializes a new instance of the OutputEnumField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputepilogsection"></a><span data-ttu-id="158c0-563">クラス OutputEpilogSection</span><span class="sxs-lookup"><span data-stu-id="158c0-563">Class OutputEpilogSection</span></span>
-    class OutputEpilogSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-564">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-564">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-565">例</span><span class="sxs-lookup"><span data-stu-id="158c0-565">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-566">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-566">Methods</span></span>
-
-| <span data-ttu-id="158c0-567">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-567">Method</span></span>            | <span data-ttu-id="158c0-568">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-568">Description</span></span>                                                  |
-|-------------------|--------------------------------------------------------------|
-| <span data-ttu-id="158c0-569">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-569">public void new()</span></span> | <span data-ttu-id="158c0-570">OutputEpilogSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-570">Initializes a new instance of the OutputEpilogSection class.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="158c0-571">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-571">Method new</span></span>
-
-<span data-ttu-id="158c0-572">OutputEpilogSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-572">Initializes a new instance of the OutputEpilogSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputfield"></a><span data-ttu-id="158c0-573">クラス OutputField</span><span class="sxs-lookup"><span data-stu-id="158c0-573">Class OutputField</span></span>
-    class OutputField extends Object
-
-### <a name="remarks"></a><span data-ttu-id="158c0-574">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-574">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-575">例</span><span class="sxs-lookup"><span data-stu-id="158c0-575">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-576">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-576">Methods</span></span>
-
-| <span data-ttu-id="158c0-577">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-577">Method</span></span>                         | <span data-ttu-id="158c0-578">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-578">Description</span></span>                                          |
-|--------------------------------|------------------------------------------------------|
-| <span data-ttu-id="158c0-579">public Alignment alignment()</span><span class="sxs-lookup"><span data-stu-id="158c0-579">public Alignment alignment()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-580">public int backgroundColor()</span><span class="sxs-lookup"><span data-stu-id="158c0-580">public int backgroundColor()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-581">public int borderWidth()</span><span class="sxs-lookup"><span data-stu-id="158c0-581">public int borderWidth()</span></span>       |                                                      |
-| <span data-ttu-id="158c0-582">public str CSSClass()</span><span class="sxs-lookup"><span data-stu-id="158c0-582">public str CSSClass()</span></span>          |                                                      |
-| <span data-ttu-id="158c0-583">public int dateFormat()</span><span class="sxs-lookup"><span data-stu-id="158c0-583">public int dateFormat()</span></span>        |                                                      |
-| <span data-ttu-id="158c0-584">public int decimals()</span><span class="sxs-lookup"><span data-stu-id="158c0-584">public int decimals()</span></span>          |                                                      |
-| <span data-ttu-id="158c0-585">public int extendedDataType()</span><span class="sxs-lookup"><span data-stu-id="158c0-585">public int extendedDataType()</span></span>  |                                                      |
-| <span data-ttu-id="158c0-586">public FieldId fieldHandle()</span><span class="sxs-lookup"><span data-stu-id="158c0-586">public FieldId fieldHandle()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-587">public str fieldName()</span><span class="sxs-lookup"><span data-stu-id="158c0-587">public str fieldName()</span></span>         |                                                      |
-| <span data-ttu-id="158c0-588">public int fontHeight()</span><span class="sxs-lookup"><span data-stu-id="158c0-588">public int fontHeight()</span></span>        |                                                      |
-| <span data-ttu-id="158c0-589">public str fontName()</span><span class="sxs-lookup"><span data-stu-id="158c0-589">public str fontName()</span></span>          |                                                      |
-| <span data-ttu-id="158c0-590">public int foregroundColor()</span><span class="sxs-lookup"><span data-stu-id="158c0-590">public int foregroundColor()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-591">public str formatValue()</span><span class="sxs-lookup"><span data-stu-id="158c0-591">public str formatValue()</span></span>       |                                                      |
-| <span data-ttu-id="158c0-592">public int height()</span><span class="sxs-lookup"><span data-stu-id="158c0-592">public int height()</span></span>            |                                                      |
-| <span data-ttu-id="158c0-593">public int heightMode()</span><span class="sxs-lookup"><span data-stu-id="158c0-593">public int heightMode()</span></span>        |                                                      |
-| <span data-ttu-id="158c0-594">public boolean hideZeros()</span><span class="sxs-lookup"><span data-stu-id="158c0-594">public boolean hideZeros()</span></span>     |                                                      |
-| <span data-ttu-id="158c0-595">public boolean isOneline()</span><span class="sxs-lookup"><span data-stu-id="158c0-595">public boolean isOneline()</span></span>     |                                                      |
-| <span data-ttu-id="158c0-596">public boolean isOverlapping()</span><span class="sxs-lookup"><span data-stu-id="158c0-596">public boolean isOverlapping()</span></span> |                                                      |
-| <span data-ttu-id="158c0-597">public boolean italic()</span><span class="sxs-lookup"><span data-stu-id="158c0-597">public boolean italic()</span></span>        |                                                      |
-| <span data-ttu-id="158c0-598">public LateEvalMode lateEval()</span><span class="sxs-lookup"><span data-stu-id="158c0-598">public LateEvalMode lateEval()</span></span> |                                                      |
-| <span data-ttu-id="158c0-599">public LineType lineBottom()</span><span class="sxs-lookup"><span data-stu-id="158c0-599">public LineType lineBottom()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-600">public LineType lineLeft()</span><span class="sxs-lookup"><span data-stu-id="158c0-600">public LineType lineLeft()</span></span>     |                                                      |
-| <span data-ttu-id="158c0-601">public LineType lineRight()</span><span class="sxs-lookup"><span data-stu-id="158c0-601">public LineType lineRight()</span></span>    |                                                      |
-| <span data-ttu-id="158c0-602">public LineType lineTop()</span><span class="sxs-lookup"><span data-stu-id="158c0-602">public LineType lineTop()</span></span>      |                                                      |
-| <span data-ttu-id="158c0-603">public str menuFunctionHelp()</span><span class="sxs-lookup"><span data-stu-id="158c0-603">public str menuFunctionHelp()</span></span>  |                                                      |
-| <span data-ttu-id="158c0-604">public str menuFunctionName()</span><span class="sxs-lookup"><span data-stu-id="158c0-604">public str menuFunctionName()</span></span>  |                                                      |
-| <span data-ttu-id="158c0-605">public int menuFunctionType()</span><span class="sxs-lookup"><span data-stu-id="158c0-605">public int menuFunctionType()</span></span>  |                                                      |
-| <span data-ttu-id="158c0-606">public str menuFunctionWeb()</span><span class="sxs-lookup"><span data-stu-id="158c0-606">public str menuFunctionWeb()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-607">public str name()</span><span class="sxs-lookup"><span data-stu-id="158c0-607">public str name()</span></span>              |                                                      |
-| <span data-ttu-id="158c0-608">public int recId()</span><span class="sxs-lookup"><span data-stu-id="158c0-608">public int recId()</span></span>             |                                                      |
-| <span data-ttu-id="158c0-609">public boolean showPrompt()</span><span class="sxs-lookup"><span data-stu-id="158c0-609">public boolean showPrompt()</span></span>    |                                                      |
-| <span data-ttu-id="158c0-610">public boolean strikeThrough()</span><span class="sxs-lookup"><span data-stu-id="158c0-610">public boolean strikeThrough()</span></span> |                                                      |
-| <span data-ttu-id="158c0-611">public TableId tableHandle()</span><span class="sxs-lookup"><span data-stu-id="158c0-611">public TableId tableHandle()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-612">public str tableName()</span><span class="sxs-lookup"><span data-stu-id="158c0-612">public str tableName()</span></span>         |                                                      |
-| <span data-ttu-id="158c0-613">public boolean turnSign()</span><span class="sxs-lookup"><span data-stu-id="158c0-613">public boolean turnSign()</span></span>      |                                                      |
-| <span data-ttu-id="158c0-614">public int type()</span><span class="sxs-lookup"><span data-stu-id="158c0-614">public int type()</span></span>              |                                                      |
-| <span data-ttu-id="158c0-615">public boolean underline()</span><span class="sxs-lookup"><span data-stu-id="158c0-615">public boolean underline()</span></span>     |                                                      |
-| <span data-ttu-id="158c0-616">public str webMenuItemName()</span><span class="sxs-lookup"><span data-stu-id="158c0-616">public str webMenuItemName()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-617">public int webMenuItemType()</span><span class="sxs-lookup"><span data-stu-id="158c0-617">public int webMenuItemType()</span></span>   |                                                      |
-| <span data-ttu-id="158c0-618">public str webTarget()</span><span class="sxs-lookup"><span data-stu-id="158c0-618">public str webTarget()</span></span>         |                                                      |
-| <span data-ttu-id="158c0-619">public int weight()</span><span class="sxs-lookup"><span data-stu-id="158c0-619">public int weight()</span></span>            |                                                      |
-| <span data-ttu-id="158c0-620">public int width()</span><span class="sxs-lookup"><span data-stu-id="158c0-620">public int width()</span></span>             |                                                      |
-| <span data-ttu-id="158c0-621">public int widthMode()</span><span class="sxs-lookup"><span data-stu-id="158c0-621">public int widthMode()</span></span>         |                                                      |
-| <span data-ttu-id="158c0-622">public int xPos()</span><span class="sxs-lookup"><span data-stu-id="158c0-622">public int xPos()</span></span>              |                                                      |
-| <span data-ttu-id="158c0-623">public int yPos()</span><span class="sxs-lookup"><span data-stu-id="158c0-623">public int yPos()</span></span>              |                                                      |
-| <span data-ttu-id="158c0-624">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-624">public void new()</span></span>              | <span data-ttu-id="158c0-625">OutputField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-625">Initializes a new instance of the OutputField class.</span></span> |
-
-### <a name="method-alignment"></a><span data-ttu-id="158c0-626">メソッド alignment</span><span class="sxs-lookup"><span data-stu-id="158c0-626">Method alignment</span></span>
-
-    public Alignment alignment()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-627">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-627">Return Value</span></span>
-
-### <a name="method-backgroundcolor"></a><span data-ttu-id="158c0-628">メソッド backgroundColor</span><span class="sxs-lookup"><span data-stu-id="158c0-628">Method backgroundColor</span></span>
-
-    public int backgroundColor()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-629">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-629">Return Value</span></span>
-
-### <a name="method-borderwidth"></a><span data-ttu-id="158c0-630">メソッド borderWidth</span><span class="sxs-lookup"><span data-stu-id="158c0-630">Method borderWidth</span></span>
-
-    public int borderWidth()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-631">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-631">Return Value</span></span>
-
-### <a name="method-cssclass"></a><span data-ttu-id="158c0-632">メソッド CSSClass</span><span class="sxs-lookup"><span data-stu-id="158c0-632">Method CSSClass</span></span>
-
-    public str CSSClass()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-633">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-633">Return Value</span></span>
-
-### <a name="method-dateformat"></a><span data-ttu-id="158c0-634">メソッド dateFormat</span><span class="sxs-lookup"><span data-stu-id="158c0-634">Method dateFormat</span></span>
-
-    public int dateFormat()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-635">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-635">Return Value</span></span>
-
-### <a name="method-decimals"></a><span data-ttu-id="158c0-636">メソッド decimals</span><span class="sxs-lookup"><span data-stu-id="158c0-636">Method decimals</span></span>
-
-    public int decimals()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-637">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-637">Return Value</span></span>
-
-### <a name="method-extendeddatatype"></a><span data-ttu-id="158c0-638">メソッド extendedDataType</span><span class="sxs-lookup"><span data-stu-id="158c0-638">Method extendedDataType</span></span>
-
-    public int extendedDataType()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-639">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-639">Return Value</span></span>
-
-### <a name="method-fieldhandle"></a><span data-ttu-id="158c0-640">メソッド fieldHandle</span><span class="sxs-lookup"><span data-stu-id="158c0-640">Method fieldHandle</span></span>
-
-    public FieldId fieldHandle()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-641">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-641">Return Value</span></span>
-
-### <a name="method-fieldname"></a><span data-ttu-id="158c0-642">メソッド fieldName</span><span class="sxs-lookup"><span data-stu-id="158c0-642">Method fieldName</span></span>
-
-    public str fieldName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-643">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-643">Return Value</span></span>
-
-### <a name="method-fontheight"></a><span data-ttu-id="158c0-644">メソッド fontHeight</span><span class="sxs-lookup"><span data-stu-id="158c0-644">Method fontHeight</span></span>
-
-    public int fontHeight()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-645">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-645">Return Value</span></span>
-
-### <a name="method-fontname"></a><span data-ttu-id="158c0-646">メソッド fontName</span><span class="sxs-lookup"><span data-stu-id="158c0-646">Method fontName</span></span>
-
-    public str fontName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-647">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-647">Return Value</span></span>
-
-### <a name="method-foregroundcolor"></a><span data-ttu-id="158c0-648">メソッド foregroundColor</span><span class="sxs-lookup"><span data-stu-id="158c0-648">Method foregroundColor</span></span>
-
-    public int foregroundColor()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-649">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-649">Return Value</span></span>
-
-### <a name="method-formatvalue"></a><span data-ttu-id="158c0-650">メソッド formatValue</span><span class="sxs-lookup"><span data-stu-id="158c0-650">Method formatValue</span></span>
-
-    public str formatValue()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-651">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-651">Return Value</span></span>
-
-### <a name="method-height"></a><span data-ttu-id="158c0-652">メソッド height</span><span class="sxs-lookup"><span data-stu-id="158c0-652">Method height</span></span>
-
-    public int height()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-653">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-653">Return Value</span></span>
-
-### <a name="method-heightmode"></a><span data-ttu-id="158c0-654">メソッド heightMode</span><span class="sxs-lookup"><span data-stu-id="158c0-654">Method heightMode</span></span>
-
-    public int heightMode()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-655">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-655">Return Value</span></span>
-
-### <a name="method-hidezeros"></a><span data-ttu-id="158c0-656">メソッド hideZeros</span><span class="sxs-lookup"><span data-stu-id="158c0-656">Method hideZeros</span></span>
-
-    public boolean hideZeros()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-657">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-657">Return Value</span></span>
-
-### <a name="method-isoneline"></a><span data-ttu-id="158c0-658">メソッド isOneline</span><span class="sxs-lookup"><span data-stu-id="158c0-658">Method isOneline</span></span>
-
-    public boolean isOneline()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-659">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-659">Return Value</span></span>
-
-### <a name="method-isoverlapping"></a><span data-ttu-id="158c0-660">メソッド isOverlapping</span><span class="sxs-lookup"><span data-stu-id="158c0-660">Method isOverlapping</span></span>
-
-    public boolean isOverlapping()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-661">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-661">Return Value</span></span>
-
-### <a name="method-italic"></a><span data-ttu-id="158c0-662">メソッド italic</span><span class="sxs-lookup"><span data-stu-id="158c0-662">Method italic</span></span>
-
-    public boolean italic()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-663">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-663">Return Value</span></span>
-
-### <a name="method-lateeval"></a><span data-ttu-id="158c0-664">メソッド lateEval</span><span class="sxs-lookup"><span data-stu-id="158c0-664">Method lateEval</span></span>
-
-    public LateEvalMode lateEval()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-665">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-665">Return Value</span></span>
-
-### <a name="method-linebottom"></a><span data-ttu-id="158c0-666">メソッド lineBottom</span><span class="sxs-lookup"><span data-stu-id="158c0-666">Method lineBottom</span></span>
-
-    public LineType lineBottom()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-667">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-667">Return Value</span></span>
-
-### <a name="method-lineleft"></a><span data-ttu-id="158c0-668">メソッド lineLeft</span><span class="sxs-lookup"><span data-stu-id="158c0-668">Method lineLeft</span></span>
-
-    public LineType lineLeft()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-669">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-669">Return Value</span></span>
-
-### <a name="method-lineright"></a><span data-ttu-id="158c0-670">メソッド lineRight</span><span class="sxs-lookup"><span data-stu-id="158c0-670">Method lineRight</span></span>
-
-    public LineType lineRight()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-671">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-671">Return Value</span></span>
-
-### <a name="method-linetop"></a><span data-ttu-id="158c0-672">メソッド lineTop</span><span class="sxs-lookup"><span data-stu-id="158c0-672">Method lineTop</span></span>
-
-    public LineType lineTop()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-673">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-673">Return Value</span></span>
-
-### <a name="method-menufunctionhelp"></a><span data-ttu-id="158c0-674">メソッド menuFunctionHelp</span><span class="sxs-lookup"><span data-stu-id="158c0-674">Method menuFunctionHelp</span></span>
-
-    public str menuFunctionHelp()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-675">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-675">Return Value</span></span>
-
-### <a name="method-menufunctionname"></a><span data-ttu-id="158c0-676">メソッド menuFunctionName</span><span class="sxs-lookup"><span data-stu-id="158c0-676">Method menuFunctionName</span></span>
-
-    public str menuFunctionName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-677">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-677">Return Value</span></span>
-
-### <a name="method-menufunctiontype"></a><span data-ttu-id="158c0-678">メソッド menuFunctionType</span><span class="sxs-lookup"><span data-stu-id="158c0-678">Method menuFunctionType</span></span>
-
-    public int menuFunctionType()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-679">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-679">Return Value</span></span>
-
-### <a name="method-menufunctionweb"></a><span data-ttu-id="158c0-680">メソッド menuFunctionWeb</span><span class="sxs-lookup"><span data-stu-id="158c0-680">Method menuFunctionWeb</span></span>
-
-    public str menuFunctionWeb()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-681">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-681">Return Value</span></span>
-
-### <a name="method-name"></a><span data-ttu-id="158c0-682">メソッド名</span><span class="sxs-lookup"><span data-stu-id="158c0-682">Method name</span></span>
-
-    public str name()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-683">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-683">Return Value</span></span>
-
-### <a name="method-recid"></a><span data-ttu-id="158c0-684">メソッド recId</span><span class="sxs-lookup"><span data-stu-id="158c0-684">Method recId</span></span>
-
-    public int recId()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-685">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-685">Return Value</span></span>
-
-### <a name="method-showprompt"></a><span data-ttu-id="158c0-686">メソッド showPrompt</span><span class="sxs-lookup"><span data-stu-id="158c0-686">Method showPrompt</span></span>
-
-    public boolean showPrompt()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-687">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-687">Return Value</span></span>
-
-### <a name="method-strikethrough"></a><span data-ttu-id="158c0-688">メソッド strikeThrough</span><span class="sxs-lookup"><span data-stu-id="158c0-688">Method strikeThrough</span></span>
-
-    public boolean strikeThrough()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-689">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-689">Return Value</span></span>
-
-### <a name="method-tablehandle"></a><span data-ttu-id="158c0-690">メソッド tableHandle</span><span class="sxs-lookup"><span data-stu-id="158c0-690">Method tableHandle</span></span>
-
-    public TableId tableHandle()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-691">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-691">Return Value</span></span>
-
-### <a name="method-tablename"></a><span data-ttu-id="158c0-692">メソッド tableName</span><span class="sxs-lookup"><span data-stu-id="158c0-692">Method tableName</span></span>
-
-    public str tableName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-693">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-693">Return Value</span></span>
-
-### <a name="method-turnsign"></a><span data-ttu-id="158c0-694">メソッド turnSign</span><span class="sxs-lookup"><span data-stu-id="158c0-694">Method turnSign</span></span>
-
-    public boolean turnSign()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-695">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-695">Return Value</span></span>
-
-### <a name="method-type"></a><span data-ttu-id="158c0-696">メソッドのタイプ</span><span class="sxs-lookup"><span data-stu-id="158c0-696">Method type</span></span>
-
-    public int type()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-697">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-697">Return Value</span></span>
-
-### <a name="method-underline"></a><span data-ttu-id="158c0-698">メソッド underline</span><span class="sxs-lookup"><span data-stu-id="158c0-698">Method underline</span></span>
-
-    public boolean underline()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-699">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-699">Return Value</span></span>
-
-### <a name="method-webmenuitemname"></a><span data-ttu-id="158c0-700">メソッド webMenuItemName</span><span class="sxs-lookup"><span data-stu-id="158c0-700">Method webMenuItemName</span></span>
-
-    public str webMenuItemName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-701">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-701">Return Value</span></span>
-
-### <a name="method-webmenuitemtype"></a><span data-ttu-id="158c0-702">メソッド webMenuItemType</span><span class="sxs-lookup"><span data-stu-id="158c0-702">Method webMenuItemType</span></span>
-
-    public int webMenuItemType()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-703">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-703">Return Value</span></span>
-
-### <a name="method-webtarget"></a><span data-ttu-id="158c0-704">メソッド webTarget</span><span class="sxs-lookup"><span data-stu-id="158c0-704">Method webTarget</span></span>
-
-    public str webTarget()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-705">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-705">Return Value</span></span>
-
-### <a name="method-weight"></a><span data-ttu-id="158c0-706">メソッド weight</span><span class="sxs-lookup"><span data-stu-id="158c0-706">Method weight</span></span>
-
-    public int weight()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-707">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-707">Return Value</span></span>
-
-### <a name="method-width"></a><span data-ttu-id="158c0-708">メソッド width</span><span class="sxs-lookup"><span data-stu-id="158c0-708">Method width</span></span>
-
-    public int width()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-709">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-709">Return Value</span></span>
-
-### <a name="method-widthmode"></a><span data-ttu-id="158c0-710">メソッド widthMode</span><span class="sxs-lookup"><span data-stu-id="158c0-710">Method widthMode</span></span>
-
-    public int widthMode()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-711">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-711">Return Value</span></span>
-
-### <a name="method-xpos"></a><span data-ttu-id="158c0-712">メソッド xPos</span><span class="sxs-lookup"><span data-stu-id="158c0-712">Method xPos</span></span>
-
-    public int xPos()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-713">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-713">Return Value</span></span>
-
-### <a name="method-ypos"></a><span data-ttu-id="158c0-714">メソッド yPos</span><span class="sxs-lookup"><span data-stu-id="158c0-714">Method yPos</span></span>
-
-    public int yPos()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-715">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-715">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-716">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-716">Method new</span></span>
-
-<span data-ttu-id="158c0-717">OutputField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-717">Initializes a new instance of the OutputField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputfootersection"></a><span data-ttu-id="158c0-718">クラス OutputFooterSection</span><span class="sxs-lookup"><span data-stu-id="158c0-718">Class OutputFooterSection</span></span>
-    class OutputFooterSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-719">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-719">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-720">例</span><span class="sxs-lookup"><span data-stu-id="158c0-720">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-721">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-721">Methods</span></span>
-
-| <span data-ttu-id="158c0-722">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-722">Method</span></span>                                | <span data-ttu-id="158c0-723">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-723">Description</span></span>                                                  |
-|---------------------------------------|--------------------------------------------------------------|
-| <span data-ttu-id="158c0-724">public int level()</span><span class="sxs-lookup"><span data-stu-id="158c0-724">public int level()</span></span>                    |                                                              |
-| <span data-ttu-id="158c0-725">public int level2field(\[int level\])</span><span class="sxs-lookup"><span data-stu-id="158c0-725">public int level2field(\[int level\])</span></span> |                                                              |
-| <span data-ttu-id="158c0-726">public int niveau()</span><span class="sxs-lookup"><span data-stu-id="158c0-726">public int niveau()</span></span>                   |                                                              |
-| <span data-ttu-id="158c0-727">public int table()</span><span class="sxs-lookup"><span data-stu-id="158c0-727">public int table()</span></span>                    |                                                              |
-| <span data-ttu-id="158c0-728">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-728">public void new()</span></span>                     | <span data-ttu-id="158c0-729">OutputFooterSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-729">Initializes a new instance of the OutputFooterSection class.</span></span> |
-
-### <a name="method-level"></a><span data-ttu-id="158c0-730">メソッド level</span><span class="sxs-lookup"><span data-stu-id="158c0-730">Method level</span></span>
-
-    public int level()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-731">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-731">Return Value</span></span>
-
-### <a name="method-level2field"></a><span data-ttu-id="158c0-732">メソッド level2field</span><span class="sxs-lookup"><span data-stu-id="158c0-732">Method level2field</span></span>
-
-    public int level2field([int level])
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-733">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-733">Parameters</span></span>
-
-<span data-ttu-id="158c0-734">level</span><span class="sxs-lookup"><span data-stu-id="158c0-734">level</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-735">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-735">Return Value</span></span>
-
-### <a name="method-niveau"></a><span data-ttu-id="158c0-736">メソッド niveau</span><span class="sxs-lookup"><span data-stu-id="158c0-736">Method niveau</span></span>
-
-    public int niveau()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-737">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-737">Return Value</span></span>
-
-### <a name="method-table"></a><span data-ttu-id="158c0-738">メソッド table</span><span class="sxs-lookup"><span data-stu-id="158c0-738">Method table</span></span>
-
-    public int table()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-739">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-739">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-740">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-740">Method new</span></span>
-
-<span data-ttu-id="158c0-741">OutputFooterSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-741">Initializes a new instance of the OutputFooterSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputheadersection"></a><span data-ttu-id="158c0-742">クラス OutputHeaderSection</span><span class="sxs-lookup"><span data-stu-id="158c0-742">Class OutputHeaderSection</span></span>
-    class OutputHeaderSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-743">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-743">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-744">例</span><span class="sxs-lookup"><span data-stu-id="158c0-744">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-745">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-745">Methods</span></span>
-
-| <span data-ttu-id="158c0-746">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-746">Method</span></span>             | <span data-ttu-id="158c0-747">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-747">Description</span></span>                                                  |
-|--------------------|--------------------------------------------------------------|
-| <span data-ttu-id="158c0-748">public int table()</span><span class="sxs-lookup"><span data-stu-id="158c0-748">public int table()</span></span> |                                                              |
-| <span data-ttu-id="158c0-749">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-749">public void new()</span></span>  | <span data-ttu-id="158c0-750">OutputHeaderSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-750">Initializes a new instance of the OutputHeaderSection class.</span></span> |
-
-### <a name="method-table"></a><span data-ttu-id="158c0-751">メソッド table</span><span class="sxs-lookup"><span data-stu-id="158c0-751">Method table</span></span>
-
-    public int table()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-752">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-752">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-753">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-753">Method new</span></span>
-
-<span data-ttu-id="158c0-754">OutputHeaderSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-754">Initializes a new instance of the OutputHeaderSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputintegerfield"></a><span data-ttu-id="158c0-755">クラス OutputIntegerField</span><span class="sxs-lookup"><span data-stu-id="158c0-755">Class OutputIntegerField</span></span>
-    class OutputIntegerField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-756">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-756">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-757">例</span><span class="sxs-lookup"><span data-stu-id="158c0-757">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-758">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-758">Methods</span></span>
-
-| <span data-ttu-id="158c0-759">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-759">Method</span></span>                        | <span data-ttu-id="158c0-760">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-760">Description</span></span>                                                 |
-|-------------------------------|-------------------------------------------------------------|
-| <span data-ttu-id="158c0-761">public int displaceNegative()</span><span class="sxs-lookup"><span data-stu-id="158c0-761">public int displaceNegative()</span></span> |                                                             |
-| <span data-ttu-id="158c0-762">public boolean negative()</span><span class="sxs-lookup"><span data-stu-id="158c0-762">public boolean negative()</span></span>     |                                                             |
-| <span data-ttu-id="158c0-763">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-763">public str toString()</span></span>         | <span data-ttu-id="158c0-764">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-764">Returns a string that represents the current object.</span></span>        |
-| <span data-ttu-id="158c0-765">public int value()</span><span class="sxs-lookup"><span data-stu-id="158c0-765">public int value()</span></span>            |                                                             |
-| <span data-ttu-id="158c0-766">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-766">public void new()</span></span>             | <span data-ttu-id="158c0-767">OutputIntegerField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-767">Initializes a new instance of the OutputIntegerField class.</span></span> |
-
-### <a name="method-displacenegative"></a><span data-ttu-id="158c0-768">メソッド displaceNegative</span><span class="sxs-lookup"><span data-stu-id="158c0-768">Method displaceNegative</span></span>
-
-    public int displaceNegative()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-769">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-769">Return Value</span></span>
-
-### <a name="method-negative"></a><span data-ttu-id="158c0-770">メソッド negative</span><span class="sxs-lookup"><span data-stu-id="158c0-770">Method negative</span></span>
-
-    public boolean negative()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-771">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-771">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-772">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-772">Method toString</span></span>
-
-<span data-ttu-id="158c0-773">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-773">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-774">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-774">Return Value</span></span>
-
-<span data-ttu-id="158c0-775">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-775">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-776">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-776">Remarks</span></span>
-
-<span data-ttu-id="158c0-777">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-777">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-778">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-778">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-779">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-779">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-780">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-780">Method value</span></span>
-
-    public int value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-781">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-781">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-782">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-782">Method new</span></span>
-
-<span data-ttu-id="158c0-783">OutputIntegerField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-783">Initializes a new instance of the OutputIntegerField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputlabelfield"></a><span data-ttu-id="158c0-784">クラス OutputLabelField</span><span class="sxs-lookup"><span data-stu-id="158c0-784">Class OutputLabelField</span></span>
-    class OutputLabelField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-785">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-785">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-786">例</span><span class="sxs-lookup"><span data-stu-id="158c0-786">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-787">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-787">Methods</span></span>
-
-| <span data-ttu-id="158c0-788">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-788">Method</span></span>                | <span data-ttu-id="158c0-789">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-789">Description</span></span>                                               |
-|-----------------------|-----------------------------------------------------------|
-| <span data-ttu-id="158c0-790">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-790">public str toString()</span></span> | <span data-ttu-id="158c0-791">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-791">Returns a string that represents the current object.</span></span>      |
-| <span data-ttu-id="158c0-792">public str value()</span><span class="sxs-lookup"><span data-stu-id="158c0-792">public str value()</span></span>    |                                                           |
-| <span data-ttu-id="158c0-793">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-793">public void new()</span></span>     | <span data-ttu-id="158c0-794">OutputLabelField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-794">Initializes a new instance of the OutputLabelField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-795">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-795">Method toString</span></span>
-
-<span data-ttu-id="158c0-796">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-796">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-797">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-797">Return Value</span></span>
-
-<span data-ttu-id="158c0-798">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-798">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-799">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-799">Remarks</span></span>
-
-<span data-ttu-id="158c0-800">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-800">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-801">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-801">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-802">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-802">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-803">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-803">Method value</span></span>
-
-    public str value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-804">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-804">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-805">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-805">Method new</span></span>
-
-<span data-ttu-id="158c0-806">OutputLabelField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-806">Initializes a new instance of the OutputLabelField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputpage"></a><span data-ttu-id="158c0-807">クラス OutputPage</span><span class="sxs-lookup"><span data-stu-id="158c0-807">Class OutputPage</span></span>
-    class OutputPage extends Object
-
-### <a name="remarks"></a><span data-ttu-id="158c0-808">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-808">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-809">例</span><span class="sxs-lookup"><span data-stu-id="158c0-809">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-810">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-810">Methods</span></span>
-
-| <span data-ttu-id="158c0-811">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-811">Method</span></span>                        | <span data-ttu-id="158c0-812">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-812">Description</span></span>                                         |
-|-------------------------------|-----------------------------------------------------|
-| <span data-ttu-id="158c0-813">public int bottomMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-813">public int bottomMargin()</span></span>     |                                                     |
-| <span data-ttu-id="158c0-814">public str fontName()</span><span class="sxs-lookup"><span data-stu-id="158c0-814">public str fontName()</span></span>         |                                                     |
-| <span data-ttu-id="158c0-815">public int height()</span><span class="sxs-lookup"><span data-stu-id="158c0-815">public int height()</span></span>           |                                                     |
-| <span data-ttu-id="158c0-816">public boolean layoutRTL()</span><span class="sxs-lookup"><span data-stu-id="158c0-816">public boolean layoutRTL()</span></span>    |                                                     |
-| <span data-ttu-id="158c0-817">public int leftMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-817">public int leftMargin()</span></span>       |                                                     |
-| <span data-ttu-id="158c0-818">public str pageNumber()</span><span class="sxs-lookup"><span data-stu-id="158c0-818">public str pageNumber()</span></span>       |                                                     |
-| <span data-ttu-id="158c0-819">public int rightMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-819">public int rightMargin()</span></span>      |                                                     |
-| <span data-ttu-id="158c0-820">public int sectionNo()</span><span class="sxs-lookup"><span data-stu-id="158c0-820">public int sectionNo()</span></span>        |                                                     |
-| <span data-ttu-id="158c0-821">public int topMargin()</span><span class="sxs-lookup"><span data-stu-id="158c0-821">public int topMargin()</span></span>        |                                                     |
-| <span data-ttu-id="158c0-822">public int unusedBottom()</span><span class="sxs-lookup"><span data-stu-id="158c0-822">public int unusedBottom()</span></span>     |                                                     |
-| <span data-ttu-id="158c0-823">public int unusedLeft()</span><span class="sxs-lookup"><span data-stu-id="158c0-823">public int unusedLeft()</span></span>       |                                                     |
-| <span data-ttu-id="158c0-824">public int unusedRight()</span><span class="sxs-lookup"><span data-stu-id="158c0-824">public int unusedRight()</span></span>      |                                                     |
-| <span data-ttu-id="158c0-825">public int unusedTop()</span><span class="sxs-lookup"><span data-stu-id="158c0-825">public int unusedTop()</span></span>        |                                                     |
-| <span data-ttu-id="158c0-826">public int virtualPageWidth()</span><span class="sxs-lookup"><span data-stu-id="158c0-826">public int virtualPageWidth()</span></span> |                                                     |
-| <span data-ttu-id="158c0-827">public int width()</span><span class="sxs-lookup"><span data-stu-id="158c0-827">public int width()</span></span>            |                                                     |
-| <span data-ttu-id="158c0-828">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-828">public void new()</span></span>             | <span data-ttu-id="158c0-829">OutputPage クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-829">Initializes a new instance of the OutputPage class.</span></span> |
-
-### <a name="method-bottommargin"></a><span data-ttu-id="158c0-830">メソッド bottomMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-830">Method bottomMargin</span></span>
-
-    public int bottomMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-831">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-831">Return Value</span></span>
-
-### <a name="method-fontname"></a><span data-ttu-id="158c0-832">メソッド fontName</span><span class="sxs-lookup"><span data-stu-id="158c0-832">Method fontName</span></span>
-
-    public str fontName()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-833">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-833">Return Value</span></span>
-
-### <a name="method-height"></a><span data-ttu-id="158c0-834">メソッド height</span><span class="sxs-lookup"><span data-stu-id="158c0-834">Method height</span></span>
-
-    public int height()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-835">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-835">Return Value</span></span>
-
-### <a name="method-layoutrtl"></a><span data-ttu-id="158c0-836">メソッド layoutRTL</span><span class="sxs-lookup"><span data-stu-id="158c0-836">Method layoutRTL</span></span>
-
-    public boolean layoutRTL()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-837">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-837">Return Value</span></span>
-
-### <a name="method-leftmargin"></a><span data-ttu-id="158c0-838">メソッド leftMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-838">Method leftMargin</span></span>
-
-    public int leftMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-839">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-839">Return Value</span></span>
-
-### <a name="method-pagenumber"></a><span data-ttu-id="158c0-840">メソッド pageNumber</span><span class="sxs-lookup"><span data-stu-id="158c0-840">Method pageNumber</span></span>
-
-    public str pageNumber()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-841">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-841">Return Value</span></span>
-
-### <a name="method-rightmargin"></a><span data-ttu-id="158c0-842">メソッド rightMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-842">Method rightMargin</span></span>
-
-    public int rightMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-843">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-843">Return Value</span></span>
-
-### <a name="method-sectionno"></a><span data-ttu-id="158c0-844">メソッド sectionNo</span><span class="sxs-lookup"><span data-stu-id="158c0-844">Method sectionNo</span></span>
-
-    public int sectionNo()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-845">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-845">Return Value</span></span>
-
-### <a name="method-topmargin"></a><span data-ttu-id="158c0-846">メソッド topMargin</span><span class="sxs-lookup"><span data-stu-id="158c0-846">Method topMargin</span></span>
-
-    public int topMargin()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-847">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-847">Return Value</span></span>
-
-### <a name="method-unusedbottom"></a><span data-ttu-id="158c0-848">メソッド unusedBottom</span><span class="sxs-lookup"><span data-stu-id="158c0-848">Method unusedBottom</span></span>
-
-    public int unusedBottom()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-849">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-849">Return Value</span></span>
-
-### <a name="method-unusedleft"></a><span data-ttu-id="158c0-850">メソッド unusedLeft</span><span class="sxs-lookup"><span data-stu-id="158c0-850">Method unusedLeft</span></span>
-
-    public int unusedLeft()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-851">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-851">Return Value</span></span>
-
-### <a name="method-unusedright"></a><span data-ttu-id="158c0-852">メソッド unusedRight</span><span class="sxs-lookup"><span data-stu-id="158c0-852">Method unusedRight</span></span>
-
-    public int unusedRight()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-853">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-853">Return Value</span></span>
-
-### <a name="method-unusedtop"></a><span data-ttu-id="158c0-854">メソッド unusedTop</span><span class="sxs-lookup"><span data-stu-id="158c0-854">Method unusedTop</span></span>
-
-    public int unusedTop()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-855">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-855">Return Value</span></span>
-
-### <a name="method-virtualpagewidth"></a><span data-ttu-id="158c0-856">メソッド virtualPageWidth</span><span class="sxs-lookup"><span data-stu-id="158c0-856">Method virtualPageWidth</span></span>
-
-    public int virtualPageWidth()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-857">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-857">Return Value</span></span>
-
-### <a name="method-width"></a><span data-ttu-id="158c0-858">メソッド width</span><span class="sxs-lookup"><span data-stu-id="158c0-858">Method width</span></span>
-
-    public int width()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-859">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-859">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-860">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-860">Method new</span></span>
-
-<span data-ttu-id="158c0-861">OutputPage クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-861">Initializes a new instance of the OutputPage class.</span></span>
-
-    public void new()
-
-## <a name="class-outputpagefootersection"></a><span data-ttu-id="158c0-862">クラス OutputPageFooterSection</span><span class="sxs-lookup"><span data-stu-id="158c0-862">Class OutputPageFooterSection</span></span>
-    class OutputPageFooterSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-863">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-863">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-864">例</span><span class="sxs-lookup"><span data-stu-id="158c0-864">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-865">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-865">Methods</span></span>
-
-| <span data-ttu-id="158c0-866">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-866">Method</span></span>            | <span data-ttu-id="158c0-867">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-867">Description</span></span>                                                      |
-|-------------------|------------------------------------------------------------------|
-| <span data-ttu-id="158c0-868">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-868">public void new()</span></span> | <span data-ttu-id="158c0-869">OutputPageFooterSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-869">Initializes a new instance of the OutputPageFooterSection class.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="158c0-870">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-870">Method new</span></span>
-
-<span data-ttu-id="158c0-871">OutputPageFooterSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-871">Initializes a new instance of the OutputPageFooterSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputpageheadersection"></a><span data-ttu-id="158c0-872">クラス OutputPageHeaderSection</span><span class="sxs-lookup"><span data-stu-id="158c0-872">Class OutputPageHeaderSection</span></span>
-    class OutputPageHeaderSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-873">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-873">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-874">例</span><span class="sxs-lookup"><span data-stu-id="158c0-874">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-875">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-875">Methods</span></span>
-
-| <span data-ttu-id="158c0-876">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-876">Method</span></span>            | <span data-ttu-id="158c0-877">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-877">Description</span></span>                                                      |
-|-------------------|------------------------------------------------------------------|
-| <span data-ttu-id="158c0-878">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-878">public void new()</span></span> | <span data-ttu-id="158c0-879">OutputPageHeaderSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-879">Initializes a new instance of the OutputPageHeaderSection class.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="158c0-880">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-880">Method new</span></span>
-
-<span data-ttu-id="158c0-881">OutputPageHeaderSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-881">Initializes a new instance of the OutputPageHeaderSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputprogrammablesection"></a><span data-ttu-id="158c0-882">クラス OutputProgrammableSection</span><span class="sxs-lookup"><span data-stu-id="158c0-882">Class OutputProgrammableSection</span></span>
-    class OutputProgrammableSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-883">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-883">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-884">例</span><span class="sxs-lookup"><span data-stu-id="158c0-884">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-885">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-885">Methods</span></span>
-
-| <span data-ttu-id="158c0-886">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-886">Method</span></span>              | <span data-ttu-id="158c0-887">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-887">Description</span></span>                                                        |
-|---------------------|--------------------------------------------------------------------|
-| <span data-ttu-id="158c0-888">public str number()</span><span class="sxs-lookup"><span data-stu-id="158c0-888">public str number()</span></span> |                                                                    |
-| <span data-ttu-id="158c0-889">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-889">public void new()</span></span>   | <span data-ttu-id="158c0-890">OutputProgrammableSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-890">Initializes a new instance of the OutputProgrammableSection class.</span></span> |
-
-### <a name="method-number"></a><span data-ttu-id="158c0-891">メソッド number</span><span class="sxs-lookup"><span data-stu-id="158c0-891">Method number</span></span>
-
-    public str number()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-892">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-892">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-893">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-893">Method new</span></span>
-
-<span data-ttu-id="158c0-894">OutputProgrammableSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-894">Initializes a new instance of the OutputProgrammableSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputprologsection"></a><span data-ttu-id="158c0-895">クラス OutputPrologSection</span><span class="sxs-lookup"><span data-stu-id="158c0-895">Class OutputPrologSection</span></span>
-    class OutputPrologSection extends OuputSection
-
-### <a name="remarks"></a><span data-ttu-id="158c0-896">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-896">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-897">例</span><span class="sxs-lookup"><span data-stu-id="158c0-897">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-898">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-898">Methods</span></span>
-
-| <span data-ttu-id="158c0-899">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-899">Method</span></span>            | <span data-ttu-id="158c0-900">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-900">Description</span></span>                                                  |
-|-------------------|--------------------------------------------------------------|
-| <span data-ttu-id="158c0-901">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-901">public void new()</span></span> | <span data-ttu-id="158c0-902">OutputPrologSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-902">Initializes a new instance of the OutputPrologSection class.</span></span> |
-
-### <a name="method-new"></a><span data-ttu-id="158c0-903">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-903">Method new</span></span>
-
-<span data-ttu-id="158c0-904">OutputPrologSection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-904">Initializes a new instance of the OutputPrologSection class.</span></span>
-
-    public void new()
-
-## <a name="class-outputrealfield"></a><span data-ttu-id="158c0-905">クラス OutputRealField</span><span class="sxs-lookup"><span data-stu-id="158c0-905">Class OutputRealField</span></span>
-    class OutputRealField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-906">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-906">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-907">例</span><span class="sxs-lookup"><span data-stu-id="158c0-907">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-908">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-908">Methods</span></span>
-
-| <span data-ttu-id="158c0-909">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-909">Method</span></span>                        | <span data-ttu-id="158c0-910">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-910">Description</span></span>                                              |
-|-------------------------------|----------------------------------------------------------|
-| <span data-ttu-id="158c0-911">public int displaceNegative()</span><span class="sxs-lookup"><span data-stu-id="158c0-911">public int displaceNegative()</span></span> |                                                          |
-| <span data-ttu-id="158c0-912">public boolean negative()</span><span class="sxs-lookup"><span data-stu-id="158c0-912">public boolean negative()</span></span>     |                                                          |
-| <span data-ttu-id="158c0-913">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-913">public str toString()</span></span>         | <span data-ttu-id="158c0-914">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-914">Returns a string that represents the current object.</span></span>     |
-| <span data-ttu-id="158c0-915">public Real value()</span><span class="sxs-lookup"><span data-stu-id="158c0-915">public Real value()</span></span>           |                                                          |
-| <span data-ttu-id="158c0-916">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-916">public void new()</span></span>             | <span data-ttu-id="158c0-917">OutputRealField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-917">Initializes a new instance of the OutputRealField class.</span></span> |
-
-### <a name="method-displacenegative"></a><span data-ttu-id="158c0-918">メソッド displaceNegative</span><span class="sxs-lookup"><span data-stu-id="158c0-918">Method displaceNegative</span></span>
-
-    public int displaceNegative()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-919">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-919">Return Value</span></span>
-
-### <a name="method-negative"></a><span data-ttu-id="158c0-920">メソッド negative</span><span class="sxs-lookup"><span data-stu-id="158c0-920">Method negative</span></span>
-
-    public boolean negative()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-921">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-921">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-922">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-922">Method toString</span></span>
-
-<span data-ttu-id="158c0-923">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-923">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-924">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-924">Return Value</span></span>
-
-<span data-ttu-id="158c0-925">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-925">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-926">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-926">Remarks</span></span>
-
-<span data-ttu-id="158c0-927">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-927">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-928">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-928">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-929">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-929">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-930">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-930">Method value</span></span>
-
-    public Real value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-931">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-931">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-932">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-932">Method new</span></span>
-
-<span data-ttu-id="158c0-933">OutputRealField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-933">Initializes a new instance of the OutputRealField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputshapefield"></a><span data-ttu-id="158c0-934">クラス OutputShapeField</span><span class="sxs-lookup"><span data-stu-id="158c0-934">Class OutputShapeField</span></span>
-    class OutputShapeField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-935">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-935">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-936">例</span><span class="sxs-lookup"><span data-stu-id="158c0-936">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-937">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-937">Methods</span></span>
-
-| <span data-ttu-id="158c0-938">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-938">Method</span></span>                       | <span data-ttu-id="158c0-939">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-939">Description</span></span>                                               |
-|------------------------------|-----------------------------------------------------------|
-| <span data-ttu-id="158c0-940">public int borderWidth()</span><span class="sxs-lookup"><span data-stu-id="158c0-940">public int borderWidth()</span></span>     |                                                           |
-| <span data-ttu-id="158c0-941">public LineType lineType()</span><span class="sxs-lookup"><span data-stu-id="158c0-941">public LineType lineType()</span></span>   |                                                           |
-| <span data-ttu-id="158c0-942">public ShapeType shapeType()</span><span class="sxs-lookup"><span data-stu-id="158c0-942">public ShapeType shapeType()</span></span> |                                                           |
-| <span data-ttu-id="158c0-943">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-943">public str toString()</span></span>        | <span data-ttu-id="158c0-944">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-944">Returns a string that represents the current object.</span></span>      |
-| <span data-ttu-id="158c0-945">public int value()</span><span class="sxs-lookup"><span data-stu-id="158c0-945">public int value()</span></span>           |                                                           |
-| <span data-ttu-id="158c0-946">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-946">public void new()</span></span>            | <span data-ttu-id="158c0-947">OutputShapeField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-947">Initializes a new instance of the OutputShapeField class.</span></span> |
-
-### <a name="method-borderwidth"></a><span data-ttu-id="158c0-948">メソッド borderWidth</span><span class="sxs-lookup"><span data-stu-id="158c0-948">Method borderWidth</span></span>
-
-    public int borderWidth()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-949">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-949">Return Value</span></span>
-
-### <a name="method-linetype"></a><span data-ttu-id="158c0-950">メソッド lineType</span><span class="sxs-lookup"><span data-stu-id="158c0-950">Method lineType</span></span>
-
-    public LineType lineType()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-951">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-951">Return Value</span></span>
-
-### <a name="method-shapetype"></a><span data-ttu-id="158c0-952">メソッド shapeType</span><span class="sxs-lookup"><span data-stu-id="158c0-952">Method shapeType</span></span>
-
-    public ShapeType shapeType()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-953">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-953">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-954">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-954">Method toString</span></span>
-
-<span data-ttu-id="158c0-955">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-955">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-956">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-956">Return Value</span></span>
-
-<span data-ttu-id="158c0-957">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-957">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-958">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-958">Remarks</span></span>
-
-<span data-ttu-id="158c0-959">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-959">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-960">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-960">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-961">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-961">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-962">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-962">Method value</span></span>
-
-    public int value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-963">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-963">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-964">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-964">Method new</span></span>
-
-<span data-ttu-id="158c0-965">OutputShapeField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-965">Initializes a new instance of the OutputShapeField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputstatictextfield"></a><span data-ttu-id="158c0-966">クラス OutputStaticTextField</span><span class="sxs-lookup"><span data-stu-id="158c0-966">Class OutputStaticTextField</span></span>
-    class OutputStaticTextField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-967">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-967">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-968">例</span><span class="sxs-lookup"><span data-stu-id="158c0-968">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-969">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-969">Methods</span></span>
-
-| <span data-ttu-id="158c0-970">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-970">Method</span></span>                | <span data-ttu-id="158c0-971">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-971">Description</span></span>                                                    |
-|-----------------------|----------------------------------------------------------------|
-| <span data-ttu-id="158c0-972">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-972">public str toString()</span></span> | <span data-ttu-id="158c0-973">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-973">Returns a string that represents the current object.</span></span>           |
-| <span data-ttu-id="158c0-974">public str value()</span><span class="sxs-lookup"><span data-stu-id="158c0-974">public str value()</span></span>    |                                                                |
-| <span data-ttu-id="158c0-975">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-975">public void new()</span></span>     | <span data-ttu-id="158c0-976">OutputStaticTextField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-976">Initializes a new instance of the OutputStaticTextField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-977">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-977">Method toString</span></span>
-
-<span data-ttu-id="158c0-978">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-978">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-979">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-979">Return Value</span></span>
-
-<span data-ttu-id="158c0-980">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-980">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-981">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-981">Remarks</span></span>
-
-<span data-ttu-id="158c0-982">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-982">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-983">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-983">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-984">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-984">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-985">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-985">Method value</span></span>
-
-    public str value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-986">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-986">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-987">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-987">Method new</span></span>
-
-<span data-ttu-id="158c0-988">OutputStaticTextField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-988">Initializes a new instance of the OutputStaticTextField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputstringfield"></a><span data-ttu-id="158c0-989">クラス OutputStringField</span><span class="sxs-lookup"><span data-stu-id="158c0-989">Class OutputStringField</span></span>
-    class OutputStringField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-990">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-990">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-991">例</span><span class="sxs-lookup"><span data-stu-id="158c0-991">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-992">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-992">Methods</span></span>
-
-| <span data-ttu-id="158c0-993">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-993">Method</span></span>                | <span data-ttu-id="158c0-994">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-994">Description</span></span>                                                |
-|-----------------------|------------------------------------------------------------|
-| <span data-ttu-id="158c0-995">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-995">public str toString()</span></span> | <span data-ttu-id="158c0-996">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-996">Returns a string that represents the current object.</span></span>       |
-| <span data-ttu-id="158c0-997">public str value()</span><span class="sxs-lookup"><span data-stu-id="158c0-997">public str value()</span></span>    |                                                            |
-| <span data-ttu-id="158c0-998">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-998">public void new()</span></span>     | <span data-ttu-id="158c0-999">OutputStringField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-999">Initializes a new instance of the OutputStringField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-1000">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-1000">Method toString</span></span>
-
-<span data-ttu-id="158c0-1001">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1001">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1002">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1002">Return Value</span></span>
-
-<span data-ttu-id="158c0-1003">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-1003">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-1004">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1004">Remarks</span></span>
-
-<span data-ttu-id="158c0-1005">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1005">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-1006">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-1006">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-1007">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1007">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-1008">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-1008">Method value</span></span>
-
-    public str value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1009">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1009">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-1010">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-1010">Method new</span></span>
-
-<span data-ttu-id="158c0-1011">OutputStringField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1011">Initializes a new instance of the OutputStringField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputsumfield"></a><span data-ttu-id="158c0-1012">クラス OutputSumField</span><span class="sxs-lookup"><span data-stu-id="158c0-1012">Class OutputSumField</span></span>
-    class OutputSumField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-1013">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1013">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-1014">例</span><span class="sxs-lookup"><span data-stu-id="158c0-1014">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-1015">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-1015">Methods</span></span>
-
-| <span data-ttu-id="158c0-1016">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-1016">Method</span></span>                | <span data-ttu-id="158c0-1017">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-1017">Description</span></span>                                             |
-|-----------------------|---------------------------------------------------------|
-| <span data-ttu-id="158c0-1018">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-1018">public str toString()</span></span> | <span data-ttu-id="158c0-1019">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1019">Returns a string that represents the current object.</span></span>    |
-| <span data-ttu-id="158c0-1020">public Real value()</span><span class="sxs-lookup"><span data-stu-id="158c0-1020">public Real value()</span></span>   |                                                         |
-| <span data-ttu-id="158c0-1021">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-1021">public void new()</span></span>     | <span data-ttu-id="158c0-1022">OutputSumField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1022">Initializes a new instance of the OutputSumField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-1023">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-1023">Method toString</span></span>
-
-<span data-ttu-id="158c0-1024">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1024">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1025">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1025">Return Value</span></span>
-
-<span data-ttu-id="158c0-1026">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-1026">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-1027">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1027">Remarks</span></span>
-
-<span data-ttu-id="158c0-1028">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1028">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-1029">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-1029">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-1030">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1030">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-1031">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-1031">Method value</span></span>
-
-    public Real value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1032">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1032">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-1033">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-1033">Method new</span></span>
-
-<span data-ttu-id="158c0-1034">OutputSumField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1034">Initializes a new instance of the OutputSumField class.</span></span>
-
-    public void new()
-
-## <a name="class-outputtimefield"></a><span data-ttu-id="158c0-1035">クラス OutputTimeField</span><span class="sxs-lookup"><span data-stu-id="158c0-1035">Class OutputTimeField</span></span>
-    class OutputTimeField extends OutputField
-
-### <a name="remarks"></a><span data-ttu-id="158c0-1036">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1036">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-1037">例</span><span class="sxs-lookup"><span data-stu-id="158c0-1037">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-1038">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-1038">Methods</span></span>
-
-| <span data-ttu-id="158c0-1039">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-1039">Method</span></span>                | <span data-ttu-id="158c0-1040">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-1040">Description</span></span>                                              |
-|-----------------------|----------------------------------------------------------|
-| <span data-ttu-id="158c0-1041">public str toString()</span><span class="sxs-lookup"><span data-stu-id="158c0-1041">public str toString()</span></span> | <span data-ttu-id="158c0-1042">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1042">Returns a string that represents the current object.</span></span>     |
-| <span data-ttu-id="158c0-1043">public int value()</span><span class="sxs-lookup"><span data-stu-id="158c0-1043">public int value()</span></span>    |                                                          |
-| <span data-ttu-id="158c0-1044">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-1044">public void new()</span></span>     | <span data-ttu-id="158c0-1045">OutputTimeField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1045">Initializes a new instance of the OutputTimeField class.</span></span> |
-
-### <a name="method-tostring"></a><span data-ttu-id="158c0-1046">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="158c0-1046">Method toString</span></span>
-
-<span data-ttu-id="158c0-1047">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1047">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1048">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1048">Return Value</span></span>
-
-<span data-ttu-id="158c0-1049">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="158c0-1049">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-1050">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1050">Remarks</span></span>
-
-<span data-ttu-id="158c0-1051">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1051">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="158c0-1052">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="158c0-1052">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="158c0-1053">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1053">For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</span></span>
-
-### <a name="method-value"></a><span data-ttu-id="158c0-1054">メソッド value</span><span class="sxs-lookup"><span data-stu-id="158c0-1054">Method value</span></span>
-
-    public int value()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1055">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1055">Return Value</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-1056">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-1056">Method new</span></span>
-
-<span data-ttu-id="158c0-1057">OutputTimeField クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1057">Initializes a new instance of the OutputTimeField class.</span></span>
-
-    public void new()
-
-## <a name="class-overwritesystemfieldspermission"></a><span data-ttu-id="158c0-1058">クラス OverwriteSystemfieldsPermission</span><span class="sxs-lookup"><span data-stu-id="158c0-1058">Class OverwriteSystemfieldsPermission</span></span>
-    class OverwriteSystemfieldsPermission extends CodeAccessPermission
-
-### <a name="remarks"></a><span data-ttu-id="158c0-1059">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1059">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="158c0-1060">例</span><span class="sxs-lookup"><span data-stu-id="158c0-1060">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="158c0-1061">メソッド</span><span class="sxs-lookup"><span data-stu-id="158c0-1061">Methods</span></span>
-
-| <span data-ttu-id="158c0-1062">方法</span><span class="sxs-lookup"><span data-stu-id="158c0-1062">Method</span></span>                                                 | <span data-ttu-id="158c0-1063">説明</span><span class="sxs-lookup"><span data-stu-id="158c0-1063">Description</span></span>                                                                                                               |
-|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="158c0-1064">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="158c0-1064">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="158c0-1065">アクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1065">Creates and returns a copy of a permission class object.</span></span>                                                                  |
-| <span data-ttu-id="158c0-1066">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="158c0-1066">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="158c0-1067">現在のアクセス許可が、派生クラスによって上書きされている場合に、指定されたアクセス許可のサブセットであるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1067">Determines whether a current permission is a subset of the specified permission when it is overridden by a derived class.</span></span> |
-| <span data-ttu-id="158c0-1068">public void new()</span><span class="sxs-lookup"><span data-stu-id="158c0-1068">public void new()</span></span>                                      | <span data-ttu-id="158c0-1069">OverwriteSystemfieldsPermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1069">Initializes a new instance of the OverwriteSystemfieldsPermission class.</span></span>                                                  |
-
-### <a name="method-copy"></a><span data-ttu-id="158c0-1070">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="158c0-1070">Method copy</span></span>
-
-<span data-ttu-id="158c0-1071">アクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1071">Creates and returns a copy of a permission class object.</span></span>
-
-    public CodeAccessPermission copy()
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1072">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1072">Return Value</span></span>
-
-<span data-ttu-id="158c0-1073">現在の派生クラスオブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="158c0-1073">A copy of the derived class object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-1074">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1074">Remarks</span></span>
-
-<span data-ttu-id="158c0-1075">API のセキュリティをさらに強化するプロセスの一部として、このメソッドをオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="158c0-1075">You can override this method as part of the process of making an API more secure.</span></span> <span data-ttu-id="158c0-1076">詳細については、「サーバー層で実行する API の保護」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="158c0-1076">For more information, see “Securing an API that Executes on the Server Tier.”</span></span>
-
-### <a name="method-issubsetof"></a><span data-ttu-id="158c0-1077">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="158c0-1077">Method isSubsetOf</span></span>
-
-<span data-ttu-id="158c0-1078">現在のアクセス許可が、派生クラスによって上書きされている場合に、指定されたアクセス許可のサブセットであるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1078">Determines whether a current permission is a subset of the specified permission when it is overridden by a derived class.</span></span>
-
-    public boolean isSubsetOf(CodeAccessPermission target)
-
-#### <a name="parameters"></a><span data-ttu-id="158c0-1079">パラメーター</span><span class="sxs-lookup"><span data-stu-id="158c0-1079">Parameters</span></span>
-
-<span data-ttu-id="158c0-1080">target</span><span class="sxs-lookup"><span data-stu-id="158c0-1080">target</span></span>  
-<span data-ttu-id="158c0-1081">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="158c0-1081">A CodeAccessPermission class object.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="158c0-1082">戻り値</span><span class="sxs-lookup"><span data-stu-id="158c0-1082">Return Value</span></span>
-
-<span data-ttu-id="158c0-1083">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="158c0-1083">true if a current permission is a subset of a specified permission; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="158c0-1084">備考</span><span class="sxs-lookup"><span data-stu-id="158c0-1084">Remarks</span></span>
-
-<span data-ttu-id="158c0-1085">API のセキュリティをさらに強化するプロセスの一部として、メソッドをオーバーライドすることができます。</span><span class="sxs-lookup"><span data-stu-id="158c0-1085">You can override the method as part of the process of making an API more secure.</span></span> <span data-ttu-id="158c0-1086">詳細については、「サーバー層で実行する API の保護」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="158c0-1086">For more information, see “Securing an API that Executes on the Server Tier.”</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="158c0-1087">メソッド new</span><span class="sxs-lookup"><span data-stu-id="158c0-1087">Method new</span></span>
-
-<span data-ttu-id="158c0-1088">OverwriteSystemfieldsPermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="158c0-1088">Initializes a new instance of the OverwriteSystemfieldsPermission class.</span></span>
-
-    public void new()
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="o-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>o-classes.8fba57.629a4dfcdf1205bcb2c659039822c0a63f5e759c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>629a4dfcdf1205bcb2c659039822c0a63f5e759c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\o-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>O classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">O クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>System API classes that start with the letter O.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 O で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>O classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">O クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>System API classes that start with the letter O.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 O で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Class Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The Object class is the base class from which all other classes are derived.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスは、その他のすべてのクラスの派生元となる基本クラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Methods in the Object class can be called for any object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト クラスのメソッドは、任意のオブジェクトに対して呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The Object class is used to allow assignment and equality checks to be performed without the developer having to know the actual type of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスは、開発者がオブジェクトの実際のタイプを知らなくても、割り当ておよび等価チェックを実行できるようにするために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The methods can be grouped into three groups:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは 3 つのグループにグループ化できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Time out methods - can be used to activate a method after a specified period of time has passed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイム アウト メソッド - 指定した時間が経過した後にメソッドをアクティブにするために使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Process methods, such as the Wait, Notify, and NotifyAll method - used to control process flow and to wait for another object to finish its task.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセス フローを制御したり、別のオブジェクトがそのタスクを終了するを待機するために使用される、Wait、Notify、NotifyAll メソッドなどのメソッドを処理します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Class methods - return basic information about the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス メソッド - オブジェクトに関する基本情報を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>public boolean equal(Object object)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean equal(Object object)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Determines whether the specified object is equal to the current one.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>public int getTimeOutTimerHandle()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int getTimeOutTimerHandle()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Returns the timer handle for the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのタイマー ハンドルを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>public ClassId handle()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ClassId handle()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Retrieves the handle of the class of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのクラスのハンドルを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>public boolean SysObsoleteAttribute()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean SysObsoleteAttribute()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>public int SysObsoleteAttribute(str Method, int WaitTime, <ph id="ph1">\[</ph>boolean idle<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int SysObsoleteAttribute(str Method, int WaitTime, <ph id="ph1">\[</ph>boolean idle<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>public int usageCount()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int usageCount()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Returns the current number of references, that is, the value of the reference counter, that the object has.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが持つ参照 (つまり、参照カウンターの値) の現在の番号を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>public str xml(<ph id="ph1">\[</ph>int indent<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str xml(<ph id="ph1">\[</ph>int indent<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Returns an XML string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す XML 文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>public boolean Equals(System.Object obj)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean Equals(System.Object obj)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>public int GetHashCode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int GetHashCode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>public void wait()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void wait()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Pauses a process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセスを一時停止します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>public void cancelTimeOut(int timerHandle)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void cancelTimeOut(int timerHandle)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Cancels a previous method call to the setTimeOut method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setTimeOut メソッドへ以前のメソッド呼び出しをキャンセルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>public void notify()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void notify()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Releases the hold on an object that has called the wait method on this object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトの待機メソッドを呼び出したオブジェクトのホールドを解放します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>public void notifyAll()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void notifyAll()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Releases a lock on the object that was issued by the wait method on this object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトの待機メソッドによって発行されたオブジェクトのロックを解放します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Method equal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド equal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Determines whether the specified object is equal to the current one.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定されたオブジェクトが現在のオブジェクトと等しいかどうかを判定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The object to compare with the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトと比較するオブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>true if the specified object is equal to the current object; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定したオブジェクトが現在のオブジェクトと等しい場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>The default implementation of the Object::equal method supports only reference equality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Derived classes can, however, override the Object::equal method to support value equality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドをオーバーライドできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>The following example compares the current instance with another object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、現在のインスタンスと別のオブジェクトを比較します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Method getTimeOutTimerHandle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getTimeOutTimerHandle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Returns the timer handle for the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのタイマー ハンドルを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The timer handle of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのタイマー ハンドル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>The timer handle of the object is set by calling the setTimeOut method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのタイマー ハンドルは、setTimeOut メソッドを呼び出すことによって設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>The following example sets a timeout, and then cancels it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、タイムアウトを設定してから、タイムアウトをキャンセルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Method handle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド handle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Retrieves the handle of the class of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトのクラスのハンドルを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>The handle, that is, the classId property, of the class of the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトのクラスのハンドル、つまり classId プロパティです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>There is no guarantee that the handle of a class will remain unchanged in later releases, or after an export or import for user-defined classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスの処理が後のリリースで変更されない、またはユーザー定義クラスのエクスポートまたはインポートの後に変更されないという保証はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>It is strongly advised that the value that is returned by this method will not be used as a persistent constant to refer to the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドによって返される値を、クラスを参照する永続的な定数として使用しないことを強くお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Method SysObsoleteAttribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド SysObsoleteAttribute</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Method SysObsoleteAttribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド SysObsoleteAttribute</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>WaitTime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WaitTime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>idle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">idle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>The following example prints out the class name of o.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、o のクラス名を出力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Method usageCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド usageCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Returns the current number of references, that is, the value of the reference counter, that the object has.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが持つ参照 (つまり、参照カウンターの値) の現在の番号を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>The current number of references that the object has.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが持つ参照の現在の数。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>When an object is created, its reference counter equals 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが作成されると、その参照カウンターが 1 になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>When a new reference is created, its value increases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい参照が作成されると、その値が増加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>As a reference goes out of scope, its value decreases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スコープ外の参照は、値が減少します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>The following example prints the number of references for objA to the output window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、objA の参照の数を出力ウィンドウに出力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Method xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Returns an XML string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す XML 文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>indent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インデント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>The amount of indentation of the returned XML string; optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返された XML 文字列のインデントの量 (省略可能)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>An XML string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す XML 文字列です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>This method can be overridden to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Method Equals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド Equals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>obj</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">obj</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Method GetHashCode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド GetHashCode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Method wait</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド wait</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Pauses a process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセスを一時停止します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>The most common use for this method is to start an object that asks the user for some input and then call the wait method on that object, such as a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドの最も一般的な使い方は、ユーザーに何らかの入力を求めるオブジェクトを開始し、そのオブジェクト (フォームなど) の wait メソッドを呼び出すことです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>The next line of code is not executed until the object has called the notify or notifyAll method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコード行は、オブジェクトが notify メソッド または notifyAll メソッドを呼び出すまで実行されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>When the wait method is called from a form, you do not have to call the notify methods manually because forms call the Object.notifyAll method when the user either closes the form or presses the Apply button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームから wait メソッドが呼び出されるとき、ユーザーは通知メソッドを手動で呼び出す必要はありません。それは、ユーザーがフォームを閉じるか、または [適用] ボタンを押すと、フォームが Object.notifyAll メソッドを呼び出すためです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>This method is not meant for thread synchronization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドはスレッドの同期のためのものではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Use the waitUntilSignaled method instead.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに waitUntilSignaled メソッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>The following example opens the GetUserInput dialog, blocks, and waits until the user has closed the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、GetUserInput ダイアログを開き、ブロックし、ユーザーがフォームを閉じるまで待機します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Method cancelTimeOut</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド cancelTimeOut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Cancels a previous method call to the setTimeOut method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setTimeOut メソッドへ以前のメソッド呼び出しをキャンセルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>timerHandle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">timerHandle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>The handle of the scheduled event to delete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除する予定イベントのハンドル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>The handle is the value that is returned by the Object.setTimeOut method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ハンドルは、Object.setTimeOut メソッドによって返される値です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Any scheduled time-out calls that have not yet been processed are automatically deleted when the object itself is deleted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">まだ処理されていないスケジュールされたタイムアウト呼び出しは、オブジェクト自体が削除されると自動的に削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>The following example calls the Object.setTimeOut method, and then cancels the time-out.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、Object.setTimeOut メソッドを呼び出した後、タイムアウトをキャンセルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Method notify</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notify</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Releases the hold on an object that has called the wait method on this object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトの待機メソッドを呼び出したオブジェクトのホールドを解放します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>The following example locks an object, and then releases it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、オブジェクトをロックしてから解放します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Method notifyAll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド notifyAll</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Releases a lock on the object that was issued by the wait method on this object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトの待機メソッドによって発行されたオブジェクトのロックを解放します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>In the current implementation of this method, there is no difference between calling the notify method and the notifyAll method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドの現在の実装では、notify メソッドと notifyAll メソッドの呼び出しに違いはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Forms will automatically call the notifyAll method when the user closes the form or presses the Apply button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームは、ユーザーがフォームを閉じるまたは「適用」ボタンを押す際に、notifyAll メソッドを自動で呼び出します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>The following example demonstrates the usage of the notifyAll method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、notifyAll メソッドの使用方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Class ObjectIdent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ObjectIdent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>public Object object()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Object object()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>public void new(Object object)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(Object object)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Method object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド object</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Class ObjectRun</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ObjectRun</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Used as the base class for the FormRun and ReportRun classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FormRun クラスおよび ReportRun クラスの基本クラスとして使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>public xArgs args()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public xArgs args()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Returns the arguments that the object was constructed with.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが作成された引数を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>public boolean isDetached()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isDetached()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Communicates whether an ObjectRun.detach method call has been made on this object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトに対して ObjectRun.detach メソッド呼び出しが行われたかどうかを通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>public void attach()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void attach()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Reverses a call to the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの呼び出しが取り消されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>This is the reverse of calling the ObjectRun.detach method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、ObjectRun.detach メソッドの呼び出しの逆です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Reversing the call disallows any further switching of focus between windows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">呼び出しを取り消すと、ウィンドウ間で今後フォーカスを切り替えることができなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>public void detach()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void detach()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Allows focus to be switched between windows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーカスをウィンドウ間で切り替えられるように許可します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Method args</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド args</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Returns the arguments that the object was constructed with.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトが作成された引数を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>An Args Class object that contains the arguments for the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトの引数を含む Args クラス オブジェクトです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Method isDetached</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isDetached</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Communicates whether an ObjectRun.detach method call has been made on this object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトに対して ObjectRun.detach メソッド呼び出しが行われたかどうかを通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>true if detach has been called; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デタッチが呼び出された場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Method attach</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド attach</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Reverses a call to the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの呼び出しが取り消されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>This is the reverse of calling the ObjectRun.detach method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、ObjectRun.detach メソッドの呼び出しの逆です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Reversing the call disallows any further switching of focus between windows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">呼び出しを取り消すと、ウィンドウ間で今後フォーカスを切り替えることができなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Method detach</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド detach</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Allows focus to be switched between windows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーカスをウィンドウ間で切り替えられるように許可します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>For example, a new form is created from an existing form by calling the new form's run method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、新しいフォームの実行方法を呼び出すことにより、新しいフォームが既存のフォームから作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Calling a run method changes the focus to the new form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実行メソッドを呼び出すと、フォーカスが新しいフォームに変更されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Calling the detach method allows the user to return to the first form without closing the second form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">解除メソッドを呼び出すと、ユーザーは 2 番目のフォームを閉じることなく最初のフォームに戻ることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Calling the ObjectRun.attach Method method reverses the effects of the detach method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ObjectRun.attach Method メソッドの呼び出しは、解除メソッドの影響を取り消します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Class OciConnection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OciConnection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>The OciConnection class establishes a database connection that uses Oci (Oracle Call Interface).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OciConnection クラスは、Oci (Oracle 呼び出しインターフェイス) を使用するデータベース接続を確立します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>In the context of an OciConnection instance, SQL statements are run, and results are returned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OciConnection インスタンスのコンテキストでは、SQL ステートメントが実行され、結果が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>If the connection cannot be established based on the information that is specified for the LoginProperty instance, an exception is thrown, and the reason is posted in the Infolog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LoginProperty インスタンスに対して指定されている情報を基に、接続を確立できない場合、例外および理由は、情報ログに転記されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>This class can be used only when Oracle client software is installed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、Oracle クライアント ソフトウェアがインストールされている場合にのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>public void new(LoginProperty Login)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(LoginProperty Login)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Establishes a connection to an Oracle database, based on logon properties such as the user name and password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名とパスワードなどのログオン プロパティに基づいた、Oracle データベースへの接続を確立します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Establishes a connection to an Oracle database, based on logon properties such as the user name and password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名とパスワードなどのログオン プロパティに基づいた、Oracle データベースへの接続を確立します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Login</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ログイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>A LoginProperty class instance that contains the user name, password, data source name, database, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名、パスワード、データ ソース名、データベース、などを含む LoginProperty クラスのインスタンス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Class OdbcConnection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OdbcConnection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>The OdbcConnection class establishes a database connection by using ODBC (Open Database Connectivity).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OdbcConnection クラスは、ODBC (Open Database Connectivity) を使用してデータベース接続を確立します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>In the context of an OdbcConnection instance, SQL statements are run, and results are returned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OdbcConnection インスタンスのコンテキストでは、SQL ステートメントが実行され、結果が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>If a connection to the ODBC data source cannot be established, an exception is thrown, and the reason is posted in the Infolog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ODBC データ ソースへの接続を確立できない場合、例外がスローされ、その原因が Infolog に転記されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>This class works only if the correct ODBC drivers have been installed and configured in ODBC Manager in Control Panel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、正しい ODBC ドライバーがインストールされ、コントロール パネルの ODBC マネージャーで構成されている場合にのみ機能します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>public void new(LoginProperty Login)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(LoginProperty Login)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Establishes a connection to a data source, based on logon properties such as the user name and password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名とパスワードなどのログオン プロパティに基づいた、データ ソースへの接続を確立します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Establishes a connection to a data source, based on logon properties such as the user name and password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名とパスワードなどのログオン プロパティに基づいた、データ ソースへの接続を確立します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Login</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ログイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>A LoginProperty class instance that contains the user name, password, data source name, database, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー名、パスワード、データ ソース名、データベース、などを含む LoginProperty クラスのインスタンス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Class OleCommand</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OleCommand</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>public COMVariant exec(str cmdGroup, int cmdId, int cmdExecOption, COMVariant parm)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public COMVariant exec(str cmdGroup, int cmdId, int cmdExecOption, COMVariant parm)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>public void finalize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void finalize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>public void new(ComInterface comObject)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new(ComInterface comObject)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Method exec</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド exec</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>cmdGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cmdGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>cmdId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cmdId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>cmdExecOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">cmdExecOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>parm</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parm</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Method finalize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド finalize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Initializes a new instance of the Object class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Object クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>comObject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">comObject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Class OuputSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OuputSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>public int arrangeMethod()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int arrangeMethod()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>public int backgroundColor()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int backgroundColor()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>public LineThickness borderWidth()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineThickness borderWidth()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>public int bottomMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int bottomMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>public HeadingsStrategy columnHeadingsStrategy()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public HeadingsStrategy columnHeadingsStrategy()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>public str fontName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str fontName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>public int leftMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int leftMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>public LineType lineBottom()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineBottom()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>public LineType lineLeft()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineLeft()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>public LineType lineRight()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineRight()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>public LineType lineTop()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineTop()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>public int nextVerticalPos()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int nextVerticalPos()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>public int rightMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int rightMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>public ReportBlockType sectionType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ReportBlockType sectionType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>public int topMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int topMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>public int type()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int type()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>public int verticalPos()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int verticalPos()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Initializes a new instance of the OuputSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OuputSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Method arrangeMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド arrangeMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Method backgroundColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド backgroundColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Method borderWidth</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド borderWidth</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Method bottomMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド bottomMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Method columnHeadingsStrategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド columnHeadingsStrategy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Method fontName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fontName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Method leftMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド leftMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Method lineBottom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineBottom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Method lineLeft</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineLeft</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Method lineRight</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineRight</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Method lineTop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineTop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Method nextVerticalPos</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextVerticalPos</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Method rightMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rightMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Method sectionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sectionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Method topMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド topMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>Method type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのタイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Method verticalPos</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド verticalPos</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Initializes a new instance of the OuputSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OuputSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Class OutputAutoLabelField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputAutoLabelField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>public boolean leadIn()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean leadIn()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>public str value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Initializes a new instance of the OutputAutoLabelField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputAutoLabelField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Method leadIn</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド leadIn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Initializes a new instance of the OutputAutoLabelField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputAutoLabelField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Class OutputBitmapField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputBitmapField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>public str imageFileName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str imageFileName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>public boolean resize()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean resize()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>public int resourceId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int resourceId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>public container value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public container value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Initializes a new instance of the OutputBitmapField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputBitmapField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Method imageFileName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド imageFileName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Method resize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド resize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>Method resourceId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド resourceId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Initializes a new instance of the OutputBitmapField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputBitmapField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>Class OutputBodySection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputBodySection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>public int recId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int recId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>public int table()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int table()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>Initializes a new instance of the OutputBodySection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputBodySection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Method recId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド recId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Initializes a new instance of the OutputBodySection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputBodySection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>Class OutputColumnHeadingsSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputColumnHeadingsSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>public str table()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str table()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>Initializes a new instance of the OutputColumnHeadingsSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputColumnHeadingsSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>Initializes a new instance of the OutputColumnHeadingsSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputColumnHeadingsSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>Class OutputDateField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputDateField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>public Date value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Date value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>Initializes a new instance of the OutputDateField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputDateField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Initializes a new instance of the OutputDateField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputDateField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>Class OutputDateTimeField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputDateTimeField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>public DateTime value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public DateTime value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Initializes a new instance of the OutputDateTimeField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputDateTimeField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Initializes a new instance of the OutputDateTimeField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputDateTimeField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>Class OutputEnumField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputEnumField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>public str getString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>Initializes a new instance of the OutputEnumField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputEnumField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>Method getString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Initializes a new instance of the OutputEnumField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputEnumField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Class OutputEpilogSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputEpilogSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>Initializes a new instance of the OutputEpilogSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputEpilogSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>Initializes a new instance of the OutputEpilogSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputEpilogSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>Class OutputField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>public Alignment alignment()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Alignment alignment()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>public int backgroundColor()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int backgroundColor()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>public int borderWidth()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int borderWidth()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>public str CSSClass()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str CSSClass()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>public int dateFormat()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int dateFormat()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>public int decimals()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int decimals()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>public int extendedDataType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int extendedDataType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>public FieldId fieldHandle()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public FieldId fieldHandle()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>public str fieldName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str fieldName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>public int fontHeight()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int fontHeight()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>public str fontName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str fontName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>public int foregroundColor()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int foregroundColor()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>public str formatValue()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str formatValue()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>public int height()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int height()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>public int heightMode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int heightMode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>public boolean hideZeros()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean hideZeros()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>public boolean isOneline()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isOneline()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>public boolean isOverlapping()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isOverlapping()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>public boolean italic()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean italic()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>public LateEvalMode lateEval()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LateEvalMode lateEval()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>public LineType lineBottom()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineBottom()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>public LineType lineLeft()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineLeft()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>public LineType lineRight()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineRight()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>public LineType lineTop()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineTop()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>public str menuFunctionHelp()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str menuFunctionHelp()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>public str menuFunctionName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str menuFunctionName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>public int menuFunctionType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int menuFunctionType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>public str menuFunctionWeb()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str menuFunctionWeb()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>public str name()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str name()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>public int recId()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int recId()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>public boolean showPrompt()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean showPrompt()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>public boolean strikeThrough()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean strikeThrough()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>public TableId tableHandle()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public TableId tableHandle()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>public str tableName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str tableName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>public boolean turnSign()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean turnSign()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>public int type()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int type()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>public boolean underline()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean underline()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>public str webMenuItemName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str webMenuItemName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>public int webMenuItemType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int webMenuItemType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>public str webTarget()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str webTarget()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>public int weight()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int weight()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>public int width()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int width()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>public int widthMode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int widthMode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>public int xPos()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int xPos()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>public int yPos()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int yPos()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>Initializes a new instance of the OutputField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>Method alignment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド alignment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>Method backgroundColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド backgroundColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>Method borderWidth</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド borderWidth</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>Method CSSClass</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド CSSClass</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>Method dateFormat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド dateFormat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>Method decimals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド decimals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>Method extendedDataType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド extendedDataType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>Method fieldHandle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldHandle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>Method fieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>Method fontHeight</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fontHeight</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>Method fontName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fontName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source>Method foregroundColor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド foregroundColor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>Method formatValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド formatValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>Method height</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド height</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>Method heightMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド heightMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>Method hideZeros</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド hideZeros</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>Method isOneline</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isOneline</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>Method isOverlapping</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isOverlapping</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>Method italic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド italic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>Method lateEval</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lateEval</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>Method lineBottom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineBottom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source>Method lineLeft</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineLeft</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>Method lineRight</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineRight</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>Method lineTop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineTop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>Method menuFunctionHelp</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド menuFunctionHelp</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>Method menuFunctionName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド menuFunctionName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>Method menuFunctionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド menuFunctionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>Method menuFunctionWeb</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド menuFunctionWeb</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>Method name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>Method recId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド recId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>Method showPrompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド showPrompt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>Method strikeThrough</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド strikeThrough</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>Method tableHandle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableHandle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>Method tableName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド tableName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>Method turnSign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド turnSign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>Method type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのタイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>Method underline</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド underline</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>Method webMenuItemName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド webMenuItemName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>Method webMenuItemType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド webMenuItemType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>Method webTarget</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド webTarget</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Method weight</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド weight</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>Method width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド width</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>Method widthMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド widthMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>Method xPos</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド xPos</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>Method yPos</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド yPos</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>Initializes a new instance of the OutputField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>Class OutputFooterSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputFooterSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>public int level()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int level()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>public int level2field(<ph id="ph1">\[</ph>int level<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int level2field(<ph id="ph1">\[</ph>int level<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>public int niveau()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int niveau()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>public int table()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int table()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>Initializes a new instance of the OutputFooterSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputFooterSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>Method level</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド level</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>Method level2field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド level2field</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>level</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">level</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>Method niveau</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド niveau</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Initializes a new instance of the OutputFooterSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputFooterSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>Class OutputHeaderSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputHeaderSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>public int table()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int table()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>Initializes a new instance of the OutputHeaderSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputHeaderSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>Method table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド table</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>Initializes a new instance of the OutputHeaderSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputHeaderSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>Class OutputIntegerField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputIntegerField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>public int displaceNegative()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int displaceNegative()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>public boolean negative()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean negative()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>public int value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>Initializes a new instance of the OutputIntegerField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputIntegerField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source>Method displaceNegative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド displaceNegative</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>Method negative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド negative</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>Initializes a new instance of the OutputIntegerField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputIntegerField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>Class OutputLabelField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputLabelField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source>public str value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>Initializes a new instance of the OutputLabelField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputLabelField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>Initializes a new instance of the OutputLabelField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputLabelField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source>Class OutputPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>public int bottomMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int bottomMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>public str fontName()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str fontName()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>public int height()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int height()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source>public boolean layoutRTL()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean layoutRTL()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>public int leftMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int leftMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>public str pageNumber()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str pageNumber()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source>public int rightMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int rightMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>public int sectionNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int sectionNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>public int topMargin()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int topMargin()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>public int unusedBottom()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unusedBottom()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>public int unusedLeft()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unusedLeft()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>public int unusedRight()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unusedRight()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>public int unusedTop()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int unusedTop()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>public int virtualPageWidth()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int virtualPageWidth()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>public int width()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int width()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>Initializes a new instance of the OutputPage class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPage クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>Method bottomMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド bottomMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source>Method fontName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド fontName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>Method height</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド height</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>Method layoutRTL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド layoutRTL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>Method leftMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド leftMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>Method pageNumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド pageNumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>Method rightMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド rightMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source>Method sectionNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド sectionNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>Method topMargin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド topMargin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source>Method unusedBottom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unusedBottom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source>Method unusedLeft</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unusedLeft</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source>Method unusedRight</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unusedRight</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source>Method unusedTop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unusedTop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source>Method virtualPageWidth</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド virtualPageWidth</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source>Method width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド width</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>Initializes a new instance of the OutputPage class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPage クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>Class OutputPageFooterSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputPageFooterSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>Initializes a new instance of the OutputPageFooterSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPageFooterSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>Initializes a new instance of the OutputPageFooterSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPageFooterSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source>Class OutputPageHeaderSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputPageHeaderSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="875">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="876">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="877">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="878">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="879">
+          <source>Initializes a new instance of the OutputPageHeaderSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPageHeaderSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="880">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="881">
+          <source>Initializes a new instance of the OutputPageHeaderSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPageHeaderSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="882">
+          <source>Class OutputProgrammableSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputProgrammableSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="883">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="884">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="885">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="886">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="887">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="888">
+          <source>public str number()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str number()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="889">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="890">
+          <source>Initializes a new instance of the OutputProgrammableSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputProgrammableSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="891">
+          <source>Method number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド number</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="892">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="893">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="894">
+          <source>Initializes a new instance of the OutputProgrammableSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputProgrammableSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="895">
+          <source>Class OutputPrologSection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputPrologSection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="896">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="897">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="898">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="899">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="900">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="901">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="902">
+          <source>Initializes a new instance of the OutputPrologSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPrologSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="903">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="904">
+          <source>Initializes a new instance of the OutputPrologSection class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputPrologSection クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="905">
+          <source>Class OutputRealField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputRealField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="906">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="907">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="908">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="909">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="910">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="911">
+          <source>public int displaceNegative()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int displaceNegative()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="912">
+          <source>public boolean negative()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean negative()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="913">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="914">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="915">
+          <source>public Real value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Real value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="916">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="917">
+          <source>Initializes a new instance of the OutputRealField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputRealField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="918">
+          <source>Method displaceNegative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド displaceNegative</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="919">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="920">
+          <source>Method negative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド negative</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="921">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="922">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="923">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="924">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="925">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="926">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="927">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="928">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="929">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="930">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="931">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="932">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="933">
+          <source>Initializes a new instance of the OutputRealField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputRealField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="934">
+          <source>Class OutputShapeField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputShapeField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="935">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="936">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="937">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="938">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="939">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="940">
+          <source>public int borderWidth()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int borderWidth()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="941">
+          <source>public LineType lineType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public LineType lineType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="942">
+          <source>public ShapeType shapeType()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public ShapeType shapeType()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="943">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="944">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="945">
+          <source>public int value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="946">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="947">
+          <source>Initializes a new instance of the OutputShapeField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputShapeField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="948">
+          <source>Method borderWidth</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド borderWidth</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="949">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="950">
+          <source>Method lineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="951">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="952">
+          <source>Method shapeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド shapeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="953">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="954">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="955">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="956">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="957">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="958">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="959">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="960">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="961">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="962">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="963">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="964">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="965">
+          <source>Initializes a new instance of the OutputShapeField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputShapeField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="966">
+          <source>Class OutputStaticTextField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputStaticTextField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="967">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="968">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="969">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="970">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="971">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="972">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="973">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="974">
+          <source>public str value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="975">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="976">
+          <source>Initializes a new instance of the OutputStaticTextField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputStaticTextField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="977">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="978">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="979">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="980">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="981">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="982">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="983">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="984">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="985">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="986">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="987">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="988">
+          <source>Initializes a new instance of the OutputStaticTextField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputStaticTextField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="989">
+          <source>Class OutputStringField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputStringField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="990">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="991">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="992">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="993">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="994">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="995">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="996">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="997">
+          <source>public str value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="998">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="999">
+          <source>Initializes a new instance of the OutputStringField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputStringField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1000">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1001">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1002">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1003">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1004">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1005">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1006">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1007">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1008">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1009">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1010">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1011">
+          <source>Initializes a new instance of the OutputStringField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputStringField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1012">
+          <source>Class OutputSumField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputSumField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1013">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1014">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1015">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1016">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1017">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1018">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1019">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1020">
+          <source>public Real value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public Real value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1021">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1022">
+          <source>Initializes a new instance of the OutputSumField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputSumField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1023">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1024">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1025">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1026">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1027">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1028">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1029">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1030">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1031">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1032">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1033">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1034">
+          <source>Initializes a new instance of the OutputSumField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputSumField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1035">
+          <source>Class OutputTimeField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OutputTimeField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1036">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1037">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1038">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1039">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1040">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1041">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1042">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1043">
+          <source>public int value()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int value()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1044">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1045">
+          <source>Initializes a new instance of the OutputTimeField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputTimeField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1046">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1047">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1048">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1049">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1050">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1051">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1052">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1053">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and the type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1054">
+          <source>Method value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1055">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1056">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1057">
+          <source>Initializes a new instance of the OutputTimeField class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OutputTimeField クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1058">
+          <source>Class OverwriteSystemfieldsPermission</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス OverwriteSystemfieldsPermission</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1059">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1060">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1061">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1062">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1063">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1064">
+          <source>public CodeAccessPermission copy()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public CodeAccessPermission copy()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1065">
+          <source>Creates and returns a copy of a permission class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス許可クラス オブジェクトのコピーを作成し、返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1066">
+          <source>public boolean isSubsetOf(CodeAccessPermission target)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isSubsetOf(CodeAccessPermission target)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1067">
+          <source>Determines whether a current permission is a subset of the specified permission when it is overridden by a derived class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が、派生クラスによって上書きされている場合に、指定されたアクセス許可のサブセットであるかどうかを判断します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1068">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1069">
+          <source>Initializes a new instance of the OverwriteSystemfieldsPermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OverwriteSystemfieldsPermission クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1070">
+          <source>Method copy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド copy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1071">
+          <source>Creates and returns a copy of a permission class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス許可クラス オブジェクトのコピーを作成し、返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1072">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1073">
+          <source>A copy of the derived class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在の派生クラスオブジェクトのコピーです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1074">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1075">
+          <source>You can override this method as part of the process of making an API more secure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">API のセキュリティをさらに強化するプロセスの一部として、このメソッドをオーバーライドすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1076">
+          <source>For more information, see “Securing an API that Executes on the Server Tier.”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「サーバー層で実行する API の保護」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1077">
+          <source>Method isSubsetOf</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isSubsetOf</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1078">
+          <source>Determines whether a current permission is a subset of the specified permission when it is overridden by a derived class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が、派生クラスによって上書きされている場合に、指定されたアクセス許可のサブセットであるかどうかを判断します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1079">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1080">
+          <source>target</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">target</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1081">
+          <source>A CodeAccessPermission class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラス オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1082">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1083">
+          <source>true if a current permission is a subset of a specified permission; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1084">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1085">
+          <source>You can override the method as part of the process of making an API more secure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">API のセキュリティをさらに強化するプロセスの一部として、メソッドをオーバーライドすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1086">
+          <source>For more information, see “Securing an API that Executes on the Server Tier.”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「サーバー層で実行する API の保護」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1087">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1088">
+          <source>Initializes a new instance of the OverwriteSystemfieldsPermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OverwriteSystemfieldsPermission クラスの新しいインスタンスを初期化します。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

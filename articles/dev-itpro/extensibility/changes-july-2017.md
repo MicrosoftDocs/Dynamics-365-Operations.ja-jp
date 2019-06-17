@@ -1,907 +1,2703 @@
----
-title: Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更
-description: これは、(2017 年 7 月) に実装された拡張機能の一覧です。
-author: FrankDahl
-manager: AnnBe
-ms.date: 11/08/2017
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 268724
-ms.assetid: ''
-ms.search.region: Global
-ms.author: fdahl
-ms.search.validFrom: 2017-02-28
-ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 102c66f51f1b7125923fb9fc7d627b13c72c7274
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537497"
----
-# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a><span data-ttu-id="11ba5-103">Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="11ba5-103">Extensibility changes in Finance and Operations, Enterprise edition (July 2017)</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="11ba5-104">これは、Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) に実装された拡張機能の一覧です。</span><span class="sxs-lookup"><span data-stu-id="11ba5-104">This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span> <span data-ttu-id="11ba5-105">このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。</span><span class="sxs-lookup"><span data-stu-id="11ba5-105">This version was released in July 2017 and has a build number of 7.2.11792.56024.</span></span> <span data-ttu-id="11ba5-106">拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="11ba5-106">For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).</span></span>
-
-## <a name="soft-sealed-application-models"></a><span data-ttu-id="11ba5-107">ソフト シールされたアプリケーション モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-107">Soft-sealed application models</span></span>
-
-<span data-ttu-id="11ba5-108">以下のアプリケーション中間層モデルは、今回のリリースでソフト シールされました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-108">The following application middle-tier models were soft-sealed in this release.</span></span> <span data-ttu-id="11ba5-109">これらのモデルのオーバーレイ コードは、コンパイル時に警告を生成します。</span><span class="sxs-lookup"><span data-stu-id="11ba5-109">Overlayered code in these models will generate warnings on compilation.</span></span>
-
-| <span data-ttu-id="11ba5-110">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="11ba5-110">Category</span></span>       | <span data-ttu-id="11ba5-111">モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-111">Model</span></span>         |
-| --------------- |-------------|
-| <span data-ttu-id="11ba5-112">アプリケーション フレームワーク</span><span class="sxs-lookup"><span data-stu-id="11ba5-112">Application Frameworks</span></span> | <span data-ttu-id="11ba5-113">CaseManagement</span><span class="sxs-lookup"><span data-stu-id="11ba5-113">CaseManagement</span></span> |
-| <span data-ttu-id="11ba5-114">アプリケーション フレームワーク</span><span class="sxs-lookup"><span data-stu-id="11ba5-114">Application Frameworks</span></span> | <span data-ttu-id="11ba5-115">Dimensions</span><span class="sxs-lookup"><span data-stu-id="11ba5-115">Dimensions</span></span> |
-| <span data-ttu-id="11ba5-116">アプリケーション フレームワーク</span><span class="sxs-lookup"><span data-stu-id="11ba5-116">Application Frameworks</span></span> | <span data-ttu-id="11ba5-117">Directory</span><span class="sxs-lookup"><span data-stu-id="11ba5-117">Directory</span></span> |
-| <span data-ttu-id="11ba5-118">アプリケーション フレームワーク</span><span class="sxs-lookup"><span data-stu-id="11ba5-118">Application Frameworks</span></span> | <span data-ttu-id="11ba5-119">Organization</span><span class="sxs-lookup"><span data-stu-id="11ba5-119">Organization</span></span> |
-| <span data-ttu-id="11ba5-120">アプリケーション フレームワーク</span><span class="sxs-lookup"><span data-stu-id="11ba5-120">Application Frameworks</span></span> | <span data-ttu-id="11ba5-121">Currency</span><span class="sxs-lookup"><span data-stu-id="11ba5-121">Currency</span></span>|
-| <span data-ttu-id="11ba5-122">アプリケーション フレームワーク</span><span class="sxs-lookup"><span data-stu-id="11ba5-122">Application Frameworks</span></span> | <span data-ttu-id="11ba5-123">ApplicationCommon</span><span class="sxs-lookup"><span data-stu-id="11ba5-123">ApplicationCommon</span></span>|
-| <span data-ttu-id="11ba5-124">HCM コア モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-124">HCM Core Models</span></span>| <span data-ttu-id="11ba5-125">3817938</span><span class="sxs-lookup"><span data-stu-id="11ba5-125">3817938</span></span>
-|<span data-ttu-id="11ba5-126">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-126">Tax Models</span></span> |<span data-ttu-id="11ba5-127">Tax</span><span class="sxs-lookup"><span data-stu-id="11ba5-127">Tax</span></span> |
-|<span data-ttu-id="11ba5-128">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-128">Tax Models</span></span> |<span data-ttu-id="11ba5-129">Tax Books</span><span class="sxs-lookup"><span data-stu-id="11ba5-129">Tax Books</span></span> |
-|<span data-ttu-id="11ba5-130">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-130">Tax Models</span></span> |<span data-ttu-id="11ba5-131">Tax Books Application Suite Integration</span><span class="sxs-lookup"><span data-stu-id="11ba5-131">Tax Books Application Suite Integration</span></span> |
-|<span data-ttu-id="11ba5-132">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-132">Tax Models</span></span> |<span data-ttu-id="11ba5-133">Tax Engine Application Suite Integration</span><span class="sxs-lookup"><span data-stu-id="11ba5-133">Tax Engine Application Suite Integration</span></span> |
-|<span data-ttu-id="11ba5-134">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-134">Tax Models</span></span> |<span data-ttu-id="11ba5-135">Tax Engine Configuration</span><span class="sxs-lookup"><span data-stu-id="11ba5-135">Tax Engine Configuration</span></span> |
-|<span data-ttu-id="11ba5-136">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-136">Tax Models</span></span> |<span data-ttu-id="11ba5-137">Tax Engine Interface</span><span class="sxs-lookup"><span data-stu-id="11ba5-137">Tax Engine Interface</span></span> |
-|<span data-ttu-id="11ba5-138">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-138">Tax Models</span></span> |<span data-ttu-id="11ba5-139">Tax Engine Runtime Generation</span><span class="sxs-lookup"><span data-stu-id="11ba5-139">Tax Engine Runtime Generation</span></span> |
-|<span data-ttu-id="11ba5-140">税モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-140">Tax Models</span></span> |<span data-ttu-id="11ba5-141">TaxEngine</span><span class="sxs-lookup"><span data-stu-id="11ba5-141">TaxEngine</span></span> |
-| <span data-ttu-id="11ba5-142">元伝票モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-142">Source Document Models</span></span> |<span data-ttu-id="11ba5-143">SourceDocumentation</span><span class="sxs-lookup"><span data-stu-id="11ba5-143">SourceDocumentation</span></span> |
-| <span data-ttu-id="11ba5-144">元伝票モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-144">Source Document Models</span></span> |<span data-ttu-id="11ba5-145">SourceDocumentationTypes</span><span class="sxs-lookup"><span data-stu-id="11ba5-145">SourceDocumentationTypes</span></span> |
-| <span data-ttu-id="11ba5-146">元帳モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-146">Ledger Models</span></span> |<span data-ttu-id="11ba5-147">GeneralLedger</span><span class="sxs-lookup"><span data-stu-id="11ba5-147">GeneralLedger</span></span> |
-| <span data-ttu-id="11ba5-148">元帳モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-148">Ledger Models</span></span> |<span data-ttu-id="11ba5-149">Ledger</span><span class="sxs-lookup"><span data-stu-id="11ba5-149">Ledger</span></span> |
-| <span data-ttu-id="11ba5-150">元帳モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-150">Ledger Models</span></span> |<span data-ttu-id="11ba5-151">Subledger</span><span class="sxs-lookup"><span data-stu-id="11ba5-151">Subledger</span></span> |
-| <span data-ttu-id="11ba5-152">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-152">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-153">CostAccounting</span><span class="sxs-lookup"><span data-stu-id="11ba5-153">CostAccounting</span></span> |
-| <span data-ttu-id="11ba5-154">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-154">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-155">CostAccountingAX</span><span class="sxs-lookup"><span data-stu-id="11ba5-155">CostAccountingAX</span></span> |
-| <span data-ttu-id="11ba5-156">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-156">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-157">SCMControls</span><span class="sxs-lookup"><span data-stu-id="11ba5-157">SCMControls</span></span> |
-| <span data-ttu-id="11ba5-158">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-158">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-159">SCMMobile</span><span class="sxs-lookup"><span data-stu-id="11ba5-159">SCMMobile</span></span> |
-| <span data-ttu-id="11ba5-160">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-160">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-161">UnitOfMeasure</span><span class="sxs-lookup"><span data-stu-id="11ba5-161">UnitOfMeasure</span></span> |
-| <span data-ttu-id="11ba5-162">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-162">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-163">WMSAdvancedMigration</span><span class="sxs-lookup"><span data-stu-id="11ba5-163">WMSAdvancedMigration</span></span>|
-| <span data-ttu-id="11ba5-164">中間層 SCM モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-164">Middle Tier SCM Models</span></span> | <span data-ttu-id="11ba5-165">InventoryDimensionConversion</span><span class="sxs-lookup"><span data-stu-id="11ba5-165">InventoryDimensionConversion</span></span>|
-| <span data-ttu-id="11ba5-166">ワークスペース</span><span class="sxs-lookup"><span data-stu-id="11ba5-166">Workspaces</span></span>| <span data-ttu-id="11ba5-167">ApplicationWorkspaces</span><span class="sxs-lookup"><span data-stu-id="11ba5-167">ApplicationWorkspaces</span></span> |
-| <span data-ttu-id="11ba5-168">財務</span><span class="sxs-lookup"><span data-stu-id="11ba5-168">Finance</span></span>| <span data-ttu-id="11ba5-169">Fiscalbooks</span><span class="sxs-lookup"><span data-stu-id="11ba5-169">Fiscalbooks</span></span> |
-| <span data-ttu-id="11ba5-170">管理ツール</span><span class="sxs-lookup"><span data-stu-id="11ba5-170">Management tools</span></span> | <span data-ttu-id="11ba5-171">DataUpgrade</span><span class="sxs-lookup"><span data-stu-id="11ba5-171">DataUpgrade</span></span> |
-
-## <a name="hard-sealed-application-models"></a><span data-ttu-id="11ba5-172">ハード シールされたアプリケーション モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-172">Hard-sealed application models</span></span>
-
-<span data-ttu-id="11ba5-173">以下のアプリケーション中間層モデルは、今回のリリースでハード シールされました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-173">The following application middle-tier models were hard-sealed in this release.</span></span> <span data-ttu-id="11ba5-174">これらのモデルのオーバーレイ コードは、コンパイル時にエラーを発生します。</span><span class="sxs-lookup"><span data-stu-id="11ba5-174">Overlayered code in these models will generate errors on compilation.</span></span>
-
-| <span data-ttu-id="11ba5-175">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="11ba5-175">Category</span></span>       | <span data-ttu-id="11ba5-176">モデル</span><span class="sxs-lookup"><span data-stu-id="11ba5-176">Model</span></span>         |
-| --------------- |-------------|
-| <span data-ttu-id="11ba5-177">買掛金勘定</span><span class="sxs-lookup"><span data-stu-id="11ba5-177">Accounts Payable</span></span> | <span data-ttu-id="11ba5-178">AccountsPayableMobile</span><span class="sxs-lookup"><span data-stu-id="11ba5-178">AccountsPayableMobile</span></span> |
-| <span data-ttu-id="11ba5-179">財務</span><span class="sxs-lookup"><span data-stu-id="11ba5-179">Finance</span></span> | <span data-ttu-id="11ba5-180">FinancialReportingEntityStore</span><span class="sxs-lookup"><span data-stu-id="11ba5-180">FinancialReportingEntityStore</span></span>|
-| <span data-ttu-id="11ba5-181">ツール</span><span class="sxs-lookup"><span data-stu-id="11ba5-181">Tools</span></span> | <span data-ttu-id="11ba5-182">PerformanceTool</span><span class="sxs-lookup"><span data-stu-id="11ba5-182">PerformanceTool</span></span> |
-| <span data-ttu-id="11ba5-183">経費</span><span class="sxs-lookup"><span data-stu-id="11ba5-183">Expenses</span></span> | <span data-ttu-id="11ba5-184">ExpenseMobile</span><span class="sxs-lookup"><span data-stu-id="11ba5-184">ExpenseMobile</span></span> |
-| <span data-ttu-id="11ba5-185">GER</span><span class="sxs-lookup"><span data-stu-id="11ba5-185">GER</span></span> | <span data-ttu-id="11ba5-186">ElectronicReporting</span><span class="sxs-lookup"><span data-stu-id="11ba5-186">ElectronicReporting</span></span>|
-|<span data-ttu-id="11ba5-187">GER</span><span class="sxs-lookup"><span data-stu-id="11ba5-187">GER</span></span> | <span data-ttu-id="11ba5-188">ElectronicReportingCore</span><span class="sxs-lookup"><span data-stu-id="11ba5-188">ElectronicReportingCore</span></span>|
-|<span data-ttu-id="11ba5-189">GER</span><span class="sxs-lookup"><span data-stu-id="11ba5-189">GER</span></span> | <span data-ttu-id="11ba5-190">Electronic Reporting Application Suite Integration</span><span class="sxs-lookup"><span data-stu-id="11ba5-190">Electronic Reporting Application Suite Integration</span></span>|
-
-## <a name="enumerations-that-are-now-extensible"></a><span data-ttu-id="11ba5-191">拡張可能になった列挙型</span><span class="sxs-lookup"><span data-stu-id="11ba5-191">Enumerations that are now extensible</span></span>
-
-<span data-ttu-id="11ba5-192">列挙の拡張をサポートするために以下の変更が行われました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-192">The following changes were made to support extending enumerations:</span></span>
-- <span data-ttu-id="11ba5-193">標準アプリケーションの多くの列挙が拡張可能になりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-193">Many enumerations in the standard application have been made extensible.</span></span> <span data-ttu-id="11ba5-194">列挙を拡張可能にするには、列挙に関する 2 つのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="11ba5-194">An enumeration is made extensible by setting two properties on the enumeration.</span></span> <span data-ttu-id="11ba5-195">**IsExtensible** プロパティは **はい** に、**UseEnumValue** プロパティは **いいえ** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="11ba5-195">The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**.</span></span> 
-- <span data-ttu-id="11ba5-196">一部の列挙型は状態を表します。</span><span class="sxs-lookup"><span data-stu-id="11ba5-196">Some enumerations represent state.</span></span> <span data-ttu-id="11ba5-197">拡張機能によって列挙値の追加を可能にする新しいファサード メソッドが追加されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-197">New façade methods have been added to help enable adding enumeration values by extension.</span></span> <span data-ttu-id="11ba5-198">列挙型を拡張する方法については、「[列挙値の追加](add-enum-value.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="11ba5-198">For information about how to extend an enumeration, see [Add an enum value](add-enum-value.md).</span></span>
-- <span data-ttu-id="11ba5-199">拡張機能をサポートするために、列挙を使用する一部のアプリケーション コードが変更されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-199">Some application code that uses enumerations was changed to support extensibility.</span></span> <span data-ttu-id="11ba5-200">一般的な変更の内容は以下の通りです。</span><span class="sxs-lookup"><span data-stu-id="11ba5-200">Common changes include:</span></span>
-    + <span data-ttu-id="11ba5-201">ポストイベント サブスクリプションを許可するための、switch の default ケースの **throw** 例外ステートメントの削除。</span><span class="sxs-lookup"><span data-stu-id="11ba5-201">Removing **throw** exception statements in the default case of a switch to allow post-event subscription.</span></span>
-    + <span data-ttu-id="11ba5-202">拡張機能の **SysExtension** サポートの追加。</span><span class="sxs-lookup"><span data-stu-id="11ba5-202">Adding **SysExtension** support for extension.</span></span>
-    + <span data-ttu-id="11ba5-203">明示的なデリゲートの追加。</span><span class="sxs-lookup"><span data-stu-id="11ba5-203">Adding explicit delegates.</span></span>
-
-
-| <span data-ttu-id="11ba5-204">列挙型</span><span class="sxs-lookup"><span data-stu-id="11ba5-204">Enumeration</span></span>|
-| --------------- |
-|<span data-ttu-id="11ba5-205">AgreementState</span><span class="sxs-lookup"><span data-stu-id="11ba5-205">AgreementState</span></span>|
-|<span data-ttu-id="11ba5-206">AssetAccountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-206">AssetAccountType</span></span>|
-|<span data-ttu-id="11ba5-207">AssetTransTypeJournal</span><span class="sxs-lookup"><span data-stu-id="11ba5-207">AssetTransTypeJournal</span></span>|
-|<span data-ttu-id="11ba5-208">BankAccountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-208">BankAccountType</span></span>|
-|<span data-ttu-id="11ba5-209">BankFormat</span><span class="sxs-lookup"><span data-stu-id="11ba5-209">BankFormat</span></span>|
-|<span data-ttu-id="11ba5-210">BarcodeContentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-210">BarcodeContentType</span></span>|
-|<span data-ttu-id="11ba5-211">BarcodeCoverPageEntityType</span><span class="sxs-lookup"><span data-stu-id="11ba5-211">BarcodeCoverPageEntityType</span></span>|
-|<span data-ttu-id="11ba5-212">BarcodeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-212">BarcodeType</span></span>|
-|<span data-ttu-id="11ba5-213">BOMCalcCostingVersionUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-213">BOMCalcCostingVersionUpdate</span></span>|
-|<span data-ttu-id="11ba5-214">BOMCalcCostPriceUsed</span><span class="sxs-lookup"><span data-stu-id="11ba5-214">BOMCalcCostPriceUsed</span></span>|
-|<span data-ttu-id="11ba5-215">BOMCalcSalesPriceUsed</span><span class="sxs-lookup"><span data-stu-id="11ba5-215">BOMCalcSalesPriceUsed</span></span>|
-|<span data-ttu-id="11ba5-216">BOMCalcType</span><span class="sxs-lookup"><span data-stu-id="11ba5-216">BOMCalcType</span></span>|
-|<span data-ttu-id="11ba5-217">BOMCheckLevel</span><span class="sxs-lookup"><span data-stu-id="11ba5-217">BOMCheckLevel</span></span>|
-|<span data-ttu-id="11ba5-218">BOMCopyContext</span><span class="sxs-lookup"><span data-stu-id="11ba5-218">BOMCopyContext</span></span>|
-|<span data-ttu-id="11ba5-219">BOMCopyMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-219">BOMCopyMethod</span></span>|
-|<span data-ttu-id="11ba5-220">BOMCopyType</span><span class="sxs-lookup"><span data-stu-id="11ba5-220">BOMCopyType</span></span>|
-|<span data-ttu-id="11ba5-221">BOMCostCalculationMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-221">BOMCostCalculationMethod</span></span>|
-|<span data-ttu-id="11ba5-222">BOMExplode</span><span class="sxs-lookup"><span data-stu-id="11ba5-222">BOMExplode</span></span>|
-|<span data-ttu-id="11ba5-223">BOMRouteCopyDataType</span><span class="sxs-lookup"><span data-stu-id="11ba5-223">BOMRouteCopyDataType</span></span>|
-|<span data-ttu-id="11ba5-224">BOMVersionFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-224">BOMVersionFilter</span></span>|
-|<span data-ttu-id="11ba5-225">BudgetReservation_BusinessEvent_PSN</span><span class="sxs-lookup"><span data-stu-id="11ba5-225">BudgetReservation_BusinessEvent_PSN</span></span>|
-|<span data-ttu-id="11ba5-226">BudgetReservation_SourceDocument_PSN</span><span class="sxs-lookup"><span data-stu-id="11ba5-226">BudgetReservation_SourceDocument_PSN</span></span>|
-|<span data-ttu-id="11ba5-227">BudgetReservation_SourceDocumentLine_PSN</span><span class="sxs-lookup"><span data-stu-id="11ba5-227">BudgetReservation_SourceDocumentLine_PSN</span></span>|
-|<span data-ttu-id="11ba5-228">CatCallMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-228">CatCallMethod</span></span>|
-|<span data-ttu-id="11ba5-229">CatContentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-229">CatContentType</span></span>|
-|<span data-ttu-id="11ba5-230">CatImportStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-230">CatImportStatus</span></span>|
-|<span data-ttu-id="11ba5-231">CatMaintenanceRequestWfStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-231">CatMaintenanceRequestWfStatus</span></span>|
-|<span data-ttu-id="11ba5-232">CatProcurementErrorCode</span><span class="sxs-lookup"><span data-stu-id="11ba5-232">CatProcurementErrorCode</span></span>|
-|<span data-ttu-id="11ba5-233">CatPurchaseStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-233">CatPurchaseStatus</span></span>|
-|<span data-ttu-id="11ba5-234">CatUserReviewApprovalStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-234">CatUserReviewApprovalStatus</span></span>|
-|<span data-ttu-id="11ba5-235">CatVendorCatalogFileUploadType</span><span class="sxs-lookup"><span data-stu-id="11ba5-235">CatVendorCatalogFileUploadType</span></span>|
-|<span data-ttu-id="11ba5-236">CatVendorCatalogTemplateCategory</span><span class="sxs-lookup"><span data-stu-id="11ba5-236">CatVendorCatalogTemplateCategory</span></span>|
-|<span data-ttu-id="11ba5-237">CatVendorCategoryHierarchyType</span><span class="sxs-lookup"><span data-stu-id="11ba5-237">CatVendorCategoryHierarchyType</span></span>|
-|<span data-ttu-id="11ba5-238">CatVendorConfigurationForImport</span><span class="sxs-lookup"><span data-stu-id="11ba5-238">CatVendorConfigurationForImport</span></span>|
-|<span data-ttu-id="11ba5-239">CatVendorLegalEntityStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-239">CatVendorLegalEntityStatus</span></span>|
-|<span data-ttu-id="11ba5-240">CatVendorSiteType</span><span class="sxs-lookup"><span data-stu-id="11ba5-240">CatVendorSiteType</span></span>|
-|<span data-ttu-id="11ba5-241">ConsignmentReplenishmentOrderLineStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-241">ConsignmentReplenishmentOrderLineStatus</span></span>|
-|<span data-ttu-id="11ba5-242">ConsignmentReplenishmentOrderStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-242">ConsignmentReplenishmentOrderStatus</span></span>|
-|<span data-ttu-id="11ba5-243">CostBreakdown</span><span class="sxs-lookup"><span data-stu-id="11ba5-243">CostBreakdown</span></span>|
-|<span data-ttu-id="11ba5-244">CostCalculationCompareProductType</span><span class="sxs-lookup"><span data-stu-id="11ba5-244">CostCalculationCompareProductType</span></span>|
-|<span data-ttu-id="11ba5-245">CostCalculationRole</span><span class="sxs-lookup"><span data-stu-id="11ba5-245">CostCalculationRole</span></span>|
-|<span data-ttu-id="11ba5-246">CostCalculationState</span><span class="sxs-lookup"><span data-stu-id="11ba5-246">CostCalculationState</span></span>|
-|<span data-ttu-id="11ba5-247">CostCalculationSurchargeSubtype</span><span class="sxs-lookup"><span data-stu-id="11ba5-247">CostCalculationSurchargeSubtype</span></span>|
-|<span data-ttu-id="11ba5-248">CostingActivationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-248">CostingActivationType</span></span>|
-|<span data-ttu-id="11ba5-249">CostingVersionCompareTo</span><span class="sxs-lookup"><span data-stu-id="11ba5-249">CostingVersionCompareTo</span></span>|
-|<span data-ttu-id="11ba5-250">CostingVersionPriceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-250">CostingVersionPriceType</span></span>|
-|<span data-ttu-id="11ba5-251">CostPriceBase</span><span class="sxs-lookup"><span data-stu-id="11ba5-251">CostPriceBase</span></span>|
-|<span data-ttu-id="11ba5-252">CostProfitSet</span><span class="sxs-lookup"><span data-stu-id="11ba5-252">CostProfitSet</span></span>|
-|<span data-ttu-id="11ba5-253">CostSalesPriceDisplay</span><span class="sxs-lookup"><span data-stu-id="11ba5-253">CostSalesPriceDisplay</span></span>|
-|<span data-ttu-id="11ba5-254">CostSheetNodeListType</span><span class="sxs-lookup"><span data-stu-id="11ba5-254">CostSheetNodeListType</span></span>|
-|<span data-ttu-id="11ba5-255">CostSheetPanelView</span><span class="sxs-lookup"><span data-stu-id="11ba5-255">CostSheetPanelView</span></span>|
-|<span data-ttu-id="11ba5-256">CostSheetProdFlowMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-256">CostSheetProdFlowMode</span></span>|
-|<span data-ttu-id="11ba5-257">CostStatementCacheAggregationAfter</span><span class="sxs-lookup"><span data-stu-id="11ba5-257">CostStatementCacheAggregationAfter</span></span>|
-|<span data-ttu-id="11ba5-258">CostWIPStatementCategory</span><span class="sxs-lookup"><span data-stu-id="11ba5-258">CostWIPStatementCategory</span></span>|
-|<span data-ttu-id="11ba5-259">CustPaymentValidate</span><span class="sxs-lookup"><span data-stu-id="11ba5-259">CustPaymentValidate</span></span>|
-|<span data-ttu-id="11ba5-260">CustSpecTransOverviewFormMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-260">CustSpecTransOverviewFormMode</span></span>|
-|<span data-ttu-id="11ba5-261">CustTransRefType</span><span class="sxs-lookup"><span data-stu-id="11ba5-261">CustTransRefType</span></span>|
-|<span data-ttu-id="11ba5-262">CustVendPaymentStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-262">CustVendPaymentStatus</span></span>|
-|<span data-ttu-id="11ba5-263">CustVendTransportPointTypeTransfer</span><span class="sxs-lookup"><span data-stu-id="11ba5-263">CustVendTransportPointTypeTransfer</span></span>|
-|<span data-ttu-id="11ba5-264">DlvScheduleMarkupConversionMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-264">DlvScheduleMarkupConversionMode</span></span>|
-|<span data-ttu-id="11ba5-265">EcoResAttributeModifier</span><span class="sxs-lookup"><span data-stu-id="11ba5-265">EcoResAttributeModifier</span></span>|
-|<span data-ttu-id="11ba5-266">EcoResCategoryAttributeModifier</span><span class="sxs-lookup"><span data-stu-id="11ba5-266">EcoResCategoryAttributeModifier</span></span>|
-|<span data-ttu-id="11ba5-267">EcoResCategoryChangeStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-267">EcoResCategoryChangeStatus</span></span>|
-|<span data-ttu-id="11ba5-268">EcoResCategoryHierarchyModifier</span><span class="sxs-lookup"><span data-stu-id="11ba5-268">EcoResCategoryHierarchyModifier</span></span>|
-|<span data-ttu-id="11ba5-269">EcoResCategoryNamedHierarchyRole</span><span class="sxs-lookup"><span data-stu-id="11ba5-269">EcoResCategoryNamedHierarchyRole</span></span>|
-|<span data-ttu-id="11ba5-270">EcoResProductImageUsage</span><span class="sxs-lookup"><span data-stu-id="11ba5-270">EcoResProductImageUsage</span></span>|
-|<span data-ttu-id="11ba5-271">EcoResProductListPage</span><span class="sxs-lookup"><span data-stu-id="11ba5-271">EcoResProductListPage</span></span>|
-|<span data-ttu-id="11ba5-272">EcoResProductPerCompanyListPageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-272">EcoResProductPerCompanyListPageType</span></span>|
-|<span data-ttu-id="11ba5-273">EcoResProductTemplateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-273">EcoResProductTemplateType</span></span>|
-|<span data-ttu-id="11ba5-274">EcoResReleaseProductToCompany</span><span class="sxs-lookup"><span data-stu-id="11ba5-274">EcoResReleaseProductToCompany</span></span>|
-|<span data-ttu-id="11ba5-275">EcoResVariantConfigurationTechnologyType</span><span class="sxs-lookup"><span data-stu-id="11ba5-275">EcoResVariantConfigurationTechnologyType</span></span>|
-|<span data-ttu-id="11ba5-276">ECPsalesOrdersViewType</span><span class="sxs-lookup"><span data-stu-id="11ba5-276">ECPsalesOrdersViewType</span></span>|
-|<span data-ttu-id="11ba5-277">EPCSSProductViewType</span><span class="sxs-lookup"><span data-stu-id="11ba5-277">EPCSSProductViewType</span></span>|
-|<span data-ttu-id="11ba5-278">EUSalesTransMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-278">EUSalesTransMethod</span></span>|
-|<span data-ttu-id="11ba5-279">FormLetterType</span><span class="sxs-lookup"><span data-stu-id="11ba5-279">FormLetterType</span></span>|
-|<span data-ttu-id="11ba5-280">GanttCallerWrkCtr</span><span class="sxs-lookup"><span data-stu-id="11ba5-280">GanttCallerWrkCtr</span></span>|
-|<span data-ttu-id="11ba5-281">GanttSetupType</span><span class="sxs-lookup"><span data-stu-id="11ba5-281">GanttSetupType</span></span>|
-|<span data-ttu-id="11ba5-282">GanttTimeUnit</span><span class="sxs-lookup"><span data-stu-id="11ba5-282">GanttTimeUnit</span></span>|
-|<span data-ttu-id="11ba5-283">GanttWrkCtrDisplayColumnsType</span><span class="sxs-lookup"><span data-stu-id="11ba5-283">GanttWrkCtrDisplayColumnsType</span></span>|
-|<span data-ttu-id="11ba5-284">IntercompanyGoodsInTransitLineType</span><span class="sxs-lookup"><span data-stu-id="11ba5-284">IntercompanyGoodsInTransitLineType</span></span>|
-|<span data-ttu-id="11ba5-285">InterCompanyGoodsInTransitOrigin</span><span class="sxs-lookup"><span data-stu-id="11ba5-285">InterCompanyGoodsInTransitOrigin</span></span>|
-|<span data-ttu-id="11ba5-286">InventAccountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-286">InventAccountType</span></span>|
-|<span data-ttu-id="11ba5-287">InventAccountTypeStdCostVariance</span><span class="sxs-lookup"><span data-stu-id="11ba5-287">InventAccountTypeStdCostVariance</span></span>|
-|<span data-ttu-id="11ba5-288">InventAdjustmentBy</span><span class="sxs-lookup"><span data-stu-id="11ba5-288">InventAdjustmentBy</span></span>|
-|<span data-ttu-id="11ba5-289">InventAgingView</span><span class="sxs-lookup"><span data-stu-id="11ba5-289">InventAgingView</span></span>|
-|<span data-ttu-id="11ba5-290">InventBatchJournalType</span><span class="sxs-lookup"><span data-stu-id="11ba5-290">InventBatchJournalType</span></span>|
-|<span data-ttu-id="11ba5-291">InventCostBundleState</span><span class="sxs-lookup"><span data-stu-id="11ba5-291">InventCostBundleState</span></span>|
-|<span data-ttu-id="11ba5-292">InventCostCostDistribution</span><span class="sxs-lookup"><span data-stu-id="11ba5-292">InventCostCostDistribution</span></span>|
-|<span data-ttu-id="11ba5-293">InventCostTransactionCategory</span><span class="sxs-lookup"><span data-stu-id="11ba5-293">InventCostTransactionCategory</span></span>|
-|<span data-ttu-id="11ba5-294">InventCostTransRefType</span><span class="sxs-lookup"><span data-stu-id="11ba5-294">InventCostTransRefType</span></span>|
-|<span data-ttu-id="11ba5-295">InventCountCode</span><span class="sxs-lookup"><span data-stu-id="11ba5-295">InventCountCode</span></span>|
-|<span data-ttu-id="11ba5-296">InventItemCostingType</span><span class="sxs-lookup"><span data-stu-id="11ba5-296">InventItemCostingType</span></span>|
-|<span data-ttu-id="11ba5-297">InventItemLookupDefaultTab</span><span class="sxs-lookup"><span data-stu-id="11ba5-297">InventItemLookupDefaultTab</span></span>|
-|<span data-ttu-id="11ba5-298">InventItemOrderSetupCallerType</span><span class="sxs-lookup"><span data-stu-id="11ba5-298">InventItemOrderSetupCallerType</span></span>|
-|<span data-ttu-id="11ba5-299">InventItemOrderSetupType</span><span class="sxs-lookup"><span data-stu-id="11ba5-299">InventItemOrderSetupType</span></span>|
-|<span data-ttu-id="11ba5-300">InventItemPriceCompareLevel</span><span class="sxs-lookup"><span data-stu-id="11ba5-300">InventItemPriceCompareLevel</span></span>|
-|<span data-ttu-id="11ba5-301">InventItemPriceFilterType</span><span class="sxs-lookup"><span data-stu-id="11ba5-301">InventItemPriceFilterType</span></span>|
-|<span data-ttu-id="11ba5-302">InventItemPriceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-302">InventItemPriceType</span></span>|
-|<span data-ttu-id="11ba5-303">InventJournalOwnershipChangeLineCreateQueryStatusIssue</span><span class="sxs-lookup"><span data-stu-id="11ba5-303">InventJournalOwnershipChangeLineCreateQueryStatusIssue</span></span>|
-|<span data-ttu-id="11ba5-304">InventJournalType</span><span class="sxs-lookup"><span data-stu-id="11ba5-304">InventJournalType</span></span>|
-|<span data-ttu-id="11ba5-305">InventLedgerConflictModule</span><span class="sxs-lookup"><span data-stu-id="11ba5-305">InventLedgerConflictModule</span></span>|
-|<span data-ttu-id="11ba5-306">InventLocationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-306">InventLocationType</span></span>|
-|<span data-ttu-id="11ba5-307">InventMovSubType</span><span class="sxs-lookup"><span data-stu-id="11ba5-307">InventMovSubType</span></span>|
-|<span data-ttu-id="11ba5-308">InventNonConformanceApproval</span><span class="sxs-lookup"><span data-stu-id="11ba5-308">InventNonConformanceApproval</span></span>|
-|<span data-ttu-id="11ba5-309">InventNonConformanceHistoryType</span><span class="sxs-lookup"><span data-stu-id="11ba5-309">InventNonConformanceHistoryType</span></span>|
-|<span data-ttu-id="11ba5-310">InventNonConformanceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-310">InventNonConformanceType</span></span>|
-|<span data-ttu-id="11ba5-311">InventParameters</span><span class="sxs-lookup"><span data-stu-id="11ba5-311">InventParameters</span></span>|
-|<span data-ttu-id="11ba5-312">InventPhysicalReduction</span><span class="sxs-lookup"><span data-stu-id="11ba5-312">InventPhysicalReduction</span></span>|
-|<span data-ttu-id="11ba5-313">InventRefType</span><span class="sxs-lookup"><span data-stu-id="11ba5-313">InventRefType</span></span>|
-|<span data-ttu-id="11ba5-314">InventReleaseOrderPickingType</span><span class="sxs-lookup"><span data-stu-id="11ba5-314">InventReleaseOrderPickingType</span></span>|
-|<span data-ttu-id="11ba5-315">InventReportDimHistoryLogType</span><span class="sxs-lookup"><span data-stu-id="11ba5-315">InventReportDimHistoryLogType</span></span>|
-|<span data-ttu-id="11ba5-316">InventStdCostConvItemStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-316">InventStdCostConvItemStatus</span></span>|
-|<span data-ttu-id="11ba5-317">InventStdCostPeriodType</span><span class="sxs-lookup"><span data-stu-id="11ba5-317">InventStdCostPeriodType</span></span>|
-|<span data-ttu-id="11ba5-318">InventSumFields</span><span class="sxs-lookup"><span data-stu-id="11ba5-318">InventSumFields</span></span>|
-|<span data-ttu-id="11ba5-319">InventSupplyDlvModeSelectCust</span><span class="sxs-lookup"><span data-stu-id="11ba5-319">InventSupplyDlvModeSelectCust</span></span>|
-|<span data-ttu-id="11ba5-320">InventSupplyDlvModeSelectSupply</span><span class="sxs-lookup"><span data-stu-id="11ba5-320">InventSupplyDlvModeSelectSupply</span></span>|
-|<span data-ttu-id="11ba5-321">InventSupplyLeadTimeSource</span><span class="sxs-lookup"><span data-stu-id="11ba5-321">InventSupplyLeadTimeSource</span></span>|
-|<span data-ttu-id="11ba5-322">InventSupplyTmpLeadtimeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-322">InventSupplyTmpLeadtimeType</span></span>|
-|<span data-ttu-id="11ba5-323">InventTestActionOnFailure</span><span class="sxs-lookup"><span data-stu-id="11ba5-323">InventTestActionOnFailure</span></span>|
-|<span data-ttu-id="11ba5-324">InventTestBlockProcess</span><span class="sxs-lookup"><span data-stu-id="11ba5-324">InventTestBlockProcess</span></span>|
-|<span data-ttu-id="11ba5-325">InventTestCorrectionPriority</span><span class="sxs-lookup"><span data-stu-id="11ba5-325">InventTestCorrectionPriority</span></span>|
-|<span data-ttu-id="11ba5-326">InventTestCorrectionStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-326">InventTestCorrectionStatus</span></span>|
-|<span data-ttu-id="11ba5-327">InventTestDocumentStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-327">InventTestDocumentStatus</span></span>|
-|<span data-ttu-id="11ba5-328">InventTestOrderStatusDisplay</span><span class="sxs-lookup"><span data-stu-id="11ba5-328">InventTestOrderStatusDisplay</span></span>|
-|<span data-ttu-id="11ba5-329">InventTestOutcomeStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-329">InventTestOutcomeStatus</span></span>|
-|<span data-ttu-id="11ba5-330">InventTestQtySpecification</span><span class="sxs-lookup"><span data-stu-id="11ba5-330">InventTestQtySpecification</span></span>|
-|<span data-ttu-id="11ba5-331">InventTestQuarantineType</span><span class="sxs-lookup"><span data-stu-id="11ba5-331">InventTestQuarantineType</span></span>|
-|<span data-ttu-id="11ba5-332">InventTestReferenceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-332">InventTestReferenceType</span></span>|
-|<span data-ttu-id="11ba5-333">InventTestReport</span><span class="sxs-lookup"><span data-stu-id="11ba5-333">InventTestReport</span></span>|
-|<span data-ttu-id="11ba5-334">InventTestType</span><span class="sxs-lookup"><span data-stu-id="11ba5-334">InventTestType</span></span>|
-|<span data-ttu-id="11ba5-335">InventTrackingDimNodeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-335">InventTrackingDimNodeType</span></span>|
-|<span data-ttu-id="11ba5-336">InventTrackingProductType</span><span class="sxs-lookup"><span data-stu-id="11ba5-336">InventTrackingProductType</span></span>|
-|<span data-ttu-id="11ba5-337">InventTrackingRegisterTransRegStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-337">InventTrackingRegisterTransRegStatus</span></span>|
-|<span data-ttu-id="11ba5-338">InventTransChildType</span><span class="sxs-lookup"><span data-stu-id="11ba5-338">InventTransChildType</span></span>|
-|<span data-ttu-id="11ba5-339">InventTransferRemainStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-339">InventTransferRemainStatus</span></span>|
-|<span data-ttu-id="11ba5-340">InventTransferStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-340">InventTransferStatus</span></span>|
-|<span data-ttu-id="11ba5-341">InventTransferUpdateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-341">InventTransferUpdateType</span></span>|
-|<span data-ttu-id="11ba5-342">InventTransPickRegisterLineStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-342">InventTransPickRegisterLineStatus</span></span>|
-|<span data-ttu-id="11ba5-343">InventTransType</span><span class="sxs-lookup"><span data-stu-id="11ba5-343">InventTransType</span></span>|
-|<span data-ttu-id="11ba5-344">InventUpdType</span><span class="sxs-lookup"><span data-stu-id="11ba5-344">InventUpdType</span></span>|
-|<span data-ttu-id="11ba5-345">InventValueReportLedgerAccountCategory</span><span class="sxs-lookup"><span data-stu-id="11ba5-345">InventValueReportLedgerAccountCategory</span></span>|
-|<span data-ttu-id="11ba5-346">InventValueReportLedgerLineType</span><span class="sxs-lookup"><span data-stu-id="11ba5-346">InventValueReportLedgerLineType</span></span>|
-|<span data-ttu-id="11ba5-347">InventValueReportResourceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-347">InventValueReportResourceType</span></span>|
-|<span data-ttu-id="11ba5-348">ItemGroupLedgerDimensionGroup</span><span class="sxs-lookup"><span data-stu-id="11ba5-348">ItemGroupLedgerDimensionGroup</span></span>|
-|<span data-ttu-id="11ba5-349">ItemReservation</span><span class="sxs-lookup"><span data-stu-id="11ba5-349">ItemReservation</span></span>|
-|<span data-ttu-id="11ba5-350">JmgAbsenceColumnLayout</span><span class="sxs-lookup"><span data-stu-id="11ba5-350">JmgAbsenceColumnLayout</span></span>|
-|<span data-ttu-id="11ba5-351">JmgAbsenceMethodEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-351">JmgAbsenceMethodEnum</span></span>|
-|<span data-ttu-id="11ba5-352">JmgAttendanceRegistrationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-352">JmgAttendanceRegistrationType</span></span>|
-|<span data-ttu-id="11ba5-353">JmgAttendanceReportType</span><span class="sxs-lookup"><span data-stu-id="11ba5-353">JmgAttendanceReportType</span></span>|
-|<span data-ttu-id="11ba5-354">JmgBarCodeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-354">JmgBarCodeType</span></span>|
-|<span data-ttu-id="11ba5-355">JmgBreakDropEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-355">JmgBreakDropEnum</span></span>|
-|<span data-ttu-id="11ba5-356">JmgClockStyle</span><span class="sxs-lookup"><span data-stu-id="11ba5-356">JmgClockStyle</span></span>|
-|<span data-ttu-id="11ba5-357">JmgControlType</span><span class="sxs-lookup"><span data-stu-id="11ba5-357">JmgControlType</span></span>|
-|<span data-ttu-id="11ba5-358">JmgDaysTotalWorkflowStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-358">JmgDaysTotalWorkflowStatus</span></span>|
-|<span data-ttu-id="11ba5-359">JmgEmployeeSignInStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-359">JmgEmployeeSignInStatus</span></span>|
-|<span data-ttu-id="11ba5-360">JmgFeedbackButtonFunction</span><span class="sxs-lookup"><span data-stu-id="11ba5-360">JmgFeedbackButtonFunction</span></span>|
-|<span data-ttu-id="11ba5-361">JmgFeedbackStyle</span><span class="sxs-lookup"><span data-stu-id="11ba5-361">JmgFeedbackStyle</span></span>|
-|<span data-ttu-id="11ba5-362">JmgFieldName</span><span class="sxs-lookup"><span data-stu-id="11ba5-362">JmgFieldName</span></span>|
-|<span data-ttu-id="11ba5-363">JmgGetRegistrationTimeFrom</span><span class="sxs-lookup"><span data-stu-id="11ba5-363">JmgGetRegistrationTimeFrom</span></span>|
-|<span data-ttu-id="11ba5-364">JmgGridAppearance</span><span class="sxs-lookup"><span data-stu-id="11ba5-364">JmgGridAppearance</span></span>|
-|<span data-ttu-id="11ba5-365">JmgJobTableSynchronizationMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-365">JmgJobTableSynchronizationMode</span></span>|
-|<span data-ttu-id="11ba5-366">JmgJournalRegWorkflowStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-366">JmgJournalRegWorkflowStatus</span></span>|
-|<span data-ttu-id="11ba5-367">JmgMark</span><span class="sxs-lookup"><span data-stu-id="11ba5-367">JmgMark</span></span>|
-|<span data-ttu-id="11ba5-368">JmgMessageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-368">JmgMessageType</span></span>|
-|<span data-ttu-id="11ba5-369">JmgPayAdjustType</span><span class="sxs-lookup"><span data-stu-id="11ba5-369">JmgPayAdjustType</span></span>|
-|<span data-ttu-id="11ba5-370">JmgPayEventsExportType</span><span class="sxs-lookup"><span data-stu-id="11ba5-370">JmgPayEventsExportType</span></span>|
-|<span data-ttu-id="11ba5-371">JmgPaySpecTypeEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-371">JmgPaySpecTypeEnum</span></span>|
-|<span data-ttu-id="11ba5-372">JmgPaySpecTypeEnumPick</span><span class="sxs-lookup"><span data-stu-id="11ba5-372">JmgPaySpecTypeEnumPick</span></span>|
-|<span data-ttu-id="11ba5-373">JmgPostAutomatically</span><span class="sxs-lookup"><span data-stu-id="11ba5-373">JmgPostAutomatically</span></span>|
-|<span data-ttu-id="11ba5-374">JmgProdStatusUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-374">JmgProdStatusUpdate</span></span>|
-|<span data-ttu-id="11ba5-375">JmgProdStatusUpdateReportFinished</span><span class="sxs-lookup"><span data-stu-id="11ba5-375">JmgProdStatusUpdateReportFinished</span></span>|
-|<span data-ttu-id="11ba5-376">JmgProfileSpecTypeEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-376">JmgProfileSpecTypeEnum</span></span>|
-|<span data-ttu-id="11ba5-377">JmgProfileStartCodeBlankPrev</span><span class="sxs-lookup"><span data-stu-id="11ba5-377">JmgProfileStartCodeBlankPrev</span></span>|
-|<span data-ttu-id="11ba5-378">JmgProjStatusUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-378">JmgProjStatusUpdate</span></span>|
-|<span data-ttu-id="11ba5-379">JmgRegistrationTouchJobStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-379">JmgRegistrationTouchJobStatus</span></span>|
-|<span data-ttu-id="11ba5-380">JmgSecondPresentationEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-380">JmgSecondPresentationEnum</span></span>|
-|<span data-ttu-id="11ba5-381">JmgShopFloorServiceStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-381">JmgShopFloorServiceStatus</span></span>|
-|<span data-ttu-id="11ba5-382">JmgSignInButtonFunction</span><span class="sxs-lookup"><span data-stu-id="11ba5-382">JmgSignInButtonFunction</span></span>|
-|<span data-ttu-id="11ba5-383">JmgStoppedCompletedStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-383">JmgStoppedCompletedStatus</span></span>|
-|<span data-ttu-id="11ba5-384">JmgTermBaudeRate</span><span class="sxs-lookup"><span data-stu-id="11ba5-384">JmgTermBaudeRate</span></span>|
-|<span data-ttu-id="11ba5-385">JmgTermComPort</span><span class="sxs-lookup"><span data-stu-id="11ba5-385">JmgTermComPort</span></span>|
-|<span data-ttu-id="11ba5-386">JmgTermDataBit</span><span class="sxs-lookup"><span data-stu-id="11ba5-386">JmgTermDataBit</span></span>|
-|<span data-ttu-id="11ba5-387">JmgTerminalInsertMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-387">JmgTerminalInsertMode</span></span>|
-|<span data-ttu-id="11ba5-388">JmgTermStopBit</span><span class="sxs-lookup"><span data-stu-id="11ba5-388">JmgTermStopBit</span></span>|
-|<span data-ttu-id="11ba5-389">KanbanBoardRefreshCycle</span><span class="sxs-lookup"><span data-stu-id="11ba5-389">KanbanBoardRefreshCycle</span></span>|
-|<span data-ttu-id="11ba5-390">KanbanBoardType</span><span class="sxs-lookup"><span data-stu-id="11ba5-390">KanbanBoardType</span></span>|
-|<span data-ttu-id="11ba5-391">KanbanCardAssignmentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-391">KanbanCardAssignmentType</span></span>|
-|<span data-ttu-id="11ba5-392">KanbanControlActionState</span><span class="sxs-lookup"><span data-stu-id="11ba5-392">KanbanControlActionState</span></span>|
-|<span data-ttu-id="11ba5-393">KanbanControlLegendFormat</span><span class="sxs-lookup"><span data-stu-id="11ba5-393">KanbanControlLegendFormat</span></span>|
-|<span data-ttu-id="11ba5-394">KanbanControlSelectionChanged</span><span class="sxs-lookup"><span data-stu-id="11ba5-394">KanbanControlSelectionChanged</span></span>|
-|<span data-ttu-id="11ba5-395">KanbanDemandOriginType</span><span class="sxs-lookup"><span data-stu-id="11ba5-395">KanbanDemandOriginType</span></span>|
-|<span data-ttu-id="11ba5-396">KanbanJobPeggingType</span><span class="sxs-lookup"><span data-stu-id="11ba5-396">KanbanJobPeggingType</span></span>|
-|<span data-ttu-id="11ba5-397">KanbanJobPickingListLineType</span><span class="sxs-lookup"><span data-stu-id="11ba5-397">KanbanJobPickingListLineType</span></span>|
-|<span data-ttu-id="11ba5-398">KanbanLineEventType</span><span class="sxs-lookup"><span data-stu-id="11ba5-398">KanbanLineEventType</span></span>|
-|<span data-ttu-id="11ba5-399">KanbanMultiMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-399">KanbanMultiMode</span></span>|
-|<span data-ttu-id="11ba5-400">KanbanPrintInstructions</span><span class="sxs-lookup"><span data-stu-id="11ba5-400">KanbanPrintInstructions</span></span>|
-|<span data-ttu-id="11ba5-401">KanbanProdBOMLineEventType</span><span class="sxs-lookup"><span data-stu-id="11ba5-401">KanbanProdBOMLineEventType</span></span>|
-|<span data-ttu-id="11ba5-402">KanbanQuantityCalculationStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-402">KanbanQuantityCalculationStatus</span></span>|
-|<span data-ttu-id="11ba5-403">KanbanSalesLineEventType</span><span class="sxs-lookup"><span data-stu-id="11ba5-403">KanbanSalesLineEventType</span></span>|
-|<span data-ttu-id="11ba5-404">KanbanStockReplenishmentEventType</span><span class="sxs-lookup"><span data-stu-id="11ba5-404">KanbanStockReplenishmentEventType</span></span>|
-|<span data-ttu-id="11ba5-405">LeanBOMLineReservationMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-405">LeanBOMLineReservationMethod</span></span>|
-|<span data-ttu-id="11ba5-406">LeanCostingUnusedQtyType</span><span class="sxs-lookup"><span data-stu-id="11ba5-406">LeanCostingUnusedQtyType</span></span>|
-|<span data-ttu-id="11ba5-407">LeanHandlingUnitEmptyPolicy</span><span class="sxs-lookup"><span data-stu-id="11ba5-407">LeanHandlingUnitEmptyPolicy</span></span>|
-|<span data-ttu-id="11ba5-408">LeanInventoryControl</span><span class="sxs-lookup"><span data-stu-id="11ba5-408">LeanInventoryControl</span></span>|
-|<span data-ttu-id="11ba5-409">LeanPeggedEventType</span><span class="sxs-lookup"><span data-stu-id="11ba5-409">LeanPeggedEventType</span></span>|
-|<span data-ttu-id="11ba5-410">LeanPlanJobReferenceTypes</span><span class="sxs-lookup"><span data-stu-id="11ba5-410">LeanPlanJobReferenceTypes</span></span>|
-|<span data-ttu-id="11ba5-411">LeanProductionFlowCostingStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-411">LeanProductionFlowCostingStatus</span></span>|
-|<span data-ttu-id="11ba5-412">LeanProductionFlowVisualizationViewMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-412">LeanProductionFlowVisualizationViewMode</span></span>|
-|<span data-ttu-id="11ba5-413">LeanProductTypes</span><span class="sxs-lookup"><span data-stu-id="11ba5-413">LeanProductTypes</span></span>|
-|<span data-ttu-id="11ba5-414">LeanTaktStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-414">LeanTaktStatus</span></span>|
-|<span data-ttu-id="11ba5-415">LedgerPostingType</span><span class="sxs-lookup"><span data-stu-id="11ba5-415">LedgerPostingType</span></span>|
-|<span data-ttu-id="11ba5-416">LedgerTransTxt</span><span class="sxs-lookup"><span data-stu-id="11ba5-416">LedgerTransTxt</span></span>|
-|<span data-ttu-id="11ba5-417">MarkupAllocateAfter</span><span class="sxs-lookup"><span data-stu-id="11ba5-417">MarkupAllocateAfter</span></span>|
-|<span data-ttu-id="11ba5-418">MarkupCategory</span><span class="sxs-lookup"><span data-stu-id="11ba5-418">MarkupCategory</span></span>|
-|<span data-ttu-id="11ba5-419">MCRBrokerContractStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-419">MCRBrokerContractStatus</span></span>|
-|<span data-ttu-id="11ba5-420">MCRCustSearchType</span><span class="sxs-lookup"><span data-stu-id="11ba5-420">MCRCustSearchType</span></span>|
-|<span data-ttu-id="11ba5-421">MCRFullTextSearchType</span><span class="sxs-lookup"><span data-stu-id="11ba5-421">MCRFullTextSearchType</span></span>|
-|<span data-ttu-id="11ba5-422">MCRInstallPlanApplyMiscCharge</span><span class="sxs-lookup"><span data-stu-id="11ba5-422">MCRInstallPlanApplyMiscCharge</span></span>|
-|<span data-ttu-id="11ba5-423">MCRItemListGenerationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-423">MCRItemListGenerationType</span></span>|
-|<span data-ttu-id="11ba5-424">MCRPickingPrompt</span><span class="sxs-lookup"><span data-stu-id="11ba5-424">MCRPickingPrompt</span></span>|
-|<span data-ttu-id="11ba5-425">MCRPickingSessionStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-425">MCRPickingSessionStatus</span></span>|
-|<span data-ttu-id="11ba5-426">MCRPickingWaveStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-426">MCRPickingWaveStatus</span></span>|
-|<span data-ttu-id="11ba5-427">MCRPriceHistoryType</span><span class="sxs-lookup"><span data-stu-id="11ba5-427">MCRPriceHistoryType</span></span>|
-|<span data-ttu-id="11ba5-428">MCRRoyaltyLineBreakType</span><span class="sxs-lookup"><span data-stu-id="11ba5-428">MCRRoyaltyLineBreakType</span></span>|
-|<span data-ttu-id="11ba5-429">MCRRoyaltyTakenFrom</span><span class="sxs-lookup"><span data-stu-id="11ba5-429">MCRRoyaltyTakenFrom</span></span>|
-|<span data-ttu-id="11ba5-430">MCRRoyaltyTransactionType</span><span class="sxs-lookup"><span data-stu-id="11ba5-430">MCRRoyaltyTransactionType</span></span>|
-|<span data-ttu-id="11ba5-431">MCRRoyaltyUnitType</span><span class="sxs-lookup"><span data-stu-id="11ba5-431">MCRRoyaltyUnitType</span></span>|
-|<span data-ttu-id="11ba5-432">MCRRoyaltyUOMOption</span><span class="sxs-lookup"><span data-stu-id="11ba5-432">MCRRoyaltyUOMOption</span></span>|
-|<span data-ttu-id="11ba5-433">MCRSalesOrderDetailStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-433">MCRSalesOrderDetailStatus</span></span>|
-|<span data-ttu-id="11ba5-434">ModuleInventCustVend</span><span class="sxs-lookup"><span data-stu-id="11ba5-434">ModuleInventCustVend</span></span>|
-|<span data-ttu-id="11ba5-435">ModuleInventPurchSales</span><span class="sxs-lookup"><span data-stu-id="11ba5-435">ModuleInventPurchSales</span></span>|
-|<span data-ttu-id="11ba5-436">OriginalDocument</span><span class="sxs-lookup"><span data-stu-id="11ba5-436">OriginalDocument</span></span>|
-|<span data-ttu-id="11ba5-437">PaymDocumentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-437">PaymDocumentType</span></span>|
-|<span data-ttu-id="11ba5-438">PCExpressionEditorSymbolType</span><span class="sxs-lookup"><span data-stu-id="11ba5-438">PCExpressionEditorSymbolType</span></span>|
-|<span data-ttu-id="11ba5-439">PCLookupMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-439">PCLookupMethod</span></span>|
-|<span data-ttu-id="11ba5-440">PCNewSelectComponent</span><span class="sxs-lookup"><span data-stu-id="11ba5-440">PCNewSelectComponent</span></span>|
-|<span data-ttu-id="11ba5-441">PCRequirement</span><span class="sxs-lookup"><span data-stu-id="11ba5-441">PCRequirement</span></span>|
-|<span data-ttu-id="11ba5-442">PCTableConstraintType</span><span class="sxs-lookup"><span data-stu-id="11ba5-442">PCTableConstraintType</span></span>|
-|<span data-ttu-id="11ba5-443">PDSAdjustmentPrinciple</span><span class="sxs-lookup"><span data-stu-id="11ba5-443">PDSAdjustmentPrinciple</span></span>|
-|<span data-ttu-id="11ba5-444">PdsBatchAttribToleranceAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-444">PdsBatchAttribToleranceAction</span></span>|
-|<span data-ttu-id="11ba5-445">PdsBatchAttribUpdateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-445">PdsBatchAttribUpdateType</span></span>|
-|<span data-ttu-id="11ba5-446">PDSCalcElementBase</span><span class="sxs-lookup"><span data-stu-id="11ba5-446">PDSCalcElementBase</span></span>|
-|<span data-ttu-id="11ba5-447">PDSCompensationPrincipleEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-447">PDSCompensationPrincipleEnum</span></span>|
-|<span data-ttu-id="11ba5-448">PDSElementTypeEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-448">PDSElementTypeEnum</span></span>|
-|<span data-ttu-id="11ba5-449">PDSIngredientTypeEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-449">PDSIngredientTypeEnum</span></span>|
-|<span data-ttu-id="11ba5-450">PdsMRCDocumentStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-450">PdsMRCDocumentStatus</span></span>|
-|<span data-ttu-id="11ba5-451">PdsMRCEffectiveDateBasis</span><span class="sxs-lookup"><span data-stu-id="11ba5-451">PdsMRCEffectiveDateBasis</span></span>|
-|<span data-ttu-id="11ba5-452">PdsMRCEventModule</span><span class="sxs-lookup"><span data-stu-id="11ba5-452">PdsMRCEventModule</span></span>|
-|<span data-ttu-id="11ba5-453">PdsMRCEventType</span><span class="sxs-lookup"><span data-stu-id="11ba5-453">PdsMRCEventType</span></span>|
-|<span data-ttu-id="11ba5-454">PdsMRCListType</span><span class="sxs-lookup"><span data-stu-id="11ba5-454">PdsMRCListType</span></span>|
-|<span data-ttu-id="11ba5-455">PdsPaymtType</span><span class="sxs-lookup"><span data-stu-id="11ba5-455">PdsPaymtType</span></span>|
-|<span data-ttu-id="11ba5-456">PDSPotencyAttribRecordingEnum</span><span class="sxs-lookup"><span data-stu-id="11ba5-456">PDSPotencyAttribRecordingEnum</span></span>|
-|<span data-ttu-id="11ba5-457">PdsRebateCalcDateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-457">PdsRebateCalcDateType</span></span>|
-|<span data-ttu-id="11ba5-458">PdsRebateTakenFrom</span><span class="sxs-lookup"><span data-stu-id="11ba5-458">PdsRebateTakenFrom</span></span>|
-|<span data-ttu-id="11ba5-459">PdsRebateUOMOption</span><span class="sxs-lookup"><span data-stu-id="11ba5-459">PdsRebateUOMOption</span></span>|
-|<span data-ttu-id="11ba5-460">PdsSameLotError</span><span class="sxs-lookup"><span data-stu-id="11ba5-460">PdsSameLotError</span></span>|
-|<span data-ttu-id="11ba5-461">pdsTMAJournalPosting</span><span class="sxs-lookup"><span data-stu-id="11ba5-461">pdsTMAJournalPosting</span></span>|
-|<span data-ttu-id="11ba5-462">PdsUpdateBatchDate</span><span class="sxs-lookup"><span data-stu-id="11ba5-462">PdsUpdateBatchDate</span></span>|
-|<span data-ttu-id="11ba5-463">PdsUpdateDispositionStatus_Quality</span><span class="sxs-lookup"><span data-stu-id="11ba5-463">PdsUpdateDispositionStatus_Quality</span></span>|
-|<span data-ttu-id="11ba5-464">PlanActivityCreateRelationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-464">PlanActivityCreateRelationType</span></span>|
-|<span data-ttu-id="11ba5-465">PlanActivityProductionFlowActivityType</span><span class="sxs-lookup"><span data-stu-id="11ba5-465">PlanActivityProductionFlowActivityType</span></span>|
-|<span data-ttu-id="11ba5-466">PlanTypes</span><span class="sxs-lookup"><span data-stu-id="11ba5-466">PlanTypes</span></span>|
-|<span data-ttu-id="11ba5-467">PmfCostAllocationMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-467">PmfCostAllocationMethod</span></span>|
-|<span data-ttu-id="11ba5-468">PmfOrderType</span><span class="sxs-lookup"><span data-stu-id="11ba5-468">PmfOrderType</span></span>|
-|<span data-ttu-id="11ba5-469">PmfOrderTypeFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-469">PmfOrderTypeFilter</span></span>|
-|<span data-ttu-id="11ba5-470">PmfProdType</span><span class="sxs-lookup"><span data-stu-id="11ba5-470">PmfProdType</span></span>|
-|<span data-ttu-id="11ba5-471">PMFSeqCalendarPeriod</span><span class="sxs-lookup"><span data-stu-id="11ba5-471">PMFSeqCalendarPeriod</span></span>|
-|<span data-ttu-id="11ba5-472">PriceBase</span><span class="sxs-lookup"><span data-stu-id="11ba5-472">PriceBase</span></span>|
-|<span data-ttu-id="11ba5-473">PriceDiscPurchasePromptSystemSource</span><span class="sxs-lookup"><span data-stu-id="11ba5-473">PriceDiscPurchasePromptSystemSource</span></span>|
-|<span data-ttu-id="11ba5-474">PriceDiscSalesPromptSystemSource</span><span class="sxs-lookup"><span data-stu-id="11ba5-474">PriceDiscSalesPromptSystemSource</span></span>|
-|<span data-ttu-id="11ba5-475">PriceGroupType</span><span class="sxs-lookup"><span data-stu-id="11ba5-475">PriceGroupType</span></span>|
-|<span data-ttu-id="11ba5-476">PriceSalesPurch</span><span class="sxs-lookup"><span data-stu-id="11ba5-476">PriceSalesPurch</span></span>|
-|<span data-ttu-id="11ba5-477">PriceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-477">PriceType</span></span>|
-|<span data-ttu-id="11ba5-478">ProcCategoryAdministrationActivity</span><span class="sxs-lookup"><span data-stu-id="11ba5-478">ProcCategoryAdministrationActivity</span></span>|
-|<span data-ttu-id="11ba5-479">ProdBOMConsumpProposal</span><span class="sxs-lookup"><span data-stu-id="11ba5-479">ProdBOMConsumpProposal</span></span>|
-|<span data-ttu-id="11ba5-480">ProdBOMJournalQty</span><span class="sxs-lookup"><span data-stu-id="11ba5-480">ProdBOMJournalQty</span></span>|
-|<span data-ttu-id="11ba5-481">ProdBOMJournalSplit</span><span class="sxs-lookup"><span data-stu-id="11ba5-481">ProdBOMJournalSplit</span></span>|
-|<span data-ttu-id="11ba5-482">ProdErrorCause</span><span class="sxs-lookup"><span data-stu-id="11ba5-482">ProdErrorCause</span></span>|
-|<span data-ttu-id="11ba5-483">ProdGanttJobColorType</span><span class="sxs-lookup"><span data-stu-id="11ba5-483">ProdGanttJobColorType</span></span>|
-|<span data-ttu-id="11ba5-484">ProdGanttLoad</span><span class="sxs-lookup"><span data-stu-id="11ba5-484">ProdGanttLoad</span></span>|
-|<span data-ttu-id="11ba5-485">ProdGanttRouteColorType</span><span class="sxs-lookup"><span data-stu-id="11ba5-485">ProdGanttRouteColorType</span></span>|
-|<span data-ttu-id="11ba5-486">ProdJournalCleanUpMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-486">ProdJournalCleanUpMode</span></span>|
-|<span data-ttu-id="11ba5-487">ProdMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-487">ProdMode</span></span>|
-|<span data-ttu-id="11ba5-488">ProdNotificationLevel</span><span class="sxs-lookup"><span data-stu-id="11ba5-488">ProdNotificationLevel</span></span>|
-|<span data-ttu-id="11ba5-489">ProdParamInventDimLookup</span><span class="sxs-lookup"><span data-stu-id="11ba5-489">ProdParamInventDimLookup</span></span>|
-|<span data-ttu-id="11ba5-490">ProdParmType</span><span class="sxs-lookup"><span data-stu-id="11ba5-490">ProdParmType</span></span>|
-|<span data-ttu-id="11ba5-491">ProdRefLookUp</span><span class="sxs-lookup"><span data-stu-id="11ba5-491">ProdRefLookUp</span></span>|
-|<span data-ttu-id="11ba5-492">ProdRouteJobCurrentFormTabId</span><span class="sxs-lookup"><span data-stu-id="11ba5-492">ProdRouteJobCurrentFormTabId</span></span>|
-|<span data-ttu-id="11ba5-493">ProdSchedDirection</span><span class="sxs-lookup"><span data-stu-id="11ba5-493">ProdSchedDirection</span></span>|
-|<span data-ttu-id="11ba5-494">ProdScrapMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-494">ProdScrapMethod</span></span>|
-|<span data-ttu-id="11ba5-495">ProdStandardCostVariance</span><span class="sxs-lookup"><span data-stu-id="11ba5-495">ProdStandardCostVariance</span></span>|
-|<span data-ttu-id="11ba5-496">ProdStatusAll</span><span class="sxs-lookup"><span data-stu-id="11ba5-496">ProdStatusAll</span></span>|
-|<span data-ttu-id="11ba5-497">ProdStatusType</span><span class="sxs-lookup"><span data-stu-id="11ba5-497">ProdStatusType</span></span>|
-|<span data-ttu-id="11ba5-498">ProductionTransType</span><span class="sxs-lookup"><span data-stu-id="11ba5-498">ProductionTransType</span></span>|
-|<span data-ttu-id="11ba5-499">ProdUpdateJour</span><span class="sxs-lookup"><span data-stu-id="11ba5-499">ProdUpdateJour</span></span>|
-|<span data-ttu-id="11ba5-500">ProdWHSReleasePolicy</span><span class="sxs-lookup"><span data-stu-id="11ba5-500">ProdWHSReleasePolicy</span></span>|
-|<span data-ttu-id="11ba5-501">ProdWIPType_NA</span><span class="sxs-lookup"><span data-stu-id="11ba5-501">ProdWIPType_NA</span></span>|
-|<span data-ttu-id="11ba5-502">PurchaseOrderResponseAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-502">PurchaseOrderResponseAction</span></span>|
-|<span data-ttu-id="11ba5-503">PurchaseType</span><span class="sxs-lookup"><span data-stu-id="11ba5-503">PurchaseType</span></span>|
-|<span data-ttu-id="11ba5-504">PurchasingTransactionType</span><span class="sxs-lookup"><span data-stu-id="11ba5-504">PurchasingTransactionType</span></span>|
-|<span data-ttu-id="11ba5-505">PurchCORReceivingMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-505">PurchCORReceivingMethod</span></span>|
-|<span data-ttu-id="11ba5-506">PurchCORRejectStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-506">PurchCORRejectStatus</span></span>|
-|<span data-ttu-id="11ba5-507">PurchCovRef</span><span class="sxs-lookup"><span data-stu-id="11ba5-507">PurchCovRef</span></span>|
-|<span data-ttu-id="11ba5-508">PurchDlvAddr</span><span class="sxs-lookup"><span data-stu-id="11ba5-508">PurchDlvAddr</span></span>|
-|<span data-ttu-id="11ba5-509">PurchLineBackOrderViews</span><span class="sxs-lookup"><span data-stu-id="11ba5-509">PurchLineBackOrderViews</span></span>|
-|<span data-ttu-id="11ba5-510">PurchLineDeliveryFulfillment</span><span class="sxs-lookup"><span data-stu-id="11ba5-510">PurchLineDeliveryFulfillment</span></span>|
-|<span data-ttu-id="11ba5-511">PurchLineDeliveryPrecision</span><span class="sxs-lookup"><span data-stu-id="11ba5-511">PurchLineDeliveryPrecision</span></span>|
-|<span data-ttu-id="11ba5-512">PurchMatchingPolicyOverrideOption</span><span class="sxs-lookup"><span data-stu-id="11ba5-512">PurchMatchingPolicyOverrideOption</span></span>|
-|<span data-ttu-id="11ba5-513">PurchPrepayApplicationPolicy</span><span class="sxs-lookup"><span data-stu-id="11ba5-513">PurchPrepayApplicationPolicy</span></span>|
-|<span data-ttu-id="11ba5-514">PurchPriceDateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-514">PurchPriceDateType</span></span>|
-|<span data-ttu-id="11ba5-515">PurchPurchaseOrderCreationMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-515">PurchPurchaseOrderCreationMethod</span></span>|
-|<span data-ttu-id="11ba5-516">PurchReApprovalPolicyRuleViewType</span><span class="sxs-lookup"><span data-stu-id="11ba5-516">PurchReApprovalPolicyRuleViewType</span></span>|
-|<span data-ttu-id="11ba5-517">PurchReqAuthorizationSpecificReporting</span><span class="sxs-lookup"><span data-stu-id="11ba5-517">PurchReqAuthorizationSpecificReporting</span></span>|
-|<span data-ttu-id="11ba5-518">PurchReqAutoCreatePurch</span><span class="sxs-lookup"><span data-stu-id="11ba5-518">PurchReqAutoCreatePurch</span></span>|
-|<span data-ttu-id="11ba5-519">PurchReqCatalogAllNon</span><span class="sxs-lookup"><span data-stu-id="11ba5-519">PurchReqCatalogAllNon</span></span>|
-|<span data-ttu-id="11ba5-520">PurchReqConsolidationActiveStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-520">PurchReqConsolidationActiveStatus</span></span>|
-|<span data-ttu-id="11ba5-521">PurchReqConsolidationPriority</span><span class="sxs-lookup"><span data-stu-id="11ba5-521">PurchReqConsolidationPriority</span></span>|
-|<span data-ttu-id="11ba5-522">PurchReqConsolidationStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-522">PurchReqConsolidationStatus</span></span>|
-|<span data-ttu-id="11ba5-523">PurchReqCreationStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-523">PurchReqCreationStatus</span></span>|
-|<span data-ttu-id="11ba5-524">PurchReqItemDescriptionTransfer</span><span class="sxs-lookup"><span data-stu-id="11ba5-524">PurchReqItemDescriptionTransfer</span></span>|
-|<span data-ttu-id="11ba5-525">PurchReqItemFilterType</span><span class="sxs-lookup"><span data-stu-id="11ba5-525">PurchReqItemFilterType</span></span>|
-|<span data-ttu-id="11ba5-526">PurchReqOnBehalfReports</span><span class="sxs-lookup"><span data-stu-id="11ba5-526">PurchReqOnBehalfReports</span></span>|
-|<span data-ttu-id="11ba5-527">PurchReqOriginationAuthorizationView</span><span class="sxs-lookup"><span data-stu-id="11ba5-527">PurchReqOriginationAuthorizationView</span></span>|
-|<span data-ttu-id="11ba5-528">PurchReqProcessingState</span><span class="sxs-lookup"><span data-stu-id="11ba5-528">PurchReqProcessingState</span></span>|
-|<span data-ttu-id="11ba5-529">PurchReqQuestionnaireAggregateStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-529">PurchReqQuestionnaireAggregateStatus</span></span>|
-|<span data-ttu-id="11ba5-530">PurchReqQuestionnaireStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-530">PurchReqQuestionnaireStatus</span></span>|
-|<span data-ttu-id="11ba5-531">PurchReqReportSortOrder</span><span class="sxs-lookup"><span data-stu-id="11ba5-531">PurchReqReportSortOrder</span></span>|
-|<span data-ttu-id="11ba5-532">PurchReqReportStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-532">PurchReqReportStatus</span></span>|
-|<span data-ttu-id="11ba5-533">PurchReqReviewStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-533">PurchReqReviewStatus</span></span>|
-|<span data-ttu-id="11ba5-534">PurchReqRFQRequirement</span><span class="sxs-lookup"><span data-stu-id="11ba5-534">PurchReqRFQRequirement</span></span>|
-|<span data-ttu-id="11ba5-535">PurchReqRFQType</span><span class="sxs-lookup"><span data-stu-id="11ba5-535">PurchReqRFQType</span></span>|
-|<span data-ttu-id="11ba5-536">PurchReqSaveChanges</span><span class="sxs-lookup"><span data-stu-id="11ba5-536">PurchReqSaveChanges</span></span>|
-|<span data-ttu-id="11ba5-537">PurchReqStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-537">PurchReqStatus</span></span>|
-|<span data-ttu-id="11ba5-538">PurchReqType</span><span class="sxs-lookup"><span data-stu-id="11ba5-538">PurchReqType</span></span>|
-|<span data-ttu-id="11ba5-539">PurchReqWorkflowState</span><span class="sxs-lookup"><span data-stu-id="11ba5-539">PurchReqWorkflowState</span></span>|
-|<span data-ttu-id="11ba5-540">PurchRFQQuestionnaireStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-540">PurchRFQQuestionnaireStatus</span></span>|
-|<span data-ttu-id="11ba5-541">PurchRFQStatusVendor</span><span class="sxs-lookup"><span data-stu-id="11ba5-541">PurchRFQStatusVendor</span></span>|
-|<span data-ttu-id="11ba5-542">PurchRFQType</span><span class="sxs-lookup"><span data-stu-id="11ba5-542">PurchRFQType</span></span>|
-|<span data-ttu-id="11ba5-543">PurchTableFormId</span><span class="sxs-lookup"><span data-stu-id="11ba5-543">PurchTableFormId</span></span>|
-|<span data-ttu-id="11ba5-544">PurchTableListPage</span><span class="sxs-lookup"><span data-stu-id="11ba5-544">PurchTableListPage</span></span>|
-|<span data-ttu-id="11ba5-545">PurchTableMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-545">PurchTableMode</span></span>|
-|<span data-ttu-id="11ba5-546">PurchTotalsCachingMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-546">PurchTotalsCachingMethod</span></span>|
-|<span data-ttu-id="11ba5-547">PurchUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-547">PurchUpdate</span></span>|
-|<span data-ttu-id="11ba5-548">PurchVendorPortalShowResponseType</span><span class="sxs-lookup"><span data-stu-id="11ba5-548">PurchVendorPortalShowResponseType</span></span>|
-|<span data-ttu-id="11ba5-549">QuotationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-549">QuotationType</span></span>|
-|<span data-ttu-id="11ba5-550">ReqBOMRouteCreated</span><span class="sxs-lookup"><span data-stu-id="11ba5-550">ReqBOMRouteCreated</span></span>|
-|<span data-ttu-id="11ba5-551">ReqCurrentDaySchedFrom</span><span class="sxs-lookup"><span data-stu-id="11ba5-551">ReqCurrentDaySchedFrom</span></span>|
-|<span data-ttu-id="11ba5-552">ReqDemPlanDataSourceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-552">ReqDemPlanDataSourceType</span></span>|
-|<span data-ttu-id="11ba5-553">ReqDemPlanDemandCategory</span><span class="sxs-lookup"><span data-stu-id="11ba5-553">ReqDemPlanDemandCategory</span></span>|
-|<span data-ttu-id="11ba5-554">ReqDemPlanForecastAttributeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-554">ReqDemPlanForecastAttributeType</span></span>|
-|<span data-ttu-id="11ba5-555">ReqDemPlanForecastingStrategy</span><span class="sxs-lookup"><span data-stu-id="11ba5-555">ReqDemPlanForecastingStrategy</span></span>|
-|<span data-ttu-id="11ba5-556">ReqDemPlanForecastType</span><span class="sxs-lookup"><span data-stu-id="11ba5-556">ReqDemPlanForecastType</span></span>|
-|<span data-ttu-id="11ba5-557">ReqDisplayDelay</span><span class="sxs-lookup"><span data-stu-id="11ba5-557">ReqDisplayDelay</span></span>|
-|<span data-ttu-id="11ba5-558">ReqForecastReducedBy</span><span class="sxs-lookup"><span data-stu-id="11ba5-558">ReqForecastReducedBy</span></span>|
-|<span data-ttu-id="11ba5-559">ReqGanttColorType</span><span class="sxs-lookup"><span data-stu-id="11ba5-559">ReqGanttColorType</span></span>|
-|<span data-ttu-id="11ba5-560">ReqGanttShow</span><span class="sxs-lookup"><span data-stu-id="11ba5-560">ReqGanttShow</span></span>|
-|<span data-ttu-id="11ba5-561">ReqItemJournalType</span><span class="sxs-lookup"><span data-stu-id="11ba5-561">ReqItemJournalType</span></span>|
-|<span data-ttu-id="11ba5-562">ReqItemTableWizardPurpose</span><span class="sxs-lookup"><span data-stu-id="11ba5-562">ReqItemTableWizardPurpose</span></span>|
-|<span data-ttu-id="11ba5-563">ReqMarkUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-563">ReqMarkUpdate</span></span>|
-|<span data-ttu-id="11ba5-564">ReqPeggingAssignmentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-564">ReqPeggingAssignmentType</span></span>|
-|<span data-ttu-id="11ba5-565">ReqPeggingType</span><span class="sxs-lookup"><span data-stu-id="11ba5-565">ReqPeggingType</span></span>|
-|<span data-ttu-id="11ba5-566">ReqPlannedOrderLeveling</span><span class="sxs-lookup"><span data-stu-id="11ba5-566">ReqPlannedOrderLeveling</span></span>|
-|<span data-ttu-id="11ba5-567">ReqPlanType</span><span class="sxs-lookup"><span data-stu-id="11ba5-567">ReqPlanType</span></span>|
-|<span data-ttu-id="11ba5-568">ReqPOStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-568">ReqPOStatus</span></span>|
-|<span data-ttu-id="11ba5-569">ReqQtyAmount</span><span class="sxs-lookup"><span data-stu-id="11ba5-569">ReqQtyAmount</span></span>|
-|<span data-ttu-id="11ba5-570">ReqRefType</span><span class="sxs-lookup"><span data-stu-id="11ba5-570">ReqRefType</span></span>|
-|<span data-ttu-id="11ba5-571">ReqRefTypeShort</span><span class="sxs-lookup"><span data-stu-id="11ba5-571">ReqRefTypeShort</span></span>|
-|<span data-ttu-id="11ba5-572">ReqRefTypeTrunc</span><span class="sxs-lookup"><span data-stu-id="11ba5-572">ReqRefTypeTrunc</span></span>|
-|<span data-ttu-id="11ba5-573">ReqTraceMessageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-573">ReqTraceMessageType</span></span>|
-|<span data-ttu-id="11ba5-574">ReqTransFuturesActionPartType</span><span class="sxs-lookup"><span data-stu-id="11ba5-574">ReqTransFuturesActionPartType</span></span>|
-|<span data-ttu-id="11ba5-575">ReturnCodeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-575">ReturnCodeType</span></span>|
-|<span data-ttu-id="11ba5-576">ReturnCycleTimeScope</span><span class="sxs-lookup"><span data-stu-id="11ba5-576">ReturnCycleTimeScope</span></span>|
-|<span data-ttu-id="11ba5-577">ReturnReasonCodeDispExtended</span><span class="sxs-lookup"><span data-stu-id="11ba5-577">ReturnReasonCodeDispExtended</span></span>|
-|<span data-ttu-id="11ba5-578">ReturnReasonDispCode</span><span class="sxs-lookup"><span data-stu-id="11ba5-578">ReturnReasonDispCode</span></span>|
-|<span data-ttu-id="11ba5-579">ReturnUpdateAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-579">ReturnUpdateAction</span></span>|
-|<span data-ttu-id="11ba5-580">RouteFormula</span><span class="sxs-lookup"><span data-stu-id="11ba5-580">RouteFormula</span></span>|
-|<span data-ttu-id="11ba5-581">RouteOprPriority</span><span class="sxs-lookup"><span data-stu-id="11ba5-581">RouteOprPriority</span></span>|
-|<span data-ttu-id="11ba5-582">SalesBasketType</span><span class="sxs-lookup"><span data-stu-id="11ba5-582">SalesBasketType</span></span>|
-|<span data-ttu-id="11ba5-583">SalesBatch</span><span class="sxs-lookup"><span data-stu-id="11ba5-583">SalesBatch</span></span>|
-|<span data-ttu-id="11ba5-584">SalesCheckForPickup</span><span class="sxs-lookup"><span data-stu-id="11ba5-584">SalesCheckForPickup</span></span>|
-|<span data-ttu-id="11ba5-585">SalesCheckQtyCachKey</span><span class="sxs-lookup"><span data-stu-id="11ba5-585">SalesCheckQtyCachKey</span></span>|
-|<span data-ttu-id="11ba5-586">SalesDeliveryTimeState</span><span class="sxs-lookup"><span data-stu-id="11ba5-586">SalesDeliveryTimeState</span></span>|
-|<span data-ttu-id="11ba5-587">SalesDocumentTimezonePreference</span><span class="sxs-lookup"><span data-stu-id="11ba5-587">SalesDocumentTimezonePreference</span></span>|
-|<span data-ttu-id="11ba5-588">SalesPriceDateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-588">SalesPriceDateType</span></span>|
-|<span data-ttu-id="11ba5-589">SalesPriceModelBasic</span><span class="sxs-lookup"><span data-stu-id="11ba5-589">SalesPriceModelBasic</span></span>|
-|<span data-ttu-id="11ba5-590">SalesPurchCopy</span><span class="sxs-lookup"><span data-stu-id="11ba5-590">SalesPurchCopy</span></span>|
-|<span data-ttu-id="11ba5-591">SalesPurchCycleAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-591">SalesPurchCycleAction</span></span>|
-|<span data-ttu-id="11ba5-592">SalesPurchGroup</span><span class="sxs-lookup"><span data-stu-id="11ba5-592">SalesPurchGroup</span></span>|
-|<span data-ttu-id="11ba5-593">SalesPurchParmCleanUpMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-593">SalesPurchParmCleanUpMode</span></span>|
-|<span data-ttu-id="11ba5-594">SalesQuotationFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-594">SalesQuotationFilter</span></span>|
-|<span data-ttu-id="11ba5-595">SalesQuotationLinkToProject</span><span class="sxs-lookup"><span data-stu-id="11ba5-595">SalesQuotationLinkToProject</span></span>|
-|<span data-ttu-id="11ba5-596">SalesQuotationListPage</span><span class="sxs-lookup"><span data-stu-id="11ba5-596">SalesQuotationListPage</span></span>|
-|<span data-ttu-id="11ba5-597">SalesQuotationPriceConversion</span><span class="sxs-lookup"><span data-stu-id="11ba5-597">SalesQuotationPriceConversion</span></span>|
-|<span data-ttu-id="11ba5-598">SalesQuotationPriceSimResult</span><span class="sxs-lookup"><span data-stu-id="11ba5-598">SalesQuotationPriceSimResult</span></span>|
-|<span data-ttu-id="11ba5-599">SalesQuotationTypeListPage</span><span class="sxs-lookup"><span data-stu-id="11ba5-599">SalesQuotationTypeListPage</span></span>|
-|<span data-ttu-id="11ba5-600">SalesShipping</span><span class="sxs-lookup"><span data-stu-id="11ba5-600">SalesShipping</span></span>|
-|<span data-ttu-id="11ba5-601">SalesSourcingOrigin</span><span class="sxs-lookup"><span data-stu-id="11ba5-601">SalesSourcingOrigin</span></span>|
-|<span data-ttu-id="11ba5-602">SalesStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-602">SalesStatus</span></span>|
-|<span data-ttu-id="11ba5-603">SalesTableFormId</span><span class="sxs-lookup"><span data-stu-id="11ba5-603">SalesTableFormId</span></span>|
-|<span data-ttu-id="11ba5-604">SalesTableListPage</span><span class="sxs-lookup"><span data-stu-id="11ba5-604">SalesTableListPage</span></span>|
-|<span data-ttu-id="11ba5-605">SalesTableMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-605">SalesTableMode</span></span>|
-|<span data-ttu-id="11ba5-606">SalesType</span><span class="sxs-lookup"><span data-stu-id="11ba5-606">SalesType</span></span>|
-|<span data-ttu-id="11ba5-607">SalesUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-607">SalesUpdate</span></span>|
-|<span data-ttu-id="11ba5-608">ShipCarrierDlvType</span><span class="sxs-lookup"><span data-stu-id="11ba5-608">ShipCarrierDlvType</span></span>|
-|<span data-ttu-id="11ba5-609">ShipCarrierFreightApplied</span><span class="sxs-lookup"><span data-stu-id="11ba5-609">ShipCarrierFreightApplied</span></span>|
-|<span data-ttu-id="11ba5-610">ShipCarrierMkUpFreight</span><span class="sxs-lookup"><span data-stu-id="11ba5-610">ShipCarrierMkUpFreight</span></span>|
-|<span data-ttu-id="11ba5-611">SMAInvoiceProjectSelection</span><span class="sxs-lookup"><span data-stu-id="11ba5-611">SMAInvoiceProjectSelection</span></span>|
-|<span data-ttu-id="11ba5-612">SMAItemSetupType</span><span class="sxs-lookup"><span data-stu-id="11ba5-612">SMAItemSetupType</span></span>|
-|<span data-ttu-id="11ba5-613">SMAProjectSelection</span><span class="sxs-lookup"><span data-stu-id="11ba5-613">SMAProjectSelection</span></span>|
-|<span data-ttu-id="11ba5-614">SMAReasonType</span><span class="sxs-lookup"><span data-stu-id="11ba5-614">SMAReasonType</span></span>|
-|<span data-ttu-id="11ba5-615">SMAServiceBOMChangeAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-615">SMAServiceBOMChangeAction</span></span>|
-|<span data-ttu-id="11ba5-616">SMAServiceFunctionType</span><span class="sxs-lookup"><span data-stu-id="11ba5-616">SMAServiceFunctionType</span></span>|
-|<span data-ttu-id="11ba5-617">SMAServiceLevelAgreementLogType</span><span class="sxs-lookup"><span data-stu-id="11ba5-617">SMAServiceLevelAgreementLogType</span></span>|
-|<span data-ttu-id="11ba5-618">SMAServiceOrderActionType</span><span class="sxs-lookup"><span data-stu-id="11ba5-618">SMAServiceOrderActionType</span></span>|
-|<span data-ttu-id="11ba5-619">SMAServiceOrderFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-619">SMAServiceOrderFilter</span></span>|
-|<span data-ttu-id="11ba5-620">SMAServiceOrderOrigin</span><span class="sxs-lookup"><span data-stu-id="11ba5-620">SMAServiceOrderOrigin</span></span>|
-|<span data-ttu-id="11ba5-621">SMAServiceOrderProgress</span><span class="sxs-lookup"><span data-stu-id="11ba5-621">SMAServiceOrderProgress</span></span>|
-|<span data-ttu-id="11ba5-622">SMAServiceTaskTitleOption</span><span class="sxs-lookup"><span data-stu-id="11ba5-622">SMAServiceTaskTitleOption</span></span>|
-|<span data-ttu-id="11ba5-623">SMASubscriptionPeriodType</span><span class="sxs-lookup"><span data-stu-id="11ba5-623">SMASubscriptionPeriodType</span></span>|
-|<span data-ttu-id="11ba5-624">SMAWizardCreateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-624">SMAWizardCreateType</span></span>|
-|<span data-ttu-id="11ba5-625">smmAccountNumToCreate</span><span class="sxs-lookup"><span data-stu-id="11ba5-625">smmAccountNumToCreate</span></span>|
-|<span data-ttu-id="11ba5-626">smmActivityParentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-626">smmActivityParentType</span></span>|
-|<span data-ttu-id="11ba5-627">smmAppointmentNThInstance</span><span class="sxs-lookup"><span data-stu-id="11ba5-627">smmAppointmentNThInstance</span></span>|
-|<span data-ttu-id="11ba5-628">smmBusinessRelationsListFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-628">smmBusinessRelationsListFilter</span></span>|
-|<span data-ttu-id="11ba5-629">smmBusRelTypeSourceTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-629">smmBusRelTypeSourceTable</span></span>|
-|<span data-ttu-id="11ba5-630">smmCampaignBroadcastType</span><span class="sxs-lookup"><span data-stu-id="11ba5-630">smmCampaignBroadcastType</span></span>|
-|<span data-ttu-id="11ba5-631">smmCampaignProjectJournalType</span><span class="sxs-lookup"><span data-stu-id="11ba5-631">smmCampaignProjectJournalType</span></span>|
-|<span data-ttu-id="11ba5-632">smmCampaignResponse</span><span class="sxs-lookup"><span data-stu-id="11ba5-632">smmCampaignResponse</span></span>|
-|<span data-ttu-id="11ba5-633">smmCampaignsListFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-633">smmCampaignsListFilter</span></span>|
-|<span data-ttu-id="11ba5-634">smmContactsListFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-634">smmContactsListFilter</span></span>|
-|<span data-ttu-id="11ba5-635">smmCreateOpportunityOptions</span><span class="sxs-lookup"><span data-stu-id="11ba5-635">smmCreateOpportunityOptions</span></span>|
-|<span data-ttu-id="11ba5-636">smmDisplayEMailInOutlook</span><span class="sxs-lookup"><span data-stu-id="11ba5-636">smmDisplayEMailInOutlook</span></span>|
-|<span data-ttu-id="11ba5-637">smmDragDropObjectType</span><span class="sxs-lookup"><span data-stu-id="11ba5-637">smmDragDropObjectType</span></span>|
-|<span data-ttu-id="11ba5-638">smmDupMethods</span><span class="sxs-lookup"><span data-stu-id="11ba5-638">smmDupMethods</span></span>|
-|<span data-ttu-id="11ba5-639">smmEMailSMS</span><span class="sxs-lookup"><span data-stu-id="11ba5-639">smmEMailSMS</span></span>|
-|<span data-ttu-id="11ba5-640">smmEntityToCreate</span><span class="sxs-lookup"><span data-stu-id="11ba5-640">smmEntityToCreate</span></span>|
-|<span data-ttu-id="11ba5-641">smmFieldDelimiters</span><span class="sxs-lookup"><span data-stu-id="11ba5-641">smmFieldDelimiters</span></span>|
-|<span data-ttu-id="11ba5-642">smmLeadsListFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-642">smmLeadsListFilter</span></span>|
-|<span data-ttu-id="11ba5-643">smmLogType</span><span class="sxs-lookup"><span data-stu-id="11ba5-643">smmLogType</span></span>|
-|<span data-ttu-id="11ba5-644">smmOpportunitiesListFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-644">smmOpportunitiesListFilter</span></span>|
-|<span data-ttu-id="11ba5-645">smmOpportunityAssociation</span><span class="sxs-lookup"><span data-stu-id="11ba5-645">smmOpportunityAssociation</span></span>|
-|<span data-ttu-id="11ba5-646">smmOutlookContactDeleteAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-646">smmOutlookContactDeleteAction</span></span>|
-|<span data-ttu-id="11ba5-647">smmOutlookRecurrenceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-647">smmOutlookRecurrenceType</span></span>|
-|<span data-ttu-id="11ba5-648">smmOutlookSyncPrinciple</span><span class="sxs-lookup"><span data-stu-id="11ba5-648">smmOutlookSyncPrinciple</span></span>|
-|<span data-ttu-id="11ba5-649">smmOutlookUpdateAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-649">smmOutlookUpdateAction</span></span>|
-|<span data-ttu-id="11ba5-650">smmProjectNewExisting</span><span class="sxs-lookup"><span data-stu-id="11ba5-650">smmProjectNewExisting</span></span>|
-|<span data-ttu-id="11ba5-651">smmQuotationAccountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-651">smmQuotationAccountType</span></span>|
-|<span data-ttu-id="11ba5-652">smmQuotationStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-652">smmQuotationStatus</span></span>|
-|<span data-ttu-id="11ba5-653">smmRecordDelimiters</span><span class="sxs-lookup"><span data-stu-id="11ba5-653">smmRecordDelimiters</span></span>|
-|<span data-ttu-id="11ba5-654">smmSalesUnitMemberRelation</span><span class="sxs-lookup"><span data-stu-id="11ba5-654">smmSalesUnitMemberRelation</span></span>|
-|<span data-ttu-id="11ba5-655">SmmSourceTypeList</span><span class="sxs-lookup"><span data-stu-id="11ba5-655">SmmSourceTypeList</span></span>|
-|<span data-ttu-id="11ba5-656">smmSwotType</span><span class="sxs-lookup"><span data-stu-id="11ba5-656">smmSwotType</span></span>|
-|<span data-ttu-id="11ba5-657">smmTransLogUpdateAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-657">smmTransLogUpdateAction</span></span>|
-|<span data-ttu-id="11ba5-658">smmUpdateOpportunityOptions</span><span class="sxs-lookup"><span data-stu-id="11ba5-658">smmUpdateOpportunityOptions</span></span>|
-|<span data-ttu-id="11ba5-659">smmWarningError</span><span class="sxs-lookup"><span data-stu-id="11ba5-659">smmWarningError</span></span>|
-|<span data-ttu-id="11ba5-660">SMAActiveAll</span><span class="sxs-lookup"><span data-stu-id="11ba5-660">SMAActiveAll</span></span>|
-|<span data-ttu-id="11ba5-661">SMAAgreementFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-661">SMAAgreementFilter</span></span>|
-|<span data-ttu-id="11ba5-662">SMAAgreementTableListPageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-662">SMAAgreementTableListPageType</span></span>|
-|<span data-ttu-id="11ba5-663">TAMCustRebateApprovalStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-663">TAMCustRebateApprovalStatus</span></span>|
-|<span data-ttu-id="11ba5-664">TAMFundStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-664">TAMFundStatus</span></span>|
-|<span data-ttu-id="11ba5-665">TAMFundType</span><span class="sxs-lookup"><span data-stu-id="11ba5-665">TAMFundType</span></span>|
-|<span data-ttu-id="11ba5-666">TAMPromoCustomerType</span><span class="sxs-lookup"><span data-stu-id="11ba5-666">TAMPromoCustomerType</span></span>|
-|<span data-ttu-id="11ba5-667">TAMPromoMerchEvent</span><span class="sxs-lookup"><span data-stu-id="11ba5-667">TAMPromoMerchEvent</span></span>|
-|<span data-ttu-id="11ba5-668">TAMPromoMgmtApprovalStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-668">TAMPromoMgmtApprovalStatus</span></span>|
-|<span data-ttu-id="11ba5-669">TAMPromotionDate</span><span class="sxs-lookup"><span data-stu-id="11ba5-669">TAMPromotionDate</span></span>|
-|<span data-ttu-id="11ba5-670">TAMPromotionMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-670">TAMPromotionMode</span></span>|
-|<span data-ttu-id="11ba5-671">TAMRebateCustInclusive</span><span class="sxs-lookup"><span data-stu-id="11ba5-671">TAMRebateCustInclusive</span></span>|
-|<span data-ttu-id="11ba5-672">TAMRebateLineBreakType</span><span class="sxs-lookup"><span data-stu-id="11ba5-672">TAMRebateLineBreakType</span></span>|
-|<span data-ttu-id="11ba5-673">TAMRebateStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-673">TAMRebateStatus</span></span>|
-|<span data-ttu-id="11ba5-674">TAMRebateUnitType</span><span class="sxs-lookup"><span data-stu-id="11ba5-674">TAMRebateUnitType</span></span>|
-|<span data-ttu-id="11ba5-675">TAMRebateUOMOption</span><span class="sxs-lookup"><span data-stu-id="11ba5-675">TAMRebateUOMOption</span></span>|
-|<span data-ttu-id="11ba5-676">TAMVendRebateApprovalStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-676">TAMVendRebateApprovalStatus</span></span>|
-|<span data-ttu-id="11ba5-677">TAMVendRebateCalcDateType</span><span class="sxs-lookup"><span data-stu-id="11ba5-677">TAMVendRebateCalcDateType</span></span>|
-|<span data-ttu-id="11ba5-678">TAMVendRebateTakenFrom</span><span class="sxs-lookup"><span data-stu-id="11ba5-678">TAMVendRebateTakenFrom</span></span>|
-|<span data-ttu-id="11ba5-679">TAMVendRebateTransactionType</span><span class="sxs-lookup"><span data-stu-id="11ba5-679">TAMVendRebateTransactionType</span></span>|
-|<span data-ttu-id="11ba5-680">TaxModuleType</span><span class="sxs-lookup"><span data-stu-id="11ba5-680">TaxModuleType</span></span>|
-|<span data-ttu-id="11ba5-681">TaxSourceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-681">TaxSourceType</span></span>|
-|<span data-ttu-id="11ba5-682">TMSAccessorialAssignmentLevel</span><span class="sxs-lookup"><span data-stu-id="11ba5-682">TMSAccessorialAssignmentLevel</span></span>|
-|<span data-ttu-id="11ba5-683">TMSAccessorialAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="11ba5-683">TMSAccessorialAssignmentTarget</span></span>|
-|<span data-ttu-id="11ba5-684">TMSAccessorialDeliveryType</span><span class="sxs-lookup"><span data-stu-id="11ba5-684">TMSAccessorialDeliveryType</span></span>|
-|<span data-ttu-id="11ba5-685">TMSAccessorialType</span><span class="sxs-lookup"><span data-stu-id="11ba5-685">TMSAccessorialType</span></span>|
-|<span data-ttu-id="11ba5-686">TMSAppointmentAlert</span><span class="sxs-lookup"><span data-stu-id="11ba5-686">TMSAppointmentAlert</span></span>|
-|<span data-ttu-id="11ba5-687">TMSDiscountResultType</span><span class="sxs-lookup"><span data-stu-id="11ba5-687">TMSDiscountResultType</span></span>|
-|<span data-ttu-id="11ba5-688">TMSDiscountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-688">TMSDiscountType</span></span>|
-|<span data-ttu-id="11ba5-689">TMSFeeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-689">TMSFeeType</span></span>|
-|<span data-ttu-id="11ba5-690">TMSFreightBillMatchStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-690">TMSFreightBillMatchStatus</span></span>|
-|<span data-ttu-id="11ba5-691">TMSFreightBillReconcileType</span><span class="sxs-lookup"><span data-stu-id="11ba5-691">TMSFreightBillReconcileType</span></span>|
-|<span data-ttu-id="11ba5-692">TMSFwkErrorType</span><span class="sxs-lookup"><span data-stu-id="11ba5-692">TMSFwkErrorType</span></span>|
-|<span data-ttu-id="11ba5-693">TMSHubPosition</span><span class="sxs-lookup"><span data-stu-id="11ba5-693">TMSHubPosition</span></span>|
-|<span data-ttu-id="11ba5-694">TMSInvoiceAccountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-694">TMSInvoiceAccountType</span></span>|
-|<span data-ttu-id="11ba5-695">TMSLineType</span><span class="sxs-lookup"><span data-stu-id="11ba5-695">TMSLineType</span></span>|
-|<span data-ttu-id="11ba5-696">TMSLoadBuildSessionState</span><span class="sxs-lookup"><span data-stu-id="11ba5-696">TMSLoadBuildSessionState</span></span>|
-|<span data-ttu-id="11ba5-697">TMSLoadTender</span><span class="sxs-lookup"><span data-stu-id="11ba5-697">TMSLoadTender</span></span>|
-|<span data-ttu-id="11ba5-698">TMSLookupType</span><span class="sxs-lookup"><span data-stu-id="11ba5-698">TMSLookupType</span></span>|
-|<span data-ttu-id="11ba5-699">TMSNumberSequenceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-699">TMSNumberSequenceType</span></span>|
-|<span data-ttu-id="11ba5-700">TMSOverrideLocationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-700">TMSOverrideLocationType</span></span>|
-|<span data-ttu-id="11ba5-701">TMSRecurrenceDays</span><span class="sxs-lookup"><span data-stu-id="11ba5-701">TMSRecurrenceDays</span></span>|
-|<span data-ttu-id="11ba5-702">TMSRecurrenceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-702">TMSRecurrenceType</span></span>|
-|<span data-ttu-id="11ba5-703">TMSRecurrenceWeeks</span><span class="sxs-lookup"><span data-stu-id="11ba5-703">TMSRecurrenceWeeks</span></span>|
-|<span data-ttu-id="11ba5-704">TMSResponsibleForPayment</span><span class="sxs-lookup"><span data-stu-id="11ba5-704">TMSResponsibleForPayment</span></span>|
-|<span data-ttu-id="11ba5-705">TMSRouteStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-705">TMSRouteStatus</span></span>|
-|<span data-ttu-id="11ba5-706">TMSSalesPurchTransfer</span><span class="sxs-lookup"><span data-stu-id="11ba5-706">TMSSalesPurchTransfer</span></span>|
-|<span data-ttu-id="11ba5-707">TMSTableRef</span><span class="sxs-lookup"><span data-stu-id="11ba5-707">TMSTableRef</span></span>|
-|<span data-ttu-id="11ba5-708">TMSTransportationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-708">TMSTransportationType</span></span>|
-|<span data-ttu-id="11ba5-709">TMSTransportRefType</span><span class="sxs-lookup"><span data-stu-id="11ba5-709">TMSTransportRefType</span></span>|
-|<span data-ttu-id="11ba5-710">TMSTransportTypeFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-710">TMSTransportTypeFilter</span></span>|
-|<span data-ttu-id="11ba5-711">TMSUOM</span><span class="sxs-lookup"><span data-stu-id="11ba5-711">TMSUOM</span></span>|
-|<span data-ttu-id="11ba5-712">TMSZoneType</span><span class="sxs-lookup"><span data-stu-id="11ba5-712">TMSZoneType</span></span>|
-|<span data-ttu-id="11ba5-713">TradeCurencyConversion</span><span class="sxs-lookup"><span data-stu-id="11ba5-713">TradeCurencyConversion</span></span>|
-|<span data-ttu-id="11ba5-714">TradeLineDlvType</span><span class="sxs-lookup"><span data-stu-id="11ba5-714">TradeLineDlvType</span></span>|
-|<span data-ttu-id="11ba5-715">TradeNonStockedConversionChangeType</span><span class="sxs-lookup"><span data-stu-id="11ba5-715">TradeNonStockedConversionChangeType</span></span>|
-|<span data-ttu-id="11ba5-716">TradeNonStockedConversionIssue</span><span class="sxs-lookup"><span data-stu-id="11ba5-716">TradeNonStockedConversionIssue</span></span>|
-|<span data-ttu-id="11ba5-717">TradeNonStockedConversionResolveUndo</span><span class="sxs-lookup"><span data-stu-id="11ba5-717">TradeNonStockedConversionResolveUndo</span></span>|
-|<span data-ttu-id="11ba5-718">TradePrintType</span><span class="sxs-lookup"><span data-stu-id="11ba5-718">TradePrintType</span></span>|
-|<span data-ttu-id="11ba5-719">TradeTable2LineUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-719">TradeTable2LineUpdate</span></span>|
-|<span data-ttu-id="11ba5-720">VendNotificationCategorySelection</span><span class="sxs-lookup"><span data-stu-id="11ba5-720">VendNotificationCategorySelection</span></span>|
-|<span data-ttu-id="11ba5-721">VendNotificationStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-721">VendNotificationStatus</span></span>|
-|<span data-ttu-id="11ba5-722">VendPackingSlipTransTimeStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-722">VendPackingSlipTransTimeStatus</span></span>|
-|<span data-ttu-id="11ba5-723">VendRequestCompanyType</span><span class="sxs-lookup"><span data-stu-id="11ba5-723">VendRequestCompanyType</span></span>|
-|<span data-ttu-id="11ba5-724">VendRequestOriginatedByType</span><span class="sxs-lookup"><span data-stu-id="11ba5-724">VendRequestOriginatedByType</span></span>|
-|<span data-ttu-id="11ba5-725">VendRequestQuestionnairesCompleted</span><span class="sxs-lookup"><span data-stu-id="11ba5-725">VendRequestQuestionnairesCompleted</span></span>|
-|<span data-ttu-id="11ba5-726">VendRequestRoleType</span><span class="sxs-lookup"><span data-stu-id="11ba5-726">VendRequestRoleType</span></span>|
-|<span data-ttu-id="11ba5-727">VendReviewRatingScore</span><span class="sxs-lookup"><span data-stu-id="11ba5-727">VendReviewRatingScore</span></span>|
-|<span data-ttu-id="11ba5-728">VersioningAction</span><span class="sxs-lookup"><span data-stu-id="11ba5-728">VersioningAction</span></span>|
-|<span data-ttu-id="11ba5-729">WHSAllowMaterialOverPick</span><span class="sxs-lookup"><span data-stu-id="11ba5-729">WHSAllowMaterialOverPick</span></span>|
-|<span data-ttu-id="11ba5-730">WHSApplicableDemand</span><span class="sxs-lookup"><span data-stu-id="11ba5-730">WHSApplicableDemand</span></span>|
-|<span data-ttu-id="11ba5-731">WHSAutoReleaseContainerAtContainerClose</span><span class="sxs-lookup"><span data-stu-id="11ba5-731">WHSAutoReleaseContainerAtContainerClose</span></span>|
-|<span data-ttu-id="11ba5-732">WHSAutoReleaseOrderType</span><span class="sxs-lookup"><span data-stu-id="11ba5-732">WHSAutoReleaseOrderType</span></span>|
-|<span data-ttu-id="11ba5-733">WHSBreakCluster</span><span class="sxs-lookup"><span data-stu-id="11ba5-733">WHSBreakCluster</span></span>|
-|<span data-ttu-id="11ba5-734">WHSContainerizationQueryType</span><span class="sxs-lookup"><span data-stu-id="11ba5-734">WHSContainerizationQueryType</span></span>|
-|<span data-ttu-id="11ba5-735">WHSContainerPackingStrategy</span><span class="sxs-lookup"><span data-stu-id="11ba5-735">WHSContainerPackingStrategy</span></span>|
-|<span data-ttu-id="11ba5-736">WHSContainerTableFormViewType</span><span class="sxs-lookup"><span data-stu-id="11ba5-736">WHSContainerTableFormViewType</span></span>|
-|<span data-ttu-id="11ba5-737">WHSCrossDockFulfillmentStrategy</span><span class="sxs-lookup"><span data-stu-id="11ba5-737">WHSCrossDockFulfillmentStrategy</span></span>|
-|<span data-ttu-id="11ba5-738">WHSCustJourType</span><span class="sxs-lookup"><span data-stu-id="11ba5-738">WHSCustJourType</span></span>|
-|<span data-ttu-id="11ba5-739">WHSCycleCountPlanStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-739">WHSCycleCountPlanStatus</span></span>|
-|<span data-ttu-id="11ba5-740">WHSDefaultDataField</span><span class="sxs-lookup"><span data-stu-id="11ba5-740">WHSDefaultDataField</span></span>|
-|<span data-ttu-id="11ba5-741">WHSFilterModule</span><span class="sxs-lookup"><span data-stu-id="11ba5-741">WHSFilterModule</span></span>|
-|<span data-ttu-id="11ba5-742">WHSHistoryEvent</span><span class="sxs-lookup"><span data-stu-id="11ba5-742">WHSHistoryEvent</span></span>|
-|<span data-ttu-id="11ba5-743">WHSLoadPlanning</span><span class="sxs-lookup"><span data-stu-id="11ba5-743">WHSLoadPlanning</span></span>|
-|<span data-ttu-id="11ba5-744">WHSLoadPostMethodsBase</span><span class="sxs-lookup"><span data-stu-id="11ba5-744">WHSLoadPostMethodsBase</span></span>|
-|<span data-ttu-id="11ba5-745">WhsLoadReplenishment</span><span class="sxs-lookup"><span data-stu-id="11ba5-745">WhsLoadReplenishment</span></span>|
-|<span data-ttu-id="11ba5-746">WHSLoadTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-746">WHSLoadTable</span></span>|
-|<span data-ttu-id="11ba5-747">WHSLocDirStrategy</span><span class="sxs-lookup"><span data-stu-id="11ba5-747">WHSLocDirStrategy</span></span>|
-|<span data-ttu-id="11ba5-748">WHSLPAssignment</span><span class="sxs-lookup"><span data-stu-id="11ba5-748">WHSLPAssignment</span></span>|
-|<span data-ttu-id="11ba5-749">WHSLPWFilterType</span><span class="sxs-lookup"><span data-stu-id="11ba5-749">WHSLPWFilterType</span></span>|
-|<span data-ttu-id="11ba5-750">WHSManifestAt</span><span class="sxs-lookup"><span data-stu-id="11ba5-750">WHSManifestAt</span></span>|
-|<span data-ttu-id="11ba5-751">WHSManifestRequirementContainerGroup</span><span class="sxs-lookup"><span data-stu-id="11ba5-751">WHSManifestRequirementContainerGroup</span></span>|
-|<span data-ttu-id="11ba5-752">WHSMenuItemDirectedBy</span><span class="sxs-lookup"><span data-stu-id="11ba5-752">WHSMenuItemDirectedBy</span></span>|
-|<span data-ttu-id="11ba5-753">WHSMixedLPReceivingMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-753">WHSMixedLPReceivingMode</span></span>|
-|<span data-ttu-id="11ba5-754">WHSMixingLogicTables</span><span class="sxs-lookup"><span data-stu-id="11ba5-754">WHSMixingLogicTables</span></span>|
-|<span data-ttu-id="11ba5-755">WHSMobileAppPagePattern</span><span class="sxs-lookup"><span data-stu-id="11ba5-755">WHSMobileAppPagePattern</span></span>|
-|<span data-ttu-id="11ba5-756">WHSOriginType</span><span class="sxs-lookup"><span data-stu-id="11ba5-756">WHSOriginType</span></span>|
-|<span data-ttu-id="11ba5-757">WHSPickOldestBatch</span><span class="sxs-lookup"><span data-stu-id="11ba5-757">WHSPickOldestBatch</span></span>|
-|<span data-ttu-id="11ba5-758">WHSPostMethodBaseKanban</span><span class="sxs-lookup"><span data-stu-id="11ba5-758">WHSPostMethodBaseKanban</span></span>|
-|<span data-ttu-id="11ba5-759">WHSPostMethodBaseKanbanOptional</span><span class="sxs-lookup"><span data-stu-id="11ba5-759">WHSPostMethodBaseKanbanOptional</span></span>|
-|<span data-ttu-id="11ba5-760">WHSPostMethodBaseOptional</span><span class="sxs-lookup"><span data-stu-id="11ba5-760">WHSPostMethodBaseOptional</span></span>|
-|<span data-ttu-id="11ba5-761">WHSPostMethodBaseProd</span><span class="sxs-lookup"><span data-stu-id="11ba5-761">WHSPostMethodBaseProd</span></span>|
-|<span data-ttu-id="11ba5-762">WHSPostMethodBaseProdOptional</span><span class="sxs-lookup"><span data-stu-id="11ba5-762">WHSPostMethodBaseProdOptional</span></span>|
-|<span data-ttu-id="11ba5-763">WHSPostMethodsBase</span><span class="sxs-lookup"><span data-stu-id="11ba5-763">WHSPostMethodsBase</span></span>|
-|<span data-ttu-id="11ba5-764">WHSQtyPct</span><span class="sxs-lookup"><span data-stu-id="11ba5-764">WHSQtyPct</span></span>|
-|<span data-ttu-id="11ba5-765">WHSReleaseQuantitySpecification</span><span class="sxs-lookup"><span data-stu-id="11ba5-765">WHSReleaseQuantitySpecification</span></span>|
-|<span data-ttu-id="11ba5-766">WHSReplenishmentDependentWorkBlockingPolicy</span><span class="sxs-lookup"><span data-stu-id="11ba5-766">WHSReplenishmentDependentWorkBlockingPolicy</span></span>|
-|<span data-ttu-id="11ba5-767">WHSReservationHierarchyLevelStrategyType</span><span class="sxs-lookup"><span data-stu-id="11ba5-767">WHSReservationHierarchyLevelStrategyType</span></span>|
-|<span data-ttu-id="11ba5-768">WHSReservationStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-768">WHSReservationStatus</span></span>|
-|<span data-ttu-id="11ba5-769">WHSUseFixedLocations</span><span class="sxs-lookup"><span data-stu-id="11ba5-769">WHSUseFixedLocations</span></span>|
-|<span data-ttu-id="11ba5-770">WHSWorkActivity</span><span class="sxs-lookup"><span data-stu-id="11ba5-770">WHSWorkActivity</span></span>|
-|<span data-ttu-id="11ba5-771">WHSWorkClusterStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-771">WHSWorkClusterStatus</span></span>|
-|<span data-ttu-id="11ba5-772">WHSWorkCreationProcess</span><span class="sxs-lookup"><span data-stu-id="11ba5-772">WHSWorkCreationProcess</span></span>|
-|<span data-ttu-id="11ba5-773">WHSWorkExceptionLogStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-773">WHSWorkExceptionLogStatus</span></span>|
-|<span data-ttu-id="11ba5-774">WHSWorkExecuteMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-774">WHSWorkExecuteMode</span></span>|
-|<span data-ttu-id="11ba5-775">WHSWorkListPageFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-775">WHSWorkListPageFilter</span></span>|
-|<span data-ttu-id="11ba5-776">WHSWorkPrintOption</span><span class="sxs-lookup"><span data-stu-id="11ba5-776">WHSWorkPrintOption</span></span>|
-|<span data-ttu-id="11ba5-777">WHSWorkPutFlow</span><span class="sxs-lookup"><span data-stu-id="11ba5-777">WHSWorkPutFlow</span></span>|
-|<span data-ttu-id="11ba5-778">WHSWorkTransType</span><span class="sxs-lookup"><span data-stu-id="11ba5-778">WHSWorkTransType</span></span>|
-|<span data-ttu-id="11ba5-779">WHSWorkType</span><span class="sxs-lookup"><span data-stu-id="11ba5-779">WHSWorkType</span></span>|
-|<span data-ttu-id="11ba5-780">WHSWorkTypePickPut</span><span class="sxs-lookup"><span data-stu-id="11ba5-780">WHSWorkTypePickPut</span></span>|
-|<span data-ttu-id="11ba5-781">WMSAutoAddStop</span><span class="sxs-lookup"><span data-stu-id="11ba5-781">WMSAutoAddStop</span></span>|
-|<span data-ttu-id="11ba5-782">WMSFreightChargeTerms</span><span class="sxs-lookup"><span data-stu-id="11ba5-782">WMSFreightChargeTerms</span></span>|
-|<span data-ttu-id="11ba5-783">WMSFreightCounted</span><span class="sxs-lookup"><span data-stu-id="11ba5-783">WMSFreightCounted</span></span>|
-|<span data-ttu-id="11ba5-784">WMSHandlingType</span><span class="sxs-lookup"><span data-stu-id="11ba5-784">WMSHandlingType</span></span>|
-|<span data-ttu-id="11ba5-785">WMSLocationType</span><span class="sxs-lookup"><span data-stu-id="11ba5-785">WMSLocationType</span></span>|
-|<span data-ttu-id="11ba5-786">WMSPackageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-786">WMSPackageType</span></span>|
-|<span data-ttu-id="11ba5-787">WMSPalletMovementProcessing</span><span class="sxs-lookup"><span data-stu-id="11ba5-787">WMSPalletMovementProcessing</span></span>|
-|<span data-ttu-id="11ba5-788">WMSPhysicalUpdateStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-788">WMSPhysicalUpdateStatus</span></span>|
-|<span data-ttu-id="11ba5-789">WMSReceiptStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-789">WMSReceiptStatus</span></span>|
-|<span data-ttu-id="11ba5-790">WMSReservationMethod</span><span class="sxs-lookup"><span data-stu-id="11ba5-790">WMSReservationMethod</span></span>|
-|<span data-ttu-id="11ba5-791">WMSReservationMethodInternal</span><span class="sxs-lookup"><span data-stu-id="11ba5-791">WMSReservationMethodInternal</span></span>|
-|<span data-ttu-id="11ba5-792">WMSShipmentStatus</span><span class="sxs-lookup"><span data-stu-id="11ba5-792">WMSShipmentStatus</span></span>|
-|<span data-ttu-id="11ba5-793">WMSShipmentType</span><span class="sxs-lookup"><span data-stu-id="11ba5-793">WMSShipmentType</span></span>|
-|<span data-ttu-id="11ba5-794">WMSSpaceUtilInconsistencyGroup</span><span class="sxs-lookup"><span data-stu-id="11ba5-794">WMSSpaceUtilInconsistencyGroup</span></span>|
-|<span data-ttu-id="11ba5-795">WMSSpaceUtilShowBy</span><span class="sxs-lookup"><span data-stu-id="11ba5-795">WMSSpaceUtilShowBy</span></span>|
-|<span data-ttu-id="11ba5-796">WMSSpaceUtilStorageLoadUnitType</span><span class="sxs-lookup"><span data-stu-id="11ba5-796">WMSSpaceUtilStorageLoadUnitType</span></span>|
-|<span data-ttu-id="11ba5-797">WMSStoreAreaType</span><span class="sxs-lookup"><span data-stu-id="11ba5-797">WMSStoreAreaType</span></span>|
-|<span data-ttu-id="11ba5-798">WMSTrailerLoaded</span><span class="sxs-lookup"><span data-stu-id="11ba5-798">WMSTrailerLoaded</span></span>|
-|<span data-ttu-id="11ba5-799">WrkCtrActivityType</span><span class="sxs-lookup"><span data-stu-id="11ba5-799">WrkCtrActivityType</span></span>|
-|<span data-ttu-id="11ba5-800">WrkCtrBulkResReqSearchType</span><span class="sxs-lookup"><span data-stu-id="11ba5-800">WrkCtrBulkResReqSearchType</span></span>|
-|<span data-ttu-id="11ba5-801">WrkCtrCapacityType</span><span class="sxs-lookup"><span data-stu-id="11ba5-801">WrkCtrCapacityType</span></span>|
-|<span data-ttu-id="11ba5-802">WrkCtrCapRefType</span><span class="sxs-lookup"><span data-stu-id="11ba5-802">WrkCtrCapRefType</span></span>|
-|<span data-ttu-id="11ba5-803">WrkCtrCommitState</span><span class="sxs-lookup"><span data-stu-id="11ba5-803">WrkCtrCommitState</span></span>|
-|<span data-ttu-id="11ba5-804">WrkCtrGroupWrkCtr</span><span class="sxs-lookup"><span data-stu-id="11ba5-804">WrkCtrGroupWrkCtr</span></span>|
-|<span data-ttu-id="11ba5-805">WrkCtrSchedulerCommand</span><span class="sxs-lookup"><span data-stu-id="11ba5-805">WrkCtrSchedulerCommand</span></span>|
-|<span data-ttu-id="11ba5-806">WrkCtrSchedulerConstraintType</span><span class="sxs-lookup"><span data-stu-id="11ba5-806">WrkCtrSchedulerConstraintType</span></span>|
-|<span data-ttu-id="11ba5-807">WrkCtrSchedulerLoggerMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-807">WrkCtrSchedulerLoggerMode</span></span>|
-|<span data-ttu-id="11ba5-808">WrkCtrType</span><span class="sxs-lookup"><span data-stu-id="11ba5-808">WrkCtrType</span></span>|
-|<span data-ttu-id="11ba5-809">WrkCtrTypeFilter</span><span class="sxs-lookup"><span data-stu-id="11ba5-809">WrkCtrTypeFilter</span></span>|
-
-<span data-ttu-id="11ba5-810">以下の列挙型は削除され、拡張可能になりませんでした。</span><span class="sxs-lookup"><span data-stu-id="11ba5-810">These enumerations were removed, and not made extensible.</span></span>
-
-| <span data-ttu-id="11ba5-811">削除された列挙型</span><span class="sxs-lookup"><span data-stu-id="11ba5-811">Enumeration removed</span></span> |
-| --------------- |
-|<span data-ttu-id="11ba5-812">BackorderLinesListPageMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-812">BackorderLinesListPageMode</span></span>|
-|<span data-ttu-id="11ba5-813">BackorderPurchLinesListPageMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-813">BackorderPurchLinesListPageMode</span></span> |
-|<span data-ttu-id="11ba5-814">EcoResProductPerCompanyListPageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-814">EcoResProductPerCompanyListPageType</span></span> |
-|<span data-ttu-id="11ba5-815">ReturnTableListPageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-815">ReturnTableListPageType</span></span> |
-|<span data-ttu-id="11ba5-816">SMAAgreementTableListPageType</span><span class="sxs-lookup"><span data-stu-id="11ba5-816">SMAAgreementTableListPageType</span></span>|
-
-<span data-ttu-id="11ba5-817">拡張可能な列挙型のサポートを改善するために、Foundation の変更が行われました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-817">Foundation changes were made to improve support for extensible enumerations.</span></span> <span data-ttu-id="11ba5-818">**IsExtensible** が **はい** に設定されている列挙型については、**SysPlugin** フレームワークが使用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-818">The **SysPlugin** framework was enabled for enumerations where **IsExtensible** is set to **Yes**.</span></span> <span data-ttu-id="11ba5-819">列挙型の新しい名前に基づく構文で、ビューが使用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-819">Views were enabled with new name-based syntax for enumerations.</span></span>
-
-## <a name="data-manipulation-methods-that-do-not-raise-dataevents-or-missing-insert-update-delete-pre--and-post-data-events"></a><span data-ttu-id="11ba5-820">DataEvents または欠落している insert、update、delete プリおよびポストデータ イベントを生成しないデータ操作メソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-820">Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events</span></span>
-
-<span data-ttu-id="11ba5-821">一般なプラクティスとして、テーブルのデータ メソッドを使用して、アプリケーションの拡張に使用できるイベントを発生させます。</span><span class="sxs-lookup"><span data-stu-id="11ba5-821">As a general practice, you use data methods on tables to raise events that can be used for extending the application.</span></span> <span data-ttu-id="11ba5-822">コード ベースは、必ずしもこのプラクティスに従っていませんでした。</span><span class="sxs-lookup"><span data-stu-id="11ba5-822">The code base has not always followed this practice.</span></span> <span data-ttu-id="11ba5-823">たとえば、**doInsert**、**doUpdate**、および **doDelete** データ メソッドと特定のテーブルの実装では、データ メソッドで **super()** の呼び出しは行われませんでした。</span><span class="sxs-lookup"><span data-stu-id="11ba5-823">For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.</span></span>
-
-<span data-ttu-id="11ba5-824">タイプ クラスの **insert**、**update**、および **delete** メソッドはリファクターされました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-824">The **insert**, **update**, and **delete** methods on the type classes have been refactored.</span></span> <span data-ttu-id="11ba5-825">データ メソッドで **super()** が確実に呼び出されるように変更が行われました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-825">Changes were made so that **super()** is called more consistently in data methods.</span></span> <span data-ttu-id="11ba5-826">これらの変更により、これらのメソッドへの拡張機能の追加が可能になり、その結果、プリイベントとポストイベントが拡張機能で使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-826">These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension.</span></span> <span data-ttu-id="11ba5-827">次の表に、**insert**、**update**、および **delete** イベントが拡張機能に対して有効になったテーブルを表示します。</span><span class="sxs-lookup"><span data-stu-id="11ba5-827">The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.</span></span>
-
-| <span data-ttu-id="11ba5-828">テーブル</span><span class="sxs-lookup"><span data-stu-id="11ba5-828">Table</span></span> |
-| -------------|
-| <span data-ttu-id="11ba5-829">InventBlocking</span><span class="sxs-lookup"><span data-stu-id="11ba5-829">InventBlocking</span></span>|
-| <span data-ttu-id="11ba5-830">InventTransferLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-830">InventTransferLine</span></span>|
-| <span data-ttu-id="11ba5-831">Kanban</span><span class="sxs-lookup"><span data-stu-id="11ba5-831">Kanban</span></span>|
-| <span data-ttu-id="11ba5-832">KanbanJob</span><span class="sxs-lookup"><span data-stu-id="11ba5-832">KanbanJob</span></span>|
-| <span data-ttu-id="11ba5-833">KanbanJobPickingList</span><span class="sxs-lookup"><span data-stu-id="11ba5-833">KanbanJobPickingList</span></span>|
-| <span data-ttu-id="11ba5-834">MCRRoyaltyVendTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-834">MCRRoyaltyVendTable</span></span>|
-| <span data-ttu-id="11ba5-835">PdsRebateTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-835">PdsRebateTable</span></span>|
-| <span data-ttu-id="11ba5-836">PmfProdCoBy</span><span class="sxs-lookup"><span data-stu-id="11ba5-836">PmfProdCoBy</span></span>|
-| <span data-ttu-id="11ba5-837">ProdBOM</span><span class="sxs-lookup"><span data-stu-id="11ba5-837">ProdBOM</span></span>|
-| <span data-ttu-id="11ba5-838">ProdRoute</span><span class="sxs-lookup"><span data-stu-id="11ba5-838">ProdRoute</span></span>|
-| <span data-ttu-id="11ba5-839">ProdTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-839">ProdTable</span></span>|
-| <span data-ttu-id="11ba5-840">PurchLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-840">PurchLine</span></span>|
-| <span data-ttu-id="11ba5-841">PurchRFQCaseLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-841">PurchRFQCaseLine</span></span>|
-| <span data-ttu-id="11ba5-842">PurchRFQCaseTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-842">PurchRFQCaseTable</span></span>|
-| <span data-ttu-id="11ba5-843">PurchRFQLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-843">PurchRFQLine</span></span>|
-| <span data-ttu-id="11ba5-844">PurchTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-844">PurchTable</span></span>|
-| <span data-ttu-id="11ba5-845">SalesLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-845">SalesLine</span></span>|
-| <span data-ttu-id="11ba5-846">SalesQuotationLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-846">SalesQuotationLine</span></span>|
-| <span data-ttu-id="11ba5-847">SalesQuotationTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-847">SalesQuotationTable</span></span>|
-| <span data-ttu-id="11ba5-848">SalesTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-848">SalesTable</span></span>|
-| <span data-ttu-id="11ba5-849">TAMVendRebateTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-849">TAMVendRebateTable</span></span>|
-| <span data-ttu-id="11ba5-850">WMSOrder</span><span class="sxs-lookup"><span data-stu-id="11ba5-850">WMSOrder</span></span>|
-| <span data-ttu-id="11ba5-851">WMSOrderTrans</span><span class="sxs-lookup"><span data-stu-id="11ba5-851">WMSOrderTrans</span></span>|
-
-## <a name="exposing-class-members"></a><span data-ttu-id="11ba5-852">クラス メンバーの公開</span><span class="sxs-lookup"><span data-stu-id="11ba5-852">Exposing class members</span></span>
-
-<span data-ttu-id="11ba5-853">アクセス修飾子または新しい parm メソッドの変更の結果、追加のプライベート メンバーをカスタマイズに使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-853">Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods.</span></span> <span data-ttu-id="11ba5-854">コマンド チェーン プラットフォーム機能により、保護されたメソッドとメンバーへの拡張クラスのアクセスが有効になります。</span><span class="sxs-lookup"><span data-stu-id="11ba5-854">The chain of command platform feature enables extension class access to protected methods and members.</span></span> <span data-ttu-id="11ba5-855">コマンド チェーンの詳細については、「[拡張可能な X++: コマンド チェーン](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="11ba5-855">For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).</span></span>
-
-| <span data-ttu-id="11ba5-856">メンバー</span><span class="sxs-lookup"><span data-stu-id="11ba5-856">Member</span></span> |
-| -------------|
-|<span data-ttu-id="11ba5-857">AssetPost.ledgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="11ba5-857">AssetPost.ledgerJournalTrans</span></span>|
-|<span data-ttu-id="11ba5-858">クラス DimensionDerivationRule.ledgerDimensionAllocationList</span><span class="sxs-lookup"><span data-stu-id="11ba5-858">Class DimensionDerivationRule.ledgerDimensionAllocationList</span></span>|
-|<span data-ttu-id="11ba5-859">クラス PurchInvoiceJournalCreate.purchTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-859">Class PurchInvoiceJournalCreate.purchTable</span></span>|
-|<span data-ttu-id="11ba5-860">クラス PurchTableType.purchTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-860">Class PurchTableType.purchTable</span></span>|
-|<span data-ttu-id="11ba5-861">クラス SalesInvoiceJournalPost.salesLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-861">Class SalesInvoiceJournalPost.salesLine</span></span>|
-|<span data-ttu-id="11ba5-862">クラス SalesQuotationLineType</span><span class="sxs-lookup"><span data-stu-id="11ba5-862">Class SalesQuotationLineType</span></span>|
-|<span data-ttu-id="11ba5-863">クラス SalesQuotationTableType</span><span class="sxs-lookup"><span data-stu-id="11ba5-863">Class SalesQuotationTableType</span></span>|
-|<span data-ttu-id="11ba5-864">クラス VendorInvoiceLineSourceDocLineItem.purchLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-864">Class VendorInvoiceLineSourceDocLineItem.purchLine</span></span>|
-|<span data-ttu-id="11ba5-865">CustCreditLimit.balanceTotalsCalculated</span><span class="sxs-lookup"><span data-stu-id="11ba5-865">CustCreditLimit.balanceTotalsCalculated</span></span>|
-|<span data-ttu-id="11ba5-866">CustCreditLimit_SalesTable.salesTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-866">CustCreditLimit_SalesTable.salesTable</span></span>|
-|<span data-ttu-id="11ba5-867">フォーム LedgerJournalTransCustPaym.ledgerJournalEngine</span><span class="sxs-lookup"><span data-stu-id="11ba5-867">Form LedgerJournalTransCustPaym.ledgerJournalEngine</span></span>|
-|<span data-ttu-id="11ba5-868">PurchLineType.purchLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-868">PurchLineType.purchLine</span></span>|
-|<span data-ttu-id="11ba5-869">PurchLineType.purchLine_orig</span><span class="sxs-lookup"><span data-stu-id="11ba5-869">PurchLineType.purchLine_orig</span></span>|
-|<span data-ttu-id="11ba5-870">SalesLineType.salesLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-870">SalesLineType.salesLine</span></span>|
-|<span data-ttu-id="11ba5-871">SalesLineType.salesLine_orig</span><span class="sxs-lookup"><span data-stu-id="11ba5-871">SalesLineType.salesLine_orig</span></span>|
-|<span data-ttu-id="11ba5-872">SalesTableType.checkSalesQty</span><span class="sxs-lookup"><span data-stu-id="11ba5-872">SalesTableType.checkSalesQty</span></span>|
-|<span data-ttu-id="11ba5-873">SalesTableType.SalesTable_orig</span><span class="sxs-lookup"><span data-stu-id="11ba5-873">SalesTableType.SalesTable_orig</span></span>|
-|<span data-ttu-id="11ba5-874">WHSControl.data</span><span class="sxs-lookup"><span data-stu-id="11ba5-874">WHSControl.data</span></span>|
-|<span data-ttu-id="11ba5-875">WHSLocationDirective.targetLicensePlateId</span><span class="sxs-lookup"><span data-stu-id="11ba5-875">WHSLocationDirective.targetLicensePlateId</span></span>|
-
-## <a name="construct-methods-with-throw-statements"></a><span data-ttu-id="11ba5-876">throw ステートメントを使用した construct メソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-876">Construct methods with throw statements</span></span>
-
-<span data-ttu-id="11ba5-877">特定の型の実装が欠落していた場合、いくつかの **construct** メソッドが **throw** ステートメントで実装されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-877">Some **construct** methods were implemented with **throw** statements if there was a missing implementation for a given type.</span></span> <span data-ttu-id="11ba5-878">これは拡張性に対してはうまく機能しません。この問題を軽減するため、例外をスローしないように、**construct** メソッドが変更されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-878">This doesn't work well with extensibility, so to mitigate this, **construct** methods were changed so that they do not throw exceptions.</span></span> <span data-ttu-id="11ba5-879">以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-879">These methods are now to open for extensibility through class augmentation or by post-event subscription.</span></span>
-
-| <span data-ttu-id="11ba5-880">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="11ba5-880">Object</span></span> |
-| -------------|
-|<span data-ttu-id="11ba5-881">BarcodeEAN128.string()</span><span class="sxs-lookup"><span data-stu-id="11ba5-881">BarcodeEAN128.string()</span></span>|
-|<span data-ttu-id="11ba5-882">CustCreditLimit.Construct</span><span class="sxs-lookup"><span data-stu-id="11ba5-882">CustCreditLimit.Construct</span></span>|
-|<span data-ttu-id="11ba5-883">FormLetterReport</span><span class="sxs-lookup"><span data-stu-id="11ba5-883">FormLetterReport</span></span>|
-|<span data-ttu-id="11ba5-884">JournalStatic</span><span class="sxs-lookup"><span data-stu-id="11ba5-884">JournalStatic</span></span>|
-|<span data-ttu-id="11ba5-885">MarkupAllocation</span><span class="sxs-lookup"><span data-stu-id="11ba5-885">MarkupAllocation</span></span>|
-|<span data-ttu-id="11ba5-886">PurchTable2LineField</span><span class="sxs-lookup"><span data-stu-id="11ba5-886">PurchTable2LineField</span></span>|
-|<span data-ttu-id="11ba5-887">SalesCalcTax</span><span class="sxs-lookup"><span data-stu-id="11ba5-887">SalesCalcTax</span></span>|
-|<span data-ttu-id="11ba5-888">SalesEditLinesForm</span><span class="sxs-lookup"><span data-stu-id="11ba5-888">SalesEditLinesForm</span></span>|
-|<span data-ttu-id="11ba5-889">SalesFormLetter</span><span class="sxs-lookup"><span data-stu-id="11ba5-889">SalesFormLetter</span></span>|
-|<span data-ttu-id="11ba5-890">SalesFormLetterContract.newFromPackedVersion</span><span class="sxs-lookup"><span data-stu-id="11ba5-890">SalesFormLetterContract.newFromPackedVersion</span></span>|
-|<span data-ttu-id="11ba5-891">SalesFormletterParmData.newData</span><span class="sxs-lookup"><span data-stu-id="11ba5-891">SalesFormletterParmData.newData</span></span>|
-|<span data-ttu-id="11ba5-892">SalesQuantity</span><span class="sxs-lookup"><span data-stu-id="11ba5-892">SalesQuantity</span></span>|
-|<span data-ttu-id="11ba5-893">SalesQuotationEditLinesForm.construct</span><span class="sxs-lookup"><span data-stu-id="11ba5-893">SalesQuotationEditLinesForm.construct</span></span>|
-|<span data-ttu-id="11ba5-894">SalesSummaryFields</span><span class="sxs-lookup"><span data-stu-id="11ba5-894">SalesSummaryFields</span></span>|
-|<span data-ttu-id="11ba5-895">SalesTable2LineField</span><span class="sxs-lookup"><span data-stu-id="11ba5-895">SalesTable2LineField</span></span>|
-|<span data-ttu-id="11ba5-896">VendInvoiceTableToLineUpdate</span><span class="sxs-lookup"><span data-stu-id="11ba5-896">VendInvoiceTableToLineUpdate</span></span>|
-
-## <a name="find-methods-with-throw-statements"></a><span data-ttu-id="11ba5-897">throw ステートメントを使用した find メソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-897">Find methods with throw statements</span></span>
-
-<span data-ttu-id="11ba5-898">特定の型の実装が欠落していた場合、いくつかの **find** メソッドが **throw** ステートメントで実装されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-898">Some **find** methods were implemented with **throw** statements if there was a missing implementation for a given type.</span></span> <span data-ttu-id="11ba5-899">これは拡張性に対してはうまく機能しません。この問題を軽減するため、例外をスローしないように、**find** メソッドが変更されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-899">This does not work well with extensibility, so to mitigate this, **find** methods were changed so that they do not throw exceptions.</span></span> <span data-ttu-id="11ba5-900">以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-900">These methods are now to open for extensibility through class augmentation or by post-event subscription.</span></span>
-
-| <span data-ttu-id="11ba5-901">メソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-901">Methods</span></span> |
-| -------------|
-|<span data-ttu-id="11ba5-902">JournalStatic.findJournalTableFromTrans</span><span class="sxs-lookup"><span data-stu-id="11ba5-902">JournalStatic.findJournalTableFromTrans</span></span>|
-|<span data-ttu-id="11ba5-903">JournalStatic.findJournalTableId</span><span class="sxs-lookup"><span data-stu-id="11ba5-903">JournalStatic.findJournalTableId</span></span>|
-
-## <a name="methods-made-hookable"></a><span data-ttu-id="11ba5-904">フック可能なメソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-904">Methods made hookable</span></span>
-
-<span data-ttu-id="11ba5-905">パブリックでない一部のメソッドおよびフック可能でない一部のメソッドについて、拡張性サポートが強化されました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-905">Extensibility support has been extended for some methods that were not public and were not hookable.</span></span> <span data-ttu-id="11ba5-906">以下のメソッドはフック可能な動作で明示的に修飾されています。</span><span class="sxs-lookup"><span data-stu-id="11ba5-906">The following methods have been explicitly decorated with hookable behavior.</span></span>
-
-| <span data-ttu-id="11ba5-907">メソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-907">Method</span></span> |
-| -------------|
-|<span data-ttu-id="11ba5-908">クラス CustVendReversePosting.updateCustVendTrans</span><span class="sxs-lookup"><span data-stu-id="11ba5-908">Class CustVendReversePosting.updateCustVendTrans</span></span>|
-|<span data-ttu-id="11ba5-909">クラス JournalTableData.construct</span><span class="sxs-lookup"><span data-stu-id="11ba5-909">Class JournalTableData.construct</span></span>|
-|<span data-ttu-id="11ba5-910">クラス PriceDisc.makeKey</span><span class="sxs-lookup"><span data-stu-id="11ba5-910">Class PriceDisc.makeKey</span></span>|
-|<span data-ttu-id="11ba5-911">クラス PurchInvoiceJournalCreate.initJournalHeader</span><span class="sxs-lookup"><span data-stu-id="11ba5-911">Class PurchInvoiceJournalCreate.initJournalHeader</span></span>|
-|<span data-ttu-id="11ba5-912">クラス SalesInvoiceJournalPost.checkSourceLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-912">Class SalesInvoiceJournalPost.checkSourceLine</span></span>|
-|<span data-ttu-id="11ba5-913">クラス SalesInvoiceJournalPost.postCustVend</span><span class="sxs-lookup"><span data-stu-id="11ba5-913">Class SalesInvoiceJournalPost.postCustVend</span></span>|
-|<span data-ttu-id="11ba5-914">フォーム LedgerTransVoucher.addDynaLink</span><span class="sxs-lookup"><span data-stu-id="11ba5-914">Form LedgerTransVoucher.addDynaLink</span></span>|
-|<span data-ttu-id="11ba5-915">ReqCalc.deleteItemRequirement</span><span class="sxs-lookup"><span data-stu-id="11ba5-915">ReqCalc.deleteItemRequirement</span></span>|
-|<span data-ttu-id="11ba5-916">ReqCalc.initTransFromInventTrans</span><span class="sxs-lookup"><span data-stu-id="11ba5-916">ReqCalc.initTransFromInventTrans</span></span>|
-|<span data-ttu-id="11ba5-917">ReqCalcForecastItemTable.deleteRequirement</span><span class="sxs-lookup"><span data-stu-id="11ba5-917">ReqCalcForecastItemTable.deleteRequirement</span></span>|
-|<span data-ttu-id="11ba5-918">テーブル TmpCustVendTrans.createLineCreditLimit</span><span class="sxs-lookup"><span data-stu-id="11ba5-918">Table TmpCustVendTrans.createLineCreditLimit</span></span>|
-|<span data-ttu-id="11ba5-919">テーブル TmpCustVendTrans.createLineCreditRemain</span><span class="sxs-lookup"><span data-stu-id="11ba5-919">Table TmpCustVendTrans.createLineCreditRemain</span></span>|
-|<span data-ttu-id="11ba5-920">テーブル TmpCustVendTrans.createLineOrdered</span><span class="sxs-lookup"><span data-stu-id="11ba5-920">Table TmpCustVendTrans.createLineOrdered</span></span>|
-|<span data-ttu-id="11ba5-921">テーブル TmpCustVendTrans.createLinePackingSlip</span><span class="sxs-lookup"><span data-stu-id="11ba5-921">Table TmpCustVendTrans.createLinePackingSlip</span></span>|
-|<span data-ttu-id="11ba5-922">WHSLocationDirective.addRangeByTransType</span><span class="sxs-lookup"><span data-stu-id="11ba5-922">WHSLocationDirective.addRangeByTransType</span></span>|
-|<span data-ttu-id="11ba5-923">WhsWorkCreate.createWorkLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-923">WhsWorkCreate.createWorkLine</span></span>|
-
-## <a name="inline-delegates"></a><span data-ttu-id="11ba5-924">インライン デリゲート</span><span class="sxs-lookup"><span data-stu-id="11ba5-924">Inline delegates</span></span>
-
-<span data-ttu-id="11ba5-925">インライン デリゲートを使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="11ba5-925">Inline delegates are now available.</span></span> <span data-ttu-id="11ba5-926">インライン デリゲートの最も一般的な使用方法は、メソッドをより粒度の細かいメソッドに分割して、より小規模なメソッドで拡張イベントを使用できるようにすることです。</span><span class="sxs-lookup"><span data-stu-id="11ba5-926">The most common way to use inline delegates is to split the method into more granular methods and enable extensibility events in the smaller methods.</span></span>
-
-|  <span data-ttu-id="11ba5-927">メソッド</span><span class="sxs-lookup"><span data-stu-id="11ba5-927">Method</span></span> |
-| -------------|
-|<span data-ttu-id="11ba5-928">AxClass - ChequeDP - Method - insertChequeTmp</span><span class="sxs-lookup"><span data-stu-id="11ba5-928">AxClass - ChequeDP - Method - insertChequeTmp</span></span>|
-|<span data-ttu-id="11ba5-929">AxClass - VendInvoiceTableToLineUpdate - Method - convertPurchTableFieldToVendInvoice</span><span class="sxs-lookup"><span data-stu-id="11ba5-929">AxClass - VendInvoiceTableToLineUpdate - Method - convertPurchTableFieldToVendInvoice</span></span>|
-|<span data-ttu-id="11ba5-930">クラス JournalStatic.findJournalTableFromTrans</span><span class="sxs-lookup"><span data-stu-id="11ba5-930">class JournalStatic.findJournalTableFromTrans</span></span>|
-|<span data-ttu-id="11ba5-931">クラス JournalStatic.findJournalTableId</span><span class="sxs-lookup"><span data-stu-id="11ba5-931">class JournalStatic.findJournalTableId</span></span>|
-|<span data-ttu-id="11ba5-932">クラス WhsLocationDirective.findLocationMultiSKU</span><span class="sxs-lookup"><span data-stu-id="11ba5-932">Class WhsLocationDirective.findLocationMultiSKU</span></span>|
-|<span data-ttu-id="11ba5-933">EcoResReleasedProductVariantEntity.insertEntityDataSource</span><span class="sxs-lookup"><span data-stu-id="11ba5-933">EcoResReleasedProductVariantEntity.insertEntityDataSource</span></span>|
-|<span data-ttu-id="11ba5-934">ForecastSales.ForecastSales_ds.updateForecastSalesFields</span><span class="sxs-lookup"><span data-stu-id="11ba5-934">ForecastSales.ForecastSales_ds.updateForecastSalesFields</span></span>|
-|<span data-ttu-id="11ba5-935">フォーム SalesTable - メソッド updateDesign</span><span class="sxs-lookup"><span data-stu-id="11ba5-935">Form SalesTable - method updateDesign</span></span>|
-|<span data-ttu-id="11ba5-936">ReqTransPoMarkFirm.firmSelectedPlannedOrders</span><span class="sxs-lookup"><span data-stu-id="11ba5-936">ReqTransPoMarkFirm.firmSelectedPlannedOrders</span></span>|
-|<span data-ttu-id="11ba5-937">SalesLineType.insert</span><span class="sxs-lookup"><span data-stu-id="11ba5-937">SalesLineType.insert</span></span>|
-|<span data-ttu-id="11ba5-938">SalesLineType.update</span><span class="sxs-lookup"><span data-stu-id="11ba5-938">SalesLineType.update</span></span>|
-|<span data-ttu-id="11ba5-939">SalesTable2LineUpdatePrompt.dialog</span><span class="sxs-lookup"><span data-stu-id="11ba5-939">SalesTable2LineUpdatePrompt.dialog</span></span>|
-|<span data-ttu-id="11ba5-940">テーブル ExtCodeTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-940">table ExtCodeTable</span></span>|
-|<span data-ttu-id="11ba5-941">テーブル InventItemGroup.getGroupForAccountType</span><span class="sxs-lookup"><span data-stu-id="11ba5-941">table InventItemGroup.getGroupForAccountType</span></span>|
-|<span data-ttu-id="11ba5-942">テーブル InventItemGroup.ledgerDimensionDescription</span><span class="sxs-lookup"><span data-stu-id="11ba5-942">table InventItemGroup.ledgerDimensionDescription</span></span>|
-|<span data-ttu-id="11ba5-943">テーブル InventTestAssociationTable</span><span class="sxs-lookup"><span data-stu-id="11ba5-943">table InventTestAssociationTable</span></span>|
-|<span data-ttu-id="11ba5-944">テーブル LedgerJournalName - メソッド validateWrite</span><span class="sxs-lookup"><span data-stu-id="11ba5-944">Table LedgerJournalName - method validateWrite</span></span>|
-|<span data-ttu-id="11ba5-945">テーブル PaymTerm - メソッド due</span><span class="sxs-lookup"><span data-stu-id="11ba5-945">Table PaymTerm - method due</span></span>|
-|<span data-ttu-id="11ba5-946">TaxCalculation.newForSourceType</span><span class="sxs-lookup"><span data-stu-id="11ba5-946">TaxCalculation.newForSourceType</span></span>|
-|<span data-ttu-id="11ba5-947">TaxCalculation.newForSourceTypeWithTaxUncommitted</span><span class="sxs-lookup"><span data-stu-id="11ba5-947">TaxCalculation.newForSourceTypeWithTaxUncommitted</span></span>|
-|<span data-ttu-id="11ba5-948">WHSLoadLine.getOrderCommonFromLoadLine</span><span class="sxs-lookup"><span data-stu-id="11ba5-948">WHSLoadLine.getOrderCommonFromLoadLine</span></span>|
-|<span data-ttu-id="11ba5-949">WhsLocationDirective.findLocation</span><span class="sxs-lookup"><span data-stu-id="11ba5-949">WhsLocationDirective.findLocation</span></span>|
-|<span data-ttu-id="11ba5-950">WHSRFControlData.populateData</span><span class="sxs-lookup"><span data-stu-id="11ba5-950">WHSRFControlData.populateData</span></span>|
-|<span data-ttu-id="11ba5-951">WHSRFControLData.processControl</span><span class="sxs-lookup"><span data-stu-id="11ba5-951">WHSRFControLData.processControl</span></span>|
-|<span data-ttu-id="11ba5-952">WHSRFMenuItemTable.getWHSWorkExecuteMode</span><span class="sxs-lookup"><span data-stu-id="11ba5-952">WHSRFMenuItemTable.getWHSWorkExecuteMode</span></span>|
-
-## <a name="other-changes"></a><span data-ttu-id="11ba5-953">その他の変更</span><span class="sxs-lookup"><span data-stu-id="11ba5-953">Other changes</span></span>
-
-<span data-ttu-id="11ba5-954">次の表に、拡張機能に対して行われた追加の変更を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="11ba5-954">The following table lists additional changes that have been made for extensibility.</span></span>
-
-
-|                                                           <span data-ttu-id="11ba5-955">変更</span><span class="sxs-lookup"><span data-stu-id="11ba5-955">Change</span></span>                                                           |
-|----------------------------------------------------------------------------------------------------------------------------|
-|                                      <span data-ttu-id="11ba5-956">既存の製品分析コードの間接参照の追加</span><span class="sxs-lookup"><span data-stu-id="11ba5-956">Add indirection for existing product dimensions</span></span>                                       |
-|                                  <span data-ttu-id="11ba5-957">クラス FormLetterParmDataOutputContract は拡張可能ではありません</span><span class="sxs-lookup"><span data-stu-id="11ba5-957">Class FormLetterParmDataOutputContract is not extensible</span></span>                                  |
-|             <span data-ttu-id="11ba5-958">1 つ以上の引数をサポートする SysExtensionFramework のインスタンス化戦略の作成</span><span class="sxs-lookup"><span data-stu-id="11ba5-958">Create an instantiation strategy for the SysExtensionFramework that supports one or more arguments</span></span>             |
-|                      <span data-ttu-id="11ba5-959">カスタマイズ: TableField: 拡張モデル: テーブル フィールドの EDT タイプの変更</span><span class="sxs-lookup"><span data-stu-id="11ba5-959">Customization: TableField: Extension Model: Change EDT type of on a table field</span></span>                       |
-|                          <span data-ttu-id="11ba5-960">CustVendOpenTransBalances - initAccountNumCurrencies() switch ステートメント</span><span class="sxs-lookup"><span data-stu-id="11ba5-960">CustVendOpenTransBalances - initAccountNumCurrencies() switch statement</span></span>                           |
-|                                     <span data-ttu-id="11ba5-961">CustVendOpenTransBalances - new() switch ステートメント</span><span class="sxs-lookup"><span data-stu-id="11ba5-961">CustVendOpenTransBalances - new() switch statement</span></span>                                     |
-|                                  <span data-ttu-id="11ba5-962">CustVendOutPaym (クラス) には拡張性の改善が必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-962">CustVendOutPaym (Class) needs extensibility improvement</span></span>                                   |
-|                        <span data-ttu-id="11ba5-963">CustVendPaymReconciliationSetStatus (クラス) には拡張性の改善が必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-963">CustVendPaymReconciliationSetStatus (Class) needs extensibility improvement</span></span>                         |
-|                                 <span data-ttu-id="11ba5-964">CustVendSumForPaym (クラス) には拡張性の改善が必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-964">CustVendSumForPaym (Class) needs extensibility improvement</span></span>                                 |
-|                               <span data-ttu-id="11ba5-965">SysGroup からの AddressCountyId と AddressStateId EDT の切り離し</span><span class="sxs-lookup"><span data-stu-id="11ba5-965">Decouple AddressCountyId and AddressStateId EDTs from SysGroup</span></span>                               |
-|                          <span data-ttu-id="11ba5-966">ドキュメント管理イベントの処理には拡張性サポートの改善が必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-966">Document Management event handling needs improved extensibility support</span></span>                           |
-|            <span data-ttu-id="11ba5-967">為替レート プロバイダー フレームワークには、通貨モデルにカスタムの組み込みプロバイダーを配置することが必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-967">Exchange rate provider framework requires custom built providers to be placed in the Currency Model</span></span>             |
-|                                                      <span data-ttu-id="11ba5-968">GS-128 の拡張</span><span class="sxs-lookup"><span data-stu-id="11ba5-968">Extending GS-128</span></span>                                                      |
-|                         <span data-ttu-id="11ba5-969">拡張モデル: CountryRegionCodes プロパティでのカスタマイズを許可する。</span><span class="sxs-lookup"><span data-stu-id="11ba5-969">Extension model: Allow customizations on the CountryRegionCodes property.</span></span>                          |
-|                  <span data-ttu-id="11ba5-970">フォーム拡張機能 - 新しいコントロールによって "拡張された" フォーム要素の拡張機能は動作しません</span><span class="sxs-lookup"><span data-stu-id="11ba5-970">Form extension - Extension of "extended" form elements with new controls are not working</span></span>                  |
-|                                              <span data-ttu-id="11ba5-971">InventDim: throw 付きの条件</span><span class="sxs-lookup"><span data-stu-id="11ba5-971">InventDim: Condition with throw</span></span>                                               |
-|                                                  <span data-ttu-id="11ba5-972">InventDimRenameDimValue</span><span class="sxs-lookup"><span data-stu-id="11ba5-972">InventDimRenameDimValue</span></span>                                                   |
-|                <span data-ttu-id="11ba5-973">メソッドのオーバーレイ - クラス VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice</span><span class="sxs-lookup"><span data-stu-id="11ba5-973">Method overlayering - Class VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice</span></span>                |
-|                                     <span data-ttu-id="11ba5-974">メソッドのオーバーレイ: クラス Markup - メソッド delete</span><span class="sxs-lookup"><span data-stu-id="11ba5-974">Method overlayering: class Markup - method delete</span></span>                                      |
-|                       <span data-ttu-id="11ba5-975">メソッドのオーバーレイ: クラス McrPriceHistoryForm.insertPotentialTradeAgreements</span><span class="sxs-lookup"><span data-stu-id="11ba5-975">Method overlayering: class McrPriceHistoryForm.insertPotentialTradeAgreements</span></span>                        |
-|                             <span data-ttu-id="11ba5-976">メソッドのオーバーレイ: クラス OffsetVoucher - メソッド markTransaction</span><span class="sxs-lookup"><span data-stu-id="11ba5-976">Method overlayering: Class OffsetVoucher - method markTransaction</span></span>                              |
-|                                 <span data-ttu-id="11ba5-977">メソッドのオーバーレイ: フォーム LedgerJournalTransDimension.init</span><span class="sxs-lookup"><span data-stu-id="11ba5-977">Method overlayering: Form LedgerJournalTransDimension.init</span></span>                                 |
-|                                 <span data-ttu-id="11ba5-978">メソッドのオーバーレイ: フォーム LedgerTransVoucher - メソッド init</span><span class="sxs-lookup"><span data-stu-id="11ba5-978">Method overlayering: Form LedgerTransVoucher - method init</span></span>                                 |
-|                             <span data-ttu-id="11ba5-979">メソッドのオーバーレイ: テーブル CustInvoiceTable - メソッド validateWrite</span><span class="sxs-lookup"><span data-stu-id="11ba5-979">Method overlayering: Table CustInvoiceTable - method validateWrite</span></span>                             |
-|                       <span data-ttu-id="11ba5-980">メソッド シグネチャが変更されました: RetailCreateLinesFromProductsToAdd.parmCallerCommon</span><span class="sxs-lookup"><span data-stu-id="11ba5-980">Method signature changed: RetailCreateLinesFromProductsToAdd.parmCallerCommon</span></span>                        |
-|                               <span data-ttu-id="11ba5-981">メソッド シグネチャが変更になりました: WHSInvent.getCommonFromWorkTransType</span><span class="sxs-lookup"><span data-stu-id="11ba5-981">Method signature changed: WHSInvent.getCommonFromWorkTransType</span></span>                               |
-|                                  <span data-ttu-id="11ba5-982">メソッド シグネチャが変更されました: WHSPoolProdBom.movementBuffer</span><span class="sxs-lookup"><span data-stu-id="11ba5-982">Method signature changed: WHSPoolProdBom.movementBuffer</span></span>                                   |
-|                          <span data-ttu-id="11ba5-983">construct メソッドがありません: クラス SMAServiceOrderTableButtonStateProvider</span><span class="sxs-lookup"><span data-stu-id="11ba5-983">Missing construct method: class SMAServiceOrderTableButtonStateProvider</span></span>                           |
-|                                         <span data-ttu-id="11ba5-984">必要な番号順序スコープの拡張性</span><span class="sxs-lookup"><span data-stu-id="11ba5-984">Number sequence scope extensibility needed</span></span>                                         |
-|                           <span data-ttu-id="11ba5-985">Runbase には、クラスの拡張機能がメンバーをパック/アンパックする方法が必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-985">Runbase needs a way for class extensions to pack/unpack their members</span></span>                            |
-|                                              <span data-ttu-id="11ba5-986">文字列 EDT のサイズの拡張の問題</span><span class="sxs-lookup"><span data-stu-id="11ba5-986">String EDT size extension issues</span></span>                                              |
-|                              <span data-ttu-id="11ba5-987">カスタムの InventDim に基づく手持在庫フォームのオープンのサポート</span><span class="sxs-lookup"><span data-stu-id="11ba5-987">Support opening Inventory on-hand form based on custom InventDim</span></span>                              |
-|          <span data-ttu-id="11ba5-988">SysExtension フレームワーク: SysExtensionIInstantiationStrategy と SysExtensionIAttribute は互換性がありません</span><span class="sxs-lookup"><span data-stu-id="11ba5-988">SysExtension framework: SysExtensionIInstantiationStrategy and SysExtensionIAttribute are not compatible</span></span>          |
-| <span data-ttu-id="11ba5-989">要求/応答シナリオで使用されるデリゲートがより堅牢になるために、EventHandlerResult のバリエーションが必要</span><span class="sxs-lookup"><span data-stu-id="11ba5-989">Variations of EventHandlerResult are requested to ensure that delegates used in Request/response scenarios are more robust</span></span> |
-|                                                <span data-ttu-id="11ba5-990">WHS モバイル フレームワーク: 合格</span><span class="sxs-lookup"><span data-stu-id="11ba5-990">WHS Mobile Framework: passes</span></span>                                                |
-|                                     <span data-ttu-id="11ba5-991">WhsLocationDirectiveLine To/FromQty は拡張可能ではありません</span><span class="sxs-lookup"><span data-stu-id="11ba5-991">WhsLocationDirectiveLine To/FromQty not extensible</span></span>                                     |
-|                                                 <span data-ttu-id="11ba5-992">WHSMobileApp の拡張性</span><span class="sxs-lookup"><span data-stu-id="11ba5-992">WHSMobileApp Extensibility</span></span>                                                 |
-|         <span data-ttu-id="11ba5-993">WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません</span><span class="sxs-lookup"><span data-stu-id="11ba5-993">WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions</span></span>          |
-|         <span data-ttu-id="11ba5-994">WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません</span><span class="sxs-lookup"><span data-stu-id="11ba5-994">WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions</span></span>          |
-|            <span data-ttu-id="11ba5-995">WhsRFControlData.processControl は switch ブロック内の _data ではなく WhsControl.data を参照する必要があります</span><span class="sxs-lookup"><span data-stu-id="11ba5-995">WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block</span></span>             |
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="changes-july-2017.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>changes-july-2017.2e628b.d29dda71a2785a35ab12297b5b57695053457291.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>d29dda71a2785a35ab12297b5b57695053457291</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\extensibility\changes-july-2017.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Extensibility changes in Finance and Operations, Enterprise edition (July 2017)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This is a list of extensibility features that were implemented in the (July 2017).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、(2017 年 7 月) に実装された拡張機能の一覧です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Extensibility changes in Finance and Operations, Enterprise edition (July 2017)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) に実装された拡張機能の一覧です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This version was released in July 2017 and has a build number of 7.2.11792.56024.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>For more information about the schedule of changes that support extensibility, see <bpt id="p1">[</bpt>Application extensibility plans<ept id="p1">](extensibility-roadmap.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性をサポートする変更のスケジュールの詳細については、「<bpt id="p1">[</bpt>アプリケーション機能拡張計画<ept id="p1">](extensibility-roadmap.md)</ept>」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Soft-sealed application models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソフト シールされたアプリケーション モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The following application middle-tier models were soft-sealed in this release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のアプリケーション中間層モデルは、今回のリリースでソフト シールされました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Overlayered code in these models will generate warnings on compilation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのモデルのオーバーレイ コードは、コンパイル時に警告を生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Application Frameworks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション フレームワーク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>CaseManagement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CaseManagement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Application Frameworks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション フレームワーク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimensions</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Application Frameworks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション フレームワーク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Directory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Directory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Application Frameworks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション フレームワーク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Organization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organization</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Application Frameworks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション フレームワーク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Currency</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Application Frameworks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション フレームワーク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>ApplicationCommon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ApplicationCommon</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>HCM Core Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HCM コア モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>3817938</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3817938</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Tax Books</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax Books</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Tax Books Application Suite Integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax Books Application Suite Integration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Tax Engine Application Suite Integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax Engine Application Suite Integration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Tax Engine Configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax Engine Configuration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Tax Engine Interface</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax Engine Interface</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Tax Engine Runtime Generation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tax Engine Runtime Generation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Tax Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">税モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>TaxEngine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxEngine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Source Document Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元伝票モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>SourceDocumentation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SourceDocumentation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Source Document Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元伝票モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>SourceDocumentationTypes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SourceDocumentationTypes</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Ledger Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>GeneralLedger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GeneralLedger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Ledger Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ledger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Ledger Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元帳モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Subledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Subledger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>CostAccounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostAccounting</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>CostAccountingAX</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostAccountingAX</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>SCMControls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SCMControls</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>SCMMobile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SCMMobile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>UnitOfMeasure</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UnitOfMeasure</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>WMSAdvancedMigration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSAdvancedMigration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Middle Tier SCM Models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中間層 SCM モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>InventoryDimensionConversion</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventoryDimensionConversion</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Workspaces</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>ApplicationWorkspaces</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ApplicationWorkspaces</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Finance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Fiscalbooks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiscalbooks</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Management tools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理ツール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>DataUpgrade</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DataUpgrade</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Hard-sealed application models</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ハード シールされたアプリケーション モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>The following application middle-tier models were hard-sealed in this release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のアプリケーション中間層モデルは、今回のリリースでハード シールされました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Overlayered code in these models will generate errors on compilation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのモデルのオーバーレイ コードは、コンパイル時にエラーを発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Accounts Payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">買掛金勘定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>AccountsPayableMobile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AccountsPayableMobile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Finance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">財務</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>FinancialReportingEntityStore</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportingEntityStore</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Tools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>PerformanceTool</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PerformanceTool</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Expenses</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">経費</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>ExpenseMobile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExpenseMobile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>GER</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GER</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>ElectronicReporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ElectronicReporting</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>GER</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GER</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>ElectronicReportingCore</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ElectronicReportingCore</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>GER</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GER</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Electronic Reporting Application Suite Integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Electronic Reporting Application Suite Integration</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Enumerations that are now extensible</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能になった列挙型</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>The following changes were made to support extending enumerations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">列挙の拡張をサポートするために以下の変更が行われました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Many enumerations in the standard application have been made extensible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準アプリケーションの多くの列挙が拡張可能になりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>An enumeration is made extensible by setting two properties on the enumeration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">列挙を拡張可能にするには、列挙に関する 2 つのプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>The <bpt id="p1">**</bpt>IsExtensible<ept id="p1">**</ept> property is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, and the <bpt id="p3">**</bpt>UseEnumValue<ept id="p3">**</ept> property is set to <bpt id="p4">**</bpt>No<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>IsExtensible<ept id="p1">**</ept> プロパティは <bpt id="p2">**</bpt>はい<ept id="p2">**</ept> に、<bpt id="p3">**</bpt>UseEnumValue<ept id="p3">**</ept> プロパティは <bpt id="p4">**</bpt>いいえ<ept id="p4">**</ept> に設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Some enumerations represent state.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の列挙型は状態を表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>New façade methods have been added to help enable adding enumeration values by extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能によって列挙値の追加を可能にする新しいファサード メソッドが追加されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>For information about how to extend an enumeration, see <bpt id="p1">[</bpt>Add an enum value<ept id="p1">](add-enum-value.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">列挙型を拡張する方法については、「<bpt id="p1">[</bpt>列挙値の追加<ept id="p1">](add-enum-value.md)</ept>」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Some application code that uses enumerations was changed to support extensibility.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能をサポートするために、列挙を使用する一部のアプリケーション コードが変更されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Common changes include:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般的な変更の内容は以下の通りです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Removing <bpt id="p1">**</bpt>throw<ept id="p1">**</ept> exception statements in the default case of a switch to allow post-event subscription.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ポストイベント サブスクリプションを許可するための、switch の default ケースの <bpt id="p1">**</bpt>throw<ept id="p1">**</ept> 例外ステートメントの削除。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Adding <bpt id="p1">**</bpt>SysExtension<ept id="p1">**</ept> support for extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能の <bpt id="p1">**</bpt>SysExtension<ept id="p1">**</ept> サポートの追加。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Adding explicit delegates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明示的なデリゲートの追加。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Enumeration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">列挙型</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>AgreementState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AgreementState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>AssetAccountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AssetAccountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>AssetTransTypeJournal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AssetTransTypeJournal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>BankAccountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BankAccountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>BankFormat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BankFormat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>BarcodeContentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BarcodeContentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>BarcodeCoverPageEntityType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BarcodeCoverPageEntityType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>BarcodeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BarcodeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>BOMCalcCostingVersionUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCalcCostingVersionUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>BOMCalcCostPriceUsed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCalcCostPriceUsed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>BOMCalcSalesPriceUsed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCalcSalesPriceUsed</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>BOMCalcType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCalcType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>BOMCheckLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCheckLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>BOMCopyContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCopyContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>BOMCopyMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCopyMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>BOMCopyType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCopyType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>BOMCostCalculationMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMCostCalculationMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>BOMExplode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMExplode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>BOMRouteCopyDataType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMRouteCopyDataType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>BOMVersionFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BOMVersionFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>BudgetReservation_BusinessEvent_PSN</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BudgetReservation_BusinessEvent_PSN</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>BudgetReservation_SourceDocument_PSN</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BudgetReservation_SourceDocument_PSN</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>BudgetReservation_SourceDocumentLine_PSN</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BudgetReservation_SourceDocumentLine_PSN</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>CatCallMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatCallMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>CatContentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatContentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>CatImportStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatImportStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>CatMaintenanceRequestWfStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatMaintenanceRequestWfStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>CatProcurementErrorCode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatProcurementErrorCode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>CatPurchaseStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatPurchaseStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>CatUserReviewApprovalStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatUserReviewApprovalStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>CatVendorCatalogFileUploadType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatVendorCatalogFileUploadType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>CatVendorCatalogTemplateCategory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatVendorCatalogTemplateCategory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>CatVendorCategoryHierarchyType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatVendorCategoryHierarchyType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>CatVendorConfigurationForImport</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatVendorConfigurationForImport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>CatVendorLegalEntityStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatVendorLegalEntityStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>CatVendorSiteType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CatVendorSiteType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>ConsignmentReplenishmentOrderLineStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ConsignmentReplenishmentOrderLineStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>ConsignmentReplenishmentOrderStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ConsignmentReplenishmentOrderStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>CostBreakdown</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostBreakdown</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>CostCalculationCompareProductType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostCalculationCompareProductType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>CostCalculationRole</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostCalculationRole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>CostCalculationState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostCalculationState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>CostCalculationSurchargeSubtype</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostCalculationSurchargeSubtype</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>CostingActivationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostingActivationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>CostingVersionCompareTo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostingVersionCompareTo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>CostingVersionPriceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostingVersionPriceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>CostPriceBase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostPriceBase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>CostProfitSet</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostProfitSet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>CostSalesPriceDisplay</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostSalesPriceDisplay</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>CostSheetNodeListType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostSheetNodeListType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>CostSheetPanelView</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostSheetPanelView</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>CostSheetProdFlowMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostSheetProdFlowMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>CostStatementCacheAggregationAfter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostStatementCacheAggregationAfter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>CostWIPStatementCategory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CostWIPStatementCategory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>CustPaymentValidate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustPaymentValidate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>CustSpecTransOverviewFormMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustSpecTransOverviewFormMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>CustTransRefType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTransRefType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>CustVendPaymentStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendPaymentStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>CustVendTransportPointTypeTransfer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendTransportPointTypeTransfer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>DlvScheduleMarkupConversionMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DlvScheduleMarkupConversionMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>EcoResAttributeModifier</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResAttributeModifier</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>EcoResCategoryAttributeModifier</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResCategoryAttributeModifier</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>EcoResCategoryChangeStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResCategoryChangeStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>EcoResCategoryHierarchyModifier</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResCategoryHierarchyModifier</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>EcoResCategoryNamedHierarchyRole</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResCategoryNamedHierarchyRole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>EcoResProductImageUsage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResProductImageUsage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>EcoResProductListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResProductListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>EcoResProductPerCompanyListPageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResProductPerCompanyListPageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>EcoResProductTemplateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResProductTemplateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>EcoResReleaseProductToCompany</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResReleaseProductToCompany</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>EcoResVariantConfigurationTechnologyType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResVariantConfigurationTechnologyType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>ECPsalesOrdersViewType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ECPsalesOrdersViewType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>EPCSSProductViewType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EPCSSProductViewType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>EUSalesTransMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUSalesTransMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>FormLetterType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FormLetterType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>GanttCallerWrkCtr</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GanttCallerWrkCtr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>GanttSetupType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GanttSetupType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>GanttTimeUnit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GanttTimeUnit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>GanttWrkCtrDisplayColumnsType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GanttWrkCtrDisplayColumnsType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>IntercompanyGoodsInTransitLineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IntercompanyGoodsInTransitLineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>InterCompanyGoodsInTransitOrigin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InterCompanyGoodsInTransitOrigin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>InventAccountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventAccountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>InventAccountTypeStdCostVariance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventAccountTypeStdCostVariance</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>InventAdjustmentBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventAdjustmentBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>InventAgingView</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventAgingView</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>InventBatchJournalType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventBatchJournalType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>InventCostBundleState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventCostBundleState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>InventCostCostDistribution</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventCostCostDistribution</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>InventCostTransactionCategory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventCostTransactionCategory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>InventCostTransRefType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventCostTransRefType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>InventCountCode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventCountCode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>InventItemCostingType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemCostingType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>InventItemLookupDefaultTab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemLookupDefaultTab</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>InventItemOrderSetupCallerType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemOrderSetupCallerType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>InventItemOrderSetupType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemOrderSetupType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>InventItemPriceCompareLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemPriceCompareLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>InventItemPriceFilterType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemPriceFilterType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>InventItemPriceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventItemPriceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>InventJournalOwnershipChangeLineCreateQueryStatusIssue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventJournalOwnershipChangeLineCreateQueryStatusIssue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>InventJournalType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventJournalType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>InventLedgerConflictModule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventLedgerConflictModule</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>InventLocationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventLocationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>InventMovSubType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventMovSubType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>InventNonConformanceApproval</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventNonConformanceApproval</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>InventNonConformanceHistoryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventNonConformanceHistoryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>InventNonConformanceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventNonConformanceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>InventParameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventParameters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>InventPhysicalReduction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventPhysicalReduction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>InventRefType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventRefType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>InventReleaseOrderPickingType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventReleaseOrderPickingType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>InventReportDimHistoryLogType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventReportDimHistoryLogType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>InventStdCostConvItemStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventStdCostConvItemStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>InventStdCostPeriodType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventStdCostPeriodType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>InventSumFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventSumFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>InventSupplyDlvModeSelectCust</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventSupplyDlvModeSelectCust</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>InventSupplyDlvModeSelectSupply</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventSupplyDlvModeSelectSupply</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>InventSupplyLeadTimeSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventSupplyLeadTimeSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>InventSupplyTmpLeadtimeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventSupplyTmpLeadtimeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>InventTestActionOnFailure</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestActionOnFailure</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>InventTestBlockProcess</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestBlockProcess</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>InventTestCorrectionPriority</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestCorrectionPriority</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>InventTestCorrectionStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestCorrectionStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>InventTestDocumentStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestDocumentStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>InventTestOrderStatusDisplay</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestOrderStatusDisplay</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>InventTestOutcomeStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestOutcomeStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>InventTestQtySpecification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestQtySpecification</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>InventTestQuarantineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestQuarantineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>InventTestReferenceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestReferenceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>InventTestReport</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestReport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>InventTestType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTestType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>InventTrackingDimNodeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTrackingDimNodeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>InventTrackingProductType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTrackingProductType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>InventTrackingRegisterTransRegStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTrackingRegisterTransRegStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>InventTransChildType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransChildType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>InventTransferRemainStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransferRemainStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>InventTransferStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransferStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>InventTransferUpdateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransferUpdateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>InventTransPickRegisterLineStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransPickRegisterLineStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>InventTransType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>InventUpdType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventUpdType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>InventValueReportLedgerAccountCategory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventValueReportLedgerAccountCategory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>InventValueReportLedgerLineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventValueReportLedgerLineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>InventValueReportResourceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventValueReportResourceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>ItemGroupLedgerDimensionGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ItemGroupLedgerDimensionGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>ItemReservation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ItemReservation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>JmgAbsenceColumnLayout</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgAbsenceColumnLayout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>JmgAbsenceMethodEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgAbsenceMethodEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>JmgAttendanceRegistrationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgAttendanceRegistrationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>JmgAttendanceReportType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgAttendanceReportType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>JmgBarCodeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgBarCodeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>JmgBreakDropEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgBreakDropEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>JmgClockStyle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgClockStyle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>JmgControlType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgControlType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>JmgDaysTotalWorkflowStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgDaysTotalWorkflowStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>JmgEmployeeSignInStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgEmployeeSignInStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>JmgFeedbackButtonFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgFeedbackButtonFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>JmgFeedbackStyle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgFeedbackStyle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>JmgFieldName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgFieldName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>JmgGetRegistrationTimeFrom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgGetRegistrationTimeFrom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>JmgGridAppearance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgGridAppearance</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>JmgJobTableSynchronizationMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgJobTableSynchronizationMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>JmgJournalRegWorkflowStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgJournalRegWorkflowStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>JmgMark</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgMark</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>JmgMessageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgMessageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>JmgPayAdjustType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgPayAdjustType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>JmgPayEventsExportType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgPayEventsExportType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>JmgPaySpecTypeEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgPaySpecTypeEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>JmgPaySpecTypeEnumPick</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgPaySpecTypeEnumPick</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>JmgPostAutomatically</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgPostAutomatically</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>JmgProdStatusUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgProdStatusUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>JmgProdStatusUpdateReportFinished</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgProdStatusUpdateReportFinished</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>JmgProfileSpecTypeEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgProfileSpecTypeEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>JmgProfileStartCodeBlankPrev</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgProfileStartCodeBlankPrev</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>JmgProjStatusUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgProjStatusUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>JmgRegistrationTouchJobStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgRegistrationTouchJobStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>JmgSecondPresentationEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgSecondPresentationEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>JmgShopFloorServiceStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgShopFloorServiceStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>JmgSignInButtonFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgSignInButtonFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>JmgStoppedCompletedStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgStoppedCompletedStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>JmgTermBaudeRate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgTermBaudeRate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>JmgTermComPort</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgTermComPort</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>JmgTermDataBit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgTermDataBit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>JmgTerminalInsertMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgTerminalInsertMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>JmgTermStopBit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JmgTermStopBit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>KanbanBoardRefreshCycle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanBoardRefreshCycle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>KanbanBoardType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanBoardType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>KanbanCardAssignmentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanCardAssignmentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>KanbanControlActionState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanControlActionState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>KanbanControlLegendFormat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanControlLegendFormat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>KanbanControlSelectionChanged</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanControlSelectionChanged</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>KanbanDemandOriginType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanDemandOriginType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>KanbanJobPeggingType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanJobPeggingType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>KanbanJobPickingListLineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanJobPickingListLineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>KanbanLineEventType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanLineEventType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>KanbanMultiMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanMultiMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>KanbanPrintInstructions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanPrintInstructions</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>KanbanProdBOMLineEventType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanProdBOMLineEventType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>KanbanQuantityCalculationStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanQuantityCalculationStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>KanbanSalesLineEventType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanSalesLineEventType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>KanbanStockReplenishmentEventType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanStockReplenishmentEventType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>LeanBOMLineReservationMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanBOMLineReservationMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>LeanCostingUnusedQtyType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanCostingUnusedQtyType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>LeanHandlingUnitEmptyPolicy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanHandlingUnitEmptyPolicy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>LeanInventoryControl</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanInventoryControl</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>LeanPeggedEventType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanPeggedEventType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>LeanPlanJobReferenceTypes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanPlanJobReferenceTypes</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>LeanProductionFlowCostingStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanProductionFlowCostingStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>LeanProductionFlowVisualizationViewMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanProductionFlowVisualizationViewMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>LeanProductTypes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanProductTypes</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>LeanTaktStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LeanTaktStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>LedgerPostingType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LedgerPostingType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>LedgerTransTxt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LedgerTransTxt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>MarkupAllocateAfter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MarkupAllocateAfter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>MarkupCategory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MarkupCategory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>MCRBrokerContractStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRBrokerContractStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>MCRCustSearchType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRCustSearchType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>MCRFullTextSearchType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRFullTextSearchType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>MCRInstallPlanApplyMiscCharge</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRInstallPlanApplyMiscCharge</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>MCRItemListGenerationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRItemListGenerationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>MCRPickingPrompt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRPickingPrompt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>MCRPickingSessionStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRPickingSessionStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>MCRPickingWaveStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRPickingWaveStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>MCRPriceHistoryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRPriceHistoryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>MCRRoyaltyLineBreakType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRRoyaltyLineBreakType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>MCRRoyaltyTakenFrom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRRoyaltyTakenFrom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>MCRRoyaltyTransactionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRRoyaltyTransactionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>MCRRoyaltyUnitType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRRoyaltyUnitType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>MCRRoyaltyUOMOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRRoyaltyUOMOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>MCRSalesOrderDetailStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRSalesOrderDetailStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>ModuleInventCustVend</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ModuleInventCustVend</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>ModuleInventPurchSales</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ModuleInventPurchSales</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>OriginalDocument</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OriginalDocument</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>PaymDocumentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PaymDocumentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>PCExpressionEditorSymbolType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PCExpressionEditorSymbolType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>PCLookupMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PCLookupMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>PCNewSelectComponent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PCNewSelectComponent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>PCRequirement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PCRequirement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>PCTableConstraintType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PCTableConstraintType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>PDSAdjustmentPrinciple</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDSAdjustmentPrinciple</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>PdsBatchAttribToleranceAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsBatchAttribToleranceAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>PdsBatchAttribUpdateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsBatchAttribUpdateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>PDSCalcElementBase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDSCalcElementBase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>PDSCompensationPrincipleEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDSCompensationPrincipleEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>PDSElementTypeEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDSElementTypeEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>PDSIngredientTypeEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDSIngredientTypeEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>PdsMRCDocumentStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsMRCDocumentStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>PdsMRCEffectiveDateBasis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsMRCEffectiveDateBasis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>PdsMRCEventModule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsMRCEventModule</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>PdsMRCEventType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsMRCEventType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>PdsMRCListType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsMRCListType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>PdsPaymtType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsPaymtType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>PDSPotencyAttribRecordingEnum</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PDSPotencyAttribRecordingEnum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>PdsRebateCalcDateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsRebateCalcDateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>PdsRebateTakenFrom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsRebateTakenFrom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>PdsRebateUOMOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsRebateUOMOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>PdsSameLotError</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsSameLotError</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>pdsTMAJournalPosting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pdsTMAJournalPosting</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>PdsUpdateBatchDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsUpdateBatchDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>PdsUpdateDispositionStatus_Quality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsUpdateDispositionStatus_Quality</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>PlanActivityCreateRelationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PlanActivityCreateRelationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>PlanActivityProductionFlowActivityType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PlanActivityProductionFlowActivityType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>PlanTypes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PlanTypes</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>PmfCostAllocationMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PmfCostAllocationMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>PmfOrderType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PmfOrderType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>PmfOrderTypeFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PmfOrderTypeFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>PmfProdType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PmfProdType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>PMFSeqCalendarPeriod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PMFSeqCalendarPeriod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>PriceBase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PriceBase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>PriceDiscPurchasePromptSystemSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PriceDiscPurchasePromptSystemSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>PriceDiscSalesPromptSystemSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PriceDiscSalesPromptSystemSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>PriceGroupType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PriceGroupType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>PriceSalesPurch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PriceSalesPurch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>PriceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PriceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>ProcCategoryAdministrationActivity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProcCategoryAdministrationActivity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>ProdBOMConsumpProposal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdBOMConsumpProposal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>ProdBOMJournalQty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdBOMJournalQty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>ProdBOMJournalSplit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdBOMJournalSplit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>ProdErrorCause</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdErrorCause</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>ProdGanttJobColorType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdGanttJobColorType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>ProdGanttLoad</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdGanttLoad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>ProdGanttRouteColorType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdGanttRouteColorType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>ProdJournalCleanUpMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdJournalCleanUpMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>ProdMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>ProdNotificationLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdNotificationLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>ProdParamInventDimLookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdParamInventDimLookup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>ProdParmType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdParmType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>ProdRefLookUp</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdRefLookUp</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>ProdRouteJobCurrentFormTabId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdRouteJobCurrentFormTabId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>ProdSchedDirection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdSchedDirection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>ProdScrapMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdScrapMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>ProdStandardCostVariance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdStandardCostVariance</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>ProdStatusAll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdStatusAll</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>ProdStatusType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdStatusType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>ProductionTransType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProductionTransType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>ProdUpdateJour</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdUpdateJour</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>ProdWHSReleasePolicy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdWHSReleasePolicy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>ProdWIPType_NA</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdWIPType_NA</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>PurchaseOrderResponseAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseOrderResponseAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>PurchaseType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchaseType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>PurchasingTransactionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchasingTransactionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>PurchCORReceivingMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchCORReceivingMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>PurchCORRejectStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchCORRejectStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>PurchCovRef</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchCovRef</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>PurchDlvAddr</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchDlvAddr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>PurchLineBackOrderViews</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchLineBackOrderViews</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>PurchLineDeliveryFulfillment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchLineDeliveryFulfillment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>PurchLineDeliveryPrecision</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchLineDeliveryPrecision</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>PurchMatchingPolicyOverrideOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchMatchingPolicyOverrideOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>PurchPrepayApplicationPolicy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchPrepayApplicationPolicy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>PurchPriceDateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchPriceDateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>PurchPurchaseOrderCreationMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchPurchaseOrderCreationMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>PurchReApprovalPolicyRuleViewType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReApprovalPolicyRuleViewType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>PurchReqAuthorizationSpecificReporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqAuthorizationSpecificReporting</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>PurchReqAutoCreatePurch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqAutoCreatePurch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>PurchReqCatalogAllNon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqCatalogAllNon</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>PurchReqConsolidationActiveStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqConsolidationActiveStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>PurchReqConsolidationPriority</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqConsolidationPriority</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>PurchReqConsolidationStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqConsolidationStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>PurchReqCreationStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqCreationStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>PurchReqItemDescriptionTransfer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqItemDescriptionTransfer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>PurchReqItemFilterType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqItemFilterType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>PurchReqOnBehalfReports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqOnBehalfReports</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>PurchReqOriginationAuthorizationView</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqOriginationAuthorizationView</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>PurchReqProcessingState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqProcessingState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>PurchReqQuestionnaireAggregateStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqQuestionnaireAggregateStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>PurchReqQuestionnaireStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqQuestionnaireStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>PurchReqReportSortOrder</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqReportSortOrder</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>PurchReqReportStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqReportStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>PurchReqReviewStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqReviewStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>PurchReqRFQRequirement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqRFQRequirement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>PurchReqRFQType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqRFQType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>PurchReqSaveChanges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqSaveChanges</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>PurchReqStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>PurchReqType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>PurchReqWorkflowState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchReqWorkflowState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>PurchRFQQuestionnaireStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchRFQQuestionnaireStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>PurchRFQStatusVendor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchRFQStatusVendor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>PurchRFQType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchRFQType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>PurchTableFormId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchTableFormId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>PurchTableListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchTableListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>PurchTableMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchTableMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>PurchTotalsCachingMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchTotalsCachingMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>PurchUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>PurchVendorPortalShowResponseType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchVendorPortalShowResponseType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>QuotationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuotationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>ReqBOMRouteCreated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqBOMRouteCreated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>ReqCurrentDaySchedFrom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqCurrentDaySchedFrom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>ReqDemPlanDataSourceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqDemPlanDataSourceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>ReqDemPlanDemandCategory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqDemPlanDemandCategory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>ReqDemPlanForecastAttributeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqDemPlanForecastAttributeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>ReqDemPlanForecastingStrategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqDemPlanForecastingStrategy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>ReqDemPlanForecastType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqDemPlanForecastType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>ReqDisplayDelay</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqDisplayDelay</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>ReqForecastReducedBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqForecastReducedBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>ReqGanttColorType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqGanttColorType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>ReqGanttShow</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqGanttShow</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>ReqItemJournalType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqItemJournalType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>ReqItemTableWizardPurpose</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqItemTableWizardPurpose</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>ReqMarkUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqMarkUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>ReqPeggingAssignmentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqPeggingAssignmentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>ReqPeggingType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqPeggingType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>ReqPlannedOrderLeveling</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqPlannedOrderLeveling</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>ReqPlanType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqPlanType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>ReqPOStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqPOStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>ReqQtyAmount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqQtyAmount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>ReqRefType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqRefType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>ReqRefTypeShort</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqRefTypeShort</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>ReqRefTypeTrunc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqRefTypeTrunc</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>ReqTraceMessageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqTraceMessageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>ReqTransFuturesActionPartType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqTransFuturesActionPartType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>ReturnCodeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReturnCodeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>ReturnCycleTimeScope</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReturnCycleTimeScope</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>ReturnReasonCodeDispExtended</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReturnReasonCodeDispExtended</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>ReturnReasonDispCode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReturnReasonDispCode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>ReturnUpdateAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReturnUpdateAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>RouteFormula</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RouteFormula</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>RouteOprPriority</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RouteOprPriority</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>SalesBasketType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesBasketType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>SalesBatch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesBatch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>SalesCheckForPickup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesCheckForPickup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>SalesCheckQtyCachKey</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesCheckQtyCachKey</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>SalesDeliveryTimeState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesDeliveryTimeState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>SalesDocumentTimezonePreference</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesDocumentTimezonePreference</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>SalesPriceDateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesPriceDateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>SalesPriceModelBasic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesPriceModelBasic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>SalesPurchCopy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesPurchCopy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>SalesPurchCycleAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesPurchCycleAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>SalesPurchGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesPurchGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>SalesPurchParmCleanUpMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesPurchParmCleanUpMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>SalesQuotationFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>SalesQuotationLinkToProject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationLinkToProject</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>SalesQuotationListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>SalesQuotationPriceConversion</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationPriceConversion</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>SalesQuotationPriceSimResult</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationPriceSimResult</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>SalesQuotationTypeListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationTypeListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>SalesShipping</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesShipping</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>SalesSourcingOrigin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesSourcingOrigin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>SalesStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>SalesTableFormId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTableFormId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>SalesTableListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTableListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>SalesTableMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTableMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>SalesType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>SalesUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>ShipCarrierDlvType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipCarrierDlvType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>ShipCarrierFreightApplied</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipCarrierFreightApplied</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>ShipCarrierMkUpFreight</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShipCarrierMkUpFreight</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>SMAInvoiceProjectSelection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAInvoiceProjectSelection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>SMAItemSetupType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAItemSetupType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>SMAProjectSelection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAProjectSelection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>SMAReasonType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAReasonType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>SMAServiceBOMChangeAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceBOMChangeAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>SMAServiceFunctionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceFunctionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>SMAServiceLevelAgreementLogType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceLevelAgreementLogType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>SMAServiceOrderActionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceOrderActionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>SMAServiceOrderFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceOrderFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>SMAServiceOrderOrigin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceOrderOrigin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>SMAServiceOrderProgress</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceOrderProgress</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>SMAServiceTaskTitleOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAServiceTaskTitleOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>SMASubscriptionPeriodType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMASubscriptionPeriodType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>SMAWizardCreateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAWizardCreateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>smmAccountNumToCreate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmAccountNumToCreate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>smmActivityParentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmActivityParentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>smmAppointmentNThInstance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmAppointmentNThInstance</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>smmBusinessRelationsListFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmBusinessRelationsListFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>smmBusRelTypeSourceTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmBusRelTypeSourceTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>smmCampaignBroadcastType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmCampaignBroadcastType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>smmCampaignProjectJournalType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmCampaignProjectJournalType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>smmCampaignResponse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmCampaignResponse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>smmCampaignsListFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmCampaignsListFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>smmContactsListFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmContactsListFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>smmCreateOpportunityOptions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmCreateOpportunityOptions</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>smmDisplayEMailInOutlook</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmDisplayEMailInOutlook</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>smmDragDropObjectType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmDragDropObjectType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>smmDupMethods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmDupMethods</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>smmEMailSMS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmEMailSMS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>smmEntityToCreate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmEntityToCreate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>smmFieldDelimiters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmFieldDelimiters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>smmLeadsListFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmLeadsListFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>smmLogType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmLogType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>smmOpportunitiesListFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmOpportunitiesListFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>smmOpportunityAssociation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmOpportunityAssociation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>smmOutlookContactDeleteAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmOutlookContactDeleteAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>smmOutlookRecurrenceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmOutlookRecurrenceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source>smmOutlookSyncPrinciple</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmOutlookSyncPrinciple</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>smmOutlookUpdateAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmOutlookUpdateAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>smmProjectNewExisting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmProjectNewExisting</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>smmQuotationAccountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmQuotationAccountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>smmQuotationStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmQuotationStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source>smmRecordDelimiters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmRecordDelimiters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>smmSalesUnitMemberRelation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmSalesUnitMemberRelation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>SmmSourceTypeList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SmmSourceTypeList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>smmSwotType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmSwotType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>smmTransLogUpdateAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmTransLogUpdateAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>smmUpdateOpportunityOptions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmUpdateOpportunityOptions</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source>smmWarningError</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">smmWarningError</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>SMAActiveAll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAActiveAll</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>SMAAgreementFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAAgreementFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>SMAAgreementTableListPageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAAgreementTableListPageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>TAMCustRebateApprovalStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMCustRebateApprovalStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>TAMFundStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMFundStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>TAMFundType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMFundType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>TAMPromoCustomerType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMPromoCustomerType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>TAMPromoMerchEvent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMPromoMerchEvent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source>TAMPromoMgmtApprovalStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMPromoMgmtApprovalStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>TAMPromotionDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMPromotionDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>TAMPromotionMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMPromotionMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>TAMRebateCustInclusive</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMRebateCustInclusive</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>TAMRebateLineBreakType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMRebateLineBreakType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>TAMRebateStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMRebateStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>TAMRebateUnitType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMRebateUnitType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>TAMRebateUOMOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMRebateUOMOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>TAMVendRebateApprovalStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMVendRebateApprovalStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>TAMVendRebateCalcDateType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMVendRebateCalcDateType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>TAMVendRebateTakenFrom</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMVendRebateTakenFrom</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>TAMVendRebateTransactionType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMVendRebateTransactionType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>TaxModuleType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxModuleType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>TaxSourceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxSourceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>TMSAccessorialAssignmentLevel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSAccessorialAssignmentLevel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>TMSAccessorialAssignmentTarget</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSAccessorialAssignmentTarget</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>TMSAccessorialDeliveryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSAccessorialDeliveryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>TMSAccessorialType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSAccessorialType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>TMSAppointmentAlert</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSAppointmentAlert</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>TMSDiscountResultType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSDiscountResultType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>TMSDiscountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSDiscountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>TMSFeeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSFeeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>TMSFreightBillMatchStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSFreightBillMatchStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>TMSFreightBillReconcileType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSFreightBillReconcileType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>TMSFwkErrorType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSFwkErrorType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>TMSHubPosition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSHubPosition</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>TMSInvoiceAccountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSInvoiceAccountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>TMSLineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSLineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>TMSLoadBuildSessionState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSLoadBuildSessionState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>TMSLoadTender</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSLoadTender</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>TMSLookupType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSLookupType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>TMSNumberSequenceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSNumberSequenceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>TMSOverrideLocationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSOverrideLocationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>TMSRecurrenceDays</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSRecurrenceDays</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>TMSRecurrenceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSRecurrenceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source>TMSRecurrenceWeeks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSRecurrenceWeeks</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>TMSResponsibleForPayment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSResponsibleForPayment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>TMSRouteStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSRouteStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>TMSSalesPurchTransfer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSSalesPurchTransfer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>TMSTableRef</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSTableRef</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>TMSTransportationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSTransportationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>TMSTransportRefType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSTransportRefType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>TMSTransportTypeFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSTransportTypeFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>TMSUOM</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSUOM</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>TMSZoneType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TMSZoneType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>TradeCurencyConversion</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradeCurencyConversion</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>TradeLineDlvType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradeLineDlvType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>TradeNonStockedConversionChangeType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradeNonStockedConversionChangeType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>TradeNonStockedConversionIssue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradeNonStockedConversionIssue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>TradeNonStockedConversionResolveUndo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradeNonStockedConversionResolveUndo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>TradePrintType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradePrintType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>TradeTable2LineUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TradeTable2LineUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>VendNotificationCategorySelection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendNotificationCategorySelection</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>VendNotificationStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendNotificationStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>VendPackingSlipTransTimeStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendPackingSlipTransTimeStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>VendRequestCompanyType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendRequestCompanyType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>VendRequestOriginatedByType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendRequestOriginatedByType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>VendRequestQuestionnairesCompleted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendRequestQuestionnairesCompleted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>VendRequestRoleType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendRequestRoleType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>VendReviewRatingScore</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendReviewRatingScore</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>VersioningAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VersioningAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>WHSAllowMaterialOverPick</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSAllowMaterialOverPick</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>WHSApplicableDemand</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSApplicableDemand</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>WHSAutoReleaseContainerAtContainerClose</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSAutoReleaseContainerAtContainerClose</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>WHSAutoReleaseOrderType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSAutoReleaseOrderType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>WHSBreakCluster</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSBreakCluster</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>WHSContainerizationQueryType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSContainerizationQueryType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>WHSContainerPackingStrategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSContainerPackingStrategy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>WHSContainerTableFormViewType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSContainerTableFormViewType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>WHSCrossDockFulfillmentStrategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSCrossDockFulfillmentStrategy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>WHSCustJourType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSCustJourType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>WHSCycleCountPlanStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSCycleCountPlanStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>WHSDefaultDataField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSDefaultDataField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>WHSFilterModule</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSFilterModule</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>WHSHistoryEvent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSHistoryEvent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>WHSLoadPlanning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLoadPlanning</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source>WHSLoadPostMethodsBase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLoadPostMethodsBase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>WhsLoadReplenishment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WhsLoadReplenishment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>WHSLoadTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLoadTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>WHSLocDirStrategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLocDirStrategy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>WHSLPAssignment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLPAssignment</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>WHSLPWFilterType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLPWFilterType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>WHSManifestAt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSManifestAt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>WHSManifestRequirementContainerGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSManifestRequirementContainerGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>WHSMenuItemDirectedBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMenuItemDirectedBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>WHSMixedLPReceivingMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMixedLPReceivingMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>WHSMixingLogicTables</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMixingLogicTables</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>WHSMobileAppPagePattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMobileAppPagePattern</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>WHSOriginType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSOriginType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>WHSPickOldestBatch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPickOldestBatch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>WHSPostMethodBaseKanban</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPostMethodBaseKanban</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>WHSPostMethodBaseKanbanOptional</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPostMethodBaseKanbanOptional</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source>WHSPostMethodBaseOptional</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPostMethodBaseOptional</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>WHSPostMethodBaseProd</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPostMethodBaseProd</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>WHSPostMethodBaseProdOptional</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPostMethodBaseProdOptional</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>WHSPostMethodsBase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSPostMethodsBase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source>WHSQtyPct</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSQtyPct</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>WHSReleaseQuantitySpecification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSReleaseQuantitySpecification</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>WHSReplenishmentDependentWorkBlockingPolicy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSReplenishmentDependentWorkBlockingPolicy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>WHSReservationHierarchyLevelStrategyType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSReservationHierarchyLevelStrategyType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source>WHSReservationStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSReservationStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>WHSUseFixedLocations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSUseFixedLocations</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>WHSWorkActivity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkActivity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>WHSWorkClusterStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkClusterStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source>WHSWorkCreationProcess</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkCreationProcess</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>WHSWorkExceptionLogStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkExceptionLogStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>WHSWorkExecuteMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkExecuteMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>WHSWorkListPageFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkListPageFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source>WHSWorkPrintOption</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkPrintOption</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>WHSWorkPutFlow</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkPutFlow</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>WHSWorkTransType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkTransType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>WHSWorkType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source>WHSWorkTypePickPut</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSWorkTypePickPut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>WMSAutoAddStop</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSAutoAddStop</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>WMSFreightChargeTerms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSFreightChargeTerms</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>WMSFreightCounted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSFreightCounted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>WMSHandlingType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSHandlingType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>WMSLocationType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSLocationType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>WMSPackageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSPackageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>WMSPalletMovementProcessing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSPalletMovementProcessing</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>WMSPhysicalUpdateStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSPhysicalUpdateStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>WMSReceiptStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSReceiptStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source>WMSReservationMethod</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSReservationMethod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source>WMSReservationMethodInternal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSReservationMethodInternal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source>WMSShipmentStatus</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSShipmentStatus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>WMSShipmentType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSShipmentType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>WMSSpaceUtilInconsistencyGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSSpaceUtilInconsistencyGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>WMSSpaceUtilShowBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSSpaceUtilShowBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source>WMSSpaceUtilStorageLoadUnitType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSSpaceUtilStorageLoadUnitType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>WMSStoreAreaType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSStoreAreaType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source>WMSTrailerLoaded</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSTrailerLoaded</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>WrkCtrActivityType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrActivityType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source>WrkCtrBulkResReqSearchType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrBulkResReqSearchType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>WrkCtrCapacityType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrCapacityType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>WrkCtrCapRefType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrCapRefType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>WrkCtrCommitState</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrCommitState</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source>WrkCtrGroupWrkCtr</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrGroupWrkCtr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>WrkCtrSchedulerCommand</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrSchedulerCommand</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>WrkCtrSchedulerConstraintType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrSchedulerConstraintType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source>WrkCtrSchedulerLoggerMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrSchedulerLoggerMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source>WrkCtrType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>WrkCtrTypeFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WrkCtrTypeFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>These enumerations were removed, and not made extensible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下の列挙型は削除され、拡張可能になりませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source>Enumeration removed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除された列挙型</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source>BackorderLinesListPageMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BackorderLinesListPageMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>BackorderPurchLinesListPageMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BackorderPurchLinesListPageMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>EcoResProductPerCompanyListPageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResProductPerCompanyListPageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>ReturnTableListPageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReturnTableListPageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source>SMAAgreementTableListPageType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SMAAgreementTableListPageType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>Foundation changes were made to improve support for extensible enumerations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能な列挙型のサポートを改善するために、Foundation の変更が行われました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>The <bpt id="p1">**</bpt>SysPlugin<ept id="p1">**</ept> framework was enabled for enumerations where <bpt id="p2">**</bpt>IsExtensible<ept id="p2">**</ept> is set to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>IsExtensible<ept id="p2">**</ept> が <bpt id="p3">**</bpt>はい<ept id="p3">**</ept> に設定されている列挙型については、<bpt id="p1">**</bpt>SysPlugin<ept id="p1">**</ept> フレームワークが使用可能になりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source>Views were enabled with new name-based syntax for enumerations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">列挙型の新しい名前に基づく構文で、ビューが使用可能になりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DataEvents または欠落している insert、update、delete プリおよびポストデータ イベントを生成しないデータ操作メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>As a general practice, you use data methods on tables to raise events that can be used for extending the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般なプラクティスとして、テーブルのデータ メソッドを使用して、アプリケーションの拡張に使用できるイベントを発生させます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>The code base has not always followed this practice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード ベースは、必ずしもこのプラクティスに従っていませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>For example, the <bpt id="p1">**</bpt>doInsert<ept id="p1">**</ept>, <bpt id="p2">**</bpt>doUpdate<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>doDelete<ept id="p3">**</ept> data methods and certain table implementations did not make a call to <bpt id="p4">**</bpt>super()<ept id="p4">**</ept> in the data method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>doInsert<ept id="p1">**</ept>、<bpt id="p2">**</bpt>doUpdate<ept id="p2">**</ept>、および <bpt id="p3">**</bpt>doDelete<ept id="p3">**</ept> データ メソッドと特定のテーブルの実装では、データ メソッドで <bpt id="p4">**</bpt>super()<ept id="p4">**</ept> の呼び出しは行われませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>The <bpt id="p1">**</bpt>insert<ept id="p1">**</ept>, <bpt id="p2">**</bpt>update<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> methods on the type classes have been refactored.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイプ クラスの <bpt id="p1">**</bpt>insert<ept id="p1">**</ept>、<bpt id="p2">**</bpt>update<ept id="p2">**</ept>、および <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> メソッドはリファクターされました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>Changes were made so that <bpt id="p1">**</bpt>super()<ept id="p1">**</ept> is called more consistently in data methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ メソッドで <bpt id="p1">**</bpt>super()<ept id="p1">**</ept> が確実に呼び出されるように変更が行われました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの変更により、これらのメソッドへの拡張機能の追加が可能になり、その結果、プリイベントとポストイベントが拡張機能で使用できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>The tables where the <bpt id="p1">**</bpt>insert<ept id="p1">**</ept>, <bpt id="p2">**</bpt>update<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> events were enabled for extension are listed in the following table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の表に、<bpt id="p1">**</bpt>insert<ept id="p1">**</ept>、<bpt id="p2">**</bpt>update<ept id="p2">**</ept>、および <bpt id="p3">**</bpt>delete<ept id="p3">**</ept> イベントが拡張機能に対して有効になったテーブルを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source>Table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>InventBlocking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventBlocking</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>InventTransferLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventTransferLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>Kanban</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kanban</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source>KanbanJob</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanJob</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>KanbanJobPickingList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KanbanJobPickingList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>MCRRoyaltyVendTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MCRRoyaltyVendTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>PdsRebateTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PdsRebateTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>PmfProdCoBy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PmfProdCoBy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>ProdBOM</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdBOM</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>ProdRoute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdRoute</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>ProdTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ProdTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>PurchLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>PurchRFQCaseLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchRFQCaseLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>PurchRFQCaseTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchRFQCaseTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>PurchRFQLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchRFQLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source>PurchTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>SalesLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>SalesQuotationLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>SalesQuotationTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source>SalesTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>TAMVendRebateTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TAMVendRebateTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source>WMSOrder</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSOrder</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>WMSOrderTrans</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WMSOrderTrans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source>Exposing class members</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス メンバーの公開</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス修飾子または新しい parm メソッドの変更の結果、追加のプライベート メンバーをカスタマイズに使用できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source>The chain of command platform feature enables extension class access to protected methods and members.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンド チェーン プラットフォーム機能により、保護されたメソッドとメンバーへの拡張クラスのアクセスが有効になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>For more information about chain of command, see <bpt id="p1">[</bpt>Extensible X++: Chain of Command<ept id="p1">](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンド チェーンの詳細については、「<bpt id="p1">[</bpt>拡張可能な X++: コマンド チェーン<ept id="p1">](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/)</ept>」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source>Member</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メンバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>AssetPost.ledgerJournalTrans</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AssetPost.ledgerJournalTrans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source>Class DimensionDerivationRule.ledgerDimensionAllocationList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス DimensionDerivationRule.ledgerDimensionAllocationList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source>Class PurchInvoiceJournalCreate.purchTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス PurchInvoiceJournalCreate.purchTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source>Class PurchTableType.purchTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス PurchTableType.purchTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>Class SalesInvoiceJournalPost.salesLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス SalesInvoiceJournalPost.salesLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>Class SalesQuotationLineType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス SalesQuotationLineType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>Class SalesQuotationTableType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス SalesQuotationTableType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source>Class VendorInvoiceLineSourceDocLineItem.purchLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス VendorInvoiceLineSourceDocLineItem.purchLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>CustCreditLimit.balanceTotalsCalculated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustCreditLimit.balanceTotalsCalculated</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source>CustCreditLimit_SalesTable.salesTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustCreditLimit_SalesTable.salesTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source>Form LedgerJournalTransCustPaym.ledgerJournalEngine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム LedgerJournalTransCustPaym.ledgerJournalEngine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source>PurchLineType.purchLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchLineType.purchLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>PurchLineType.purchLine_orig</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchLineType.purchLine_orig</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source>SalesLineType.salesLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesLineType.salesLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>SalesLineType.salesLine_orig</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesLineType.salesLine_orig</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source>SalesTableType.checkSalesQty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTableType.checkSalesQty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source>SalesTableType.SalesTable_orig</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTableType.SalesTable_orig</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source>WHSControl.data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSControl.data</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="875">
+          <source>WHSLocationDirective.targetLicensePlateId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLocationDirective.targetLicensePlateId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="876">
+          <source>Construct methods with throw statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">throw ステートメントを使用した construct メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="877">
+          <source>Some <bpt id="p1">**</bpt>construct<ept id="p1">**</ept> methods were implemented with <bpt id="p2">**</bpt>throw<ept id="p2">**</ept> statements if there was a missing implementation for a given type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定の型の実装が欠落していた場合、いくつかの <bpt id="p1">**</bpt>construct<ept id="p1">**</ept> メソッドが <bpt id="p2">**</bpt>throw<ept id="p2">**</ept> ステートメントで実装されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="878">
+          <source>This doesn't work well with extensibility, so to mitigate this, <bpt id="p1">**</bpt>construct<ept id="p1">**</ept> methods were changed so that they do not throw exceptions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは拡張性に対してはうまく機能しません。この問題を軽減するため、例外をスローしないように、<bpt id="p1">**</bpt>construct<ept id="p1">**</ept> メソッドが変更されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="879">
+          <source>These methods are now to open for extensibility through class augmentation or by post-event subscription.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="880">
+          <source>Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="881">
+          <source>BarcodeEAN128.string()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BarcodeEAN128.string()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="882">
+          <source>CustCreditLimit.Construct</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustCreditLimit.Construct</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="883">
+          <source>FormLetterReport</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FormLetterReport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="884">
+          <source>JournalStatic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JournalStatic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="885">
+          <source>MarkupAllocation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MarkupAllocation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="886">
+          <source>PurchTable2LineField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PurchTable2LineField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="887">
+          <source>SalesCalcTax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesCalcTax</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="888">
+          <source>SalesEditLinesForm</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesEditLinesForm</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="889">
+          <source>SalesFormLetter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesFormLetter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="890">
+          <source>SalesFormLetterContract.newFromPackedVersion</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesFormLetterContract.newFromPackedVersion</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="891">
+          <source>SalesFormletterParmData.newData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesFormletterParmData.newData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="892">
+          <source>SalesQuantity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuantity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="893">
+          <source>SalesQuotationEditLinesForm.construct</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesQuotationEditLinesForm.construct</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="894">
+          <source>SalesSummaryFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesSummaryFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="895">
+          <source>SalesTable2LineField</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTable2LineField</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="896">
+          <source>VendInvoiceTableToLineUpdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendInvoiceTableToLineUpdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="897">
+          <source>Find methods with throw statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">throw ステートメントを使用した find メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="898">
+          <source>Some <bpt id="p1">**</bpt>find<ept id="p1">**</ept> methods were implemented with <bpt id="p2">**</bpt>throw<ept id="p2">**</ept> statements if there was a missing implementation for a given type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定の型の実装が欠落していた場合、いくつかの <bpt id="p1">**</bpt>find<ept id="p1">**</ept> メソッドが <bpt id="p2">**</bpt>throw<ept id="p2">**</ept> ステートメントで実装されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="899">
+          <source>This does not work well with extensibility, so to mitigate this, <bpt id="p1">**</bpt>find<ept id="p1">**</ept> methods were changed so that they do not throw exceptions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは拡張性に対してはうまく機能しません。この問題を軽減するため、例外をスローしないように、<bpt id="p1">**</bpt>find<ept id="p1">**</ept> メソッドが変更されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="900">
+          <source>These methods are now to open for extensibility through class augmentation or by post-event subscription.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="901">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="902">
+          <source>JournalStatic.findJournalTableFromTrans</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JournalStatic.findJournalTableFromTrans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="903">
+          <source>JournalStatic.findJournalTableId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JournalStatic.findJournalTableId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="904">
+          <source>Methods made hookable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フック可能なメソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="905">
+          <source>Extensibility support has been extended for some methods that were not public and were not hookable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パブリックでない一部のメソッドおよびフック可能でない一部のメソッドについて、拡張性サポートが強化されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="906">
+          <source>The following methods have been explicitly decorated with hookable behavior.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のメソッドはフック可能な動作で明示的に修飾されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="907">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="908">
+          <source>Class CustVendReversePosting.updateCustVendTrans</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス CustVendReversePosting.updateCustVendTrans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="909">
+          <source>Class JournalTableData.construct</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス JournalTableData.construct</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="910">
+          <source>Class PriceDisc.makeKey</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス PriceDisc.makeKey</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="911">
+          <source>Class PurchInvoiceJournalCreate.initJournalHeader</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス PurchInvoiceJournalCreate.initJournalHeader</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="912">
+          <source>Class SalesInvoiceJournalPost.checkSourceLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス SalesInvoiceJournalPost.checkSourceLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="913">
+          <source>Class SalesInvoiceJournalPost.postCustVend</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス SalesInvoiceJournalPost.postCustVend</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="914">
+          <source>Form LedgerTransVoucher.addDynaLink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム LedgerTransVoucher.addDynaLink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="915">
+          <source>ReqCalc.deleteItemRequirement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqCalc.deleteItemRequirement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="916">
+          <source>ReqCalc.initTransFromInventTrans</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqCalc.initTransFromInventTrans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="917">
+          <source>ReqCalcForecastItemTable.deleteRequirement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqCalcForecastItemTable.deleteRequirement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="918">
+          <source>Table TmpCustVendTrans.createLineCreditLimit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル TmpCustVendTrans.createLineCreditLimit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="919">
+          <source>Table TmpCustVendTrans.createLineCreditRemain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル TmpCustVendTrans.createLineCreditRemain</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="920">
+          <source>Table TmpCustVendTrans.createLineOrdered</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル TmpCustVendTrans.createLineOrdered</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="921">
+          <source>Table TmpCustVendTrans.createLinePackingSlip</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル TmpCustVendTrans.createLinePackingSlip</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="922">
+          <source>WHSLocationDirective.addRangeByTransType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLocationDirective.addRangeByTransType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="923">
+          <source>WhsWorkCreate.createWorkLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WhsWorkCreate.createWorkLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="924">
+          <source>Inline delegates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インライン デリゲート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="925">
+          <source>Inline delegates are now available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インライン デリゲートを使用できるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="926">
+          <source>The most common way to use inline delegates is to split the method into more granular methods and enable extensibility events in the smaller methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インライン デリゲートの最も一般的な使用方法は、メソッドをより粒度の細かいメソッドに分割して、より小規模なメソッドで拡張イベントを使用できるようにすることです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="927">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="928">
+          <source>AxClass - ChequeDP - Method - insertChequeTmp</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxClass - ChequeDP - Method - insertChequeTmp</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="929">
+          <source>AxClass - VendInvoiceTableToLineUpdate - Method - convertPurchTableFieldToVendInvoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxClass - VendInvoiceTableToLineUpdate - Method - convertPurchTableFieldToVendInvoice</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="930">
+          <source>class JournalStatic.findJournalTableFromTrans</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス JournalStatic.findJournalTableFromTrans</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="931">
+          <source>class JournalStatic.findJournalTableId</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス JournalStatic.findJournalTableId</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="932">
+          <source>Class WhsLocationDirective.findLocationMultiSKU</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス WhsLocationDirective.findLocationMultiSKU</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="933">
+          <source>EcoResReleasedProductVariantEntity.insertEntityDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EcoResReleasedProductVariantEntity.insertEntityDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="934">
+          <source>ForecastSales.ForecastSales_ds.updateForecastSalesFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ForecastSales.ForecastSales_ds.updateForecastSalesFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="935">
+          <source>Form SalesTable - method updateDesign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム SalesTable - メソッド updateDesign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="936">
+          <source>ReqTransPoMarkFirm.firmSelectedPlannedOrders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReqTransPoMarkFirm.firmSelectedPlannedOrders</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="937">
+          <source>SalesLineType.insert</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesLineType.insert</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="938">
+          <source>SalesLineType.update</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesLineType.update</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="939">
+          <source>SalesTable2LineUpdatePrompt.dialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesTable2LineUpdatePrompt.dialog</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="940">
+          <source>table ExtCodeTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル ExtCodeTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="941">
+          <source>table InventItemGroup.getGroupForAccountType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル InventItemGroup.getGroupForAccountType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="942">
+          <source>table InventItemGroup.ledgerDimensionDescription</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル InventItemGroup.ledgerDimensionDescription</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="943">
+          <source>table InventTestAssociationTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル InventTestAssociationTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="944">
+          <source>Table LedgerJournalName - method validateWrite</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル LedgerJournalName - メソッド validateWrite</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="945">
+          <source>Table PaymTerm - method due</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル PaymTerm - メソッド due</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="946">
+          <source>TaxCalculation.newForSourceType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxCalculation.newForSourceType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="947">
+          <source>TaxCalculation.newForSourceTypeWithTaxUncommitted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxCalculation.newForSourceTypeWithTaxUncommitted</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="948">
+          <source>WHSLoadLine.getOrderCommonFromLoadLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSLoadLine.getOrderCommonFromLoadLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="949">
+          <source>WhsLocationDirective.findLocation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WhsLocationDirective.findLocation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="950">
+          <source>WHSRFControlData.populateData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSRFControlData.populateData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="951">
+          <source>WHSRFControLData.processControl</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSRFControLData.processControl</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="952">
+          <source>WHSRFMenuItemTable.getWHSWorkExecuteMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSRFMenuItemTable.getWHSWorkExecuteMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="953">
+          <source>Other changes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他の変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="954">
+          <source>The following table lists additional changes that have been made for extensibility.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の表に、拡張機能に対して行われた追加の変更を一覧表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="955">
+          <source>Change</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="956">
+          <source>Add indirection for existing product dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存の製品分析コードの間接参照の追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="957">
+          <source>Class FormLetterParmDataOutputContract is not extensible</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス FormLetterParmDataOutputContract は拡張可能ではありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="958">
+          <source>Create an instantiation strategy for the SysExtensionFramework that supports one or more arguments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つ以上の引数をサポートする SysExtensionFramework のインスタンス化戦略の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="959">
+          <source>Customization: TableField: Extension Model: Change EDT type of on a table field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタマイズ: TableField: 拡張モデル: テーブル フィールドの EDT タイプの変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="960">
+          <source>CustVendOpenTransBalances - initAccountNumCurrencies() switch statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendOpenTransBalances - initAccountNumCurrencies() switch ステートメント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="961">
+          <source>CustVendOpenTransBalances - new() switch statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendOpenTransBalances - new() switch ステートメント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="962">
+          <source>CustVendOutPaym (Class) needs extensibility improvement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendOutPaym (クラス) には拡張性の改善が必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="963">
+          <source>CustVendPaymReconciliationSetStatus (Class) needs extensibility improvement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendPaymReconciliationSetStatus (クラス) には拡張性の改善が必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="964">
+          <source>CustVendSumForPaym (Class) needs extensibility improvement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustVendSumForPaym (クラス) には拡張性の改善が必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="965">
+          <source>Decouple AddressCountyId and AddressStateId EDTs from SysGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysGroup からの AddressCountyId と AddressStateId EDT の切り離し</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="966">
+          <source>Document Management event handling needs improved extensibility support</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドキュメント管理イベントの処理には拡張性サポートの改善が必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="967">
+          <source>Exchange rate provider framework requires custom built providers to be placed in the Currency Model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">為替レート プロバイダー フレームワークには、通貨モデルにカスタムの組み込みプロバイダーを配置することが必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="968">
+          <source>Extending GS-128</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GS-128 の拡張</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="969">
+          <source>Extension model: Allow customizations on the CountryRegionCodes property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張モデル: CountryRegionCodes プロパティでのカスタマイズを許可する。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="970">
+          <source>Form extension - Extension of "extended" form elements with new controls are not working</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム拡張機能 - 新しいコントロールによって "拡張された" フォーム要素の拡張機能は動作しません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="971">
+          <source>InventDim: Condition with throw</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventDim: throw 付きの条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="972">
+          <source>InventDimRenameDimValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InventDimRenameDimValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="973">
+          <source>Method overlayering - Class VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ - クラス VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="974">
+          <source>Method overlayering: class Markup - method delete</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ: クラス Markup - メソッド delete</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="975">
+          <source>Method overlayering: class McrPriceHistoryForm.insertPotentialTradeAgreements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ: クラス McrPriceHistoryForm.insertPotentialTradeAgreements</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="976">
+          <source>Method overlayering: Class OffsetVoucher - method markTransaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ: クラス OffsetVoucher - メソッド markTransaction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="977">
+          <source>Method overlayering: Form LedgerJournalTransDimension.init</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ: フォーム LedgerJournalTransDimension.init</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="978">
+          <source>Method overlayering: Form LedgerTransVoucher - method init</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ: フォーム LedgerTransVoucher - メソッド init</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="979">
+          <source>Method overlayering: Table CustInvoiceTable - method validateWrite</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーレイ: テーブル CustInvoiceTable - メソッド validateWrite</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="980">
+          <source>Method signature changed: RetailCreateLinesFromProductsToAdd.parmCallerCommon</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド シグネチャが変更されました: RetailCreateLinesFromProductsToAdd.parmCallerCommon</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="981">
+          <source>Method signature changed: WHSInvent.getCommonFromWorkTransType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド シグネチャが変更になりました: WHSInvent.getCommonFromWorkTransType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="982">
+          <source>Method signature changed: WHSPoolProdBom.movementBuffer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド シグネチャが変更されました: WHSPoolProdBom.movementBuffer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="983">
+          <source>Missing construct method: class SMAServiceOrderTableButtonStateProvider</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">construct メソッドがありません: クラス SMAServiceOrderTableButtonStateProvider</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="984">
+          <source>Number sequence scope extensibility needed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要な番号順序スコープの拡張性</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="985">
+          <source>Runbase needs a way for class extensions to pack/unpack their members</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Runbase には、クラスの拡張機能がメンバーをパック/アンパックする方法が必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="986">
+          <source>String EDT size extension issues</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列 EDT のサイズの拡張の問題</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="987">
+          <source>Support opening Inventory on-hand form based on custom InventDim</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタムの InventDim に基づく手持在庫フォームのオープンのサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="988">
+          <source>SysExtension framework: SysExtensionIInstantiationStrategy and SysExtensionIAttribute are not compatible</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysExtension フレームワーク: SysExtensionIInstantiationStrategy と SysExtensionIAttribute は互換性がありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="989">
+          <source>Variations of EventHandlerResult are requested to ensure that delegates used in Request/response scenarios are more robust</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求/応答シナリオで使用されるデリゲートがより堅牢になるために、EventHandlerResult のバリエーションが必要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="990">
+          <source>WHS Mobile Framework: passes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHS モバイル フレームワーク: 合格</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="991">
+          <source>WhsLocationDirectiveLine To/FromQty not extensible</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WhsLocationDirectiveLine To/FromQty は拡張可能ではありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="992">
+          <source>WHSMobileApp Extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMobileApp の拡張性</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="993">
+          <source>WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="994">
+          <source>WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="995">
+          <source>WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WhsRFControlData.processControl は switch ブロック内の _data ではなく WhsControl.data を参照する必要があります</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

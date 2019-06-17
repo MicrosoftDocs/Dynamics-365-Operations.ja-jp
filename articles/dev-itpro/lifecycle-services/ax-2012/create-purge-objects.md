@@ -1,202 +1,807 @@
----
-title: Intelligent Data Management Framework の削除オブジェクトの作成
-description: このトピックでは、Microsoft Dynamics AX のアプリケーション テーブル間で階層関係ツリーを定義する IDMF パージ オブジェクトを作成する方法について説明します。
-author: kfend
-manager: AnnBe
-ms.date: 10/26/2017
-ms.topic: article
-ms.prod: dynamics-ax-2012
-ms.service: ''
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: AX 2012
-ms.custom: 17951
-ms.assetid: 2ecae3f6-1163-4a0f-8db3-8b53908961ce
-ms.search.region: Global
-ms.author: kfend
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b46f89079f48611eb1dc46ae9a1d9ce7294f1772
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506188"
----
-# <a name="create-purge-objects-for-the-intelligent-data-management-framework"></a><span data-ttu-id="b39b1-103">Intelligent Data Management Framework の削除オブジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="b39b1-103">Create purge objects for the Intelligent Data Management Framework</span></span>
-
-[!include [banner](../../includes/banner.md)]
-
-<a name="considerations-for-purge-objects-driver-tables-relations-and-rules"></a><span data-ttu-id="b39b1-104">削除オブジェクト、ドライバー テーブル、関係、およびルールに関する注意事項</span><span class="sxs-lookup"><span data-stu-id="b39b1-104">Considerations for Purge Objects, driver tables, relations, and rules</span></span>
----------------------------------------------------------------------
-
-<span data-ttu-id="b39b1-105">**注記**: 削除オブジェクトを使用する前に、Microsoft Dynamics AX アプリケーションとデータベースのメンテナンスと管理に精通している必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-105">**Note**: Before you use Purge Objects, you must have experience in the maintenance and administration of the Microsoft Dynamics AX application and database.</span></span> <span data-ttu-id="b39b1-106">IDMF では、Microsoft Dynamics AX アプリケーション テーブル間の階層関係ツリーを定義する削除オブジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-106">IDMF lets you create a Purge Object that defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables.</span></span> <span data-ttu-id="b39b1-107">特定の条件に基づき選択したレコードにルールを適用することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-107">You can then apply rules to selected records based on specific criteria.</span></span> <span data-ttu-id="b39b1-108">選択基準に一致するレコードは、削除タスクが実行されたときに削除オブジェクト内の関係ツリー全体から削除されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-108">Records matching the selection criteria are deleted from the whole relationship tree in the Purge Object when a purge task runs.</span></span> <span data-ttu-id="b39b1-109">このフレームワークを不適切に使用すると、予期しない結果、データベース破損、データベース全体およびアプリケーションの復旧が必要となるアプリケーション ダウンタイムが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-109">Improper use of this framework can cause unexpected results, database corruption, and application downtime requiring full database and application recovery.</span></span> <span data-ttu-id="b39b1-110">実稼働環境で作業する前に、十分に注意を払い、テスト環境でリサイクル戦略を入念にテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-110">Exercise extreme caution, and thoroughly test your recycling strategy in a test environment before working in the production environment.</span></span> <span data-ttu-id="b39b1-111">削除オブジェクトで作業する場合は、次の点を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-111">Consider the following points when working with a Purge Object:</span></span>
-
--   <span data-ttu-id="b39b1-112">一時的または中間的なデータを格納するテーブルは通常、削除オブジェクトの主な候補です。</span><span class="sxs-lookup"><span data-stu-id="b39b1-112">Tables that store transient or intermediate data are usually good candidates for a Purge Object.</span></span> <span data-ttu-id="b39b1-113">こうしたテーブルで削除オブジェクトを作成する前に、データの依存関係とアプリケーションの機能を検証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-113">You must validate the data dependency and application functionality before creating a Purge Object with such tables.</span></span>
--   <span data-ttu-id="b39b1-114">削除オブジェクトのドライバー テーブルとして選択したテーブルが、**SalesParmTable** または **SalesQuotationTable** などのヘッダー テーブルであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-114">Verify that the table you select as the driver table for a Purge Object is a header table, such as **SalesParmTable** or **SalesQuotationTable**.</span></span> <span data-ttu-id="b39b1-115">必ずしもいつも正確ではありませんが、そのようなテーブルの **TableGroup** の値は、**WorkSheetHeader**、**Miscellaneous**、または **Transaction** です。</span><span class="sxs-lookup"><span data-stu-id="b39b1-115">A good indication, although not always accurate, is that the **TableGroup** value for such a table is **WorkSheetHeader**, **Miscellaneous**, or **Transaction**.</span></span>
--   <span data-ttu-id="b39b1-116">**TableGroup** 値が **Main**、**Parameter**、**Group**、**WorkSheetLine** のテーブルをドライバー テーブルにすることはできません。</span><span class="sxs-lookup"><span data-stu-id="b39b1-116">Tables with a **TableGroup** value of **Main**, **Parameter**, **Group**, and **WorkSheetLine** cannot be driver tables.</span></span>
--   <span data-ttu-id="b39b1-117">ドライバー テーブルは、階層リレーションシップ ツリーのルート親になります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-117">The driver table becomes the root parent in the hierarchical relationship tree.</span></span> <span data-ttu-id="b39b1-118">IDMF は **XRefTableRelation** テーブルを照会して、親子関係を判別します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-118">IDMF queries the **XRefTableRelation** table to determine the parent-child relationships.</span></span>
--   <span data-ttu-id="b39b1-119">削除オブジェクトからレコードを削除すると、次の条件では、アプリケーションでデータの不整合が発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-119">Removing records from a Purge Object may cause data inconsistency in your application in these conditions:</span></span>
-    -   <span data-ttu-id="b39b1-120">ドライバー テーブルには既知の親テーブルがあります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-120">The driver table has known parent tables.</span></span>
-    -   <span data-ttu-id="b39b1-121">ドライバー テーブルには、削除テーブルにリレーションとして追加されていない既知の子テーブルがあります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-121">The driver table has known child tables that are not added to the Purge Table as a relation.</span></span>
--   <span data-ttu-id="b39b1-122">常に削除オブジェクトを最小化し、実装に必要なルールおよび関係のみを保持します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-122">Always minimize the Purge Object, and keep only the necessary relations and rules for your implementations.</span></span> <span data-ttu-id="b39b1-123">次の条件の 削除オブジェクトからテーブルを削除することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-123">Consider removing a table from the Purge Object in these conditions:</span></span>
-    -   <span data-ttu-id="b39b1-124">このテーブルにはデータが含まれておらず、将来もデータが含まれない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-124">The table does not contain any data, and it is not likely to contain data in the future.</span></span>
-    -   <span data-ttu-id="b39b1-125">このテーブルには、**CustTransOpen** や **SpecTrans** などの一時データのみが格納されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-125">The table stores only transient data, such as **CustTransOpen** or **SpecTrans**.</span></span>
-    -   <span data-ttu-id="b39b1-126">テーブルには未処理のトランザクションが格納されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-126">The table stores open transactions.</span></span>
-    -   <span data-ttu-id="b39b1-127">テーブルはネストされたリレーションシップを作成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-127">The table creates nested relationships.</span></span> <span data-ttu-id="b39b1-128">テーブルが、同じ特定関係条件のもとまたは主キーのセットで、関係ツリー上の異なるレベルで複数回表示される場合、関係ツリーの最も低い番号のレベルでのみ表示されるように検討します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-128">If a table appears multiple times on different levels in the relationship tree, with the same qualifying relationship condition or set of primary keys, consider keeping the occurrence only in the lowest-numbered level in the relationship tree.</span></span>
-    -   <span data-ttu-id="b39b1-129">2 つのテーブル間に複数のリレーションシップが存在することがあります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-129">There may be multiple relationships between two tables.</span></span> <span data-ttu-id="b39b1-130">その場合、リレーションシップと機能を慎重に評価します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-130">In that case, evaluate the relationships and functionality carefully.</span></span> <span data-ttu-id="b39b1-131">削除オブジェクトでは単一のリレーションシップのみを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-131">We recommend that you use only a single relationship in the Purge Object.</span></span> <span data-ttu-id="b39b1-132">ただし、必要に応じて、複数のリレーションシップを使用できます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-132">However, you can use multiple relationships if necessary.</span></span> <span data-ttu-id="b39b1-133">有効なリレーションシップが存在する場合は固有インデックスまたは主キーを使用して、有効なリレーションシップを選択してください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-133">Be sure to select a valid relationship using a unique index or primary key, if one exists.</span></span>
-    -   <span data-ttu-id="b39b1-134">テーブルは、ドライバー テーブルとは無関係で、独自の削除オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-134">A table is unrelated to the driver table and makes its own Purge Object.</span></span> <span data-ttu-id="b39b1-135">たとえば、**ProdTable** をドライバー テーブルとして使用する場合、**ProdJournalTable** が検出され、それ自体は別の削除オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-135">For example, if you use **ProdTable** as a driver table, it also discovers **ProdJournalTable**, which itself is a separate Purge Object.</span></span> <span data-ttu-id="b39b1-136">もう 1 つの例は PurchReqTable です。</span><span class="sxs-lookup"><span data-stu-id="b39b1-136">Another example is PurchReqTable.</span></span> <span data-ttu-id="b39b1-137">**PurchReqTable** をドライバー テーブルとして使用する場合、**PurchParmTable** 削除オブジェクトの一部として、**PurchParmLine** が検出されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-137">If you use **PurchReqTable** as a driver table, it discovers **PurchParmLine**, which itself is a part of the **PurchParmTable** Purge Object.</span></span>
--   <span data-ttu-id="b39b1-138">削除オブジェクトに作成したリレーションシップ ツリーがシステムから目的のデータを実際に削除していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-138">Verify that the relationship tree that you have created in the Purge Object actually purges the intended data from your system.</span></span> <span data-ttu-id="b39b1-139">作成された削除オブジェクトは、関連するすべてのレコードを参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-139">A Purge Object that you create must look at all related records.</span></span> <span data-ttu-id="b39b1-140">不足している関係は、データの孤立を引き起こします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-140">Missing relationships lead to orphaned data.</span></span>
--   <span data-ttu-id="b39b1-141">実稼働環境テスト環境でのデータベースとアプリケーションには、削除の影響を十分にテストします。運用環境に似たテスト環境でデータベースとアプリケーションに対するパージの影響を完全にテストします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-141">Thoroughly test the effect of the purge on your database and application in a test environment that resembles your production environment.</span></span> <span data-ttu-id="b39b1-142">すべての業務プロセスをテストし、実稼働環境に削除オブジェクトを実装する前にユーザーの承認を得ます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-142">Test all business processes, and obtain user sign-off before trying to implement the Purge Object in the production environment.</span></span>
--   <span data-ttu-id="b39b1-143">IDMF に含まれている削除テンプレートから削除オブジェクトを作成するときは、テスト環境で、削除オブジェクトを検証して徹底的にテストします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-143">When you create a Purge Object from a purge template that is included with IDMF, validate and thoroughly test the Purge Object in a test environment.</span></span> <span data-ttu-id="b39b1-144">これらのテンプレートは標準の Microsoft Dynamics AX アプリケーションで作成され、実装と一致しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-144">These templates are created in a standard Microsoft Dynamics AX application and may not match your implementation.</span></span> <span data-ttu-id="b39b1-145">検出プロセスを使用して独自の削除オブジェクトまたはアーカイブ オブジェクトを作成し、適合しているテンプレートを使用できる場合は、プロセスそれらのオブジェクトをそのテンプレートと比較することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-145">We recommend that you use the discovery process to create your own Purge Objects or Archive Objects, and compare them with the templates, if a matching template is available.</span></span> <span data-ttu-id="b39b1-146">探索プロセスで作成したオブジェクトとテンプレートの違いを慎重に分析し、その違いの原因を特定します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-146">Carefully analyze any difference between the object you created through the discovery process and the template, to determine the cause of the difference.</span></span> <span data-ttu-id="b39b1-147">要件に合わせるために、削除オブジェクトとアーカイブ オブジェクトの関係およびルールを手動で追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-147">Manually add relations and rules to, or remove relations and rules from, the Purge Objects and Archive Objects to fit your requirements.</span></span>
--   <span data-ttu-id="b39b1-148">検出プロセスで関連するすべてのテーブルを取得できるように、TableGroup プロパティが Microsoft Dynamics AX ですべてのカスタム テーブルに対して設定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-148">Make sure that the TableGroup property is set for all custom tables in Microsoft Dynamics AX, so that the discovery process can retrieve all related tables.</span></span>
--   <span data-ttu-id="b39b1-149">アプリケーション オブジェクト ツリー (AOT) でのテーブルの追加、削除、更新や、IDMF を使った Microsoft Dynamics AX メタデータでのデータ ディクショナリ同期など、変更を同期します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-149">Synchronize changes, such as adding, deleting, or updating a table in the Application Object Tree (AOT), or the data dictionary synchronization in the Microsoft Dynamics AX metadata with IDMF.</span></span> <span data-ttu-id="b39b1-150">メタデータを同期するため、インストール後の作業を実行します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-150">Run the post-installation tasks to synchronize the metadata.</span></span> <span data-ttu-id="b39b1-151">詳細については、[データ管理フレームワークのインストール ガイド](http://www.microsoft.com/en-us/download/details.aspx?id=16111) の「インストール後の作業」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-151">For information, see the "Post-installation tasks" section in the [Data Management Framework Installation Guide](http://www.microsoft.com/en-us/download/details.aspx?id=16111).</span></span>
-
-| <span data-ttu-id="b39b1-152">**注意**</span><span class="sxs-lookup"><span data-stu-id="b39b1-152">**Caution**</span></span>                                                                                                                                          |
-|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b39b1-153">トランザクション タイプのテーブル グループを持つテーブルが、これらのテーブルからデータをパージできる場合にのみ、パージ オブジェクトの一部であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-153">Verify that any tables with a table group of type Transaction are part of the Purge Object only if it is acceptable to purge data from these tables.</span></span> |
-
-## <a name="create-a-new-purge-object"></a><span data-ttu-id="b39b1-154">新しい削除オブジェクトを作成します</span><span class="sxs-lookup"><span data-stu-id="b39b1-154">Create a new Purge Object</span></span>
-<span data-ttu-id="b39b1-155">削除オブジェクトを作成するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="b39b1-155">Follow these steps to create a new Purge Object:</span></span>
-1.  <span data-ttu-id="b39b1-156">ツールバーで、**削除オブジェクトの作成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-156">On the toolbar, click **Create Purge Object**.</span></span>
-2.  <span data-ttu-id="b39b1-157">**削除オブジェクトの作成**ダイアログ ボックスで、**ドライバー テーブル** リストからテーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-157">In the **Create Purge Object** dialog box, select a table from the **Driver table** list.</span></span> <span data-ttu-id="b39b1-158">このリストは例外リストのテーブルを除外します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-158">The list excludes tables from the exception list.</span></span> <span data-ttu-id="b39b1-159">**PurchParmTable** に移動して選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-159">Navigate to and select **PurchParmTable**.</span></span> <span data-ttu-id="b39b1-160">ドライバー テーブルは、特定の削除オブジェクトのリレーションシップ ツリーを定義する親テーブルです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-160">A driver table is the parent table that defines the relationship tree for a specific Purge Object.</span></span> <span data-ttu-id="b39b1-161">削除オブジェクトでは、ドライバー テーブルに子エンティティがある場合がありますが、リレーションシップ ツリーに親エンティティはありません。</span><span class="sxs-lookup"><span data-stu-id="b39b1-161">In a Purge Object, the driver table may have child entities, but it does not have a parent entity in the relationship tree.</span></span>
-3.  <span data-ttu-id="b39b1-162">続行するには、テーブルの最もユニークなインデックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-162">To continue, select the most unique index for the table.</span></span> <span data-ttu-id="b39b1-163">このインデックスは、削除オブジェクトに親子関係を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-163">This index is used to create the parent-child relationship in the Purge Object.</span></span> <span data-ttu-id="b39b1-164">**固有のキー** フィールドで、**ParmId** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-164">In the **Unique keys** field, select **ParmId**.</span></span> <span data-ttu-id="b39b1-165">**ParmTableRefIdx** インデックスは、**ParmID** および **TableRefID** フィールドを使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-165">The **ParmTableRefIdx** index is created using the **ParmID** and **TableRefID** fields.</span></span> <span data-ttu-id="b39b1-166">**ParmID** を選択して部分的なキーを選択していることに注意します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-166">Notice that by selecting **ParmID**, you are selecting a partial key.</span></span> <span data-ttu-id="b39b1-167">固有インデックスを使用すると、探索プロセスは、Finance などの同じ機能エリアに関連するテーブルを識別できます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-167">A unique index enables the discovery process to identify related tables in the same functional area, such as Finance.</span></span> <span data-ttu-id="b39b1-168">固有のインデックスを選択しない場合、検出プロセスですべての機能領域から関連テーブルが検索されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-168">If you do not select a unique index, the discovery process may find related tables from all functional areas.</span></span> <span data-ttu-id="b39b1-169">探索プロセスにより、Microsoft Dynamics AX 実装の正しい機能関係を識別できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-169">You must make sure that the discovery process identifies the correct functional relationships for your implementation of Microsoft Dynamics AX.</span></span>
-4.  <span data-ttu-id="b39b1-170">**検出**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-170">Click **Discover**.</span></span> <span data-ttu-id="b39b1-171">IDMF は、Microsoft Dynamics AX データベースからインポートされたメタデータと例外パラメーター リストを使用して、関係ツリーを生成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-171">IDMF uses metadata that is imported from the Microsoft Dynamics AX database, and the exception parameters list, to generate a relationship tree.</span></span> <span data-ttu-id="b39b1-172">リレーションシップ ツリーはドライバー テーブルで始まり、親子関係の階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-172">The relationship tree starts with the driver table and creates a hierarchy of parent-child relationships.</span></span> <span data-ttu-id="b39b1-173">削除オブジェクトが次の図のようになっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-173">Make sure that your Purge Object resembles the following graphic.</span></span>
-
-![IDMF 削除オブジェクト](./media/idmfpurgeobject.png) 
-
-<span data-ttu-id="b39b1-175">この削除オブジェクトのリレーションシップ ツリーは 3 階層の深さです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-175">The relationship tree in this Purge Object is three levels deep.</span></span> <span data-ttu-id="b39b1-176">最上位レベルのレベル 0 には、ドライバー テーブル PurchParmTable が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b39b1-176">Level 0, the topmost level, contains the driver table, PurchParmTable.</span></span> <span data-ttu-id="b39b1-177">レベル 1 には、ドライバー テーブルの子エンティティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b39b1-177">Level 1 contains the child entities of the driver table.</span></span> <span data-ttu-id="b39b1-178">レベル 2 の最後のレベルには、レベル 1 のテーブルの子エンティティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b39b1-178">The last level, level 2, contains the child entities of tables in level 1.</span></span> <span data-ttu-id="b39b1-179">この関係ツリーは、以下の情報に基づいて作成されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-179">This relationship tree is created based on the following information:</span></span>
--   <span data-ttu-id="b39b1-180">Microsoft Dynamics AX メタデータ。</span><span class="sxs-lookup"><span data-stu-id="b39b1-180">The Microsoft Dynamics AX metadata.</span></span> <span data-ttu-id="b39b1-181">検出プロセスは、メタデータを使用して、ドライバー テーブルに基づいて親子階層を形成する関連テーブルのリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-181">The discovery process uses the metadata to create a list of related tables that form the parent-child hierarchy based on the driver table.</span></span>
--   <span data-ttu-id="b39b1-182">例外パラメーター。</span><span class="sxs-lookup"><span data-stu-id="b39b1-182">The exception parameters.</span></span> <span data-ttu-id="b39b1-183">例外パラメーターの一覧に属しているテーブルは関係ツリーから除外されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-183">Tables that belong to the exception parameters list are filtered out from the relationship tree.</span></span> <span data-ttu-id="b39b1-184">**管理** メニューを使用して、例外パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-184">Use the **Administer** menu to configure the exception parameters.</span></span>
-
-<span data-ttu-id="b39b1-185">リレーションシップ ツリーを検証し、Microsoft Dynamics AX アプリケーション上でそのツリーの機能的効果を評価します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-185">Verify the relationship tree, and assess the functional effect of the tree on your Microsoft Dynamics AX application.</span></span> <span data-ttu-id="b39b1-186">評価の結果、一部の関係やルールを手動で追加または削除することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-186">As a result of your assessment, you may decide to manually add or remove some relations and rules.</span></span> <span data-ttu-id="b39b1-187">たとえば、**プロパティ**ウィンドウで**復元**をクリックすると、IDMF で出荷する既定のテンプレートから削除オブジェクトが復元されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-187">For example, when you click **Restore** in the **Properties** pane, the Purge Object is restored from the default template that ships with IDMF.</span></span> <span data-ttu-id="b39b1-188">この場合の復元されたリレーションシップ ツリーは、ディスカバリ テーブルとして **PurchParmTable** を使用して作成した削除オブジェクトとは異なります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-188">The restored relationship tree in this case differs from the Purge Object you created using **PurchParmTable** as the discovery table.</span></span> <span data-ttu-id="b39b1-189">これは、標準の Microsoft Dynamics AX アプリケーションの機能評価に基づいて、IDMF の既定のテンプレートが変更されるためです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-189">This is because the default template in IDMF is modified based on the functionality assessment of a standard Microsoft Dynamics AX application.</span></span> <span data-ttu-id="b39b1-190">検出テーブルにいずれかが存在する場合、検索で作成した削除オブジェクトは、IDMF に含まれている既定のテンプレートと一致しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-190">The Purge Object you create through discovery may not agree with the default template that is included with IDMF, if one exists for the discovery table.</span></span> <span data-ttu-id="b39b1-191">ドライバー テーブルの選択には注意が必要です。</span><span class="sxs-lookup"><span data-stu-id="b39b1-191">Be careful with your selection of the driver table.</span></span> <span data-ttu-id="b39b1-192">**ProdTable** テーブルなどのテーブルを選択すると、各レベルの多数のテーブルにまたがっている数多くのレベルの関係ツリーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-192">If you select a table such as the **ProdTable** table, the relationship tree can go many levels deep, spanning many tables on each level.</span></span> <span data-ttu-id="b39b1-193">そのような削除オブジェクトは、複雑な関係ツリーを作成し、エラーが発生する可能性を高くします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-193">Such a Purge Object creates a complex relationship tree and increases the potential for error.</span></span> <span data-ttu-id="b39b1-194">IDMF に含まれている既定のテンプレートは、Microsoft Dynamics AX 実装のメタデータと一致しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-194">The default template that is included with IDMF may not match the metadata of your Microsoft Dynamics AX implementation.</span></span> <span data-ttu-id="b39b1-195">生産データベースのメタデータに見つからない既定テンプレートのテーブルは、無効とマークされます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-195">A table in the default template that is not found in the metadata from the production database is marked invalid.</span></span> <span data-ttu-id="b39b1-196">無効なテーブルに破線の赤い点線の枠線が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-196">An invalid table appears with a dotted red border.</span></span> <span data-ttu-id="b39b1-197">削除オブジェクトからすべての無効なテーブルを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-197">You must remove all invalid tables from the Purge Object.</span></span> <span data-ttu-id="b39b1-198">有効なテーブルからリレーションおよびルールを作成するために使用するフィールドも検証されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-198">The fields that you use to create relations and rules from the valid tables are also validated.</span></span> <span data-ttu-id="b39b1-199">無効なコンフィギュレーション キーが設定されたフィールドは無効と見なされます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-199">A field with a disabled configuration key is considered invalid.</span></span> <span data-ttu-id="b39b1-200">無効なフィールドを持つ有効なテーブルは、図 2 に示すように、黄色の点線の枠線で表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-200">A valid table with invalid fields is shown with a yellow dotted border, as shown in Figure 2.</span></span> <span data-ttu-id="b39b1-201">無効フィールドで定義された削除オブジェクトのルールや関係を、すべて削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-201">You must remove any rules or relations in the Purge Object that are defined with the disabled fields.</span></span> <span data-ttu-id="b39b1-202">無効なテーブル、または無効なフィールドを含むテーブルを削除した後、オブジェクトの使用を続行することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-202">You can continue using the object after removing the invalid table or tables with invalid fields.</span></span> 
-
-![無効なテーブルを含む IDMF 削除オブジェクト](./media/idmfpurgeobjectwithinvalidtables.png)
-
-## <a name="navigation-of-the-create-purge-object-workspace"></a><span data-ttu-id="b39b1-204">削除オブジェクトの作成ワークスペースのナビゲーション</span><span class="sxs-lookup"><span data-stu-id="b39b1-204">Navigation of the Create Purge Object workspace</span></span>
-
-<span data-ttu-id="b39b1-205">次のテーブルで、このワークスペースのコントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-205">The following tables provide descriptions for the controls in this workspace.</span></span>
-### <a name="panes"></a><span data-ttu-id="b39b1-206">ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="b39b1-206">Panes</span></span>
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><span data-ttu-id="b39b1-207">ウィンドウ</span><span class="sxs-lookup"><span data-stu-id="b39b1-207">Pane</span></span></th>
-<th><span data-ttu-id="b39b1-208">説明</span><span class="sxs-lookup"><span data-stu-id="b39b1-208">Description</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span data-ttu-id="b39b1-209"><strong>リレーションシップ ツリー ウィンドウ</strong></span><span class="sxs-lookup"><span data-stu-id="b39b1-209"><strong>Relationship tree pane</strong></span></span></td>
-<td><span data-ttu-id="b39b1-210">削除オブジェクトにすべてのテーブルのグラフィック ビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-210">Provides a graphical view of all the tables in the Purge Object.</span></span> <span data-ttu-id="b39b1-211">次のリストでは、リレーションシップ ツリー ウィンドウを移動するために使用できるコントロールとコマンドについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-211">The following list describes the controls and command that you can use to navigate the relationship tree pane:</span></span>
-<ul>
-<li><span data-ttu-id="b39b1-212"><strong><span class="ui">レベル</span></strong> スライダーでは、レベルを選択して、選択したレベルおよび上位レベルにあるテーブルのみを表示することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-212">With the <strong><span class="ui">Level</span></strong> slider, you can select a level and show only the tables at the selected and higher levels.</span></span></li>
-<li><span data-ttu-id="b39b1-213"><strong><span class="ui">ズーム</span></strong> スライダーでは、図のサイズを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-213">With the <strong><span class="ui">Zoom</span></strong> slider, you can change the diagram size.</span></span></li>
-<li><span data-ttu-id="b39b1-214">ドライバー テーブルを右クリックし、無効なすべてのテーブルを、関連するすべてのテーブルとともに入れ子になった階層で削除するには、<strong><span class="ui">無効なテーブルをすべて削除する</span></strong> をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-214">Right-click the driver table, and then click <strong><span class="ui">Remove all invalid tables</span></strong> to remove all invalid tables, together with all related tables in the nested hierarchy.</span></span></li>
-<li><span data-ttu-id="b39b1-215">次のオプションを含むメニューを表示するテーブルを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-215">Right-click a table to display a menu with the following options:</span></span>
-<ul>
-<li><span data-ttu-id="b39b1-216">選択したテーブル、およびその関連テーブルを階層ツリーから削除するには、<strong><span class="ui">削除</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-216">Click <strong><span class="ui">Remove</span></strong> to remove the selected table and its related tables from the hierarchical tree.</span></span> <span data-ttu-id="b39b1-217">たとえば、<strong>SpecTrans</strong> テーブルはレベル 2 とレベル 3 で表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-217">For example, the <strong>SpecTrans</strong> table appears in level 2 and level 3.</span></span> <span data-ttu-id="b39b1-218">レベル 2 のテーブルを右クリックし、<strong><span class="ui">削除</span></strong>を選択すると、レベル 2 からテーブルが、入れ子になった子関係と共に削除されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-218">If you right-click the table in level 2, and then select <strong><span class="ui">Remove</span></strong>, the table is removed from level 2, together with its nested child relations.</span></span> <span data-ttu-id="b39b1-219">テーブルの発生はレベル 3 のままです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-219">The occurrence of the table remains intact in level 3.</span></span></li>
-<li><span data-ttu-id="b39b1-220"><strong><span class="ui">すべての発生を選択</span></strong>をクリックすると、選択したテーブルとその関連テーブルのすべての出来事が緑色の点線の枠内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-220">Click <strong><span class="ui">Select all occurrences</span></strong> to display all occurrences of the selected table and its related tables in a dotted green border.</span></span> <span data-ttu-id="b39b1-221">この場合、テーブル <strong>SpecTrans</strong> は入れ子になった子関係すべてと共にレベル 2 と 3 で選択されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-221">In this case, the table <strong>SpecTrans</strong> is selected in levels 2 and 3, together with all its nested child relations.</span></span></li>
-<li><span data-ttu-id="b39b1-222">選択したテーブル、およびその関連テーブルのすべての内容を削除するには、<strong><span class="ui">すべてを削除</span></strong>をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-222">Click <strong><span class="ui">Remove all occurrences</span></strong> to remove all occurrences of the selected table and its related tables.</span></span> <span data-ttu-id="b39b1-223">この場合、テーブル <strong>SpecTrans</strong> は入れ子になった子関係すべてと共にレベル 2 と 3 から削除されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-223">In this case, the table <strong>SpecTrans</strong> is removed from levels 2 and 3, together with all its nested child relations.</span></span> <span data-ttu-id="b39b1-224">削除されたテーブルが赤い実線の入った灰色の図形に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-224">The removed tables appear in a gray-colored shape with a solid red border.</span></span></li>
-</ul></li>
-<li><span data-ttu-id="b39b1-225">選択したテーブルの親子関係階層を再生成するには、<strong><span class="ui">検出</span></strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-225">Click <strong><span class="ui">Discover</span></strong> to regenerate the hierarchical parent-child relationship for the selected table.</span></span> <span data-ttu-id="b39b1-226">このコマンドは、<strong><span class="ui">WorkSheetHeader</span></strong> の <strong><span class="ui">TableGroup</span></strong> 値を持つテーブルを選択した場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-226">This command is available only when you select a table with a <strong><span class="ui">TableGroup</span></strong> value of <strong><span class="ui">WorkSheetHeader</span></strong>.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="b39b1-227"><strong><span class="ui">プロパティ</span></strong></span><span class="sxs-lookup"><span data-stu-id="b39b1-227"><strong><span class="ui">Properties</span></strong></span></span></td>
-<td><span data-ttu-id="b39b1-228">選択したテーブルのプロパティを表示し、選択したテーブルに使用できるコマンドを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-228">Shows properties for the selected table and provides commands that you can use for the selected table.</span></span> <span data-ttu-id="b39b1-229">削除オブジェクト内のテーブルに複数のリレーションが存在するときは、ツリー ビューの <span class="ui">Relations</span> ノードを使用して、このトピックで後で詳しく説明しているように、1 つまたは複数のリレーションを無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-229">When a table in the Purge Object contains multiple relations, you can use the <span class="ui">Relations</span> node in the tree view to disable one or more relations, as detailed later in this topic.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="b39b1-230"><strong><span class="ui">テーブルの削除</span></strong></span><span class="sxs-lookup"><span data-stu-id="b39b1-230"><strong><span class="ui">Remove table</span></strong></span></span></td>
-<td><span data-ttu-id="b39b1-231">関係ツリーから削除するテーブルを選択するために使用できるデータ グリッドを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-231">Provides a data grid that you can use to select tables for removal from the relationship tree.</span></span> <span data-ttu-id="b39b1-232">このペインには、データ グリッドをフィルタリングするために使用できる<span class="ui">高度なフィルタ</span>コントロールもあります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-232">This pane also provides an <span class="ui">Advanced filter</span> control that you can use to filter the data grid.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="b39b1-233"><strong><span class="ui">関連情報</span></strong></span><span class="sxs-lookup"><span data-stu-id="b39b1-233"><strong><span class="ui">Related information</span></strong></span></span></td>
-<td><span data-ttu-id="b39b1-234">一部のテーブルの追加情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-234">Provides additional information for some of the tables.</span></span> <span data-ttu-id="b39b1-235">関連する情報が指定された場合は、テーブルのリサイクルの妥当性を理解するために慎重に読んでください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-235">If related information is provided, read it carefully to understand the recycle relevance of the table.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-### 
-
-### <a name="buttons"></a><span data-ttu-id="b39b1-236">ボタン</span><span class="sxs-lookup"><span data-stu-id="b39b1-236">Buttons</span></span>
-
-| <span data-ttu-id="b39b1-237">ボタン</span><span class="sxs-lookup"><span data-stu-id="b39b1-237">Button</span></span>                     | <span data-ttu-id="b39b1-238">説明</span><span class="sxs-lookup"><span data-stu-id="b39b1-238">Description</span></span>                                                                                                                                                                                                                                                                                                 |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b39b1-239">**削除**</span><span class="sxs-lookup"><span data-stu-id="b39b1-239">**Remove**</span></span>                 | <span data-ttu-id="b39b1-240">[テーブルの削除] ウィンドウのデータ グリッドで選択されているテーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-240">Remove tables that are selected in the data grid in the Remove table pane.</span></span> <span data-ttu-id="b39b1-241">テーブルを削除すると、選択したテーブルのすべての子テーブルが削除されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-241">When you remove a table, all of the child tables for the selected table are removed.</span></span> <span data-ttu-id="b39b1-242">削除すると、リレーションシップ ツリー全体が削除され、選択したテーブルの子テーブルのすべてのネストされた親子リレーションが削除されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-242">The removal spans the whole relationship tree, and all nested parent-child relationships for the selected table's child tables are removed.</span></span> |
-| <span data-ttu-id="b39b1-243">**元に戻す**</span><span class="sxs-lookup"><span data-stu-id="b39b1-243">**Revert**</span></span>                 | <span data-ttu-id="b39b1-244">削除オブジェクトに行われた変更を前回の変更まで戻します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-244">Reverse the modifications made to the Purge Object, back to the last save.</span></span> <span data-ttu-id="b39b1-245">これは、「元に戻す」のようなものです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-245">This is like an "undo" command.</span></span>                                                                                                                                                                                                  |
-| <span data-ttu-id="b39b1-246">**すべて表示/選択されたものを表示**</span><span class="sxs-lookup"><span data-stu-id="b39b1-246">**Show all/Show selected**</span></span> | <span data-ttu-id="b39b1-247">すべてのテーブルまたは選択したテーブルを表示し、コマンド ボタンのラベルを切り替えます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-247">Show all tables or selected tables, and switch the label of the command button.</span></span> <span data-ttu-id="b39b1-248">削除されたテーブルが、周囲に赤い点線付きで表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-248">Removed tables appear with a dotted red line around them.</span></span>                                                                                                                                                                   |
-| <span data-ttu-id="b39b1-249">**復元**</span><span class="sxs-lookup"><span data-stu-id="b39b1-249">**Restore**</span></span>                | <span data-ttu-id="b39b1-250">作成時に使用した元のソースに削除オブジェクトを戻します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-250">Revert the Purge Object to the original source that you used to create it.</span></span> <span data-ttu-id="b39b1-251">削除テンプレートを使用していた場合、削除オブジェクトは IDMF に同梱されているテンプレートに戻ります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-251">If a purge template was used, the Purge Object reverts to the template that is shipped with IDMF.</span></span> <span data-ttu-id="b39b1-252">検出プロセスを使用していた場合、削除オブジェクトは、検出し保存した最初の削除オブジェクトに戻ります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-252">If the discovery process was used, the Purge Object reverts to the first Purge Object that you discovered and saved.</span></span>           |
-
-### 
-
-### <a name="fields-remove-table-pane"></a><span data-ttu-id="b39b1-253">フィールド (テーブルの削除ウィンドウ)</span><span class="sxs-lookup"><span data-stu-id="b39b1-253">Fields (Remove table pane)</span></span>
-
-| <span data-ttu-id="b39b1-254">フィールド</span><span class="sxs-lookup"><span data-stu-id="b39b1-254">Field</span></span>                 | <span data-ttu-id="b39b1-255">説明</span><span class="sxs-lookup"><span data-stu-id="b39b1-255">Description</span></span>                                                           |
-|-----------------------|-----------------------------------------------------------------------|
-| <span data-ttu-id="b39b1-256">**チェック ボックス**</span><span class="sxs-lookup"><span data-stu-id="b39b1-256">**Check boxes**</span></span>       | <span data-ttu-id="b39b1-257">関係ツリーから削除するテーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-257">Select the tables that you want to remove from the relationship tree.</span></span> |
-| <span data-ttu-id="b39b1-258">**テーブル名**</span><span class="sxs-lookup"><span data-stu-id="b39b1-258">**Table name**</span></span>        | <span data-ttu-id="b39b1-259">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="b39b1-259">The name of the table.</span></span>                                                |
-| <span data-ttu-id="b39b1-260">**コンフィギュレーション キー**</span><span class="sxs-lookup"><span data-stu-id="b39b1-260">**Configuration key**</span></span> | <span data-ttu-id="b39b1-261">このテーブルのコンフィギュレーション キー。</span><span class="sxs-lookup"><span data-stu-id="b39b1-261">The configuration key of the table.</span></span>                                   |
-| <span data-ttu-id="b39b1-262">**レベル**</span><span class="sxs-lookup"><span data-stu-id="b39b1-262">**Level**</span></span>             | <span data-ttu-id="b39b1-263">リレーションシップ ツリー内のテーブルのレベル。</span><span class="sxs-lookup"><span data-stu-id="b39b1-263">The level of the table in the relationship tree.</span></span>                      |
-| <span data-ttu-id="b39b1-264">**行数**</span><span class="sxs-lookup"><span data-stu-id="b39b1-264">**Row count**</span></span>         | <span data-ttu-id="b39b1-265">テーブルの行数。</span><span class="sxs-lookup"><span data-stu-id="b39b1-265">The number of rows in the table.</span></span>                                      |
-
-## <a name="walkthrough-create-a-purge-object"></a><span data-ttu-id="b39b1-266">チュートリアル: 削除オブジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="b39b1-266">Walkthrough: Create a Purge Object</span></span>
-<span data-ttu-id="b39b1-267">このセクションでは、削除オブジェクトの操作に関するチュートリアルを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-267">This section provides a walkthrough for working with a Purge Object.</span></span>
-1.  <span data-ttu-id="b39b1-268">削除オブジェクトをまだ作成していない場合は、作成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-268">If you have not created the Purge Object already, create one.</span></span>
-2.  <span data-ttu-id="b39b1-269">**ズーム** スライダーを使用して、テーブル名を簡単に読み取れるように図のサイズを変更します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-269">Use the **Zoom** slider to change the diagram size, so that you can read the table names easily.</span></span>
-3.  <span data-ttu-id="b39b1-270">リレーションシップ ツリーで、テーブル **PurchParmTable** にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-270">In the relationship tree, move the mouse pointer over the table **PurchParmTable** to see the information that is displayed in the tooltip.</span></span> <span data-ttu-id="b39b1-271">リレーションシップ ツリーで、**PurchParmLine** テーブルの上の **1:N 関係の説明**にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-271">In the relationship tree, move the mouse pointer over the **1:N relationship description** above the **PurchParmLine** table to see the information that is displayed in the tooltip.</span></span>
-4.  <span data-ttu-id="b39b1-272">**プロパティ** ウィンドウで、ツリー ビューの各ノードを展開して指定されている情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-272">In the **Properties** pane, expand each node in the tree view to see the information that is provided.</span></span>
-5.  <span data-ttu-id="b39b1-273">**高度なフィルター** コントロールでの選択基準が表示されない場合、**高度なフィルター**矢印をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-273">If the **Advanced filter** control does not show the selection criteria, click the **Advanced filter** arrow.</span></span> <span data-ttu-id="b39b1-274">レベル ボックスに 1 と入力してから、**検索** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-274">Type 1 in the level box, and then click **Search**.</span></span> <span data-ttu-id="b39b1-275">これにより、レベル 1 にあるテーブルのみが表示されるようにグリッドが変更されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-275">This changes the grid so that it shows only those tables that are in level 1.</span></span>
-6.  <span data-ttu-id="b39b1-276">横にあるチェック ボックスをオンにして **PurchParmLine** テーブルを選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-276">Select the **PurchParmLine** table by selecting the check box next to it.</span></span>
-7.  <span data-ttu-id="b39b1-277">**プロパティ** ウィンドウで**削除**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-277">In the **Properties** pane, click **Remove**.</span></span> <span data-ttu-id="b39b1-278">テーブル **PurchParmLine**、およびレベル 1 および 2 のすべての子テーブルが赤い枠線でマークされていることを確認します。これらのテーブルはリレーションシップ ツリーから削除されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-278">Notice that the table **PurchParmLine**, and all its child tables in levels 1 and 2, are marked with a red border, which indicates that these tables have been removed from the relationship tree.</span></span>
-8.  <span data-ttu-id="b39b1-279">**プロパティ** ウィンドウの**すべて表示**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-279">Click the **Show all** button in the **Properties** pane.</span></span> <span data-ttu-id="b39b1-280">図にはすべてのテーブルが表示され、削除されたテーブルは灰色の形で赤い線で表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-280">The diagram shows all the tables, with the removed tables in a gray-colored shape with solid red lines.</span></span>
-9.  <span data-ttu-id="b39b1-281">**元に戻す**をクリックし、元の削除オブジェクトを復元します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-281">Click **Revert** to restore the original Purge Object.</span></span> <span data-ttu-id="b39b1-282">この図は、手順 7で **PurchParmLine** を削除する前の状態に戻ります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-282">The diagram now reverts to the state it was in before you deleted **PurchParmLine** in step 7.</span></span>
-10. <span data-ttu-id="b39b1-283">手順 6、7、8 を繰り返して、もう一度テーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-283">Repeat steps 6, 7, and 8 to remove the tables again.</span></span> <span data-ttu-id="b39b1-284">赤い実線の入った灰色の図形に、削除されたすべてのテーブルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-284">You see all the removed tables in a gray-colored shape with solid red lines.</span></span>
-11. <span data-ttu-id="b39b1-285">**プロパティ** ウィンドウ内の**選択項目の表示**をクリックし、改訂された削除オブジェクトを表示します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-285">Click **Show selected** in the **Properties** pane to see the revised Purge Object.</span></span> <span data-ttu-id="b39b1-286">削除したテーブルが削除オブジェクトに存在しないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-286">Verify that the removed tables are not in the Purge Object.</span></span>
-12. <span data-ttu-id="b39b1-287">削除オブジェクトを保存します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-287">Save the Purge Object.</span></span> <span data-ttu-id="b39b1-288">ツール バーの **保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-288">On the toolbar, click **Save**.</span></span>
-13. <span data-ttu-id="b39b1-289">警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-289">A warning is displayed.</span></span> <span data-ttu-id="b39b1-290">警告を慎重に読みます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-290">Read the warning carefully.</span></span> <span data-ttu-id="b39b1-291">IDMF では、Microsoft Dynamics AX アプリケーション テーブル間の階層関係ツリーを定義する削除オブジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-291">IDMF lets you create a Purge Object that defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables.</span></span> <span data-ttu-id="b39b1-292">特定の条件に基づき選択したレコードにルールを適用することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-292">You can then apply rules to selected records based on specific criteria.</span></span> <span data-ttu-id="b39b1-293">選択基準に一致するレコードは、削除オブジェクト内の関係ツリー全体から削除されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-293">Records matching the selection criteria are deleted from the entire relationship tree in the Purge Object.</span></span> <span data-ttu-id="b39b1-294">IDMF を不適切に使用すると、予期しない結果、データベース破損、データベース全体およびアプリケーションの復旧が必要となるアプリケーション ダウンタイムが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-294">Improper use of IDMF can cause unexpected results, database corruption, and application downtime requiring full database and application recovery.</span></span> <span data-ttu-id="b39b1-295">実稼働環境で作業する前に、十分に注意を払い、テスト環境でリサイクル戦略を入念にテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-295">Exercise extreme caution, and thoroughly test your recycling strategy in a test environment before working in the production environment.</span></span> <span data-ttu-id="b39b1-296">削除オブジェクトの保存を続ける場合は**はい**を 、保存操作をキャンセルする場合は**いいえ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-296">Click **Yes** to continue saving the Purge Object or **No** to cancel the save operation.</span></span> <span data-ttu-id="b39b1-297">チュートリアルを続行するには、**はい**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-297">Click **Yes** to continue with the walkthrough.</span></span>
-14. <span data-ttu-id="b39b1-298">**名前を付けて保存**ダイアログ ボックスで、名前が **PurchParmTable** であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-298">In the\*\* Save as\*\* dialog box, verify that the name is **PurchParmTable**.</span></span> <span data-ttu-id="b39b1-299">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-299">Click **Save**.</span></span>
-15. <span data-ttu-id="b39b1-300">**削除オブジェクトの上書き**ダイアログ ボックスで、**はい**をクリックして新しいバージョンで削除オブジェクトを上書きします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-300">In the **Overwrite Purge Object** dialog box, click **Yes** to overwrite the Purge Object with the new version.</span></span> <span data-ttu-id="b39b1-301">**保存状態**ダイアログ ボックスで **OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-301">In the **Save status** dialog box, click **OK** to continue.</span></span>
-16. <span data-ttu-id="b39b1-302">ツールバーで、**削除テンプレート/削除オブジェクト**をクリックし、**PurchParmTable** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-302">On the toolbar, click **Purge template/Purge Objects**, and then click **PurchParmTable**.</span></span> <span data-ttu-id="b39b1-303">削除オブジェクトのアイコンが変更されたことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-303">Notice that the icon of the Purge Object has changed.</span></span> <span data-ttu-id="b39b1-304">このアイコンの変更により、削除オブジェクトと削除テンプレートが区別されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-304">This change in the icon differentiates a Purge Object from a purge template.</span></span>
-17. <span data-ttu-id="b39b1-305">削除オブジェクト図に手順 10 で削除したテーブルが含まれていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-305">Verify that the Purge Object diagram does not contain the tables you removed in step 10.</span></span> <span data-ttu-id="b39b1-306">**すべての表示/選択項目の表示** を切り替えて、削除したテーブルが赤い境界線に引き続き表示されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-306">Switch between **Show all/Show selected** to confirm that the removed tables still show up in the red border.</span></span>
-18. <span data-ttu-id="b39b1-307">**プロパティ** ウィンドウで**元に戻す**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-307">In the **Properties** pane, click **Revert**.</span></span> <span data-ttu-id="b39b1-308">削除オブジェクトは変化しません。</span><span class="sxs-lookup"><span data-stu-id="b39b1-308">The Purge Object does not change.</span></span> <span data-ttu-id="b39b1-309">削除オブジェクトが保存されているため、元に戻す操作で変更を元に戻すことはできません。</span><span class="sxs-lookup"><span data-stu-id="b39b1-309">The revert action cannot undo the changes, because the Purge Object has been saved.</span></span>
-19. <span data-ttu-id="b39b1-310">**プロパティ** ウィンドウで、**復元**をクリックして削除オブジェクトを元に戻します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-310">In the **Properties** pane, click **Restore** to revert the Purge Object.</span></span> <span data-ttu-id="b39b1-311">削除オブジェクトは、いずれかが存在する場合、IDMF に含まれる削除テンプレートに戻ります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-311">The Purge Object reverts to the purge template that is included in IDMF, if one exists.</span></span> <span data-ttu-id="b39b1-312">既定の削除テンプレートがない場合は、削除オブジェクトは検索プロセスで作成した最初のバージョンに戻ります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-312">If there is no default purge template, the Purge Object reverts to the first version you created through the discovery process.</span></span> <span data-ttu-id="b39b1-313">復元された削除オブジェクトは、手順 1 で作業を開始した削除オブジェクトと同じか、異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-313">The restored Purge Object may be the same as, or different from, the Purge Object you started working with in step 1.</span></span> <span data-ttu-id="b39b1-314">既定の削除テンプレートには、Microsoft Dynamics AX アプリケーションの機能評価に基づいて変更または調整されたリレーションシップ ツリーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b39b1-314">The default purge template contains a modified or adjusted relationship tree based on the functional assessment of the Microsoft Dynamics AX application.</span></span>
-20. <span data-ttu-id="b39b1-315">ツール バーの **保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-315">On the toolbar, click **Save**.</span></span> <span data-ttu-id="b39b1-316">オブジェクトを上書きするには、**はい**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-316">Click **Yes** to overwrite the object.</span></span> <span data-ttu-id="b39b1-317">**保存状態**ダイアログ ボックスで **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-317">In the **Save status** dialog box, click **OK**.</span></span> <span data-ttu-id="b39b1-318">次のセクションでも使用するため、削除オブジェクトを開いたままにします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-318">Keep the Purge Object open, because it is also used in the next section.</span></span>
-
-## <a name="walkthrough-disable-a-relation"></a><span data-ttu-id="b39b1-319">チュートリアル: リレーションの無効化</span><span class="sxs-lookup"><span data-stu-id="b39b1-319">Walkthrough: Disable a relation</span></span>
-<span data-ttu-id="b39b1-320">このセクションでは、複数の関係を持つテーブル内の関係を無効にするためのチュートリアルを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-320">This section provides a walkthrough for disabling relations in a table with multiple relationships.</span></span>
-1.  <span data-ttu-id="b39b1-321">**コンフィギュレーション** メニューをクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-321">Click the **Configure** menu.</span></span> <span data-ttu-id="b39b1-322">ツールバーで、**削除テンプレート/削除オブジェクト**をクリックし、リストから **InventJournalTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-322">On the toolbar, click **Purge template/Purge Objects**, and then select **InventJournalTable** from the list.</span></span>
-2.  <span data-ttu-id="b39b1-323">リレーションシップ ツリーで、**InventJournalTrans** テーブルの上の **1:N 関係の説明**にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-323">In the relationship tree, move the mouse pointer over the **1:N relationship description** above the **InventJournalTrans** table to see the information displayed in the tooltip.</span></span> <span data-ttu-id="b39b1-324">このテーブルに関係が 1 つだけあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-324">Notice that this table has only one relation.</span></span>
-3.  <span data-ttu-id="b39b1-325">リレーションシップ ツリーで、**WMSJournalTable** テーブルの上の **1:N 関係の説明**にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-325">In the relationship tree, move the mouse pointer over the **1:N relationship description** above the **WMSJournalTable** table to see the information displayed in the tooltip.</span></span> <span data-ttu-id="b39b1-326">このテーブルに多くの関係があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-326">Notice that this table has many relations.</span></span>
-4.  <span data-ttu-id="b39b1-327">リレーションシップ ツリーで、**WMSJournalTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-327">In the relationship tree, select **WMSJournalTable**.</span></span>
-5.  <span data-ttu-id="b39b1-328">**プロパティ** ウィンドウで **WMSJournalTable**&gt; **関係**と展開します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-328">In the **Properties** pane, expand **WMSJournalTable** &gt; **Relations**.</span></span> <span data-ttu-id="b39b1-329">このテーブルには多くのリレーションが含まれていて、**プロパティ** ウィンドウを使用して、1 つまたは複数のリレーションを無効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-329">This table has many relations, and you can use the **Properties** pane to disable one or more relations.</span></span> <span data-ttu-id="b39b1-330">**InventBOM** 関係を右クリックして **関係の無効化** メニューを開きます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-330">Right-click the **InventBOM** relation to open the **Disable relation** menu.</span></span> <span data-ttu-id="b39b1-331">**関係の無効化** メニューは、テーブルが複数の関係を持つ場合にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-331">The **Disable relation** menu appears only when a table has multiple relations.</span></span>
-6.  <span data-ttu-id="b39b1-332">**関係**ノードで、**InventCount** を右クリックして**関係の無効化**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-332">In the **Relations** node, right-click **InventCount**, and select **Disable relation**.</span></span> <span data-ttu-id="b39b1-333">無効な関係が赤色で表示されていることに注意します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-333">Notice that the disabled relation appears in red.</span></span> <span data-ttu-id="b39b1-334">**InventCount** を右クリックし、**関係の有効化** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-334">Right-click **InventCount**, and select **Enable relation**.</span></span> <span data-ttu-id="b39b1-335">有効な関係が黒色で表示されていることに注意します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-335">Notice that the enabled relation appears in black.</span></span> <span data-ttu-id="b39b1-336">除外された関係は削除オブジェクトの一部にはなりません。</span><span class="sxs-lookup"><span data-stu-id="b39b1-336">An excluded relation does not become part of the Purge Object.</span></span> <span data-ttu-id="b39b1-337">複数の有効な関係が削除オブジェクトが生成する SQL ステートメントで「or」句を形成します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-337">Multiple enabled relations form the "or" clause in the SQL statement that the Purge Object generates.</span></span>
-7.  <span data-ttu-id="b39b1-338">削除テンプレートを保存しないでください。</span><span class="sxs-lookup"><span data-stu-id="b39b1-338">Do not save the purge template.</span></span>
-
-    | <span data-ttu-id="b39b1-339">**注意**</span><span class="sxs-lookup"><span data-stu-id="b39b1-339">**Caution**</span></span>                                                                                                            |
-    |------------------------------------------------------------------------------------------------------------------------|
-    | <span data-ttu-id="b39b1-340">除外された関係を徹底的にテストし、慎重に行います。</span><span class="sxs-lookup"><span data-stu-id="b39b1-340">Exercise care, and thoroughly test the excluded relations.</span></span> <span data-ttu-id="b39b1-341">誤ったまたは間違った除外はデータの破損を引き起こします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-341">An erroneous or incorrect exclusion causes data corruption.</span></span> |
-
-## <a name="purge-templatepurge-objects"></a><span data-ttu-id="b39b1-342">テンプレートの削除/オブジェクトの削除</span><span class="sxs-lookup"><span data-stu-id="b39b1-342">Purge template/Purge Objects</span></span>
-<span data-ttu-id="b39b1-343">このコマンドは、システム内の削除テンプレートと削除オブジェクトのリストを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-343">This command provides a list of purge templates and Purge Objects in your system.</span></span> <span data-ttu-id="b39b1-344">削除テンプレートは、事前定義されたリレーションシップ ツリーで IDMF に含まれているテンプレートです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-344">A purge template is a template that is included with IDMF with a predefined relationship tree.</span></span> <span data-ttu-id="b39b1-345">出発点として削除テンプレートを使用し、削除オブジェクトを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-345">You can use a purge template as a starting point to create a Purge Object.</span></span> <span data-ttu-id="b39b1-346">削除タスクの使用前に、要件を満たしているかどうか確認するために削除テンプレートを確認して保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b39b1-346">You must review a purge template to make sure that it meets your requirements, and save it before you can use it in a purge task.</span></span>
-### <a name="walkthrough-work-with-a-purge-template"></a><span data-ttu-id="b39b1-347">チュートリアル: 削除テンプレートの操作</span><span class="sxs-lookup"><span data-stu-id="b39b1-347">Walkthrough: Work with a purge template</span></span>
-
-<span data-ttu-id="b39b1-348">このセクションでは、削除テンプレートの操作に関するチュートリアルを提供します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-348">This section provides a walkthrough for working with a purge template.</span></span>
-1.  <span data-ttu-id="b39b1-349">ツールバーで、**削除テンプレート/削除オブジェクト**をクリックし、リストから **InventJournalTable** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-349">On the toolbar, click **Purge template/Purge Objects**, and then select **PurchReqTable** from the list.</span></span>
-2.  <span data-ttu-id="b39b1-350">テーブル、テーブルのプロパティ、関係ツリーを確認し、**PurchReqTable** での削除アクションが削除テンプレートの関係ツリーを通じてカスケードする方法を理解します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-350">Review the tables, table properties, and relationship tree to understand how the delete action on the **PurchReqTable** cascades through the relationship tree in the purge template.</span></span> <span data-ttu-id="b39b1-351">このリレーションシップ ツリーに、アプリケーションと、Microsoft Dynamics AX アプリケーションに対して行ったすべてのカスタマイズが含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-351">Make sure that this relationship tree covers your application and any customizations you may have made to the Microsoft Dynamics AX application.</span></span>
-3.  <span data-ttu-id="b39b1-352">ツール バーの **保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-352">On the toolbar, click **Save**.</span></span> <span data-ttu-id="b39b1-353">同じ名前を保持するか、名前を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="b39b1-353">You can either keep the same name or change the name.</span></span> <span data-ttu-id="b39b1-354">名前を PurchReqTable\_ オブジェクトに変更し、この保存されたオブジェクトを削除オブジェクトとして識別します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-354">Change the name to PurchReqTable\_object to identify this saved object as a Purge Object.</span></span> <span data-ttu-id="b39b1-355">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-355">Click **Save**.</span></span>
-4.  <span data-ttu-id="b39b1-356">続行するにはダイアログ ボックスで **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-356">Click **OK** in the dialog box to continue.</span></span>
-5.  <span data-ttu-id="b39b1-357">ツールバーで、**削除テンプレート/削除オブジェクト**をクリックし、**PurchReqTable** と **PurchReqTable \_オブジェクト**のアイコンを比較します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-357">On the toolbar, click **Purge template/Purge Objects**, and compare the icons of **PurchReqTable** and **PurchReqTable\_object**.</span></span>
-6.  <span data-ttu-id="b39b1-358">手順 1 ～ 3 を繰り返しますが、オブジェクトを元の名前 **PurchReqTable** で保存します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-358">Repeat steps 1 through 3, but save the object as **PurchReqTable**, the original name.</span></span>
-7.  <span data-ttu-id="b39b1-359">**削除オブジェクトの上書き**ダイアログ ボックスで、**はい**をクリックして新しいバージョンでオブジェクトを上書きします。</span><span class="sxs-lookup"><span data-stu-id="b39b1-359">In the **Overwrite Purge Object** dialog box, click **Yes** to overwrite the object with the new version.</span></span> <span data-ttu-id="b39b1-360">**OK** をクリックして続行します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-360">Click **OK** to continue.</span></span>
-8.  <span data-ttu-id="b39b1-361">ステップ 5 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-361">Repeat step 5.</span></span> <span data-ttu-id="b39b1-362">削除オブジェクトと保存された削除テンプレートのアイコンが同じであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b39b1-362">Notice that the icons of a Purge Object and a saved purge template are same.</span></span> <span data-ttu-id="b39b1-363">これは、削除テンプレートを保存すると削除オブジェクトになるためです。</span><span class="sxs-lookup"><span data-stu-id="b39b1-363">This is because when you save a purge template, it becomes a Purge Object.</span></span>
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="create-purge-objects.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>create-purge-objects.d7ce61.bbf251403e2928302688d4a3d525d22f0c958642.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>bbf251403e2928302688d4a3d525d22f0c958642</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\lifecycle-services\ax-2012\create-purge-objects.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Create purge objects for the Intelligent Data Management Framework</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intelligent Data Management Framework の削除オブジェクトの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about how to create IDMF purge objects that define hierarchical relationship trees among application tables in Microsoft Dynamics AX.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics AX のアプリケーション テーブル間で階層関係ツリーを定義する IDMF パージ オブジェクトを作成する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Create purge objects for the Intelligent Data Management Framework</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intelligent Data Management Framework の削除オブジェクトの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Considerations for Purge Objects, driver tables, relations, and rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクト、ドライバー テーブル、関係、およびルールに関する注意事項</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Before you use Purge Objects, you must have experience in the maintenance and administration of the Microsoft Dynamics AX application and database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記<ept id="p1">**</ept>: 削除オブジェクトを使用する前に、Microsoft Dynamics AX アプリケーションとデータベースのメンテナンスと管理に精通している必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>IDMF lets you create a Purge Object that defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF では、Microsoft Dynamics AX アプリケーション テーブル間の階層関係ツリーを定義する削除オブジェクトを作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>You can then apply rules to selected records based on specific criteria.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定の条件に基づき選択したレコードにルールを適用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Records matching the selection criteria are deleted from the whole relationship tree in the Purge Object when a purge task runs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択基準に一致するレコードは、削除タスクが実行されたときに削除オブジェクト内の関係ツリー全体から削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Improper use of this framework can cause unexpected results, database corruption, and application downtime requiring full database and application recovery.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフレームワークを不適切に使用すると、予期しない結果、データベース破損、データベース全体およびアプリケーションの復旧が必要となるアプリケーション ダウンタイムが発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Exercise extreme caution, and thoroughly test your recycling strategy in a test environment before working in the production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境で作業する前に、十分に注意を払い、テスト環境でリサイクル戦略を入念にテストする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Consider the following points when working with a Purge Object:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトで作業する場合は、次の点を考慮してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Tables that store transient or intermediate data are usually good candidates for a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一時的または中間的なデータを格納するテーブルは通常、削除オブジェクトの主な候補です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>You must validate the data dependency and application functionality before creating a Purge Object with such tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">こうしたテーブルで削除オブジェクトを作成する前に、データの依存関係とアプリケーションの機能を検証する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Verify that the table you select as the driver table for a Purge Object is a header table, such as <bpt id="p1">**</bpt>SalesParmTable<ept id="p1">**</ept> or <bpt id="p2">**</bpt>SalesQuotationTable<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトのドライバー テーブルとして選択したテーブルが、<bpt id="p1">**</bpt>SalesParmTable<ept id="p1">**</ept> または <bpt id="p2">**</bpt>SalesQuotationTable<ept id="p2">**</ept> などのヘッダー テーブルであることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>A good indication, although not always accurate, is that the <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> value for such a table is <bpt id="p2">**</bpt>WorkSheetHeader<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Miscellaneous<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Transaction<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必ずしもいつも正確ではありませんが、そのようなテーブルの <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> の値は、<bpt id="p2">**</bpt>WorkSheetHeader<ept id="p2">**</ept>、<bpt id="p3">**</bpt>Miscellaneous<ept id="p3">**</ept>、または <bpt id="p4">**</bpt>Transaction<ept id="p4">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Tables with a <bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> value of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Parameter<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Group<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>WorkSheetLine<ept id="p5">**</ept> cannot be driver tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TableGroup<ept id="p1">**</ept> 値が <bpt id="p2">**</bpt>Main<ept id="p2">**</ept>、<bpt id="p3">**</bpt>Parameter<ept id="p3">**</ept>、<bpt id="p4">**</bpt>Group<ept id="p4">**</ept>、<bpt id="p5">**</bpt>WorkSheetLine<ept id="p5">**</ept> のテーブルをドライバー テーブルにすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>The driver table becomes the root parent in the hierarchical relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドライバー テーブルは、階層リレーションシップ ツリーのルート親になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>IDMF queries the <bpt id="p1">**</bpt>XRefTableRelation<ept id="p1">**</ept> table to determine the parent-child relationships.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF は <bpt id="p1">**</bpt>XRefTableRelation<ept id="p1">**</ept> テーブルを照会して、親子関係を判別します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Removing records from a Purge Object may cause data inconsistency in your application in these conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトからレコードを削除すると、次の条件では、アプリケーションでデータの不整合が発生する場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The driver table has known parent tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドライバー テーブルには既知の親テーブルがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The driver table has known child tables that are not added to the Purge Table as a relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドライバー テーブルには、削除テーブルにリレーションとして追加されていない既知の子テーブルがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Always minimize the Purge Object, and keep only the necessary relations and rules for your implementations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">常に削除オブジェクトを最小化し、実装に必要なルールおよび関係のみを保持します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Consider removing a table from the Purge Object in these conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の条件の 削除オブジェクトからテーブルを削除することを検討してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The table does not contain any data, and it is not likely to contain data in the future.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルにはデータが含まれておらず、将来もデータが含まれない可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>The table stores only transient data, such as <bpt id="p1">**</bpt>CustTransOpen<ept id="p1">**</ept> or <bpt id="p2">**</bpt>SpecTrans<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルには、<bpt id="p1">**</bpt>CustTransOpen<ept id="p1">**</ept> や <bpt id="p2">**</bpt>SpecTrans<ept id="p2">**</ept> などの一時データのみが格納されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>The table stores open transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルには未処理のトランザクションが格納されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>The table creates nested relationships.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルはネストされたリレーションシップを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>If a table appears multiple times on different levels in the relationship tree, with the same qualifying relationship condition or set of primary keys, consider keeping the occurrence only in the lowest-numbered level in the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルが、同じ特定関係条件のもとまたは主キーのセットで、関係ツリー上の異なるレベルで複数回表示される場合、関係ツリーの最も低い番号のレベルでのみ表示されるように検討します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>There may be multiple relationships between two tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 つのテーブル間に複数のリレーションシップが存在することがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>In that case, evaluate the relationships and functionality carefully.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その場合、リレーションシップと機能を慎重に評価します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>We recommend that you use only a single relationship in the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトでは単一のリレーションシップのみを使用することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>However, you can use multiple relationships if necessary.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、必要に応じて、複数のリレーションシップを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Be sure to select a valid relationship using a unique index or primary key, if one exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効なリレーションシップが存在する場合は固有インデックスまたは主キーを使用して、有効なリレーションシップを選択してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>A table is unrelated to the driver table and makes its own Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルは、ドライバー テーブルとは無関係で、独自の削除オブジェクトを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>For example, if you use <bpt id="p1">**</bpt>ProdTable<ept id="p1">**</ept> as a driver table, it also discovers <bpt id="p2">**</bpt>ProdJournalTable<ept id="p2">**</ept>, which itself is a separate Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>ProdTable<ept id="p1">**</ept> をドライバー テーブルとして使用する場合、<bpt id="p2">**</bpt>ProdJournalTable<ept id="p2">**</ept> が検出され、それ自体は別の削除オブジェクトです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Another example is PurchReqTable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">もう 1 つの例は PurchReqTable です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>If you use <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> as a driver table, it discovers <bpt id="p2">**</bpt>PurchParmLine<ept id="p2">**</ept>, which itself is a part of the <bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> をドライバー テーブルとして使用する場合、<bpt id="p3">**</bpt>PurchParmTable<ept id="p3">**</ept> 削除オブジェクトの一部として、<bpt id="p2">**</bpt>PurchParmLine<ept id="p2">**</ept> が検出されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Verify that the relationship tree that you have created in the Purge Object actually purges the intended data from your system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトに作成したリレーションシップ ツリーがシステムから目的のデータを実際に削除していることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>A Purge Object that you create must look at all related records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成された削除オブジェクトは、関連するすべてのレコードを参照する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Missing relationships lead to orphaned data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">不足している関係は、データの孤立を引き起こします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Thoroughly test the effect of the purge on your database and application in a test environment that resembles your production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境テスト環境でのデータベースとアプリケーションには、削除の影響を十分にテストします。運用環境に似たテスト環境でデータベースとアプリケーションに対するパージの影響を完全にテストします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Test all business processes, and obtain user sign-off before trying to implement the Purge Object in the production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての業務プロセスをテストし、実稼働環境に削除オブジェクトを実装する前にユーザーの承認を得ます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>When you create a Purge Object from a purge template that is included with IDMF, validate and thoroughly test the Purge Object in a test environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF に含まれている削除テンプレートから削除オブジェクトを作成するときは、テスト環境で、削除オブジェクトを検証して徹底的にテストします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>These templates are created in a standard Microsoft Dynamics AX application and may not match your implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのテンプレートは標準の Microsoft Dynamics AX アプリケーションで作成され、実装と一致しない場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>We recommend that you use the discovery process to create your own Purge Objects or Archive Objects, and compare them with the templates, if a matching template is available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検出プロセスを使用して独自の削除オブジェクトまたはアーカイブ オブジェクトを作成し、適合しているテンプレートを使用できる場合は、プロセスそれらのオブジェクトをそのテンプレートと比較することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Carefully analyze any difference between the object you created through the discovery process and the template, to determine the cause of the difference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">探索プロセスで作成したオブジェクトとテンプレートの違いを慎重に分析し、その違いの原因を特定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Manually add relations and rules to, or remove relations and rules from, the Purge Objects and Archive Objects to fit your requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要件に合わせるために、削除オブジェクトとアーカイブ オブジェクトの関係およびルールを手動で追加または削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Make sure that the TableGroup property is set for all custom tables in Microsoft Dynamics AX, so that the discovery process can retrieve all related tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検出プロセスで関連するすべてのテーブルを取得できるように、TableGroup プロパティが Microsoft Dynamics AX ですべてのカスタム テーブルに対して設定されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Synchronize changes, such as adding, deleting, or updating a table in the Application Object Tree (AOT), or the data dictionary synchronization in the Microsoft Dynamics AX metadata with IDMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクト ツリー (AOT) でのテーブルの追加、削除、更新や、IDMF を使った Microsoft Dynamics AX メタデータでのデータ ディクショナリ同期など、変更を同期します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Run the post-installation tasks to synchronize the metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータを同期するため、インストール後の作業を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>For information, see the "Post-installation tasks" section in the <bpt id="p1">[</bpt>Data Management Framework Installation Guide<ept id="p1">](http://www.microsoft.com/en-us/download/details.aspx?id=16111)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>データ管理フレームワークのインストール ガイド<ept id="p1">](http://www.microsoft.com/en-us/download/details.aspx?id=16111)</ept> の「インストール後の作業」セクションを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注意<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Verify that any tables with a table group of type Transaction are part of the Purge Object only if it is acceptable to purge data from these tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクション タイプのテーブル グループを持つテーブルが、これらのテーブルからデータをパージできる場合にのみ、パージ オブジェクトの一部であることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Create a new Purge Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい削除オブジェクトを作成します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Follow these steps to create a new Purge Object:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトを作成するには、これらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Create Purge Object<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>削除オブジェクトの作成<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>In the <bpt id="p1">**</bpt>Create Purge Object<ept id="p1">**</ept> dialog box, select a table from the <bpt id="p2">**</bpt>Driver table<ept id="p2">**</ept> list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除オブジェクトの作成<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>ドライバー テーブル<ept id="p2">**</ept> リストからテーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The list excludes tables from the exception list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリストは例外リストのテーブルを除外します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Navigate to and select <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> に移動して選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>A driver table is the parent table that defines the relationship tree for a specific Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドライバー テーブルは、特定の削除オブジェクトのリレーションシップ ツリーを定義する親テーブルです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>In a Purge Object, the driver table may have child entities, but it does not have a parent entity in the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトでは、ドライバー テーブルに子エンティティがある場合がありますが、リレーションシップ ツリーに親エンティティはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>To continue, select the most unique index for the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">続行するには、テーブルの最もユニークなインデックスを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>This index is used to create the parent-child relationship in the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このインデックスは、削除オブジェクトに親子関係を作成するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>In the <bpt id="p1">**</bpt>Unique keys<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>ParmId<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>固有のキー<ept id="p1">**</ept> フィールドで、<bpt id="p2">**</bpt>ParmId<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>The <bpt id="p1">**</bpt>ParmTableRefIdx<ept id="p1">**</ept> index is created using the <bpt id="p2">**</bpt>ParmID<ept id="p2">**</ept> and <bpt id="p3">**</bpt>TableRefID<ept id="p3">**</ept> fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ParmTableRefIdx<ept id="p1">**</ept> インデックスは、<bpt id="p2">**</bpt>ParmID<ept id="p2">**</ept> および <bpt id="p3">**</bpt>TableRefID<ept id="p3">**</ept> フィールドを使用して作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Notice that by selecting <bpt id="p1">**</bpt>ParmID<ept id="p1">**</ept>, you are selecting a partial key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ParmID<ept id="p1">**</ept> を選択して部分的なキーを選択していることに注意します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>A unique index enables the discovery process to identify related tables in the same functional area, such as Finance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">固有インデックスを使用すると、探索プロセスは、Finance などの同じ機能エリアに関連するテーブルを識別できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>If you do not select a unique index, the discovery process may find related tables from all functional areas.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">固有のインデックスを選択しない場合、検出プロセスですべての機能領域から関連テーブルが検索されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>You must make sure that the discovery process identifies the correct functional relationships for your implementation of Microsoft Dynamics AX.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">探索プロセスにより、Microsoft Dynamics AX 実装の正しい機能関係を識別できるようにする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click <bpt id="p1">**</bpt>Discover<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>検出<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>IDMF uses metadata that is imported from the Microsoft Dynamics AX database, and the exception parameters list, to generate a relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF は、Microsoft Dynamics AX データベースからインポートされたメタデータと例外パラメーター リストを使用して、関係ツリーを生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>The relationship tree starts with the driver table and creates a hierarchy of parent-child relationships.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーはドライバー テーブルで始まり、親子関係の階層を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Make sure that your Purge Object resembles the following graphic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトが次の図のようになっていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>IDMF Purge object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF 削除オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>The relationship tree in this Purge Object is three levels deep.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この削除オブジェクトのリレーションシップ ツリーは 3 階層の深さです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Level 0, the topmost level, contains the driver table, PurchParmTable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最上位レベルのレベル 0 には、ドライバー テーブル PurchParmTable が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Level 1 contains the child entities of the driver table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レベル 1 には、ドライバー テーブルの子エンティティが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>The last level, level 2, contains the child entities of tables in level 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レベル 2 の最後のレベルには、レベル 1 のテーブルの子エンティティが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>This relationship tree is created based on the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関係ツリーは、以下の情報に基づいて作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>The Microsoft Dynamics AX metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX メタデータ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>The discovery process uses the metadata to create a list of related tables that form the parent-child hierarchy based on the driver table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検出プロセスは、メタデータを使用して、ドライバー テーブルに基づいて親子階層を形成する関連テーブルのリストを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>The exception parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例外パラメーター。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Tables that belong to the exception parameters list are filtered out from the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例外パラメーターの一覧に属しているテーブルは関係ツリーから除外されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Use the <bpt id="p1">**</bpt>Administer<ept id="p1">**</ept> menu to configure the exception parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>管理<ept id="p1">**</ept> メニューを使用して、例外パラメーターを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Verify the relationship tree, and assess the functional effect of the tree on your Microsoft Dynamics AX application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーを検証し、Microsoft Dynamics AX アプリケーション上でそのツリーの機能的効果を評価します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>As a result of your assessment, you may decide to manually add or remove some relations and rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">評価の結果、一部の関係やルールを手動で追加または削除することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>For example, when you click <bpt id="p1">**</bpt>Restore<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, the Purge Object is restored from the default template that ships with IDMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept>ウィンドウで<bpt id="p1">**</bpt>復元<ept id="p1">**</ept>をクリックすると、IDMF で出荷する既定のテンプレートから削除オブジェクトが復元されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>The restored relationship tree in this case differs from the Purge Object you created using <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> as the discovery table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合の復元されたリレーションシップ ツリーは、ディスカバリ テーブルとして <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> を使用して作成した削除オブジェクトとは異なります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>This is because the default template in IDMF is modified based on the functionality assessment of a standard Microsoft Dynamics AX application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、標準の Microsoft Dynamics AX アプリケーションの機能評価に基づいて、IDMF の既定のテンプレートが変更されるためです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>The Purge Object you create through discovery may not agree with the default template that is included with IDMF, if one exists for the discovery table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検出テーブルにいずれかが存在する場合、検索で作成した削除オブジェクトは、IDMF に含まれている既定のテンプレートと一致しない場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Be careful with your selection of the driver table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドライバー テーブルの選択には注意が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>If you select a table such as the <bpt id="p1">**</bpt>ProdTable<ept id="p1">**</ept> table, the relationship tree can go many levels deep, spanning many tables on each level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ProdTable<ept id="p1">**</ept> テーブルなどのテーブルを選択すると、各レベルの多数のテーブルにまたがっている数多くのレベルの関係ツリーが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Such a Purge Object creates a complex relationship tree and increases the potential for error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのような削除オブジェクトは、複雑な関係ツリーを作成し、エラーが発生する可能性を高くします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>The default template that is included with IDMF may not match the metadata of your Microsoft Dynamics AX implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF に含まれている既定のテンプレートは、Microsoft Dynamics AX 実装のメタデータと一致しない場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>A table in the default template that is not found in the metadata from the production database is marked invalid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生産データベースのメタデータに見つからない既定テンプレートのテーブルは、無効とマークされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>An invalid table appears with a dotted red border.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効なテーブルに破線の赤い点線の枠線が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>You must remove all invalid tables from the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトからすべての無効なテーブルを削除する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>The fields that you use to create relations and rules from the valid tables are also validated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効なテーブルからリレーションおよびルールを作成するために使用するフィールドも検証されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>A field with a disabled configuration key is considered invalid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効なコンフィギュレーション キーが設定されたフィールドは無効と見なされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>A valid table with invalid fields is shown with a yellow dotted border, as shown in Figure 2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効なフィールドを持つ有効なテーブルは、図 2 に示すように、黄色の点線の枠線で表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>You must remove any rules or relations in the Purge Object that are defined with the disabled fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効フィールドで定義された削除オブジェクトのルールや関係を、すべて削除する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>You can continue using the object after removing the invalid table or tables with invalid fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効なテーブル、または無効なフィールドを含むテーブルを削除した後、オブジェクトの使用を続行することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>IDMF Purge Object with Invalid Tables</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効なテーブルを含む IDMF 削除オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Navigation of the Create Purge Object workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトの作成ワークスペースのナビゲーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>The following tables provide descriptions for the controls in this workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルで、このワークスペースのコントロールについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Panes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Pane</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィンドウ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Relationship tree pane<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>リレーションシップ ツリー ウィンドウ<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Provides a graphical view of all the tables in the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトにすべてのテーブルのグラフィック ビューを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>The following list describes the controls and command that you can use to navigate the relationship tree pane:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のリストでは、リレーションシップ ツリー ウィンドウを移動するために使用できるコントロールとコマンドについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>With the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Level<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> slider, you can select a level and show only the tables at the selected and higher levels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>レベル<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> スライダーでは、レベルを選択して、選択したレベルおよび上位レベルにあるテーブルのみを表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>With the <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Zoom<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> slider, you can change the diagram size.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>ズーム<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> スライダーでは、図のサイズを変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Right-click the driver table, and then click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove all invalid tables<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to remove all invalid tables, together with all related tables in the nested hierarchy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドライバー テーブルを右クリックし、無効なすべてのテーブルを、関連するすべてのテーブルとともに入れ子になった階層で削除するには、<bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>無効なテーブルをすべて削除する<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Right-click a table to display a menu with the following options:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のオプションを含むメニューを表示するテーブルを右クリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to remove the selected table and its related tables from the hierarchical tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したテーブル、およびその関連テーブルを階層ツリーから削除するには、<bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>削除<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>For example, the <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> table appears in level 2 and level 3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> テーブルはレベル 2 とレベル 3 で表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>If you right-click the table in level 2, and then select <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>, the table is removed from level 2, together with its nested child relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レベル 2 のテーブルを右クリックし、<bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>削除<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>を選択すると、レベル 2 からテーブルが、入れ子になった子関係と共に削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>The occurrence of the table remains intact in level 3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルの発生はレベル 3 のままです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Select all occurrences<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to display all occurrences of the selected table and its related tables in a dotted green border.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>すべての発生を選択<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックすると、選択したテーブルとその関連テーブルのすべての出来事が緑色の点線の枠内に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>In this case, the table <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> is selected in levels 2 and 3, together with all its nested child relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、テーブル <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> は入れ子になった子関係すべてと共にレベル 2 と 3 で選択されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove all occurrences<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to remove all occurrences of the selected table and its related tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したテーブル、およびその関連テーブルのすべての内容を削除するには、<bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>すべてを削除<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>In this case, the table <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> is removed from levels 2 and 3, together with all its nested child relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、テーブル <bpt id="p1">&lt;strong&gt;</bpt>SpecTrans<ept id="p1">&lt;/strong&gt;</ept> は入れ子になった子関係すべてと共にレベル 2 と 3 から削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>The removed tables appear in a gray-colored shape with a solid red border.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除されたテーブルが赤い実線の入った灰色の図形に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Click <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Discover<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> to regenerate the hierarchical parent-child relationship for the selected table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したテーブルの親子関係階層を再生成するには、<bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>検出<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>This command is available only when you select a table with a <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>TableGroup<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> value of <bpt id="p3">&lt;strong&gt;</bpt><bpt id="p4">&lt;span class="ui"&gt;</bpt>WorkSheetHeader<ept id="p4">&lt;/span&gt;</ept><ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドは、<bpt id="p3">&lt;strong&gt;</bpt><bpt id="p4">&lt;span class="ui"&gt;</bpt>WorkSheetHeader<ept id="p4">&lt;/span&gt;</ept><ept id="p3">&lt;/strong&gt;</ept> の <bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>TableGroup<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept> 値を持つテーブルを選択した場合にのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Properties<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>プロパティ<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Shows properties for the selected table and provides commands that you can use for the selected table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択したテーブルのプロパティを表示し、選択したテーブルに使用できるコマンドを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>When a table in the Purge Object contains multiple relations, you can use the <bpt id="p1">&lt;span class="ui"&gt;</bpt>Relations<ept id="p1">&lt;/span&gt;</ept> node in the tree view to disable one or more relations, as detailed later in this topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクト内のテーブルに複数のリレーションが存在するときは、ツリー ビューの <bpt id="p1">&lt;span class="ui"&gt;</bpt>Relations<ept id="p1">&lt;/span&gt;</ept> ノードを使用して、このトピックで後で詳しく説明しているように、1 つまたは複数のリレーションを無効にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Remove table<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>テーブルの削除<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Provides a data grid that you can use to select tables for removal from the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係ツリーから削除するテーブルを選択するために使用できるデータ グリッドを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>This pane also provides an <bpt id="p1">&lt;span class="ui"&gt;</bpt>Advanced filter<ept id="p1">&lt;/span&gt;</ept> control that you can use to filter the data grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このペインには、データ グリッドをフィルタリングするために使用できる<bpt id="p1">&lt;span class="ui"&gt;</bpt>高度なフィルタ<ept id="p1">&lt;/span&gt;</ept>コントロールもあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>Related information<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt><bpt id="p2">&lt;span class="ui"&gt;</bpt>関連情報<ept id="p2">&lt;/span&gt;</ept><ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Provides additional information for some of the tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部のテーブルの追加情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>If related information is provided, read it carefully to understand the recycle relevance of the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連する情報が指定された場合は、テーブルのリサイクルの妥当性を理解するために慎重に読んでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source><bpt id="p1">**</bpt>Remove<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Remove tables that are selected in the data grid in the Remove table pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[テーブルの削除] ウィンドウのデータ グリッドで選択されているテーブルを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>When you remove a table, all of the child tables for the selected table are removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルを削除すると、選択したテーブルのすべての子テーブルが削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>The removal spans the whole relationship tree, and all nested parent-child relationships for the selected table's child tables are removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除すると、リレーションシップ ツリー全体が削除され、選択したテーブルの子テーブルのすべてのネストされた親子リレーションが削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">**</bpt>Revert<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>元に戻す<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Reverse the modifications made to the Purge Object, back to the last save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトに行われた変更を前回の変更まで戻します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>This is like an "undo" command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、「元に戻す」のようなものです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source><bpt id="p1">**</bpt>Show all/Show selected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>すべて表示/選択されたものを表示<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Show all tables or selected tables, and switch the label of the command button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのテーブルまたは選択したテーブルを表示し、コマンド ボタンのラベルを切り替えます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Removed tables appear with a dotted red line around them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除されたテーブルが、周囲に赤い点線付きで表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source><bpt id="p1">**</bpt>Restore<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>復元<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Revert the Purge Object to the original source that you used to create it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成時に使用した元のソースに削除オブジェクトを戻します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>If a purge template was used, the Purge Object reverts to the template that is shipped with IDMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除テンプレートを使用していた場合、削除オブジェクトは IDMF に同梱されているテンプレートに戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>If the discovery process was used, the Purge Object reverts to the first Purge Object that you discovered and saved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検出プロセスを使用していた場合、削除オブジェクトは、検出し保存した最初の削除オブジェクトに戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Fields (Remove table pane)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド (テーブルの削除ウィンドウ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source><bpt id="p1">**</bpt>Check boxes<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>チェック ボックス<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Select the tables that you want to remove from the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係ツリーから削除するテーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source><bpt id="p1">**</bpt>Table name<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>The name of the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source><bpt id="p1">**</bpt>Configuration key<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コンフィギュレーション キー<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>The configuration key of the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルのコンフィギュレーション キー。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source><bpt id="p1">**</bpt>Level<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>レベル<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>The level of the table in the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリー内のテーブルのレベル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source><bpt id="p1">**</bpt>Row count<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>行数<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>The number of rows in the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルの行数。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Walkthrough: Create a Purge Object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: 削除オブジェクトの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>This section provides a walkthrough for working with a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、削除オブジェクトの操作に関するチュートリアルを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>If you have not created the Purge Object already, create one.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトをまだ作成していない場合は、作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Use the <bpt id="p1">**</bpt>Zoom<ept id="p1">**</ept> slider to change the diagram size, so that you can read the table names easily.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ズーム<ept id="p1">**</ept> スライダーを使用して、テーブル名を簡単に読み取れるように図のサイズを変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>In the relationship tree, move the mouse pointer over the table <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> to see the information that is displayed in the tooltip.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーで、テーブル <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>In the relationship tree, move the mouse pointer over the <bpt id="p1">**</bpt>1:N relationship description<ept id="p1">**</ept> above the <bpt id="p2">**</bpt>PurchParmLine<ept id="p2">**</ept> table to see the information that is displayed in the tooltip.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーで、<bpt id="p2">**</bpt>PurchParmLine<ept id="p2">**</ept> テーブルの上の <bpt id="p1">**</bpt>1:N 関係の説明<ept id="p1">**</ept>にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, expand each node in the tree view to see the information that is provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで、ツリー ビューの各ノードを展開して指定されている情報を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>If the <bpt id="p1">**</bpt>Advanced filter<ept id="p1">**</ept> control does not show the selection criteria, click the <bpt id="p2">**</bpt>Advanced filter<ept id="p2">**</ept> arrow.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>高度なフィルター<ept id="p1">**</ept> コントロールでの選択基準が表示されない場合、<bpt id="p2">**</bpt>高度なフィルター<ept id="p2">**</ept>矢印をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Type 1 in the level box, and then click <bpt id="p1">**</bpt>Search<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レベル ボックスに 1 と入力してから、<bpt id="p1">**</bpt>検索<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>This changes the grid so that it shows only those tables that are in level 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、レベル 1 にあるテーブルのみが表示されるようにグリッドが変更されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Select the <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept> table by selecting the check box next to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">横にあるチェック ボックスをオンにして <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept> テーブルを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Remove<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで<bpt id="p2">**</bpt>削除<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Notice that the table <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept>, and all its child tables in levels 1 and 2, are marked with a red border, which indicates that these tables have been removed from the relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept>、およびレベル 1 および 2 のすべての子テーブルが赤い枠線でマークされていることを確認します。これらのテーブルはリレーションシップ ツリーから削除されたことを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Click the <bpt id="p1">**</bpt>Show all<ept id="p1">**</ept> button in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウの<bpt id="p1">**</bpt>すべて表示<ept id="p1">**</ept>ボタンをクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>The diagram shows all the tables, with the removed tables in a gray-colored shape with solid red lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">図にはすべてのテーブルが表示され、削除されたテーブルは灰色の形で赤い線で表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Click <bpt id="p1">**</bpt>Revert<ept id="p1">**</ept> to restore the original Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>元に戻す<ept id="p1">**</ept>をクリックし、元の削除オブジェクトを復元します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>The diagram now reverts to the state it was in before you deleted <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept> in step 7.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この図は、手順 7で <bpt id="p1">**</bpt>PurchParmLine<ept id="p1">**</ept> を削除する前の状態に戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Repeat steps 6, 7, and 8 to remove the tables again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順 6、7、8 を繰り返して、もう一度テーブルを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>You see all the removed tables in a gray-colored shape with solid red lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">赤い実線の入った灰色の図形に、削除されたすべてのテーブルが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Click <bpt id="p1">**</bpt>Show selected<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane to see the revised Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウ内の<bpt id="p1">**</bpt>選択項目の表示<ept id="p1">**</ept>をクリックし、改訂された削除オブジェクトを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Verify that the removed tables are not in the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除したテーブルが削除オブジェクトに存在しないことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Save the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトを保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーの <bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>A warning is displayed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">警告が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Read the warning carefully.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">警告を慎重に読みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>IDMF lets you create a Purge Object that defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF では、Microsoft Dynamics AX アプリケーション テーブル間の階層関係ツリーを定義する削除オブジェクトを作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>You can then apply rules to selected records based on specific criteria.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定の条件に基づき選択したレコードにルールを適用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Records matching the selection criteria are deleted from the entire relationship tree in the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択基準に一致するレコードは、削除オブジェクト内の関係ツリー全体から削除されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Improper use of IDMF can cause unexpected results, database corruption, and application downtime requiring full database and application recovery.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDMF を不適切に使用すると、予期しない結果、データベース破損、データベース全体およびアプリケーションの復旧が必要となるアプリケーション ダウンタイムが発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Exercise extreme caution, and thoroughly test your recycling strategy in a test environment before working in the production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境で作業する前に、十分に注意を払い、テスト環境でリサイクル戦略を入念にテストする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to continue saving the Purge Object or <bpt id="p2">**</bpt>No<ept id="p2">**</ept> to cancel the save operation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトの保存を続ける場合は<bpt id="p1">**</bpt>はい<ept id="p1">**</ept>を 、保存操作をキャンセルする場合は<bpt id="p2">**</bpt>いいえ<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to continue with the walkthrough.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアルを続行するには、<bpt id="p1">**</bpt>はい<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>In the** Save as** dialog box, verify that the name is <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">**名前を付けて保存**ダイアログ ボックスで、名前が <bpt id="p1">**</bpt>PurchParmTable<ept id="p1">**</ept> であることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>In the <bpt id="p1">**</bpt>Overwrite Purge Object<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to overwrite the Purge Object with the new version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除オブジェクトの上書き<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>はい<ept id="p2">**</ept>をクリックして新しいバージョンで削除オブジェクトを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>In the <bpt id="p1">**</bpt>Save status<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存状態<ept id="p1">**</ept>ダイアログ ボックスで <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>PurchParmTable<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>削除テンプレート/削除オブジェクト<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>PurchParmTable<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Notice that the icon of the Purge Object has changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトのアイコンが変更されたことに注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>This change in the icon differentiates a Purge Object from a purge template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアイコンの変更により、削除オブジェクトと削除テンプレートが区別されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Verify that the Purge Object diagram does not contain the tables you removed in step 10.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクト図に手順 10 で削除したテーブルが含まれていないことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Switch between <bpt id="p1">**</bpt>Show all/Show selected<ept id="p1">**</ept> to confirm that the removed tables still show up in the red border.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>すべての表示/選択項目の表示<ept id="p1">**</ept> を切り替えて、削除したテーブルが赤い境界線に引き続き表示されることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Revert<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで<bpt id="p2">**</bpt>元に戻す<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>The Purge Object does not change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトは変化しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>The revert action cannot undo the changes, because the Purge Object has been saved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトが保存されているため、元に戻す操作で変更を元に戻すことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, click <bpt id="p2">**</bpt>Restore<ept id="p2">**</ept> to revert the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで、<bpt id="p2">**</bpt>復元<ept id="p2">**</ept>をクリックして削除オブジェクトを元に戻します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>The Purge Object reverts to the purge template that is included in IDMF, if one exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトは、いずれかが存在する場合、IDMF に含まれる削除テンプレートに戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>If there is no default purge template, the Purge Object reverts to the first version you created through the discovery process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の削除テンプレートがない場合は、削除オブジェクトは検索プロセスで作成した最初のバージョンに戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>The restored Purge Object may be the same as, or different from, the Purge Object you started working with in step 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">復元された削除オブジェクトは、手順 1 で作業を開始した削除オブジェクトと同じか、異なる場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>The default purge template contains a modified or adjusted relationship tree based on the functional assessment of the Microsoft Dynamics AX application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の削除テンプレートには、Microsoft Dynamics AX アプリケーションの機能評価に基づいて変更または調整されたリレーションシップ ツリーが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーの <bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to overwrite the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを上書きするには、<bpt id="p1">**</bpt>はい<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>In the <bpt id="p1">**</bpt>Save status<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存状態<ept id="p1">**</ept>ダイアログ ボックスで <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Keep the Purge Object open, because it is also used in the next section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のセクションでも使用するため、削除オブジェクトを開いたままにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Walkthrough: Disable a relation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: リレーションの無効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>This section provides a walkthrough for disabling relations in a table with multiple relationships.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、複数の関係を持つテーブル内の関係を無効にするためのチュートリアルを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Click the <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コンフィギュレーション<ept id="p1">**</ept> メニューをクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>InventJournalTable<ept id="p2">**</ept> from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>削除テンプレート/削除オブジェクト<ept id="p1">**</ept>をクリックし、リストから <bpt id="p2">**</bpt>InventJournalTable<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>In the relationship tree, move the mouse pointer over the <bpt id="p1">**</bpt>1:N relationship description<ept id="p1">**</ept> above the <bpt id="p2">**</bpt>InventJournalTrans<ept id="p2">**</ept> table to see the information displayed in the tooltip.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーで、<bpt id="p2">**</bpt>InventJournalTrans<ept id="p2">**</ept> テーブルの上の <bpt id="p1">**</bpt>1:N 関係の説明<ept id="p1">**</ept>にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Notice that this table has only one relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルに関係が 1 つだけあることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>In the relationship tree, move the mouse pointer over the <bpt id="p1">**</bpt>1:N relationship description<ept id="p1">**</ept> above the <bpt id="p2">**</bpt>WMSJournalTable<ept id="p2">**</ept> table to see the information displayed in the tooltip.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーで、<bpt id="p2">**</bpt>WMSJournalTable<ept id="p2">**</ept> テーブルの上の <bpt id="p1">**</bpt>1:N 関係の説明<ept id="p1">**</ept>にマウス ポインターを移動し、ツール ヒントに表示される情報を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Notice that this table has many relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルに多くの関係があることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>In the relationship tree, select <bpt id="p1">**</bpt>WMSJournalTable<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リレーションシップ ツリーで、<bpt id="p1">**</bpt>WMSJournalTable<ept id="p1">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, expand <bpt id="p2">**</bpt>WMSJournalTable<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Relations<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで <bpt id="p2">**</bpt>WMSJournalTable<ept id="p2">**</ept><ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>関係<ept id="p3">**</ept>と展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>This table has many relations, and you can use the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane to disable one or more relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーブルには多くのリレーションが含まれていて、<bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウを使用して、1 つまたは複数のリレーションを無効にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Right-click the <bpt id="p1">**</bpt>InventBOM<ept id="p1">**</ept> relation to open the <bpt id="p2">**</bpt>Disable relation<ept id="p2">**</ept> menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>InventBOM<ept id="p1">**</ept> 関係を右クリックして <bpt id="p2">**</bpt>関係の無効化<ept id="p2">**</ept> メニューを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>The <bpt id="p1">**</bpt>Disable relation<ept id="p1">**</ept> menu appears only when a table has multiple relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係の無効化<ept id="p1">**</ept> メニューは、テーブルが複数の関係を持つ場合にのみ表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>In the <bpt id="p1">**</bpt>Relations<ept id="p1">**</ept> node, right-click <bpt id="p2">**</bpt>InventCount<ept id="p2">**</ept>, and select <bpt id="p3">**</bpt>Disable relation<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>関係<ept id="p1">**</ept>ノードで、<bpt id="p2">**</bpt>InventCount<ept id="p2">**</ept> を右クリックして<bpt id="p3">**</bpt>関係の無効化<ept id="p3">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Notice that the disabled relation appears in red.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無効な関係が赤色で表示されていることに注意します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Right-click <bpt id="p1">**</bpt>InventCount<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Enable relation<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>InventCount<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>関係の有効化<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Notice that the enabled relation appears in black.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効な関係が黒色で表示されていることに注意します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>An excluded relation does not become part of the Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">除外された関係は削除オブジェクトの一部にはなりません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Multiple enabled relations form the "or" clause in the SQL statement that the Purge Object generates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の有効な関係が削除オブジェクトが生成する SQL ステートメントで「or」句を形成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Do not save the purge template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除テンプレートを保存しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source><bpt id="p1">**</bpt>Caution<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注意<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Exercise care, and thoroughly test the excluded relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">除外された関係を徹底的にテストし、慎重に行います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>An erroneous or incorrect exclusion causes data corruption.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">誤ったまたは間違った除外はデータの破損を引き起こします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Purge template/Purge Objects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートの削除/オブジェクトの削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>This command provides a list of purge templates and Purge Objects in your system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドは、システム内の削除テンプレートと削除オブジェクトのリストを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>A purge template is a template that is included with IDMF with a predefined relationship tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除テンプレートは、事前定義されたリレーションシップ ツリーで IDMF に含まれているテンプレートです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>You can use a purge template as a starting point to create a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出発点として削除テンプレートを使用し、削除オブジェクトを作成することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>You must review a purge template to make sure that it meets your requirements, and save it before you can use it in a purge task.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除タスクの使用前に、要件を満たしているかどうか確認するために削除テンプレートを確認して保存する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Walkthrough: Work with a purge template</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル: 削除テンプレートの操作</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>This section provides a walkthrough for working with a purge template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、削除テンプレートの操作に関するチュートリアルを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>PurchReqTable<ept id="p2">**</ept> from the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>削除テンプレート/削除オブジェクト<ept id="p1">**</ept>をクリックし、リストから <bpt id="p2">**</bpt>InventJournalTable<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Review the tables, table properties, and relationship tree to understand how the delete action on the <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> cascades through the relationship tree in the purge template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル、テーブルのプロパティ、関係ツリーを確認し、<bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> での削除アクションが削除テンプレートの関係ツリーを通じてカスケードする方法を理解します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Make sure that this relationship tree covers your application and any customizations you may have made to the Microsoft Dynamics AX application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリレーションシップ ツリーに、アプリケーションと、Microsoft Dynamics AX アプリケーションに対して行ったすべてのカスタマイズが含まれていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツール バーの <bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>You can either keep the same name or change the name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同じ名前を保持するか、名前を変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Change the name to PurchReqTable<ph id="ph1">\_</ph>object to identify this saved object as a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前を PurchReqTable<ph id="ph1">\_</ph> オブジェクトに変更し、この保存されたオブジェクトを削除オブジェクトとして識別します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> in the dialog box to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">続行するにはダイアログ ボックスで <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Purge template/Purge Objects<ept id="p1">**</ept>, and compare the icons of <bpt id="p2">**</bpt>PurchReqTable<ept id="p2">**</ept> and <bpt id="p3">**</bpt>PurchReqTable<ph id="ph1">\_</ph>object<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーで、<bpt id="p1">**</bpt>削除テンプレート/削除オブジェクト<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>PurchReqTable<ept id="p2">**</ept> と <bpt id="p3">**</bpt>PurchReqTable <ph id="ph1">\_</ph>オブジェクト<ept id="p3">**</ept>のアイコンを比較します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Repeat steps 1 through 3, but save the object as <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept>, the original name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手順 1 ～ 3 を繰り返しますが、オブジェクトを元の名前 <bpt id="p1">**</bpt>PurchReqTable<ept id="p1">**</ept> で保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>In the <bpt id="p1">**</bpt>Overwrite Purge Object<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to overwrite the object with the new version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>削除オブジェクトの上書き<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>はい<ept id="p2">**</ept>をクリックして新しいバージョンでオブジェクトを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックして続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Repeat step 5.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステップ 5 を繰り返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>Notice that the icons of a Purge Object and a saved purge template are same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">削除オブジェクトと保存された削除テンプレートのアイコンが同じであることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>This is because when you save a purge template, it becomes a Purge Object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、削除テンプレートを保存すると削除オブジェクトになるためです。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

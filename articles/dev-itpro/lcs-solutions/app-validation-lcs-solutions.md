@@ -1,101 +1,366 @@
----
-title: Finance and Operations 用のアプリケーションを検証する
-description: このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。
-author: kfend
-manager: AnnBe
-ms.date: 04/13/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: Lifecycle Services
-ms.custom: 196913
-ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
-ms.search.region: Global
-ms.author: omarc
-ms.openlocfilehash: 58d74f9ce7ac404320cfb27c21d60cbea6d5a0a6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537385"
----
-# <a name="validate-applications-for-finance-and-operations"></a><span data-ttu-id="4bcbb-103">Finance and Operations 用のアプリケーションを検証する</span><span class="sxs-lookup"><span data-stu-id="4bcbb-103">Validate applications for Finance and Operations</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="4bcbb-104">このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-104">This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Microsoft Dynamics 365 for Finance and Operations environment.</span></span>
-
-<span data-ttu-id="4bcbb-105">Microsoft は、次の要件を検証するために特定のレビューを必要とします。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-105">Microsoft requires specific reviews in order to validate the following requirements:</span></span>
-
--   <span data-ttu-id="4bcbb-106">パートナーのカスタム コードは、Microsoft のガイドラインを満たしています。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-106">A partner's custom code meets Microsoft guidelines.</span></span>
--   <span data-ttu-id="4bcbb-107">Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージを正常にバンドルおよび配送することができます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-107">A Microsoft Dynamics Lifecycle Services (LCS) solution package can be successfully bundled and delivered.</span></span>
--   <span data-ttu-id="4bcbb-108">主要な独立系ソフトウェア ベンダー (ISV) のビジネス シナリオを処理することができます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-108">Core independent software vendor (ISV) business scenarios can be transacted.</span></span>
-
-<span data-ttu-id="4bcbb-109">現在、パートナーは、テストの展開を行い、結果を Microsoft と共有することによって、これらの要件が満たされていることを実証する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-109">Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft.</span></span> <span data-ttu-id="4bcbb-110">Microsoft が検証していない顧客環境では、コードは配置されません。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-110">No code will be deployed on a customer environment that Microsoft hasn't validated.</span></span> <span data-ttu-id="4bcbb-111">パートナーは、次のキュレーション コンポーネントおよびテストを行ってください。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-111">Partners must complete the following curation artifacts and tests:</span></span>
-
--   <span data-ttu-id="4bcbb-112">コード分析レポート (CAR)</span><span class="sxs-lookup"><span data-stu-id="4bcbb-112">Code analysis report (CAR)</span></span>
--   <span data-ttu-id="4bcbb-113">ビジネス プロセス モデラー (BPM)/テスト スクリプト</span><span class="sxs-lookup"><span data-stu-id="4bcbb-113">Business process modeler (BPM)/test scripts</span></span>
--   <span data-ttu-id="4bcbb-114">ビジネス データベースのバックアップ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-114">Business database backup</span></span>
--   <span data-ttu-id="4bcbb-115">プロジェクトの名前と説明</span><span class="sxs-lookup"><span data-stu-id="4bcbb-115">Project name and description</span></span>
--   <span data-ttu-id="4bcbb-116">データ パッケージ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-116">Data packages</span></span> 
--   <span data-ttu-id="4bcbb-117">方法</span><span class="sxs-lookup"><span data-stu-id="4bcbb-117">Methodology</span></span> 
--   <span data-ttu-id="4bcbb-118">バイナリ (オプション)</span><span class="sxs-lookup"><span data-stu-id="4bcbb-118">Binaries (optional)</span></span>
--   <span data-ttu-id="4bcbb-119">配置可能パッケージ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-119">Deployable packages</span></span>
--   <span data-ttu-id="4bcbb-120">モデル (コードとテスト)</span><span class="sxs-lookup"><span data-stu-id="4bcbb-120">Models (code and tests)</span></span>
--   <span data-ttu-id="4bcbb-121">マーケティング コンテンツ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-121">Marketing content</span></span>
-
-## <a name="curation-meeting"></a><span data-ttu-id="4bcbb-122">キュレーション会議</span><span class="sxs-lookup"><span data-stu-id="4bcbb-122">Curation meeting</span></span>
-
-<span data-ttu-id="4bcbb-123">次のテーブルに、検証会議の前に完了する必要がある手順を示します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-123">The following table describes the steps that must be completed before the validation meeting.</span></span>
-
-| <span data-ttu-id="4bcbb-124">フェーズ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-124">Phase</span></span> | <span data-ttu-id="4bcbb-125">ステップ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-125">Step</span></span> | <span data-ttu-id="4bcbb-126">活動</span><span class="sxs-lookup"><span data-stu-id="4bcbb-126">Activity</span></span>                               | <span data-ttu-id="4bcbb-127">プロセスの手順</span><span class="sxs-lookup"><span data-stu-id="4bcbb-127">Process steps</span></span>                                                                                                                                        | <span data-ttu-id="4bcbb-128">成功基準</span><span class="sxs-lookup"><span data-stu-id="4bcbb-128">Success criteria</span></span>                                                                                                                                                                                                                                                                                                                        |
-|-------|------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4bcbb-129">1</span><span class="sxs-lookup"><span data-stu-id="4bcbb-129">1</span></span>     | <span data-ttu-id="4bcbb-130">1</span><span class="sxs-lookup"><span data-stu-id="4bcbb-130">1</span></span>    | <span data-ttu-id="4bcbb-131">コードを検証します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-131">Validate code.</span></span>                          | <span data-ttu-id="4bcbb-132">CAR ツールを使用してすべての顧客モデル ファイルを実行した後、レポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-132">Run all customer model files by using the CAR tool, and then generate the report.</span></span>                                                                   | <span data-ttu-id="4bcbb-133">ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-133">Successfully create a CAR without any localization, accessibility, performance, or security issues.</span></span>                                                                                                                                                                                                                                     |
-| <span data-ttu-id="4bcbb-134">1</span><span class="sxs-lookup"><span data-stu-id="4bcbb-134">1</span></span>     | <span data-ttu-id="4bcbb-135">2</span><span class="sxs-lookup"><span data-stu-id="4bcbb-135">2</span></span>    | <span data-ttu-id="4bcbb-136">ユーザー エクスペリエンス (UX) のガイドラインを確認します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-136">Verify user experience (UX) guidelines.</span></span> | <span data-ttu-id="4bcbb-137">ワークスペースを正しく実装する UX ガイドラインに従います。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-137">Follow UX guidelines to implement the workspace correctly.</span></span>                                                                                          | <span data-ttu-id="4bcbb-138">LCS の移行および作成手法に関するページにあるベスト プラクティス情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-138">Reference best practice information in the Migrate and Create methodology section of LCS.</span></span>                                                                                                                                                                                                                                               |
-| <span data-ttu-id="4bcbb-139">2</span><span class="sxs-lookup"><span data-stu-id="4bcbb-139">2</span></span>     | <span data-ttu-id="4bcbb-140">3</span><span class="sxs-lookup"><span data-stu-id="4bcbb-140">3</span></span>    | <span data-ttu-id="4bcbb-141">LCS でソリューション パッケージを検証します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-141">Validate the solution package in LCS.</span></span>   | <span data-ttu-id="4bcbb-142">必要なすべてのコンポーネントを含む LCS で、ソリューション パッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-142">Create a solution package in LCS that includes all the required artifacts.</span></span>                                                                                                            | <span data-ttu-id="4bcbb-143">すべての必要なコンポーネントを有するソリューション パッケージは LCS に掲載され、グローバル一意識別子 (GUID) はソリューションのために作成されました。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-143">A solution package that has all the required artifacts has been published in LCS, and a globally unique identifier (GUID) has been created for the solution.</span></span>                                                                                                                                                                                                                        |
-| <span data-ttu-id="4bcbb-144">2</span><span class="sxs-lookup"><span data-stu-id="4bcbb-144">2</span></span>     | <span data-ttu-id="4bcbb-145">4</span><span class="sxs-lookup"><span data-stu-id="4bcbb-145">4</span></span>    | <span data-ttu-id="4bcbb-146">環境を配置します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-146">Deploy an environment.</span></span>                  | <span data-ttu-id="4bcbb-147">パッケージの内容 (コード、バイナリ、および構成) に基づいている取引相手コードを持つ、標準の Finance and Operations 環境を展開します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-147">Deploy a standard Finance and Operations environment that has partner code, based on the package contents (code, binaries, and configuration).</span></span>      | <span data-ttu-id="4bcbb-148">エラーを発生させず、少なくとも 1 つの Finance and Operations 環境を正常に配置します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-148">Successfully deploy at least one Finance and Operations environment without any errors.</span></span> <span data-ttu-id="4bcbb-149">環境コンフィギュレーション (コンポーネントとコンフィギュレーションを含む) はパートナーの参照環境と同じです。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-149">The environment configuration (including components and the configuration) is the same as the partner's reference environment.</span></span> <span data-ttu-id="4bcbb-150">ユーザーは、この環境にエラーなしで正常にサインインできます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-150">A user can successfully sign in to this environment without any errors.</span></span> |
-| <span data-ttu-id="4bcbb-151">2</span><span class="sxs-lookup"><span data-stu-id="4bcbb-151">2</span></span>     | <span data-ttu-id="4bcbb-152">5</span><span class="sxs-lookup"><span data-stu-id="4bcbb-152">5</span></span>    | <span data-ttu-id="4bcbb-153">データの配置およびコンフィギュレーション。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-153">Configure and deploy data.</span></span>              | <span data-ttu-id="4bcbb-154">環境にパートナーが提供するデータをエラーなく展開します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-154">Deploy partner-supplied data in the environment without any errors.</span></span>                                                                                 | <span data-ttu-id="4bcbb-155">パートナーが提供するマスターと参照データが、エラーなく正常に Finance and Operations の環境にプッシュされたことを示します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-155">Demonstrate that partner-supplied master and reference data was successfully pushed into the Finance and Operations environment without any errors.</span></span>               |
-| <span data-ttu-id="4bcbb-156">2</span><span class="sxs-lookup"><span data-stu-id="4bcbb-156">2</span></span>     | <span data-ttu-id="4bcbb-157">6</span><span class="sxs-lookup"><span data-stu-id="4bcbb-157">6</span></span>    | <span data-ttu-id="4bcbb-158">サニティ チェックをします。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-158">Do a sanity check.</span></span>                      | <span data-ttu-id="4bcbb-159">この環境にデータが読み込まれた後、ユーザーは業務トランザクションを完了する必要があります (ソリューションの範囲で定義済として)。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-159">After data has been loaded into the environment, users should be able to complete business transactions (as defined in the scope of the solution).</span></span>  | <span data-ttu-id="4bcbb-160">データが読み込まれた環境にエラーなしでサインインできます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-160">Users can sign in to the data-loaded environment without any errors.</span></span> <span data-ttu-id="4bcbb-161">エラーを発生させず、パッケージ スコープで定義されている業務トランザクションを完了することができます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-161">Business transactions can be completed, as defined in the package scope, without any errors.</span></span>                                                                                                                                                                                |
-
-### <a name="detailed-curation-requirements"></a><span data-ttu-id="4bcbb-162">詳細なキュレーション要件</span><span class="sxs-lookup"><span data-stu-id="4bcbb-162">Detailed curation requirements</span></span>
-
-<span data-ttu-id="4bcbb-163">次のテーブルに、キュレーションの各要件に関する詳細情報を示します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-163">The following table provides more information about each curation requirement.</span></span>
-
-| <span data-ttu-id="4bcbb-164">必要量</span><span class="sxs-lookup"><span data-stu-id="4bcbb-164">Requirement</span></span>                  | <span data-ttu-id="4bcbb-165">説明</span><span class="sxs-lookup"><span data-stu-id="4bcbb-165">Description</span></span>                                                                                                                                                                                                                                                                          |
-|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4bcbb-166">CAR</span><span class="sxs-lookup"><span data-stu-id="4bcbb-166">CAR</span></span>                          | <span data-ttu-id="4bcbb-167">CAR が強調表示したすべてのメジャーな問題はアップグレードした後対処する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-167">All major issues that the CAR highlights should be addressed after you upgrade.</span></span> <span data-ttu-id="4bcbb-168">CAR は、検証会議の前に Microsoft に送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-168">The CAR must be submitted to Microsoft before the validation meeting.</span></span>                                                                                                                                |
-| <span data-ttu-id="4bcbb-169">BPM/テスト スクリプト</span><span class="sxs-lookup"><span data-stu-id="4bcbb-169">BPM/test scripts</span></span>             | <span data-ttu-id="4bcbb-170">すべてのタスク記録は、ソリューションパッケージが設計されている業種ごとに完了し、エンド ツー エンドのシナリオを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-170">All task recordings should be completed for the industry vertical that the solution package is designed for and should include end-to-end scenarios.</span></span>                                                                                                                                 |
-| <span data-ttu-id="4bcbb-171">ビジネス データベースのバックアップ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-171">Business database backup</span></span>     | <span data-ttu-id="4bcbb-172">アップグレードされた Finance and Operations 環境とベスト プラクティス コンフィギュレーションは LCS のアセット ライブラリに読み込まれる必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-172">A business database of your upgraded Finance and Operations environment and best practice configurations should be loaded into the Asset library in LCS.</span></span>                                                                                                                        |
-| <span data-ttu-id="4bcbb-173">プロジェクトの名前と説明</span><span class="sxs-lookup"><span data-stu-id="4bcbb-173">Project name and description</span></span> | <span data-ttu-id="4bcbb-174">プロジェクト名と説明は、ソリューション パッケージの実装メソッドのはじめに組み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-174">The project name and description should be incorporated into the beginning of the implementation methodology for the solution package.</span></span>                                                                                                                                               |
-| <span data-ttu-id="4bcbb-175">データ パッケージ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-175">Data packages</span></span>                | <span data-ttu-id="4bcbb-176">すべてのデータ パッケージは検証会議の前に LCS に読み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-176">All data packages should be loaded into LCS before the validation meeting.</span></span> <span data-ttu-id="4bcbb-177">カスタム機能のために、追加のカスタム フィールドまたはカスタム テーブル のデータ エンティティを作成します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-177">Create data entities for any additional custom fields or tables for your custom functional features.</span></span> <span data-ttu-id="4bcbb-178">データ パッケージを変更して空の環境にロードし、Data Management Framework でデータ パッケージを使用できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-178">You should be able to modify the data packages and load them into an empty environment, and then consume the data packages in Data Management Framework.</span></span> |
-| <span data-ttu-id="4bcbb-179">方法</span><span class="sxs-lookup"><span data-stu-id="4bcbb-179">Methodology</span></span>                  | <span data-ttu-id="4bcbb-180">方法には、製品の概要が組み込まれる必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-180">The methodology should incorporate an overview of the product.</span></span> <span data-ttu-id="4bcbb-181">会議室パイロット1 (CRP1) にガイド付き操作およびソリューションに特別に用意されているその他の実装方法は、オプションです。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-181">A guided experience to Conference Room Pilot 1 (CRP1) and any other implementation methodology that is specifically tailored to your solution are optional.</span></span> |
-| <span data-ttu-id="4bcbb-182">バイナリ (オプション)</span><span class="sxs-lookup"><span data-stu-id="4bcbb-182">Binaries (optional)</span></span>          | <span data-ttu-id="4bcbb-183">必要なバイナリ ファイルを組み込みます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-183">Incorporate any required binary files.</span></span>                                                                                                                                                                                                                                               |
-| <span data-ttu-id="4bcbb-184">配置可能パッケージ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-184">Deployable packages</span></span>          | <span data-ttu-id="4bcbb-185">Finance and Operations にカスタムの機能をもたらすために必要な配置可能パッケージを組み込みます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-185">Incorporate the deployable packages that are required in order to bring your custom features and functionality into Finance and Operations.</span></span>                                                                                                                                     |
-| <span data-ttu-id="4bcbb-186">モデル (コードとテスト)</span><span class="sxs-lookup"><span data-stu-id="4bcbb-186">Models (code and tests)</span></span>      | <span data-ttu-id="4bcbb-187">ソリューションに必要なすべてのモデル ファイルを組み込みます。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-187">Incorporate any model files that are required for your solution.</span></span>                                                                                                                                                                                                                     |
-| <span data-ttu-id="4bcbb-188">マーケティング コンテンツ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-188">Marketing content</span></span>            | <span data-ttu-id="4bcbb-189">ソリューション パッケージのロゴ、説明、スクリーン ショットのようなマーケティング コンテンツを追加します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-189">Add your marketing content, such as logos, descriptions, and screen shots of your solution package.</span></span> <span data-ttu-id="4bcbb-190">ソリューションはアプリ固有のものにする必要があり、会社名は含めないようにします。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-190">The solution logo should be app-specific and should not include your company name.</span></span> <span data-ttu-id="4bcbb-191">説明はカスタム ビジネス プロセスと整合する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-191">The description should be aligned with your custom business processes.</span></span>                            |
-
-
-## <a name="update-and-maintenance-requirements"></a><span data-ttu-id="4bcbb-192">更新とメンテナンスの要件</span><span class="sxs-lookup"><span data-stu-id="4bcbb-192">Update and maintenance requirements</span></span>
-<span data-ttu-id="4bcbb-193">AppSource で発行されている生成されたソリューションを使用する場合は、ソリューションを最新の状態に保持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-193">If you have a curated solution that is published on AppSource, you must keep the solution up to date.</span></span> <span data-ttu-id="4bcbb-194">秋と春の各メジャー リリースの後、コードをアップグレードするのに 8 週間かかります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-194">After each major Spring and Fall release, you will have eight weeks to upgrade your code.</span></span> <span data-ttu-id="4bcbb-195">次のコンポーネントを更新しテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-195">You must update and test the following artifacts:</span></span>
-
--   <span data-ttu-id="4bcbb-196">CAR</span><span class="sxs-lookup"><span data-stu-id="4bcbb-196">CAR</span></span>
--   <span data-ttu-id="4bcbb-197">モデル (コードとテスト)</span><span class="sxs-lookup"><span data-stu-id="4bcbb-197">Models (code and tests)</span></span>
--   <span data-ttu-id="4bcbb-198">配置可能パッケージ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-198">Deployable packages</span></span>
--   <span data-ttu-id="4bcbb-199">BPM/テスト スクリプト</span><span class="sxs-lookup"><span data-stu-id="4bcbb-199">BPM/test scripts</span></span>
--   <span data-ttu-id="4bcbb-200">データ パッケージ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-200">Data packages</span></span>
--   <span data-ttu-id="4bcbb-201">ビジネス データベースのバックアップ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-201">Business database backup</span></span>
-
-### <a name="maintenance-process-steps"></a><span data-ttu-id="4bcbb-202">メンテナンス プロセスのステップ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-202">Maintenance process steps</span></span>
-
-| <span data-ttu-id="4bcbb-203">フェーズ</span><span class="sxs-lookup"><span data-stu-id="4bcbb-203">Phase</span></span> | <span data-ttu-id="4bcbb-204">数値</span><span class="sxs-lookup"><span data-stu-id="4bcbb-204">Number</span></span> | <span data-ttu-id="4bcbb-205">活動</span><span class="sxs-lookup"><span data-stu-id="4bcbb-205">Activity</span></span>                                       | <span data-ttu-id="4bcbb-206">プロセスの手順</span><span class="sxs-lookup"><span data-stu-id="4bcbb-206">Process steps</span></span>                                                                | <span data-ttu-id="4bcbb-207">成功基準</span><span class="sxs-lookup"><span data-stu-id="4bcbb-207">Success criteria</span></span>                                                                                                                                                                                                                                                                                     |
-|-------|--------|------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="4bcbb-208">1</span><span class="sxs-lookup"><span data-stu-id="4bcbb-208">1</span></span>     | <span data-ttu-id="4bcbb-209">1</span><span class="sxs-lookup"><span data-stu-id="4bcbb-209">1</span></span>      | <span data-ttu-id="4bcbb-210">Finance and Operations の顧客コードを検証します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-210">Validate Finance and Operations customer code.</span></span> | <span data-ttu-id="4bcbb-211">CAR ツールを使用してすべての顧客モデル ファイルを実行し、レポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-211">Run all customer model files by using the CAR tool, and generate the report.</span></span> | <span data-ttu-id="4bcbb-212">ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-212">Successfully create a CAR without any localization, accessibility, performance, or security issues.</span></span> <span data-ttu-id="4bcbb-213">最新のメジャー リリースにアップグレードした後、CAR が強調表示するすべてのメジャーな問題に対処する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-213">All major issues that the CAR highlights should be addressed after you've upgraded to the latest major release.</span></span> <span data-ttu-id="4bcbb-214">CAR は、春および秋の各メジャーリリース後から 8 週間以内に Microsoft に送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4bcbb-214">The CAR must be submitted to Microsoft within eight weeks after each major Spring and Fall release.</span></span> |
-
-
-<a name="additional-resources"></a><span data-ttu-id="4bcbb-215">追加リソース</span><span class="sxs-lookup"><span data-stu-id="4bcbb-215">Additional resources</span></span>
---------
-
-[<span data-ttu-id="4bcbb-216">AppSource の Dynamics 365 for Finance and Operations アプリを公開</span><span class="sxs-lookup"><span data-stu-id="4bcbb-216">Publishing an App for Dynamics 365 for Finance and Operations in AppSource</span></span>](lcs-solutions-app-source.md)
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="app-validation-lcs-solutions.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>app-validation-lcs-solutions.a9fab0.6f33dbcb90fc5b1cafdbfc48152ad9847df6c555.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>6f33dbcb90fc5b1cafdbfc48152ad9847df6c555</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\lcs-solutions\app-validation-lcs-solutions.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Validate applications for Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 用のアプリケーションを検証する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Microsoft Dynamics 365 for Finance and Operations environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Validate applications for Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 用のアプリケーションを検証する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Microsoft Dynamics 365 for Finance and Operations environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Microsoft requires specific reviews in order to validate the following requirements:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft は、次の要件を検証するために特定のレビューを必要とします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>A partner's custom code meets Microsoft guidelines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナーのカスタム コードは、Microsoft のガイドラインを満たしています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>A Microsoft Dynamics Lifecycle Services (LCS) solution package can be successfully bundled and delivered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージを正常にバンドルおよび配送することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Core independent software vendor (ISV) business scenarios can be transacted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主要な独立系ソフトウェア ベンダー (ISV) のビジネス シナリオを処理することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在、パートナーは、テストの展開を行い、結果を Microsoft と共有することによって、これらの要件が満たされていることを実証する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>No code will be deployed on a customer environment that Microsoft hasn't validated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft が検証していない顧客環境では、コードは配置されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Partners must complete the following curation artifacts and tests:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナーは、次のキュレーション コンポーネントおよびテストを行ってください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Code analysis report (CAR)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード分析レポート (CAR)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Business process modeler (BPM)/test scripts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジネス プロセス モデラー (BPM)/テスト スクリプト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Business database backup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジネス データベースのバックアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Project name and description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトの名前と説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Data packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Methodology</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Binaries (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バイナリ (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Deployable packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Models (code and tests)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル (コードとテスト)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Marketing content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マーケティング コンテンツ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Curation meeting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キュレーション会議</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The following table describes the steps that must be completed before the validation meeting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、検証会議の前に完了する必要がある手順を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Phase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フェーズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Step</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Activity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">活動</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Process steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセスの手順</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Success criteria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">成功基準</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Validate code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードを検証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Run all customer model files by using the CAR tool, and then generate the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR ツールを使用してすべての顧客モデル ファイルを実行した後、レポートを生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Successfully create a CAR without any localization, accessibility, performance, or security issues.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Verify user experience (UX) guidelines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー エクスペリエンス (UX) のガイドラインを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Follow UX guidelines to implement the workspace correctly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースを正しく実装する UX ガイドラインに従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Reference best practice information in the Migrate and Create methodology section of LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS の移行および作成手法に関するページにあるベスト プラクティス情報を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Validate the solution package in LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS でソリューション パッケージを検証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Create a solution package in LCS that includes all the required artifacts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要なすべてのコンポーネントを含む LCS で、ソリューション パッケージを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>A solution package that has all the required artifacts has been published in LCS, and a globally unique identifier (GUID) has been created for the solution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての必要なコンポーネントを有するソリューション パッケージは LCS に掲載され、グローバル一意識別子 (GUID) はソリューションのために作成されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Deploy an environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境を配置します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Deploy a standard Finance and Operations environment that has partner code, based on the package contents (code, binaries, and configuration).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージの内容 (コード、バイナリ、および構成) に基づいている取引相手コードを持つ、標準の Finance and Operations 環境を展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Successfully deploy at least one Finance and Operations environment without any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーを発生させず、少なくとも 1 つの Finance and Operations 環境を正常に配置します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The environment configuration (including components and the configuration) is the same as the partner's reference environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境コンフィギュレーション (コンポーネントとコンフィギュレーションを含む) はパートナーの参照環境と同じです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>A user can successfully sign in to this environment without any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、この環境にエラーなしで正常にサインインできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Configure and deploy data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データの配置およびコンフィギュレーション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Deploy partner-supplied data in the environment without any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境にパートナーが提供するデータをエラーなく展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Demonstrate that partner-supplied master and reference data was successfully pushed into the Finance and Operations environment without any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナーが提供するマスターと参照データが、エラーなく正常に Finance and Operations の環境にプッシュされたことを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>6</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Do a sanity check.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サニティ チェックをします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>After data has been loaded into the environment, users should be able to complete business transactions (as defined in the scope of the solution).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この環境にデータが読み込まれた後、ユーザーは業務トランザクションを完了する必要があります (ソリューションの範囲で定義済として)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Users can sign in to the data-loaded environment without any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データが読み込まれた環境にエラーなしでサインインできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Business transactions can be completed, as defined in the package scope, without any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーを発生させず、パッケージ スコープで定義されている業務トランザクションを完了することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Detailed curation requirements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細なキュレーション要件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>The following table provides more information about each curation requirement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、キュレーションの各要件に関する詳細情報を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Requirement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要量</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>CAR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>All major issues that the CAR highlights should be addressed after you upgrade.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR が強調表示したすべてのメジャーな問題はアップグレードした後対処する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>The CAR must be submitted to Microsoft before the validation meeting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR は、検証会議の前に Microsoft に送信する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>BPM/test scripts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BPM/テスト スクリプト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>All task recordings should be completed for the industry vertical that the solution package is designed for and should include end-to-end scenarios.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのタスク記録は、ソリューションパッケージが設計されている業種ごとに完了し、エンド ツー エンドのシナリオを含める必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Business database backup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジネス データベースのバックアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>A business database of your upgraded Finance and Operations environment and best practice configurations should be loaded into the Asset library in LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードされた Finance and Operations 環境とベスト プラクティス コンフィギュレーションは LCS のアセット ライブラリに読み込まれる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Project name and description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトの名前と説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>The project name and description should be incorporated into the beginning of the implementation methodology for the solution package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト名と説明は、ソリューション パッケージの実装メソッドのはじめに組み込む必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Data packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>All data packages should be loaded into LCS before the validation meeting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのデータ パッケージは検証会議の前に LCS に読み込む必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Create data entities for any additional custom fields or tables for your custom functional features.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム機能のために、追加のカスタム フィールドまたはカスタム テーブル のデータ エンティティを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>You should be able to modify the data packages and load them into an empty environment, and then consume the data packages in Data Management Framework.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージを変更して空の環境にロードし、Data Management Framework でデータ パッケージを使用できるようにする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Methodology</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>The methodology should incorporate an overview of the product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法には、製品の概要が組み込まれる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>A guided experience to Conference Room Pilot 1 (CRP1) and any other implementation methodology that is specifically tailored to your solution are optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">会議室パイロット1 (CRP1) にガイド付き操作およびソリューションに特別に用意されているその他の実装方法は、オプションです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Binaries (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バイナリ (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Incorporate any required binary files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要なバイナリ ファイルを組み込みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Deployable packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Incorporate the deployable packages that are required in order to bring your custom features and functionality into Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations にカスタムの機能をもたらすために必要な配置可能パッケージを組み込みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Models (code and tests)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル (コードとテスト)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Incorporate any model files that are required for your solution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションに必要なすべてのモデル ファイルを組み込みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Marketing content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マーケティング コンテンツ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Add your marketing content, such as logos, descriptions, and screen shots of your solution package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション パッケージのロゴ、説明、スクリーン ショットのようなマーケティング コンテンツを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>The solution logo should be app-specific and should not include your company name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションはアプリ固有のものにする必要があり、会社名は含めないようにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The description should be aligned with your custom business processes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明はカスタム ビジネス プロセスと整合する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Update and maintenance requirements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新とメンテナンスの要件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>If you have a curated solution that is published on AppSource, you must keep the solution up to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AppSource で発行されている生成されたソリューションを使用する場合は、ソリューションを最新の状態に保持する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>After each major Spring and Fall release, you will have eight weeks to upgrade your code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">秋と春の各メジャー リリースの後、コードをアップグレードするのに 8 週間かかります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>You must update and test the following artifacts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコンポーネントを更新しテストする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>CAR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Models (code and tests)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル (コードとテスト)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Deployable packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>BPM/test scripts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BPM/テスト スクリプト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Data packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ パッケージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Business database backup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジネス データベースのバックアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Maintenance process steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メンテナンス プロセスのステップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Phase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フェーズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">数値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Activity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">活動</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Process steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセスの手順</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Success criteria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">成功基準</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Validate Finance and Operations customer code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の顧客コードを検証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Run all customer model files by using the CAR tool, and generate the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR ツールを使用してすべての顧客モデル ファイルを実行し、レポートを生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Successfully create a CAR without any localization, accessibility, performance, or security issues.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>All major issues that the CAR highlights should be addressed after you've upgraded to the latest major release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最新のメジャー リリースにアップグレードした後、CAR が強調表示するすべてのメジャーな問題に対処する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The CAR must be submitted to Microsoft within eight weeks after each major Spring and Fall release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CAR は、春および秋の各メジャーリリース後から 8 週間以内に Microsoft に送信する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">[</bpt>Publishing an App for Dynamics 365 for Finance and Operations in AppSource<ept id="p1">](lcs-solutions-app-source.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>AppSource の Dynamics 365 for Finance and Operations アプリを公開<ept id="p1">](lcs-solutions-app-source.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

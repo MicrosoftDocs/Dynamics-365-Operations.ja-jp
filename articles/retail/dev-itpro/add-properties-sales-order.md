@@ -1,98 +1,201 @@
----
-title: プロパティを販売注文に追加
-description: 販売注文のプロパティをカスタマイズすることにより、オンライン ストアから追加データを送信して業務プロセスの要件を満たすことができます。 この記事では、販売注文にプロパティを追加する方法について説明します。
-author: kfend
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: robinr
-ms.search.scope: Operations, Retail
-ms.custom: 44351
-ms.assetid: dd9b86cb-630a-4429-9aea-8ba4c4723baa
-ms.search.region: Global
-ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e037592a38d732eff514ac371501121ab6b28435
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512735"
----
-# <a name="add-properties-to-sales-orders"></a><span data-ttu-id="b9130-104">プロパティを販売注文に追加</span><span class="sxs-lookup"><span data-stu-id="b9130-104">Add properties to sales orders</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="b9130-105">販売注文のプロパティをカスタマイズすることにより、オンライン ストアから追加データを送信して業務プロセスの要件を満たすことができます。</span><span class="sxs-lookup"><span data-stu-id="b9130-105">By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes.</span></span> <span data-ttu-id="b9130-106">この記事では、販売注文にプロパティを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b9130-106">This article explains how to add properties to a sales order.</span></span>
-
-<span data-ttu-id="b9130-107">スターター ストアには、注文トランザクション中にデータを取得するために使用できる販売注文プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="b9130-107">The starter store has sales order properties that you can use to capture data during order transactions.</span></span> <span data-ttu-id="b9130-108">ただし、販売注文のプロパティを拡張し、注文トランザクション中に追加データを送信するすることができます。</span><span class="sxs-lookup"><span data-stu-id="b9130-108">However, you can extend the sales order properties to send additional data during order transactions.</span></span> <span data-ttu-id="b9130-109">たとえば、品目が贈物用に包装されるべきかを示す **GiftWrap** 属性を追加できます。</span><span class="sxs-lookup"><span data-stu-id="b9130-109">For example, you can add a **GiftWrap** attribute to indicate that an item should be gift-wrapped.</span></span> <span data-ttu-id="b9130-110">販売注文のプロパティをカスタマイズするには、次の作業を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9130-110">To customize sales order properties, you must complete the following tasks:</span></span>
-
-1.  <span data-ttu-id="b9130-111">属性を作成します。</span><span class="sxs-lookup"><span data-stu-id="b9130-111">Create an attribute.</span></span>
-2.  <span data-ttu-id="b9130-112">属性グループに属性を追加します。</span><span class="sxs-lookup"><span data-stu-id="b9130-112">Add the attribute to an attribute group.</span></span>
-3.  <span data-ttu-id="b9130-113">オンライン ストアに属性グループを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="b9130-113">Assign the attribute group to your online store.</span></span>
-4.  <span data-ttu-id="b9130-114">販売注文書で属性を設定します。</span><span class="sxs-lookup"><span data-stu-id="b9130-114">Set the attribute on a sales order.</span></span>
-
-## <a name="create-an-attribute"></a><span data-ttu-id="b9130-115">属性を作成します</span><span class="sxs-lookup"><span data-stu-id="b9130-115">Create an attribute</span></span>
-<span data-ttu-id="b9130-116">属性を作成するには、属性タイプを定義してから、新しい属性に属性タイプを割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9130-116">To create an attribute, you must define an attribute type and then assign the attribute type to your new attribute.</span></span> <span data-ttu-id="b9130-117">この例では、事前定義済みの属性タイプを使用します。</span><span class="sxs-lookup"><span data-stu-id="b9130-117">In this example, you use a pre-defined attribute type.</span></span>
-
-1.  <span data-ttu-id="b9130-118">クライアントで、**製品情報管理** &gt; **設定** &gt; **カテゴリと属性** &gt; **属性**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-118">In the client, click **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.</span></span>
-2.  <span data-ttu-id="b9130-119">**新規**をクリックし、次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b9130-119">Click **New**, and enter the following values.</span></span>
-
-    | <span data-ttu-id="b9130-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b9130-120">Property</span></span>       | <span data-ttu-id="b9130-121">先頭値</span><span class="sxs-lookup"><span data-stu-id="b9130-121">Value</span></span>        |
-    |----------------|--------------|
-    | <span data-ttu-id="b9130-122">氏名</span><span class="sxs-lookup"><span data-stu-id="b9130-122">Name</span></span>           | <span data-ttu-id="b9130-123">GiftWrap</span><span class="sxs-lookup"><span data-stu-id="b9130-123">GiftWrap</span></span>     |
-    | <span data-ttu-id="b9130-124">フレンドリ名</span><span class="sxs-lookup"><span data-stu-id="b9130-124">Friendly name</span></span>  | <span data-ttu-id="b9130-125">ギフト ラップ</span><span class="sxs-lookup"><span data-stu-id="b9130-125">Gift wrap</span></span>    |
-    | <span data-ttu-id="b9130-126">属性タイプ</span><span class="sxs-lookup"><span data-stu-id="b9130-126">Attribute type</span></span> | <span data-ttu-id="b9130-127">StringDomain</span><span class="sxs-lookup"><span data-stu-id="b9130-127">StringDomain</span></span> |
-
-## <a name="add-the-attribute-to-an-attribute-group"></a><span data-ttu-id="b9130-128">属性グループへの属性の追加</span><span class="sxs-lookup"><span data-stu-id="b9130-128">Add the attribute to an attribute group</span></span>
-<span data-ttu-id="b9130-129">属性を定義した後は、属性グループを追加する事ができます。</span><span class="sxs-lookup"><span data-stu-id="b9130-129">After you define an attribute, you can add it to an attribute group.</span></span>
-
-1.  <span data-ttu-id="b9130-130">**製品情報管理** &gt; **設定** &gt; **カテゴリと属性** &gt; **属性グループ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-130">Click **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.</span></span>
-2.  <span data-ttu-id="b9130-131">**新規**をクリックし、次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="b9130-131">Click **New**, and enter the following values.</span></span>
-
-    | <span data-ttu-id="b9130-132">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b9130-132">Property</span></span>      | <span data-ttu-id="b9130-133">先頭値</span><span class="sxs-lookup"><span data-stu-id="b9130-133">Value</span></span>                       |
-    |---------------|-----------------------------|
-    | <span data-ttu-id="b9130-134">氏名</span><span class="sxs-lookup"><span data-stu-id="b9130-134">Name</span></span>          | <span data-ttu-id="b9130-135">SalesOrderGroup</span><span class="sxs-lookup"><span data-stu-id="b9130-135">SalesOrderGroup</span></span>             |
-    | <span data-ttu-id="b9130-136">フレンドリ名</span><span class="sxs-lookup"><span data-stu-id="b9130-136">Friendly name</span></span> | <span data-ttu-id="b9130-137">販売注文属性グループ</span><span class="sxs-lookup"><span data-stu-id="b9130-137">Sales order attribute group</span></span> |
-    | <span data-ttu-id="b9130-138">説明</span><span class="sxs-lookup"><span data-stu-id="b9130-138">Description</span></span>   | <span data-ttu-id="b9130-139">販売注文属性グループ</span><span class="sxs-lookup"><span data-stu-id="b9130-139">Sales order attribute group</span></span> |
-
-3.  <span data-ttu-id="b9130-140">**属性**クイック タブで、**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-140">On the **Attributes** FastTab, click **Add**.</span></span>
-4.  <span data-ttu-id="b9130-141">**GiftWrap** を選択し、**選択** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-141">Select **GiftWrap**, and then click **Select**.</span></span>
-5.  <span data-ttu-id="b9130-142">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-142">Click **OK**.</span></span>
-
-## <a name="assign-the-attribute-group-to-your-online-store"></a><span data-ttu-id="b9130-143">オンライン ストアに属性グループを割り当てます</span><span class="sxs-lookup"><span data-stu-id="b9130-143">Assign the attribute group to your online store</span></span>
-<span data-ttu-id="b9130-144">属性グループを作成した後は、オンライン ストアに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="b9130-144">After you create an attribute group, you can assign it to your online store.</span></span>
-
-1.  <span data-ttu-id="b9130-145">**小売** &gt; **チャンネル** &gt; **オンライン ストア**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-145">Click **Retail** &gt; **Channels** &gt; **Online stores**.</span></span>
-2.  <span data-ttu-id="b9130-146">**オンライン ストア** リストで、店舗をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-146">In the **Online stores** list, double-click your store.</span></span>
-3.  <span data-ttu-id="b9130-147">**設定**タブで、**販売注文属性**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-147">On the **Set up** tab, click **Sales order attributes**.</span></span>
-4.  <span data-ttu-id="b9130-148">**チャネル属性グループ**ページで、**新規**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-148">On the **Channel attribute groups** page, click **New**.</span></span>
-5.  <span data-ttu-id="b9130-149">**名前**フィールドで **SalesOrderGroup** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b9130-149">In the **Name** field, select **SalesOrderGroup**.</span></span>
-
-## <a name="set-the-attribute-on-a-sales-order"></a><span data-ttu-id="b9130-150">販売注文書で属性を設定</span><span class="sxs-lookup"><span data-stu-id="b9130-150">Set the attribute on a sales order</span></span>
-<span data-ttu-id="b9130-151">Commerce Runtime 内にビジネス ロジックを追加することにより属性を販売注文に追加することができます。</span><span class="sxs-lookup"><span data-stu-id="b9130-151">You can add the attribute to a sales order by adding business logic in the commerce runtime.</span></span> <span data-ttu-id="b9130-152">次のコードを追加して、カートに属性を追加し、カートを保存します。それから、カートから受注を作成します。</span><span class="sxs-lookup"><span data-stu-id="b9130-152">Add the following code to add the attribute to the cart, save the cart, and then create a sales order from the cart.</span></span>
-
-    var cart = orderManager.GetCart(cartId, accountNumber, false);
-    cart.AttributeValues.Add(new AttributeTextValue { Name = "GiftWrap", TextValue = "Yes" });
-    orderManager.SaveCart(cart);
-    orderManager.CreateOrderFromCart(...);
-
-## <a name="next-steps"></a><span data-ttu-id="b9130-153">次のステップ</span><span class="sxs-lookup"><span data-stu-id="b9130-153">Next steps</span></span>
-<span data-ttu-id="b9130-154">Commerce Runtime で販売注文を作成した後は、新しい属性を表示できます。</span><span class="sxs-lookup"><span data-stu-id="b9130-154">After you create a sales order in the commerce runtime, you can view the new attribute.</span></span>
-
-### <a name="view-the-attribute"></a><span data-ttu-id="b9130-155">属性の表示</span><span class="sxs-lookup"><span data-stu-id="b9130-155">View the attribute</span></span>
-
-1.  <span data-ttu-id="b9130-156">クライアントで、**小売** &gt; **小売 IT** &gt; **配送スケジュール**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-156">In the client, click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
-2.  <span data-ttu-id="b9130-157">**P-0001\_OC** ジョブを実行し、オンライン チャネルとして POS トランザクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="b9130-157">Run the **P-0001\_OC** job to run POS transactions in the online channel.</span></span>
-3.  <span data-ttu-id="b9130-158">**小売** &gt; **小売 IT** &gt; **注文の同期**の順にクリックして販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="b9130-158">Click **Retail** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.</span></span>
-4.  <span data-ttu-id="b9130-159">**小売** &gt; **照会およびレポート** &gt; **販売注文** &gt; **すべての販売注文**の順番にクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-159">Click **Retail** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.</span></span>
-5.  <span data-ttu-id="b9130-160">**小売**タブで、**小売属性**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9130-160">On the **Retail** tab, and click **Retail attributes**.</span></span> <span data-ttu-id="b9130-161">作成した属性を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9130-161">You should see the attribute that you created.</span></span>
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="add-properties-sales-order.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>add-properties-sales-order.4a01f1.6cb99d6ce863b464c6ed8d7c3a96c5e6a2e8e04c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>6cb99d6ce863b464c6ed8d7c3a96c5e6a2e8e04c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\add-properties-sales-order.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Add properties to sales orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティを販売注文に追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文のプロパティをカスタマイズすることにより、オンライン ストアから追加データを送信して業務プロセスの要件を満たすことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>This article explains how to add properties to a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、販売注文にプロパティを追加する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Add properties to sales orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティを販売注文に追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文のプロパティをカスタマイズすることにより、オンライン ストアから追加データを送信して業務プロセスの要件を満たすことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This article explains how to add properties to a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、販売注文にプロパティを追加する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The starter store has sales order properties that you can use to capture data during order transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スターター ストアには、注文トランザクション中にデータを取得するために使用できる販売注文プロパティがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>However, you can extend the sales order properties to send additional data during order transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、販売注文のプロパティを拡張し、注文トランザクション中に追加データを送信するすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>For example, you can add a <bpt id="p1">**</bpt>GiftWrap<ept id="p1">**</ept> attribute to indicate that an item should be gift-wrapped.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、品目が贈物用に包装されるべきかを示す <bpt id="p1">**</bpt>GiftWrap<ept id="p1">**</ept> 属性を追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>To customize sales order properties, you must complete the following tasks:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文のプロパティをカスタマイズするには、次の作業を行う必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Create an attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Add the attribute to an attribute group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性グループに属性を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Assign the attribute group to your online store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン ストアに属性グループを割り当てます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Set the attribute on a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文書で属性を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Create an attribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性を作成します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>To create an attribute, you must define an attribute type and then assign the attribute type to your new attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性を作成するには、属性タイプを定義してから、新しい属性に属性タイプを割り当てる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>In this example, you use a pre-defined attribute type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、事前定義済みの属性タイプを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>In the client, click <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attributes<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントで、<bpt id="p1">**</bpt>製品情報管理<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>カテゴリと属性<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>属性<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and enter the following values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept>をクリックし、次の値を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>GiftWrap</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GiftWrap</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Friendly name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フレンドリ名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Gift wrap</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ギフト ラップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Attribute type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>StringDomain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StringDomain</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Add the attribute to an attribute group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性グループへの属性の追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>After you define an attribute, you can add it to an attribute group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性を定義した後は、属性グループを追加する事ができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click <bpt id="p1">**</bpt>Product information management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Categories and attributes<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Attribute groups<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>製品情報管理<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>カテゴリと属性<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>属性グループ<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and enter the following values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept>をクリックし、次の値を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>SalesOrderGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SalesOrderGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Friendly name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フレンドリ名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Sales order attribute group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文属性グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Sales order attribute group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文属性グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>On the <bpt id="p1">**</bpt>Attributes<ept id="p1">**</ept> FastTab, click <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>属性<ept id="p1">**</ept>クイック タブで、<bpt id="p2">**</bpt>追加<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Select <bpt id="p1">**</bpt>GiftWrap<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Select<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>GiftWrap<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>選択<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Assign the attribute group to your online store</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン ストアに属性グループを割り当てます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>After you create an attribute group, you can assign it to your online store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性グループを作成した後は、オンライン ストアに割り当てることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Channels<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Online stores<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>チャンネル<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>オンライン ストア<ept id="p3">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>In the <bpt id="p1">**</bpt>Online stores<ept id="p1">**</ept> list, double-click your store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>オンライン ストア<ept id="p1">**</ept> リストで、店舗をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>On the <bpt id="p1">**</bpt>Set up<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Sales order attributes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>設定<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>販売注文属性<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>On the <bpt id="p1">**</bpt>Channel attribute groups<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>チャネル属性グループ<ept id="p1">**</ept>ページで、<bpt id="p2">**</bpt>新規<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>SalesOrderGroup<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept>フィールドで <bpt id="p2">**</bpt>SalesOrderGroup<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Set the attribute on a sales order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売注文書で属性を設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>You can add the attribute to a sales order by adding business logic in the commerce runtime.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Runtime 内にビジネス ロジックを追加することにより属性を販売注文に追加することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Add the following code to add the attribute to the cart, save the cart, and then create a sales order from the cart.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコードを追加して、カートに属性を追加し、カートを保存します。それから、カートから受注を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Next steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のステップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>After you create a sales order in the commerce runtime, you can view the new attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Runtime で販売注文を作成した後は、新しい属性を表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>View the attribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性の表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>In the client, click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Retail IT<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Distribution schedule<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントで、<bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>小売 IT<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>配送スケジュール<ept id="p3">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Run the <bpt id="p1">**</bpt>P-0001<ph id="ph1">\_</ph>OC<ept id="p1">**</ept> job to run POS transactions in the online channel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>P-0001<ph id="ph1">\_</ph>OC<ept id="p1">**</ept> ジョブを実行し、オンライン チャネルとして POS トランザクションを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Retail IT<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Synchronize orders<ept id="p3">**</ept> to create a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>小売 IT<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>注文の同期<ept id="p3">**</ept>の順にクリックして販売注文を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Sales orders<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All sales orders<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>照会およびレポート<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>販売注文<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>すべての販売注文<ept id="p4">**</ept>の順番にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>On the <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> tab, and click <bpt id="p2">**</bpt>Retail attributes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>小売属性<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>You should see the attribute that you created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成した属性を確認する必要があります。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,472 +1,615 @@
----
-title: E クラス
-description: 文字 E で始まるシステム API クラス。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 68633
-ms.assetid: c7fea535-c44d-4e78-96b2-77e180076ac9
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 393ff9cc4c33828393ef61a46d1d52cd74547604
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537018"
----
-# <a name="e-classes"></a><span data-ttu-id="43cb9-103">E クラス</span><span class="sxs-lookup"><span data-stu-id="43cb9-103">E classes</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="43cb9-104">文字 E で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="43cb9-104">System API classes that start with the letter E.</span></span>
-
-<a name="class-editor"></a><span data-ttu-id="43cb9-105">クラス エディター</span><span class="sxs-lookup"><span data-stu-id="43cb9-105">Class Editor</span></span>
-------------
-
-    class Editor extends Object
-
-### <a name="remarks"></a><span data-ttu-id="43cb9-106">備考</span><span class="sxs-lookup"><span data-stu-id="43cb9-106">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="43cb9-107">例</span><span class="sxs-lookup"><span data-stu-id="43cb9-107">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="43cb9-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="43cb9-108">Methods</span></span>
-
-| <span data-ttu-id="43cb9-109">方法</span><span class="sxs-lookup"><span data-stu-id="43cb9-109">Method</span></span>                                                                          | <span data-ttu-id="43cb9-110">説明</span><span class="sxs-lookup"><span data-stu-id="43cb9-110">Description</span></span>                                     |
-|---------------------------------------------------------------------------------|-------------------------------------------------|
-| <span data-ttu-id="43cb9-111">public int columnNo()</span><span class="sxs-lookup"><span data-stu-id="43cb9-111">public int columnNo()</span></span>                                                           |                                                 |
-| <span data-ttu-id="43cb9-112">public str currentLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-112">public str currentLine()</span></span>                                                        |                                                 |
-| <span data-ttu-id="43cb9-113">public int currentLineNo()</span><span class="sxs-lookup"><span data-stu-id="43cb9-113">public int currentLineNo()</span></span>                                                      |                                                 |
-| <span data-ttu-id="43cb9-114">public str getLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-114">public str getLine()</span></span>                                                            |                                                 |
-| <span data-ttu-id="43cb9-115">public int gotoCol(int ColumnNo)</span><span class="sxs-lookup"><span data-stu-id="43cb9-115">public int gotoCol(int ColumnNo)</span></span>                                                |                                                 |
-| <span data-ttu-id="43cb9-116">public int lineNo()</span><span class="sxs-lookup"><span data-stu-id="43cb9-116">public int lineNo()</span></span>                                                             |                                                 |
-| <span data-ttu-id="43cb9-117">public MarkMode markMode()</span><span class="sxs-lookup"><span data-stu-id="43cb9-117">public MarkMode markMode()</span></span>                                                      |                                                 |
-| <span data-ttu-id="43cb9-118">public boolean matchCase(\[boolean UseMatchCase\])</span><span class="sxs-lookup"><span data-stu-id="43cb9-118">public boolean matchCase(\[boolean UseMatchCase\])</span></span>                              |                                                 |
-| <span data-ttu-id="43cb9-119">public boolean moreLines()</span><span class="sxs-lookup"><span data-stu-id="43cb9-119">public boolean moreLines()</span></span>                                                      |                                                 |
-| <span data-ttu-id="43cb9-120">public boolean moreSelectedLines()</span><span class="sxs-lookup"><span data-stu-id="43cb9-120">public boolean moreSelectedLines()</span></span>                                              |                                                 |
-| <span data-ttu-id="43cb9-121">public str path()</span><span class="sxs-lookup"><span data-stu-id="43cb9-121">public str path()</span></span>                                                               |                                                 |
-| <span data-ttu-id="43cb9-122">public boolean regexp(\[boolean UseRegExp\])</span><span class="sxs-lookup"><span data-stu-id="43cb9-122">public boolean regexp(\[boolean UseRegExp\])</span></span>                                    |                                                 |
-| <span data-ttu-id="43cb9-123">public boolean replace(str SearchString, str ReplaceString, boolean ReplaceAll)</span><span class="sxs-lookup"><span data-stu-id="43cb9-123">public boolean replace(str SearchString, str ReplaceString, boolean ReplaceAll)</span></span> |                                                 |
-| <span data-ttu-id="43cb9-124">public boolean search(str SearchString)</span><span class="sxs-lookup"><span data-stu-id="43cb9-124">public boolean search(str SearchString)</span></span>                                         |                                                 |
-| <span data-ttu-id="43cb9-125">public str searchString()</span><span class="sxs-lookup"><span data-stu-id="43cb9-125">public str searchString()</span></span>                                                       |                                                 |
-| <span data-ttu-id="43cb9-126">public int selectionEndCol()</span><span class="sxs-lookup"><span data-stu-id="43cb9-126">public int selectionEndCol()</span></span>                                                    |                                                 |
-| <span data-ttu-id="43cb9-127">public int selectionEndLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-127">public int selectionEndLine()</span></span>                                                   |                                                 |
-| <span data-ttu-id="43cb9-128">public int selectionStartCol()</span><span class="sxs-lookup"><span data-stu-id="43cb9-128">public int selectionStartCol()</span></span>                                                  |                                                 |
-| <span data-ttu-id="43cb9-129">public int selectionStartLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-129">public int selectionStartLine()</span></span>                                                 |                                                 |
-| <span data-ttu-id="43cb9-130">::public static Editor open (str documentPath)</span><span class="sxs-lookup"><span data-stu-id="43cb9-130">::public static Editor open(str documentPath)</span></span>                                   |                                                 |
-| <span data-ttu-id="43cb9-131">public void gotoLine(int LineNo)</span><span class="sxs-lookup"><span data-stu-id="43cb9-131">public void gotoLine(int LineNo)</span></span>                                                |                                                 |
-| <span data-ttu-id="43cb9-132">public void closeApplicationObjectDialog()</span><span class="sxs-lookup"><span data-stu-id="43cb9-132">public void closeApplicationObjectDialog()</span></span>                                      |                                                 |
-| <span data-ttu-id="43cb9-133">public void mark(int line, int col)</span><span class="sxs-lookup"><span data-stu-id="43cb9-133">public void mark(int line, int col)</span></span>                                             |                                                 |
-| <span data-ttu-id="43cb9-134">public void executeScript(str scriptName)</span><span class="sxs-lookup"><span data-stu-id="43cb9-134">public void executeScript(str scriptName)</span></span>                                       |                                                 |
-| <span data-ttu-id="43cb9-135">public void nextLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-135">public void nextLine()</span></span>                                                          |                                                 |
-| <span data-ttu-id="43cb9-136">public void firstSelectedLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-136">public void firstSelectedLine()</span></span>                                                 |                                                 |
-| <span data-ttu-id="43cb9-137">private void new()</span><span class="sxs-lookup"><span data-stu-id="43cb9-137">private void new()</span></span>                                                              | <span data-ttu-id="43cb9-138">Editor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-138">Initializes a new instance of the Editor class.</span></span> |
-| <span data-ttu-id="43cb9-139">public void unmark()</span><span class="sxs-lookup"><span data-stu-id="43cb9-139">public void unmark()</span></span>                                                            |                                                 |
-| <span data-ttu-id="43cb9-140">public void insertString(str InsString)</span><span class="sxs-lookup"><span data-stu-id="43cb9-140">public void insertString(str InsString)</span></span>                                         |                                                 |
-| <span data-ttu-id="43cb9-141">public void close()</span><span class="sxs-lookup"><span data-stu-id="43cb9-141">public void close()</span></span>                                                             |                                                 |
-| <span data-ttu-id="43cb9-142">public void nextSelectedLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-142">public void nextSelectedLine()</span></span>                                                  |                                                 |
-| <span data-ttu-id="43cb9-143">public void closeSearchDialog()</span><span class="sxs-lookup"><span data-stu-id="43cb9-143">public void closeSearchDialog()</span></span>                                                 |                                                 |
-| <span data-ttu-id="43cb9-144">public void deleteLines(\[int noOfLines\])</span><span class="sxs-lookup"><span data-stu-id="43cb9-144">public void deleteLines(\[int noOfLines\])</span></span>                                      |                                                 |
-| <span data-ttu-id="43cb9-145">public void insertLines(str InsString)</span><span class="sxs-lookup"><span data-stu-id="43cb9-145">public void insertLines(str InsString)</span></span>                                          |                                                 |
-| <span data-ttu-id="43cb9-146">public void firstLine()</span><span class="sxs-lookup"><span data-stu-id="43cb9-146">public void firstLine()</span></span>                                                         |                                                 |
-| <span data-ttu-id="43cb9-147">public void deleteChars(\[int noOfChars\])</span><span class="sxs-lookup"><span data-stu-id="43cb9-147">public void deleteChars(\[int noOfChars\])</span></span>                                      |                                                 |
-
-### <a name="method-columnno"></a><span data-ttu-id="43cb9-148">メソッド columnNo</span><span class="sxs-lookup"><span data-stu-id="43cb9-148">Method columnNo</span></span>
-
-    public int columnNo()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-149">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-149">Return Value</span></span>
-
-### <a name="method-currentline"></a><span data-ttu-id="43cb9-150">メソッド currentLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-150">Method currentLine</span></span>
-
-    public str currentLine()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-151">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-151">Return Value</span></span>
-
-### <a name="method-currentlineno"></a><span data-ttu-id="43cb9-152">メソッド currentLineNo</span><span class="sxs-lookup"><span data-stu-id="43cb9-152">Method currentLineNo</span></span>
-
-    public int currentLineNo()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-153">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-153">Return Value</span></span>
-
-### <a name="method-getline"></a><span data-ttu-id="43cb9-154">メソッド getLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-154">Method getLine</span></span>
-
-    public str getLine()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-155">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-155">Return Value</span></span>
-
-### <a name="method-gotocol"></a><span data-ttu-id="43cb9-156">メソッド gotoCol</span><span class="sxs-lookup"><span data-stu-id="43cb9-156">Method gotoCol</span></span>
-
-    public int gotoCol(int ColumnNo)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-157">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-157">Parameters</span></span>
-
-<span data-ttu-id="43cb9-158">ColumnNo</span><span class="sxs-lookup"><span data-stu-id="43cb9-158">ColumnNo</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-159">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-159">Return Value</span></span>
-
-### <a name="method-lineno"></a><span data-ttu-id="43cb9-160">メソッド lineNo</span><span class="sxs-lookup"><span data-stu-id="43cb9-160">Method lineNo</span></span>
-
-    public int lineNo()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-161">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-161">Return Value</span></span>
-
-### <a name="method-markmode"></a><span data-ttu-id="43cb9-162">メソッド markMode</span><span class="sxs-lookup"><span data-stu-id="43cb9-162">Method markMode</span></span>
-
-    public MarkMode markMode()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-163">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-163">Return Value</span></span>
-
-### <a name="method-matchcase"></a><span data-ttu-id="43cb9-164">メソッド matchCase</span><span class="sxs-lookup"><span data-stu-id="43cb9-164">Method matchCase</span></span>
-
-    public boolean matchCase([boolean UseMatchCase])
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-165">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-165">Parameters</span></span>
-
-<span data-ttu-id="43cb9-166">UseMatchCase</span><span class="sxs-lookup"><span data-stu-id="43cb9-166">UseMatchCase</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-167">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-167">Return Value</span></span>
-
-### <a name="method-morelines"></a><span data-ttu-id="43cb9-168">メソッド moreLines</span><span class="sxs-lookup"><span data-stu-id="43cb9-168">Method moreLines</span></span>
-
-    public boolean moreLines()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-169">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-169">Return Value</span></span>
-
-### <a name="method-moreselectedlines"></a><span data-ttu-id="43cb9-170">メソッド moreSelectedLines</span><span class="sxs-lookup"><span data-stu-id="43cb9-170">Method moreSelectedLines</span></span>
-
-    public boolean moreSelectedLines()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-171">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-171">Return Value</span></span>
-
-### <a name="method-path"></a><span data-ttu-id="43cb9-172">メソッド path</span><span class="sxs-lookup"><span data-stu-id="43cb9-172">Method path</span></span>
-
-    public str path()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-173">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-173">Return Value</span></span>
-
-### <a name="method-regexp"></a><span data-ttu-id="43cb9-174">メソッド regexp</span><span class="sxs-lookup"><span data-stu-id="43cb9-174">Method regexp</span></span>
-
-    public boolean regexp([boolean UseRegExp])
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-175">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-175">Parameters</span></span>
-
-<span data-ttu-id="43cb9-176">UseRegExp</span><span class="sxs-lookup"><span data-stu-id="43cb9-176">UseRegExp</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-177">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-177">Return Value</span></span>
-
-### <a name="method-replace"></a><span data-ttu-id="43cb9-178">メソッド replace</span><span class="sxs-lookup"><span data-stu-id="43cb9-178">Method replace</span></span>
-
-    public boolean replace(str SearchString, str ReplaceString, boolean ReplaceAll)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-179">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-179">Parameters</span></span>
-
-<span data-ttu-id="43cb9-180">SearchString</span><span class="sxs-lookup"><span data-stu-id="43cb9-180">SearchString</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="43cb9-181">ReplaceString</span><span class="sxs-lookup"><span data-stu-id="43cb9-181">ReplaceString</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="43cb9-182">ReplaceAll</span><span class="sxs-lookup"><span data-stu-id="43cb9-182">ReplaceAll</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-183">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-183">Return Value</span></span>
-
-### <a name="method-search"></a><span data-ttu-id="43cb9-184">メソッド search</span><span class="sxs-lookup"><span data-stu-id="43cb9-184">Method search</span></span>
-
-    public boolean search(str SearchString)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-185">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-185">Parameters</span></span>
-
-<span data-ttu-id="43cb9-186">SearchString</span><span class="sxs-lookup"><span data-stu-id="43cb9-186">SearchString</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-187">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-187">Return Value</span></span>
-
-### <a name="method-searchstring"></a><span data-ttu-id="43cb9-188">メソッド searchString</span><span class="sxs-lookup"><span data-stu-id="43cb9-188">Method searchString</span></span>
-
-    public str searchString()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-189">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-189">Return Value</span></span>
-
-### <a name="method-selectionendcol"></a><span data-ttu-id="43cb9-190">メソッド selectionEndCol</span><span class="sxs-lookup"><span data-stu-id="43cb9-190">Method selectionEndCol</span></span>
-
-    public int selectionEndCol()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-191">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-191">Return Value</span></span>
-
-### <a name="method-selectionendline"></a><span data-ttu-id="43cb9-192">メソッド selectionEndLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-192">Method selectionEndLine</span></span>
-
-    public int selectionEndLine()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-193">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-193">Return Value</span></span>
-
-### <a name="method-selectionstartcol"></a><span data-ttu-id="43cb9-194">メソッド selectionStartCol</span><span class="sxs-lookup"><span data-stu-id="43cb9-194">Method selectionStartCol</span></span>
-
-    public int selectionStartCol()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-195">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-195">Return Value</span></span>
-
-### <a name="method-selectionstartline"></a><span data-ttu-id="43cb9-196">メソッド selectionStartLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-196">Method selectionStartLine</span></span>
-
-    public int selectionStartLine()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-197">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-197">Return Value</span></span>
-
-### <a name="method-open"></a><span data-ttu-id="43cb9-198">メソッド open</span><span class="sxs-lookup"><span data-stu-id="43cb9-198">Method open</span></span>
-
-    public static Editor open(str documentPath)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-199">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-199">Parameters</span></span>
-
-<span data-ttu-id="43cb9-200">documentPath</span><span class="sxs-lookup"><span data-stu-id="43cb9-200">documentPath</span></span>  
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-201">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-201">Return Value</span></span>
-
-### <a name="method-gotoline"></a><span data-ttu-id="43cb9-202">メソッド gotoLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-202">Method gotoLine</span></span>
-
-    public void gotoLine(int LineNo)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-203">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-203">Parameters</span></span>
-
-<span data-ttu-id="43cb9-204">LineNo</span><span class="sxs-lookup"><span data-stu-id="43cb9-204">LineNo</span></span>  
-
-### <a name="method-closeapplicationobjectdialog"></a><span data-ttu-id="43cb9-205">メソッド closeApplicationObjectDialog</span><span class="sxs-lookup"><span data-stu-id="43cb9-205">Method closeApplicationObjectDialog</span></span>
-
-    public void closeApplicationObjectDialog()
-
-### <a name="method-mark"></a><span data-ttu-id="43cb9-206">メソッド mark</span><span class="sxs-lookup"><span data-stu-id="43cb9-206">Method mark</span></span>
-
-    public void mark(int line, int col)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-207">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-207">Parameters</span></span>
-
-<span data-ttu-id="43cb9-208">明細行</span><span class="sxs-lookup"><span data-stu-id="43cb9-208">line</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="43cb9-209">col</span><span class="sxs-lookup"><span data-stu-id="43cb9-209">col</span></span>  
-
-### <a name="method-executescript"></a><span data-ttu-id="43cb9-210">メソッド executeScript</span><span class="sxs-lookup"><span data-stu-id="43cb9-210">Method executeScript</span></span>
-
-    public void executeScript(str scriptName)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-211">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-211">Parameters</span></span>
-
-<span data-ttu-id="43cb9-212">scriptName</span><span class="sxs-lookup"><span data-stu-id="43cb9-212">scriptName</span></span>  
-
-### <a name="method-nextline"></a><span data-ttu-id="43cb9-213">メソッド nextLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-213">Method nextLine</span></span>
-
-    public void nextLine()
-
-### <a name="method-firstselectedline"></a><span data-ttu-id="43cb9-214">メソッド firstSelectedLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-214">Method firstSelectedLine</span></span>
-
-    public void firstSelectedLine()
-
-### <a name="method-new"></a><span data-ttu-id="43cb9-215">メソッド new</span><span class="sxs-lookup"><span data-stu-id="43cb9-215">Method new</span></span>
-
-<span data-ttu-id="43cb9-216">Editor クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-216">Initializes a new instance of the Editor class.</span></span>
-
-    private void new()
-
-### <a name="method-unmark"></a><span data-ttu-id="43cb9-217">メソッド unmark</span><span class="sxs-lookup"><span data-stu-id="43cb9-217">Method unmark</span></span>
-
-    public void unmark()
-
-### <a name="method-insertstring"></a><span data-ttu-id="43cb9-218">メソッド insertString</span><span class="sxs-lookup"><span data-stu-id="43cb9-218">Method insertString</span></span>
-
-    public void insertString(str InsString)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-219">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-219">Parameters</span></span>
-
-<span data-ttu-id="43cb9-220">InsString</span><span class="sxs-lookup"><span data-stu-id="43cb9-220">InsString</span></span>  
-
-### <a name="method-close"></a><span data-ttu-id="43cb9-221">メソッド close</span><span class="sxs-lookup"><span data-stu-id="43cb9-221">Method close</span></span>
-
-    public void close()
-
-### <a name="method-nextselectedline"></a><span data-ttu-id="43cb9-222">メソッド nextSelectedLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-222">Method nextSelectedLine</span></span>
-
-    public void nextSelectedLine()
-
-### <a name="method-closesearchdialog"></a><span data-ttu-id="43cb9-223">メソッド closeSearchDialog</span><span class="sxs-lookup"><span data-stu-id="43cb9-223">Method closeSearchDialog</span></span>
-
-    public void closeSearchDialog()
-
-### <a name="method-deletelines"></a><span data-ttu-id="43cb9-224">メソッド deleteLines</span><span class="sxs-lookup"><span data-stu-id="43cb9-224">Method deleteLines</span></span>
-
-    public void deleteLines([int noOfLines])
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-225">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-225">Parameters</span></span>
-
-<span data-ttu-id="43cb9-226">noOfLines</span><span class="sxs-lookup"><span data-stu-id="43cb9-226">noOfLines</span></span>  
-
-### <a name="method-insertlines"></a><span data-ttu-id="43cb9-227">メソッド insertLines</span><span class="sxs-lookup"><span data-stu-id="43cb9-227">Method insertLines</span></span>
-
-    public void insertLines(str InsString)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-228">Parameters</span></span>
-
-<span data-ttu-id="43cb9-229">InsString</span><span class="sxs-lookup"><span data-stu-id="43cb9-229">InsString</span></span>  
-
-### <a name="method-firstline"></a><span data-ttu-id="43cb9-230">メソッド firstLine</span><span class="sxs-lookup"><span data-stu-id="43cb9-230">Method firstLine</span></span>
-
-    public void firstLine()
-
-### <a name="method-deletechars"></a><span data-ttu-id="43cb9-231">メソッド deleteChars</span><span class="sxs-lookup"><span data-stu-id="43cb9-231">Method deleteChars</span></span>
-
-    public void deleteChars([int noOfChars])
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-232">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-232">Parameters</span></span>
-
-<span data-ttu-id="43cb9-233">noOfChars</span><span class="sxs-lookup"><span data-stu-id="43cb9-233">noOfChars</span></span>  
-
-## <a name="class-enumerator"></a><span data-ttu-id="43cb9-234">クラス列挙子</span><span class="sxs-lookup"><span data-stu-id="43cb9-234">Class Enumerator</span></span>
-    class Enumerator extends Object
-
-### <a name="remarks"></a><span data-ttu-id="43cb9-235">備考</span><span class="sxs-lookup"><span data-stu-id="43cb9-235">Remarks</span></span>
-
-### <a name="examples"></a><span data-ttu-id="43cb9-236">例</span><span class="sxs-lookup"><span data-stu-id="43cb9-236">Examples</span></span>
-
-### <a name="methods"></a><span data-ttu-id="43cb9-237">メソッド</span><span class="sxs-lookup"><span data-stu-id="43cb9-237">Methods</span></span>
-
-| <span data-ttu-id="43cb9-238">方法</span><span class="sxs-lookup"><span data-stu-id="43cb9-238">Method</span></span>                        | <span data-ttu-id="43cb9-239">説明</span><span class="sxs-lookup"><span data-stu-id="43cb9-239">Description</span></span>                                          |
-|-------------------------------|------------------------------------------------------|
-| <span data-ttu-id="43cb9-240">public AnyType current()</span><span class="sxs-lookup"><span data-stu-id="43cb9-240">public AnyType current()</span></span>      |                                                      |
-| <span data-ttu-id="43cb9-241">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="43cb9-241">public str definitionString()</span></span> |                                                      |
-| <span data-ttu-id="43cb9-242">public boolean moveNext()</span><span class="sxs-lookup"><span data-stu-id="43cb9-242">public boolean moveNext()</span></span>     |                                                      |
-| <span data-ttu-id="43cb9-243">public str toString()</span><span class="sxs-lookup"><span data-stu-id="43cb9-243">public str toString()</span></span>         | <span data-ttu-id="43cb9-244">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-244">Returns a string that represents the current object.</span></span> |
-| <span data-ttu-id="43cb9-245">public void reset()</span><span class="sxs-lookup"><span data-stu-id="43cb9-245">public void reset()</span></span>           |                                                      |
-
-### <a name="method-current"></a><span data-ttu-id="43cb9-246">メソッド current</span><span class="sxs-lookup"><span data-stu-id="43cb9-246">Method current</span></span>
-
-    public AnyType current()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-247">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-247">Return Value</span></span>
-
-### <a name="method-definitionstring"></a><span data-ttu-id="43cb9-248">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="43cb9-248">Method definitionString</span></span>
-
-    public str definitionString()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-249">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-249">Return Value</span></span>
-
-### <a name="method-movenext"></a><span data-ttu-id="43cb9-250">メソッド moveNext</span><span class="sxs-lookup"><span data-stu-id="43cb9-250">Method moveNext</span></span>
-
-    public boolean moveNext()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-251">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-251">Return Value</span></span>
-
-### <a name="method-tostring"></a><span data-ttu-id="43cb9-252">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="43cb9-252">Method toString</span></span>
-
-<span data-ttu-id="43cb9-253">現在のオブジェクトを表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-253">Returns a string that represents the current object.</span></span>
-
-    public str toString()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-254">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-254">Return Value</span></span>
-
-<span data-ttu-id="43cb9-255">現在のオブジェクトを表す文字列。</span><span class="sxs-lookup"><span data-stu-id="43cb9-255">A string that represents the current object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="43cb9-256">備考</span><span class="sxs-lookup"><span data-stu-id="43cb9-256">Remarks</span></span>
-
-<span data-ttu-id="43cb9-257">既定の実装は、オブジェクトのクラス名を返します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-257">The default implementation returns the class name of the object.</span></span> <span data-ttu-id="43cb9-258">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</span><span class="sxs-lookup"><span data-stu-id="43cb9-258">The method can be overridden in a derived class to return values that are meaningful for that type.</span></span> <span data-ttu-id="43cb9-259">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-259">For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</span></span>
-
-### <a name="method-reset"></a><span data-ttu-id="43cb9-260">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="43cb9-260">Method reset</span></span>
-
-    public void reset()
-
-## <a name="class-executepermission"></a><span data-ttu-id="43cb9-261">クラス ExecutePermission</span><span class="sxs-lookup"><span data-stu-id="43cb9-261">Class ExecutePermission</span></span>
-    class ExecutePermission extends CodeAccessPermission
-
-<span data-ttu-id="43cb9-262">ExecutePermission クラスは、X++ コードの実行を制御します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-262">The ExecutePermission class controls the execution of X++ code.</span></span>
-
-### <a name="remarks"></a><span data-ttu-id="43cb9-263">備考</span><span class="sxs-lookup"><span data-stu-id="43cb9-263">Remarks</span></span>
-
-<span data-ttu-id="43cb9-264">このクラスは、特定の API のアクセス許可をチェックするように設計されています。</span><span class="sxs-lookup"><span data-stu-id="43cb9-264">This class is designed to check permissions for specific APIs.</span></span> <span data-ttu-id="43cb9-265">アクセス許可によって保護されているすべての API のリストについては、「セキュリティで保護された API」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="43cb9-265">For a list of all APIs that are protected by permissions, see Secured APIs.</span></span> <span data-ttu-id="43cb9-266">保護された API が実行される前に、対応する CodeAccessPermission::dema メソッドが呼び出される同じ層 (通常はサーバー層) で assert メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="43cb9-266">Before the protected API is executed, you must call the assert method on the same tier (which is usually the server tier) that the corresponding CodeAccessPermission::demand method is called on.</span></span> <span data-ttu-id="43cb9-267">次のいずれかの方法でサーバー層のメソッドを呼び出します:</span><span class="sxs-lookup"><span data-stu-id="43cb9-267">Call a method on the server tier from one of the following methods:</span></span>
-
--   <span data-ttu-id="43cb9-268">サーバー静的メソッド</span><span class="sxs-lookup"><span data-stu-id="43cb9-268">A server static method</span></span>
--   <span data-ttu-id="43cb9-269">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="43cb9-269">A class instance method that is set to run on the server by using the RunOn class property</span></span>
-
-### <a name="examples"></a><span data-ttu-id="43cb9-270">例</span><span class="sxs-lookup"><span data-stu-id="43cb9-270">Examples</span></span>
-
-<span data-ttu-id="43cb9-271">次のコード例は、ExecutePermission クラスの新しいインスタンスを示しています。</span><span class="sxs-lookup"><span data-stu-id="43cb9-271">The following code example shows a new instance of the ExecutePermission class.</span></span> <span data-ttu-id="43cb9-272">assert メソッドが呼び出され、コードが Thread.new メソッドを呼び出して新規スレッドを作成できることが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="43cb9-272">The assert method is called to declare that the code can then call the Thread.new method to create a new thread.</span></span>
-
-    server static void main(Args args) 
-    { 
-        Thread _t; 
-        ExecutePermission _perm; 
-        _perm = new ExecutePermission(); 
-        if (!_perm) 
-        { 
-            return; 
-        } 
-        _perm.assert(); 
-        // Invoke the protected API. 
-         _t = new Thread(); 
-        // Call member methods. 
-        if (_t) 
-        { 
-            _t.removeOnComplete(true); 
-            _t.run(classnum(SysCodeProfiler), identifierstr(transferFile)); 
-        } 
-        // Optionally, call revertAssert() to limit scope of assert. 
-        CodeAccessPermission::revertAssert(); 
-    }
-
-### <a name="methods"></a><span data-ttu-id="43cb9-273">メソッド</span><span class="sxs-lookup"><span data-stu-id="43cb9-273">Methods</span></span>
-
-| <span data-ttu-id="43cb9-274">方法</span><span class="sxs-lookup"><span data-stu-id="43cb9-274">Method</span></span>                                                 | <span data-ttu-id="43cb9-275">説明</span><span class="sxs-lookup"><span data-stu-id="43cb9-275">Description</span></span>                                                                      |
-|--------------------------------------------------------|----------------------------------------------------------------------------------|
-| <span data-ttu-id="43cb9-276">public CodeAccessPermission copy()</span><span class="sxs-lookup"><span data-stu-id="43cb9-276">public CodeAccessPermission copy()</span></span>                     | <span data-ttu-id="43cb9-277">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-277">Creates and returns a copy of the current permission class object.</span></span>               |
-| <span data-ttu-id="43cb9-278">public boolean isSubsetOf(CodeAccessPermission target)</span><span class="sxs-lookup"><span data-stu-id="43cb9-278">public boolean isSubsetOf(CodeAccessPermission target)</span></span> | <span data-ttu-id="43cb9-279">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-279">Determines whether a current permission is a subset of the specified permission.</span></span> |
-| <span data-ttu-id="43cb9-280">public void new()</span><span class="sxs-lookup"><span data-stu-id="43cb9-280">public void new()</span></span>                                      | <span data-ttu-id="43cb9-281">ExecutePermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-281">Initializes a new instance of the ExecutePermission class.</span></span>                       |
-
-### <a name="method-copy"></a><span data-ttu-id="43cb9-282">メソッド copy</span><span class="sxs-lookup"><span data-stu-id="43cb9-282">Method copy</span></span>
-
-<span data-ttu-id="43cb9-283">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-283">Creates and returns a copy of the current permission class object.</span></span>
-
-    public CodeAccessPermission copy()
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-284">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-284">Return Value</span></span>
-
-<span data-ttu-id="43cb9-285">現在のアクセス許可オブジェクトのコピーです。</span><span class="sxs-lookup"><span data-stu-id="43cb9-285">A copy of the current permission object.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="43cb9-286">備考</span><span class="sxs-lookup"><span data-stu-id="43cb9-286">Remarks</span></span>
-
-<span data-ttu-id="43cb9-287">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="43cb9-287">You override this method when you derive a class from the CodeAccessPermission class.</span></span>
-
-### <a name="method-issubsetof"></a><span data-ttu-id="43cb9-288">メソッド isSubsetOf</span><span class="sxs-lookup"><span data-stu-id="43cb9-288">Method isSubsetOf</span></span>
-
-<span data-ttu-id="43cb9-289">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-289">Determines whether a current permission is a subset of the specified permission.</span></span>
-
-    public boolean isSubsetOf(CodeAccessPermission target)
-
-#### <a name="parameters"></a><span data-ttu-id="43cb9-290">パラメーター</span><span class="sxs-lookup"><span data-stu-id="43cb9-290">Parameters</span></span>
-
-<span data-ttu-id="43cb9-291">target</span><span class="sxs-lookup"><span data-stu-id="43cb9-291">target</span></span>  
-<span data-ttu-id="43cb9-292">CodeAccessPermission クラス オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="43cb9-292">A CodeAccessPermission class object.</span></span>
-
-#### <a name="return-value"></a><span data-ttu-id="43cb9-293">戻り値</span><span class="sxs-lookup"><span data-stu-id="43cb9-293">Return Value</span></span>
-
-<span data-ttu-id="43cb9-294">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="43cb9-294">true if a current permission is a subset of the specified permission; otherwise, false.</span></span>
-
-#### <a name="remarks"></a><span data-ttu-id="43cb9-295">備考</span><span class="sxs-lookup"><span data-stu-id="43cb9-295">Remarks</span></span>
-
-<span data-ttu-id="43cb9-296">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</span><span class="sxs-lookup"><span data-stu-id="43cb9-296">You override this method when you derive a class from the CodeAccessPermission class.</span></span>
-
-### <a name="method-new"></a><span data-ttu-id="43cb9-297">メソッド new</span><span class="sxs-lookup"><span data-stu-id="43cb9-297">Method new</span></span>
-
-<span data-ttu-id="43cb9-298">ExecutePermission クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="43cb9-298">Initializes a new instance of the ExecutePermission class.</span></span> <span data-ttu-id="43cb9-299">終了。</span><span class="sxs-lookup"><span data-stu-id="43cb9-299">End.</span></span>
-
-    public void new()
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="e-classes.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>e-classes.894d4d.b19092e6941bd8c7a4b9b3f2934fe405211270e9.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b19092e6941bd8c7a4b9b3f2934fe405211270e9</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\e-classes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>E classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>System API classes that start with the letter E.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 E で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>E classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>System API classes that start with the letter E.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字 E で始まるシステム API クラス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Class Editor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス エディター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>public int columnNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int columnNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>public str currentLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str currentLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>public int currentLineNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int currentLineNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>public str getLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str getLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>public int gotoCol(int ColumnNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int gotoCol(int ColumnNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>public int lineNo()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int lineNo()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>public MarkMode markMode()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public MarkMode markMode()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>public boolean matchCase(<ph id="ph1">\[</ph>boolean UseMatchCase<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean matchCase(<ph id="ph1">\[</ph>boolean UseMatchCase<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>public boolean moreLines()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean moreLines()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>public boolean moreSelectedLines()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean moreSelectedLines()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>public str path()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str path()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>public boolean regexp(<ph id="ph1">\[</ph>boolean UseRegExp<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean regexp(<ph id="ph1">\[</ph>boolean UseRegExp<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>public boolean replace(str SearchString, str ReplaceString, boolean ReplaceAll)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean replace(str SearchString, str ReplaceString, boolean ReplaceAll)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>public boolean search(str SearchString)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean search(str SearchString)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>public str searchString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str searchString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>public int selectionEndCol()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int selectionEndCol()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>public int selectionEndLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int selectionEndLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>public int selectionStartCol()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int selectionStartCol()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>public int selectionStartLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public int selectionStartLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>::public static Editor open(str documentPath)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">::public static Editor open (str documentPath)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>public void gotoLine(int LineNo)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void gotoLine(int LineNo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>public void closeApplicationObjectDialog()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void closeApplicationObjectDialog()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>public void mark(int line, int col)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void mark(int line, int col)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>public void executeScript(str scriptName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void executeScript(str scriptName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>public void nextLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void nextLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>public void firstSelectedLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void firstSelectedLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>private void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">private void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Initializes a new instance of the Editor class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Editor クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>public void unmark()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void unmark()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>public void insertString(str InsString)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void insertString(str InsString)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>public void close()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void close()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>public void nextSelectedLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void nextSelectedLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>public void closeSearchDialog()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void closeSearchDialog()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>public void deleteLines(<ph id="ph1">\[</ph>int noOfLines<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void deleteLines(<ph id="ph1">\[</ph>int noOfLines<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>public void insertLines(str InsString)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void insertLines(str InsString)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>public void firstLine()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void firstLine()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>public void deleteChars(<ph id="ph1">\[</ph>int noOfChars<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void deleteChars(<ph id="ph1">\[</ph>int noOfChars<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Method columnNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド columnNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Method currentLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド currentLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Method currentLineNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド currentLineNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Method getLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド getLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Method gotoCol</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド gotoCol</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>ColumnNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ColumnNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Method lineNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド lineNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Method markMode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド markMode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Method matchCase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド matchCase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>UseMatchCase</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UseMatchCase</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Method moreLines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド moreLines</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Method moreSelectedLines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド moreSelectedLines</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Method path</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド path</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Method regexp</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド regexp</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>UseRegExp</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UseRegExp</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Method replace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド replace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>SearchString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SearchString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>ReplaceString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReplaceString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>ReplaceAll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReplaceAll</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Method search</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド search</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>SearchString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SearchString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Method searchString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド searchString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Method selectionEndCol</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド selectionEndCol</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Method selectionEndLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド selectionEndLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Method selectionStartCol</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド selectionStartCol</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Method selectionStartLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド selectionStartLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Method open</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド open</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>documentPath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">documentPath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Method gotoLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド gotoLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>LineNo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LineNo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Method closeApplicationObjectDialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド closeApplicationObjectDialog</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Method mark</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド mark</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>col</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">col</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Method executeScript</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド executeScript</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>scriptName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">scriptName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Method nextLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Method firstSelectedLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstSelectedLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Initializes a new instance of the Editor class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Editor クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Method unmark</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド unmark</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Method insertString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド insertString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>InsString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InsString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Method close</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド close</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Method nextSelectedLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド nextSelectedLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Method closeSearchDialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド closeSearchDialog</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Method deleteLines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド deleteLines</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>noOfLines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">noOfLines</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Method insertLines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド insertLines</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>InsString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InsString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Method firstLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド firstLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Method deleteChars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド deleteChars</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>noOfChars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">noOfChars</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Class Enumerator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス列挙子</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>public AnyType current()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public AnyType current()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>public str definitionString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str definitionString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>public boolean moveNext()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean moveNext()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>public str toString()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public str toString()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>public void reset()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void reset()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Method current</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド current</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Method definitionString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド definitionString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Method moveNext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド moveNext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Method toString</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド toString</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Returns a string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>A string that represents the current object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のオブジェクトを表す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>The default implementation returns the class name of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の実装は、オブジェクトのクラス名を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>The method can be overridden in a derived class to return values that are meaningful for that type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは派生クラスで上書きできるため、そのタイプの意味のある値が返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>For example, an instance of the SysMethodInfo class returns the method name and type of the method, such as instance or static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、SysMethodInfo クラスのインスタンスは、インスタンスまたは静的などのメソッド名およびメソッドのタイプを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Method reset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド reset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Class ExecutePermission</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ExecutePermission</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>The ExecutePermission class controls the execution of X++ code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExecutePermission クラスは、X++ コードの実行を制御します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>This class is designed to check permissions for specific APIs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、特定の API のアクセス許可をチェックするように設計されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>For a list of all APIs that are protected by permissions, see Secured APIs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス許可によって保護されているすべての API のリストについては、「セキュリティで保護された API」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Before the protected API is executed, you must call the assert method on the same tier (which is usually the server tier) that the corresponding CodeAccessPermission::demand method is called on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保護された API が実行される前に、対応する CodeAccessPermission::dema メソッドが呼び出される同じ層 (通常はサーバー層) で assert メソッドを呼び出す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Call a method on the server tier from one of the following methods:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のいずれかの方法でサーバー層のメソッドを呼び出します:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>A server static method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー静的メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>A class instance method that is set to run on the server by using the RunOn class property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RunOn クラス プロパティを使用して、サーバーで実行するように設定されているクラス インスタンス メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>The following code example shows a new instance of the ExecutePermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコード例は、ExecutePermission クラスの新しいインスタンスを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>The assert method is called to declare that the code can then call the Thread.new method to create a new thread.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">assert メソッドが呼び出され、コードが Thread.new メソッドを呼び出して新規スレッドを作成できることが宣言されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>public CodeAccessPermission copy()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public CodeAccessPermission copy()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Creates and returns a copy of the current permission class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>public boolean isSubsetOf(CodeAccessPermission target)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public boolean isSubsetOf(CodeAccessPermission target)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Determines whether a current permission is a subset of the specified permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>public void new()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">public void new()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Initializes a new instance of the ExecutePermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExecutePermission クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Method copy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド copy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Creates and returns a copy of the current permission class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可クラス オブジェクトのコピーを作成し、返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>A copy of the current permission object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可オブジェクトのコピーです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>You override this method when you derive a class from the CodeAccessPermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Method isSubsetOf</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド isSubsetOf</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Determines whether a current permission is a subset of the specified permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定したアクセス許可のサブセットかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>target</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">target</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>A CodeAccessPermission class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラス オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Return Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>true if a current permission is a subset of the specified permission; otherwise, false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のアクセス許可が指定したアクセス許可のサブセットである場合は true。それ以外の場合は、false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Remarks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">備考</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>You override this method when you derive a class from the CodeAccessPermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodeAccessPermission クラスからクラスを派生させる場合に、このメソッドを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Method new</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド new</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Initializes a new instance of the ExecutePermission class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExecutePermission クラスの新しいインスタンスを初期化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>End.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">終了。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

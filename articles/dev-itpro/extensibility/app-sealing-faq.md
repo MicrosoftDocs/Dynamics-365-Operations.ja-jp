@@ -1,111 +1,258 @@
----
-title: 拡張性 FAQ
-description: このトピックでは、拡張機能に関してよくある質問に対する回答を示します。
-author: FrankDahl
-manager: AnnBe
-ms.date: 02/25/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 89563
-ms.assetid: ''
-ms.search.region: Global
-ms.author: fdahl
-ms.search.validFrom: 2017-07-01
-ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: cf05164e2d79d6ca4f999c1d841f4eee0a456ded
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509793"
----
-# <a name="extensibility-faq"></a><span data-ttu-id="7d93a-103">拡張性 FAQ</span><span class="sxs-lookup"><span data-stu-id="7d93a-103">Extensibility FAQ</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-## <a name="will-source-code-be-available-after-the-hard-seal"></a><span data-ttu-id="7d93a-104">ハード シールの後にソース コードを使用できますか。</span><span class="sxs-lookup"><span data-stu-id="7d93a-104">Will source code be available after the hard seal?</span></span>
-
-<span data-ttu-id="7d93a-105">はい、ソース コードはハード シールの後に使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-105">Yes, source code will be available after the hard seal.</span></span> <span data-ttu-id="7d93a-106">効果的な実装とデバッグのために必須とされます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-106">It's required for effective implementation and debugging.</span></span>
-
-## <a name="how-do-i-contact-microsoft-if-i-have-an-extensibility-request"></a><span data-ttu-id="7d93a-107">拡張機能の要求がある場合、Microsoft に連絡するにはどうすればよいですか。</span><span class="sxs-lookup"><span data-stu-id="7d93a-107">How do I contact Microsoft if I have an extensibility request?</span></span>
-
-<span data-ttu-id="7d93a-108">Lifecycle Services (LCS) サイトには特別な拡張性要求書式があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-108">There is a special extensibility request form on the Lifecycle Services (LCS) site.</span></span> 
-
-## <a name="where-can-i-ask-questions-about-extensibility-patterns"></a><span data-ttu-id="7d93a-109">拡張性のパターンについてはどこで質問できますか</span><span class="sxs-lookup"><span data-stu-id="7d93a-109">Where can I ask questions about extensibility patterns?</span></span>
-
-<span data-ttu-id="7d93a-110">Yammer で Operations Extensibility グループに対するアクセスを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-110">You can gain access to the Operations Extensibility group in Yammer.</span></span> <span data-ttu-id="7d93a-111">Operations Extensibility は、パートナー契約の大部分を占める有効なグループです。</span><span class="sxs-lookup"><span data-stu-id="7d93a-111">Operations Extensibility is an active group that has a significant amount of partner engagement.</span></span> <span data-ttu-id="7d93a-112">機密保持契約に署名することにより、接続サイト経由でアクセスできるようになります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-112">You get access via the Connect site by signing an NDA.</span></span>
-
-## <a name="where-can-i-find-documentation-about-extensibility-patterns"></a><span data-ttu-id="7d93a-113">拡張性のパターンについてのドキュメントはどこにありますか ?</span><span class="sxs-lookup"><span data-stu-id="7d93a-113">Where can I find documentation about extensibility patterns?</span></span>
-
-<span data-ttu-id="7d93a-114">拡張性パターンについてのドキュメントは、[拡張性 ホーム ページ](extensibility-home-page.md)で利用可能です。</span><span class="sxs-lookup"><span data-stu-id="7d93a-114">Documentation about extensibility patterns is available on the [Extensibility home page](extensibility-home-page.md).</span></span>
-
-## <a name="where-can-i-get-information-about-extensibility-training"></a><span data-ttu-id="7d93a-115">拡張性のトレーニングに関する情報を取得する場所は?</span><span class="sxs-lookup"><span data-stu-id="7d93a-115">Where can I get information about extensibility training?</span></span>
-
-<span data-ttu-id="7d93a-116">トレーニング セッションを複数の方法で公表します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-116">We will announce training sessions in multiple ways.</span></span> <span data-ttu-id="7d93a-117">AppSource パートナーは一部のセッションについて直接招待を受ける可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-117">AppSource partners might receive direct invitations for some sessions.</span></span> <span data-ttu-id="7d93a-118">Operations Extensibility Yammer グループおよびその他のフォーラムのワーク ショップも公表します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-118">We will also announce workshops in the Operations Extensibility Yammer group and other forums.</span></span>  
-
-## <a name="what-is-the-goal-of-sealing-the-application"></a><span data-ttu-id="7d93a-119">アプリケーションの封印の目的は何ですか ?</span><span class="sxs-lookup"><span data-stu-id="7d93a-119">What is the goal of sealing the application?</span></span>
-
-<span data-ttu-id="7d93a-120">アプリケーションは、エコシステムでのアップグレード コスト削減への第一歩としてシールされているため、顧客は、常に最新のリリースを利用できます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-120">The application is being sealed as a step toward reducing upgrade costs in the ecosystem, so that customers can stay current on new releases.</span></span> <span data-ttu-id="7d93a-121">顧客は、Microsoft およびパートナーの新しい革新を利用することができます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-121">Customers can take advantage of new innovations that come from Microsoft and partners.</span></span>
-
-<span data-ttu-id="7d93a-122">拡張パッケージを使用すると、設計時のパフォーマンスが向上し、ビルドの自動化が迅速になり、単体テストが可能になります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-122">Extension packages enable better performance at design time, faster build automation, and unit testing.</span></span> <span data-ttu-id="7d93a-123">また、独立したソフトウェア ベンダー (ISV) や顧客から、さまざまなシステム間でより効率的にモデルを配布したりインストールできるようになります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-123">They also provide more efficient distribution and installation of models from independent software vendors (ISVs) and customers across different systems.</span></span>
-
-## <a name="what-is-microsoft-working-on-to-support-this-move"></a><span data-ttu-id="7d93a-124">この動きをサポートするために Microsoft は何に取り組んでいますか ?</span><span class="sxs-lookup"><span data-stu-id="7d93a-124">What is Microsoft working on to support this move?</span></span>
-
-<span data-ttu-id="7d93a-125">製品チームは、製品の拡張性を向上させるためにいくつかの分野に取り組んでいます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-125">There are several areas where the product team is working to improve the extensibility of the product.</span></span> <span data-ttu-id="7d93a-126">この作業には、広範な影響を与えるプラットフォームの変更から、追加フック ポイントを提供するリファクタリングされたアプリケーション コードまでさまざまなものがあります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-126">This work ranges from platform changes that have broad impact to refactored application code that provides additional hook points.</span></span> <span data-ttu-id="7d93a-127">詳細については、Operations Extensibility Yammer グループおよび製品のリリース ノートを参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d93a-127">For details, see the Operations Extensibility Yammer group and the product release notes.</span></span>
-
-## <a name="after-the-application-is-sealed-what-should-customers-do-in-a-critical-situation-if-they-must-make-a-quick-change"></a><span data-ttu-id="7d93a-128">アプリケーションをシールした後、すばやく変更する必要がある場合、顧客は、重要な状態で何をすべきでしょうか?</span><span class="sxs-lookup"><span data-stu-id="7d93a-128">After the application is sealed, what should customers do in a critical situation if they must make a quick change?</span></span>
-
-<span data-ttu-id="7d93a-129">このシナリオは、致命的なバグ修正が必要なシナリオと非常によく似ており、同じプロセスを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-129">This scenario is very similar to a scenario where a critical bug fix is required, and the same process should be followed.</span></span> <span data-ttu-id="7d93a-130">必要な最初の手順として、サポートのためのケースを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-130">As a required first step, you must create a case for support.</span></span>
-
-## <a name="can-i-overlayer-an-isv-solution-after-the-hard-seal-of-the-application-code"></a><span data-ttu-id="7d93a-131">アプリケーション コードのハード シールの後に ISV ソリューションをオーバーレイすることはできますか。</span><span class="sxs-lookup"><span data-stu-id="7d93a-131">Can I overlayer an ISV solution after the hard seal of the application code?</span></span>
-
-<span data-ttu-id="7d93a-132">ISV もモデルを封印することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="7d93a-132">We recommend that ISVs also seal their models.</span></span> <span data-ttu-id="7d93a-133">このステップは、アップグレード コストを削減するというより広い目標を達成するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-133">This step helps achieve the broader goal of reducing upgrade costs.</span></span> 
-
-## <a name="will-i-be-able-to-overlayer-an-on-premises-solution"></a><span data-ttu-id="7d93a-134">オンプレミス ソリューションをオーバーレイすることはできますか。</span><span class="sxs-lookup"><span data-stu-id="7d93a-134">Will I be able to overlayer an on-premises solution?</span></span>
-
-<span data-ttu-id="7d93a-135">オンプレミス ソリューションは、クラウド ソリューションとして同じパターンに従います。</span><span class="sxs-lookup"><span data-stu-id="7d93a-135">On-premises solutions will follow the same patterns as cloud solutions.</span></span> <span data-ttu-id="7d93a-136">したがって、Microsoft コードのオーバーレイはサポートされません。</span><span class="sxs-lookup"><span data-stu-id="7d93a-136">Therefore, no overlayering of Microsoft code will be supported.</span></span>
-    
-## <a name="how-often-will-microsoft-provide-external-updates-so-that-partners-can-see-what-extensibility-enhancements-have-been-made"></a><span data-ttu-id="7d93a-137">どのくらいの頻度で Microsoft は外部更新を提供することで、パートナーがどの拡張性の強化が実行されたかを確認できますか。</span><span class="sxs-lookup"><span data-stu-id="7d93a-137">How often will Microsoft provide external updates so that partners can see what extensibility enhancements have been made?</span></span>
-
-<span data-ttu-id="7d93a-138">Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プラットフォームおよびアプリケーションの月ごとの更新プログラムを提供する計画です。</span><span class="sxs-lookup"><span data-stu-id="7d93a-138">We plan to provide monthly updates of platform and application after Microsoft Dynamics 365 for Finance and Operations release 8.0.</span></span>
-
-## <a name="why-wasnt-my-extensibility-request-accepted"></a><span data-ttu-id="7d93a-139">拡張性要求が承認されなかった理由を教えてください。</span><span class="sxs-lookup"><span data-stu-id="7d93a-139">Why wasn't my extensibility request accepted?</span></span>
-
-<span data-ttu-id="7d93a-140">一部の拡張性は、重大な変更を要求します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-140">Some extensibility requests break changes.</span></span> <span data-ttu-id="7d93a-141">重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-141">Some of the more common potentially breaking requests are listed here along with potential workarounds.</span></span> <span data-ttu-id="7d93a-142">さらに、[拡張の作成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)を読んで既存のプラットフォーム拡張機能については理解し、[拡張性要求を記録するためのヒント](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/)を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。</span><span class="sxs-lookup"><span data-stu-id="7d93a-142">In addition, read [Creating extensions](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value) to understand the existing platform extension capabilities and [Tips for logging extensibility requests](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/) to learn more about how to create solid requests if a capability doesn't exist in the latest release.</span></span>
-
-### <a name="why-cant-edtstringsize-be-made-extensible"></a><span data-ttu-id="7d93a-143">EDT.StringSize を拡張可能にできないのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="7d93a-143">Why can't EDT.StringSize be made extensible?</span></span>
-
-- <span data-ttu-id="7d93a-144">要求: 拡張を通じて EDT.StringSize を変更可能にする。</span><span class="sxs-lookup"><span data-stu-id="7d93a-144">Request: Make EDT.StringSize changeable via extension.</span></span>
-- <span data-ttu-id="7d93a-145">問題: テーブル文字列フィールド (FieldX) のタイプが "親 EDT" であり、タイプが EDT2 (EDT2 は "親 EDT" から派生) の別のテーブルのフィールド (FieldY) に関連付けられている (テーブル関係を通じて) いる場合。</span><span class="sxs-lookup"><span data-stu-id="7d93a-145">Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT”).</span></span> <span data-ttu-id="7d93a-146">EDT2.StringSize の増加を許可することで FieldY が大きい文字列を持つ可能性がある場合、FieldX は新しい文字列サイズを処理できません。</span><span class="sxs-lookup"><span data-stu-id="7d93a-146">If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size.</span></span> 
-- <span data-ttu-id="7d93a-147">回避策: 新しい EDT を作成し、テーブル フィールド FieldY にそれを使用します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-147">Workaround: Create a new EDT and use that for the table field FieldY.</span></span>
-
-### <a name="why-cant-a-unique-table-index-be-made-extensible"></a><span data-ttu-id="7d93a-148">固有のテーブル インデックスを拡張可能にできないのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="7d93a-148">Why can't a unique table index be made extensible?</span></span>
-
-- <span data-ttu-id="7d93a-149">要求: 拡張を通じて固有のテーブル インデックスを拡張可能にする。たとえば、余分なフィールドの追加を許可するによってなど。</span><span class="sxs-lookup"><span data-stu-id="7d93a-149">Request: Make unique table indexes changeable via extension, for example by allowing an extra field to be added.</span></span>
-- <span data-ttu-id="7d93a-150">問題: 固有のテーブル インデックスが変更され、すべてのデータが新しいインデックスに準拠していない場合、重大な変更となります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-150">Problem: If a unique table index changes and any data does not conform to the new index, then it would be a breaking change.</span></span> <span data-ttu-id="7d93a-151">また、重複レコードを取得できるようになったため、クエリに影響を与えます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-151">Also, any query would affect it since it can now retrieve a non-unique record.</span></span> <span data-ttu-id="7d93a-152">たとえば、Person テーブルにキー "Name" があり、name="Chris" が適切な担当者を選択したが、BirthDate がキーに追加された場合、"Chris" に複数のレコードが返される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-152">For example, if a Person table had a key of "Name" and select person where name="Chris" works, but if BirthDate was added to the key, now there could be multiple records returned for "Chris".</span></span>
-- <span data-ttu-id="7d93a-153">回避策: validateWrite または validateInsert メソッドに "soft" 制約を追加します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-153">Workaround: Add "soft" constraints in the validateWrite or validateInsert methods.</span></span>
-
-### <a name="why-cant-countryregioncode-be-made-extensible-it-already-is"></a><span data-ttu-id="7d93a-154">CountryRegionCode を拡張可能にできないのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="7d93a-154">Why can't CountryRegionCode be made extensible?</span></span> <span data-ttu-id="7d93a-155">(*既にこのようになっています*)</span><span class="sxs-lookup"><span data-stu-id="7d93a-155">(*it already is*)</span></span>
-- <span data-ttu-id="7d93a-156">要求: 拡張を通じて CountryRegionCode を変更可能にする。</span><span class="sxs-lookup"><span data-stu-id="7d93a-156">Request: Make CountryRegionCode changeable via extension.</span></span>
-- <span data-ttu-id="7d93a-157">問題: プラットフォーム更新 14 以降、CountryRegionCode への変更は、CountryRegionCode プロパティに値が既にある場合にサポートされます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-157">Problem: Starting with Platform update 14, changes to CountryRegionCode are supported if the CountryRegionCode property already has a value.</span></span> <span data-ttu-id="7d93a-158">変更の制限が厳しくなり (要素は一部の国/地域でのみ利用可能になりました)、重大な変更となる可能性があるため、空の CountryRegionCode プロパティを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="7d93a-158">Empty CountryRegionCode properties cannot be changed because that change is more restrictive (the element would now only be available for certain countries/regions) and therefore would be a breaking change.</span></span>
-- <span data-ttu-id="7d93a-159">回避策: 要素が既に国/地域に固有の場合、既存の CountryRegionCode 拡張機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-159">Workaround: Use the existing CountryRegionCode extension capability when the element is already country/region specific.</span></span>
-
-### <a name="why-cant-the-table-field-properties-allowedit-alloweditoncreate-mandatory-or-ignoreedtrelation-be-made-extensible"></a><span data-ttu-id="7d93a-160">テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、または IgnoreEDTRelation を拡張可能にできないのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="7d93a-160">Why can't the Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, or IgnoreEDTRelation be made extensible?</span></span>
-- <span data-ttu-id="7d93a-161">リクエスト: テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、IgnoreEDTRelation を拡張機能経由で変更可能にします。</span><span class="sxs-lookup"><span data-stu-id="7d93a-161">Request: Make Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, and/or IgnoreEDTRelation changeable via extension.</span></span>
-- <span data-ttu-id="7d93a-162">問題: テーブル フィールドで "編集を許可"、"作成時の編集を許可"、"必須"、"IgnoreEDTRelation" プロパティを変更できると、重大な変更が生じます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-162">Problem: The ability to change the "Allow Edit", "Allow Edit On Create", "Mandatory", and "IgnoreEDTRelation" properties on Table Fields would result in breaking changes.</span></span> <span data-ttu-id="7d93a-163">編集を許可するフィールドを変更すると、フィールドの目的が変更されます。</span><span class="sxs-lookup"><span data-stu-id="7d93a-163">Changing a field to allow editing changes the intent of the field.</span></span> <span data-ttu-id="7d93a-164">フィールドの編集を許可しないと、既存の動作が遮断されることがあります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-164">Not allowing a field to be edited can break existing behavior.</span></span> <span data-ttu-id="7d93a-165">関係を変更すると、その関係の当初の目的が中断され、重大な変更となります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-165">Changing a relation breaks the original intent of that relation, which is a breaking change.</span></span> <span data-ttu-id="7d93a-166">フィールドを必須にすると、既存の動作が中断される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-166">Making a field mandatory can result in breaking existing behavior.</span></span>
-- <span data-ttu-id="7d93a-167">対応策: 拡張機能経由で新しいテーブル フィールドを追加し、必要に応じてそれを制御します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-167">Workaround: Add new Table Fields via extension and control those as needed.</span></span>
-
-### <a name="why-cant-security-privileges-be-made-extensible"></a><span data-ttu-id="7d93a-168">セキュリティ権限を拡張可能にできないのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="7d93a-168">Why can't Security Privileges be made extensible?</span></span>
-- <span data-ttu-id="7d93a-169">要求: 拡張を通じてセキュリティ権限を変更可能にする。</span><span class="sxs-lookup"><span data-stu-id="7d93a-169">Request: Make Security Privilege changeable via extension.</span></span>
-- <span data-ttu-id="7d93a-170">問題: セキュリティ権限を変更できると、変更が分割される可能性があります。これはセキュリティ メタデータの最下位レベルであるためです。</span><span class="sxs-lookup"><span data-stu-id="7d93a-170">Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.</span></span>
-- <span data-ttu-id="7d93a-171">対応策: 必要な場合は、新しいセキュリティ権限を作成し、それを使用します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-171">Workaround: Create a new Security Privilege if needed and use that.</span></span>
-
-### <a name="why-should-i-avoid-calling-and-extending-apis-that-are-marked-with-internaluseonlyattribute"></a><span data-ttu-id="7d93a-172">InternalUseOnlyAttribute でマークされている API を呼び出して拡張することを避けるべきなのはなぜですか。</span><span class="sxs-lookup"><span data-stu-id="7d93a-172">Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?</span></span>
-<span data-ttu-id="7d93a-173">アプリケーション全体で、顧客、パートナー、または ISV によって行われた API への変更を破損しないようにする努力がはらわれています。</span><span class="sxs-lookup"><span data-stu-id="7d93a-173">Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs.</span></span> <span data-ttu-id="7d93a-174">クラスまたはメソッドに **InternalUseOnlyAttribute** が適用されている場合、API は内部使用専用であり、警告なしで変更される可能性があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-174">When a class or method has the **InternalUseOnlyAttribute** applied to it, this means that the API is for internal use only and could change without warning.</span></span> <span data-ttu-id="7d93a-175">顧客、パートナー、または ISV が **InternalUseOnlyAttribute** のある API を使用または拡張した場合、問題が発生する可能性があります。API はいつでも変更される可能性があり、これによって更新を適用する前に拡張機能の変更が必要になるためです。</span><span class="sxs-lookup"><span data-stu-id="7d93a-175">If customers, partners, or ISVs use or extend an API with **InternalUseOnlyAttribute**, this could create issues because the API could change at any time, which would require changes in their extensions before an update can be applied.</span></span> <span data-ttu-id="7d93a-176">この結果、緊急の変更が必要になり、再コンパイルが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="7d93a-176">This could result in urgent changes and the need to recompile.</span></span> <span data-ttu-id="7d93a-177">開発者は、変更されないままのこれらのクラスおよびメソッドに依存しないでください。</span><span class="sxs-lookup"><span data-stu-id="7d93a-177">Developers should not depend on these classes and methods remaining unchanged.</span></span>
-
-<span data-ttu-id="7d93a-178">**InternalUseOnlyAttribute** のあるクラスおよびメソッドを呼び出すと、コンパイラの警告が発生します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-178">Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings.</span></span> <span data-ttu-id="7d93a-179">プラットフォーム 20 からプラットフォーム更新 24 までは、コマンド チェーンを使用する **InternalUseOnlyAttribute** のある対象のクラスおよびメソッドによりコンパイル エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="7d93a-179">Starting in Platform update 20 to Platform update 24, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will result in compiler errors.</span></span> <span data-ttu-id="7d93a-180">プラットフォーム更新 25 以降では、コンパイラ警告が発行され続ける予定です。</span><span class="sxs-lookup"><span data-stu-id="7d93a-180">In Platform update 25 and later, we plan to continue to issue compiler warnings.</span></span> 
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="app-sealing-faq.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>app-sealing-faq.153a27.c963f5c3e049f886752a0bab7e53169cbc73d497.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>c963f5c3e049f886752a0bab7e53169cbc73d497</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\extensibility\app-sealing-faq.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Extensibility FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性 FAQ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides answers to some frequently asked questions about extensibility.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、拡張機能に関してよくある質問に対する回答を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Extensibility FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性 FAQ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Will source code be available after the hard seal?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ハード シールの後にソース コードを使用できますか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Yes, source code will be available after the hard seal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">はい、ソース コードはハード シールの後に使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It's required for effective implementation and debugging.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">効果的な実装とデバッグのために必須とされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>How do I contact Microsoft if I have an extensibility request?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能の要求がある場合、Microsoft に連絡するにはどうすればよいですか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>There is a special extensibility request form on the Lifecycle Services (LCS) site.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services (LCS) サイトには特別な拡張性要求書式があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Where can I ask questions about extensibility patterns?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性のパターンについてはどこで質問できますか</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>You can gain access to the Operations Extensibility group in Yammer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yammer で Operations Extensibility グループに対するアクセスを取得することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Operations Extensibility is an active group that has a significant amount of partner engagement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operations Extensibility は、パートナー契約の大部分を占める有効なグループです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>You get access via the Connect site by signing an NDA.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機密保持契約に署名することにより、接続サイト経由でアクセスできるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Where can I find documentation about extensibility patterns?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性のパターンについてのドキュメントはどこにありますか ?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Documentation about extensibility patterns is available on the <bpt id="p1">[</bpt>Extensibility home page<ept id="p1">](extensibility-home-page.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性パターンについてのドキュメントは、<bpt id="p1">[</bpt>拡張性 ホーム ページ<ept id="p1">](extensibility-home-page.md)</ept>で利用可能です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Where can I get information about extensibility training?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性のトレーニングに関する情報を取得する場所は?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>We will announce training sessions in multiple ways.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トレーニング セッションを複数の方法で公表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>AppSource partners might receive direct invitations for some sessions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AppSource パートナーは一部のセッションについて直接招待を受ける可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>We will also announce workshops in the Operations Extensibility Yammer group and other forums.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operations Extensibility Yammer グループおよびその他のフォーラムのワーク ショップも公表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>What is the goal of sealing the application?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションの封印の目的は何ですか ?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The application is being sealed as a step toward reducing upgrade costs in the ecosystem, so that customers can stay current on new releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションは、エコシステムでのアップグレード コスト削減への第一歩としてシールされているため、顧客は、常に最新のリリースを利用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Customers can take advantage of new innovations that come from Microsoft and partners.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客は、Microsoft およびパートナーの新しい革新を利用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Extension packages enable better performance at design time, faster build automation, and unit testing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張パッケージを使用すると、設計時のパフォーマンスが向上し、ビルドの自動化が迅速になり、単体テストが可能になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>They also provide more efficient distribution and installation of models from independent software vendors (ISVs) and customers across different systems.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、独立したソフトウェア ベンダー (ISV) や顧客から、さまざまなシステム間でより効率的にモデルを配布したりインストールできるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>What is Microsoft working on to support this move?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動きをサポートするために Microsoft は何に取り組んでいますか ?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>There are several areas where the product team is working to improve the extensibility of the product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品チームは、製品の拡張性を向上させるためにいくつかの分野に取り組んでいます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>This work ranges from platform changes that have broad impact to refactored application code that provides additional hook points.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この作業には、広範な影響を与えるプラットフォームの変更から、追加フック ポイントを提供するリファクタリングされたアプリケーション コードまでさまざまなものがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>For details, see the Operations Extensibility Yammer group and the product release notes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、Operations Extensibility Yammer グループおよび製品のリリース ノートを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>After the application is sealed, what should customers do in a critical situation if they must make a quick change?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションをシールした後、すばやく変更する必要がある場合、顧客は、重要な状態で何をすべきでしょうか?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>This scenario is very similar to a scenario where a critical bug fix is required, and the same process should be followed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このシナリオは、致命的なバグ修正が必要なシナリオと非常によく似ており、同じプロセスを実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>As a required first step, you must create a case for support.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要な最初の手順として、サポートのためのケースを作成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Can I overlayer an ISV solution after the hard seal of the application code?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション コードのハード シールの後に ISV ソリューションをオーバーレイすることはできますか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>We recommend that ISVs also seal their models.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV もモデルを封印することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>This step helps achieve the broader goal of reducing upgrade costs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このステップは、アップグレード コストを削減するというより広い目標を達成するのに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Will I be able to overlayer an on-premises solution?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス ソリューションをオーバーレイすることはできますか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>On-premises solutions will follow the same patterns as cloud solutions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス ソリューションは、クラウド ソリューションとして同じパターンに従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Therefore, no overlayering of Microsoft code will be supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、Microsoft コードのオーバーレイはサポートされません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>How often will Microsoft provide external updates so that partners can see what extensibility enhancements have been made?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">どのくらいの頻度で Microsoft は外部更新を提供することで、パートナーがどの拡張性の強化が実行されたかを確認できますか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>We plan to provide monthly updates of platform and application after Microsoft Dynamics 365 for Finance and Operations release 8.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プラットフォームおよびアプリケーションの月ごとの更新プログラムを提供する計画です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Why wasn't my extensibility request accepted?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張性要求が承認されなかった理由を教えてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Some extensibility requests break changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の拡張性は、重大な変更を要求します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Some of the more common potentially breaking requests are listed here along with potential workarounds.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>In addition, read <bpt id="p1">[</bpt>Creating extensions<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)</ept> to understand the existing platform extension capabilities and <bpt id="p2">[</bpt>Tips for logging extensibility requests<ept id="p2">](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/)</ept> to learn more about how to create solid requests if a capability doesn't exist in the latest release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに、<bpt id="p1">[</bpt>拡張の作成<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)</ept>を読んで既存のプラットフォーム拡張機能については理解し、<bpt id="p2">[</bpt>拡張性要求を記録するためのヒント<ept id="p2">](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/)</ept>を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Why can't EDT.StringSize be made extensible?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDT.StringSize を拡張可能にできないのはなぜですか?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Request: Make EDT.StringSize changeable via extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求: 拡張を通じて EDT.StringSize を変更可能にする。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Problem: When a table string field (FieldX) is of type “parent EDT" and is associated (through table relations) with another table’s field (FieldY) of type EDT2 (EDT2 is derived from “parent EDT”).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題: テーブル文字列フィールド (FieldX) のタイプが "親 EDT" であり、タイプが EDT2 (EDT2 は "親 EDT" から派生) の別のテーブルのフィールド (FieldY) に関連付けられている (テーブル関係を通じて) いる場合。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>If FieldY could have a larger string by allowing EDT2.StringSize to increase, FieldX would not be able to handle the new string size.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDT2.StringSize の増加を許可することで FieldY が大きい文字列を持つ可能性がある場合、FieldX は新しい文字列サイズを処理できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Workaround: Create a new EDT and use that for the table field FieldY.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">回避策: 新しい EDT を作成し、テーブル フィールド FieldY にそれを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Why can't a unique table index be made extensible?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">固有のテーブル インデックスを拡張可能にできないのはなぜですか?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Request: Make unique table indexes changeable via extension, for example by allowing an extra field to be added.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求: 拡張を通じて固有のテーブル インデックスを拡張可能にする。たとえば、余分なフィールドの追加を許可するによってなど。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Problem: If a unique table index changes and any data does not conform to the new index, then it would be a breaking change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題: 固有のテーブル インデックスが変更され、すべてのデータが新しいインデックスに準拠していない場合、重大な変更となります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Also, any query would affect it since it can now retrieve a non-unique record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、重複レコードを取得できるようになったため、クエリに影響を与えます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>For example, if a Person table had a key of "Name" and select person where name="Chris" works, but if BirthDate was added to the key, now there could be multiple records returned for "Chris".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、Person テーブルにキー "Name" があり、name="Chris" が適切な担当者を選択したが、BirthDate がキーに追加された場合、"Chris" に複数のレコードが返される可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Workaround: Add "soft" constraints in the validateWrite or validateInsert methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">回避策: validateWrite または validateInsert メソッドに "soft" 制約を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Why can't CountryRegionCode be made extensible?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CountryRegionCode を拡張可能にできないのはなぜですか?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>(<bpt id="p1">*</bpt>it already is<ept id="p1">*</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">*</bpt>既にこのようになっています<ept id="p1">*</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Request: Make CountryRegionCode changeable via extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求: 拡張を通じて CountryRegionCode を変更可能にする。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Problem: Starting with Platform update 14, changes to CountryRegionCode are supported if the CountryRegionCode property already has a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題: プラットフォーム更新 14 以降、CountryRegionCode への変更は、CountryRegionCode プロパティに値が既にある場合にサポートされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Empty CountryRegionCode properties cannot be changed because that change is more restrictive (the element would now only be available for certain countries/regions) and therefore would be a breaking change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更の制限が厳しくなり (要素は一部の国/地域でのみ利用可能になりました)、重大な変更となる可能性があるため、空の CountryRegionCode プロパティを変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Workaround: Use the existing CountryRegionCode extension capability when the element is already country/region specific.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">回避策: 要素が既に国/地域に固有の場合、既存の CountryRegionCode 拡張機能を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Why can't the Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, or IgnoreEDTRelation be made extensible?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、または IgnoreEDTRelation を拡張可能にできないのはなぜですか?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Request: Make Table Field properties AllowEdit, AllowEditOnCreate, Mandatory, and/or IgnoreEDTRelation changeable via extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リクエスト: テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、IgnoreEDTRelation を拡張機能経由で変更可能にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Problem: The ability to change the "Allow Edit", "Allow Edit On Create", "Mandatory", and "IgnoreEDTRelation" properties on Table Fields would result in breaking changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題: テーブル フィールドで "編集を許可"、"作成時の編集を許可"、"必須"、"IgnoreEDTRelation" プロパティを変更できると、重大な変更が生じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Changing a field to allow editing changes the intent of the field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">編集を許可するフィールドを変更すると、フィールドの目的が変更されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Not allowing a field to be edited can break existing behavior.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドの編集を許可しないと、既存の動作が遮断されることがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Changing a relation breaks the original intent of that relation, which is a breaking change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関係を変更すると、その関係の当初の目的が中断され、重大な変更となります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Making a field mandatory can result in breaking existing behavior.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドを必須にすると、既存の動作が中断される可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Workaround: Add new Table Fields via extension and control those as needed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対応策: 拡張機能経由で新しいテーブル フィールドを追加し、必要に応じてそれを制御します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Why can't Security Privileges be made extensible?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セキュリティ権限を拡張可能にできないのはなぜですか?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Request: Make Security Privilege changeable via extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求: 拡張を通じてセキュリティ権限を変更可能にする。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題: セキュリティ権限を変更できると、変更が分割される可能性があります。これはセキュリティ メタデータの最下位レベルであるためです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Workaround: Create a new Security Privilege if needed and use that.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対応策: 必要な場合は、新しいセキュリティ権限を作成し、それを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InternalUseOnlyAttribute でマークされている API を呼び出して拡張することを避けるべきなのはなぜですか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション全体で、顧客、パートナー、または ISV によって行われた API への変更を破損しないようにする努力がはらわれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>When a class or method has the <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> applied to it, this means that the API is for internal use only and could change without warning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスまたはメソッドに <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> が適用されている場合、API は内部使用専用であり、警告なしで変更される可能性があることを意味します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>If customers, partners, or ISVs use or extend an API with <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept>, this could create issues because the API could change at any time, which would require changes in their extensions before an update can be applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客、パートナー、または ISV が <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> のある API を使用または拡張した場合、問題が発生する可能性があります。API はいつでも変更される可能性があり、これによって更新を適用する前に拡張機能の変更が必要になるためです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>This could result in urgent changes and the need to recompile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この結果、緊急の変更が必要になり、再コンパイルが必要になる場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Developers should not depend on these classes and methods remaining unchanged.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者は、変更されないままのこれらのクラスおよびメソッドに依存しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Calls to classes and methods with the <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> will result in compiler warnings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> のあるクラスおよびメソッドを呼び出すと、コンパイラの警告が発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Starting in Platform update 20 to Platform update 24, targeting classes and methods with <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> using Chain of Command will result in compiler errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォーム 20 からプラットフォーム更新 24 までは、コマンド チェーンを使用する <bpt id="p1">**</bpt>InternalUseOnlyAttribute<ept id="p1">**</ept> のある対象のクラスおよびメソッドによりコンパイル エラーが発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>In Platform update 25 and later, we plan to continue to issue compiler warnings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォーム更新 25 以降では、コンパイラ警告が発行され続ける予定です。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,74 +1,102 @@
----
-title: 拡張機能を使用してテーブルにメソッドを追加
-description: このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。
-author: ivanv-microsoft
-manager: AnnBe
-ms.date: 10/22/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 268724
-ms.assetid: ''
-ms.search.region: Global
-ms.author: ivanv
-ms.search.validFrom: 2017-07-01
-ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 106f377df79d959e724a0ae849e082d28cb6a08f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506375"
----
-# <a name="add-methods-to-tables-through-extension"></a><span data-ttu-id="d62ec-103">拡張機能を使用してテーブルにメソッドを追加</span><span class="sxs-lookup"><span data-stu-id="d62ec-103">Add methods to tables through extension</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="d62ec-104">テーブルに関連付けられているビジネス ロジックを拡張するとき、コードをクリーンに維持するために役立つ一般的なコーディング原則はまだ適用されます。</span><span class="sxs-lookup"><span data-stu-id="d62ec-104">When you extend the business logic that is related to a table, the general coding principles that help keep your code clean still apply.</span></span> <span data-ttu-id="d62ec-105">したがって、最終的にアクションをテーブルの別々のメソッドにカプセル化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-105">Therefore, you must eventually encapsulate actions in separate methods on the table.</span></span> <span data-ttu-id="d62ec-106">Microsoft Dynamics AX 2012 では、オーバーレイ経由でテーブルに直接メソッドを追加することによってそのタスクを完了していました。</span><span class="sxs-lookup"><span data-stu-id="d62ec-106">In Microsoft Dynamics AX 2012, you completed that task by adding the method directly on the table through overlayering.</span></span> <span data-ttu-id="d62ec-107">拡張を使用して同じタスクを完了するには、別の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="d62ec-107">To complete the same task through extension, you use a different approach.</span></span> <span data-ttu-id="d62ec-108">具体的には、拡張クラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d62ec-108">Specifically, you create an augmentation class.</span></span>
-
-<span data-ttu-id="d62ec-109">たとえば、**MyInventLocationId** という名前新しいフィールドが、拡張機能によって InventTable テーブルに追加されました。</span><span class="sxs-lookup"><span data-stu-id="d62ec-109">For example, a new field that is named **MyInventLocationId** was added to the InventTable table through extension.</span></span> <span data-ttu-id="d62ec-110">**挿入**イベント用のデータ イベント ハンドラーも作成されました。新しいフィールドに入力するロジックを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-110">A data event handler was also created for the **Inserting** event, and you must implement the logic of filling the new field there.</span></span> <span data-ttu-id="d62ec-111">そのアクションをカプセル化するには、InventTable で新しいメソッドを作成し、そのメソッドに **myDefaultInventLocationId** という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="d62ec-111">To encapsulate that action, you will create a new method on InventTable and name that method **myDefaultInventLocationId**.</span></span>
-
-<span data-ttu-id="d62ec-112">最初に、拡張モデルに新しいクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d62ec-112">You first create a new class in the extension model.</span></span> <span data-ttu-id="d62ec-113">このクラスは InventTable テーブルを拡張し、読みやすく理解しやすい方法でテーブルのフィールドとメソッドにアクセスできるようにします</span><span class="sxs-lookup"><span data-stu-id="d62ec-113">This class will augment the InventTable table, and enable access to the table's fields and methods in a manner that is easy to read and understand.</span></span> <span data-ttu-id="d62ec-114">強化クラスに正しい名前を選択することが重要です。</span><span class="sxs-lookup"><span data-stu-id="d62ec-114">It's important that you choose the correct name for your augmentation class.</span></span> <span data-ttu-id="d62ec-115">この名前は、展開されるすべてのモデルのすべてのタイプにわたって一意でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="d62ec-115">This name must be unique across all types in all models that are deployed.</span></span> <span data-ttu-id="d62ec-116">詳細については、[モデル拡張機能の名前付けガイドライン](naming-guidelines-extensions.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d62ec-116">For more information, see [Naming guidelines for model extensions](naming-guidelines-extensions.md).</span></span>
-
-```
-[ExtensionOf(tableStr(InventTable))]
-final class InventTableMy_Extension
-{
-    public void myDefaultInventLocationId()
-    {
-        // This would have partner specific logic to initialize the new field.
-        this.MyInventLocationId = this.inventLocationId();
-    }
-}
-```
-
-<span data-ttu-id="d62ec-117">新しいメソッドを強化クラスを追加することができるようになりました。</span><span class="sxs-lookup"><span data-stu-id="d62ec-117">You can now add new methods to the augmentation class.</span></span> <span data-ttu-id="d62ec-118">これらのメソッドは、テーブルに直接定義されているかのように、**InventTable** 型の変数の IntelliSense に表示されます。</span><span class="sxs-lookup"><span data-stu-id="d62ec-118">These methods will then appear in IntelliSense for variables of the **InventTable** type, just as if they were defined directly on the table.</span></span> <span data-ttu-id="d62ec-119">この動作は、静的メソッドとインスタンス メソッドの両方に適用されます。</span><span class="sxs-lookup"><span data-stu-id="d62ec-119">This behavior applies to both static methods and instance methods.</span></span>
-
-<span data-ttu-id="d62ec-120">拡張クラスにはいくつかのルールがあります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-120">There are a few rules for augmentation classes:</span></span>
-
-+ <span data-ttu-id="d62ec-121">最終である必要があります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-121">They must be final.</span></span>
-+ <span data-ttu-id="d62ec-122">**\_拡張子**で接尾辞を付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-122">They must be suffixed by **\_Extension**.</span></span>
-+ <span data-ttu-id="d62ec-123">**[ExtensionOf()]** 属性で装飾されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-123">They must be decorated with the **[ExtensionOf()]** attribute.</span></span>
-
-<span data-ttu-id="d62ec-124">たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-124">Now you can use your new method, for example, from an event handler:</span></span>
-
-```
-class InventTableMy_EventHandler
-{
-    [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
-    public static void InventTable_onInserting(Common sender, DataEventArgs e)
-    {
-        InventTable inventTable = sender as InventTable;
-        // Call the method as if it was defined directly on InventTable.
-        inventTable.myDefaultInventLocationId();
-    }
-}
-
-```
-
-> [!NOTE]
-> <span data-ttu-id="d62ec-125">イベント ハンドラー クラスには任意の数のイベントのハンドラーが含まれるのが一般的です。</span><span class="sxs-lookup"><span data-stu-id="d62ec-125">It is common for event handler classes to contain handlers for any number of events.</span></span> <span data-ttu-id="d62ec-126">ただし、イベント ハンドラーを拡張クラスに入れるのは、良い方法では**ありません**。</span><span class="sxs-lookup"><span data-stu-id="d62ec-126">However, it is **not** good practice to put event handlers in augmentation classes.</span></span> <span data-ttu-id="d62ec-127">そうすることで、イベント ハンドラー メソッドが拡張されたタイプのメソッドとして使用可能となります。</span><span class="sxs-lookup"><span data-stu-id="d62ec-127">Doing so makes the event handler methods available as methods on the augmented type.</span></span> <span data-ttu-id="d62ec-128">これは、イベント ハンドラーが、その型のメソッドとして明示的にではなく、イベントを通じて呼び出されることを意図しているので正しくありません。</span><span class="sxs-lookup"><span data-stu-id="d62ec-128">This is incorrect because the event handler is intended to be called through the event, not explicitly as a method on the type.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="add-method-table.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>add-method-table.453edf.67f58f863104af56b6f96cd1bcc7a92db7013982.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>67f58f863104af56b6f96cd1bcc7a92db7013982</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\extensibility\add-method-table.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Add methods to tables through extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能を使用してテーブルにメソッドを追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes how to add a method to a table by using an extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Add methods to tables through extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張機能を使用してテーブルにメソッドを追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>When you extend the business logic that is related to a table, the general coding principles that help keep your code clean still apply.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルに関連付けられているビジネス ロジックを拡張するとき、コードをクリーンに維持するために役立つ一般的なコーディング原則はまだ適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Therefore, you must eventually encapsulate actions in separate methods on the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、最終的にアクションをテーブルの別々のメソッドにカプセル化する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>In Microsoft Dynamics AX 2012, you completed that task by adding the method directly on the table through overlayering.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 では、オーバーレイ経由でテーブルに直接メソッドを追加することによってそのタスクを完了していました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To complete the same task through extension, you use a different approach.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張を使用して同じタスクを完了するには、別の方法を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Specifically, you create an augmentation class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">具体的には、拡張クラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>For example, a new field that is named <bpt id="p1">**</bpt>MyInventLocationId<ept id="p1">**</ept> was added to the InventTable table through extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>MyInventLocationId<ept id="p1">**</ept> という名前新しいフィールドが、拡張機能によって InventTable テーブルに追加されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>A data event handler was also created for the <bpt id="p1">**</bpt>Inserting<ept id="p1">**</ept> event, and you must implement the logic of filling the new field there.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>挿入<ept id="p1">**</ept>イベント用のデータ イベント ハンドラーも作成されました。新しいフィールドに入力するロジックを実装する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>To encapsulate that action, you will create a new method on InventTable and name that method <bpt id="p1">**</bpt>myDefaultInventLocationId<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのアクションをカプセル化するには、InventTable で新しいメソッドを作成し、そのメソッドに <bpt id="p1">**</bpt>myDefaultInventLocationId<ept id="p1">**</ept> という名前を付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>You first create a new class in the extension model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初に、拡張モデルに新しいクラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>This class will augment the InventTable table, and enable access to the table's fields and methods in a manner that is easy to read and understand.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは InventTable テーブルを拡張し、読みやすく理解しやすい方法でテーブルのフィールドとメソッドにアクセスできるようにします</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>It's important that you choose the correct name for your augmentation class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">強化クラスに正しい名前を選択することが重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>This name must be unique across all types in all models that are deployed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この名前は、展開されるすべてのモデルのすべてのタイプにわたって一意でなければなりません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>For more information, see <bpt id="p1">[</bpt>Naming guidelines for model extensions<ept id="p1">](naming-guidelines-extensions.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>モデル拡張機能の名前付けガイドライン<ept id="p1">](naming-guidelines-extensions.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>You can now add new methods to the augmentation class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいメソッドを強化クラスを追加することができるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>These methods will then appear in IntelliSense for variables of the <bpt id="p1">**</bpt>InventTable<ept id="p1">**</ept> type, just as if they were defined directly on the table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのメソッドは、テーブルに直接定義されているかのように、<bpt id="p1">**</bpt>InventTable<ept id="p1">**</ept> 型の変数の IntelliSense に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>This behavior applies to both static methods and instance methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作は、静的メソッドとインスタンス メソッドの両方に適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>There are a few rules for augmentation classes:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張クラスにはいくつかのルールがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>They must be final.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最終である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>They must be suffixed by <bpt id="p1">**</bpt><ph id="ph1">\_</ph>Extension<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt><ph id="ph1">\_</ph>拡張子<ept id="p1">**</ept>で接尾辞を付ける必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>They must be decorated with the <bpt id="p1">**</bpt>[ExtensionOf()]<ept id="p1">**</ept> attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>[ExtensionOf()]<ept id="p1">**</ept> 属性で装飾されている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Now you can use your new method, for example, from an event handler:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>It is common for event handler classes to contain handlers for any number of events.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ハンドラー クラスには任意の数のイベントのハンドラーが含まれるのが一般的です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>However, it is <bpt id="p1">**</bpt>not<ept id="p1">**</ept> good practice to put event handlers in augmentation classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、イベント ハンドラーを拡張クラスに入れるのは、良い方法では<bpt id="p1">**</bpt>ありません<ept id="p1">**</ept>。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Doing so makes the event handler methods available as methods on the augmented type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そうすることで、イベント ハンドラー メソッドが拡張されたタイプのメソッドとして使用可能となります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>This is incorrect because the event handler is intended to be called through the event, not explicitly as a method on the type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、イベント ハンドラーが、その型のメソッドとして明示的にではなく、イベントを通じて呼び出されることを意図しているので正しくありません。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
