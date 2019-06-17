@@ -1,512 +1,1026 @@
----
-title: 移行後のフォームのフォーム パターン
-description: このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。
-author: jasongre
-manager: AnnBe
-ms.date: 11/09/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 28681
-ms.assetid: 09a51876-8c9d-41ed-ab81-b780894a4281
-ms.search.region: Global
-ms.author: jasongre
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fb692b0118cfb78894319f935f26fe5a2982d44
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537615"
----
-# <a name="form-patterns-for-migrated-forms"></a><span data-ttu-id="41a9a-103">移行後のフォームのフォーム パターン</span><span class="sxs-lookup"><span data-stu-id="41a9a-103">Form patterns for migrated forms</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="41a9a-104">このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-104">This topic provides information that will help you select the best form pattern for the forms that you migrate.</span></span> 
-
-<a name="introduction"></a><span data-ttu-id="41a9a-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="41a9a-105">Introduction</span></span>
-------------
-
-<span data-ttu-id="41a9a-106">フォームパターンの選択は、フォームを移行するプロセスの重要なステップです。</span><span class="sxs-lookup"><span data-stu-id="41a9a-106">The selection of a form pattern is an important step in the process of migrating a form.</span></span> <span data-ttu-id="41a9a-107">ターゲット フォームに最適なパターンでは、必要な移行作業の量が減少します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-107">A pattern that is a good fit for the target form reduces the amount of migration work that is required.</span></span> <span data-ttu-id="41a9a-108">対照的に、適切ではないパターンは無駄な時間と労力を引き起こす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-108">By contrast, a pattern that isn't a good fit can cause wasted time and effort.</span></span> <span data-ttu-id="41a9a-109">したがって、移行するフォームに最適なフォーム パターンを選択できるよう、調査を行うことが重要です。</span><span class="sxs-lookup"><span data-stu-id="41a9a-109">Therefore, it's important that you do some investigation, so that you can select the best form pattern for the form that you're migrating.</span></span> <span data-ttu-id="41a9a-110">フォームの適切なパターンを決定するためのガイダンスおよびヒントを次に示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-110">Here is some guidance and tips for determining the appropriate pattern for a form:</span></span>
-
--   <span data-ttu-id="41a9a-111">フォーム デザイナーでフォームのメタデータを調べます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-111">Investigate the form’s metadata in the form designer.</span></span> <span data-ttu-id="41a9a-112">よく注意して次の詳細を閉じてください。</span><span class="sxs-lookup"><span data-stu-id="41a9a-112">Pay close attention to the following details:</span></span>
-    -   <span data-ttu-id="41a9a-113">フォーム名</span><span class="sxs-lookup"><span data-stu-id="41a9a-113">Form name</span></span>
-    -   <span data-ttu-id="41a9a-114">Form.Design.Style</span><span class="sxs-lookup"><span data-stu-id="41a9a-114">Form.Design.Style</span></span>
-    -   <span data-ttu-id="41a9a-115">コントロール名</span><span class="sxs-lookup"><span data-stu-id="41a9a-115">Control names</span></span>
-    -   <span data-ttu-id="41a9a-116">コントロールが整理される方法</span><span class="sxs-lookup"><span data-stu-id="41a9a-116">The way that the controls are organized</span></span>
-    -   <span data-ttu-id="41a9a-117">番号とデータ ソースの名前</span><span class="sxs-lookup"><span data-stu-id="41a9a-117">The number and names of the data sources</span></span>
--   <span data-ttu-id="41a9a-118">フォームを実行して、情報が表示される方法を確認することでフォームのビジュアルを調べます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-118">Investigate the form’s visuals by running the form and looking at the way information is displayed.</span></span>
-
-## <a name="selecting-a-form-pattern-via-metadata"></a><span data-ttu-id="41a9a-119">メタデータを通じてフォーム パターンを選択</span><span class="sxs-lookup"><span data-stu-id="41a9a-119">Selecting a form pattern via metadata</span></span>
-### <a name="use-formdesignstyle-for-guidance"></a><span data-ttu-id="41a9a-120">ガイダンスに Form.Design.Style を使用</span><span class="sxs-lookup"><span data-stu-id="41a9a-120">Use Form.Design.Style for guidance</span></span>
-
-<span data-ttu-id="41a9a-121">**Form.Design.Style** プロパティには多くの場合、フォームの以前対象となっていたパターンの名前が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41a9a-121">The **Form.Design.Style** property often contains the name of the pattern that was previously targeted for the form.</span></span> <span data-ttu-id="41a9a-122">**スタイル** プロパティはメタデータと正確に一致し、次の表を使用して、フォームに適合する可能性があるパターンを検出することができます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-122">If the **Style** property correctly matches the metadata, you can use the following table to find a pattern that is likely to be a good fit for the form.</span></span>
-
-| <span data-ttu-id="41a9a-123">Form.Design.Style value</span><span class="sxs-lookup"><span data-stu-id="41a9a-123">Form.Design.Style value</span></span>                                                                          | <span data-ttu-id="41a9a-124">対応するパターン</span><span class="sxs-lookup"><span data-stu-id="41a9a-124">Corresponding pattern</span></span>                                                                                           |
-|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="41a9a-125">DetailsFormMaster</span><span class="sxs-lookup"><span data-stu-id="41a9a-125">DetailsFormMaster</span></span>                                                                                | [<span data-ttu-id="41a9a-126">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="41a9a-126">Details Master</span></span>](details-master-form-pattern.md)                              |
-| <span data-ttu-id="41a9a-127">DetailsFormTransaction</span><span class="sxs-lookup"><span data-stu-id="41a9a-127">DetailsFormTransaction</span></span>                                                                           | [<span data-ttu-id="41a9a-128">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="41a9a-128">Details Transaction</span></span>](details-transaction-form-pattern.md)                    |
-| <span data-ttu-id="41a9a-129">ダイアログ</span><span class="sxs-lookup"><span data-stu-id="41a9a-129">Dialog</span></span>                                                                                           | [<span data-ttu-id="41a9a-130">ダイアログ</span><span class="sxs-lookup"><span data-stu-id="41a9a-130">Dialog</span></span>](dialog-form-pattern.md)                                              |
-| <span data-ttu-id="41a9a-131">DropDialog</span><span class="sxs-lookup"><span data-stu-id="41a9a-131">DropDialog</span></span>                                                                                       | [<span data-ttu-id="41a9a-132">ドロップ ダイアログ</span><span class="sxs-lookup"><span data-stu-id="41a9a-132">Drop Dialog</span></span>](drop-dialog-form-pattern.md)                                    |
-| <span data-ttu-id="41a9a-133">単なるフィールドが存在する FormPart</span><span class="sxs-lookup"><span data-stu-id="41a9a-133">FormPart, where there are just fields</span></span>                                                            | [<span data-ttu-id="41a9a-134">フォーム パート 情報ボックス カード</span><span class="sxs-lookup"><span data-stu-id="41a9a-134">Form Part FactBox Card</span></span>](factbox-form-patterns.md)                            |
-| <span data-ttu-id="41a9a-135">グリッドが存在する FormPart</span><span class="sxs-lookup"><span data-stu-id="41a9a-135">FormPart, where there is a grid</span></span>                                                                  | [<span data-ttu-id="41a9a-136">フォーム パート 情報ボックス グリッド</span><span class="sxs-lookup"><span data-stu-id="41a9a-136">Form Part FactBox Grid</span></span>](factbox-form-patterns.md)                            |
-| <span data-ttu-id="41a9a-137">ListPage</span><span class="sxs-lookup"><span data-stu-id="41a9a-137">ListPage</span></span>                                                                                         | [<span data-ttu-id="41a9a-138">リスト ページ</span><span class="sxs-lookup"><span data-stu-id="41a9a-138">List Page</span></span>](list-page-form-pattern.md)                                        |
-| <span data-ttu-id="41a9a-139">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="41a9a-139">Lookup</span></span>                                                                                           | [<span data-ttu-id="41a9a-140">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="41a9a-140">Lookup</span></span>](lookup-form-pattern.md)                                              |
-| <span data-ttu-id="41a9a-141">SimpleList</span><span class="sxs-lookup"><span data-stu-id="41a9a-141">SimpleList</span></span>                                                                                       | [<span data-ttu-id="41a9a-142">簡易リスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-142">Simple List</span></span>](simple-list-form-pattern.md)                                    |
-| <span data-ttu-id="41a9a-143">ナビゲーション リストにフィールドが 2 ～ 3 個の場合は SimpleListDetails (推奨)</span><span class="sxs-lookup"><span data-stu-id="41a9a-143">SimpleListDetails, where there are 2–3 fields in the navigation list (recommended)</span></span>               | [<span data-ttu-id="41a9a-144">簡易リストと詳細 – リスト グリッド</span><span class="sxs-lookup"><span data-stu-id="41a9a-144">Simple List Details – List Grid</span></span>](simple-list-details-form-pattern.md)    |
-| <span data-ttu-id="41a9a-145">ナビゲーション リストにフィールドが 4 ～ 5 個の場合は SimpleListDetails</span><span class="sxs-lookup"><span data-stu-id="41a9a-145">SimpleListDetails, where there are and 4–5 fields in the navigation list</span></span>                         | [<span data-ttu-id="41a9a-146">簡易リストと詳細 – 表形式のグリッド</span><span class="sxs-lookup"><span data-stu-id="41a9a-146">Simple List Details – Tabular Grid</span></span>](simple-list-details-form-pattern.md) |
-| <span data-ttu-id="41a9a-147">ツリーがある場合は SimpleListDetails (まれ)</span><span class="sxs-lookup"><span data-stu-id="41a9a-147">SimpleListDetails, where there is a tree (rare)</span></span>                                                  | [<span data-ttu-id="41a9a-148">簡易リストと詳細 – ツリー</span><span class="sxs-lookup"><span data-stu-id="41a9a-148">Simple List Details – Tree</span></span>](simple-list-details-form-pattern.md)         |
-| <span data-ttu-id="41a9a-149">TableOfContents</span><span class="sxs-lookup"><span data-stu-id="41a9a-149">TableOfContents</span></span>                                                                                  | [<span data-ttu-id="41a9a-150">目次</span><span class="sxs-lookup"><span data-stu-id="41a9a-150">Table of Contents</span></span>](table-of-contents-form-pattern.md)                        |
-| <span data-ttu-id="41a9a-151">自動には**概要**タブ、**一般**タブ、および単一のデータ ソースが存在する</span><span class="sxs-lookup"><span data-stu-id="41a9a-151">Auto, where there is an **Overview** tab, a **General** tab, and a single data source</span></span>            | [<span data-ttu-id="41a9a-152">タスク シングル</span><span class="sxs-lookup"><span data-stu-id="41a9a-152">Task Single</span></span>](task-single-form-pattern.md)                                    |
-| <span data-ttu-id="41a9a-153">自動には**概要**タブ、**一般**タブ、またはヘッダーを含めたラインの 2 つのセットが存在する</span><span class="sxs-lookup"><span data-stu-id="41a9a-153">Auto, where there are two sets of **Overview** tabs, **General** tabs, and/or headers plus lines</span></span> | [<span data-ttu-id="41a9a-154">タスク ダブル</span><span class="sxs-lookup"><span data-stu-id="41a9a-154">Task Double</span></span>](task-double-form-pattern.md)                                    |
-| <span data-ttu-id="41a9a-155">自動には1 つのレコードにフォーカスが存在する</span><span class="sxs-lookup"><span data-stu-id="41a9a-155">Auto, where there is focus on a single record</span></span>                                                    | [<span data-ttu-id="41a9a-156">簡易詳細</span><span class="sxs-lookup"><span data-stu-id="41a9a-156">Simple Details</span></span>](simple-details-form-pattern.md)                              |
-| <span data-ttu-id="41a9a-157">自動には「ルックアップ」で終了するフォーム名が存在する</span><span class="sxs-lookup"><span data-stu-id="41a9a-157">Auto, where the form name ends in “Lookup”</span></span>                                                       | [<span data-ttu-id="41a9a-158">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="41a9a-158">Lookup</span></span>](lookup-form-pattern.md)                                              |
-| <span data-ttu-id="41a9a-159">自動には 1 つのタブ コントロールと**次へ**/**前へ**ボタンがある</span><span class="sxs-lookup"><span data-stu-id="41a9a-159">Auto, where there is a single tab control and **Next**/**Previous** buttons</span></span>                      | [<span data-ttu-id="41a9a-160">ウィザード</span><span class="sxs-lookup"><span data-stu-id="41a9a-160">Wizard</span></span>](wizard-form-pattern.md)                                              |
-| <span data-ttu-id="41a9a-161">自動には「ウィザード」で終了するフォーム名が存在する</span><span class="sxs-lookup"><span data-stu-id="41a9a-161">Auto, where the form name ends in “Wizard”</span></span>                                                       | [<span data-ttu-id="41a9a-162">ウィザード</span><span class="sxs-lookup"><span data-stu-id="41a9a-162">Wizard</span></span>](wizard-form-pattern.md)                                              |
-| <span data-ttu-id="41a9a-163">自動にはグリッドとボタンが存在する</span><span class="sxs-lookup"><span data-stu-id="41a9a-163">Auto, where there is just a grid and some buttons</span></span>                                                | [<span data-ttu-id="41a9a-164">簡易リスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-164">Simple List</span></span>](simple-list-form-pattern.md)                                    |
-
-###  <a name="when-a-form-doesnt-match-the-style-property"></a><span data-ttu-id="41a9a-165">フォームが Style プロパティと一致しないとき</span><span class="sxs-lookup"><span data-stu-id="41a9a-165">When a form doesn't match the Style property</span></span>
-
-<span data-ttu-id="41a9a-166">場合によっては、フォームに間違った **Form.Design.Style** プロパティ値があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-166">Sometimes, a form has an incorrect **Form.Design.Style** property value.</span></span>
-
-| <span data-ttu-id="41a9a-167">Form.Design.Style value</span><span class="sxs-lookup"><span data-stu-id="41a9a-167">Form.Design.Style value</span></span> | <span data-ttu-id="41a9a-168">可能性のあるフォームの実際の値</span><span class="sxs-lookup"><span data-stu-id="41a9a-168">What the form might actually be</span></span>                                                                                  |
-|-------------------------|------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="41a9a-169">DetailsFormMaster</span><span class="sxs-lookup"><span data-stu-id="41a9a-169">DetailsFormMaster</span></span>       | <span data-ttu-id="41a9a-170">DetailsFormTransaction、明細行の詳細がある場合、またはコントロールの名前に「明細行」を含む場合</span><span class="sxs-lookup"><span data-stu-id="41a9a-170">DetailsFormTransaction, if there is lines detail, or if controls have names that contain “lines"</span></span>                 |
-| <span data-ttu-id="41a9a-171">SimpleList</span><span class="sxs-lookup"><span data-stu-id="41a9a-171">SimpleList</span></span>              | <span data-ttu-id="41a9a-172">グリッドが複数といくつかのカスタム フィルター フィールドがある場合は SimpleListDetails。</span><span class="sxs-lookup"><span data-stu-id="41a9a-172">SimpleListDetails, if there is more than just a grid and some custom filter fields</span></span>                               |
-| <span data-ttu-id="41a9a-173">SimpleListDetails</span><span class="sxs-lookup"><span data-stu-id="41a9a-173">SimpleListDetails</span></span>       | <span data-ttu-id="41a9a-174">グリッドが 1 つだけといくつかのカスタム フィルター フィールドがある場合は SimpleList。</span><span class="sxs-lookup"><span data-stu-id="41a9a-174">SimpleList, if there is just a grid and some custom filter fields</span></span>                                                |
-| <span data-ttu-id="41a9a-175">SimpleList</span><span class="sxs-lookup"><span data-stu-id="41a9a-175">SimpleList</span></span>              | <span data-ttu-id="41a9a-176">ListPage、**パーツ** ノードに数多くの情報ボックスがある場合、または対応する詳細フォームがそのフォームにある場合</span><span class="sxs-lookup"><span data-stu-id="41a9a-176">ListPage, if there are numerous FactBoxes in the **Parts** node, or if the form has a corresponding Details Form</span></span> |
-
-## <a name="selecting-a-form-pattern-via-visuals"></a><span data-ttu-id="41a9a-177">ビジュアルを通じてフォーム パターンを選択</span><span class="sxs-lookup"><span data-stu-id="41a9a-177">Selecting a form pattern via visuals</span></span>
-<span data-ttu-id="41a9a-178">この方法はフォームのメタデータを見るよりもあまり役に立ちませんが、フォームについて実行し調べることによってさまざまな情報を取得することができます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-178">Although this approach is less useful than looking at the form metadata, you can get a lot of information about a form by running and examining it.</span></span> <span data-ttu-id="41a9a-179">追加のデータ ポイントとしてフォーム ビジュアルを使用すると、フォーム パターンを選択するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-179">Use the form visuals as an additional data point to help you select a form pattern.</span></span> <span data-ttu-id="41a9a-180">ターゲット フォームのようなフォームを見つけるために、移行したフォームのスクリーン ショットを参照します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-180">Look through the screen shots of migrated forms to find a form that looks like the target form.</span></span> <span data-ttu-id="41a9a-181">また、パターンの記述または目的がフォームの説明/目的と一致していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="41a9a-181">Additionally, make sure that the description or intent of the pattern matches the description/intent of the form.</span></span>
-
-## <a name="selecting-a-form-pattern-via-the-designer"></a><span data-ttu-id="41a9a-182">デザイナーを通じてフォーム パターンを選択</span><span class="sxs-lookup"><span data-stu-id="41a9a-182">Selecting a form pattern via the designer</span></span>
-
-<span data-ttu-id="41a9a-183">ターゲット フォームの **デザイン** ノードを右クリックし、**パターンの適用** を選択して適用するパターンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="41a9a-183">Right-click the **Design** node of the target form, select **Apply pattern**, and then click the pattern to apply.</span></span>
-
-## <a name="form-pattern-reference-guide"></a><span data-ttu-id="41a9a-184">フォームのパターンの参照ガイド</span><span class="sxs-lookup"><span data-stu-id="41a9a-184">Form pattern reference guide</span></span>
-### <a name="list-of-classes-of-top-level-form-patterns"></a><span data-ttu-id="41a9a-185">最上位レベルのフォーム パターンのクラスのリスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-185">List of classes of top-level form patterns</span></span>
-
-| <span data-ttu-id="41a9a-186">フォーム パターン</span><span class="sxs-lookup"><span data-stu-id="41a9a-186">Form pattern</span></span>                                                                                                        | <span data-ttu-id="41a9a-187">これは何に使用されますか ?</span><span class="sxs-lookup"><span data-stu-id="41a9a-187">What it's used for</span></span>                                                                                                    |
-|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="41a9a-188">[詳細マスター](details-master-form-pattern.md) (2 つのバリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-188">[Details Master](details-master-form-pattern.md) (two variants)</span></span>                   | <span data-ttu-id="41a9a-189">複雑なエンティティの詳細を表示するフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-189">A form that displays the details of a complex entity</span></span>                                                                  |
-| [<span data-ttu-id="41a9a-190">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="41a9a-190">Details Transaction</span></span>](details-transaction-form-pattern.md)                        | <span data-ttu-id="41a9a-191">このフォームは、複雑なトランザクション エンティティとその行の詳細 (例えば、注文とその行) を表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-191">A form that displays the details of a complex transaction entity and its lines (for example, and order and its lines)</span></span> |
-| <span data-ttu-id="41a9a-192">[ダイアログ](dialog-form-pattern.md) (6 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-192">[Dialog](dialog-form-pattern.md) (six variants)</span></span>                                   | <span data-ttu-id="41a9a-193">一連の情報を収集するダイアログとして使用されるフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-193">A form that is used as a dialog to gather a set of information</span></span>                                                        |
-| <span data-ttu-id="41a9a-194">[ドロップ ダイアログ](drop-dialog-form-pattern.md) (2 つのバリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-194">[Drop Dialog](drop-dialog-form-pattern.md) (two variants)</span></span>                         | <span data-ttu-id="41a9a-195">アクションにコンテキストを提供するための小さな情報のセットを収集するためにドロップ ダイアログとして使用されるフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-195">A form that is used as a drop dialog to gather a small set of information to provide context for an action</span></span>            |
-| <span data-ttu-id="41a9a-196">[情報ボックス](factbox-form-patterns.md) (2 つのバリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-196">[FactBox](factbox-form-patterns.md) (two variants)</span></span>                                | <span data-ttu-id="41a9a-197">関連するレコードまたはレコードのセットに関する情報を表示する Microsoft Dynamics AX 2012 FactBox。</span><span class="sxs-lookup"><span data-stu-id="41a9a-197">A Microsoft Dynamics AX 2012 FactBox that displays information about a related record or set of records</span></span>               |
-| [<span data-ttu-id="41a9a-198">リスト ページ</span><span class="sxs-lookup"><span data-stu-id="41a9a-198">List Page</span></span>](list-page-form-pattern.md)                                            | <span data-ttu-id="41a9a-199">Dynamics AX 2012 のリスト ページ</span><span class="sxs-lookup"><span data-stu-id="41a9a-199">A Dynamics AX 2012 List Page</span></span>                                                                                          |
-| <span data-ttu-id="41a9a-200">[ルックアップ](lookup-form-pattern.md) (3 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-200">[Lookup](lookup-form-pattern.md) (three variants)</span></span>                                 | <span data-ttu-id="41a9a-201">ルックアップとして使用されるフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-201">A form that is used as a lookup</span></span>                                                                                       |
-| <span data-ttu-id="41a9a-202">[簡易詳細](simple-details-form-pattern.md) (4 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-202">[Simple Details](simple-details-form-pattern.md) (four variants)</span></span>                  | <span data-ttu-id="41a9a-203">1 つのレコードに特化したフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-203">A form that is focused on a single record</span></span>                                                                             |
-| [<span data-ttu-id="41a9a-204">簡易リスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-204">Simple List</span></span>](simple-list-form-pattern.md)                                        | <span data-ttu-id="41a9a-205">レコードあたり 10 未満のフィールドが含まれるグリッドとして簡易エンティティの詳細を表示するフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-205">A form that displays details for a simple entity as a grid that has fewer than 10 fields per record</span></span>                   |
-| <span data-ttu-id="41a9a-206">[簡易リストと詳細](simple-list-details-form-pattern.md) (3 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-206">[Simple List & Details](simple-list-details-form-pattern.md) (three variants)</span></span> | <span data-ttu-id="41a9a-207">中規模な複雑さのエンティティに関する情報を表示するフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-207">A form that displays information about an entity of medium complexity</span></span>                                                 |
-| [<span data-ttu-id="41a9a-208">目次</span><span class="sxs-lookup"><span data-stu-id="41a9a-208">Table of Contents</span></span>](table-of-contents-form-pattern.md)                            | <span data-ttu-id="41a9a-209">セットアップ情報または大まかに関連する情報のセットが表示されるフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-209">A form that displays setup information or loosely related information sets</span></span>                                            |
-| <span data-ttu-id="41a9a-210">タスク (2 つのバリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-210">Task (two variants)</span></span>                                                                                                 | <span data-ttu-id="41a9a-211">レガシ フォーム パターンは、マスタ エンティティまたはトランザクション エンティティを表示するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-211">A legacy form pattern that is used to display master or transaction entities</span></span>                                          |
-| [<span data-ttu-id="41a9a-212">ウィザード</span><span class="sxs-lookup"><span data-stu-id="41a9a-212">Wizard</span></span>](wizard-form-pattern.md)                                                  | <span data-ttu-id="41a9a-213">一定の順序に従って情報を収集するユーザーに一連のタブ ページを表示するフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-213">A form that displays a set of tab pages to the user to gather information in a predetermined order</span></span>                    |
-| [<span data-ttu-id="41a9a-214">運用ワークスペース</span><span class="sxs-lookup"><span data-stu-id="41a9a-214">Operational Workspace</span></span>](workspace-form-pattern.md)                                | <span data-ttu-id="41a9a-215">活動の概要を表示するために使用され、ナビゲーションの主な手段を意味するフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-215">A form that is used to display an overview of an activity and is meant to be a primary means of navigation</span></span>            |
-| <span data-ttu-id="41a9a-216">ワークスペース パノラマ セクション (3 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-216">Workspace Panorama Sections (three variants)</span></span>                                                                        | <span data-ttu-id="41a9a-217">運用ワークスペースに (フォームのパーツ コントロールを通じて) パノラマ セクションに内容を表示するためのフォーム</span><span class="sxs-lookup"><span data-stu-id="41a9a-217">A form that is used to show content for a panorama section (via a Form Part Control) in the Operational Workspace</span></span>     |
-
-### <a name="finding-forms-that-currently-use-a-particular-form-pattern"></a><span data-ttu-id="41a9a-218">特定のフォーム パターンを現在使用しているフォームを検索</span><span class="sxs-lookup"><span data-stu-id="41a9a-218">Finding forms that currently use a particular form pattern</span></span>
-
-<span data-ttu-id="41a9a-219">特定のフォーム パターンを現在使用しているフォームの一覧全体については、Microsoft Visual Studio 内から**フォーム パターン**レポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-219">For a full list of forms that are currently using a particular form pattern, generate the **Form Patterns** report from within Microsoft Visual Studio.</span></span> <span data-ttu-id="41a9a-220">レポートを実行する詳細については、[フォーム パターン アドイン](form-pattern-add-ins.md) を参照してください。Excel でレポートをフィルター処理し、特定のパターンを使用するフォームを検索できます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-220">For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). You can filter the report in Excel to find forms that use a particular pattern.</span></span>
-
-### <a name="form-pattern-visuals-and-descriptions"></a><span data-ttu-id="41a9a-221">フォームのパターンのビジュアルと説明</span><span class="sxs-lookup"><span data-stu-id="41a9a-221">Form pattern visuals and descriptions</span></span>
-
-<span data-ttu-id="41a9a-222">フォーム パターン クラスごとに、各バリアントに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-222">For each form pattern class, information is provided about each variant.</span></span> <span data-ttu-id="41a9a-223">この情報には、簡単な説明と例フォームの図が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41a9a-223">This information includes a short description and an illustration of an example form.</span></span>
-
-#### <a name="details-master"></a><span data-ttu-id="41a9a-224">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="41a9a-224">Details Master</span></span>
-
-<span data-ttu-id="41a9a-225">[詳細マスター](details-master-form-pattern.md)\[既定\] このフォーム パターンは、クイック タブ上の複雑なエンティティの詳細を表示するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-225">[Details Master](details-master-form-pattern.md)\[Default\] This form pattern is used to display the details of a complex entity on FastTabs.</span></span> <span data-ttu-id="41a9a-226">グリッド ビューと詳細ビューが含まれています。</span><span class="sxs-lookup"><span data-stu-id="41a9a-226">It includes a grid view and a details view.</span></span>
-
-<span data-ttu-id="41a9a-227">フォーム: CustTable</span><span class="sxs-lookup"><span data-stu-id="41a9a-227">Form: CustTable</span></span> 
-
-![image001](./media/image001.jpg)
-
-![image002](./media/image002.jpg)
-
-<span data-ttu-id="41a9a-230">[詳細マスター / 標準タブ](details-master-form-pattern.md) フォームに多数のクイック タブ (>15) があり、カテゴリにグループ化できる場合は、この詳細マスター バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-230">[Details Master w/ Standard Tabs](details-master-form-pattern.md) Use this Details Master variant when your form has a large number of FastTabs (>15) that can be grouped into categories.</span></span>
-
-<span data-ttu-id="41a9a-231">フォーム: HcmWorker</span><span class="sxs-lookup"><span data-stu-id="41a9a-231">Form: HcmWorker</span></span> 
-
-<span data-ttu-id="41a9a-232">[![image003](./media/image003.jpg)](./media/image003.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-232">[![image003](./media/image003.jpg)](./media/image003.jpg)</span></span>
-
-<span data-ttu-id="41a9a-233">[![HowToSelectAFormPattern(31)](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-233">[![HowToSelectAFormPattern (31)](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)</span></span>
-
-
-
-#### <a name="details-transaction"></a><span data-ttu-id="41a9a-234">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="41a9a-234">Details Transaction</span></span>
-
-<span data-ttu-id="41a9a-235">[詳細トランザクション](details-transaction-form-pattern.md) このフォーム パターンを使用して、複雑なトランザクションエンティティとその行の詳細 (例えば、注文とその行) を表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-235">[Details Transaction](details-transaction-form-pattern.md) Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).</span></span>
-
-<span data-ttu-id="41a9a-236">フォーム: SalesTable</span><span class="sxs-lookup"><span data-stu-id="41a9a-236">Form: SalesTable</span></span> 
-
-<span data-ttu-id="41a9a-237">[![HowToSelectAFormPattern(32)](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-237">[![HowToSelectAFormPattern (32)](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)</span></span>
-
-<span data-ttu-id="41a9a-238">[![HowToSelectAFormPattern(33)](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-238">[![HowToSelectAFormPattern (33)](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)</span></span>
-
-
-
-#### <a name="dialog"></a><span data-ttu-id="41a9a-239">ダイアログ</span><span class="sxs-lookup"><span data-stu-id="41a9a-239">Dialog</span></span>
-
-<span data-ttu-id="41a9a-240">[ダイアログ – 基本](dialog-form-pattern.md)\[既定\] このフォームのパターンは一連の情報を収集または表示するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-240">[Dialog – Basic](dialog-form-pattern.md)\[Default\] This form pattern is used to gather or show a set of information.</span></span>
-
-<span data-ttu-id="41a9a-241">フォーム: ProjTableCreate</span><span class="sxs-lookup"><span data-stu-id="41a9a-241">Form: ProjTableCreate</span></span>
-
-<span data-ttu-id="41a9a-242">[![HowToSelectAFormPattern(34)](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-242">[![HowToSelectAFormPattern (34)](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)</span></span>
-
-<span data-ttu-id="41a9a-243">[ダイアログ – 読み取り専用](dialog-form-pattern.md) ダイアログが編集できない情報だけを表示する場合は、このダイアログバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-243">[Dialog – Read Only](dialog-form-pattern.md) Use this Dialog variant when your Dialog just displays information that can't be edited.</span></span> <span data-ttu-id="41a9a-244">**閉じる**ボタンだけがあります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-244">It has only a **Close** button.</span></span>
-
-<span data-ttu-id="41a9a-245">フォーム: SalesTablePostings</span><span class="sxs-lookup"><span data-stu-id="41a9a-245">Form: SalesTablePostings</span></span>
-
-<span data-ttu-id="41a9a-246">[![HowToSelectAFormPattern(35)](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-246">[![HowToSelectAFormPattern (35)](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)</span></span>
-
-<span data-ttu-id="41a9a-247">[ダイアログ – クイック タブ](dialog-form-pattern.md) ダイアログの内容がクイック タブにグループ化されている場合は、このダイアログ バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-247">[Dialog – FastTabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content is grouped into FastTabs.</span></span>
-
-<span data-ttu-id="41a9a-248">現在、製品にはありません。</span><span class="sxs-lookup"><span data-stu-id="41a9a-248">None currently in product.</span></span>
-
-<span data-ttu-id="41a9a-249">[![HowToSelectAFormPattern(36)](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-249">[![HowToSelectAFormPattern (36)](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)</span></span>
-
-<span data-ttu-id="41a9a-250">[ダイアログ – タブ](dialog-form-pattern.md) ダイアログの内容をタブにグループ化する必要がある場合は、このダイアログ バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-250">[Dialog – Tabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content must be grouped into tabs.</span></span>
-
-<span data-ttu-id="41a9a-251">フォーム: CaseDetailCreate</span><span class="sxs-lookup"><span data-stu-id="41a9a-251">Form: CaseDetailCreate</span></span>
-
-![HowToSelectAFormPattern (37)](./media/howtoselectaformpattern-37.jpg)
-
-<span data-ttu-id="41a9a-253">[ダイアログ – 二重タブ](dialog-form-pattern.md) ダイアログコンテンツに2つのタブが重ねて表示されている場合は、このダイアログバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-253">[Dialog – Double Tabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.</span></span>
-
-<span data-ttu-id="41a9a-254">フォーム: PurchTableReferences</span><span class="sxs-lookup"><span data-stu-id="41a9a-254">Form: PurchTableReferences</span></span>
-
-![HowToSelectAFormPattern (38)](./media/howtoselectaformpattern-38.jpg)
-
-
-
-#### <a name="drop-dialog"></a><span data-ttu-id="41a9a-256">ドロップ ダイアログ</span><span class="sxs-lookup"><span data-stu-id="41a9a-256">Drop Dialog</span></span>
-
-<span data-ttu-id="41a9a-257">[ドロップ ダイアログ](drop-dialog-form-pattern.md)\[既定\] このフォーム パターンは、フィールド数が少ない場合 (5 未満) にアクションを開始するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-257">[Drop Dialog](drop-dialog-form-pattern.md)\[Default\] This form pattern is used to initiate actions when the number of fields is small (less than five).</span></span>
-
-<span data-ttu-id="41a9a-258">フォーム: CustCollectionsNewActivityAction</span><span class="sxs-lookup"><span data-stu-id="41a9a-258">Form: CustCollectionsNewActivityAction</span></span>
-
-<span data-ttu-id="41a9a-259">[![HowToSelectAFormPattern(39)](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-259">[![HowToSelectAFormPattern (39)](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)</span></span>
-
-<span data-ttu-id="41a9a-260">[ドロップ ダイアログ – 読み取り専用](drop-dialog-form-pattern.md) ドロップ ダイアログのフィールドが編集できない場合は、このドロップ ダイアログ バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-260">[Drop Dialog – Read Only](drop-dialog-form-pattern.md) Use this Drop Dialog variant when the fields in the Drop Dialog aren't editable.</span></span> <span data-ttu-id="41a9a-261">**OK**/**閉じる**ボタンはモデル化されません。</span><span class="sxs-lookup"><span data-stu-id="41a9a-261">No **OK**/**Close** button is modeled.</span></span>
-
-<span data-ttu-id="41a9a-262">現在、例が製品に存在しません。</span><span class="sxs-lookup"><span data-stu-id="41a9a-262">No example currently exists in the product.</span></span>
-
-#### <a name="factbox"></a><span data-ttu-id="41a9a-263">情報ボックス</span><span class="sxs-lookup"><span data-stu-id="41a9a-263">FactBox</span></span>
-
-<span data-ttu-id="41a9a-264">[情報ボックス グリッド](factbox-form-patterns.md) この情報ボックス バリアントを使用して、関連情報の子コレクションを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-264">[FacbBox Grid](factbox-form-patterns.md) Use this FactBox variant to show a child collection of related information.</span></span>
-
-<span data-ttu-id="41a9a-265">フォーム: ContactsInfoPart</span><span class="sxs-lookup"><span data-stu-id="41a9a-265">Form: ContactsInfoPart</span></span>
-
-![HowToSelectAFormPattern (40)](./media/howtoselectaformpattern-40.jpg)
-
-<span data-ttu-id="41a9a-267">[情報ボックス カード](factbox-form-patterns.md) この情報ボックス バリアントを使用して、一連の関連フィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-267">[FactBox Card](factbox-form-patterns.md) Use this FactBox variant to show a set of related fields.</span></span>
-
-<span data-ttu-id="41a9a-268">フォーム: CustStatisticsStatistics</span><span class="sxs-lookup"><span data-stu-id="41a9a-268">Form: CustStatisticsStatistics</span></span>
-
-![HowToSelectAFormPattern (41)](./media/howtoselectaformpattern-41.jpg)
-
-#### <a name="list-page"></a><span data-ttu-id="41a9a-270">リスト ページ</span><span class="sxs-lookup"><span data-stu-id="41a9a-270">List Page</span></span>
-
-<span data-ttu-id="41a9a-271">[リスト ページ](list-page-form-pattern.md) Dynamics AX 2012 のリストページは、レコード閲覧とそのレコードの操作に最適化されたグリッドです。</span><span class="sxs-lookup"><span data-stu-id="41a9a-271">[List Page](list-page-form-pattern.md) The Dynamics AX 2012 list page that is just a grid that is optimized for browsing records and acting on those records.</span></span>
-
-<span data-ttu-id="41a9a-272">フォーム: SalesTableListPage</span><span class="sxs-lookup"><span data-stu-id="41a9a-272">Form: SalesTableListPage</span></span>
-
-![HowToSelectAFormPattern (42)](./media/howtoselectaformpattern-42.jpg)
-
-#### <a name="lookup"></a><span data-ttu-id="41a9a-274">ルックアップ</span><span class="sxs-lookup"><span data-stu-id="41a9a-274">Lookup</span></span>
-
-<span data-ttu-id="41a9a-275">[基本のルックアップ](lookup-form-pattern.md)\[既定\] このフォーム パターンは、ルックアップ フォームが下部にオプションのフィルターまたはボタンを持つグリッドまたはツリーである場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-275">[Lookup Basic](lookup-form-pattern.md)\[Default\] This form pattern is used if the lookup form is a grid or tree that has optional filters or buttons at the bottom.</span></span>
-
-<span data-ttu-id="41a9a-276">フォーム: SysLanguageLookup</span><span class="sxs-lookup"><span data-stu-id="41a9a-276">Form: SysLanguageLookup</span></span>
-
-<span data-ttu-id="41a9a-277">[![HowToSelectAFormPattern(43)](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-277">[![HowToSelectAFormPattern (43)](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)</span></span>
-
-<span data-ttu-id="41a9a-278">[プレビュー付きのルックアップ](lookup-form-pattern.md) このルックアップ バリアントを使用して、ときに、基本的なパターンだけでなく、現在のレコードのプレビューが表示されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-278">[Lookup w/Preview](lookup-form-pattern.md) Use this Lookup variant when, in addition to the basic pattern, a preview of the current record is also shown.</span></span>
-
-<span data-ttu-id="41a9a-279">フォーム: HcmWorkerLookup</span><span class="sxs-lookup"><span data-stu-id="41a9a-279">Form: HcmWorkerLookup</span></span>
-
-![HowToSelectAFormPattern (44)](./media/howtoselectaformpattern-44.jpg)
-
-<span data-ttu-id="41a9a-281">[タブ付きのルックアップ](lookup-form-pattern.md) ルックアップの複数のビュー (グリッドビュー / ツリービュー、複数のフィルタリングされたリストなど) がある場合は、このルックアップ バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-281">[Lookup w/Tabs](lookup-form-pattern.md) Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).</span></span>
-
-<span data-ttu-id="41a9a-282">フォーム: CaseCategoryLookup</span><span class="sxs-lookup"><span data-stu-id="41a9a-282">Form: CaseCategoryLookup</span></span>
-
-![HowToSelectAFormPattern (45)](./media/howtoselectaformpattern-45.jpg)
-
-
-
-#### <a name="panorama-section"></a><span data-ttu-id="41a9a-284">パノラマ セクション</span><span class="sxs-lookup"><span data-stu-id="41a9a-284">Panorama Section</span></span>
-
-<span data-ttu-id="41a9a-285">[フォーム パート セクション リスト](section-list-form-pattern.md) このフォーム パターンを使用して、ワークスペース セクションにリストを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-285">[Form Part Section List](section-list-form-pattern.md) Use this form pattern to show a list in a workspace section.</span></span> <span data-ttu-id="41a9a-286">これは別のフォームとしてモデル化し、フォーム パーツ コントロールを介してワークスペースにレンダリングする必要があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-286">This should be modeled as a separate form and rendered in the workspace via a Form Part Control.</span></span>
-
-<span data-ttu-id="41a9a-287">[フォーム パート セクション リスト - ダブル](section-list-form-pattern.md) セカンダリ リストを表示する必要がある場合は、このバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-287">[Form Part Section List - Double](section-list-form-pattern.md) Use this variant when you must also show a secondary list.</span></span> <span data-ttu-id="41a9a-288">このセカンダリ リストは最初は表示されません。</span><span class="sxs-lookup"><span data-stu-id="41a9a-288">This secondary list isn't initially visible.</span></span>
-
-<span data-ttu-id="41a9a-289">[ハブ パート グラフ](section-chart-form-pattern.md) このバリアントを使用して、ワークスペース セクション にグラフを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-289">[Hub Part Chart](section-chart-form-pattern.md) Use this variant to show a chart in a workspace section.</span></span> <span data-ttu-id="41a9a-290">これは別のフォームとしてモデル化し、フォーム パーツ コントロールを介してワークスペースにレンダリングする必要があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-290">This should be modeled as a separate form and rendered in the workspace via a Form Part Control.</span></span>
-
-<span data-ttu-id="41a9a-291">フォーム: VendInvoiceJourCountChart</span><span class="sxs-lookup"><span data-stu-id="41a9a-291">Form: VendInvoiceJourCountChart</span></span>
-
-<span data-ttu-id="41a9a-292">[![HowToSelectAFormPattern(1)](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-292">[![HowToSelectAFormPattern (1)](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)</span></span>
-
-
-
-#### <a name="simple-details"></a><span data-ttu-id="41a9a-293">簡易詳細</span><span class="sxs-lookup"><span data-stu-id="41a9a-293">Simple Details</span></span>
-
-<span data-ttu-id="41a9a-294">[ツールバーおよびフィールド付き簡易詳細](simple-details-form-pattern.md) このフォーム パターンを使用して、単一の基本レコードのフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-294">[Simple Details w/Toolbar and Fields](simple-details-form-pattern.md) Use this form pattern to show fields for a single base record.</span></span>
-
-<span data-ttu-id="41a9a-295">フォーム: AgreementLine</span><span class="sxs-lookup"><span data-stu-id="41a9a-295">Form: AgreementLine</span></span>
-
-![HowToSelectAFormPattern (2)](./media/howtoselectaformpattern-2.jpg)
-
-<span data-ttu-id="41a9a-297">[クイック タブ付き簡易詳細](simple-details-form-pattern.md) レコードの情報がクイック タブにまとめられている場合は、この簡易詳細バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-297">[Simple Details w/FastTabs](simple-details-form-pattern.md) Use this Simple Details variant when the record’s information is organized into FastTabs.</span></span>
-
-<span data-ttu-id="41a9a-298">フォーム: PlanActivityServiceDetails</span><span class="sxs-lookup"><span data-stu-id="41a9a-298">Form: PlanActivityServiceDetails</span></span>
-
-![HowToSelectAFormPattern (3)](./media/howtoselectaformpattern-3.jpg)
-
-<span data-ttu-id="41a9a-300">[標準タブ付き簡易詳細](simple-details-form-pattern.md) レコードの情報が通常のタブにまとめられている場合は、この簡易詳細バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-300">[Simple Details w/Standard Tabs](simple-details-form-pattern.md) Use this Simple Details variant when the record’s information is organized into regular tabs.</span></span>
-
-<span data-ttu-id="41a9a-301">フォーム: HcmEmploymentDateManager</span><span class="sxs-lookup"><span data-stu-id="41a9a-301">Form: HcmEmploymentDateManager</span></span>
-
-![HowToSelectAFormPattern (4)](./media/howtoselectaformpattern-4.jpg)
-
-<span data-ttu-id="41a9a-303">[パノラマ付き簡易詳細](simple-details-form-pattern.md) この簡易詳細バリアントを使用して、水平方向にスクロールするパノラマにレコードの情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-303">[Simple Details w/Panorama](simple-details-form-pattern.md) Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.</span></span>
-
-<span data-ttu-id="41a9a-304">フォーム: PdsMRCEventTracker</span><span class="sxs-lookup"><span data-stu-id="41a9a-304">Form: PdsMRCEventTracker</span></span>
-
-![HowToSelectAFormPattern (5)](./media/howtoselectaformpattern-5.jpg)
-
-
-#### <a name="simple-list"></a><span data-ttu-id="41a9a-306">簡易リスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-306">Simple List</span></span>
-
-<span data-ttu-id="41a9a-307">[簡易リスト](simple-list-form-pattern.md) このフォーム パターンは簡易エンティティのデータを管理するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-307">[Simple List](simple-list-form-pattern.md) This form pattern is used to maintain data for simple entities.</span></span>
-
-<span data-ttu-id="41a9a-308">フォーム: CustGroup</span><span class="sxs-lookup"><span data-stu-id="41a9a-308">Form: CustGroup</span></span>
-
-![HowToSelectAFormPattern (6)](./media/howtoselectaformpattern-6.jpg)
-
-
-
-#### <a name="simple-list-and-details"></a><span data-ttu-id="41a9a-310">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="41a9a-310">Simple List and Details</span></span>
-
-<span data-ttu-id="41a9a-311">[簡易リストと詳細 – リスト グリッド](simple-list-details-form-pattern.md)\[既定\] このフォーム パターンは中程度の複雑さのエンティティのデータを管理するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-311">[Simple List & Details – List Grid](simple-list-details-form-pattern.md)\[Default\] This form pattern is used to maintain data for entities of medium complexity.</span></span> <span data-ttu-id="41a9a-312">ナビゲーション リストの 2 ～ 3 フィールドが含まれるリスト グリッドは、現在のバージョンでは、このフォーム スタイルの優先パターンです。</span><span class="sxs-lookup"><span data-stu-id="41a9a-312">A list grid that has 2–3 fields in the navigation list is the preferred pattern for this form style in the current version.</span></span>
-
-<span data-ttu-id="41a9a-313">フォーム: PaymTerm</span><span class="sxs-lookup"><span data-stu-id="41a9a-313">Form: PaymTerm</span></span>
-
-![HowToSelectAFormPattern (7)](./media/howtoselectaformpattern-7.jpg)
-
-<span data-ttu-id="41a9a-315">[簡易リストと詳細 – 表形式のグリッド](simple-list-details-form-pattern.md) この簡易リストと詳細のバリアントは、フォームのリスト部分に 3 つ以上のフィールドが必要な場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-315">[Simple List & Details – Tabular Grid](simple-list-details-form-pattern.md) Use this Simple List & Details variant if you require more than three fields in the list part of the form.</span></span>
-
-<span data-ttu-id="41a9a-316">フォーム: ExchangeRate</span><span class="sxs-lookup"><span data-stu-id="41a9a-316">Form: ExchangeRate</span></span>
-
-![HowToSelectAFormPattern (8)](./media/howtoselectaformpattern-8.jpg)
-
-<span data-ttu-id="41a9a-318">[簡易リストと詳細 – ツリー](simple-list-details-form-pattern.md) フォームのリスト部分がツリーの場合は、この簡易リストと詳細のバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-318">[Simple List & Details – Tree](simple-list-details-form-pattern.md) Use this Simple List & Details variant if the list part of the form is a tree.</span></span>
-
-<span data-ttu-id="41a9a-319">フォーム: FiscalCalendars</span><span class="sxs-lookup"><span data-stu-id="41a9a-319">Form: FiscalCalendars</span></span>
-
-![HowToSelectAFormPattern (9)](./media/howtoselectaformpattern-9.jpg)
-
-
-
-#### <a name="table-of-contents"></a><span data-ttu-id="41a9a-321">目次</span><span class="sxs-lookup"><span data-stu-id="41a9a-321">Table of Contents</span></span>
-
-<span data-ttu-id="41a9a-322">[目次](table-of-contents-form-pattern.md) このフォーム パターンを使用して、設定情報または大まかに関連する情報のセットを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-322">[Table of Contents](table-of-contents-form-pattern.md) Use this form pattern to show setup information or loosely related information sets.</span></span>
-
-<span data-ttu-id="41a9a-323">フォーム: CustParameters</span><span class="sxs-lookup"><span data-stu-id="41a9a-323">Form: CustParameters</span></span>
-
-![HowToSelectAFormPattern (10)](./media/howtoselectaformpattern-10.jpg)
-
-
-
-#### <a name="task"></a><span data-ttu-id="41a9a-325">タスク</span><span class="sxs-lookup"><span data-stu-id="41a9a-325">Task</span></span>
-
-<span data-ttu-id="41a9a-326">[タスク シングル](task-single-form-pattern.md) このレガシ フォーム パターンは、エンティティを表示するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-326">[Task Single](task-single-form-pattern.md) This legacy form pattern is used to display entities.</span></span> <span data-ttu-id="41a9a-327">これは、新しいフォームではなく、移行にのみ使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-327">It should be used only for migration, not for new forms.</span></span>
-
-<span data-ttu-id="41a9a-328">フォーム: LedgerJournalTable</span><span class="sxs-lookup"><span data-stu-id="41a9a-328">Form: LedgerJournalTable</span></span>
-
-![HowToSelectAFormPattern (11)](./media/howtoselectaformpattern-11.jpg)
-
-<span data-ttu-id="41a9a-330">[タスク ダブル](task-double-form-pattern.md) このレガシ フォーム パターンは、トランザクション エンティティを表示するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-330">[Task Double](task-double-form-pattern.md) This legacy form pattern is used to display transaction entities.</span></span> <span data-ttu-id="41a9a-331">これは、新しいフォームではなく、移行にのみ使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-331">It should be used only for migration, not for new forms.</span></span>
-
-<span data-ttu-id="41a9a-332">フォーム: HRMAbsenceTableHistory</span><span class="sxs-lookup"><span data-stu-id="41a9a-332">Form: HRMAbsenceTableHistory</span></span>
-
-![HowToSelectAFormPattern (12)](./media/howtoselectaformpattern-12.jpg)
-
-
-
-#### <a name="wizard"></a><span data-ttu-id="41a9a-334">ウィザード</span><span class="sxs-lookup"><span data-stu-id="41a9a-334">Wizard</span></span>
-
-<span data-ttu-id="41a9a-335">[ウィザード](wizard-form-pattern.md) このフォーム パターンはあらじめ設定された順序で情報を収集するために、ユーザーに一連のページ ビューを表示するために使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-335">[Wizard](wizard-form-pattern.md) This form pattern is used to display a set of page views to the user to gather information in a predetermined order.</span></span>
-
-<span data-ttu-id="41a9a-336">フォーム: WrkCtrBulkResReqEditWizard</span><span class="sxs-lookup"><span data-stu-id="41a9a-336">Form: WrkCtrBulkResReqEditWizard</span></span>
-
-![HowToSelectAFormPattern (13)](./media/howtoselectaformpattern-13.jpg)
-
-
-
-#### <a name="workspace"></a><span data-ttu-id="41a9a-338">ワークスペース</span><span class="sxs-lookup"><span data-stu-id="41a9a-338">Workspace</span></span>
-
-<span data-ttu-id="41a9a-339">[運用ワークスペース](workspace-form-pattern.md)\[既定\] これは、ワークスペース パターンで推奨されているパフォーマンスが向上したバリアントです。</span><span class="sxs-lookup"><span data-stu-id="41a9a-339">[Operational Workspace](workspace-form-pattern.md)\[Default\] This is the preferred, performance-enhanced variant of the Workspace pattern.</span></span>
-
-<span data-ttu-id="41a9a-340">フォーム: FmClerkWorkspace</span><span class="sxs-lookup"><span data-stu-id="41a9a-340">Form: FmClerkWorkspace</span></span>
-
-![HowToSelectAFormPattern (1)](./media/howtoselectaformpattern-1.png)
-
-<span data-ttu-id="41a9a-342">ワークスペース: これは古いワークスペース パターンです。</span><span class="sxs-lookup"><span data-stu-id="41a9a-342">Workspace: This is the old Workspace pattern.</span></span> <span data-ttu-id="41a9a-343">これはまもなく削除されるため、使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="41a9a-343">It will be removed soon, so don't use it.</span></span> <span data-ttu-id="41a9a-344">ここでは完全を期すためだけに含まれています。</span><span class="sxs-lookup"><span data-stu-id="41a9a-344">It is included here only for completeness.</span></span>
-
-<span data-ttu-id="41a9a-345">使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="41a9a-345">Do not use.</span></span>
-
-## <a name="subpattern-reference-guide"></a><span data-ttu-id="41a9a-346">サブパターン参照ガイド</span><span class="sxs-lookup"><span data-stu-id="41a9a-346">Subpattern reference guide</span></span>
-### <a name="list-of-subpattern-classes"></a><span data-ttu-id="41a9a-347">サブパターン クラスのリスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-347">List of subpattern classes</span></span>
-
-| <span data-ttu-id="41a9a-348">フォーム パターン</span><span class="sxs-lookup"><span data-stu-id="41a9a-348">Form pattern</span></span>                                                                                                     | <span data-ttu-id="41a9a-349">これは何に使用されますか ?</span><span class="sxs-lookup"><span data-stu-id="41a9a-349">What it's used for</span></span>                                                                                  |
-|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="41a9a-350">[カスタム フィルター](custom-filter-group-subpattern.md) (2 つのバリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-350">[Custom Filters](custom-filter-group-subpattern.md) (two variants)</span></span>             | <span data-ttu-id="41a9a-351">QuickFilters およびその他のモデル化されたカスタム フィルターを表示するコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-351">Containers that display QuickFilters and any other modeled custom filters</span></span>                           |
-| <span data-ttu-id="41a9a-352">フィールド (5 つのバリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-352">Fields (five variants)</span></span>                                                                                           | <span data-ttu-id="41a9a-353">主に個々のフィールドを表示するコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-353">Containers that primarily display individual fields</span></span>                                                 |
-| [<span data-ttu-id="41a9a-354">分析コード式ビルダー</span><span class="sxs-lookup"><span data-stu-id="41a9a-354">Dimension Expression Builder</span></span>](../financial/dimension-expression-builder-subpattern.md)     | <span data-ttu-id="41a9a-355">分析コード式ビルダー コントロールを含むコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-355">Containers that include a Dimension Expression Builder control</span></span>                                      |
-| [<span data-ttu-id="41a9a-356">分析コード エントリ コントロール</span><span class="sxs-lookup"><span data-stu-id="41a9a-356">Dimension Entry Control</span></span>](../financial/dimension-entry-control-subpattern.md)               | <span data-ttu-id="41a9a-357">分析コード エントリ コントロールを含むコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-357">Containers that include a Dimension Entry Control</span></span>                                                   |
-| [<span data-ttu-id="41a9a-358">リスト パネル</span><span class="sxs-lookup"><span data-stu-id="41a9a-358">List Panel</span></span>](list-panel-subpattern.md)                                         | <span data-ttu-id="41a9a-359">ユーザーがアイテムを移動する 2 つのリストを表示するコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-359">Containers that display two lists that users move items between</span></span>                                     |
-| [<span data-ttu-id="41a9a-360">入れ子になった簡易リストおよび詳細</span><span class="sxs-lookup"><span data-stu-id="41a9a-360">Nested Simple List and Details</span></span>](nested-simple-list-details-subpattern.md) | <span data-ttu-id="41a9a-361">簡単な簡易リストと詳細フォームをフォームのセクション内に埋め込むために使用されるコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-361">Containers that are used to embed a simpler Simple List and Details form inside a section in a form</span></span> |
-| [<span data-ttu-id="41a9a-362">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="41a9a-362">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)                         | <span data-ttu-id="41a9a-363">フィールド セットの上にアクションを表示するコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-363">Containers that display actions above a set of fields</span></span>                                               |
-| <span data-ttu-id="41a9a-364">[ツールバーおよびリスト](toolbar-list-subpattern.md) (2 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-364">[Toolbar and List](toolbar-list-subpattern.md) (two variants)</span></span>              | <span data-ttu-id="41a9a-365">1 ～ 2 グリッドを超えるアクションを表示するコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-365">Containers that display actions above 1–2 grids</span></span>                                                     |
-| <span data-ttu-id="41a9a-366">ワークスペース関連 (8 バリアント)</span><span class="sxs-lookup"><span data-stu-id="41a9a-366">Workspace-related (eight variants)</span></span>                                                                               | <span data-ttu-id="41a9a-367">操作可能なワークスペース内のさまざまなセクションに対応するコンテナー (複数)</span><span class="sxs-lookup"><span data-stu-id="41a9a-367">Containers that correspond to various sections inside an Operational Workspace</span></span>                      |
-
-### <a name="finding-containers-that-require-that-a-subpattern-be-applied-on-a-form"></a><span data-ttu-id="41a9a-368">フォーム上で適用されるサブパターンが必要なコンテナーの検索</span><span class="sxs-lookup"><span data-stu-id="41a9a-368">Finding containers that require that a subpattern be applied on a form</span></span>
-
-<span data-ttu-id="41a9a-369">フォームが Visual Studio デザイナーで開かれていると、デザイナーの上部にあるコントロール検索ボックスで「指定されていません」を検索することによって、まだサブパターンを適用する必要のあるコンテナーを簡単に検索できます (次のスクリーン ショットに図示)。</span><span class="sxs-lookup"><span data-stu-id="41a9a-369">When a form is open in the Visual Studio designer, you can easily search for containers that must still have subpatterns applied by searching for “unspecified” in the control search box at the top of the designer (as shown in the following screen shot).</span></span>
-
-<span data-ttu-id="41a9a-370">[![HowToSelectAFormPattern(15)](./media/howtoselectaformpattern-15.jpg)](./media/howtoselectaformpattern-15.jpg)</span><span class="sxs-lookup"><span data-stu-id="41a9a-370">[![HowToSelectAFormPattern (15)](./media/howtoselectaformpattern-15.jpg)](./media/howtoselectaformpattern-15.jpg)</span></span>
-
-### <a name="subpattern-visuals-and-descriptions"></a><span data-ttu-id="41a9a-371">サブパターンのビジュアルと説明</span><span class="sxs-lookup"><span data-stu-id="41a9a-371">Subpattern visuals and descriptions</span></span>
-
-<span data-ttu-id="41a9a-372">サブパターン クラスごとに、各バリアントに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-372">For each subpattern class, information is provided about each variant.</span></span> <span data-ttu-id="41a9a-373">この情報には、簡単な説明と例フォームの図が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41a9a-373">This information includes a short description and an illustration of an example form.</span></span>
-
-#### <a name="custom-filters"></a><span data-ttu-id="41a9a-374">カスタム フィルター</span><span class="sxs-lookup"><span data-stu-id="41a9a-374">Custom Filters</span></span>
-
-<span data-ttu-id="41a9a-375">[カスタム フィルター](custom-filter-group-subpattern.md) カスタム フィルターがモデル化されている場合は、このフォーム パターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-375">[Custom Filters](custom-filter-group-subpattern.md) Use this form pattern when custom filters are modeled.</span></span> <span data-ttu-id="41a9a-376">QuickFilter は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="41a9a-376">QuickFilter isn't required.</span></span>
-
-<span data-ttu-id="41a9a-377">フォーム: LedgerJournalTable (TopFields)</span><span class="sxs-lookup"><span data-stu-id="41a9a-377">Form: LedgerJournalTable (TopFields)</span></span>
-
-![HowToSelectAFormPattern (16)](./media/howtoselectaformpattern-16.jpg)
-
-<span data-ttu-id="41a9a-379">[カスタムと クイック フィルター](../financial/dimension-entry-control-subpattern.md) QuickFilter が必要な場合は、このバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-379">[Custom and Quick Filters](../financial/dimension-entry-control-subpattern.md) Use this variant when a QuickFilter is required.</span></span>
-
-<span data-ttu-id="41a9a-380">フォーム: CustTable (CustomFilterGroup)</span><span class="sxs-lookup"><span data-stu-id="41a9a-380">Form: CustTable (CustomFilterGroup)</span></span>
-
-![HowToSelectAFormPattern (17)](./media/howtoselectaformpattern-17.jpg)
-
-
-
-#### <a name="fields"></a><span data-ttu-id="41a9a-382">フィールド</span><span class="sxs-lookup"><span data-stu-id="41a9a-382">Fields</span></span>
-
-<span data-ttu-id="41a9a-383">[フィールドおよびフィールド グループ](fields-field-groups-subpattern.md) このフォーム パターンを使用して、フィールドのみを含むコンテナーの応答レイアウトを取得します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-383">[Fields and Field Groups](fields-field-groups-subpattern.md) Use this form pattern to get a responsive layout for containers that contain only fields.</span></span>
-
-<span data-ttu-id="41a9a-384">フォーム: InventLocation (LocationNames)</span><span class="sxs-lookup"><span data-stu-id="41a9a-384">Form: InventLocation (LocationNames)</span></span>
-
-![HowToSelectAFormPattern (18)](./media/howtoselectaformpattern-18.jpg)
-
-<span data-ttu-id="41a9a-386">[表形式フィールド](tabular-fields-subpattern.md) このフォーム パターンを使用して、フィールドの構造化されたレイアウトを取得します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-386">[Tabular Fields](tabular-fields-subpattern.md) Use this form pattern to get a structured layout of fields.</span></span> <span data-ttu-id="41a9a-387">主に合計のためです。</span><span class="sxs-lookup"><span data-stu-id="41a9a-387">It is intended primarily for totals.</span></span>
-
-<span data-ttu-id="41a9a-388">フォーム: LedgerJournalTransVendPaym (残高)</span><span class="sxs-lookup"><span data-stu-id="41a9a-388">Form: LedgerJournalTransVendPaym (Balances)</span></span>
-
-![HowToSelectAFormPattern (19)](./media/howtoselectaformpattern-19.jpg)
-
-<span data-ttu-id="41a9a-390">[テキスト入力](fill-text-subpattern.md) このフォーム パターンは、単一入力コントロールで全幅が必要な場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-390">[Fill Text](fill-text-subpattern.md) Use this form pattern when a single input control requires full width.</span></span>
-
-<span data-ttu-id="41a9a-391">フォーム: FmRental (メモ)</span><span class="sxs-lookup"><span data-stu-id="41a9a-391">Form: FmRental (Notes)</span></span>
-
-![HowToSelectAFormPattern (20)](./media/howtoselectaformpattern-20.jpg)
-
-<span data-ttu-id="41a9a-393">[水平フィールドおよびボタン グループ](horizontal-fields-buttons-group-subpattern.md) フィールドにインライン アクションがある場合は、このフォーム パターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-393">[Horizontal Fields and Button Group](horizontal-fields-buttons-group-subpattern.md) Use this form pattern when a field has an inline action.</span></span>
-
-<span data-ttu-id="41a9a-394">フォーム: SalesTable (GroupHeaderAddressHeaderOverview)</span><span class="sxs-lookup"><span data-stu-id="41a9a-394">Form: SalesTable (GroupHeaderAddressHeaderOverview)</span></span>
-
-![HowToSelectAFormPattern (21)](./media/howtoselectaformpattern-21.jpg)
-
-<span data-ttu-id="41a9a-396">[画像のプレビュー](image-preview-subpattern.md) このフォーム パターンは、イメージ コントロール (およびオプションの関連フィールド) を持つコンテナーに使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-396">[Image Preview](image-preview-subpattern.md) Use this form pattern for containers that have image controls (and optional related fields).</span></span>
-
-<span data-ttu-id="41a9a-397">フォーム: RetailVisualProfile (ログイン)</span><span class="sxs-lookup"><span data-stu-id="41a9a-397">Form: RetailVisualProfile (Login)</span></span>
-
-![HowToSelectAFormPattern (22)](./media/howtoselectaformpattern-22.jpg)
-
-
-
-#### <a name="toolbar-and-list"></a><span data-ttu-id="41a9a-399">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="41a9a-399">Toolbar and List</span></span>
-
-<span data-ttu-id="41a9a-400">[ツールバーおよびフィールド](toolbar-list-subpattern.md) アクションとグリッドのみを持つコンテナーでこのフォーム パターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-400">[Toolbar and List](toolbar-list-subpattern.md) Use this form pattern on containers that have only actions and a grid.</span></span>
-
-<span data-ttu-id="41a9a-401">フォーム: VendTable (TabCommunication)</span><span class="sxs-lookup"><span data-stu-id="41a9a-401">Form: VendTable (TabCommunication)</span></span>
-
-![HowToSelectAFormPattern (23)](./media/howtoselectaformpattern-23.jpg)
-
-<span data-ttu-id="41a9a-403">[ツールバーおよびリスト: 二重](toolbar-list-subpattern.md) コンテナーに2 つのグリッドがある場合、このツールバーおよびリスト バリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-403">[Toolbar and List – Double](toolbar-list-subpattern.md) Use this Toolbar and List variant when the containers have two grids.</span></span>
-
-<span data-ttu-id="41a9a-404">フォーム: SalesQuickQuote (TabPageExistingItems)</span><span class="sxs-lookup"><span data-stu-id="41a9a-404">Form: SalesQuickQuote (TabPageExistingItems)</span></span>
-
-![HowToSelectAFormPattern (24)](./media/howtoselectaformpattern-24.jpg)
-
-
-
-#### <a name="workspace-related"></a><span data-ttu-id="41a9a-406">関連するワークスペース</span><span class="sxs-lookup"><span data-stu-id="41a9a-406">Workspace Related</span></span>
-
-<span data-ttu-id="41a9a-407">[セクション タイル](section-tiles-subpattern.md) このバリアントを使用して、ワークスペースのセクションに一連のタイル/グラフを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-407">[Section Tiles](section-tiles-subpattern.md) Use this variant to show a set of tiles/charts in a workspace section.</span></span> <span data-ttu-id="41a9a-408">これは、ワークスペース フォームのタブ ページでモデル化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-408">This should be modeled in a tab page on the workspace form.</span></span> <span data-ttu-id="41a9a-409">グラフはフォーム パーツ コントロールを使用して定義されます</span><span class="sxs-lookup"><span data-stu-id="41a9a-409">Charts are defined by using Form Part Controls</span></span>
-
-<span data-ttu-id="41a9a-410">フォーム: SalesOrderProcessingWorkspace</span><span class="sxs-lookup"><span data-stu-id="41a9a-410">Form: SalesOrderProcessingWorkspace</span></span>
-
-![HowToSelectAFormPattern (25)](./media/howtoselectaformpattern-25.jpg)
-
-<span data-ttu-id="41a9a-412">[セクション関連リンク](section-related-links-subpattern.md) このバリアントを使用して、ワークスペースのセクションに一連のハイパーリンクを表示します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-412">[Section Related Links](section-related-links-subpattern.md) Use this variant to show a set of hyperlinks in a workspace section.</span></span> <span data-ttu-id="41a9a-413">これは、ワークスペース フォームのタブ ページでモデル化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41a9a-413">This should be modeled in a tab page on the workspace form.</span></span>
-
-<span data-ttu-id="41a9a-414">フォーム: SalesOrderProcessingWorkspace</span><span class="sxs-lookup"><span data-stu-id="41a9a-414">Form: SalesOrderProcessingWorkspace</span></span>
-
-![HowToSelectAFormPattern (26)](./media/howtoselectaformpattern-26.jpg)
-
-<span data-ttu-id="41a9a-416">[セクション タブ付きリスト](section-tabbed-list-subpattern.md) 複数のリスト バリアントを含める必要がある場合に、このバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-416">[Section Tabbed List](section-tabbed-list-subpattern.md) Use this variant when multiple list variants must be included.</span></span> <span data-ttu-id="41a9a-417">一度に 1 つだけ表示されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-417">Only one is shown at a time.</span></span>
-
-<span data-ttu-id="41a9a-418">[セクション積み上げグラフ](section-stacked-chart-subpattern.md) 運用ワークスペースに 2 つのグラフを含める必要がある場合に、このバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-418">[Section Stacked Chart](section-stacked-chart-subpattern.md) Use this variant when you must include up to two charts in an Operational Workspace.</span></span>
-
-<span data-ttu-id="41a9a-419">[セクション PowerBI](section-powerbi-subpattern.md) Power BI セクションを含める必要がある場合に、このバリアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-419">[Section PowerBI](section-powerbi-subpattern.md) Use this variant when a Power BI section must be included.</span></span>
-
-<span data-ttu-id="41a9a-420">[ワークスペース ページ フィルター グループ](workspace-filter-group-subpattern.md) このフォームのパターンを使用して、ワークスペースに 1 つのフィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-420">[Workspace Page Filter Group](workspace-filter-group-subpattern.md) Use this form pattern to add a single filter to your workspace.</span></span>
-
-<span data-ttu-id="41a9a-421">[フィルターおよびツールバー – 積み上げ](filters-toolbar-subpattern.md) このサブパターンをフォーム パート セクション リスト パターンで使用すると、フィルターの下にアクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-421">[Filters and Toolbar – Stacked](filters-toolbar-subpattern.md) Use this subpattern in the Form Part Section List pattern, so that actions appear below filters.</span></span>
-
-<span data-ttu-id="41a9a-422">[フィルターおよびツール バー – インライン](filters-toolbar-subpattern.md) このサブパターンをフォーム パート セクション リスト パターンで使用すると、フィルターとアクションが同じ行に表示されます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-422">[Filters and Toolbar – Inline](filters-toolbar-subpattern.md) Use this subpattern in the Form Part Section List pattern, so that filters and actions appear on the same line.</span></span>
-
-
-
-#### <a name="other"></a><span data-ttu-id="41a9a-423">外</span><span class="sxs-lookup"><span data-stu-id="41a9a-423">Other</span></span>
-
-<span data-ttu-id="41a9a-424">[入れ子になった簡易リストおよび詳細](nested-simple-list-details-subpattern.md) このフォーム パターンを使用すると、よりシンプルな簡易リストと詳細フォームをタブまたはグループ内に埋め込むことができます。</span><span class="sxs-lookup"><span data-stu-id="41a9a-424">[Nested Simple List & Details](nested-simple-list-details-subpattern.md) Use this form pattern to embed a simpler Simple List & Details form inside a tab or group.</span></span>
-
-<span data-ttu-id="41a9a-425">フォーム: HcmJob (TaskTabPage)</span><span class="sxs-lookup"><span data-stu-id="41a9a-425">Form: HcmJob (TaskTabPage)</span></span>
-
-![HowToSelectAFormPattern (27)](./media/howtoselectaformpattern-27.jpg)
-
-<span data-ttu-id="41a9a-427">[リスト パネル](list-panel-subpattern.md) このフォーム パターンは、ユーザーが 2 つのリストの間でアイテムを前後に移動する必要がある場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-427">[List Panel](list-panel-subpattern.md) Use this form pattern when users must move items back and forth between two lists.</span></span>
-
-<span data-ttu-id="41a9a-428">フォーム: CLIControls\_ListPanel (FormTabPageControl1)</span><span class="sxs-lookup"><span data-stu-id="41a9a-428">Form: CLIControls\_ListPanel (FormTabPageControl1)</span></span>
-
-![HowToSelectAFormPattern (28)](./media/howtoselectaformpattern-28.jpg)
-
-<span data-ttu-id="41a9a-430">[ツールバーおよびフィールド](toolbar-fields-subpattern.md) アクションとフィールドのみを持つコンテナーでこのフォーム パターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-430">[Toolbar and Fields](toolbar-fields-subpattern.md) Use this form pattern on containers that have only actions and fields</span></span>
-
-<span data-ttu-id="41a9a-431">フォーム: HcmPosition (WorkerAssignmentTabPage)</span><span class="sxs-lookup"><span data-stu-id="41a9a-431">Form: HcmPosition (WorkerAssignmentTabPage)</span></span>
-
-![HowToSelectAFormPattern (29)](./media/howtoselectaformpattern-29.jpg)
-
-<span data-ttu-id="41a9a-433">[分析コード エントリ コントロール](../financial/dimension-entry-control-subpattern.md) 分析コード エントリ コントロールのみを持つタブページにこのフォームパターンを使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-433">[Dimension Entry Control](../financial/dimension-entry-control-subpattern.md) Use this form pattern on tab pages that have only a Dimension Entry Control.</span></span>
-
-<span data-ttu-id="41a9a-434">フォーム: CustTable (TabFinancialDimensions)</span><span class="sxs-lookup"><span data-stu-id="41a9a-434">Form: CustTable (TabFinancialDimensions)</span></span>
-
-![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)
-
-<span data-ttu-id="41a9a-436">[分析コード式ビルダー](../financial/dimension-expression-builder-subpattern.md) このフォーム パターンは、分析コード式ビルダー コントロールを含むコンテナーで使用します。</span><span class="sxs-lookup"><span data-stu-id="41a9a-436">[Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md) Use this form pattern on containers that include a Dimension Expression Builder control.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="select-form-pattern.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>select-form-pattern.4cfe93.209804c4a733c350566fa1ac90d670750ca66a79.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>209804c4a733c350566fa1ac90d670750ca66a79</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\select-form-pattern.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Form patterns for migrated forms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">移行後のフォームのフォーム パターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information that will help you select the best form pattern for the forms that you migrate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Form patterns for migrated forms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">移行後のフォームのフォーム パターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information that will help you select the best form pattern for the forms that you migrate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Introduction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">はじめに</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The selection of a form pattern is an important step in the process of migrating a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームパターンの選択は、フォームを移行するプロセスの重要なステップです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>A pattern that is a good fit for the target form reduces the amount of migration work that is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ターゲット フォームに最適なパターンでは、必要な移行作業の量が減少します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>By contrast, a pattern that isn't a good fit can cause wasted time and effort.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対照的に、適切ではないパターンは無駄な時間と労力を引き起こす可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Therefore, it's important that you do some investigation, so that you can select the best form pattern for the form that you're migrating.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、移行するフォームに最適なフォーム パターンを選択できるよう、調査を行うことが重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Here is some guidance and tips for determining the appropriate pattern for a form:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームの適切なパターンを決定するためのガイダンスおよびヒントを次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Investigate the form’s metadata in the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーでフォームのメタデータを調べます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Pay close attention to the following details:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく注意して次の詳細を閉じてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Form name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Form.Design.Style</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Form.Design.Style</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Control names</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>The way that the controls are organized</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが整理される方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>The number and names of the data sources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">番号とデータ ソースの名前</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Investigate the form’s visuals by running the form and looking at the way information is displayed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームを実行して、情報が表示される方法を確認することでフォームのビジュアルを調べます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Selecting a form pattern via metadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータを通じてフォーム パターンを選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Use Form.Design.Style for guidance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ガイダンスに Form.Design.Style を使用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The <bpt id="p1">**</bpt>Form.Design.Style<ept id="p1">**</ept> property often contains the name of the pattern that was previously targeted for the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Form.Design.Style<ept id="p1">**</ept> プロパティには多くの場合、フォームの以前対象となっていたパターンの名前が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>If the <bpt id="p1">**</bpt>Style<ept id="p1">**</ept> property correctly matches the metadata, you can use the following table to find a pattern that is likely to be a good fit for the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>スタイル<ept id="p1">**</ept> プロパティはメタデータと正確に一致し、次の表を使用して、フォームに適合する可能性があるパターンを検出することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Form.Design.Style value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Form.Design.Style value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Corresponding pattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対応するパターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>DetailsFormMaster</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsFormMaster</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>Details Master<ept id="p1">](details-master-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細マスター<ept id="p1">](details-master-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>DetailsFormTransaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsFormTransaction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">[</bpt>Details Transaction<ept id="p1">](details-transaction-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細トランザクション<ept id="p1">](details-transaction-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Dialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダイアログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>Dialog<ept id="p1">](dialog-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ<ept id="p1">](dialog-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>DropDialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DropDialog</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt>Drop Dialog<ept id="p1">](drop-dialog-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ドロップ ダイアログ<ept id="p1">](drop-dialog-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>FormPart, where there are just fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単なるフィールドが存在する FormPart</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">[</bpt>Form Part FactBox Card<ept id="p1">](factbox-form-patterns.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パート 情報ボックス カード<ept id="p1">](factbox-form-patterns.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>FormPart, where there is a grid</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドが存在する FormPart</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">[</bpt>Form Part FactBox Grid<ept id="p1">](factbox-form-patterns.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パート 情報ボックス グリッド<ept id="p1">](factbox-form-patterns.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>ListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">[</bpt>List Page<ept id="p1">](list-page-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト ページ<ept id="p1">](list-page-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Lookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">[</bpt>Lookup<ept id="p1">](lookup-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルックアップ<ept id="p1">](lookup-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>SimpleList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SimpleList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">[</bpt>Simple List<ept id="p1">](simple-list-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リスト<ept id="p1">](simple-list-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>SimpleListDetails, where there are 2–3 fields in the navigation list (recommended)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーション リストにフィールドが 2 ～ 3 個の場合は SimpleListDetails (推奨)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source><bpt id="p1">[</bpt>Simple List Details – List Grid<ept id="p1">](simple-list-details-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細 – リスト グリッド<ept id="p1">](simple-list-details-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>SimpleListDetails, where there are and 4–5 fields in the navigation list</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーション リストにフィールドが 4 ～ 5 個の場合は SimpleListDetails</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">[</bpt>Simple List Details – Tabular Grid<ept id="p1">](simple-list-details-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細 – 表形式のグリッド<ept id="p1">](simple-list-details-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>SimpleListDetails, where there is a tree (rare)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツリーがある場合は SimpleListDetails (まれ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">[</bpt>Simple List Details – Tree<ept id="p1">](simple-list-details-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細 – ツリー<ept id="p1">](simple-list-details-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>TableOfContents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TableOfContents</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source><bpt id="p1">[</bpt>Table of Contents<ept id="p1">](table-of-contents-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>目次<ept id="p1">](table-of-contents-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Auto, where there is an <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> tab, a <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tab, and a single data source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動には<bpt id="p1">**</bpt>概要<ept id="p1">**</ept>タブ、<bpt id="p2">**</bpt>一般<ept id="p2">**</ept>タブ、および単一のデータ ソースが存在する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">[</bpt>Task Single<ept id="p1">](task-single-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク シングル<ept id="p1">](task-single-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Auto, where there are two sets of <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> tabs, <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tabs, and/or headers plus lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動には<bpt id="p1">**</bpt>概要<ept id="p1">**</ept>タブ、<bpt id="p2">**</bpt>一般<ept id="p2">**</ept>タブ、またはヘッダーを含めたラインの 2 つのセットが存在する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">[</bpt>Task Double<ept id="p1">](task-double-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク ダブル<ept id="p1">](task-double-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Auto, where there is focus on a single record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動には1 つのレコードにフォーカスが存在する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source><bpt id="p1">[</bpt>Simple Details<ept id="p1">](simple-details-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Auto, where the form name ends in “Lookup”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動には「ルックアップ」で終了するフォーム名が存在する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">[</bpt>Lookup<ept id="p1">](lookup-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルックアップ<ept id="p1">](lookup-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Auto, where there is a single tab control and <bpt id="p1">**</bpt>Next<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Previous<ept id="p2">**</ept> buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動には 1 つのタブ コントロールと<bpt id="p1">**</bpt>次へ<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>前へ<ept id="p2">**</ept>ボタンがある</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source><bpt id="p1">[</bpt>Wizard<ept id="p1">](wizard-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ウィザード<ept id="p1">](wizard-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Auto, where the form name ends in “Wizard”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動には「ウィザード」で終了するフォーム名が存在する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">[</bpt>Wizard<ept id="p1">](wizard-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ウィザード<ept id="p1">](wizard-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Auto, where there is just a grid and some buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動にはグリッドとボタンが存在する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">[</bpt>Simple List<ept id="p1">](simple-list-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リスト<ept id="p1">](simple-list-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>When a form doesn't match the Style property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームが Style プロパティと一致しないとき</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Sometimes, a form has an incorrect <bpt id="p1">**</bpt>Form.Design.Style<ept id="p1">**</ept> property value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場合によっては、フォームに間違った <bpt id="p1">**</bpt>Form.Design.Style<ept id="p1">**</ept> プロパティ値があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Form.Design.Style value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Form.Design.Style value</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>What the form might actually be</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能性のあるフォームの実際の値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>DetailsFormMaster</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsFormMaster</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>DetailsFormTransaction, if there is lines detail, or if controls have names that contain “lines"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsFormTransaction、明細行の詳細がある場合、またはコントロールの名前に「明細行」を含む場合</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>SimpleList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SimpleList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>SimpleListDetails, if there is more than just a grid and some custom filter fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドが複数といくつかのカスタム フィルター フィールドがある場合は SimpleListDetails。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>SimpleListDetails</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SimpleListDetails</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>SimpleList, if there is just a grid and some custom filter fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドが 1 つだけといくつかのカスタム フィルター フィールドがある場合は SimpleList。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>SimpleList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SimpleList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>ListPage, if there are numerous FactBoxes in the <bpt id="p1">**</bpt>Parts<ept id="p1">**</ept> node, or if the form has a corresponding Details Form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ListPage、<bpt id="p1">**</bpt>パーツ<ept id="p1">**</ept> ノードに数多くの情報ボックスがある場合、または対応する詳細フォームがそのフォームにある場合</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Selecting a form pattern via visuals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジュアルを通じてフォーム パターンを選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Although this approach is less useful than looking at the form metadata, you can get a lot of information about a form by running and examining it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法はフォームのメタデータを見るよりもあまり役に立ちませんが、フォームについて実行し調べることによってさまざまな情報を取得することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Use the form visuals as an additional data point to help you select a form pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のデータ ポイントとしてフォーム ビジュアルを使用すると、フォーム パターンを選択するのに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Look through the screen shots of migrated forms to find a form that looks like the target form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ターゲット フォームのようなフォームを見つけるために、移行したフォームのスクリーン ショットを参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Additionally, make sure that the description or intent of the pattern matches the description/intent of the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、パターンの記述または目的がフォームの説明/目的と一致していることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Selecting a form pattern via the designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイナーを通じてフォーム パターンを選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Right-click the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> node of the target form, select <bpt id="p2">**</bpt>Apply pattern<ept id="p2">**</ept>, and then click the pattern to apply.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ターゲット フォームの <bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept> ノードを右クリックし、<bpt id="p2">**</bpt>パターンの適用<ept id="p2">**</ept> を選択して適用するパターンをクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Form pattern reference guide</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームのパターンの参照ガイド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>List of classes of top-level form patterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最上位レベルのフォーム パターンのクラスのリスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Form pattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>What it's used for</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは何に使用されますか ?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source><bpt id="p1">[</bpt>Details Master<ept id="p1">](details-master-form-pattern.md)</ept> (two variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細マスター<ept id="p1">](details-master-form-pattern.md)</ept> (2 つのバリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>A form that displays the details of a complex entity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複雑なエンティティの詳細を表示するフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source><bpt id="p1">[</bpt>Details Transaction<ept id="p1">](details-transaction-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細トランザクション<ept id="p1">](details-transaction-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>A form that displays the details of a complex transaction entity and its lines (for example, and order and its lines)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフォームは、複雑なトランザクション エンティティとその行の詳細 (例えば、注文とその行) を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source><bpt id="p1">[</bpt>Dialog<ept id="p1">](dialog-form-pattern.md)</ept> (six variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ<ept id="p1">](dialog-form-pattern.md)</ept> (6 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>A form that is used as a dialog to gather a set of information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一連の情報を収集するダイアログとして使用されるフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source><bpt id="p1">[</bpt>Drop Dialog<ept id="p1">](drop-dialog-form-pattern.md)</ept> (two variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ドロップ ダイアログ<ept id="p1">](drop-dialog-form-pattern.md)</ept> (2 つのバリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>A form that is used as a drop dialog to gather a small set of information to provide context for an action</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクションにコンテキストを提供するための小さな情報のセットを収集するためにドロップ ダイアログとして使用されるフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source><bpt id="p1">[</bpt>FactBox<ept id="p1">](factbox-form-patterns.md)</ept> (two variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>情報ボックス<ept id="p1">](factbox-form-patterns.md)</ept> (2 つのバリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>A Microsoft Dynamics AX 2012 FactBox that displays information about a related record or set of records</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連するレコードまたはレコードのセットに関する情報を表示する Microsoft Dynamics AX 2012 FactBox。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source><bpt id="p1">[</bpt>List Page<ept id="p1">](list-page-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト ページ<ept id="p1">](list-page-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>A Dynamics AX 2012 List Page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 のリスト ページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source><bpt id="p1">[</bpt>Lookup<ept id="p1">](lookup-form-pattern.md)</ept> (three variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルックアップ<ept id="p1">](lookup-form-pattern.md)</ept> (3 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>A form that is used as a lookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップとして使用されるフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source><bpt id="p1">[</bpt>Simple Details<ept id="p1">](simple-details-form-pattern.md)</ept> (four variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept> (4 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>A form that is focused on a single record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つのレコードに特化したフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source><bpt id="p1">[</bpt>Simple List<ept id="p1">](simple-list-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リスト<ept id="p1">](simple-list-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>A form that displays details for a simple entity as a grid that has fewer than 10 fields per record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レコードあたり 10 未満のフィールドが含まれるグリッドとして簡易エンティティの詳細を表示するフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source><bpt id="p1">[</bpt>Simple List &amp; Details<ept id="p1">](simple-list-details-form-pattern.md)</ept> (three variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細<ept id="p1">](simple-list-details-form-pattern.md)</ept> (3 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>A form that displays information about an entity of medium complexity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">中規模な複雑さのエンティティに関する情報を表示するフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source><bpt id="p1">[</bpt>Table of Contents<ept id="p1">](table-of-contents-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>目次<ept id="p1">](table-of-contents-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>A form that displays setup information or loosely related information sets</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セットアップ情報または大まかに関連する情報のセットが表示されるフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Task (two variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク (2 つのバリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>A legacy form pattern that is used to display master or transaction entities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レガシ フォーム パターンは、マスタ エンティティまたはトランザクション エンティティを表示するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source><bpt id="p1">[</bpt>Wizard<ept id="p1">](wizard-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ウィザード<ept id="p1">](wizard-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>A form that displays a set of tab pages to the user to gather information in a predetermined order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一定の順序に従って情報を収集するユーザーに一連のタブ ページを表示するフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source><bpt id="p1">[</bpt>Operational Workspace<ept id="p1">](workspace-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>運用ワークスペース<ept id="p1">](workspace-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>A form that is used to display an overview of an activity and is meant to be a primary means of navigation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">活動の概要を表示するために使用され、ナビゲーションの主な手段を意味するフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Workspace Panorama Sections (three variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース パノラマ セクション (3 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>A form that is used to show content for a panorama section (via a Form Part Control) in the Operational Workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">運用ワークスペースに (フォームのパーツ コントロールを通じて) パノラマ セクションに内容を表示するためのフォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Finding forms that currently use a particular form pattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のフォーム パターンを現在使用しているフォームを検索</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>For a full list of forms that are currently using a particular form pattern, generate the <bpt id="p1">**</bpt>Form Patterns<ept id="p1">**</ept> report from within Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のフォーム パターンを現在使用しているフォームの一覧全体については、Microsoft Visual Studio 内から<bpt id="p1">**</bpt>フォーム パターン<ept id="p1">**</ept>レポートを生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>For information on running the report, see <bpt id="p1">[</bpt>Form pattern add-ins<ept id="p1">](form-pattern-add-ins.md)</ept>. You can filter the report in Excel to find forms that use a particular pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートを実行する詳細については、<bpt id="p1">[</bpt>フォーム パターン アドイン<ept id="p1">](form-pattern-add-ins.md)</ept> を参照してください。Excel でレポートをフィルター処理し、特定のパターンを使用するフォームを検索できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Form pattern visuals and descriptions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームのパターンのビジュアルと説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>For each form pattern class, information is provided about each variant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターン クラスごとに、各バリアントに関する情報が提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>This information includes a short description and an illustration of an example form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この情報には、簡単な説明と例フォームの図が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Details Master</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">[</bpt>Details Master<ept id="p1">](details-master-form-pattern.md)</ept><ph id="ph1">\[</ph>Default<ph id="ph2">\]</ph> This form pattern is used to display the details of a complex entity on FastTabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細マスター<ept id="p1">](details-master-form-pattern.md)</ept><ph id="ph1">\[</ph>既定<ph id="ph2">\]</ph> このフォーム パターンは、クイック タブ上の複雑なエンティティの詳細を表示するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>It includes a grid view and a details view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド ビューと詳細ビューが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Form: CustTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>image001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">image001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>image002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">image002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><bpt id="p1">[</bpt>Details Master w/ Standard Tabs<ept id="p1">](details-master-form-pattern.md)</ept> Use this Details Master variant when your form has a large number of FastTabs (&gt;15) that can be grouped into categories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細マスター / 標準タブ<ept id="p1">](details-master-form-pattern.md)</ept> フォームに多数のクイック タブ (&gt;15) があり、カテゴリにグループ化できる場合は、この詳細マスター バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Form: HcmWorker</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: HcmWorker</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>image003<ept id="p1">](./media/image003.jpg)](./media/image003.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>image003<ept id="p1">](./media/image003.jpg)](./media/image003.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (31)<ept id="p1">](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(31)<ept id="p1">](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Details Transaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細トランザクション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source><bpt id="p1">[</bpt>Details Transaction<ept id="p1">](details-transaction-form-pattern.md)</ept> Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細トランザクション<ept id="p1">](details-transaction-form-pattern.md)</ept> このフォーム パターンを使用して、複雑なトランザクションエンティティとその行の詳細 (例えば、注文とその行) を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Form: SalesTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (32)<ept id="p1">](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(32)<ept id="p1">](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (33)<ept id="p1">](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(33)<ept id="p1">](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Dialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダイアログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source><bpt id="p1">[</bpt>Dialog – Basic<ept id="p1">](dialog-form-pattern.md)</ept><ph id="ph1">\[</ph>Default<ph id="ph2">\]</ph> This form pattern is used to gather or show a set of information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ – 基本<ept id="p1">](dialog-form-pattern.md)</ept><ph id="ph1">\[</ph>既定<ph id="ph2">\]</ph> このフォームのパターンは一連の情報を収集または表示するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Form: ProjTableCreate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: ProjTableCreate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (34)<ept id="p1">](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(34)<ept id="p1">](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">[</bpt>Dialog – Read Only<ept id="p1">](dialog-form-pattern.md)</ept> Use this Dialog variant when your Dialog just displays information that can't be edited.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ – 読み取り専用<ept id="p1">](dialog-form-pattern.md)</ept> ダイアログが編集できない情報だけを表示する場合は、このダイアログバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>It has only a <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>ボタンだけがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Form: SalesTablePostings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesTablePostings</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (35)<ept id="p1">](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(35)<ept id="p1">](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source><bpt id="p1">[</bpt>Dialog – FastTabs<ept id="p1">](dialog-form-pattern.md)</ept> Use this Dialog variant when your Dialog content is grouped into FastTabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ – クイック タブ<ept id="p1">](dialog-form-pattern.md)</ept> ダイアログの内容がクイック タブにグループ化されている場合は、このダイアログ バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>None currently in product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在、製品にはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (36)<ept id="p1">](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(36)<ept id="p1">](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source><bpt id="p1">[</bpt>Dialog – Tabs<ept id="p1">](dialog-form-pattern.md)</ept> Use this Dialog variant when your Dialog content must be grouped into tabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ – タブ<ept id="p1">](dialog-form-pattern.md)</ept> ダイアログの内容をタブにグループ化する必要がある場合は、このダイアログ バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Form: CaseDetailCreate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CaseDetailCreate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>HowToSelectAFormPattern (37)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (37)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source><bpt id="p1">[</bpt>Dialog – Double Tabs<ept id="p1">](dialog-form-pattern.md)</ept> Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ダイアログ – 二重タブ<ept id="p1">](dialog-form-pattern.md)</ept> ダイアログコンテンツに2つのタブが重ねて表示されている場合は、このダイアログバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Form: PurchTableReferences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: PurchTableReferences</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>HowToSelectAFormPattern (38)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (38)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Drop Dialog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドロップ ダイアログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source><bpt id="p1">[</bpt>Drop Dialog<ept id="p1">](drop-dialog-form-pattern.md)</ept><ph id="ph1">\[</ph>Default<ph id="ph2">\]</ph> This form pattern is used to initiate actions when the number of fields is small (less than five).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ドロップ ダイアログ<ept id="p1">](drop-dialog-form-pattern.md)</ept><ph id="ph1">\[</ph>既定<ph id="ph2">\]</ph> このフォーム パターンは、フィールド数が少ない場合 (5 未満) にアクションを開始するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Form: CustCollectionsNewActivityAction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustCollectionsNewActivityAction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (39)<ept id="p1">](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(39)<ept id="p1">](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source><bpt id="p1">[</bpt>Drop Dialog – Read Only<ept id="p1">](drop-dialog-form-pattern.md)</ept> Use this Drop Dialog variant when the fields in the Drop Dialog aren't editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ドロップ ダイアログ – 読み取り専用<ept id="p1">](drop-dialog-form-pattern.md)</ept> ドロップ ダイアログのフィールドが編集できない場合は、このドロップ ダイアログ バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>No <bpt id="p1">**</bpt>OK<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Close<ept id="p2">**</ept> button is modeled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>閉じる<ept id="p2">**</ept>ボタンはモデル化されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>No example currently exists in the product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在、例が製品に存在しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>FactBox</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">情報ボックス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source><bpt id="p1">[</bpt>FacbBox Grid<ept id="p1">](factbox-form-patterns.md)</ept> Use this FactBox variant to show a child collection of related information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>情報ボックス グリッド<ept id="p1">](factbox-form-patterns.md)</ept> この情報ボックス バリアントを使用して、関連情報の子コレクションを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Form: ContactsInfoPart</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: ContactsInfoPart</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>HowToSelectAFormPattern (40)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (40)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source><bpt id="p1">[</bpt>FactBox Card<ept id="p1">](factbox-form-patterns.md)</ept> Use this FactBox variant to show a set of related fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>情報ボックス カード<ept id="p1">](factbox-form-patterns.md)</ept> この情報ボックス バリアントを使用して、一連の関連フィールドを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Form: CustStatisticsStatistics</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustStatisticsStatistics</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>HowToSelectAFormPattern (41)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (41)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>List Page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト ページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source><bpt id="p1">[</bpt>List Page<ept id="p1">](list-page-form-pattern.md)</ept> The Dynamics AX 2012 list page that is just a grid that is optimized for browsing records and acting on those records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト ページ<ept id="p1">](list-page-form-pattern.md)</ept> Dynamics AX 2012 のリストページは、レコード閲覧とそのレコードの操作に最適化されたグリッドです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Form: SalesTableListPage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesTableListPage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>HowToSelectAFormPattern (42)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (42)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Lookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ルックアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source><bpt id="p1">[</bpt>Lookup Basic<ept id="p1">](lookup-form-pattern.md)</ept><ph id="ph1">\[</ph>Default<ph id="ph2">\]</ph> This form pattern is used if the lookup form is a grid or tree that has optional filters or buttons at the bottom.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>基本のルックアップ<ept id="p1">](lookup-form-pattern.md)</ept><ph id="ph1">\[</ph>既定<ph id="ph2">\]</ph> このフォーム パターンは、ルックアップ フォームが下部にオプションのフィルターまたはボタンを持つグリッドまたはツリーである場合に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Form: SysLanguageLookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SysLanguageLookup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (43)<ept id="p1">](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(43)<ept id="p1">](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source><bpt id="p1">[</bpt>Lookup w/Preview<ept id="p1">](lookup-form-pattern.md)</ept> Use this Lookup variant when, in addition to the basic pattern, a preview of the current record is also shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プレビュー付きのルックアップ<ept id="p1">](lookup-form-pattern.md)</ept> このルックアップ バリアントを使用して、ときに、基本的なパターンだけでなく、現在のレコードのプレビューが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Form: HcmWorkerLookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: HcmWorkerLookup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>HowToSelectAFormPattern (44)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (44)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source><bpt id="p1">[</bpt>Lookup w/Tabs<ept id="p1">](lookup-form-pattern.md)</ept> Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タブ付きのルックアップ<ept id="p1">](lookup-form-pattern.md)</ept> ルックアップの複数のビュー (グリッドビュー / ツリービュー、複数のフィルタリングされたリストなど) がある場合は、このルックアップ バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Form: CaseCategoryLookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CaseCategoryLookup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>HowToSelectAFormPattern (45)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (45)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Panorama Section</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パノラマ セクション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source><bpt id="p1">[</bpt>Form Part Section List<ept id="p1">](section-list-form-pattern.md)</ept> Use this form pattern to show a list in a workspace section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パート セクション リスト<ept id="p1">](section-list-form-pattern.md)</ept> このフォーム パターンを使用して、ワークスペース セクションにリストを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>This should be modeled as a separate form and rendered in the workspace via a Form Part Control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは別のフォームとしてモデル化し、フォーム パーツ コントロールを介してワークスペースにレンダリングする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source><bpt id="p1">[</bpt>Form Part Section List - Double<ept id="p1">](section-list-form-pattern.md)</ept> Use this variant when you must also show a secondary list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フォーム パート セクション リスト - ダブル<ept id="p1">](section-list-form-pattern.md)</ept> セカンダリ リストを表示する必要がある場合は、このバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>This secondary list isn't initially visible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセカンダリ リストは最初は表示されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source><bpt id="p1">[</bpt>Hub Part Chart<ept id="p1">](section-chart-form-pattern.md)</ept> Use this variant to show a chart in a workspace section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ハブ パート グラフ<ept id="p1">](section-chart-form-pattern.md)</ept> このバリアントを使用して、ワークスペース セクション にグラフを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>This should be modeled as a separate form and rendered in the workspace via a Form Part Control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは別のフォームとしてモデル化し、フォーム パーツ コントロールを介してワークスペースにレンダリングする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Form: VendInvoiceJourCountChart</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: VendInvoiceJourCountChart</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (1)<ept id="p1">](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(1)<ept id="p1">](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Simple Details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source><bpt id="p1">[</bpt>Simple Details w/Toolbar and Fields<ept id="p1">](simple-details-form-pattern.md)</ept> Use this form pattern to show fields for a single base record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド付き簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept> このフォーム パターンを使用して、単一の基本レコードのフィールドを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Form: AgreementLine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: AgreementLine</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>HowToSelectAFormPattern (2)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (2)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source><bpt id="p1">[</bpt>Simple Details w/FastTabs<ept id="p1">](simple-details-form-pattern.md)</ept> Use this Simple Details variant when the record’s information is organized into FastTabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>クイック タブ付き簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept> レコードの情報がクイック タブにまとめられている場合は、この簡易詳細バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Form: PlanActivityServiceDetails</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: PlanActivityServiceDetails</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>HowToSelectAFormPattern (3)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (3)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source><bpt id="p1">[</bpt>Simple Details w/Standard Tabs<ept id="p1">](simple-details-form-pattern.md)</ept> Use this Simple Details variant when the record’s information is organized into regular tabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>標準タブ付き簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept> レコードの情報が通常のタブにまとめられている場合は、この簡易詳細バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Form: HcmEmploymentDateManager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: HcmEmploymentDateManager</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>HowToSelectAFormPattern (4)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (4)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source><bpt id="p1">[</bpt>Simple Details w/Panorama<ept id="p1">](simple-details-form-pattern.md)</ept> Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>パノラマ付き簡易詳細<ept id="p1">](simple-details-form-pattern.md)</ept> この簡易詳細バリアントを使用して、水平方向にスクロールするパノラマにレコードの情報を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Form: PdsMRCEventTracker</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: PdsMRCEventTracker</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>HowToSelectAFormPattern (5)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (5)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Simple List</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易リスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source><bpt id="p1">[</bpt>Simple List<ept id="p1">](simple-list-form-pattern.md)</ept> This form pattern is used to maintain data for simple entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リスト<ept id="p1">](simple-list-form-pattern.md)</ept> このフォーム パターンは簡易エンティティのデータを管理するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Form: CustGroup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustGroup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>HowToSelectAFormPattern (6)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (6)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Simple List and Details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡易リストと詳細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source><bpt id="p1">[</bpt>Simple List &amp; Details – List Grid<ept id="p1">](simple-list-details-form-pattern.md)</ept><ph id="ph1">\[</ph>Default<ph id="ph2">\]</ph> This form pattern is used to maintain data for entities of medium complexity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細 – リスト グリッド<ept id="p1">](simple-list-details-form-pattern.md)</ept><ph id="ph1">\[</ph>既定<ph id="ph2">\]</ph> このフォーム パターンは中程度の複雑さのエンティティのデータを管理するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>A list grid that has 2–3 fields in the navigation list is the preferred pattern for this form style in the current version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーション リストの 2 ～ 3 フィールドが含まれるリスト グリッドは、現在のバージョンでは、このフォーム スタイルの優先パターンです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Form: PaymTerm</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: PaymTerm</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>HowToSelectAFormPattern (7)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (7)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source><bpt id="p1">[</bpt>Simple List &amp; Details – Tabular Grid<ept id="p1">](simple-list-details-form-pattern.md)</ept> Use this Simple List &amp; Details variant if you require more than three fields in the list part of the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細 – 表形式のグリッド<ept id="p1">](simple-list-details-form-pattern.md)</ept> この簡易リストと詳細のバリアントは、フォームのリスト部分に 3 つ以上のフィールドが必要な場合に使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Form: ExchangeRate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: ExchangeRate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>HowToSelectAFormPattern (8)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (8)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source><bpt id="p1">[</bpt>Simple List &amp; Details – Tree<ept id="p1">](simple-list-details-form-pattern.md)</ept> Use this Simple List &amp; Details variant if the list part of the form is a tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細 – ツリー<ept id="p1">](simple-list-details-form-pattern.md)</ept> フォームのリスト部分がツリーの場合は、この簡易リストと詳細のバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Form: FiscalCalendars</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: FiscalCalendars</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>HowToSelectAFormPattern (9)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (9)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Table of Contents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">目次</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source><bpt id="p1">[</bpt>Table of Contents<ept id="p1">](table-of-contents-form-pattern.md)</ept> Use this form pattern to show setup information or loosely related information sets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>目次<ept id="p1">](table-of-contents-form-pattern.md)</ept> このフォーム パターンを使用して、設定情報または大まかに関連する情報のセットを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Form: CustParameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustParameters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>HowToSelectAFormPattern (10)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (10)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Task</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source><bpt id="p1">[</bpt>Task Single<ept id="p1">](task-single-form-pattern.md)</ept> This legacy form pattern is used to display entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク シングル<ept id="p1">](task-single-form-pattern.md)</ept> このレガシ フォーム パターンは、エンティティを表示するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>It should be used only for migration, not for new forms.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、新しいフォームではなく、移行にのみ使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Form: LedgerJournalTable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: LedgerJournalTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>HowToSelectAFormPattern (11)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (11)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source><bpt id="p1">[</bpt>Task Double<ept id="p1">](task-double-form-pattern.md)</ept> This legacy form pattern is used to display transaction entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タスク ダブル<ept id="p1">](task-double-form-pattern.md)</ept> このレガシ フォーム パターンは、トランザクション エンティティを表示するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>It should be used only for migration, not for new forms.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、新しいフォームではなく、移行にのみ使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Form: HRMAbsenceTableHistory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: HRMAbsenceTableHistory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>HowToSelectAFormPattern (12)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (12)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Wizard</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ウィザード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source><bpt id="p1">[</bpt>Wizard<ept id="p1">](wizard-form-pattern.md)</ept> This form pattern is used to display a set of page views to the user to gather information in a predetermined order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ウィザード<ept id="p1">](wizard-form-pattern.md)</ept> このフォーム パターンはあらじめ設定された順序で情報を収集するために、ユーザーに一連のページ ビューを表示するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Form: WrkCtrBulkResReqEditWizard</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: WrkCtrBulkResReqEditWizard</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>HowToSelectAFormPattern (13)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (13)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source><bpt id="p1">[</bpt>Operational Workspace<ept id="p1">](workspace-form-pattern.md)</ept><ph id="ph1">\[</ph>Default<ph id="ph2">\]</ph> This is the preferred, performance-enhanced variant of the Workspace pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>運用ワークスペース<ept id="p1">](workspace-form-pattern.md)</ept><ph id="ph1">\[</ph>既定<ph id="ph2">\]</ph> これは、ワークスペース パターンで推奨されているパフォーマンスが向上したバリアントです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Form: FmClerkWorkspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: FmClerkWorkspace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>HowToSelectAFormPattern (1)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (1)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Workspace: This is the old Workspace pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース: これは古いワークスペース パターンです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>It will be removed soon, so don't use it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これはまもなく削除されるため、使用しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>It is included here only for completeness.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここでは完全を期すためだけに含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Do not use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Subpattern reference guide</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブパターン参照ガイド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>List of subpattern classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブパターン クラスのリスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Form pattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム パターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>What it's used for</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは何に使用されますか ?</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source><bpt id="p1">[</bpt>Custom Filters<ept id="p1">](custom-filter-group-subpattern.md)</ept> (two variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム フィルター<ept id="p1">](custom-filter-group-subpattern.md)</ept> (2 つのバリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Containers that display QuickFilters and any other modeled custom filters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuickFilters およびその他のモデル化されたカスタム フィルターを表示するコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Fields (five variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド (5 つのバリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Containers that primarily display individual fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主に個々のフィールドを表示するコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source><bpt id="p1">[</bpt>Dimension Expression Builder<ept id="p1">](../financial/dimension-expression-builder-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード式ビルダー<ept id="p1">](../financial/dimension-expression-builder-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Containers that include a Dimension Expression Builder control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード式ビルダー コントロールを含むコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source><bpt id="p1">[</bpt>Dimension Entry Control<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード エントリ コントロール<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Containers that include a Dimension Entry Control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析コード エントリ コントロールを含むコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source><bpt id="p1">[</bpt>List Panel<ept id="p1">](list-panel-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト パネル<ept id="p1">](list-panel-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Containers that display two lists that users move items between</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがアイテムを移動する 2 つのリストを表示するコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source><bpt id="p1">[</bpt>Nested Simple List and Details<ept id="p1">](nested-simple-list-details-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>入れ子になった簡易リストおよび詳細<ept id="p1">](nested-simple-list-details-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Containers that are used to embed a simpler Simple List and Details form inside a section in a form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">簡単な簡易リストと詳細フォームをフォームのセクション内に埋め込むために使用されるコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source><bpt id="p1">[</bpt>Toolbar and Fields<ept id="p1">](toolbar-fields-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド<ept id="p1">](toolbar-fields-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Containers that display actions above a set of fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド セットの上にアクションを表示するコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source><bpt id="p1">[</bpt>Toolbar and List<ept id="p1">](toolbar-list-subpattern.md)</ept> (two variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびリスト<ept id="p1">](toolbar-list-subpattern.md)</ept> (2 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Containers that display actions above 1–2 grids</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 ～ 2 グリッドを超えるアクションを表示するコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Workspace-related (eight variants)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース関連 (8 バリアント)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Containers that correspond to various sections inside an Operational Workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作可能なワークスペース内のさまざまなセクションに対応するコンテナー (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Finding containers that require that a subpattern be applied on a form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム上で適用されるサブパターンが必要なコンテナーの検索</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>When a form is open in the Visual Studio designer, you can easily search for containers that must still have subpatterns applied by searching for “unspecified” in the control search box at the top of the designer (as shown in the following screen shot).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームが Visual Studio デザイナーで開かれていると、デザイナーの上部にあるコントロール検索ボックスで「指定されていません」を検索することによって、まだサブパターンを適用する必要のあるコンテナーを簡単に検索できます (次のスクリーン ショットに図示)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern (15)<ept id="p1">](./media/howtoselectaformpattern-15.jpg)](./media/howtoselectaformpattern-15.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>HowToSelectAFormPattern(15)<ept id="p1">](./media/howtoselectaformpattern-15.jpg)](./media/howtoselectaformpattern-15.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Subpattern visuals and descriptions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブパターンのビジュアルと説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>For each subpattern class, information is provided about each variant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブパターン クラスごとに、各バリアントに関する情報が提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>This information includes a short description and an illustration of an example form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この情報には、簡単な説明と例フォームの図が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Custom Filters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム フィルター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source><bpt id="p1">[</bpt>Custom Filters<ept id="p1">](custom-filter-group-subpattern.md)</ept> Use this form pattern when custom filters are modeled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム フィルター<ept id="p1">](custom-filter-group-subpattern.md)</ept> カスタム フィルターがモデル化されている場合は、このフォーム パターンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>QuickFilter isn't required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuickFilter は必要ありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Form: LedgerJournalTable (TopFields)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: LedgerJournalTable (TopFields)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>HowToSelectAFormPattern (16)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (16)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source><bpt id="p1">[</bpt>Custom and Quick Filters<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept> Use this variant when a QuickFilter is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタムと クイック フィルター<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept> QuickFilter が必要な場合は、このバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Form: CustTable (CustomFilterGroup)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustTable (CustomFilterGroup)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>HowToSelectAFormPattern (17)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (17)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source><bpt id="p1">[</bpt>Fields and Field Groups<ept id="p1">](fields-field-groups-subpattern.md)</ept> Use this form pattern to get a responsive layout for containers that contain only fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィールドおよびフィールド グループ<ept id="p1">](fields-field-groups-subpattern.md)</ept> このフォーム パターンを使用して、フィールドのみを含むコンテナーの応答レイアウトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Form: InventLocation (LocationNames)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: InventLocation (LocationNames)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>HowToSelectAFormPattern (18)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (18)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source><bpt id="p1">[</bpt>Tabular Fields<ept id="p1">](tabular-fields-subpattern.md)</ept> Use this form pattern to get a structured layout of fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>表形式フィールド<ept id="p1">](tabular-fields-subpattern.md)</ept> このフォーム パターンを使用して、フィールドの構造化されたレイアウトを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>It is intended primarily for totals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主に合計のためです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Form: LedgerJournalTransVendPaym (Balances)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: LedgerJournalTransVendPaym (残高)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>HowToSelectAFormPattern (19)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (19)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source><bpt id="p1">[</bpt>Fill Text<ept id="p1">](fill-text-subpattern.md)</ept> Use this form pattern when a single input control requires full width.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>テキスト入力<ept id="p1">](fill-text-subpattern.md)</ept> このフォーム パターンは、単一入力コントロールで全幅が必要な場合に使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Form: FmRental (Notes)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: FmRental (メモ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>HowToSelectAFormPattern (20)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (20)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source><bpt id="p1">[</bpt>Horizontal Fields and Button Group<ept id="p1">](horizontal-fields-buttons-group-subpattern.md)</ept> Use this form pattern when a field has an inline action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>水平フィールドおよびボタン グループ<ept id="p1">](horizontal-fields-buttons-group-subpattern.md)</ept> フィールドにインライン アクションがある場合は、このフォーム パターンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>Form: SalesTable (GroupHeaderAddressHeaderOverview)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesTable (GroupHeaderAddressHeaderOverview)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>HowToSelectAFormPattern (21)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (21)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source><bpt id="p1">[</bpt>Image Preview<ept id="p1">](image-preview-subpattern.md)</ept> Use this form pattern for containers that have image controls (and optional related fields).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>画像のプレビュー<ept id="p1">](image-preview-subpattern.md)</ept> このフォーム パターンは、イメージ コントロール (およびオプションの関連フィールド) を持つコンテナーに使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Form: RetailVisualProfile (Login)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: RetailVisualProfile (ログイン)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>HowToSelectAFormPattern (22)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (22)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Toolbar and List</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールバーおよびリスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source><bpt id="p1">[</bpt>Toolbar and List<ept id="p1">](toolbar-list-subpattern.md)</ept> Use this form pattern on containers that have only actions and a grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド<ept id="p1">](toolbar-list-subpattern.md)</ept> アクションとグリッドのみを持つコンテナーでこのフォーム パターンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Form: VendTable (TabCommunication)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: VendTable (TabCommunication)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>HowToSelectAFormPattern (23)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (23)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source><bpt id="p1">[</bpt>Toolbar and List – Double<ept id="p1">](toolbar-list-subpattern.md)</ept> Use this Toolbar and List variant when the containers have two grids.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびリスト: 二重<ept id="p1">](toolbar-list-subpattern.md)</ept> コンテナーに2 つのグリッドがある場合、このツールバーおよびリスト バリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>Form: SalesQuickQuote (TabPageExistingItems)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesQuickQuote (TabPageExistingItems)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>HowToSelectAFormPattern (24)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (24)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Workspace Related</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連するワークスペース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source><bpt id="p1">[</bpt>Section Tiles<ept id="p1">](section-tiles-subpattern.md)</ept> Use this variant to show a set of tiles/charts in a workspace section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション タイル<ept id="p1">](section-tiles-subpattern.md)</ept> このバリアントを使用して、ワークスペースのセクションに一連のタイル/グラフを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>This should be modeled in a tab page on the workspace form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、ワークスペース フォームのタブ ページでモデル化する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Charts are defined by using Form Part Controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グラフはフォーム パーツ コントロールを使用して定義されます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Form: SalesOrderProcessingWorkspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesOrderProcessingWorkspace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>HowToSelectAFormPattern (25)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (25)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source><bpt id="p1">[</bpt>Section Related Links<ept id="p1">](section-related-links-subpattern.md)</ept> Use this variant to show a set of hyperlinks in a workspace section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション関連リンク<ept id="p1">](section-related-links-subpattern.md)</ept> このバリアントを使用して、ワークスペースのセクションに一連のハイパーリンクを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>This should be modeled in a tab page on the workspace form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、ワークスペース フォームのタブ ページでモデル化する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Form: SalesOrderProcessingWorkspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: SalesOrderProcessingWorkspace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>HowToSelectAFormPattern (26)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (26)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source><bpt id="p1">[</bpt>Section Tabbed List<ept id="p1">](section-tabbed-list-subpattern.md)</ept> Use this variant when multiple list variants must be included.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション タブ付きリスト<ept id="p1">](section-tabbed-list-subpattern.md)</ept> 複数のリスト バリアントを含める必要がある場合に、このバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Only one is shown at a time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一度に 1 つだけ表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source><bpt id="p1">[</bpt>Section Stacked Chart<ept id="p1">](section-stacked-chart-subpattern.md)</ept> Use this variant when you must include up to two charts in an Operational Workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション積み上げグラフ<ept id="p1">](section-stacked-chart-subpattern.md)</ept> 運用ワークスペースに 2 つのグラフを含める必要がある場合に、このバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source><bpt id="p1">[</bpt>Section PowerBI<ept id="p1">](section-powerbi-subpattern.md)</ept> Use this variant when a Power BI section must be included.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>セクション PowerBI<ept id="p1">](section-powerbi-subpattern.md)</ept> Power BI セクションを含める必要がある場合に、このバリアントを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source><bpt id="p1">[</bpt>Workspace Page Filter Group<ept id="p1">](workspace-filter-group-subpattern.md)</ept> Use this form pattern to add a single filter to your workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ワークスペース ページ フィルター グループ<ept id="p1">](workspace-filter-group-subpattern.md)</ept> このフォームのパターンを使用して、ワークスペースに 1 つのフィルターを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source><bpt id="p1">[</bpt>Filters and Toolbar – Stacked<ept id="p1">](filters-toolbar-subpattern.md)</ept> Use this subpattern in the Form Part Section List pattern, so that actions appear below filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィルターおよびツールバー – 積み上げ<ept id="p1">](filters-toolbar-subpattern.md)</ept> このサブパターンをフォーム パート セクション リスト パターンで使用すると、フィルターの下にアクションが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source><bpt id="p1">[</bpt>Filters and Toolbar – Inline<ept id="p1">](filters-toolbar-subpattern.md)</ept> Use this subpattern in the Form Part Section List pattern, so that filters and actions appear on the same line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィルターおよびツール バー – インライン<ept id="p1">](filters-toolbar-subpattern.md)</ept> このサブパターンをフォーム パート セクション リスト パターンで使用すると、フィルターとアクションが同じ行に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Other</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">外</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source><bpt id="p1">[</bpt>Nested Simple List &amp; Details<ept id="p1">](nested-simple-list-details-subpattern.md)</ept> Use this form pattern to embed a simpler Simple List &amp; Details form inside a tab or group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>入れ子になった簡易リストおよび詳細<ept id="p1">](nested-simple-list-details-subpattern.md)</ept> このフォーム パターンを使用すると、よりシンプルな簡易リストと詳細フォームをタブまたはグループ内に埋め込むことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Form: HcmJob (TaskTabPage)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: HcmJob (TaskTabPage)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>HowToSelectAFormPattern (27)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (27)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source><bpt id="p1">[</bpt>List Panel<ept id="p1">](list-panel-subpattern.md)</ept> Use this form pattern when users must move items back and forth between two lists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>リスト パネル<ept id="p1">](list-panel-subpattern.md)</ept> このフォーム パターンは、ユーザーが 2 つのリストの間でアイテムを前後に移動する必要がある場合に使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Form: CLIControls<ph id="ph1">\_</ph>ListPanel (FormTabPageControl1)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CLIControls<ph id="ph1">\_</ph>ListPanel (FormTabPageControl1)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>HowToSelectAFormPattern (28)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (28)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source><bpt id="p1">[</bpt>Toolbar and Fields<ept id="p1">](toolbar-fields-subpattern.md)</ept> Use this form pattern on containers that have only actions and fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド<ept id="p1">](toolbar-fields-subpattern.md)</ept> アクションとフィールドのみを持つコンテナーでこのフォーム パターンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>Form: HcmPosition (WorkerAssignmentTabPage)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: HcmPosition (WorkerAssignmentTabPage)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>HowToSelectAFormPattern (29)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (29)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source><bpt id="p1">[</bpt>Dimension Entry Control<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept> Use this form pattern on tab pages that have only a Dimension Entry Control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード エントリ コントロール<ept id="p1">](../financial/dimension-entry-control-subpattern.md)</ept> 分析コード エントリ コントロールのみを持つタブページにこのフォームパターンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Form: CustTable (TabFinancialDimensions)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: CustTable (TabFinancialDimensions)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>HowToSelectAFormPattern (30)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HowToSelectAFormPattern (30)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source><bpt id="p1">[</bpt>Dimension Expression Builder<ept id="p1">](../financial/dimension-expression-builder-subpattern.md)</ept> Use this form pattern on containers that include a Dimension Expression Builder control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>分析コード式ビルダー<ept id="p1">](../financial/dimension-expression-builder-subpattern.md)</ept> このフォーム パターンは、分析コード式ビルダー コントロールを含むコンテナーで使用します。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

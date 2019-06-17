@@ -1,187 +1,264 @@
----
-title: テストと検証
-description: このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 24231
-ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
-ms.search.region: Global
-ms.author: shailesn
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 074518feb533f470b824d8a7803f6b2047ea059d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537582"
----
-# <a name="testing-and-validations"></a><span data-ttu-id="bef97-103">テストと検証</span><span class="sxs-lookup"><span data-stu-id="bef97-103">Testing and validations</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="bef97-104">このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="bef97-104">This tutorial shows you how to create and run test cases.</span></span>
-
-<a name="prerequisites"></a><span data-ttu-id="bef97-105">前提条件</span><span class="sxs-lookup"><span data-stu-id="bef97-105">Prerequisites</span></span>
--------------
-
-<span data-ttu-id="bef97-106">開発者トポロジを開発者およびビルト VM を使用して配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bef97-106">You will need to deploy Developer Topology with Developer and Build VM.</span></span>
-
-## <a name="key-concepts"></a><span data-ttu-id="bef97-107">重要な概念</span><span class="sxs-lookup"><span data-stu-id="bef97-107">Key concepts</span></span>
--   <span data-ttu-id="bef97-108">SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成します。</span><span class="sxs-lookup"><span data-stu-id="bef97-108">Use SysTest Framework to author unit/component test code.</span></span>
--   <span data-ttu-id="bef97-109">テスト コードと FormAdaptors を管理するテスト モジュールの作成。</span><span class="sxs-lookup"><span data-stu-id="bef97-109">Test module creation to manage test code and FormAdaptors.</span></span>
--   <span data-ttu-id="bef97-110">テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。</span><span class="sxs-lookup"><span data-stu-id="bef97-110">Import Task Recorder recordings into Visual Studio to generate test code.</span></span>
--   <span data-ttu-id="bef97-111">ビルド マシンとテスト モジュールを統合します。</span><span class="sxs-lookup"><span data-stu-id="bef97-111">Integrate a Test module with a build machine.</span></span>
-
-<span data-ttu-id="bef97-112">[![テスト モジュールの統合](./media/54.png)](./media/54.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-112">[![Integrate a test module](./media/54.png)](./media/54.png)</span></span>  
-
-## <a name="use-systest-framework-to-author-unitcomponent-test-code"></a><span data-ttu-id="bef97-113">SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成</span><span class="sxs-lookup"><span data-stu-id="bef97-113">Use SysTest Framework to author unit/component test code</span></span>
-<span data-ttu-id="bef97-114">新しいテスト ケースを作成して、アプリケーションで機能をテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="bef97-114">You can create new test cases to test the functionality in an application.</span></span>
-
-1.  <span data-ttu-id="bef97-115">Visual Studio を管理者としてオープンします。</span><span class="sxs-lookup"><span data-stu-id="bef97-115">Open Visual Studio as an administrator.</span></span>
-1.  <span data-ttu-id="bef97-116">**ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックし、デスクトップ フォルダーから **FleetManagement** **ソリューション**を選択します。</span><span class="sxs-lookup"><span data-stu-id="bef97-116">On the **File** menu, click **Open** &gt; **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder.</span></span> <span data-ttu-id="bef97-117">ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。</span><span class="sxs-lookup"><span data-stu-id="bef97-117">If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).</span></span>
-1.  <span data-ttu-id="bef97-118">**ソリューション エクスプローラー**で、**フリート管理**ソリューションを右クリックして**追加**をポイントしてから**新規プロジェクト**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-118">In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.</span></span>
-1.  <span data-ttu-id="bef97-119">作成するプロジェクト タイプとして **Finance and Operations** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bef97-119">Choose **Finance and Operations** as the project type to create.</span></span>
-1.  <span data-ttu-id="bef97-120">この新しいプロジェクトに *FleetManagementUnitTestSample* と名前を付け、デスクトップの FleetManagement フォルダー (C:\Users\Public\Desktop\FleetManagement) を場所として指定してから、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-120">Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then click **OK**.</span></span> 
-
-    <span data-ttu-id="bef97-121">[![FleetManagementUnitTestSampe](./media/55.png)](./media/55.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-121">[![FleetManagementUnitTestSampe](./media/55.png)](./media/55.png)</span></span>
-
-1.  <span data-ttu-id="bef97-122">**ソリューション エクスプローラー**で、新規プロジェクトを右クリックしてから**プロパティ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-122">In **Solution Explorer**, right-click the new project, and then click **Properties**.</span></span>
-1.  <span data-ttu-id="bef97-123">**Model** プロパティを **FleetManagementUnitTests** に設定し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-123">Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**.</span></span> 
-
-    <span data-ttu-id="bef97-124">[![モデル プロパティ](./media/56.png)](./media/56.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-124">[![Model property](./media/56.png)](./media/56.png)</span></span>
-
-1.  <span data-ttu-id="bef97-125">FleetManagementUnitTestSample プロジェクトを右クリックして**追加**をポイントしてから**新しい項目**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-125">Right-click the FleetManagementUnitTestSample project, point to **Add**, and then click **New Item**.</span></span>
-1.  <span data-ttu-id="bef97-126">**新しい項目の追加**ウィンドウで、追加する要素のタイプとして**クラス**を選択します。</span><span class="sxs-lookup"><span data-stu-id="bef97-126">In the **Add New Item** window, select **Class** as the type of element to add.</span></span> <span data-ttu-id="bef97-127">新しいクラスに FMUnitTestSample と名前を付けてから、**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-127">Name the new class FMUnitTestSample, and then click **Add**.</span></span> 
-
-    <span data-ttu-id="bef97-128">[![新しい品目を追加](./media/57.png)](./media/57.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-128">[![Add new item](./media/57.png)](./media/57.png)</span></span>
-
-1. <span data-ttu-id="bef97-129">新しいクラスのコードの最初の行で、クラスが SysTestCase クラスを拡張していることを示します。</span><span class="sxs-lookup"><span data-stu-id="bef97-129">In the first line of the code for the new class, indicate that the class extends the SysTestCase class.</span></span>
-1. <span data-ttu-id="bef97-130">クラスのメソッドを定義する次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="bef97-130">Add the following code to define the methods for the class.</span></span> <span data-ttu-id="bef97-131">これらのメソッドは、2 つの追加テストを定義します。</span><span class="sxs-lookup"><span data-stu-id="bef97-131">These methods define two additional tests.</span></span>
-
-        class FMUnitTestSample extends SysTestCase
-        {
-            public void setup()
-            {
-                // Reset the test data to be sure things are clean
-                FMDataHelper::main(null);
-            }
-
-            [SysTestMethodAttribute]
-            public void testFMTotalsEngine()
-            {
-                FMRental rental;
-                FMTotalsEngine fmTotals;
-                FMRentalTotal fmRentalTotal;
-                FMRentalCharge rentalCharge;
-                FMRentalTotal expectedtotal;
-                str rentalID = '000022';
-
-                // Find a known rental
-                rental = FMRental::find(rentalID);
-
-                // Get the rental charges associated with the rental
-                // Data is seeded randomly, so this will change for each run
-                select sum(ExtendedAmount) from rentalCharge
-                        where rentalCharge.RentalId == rental.RentalId;
-
-                fmTotals = FMTotalsEngine::construct();
-                fmTotals.calculateRentalVehicleRate(rental);
-
-                // Get the totals from the engine
-                fmRentalTotal = fmTotals.totals(rental);
-
-                // Set the expected amount
-                expectedTotal = rental.VehicleRateTotal + rentalCharge.ExtendedAmount;
-
-                this.assertEquals(expectedTotal,fmRentalTotal);
-            }
-
-            [SysTestMethodAttribute]
-            public void testFMCarValidateField()
-            {
-                FMCarClass fmCar;
-
-                fmCar.NumberOfDoors = -1;
-                this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
-
-                fmCar.NumberOfDoors = 4;
-                this.assertTrue(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
-            }
-        }
-
-1. <span data-ttu-id="bef97-132">新しいクラスを保存します。</span><span class="sxs-lookup"><span data-stu-id="bef97-132">Save the new class.</span></span> <span data-ttu-id="bef97-133">保存が完了した後、**テスト エクスプローラー**に追加 2 つのテスト ケースが表示されます。</span><span class="sxs-lookup"><span data-stu-id="bef97-133">After the save is complete, you will see the additional two test cases in **Test Explorer**.</span></span> <span data-ttu-id="bef97-134">**ソリューション エクスプローラー**で FleetManagementUnitTestSample プロジェクトを右クリックし、**ビルド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-134">Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**</span></span>
-1.  <span data-ttu-id="bef97-135">**表示**メニューで、**テスト エクスプローラー**を開きます。</span><span class="sxs-lookup"><span data-stu-id="bef97-135">On the **View** menu, open **Test Explorer**.</span></span> 
-
-    <span data-ttu-id="bef97-136">[![テスト エクスプローラー](./media/58-1024x545.png)](./media/58.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-136">[![Test explorer](./media/58-1024x545.png)](./media/58.png)</span></span>
-
-1. <span data-ttu-id="bef97-137">特定のテスト ケースを実行するには、**選択したテストの実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-137">Click **Run selected test** to execute specific test case.</span></span>
-1. <span data-ttu-id="bef97-138">完了した後、テスト エクスプローラーにテストの結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bef97-138">Test Explorer will show the results of test after it is complete.</span></span> 
-
-    <span data-ttu-id="bef97-139">[![完了したテスト](./media/59-300x290.png)](./media/59.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-139">[![Completed test](./media/59-300x290.png)](./media/59.png)</span></span>
-
-## <a name="test-module-creation-to-manage-test-code-and-formadaptors"></a><span data-ttu-id="bef97-140">テスト コードと FormAdaptors を管理するテスト モジュールの作成</span><span class="sxs-lookup"><span data-stu-id="bef97-140">Test module creation to manage test code and FormAdaptors</span></span>
-<span data-ttu-id="bef97-141">テスト コードをまとめて管理しやすくするためにテスト固有のモジュールを作成しています。</span><span class="sxs-lookup"><span data-stu-id="bef97-141">Creating a test specific module helps to keep test code together and manageable.</span></span>
-
-1. <span data-ttu-id="bef97-142">**Visual Studio** を開き、**Finance and Operations** > **モデル管理** > **モデルの作成** に移動します。</span><span class="sxs-lookup"><span data-stu-id="bef97-142">Open **Visual Studio** and go to **Finance and Operations** > **Model Management** > **Create model**.</span></span>
-
-    <span data-ttu-id="bef97-143">[![モデルの作成](./media/60-1024x574.png)](./media/60.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-143">[![Create model](./media/60-1024x574.png)](./media/60.png)</span></span>
-
-2. <span data-ttu-id="bef97-144">モデル名を入力し、レイヤーを選択し、次に追加詳細を入力します。</span><span class="sxs-lookup"><span data-stu-id="bef97-144">Enter the model name, select the layer, and then enter any additional details.</span></span> <span data-ttu-id="bef97-145"><strong>注記: テスト モジュールの名前に**テストという語を含めることをお勧めします。**</strong></span><span class="sxs-lookup"><span data-stu-id="bef97-145"><strong>Note: \*\*It's a good idea that you include the word \*\*Test</strong> in the name of the test module.</span></span> <span data-ttu-id="bef97-146">既定のビルド定義は、<strong>テスト</strong> という単語を含むすべてのテスト モジュールを検出するように設定されています。</span><span class="sxs-lookup"><span data-stu-id="bef97-146">The default build definition is configured to discover all test modules that contain the word <strong>Test</strong>.</span></span> 
-
-    <span data-ttu-id="bef97-147">[![モデル名](./media/61-1024x775.png)](./media/61.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-147">[![Model name](./media/61-1024x775.png)](./media/61.png)</span></span>
-
-3. <span data-ttu-id="bef97-148">このモデルは Application Platform/Foundation からのフォームを保持するため、以下に示すモデルへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="bef97-148">Because this model holds forms from the Application Platform/Foundation, add references to models shown below.</span></span>
-
-    <span data-ttu-id="bef97-149">[![モデル参照](./media/62-1024x786.png)](./media/62.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-149">[![Model references](./media/62-1024x786.png)](./media/62.png)</span></span>
-
-<span data-ttu-id="bef97-150">基本テスト モジュールを配置した後、タスク レコーダーの記録をインポートしてテスト コードを生成することができます。</span><span class="sxs-lookup"><span data-stu-id="bef97-150">After the base test module is in place, you can import a Task Recorder recording to generate test code.</span></span> <span data-ttu-id="bef97-151">タスク レコーダーの記録の XML をインポートするとき、FormAdaptors を使用してテスト コードが生成されます。</span><span class="sxs-lookup"><span data-stu-id="bef97-151">When you import a Task Recorder recording XML, test code is generated using FormAdaptors.</span></span> <span data-ttu-id="bef97-152">フォーム アダプターは、フォーム機能をテストするために使用される、強く定型化された API を提供するフォーム上のラッパー クラスです。</span><span class="sxs-lookup"><span data-stu-id="bef97-152">Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality.</span></span> <span data-ttu-id="bef97-153">組み込みのフォームの各パッケージの事前に生成した FormAdapters を含めました。</span><span class="sxs-lookup"><span data-stu-id="bef97-153">We have included pre-generated FormAdapters for each package for built-in forms.</span></span> <span data-ttu-id="bef97-154">テスト モジュールで、テスト コードを実行するヘルパー メソッドがある、パッケージおよび Test Essentials に対応するフォーム アダプタへの参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="bef97-154">In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.</span></span>
-
-## <a name="import-a-task-recorder-recording-into-visual-studio-to-generate-test-code"></a><span data-ttu-id="bef97-155">テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。</span><span class="sxs-lookup"><span data-stu-id="bef97-155">Import a Task Recorder recording into Visual Studio to generate test code</span></span>
-<span data-ttu-id="bef97-156">タスク レコーダーの記録からテスト コードを生成して、ヘッドレス (非 UI) テストを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="bef97-156">You can generate test code from Task Recorder recording to execute headless (non-UI) test.</span></span>
-
-1. <span data-ttu-id="bef97-157">タスク レコーダーを使用してシナリオを記録します。</span><span class="sxs-lookup"><span data-stu-id="bef97-157">Record a scenario in by using Task Recorder.</span></span>
-2. <span data-ttu-id="bef97-158">Visual Studio でタスク記録をインポートするには、**Finance and Operations** > **アドイン** > **タスク記録をインポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-158">To import a Task Recording, in Visual Studio, click **Finance and Operations** > **Addins** > **Import Task Recording**.</span></span> 
-
-    <span data-ttu-id="bef97-159">[![タスク記録のインポート](./media/63-1024x613.png)](./media/63.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-159">[![Import task recording](./media/63-1024x613.png)](./media/63.png)</span></span>
-
-3. <span data-ttu-id="bef97-160">**タスクの記録をインポート** ダイアログで、タスクの記録をインポートするテスト モジュール (ISVTestModule) を選択し、記録している xml ファイルを参照します。</span><span class="sxs-lookup"><span data-stu-id="bef97-160">In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file.</span></span> 
-
-    <span data-ttu-id="bef97-161">[![テスト モジュール](./media/64-249x300.png)](./media/64.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-161">[![Test module](./media/64-249x300.png)](./media/64.png)</span></span>
-
-4. <span data-ttu-id="bef97-162">タスクの記録インポート プロセスは、Visual Studio IDE で表示できる SysTestAdapter および FormAdaptor に基づいてテスト コードを生成します。</span><span class="sxs-lookup"><span data-stu-id="bef97-162">The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE.</span></span> <span data-ttu-id="bef97-163">このステップの一部として生成されるテスト ソース コードをお客様が変更することを予定していません。</span><span class="sxs-lookup"><span data-stu-id="bef97-163">We do not expect you to change any test source code that is generated as part of this step.</span></span>
-
-    <span data-ttu-id="bef97-164">[![テスト コードの生成](./media/65-1024x655.png)](./media/65.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-164">[![Generate test code](./media/65-1024x655.png)](./media/65.png)</span></span>    
-
-5. <span data-ttu-id="bef97-165">テスト コードが生成された後、テスト検出および実行のための Visual Studio オプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="bef97-165">After the test code is generated, set up Visual Studio options for test discovery and execution:</span></span>
-   - <span data-ttu-id="bef97-166">64 ビット コンピューターを使用する場合は、単体テストを実行し、64 ビット プロセスとしてコード カバレッジ情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="bef97-166">If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.</span></span>
-   - <span data-ttu-id="bef97-167">これを構成するには、**テスト**&gt;**テストの設定**&gt;**既定のプロセッサ アーキテクチャ** を選択し、**X64** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bef97-167">To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.</span></span>
-   - <span data-ttu-id="bef97-168">テストの実行エンジンが開き、テスト プロジェクト内のアセンブリをロックする状態が発生した可能性があります。</span><span class="sxs-lookup"><span data-stu-id="bef97-168">You might run into a situation in which the test execution engine opens and locks an assembly in your test project.</span></span> <span data-ttu-id="bef97-169">この場合、たとえば、アセンブリに対する変更を保存することはできません。</span><span class="sxs-lookup"><span data-stu-id="bef97-169">When this happens, you can’t for example, save changes to the assembly.</span></span> <span data-ttu-id="bef97-170">これを修正するには、**テスト**&gt;**テスト設定** を選択し、**テスト実行エンジンを実行し続ける** を選択します。</span><span class="sxs-lookup"><span data-stu-id="bef97-170">To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**.</span></span> 
-
-     <span data-ttu-id="bef97-171">[![実行エンジンを実行し続けてください](./media/66.png)](./media/66.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-171">[![Keep execution engine running](./media/66.png)](./media/66.png)</span></span>
-
-   - <span data-ttu-id="bef97-172">Visual Studio IDE で生成されたテスト コードがあるので、テストを検出してローカルで実行します。</span><span class="sxs-lookup"><span data-stu-id="bef97-172">Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.</span></span>
-
-6. <span data-ttu-id="bef97-173">メニュー オプションから、**テスト** &gt; **Windows** を選択し、**テスト エクスプ ローラー**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-173">From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**.</span></span> <span data-ttu-id="bef97-174">テスト エクスプローラー ウィンドウが開いた後、テスト コードからテストを検出し、次のように使用可能なすべてのテストを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="bef97-174">After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.</span></span>
-
-    <span data-ttu-id="bef97-175">[![テスト エクスプローラー](./media/67-1024x658.png)](./media/67.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-175">[![Test explorer](./media/67-1024x658.png)](./media/67.png)</span></span>
-
-7. <span data-ttu-id="bef97-176">テストを選択し、**実行** &gt; **選択されている実行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bef97-176">Select the test and then click **Run** &gt; **Execute selected**.</span></span> <span data-ttu-id="bef97-177">これにより、ローカルに展開された環境に対してテストが実行されます。</span><span class="sxs-lookup"><span data-stu-id="bef97-177">This will execute test against the locally deployed environment.</span></span> 
-
-    <span data-ttu-id="bef97-178">[![選択の実行](./media/68-1024x652.png)](./media/68.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-178">[![Execute selected](./media/68-1024x652.png)](./media/68.png)</span></span>
-
-## <a name="integration-of-the-test-module-with-build-process"></a><span data-ttu-id="bef97-179">ビルド プロセスのあるテスト モジュールの統合</span><span class="sxs-lookup"><span data-stu-id="bef97-179">Integration of the test module with build process</span></span>
-<span data-ttu-id="bef97-180">テスト モジュールがソース管理の一部である場合、ビルド プロセス テンプレートは、名前に**テスト**という単語を含むすべてのテスト モジュールを検出します。</span><span class="sxs-lookup"><span data-stu-id="bef97-180">After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name.</span></span> <span data-ttu-id="bef97-181">次の図は、Visual Studio Online の一部としてのビルドとテストの実行を示しています。</span><span class="sxs-lookup"><span data-stu-id="bef97-181">The following illustration shows build and test execution as part of Visual Studio Online.</span></span> 
-
-<span data-ttu-id="bef97-182">[![ビルドおよびテストの実行](./media/69.png)](./media/69.png)</span><span class="sxs-lookup"><span data-stu-id="bef97-182">[![Build and test execution](./media/69.png)](./media/69.png)</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="testing-validation.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>testing-validation.bb40cb.822f6f57cf0d12a1873ec4f1eb0e59bee47bab2c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>822f6f57cf0d12a1873ec4f1eb0e59bee47bab2c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\perf-test\testing-validation.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Testing and validations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テストと検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This tutorial shows you how to create and run test cases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Testing and validations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テストと検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This tutorial shows you how to create and run test cases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Prerequisites</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前提条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>You will need to deploy Developer Topology with Developer and Build VM.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者トポロジを開発者およびビルト VM を使用して配置する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Key concepts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">重要な概念</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Use SysTest Framework to author unit/component test code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Test module creation to manage test code and FormAdaptors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト コードと FormAdaptors を管理するテスト モジュールの作成。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Import Task Recorder recordings into Visual Studio to generate test code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Integrate a Test module with a build machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド マシンとテスト モジュールを統合します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Integrate a test module<ept id="p1">](./media/54.png)](./media/54.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>テスト モジュールの統合<ept id="p1">](./media/54.png)](./media/54.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Use SysTest Framework to author unit/component test code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>You can create new test cases to test the functionality in an application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいテスト ケースを作成して、アプリケーションで機能をテストすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Open Visual Studio as an administrator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を管理者としてオープンします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Open<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>, and then select <bpt id="p4">**</bpt>FleetManagement<ept id="p4">**</ept> <bpt id="p5">**</bpt>solution<ept id="p5">**</ept> from the desktop folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>開く<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>プロジェクト/ソリューション<ept id="p3">**</ept>をクリックし、デスクトップ フォルダーから <bpt id="p4">**</bpt>FleetManagement<ept id="p4">**</ept> <bpt id="p5">**</bpt>ソリューション<ept id="p5">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>If the solution file is not on your computer, the steps to create it are listed in <bpt id="p1">[</bpt>Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT<ept id="p1">](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション ファイルがコンピュータにない場合は、作成手順が「<bpt id="p1">[</bpt>チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する<ept id="p1">](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)</ept>」に記載されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the <bpt id="p2">**</bpt>Fleet Management<ept id="p2">**</ept> solution, point to <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>New Project<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>フリート管理<ept id="p2">**</ept>ソリューションを右クリックして<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>をポイントしてから<bpt id="p4">**</bpt>新規プロジェクト<ept id="p4">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Choose <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> as the project type to create.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成するプロジェクト タイプとして <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Name this new project <bpt id="p1">*</bpt>FleetManagementUnitTestSample<ept id="p1">*</ept>, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この新しいプロジェクトに <bpt id="p1">*</bpt>FleetManagementUnitTestSample<ept id="p1">*</ept> と名前を付け、デスクトップの FleetManagement フォルダー (C:\Users\Public\Desktop\FleetManagement) を場所として指定してから、<bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FleetManagementUnitTestSampe<ept id="p1">](./media/55.png)](./media/55.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>FleetManagementUnitTestSampe<ept id="p1">](./media/55.png)](./media/55.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the new project, and then click <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で、新規プロジェクトを右クリックしてから<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Set the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>FleetManagementUnitTests<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Model<ept id="p1">**</ept> プロパティを <bpt id="p2">**</bpt>FleetManagementUnitTests<ept id="p2">**</ept> に設定し、<bpt id="p3">**</bpt>OK<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Model property<ept id="p1">](./media/56.png)](./media/56.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>モデル プロパティ<ept id="p1">](./media/56.png)](./media/56.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Right-click the FleetManagementUnitTestSample project, point to <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Item<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FleetManagementUnitTestSample プロジェクトを右クリックして<bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をポイントしてから<bpt id="p2">**</bpt>新しい項目<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>In the <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> window, select <bpt id="p2">**</bpt>Class<ept id="p2">**</ept> as the type of element to add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しい項目の追加<ept id="p1">**</ept>ウィンドウで、追加する要素のタイプとして<bpt id="p2">**</bpt>クラス<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Name the new class FMUnitTestSample, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいクラスに FMUnitTestSample と名前を付けてから、<bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Add new item<ept id="p1">](./media/57.png)](./media/57.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>新しい品目を追加<ept id="p1">](./media/57.png)](./media/57.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>In the first line of the code for the new class, indicate that the class extends the SysTestCase class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいクラスのコードの最初の行で、クラスが SysTestCase クラスを拡張していることを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Add the following code to define the methods for the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスのメソッドを定義する次のコードを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>These methods define two additional tests.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのメソッドは、2 つの追加テストを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Save the new class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいクラスを保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>After the save is complete, you will see the additional two test cases in <bpt id="p1">**</bpt>Test Explorer<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保存が完了した後、<bpt id="p1">**</bpt>テスト エクスプローラー<ept id="p1">**</ept>に追加 2 つのテスト ケースが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Right-click on the FleetManagementUnitTestSample project in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Build.<ept id="p2">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ソリューション エクスプローラー<ept id="p1">**</ept>で FleetManagementUnitTestSample プロジェクトを右クリックし、<bpt id="p2">**</bpt>ビルド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>On the <bpt id="p1">**</bpt>View<ept id="p1">**</ept> menu, open <bpt id="p2">**</bpt>Test Explorer<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>表示<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>テスト エクスプローラー<ept id="p2">**</ept>を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Test explorer<ept id="p1">](./media/58-1024x545.png)](./media/58.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>テスト エクスプローラー<ept id="p1">](./media/58-1024x545.png)](./media/58.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Click <bpt id="p1">**</bpt>Run selected test<ept id="p1">**</ept> to execute specific test case.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のテスト ケースを実行するには、<bpt id="p1">**</bpt>選択したテストの実行<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Test Explorer will show the results of test after it is complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完了した後、テスト エクスプローラーにテストの結果が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Completed test<ept id="p1">](./media/59-300x290.png)](./media/59.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>完了したテスト<ept id="p1">](./media/59-300x290.png)](./media/59.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Test module creation to manage test code and FormAdaptors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト コードと FormAdaptors を管理するテスト モジュールの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Creating a test specific module helps to keep test code together and manageable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト コードをまとめて管理しやすくするためにテスト固有のモジュールを作成しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Open <bpt id="p1">**</bpt>Visual Studio<ept id="p1">**</ept> and go to <bpt id="p2">**</bpt>Finance and Operations<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Model Management<ept id="p3">**</ept><ph id="ph2"> &gt; </ph><bpt id="p4">**</bpt>Create model<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Visual Studio<ept id="p1">**</ept> を開き、<bpt id="p2">**</bpt>Finance and Operations<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>モデル管理<ept id="p3">**</ept><ph id="ph2"> &gt; </ph><bpt id="p4">**</bpt>モデルの作成<ept id="p4">**</ept> に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Create model<ept id="p1">](./media/60-1024x574.png)](./media/60.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>モデルの作成<ept id="p1">](./media/60-1024x574.png)](./media/60.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Enter the model name, select the layer, and then enter any additional details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル名を入力し、レイヤーを選択し、次に追加詳細を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note: **It's a good idea that you include the word **Test<ept id="p1">&lt;/strong&gt;</ept> in the name of the test module.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>注記: テスト モジュールの名前に**テストという語を含めることをお勧めします。**<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>The default build definition is configured to discover all test modules that contain the word <bpt id="p1">&lt;strong&gt;</bpt>Test<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のビルド定義は、<bpt id="p1">&lt;strong&gt;</bpt>テスト<ept id="p1">&lt;/strong&gt;</ept> という単語を含むすべてのテスト モジュールを検出するように設定されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Model name<ept id="p1">](./media/61-1024x775.png)](./media/61.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>モデル名<ept id="p1">](./media/61-1024x775.png)](./media/61.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Because this model holds forms from the Application Platform/Foundation, add references to models shown below.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このモデルは Application Platform/Foundation からのフォームを保持するため、以下に示すモデルへの参照を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Model references<ept id="p1">](./media/62-1024x786.png)](./media/62.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>モデル参照<ept id="p1">](./media/62-1024x786.png)](./media/62.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>After the base test module is in place, you can import a Task Recorder recording to generate test code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">基本テスト モジュールを配置した後、タスク レコーダーの記録をインポートしてテスト コードを生成することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>When you import a Task Recorder recording XML, test code is generated using FormAdaptors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク レコーダーの記録の XML をインポートするとき、FormAdaptors を使用してテスト コードが生成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム アダプターは、フォーム機能をテストするために使用される、強く定型化された API を提供するフォーム上のラッパー クラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>We have included pre-generated FormAdapters for each package for built-in forms.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">組み込みのフォームの各パッケージの事前に生成した FormAdapters を含めました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト モジュールで、テスト コードを実行するヘルパー メソッドがある、パッケージおよび Test Essentials に対応するフォーム アダプタへの参照を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Import a Task Recorder recording into Visual Studio to generate test code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>You can generate test code from Task Recorder recording to execute headless (non-UI) test.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク レコーダーの記録からテスト コードを生成して、ヘッドレス (非 UI) テストを実行することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Record a scenario in by using Task Recorder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク レコーダーを使用してシナリオを記録します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>To import a Task Recording, in Visual Studio, click <bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Addins<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Import Task Recording<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio でタスク記録をインポートするには、<bpt id="p1">**</bpt>Finance and Operations<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>アドイン<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>タスク記録をインポート<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Import task recording<ept id="p1">](./media/63-1024x613.png)](./media/63.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>タスク記録のインポート<ept id="p1">](./media/63-1024x613.png)](./media/63.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the <bpt id="p1">**</bpt>Import Task Recording<ept id="p1">**</ept> dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タスクの記録をインポート<ept id="p1">**</ept> ダイアログで、タスクの記録をインポートするテスト モジュール (ISVTestModule) を選択し、記録している xml ファイルを参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Test module<ept id="p1">](./media/64-249x300.png)](./media/64.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>テスト モジュール<ept id="p1">](./media/64-249x300.png)](./media/64.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスクの記録インポート プロセスは、Visual Studio IDE で表示できる SysTestAdapter および FormAdaptor に基づいてテスト コードを生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>We do not expect you to change any test source code that is generated as part of this step.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このステップの一部として生成されるテスト ソース コードをお客様が変更することを予定していません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Generate test code<ept id="p1">](./media/65-1024x655.png)](./media/65.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>テスト コードの生成<ept id="p1">](./media/65-1024x655.png)](./media/65.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>After the test code is generated, set up Visual Studio options for test discovery and execution:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト コードが生成された後、テスト検出および実行のための Visual Studio オプションを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">64 ビット コンピューターを使用する場合は、単体テストを実行し、64 ビット プロセスとしてコード カバレッジ情報を取得できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>To configure this, select <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Test Settings<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Default Processor Architecture<ept id="p3">**</ept>, and then select <bpt id="p4">**</bpt>X64<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを構成するには、<bpt id="p1">**</bpt>テスト<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>テストの設定<ept id="p2">**</ept><ph id="ph2">&amp;gt;</ph><bpt id="p3">**</bpt>既定のプロセッサ アーキテクチャ<ept id="p3">**</ept> を選択し、<bpt id="p4">**</bpt>X64<ept id="p4">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>You might run into a situation in which the test execution engine opens and locks an assembly in your test project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テストの実行エンジンが開き、テスト プロジェクト内のアセンブリをロックする状態が発生した可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>When this happens, you can’t for example, save changes to the assembly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、たとえば、アセンブリに対する変更を保存することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>To fix this, select <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Test Settings<ept id="p2">**</ept>, and then select <bpt id="p3">**</bpt>Keep Test Execution Engine Running<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを修正するには、<bpt id="p1">**</bpt>テスト<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>テスト設定<ept id="p2">**</ept> を選択し、<bpt id="p3">**</bpt>テスト実行エンジンを実行し続ける<ept id="p3">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Keep execution engine running<ept id="p1">](./media/66.png)](./media/66.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>実行エンジンを実行し続けてください<ept id="p1">](./media/66.png)](./media/66.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio IDE で生成されたテスト コードがあるので、テストを検出してローカルで実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>From menu options, select <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Windows<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Test Explorer<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メニュー オプションから、<bpt id="p1">**</bpt>テスト<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Windows<ept id="p2">**</ept> を選択し、<bpt id="p3">**</bpt>テスト エクスプ ローラー<ept id="p3">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト エクスプローラー ウィンドウが開いた後、テスト コードからテストを検出し、次のように使用可能なすべてのテストを一覧表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Test explorer<ept id="p1">](./media/67-1024x658.png)](./media/67.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>テスト エクスプローラー<ept id="p1">](./media/67-1024x658.png)](./media/67.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Select the test and then click <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Execute selected<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テストを選択し、<bpt id="p1">**</bpt>実行<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>選択されている実行<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>This will execute test against the locally deployed environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、ローカルに展開された環境に対してテストが実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Execute selected<ept id="p1">](./media/68-1024x652.png)](./media/68.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>選択の実行<ept id="p1">](./media/68-1024x652.png)](./media/68.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Integration of the test module with build process</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド プロセスのあるテスト モジュールの統合</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>After the test module is a part of source control, the build process template will discover all test modules, which contain the word <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> in the name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト モジュールがソース管理の一部である場合、ビルド プロセス テンプレートは、名前に<bpt id="p1">**</bpt>テスト<ept id="p1">**</ept>という単語を含むすべてのテスト モジュールを検出します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>The following illustration shows build and test execution as part of Visual Studio Online.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、Visual Studio Online の一部としてのビルドとテストの実行を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Build and test execution<ept id="p1">](./media/69.png)](./media/69.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>ビルドおよびテストの実行<ept id="p1">](./media/69.png)](./media/69.png)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

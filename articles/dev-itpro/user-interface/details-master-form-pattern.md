@@ -1,265 +1,498 @@
----
-title: 詳細マスター フォーム パターン
-description: このトピックでは、詳細マスター フォームのパターンについて説明します。 詳細フォームは、データ入力の基本方法です。
-author: jasongre
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 12373
-ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
-ms.search.region: Global
-ms.author: jasongre
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8f98af0dc024f34159205b2c6addbde9bdd59a3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537595"
----
-# <a name="details-master-form-pattern"></a><span data-ttu-id="20ca5-104">詳細マスター フォーム パターン</span><span class="sxs-lookup"><span data-stu-id="20ca5-104">Details Master form pattern</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="20ca5-105">このトピックでは、詳細マスター フォームのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-105">This topic provides information about the Details Master form pattern.</span></span> <span data-ttu-id="20ca5-106">詳細フォームは、データ入力の基本方法です。</span><span class="sxs-lookup"><span data-stu-id="20ca5-106">A details form is the primary method for entering data.</span></span>
-
-<a name="usage"></a><span data-ttu-id="20ca5-107">用途</span><span class="sxs-lookup"><span data-stu-id="20ca5-107">Usage</span></span>
------
-
-<span data-ttu-id="20ca5-108">詳細フォームは、データ入力の基本方法です。</span><span class="sxs-lookup"><span data-stu-id="20ca5-108">A details form is the primary method for entering data.</span></span> <span data-ttu-id="20ca5-109">これらのフォームにより、ユーザーはデータを表示、編集、および操作できます。</span><span class="sxs-lookup"><span data-stu-id="20ca5-109">These forms let the user view, edit, and act upon data.</span></span> <span data-ttu-id="20ca5-110">これらフォーム タイプのすべてのコンテンツは展開および折りたたむことのできるクイック タブとして構造化されているため、複数のクイック タブを同時に開くことができます。</span><span class="sxs-lookup"><span data-stu-id="20ca5-110">All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time.</span></span> <span data-ttu-id="20ca5-111">クイック タブには、フィールドやグリッドを含めることができ、各クイック タブはローカル ツール バーを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="20ca5-111">The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar.</span></span> <span data-ttu-id="20ca5-112">このドキュメントでは、2 つのパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-112">Two patterns are described in this document:</span></span>
-
--   <span data-ttu-id="20ca5-113">**詳細マスター** - これは、基本の詳細マスター パターンです。</span><span class="sxs-lookup"><span data-stu-id="20ca5-113">**Detail Master** – This is the basic Detail Master pattern.</span></span> <span data-ttu-id="20ca5-114">これは既定で使用されるパターンです。</span><span class="sxs-lookup"><span data-stu-id="20ca5-114">This is the pattern that you should use by default.</span></span>
--   <span data-ttu-id="20ca5-115">**タブ付き詳細マスター** - エンティティがカテゴリにグループ化できるクイック タブ (15 以上) を多数必要とする場合は、このパターンを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-115">**Detail Master w/ Tabs** – You should use this pattern when an entity requires many FastTabs (more than 15) that can be grouped into categories.</span></span>
-
-<span data-ttu-id="20ca5-116">どちらの場合も、グリッド ビューの構成は同じです。</span><span class="sxs-lookup"><span data-stu-id="20ca5-116">In both cases, the grid view is structured the same.</span></span>
-
-## <a name="wireframe"></a><span data-ttu-id="20ca5-117">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="20ca5-117">Wireframe</span></span>
-### <a name="details-master"></a><span data-ttu-id="20ca5-118">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="20ca5-118">Details Master</span></span>
-
-#### <a name="details-view"></a><span data-ttu-id="20ca5-119">詳細ビュー</span><span class="sxs-lookup"><span data-stu-id="20ca5-119">Details view</span></span>
-
-<span data-ttu-id="20ca5-120">[![詳細マスター ワイヤーフレーム: 詳細ビュー](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-120">[![Details Master wireframe: Details view](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</span></span>
-
-#### <a name="grid-view"></a><span data-ttu-id="20ca5-121">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="20ca5-121">Grid view</span></span>
-
-<span data-ttu-id="20ca5-122">[![詳細マスター ワイヤーフレーム: グリッド ビュー](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-122">[![Details Master wireframe: Grid view](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</span></span>
-
-### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="20ca5-123">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="20ca5-123">Details Master w/Standard Tabs</span></span>
-
-#### <a name="details-view"></a><span data-ttu-id="20ca5-124">詳細ビュー</span><span class="sxs-lookup"><span data-stu-id="20ca5-124">Details view</span></span>
-
-<span data-ttu-id="20ca5-125">[![詳細マスター / 標準タブ ワイヤーフレーム: 詳細ビュー](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-125">[![Details Master w/Standard Tabs wireframe: Details view](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</span></span>
-
-#### <a name="grid-view"></a><span data-ttu-id="20ca5-126">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="20ca5-126">Grid view</span></span>
-
-<span data-ttu-id="20ca5-127">[![詳細マスター / 標準タブ ワイヤーフレーム: グリッド ビュー](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-127">[![Details Master w/Standard Tabs wireframe: Grid view](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</span></span>
-
-## <a name="pattern-changes"></a><span data-ttu-id="20ca5-128">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="20ca5-128">Pattern changes</span></span>
-<span data-ttu-id="20ca5-129">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-129">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
-
--   <span data-ttu-id="20ca5-130">詳細ビューコンテンツの左側にリスト スタイル グリッドが追加されました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-130">Added a List style grid to the left of the Details view content.</span></span>
--   <span data-ttu-id="20ca5-131">リスト ページと詳細マスターが 1 つのフォームにマージされました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-131">Merged List Page and Details Master into a single form.</span></span>
-    -   <span data-ttu-id="20ca5-132">一覧と詳細の間を移動するときのパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-132">Improves performance when moving between a list and details.</span></span>
-    -   <span data-ttu-id="20ca5-133">初期一覧で一括編集を有効にします。</span><span class="sxs-lookup"><span data-stu-id="20ca5-133">Enables bulk editing in the initial list.</span></span>
-    -   <span data-ttu-id="20ca5-134">プレビュー ウィンドウの一覧ページの消去を許可します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-134">Allows for elimination of the list page preview pane.</span></span>
--   <span data-ttu-id="20ca5-135">表示/編集、新規作成、削除、保存、最新の情報に更新、添付、および Excel にエクスポートの各アクションはすべてファンデーションによって提供され、ファンデーションによって提供されたボタンが削除されない限り、各アクションに明示的なアプリ ボタンを使用する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="20ca5-135">View/Edit, New, Delete, Save, Refresh, Attachments, and Export to Excel actions are all provided by the foundation and should not have explicit app buttons unless the foundation-provided button is removed.</span></span>
--   <span data-ttu-id="20ca5-136">以前に TOC 拡張機能を使用したマスター詳細フォームでは、標準タブ パターン付きマスター詳細を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-136">Master Details forms that previously used the TOC extension should now use the Master Details w/Standard Tabs pattern.</span></span>
-
-## <a name="model"></a><span data-ttu-id="20ca5-137">モデル</span><span class="sxs-lookup"><span data-stu-id="20ca5-137">Model</span></span>
-### <a name="details-master-basic--high-level-structure"></a><span data-ttu-id="20ca5-138">詳細マスター (基本) – 高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="20ca5-138">Details Master (basic) – High-level structure</span></span>
-
-- <span data-ttu-id="20ca5-139">デザイン</span><span class="sxs-lookup"><span data-stu-id="20ca5-139">Design</span></span>
-
-    - <span data-ttu-id="20ca5-140">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="20ca5-140">ActionPane (ActionPane)</span></span>
-    - <span data-ttu-id="20ca5-141">SidePanel (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-141">SidePanel (Group)</span></span>
-
-        - <span data-ttu-id="20ca5-142">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="20ca5-142">QuickFilter</span></span>
-        - <span data-ttu-id="20ca5-143">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="20ca5-143">*CustomFilters (Group) \[Optional\]*</span></span>
-        - <span data-ttu-id="20ca5-144">NavigationList (グリッド、スタイル = リスト)</span><span class="sxs-lookup"><span data-stu-id="20ca5-144">NavigationList (Grid, Style=List)</span></span>
-
-    - <span data-ttu-id="20ca5-145">MainTab (Tab ShowTabs=No)</span><span class="sxs-lookup"><span data-stu-id="20ca5-145">MainTab (Tab ShowTabs=No)</span></span>
-
-        - <span data-ttu-id="20ca5-146">DetailsTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="20ca5-146">DetailsTabPage (TabPage)</span></span>
-
-            - <span data-ttu-id="20ca5-147">TitleGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-147">TitleGroup (Group)</span></span>
-
-                - <span data-ttu-id="20ca5-148">HeaderTitle (文字列)</span><span class="sxs-lookup"><span data-stu-id="20ca5-148">HeaderTitle (String)</span></span>
-                - <span data-ttu-id="20ca5-149">*EntityStatus (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="20ca5-149">*EntityStatus (Group) \[Optional\]*</span></span>
-
-                    <span data-ttu-id="20ca5-150">StatusFields (1..N)</span><span class="sxs-lookup"><span data-stu-id="20ca5-150">StatusFields (1..N)</span></span>
-
-            - <span data-ttu-id="20ca5-151">DetailsTab (タブ スタイル =FastTabs)</span><span class="sxs-lookup"><span data-stu-id="20ca5-151">DetailsTab (Tab Style=FastTabs)</span></span>
-
-                - <span data-ttu-id="20ca5-152">DetailsTabPage (TabPages *反復 1..N*)</span><span class="sxs-lookup"><span data-stu-id="20ca5-152">DetailsTabPage (TabPages *repeats 1..N*)</span></span>
-
-        - <span data-ttu-id="20ca5-153">GridTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="20ca5-153">GridTabPage (TabPage)</span></span>
-
-            - <span data-ttu-id="20ca5-154">CustomFilterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-154">CustomFilterGroup (Group)</span></span>
-
-                - <span data-ttu-id="20ca5-155">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="20ca5-155">QuickFilter</span></span>
-                - <span data-ttu-id="20ca5-156">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="20ca5-156">*OtherFilters ($Field) \[0..N\]*</span></span>
-
-            - <span data-ttu-id="20ca5-157">MainGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="20ca5-157">MainGrid (Grid)</span></span>
-            - <span data-ttu-id="20ca5-158">MainGridDefaultAction (CommandButton)</span><span class="sxs-lookup"><span data-stu-id="20ca5-158">MainGridDefaultAction (CommandButton)</span></span>
-
-### <a name="details-master-wstandard-tabs--high-level-structure"></a><span data-ttu-id="20ca5-159">詳細マスター / 標準タブの詳細 – 高度な構造</span><span class="sxs-lookup"><span data-stu-id="20ca5-159">Details Master w/Standard Tabs – High-level structure</span></span>
-
-- <span data-ttu-id="20ca5-160">デザイン</span><span class="sxs-lookup"><span data-stu-id="20ca5-160">Design</span></span>
-
-    - <span data-ttu-id="20ca5-161">ActionPane (ActionPane)</span><span class="sxs-lookup"><span data-stu-id="20ca5-161">ActionPane (ActionPane)</span></span>
-    - <span data-ttu-id="20ca5-162">SidePanel (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-162">SidePanel (Group)</span></span>
-
-        - <span data-ttu-id="20ca5-163">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="20ca5-163">QuickFilter</span></span>
-        - <span data-ttu-id="20ca5-164">*CustomFilter (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="20ca5-164">*CustomFilters (Group) \[Optional\]*</span></span>
-        - <span data-ttu-id="20ca5-165">NavigationList (グリッド、スタイル = リスト)</span><span class="sxs-lookup"><span data-stu-id="20ca5-165">NavigationList (Grid, Style=List)</span></span>
-
-    - <span data-ttu-id="20ca5-166">MainTab (Tab ShowTabs=No)</span><span class="sxs-lookup"><span data-stu-id="20ca5-166">MainTab (Tab ShowTabs=No)</span></span>
-
-        - <span data-ttu-id="20ca5-167">DetailsTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="20ca5-167">DetailsTabPage (TabPage)</span></span>
-
-            - <span data-ttu-id="20ca5-168">TitleGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-168">TitleGroup (Group)</span></span>
-
-                - <span data-ttu-id="20ca5-169">HeaderTitle (文字列)</span><span class="sxs-lookup"><span data-stu-id="20ca5-169">HeaderTitle (String)</span></span>
-                - <span data-ttu-id="20ca5-170">*EntityStatus (グループ) \[オプション\]*</span><span class="sxs-lookup"><span data-stu-id="20ca5-170">*EntityStatus (Group) \[Optional\]*</span></span>
-
-                    - <span data-ttu-id="20ca5-171">StatusFields (1…N)</span><span class="sxs-lookup"><span data-stu-id="20ca5-171">StatusFields (1…N)</span></span>
-
-            - <span data-ttu-id="20ca5-172">CategoryTab (タブ スタイル = タブ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-172">CategoryTab (Tab Style=Tabs)</span></span>
-
-                - <span data-ttu-id="20ca5-173">CategoryTabPage (TabPages *反復 3..N*)</span><span class="sxs-lookup"><span data-stu-id="20ca5-173">CategoryTabPage (TabPages *repeats 3..N*)</span></span>
-
-                    - <span data-ttu-id="20ca5-174">TabHeader (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-174">TabHeader (Group)</span></span>
-                    - <span data-ttu-id="20ca5-175">DetailsTab (タブ スタイル =FastTabs)</span><span class="sxs-lookup"><span data-stu-id="20ca5-175">DetailsTab (Tab Style=FastTabs)</span></span>
-
-                        - <span data-ttu-id="20ca5-176">DetailsTabPage (TabPages *反復 1..N*)</span><span class="sxs-lookup"><span data-stu-id="20ca5-176">DetailsTabPage (TabPages *repeats 1..N*)</span></span>
-
-        - <span data-ttu-id="20ca5-177">GridTabPage (TabPage)</span><span class="sxs-lookup"><span data-stu-id="20ca5-177">GridTabPage (TabPage)</span></span>
-
-            - <span data-ttu-id="20ca5-178">CustomFilterGroup (グループ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-178">CustomFilterGroup (Group)</span></span>
-
-                - <span data-ttu-id="20ca5-179">QuickFilter</span><span class="sxs-lookup"><span data-stu-id="20ca5-179">QuickFilter</span></span>
-                - <span data-ttu-id="20ca5-180">*OtherFilters ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="20ca5-180">*OtherFilters ($Field) \[0..N\]*</span></span>
-
-            - <span data-ttu-id="20ca5-181">MainGrid (グリッド)</span><span class="sxs-lookup"><span data-stu-id="20ca5-181">MainGrid (Grid)</span></span>
-            - <span data-ttu-id="20ca5-182">MainGridDefaultAction (CommandButton)</span><span class="sxs-lookup"><span data-stu-id="20ca5-182">MainGridDefaultAction (CommandButton)</span></span>
-
-### <a name="core-components"></a><span data-ttu-id="20ca5-183">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="20ca5-183">Core components</span></span>
-
-1.  <span data-ttu-id="20ca5-184">**Form.Design** に DetailsMaster パターンを適用します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-184">Apply the DetailsMaster pattern on **Form.Design**.</span></span>
-2.  <span data-ttu-id="20ca5-185">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-185">Address BP Warnings:</span></span>
-    1.  <span data-ttu-id="20ca5-186">**Design.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="20ca5-186">**Design.Caption** isn't empty.</span></span>
-    2.  <span data-ttu-id="20ca5-187">フォームは少なくとも 1 つのメニュー項目で参照される必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-187">Form must be referenced by at least one menu item.</span></span>
-    3.  <span data-ttu-id="20ca5-188">**TabPage.Caption** は空ではありません。</span><span class="sxs-lookup"><span data-stu-id="20ca5-188">**TabPage.Caption** isn't empty.</span></span>
-
-### <a name="related-patterns"></a><span data-ttu-id="20ca5-189">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="20ca5-189">Related patterns</span></span>
-
--   [<span data-ttu-id="20ca5-190">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="20ca5-190">Details Transaction</span></span>](details-transaction-form-pattern.md)
--   [<span data-ttu-id="20ca5-191">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="20ca5-191">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
-
-### <a name="commonly-used-subpatterns"></a><span data-ttu-id="20ca5-192">一般的に使用されるサブパターン</span><span class="sxs-lookup"><span data-stu-id="20ca5-192">Commonly used subpatterns</span></span>
-
--   [<span data-ttu-id="20ca5-193">フィールドおよびフィールド グループ</span><span class="sxs-lookup"><span data-stu-id="20ca5-193">Fields and Field Groups</span></span>](fields-field-groups-subpattern.md)
--   [<span data-ttu-id="20ca5-194">ツールバーおよびリスト</span><span class="sxs-lookup"><span data-stu-id="20ca5-194">Toolbar and List</span></span>](toolbar-list-subpattern.md)
--   [<span data-ttu-id="20ca5-195">ツールバーおよびフィールド</span><span class="sxs-lookup"><span data-stu-id="20ca5-195">Toolbar and Fields</span></span>](toolbar-fields-subpattern.md)
--   [<span data-ttu-id="20ca5-196">入れ子になった簡易リストおよび詳細</span><span class="sxs-lookup"><span data-stu-id="20ca5-196">Nested Simple List and Details</span></span>](nested-simple-list-details-subpattern.md)
--   [<span data-ttu-id="20ca5-197">カスタム フィルター グループ</span><span class="sxs-lookup"><span data-stu-id="20ca5-197">Custom Filter Group</span></span>](custom-filter-group-subpattern.md)
-
-## <a name="ux-guidelines"></a><span data-ttu-id="20ca5-198">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="20ca5-198">UX guidelines</span></span>
-<span data-ttu-id="20ca5-199">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="20ca5-199">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="20ca5-200">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="20ca5-200">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="20ca5-201">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-201">Open the form in a browser, and walk through these steps.</span></span> <span data-ttu-id="20ca5-202">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="20ca5-202">**Standard form guidelines:**</span></span>
-
--   <span data-ttu-id="20ca5-203">標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-203">Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.</span></span>
-
-<span data-ttu-id="20ca5-204">**詳細マスターガイドライン**</span><span class="sxs-lookup"><span data-stu-id="20ca5-204">**Detail Master guidelines:**</span></span>
-
--   <span data-ttu-id="20ca5-205">**新規** ボタンおよび **削除** ボタンは重複してはいけません。</span><span class="sxs-lookup"><span data-stu-id="20ca5-205">There should not be any duplicate **New** and **Delete** buttons.</span></span>
--   <span data-ttu-id="20ca5-206">従来のタブではなく、フィールドをグループ化するのにクイック タブを使用する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="20ca5-206">Should use FastTabs to group the fields instead of traditional tabs.</span></span> <span data-ttu-id="20ca5-207">詳細マスター / 標準タブ パターンは、関連するこれらのクイック タブを従来のタブにグループ化します。</span><span class="sxs-lookup"><span data-stu-id="20ca5-207">The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.</span></span>
-    -   <span data-ttu-id="20ca5-208">**既定**の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-208">In its **default** state, the content of the first FastTab should be fully visible without scrolling.</span></span>
-    -   <span data-ttu-id="20ca5-209">**クイック タブ**ガイドラインは、[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-209">**FastTabs** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document.</span></span>
--   <span data-ttu-id="20ca5-210">**ActionPane** ガイドラインは、ActionPane ガイドライン セクションの[フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-210">**ActionPane** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the ActionPane guidelines section.</span></span>
--   <span data-ttu-id="20ca5-211">**ページ タイトル エリア:**</span><span class="sxs-lookup"><span data-stu-id="20ca5-211">**Page title area:**</span></span>
-    -   <span data-ttu-id="20ca5-212">"&lt;ID&gt; : &lt;Description&gt;" という形式を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-212">The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"</span></span>
-    -   <span data-ttu-id="20ca5-213">リスト ページが詳細ページにマージされている場合は、詳細ページへのリンクをメイン メニューで提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-213">A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.</span></span>
-    -   <span data-ttu-id="20ca5-214">ページ タイトルは、複数フォームの形式にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-214">The page title should be in a plural form.</span></span>
--   <span data-ttu-id="20ca5-215">**情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-215">**FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.</span></span>
--   <span data-ttu-id="20ca5-216">**ナビゲーション リスト グリッド:**</span><span class="sxs-lookup"><span data-stu-id="20ca5-216">**Navigation list grid:**</span></span>
-    -   <span data-ttu-id="20ca5-217">リスト スタイル グリッドは、グリッド行内に行が 3 行以上にまたがるフィールドはありません。</span><span class="sxs-lookup"><span data-stu-id="20ca5-217">The list style grid should not have fields within a grid row that cause the row to span more than three lines.</span></span>
-        -   <span data-ttu-id="20ca5-218">通常は IDと説明だけで十分です。</span><span class="sxs-lookup"><span data-stu-id="20ca5-218">Typically, just the ID and Description are sufficient.</span></span>
-        -   <span data-ttu-id="20ca5-219">2 つ以上のフィールドが必要です。</span><span class="sxs-lookup"><span data-stu-id="20ca5-219">There should be at least two fields.</span></span>
--   <span data-ttu-id="20ca5-220">**グリッド ビュー:**</span><span class="sxs-lookup"><span data-stu-id="20ca5-220">**Grid view:**</span></span>
-    -   <span data-ttu-id="20ca5-221">グリッドには 2 〜 15 個のフィールドがあります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-221">The grid has 2 to 15 fields.</span></span> <span data-ttu-id="20ca5-222">通常はすべての必須フィールドが含まれているので、グリッド内にレコードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="20ca5-222">Typically, all mandatory fields are included, so that records can be created in the grid.</span></span>
-    -   <span data-ttu-id="20ca5-223">リンクされているフィールドを使用すると、ユーザーは選択したレコードの詳細を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="20ca5-223">A linked field lets the user open the details for the selected record.</span></span>
-    -   <span data-ttu-id="20ca5-224">クイック フィルターの既定値は、フィルター シナリオに最も可能性が高いフィールドに設定されます。</span><span class="sxs-lookup"><span data-stu-id="20ca5-224">The Quick filter should default to the most likely field for a filter scenario.</span></span>
-    -   <span data-ttu-id="20ca5-225">**グリッド:**</span><span class="sxs-lookup"><span data-stu-id="20ca5-225">**Grid:**</span></span>
-        -   <span data-ttu-id="20ca5-226">**ID** フィールドは最初の列にする必要があります (グリッドで必要な場合)。</span><span class="sxs-lookup"><span data-stu-id="20ca5-226">The **ID** field should be the first column (if it's needed in the grid).</span></span> <span data-ttu-id="20ca5-227">それ以外の場合、**名前** フィールドは最初の列にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-227">Otherwise, the **Name** field should be the first column.</span></span>
-        -   <span data-ttu-id="20ca5-228">追加のグリッド ガイドラインは、グリッド ガイドライン セクションの [全般的なフォームのガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="20ca5-228">Additional grid guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md) document, in the Grid guidelines section.</span></span>
-
-## <a name="examples"></a><span data-ttu-id="20ca5-229">例</span><span class="sxs-lookup"><span data-stu-id="20ca5-229">Examples</span></span>
-### <a name="details-master-basic"></a><span data-ttu-id="20ca5-230">詳細マスター (基本)</span><span class="sxs-lookup"><span data-stu-id="20ca5-230">Details Master (basic)</span></span>
-
-<span data-ttu-id="20ca5-231">フォーム: **CustTable**</span><span class="sxs-lookup"><span data-stu-id="20ca5-231">Form: **CustTable**</span></span>
-
-#### <a name="details-view-navigation-list-off"></a><span data-ttu-id="20ca5-232">詳細ビュー (ナビゲーション リスト オフ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-232">Details view (navigation list off)</span></span>
-
-<span data-ttu-id="20ca5-233">[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-233">[![Details Master (basic) example: Details view (navigation list off)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</span></span>
-
-#### <a name="details-view-navigation-list-on"></a><span data-ttu-id="20ca5-234">詳細ビュー (ナビゲーション リスト オン)</span><span class="sxs-lookup"><span data-stu-id="20ca5-234">Details view (navigation list on)</span></span>
-
-<span data-ttu-id="20ca5-235">[![詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-235">[![Details Master (basic) example: Details view (navigation list on)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</span></span>
-
-#### <a name="grid-view"></a><span data-ttu-id="20ca5-236">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="20ca5-236">Grid view</span></span>
-
-<span data-ttu-id="20ca5-237">[![詳細マスター (基本) の例: グリッド ビュー](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-237">[![Details Master (basic) example: Grid view](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</span></span>
-
-### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="20ca5-238">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="20ca5-238">Details Master w/Standard Tabs</span></span>
-
-<span data-ttu-id="20ca5-239">フォーム: **HcmWorker**</span><span class="sxs-lookup"><span data-stu-id="20ca5-239">Form: **HcmWorker**</span></span>
-
-#### <a name="details-view-navigation-list-off"></a><span data-ttu-id="20ca5-240">詳細ビュー (ナビゲーション リスト オフ)</span><span class="sxs-lookup"><span data-stu-id="20ca5-240">Details view (navigation list off)</span></span>
-
-<span data-ttu-id="20ca5-241">[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オフ)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-241">[![Details Master w/Standard Tabs example: Details view (navigation list off)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</span></span>
-
-#### <a name="details-view-navigation-list-on"></a><span data-ttu-id="20ca5-242">詳細ビュー (ナビゲーション リスト オン)</span><span class="sxs-lookup"><span data-stu-id="20ca5-242">Details view (navigation list on)</span></span>
-
-<span data-ttu-id="20ca5-243">[![詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オン)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-243">[![Details Master w/Standard Tabs example: Details view (navigation list on)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</span></span>
-
-#### <a name="grid-view"></a><span data-ttu-id="20ca5-244">グリッド ビュー</span><span class="sxs-lookup"><span data-stu-id="20ca5-244">Grid view</span></span>
-
-<span data-ttu-id="20ca5-245">[![詳細マスター / 標準タブ例: グリッド ビュー](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-245">[![Details Master w/Standard Tabs example: Grid view](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</span></span>
-
-## <a name="appendix"></a><span data-ttu-id="20ca5-246">付録</span><span class="sxs-lookup"><span data-stu-id="20ca5-246">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="20ca5-247">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="20ca5-247">Frequently asked questions</span></span>
-
-<span data-ttu-id="20ca5-248">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="20ca5-248">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
-
-### <a name="open-issues"></a><span data-ttu-id="20ca5-249">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="20ca5-249">Open issues</span></span>
-
-<span data-ttu-id="20ca5-250">なし。</span><span class="sxs-lookup"><span data-stu-id="20ca5-250">None.</span></span>
-
-### <a name="ax-2012-content"></a><span data-ttu-id="20ca5-251">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="20ca5-251">AX 2012 content</span></span>
-
-#### <a name="ax-2012-links"></a><span data-ttu-id="20ca5-252">AX 2012 リンク</span><span class="sxs-lookup"><span data-stu-id="20ca5-252">AX 2012 links</span></span>
--   [<span data-ttu-id="20ca5-253">AX 2012 MSDN 詳細のフォーム</span><span class="sxs-lookup"><span data-stu-id="20ca5-253">AX 2012 MSDN Details Forms</span></span>](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
-
-#### <a name="ax-2012-example"></a><span data-ttu-id="20ca5-254">AX 2012 の例</span><span class="sxs-lookup"><span data-stu-id="20ca5-254">AX 2012 example</span></span>
-
-##### <a name="details-master-basic"></a><span data-ttu-id="20ca5-255">詳細マスター (基本)</span><span class="sxs-lookup"><span data-stu-id="20ca5-255">Details Master (basic)</span></span>
-
-<span data-ttu-id="20ca5-256">[![AX 2012 の例: 詳細マスター (基本) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-256">[![AX 2012 example: Details Master (basic) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</span></span> 
-
-<span data-ttu-id="20ca5-257">[![AX 2012 の例: 詳細マスター (基本) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-257">[![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</span></span>
-
-##### <a name="details-master-wstandard-tabs"></a><span data-ttu-id="20ca5-258">詳細マスター / 標準タブ</span><span class="sxs-lookup"><span data-stu-id="20ca5-258">Details Master w/Standard Tabs</span></span>
-
-<span data-ttu-id="20ca5-259">[![AXAX 2012 の例: 詳細マスターと標準タブ 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-259">[![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</span></span> 
-
-<span data-ttu-id="20ca5-260">[![AX 2012 の例: 詳細マスターと標準タブ 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</span><span class="sxs-lookup"><span data-stu-id="20ca5-260">[![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="details-master-form-pattern.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>details-master-form-pattern.3bbc7a.ae39826e9fa5e2ee017408d5d295e2a3f2613e20.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>ae39826e9fa5e2ee017408d5d295e2a3f2613e20</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\details-master-form-pattern.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Details Master form pattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター フォーム パターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about the Details Master form pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、詳細マスター フォームのパターンについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>A details form is the primary method for entering data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細フォームは、データ入力の基本方法です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Details Master form pattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター フォーム パターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic provides information about the Details Master form pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、詳細マスター フォームのパターンについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>A details form is the primary method for entering data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細フォームは、データ入力の基本方法です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">用途</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>A details form is the primary method for entering data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細フォームは、データ入力の基本方法です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>These forms let the user view, edit, and act upon data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのフォームにより、ユーザーはデータを表示、編集、および操作できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらフォーム タイプのすべてのコンテンツは展開および折りたたむことのできるクイック タブとして構造化されているため、複数のクイック タブを同時に開くことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クイック タブには、フィールドやグリッドを含めることができ、各クイック タブはローカル ツール バーを持つことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Two patterns are described in this document:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このドキュメントでは、2 つのパターンについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">**</bpt>Detail Master<ept id="p1">**</ept> – This is the basic Detail Master pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>詳細マスター<ept id="p1">**</ept> - これは、基本の詳細マスター パターンです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>This is the pattern that you should use by default.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは既定で使用されるパターンです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Detail Master w/ Tabs<ept id="p1">**</ept> – You should use this pattern when an entity requires many FastTabs (more than 15) that can be grouped into categories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タブ付き詳細マスター<ept id="p1">**</ept> - エンティティがカテゴリにグループ化できるクイック タブ (15 以上) を多数必要とする場合は、このパターンを使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In both cases, the grid view is structured the same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">どちらの場合も、グリッド ビューの構成は同じです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Wireframe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワイヤーフレーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Details Master</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Details view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master wireframe: Details view<ept id="p1">](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター ワイヤーフレーム: 詳細ビュー<ept id="p1">](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Grid view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master wireframe: Grid view<ept id="p1">](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター ワイヤーフレーム: グリッド ビュー<ept id="p1">](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Details Master w/Standard Tabs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター / 標準タブ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Details view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master w/Standard Tabs wireframe: Details view<ept id="p1">](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター / 標準タブ ワイヤーフレーム: 詳細ビュー<ept id="p1">](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Grid view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master w/Standard Tabs wireframe: Grid view<ept id="p1">](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター / 標準タブ ワイヤーフレーム: グリッド ビュー<ept id="p1">](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Pattern changes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パターンの変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Added a List style grid to the left of the Details view content.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビューコンテンツの左側にリスト スタイル グリッドが追加されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Merged List Page and Details Master into a single form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト ページと詳細マスターが 1 つのフォームにマージされました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Improves performance when moving between a list and details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧と詳細の間を移動するときのパフォーマンスが向上します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Enables bulk editing in the initial list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">初期一覧で一括編集を有効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Allows for elimination of the list page preview pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プレビュー ウィンドウの一覧ページの消去を許可します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>View/Edit, New, Delete, Save, Refresh, Attachments, and Export to Excel actions are all provided by the foundation and should not have explicit app buttons unless the foundation-provided button is removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示/編集、新規作成、削除、保存、最新の情報に更新、添付、および Excel にエクスポートの各アクションはすべてファンデーションによって提供され、ファンデーションによって提供されたボタンが削除されない限り、各アクションに明示的なアプリ ボタンを使用する必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Master Details forms that previously used the TOC extension should now use the Master Details w/Standard Tabs pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以前に TOC 拡張機能を使用したマスター詳細フォームでは、標準タブ パターン付きマスター詳細を使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Details Master (basic) – High-level structure</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター (基本) – 高レベル構造体</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Design</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>ActionPane (ActionPane)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActionPane (ActionPane)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>SidePanel (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SidePanel (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>QuickFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuickFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">*</bpt>CustomFilters (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>CustomFilter (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>NavigationList (Grid, Style=List)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NavigationList (グリッド、スタイル = リスト)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>MainTab (Tab ShowTabs=No)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainTab (Tab ShowTabs=No)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>DetailsTabPage (TabPage)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsTabPage (TabPage)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>TitleGroup (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TitleGroup (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>HeaderTitle (String)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HeaderTitle (文字列)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">*</bpt>EntityStatus (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>EntityStatus (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>StatusFields (1..N)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StatusFields (1..N)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>DetailsTab (Tab Style=FastTabs)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsTab (タブ スタイル =FastTabs)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>DetailsTabPage (TabPages <bpt id="p1">*</bpt>repeats 1..N<ept id="p1">*</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsTabPage (TabPages <bpt id="p1">*</bpt>反復 1..N<ept id="p1">*</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>GridTabPage (TabPage)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GridTabPage (TabPage)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>CustomFilterGroup (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustomFilterGroup (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>QuickFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuickFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source><bpt id="p1">*</bpt>OtherFilters ($Field) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>OtherFilters ($ フィールド)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>MainGrid (Grid)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainGrid (グリッド)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>MainGridDefaultAction (CommandButton)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainGridDefaultAction (CommandButton)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Details Master w/Standard Tabs – High-level structure</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター / 標準タブの詳細 – 高度な構造</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Design</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>ActionPane (ActionPane)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActionPane (ActionPane)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>SidePanel (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SidePanel (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>QuickFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuickFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">*</bpt>CustomFilters (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>CustomFilter (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>NavigationList (Grid, Style=List)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NavigationList (グリッド、スタイル = リスト)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>MainTab (Tab ShowTabs=No)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainTab (Tab ShowTabs=No)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>DetailsTabPage (TabPage)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsTabPage (TabPage)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>TitleGroup (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TitleGroup (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>HeaderTitle (String)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HeaderTitle (文字列)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">*</bpt>EntityStatus (Group) <ph id="ph1">\[</ph>Optional<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>EntityStatus (グループ) <ph id="ph1">\[</ph>オプション<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>StatusFields (1…N)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StatusFields (1…N)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>CategoryTab (Tab Style=Tabs)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CategoryTab (タブ スタイル = タブ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>CategoryTabPage (TabPages <bpt id="p1">*</bpt>repeats 3..N<ept id="p1">*</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CategoryTabPage (TabPages <bpt id="p1">*</bpt>反復 3..N<ept id="p1">*</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>TabHeader (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TabHeader (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>DetailsTab (Tab Style=FastTabs)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsTab (タブ スタイル =FastTabs)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>DetailsTabPage (TabPages <bpt id="p1">*</bpt>repeats 1..N<ept id="p1">*</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DetailsTabPage (TabPages <bpt id="p1">*</bpt>反復 1..N<ept id="p1">*</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>GridTabPage (TabPage)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GridTabPage (TabPage)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>CustomFilterGroup (Group)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustomFilterGroup (グループ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>QuickFilter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QuickFilter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">*</bpt>OtherFilters ($Field) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>OtherFilters ($ フィールド)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>MainGrid (Grid)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainGrid (グリッド)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>MainGridDefaultAction (CommandButton)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainGridDefaultAction (CommandButton)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Core components</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Apply the DetailsMaster pattern on <bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Form.Design<ept id="p1">**</ept> に DetailsMaster パターンを適用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Address BP Warnings:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BP 警告に対処します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><bpt id="p1">**</bpt>Design.Caption<ept id="p1">**</ept> isn't empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Design.Caption<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Form must be referenced by at least one menu item.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームは少なくとも 1 つのメニュー項目で参照される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source><bpt id="p1">**</bpt>TabPage.Caption<ept id="p1">**</ept> isn't empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TabPage.Caption<ept id="p1">**</ept> は空ではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Related patterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連するパターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source><bpt id="p1">[</bpt>Details Transaction<ept id="p1">](details-transaction-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細トランザクション<ept id="p1">](details-transaction-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source><bpt id="p1">[</bpt>Simple List and Details<ept id="p1">](simple-list-details-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細<ept id="p1">](simple-list-details-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Commonly used subpatterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般的に使用されるサブパターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source><bpt id="p1">[</bpt>Fields and Field Groups<ept id="p1">](fields-field-groups-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>フィールドおよびフィールド グループ<ept id="p1">](fields-field-groups-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source><bpt id="p1">[</bpt>Toolbar and List<ept id="p1">](toolbar-list-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびリスト<ept id="p1">](toolbar-list-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source><bpt id="p1">[</bpt>Toolbar and Fields<ept id="p1">](toolbar-fields-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ツールバーおよびフィールド<ept id="p1">](toolbar-fields-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source><bpt id="p1">[</bpt>Nested Simple List and Details<ept id="p1">](nested-simple-list-details-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>入れ子になった簡易リストおよび詳細<ept id="p1">](nested-simple-list-details-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source><bpt id="p1">[</bpt>Custom Filter Group<ept id="p1">](custom-filter-group-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>カスタム フィルター グループ<ept id="p1">](custom-filter-group-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>UX guidelines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UX ガイドライン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Open the form in a browser, and walk through these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーでフォームを開いて、これらの手順を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source><bpt id="p1">**</bpt>Standard form guidelines:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>標準フォーム ガイドライン:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Standard form guidelines have been consolidated into the Microsoft Dynamics AX <bpt id="p1">[</bpt>General Form Guidelines<ept id="p1">](general-form-guidelines.md)</ept> document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準フォーム ガイドラインは、Microsoft Dynamics AX <bpt id="p1">[</bpt>全般的なガイドライン<ept id="p1">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source><bpt id="p1">**</bpt>Detail Master guidelines:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>詳細マスターガイドライン<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>There should not be any duplicate <bpt id="p1">**</bpt>New<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> buttons.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept> ボタンおよび <bpt id="p2">**</bpt>削除<ept id="p2">**</ept> ボタンは重複してはいけません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Should use FastTabs to group the fields instead of traditional tabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従来のタブではなく、フィールドをグループ化するのにクイック タブを使用する必要がありますか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター / 標準タブ パターンは、関連するこれらのクイック タブを従来のタブにグループ化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>In its <bpt id="p1">**</bpt>default<ept id="p1">**</ept> state, the content of the first FastTab should be fully visible without scrolling.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既定<ept id="p1">**</ept>の状態で、最初のクイック タブのコンテンツはスクロールせずに完全に表示される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source><bpt id="p1">**</bpt>FastTabs<ept id="p1">**</ept> guidelines have been consolidated into the <bpt id="p2">[</bpt>General Form Guidelines <ept id="p2">](general-form-guidelines.md)</ept> document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クイック タブ<ept id="p1">**</ept>ガイドラインは、<bpt id="p2">[</bpt>フォームの全般的なガイドライン<ept id="p2">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source><bpt id="p1">**</bpt>ActionPane<ept id="p1">**</ept> guidelines have been consolidated into the <bpt id="p2">[</bpt>General Form Guidelines <ept id="p2">](general-form-guidelines.md)</ept> document, in the ActionPane guidelines section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ActionPane<ept id="p1">**</ept> ガイドラインは、ActionPane ガイドライン セクションの<bpt id="p2">[</bpt>フォームの全般的なガイドライン<ept id="p2">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source><bpt id="p1">**</bpt>Page title area:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ページ タイトル エリア:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The following format should be used: "<ph id="ph1">&amp;lt;</ph>ID<ph id="ph2">&amp;gt;</ph> : <ph id="ph3">&amp;lt;</ph>Description<ph id="ph4">&amp;gt;</ph>"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"<ph id="ph1">&amp;lt;</ph>ID<ph id="ph2">&amp;gt;</ph> : <ph id="ph3">&amp;lt;</ph>Description<ph id="ph4">&amp;gt;</ph>" という形式を使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト ページが詳細ページにマージされている場合は、詳細ページへのリンクをメイン メニューで提供する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The page title should be in a plural form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページ タイトルは、複数フォームの形式にする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">**</bpt>FactBox<ept id="p1">**</ept> guidelines have been consolidated into the <bpt id="p2">[</bpt>FactBox Form Patterns<ept id="p2">](factbox-form-patterns.md)</ept> document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>情報ボックス<ept id="p1">**</ept>ガイドラインは、<bpt id="p2">[</bpt>情報ボックスのフォーム パターン<ept id="p2">](factbox-form-patterns.md)</ept> ドキュメントに統合されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">**</bpt>Navigation list grid:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ナビゲーション リスト グリッド:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>The list style grid should not have fields within a grid row that cause the row to span more than three lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト スタイル グリッドは、グリッド行内に行が 3 行以上にまたがるフィールドはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Typically, just the ID and Description are sufficient.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常は IDと説明だけで十分です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>There should be at least two fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 つ以上のフィールドが必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source><bpt id="p1">**</bpt>Grid view:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>グリッド ビュー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>The grid has 2 to 15 fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドには 2 〜 15 個のフィールドがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Typically, all mandatory fields are included, so that records can be created in the grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常はすべての必須フィールドが含まれているので、グリッド内にレコードを作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>A linked field lets the user open the details for the selected record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リンクされているフィールドを使用すると、ユーザーは選択したレコードの詳細を開くことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>The Quick filter should default to the most likely field for a filter scenario.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クイック フィルターの既定値は、フィルター シナリオに最も可能性が高いフィールドに設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">**</bpt>Grid:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>グリッド:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>The <bpt id="p1">**</bpt>ID<ept id="p1">**</ept> field should be the first column (if it's needed in the grid).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ID<ept id="p1">**</ept> フィールドは最初の列にする必要があります (グリッドで必要な場合)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Otherwise, the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field should be the first column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、<bpt id="p1">**</bpt>名前<ept id="p1">**</ept> フィールドは最初の列にする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Additional grid guidelines have been consolidated into the <bpt id="p1">[</bpt>General Form Guidelines <ept id="p1">](general-form-guidelines.md)</ept> document, in the Grid guidelines section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のグリッド ガイドラインは、グリッド ガイドライン セクションの <bpt id="p1">[</bpt>全般的なフォームのガイドライン<ept id="p1">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Details Master (basic)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター (基本)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Form: <bpt id="p1">**</bpt>CustTable<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>CustTable<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Details view (navigation list off)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビュー (ナビゲーション リスト オフ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master (basic) example: Details view (navigation list off)<ept id="p1">](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オフ)<ept id="p1">](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Details view (navigation list on)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビュー (ナビゲーション リスト オン)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master (basic) example: Details view (navigation list on)<ept id="p1">](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター (基本) の例: 詳細ビュー (ナビゲーション リスト オン)<ept id="p1">](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Grid view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master (basic) example: Grid view<ept id="p1">](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター (基本) の例: グリッド ビュー<ept id="p1">](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Details Master w/Standard Tabs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター / 標準タブ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Form: <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>HcmWorker<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Details view (navigation list off)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビュー (ナビゲーション リスト オフ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master w/Standard Tabs example: Details view (navigation list off)<ept id="p1">](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オフ)<ept id="p1">](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Details view (navigation list on)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細ビュー (ナビゲーション リスト オン)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master w/Standard Tabs example: Details view (navigation list on)<ept id="p1">](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター / 標準タブの例: 詳細ビュー (ナビゲーション リスト オン)<ept id="p1">](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Grid view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Details Master w/Standard Tabs example: Grid view<ept id="p1">](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>詳細マスター / 標準タブ例: グリッド ビュー<ept id="p1">](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Appendix</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Frequently asked questions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく寄せられる質問</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>This section will have answers to frequently asked questions that are related to this guideline/pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Open issues</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">未処理の問題</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>None.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">なし。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>AX 2012 content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 コンテンツ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>AX 2012 links</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 リンク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source><bpt id="p1">[</bpt>AX 2012 MSDN Details Forms<ept id="p1">](https://msdn.microsoft.com/library/hh397318.aspx)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>AX 2012 MSDN 詳細のフォーム<ept id="p1">](https://msdn.microsoft.com/library/hh397318.aspx)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>AX 2012 example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 の例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Details Master (basic)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター (基本)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 example: Details Master (basic) 1<ept id="p1">](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 の例: 詳細マスター (基本) 1<ept id="p1">](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 example: Details Master (basic) 2<ept id="p1">](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 の例: 詳細マスター (基本) 2<ept id="p1">](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Details Master w/Standard Tabs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細マスター / 標準タブ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 example: Details Master w/Standard Tabs 1<ept id="p1">](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AXAX 2012 の例: 詳細マスターと標準タブ 1<ept id="p1">](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 example: Details Master w/Standard Tabs 2<ept id="p1">](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>AX 2012 の例: 詳細マスターと標準タブ 2<ept id="p1">](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

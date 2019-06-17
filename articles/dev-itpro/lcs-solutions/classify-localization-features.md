@@ -1,58 +1,144 @@
----
-title: ローカライズ機能の分類
-description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制、または競合のいずれかに分類される必要があります。 この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: IT Pro
-ms.reviewer: shylaw
-ms.search.scope: Operations
-ms.custom: 27601
-ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
-ms.search.region: global
-ms.author: janeaug
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a742039b9877734a3893ea85884f8ae5f18a8e90
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537382"
----
-# <a name="classification-of-localization-features"></a><span data-ttu-id="2c490-104">ローカライズ機能の分類</span><span class="sxs-lookup"><span data-stu-id="2c490-104">Classification of localization features</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="2c490-105">ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制、または競合のいずれかに分類される必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c490-105">As part of the requirements for LCS solutions for localization &amp; translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="2c490-106">この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。</span><span class="sxs-lookup"><span data-stu-id="2c490-106">This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.</span></span>
-
-<span data-ttu-id="2c490-107">ローカライズ機能は、Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制または競合として分類される必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c490-107">Localization features must be classified as either regulatory or competitive in the Business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="2c490-108">次の定義は、2 つのタイプの機能を区別するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="2c490-108">The following definitions will help you distinguish the two types of features:</span></span>
-
--   <span data-ttu-id="2c490-109">**規制機能** – 特定の国/地域で業務を行う組織は、日々の業務トランザクションや工程に関して、国/地域固有の法律や規制を遵守する必要があり、その国/地域で実施される活動についての法的義務を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c490-109">**Regulatory features** – Organizations that do business in a particular country/region must comply with country/region-specific laws and regulations as they handle their daily business transactions and operations, and meet their legal obligations for activities that are conducted in that country/region.</span></span> <span data-ttu-id="2c490-110">これらの法律および規制は強制され、遵守しない場合、その国/地域で事業を行う組織にとって深刻な結果につながる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2c490-110">These laws and regulations are enforced, and non-adherence can lead to severe consequences for an organization that does business in that country/region.</span></span>
--   <span data-ttu-id="2c490-111">**競合機能** - このカテゴリには、前述の定義に従って規制機能とは見なされないその他のすべての機能が含まれます。</span><span class="sxs-lookup"><span data-stu-id="2c490-111">**Competitive features** – This category includes all other features that aren't considered regulatory features according to the preceding definition.</span></span>
-
-<span data-ttu-id="2c490-112">BPM ライブラリが構築されているときは、ローカライズ ソリューションの機能のタイトルで、各機能のタイプを区別する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2c490-112">When the BPM library is constructed, the various feature types should be distinguished through the title of the localization solution feature.</span></span> <span data-ttu-id="2c490-113">このタイトルのラベルは、次のテーブルに示すように、接頭辞による国/地域および機能タイプを示す次の命名規則に準拠します。</span><span class="sxs-lookup"><span data-stu-id="2c490-113">The label for this title will conform to the following naming convention that indicates the country/region and feature type through prefixes, as shown in the following table.</span></span>
-
-| <span data-ttu-id="2c490-114">フィーチャー タイプ</span><span class="sxs-lookup"><span data-stu-id="2c490-114">Feature type</span></span> | <span data-ttu-id="2c490-115">書式設定</span><span class="sxs-lookup"><span data-stu-id="2c490-115">Format</span></span>                | <span data-ttu-id="2c490-116">例</span><span class="sxs-lookup"><span data-stu-id="2c490-116">Example</span></span>                             |
-|--------------|-----------------------|-------------------------------------|
-| <span data-ttu-id="2c490-117">規制</span><span class="sxs-lookup"><span data-stu-id="2c490-117">Regulatory</span></span>   | <span data-ttu-id="2c490-118">XX-REG-Feature タイトル</span><span class="sxs-lookup"><span data-stu-id="2c490-118">XX-REG-Feature title</span></span>  | <span data-ttu-id="2c490-119">PT-REG-直接売上税レポート</span><span class="sxs-lookup"><span data-stu-id="2c490-119">PT-REG-Direct sales Tax report</span></span>      |
-| <span data-ttu-id="2c490-120">競合</span><span class="sxs-lookup"><span data-stu-id="2c490-120">Competitive</span></span>  | <span data-ttu-id="2c490-121">XX-COMP-Feature タイトル</span><span class="sxs-lookup"><span data-stu-id="2c490-121">XX-COMP-Feature title</span></span> | <span data-ttu-id="2c490-122">PT-COMP-国内銀行支払形式</span><span class="sxs-lookup"><span data-stu-id="2c490-122">PT-COMP-Country bank payment format</span></span> |
-
-<span data-ttu-id="2c490-123">次のテーブルに、名前付け規則のコンポーネントを示します。</span><span class="sxs-lookup"><span data-stu-id="2c490-123">The following table explains the components of the naming convention.</span></span>
-
-| <span data-ttu-id="2c490-124">コンポーネント名</span><span class="sxs-lookup"><span data-stu-id="2c490-124">Component name</span></span>      | <span data-ttu-id="2c490-125">書式設定</span><span class="sxs-lookup"><span data-stu-id="2c490-125">Format</span></span>      | <span data-ttu-id="2c490-126">説明</span><span class="sxs-lookup"><span data-stu-id="2c490-126">Description</span></span>                                                                                                                   | <span data-ttu-id="2c490-127">例</span><span class="sxs-lookup"><span data-stu-id="2c490-127">Example</span></span>                 |
-|---------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| <span data-ttu-id="2c490-128">国/地域コード</span><span class="sxs-lookup"><span data-stu-id="2c490-128">Country/region code</span></span> | <span data-ttu-id="2c490-129">XX</span><span class="sxs-lookup"><span data-stu-id="2c490-129">XX</span></span>          | <span data-ttu-id="2c490-130">2 文字の ISO 国/地域コード ([ISO 3166 規格](http://www.iso.org/iso/country_names_and_code_elements))</span><span class="sxs-lookup"><span data-stu-id="2c490-130">The two-letter ISO country/region code (from the [ISO 3166 standard](http://www.iso.org/iso/country_names_and_code_elements))</span></span> | <span data-ttu-id="2c490-131">PT (= ポルトガル)</span><span class="sxs-lookup"><span data-stu-id="2c490-131">PT (= Portugal)</span></span>         |
-| <span data-ttu-id="2c490-132">フィーチャー タイプ</span><span class="sxs-lookup"><span data-stu-id="2c490-132">Feature type</span></span>        | <span data-ttu-id="2c490-133">REG または COMP</span><span class="sxs-lookup"><span data-stu-id="2c490-133">REG or COMP</span></span> | <span data-ttu-id="2c490-134">機能のタイプ</span><span class="sxs-lookup"><span data-stu-id="2c490-134">The type of feature</span></span>                                                                                                           | <span data-ttu-id="2c490-135">REG</span><span class="sxs-lookup"><span data-stu-id="2c490-135">REG</span></span>                     |
-| <span data-ttu-id="2c490-136">フィーチャー名</span><span class="sxs-lookup"><span data-stu-id="2c490-136">Feature name</span></span>        | <span data-ttu-id="2c490-137">テキスト</span><span class="sxs-lookup"><span data-stu-id="2c490-137">Text</span></span>        | <span data-ttu-id="2c490-138">機能がどのように使用されているかを説明する短い機能タイトル</span><span class="sxs-lookup"><span data-stu-id="2c490-138">A short feature title that describes what the feature is used for</span></span>                                                             | <span data-ttu-id="2c490-139">直接売上税レポート</span><span class="sxs-lookup"><span data-stu-id="2c490-139">Direct sales tax report</span></span> |
-
-<span data-ttu-id="2c490-140">BPM の詳細については、[BPM に業務プロセスをアップロード](../lifecycle-services/upload-business-processes-bpm-task-recorder.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2c490-140">For more information about BPM, see [Upload business processes to BPM](../lifecycle-services/upload-business-processes-bpm-task-recorder.md).</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="2c490-141">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="2c490-141">Additional resources</span></span>
-
-- [<span data-ttu-id="2c490-142">ローカライズと規制の機能</span><span class="sxs-lookup"><span data-stu-id="2c490-142">Localization and regulatory features</span></span>](country-region.md)
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="classify-localization-features.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>classify-localization-features.024739.286f2c6f7276f3c16541ab4e23d242cb11d69e82.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>286f2c6f7276f3c16541ab4e23d242cb11d69e82</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\lcs-solutions\classify-localization-features.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Classification of localization features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ機能の分類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>As part of the requirements for LCS solutions for localization <ph id="ph1">&amp;amp;</ph> translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ <ph id="ph1">&amp;amp;</ph> 翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制、または競合のいずれかに分類される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Classification of localization features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ機能の分類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>As part of the requirements for LCS solutions for localization <ph id="ph1">&amp;amp;</ph> translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ <ph id="ph1">&amp;amp;</ph> 翻訳向け LCS ソリューションの要件の一部として、ローカライズ機能は Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制、または競合のいずれかに分類される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、これらの 2 つのタイプの機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Localization features must be classified as either regulatory or competitive in the Business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカライズ機能は、Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) ライブラリで規制または競合として分類される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The following definitions will help you distinguish the two types of features:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の定義は、2 つのタイプの機能を区別するのに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">**</bpt>Regulatory features<ept id="p1">**</ept> – Organizations that do business in a particular country/region must comply with country/region-specific laws and regulations as they handle their daily business transactions and operations, and meet their legal obligations for activities that are conducted in that country/region.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>規制機能<ept id="p1">**</ept> – 特定の国/地域で業務を行う組織は、日々の業務トランザクションや工程に関して、国/地域固有の法律や規制を遵守する必要があり、その国/地域で実施される活動についての法的義務を満たしている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>These laws and regulations are enforced, and non-adherence can lead to severe consequences for an organization that does business in that country/region.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの法律および規制は強制され、遵守しない場合、その国/地域で事業を行う組織にとって深刻な結果につながる可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source><bpt id="p1">**</bpt>Competitive features<ept id="p1">**</ept> – This category includes all other features that aren't considered regulatory features according to the preceding definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>競合機能<ept id="p1">**</ept> - このカテゴリには、前述の定義に従って規制機能とは見なされないその他のすべての機能が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>When the BPM library is constructed, the various feature types should be distinguished through the title of the localization solution feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BPM ライブラリが構築されているときは、ローカライズ ソリューションの機能のタイトルで、各機能のタイプを区別する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The label for this title will conform to the following naming convention that indicates the country/region and feature type through prefixes, as shown in the following table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このタイトルのラベルは、次のテーブルに示すように、接頭辞による国/地域および機能タイプを示す次の命名規則に準拠します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Feature type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィーチャー タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">書式設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Regulatory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">規制</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>XX-REG-Feature title</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XX-REG-Feature タイトル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>PT-REG-Direct sales Tax report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PT-REG-直接売上税レポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Competitive</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">競合</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>XX-COMP-Feature title</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XX-COMP-Feature タイトル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>PT-COMP-Country bank payment format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PT-COMP-国内銀行支払形式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The following table explains the components of the naming convention.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、名前付け規則のコンポーネントを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Component name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">書式設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Country/region code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">国/地域コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>XX</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XX</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The two-letter ISO country/region code (from the <bpt id="p1">[</bpt>ISO 3166 standard<ept id="p1">](https://www.iso.org/iso/country_names_and_code_elements)</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 文字の ISO 国/地域コード (<bpt id="p1">[</bpt>ISO 3166 規格<ept id="p1">](https://www.iso.org/iso/country_names_and_code_elements)</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>PT (= Portugal)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PT (= ポルトガル)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Feature type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィーチャー タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>REG or COMP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">REG または COMP</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The type of feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機能のタイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>REG</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">REG</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Feature name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィーチャー名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Text</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テキスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>A short feature title that describes what the feature is used for</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機能がどのように使用されているかを説明する短い機能タイトル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Direct sales tax report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">直接売上税レポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>For more information about BPM, see <bpt id="p1">[</bpt>Upload business processes to BPM<ept id="p1">](../lifecycle-services/upload-business-processes-bpm-task-recorder.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BPM の詳細については、<bpt id="p1">[</bpt>BPM に業務プロセスをアップロード<ept id="p1">](../lifecycle-services/upload-business-processes-bpm-task-recorder.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">[</bpt>Localization and regulatory features<ept id="p1">](country-region.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ローカライズと規制の機能<ept id="p1">](country-region.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

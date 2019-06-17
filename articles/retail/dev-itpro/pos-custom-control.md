@@ -1,204 +1,276 @@
----
-title: POS ビューへのカスタム コントロールの追加
-description: このトピックでは、カスタム コントロールを追加することで、Dynamics 365 for Retail の POS ビューに表示される情報を改善する方法について説明します。
-author: mugunthanm
-manager: AnnBe
-ms.date: 09/15/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations, Retail
-ms.custom: 83892
-ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 2017-09-15
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 26e5cdd28091cd25487ac2299cdaa893fdd982b2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537579"
----
-# <a name="add-custom-controls-to-pos-views"></a><span data-ttu-id="6c37e-103">POS ビューへのカスタム コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="6c37e-103">Add custom controls to POS views</span></span>
-
-[!include [banner](../../includes/banner.md)]
-
-<span data-ttu-id="6c37e-104">Microsoft Dynamics 365 for Retail POS のビューに表示される情報を改善するために、カスタム コントロールを追加することができます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-104">To enhance the information that appears in the views in Microsoft Dynamics 365 for Retail POS, you can add custom controls.</span></span> <span data-ttu-id="6c37e-105">カスタム コントロールを使用すると、既存の POS のビューにカスタム情報を追加できます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-105">A custom control lets you add your own custom information to the existing POS views.</span></span> <span data-ttu-id="6c37e-106">カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-106">Custom controls can be implemented by using the POS extension framework.</span></span>
-
-<span data-ttu-id="6c37e-107">カート ビューでは、POS 画面レイアウト デザイナーを使用してカスタム コントロールを追加できます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-107">In Cart view, you can add custom controls by using the POS screen layout designer.</span></span> <span data-ttu-id="6c37e-108">この場合、カスタム コントロールを任意の場所までドラッグして、コントロールの高さと幅を設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-108">In this case, you can drag a custom control to a location of your choice, and you can also set the height and width of the control.</span></span> <span data-ttu-id="6c37e-109">次に、拡張機能プロジェクトに拡張機能ロジックを記述します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-109">You then write the extension logic in the extension project.</span></span>
-
-<span data-ttu-id="6c37e-110">たとえば、次の図では、3 つのカスタム コントロールは画面レイアウト デザイナーを使用して追加されました。</span><span class="sxs-lookup"><span data-stu-id="6c37e-110">For example, in the following illustration, three custom controls were added by using the screen layout designer.</span></span>
-
-![買い物カゴでの POS 画面レイアウト デザイナー](media/pos-custom-control-1.png)
-
-<span data-ttu-id="6c37e-112">現在、カート ビューのみでスクリーン レイアウ トデザイナーを使用してカスタム コントロールを追加できます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-112">Currently, only Cart view lets you use the screen layout designer to add custom controls.</span></span> <span data-ttu-id="6c37e-113">その他のすべての画面については、拡張機能プロジェクトでレイアウトを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c37e-113">For all other screens, you should do the layout in the extension project.</span></span> <span data-ttu-id="6c37e-114">画面レイアウト デザイナーを使用するメリットの 1 つは、画面の任意の場所にカスタム コントロールをドラッグできることです。</span><span class="sxs-lookup"><span data-stu-id="6c37e-114">One advantage of using the screen layout designer is that you can drag the custom control wherever you want on the screen.</span></span> <span data-ttu-id="6c37e-115">他の画面では、位置は固定されていますが、高さと幅を指定することで位置を変更できます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-115">On other screens, the position is fixed, but you can modify the position by specifying the height and width.</span></span>
-
-## <a name="custom-control-matrix"></a><span data-ttu-id="6c37e-116">カスタム コントロール マトリックス</span><span class="sxs-lookup"><span data-stu-id="6c37e-116">Custom control matrix</span></span>
-
-<span data-ttu-id="6c37e-117">次のテーブルは、POS のカスタム コントロールをサポートするビューを示しています。</span><span class="sxs-lookup"><span data-stu-id="6c37e-117">The following table shows the views that support custom controls in POS.</span></span>
-
-| <span data-ttu-id="6c37e-118">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="6c37e-118">POS view</span></span>                   | <span data-ttu-id="6c37e-119">カスタム コントロールのサポート</span><span class="sxs-lookup"><span data-stu-id="6c37e-119">Supports custom controls</span></span> | <span data-ttu-id="6c37e-120">画面レイアウト デザイナーのサポート</span><span class="sxs-lookup"><span data-stu-id="6c37e-120">Supports screen layout designer</span></span> |
-|----------------------------|--------------------------|---------------------------------|
-| <span data-ttu-id="6c37e-121">カート ビュー/トランザクション ページ</span><span class="sxs-lookup"><span data-stu-id="6c37e-121">Cart view/Transaction page</span></span> | <span data-ttu-id="6c37e-122">有</span><span class="sxs-lookup"><span data-stu-id="6c37e-122">Yes</span></span>                      | <span data-ttu-id="6c37e-123">有</span><span class="sxs-lookup"><span data-stu-id="6c37e-123">Yes</span></span>                             |
-| <span data-ttu-id="6c37e-124">顧客の詳細表示</span><span class="sxs-lookup"><span data-stu-id="6c37e-124">Customer details view</span></span>      | <span data-ttu-id="6c37e-125">有</span><span class="sxs-lookup"><span data-stu-id="6c37e-125">Yes</span></span>                      | <span data-ttu-id="6c37e-126">無</span><span class="sxs-lookup"><span data-stu-id="6c37e-126">No</span></span>                              |
-| <span data-ttu-id="6c37e-127">製品詳細表示</span><span class="sxs-lookup"><span data-stu-id="6c37e-127">Product details view</span></span>       | <span data-ttu-id="6c37e-128">有</span><span class="sxs-lookup"><span data-stu-id="6c37e-128">Yes</span></span>                      | <span data-ttu-id="6c37e-129">無</span><span class="sxs-lookup"><span data-stu-id="6c37e-129">No</span></span>                              |
-| <span data-ttu-id="6c37e-130">顧客の追加/編集表示</span><span class="sxs-lookup"><span data-stu-id="6c37e-130">Customer Add/Edit view</span></span>     | <span data-ttu-id="6c37e-131">はい (仕掛品)</span><span class="sxs-lookup"><span data-stu-id="6c37e-131">Yes (work in progress)</span></span>   | <span data-ttu-id="6c37e-132">無</span><span class="sxs-lookup"><span data-stu-id="6c37e-132">No</span></span>                              |
-| <span data-ttu-id="6c37e-133">アドレスの追加/編集表示</span><span class="sxs-lookup"><span data-stu-id="6c37e-133">Address Add/Edit view</span></span>      | <span data-ttu-id="6c37e-134">はい (仕掛品)</span><span class="sxs-lookup"><span data-stu-id="6c37e-134">Yes (work in progress)</span></span>   | <span data-ttu-id="6c37e-135">無</span><span class="sxs-lookup"><span data-stu-id="6c37e-135">No</span></span>                              |
-
-> [!NOTE]
-> <span data-ttu-id="6c37e-136">カスタム コントロールは、次の製品バージョンでのみサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-136">Custom controls are supported only in the following product versions:</span></span>
-> - <span data-ttu-id="6c37e-137">**画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 3</span><span class="sxs-lookup"><span data-stu-id="6c37e-137">**For views that aren't based on the screen layout designer:** Microsoft Dynamics 365 for Finance and Operations App update 3 and Microsoft Dynamics 365 for Retail App update 3</span></span>
-> - <span data-ttu-id="6c37e-138">**画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 4</span><span class="sxs-lookup"><span data-stu-id="6c37e-138">**For views that are based on the screen layout designer:** Microsoft Dynamics 365 for Finance and Operations App update 4 and Microsoft Dynamics 365 for Retail App update 4</span></span>
-
-## <a name="create-a-custom-control"></a><span data-ttu-id="6c37e-139">カスタム コントロールの作成</span><span class="sxs-lookup"><span data-stu-id="6c37e-139">Create a custom control</span></span>
-
-<span data-ttu-id="6c37e-140">次の例は、既存の POS ビューの 1 つにカスタム コントロールを追加するために拡張機能を使用する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6c37e-140">The following example shows how you can use extension to add custom controls to one of the existing POS views.</span></span> <span data-ttu-id="6c37e-141">この例では、製品の詳細ビューで表示される製品使用可能性についての情報が必要です。</span><span class="sxs-lookup"><span data-stu-id="6c37e-141">For this example, we want information about product availability to appear in the product details view.</span></span> <span data-ttu-id="6c37e-142">この情報を表示するために、**場所**、**在庫**、**予約**、**注文**の 4 つの列を持つカスタム データ リストを追加します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-142">To show this information, we will add a custom data list that has four columns: **Location**, **Inventory**, **Reserved**, and **Ordered**.</span></span> <span data-ttu-id="6c37e-143">同じ手順を使用して、POS ビューにその他のカスタム情報を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-143">You can use the same procedure to show other custom information in the POS views.</span></span>
-
-1. <span data-ttu-id="6c37e-144">開発者仮想マシン (VM) で、Microsoft Visual Studio 2015 を起動します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-144">On the developer virtual machine (VM), start Microsoft Visual Studio 2015.</span></span>
-2. <span data-ttu-id="6c37e-145">**ModernPos.sln** ファイルを RetailSDK\\POS から開きます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-145">Open the **ModernPos.sln** file from RetailSDK\\POS.</span></span>
-3. <span data-ttu-id="6c37e-146">**POS.Extensions** プロジェクトに新しいフォルダーを追加し、**SampleExtensions** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-146">In the **POS.Extensions** project, add a new folder, and name it **SampleExtensions**.</span></span>
-4. <span data-ttu-id="6c37e-147">新しい **SampleExtensions** フォルダーで、別のフォルダーを追加して **ViewExtensions** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-147">In the new **SampleExtensions** folder, add another folder, and name it **ViewExtensions**.</span></span>
-5. <span data-ttu-id="6c37e-148">**ViewExtensions** フォルダーで、別のフォルダーを追加して **SimpleProductDetails** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-148">In the **ViewExtensions** folder, add another folder, and name it **SimpleProductDetails**.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="6c37e-149">ビューを拡張する場合は、ナビゲーションとコードのメンテナンスを容易にするために、フォルダーの名前をビューと同じ名前にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c37e-149">If you're extending a view, you should give the folder the same name as the view, to make navigation and code maintenance easier.</span></span>
-
-6. <span data-ttu-id="6c37e-150">**SimpleProductDetails** フォルダーで、新しい .html ファイルを追加し、**ProductAvailabilityPanel.html** と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-150">In the **SimpleProductDetails** folder, add a new .html file, and name it **ProductAvailabilityPanel.html**.</span></span> <span data-ttu-id="6c37e-151">また新しい .ts ファイルを追加し、**ProductAvailabilityPanel.ts** という名前をつけます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-151">Also add a new .ts file, and name it **ProductAvailabilityPanel.ts**.</span></span> <span data-ttu-id="6c37e-152">.html ファイルで、カスタム コントロールに表示したい情報すべてを追加できます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-152">In the .html file, you can add whatever information you want the custom control to show.</span></span> <span data-ttu-id="6c37e-153">.ts ファイルで、対応するロジックを追加します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-153">In the .ts file, you add the corresponding logic.</span></span>
-
-    <span data-ttu-id="6c37e-154">カスタム コントロールは、カスタム情報を含む単純な HTML ページです。</span><span class="sxs-lookup"><span data-stu-id="6c37e-154">A custom control is a simple HTML page that has your custom information.</span></span>
-
-7. <span data-ttu-id="6c37e-155">**ProductAvailabilityPanel.html** ファイルを開いて、次のコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-155">Open the **ProductAvailabilityPanel.html** file, and paste the following code into it.</span></span>
-
-    ```
-    <!DOCTYPE html>
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-            <meta charset="utf-8" />
-            <title></title>
-        </head>
-        <body>
-            <!-- Note: The element ID differs from the ID that is generated by the POS extensibility framework. This 'template' ID isn't used by the POS extensibility framework. -->
-            <script id="Microsot\_Pos\_Extensibility\_Samples\_ProductAvailabilityPanel" type="text/html">
-                <h2 class="marginTop8 marginBottom8" data-bind="text: title"></h2>
-                <div class="width400 grow col">
-                    <div id="Microsot\_Pos\_Extensibility\_Samples\_ProductAvailabilityPanel\_DataList" data-bind="msPosDataList: dataList"></div>
-                </div>
-            </script>
-        </body>
-    </html>
-    ```
-
-    <span data-ttu-id="6c37e-156">ファイルで、POS データ リスト コントロールを追加して製品の可用性情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-156">In the file, you add the POS data list control to show the product availability information.</span></span> <span data-ttu-id="6c37e-157">また、コントロールの幅を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-157">You also specify the width of the control.</span></span>
-
-    <span data-ttu-id="6c37e-158">完全なコードは RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ProductAvailabilityPanel.html からコピーすることができます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-158">You can copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ProductAvailabilityPanel.html.</span></span>
-
-8. <span data-ttu-id="6c37e-159">**ProductAvailabilityPanel.ts** ファイルを開いて、次のコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-159">Open the **ProductAvailabilityPanel.ts** file, and paste the following code into it.</span></span>
-
-    ```
-    /**
-        SAMPLE CODE NOTICE
-        THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-        OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-        THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-        NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-    **/
-
-    import {
-        SimpleProductDetailsCustomControlBase,
-        ISimpleProductDetailsCustomControlState,
-        ISimpleProductDetailsCustomControlContext
-    } from "PosApi/Extend/Views/SimpleProductDetailsView";
-    import { ProxyEntities } from "PosApi/Entities";
-    import { ArrayExtensions } from "PosApi/TypeExtensions";
-    import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
-    ```
-
-    <span data-ttu-id="6c37e-160">カスタム ロジックを書くために、POS のアプリケーション プログラミング インターフェイス (API) からコントロールやその他のデータ オブジェクトのリストをインポートしました。</span><span class="sxs-lookup"><span data-stu-id="6c37e-160">To write our custom logic, we imported the list of controls and other data objects from the POS application programming interface (API).</span></span>
-
-<span data-ttu-id="6c37e-161">次に、コンストラクターを追加して、製品の可用性情報でデータ リストを初期化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c37e-161">Next, you must add the constructor and initialize the data list with the product availability information.</span></span> <span data-ttu-id="6c37e-162">この方法で、ページに移動するときに、製品の可用性情報が読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-162">In this way, when you navigate to the page, the product availability information is loaded.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="6c37e-163">ここではソース コードをコピーしませんでしたが、RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ProductAvailabilityPanel.ts から完全なコードをコピーすることができます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-163">We didn't copy the source code here, but you can copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ProductAvailabilityPanel.ts.</span></span>
-
-1. <span data-ttu-id="6c37e-164">**SampleExtensions** フォルダーで新しい .json ファイルを追加し、**manifest.json** と名前を付け、次のコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-164">In your **SampleExtensions** folder, add a new .json file, name it **manifest.json**, and paste the following code into it.</span></span>
-
-    ```
-    {
-        "$schema": "../manifestSchema.json",
-        "name": "Pos_Extensibility_Samples",
-        "publisher": "Microsoft",
-        "version": "7.2.0",
-        "minimumPosVersion": "7.2.0.0",
-        "components": {
-            "resources": {
-                "supportedUICultures": [ "en-US" ],
-                "fallbackUICulture": "en-US",
-                "culturesDirectoryPath": "Resources/Strings",
-                "stringResourcesFileName": "resources.resjson",
-                "cultureInfoOverridesFilePath": "Resources/cultureInfoOverrides.json"
-            },
-            "extend": {
-                "views": {
-                    "SimpleProductDetailsView": {
-                        "controlsConfig": {
-                            "customControls": [
-                                {
-                                    "controlName": "productAvailabilityPanel",
-                                    "htmlPath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel.html",
-                                    "modulePath": "ViewExtensions/SimpleProductDetails/ProductAvailabilityPanel"
-                                }
-                            ]
-                        }
-                    }
-                }
-            }
-        }
-    }
-    ```
-
-    <span data-ttu-id="6c37e-165">ランタイム中に、マニフェストはカスタム制御が **SimpleProductDetailsView** に追加されたことを POS に通知します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-165">During runtime, the manifest informs the POS that a custom control has been added in **SimpleProductDetailsView**.</span></span> <span data-ttu-id="6c37e-166">前のコード例では、コントロールを読み込むために POS が必要とするすべてのメタデータを含めました。</span><span class="sxs-lookup"><span data-stu-id="6c37e-166">In the preceding code example, we included all the required metadata that the POS requires in order to load the control.</span></span>
-
-    - <span data-ttu-id="6c37e-167">**拡張** - 既存の POS 機能の拡張機能があることを POS に通知します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-167">**Extend** – Inform the POS that there is an extension for an existing POS feature.</span></span>
-    - <span data-ttu-id="6c37e-168">**ビュー** – 拡張された既存の POS ビューを指定します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-168">**Views** – Specify that an existing POS view is being extended.</span></span>
-    - <span data-ttu-id="6c37e-169">**名前を表示** – 拡張されているビューを指定します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-169">**View Name** – Specify the view that is being extended.</span></span>
-    - <span data-ttu-id="6c37e-170">**コンフィギュレーションのコントロール** - 追加するコントロールを指定します (例: **カスタム コントロール**)。</span><span class="sxs-lookup"><span data-stu-id="6c37e-170">**Controls config** – Specify the control that you are adding, such as **Custom control**.</span></span>
-    - <span data-ttu-id="6c37e-171">**コントロール メタデータ** - 名前、.html ファイル パスのパス、および typescript モジュールのパス (つまり、.ts ファイル) を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-171">**Control metadata** – Specify the name, the path of the .html file path, and the path of the typescript module (that is, the .ts file).</span></span>
-
-3. <span data-ttu-id="6c37e-172">**extensions.json** ファイルを開いて、次のコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-172">Open the **extensions.json** file, and paste the following code into it.</span></span>
-
-    ```
-    {
-        "extensionPackages": [
-            {
-                "baseUrl": "SampleExtensions"
-            }
-        ]
-    }
-    ```
-
-    <span data-ttu-id="6c37e-173">extensions.json ファイルで、手持ちのさまざまな拡張機能を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-173">In the extensions.json file, you specify the various extensions that you have.</span></span> <span data-ttu-id="6c37e-174">この場合、新しい拡張フォルダーを追加しました。</span><span class="sxs-lookup"><span data-stu-id="6c37e-174">In this case, we added a new extension folder.</span></span> <span data-ttu-id="6c37e-175">したがって、そのフォルダーを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c37e-175">Therefore, we must specify that folder.</span></span>
-    
-    > [!NOTE]
-    > <span data-ttu-id="6c37e-176">各拡張子フォルダーまたは指定したパッケージには、マニュフェストが必要です。</span><span class="sxs-lookup"><span data-stu-id="6c37e-176">Each extension folder or package that you specify here should have a manifest.</span></span>
-
-4. <span data-ttu-id="6c37e-177">**tsconfig.json** ファイルを開いて、拡張子を含めます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-177">Open the **tsconfig.json** file, and include your extension.</span></span> <span data-ttu-id="6c37e-178">次のコードをファイルに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-178">Paste the following code into the file.</span></span>
-
-    ```
-    "extends": "../tsconfigs/tsmodulesconfig",
-    "exclude": [
-        // "SampleExtensions"
-    ],
-    ```
-
-## <a name="test-the-extension"></a><span data-ttu-id="6c37e-179">拡張のテスト</span><span class="sxs-lookup"><span data-stu-id="6c37e-179">Test the extension</span></span>
-
-1. <span data-ttu-id="6c37e-180">F5 キーを押し、POS を展開してカスタマイズをテストします。</span><span class="sxs-lookup"><span data-stu-id="6c37e-180">Press F5, and deploy the POS to test your customization.</span></span>
-2. <span data-ttu-id="6c37e-181">POS が開始された後にサインインします。</span><span class="sxs-lookup"><span data-stu-id="6c37e-181">After the POS is started, sign in.</span></span> <span data-ttu-id="6c37e-182">次に、任意の製品を検索し、製品詳細ビューを開きます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-182">Then search for any product, and open to product details view.</span></span> <span data-ttu-id="6c37e-183">追加したカスタム コントロールが表示されました。</span><span class="sxs-lookup"><span data-stu-id="6c37e-183">You should now see the custom control that you added.</span></span> <span data-ttu-id="6c37e-184">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="6c37e-184">Here is an example.</span></span>
-
-    ![製品の詳細ビューに表示された製品の可用性情報](media/pos-custom-control-2.png)
-
-<span data-ttu-id="6c37e-186">このサンプルの完全なコードは RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails からコピーすることができます。</span><span class="sxs-lookup"><span data-stu-id="6c37e-186">You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="pos-custom-control.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>pos-custom-control.671b2c.1b92379157d9d72ac9f5cb162c640e8b5c2adbb1.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>1b92379157d9d72ac9f5cb162c640e8b5c2adbb1</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\pos-custom-control.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Add custom controls to POS views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビューへのカスタム コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how you can enhance the information that appears in the Dynamics 365 for Retail POS views by adding custom controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、カスタム コントロールを追加することで、Dynamics 365 for Retail の POS ビューに表示される情報を改善する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Add custom controls to POS views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビューへのカスタム コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>To enhance the information that appears in the views in Microsoft Dynamics 365 for Retail POS, you can add custom controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Retail POS のビューに表示される情報を改善するために、カスタム コントロールを追加することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>A custom control lets you add your own custom information to the existing POS views.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールを使用すると、既存の POS のビューにカスタム情報を追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Custom controls can be implemented by using the POS extension framework.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>In Cart view, you can add custom controls by using the POS screen layout designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カート ビューでは、POS 画面レイアウト デザイナーを使用してカスタム コントロールを追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>In this case, you can drag a custom control to a location of your choice, and you can also set the height and width of the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、カスタム コントロールを任意の場所までドラッグして、コントロールの高さと幅を設定することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>You then write the extension logic in the extension project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、拡張機能プロジェクトに拡張機能ロジックを記述します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>For example, in the following illustration, three custom controls were added by using the screen layout designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次の図では、3 つのカスタム コントロールは画面レイアウト デザイナーを使用して追加されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>POS screen layout designer in Cart view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">買い物カゴでの POS 画面レイアウト デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Currently, only Cart view lets you use the screen layout designer to add custom controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在、カート ビューのみでスクリーン レイアウ トデザイナーを使用してカスタム コントロールを追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>For all other screens, you should do the layout in the extension project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のすべての画面については、拡張機能プロジェクトでレイアウトを行う必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>One advantage of using the screen layout designer is that you can drag the custom control wherever you want on the screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト デザイナーを使用するメリットの 1 つは、画面の任意の場所にカスタム コントロールをドラッグできることです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>On other screens, the position is fixed, but you can modify the position by specifying the height and width.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他の画面では、位置は固定されていますが、高さと幅を指定することで位置を変更できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Custom control matrix</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロール マトリックス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>The following table shows the views that support custom controls in POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、POS のカスタム コントロールをサポートするビューを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>POS view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Supports custom controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールのサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Supports screen layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト デザイナーのサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Cart view/Transaction page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カート ビュー/トランザクション ページ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Customer details view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の詳細表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Product details view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品詳細表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Customer Add/Edit view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の追加/編集表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Yes (work in progress)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">はい (仕掛品)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Address Add/Edit view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレスの追加/編集表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Yes (work in progress)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">はい (仕掛品)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">無</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Custom controls are supported only in the following product versions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールは、次の製品バージョンでのみサポートされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">**</bpt>For views that aren't based on the screen layout designer:<ept id="p1">**</ept> Microsoft Dynamics 365 for Finance and Operations App update 3 and Microsoft Dynamics 365 for Retail App update 3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>画面レイアウト デザイナーに基づかないビュー:<ept id="p1">**</ept> Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">**</bpt>For views that are based on the screen layout designer:<ept id="p1">**</ept> Microsoft Dynamics 365 for Finance and Operations App update 4 and Microsoft Dynamics 365 for Retail App update 4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>画面レイアウト デザイナーに基づくビュー:<ept id="p1">**</ept> Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Create a custom control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The following example shows how you can use extension to add custom controls to one of the existing POS views.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、既存の POS ビューの 1 つにカスタム コントロールを追加するために拡張機能を使用する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>For this example, we want information about product availability to appear in the product details view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、製品の詳細ビューで表示される製品使用可能性についての情報が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>To show this information, we will add a custom data list that has four columns: <bpt id="p1">**</bpt>Location<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Inventory<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Reserved<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Ordered<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この情報を表示するために、<bpt id="p1">**</bpt>場所<ept id="p1">**</ept>、<bpt id="p2">**</bpt>在庫<ept id="p2">**</ept>、<bpt id="p3">**</bpt>予約<ept id="p3">**</ept>、<bpt id="p4">**</bpt>注文<ept id="p4">**</ept>の 4 つの列を持つカスタム データ リストを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>You can use the same procedure to show other custom information in the POS views.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同じ手順を使用して、POS ビューにその他のカスタム情報を表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>On the developer virtual machine (VM), start Microsoft Visual Studio 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者仮想マシン (VM) で、Microsoft Visual Studio 2015 を起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Open the <bpt id="p1">**</bpt>ModernPos.sln<ept id="p1">**</ept> file from RetailSDK<ph id="ph1">\\</ph>POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ModernPos.sln<ept id="p1">**</ept> ファイルを RetailSDK<ph id="ph1">\\</ph>POS から開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>In the <bpt id="p1">**</bpt>POS.Extensions<ept id="p1">**</ept> project, add a new folder, and name it <bpt id="p2">**</bpt>SampleExtensions<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>POS.Extensions<ept id="p1">**</ept> プロジェクトに新しいフォルダーを追加し、<bpt id="p2">**</bpt>SampleExtensions<ept id="p2">**</ept> と名前を付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>In the new <bpt id="p1">**</bpt>SampleExtensions<ept id="p1">**</ept> folder, add another folder, and name it <bpt id="p2">**</bpt>ViewExtensions<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい <bpt id="p1">**</bpt>SampleExtensions<ept id="p1">**</ept> フォルダーで、別のフォルダーを追加して <bpt id="p2">**</bpt>ViewExtensions<ept id="p2">**</ept> と名前を付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>In the <bpt id="p1">**</bpt>ViewExtensions<ept id="p1">**</ept> folder, add another folder, and name it <bpt id="p2">**</bpt>SimpleProductDetails<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ViewExtensions<ept id="p1">**</ept> フォルダーで、別のフォルダーを追加して <bpt id="p2">**</bpt>SimpleProductDetails<ept id="p2">**</ept> と名前を付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>If you're extending a view, you should give the folder the same name as the view, to make navigation and code maintenance easier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビューを拡張する場合は、ナビゲーションとコードのメンテナンスを容易にするために、フォルダーの名前をビューと同じ名前にする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the <bpt id="p1">**</bpt>SimpleProductDetails<ept id="p1">**</ept> folder, add a new .html file, and name it <bpt id="p2">**</bpt>ProductAvailabilityPanel.html<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SimpleProductDetails<ept id="p1">**</ept> フォルダーで、新しい .html ファイルを追加し、<bpt id="p2">**</bpt>ProductAvailabilityPanel.html<ept id="p2">**</ept> と名前を付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Also add a new .ts file, and name it <bpt id="p1">**</bpt>ProductAvailabilityPanel.ts<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また新しい .ts ファイルを追加し、<bpt id="p1">**</bpt>ProductAvailabilityPanel.ts<ept id="p1">**</ept> という名前をつけます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In the .html file, you can add whatever information you want the custom control to show.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.html ファイルで、カスタム コントロールに表示したい情報すべてを追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>In the .ts file, you add the corresponding logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.ts ファイルで、対応するロジックを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>A custom control is a simple HTML page that has your custom information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールは、カスタム情報を含む単純な HTML ページです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Open the <bpt id="p1">**</bpt>ProductAvailabilityPanel.html<ept id="p1">**</ept> file, and paste the following code into it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ProductAvailabilityPanel.html<ept id="p1">**</ept> ファイルを開いて、次のコードを貼り付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>In the file, you add the POS data list control to show the product availability information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルで、POS データ リスト コントロールを追加して製品の可用性情報を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>You also specify the width of the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、コントロールの幅を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>You can copy the full code from RetailSDK<ph id="ph1">\\</ph>Code<ph id="ph2">\\</ph>POS<ph id="ph3">\\</ph>Extensions<ph id="ph4">\\</ph>SampleExtensions<ph id="ph5">\\</ph>ViewExtensions<ph id="ph6">\\</ph>SimpleProductDetails<ph id="ph7">\\</ph>ProductAvailabilityPanel.html.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なコードは RetailSDK<ph id="ph1">\\</ph>Code<ph id="ph2">\\</ph>POS<ph id="ph3">\\</ph>Extensions<ph id="ph4">\\</ph>SampleExtensions<ph id="ph5">\\</ph>ViewExtensions<ph id="ph6">\\</ph>SimpleProductDetails<ph id="ph7">\\</ph>ProductAvailabilityPanel.html からコピーすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Open the <bpt id="p1">**</bpt>ProductAvailabilityPanel.ts<ept id="p1">**</ept> file, and paste the following code into it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ProductAvailabilityPanel.ts<ept id="p1">**</ept> ファイルを開いて、次のコードを貼り付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>To write our custom logic, we imported the list of controls and other data objects from the POS application programming interface (API).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム ロジックを書くために、POS のアプリケーション プログラミング インターフェイス (API) からコントロールやその他のデータ オブジェクトのリストをインポートしました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Next, you must add the constructor and initialize the data list with the product availability information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、コンストラクターを追加して、製品の可用性情報でデータ リストを初期化する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>In this way, when you navigate to the page, the product availability information is loaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法で、ページに移動するときに、製品の可用性情報が読み込まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>We didn't copy the source code here, but you can copy the full code from RetailSDK<ph id="ph1">\\</ph>Code<ph id="ph2">\\</ph>POS<ph id="ph3">\\</ph>Extensions<ph id="ph4">\\</ph>SampleExtensions<ph id="ph5">\\</ph>ViewExtensions<ph id="ph6">\\</ph>SimpleProductDetails<ph id="ph7">\\</ph>ProductAvailabilityPanel.ts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここではソース コードをコピーしませんでしたが、RetailSDK<ph id="ph1">\\</ph>Code<ph id="ph2">\\</ph>POS<ph id="ph3">\\</ph>Extensions<ph id="ph4">\\</ph>SampleExtensions<ph id="ph5">\\</ph>ViewExtensions<ph id="ph6">\\</ph>SimpleProductDetails<ph id="ph7">\\</ph>ProductAvailabilityPanel.ts から完全なコードをコピーすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>In your <bpt id="p1">**</bpt>SampleExtensions<ept id="p1">**</ept> folder, add a new .json file, name it <bpt id="p2">**</bpt>manifest.json<ept id="p2">**</ept>, and paste the following code into it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SampleExtensions<ept id="p1">**</ept> フォルダーで新しい .json ファイルを追加し、<bpt id="p2">**</bpt>manifest.json<ept id="p2">**</ept> と名前を付け、次のコードを貼り付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>During runtime, the manifest informs the POS that a custom control has been added in <bpt id="p1">**</bpt>SimpleProductDetailsView<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム中に、マニフェストはカスタム制御が <bpt id="p1">**</bpt>SimpleProductDetailsView<ept id="p1">**</ept> に追加されたことを POS に通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>In the preceding code example, we included all the required metadata that the POS requires in order to load the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前のコード例では、コントロールを読み込むために POS が必要とするすべてのメタデータを含めました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source><bpt id="p1">**</bpt>Extend<ept id="p1">**</ept> – Inform the POS that there is an extension for an existing POS feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>拡張<ept id="p1">**</ept> - 既存の POS 機能の拡張機能があることを POS に通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source><bpt id="p1">**</bpt>Views<ept id="p1">**</ept> – Specify that an existing POS view is being extended.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ビュー<ept id="p1">**</ept> – 拡張された既存の POS ビューを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source><bpt id="p1">**</bpt>View Name<ept id="p1">**</ept> – Specify the view that is being extended.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前を表示<ept id="p1">**</ept> – 拡張されているビューを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">**</bpt>Controls config<ept id="p1">**</ept> – Specify the control that you are adding, such as <bpt id="p2">**</bpt>Custom control<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コンフィギュレーションのコントロール<ept id="p1">**</ept> - 追加するコントロールを指定します (例: <bpt id="p2">**</bpt>カスタム コントロール<ept id="p2">**</ept>)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source><bpt id="p1">**</bpt>Control metadata<ept id="p1">**</ept> – Specify the name, the path of the .html file path, and the path of the typescript module (that is, the .ts file).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コントロール メタデータ<ept id="p1">**</ept> - 名前、.html ファイル パスのパス、および typescript モジュールのパス (つまり、.ts ファイル) を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Open the <bpt id="p1">**</bpt>extensions.json<ept id="p1">**</ept> file, and paste the following code into it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>extensions.json<ept id="p1">**</ept> ファイルを開いて、次のコードを貼り付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>In the extensions.json file, you specify the various extensions that you have.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">extensions.json ファイルで、手持ちのさまざまな拡張機能を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>In this case, we added a new extension folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、新しい拡張フォルダーを追加しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Therefore, we must specify that folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、そのフォルダーを指定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Each extension folder or package that you specify here should have a manifest.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各拡張子フォルダーまたは指定したパッケージには、マニュフェストが必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Open the <bpt id="p1">**</bpt>tsconfig.json<ept id="p1">**</ept> file, and include your extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>tsconfig.json<ept id="p1">**</ept> ファイルを開いて、拡張子を含めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Paste the following code into the file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコードをファイルに貼り付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Test the extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張のテスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Press F5, and deploy the POS to test your customization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">F5 キーを押し、POS を展開してカスタマイズをテストします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>After the POS is started, sign in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS が開始された後にサインインします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Then search for any product, and open to product details view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、任意の製品を検索し、製品詳細ビューを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>You should now see the custom control that you added.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加したカスタム コントロールが表示されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Here is an example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に例を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Product availability information in the product details view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品の詳細ビューに表示された製品の可用性情報</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>You can copy the full code for this sample from RetailSDK<ph id="ph1">\\</ph>Code<ph id="ph2">\\</ph>POS<ph id="ph3">\\</ph>Extensions<ph id="ph4">\\</ph>SampleExtensions<ph id="ph5">\\</ph>ViewExtensions<ph id="ph6">\\</ph>SimpleProductDetails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このサンプルの完全なコードは RetailSDK<ph id="ph1">\\</ph>Code<ph id="ph2">\\</ph>POS<ph id="ph3">\\</ph>Extensions<ph id="ph4">\\</ph>SampleExtensions<ph id="ph5">\\</ph>ViewExtensions<ph id="ph6">\\</ph>SimpleProductDetails からコピーすることができます。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

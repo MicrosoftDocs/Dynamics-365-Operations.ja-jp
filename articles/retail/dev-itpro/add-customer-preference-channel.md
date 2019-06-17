@@ -1,101 +1,186 @@
----
-title: 顧客の基本設定データをチャネル データベースに追加
-description: このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。
-author: kfend
-manager: AnnBe
-ms.date: 07/16/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations, Retail
-ms.custom: 18081
-ms.assetid: 3c13fe1d-2078-4539-b865-e266b6f56e60
-ms.search.region: Global
-ms.search.industry: Retail
-ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bdd366b49edfa5dfcc26b921f059b63785b11418
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537554"
----
-# <a name="add-customer-preference-data-to-channel-databases"></a><span data-ttu-id="e969a-103">顧客の基本設定データをチャネル データベースに追加</span><span class="sxs-lookup"><span data-stu-id="e969a-103">Add customer preference data to channel databases</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> <span data-ttu-id="e969a-104">このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。</span><span class="sxs-lookup"><span data-stu-id="e969a-104">This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier.</span></span> <span data-ttu-id="e969a-105">バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e969a-105">This implementation is not supported for versions 7.2 and higher.</span></span> <span data-ttu-id="e969a-106">これらのバージョンでは、オーバーレイせずに拡張モデルに従います。</span><span class="sxs-lookup"><span data-stu-id="e969a-106">For those versions, follow the extension model without overlayering.</span></span>
-
-<span data-ttu-id="e969a-107">このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e969a-107">This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.</span></span>
-
-<a name="add-the-retailcustpreferences-table-in-the-data-distribution-to-the-crt-for-the-retail-channel"></a><span data-ttu-id="e969a-108">小売チャネルの CRT へのデータ配布での RetailCustPreferences テーブルの追加</span><span class="sxs-lookup"><span data-stu-id="e969a-108">Add the RetailCustPreferences table in the data distribution to the CRT for the retail channel</span></span>
-----------------------------------------------------------------------------------------------
-
-<span data-ttu-id="e969a-109">チャネル スキーマは、チャネル データベースに送信されるデータの XML 記述です。</span><span class="sxs-lookup"><span data-stu-id="e969a-109">The channel schema is the XML description of the data that is sent to the channel database.</span></span>
-
-1.  <span data-ttu-id="e969a-110">**小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **小売チャネル スキーマ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-110">Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.</span></span>
-2.  <span data-ttu-id="e969a-111">チャネルに対応するスキーマ名を選択します。</span><span class="sxs-lookup"><span data-stu-id="e969a-111">Select the schema name that corresponds to the channel.</span></span> <span data-ttu-id="e969a-112">その後、**チャネル テーブル** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-112">Then click **Channel tables**.</span></span>
-3.  <span data-ttu-id="e969a-113">**新規**をクリックし、**テーブル名**フィールドに、新しいテーブルの名前として **ax.RetailCustPreference** を入力します。</span><span class="sxs-lookup"><span data-stu-id="e969a-113">Click **New**, and then, in the **Table name** field, enter **ax.RetailCustPreference** as the name of the new table.</span></span>
-4.  <span data-ttu-id="e969a-114">**チャネル テーブル フィールド**タブで、**新規**をクリックし、フィールド名 **ACCOUNTNUM**、**EMAILOPTIN**、および **RECID** を入力します。</span><span class="sxs-lookup"><span data-stu-id="e969a-114">On the **Channel table fields** tab, click **New**, and then enter the field names **ACCOUNTNUM**, **EMAILOPTIN**, and **RECID**.</span></span>
-5.  <span data-ttu-id="e969a-115">**チャネル テーブル** ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e969a-115">Close the **Channel tables** page.</span></span>
-
-## <a name="create-a-subjob"></a><span data-ttu-id="e969a-116">サブジョブの作成</span><span class="sxs-lookup"><span data-stu-id="e969a-116">Create a subjob</span></span>
-<span data-ttu-id="e969a-117">次に、チャネル データベースに新しいテーブルのデータを移動するために、CustTable ジョブのサブジョブを作成します。</span><span class="sxs-lookup"><span data-stu-id="e969a-117">Next, you create a subjob of the CustTable job to move data in the new table to the channel database.</span></span>
-
-1. <span data-ttu-id="e969a-118">Retail Headquarters で **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **スケジューラ サブジョブ** とクリックして、そして **新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-118">In Retail Headquarters, click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler subjobs**, and then click **New**.</span></span>
-2. <span data-ttu-id="e969a-119">**サブジョブ番号**および**説明**フィールドに **RetailCustPreference** を入力します。</span><span class="sxs-lookup"><span data-stu-id="e969a-119">In the **Subjob number** and **Description** fields, enter **RetailCustPreference**.</span></span>
-3. <span data-ttu-id="e969a-120">**小売チャネル スキーマ** フィールドで、**Dynamics 365 for Retail** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e969a-120">In the **Retail channel schema** field, select **Dynamics 365 for Retail.**</span></span>
-4. <span data-ttu-id="e969a-121">**チャネル テーブル名**フィールドで、**ax.RetailCustPreference** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e969a-121">In the **Channel table name** field, select **ax.RetailCustPreference**.</span></span>
-5. <span data-ttu-id="e969a-122">**テーブル名**フィールドで、**RetailCustPreference** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e969a-122">In the **table name** field, select **RetailCustPreference**.</span></span>
-6. <span data-ttu-id="e969a-123">**チャネル フィールド マッピング**タブで、**フィールドの照合**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-123">On the **Channel field mapping** tab, click **Match fields**.</span></span> <span data-ttu-id="e969a-124">**開始** フィールドと **終了** フィールドの列に入力されます。</span><span class="sxs-lookup"><span data-stu-id="e969a-124">The **From** field and **To** field columns are filled in.</span></span> <span data-ttu-id="e969a-125">**上記の手順で UI を使用する代わりに、代替方法として、コードで実行することもできます。**</span><span class="sxs-lookup"><span data-stu-id="e969a-125">**Alternative approach, instead of using the UI in the steps above this can also accomplished in code:**</span></span>
-   1.  <span data-ttu-id="e969a-126">Microsoft Visual Studio を起動してから、アプリケーション オブジェクト ツリー (AOT) で **RetailCDXSeedData\_AX7** クラスを見つけます。</span><span class="sxs-lookup"><span data-stu-id="e969a-126">Start Microsoft Visual Studio, and then, in the Application Object Tree (AOT) find the **RetailCDXSeedData\_AX7** class.</span></span>
-   2.  <span data-ttu-id="e969a-127">次のメソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="e969a-127">Add the following method.</span></span>
-
-           private void C_RetailCustPreference()
-           {
-               jobIDContainer = ['1010'];
-               subjobID = 'RetailCustPreference';
-               axTableName = tableStr(RetailCustPreference);
-               axFieldNames = [
-               fieldStr(RetailCustPreference, AccountNum),
-               fieldStr(RetailCustPreference, EmailOptIn),
-               fieldStr(RetailCustPreference, RecId)
-               ];
-           }
-
-   3.  <span data-ttu-id="e969a-128">クラスをコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="e969a-128">Compile the class.</span></span>
-   4.  <span data-ttu-id="e969a-129">インターネット インフォメーション サービス (IIS) をリセットします。</span><span class="sxs-lookup"><span data-stu-id="e969a-129">Reset Internet Information Services (IIS).</span></span>
-   5.  <span data-ttu-id="e969a-130">クライアントに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="e969a-130">Switch to the client.</span></span>
-   6.  <span data-ttu-id="e969a-131">**小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **小売用スケジューラの初期化**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-131">Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**.</span></span> <span data-ttu-id="e969a-132">必要なスケジューラ サブジョブ定義が生成され、サブジョブがスケジューラ ジョブに追加されます。</span><span class="sxs-lookup"><span data-stu-id="e969a-132">The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.</span></span>
-
-7. <span data-ttu-id="e969a-133">**小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **小売チャネル スキーマ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-133">Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.</span></span>
-8. <span data-ttu-id="e969a-134">**小売チャンネル スキーマ** ページの、左側のナビゲーション ウィンドウで、**Dynamics 365 for Retail** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-134">On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Retail.**</span></span>
-9. <span data-ttu-id="e969a-135">**小売データの配布**タブで、**エクスポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-135">On the **Retail data distribution** tab, click **Export**.</span></span>
-10. <span data-ttu-id="e969a-136">使用しているブラウザーに応じて、次のいずれかのステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="e969a-136">Follow one of these steps, depending on the browser that you're using:</span></span>
-    -   <span data-ttu-id="e969a-137">Google Chrome を使用している場合は、XML ファイルをダウンロードするように求められる必要があります。</span><span class="sxs-lookup"><span data-stu-id="e969a-137">If you're using Google Chrome, you should be prompted to download an XML file.</span></span> <span data-ttu-id="e969a-138">ファイルをパスに保存します。</span><span class="sxs-lookup"><span data-stu-id="e969a-138">Save the file to a path.</span></span>
-    -   <span data-ttu-id="e969a-139">Internet Explorer を使用している場合は、web ページが開きます。</span><span class="sxs-lookup"><span data-stu-id="e969a-139">If you're using Internet Explorer, a webpage will open.</span></span> <span data-ttu-id="e969a-140">ページ内を右クリックし、**ソースの表示** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-140">Right-click in the page, and then click **View source**.</span></span> <span data-ttu-id="e969a-141">次に、ページ ソースのコンテンツをファイル パスに保存します。</span><span class="sxs-lookup"><span data-stu-id="e969a-141">Then save the contents of the page source to a file path.</span></span>
-
-11. <span data-ttu-id="e969a-142">Notepad++ などテキスト エディターで、保存した XML ファイルを開き、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e969a-142">In a text editor such as Notepad++, open the XML file that you just saved, and follow these steps.</span></span>
-    1.  <span data-ttu-id="e969a-143">次の行を検索します: **&lt;Table name=“RetailCustTable”&gt;**。</span><span class="sxs-lookup"><span data-stu-id="e969a-143">Search for the following line: **&lt;Table name=“RetailCustTable”&gt;**.</span></span> <span data-ttu-id="e969a-144">29 行目前後と 744 行目前後に 2 つのインスタンスがあります。</span><span class="sxs-lookup"><span data-stu-id="e969a-144">There are two instances, at approximately line 29 and line 744.</span></span>
-    2.  <span data-ttu-id="e969a-145">両方の **&lt;Table name=“RetailCustTable”&gt;** コード ブロックの最後の行の後に次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="e969a-145">Add the following code after the last line in both **&lt;Table name=“RetailCustTable”&gt;** code blocks.</span></span> <span data-ttu-id="e969a-146">コードを **&lt;/Table&gt;** タグの後に追加します。</span><span class="sxs-lookup"><span data-stu-id="e969a-146">You add the code after the **&lt;/Table&gt;** tag.</span></span>
-
-            <Table name="RetailCustPreference">
-                <LinkGroup>
-                    <Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
-                </LinkGroup>
-            </Table>
-
-12. <span data-ttu-id="e969a-147">ファイルの編集が終了した後、クライアントおよび **Retail チャンネル スキーマ** ページ‎に戻ります。</span><span class="sxs-lookup"><span data-stu-id="e969a-147">After you've finished editing the file, go back to client and the **Retail channel schema** page.</span></span> <span data-ttu-id="e969a-148">左のナビゲーション ウィンドウで、**Dynamics 365 for Retail** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-148">In the left navigation pane, click **Dynamics 365 for Retail.**</span></span>
-13. <span data-ttu-id="e969a-149">**小売データの配布**タブで、**インポート**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-149">On the **Retail data distribution** tab, click **Import**.</span></span>
-14. <span data-ttu-id="e969a-150">表示されるダイアログ ボックスで、**参照**をクリックし、編集した XML ファイルを選択してから、**OK** をクリックしてファイルをインポートします。</span><span class="sxs-lookup"><span data-stu-id="e969a-150">In the dialog box that opens, click **Browse**, select the XML file that you just edited, and then click **OK** to import the file.</span></span>
-15. <span data-ttu-id="e969a-151">**小売チャネル スキーマ** ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e969a-151">Close the **Retail channel schema** page.</span></span>
-16. <span data-ttu-id="e969a-152">**小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **スケジューラ ジョブ**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-152">Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler job**.</span></span>
-17. <span data-ttu-id="e969a-153">**スケジューラ ジョブ**ページで、**1010** をクリックし、「顧客」ジョブを選択します。</span><span class="sxs-lookup"><span data-stu-id="e969a-153">On the **Scheduler job** page, click **1010** to select the “Customers” job.</span></span>
-18. <span data-ttu-id="e969a-154">**サブジョブ**タブで、**新規**をクリックし、**RetailCustPreference** をサブジョブ番号として入力します。</span><span class="sxs-lookup"><span data-stu-id="e969a-154">On the **Subjobs** tab, click **New**, and then enter **RetailCustPreference** as the subjob number.</span></span> <span data-ttu-id="e969a-155">**保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-155">Click **Save**.</span></span>
-19. <span data-ttu-id="e969a-156"><strong>小売チャネル スキーマ</strong> ページで、スキーマ名として **Dynamics 365 for Retail** を選択してから、**クエリの生成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e969a-156">On the <strong>Retail channel schema</strong> page, select **Dynamics 365 for Retail** as the schema name, and then click **Generate queries**.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="add-customer-preference-channel.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>add-customer-preference-channel.a84ae2.3828997488c7e9f770dd8da6e8b906ea58600b51.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>3828997488c7e9f770dd8da6e8b906ea58600b51</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\add-customer-preference-channel.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Add customer preference data to channel databases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の基本設定データをチャネル データベースに追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Add customer preference data to channel databases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客の基本設定データをチャネル データベースに追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This implementation is not supported for versions 7.2 and higher.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>For those versions, follow the extension model without overlayering.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのバージョンでは、オーバーレイせずに拡張モデルに従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Add the RetailCustPreferences table in the data distribution to the CRT for the retail channel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネルの CRT へのデータ配布での RetailCustPreferences テーブルの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The channel schema is the XML description of the data that is sent to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル スキーマは、チャネル データベースに送信されるデータの XML 記述です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail channel schema<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>本社の設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>小売用スケジューラ<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>小売チャネル スキーマ<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Select the schema name that corresponds to the channel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネルに対応するスキーマ名を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Then click <bpt id="p1">**</bpt>Channel tables<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、<bpt id="p1">**</bpt>チャネル テーブル<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Click <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and then, in the <bpt id="p2">**</bpt>Table name<ept id="p2">**</ept> field, enter <bpt id="p3">**</bpt>ax.RetailCustPreference<ept id="p3">**</ept> as the name of the new table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新規<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>テーブル名<ept id="p2">**</ept>フィールドに、新しいテーブルの名前として <bpt id="p3">**</bpt>ax.RetailCustPreference<ept id="p3">**</ept> を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>On the <bpt id="p1">**</bpt>Channel table fields<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then enter the field names <bpt id="p3">**</bpt>ACCOUNTNUM<ept id="p3">**</ept>, <bpt id="p4">**</bpt>EMAILOPTIN<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>RECID<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>チャネル テーブル フィールド<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>新規<ept id="p2">**</ept>をクリックし、フィールド名 <bpt id="p3">**</bpt>ACCOUNTNUM<ept id="p3">**</ept>、<bpt id="p4">**</bpt>EMAILOPTIN<ept id="p4">**</ept>、および <bpt id="p5">**</bpt>RECID<ept id="p5">**</ept> を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Close the <bpt id="p1">**</bpt>Channel tables<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>チャネル テーブル<ept id="p1">**</ept> ページを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Create a subjob</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブジョブの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Next, you create a subjob of the CustTable job to move data in the new table to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、チャネル データベースに新しいテーブルのデータを移動するために、CustTable ジョブのサブジョブを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>In Retail Headquarters, click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Scheduler subjobs<ept id="p4">**</ept>, and then click <bpt id="p5">**</bpt>New<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Headquarters で <bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>本社の設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>小売用スケジューラ<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>スケジューラ サブジョブ<ept id="p4">**</ept> とクリックして、そして <bpt id="p5">**</bpt>新規<ept id="p5">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In the <bpt id="p1">**</bpt>Subjob number<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Description<ept id="p2">**</ept> fields, enter <bpt id="p3">**</bpt>RetailCustPreference<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブジョブ番号<ept id="p1">**</ept>および<bpt id="p2">**</bpt>説明<ept id="p2">**</ept>フィールドに <bpt id="p3">**</bpt>RetailCustPreference<ept id="p3">**</ept> を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>In the <bpt id="p1">**</bpt>Retail channel schema<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Dynamics 365 for Retail.<ept id="p2">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売チャネル スキーマ<ept id="p1">**</ept> フィールドで、<bpt id="p2">**</bpt>Dynamics 365 for Retail<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In the <bpt id="p1">**</bpt>Channel table name<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>ax.RetailCustPreference<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>チャネル テーブル名<ept id="p1">**</ept>フィールドで、<bpt id="p2">**</bpt>ax.RetailCustPreference<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>In the <bpt id="p1">**</bpt>table name<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>RetailCustPreference<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーブル名<ept id="p1">**</ept>フィールドで、<bpt id="p2">**</bpt>RetailCustPreference<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>On the <bpt id="p1">**</bpt>Channel field mapping<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Match fields<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>チャネル フィールド マッピング<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>フィールドの照合<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The <bpt id="p1">**</bpt>From<ept id="p1">**</ept> field and <bpt id="p2">**</bpt>To<ept id="p2">**</ept> field columns are filled in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>開始<ept id="p1">**</ept> フィールドと <bpt id="p2">**</bpt>終了<ept id="p2">**</ept> フィールドの列に入力されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">**</bpt>Alternative approach, instead of using the UI in the steps above this can also accomplished in code:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>上記の手順で UI を使用する代わりに、代替方法として、コードで実行することもできます。<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Start Microsoft Visual Studio, and then, in the Application Object Tree (AOT) find the <bpt id="p1">**</bpt>RetailCDXSeedData<ph id="ph1">\_</ph>AX7<ept id="p1">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Visual Studio を起動してから、アプリケーション オブジェクト ツリー (AOT) で <bpt id="p1">**</bpt>RetailCDXSeedData<ph id="ph1">\_</ph>AX7<ept id="p1">**</ept> クラスを見つけます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Add the following method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のメソッドを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Compile the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスをコンパイルします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Reset Internet Information Services (IIS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターネット インフォメーション サービス (IIS) をリセットします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Switch to the client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントに切り替えます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Initialize retail scheduler<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>本社の設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>小売用スケジューラ<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>小売用スケジューラの初期化<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要なスケジューラ サブジョブ定義が生成され、サブジョブがスケジューラ ジョブに追加されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Retail channel schema<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>本社の設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>小売用スケジューラ<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>小売チャネル スキーマ<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>On the <bpt id="p1">**</bpt>Retail channel schema<ept id="p1">**</ept> page, in the left navigation pane, click <bpt id="p2">**</bpt>Dynamics 365 for Retail.<ept id="p2">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売チャンネル スキーマ<ept id="p1">**</ept> ページの、左側のナビゲーション ウィンドウで、<bpt id="p2">**</bpt>Dynamics 365 for Retail<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>On the <bpt id="p1">**</bpt>Retail data distribution<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Export<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売データの配布<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>エクスポート<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Follow one of these steps, depending on the browser that you're using:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用しているブラウザーに応じて、次のいずれかのステップを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>If you're using Google Chrome, you should be prompted to download an XML file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Google Chrome を使用している場合は、XML ファイルをダウンロードするように求められる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Save the file to a path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルをパスに保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>If you're using Internet Explorer, a webpage will open.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer を使用している場合は、web ページが開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Right-click in the page, and then click <bpt id="p1">**</bpt>View source<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページ内を右クリックし、<bpt id="p1">**</bpt>ソースの表示<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Then save the contents of the page source to a file path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、ページ ソースのコンテンツをファイル パスに保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>In a text editor such as Notepad++, open the XML file that you just saved, and follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Notepad++ などテキスト エディターで、保存した XML ファイルを開き、これらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Search for the following line: <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Table name=“RetailCustTable”<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の行を検索します: <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Table name=“RetailCustTable”<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept>。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>There are two instances, at approximately line 29 and line 744.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">29 行目前後と 744 行目前後に 2 つのインスタンスがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Add the following code after the last line in both <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Table name=“RetailCustTable”<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> code blocks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">両方の <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>Table name=“RetailCustTable”<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> コード ブロックの最後の行の後に次のコードを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>You add the code after the <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>/Table<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> tag.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードを <bpt id="p1">**</bpt><ph id="ph1">&amp;lt;</ph>/Table<ph id="ph2">&amp;gt;</ph><ept id="p1">**</ept> タグの後に追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>After you've finished editing the file, go back to client and the <bpt id="p1">**</bpt>Retail channel schema<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルの編集が終了した後、クライアントおよび <bpt id="p1">**</bpt>Retail チャンネル スキーマ<ept id="p1">**</ept> ページ‎に戻ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>In the left navigation pane, click <bpt id="p1">**</bpt>Dynamics 365 for Retail.<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">左のナビゲーション ウィンドウで、<bpt id="p1">**</bpt>Dynamics 365 for Retail<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>On the <bpt id="p1">**</bpt>Retail data distribution<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Import<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売データの配布<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>インポート<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the dialog box that opens, click <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept>, select the XML file that you just edited, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> to import the file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示されるダイアログ ボックスで、<bpt id="p1">**</bpt>参照<ept id="p1">**</ept>をクリックし、編集した XML ファイルを選択してから、<bpt id="p2">**</bpt>OK<ept id="p2">**</ept> をクリックしてファイルをインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Close the <bpt id="p1">**</bpt>Retail channel schema<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売チャネル スキーマ<ept id="p1">**</ept> ページを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Scheduler job<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>本社の設定<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>小売用スケジューラ<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>スケジューラ ジョブ<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>On the <bpt id="p1">**</bpt>Scheduler job<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>1010<ept id="p2">**</ept> to select the “Customers” job.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>スケジューラ ジョブ<ept id="p1">**</ept>ページで、<bpt id="p2">**</bpt>1010<ept id="p2">**</ept> をクリックし、「顧客」ジョブを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>On the <bpt id="p1">**</bpt>Subjobs<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then enter <bpt id="p3">**</bpt>RetailCustPreference<ept id="p3">**</ept> as the subjob number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブジョブ<ept id="p1">**</ept>タブで、<bpt id="p2">**</bpt>新規<ept id="p2">**</ept>をクリックし、<bpt id="p3">**</bpt>RetailCustPreference<ept id="p3">**</ept> をサブジョブ番号として入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保存<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>On the <bpt id="p1">&lt;strong&gt;</bpt>Retail channel schema<ept id="p1">&lt;/strong&gt;</ept> page, select <bpt id="p2">**</bpt>Dynamics 365 for Retail<ept id="p2">**</ept> as the schema name, and then click <bpt id="p3">**</bpt>Generate queries<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>小売チャネル スキーマ<ept id="p1">&lt;/strong&gt;</ept> ページで、スキーマ名として <bpt id="p2">**</bpt>Dynamics 365 for Retail<ept id="p2">**</ept> を選択してから、<bpt id="p3">**</bpt>クエリの生成<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

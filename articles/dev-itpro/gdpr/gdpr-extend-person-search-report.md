@@ -1,128 +1,258 @@
----
-title: 個人検索レポートを拡張
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートを拡張するためのプロセスを説明します。
-author: rschloma
-manager: AnnBe
-ms.date: 01/24/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: IT Pro
-ms.reviewer: rschloma
-ms.search.scope: Operations
-ms.search.region: Global
-ms.author: rschloma
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b81a5d5910121641833bb0fd2f17dcfa00b0c79
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537383"
----
-# <a name="extend-the-person-search-report"></a><span data-ttu-id="74119-103">個人検索レポートの拡張</span><span class="sxs-lookup"><span data-stu-id="74119-103">Extend the Person search report</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="74119-104">Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートは、1 人のエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。</span><span class="sxs-lookup"><span data-stu-id="74119-104">The Person search report for Microsoft Dynamics 365 for Finance and Operations is backed by an intelligent search processor that is designed to manage a collection of entities for a single person.</span></span> <span data-ttu-id="74119-105">担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。</span><span class="sxs-lookup"><span data-stu-id="74119-105">The Person search report searches Finance and Operations data and creates a set of resulting identifiers.</span></span> <span data-ttu-id="74119-106">それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。</span><span class="sxs-lookup"><span data-stu-id="74119-106">Each result references a search category (for example, Customer) and a result record in a related table.</span></span> <span data-ttu-id="74119-107">個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="74119-107">For information about using the Person search report, refer the [Person search report](gdpr-person-search-report.md) topic.</span></span>
-
-> [!Note]
-> <span data-ttu-id="74119-108">担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、およびMicrosoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="74119-108">The Person search report will be available in an upconming release for Finance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent.</span></span> <span data-ttu-id="74119-109">このトピックの Finance and Operations への参照は、Retail と Talent にも当てはまります。</span><span class="sxs-lookup"><span data-stu-id="74119-109">References to Finance and Operations in this topic also apply to Retail and Talent.</span></span> <span data-ttu-id="74119-110">Microsoft Dynamics AX 2012 では今のところ担当者検索レポートは使用できません。</span><span class="sxs-lookup"><span data-stu-id="74119-110">The Person search report is not currently available for Microsoft Dynamics AX 2012.</span></span>
-
-## <a name="add-another-entity-to-the-default-template"></a><span data-ttu-id="74119-111">既定のテンプレートへの別のエンティティの追加</span><span class="sxs-lookup"><span data-stu-id="74119-111">Add another entity to the default template</span></span>
-
-<span data-ttu-id="74119-112">任意のエンティティを既定の個人検索レポート テンプレートに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="74119-112">You can add any entity to the default Person search report template.</span></span> <span data-ttu-id="74119-113">**データ管理**ワークスペースを開いて、**テンプレート**を選択します。</span><span class="sxs-lookup"><span data-stu-id="74119-113">Open the **Data management** workspace, and select **Templates**.</span></span> <span data-ttu-id="74119-114">テンプレートにエンティティを追加します。</span><span class="sxs-lookup"><span data-stu-id="74119-114">Add the entity to the template.</span></span> <span data-ttu-id="74119-115">追加するエンティティには、個人検索レポートをフィルター処理するために使用されるフィールドの少なくとも 1 つが含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="74119-115">The entity that you add must include at least one of the fields that are used to filter the Person search report.</span></span> 
-
-## <a name="create-a-new-search-category"></a><span data-ttu-id="74119-116">新しい検索カテゴリを作成する</span><span class="sxs-lookup"><span data-stu-id="74119-116">Create a new search category</span></span>
-
-1. <span data-ttu-id="74119-117">**PersonSearchResultCategory** 列挙型を使用して、作業者と申請者のような異なるカテゴリの結果を区別します。</span><span class="sxs-lookup"><span data-stu-id="74119-117">Use the **PersonSearchResultCategory** enumeration to distinguish different categories of results, such as workers versus applicants.</span></span>
-2. <span data-ttu-id="74119-118">新しい結果タイプを作成するには、必要に応じて**PersonSearchResultCategory** 列挙型を拡張します。</span><span class="sxs-lookup"><span data-stu-id="74119-118">Extend the **PersonSearchResultCategory** enumeration as needed to create new result types.</span></span>
-
-## <a name="create-search-processing-for-the-new-search-category"></a><span data-ttu-id="74119-119">新しい検索カテゴリの検索処理を作成する</span><span class="sxs-lookup"><span data-stu-id="74119-119">Create search processing for the new search category</span></span>
-
-<span data-ttu-id="74119-120">この例では、新しいプロセッサ クラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="74119-120">In this example, you will create a new processor class.</span></span>
-
-1. <span data-ttu-id="74119-121">新しい検索区分で **PersonSearchModule** 列挙型を拡張します。</span><span class="sxs-lookup"><span data-stu-id="74119-121">Extend the **PersonSearchModule** enumeration with a new search area.</span></span>
-2. <span data-ttu-id="74119-122">**PersonSearchProcessor** クラスを拡張し、新しい個人検索モジュール領域をパラメータとして **PersonSearchProcessorFactoryAttribute** 属性を含むクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="74119-122">Create a class that extends the **PersonSearchProcessor** class and includes the **PersonSearchProcessorFactoryAttribute** attribute, with the new person search module area as a parameter.</span></span> 
-3. <span data-ttu-id="74119-123">**PersonSearchProcessor** 拡張クラスで、目的の検索ロジックで **doSearch** メソッドをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="74119-123">In the **PersonSearchProcessor** extended class, override the **doSearch** method with your desired search logic.</span></span> <span data-ttu-id="74119-124">次の例のように、新しいテーブル関係を作成するために **PersonSearchResult** テーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="74119-124">As shown in the following example, extend the **PersonSearchResult** table to create new table relationships.</span></span>
-
-    ```
-    PersonSearchResultCategory::Customer needs a relation:PersonSearchResult.ResultRecId = CustTable.RecId,PersonSearchResult.ResultTableId = CustTable.TableId
-    ```
-
-## <a name="integrate-with-the-global-address-book-optional"></a><span data-ttu-id="74119-125">グローバル アドレス帳と統合 (オプション)</span><span class="sxs-lookup"><span data-stu-id="74119-125">Integrate with the Global address book (Optional)</span></span>
-
-<span data-ttu-id="74119-126">グローバル アドレス帳と統合する場合は、検出されたパーティー番号を **PersonSearchPartyNumberTmp** テーブルに挿入します。</span><span class="sxs-lookup"><span data-stu-id="74119-126">If you want to integrate with the Global address book, insert any discovered party numbers into the **PersonSearchPartyNumberTmp** table.</span></span> <span data-ttu-id="74119-127">**PersonSearchProcessor** の **findPartyLink** メソッドは、当事者番号を、ユーザー、顧客、仕入先などの他の検索コンポーネントにリンクします。</span><span class="sxs-lookup"><span data-stu-id="74119-127">The **findPartyLink** method of **PersonSearchProcessor** tries to link party numbers to other search artifacts, such as users, customers, or vendors.</span></span>
-
-<span data-ttu-id="74119-128">このメソッドにはデリゲート **onFindPartyLink** があり、当事者番号に基づいて検索する追加のコンポーネントを指定できます。</span><span class="sxs-lookup"><span data-stu-id="74119-128">This method has a delegate, **onFindPartyLink**, that lets you specify additional artifacts to search, based on the party numbers.</span></span>
-
-<span data-ttu-id="74119-129">**PersonSearchCriteria** テーブルでは、エンド ユーザーが、システムで個人データの検索に使用するパラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="74119-129">The **PersonSearchCriteria** tables let end users specify the parameters by which to search the system for personal data.</span></span>
-
-## <a name="create-new-search-criteria"></a><span data-ttu-id="74119-130">新しい検索基準を作成する</span><span class="sxs-lookup"><span data-stu-id="74119-130">Create new search criteria</span></span>
-
-<span data-ttu-id="74119-131">新しい検索条件を必要である場合は、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="74119-131">If you need new search criteria, follow these steps.</span></span>
-
-1. <span data-ttu-id="74119-132">**PersonSearchCriteriaName**、**PersonSearchCriteriaAddress**、および **PersonSearchCriteriaKnownId** を拡張または独自のテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="74119-132">Extend the **PersonSearchCriteriaName**, **PersonSearchCriteriaAddress**, and **PersonSearchCriteriaKnownId** tables, or create your own tables.</span></span>
-2. <span data-ttu-id="74119-133">新しいデータ フィールドを表示するには、**PersonSearchDialog** フォームを拡張します。</span><span class="sxs-lookup"><span data-stu-id="74119-133">Extend the **PersonSearchDialog** form to show these new data fields.</span></span>
-3. <span data-ttu-id="74119-134">検索処理中に新しい条件を使用します。</span><span class="sxs-lookup"><span data-stu-id="74119-134">Use the new criteria during search processing.</span></span>
-
-<span data-ttu-id="74119-135">**PersonSearch** フォームには、担当者の検索によって検出された結果のセットが表示されます。</span><span class="sxs-lookup"><span data-stu-id="74119-135">The **PersonSearch** form shows the set of results that was discovered by a person search.</span></span>
-
-## <a name="show-the-new-search-category-in-the-personsearch-form"></a><span data-ttu-id="74119-136">PersonSearch 形式で新しい検索カテゴリを表示</span><span class="sxs-lookup"><span data-stu-id="74119-136">Show the new search category in the PersonSearch form</span></span>
-
-1. <span data-ttu-id="74119-137">**PersonSearchResult** テーブルの新しいビューを作成します。</span><span class="sxs-lookup"><span data-stu-id="74119-137">Create a new view on the **PersonSearchResult** table.</span></span> <span data-ttu-id="74119-138">このビューは結果を新しい **PersonSearchResultCategory** に限定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="74119-138">This view should restrict results to only your new **PersonSearchResultCategory**.</span></span>
-2. <span data-ttu-id="74119-139">ビューを結果レコードに結合させ、必要なフィールドのビューを作成します (たとえば、**PersonSearchResultCustomerView**)。</span><span class="sxs-lookup"><span data-stu-id="74119-139">Join the view to your result record, and create the view fields that are needed (for example, **PersonSearchResultCustomerView**).</span></span>
-3. <span data-ttu-id="74119-140">新しいリレーションシップを新しいビューに作成するには、**PersonSearchResult** テーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="74119-140">Extend the **PersonSearchResult** table to create a new relationship to the new view.</span></span> <span data-ttu-id="74119-141">このリレーションシップは、人物の検索 ID に結合する必要があります。</span><span class="sxs-lookup"><span data-stu-id="74119-141">This relationship should join on the person search ID.</span></span>
-4. <span data-ttu-id="74119-142">**PersonSearch** フォームを拡張します。</span><span class="sxs-lookup"><span data-stu-id="74119-142">Extend the **PersonSearch** form:</span></span>
-
-    1. <span data-ttu-id="74119-143">データ ソースとして新しいビューを追加します。</span><span class="sxs-lookup"><span data-stu-id="74119-143">Add the new view as a data source.</span></span>
-    2. <span data-ttu-id="74119-144">結果のグリッドと**含む/除外**ボタンを使用して結果に新しいタブを追加します。</span><span class="sxs-lookup"><span data-stu-id="74119-144">Add a new tab to the results with the result grid and the **Include/Exclude** buttons.</span></span>
-    3. <span data-ttu-id="74119-145">**含む/除外**ボタンのイベント ハンドラーを作成して **PersonSearchResult** レコードを更新します。</span><span class="sxs-lookup"><span data-stu-id="74119-145">Create event handlers for the **Include/Exclude** buttons to update the **PersonSearchResult** records.</span></span>
-
-        <span data-ttu-id="74119-146">**PersonSearchEventHandler::updateMarkedOnButtonClicked()** メソッドが利便性のために用意されています。</span><span class="sxs-lookup"><span data-stu-id="74119-146">The **PersonSearchEventHandler::updateMarkedOnButtonClicked()** method is provided for convenience.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="74119-147">結果キャプションのレコード数を確認するには、**OnQueryExecuted** ビューのデータ ソース イベントでイベント ハンドラーを作成します。</span><span class="sxs-lookup"><span data-stu-id="74119-147">If you want to see the record count in the result caption, create an event handler on the **OnQueryExecuted** view data source event.</span></span> <span data-ttu-id="74119-148">次に、**PersonSearch** フォームで **setResultCountOnGridCaption()** メソッドを呼び出して、カウントを更新します。</span><span class="sxs-lookup"><span data-stu-id="74119-148">Next, call the **setResultCountOnGridCaption()** method on the **PersonSearch** form to update the count.</span></span>
-
-<span data-ttu-id="74119-149">各 **PersonSearchEntityFilterRelation** レコードは、フィルターを適用する場合、条件、フィルター テーブルおよび適用するフィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="74119-149">Each **PersonSearchEntityFilterRelation** record specifies the conditions when a filter should apply, and the filter table and field to apply.</span></span>
-
-<span data-ttu-id="74119-150">フィルター関係のセットは、パッケージの構築時にテンプレート メタデータと比較されます。</span><span class="sxs-lookup"><span data-stu-id="74119-150">The set of filter relations is compared to the template metadata when the package is built.</span></span>
-
-<span data-ttu-id="74119-151">フィルターを作成するためには、**PersonSearchResult** レコードと一致するフィルター カテゴリが存在する必要があります。</span><span class="sxs-lookup"><span data-stu-id="74119-151">For a filter to be created, a **PersonSearchResult** record with the matching filter category must exist.</span></span> <span data-ttu-id="74119-152">見つかったら、**PersonSearchResult** は、フィルター値が置かれているテーブル フィールドを参照します。</span><span class="sxs-lookup"><span data-stu-id="74119-152">After it's found, the **PersonSearchResult** references the table field where the filter value resides.</span></span>
-
-## <a name="create-new-filters"></a><span data-ttu-id="74119-153">新しいフィルタを作成する</span><span class="sxs-lookup"><span data-stu-id="74119-153">Create new filters</span></span>
-
-1. <span data-ttu-id="74119-154">**PersonSearchEntityFilterRelation** テーブルを拡張するには、Chain of Command (COC) を使用します。</span><span class="sxs-lookup"><span data-stu-id="74119-154">Use the Chain of Command to extend the **PersonSearchEntityFilterRelation** table.</span></span>
-2. <span data-ttu-id="74119-155">新しいフィルターのタイプとソースを決定する:</span><span class="sxs-lookup"><span data-stu-id="74119-155">Decide on the type and source of the new filter:</span></span>
-
-    1. <span data-ttu-id="74119-156">フィルターが拡張データ型 (EDT) または列挙の場合は、**MetadataTypeId** をデータ型の ID に設定します。</span><span class="sxs-lookup"><span data-stu-id="74119-156">If the filter is an extended data type (EDT) or enumeration, set the **MetadataTypeId** to the data type ID.</span></span>
-    2. <span data-ttu-id="74119-157">フィルターがソース テーブルのフィールドである場合は、ソース テーブルとソース フィールド ID を指定します。</span><span class="sxs-lookup"><span data-stu-id="74119-157">If the filter is a source table field, specify the source table and source field IDs.</span></span>
-    3. <span data-ttu-id="74119-158">フィルターがエンティティ フィールドである場合は、エンティティ フィールド ID を指定します。</span><span class="sxs-lookup"><span data-stu-id="74119-158">If the filter is an entity field, specify the entity field ID.</span></span>
-
-3. <span data-ttu-id="74119-159">フィルター テーブルとフィルター フィールドを決定します。</span><span class="sxs-lookup"><span data-stu-id="74119-159">Decide on the filter table and filter field.</span></span>
-
-    <span data-ttu-id="74119-160">フィルター テーブルは、一致するカテゴリを使用した **PersonSearchResult** として使用可能でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="74119-160">The filter table must be available as a **PersonSearchResult** with a matching category.</span></span> <span data-ttu-id="74119-161">それ以外の場合、フィルターは作成されません。</span><span class="sxs-lookup"><span data-stu-id="74119-161">Otherwise, no filters will be created.</span></span>
-
-4. <span data-ttu-id="74119-162">新しいフィルター レコードを挿入します。</span><span class="sxs-lookup"><span data-stu-id="74119-162">Insert the new filter record.</span></span>
-
-    <span data-ttu-id="74119-163">個人検索フレームワークが、最初にフォームが開いたときに、すべての除外の初期化を自動的に管理します。</span><span class="sxs-lookup"><span data-stu-id="74119-163">The person search framework will automatically manage initialization of all exclusions when the form is first opened.</span></span> <span data-ttu-id="74119-164">除外を使用すると、特定のエンティティ フィールドのフィルター構築機能を抑制できます。</span><span class="sxs-lookup"><span data-stu-id="74119-164">Exclusions let you suppress the filter building functionality for specific entity fields.</span></span>
-
-## <a name="create-new-exclusions"></a><span data-ttu-id="74119-165">新しい除外を作成する</span><span class="sxs-lookup"><span data-stu-id="74119-165">Create new exclusions</span></span>
-
-1. <span data-ttu-id="74119-166">**PersonSearchEntityExclusion** テーブルを拡張するには、Chain of Command (COC) を使用します。</span><span class="sxs-lookup"><span data-stu-id="74119-166">Use the Chain of Command (COC) to extend the **PersonSearchEntityExclusion** table.</span></span>
-2. <span data-ttu-id="74119-167">**CoC メソッド**で、エンティティ、エンティティ フィールド、除外が有効かどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="74119-167">In the **CoC method**, specify the entity, the entity field, and whether the exclusion is active.</span></span>
-3. <span data-ttu-id="74119-168">新しい除外レコードを挿入します。</span><span class="sxs-lookup"><span data-stu-id="74119-168">Insert the new exclusion record.</span></span>
-
-    <span data-ttu-id="74119-169">個人検索フレームワークが、最初にフォームが開いたときに、すべての除外の初期化を自動的に管理します。</span><span class="sxs-lookup"><span data-stu-id="74119-169">The person search framework will automatically manage initialization of all exclusions when the form is first opened.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="74119-170">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="74119-170">Additional resources</span></span>
-
-<span data-ttu-id="74119-171">欧州連合の一般的なデータ保護規制 (GDPR) に基づくデータの依頼への応答の一部として、個人検索レポートを拡張している場合、この規制に関する詳細については、[Microsoft Dynamics 365 for Finance and Operations のための GDPR ガイド](./gdpr-guide.md) でご覧いただけます。</span><span class="sxs-lookup"><span data-stu-id="74119-171">If you're extending the Person search report as part of a response to a request for data under the General Data Protection Regulation (GDPR) in the European Union, more information about that regulation is available in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).</span></span>
-
-<span data-ttu-id="74119-172">GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="74119-172">You can learn more about the GDPR on the [European Union's website](http://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).</span></span>
-
-
-### <a name="disclaimer"></a><span data-ttu-id="74119-173">免責事項</span><span class="sxs-lookup"><span data-stu-id="74119-173">Disclaimer</span></span>
-<span data-ttu-id="74119-174">(c)2018 Microsoft Corporation.</span><span class="sxs-lookup"><span data-stu-id="74119-174">(c)2018 Microsoft Corporation.</span></span> <span data-ttu-id="74119-175">All rights reserved.</span><span class="sxs-lookup"><span data-stu-id="74119-175">All rights reserved.</span></span> <span data-ttu-id="74119-176">このドキュメントは、"現状のまま" 提供されます。</span><span class="sxs-lookup"><span data-stu-id="74119-176">This document is provided "as-is."</span></span> <span data-ttu-id="74119-177">URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。</span><span class="sxs-lookup"><span data-stu-id="74119-177">Information and views expressed in this document, including URL and other Internet Web site references, may change without notice.</span></span> <span data-ttu-id="74119-178">このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。</span><span class="sxs-lookup"><span data-stu-id="74119-178">You bear the risk of using it.</span></span> <span data-ttu-id="74119-179">このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。</span><span class="sxs-lookup"><span data-stu-id="74119-179">This document does not provide you with any legal rights to any intellectual property in any Microsoft product.</span></span> <span data-ttu-id="74119-180">内部での参照を目的とする場合、このドキュメントをコピーして使用できます。</span><span class="sxs-lookup"><span data-stu-id="74119-180">You may copy and use this document for your internal, reference purposes.</span></span> 
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="gdpr-extend-person-search-report.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>gdpr-extend-person-search-report.921df7.8d5705c846d03879e1d3c71b838c8949ba905c03.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>8d5705c846d03879e1d3c71b838c8949ba905c03</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\gdpr\gdpr-extend-person-search-report.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Extend the Person search report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人検索レポートを拡張</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic walks you through the process of extending the Person search report for Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートを拡張するためのプロセスを説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Extend the Person search report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人検索レポートの拡張</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>The Person search report for Microsoft Dynamics 365 for Finance and Operations is backed by an intelligent search processor that is designed to manage a collection of entities for a single person.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートは、1 人のエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The Person search report searches Finance and Operations data and creates a set of resulting identifiers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Each result references a search category (for example, Customer) and a result record in a related table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>For information about using the Person search report, refer the <bpt id="p1">[</bpt>Person search report<ept id="p1">](gdpr-person-search-report.md)</ept> topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人検索レポートの使用の詳細については、<bpt id="p1">[</bpt>個人検索レポート<ept id="p1">](gdpr-person-search-report.md)</ept> トピックを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The Person search report will be available in an upconming release for Finance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、およびMicrosoft Dynamics 365 for Talent の今後のリリースで利用できるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>References to Finance and Operations in this topic also apply to Retail and Talent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックの Finance and Operations への参照は、Retail と Talent にも当てはまります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The Person search report is not currently available for Microsoft Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 では今のところ担当者検索レポートは使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Add another entity to the default template</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のテンプレートへの別のエンティティの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>You can add any entity to the default Person search report template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">任意のエンティティを既定の個人検索レポート テンプレートに追加することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Open the <bpt id="p1">**</bpt>Data management<ept id="p1">**</ept> workspace, and select <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ管理<ept id="p1">**</ept>ワークスペースを開いて、<bpt id="p2">**</bpt>テンプレート<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Add the entity to the template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートにエンティティを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The entity that you add must include at least one of the fields that are used to filter the Person search report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加するエンティティには、個人検索レポートをフィルター処理するために使用されるフィールドの少なくとも 1 つが含まれている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Create a new search category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい検索カテゴリを作成する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Use the <bpt id="p1">**</bpt>PersonSearchResultCategory<ept id="p1">**</ept> enumeration to distinguish different categories of results, such as workers versus applicants.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchResultCategory<ept id="p1">**</ept> 列挙型を使用して、作業者と申請者のような異なるカテゴリの結果を区別します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Extend the <bpt id="p1">**</bpt>PersonSearchResultCategory<ept id="p1">**</ept> enumeration as needed to create new result types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい結果タイプを作成するには、必要に応じて<bpt id="p1">**</bpt>PersonSearchResultCategory<ept id="p1">**</ept> 列挙型を拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Create search processing for the new search category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい検索カテゴリの検索処理を作成する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>In this example, you will create a new processor class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、新しいプロセッサ クラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Extend the <bpt id="p1">**</bpt>PersonSearchModule<ept id="p1">**</ept> enumeration with a new search area.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい検索区分で <bpt id="p1">**</bpt>PersonSearchModule<ept id="p1">**</ept> 列挙型を拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Create a class that extends the <bpt id="p1">**</bpt>PersonSearchProcessor<ept id="p1">**</ept> class and includes the <bpt id="p2">**</bpt>PersonSearchProcessorFactoryAttribute<ept id="p2">**</ept> attribute, with the new person search module area as a parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchProcessor<ept id="p1">**</ept> クラスを拡張し、新しい個人検索モジュール領域をパラメータとして <bpt id="p2">**</bpt>PersonSearchProcessorFactoryAttribute<ept id="p2">**</ept> 属性を含むクラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the <bpt id="p1">**</bpt>PersonSearchProcessor<ept id="p1">**</ept> extended class, override the <bpt id="p2">**</bpt>doSearch<ept id="p2">**</ept> method with your desired search logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchProcessor<ept id="p1">**</ept> 拡張クラスで、目的の検索ロジックで <bpt id="p2">**</bpt>doSearch<ept id="p2">**</ept> メソッドをオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>As shown in the following example, extend the <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> table to create new table relationships.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例のように、新しいテーブル関係を作成するために <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> テーブルを拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Integrate with the Global address book (Optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グローバル アドレス帳と統合 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>If you want to integrate with the Global address book, insert any discovered party numbers into the <bpt id="p1">**</bpt>PersonSearchPartyNumberTmp<ept id="p1">**</ept> table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グローバル アドレス帳と統合する場合は、検出されたパーティー番号を <bpt id="p1">**</bpt>PersonSearchPartyNumberTmp<ept id="p1">**</ept> テーブルに挿入します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>The <bpt id="p1">**</bpt>findPartyLink<ept id="p1">**</ept> method of <bpt id="p2">**</bpt>PersonSearchProcessor<ept id="p2">**</ept> tries to link party numbers to other search artifacts, such as users, customers, or vendors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>PersonSearchProcessor<ept id="p2">**</ept> の <bpt id="p1">**</bpt>findPartyLink<ept id="p1">**</ept> メソッドは、当事者番号を、ユーザー、顧客、仕入先などの他の検索コンポーネントにリンクします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>This method has a delegate, <bpt id="p1">**</bpt>onFindPartyLink<ept id="p1">**</ept>, that lets you specify additional artifacts to search, based on the party numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドにはデリゲート <bpt id="p1">**</bpt>onFindPartyLink<ept id="p1">**</ept> があり、当事者番号に基づいて検索する追加のコンポーネントを指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>The <bpt id="p1">**</bpt>PersonSearchCriteria<ept id="p1">**</ept> tables let end users specify the parameters by which to search the system for personal data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchCriteria<ept id="p1">**</ept> テーブルでは、エンド ユーザーが、システムで個人データの検索に使用するパラメーターを指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Create new search criteria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい検索基準を作成する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>If you need new search criteria, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい検索条件を必要である場合は、これらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Extend the <bpt id="p1">**</bpt>PersonSearchCriteriaName<ept id="p1">**</ept>, <bpt id="p2">**</bpt>PersonSearchCriteriaAddress<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>PersonSearchCriteriaKnownId<ept id="p3">**</ept> tables, or create your own tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchCriteriaName<ept id="p1">**</ept>、<bpt id="p2">**</bpt>PersonSearchCriteriaAddress<ept id="p2">**</ept>、および <bpt id="p3">**</bpt>PersonSearchCriteriaKnownId<ept id="p3">**</ept> を拡張または独自のテーブルを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Extend the <bpt id="p1">**</bpt>PersonSearchDialog<ept id="p1">**</ept> form to show these new data fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいデータ フィールドを表示するには、<bpt id="p1">**</bpt>PersonSearchDialog<ept id="p1">**</ept> フォームを拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Use the new criteria during search processing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検索処理中に新しい条件を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The <bpt id="p1">**</bpt>PersonSearch<ept id="p1">**</ept> form shows the set of results that was discovered by a person search.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearch<ept id="p1">**</ept> フォームには、担当者の検索によって検出された結果のセットが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Show the new search category in the PersonSearch form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PersonSearch 形式で新しい検索カテゴリを表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Create a new view on the <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> テーブルの新しいビューを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>This view should restrict results to only your new <bpt id="p1">**</bpt>PersonSearchResultCategory<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このビューは結果を新しい <bpt id="p1">**</bpt>PersonSearchResultCategory<ept id="p1">**</ept> に限定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Join the view to your result record, and create the view fields that are needed (for example, <bpt id="p1">**</bpt>PersonSearchResultCustomerView<ept id="p1">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビューを結果レコードに結合させ、必要なフィールドのビューを作成します (たとえば、<bpt id="p1">**</bpt>PersonSearchResultCustomerView<ept id="p1">**</ept>)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Extend the <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> table to create a new relationship to the new view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいリレーションシップを新しいビューに作成するには、<bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> テーブルを拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>This relationship should join on the person search ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリレーションシップは、人物の検索 ID に結合する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Extend the <bpt id="p1">**</bpt>PersonSearch<ept id="p1">**</ept> form:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearch<ept id="p1">**</ept> フォームを拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Add the new view as a data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースとして新しいビューを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Add a new tab to the results with the result grid and the <bpt id="p1">**</bpt>Include/Exclude<ept id="p1">**</ept> buttons.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結果のグリッドと<bpt id="p1">**</bpt>含む/除外<ept id="p1">**</ept>ボタンを使用して結果に新しいタブを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Create event handlers for the <bpt id="p1">**</bpt>Include/Exclude<ept id="p1">**</ept> buttons to update the <bpt id="p2">**</bpt>PersonSearchResult<ept id="p2">**</ept> records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>含む/除外<ept id="p1">**</ept>ボタンのイベント ハンドラーを作成して <bpt id="p2">**</bpt>PersonSearchResult<ept id="p2">**</ept> レコードを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>The <bpt id="p1">**</bpt>PersonSearchEventHandler::updateMarkedOnButtonClicked()<ept id="p1">**</ept> method is provided for convenience.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchEventHandler::updateMarkedOnButtonClicked()<ept id="p1">**</ept> メソッドが利便性のために用意されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>If you want to see the record count in the result caption, create an event handler on the <bpt id="p1">**</bpt>OnQueryExecuted<ept id="p1">**</ept> view data source event.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結果キャプションのレコード数を確認するには、<bpt id="p1">**</bpt>OnQueryExecuted<ept id="p1">**</ept> ビューのデータ ソース イベントでイベント ハンドラーを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Next, call the <bpt id="p1">**</bpt>setResultCountOnGridCaption()<ept id="p1">**</ept> method on the <bpt id="p2">**</bpt>PersonSearch<ept id="p2">**</ept> form to update the count.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、<bpt id="p2">**</bpt>PersonSearch<ept id="p2">**</ept> フォームで <bpt id="p1">**</bpt>setResultCountOnGridCaption()<ept id="p1">**</ept> メソッドを呼び出して、カウントを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Each <bpt id="p1">**</bpt>PersonSearchEntityFilterRelation<ept id="p1">**</ept> record specifies the conditions when a filter should apply, and the filter table and field to apply.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各 <bpt id="p1">**</bpt>PersonSearchEntityFilterRelation<ept id="p1">**</ept> レコードは、フィルターを適用する場合、条件、フィルター テーブルおよび適用するフィールドを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The set of filter relations is compared to the template metadata when the package is built.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルター関係のセットは、パッケージの構築時にテンプレート メタデータと比較されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>For a filter to be created, a <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> record with the matching filter category must exist.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルターを作成するためには、<bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> レコードと一致するフィルター カテゴリが存在する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>After it's found, the <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> references the table field where the filter value resides.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">見つかったら、<bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> は、フィルター値が置かれているテーブル フィールドを参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Create new filters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフィルタを作成する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Use the Chain of Command to extend the <bpt id="p1">**</bpt>PersonSearchEntityFilterRelation<ept id="p1">**</ept> table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchEntityFilterRelation<ept id="p1">**</ept> テーブルを拡張するには、Chain of Command (COC) を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Decide on the type and source of the new filter:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフィルターのタイプとソースを決定する:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>If the filter is an extended data type (EDT) or enumeration, set the <bpt id="p1">**</bpt>MetadataTypeId<ept id="p1">**</ept> to the data type ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルターが拡張データ型 (EDT) または列挙の場合は、<bpt id="p1">**</bpt>MetadataTypeId<ept id="p1">**</ept> をデータ型の ID に設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>If the filter is a source table field, specify the source table and source field IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルターがソース テーブルのフィールドである場合は、ソース テーブルとソース フィールド ID を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>If the filter is an entity field, specify the entity field ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルターがエンティティ フィールドである場合は、エンティティ フィールド ID を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Decide on the filter table and filter field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルター テーブルとフィルター フィールドを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The filter table must be available as a <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> with a matching category.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィルター テーブルは、一致するカテゴリを使用した <bpt id="p1">**</bpt>PersonSearchResult<ept id="p1">**</ept> として使用可能でなければなりません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Otherwise, no filters will be created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、フィルターは作成されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Insert the new filter record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフィルター レコードを挿入します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>The person search framework will automatically manage initialization of all exclusions when the form is first opened.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人検索フレームワークが、最初にフォームが開いたときに、すべての除外の初期化を自動的に管理します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Exclusions let you suppress the filter building functionality for specific entity fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">除外を使用すると、特定のエンティティ フィールドのフィルター構築機能を抑制できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Create new exclusions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい除外を作成する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Use the Chain of Command (COC) to extend the <bpt id="p1">**</bpt>PersonSearchEntityExclusion<ept id="p1">**</ept> table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PersonSearchEntityExclusion<ept id="p1">**</ept> テーブルを拡張するには、Chain of Command (COC) を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>In the <bpt id="p1">**</bpt>CoC method<ept id="p1">**</ept>, specify the entity, the entity field, and whether the exclusion is active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CoC メソッド<ept id="p1">**</ept>で、エンティティ、エンティティ フィールド、除外が有効かどうかを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Insert the new exclusion record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい除外レコードを挿入します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>The person search framework will automatically manage initialization of all exclusions when the form is first opened.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人検索フレームワークが、最初にフォームが開いたときに、すべての除外の初期化を自動的に管理します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>If you're extending the Person search report as part of a response to a request for data under the General Data Protection Regulation (GDPR) in the European Union, more information about that regulation is available in the <bpt id="p1">[</bpt>Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations<ept id="p1">](./gdpr-guide.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">欧州連合の一般的なデータ保護規制 (GDPR) に基づくデータの依頼への応答の一部として、個人検索レポートを拡張している場合、この規制に関する詳細については、<bpt id="p1">[</bpt>Microsoft Dynamics 365 for Finance and Operations のための GDPR ガイド<ept id="p1">](./gdpr-guide.md)</ept> でご覧いただけます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>You can learn more about the GDPR on the <bpt id="p1">[</bpt>European Union's website<ept id="p1">](https://europa.eu/)</ept> and on the <bpt id="p2">[</bpt>Microsoft Trust Center<ept id="p2">](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GDPR の詳細については、<bpt id="p1">[</bpt>欧州連合の Web サイト<ept id="p1">](https://europa.eu/)</ept> および <bpt id="p2">[</bpt>Microsoft Trust Center<ept id="p2">](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Disclaimer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">免責事項</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>(c)2018 Microsoft Corporation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(c)2018 Microsoft Corporation.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>All rights reserved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">All rights reserved.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>This document is provided "as-is."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このドキュメントは、"現状のまま" 提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Information and views expressed in this document, including URL and other Internet Web site references, may change without notice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>You bear the risk of using it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>This document does not provide you with any legal rights to any intellectual property in any Microsoft product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>You may copy and use this document for your internal, reference purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">内部での参照を目的とする場合、このドキュメントをコピーして使用できます。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

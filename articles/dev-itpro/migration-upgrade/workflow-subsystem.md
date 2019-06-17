@@ -1,60 +1,108 @@
----
-title: Finance and Operations でのワークフロー サブシステムの更新
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。 Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。
-author: sericks007
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 13511
-ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
-ms.search.region: Global
-ms.author: tjvass
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f758397754b9489f1e14caf28b832fae16ab3665
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506053"
----
-# <a name="workflow-subsystem-updates-in-finance-and-operations"></a><span data-ttu-id="a21f4-104">Finance and Operations でのワークフロー サブシステムの更新</span><span class="sxs-lookup"><span data-stu-id="a21f4-104">Workflow subsystem updates in Finance and Operations</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="a21f4-105">この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a21f4-105">This article reviews the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="a21f4-106">Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。</span><span class="sxs-lookup"><span data-stu-id="a21f4-106">It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system.</span></span> 
-
-<span data-ttu-id="a21f4-107">Microsoft Dynamics AX 2012 を使用していれば、Finance and Operations のワークフロー システムは既におなじみのものです。</span><span class="sxs-lookup"><span data-stu-id="a21f4-107">The workflow system in Finance and Operations will already be familiar to you if you've used Microsoft Dynamics AX 2012.</span></span> <span data-ttu-id="a21f4-108">Microsoft Dynamics AX 2012 のワークフロー サブシステムの詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a21f4-108">For more information about the workflow subsystem in Dynamics AX 2012, see the following topics.</span></span>
-
-| <span data-ttu-id="a21f4-109">このテーマについて学ぶには</span><span class="sxs-lookup"><span data-stu-id="a21f4-109">To learn about this subject</span></span> | <span data-ttu-id="a21f4-110">このトピックを参照</span><span class="sxs-lookup"><span data-stu-id="a21f4-110">See this topic</span></span>                                             |
-|-----------------------------|------------------------------------------------------------|
-| <span data-ttu-id="a21f4-111">ワークフロー システム</span><span class="sxs-lookup"><span data-stu-id="a21f4-111">The workflow system</span></span>         | <http://technet.microsoft.com/en-us/library/dd309672.aspx> |
-| <span data-ttu-id="a21f4-112">モジュールごとのワークフロー タイプ</span><span class="sxs-lookup"><span data-stu-id="a21f4-112">Workflow types by module</span></span>    | <http://technet.microsoft.com/EN-US/library/dd362043.aspx> |
-| <span data-ttu-id="a21f4-113">ワークフロー要素</span><span class="sxs-lookup"><span data-stu-id="a21f4-113">Workflow elements</span></span>           | <http://technet.microsoft.com/en-us/library/dd309626.aspx> |
-| <span data-ttu-id="a21f4-114">ワークフロー アクション</span><span class="sxs-lookup"><span data-stu-id="a21f4-114">Workflow actions</span></span>            | <http://technet.microsoft.com/EN-US/library/dd362144.aspx> |
-| <span data-ttu-id="a21f4-115">ワークフローの参加者</span><span class="sxs-lookup"><span data-stu-id="a21f4-115">Workflow participants</span></span>       | <http://technet.microsoft.com/EN-US/library/dd309598.aspx> |
-| <span data-ttu-id="a21f4-116">ワークフローの例</span><span class="sxs-lookup"><span data-stu-id="a21f4-116">Workflow examples</span></span>           | <http://technet.microsoft.com/en-us/library/dd309636.aspx> |
-| <span data-ttu-id="a21f4-117">ワークフローの開発</span><span class="sxs-lookup"><span data-stu-id="a21f4-117">Developing a workflow</span></span>       | <http://msdn.microsoft.com/EN-US/library/cc967389.aspx>    |
-| <span data-ttu-id="a21f4-118">ワークフローの実装</span><span class="sxs-lookup"><span data-stu-id="a21f4-118">Implementing a workflow</span></span>     | <http://msdn.microsoft.com/en-us/library/cc585061.aspx>    |
-
-## <a name="primary-changes-to-the-workflow-system"></a><span data-ttu-id="a21f4-119">ワークフロー システムの主な変更</span><span class="sxs-lookup"><span data-stu-id="a21f4-119">Primary changes to the workflow system</span></span>
-<span data-ttu-id="a21f4-120">Finance and Operations で実装された基本変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a21f4-120">Here are the primary changes that have been implemented in Finance and Operations:</span></span>
-
--   <span data-ttu-id="a21f4-121">新しいアプリケーション状態機械機能との統合により、ワークフロー イベントを基になるエンティティの状態機械での状態遷移に関連付けできます。</span><span class="sxs-lookup"><span data-stu-id="a21f4-121">Integration with the new Application State Machine feature enables workflow events to be bound to state transitions on the underlying entity's state machine.</span></span> <span data-ttu-id="a21f4-122">このバインディングにより、ビジネス ロジックをステート マシン内で集中化することが可能になり、また、ワークフロー システムをそのステート マシンの宣言コンシューマーにすることが可能になります。</span><span class="sxs-lookup"><span data-stu-id="a21f4-122">This binding enables business logic to be centralized within the state machine and also enables the workflow system to be a declarative consumer of that state machine.</span></span> <span data-ttu-id="a21f4-123">ワークフロー メタデータは、特定のワークフロー イベントが発生したときに実行される状態遷移を参照できます。</span><span class="sxs-lookup"><span data-stu-id="a21f4-123">The workflow metadata can reference a state transition that is performed when a specific workflow event occurs.</span></span> <span data-ttu-id="a21f4-124">したがって、追加のコードを記述することなく、ワークフロー内で状態遷移を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="a21f4-124">Therefore, you can do state transitions within a workflow without writing any additional code.</span></span>
--   <span data-ttu-id="a21f4-125">ワークフロー エディターは、1 回クリックしてダウンロードするプログラムになりました。</span><span class="sxs-lookup"><span data-stu-id="a21f4-125">The workflow editor is now a program that you click one time to download.</span></span> <span data-ttu-id="a21f4-126">エディターは、サービスを使用して、Finance and Operations と通信します。</span><span class="sxs-lookup"><span data-stu-id="a21f4-126">The editor communicates with Finance and Operations by using services.</span></span> <span data-ttu-id="a21f4-127">したがって、Finance and Operations は、Dynamics AX 2012 の豊富なグラフィカルなワークフロー設計操作を引き継ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="a21f4-127">Therefore, Finance and Operations can carry forward the rich, graphical workflow design experience from Dynamics AX 2012.</span></span>
--   <span data-ttu-id="a21f4-128">ワークフロー開発ウィザードは Microsoft Visual Studio にポート済みです。</span><span class="sxs-lookup"><span data-stu-id="a21f4-128">Workflow development wizards have been ported into Microsoft Visual Studio.</span></span>
-
-
-<a name="additional-resources"></a><span data-ttu-id="a21f4-129">追加リソース</span><span class="sxs-lookup"><span data-stu-id="a21f4-129">Additional resources</span></span>
---------
-
-[<span data-ttu-id="a21f4-130">開発者向け技術概念ガイド</span><span class="sxs-lookup"><span data-stu-id="a21f4-130">Technical Concepts Guide for Developers</span></span>](../dev-tools/developer-home-page.md)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="workflow-subsystem.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>workflow-subsystem.2a90a3.a0a23fd1ff275d61c4cd742866e14e310e0d096c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a0a23fd1ff275d61c4cd742866e14e310e0d096c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\workflow-subsystem.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Workflow subsystem updates in Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations でのワークフロー サブシステムの更新</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This article reviews the workflow system in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Workflow subsystem updates in Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations でのワークフロー サブシステムの更新</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This article reviews the workflow system in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The workflow system in Finance and Operations will already be familiar to you if you've used Microsoft Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 を使用していれば、Finance and Operations のワークフロー システムは既におなじみのものです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>For more information about the workflow subsystem in Dynamics AX 2012, see the following topics.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="1">Microsoft Dynamics</ph> <ph id="2">AX</ph> 2012 のワークフロー サブシステムの詳細については、次のトピックを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>To learn about this subject</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このテーマについて学ぶには</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>See this topic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックを参照</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The workflow system</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー システム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Workflow types by module</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モジュールごとのワークフロー タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Workflow elements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー要素</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Workflow actions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー アクション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Workflow participants</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフローの参加者</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Workflow examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフローの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Developing a workflow</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフローの開発</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Implementing a workflow</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフローの実装</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Primary changes to the workflow system</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー システムの主な変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Here are the primary changes that have been implemented in Finance and Operations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations で実装された基本変更を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Integration with the new Application State Machine feature enables workflow events to be bound to state transitions on the underlying entity's state machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいアプリケーション状態機械機能との統合により、ワークフロー イベントを基になるエンティティの状態機械での状態遷移に関連付けできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>This binding enables business logic to be centralized within the state machine and also enables the workflow system to be a declarative consumer of that state machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このバインディングにより、ビジネス ロジックをステート マシン内で集中化することが可能になり、また、ワークフロー システムをそのステート マシンの宣言コンシューマーにすることが可能になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The workflow metadata can reference a state transition that is performed when a specific workflow event occurs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー メタデータは、特定のワークフロー イベントが発生したときに実行される状態遷移を参照できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Therefore, you can do state transitions within a workflow without writing any additional code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、追加のコードを記述することなく、ワークフロー内で状態遷移を行うことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>The workflow editor is now a program that you click one time to download.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー エディターは、1 回クリックしてダウンロードするプログラムになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>The editor communicates with Finance and Operations by using services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エディターは、サービスを使用して、Finance and Operations と通信します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Therefore, Finance and Operations can carry forward the rich, graphical workflow design experience from Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、Finance and Operations は、Dynamics AX 2012 の豊富なグラフィカルなワークフロー設計操作を引き継ぐことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Workflow development wizards have been ported into Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークフロー開発ウィザードは Microsoft Visual Studio にポート済みです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>Technical Concepts Guide for Developers<ept id="p1">](../dev-tools/developer-home-page.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>開発者向け技術概念ガイド<ept id="p1">](../dev-tools/developer-home-page.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

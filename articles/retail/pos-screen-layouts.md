@@ -1,195 +1,513 @@
----
-title: 販売時点管理 (POS) の画面レイアウト
-description: このトピックでは、Microsoft Dynamics 365 for Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。
-author: jblucher
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-ms.search.form: RetailTillLayout
-audience: Application user
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 90573
-ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549431"
----
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a><span data-ttu-id="d0661-103">販売時点管理 (POS) の画面レイアウト</span><span class="sxs-lookup"><span data-stu-id="d0661-103">Screen layouts for the point of sale (POS)</span></span>
-
-[!include [banner](includes/banner.md)]
-
-<span data-ttu-id="d0661-104">このトピックでは、Microsoft Dynamics 365 for Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="d0661-104">This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.</span></span>
-
-<span data-ttu-id="d0661-105">Retail POS のユーザー インターフェイス (UI) は、店舗、レジスター、および/またはユーザーに割り当てられた視覚プロファイルと画面レイアウトの組み合わせを使用してコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-105">The Retail POS user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and/or users.</span></span>
-
-<span data-ttu-id="d0661-106">次の図は、POS UI のコンフィギュレーション可能な側面を構成するさまざまなエンティティ間の関係を示します。</span><span class="sxs-lookup"><span data-stu-id="d0661-106">The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.</span></span>
-
-![POS 画面レイアウト エンティティ](../retail/media/POS-layout-configuration-entities-diagram.png)
-
-## <a name="visual-profile"></a><span data-ttu-id="d0661-108">ビジュアル プロファイル</span><span class="sxs-lookup"><span data-stu-id="d0661-108">Visual profile</span></span>
-
-<span data-ttu-id="d0661-109">視覚プロファイルはレジスターに割り当てられ、レジスター固有でユーザー間で共有される視覚要素を指定します。</span><span class="sxs-lookup"><span data-stu-id="d0661-109">Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</span></span> <span data-ttu-id="d0661-110">レジスターにサインインするユーザーには、同じテーマ、色、および画像が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-110">Every user who signs in to the register sees the same theme, colors, and images.</span></span>
-
-![Light テーマの POS ようこそ画面](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
-
-![Dark テーマの POS トランザクション画面](../retail/media/POS-Transaction-Screen-with-Dark-theme.png)
-
-- <span data-ttu-id="d0661-113">**プロファイル番号** – プロファイル番号は、視覚プロファイルの固有識別子です。</span><span class="sxs-lookup"><span data-stu-id="d0661-113">**Profile number** – The profile number is the unique identifier of the visual profile.</span></span>
-- <span data-ttu-id="d0661-114">**説明** – 状況に合った正しいプロファイルを特定するのに役立つ、わかりやすい名前を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-114">**Description** – You can specify a meaningful name that will help identify the correct profile for your situation.</span></span>
-- <span data-ttu-id="d0661-115">**テーマ** – Light または Dark アプリケーション テーマを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-115">**Theme** – You can select between the Light and Dark application themes.</span></span> <span data-ttu-id="d0661-116">テーマは、アプリケーション全体で、フォントと背景の色に影響します。</span><span class="sxs-lookup"><span data-stu-id="d0661-116">The theme affects the font and background colors throughout the application.</span></span>
-- <span data-ttu-id="d0661-117">**アクセント色** – アクセント色は、タイル、コマンド ボタン、またはハイパーリンクなどの固有の視覚要素を、区別または強調表示するために POS 全体で使用されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-117">**Accent color** – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks.</span></span> <span data-ttu-id="d0661-118">通常、これらの要素は実行可能です。</span><span class="sxs-lookup"><span data-stu-id="d0661-118">Typically, these elements are actionable.</span></span>
-- <span data-ttu-id="d0661-119">**ヘッダーの色** – 小売業者のブランドの要件を満たすようにページ ヘッダーの色をコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-119">**Header color** – You can configure the color of the page header to meet the retailer's branding requirements.</span></span> <span data-ttu-id="d0661-120">この機能は Microsoft Dynamics 365 for Retail バージョン 1611 でのみ使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-120">This feature is available only in Microsoft Dynamics 365 for Retail version 1611.</span></span>
-- <span data-ttu-id="d0661-121">**ログイン バックグラウンド** – サインイン画面の背景画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-121">**Login backgrounds** – You can specify a background image for the sign-in screen.</span></span> <span data-ttu-id="d0661-122">大容量のファイルの保存と読み込みは、アプリケーションの動作やパフォーマンスに影響を与える可能性があるため、背景画像のファイル サイズはできるだけ小さくする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d0661-122">The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.</span></span>
-- <span data-ttu-id="d0661-123">**アプリケーションの背景** - アプリケーション全体で無地のテーマ色の代わりに使用されている背景画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-123">**Application background** – You can specify a background image that is used instead of the solid theme color throughout the application.</span></span> <span data-ttu-id="d0661-124">ログイン バックグラウンドに関しては、ファイル サイズをできる限り小さくする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d0661-124">As for login backgrounds, the file size should be kept as small as possible.</span></span>
-
-## <a name="screen-layouts"></a><span data-ttu-id="d0661-125">画面レイアウト</span><span class="sxs-lookup"><span data-stu-id="d0661-125">Screen layouts</span></span>
-
-<span data-ttu-id="d0661-126">画面レイアウト構成によって、POS ようこそ画面および**トランザクション**画面での UI コントロールのアクション、コンテンツ、および配置が決定されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-126">Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.</span></span>
-
-![POS 画面レイアウト表示](../retail/media/POS-Screen-Layout-View.png)
-
-- <span data-ttu-id="d0661-128">**ようこそ画面** – ほとんどの場合、ようこそ画面は、ユーザーが初めて POS にサインインするときに表示されるページです。</span><span class="sxs-lookup"><span data-stu-id="d0661-128">**Welcome screen** – In most cases, the welcome screen is the page that users see when they first sign in to the POS.</span></span> <span data-ttu-id="d0661-129">ようこそ画面は、ブランド イメージと、POS 操作へのアクセスを提供するボタン グリッドで構成することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-129">The welcome screen can consist of a branding image and button grids that provide access to POS operations.</span></span> <span data-ttu-id="d0661-130">通常、現在のトランザクションに固有でない操作はこのスクリーンに表示されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-130">Typically, operations that aren't specific to the current transaction are put on this screen.</span></span>
-
-    ![POS ようこそ画面](../retail/media/POS-Welcome-Screen.png)
-
-- <span data-ttu-id="d0661-132">**トランザクション画面** – **トランザクション**画面は、販売トランザクションおよび注文処理のための POS のメイン画面です。</span><span class="sxs-lookup"><span data-stu-id="d0661-132">**Transaction screen** – The **Transaction** screen is the main screen in the POS for processing sales transactions and orders.</span></span> <span data-ttu-id="d0661-133">コンテンツやレイアウトは、画面レイアウト デザイナーを使用してコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="d0661-133">The content and layout are configured by using the screen layout designer.</span></span>
-
-    ![POS トランザクション画面](../retail/media/POS-Transaction-Screen.png)
-
-- <span data-ttu-id="d0661-135">**既定のスタート画面** – 一部の小売業者は、サインイン後にレジ担当者が**トランザクション**画面に直接移動することを好みます。</span><span class="sxs-lookup"><span data-stu-id="d0661-135">**Default start screen** – Some retailers prefer that cashiers go directly to the **Transaction** screen after sign-in.</span></span> <span data-ttu-id="d0661-136">**既定のスタート画面**設定では、各画面レイアウトのサインイン後に表示される既定の画面を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-136">The **Default start screen** setting lets you specify the default screen that appears after sign-in for each screen layout.</span></span>
-
-### <a name="assignment"></a><span data-ttu-id="d0661-137">割り当て</span><span class="sxs-lookup"><span data-stu-id="d0661-137">Assignment</span></span>
-
-<span data-ttu-id="d0661-138">画面レイアウトは、店舗、レジスター、またはユーザー レベルで割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-138">Screen layouts can be assigned at the store, register, or user level.</span></span> <span data-ttu-id="d0661-139">ユーザーの割り当てはレジスターと店舗の割り当てを上書きし、レジスターの割り当ては店舗の割り当てを上書きします。</span><span class="sxs-lookup"><span data-stu-id="d0661-139">The user assignment overrides the register and store assignments, and the register assignment overrides the store assignment.</span></span> <span data-ttu-id="d0661-140">すべてのユーザーがレジスターまたはロールに関係なく同じレイアウトを使用する単純なシナリオでは、画面レイアウトは店舗レベルでのみ設定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-140">In a simple scenario where all users use the same layout, regardless of register or role, the screen layout can be set only at the store level.</span></span> <span data-ttu-id="d0661-141">特定のレジスターまたはユーザーが特殊なレイアウトを必要とするシナリオでは、それらのレイアウトを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-141">In scenarios where specific registers or users require specialized layouts, those layouts can be assigned.</span></span>
-
-### <a name="layout-sizes"></a><span data-ttu-id="d0661-142">レイアウト サイズ</span><span class="sxs-lookup"><span data-stu-id="d0661-142">Layout sizes</span></span>
-
-<span data-ttu-id="d0661-143">POS UI の大部分は応答可能で、レイアウトは画面のサイズや向きに基づいて自動的にサイズを変更、調整されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-143">Most aspects of the POS UI are responsive, and the layout is automatically resized and adjusted based on the screen size and orientation.</span></span> <span data-ttu-id="d0661-144">ただし、POS **トランザクション**画面は予想されるすべての画面解像度用にコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d0661-144">However, the POS **Transaction** screen must be configured for every screen resolution that is expected.</span></span>
-
-<span data-ttu-id="d0661-145">起動時に、POS アプリケーションはデバイス用にコンフィギュレーションされたものに最も近いレイアウト サイズを自動的に選択します。</span><span class="sxs-lookup"><span data-stu-id="d0661-145">At startup, the POS application automatically selects the closest layout size that is configured for the device.</span></span> <span data-ttu-id="d0661-146">画面レイアウトは、ランドスケープとポートレート両方のモード、およびフルサイズとコンパクト両方のデバイスのコンフィギュレーションを含めることもできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-146">A screen layout can also contain configurations for both landscape and portrait modes, and for both full-size and compact devices.</span></span> <span data-ttu-id="d0661-147">したがって、ユーザーは店舗内で使用されるさまざまなサイズとフォーム係数で使用する 1 つの画面レイアウトに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="d0661-147">Therefore, users can be assigned to a single screen layout that works across various sizes and form factors that are used in the store.</span></span>
-
-![POS のレイアウト サイズ](../retail/media/POS-Screen-Layout-Sizes.png)
-
-- <span data-ttu-id="d0661-149">**名前** – 画面のサイズを識別するために、わかりやすい名前を入力することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-149">**Name** – You can enter a meaningful name to identify the screen size.</span></span>
-- <span data-ttu-id="d0661-150">**レイアウト タイプ** – POS アプリケーションは、特定のデバイスに最適なユーザー エクスペリエンスを提供する各種のモードでその UI を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-150">**Layout type** – The POS application can show its UI in various modes to provide the best user experience on a given device.</span></span>
-
-    - <span data-ttu-id="d0661-151">**Modern POS – Full** – 通常、フル レイアウトはデスクトップ モニターまたはタブレットなどの大型ディスプレイに最適です。</span><span class="sxs-lookup"><span data-stu-id="d0661-151">**Modern POS – Full** – Full layouts are typically best for larger displays, such as desktop monitors and tablets.</span></span> <span data-ttu-id="d0661-152">含める UI 要素を選択し、要素のサイズと配置を指定し、詳細なプロパティをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-152">You can select the UI elements to include, specify the size and placement of those elements, and configure their detailed properties.</span></span> <span data-ttu-id="d0661-153">フル レイアウトは、縦向きおよび横向きの両方のコンフィギュレーションをサポートします。</span><span class="sxs-lookup"><span data-stu-id="d0661-153">Full layouts support both portrait and landscape configurations.</span></span>
-    - <span data-ttu-id="d0661-154">**Modern POS – Compact** – コンパクト レイアウトは、通常、携帯電話や小型タブレットに最適です。</span><span class="sxs-lookup"><span data-stu-id="d0661-154">**Modern POS – Compact** – Compact layouts are typically best for phones and small tablets.</span></span> <span data-ttu-id="d0661-155">コンパクト デバイスの設計の可能性は限られています。</span><span class="sxs-lookup"><span data-stu-id="d0661-155">The design possibilities for compact devices are limited.</span></span> <span data-ttu-id="d0661-156">領収書および合計パネルの列とフィールドをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-156">You can configure the columns and fields for the receipt and totals panels.</span></span>
-
-- <span data-ttu-id="d0661-157">**幅/高さ** – これらの値は、レイアウトで想定されるピクセル単位の有効な画面のサイズを表します。</span><span class="sxs-lookup"><span data-stu-id="d0661-157">**Width/Height** – These values represent the effective screen size, in pixels, that is expected for the layout.</span></span> <span data-ttu-id="d0661-158">一部のオペレーティング システムは、高解像度ディスプレイに拡大と縮小を使用することに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d0661-158">Remember that some operating systems use scaling for high-resolution displays.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="d0661-159">アプリで解決策を表示することによって、POS 画面に必要なレイアウト サイズがわかります。</span><span class="sxs-lookup"><span data-stu-id="d0661-159">You can learn the layout size that is required for a POS screen by viewing the resolution in the app.</span></span> <span data-ttu-id="d0661-160">POS を起動し、**設定\>セッション情報**に移動します。</span><span class="sxs-lookup"><span data-stu-id="d0661-160">Start the POS, and go to **Settings \> Session information**.</span></span> <span data-ttu-id="d0661-161">POS は、現在読み込まれている画面レイアウト、レイアウトのサイズ、およびアプリのウィンドウの解像度を表示します。</span><span class="sxs-lookup"><span data-stu-id="d0661-161">POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.</span></span>
-
-![POS のレイアウト サイズ](../retail/media/POS-Session-Information.png)
-
-### <a name="button-grids"></a><span data-ttu-id="d0661-163">ボタン グリッド</span><span class="sxs-lookup"><span data-stu-id="d0661-163">Button grids</span></span>
-
-<span data-ttu-id="d0661-164">画面レイアウトでのレイアウト サイズごとに、POS ようこそ画面と**トランザクション**画面のボタン グリッドをコンフィギュレーションし、割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-164">For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and **Transaction** screen.</span></span> <span data-ttu-id="d0661-165">ようこそ画面のボタン グリッドは、左から右へ、最も小さい番号 (ようこそ画面 1) から最も大きい番号へ自動的にレイアウトされます。</span><span class="sxs-lookup"><span data-stu-id="d0661-165">Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</span></span>
-
-<span data-ttu-id="d0661-166">フル POS レイアウトでは、ボタン グリッドの配置は画面レイアウト デザイナーで指定されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-166">In Full POS layouts, the placement of button grids is specified in the screen layout designer.</span></span>
-
-<span data-ttu-id="d0661-167">コンパクト POS レイアウトでは、ボタン グリッドは上から下へ、最も小さい番号 (トランザクション画面 1) から最も大きい番号へ自動的にレイアウトされます。</span><span class="sxs-lookup"><span data-stu-id="d0661-167">In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the highest number.</span></span> <span data-ttu-id="d0661-168">**アクション**メニューからアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-168">They can be accessed on the **Actions** menu.</span></span>
-
-![コンパクト レイアウトのボタン グリッド](../retail/media/Compact-View-Button-Grids.png)
-
-### <a name="images"></a><span data-ttu-id="d0661-170">イメージ</span><span class="sxs-lookup"><span data-stu-id="d0661-170">Images</span></span>
-
-<span data-ttu-id="d0661-171">画面レイアウトでの各レイアウト サイズで、POS UI に含めるための画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-171">For each layout size in a screen layout, you can specify images to include in the POS UI.</span></span> <span data-ttu-id="d0661-172">フル POS レイアウトには、ようこそ画面に 1 つの画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-172">For Full POS layouts, a single image can be specified for the welcome screen.</span></span> <span data-ttu-id="d0661-173">この画像は、左側に最初の UI 要素として表示されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-173">This image appears as the first UI element on the left.</span></span> <span data-ttu-id="d0661-174">**トランザクション**画面で、タブの画像、またはロゴとして画像を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-174">On the **Transaction** screen, images can be used as tab images or as a logo.</span></span> <span data-ttu-id="d0661-175">コンパクト POS レイアウトは、これらの画像を使用しません。</span><span class="sxs-lookup"><span data-stu-id="d0661-175">Compact POS layouts don't use these images.</span></span>
-
-### <a name="screen-layout-designer"></a><span data-ttu-id="d0661-176">画面レイアウト デザイナー</span><span class="sxs-lookup"><span data-stu-id="d0661-176">Screen layout designer</span></span>
-
-<span data-ttu-id="d0661-177">画面レイアウト デザイナーでは、POS **トランザクション**画面のさまざまな側面をポートレートおよびランドスケープ両方のモードで、またフルおよびコンパクト両方のレイアウトで、レイアウト サイズごとにコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-177">The screen layout designer lets you configure various aspects of the POS **Transaction** screen for each layout size, in both portrait and landscape modes, and for both Full and Compact layouts.</span></span> <span data-ttu-id="d0661-178">画面レイアウト デザイナーは、ユーザーがアクセスするたびに ClickOnce の配置テクノロジーを使用してアプリケーションの最新バージョンをダウンロード、インストール、および起動します。</span><span class="sxs-lookup"><span data-stu-id="d0661-178">The screen layout designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</span></span> <span data-ttu-id="d0661-179">必ず ClickOnce のブラウザの要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="d0661-179">Be sure to check the browser requirements for ClickOnce.</span></span> <span data-ttu-id="d0661-180">Google Chrome などの一部のブラウザーでは、拡張機能が必要です。</span><span class="sxs-lookup"><span data-stu-id="d0661-180">Some browsers, such as Google Chrome, require extensions.</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="d0661-181">POS で定義され、使用されている各レイアウト サイズの画面レイアウトをコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d0661-181">You must configure a screen layout for each layout size that is defined and that is used by the POS.</span></span>
-
-### <a name="full-layout-designer"></a><span data-ttu-id="d0661-182">フル レイアウト デザイナー</span><span class="sxs-lookup"><span data-stu-id="d0661-182">Full layout designer</span></span>
-
-<span data-ttu-id="d0661-183">フル レイアウト デザイナーでは、ユーザーは UI コントロールを POS **トランザクション**画面にドラッグし、それらのコントロールの設定をコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-183">The Full layout designer lets users drag UI controls onto the POS **Transaction** screen and configure the settings of those controls.</span></span>
-
-![POS フル レイアウト デザイナー (ランドスケープ モード)](../retail/media/POS-Full-Layout-Designer-Landscape.png)
-
-- <span data-ttu-id="d0661-185">**インポート レイアウト/エクスポート レイアウト** – POS 画面レイアウト デザインを環境間で簡単に再利用して共有できるように、XML ファイルとしてエクスポートおよびインポートできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-185">**Import layout/Export layout** – You can export and import POS screen layout designs as XML files, so that you can easily reuse and share them across environments.</span></span> <span data-ttu-id="d0661-186">正しいレイアウト サイズのレイアウト デザインをインポートすることが重要です。</span><span class="sxs-lookup"><span data-stu-id="d0661-186">It's important that you import layout designs for the correct layout sizes.</span></span> <span data-ttu-id="d0661-187">それ以外の場合、UI 要素が画面に正しく収まらない場合があります。</span><span class="sxs-lookup"><span data-stu-id="d0661-187">Otherwise, UI elements might not fit correctly on the screen.</span></span>
-- <span data-ttu-id="d0661-188">**ランドスケープ/ポートレート** – POS デバイスでユーザーがランドスケープ モードとポートレート モードを切り替えることができる場合は、各モードの画面レイアウトを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d0661-188">**Landscape/Portrait** – If the POS device lets users switch between landscape and portrait modes, you must define a screen layout for each mode.</span></span> <span data-ttu-id="d0661-189">POS は自動的にスクリーン ローテーションを検出し、正しいレイアウトを示します。</span><span class="sxs-lookup"><span data-stu-id="d0661-189">The POS automatically detects screen rotation and shows the correct layout.</span></span>
-- <span data-ttu-id="d0661-190">**レイアウト グリッド** – POS レイアウト デザイナーは 4 ピクセル グリッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="d0661-190">**Layout grid** – The POS layout designer uses a 4-pixel grid.</span></span> <span data-ttu-id="d0661-191">UI は、コンテンツを正しく配置するために、グリッドに「スナップ」をコントロールします。</span><span class="sxs-lookup"><span data-stu-id="d0661-191">UI controls "snap" to the grid to help you correctly align the content.</span></span>
-- <span data-ttu-id="d0661-192">**デザイナー ズーム** – デザイナー ビューをズームインおよびズームアウトして、POS 画面のコンテンツの表示を向上できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-192">**Designer zoom** – You can zoom the designer view in and out to better view the content on the POS screen.</span></span> <span data-ttu-id="d0661-193">この機能は、POS 画面の解像度がデザイナーで使用されている画面の解像度と大幅に異なる場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="d0661-193">This feature is useful when the screen resolution on the POS differs greatly from the resolution of the screen that is used in the designer.</span></span>
-- <span data-ttu-id="d0661-194">**ナビゲーション バーの表示/非表示** – フル POS レイアウトでは、**トランザクション**画面に左側のナビゲーション バーを表示するかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-194">**Show/hide navigation bar** – For Full POS layouts, you can select whether the left navigation bar is visible on the **Transaction** screen.</span></span> <span data-ttu-id="d0661-195">この機能は、表示の解像度が低い場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="d0661-195">This feature is helpful for displays that have a lower resolution.</span></span> <span data-ttu-id="d0661-196">可視性を設定するには、デザイナー内のナビゲーション バーを右クリックし、**常に表示**チェック ボックスをオンまたはオフにします。</span><span class="sxs-lookup"><span data-stu-id="d0661-196">To set the visibility, right-click the navigation bar in the designer, and select or clear the **Always visible** check box.</span></span> <span data-ttu-id="d0661-197">ナビゲーション バーが表示されていない場合でも、POS ユーザーは左上のメニューを使用することでアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-197">If the navigation bar is hidden, POS users can still access it by using the menu in the upper left.</span></span>
-
-    ![ナビゲーション バーの表示/非表示](../retail/media/Navigation-Bar.PNG)
-
-- <span data-ttu-id="d0661-199">**POS コントロール** – POS レイアウト デザイナーは次のコントロールをサポートします。</span><span class="sxs-lookup"><span data-stu-id="d0661-199">**POS controls** – The POS layout designer supports the following controls.</span></span> <span data-ttu-id="d0661-200">右クリックしてショートカット メニューを使用することで、多くのコントロールをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-200">You can configure many controls by right-clicking and using the shortcut menu.</span></span>
-
-    ![POS UI コントロール](../retail/media/POS-UI-Controls.png)
-
-    - <span data-ttu-id="d0661-202">**テンキー** – テンキーは、POS **トランザクション**画面のユーザー入力の主なメカニズムです。</span><span class="sxs-lookup"><span data-stu-id="d0661-202">**Number pad** – The number pad is the main mechanism for user input on the POS **Transaction** screen.</span></span> <span data-ttu-id="d0661-203">コントロールをコンフィギュレーションして、完全なテンキーが表示されるようにします。</span><span class="sxs-lookup"><span data-stu-id="d0661-203">You can configure the control so that the full number pad is shown.</span></span> <span data-ttu-id="d0661-204">このオプションは、タッチ スクリーン デバイスに最適です。</span><span class="sxs-lookup"><span data-stu-id="d0661-204">This option is ideal for touchscreen devices.</span></span> <span data-ttu-id="d0661-205">また、入力フィールドのみが表示されるようにコンフィギュレーションすることもできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-205">Alternatively, you can configure it so that only the input field is shown.</span></span> <span data-ttu-id="d0661-206">この場合、物理的なキーボードは入力に使用されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-206">In this case, a physical keyboard is used for input.</span></span> <span data-ttu-id="d0661-207">テンキーの設定は、フル レイアウトでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-207">The number pad settings are available only for Full layouts.</span></span> <span data-ttu-id="d0661-208">コンパクト レイアウトでは、完全なテンキーは常に**トランザクション**画面に表示されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-208">For Compact layouts, the full number pad is always shown on the **Transaction** screen.</span></span>
-    - <span data-ttu-id="d0661-209">**合計パネル** – 合計パネルを 1 列または 2 列でコンフィギュレーションして、行数、割引額、料金、小計、および税金などの値を表示できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-209">**Totals panel** – You can configure the totals panel in either one column or two columns, to show values such as the line count, discount amount, charges, subtotal, and tax.</span></span> <span data-ttu-id="d0661-210">コンパクト レイアウトは、1 つの列だけをサポートします。</span><span class="sxs-lookup"><span data-stu-id="d0661-210">Compact layouts support only a single column.</span></span>
-    - <span data-ttu-id="d0661-211">**入庫パネル** – 入庫パネルには、POS で処理された製品およびサービスの販売明細行、支払明細行、および配送情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d0661-211">**Receipt panel** – The receipt panel contains the sales lines, payment lines, and delivery information for the products and services that are processed in the POS.</span></span> <span data-ttu-id="d0661-212">列、幅、および配置を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-212">You can specify columns, widths, and placement.</span></span> <span data-ttu-id="d0661-213">コンパクト レイアウトでは、メイン明細行の下の行に表示される追加の情報をコンフィギュレーションすることもできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-213">In Compact layouts, you can also configure additional information that appears in the row under the main line.</span></span>
-    - <span data-ttu-id="d0661-214">**顧客カード** – 顧客カードには、現在のトランザクションに関連付けられている顧客に関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-214">**Customer card** – The customer card shows information about the customer who is associated with the current transaction.</span></span> <span data-ttu-id="d0661-215">顧客カードをコンフィギュレーションして、追加情報を非表示または表示することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-215">You can configure the customer card to hide or show additional information.</span></span>
-    - <span data-ttu-id="d0661-216">**タブ コントロール** – タブ コントロールは画面レイアウト上に置くことができ、テンキー、顧客カード、ボタン グリッドなどの他のコントロールも配置することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-216">**Tab control** – You can add the tab control to a screen layout, and then put other controls, such as the number pad, customer card, or button grids, in it.</span></span> <span data-ttu-id="d0661-217">タブ コントロールは、画面により多くのコンテンツを収めるのを助けるコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="d0661-217">The tab control is a container that helps you fit more content on the screen.</span></span> <span data-ttu-id="d0661-218">タブ コントロールは、フル レイアウトでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-218">The tab control is available only for Full layouts.</span></span>
-    - <span data-ttu-id="d0661-219">**画像** – イメージ コントロールを使用して、店舗のロゴやその他のブランド イメージを**トランザクション**画面に表示することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-219">**Image** – You can use the image control to show the store's logo or another branding image on the **Transaction** screen.</span></span> <span data-ttu-id="d0661-220">イメージ コントロールは、フル レイアウトでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-220">The image control is available only for Full layouts.</span></span>
-    - <span data-ttu-id="d0661-221">**お勧めの製品** – お勧めの製品コントロールが環境用に構成されている場合は、機械学習に基づく製品候補を表示します。</span><span class="sxs-lookup"><span data-stu-id="d0661-221">**Recommended products** – If the recommended products control is configured for the environment, it shows product suggestions, based on machine learning.</span></span>
-    - <span data-ttu-id="d0661-222">**カスタム コントロール** – カスタム コントロールは、画面レイアウト内のプレース ホルダーとして機能し、カスタム コンテンツ用のスペースを確保できるようにします。</span><span class="sxs-lookup"><span data-stu-id="d0661-222">**Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</span></span> <span data-ttu-id="d0661-223">カスタム コントロールは、フル レイアウトでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-223">The custom control is available only for Full layouts.</span></span>
-
-### <a name="compact-layout-designer"></a><span data-ttu-id="d0661-224">コンパクト レイアウト デザイナー</span><span class="sxs-lookup"><span data-stu-id="d0661-224">Compact layout designer</span></span>
-
-<span data-ttu-id="d0661-225">フル レイアウト デザイナーと同様、コンパクト レイアウト デザイナーでは電話や小さなタブレット用の POS 画面レイアウトをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-225">Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</span></span> <span data-ttu-id="d0661-226">ただし、この場合は、レイアウト自体は固定されています。</span><span class="sxs-lookup"><span data-stu-id="d0661-226">However, in this case, the layout itself is fixed.</span></span> <span data-ttu-id="d0661-227">右クリックしてショートカット メニューを使用することで、レイアウトのコントロールをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-227">You can configure the controls in the layout by right-clicking and using the shortcut menu.</span></span> <span data-ttu-id="d0661-228">ただし、追加のコンテンツにドラッグ アンド ドロップ操作を使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="d0661-228">However, you can't use drag-and-drop operations for additional content.</span></span>
-
-![コンパクト レイアウト デザイナー](../retail/media/Compact-Layout-Designer.png)
-
-### <a name="button-grid-designer"></a><span data-ttu-id="d0661-230">ボタン グリッド デザイナー</span><span class="sxs-lookup"><span data-stu-id="d0661-230">Button grid designer</span></span>
-
-<span data-ttu-id="d0661-231">ボタン グリッドのデザイナーにより、フルおよびコンパクト両方のレイアウトの、POS ようこそ画面および**トランザクション**画面で使用可能なボタン グリッドをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-231">The button grid designer lets you configure button grids that can be used on the POS welcome screen and **Transaction** screen for both Full and Compact layouts.</span></span> <span data-ttu-id="d0661-232">さまざまなレイアウトとレイアウト タイプで、同じボタン グリッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-232">The same button grid can be used across layouts and layout types.</span></span> <span data-ttu-id="d0661-233">画面レイアウト デザイナーと同様、ボタン グリッド デザイナーは、ユーザーがアクセスするたびに ClickOnce の配置テクノロジーを使用してアプリケーションの最新バージョンをダウンロード、インストール、および起動します。</span><span class="sxs-lookup"><span data-stu-id="d0661-233">Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</span></span> <span data-ttu-id="d0661-234">必ず ClickOnce のブラウザの要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="d0661-234">Be sure to check the browser requirements for ClickOnce.</span></span> <span data-ttu-id="d0661-235">Google Chrome などの一部のブラウザーでは、拡張機能が必要です。</span><span class="sxs-lookup"><span data-stu-id="d0661-235">Some browsers, such as Google Chrome, require extensions.</span></span>
-
-![ボタン グリッド デザイナー](../retail/media/Button-Grid-Designer.png)
-
-- <span data-ttu-id="d0661-237">**新しいボタン** – クリックして、ボタン グリッドに新しいボタンを追加します。</span><span class="sxs-lookup"><span data-stu-id="d0661-237">**New button** – Click to add a new button to the button grid.</span></span> <span data-ttu-id="d0661-238">既定では、新しいボタンはグリッドの左上隅に表示されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-238">By default, new buttons appear in the upper-left corner of the grid.</span></span> <span data-ttu-id="d0661-239">ただし、レイアウトにドラッグしてボタンを並べ替えることもできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-239">However, you can arrange buttons by dragging them in the layout.</span></span>
-
-    > [!IMPORTANT]
-    > <span data-ttu-id="d0661-240">ボタン グリッドのコンテンツは重複することがあります。</span><span class="sxs-lookup"><span data-stu-id="d0661-240">The contents of the button grid can overlap.</span></span> <span data-ttu-id="d0661-241">ボタンを並べ替えた場合は、その他のボタンと重複していないかを確認します。</span><span class="sxs-lookup"><span data-stu-id="d0661-241">When you arrange buttons, make sure that they don't hide other buttons.</span></span>
-
-- <span data-ttu-id="d0661-242">**新しいデザイン** – クリックすると、行および列ごとのボタンの数を指定して、ボタン グリッド レイアウトを自動的に設定します。</span><span class="sxs-lookup"><span data-stu-id="d0661-242">**New design** – Click to automatically set up a button grid layout by specifying the number of buttons per row and column.</span></span>
-- <span data-ttu-id="d0661-243">**ボタン プロパティ** – ボタンを右クリックし、ショートカット メニューを使用することで、ボタン プロパティをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d0661-243">**Button properties** – You can configure button properties by right-clicking the button and using the shortcut menu.</span></span>
-
-    > [!IMPORTANT]
-    > <span data-ttu-id="d0661-244">一部のボタン グリッドの設定は、Retail Modern POS やクラウド POS ではなく、エンタープライズ POS にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="d0661-244">Some button grid settings apply only to Enterprise POS, not to Retail Modern POS or Cloud POS.</span></span>
-
-    ![ボタン グリッドのボタン プロパティ](../retail/media/Button-grid-button-properties.png)
-
-    - <span data-ttu-id="d0661-246">**アクション** – 該当する POS の操作の一覧で、POS でボタンがクリックされるときに呼び出される操作を選択します。</span><span class="sxs-lookup"><span data-stu-id="d0661-246">**Action** – In the list of applicable POS operations, select the operation that is invoked when the button is clicked in the POS.</span></span>
-
-        <span data-ttu-id="d0661-247">サポートされている POS 操作の一覧については、[オンラインおよびオフラインでの POS 操作](pos-operations.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d0661-247">For the list of supported POS operations, see [POS operations, online and offline](pos-operations.md).</span></span>
-
-    - <span data-ttu-id="d0661-248">**アクション パラメーター** – 一部の POS 操作は呼び出されるとき、追加のパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="d0661-248">**Action parameters** – Some POS operations use additional parameters when they are invoked.</span></span> <span data-ttu-id="d0661-249">たとえば、製品の追加の操作の際、ユーザーは追加する製品を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-249">For example, for the Add product operation, users can specify the product to add.</span></span>
-    - <span data-ttu-id="d0661-250">**ボタン テキスト** – POS のボタンに表示されるテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="d0661-250">**Button text** – Specify the text that appears on the button in the POS.</span></span>
-    - <span data-ttu-id="d0661-251">**ボタン テキストの非表示** – このチェック ボックスを使用して、ボタンのテキストを表示または非表示にします。</span><span class="sxs-lookup"><span data-stu-id="d0661-251">**Hide button text** – Use this check box to hide or show the button text.</span></span> <span data-ttu-id="d0661-252">ボタン テキストは多くの場合、アイコンのみが表示される小さなボタンのために非表示になっています。</span><span class="sxs-lookup"><span data-stu-id="d0661-252">Button text is often hidden for small buttons that show only an icon.</span></span>
-    - <span data-ttu-id="d0661-253">**ツール ヒント** – ユーザーがボタンの上にマウスを重ねるときに表示される追加のヘルプ テキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="d0661-253">**Tooltip** – Specify additional Help text that appears when users mouse over the button.</span></span>
-    - <span data-ttu-id="d0661-254">**列内のサイズ/行内のサイズ** – ボタンの高さと幅を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d0661-254">**Size in columns/Size in rows** – You can specify how tall and wide the button is.</span></span>
-
-        ![行および列内の POS ボタン サイズ](../retail/media/POS-Button-Sizes-In-Rows-And-Columns.png)
-
-    - <span data-ttu-id="d0661-256">**カスタム フォント** – **POS のカスタム フォントの有効化**チェック ボックスを選択するとき、POS の既定のシステム フォント以外のフォントを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-256">**Custom font** – When you select the **Enable custom font for POS** check box, you can specify a font other than the default system font for the POS.</span></span>
-    - <span data-ttu-id="d0661-257">**カスタム テーマ** – 既定では、POS ボタンは視覚プロファイルからアクセント色を使用します。</span><span class="sxs-lookup"><span data-stu-id="d0661-257">**Custom theme** – By default, POS buttons use the accent color from the visual profile.</span></span> <span data-ttu-id="d0661-258">**カスタム テーマの使用**チェック ボックスを選択すると、 追加の色を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-258">When you select the **Use custom theme** check box, you can specify additional colors.</span></span>
-
-        > [!NOTE]
-        > <span data-ttu-id="d0661-259">Retail Modern POS およびクラウド POS は**背景色**および**フォントの色**のみを使用します。</span><span class="sxs-lookup"><span data-stu-id="d0661-259">Retail Modern POS and Cloud POS use only the **Back color** and **Font color** values.</span></span>
-
-    - <span data-ttu-id="d0661-260">**ボタン画像** – ボタンには、画像かアイコンを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d0661-260">**Button image** – Buttons can include images or icons.</span></span> <span data-ttu-id="d0661-261">**小売\>チャンネル設定\>POS 設定\>POS\>画像**で指定されている利用可能な画像の中から選択します。</span><span class="sxs-lookup"><span data-stu-id="d0661-261">Select among the available images that are specified at **Retail \> Channel setup \> POS setup \> POS \> Images**.</span></span>
-
-![POS でのボタン グリッドの例](../retail/media/Example-Button-Grid-In-POS.png)
-
-## <a name="additional-resources"></a><span data-ttu-id="d0661-263">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="d0661-263">Additional resources</span></span>
-
-[<span data-ttu-id="d0661-264">Retail POS のレイアウト デザイナーのインストール</span><span class="sxs-lookup"><span data-stu-id="d0661-264">Install the Retail POS Layout designer</span></span>](install-pos-layout-designer.md)
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="pos-screen-layouts.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>pos-screen-layouts.280407.e9536563ce7ddfc4aef54ae05267316ea8139263.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>e9536563ce7ddfc4aef54ae05267316ea8139263</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\pos-screen-layouts.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Screen layouts for the point of sale (POS)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売時点管理 (POS) の画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Screen layouts for the point of sale (POS)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売時点管理 (POS) の画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The Retail POS user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and/or users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS のユーザー インターフェイス (UI) は、店舗、レジスター、および/またはユーザーに割り当てられた視覚プロファイルと画面レイアウトの組み合わせを使用してコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、POS UI のコンフィギュレーション可能な側面を構成するさまざまなエンティティ間の関係を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>POS screen layout entities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 画面レイアウト エンティティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Visual profile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジュアル プロファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">視覚プロファイルはレジスターに割り当てられ、レジスター固有でユーザー間で共有される視覚要素を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Every user who signs in to the register sees the same theme, colors, and images.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジスターにサインインするユーザーには、同じテーマ、色、および画像が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>POS welcome screen with Light theme</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Light テーマの POS ようこそ画面</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>POS Transaction screen with Dark theme</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dark テーマの POS トランザクション画面</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">**</bpt>Profile number<ept id="p1">**</ept> – The profile number is the unique identifier of the visual profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロファイル番号<ept id="p1">**</ept> – プロファイル番号は、視覚プロファイルの固有識別子です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – You can specify a meaningful name that will help identify the correct profile for your situation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>説明<ept id="p1">**</ept> – 状況に合った正しいプロファイルを特定するのに役立つ、わかりやすい名前を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Theme<ept id="p1">**</ept> – You can select between the Light and Dark application themes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テーマ<ept id="p1">**</ept> – Light または Dark アプリケーション テーマを選択できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>The theme affects the font and background colors throughout the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーマは、アプリケーション全体で、フォントと背景の色に影響します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Accent color<ept id="p1">**</ept> – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクセント色<ept id="p1">**</ept> – アクセント色は、タイル、コマンド ボタン、またはハイパーリンクなどの固有の視覚要素を、区別または強調表示するために POS 全体で使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Typically, these elements are actionable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、これらの要素は実行可能です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">**</bpt>Header color<ept id="p1">**</ept> – You can configure the color of the page header to meet the retailer's branding requirements.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ヘッダーの色<ept id="p1">**</ept> – 小売業者のブランドの要件を満たすようにページ ヘッダーの色をコンフィギュレーションすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>This feature is available only in Microsoft Dynamics 365 for Retail version 1611.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">この機能は Microsoft Dynamics 365 for Retail バージョン 1611 でのみ使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">**</bpt>Show date/time<ept id="p1">**</ept> – When enbled, the current date and time will be displayed in the POS header.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>日時を表示<ept id="p1">**</ept> – 有効な場合、現在の日時が POS ヘッダーに表示されます。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">**</bpt>Login backgrounds<ept id="p1">**</ept> – You can specify a background image for the sign-in screen.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ログイン バックグラウンド<ept id="p1">**</ept> – サインイン画面の背景画像を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">大容量のファイルの保存と読み込みは、アプリケーションの動作やパフォーマンスに影響を与える可能性があるため、背景画像のファイル サイズはできるだけ小さくする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">**</bpt>Application background<ept id="p1">**</ept> – You can specify a background image that is used instead of the solid theme color throughout the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アプリケーションの背景<ept id="p1">**</ept> - アプリケーション全体で無地のテーマ色の代わりに使用されている背景画像を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>As for login backgrounds, the file size should be kept as small as possible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ログイン バックグラウンドに関しては、ファイル サイズをできる限り小さくする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Screen layouts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト構成によって、POS ようこそ画面および<bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面での UI コントロールのアクション、コンテンツ、および配置が決定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>POS Screen layout view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS 画面レイアウト表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">**</bpt>Welcome screen<ept id="p1">**</ept> – In most cases, the welcome screen is the page that users see when they first sign in to the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ようこそ画面<ept id="p1">**</ept> – ほとんどの場合、ようこそ画面は、ユーザーが初めて POS にサインインするときに表示されるページです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The welcome screen can consist of a branding image and button grids that provide access to POS operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ようこそ画面は、ブランド イメージと、POS 操作へのアクセスを提供するボタン グリッドで構成することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Typically, operations that aren't specific to the current transaction are put on this screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、現在のトランザクションに固有でない操作はこのスクリーンに表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>POS welcome screen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ようこそ画面</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">**</bpt>Transaction screen<ept id="p1">**</ept> – The <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen is the main screen in the POS for processing sales transactions and orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>トランザクション画面<ept id="p1">**</ept> – <bpt id="p2">**</bpt>トランザクション<ept id="p2">**</ept>画面は、販売トランザクションおよび注文処理のための POS のメイン画面です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The content and layout are configured by using the screen layout designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテンツやレイアウトは、画面レイアウト デザイナーを使用してコンフィギュレーションします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>POS Transaction screen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS トランザクション画面</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>Default start screen<ept id="p1">**</ept> – Some retailers prefer that cashiers go directly to the <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen after sign-in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既定のスタート画面<ept id="p1">**</ept> – 一部の小売業者は、サインイン後にレジ担当者が<bpt id="p2">**</bpt>トランザクション<ept id="p2">**</ept>画面に直接移動することを好みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The <bpt id="p1">**</bpt>Default start screen<ept id="p1">**</ept> setting lets you specify the default screen that appears after sign-in for each screen layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>既定のスタート画面<ept id="p1">**</ept>設定では、各画面レイアウトのサインイン後に表示される既定の画面を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Assignment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">割り当て</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Screen layouts can be assigned at the store, register, or user level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウトは、店舗、レジスター、またはユーザー レベルで割り当てることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The user assignment overrides the register and store assignments, and the register assignment overrides the store assignment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの割り当てはレジスターと店舗の割り当てを上書きし、レジスターの割り当ては店舗の割り当てを上書きします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>In a simple scenario where all users use the same layout, regardless of register or role, the screen layout can be set only at the store level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのユーザーがレジスターまたはロールに関係なく同じレイアウトを使用する単純なシナリオでは、画面レイアウトは店舗レベルでのみ設定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>In scenarios where specific registers or users require specialized layouts, those layouts can be assigned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のレジスターまたはユーザーが特殊なレイアウトを必要とするシナリオでは、それらのレイアウトを割り当てることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Layout sizes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レイアウト サイズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Most aspects of the POS UI are responsive, and the layout is automatically resized and adjusted based on the screen size and orientation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS UI の大部分は応答可能で、レイアウトは画面のサイズや向きに基づいて自動的にサイズを変更、調整されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>However, the POS <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen must be configured for every screen resolution that is expected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、POS <bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面は予想されるすべての画面解像度用にコンフィギュレーションする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>At startup, the POS application automatically selects the closest layout size that is configured for the device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">起動時に、POS アプリケーションはデバイス用にコンフィギュレーションされたものに最も近いレイアウト サイズを自動的に選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>A screen layout can also contain configurations for both landscape and portrait modes, and for both full-size and compact devices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウトは、ランドスケープとポートレート両方のモード、およびフルサイズとコンパクト両方のデバイスのコンフィギュレーションを含めることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Therefore, users can be assigned to a single screen layout that works across various sizes and form factors that are used in the store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、ユーザーは店舗内で使用されるさまざまなサイズとフォーム係数で使用する 1 つの画面レイアウトに割り当てられます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>POS layout sizes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS のレイアウト サイズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> – You can enter a meaningful name to identify the screen size.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept> – 画面のサイズを識別するために、わかりやすい名前を入力することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source><bpt id="p1">**</bpt>Layout type<ept id="p1">**</ept> – The POS application can show its UI in various modes to provide the best user experience on a given device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>レイアウト タイプ<ept id="p1">**</ept> – POS アプリケーションは、特定のデバイスに最適なユーザー エクスペリエンスを提供する各種のモードでその UI を表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">**</bpt>Modern POS – Full<ept id="p1">**</ept> – Full layouts are typically best for larger displays, such as desktop monitors and tablets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Modern POS – Full<ept id="p1">**</ept> – 通常、フル レイアウトはデスクトップ モニターまたはタブレットなどの大型ディスプレイに最適です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>You can select the UI elements to include, specify the size and placement of those elements, and configure their detailed properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">含める UI 要素を選択し、要素のサイズと配置を指定し、詳細なプロパティをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Full layouts support both portrait and landscape configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル レイアウトは、縦向きおよび横向きの両方のコンフィギュレーションをサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source><bpt id="p1">**</bpt>Modern POS – Compact<ept id="p1">**</ept> – Compact layouts are typically best for phones and small tablets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Modern POS – Compact<ept id="p1">**</ept> – コンパクト レイアウトは、通常、携帯電話や小型タブレットに最適です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>The design possibilities for compact devices are limited.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト デバイスの設計の可能性は限られています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>You can configure the columns and fields for the receipt and totals panels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">領収書および合計パネルの列とフィールドをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">**</bpt>Width/Height<ept id="p1">**</ept> – These values represent the effective screen size, in pixels, that is expected for the layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>幅/高さ<ept id="p1">**</ept> – これらの値は、レイアウトで想定されるピクセル単位の有効な画面のサイズを表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Remember that some operating systems use scaling for high-resolution displays.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部のオペレーティング システムは、高解像度ディスプレイに拡大と縮小を使用することに注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>You can learn the layout size that is required for a POS screen by viewing the resolution in the app.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリで解決策を表示することによって、POS 画面に必要なレイアウト サイズがわかります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Start the POS, and go to <bpt id="p1">**</bpt>Settings <ph id="ph1">\&gt;</ph> Session information<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS を起動し、<bpt id="p1">**</bpt>設定<ph id="ph1">\&gt;</ph>セッション情報<ept id="p1">**</ept>に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS は、現在読み込まれている画面レイアウト、レイアウトのサイズ、およびアプリのウィンドウの解像度を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>POS layout sizes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS のレイアウト サイズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Button grids</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウトでのレイアウト サイズごとに、POS ようこそ画面と<bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面のボタン グリッドをコンフィギュレーションし、割り当てることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ようこそ画面のボタン グリッドは、左から右へ、最も小さい番号 (ようこそ画面 1) から最も大きい番号へ自動的にレイアウトされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>In Full POS layouts, the placement of button grids is specified in the screen layout designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル POS レイアウトでは、ボタン グリッドの配置は画面レイアウト デザイナーで指定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the highest number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト POS レイアウトでは、ボタン グリッドは上から下へ、最も小さい番号 (トランザクション画面 1) から最も大きい番号へ自動的にレイアウトされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>They can be accessed on the <bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクション<ept id="p1">**</ept>メニューからアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Compact layout button grids</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト レイアウトのボタン グリッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Images</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>For each layout size in a screen layout, you can specify images to include in the POS UI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウトでの各レイアウト サイズで、POS UI に含めるための画像を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>For Full POS layouts, a single image can be specified for the welcome screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル POS レイアウトには、ようこそ画面に 1 つの画像を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>This image appears as the first UI element on the left.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この画像は、左側に最初の UI 要素として表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>On the <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen, images can be used as tab images or as a logo.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面で、タブの画像、またはロゴとして画像を使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Compact POS layouts don't use these images.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト POS レイアウトは、これらの画像を使用しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Screen layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>The screen layout designer lets you configure various aspects of the POS <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen for each layout size, in both portrait and landscape modes, and for both Full and Compact layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト デザイナーでは、POS <bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面のさまざまな側面をポートレートおよびランドスケープ両方のモードで、またフルおよびコンパクト両方のレイアウトで、レイアウト サイズごとにコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>The screen layout designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト デザイナーは、ユーザーがアクセスするたびに ClickOnce の配置テクノロジーを使用してアプリケーションの最新バージョンをダウンロード、インストール、および起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Be sure to check the browser requirements for ClickOnce.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必ず ClickOnce のブラウザの要件を確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Some browsers, such as Google Chrome, require extensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Google Chrome などの一部のブラウザーでは、拡張機能が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>You must configure a screen layout for each layout size that is defined and that is used by the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS で定義され、使用されている各レイアウト サイズの画面レイアウトをコンフィギュレーションする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Full layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル レイアウト デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>The Full layout designer lets users drag UI controls onto the POS <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen and configure the settings of those controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル レイアウト デザイナーでは、ユーザーは UI コントロールを POS <bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面にドラッグし、それらのコントロールの設定をコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>POS Full layout designer (landscape mode)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS フル レイアウト デザイナー (ランドスケープ モード)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><bpt id="p1">**</bpt>Import layout/Export layout<ept id="p1">**</ept> – You can export and import POS screen layout designs as XML files, so that you can easily reuse and share them across environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>インポート レイアウト/エクスポート レイアウト<ept id="p1">**</ept> – POS 画面レイアウト デザインを環境間で簡単に再利用して共有できるように、XML ファイルとしてエクスポートおよびインポートできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>It's important that you import layout designs for the correct layout sizes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正しいレイアウト サイズのレイアウト デザインをインポートすることが重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Otherwise, UI elements might not fit correctly on the screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、UI 要素が画面に正しく収まらない場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source><bpt id="p1">**</bpt>Landscape/Portrait<ept id="p1">**</ept> – If the POS device lets users switch between landscape and portrait modes, you must define a screen layout for each mode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ランドスケープ/ポートレート<ept id="p1">**</ept> – POS デバイスでユーザーがランドスケープ モードとポートレート モードを切り替えることができる場合は、各モードの画面レイアウトを定義する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>The POS automatically detects screen rotation and shows the correct layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS は自動的にスクリーン ローテーションを検出し、正しいレイアウトを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source><bpt id="p1">**</bpt>Layout grid<ept id="p1">**</ept> – The POS layout designer uses a 4-pixel grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>レイアウト グリッド<ept id="p1">**</ept> – POS レイアウト デザイナーは 4 ピクセル グリッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>UI controls "snap" to the grid to help you correctly align the content.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UI は、コンテンツを正しく配置するために、グリッドに「スナップ」をコントロールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source><bpt id="p1">**</bpt>Designer zoom<ept id="p1">**</ept> – You can zoom the designer view in and out to better view the content on the POS screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デザイナー ズーム<ept id="p1">**</ept> – デザイナー ビューをズームインおよびズームアウトして、POS 画面のコンテンツの表示を向上できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>This feature is useful when the screen resolution on the POS differs greatly from the resolution of the screen that is used in the designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、POS 画面の解像度がデザイナーで使用されている画面の解像度と大幅に異なる場合に便利です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source><bpt id="p1">**</bpt>Show/hide navigation bar<ept id="p1">**</ept> – For Full POS layouts, you can select whether the left navigation bar is visible on the <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ナビゲーション バーの表示/非表示<ept id="p1">**</ept> – フル POS レイアウトでは、<bpt id="p2">**</bpt>トランザクション<ept id="p2">**</ept>画面に左側のナビゲーション バーを表示するかどうかを選択できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>This feature is helpful for displays that have a lower resolution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、表示の解像度が低い場合に便利です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>To set the visibility, right-click the navigation bar in the designer, and select or clear the <bpt id="p1">**</bpt>Always visible<ept id="p1">**</ept> check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可視性を設定するには、デザイナー内のナビゲーション バーを右クリックし、<bpt id="p1">**</bpt>常に表示<ept id="p1">**</ept>チェック ボックスをオンまたはオフにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>If the navigation bar is hidden, POS users can still access it by using the menu in the upper left.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーション バーが表示されていない場合でも、POS ユーザーは左上のメニューを使用することでアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Show/hide navigation bar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ナビゲーション バーの表示/非表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source><bpt id="p1">**</bpt>POS controls<ept id="p1">**</ept> – The POS layout designer supports the following controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>POS コントロール<ept id="p1">**</ept> – POS レイアウト デザイナーは次のコントロールをサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>You can configure many controls by right-clicking and using the shortcut menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックしてショートカット メニューを使用することで、多くのコントロールをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>POS UI controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS UI コントロール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source><bpt id="p1">**</bpt>Number pad<ept id="p1">**</ept> – The number pad is the main mechanism for user input on the POS <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テンキー<ept id="p1">**</ept> – テンキーは、POS <bpt id="p2">**</bpt>トランザクション<ept id="p2">**</ept>画面のユーザー入力の主なメカニズムです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>You can configure the control so that the full number pad is shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールをコンフィギュレーションして、完全なテンキーが表示されるようにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>This option is ideal for touchscreen devices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションは、タッチ スクリーン デバイスに最適です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Alternatively, you can configure it so that only the input field is shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、入力フィールドのみが表示されるようにコンフィギュレーションすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>In this case, a physical keyboard is used for input.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、物理的なキーボードは入力に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>The number pad settings are available only for Full layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンキーの設定は、フル レイアウトでのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>For Compact layouts, the full number pad is always shown on the <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト レイアウトでは、完全なテンキーは常に<bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source><bpt id="p1">**</bpt>Totals panel<ept id="p1">**</ept> – You can configure the totals panel in either one column or two columns, to show values such as the line count, discount amount, charges, subtotal, and tax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>合計パネル<ept id="p1">**</ept> – 合計パネルを 1 列または 2 列でコンフィギュレーションして、行数、割引額、料金、小計、および税金などの値を表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Compact layouts support only a single column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト レイアウトは、1 つの列だけをサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source><bpt id="p1">**</bpt>Receipt panel<ept id="p1">**</ept> – The receipt panel contains the sales lines, payment lines, and delivery information for the products and services that are processed in the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>入庫パネル<ept id="p1">**</ept> – 入庫パネルには、POS で処理された製品およびサービスの販売明細行、支払明細行、および配送情報が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>You can specify columns, widths, and placement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">列、幅、および配置を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>In Compact layouts, you can also configure additional information that appears in the row under the main line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト レイアウトでは、メイン明細行の下の行に表示される追加の情報をコンフィギュレーションすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">**</bpt>Customer card<ept id="p1">**</ept> – The customer card shows information about the customer who is associated with the current transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>顧客カード<ept id="p1">**</ept> – 顧客カードには、現在のトランザクションに関連付けられている顧客に関する情報が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>You can configure the customer card to hide or show additional information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客カードをコンフィギュレーションして、追加情報を非表示または表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source><bpt id="p1">**</bpt>Tab control<ept id="p1">**</ept> – You can add the tab control to a screen layout, and then put other controls, such as the number pad, customer card, or button grids, in it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タブ コントロール<ept id="p1">**</ept> – タブ コントロールは画面レイアウト上に置くことができ、テンキー、顧客カード、ボタン グリッドなどの他のコントロールも配置することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>The tab control is a container that helps you fit more content on the screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タブ コントロールは、画面により多くのコンテンツを収めるのを助けるコンテナーです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>The tab control is available only for Full layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タブ コントロールは、フル レイアウトでのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source><bpt id="p1">**</bpt>Image<ept id="p1">**</ept> – You can use the image control to show the store's logo or another branding image on the <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>画像<ept id="p1">**</ept> – イメージ コントロールを使用して、店舗のロゴやその他のブランド イメージを<bpt id="p2">**</bpt>トランザクション<ept id="p2">**</ept>画面に表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>The image control is available only for Full layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ コントロールは、フル レイアウトでのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source><bpt id="p1">**</bpt>Recommended products<ept id="p1">**</ept> – If the recommended products control is configured for the environment, it shows product suggestions, based on machine learning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>お勧めの製品<ept id="p1">**</ept> – お勧めの製品コントロールが環境用に構成されている場合は、機械学習に基づく製品候補を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source><bpt id="p1">**</bpt>Custom control<ept id="p1">**</ept> – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>カスタム コントロール<ept id="p1">**</ept> – カスタム コントロールは、画面レイアウト内のプレース ホルダーとして機能し、カスタム コンテンツ用のスペースを確保できるようにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>The custom control is available only for Full layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム コントロールは、フル レイアウトでのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Compact layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト レイアウト デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル レイアウト デザイナーと同様、コンパクト レイアウト デザイナーでは電話や小さなタブレット用の POS 画面レイアウトをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>However, in this case, the layout itself is fixed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、この場合は、レイアウト自体は固定されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>You can configure the controls in the layout by right-clicking and using the shortcut menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右クリックしてショートカット メニューを使用することで、レイアウトのコントロールをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>However, you can't use drag-and-drop operations for additional content.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、追加のコンテンツにドラッグ アンド ドロップ操作を使用することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Compact layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパクト レイアウト デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Button grid designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッド デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>The button grid designer lets you configure button grids that can be used on the POS welcome screen and <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen for both Full and Compact layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッドのデザイナーにより、フルおよびコンパクト両方のレイアウトの、POS ようこそ画面および<bpt id="p1">**</bpt>トランザクション<ept id="p1">**</ept>画面で使用可能なボタン グリッドをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The same button grid can be used across layouts and layout types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さまざまなレイアウトとレイアウト タイプで、同じボタン グリッドを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画面レイアウト デザイナーと同様、ボタン グリッド デザイナーは、ユーザーがアクセスするたびに ClickOnce の配置テクノロジーを使用してアプリケーションの最新バージョンをダウンロード、インストール、および起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Be sure to check the browser requirements for ClickOnce.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必ず ClickOnce のブラウザの要件を確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Some browsers, such as Google Chrome, require extensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Google Chrome などの一部のブラウザーでは、拡張機能が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Button grid designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッド デザイナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source><bpt id="p1">**</bpt>New button<ept id="p1">**</ept> – Click to add a new button to the button grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しいボタン<ept id="p1">**</ept> – クリックして、ボタン グリッドに新しいボタンを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>By default, new buttons appear in the upper-left corner of the grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、新しいボタンはグリッドの左上隅に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>However, you can arrange buttons by dragging them in the layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、レイアウトにドラッグしてボタンを並べ替えることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>The contents of the button grid can overlap.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッドのコンテンツは重複することがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>When you arrange buttons, make sure that they don't hide other buttons.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタンを並べ替えた場合は、その他のボタンと重複していないかを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">**</bpt>New design<ept id="p1">**</ept> – Click to automatically set up a button grid layout by specifying the number of buttons per row and column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しいデザイン<ept id="p1">**</ept> – クリックすると、行および列ごとのボタンの数を指定して、ボタン グリッド レイアウトを自動的に設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source><bpt id="p1">**</bpt>Button properties<ept id="p1">**</ept> – You can configure button properties by right-clicking the button and using the shortcut menu.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ボタン プロパティ<ept id="p1">**</ept> – ボタンを右クリックし、ショートカット メニューを使用することで、ボタン プロパティをコンフィギュレーションできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Some button grid settings apply only to Enterprise POS, not to Retail Modern POS or Cloud POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部のボタン グリッドの設定は、Retail Modern POS やクラウド POS ではなく、エンタープライズ POS にのみ適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Button grid button properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン グリッドのボタン プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source><bpt id="p1">**</bpt>Action<ept id="p1">**</ept> – In the list of applicable POS operations, select the operation that is invoked when the button is clicked in the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクション<ept id="p1">**</ept> – 該当する POS の操作の一覧で、POS でボタンがクリックされるときに呼び出される操作を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>For the list of supported POS operations, see <bpt id="p1">[</bpt>POS operations, online and offline<ept id="p1">](pos-operations.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サポートされている POS 操作の一覧については、<bpt id="p1">[</bpt>オンラインおよびオフラインでの POS 操作<ept id="p1">](pos-operations.md)</ept>を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source><bpt id="p1">**</bpt>Action parameters<ept id="p1">**</ept> – Some POS operations use additional parameters when they are invoked.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクション パラメーター<ept id="p1">**</ept> – 一部の POS 操作は呼び出されるとき、追加のパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>For example, for the Add product operation, users can specify the product to add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、製品の追加の操作の際、ユーザーは追加する製品を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source><bpt id="p1">**</bpt>Button text<ept id="p1">**</ept> – Specify the text that appears on the button in the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ボタン テキスト<ept id="p1">**</ept> – POS のボタンに表示されるテキストを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source><bpt id="p1">**</bpt>Hide button text<ept id="p1">**</ept> – Use this check box to hide or show the button text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ボタン テキストの非表示<ept id="p1">**</ept> – このチェック ボックスを使用して、ボタンのテキストを表示または非表示にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Button text is often hidden for small buttons that show only an icon.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタン テキストは多くの場合、アイコンのみが表示される小さなボタンのために非表示になっています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source><bpt id="p1">**</bpt>Tooltip<ept id="p1">**</ept> – Specify additional Help text that appears when users mouse over the button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ツール ヒント<ept id="p1">**</ept> – ユーザーがボタンの上にマウスを重ねるときに表示される追加のヘルプ テキストを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source><bpt id="p1">**</bpt>Size in columns/Size in rows<ept id="p1">**</ept> – You can specify how tall and wide the button is.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>列内のサイズ/行内のサイズ<ept id="p1">**</ept> – ボタンの高さと幅を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>POS button sizes in rows and columns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行および列内の POS ボタン サイズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source><bpt id="p1">**</bpt>Custom font<ept id="p1">**</ept> – When you select the <bpt id="p2">**</bpt>Enable custom font for POS<ept id="p2">**</ept> check box, you can specify a font other than the default system font for the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>カスタム フォント<ept id="p1">**</ept> – <bpt id="p2">**</bpt>POS のカスタム フォントの有効化<ept id="p2">**</ept>チェック ボックスを選択するとき、POS の既定のシステム フォント以外のフォントを指定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source><bpt id="p1">**</bpt>Custom theme<ept id="p1">**</ept> – By default, POS buttons use the accent color from the visual profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>カスタム テーマ<ept id="p1">**</ept> – 既定では、POS ボタンは視覚プロファイルからアクセント色を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>When you select the <bpt id="p1">**</bpt>Use custom theme<ept id="p1">**</ept> check box, you can specify additional colors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>カスタム テーマの使用<ept id="p1">**</ept>チェック ボックスを選択すると、 追加の色を指定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Retail Modern POS and Cloud POS use only the <bpt id="p1">**</bpt>Back color<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Font color<ept id="p2">**</ept> values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS およびクラウド POS は<bpt id="p1">**</bpt>背景色<ept id="p1">**</ept>および<bpt id="p2">**</bpt>フォントの色<ept id="p2">**</ept>のみを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source><bpt id="p1">**</bpt>Button image<ept id="p1">**</ept> – Buttons can include images or icons.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ボタン画像<ept id="p1">**</ept> – ボタンには、画像かアイコンを含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Select among the available images that are specified at <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS <ph id="ph4">\&gt;</ph> Images<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ph id="ph1">\&gt;</ph>チャンネル設定<ph id="ph2">\&gt;</ph>POS 設定<ph id="ph3">\&gt;</ph>POS<ph id="ph4">\&gt;</ph>画像<ept id="p1">**</ept>で指定されている利用可能な画像の中から選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Example button grid in the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS でのボタン グリッドの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source><bpt id="p1">[</bpt>Install the Retail POS Layout designer<ept id="p1">](install-pos-layout-designer.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS のレイアウト デザイナーのインストール<ept id="p1">](install-pos-layout-designer.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

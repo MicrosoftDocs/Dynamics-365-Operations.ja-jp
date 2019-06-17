@@ -1,127 +1,324 @@
----
-title: ビルド操作
-description: このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。
-author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 76764
-ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
-ms.search.region: Global
-ms.author: robadawy
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d617cb8da84ae2a2b3ab6e690bfa08a257ff027d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537000"
----
-# <a name="build-operations"></a><span data-ttu-id="b8b2b-103">ビルド操作</span><span class="sxs-lookup"><span data-stu-id="b8b2b-103">Build operations</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="b8b2b-104">このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-104">This topic reviews the process to build projects and full build of model packages.</span></span>
-
-<span data-ttu-id="b8b2b-105">モデルの要素は、アプリケーションで使用できるように構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-105">The elements of a model must be built so that they can be used by the application.</span></span> <span data-ttu-id="b8b2b-106">要素をプロジェクト内にビルドすることができます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-106">You can build the elements in a project.</span></span> <span data-ttu-id="b8b2b-107">また、モデル内のすべての要素をビルドすることもできます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-107">You can also build all the elements in a model.</span></span> <span data-ttu-id="b8b2b-108">ビルド操作中に次のアクションが実行されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-108">The following actions are performed during a build operation:</span></span>
-
--   <span data-ttu-id="b8b2b-109">メタデータの検証</span><span class="sxs-lookup"><span data-stu-id="b8b2b-109">Metadata validation</span></span>
--   <span data-ttu-id="b8b2b-110">X++ コードの検証</span><span class="sxs-lookup"><span data-stu-id="b8b2b-110">X++ code validation</span></span>
--   <span data-ttu-id="b8b2b-111">推奨チェック</span><span class="sxs-lookup"><span data-stu-id="b8b2b-111">Best practice checks</span></span>
--   <span data-ttu-id="b8b2b-112">レポート RDL の生成</span><span class="sxs-lookup"><span data-stu-id="b8b2b-112">Report RDL generation</span></span>
--   <span data-ttu-id="b8b2b-113">コンパイル、IL 生成、および .NET アセンブリの作成</span><span class="sxs-lookup"><span data-stu-id="b8b2b-113">Compilation, IL generation, and creation of the .NET assemblies</span></span>
--   <span data-ttu-id="b8b2b-114">ラベル アセンブリの生成および他のリソース ファイルの配置</span><span class="sxs-lookup"><span data-stu-id="b8b2b-114">Label assembly generation and deployment of other resource files</span></span>
--   <span data-ttu-id="b8b2b-115">データベース同期</span><span class="sxs-lookup"><span data-stu-id="b8b2b-115">Database synchronization</span></span>
-
-## <a name="build-a-project"></a><span data-ttu-id="b8b2b-116">プロジェクトのビルド</span><span class="sxs-lookup"><span data-stu-id="b8b2b-116">Build a project</span></span>
-
-<span data-ttu-id="b8b2b-117">プロジェクトを作成するときは、新規の要素か、変更された要素のみが作成されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-117">When you build a project, only those elements that are new or that have changed are built.</span></span> <span data-ttu-id="b8b2b-118">プロジェクトをビルドするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-118">To build a project, follow these steps.</span></span>
-
-1.  <span data-ttu-id="b8b2b-119">ソリューション エクスプローラーで、プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-119">In Solution Explorer, select the project.</span></span>
-2.  <span data-ttu-id="b8b2b-120">**ビルド**メニューで、**ビルド&lt;プロジェクト名&gt;** をクリックして、ビルド プロセスを開始します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-120">On the **Build** menu, click **Build &lt;project name&gt;** to start the build process.</span></span> <span data-ttu-id="b8b2b-121">または、ソリューション エクスプローラーでプロジェクトを右クリックし、その後**ビルド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-121">Alternatively, right-click the project in Solution Explorer, and then click **Build**.</span></span>
-
-<span data-ttu-id="b8b2b-122">ビルド プロセス中に、ビルドされている要素の一部がプロジェクトの一部ではないことに気付くかもしれません。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-122">During the build process, you might notice that some elements that are built aren't part of the project.</span></span> <span data-ttu-id="b8b2b-123">この動作は、アセンブリの作成方法のために必要です。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-123">This behavior is required because of the way that assemblies are created.</span></span> <span data-ttu-id="b8b2b-124">要素を作成するときは、実際には、要素が組み込まれる .NET モジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-124">When you build an element, you’re actually building the .NET module that the element is included in.</span></span> <span data-ttu-id="b8b2b-125">1 つの .NET モジュールには、複数のモデル要素が含まれ、1 つのアセンブリには、複数の .NET モジュールが含まれます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-125">A single .NET module contains multiple model elements, and a single assembly contains multiple .NET modules.</span></span> <span data-ttu-id="b8b2b-126">アセンブリ内のすべての .NET モジュールが構築されており、最新の状態である場合にのみ、アセンブリを作成できます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-126">The assembly can be created only if all the .NET modules in the assembly have been built and are up to date.</span></span> <span data-ttu-id="b8b2b-127">アセンブリの .NET モジュール内の要素がビルドされていないまたは最新の状態になっていない場合は、現在のプロジェクトに含まれていない場合でもビルドされます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-127">If any elements in any of the .NET modules for an assembly haven’t been built or aren't up to date, they will be built, even if they aren’t included in the current project.</span></span> 
-
-> [!NOTE]
-> <span data-ttu-id="b8b2b-128">プロジェクトから要素を削除する場合は、削除を有効にする前にプロジェクトを再構築するか、モデルで完全なビルドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-128">If you delete an element from a project, you must rebuild the project or perform a full build on the model before the deletion takes effect.</span></span>
-
-## <a name="rebuild-a-project"></a><span data-ttu-id="b8b2b-129">プロジェクトのリビルド</span><span class="sxs-lookup"><span data-stu-id="b8b2b-129">Rebuild a project</span></span>
-
-<span data-ttu-id="b8b2b-130">変更したかどうかに関係なく、プロジェクトにすべての要素を作成する場合は、再構築処理を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-130">If you want to build all the elements in a project, regardless of whether they have changed, you must perform a rebuild operation.</span></span> <span data-ttu-id="b8b2b-131">プロジェクトをリビルドするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-131">To rebuild a project, follow these steps.</span></span>
-
-1.  <span data-ttu-id="b8b2b-132">ソリューション エクスプローラーで、プロジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-132">In Solution Explorer, select the project.</span></span>
-2.  <span data-ttu-id="b8b2b-133">**ビルド**ニューで、**再構築&lt;プロジェクト名&gt;** をクリックして、再構築プロセスを開始します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-133">On the **Build** menu, click **Rebuild &lt;project name&gt;** to start the rebuild process.</span></span> <span data-ttu-id="b8b2b-134">または、ソリューション エクスプローラーでプロジェクトを右クリックし、その後**再構築**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-134">Alternatively, right-click the project in Solution Explorer, and then click **Rebuild**.</span></span>
-
-## <a name="synchronizing-the-database-at-each-build"></a><span data-ttu-id="b8b2b-135">ビルドごとにデータベースを同期</span><span class="sxs-lookup"><span data-stu-id="b8b2b-135">Synchronizing the database at each build</span></span>
-
-<span data-ttu-id="b8b2b-136">プロジェクトのプロパティを使用して、プロジェクトをビルドするたびにデータベースの同期操作を実行するように指定できます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-136">A project property lets you specify that the synchronize operation for the database should be performed every time that you build the project.</span></span> <span data-ttu-id="b8b2b-137">これは、アプリケーションのテーブル構造を変更する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-137">This can be useful when you’re making changes to the table structure for an application.</span></span> <span data-ttu-id="b8b2b-138">ビルドを実行するたびに、データベースはプロジェクトで定義されているテーブルと同期されていることがわかります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-138">Each time that you build, you will know that the database is synchronized with the tables as they are defined in the project.</span></span> <span data-ttu-id="b8b2b-139">プロジェクト プロパティの設定方法の詳細については、[プロジェクト](projects.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-139">For information about how to set project properties, see [Projects](projects.md).</span></span> <span data-ttu-id="b8b2b-140">アプリケーションに多数のテーブルがあり、アプリケーションをまだテストしていない場合、**ビルドでデータベースの同期**プロパティを **false** に設定できます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-140">If your application has a large number of tables, and you aren’t yet testing the application, you can set the **Synchronize database on build** property to **false**.</span></span> <span data-ttu-id="b8b2b-141">この変更により、プロジェクトのビルドに必要な時間が短縮されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-141">This change will reduce the time that is required to build the project.</span></span> <span data-ttu-id="b8b2b-142">次にテストを開始するときは、必ずこのプロパティを **true** に設定してください。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-142">Then, when you begin testing, be sure to set this property back to **true**.</span></span> <span data-ttu-id="b8b2b-143">プロジェクトに含まれるテーブルを手動で同期する必要がある場合は、ソリューション エクスプローラーで、プロジェクトを右クリックし、**同期 &lt; プロジェクト名 &gt; データベース**をクリックできます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-143">If you must manually synchronize the tables in a project, you can right-click the project in Solution Explorer and then click **Synchronize &lt;project name&gt; with database**.</span></span> <span data-ttu-id="b8b2b-144">**Dynamics 365** メニューでプロセス (長いプロセスとなる可能性がある) データベース全体を同期させるには、**データベースの同期** をクリックします。します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-144">To synchronize the entire database, which can be a long process, on the **Dynamics 365** menu, click **Synchronize database**.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="b8b2b-145">アセンブリを完全にコンパイルする前にデータベースを同期しようとすると、Visual Studio データベース同期ツールには同期が正常に完了したことを示すメッセージが表示されますが、実際には同期は成功していません。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-145">If you try to synchronize the database before you have fully compiled assemblies, the Visual Studio database synchronization tool will display a message that synchronization has completed successfully, when in fact, the synchronization was not successful.</span></span>
-
-<span data-ttu-id="b8b2b-146">テーブルおよびビューは、完全にコンパイルするまでに、データベースに対して同期することはできません。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-146">Tables and views cannot be synchronized against the database until they are fully compiled.</span></span> <span data-ttu-id="b8b2b-147">アプリケーション プラットフォーム、アプリケーション基準、およびアプリケーション スイートの完全なビルドを完了すると、Visual Studio での Dynamics 365 メニューからデータベース同期を完了することができます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-147">After you complete a full build of the Application Platform, Application Foundation, and Application Suite, you can complete a Database Synchronization from the Dynamics 365 menu in Visual Studio.</span></span> 
-
-## <a name="build-a-models-package"></a><span data-ttu-id="b8b2b-148">モデルのパッケージをビルドする</span><span class="sxs-lookup"><span data-stu-id="b8b2b-148">Build a model's package</span></span>
-
-<span data-ttu-id="b8b2b-149">特定のモデル内のすべての要素を構築する場合があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-149">You might want to build all the elements in a specific model.</span></span> <span data-ttu-id="b8b2b-150">これを行うには、モデルが属するパッケージでフル ビルドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-150">To do this, you must perform a full build on the package that the model belongs to.</span></span> <span data-ttu-id="b8b2b-151">以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-151">Follow these steps.</span></span>
-
-1.  <span data-ttu-id="b8b2b-152">**Dynamics 365** メニューで、**モデルをビルド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-152">On the **Dynamics 365** menu, click **Build models**.</span></span>
-2.  <span data-ttu-id="b8b2b-153">**パッケージ** リストで、ビルドするパッケージを選択します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-153">In the **Packages** list, select the package(s) to build.</span></span>
-    -   <span data-ttu-id="b8b2b-154">パッケージ名がアルファベット順に一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-154">Package names are listed alphabetically.</span></span>
-    -   <span data-ttu-id="b8b2b-155">パッケージに属するモデルはかっこ内に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-155">Models belonging to the package are shown in brackets.</span></span>
-
-3.  <span data-ttu-id="b8b2b-156">依存パッケージを最初に作成する場合は、**参照パッケージのビルド**を選択します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-156">If you want to build the dependent packages first, select **Build referenced packages**.</span></span> <span data-ttu-id="b8b2b-157">構築する必要のある依存パッケージが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-157">Any dependent package that must be built will be listed.</span></span>
-
-    <span data-ttu-id="b8b2b-158">[![モデル ダイアログを構築](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)</span><span class="sxs-lookup"><span data-stu-id="b8b2b-158">[![Build models dialog](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)</span></span>
-    
-4.  <span data-ttu-id="b8b2b-159">**オプション**タブで、ビルド プロセスのオプションを確認します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-159">On the **Options** tab, review the options for the build process.</span></span> <span data-ttu-id="b8b2b-160">次のオプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-160">The following options are available.</span></span>
-
-    | <span data-ttu-id="b8b2b-161">オプション</span><span class="sxs-lookup"><span data-stu-id="b8b2b-161">Option</span></span>                       | <span data-ttu-id="b8b2b-162">説明</span><span class="sxs-lookup"><span data-stu-id="b8b2b-162">Description</span></span>                                                                                                                                                                       |
-    |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | <span data-ttu-id="b8b2b-163">コンパイル済みのフォームをビルドする</span><span class="sxs-lookup"><span data-stu-id="b8b2b-163">Build Pre-Compiled Forms</span></span>     | <span data-ttu-id="b8b2b-164">静的 HTML は、ビルド プロセス中にフォームごとに生成されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-164">Static HTML is generated for each form during the build process.</span></span> <span data-ttu-id="b8b2b-165">これにより、実行時にフォームをより速くレンダリングできます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-165">This allows faster rendering of forms at run time.</span></span>                                                               |
-    | <span data-ttu-id="b8b2b-166">ビルド レポート</span><span class="sxs-lookup"><span data-stu-id="b8b2b-166">Build Reports</span></span>                | <span data-ttu-id="b8b2b-167">レポートが作成されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-167">Reports are built.</span></span>                                                                                                                                                                |
-    | <span data-ttu-id="b8b2b-168">集計の測定をビルドする</span><span class="sxs-lookup"><span data-stu-id="b8b2b-168">Build Aggregate Measurements</span></span> | <span data-ttu-id="b8b2b-169">集計の測定はビルドです。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-169">Aggregate measurements are build.</span></span>                                                                                                                                                 |
-    | <span data-ttu-id="b8b2b-170">ベスト プラクティス チェックを実行</span><span class="sxs-lookup"><span data-stu-id="b8b2b-170">Run Best Practice Checks</span></span>     | <span data-ttu-id="b8b2b-171">推奨チェックはビルド プロセス中に実行されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-171">Best practice checks are performed during the build process.</span></span>                                                                                                                      |
-    | <span data-ttu-id="b8b2b-172">データベースの同期</span><span class="sxs-lookup"><span data-stu-id="b8b2b-172">Synchronize Database</span></span>         | <span data-ttu-id="b8b2b-173">SQL データベースのスキーマは、メタデータと一致するよう、(メタデータとソース コードのコンパイル後に) ビルド プロセス中に更新されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-173">The schema of the SQL database is updated during the build process (after compilation of the metadata and source code), so that it matches the metadata.</span></span>                          |
-    | <span data-ttu-id="b8b2b-174">相互参照データのビルド</span><span class="sxs-lookup"><span data-stu-id="b8b2b-174">Build cross reference data</span></span>   | <span data-ttu-id="b8b2b-175">相互参照機能のデータは、ビルド処理中に更新されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-175">The data for the cross-reference feature is updated during the build process.</span></span> <span data-ttu-id="b8b2b-176">相互参照データを使用すると、開発時にコードやメタデータへの参照を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-176">Cross reference data enables developers to find references to code and metadata during development.</span></span> |
-
-5.  <span data-ttu-id="b8b2b-177">**ビルド**をクリックし、ビルド プロセスを開始します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-177">Click **Build** to start the build process.</span></span>
-6.  <span data-ttu-id="b8b2b-178">ビルド プロセスの詳細をフォローするには、**詳細**タブを展開します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-178">Expand the **Details** tab to follow details of the build process.</span></span>
-
-## <a name="build-results"></a><span data-ttu-id="b8b2b-179">ビルドの結果</span><span class="sxs-lookup"><span data-stu-id="b8b2b-179">Build results</span></span>
-
-<span data-ttu-id="b8b2b-180">ビルド操作が完了した後、Microsoft Visual Studio で結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-180">After a build operation is completed, you will see the results in Microsoft Visual Studio.</span></span> <span data-ttu-id="b8b2b-181">Visual Studio の **出力** ウィンドウには、ビルドのステータスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-181">The **Output** pane in Visual Studio shows the status of the build.</span></span> <span data-ttu-id="b8b2b-182">**出力元の表示** フィールドを使用すると、標準的なビルド情報とビルド詳細を切り替えることができます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-182">You can use the **Show output from** field to switch between the standard build information and the build details.</span></span> 
-
-<span data-ttu-id="b8b2b-183">[![出力ウィンドウ](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="b8b2b-183">[![Output window](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)</span></span> 
-
-<span data-ttu-id="b8b2b-184">Visual Studio の **エラー一覧** ウィンドウには、ビルド プロセス中に発生したビルド エラーおよび警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-184">The **Error List** pane in Visual Studio shows the build errors and warning that occurred during the build process.</span></span> <span data-ttu-id="b8b2b-185">ビルド エラーが表示された場合は、それらを修正してから再ビルドし、アプリケーション用の有効なアセンブリを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-185">If you see any build errors, you must fix them and then build again, so that valid assemblies can be created for the application.</span></span> <span data-ttu-id="b8b2b-186">**エラー一覧**ウィンドウに表示される警告の多くは、アプリケーション開発のベスト プラクティスに適合するように、アプリケーションに加える必要がある変更を通知する推奨チェックです。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-186">Many of the warnings that appear in the **Error List** pane are best practice checks that inform you of revisions that you should make to your application so that it conforms to the best practices for application development.</span></span> <span data-ttu-id="b8b2b-187">原則的には、アプリケーションのすべてのベスト プラクティス警告に対処する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-187">Ideally, you should address all the best practice warnings for an application.</span></span> 
-
-<span data-ttu-id="b8b2b-188">[![エラー一覧](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="b8b2b-188">[![Error list](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)</span></span> 
-
-<span data-ttu-id="b8b2b-189">ほとんどのエラーや警告をダブルクリックして、問題の原因を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-189">You can double-click most errors and warnings to see the source of the issue.</span></span> <span data-ttu-id="b8b2b-190">要素デザイナーまたはコード エディターが開き、エラーまたは警告の原因となっているプロパティ設定やコードを確認できます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-190">The element designer or code editor will open, where you can see what property setting or code is causing the error or warning.</span></span> <span data-ttu-id="b8b2b-191">Visual Studio の **タスク一覧** ウィンドウには、コード内ので "TODO" とフラグが付けられたタスクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-191">The **Task List** pane in Visual Studio shows tasks that have been flagged with "TODO" comments in code.</span></span> <span data-ttu-id="b8b2b-192">たとえば、次のコメントは、一部のオブジェクト参照がまだ検証を要求することを示します。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-192">For example, the following comment indicates that some object references still require validation.</span></span>
-
-    // TODO: validate object references
-
-<span data-ttu-id="b8b2b-193">コードが作成されるとき、"TODO" コメントが **タスク一覧** ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-193">When the code is built, these "TODO" comments appear in the **Task List** pane.</span></span> <span data-ttu-id="b8b2b-194">**作業一覧**ウィンドウを表示するには、**表示** メニューで **作業一覧** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-194">To view the **Task List** pane, on the **View** menu, click **Task List**.</span></span> 
-
-<span data-ttu-id="b8b2b-195">[![作業リスト](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="b8b2b-195">[![Task list](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)</span></span> 
-
-<span data-ttu-id="b8b2b-196">解決を容易にするために、エラーまたはタスクの影響を受ける要素を現在のプロジェクトまたは新しいプロジェクトに追加できます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-196">To make resolution easier, you can add the elements that are affected by the error or task to the current project or to a new project.</span></span> <span data-ttu-id="b8b2b-197">**エラー一覧**ウィンドウまたは**タスク一覧**ウィンドウで、修正するエラーまたはタスクの行を選択して右クリックし、**プロジェクトに追加**または**新しいプロジェクトに追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-197">In the **Error List** pane or the **Task List** pane, select the rows for the errors or tasks that you want to fix, right-click, and then click **Add to project** or **Add to new project**.</span></span> <span data-ttu-id="b8b2b-198">これにより、影響を受ける要素をアプリケーションで見つける手間を省くことができます。</span><span class="sxs-lookup"><span data-stu-id="b8b2b-198">This saves you the effort of finding the affected elements in the application.</span></span> 
-
-<span data-ttu-id="b8b2b-199">[![エラー一覧](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)</span><span class="sxs-lookup"><span data-stu-id="b8b2b-199">[![Error list](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="b8b2b-200">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="b8b2b-200">Additional resources</span></span>
-
-[<span data-ttu-id="b8b2b-201">開発ツールの概要</span><span class="sxs-lookup"><span data-stu-id="b8b2b-201">Development tools overview</span></span>](development-tools-overview.md)
-
-[<span data-ttu-id="b8b2b-202">開発者ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="b8b2b-202">Developer home page</span></span>](developer-home-page.md)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="build-operations.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>build-operations.618318.87928ab631c346d2c379c6fe977b5606985a5ba6.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>87928ab631c346d2c379c6fe977b5606985a5ba6</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-tools\build-operations.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Build operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド操作</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic reviews the process to build projects and full build of model packages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Build operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド操作</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic reviews the process to build projects and full build of model packages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、プロジェクトのビルド プロセスとモデル パッケージの完全なビルドについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The elements of a model must be built so that they can be used by the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルの要素は、アプリケーションで使用できるように構築する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>You can build the elements in a project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要素をプロジェクト内にビルドすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>You can also build all the elements in a model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、モデル内のすべての要素をビルドすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The following actions are performed during a build operation:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド操作中に次のアクションが実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Metadata validation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータの検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>X++ code validation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ コードの検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Best practice checks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">推奨チェック</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Report RDL generation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポート RDL の生成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Compilation, IL generation, and creation of the .NET assemblies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパイル、IL 生成、および .NET アセンブリの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Label assembly generation and deployment of other resource files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル アセンブリの生成および他のリソース ファイルの配置</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Database synchronization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベース同期</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Build a project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトのビルド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>When you build a project, only those elements that are new or that have changed are built.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトを作成するときは、新規の要素か、変更された要素のみが作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>To build a project, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトをビルドするには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In Solution Explorer, select the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、プロジェクトを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Build <ph id="ph1">&amp;lt;</ph>project name<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept> to start the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ビルド<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>ビルド<ph id="ph1">&amp;lt;</ph>プロジェクト名<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept>をクリックして、ビルド プロセスを開始します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Alternatively, right-click the project in Solution Explorer, and then click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、ソリューション エクスプローラーでプロジェクトを右クリックし、その後<bpt id="p1">**</bpt>ビルド<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>During the build process, you might notice that some elements that are built aren't part of the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド プロセス中に、ビルドされている要素の一部がプロジェクトの一部ではないことに気付くかもしれません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>This behavior is required because of the way that assemblies are created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この動作は、アセンブリの作成方法のために必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>When you build an element, you’re actually building the .NET module that the element is included in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要素を作成するときは、実際には、要素が組み込まれる .NET モジュールを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>A single .NET module contains multiple model elements, and a single assembly contains multiple .NET modules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つの .NET モジュールには、複数のモデル要素が含まれ、1 つのアセンブリには、複数の .NET モジュールが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>The assembly can be created only if all the .NET modules in the assembly have been built and are up to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アセンブリ内のすべての .NET モジュールが構築されており、最新の状態である場合にのみ、アセンブリを作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>If any elements in any of the .NET modules for an assembly haven’t been built or aren't up to date, they will be built, even if they aren’t included in the current project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アセンブリの .NET モジュール内の要素がビルドされていないまたは最新の状態になっていない場合は、現在のプロジェクトに含まれていない場合でもビルドされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>If you delete an element from a project, you must rebuild the project or perform a full build on the model before the deletion takes effect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトから要素を削除する場合は、削除を有効にする前にプロジェクトを再構築するか、モデルで完全なビルドを実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Rebuild a project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトのリビルド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>If you want to build all the elements in a project, regardless of whether they have changed, you must perform a rebuild operation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更したかどうかに関係なく、プロジェクトにすべての要素を作成する場合は、再構築処理を行う必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>To rebuild a project, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトをリビルドするには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>In Solution Explorer, select the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、プロジェクトを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Rebuild <ph id="ph1">&amp;lt;</ph>project name<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept> to start the rebuild process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ビルド<ept id="p1">**</ept>ニューで、<bpt id="p2">**</bpt>再構築<ph id="ph1">&amp;lt;</ph>プロジェクト名<ph id="ph2">&amp;gt;</ph><ept id="p2">**</ept>をクリックして、再構築プロセスを開始します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Alternatively, right-click the project in Solution Explorer, and then click <bpt id="p1">**</bpt>Rebuild<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、ソリューション エクスプローラーでプロジェクトを右クリックし、その後<bpt id="p1">**</bpt>再構築<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Synchronizing the database at each build</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルドごとにデータベースを同期</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>A project property lets you specify that the synchronize operation for the database should be performed every time that you build the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトのプロパティを使用して、プロジェクトをビルドするたびにデータベースの同期操作を実行するように指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>This can be useful when you’re making changes to the table structure for an application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、アプリケーションのテーブル構造を変更する場合に便利です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Each time that you build, you will know that the database is synchronized with the tables as they are defined in the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルドを実行するたびに、データベースはプロジェクトで定義されているテーブルと同期されていることがわかります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For information about how to set project properties, see <bpt id="p1">[</bpt>Projects<ept id="p1">](projects.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト プロパティの設定方法の詳細については、<bpt id="p1">[</bpt>プロジェクト<ept id="p1">](projects.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>If your application has a large number of tables, and you aren’t yet testing the application, you can set the <bpt id="p1">**</bpt>Synchronize database on build<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>false<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションに多数のテーブルがあり、アプリケーションをまだテストしていない場合、<bpt id="p1">**</bpt>ビルドでデータベースの同期<ept id="p1">**</ept>プロパティを <bpt id="p2">**</bpt>false<ept id="p2">**</ept> に設定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>This change will reduce the time that is required to build the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この変更により、プロジェクトのビルドに必要な時間が短縮されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Then, when you begin testing, be sure to set this property back to <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次にテストを開始するときは、必ずこのプロパティを <bpt id="p1">**</bpt>true<ept id="p1">**</ept> に設定してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>If you must manually synchronize the tables in a project, you can right-click the project in Solution Explorer and then click <bpt id="p1">**</bpt>Synchronize <ph id="ph1">&amp;lt;</ph>project name<ph id="ph2">&amp;gt;</ph> with database<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトに含まれるテーブルを手動で同期する必要がある場合は、ソリューション エクスプローラーで、プロジェクトを右クリックし、<bpt id="p1">**</bpt>同期 <ph id="ph1">&amp;lt;</ph> プロジェクト名 <ph id="ph2">&amp;gt;</ph> データベース<ept id="p1">**</ept>をクリックできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>To synchronize the entire database, which can be a long process, on the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Synchronize database<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> メニューでプロセス (長いプロセスとなる可能性がある) データベース全体を同期させるには、<bpt id="p2">**</bpt>データベースの同期<ept id="p2">**</ept> をクリックします。します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>If you try to synchronize the database before you have fully compiled assemblies, the Visual Studio database synchronization tool will display a message that synchronization has completed successfully, when in fact, the synchronization was not successful.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アセンブリを完全にコンパイルする前にデータベースを同期しようとすると、Visual Studio データベース同期ツールには同期が正常に完了したことを示すメッセージが表示されますが、実際には同期は成功していません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Tables and views cannot be synchronized against the database until they are fully compiled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テーブルおよびビューは、完全にコンパイルするまでに、データベースに対して同期することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>After you complete a full build of the Application Platform, Application Foundation, and Application Suite, you can complete a Database Synchronization from the Dynamics 365 menu in Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション プラットフォーム、アプリケーション基準、およびアプリケーション スイートの完全なビルドを完了すると、Visual Studio での Dynamics 365 メニューからデータベース同期を完了することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Build a model's package</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデルのパッケージをビルドする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>You might want to build all the elements in a specific model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のモデル内のすべての要素を構築する場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>To do this, you must perform a full build on the package that the model belongs to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これを行うには、モデルが属するパッケージでフル ビルドを実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>On the <bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Build models<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dynamics 365<ept id="p1">**</ept> メニューで、<bpt id="p2">**</bpt>モデルをビルド<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>In the <bpt id="p1">**</bpt>Packages<ept id="p1">**</ept> list, select the package(s) to build.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パッケージ<ept id="p1">**</ept> リストで、ビルドするパッケージを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Package names are listed alphabetically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ名がアルファベット順に一覧表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Models belonging to the package are shown in brackets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージに属するモデルはかっこ内に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>If you want to build the dependent packages first, select <bpt id="p1">**</bpt>Build referenced packages<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">依存パッケージを最初に作成する場合は、<bpt id="p1">**</bpt>参照パッケージのビルド<ept id="p1">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Any dependent package that must be built will be listed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構築する必要のある依存パッケージが一覧表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Build models dialog<ept id="p1">](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>モデル ダイアログを構築<ept id="p1">](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>On the <bpt id="p1">**</bpt>Options<ept id="p1">**</ept> tab, review the options for the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>オプション<ept id="p1">**</ept>タブで、ビルド プロセスのオプションを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The following options are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のオプションを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Build Pre-Compiled Forms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパイル済みのフォームをビルドする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Static HTML is generated for each form during the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的 HTML は、ビルド プロセス中にフォームごとに生成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>This allows faster rendering of forms at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、実行時にフォームをより速くレンダリングできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Build Reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド レポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Reports are built.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートが作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Build Aggregate Measurements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計の測定をビルドする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Aggregate measurements are build.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計の測定はビルドです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Run Best Practice Checks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベスト プラクティス チェックを実行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Best practice checks are performed during the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">推奨チェックはビルド プロセス中に実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Synchronize Database</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースの同期</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>The schema of the SQL database is updated during the build process (after compilation of the metadata and source code), so that it matches the metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL データベースのスキーマは、メタデータと一致するよう、(メタデータとソース コードのコンパイル後に) ビルド プロセス中に更新されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Build cross reference data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">相互参照データのビルド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>The data for the cross-reference feature is updated during the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">相互参照機能のデータは、ビルド処理中に更新されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Cross reference data enables developers to find references to code and metadata during development.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">相互参照データを使用すると、開発時にコードやメタデータへの参照を見つけることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> to start the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ビルド<ept id="p1">**</ept>をクリックし、ビルド プロセスを開始します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Expand the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> tab to follow details of the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド プロセスの詳細をフォローするには、<bpt id="p1">**</bpt>詳細<ept id="p1">**</ept>タブを展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Build results</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルドの結果</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>After a build operation is completed, you will see the results in Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド操作が完了した後、Microsoft Visual Studio で結果が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>The <bpt id="p1">**</bpt>Output<ept id="p1">**</ept> pane in Visual Studio shows the status of the build.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio の <bpt id="p1">**</bpt>出力<ept id="p1">**</ept> ウィンドウには、ビルドのステータスが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>You can use the <bpt id="p1">**</bpt>Show output from<ept id="p1">**</ept> field to switch between the standard build information and the build details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>出力元の表示<ept id="p1">**</ept> フィールドを使用すると、標準的なビルド情報とビルド詳細を切り替えることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Output window<ept id="p1">](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>出力ウィンドウ<ept id="p1">](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>The <bpt id="p1">**</bpt>Error List<ept id="p1">**</ept> pane in Visual Studio shows the build errors and warning that occurred during the build process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio の <bpt id="p1">**</bpt>エラー一覧<ept id="p1">**</ept> ウィンドウには、ビルド プロセス中に発生したビルド エラーおよび警告が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>If you see any build errors, you must fix them and then build again, so that valid assemblies can be created for the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド エラーが表示された場合は、それらを修正してから再ビルドし、アプリケーション用の有効なアセンブリを作成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Many of the warnings that appear in the <bpt id="p1">**</bpt>Error List<ept id="p1">**</ept> pane are best practice checks that inform you of revisions that you should make to your application so that it conforms to the best practices for application development.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー一覧<ept id="p1">**</ept>ウィンドウに表示される警告の多くは、アプリケーション開発のベスト プラクティスに適合するように、アプリケーションに加える必要がある変更を通知する推奨チェックです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Ideally, you should address all the best practice warnings for an application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">原則的には、アプリケーションのすべてのベスト プラクティス警告に対処する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Error list<ept id="p1">](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>エラー一覧<ept id="p1">](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>You can double-click most errors and warnings to see the source of the issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ほとんどのエラーや警告をダブルクリックして、問題の原因を表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>The element designer or code editor will open, where you can see what property setting or code is causing the error or warning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要素デザイナーまたはコード エディターが開き、エラーまたは警告の原因となっているプロパティ設定やコードを確認できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The <bpt id="p1">**</bpt>Task List<ept id="p1">**</ept> pane in Visual Studio shows tasks that have been flagged with "TODO" comments in code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio の <bpt id="p1">**</bpt>タスク一覧<ept id="p1">**</ept> ウィンドウには、コード内ので "TODO" とフラグが付けられたタスクが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>For example, the following comment indicates that some object references still require validation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のコメントは、一部のオブジェクト参照がまだ検証を要求することを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>When the code is built, these "TODO" comments appear in the <bpt id="p1">**</bpt>Task List<ept id="p1">**</ept> pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードが作成されるとき、"TODO" コメントが <bpt id="p1">**</bpt>タスク一覧<ept id="p1">**</ept> ウィンドウに表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>To view the <bpt id="p1">**</bpt>Task List<ept id="p1">**</ept> pane, on the <bpt id="p2">**</bpt>View<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Task List<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>作業一覧<ept id="p1">**</ept>ウィンドウを表示するには、<bpt id="p2">**</bpt>表示<ept id="p2">**</ept> メニューで <bpt id="p3">**</bpt>作業一覧<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Task list<ept id="p1">](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>作業リスト<ept id="p1">](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>To make resolution easier, you can add the elements that are affected by the error or task to the current project or to a new project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">解決を容易にするために、エラーまたはタスクの影響を受ける要素を現在のプロジェクトまたは新しいプロジェクトに追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>In the <bpt id="p1">**</bpt>Error List<ept id="p1">**</ept> pane or the <bpt id="p2">**</bpt>Task List<ept id="p2">**</ept> pane, select the rows for the errors or tasks that you want to fix, right-click, and then click <bpt id="p3">**</bpt>Add to project<ept id="p3">**</ept> or <bpt id="p4">**</bpt>Add to new project<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー一覧<ept id="p1">**</ept>ウィンドウまたは<bpt id="p2">**</bpt>タスク一覧<ept id="p2">**</ept>ウィンドウで、修正するエラーまたはタスクの行を選択して右クリックし、<bpt id="p3">**</bpt>プロジェクトに追加<ept id="p3">**</ept>または<bpt id="p4">**</bpt>新しいプロジェクトに追加<ept id="p4">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>This saves you the effort of finding the affected elements in the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、影響を受ける要素をアプリケーションで見つける手間を省くことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Error list<ept id="p1">](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>エラー一覧<ept id="p1">](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のリソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source><bpt id="p1">[</bpt>Development tools overview<ept id="p1">](development-tools-overview.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>開発ツールの概要<ept id="p1">](development-tools-overview.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source><bpt id="p1">[</bpt>Developer home page<ept id="p1">](developer-home-page.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>開発者ホーム ページ<ept id="p1">](developer-home-page.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

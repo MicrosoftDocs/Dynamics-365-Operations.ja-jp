@@ -1,122 +1,408 @@
----
-title: オンプレミス配置で使用できる小売機能
-description: このトピックでは、オンプレミス展開で使用できる小売機能を一覧表示します。
-author: aamirallaqaband
-manager: AnnBe
-ms.date: 11/01/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.scope: Retail, Operations
-ms.search.region: Global
-ms.author: aamiral
-ms.search.validFrom: July 2017 update
-ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: a257e71f16739eb41449ea77783e142f3f37be26
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505060"
----
-# <a name="retail-capabilities-that-are-available-in-on-premises-deployments"></a><span data-ttu-id="8c15d-103">オンプレミス配置で使用できる小売機能</span><span class="sxs-lookup"><span data-stu-id="8c15d-103">Retail capabilities that are available in on-premises deployments</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="8c15d-104">このトピックでは、オンプレミス展開で使用できる小売機能を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="8c15d-104">This topic lists retail capabilities that are available in on-premises deployments.</span></span>
-
-<span data-ttu-id="8c15d-105">オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8c15d-105">For more information about on-premises deployments, see [On-premises deployment home page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).</span></span>
-
-| <span data-ttu-id="8c15d-106">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="8c15d-106">Component</span></span>            | <span data-ttu-id="8c15d-107">On-premises ステータス</span><span class="sxs-lookup"><span data-stu-id="8c15d-107">On-premises status</span></span> |
-|----------------------|--------------------|
-| <span data-ttu-id="8c15d-108">クラウド販売時点管理</span><span class="sxs-lookup"><span data-stu-id="8c15d-108">Cloud Point of Sale</span></span>  | <span data-ttu-id="8c15d-109">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-109">Available</span></span>          |
-| <span data-ttu-id="8c15d-110">Retail 販売時点管理</span><span class="sxs-lookup"><span data-stu-id="8c15d-110">Retail Point of Sale</span></span> | <span data-ttu-id="8c15d-111">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-111">Available</span></span>          |
-| <span data-ttu-id="8c15d-112">Modern 販売時点管理</span><span class="sxs-lookup"><span data-stu-id="8c15d-112">Modern Point of Sale</span></span> | <span data-ttu-id="8c15d-113">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-113">Available</span></span>          |
-| <span data-ttu-id="8c15d-114">Retail サーバー</span><span class="sxs-lookup"><span data-stu-id="8c15d-114">Retail Server</span></span>        | <span data-ttu-id="8c15d-115">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-115">Available</span></span>          |
-| <span data-ttu-id="8c15d-116">チャネル データベース</span><span class="sxs-lookup"><span data-stu-id="8c15d-116">Channel database</span></span>     | <span data-ttu-id="8c15d-117">利用可</span><span class="sxs-lookup"><span data-stu-id="8c15d-117">Available</span></span>          |
-| <span data-ttu-id="8c15d-118">Hardware Station</span><span class="sxs-lookup"><span data-stu-id="8c15d-118">Hardware station</span></span>     | <span data-ttu-id="8c15d-119">使用不可</span><span class="sxs-lookup"><span data-stu-id="8c15d-119">Not available</span></span>      |
-| <span data-ttu-id="8c15d-120">AX 2012 N-1 のサポート</span><span class="sxs-lookup"><span data-stu-id="8c15d-120">AX 2012 N-1 support</span></span>  | <span data-ttu-id="8c15d-121">使用不可</span><span class="sxs-lookup"><span data-stu-id="8c15d-121">Not available</span></span>      |
-
-## <a name="head-office-capability"></a><span data-ttu-id="8c15d-122">本社の機能</span><span class="sxs-lookup"><span data-stu-id="8c15d-122">Head office capability</span></span>
-
-### <a name="channel-management"></a><span data-ttu-id="8c15d-123">チャネル管理</span><span class="sxs-lookup"><span data-stu-id="8c15d-123">Channel management</span></span>
-
-<span data-ttu-id="8c15d-124">次のテーブルは、オンプレミス配置で使用できるチャネル管理コンポーネントを示しています。</span><span class="sxs-lookup"><span data-stu-id="8c15d-124">The following table indicates which channel management components are available in on-premises deployments.</span></span>
-
-| <span data-ttu-id="8c15d-125">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="8c15d-125">Component</span></span>                             | <span data-ttu-id="8c15d-126">On-premises ステータス</span><span class="sxs-lookup"><span data-stu-id="8c15d-126">On-premises status</span></span> |
-|---------------------------------------|--------------------|
-| <span data-ttu-id="8c15d-127">すべての店舗</span><span class="sxs-lookup"><span data-stu-id="8c15d-127">All stores</span></span>                            | <span data-ttu-id="8c15d-128">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-128">Available</span></span>          |
-| <span data-ttu-id="8c15d-129">オンライン ストア</span><span class="sxs-lookup"><span data-stu-id="8c15d-129">Online stores</span></span>                         | <span data-ttu-id="8c15d-130">使用不可</span><span class="sxs-lookup"><span data-stu-id="8c15d-130">Not available</span></span>      |
-| <span data-ttu-id="8c15d-131">コール センター</span><span class="sxs-lookup"><span data-stu-id="8c15d-131">Call center</span></span>                           | <span data-ttu-id="8c15d-132">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-132">Available</span></span>          |
-| <span data-ttu-id="8c15d-133">レジスター</span><span class="sxs-lookup"><span data-stu-id="8c15d-133">Registers</span></span>                             | <span data-ttu-id="8c15d-134">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-134">Available</span></span>          |
-| <span data-ttu-id="8c15d-135">デバイス</span><span class="sxs-lookup"><span data-stu-id="8c15d-135">Devices</span></span>                               | <span data-ttu-id="8c15d-136">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-136">Available</span></span>          |
-| <span data-ttu-id="8c15d-137">POS のアクセス許可およびアクセス許可グループ</span><span class="sxs-lookup"><span data-stu-id="8c15d-137">POS permissions and permission groups</span></span> | <span data-ttu-id="8c15d-138">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-138">Available</span></span>          |
-| <span data-ttu-id="8c15d-139">情報コード</span><span class="sxs-lookup"><span data-stu-id="8c15d-139">Info codes</span></span>                            | <span data-ttu-id="8c15d-140">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-140">Available</span></span>          |
-| <span data-ttu-id="8c15d-141">小売支払方法</span><span class="sxs-lookup"><span data-stu-id="8c15d-141">Retail payment methods</span></span>                | <span data-ttu-id="8c15d-142">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-142">Available</span></span>          |
-| <span data-ttu-id="8c15d-143">電子メールの領収書</span><span class="sxs-lookup"><span data-stu-id="8c15d-143">Email receipts</span></span>                        | <span data-ttu-id="8c15d-144">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-144">Available</span></span>          |
-| <span data-ttu-id="8c15d-145">電子メール通知</span><span class="sxs-lookup"><span data-stu-id="8c15d-145">Email notifications</span></span>                   | <span data-ttu-id="8c15d-146">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-146">Available</span></span>          |
-| <span data-ttu-id="8c15d-147">消費税の上書き</span><span class="sxs-lookup"><span data-stu-id="8c15d-147">Sales tax overrides</span></span>                   | <span data-ttu-id="8c15d-148">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-148">Available</span></span>          |
-| <span data-ttu-id="8c15d-149">機能プロファイル</span><span class="sxs-lookup"><span data-stu-id="8c15d-149">Functionality profiles</span></span>                | <span data-ttu-id="8c15d-150">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-150">Available</span></span>          |
-| <span data-ttu-id="8c15d-151">消費税グループ</span><span class="sxs-lookup"><span data-stu-id="8c15d-151">Sales tax groups</span></span>                      | <span data-ttu-id="8c15d-152">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-152">Available</span></span>          |
-
-### <a name="pricing-and-discounts"></a><span data-ttu-id="8c15d-153">価格決定と割引</span><span class="sxs-lookup"><span data-stu-id="8c15d-153">Pricing and discounts</span></span>
-
-<span data-ttu-id="8c15d-154">次のテーブルは、オンプレミス配置で使用できる価格決定および割引コンポーネントを示しています。</span><span class="sxs-lookup"><span data-stu-id="8c15d-154">The following table indicates which pricing and discount components are available in on-premises deployments.</span></span>
-
-| <span data-ttu-id="8c15d-155">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="8c15d-155">Component</span></span>                                             | <span data-ttu-id="8c15d-156">On-premises ステータス</span><span class="sxs-lookup"><span data-stu-id="8c15d-156">On-premises status</span></span> |
-|-------------------------------------------------------|--------------------|
-| <span data-ttu-id="8c15d-157">すべての割引</span><span class="sxs-lookup"><span data-stu-id="8c15d-157">All discounts</span></span>                                         | <span data-ttu-id="8c15d-158">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-158">Available</span></span>          |
-| <span data-ttu-id="8c15d-159">価格グループ、価格の調整、カテゴリ価格ルール</span><span class="sxs-lookup"><span data-stu-id="8c15d-159">Price groups, price adjustments, category price rules</span></span> | <span data-ttu-id="8c15d-160">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-160">Available</span></span>          |
-| <span data-ttu-id="8c15d-161">売買契約</span><span class="sxs-lookup"><span data-stu-id="8c15d-161">Trade agreements</span></span>                                      | <span data-ttu-id="8c15d-162">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-162">Available</span></span>          |
-| <span data-ttu-id="8c15d-163">チャネル ナビゲーション カテゴリ</span><span class="sxs-lookup"><span data-stu-id="8c15d-163">Channel navigation category</span></span>                           | <span data-ttu-id="8c15d-164">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-164">Available</span></span>          |
-| <span data-ttu-id="8c15d-165">所属価格グループ</span><span class="sxs-lookup"><span data-stu-id="8c15d-165">Affiliation price groups</span></span>                              | <span data-ttu-id="8c15d-166">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-166">Available</span></span>          |
-| <span data-ttu-id="8c15d-167">小売チャネル価格グループ</span><span class="sxs-lookup"><span data-stu-id="8c15d-167">Retail channel price groups</span></span>                           | <span data-ttu-id="8c15d-168">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-168">Available</span></span>          |
-| <span data-ttu-id="8c15d-169">価格決定優先順位</span><span class="sxs-lookup"><span data-stu-id="8c15d-169">Pricing priorities</span></span>                                    | <span data-ttu-id="8c15d-170">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-170">Available</span></span>          |
-| <span data-ttu-id="8c15d-171">価格シミュレーター</span><span class="sxs-lookup"><span data-stu-id="8c15d-171">Price simulator</span></span>                                       | <span data-ttu-id="8c15d-172">使用不可</span><span class="sxs-lookup"><span data-stu-id="8c15d-172">Not available</span></span>      |
-
-### <a name="customer"></a><span data-ttu-id="8c15d-173">顧客</span><span class="sxs-lookup"><span data-stu-id="8c15d-173">Customer</span></span>
-
-<span data-ttu-id="8c15d-174">次のテーブルは、オンプレミス配置で使用できる顧客コンポーネントを示しています。</span><span class="sxs-lookup"><span data-stu-id="8c15d-174">The following table indicates which customer components are available in on-premises deployments.</span></span>
-
-| <span data-ttu-id="8c15d-175">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="8c15d-175">Component</span></span>       | <span data-ttu-id="8c15d-176">On-premises ステータス</span><span class="sxs-lookup"><span data-stu-id="8c15d-176">On-premises status</span></span> |
-|-----------------|--------------------|
-| <span data-ttu-id="8c15d-177">ロイヤルティ スキーマ</span><span class="sxs-lookup"><span data-stu-id="8c15d-177">Loyalty schemes</span></span> | <span data-ttu-id="8c15d-178">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-178">Available</span></span>          |
-| <span data-ttu-id="8c15d-179">ロイヤルティ カード (複数)</span><span class="sxs-lookup"><span data-stu-id="8c15d-179">Loyalty cards</span></span>   | <span data-ttu-id="8c15d-180">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-180">Available</span></span>          |
-| <span data-ttu-id="8c15d-181">ロイヤルティ ポイント</span><span class="sxs-lookup"><span data-stu-id="8c15d-181">Loyalty points</span></span>  | <span data-ttu-id="8c15d-182">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-182">Available</span></span>          |
-
-### <a name="merchandising"></a><span data-ttu-id="8c15d-183">販売促進</span><span class="sxs-lookup"><span data-stu-id="8c15d-183">Merchandising</span></span>
-
-<span data-ttu-id="8c15d-184">次のテーブルは、オンプレミス配置で使用できる販売促進コンポーネントを示しています。</span><span class="sxs-lookup"><span data-stu-id="8c15d-184">The following table indicates which merchandising components are available in on-premises deployments.</span></span>
-
-| <span data-ttu-id="8c15d-185">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="8c15d-185">Component</span></span>                                   | <span data-ttu-id="8c15d-186">On-premises ステータス</span><span class="sxs-lookup"><span data-stu-id="8c15d-186">On-premises status</span></span> |
-|---------------------------------------------|--------------------|
-| <span data-ttu-id="8c15d-187">カテゴリ別製品</span><span class="sxs-lookup"><span data-stu-id="8c15d-187">Products by category</span></span>                        | <span data-ttu-id="8c15d-188">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-188">Available</span></span>          |
-| <span data-ttu-id="8c15d-189">製品カテゴリ</span><span class="sxs-lookup"><span data-stu-id="8c15d-189">Product categories</span></span>                          | <span data-ttu-id="8c15d-190">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-190">Available</span></span>          |
-| <span data-ttu-id="8c15d-191">チャネル カテゴリと製品属性</span><span class="sxs-lookup"><span data-stu-id="8c15d-191">Channel categories and product attributes</span></span>   | <span data-ttu-id="8c15d-192">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-192">Available</span></span>          |
-| <span data-ttu-id="8c15d-193">品揃え</span><span class="sxs-lookup"><span data-stu-id="8c15d-193">Assortments</span></span>                                 | <span data-ttu-id="8c15d-194">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-194">Available</span></span>          |
-| <span data-ttu-id="8c15d-195">小売カタログ</span><span class="sxs-lookup"><span data-stu-id="8c15d-195">Retail catalogs</span></span>                             | <span data-ttu-id="8c15d-196">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-196">Available</span></span>          |
-| <span data-ttu-id="8c15d-197">小売製品キット</span><span class="sxs-lookup"><span data-stu-id="8c15d-197">Retail product kits</span></span>                         | <span data-ttu-id="8c15d-198">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-198">Available</span></span>          |
-| <span data-ttu-id="8c15d-199">小売製品ファイル</span><span class="sxs-lookup"><span data-stu-id="8c15d-199">Retail product files</span></span>                        | <span data-ttu-id="8c15d-200">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-200">Available</span></span>          |
-| <span data-ttu-id="8c15d-201">バリアント グループ (サイズ、色、スタイル)</span><span class="sxs-lookup"><span data-stu-id="8c15d-201">Variant groups (size, color, style)</span></span>         | <span data-ttu-id="8c15d-202">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-202">Available</span></span>          |
-| <span data-ttu-id="8c15d-203">属性、属性タイプ、属性グループ</span><span class="sxs-lookup"><span data-stu-id="8c15d-203">Attribute, attribute type, attribute groups</span></span> | <span data-ttu-id="8c15d-204">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-204">Available</span></span>          |
-| <span data-ttu-id="8c15d-205">仕入先カタログ</span><span class="sxs-lookup"><span data-stu-id="8c15d-205">Vendor catalogs</span></span>                             | <span data-ttu-id="8c15d-206">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-206">Available</span></span>          |
-| <span data-ttu-id="8c15d-207">バーコード</span><span class="sxs-lookup"><span data-stu-id="8c15d-207">Bar codes</span></span>                                   | <span data-ttu-id="8c15d-208">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-208">Available</span></span>          |
-
-### <a name="inventory-management"></a><span data-ttu-id="8c15d-209">在庫管理</span><span class="sxs-lookup"><span data-stu-id="8c15d-209">Inventory management</span></span>
-
-<span data-ttu-id="8c15d-210">次のテーブルは、オンプレミス配置で使用できる在庫管理コンポーネントを示しています。</span><span class="sxs-lookup"><span data-stu-id="8c15d-210">The following table indicates which inventory management components are available in on-premises deployments.</span></span>
-
-| <span data-ttu-id="8c15d-211">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="8c15d-211">Component</span></span>                      | <span data-ttu-id="8c15d-212">On-premises ステータス</span><span class="sxs-lookup"><span data-stu-id="8c15d-212">On-premises status</span></span> |
-|--------------------------------|--------------------|
-| <span data-ttu-id="8c15d-213">梱包明細</span><span class="sxs-lookup"><span data-stu-id="8c15d-213">Packing slip</span></span>                   | <span data-ttu-id="8c15d-214">利用可</span><span class="sxs-lookup"><span data-stu-id="8c15d-214">Available</span></span>          |
-| <span data-ttu-id="8c15d-215">フルフィルメント グループ</span><span class="sxs-lookup"><span data-stu-id="8c15d-215">Fulfilment groups</span></span>              | <span data-ttu-id="8c15d-216">利用可</span><span class="sxs-lookup"><span data-stu-id="8c15d-216">Available</span></span>          |
-| <span data-ttu-id="8c15d-217">クロス ドッキングと集中的購買</span><span class="sxs-lookup"><span data-stu-id="8c15d-217">Cross docking and buyer's push</span></span> | <span data-ttu-id="8c15d-218">利用可</span><span class="sxs-lookup"><span data-stu-id="8c15d-218">Available</span></span>          |
-| <span data-ttu-id="8c15d-219">手持在庫数量</span><span class="sxs-lookup"><span data-stu-id="8c15d-219">Qty on hand</span></span>                    | <span data-ttu-id="8c15d-220">利用可</span><span class="sxs-lookup"><span data-stu-id="8c15d-220">Available</span></span>          |
-| <span data-ttu-id="8c15d-221">在庫数</span><span class="sxs-lookup"><span data-stu-id="8c15d-221">Stock counts</span></span>                   | <span data-ttu-id="8c15d-222">利用可</span><span class="sxs-lookup"><span data-stu-id="8c15d-222">Available</span></span>          |
-| <span data-ttu-id="8c15d-223">在庫調整</span><span class="sxs-lookup"><span data-stu-id="8c15d-223">Inventory adjustment</span></span>           | <span data-ttu-id="8c15d-224">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-224">Available</span></span>          |
-| <span data-ttu-id="8c15d-225">配送のモデル</span><span class="sxs-lookup"><span data-stu-id="8c15d-225">Models of delivery</span></span>             | <span data-ttu-id="8c15d-226">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-226">Available</span></span>          |
-| <span data-ttu-id="8c15d-227">返品場所</span><span class="sxs-lookup"><span data-stu-id="8c15d-227">Return locations</span></span>               | <span data-ttu-id="8c15d-228">取得可能</span><span class="sxs-lookup"><span data-stu-id="8c15d-228">Available</span></span>          |
-| <span data-ttu-id="8c15d-229">配分済み注文の管理</span><span class="sxs-lookup"><span data-stu-id="8c15d-229">Distributed order management</span></span>   | <span data-ttu-id="8c15d-230">使用不可</span><span class="sxs-lookup"><span data-stu-id="8c15d-230">Not available</span></span>      |
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="retail-onprem.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>retail-onprem.22b0a9.88178c23103082cce1dc06a5082ceeb9aee63805.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>88178c23103082cce1dc06a5082ceeb9aee63805</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\retail-onprem.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Retail capabilities that are available in on-premises deployments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置で使用できる小売機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic lists the retail capabilities available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、オンプレミス展開で使用できる小売機能を一覧表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Retail capabilities that are available in on-premises deployments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置で使用できる小売機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic lists retail capabilities that are available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、オンプレミス展開で使用できる小売機能を一覧表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>For more information about on-premises deployments, see <bpt id="p1">[</bpt>On-premises deployment home page<ept id="p1">](../dev-itpro/deployment/on-premises-deployment-landing-page.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置の詳細については、<bpt id="p1">[</bpt>オンプレミス配置のホーム ページ<ept id="p1">](../dev-itpro/deployment/on-premises-deployment-landing-page.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Component</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>On-premises status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On-premises ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Cloud Point of Sale</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラウド販売時点管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Retail Point of Sale</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail 販売時点管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Modern Point of Sale</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern 販売時点管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Retail Server</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail サーバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Channel database</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル データベース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利用可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Hardware station</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardware Station</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Not available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用不可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>AX 2012 N-1 support</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 N-1 のサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Not available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用不可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Head office capability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">本社の機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Channel management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The following table indicates which channel management components are available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、オンプレミス配置で使用できるチャネル管理コンポーネントを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Component</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>On-premises status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On-premises ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>All stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての店舗</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Online stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン ストア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Not available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用不可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Call center</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール センター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジスター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Devices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>POS permissions and permission groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS のアクセス許可およびアクセス許可グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Info codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">情報コード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Retail payment methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売支払方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Email receipts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メールの領収書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Email notifications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">電子メール通知</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Sales tax overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税の上書き</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Functionality profiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機能プロファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Sales tax groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">消費税グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Pricing and discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格決定と割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>The following table indicates which pricing and discount components are available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、オンプレミス配置で使用できる価格決定および割引コンポーネントを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Component</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>On-premises status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On-premises ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>All discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての割引</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Price groups, price adjustments, category price rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格グループ、価格の調整、カテゴリ価格ルール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Trade agreements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売買契約</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Channel navigation category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル ナビゲーション カテゴリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Affiliation price groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">所属価格グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Retail channel price groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネル価格グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Pricing priorities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格決定優先順位</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Price simulator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">価格シミュレーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Not available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用不可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>The following table indicates which customer components are available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、オンプレミス配置で使用できる顧客コンポーネントを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Component</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>On-premises status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On-premises ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Loyalty schemes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ スキーマ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Loyalty cards</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ カード (複数)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Loyalty points</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ロイヤルティ ポイント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Merchandising</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売促進</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>The following table indicates which merchandising components are available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、オンプレミス配置で使用できる販売促進コンポーネントを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Component</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>On-premises status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On-premises ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Products by category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カテゴリ別製品</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Product categories</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製品カテゴリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Channel categories and product attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャネル カテゴリと製品属性</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Assortments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">品揃え</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Retail catalogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売カタログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Retail product kits</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売製品キット</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Retail product files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売製品ファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Variant groups (size, color, style)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バリアント グループ (サイズ、色、スタイル)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Attribute, attribute type, attribute groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">属性、属性タイプ、属性グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Vendor catalogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">仕入先カタログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Bar codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バーコード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>The following table indicates which inventory management components are available in on-premises deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、オンプレミス配置で使用できる在庫管理コンポーネントを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Component</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>On-premises status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On-premises ステータス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Packing slip</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">梱包明細</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利用可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Fulfilment groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フルフィルメント グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利用可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Cross docking and buyer's push</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クロス ドッキングと集中的購買</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利用可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Qty on hand</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">手持在庫数量</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利用可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Stock counts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">利用可</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Inventory adjustment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫調整</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Models of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配送のモデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Return locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返品場所</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">取得可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Distributed order management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配分済み注文の管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Not available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用不可</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

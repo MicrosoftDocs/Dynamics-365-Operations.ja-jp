@@ -1,110 +1,204 @@
----
-title: フィールドおよびフィールド グループのサブパターン
-description: このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。
-author: jasongre
-manager: AnnBe
-ms.date: 11/09/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 12384
-ms.assetid: f3bf8d00-8e6d-4af7-ab7e-3ff47fce9e21
-ms.search.region: Global
-ms.author: jasongre
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c68b96fa1eedccf08bf8d87c7f8aa5cd67f9e36
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537187"
----
-# <a name="fields-and-field-groups-subpattern"></a><span data-ttu-id="90f3d-103">フィールドおよびフィールド グループのサブパターン</span><span class="sxs-lookup"><span data-stu-id="90f3d-103">Fields and Field Groups subpattern</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="90f3d-104">このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-104">This topic provides information about the Field and Field Groups form subpattern.</span></span> <span data-ttu-id="90f3d-105">これは、最も一般的なデータ入力サブパターンです。</span><span class="sxs-lookup"><span data-stu-id="90f3d-105">This is the most common data entry subpattern.</span></span> <span data-ttu-id="90f3d-106">複数のフィールドまたはフィールドのグループを表示するのに動的な数の列を使用します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-106">It uses a dynamic number of columns to present multiple fields or groups of fields.</span></span>
-
-<a name="usage"></a><span data-ttu-id="90f3d-107">用途</span><span class="sxs-lookup"><span data-stu-id="90f3d-107">Usage</span></span>
------
-
-<span data-ttu-id="90f3d-108">フィールドおよびフィールド グループは最も一般的なデータ入力サブパターンであり、複数のフィールドまたはフィールドのグループを表示する動的列の数を使用します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-108">Field and Field Groups is the most common data entry subpattern and uses a dynamic number of columns to present multiple fields or groups of fields.</span></span> <span data-ttu-id="90f3d-109">このサブパターンは、動的な高さや幅を持つコントロール (グリッド、ツリー、ラジオボタン、リストボックス、リストビューなどの)、または高さや幅の大きいコントロール (Chart など) では使用されません。</span><span class="sxs-lookup"><span data-stu-id="90f3d-109">This subpattern is not used with controls that have dynamic height or width (for example Grid, Tree, RadioButton, ListBox, or ListView), or controls that have larger height or width (for example, Chart).</span></span> <span data-ttu-id="90f3d-110">このパターン内のグループ コントロールを使用して、ラベルの下のフィールドをグループ化するか、テーブル フィールド グループにバインドすることができます。</span><span class="sxs-lookup"><span data-stu-id="90f3d-110">The group controls within this pattern can be used either to group fields under a label or to bind to a table field group.</span></span>
-
-### <a name="typical-contents"></a><span data-ttu-id="90f3d-111">標準的な内容</span><span class="sxs-lookup"><span data-stu-id="90f3d-111">Typical contents</span></span>
-
--   <span data-ttu-id="90f3d-112">クイック タブの直接の子としてのグループまたはフィールド</span><span class="sxs-lookup"><span data-stu-id="90f3d-112">Groups or Fields as immediate children of the FastTab</span></span>
--   <span data-ttu-id="90f3d-113">フィールドを含むグループ</span><span class="sxs-lookup"><span data-stu-id="90f3d-113">Groups containing Fields</span></span>
--   <span data-ttu-id="90f3d-114">他のサブパターンを含めることができます:</span><span class="sxs-lookup"><span data-stu-id="90f3d-114">Can contain other subpatterns:</span></span>
-    -   <span data-ttu-id="90f3d-115">水平フィールドおよびボタン グループ</span><span class="sxs-lookup"><span data-stu-id="90f3d-115">Horizontal fields and button group</span></span>
-
-## <a name="wireframe"></a><span data-ttu-id="90f3d-116">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="90f3d-116">Wireframe</span></span>
-<span data-ttu-id="90f3d-117">[![FieldsFieldGroups(1)](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)</span><span class="sxs-lookup"><span data-stu-id="90f3d-117">[![FieldsFieldGroups(1)](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)</span></span>
-
-## <a name="pattern-changes"></a><span data-ttu-id="90f3d-118">パターンの変更</span><span class="sxs-lookup"><span data-stu-id="90f3d-118">Pattern changes</span></span>
-<span data-ttu-id="90f3d-119">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-119">Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</span></span>
-
--   <span data-ttu-id="90f3d-120">フィールドを 2 つ以上の列に強制するため、明示的な列とグループの使用を削除しました。</span><span class="sxs-lookup"><span data-stu-id="90f3d-120">Removed explicit columns and the use of groups to force fields into two or three (or more) columns.</span></span>
--   <span data-ttu-id="90f3d-121">固定列から動的列に変更されました。</span><span class="sxs-lookup"><span data-stu-id="90f3d-121">Changed from fixed columns to dynamic columns.</span></span>
-
-## <a name="model"></a><span data-ttu-id="90f3d-122">モデル</span><span class="sxs-lookup"><span data-stu-id="90f3d-122">Model</span></span>
-### <a name="high-level-structure"></a><span data-ttu-id="90f3d-123">高レベル構造体</span><span class="sxs-lookup"><span data-stu-id="90f3d-123">High-level structure</span></span>
-
-- <span data-ttu-id="90f3d-124">\[コンテナー\] (列 = 入力)</span><span class="sxs-lookup"><span data-stu-id="90f3d-124">\[Container\] (Columns=Fill)</span></span>
-
-    - <span data-ttu-id="90f3d-125">*フィールド グループ (グループ)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="90f3d-125">*FieldGroups (Group) \[0..N\]*</span></span>
-
-        - <span data-ttu-id="90f3d-126">フィールド ($Field) \[1..N\]</span><span class="sxs-lookup"><span data-stu-id="90f3d-126">Fields ($Field) \[1..N\]</span></span>
-        - <span data-ttu-id="90f3d-127">*ActionableFields (グループ)\[0..N\]* 水平フィールドとボタン グループ サブパターンを模倣します</span><span class="sxs-lookup"><span data-stu-id="90f3d-127">*ActionableFields (Group) \[0..N\]* mimics the Horizontal Fields and Button Group subpattern</span></span>
-
-    - <span data-ttu-id="90f3d-128">*フィールド ($ フィールド)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="90f3d-128">*Fields ($Field) \[0..N\]*</span></span>
-    - <span data-ttu-id="90f3d-129">*ActionableFields (グループ)\[0..N\]*</span><span class="sxs-lookup"><span data-stu-id="90f3d-129">*ActionableFields (Group) \[0..N\]*</span></span>
-
-### <a name="core-components"></a><span data-ttu-id="90f3d-130">コア コンポーネント</span><span class="sxs-lookup"><span data-stu-id="90f3d-130">Core components</span></span>
-
--   <span data-ttu-id="90f3d-131">FieldsAndFieldGroups サブパターンをコンテナー コントロールに適用します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-131">Apply the FieldsAndFieldGroups subpattern to the container control.</span></span>
--   <span data-ttu-id="90f3d-132">BP 警告に対処します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-132">Address BP Warnings:</span></span>
-    -   <span data-ttu-id="90f3d-133">繰り越されたチェックである AX6.3 BP 以外に必要な追加の BP チェックはありません。</span><span class="sxs-lookup"><span data-stu-id="90f3d-133">No additional BP checks are required beyond the AX6.3 BP that were checks carried forward.</span></span>
-
-### <a name="related-patterns"></a><span data-ttu-id="90f3d-134">関連するパターン</span><span class="sxs-lookup"><span data-stu-id="90f3d-134">Related patterns</span></span>
-
--   [<span data-ttu-id="90f3d-135">水平フィールドおよびボタン グループ</span><span class="sxs-lookup"><span data-stu-id="90f3d-135">Horizontal Fields and Buttons Group</span></span>](horizontal-fields-buttons-group-subpattern.md)
-
-## <a name="ux-guidelines"></a><span data-ttu-id="90f3d-136">UX ガイドライン</span><span class="sxs-lookup"><span data-stu-id="90f3d-136">UX guidelines</span></span>
-<span data-ttu-id="90f3d-137">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</span><span class="sxs-lookup"><span data-stu-id="90f3d-137">The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</span></span> <span data-ttu-id="90f3d-138">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</span><span class="sxs-lookup"><span data-stu-id="90f3d-138">This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</span></span> <span data-ttu-id="90f3d-139">ブラウザーでフォームを開いて、これらの手順を確認します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-139">Open the form in a browser, and walk through these steps.</span></span>
-
--   <span data-ttu-id="90f3d-140">**標準フォーム ガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="90f3d-140">**Standard form guidelines:**</span></span>
-    -   <span data-ttu-id="90f3d-141">標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。</span><span class="sxs-lookup"><span data-stu-id="90f3d-141">Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.</span></span>
--   <span data-ttu-id="90f3d-142">**フィールドおよびフィールド グループのガイドライン:**</span><span class="sxs-lookup"><span data-stu-id="90f3d-142">**Fields and Field Groups guidelines:**</span></span>
-    -   <span data-ttu-id="90f3d-143">グループ内のフィールドは、ページ全体を越えて移動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="90f3d-143">The fields in groups should flow across the entire page.</span></span> <span data-ttu-id="90f3d-144">[![FieldsFieldGroups(2)](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)</span><span class="sxs-lookup"><span data-stu-id="90f3d-144">[![FieldsFieldGroups(2)](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)</span></span>
-    -   <span data-ttu-id="90f3d-145">可能な場合は、不要なフィールド グループのラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-145">When possible, remove unnecessary field group labels.</span></span>
-    -   <span data-ttu-id="90f3d-146">フィールドが分かりやすくグループ分けされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="90f3d-146">Verify that you have an understandable grouping for your fields.</span></span>
-    -   <span data-ttu-id="90f3d-147">すべてのフィールドがラベルを持つグループにあるか、またはグループ ラベルを表示しないかです。</span><span class="sxs-lookup"><span data-stu-id="90f3d-147">Either all fields should be in Groups that have labels, or no Group labels should be shown.</span></span>
-
-## <a name="examples"></a><span data-ttu-id="90f3d-148">例</span><span class="sxs-lookup"><span data-stu-id="90f3d-148">Examples</span></span>
-<span data-ttu-id="90f3d-149">フォーム: **InventLocation (LocationNames)** [![FieldsFieldGroups(3)](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)</span><span class="sxs-lookup"><span data-stu-id="90f3d-149">Form: **InventLocation (LocationNames)** [![FieldsFieldGroups(3)](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)</span></span>
-
-## <a name="resources"></a><span data-ttu-id="90f3d-150">リソース</span><span class="sxs-lookup"><span data-stu-id="90f3d-150">Resources</span></span>
-### <a name="typically-used-by-patterns"></a><span data-ttu-id="90f3d-151">通常、パターンによって使用される</span><span class="sxs-lookup"><span data-stu-id="90f3d-151">Typically used by patterns</span></span>
-
--   [<span data-ttu-id="90f3d-152">簡易リストと詳細</span><span class="sxs-lookup"><span data-stu-id="90f3d-152">Simple List and Details</span></span>](simple-list-details-form-pattern.md)
--   [<span data-ttu-id="90f3d-153">目次</span><span class="sxs-lookup"><span data-stu-id="90f3d-153">Table of Contents</span></span>](table-of-contents-form-pattern.md)
--   [<span data-ttu-id="90f3d-154">詳細マスター</span><span class="sxs-lookup"><span data-stu-id="90f3d-154">Details Master</span></span>](details-master-form-pattern.md)
--   [<span data-ttu-id="90f3d-155">詳細トランザクション</span><span class="sxs-lookup"><span data-stu-id="90f3d-155">Details Transaction</span></span>](details-transaction-form-pattern.md)
-
-## <a name="appendix"></a><span data-ttu-id="90f3d-156">付録</span><span class="sxs-lookup"><span data-stu-id="90f3d-156">Appendix</span></span>
-### <a name="frequently-asked-questions"></a><span data-ttu-id="90f3d-157">よく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="90f3d-157">Frequently asked questions</span></span>
-
-<span data-ttu-id="90f3d-158">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</span><span class="sxs-lookup"><span data-stu-id="90f3d-158">This section will have answers to frequently asked questions that are related to this guideline/pattern.</span></span>
-
-### <a name="open-issues"></a><span data-ttu-id="90f3d-159">未処理の問題</span><span class="sxs-lookup"><span data-stu-id="90f3d-159">Open issues</span></span>
-
--   <span data-ttu-id="90f3d-160">ツールでは、パターン定義のコンテンツを模倣する代わりに、HorizontalFieldsButtonsGroup サブパターンを明示的に使用できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="90f3d-160">Tooling must allow explicit use of the HorizontalFieldsButtonsGroup subpattern instead of mimicking content in the pattern definition.</span></span>
-
-### <a name="ax-2012-content"></a><span data-ttu-id="90f3d-161">AX 2012 コンテンツ</span><span class="sxs-lookup"><span data-stu-id="90f3d-161">AX 2012 content</span></span>
-
-<span data-ttu-id="90f3d-162">**InventLocation** [![FieldsFieldGroups(4)](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)</span><span class="sxs-lookup"><span data-stu-id="90f3d-162">**InventLocation** [![FieldsFieldGroups(4)](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="fields-field-groups-subpattern.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>fields-field-groups-subpattern.ef9a6b.cfe48630c2bfda898a800b0c2452c35fbb0fd051.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>cfe48630c2bfda898a800b0c2452c35fbb0fd051</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\fields-field-groups-subpattern.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Fields and Field Groups subpattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドおよびフィールド グループのサブパターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about the Field and Field Groups form subpattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Fields and Field Groups subpattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドおよびフィールド グループのサブパターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information about the Field and Field Groups form subpattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This is the most common data entry subpattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、最も一般的なデータ入力サブパターンです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It uses a dynamic number of columns to present multiple fields or groups of fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のフィールドまたはフィールドのグループを表示するのに動的な数の列を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">用途</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Field and Field Groups is the most common data entry subpattern and uses a dynamic number of columns to present multiple fields or groups of fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドおよびフィールド グループは最も一般的なデータ入力サブパターンであり、複数のフィールドまたはフィールドのグループを表示する動的列の数を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>This subpattern is not used with controls that have dynamic height or width (for example Grid, Tree, RadioButton, ListBox, or ListView), or controls that have larger height or width (for example, Chart).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このサブパターンは、動的な高さや幅を持つコントロール (グリッド、ツリー、ラジオボタン、リストボックス、リストビューなどの)、または高さや幅の大きいコントロール (Chart など) では使用されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The group controls within this pattern can be used either to group fields under a label or to bind to a table field group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターン内のグループ コントロールを使用して、ラベルの下のフィールドをグループ化するか、テーブル フィールド グループにバインドすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Typical contents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準的な内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Groups or Fields as immediate children of the FastTab</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クイック タブの直接の子としてのグループまたはフィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Groups containing Fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドを含むグループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Can contain other subpatterns:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他のサブパターンを含めることができます:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Horizontal fields and button group</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">水平フィールドおよびボタン グループ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Wireframe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワイヤーフレーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(1)<ept id="p1">](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(1)<ept id="p1">](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Pattern changes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パターンの変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Here are the main changes to this pattern since Microsoft Dynamics AX 2012:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Removed explicit columns and the use of groups to force fields into two or three (or more) columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドを 2 つ以上の列に強制するため、明示的な列とグループの使用を削除しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Changed from fixed columns to dynamic columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">固定列から動的列に変更されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>High-level structure</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">高レベル構造体</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><ph id="ph1">\[</ph>Container<ph id="ph2">\]</ph> (Columns=Fill)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>コンテナー<ph id="ph2">\]</ph> (列 = 入力)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">*</bpt>FieldGroups (Group) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>フィールド グループ (グループ)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Fields ($Field) <ph id="ph1">\[</ph>1..N<ph id="ph2">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド ($Field) <ph id="ph1">\[</ph>1..N<ph id="ph2">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">*</bpt>ActionableFields (Group) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept> mimics the Horizontal Fields and Button Group subpattern</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>ActionableFields (グループ)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept> 水平フィールドとボタン グループ サブパターンを模倣します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">*</bpt>Fields ($Field) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>フィールド ($ フィールド)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">*</bpt>ActionableFields (Group) <ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>ActionableFields (グループ)<ph id="ph1">\[</ph>0..N<ph id="ph2">\]</ph><ept id="p1">*</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Core components</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コア コンポーネント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Apply the FieldsAndFieldGroups subpattern to the container control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FieldsAndFieldGroups サブパターンをコンテナー コントロールに適用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Address BP Warnings:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BP 警告に対処します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>No additional BP checks are required beyond the AX6.3 BP that were checks carried forward.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">繰り越されたチェックである AX6.3 BP 以外に必要な追加の BP チェックはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Related patterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">関連するパターン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">[</bpt>Horizontal Fields and Buttons Group<ept id="p1">](horizontal-fields-buttons-group-subpattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>水平フィールドおよびボタン グループ<ept id="p1">](horizontal-fields-buttons-group-subpattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>UX guidelines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UX ガイドライン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The verification checklist shows the steps for manually verifying that the form complies with UX guidelines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>This checklist doesn't include any guidelines that will be enforced automatically through the development environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Open the form in a browser, and walk through these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブラウザーでフォームを開いて、これらの手順を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">**</bpt>Standard form guidelines:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>標準フォーム ガイドライン:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Standard form guidelines have been consolidated into the <bpt id="p1">[</bpt>General Form Guidelines<ept id="p1">](general-form-guidelines.md)</ept> document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準フォーム ガイドラインは、<bpt id="p1">[</bpt>全般的なガイドライン<ept id="p1">](general-form-guidelines.md)</ept> ドキュメントに統合されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">**</bpt>Fields and Field Groups guidelines:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フィールドおよびフィールド グループのガイドライン:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>The fields in groups should flow across the entire page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グループ内のフィールドは、ページ全体を越えて移動する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(2)<ept id="p1">](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(2)<ept id="p1">](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>When possible, remove unnecessary field group labels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">可能な場合は、不要なフィールド グループのラベルを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Verify that you have an understandable grouping for your fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドが分かりやすくグループ分けされていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Either all fields should be in Groups that have labels, or no Group labels should be shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのフィールドがラベルを持つグループにあるか、またはグループ ラベルを表示しないかです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Examples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Form: <bpt id="p1">**</bpt>InventLocation (LocationNames)<ept id="p1">**</ept> <bpt id="p2">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(3)<ept id="p2">](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム: <bpt id="p1">**</bpt>InventLocation (LocationNames)<ept id="p1">**</ept> <bpt id="p2">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(3)<ept id="p2">](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Typically used by patterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、パターンによって使用される</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">[</bpt>Simple List and Details<ept id="p1">](simple-list-details-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>簡易リストと詳細<ept id="p1">](simple-list-details-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source><bpt id="p1">[</bpt>Table of Contents<ept id="p1">](table-of-contents-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>目次<ept id="p1">](table-of-contents-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">[</bpt>Details Master<ept id="p1">](details-master-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細マスター<ept id="p1">](details-master-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source><bpt id="p1">[</bpt>Details Transaction<ept id="p1">](details-transaction-form-pattern.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>詳細トランザクション<ept id="p1">](details-transaction-form-pattern.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Appendix</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付録</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Frequently asked questions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">よく寄せられる質問</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>This section will have answers to frequently asked questions that are related to this guideline/pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションには、このガイドライン/パターンに関連するよくある質問への回答があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Open issues</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">未処理の問題</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Tooling must allow explicit use of the HorizontalFieldsButtonsGroup subpattern instead of mimicking content in the pattern definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールでは、パターン定義のコンテンツを模倣する代わりに、HorizontalFieldsButtonsGroup サブパターンを明示的に使用できるようにする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>AX 2012 content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 コンテンツ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">**</bpt>InventLocation<ept id="p1">**</ept> <bpt id="p2">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(4)<ept id="p2">](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>InventLocation<ept id="p1">**</ept> <bpt id="p2">[</bpt><ph id="ph1">![</ph>FieldsFieldGroups(4)<ept id="p2">](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

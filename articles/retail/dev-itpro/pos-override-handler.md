@@ -1,35 +1,54 @@
----
-title: Retail ソフトウェア開発キット (SDK)
-description: このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。
-author: RobinARH
-manager: AnnBe
-ms.date: 09/05/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations, Retail
-ms.custom: 17771
-ms.assetid: c54d34a5-32e2-4d0d-a1c2-4a9940d95ade
-ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 2018-05-30
-ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 0fb70e2dea907f2d6becf18fdc323b65894cb09b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537546"
----
-# <a name="pos-override-request-handler-sdk"></a><span data-ttu-id="f750e-104">POS オーバーライド要求ハンドラー (SDK)</span><span class="sxs-lookup"><span data-stu-id="f750e-104">POS Override request handler (SDK)</span></span>
-
-[!include [banner](../../includes/banner.md)]
-
-<span data-ttu-id="f750e-105">このトピックでは、POS 要求ハンドラーをオーバーライドする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f750e-105">This topic explains how to override POS request handler.</span></span> <span data-ttu-id="f750e-106">POS ビジネス ロジックをオーバーライドするための新しい拡張パターンを導入しました。ビジネス ロジックをコア POS 業務フローに変更/追加するシナリオがある場合、このパターンに従うことができます。</span><span class="sxs-lookup"><span data-stu-id="f750e-106">We introduced new extension pattern for overriding the POS business logic, if you have any scenario where you want to modify/add some business logic to the core POS business flow then you can follow this pattern.</span></span>
-
-<span data-ttu-id="f750e-107">例: シリアル品目を販売するとき、POS にはスキャン後にその品目のシリアル番号を入力するためのダイアログが表示されますが、コードを使用してシリアル番号を入力することでシリアル番号のプロセスを自動化する場合、このシリアル番号ハンドラーをオーバーライドしてカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="f750e-107">Ex: When you sell serial item, POS will show a dialog to enter the serial number for that item after the scan, but if you want to automate the serial number process by entering the serial number through code then you can override this serial number handler and customize.</span></span> <span data-ttu-id="f750e-108">POS のビジネス ロジックは、要求と応答に基づいています。</span><span class="sxs-lookup"><span data-stu-id="f750e-108">Any business logic in POS is based upon request and response.</span></span> <span data-ttu-id="f750e-109">そのため、関連する要求をオーバーライドし、ビジネス シナリオに従って応答を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="f750e-109">So, you can override the relevant request and return the response according to your business scenario.</span></span>
-
-<span data-ttu-id="f750e-110">注意: すべての業務要求がカスタマイズできるように公開されるわけではありませんいくつかの要求のみオーバーライド可能です。</span><span class="sxs-lookup"><span data-stu-id="f750e-110">Note: Not all business request is exposed for customization only few requests are overridable.</span></span> <span data-ttu-id="f750e-111">ビジネス ロジックをカスタマイズする場合で、その要求がオーバーライド可能でない場合、サポート チケットを作成するか、LCS 機能拡張ツールでリクエストを登録します。</span><span class="sxs-lookup"><span data-stu-id="f750e-111">If you want to customize any business logic and if that request is not overrdiable then create a support ticket or log a request in the LCS extensibility tool.</span></span> <span data-ttu-id="f750e-112">この記事の後方では、オーバーライドできる要求の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="f750e-112">Later in this article we have listed the list of requests available for overriding.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="pos-override-handler.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>pos-override-handler.6b2199.54144a2a0e6539c2cf89a7f8e551a335dc3b3cdb.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>54144a2a0e6539c2cf89a7f8e551a335dc3b3cdb</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\dev-itpro\pos-override-handler.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Retail software development kit (SDK)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail ソフトウェア開発キット (SDK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides general information about the Retail SDK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Retail SDK に関する一般情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>POS Override request handler (SDK)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS オーバーライド要求ハンドラー (SDK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic explains how to override POS request handler.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、POS 要求ハンドラーをオーバーライドする方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>We introduced new extension pattern for overriding the POS business logic, if you have any scenario where you want to modify/add some business logic to the core POS business flow then you can follow this pattern.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS ビジネス ロジックをオーバーライドするための新しい拡張パターンを導入しました。ビジネス ロジックをコア POS 業務フローに変更/追加するシナリオがある場合、このパターンに従うことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Ex: When you sell serial item, POS will show a dialog to enter the serial number for that item after the scan, but if you want to automate the serial number process by entering the serial number through code then you can override this serial number handler and customize.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例: シリアル品目を販売するとき、POS にはスキャン後にその品目のシリアル番号を入力するためのダイアログが表示されますが、コードを使用してシリアル番号を入力することでシリアル番号のプロセスを自動化する場合、このシリアル番号ハンドラーをオーバーライドしてカスタマイズできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Any business logic in POS is based upon request and response.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS のビジネス ロジックは、要求と応答に基づいています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>So, you can override the relevant request and return the response according to your business scenario.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのため、関連する要求をオーバーライドし、ビジネス シナリオに従って応答を返すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Note: Not all business request is exposed for customization only few requests are overridable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注意: すべての業務要求がカスタマイズできるように公開されるわけではありませんいくつかの要求のみオーバーライド可能です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>If you want to customize any business logic and if that request is not overrdiable then create a support ticket or log a request in the LCS extensibility tool.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビジネス ロジックをカスタマイズする場合で、その要求がオーバーライド可能でない場合、サポート チケットを作成するか、LCS 機能拡張ツールでリクエストを登録します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Later in this article we have listed the list of requests available for overriding.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この記事の後方では、オーバーライドできる要求の一覧を示します。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

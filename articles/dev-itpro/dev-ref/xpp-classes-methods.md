@@ -1,877 +1,1608 @@
----
-title: X++ クラスおよびメソッド
-description: このトピックでは、X++ でクラスやインターフェイスを作成および使用する方法について説明します。
-author: RobinARH
-manager: AnnBe
-ms.date: 11/03/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 150303
-ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
-ms.search.region: Global
-ms.author: robinr
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba143ddd8fee3b42440f626973a61760742abd86
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536993"
----
-# <a name="x-classes-and-methods"></a><span data-ttu-id="dc07a-103">X++ クラスおよびメソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-103">X++ classes and methods</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="dc07a-104">このトピックでは、X++ でクラスやインターフェイスを作成および使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-104">This topic describes how to create and use classes and interfaces in X++.</span></span>
-
-<a name="classes-in-x"></a><span data-ttu-id="dc07a-105">X++ のクラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-105">Classes in X++</span></span>
---------------
-
-<span data-ttu-id="dc07a-106">*クラス*は、そのクラスから後に構築されるオブジェクトのデータとメソッドを定義するソフトウェア構造です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-106">A *class* is a software construct that defines the data and methods of the objects that are later constructed from that class.</span></span> <span data-ttu-id="dc07a-107">構築されるオブジェクトは、*インスタンス* または *オブジェクト* と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-107">The objects that are constructed are known as *instances* or *objects*.</span></span> <span data-ttu-id="dc07a-108">(このトピックでは、2 つの用語を同じ意味で使用しています。) データはオブジェクトの状態を表し、メソッドはオブジェクトの動作を表します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-108">(This topic uses the two terms interchangeably.) The data represents the state of the object, whereas the methods represent the behavior of the object.</span></span> <span data-ttu-id="dc07a-109">*変数*にはクラスのデータが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-109">*Variables* contain the data for the class.</span></span> <span data-ttu-id="dc07a-110">クラス内の変数は、そのクラスから構成されるオブジェクトに固有です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-110">Variables in a class are specific to objects that are constructed from that class.</span></span> <span data-ttu-id="dc07a-111">クラス宣言から構築されたすべてのオブジェクトには、独自の変数のコピーがあります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-111">Every object that is constructed from the class declaration has its own copy of the variables.</span></span> <span data-ttu-id="dc07a-112">これらの変数は*インスタンス変数*と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-112">These variables are known as *instance variables*.</span></span> <span data-ttu-id="dc07a-113">メソッドはクラスの動作を定義します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-113">Methods define the behavior of a class.</span></span> <span data-ttu-id="dc07a-114">データに作用する一連のステートメントです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-114">They are the sequences of statements that operate on the data.</span></span> <span data-ttu-id="dc07a-115">通常、メソッドはクラスのインスタンス変数を操作するように宣言されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-115">Typically, methods are declared to operate on the instance variables of the class.</span></span> <span data-ttu-id="dc07a-116">これらのメソッドは、*instance メソッド*または *object メソッド*と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-116">These methods are known as *instance methods* or *object methods*.</span></span> <span data-ttu-id="dc07a-117">また、*静的メソッド* および *静的フィールド* を宣言することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-117">You can also declare *static methods* and *static fields*.</span></span>
-
-## <a name="declaration-of-classes"></a><span data-ttu-id="dc07a-118">クラスの宣言</span><span class="sxs-lookup"><span data-stu-id="dc07a-118">Declaration of classes</span></span>
-### <a name="create-a-class-in-visual-studio"></a><span data-ttu-id="dc07a-119">Visual Studio でのクラスの作成</span><span class="sxs-lookup"><span data-stu-id="dc07a-119">Create a class in Visual Studio</span></span>
-
-<span data-ttu-id="dc07a-120">Microsoft Visual Studio でクラスを作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="dc07a-120">Follow these steps to create a class in Microsoft Visual Studio.</span></span>
-
-1.  <span data-ttu-id="dc07a-121">サーバー エクスプローラーで、プロジェクトを右クリックしてから**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-121">In Server Explorer, right-click the project, and then click **Add**.</span></span>
-2.  <span data-ttu-id="dc07a-122">**新しい項目**ダイアログ ボックスで、**クラス**を選択してからクラスの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-122">In the **New Item** dialog box, select **Class**, and then enter a name for the class.</span></span>
-3.  <span data-ttu-id="dc07a-123">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-123">Click **Add**.</span></span>
-
-<span data-ttu-id="dc07a-124">すべてのクラスはパブリックです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-124">All classes are public.</span></span> <span data-ttu-id="dc07a-125">**パブリック** モディファイアーを削除すると、システムではクラスはパブリック クラスとして扱われます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-125">If you remove the **public** modifier, the system still treats the class as public.</span></span> <span data-ttu-id="dc07a-126">クラス宣言では、**final** および **extends** などの、他の修飾子を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-126">You can specify other modifiers on the class declaration, such as **final** and **extends**.</span></span>
-
-### <a name="creating-variables-in-a-class"></a><span data-ttu-id="dc07a-127">クラスで変数を作成しています</span><span class="sxs-lookup"><span data-stu-id="dc07a-127">Creating variables in a class</span></span>
-
-<span data-ttu-id="dc07a-128">すべてのクラスはパブリックですが、すべてのメンバー変数は暗黙的に保護されています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-128">All classes are public, but all member variables are implicitly protected.</span></span> <span data-ttu-id="dc07a-129">ただし、private、protected または public キーワードを使用してメンバー変数宣言を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-129">However, you can modify the member variable declaration by using the private, protected or public keywords.</span></span> <span data-ttu-id="dc07a-130">すべてのメンバー変数はクラスのオブジェクト インスタンスにのみ属しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-130">All member variables belong to only object instances of the class.</span></span> <span data-ttu-id="dc07a-131">次の例は、アクセサー メソッドを使用して変数データを公開する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-131">The following example shows how to use accessor methods to make the variable data public.</span></span>
-
-    public class HasAFirstName
-    {
-        str firstName;
-        public str getFirstName()
-        {
-            return firstName;
-        }
-
-        public void setFirstName(str newName)
-        {
-           firstName = newName;
-        }
-    }
-
-## <a name="constructors"></a><span data-ttu-id="dc07a-132">コンストラクター</span><span class="sxs-lookup"><span data-stu-id="dc07a-132">Constructors</span></span>
-<span data-ttu-id="dc07a-133">クラスのインスタンスを作成するには、*コンストラクタ*を使用してクラスのインスタンスを生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-133">To create an instance of a class, you must instantiate it by using a *constructor*.</span></span> <span data-ttu-id="dc07a-134">既定のコンストラクターは、**新規** メソッドです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-134">The default constructor is the **new** method.</span></span>
-
-    // Declare a variable to refer to a Point object
-    Point myPoint; 
-
-    // Create an instance of a Point object
-    myPoint = new Point(); 
-
-<span data-ttu-id="dc07a-135">ベスト プラクティスとして、**新しい**メソッドを保護する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-135">As a best practice, you should make the **new** method protected.</span></span> <span data-ttu-id="dc07a-136">代わりに、初期化が必要ない場合、**静的コンストラクト** メソッドをクラスのパブリック コンストラクターとして使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-136">Instead, if initialization isn't required, you should use a **static construct** method as the public constructor for the class.</span></span> <span data-ttu-id="dc07a-137">それ以外の場合、**新しい静的**なメソッドを使う必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-137">Otherwise, you should use a **static new** method.</span></span>
-
-### <a name="creating-other-objects-in-a-constructor"></a><span data-ttu-id="dc07a-138">コンストラクターでその他のオブジェクトを作成しています</span><span class="sxs-lookup"><span data-stu-id="dc07a-138">Creating other objects in a constructor</span></span>
-
-<span data-ttu-id="dc07a-139">クラス コンストラクターは、クラスのインスタンスを作成するだけでなく、他のオブジェクトをインスタンス化することもできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-139">A class constructor can instantiate other objects in addition to creating an instance of the class.</span></span> <span data-ttu-id="dc07a-140">たとえば、次のコードは、境界を定義するため 2 つの**ポイント**オブジェクトを使用する**長方形**クラスを申告します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-140">For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds.</span></span>
-
-    class Rectangle1
-    {
-        Point lowerLeft;
-        Point upperRight;
-
-        void new(real _topLeftX, real _topLeftY, real _bottomRightX, real _bottomRightY)
-        {
-            lowerLeft  = new Point(_topLeftX, _topLeftY);
-            upperRight = new Point(_bottomRightX, _bottomRightY);
-        }
-    }
-
-## <a name="destructors"></a><span data-ttu-id="dc07a-141">デストラクター</span><span class="sxs-lookup"><span data-stu-id="dc07a-141">Destructors</span></span>
-<span data-ttu-id="dc07a-142">*デストラクター*は、クラス オブジェクトを明示的に破棄するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-142">A *destructor* is used to explicitly destroy a class object.</span></span> <span data-ttu-id="dc07a-143">オブジェクトはへの参照がない場合、自動的に破棄されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-143">Objects are automatically destroyed when there are no references to them.</span></span> <span data-ttu-id="dc07a-144">ただし、たとえば、次の方法で対象を明示的に破棄できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-144">However, you can destroy objects explicitly in the following ways:</span></span>
-
--   <span data-ttu-id="dc07a-145">**finalize** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-145">Use the **finalize** method.</span></span>
--   <span data-ttu-id="dc07a-146">オブジェクト ハンドルを **null** に設定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-146">Set the object handle to **null**.</span></span>
-
-### <a name="using-the-finalize-method"></a><span data-ttu-id="dc07a-147">finalize メソッドの使用</span><span class="sxs-lookup"><span data-stu-id="dc07a-147">Using the finalize method</span></span>
-
-<span data-ttu-id="dc07a-148">オブジェクトを明示的に破棄するには **finalize** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-148">Use the **finalize** method to explicitly destroy an object.</span></span> <span data-ttu-id="dc07a-149">**finalize** メソッドへの暗黙的な呼び出しはありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-149">There are no implicit calls to the **finalize** method.</span></span> <span data-ttu-id="dc07a-150">そこでステートメントを実行するメソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-150">You must call the method to run the statements in it.</span></span> <span data-ttu-id="dc07a-151">次の例は、**finalize** メソッドの呼び出しの基本構造を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-151">The following example shows the basic structure for a call to the **finalize** method.</span></span>
-
-    // From any method in a class.
-    if (condition)
-    {
-        // Removes object from memory.
-        this.finalize(); 
-    }
-
-<span data-ttu-id="dc07a-152">**finalize** メソッドでは、必要なクリーンアップ コードも配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-152">In the **finalize** method, you should also put any clean-up code that is required.</span></span> <span data-ttu-id="dc07a-153">たとえば、クラスがダイナミックリンク ライブラリ (DLL) モジュールを使用する場合、必要ではなくなったときに DLL をリリースする**確定**メソッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-153">For example, if your class uses a dynamic-link library (DLL) module, you can use the **finalize** method to release the DLL when you no longer require it.</span></span> <span data-ttu-id="dc07a-154">**finalize** メソッドは慎重に使用してください。</span><span class="sxs-lookup"><span data-stu-id="dc07a-154">Use the **finalize** method carefully.</span></span> <span data-ttu-id="dc07a-155">オブジェクトへの参照がある場合オブジェクトを破棄します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-155">It will destroy an object even if there are references to it.</span></span>
-
-### <a name="setting-an-object-handle-to-null"></a><span data-ttu-id="dc07a-156">オブジェクト ハンドルを null に設定</span><span class="sxs-lookup"><span data-stu-id="dc07a-156">Setting an object handle to null</span></span>
-
-<span data-ttu-id="dc07a-157">オブジェクト ハンドルを **null** に設定してオブジェクトを終了します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-157">Set the object handle to **null** to terminate an object.</span></span> <span data-ttu-id="dc07a-158">この方法は、他のオブジェクト ハンドルがそのオブジェクトを指していない場合にのみオブジェクトを破棄します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-158">This approach destroys an object only if no other object handles point to that object.</span></span> <span data-ttu-id="dc07a-159">他のコードがオブジェクト ハンドルを使用していないことを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-159">You should verify that other code isn't using the object handle.</span></span> <span data-ttu-id="dc07a-160">次の例では、オブジェクト ハンドルを作成し、**null** に設定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-160">The following example creates an object handle and then sets it to **null**.</span></span>
-
-    // Create an object handle of the type MyObject.
-    MyObject mo;
-    // Create an object of MyObject type and link it to the object handle.
-    mo = new myObject();
-    // Terminate the object.
-    mo = null;
-
-## <a name="creating-a-subclass"></a><span data-ttu-id="dc07a-161">サブクラスを作成しています</span><span class="sxs-lookup"><span data-stu-id="dc07a-161">Creating a subclass</span></span>
-<span data-ttu-id="dc07a-162">*サブクラス*は拡張または他のクラスから継承されるクラスです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-162">*Subclasses* are classes that extend or inherit from other classes.</span></span> <span data-ttu-id="dc07a-163">クラスは、他の 1 つのクラスのみ拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-163">A class can extend only one other class.</span></span> <span data-ttu-id="dc07a-164">複数の継承はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-164">Multiple inheritance isn't supported.</span></span> <span data-ttu-id="dc07a-165">クラスを拡張する場合、サブクラスが親クラスの (*スーパークラス*) すべてのメソッドと変数を継承します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-165">If you extend a class, the subclass inherits all the methods and variables in the parent class (the *superclass*).</span></span> <span data-ttu-id="dc07a-166">サブクラスを使用すると、より特殊な目的で既存のコードを再利用できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-166">Subclasses let you reuse existing code for a more specific purpose.</span></span> <span data-ttu-id="dc07a-167">したがって、設計、開発、テストの時間を節約できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-167">Therefore, they help save you time during design, development, and testing.</span></span> <span data-ttu-id="dc07a-168">スーパークラスの動作をカスタマイズするには、サブクラスのメソッドをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-168">To customize the behavior of a superclass, override the methods in a subclass.</span></span> <span data-ttu-id="dc07a-169">多くの場合、スーパークラスは、*基本クラス*として知られており、サブクラスは、*派生クラス*として知られています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-169">A superclass is often known as a *base class*, and a subclass is often known as a *derived class*.</span></span>
-
-### <a name="subclass-example"></a><span data-ttu-id="dc07a-170">サブクラスの例</span><span class="sxs-lookup"><span data-stu-id="dc07a-170">Subclass example</span></span>
-
-<span data-ttu-id="dc07a-171">次の例では、まず **Point** という名前のクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-171">The following example first creates a class that is named **Point**.</span></span> <span data-ttu-id="dc07a-172">その後、**Point** クラスを拡張して、**ThreePoint** という新しいクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-172">It then extends the **Point** class to create a new class that is named **ThreePoint**.</span></span>
-
-    class Point
-    {
-        // Instance fields.
-        real x; 
-        real y; 
-
-        // Constructor to initialize fields x and y.
-        void new(real _x, real _y)
-        { 
-            x = _x;
-            y = _y;
-        }
-    }
-
-    class ThreePoint extends Point
-    {
-        // Additional instance fields z. Fields x and y are inherited.
-        real z; 
-
-        // Constructor is overridden to initialize z.
-        void new(real _x, real _y, real _z)
-        {
-            // Initialize the fields.
-            super(_x, _y); 
-            z = _z;
-        }
-    }
-
-### <a name="preventing-class-inheritance"></a><span data-ttu-id="dc07a-173">クラスの継承を禁止する</span><span class="sxs-lookup"><span data-stu-id="dc07a-173">Preventing class inheritance</span></span>
-
-<span data-ttu-id="dc07a-174">**最終** モディファイアーを使用して、クラスが継承されないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-174">You can prevent classes from being inherited by using the **final** modifier.</span></span>
-
-    public final class Attribute
-    {
-        int objectField;
-    }
-
-## <a name="methods"></a><span data-ttu-id="dc07a-175">メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-175">Methods</span></span>
-<span data-ttu-id="dc07a-176">次のコード ブロック タイプは、アプリケーション クラスの標準です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-176">The following code block types are standard for application classes:</span></span>
-
-- <span data-ttu-id="dc07a-177">*<strong><em>classDescription</em>* 申告ブロック</strong> – この申告ブロックには<strong>パブリック</strong>、<strong>プライベート</strong>、および<strong>拡張</strong>などのクラス モディファイアーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-177">*<strong><em>classDescription</em>* declaration block</strong> – This declaration block contains class modifiers such as <strong>public</strong>, <strong>private</strong>, and <strong>extends</strong>.</span></span> <span data-ttu-id="dc07a-178">これには、クラスから作成されたオブジェクトのフィールドのメンバーも含まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-178">It also contains the field members for objects that are constructed from the class.</span></span> <span data-ttu-id="dc07a-179"><strong>this</strong> というキーワードを入力すると、IntelliSense にメンバーのリストを表示することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-179">When you type the keyword <strong>this</strong>, IntelliSense can show a list of the members.</span></span>
-- <span data-ttu-id="dc07a-180">*<strong><em>新規</em>* メソッド</strong> – このメソッドは、クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-180">*<strong><em>new</em>* method</strong> – This method creates an instance of the class.</span></span> <span data-ttu-id="dc07a-181">コンストラクターは、<strong>新しい</strong>キーワードを使用することによってのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-181">The constructor can be called only by using the <strong>new</strong> keyword.</span></span> <span data-ttu-id="dc07a-182">派生クラスは、<strong>super</strong> メソッドの参照を呼ぶことにとって、コントラクターの<strong>新しい</strong>メソッドを呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-182">Derived classes can call the <strong>new</strong> method of their constructor by calling the <strong>super</strong> method reference.</span></span>
-- <span data-ttu-id="dc07a-183">*<strong><em>確定</em>* メソッド</strong> – このメソッドは、クラスのインスタンスを確定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-183">*<strong><em>finalize</em>* method</strong> – This method finalizes an instance of the class.</span></span> <span data-ttu-id="dc07a-184">このメソッドはデストラクター メソッドです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-184">This method is the destructor method.</span></span> <span data-ttu-id="dc07a-185">ただし、規則のみのデストラクタです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-185">However, it's a destructor by convention only.</span></span> <span data-ttu-id="dc07a-186">ガベージ コレクション中に <strong>finalize</strong> メソッドが自動的に呼び出されることはありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-186">The system doesn't automatically call the <strong>finalize</strong> method during garbage collection.</span></span>
-
-<span data-ttu-id="dc07a-187">クラスの追加メソッドには、次のタイプがあります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-187">Additional methods for a class have the following types:</span></span>
-
--   <span data-ttu-id="dc07a-188">インスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-188">Instance methods</span></span>
--   <span data-ttu-id="dc07a-189">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-189">Static methods</span></span>
--   <span data-ttu-id="dc07a-190">主要メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-190">Main methods</span></span>
-
-<span data-ttu-id="dc07a-191">さまざまな種類の項目でメソッドを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-191">Methods can be created on many kinds of items.</span></span> <span data-ttu-id="dc07a-192">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-192">Here are some examples:</span></span>
-
--   <span data-ttu-id="dc07a-193">クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-193">Classes</span></span>
--   <span data-ttu-id="dc07a-194">マップ</span><span class="sxs-lookup"><span data-stu-id="dc07a-194">Maps</span></span>
--   <span data-ttu-id="dc07a-195">ビュー</span><span class="sxs-lookup"><span data-stu-id="dc07a-195">Views</span></span>
--   <span data-ttu-id="dc07a-196">データ セット</span><span class="sxs-lookup"><span data-stu-id="dc07a-196">Data Sets</span></span>
--   <span data-ttu-id="dc07a-197">フォーム</span><span class="sxs-lookup"><span data-stu-id="dc07a-197">Forms</span></span>
--   <span data-ttu-id="dc07a-198">クエリ</span><span class="sxs-lookup"><span data-stu-id="dc07a-198">Queries</span></span>
-
-### <a name="instance-methods"></a><span data-ttu-id="dc07a-199">インスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-199">Instance methods</span></span>
-
-<span data-ttu-id="dc07a-200">インスタンス メソッド、またはオブジェクト メソッドは、クラスから作成される各オブジェクトに埋め込まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-200">Instance methods, or object methods, are embedded in each object that is created from the class.</span></span> <span data-ttu-id="dc07a-201">メソッドの使用前に、オブジェクトのインスタンスを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-201">You must instantiate the object before you can use the method.</span></span> <span data-ttu-id="dc07a-202">後でインスタンス メソッドを静的メソッドに変換する場合は、クライアントを再起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-202">If you later convert an instance method to a static method, you must restart the client.</span></span> <span data-ttu-id="dc07a-203">それ以外の場合、コンパイラは変更を検出しません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-203">Otherwise, the compiler doesn't detect the change.</span></span> <span data-ttu-id="dc07a-204">インスタンス メソッドを静的メソッドに変換した後は、クラスのインスタンスからメソッドを呼び出すことができなくなります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-204">After you've converted an instance method to a static method, you can no longer call the method from the instance of the class.</span></span> <span data-ttu-id="dc07a-205">代わりに、クラス自体からメソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-205">Instead, you must call the method from the class itself.</span></span> <span data-ttu-id="dc07a-206">静的メソッドは、次のセクションで説明します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-206">Static methods are discussed in the next section.</span></span> <span data-ttu-id="dc07a-207">インスタンス メソッドを呼び出すには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-207">You use the following syntax to call instance methods.</span></span>
-
-    ClassName objectHandleName = new ClassName();
-    objectHandleName.methodName();
-
-### <a name="static-methods"></a><span data-ttu-id="dc07a-208">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-208">Static methods</span></span>
-
-<span data-ttu-id="dc07a-209">*クラス メソッド*とも呼ばれる静的メソッドは、クラスに属しており、キーワード **static** を使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-209">Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**.</span></span> <span data-ttu-id="dc07a-210">静的メソッドを使用する前に、オブジェクトのインスタンスを作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-210">You don't have to instantiate an object before you use static methods.</span></span> <span data-ttu-id="dc07a-211">静的メソッドは多くの場合、テーブルに格納されているデータを操作するために使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-211">Static methods are often used to work with data that is stored in tables.</span></span> <span data-ttu-id="dc07a-212">メンバー変数は静的メソッドで使用できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-212">Member variables can't be used in a static method.</span></span> <span data-ttu-id="dc07a-213">静的メソッドを呼び出すには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-213">You use the following syntax to call static methods.</span></span>
-
-    ClassName::methodName();
-
-### <a name="main-methods"></a><span data-ttu-id="dc07a-214">主要メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-214">Main methods</span></span>
-
-<span data-ttu-id="dc07a-215">**メイン**メソッドは、メニュー オプションから直接実行されるクラス メソッドです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-215">A **main** method is a class method that is run directly from a menu option.</span></span> <span data-ttu-id="dc07a-216">このメソッドでは、オブジェクトのインスタンスを作成してから、必要なメンバー メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-216">The method should only create an instance of the object and then call the required member methods.</span></span> <span data-ttu-id="dc07a-217">**\_args** パラメーターを使用して、メソッドにデータを転送できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-217">The **\_args** parameter lets you transfer data to the method.</span></span>
-
-    static void main (Args _args)
-    {
-        // Your code here.
-    }
-
-### <a name="declaration-of-methods"></a><span data-ttu-id="dc07a-218">メソッドの宣言</span><span class="sxs-lookup"><span data-stu-id="dc07a-218">Declaration of methods</span></span>
-
-<span data-ttu-id="dc07a-219">メソッドの宣言は、ヘッダーと本文で構成されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-219">Method declarations consist of a header and a body.</span></span> <span data-ttu-id="dc07a-220">メソッド ヘッダーは、メソッドの名前と戻り値の型、メソッド モディファイア、およびパラメーターを宣言します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-220">The method header declares the method's name and return type), the method modifiers, and parameters.</span></span> <span data-ttu-id="dc07a-221">(戻り値の型が**無効**である可能性があります。) メソッド本体は、変数宣言、メソッド宣言、および明細書で構成されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-221">(The return type might be **void**.) The method body consists of variable declarations, method declarations, and statements.</span></span>
-
-### <a name="return-type"></a><span data-ttu-id="dc07a-222">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="dc07a-222">Return type</span></span>
-
-<span data-ttu-id="dc07a-223">メソッドが何も返さない場合、**無効**キーワードを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-223">If a method doesn't return anything, you must use the **void** keyword.</span></span> <span data-ttu-id="dc07a-224">次の例は、2 つのメソッドを示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-224">The following example shows two methods.</span></span> <span data-ttu-id="dc07a-225">1 つの方法に戻り値の型がありますが、他の方法には戻り値の型がありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-225">One method has a return type, but the other method doesn't have a return type.</span></span>
-
-    void methodNameNoReturnValue()
-    {
-        // Your code here.
-    }
-
-    // If a method returns something, you must specify the return type and include a return statement.
-    int methodNameIntegerReturnValue()
-    {
-        return 1;
-    }
-
-### <a name="syntax"></a><span data-ttu-id="dc07a-226">構文</span><span class="sxs-lookup"><span data-stu-id="dc07a-226">Syntax</span></span>
-
-<span data-ttu-id="dc07a-227">メソッドの宣言 = *ヘッダー*  *本文*ヘッダー = **\[** *モディファイアー* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** モディファイアー = **\[クライアント\] \[サーバー\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *識別子* ParameterList = **\[** *パラメーター*  **{ ,**  *パラメーター*  **}\]** パラメーター = *Datatype*  *Variableidentifier*  **\[ =**  *式*  **\]** 本文 = **{\[**  *VariableDeclarations*  **\] \[** *EmbeddedFunctionDeclarations*  **\] \[**  *ステートメント*  **\] }** EmbeddedFunctionDeclaration = *ヘッダー*  **{\[**  *VariableDeclarations*  **\] \[** *ステートメント*  **\]}** **anytype** の戻り値の型を使用した場合、メソッドはあらゆるデータ型を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-227">Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]** Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }** EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}** If you use the **anytype** return type, the method can return any data type.</span></span>
-
-### <a name="example-of-a-method-that-doesnt-have-a-return-type"></a><span data-ttu-id="dc07a-228">戻り値の型を設定していないメソッドの例</span><span class="sxs-lookup"><span data-stu-id="dc07a-228">Example of a method that doesn't have a return type</span></span>
-
-    void update ()
-    {   
-        // Variable declared and initialized
-        CustTable this_Orig = this.orig();
-
-        // First statement in body (begin transaction)
-        ttsBegin;
-        this.setNameAlias();
-        // Calls super's implementation of update
-        super();
-        this.setAccountOnVend(this_Orig);
-        if (this_Orig.custGroup != this.custGroup)
-            ForecastSales::setCustGroupId(
-                this.accountNum,
-                this_Orig.custGroup,
-                this.custGroup);
-        // Commits transaction
-        ttsCommit;
-    }
-
-### <a name="example-of-a-method-that-has-parameters"></a><span data-ttu-id="dc07a-229">パラメーターを持つメソッドの例</span><span class="sxs-lookup"><span data-stu-id="dc07a-229">Example of a method that has parameters</span></span>
-
-<span data-ttu-id="dc07a-230">次の例では、**checkAccountBlocked** メソッドはブール値を返し、**amountCur** パラメーターで動作します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-230">In the following example, the **checkAccountBlocked** method returns a Boolean value and acts on the **amountCur** parameter.</span></span>
-
-    boolean checkAccountBlocked(AmountCur amountCur)
-    {
-        if (this.blocked == CustVendorBlocked::All 
-            ||(this.blocked == CustVendorBlocked::Invoice 
-            && amountCur > 0 ))
-        return checkFailed(strFmt("@SYS7987",this.accountNum));
-        return true;
-    }
-
-## <a name="method-modifiers"></a><span data-ttu-id="dc07a-231">メソッド modifiers</span><span class="sxs-lookup"><span data-stu-id="dc07a-231">Method modifiers</span></span>
-<span data-ttu-id="dc07a-232">いくつかのモディファイアーは、メソッドの宣言に適用することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-232">Several modifiers can be applied to method declarations.</span></span> <span data-ttu-id="dc07a-233">一部の修飾子を結合できます (たとえば、**final static**)。</span><span class="sxs-lookup"><span data-stu-id="dc07a-233">Some of the modifiers can be combined (for example, **final static**).</span></span> <span data-ttu-id="dc07a-234">メソッド モディファイア キーワードを次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-234">Here are the method modifier keywords:</span></span>
-
--   <span data-ttu-id="dc07a-235">**抽象** – メソッドは宣言されていますが、親クラスで実装されていません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-235">**abstract** – The method is declared but isn't implemented in a parent class.</span></span> <span data-ttu-id="dc07a-236">このメソッドはサブクラスで上書きする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-236">The method must be overridden in subclasses.</span></span> <span data-ttu-id="dc07a-237">サブクラスに親クラスに属する 1 つ以上の抽象メソッドがあり、オーバーライドされていません。そのサブクラスからオブジェクトを作成しようとすると、コンパイラ エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-237">If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error.</span></span> <span data-ttu-id="dc07a-238">クラスは抽象クラスにすることもできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-238">Classes can also be abstract.</span></span> <span data-ttu-id="dc07a-239">場合によっては、抽象的な概念を表す場合でもクラスをインスタンス化しないでください。</span><span class="sxs-lookup"><span data-stu-id="dc07a-239">Sometimes, a class should not be instantiated even though it represents an abstract concept.</span></span> <span data-ttu-id="dc07a-240">サブクラスのみインスタンスを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-240">Only subclasses should be instantiated.</span></span> <span data-ttu-id="dc07a-241">このタイプの基本クラスは**抽象**として宣言できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-241">Base classes of this type can be declared as **abstract**.</span></span> <span data-ttu-id="dc07a-242">たとえば、勘定の概念をモデル化します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-242">For example, you want to model the concept of an account.</span></span> <span data-ttu-id="dc07a-243">実際の世界には派生クラス (勘定科目など) しか存在しないため、勘定は抽象です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-243">Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world.</span></span> <span data-ttu-id="dc07a-244">この例では、**勘定** クラスを**抽象**として宣言する必要があるという明確なケースについて説明します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-244">This examples describes a clear case where you should declare the **Account** class as **abstract**.</span></span>
--   <span data-ttu-id="dc07a-245">**ディスプレイ** – メソッドの戻り値は、ページまたはレポートに表示される必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-245">**display** – The method's return value should be shown on a page or a report.</span></span> <span data-ttu-id="dc07a-246">ページまたはレポートで値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-246">The value can't be modified on the page or report.</span></span> <span data-ttu-id="dc07a-247">通常、戻り値は合計などの計算された値です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-247">Typically, the return value is a calculated value, such as a sum.</span></span>
--   <span data-ttu-id="dc07a-248">**編集** – メソッドの戻り値のタイプは、ページで使用されるフィールドの情報を提供するために使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-248">**edit** – The method's return type should be used to provide information for a field that is used on a page.</span></span> <span data-ttu-id="dc07a-249">このフィールドの値は修正できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-249">The value in the field can be modified.</span></span>
--   <span data-ttu-id="dc07a-250">**最終** – 同じクラスから派生したクラスのメソッドに上書きすることはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-250">**final** – The method can't be overridden in any class that derives from its class.</span></span>
--   <span data-ttu-id="dc07a-251">**パブリック** – **パブリック**として宣言されるメソッドは、クラスがアクセスできるどの場所にもアクセスでき、サブクラスによって上書きすることができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-251">**public** – Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses.</span></span> <span data-ttu-id="dc07a-252">アクセス修飾子を持たないメソッドは暗黙的にパブリックとなります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-252">Methods that have no access modifier are implicitly public.</span></span>
--   <span data-ttu-id="dc07a-253">**保護されている** – **保護されている**として宣言されるメソッドは、クラスおよびメソッドが宣言されている拡張されたクラスであるサブクラスの中のメソッドからのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-253">**protected** – Methods that are declared as **protected** can be called only from methods in the class and in subclasses that extend the class where the method is declared.</span></span>
--   <span data-ttu-id="dc07a-254">**プライベート** – **プライベート**として宣言されるメソッドは、プライベートメソッドが宣言されているクラスのメソッドからのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-254">**private** – Methods that are declared as **private** can be called only from methods in the class where the private method is declared.</span></span>
--   <span data-ttu-id="dc07a-255">**静的** – このメソッドはクラス メソッドであり、インスタンスを実行しません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-255">**static** – The method is a class method and doesn't act on an instance.</span></span> <span data-ttu-id="dc07a-256">静的メソッドは、インスタンス変数を参照できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-256">Static methods can't refer to instance variables.</span></span> <span data-ttu-id="dc07a-257">クラスのインスタンスでは呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-257">They aren't invoked on an instance of the class.</span></span> <span data-ttu-id="dc07a-258">代わりに、クラス名を使用して呼び出されます (たとえば、**MyClass::aStaticProcedure()**)。</span><span class="sxs-lookup"><span data-stu-id="dc07a-258">Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).</span></span>
-
-### <a name="methods-that-have-modifiers"></a><span data-ttu-id="dc07a-259">モディファイアーのあるメソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-259">Methods that have modifiers</span></span>
-
-<span data-ttu-id="dc07a-260">**注記:** 次の例は、メソッド ヘッダーのみを示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-260">**Note:** The following examples show only the method headers.</span></span>
-
-    // A method that cannot be overridden
-    final int dontAlterMe() 
-
-    // A static method 
-    static void noChange()
-
-    // A display method that returns an integer
-    display int value()
-
-## <a name="static-class-members"></a><span data-ttu-id="dc07a-261">静的クラス メンバー</span><span class="sxs-lookup"><span data-stu-id="dc07a-261">Static class members</span></span>
-<span data-ttu-id="dc07a-262">静的クラス メンバーを宣言するには、**静的** キーワードを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-262">You declare static class members by using the **static** keyword.</span></span> <span data-ttu-id="dc07a-263">**static** キーワードは、**new** を呼び出す回数に関係なく、メソッドの 1 つのインスタンスだけを作成するようシステムに指示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-263">The **static** keyword instructs the system to create only one instance of the method, regardless of the number of times that you call **new**.</span></span> <span data-ttu-id="dc07a-264">この 1 つのインスタンスは、セッション全体で使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-264">This one instance is used throughout your session.</span></span> <span data-ttu-id="dc07a-265">一般に、静的メソッドは次の基準を満たしている場合を意図しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-265">In general, static methods are intended for cases where the following criteria are met:</span></span>
-
--   <span data-ttu-id="dc07a-266">このメソッドは、クラス内で宣言されているメンバー変数にアクセスする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-266">The method has no reason to access the member variables that are declared in the class.</span></span>
--   <span data-ttu-id="dc07a-267">このメソッドは、クラスのインスタンス (静的でない) メソッドを呼び出す理由はありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-267">The method has no reason to call any instance (non-static) methods of the class.</span></span>
-
-#### <a name="static-methods"></a><span data-ttu-id="dc07a-268">静的メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-268">Static methods</span></span>
-
-<span data-ttu-id="dc07a-269">このセクションでは、違法コピーを防止するためにソフトウェア キー タイプを使用するシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-269">This section describes a scenario where a software key type is used to help prevent piracy.</span></span> <span data-ttu-id="dc07a-270">ソフトウェア キーの各インスタンスには、固有の値を持つことが可能です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-270">Each instance of a software key can have its own unique value.</span></span> <span data-ttu-id="dc07a-271">ただし、すべてのソフトウェア キーはソフトウェア キー設計のルールに準拠する必要があるため、ソフトウェア キーへの適合をテストするロジックはすべてのソフトウェア キーに対して同じです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-271">However, because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys.</span></span> <span data-ttu-id="dc07a-272">したがって、適合性検証ロジックを含むメソッドは静的でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-272">Therefore, the method that contains the conformance validation logic should be static.</span></span> <span data-ttu-id="dc07a-273">**静的**キーワード使用して宣言されるメソッドの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-273">Here is an example of a method that is declared by using the **static** keyword.</span></span>
-
-    static public boolean validateSoftwareKey(str _softwareKeyString)
-    {
-          // Your code here.
-    }
-
-<span data-ttu-id="dc07a-274">次の例では、クラスで静的メソッドを呼び出す前に **SoftwareKey** クラスのインスタンスを構築する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-274">In the following example, you don't have to construct an instance of the **SoftwareKey** class before you call a static method on the class.</span></span> <span data-ttu-id="dc07a-275">静的な **validateSoftwareKey** メソッドを呼び出すときは、構文はそのメソッドを含むクラスの名前で始まります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-275">When you want to call the static **validateSoftwareKey** method, the syntax starts with the name of the class that contains the method.</span></span> <span data-ttu-id="dc07a-276">コロンのペア (::) は、クラス名を静的メソッド名に接続するために使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-276">A pair of colons (::) is used to connect the class name to the static method name.</span></span>
-
-    boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
-
-#### <a name="static-fields"></a><span data-ttu-id="dc07a-277">静的フィールド</span><span class="sxs-lookup"><span data-stu-id="dc07a-277">Static fields</span></span>
-
-<span data-ttu-id="dc07a-278">静的フィールドは**静的**キーワードを使用して宣言されているフィールドです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-278">Static fields are fields that are declared by using the **static** keyword.</span></span> <span data-ttu-id="dc07a-279">概念的には、クラスに適用され、クラスのインスタンスには適用されません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-279">Conceptually, they apply to the class, not to instances of the class.</span></span>
-
-### <a name="static-constructors"></a><span data-ttu-id="dc07a-280">静的コンストラクター</span><span class="sxs-lookup"><span data-stu-id="dc07a-280">Static constructors</span></span>
-
-<span data-ttu-id="dc07a-281">静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-281">Static constructors are guaranteed to run before any static or instance calls are made to the class.</span></span> <span data-ttu-id="dc07a-282">C\# では、*静的*の概念が実行中のアプリケーション ドメイン全体に関係します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-282">In C\#, the *static* concept is related to the whole executing application domain.</span></span> <span data-ttu-id="dc07a-283">ただし、X++ では、静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-283">However, in X++, the execution of the static constructor is relative to the user’s session.</span></span> <span data-ttu-id="dc07a-284">静的コンストラクターには、次の構文があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-284">The static constructor has the following syntax.</span></span>
-
-    static void TypeNew() 
-
-<span data-ttu-id="dc07a-285">静的コンストラクターは明示的に呼び出さないでください。</span><span class="sxs-lookup"><span data-stu-id="dc07a-285">You never explicitly call the static constructor.</span></span> <span data-ttu-id="dc07a-286">コンパイラは、コンストラクターがクラスの他のメソッドの前に正確に 1 回呼び出されるようにするコードを生成します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-286">The compiler will generate code to make sure that the constructor is called exactly one time before any other method on the class.</span></span> <span data-ttu-id="dc07a-287">静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-287">A static constructor is used to initialize any static data or perform a particular action that must be performed only one time.</span></span> <span data-ttu-id="dc07a-288">静的コンストラクターに指定できるパラメーターはなく、**静的**としてマークする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-288">No parameters can be provided for the static constructor, and it must be marked as **static**.</span></span> <span data-ttu-id="dc07a-289">次の例は、静的コンストラクターを使用して単一のインスタンスを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-289">The following example shows how to create a singleton instance by using a static constructor.</span></span>
-
-    public class Singleton
-    {
-      private static Singleton instance;
-
-      private void new()
-      {
-      }
-
-      static void TypeNew()
-      {
-        instance = new Singleton();
-      }
-
-      public static Singleton Instance()
-      {
-        return Singleton::instance;
-      }
-    }
-
-<span data-ttu-id="dc07a-290">単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-290">The singleton guarantees that only one instance of the class will ever be called.</span></span> <span data-ttu-id="dc07a-291">次の例は、単一をインスタンス化する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-291">The following example shows how to instantiate the singleton.</span></span>
-
-    {
-        Singleton i = Singleton::Instance();
-    }
-
-## <a name="method-access-control"></a><span data-ttu-id="dc07a-292">メソッド アクセス制御</span><span class="sxs-lookup"><span data-stu-id="dc07a-292">Method access control</span></span>
-<span data-ttu-id="dc07a-293">その他のクラスのメソッドがお客様のクラスのメソッドを呼び出すことができるかどうかを制御するには、アクセサー キーワード **public**、**protected**、および **private** を使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-293">You use the accessor keywords **public**, **protected**, and **private** to control whether the methods in other classes can call the methods on your class.</span></span> <span data-ttu-id="dc07a-294">メソッドのアクセス キーワードは、クラス継承のルールとも連携します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-294">The accessor keywords on methods also interact with the rules for class inheritance.</span></span> <span data-ttu-id="dc07a-295">メソッドを使用するアクセサー キーワードを次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-295">Here are the accessor keywords that you use with methods:</span></span>
-
--   <span data-ttu-id="dc07a-296">**パブリック** – **パブリック**として宣言されるメソッドは、クラスがアクセスできるどの場所からでも呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-296">**public** – Methods that are declared as **public** can be called from anywhere that the class is accessible.</span></span> <span data-ttu-id="dc07a-297">さらに、メソッドが**最終**として宣言されていない限り、パブリック メソッドをサブクラスでオーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-297">In addition, a public method can be overridden by a subclass, unless the method is declared as **final**.</span></span>
--   <span data-ttu-id="dc07a-298">**保護されている** – **保護されている**として宣言されるメソッドは、次のメソッドからのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-298">**protected** – Methods that are declared as **protected** can be called only from the following methods:</span></span>
-    -   <span data-ttu-id="dc07a-299">クラスのメソッド。</span><span class="sxs-lookup"><span data-stu-id="dc07a-299">Methods in the class.</span></span>
-    -   <span data-ttu-id="dc07a-300">保護されたメソッドを含むクラスのサブクラス内のメソッド。</span><span class="sxs-lookup"><span data-stu-id="dc07a-300">Methods in a subclass of the class that contains the protected method.</span></span> <span data-ttu-id="dc07a-301">保護されているメソッドは、サブクラスで上書きできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-301">Methods that are protected can be overridden in subclasses.</span></span>
--   <span data-ttu-id="dc07a-302">**プライベート** – **プライベート**として宣言されるメソッドは、プライベートメソッドが宣言されているクラスのメソッドからのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-302">**private** – Methods that are declared as **private** can be called only from methods in the class where the private method is declared.</span></span> <span data-ttu-id="dc07a-303">サブクラスでプライベート メソッドをオーバーライドできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-303">No private method can be overridden in a subclass.</span></span> <span data-ttu-id="dc07a-304">既定では、新しいメソッドを作成するときに、**プライベート** アクセサー キーワードがコード エディターに表示されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-304">By default, when you create a new method, the **private** accessor keyword appears in the code editor.</span></span> <span data-ttu-id="dc07a-305">最大限のセキュリティについては、**プライベート**が最も保守的な既定のアクセス キーワードです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-305">For maximum security, **private** is the most conservative default accessor keyword.</span></span>
-
-### <a name="static-and-instance-methods"></a><span data-ttu-id="dc07a-306">静的およびインスタンス メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-306">Static and instance methods</span></span>
-
-<span data-ttu-id="dc07a-307">メソッドのアクセサー キーワードは、どのメソッドが静的であるか、静的でないかに関係なく、同じクラスにある 2 つのメソッド間の呼び出しを制限することはありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-307">The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static.</span></span> <span data-ttu-id="dc07a-308">静的メソッドでは、**新しい**コンストラクター メソッドが**プライベート** モディファイアーで修飾されている場合でも、**新しい**コンストラクター メソッドに対する呼び出しは有効です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-308">In a static method, calls to the **new** constructor method are valid even if the **new** constructor method is decorated with the **private** modifier.</span></span> <span data-ttu-id="dc07a-309">これらの呼び出しの構文では、**新しい**キーワードを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-309">The syntax for these calls requires that the **new** keyword be used.</span></span> <span data-ttu-id="dc07a-310">静的メソッドのコードは、クラスのインスタンス メソッドを呼び出す前に、独自のクラスのインスタンス オブジェクトを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-310">The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.</span></span>
-
-### <a name="increasing-access-during-overrides"></a><span data-ttu-id="dc07a-311">オーバーライド中のアクセス増加</span><span class="sxs-lookup"><span data-stu-id="dc07a-311">Increasing access during overrides</span></span>
-
-<span data-ttu-id="dc07a-312">サブクラス内でメソッドがオーバーライドされると、オーバーライドするメソッドは少なくともオーバーライドされるメソッドと同程度のアクセスが可能なことが必要です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-312">When a method is overridden in a subclass, the overriding method must be at least as accessible as the overridden method.</span></span> <span data-ttu-id="dc07a-313">たとえば、次のコンパイラ ルールは、サブクラスで保護されたメソッドが上書きされる時に適用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-313">For example, the following compiler rules apply when a protected method is overridden in a subclass:</span></span>
-
--   <span data-ttu-id="dc07a-314">スーパークラスのパブリック メソッドは、サブクラスのパブリック メソッドによってのみ上書きできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-314">A public method in a superclass can be overridden only by a public method in the subclass.</span></span>
--   <span data-ttu-id="dc07a-315">サブクラスでは、パブリック メソッドまたは保護対象のメソッドはスーパークラスの保護対象のメソッドをオーバーライドできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-315">In a subclass, a public or protected method can override a protected method of the superclass.</span></span>
--   <span data-ttu-id="dc07a-316">サブクラスでは、プライベート メソッドはスーパークラスの保護対象のメソッドをオーバーライドできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-316">In a subclass, a private method can't override a protected method of the superclass.</span></span>
-
-## <a name="optional-parameters"></a><span data-ttu-id="dc07a-317">オプションのパラメーター</span><span class="sxs-lookup"><span data-stu-id="dc07a-317">Optional parameters</span></span>
-<span data-ttu-id="dc07a-318">パラメーターは、メソッド宣言で初期化することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-318">Parameters can be initialized in the method declaration.</span></span> <span data-ttu-id="dc07a-319">この場合、パラメーターは*オプションのパラメーター*となります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-319">In this case, the parameter becomes an *optional parameter*.</span></span> <span data-ttu-id="dc07a-320">メソッドの呼び出しの値が指定されていない場合は、既定値が使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-320">If no value is supplied in the method call, the default value is used.</span></span> <span data-ttu-id="dc07a-321">すべての必須パラメータは最初のオプション パラメーターの前に一覧表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-321">All required parameters must be listed before the first optional parameter.</span></span> <span data-ttu-id="dc07a-322">次の例では、オプションのパラメーターを持つメソッドを作成して呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-322">The following examples show how to create and call a method that has optional parameters.</span></span> <span data-ttu-id="dc07a-323">**AddThreeInts** メソッドの例は、メソッドを呼び出すときにデフォルトのパラメーターをスキップできないことを示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-323">The example of the **AddThreeInts** method shows that you can't skip default parameters when you call a method.</span></span>
-
-### <a name="examples-of-optional-parameters"></a><span data-ttu-id="dc07a-324">オプション パラメーターの例</span><span class="sxs-lookup"><span data-stu-id="dc07a-324">Examples of optional parameters</span></span>
-
-    // This is an example of a function being used as the default.
-    public class Person 
-    {
-        date birthDate;
-
-        // The constructor that takes a date type as
-        // a parameter. That value is assigned to the field member birthDate. 
-        void new(date _date)
-        {
-            birthDate = _date;
-        }
-
-        // The CalculateAgeAsOfDate method references
-        // the birthDate field, is called by the Main method, and has an 
-        // optional parameter. In this example, the default value is the
-        // return value of a function. 
-        public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )  
-        {
-            return (_calcToDate - birthDate) / 365;
-        }
-
-        // The Main method calls the CalculateAgeAsOfDate method twice. 
-        static public void Main(Args _args)
-        {
-            Person mc = new Person(13\5\2010);   // birthDate is initialized.
-            // Optional parameter's default is used.
-            print( "Age in years: " + num2str(mc.CalculateAgeAsOfDate(),2,0,0,0));
-            // January 2, 2044  is the parameter value for _date.
-            print "Age in years: " + num2str(mc.CalculateAgeAsOfDate(2\1\2044),2,0,0,0);
-        }
-    }
-
-    // This is an example of how you cannot skip to a second optional parameter. 
-    // The first method has two optional parameters. The second method is a caller 
-    // of the first method. The caller wants to override only the _i3 default value, but the 
-    // compiler requires that all prior optional parameters also 
-    // be overridden in the call. 
-    public class Additions {
-        static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
-        {
-            return _i1 + _i2 + _i3;
-        }
-    }
-
-    // The second method has a commented section showing the
-    // failed attempt to accept the default of the first optional 
-    // parameter (_i2) while trying to override the final optional 
-    // parameter (_i3).
-    static public void Main(Args _args)
-    { 
-        // No way to skip the first optional parameter (so it can default)
-        // while also specifying the value of the second optional parameter.
-        // The next statement does not compile.
-        //print Additions::AddThreeInts(1, , 99);
-
-        // Settle for overriding both optional parameters.
-        print Additions::AddThreeInts(1, 2, 99);
-    }
-
-## <a name="accessor-methods"></a><span data-ttu-id="dc07a-325">アクセサー メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-325">Accessor methods</span></span>
-<span data-ttu-id="dc07a-326">クラス変数はプライベートです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-326">Class variables are private.</span></span> <span data-ttu-id="dc07a-327">クラスの内部実装の詳細を非表示にすることで、そのクラスを使用するコードを破棄することなくクラスの実装を後で変更することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-327">By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class.</span></span> <span data-ttu-id="dc07a-328">参照変数からデータにアクセスするには、アクセサー メソッドを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-328">To access the data from reference variables, you must create accessor methods.</span></span> <span data-ttu-id="dc07a-329">次の例では、アクセス メソッドを使用して変数 **x** および **y** にアクセスする **Point** クラスを定義します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-329">The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.</span></span>
-
-    class Point
-    {
-        // Instance variables
-        real x; 
-        real y;
-
-        //Constructor to initialize to a specific or default value
-        void new(real _x=10, real _y=10) 
-        {
-            x = _x;
-            y = _y;
-        }
-
-        //Accessor methods
-        void setX(real _x) 
-        {
-            x = _x;
-        }
-
-        void setY(real _y) 
-        {
-            y = _y;
-        }
-
-        real getX() 
-        {
-            return x;
-        }
-
-        real getY() 
-        {
-            return y;
-        }
-    }
-
-<span data-ttu-id="dc07a-330">これらのメソッド宣言は、**Point** クラスが外部からの変数へのアクセスを提供する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-330">These method declarations show how the **Point** class provides access to its variables from the outside world.</span></span> <span data-ttu-id="dc07a-331">その他のオブジェクトは、アクセサー メソッドを使ってインスタンス変数 **Point** オブジェクトを操作できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-331">Other objects can manipulate the instance variables of **Point** objects by using the accessor methods.</span></span>
-
-    // Declare a variable to refer to a Point object
-    Point myPoint; 
-    // Create a Point object
-    myPoint = new Point(); 
-    // Set the x variable using the accessor method
-    myPoint.setX(10.0); 
-    // Set the y variable by means of the accessor method
-    myPoint.setY(25.7);
-
-<span data-ttu-id="dc07a-332">コール スタックの深さは 100 に制限されています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-332">The depth of the call stack is limited to 100.</span></span>
-
-## <a name="overriding-a-method"></a><span data-ttu-id="dc07a-333">メソッドのオーバーライド</span><span class="sxs-lookup"><span data-stu-id="dc07a-333">Overriding a method</span></span>
-<span data-ttu-id="dc07a-334">クラス内のメソッドは、それを拡張するクラスによって継承されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-334">The methods in a class are inherited by any class that extends it.</span></span> <span data-ttu-id="dc07a-335">継承されたメソッドの機能を変更するには、サブクラスでメソッドを作成し、そのメソッドにスーパークラスのメソッドと同じ名前とパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-335">To change the functionality of an inherited method, you can create a method in the subclass, and then give that method the same name and parameters as the method in the superclass.</span></span> <span data-ttu-id="dc07a-336">このプロセスは、メソッドを*オーバーライドする*として知られています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-336">This process is known as *overriding* the method.</span></span> <span data-ttu-id="dc07a-337">次の例では、**ColorAttribute** は**属性**のサブクラスであるため、**methodAttr** メソッドを継承します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-337">In the following example, **ColorAttribute** is a subclass of **Attribute** and therefore inherits the **methodAttr** method.</span></span> <span data-ttu-id="dc07a-338">ただし、**ColorAttribute** は同じ名前および同じ数の引数を持つメソッドを定義するため、スーパークラスのメソッドは上書きされます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-338">However, because **ColorAttribute** defines a method that has the same name and the same number of arguments, the method in the superclass is overridden.</span></span>
-
-    // Superclass: Attribute
-    public class Attribute
-    {
-        int objectVariable;
-
-        void methodAtt()
-        {
-            //Some statements
-        }
-    }
-
-    // Subclass: ColorAttribute
-    public class ColorAttribute extends Attribute
-    {
-        int addedObjectVariable;
-
-        void methodAtt()
-        {
-            //Some statements
-        }
-    }
-
-### <a name="preventing-method-overrides"></a><span data-ttu-id="dc07a-339">メソッドのオーバーライドを禁止する</span><span class="sxs-lookup"><span data-stu-id="dc07a-339">Preventing method overrides</span></span>
-
-<span data-ttu-id="dc07a-340">静的メソッドは、クラスごとに存在するため上書きすることはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-340">Static methods can't be overridden, because they exist per class.</span></span> <span data-ttu-id="dc07a-341">他の重要なメソッドやコア メソッドがオーバーライドされないようにするには、**final** 修飾子を使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-341">To protect other sensitive methods, or core methods, from being overridden, use the **final** modifier.</span></span> <span data-ttu-id="dc07a-342">次の例では、**methodAtt** が **final** として宣言されているため、**属性**を拡張するクラスでオーバーライドできません</span><span class="sxs-lookup"><span data-stu-id="dc07a-342">In the following example, because **methodAtt** is declared as **final**, it can't be overridden in any class that extends **Attribute**.</span></span> <span data-ttu-id="dc07a-343">**最終** に **新規** または **確定** のメソッドを指定しないでください。</span><span class="sxs-lookup"><span data-stu-id="dc07a-343">You should not specify **new** or **finalize** methods as **final**.</span></span> <span data-ttu-id="dc07a-344">次の例は、**final** キーワードの使用方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-344">The following example shows how to use the **final** keyword.</span></span>
-
-    public class Attribute
-    {
-        int objectVariable;
-
-        final void methodAtt()
-        {
-            //Some statements
-        }
-    }
-
-### <a name="overriding-vs-overloading"></a><span data-ttu-id="dc07a-345">オーバーライドとオーバーロード</span><span class="sxs-lookup"><span data-stu-id="dc07a-345">Overriding vs. overloading</span></span>
-
-<span data-ttu-id="dc07a-346">オーバーライドは、メソッドのスーパークラスの実装がそのメソッドのサブクラスの実装によって変更されるが、両方のメソッドのシグネチャが同じ場合に行われます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-346">Overriding occurs when the superclass's implementation of a method is changed by the subclass's implementation of that method, but the signatures of both methods are the same.</span></span> <span data-ttu-id="dc07a-347">対照的に、*オーバーロード*は複数のメソッドが同じ名前を持つ場合に発生しますが、メソッドは異なるシグネチャ (戻り値の型、パラメーター リスト、または両方) を持ちます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-347">By contrast, *overloading* occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both).</span></span> <span data-ttu-id="dc07a-348">X++ はオーバーライドをサポートしますが、オーバーロードはサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-348">X++ supports overriding, but it doesn't support overloading.</span></span>
-
-## <a name="parameters"></a><span data-ttu-id="dc07a-349">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dc07a-349">Parameters</span></span>
-<span data-ttu-id="dc07a-350">すべてのメソッドは独自の*スコープ*を持っています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-350">All methods have their own *scope*.</span></span> <span data-ttu-id="dc07a-351">メソッドは、1 つ以上のパラメーターを受け取ることができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-351">A method can take one or more parameters.</span></span> <span data-ttu-id="dc07a-352">メソッドのスコープ内では、これらのパラメーターはローカル変数として処理され、メソッド呼び出しのパラメーターからの値で初期化されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-352">Within the scope of the method, these parameters are treated as local variables and are initialized with a value from the parameter in the method call.</span></span> <span data-ttu-id="dc07a-353">すべてのパラメーターは値で渡されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-353">All parameters are passed by value.</span></span> <span data-ttu-id="dc07a-354">元の変数の値を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-354">You can't change the value of the original variable.</span></span> <span data-ttu-id="dc07a-355">メソッド内のローカル変数のみを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-355">You can change only the local variable in the method.</span></span> <span data-ttu-id="dc07a-356">このローカル変数は元の変数のコピーです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-356">This local variable is a copy of the original variable.</span></span>
-
-## <a name="scope-of-variables-in-methods"></a><span data-ttu-id="dc07a-357">メソッドでの変数の範囲</span><span class="sxs-lookup"><span data-stu-id="dc07a-357">Scope of variables in methods</span></span>
-<span data-ttu-id="dc07a-358">スコープは、品目にアクセスできるエリアを定義します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-358">A scope defines the area in which an item can be accessed.</span></span> <span data-ttu-id="dc07a-359">クラスで定義されている変数は、そのクラス内のメソッドで使用できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-359">Variables that are defined in a class are available to the methods within that class.</span></span> <span data-ttu-id="dc07a-360">メソッド内の変数は、現在のブロック内でのみアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-360">Variables in methods can be accessed only within the current block.</span></span>
-
-## <a name="local-functions"></a><span data-ttu-id="dc07a-361">ローカル関数</span><span class="sxs-lookup"><span data-stu-id="dc07a-361">Local functions</span></span>
-<span data-ttu-id="dc07a-362">メソッド内部のローカル関数を宣言することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-362">You can declare local functions inside a method.</span></span> <span data-ttu-id="dc07a-363">ただし、ベスト プラクティスとしては、メソッド内のローカル機能を追加する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-363">However, as a best practice, you shouldn't add local functions inside the method.</span></span> <span data-ttu-id="dc07a-364">代わりに、プライベート メソッドをクラスに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-364">Instead, you should add private methods to the class.</span></span> <span data-ttu-id="dc07a-365">次の例は、2 つのローカル関数、**localFunc55b** および **localFunc66c** の有効な宣言を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-365">The following example shows valid declarations of two local functions, **localFunc55b** and **localFunc66c**.</span></span> <span data-ttu-id="dc07a-366">ローカル関数への呼び出しは、必要に応じて、この例の関数宣言の後に行われます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-366">Calls to the local functions occur after the function declarations in the example, as is required.</span></span>
-
-    static void G_LocalFuncJob2(Args _args) 
-    {
-        int nn = 654;
-        void localFunc55b(int _iNum)  // The local function.
-        {
-            str sInnerString;
-            sInnerString = "String_in_localFunc55b";
-            info(strFmt("localFunc55b: %1 , %2 , %3", 
-                _iNum, sInnerString, nn));
-        }
-
-        void localFunc66c()
-        {
-            info("Printing from inside localFunc66c.");
-        }
-
-        localFunc55b(55);
-        localFunc66c();
-        // Next print statement would fail to compile,
-        // because sInnerString is restricted to the
-        // scope of the local function in which it is declared.
-        // print sInnerString; 
-    }
-    /***  Infolog window display:
-    Message (07:38:54 pm)
-    localFunc55b: 55 , String_in_localFunc55b , 654
-    Printing from inside localFunc66c.
-    ***/
-
-### <a name="declaration-of-local-functions"></a><span data-ttu-id="dc07a-367">ローカルの関数の宣言</span><span class="sxs-lookup"><span data-stu-id="dc07a-367">Declaration of local functions</span></span>
-
--   <span data-ttu-id="dc07a-368">ローカル関数の宣言は、メソッド内の宣言されていないステートメントの前に物理的に先行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-368">The declarations of local functions must physically precede any non-declaration statements in the method.</span></span>
--   <span data-ttu-id="dc07a-369">メソッド内で 1 つ以上のローカル関数を宣言することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-369">You can declare more than one local function in your method.</span></span> <span data-ttu-id="dc07a-370">ただし、すべてのローカル関数は中断のないシリーズで宣言され、セットは 1 つのセミコロン (;) で終了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-370">However, all local functions must be declared in an uninterrupted series, and the set must be terminated by one semicolon (;).</span></span>
-
-### <a name="variable-scope"></a><span data-ttu-id="dc07a-371">変数のスコープ</span><span class="sxs-lookup"><span data-stu-id="dc07a-371">Variable scope</span></span>
-
--   <span data-ttu-id="dc07a-372">ローカル関数内にあるコードは、ローカル関数を含むメソッドで宣言されている変数にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-372">Code that is inside the local function can access variables that are declared in the method that contains the local function.</span></span>
--   <span data-ttu-id="dc07a-373">ローカル関数の外にあるコードは、ローカル関数で宣言された変数にアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-373">Code that is outside the local function can't access variables that are declared in the local function.</span></span>
-
-### <a name="calls-to-local-functions"></a><span data-ttu-id="dc07a-374">ローカルの関数への呼び出し</span><span class="sxs-lookup"><span data-stu-id="dc07a-374">Calls to local functions</span></span>
-
--   <span data-ttu-id="dc07a-375">ローカル関数は、ローカル関数が宣言されているのと同じメソッド内のコードによってのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-375">A local function can be called only by code in the same method where the local function is declared.</span></span>
--   <span data-ttu-id="dc07a-376">ローカル関数が、それ自体を呼び出すことはありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-376">A local function should never call itself.</span></span> <span data-ttu-id="dc07a-377">このような再帰は、正常に行われるコンパイルを防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-377">Such recursion can prevent successful compilation.</span></span>
-
-## <a name="the-this-keyword"></a><span data-ttu-id="dc07a-378">このキーワード</span><span class="sxs-lookup"><span data-stu-id="dc07a-378">The this keyword</span></span>
-<span data-ttu-id="dc07a-379">**this** キーワードは、**this** キーワードが使用されるクラスやテーブルのインスタンスへの参照です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-379">The **this** keyword is a reference to the instance of the class or table where the **this** keyword is used.</span></span> <span data-ttu-id="dc07a-380">**this** 参照が必須になることはありませんが、コードを明確にし、コード エディターで IntelliSense の動作を強化することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-380">The **this** reference is never required, but it can clarify your code and enhances the behavior of IntelliSense in the code editor.</span></span> <span data-ttu-id="dc07a-381">すべての呼び出しインスタンス メソッドは**これ**を参照または変数のいずれかにより修飾される必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-381">All calls to instance methods must be qualified by either the **this** reference or a variable.</span></span> <span data-ttu-id="dc07a-382">**this** 参照は、次の情報を修飾するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-382">The **this** reference can be used to qualify the following information:</span></span>
-
--   <span data-ttu-id="dc07a-383">**this** 参照が使用されている同じクラス内の他のインスタンス (静的でない) メソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="dc07a-383">The names of other instance (non-static) methods in the same class where the **this** reference is used.</span></span> <span data-ttu-id="dc07a-384">次に例を示します: **boolColorChanged = this.colorItOrange();**</span><span class="sxs-lookup"><span data-stu-id="dc07a-384">Here is an example: **boolColorChanged = this.colorItOrange();**</span></span>
--   <span data-ttu-id="dc07a-385">**this** オブジェクトによって継承されるメソッドの名前。</span><span class="sxs-lookup"><span data-stu-id="dc07a-385">The names of methods that are inherited by the **this** object.</span></span>
--   <span data-ttu-id="dc07a-386">**this** キーワードが使用されるメソッドを含むテーブル上のフィールドの名前。</span><span class="sxs-lookup"><span data-stu-id="dc07a-386">The names of fields on the table that contains the method that the **this** keyword is used in.</span></span>
-
-<span data-ttu-id="dc07a-387">**this** 参照は、次の方法で使用できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-387">The **this** reference can't be used in the following ways:</span></span>
-
--   <span data-ttu-id="dc07a-388">**classDeclaration** コードで宣言されているメンバー変数の名前を限定することはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-388">It can't qualify the names of member variables that are declared in the **classDeclaration** code.</span></span>
--   <span data-ttu-id="dc07a-389">静的メソッドで使用できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-389">It can't be used in a static method.</span></span>
--   <span data-ttu-id="dc07a-390">クラスやテーブルの静的メソッドの名前を限定することはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-390">It can't qualify the names of static methods of the class or table.</span></span>
-
-## <a name="interfaces"></a><span data-ttu-id="dc07a-391">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="dc07a-391">Interfaces</span></span>
-<span data-ttu-id="dc07a-392"><em>インターフェイス</em>はパブリック インスタンス メソッドのセットを指定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-392">An <em>interface</em> is a specification for a set of public instance methods.</span></span> <span data-ttu-id="dc07a-393">他から 1 つのクラスを派生させることなく、インターフェイスは無関係なクラス間の類似点を定義し適用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-393">An interface defines and enforces similarities between unrelated classes without having to derive one class from the other.</span></span> <span data-ttu-id="dc07a-394">*<strong><em>*</em>classDeclaration</strong> コード内の<strong>インターフェイス キーワード*<em>の前に</em></strong><strong>パブリック</strong> キーワード*を明示的に追加しなくても、すべてのインターフェイスはパブリックです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-394">All interfaces are public, even if you don't explicitly add the <strong>public</strong> keyword \*<strong><em>in front of the \*</em>interface</strong> keyword \*<strong><em>in the \*</em>classDeclaration</strong> code.</span></span> <span data-ttu-id="dc07a-395">インターフェイス上のメソッドも公開されています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-395">The methods on an interface are also public.</span></span> <span data-ttu-id="dc07a-396">この場合も、<strong>パブリック</strong>というキーワードを明示的に含めることはオプションです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-396">Once again, explicit inclusion of the keyword <strong>public</strong> is optional.</span></span> <span data-ttu-id="dc07a-397">インターフェイスを作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-397">To create an interface, follow these steps.</span></span>
-
-1.  <span data-ttu-id="dc07a-398">サーバー エクスプローラーで、プロジェクトを右クリックしてから**追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-398">In Server Explorer, right-click the project, and then click **Add**.</span></span>
-2.  <span data-ttu-id="dc07a-399">**新しい項目**ダイアログ ボックスで、**インターフェイス**を選択してからインターフェイスの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-399">In the **New Item** dialog box, select **Interface**, and then enter a name for the interface.</span></span>
-3.  <span data-ttu-id="dc07a-400">**追加** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-400">Click **Add**.</span></span>
-
-<span data-ttu-id="dc07a-401">クラス宣言に **implements** キーワードを追加すると、そのクラスは、インターフェイスによって指定されるメソッドを宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-401">When you add the **implements** keyword on a class declaration, the class must declare the methods that are specified by the interface.</span></span> <span data-ttu-id="dc07a-402">クラス宣言では、複数のインターフェイスを実装することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-402">A class declaration can implement multiple interfaces.</span></span> <span data-ttu-id="dc07a-403">**implements** キーワードの単一の発生後にインターフェイスを一覧表示し、インターフェイス名をコンマで区切ります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-403">Just list the interfaces after the single occurrence of the **implements** keyword, and separate the interface names by using commas.</span></span> <span data-ttu-id="dc07a-404">クラスで実装するすべてのインターフェイス メソッドはクラスの**パブリック**を使用して**パブリック**キーワードを明示的に宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-404">All interface methods that a class implements must be explicitly declared as **public** by using the **public** keyword in the class.</span></span> <span data-ttu-id="dc07a-405">インターフェイスを実装するクラスも**パブリック**として宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-405">A class that implements an interface must also be declared as **public**.</span></span> <span data-ttu-id="dc07a-406">インターフェイスを**拡張**キーワードを使用して別のインターフェイスに拡張できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-406">An interface can extend another interface by using the **extends** keyword.</span></span> <span data-ttu-id="dc07a-407">ただし、インターフェイスは、複数のインターフェイスを拡張することはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-407">However, an interface can't extend more than one interface.</span></span>
-
-### <a name="interface-example"></a><span data-ttu-id="dc07a-408">インターフェイスの例</span><span class="sxs-lookup"><span data-stu-id="dc07a-408">Interface example</span></span>
-
-<span data-ttu-id="dc07a-409">次の例では、**Automobile** クラスは **IDrivable** インターフェイスを実装しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-409">In the following example, an **Automobile** class implements an **IDrivable** interface.</span></span> <span data-ttu-id="dc07a-410">**is** キーワードはサポートされており、クラスがインターフェイスを実装するかどうかをテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-410">The **is** keyword is supported and lets you test whether a class implements an interface.</span></span>
-
-    public interface IDrivable
-    {
-        public int getSpeed()
-        {
-        }
-
-        public void setSpeed(int newSpeed)
-        {
-        }
-    }
-
-    class Automobile implements IDrivable
-    {
-        int m_speed;
-
-        public int getSpeed()
-        {
-            return m_speed;
-        }
-
-        public void setSpeed(int newSpeed)
-        {
-            m_speed = newSpeed;
-        }
-    }
-
-    class UseAnAutomobile
-    {
-        void DriveAutomobile()
-        {
-            IDrivable yourIDrivable;
-            Automobile myAutomobile;
-            str sTemp = "object is not an IDrivable";
-
-            myAutomobile = new Automobile();
-
-            if (myAutomobile is IDrivable)
-            {
-                yourIDrivable = myAutomobile;
-                yourIDrivable.setSpeed(42);
-                sTemp = int2str(yourIDrivable.getSpeed());
-            }
-
-            Global::info(sTemp);
-            return;
-            // output
-            // Message (06:46:33 pm)
-            // 42
-        }
-    }
-
-## <a name="class-library-overview"></a><span data-ttu-id="dc07a-411">クラス ライブラリの概要</span><span class="sxs-lookup"><span data-stu-id="dc07a-411">Class library overview</span></span>
-<span data-ttu-id="dc07a-412">*アプリケーション クラス*および*システム クラス*の、2 種類のクラスがあります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-412">There are two kinds of classes: *application classes* and *system classes*.</span></span>
-
--   <span data-ttu-id="dc07a-413">**アプリケーション クラス** - これらのクラスは X++ で実装されています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-413">**Application classes** – These classes are implemented in X++.</span></span> <span data-ttu-id="dc07a-414">これらはアプリケーション エクスプローラーの **Classes** ノードで使用できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-414">They are available in the **Classes** node in Application Explorer.</span></span>
--   <span data-ttu-id="dc07a-415">**システム クラス** – これらのクラスは *カーネル クラス* としても知られており、C++ では実装されています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-415">**System classes** – These classes are sometimes known as *kernel classes* and are implemented in C++.</span></span> <span data-ttu-id="dc07a-416">アプリケーション エクスプローラーの **System Documentation** &gt; **Classes** ノードの下に一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-416">They are listed under the **System Documentation** &gt; **Classes** node in Application Explorer.</span></span> <span data-ttu-id="dc07a-417">ただし、これらのクラスのソース コードは使用できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-417">However, the source code for these classes isn't available.</span></span>
-
-<span data-ttu-id="dc07a-418">これらのクラスの一覧については、[API、クラス、およびテーブルの参照](api-reference.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dc07a-418">For a list of these classes, see [API, class, and table reference](api-reference.md).</span></span>
-
-## <a name="substituting-application-classes-for-system-classes"></a><span data-ttu-id="dc07a-419">システム クラス用のアプリケーション クラスの置き換え</span><span class="sxs-lookup"><span data-stu-id="dc07a-419">Substituting application classes for system classes</span></span>
-<span data-ttu-id="dc07a-420">拡張するシステム クラスの代わりに *アプリケーション クラスの置き換え* を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-420">You should call the *substitute application classes* instead of the system classes that they extend.</span></span> <span data-ttu-id="dc07a-421">アプリケーション エクスプローラーの**システムのドキュメント** &gt; **クラス**で、いくつかのカーネルまたはシステム クラスの名前は小文字 *x* で始まります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-421">In Application Explorer, under **System Documentation** &gt; **Classes**, several kernel or system classes have names that begin with a lowercase *x*.</span></span> <span data-ttu-id="dc07a-422">これらのクラスは、*x-system classes* とも呼ばれています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-422">These classes are known as *x-system classes*.</span></span> <span data-ttu-id="dc07a-423">これらのシステム クラスの例には、**xApplication** および **xVersionControl** が存在します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-423">Examples of these system classes are **xApplication** and **xVersionControl**.</span></span> <span data-ttu-id="dc07a-424">これらのクラスのいくつかは、アプリケーション クラスによって拡張されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-424">Some of these classes are extended by application classes.</span></span> <span data-ttu-id="dc07a-425">たとえば、**アプリケーション**クラスは **xApplication** システム クラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-425">For example, the **Application** class extends the **xApplication** system class.</span></span> <span data-ttu-id="dc07a-426">X システム クラスから派生するクラスは、アプリケーション クラスの代用として知られています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-426">The classes that derive from x-system classes are known as substitute application classes.</span></span> <span data-ttu-id="dc07a-427">アプリケーション エクスプローラーの**クラス** ノードで、代替アプリケーション クラスの横にあるアイコンは標準のアイコンと異なります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-427">In Application Explorer, under the **Classes** node, the icon next to the substitute application classes differs from the standard icon.</span></span>
-
-### <a name="x-system-classes"></a><span data-ttu-id="dc07a-428">x システム クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-428">x-system classes</span></span>
-
-<span data-ttu-id="dc07a-429">代替アプリケーション クラスの一部は、クラスのインスタンスを表す特殊なグローバル変数に関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-429">Some of the substitute application classes are associated with a special global variable that represents an instance of the class.</span></span> <span data-ttu-id="dc07a-430">たとえば、**appl** 変数は、**アプリケーション**クラスから事前にインスタンス化されたオブジェクトを参照します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-430">For example, the **appl** variable references a pre-instantiated object from the **Application** class.</span></span> <span data-ttu-id="dc07a-431">**appl** 変数の利点は、セッションの範囲全体にわたってシステムがオブジェクトを保持することです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-431">The advantage of the **appl** variable is that the system maintains the object throughout the scope of your session.</span></span> <span data-ttu-id="dc07a-432">**Application** クラスのインスタンスを取得するために **new Application()** 構文を繰り返し使用した場合、コードの効率が低下します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-432">Your code would be less efficient if it repeatedly used the **new Application()** syntax to obtain an instance of the **Application** class.</span></span> <span data-ttu-id="dc07a-433">**xApplication** システム クラスは使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="dc07a-433">You should not use the **xApplication** system class.</span></span> <span data-ttu-id="dc07a-434">代わりに、**アプリケーション**の代替アプリケーション クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-434">Instead, use the **Application** substitute application class.</span></span> <span data-ttu-id="dc07a-435">標準構文 **Application::checkForNewBatchJobs()** を使用することにより、**アプリケーション** クラスの静的メンバーを参照することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-435">You can reference the static members of the **Application** class by using the following standard syntax: **Application::checkForNewBatchJobs()**.</span></span> <span data-ttu-id="dc07a-436">ただし、**アプリケーション**クラスのインスタンス メンバーを参照するには、そのクラスの **appl** 変数 (存在する場合) を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-436">However, to reference the instance members of the **Application** class, you should use that class's **appl** variable, if it exists.</span></span> <span data-ttu-id="dc07a-437">このパターンは、ほとんどの x システム クラスに適用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-437">This pattern applies to most of the x-system classes.</span></span> <span data-ttu-id="dc07a-438">**セッション** 代替アプリケーション クラスは、**セッション** の特殊なグローバル変数がないため 1 つの例外です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-438">The **Session** substitute application class is one exception, because there is no special global variable for **Session**.</span></span> <span data-ttu-id="dc07a-439">次のテーブルは、対応するアプリケーション クラスの代用を持つ x システム クラスの一覧です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-439">The following table lists the x-system classes that have a corresponding substitute application class.</span></span> <span data-ttu-id="dc07a-440">特殊なグローバル変数は、それらを持つクラスに対しても表示されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-440">The special global variables are also shown for those classes that have one.</span></span>
-
-| <span data-ttu-id="dc07a-441">アプリケーション クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-441">Application class</span></span> | <span data-ttu-id="dc07a-442">x システム クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-442">x-system class</span></span>  | <span data-ttu-id="dc07a-443">グローバル変数</span><span class="sxs-lookup"><span data-stu-id="dc07a-443">Global variable</span></span>    |
-|-------------------|-----------------|--------------------|
-| <span data-ttu-id="dc07a-444">引数</span><span class="sxs-lookup"><span data-stu-id="dc07a-444">Args</span></span>              | <span data-ttu-id="dc07a-445">xArgs</span><span class="sxs-lookup"><span data-stu-id="dc07a-445">xArgs</span></span>           | <span data-ttu-id="dc07a-446">該当なし</span><span class="sxs-lookup"><span data-stu-id="dc07a-446">Not applicable</span></span>     |
-| <span data-ttu-id="dc07a-447">申請</span><span class="sxs-lookup"><span data-stu-id="dc07a-447">Application</span></span>       | <span data-ttu-id="dc07a-448">xApplication</span><span class="sxs-lookup"><span data-stu-id="dc07a-448">xApplication</span></span>    | <span data-ttu-id="dc07a-449">**appl**</span><span class="sxs-lookup"><span data-stu-id="dc07a-449">**appl**</span></span>           |
-| <span data-ttu-id="dc07a-450">ClassFactory</span><span class="sxs-lookup"><span data-stu-id="dc07a-450">ClassFactory</span></span>      | <span data-ttu-id="dc07a-451">xClassFactory</span><span class="sxs-lookup"><span data-stu-id="dc07a-451">xClassFactory</span></span>   | <span data-ttu-id="dc07a-452">**classFactory**</span><span class="sxs-lookup"><span data-stu-id="dc07a-452">**classFactory**</span></span>   |
-| <span data-ttu-id="dc07a-453">法人</span><span class="sxs-lookup"><span data-stu-id="dc07a-453">Company</span></span>           | <span data-ttu-id="dc07a-454">xCompany</span><span class="sxs-lookup"><span data-stu-id="dc07a-454">xCompany</span></span>        | <span data-ttu-id="dc07a-455">**appl.company**</span><span class="sxs-lookup"><span data-stu-id="dc07a-455">**appl.company**</span></span>   |
-| <span data-ttu-id="dc07a-456">グローバル</span><span class="sxs-lookup"><span data-stu-id="dc07a-456">Global</span></span>            | <span data-ttu-id="dc07a-457">xGlobal</span><span class="sxs-lookup"><span data-stu-id="dc07a-457">xGlobal</span></span>         | <span data-ttu-id="dc07a-458">該当なし</span><span class="sxs-lookup"><span data-stu-id="dc07a-458">Not applicable</span></span>     |
-| <span data-ttu-id="dc07a-459">情報</span><span class="sxs-lookup"><span data-stu-id="dc07a-459">Info</span></span>              | <span data-ttu-id="dc07a-460">xInfo</span><span class="sxs-lookup"><span data-stu-id="dc07a-460">xInfo</span></span>           | <span data-ttu-id="dc07a-461">**情報ログ**</span><span class="sxs-lookup"><span data-stu-id="dc07a-461">**Infolog**</span></span>        |
-| <span data-ttu-id="dc07a-462">MenuFunction</span><span class="sxs-lookup"><span data-stu-id="dc07a-462">MenuFunction</span></span>      | <span data-ttu-id="dc07a-463">xMenuFunction</span><span class="sxs-lookup"><span data-stu-id="dc07a-463">xMenuFunction</span></span>   | <span data-ttu-id="dc07a-464">該当なし</span><span class="sxs-lookup"><span data-stu-id="dc07a-464">Not applicable</span></span>     |
-| <span data-ttu-id="dc07a-465">セッション</span><span class="sxs-lookup"><span data-stu-id="dc07a-465">Session</span></span>           | <span data-ttu-id="dc07a-466">xSession</span><span class="sxs-lookup"><span data-stu-id="dc07a-466">xSession</span></span>        | <span data-ttu-id="dc07a-467">該当なし</span><span class="sxs-lookup"><span data-stu-id="dc07a-467">Not applicable</span></span>     |
-| <span data-ttu-id="dc07a-468">VersionControl</span><span class="sxs-lookup"><span data-stu-id="dc07a-468">VersionControl</span></span>    | <span data-ttu-id="dc07a-469">xVersionControl</span><span class="sxs-lookup"><span data-stu-id="dc07a-469">xVersionControl</span></span> | <span data-ttu-id="dc07a-470">**versionControl**</span><span class="sxs-lookup"><span data-stu-id="dc07a-470">**versionControl**</span></span> |
-
-### <a name="example-of-x-system-classes"></a><span data-ttu-id="dc07a-471">x システム クラスの例</span><span class="sxs-lookup"><span data-stu-id="dc07a-471">Example of x-system classes</span></span>
-
-<span data-ttu-id="dc07a-472">次の例は、代替アプリケーション クラスのインスタンスを参照するいくつかの特殊な変数を使用するための構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-472">The following example shows the syntax for using several special variables that reference instances of the substitute application classes.</span></span>
-
-    static void UseSpecialSystemVariablesForXJob(Args _a)
-    {
-        TreeNode treeNode2;
-        Args     args3;
-        FormRun  formRun4;
-        // appl variable
-        print appl.buildNo();
-        // company variable
-        appl.company().reloadRights(); // referenced through appl
-        // Infolog variable
-        treeNode2 = infolog.findNode("\\forms\\custTable");
-        print treeNode2.AOTgetProperty("Name");
-
-        // classFactory variable
-        args3 = new Args(formstr(vendTable));
-        formRun4 = classFactory.formRunClass(args3);
-        formRun4.init();
-        formRun4.run();
-        formRun4.detach();
-        Global::info("Method is ending. This is a message in the Infolog.");
-    }
-
-## <a name="running-startup-commands"></a><span data-ttu-id="dc07a-473">起動コマンドの実行</span><span class="sxs-lookup"><span data-stu-id="dc07a-473">Running startup commands</span></span>
-<span data-ttu-id="dc07a-474">起動時にコマンドを実行するには、**SysStartupCmd** クラス フレームワークを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-474">You use the **SysStartupCmd** class framework to run commands at startup.</span></span> <span data-ttu-id="dc07a-475">Finance and Operations の起動時に、アプリケーション代替カーネル クラスである **Application** (**Application.startup**) および **Info** (**Info.startup**) の \***startup** メソッドへの呼び出しが行われます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-475">When Finance and Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**).</span></span> <span data-ttu-id="dc07a-476">**startup** メソッドは必須システムおよびバージョン固有の呼び出しで使用されるものであり、直接変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-476">The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods.</span></span> <span data-ttu-id="dc07a-477">代わりに、**SysStartupCmd** フレームワークを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-477">Instead, use the **SysStartupCmd** framework.</span></span> <span data-ttu-id="dc07a-478">SYS レイヤ バージョンの **startup** メソッドが呼び出されなかった場合、深刻な問題が生じる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-478">Serious issues can occur if the SYS layer versions of the **startup** methods aren't called.</span></span> <span data-ttu-id="dc07a-479">次の例は、Finance and Operations の起動時に呼び出しが実行される順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-479">The following example shows the order that calls are run in when Finance and Operations starts.</span></span>
-
-    appl.startup() // The SysStartupCmd class is instantiated here.
-    sysStartupCmd.applInit()
-    super()
-    sysStartupCmd.applRun()
-    info.startup()
-    sysStartupCmd.infoInit()
-    super()
-    sysStartupCmd.infoRun()
-
-### <a name="commands-that-are-available-when-finance-and-operations-starts"></a><span data-ttu-id="dc07a-480">Finance and Operations 起動時に使用できるコマンド</span><span class="sxs-lookup"><span data-stu-id="dc07a-480">Commands that are available when Finance and Operations starts</span></span>
-
-<span data-ttu-id="dc07a-481">**SysStartupCmd.construct** メソッドは、Finance and Operations が起動したときに使用できるコマンドを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-481">The **SysStartupCmd.construct** method lists the commands that are available when Finance and Operations starts.</span></span> <span data-ttu-id="dc07a-482">これらのコマンド例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-482">Here are some of these commands:</span></span>
-
--   <span data-ttu-id="dc07a-483">AutoRun</span><span class="sxs-lookup"><span data-stu-id="dc07a-483">AutoRun</span></span>
--   <span data-ttu-id="dc07a-484">AOTImport</span><span class="sxs-lookup"><span data-stu-id="dc07a-484">AOTImport</span></span>
--   <span data-ttu-id="dc07a-485">同期</span><span class="sxs-lookup"><span data-stu-id="dc07a-485">Synchronize</span></span>
-
-<span data-ttu-id="dc07a-486">次の例は、Finance and Operations の起動時に新しいコマンドを実行する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-486">The following example shows how to run a new command when Finance and Operations starts.</span></span> <span data-ttu-id="dc07a-487">最初に、<strong>SysStartupCmd</strong> を拡張するクラスが作成されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-487">First, a class that extends <strong>SysStartupCmd</strong> is created.</span></span> <span data-ttu-id="dc07a-488">この新しいクラスは特定のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-488">This new class performs your specific task.</span></span> <span data-ttu-id="dc07a-489">次に、自分のクラスを呼び出すために、<strong>SysStartupCmd</strong> の construct メソッドを変更します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-489">You then modify the construct method on <strong>SysStartupCmd</strong> to call your class.</span></span> <span data-ttu-id="dc07a-490">Finance and Operations のコンフィギュレーション ユーティリティの<strong>一般</strong>タブにある<strong>アプリケーション起動時に実行するコマンド</strong> フィールドで、起動時に実行するコマンドを追加できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-490">In the Finance and Operations Configuration Utility, on the <strong>General</strong> tab, in the <strong>Command to run at application startup</strong> field, you can add commands that are run at startup.</span></span> <span data-ttu-id="dc07a-491">または、<strong>-startupcmd= *MyCommand</strong>* コマンド ライン パラメーターを使用できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-491">Alternatively, you can use the <strong>-startupcmd= *MyCommand</strong>* command-line parameter.</span></span>
-
-    public class SysStartupCmdAutoRun : extends SysStartupCmd 
-    {
-        void new(str s, str parm) 
-        {
-            // Your code here.
-        }
-    }
-
-    // This is a framework class. Customizing this class may cause problems with future upgrades to the software.
-    class SysStartupCmd
-    {
-        // Code delete for readability
-
-        static SysStartupCmd construct(str startupCommand)
-        {
-            // Code delete for readability
-            switch (s)
-            {
-                // Other cases delete for readability    
-                case 'autorun':
-                    sysStartupCmd = new SysStartupCmdAutoRun(s,parm);
-                    break;
-                // Other cases delete for readability
-            }
-            // Code delete for readability
-        }
-    }
-
-## <a name="batch-processing-classes"></a><span data-ttu-id="dc07a-492">バッチ処理クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-492">Batch processing classes</span></span>
-<span data-ttu-id="dc07a-493">クラスを実装するには、バッチ処理システムを使用し、**RunBase** および **RunBaseBatch** クラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-493">You implement classes by using the batch processing system, and by extending the **RunBase** and **RunBaseBatch** classes.</span></span> <span data-ttu-id="dc07a-494">**バッチ処理**ダイアログ ボックスから**繰り返し**ボタンを削除するには、**Args::parmEnum** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-494">To remove the **Recurrence** button from the **Batch processing** dialog box, you use the **Args::parmEnum** method.</span></span> <span data-ttu-id="dc07a-495">サーバー バインド バッチ メソッドとして実行するクラスを指定することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-495">We recommend that you designate a class to run as a server-bound batch method.</span></span> <span data-ttu-id="dc07a-496">サーバー バインド バッチ メソッドは、以下の理由のため、サーバー バインドでないバッチ メソッドより安全です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-496">Server-bound batch methods are more secure than batch methods that aren't server-bound for the following reasons:</span></span>
-
--   <span data-ttu-id="dc07a-497">このメソッドは、メソッドを送信したユーザーのアクセス許可を使用して実行されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-497">The method is run by using the permissions of the user who submitted the method.</span></span>
--   <span data-ttu-id="dc07a-498">このメソッドは、特定の **情報** および **グローバル** クラス メソッドのみを使用して、それを処理しているクライアントと対話できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-498">The method can use only specific **Info** and **Global** class methods to interact with the client that is processing it.</span></span> <span data-ttu-id="dc07a-499">この制限により、クライアントとのやり取りが制限されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-499">This restriction limits interaction with the client.</span></span>
-
-### <a name="enable-a-class-to-run-as-a-server-bound-batch-method"></a><span data-ttu-id="dc07a-500">サーバー バインド バッチ メソッドとして実行するクラスを有効化</span><span class="sxs-lookup"><span data-stu-id="dc07a-500">Enable a class to run as a server-bound batch method</span></span>
-
-1.  <span data-ttu-id="dc07a-501">**RunBaseBatch** クラスを拡張するクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-501">Create a class that extends the **RunBaseBatch** class.</span></span>
-2.  <span data-ttu-id="dc07a-502">次の例に示すように、**RunBaseBatch.runsImpersonated** メソッドをオーバーライドし、値 **true** を返します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-502">Override the **RunBaseBatch.runsImpersonated** method to return a value of **true**, as shown in the following example.</span></span>
-
-        public boolean runsImpersonated()
-        {
-            return true;
-        }
-
-3.  <span data-ttu-id="dc07a-503">クラスが次の**情報**および**グローバル**クラスのメソッドのみを呼び出すことを確認します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-503">Confirm that the class calls only the following **Info** and **Global** class methods:</span></span>
-    -   <span data-ttu-id="dc07a-504">追加</span><span class="sxs-lookup"><span data-stu-id="dc07a-504">add</span></span>
-    -   <span data-ttu-id="dc07a-505">Info.copy</span><span class="sxs-lookup"><span data-stu-id="dc07a-505">Info.copy</span></span>
-    -   <span data-ttu-id="dc07a-506">Info.cut</span><span class="sxs-lookup"><span data-stu-id="dc07a-506">Info.cut</span></span>
-    -   <span data-ttu-id="dc07a-507">Info.import</span><span class="sxs-lookup"><span data-stu-id="dc07a-507">Info.import</span></span>
-    -   <span data-ttu-id="dc07a-508">Info.export</span><span class="sxs-lookup"><span data-stu-id="dc07a-508">Info.export</span></span>
-    -   <span data-ttu-id="dc07a-509">Info.line</span><span class="sxs-lookup"><span data-stu-id="dc07a-509">Info.line</span></span>
-    -   <span data-ttu-id="dc07a-510">Info.num</span><span class="sxs-lookup"><span data-stu-id="dc07a-510">Info.num</span></span>
-    -   <span data-ttu-id="dc07a-511">Global::error</span><span class="sxs-lookup"><span data-stu-id="dc07a-511">Global::error</span></span>
-    -   <span data-ttu-id="dc07a-512">Global::info</span><span class="sxs-lookup"><span data-stu-id="dc07a-512">Global::info</span></span>
-    -   <span data-ttu-id="dc07a-513">Global::warning</span><span class="sxs-lookup"><span data-stu-id="dc07a-513">Global::warning</span></span>
-
-    <span data-ttu-id="dc07a-514">**注記:** **Info.line** および **Info.num** メソッドは、**xInfo** クラスから継承されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-514">**Note:** The **Info.line** and **Info.num** methods are inherited from the **xInfo** class.</span></span>
-
-### <a name="removing-the-recurrence-button-from-the-batch-processing-dialog-box"></a><span data-ttu-id="dc07a-515">バッチ処理ダイアログ ボックスから定期的なアイテムを削除</span><span class="sxs-lookup"><span data-stu-id="dc07a-515">Removing the Recurrence button from the batch processing dialog box</span></span>
-
-<span data-ttu-id="dc07a-516">バッチ処理システムを使用してクラスを実装するときは、**Args.parmEnum** メソッドを呼び出し、**NoYes::Yes** システム列挙値を渡して、**再実行**ボタンを削除できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-516">When you implement a class by using the batch processing system, you can remove the **Recurrence** button by calling the **Args.parmEnum** method and passing the **NoYes::Yes** system enumeration value.</span></span> <span data-ttu-id="dc07a-517">**NoYes** システム列挙は、**繰り返し** ボタンがダイアログ ボックスから削除されるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-517">The **NoYes** system enumeration determines whether the **Recurrence** button is removed from the dialog box.</span></span> <span data-ttu-id="dc07a-518">既定値は **NoYes::No** です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-518">The default value is **NoYes::No**.</span></span> <span data-ttu-id="dc07a-519">次の例では、**InventTransferMultiShip** クラスが実装されています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-519">In the following example, the **InventTransferMultiShip** class is implemented.</span></span> <span data-ttu-id="dc07a-520">**BatchDialog::main** メソッドは、**バッチ処理**ダイアログ ボックスを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-520">The **BatchDialog::main** method creates the **Batch processing** dialog box.</span></span>
-
-    static void noRecurrenceButton(Args _args)
-    {
-        Args a;
-        InventTransferMultiShip inventTransferMultiShip;
-        a = new Args();
-        inventTransferMultiShip = InventTransferMultiShip::construct();
-        a.caller(inventTransferMultiShip);
-        a.parmEnum(NoYes::Yes);
-        BatchDialog::main(a);
-    }
-
-## <a name="image-manipulation-classes"></a><span data-ttu-id="dc07a-521">イメージ操作クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-521">Image manipulation classes</span></span>
-<span data-ttu-id="dc07a-522">**Image** と **Imagelist** の 2 つのシステム クラスにより、グラフィックスとアイコンを操作できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-522">Two system classes let you to manipulate graphics and icons: **Image** and **Imagelist**.</span></span>
-
-- <span data-ttu-id="dc07a-523">**Image** – このクラスでは、個々の画像の読み込み、保存、操作などができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-523">**Image** – This class lets you load, save, and manipulate individual images.</span></span> <span data-ttu-id="dc07a-524">たとえば、画面をキャプチャして画像として保存し、画像をトリミングまたは回転させる、または色深度を操作します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-524">For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.</span></span>
-- <span data-ttu-id="dc07a-525"><strong>Imagelist</strong> - このクラスを使用すると、サイズや透明色などの一般的なプロパティを持つ一連の画像を操作できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-525"><strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color.</span></span> <span data-ttu-id="dc07a-526"><strong>ImageListAppl\_\</strong>\* アプリケーション クラス の Finance and Operations で使用されるイメージ リストを表示できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-526">You can view the image lists that are used in Finance and Operations in the <strong>ImageListAppl\_\</strong>\* application classes.</span></span>
-
-## <a name="query-object-model"></a><span data-ttu-id="dc07a-527">クエリ オブジェクト モデル</span><span class="sxs-lookup"><span data-stu-id="dc07a-527">Query object model</span></span>
-<span data-ttu-id="dc07a-528">クエリ オブジェクト モデルには、クエリの定義と実行に使用されるクラスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-528">The query object model contains classes that are used to define and run a query.</span></span> <span data-ttu-id="dc07a-529">クエリ オブジェクトは、クエリ データ ソース、返されるフィールド、レコード範囲、子データ ソースとの関係を定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-529">The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources.</span></span> <span data-ttu-id="dc07a-530">動的クエリをコードで作成すると、クエリ クラスの可視性が高まります。さらに、これらは、アプリケーション エクスプローラーで静的クエリを作成するときにもシーン裏で使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-530">The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer.</span></span> <span data-ttu-id="dc07a-531">次のテーブルでは、クエリ オブジェクト モデルのクラスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-531">The following table describes the classes in the query object model.</span></span>
-
-| <span data-ttu-id="dc07a-532">システム クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-532">System class</span></span>         | <span data-ttu-id="dc07a-533">説明</span><span class="sxs-lookup"><span data-stu-id="dc07a-533">Description</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="dc07a-534">QueryRun</span><span class="sxs-lookup"><span data-stu-id="dc07a-534">QueryRun</span></span>             | <span data-ttu-id="dc07a-535">このクラスは、クエリを実行し、データをフェッチします。</span><span class="sxs-lookup"><span data-stu-id="dc07a-535">This class runs the query and fetches the data.</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <span data-ttu-id="dc07a-536">クエリ</span><span class="sxs-lookup"><span data-stu-id="dc07a-536">Query</span></span>                | <span data-ttu-id="dc07a-537">このクラスはいくつかのプロパティを保持し、1 つ以上の関連するデータ ソースを持ちます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-537">This class holds some properties, and has one or more related data sources.</span></span> <span data-ttu-id="dc07a-538">クエリの定義の最上位です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-538">It's the top level of the query definition.</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| <span data-ttu-id="dc07a-539">QueryBuildDataSource</span><span class="sxs-lookup"><span data-stu-id="dc07a-539">QueryBuildDataSource</span></span> | <span data-ttu-id="dc07a-540">このクラスは、クエリ内の単一のデータ ソースへのアクセスを定義します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-540">This class defines access to a single data source in the query.</span></span> <span data-ttu-id="dc07a-541">クエリに同じレベルの 1 つ以上のデータ ソースある場合、独立した SQL ステートメントが生産され、順番に実行されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-541">If there is more than one data source at the same level in a query, separate SQL statements are produced and are run sequentially.</span></span> <span data-ttu-id="dc07a-542">データ ソースが別のデータ ソースの子である場合は、2 つのデータ ソース間に結合が作成されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-542">If one data source is a child of another data source, a join is created between the two data sources.</span></span>                                                                                                                                                                                                                                            |
-| <span data-ttu-id="dc07a-543">QueryBuildFieldList</span><span class="sxs-lookup"><span data-stu-id="dc07a-543">QueryBuildFieldList</span></span>  | <span data-ttu-id="dc07a-544">このクラスは、データベースから返されるフィールドを定義します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-544">This class defines the fields that are returned from the database.</span></span> <span data-ttu-id="dc07a-545">既定では、フィールド リストは動的であり、すべてのフィールドはデータ ソース テーブル、マップ、またはビューから戻されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-545">By default, the field list is dynamic, and all fields are returned from the data source table, map, or view.</span></span> <span data-ttu-id="dc07a-546">各データ ソースには、**QueryBuildFieldList** オブジェクトが 1 つだけあります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-546">Each data source has only one **QueryBuildFieldList** object.</span></span> <span data-ttu-id="dc07a-547">このオブジェクトには、選択したすべてのフィールドに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-547">This object contains information about all selected fields.</span></span> <span data-ttu-id="dc07a-548">フィールド リスト オブジェクトで、**SUM**、**COUNT**、および **AVG** などの、集計関数を指定することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-548">You can specify aggregate functions, such as **SUM**, **COUNT**, and **AVG**, on the field list object.</span></span>                                                                                                                                   |
-| <span data-ttu-id="dc07a-549">QueryBuildRange</span><span class="sxs-lookup"><span data-stu-id="dc07a-549">QueryBuildRange</span></span>      | <span data-ttu-id="dc07a-550">このクラスは、単一フィールドに基づいて、返されるレコードのサブセットを定義します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-550">This class defines a subset of records that is returned, based on a single field.</span></span> <span data-ttu-id="dc07a-551">範囲は、クエリ SQL ステートメントの **WHERE** 句に変換されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-551">A range is translated into a **WHERE** clause in the query SQL statement.</span></span> <span data-ttu-id="dc07a-552">クエリを制限するために 1 つ以上のフィールドが使用されている場合 (**WHERE**句)、データ ソースには 1 つ以上の範囲が含まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-552">If more than one field is used to limit the query (**WHERE** clause), the data source will contain more than one range.</span></span>                                                                                                                                                                                                                                                                 |
-| <span data-ttu-id="dc07a-553">QueryBuildDynalink</span><span class="sxs-lookup"><span data-stu-id="dc07a-553">QueryBuildDynalink</span></span>   | <span data-ttu-id="dc07a-554">このクラスには、外部レコードとの関係 (制限) に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-554">This class contains information about a relation (limitation) to an external record.</span></span> <span data-ttu-id="dc07a-555">クエリを実行すると、この情報は、クエリ SQL ステートメントの **WHERE** 句内で追加のエントリに変換されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-555">When the query is run, this information is converted to additional entries in the **WHERE** clause of the query SQL statement.</span></span> <span data-ttu-id="dc07a-556">このクラスは、クエリの親データ ソースにのみ存在できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-556">This class can exist only on the parent data source of a query.</span></span> <span data-ttu-id="dc07a-557">フォームは、2 つのデータ ソースが同期されるときにこの機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-557">Forms use the function when two data sources are synchronized.</span></span> <span data-ttu-id="dc07a-558">子データ ソースは、親データ ソース に対する 1 つ以上の DLL を格納します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-558">The child data source will then contain one or more DLLs to the parent data source.</span></span> <span data-ttu-id="dc07a-559">この関数は、2 つのデータソースが 2 つの異なる形式になっていて、まだ同期されている場合でも使用されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-559">The function is used even if the two data sources are put in two different forms but are still synchronized.</span></span> |
-| <span data-ttu-id="dc07a-560">QueryBuildLink</span><span class="sxs-lookup"><span data-stu-id="dc07a-560">QueryBuildLink</span></span>       | <span data-ttu-id="dc07a-561">このクラスは、結合に 2 つのデータ ソースの間の関係を指定します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-561">This class specifies the relation between the two data sources in the join.</span></span> <span data-ttu-id="dc07a-562">このクラスは、子データ ソースにのみ存在できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-562">This class can exist only on a child data source.</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                       |
-
-## <a name="system-classes-overview"></a><span data-ttu-id="dc07a-563">システム クラスの概要</span><span class="sxs-lookup"><span data-stu-id="dc07a-563">System classes overview</span></span>
-<span data-ttu-id="dc07a-564">システム クラス (またはカーネル クラス) は C++ で実装されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-564">System classes (or kernel classes) are implemented in C++.</span></span> <span data-ttu-id="dc07a-565">これらのクラスのソースは使用できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-565">The source for these classes isn't available.</span></span> <span data-ttu-id="dc07a-566">システム クラスは、次の特性を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-566">A system class can have the following characteristics:</span></span>
-
--   <span data-ttu-id="dc07a-567">静的メソッド (またはクラス メソッド)</span><span class="sxs-lookup"><span data-stu-id="dc07a-567">Static methods (or class methods)</span></span>
--   <span data-ttu-id="dc07a-568">動的メソッド</span><span class="sxs-lookup"><span data-stu-id="dc07a-568">Dynamic methods</span></span>
--   <span data-ttu-id="dc07a-569">プロパティ - これらのプロパティは、プロパティを設定するために使用されるメンバー関数です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-569">Properties – These properties are member functions that are used to set properties.</span></span> <span data-ttu-id="dc07a-570">たとえば **LeftMargin** です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-570">An example is **LeftMargin**.</span></span>
-
-<span data-ttu-id="dc07a-571">システム クラスのメソッドをオーバーライドすることはできません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-571">You can't override system class methods.</span></span> <span data-ttu-id="dc07a-572">最初からアプリケーション オブジェクトをデザインするためにシステム クラスを使用することを意図していません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-572">It isn't our intention that you will use the system classes to design your application objects from scratch.</span></span> <span data-ttu-id="dc07a-573">代わりに、アプリケーション エクスプローラーで既存の機能を拡張または変更するために使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-573">Instead, use them to extend or modify the default functionality in Application Explorer.</span></span> <span data-ttu-id="dc07a-574">たとえば、既存のレポートに追加情報を動的に追加することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-574">For example, you can dynamically add extra information to an existing report.</span></span> <span data-ttu-id="dc07a-575">または、前のページでのユーザーの選択に基づいて、ページ上で使用可能なオプションを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-575">Alternatively, you can change the options that are available on a page, based on the user's selection on a previous page.</span></span>
-
-### <a name="collection-classes"></a><span data-ttu-id="dc07a-576">コレクション クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-576">Collection classes</span></span>
-
-<span data-ttu-id="dc07a-577">*コレクション クラス*を使用すると、リスト、セット、構造体、マップ、および配列を作成できます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-577">The *collection classes* let you create lists, sets, structs, maps, and arrays.</span></span>
-
-### <a name="application-object-classes"></a><span data-ttu-id="dc07a-578">アプリケーション オブジェクト クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-578">Application object classes</span></span>
-
-<span data-ttu-id="dc07a-579">これらのシステム クラスは、アプリケーション エクスプローラーを使用してアプリケーションを作成するたびにアクティブ化される関数を保持します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-579">These system classes hold functions that are activated whenever you use Application Explorer to create your application.</span></span> <span data-ttu-id="dc07a-580">たとえば、システムは、アプリケーション エクスプローラーの**設計**ノードでフォームのレイアウトを定義する時、**FormDesign** クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-580">For example, the system uses the **FormDesign** class when you define the layout of your form in the **Designs** node in Application Explorer.</span></span> <span data-ttu-id="dc07a-581">これらのクラスを使用すると、アプリケーション オブジェクトを作成したり変更したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-581">These classes also let you to create and modify application objects.</span></span>
-
-### <a name="integration-classes"></a><span data-ttu-id="dc07a-582">統合クラス</span><span class="sxs-lookup"><span data-stu-id="dc07a-582">Integration classes</span></span>
-
-<span data-ttu-id="dc07a-583">環境との統合は、通常、クラスによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-583">The integration with the environment is typically implemented by classes.</span></span> <span data-ttu-id="dc07a-584">このカテゴリ内のクラスの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-584">Here are some examples of the classes in this category:</span></span>
-
--   <span data-ttu-id="dc07a-585">**COM** - COM オブジェクトのメソッドの呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-585">**COM** – The call of methods on COM objects.</span></span>
--   <span data-ttu-id="dc07a-586">**DLL** – Microsoft Windows DLL 関数の呼び出し。</span><span class="sxs-lookup"><span data-stu-id="dc07a-586">**DLL** – The call of Microsoft Windows DLL functions.</span></span>
--   <span data-ttu-id="dc07a-587">**IO** – 外部ファイルの読み取りと書き込みを行います。</span><span class="sxs-lookup"><span data-stu-id="dc07a-587">**IO** – Read and write external files.</span></span>
--   <span data-ttu-id="dc07a-588">**ODBCConnection** – 外部データベースへの Open Database Connectivity (ODBC) インターフェイス。</span><span class="sxs-lookup"><span data-stu-id="dc07a-588">**ODBCConnection** – An Open Database Connectivity (ODBC) interface to a foreign database.</span></span>
-
-## <a name="event-terminology-and-keywords"></a><span data-ttu-id="dc07a-589">イベントの用語およびキーワード</span><span class="sxs-lookup"><span data-stu-id="dc07a-589">Event terminology and keywords</span></span>
-<span data-ttu-id="dc07a-590">イベント設計パターンを使用すると、コードをさらにモジュール化して再使用可能にすることができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-590">You can use the event design pattern to make your code more modular and reusable.</span></span> <span data-ttu-id="dc07a-591">*イベント* という用語は、デリゲートの使用方法を説明するメタファです。</span><span class="sxs-lookup"><span data-stu-id="dc07a-591">The term *event* is a metaphor that explains how delegates are used.</span></span> <span data-ttu-id="dc07a-592">プログラム実行中に何か重要なことが発生したときは、他のモジュールがその発生を処理することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-592">When something important occurs during a program run, other modules might have to process the occurrence.</span></span> <span data-ttu-id="dc07a-593">これらの重要な出来事は*イベント*と呼ばれています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-593">These important occurrences are known as *events*.</span></span> <span data-ttu-id="dc07a-594">イベントが発生すると、プログラムは、Notifier がイベントに関する通知を送信する必要があることを、そのイベントの Notifier に指示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-594">When an event occurs, the program tells its notifier for the event that the notifier must send notifications about the event.</span></span> <span data-ttu-id="dc07a-595">通知は、通知のサブスクライバーであるすべてのイベント ハンドラーに送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-595">A notification must be sent to all the event handlers that are subscribers of the notifier.</span></span> <span data-ttu-id="dc07a-596">プログラムがその通知機能に通知を送信するように指示するとき、そのプロセスをイベントの *発生* と呼んでいます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-596">When the program tells its notifier to send the notifications, we call that process *raising* an event.</span></span> <span data-ttu-id="dc07a-597">次のテーブルは、イベント メタファを説明するために使用される用語を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-597">The following table shows the terms that are used to describe the event metaphor.</span></span>
-
-| <span data-ttu-id="dc07a-598">期間</span><span class="sxs-lookup"><span data-stu-id="dc07a-598">Term</span></span>          | <span data-ttu-id="dc07a-599">説明</span><span class="sxs-lookup"><span data-stu-id="dc07a-599">Description</span></span>                                                                                                               |
-|---------------|---------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="dc07a-600">イベント</span><span class="sxs-lookup"><span data-stu-id="dc07a-600">Event</span></span>         | <span data-ttu-id="dc07a-601">追加モジュールは発生を処理するプログラム モジュールで重要な発生です。</span><span class="sxs-lookup"><span data-stu-id="dc07a-601">An important occurrence in a program module where additional modules must process the occurrence.</span></span>                         |
-| <span data-ttu-id="dc07a-602">通知機能</span><span class="sxs-lookup"><span data-stu-id="dc07a-602">Notifier</span></span>      | <span data-ttu-id="dc07a-603">通知機能に登録されているすべてのイベント ハンドラーに、イベントに関する情報を送信するプログラム要素。</span><span class="sxs-lookup"><span data-stu-id="dc07a-603">The program element that sends information about the event to all the event handlers that are subscribed to the notifier.</span></span> |
-| <span data-ttu-id="dc07a-604">サブスクライバー</span><span class="sxs-lookup"><span data-stu-id="dc07a-604">Subscriber</span></span>    | <span data-ttu-id="dc07a-605">イベント通知機能を登録しているプログラム機能またはメソッド。</span><span class="sxs-lookup"><span data-stu-id="dc07a-605">The program functions or methods that are subscribed to an event notifier.</span></span>                                                |
-| <span data-ttu-id="dc07a-606">イベント ハンドラー</span><span class="sxs-lookup"><span data-stu-id="dc07a-606">Event handler</span></span> | <span data-ttu-id="dc07a-607">イベント通知を購読するメソッド。</span><span class="sxs-lookup"><span data-stu-id="dc07a-607">The methods that subscribe to an event notifier.</span></span> <span data-ttu-id="dc07a-608">適切な種類のメソッドのみ、イベント ハンドラーになることができます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-608">Only the appropriate kind of methods can be event handlers.</span></span>              |
-
-### <a name="keywords-that-are-used-for-programming-that-uses-delegates"></a><span data-ttu-id="dc07a-609">デリゲートを使用するプログラミングに使用されるキーワード</span><span class="sxs-lookup"><span data-stu-id="dc07a-609">Keywords that are used for programming that uses delegates</span></span>
-
-<span data-ttu-id="dc07a-610">次のテーブルに、デリゲートの使用方法を説明するキーワードを示します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-610">The following table shows the keywords that describe the use of delegates.</span></span>
-
-| <span data-ttu-id="dc07a-611">キーワードや用語</span><span class="sxs-lookup"><span data-stu-id="dc07a-611">Keyword or term</span></span>                         | <span data-ttu-id="dc07a-612">区分</span><span class="sxs-lookup"><span data-stu-id="dc07a-612">Code</span></span>                                                                     | <span data-ttu-id="dc07a-613">説明</span><span class="sxs-lookup"><span data-stu-id="dc07a-613">Description</span></span>                                                                                                                                                                                                                                                                             |
-|-----------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="dc07a-614">デリゲート</span><span class="sxs-lookup"><span data-stu-id="dc07a-614">delegate</span></span>                                | <span data-ttu-id="dc07a-615">delegate myDelegate(str \_information) {}</span><span class="sxs-lookup"><span data-stu-id="dc07a-615">delegate myDelegate(str \_information) {}</span></span>                                | <span data-ttu-id="dc07a-616">このコードは、Microsoft MorphX クライアントのメソッド エディターでのデリゲートの外観を示しています。</span><span class="sxs-lookup"><span data-stu-id="dc07a-616">The code shows what the delegate looks like in the method editor in the Microsoft MorphX client.</span></span> <span data-ttu-id="dc07a-617">戻り値の型は常に**無効**なので、構文には示されていません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-617">Because the return type is always **void**, it isn't mentioned in the syntax.</span></span> <span data-ttu-id="dc07a-618">かっこ ({}) 内にコードは使用できません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-618">No code is allowed inside the braces ({}).</span></span>                                                               |
-| <span data-ttu-id="dc07a-619">eventHandler</span><span class="sxs-lookup"><span data-stu-id="dc07a-619">eventHandler</span></span>                            | <span data-ttu-id="dc07a-620">myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod);</span><span class="sxs-lookup"><span data-stu-id="dc07a-620">myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod);</span></span> | <span data-ttu-id="dc07a-621">**eventHandler** キーワードの構文は **eventHandler** X++ 関数であるという印象を与えますが、それは関数ではありません。</span><span class="sxs-lookup"><span data-stu-id="dc07a-621">Although the syntax of the **eventHandler** keyword might give the impression that **eventHandler** is an X++ function, it isn't a function.</span></span> <span data-ttu-id="dc07a-622">**eventHandler** キーワードは、メソッドがデリゲートにサブスクライブされることをコンパイラに伝えます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-622">The **eventHandler** keyword tells the compiler that a method is being subscribed to a delegate.</span></span>                                           |
-| <span data-ttu-id="dc07a-623">デリゲートにメソッドをサブスクライブまたは追加</span><span class="sxs-lookup"><span data-stu-id="dc07a-623">Subscribe or add a method to a delegate</span></span> | <span data-ttu-id="dc07a-624">myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);</span><span class="sxs-lookup"><span data-stu-id="dc07a-624">myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);</span></span>   | <span data-ttu-id="dc07a-625">コードでは、静的メソッド **OtherClass::aStaticMethod** がデリゲートにサブスクライブされます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-625">In the code, the static method **OtherClass::aStaticMethod** becomes subscribed to the delegate.</span></span>                                                                                                                                                                                        |
-| <span data-ttu-id="dc07a-626">デリゲートの呼び出し</span><span class="sxs-lookup"><span data-stu-id="dc07a-626">Call a delegate</span></span>                         | <span data-ttu-id="dc07a-627">myClassInstance.myDelegate("Hello");</span><span class="sxs-lookup"><span data-stu-id="dc07a-627">myClassInstance.myDelegate("Hello");</span></span>                                     | <span data-ttu-id="dc07a-628">デリゲートへのこの呼び出しは、デリゲートにサブスクライブしている各メソッドを呼び出すようにデリゲートに要求します。</span><span class="sxs-lookup"><span data-stu-id="dc07a-628">This call to the delegate prompts the delegate to call each method that is subscribed to the delegate.</span></span> <span data-ttu-id="dc07a-629">サブスクライブされたメソッドは、デリゲートに追加されたのと同じ順序で呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="dc07a-629">The subscribed methods are called in the same order in which they were added to the delegate.</span></span> <span data-ttu-id="dc07a-630">1 つのサブスクライブされたメソッドは、そのデリゲードが次のメソッドを呼び出す前に完了される必要があります。</span><span class="sxs-lookup"><span data-stu-id="dc07a-630">One subscribed method must be completed before the delegate calls the next method.</span></span> |
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="xpp-classes-methods.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>xpp-classes-methods.d84494.8ee078c78dabcc5a0e0e36e9495b8bc9891bbc40.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>8ee078c78dabcc5a0e0e36e9495b8bc9891bbc40</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-ref\xpp-classes-methods.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>X++ classes and methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ クラスおよびメソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes how to create and use classes and interfaces in X++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、X++ でクラスやインターフェイスを作成および使用する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>X++ classes and methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ クラスおよびメソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes how to create and use classes and interfaces in X++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、X++ でクラスやインターフェイスを作成および使用する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Classes in X++</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ のクラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>A <bpt id="p1">*</bpt>class<ept id="p1">*</ept> is a software construct that defines the data and methods of the objects that are later constructed from that class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>クラス<ept id="p1">*</ept>は、そのクラスから後に構築されるオブジェクトのデータとメソッドを定義するソフトウェア構造です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The objects that are constructed are known as <bpt id="p1">*</bpt>instances<ept id="p1">*</ept> or <bpt id="p2">*</bpt>objects<ept id="p2">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構築されるオブジェクトは、<bpt id="p1">*</bpt>インスタンス<ept id="p1">*</ept> または <bpt id="p2">*</bpt>オブジェクト<ept id="p2">*</ept> と呼ばれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>(This topic uses the two terms interchangeably.) The data represents the state of the object, whereas the methods represent the behavior of the object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(このトピックでは、2 つの用語を同じ意味で使用しています。) データはオブジェクトの状態を表し、メソッドはオブジェクトの動作を表します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">*</bpt>Variables<ept id="p1">*</ept> contain the data for the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>変数<ept id="p1">*</ept>にはクラスのデータが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Variables in a class are specific to objects that are constructed from that class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス内の変数は、そのクラスから構成されるオブジェクトに固有です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Every object that is constructed from the class declaration has its own copy of the variables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス宣言から構築されたすべてのオブジェクトには、独自の変数のコピーがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>These variables are known as <bpt id="p1">*</bpt>instance variables<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの変数は<bpt id="p1">*</bpt>インスタンス変数<ept id="p1">*</ept>と呼ばれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Methods define the behavior of a class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドはクラスの動作を定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>They are the sequences of statements that operate on the data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データに作用する一連のステートメントです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Typically, methods are declared to operate on the instance variables of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、メソッドはクラスのインスタンス変数を操作するように宣言されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>These methods are known as <bpt id="p1">*</bpt>instance methods<ept id="p1">*</ept> or <bpt id="p2">*</bpt>object methods<ept id="p2">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのメソッドは、<bpt id="p1">*</bpt>instance メソッド<ept id="p1">*</ept>または <bpt id="p2">*</bpt>object メソッド<ept id="p2">*</ept>と呼ばれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>You can also declare <bpt id="p1">*</bpt>static methods<ept id="p1">*</ept> and <bpt id="p2">*</bpt>static fields<ept id="p2">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、<bpt id="p1">*</bpt>静的メソッド<ept id="p1">*</ept> および <bpt id="p2">*</bpt>静的フィールド<ept id="p2">*</ept> を宣言することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Declaration of classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスの宣言</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Create a class in Visual Studio</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio でのクラスの作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Follow these steps to create a class in Microsoft Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Visual Studio でクラスを作成するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In Server Explorer, right-click the project, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー エクスプローラーで、プロジェクトを右クリックしてから<bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>In the <bpt id="p1">**</bpt>New Item<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Class<ept id="p2">**</ept>, and then enter a name for the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しい項目<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>クラス<ept id="p2">**</ept>を選択してからクラスの名前を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>All classes are public.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのクラスはパブリックです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>If you remove the <bpt id="p1">**</bpt>public<ept id="p1">**</ept> modifier, the system still treats the class as public.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パブリック<ept id="p1">**</ept> モディファイアーを削除すると、システムではクラスはパブリック クラスとして扱われます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You can specify other modifiers on the class declaration, such as <bpt id="p1">**</bpt>final<ept id="p1">**</ept> and <bpt id="p2">**</bpt>extends<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス宣言では、<bpt id="p1">**</bpt>final<ept id="p1">**</ept> および <bpt id="p2">**</bpt>extends<ept id="p2">**</ept> などの、他の修飾子を指定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Creating variables in a class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスで変数を作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>All classes are public, but all member variables are implicitly protected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのクラスはパブリックですが、すべてのメンバー変数は暗黙的に保護されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>However, you can modify the member variable declaration by using the private, protected or public keywords.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、private、protected または public キーワードを使用してメンバー変数宣言を変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>All member variables belong to only object instances of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのメンバー変数はクラスのオブジェクト インスタンスにのみ属しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The following example shows how to use accessor methods to make the variable data public.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、アクセサー メソッドを使用して変数データを公開する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Constructors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンストラクター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>To create an instance of a class, you must instantiate it by using a <bpt id="p1">*</bpt>constructor<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスのインスタンスを作成するには、<bpt id="p1">*</bpt>コンストラクタ<ept id="p1">*</ept>を使用してクラスのインスタンスを生成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The default constructor is the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のコンストラクターは、<bpt id="p1">**</bpt>新規<ept id="p1">**</ept> メソッドです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>As a best practice, you should make the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> method protected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベスト プラクティスとして、<bpt id="p1">**</bpt>新しい<ept id="p1">**</ept>メソッドを保護する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Instead, if initialization isn't required, you should use a <bpt id="p1">**</bpt>static construct<ept id="p1">**</ept> method as the public constructor for the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、初期化が必要ない場合、<bpt id="p1">**</bpt>静的コンストラクト<ept id="p1">**</ept> メソッドをクラスのパブリック コンストラクターとして使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Otherwise, you should use a <bpt id="p1">**</bpt>static new<ept id="p1">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、<bpt id="p1">**</bpt>新しい静的<ept id="p1">**</ept>なメソッドを使う必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Creating other objects in a constructor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンストラクターでその他のオブジェクトを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>A class constructor can instantiate other objects in addition to creating an instance of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス コンストラクターは、クラスのインスタンスを作成するだけでなく、他のオブジェクトをインスタンス化することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>For example, the following code declares a <bpt id="p1">**</bpt>Rectangle<ept id="p1">**</ept> class that uses two <bpt id="p2">**</bpt>Point<ept id="p2">**</ept> objects to define its bounds.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のコードは、境界を定義するため 2 つの<bpt id="p2">**</bpt>ポイント<ept id="p2">**</ept>オブジェクトを使用する<bpt id="p1">**</bpt>長方形<ept id="p1">**</ept>クラスを申告します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Destructors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デストラクター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>A <bpt id="p1">*</bpt>destructor<ept id="p1">*</ept> is used to explicitly destroy a class object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>デストラクター<ept id="p1">*</ept>は、クラス オブジェクトを明示的に破棄するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Objects are automatically destroyed when there are no references to them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトはへの参照がない場合、自動的に破棄されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>However, you can destroy objects explicitly in the following ways:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、たとえば、次の方法で対象を明示的に破棄できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> メソッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Set the object handle to <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト ハンドルを <bpt id="p1">**</bpt>null<ept id="p1">**</ept> に設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Using the finalize method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">finalize メソッドの使用</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method to explicitly destroy an object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトを明示的に破棄するには <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> メソッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>There are no implicit calls to the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> メソッドへの暗黙的な呼び出しはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>You must call the method to run the statements in it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そこでステートメントを実行するメソッドを呼び出す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The following example shows the basic structure for a call to the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、<bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> メソッドの呼び出しの基本構造を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method, you should also put any clean-up code that is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> メソッドでは、必要なクリーンアップ コードも配置する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>For example, if your class uses a dynamic-link library (DLL) module, you can use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method to release the DLL when you no longer require it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、クラスがダイナミックリンク ライブラリ (DLL) モジュールを使用する場合、必要ではなくなったときに DLL をリリースする<bpt id="p1">**</bpt>確定<ept id="p1">**</ept>メソッドを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Use the <bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> method carefully.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>finalize<ept id="p1">**</ept> メソッドは慎重に使用してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>It will destroy an object even if there are references to it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクトへの参照がある場合オブジェクトを破棄します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Setting an object handle to null</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト ハンドルを null に設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Set the object handle to <bpt id="p1">**</bpt>null<ept id="p1">**</ept> to terminate an object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オブジェクト ハンドルを <bpt id="p1">**</bpt>null<ept id="p1">**</ept> に設定してオブジェクトを終了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>This approach destroys an object only if no other object handles point to that object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法は、他のオブジェクト ハンドルがそのオブジェクトを指していない場合にのみオブジェクトを破棄します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>You should verify that other code isn't using the object handle.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他のコードがオブジェクト ハンドルを使用していないことを確認する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The following example creates an object handle and then sets it to <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、オブジェクト ハンドルを作成し、<bpt id="p1">**</bpt>null<ept id="p1">**</ept> に設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Creating a subclass</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">*</bpt>Subclasses<ept id="p1">*</ept> are classes that extend or inherit from other classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>サブクラス<ept id="p1">*</ept>は拡張または他のクラスから継承されるクラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>A class can extend only one other class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスは、他の 1 つのクラスのみ拡張することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Multiple inheritance isn't supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の継承はサポートされていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>If you extend a class, the subclass inherits all the methods and variables in the parent class (the <bpt id="p1">*</bpt>superclass<ept id="p1">*</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスを拡張する場合、サブクラスが親クラスの (<bpt id="p1">*</bpt>スーパークラス<ept id="p1">*</ept>) すべてのメソッドと変数を継承します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Subclasses let you reuse existing code for a more specific purpose.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスを使用すると、より特殊な目的で既存のコードを再利用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Therefore, they help save you time during design, development, and testing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、設計、開発、テストの時間を節約できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>To customize the behavior of a superclass, override the methods in a subclass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スーパークラスの動作をカスタマイズするには、サブクラスのメソッドをオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>A superclass is often known as a <bpt id="p1">*</bpt>base class<ept id="p1">*</ept>, and a subclass is often known as a <bpt id="p2">*</bpt>derived class<ept id="p2">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">多くの場合、スーパークラスは、<bpt id="p1">*</bpt>基本クラス<ept id="p1">*</ept>として知られており、サブクラスは、<bpt id="p2">*</bpt>派生クラス<ept id="p2">*</ept>として知られています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Subclass example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>The following example first creates a class that is named <bpt id="p1">**</bpt>Point<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、まず <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> という名前のクラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>It then extends the <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> class to create a new class that is named <bpt id="p2">**</bpt>ThreePoint<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、<bpt id="p1">**</bpt>Point<ept id="p1">**</ept> クラスを拡張して、<bpt id="p2">**</bpt>ThreePoint<ept id="p2">**</ept> という新しいクラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Preventing class inheritance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスの継承を禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>You can prevent classes from being inherited by using the <bpt id="p1">**</bpt>final<ept id="p1">**</ept> modifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>最終<ept id="p1">**</ept> モディファイアーを使用して、クラスが継承されないようにすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>The following code block types are standard for application classes:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコード ブロック タイプは、アプリケーション クラスの標準です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>classDescription<ept id="p3">&lt;/em&gt;</ept><ept id="p2">*</ept> declaration block<ept id="p1">&lt;/strong&gt;</ept> – This declaration block contains class modifiers such as <bpt id="p4">&lt;strong&gt;</bpt>public<ept id="p4">&lt;/strong&gt;</ept>, <bpt id="p5">&lt;strong&gt;</bpt>private<ept id="p5">&lt;/strong&gt;</ept>, and <bpt id="p6">&lt;strong&gt;</bpt>extends<ept id="p6">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>classDescription<ept id="p3">&lt;/em&gt;</ept><ept id="p2">*</ept> 申告ブロック<ept id="p1">&lt;/strong&gt;</ept> – この申告ブロックには<bpt id="p4">&lt;strong&gt;</bpt>パブリック<ept id="p4">&lt;/strong&gt;</ept>、<bpt id="p5">&lt;strong&gt;</bpt>プライベート<ept id="p5">&lt;/strong&gt;</ept>、および<bpt id="p6">&lt;strong&gt;</bpt>拡張<ept id="p6">&lt;/strong&gt;</ept>などのクラス モディファイアーが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>It also contains the field members for objects that are constructed from the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これには、クラスから作成されたオブジェクトのフィールドのメンバーも含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>When you type the keyword <bpt id="p1">&lt;strong&gt;</bpt>this<ept id="p1">&lt;/strong&gt;</ept>, IntelliSense can show a list of the members.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>this<ept id="p1">&lt;/strong&gt;</ept> というキーワードを入力すると、IntelliSense にメンバーのリストを表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>new<ept id="p3">&lt;/em&gt;</ept><ept id="p2">*</ept> method<ept id="p1">&lt;/strong&gt;</ept> – This method creates an instance of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>新規<ept id="p3">&lt;/em&gt;</ept><ept id="p2">*</ept>メソッド<ept id="p1">&lt;/strong&gt;</ept> – このメソッドは、クラスのインスタンスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>The constructor can be called only by using the <bpt id="p1">&lt;strong&gt;</bpt>new<ept id="p1">&lt;/strong&gt;</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンストラクターは、<bpt id="p1">&lt;strong&gt;</bpt>新しい<ept id="p1">&lt;/strong&gt;</ept>キーワードを使用することによってのみ呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Derived classes can call the <bpt id="p1">&lt;strong&gt;</bpt>new<ept id="p1">&lt;/strong&gt;</ept> method of their constructor by calling the <bpt id="p2">&lt;strong&gt;</bpt>super<ept id="p2">&lt;/strong&gt;</ept> method reference.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">派生クラスは、<bpt id="p2">&lt;strong&gt;</bpt>super<ept id="p2">&lt;/strong&gt;</ept> メソッドの参照を呼ぶことにとって、コントラクターの<bpt id="p1">&lt;strong&gt;</bpt>新しい<ept id="p1">&lt;/strong&gt;</ept>メソッドを呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>finalize<ept id="p3">&lt;/em&gt;</ept><ept id="p2">*</ept> method<ept id="p1">&lt;/strong&gt;</ept> – This method finalizes an instance of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>確定<ept id="p3">&lt;/em&gt;</ept><ept id="p2">*</ept>メソッド<ept id="p1">&lt;/strong&gt;</ept> – このメソッドは、クラスのインスタンスを確定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>This method is the destructor method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドはデストラクター メソッドです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>However, it's a destructor by convention only.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、規則のみのデストラクタです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>The system doesn't automatically call the <bpt id="p1">&lt;strong&gt;</bpt>finalize<ept id="p1">&lt;/strong&gt;</ept> method during garbage collection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ガベージ コレクション中に <bpt id="p1">&lt;strong&gt;</bpt>finalize<ept id="p1">&lt;/strong&gt;</ept> メソッドが自動的に呼び出されることはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Additional methods for a class have the following types:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスの追加メソッドには、次のタイプがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Instance methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インスタンス メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Static methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Main methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主要メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Methods can be created on many kinds of items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さまざまな種類の項目でメソッドを作成することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Here are some examples:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次にいくつか例を挙げます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Maps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Data Sets</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ セット</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Forms</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Queries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Instance methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インスタンス メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Instance methods, or object methods, are embedded in each object that is created from the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インスタンス メソッド、またはオブジェクト メソッドは、クラスから作成される各オブジェクトに埋め込まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>You must instantiate the object before you can use the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの使用前に、オブジェクトのインスタンスを作成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>If you later convert an instance method to a static method, you must restart the client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">後でインスタンス メソッドを静的メソッドに変換する場合は、クライアントを再起動する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Otherwise, the compiler doesn't detect the change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、コンパイラは変更を検出しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>After you've converted an instance method to a static method, you can no longer call the method from the instance of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インスタンス メソッドを静的メソッドに変換した後は、クラスのインスタンスからメソッドを呼び出すことができなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Instead, you must call the method from the class itself.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、クラス自体からメソッドを呼び出す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Static methods are discussed in the next section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドは、次のセクションで説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>You use the following syntax to call instance methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インスタンス メソッドを呼び出すには、次の構文を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Static methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Static methods, which are also known as <bpt id="p1">*</bpt>class methods<ept id="p1">*</ept>, belong to a class and are created by using the keyword <bpt id="p2">**</bpt>static<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>クラス メソッド<ept id="p1">*</ept>とも呼ばれる静的メソッドは、クラスに属しており、キーワード <bpt id="p2">**</bpt>static<ept id="p2">**</ept> を使用して作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>You don't have to instantiate an object before you use static methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドを使用する前に、オブジェクトのインスタンスを作成する必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Static methods are often used to work with data that is stored in tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドは多くの場合、テーブルに格納されているデータを操作するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Member variables can't be used in a static method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メンバー変数は静的メソッドで使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>You use the following syntax to call static methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドを呼び出すには、次の構文を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Main methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">主要メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>A <bpt id="p1">**</bpt>main<ept id="p1">**</ept> method is a class method that is run directly from a menu option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>メイン<ept id="p1">**</ept>メソッドは、メニュー オプションから直接実行されるクラス メソッドです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>The method should only create an instance of the object and then call the required member methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドでは、オブジェクトのインスタンスを作成してから、必要なメンバー メソッドを呼び出す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\_</ph>args<ept id="p1">**</ept> parameter lets you transfer data to the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt><ph id="ph1">\_</ph>args<ept id="p1">**</ept> パラメーターを使用して、メソッドにデータを転送できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Declaration of methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの宣言</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Method declarations consist of a header and a body.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの宣言は、ヘッダーと本文で構成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>The method header declares the method's name and return type), the method modifiers, and parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド ヘッダーは、メソッドの名前と戻り値の型、メソッド モディファイア、およびパラメーターを宣言します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>(The return type might be <bpt id="p1">**</bpt>void<ept id="p1">**</ept>.) The method body consists of variable declarations, method declarations, and statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(戻り値の型が<bpt id="p1">**</bpt>無効<ept id="p1">**</ept>である可能性があります。) メソッド本体は、変数宣言、メソッド宣言、および明細書で構成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Return type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値の型</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>If a method doesn't return anything, you must use the <bpt id="p1">**</bpt>void<ept id="p1">**</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドが何も返さない場合、<bpt id="p1">**</bpt>無効<ept id="p1">**</ept>キーワードを使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>The following example shows two methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、2 つのメソッドを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>One method has a return type, but the other method doesn't have a return type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つの方法に戻り値の型がありますが、他の方法には戻り値の型がありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Syntax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構文</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Method declaration = <bpt id="p1">*</bpt>Heading<ept id="p1">*</ept>  <bpt id="p2">*</bpt>Body<ept id="p2">*</ept> Heading = <bpt id="p3">**</bpt><ph id="ph1">\[</ph><ept id="p3">**</ept> <bpt id="p4">*</bpt>Modifiers<ept id="p4">*</ept> <bpt id="p5">**</bpt><ph id="ph2">\]</ph><ept id="p5">**</ept>  <bpt id="p6">*</bpt>ReturnType<ept id="p6">*</ept>  <bpt id="p7">*</bpt>MethodName<ept id="p7">*</ept>  <bpt id="p8">**</bpt>(<ept id="p8">**</ept>  <bpt id="p9">*</bpt>ParameterList<ept id="p9">*</ept>  <bpt id="p10">**</bpt>)<ept id="p10">**</ept> Modifiers = <bpt id="p11">**</bpt><ph id="ph3">\[</ph>client<ph id="ph4">\]</ph> <ph id="ph5">\[</ph>server<ph id="ph6">\]</ph> <ph id="ph7">\[</ph>edit | display | public | protected | private<ph id="ph8">\]</ph> <ph id="ph9">\[</ph>static | abstract | final <ph id="ph10">\]</ph><ept id="p11">**</ept> ReturnType = <bpt id="p12">*</bpt>Datatype<ept id="p12">*</ept>  <bpt id="p13">**</bpt>| void | anytype<ept id="p13">**</ept> MethodName = <bpt id="p14">*</bpt>Identifier<ept id="p14">*</ept> ParameterList = <bpt id="p15">**</bpt><ph id="ph11">\[</ph><ept id="p15">**</ept> <bpt id="p16">*</bpt>Parameter<ept id="p16">*</ept>  <bpt id="p17">**</bpt>{ ,<ept id="p17">**</ept>  <bpt id="p18">*</bpt>Parameter<ept id="p18">*</ept>  <bpt id="p19">**</bpt>}<ph id="ph12">\]</ph><ept id="p19">**</ept> Parameter = <bpt id="p20">*</bpt>Datatype<ept id="p20">*</ept>  <bpt id="p21">*</bpt>Variableidentifier<ept id="p21">*</ept>  <bpt id="p22">**</bpt><ph id="ph13">\[</ph><ph id="ph14"> =</ph><ept id="p22">**</ept>  <bpt id="p23">*</bpt>Expression<ept id="p23">*</ept>  <bpt id="p24">**</bpt><ph id="ph15">\]</ph><ept id="p24">**</ept> Body = <bpt id="p25">**</bpt>{ <ph id="ph16">\[</ph><ept id="p25">**</ept>  <bpt id="p26">*</bpt>VariableDeclarations<ept id="p26">*</ept>  <bpt id="p27">**</bpt><ph id="ph17">\]</ph> <ph id="ph18">\[</ph><ept id="p27">**</ept>  <bpt id="p28">*</bpt>EmbeddedFunctionDeclarations<ept id="p28">*</ept>  <bpt id="p29">**</bpt><ph id="ph19">\]</ph> <ph id="ph20">\[</ph><ept id="p29">**</ept>  <bpt id="p30">*</bpt>Statements<ept id="p30">*</ept>  <bpt id="p31">**</bpt><ph id="ph21">\]</ph> }<ept id="p31">**</ept> EmbeddedFunctionDeclaration = <bpt id="p32">*</bpt>Heading<ept id="p32">*</ept>  <bpt id="p33">**</bpt>{<ph id="ph22">\[</ph><ept id="p33">**</ept>  <bpt id="p34">*</bpt>VariableDeclarations<ept id="p34">*</ept>  <bpt id="p35">**</bpt><ph id="ph23">\]</ph> <ph id="ph24">\[</ph><ept id="p35">**</ept>  <bpt id="p36">*</bpt>Statements<ept id="p36">*</ept>  <bpt id="p37">**</bpt><ph id="ph25">\]</ph>}<ept id="p37">**</ept> If you use the <bpt id="p38">**</bpt>anytype<ept id="p38">**</ept> return type, the method can return any data type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの宣言 = <bpt id="p1">*</bpt>ヘッダー<ept id="p1">*</ept>  <bpt id="p2">*</bpt>本文<ept id="p2">*</ept>ヘッダー = <bpt id="p3">**</bpt><ph id="ph1">\[</ph><ept id="p3">**</ept> <bpt id="p4">*</bpt>モディファイアー<ept id="p4">*</ept> <bpt id="p5">**</bpt><ph id="ph2">\]</ph><ept id="p5">**</ept>  <bpt id="p6">*</bpt>ReturnType<ept id="p6">*</ept>  <bpt id="p7">*</bpt>MethodName<ept id="p7">*</ept>  <bpt id="p8">**</bpt>(<ept id="p8">**</ept>  <bpt id="p9">*</bpt>ParameterList<ept id="p9">*</ept>  <bpt id="p10">**</bpt>)<ept id="p10">**</ept> モディファイアー = <bpt id="p11">**</bpt><ph id="ph3">\[</ph>クライアント<ph id="ph4">\]</ph> <ph id="ph5">\[</ph>サーバー<ph id="ph6">\]</ph> <ph id="ph7">\[</ph>edit | display | public | protected | private<ph id="ph8">\]</ph> <ph id="ph9">\[</ph>static | abstract | final <ph id="ph10">\]</ph><ept id="p11">**</ept> ReturnType = <bpt id="p12">*</bpt>Datatype<ept id="p12">*</ept>  <bpt id="p13">**</bpt>| void | anytype<ept id="p13">**</ept> MethodName = <bpt id="p14">*</bpt>識別子<ept id="p14">*</ept> ParameterList = <bpt id="p15">**</bpt><ph id="ph11">\[</ph><ept id="p15">**</ept> <bpt id="p16">*</bpt>パラメーター<ept id="p16">*</ept>  <bpt id="p17">**</bpt>{ ,<ept id="p17">**</ept>  <bpt id="p18">*</bpt>パラメーター<ept id="p18">*</ept>  <bpt id="p19">**</bpt>}<ph id="ph12">\]</ph><ept id="p19">**</ept> パラメーター = <bpt id="p20">*</bpt>Datatype<ept id="p20">*</ept>  <bpt id="p21">*</bpt>Variableidentifier<ept id="p21">*</ept>  <bpt id="p22">**</bpt><ph id="ph13">\[</ph><ph id="ph14"> =</ph><ept id="p22">**</ept>  <bpt id="p23">*</bpt>式<ept id="p23">*</ept>  <bpt id="p24">**</bpt><ph id="ph15">\]</ph><ept id="p24">**</ept> 本文 = <bpt id="p25">**</bpt>{<ph id="ph16">\[</ph><ept id="p25">**</ept>  <bpt id="p26">*</bpt>VariableDeclarations<ept id="p26">*</ept>  <bpt id="p27">**</bpt><ph id="ph17">\]</ph> <ph id="ph18">\[</ph><ept id="p27">**</ept> <bpt id="p28">*</bpt>EmbeddedFunctionDeclarations<ept id="p28">*</ept>  <bpt id="p29">**</bpt><ph id="ph19">\]</ph> <ph id="ph20">\[</ph><ept id="p29">**</ept>  <bpt id="p30">*</bpt>ステートメント<ept id="p30">*</ept>  <bpt id="p31">**</bpt><ph id="ph21">\]</ph> }<ept id="p31">**</ept> EmbeddedFunctionDeclaration = <bpt id="p32">*</bpt>ヘッダー<ept id="p32">*</ept>  <bpt id="p33">**</bpt>{<ph id="ph22">\[</ph><ept id="p33">**</ept>  <bpt id="p34">*</bpt>VariableDeclarations<ept id="p34">*</ept>  <bpt id="p35">**</bpt><ph id="ph23">\]</ph> <ph id="ph24">\[</ph><ept id="p35">**</ept> <bpt id="p36">*</bpt>ステートメント<ept id="p36">*</ept>  <bpt id="p37">**</bpt><ph id="ph25">\]</ph>}<ept id="p37">**</ept> <bpt id="p38">**</bpt>anytype<ept id="p38">**</ept> の戻り値の型を使用した場合、メソッドはあらゆるデータ型を返すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Example of a method that doesn't have a return type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値の型を設定していないメソッドの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Example of a method that has parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターを持つメソッドの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>In the following example, the <bpt id="p1">**</bpt>checkAccountBlocked<ept id="p1">**</ept> method returns a Boolean value and acts on the <bpt id="p2">**</bpt>amountCur<ept id="p2">**</ept> parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、<bpt id="p1">**</bpt>checkAccountBlocked<ept id="p1">**</ept> メソッドはブール値を返し、<bpt id="p2">**</bpt>amountCur<ept id="p2">**</ept> パラメーターで動作します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Method modifiers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド modifiers</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Several modifiers can be applied to method declarations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いくつかのモディファイアーは、メソッドの宣言に適用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Some of the modifiers can be combined (for example, <bpt id="p1">**</bpt>final static<ept id="p1">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の修飾子を結合できます (たとえば、<bpt id="p1">**</bpt>final static<ept id="p1">**</ept>)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Here are the method modifier keywords:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド モディファイア キーワードを次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source><bpt id="p1">**</bpt>abstract<ept id="p1">**</ept> – The method is declared but isn't implemented in a parent class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>抽象<ept id="p1">**</ept> – メソッドは宣言されていますが、親クラスで実装されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>The method must be overridden in subclasses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドはサブクラスで上書きする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスに親クラスに属する 1 つ以上の抽象メソッドがあり、オーバーライドされていません。そのサブクラスからオブジェクトを作成しようとすると、コンパイラ エラーが発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Classes can also be abstract.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスは抽象クラスにすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Sometimes, a class should not be instantiated even though it represents an abstract concept.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場合によっては、抽象的な概念を表す場合でもクラスをインスタンス化しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Only subclasses should be instantiated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスのみインスタンスを作成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Base classes of this type can be declared as <bpt id="p1">**</bpt>abstract<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このタイプの基本クラスは<bpt id="p1">**</bpt>抽象<ept id="p1">**</ept>として宣言できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>For example, you want to model the concept of an account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、勘定の概念をモデル化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実際の世界には派生クラス (勘定科目など) しか存在しないため、勘定は抽象です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>This examples describes a clear case where you should declare the <bpt id="p1">**</bpt>Account<ept id="p1">**</ept> class as <bpt id="p2">**</bpt>abstract<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、<bpt id="p1">**</bpt>勘定<ept id="p1">**</ept> クラスを<bpt id="p2">**</bpt>抽象<ept id="p2">**</ept>として宣言する必要があるという明確なケースについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source><bpt id="p1">**</bpt>display<ept id="p1">**</ept> – The method's return value should be shown on a page or a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ディスプレイ<ept id="p1">**</ept> – メソッドの戻り値は、ページまたはレポートに表示される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>The value can't be modified on the page or report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ページまたはレポートで値を変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Typically, the return value is a calculated value, such as a sum.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、戻り値は合計などの計算された値です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source><bpt id="p1">**</bpt>edit<ept id="p1">**</ept> – The method's return type should be used to provide information for a field that is used on a page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>編集<ept id="p1">**</ept> – メソッドの戻り値のタイプは、ページで使用されるフィールドの情報を提供するために使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>The value in the field can be modified.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このフィールドの値は修正できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source><bpt id="p1">**</bpt>final<ept id="p1">**</ept> – The method can't be overridden in any class that derives from its class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>最終<ept id="p1">**</ept> – 同じクラスから派生したクラスのメソッドに上書きすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source><bpt id="p1">**</bpt>public<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>public<ept id="p2">**</ept> can be accessed anywhere that the class is accessible, and they can be overridden by subclasses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パブリック<ept id="p1">**</ept> – <bpt id="p2">**</bpt>パブリック<ept id="p2">**</ept>として宣言されるメソッドは、クラスがアクセスできるどの場所にもアクセスでき、サブクラスによって上書きすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Methods that have no access modifier are implicitly public.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセス修飾子を持たないメソッドは暗黙的にパブリックとなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source><bpt id="p1">**</bpt>protected<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>protected<ept id="p2">**</ept> can be called only from methods in the class and in subclasses that extend the class where the method is declared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保護されている<ept id="p1">**</ept> – <bpt id="p2">**</bpt>保護されている<ept id="p2">**</ept>として宣言されるメソッドは、クラスおよびメソッドが宣言されている拡張されたクラスであるサブクラスの中のメソッドからのみ呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source><bpt id="p1">**</bpt>private<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>private<ept id="p2">**</ept> can be called only from methods in the class where the private method is declared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プライベート<ept id="p1">**</ept> – <bpt id="p2">**</bpt>プライベート<ept id="p2">**</ept>として宣言されるメソッドは、プライベートメソッドが宣言されているクラスのメソッドからのみ呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source><bpt id="p1">**</bpt>static<ept id="p1">**</ept> – The method is a class method and doesn't act on an instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>静的<ept id="p1">**</ept> – このメソッドはクラス メソッドであり、インスタンスを実行しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Static methods can't refer to instance variables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドは、インスタンス変数を参照できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>They aren't invoked on an instance of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスのインスタンスでは呼び出されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Instead, they are invoked by using the class name (for example, <bpt id="p1">**</bpt>MyClass::aStaticProcedure()<ept id="p1">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、クラス名を使用して呼び出されます (たとえば、<bpt id="p1">**</bpt>MyClass::aStaticProcedure()<ept id="p1">**</ept>)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Methods that have modifiers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モディファイアーのあるメソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The following examples show only the method headers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 次の例は、メソッド ヘッダーのみを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Static class members</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的クラス メンバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>You declare static class members by using the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的クラス メンバーを宣言するには、<bpt id="p1">**</bpt>静的<ept id="p1">**</ept> キーワードを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>The <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword instructs the system to create only one instance of the method, regardless of the number of times that you call <bpt id="p2">**</bpt>new<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>static<ept id="p1">**</ept> キーワードは、<bpt id="p2">**</bpt>new<ept id="p2">**</ept> を呼び出す回数に関係なく、メソッドの 1 つのインスタンスだけを作成するようシステムに指示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>This one instance is used throughout your session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この 1 つのインスタンスは、セッション全体で使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>In general, static methods are intended for cases where the following criteria are met:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般に、静的メソッドは次の基準を満たしている場合を意図しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>The method has no reason to access the member variables that are declared in the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、クラス内で宣言されているメンバー変数にアクセスする必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>The method has no reason to call any instance (non-static) methods of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、クラスのインスタンス (静的でない) メソッドを呼び出す理由はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Static methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>This section describes a scenario where a software key type is used to help prevent piracy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、違法コピーを防止するためにソフトウェア キー タイプを使用するシナリオについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Each instance of a software key can have its own unique value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソフトウェア キーの各インスタンスには、固有の値を持つことが可能です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>However, because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、すべてのソフトウェア キーはソフトウェア キー設計のルールに準拠する必要があるため、ソフトウェア キーへの適合をテストするロジックはすべてのソフトウェア キーに対して同じです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Therefore, the method that contains the conformance validation logic should be static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、適合性検証ロジックを含むメソッドは静的でなければなりません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Here is an example of a method that is declared by using the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>静的<ept id="p1">**</ept>キーワード使用して宣言されるメソッドの例を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>In the following example, you don't have to construct an instance of the <bpt id="p1">**</bpt>SoftwareKey<ept id="p1">**</ept> class before you call a static method on the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、クラスで静的メソッドを呼び出す前に <bpt id="p1">**</bpt>SoftwareKey<ept id="p1">**</ept> クラスのインスタンスを構築する必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>When you want to call the static <bpt id="p1">**</bpt>validateSoftwareKey<ept id="p1">**</ept> method, the syntax starts with the name of the class that contains the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的な <bpt id="p1">**</bpt>validateSoftwareKey<ept id="p1">**</ept> メソッドを呼び出すときは、構文はそのメソッドを含むクラスの名前で始まります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>A pair of colons (::) is used to connect the class name to the static method name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コロンのペア (::) は、クラス名を静的メソッド名に接続するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Static fields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Static fields are fields that are declared by using the <bpt id="p1">**</bpt>static<ept id="p1">**</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的フィールドは<bpt id="p1">**</bpt>静的<ept id="p1">**</ept>キーワードを使用して宣言されているフィールドです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Conceptually, they apply to the class, not to instances of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概念的には、クラスに適用され、クラスのインスタンスには適用されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Static constructors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的コンストラクター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Static constructors are guaranteed to run before any static or instance calls are made to the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的コンストラクターは、静的またはインスタンス呼び出しがクラスに対して行われる前に実行されることが保証されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>In C<ph id="ph1">\#</ph>, the <bpt id="p1">*</bpt>static<ept id="p1">*</ept> concept is related to the whole executing application domain.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C<ph id="ph1">\#</ph> では、<bpt id="p1">*</bpt>静的<ept id="p1">*</ept>の概念が実行中のアプリケーション ドメイン全体に関係します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>However, in X++, the execution of the static constructor is relative to the user’s session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、X++ では、静的コンストラクターの実行は、ユーザーのセッションに対して相対的です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>The static constructor has the following syntax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的コンストラクターには、次の構文があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>You never explicitly call the static constructor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的コンストラクターは明示的に呼び出さないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>The compiler will generate code to make sure that the constructor is called exactly one time before any other method on the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンパイラは、コンストラクターがクラスの他のメソッドの前に正確に 1 回呼び出されるようにするコードを生成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>A static constructor is used to initialize any static data or perform a particular action that must be performed only one time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的コンストラクターは、任意の静的データを初期化したり、一度だけ実行する必要のある特定のアクションを実行するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>No parameters can be provided for the static constructor, and it must be marked as <bpt id="p1">**</bpt>static<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的コンストラクターに指定できるパラメーターはなく、<bpt id="p1">**</bpt>静的<ept id="p1">**</ept>としてマークする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>The following example shows how to create a singleton instance by using a static constructor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、静的コンストラクターを使用して単一のインスタンスを作成する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>The singleton guarantees that only one instance of the class will ever be called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単一は、クラスのインスタンスが 1 つしか呼び出されないことを保証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>The following example shows how to instantiate the singleton.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、単一をインスタンス化する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Method access control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド アクセス制御</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>You use the accessor keywords <bpt id="p1">**</bpt>public<ept id="p1">**</ept>, <bpt id="p2">**</bpt>protected<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>private<ept id="p3">**</ept> to control whether the methods in other classes can call the methods on your class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のクラスのメソッドがお客様のクラスのメソッドを呼び出すことができるかどうかを制御するには、アクセサー キーワード <bpt id="p1">**</bpt>public<ept id="p1">**</ept>、<bpt id="p2">**</bpt>protected<ept id="p2">**</ept>、および <bpt id="p3">**</bpt>private<ept id="p3">**</ept> を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>The accessor keywords on methods also interact with the rules for class inheritance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのアクセス キーワードは、クラス継承のルールとも連携します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Here are the accessor keywords that you use with methods:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドを使用するアクセサー キーワードを次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source><bpt id="p1">**</bpt>public<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>public<ept id="p2">**</ept> can be called from anywhere that the class is accessible.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>パブリック<ept id="p1">**</ept> – <bpt id="p2">**</bpt>パブリック<ept id="p2">**</ept>として宣言されるメソッドは、クラスがアクセスできるどの場所からでも呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>In addition, a public method can be overridden by a subclass, unless the method is declared as <bpt id="p1">**</bpt>final<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに、メソッドが<bpt id="p1">**</bpt>最終<ept id="p1">**</ept>として宣言されていない限り、パブリック メソッドをサブクラスでオーバーライドできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source><bpt id="p1">**</bpt>protected<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>protected<ept id="p2">**</ept> can be called only from the following methods:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>保護されている<ept id="p1">**</ept> – <bpt id="p2">**</bpt>保護されている<ept id="p2">**</ept>として宣言されるメソッドは、次のメソッドからのみ呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Methods in the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスのメソッド。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Methods in a subclass of the class that contains the protected method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保護されたメソッドを含むクラスのサブクラス内のメソッド。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Methods that are protected can be overridden in subclasses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保護されているメソッドは、サブクラスで上書きできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source><bpt id="p1">**</bpt>private<ept id="p1">**</ept> – Methods that are declared as <bpt id="p2">**</bpt>private<ept id="p2">**</ept> can be called only from methods in the class where the private method is declared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プライベート<ept id="p1">**</ept> – <bpt id="p2">**</bpt>プライベート<ept id="p2">**</ept>として宣言されるメソッドは、プライベートメソッドが宣言されているクラスのメソッドからのみ呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>No private method can be overridden in a subclass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスでプライベート メソッドをオーバーライドできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>By default, when you create a new method, the <bpt id="p1">**</bpt>private<ept id="p1">**</ept> accessor keyword appears in the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、新しいメソッドを作成するときに、<bpt id="p1">**</bpt>プライベート<ept id="p1">**</ept> アクセサー キーワードがコード エディターに表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>For maximum security, <bpt id="p1">**</bpt>private<ept id="p1">**</ept> is the most conservative default accessor keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最大限のセキュリティについては、<bpt id="p1">**</bpt>プライベート<ept id="p1">**</ept>が最も保守的な既定のアクセス キーワードです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Static and instance methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的およびインスタンス メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのアクセサー キーワードは、どのメソッドが静的であるか、静的でないかに関係なく、同じクラスにある 2 つのメソッド間の呼び出しを制限することはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>In a static method, calls to the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> constructor method are valid even if the <bpt id="p2">**</bpt>new<ept id="p2">**</ept> constructor method is decorated with the <bpt id="p3">**</bpt>private<ept id="p3">**</ept> modifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドでは、<bpt id="p2">**</bpt>新しい<ept id="p2">**</ept>コンストラクター メソッドが<bpt id="p3">**</bpt>プライベート<ept id="p3">**</ept> モディファイアーで修飾されている場合でも、<bpt id="p1">**</bpt>新しい<ept id="p1">**</ept>コンストラクター メソッドに対する呼び出しは有効です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>The syntax for these calls requires that the <bpt id="p1">**</bpt>new<ept id="p1">**</ept> keyword be used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの呼び出しの構文では、<bpt id="p1">**</bpt>新しい<ept id="p1">**</ept>キーワードを使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドのコードは、クラスのインスタンス メソッドを呼び出す前に、独自のクラスのインスタンス オブジェクトを構築する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Increasing access during overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーライド中のアクセス増加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>When a method is overridden in a subclass, the overriding method must be at least as accessible as the overridden method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラス内でメソッドがオーバーライドされると、オーバーライドするメソッドは少なくともオーバーライドされるメソッドと同程度のアクセスが可能なことが必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>For example, the following compiler rules apply when a protected method is overridden in a subclass:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のコンパイラ ルールは、サブクラスで保護されたメソッドが上書きされる時に適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>A public method in a superclass can be overridden only by a public method in the subclass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スーパークラスのパブリック メソッドは、サブクラスのパブリック メソッドによってのみ上書きできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>In a subclass, a public or protected method can override a protected method of the superclass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスでは、パブリック メソッドまたは保護対象のメソッドはスーパークラスの保護対象のメソッドをオーバーライドできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>In a subclass, a private method can't override a protected method of the superclass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブクラスでは、プライベート メソッドはスーパークラスの保護対象のメソッドをオーバーライドできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Optional parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプションのパラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Parameters can be initialized in the method declaration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーターは、メソッド宣言で初期化することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>In this case, the parameter becomes an <bpt id="p1">*</bpt>optional parameter<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、パラメーターは<bpt id="p1">*</bpt>オプションのパラメーター<ept id="p1">*</ept>となります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>If no value is supplied in the method call, the default value is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドの呼び出しの値が指定されていない場合は、既定値が使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>All required parameters must be listed before the first optional parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての必須パラメータは最初のオプション パラメーターの前に一覧表示する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>The following examples show how to create and call a method that has optional parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、オプションのパラメーターを持つメソッドを作成して呼び出す方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>The example of the <bpt id="p1">**</bpt>AddThreeInts<ept id="p1">**</ept> method shows that you can't skip default parameters when you call a method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AddThreeInts<ept id="p1">**</ept> メソッドの例は、メソッドを呼び出すときにデフォルトのパラメーターをスキップできないことを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Examples of optional parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション パラメーターの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Accessor methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクセサー メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Class variables are private.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス変数はプライベートです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスの内部実装の詳細を非表示にすることで、そのクラスを使用するコードを破棄することなくクラスの実装を後で変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>To access the data from reference variables, you must create accessor methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">参照変数からデータにアクセスするには、アクセサー メソッドを作成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>The following example defines a <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> class that uses accessor methods to access the variables <bpt id="p2">**</bpt>x<ept id="p2">**</ept> and <bpt id="p3">**</bpt>y<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、アクセス メソッドを使用して変数 <bpt id="p1">**</bpt>x<ept id="p1">**</ept> および <bpt id="p2">**</bpt>y<ept id="p2">**</ept> にアクセスする <bpt id="p3">**</bpt>Point<ept id="p3">**</ept> クラスを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>These method declarations show how the <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> class provides access to its variables from the outside world.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのメソッド宣言は、<bpt id="p1">**</bpt>Point<ept id="p1">**</ept> クラスが外部からの変数へのアクセスを提供する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Other objects can manipulate the instance variables of <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> objects by using the accessor methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その他のオブジェクトは、アクセサー メソッドを使ってインスタンス変数 <bpt id="p1">**</bpt>Point<ept id="p1">**</ept> オブジェクトを操作できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>The depth of the call stack is limited to 100.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コール スタックの深さは 100 に制限されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Overriding a method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーライド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>The methods in a class are inherited by any class that extends it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス内のメソッドは、それを拡張するクラスによって継承されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>To change the functionality of an inherited method, you can create a method in the subclass, and then give that method the same name and parameters as the method in the superclass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">継承されたメソッドの機能を変更するには、サブクラスでメソッドを作成し、そのメソッドにスーパークラスのメソッドと同じ名前とパラメーターを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>This process is known as <bpt id="p1">*</bpt>overriding<ept id="p1">*</ept> the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロセスは、メソッドを<bpt id="p1">*</bpt>オーバーライドする<ept id="p1">*</ept>として知られています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>In the following example, <bpt id="p1">**</bpt>ColorAttribute<ept id="p1">**</ept> is a subclass of <bpt id="p2">**</bpt>Attribute<ept id="p2">**</ept> and therefore inherits the <bpt id="p3">**</bpt>methodAttr<ept id="p3">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、<bpt id="p1">**</bpt>ColorAttribute<ept id="p1">**</ept> は<bpt id="p2">**</bpt>属性<ept id="p2">**</ept>のサブクラスであるため、<bpt id="p3">**</bpt>methodAttr<ept id="p3">**</ept> メソッドを継承します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>However, because <bpt id="p1">**</bpt>ColorAttribute<ept id="p1">**</ept> defines a method that has the same name and the same number of arguments, the method in the superclass is overridden.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、<bpt id="p1">**</bpt>ColorAttribute<ept id="p1">**</ept> は同じ名前および同じ数の引数を持つメソッドを定義するため、スーパークラスのメソッドは上書きされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Preventing method overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのオーバーライドを禁止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Static methods can't be overridden, because they exist per class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドは、クラスごとに存在するため上書きすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>To protect other sensitive methods, or core methods, from being overridden, use the <bpt id="p1">**</bpt>final<ept id="p1">**</ept> modifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他の重要なメソッドやコア メソッドがオーバーライドされないようにするには、<bpt id="p1">**</bpt>final<ept id="p1">**</ept> 修飾子を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>In the following example, because <bpt id="p1">**</bpt>methodAtt<ept id="p1">**</ept> is declared as <bpt id="p2">**</bpt>final<ept id="p2">**</ept>, it can't be overridden in any class that extends <bpt id="p3">**</bpt>Attribute<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、<bpt id="p1">**</bpt>methodAtt<ept id="p1">**</ept> が <bpt id="p2">**</bpt>final<ept id="p2">**</ept> として宣言されているため、<bpt id="p3">**</bpt>属性<ept id="p3">**</ept>を拡張するクラスでオーバーライドできません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>You should not specify <bpt id="p1">**</bpt>new<ept id="p1">**</ept> or <bpt id="p2">**</bpt>finalize<ept id="p2">**</ept> methods as <bpt id="p3">**</bpt>final<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p3">**</bpt>最終<ept id="p3">**</ept> に <bpt id="p1">**</bpt>新規<ept id="p1">**</ept> または <bpt id="p2">**</bpt>確定<ept id="p2">**</ept> のメソッドを指定しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>The following example shows how to use the <bpt id="p1">**</bpt>final<ept id="p1">**</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、<bpt id="p1">**</bpt>final<ept id="p1">**</ept> キーワードの使用方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Overriding vs. overloading</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーライドとオーバーロード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Overriding occurs when the superclass's implementation of a method is changed by the subclass's implementation of that method, but the signatures of both methods are the same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーバーライドは、メソッドのスーパークラスの実装がそのメソッドのサブクラスの実装によって変更されるが、両方のメソッドのシグネチャが同じ場合に行われます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>By contrast, <bpt id="p1">*</bpt>overloading<ept id="p1">*</ept> occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対照的に、<bpt id="p1">*</bpt>オーバーロード<ept id="p1">*</ept>は複数のメソッドが同じ名前を持つ場合に発生しますが、メソッドは異なるシグネチャ (戻り値の型、パラメーター リスト、または両方) を持ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>X++ supports overriding, but it doesn't support overloading.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ はオーバーライドをサポートしますが、オーバーロードはサポートしていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>All methods have their own <bpt id="p1">*</bpt>scope<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのメソッドは独自の<bpt id="p1">*</bpt>スコープ<ept id="p1">*</ept>を持っています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>A method can take one or more parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドは、1 つ以上のパラメーターを受け取ることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Within the scope of the method, these parameters are treated as local variables and are initialized with a value from the parameter in the method call.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドのスコープ内では、これらのパラメーターはローカル変数として処理され、メソッド呼び出しのパラメーターからの値で初期化されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>All parameters are passed by value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのパラメーターは値で渡されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>You can't change the value of the original variable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">元の変数の値を変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>You can change only the local variable in the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド内のローカル変数のみを変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>This local variable is a copy of the original variable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このローカル変数は元の変数のコピーです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Scope of variables in methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッドでの変数の範囲</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>A scope defines the area in which an item can be accessed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スコープは、品目にアクセスできるエリアを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Variables that are defined in a class are available to the methods within that class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスで定義されている変数は、そのクラス内のメソッドで使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Variables in methods can be accessed only within the current block.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド内の変数は、現在のブロック内でのみアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Local functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>You can declare local functions inside a method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド内部のローカル関数を宣言することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>However, as a best practice, you shouldn't add local functions inside the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、ベスト プラクティスとしては、メソッド内のローカル機能を追加する必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Instead, you should add private methods to the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、プライベート メソッドをクラスに追加する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>The following example shows valid declarations of two local functions, <bpt id="p1">**</bpt>localFunc55b<ept id="p1">**</ept> and <bpt id="p2">**</bpt>localFunc66c<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、2 つのローカル関数、<bpt id="p1">**</bpt>localFunc55b<ept id="p1">**</ept> および <bpt id="p2">**</bpt>localFunc66c<ept id="p2">**</ept> の有効な宣言を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Calls to the local functions occur after the function declarations in the example, as is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数への呼び出しは、必要に応じて、この例の関数宣言の後に行われます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Declaration of local functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカルの関数の宣言</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>The declarations of local functions must physically precede any non-declaration statements in the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数の宣言は、メソッド内の宣言されていないステートメントの前に物理的に先行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>You can declare more than one local function in your method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド内で 1 つ以上のローカル関数を宣言することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>However, all local functions must be declared in an uninterrupted series, and the set must be terminated by one semicolon (;).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、すべてのローカル関数は中断のないシリーズで宣言され、セットは 1 つのセミコロン (;) で終了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Variable scope</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変数のスコープ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Code that is inside the local function can access variables that are declared in the method that contains the local function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数内にあるコードは、ローカル関数を含むメソッドで宣言されている変数にアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Code that is outside the local function can't access variables that are declared in the local function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数の外にあるコードは、ローカル関数で宣言された変数にアクセスすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Calls to local functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカルの関数への呼び出し</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>A local function can be called only by code in the same method where the local function is declared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数は、ローカル関数が宣言されているのと同じメソッド内のコードによってのみ呼び出すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>A local function should never call itself.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル関数が、それ自体を呼び出すことはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Such recursion can prevent successful compilation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このような再帰は、正常に行われるコンパイルを防ぐことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>The this keyword</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このキーワード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> keyword is a reference to the instance of the class or table where the <bpt id="p2">**</bpt>this<ept id="p2">**</ept> keyword is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> キーワードは、<bpt id="p2">**</bpt>this<ept id="p2">**</ept> キーワードが使用されるクラスやテーブルのインスタンスへの参照です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference is never required, but it can clarify your code and enhances the behavior of IntelliSense in the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> 参照が必須になることはありませんが、コードを明確にし、コード エディターで IntelliSense の動作を強化することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>All calls to instance methods must be qualified by either the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference or a variable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての呼び出しインスタンス メソッドは<bpt id="p1">**</bpt>これ<ept id="p1">**</ept>を参照または変数のいずれかにより修飾される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference can be used to qualify the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> 参照は、次の情報を修飾するために使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>The names of other instance (non-static) methods in the same class where the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> 参照が使用されている同じクラス内の他のインスタンス (静的でない) メソッドの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Here is an example: <bpt id="p1">**</bpt>boolColorChanged = this.colorItOrange();<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に例を示します: <bpt id="p1">**</bpt>boolColorChanged = this.colorItOrange();<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>The names of methods that are inherited by the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> オブジェクトによって継承されるメソッドの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>The names of fields on the table that contains the method that the <bpt id="p1">**</bpt>this<ept id="p1">**</ept> keyword is used in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> キーワードが使用されるメソッドを含むテーブル上のフィールドの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>The <bpt id="p1">**</bpt>this<ept id="p1">**</ept> reference can't be used in the following ways:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>this<ept id="p1">**</ept> 参照は、次の方法で使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>It can't qualify the names of member variables that are declared in the <bpt id="p1">**</bpt>classDeclaration<ept id="p1">**</ept> code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>classDeclaration<ept id="p1">**</ept> コードで宣言されているメンバー変数の名前を限定することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>It can't be used in a static method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッドで使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>It can't qualify the names of static methods of the class or table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスやテーブルの静的メソッドの名前を限定することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Interfaces</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターフェイス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>An <bpt id="p1">&lt;em&gt;</bpt>interface<ept id="p1">&lt;/em&gt;</ept> is a specification for a set of public instance methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;em&gt;</bpt>インターフェイス<ept id="p1">&lt;/em&gt;</ept>はパブリック インスタンス メソッドのセットを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>An interface defines and enforces similarities between unrelated classes without having to derive one class from the other.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">他から 1 つのクラスを派生させることなく、インターフェイスは無関係なクラス間の類似点を定義し適用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>All interfaces are public, even if you don't explicitly add the <bpt id="p1">&lt;strong&gt;</bpt>public<ept id="p1">&lt;/strong&gt;</ept> keyword *<bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>in front of the *<ept id="p3">&lt;/em&gt;</ept>interface<ept id="p2">&lt;/strong&gt;</ept> keyword *<bpt id="p4">&lt;strong&gt;</bpt><bpt id="p5">&lt;em&gt;</bpt>in the *<ept id="p5">&lt;/em&gt;</ept>classDeclaration<ept id="p4">&lt;/strong&gt;</ept> code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">*<bpt id="p4">&lt;strong&gt;</bpt><bpt id="p5">&lt;em&gt;</bpt>*<ept id="p5">&lt;/em&gt;</ept>classDeclaration<ept id="p4">&lt;/strong&gt;</ept> コード内の<bpt id="p2">&lt;strong&gt;</bpt>インターフェイス キーワード*<bpt id="p3">&lt;em&gt;</bpt>の前に<ept id="p3">&lt;/em&gt;</ept><ept id="p2">&lt;/strong&gt;</ept><bpt id="p1">&lt;strong&gt;</bpt>パブリック<ept id="p1">&lt;/strong&gt;</ept> キーワード*を明示的に追加しなくても、すべてのインターフェイスはパブリックです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>The methods on an interface are also public.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターフェイス上のメソッドも公開されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Once again, explicit inclusion of the keyword <bpt id="p1">&lt;strong&gt;</bpt>public<ept id="p1">&lt;/strong&gt;</ept> is optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合も、<bpt id="p1">&lt;strong&gt;</bpt>パブリック<ept id="p1">&lt;/strong&gt;</ept>というキーワードを明示的に含めることはオプションです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>To create an interface, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターフェイスを作成するには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>In Server Explorer, right-click the project, and then click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー エクスプローラーで、プロジェクトを右クリックしてから<bpt id="p1">**</bpt>追加<ept id="p1">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>In the <bpt id="p1">**</bpt>New Item<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Interface<ept id="p2">**</ept>, and then enter a name for the interface.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>新しい項目<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>インターフェイス<ept id="p2">**</ept>を選択してからインターフェイスの名前を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>追加<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>When you add the <bpt id="p1">**</bpt>implements<ept id="p1">**</ept> keyword on a class declaration, the class must declare the methods that are specified by the interface.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス宣言に <bpt id="p1">**</bpt>implements<ept id="p1">**</ept> キーワードを追加すると、そのクラスは、インターフェイスによって指定されるメソッドを宣言する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>A class declaration can implement multiple interfaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス宣言では、複数のインターフェイスを実装することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Just list the interfaces after the single occurrence of the <bpt id="p1">**</bpt>implements<ept id="p1">**</ept> keyword, and separate the interface names by using commas.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>implements<ept id="p1">**</ept> キーワードの単一の発生後にインターフェイスを一覧表示し、インターフェイス名をコンマで区切ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>All interface methods that a class implements must be explicitly declared as <bpt id="p1">**</bpt>public<ept id="p1">**</ept> by using the <bpt id="p2">**</bpt>public<ept id="p2">**</ept> keyword in the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスで実装するすべてのインターフェイス メソッドはクラスの<bpt id="p1">**</bpt>パブリック<ept id="p1">**</ept>を使用して<bpt id="p2">**</bpt>パブリック<ept id="p2">**</ept>キーワードを明示的に宣言する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>A class that implements an interface must also be declared as <bpt id="p1">**</bpt>public<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターフェイスを実装するクラスも<bpt id="p1">**</bpt>パブリック<ept id="p1">**</ept>として宣言する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>An interface can extend another interface by using the <bpt id="p1">**</bpt>extends<ept id="p1">**</ept> keyword.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターフェイスを<bpt id="p1">**</bpt>拡張<ept id="p1">**</ept>キーワードを使用して別のインターフェイスに拡張できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>However, an interface can't extend more than one interface.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、インターフェイスは、複数のインターフェイスを拡張することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>Interface example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターフェイスの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>In the following example, an <bpt id="p1">**</bpt>Automobile<ept id="p1">**</ept> class implements an <bpt id="p2">**</bpt>IDrivable<ept id="p2">**</ept> interface.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、<bpt id="p1">**</bpt>Automobile<ept id="p1">**</ept> クラスは <bpt id="p2">**</bpt>IDrivable<ept id="p2">**</ept> インターフェイスを実装しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>The <bpt id="p1">**</bpt>is<ept id="p1">**</ept> keyword is supported and lets you test whether a class implements an interface.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>is<ept id="p1">**</ept> キーワードはサポートされており、クラスがインターフェイスを実装するかどうかをテストすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>Class library overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス ライブラリの概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>There are two kinds of classes: <bpt id="p1">*</bpt>application classes<ept id="p1">*</ept> and <bpt id="p2">*</bpt>system classes<ept id="p2">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>アプリケーション クラス<ept id="p1">*</ept>および<bpt id="p2">*</bpt>システム クラス<ept id="p2">*</ept>の、2 種類のクラスがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source><bpt id="p1">**</bpt>Application classes<ept id="p1">**</ept> – These classes are implemented in X++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アプリケーション クラス<ept id="p1">**</ept> - これらのクラスは X++ で実装されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>They are available in the <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept> node in Application Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらはアプリケーション エクスプローラーの <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept> ノードで使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source><bpt id="p1">**</bpt>System classes<ept id="p1">**</ept> – These classes are sometimes known as <bpt id="p2">*</bpt>kernel classes<ept id="p2">*</ept> and are implemented in C++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>システム クラス<ept id="p1">**</ept> – これらのクラスは <bpt id="p2">*</bpt>カーネル クラス<ept id="p2">*</ept> としても知られており、C++ では実装されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>They are listed under the <bpt id="p1">**</bpt>System Documentation<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept> node in Application Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション エクスプローラーの <bpt id="p1">**</bpt>System Documentation<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept> ノードの下に一覧表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>However, the source code for these classes isn't available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、これらのクラスのソース コードは使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>For a list of these classes, see <bpt id="p1">[</bpt>API, class, and table reference<ept id="p1">](api-reference.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのクラスの一覧については、<bpt id="p1">[</bpt>API、クラス、およびテーブルの参照<ept id="p1">](api-reference.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Substituting application classes for system classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラス用のアプリケーション クラスの置き換え</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>You should call the <bpt id="p1">*</bpt>substitute application classes<ept id="p1">*</ept> instead of the system classes that they extend.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張するシステム クラスの代わりに <bpt id="p1">*</bpt>アプリケーション クラスの置き換え<ept id="p1">*</ept> を呼び出す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>In Application Explorer, under <bpt id="p1">**</bpt>System Documentation<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>, several kernel or system classes have names that begin with a lowercase <bpt id="p3">*</bpt>x<ept id="p3">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション エクスプローラーの<bpt id="p1">**</bpt>システムのドキュメント<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>クラス<ept id="p2">**</ept>で、いくつかのカーネルまたはシステム クラスの名前は小文字 <bpt id="p3">*</bpt>x<ept id="p3">*</ept> で始まります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>These classes are known as <bpt id="p1">*</bpt>x-system classes<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのクラスは、<bpt id="p1">*</bpt>x-system classes<ept id="p1">*</ept> とも呼ばれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Examples of these system classes are <bpt id="p1">**</bpt>xApplication<ept id="p1">**</ept> and <bpt id="p2">**</bpt>xVersionControl<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのシステム クラスの例には、<bpt id="p1">**</bpt>xApplication<ept id="p1">**</ept> および <bpt id="p2">**</bpt>xVersionControl<ept id="p2">**</ept> が存在します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Some of these classes are extended by application classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのクラスのいくつかは、アプリケーション クラスによって拡張されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>For example, the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> class extends the <bpt id="p2">**</bpt>xApplication<ept id="p2">**</ept> system class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>アプリケーション<ept id="p1">**</ept>クラスは <bpt id="p2">**</bpt>xApplication<ept id="p2">**</ept> システム クラスを拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>The classes that derive from x-system classes are known as substitute application classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X システム クラスから派生するクラスは、アプリケーション クラスの代用として知られています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>In Application Explorer, under the <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept> node, the icon next to the substitute application classes differs from the standard icon.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション エクスプローラーの<bpt id="p1">**</bpt>クラス<ept id="p1">**</ept> ノードで、代替アプリケーション クラスの横にあるアイコンは標準のアイコンと異なります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>x-system classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x システム クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Some of the substitute application classes are associated with a special global variable that represents an instance of the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代替アプリケーション クラスの一部は、クラスのインスタンスを表す特殊なグローバル変数に関連付けられます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>For example, the <bpt id="p1">**</bpt>appl<ept id="p1">**</ept> variable references a pre-instantiated object from the <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>appl<ept id="p1">**</ept> 変数は、<bpt id="p2">**</bpt>アプリケーション<ept id="p2">**</ept>クラスから事前にインスタンス化されたオブジェクトを参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>The advantage of the <bpt id="p1">**</bpt>appl<ept id="p1">**</ept> variable is that the system maintains the object throughout the scope of your session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>appl<ept id="p1">**</ept> 変数の利点は、セッションの範囲全体にわたってシステムがオブジェクトを保持することです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Your code would be less efficient if it repeatedly used the <bpt id="p1">**</bpt>new Application()<ept id="p1">**</ept> syntax to obtain an instance of the <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>Application<ept id="p2">**</ept> クラスのインスタンスを取得するために <bpt id="p1">**</bpt>new Application()<ept id="p1">**</ept> 構文を繰り返し使用した場合、コードの効率が低下します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>You should not use the <bpt id="p1">**</bpt>xApplication<ept id="p1">**</ept> system class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>xApplication<ept id="p1">**</ept> システム クラスは使用しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Instead, use the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> substitute application class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、<bpt id="p1">**</bpt>アプリケーション<ept id="p1">**</ept>の代替アプリケーション クラスを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>You can reference the static members of the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> class by using the following standard syntax: <bpt id="p2">**</bpt>Application::checkForNewBatchJobs()<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準構文 <bpt id="p2">**</bpt>Application::checkForNewBatchJobs()<ept id="p2">**</ept> を使用することにより、<bpt id="p1">**</bpt>アプリケーション<ept id="p1">**</ept> クラスの静的メンバーを参照することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>However, to reference the instance members of the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> class, you should use that class's <bpt id="p2">**</bpt>appl<ept id="p2">**</ept> variable, if it exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、<bpt id="p1">**</bpt>アプリケーション<ept id="p1">**</ept>クラスのインスタンス メンバーを参照するには、そのクラスの <bpt id="p2">**</bpt>appl<ept id="p2">**</ept> 変数 (存在する場合) を使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>This pattern applies to most of the x-system classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパターンは、ほとんどの x システム クラスに適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>The <bpt id="p1">**</bpt>Session<ept id="p1">**</ept> substitute application class is one exception, because there is no special global variable for <bpt id="p2">**</bpt>Session<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>セッション<ept id="p1">**</ept> 代替アプリケーション クラスは、<bpt id="p2">**</bpt>セッション<ept id="p2">**</ept> の特殊なグローバル変数がないため 1 つの例外です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>The following table lists the x-system classes that have a corresponding substitute application class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、対応するアプリケーション クラスの代用を持つ x システム クラスの一覧です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>The special global variables are also shown for those classes that have one.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特殊なグローバル変数は、それらを持つクラスに対しても表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>Application class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>x-system class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x システム クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Global variable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グローバル変数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Args</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">引数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>xArgs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xArgs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Not applicable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">該当なし</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Application</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">申請</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>xApplication</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xApplication</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source><bpt id="p1">**</bpt>appl<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>appl<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>ClassFactory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ClassFactory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>xClassFactory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xClassFactory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source><bpt id="p1">**</bpt>classFactory<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>classFactory<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Company</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">法人</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>xCompany</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xCompany</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source><bpt id="p1">**</bpt>appl.company<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>appl.company<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Global</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グローバル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>xGlobal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xGlobal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Not applicable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">該当なし</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Info</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">情報</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>xInfo</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xInfo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source><bpt id="p1">**</bpt>Infolog<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>情報ログ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>MenuFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MenuFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>xMenuFunction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xMenuFunction</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Not applicable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">該当なし</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Session</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セッション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>xSession</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xSession</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>Not applicable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">該当なし</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>VersionControl</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VersionControl</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>xVersionControl</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xVersionControl</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source><bpt id="p1">**</bpt>versionControl<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>versionControl<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>Example of x-system classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">x システム クラスの例</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>The following example shows the syntax for using several special variables that reference instances of the substitute application classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、代替アプリケーション クラスのインスタンスを参照するいくつかの特殊な変数を使用するための構文を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Running startup commands</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">起動コマンドの実行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>You use the <bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> class framework to run commands at startup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">起動時にコマンドを実行するには、<bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> クラス フレームワークを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>When Finance and Operations starts, calls are made to the <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> methods on the application-substituted kernel classes <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> (<bpt id="p3">**</bpt>Application.startup<ept id="p3">**</ept>) and <bpt id="p4">**</bpt>Info<ept id="p4">**</ept> (<bpt id="p5">**</bpt>Info.startup<ept id="p5">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の起動時に、アプリケーション代替カーネル クラスである <bpt id="p2">**</bpt>Application<ept id="p2">**</ept> (<bpt id="p3">**</bpt>Application.startup<ept id="p3">**</ept>) および <bpt id="p4">**</bpt>Info<ept id="p4">**</ept> (<bpt id="p5">**</bpt>Info.startup<ept id="p5">**</ept>) の <bpt id="p1">**</bpt>*startup<ept id="p1">**</ept> メソッドへの呼び出しが行われます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>The <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> methods are used for vital system and version-specific calls, and you must never directly modify these methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>startup<ept id="p1">**</ept> メソッドは必須システムおよびバージョン固有の呼び出しで使用されるものであり、直接変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Instead, use the <bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> framework.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、<bpt id="p1">**</bpt>SysStartupCmd<ept id="p1">**</ept> フレームワークを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Serious issues can occur if the SYS layer versions of the <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> methods aren't called.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SYS レイヤ バージョンの <bpt id="p1">**</bpt>startup<ept id="p1">**</ept> メソッドが呼び出されなかった場合、深刻な問題が生じる可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>The following example shows the order that calls are run in when Finance and Operations starts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、Finance and Operations の起動時に呼び出しが実行される順序を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Commands that are available when Finance and Operations starts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations 起動時に使用できるコマンド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>The <bpt id="p1">**</bpt>SysStartupCmd.construct<ept id="p1">**</ept> method lists the commands that are available when Finance and Operations starts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>SysStartupCmd.construct<ept id="p1">**</ept> メソッドは、Finance and Operations が起動したときに使用できるコマンドを一覧表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Here are some of these commands:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのコマンド例を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>AutoRun</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AutoRun</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>AOTImport</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOTImport</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Synchronize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同期</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>The following example shows how to run a new command when Finance and Operations starts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、Finance and Operations の起動時に新しいコマンドを実行する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>First, a class that extends <bpt id="p1">&lt;strong&gt;</bpt>SysStartupCmd<ept id="p1">&lt;/strong&gt;</ept> is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初に、<bpt id="p1">&lt;strong&gt;</bpt>SysStartupCmd<ept id="p1">&lt;/strong&gt;</ept> を拡張するクラスが作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>This new class performs your specific task.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この新しいクラスは特定のタスクを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>You then modify the construct method on <bpt id="p1">&lt;strong&gt;</bpt>SysStartupCmd<ept id="p1">&lt;/strong&gt;</ept> to call your class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、自分のクラスを呼び出すために、<bpt id="p1">&lt;strong&gt;</bpt>SysStartupCmd<ept id="p1">&lt;/strong&gt;</ept> の construct メソッドを変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>In the Finance and Operations Configuration Utility, on the <bpt id="p1">&lt;strong&gt;</bpt>General<ept id="p1">&lt;/strong&gt;</ept> tab, in the <bpt id="p2">&lt;strong&gt;</bpt>Command to run at application startup<ept id="p2">&lt;/strong&gt;</ept> field, you can add commands that are run at startup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations のコンフィギュレーション ユーティリティの<bpt id="p1">&lt;strong&gt;</bpt>一般<ept id="p1">&lt;/strong&gt;</ept>タブにある<bpt id="p2">&lt;strong&gt;</bpt>アプリケーション起動時に実行するコマンド<ept id="p2">&lt;/strong&gt;</ept> フィールドで、起動時に実行するコマンドを追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>Alternatively, you can use the <bpt id="p1">&lt;strong&gt;</bpt>-startupcmd= <bpt id="p2">*</bpt>MyCommand<ept id="p2">&lt;/strong&gt;</ept><ept id="p1">*</ept> command-line parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、<bpt id="p1">&lt;strong&gt;</bpt>-startupcmd= <bpt id="p2">*</bpt>MyCommand<ept id="p2">&lt;/strong&gt;</ept><ept id="p1">*</ept> コマンド ライン パラメーターを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Batch processing classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチ処理クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>You implement classes by using the batch processing system, and by extending the <bpt id="p1">**</bpt>RunBase<ept id="p1">**</ept> and <bpt id="p2">**</bpt>RunBaseBatch<ept id="p2">**</ept> classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスを実装するには、バッチ処理システムを使用し、<bpt id="p1">**</bpt>RunBase<ept id="p1">**</ept> および <bpt id="p2">**</bpt>RunBaseBatch<ept id="p2">**</ept> クラスを拡張します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>To remove the <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> button from the <bpt id="p2">**</bpt>Batch processing<ept id="p2">**</ept> dialog box, you use the <bpt id="p3">**</bpt>Args::parmEnum<ept id="p3">**</ept> method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>バッチ処理<ept id="p2">**</ept>ダイアログ ボックスから<bpt id="p1">**</bpt>繰り返し<ept id="p1">**</ept>ボタンを削除するには、<bpt id="p3">**</bpt>Args::parmEnum<ept id="p3">**</ept> メソッドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>We recommend that you designate a class to run as a server-bound batch method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー バインド バッチ メソッドとして実行するクラスを指定することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>Server-bound batch methods are more secure than batch methods that aren't server-bound for the following reasons:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー バインド バッチ メソッドは、以下の理由のため、サーバー バインドでないバッチ メソッドより安全です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>The method is run by using the permissions of the user who submitted the method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、メソッドを送信したユーザーのアクセス許可を使用して実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>The method can use only specific <bpt id="p1">**</bpt>Info<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> class methods to interact with the client that is processing it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このメソッドは、特定の <bpt id="p1">**</bpt>情報<ept id="p1">**</ept> および <bpt id="p2">**</bpt>グローバル<ept id="p2">**</ept> クラス メソッドのみを使用して、それを処理しているクライアントと対話できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>This restriction limits interaction with the client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この制限により、クライアントとのやり取りが制限されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Enable a class to run as a server-bound batch method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サーバー バインド バッチ メソッドとして実行するクラスを有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Create a class that extends the <bpt id="p1">**</bpt>RunBaseBatch<ept id="p1">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>RunBaseBatch<ept id="p1">**</ept> クラスを拡張するクラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Override the <bpt id="p1">**</bpt>RunBaseBatch.runsImpersonated<ept id="p1">**</ept> method to return a value of <bpt id="p2">**</bpt>true<ept id="p2">**</ept>, as shown in the following example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例に示すように、<bpt id="p1">**</bpt>RunBaseBatch.runsImpersonated<ept id="p1">**</ept> メソッドをオーバーライドし、値 <bpt id="p2">**</bpt>true<ept id="p2">**</ept> を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>Confirm that the class calls only the following <bpt id="p1">**</bpt>Info<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> class methods:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスが次の<bpt id="p1">**</bpt>情報<ept id="p1">**</ept>および<bpt id="p2">**</bpt>グローバル<ept id="p2">**</ept>クラスのメソッドのみを呼び出すことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>add</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Info.copy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Info.copy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Info.cut</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Info.cut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Info.import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Info.import</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>Info.export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Info.export</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Info.line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Info.line</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Info.num</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Info.num</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>Global::error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Global::error</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>Global::info</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Global::info</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>Global::warning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Global::warning</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The <bpt id="p2">**</bpt>Info.line<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Info.num<ept id="p3">**</ept> methods are inherited from the <bpt id="p4">**</bpt>xInfo<ept id="p4">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> <bpt id="p2">**</bpt>Info.line<ept id="p2">**</ept> および <bpt id="p3">**</bpt>Info.num<ept id="p3">**</ept> メソッドは、<bpt id="p4">**</bpt>xInfo<ept id="p4">**</ept> クラスから継承されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>Removing the Recurrence button from the batch processing dialog box</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチ処理ダイアログ ボックスから定期的なアイテムを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>When you implement a class by using the batch processing system, you can remove the <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept> button by calling the <bpt id="p2">**</bpt>Args.parmEnum<ept id="p2">**</ept> method and passing the <bpt id="p3">**</bpt>NoYes::Yes<ept id="p3">**</ept> system enumeration value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バッチ処理システムを使用してクラスを実装するときは、<bpt id="p2">**</bpt>Args.parmEnum<ept id="p2">**</ept> メソッドを呼び出し、<bpt id="p3">**</bpt>NoYes::Yes<ept id="p3">**</ept> システム列挙値を渡して、<bpt id="p1">**</bpt>再実行<ept id="p1">**</ept>ボタンを削除できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>The <bpt id="p1">**</bpt>NoYes<ept id="p1">**</ept> system enumeration determines whether the <bpt id="p2">**</bpt>Recurrence<ept id="p2">**</ept> button is removed from the dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NoYes<ept id="p1">**</ept> システム列挙は、<bpt id="p2">**</bpt>繰り返し<ept id="p2">**</ept> ボタンがダイアログ ボックスから削除されるかどうかを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>The default value is <bpt id="p1">**</bpt>NoYes::No<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定値は <bpt id="p1">**</bpt>NoYes::No<ept id="p1">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>In the following example, the <bpt id="p1">**</bpt>InventTransferMultiShip<ept id="p1">**</ept> class is implemented.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例では、<bpt id="p1">**</bpt>InventTransferMultiShip<ept id="p1">**</ept> クラスが実装されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>The <bpt id="p1">**</bpt>BatchDialog::main<ept id="p1">**</ept> method creates the <bpt id="p2">**</bpt>Batch processing<ept id="p2">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>BatchDialog::main<ept id="p1">**</ept> メソッドは、<bpt id="p2">**</bpt>バッチ処理<ept id="p2">**</ept>ダイアログ ボックスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>Image manipulation classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ操作クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>Two system classes let you to manipulate graphics and icons: <bpt id="p1">**</bpt>Image<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Imagelist<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Image<ept id="p1">**</ept> と <bpt id="p2">**</bpt>Imagelist<ept id="p2">**</ept> の 2 つのシステム クラスにより、グラフィックスとアイコンを操作できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source><bpt id="p1">**</bpt>Image<ept id="p1">**</ept> – This class lets you load, save, and manipulate individual images.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Image<ept id="p1">**</ept> – このクラスでは、個々の画像の読み込み、保存、操作などができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、画面をキャプチャして画像として保存し、画像をトリミングまたは回転させる、または色深度を操作します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Imagelist<ept id="p1">&lt;/strong&gt;</ept> – This class lets you work with a set of images that have common properties, such as the size and transparency color.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Imagelist<ept id="p1">&lt;/strong&gt;</ept> - このクラスを使用すると、サイズや透明色などの一般的なプロパティを持つ一連の画像を操作できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>You can view the image lists that are used in Finance and Operations in the <ph id="ph1">&lt;strong&gt;</ph>ImageListAppl<ph id="ph2">\_</ph><ph id="ph3">\&lt;</ph>/strong&gt;* application classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&lt;strong&gt;</ph>ImageListAppl<ph id="ph2">\_</ph><ph id="ph3">\&lt;</ph>/strong&gt;* アプリケーション クラス の Finance and Operations で使用されるイメージ リストを表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>Query object model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクト モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>The query object model contains classes that are used to define and run a query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクト モデルには、クエリの定義と実行に使用されるクラスが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ オブジェクトは、クエリ データ ソース、返されるフィールド、レコード範囲、子データ ソースとの関係を定義するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的クエリをコードで作成すると、クエリ クラスの可視性が高まります。さらに、これらは、アプリケーション エクスプローラーで静的クエリを作成するときにもシーン裏で使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>The following table describes the classes in the query object model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルでは、クエリ オブジェクト モデルのクラスについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>System class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>QueryRun</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryRun</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>This class runs the query and fetches the data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、クエリを実行し、データをフェッチします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>Query</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>This class holds some properties, and has one or more related data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスはいくつかのプロパティを保持し、1 つ以上の関連するデータ ソースを持ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>It's the top level of the query definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリの定義の最上位です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>QueryBuildDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>This class defines access to a single data source in the query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、クエリ内の単一のデータ ソースへのアクセスを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>If there is more than one data source at the same level in a query, separate SQL statements are produced and are run sequentially.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリに同じレベルの 1 つ以上のデータ ソースある場合、独立した SQL ステートメントが生産され、順番に実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>If one data source is a child of another data source, a join is created between the two data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソースが別のデータ ソースの子である場合は、2 つのデータ ソース間に結合が作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>QueryBuildFieldList</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildFieldList</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>This class defines the fields that are returned from the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、データベースから返されるフィールドを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>By default, the field list is dynamic, and all fields are returned from the data source table, map, or view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、フィールド リストは動的であり、すべてのフィールドはデータ ソース テーブル、マップ、またはビューから戻されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>Each data source has only one <bpt id="p1">**</bpt>QueryBuildFieldList<ept id="p1">**</ept> object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各データ ソースには、<bpt id="p1">**</bpt>QueryBuildFieldList<ept id="p1">**</ept> オブジェクトが 1 つだけあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>This object contains information about all selected fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオブジェクトには、選択したすべてのフィールドに関する情報が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>You can specify aggregate functions, such as <bpt id="p1">**</bpt>SUM<ept id="p1">**</ept>, <bpt id="p2">**</bpt>COUNT<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>AVG<ept id="p3">**</ept>, on the field list object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールド リスト オブジェクトで、<bpt id="p1">**</bpt>SUM<ept id="p1">**</ept>、<bpt id="p2">**</bpt>COUNT<ept id="p2">**</ept>、および <bpt id="p3">**</bpt>AVG<ept id="p3">**</ept> などの、集計関数を指定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>QueryBuildRange</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildRange</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>This class defines a subset of records that is returned, based on a single field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、単一フィールドに基づいて、返されるレコードのサブセットを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>A range is translated into a <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> clause in the query SQL statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">範囲は、クエリ SQL ステートメントの <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> 句に変換されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>If more than one field is used to limit the query (<bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> clause), the data source will contain more than one range.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリを制限するために 1 つ以上のフィールドが使用されている場合 (<bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept>句)、データ ソースには 1 つ以上の範囲が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>QueryBuildDynalink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildDynalink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>This class contains information about a relation (limitation) to an external record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスには、外部レコードとの関係 (制限) に関する情報が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>When the query is run, this information is converted to additional entries in the <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> clause of the query SQL statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クエリを実行すると、この情報は、クエリ SQL ステートメントの <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> 句内で追加のエントリに変換されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>This class can exist only on the parent data source of a query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、クエリの親データ ソースにのみ存在できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>Forms use the function when two data sources are synchronized.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームは、2 つのデータ ソースが同期されるときにこの機能を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>The child data source will then contain one or more DLLs to the parent data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">子データ ソースは、親データ ソース に対する 1 つ以上の DLL を格納します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>The function is used even if the two data sources are put in two different forms but are still synchronized.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この関数は、2 つのデータソースが 2 つの異なる形式になっていて、まだ同期されている場合でも使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>QueryBuildLink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QueryBuildLink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>This class specifies the relation between the two data sources in the join.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、結合に 2 つのデータ ソースの間の関係を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>This class can exist only on a child data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、子データ ソースにのみ存在できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>System classes overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラスの概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>System classes (or kernel classes) are implemented in C++.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラス (またはカーネル クラス) は C++ で実装されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>The source for these classes isn't available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのクラスのソースは使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>A system class can have the following characteristics:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラスは、次の特性を持つことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>Static methods (or class methods)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">静的メソッド (またはクラス メソッド)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>Dynamic methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>Properties – These properties are member functions that are used to set properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ - これらのプロパティは、プロパティを設定するために使用されるメンバー関数です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>An example is <bpt id="p1">**</bpt>LeftMargin<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば <bpt id="p1">**</bpt>LeftMargin<ept id="p1">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>You can't override system class methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">システム クラスのメソッドをオーバーライドすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>It isn't our intention that you will use the system classes to design your application objects from scratch.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初からアプリケーション オブジェクトをデザインするためにシステム クラスを使用することを意図していません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>Instead, use them to extend or modify the default functionality in Application Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、アプリケーション エクスプローラーで既存の機能を拡張または変更するために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>For example, you can dynamically add extra information to an existing report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、既存のレポートに追加情報を動的に追加することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>Alternatively, you can change the options that are available on a page, based on the user's selection on a previous page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、前のページでのユーザーの選択に基づいて、ページ上で使用可能なオプションを変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>Collection classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コレクション クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>The <bpt id="p1">*</bpt>collection classes<ept id="p1">*</ept> let you create lists, sets, structs, maps, and arrays.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>コレクション クラス<ept id="p1">*</ept>を使用すると、リスト、セット、構造体、マップ、および配列を作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>Application object classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション オブジェクト クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>These system classes hold functions that are activated whenever you use Application Explorer to create your application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのシステム クラスは、アプリケーション エクスプローラーを使用してアプリケーションを作成するたびにアクティブ化される関数を保持します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>For example, the system uses the <bpt id="p1">**</bpt>FormDesign<ept id="p1">**</ept> class when you define the layout of your form in the <bpt id="p2">**</bpt>Designs<ept id="p2">**</ept> node in Application Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、システムは、アプリケーション エクスプローラーの<bpt id="p2">**</bpt>設計<ept id="p2">**</ept>ノードでフォームのレイアウトを定義する時、<bpt id="p1">**</bpt>FormDesign<ept id="p1">**</ept> クラスを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>These classes also let you to create and modify application objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのクラスを使用すると、アプリケーション オブジェクトを作成したり変更したりすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Integration classes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">統合クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>The integration with the environment is typically implemented by classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境との統合は、通常、クラスによって実装されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>Here are some examples of the classes in this category:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このカテゴリ内のクラスの例を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source><bpt id="p1">**</bpt>COM<ept id="p1">**</ept> – The call of methods on COM objects.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>COM<ept id="p1">**</ept> - COM オブジェクトのメソッドの呼び出しです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source><bpt id="p1">**</bpt>DLL<ept id="p1">**</ept> – The call of Microsoft Windows DLL functions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DLL<ept id="p1">**</ept> – Microsoft Windows DLL 関数の呼び出し。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source><bpt id="p1">**</bpt>IO<ept id="p1">**</ept> – Read and write external files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>IO<ept id="p1">**</ept> – 外部ファイルの読み取りと書き込みを行います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source><bpt id="p1">**</bpt>ODBCConnection<ept id="p1">**</ept> – An Open Database Connectivity (ODBC) interface to a foreign database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ODBCConnection<ept id="p1">**</ept> – 外部データベースへの Open Database Connectivity (ODBC) インターフェイス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>Event terminology and keywords</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベントの用語およびキーワード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>You can use the event design pattern to make your code more modular and reusable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント設計パターンを使用すると、コードをさらにモジュール化して再使用可能にすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>The term <bpt id="p1">*</bpt>event<ept id="p1">*</ept> is a metaphor that explains how delegates are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>イベント<ept id="p1">*</ept> という用語は、デリゲートの使用方法を説明するメタファです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>When something important occurs during a program run, other modules might have to process the occurrence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラム実行中に何か重要なことが発生したときは、他のモジュールがその発生を処理することが必要な場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>These important occurrences are known as <bpt id="p1">*</bpt>events<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの重要な出来事は<bpt id="p1">*</bpt>イベント<ept id="p1">*</ept>と呼ばれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>When an event occurs, the program tells its notifier for the event that the notifier must send notifications about the event.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベントが発生すると、プログラムは、Notifier がイベントに関する通知を送信する必要があることを、そのイベントの Notifier に指示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>A notification must be sent to all the event handlers that are subscribers of the notifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知は、通知のサブスクライバーであるすべてのイベント ハンドラーに送信する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>When the program tells its notifier to send the notifications, we call that process <bpt id="p1">*</bpt>raising<ept id="p1">*</ept> an event.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プログラムがその通知機能に通知を送信するように指示するとき、そのプロセスをイベントの <bpt id="p1">*</bpt>発生<ept id="p1">*</ept> と呼んでいます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>The following table shows the terms that are used to describe the event metaphor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルは、イベント メタファを説明するために使用される用語を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>Term</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">期間</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>Event</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>An important occurrence in a program module where additional modules must process the occurrence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加モジュールは発生を処理するプログラム モジュールで重要な発生です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>Notifier</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知機能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>The program element that sends information about the event to all the event handlers that are subscribed to the notifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通知機能に登録されているすべてのイベント ハンドラーに、イベントに関する情報を送信するプログラム要素。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>Subscriber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクライバー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>The program functions or methods that are subscribed to an event notifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント通知機能を登録しているプログラム機能またはメソッド。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>Event handler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ハンドラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>The methods that subscribe to an event notifier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント通知を購読するメソッド。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>Only the appropriate kind of methods can be event handlers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適切な種類のメソッドのみ、イベント ハンドラーになることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>Keywords that are used for programming that uses delegates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デリゲートを使用するプログラミングに使用されるキーワード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>The following table shows the keywords that describe the use of delegates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、デリゲートの使用方法を説明するキーワードを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>Keyword or term</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キーワードや用語</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>Code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">区分</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>delegate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デリゲート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>delegate myDelegate(str <ph id="ph1">\_</ph>information) <ph id="ph2">{}</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">delegate myDelegate(str <ph id="ph1">\_</ph>information) <ph id="ph2">{}</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>The code shows what the delegate looks like in the method editor in the Microsoft MorphX client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコードは、Microsoft MorphX クライアントのメソッド エディターでのデリゲートの外観を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Because the return type is always <bpt id="p1">**</bpt>void<ept id="p1">**</ept>, it isn't mentioned in the syntax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">戻り値の型は常に<bpt id="p1">**</bpt>無効<ept id="p1">**</ept>なので、構文には示されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>No code is allowed inside the braces (<ph id="ph1">{}</ph>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">かっこ (<ph id="ph1">{}</ph>) 内にコードは使用できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>eventHandler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eventHandler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod);</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod);</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>Although the syntax of the <bpt id="p1">**</bpt>eventHandler<ept id="p1">**</ept> keyword might give the impression that <bpt id="p2">**</bpt>eventHandler<ept id="p2">**</ept> is an X++ function, it isn't a function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>eventHandler<ept id="p1">**</ept> キーワードの構文は <bpt id="p2">**</bpt>eventHandler<ept id="p2">**</ept> X++ 関数であるという印象を与えますが、それは関数ではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>The <bpt id="p1">**</bpt>eventHandler<ept id="p1">**</ept> keyword tells the compiler that a method is being subscribed to a delegate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>eventHandler<ept id="p1">**</ept> キーワードは、メソッドがデリゲートにサブスクライブされることをコンパイラに伝えます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>Subscribe or add a method to a delegate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デリゲートにメソッドをサブスクライブまたは追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>In the code, the static method <bpt id="p1">**</bpt>OtherClass::aStaticMethod<ept id="p1">**</ept> becomes subscribed to the delegate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コードでは、静的メソッド <bpt id="p1">**</bpt>OtherClass::aStaticMethod<ept id="p1">**</ept> がデリゲートにサブスクライブされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>Call a delegate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デリゲートの呼び出し</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>myClassInstance.myDelegate("Hello");</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">myClassInstance.myDelegate("Hello");</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>This call to the delegate prompts the delegate to call each method that is subscribed to the delegate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デリゲートへのこの呼び出しは、デリゲートにサブスクライブしている各メソッドを呼び出すようにデリゲートに要求します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>The subscribed methods are called in the same order in which they were added to the delegate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクライブされたメソッドは、デリゲートに追加されたのと同じ順序で呼び出されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>One subscribed method must be completed before the delegate calls the next method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つのサブスクライブされたメソッドは、そのデリゲードが次のメソッドを呼び出す前に完了される必要があります。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,48 +1,159 @@
----
-title: Dynamics 365 for Retail の新機能および変更された機能
-description: このページでは、最新リリースの Microsoft Dynamics 365 for Retail の新しい機能について学ぶ役立つリソースを示します。
-author: sericks007
-manager: AnnBe
-ms.date: 10/20/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Application User, IT Pro, Developer
-ms.reviewer: sericks
-ms.search.scope: Core, Operations, Retail
-ms.search.region: Global
-ms.search.industry: retail
-ms.author: jeffbl
-ms.search.validFrom: 2017-07-31
-ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 50ad2f4bdc2709815ebed564c3fd24ac204dec17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572223"
----
-# <a name="whats-new-or-changed-in-dynamics-365-for-retail"></a><span data-ttu-id="b02e2-103">Dynamics 365 for Retail の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="b02e2-103">What's new or changed in Dynamics 365 for Retail</span></span>
-
-[!include [banner](../../includes/banner.md)]
-
-<span data-ttu-id="b02e2-104">このページでは、最新リリースの Microsoft Dynamics 365 for Retail の新しい機能および変更について学ぶ役立つリソースを示します。</span><span class="sxs-lookup"><span data-stu-id="b02e2-104">This page points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail.</span></span>
-
-[!include [release notes](../includes/release-notes.md)]
-
-## <a name="releases-of-dynamics-365-for-retail"></a><span data-ttu-id="b02e2-105">Dynamics 365 for Retail のリリース</span><span class="sxs-lookup"><span data-stu-id="b02e2-105">Releases of Dynamics 365 for Retail</span></span>
-
-| <span data-ttu-id="b02e2-106">リリース</span><span class="sxs-lookup"><span data-stu-id="b02e2-106">Release</span></span> | <span data-ttu-id="b02e2-107">ビルド番号</span><span class="sxs-lookup"><span data-stu-id="b02e2-107">Build number</span></span> | <span data-ttu-id="b02e2-108">在庫状態</span><span class="sxs-lookup"><span data-stu-id="b02e2-108">Availability</span></span> | <span data-ttu-id="b02e2-109">詳細情報</span><span class="sxs-lookup"><span data-stu-id="b02e2-109">Learn more</span></span> |
-|---------|--------------|--------------|------------|
-| <span data-ttu-id="b02e2-110">Dynamics 365 for Finance & Operations - Retail - 7.3.5</span><span class="sxs-lookup"><span data-stu-id="b02e2-110">Dynamics 365 for Finance & Operations - Retail - 7.3.5</span></span> | <span data-ttu-id="b02e2-111">7.3.11971.64930</span><span class="sxs-lookup"><span data-stu-id="b02e2-111">7.3.11971.64930</span></span> | <span data-ttu-id="b02e2-112">2018 年 9 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-112">September 2018</span></span> | <span data-ttu-id="b02e2-113">[KB 4464337 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5、(バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4464337&bugId=244892&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)、[KB 4463127 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5. (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4463127&bugId=244893&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)</span><span class="sxs-lookup"><span data-stu-id="b02e2-113">[KB 4464337 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5, (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4464337&bugId=244892&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450), [KB 4463127 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5. (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4463127&bugId=244893&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)</span></span> |
-| <span data-ttu-id="b02e2-114">Dynamics 365 for Finance & Operations - Retail - 7.3.4</span><span class="sxs-lookup"><span data-stu-id="b02e2-114">Dynamics 365 for Finance & Operations - Retail - 7.3.4</span></span> | <span data-ttu-id="b02e2-115">7.3.11971.64556</span><span class="sxs-lookup"><span data-stu-id="b02e2-115">7.3.11971.64556</span></span> | <span data-ttu-id="b02e2-116">2018 年 8 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-116">August 2018</span></span> | [<span data-ttu-id="b02e2-117">KB 4467783 Microsoft Dynamics 365 for Retail - バージョン 7.3.5 - BugFix パッケージ 2\*</span><span class="sxs-lookup"><span data-stu-id="b02e2-117">KB 4467783 Microsoft Dynamics 365 for Retail - Version 7.3.5 - BugFix Package 2\*</span></span>](https://fix.lcs.dynamics.com/Issue/Details?kb=4467783&bugId=257914&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
-| <span data-ttu-id="b02e2-118">Dynamics 365 for Finance & Operations - Retail - 7.3.4</span><span class="sxs-lookup"><span data-stu-id="b02e2-118">Dynamics 365 for Finance & Operations - Retail - 7.3.4</span></span> | <span data-ttu-id="b02e2-119">7.3.11971.64556</span><span class="sxs-lookup"><span data-stu-id="b02e2-119">7.3.11971.64556</span></span> | <span data-ttu-id="b02e2-120">2018 年 8 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-120">August 2018</span></span> | <span data-ttu-id="b02e2-121">[KB 4456209 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.4、(バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)、[KB 4456210 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.4. (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4456210&bugId=235125&qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)</span><span class="sxs-lookup"><span data-stu-id="b02e2-121">[KB 4456209 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.4, (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559), [KB 4456210 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.4. (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4456210&bugId=235125&qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)</span></span>
-| <span data-ttu-id="b02e2-122">Dynamics 365 for Finance & Operations - Retail - 8.0.4</span><span class="sxs-lookup"><span data-stu-id="b02e2-122">Dynamics 365 for Finance & Operations - Retail - 8.0.4</span></span> | <span data-ttu-id="b02e2-123">8.0.35.15534</span><span class="sxs-lookup"><span data-stu-id="b02e2-123">8.0.35.15534</span></span> | <span data-ttu-id="b02e2-124">2018 年 8 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-124">August 2018</span></span> | <span data-ttu-id="b02e2-125">[KB 4458992 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.4 (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458992&bugId=239612&qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)、[KB 4458993 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.4 (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458993&bugId=239610&qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)</span><span class="sxs-lookup"><span data-stu-id="b02e2-125">[KB 4458992 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.4 (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458992&bugId=239612&qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff), [KB 4458993 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.4 (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458993&bugId=239610&qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)</span></span> |
-| <span data-ttu-id="b02e2-126">Dynamics 365 for Retail - 7.3.4</span><span class="sxs-lookup"><span data-stu-id="b02e2-126">Dynamics 365 for Retail - 7.3.4</span></span> | <span data-ttu-id="b02e2-127">7.3.21971.64124</span><span class="sxs-lookup"><span data-stu-id="b02e2-127">7.3.21971.64124</span></span> | <span data-ttu-id="b02e2-128">2018 年 8 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-128">August 2018</span></span> | [<span data-ttu-id="b02e2-129">KB 4459400 Microsoft Dynamics 365 for Retail - バージョン 7.3.4 + BugFix パッケージ 1\*</span><span class="sxs-lookup"><span data-stu-id="b02e2-129">KB 4459400 Microsoft Dynamics 365 for Retail - Version 7.3.4 + BugFix Package 1\*</span></span>](https://fix.lcs.dynamics.com/Issue/Details?kb=4459400&bugId=240913&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
-| <span data-ttu-id="b02e2-130">Dynamics 365 for Finance & Operations - Retail - 7.3.3</span><span class="sxs-lookup"><span data-stu-id="b02e2-130">Dynamics 365 for Finance & Operations - Retail - 7.3.3</span></span> | <span data-ttu-id="b02e2-131">7.3.11971.64183</span><span class="sxs-lookup"><span data-stu-id="b02e2-131">7.3.11971.64183</span></span> | <span data-ttu-id="b02e2-132">2018 年 7 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-132">July 2018</span></span> | <span data-ttu-id="b02e2-133">[KB 4342754 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.3、(バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342754&bugId=227181&qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)、[KB 4342755 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.3. (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342755&bugId=227182&qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)</span><span class="sxs-lookup"><span data-stu-id="b02e2-133">[KB 4342754 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.3, (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342754&bugId=227181&qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6), [KB 4342755 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.3. (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342755&bugId=227182&qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)</span></span> |
-| <span data-ttu-id="b02e2-134">Dynamics 365 for Finance & Operations - Retail - 7.3.2.5</span><span class="sxs-lookup"><span data-stu-id="b02e2-134">Dynamics 365 for Finance & Operations - Retail - 7.3.2.5</span></span> | <span data-ttu-id="b02e2-135">7.3.11971.63858</span><span class="sxs-lookup"><span data-stu-id="b02e2-135">7.3.11971.63858</span></span> | <span data-ttu-id="b02e2-136">2018 年 6 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-136">June 2018</span></span> | <span data-ttu-id="b02e2-137">[KB 4338874 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.2.5. (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338874&bugId=215661&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)、[KB 4338783 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.2.5. (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338783&bugId=215543&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)</span><span class="sxs-lookup"><span data-stu-id="b02e2-137">[KB 4338874Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2.5. (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338874&bugId=215661&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2), [KB 4338783 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2.5. (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4338783&bugId=215543&qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)</span></span> |
-| <span data-ttu-id="b02e2-138">Dynamics 365 for Finance & Operations - Retail - 8.0.2</span><span class="sxs-lookup"><span data-stu-id="b02e2-138">Dynamics 365 for Finance & Operations - Retail - 8.0.2</span></span> | <span data-ttu-id="b02e2-139">8.0.35.15211</span><span class="sxs-lookup"><span data-stu-id="b02e2-139">8.0.35.15211</span></span> | <span data-ttu-id="b02e2-140">2018 年 6 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-140">June 2018</span></span> | <span data-ttu-id="b02e2-141">[KB 4340414 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.2 (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&bugId=219341&qc=e2713468c8e09c07d63f960acde805dd89f05409b2f44f8d47ba8b4d8d24491b)、[KB 4340413 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.2 (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&bugId=219344&qc=977f9cae5b13b9ed618351108bfb5f02e8d0366a28ed0d99a472d9c9941560a3)</span><span class="sxs-lookup"><span data-stu-id="b02e2-141">[KB 4340414 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.2 (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&bugId=219341&qc=e2713468c8e09c07d63f960acde805dd89f05409b2f44f8d47ba8b4d8d24491b), [KB 4340413 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.2 (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&bugId=219344&qc=977f9cae5b13b9ed618351108bfb5f02e8d0366a28ed0d99a472d9c9941560a3)</span></span> |
-| <span data-ttu-id="b02e2-142">Dynamics 365 for Retail - 7.3.2.5</span><span class="sxs-lookup"><span data-stu-id="b02e2-142">Dynamics 365 for Retail - 7.3.2.5</span></span> | <span data-ttu-id="b02e2-143">7.3.21971.64091</span><span class="sxs-lookup"><span data-stu-id="b02e2-143">7.3.21971.64091</span></span> | <span data-ttu-id="b02e2-144">2018 年 6 月</span><span class="sxs-lookup"><span data-stu-id="b02e2-144">June 2018</span></span> | [<span data-ttu-id="b02e2-145">KB 4342134 Microsoft Dynamics 365 for Retail - バージョン 7.3.2.5 - BugFix パッケージ 1\*</span><span class="sxs-lookup"><span data-stu-id="b02e2-145">KB 4342134Microsoft Dynamics 365 for Retail - Version 7.3.2.5 - BugFix Package 1\*</span></span>](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
-
-<span data-ttu-id="b02e2-146">\* リンクは、サポート技術情報 (KB) の記事を指します。</span><span class="sxs-lookup"><span data-stu-id="b02e2-146">\* The link points to a Knowledge Base (KB) article.</span></span> <span data-ttu-id="b02e2-147">KB の記事を表示するには、Lifecycle Services (LCS) にログインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b02e2-147">You must log in to Lifecycle Services (LCS) to view the KB article.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="whats-new.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>whats-new.109c54.2f6d3d466b7e8a51cb997a7fc63fc61c804f63e6.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>2f6d3d466b7e8a51cb997a7fc63fc61c804f63e6</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>bbc9aa0d6b94a942e1f4d5b038601509dcc87937</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\get-started\whats-new.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>What's new or changed and Dynamics 365 for Retail</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">新機能と変更点および Dynamics 365 for Retail</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This page points you to resources that can help you learn about the new features in the latest releases of Microsoft Dynamics 365 for Retail.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">このページでは、最新リリースの Microsoft Dynamics 365 for Retail の新しい機能について学ぶ役立つリソースを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>What's new and changed in Dynamics 365 for Retail</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Dynamics 365 for Retail の新機能および変更された機能</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This page points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">このページでは、最新リリースの Microsoft Dynamics 365 for Retail の新しい機能および変更について学ぶ役立つリソースを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Releases of Dynamics 365 for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail のリリース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Release</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リリース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Build number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド番号</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Availability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">在庫状態</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Learn more</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細情報</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 7.3.5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 7.3.5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>7.3.11971.64930</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.11971.64930</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>September 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 9 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>KB 4464337 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5, (Binary part)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4464337&amp;bugId=244892&amp;qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)</ept>, <bpt id="p2">[</bpt>KB 4463127 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5. (X++ part)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4463127&amp;bugId=244893&amp;qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4464337 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5、(バイナリ パーツ)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4464337&amp;bugId=244892&amp;qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)</ept>、<bpt id="p2">[</bpt>KB 4463127 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5. (X++ パーツ)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4463127&amp;bugId=244893&amp;qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 7.3.4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 7.3.4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>7.3.11971.64556</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.11971.64556</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>August 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 8 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>KB 4467783 Microsoft Dynamics 365 for Retail - Version 7.3.5 - BugFix Package 2<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4467783&amp;bugId=257914&amp;qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4467783 Microsoft Dynamics 365 for Retail - バージョン 7.3.5 - BugFix パッケージ 2<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4467783&amp;bugId=257914&amp;qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 7.3.4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 7.3.4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>7.3.11971.64556</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.11971.64556</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>August 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 8 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>KB 4456209 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.4, (Binary part)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&amp;bugId=235124&amp;qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)</ept>, <bpt id="p2">[</bpt>KB 4456210 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.4. (X++ part)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4456210&amp;bugId=235125&amp;qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4456209 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.4、(バイナリ パーツ)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&amp;bugId=235124&amp;qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)</ept>、<bpt id="p2">[</bpt>KB 4456210 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.4. (X++ パーツ)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4456210&amp;bugId=235125&amp;qc=265c05d9f50ea023cf31547ca91e16bb5dffd5adfc819b3232abef9c5419a559)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 8.0.4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 8.0.4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>8.0.35.15534</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8.0.35.15534</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>August 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 8 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">[</bpt>KB 4458992 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.4 (Binary part)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4458992&amp;bugId=239612&amp;qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)</ept>, <bpt id="p2">[</bpt>KB 4458993 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.4 (X++ part)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4458993&amp;bugId=239610&amp;qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4458992 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.4 (バイナリ パーツ)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4458992&amp;bugId=239612&amp;qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)</ept>、<bpt id="p2">[</bpt>KB 4458993 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.4 (X++ パーツ)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4458993&amp;bugId=239610&amp;qc=5c131e4cc5a91c0381e923ee0c49791fe71ed37f506c00367caf3a01183125ff)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Dynamics 365 for Retail - 7.3.4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail - 7.3.4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>7.3.21971.64124</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.21971.64124</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>August 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 8 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">[</bpt>KB 4459400 Microsoft Dynamics 365 for Retail - Version 7.3.4 + BugFix Package 1<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4459400&amp;bugId=240913&amp;qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4459400 Microsoft Dynamics 365 for Retail - バージョン 7.3.4 + BugFix パッケージ 1<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4459400&amp;bugId=240913&amp;qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 7.3.3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 7.3.3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>7.3.11971.64183</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.11971.64183</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>July 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 7 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">[</bpt>KB 4342754 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.3, (Binary part)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4342754&amp;bugId=227181&amp;qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)</ept>, <bpt id="p2">[</bpt>KB 4342755 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.3. (X++ part)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4342755&amp;bugId=227182&amp;qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4342754 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.3、(バイナリ パーツ)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4342754&amp;bugId=227181&amp;qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)</ept>、<bpt id="p2">[</bpt>KB 4342755 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.3. (X++ パーツ)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4342755&amp;bugId=227182&amp;qc=51e2d61b1c2a29e4f51fed91506f70ddc974fd26842745c6aa7ae0599bd3b6e6)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 7.3.2.5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 7.3.2.5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>7.3.11971.63858</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.11971.63858</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>June 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 6 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">[</bpt>KB 4338874Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2.5. (Binary part)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4338874&amp;bugId=215661&amp;qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)</ept>, <bpt id="p2">[</bpt>KB 4338783 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.2.5. (X++ part)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4338783&amp;bugId=215543&amp;qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4338874 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.2.5. (バイナリ パーツ)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4338874&amp;bugId=215661&amp;qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)</ept>、<bpt id="p2">[</bpt>KB 4338783 Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.2.5. (X++ パーツ)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4338783&amp;bugId=215543&amp;qc=3be6aa965366d67b6a50d8884709fae621ca40fe778f2d0d7482ea4b6f4ed8a2)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Dynamics 365 for Finance &amp; Operations - Retail - 8.0.2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance &amp; Operations - Retail - 8.0.2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>8.0.35.15211</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8.0.35.15211</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>June 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 6 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">[</bpt>KB 4340414 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.2 (Binary part)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&amp;bugId=219341&amp;qc=e2713468c8e09c07d63f960acde805dd89f05409b2f44f8d47ba8b4d8d24491b)</ept>, <bpt id="p2">[</bpt>KB 4340413 Microsoft Dynamics 365 for Finance and Operations - Version 8.0.2 (X++ part)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&amp;bugId=219344&amp;qc=977f9cae5b13b9ed618351108bfb5f02e8d0366a28ed0d99a472d9c9941560a3)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4340414 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.2 (バイナリ パーツ)<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&amp;bugId=219341&amp;qc=e2713468c8e09c07d63f960acde805dd89f05409b2f44f8d47ba8b4d8d24491b)</ept>、<bpt id="p2">[</bpt>KB 4340413 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.2 (X++ パーツ)<ph id="ph2">\*</ph><ept id="p2">](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&amp;bugId=219344&amp;qc=977f9cae5b13b9ed618351108bfb5f02e8d0366a28ed0d99a472d9c9941560a3)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Dynamics 365 for Retail - 7.3.2.5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail - 7.3.2.5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>7.3.21971.64091</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7.3.21971.64091</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>June 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2018 年 6 月</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">[</bpt>KB 4342134Microsoft Dynamics 365 for Retail - Version 7.3.2.5 - BugFix Package 1<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&amp;bugId=225730&amp;qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>KB 4342134 Microsoft Dynamics 365 for Retail - バージョン 7.3.2.5 - BugFix パッケージ 1<ph id="ph1">\*</ph><ept id="p1">](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&amp;bugId=225730&amp;qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><ph id="ph1">\*</ph> The link points to a Knowledge Base (KB) article.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph> リンクは、サポート技術情報 (KB) の記事を指します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>You must log in to Lifecycle Services (LCS) to view the KB article.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KB の記事を表示するには、Lifecycle Services (LCS) にログインする必要があります。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

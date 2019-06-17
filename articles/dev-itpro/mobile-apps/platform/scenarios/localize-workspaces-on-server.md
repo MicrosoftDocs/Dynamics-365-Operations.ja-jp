@@ -1,84 +1,156 @@
----
-title: モバイル ワークスペースのローカライズ
-description: このトピックでは、ワークスペース クラスを使用して、ワークスペースにローカライゼーション サポートを提供する方法について説明します。
-author: makhabaz
-manager: AnnBe
-ms.date: 07/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 255544
-ms.assetid: ''
-ms.search.region: Global
-ms.author: makhabaz
-ms.search.validFrom: 2017-07-20
-ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 5c8ca3a51587190bf05323f5efb9a01ad92c8ded
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537409"
----
-# <a name="localize-mobile-workspaces"></a><span data-ttu-id="1e02f-103">モバイル ワークスペースのローカライズ</span><span class="sxs-lookup"><span data-stu-id="1e02f-103">Localize mobile workspaces</span></span>
-
-[!include [banner](../../../includes/banner.md)]
-
-<span data-ttu-id="1e02f-104">いくつかの方法でワークスペース クラスを使用すると、ワークスペースにローカライゼーション サポートを提供することができます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-104">You can use workspace classes in several ways to provide localization support to workspaces.</span></span>
-
-## <a name="use-config-objects-to-pass-localized-labels"></a><span data-ttu-id="1e02f-105">Config オブジェクトを使用して、ローカライズされたラベルを渡す</span><span class="sxs-lookup"><span data-stu-id="1e02f-105">Use config objects to pass localized labels</span></span>
-<span data-ttu-id="1e02f-106">コンフィギュレーション オブジェクトは、モバイル アプリケーションから要求されたときに、ワークスペース メタデータに追加できます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-106">A config object can be added to the workspace metadata when it's requested by the mobile app.</span></span> <span data-ttu-id="1e02f-107">後で、config オブジェクトは、ローカライズ サポートを提供するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-107">Later, the config object can be used to provide localization support.</span></span> 
-
-<span data-ttu-id="1e02f-108">たとえば、次のワークスペースは、ビジネス ロジックを通して追加された **pageLink** コントロールの、ローカライズされたラベルを必要とします。</span><span class="sxs-lookup"><span data-stu-id="1e02f-108">For example, the following workspace requires localized labels for the **pageLink** control that you added via the business logic.</span></span>
-
- ![レンタル リンクのテキストがローカライズされていないお客様の詳細ワークスペース](media/workspace-api/ConfigObjectsPage.png)
-
-<span data-ttu-id="1e02f-110">アプリケーションのビジネス ロジックには、次の図に示すように、**addLink** メソッドの呼び出しが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1e02f-110">The business logic for the app contains a call to the **addLink** method, as shown in the following illustration.</span></span> <span data-ttu-id="1e02f-111">この **addLink** メソッドは、現在のお客様の **レンタル** ページへリンクを追加します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-111">This **addLink** method adds a link to the **Rentals** page for the current customer.</span></span> <span data-ttu-id="1e02f-112">この場合、リンクのラベルは**レンタル**です。</span><span class="sxs-lookup"><span data-stu-id="1e02f-112">In this case, the label for the link is **Rentals**.</span></span> <span data-ttu-id="1e02f-113">ただし、リンクのローカライズされたラベルがないため、リンクは常に**レンタル**として表示されます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-113">However, because there isn't a localized label for the link, the link always appears as **Rentals**.</span></span>
-
-![metadataService.addLink への呼び出し](media/workspace-api/ConfigObjectsBusinessLogicOriginal.png)
-
-<span data-ttu-id="1e02f-115">構成オブジェクトを使用してローカライズされたラベルを提供するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-115">To use a config object to provide localized labels, follow these steps.</span></span>
-
-1. <span data-ttu-id="1e02f-116">ラベルのフィールドを含む config クラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-116">Create a config class that contains the fields for the labels.</span></span> <span data-ttu-id="1e02f-117">1 つのフィールド、**rentalLinkLabel** が、**pageLink** コントロールのラベルを含むクラスに追加されます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-117">One field, **rentalLinkLabel**, is added to the class that will contain the label for the **pageLink** control.</span></span> <span data-ttu-id="1e02f-118">コンフィギュレーション クラスは、データ契約クラスでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="1e02f-118">The config class must be a data contract class.</span></span>
-
-    ![クラス コード コンフィギュレーション](media/workspace-api/ConfigClass.png)
-
-2. <span data-ttu-id="1e02f-120">コンフィギュレーション クラスは、ワークスペースのワークスペース クラスで使用されます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-120">The config class is used by a workspace class for the workspace.</span></span> <span data-ttu-id="1e02f-121">ワークスペース クラスには、ワークスペースの **appId** 値が必要です。</span><span class="sxs-lookup"><span data-stu-id="1e02f-121">The workspace class requires the **appId** value of the workspace.</span></span> <span data-ttu-id="1e02f-122">次の図に示すように、アプリ デザイナーでアプリの ID を検索することができます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-122">You can find the app ID in the App designer, as shown in the following illustration.</span></span>
-
-    ![ワークスペース概要のアプリ ID](media/workspace-api/ConfigWorkspaceSummary.png)
-
-    <span data-ttu-id="1e02f-124">次の図は、**appId** 値が属性に設定されているときのワークスペース クラスの外観を示しています。</span><span class="sxs-lookup"><span data-stu-id="1e02f-124">The following illustration shows what the workspace class looks like when the **appId** value is set on the attribute.</span></span> <span data-ttu-id="1e02f-125">このクラスには、ラベルの値を含む設定オブジェクトを設定するメソッド、**addConfig** も含まれています。</span><span class="sxs-lookup"><span data-stu-id="1e02f-125">The class also contains a method, **addConfig**, that sets a config object that contains the value for the label.</span></span>
-
-    ![ワークスペース クラス](media/workspace-api/ConfigWorkspace.png)
-
-    <span data-ttu-id="1e02f-127">次の図は、モバイル アプリの **appInit** コールの config オブジェクトを示しています。</span><span class="sxs-lookup"><span data-stu-id="1e02f-127">The following illustration shows the config object in the **appInit** call in the mobile app.</span></span>
-
-    ![モバイル アプリのコンフィギュレーション オブジェクト](media/workspace-api/ConfigClientSide.png)
-
-3. <span data-ttu-id="1e02f-129">これで、コンフィギュレーション オブジェクトを使用し、ハードコーディングされたラベルの代わりに **addLink** メソッドに渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-129">The config object can now be used and passed to the **addLink** method instead of the hard-coded label.</span></span>
-
-    ![config オブジェクトの呼び出しによる metadataService.addLink](media/workspace-api/ConfigObjectsBusinessLogicFinal.png)
-
-## <a name="use-a-workspace-class-to-update-the-workspace-title-and-description"></a><span data-ttu-id="1e02f-131">ワークスペース クラスを使用して、ワークスペースのタイトルと説明を更新する</span><span class="sxs-lookup"><span data-stu-id="1e02f-131">Use a workspace class to update the workspace title and description</span></span>
-<span data-ttu-id="1e02f-132">ワークスペース クラスは、ワークスペースのタイトルと説明のローカライズされた文字列を提供するために使用することができます。</span><span class="sxs-lookup"><span data-stu-id="1e02f-132">A workspace class can be used to provide localized strings for the workspace title and description.</span></span> <span data-ttu-id="1e02f-133">タイトルと説明をローカライズしていない場合、それらを実装した言語がフィールドの言語になります。</span><span class="sxs-lookup"><span data-stu-id="1e02f-133">If you don't localize the title and description, the fields will be in the language that you implemented them in.</span></span> <span data-ttu-id="1e02f-134">この例では、**MyWorkspace** がタイトルで、**サンプル ワークスペース**が説明となっているワークスペースをローカライズします。</span><span class="sxs-lookup"><span data-stu-id="1e02f-134">In this example, we will localize a workspace where **MyWorkspace** is the title and **A sample workspace** is the description.</span></span>
-
-![ワークスペースのリスト](media/workspace-api/LocalizeWorkspaceTitle.png) 
-
-![選択されたワークスペース](media/workspace-api/LocalizeWorkspaceOriginal.png)
-
-1. <span data-ttu-id="1e02f-137">ワークスペースのワークスペース クラスを持っていない場合、ワークスペースのクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-137">If you don't have a workspace class for your workspace, create a workspace class.</span></span>
-2. <span data-ttu-id="1e02f-138">**getWorkspaceMetadata** メソッドをオーバーライドし、ワークスペース メタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-138">Override the **getWorkspaceMetadata** method to get the workspace metadata.</span></span> <span data-ttu-id="1e02f-139">ワークスペースのタイトルおよび説明フィールドのラベルにするワークスペース メタデータが必要です。</span><span class="sxs-lookup"><span data-stu-id="1e02f-139">You must have the workspace metadata to provide labels for the workspace title and description fields.</span></span>
-3. <span data-ttu-id="1e02f-140">ワークスペースのタイトルと説明をラベルから設定するには、**workspaceTitle** および **workspaceDescription** プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-140">Use the **workspaceTitle** and **workspaceDescription** properties to set the workspace title and description from a label.</span></span> <span data-ttu-id="1e02f-141">次の図では、プレースホルダーが **workspaceTitle** および **workspaceDescription** プロパティに割り当てられています。</span><span class="sxs-lookup"><span data-stu-id="1e02f-141">In the following illustration, placeholders are assigned to the **workspaceTitle** and **workspaceDescription** properties.</span></span>
-
-    ![ワークスペース クラスのタイトルと説明を提供](media/workspace-api/LocalizeWorkspaceClass.png)
-
-4. <span data-ttu-id="1e02f-143">ワークスペース クラスをビルドします。</span><span class="sxs-lookup"><span data-stu-id="1e02f-143">Build the workspace class.</span></span>
-5. <span data-ttu-id="1e02f-144">モバイル クライアントのアプリ リストを更新します。</span><span class="sxs-lookup"><span data-stu-id="1e02f-144">Update the app list on the mobile client.</span></span>
-
-<span data-ttu-id="1e02f-145">次の図は、英語とデンマーク語を使用する電話機のタイトルと説明を示しています。</span><span class="sxs-lookup"><span data-stu-id="1e02f-145">The following illustration shows the title and description on a phone that uses English and Danish.</span></span>
-
-![最終ワークスペース](media/workspace-api/LocalizeWorkspaceFinal.png)
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="localize-workspaces-on-server.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>localize-workspaces-on-server.b807c1.ce0cd0570772b713a25fdfe5cfca430f82a5d7a1.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>ce0cd0570772b713a25fdfe5cfca430f82a5d7a1</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\scenarios\localize-workspaces-on-server.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Localize mobile workspaces</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル ワークスペースのローカライズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes how you can use workspace classes to provide localization support to workspaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、ワークスペース クラスを使用して、ワークスペースにローカライゼーション サポートを提供する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Localize mobile workspaces</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル ワークスペースのローカライズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>You can use workspace classes in several ways to provide localization support to workspaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いくつかの方法でワークスペース クラスを使用すると、ワークスペースにローカライゼーション サポートを提供することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Use config objects to pass localized labels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Config オブジェクトを使用して、ローカライズされたラベルを渡す</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>A config object can be added to the workspace metadata when it's requested by the mobile app.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション オブジェクトは、モバイル アプリケーションから要求されたときに、ワークスペース メタデータに追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Later, the config object can be used to provide localization support.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">後で、config オブジェクトは、ローカライズ サポートを提供するために使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>For example, the following workspace requires localized labels for the <bpt id="p1">**</bpt>pageLink<ept id="p1">**</ept> control that you added via the business logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のワークスペースは、ビジネス ロジックを通して追加された <bpt id="p1">**</bpt>pageLink<ept id="p1">**</ept> コントロールの、ローカライズされたラベルを必要とします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Customer details workspace where the Rentals link text isn't localized</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レンタル リンクのテキストがローカライズされていないお客様の詳細ワークスペース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The business logic for the app contains a call to the <bpt id="p1">**</bpt>addLink<ept id="p1">**</ept> method, as shown in the following illustration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションのビジネス ロジックには、次の図に示すように、<bpt id="p1">**</bpt>addLink<ept id="p1">**</ept> メソッドの呼び出しが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>This <bpt id="p1">**</bpt>addLink<ept id="p1">**</ept> method adds a link to the <bpt id="p2">**</bpt>Rentals<ept id="p2">**</ept> page for the current customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この <bpt id="p1">**</bpt>addLink<ept id="p1">**</ept> メソッドは、現在のお客様の <bpt id="p2">**</bpt>レンタル<ept id="p2">**</ept> ページへリンクを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>In this case, the label for the link is <bpt id="p1">**</bpt>Rentals<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、リンクのラベルは<bpt id="p1">**</bpt>レンタル<ept id="p1">**</ept>です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>However, because there isn't a localized label for the link, the link always appears as <bpt id="p1">**</bpt>Rentals<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、リンクのローカライズされたラベルがないため、リンクは常に<bpt id="p1">**</bpt>レンタル<ept id="p1">**</ept>として表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Call to metadataService.addLink</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">metadataService.addLink への呼び出し</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>To use a config object to provide localized labels, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構成オブジェクトを使用してローカライズされたラベルを提供するには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Create a config class that contains the fields for the labels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルのフィールドを含む config クラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>One field, <bpt id="p1">**</bpt>rentalLinkLabel<ept id="p1">**</ept>, is added to the class that will contain the label for the <bpt id="p2">**</bpt>pageLink<ept id="p2">**</ept> control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つのフィールド、<bpt id="p1">**</bpt>rentalLinkLabel<ept id="p1">**</ept> が、<bpt id="p2">**</bpt>pageLink<ept id="p2">**</ept> コントロールのラベルを含むクラスに追加されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The config class must be a data contract class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション クラスは、データ契約クラスでなければなりません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Config class code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラス コード コンフィギュレーション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>The config class is used by a workspace class for the workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション クラスは、ワークスペースのワークスペース クラスで使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The workspace class requires the <bpt id="p1">**</bpt>appId<ept id="p1">**</ept> value of the workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース クラスには、ワークスペースの <bpt id="p1">**</bpt>appId<ept id="p1">**</ept> 値が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>You can find the app ID in the App designer, as shown in the following illustration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図に示すように、アプリ デザイナーでアプリの ID を検索することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>App ID in the workspace summary</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース概要のアプリ ID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The following illustration shows what the workspace class looks like when the <bpt id="p1">**</bpt>appId<ept id="p1">**</ept> value is set on the attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、<bpt id="p1">**</bpt>appId<ept id="p1">**</ept> 値が属性に設定されているときのワークスペース クラスの外観を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>The class also contains a method, <bpt id="p1">**</bpt>addConfig<ept id="p1">**</ept>, that sets a config object that contains the value for the label.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスには、ラベルの値を含む設定オブジェクトを設定するメソッド、<bpt id="p1">**</bpt>addConfig<ept id="p1">**</ept> も含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Workspace class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース クラス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>The following illustration shows the config object in the <bpt id="p1">**</bpt>appInit<ept id="p1">**</ept> call in the mobile app.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、モバイル アプリの <bpt id="p1">**</bpt>appInit<ept id="p1">**</ept> コールの config オブジェクトを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Config object in the mobile app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル アプリのコンフィギュレーション オブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>The config object can now be used and passed to the <bpt id="p1">**</bpt>addLink<ept id="p1">**</ept> method instead of the hard-coded label.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これで、コンフィギュレーション オブジェクトを使用し、ハードコーディングされたラベルの代わりに <bpt id="p1">**</bpt>addLink<ept id="p1">**</ept> メソッドに渡すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>metadataService.addLink with a call to the config object</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">config オブジェクトの呼び出しによる metadataService.addLink</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Use a workspace class to update the workspace title and description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース クラスを使用して、ワークスペースのタイトルと説明を更新する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>A workspace class can be used to provide localized strings for the workspace title and description.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース クラスは、ワークスペースのタイトルと説明のローカライズされた文字列を提供するために使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>If you don't localize the title and description, the fields will be in the language that you implemented them in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイトルと説明をローカライズしていない場合、それらを実装した言語がフィールドの言語になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>In this example, we will localize a workspace where <bpt id="p1">**</bpt>MyWorkspace<ept id="p1">**</ept> is the title and <bpt id="p2">**</bpt>A sample workspace<ept id="p2">**</ept> is the description.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、<bpt id="p1">**</bpt>MyWorkspace<ept id="p1">**</ept> がタイトルで、<bpt id="p2">**</bpt>サンプル ワークスペース<ept id="p2">**</ept>が説明となっているワークスペースをローカライズします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>List of workspaces</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースのリスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Selected workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択されたワークスペース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>If you don't have a workspace class for your workspace, create a workspace class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースのワークスペース クラスを持っていない場合、ワークスペースのクラスを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Override the <bpt id="p1">**</bpt>getWorkspaceMetadata<ept id="p1">**</ept> method to get the workspace metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>getWorkspaceMetadata<ept id="p1">**</ept> メソッドをオーバーライドし、ワークスペース メタデータを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>You must have the workspace metadata to provide labels for the workspace title and description fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースのタイトルおよび説明フィールドのラベルにするワークスペース メタデータが必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Use the <bpt id="p1">**</bpt>workspaceTitle<ept id="p1">**</ept> and <bpt id="p2">**</bpt>workspaceDescription<ept id="p2">**</ept> properties to set the workspace title and description from a label.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペースのタイトルと説明をラベルから設定するには、<bpt id="p1">**</bpt>workspaceTitle<ept id="p1">**</ept> および <bpt id="p2">**</bpt>workspaceDescription<ept id="p2">**</ept> プロパティを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>In the following illustration, placeholders are assigned to the <bpt id="p1">**</bpt>workspaceTitle<ept id="p1">**</ept> and <bpt id="p2">**</bpt>workspaceDescription<ept id="p2">**</ept> properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図では、プレースホルダーが <bpt id="p1">**</bpt>workspaceTitle<ept id="p1">**</ept> および <bpt id="p2">**</bpt>workspaceDescription<ept id="p2">**</ept> プロパティに割り当てられています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Providing a title and a description in the workspace class</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース クラスのタイトルと説明を提供</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Build the workspace class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ワークスペース クラスをビルドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Update the app list on the mobile client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モバイル クライアントのアプリ リストを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>The following illustration shows the title and description on a phone that uses English and Danish.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、英語とデンマーク語を使用する電話機のタイトルと説明を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Final workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最終ワークスペース</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,424 +1,1302 @@
----
-title: 拡張可能コントロールの構築
-description: このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
-author: TLeforMicrosoft
-manager: AnnBe
-ms.date: 11/09/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 24291
-ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
-ms.search.region: Global
-ms.author: tlefor
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6596baba347bf384532d9f948be8e4995e88a9ed
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537438"
----
-# <a name="build-extensible-controls"></a><span data-ttu-id="d83cc-103">拡張可能なコントロールの構築</span><span class="sxs-lookup"><span data-stu-id="d83cc-103">Build extensible controls</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="d83cc-104">このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-104">This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.</span></span>
-
-<a name="prerequisites"></a><span data-ttu-id="d83cc-105">必要条件</span><span class="sxs-lookup"><span data-stu-id="d83cc-105">Prerequisites</span></span>
--------------
-
-<span data-ttu-id="d83cc-106">このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-106">For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance.</span></span> <span data-ttu-id="d83cc-107">詳細については、「[開発インスタンスへのアクセス](../dev-tools/access-instances.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d83cc-107">For more information, see [Access development instances](../dev-tools/access-instances.md).</span></span>
-
-## <a name="overview"></a><span data-ttu-id="d83cc-108">概要</span><span class="sxs-lookup"><span data-stu-id="d83cc-108">Overview</span></span>
-<span data-ttu-id="d83cc-109">コントロール拡張フレームワークを使用すると、新しいアプリケーション コントロールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-109">The Control Extensibility Framework lets you create new application controls.</span></span> <span data-ttu-id="d83cc-110">Microsoft では、グラフ コントロールなど、プログラムで既に記述されている制御を構築するために使用するのと同じツールを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-110">You can use the same tools that Microsoft uses to build controls that are already present in the program, such as the chart control.</span></span> <span data-ttu-id="d83cc-111">拡張可能なコントロールを開発するプロセスには、次の 3 つの重要なアーティファクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-111">Three important artifacts are involved in the process of developing an extensible control:</span></span>
-
--   <span data-ttu-id="d83cc-112">**X++ ビルド クラス** – ビルド クラスにより開発者は、コントロールの Microsoft Visual Studio のプロパティ シートに表示されるプロパティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-112">**The X++ build class** – The build class lets a developer define the properties that appear in the Microsoft Visual Studio property sheet for the control.</span></span> <span data-ttu-id="d83cc-113">開発者は、コントロールがフォーム デザイナーで使用されているときに、コントロールのモデリング動作を定義することもできます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-113">The developer can also define the modeling behavior for the control when it's used in the form designer.</span></span> <span data-ttu-id="d83cc-114">ビルド クラスは、プロパティ シートのプロパティの値に基づいてコントロールの状態を初期化するために、ランタイム クラスによって消費されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-114">The build class is consumed by the run-time class to initialize the state of the control based on the value of properties in the property sheet.</span></span>
--   <span data-ttu-id="d83cc-115">**X++ ランタイム クラス** – ランタイム クラスにより開発者は、拡張可能なコントロールのサーバー側のビジネス ロジックとデータへのアクセスのパターンを定義できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-115">**The X++ run-time class** – The run-time class lets a developer define server-side business logic and data access patterns for an extensible control.</span></span> <span data-ttu-id="d83cc-116">拡張可能なコントロールのビルドに特有の概念には、X++ クラスで定義される*プロパティ*と*コマンド*の 2 つがあります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-116">Two concepts that are specific to building extensible controls are the *properties* and *commands* that the X++ class defines.</span></span> <span data-ttu-id="d83cc-117">定義されている各プロパティとコマンドは、実行時に JavaScript ビュー モデルにシリアル化され、拡張可能なコントロール (HTML および JavaScript) のクライアント部分によって消費される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-117">Each property and command that is defined is serialized into a JavaScript view model at run time, and can be consumed by the client parts of the extensible control (the HTML and JavaScript).</span></span> <span data-ttu-id="d83cc-118">これらのプロパティとコマンドは、コントロールのサーバー側とクライアント側の間で情報を移動するための主要なチャネルです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-118">These properties and commands are the main channels for moving information between the server-side and client-side parts of the control.</span></span>
--   <span data-ttu-id="d83cc-119">**コントロール HTML および JavaScript** – 各コントロールは、視覚化およびクライアント側の相互作用パターンの制御を定義するために HTML、JavaScript および CSS ファイルを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-119">**The control HTML and JavaScript** – Each control uses HTML, JavaScript, and CSS files to define control visualization and client-side interaction patterns.</span></span> <span data-ttu-id="d83cc-120">jQuery と共に Microsoft Dynamics HTML バインディング構文を使用することで、開発者は強力なデータ駆動型 UI を設計するために X++ で定義されているプロパティとコマンドを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-120">By using the Microsoft Dynamics HTML binding syntax together with jQuery, a developer can consume the properties and commands that are defined in X++ to design powerful data-driven UI.</span></span>
-
-<span data-ttu-id="d83cc-121">拡張可能コントロール開発のすべての 3 つのコンポーネントについては、以降のセクションで詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-121">All three artifacts of extensible control development are explained in more detail in the following sections.</span></span>
-
-## <a name="key-concepts"></a><span data-ttu-id="d83cc-122">重要な概念</span><span class="sxs-lookup"><span data-stu-id="d83cc-122">Key concepts</span></span>
--   <span data-ttu-id="d83cc-123">拡張可能なコントロールのデザイン時の動作を定義する</span><span class="sxs-lookup"><span data-stu-id="d83cc-123">Defining an extensible control's design-time behavior</span></span>
--   <span data-ttu-id="d83cc-124">拡張可能な実行デザイン時の動作を定義する</span><span class="sxs-lookup"><span data-stu-id="d83cc-124">Defining an extensible control's run-time behavior</span></span>
--   <span data-ttu-id="d83cc-125">HTML と CSS を使用して、拡張可能なコントロールのビューを定義する</span><span class="sxs-lookup"><span data-stu-id="d83cc-125">Defining an extensible control's view by using HTML and CSS</span></span>
--   <span data-ttu-id="d83cc-126">JavaScript を使用して拡張可能なコントロールのビュー モデルを定義する</span><span class="sxs-lookup"><span data-stu-id="d83cc-126">Defining an extensible control's view model by using JavaScript</span></span>
-
-## <a name="setup"></a><span data-ttu-id="d83cc-127">セットアップ</span><span class="sxs-lookup"><span data-stu-id="d83cc-127">Setup</span></span>
-### <a name="import-the-tutorial-project-and-transactional-data"></a><span data-ttu-id="d83cc-128">チュートリアル プロジェクトおよびトランザクション データのインポート</span><span class="sxs-lookup"><span data-stu-id="d83cc-128">Import the tutorial project and transactional data</span></span>
-
-<span data-ttu-id="d83cc-129">Visual Studio を使用してチュートリアル プロジェクトをインポートします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-129">Use Visual Studio to import the tutorial project.</span></span> <span data-ttu-id="d83cc-130">チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-130">The tutorial project includes the artifacts that you will use to complete this tutorial.</span></span> <span data-ttu-id="d83cc-131">Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-131">Use Visual Studio to open the FMTutorial project and load the data for the tutorial.</span></span> <span data-ttu-id="d83cc-132">フリート管理チュートリアルのデータを読み込むために、**FMTDataHelper** クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-132">You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial.</span></span>
-
-1. <span data-ttu-id="d83cc-133">フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-133">Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.</span></span>
-2. <span data-ttu-id="d83cc-134">デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-134">On the desktop, double-click the Visual Studio shortcut to open the development environment.</span></span>
-3. <span data-ttu-id="d83cc-135"><strong>Dynamics 365 **メニューで、**プロジェクトのインポート</strong>をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-135">On the <strong>Dynamics 365 \*\*menu, click \*\*Import Project</strong>.</span></span>
-4. <span data-ttu-id="d83cc-136">**プロジェクトのインポート** ダイアログ ボックスで、**ファイル名**テキスト ボックスの隣にある、省略記号ボタン (...) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-136">In the **Import Project** dialog box, next to the **File name** text box, click the ellipsis button (...).</span></span>
-5. <span data-ttu-id="d83cc-137">**インポートするファイルの選択**ダイアログ ボックスで、**C:\FMLab** を参照して **FMTutorialDataModel.axpp** をクリックしてから**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-137">In the **Select the file to import** dialog box, browse to **C:\FMLab**, click **FMTutorialDataModel.axpp**, and then click **Open**.</span></span>
-6. <span data-ttu-id="d83cc-138">**プロジェクト ファイルの場所**フィールドに、**C:\FMLab** と入力します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-138">In the **Project file location** field, enter **C:\FMLab**.</span></span>
-7. <span data-ttu-id="d83cc-139">**要素の上書き** チェック ボックスをオンにし、**現在のソリューション** オプションをオンにします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-139">Select the **Overwrite Elements** check box and the **Current solution** option.</span></span> <span data-ttu-id="d83cc-140">次のスクリーン ショットは、完了した **プロジェクトのインポート** ダイアログボックスを示しています</span><span class="sxs-lookup"><span data-stu-id="d83cc-140">The following screen shot shows the completed **Import Project** dialog box.</span></span> 
-
-   <span data-ttu-id="d83cc-141">[![Ext1](./media/ext1.png)](./media/ext1.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-141">[![Ext1](./media/ext1.png)](./media/ext1.png)</span></span>
-
-8. <span data-ttu-id="d83cc-142">**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-142">Click **OK**.</span></span>
-9. <span data-ttu-id="d83cc-143">ソリューション エクスプローラーの **FMTutorial** プロジェクトで**クラス**を展開します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-143">In Solution Explorer, under the **FMTutorial** project, expand **Classes**.</span></span>
-10. <span data-ttu-id="d83cc-144">**FMTDataHelper** を右クリックし、**スタートアップ オブジェクトとして設定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-144">Right-click **FMTDataHelper**, and then click **Set as Startup Object**.</span></span>
-11. <span data-ttu-id="d83cc-145">**ビルド**メニューで、**ソリューションの再構築**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-145">On the **BUILD** menu, click **Rebuild Solution**.</span></span> <span data-ttu-id="d83cc-146">タイムスタンプに関係なく、プロジェクトのすべてのファイルを確実に作成するには、リビルドを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-146">You use the rebuild to make sure that all the files in the project are built, regardless of timestamps.</span></span> <span data-ttu-id="d83cc-147">**出力** ウィンドウでビルドの進行状況を表示できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-147">You can view the build progress in the **Output** window.</span></span>
-12. <span data-ttu-id="d83cc-148">ビルドが完了した後、Ctrl + F5 を押してプロジェクトを実行します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-148">After the build is completed, press Ctrl+F5 to run the project.</span></span> <span data-ttu-id="d83cc-149">**ログイン** フォームは、認証が成功すると閉じ、データが読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-149">The **Login** form closes when authentication succeeds, and then the data is loaded.</span></span>
-
-### <a name="set-up-aggregate-data"></a><span data-ttu-id="d83cc-150">集計データの設定</span><span class="sxs-lookup"><span data-stu-id="d83cc-150">Set up aggregate data</span></span>
-
-<span data-ttu-id="d83cc-151">FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Services データベースに集計データを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-151">Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data.</span></span> <span data-ttu-id="d83cc-152">**注記:** これらの手順は、**FMTDataHelper** クラスを使用してデータをインポートした直後に完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-152">**Note:** These steps must be completed immediately after you use the **FMTDataHelper** class to import data.</span></span> <span data-ttu-id="d83cc-153">所持しているチュートリアル ファイルに応じて、[集計尺度が "InMemoryRealTime"](../analytics/model-aggregate-data.md) の場合に、これらのステップを実行する必要が **ない** 場合があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-153">You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](../analytics/model-aggregate-data.md), depending on what tutorial files you have.</span></span>
-
-1.  <span data-ttu-id="d83cc-154">ソリューション エクスプローラーの**分析**で、**FMTAggregateMeasurement** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-154">In Solution Explorer, under **Analytics**, double-click **FMTAggregateMeasurement**.</span></span>
-2.  <span data-ttu-id="d83cc-155">デザイナーで、**FMTAggregateMeasurement** を右クリックしてから、**配置と処理**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-155">In the designer, right-click **FMTAggregateMeasurement**, and then click **Deploy and Process**.</span></span>
-
-## <a name="preview-the-clerk-workspace"></a><span data-ttu-id="d83cc-156">クラーク ワークスペースをプレビュー</span><span class="sxs-lookup"><span data-stu-id="d83cc-156">Preview the clerk workspace</span></span>
-<span data-ttu-id="d83cc-157">連絡先コントロールの構築を開始する前に、現在の実装の外観を確認します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-157">Before you begin to build the contact control, look at the appearance of the current implementation.</span></span> <span data-ttu-id="d83cc-158">次のセクションでは、コントロール拡張フレームワークを使用して、コントロールとフォームの視覚化を強化します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-158">In the following sections, you will use the Control Extensibility Framework to enrich the visualization of the controls and the form.</span></span>
-
-1.  <span data-ttu-id="d83cc-159">ソリューション エクスプローラーで**フォーム**を展開し、**FMTClerkWorkspace** を右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-159">In Solution Explorer, expand **Forms**, right-click **FMTClerkWorkspace**, and then click **Set as Startup Object**.</span></span>
-2.  <span data-ttu-id="d83cc-160">Ctrl+F5 キーを押して、Internet Explorer で **フリート管理係** ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-160">Press Ctrl+F5 to open the **Fleet management clerk** page in Internet Explorer.</span></span> <span data-ttu-id="d83cc-161">次のスクリーン ショットに示されているように、複数の文字列および日付を含むリスト スタイルの単純なグリッドとしてこのページではデータが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-161">As the following screen shot shows, the data on this page appears as a simple grid in a list style that contains several string and date controls.</span></span> 
-
-    <span data-ttu-id="d83cc-162">[![Ext2](./media/ext2-1024x515.png)](./media/ext2.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-162">[![Ext2](./media/ext2-1024x515.png)](./media/ext2.png)</span></span>
-
-3.  <span data-ttu-id="d83cc-163">Internet Explorer を終了します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-163">Exit Internet Explorer.</span></span>
-
-## <a name="modify-the-build-class-for-the-contact-control"></a><span data-ttu-id="d83cc-164">連絡先コントロールのビルド クラスの変更</span><span class="sxs-lookup"><span data-stu-id="d83cc-164">Modify the build class for the contact control</span></span>
-<span data-ttu-id="d83cc-165">時間を節約するために、連絡先コントロールと呼ばれる部分的に完了した拡張可能なコントロールで作業します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-165">To save time, you will work on a partially completed extensible control that is named the contact control.</span></span> <span data-ttu-id="d83cc-166">連絡先コントロールを拡張して、そのデザイン、実行時、および視覚化の動作を完成します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-166">You will extend the contact control to complete its design, run-time, and visualization behaviors.</span></span> <span data-ttu-id="d83cc-167">部分的に完了した連絡先コントロールは、複数のタイトル フィールド、サブフィールド、およびアクション ボタンを既にサポートしています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-167">The partially completed contact control already supports multiple title fields, subfields, and action buttons.</span></span> <span data-ttu-id="d83cc-168">ただし、現在画像はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-168">However, it doesn't currently support an image.</span></span> <span data-ttu-id="d83cc-169">イメージ サポートを追加するには、連絡先管理のデザイン エクスペリエンスを拡張する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-169">To add image support, you must extend the design experience for the contact control.</span></span> <span data-ttu-id="d83cc-170">イメージ データを指定可能なデータ フィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-170">You will add a data field that can specify image data.</span></span>
-
-### <a name="technical-overview"></a><span data-ttu-id="d83cc-171">技術的概要</span><span class="sxs-lookup"><span data-stu-id="d83cc-171">Technical overview</span></span>
-
-<span data-ttu-id="d83cc-172">ビルド クラスの例を表示するには、ソリューション エクスプローラーで **クラス** を展開し、**FMTBuildContactControl** を右クリックして、**コードを表示** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-172">To see an example of a build class, in Solution Explorer, expand **Classes**, right-click **FMTBuildContactControl**, and then click **View Code**.</span></span> <span data-ttu-id="d83cc-173">コード エディターにクラス コードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-173">The class code appears in the code editor.</span></span> <span data-ttu-id="d83cc-174">**FMTBuildContactControl** は連絡先コントロールのビルド クラスです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-174">**FMTBuildContactControl** is the build class for the contact control.</span></span> <span data-ttu-id="d83cc-175">各拡張可能コントロールについては、ビルド クラスは、コントロールがプロパティ シートに表示されるプロパティを定義します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-175">For each extensible control, the build class defines the properties that the control shows in the property sheet.</span></span> <span data-ttu-id="d83cc-176">ビルド クラスは、Visual Studio フォーム デザイナーのコントロールのモデリング経験も定義します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-176">The build class also defines the modeling experience for the control in the Visual Studio form designer.</span></span> <span data-ttu-id="d83cc-177">拡張可能なコントロールには、3 つの主要なデザイン時のビヘイビアを定義できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-177">There are three primary design-time behaviors that you can define for an extensible control.</span></span> <span data-ttu-id="d83cc-178">各動作では、**FormDesign** 属性を使用して宣言的に定義されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-178">Each behavior is declaratively defined by using a **FormDesign** attribute.</span></span> <span data-ttu-id="d83cc-179">定義できるデザイン時の動作を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-179">Here are the design-time behaviors that you can define:</span></span>
-
--   <span data-ttu-id="d83cc-180">**名前** – コントロールをフォームに追加すると、フォーム デザイナに表示されるコントロール名を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-180">**Name** – You can specify the control name that appears in the form designer when you add the control to a form.</span></span> <span data-ttu-id="d83cc-181">名前を指定するには、拡張可能コントロールのビルド クラス宣言に **FormDesignControlAttribute** 属性を追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-181">To specify the name, add a **FormDesignControlAttribute** attribute to the build class declaration of the extensible control.</span></span> <span data-ttu-id="d83cc-182">たとえば、次の **FMTBuildContactControl** クラスの申告は、属性を表示します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-182">For example, the following declaration of the **FMTBuildContactControl** class shows the attribute.</span></span> 
-
-    <span data-ttu-id="d83cc-183">[![x1](./media/x1.png)](./media/x1.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-183">[![x1](./media/x1.png)](./media/x1.png)</span></span>
-
--   <span data-ttu-id="d83cc-184">**デザイナー プロパティ** - これらは、コントロールをフォームに追加すると、プロパティ シートに表示されるプロパティです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-184">**Designer properties** – These are the properties that you see in the property sheet when you add the control to a form.</span></span> <span data-ttu-id="d83cc-185">さまざまなタイプのデザイナー プロパティを追加できる属性がいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-185">There are several attributes that let you add various types of designer properties.</span></span> <span data-ttu-id="d83cc-186">たとえば、**FormDesignPropertyAttribute** 属性はプロパティ シートにプロパティを追加し、プロパティ名およびセクションが属性への引数として指定されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-186">For example, the **FormDesignPropertyAttribute** attribute adds a property to the property sheet, and the property name and the section are supplied as arguments to the attribute.</span></span> <span data-ttu-id="d83cc-187">たとえば、次のコードは、**アクション名**プロパティを **FMTContactControlAction** クラスに追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-187">For example, the following code adds the **Action Name** property to the **FMTContactControlAction** class.</span></span> 
-
-    <span data-ttu-id="d83cc-188">[![x2](./media/x2.png)](./media/x2.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-188">[![x2](./media/x2.png)](./media/x2.png)</span></span>
-
-    <span data-ttu-id="d83cc-189">次のスクリーン ショットは、このプロパティが Visual Studio の **プロパティ** ウィンドウにどのように表示されるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-189">The following screen shot shows how this property appears in the **Properties** pane in Visual Studio.</span></span> 
-
-    <span data-ttu-id="d83cc-190">[![Ext3](./media/ext3.png)](./media/ext3.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-190">[![Ext3](./media/ext3.png)](./media/ext3.png)</span></span>
-
--   <span data-ttu-id="d83cc-191">**子デザイン コンポーネント** - これらは、コントロールをフォームに追加した後に表示される子ノードです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-191">**Child design components** – These are child nodes that you see after you add the control to a form.</span></span> <span data-ttu-id="d83cc-192">子の設計コンポーネントには、リーフとリーフ コレクションの 2 つのタイプがあります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-192">There are two types of child design components: leaf and leaf collection.</span></span>
-    -   <span data-ttu-id="d83cc-193">リーフは、別のビルド クラスを受け入れるか、返す X++ メソッドの **FormDesignComponentAttribute** 属性を使用して定義されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-193">A leaf is defined by using a **FormDesignComponentAttribute** attribute on an X++ method that accepts or returns another build class.</span></span> <span data-ttu-id="d83cc-194">ビルド クラスは、リーフがプロパティ シートに持つプロパティを決定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-194">The build class determines the properties that the leaf has in the property sheet.</span></span>
-    -   <span data-ttu-id="d83cc-195">**FormDesignComponentCollectionAttribute** 属性を使用して定義されるリーフ コレクション。</span><span class="sxs-lookup"><span data-stu-id="d83cc-195">A leaf collection is defined by using a **FormDesignComponentCollectionAttribute** attribute.</span></span> <span data-ttu-id="d83cc-196">コレクションの許容リーフ タイプは、**FormDesignComponentValidChildAttribute** 属性を使用して定義されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-196">The allowable leaf types for the collection are defined by using **FormDesignComponentValidChildAttribute** attributes.</span></span>
-
-    <span data-ttu-id="d83cc-197">たとえば、次のコードは、**FMTBuildContactControl** クラスの**アクション**という名前のリーフ コレクションを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-197">For example, the following code adds a leaf collection that is named **Actions** for the **FMTBuildContactControl** class.</span></span> 
-
-    <span data-ttu-id="d83cc-198">[![x3](./media/x3.png)](./media/x3.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-198">[![x3](./media/x3.png)](./media/x3.png)</span></span> 
-
-    <span data-ttu-id="d83cc-199">次のスクリーン ショットは、コントロールをフォームに追加する場合に、指定された子デザイン コンポーネントがどのように表示されるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-199">The following screen shot shows how the specified child design component appears when you add the control to a form.</span></span> 
-
-    <span data-ttu-id="d83cc-200">[![Ext4](./media/ext4.png)](./media/ext4.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-200">[![Ext4](./media/ext4.png)](./media/ext4.png)</span></span>
-
-
-### <a name="tutorial-steps"></a><span data-ttu-id="d83cc-201">チュートリアルの手順</span><span class="sxs-lookup"><span data-stu-id="d83cc-201">Tutorial steps</span></span>
-
-1.  <span data-ttu-id="d83cc-202">コード エディターで表示される **FMTBuildContactControl** クラスのコードを確認してください。</span><span class="sxs-lookup"><span data-stu-id="d83cc-202">Check that the code for the **FMTBuildContactControl** class appears in the code editor.</span></span> <span data-ttu-id="d83cc-203">そうされない場合は、ソリューション エクスプローラーで**クラス**を展開し、**FMTBuildContactControl** を右クリックして、**コードを表示**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-203">If it doesn't, in Solution Explorer, expand **Classes**, right-click **FMTBuildContactControl**, and then click **View Code**.</span></span>
-2.  <span data-ttu-id="d83cc-204">子デザイン コンポーネントを FMTBuildContactControl クラスに追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-204">Add a child design component to the FMTBuildContactControl class.</span></span> <span data-ttu-id="d83cc-205">子デザイン コンポーネントを使用すると、フォームにコントロールを設置した開発者は、コントロールに表示されるイメージを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-205">A child design component lets a developer who places the control in a form to specify the image that appears on the control.</span></span> <span data-ttu-id="d83cc-206">この手順では、**FormDesignComponentAttribute** 属性を追加して、プロパティ シートに新しいエントリを作成します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-206">In this step, you will add the **FormDesignComponentAttribute** attribute to create a new entry in the property sheet.</span></span> <span data-ttu-id="d83cc-207">次に、**FormDesignPropertyDataFieldAttribute** 属性を追加します。この属性は、新しいデザイナー プロパティがデータ フィールドの選択を使用可能にすることを示します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-207">You will then add the **FormDesignPropertyDataFieldAttribute** attribute, which indicates that the new designer property enables the selection of a data field.</span></span>
-    1.  <span data-ttu-id="d83cc-208">クラスの申告に次の強調表示されたコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-208">Add the highlighted code that follows to the declarations for the class.</span></span> <span data-ttu-id="d83cc-209">このコードは、**FMTBuildContactControl** クラスが使用している X++ に **FormBindingDataField** フィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-209">This code adds the **FormBindingDataField** field to the X++ that the **FMTBuildContactControl** class is using.</span></span> 
-
-    <span data-ttu-id="d83cc-210">[![x4](./media/x4.png)](./media/x4.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-210">[![x4](./media/x4.png)](./media/x4.png)</span></span>
-
-    2.  <span data-ttu-id="d83cc-211">**FMTBuildContactControl** クラスに、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-211">Add the following code to the **FMTBuildContactControl** class.</span></span> <span data-ttu-id="d83cc-212">データ ソースのデザイナー プロパティの後に、このメソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-212">Add this method after the designer property for the data source.</span></span> 
-
-        <span data-ttu-id="d83cc-213">[![x5](./media/x5.png)](./media/x5.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-213">[![x5](./media/x5.png)](./media/x5.png)</span></span>
-
-        <span data-ttu-id="d83cc-214">**注記:** 子デザイン コンポーネントは、**FormBindingDataField** ビルド クラスで使用可能なプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-214">**Note:** The child design component will show the properties that are available on the **FormBindingDataField** build class.</span></span> <span data-ttu-id="d83cc-215">これは、データ フィールドとデータ ソースへのイメージ データのバインドを有効にするために適しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-215">This is appropriate, because you want to enable image data binding to a data field and data source.</span></span> <span data-ttu-id="d83cc-216">これは、連絡先コントロールのビルド クラスにデザイナー プロパティを追加するために必要なものです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-216">This is all that is required to add a designer property to the build class of the contact control.</span></span>
-
-3.  <span data-ttu-id="d83cc-217">Ctrl+S キーを押して変更を保存し、コード エディターを閉じます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-217">Press Ctrl+S to save your changes, and then close the code editor.</span></span>
-4.  <span data-ttu-id="d83cc-218">ソリューション エクスプローラーで、**FMTutorial** を右クリックしてから**ビルド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-218">In Solution Explorer, right-click **FMTutorial**, and then click **Build**.</span></span>
-5.  <span data-ttu-id="d83cc-219">**FMTPickingUpTodayPart** フォームが既に開かれている場合、**フォーム**を展開し、**FMTPickingUpTodayPart** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-219">If the **FMTPickingUpTodayPart** form isn't already open, expand **Forms**, and then double-click **FMTPickingUpTodayPart**.</span></span> <span data-ttu-id="d83cc-220">フォーム デザイナーで、フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-220">The form opens in the form designer.</span></span>
-6.  <span data-ttu-id="d83cc-221">フォーム デザイナーで、**デザイン** &gt; **PickingUpTodayGrid** を展開してから、グリッドに表示されているコントロールを選択して削除します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-221">In the form designer, expand **Design** &gt; **PickingUpTodayGrid**, and then select and delete the controls that currently appear in the grid.</span></span>
-7.  <span data-ttu-id="d83cc-222">**PickingUpTodayGrid** を右クリックして **新規** をポイントし、**FMTContactControl** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-222">Right-click **PickingUpTodayGrid**, point to **New**, and then click **FMTContactControl**.</span></span> <span data-ttu-id="d83cc-223">**FMTContactControl** ノードを展開し、**画像**が新しい子デザイン コンポーネントとして表示されることを通知します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-223">Expand the **FMTContactControl** node, and notice that **Image** appears as a new child design component.</span></span> <span data-ttu-id="d83cc-224">次の図は、フォーム デザイナーの連絡先コントロールを示しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-224">The following illustration shows the contact control in the form designer.</span></span> 
-
-    <span data-ttu-id="d83cc-225">[![Ext5](./media/ext5.png)](./media/ext5.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-225">[![Ext5](./media/ext5.png)](./media/ext5.png)</span></span> 
-
-    <span data-ttu-id="d83cc-226">デザイン時の変更を使用する連絡先管理のための実行時クラスを更新することも必要です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-226">You must also update the run-time class for the contact control to consume the design-time changes.</span></span> <span data-ttu-id="d83cc-227">フォームにコントロールを追加し、後でデータ バインドとプロパティ値を指定することを再検討します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-227">You will revisit adding the control to the form and specifying data bindings and property values later.</span></span>
-8.  <span data-ttu-id="d83cc-228">Ctrl+S キーを押して変更を保存し、フォーム デザイナーを閉じます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-228">Press Ctrl+S to save your changes, and then close the form designer.</span></span>
-
-## <a name="modify-the-runtime-class-for-the-contact-control"></a><span data-ttu-id="d83cc-229">連絡先コントロールのランタイム クラスの変更</span><span class="sxs-lookup"><span data-stu-id="d83cc-229">Modify the runtime class for the contact control</span></span>
-<span data-ttu-id="d83cc-230">次に、ランタイム クラスを変更して、ビルド クラスからイメージのデータ ソースとデータ フィールドを読み取る必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-230">Next, you must modify the run-time class to read the data source and data field for the image from the build class.</span></span> <span data-ttu-id="d83cc-231">イメージ データがコントロールのクライアント HTML と JavaScript で利用できるように、実行時プロパティを作成することも必要です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-231">You must also create a run-time property, so that the image data is available to the control's client HTML and JavaScript.</span></span>
-
-### <a name="technical-overview"></a><span data-ttu-id="d83cc-232">技術的概要</span><span class="sxs-lookup"><span data-stu-id="d83cc-232">Technical overview</span></span>
-
-<span data-ttu-id="d83cc-233">ランタイム クラスの例を表示するには、ソリューション エクスプローラーで **クラス** を展開し、**FMTContactControl**を右クリックして、**コードを表示** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-233">To see an example of the run-time class, in Solution Explorer, expand **Classes**, right-click **FMTContactControl**, and then click **View Code**.</span></span> <span data-ttu-id="d83cc-234">クラスがコード エディターで開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-234">The class opens in the code editor.</span></span> <span data-ttu-id="d83cc-235">**FMTContactControl** はコンタクト コントロールのランタイム クラスです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-235">**FMTContactControl** is the run-time class for the contact control.</span></span> <span data-ttu-id="d83cc-236">このクラスは、連絡先コントロールのランタイム動作を定義します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-236">The class defines the run-time behavior of the contact control.</span></span> <span data-ttu-id="d83cc-237">通常、ランタイム クラスには、データ アクセスまたはビジネス ロジック用の X++ が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-237">The run-time class typically contains X++ for data access or business logic.</span></span> <span data-ttu-id="d83cc-238">さらに、ランタイム クラスで定義した拡張可能コントロールに関連する 2 つの主なランタイム動作があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-238">In addition, there are two primary run-time behaviors that are related to extensible controls that you define in the run-time class.</span></span> <span data-ttu-id="d83cc-239">各動作では、属性を使用して宣言的に定義されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-239">Each behavior is declaratively defined by using an attribute.</span></span>
-
--   <span data-ttu-id="d83cc-240">**コントロールの実行時のプロパティ** – これらのプロパティには 2 つのタイプがあります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-240">**Run-time properties of the control** – These properties can be of two types:</span></span>
-    -   <span data-ttu-id="d83cc-241">*静的プロパティ*は、コードを介して設定されるか、デザイナーのプロパティからの値で初期化されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-241">*Static properties*, which are set via code or initialized with values from designer properties.</span></span>
-    -   <span data-ttu-id="d83cc-242">*バインド可能なプロパティ*、ランタイム値は、データ ソースおよびデータ フィールドの組み合わせへのバインディングによって決定されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-242">*Bindable properties*, for which the run-time value is determined by a binding to a data source and data field combination.</span></span>
-
-    <span data-ttu-id="d83cc-243">**FormPropertyAttribute** 属性を使用してランタイム プロパティが宣言されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-243">Run-time properties are declared by using **FormPropertyAttribute** attributes.</span></span> <span data-ttu-id="d83cc-244">次の例は、**FMTContactControl** のプロパティ宣言を示しています。.</span><span class="sxs-lookup"><span data-stu-id="d83cc-244">The following example shows a property declaration in **FMTContactControl**.</span></span> 
-
-    <span data-ttu-id="d83cc-245">[![x6](./media/x6.png)](./media/x6.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-245">[![x6](./media/x6.png)](./media/x6.png)</span></span>
-
-    <span data-ttu-id="d83cc-246">**FormPropertyAttribute** 属性は、2 つの引数を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-246">The **FormPropertyAttribute** attribute accepts two arguments:</span></span>
-    -   <span data-ttu-id="d83cc-247">最初の引数は、作成する JavaScript ビュー モデル プロパティの種類をフレームワークに示します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-247">The first argument indicates to the framework the kind of JavaScript view model property to create.</span></span>
-        -   <span data-ttu-id="d83cc-248">**BindableValue** を指定した場合、**ReferenceProperty** が JavaScript ビュー モデルに生成されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-248">If you supply **BindableValue**, a **ReferenceProperty** is generated in the JavaScript view model.</span></span> <span data-ttu-id="d83cc-249">**ReferenceProperty**は、データ ソース内のデータが変更されたときに更新されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-249">A **ReferenceProperty** updates itself when data changes in the data source.</span></span>
-        -   <span data-ttu-id="d83cc-250">**Value** を指定した場合、**ValueProperty** が JavaScript ビュー モデルに生成されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-250">If you supply **Value**, a **ValueProperty** is generated in the JavaScript view model.</span></span> <span data-ttu-id="d83cc-251">開発者は、**ValueProperty** の値を更新するためのコードを記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-251">A developer must write code to update the value of a **ValueProperty**.</span></span>
-    -   <span data-ttu-id="d83cc-252">属性の第 2 引数は、JavaScript ビュー モデルで定義されるプロパティの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-252">The second argument of the attribute sets the name for the property as it will be defined in the JavaScript view model.</span></span>
-
-    <span data-ttu-id="d83cc-253">**注記:** この例では、**値**プロパティを使用するため、**TitleFields** がデータにバインドされていないように見える場合にも問題はありません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-253">**Note:** Don't be concerned if **TitleFields** don't seem to be bound to data because the example uses a **Value** property.</span></span> <span data-ttu-id="d83cc-254">**TitleFields** プロパティは、それぞれデータ バインドされた **FormBindingDataFields** を含むリストを返します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-254">The **TitleFields** property returns a List that contains **FormBindingDataFields**, each of which is data-bound.</span></span> <span data-ttu-id="d83cc-255">**FormPropertyAttribute** 属性を持つ X++ メソッドは、**FormProperty** をバッキング フィールドとして使用する単純なゲッター/セッターです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-255">The X++ method that has the **FormPropertyAttribute** attribute is a simple getter/setter that uses a **FormProperty** as the backing field.</span></span> <span data-ttu-id="d83cc-256">**FormProperty** には、値またはデータ ソースの変更に基づく、プロパティを更新するためのロジックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-256">The **FormProperty** contains the logic for updating the property, based on value or data source changes.</span></span> <span data-ttu-id="d83cc-257">プロパティのバッキング フィールドとしても機能します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-257">It also serves as the backing field for the property.</span></span>
--   <span data-ttu-id="d83cc-258">**コントロールの実行時コマンド** – コマンドはクライアント側のユーザーとのやり取りに基づく、トリガー X++ ロジックのクライアント部分のコントロールを有効にします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-258">**Run-time commands for the control** – Commands enable the client parts of the control to trigger X++ logic, based on client-side user interactions.</span></span> <span data-ttu-id="d83cc-259">コマンドは **FormCommandAttribute** 属性を使用して宣言されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-259">Commands are declared by using a **FormCommandAttribute** attribute.</span></span> <span data-ttu-id="d83cc-260">単一の引数は、JavaScript ビューモデルに表示されるコマンドの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-260">The single argument specifies the name of the command as it will appear in the JavaScript view model.</span></span> <span data-ttu-id="d83cc-261">次の例は、**FMTContactControl** のコマンド宣言を示しています。.</span><span class="sxs-lookup"><span data-stu-id="d83cc-261">The following example shows a command declaration in **FMTContactControl**.</span></span> 
-
-    <span data-ttu-id="d83cc-262">[![x7](./media/x7.png)](./media/x7.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-262">[![x7](./media/x7.png)](./media/x7.png)</span></span>
-
-### <a name="tutorial-steps"></a><span data-ttu-id="d83cc-263">チュートリアルの手順</span><span class="sxs-lookup"><span data-stu-id="d83cc-263">Tutorial steps</span></span>
-
-1.  <span data-ttu-id="d83cc-264">コード エディターで **FMTContactControl** が開いていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-264">Verify that the **FMTContactControl** class is open in the code editor.</span></span> <span data-ttu-id="d83cc-265">そうされていない場合は、ソリューション エクスプローラーで**クラス**を展開し、**FMTContactControl** を右クリックして、**コードを表示**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-265">If it isn't, in Solution Explorer, expand **Classes**, right-click **FMTContactControl**, and then click **View Code**.</span></span>
-2.  <span data-ttu-id="d83cc-266">**FMTContactControl** に画像データの実行時プロパティを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-266">Add a run-time property for the image data to **FMTContactControl**.</span></span> <span data-ttu-id="d83cc-267">**FMTContactControl** クラスで、次の例で強調表示された行で示すように **imageFieldProperty** という **FormProperty** を宣言します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-267">In the **FMTContactControl** class, declare a **FormProperty** that is named **imageFieldProperty**, as shown by the highlighted line in the following example.</span></span> 
-
-    <span data-ttu-id="d83cc-268">[![x8](./media/x8.png)](./media/x8.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-268">[![x8](./media/x8.png)](./media/x8.png)</span></span>
-
-3.  <span data-ttu-id="d83cc-269">**parmDataSource** X++ メソッドの後に、次の X++ メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-269">Add the following X++ method after the **parmDataSource** X++ method.</span></span> <span data-ttu-id="d83cc-270">新しいメソッドは、**imageFieldProperty** のゲッター/セッターとして機能します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-270">The new method will serve as the getter/setter for **imageFieldProperty**.</span></span> <span data-ttu-id="d83cc-271">**注記:** 後で見るように、フレームワークはクライアントのデータにバインドさせるため、ここでは画像データの値を返しません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-271">**Note:** You don't return the value of the image data here, because the framework will let you bind to the data in the client, as you will see later.</span></span> 
-
-    <span data-ttu-id="d83cc-272">[![x9](./media/x9.png)](./media/x9.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-272">[![x9](./media/x9.png)](./media/x9.png)</span></span>
-
-4.  <span data-ttu-id="d83cc-273">**imageFieldProperty** は、次の例で強調表示された行を **FMTContactControl** の新しいメソッドに追加することで初期化されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-273">Initialize **imageFieldProperty** by adding the highlighted line in the following example to the new method of **FMTContactControl**.</span></span> 
-
-    <span data-ttu-id="d83cc-274">[![x10](./media/x10.png)](./media/x10.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-274">[![x10](./media/x10.png)](./media/x10.png)</span></span>
-
-5.  <span data-ttu-id="d83cc-275">ここで、次の例で強調表示された行を **FMTContactControl** の **applyBuild** メソッドに追加することで **imageFieldProperty** へのバインディングを供給します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-275">Now supply the binding to **imageFieldProperty** by adding the highlighted line in the following example to the **applyBuild** method of **FMTContactControl**.</span></span> 
-
-    <span data-ttu-id="d83cc-276">[![x11](./media/x11.png)](./media/x11.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-276">[![x11](./media/x11.png)](./media/x11.png)</span></span>
-
-6.  <span data-ttu-id="d83cc-277">Ctrl + S を押して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-277">Press Ctrl+S to save the changes.</span></span> <span data-ttu-id="d83cc-278">これで、実行時クラスの変更が完了しました。</span><span class="sxs-lookup"><span data-stu-id="d83cc-278">You've now finished modifying the run-time class.</span></span> <span data-ttu-id="d83cc-279">次に、画像を表示する HTML ビューを更新します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-279">Next, you will update the HTML view to display the image.</span></span>
-
-## <a name="modify-the-html-for-the-contact-control"></a><span data-ttu-id="d83cc-280">連絡先コントロールの HTML の変更</span><span class="sxs-lookup"><span data-stu-id="d83cc-280">Modify the HTML for the contact control</span></span>
-<span data-ttu-id="d83cc-281">連絡先コントロールの HTML では、テキスト ボックス、画像、およびボタンなど、ランタイム クラスで定義されているプロパティとコマンドを操作する UI 要素を追加できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-281">The HTML of the contact control is where you add UI elements, such as text boxes, images, and buttons, that interact with the properties and commands that are defined in the run-time class.</span></span> <span data-ttu-id="d83cc-282">拡張可能なコントロールでは、宣言的な HTML ベースのバインド構文を使用して、HTML 要素の動作をプロパティ、コマンド、JavaScript 式、および JavaScript 関数にバインドします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-282">Extensible controls use a declarative HTML-based binding syntax to bind HTML element behaviors to properties, commands, JavaScript expressions, and JavaScript functions.</span></span> <span data-ttu-id="d83cc-283">これらのバインディングは実行時に解析され、結果の HTML が DOM に注入されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-283">These bindings are parsed at run time, and the resulting HTML is injected into the DOM.</span></span> <span data-ttu-id="d83cc-284">次のセクションでは、コントロールに画像を追加するために FMTContactControl.htm で使用されるバインディングのいくつかについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-284">The following section explains a few of the bindings that are used in FMTContactControl.htm to add an image to the control.</span></span>
-
-### <a name="technical-overview"></a><span data-ttu-id="d83cc-285">技術的概要</span><span class="sxs-lookup"><span data-stu-id="d83cc-285">Technical overview</span></span>
-
-<span data-ttu-id="d83cc-286">**bind** 属性と **text** バインディング ハンドラーを組み合わせると、HTML 要素の **text** プロパティへのバインディングが有効になります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-286">The **bind** attribute, together with the **text** binding handler enables binding to the **text** property of an HTML element.</span></span> <span data-ttu-id="d83cc-287">たとえば、次の HTML は**バインド**属性および**テキスト**バインディング ハンドラーを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-287">For example, the following HTML uses the **bind** attribute and the **text** binding handler.</span></span> 
-
-<span data-ttu-id="d83cc-288">[![x12](./media/x12.png)](./media/x12.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-288">[![x12](./media/x12.png)](./media/x12.png)</span></span> 
-
-<span data-ttu-id="d83cc-289">上記の HTML は、次の HTML と同じです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-289">The preceding HTML is equivalent to the following HTML.</span></span> 
-
-<span data-ttu-id="d83cc-290">[![x13](./media/x13.png)](./media/x13.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-290">[![x13](./media/x13.png)](./media/x13.png)</span></span> 
-
-<span data-ttu-id="d83cc-291">プロパティまたはコマンドにバインドするとき、バインドの利点が分かります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-291">You will see the benefits of the binding when you bind to properties or commands.</span></span> <span data-ttu-id="d83cc-292">たとえば、**名**という名前のビュー モデル プロパティある場合、次の例に示すようにそれをバインドすることができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-292">For example, if you have a view model property that is named **FirstName**, you can bind to it as shown in the following example.</span></span> <span data-ttu-id="d83cc-293">ここで、**$data** はビュー モデル プロパティおよびコマンドを含むオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-293">Here, **$data** is the object that contains the view model properties and commands.</span></span> 
-
-<span data-ttu-id="d83cc-294">[![x14](./media/x14.png)](./media/x14.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-294">[![x14](./media/x14.png)](./media/x14.png)</span></span> 
-
-<span data-ttu-id="d83cc-295">HTML 出力は、**FirstName** の現在の値に基づいて変更されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-295">The HTML output changes, based on the current value of **FirstName**.</span></span> <span data-ttu-id="d83cc-296">次の例は、**名** の値が **John** の場合の出力を示しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-296">The following example shows the output if **FirstName** has a value of **John**.</span></span> 
-
-<span data-ttu-id="d83cc-297">[**![x15](./media/x15.png)**](./media/x15.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-297">[**![x15](./media/x15.png)**](./media/x15.png)</span></span> 
-
-<span data-ttu-id="d83cc-298">何らかの理由で **FirstName** プロパティが変更した場合 (たとえば、X++ または JavaScript がプロパティを更新するために実行された)、バインドは自動的に再評価され、HTML 出力により変更がすぐに反映されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-298">If the value of the **FirstName** property changes for some reason (for example, X++ or JavaScript was run to update the property), the binding is automatically reevaluated, and the HTML output immediately reflects the change.</span></span> <span data-ttu-id="d83cc-299">バインド値が変更されるとすべてのバインディング ハンドラーは自動再評価のパターンに従います。</span><span class="sxs-lookup"><span data-stu-id="d83cc-299">All binding handlers follow this pattern of automatic reevaluation when the binding value changes.</span></span> <span data-ttu-id="d83cc-300">**if** および **foreach** バインディング ハンドラーは、バインディング値に基づいて DOM 操作を実行するという点で独自です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-300">The **if** and **foreach** binding handlers are unique in that they perform DOM manipulation based on the binding values.</span></span>
-
--   <span data-ttu-id="d83cc-301">条件付きで DOM に要素を追加するには、**if** バインド ハンドラを使用し、要素を追加する条件を指定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-301">To conditionally add an element to the DOM, use the **if** binding handler and supply the condition under which the element should be added.</span></span> <span data-ttu-id="d83cc-302">条件が false の場合は、要素を DOM に追加されたり、DOM から削除されることはなく、要素に関連付けられているバインドは評価されません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-302">If the condition is false, the element isn't added to or removed from the DOM, and no bindings that are associated with the element are evaluated.</span></span> <span data-ttu-id="d83cc-303">もちろん、**場合**の変更に提供される値バインディングの場合、削除された要素がもう一度 DOM に追加され、バインディングは評価されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-303">Of course, if the binding value that is supplied to **if** changes, an element that was removed will be added to the DOM again, and the bindings will be evaluated.</span></span>
--   <span data-ttu-id="d83cc-304">要素の配列を反復処理するには、**foreach** バインドを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-304">To iterate over an array of elements, use the **foreach** binding.</span></span> <span data-ttu-id="d83cc-305">これは、ほぼ同一の HTML 要素を表示する必要がある場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-305">This is useful when nearly identical HTML elements must be displayed.</span></span>
-
-<span data-ttu-id="d83cc-306">次のテーブルに、その他のバインディング ハンドラーの一部を示します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-306">The following table shows some of the other binding handlers.</span></span>
-
-| <span data-ttu-id="d83cc-307">バインディング ハンドラー</span><span class="sxs-lookup"><span data-stu-id="d83cc-307">Binding handler</span></span> | <span data-ttu-id="d83cc-308">説明</span><span class="sxs-lookup"><span data-stu-id="d83cc-308">Description</span></span>                                          |
-|-----------------|------------------------------------------------------|
-| <span data-ttu-id="d83cc-309">css</span><span class="sxs-lookup"><span data-stu-id="d83cc-309">css</span></span>             | <span data-ttu-id="d83cc-310">条件に基づいて、CSS クラスを指定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-310">Specify a CSS class, based on a condition.</span></span>           |
-| <span data-ttu-id="d83cc-311">style</span><span class="sxs-lookup"><span data-stu-id="d83cc-311">style</span></span>           | <span data-ttu-id="d83cc-312">CSS スタイルを適用し、値をプロパティにバインドします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-312">Apply CSS styles, and bind the values to properties.</span></span> |
-| <span data-ttu-id="d83cc-313">attr</span><span class="sxs-lookup"><span data-stu-id="d83cc-313">attr</span></span>            | <span data-ttu-id="d83cc-314">HTML 属性をバインドします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-314">Bind an HTML attribute.</span></span>                              |
-
-<span data-ttu-id="d83cc-315">コントロールの HTML 内での HTML 要素の使用に加えて、CheckBox、Group、Tile、SectionContainer、Label、および List などのフレームワーク コントロールをコントロールに追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-315">In addition to using HTML elements inside the HTML for your control, you can also add framework controls such as CheckBox, Group, Tile, SectionContainer, Label, and List to your control.</span></span> <span data-ttu-id="d83cc-316">バインディング ハンドラーの代わりに、各フレームワーク コントロールでバインド値をビュー モデル プロパティに渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-316">Instead of binding handlers, each framework control enables binding values to be passed to its view model properties.</span></span> <span data-ttu-id="d83cc-317">たとえば、**CommandButton** は**ロール**属性を使用して追加されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-317">For example, a **CommandButton** is added by using the **role** attribute.</span></span> 
-
-<span data-ttu-id="d83cc-318">[![x16](./media/x16.png)](./media/x16.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-318">[![x16](./media/x16.png)](./media/x16.png)</span></span> 
-
-<span data-ttu-id="d83cc-319">この場合、**ActionCommand** は JavaScript 機能とともに提供されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-319">In this case, **ActionCommand** can be supplied with a JavaScript function.</span></span> 
-
-<span data-ttu-id="d83cc-320">[![x17](./media/x17.png)](./media/x17.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-320">[![x17](./media/x17.png)](./media/x17.png)</span></span> 
-
-<span data-ttu-id="d83cc-321">HTML バインディング構文の追加機能の 1 つは、バインディングのコンテキスト認識の性質です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-321">One additional feature of the HTML binding syntax is the context-aware nature of bindings.</span></span> <span data-ttu-id="d83cc-322">既定では、すべての HTML 要素のコンテキストはコントロールの JavaScript ビュー モデルに設定されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-322">By default, the context of all HTML elements is set to the JavaScript view model for the control.</span></span> <span data-ttu-id="d83cc-323">ただし、コンテキストは特定の状況で変化します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-323">However, the context changes in certain circumstances.</span></span> <span data-ttu-id="d83cc-324">たとえば、**foreach** バインディングに対して、ホスト要素 (**foreach** バインディングを持つ要素) 内に入れ子になったすべての子要素は、コンテキストとしてループで現在の品目を取得します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-324">For example, for a **foreach** binding, every child element that is nested inside the hosting element (the element that has the **foreach** binding) obtains the current item in the loop as the context.</span></span> <span data-ttu-id="d83cc-325">**foreach** バインドの内部にあるときに親要素のコンテキストにアクセスするには、**$parent** オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-325">To access the context of the parent element when you're inside of a **foreach** binding, use the **$parent** object.</span></span> <span data-ttu-id="d83cc-326">FTMContactControl.htm の次の例は、この点を明確にするのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-326">The following example from FTMContactControl.htm will help make this point clearer.</span></span> 
-
-<span data-ttu-id="d83cc-327">[![x18](./media/x18.png)](./media/x18.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-327">[![x18](./media/x18.png)](./media/x18.png)</span></span> 
-
-<span data-ttu-id="d83cc-328">**アクション** コントロールの JavaScript ビュー モデルで使用可能なリスト プロパティです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-328">**Actions** is a List property that is available on the control's JavaScript view model.</span></span> <span data-ttu-id="d83cc-329">このプロパティは、**FMTContactControl** ランタイム クラスで定義されています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-329">This property was defined in the **FMTContactControl** run-time class.</span></span> <span data-ttu-id="d83cc-330">**アクション**リストの各アクションには、**データ ソース**、**データ フィールド**、および**アクション名**プロパティがあります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-330">Each action in the **Actions** list has **Data Source**, **Data Field**, and **Action Name** properties.</span></span> <span data-ttu-id="d83cc-331">**foreach** ループ内で、**$data** は現在のアクションを参照し、**$data.ActionName** カムはループ内の現在のアクションから **ActionName** プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-331">Within the **foreach** loop, **$data** refers to the current action, and **$data.ActionName** cam retrieve the **ActionName** property from the current action in the loop.</span></span> <span data-ttu-id="d83cc-332">ループ内では、コントロール上のビュー モデル プロパティは **$data** 経由でアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-332">Within the loop, view model properties on the control aren't accessible via **$data**.</span></span> <span data-ttu-id="d83cc-333">代わりに、**$parent** を使用してビュー モデル プロパティを取得できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-333">Instead, **$parent** can be used to retrieve the view model properties.</span></span>
-
-### <a name="tutorial-steps"></a><span data-ttu-id="d83cc-334">チュートリアルの手順</span><span class="sxs-lookup"><span data-stu-id="d83cc-334">Tutorial steps</span></span>
-
-<span data-ttu-id="d83cc-335">ランタイム クラスで作成した **ImageField** プロパティの HTML を追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-335">Add the HTML for the **ImageField** property that you created in the run-time class.</span></span>
-
-1.  <span data-ttu-id="d83cc-336">ソリューション エクスプローラーで、**FMTutorial** プロジェクトの**リソース** フォルダーを展開し、**FMTContactControlHTM** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-336">In Solution Explorer, expand the **Resources** folder under the **FMTutorial** project, and double-click **FMTContactControlHTM**.</span></span> <span data-ttu-id="d83cc-337">FMTContactControl.htm ファイルは、HTML エディターで開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-337">The FMTContactControl.htm file opens in the HTML editor.</span></span>
-2.  <span data-ttu-id="d83cc-338">FMTContactControl.htm HTML に、次の HTML を追加します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-338">Add the following HTML to the FMTContactControl.htm HTML.</span></span> <span data-ttu-id="d83cc-339">灰色のテキストは、配置コンテキストにのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-339">The gray text is shown just for placement context.</span></span> 
-
-    <span data-ttu-id="d83cc-340">[![x19](./media/x19.png)](./media/x19.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-340">[![x19](./media/x19.png)](./media/x19.png)</span></span>
-
-3.  <span data-ttu-id="d83cc-341">Ctrl+S を押し、FMTContactControl.htm の変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-341">Press Ctrl+S to save the changes to FMTContactControl.htm.</span></span>
-
-<span data-ttu-id="d83cc-342">前の例では、イメージを表示するためにフレームワーク イメージ コントロールを使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-342">In the preceding example, you use the framework image control to render the image.</span></span> <span data-ttu-id="d83cc-343">**値**はイメージ コントロールで定義されているプロパティです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-343">**Value** is a property that is defined on the Image control.</span></span> <span data-ttu-id="d83cc-344">このプロパティを使用すると、画像データの値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-344">This property lets you specify the value for the image data.</span></span> <span data-ttu-id="d83cc-345">イメージ コントロールはいくつかの種類のイメージ タイプをサポートしていますが、この例では、URL と Base64 文字列の 2 つのタイプのみを考慮しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-345">The image control supports several kinds of image types, but for this example, you’re concerned with only two possible types: URLs and Base64 strings.</span></span> <span data-ttu-id="d83cc-346">イメージ タイプは実行時にのみ認識されるデータに依存するため、この情報を取得するプロパティ、**ImageValue** を使用します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-346">Because the image type depends on data that is known only at run time, you will use a property that derives this information, **ImageValue**.</span></span> <span data-ttu-id="d83cc-347">そのようなプロパティが **FMTContactControl** の実行時クラスで定義されていないことが通知される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-347">You might notice that no such property is defined in the run-time class for **FMTContactControl**.</span></span> <span data-ttu-id="d83cc-348">したがって、このプロパティは、そのコントロールの自動生成された JavaScript ビュー モデルの一部ではなく、<**$data** にも定義されていません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-348">Therefore, this property isn't part of the automatically generated JavaScript view model for that control, and it also isn't defined on **$data**.</span></span> <span data-ttu-id="d83cc-349">**$data** 経由で **ImageValue** プロパティにアクセスできるようにするには、自動的に生成された JavaScript ビュー モデルを拡張してプロパティを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-349">To make the **ImageValue** property accessible via **$data**, you must extend the automatically generated JavaScript view model to add the property.</span></span>
-
-## <a name="review-the-javascript-for-the-contact-control"></a><span data-ttu-id="d83cc-350">連絡先コントロールの JavaScript を確認</span><span class="sxs-lookup"><span data-stu-id="d83cc-350">Review the JavaScript for the contact control</span></span>
-<span data-ttu-id="d83cc-351">前述したように、**FormPropertyAttribute** または **FormCommandAttribute** 属性を持つすべての X++ メソッドに対して、JavaScript プロパティまたはコマンドが生成され、ビュー モデルを介して拡張可能コントロールの HTML にアクセスできるようになります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-351">As was mentioned earlier, for every X++ method that has either a **FormPropertyAttribute** or **FormCommandAttribute** attribute, a JavaScript property or command is generated and made accessible to an extensible control's HTML via the view model.</span></span> <span data-ttu-id="d83cc-352">クライアント上でのみ定義される追加プロパティおよびコマンドで、このビュー モデルを拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-352">You can extend this view model with additional properties and commands that are defined only on the client.</span></span> <span data-ttu-id="d83cc-353">つまり、プロパティやコマンドに関連付けられている X++ メソッドはありません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-353">In other words, the properties and commands have no associated X++ methods.</span></span> <span data-ttu-id="d83cc-354">ビュー モデルを拡張した後、追加のクライアントのみ **$data** オブジェクト経由でバインディングのプロパティおよびコマンドを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-354">After you extend the view model, the additional client-only properties and commands can be used in bindings via the **$data** object.</span></span>
-
-### <a name="technical-overview"></a><span data-ttu-id="d83cc-355">技術的概要</span><span class="sxs-lookup"><span data-stu-id="d83cc-355">Technical overview</span></span>
-
-<span data-ttu-id="d83cc-356">コントロール拡張フレームワークには、データ バインドおよびデータ アクセスを支援する多くの機能が用意されています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-356">The Control Extensibility Framework offers many functions that help with data bindings and data access.</span></span> <span data-ttu-id="d83cc-357">FMTContactControl.htm で使用されるいくつかの関数 (**$field$** や **$model** など) を使うと、HTML バインドからデータ ソースとそのフィールドにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-357">Some of the functions that are used in FMTContactControl.htm, such as **$field** or **$model**, make it easy to access the data source and its fields from the HTML bindings.</span></span> <span data-ttu-id="d83cc-358">これらの関数は、フレームワークによって定義された JavaScript 関数の HTML バインディングで使用される関数別名です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-358">These functions are functional aliases that are used in the HTML bindings for JavaScript functions that are defined by the framework.</span></span> <span data-ttu-id="d83cc-359">拡張された JavaScript ビュー モデル内では、等価の、非エイリアス関数は **$dyn.getField** および **$dyn.getModel** です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-359">Within the extended JavaScript view model, the equivalent, non-aliased functions are **$dyn.getField** and **$dyn.getModel**.</span></span> <span data-ttu-id="d83cc-360">また、**$** シンボルを使用して、拡張 JavaScript ビュー モデル内で jQuery を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-360">You can also use jQuery within the extended JavaScript view model by using the **$** symbol.</span></span> <span data-ttu-id="d83cc-361">次の例は、拡張 JavaScript ビュー モデルのコンストラクターを定義するために使用される標準パターンを示しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-361">The following example shows the standard pattern that is used to define a constructor for the extended JavaScript view model.</span></span> <span data-ttu-id="d83cc-362">この例では、**this** への参照を保存し、基本**コントロール** クラスの動作を適用してから、自動的に生成されたプロパティおよびコマンドと、拡張表示モデルからのプロパティおよびコマンドを結合します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-362">In this example, you save a reference to **this**, apply the base **Control** class behaviors, and then combine the automatically generated properties and commands with the properties and command from the extended view model.</span></span> 
-
-<span data-ttu-id="d83cc-363">[![x20](./media/x20.png)](./media/x20.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-363">[![x20](./media/x20.png)](./media/x20.png)</span></span> 
-
-<span data-ttu-id="d83cc-364">**self** 変数には、X++ ランタイム クラスから生成されたすべてのプロパティとコマンドが含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="d83cc-364">The **self** variable now contains all properties and commands that are generated from the X++ run-time class.</span></span> <span data-ttu-id="d83cc-365">次の例は、ビュー モデルを拡張するためのクライアント専用のプロパティを追加する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="d83cc-365">The following example shows how to add a client-only property to extend the view model.</span></span> 
-
-<span data-ttu-id="d83cc-366">[![x21](./media/x21.png)](./media/x21.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-366">[![x21](./media/x21.png)](./media/x21.png)</span></span> 
-
-<span data-ttu-id="d83cc-367">**self** 変数に、X++ の実行時クラスから生成されたすべてのプロパティおよびコマンドと、クライアント専用プロパティとして追加された **ActionTypes** プロパティも含まれるようになります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-367">The **self** variable will then contain all the properties and commands that are generated from the X++ run-time class, and also the **ActionTypes** property that was added as a client-only property.</span></span> <span data-ttu-id="d83cc-368">コントロールのビュー モデルを構築することに関連するトピックは他にもたくさんありますが、このチュートリアルの範囲外です。</span><span class="sxs-lookup"><span data-stu-id="d83cc-368">There are many more topics that are related to building view models for controls, but they are outside the scope of this tutorial.</span></span> <span data-ttu-id="d83cc-369">このチュートリアルでは、**FMTContactControl** のビュー モデルに変更を加える必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d83cc-369">For this tutorial, we don’t need to make any changes to the view model for **FMTContactControl**.</span></span> <span data-ttu-id="d83cc-370">したがって、FMTContactControl.js ファイルを閉じて次のセクションに進みます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-370">Therefore, you can close the FMTContactControl.js file and proceed to the next section.</span></span>
-
-## <a name="add-the-extensible-control-to-the-fleet-management-workspace"></a><span data-ttu-id="d83cc-371">フリート管理ワークスペースへの拡張可能コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="d83cc-371">Add the extensible control to the Fleet Management workspace</span></span>
-<span data-ttu-id="d83cc-372">ここで、**フリート管理クラーク** ワークスペースを更新します。これにより、このワークスペースで、完成したところの連絡先コントロールが使用されるようになります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-372">You will now update the **Fleet Management Clerk** workspace so that it uses the contact control that you just completed.</span></span>
-
-1. <span data-ttu-id="d83cc-373">ソリューション エクスプローラーで**フォーム**を展開してから、**FMTPickingUpTodayPart** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-373">In Solution Explorer, expand **Forms**, and then double-click **FMTPickingUpTodayPart**.</span></span> <span data-ttu-id="d83cc-374">フォーム デザイナーで、フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-374">The form opens in the form designer.</span></span>
-2. <span data-ttu-id="d83cc-375">フォーム デザイナーで、**デザイン** &gt; **PickingUpTodayGrid** と展開します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-375">In the form designer, expand **Design** &gt; **PickingUpTodayGrid**.</span></span>
-3. <span data-ttu-id="d83cc-376">既存の連絡コントロールがある場合は、それを削除します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-376">If there is an existing contact control, delete it.</span></span> <span data-ttu-id="d83cc-377">X++ に対して行われた変更をフォーム デザイナーが取得できるように、コントロールを削除して再度追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-377">You must remove and then re-add the control, so that the form designer picks up the X++ changes that you made.</span></span> <span data-ttu-id="d83cc-378">既存のコントロールを右クリックし、**削除** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-378">Right-click the existing control, and then click **Delete**.</span></span>
-4. <span data-ttu-id="d83cc-379">**PickingUpTodayGrid** を右クリックして **新規** をポイントし、**FMT 連絡先コントロール** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-379">Right-click **PickingUpTodayGrid**, point to **New**, and then click **FMT Contact Control**.</span></span>
-5. <span data-ttu-id="d83cc-380">追加したばかりの **FMTContactControl1** ノードをクリックし、**データ ソース** プロパティを **FMTCustomer** に設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-380">Click the **FMTContactControl1** node that you just added, and set the **Data Source** property to **FMTCustomer**.</span></span>
-6. <span data-ttu-id="d83cc-381">**FMTContactControl1** ノードを展開し、**画像**をクリックし、その後**プロパティ**ウィンドウに次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-381">Expand the **FMTContactControl1** node, click **Image**, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-   |  <span data-ttu-id="d83cc-382">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-382">Property</span></span>   |    <span data-ttu-id="d83cc-383">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-383">Value</span></span>    |
-   |-------------|-------------|
-   | <span data-ttu-id="d83cc-384">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-384">Data Source</span></span> | <span data-ttu-id="d83cc-385">FMTCustomer</span><span class="sxs-lookup"><span data-stu-id="d83cc-385">FMTCustomer</span></span> |
-   | <span data-ttu-id="d83cc-386">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-386">Data Field</span></span>  |    <span data-ttu-id="d83cc-387">画像</span><span class="sxs-lookup"><span data-stu-id="d83cc-387">Image</span></span>    |
-
-
-7. <span data-ttu-id="d83cc-388">新しいタイトル フィールドを作成する:</span><span class="sxs-lookup"><span data-stu-id="d83cc-388">Create new title fields:</span></span>
-   1.  <span data-ttu-id="d83cc-389">**タイトル フィールド** を右クリックし、**新しいタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-389">Right-click **Title Fields**, and then click **New Title Field**.</span></span>
-   2.  <span data-ttu-id="d83cc-390">作成したばかりの**タイトル フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-390">Click the **Title Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-       | <span data-ttu-id="d83cc-391">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-391">Property</span></span>    | <span data-ttu-id="d83cc-392">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-392">Value</span></span>       |
-       |-------------|-------------|
-       | <span data-ttu-id="d83cc-393">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-393">Name</span></span>        | <span data-ttu-id="d83cc-394">名</span><span class="sxs-lookup"><span data-stu-id="d83cc-394">FirstName</span></span>   |
-       | <span data-ttu-id="d83cc-395">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-395">Data Source</span></span> | <span data-ttu-id="d83cc-396">FMTCustomer</span><span class="sxs-lookup"><span data-stu-id="d83cc-396">FMTCustomer</span></span> |
-       | <span data-ttu-id="d83cc-397">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-397">Data Field</span></span>  | <span data-ttu-id="d83cc-398">名</span><span class="sxs-lookup"><span data-stu-id="d83cc-398">FirstName</span></span>   |
-
-   3.  <span data-ttu-id="d83cc-399">**タイトル フィールド** をもう一度右クリックし、**新しいタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-399">Right-click **Title Fields** again, and then click **New Title Field**.</span></span>
-   4.  <span data-ttu-id="d83cc-400">作成したばかりの**タイトル フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-400">Click the **Title Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-       | <span data-ttu-id="d83cc-401">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-401">Property</span></span>    | <span data-ttu-id="d83cc-402">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-402">Value</span></span>       |
-       |-------------|-------------|
-       | <span data-ttu-id="d83cc-403">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-403">Name</span></span>        | <span data-ttu-id="d83cc-404">姓</span><span class="sxs-lookup"><span data-stu-id="d83cc-404">LastName</span></span>    |
-       | <span data-ttu-id="d83cc-405">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-405">Data Source</span></span> | <span data-ttu-id="d83cc-406">FMTCustomer</span><span class="sxs-lookup"><span data-stu-id="d83cc-406">FMTCustomer</span></span> |
-       | <span data-ttu-id="d83cc-407">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-407">Data Field</span></span>  | <span data-ttu-id="d83cc-408">姓</span><span class="sxs-lookup"><span data-stu-id="d83cc-408">LastName</span></span>    |
-
-8. <span data-ttu-id="d83cc-409">新しい字幕フィールドを作成する:</span><span class="sxs-lookup"><span data-stu-id="d83cc-409">Create new subtitle fields:</span></span>
-   1. <span data-ttu-id="d83cc-410">**サブタイトル フィールド** を右クリックし、**新しいサブタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-410">Right-click **Subtitle Fields**, and then click **New Subtitle Field**.</span></span>
-   2. <span data-ttu-id="d83cc-411">作成したばかりの**字幕フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-411">Click the **Subtitle Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-      |       <span data-ttu-id="d83cc-412">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-412">Property</span></span>        |   <span data-ttu-id="d83cc-413">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-413">Value</span></span>    |
-      |-----------------------|------------|
-      |         <span data-ttu-id="d83cc-414">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-414">Name</span></span>          | <span data-ttu-id="d83cc-415">StartDate</span><span class="sxs-lookup"><span data-stu-id="d83cc-415">StartDate</span></span>  |
-      |      <span data-ttu-id="d83cc-416">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-416">Data Source</span></span>      | <span data-ttu-id="d83cc-417">FMTRental</span><span class="sxs-lookup"><span data-stu-id="d83cc-417">FMTRental</span></span>  |
-      |      <span data-ttu-id="d83cc-418">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-418">Data Field</span></span>       | <span data-ttu-id="d83cc-419">StartDate</span><span class="sxs-lookup"><span data-stu-id="d83cc-419">StartDate</span></span>  |
-      | <span data-ttu-id="d83cc-420">フォーマット式</span><span class="sxs-lookup"><span data-stu-id="d83cc-420">Formatting Expression</span></span> | <span data-ttu-id="d83cc-421">集荷 {0}</span><span class="sxs-lookup"><span data-stu-id="d83cc-421">Pickup {0}</span></span> |
-
-
-   3. <span data-ttu-id="d83cc-422">*<strong><em>サブタイトル フィールド</em></strong>* をもう一度右クリックし、*<strong><em>新しいサブタイトル フィールド</em>*</strong> をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-422">Right-click *<strong><em>Subtitle Fields</em></strong>* again, and then click *<strong><em>New Subtitle Field</em>*.</strong></span></span>
-   4. <span data-ttu-id="d83cc-423">作成したばかりの**字幕フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-423">Click the **Subtitle Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-      |       <span data-ttu-id="d83cc-424">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-424">Property</span></span>        |   <span data-ttu-id="d83cc-425">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-425">Value</span></span>    |
-      |-----------------------|------------|
-      |         <span data-ttu-id="d83cc-426">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-426">Name</span></span>          |  <span data-ttu-id="d83cc-427">EndDate</span><span class="sxs-lookup"><span data-stu-id="d83cc-427">EndDate</span></span>   |
-      |      <span data-ttu-id="d83cc-428">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-428">Data Source</span></span>      | <span data-ttu-id="d83cc-429">FMTRental</span><span class="sxs-lookup"><span data-stu-id="d83cc-429">FMTRental</span></span>  |
-      |      <span data-ttu-id="d83cc-430">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-430">Data Field</span></span>       |  <span data-ttu-id="d83cc-431">EndDate</span><span class="sxs-lookup"><span data-stu-id="d83cc-431">EndDate</span></span>   |
-      | <span data-ttu-id="d83cc-432">フォーマット式</span><span class="sxs-lookup"><span data-stu-id="d83cc-432">Formatting Expression</span></span> | <span data-ttu-id="d83cc-433">返品{0}</span><span class="sxs-lookup"><span data-stu-id="d83cc-433">Return {0}</span></span> |
-
-
-   5. <span data-ttu-id="d83cc-434">**サブタイトル フィールド** をもう一度右クリックし、**新しいサブタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-434">Right-click **Subtitle Fields** again, and then click **New Subtitle Field**.</span></span>
-   6. <span data-ttu-id="d83cc-435">作成したばかりの**字幕フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-435">Click the **Subtitle Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-      |  <span data-ttu-id="d83cc-436">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-436">Property</span></span>   |       <span data-ttu-id="d83cc-437">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-437">Value</span></span>        |
-      |-------------|--------------------|
-      |    <span data-ttu-id="d83cc-438">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-438">Name</span></span>     | <span data-ttu-id="d83cc-439">VehicleDescription</span><span class="sxs-lookup"><span data-stu-id="d83cc-439">VehicleDescription</span></span> |
-      | <span data-ttu-id="d83cc-440">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-440">Data Source</span></span> |     <span data-ttu-id="d83cc-441">FMTVehicle</span><span class="sxs-lookup"><span data-stu-id="d83cc-441">FMTVehicle</span></span>     |
-      | <span data-ttu-id="d83cc-442">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-442">Data Field</span></span>  |    <span data-ttu-id="d83cc-443">説明</span><span class="sxs-lookup"><span data-stu-id="d83cc-443">Description</span></span>     |
-
-
-   7. <span data-ttu-id="d83cc-444">Ctrl + S を押して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-444">Press Ctrl+S to save your changes.</span></span>
-
-9. <span data-ttu-id="d83cc-445">グリッドを右クリックし、**コピー**をクリックして **PickingUpTodayGrid** をコピーします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-445">Copy **PickingUpTodayGrid** by right-clicking in the grid and clicking **Copy**.</span></span>
-10. <span data-ttu-id="d83cc-446">ソリューション エクスプローラーで、**フォーム** &gt; **FMTReturningTodayPart** をクリックしてから、**FMTReturningTodayPart** をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-446">In Solution Explorer, click **Forms** &gt; **FMTReturningTodayPart**, and then double-click **FMTReturningTodayPart**.</span></span> <span data-ttu-id="d83cc-447">フォーム デザイナーで、フォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-447">The form opens in the form designer.</span></span>
-11. <span data-ttu-id="d83cc-448">**デザイン**を展開し、**ReturningTodayGrid** を右クリックし、その後**削除**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-448">Expand **Design**, right-click **ReturningTodayGrid**, and then click **Delete**.</span></span>
-12. <span data-ttu-id="d83cc-449">**デザイン** を右クリックして **貼り付け** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-449">Right-click **Design**, and then click **Paste**.</span></span>
-13. <span data-ttu-id="d83cc-450">**FMTReturningTodayPart** フォームに追加したばかりの **PickingUpTodayGrid** グリッドを選択します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-450">Select the **PickingUpTodayGrid** grid that you just added to the **FMTReturningTodayPart** form.</span></span> <span data-ttu-id="d83cc-451">**Name** プロパティを **ReturningTodayGrid** に設定し、Ctrl+S を押して変更を **EMTReturningTodayPart** フォームに保存します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-451">Set the **Name** property to **ReturningTodayGrid**, and then press Ctrl+S to save the changes to the **EMTReturningTodayPart** form.</span></span>
-14. <span data-ttu-id="d83cc-452">ソリューション エクスプローラーで、**FMTRentalRatesPart** フォームを検索します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-452">In Solution Explorer, find the **FMTRentalRatesPart** form.</span></span> <span data-ttu-id="d83cc-453">フォームをダブルクリックして、フォームデザイナーで開き、**Design** &gt; **RentalRatesGrid** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-453">Double-click the form to open it in the form designer, and then click **Design** &gt; **RentalRatesGrid**.</span></span>
-15. <span data-ttu-id="d83cc-454">**RentalRatesGrid** から各フィールドを削除します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-454">Delete each field from **RentalRatesGrid**.</span></span> <span data-ttu-id="d83cc-455">フィールドを削除するには、最初のフィールドをクリックし、Shift キーを押しながら最後のフィールドをクリックし、Del キーを押します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-455">To remove the fields, click the first field, hold down the Shift key while you click the last field, and then press Delete.</span></span>
-16. <span data-ttu-id="d83cc-456">グリッド内を右クリックして **新規** をポイントし、**FMT 連絡先コントロール** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-456">Right-click in the grid, point to **New**, and then click **FMT Contact Control**.</span></span>
-17. <span data-ttu-id="d83cc-457">**FMTContactControl1** を展開し、**画像**をクリックし、その後**プロパティ**ウィンドウに次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-457">Expand **FMTContactControl1**, click **Image**, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-    |  <span data-ttu-id="d83cc-458">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-458">Property</span></span>   |      <span data-ttu-id="d83cc-459">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-459">Value</span></span>      |
-    |-------------|-----------------|
-    | <span data-ttu-id="d83cc-460">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-460">Data Source</span></span> | <span data-ttu-id="d83cc-461">FMTVehicleModel</span><span class="sxs-lookup"><span data-stu-id="d83cc-461">FMTVehicleModel</span></span> |
-    | <span data-ttu-id="d83cc-462">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-462">Data Field</span></span>  |      <span data-ttu-id="d83cc-463">画像</span><span class="sxs-lookup"><span data-stu-id="d83cc-463">Image</span></span>      |
-
-
-18. <span data-ttu-id="d83cc-464">**タイトル フィールド** を右クリックし、**新しいタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-464">Right-click **Title Fields**, and then click **New Title Field**.</span></span>
-19. <span data-ttu-id="d83cc-465">作成したばかりのタイトル フィールド ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-465">Click the title field node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-    |  <span data-ttu-id="d83cc-466">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-466">Property</span></span>   |      <span data-ttu-id="d83cc-467">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-467">Value</span></span>      |
-    |-------------|-----------------|
-    |    <span data-ttu-id="d83cc-468">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-468">Name</span></span>     |  <span data-ttu-id="d83cc-469">VehicleModel</span><span class="sxs-lookup"><span data-stu-id="d83cc-469">VehicleModel</span></span>   |
-    | <span data-ttu-id="d83cc-470">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-470">Data Source</span></span> | <span data-ttu-id="d83cc-471">FMTVehicleModel</span><span class="sxs-lookup"><span data-stu-id="d83cc-471">FMTVehicleModel</span></span> |
-    | <span data-ttu-id="d83cc-472">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-472">Data Field</span></span>  |      <span data-ttu-id="d83cc-473">モデル</span><span class="sxs-lookup"><span data-stu-id="d83cc-473">Model</span></span>      |
-
-
-20. <span data-ttu-id="d83cc-474">**サブタイトル フィールド** を右クリックし、**新しいサブタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-474">Right-click **Subtitle Fields**, and then click **New Subtitle Field**.</span></span>
-21. <span data-ttu-id="d83cc-475">作成したばかりの**字幕フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-475">Click the **Subtitle Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-    |  <span data-ttu-id="d83cc-476">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-476">Property</span></span>   |     <span data-ttu-id="d83cc-477">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-477">Value</span></span>      |
-    |-------------|----------------|
-    |    <span data-ttu-id="d83cc-478">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-478">Name</span></span>     |  <span data-ttu-id="d83cc-479">VehicleMake</span><span class="sxs-lookup"><span data-stu-id="d83cc-479">VehicleMake</span></span>   |
-    | <span data-ttu-id="d83cc-480">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-480">Data Source</span></span> | <span data-ttu-id="d83cc-481">FMTVehicleMake</span><span class="sxs-lookup"><span data-stu-id="d83cc-481">FMTVehicleMake</span></span> |
-    | <span data-ttu-id="d83cc-482">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-482">Data Field</span></span>  |      <span data-ttu-id="d83cc-483">製造業者</span><span class="sxs-lookup"><span data-stu-id="d83cc-483">Make</span></span>      |
-
-
-22. <span data-ttu-id="d83cc-484">**サブタイトル フィールド** を右クリックし、**新しいサブタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-484">Right-click **Subtitle Fields**, and then click **New Subtitle Field**.</span></span>
-23. <span data-ttu-id="d83cc-485">作成したばかりの**字幕フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-485">Click the **Subtitle Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-    |       <span data-ttu-id="d83cc-486">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-486">Property</span></span>        |                                                                                                    <span data-ttu-id="d83cc-487">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-487">Value</span></span>                                                                                                    |
-    |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |         <span data-ttu-id="d83cc-488">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-488">Name</span></span>          |                                                                                                 <span data-ttu-id="d83cc-489">RatePerDay</span><span class="sxs-lookup"><span data-stu-id="d83cc-489">RatePerDay</span></span>                                                                                                  |
-    |      <span data-ttu-id="d83cc-490">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-490">Data Source</span></span>      |                                                                                                <span data-ttu-id="d83cc-491">FMTModelRate</span><span class="sxs-lookup"><span data-stu-id="d83cc-491">FMTModelRate</span></span>                                                                                                 |
-    |      <span data-ttu-id="d83cc-492">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-492">Data Field</span></span>       | <span data-ttu-id="d83cc-493">RaterPerDay <strong>注:</strong> <strong>データ フィールド</strong> 値はテーブル フィールド値に一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-493">RaterPerDay <strong>Note:</strong> The <strong>Data Field</strong> value must match the table field name.</span></span> <span data-ttu-id="d83cc-494">スペル エラーを修正すると、値が一致しない場合は、ランタイム エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-494">If you correct the spelling error, the values won't match, and you will receive a run-time error.</span></span> |
-    | <span data-ttu-id="d83cc-495">フォーマット式</span><span class="sxs-lookup"><span data-stu-id="d83cc-495">Formatting Expression</span></span> |                                                                                                <span data-ttu-id="d83cc-496">1 日当たりの ${0}</span><span class="sxs-lookup"><span data-stu-id="d83cc-496">${0} per day</span></span>                                                                                                 |
-
-
-24. <span data-ttu-id="d83cc-497">**サブタイトル フィールド** を右クリックし、**新しいサブタイトル フィールド** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-497">Right-click **Subtitle Fields**, and then click **New Subtitle Field**.</span></span>
-25. <span data-ttu-id="d83cc-498">作成したばかりの**字幕フィールド** ノードをクリックし、**プロパティ** ウィンドウで次のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-498">Click the **Subtitle Field** node that you just created, and then, in the **Properties** pane, set the following properties.</span></span>
-
-
-    |       <span data-ttu-id="d83cc-499">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d83cc-499">Property</span></span>        |     <span data-ttu-id="d83cc-500">先頭値</span><span class="sxs-lookup"><span data-stu-id="d83cc-500">Value</span></span>     |
-    |-----------------------|---------------|
-    |         <span data-ttu-id="d83cc-501">氏名</span><span class="sxs-lookup"><span data-stu-id="d83cc-501">Name</span></span>          |  <span data-ttu-id="d83cc-502">RatePerWeek</span><span class="sxs-lookup"><span data-stu-id="d83cc-502">RatePerWeek</span></span>  |
-    |      <span data-ttu-id="d83cc-503">データ ソース</span><span class="sxs-lookup"><span data-stu-id="d83cc-503">Data Source</span></span>      | <span data-ttu-id="d83cc-504">FMTModelRate</span><span class="sxs-lookup"><span data-stu-id="d83cc-504">FMTModelRate</span></span>  |
-    |      <span data-ttu-id="d83cc-505">データ フィールド</span><span class="sxs-lookup"><span data-stu-id="d83cc-505">Data Field</span></span>       |  <span data-ttu-id="d83cc-506">RatePerWeek</span><span class="sxs-lookup"><span data-stu-id="d83cc-506">RatePerWeek</span></span>  |
-    | <span data-ttu-id="d83cc-507">フォーマット式</span><span class="sxs-lookup"><span data-stu-id="d83cc-507">Formatting Expression</span></span> | <span data-ttu-id="d83cc-508">週ごとの ${0}</span><span class="sxs-lookup"><span data-stu-id="d83cc-508">${0} per week</span></span> |
-
-
-26. <span data-ttu-id="d83cc-509">Ctrl+S を押し、変更を **FMTRentalRatesPart** に保存します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-509">Press Ctrl+S to save your changes to **FMTRentalRatesPart**.</span></span>
-27. <span data-ttu-id="d83cc-510">ソリューション エクスプローラーで、**FMTClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-510">In Solution Explorer, right-click the **FMTClerkWorkspace** form, and then click **Set as Startup Object**.</span></span>
-28. <span data-ttu-id="d83cc-511">Ctrl+F5 キーを押し、Internet Explorer で更新された連絡先コントロールを開きます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-511">Press Ctrl+F5 to open the updated contact control in Internet Explorer.</span></span> <span data-ttu-id="d83cc-512">**注記:** JavaScript エラーが発生した場合は、ブラウザーが新しい JavaScript ファイルを読み込むように、Internet Explorer のキャッシュをクリアする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-512">**Note:** If you receive a JavaScript error, you might have to clear the Internet Explorer cache, so that the browser loads the new JavaScript file:</span></span>
-    1.  <span data-ttu-id="d83cc-513">デバッガーを開くように求めるメッセージが表示されたら、**いいえ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-513">When you're prompted to open the debugger, click **No**.</span></span>
-    2.  <span data-ttu-id="d83cc-514">Internet Explorer が開いているときに、F12 キーを押し (または **設定** &gt; **F12 開発者ツール** をクリックし)、Ctrl+R を押します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-514">While Internet Explorer is open, press F12 (or click **Settings** &gt; **F12 Developer Tools**), and then press Ctrl+R.</span></span>
-    3.  <span data-ttu-id="d83cc-515">**ブラウザー キャッシュのクリア** ダイアログ ボックスで、**はい**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d83cc-515">In the **Clear Browser Cache** dialog box, click **Yes**.</span></span>
-    4.  <span data-ttu-id="d83cc-516">Ctrl + F5 キーを押して、ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-516">Reload the page by pressing Ctrl+F5.</span></span>
-
-        <span data-ttu-id="d83cc-517">[![Ext6](./media/ext6-1024x428.png)](./media/ext6.png)</span><span class="sxs-lookup"><span data-stu-id="d83cc-517">[![Ext6](./media/ext6-1024x428.png)](./media/ext6.png)</span></span>
-
-<span data-ttu-id="d83cc-518">このチュートリアルでは、コントロールのデザイン時とサーバー側の動作を定義するときに X++ を使用する方法、および UI およびユーザー操作パターンをデザインするときに HTML および JavaScript ベースの強力なフレームワークを使用する方法について説明しました。</span><span class="sxs-lookup"><span data-stu-id="d83cc-518">In this tutorial, you've seen how you can use X++ when you define the design-time and server-side behaviors for a control, and how you can consume a powerful HTML-based and JavaScript-based framework when you design the UI and user interaction patterns.</span></span> <span data-ttu-id="d83cc-519">コントロール拡張フレームワークは、コントロールのモデル化された動作とその物理的なマニフェストの区切りを提供します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-519">The Control Extensibility Framework helps provide a separation between the modeled behavior of a control and its physical manifestation.</span></span> <span data-ttu-id="d83cc-520">ベスト プラクティスは、拡張可能コントロールを作成するときにデータ、メタデータ、および UI の間の疎結合を管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-520">As a best practice, you should try to maintain this loose coupling between data, metadata, and UI when you build extensible controls.</span></span>
-
-## <a name="bidirectional-or-right-to-left-support"></a><span data-ttu-id="d83cc-521">双方向または右から左へのサポート</span><span class="sxs-lookup"><span data-stu-id="d83cc-521">Bidirectional or right-to-left support</span></span>
-<span data-ttu-id="d83cc-522">拡張可能コントロールの右から左 (RTL) サポートを検証するには、HTML ドキュメントの**dir** (方向) 属性を設定するだけです。</span><span class="sxs-lookup"><span data-stu-id="d83cc-522">To validate right-to-left (RTL) support for your extensible control, you simply need to set the **dir** (direction) attribute on the HTML document.</span></span> <span data-ttu-id="d83cc-523">この属性が変更されると、ブラウザーは、コントロールのレイアウトの方向を自動的に変更します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-523">When this attribute is changed, the browser will automatically change the layout direction of your control.</span></span> <span data-ttu-id="d83cc-524">このレイアウトと競合するすべてのスタイルがコントロールで実装されていないことを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d83cc-524">You should make sure that your control doesn’t implement any styling which interferes with this layout.</span></span> <span data-ttu-id="d83cc-525">この属性を手動で設定するのではなく、フォームにコントロールを配置して、右から左へ読み書きする言語を選択することでも検証できます。</span><span class="sxs-lookup"><span data-stu-id="d83cc-525">Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language.</span></span> <span data-ttu-id="d83cc-526">RTL 言語を選択すると、クライアントは **dir** 属性も適切に更新します。</span><span class="sxs-lookup"><span data-stu-id="d83cc-526">Selecting a RTL language will cause the client to also update the **dir** attribute appropriately.</span></span> <span data-ttu-id="d83cc-527">詳細については、HTML 標準で [ディレクトリ属性](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d83cc-527">For more information, see [dir attribute](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) in the HTML standards.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="build-extensible-control.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>build-extensible-control.abbbca.073c13cd083f6053b1e59011dd4c8c4a57e924de.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>073c13cd083f6053b1e59011dd4c8c4a57e924de</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\user-interface\build-extensible-control.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Build extensible controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能コントロールの構築</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Build extensible controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能なコントロールの構築</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Prerequisites</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要条件</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>For more information, see <bpt id="p1">[</bpt>Access development instances<ept id="p1">](../dev-tools/access-instances.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「<bpt id="p1">[</bpt>開発インスタンスへのアクセス<ept id="p1">](../dev-tools/access-instances.md)</ept>」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The Control Extensibility Framework lets you create new application controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール拡張フレームワークを使用すると、新しいアプリケーション コントロールを作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>You can use the same tools that Microsoft uses to build controls that are already present in the program, such as the chart control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft では、グラフ コントロールなど、プログラムで既に記述されている制御を構築するために使用するのと同じツールを使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Three important artifacts are involved in the process of developing an extensible control:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能なコントロールを開発するプロセスには、次の 3 つの重要なアーティファクトが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">**</bpt>The X++ build class<ept id="p1">**</ept> – The build class lets a developer define the properties that appear in the Microsoft Visual Studio property sheet for the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>X++ ビルド クラス<ept id="p1">**</ept> – ビルド クラスにより開発者は、コントロールの Microsoft Visual Studio のプロパティ シートに表示されるプロパティを定義することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The developer can also define the modeling behavior for the control when it's used in the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者は、コントロールがフォーム デザイナーで使用されているときに、コントロールのモデリング動作を定義することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>The build class is consumed by the run-time class to initialize the state of the control based on the value of properties in the property sheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド クラスは、プロパティ シートのプロパティの値に基づいてコントロールの状態を初期化するために、ランタイム クラスによって消費されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>The X++ run-time class<ept id="p1">**</ept> – The run-time class lets a developer define server-side business logic and data access patterns for an extensible control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>X++ ランタイム クラス<ept id="p1">**</ept> – ランタイム クラスにより開発者は、拡張可能なコントロールのサーバー側のビジネス ロジックとデータへのアクセスのパターンを定義できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Two concepts that are specific to building extensible controls are the <bpt id="p1">*</bpt>properties<ept id="p1">*</ept> and <bpt id="p2">*</bpt>commands<ept id="p2">*</ept> that the X++ class defines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能なコントロールのビルドに特有の概念には、X++ クラスで定義される<bpt id="p1">*</bpt>プロパティ<ept id="p1">*</ept>と<bpt id="p2">*</bpt>コマンド<ept id="p2">*</ept>の 2 つがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Each property and command that is defined is serialized into a JavaScript view model at run time, and can be consumed by the client parts of the extensible control (the HTML and JavaScript).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">定義されている各プロパティとコマンドは、実行時に JavaScript ビュー モデルにシリアル化され、拡張可能なコントロール (HTML および JavaScript) のクライアント部分によって消費される可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>These properties and commands are the main channels for moving information between the server-side and client-side parts of the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのプロパティとコマンドは、コントロールのサーバー側とクライアント側の間で情報を移動するための主要なチャネルです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">**</bpt>The control HTML and JavaScript<ept id="p1">**</ept> – Each control uses HTML, JavaScript, and CSS files to define control visualization and client-side interaction patterns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コントロール HTML および JavaScript<ept id="p1">**</ept> – 各コントロールは、視覚化およびクライアント側の相互作用パターンの制御を定義するために HTML、JavaScript および CSS ファイルを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>By using the Microsoft Dynamics HTML binding syntax together with jQuery, a developer can consume the properties and commands that are defined in X++ to design powerful data-driven UI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">jQuery と共に Microsoft Dynamics HTML バインディング構文を使用することで、開発者は強力なデータ駆動型 UI を設計するために X++ で定義されているプロパティとコマンドを使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>All three artifacts of extensible control development are explained in more detail in the following sections.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能コントロール開発のすべての 3 つのコンポーネントについては、以降のセクションで詳しく説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Key concepts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">重要な概念</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Defining an extensible control's design-time behavior</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能なコントロールのデザイン時の動作を定義する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Defining an extensible control's run-time behavior</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能な実行デザイン時の動作を定義する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Defining an extensible control's view by using HTML and CSS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HTML と CSS を使用して、拡張可能なコントロールのビューを定義する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Defining an extensible control's view model by using JavaScript</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JavaScript を使用して拡張可能なコントロールのビュー モデルを定義する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セットアップ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Import the tutorial project and transactional data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル プロジェクトおよびトランザクション データのインポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Use Visual Studio to import the tutorial project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用してチュートリアル プロジェクトをインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The tutorial project includes the artifacts that you will use to complete this tutorial.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Use Visual Studio to open the FMTutorial project and load the data for the tutorial.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>You will use the <bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept> class to load data for the Fleet Management tutorial.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理チュートリアルのデータを読み込むために、<bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept> クラスを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Download the Fleet Management sample from <ph id="ph1">&lt;https://github.com/Microsoft/FMLab&gt;</ph>, save it to <bpt id="p1">**</bpt>C:<ph id="ph2">\\</ph><ept id="p1">**</ept>, and unzip it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理のサンプルを <ph id="ph1">&lt;https://github.com/Microsoft/FMLab&gt;</ph> からダウンロードし、<bpt id="p1">**</bpt>C:<ph id="ph2">\\</ph><ept id="p1">**</ept> に保存してから解凍します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>On the desktop, double-click the Visual Studio shortcut to open the development environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>On the <bpt id="p1">&lt;strong&gt;</bpt>Dynamics 365 **menu, click **Import Project<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Dynamics 365 **メニューで、**プロジェクトのインポート<ept id="p1">&lt;/strong&gt;</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> dialog box, next to the <bpt id="p2">**</bpt>File name<ept id="p2">**</ept> text box, click the ellipsis button (...).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロジェクトのインポート<ept id="p1">**</ept> ダイアログ ボックスで、<bpt id="p2">**</bpt>ファイル名<ept id="p2">**</ept>テキスト ボックスの隣にある、省略記号ボタン (...) をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>In the <bpt id="p1">**</bpt>Select the file to import<ept id="p1">**</ept> dialog box, browse to <bpt id="p2">**</bpt>C:\FMLab<ept id="p2">**</ept>, click <bpt id="p3">**</bpt>FMTutorialDataModel.axpp<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>Open<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>インポートするファイルの選択<ept id="p1">**</ept>ダイアログ ボックスで、<bpt id="p2">**</bpt>C:\FMLab<ept id="p2">**</ept> を参照して <bpt id="p3">**</bpt>FMTutorialDataModel.axpp<ept id="p3">**</ept> をクリックしてから<bpt id="p4">**</bpt>開く<ept id="p4">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the <bpt id="p1">**</bpt>Project file location<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>C:\FMLab<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロジェクト ファイルの場所<ept id="p1">**</ept>フィールドに、<bpt id="p2">**</bpt>C:\FMLab<ept id="p2">**</ept> と入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Select the <bpt id="p1">**</bpt>Overwrite Elements<ept id="p1">**</ept> check box and the <bpt id="p2">**</bpt>Current solution<ept id="p2">**</ept> option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>要素の上書き<ept id="p1">**</ept> チェック ボックスをオンにし、<bpt id="p2">**</bpt>現在のソリューション<ept id="p2">**</ept> オプションをオンにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The following screen shot shows the completed <bpt id="p1">**</bpt>Import Project<ept id="p1">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のスクリーン ショットは、完了した <bpt id="p1">**</bpt>プロジェクトのインポート<ept id="p1">**</ept> ダイアログボックスを示しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext1<ept id="p1">](./media/ext1.png)](./media/ext1.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext1<ept id="p1">](./media/ext1.png)](./media/ext1.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In Solution Explorer, under the <bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept> project, expand <bpt id="p2">**</bpt>Classes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーの <bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept> プロジェクトで<bpt id="p2">**</bpt>クラス<ept id="p2">**</ept>を展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Right-click <bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Set as Startup Object<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>スタートアップ オブジェクトとして設定<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>On the <bpt id="p1">**</bpt>BUILD<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Rebuild Solution<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ビルド<ept id="p1">**</ept>メニューで、<bpt id="p2">**</bpt>ソリューションの再構築<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>You use the rebuild to make sure that all the files in the project are built, regardless of timestamps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タイムスタンプに関係なく、プロジェクトのすべてのファイルを確実に作成するには、リビルドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>You can view the build progress in the <bpt id="p1">**</bpt>Output<ept id="p1">**</ept> window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>出力<ept id="p1">**</ept> ウィンドウでビルドの進行状況を表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>After the build is completed, press Ctrl+F5 to run the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルドが完了した後、Ctrl + F5 を押してプロジェクトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The <bpt id="p1">**</bpt>Login<ept id="p1">**</ept> form closes when authentication succeeds, and then the data is loaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ログイン<ept id="p1">**</ept> フォームは、認証が成功すると閉じ、データが読み込まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Set up aggregate data</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集計データの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Services データベースに集計データを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>These steps must be completed immediately after you use the <bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept> class to import data.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">これらの手順は <bpt id="p1">**</bpt>FMTDataHelper<ept id="p1">**</ept> クラスを使用してデータをインポートした直後に完了する必要があります。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>You may <bpt id="p1">**</bpt>NOT<ept id="p1">**</ept> need to do these steps if the <bpt id="p2">[</bpt>aggregate measure is "InMemoryRealTime"<ept id="p2">](../analytics/model-aggregate-data.md)</ept>, depending on what tutorial files you have.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">所持しているチュートリアル ファイルに応じて、<bpt id="p2">[</bpt>集計尺度が "InMemoryRealTime"<ept id="p2">](../analytics/model-aggregate-data.md)</ept> の場合に、これらのステップを実行する必要が <bpt id="p1">**</bpt>ない<ept id="p1">**</ept> 場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In Solution Explorer, under <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>FMTAggregateMeasurement<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーの<bpt id="p1">**</bpt>分析<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>FMTAggregateMeasurement<ept id="p2">**</ept> をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>In the designer, right-click <bpt id="p1">**</bpt>FMTAggregateMeasurement<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Deploy and Process<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイナーで、<bpt id="p1">**</bpt>FMTAggregateMeasurement<ept id="p1">**</ept> を右クリックしてから、<bpt id="p2">**</bpt>配置と処理<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Preview the clerk workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラーク ワークスペースをプレビュー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Before you begin to build the contact control, look at the appearance of the current implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールの構築を開始する前に、現在の実装の外観を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>In the following sections, you will use the Control Extensibility Framework to enrich the visualization of the controls and the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のセクションでは、コントロール拡張フレームワークを使用して、コントロールとフォームの視覚化を強化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>In Solution Explorer, expand <bpt id="p1">**</bpt>Forms<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTClerkWorkspace<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Set as Startup Object<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで<bpt id="p1">**</bpt>フォーム<ept id="p1">**</ept>を展開し、<bpt id="p2">**</bpt>FMTClerkWorkspace<ept id="p2">**</ept> を右クリックしてから、<bpt id="p3">**</bpt>スタートアップ オブジェクトとして設定<ept id="p3">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Press Ctrl+F5 to open the <bpt id="p1">**</bpt>Fleet management clerk<ept id="p1">**</ept> page in Internet Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl+F5 キーを押して、Internet Explorer で <bpt id="p1">**</bpt>フリート管理係<ept id="p1">**</ept> ページを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>As the following screen shot shows, the data on this page appears as a simple grid in a list style that contains several string and date controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のスクリーン ショットに示されているように、複数の文字列および日付を含むリスト スタイルの単純なグリッドとしてこのページではデータが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext2<ept id="p1">](./media/ext2-1024x515.png)](./media/ext2.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext2<ept id="p1">](./media/ext2-1024x515.png)](./media/ext2.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Exit Internet Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer を終了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Modify the build class for the contact control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールのビルド クラスの変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>To save time, you will work on a partially completed extensible control that is named the contact control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">時間を節約するために、連絡先コントロールと呼ばれる部分的に完了した拡張可能なコントロールで作業します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>You will extend the contact control to complete its design, run-time, and visualization behaviors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールを拡張して、そのデザイン、実行時、および視覚化の動作を完成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>The partially completed contact control already supports multiple title fields, subfields, and action buttons.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">部分的に完了した連絡先コントロールは、複数のタイトル フィールド、サブフィールド、およびアクション ボタンを既にサポートしています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>However, it doesn't currently support an image.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、現在画像はサポートされていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>To add image support, you must extend the design experience for the contact control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ サポートを追加するには、連絡先管理のデザイン エクスペリエンスを拡張する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>You will add a data field that can specify image data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ データを指定可能なデータ フィールドを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Technical overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">技術的概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>To see an example of a build class, in Solution Explorer, expand <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>View Code<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド クラスの例を表示するには、ソリューション エクスプローラーで <bpt id="p1">**</bpt>クラス<ept id="p1">**</ept> を展開し、<bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept> を右クリックして、<bpt id="p3">**</bpt>コードを表示<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>The class code appears in the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード エディターにクラス コードが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source><bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> is the build class for the contact control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> は連絡先コントロールのビルド クラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>For each extensible control, the build class defines the properties that the control shows in the property sheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各拡張可能コントロールについては、ビルド クラスは、コントロールがプロパティ シートに表示されるプロパティを定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>The build class also defines the modeling experience for the control in the Visual Studio form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド クラスは、Visual Studio フォーム デザイナーのコントロールのモデリング経験も定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>There are three primary design-time behaviors that you can define for an extensible control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能なコントロールには、3 つの主要なデザイン時のビヘイビアを定義できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Each behavior is declaratively defined by using a <bpt id="p1">**</bpt>FormDesign<ept id="p1">**</ept> attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各動作では、<bpt id="p1">**</bpt>FormDesign<ept id="p1">**</ept> 属性を使用して宣言的に定義されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Here are the design-time behaviors that you can define:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">定義できるデザイン時の動作を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> – You can specify the control name that appears in the form designer when you add the control to a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>名前<ept id="p1">**</ept> – コントロールをフォームに追加すると、フォーム デザイナに表示されるコントロール名を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>To specify the name, add a <bpt id="p1">**</bpt>FormDesignControlAttribute<ept id="p1">**</ept> attribute to the build class declaration of the extensible control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前を指定するには、拡張可能コントロールのビルド クラス宣言に <bpt id="p1">**</bpt>FormDesignControlAttribute<ept id="p1">**</ept> 属性を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>For example, the following declaration of the <bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> class shows the attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次の <bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> クラスの申告は、属性を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x1<ept id="p1">](./media/x1.png)](./media/x1.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x1<ept id="p1">](./media/x1.png)](./media/x1.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source><bpt id="p1">**</bpt>Designer properties<ept id="p1">**</ept> – These are the properties that you see in the property sheet when you add the control to a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デザイナー プロパティ<ept id="p1">**</ept> - これらは、コントロールをフォームに追加すると、プロパティ シートに表示されるプロパティです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>There are several attributes that let you add various types of designer properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さまざまなタイプのデザイナー プロパティを追加できる属性がいくつかあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>For example, the <bpt id="p1">**</bpt>FormDesignPropertyAttribute<ept id="p1">**</ept> attribute adds a property to the property sheet, and the property name and the section are supplied as arguments to the attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>FormDesignPropertyAttribute<ept id="p1">**</ept> 属性はプロパティ シートにプロパティを追加し、プロパティ名およびセクションが属性への引数として指定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>For example, the following code adds the <bpt id="p1">**</bpt>Action Name<ept id="p1">**</ept> property to the <bpt id="p2">**</bpt>FMTContactControlAction<ept id="p2">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のコードは、<bpt id="p1">**</bpt>アクション名<ept id="p1">**</ept>プロパティを <bpt id="p2">**</bpt>FMTContactControlAction<ept id="p2">**</ept> クラスに追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x2<ept id="p1">](./media/x2.png)](./media/x2.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x2<ept id="p1">](./media/x2.png)](./media/x2.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>The following screen shot shows how this property appears in the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane in Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のスクリーン ショットは、このプロパティが Visual Studio の <bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウにどのように表示されるかを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext3<ept id="p1">](./media/ext3.png)](./media/ext3.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext3<ept id="p1">](./media/ext3.png)](./media/ext3.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source><bpt id="p1">**</bpt>Child design components<ept id="p1">**</ept> – These are child nodes that you see after you add the control to a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>子デザイン コンポーネント<ept id="p1">**</ept> - これらは、コントロールをフォームに追加した後に表示される子ノードです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>There are two types of child design components: leaf and leaf collection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">子の設計コンポーネントには、リーフとリーフ コレクションの 2 つのタイプがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>A leaf is defined by using a <bpt id="p1">**</bpt>FormDesignComponentAttribute<ept id="p1">**</ept> attribute on an X++ method that accepts or returns another build class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リーフは、別のビルド クラスを受け入れるか、返す X++ メソッドの <bpt id="p1">**</bpt>FormDesignComponentAttribute<ept id="p1">**</ept> 属性を使用して定義されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>The build class determines the properties that the leaf has in the property sheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド クラスは、リーフがプロパティ シートに持つプロパティを決定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>A leaf collection is defined by using a <bpt id="p1">**</bpt>FormDesignComponentCollectionAttribute<ept id="p1">**</ept> attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FormDesignComponentCollectionAttribute<ept id="p1">**</ept> 属性を使用して定義されるリーフ コレクション。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>The allowable leaf types for the collection are defined by using <bpt id="p1">**</bpt>FormDesignComponentValidChildAttribute<ept id="p1">**</ept> attributes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コレクションの許容リーフ タイプは、<bpt id="p1">**</bpt>FormDesignComponentValidChildAttribute<ept id="p1">**</ept> 属性を使用して定義されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>For example, the following code adds a leaf collection that is named <bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> for the <bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のコードは、<bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept> クラスの<bpt id="p1">**</bpt>アクション<ept id="p1">**</ept>という名前のリーフ コレクションを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x3<ept id="p1">](./media/x3.png)](./media/x3.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x3<ept id="p1">](./media/x3.png)](./media/x3.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>The following screen shot shows how the specified child design component appears when you add the control to a form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のスクリーン ショットは、コントロールをフォームに追加する場合に、指定された子デザイン コンポーネントがどのように表示されるかを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext4<ept id="p1">](./media/ext4.png)](./media/ext4.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext4<ept id="p1">](./media/ext4.png)](./media/ext4.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Tutorial steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアルの手順</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Check that the code for the <bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> class appears in the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード エディターで表示される <bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> クラスのコードを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>If it doesn't, in Solution Explorer, expand <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>View Code<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そうされない場合は、ソリューション エクスプローラーで<bpt id="p1">**</bpt>クラス<ept id="p1">**</ept>を展開し、<bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept> を右クリックして、<bpt id="p3">**</bpt>コードを表示<ept id="p3">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Add a child design component to the FMTBuildContactControl class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">子デザイン コンポーネントを FMTBuildContactControl クラスに追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>A child design component lets a developer who places the control in a form to specify the image that appears on the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">子デザイン コンポーネントを使用すると、フォームにコントロールを設置した開発者は、コントロールに表示されるイメージを指定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>In this step, you will add the <bpt id="p1">**</bpt>FormDesignComponentAttribute<ept id="p1">**</ept> attribute to create a new entry in the property sheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この手順では、<bpt id="p1">**</bpt>FormDesignComponentAttribute<ept id="p1">**</ept> 属性を追加して、プロパティ シートに新しいエントリを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>You will then add the <bpt id="p1">**</bpt>FormDesignPropertyDataFieldAttribute<ept id="p1">**</ept> attribute, which indicates that the new designer property enables the selection of a data field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、<bpt id="p1">**</bpt>FormDesignPropertyDataFieldAttribute<ept id="p1">**</ept> 属性を追加します。この属性は、新しいデザイナー プロパティがデータ フィールドの選択を使用可能にすることを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Add the highlighted code that follows to the declarations for the class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスの申告に次の強調表示されたコードを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>This code adds the <bpt id="p1">**</bpt>FormBindingDataField<ept id="p1">**</ept> field to the X++ that the <bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept> class is using.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコードは、<bpt id="p2">**</bpt>FMTBuildContactControl<ept id="p2">**</ept> クラスが使用している X++ に <bpt id="p1">**</bpt>FormBindingDataField<ept id="p1">**</ept> フィールドを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x4<ept id="p1">](./media/x4.png)](./media/x4.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x4<ept id="p1">](./media/x4.png)](./media/x4.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Add the following code to the <bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTBuildContactControl<ept id="p1">**</ept> クラスに、次のコードを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Add this method after the designer property for the data source.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">データ ソースのデザイナー プロパティの後に、このメソッドを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x5<ept id="p1">](./media/x5.png)](./media/x5.png)</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x5<ept id="p1">](./media/x5.png)](./media/x5.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The child design component will show the properties that are available on the <bpt id="p1">**</bpt>FormBindingDataField<ept id="p1">**</ept> build class.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">子デザイン コンポーネントは <bpt id="p1">**</bpt>FormBindingDataField<ept id="p1">**</ept> ビルド クラスで使用可能なプロパティを表示します。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>This is appropriate, because you want to enable image data binding to a data field and data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、データ フィールドとデータ ソースへのイメージ データのバインドを有効にするために適しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>This is all that is required to add a designer property to the build class of the contact control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、連絡先コントロールのビルド クラスにデザイナー プロパティを追加するために必要なものです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Press Ctrl+S to save your changes, and then close the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl+S キーを押して変更を保存し、コード エディターを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>In Solution Explorer, right-click <bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Build<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、<bpt id="p1">**</bpt>FMTutorial<ept id="p1">**</ept> を右クリックしてから<bpt id="p2">**</bpt>ビルド<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>If the <bpt id="p1">**</bpt>FMTPickingUpTodayPart<ept id="p1">**</ept> form isn't already open, expand <bpt id="p2">**</bpt>Forms<ept id="p2">**</ept>, and then double-click <bpt id="p3">**</bpt>FMTPickingUpTodayPart<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTPickingUpTodayPart<ept id="p1">**</ept> フォームが既に開かれている場合、<bpt id="p2">**</bpt>フォーム<ept id="p2">**</ept>を展開し、<bpt id="p3">**</bpt>FMTPickingUpTodayPart<ept id="p3">**</ept> をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>The form opens in the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、フォームを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>In the form designer, expand <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>PickingUpTodayGrid<ept id="p2">**</ept>, and then select and delete the controls that currently appear in the grid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、<bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>PickingUpTodayGrid<ept id="p2">**</ept> を展開してから、グリッドに表示されているコントロールを選択して削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Right-click <bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>FMTContactControl<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept> を右クリックして <bpt id="p2">**</bpt>新規<ept id="p2">**</ept> をポイントし、<bpt id="p3">**</bpt>FMTContactControl<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Expand the <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> node, and notice that <bpt id="p2">**</bpt>Image<ept id="p2">**</ept> appears as a new child design component.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> ノードを展開し、<bpt id="p2">**</bpt>画像<ept id="p2">**</ept>が新しい子デザイン コンポーネントとして表示されることを通知します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>The following illustration shows the contact control in the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の図は、フォーム デザイナーの連絡先コントロールを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext5<ept id="p1">](./media/ext5.png)](./media/ext5.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext5<ept id="p1">](./media/ext5.png)](./media/ext5.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>You must also update the run-time class for the contact control to consume the design-time changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン時の変更を使用する連絡先管理のための実行時クラスを更新することも必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>You will revisit adding the control to the form and specifying data bindings and property values later.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームにコントロールを追加し、後でデータ バインドとプロパティ値を指定することを再検討します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Press Ctrl+S to save your changes, and then close the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl+S キーを押して変更を保存し、フォーム デザイナーを閉じます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Modify the runtime class for the contact control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールのランタイム クラスの変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Next, you must modify the run-time class to read the data source and data field for the image from the build class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、ランタイム クラスを変更して、ビルド クラスからイメージのデータ ソースとデータ フィールドを読み取る必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>You must also create a run-time property, so that the image data is available to the control's client HTML and JavaScript.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ データがコントロールのクライアント HTML と JavaScript で利用できるように、実行時プロパティを作成することも必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Technical overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">技術的概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>To see an example of the run-time class, in Solution Explorer, expand <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTContactControl<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>View Code<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム クラスの例を表示するには、ソリューション エクスプローラーで <bpt id="p1">**</bpt>クラス<ept id="p1">**</ept> を展開し、<bpt id="p2">**</bpt>FMTContactControl<ept id="p2">**</ept>を右クリックして、<bpt id="p3">**</bpt>コードを表示<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>The class opens in the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスがコード エディターで開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source><bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> is the run-time class for the contact control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> はコンタクト コントロールのランタイム クラスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>The class defines the run-time behavior of the contact control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このクラスは、連絡先コントロールのランタイム動作を定義します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>The run-time class typically contains X++ for data access or business logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">通常、ランタイム クラスには、データ アクセスまたはビジネス ロジック用の X++ が含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>In addition, there are two primary run-time behaviors that are related to extensible controls that you define in the run-time class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">さらに、ランタイム クラスで定義した拡張可能コントロールに関連する 2 つの主なランタイム動作があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Each behavior is declaratively defined by using an attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各動作では、属性を使用して宣言的に定義されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source><bpt id="p1">**</bpt>Run-time properties of the control<ept id="p1">**</ept> – These properties can be of two types:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コントロールの実行時のプロパティ<ept id="p1">**</ept> – これらのプロパティには 2 つのタイプがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source><bpt id="p1">*</bpt>Static properties<ept id="p1">*</ept>, which are set via code or initialized with values from designer properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>静的プロパティ<ept id="p1">*</ept>は、コードを介して設定されるか、デザイナーのプロパティからの値で初期化されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">*</bpt>Bindable properties<ept id="p1">*</ept>, for which the run-time value is determined by a binding to a data source and data field combination.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>バインド可能なプロパティ<ept id="p1">*</ept>、ランタイム値は、データ ソースおよびデータ フィールドの組み合わせへのバインディングによって決定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Run-time properties are declared by using <bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> attributes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> 属性を使用してランタイム プロパティが宣言されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>The following example shows a property declaration in <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、<bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> のプロパティ宣言を示しています。.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x6<ept id="p1">](./media/x6.png)](./media/x6.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x6<ept id="p1">](./media/x6.png)](./media/x6.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>The <bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> attribute accepts two arguments:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> 属性は、2 つの引数を受け取ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>The first argument indicates to the framework the kind of JavaScript view model property to create.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初の引数は、作成する JavaScript ビュー モデル プロパティの種類をフレームワークに示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>If you supply <bpt id="p1">**</bpt>BindableValue<ept id="p1">**</ept>, a <bpt id="p2">**</bpt>ReferenceProperty<ept id="p2">**</ept> is generated in the JavaScript view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>BindableValue<ept id="p1">**</ept> を指定した場合、<bpt id="p2">**</bpt>ReferenceProperty<ept id="p2">**</ept> が JavaScript ビュー モデルに生成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>A <bpt id="p1">**</bpt>ReferenceProperty<ept id="p1">**</ept> updates itself when data changes in the data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ReferenceProperty<ept id="p1">**</ept>は、データ ソース内のデータが変更されたときに更新されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>If you supply <bpt id="p1">**</bpt>Value<ept id="p1">**</ept>, a <bpt id="p2">**</bpt>ValueProperty<ept id="p2">**</ept> is generated in the JavaScript view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Value<ept id="p1">**</ept> を指定した場合、<bpt id="p2">**</bpt>ValueProperty<ept id="p2">**</ept> が JavaScript ビュー モデルに生成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>A developer must write code to update the value of a <bpt id="p1">**</bpt>ValueProperty<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発者は、<bpt id="p1">**</bpt>ValueProperty<ept id="p1">**</ept> の値を更新するためのコードを記述する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>The second argument of the attribute sets the name for the property as it will be defined in the JavaScript view model.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">属性の第 2 引数は、JavaScript ビュー モデルで定義されるプロパティの名前を設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Don't be concerned if <bpt id="p1">**</bpt>TitleFields<ept id="p1">**</ept> don't seem to be bound to data because the example uses a <bpt id="p2">**</bpt>Value<ept id="p2">**</ept> property.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">この例では <bpt id="p2">**</bpt>値<ept id="p2">**</ept> プロパティを使用するため、<bpt id="p1">**</bpt>TitleFields<ept id="p1">**</ept> がデータにバインドされていないように見える場合にも問題はありません。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>The <bpt id="p1">**</bpt>TitleFields<ept id="p1">**</ept> property returns a List that contains <bpt id="p2">**</bpt>FormBindingDataFields<ept id="p2">**</ept>, each of which is data-bound.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TitleFields<ept id="p1">**</ept> プロパティは、それぞれデータ バインドされた <bpt id="p2">**</bpt>FormBindingDataFields<ept id="p2">**</ept> を含むリストを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The X++ method that has the <bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> attribute is a simple getter/setter that uses a <bpt id="p2">**</bpt>FormProperty<ept id="p2">**</ept> as the backing field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> 属性を持つ X++ メソッドは、<bpt id="p2">**</bpt>FormProperty<ept id="p2">**</ept> をバッキング フィールドとして使用する単純なゲッター/セッターです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>The <bpt id="p1">**</bpt>FormProperty<ept id="p1">**</ept> contains the logic for updating the property, based on value or data source changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FormProperty<ept id="p1">**</ept> には、値またはデータ ソースの変更に基づく、プロパティを更新するためのロジックが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>It also serves as the backing field for the property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティのバッキング フィールドとしても機能します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source><bpt id="p1">**</bpt>Run-time commands for the control<ept id="p1">**</ept> – Commands enable the client parts of the control to trigger X++ logic, based on client-side user interactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>コントロールの実行時コマンド<ept id="p1">**</ept> – コマンドはクライアント側のユーザーとのやり取りに基づく、トリガー X++ ロジックのクライアント部分のコントロールを有効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Commands are declared by using a <bpt id="p1">**</bpt>FormCommandAttribute<ept id="p1">**</ept> attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドは <bpt id="p1">**</bpt>FormCommandAttribute<ept id="p1">**</ept> 属性を使用して宣言されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>The single argument specifies the name of the command as it will appear in the JavaScript view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">単一の引数は、JavaScript ビューモデルに表示されるコマンドの名前を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>The following example shows a command declaration in <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、<bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> のコマンド宣言を示しています。.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x7<ept id="p1">](./media/x7.png)](./media/x7.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x7<ept id="p1">](./media/x7.png)](./media/x7.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Tutorial steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアルの手順</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Verify that the <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> class is open in the code editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード エディターで <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> が開いていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>If it isn't, in Solution Explorer, expand <bpt id="p1">**</bpt>Classes<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>FMTContactControl<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>View Code<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そうされていない場合は、ソリューション エクスプローラーで<bpt id="p1">**</bpt>クラス<ept id="p1">**</ept>を展開し、<bpt id="p2">**</bpt>FMTContactControl<ept id="p2">**</ept> を右クリックして、<bpt id="p3">**</bpt>コードを表示<ept id="p3">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Add a run-time property for the image data to <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> に画像データの実行時プロパティを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>In the <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> class, declare a <bpt id="p2">**</bpt>FormProperty<ept id="p2">**</ept> that is named <bpt id="p3">**</bpt>imageFieldProperty<ept id="p3">**</ept>, as shown by the highlighted line in the following example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> クラスで、次の例で強調表示された行で示すように <bpt id="p3">**</bpt>imageFieldProperty<ept id="p3">**</ept> という <bpt id="p2">**</bpt>FormProperty<ept id="p2">**</ept> を宣言します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x8<ept id="p1">](./media/x8.png)](./media/x8.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x8<ept id="p1">](./media/x8.png)](./media/x8.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Add the following X++ method after the <bpt id="p1">**</bpt>parmDataSource<ept id="p1">**</ept> X++ method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>parmDataSource<ept id="p1">**</ept> X++ メソッドの後に、次の X++ メソッドを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>The new method will serve as the getter/setter for <bpt id="p1">**</bpt>imageFieldProperty<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">新しいメソッドは、<bpt id="p1">**</bpt>imageFieldProperty<ept id="p1">**</ept> のゲッター/セッターとして機能します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>You don't return the value of the image data here, because the framework will let you bind to the data in the client, as you will see later.</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">後で見るように、フレームワークはクライアントのデータにバインドさせるため、ここでは画像データの値を返しません。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x9<ept id="p1">](./media/x9.png)](./media/x9.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x9<ept id="p1">](./media/x9.png)](./media/x9.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Initialize <bpt id="p1">**</bpt>imageFieldProperty<ept id="p1">**</ept> by adding the highlighted line in the following example to the new method of <bpt id="p2">**</bpt>FMTContactControl<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>imageFieldProperty<ept id="p1">**</ept> は、次の例で強調表示された行を <bpt id="p2">**</bpt>FMTContactControl<ept id="p2">**</ept> の新しいメソッドに追加することで初期化されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x10<ept id="p1">](./media/x10.png)](./media/x10.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x10<ept id="p1">](./media/x10.png)](./media/x10.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Now supply the binding to <bpt id="p1">**</bpt>imageFieldProperty<ept id="p1">**</ept> by adding the highlighted line in the following example to the <bpt id="p2">**</bpt>applyBuild<ept id="p2">**</ept> method of <bpt id="p3">**</bpt>FMTContactControl<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここで、次の例で強調表示された行を <bpt id="p3">**</bpt>FMTContactControl<ept id="p3">**</ept> の <bpt id="p2">**</bpt>applyBuild<ept id="p2">**</ept> メソッドに追加することで <bpt id="p1">**</bpt>imageFieldProperty<ept id="p1">**</ept> へのバインディングを供給します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x11<ept id="p1">](./media/x11.png)](./media/x11.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x11<ept id="p1">](./media/x11.png)](./media/x11.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Press Ctrl+S to save the changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl + S を押して変更を保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>You've now finished modifying the run-time class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これで、実行時クラスの変更が完了しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Next, you will update the HTML view to display the image.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、画像を表示する HTML ビューを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Modify the HTML for the contact control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールの HTML の変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>The HTML of the contact control is where you add UI elements, such as text boxes, images, and buttons, that interact with the properties and commands that are defined in the run-time class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールの HTML では、テキスト ボックス、画像、およびボタンなど、ランタイム クラスで定義されているプロパティとコマンドを操作する UI 要素を追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Extensible controls use a declarative HTML-based binding syntax to bind HTML element behaviors to properties, commands, JavaScript expressions, and JavaScript functions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能なコントロールでは、宣言的な HTML ベースのバインド構文を使用して、HTML 要素の動作をプロパティ、コマンド、JavaScript 式、および JavaScript 関数にバインドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>These bindings are parsed at run time, and the resulting HTML is injected into the DOM.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのバインディングは実行時に解析され、結果の HTML が DOM に注入されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>The following section explains a few of the bindings that are used in FMTContactControl.htm to add an image to the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のセクションでは、コントロールに画像を追加するために FMTContactControl.htm で使用されるバインディングのいくつかについて説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Technical overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">技術的概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>The <bpt id="p1">**</bpt>bind<ept id="p1">**</ept> attribute, together with the <bpt id="p2">**</bpt>text<ept id="p2">**</ept> binding handler enables binding to the <bpt id="p3">**</bpt>text<ept id="p3">**</ept> property of an HTML element.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>bind<ept id="p1">**</ept> 属性と <bpt id="p2">**</bpt>text<ept id="p2">**</ept> バインディング ハンドラーを組み合わせると、HTML 要素の <bpt id="p3">**</bpt>text<ept id="p3">**</ept> プロパティへのバインディングが有効になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>For example, the following HTML uses the <bpt id="p1">**</bpt>bind<ept id="p1">**</ept> attribute and the <bpt id="p2">**</bpt>text<ept id="p2">**</ept> binding handler.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次の HTML は<bpt id="p1">**</bpt>バインド<ept id="p1">**</ept>属性および<bpt id="p2">**</bpt>テキスト<ept id="p2">**</ept>バインディング ハンドラーを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x12<ept id="p1">](./media/x12.png)](./media/x12.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x12<ept id="p1">](./media/x12.png)](./media/x12.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>The preceding HTML is equivalent to the following HTML.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記の HTML は、次の HTML と同じです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x13<ept id="p1">](./media/x13.png)](./media/x13.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x13<ept id="p1">](./media/x13.png)](./media/x13.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>You will see the benefits of the binding when you bind to properties or commands.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティまたはコマンドにバインドするとき、バインドの利点が分かります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>For example, if you have a view model property that is named <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept>, you can bind to it as shown in the following example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>名<ept id="p1">**</ept>という名前のビュー モデル プロパティある場合、次の例に示すようにそれをバインドすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Here, <bpt id="p1">**</bpt>$data<ept id="p1">**</ept> is the object that contains the view model properties and commands.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここで、<bpt id="p1">**</bpt>$data<ept id="p1">**</ept> はビュー モデル プロパティおよびコマンドを含むオブジェクトです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x14<ept id="p1">](./media/x14.png)](./media/x14.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x14<ept id="p1">](./media/x14.png)](./media/x14.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>The HTML output changes, based on the current value of <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HTML 出力は、<bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept> の現在の値に基づいて変更されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>The following example shows the output if <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept> has a value of <bpt id="p2">**</bpt>John<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、<bpt id="p1">**</bpt>名<ept id="p1">**</ept> の値が <bpt id="p2">**</bpt>John<ept id="p2">**</ept> の場合の出力を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source><bpt id="p1">[</bpt><bpt id="p2">**</bpt><ph id="ph1">![</ph>x15<ept id="p2">](./media/x15.png)**</ept><ept id="p1">](./media/x15.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><bpt id="p2">**</bpt><ph id="ph1">![</ph>x15<ept id="p2">](./media/x15.png)**</ept><ept id="p1">](./media/x15.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>If the value of the <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept> property changes for some reason (for example, X++ or JavaScript was run to update the property), the binding is automatically reevaluated, and the HTML output immediately reflects the change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">何らかの理由で <bpt id="p1">**</bpt>FirstName<ept id="p1">**</ept> プロパティが変更した場合 (たとえば、X++ または JavaScript がプロパティを更新するために実行された)、バインドは自動的に再評価され、HTML 出力により変更がすぐに反映されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>All binding handlers follow this pattern of automatic reevaluation when the binding value changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バインド値が変更されるとすべてのバインディング ハンドラーは自動再評価のパターンに従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>The <bpt id="p1">**</bpt>if<ept id="p1">**</ept> and <bpt id="p2">**</bpt>foreach<ept id="p2">**</ept> binding handlers are unique in that they perform DOM manipulation based on the binding values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>if<ept id="p1">**</ept> および <bpt id="p2">**</bpt>foreach<ept id="p2">**</ept> バインディング ハンドラーは、バインディング値に基づいて DOM 操作を実行するという点で独自です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>To conditionally add an element to the DOM, use the <bpt id="p1">**</bpt>if<ept id="p1">**</ept> binding handler and supply the condition under which the element should be added.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件付きで DOM に要素を追加するには、<bpt id="p1">**</bpt>if<ept id="p1">**</ept> バインド ハンドラを使用し、要素を追加する条件を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>If the condition is false, the element isn't added to or removed from the DOM, and no bindings that are associated with the element are evaluated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件が false の場合は、要素を DOM に追加されたり、DOM から削除されることはなく、要素に関連付けられているバインドは評価されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Of course, if the binding value that is supplied to <bpt id="p1">**</bpt>if<ept id="p1">**</ept> changes, an element that was removed will be added to the DOM again, and the bindings will be evaluated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">もちろん、<bpt id="p1">**</bpt>場合<ept id="p1">**</ept>の変更に提供される値バインディングの場合、削除された要素がもう一度 DOM に追加され、バインディングは評価されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>To iterate over an array of elements, use the <bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> binding.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要素の配列を反復処理するには、<bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> バインドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>This is useful when nearly identical HTML elements must be displayed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、ほぼ同一の HTML 要素を表示する必要がある場合に便利です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>The following table shows some of the other binding handlers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルに、その他のバインディング ハンドラーの一部を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Binding handler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バインディング ハンドラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>css</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">css</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Specify a CSS class, based on a condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">条件に基づいて、CSS クラスを指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>style</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">style</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Apply CSS styles, and bind the values to properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CSS スタイルを適用し、値をプロパティにバインドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>attr</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">attr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>Bind an HTML attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HTML 属性をバインドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>In addition to using HTML elements inside the HTML for your control, you can also add framework controls such as CheckBox, Group, Tile, SectionContainer, Label, and List to your control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの HTML 内での HTML 要素の使用に加えて、CheckBox、Group、Tile、SectionContainer、Label、および List などのフレームワーク コントロールをコントロールに追加することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Instead of binding handlers, each framework control enables binding values to be passed to its view model properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バインディング ハンドラーの代わりに、各フレームワーク コントロールでバインド値をビュー モデル プロパティに渡すことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>For example, a <bpt id="p1">**</bpt>CommandButton<ept id="p1">**</ept> is added by using the <bpt id="p2">**</bpt>role<ept id="p2">**</ept> attribute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>CommandButton<ept id="p1">**</ept> は<bpt id="p2">**</bpt>ロール<ept id="p2">**</ept>属性を使用して追加されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x16<ept id="p1">](./media/x16.png)](./media/x16.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x16<ept id="p1">](./media/x16.png)](./media/x16.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>In this case, <bpt id="p1">**</bpt>ActionCommand<ept id="p1">**</ept> can be supplied with a JavaScript function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、<bpt id="p1">**</bpt>ActionCommand<ept id="p1">**</ept> は JavaScript 機能とともに提供されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x17<ept id="p1">](./media/x17.png)](./media/x17.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x17<ept id="p1">](./media/x17.png)](./media/x17.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>One additional feature of the HTML binding syntax is the context-aware nature of bindings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HTML バインディング構文の追加機能の 1 つは、バインディングのコンテキスト認識の性質です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>By default, the context of all HTML elements is set to the JavaScript view model for the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、すべての HTML 要素のコンテキストはコントロールの JavaScript ビュー モデルに設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>However, the context changes in certain circumstances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、コンテキストは特定の状況で変化します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>For example, for a <bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> binding, every child element that is nested inside the hosting element (the element that has the <bpt id="p2">**</bpt>foreach<ept id="p2">**</ept> binding) obtains the current item in the loop as the context.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> バインディングに対して、ホスト要素 (<bpt id="p2">**</bpt>foreach<ept id="p2">**</ept> バインディングを持つ要素) 内に入れ子になったすべての子要素は、コンテキストとしてループで現在の品目を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>To access the context of the parent element when you're inside of a <bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> binding, use the <bpt id="p2">**</bpt>$parent<ept id="p2">**</ept> object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> バインドの内部にあるときに親要素のコンテキストにアクセスするには、<bpt id="p2">**</bpt>$parent<ept id="p2">**</ept> オブジェクトを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>The following example from FTMContactControl.htm will help make this point clearer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FTMContactControl.htm の次の例は、この点を明確にするのに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x18<ept id="p1">](./media/x18.png)](./media/x18.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x18<ept id="p1">](./media/x18.png)](./media/x18.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source><bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> is a List property that is available on the control's JavaScript view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクション<ept id="p1">**</ept> コントロールの JavaScript ビュー モデルで使用可能なリスト プロパティです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>This property was defined in the <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> run-time class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、<bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> ランタイム クラスで定義されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Each action in the <bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> list has <bpt id="p2">**</bpt>Data Source<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Data Field<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Action Name<ept id="p4">**</ept> properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>アクション<ept id="p1">**</ept>リストの各アクションには、<bpt id="p2">**</bpt>データ ソース<ept id="p2">**</ept>、<bpt id="p3">**</bpt>データ フィールド<ept id="p3">**</ept>、および<bpt id="p4">**</bpt>アクション名<ept id="p4">**</ept>プロパティがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Within the <bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> loop, <bpt id="p2">**</bpt>$data<ept id="p2">**</ept> refers to the current action, and <bpt id="p3">**</bpt>$data.ActionName<ept id="p3">**</ept> cam retrieve the <bpt id="p4">**</bpt>ActionName<ept id="p4">**</ept> property from the current action in the loop.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>foreach<ept id="p1">**</ept> ループ内で、<bpt id="p2">**</bpt>$data<ept id="p2">**</ept> は現在のアクションを参照し、<bpt id="p3">**</bpt>$data.ActionName<ept id="p3">**</ept> カムはループ内の現在のアクションから <bpt id="p4">**</bpt>ActionName<ept id="p4">**</ept> プロパティを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Within the loop, view model properties on the control aren't accessible via <bpt id="p1">**</bpt>$data<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ループ内では、コントロール上のビュー モデル プロパティは <bpt id="p1">**</bpt>$data<ept id="p1">**</ept> 経由でアクセスすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Instead, <bpt id="p1">**</bpt>$parent<ept id="p1">**</ept> can be used to retrieve the view model properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、<bpt id="p1">**</bpt>$parent<ept id="p1">**</ept> を使用してビュー モデル プロパティを取得できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Tutorial steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チュートリアルの手順</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Add the HTML for the <bpt id="p1">**</bpt>ImageField<ept id="p1">**</ept> property that you created in the run-time class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム クラスで作成した <bpt id="p1">**</bpt>ImageField<ept id="p1">**</ept> プロパティの HTML を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>In Solution Explorer, expand the <bpt id="p1">**</bpt>Resources<ept id="p1">**</ept> folder under the <bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> project, and double-click <bpt id="p3">**</bpt>FMTContactControlHTM<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、<bpt id="p2">**</bpt>FMTutorial<ept id="p2">**</ept> プロジェクトの<bpt id="p1">**</bpt>リソース<ept id="p1">**</ept> フォルダーを展開し、<bpt id="p3">**</bpt>FMTContactControlHTM<ept id="p3">**</ept> をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>The FMTContactControl.htm file opens in the HTML editor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTContactControl.htm ファイルは、HTML エディターで開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Add the following HTML to the FMTContactControl.htm HTML.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTContactControl.htm HTML に、次の HTML を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>The gray text is shown just for placement context.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">灰色のテキストは、配置コンテキストにのみ表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x19<ept id="p1">](./media/x19.png)](./media/x19.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x19<ept id="p1">](./media/x19.png)](./media/x19.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Press Ctrl+S to save the changes to FMTContactControl.htm.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl+S を押し、FMTContactControl.htm の変更を保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>In the preceding example, you use the framework image control to render the image.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前の例では、イメージを表示するためにフレームワーク イメージ コントロールを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source><bpt id="p1">**</bpt>Value<ept id="p1">**</ept> is a property that is defined on the Image control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>値<ept id="p1">**</ept>はイメージ コントロールで定義されているプロパティです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>This property lets you specify the value for the image data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティを使用すると、画像データの値を指定できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>The image control supports several kinds of image types, but for this example, you’re concerned with only two possible types: URLs and Base64 strings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ コントロールはいくつかの種類のイメージ タイプをサポートしていますが、この例では、URL と Base64 文字列の 2 つのタイプのみを考慮しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Because the image type depends on data that is known only at run time, you will use a property that derives this information, <bpt id="p1">**</bpt>ImageValue<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イメージ タイプは実行時にのみ認識されるデータに依存するため、この情報を取得するプロパティ、<bpt id="p1">**</bpt>ImageValue<ept id="p1">**</ept> を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>You might notice that no such property is defined in the run-time class for <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのようなプロパティが <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> の実行時クラスで定義されていないことが通知される可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Therefore, this property isn't part of the automatically generated JavaScript view model for that control, and it also isn't defined on <bpt id="p1">**</bpt>$data<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、このプロパティは、そのコントロールの自動生成された JavaScript ビュー モデルの一部ではなく、&lt;<bpt id="p1">**</bpt>$data<ept id="p1">**</ept> にも定義されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>To make the <bpt id="p1">**</bpt>ImageValue<ept id="p1">**</ept> property accessible via <bpt id="p2">**</bpt>$data<ept id="p2">**</ept>, you must extend the automatically generated JavaScript view model to add the property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>$data<ept id="p2">**</ept> 経由で <bpt id="p1">**</bpt>ImageValue<ept id="p1">**</ept> プロパティにアクセスできるようにするには、自動的に生成された JavaScript ビュー モデルを拡張してプロパティを追加する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Review the JavaScript for the contact control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">連絡先コントロールの JavaScript を確認</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>As was mentioned earlier, for every X++ method that has either a <bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> or <bpt id="p2">**</bpt>FormCommandAttribute<ept id="p2">**</ept> attribute, a JavaScript property or command is generated and made accessible to an extensible control's HTML via the view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前述したように、<bpt id="p1">**</bpt>FormPropertyAttribute<ept id="p1">**</ept> または <bpt id="p2">**</bpt>FormCommandAttribute<ept id="p2">**</ept> 属性を持つすべての X++ メソッドに対して、JavaScript プロパティまたはコマンドが生成され、ビュー モデルを介して拡張可能コントロールの HTML にアクセスできるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>You can extend this view model with additional properties and commands that are defined only on the client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアント上でのみ定義される追加プロパティおよびコマンドで、このビュー モデルを拡張することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>In other words, the properties and commands have no associated X++ methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">つまり、プロパティやコマンドに関連付けられている X++ メソッドはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>After you extend the view model, the additional client-only properties and commands can be used in bindings via the <bpt id="p1">**</bpt>$data<ept id="p1">**</ept> object.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビュー モデルを拡張した後、追加のクライアントのみ <bpt id="p1">**</bpt>$data<ept id="p1">**</ept> オブジェクト経由でバインディングのプロパティおよびコマンドを使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Technical overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">技術的概要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>The Control Extensibility Framework offers many functions that help with data bindings and data access.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール拡張フレームワークには、データ バインドおよびデータ アクセスを支援する多くの機能が用意されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Some of the functions that are used in FMTContactControl.htm, such as <bpt id="p1">**</bpt>$field<ept id="p1">**</ept> or <bpt id="p2">**</bpt>$model<ept id="p2">**</ept>, make it easy to access the data source and its fields from the HTML bindings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTContactControl.htm で使用されるいくつかの関数 (<bpt id="p1">**</bpt>$field$<ept id="p1">**</ept> や <bpt id="p2">**</bpt>$model<ept id="p2">**</ept> など) を使うと、HTML バインドからデータ ソースとそのフィールドにアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>These functions are functional aliases that are used in the HTML bindings for JavaScript functions that are defined by the framework.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの関数は、フレームワークによって定義された JavaScript 関数の HTML バインディングで使用される関数別名です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Within the extended JavaScript view model, the equivalent, non-aliased functions are <bpt id="p1">**</bpt>$dyn.getField<ept id="p1">**</ept> and <bpt id="p2">**</bpt>$dyn.getModel<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張された JavaScript ビュー モデル内では、等価の、非エイリアス関数は <bpt id="p1">**</bpt>$dyn.getField<ept id="p1">**</ept> および <bpt id="p2">**</bpt>$dyn.getModel<ept id="p2">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>You can also use jQuery within the extended JavaScript view model by using the <bpt id="p1">**</bpt><ph id="ph1">$</ph><ept id="p1">**</ept> symbol.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、<bpt id="p1">**</bpt><ph id="ph1">$</ph><ept id="p1">**</ept> シンボルを使用して、拡張 JavaScript ビュー モデル内で jQuery を使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>The following example shows the standard pattern that is used to define a constructor for the extended JavaScript view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、拡張 JavaScript ビュー モデルのコンストラクターを定義するために使用される標準パターンを示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>In this example, you save a reference to <bpt id="p1">**</bpt>this<ept id="p1">**</ept>, apply the base <bpt id="p2">**</bpt>Control<ept id="p2">**</ept> class behaviors, and then combine the automatically generated properties and commands with the properties and command from the extended view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この例では、<bpt id="p1">**</bpt>this<ept id="p1">**</ept> への参照を保存し、基本<bpt id="p2">**</bpt>コントロール<ept id="p2">**</ept> クラスの動作を適用してから、自動的に生成されたプロパティおよびコマンドと、拡張表示モデルからのプロパティおよびコマンドを結合します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x20<ept id="p1">](./media/x20.png)](./media/x20.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x20<ept id="p1">](./media/x20.png)](./media/x20.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>The <bpt id="p1">**</bpt>self<ept id="p1">**</ept> variable now contains all properties and commands that are generated from the X++ run-time class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>self<ept id="p1">**</ept> 変数には、X++ ランタイム クラスから生成されたすべてのプロパティとコマンドが含まれるようになりました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>The following example shows how to add a client-only property to extend the view model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の例は、ビュー モデルを拡張するためのクライアント専用のプロパティを追加する方法を示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>x21<ept id="p1">](./media/x21.png)](./media/x21.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>x21<ept id="p1">](./media/x21.png)](./media/x21.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>The <bpt id="p1">**</bpt>self<ept id="p1">**</ept> variable will then contain all the properties and commands that are generated from the X++ run-time class, and also the <bpt id="p2">**</bpt>ActionTypes<ept id="p2">**</ept> property that was added as a client-only property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>self<ept id="p1">**</ept> 変数に、X++ の実行時クラスから生成されたすべてのプロパティおよびコマンドと、クライアント専用プロパティとして追加された <bpt id="p2">**</bpt>ActionTypes<ept id="p2">**</ept> プロパティも含まれるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>There are many more topics that are related to building view models for controls, but they are outside the scope of this tutorial.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのビュー モデルを構築することに関連するトピックは他にもたくさんありますが、このチュートリアルの範囲外です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>For this tutorial, we don’t need to make any changes to the view model for <bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、<bpt id="p1">**</bpt>FMTContactControl<ept id="p1">**</ept> のビュー モデルに変更を加える必要はありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Therefore, you can close the FMTContactControl.js file and proceed to the next section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、FMTContactControl.js ファイルを閉じて次のセクションに進みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Add the extensible control to the Fleet Management workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フリート管理ワークスペースへの拡張可能コントロールの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>You will now update the <bpt id="p1">**</bpt>Fleet Management Clerk<ept id="p1">**</ept> workspace so that it uses the contact control that you just completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここで、<bpt id="p1">**</bpt>フリート管理クラーク<ept id="p1">**</ept> ワークスペースを更新します。これにより、このワークスペースで、完成したところの連絡先コントロールが使用されるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>In Solution Explorer, expand <bpt id="p1">**</bpt>Forms<ept id="p1">**</ept>, and then double-click <bpt id="p2">**</bpt>FMTPickingUpTodayPart<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで<bpt id="p1">**</bpt>フォーム<ept id="p1">**</ept>を展開してから、<bpt id="p2">**</bpt>FMTPickingUpTodayPart<ept id="p2">**</ept> をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>The form opens in the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、フォームを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>In the form designer, expand <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>PickingUpTodayGrid<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、<bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>PickingUpTodayGrid<ept id="p2">**</ept> と展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>If there is an existing contact control, delete it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存の連絡コントロールがある場合は、それを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>You must remove and then re-add the control, so that the form designer picks up the X++ changes that you made.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++ に対して行われた変更をフォーム デザイナーが取得できるように、コントロールを削除して再度追加する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Right-click the existing control, and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存のコントロールを右クリックし、<bpt id="p1">**</bpt>削除<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Right-click <bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>FMT Contact Control<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept> を右クリックして <bpt id="p2">**</bpt>新規<ept id="p2">**</ept> をポイントし、<bpt id="p3">**</bpt>FMT 連絡先コントロール<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Click the <bpt id="p1">**</bpt>FMTContactControl1<ept id="p1">**</ept> node that you just added, and set the <bpt id="p2">**</bpt>Data Source<ept id="p2">**</ept> property to <bpt id="p3">**</bpt>FMTCustomer<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加したばかりの <bpt id="p1">**</bpt>FMTContactControl1<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>データ ソース<ept id="p2">**</ept> プロパティを <bpt id="p3">**</bpt>FMTCustomer<ept id="p3">**</ept> に設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Expand the <bpt id="p1">**</bpt>FMTContactControl1<ept id="p1">**</ept> node, click <bpt id="p2">**</bpt>Image<ept id="p2">**</ept>, and then, in the <bpt id="p3">**</bpt>Properties<ept id="p3">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTContactControl1<ept id="p1">**</ept> ノードを展開し、<bpt id="p2">**</bpt>画像<ept id="p2">**</ept>をクリックし、その後<bpt id="p3">**</bpt>プロパティ<ept id="p3">**</ept>ウィンドウに次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>FMTCustomer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTCustomer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Image</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Create new title fields:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいタイトル フィールドを作成する:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Right-click <bpt id="p1">**</bpt>Title Fields<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Title Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タイトル フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Click the <bpt id="p1">**</bpt>Title Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>タイトル フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>FirstName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>FMTCustomer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTCustomer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>FirstName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Right-click <bpt id="p1">**</bpt>Title Fields<ept id="p1">**</ept> again, and then click <bpt id="p2">**</bpt>New Title Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タイトル フィールド<ept id="p1">**</ept> をもう一度右クリックし、<bpt id="p2">**</bpt>新しいタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Click the <bpt id="p1">**</bpt>Title Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>タイトル フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>LastName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">姓</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>FMTCustomer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTCustomer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>LastName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">姓</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Create new subtitle fields:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい字幕フィールドを作成する:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Right-click <bpt id="p1">**</bpt>Subtitle Fields<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Subtitle Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブタイトル フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいサブタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>Click the <bpt id="p1">**</bpt>Subtitle Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>字幕フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>StartDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StartDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>FMTRental</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTRental</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>StartDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">StartDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>Formatting Expression</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーマット式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Pickup <ph id="ph1">{0}</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">集荷 <ph id="ph1">{0}</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Right-click <bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>Subtitle Fields<ept id="p3">&lt;/em&gt;</ept><ept id="p2">&lt;/strong&gt;</ept><ept id="p1">*</ept> again, and then click <bpt id="p4">*</bpt><bpt id="p5">&lt;strong&gt;</bpt><bpt id="p6">&lt;em&gt;</bpt>New Subtitle Field<ept id="p6">&lt;/em&gt;</ept><ept id="p5">*</ept>.<ept id="p4">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt><bpt id="p2">&lt;strong&gt;</bpt><bpt id="p3">&lt;em&gt;</bpt>サブタイトル フィールド<ept id="p3">&lt;/em&gt;</ept><ept id="p2">&lt;/strong&gt;</ept><ept id="p1">*</ept> をもう一度右クリックし、<bpt id="p4">*</bpt><bpt id="p5">&lt;strong&gt;</bpt><bpt id="p6">&lt;em&gt;</bpt>新しいサブタイトル フィールド<ept id="p6">&lt;/em&gt;</ept><ept id="p5">*</ept><ept id="p4">&lt;/strong&gt;</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Click the <bpt id="p1">**</bpt>Subtitle Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>字幕フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>EndDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EndDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>FMTRental</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTRental</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>EndDate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EndDate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Formatting Expression</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーマット式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Return <ph id="ph1">{0}</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">返品<ph id="ph1">{0}</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Right-click <bpt id="p1">**</bpt>Subtitle Fields<ept id="p1">**</ept> again, and then click <bpt id="p2">**</bpt>New Subtitle Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブタイトル フィールド<ept id="p1">**</ept> をもう一度右クリックし、<bpt id="p2">**</bpt>新しいサブタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Click the <bpt id="p1">**</bpt>Subtitle Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>字幕フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>VehicleDescription</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VehicleDescription</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>FMTVehicle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTVehicle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Press Ctrl+S to save your changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl + S を押して変更を保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Copy <bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept> by right-clicking in the grid and clicking <bpt id="p2">**</bpt>Copy<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッドを右クリックし、<bpt id="p2">**</bpt>コピー<ept id="p2">**</ept>をクリックして <bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept> をコピーします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>In Solution Explorer, click <bpt id="p1">**</bpt>Forms<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>FMTReturningTodayPart<ept id="p2">**</ept>, and then double-click <bpt id="p3">**</bpt>FMTReturningTodayPart<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、<bpt id="p1">**</bpt>フォーム<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>FMTReturningTodayPart<ept id="p2">**</ept> をクリックしてから、<bpt id="p3">**</bpt>FMTReturningTodayPart<ept id="p3">**</ept> をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>The form opens in the form designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーム デザイナーで、フォームを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>Expand <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>, right-click <bpt id="p2">**</bpt>ReturningTodayGrid<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Delete<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept>を展開し、<bpt id="p2">**</bpt>ReturningTodayGrid<ept id="p2">**</ept> を右クリックし、その後<bpt id="p3">**</bpt>削除<ept id="p3">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>Right-click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Paste<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>デザイン<ept id="p1">**</ept> を右クリックして <bpt id="p2">**</bpt>貼り付け<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>Select the <bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept> grid that you just added to the <bpt id="p2">**</bpt>FMTReturningTodayPart<ept id="p2">**</ept> form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>FMTReturningTodayPart<ept id="p2">**</ept> フォームに追加したばかりの <bpt id="p1">**</bpt>PickingUpTodayGrid<ept id="p1">**</ept> グリッドを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>ReturningTodayGrid<ept id="p2">**</ept>, and then press Ctrl+S to save the changes to the <bpt id="p3">**</bpt>EMTReturningTodayPart<ept id="p3">**</ept> form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> プロパティを <bpt id="p2">**</bpt>ReturningTodayGrid<ept id="p2">**</ept> に設定し、Ctrl+S を押して変更を <bpt id="p3">**</bpt>EMTReturningTodayPart<ept id="p3">**</ept> フォームに保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>In Solution Explorer, find the <bpt id="p1">**</bpt>FMTRentalRatesPart<ept id="p1">**</ept> form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、<bpt id="p1">**</bpt>FMTRentalRatesPart<ept id="p1">**</ept> フォームを検索します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Double-click the form to open it in the form designer, and then click <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>RentalRatesGrid<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームをダブルクリックして、フォームデザイナーで開き、<bpt id="p1">**</bpt>Design<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>RentalRatesGrid<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>Delete each field from <bpt id="p1">**</bpt>RentalRatesGrid<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>RentalRatesGrid<ept id="p1">**</ept> から各フィールドを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>To remove the fields, click the first field, hold down the Shift key while you click the last field, and then press Delete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィールドを削除するには、最初のフィールドをクリックし、Shift キーを押しながら最後のフィールドをクリックし、Del キーを押します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Right-click in the grid, point to <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>FMT Contact Control<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グリッド内を右クリックして <bpt id="p1">**</bpt>新規<ept id="p1">**</ept> をポイントし、<bpt id="p2">**</bpt>FMT 連絡先コントロール<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Expand <bpt id="p1">**</bpt>FMTContactControl1<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Image<ept id="p2">**</ept>, and then, in the <bpt id="p3">**</bpt>Properties<ept id="p3">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FMTContactControl1<ept id="p1">**</ept> を展開し、<bpt id="p2">**</bpt>画像<ept id="p2">**</ept>をクリックし、その後<bpt id="p3">**</bpt>プロパティ<ept id="p3">**</ept>ウィンドウに次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>FMTVehicleModel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTVehicleModel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>Image</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">画像</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Right-click <bpt id="p1">**</bpt>Title Fields<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Title Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>タイトル フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>Click the title field node that you just created, and then, in the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりのタイトル フィールド ノードをクリックし、<bpt id="p1">**</bpt>プロパティ<ept id="p1">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>VehicleModel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VehicleModel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>FMTVehicleModel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTVehicleModel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Right-click <bpt id="p1">**</bpt>Subtitle Fields<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Subtitle Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブタイトル フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいサブタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>Click the <bpt id="p1">**</bpt>Subtitle Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>字幕フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>VehicleMake</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VehicleMake</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>FMTVehicleMake</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTVehicleMake</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>Make</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">製造業者</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>Right-click <bpt id="p1">**</bpt>Subtitle Fields<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Subtitle Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブタイトル フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいサブタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Click the <bpt id="p1">**</bpt>Subtitle Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>字幕フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>RatePerDay</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RatePerDay</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>FMTModelRate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTModelRate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>RaterPerDay</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">RaterPerDay</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> The <bpt id="p2">&lt;strong&gt;</bpt>Data Field<ept id="p2">&lt;/strong&gt;</ept> value must match the table field name.</source><target logoport:matchpercent="90" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>注:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>データ フィールド<ept id="p2">&lt;/strong&gt;</ept> 値はテーブル フィールド名と一致する必要があります。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>If you correct the spelling error, the values won't match, and you will receive a run-time error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スペル エラーを修正すると、値が一致しない場合は、ランタイム エラーが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>Formatting Expression</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーマット式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>$<ph id="ph1">{0}</ph> per day</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 日当たりの $<ph id="ph1">{0}</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>Right-click <bpt id="p1">**</bpt>Subtitle Fields<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>New Subtitle Field<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>サブタイトル フィールド<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>新しいサブタイトル フィールド<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>Click the <bpt id="p1">**</bpt>Subtitle Field<ept id="p1">**</ept> node that you just created, and then, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> pane, set the following properties.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">作成したばかりの<bpt id="p1">**</bpt>字幕フィールド<ept id="p1">**</ept> ノードをクリックし、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept> ウィンドウで次のプロパティを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Property</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">先頭値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>RatePerWeek</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RatePerWeek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>Data Source</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ ソース</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>FMTModelRate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FMTModelRate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Data Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データ フィールド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>RatePerWeek</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RatePerWeek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>Formatting Expression</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォーマット式</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>$<ph id="ph1">{0}</ph> per week</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">週ごとの $<ph id="ph1">{0}</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Press Ctrl+S to save your changes to <bpt id="p1">**</bpt>FMTRentalRatesPart<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl+S を押し、変更を <bpt id="p1">**</bpt>FMTRentalRatesPart<ept id="p1">**</ept> に保存します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>In Solution Explorer, right-click the <bpt id="p1">**</bpt>FMTClerkWorkspace<ept id="p1">**</ept> form, and then click <bpt id="p2">**</bpt>Set as Startup Object<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">ソリューション エクスプローラーで、<bpt id="p1">**</bpt>FMTClerkWorkspace<ept id="p1">**</ept> フォームを右クリックしてから、<bpt id="p2">**</bpt>スタートアップ オブジェクトとして設定<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>Press Ctrl+F5 to open the updated contact control in Internet Explorer.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ctrl+F5 キーを押し、Internet Explorer で更新された連絡先コントロールを開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>If you receive a JavaScript error, you might have to clear the Internet Explorer cache, so that the browser loads the new JavaScript file:</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">JavaScript エラーが発生した場合は、ブラウザーが新しい JavaScript ファイルを読み込むように Internet Explorer のキャッシュをクリアする必要があります。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>When you're prompted to open the debugger, click <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバッガーを開くように求めるメッセージが表示されたら、<bpt id="p1">**</bpt>いいえ<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>While Internet Explorer is open, press F12 (or click <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>F12 Developer Tools<ept id="p2">**</ept>), and then press Ctrl+R.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer が開いているときに、F12 キーを押し (または <bpt id="p1">**</bpt>設定<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>F12 開発者ツール<ept id="p2">**</ept> をクリックし)、Ctrl+R を押します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>In the <bpt id="p1">**</bpt>Clear Browser Cache<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ブラウザー キャッシュのクリア<ept id="p1">**</ept> ダイアログ ボックスで、<bpt id="p2">**</bpt>はい<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Reload the page by pressing Ctrl+F5.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ctrl + F5 キーを押して、ページを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext6<ept id="p1">](./media/ext6-1024x428.png)](./media/ext6.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ext6<ept id="p1">](./media/ext6-1024x428.png)](./media/ext6.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>In this tutorial, you've seen how you can use X++ when you define the design-time and server-side behaviors for a control, and how you can consume a powerful HTML-based and JavaScript-based framework when you design the UI and user interaction patterns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このチュートリアルでは、コントロールのデザイン時とサーバー側の動作を定義するときに X++ を使用する方法、および UI およびユーザー操作パターンをデザインするときに HTML および JavaScript ベースの強力なフレームワークを使用する方法について説明しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>The Control Extensibility Framework helps provide a separation between the modeled behavior of a control and its physical manifestation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール拡張フレームワークは、コントロールのモデル化された動作とその物理的なマニフェストの区切りを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>As a best practice, you should try to maintain this loose coupling between data, metadata, and UI when you build extensible controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ベスト プラクティスは、拡張可能コントロールを作成するときにデータ、メタデータ、および UI の間の疎結合を管理する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>Bidirectional or right-to-left support</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">双方向または右から左へのサポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>To validate right-to-left (RTL) support for your extensible control, you simply need to set the <bpt id="p1">**</bpt>dir<ept id="p1">**</ept> (direction) attribute on the HTML document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張可能コントロールの右から左 (RTL) サポートを検証するには、HTML ドキュメントの<bpt id="p1">**</bpt>dir<ept id="p1">**</ept> (方向) 属性を設定するだけです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>When this attribute is changed, the browser will automatically change the layout direction of your control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この属性が変更されると、ブラウザーは、コントロールのレイアウトの方向を自動的に変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>You should make sure that your control doesn’t implement any styling which interferes with this layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このレイアウトと競合するすべてのスタイルがコントロールで実装されていないことを確認する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この属性を手動で設定するのではなく、フォームにコントロールを配置して、右から左へ読み書きする言語を選択することでも検証できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>Selecting a RTL language will cause the client to also update the <bpt id="p1">**</bpt>dir<ept id="p1">**</ept> attribute appropriately.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RTL 言語を選択すると、クライアントは <bpt id="p1">**</bpt>dir<ept id="p1">**</ept> 属性も適切に更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>For more information, see <bpt id="p1">[</bpt>dir attribute<ept id="p1">](https://www.w3.org/TR/html5/dom.html#the-dir-attribute)</ept> in the HTML standards.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、HTML 標準で <bpt id="p1">[</bpt>ディレクトリ属性<ept id="p1">](https://www.w3.org/TR/html5/dom.html#the-dir-attribute)</ept> を参照してください。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

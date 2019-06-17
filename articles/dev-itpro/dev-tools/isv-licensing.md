@@ -1,231 +1,561 @@
----
-title: 独立系ソフトウェア ベンダー (ISV) ライセンス
-description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。
-author: robadawy
-manager: AnnBe
-ms.date: 11/08/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: Operations
-ms.custom: 70381
-ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
-ms.search.region: Global
-ms.author: robadawy
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3178e4901622ee4864480ebae65bb6ced26068d6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537012"
----
-# <a name="independent-software-vendor-isv-licensing"></a><span data-ttu-id="e3436-104">独立系ソフトウェア ベンダー (ISV) ライセンス</span><span class="sxs-lookup"><span data-stu-id="e3436-104">Independent software vendor (ISV) licensing</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="e3436-105">このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="e3436-105">This topic describes the independent software vendor (ISV) licensing feature.</span></span> <span data-ttu-id="e3436-106">これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="e3436-106">It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.</span></span>
-
-<span data-ttu-id="e3436-107">Microsoft Dynamics エコシステムには、独立系ソフトウェア ベンダー (ISV) が再パッケージ化可能な業種ソリューションをビルド、配置、販売して収益化できるようにするツールとフレームワークが用意されています。</span><span class="sxs-lookup"><span data-stu-id="e3436-107">The Microsoft Dynamics ecosystem provides tools and frameworks that let independent software vendors (ISVs) build, deploy, sell, and therefore monetize vertical industry solutions that can be repackaged.</span></span> <span data-ttu-id="e3436-108">ISV ライセンス機能には、次の利点があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-108">The ISV licensing feature provides the following benefits:</span></span>
-
--   <span data-ttu-id="e3436-109">これは、顧客およびパートナーに ISV ソリューションのより安全なライセンス メカニズムを提供します。</span><span class="sxs-lookup"><span data-stu-id="e3436-109">It provides a safer licensing mechanism for ISV solutions for customers and partners.</span></span> <span data-ttu-id="e3436-110">ISV ソリューションは、顧客が ISV から有効なライセンス キーを購入した場合にのみ有効になります。</span><span class="sxs-lookup"><span data-stu-id="e3436-110">ISV solutions are enabled only if the customer has purchased a valid license key from the ISV.</span></span>
--   <span data-ttu-id="e3436-111">これにより、顧客が異なる ISV からの ISV ソリューションのライセンスをどのように処理するかが調整されるため、総保有コスト (TCO) を削減します。</span><span class="sxs-lookup"><span data-stu-id="e3436-111">It aligns how customers handle licenses for ISV solutions from different ISVs, and therefore lowers the total cost of ownership (TCO).</span></span>
--   <span data-ttu-id="e3436-112">ISV は、業界標準のフレームワークを使用して、ISV ライセンスを個別に生成、管理、配布することができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-112">ISVs can independently generate, manage, and distribute ISV licenses by using industry standard frameworks.</span></span>
-
-<span data-ttu-id="e3436-113">この機能は、ISV 競合他社のコピー防止 (ソースベースの保護) を有効にしません。</span><span class="sxs-lookup"><span data-stu-id="e3436-113">This feature doesn't enable ISV competitor copycat protection (that is, source-based protection).</span></span>
-
-## <a name="capabilities"></a><span data-ttu-id="e3436-114">処理能力</span><span class="sxs-lookup"><span data-stu-id="e3436-114">Capabilities</span></span>
-<span data-ttu-id="e3436-115">このセクションでは、ISV ライセンス機能のさまざまな機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="e3436-115">This section describes various capabilities of the ISV licensing feature.</span></span>
-
-### <a name="isvs-can-generate-their-own-licenses"></a><span data-ttu-id="e3436-116">ISV は独自のライセンスを生成可能</span><span class="sxs-lookup"><span data-stu-id="e3436-116">ISVs can generate their own licenses</span></span>
-
-<span data-ttu-id="e3436-117">ISV は独自のライセンスを個別に生成し、ソリューションに適用し、これらのソリューションをパートナーおよび顧客に提供できます。</span><span class="sxs-lookup"><span data-stu-id="e3436-117">ISVs can independently generate their own licenses, apply them to solutions, and deliver those solutions to partners and customers.</span></span> <span data-ttu-id="e3436-118">各 ISV ライセンスでは、ISV ソリューションを保護するためのランタイム機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="e3436-118">Each ISV license enables run-time features that help protect the ISV solution.</span></span> <span data-ttu-id="e3436-119">また、各 ISV ライセンスは、ソフトウェアが ISV によって配布されていることを保証する ISV Authenticode 証明書に関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="e3436-119">Additionally, each ISV license is tied to an ISV Authenticode certificate, which guarantees that the software was distributed by the ISV.</span></span>
-
-### <a name="a-run-time-check-makes-sure-that-an-isv-generated-license-key-exists-in-the-customers-environment"></a><span data-ttu-id="e3436-120">ランタイム チェックにより、ISV によって生成されたライセンス キーが顧客の環境に存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="e3436-120">A run-time check makes sure that an ISV-generated license key exists in the customer's environment</span></span>
-
-<span data-ttu-id="e3436-121">ライセンスに関連付けられた各 ISV ソリューションは、有効なライセンス キーが顧客の環境に存在する場合にのみ実行されます。</span><span class="sxs-lookup"><span data-stu-id="e3436-121">Each ISV solution that is tied to a license runs only when a valid license key exists in the customer's environment.</span></span> <span data-ttu-id="e3436-122">したがって、ISV がソリューションをライセンスに結び付けても、顧客に有効なライセンス キーがない場合、ソリューションは実行されません。</span><span class="sxs-lookup"><span data-stu-id="e3436-122">Therefore, if an ISV ties its solution to a license, but the customer doesn't have a valid license key, the solution doesn't run.</span></span>
-
-### <a name="there-are-two-types-of-license-boolean-and-number"></a><span data-ttu-id="e3436-123">ライセンスには、ブール値と数値の 2 種類があります</span><span class="sxs-lookup"><span data-stu-id="e3436-123">There are two types of license: Boolean and Number</span></span>
-
-<span data-ttu-id="e3436-124">ISV は**ブール値**および**番号**の 2 つのタイプを作成できます。</span><span class="sxs-lookup"><span data-stu-id="e3436-124">ISVs can create two types of license: **Boolean** and **Number**.</span></span> <span data-ttu-id="e3436-125">ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-125">ISVs can associate an expiration date with either type of license.</span></span> <span data-ttu-id="e3436-126">この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。</span><span class="sxs-lookup"><span data-stu-id="e3436-126">This expiration date is applied only to the ISV licenses and is independent of the system expiration date.</span></span> <span data-ttu-id="e3436-127">ブール値ライセンスは、単純な有効化ライセンスです。</span><span class="sxs-lookup"><span data-stu-id="e3436-127">A Boolean license is a simple activation license.</span></span> <span data-ttu-id="e3436-128">ライセンスのタイプ (**ブール値** または**数字**) は、ライセンス コード ノードのプロパティによって設定されます。</span><span class="sxs-lookup"><span data-stu-id="e3436-128">The type of license (**Boolean** or **Number**) is set through a property in the license code node.</span></span> <span data-ttu-id="e3436-129">ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="e3436-129">ISVs can write their own custom logic to check the count that is provided in the ISV license, to make sure that their solutions are being used within the license terms.</span></span> <span data-ttu-id="e3436-130">詳細については、[ISV のライセンス フレームワーク](https://msdn.microsoft.com/en-us/library/jj677284.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3436-130">For more information, see [Licensing Framework for ISVs](https://msdn.microsoft.com/en-us/library/jj677284.aspx).</span></span>
-
-### <a name="license-validation-errors"></a><span data-ttu-id="e3436-131">ライセンス検証エラー</span><span class="sxs-lookup"><span data-stu-id="e3436-131">License validation errors</span></span>
-
-<span data-ttu-id="e3436-132">ISV ライセンスがインポート後に無効になったとき、ISV ソリューションはサーバーが再起動されるまで実行を継続します。</span><span class="sxs-lookup"><span data-stu-id="e3436-132">When an ISV license becomes invalid after import, the ISV solution continues to run until the server is restarted.</span></span> <span data-ttu-id="e3436-133">(サーバーの再起動後、ソリューションは無効になっています。) Application Object Server (AOS) のインスタンスの起動時にエラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="e3436-133">(After the server is restarted, the solution is disabled.) An error is thrown when the instance of the Application Object Server (AOS) starts.</span></span> <span data-ttu-id="e3436-134">エラーはイベント ログに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="e3436-134">The error is written to the event log.</span></span>
-
-## <a name="implementing-isv-licensing-in-a-solution"></a><span data-ttu-id="e3436-135">ソリューションへの ISV ライセンスの実装</span><span class="sxs-lookup"><span data-stu-id="e3436-135">Implementing ISV licensing in a solution</span></span>
-<span data-ttu-id="e3436-136">ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。</span><span class="sxs-lookup"><span data-stu-id="e3436-136">ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA).</span></span> <span data-ttu-id="e3436-137">Microsoft が、特定の CA をお勧めすることはありません。</span><span class="sxs-lookup"><span data-stu-id="e3436-137">Microsoft doesn't recommend any particular CA.</span></span> <span data-ttu-id="e3436-138">ただし、多くの企業がこれらの証明書を提供します。</span><span class="sxs-lookup"><span data-stu-id="e3436-138">However, many companies offer these certificates.</span></span> <span data-ttu-id="e3436-139">Authenticode 証明書は、さまざまなキー サイズに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="e3436-139">Authenticode certificates come in various key sizes.</span></span> <span data-ttu-id="e3436-140">ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。</span><span class="sxs-lookup"><span data-stu-id="e3436-140">The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes.</span></span> <span data-ttu-id="e3436-141">既定では、多くのプロバイダーが 2048 ビット キー サイズを使用しており、より強固な暗号化を提供するために ISV はこのビット キー サイズを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e3436-141">By default, many providers use the 2048-bit key size, and we recommend that ISVs use this bit key size, because it provides stronger encryption.</span></span> <span data-ttu-id="e3436-142">ただし、ISV に既に既存の 1024 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。</span><span class="sxs-lookup"><span data-stu-id="e3436-142">However, if an ISV already has an existing 1024-bit key size, that key size works with the ISV licensing feature.</span></span> <span data-ttu-id="e3436-143">**注記:** ISV ライセンス機能は、4096 ビット キー サイズをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="e3436-143">**Note:** The ISV licensing feature doesn't support 4096-bit key sizes.</span></span> <span data-ttu-id="e3436-144">Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-144">Authenticode certificates can have various cryptographic service providers.</span></span> <span data-ttu-id="e3436-145">ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。</span><span class="sxs-lookup"><span data-stu-id="e3436-145">The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider).</span></span> <span data-ttu-id="e3436-146">Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。</span><span class="sxs-lookup"><span data-stu-id="e3436-146">There are many independent providers that you can purchase an Authenticode certificate from.</span></span> <span data-ttu-id="e3436-147">Microsoft が、特定のプロバイダーをお勧めすることはありません。</span><span class="sxs-lookup"><span data-stu-id="e3436-147">Microsoft doesn't recommend any particular provider.</span></span> <span data-ttu-id="e3436-148">頻繁に使用されるプロバイダーには、Symantec VeriSign、Thawte、Go Daddy があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-148">Some providers that are often used are Symantec VeriSign, Thawte, and Go Daddy.</span></span>
-
-## <a name="certificate-import-and-export"></a><span data-ttu-id="e3436-149">証明書のインポートおよびエクスポート</span><span class="sxs-lookup"><span data-stu-id="e3436-149">Certificate import and export</span></span>
-<span data-ttu-id="e3436-150">証明書は、お客様のライセンス ファイルに署名し、インポート時にライセンス ファイルを検証するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="e3436-150">The certificate is used to sign your customer license files and validate the license files at the time of import.</span></span> <span data-ttu-id="e3436-151">Authenticode 証明書は、4 つのファイル形式をサポートします。</span><span class="sxs-lookup"><span data-stu-id="e3436-151">Authenticode certificates support four file formats.</span></span> <span data-ttu-id="e3436-152">ISV ライセンス機能については、2 つの形式で証明書ファイルが必要です。</span><span class="sxs-lookup"><span data-stu-id="e3436-152">For the ISV licensing feature, you must have the certificate files in two formats:</span></span>
-
--   <span data-ttu-id="e3436-153">**個人情報交換 (pfx または PKCS \#12 とも呼ばれる)** – .pfx ファイル名拡張子を使用して、証明書、秘密キー、および証明書パスのすべての証明書のセキュリティ保護された保管をサポートする PKCS \#12 形式。</span><span class="sxs-lookup"><span data-stu-id="e3436-153">**Personal Information Exchange (PFX, also known as PKCS \#12)** – The PKCS \#12 format, which uses the .pfx file name extension, supports secure storage of certificates, private keys, and all certificates in a certification path.</span></span> <span data-ttu-id="e3436-154">PKCS \#12 形式は、証明書とそのプライベート キーをエクスポートするために使用される唯一のファイル形式です。</span><span class="sxs-lookup"><span data-stu-id="e3436-154">The PKCS \#12 format is the only file format that can be used to export a certificate and its private key.</span></span>
--   <span data-ttu-id="e3436-155">**Base64 エンコード X.509** - Base64 形式では、単一の証明書の格納がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="e3436-155">**Base64-encoded X.509** – The Base64 format supports storage of a single certificate.</span></span> <span data-ttu-id="e3436-156">この形式では、秘密キーまたは証明書パスの格納はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e3436-156">This format doesn't support storage of the private key or certification path.</span></span>
-
-<span data-ttu-id="e3436-157">形式に制限があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-157">There is a restriction on the format.</span></span> <span data-ttu-id="e3436-158">PFX (PKCS \#12) 形式は、署名/生成目的でプライベート キーと共に証明書をエクスポートする場合にのみ使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-158">The PFX (PKCS \#12) format should be used only to export the certificate together with its private key for signing/generating purposes.</span></span> <span data-ttu-id="e3436-159">絶対に ISV 組織外に共有しないようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-159">It should never be shared outside the ISV organization.</span></span> <span data-ttu-id="e3436-160">.cer ファイル名拡張子を使用する DER でエンコードされたバイナリ X.509形式は、アプリケーション オブジェクト ツリー (AOT) ライセンスに埋め込まれる必要がある証明書の公開キーをエクスポートするために使用してください。</span><span class="sxs-lookup"><span data-stu-id="e3436-160">The DER-encoded binary X.509 format, which uses the .cer file name extension, should be used to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License.</span></span> <span data-ttu-id="e3436-161">この公開キーは、モデルを介して顧客に配布されます。</span><span class="sxs-lookup"><span data-stu-id="e3436-161">This public key is distributed to customers via the model.</span></span> <span data-ttu-id="e3436-162">これは、ライセンスが秘密キーを所有する ISV ライセンスによって署名されていることを確認するために、ライセンスのインポート時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="e3436-162">It's used when a license is imported, to make sure that the license is signed by the ISV license that owns the private key.</span></span>
-
-## <a name="enable-licensing-for-your-isv-solution"></a><span data-ttu-id="e3436-163">ISV ソリューションのライセンスの有効化</span><span class="sxs-lookup"><span data-stu-id="e3436-163">Enable licensing for your ISV solution</span></span>
-<span data-ttu-id="e3436-164">ソリューションのライセンスを有効にするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e3436-164">Follow these steps to enable licensing for your solution.</span></span>
-
-1.  <span data-ttu-id="e3436-165">ISV ソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3436-165">Create an ISV solution.</span></span> 
-
-    ![ISV ソリューションを作成しています](./media/isv1.png)
-
-2.  <span data-ttu-id="e3436-167">リソースとしてプロジェクトに証明書の公開キー (.cer ファイル) を追加します。</span><span class="sxs-lookup"><span data-stu-id="e3436-167">Add the certificate's public key (.cer file) to your project as a resource.</span></span>
-    1.  <span data-ttu-id="e3436-168">新しい品目を追加します。</span><span class="sxs-lookup"><span data-stu-id="e3436-168">Add a new item.</span></span> 
-
-        ![新しい品目の追加](./media/isv2.png)
-
-    2.  <span data-ttu-id="e3436-170">**ラベルおよびリソース**をクリックし、次に**リソース**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e3436-170">Click **Labels And Resources**, and then click **Resource**.</span></span> 
-
-        ![リソースをクリックする](./media/isv3.png)
-
-    3.  <span data-ttu-id="e3436-172">リソースとして証明書の公開キーを選択します。</span><span class="sxs-lookup"><span data-stu-id="e3436-172">Select the certificate's public key as the resource.</span></span> 
-
-        ![リソースとして証明書の公開キーを選択](./media/isv4.png)
-
-    4.  <span data-ttu-id="e3436-174">リソースとして、証明書を追加します。</span><span class="sxs-lookup"><span data-stu-id="e3436-174">Add the certificate as a resource.</span></span> 
-
-        ![リソースとして証明書を追加](./media/isv5.png)
-
-
-3.  <span data-ttu-id="e3436-176">ライセンス コードを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3436-176">Create a license code.</span></span> 
-
-    ![ライセンス コードを作成しています](./media/isv6.png)
-
-4.  <span data-ttu-id="e3436-178">ライセンス コードに証明書をマップします。</span><span class="sxs-lookup"><span data-stu-id="e3436-178">Map the certificate to the license code.</span></span> 
-
-    ![ライセンス コードへの証明書のマッピング](./media/isv7.png)
-
-5.  <span data-ttu-id="e3436-180">1 つまたは複数のコンフィギュレーション キーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3436-180">Create one or more configuration keys.</span></span> 
-
-    ![コンフィギュレーション キーを作成しています](./media/isv8.png)
-
-6.  <span data-ttu-id="e3436-182">ライセンス コードをコンフィギュレーション キーに関連付けます。</span><span class="sxs-lookup"><span data-stu-id="e3436-182">Associate the license code with the configuration keys.</span></span> 
-
-    <span data-ttu-id="e3436-183">[</span><span class="sxs-lookup"><span data-stu-id="e3436-183">[</span></span>![ライセンス コードとコンフィギュレーション キーの関連付け](./media/isv9.png)
-
-7.  <span data-ttu-id="e3436-185">コンフィギュレーション キーをソリューションの要素に関連付けます。</span><span class="sxs-lookup"><span data-stu-id="e3436-185">Associate a configuration key to an element in your solution.</span></span> <span data-ttu-id="e3436-186">たとえば、新しいフォームを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3436-186">For example, create a new form.</span></span> 
-
-    ![新しいフォームを作成しています](./media/isv10.png)
-
-8.  <span data-ttu-id="e3436-188">フォームにボタンを追加します。</span><span class="sxs-lookup"><span data-stu-id="e3436-188">Add a button to the form.</span></span> 
-
-    ![新しいフォームへのボタンの追加](./media/isv11.png)
-
-    <span data-ttu-id="e3436-190">このボタンは、最初はコンフィギュレーション キーで制御されていないため、表示されます。</span><span class="sxs-lookup"><span data-stu-id="e3436-190">The button will be visible, because it isn't controlled by a configuration key at first.</span></span> 
-
-    ![最初に追加されるときに、新しいボタンが表示されます](./media/isv12.png)
-
-9.  <span data-ttu-id="e3436-192">コンフィギュレーション キーをボタンに関連付けます。</span><span class="sxs-lookup"><span data-stu-id="e3436-192">Associate a configuration key with the button.</span></span> 
-
-    ![コンフィギュレーション キーとボタンの関連付け](./media/isv13.png) 
-
-    <span data-ttu-id="e3436-194">コンフィギュレーション キーが有効になり、利用可能になると、ボタンは表示されなくなります。</span><span class="sxs-lookup"><span data-stu-id="e3436-194">The button will no longer be visible, because the configuration key must be available and enabled.</span></span> 
-
-    ![ボタンが表示されていません](./media/isv14.png)
-
-
-## <a name="create-a-package-and-generate-a-customer-specific-license"></a><span data-ttu-id="e3436-196">パッケージを作成し、顧客固有のライセンスを生成する</span><span class="sxs-lookup"><span data-stu-id="e3436-196">Create a package and generate a customer-specific license</span></span>
-1.  <span data-ttu-id="e3436-197">ライセンスを発行する顧客のテナント名と ID を収集します。</span><span class="sxs-lookup"><span data-stu-id="e3436-197">Collect the tenant name and ID for the customer to issue the license to.</span></span> <span data-ttu-id="e3436-198">(この情報は、**設定**&gt;**情報**で見つけることができます。)</span><span class="sxs-lookup"><span data-stu-id="e3436-198">(You can find this information at **Settings** &gt; **About**.)</span></span> 
-
-    ![顧客のテナント名および ID](./media/isv15.png)
-
-2.  <span data-ttu-id="e3436-200">顧客のライセンス (テナント ID と名前) を生成し、証明書のプライベート キーを使用してライセンスを登録します。</span><span class="sxs-lookup"><span data-stu-id="e3436-200">Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key.</span></span> <span data-ttu-id="e3436-201">ライセンス ファイルを作成するには、**axutil genlicense** コマンドに、以下のパラメーターを渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-201">You must pass the following parameters to the **axutil genlicense** command to create the license file.</span></span>
-
-    | <span data-ttu-id="e3436-202">パラメーター名</span><span class="sxs-lookup"><span data-stu-id="e3436-202">Parameter name</span></span>  | <span data-ttu-id="e3436-203">説明</span><span class="sxs-lookup"><span data-stu-id="e3436-203">Description</span></span>                                                                  |
-    |-----------------|------------------------------------------------------------------------------|
-    | <span data-ttu-id="e3436-204">ファイル</span><span class="sxs-lookup"><span data-stu-id="e3436-204">file</span></span>            | <span data-ttu-id="e3436-205">ライセンス ファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="e3436-205">The name of your license file.</span></span>                                               |
-    | <span data-ttu-id="e3436-206">licensecode</span><span class="sxs-lookup"><span data-stu-id="e3436-206">licensecode</span></span>     | <span data-ttu-id="e3436-207">Microsoft Visual Studio のライセンス コードの名前。</span><span class="sxs-lookup"><span data-stu-id="e3436-207">The name of your license code (from Microsoft Visual Studio).</span></span>                |
-    | <span data-ttu-id="e3436-208">certificatepath</span><span class="sxs-lookup"><span data-stu-id="e3436-208">certificatepath</span></span> | <span data-ttu-id="e3436-209">証明書のプライベート キーのパス。</span><span class="sxs-lookup"><span data-stu-id="e3436-209">The path of your certificate's private key.</span></span>                                  |
-    | <span data-ttu-id="e3436-210">パスワード</span><span class="sxs-lookup"><span data-stu-id="e3436-210">password</span></span>        | <span data-ttu-id="e3436-211">証明書のプライベート キーのパスワード。</span><span class="sxs-lookup"><span data-stu-id="e3436-211">The password for your certificate's private key.</span></span>                             |
-    | <span data-ttu-id="e3436-212">顧客</span><span class="sxs-lookup"><span data-stu-id="e3436-212">customer</span></span>        | <span data-ttu-id="e3436-213">(手順 1 のスクリーン ショットから) 顧客のテナント名。</span><span class="sxs-lookup"><span data-stu-id="e3436-213">The customer's tenant name (from the screen shot under step 1).</span></span>              |
-    | <span data-ttu-id="e3436-214">serialnumber</span><span class="sxs-lookup"><span data-stu-id="e3436-214">serialnumber</span></span>    | <span data-ttu-id="e3436-215">顧客のテナント ID (スクリーン ショットに「シリアル番号」と表示されています)。</span><span class="sxs-lookup"><span data-stu-id="e3436-215">The customer's tenant ID (labeled "Serial number" in the screen shot).</span></span>       |
-    | <span data-ttu-id="e3436-216">expirationdate</span><span class="sxs-lookup"><span data-stu-id="e3436-216">expirationdate</span></span>  | <span data-ttu-id="e3436-217">オプション: ライセンスの有効期限。</span><span class="sxs-lookup"><span data-stu-id="e3436-217">Optional: The expiration date for the license.</span></span>                               |
-    | <span data-ttu-id="e3436-218">usercount</span><span class="sxs-lookup"><span data-stu-id="e3436-218">usercount</span></span>       | <span data-ttu-id="e3436-219">オプション: カスタム検証ロジックが必要に応じて使用できる数値。</span><span class="sxs-lookup"><span data-stu-id="e3436-219">Optional: The number that custom validation logic can use as required.</span></span> <span data-ttu-id="e3436-220">これはユーザーになる可能性がありますが、必ずしもユーザーに限定されません。</span><span class="sxs-lookup"><span data-stu-id="e3436-220">This could be users, but is not limited to users.</span></span> |
-
-    <span data-ttu-id="e3436-221">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="e3436-221">Here is an example.</span></span>
-
-        C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
-
-
-
-3.  <span data-ttu-id="e3436-222">ライセンスをターゲット環境にインポートします。</span><span class="sxs-lookup"><span data-stu-id="e3436-222">Import the license into the target environment.</span></span> <span data-ttu-id="e3436-223">**注記:** 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="e3436-223">**Note:** In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package.</span></span> <span data-ttu-id="e3436-224">詳細については、この記事の後半の「実稼働環境」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3436-224">For more information, see the "Production environments" section later in this article.</span></span>
-
-    | <span data-ttu-id="e3436-225">パラメーター名</span><span class="sxs-lookup"><span data-stu-id="e3436-225">Parameter name</span></span>                | <span data-ttu-id="e3436-226">説明</span><span class="sxs-lookup"><span data-stu-id="e3436-226">Description</span></span>                                                                                            |
-    |-------------------------------|--------------------------------------------------------------------------------------------------------|
-    | <span data-ttu-id="e3436-227">--setupmode importlicensefile</span><span class="sxs-lookup"><span data-stu-id="e3436-227">--setupmode importlicensefile</span></span> | <span data-ttu-id="e3436-228">ライセンスが読み込まれることをセットアップ ツールに通知するには、このパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-228">Use this parameter to inform the setup tool that a license will be loaded.</span></span>                             |
-    | <span data-ttu-id="e3436-229">--metadatadir</span><span class="sxs-lookup"><span data-stu-id="e3436-229">--metadatadir</span></span>                 | <span data-ttu-id="e3436-230">メタデータ ディレクトリ を指定するには、このパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-230">Use this parameter to specify the metadata directory.</span></span> <span data-ttu-id="e3436-231">既定のパッケージ ディレクトリを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-231">You should use the default packages directory.</span></span>   |
-    | <span data-ttu-id="e3436-232">--bindir</span><span class="sxs-lookup"><span data-stu-id="e3436-232">--bindir</span></span>                      | <span data-ttu-id="e3436-233">バイナリ ディレクトリ を指定するには、このパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-233">Use this parameter to specify the binaries directory.</span></span> <span data-ttu-id="e3436-234">既定のパッケージ ディレクトリを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-234">You should use the default packages directory.</span></span>   |
-    | <span data-ttu-id="e3436-235">--sqlserver</span><span class="sxs-lookup"><span data-stu-id="e3436-235">--sqlserver</span></span>                   | <span data-ttu-id="e3436-236">このパラメーターを使用して Microsoft SQL Server を指定します。</span><span class="sxs-lookup"><span data-stu-id="e3436-236">Use this parameter to specify the Microsoft SQL Server.</span></span> <span data-ttu-id="e3436-237">1 ボックス環境では、ピリオド (**.**) を使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-237">For one-box environment, use a period (**.**).</span></span> |
-    | <span data-ttu-id="e3436-238">--sqluser</span><span class="sxs-lookup"><span data-stu-id="e3436-238">--sqluser</span></span>                     | <span data-ttu-id="e3436-239">SQL Server のユーザーを指定するには、このパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-239">Use this parameter to specify the SQL Server user.</span></span> <span data-ttu-id="e3436-240">**AOSUser** に渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-240">You should pass in **AOSUser**.</span></span>                     |
-    | <span data-ttu-id="e3436-241">--sqlpwd</span><span class="sxs-lookup"><span data-stu-id="e3436-241">--sqlpwd</span></span>                      | <span data-ttu-id="e3436-242">SQL Server のパスワードを指定するには、このパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-242">Use this parameter to specify the SQL Server password.</span></span>                                                 |
-    | <span data-ttu-id="e3436-243">--licensefilename</span><span class="sxs-lookup"><span data-stu-id="e3436-243">--licensefilename</span></span>             | <span data-ttu-id="e3436-244">読み込むライセンス ファイルを指定するには、このパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e3436-244">Use this parameter to specify the license file that will be loaded.</span></span>                                    |
-
-    <span data-ttu-id="e3436-245">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="e3436-245">Here is an example.</span></span>
-
-        C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
-
-4.  <span data-ttu-id="e3436-246">対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。</span><span class="sxs-lookup"><span data-stu-id="e3436-246">The corresponding configuration key will be available and enabled on the **License configuration** page.</span></span> <span data-ttu-id="e3436-247">既定では、コンフィギュレーションが有効です。</span><span class="sxs-lookup"><span data-stu-id="e3436-247">By default, the configuration is enabled.</span></span> <span data-ttu-id="e3436-248">たとえば、次のスクリーン ショットで **ISVConfigurationKey1** コンフィギュレーション キーを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3436-248">For example, see the **ISVConfigurationKey1** configuration key in the following screen shot.</span></span> 
-
-    ![ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にする](./media/isv18.png)
-
-5.  <span data-ttu-id="e3436-250">非実稼働インストールでは、Visual Studio からデータベースの同期プロセスを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-250">In non-production installations, you must start the database synchronization process from Visual Studio.</span></span>
-
-<span data-ttu-id="e3436-251">コンフィギュレーション キーを有効にした後、次のスクリーン ショットに示すように、ボタンは表示されるようになります。</span><span class="sxs-lookup"><span data-stu-id="e3436-251">After the configuration key is enabled, the button become visible, as shown in the following screen shot.</span></span> 
-
-![コンフィギュレーション キーを有効にするとボタンが表示されます](./media/isv19.png)
-
-## <a name="protection-best-practices"></a><span data-ttu-id="e3436-253">保護のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="e3436-253">Protection best practices</span></span>
-<span data-ttu-id="e3436-254">ソリューションは、2つの形式で配布することができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-254">Solutions can be delivered in two forms:</span></span>
-
--   <span data-ttu-id="e3436-255">モデル ファイル (ソース コード)</span><span class="sxs-lookup"><span data-stu-id="e3436-255">Model files (source code)</span></span>
--   <span data-ttu-id="e3436-256">配置可能パッケージ (binary)</span><span class="sxs-lookup"><span data-stu-id="e3436-256">Deployable packages (binary)</span></span>
-
-<span data-ttu-id="e3436-257">構成キーとライセンス コードを保護するには、展開可能なパッケージを使用してバイナリ形式でリリースすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e3436-257">To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package.</span></span> <span data-ttu-id="e3436-258">顧客は Visual Studio のこれらの要素をインストールして対話することができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-258">Customers will then be able to install and interact with those elements in Visual Studio.</span></span> <span data-ttu-id="e3436-259">顧客が配置可能パッケージ内の項目を参照することはできますが、ソース コードにアクセスしたり項目を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="e3436-259">Although customers will be able to refer to items in the deployable package, they won't be able to access source code or make modifications to the items.</span></span> <span data-ttu-id="e3436-260">(ただし、拡張機能を作成できます。) バイナリ形式でソリューションをリリースする機能の詳細は、すぐに利用可能になります。</span><span class="sxs-lookup"><span data-stu-id="e3436-260">(However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon.</span></span> <span data-ttu-id="e3436-261">配置可能パッケージ (バイナリ) には、顧客がアクセスを必要とせず、カスタマイズできないようなクラスやその他のロジックも含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-261">The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and should not be able to customize.</span></span> 
-
-![保護されている ISV ソリューションと保護されていない ISV ソリューション](./media/isv20.png)
-
-## <a name="production-environments"></a><span data-ttu-id="e3436-263">実稼働環境</span><span class="sxs-lookup"><span data-stu-id="e3436-263">Production environments</span></span>
-<span data-ttu-id="e3436-264">実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-264">To install ISV licenses in production systems, you must use a deployable package through LCS.</span></span> <span data-ttu-id="e3436-265">構成モード用テンプレート パッケージは、すべてのインストールの &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (パッケージ フォルダーは通常 j:\\AOSService\\PackagesLocalDirectory または c:\\AOSService\\PackagesLocalDirectory\\ の下にあります) で見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-265">You can find a template package for configuration mode at the following location in all installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\)</span></span> 
-
-![コンフィギュレーション モードのテンプレート パッケージの場所](./media/isv21.png)
-
-1.  <span data-ttu-id="e3436-267">パッケージ テンプレートのコピーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e3436-267">Make a copy of the package template.</span></span>
-2.  <span data-ttu-id="e3436-268">パッケージ テンプレート内の次のフォルダーにライセンス ファイルを配置: ImportISVLicense.zipAosServiceScriptsLicense</span><span class="sxs-lookup"><span data-stu-id="e3436-268">Put the license file in the following folder within the package template: ImportISVLicense.zipAosServiceScriptsLicense</span></span>
-
-<span data-ttu-id="e3436-269">一度に複数のライセンスをインストールすることができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-269">More than one license can be installed at a time.</span></span> <span data-ttu-id="e3436-270">別のライセンスがいずれかに依存する場合は、それに応じた名前を確認します。</span><span class="sxs-lookup"><span data-stu-id="e3436-270">If one of the licenses depends on another, make sure that it's named accordingly.</span></span> <span data-ttu-id="e3436-271">(ライセンスはアルファベット順にインストールされます。)</span><span class="sxs-lookup"><span data-stu-id="e3436-271">(Licenses are installed in alphabetical order.)</span></span>
-
-## <a name="appendix-create-self-signed-certificates-for-test-purposes"></a><span data-ttu-id="e3436-272">付録: テスト目的での自己署名証明書の作成</span><span class="sxs-lookup"><span data-stu-id="e3436-272">Appendix: Create self-signed certificates for test purposes</span></span>
-<span data-ttu-id="e3436-273">**注記:** 自己署名証明書は、開発時にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="e3436-273">**Note:** Self-signed certificates can be used only during development.</span></span> <span data-ttu-id="e3436-274">これらは、実稼働環境でサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e3436-274">They aren't supported in production environments.</span></span>
-
-1.  <span data-ttu-id="e3436-275">テストの目的で、 自己署名の CA 証明書を作成することができます。</span><span class="sxs-lookup"><span data-stu-id="e3436-275">For test purposes, create a self-signed CA certificate.</span></span> <span data-ttu-id="e3436-276">Visual Studio のツール プロンプトを使用して、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e3436-276">Use the Visual Studio tools prompt to run the following command.</span></span>
-
-        makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
-
-    <span data-ttu-id="e3436-277">詳細については、[MakeCert](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx) のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e3436-277">For more information, see the [MakeCert](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.</span></span>
-
-2.  <span data-ttu-id="e3436-278">CA を使用して証明書を作成します。</span><span class="sxs-lookup"><span data-stu-id="e3436-278">Create a certificate by using the CA.</span></span>
-
-        makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
-
-3.  <span data-ttu-id="e3436-279">ISV 証明書を PFX 形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="e3436-279">Convert the ISV certificate to PFX format.</span></span>
-
-        pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
-
-4.  <span data-ttu-id="e3436-280">テスト シナリオでは、すべての AOS インスタンスに手動で自己署名 CA 証明書をインポートします。</span><span class="sxs-lookup"><span data-stu-id="e3436-280">For a test scenario, import the self-signed CA certificate manually on all the AOS instances.</span></span>
-
-        certutil -addstore root c:\temp\ca.cer
-
-    <span data-ttu-id="e3436-281">ただし、自己署名 ISV 証明書を使用していた場合、CA 証明書ではなくその証明書をインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e3436-281">However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.</span></span>
-
-        certutil -addstore root c:\temp\isvcert.cer
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="isv-licensing.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>isv-licensing.da4634.6112bb81f4ccf140bf9c6da5871951c0e44ca2c0.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>6112bb81f4ccf140bf9c6da5871951c0e44ca2c0</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\dev-tools\isv-licensing.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Independent software vendor (ISV) licensing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">独立系ソフトウェア ベンダー (ISV) ライセンス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes the independent software vendor (ISV) licensing feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Independent software vendor (ISV) licensing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">独立系ソフトウェア ベンダー (ISV) ライセンス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic describes the independent software vendor (ISV) licensing feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The Microsoft Dynamics ecosystem provides tools and frameworks that let independent software vendors (ISVs) build, deploy, sell, and therefore monetize vertical industry solutions that can be repackaged.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics エコシステムには、独立系ソフトウェア ベンダー (ISV) が再パッケージ化可能な業種ソリューションをビルド、配置、販売して収益化できるようにするツールとフレームワークが用意されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The ISV licensing feature provides the following benefits:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ライセンス機能には、次の利点があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>It provides a safer licensing mechanism for ISV solutions for customers and partners.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、顧客およびパートナーに ISV ソリューションのより安全なライセンス メカニズムを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>ISV solutions are enabled only if the customer has purchased a valid license key from the ISV.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ソリューションは、顧客が ISV から有効なライセンス キーを購入した場合にのみ有効になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>It aligns how customers handle licenses for ISV solutions from different ISVs, and therefore lowers the total cost of ownership (TCO).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、顧客が異なる ISV からの ISV ソリューションのライセンスをどのように処理するかが調整されるため、総保有コスト (TCO) を削減します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>ISVs can independently generate, manage, and distribute ISV licenses by using industry standard frameworks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV は、業界標準のフレームワークを使用して、ISV ライセンスを個別に生成、管理、配布することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>This feature doesn't enable ISV competitor copycat protection (that is, source-based protection).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この機能は、ISV 競合他社のコピー防止 (ソースベースの保護) を有効にしません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Capabilities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">処理能力</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>This section describes various capabilities of the ISV licensing feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このセクションでは、ISV ライセンス機能のさまざまな機能について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>ISVs can generate their own licenses</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV は独自のライセンスを生成可能</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>ISVs can independently generate their own licenses, apply them to solutions, and deliver those solutions to partners and customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV は独自のライセンスを個別に生成し、ソリューションに適用し、これらのソリューションをパートナーおよび顧客に提供できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Each ISV license enables run-time features that help protect the ISV solution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各 ISV ライセンスでは、ISV ソリューションを保護するためのランタイム機能を有効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Additionally, each ISV license is tied to an ISV Authenticode certificate, which guarantees that the software was distributed by the ISV.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、各 ISV ライセンスは、ソフトウェアが ISV によって配布されていることを保証する ISV Authenticode 証明書に関連付けられます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>A run-time check makes sure that an ISV-generated license key exists in the customer's environment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ランタイム チェックにより、ISV によって生成されたライセンス キーが顧客の環境に存在することを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Each ISV solution that is tied to a license runs only when a valid license key exists in the customer's environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスに関連付けられた各 ISV ソリューションは、有効なライセンス キーが顧客の環境に存在する場合にのみ実行されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Therefore, if an ISV ties its solution to a license, but the customer doesn't have a valid license key, the solution doesn't run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、ISV がソリューションをライセンスに結び付けても、顧客に有効なライセンス キーがない場合、ソリューションは実行されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>There are two types of license: Boolean and Number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスには、ブール値と数値の 2 種類があります</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>ISVs can create two types of license: <bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Number<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV は<bpt id="p1">**</bpt>ブール値<ept id="p1">**</ept>および<bpt id="p2">**</bpt>番号<ept id="p2">**</ept>の 2 つのタイプを作成できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>ISVs can associate an expiration date with either type of license.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>This expiration date is applied only to the ISV licenses and is independent of the system expiration date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>A Boolean license is a simple activation license.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値ライセンスは、単純な有効化ライセンスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>The type of license (<bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Number<ept id="p2">**</ept>) is set through a property in the license code node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスのタイプ (<bpt id="p1">**</bpt>ブール値<ept id="p1">**</ept> または<bpt id="p2">**</bpt>数字<ept id="p2">**</ept>) は、ライセンス コード ノードのプロパティによって設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>ISVs can write their own custom logic to check the count that is provided in the ISV license, to make sure that their solutions are being used within the license terms.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>For more information, see <bpt id="p1">[</bpt>Licensing Framework for ISVs<ept id="p1">](https://msdn.microsoft.com/en-us/library/jj677284.aspx)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>ISV のライセンス フレームワーク<ept id="p1">](https://msdn.microsoft.com/en-us/library/jj677284.aspx)</ept>を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>License validation errors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス検証エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>When an ISV license becomes invalid after import, the ISV solution continues to run until the server is restarted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ライセンスがインポート後に無効になったとき、ISV ソリューションはサーバーが再起動されるまで実行を継続します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>(After the server is restarted, the solution is disabled.) An error is thrown when the instance of the Application Object Server (AOS) starts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(サーバーの再起動後、ソリューションは無効になっています。) Application Object Server (AOS) のインスタンスの起動時にエラーがスローされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The error is written to the event log.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーはイベント ログに書き込まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Implementing ISV licensing in a solution</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションへの ISV ライセンスの実装</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Microsoft doesn't recommend any particular CA.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft が、特定の CA をお勧めすることはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>However, many companies offer these certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、多くの企業がこれらの証明書を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Authenticode certificates come in various key sizes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Authenticode 証明書は、さまざまなキー サイズに役立ちます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>By default, many providers use the 2048-bit key size, and we recommend that ISVs use this bit key size, because it provides stronger encryption.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、多くのプロバイダーが 2048 ビット キー サイズを使用しており、より強固な暗号化を提供するために ISV はこのビット キー サイズを使用することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>However, if an ISV already has an existing 1024-bit key size, that key size works with the ISV licensing feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、ISV に既に既存の 1024 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The ISV licensing feature doesn't support 4096-bit key sizes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> ISV ライセンス機能は、4096 ビット キー サイズをサポートしていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Authenticode certificates can have various cryptographic service providers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>There are many independent providers that you can purchase an Authenticode certificate from.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Microsoft doesn't recommend any particular provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft が、特定のプロバイダーをお勧めすることはありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Some providers that are often used are Symantec VeriSign, Thawte, and Go Daddy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">頻繁に使用されるプロバイダーには、Symantec VeriSign、Thawte、Go Daddy があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Certificate import and export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書のインポートおよびエクスポート</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The certificate is used to sign your customer license files and validate the license files at the time of import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書は、お客様のライセンス ファイルに署名し、インポート時にライセンス ファイルを検証するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Authenticode certificates support four file formats.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Authenticode 証明書は、4 つのファイル形式をサポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>For the ISV licensing feature, you must have the certificate files in two formats:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ライセンス機能については、2 つの形式で証明書ファイルが必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source><bpt id="p1">**</bpt>Personal Information Exchange (PFX, also known as PKCS <ph id="ph1">\#</ph>12)<ept id="p1">**</ept> – The PKCS <ph id="ph2">\#</ph>12 format, which uses the .pfx file name extension, supports secure storage of certificates, private keys, and all certificates in a certification path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>個人情報交換 (pfx または PKCS <ph id="ph1">\#</ph>12 とも呼ばれる)<ept id="p1">**</ept> – .pfx ファイル名拡張子を使用して、証明書、秘密キー、および証明書パスのすべての証明書のセキュリティ保護された保管をサポートする PKCS <ph id="ph2">\#</ph>12 形式。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>The PKCS <ph id="ph1">\#</ph>12 format is the only file format that can be used to export a certificate and its private key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PKCS <ph id="ph1">\#</ph>12 形式は、証明書とそのプライベート キーをエクスポートするために使用される唯一のファイル形式です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source><bpt id="p1">**</bpt>Base64-encoded X.509<ept id="p1">**</ept> – The Base64 format supports storage of a single certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Base64 エンコード X.509<ept id="p1">**</ept> - Base64 形式では、単一の証明書の格納がサポートされています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>This format doesn't support storage of the private key or certification path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この形式では、秘密キーまたは証明書パスの格納はサポートされていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>There is a restriction on the format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">形式に制限があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The PFX (PKCS <ph id="ph1">\#</ph>12) format should be used only to export the certificate together with its private key for signing/generating purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PFX (PKCS <ph id="ph1">\#</ph>12) 形式は、署名/生成目的でプライベート キーと共に証明書をエクスポートする場合にのみ使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>It should never be shared outside the ISV organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">絶対に ISV 組織外に共有しないようにする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The DER-encoded binary X.509 format, which uses the .cer file name extension, should be used to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.cer ファイル名拡張子を使用する DER でエンコードされたバイナリ X.509形式は、アプリケーション オブジェクト ツリー (AOT) ライセンスに埋め込まれる必要がある証明書の公開キーをエクスポートするために使用してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>This public key is distributed to customers via the model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この公開キーは、モデルを介して顧客に配布されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>It's used when a license is imported, to make sure that the license is signed by the ISV license that owns the private key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、ライセンスが秘密キーを所有する ISV ライセンスによって署名されていることを確認するために、ライセンスのインポート時に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Enable licensing for your ISV solution</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ソリューションのライセンスの有効化</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Follow these steps to enable licensing for your solution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションのライセンスを有効にするには、これらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Create an ISV solution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ソリューションを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Creating an ISV solution</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV ソリューションを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Add the certificate's public key (.cer file) to your project as a resource.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースとしてプロジェクトに証明書の公開キー (.cer ファイル) を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Add a new item.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい品目を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Adding a new item</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい品目の追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click <bpt id="p1">**</bpt>Labels And Resources<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Resource<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ラベルおよびリソース<ept id="p1">**</ept>をクリックし、次に<bpt id="p2">**</bpt>リソース<ept id="p2">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Clicking Resource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースをクリックする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Select the certificate's public key as the resource.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースとして証明書の公開キーを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Selecting the certificate's public key as the resource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースとして証明書の公開キーを選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Add the certificate as a resource.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースとして、証明書を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Adding the certificate as a resource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースとして証明書を追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Create a license code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス コードを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Creating a license code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス コードを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Map the certificate to the license code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス コードに証明書をマップします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Mapping the certificate to the license code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス コードへの証明書のマッピング</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Create one or more configuration keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つまたは複数のコンフィギュレーション キーを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Creating a configuration key</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Associate the license code with the configuration keys.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス コードをコンフィギュレーション キーに関連付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>[</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Associating the license code with the configuration keys</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス コードとコンフィギュレーション キーの関連付け</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Associate a configuration key to an element in your solution.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーをソリューションの要素に関連付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>For example, create a new form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、新しいフォームを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Creating a new form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフォームを作成しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Add a button to the form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フォームにボタンを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Adding a button to the new form</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフォームへのボタンの追加</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>The button will be visible, because it isn't controlled by a configuration key at first.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このボタンは、最初はコンフィギュレーション キーで制御されていないため、表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>New button is visible when it's first added</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最初に追加されるときに、新しいボタンが表示されます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Associate a configuration key with the button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーをボタンに関連付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Associating a configuration key with the button</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーとボタンの関連付け</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>The button will no longer be visible, because the configuration key must be available and enabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーが有効になり、利用可能になると、ボタンは表示されなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Button is no longer visible</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ボタンが表示されていません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Create a package and generate a customer-specific license</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージを作成し、顧客固有のライセンスを生成する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Collect the tenant name and ID for the customer to issue the license to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスを発行する顧客のテナント名と ID を収集します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>(You can find this information at <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>About<ept id="p2">**</ept>.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(この情報は、<bpt id="p1">**</bpt>設定<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>情報<ept id="p2">**</ept>で見つけることができます。)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Customer's tenant name and ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のテナント名および ID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のライセンス (テナント ID と名前) を生成し、証明書のプライベート キーを使用してライセンスを登録します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>You must pass the following parameters to the <bpt id="p1">**</bpt>axutil genlicense<ept id="p1">**</ept> command to create the license file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス ファイルを作成するには、<bpt id="p1">**</bpt>axutil genlicense<ept id="p1">**</ept> コマンドに、以下のパラメーターを渡す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Parameter name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>file</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>The name of your license file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス ファイルの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>licensecode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">licensecode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>The name of your license code (from Microsoft Visual Studio).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Visual Studio のライセンス コードの名前。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>certificatepath</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">certificatepath</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>The path of your certificate's private key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書のプライベート キーのパス。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>password</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パスワード</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>The password for your certificate's private key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書のプライベート キーのパスワード。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>The customer's tenant name (from the screen shot under step 1).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(手順 1 のスクリーン ショットから) 顧客のテナント名。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>serialnumber</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">serialnumber</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>The customer's tenant ID (labeled "Serial number" in the screen shot).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客のテナント ID (スクリーン ショットに「シリアル番号」と表示されています)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>expirationdate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">expirationdate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Optional: The expiration date for the license.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション: ライセンスの有効期限。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>usercount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">usercount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Optional: The number that custom validation logic can use as required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オプション: カスタム検証ロジックが必要に応じて使用できる数値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>This could be users, but is not limited to users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これはユーザーになる可能性がありますが、必ずしもユーザーに限定されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Here is an example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に例を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Import the license into the target environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスをターゲット環境にインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>For more information, see the "Production environments" section later in this article.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、この記事の後半の「実稼働環境」セクションを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Parameter name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>--setupmode importlicensefile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--setupmode importlicensefile</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Use this parameter to inform the setup tool that a license will be loaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンスが読み込まれることをセットアップ ツールに通知するには、このパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>--metadatadir</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--metadatadir</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Use this parameter to specify the metadata directory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メタデータ ディレクトリ を指定するには、このパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>You should use the default packages directory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のパッケージ ディレクトリを使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>--bindir</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--bindir</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Use this parameter to specify the binaries directory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">バイナリ ディレクトリ を指定するには、このパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>You should use the default packages directory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定のパッケージ ディレクトリを使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>--sqlserver</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--sqlserver</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Use this parameter to specify the Microsoft SQL Server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このパラメーターを使用して Microsoft SQL Server を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>For one-box environment, use a period (<bpt id="p1">**</bpt>.<ept id="p1">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 ボックス環境では、ピリオド (<bpt id="p1">**</bpt>.<ept id="p1">**</ept>) を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>--sqluser</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--sqluser</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Use this parameter to specify the SQL Server user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server のユーザーを指定するには、このパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>You should pass in <bpt id="p1">**</bpt>AOSUser<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AOSUser<ept id="p1">**</ept> に渡す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>--sqlpwd</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--sqlpwd</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Use this parameter to specify the SQL Server password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server のパスワードを指定するには、このパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>--licensefilename</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">--licensefilename</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Use this parameter to specify the license file that will be loaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">読み込むライセンス ファイルを指定するには、このパラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Here is an example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に例を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>The corresponding configuration key will be available and enabled on the <bpt id="p1">**</bpt>License configuration<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">対応するコンフィギュレーション キーは、<bpt id="p1">**</bpt>ライセンス コンフィギュレーション<ept id="p1">**</ept> ページで使用可能になり、有効になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>By default, the configuration is enabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、コンフィギュレーションが有効です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>For example, see the <bpt id="p1">**</bpt>ISVConfigurationKey1<ept id="p1">**</ept> configuration key in the following screen shot.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、次のスクリーン ショットで <bpt id="p1">**</bpt>ISVConfigurationKey1<ept id="p1">**</ept> コンフィギュレーション キーを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>ISVConfigurationKey1 configuration key enabled on the License configuration page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にする</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>In non-production installations, you must start the database synchronization process from Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非実稼働インストールでは、Visual Studio からデータベースの同期プロセスを開始する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>After the configuration key is enabled, the button become visible, as shown in the following screen shot.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーを有効にした後、次のスクリーン ショットに示すように、ボタンは表示されるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Button is visible after the configuration key is enabled</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション キーを有効にするとボタンが表示されます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Protection best practices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保護のベスト プラクティス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Solutions can be delivered in two forms:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションは、2つの形式で配布することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Model files (source code)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モデル ファイル (ソース コード)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Deployable packages (binary)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージ (binary)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構成キーとライセンス コードを保護するには、展開可能なパッケージを使用してバイナリ形式でリリースすることをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Customers will then be able to install and interact with those elements in Visual Studio.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客は Visual Studio のこれらの要素をインストールして対話することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Although customers will be able to refer to items in the deployable package, they won't be able to access source code or make modifications to the items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客が配置可能パッケージ内の項目を参照することはできますが、ソース コードにアクセスしたり項目を変更することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>(However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(ただし、拡張機能を作成できます。) バイナリ形式でソリューションをリリースする機能の詳細は、すぐに利用可能になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and should not be able to customize.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能パッケージ (バイナリ) には、顧客がアクセスを必要とせず、カスタマイズできないようなクラスやその他のロジックも含めることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Protected vs. unprotected ISV solutions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">保護されている ISV ソリューションと保護されていない ISV ソリューション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Production environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>To install ISV licenses in production systems, you must use a deployable package through LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>You can find a template package for configuration mode at the following location in all installations: <ph id="ph1">&amp;lt;</ph>PackagesFolder<ph id="ph2">&amp;gt;</ph><ph id="ph3">\\</ph>bin<ph id="ph4">\\</ph>CustomDeployablePackage<ph id="ph5">\\</ph>ImportISVLicense.zip (Packages folder is typically under j:<ph id="ph6">\\</ph>AOSService<ph id="ph7">\\</ph>PackagesLocalDirectory or c:<ph id="ph8">\\</ph>AOSService<ph id="ph9">\\</ph>PackagesLocalDirectory<ph id="ph10">\\</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">構成モード用テンプレート パッケージは、すべてのインストールの <ph id="ph1">&amp;lt;</ph>PackagesFolder<ph id="ph2">&amp;gt;</ph><ph id="ph3">\\</ph>bin<ph id="ph4">\\</ph>CustomDeployablePackage<ph id="ph5">\\</ph>ImportISVLicense.zip (パッケージ フォルダーは通常 j:<ph id="ph6">\\</ph>AOSService<ph id="ph7">\\</ph>PackagesLocalDirectory または c:<ph id="ph8">\\</ph>AOSService<ph id="ph9">\\</ph>PackagesLocalDirectory<ph id="ph10">\\</ph> の下にあります) で見つけることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Location of the template package for configuration mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンフィギュレーション モードのテンプレート パッケージの場所</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Make a copy of the package template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ テンプレートのコピーを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Put the license file in the following folder within the package template: ImportISVLicense.zipAosServiceScriptsLicense</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ テンプレート内の次のフォルダーにライセンス ファイルを配置: ImportISVLicense.zipAosServiceScriptsLicense</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>More than one license can be installed at a time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一度に複数のライセンスをインストールすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>If one of the licenses depends on another, make sure that it's named accordingly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">別のライセンスがいずれかに依存する場合は、それに応じた名前を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>(Licenses are installed in alphabetical order.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(ライセンスはアルファベット順にインストールされます。)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Appendix: Create self-signed certificates for test purposes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付録: テスト目的での自己署名証明書の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Self-signed certificates can be used only during development.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>注記:<ept id="p1">**</ept> 自己署名証明書は、開発時にのみ使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>They aren't supported in production environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらは、実稼働環境でサポートされていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>For test purposes, create a self-signed CA certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テストの目的で、 自己署名の CA 証明書を作成することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Use the Visual Studio tools prompt to run the following command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio のツール プロンプトを使用して、次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>For more information, see the <bpt id="p1">[</bpt>MakeCert<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx)</ept> documentation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>MakeCert<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx)</ept> のドキュメントを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Create a certificate by using the CA.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CA を使用して証明書を作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Convert the ISV certificate to PFX format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISV 証明書を PFX 形式に変換します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>For a test scenario, import the self-signed CA certificate manually on all the AOS instances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト シナリオでは、すべての AOS インスタンスに手動で自己署名 CA 証明書をインポートします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、自己署名 ISV 証明書を使用していた場合、CA 証明書ではなくその証明書をインポートする必要があります。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

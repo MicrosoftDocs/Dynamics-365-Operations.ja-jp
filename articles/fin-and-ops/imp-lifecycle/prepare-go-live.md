@@ -1,128 +1,492 @@
----
-title: Go-Live の準備
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。
-author: ClaudiaBetz-Haubold
-manager: AnnBe
-ms.date: 02/26/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: IT Pro
-ms.reviewer: margoc
-ms.search.scope: Operations
-ms.search.region: Global
-ms.author: chaubold
-ms.search.validFrom: 2018-01-31
-ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 893b521097353eeccfe29bd7aaaec13b283fd2d0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507973"
----
-# <a name="prepare-for-go-live"></a><span data-ttu-id="cd816-103">Go-Live の準備</span><span class="sxs-lookup"><span data-stu-id="cd816-103">Prepare for go-live</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="cd816-104">このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="cd816-104">This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).</span></span>
-
-<span data-ttu-id="cd816-105">この図には、Go-Live プロセスのフェーズがリストされています。</span><span class="sxs-lookup"><span data-stu-id="cd816-105">This graphic lists the phases of the go-live process.</span></span>
-<span data-ttu-id="cd816-106">![Go-live プロセス](./media/go-live-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="cd816-106">![Go-live process](./media/go-live-process.PNG)</span></span>
-
-<span data-ttu-id="cd816-107">次のテーブルでは、プロセスのすべてのステップと、予定期間と、誰が処理を実行するのかについて示しています。</span><span class="sxs-lookup"><span data-stu-id="cd816-107">The following table lists all the steps in the process, with the expected duration and who is responsible to take the action.</span></span>
-
-|   | <span data-ttu-id="cd816-108">アクション</span><span class="sxs-lookup"><span data-stu-id="cd816-108">Action</span></span> | <span data-ttu-id="cd816-109">期間/時</span><span class="sxs-lookup"><span data-stu-id="cd816-109">Duration/When</span></span> | <span data-ttu-id="cd816-110">誰</span><span class="sxs-lookup"><span data-stu-id="cd816-110">Who</span></span> | <span data-ttu-id="cd816-111">摘要</span><span class="sxs-lookup"><span data-stu-id="cd816-111">Notes</span></span> |
-|---|--------|---------------|-----|-------|
-| <span data-ttu-id="cd816-112">1</span><span class="sxs-lookup"><span data-stu-id="cd816-112">1</span></span> | <span data-ttu-id="cd816-113">LCS での運用日付の更新</span><span class="sxs-lookup"><span data-stu-id="cd816-113">Update Go-live date in LCS</span></span> | <span data-ttu-id="cd816-114">遅くとも 2 ～ 3 か月前に</span><span class="sxs-lookup"><span data-stu-id="cd816-114">At the latest 2-3 months in advance</span></span> | <span data-ttu-id="cd816-115">パートナー/顧客</span><span class="sxs-lookup"><span data-stu-id="cd816-115">Partner/Customer</span></span> | <span data-ttu-id="cd816-116">マイルストーンの日付は、継続的に最新のものにする必要があります</span><span class="sxs-lookup"><span data-stu-id="cd816-116">The milestone dates should be kept up to date on an ongoing basis</span></span> |
-| <span data-ttu-id="cd816-117">2</span><span class="sxs-lookup"><span data-stu-id="cd816-117">2</span></span> | <span data-ttu-id="cd816-118">チェック リストの完了および送信</span><span class="sxs-lookup"><span data-stu-id="cd816-118">Complete and send check list</span></span> | <span data-ttu-id="cd816-119">UAT 完了後</span><span class="sxs-lookup"><span data-stu-id="cd816-119">After UAT complete</span></span> | <span data-ttu-id="cd816-120">パートナー/顧客</span><span class="sxs-lookup"><span data-stu-id="cd816-120">Partner/Customer</span></span> | <span data-ttu-id="cd816-121">このトピックの後半の「FastTrack Go live 評価」セクションの指示に従います。</span><span class="sxs-lookup"><span data-stu-id="cd816-121">Follow the instructions provided in the "FastTrack Go-live assessment" section later in this topic.</span></span> |
-| <span data-ttu-id="cd816-122">3</span><span class="sxs-lookup"><span data-stu-id="cd816-122">3</span></span> | <span data-ttu-id="cd816-123">プロジェクトの評価 (Fast Track Essentials)</span><span class="sxs-lookup"><span data-stu-id="cd816-123">Project assessment (Fast Track Essentials)</span></span> | <span data-ttu-id="cd816-124">初期レポートに 3 営業日、必要に応じて、軽減のために時間が追加されます</span><span class="sxs-lookup"><span data-stu-id="cd816-124">3-business days for initial report, plus additional time for mitigation, if required</span></span> | <span data-ttu-id="cd816-125">FastTrack アーキテクト</span><span class="sxs-lookup"><span data-stu-id="cd816-125">FastTrack Architect</span></span> | <span data-ttu-id="cd816-126">アーキテクトは、チェックリストを受け取った後に評価を提供し、質問が明確化および軽減されるまでレビューを続行します。</span><span class="sxs-lookup"><span data-stu-id="cd816-126">Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable.</span></span> |
-|   | <span data-ttu-id="cd816-127">プロジェクト工場 (Fast Track)</span><span class="sxs-lookup"><span data-stu-id="cd816-127">Project workshop (Fast Track)</span></span> | <span data-ttu-id="cd816-128">設計担当者と協力するには</span><span class="sxs-lookup"><span data-stu-id="cd816-128">To coordinate with architect assigned</span></span> | <span data-ttu-id="cd816-129">FastTrack アーキテクト</span><span class="sxs-lookup"><span data-stu-id="cd816-129">FastTrack Architect</span></span> | |
-| <span data-ttu-id="cd816-130">4</span><span class="sxs-lookup"><span data-stu-id="cd816-130">4</span></span> | <span data-ttu-id="cd816-131">運用配置のリリース。</span><span class="sxs-lookup"><span data-stu-id="cd816-131">Release for production deployment</span></span> | <span data-ttu-id="cd816-132">正常完了したと評価された時</span><span class="sxs-lookup"><span data-stu-id="cd816-132">Upon successfully completed assessment</span></span> | <span data-ttu-id="cd816-133">FastTrack アーキテクト</span><span class="sxs-lookup"><span data-stu-id="cd816-133">FastTrack Architect</span></span> | <span data-ttu-id="cd816-134">実動展開要求が既に送信されている場合は、展開が開始されます。</span><span class="sxs-lookup"><span data-stu-id="cd816-134">If the production deployment request has already been submitted, deployment will start.</span></span> <span data-ttu-id="cd816-135">ただし、評価が正常に完了した後だけ生産要求を送信することを要求します。</span><span class="sxs-lookup"><span data-stu-id="cd816-135">However, we request that you only submit the Production request after the assessment has successfully completed.</span></span> |
-| <span data-ttu-id="cd816-136">5</span><span class="sxs-lookup"><span data-stu-id="cd816-136">5</span></span> | <span data-ttu-id="cd816-137">運用配置要求</span><span class="sxs-lookup"><span data-stu-id="cd816-137">Production deployment request</span></span> | <span data-ttu-id="cd816-138">セルフサービス</span><span class="sxs-lookup"><span data-stu-id="cd816-138">Self-service</span></span> | <span data-ttu-id="cd816-139">顧客</span><span class="sxs-lookup"><span data-stu-id="cd816-139">Customer</span></span> | <span data-ttu-id="cd816-140">実動展開要求は、FastTrack Architect がアセスメントを完了した後にのみ、提出してください。</span><span class="sxs-lookup"><span data-stu-id="cd816-140">The production deployment request should only be submitted after the FastTrack Architect has finished the assessment.</span></span> |
-|   | <span data-ttu-id="cd816-141">サイズ変更</span><span class="sxs-lookup"><span data-stu-id="cd816-141">Sizing</span></span> | <span data-ttu-id="cd816-142">自動サイズ変更が発生した場合に即時。</span><span class="sxs-lookup"><span data-stu-id="cd816-142">Immediate in case of automatic sizing.</span></span> <span data-ttu-id="cd816-143">サブスクリプションの見積もりをさらに明確にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-143">Could require further clarifications of the subscription estimate.</span></span> | <span data-ttu-id="cd816-144">チームのサイズ決定</span><span class="sxs-lookup"><span data-stu-id="cd816-144">Sizing team</span></span> | <span data-ttu-id="cd816-145">規定ではサブスクリプション見積に基づく自動サイズ変更を行い、例外では手動サイズ変更を行います。</span><span class="sxs-lookup"><span data-stu-id="cd816-145">Automatic sizing based on subscription estimate by default, manual sizing by exception.</span></span> |
-|   | <span data-ttu-id="cd816-146">配置</span><span class="sxs-lookup"><span data-stu-id="cd816-146">Deployment</span></span> | <span data-ttu-id="cd816-147">48 時間</span><span class="sxs-lookup"><span data-stu-id="cd816-147">48 hours</span></span> | <span data-ttu-id="cd816-148">動的サービス エンジニアリング (DSE)</span><span class="sxs-lookup"><span data-stu-id="cd816-148">Dynamic Service Engineering (DSE)</span></span> | <span data-ttu-id="cd816-149">LCS でのステータスは、展開の進捗状況を反映しています。</span><span class="sxs-lookup"><span data-stu-id="cd816-149">Status in LCS reflects the deployment progress.</span></span> <span data-ttu-id="cd816-150">要求に関する質問がある場合、コメントとしてサービス要求に転記されます。</span><span class="sxs-lookup"><span data-stu-id="cd816-150">If there are any questions about your request, they will be posted as Comments on the service request.</span></span> |
-| <span data-ttu-id="cd816-151">6</span><span class="sxs-lookup"><span data-stu-id="cd816-151">6</span></span> | <span data-ttu-id="cd816-152">配置可能なパッケージ インストール要求</span><span class="sxs-lookup"><span data-stu-id="cd816-152">Deployable package installation request</span></span> | <span data-ttu-id="cd816-153">セルフサービス</span><span class="sxs-lookup"><span data-stu-id="cd816-153">Self-service</span></span> | <span data-ttu-id="cd816-154">顧客</span><span class="sxs-lookup"><span data-stu-id="cd816-154">Customer</span></span> | <span data-ttu-id="cd816-155">[クラウド環境への更新の適用](../../dev-itpro/deployment/apply-deployable-package-system.md)トピックの指示に従います。</span><span class="sxs-lookup"><span data-stu-id="cd816-155">Follow the instructions in the topic, [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).</span></span> |
-|   | <span data-ttu-id="cd816-156">パッケージのインストール</span><span class="sxs-lookup"><span data-stu-id="cd816-156">Package installation</span></span> | <span data-ttu-id="cd816-157">パッケージ数、最短 5 時間のリード タイム、およびパッケージあたり 4 時間のダウンタイムに依存する</span><span class="sxs-lookup"><span data-stu-id="cd816-157">Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package</span></span> | <span data-ttu-id="cd816-158">動的サービス エンジニアリング (DSE)</span><span class="sxs-lookup"><span data-stu-id="cd816-158">Dynamic Service Engineering (DSE)</span></span> | <span data-ttu-id="cd816-159">一般に、更新の 95% が 1 時間未満で適用されますが、何らかの理由でロールバックが必要な場合、4 時間のダウンタイム ウィンドウを提供することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cd816-159">Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason.</span></span> <span data-ttu-id="cd816-160">パッケージの展開が正常に実行されると、パッケージの展開が完了するとすぐに環境が利用可能になります。つまり、ダウンタイムを長くしても、システムの可用性に悪影響は及びません。</span><span class="sxs-lookup"><span data-stu-id="cd816-160">When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system.</span></span> |
-| <span data-ttu-id="cd816-161">7</span><span class="sxs-lookup"><span data-stu-id="cd816-161">7</span></span> | <span data-ttu-id="cd816-162">サンドボックス要求からのデータベースのコピー (該当する場合)</span><span class="sxs-lookup"><span data-stu-id="cd816-162">Database copy from Sandbox request (if applicable)</span></span> | <span data-ttu-id="cd816-163">セルフサービス</span><span class="sxs-lookup"><span data-stu-id="cd816-163">Self-service</span></span> | <span data-ttu-id="cd816-164">顧客</span><span class="sxs-lookup"><span data-stu-id="cd816-164">Customer</span></span> | <span data-ttu-id="cd816-165">[Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)に記載された指示に正確に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-165">Must exactly follow instructions documented in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md).</span></span> |
-|   | <span data-ttu-id="cd816-166">データベースをコピー</span><span class="sxs-lookup"><span data-stu-id="cd816-166">Copy database</span></span> | <span data-ttu-id="cd816-167">5 時間のリード タイムと 2 時間のダウンタイム</span><span class="sxs-lookup"><span data-stu-id="cd816-167">Five hours lead time and two hours downtime</span></span> | <span data-ttu-id="cd816-168">動的サービス エンジニアリング (DSE)</span><span class="sxs-lookup"><span data-stu-id="cd816-168">Dynamic Service Engineering (DSE)</span></span> | <span data-ttu-id="cd816-169">一般に、データベースのコピーは 1 時間未満で完了します。</span><span class="sxs-lookup"><span data-stu-id="cd816-169">Generally, the database copy is completed in less than one hour.</span></span> <span data-ttu-id="cd816-170">何らかの理由でロールバックが必要な場合に備えて、引き続き 2 時間のダウンタイム ウィンドウを提供することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cd816-170">We still recommend that you provide a downtime window of two hours in case a rollback is required for any reason.</span></span> |
-| <span data-ttu-id="cd816-171">8</span><span class="sxs-lookup"><span data-stu-id="cd816-171">8</span></span> | <span data-ttu-id="cd816-172">生産準備完了</span><span class="sxs-lookup"><span data-stu-id="cd816-172">Production ready</span></span> | <span data-ttu-id="cd816-173">前の手順すべてが完了した後</span><span class="sxs-lookup"><span data-stu-id="cd816-173">After all previous steps have been completed</span></span> | <span data-ttu-id="cd816-174">顧客/パートナー</span><span class="sxs-lookup"><span data-stu-id="cd816-174">Customer/Partner</span></span> | <span data-ttu-id="cd816-175">顧客/パートナーが実稼動環境を制御します。</span><span class="sxs-lookup"><span data-stu-id="cd816-175">Customer/Partner can take control of the production environment.</span></span> |
-|   | <span data-ttu-id="cd816-176">切替活動</span><span class="sxs-lookup"><span data-stu-id="cd816-176">Cutover activities</span></span> | <span data-ttu-id="cd816-177">プロジェクトによって異なります</span><span class="sxs-lookup"><span data-stu-id="cd816-177">Depends on the project</span></span> | <span data-ttu-id="cd816-178">顧客/パートナー</span><span class="sxs-lookup"><span data-stu-id="cd816-178">Customer/Partner</span></span> | |
-| <span data-ttu-id="cd816-179">9</span><span class="sxs-lookup"><span data-stu-id="cd816-179">9</span></span> | <span data-ttu-id="cd816-180">Go live</span><span class="sxs-lookup"><span data-stu-id="cd816-180">Go live</span></span> | <span data-ttu-id="cd816-181">プロジェクトによって異なります</span><span class="sxs-lookup"><span data-stu-id="cd816-181">Depends on the project</span></span> | <span data-ttu-id="cd816-182">顧客</span><span class="sxs-lookup"><span data-stu-id="cd816-182">Customer</span></span> | |
-
-## <a name="completing-the-lcs-methodology"></a><span data-ttu-id="cd816-183">LCS メソッドを完了しています</span><span class="sxs-lookup"><span data-stu-id="cd816-183">Completing the LCS methodology</span></span>
-
-<span data-ttu-id="cd816-184">各実装プロジェクトにおける主要なマイルストーンは、実稼働環境への切替です。</span><span class="sxs-lookup"><span data-stu-id="cd816-184">A major milestone in each implementation project is the cutover to the production environment.</span></span>
-
-<span data-ttu-id="cd816-185">実稼働環境がライブ運用に使用されるようにするため、マイクロソフトは、LCS 手法で必要なアクティビティが完了した後、実装が運用フェーズに近づいている場合にのみ実稼働インスタンスをプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="cd816-185">To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed.</span></span> <span data-ttu-id="cd816-186">ご利用のサブスクリプションでの環境の詳細については、[ライセンス ガイド](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd816-186">For more information about the environments in your subscription, see the [Licensing guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).</span></span>
-
-<span data-ttu-id="cd816-187">実稼動環境を要求するために使用される**構成**ボタンが利用可能になる前に、LCS 手法で分析、設計、開発、およびテスト フェーズを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-187">Customers must complete the Analysis, Design and develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available.</span></span> <span data-ttu-id="cd816-188">LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-188">To complete a phase in LCS, you must first complete every required step in that phase.</span></span> <span data-ttu-id="cd816-189">フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。</span><span class="sxs-lookup"><span data-stu-id="cd816-189">When all the steps in a phase are completed, you can complete the whole phase.</span></span> <span data-ttu-id="cd816-190">変更する必要がある場合、常に後からフェーズを再オープンすることができます。</span><span class="sxs-lookup"><span data-stu-id="cd816-190">You can always reopen a phase later if you must make changes.</span></span> <span data-ttu-id="cd816-191">ヘルプをさらに要求する場合は、「[Lifecycle Services for Finance and Operations の顧客](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)」を参照します。</span><span class="sxs-lookup"><span data-stu-id="cd816-191">If you require more help, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).</span></span>
-
-<span data-ttu-id="cd816-192">ステップを完了するプロセスは 2 つの部分で成り立っています。</span><span class="sxs-lookup"><span data-stu-id="cd816-192">The process of completing a step has two parts:</span></span>
-
-- <span data-ttu-id="cd816-193">フィット ギャップ解析またはユーザー受け入れテスト (UAT) など、実際の作業を行います。</span><span class="sxs-lookup"><span data-stu-id="cd816-193">Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT).</span></span>
-- <span data-ttu-id="cd816-194">LCS 方法の対応するステップを完了としてマークします。</span><span class="sxs-lookup"><span data-stu-id="cd816-194">Mark the corresponding step in the LCS methodology as completed.</span></span>
-
-<span data-ttu-id="cd816-195">実装の進捗状況に応じて方法のステップを完了することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cd816-195">It's good practice to complete the steps in the methodology as you make progress with the implementation.</span></span> <span data-ttu-id="cd816-196">最後まで待たないでください。</span><span class="sxs-lookup"><span data-stu-id="cd816-196">Don't wait until the last minute.</span></span> <span data-ttu-id="cd816-197">実稼働環境を取得できるように、すべての手順をクリックしないでください。</span><span class="sxs-lookup"><span data-stu-id="cd816-197">Don't just click through all the steps so that you can get a production environment.</span></span> <span data-ttu-id="cd816-198">確かな実装が顧客の最高の利益となります。</span><span class="sxs-lookup"><span data-stu-id="cd816-198">It's in the customer's best interest to have a solid implementation.</span></span>
-
-## <a name="uat-for-your-solution"></a><span data-ttu-id="cd816-199">ソリューションの UAT</span><span class="sxs-lookup"><span data-stu-id="cd816-199">UAT for your solution</span></span>
-
-<span data-ttu-id="cd816-200">UAT フェーズ中に、実装したすべてのビジネス プロセスおよび作成したカスタマイズを、実装プロジェクトの Sandbox (つまりスタンダード承認テスト) 環境内でテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-200">During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox, or Standard Acceptance Test, environment in the implementation project.</span></span> <span data-ttu-id="cd816-201">実稼働運用を成功させるためには、UAT フェーズを完了する際に次の点を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-201">To help ensure a successful go-live, you should consider the following as you complete the UAT phase:</span></span>
-
-- <span data-ttu-id="cd816-202">テスト ケースは、要件の範囲全体をカバーします。</span><span class="sxs-lookup"><span data-stu-id="cd816-202">Test cases cover the entire scope of requirements.</span></span>
-- <span data-ttu-id="cd816-203">移行したデータを使用してテストします。</span><span class="sxs-lookup"><span data-stu-id="cd816-203">Test by using migrated data.</span></span> <span data-ttu-id="cd816-204">このデータには、最終データではない場合でも、マスター データと期首残高が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-204">This data should include master data and opening balances, even if they aren't yet final.</span></span>
-- <span data-ttu-id="cd816-205">ユーザーに割り当てられている適切なセキュリティ ロール (既定のロールおよびカスタム ロール) を使用してテストします。</span><span class="sxs-lookup"><span data-stu-id="cd816-205">Test by using the correct security roles (default roles and custom roles) that are assigned to users.</span></span>
-- <span data-ttu-id="cd816-206">ソリューションが会社別および業界別の規制要件に準拠していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="cd816-206">Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.</span></span>
-- <span data-ttu-id="cd816-207">すべての機能を文書化および顧客から承認とサイン オフを取得します。</span><span class="sxs-lookup"><span data-stu-id="cd816-207">Document all features, and obtain approval and sign-off from the customer.</span></span>
-
-<span data-ttu-id="cd816-208">環境がクラウドでホストされている環境かダウンロードした仮想ハード ディスク (VHD) かどうかに関係なく、開発者またはデモ トポロジの環境のみでテストした場合テストが十分であると見なすことはできません。</span><span class="sxs-lookup"><span data-stu-id="cd816-208">Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology.</span></span> <span data-ttu-id="cd816-209">その理由を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cd816-209">Here are the reasons:</span></span>
-
-- <span data-ttu-id="cd816-210">レベル 1 環境のトポロジは、運用環境のトポロジとは異なります。</span><span class="sxs-lookup"><span data-stu-id="cd816-210">The topology of the Tier-1 environments differs from the topology of your production environment.</span></span> <span data-ttu-id="cd816-211">Microsoft が管理するサブスクリプションで、レベル 2 以上のサンドボックス環境ですべての機能をテストすることが重要です。</span><span class="sxs-lookup"><span data-stu-id="cd816-211">It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription.</span></span> <span data-ttu-id="cd816-212">サンドボックス環境で統合、印刷機能、ワークフロー機能、および倉庫と小売用デバイスをテストすることが特に重要です。</span><span class="sxs-lookup"><span data-stu-id="cd816-212">It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and retail devices in the sandbox environment.</span></span>
-- <span data-ttu-id="cd816-213">ローカル仮想マシン (VM) つまりプライベートでホストされている VM で UAT を実行する場合、システムのパフォーマンスを測定することができません。</span><span class="sxs-lookup"><span data-stu-id="cd816-213">System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.</span></span>
-- <span data-ttu-id="cd816-214">切替プロセス中の遅延を防ぐため、実装中にチームが LCS でサービスを経験することが重要です。</span><span class="sxs-lookup"><span data-stu-id="cd816-214">To prevent delays during the cutover process, it's important that the team experience the servicing in LCS during the implementation.</span></span> <span data-ttu-id="cd816-215">このサービスには、展開可能なパッケージを適用、サービス要求を作成、環境間でデータベースを移動するプロセスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="cd816-215">This servicing includes the processes of applying deployable packages, creating service requests, and moving database between environments.</span></span>
-
-## <a name="fasttrack-go-live-assessment"></a><span data-ttu-id="cd816-216">FastTrack Go-live 評価</span><span class="sxs-lookup"><span data-stu-id="cd816-216">FastTrack Go-live assessment</span></span>
-
-<span data-ttu-id="cd816-217">すべての Finance and Operations 顧客は、実稼働環境を展開する前に Microsoft FastTrack チームで、事前の Go-live レビューを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-217">All Finance and Operations customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed.</span></span> <span data-ttu-id="cd816-218">運用環境を要求する前に、この評価を正常に完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-218">This assessment should be successfully completed before you request your Production environment.</span></span> <span data-ttu-id="cd816-219">Microsoft FastTrack に馴染みがあるユーザーは、「[Microsoft FastTrack for Dynamics 365 概要](../get-started/fasttrack-dynamics-365-overview.md)」を参照します。</span><span class="sxs-lookup"><span data-stu-id="cd816-219">If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).</span></span>
-
-<span data-ttu-id="cd816-220">Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストに記入するように求めます。</span><span class="sxs-lookup"><span data-stu-id="cd816-220">About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist:</span></span>
-
-- <span data-ttu-id="cd816-221">150 以上の席数があり、Microsoft ソリューション アーキテクトが、プロジェクトに割り当てられている場合、ソリューション アーキテクトはユーザーに連絡を取ります。</span><span class="sxs-lookup"><span data-stu-id="cd816-221">If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.</span></span>
-- <span data-ttu-id="cd816-222">20–149 席を使用する場合は、チェックリストは <go-live@microsoft.com> からユーザーに送信されます。</span><span class="sxs-lookup"><span data-stu-id="cd816-222">If you have 20–149 seats, the checklist will be sent to you from <go-live@microsoft.com>.</span></span>
-
-
-<span data-ttu-id="cd816-223">[FastTrack go-live 前チェックリスト](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops) の CustomerSource からチェックリストをダウンロードすることもできます。</span><span class="sxs-lookup"><span data-stu-id="cd816-223">You can also download the checklist from CustomerSource at [FastTrack pre-go-live checklist](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops).</span></span>
-
-<span data-ttu-id="cd816-224">プロジェクト マネージャーまたはプロジェクトの主要メンバーは、プロジェクトの Go-Live 前の段階の間に Go-Live チェックリストを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-224">The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project.</span></span> <span data-ttu-id="cd816-225">チェックリストは通常、稼働予定日の 4 ~ 6 週間前に完了し、UAT が完了したか、ほぼ完了したときです。</span><span class="sxs-lookup"><span data-stu-id="cd816-225">Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.</span></span>
-
-<span data-ttu-id="cd816-226">go-live チェックリストを完了したら、次のいずれかのステップに従います。</span><span class="sxs-lookup"><span data-stu-id="cd816-226">When you've completed the go-live checklist, follow one of these steps:</span></span>
-
-- <span data-ttu-id="cd816-227">20–149 席を使用する場合は、チェックリストを <go-live@microsoft.com> に送信します。</span><span class="sxs-lookup"><span data-stu-id="cd816-227">If you have 20–149 seats, send the checklist to <go-live@microsoft.com>.</span></span>
-- <span data-ttu-id="cd816-228">150 以上の席数があり、Microsoft ソリューション設計者が、プロジェクトに割り当てられている場合、ソリューション設計にチェックリストを送信します。</span><span class="sxs-lookup"><span data-stu-id="cd816-228">If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, send the checklist to the solution architect.</span></span>
-
-<span data-ttu-id="cd816-229">チェックリストが送信された後、Microsoft ソリューション アーキテクトは、プロジェクトをレビューし、潜在的なリスク、ベスト プラクティス、プロジェクトの Go-Live を成功させるための推奨事項を説明するアセスメントを提供します。</span><span class="sxs-lookup"><span data-stu-id="cd816-229">After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project.</span></span> <span data-ttu-id="cd816-230">場合によっては、ソリューション アーキテクトがリスク要因を強調表示し、軽減計画を求める場合があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-230">In some cases, the solution architect might highlight risk factors and ask for a mitigation plan.</span></span> <span data-ttu-id="cd816-231">評価が完了したら、ソリューション アーキテクトは、ユーザーが LCS の実稼働環境を要求する準備が整ったことを示します。</span><span class="sxs-lookup"><span data-stu-id="cd816-231">When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.</span></span>
-
-<span data-ttu-id="cd816-232">アセスメントが完了する前に実稼働環境を要求すると、配置はアセスメントが正常に完了するまで **キューに設定** 状態のままになります。</span><span class="sxs-lookup"><span data-stu-id="cd816-232">If you request the production environment before the assessment is completed, the deployment will remain in the **Queued** state until the assessment is successfully completed.</span></span>
-
-<span data-ttu-id="cd816-233">**キューに設定** 状態の間は、次の手順に従って、環境配置要求をキャンセルできます。</span><span class="sxs-lookup"><span data-stu-id="cd816-233">You can cancel an environment deployment request while it is in a **Queued** state by following these steps:</span></span>
-
-1. <span data-ttu-id="cd816-234">**キューに設定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd816-234">Click **Queued**.</span></span>
-2. <span data-ttu-id="cd816-235">**顧客のサインオフ** タブで、**サインオフのクリア** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd816-235">On the **Customer sign-off** tab, click **Clear sign-off**.</span></span>
-
-<span data-ttu-id="cd816-236">これにより、環境が **構成** 状態に戻り、別のデータ センターや環境トポロジを選択するなど、コンフィギュレーションを変更できるようになります。</span><span class="sxs-lookup"><span data-stu-id="cd816-236">This will set the environment back into a state of **Configure** and allow you to make changes to the configuration, such as selecting a different data center or environment topology.</span></span>
-
-## <a name="requesting-the-production-environment"></a><span data-ttu-id="cd816-237">実稼動環境の要求</span><span class="sxs-lookup"><span data-stu-id="cd816-237">Requesting the production environment</span></span>
-
-<span data-ttu-id="cd816-238">分析、デザイン、開発、テスト フェーズでの LCS 手法、および Go-live 評価を完了した後、プロジェクトは既に準備ができていると判断し実稼動環境を要求することができます。</span><span class="sxs-lookup"><span data-stu-id="cd816-238">After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.</span></span>
-
-<span data-ttu-id="cd816-239">配置する環境の管理者ユーザーとして、サービス アカウント (汎用ユーザー アカウントなど) を選択することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cd816-239">We recommend that you select a service account, for example a generic user account, as the Admin user of the environments that you deploy.</span></span> <span data-ttu-id="cd816-240">名前のユーザー アカウントを使用すると、そのユーザーが使用できない場合は、環境にアクセスすることができない場合があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-240">If you use a named user account, you might not be able to access an environment if that user isn't available.</span></span> <span data-ttu-id="cd816-241">管理者ユーザーが環境にアクセスする必要があるいくつかのシナリオを次に示します。</span><span class="sxs-lookup"><span data-stu-id="cd816-241">Here are some scenarios where the Admin user must access an environment:</span></span>
-
-- <span data-ttu-id="cd816-242">**最初の配置後の任意の環境への最初のサインイン** – この場合、管理者ユーザーだけが環境にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="cd816-242">**First sign-in to any environment after initial deployment** – In this case, the Admin user is the only user who can access the environment.</span></span>
-- <span data-ttu-id="cd816-243">**実稼動環境からデータベースをリフレッシュした後のサンドボックス環境への最初のサインイン** – この場合、管理者アカウントを除くすべてのユーザーアカウントはサインインできなくなります。</span><span class="sxs-lookup"><span data-stu-id="cd816-243">**First sign-in to a sandbox environment after a database refresh from the production environment** – In this case, all user accounts except the Admin account are unable to sign in.</span></span>
-
-<span data-ttu-id="cd816-244">実稼働環境は、サンド ボックス環境が配置されている同じデータ センターに配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-244">Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.</span></span>
-
-<span data-ttu-id="cd816-245">実稼動環境の要求をサインオフした後、Microsoft は実稼動環境の配置を担当します。</span><span class="sxs-lookup"><span data-stu-id="cd816-245">After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you.</span></span> <span data-ttu-id="cd816-246">実稼働環境を展開するための Microsoft サービス レベル契約 (SLA) は、48 時間です。</span><span class="sxs-lookup"><span data-stu-id="cd816-246">The Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours.</span></span> <span data-ttu-id="cd816-247">実働環境は、提出された使用状況プロファイルに追加情報が必要ない限り、要求を提出してから 48 時間以内であればいつでも展開できます。</span><span class="sxs-lookup"><span data-stu-id="cd816-247">The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information.</span></span> <span data-ttu-id="cd816-248">LCS の展開の進行状況を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="cd816-248">You can view the progress of the deployment in LCS.</span></span> <span data-ttu-id="cd816-249">実稼働環境での要求状態は通常、**展開中**に変更されるまでに数時間**待機中**を維持します。</span><span class="sxs-lookup"><span data-stu-id="cd816-249">Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.</span></span>
-
-<span data-ttu-id="cd816-250">配置要求を送信すると、Microsoft Dynamics サービス エンジニア リング (DSE) チームに対するサービス要求が自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="cd816-250">When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created.</span></span> <span data-ttu-id="cd816-251">LCS の **サービス要求** リストでは、このサービス要求を表示できます。</span><span class="sxs-lookup"><span data-stu-id="cd816-251">You can view this service request in the **Service requests** list in LCS.</span></span> <span data-ttu-id="cd816-252">DSE チームが本番環境の展開を妨げるような質問をすると、サービス要求にコメントが追加されます。</span><span class="sxs-lookup"><span data-stu-id="cd816-252">If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request.</span></span> <span data-ttu-id="cd816-253">たとえば、DSE チームは、定期売買の見積を更新するか、またはデータ センターの変更を依頼する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-253">For example, the DSE team might ask that you update the subscription estimate or change the datacenter.</span></span> <span data-ttu-id="cd816-254">場合によっては、変更を加える生産配置要求からサインオフをクリアする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cd816-254">In some cases, you might have to clear the sign-off from the production deployment request to make changes.</span></span> <span data-ttu-id="cd816-255">実稼働環境要求の状態が **キューに設定** の間にのみサインオフをクリアすることができます。</span><span class="sxs-lookup"><span data-stu-id="cd816-255">You can clear the sign-off only while the status of the production environment request is **Queued**.</span></span> <span data-ttu-id="cd816-256">サインオフをクリアするには、**Queued** ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="cd816-256">To clear the sign-off, click the **Queued** button.</span></span> <span data-ttu-id="cd816-257">要求の状態は、**構成** に返されます。</span><span class="sxs-lookup"><span data-stu-id="cd816-257">The status of the request is returned to **Configure**.</span></span> <span data-ttu-id="cd816-258">その後、必要な変更を加えて再びサインオフすることができます。</span><span class="sxs-lookup"><span data-stu-id="cd816-258">You can then make any changes that are required and sign off again.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="prepare-go-live.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>prepare-go-live.c5c8bb.d854d430460d6431a5561cafa5fac2bfc851d976.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>d854d430460d6431a5561cafa5fac2bfc851d976</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\fin-and-ops\imp-lifecycle\prepare-go-live.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Prepare for go-live</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Go-Live の準備</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Prepare for go-live</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Go-Live の準備</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This graphic lists the phases of the go-live process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この図には、Go-Live プロセスのフェーズがリストされています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source><ph id="ph1">![</ph>Go-live process<ph id="ph2">](./media/go-live-process.PNG)</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">![</ph>Go-live プロセス<ph id="ph2">](./media/go-live-process.PNG)</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The following table lists all the steps in the process, with the expected duration and who is responsible to take the action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のテーブルでは、プロセスのすべてのステップと、予定期間と、誰が処理を実行するのかについて示しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Action</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アクション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Duration/When</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">期間/時</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Who</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">誰</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Notes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">摘要</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Update Go-live date in LCS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS での運用日付の更新</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>At the latest 2-3 months in advance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">遅くとも 2 ～ 3 か月前に</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Partner/Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナー/顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>The milestone dates should be kept up to date on an ongoing basis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マイルストーンの日付は、継続的に最新のものにする必要があります</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Complete and send check list</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェック リストの完了および送信</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>After UAT complete</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UAT 完了後</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Partner/Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パートナー/顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Follow the instructions provided in the "FastTrack Go-live assessment" section later in this topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックの後半の「FastTrack Go live 評価」セクションの指示に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Project assessment (Fast Track Essentials)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトの評価 (Fast Track Essentials)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>3-business days for initial report, plus additional time for mitigation, if required</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">初期レポートに 3 営業日、必要に応じて、軽減のために時間が追加されます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>FastTrack Architect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FastTrack アーキテクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アーキテクトは、チェックリストを受け取った後に評価を提供し、質問が明確化および軽減されるまでレビューを続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Project workshop (Fast Track)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト工場 (Fast Track)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>To coordinate with architect assigned</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">設計担当者と協力するには</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>FastTrack Architect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FastTrack アーキテクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Release for production deployment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">運用配置のリリース。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Upon successfully completed assessment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正常完了したと評価された時</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>FastTrack Architect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FastTrack アーキテクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>If the production deployment request has already been submitted, deployment will start.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実動展開要求が既に送信されている場合は、展開が開始されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>However, we request that you only submit the Production request after the assessment has successfully completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、評価が正常に完了した後だけ生産要求を送信することを要求します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Production deployment request</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">運用配置要求</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Self-service</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルフサービス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The production deployment request should only be submitted after the FastTrack Architect has finished the assessment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実動展開要求は、FastTrack Architect がアセスメントを完了した後にのみ、提出してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Sizing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サイズ変更</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Immediate in case of automatic sizing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">自動サイズ変更が発生した場合に即時。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Could require further clarifications of the subscription estimate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サブスクリプションの見積もりをさらに明確にする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Sizing team</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チームのサイズ決定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Automatic sizing based on subscription estimate by default, manual sizing by exception.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">規定ではサブスクリプション見積に基づく自動サイズ変更を行い、例外では手動サイズ変更を行います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Deployment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>48 hours</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">48 時間</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Dynamic Service Engineering (DSE)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的サービス エンジニアリング (DSE)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Status in LCS reflects the deployment progress.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS でのステータスは、展開の進捗状況を反映しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>If there are any questions about your request, they will be posted as Comments on the service request.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求に関する質問がある場合、コメントとしてサービス要求に転記されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>6</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Deployable package installation request</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置可能なパッケージ インストール要求</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Self-service</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルフサービス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Follow the instructions in the topic, <bpt id="p1">[</bpt>Apply updates to cloud environments<ept id="p1">](../../dev-itpro/deployment/apply-deployable-package-system.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>クラウド環境への更新の適用<ept id="p1">](../../dev-itpro/deployment/apply-deployable-package-system.md)</ept>トピックの指示に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Package installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージのインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ数、最短 5 時間のリード タイム、およびパッケージあたり 4 時間のダウンタイムに依存する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Dynamic Service Engineering (DSE)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的サービス エンジニアリング (DSE)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般に、更新の 95% が 1 時間未満で適用されますが、何らかの理由でロールバックが必要な場合、4 時間のダウンタイム ウィンドウを提供することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージの展開が正常に実行されると、パッケージの展開が完了するとすぐに環境が利用可能になります。つまり、ダウンタイムを長くしても、システムの可用性に悪影響は及びません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>7</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Database copy from Sandbox request (if applicable)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サンドボックス要求からのデータベースのコピー (該当する場合)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Self-service</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">セルフサービス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Must exactly follow instructions documented in <bpt id="p1">[</bpt>Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment<ept id="p1">](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする<ept id="p1">](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)</ept>に記載された指示に正確に従う必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Copy database</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースをコピー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Five hours lead time and two hours downtime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5 時間のリード タイムと 2 時間のダウンタイム</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Dynamic Service Engineering (DSE)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">動的サービス エンジニアリング (DSE)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Generally, the database copy is completed in less than one hour.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一般に、データベースのコピーは 1 時間未満で完了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>We still recommend that you provide a downtime window of two hours in case a rollback is required for any reason.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">何らかの理由でロールバックが必要な場合に備えて、引き続き 2 時間のダウンタイム ウィンドウを提供することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>8</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Production ready</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">生産準備完了</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>After all previous steps have been completed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前の手順すべてが完了した後</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Customer/Partner</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客/パートナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Customer/Partner can take control of the production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客/パートナーが実稼動環境を制御します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Cutover activities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">切替活動</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Depends on the project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトによって異なります</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Customer/Partner</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客/パートナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>9</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Go live</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Go live</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Depends on the project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクトによって異なります</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Completing the LCS methodology</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS メソッドを完了しています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>A major milestone in each implementation project is the cutover to the production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各実装プロジェクトにおける主要なマイルストーンは、実稼働環境への切替です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境がライブ運用に使用されるようにするため、マイクロソフトは、LCS 手法で必要なアクティビティが完了した後、実装が運用フェーズに近づいている場合にのみ実稼働インスタンスをプロビジョニングします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>For more information about the environments in your subscription, see the <bpt id="p1">[</bpt>Licensing guide<ept id="p1">](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ご利用のサブスクリプションでの環境の詳細については、<bpt id="p1">[</bpt>ライセンス ガイド<ept id="p1">](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Customers must complete the Analysis, Design and develop, and Test phases in the LCS methodology before the <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> button that is used to request the production environment becomes available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼動環境を要求するために使用される<bpt id="p1">**</bpt>構成<ept id="p1">**</ept>ボタンが利用可能になる前に、LCS 手法で分析、設計、開発、およびテスト フェーズを完了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>To complete a phase in LCS, you must first complete every required step in that phase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS でフェーズを完了するには、まずそのフェーズで必要なすべてのステップを完了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>When all the steps in a phase are completed, you can complete the whole phase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フェーズにあるすべてのタスクが完了したら、そのフェーズ全体を完了することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>You can always reopen a phase later if you must make changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">変更する必要がある場合、常に後からフェーズを再オープンすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>If you require more help, see <bpt id="p1">[</bpt>Lifecycle Services for Finance and Operations customers<ept id="p1">](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ヘルプをさらに要求する場合は、「<bpt id="p1">[</bpt>Lifecycle Services for Finance and Operations の顧客<ept id="p1">](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)</ept>」を参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>The process of completing a step has two parts:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステップを完了するプロセスは 2 つの部分で成り立っています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フィット ギャップ解析またはユーザー受け入れテスト (UAT) など、実際の作業を行います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Mark the corresponding step in the LCS methodology as completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS 方法の対応するステップを完了としてマークします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>It's good practice to complete the steps in the methodology as you make progress with the implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実装の進捗状況に応じて方法のステップを完了することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Don't wait until the last minute.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最後まで待たないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Don't just click through all the steps so that you can get a production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境を取得できるように、すべての手順をクリックしないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>It's in the customer's best interest to have a solid implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">確かな実装が顧客の最高の利益となります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>UAT for your solution</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションの UAT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>During the UAT phase, you must test all the business processes that you've implemented, and any customizations that you've made, in a Sandbox, or Standard Acceptance Test, environment in the implementation project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UAT フェーズ中に、実装したすべてのビジネス プロセスおよび作成したカスタマイズを、実装プロジェクトの Sandbox (つまりスタンダード承認テスト) 環境内でテストする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>To help ensure a successful go-live, you should consider the following as you complete the UAT phase:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働運用を成功させるためには、UAT フェーズを完了する際に次の点を考慮する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Test cases cover the entire scope of requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テスト ケースは、要件の範囲全体をカバーします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Test by using migrated data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">移行したデータを使用してテストします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>This data should include master data and opening balances, even if they aren't yet final.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータには、最終データではない場合でも、マスター データと期首残高が含まれている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Test by using the correct security roles (default roles and custom roles) that are assigned to users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーに割り当てられている適切なセキュリティ ロール (既定のロールおよびカスタム ロール) を使用してテストします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ソリューションが会社別および業界別の規制要件に準拠していることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Document all features, and obtain approval and sign-off from the customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての機能を文書化および顧客から承認とサイン オフを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Regardless of whether the environment is a cloud-hosted environment or a downloaded virtual hard disk (VHD), testing can't be considered complete when you test only in an environment that is a developer or demo topology.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境がクラウドでホストされている環境かダウンロードした仮想ハード ディスク (VHD) かどうかに関係なく、開発者またはデモ トポロジの環境のみでテストした場合テストが十分であると見なすことはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Here are the reasons:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その理由を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>The topology of the Tier-1 environments differs from the topology of your production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レベル 1 環境のトポロジは、運用環境のトポロジとは異なります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>It's important that you test all functionality on a Tier-2 or higher sandbox environment in the Microsoft-managed subscription.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft が管理するサブスクリプションで、レベル 2 以上のサンドボックス環境ですべての機能をテストすることが重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>It's especially important that you test integrations, printing functionality, workflow functionality, and warehouse and retail devices in the sandbox environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サンドボックス環境で統合、印刷機能、ワークフロー機能、および倉庫と小売用デバイスをテストすることが特に重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>System performance can't be measured when you do the UAT on local virtual machines (VMs) or VMs that are privately hosted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル仮想マシン (VM) つまりプライベートでホストされている VM で UAT を実行する場合、システムのパフォーマンスを測定することができません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>To prevent delays during the cutover process, it's important that the team experience the servicing in LCS during the implementation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">切替プロセス中の遅延を防ぐため、実装中にチームが LCS でサービスを経験することが重要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>This servicing includes the processes of applying deployable packages, creating service requests, and moving database between environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このサービスには、展開可能なパッケージを適用、サービス要求を作成、環境間でデータベースを移動するプロセスが含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>FastTrack Go-live assessment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FastTrack Go-live 評価</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>All Finance and Operations customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての Finance and Operations 顧客は、実稼働環境を展開する前に Microsoft FastTrack チームで、事前の Go-live レビューを完了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>This assessment should be successfully completed before you request your Production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">運用環境を要求する前に、この評価を正常に完了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>If you aren't familiar with Microsoft FastTrack, see <bpt id="p1">[</bpt>Microsoft FastTrack for Dynamics 365 overview<ept id="p1">](../get-started/fasttrack-dynamics-365-overview.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft FastTrack に馴染みがあるユーザーは、「<bpt id="p1">[</bpt>Microsoft FastTrack for Dynamics 365 概要<ept id="p1">](../get-started/fasttrack-dynamics-365-overview.md)</ept>」を参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリストに記入するように求めます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">150 以上の席数があり、Microsoft ソリューション アーキテクトが、プロジェクトに割り当てられている場合、ソリューション アーキテクトはユーザーに連絡を取ります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>If you have 20–149 seats, the checklist will be sent to you from <ph id="ph1">&lt;go-live@microsoft.com&gt;</ph>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20–149 席を使用する場合は、チェックリストは <ph id="ph1">&lt;go-live@microsoft.com&gt;</ph> からユーザーに送信されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>You can also download the checklist from CustomerSource at <bpt id="p1">[</bpt>FastTrack pre-go-live checklist<ept id="p1">](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>FastTrack go-live 前チェックリスト<ept id="p1">](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops)</ept> の CustomerSource からチェックリストをダウンロードすることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト マネージャーまたはプロジェクトの主要メンバーは、プロジェクトの Go-Live 前の段階の間に Go-Live チェックリストを完了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェックリストは通常、稼働予定日の 4 ~ 6 週間前に完了し、UAT が完了したか、ほぼ完了したときです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>When you've completed the go-live checklist, follow one of these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">go-live チェックリストを完了したら、次のいずれかのステップに従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>If you have 20–149 seats, send the checklist to <ph id="ph1">&lt;go-live@microsoft.com&gt;</ph>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20–149 席を使用する場合は、チェックリストを <ph id="ph1">&lt;go-live@microsoft.com&gt;</ph> に送信します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, send the checklist to the solution architect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">150 以上の席数があり、Microsoft ソリューション設計者が、プロジェクトに割り当てられている場合、ソリューション設計にチェックリストを送信します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チェックリストが送信された後、Microsoft ソリューション アーキテクトは、プロジェクトをレビューし、潜在的なリスク、ベスト プラクティス、プロジェクトの Go-Live を成功させるための推奨事項を説明するアセスメントを提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>In some cases, the solution architect might highlight risk factors and ask for a mitigation plan.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場合によっては、ソリューション アーキテクトがリスク要因を強調表示し、軽減計画を求める場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">評価が完了したら、ソリューション アーキテクトは、ユーザーが LCS の実稼働環境を要求する準備が整ったことを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>If you request the production environment before the assessment is completed, the deployment will remain in the <bpt id="p1">**</bpt>Queued<ept id="p1">**</ept> state until the assessment is successfully completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アセスメントが完了する前に実稼働環境を要求すると、配置はアセスメントが正常に完了するまで <bpt id="p1">**</bpt>キューに設定<ept id="p1">**</ept> 状態のままになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>You can cancel an environment deployment request while it is in a <bpt id="p1">**</bpt>Queued<ept id="p1">**</ept> state by following these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>キューに設定<ept id="p1">**</ept> 状態の間は、次の手順に従って、環境配置要求をキャンセルできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Click <bpt id="p1">**</bpt>Queued<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>キューに設定<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>On the <bpt id="p1">**</bpt>Customer sign-off<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Clear sign-off<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>顧客のサインオフ<ept id="p1">**</ept> タブで、<bpt id="p2">**</bpt>サインオフのクリア<ept id="p2">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>This will set the environment back into a state of <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept> and allow you to make changes to the configuration, such as selecting a different data center or environment topology.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、環境が <bpt id="p1">**</bpt>構成<ept id="p1">**</ept> 状態に戻り、別のデータ センターや環境トポロジを選択するなど、コンフィギュレーションを変更できるようになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Requesting the production environment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼動環境の要求</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析、デザイン、開発、テスト フェーズでの LCS 手法、および Go-live 評価を完了した後、プロジェクトは既に準備ができていると判断し実稼動環境を要求することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>We recommend that you select a service account, for example a generic user account, as the Admin user of the environments that you deploy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置する環境の管理者ユーザーとして、サービス アカウント (汎用ユーザー アカウントなど) を選択することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>If you use a named user account, you might not be able to access an environment if that user isn't available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">名前のユーザー アカウントを使用すると、そのユーザーが使用できない場合は、環境にアクセスすることができない場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Here are some scenarios where the Admin user must access an environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">管理者ユーザーが環境にアクセスする必要があるいくつかのシナリオを次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">**</bpt>First sign-in to any environment after initial deployment<ept id="p1">**</ept> – In this case, the Admin user is the only user who can access the environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>最初の配置後の任意の環境への最初のサインイン<ept id="p1">**</ept> – この場合、管理者ユーザーだけが環境にアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">**</bpt>First sign-in to a sandbox environment after a database refresh from the production environment<ept id="p1">**</ept> – In this case, all user accounts except the Admin account are unable to sign in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>実稼動環境からデータベースをリフレッシュした後のサンドボックス環境への最初のサインイン<ept id="p1">**</ept> – この場合、管理者アカウントを除くすべてのユーザーアカウントはサインインできなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Your production environment should be deployed to the same datacenter where your sandbox environments are deployed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境は、サンド ボックス環境が配置されている同じデータ センターに配置する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼動環境の要求をサインオフした後、Microsoft は実稼動環境の配置を担当します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>The Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境を展開するための Microsoft サービス レベル契約 (SLA) は、48 時間です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実働環境は、提出された使用状況プロファイルに追加情報が必要ない限り、要求を提出してから 48 時間以内であればいつでも展開できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>You can view the progress of the deployment in LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS の展開の進行状況を表示することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Typically, the status of the production environment request remains <bpt id="p1">**</bpt>Queued<ept id="p1">**</ept> for a few hours before it's changed to <bpt id="p2">**</bpt>Deploying<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境での要求状態は通常、<bpt id="p2">**</bpt>展開中<ept id="p2">**</ept>に変更されるまでに数時間<bpt id="p1">**</bpt>待機中<ept id="p1">**</ept>を維持します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置要求を送信すると、Microsoft Dynamics サービス エンジニア リング (DSE) チームに対するサービス要求が自動的に作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>You can view this service request in the <bpt id="p1">**</bpt>Service requests<ept id="p1">**</ept> list in LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS の <bpt id="p1">**</bpt>サービス要求<ept id="p1">**</ept> リストでは、このサービス要求を表示できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DSE チームが本番環境の展開を妨げるような質問をすると、サービス要求にコメントが追加されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>For example, the DSE team might ask that you update the subscription estimate or change the datacenter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、DSE チームは、定期売買の見積を更新するか、またはデータ センターの変更を依頼する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>In some cases, you might have to clear the sign-off from the production deployment request to make changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場合によっては、変更を加える生産配置要求からサインオフをクリアする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>You can clear the sign-off only while the status of the production environment request is <bpt id="p1">**</bpt>Queued<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境要求の状態が <bpt id="p1">**</bpt>キューに設定<ept id="p1">**</ept> の間にのみサインオフをクリアすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>To clear the sign-off, click the <bpt id="p1">**</bpt>Queued<ept id="p1">**</ept> button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインオフをクリアするには、<bpt id="p1">**</bpt>Queued<ept id="p1">**</ept> ボタンをクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>The status of the request is returned to <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求の状態は、<bpt id="p1">**</bpt>構成<ept id="p1">**</ept> に返されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>You can then make any changes that are required and sign off again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、必要な変更を加えて再びサインオフすることができます。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,1310 +1,2253 @@
----
-title: オンプレミス配置のトラブルシューティング
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。
-author: sarvanisathish
-manager: AnnBe
-ms.date: 03/21/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: Operations
-ms.custom: 60373
-ms.assetid: ''
-ms.search.region: Global
-ms.author: sarvanis
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 54639b39870f970ae639c128729de21edf3eb4a3
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537063"
----
-# <a name="troubleshoot-on-premises-deployments"></a><span data-ttu-id="e476d-103">オンプレミス配置のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="e476d-103">Troubleshoot on-premises deployments</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="e476d-104">このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e476d-104">This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.</span></span>
-
-## <a name="access-service-fabric-explorer"></a><span data-ttu-id="e476d-105">Service Fabric Explorer へのアクセス</span><span class="sxs-lookup"><span data-stu-id="e476d-105">Access Service Fabric Explorer</span></span>
-
-<span data-ttu-id="e476d-106">Service Fabric Explorer には、Web ブラウザーと既定のアドレス `https://sf.d365ffo.onprem.contoso.com:19080` を使ってアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="e476d-106">You can access Service Fabric Explorer in a web browser by using the default address, `https://sf.d365ffo.onprem.contoso.com:19080`.</span></span>
-
-<span data-ttu-id="e476d-107">アドレスを確認するには、環境の適切なセットアップおよび配置トピックの「DNS ゾーンの作成と A レコードの追加」セクションで使用されていた値をメモします。</span><span class="sxs-lookup"><span data-stu-id="e476d-107">To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-- [<span data-ttu-id="e476d-108">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-108">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#createdns)
-- [<span data-ttu-id="e476d-109">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-109">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#createdns)
-
-<span data-ttu-id="e476d-110">クライアント証明書が、サイトにアクセスするマシンの証明書、cert:\\CurrentUser\\My に含まれている場合のみ、サイトにアクセスできます</span><span class="sxs-lookup"><span data-stu-id="e476d-110">You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on.</span></span> <span data-ttu-id="e476d-111">(証明書マネージャーで、**証明書 - 現在のユーザー** \> **個人** \> **証明書**に移動します。) サイトにアクセスしたとき、メッセージが表示されたら、クライアント証明書を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-111">(In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.</span></span>
-
-## <a name="monitor-the-deployment"></a><span data-ttu-id="e476d-112">配置の監視</span><span class="sxs-lookup"><span data-stu-id="e476d-112">Monitor the deployment</span></span>
-
-### <a name="identify-the-primary-orchestrator"></a><span data-ttu-id="e476d-113">プライマリ オーケストレータを識別します。</span><span class="sxs-lookup"><span data-stu-id="e476d-113">Identify the primary orchestrator</span></span>
-
-<span data-ttu-id="e476d-114">Service Fabric Explorer でローカル エージェントなどのステートフル サービスのプライマリ インスタンスであるマシンを判別するには、**クラスター** \> **アプリケーション** \> **\<*対象のアプリケーションの例*\> LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** を展開します。</span><span class="sxs-lookup"><span data-stu-id="e476d-114">To determine the machine that is the primary instance for stateful services such as a local agent, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **\<*intended application example*\> LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.</span></span>
-
-<span data-ttu-id="e476d-115">プライマリ ノードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-115">The primary node is shown.</span></span> <span data-ttu-id="e476d-116">ステートレス サービスまたは残りのアプリケーションについては、すべてのノードを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-116">For stateless services or the remaining applications, you must check all the nodes.</span></span>
-
-<span data-ttu-id="e476d-117">次のポイントに注意します。</span><span class="sxs-lookup"><span data-stu-id="e476d-117">Note the following points:</span></span>
-
-- <span data-ttu-id="e476d-118">OrchestrationService は、Finance and Operations の配置およびサービス アクションを調整します。</span><span class="sxs-lookup"><span data-stu-id="e476d-118">OrchestrationService orchestrates the deployment and servicing actions for Finance and Operations.</span></span>
-- <span data-ttu-id="e476d-119">ArtifactsManager は、ファイルを Microsoft Azure クラウド ストレージからローカル エージェント ファイル共有にダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e476d-119">ArtifactsManager downloads files from Microsoft Azure cloud storage to the local agent file share.</span></span> <span data-ttu-id="e476d-120">ファイルを必要な形式にも解凍します。</span><span class="sxs-lookup"><span data-stu-id="e476d-120">It also unzips the files into the required format.</span></span>
-
-### <a name="review-the-orchestrator-event-logs"></a><span data-ttu-id="e476d-121">オーケストレータ イベント ログを確認</span><span class="sxs-lookup"><span data-stu-id="e476d-121">Review the orchestrator event logs</span></span>
-
-<span data-ttu-id="e476d-122">イベント ビューアー内の プライマリ OrchestrationService オーケストレータ マシンから、 **アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** \> **AX-LocalAgent** と移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-122">From the primary OrchestrationService orchestrator machine, in Event Viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-LocalAgent**.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="e476d-123">完全なエラー メッセージを表示するには、 **詳細** タブを選択してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-123">To view the full error message, you must select the **Details** tab.</span></span>
-
-<span data-ttu-id="e476d-124">次のモジュールがインストールされます:</span><span class="sxs-lookup"><span data-stu-id="e476d-124">The following modules must be installed:</span></span>
-
-- <span data-ttu-id="e476d-125">共通</span><span class="sxs-lookup"><span data-stu-id="e476d-125">Common</span></span>
-- <span data-ttu-id="e476d-126">ReportingServices</span><span class="sxs-lookup"><span data-stu-id="e476d-126">ReportingServices</span></span>
-- <span data-ttu-id="e476d-127">AOS</span><span class="sxs-lookup"><span data-stu-id="e476d-127">AOS</span></span>
-- <span data-ttu-id="e476d-128">FinancialReporting</span><span class="sxs-lookup"><span data-stu-id="e476d-128">FinancialReporting</span></span>
-
-<span data-ttu-id="e476d-129">次のコマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-129">The following commands must be run:</span></span>
-
-- <span data-ttu-id="e476d-130">**セットアップ**</span><span class="sxs-lookup"><span data-stu-id="e476d-130">**Setup**</span></span>
-- <span data-ttu-id="e476d-131">**Dvt** – このコマンドは配置検証テストを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-131">**Dvt** – This command runs a deployment verification test.</span></span>
-- <span data-ttu-id="e476d-132">**Cleanup** – このコマンドは環境のサービスと削除に使用されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-132">**Cleanup** – This command is used to service and delete an environment.</span></span>
-
-<span data-ttu-id="e476d-133">次のフォルダには、追加の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e476d-133">The following folders contain additional information:</span></span>
-
-- <span data-ttu-id="e476d-134">AX-SetupModuleEvents</span><span class="sxs-lookup"><span data-stu-id="e476d-134">AX-SetupModuleEvents</span></span>
-- <span data-ttu-id="e476d-135">AX-SetupInfrastructureEvents</span><span class="sxs-lookup"><span data-stu-id="e476d-135">AX-SetupInfrastructureEvents</span></span>
-- <span data-ttu-id="e476d-136">AX-BridgeService</span><span class="sxs-lookup"><span data-stu-id="e476d-136">AX-BridgeService</span></span>
-
-<span data-ttu-id="e476d-137">イベント ビューアーで Microsoft Dynamics エントリを確認するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-137">To review Microsoft Dynamics entries in Event Viewer, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-138">イベント ビューアーで **カスタム ビュー** を右クリックして、**カスタム ビューの作成** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-138">In Event Viewer, right-click **Custom Views**, and then select **Create Custom View**.</span></span>
-
-    ![カスタム表示の作成](media/Create-Custom-View.png)
-
-2. <span data-ttu-id="e476d-140">**イベント ログ** フィールドで **Dynamics** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-140">In the **Event logs** field, select **Dynamics**.</span></span>
-
-    ![Dynamics の選択](media/Select-Dynamics.png)
-
-> [!NOTE]
-> <span data-ttu-id="e476d-142">また、**カスタム ビュー** で **管理イベント** も確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-142">Also look at **Administrative Events** in **Custom Views**.</span></span>
-
-### <a name="service-fabric-explorer"></a><span data-ttu-id="e476d-143">Service Fabric Explorer</span><span class="sxs-lookup"><span data-stu-id="e476d-143">Service Fabric Explorer</span></span>
-
-<span data-ttu-id="e476d-144">クラスタ、アプリケーション、およびノードの状態に注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-144">Note the state of the cluster, application, and nodes.</span></span> <span data-ttu-id="e476d-145">Service Fabric Explorer にアクセスする方法については、[Service Fabric Explorer にアクセスする](troubleshoot-on-prem.md#access-service-fabric-explorer)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-145">For information about how to access Service Fabric Explorer, see [Access Service Fabric Explorer](troubleshoot-on-prem.md#access-service-fabric-explorer).</span></span>
-
-#### <a name="error-partition-is-below-target-replica-or-instance-count"></a><span data-ttu-id="e476d-146">エラー、「パーティションがターゲット レプリカまたはインスタンス数を下回っています」</span><span class="sxs-lookup"><span data-stu-id="e476d-146">Error: "Partition is below target replica or instance count"</span></span>
-
-<span data-ttu-id="e476d-147">次のエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-147">You might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-148">パーティションがターゲット レプリカまたはインスタンス数を下回っています</span><span class="sxs-lookup"><span data-stu-id="e476d-148">Partition is below target replica or instance count</span></span>
-
-<span data-ttu-id="e476d-149">このエラーはルート エラーではありません。</span><span class="sxs-lookup"><span data-stu-id="e476d-149">This error isn't a root error.</span></span> <span data-ttu-id="e476d-150">各ノードのステータスが準備できていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-150">It indicates that the status of each node isn't ready.</span></span> <span data-ttu-id="e476d-151">AXSFType (AOS) では、ステータスがまだ **InBuild** である可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-151">For AXSFType (AOS), the status might still be **InBuild**.</span></span>
-
-<span data-ttu-id="e476d-152">エラー メッセージに関連するコンピューターで、イベント ビューアーを使用して最新の活動を表示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-152">On the machines that are related to the error message, use Event Viewer to view the latest activity.</span></span>
-
-#### <a name="axsftype"></a><span data-ttu-id="e476d-153">AXSFType</span><span class="sxs-lookup"><span data-stu-id="e476d-153">AXSFType</span></span>
-
-<span data-ttu-id="e476d-154">AXSFType (AOS) に **InBuild** のステータスが表示される場合、DB Sync ステータスおよび Application Object Server (AOS) コンピューターからの他のイベントを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-154">If a status of **InBuild** is shown for AXSFType (AOS), review the DB Sync status and other events from Application Object Server (AOS) machines.</span></span>
-
-<span data-ttu-id="e476d-155">エラーを診断するには、イベント ビューアーを使用して次のイベント ログを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-155">To diagnose errors, use Event Viewer to review the following event logs:</span></span>
-
-- <span data-ttu-id="e476d-156">アプリケーションとサービス ログ \> Microsoft \> Dynamics \> AX-DatabaseSynchronize</span><span class="sxs-lookup"><span data-stu-id="e476d-156">Applications and Services Logs \> Microsoft \> Dynamics \> AX-DatabaseSynchronize</span></span>
-- <span data-ttu-id="e476d-157">カスタム ビュー \> 管理イベント</span><span class="sxs-lookup"><span data-stu-id="e476d-157">Custom Views \> Administrative Events</span></span>
-
-#### <a name="error-extractinstallerservice-failed-to-extract-cusersdynusercontosoappdatalocaltemp1blssblhw0nfabricinstallerservicecodefabricclientdll"></a><span data-ttu-id="e476d-158">エラー: "'ExtractInstallerService は抽出に失敗しました' C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll"</span><span class="sxs-lookup"><span data-stu-id="e476d-158">Error: "'ExtractInstallerService failed to extract' C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll"</span></span>
-
-<span data-ttu-id="e476d-159">次のエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-159">You might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-160">"ExtractInstallerService は抽出に失敗しました" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll。</span><span class="sxs-lookup"><span data-stu-id="e476d-160">"ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.</span></span>
-
-<span data-ttu-id="e476d-161">このエラーが発生した場合は [Azure Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690) の最新バージョンをダウンロードしてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-161">If you receive this error, download the latest version of [Azure Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690).</span></span> <span data-ttu-id="e476d-162">エラー メッセージのユーザー名およびパスは、環境によって変化することに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-162">Note that the user name and path in the error message vary, depending on your environment.</span></span>
-
-#### <a name="service-fabric-logs"></a><span data-ttu-id="e476d-163">Service Fabric ログ</span><span class="sxs-lookup"><span data-stu-id="e476d-163">Service Fabric logs</span></span>
-
-<span data-ttu-id="e476d-164">Service Fabric アプリケーションのさらなる詳細については、C:\\ProgramData\\SF\\\<OrchestratorMachineName\>\\Fabric\\work\\Applications\\LocalAgentType\_App\<N\>\\log のログ ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-164">You can find more details about Service Fabric applications in the log files at C:\\ProgramData\\SF\\\<OrchestratorMachineName\>\\Fabric\\work\\Applications\\LocalAgentType\_App\<N\>\\log.</span></span>
-
-### <a name="lifecycle-services"></a><span data-ttu-id="e476d-165">Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="e476d-165">Lifecycle Services</span></span>
-
-<span data-ttu-id="e476d-166">Microsoft Dynamics Lifecycle Services (LCS) で環境のに対する現在の配置ステータスに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-166">Note the current deployment status for the environment in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
-
-## <a name="a-time-out-error-occurs-when-a-service-fabric-cluster-is-created"></a><span data-ttu-id="e476d-167">Service Fabric cluster の作成時にタイムアウト エラーが発生する</span><span class="sxs-lookup"><span data-stu-id="e476d-167">A time-out error occurs when a Service Fabric cluster is created</span></span>
-
-<span data-ttu-id="e476d-168">該当するセットアップ トピックの "スタンドアロン Service Fabric Cluster のセットアップ" セクションおよび環境の配置トピックに記載されているように Test-D365FOConfiguration.ps1 を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-168">Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment.</span></span> <span data-ttu-id="e476d-169">エラーに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-169">Note any errors.</span></span>
-
-- [<span data-ttu-id="e476d-170">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-170">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#setupsfcluster)
-- [<span data-ttu-id="e476d-171">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-171">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)
-
-<span data-ttu-id="e476d-172">これらの手順を必ず実行してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-172">Be sure to complete these steps:</span></span>
-
-- <span data-ttu-id="e476d-173">すべての Service Fabric ノード上の LocalMachine ストアに Service Fabric Server クライント証明書が存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-173">Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all Service Fabric nodes.</span></span>
-- <span data-ttu-id="e476d-174">Service Fabric Server 証明書にすべての Service Fabric ノード上にネットワーク サービス用アクセス制御リスト (ACL) が含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-174">Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.</span></span>
-- <span data-ttu-id="e476d-175">[環境設定](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) で記載されているウイルス対策の除外を確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-175">Review the antivirus exclusions that are noted in [Environment setup](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).</span></span>
-
-## <a name="a-time-out-error-occurs-while-youre-waiting-for-installer-service-to-be-completed-for-machine-xxxx"></a><span data-ttu-id="e476d-176">インストーラー サービスがマシン x.x.x.x で完了するのを待つ間にタイムアウト エラーが発生する</span><span class="sxs-lookup"><span data-stu-id="e476d-176">A time-out error occurs while you're waiting for Installer Service to be completed for machine x.x.x.x</span></span>
-
-<span data-ttu-id="e476d-177">インターネット プロトコル (IP) アドレスごとに (つまり、コンピューターごとに) 1 つのノード タイプがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="e476d-177">Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine).</span></span> <span data-ttu-id="e476d-178">ノードが同じマシン上で再利用されているかどうかを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-178">Check whether the nodes are being reused on the same machine.</span></span> <span data-ttu-id="e476d-179">たとえば、AOS および ORCH は、同一のマシン上に存在してはならず、ConfigTemplate.xml が正しく定義されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-179">For example, AOS and ORCH must not be on the same machine, and ConfigTemplate.xml must be correctly defined.</span></span>
-
-## <a name="remove-a-specific-application"></a><span data-ttu-id="e476d-180">特定のアプリケーションを削除</span><span class="sxs-lookup"><span data-stu-id="e476d-180">Remove a specific application</span></span>
-
-<span data-ttu-id="e476d-181">配置の削除またはクリーンアップに LCS を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e476d-181">We recommend that you use LCS to remove or clean up deployments.</span></span> <span data-ttu-id="e476d-182">ただし、必要に応じて、アプリケーションを削除する Service Fabric Explorer を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="e476d-182">However, you can also use Service Fabric Explorer to remove an application as you require.</span></span>
-
-<span data-ttu-id="e476d-183">Service Fabric エクスプローラーで、**アプリケーション ノード** \> **アプリケーション** \> **MonitoringAgentAppType-Agent** に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-183">In Service Fabric Explorer, go to **Application node** \> **Applications** \> **MonitoringAgentAppType-Agent**.</span></span> <span data-ttu-id="e476d-184">**ファブリック:/エージェント監視** の横にある省略記号ボタン (**...**) を選択し、アプリケーションを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-184">Select the ellipsis button (**...**) next to **fabric:/Agent-Monitoring**, and delete the application.</span></span> <span data-ttu-id="e476d-185">アプリケーションの完全な名前を入力して、アプリケーションの削除を確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-185">Enter the full name of the application to confirm the deletion of the application.</span></span>
-
-<span data-ttu-id="e476d-186">また、省略記号ボタンの選択および**非引当タイプ**の順に選択することにより、MonitoringAgentAppType-Agent を削除することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-186">You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis button and then selecting **Unprovision Type**.</span></span> <span data-ttu-id="e476d-187">アプリケーションの削除を確認するために、正式名称を入力します。</span><span class="sxs-lookup"><span data-stu-id="e476d-187">Enter the full name to confirm the removal of the application.</span></span>
-
-## <a name="remove-all-applications-from-service-fabric"></a><span data-ttu-id="e476d-188">Service Fabric からすべてのアプリケーションを削除</span><span class="sxs-lookup"><span data-stu-id="e476d-188">Remove all applications from Service Fabric</span></span>
-
-<span data-ttu-id="e476d-189">次のスクリプトは、LocalAgent および LocalAgent の監視エージェントを除く、すべての Service Fabric アプリケーションを削除してプロビジョニング解除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-189">The following script removes and unprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent.</span></span> <span data-ttu-id="e476d-190">オーケストレータ仮想マシン (VM) 上でこのスクリプトを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-190">You must run this script on an orchestrator virtual machine (VM).</span></span>
-
-```powershell
-$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring')
-$applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType')
-
-Get-ServiceFabricApplication | `
-    Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `
-    Remove-ServiceFabricApplication -Force
-
-Get-ServiceFabricApplicationType | `
-    Where-Object { $_.ApplicationTypeName -notin $applicationTypeNamesToIgnore } | `
-    Unregister-ServiceFabricApplicationType -Force
-```
-
-## <a name="remove-service-fabric"></a><span data-ttu-id="e476d-191">Service Fabric の削除</span><span class="sxs-lookup"><span data-stu-id="e476d-191">Remove Service Fabric</span></span>
-
-<span data-ttu-id="e476d-192">Service Fabric クラスターを完全に削除するには、以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-192">To completely remove the Service Fabric cluster, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-193">次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-193">Run the following command.</span></span>
-
-    ```powershell
-    .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
-    ```
-
-2. <span data-ttu-id="e476d-194">エラーが発生した場合は、**CleanFabric.ps1**コマンドを使用して、クラスタ内の特定のノードを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-194">If an error occurs, remove a specific node on the cluster by using the **CleanFabric.ps1** command.</span></span> <span data-ttu-id="e476d-195">このコマンドは、C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code で検索することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-195">You can find this command in C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code.</span></span>
-3. <span data-ttu-id="e476d-196">既定の場所を使用している場合、**C:\\ProgramData\\SF** フォルダーを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-196">Remove the **C:\\ProgramData\\SF** folder, if you're using the default location.</span></span> <span data-ttu-id="e476d-197">それ以外の場合、指定したフォルダーを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-197">Otherwise, remove the specified folder.</span></span>
-
-    <span data-ttu-id="e476d-198">"アクセス拒否" エラーが発生した場合は、Microsoft Windows PowerShell を再起動するか、マシンを再起動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-198">If you receive an "Access denied" error, restart Microsoft Windows PowerShell or the machine.</span></span>
-
-## <a name="clean-up-an-existing-environment-and-redeploy"></a><span data-ttu-id="e476d-199">既存環境のクリーンアップと再配置</span><span class="sxs-lookup"><span data-stu-id="e476d-199">Clean up an existing environment and redeploy</span></span>
-
-<span data-ttu-id="e476d-200">既存の環境をクリーンアップして再配置するには、以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-200">To clean up an existing environment and redeploy, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-201">LCS でプロジェクトを開き、**環境**セクションで展開を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-201">In LCS, open the project, and then, in the **Environments** section, delete the deployment.</span></span>
-
-    <span data-ttu-id="e476d-202">アプリケーションが環境の Service Fabric Explorer から表示されなくなります。</span><span class="sxs-lookup"><span data-stu-id="e476d-202">The applications should start to disappear from Service Fabric Explorer in the environment.</span></span> <span data-ttu-id="e476d-203">このプロセスは 1、2 分かかります。</span><span class="sxs-lookup"><span data-stu-id="e476d-203">This process will take one to two minutes.</span></span>
-
-2. <span data-ttu-id="e476d-204">LocalAgentCLI.exe を含むオーケストレーター マシンにアクセスし、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-204">Access the orchestrator machine that contains LocalAgentCLI.exe, and follow these steps:</span></span>
-
-    1. <span data-ttu-id="e476d-205">ローカル エージェント クリーンアップを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-205">Run the local agent cleanup.</span></span>
-
-        ```powershell
-        .\LocalAgentCLI.exe Cleanup '<path of localagent-config.json>'
-        ```
-
-    2. <span data-ttu-id="e476d-206">Service Fabric を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-206">Remove Service Fabric.</span></span>
-
-        ```powershell
-        .\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath '<path of ClusterConfig.json>'
-        ```
-
-    3. <span data-ttu-id="e476d-207">ノードが失敗した場合、**CleanFabric.ps1** コマンドを実行してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-207">If any nodes fail, run the **CleanFabric.ps1** command.</span></span> <span data-ttu-id="e476d-208">このコマンドは、C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code で検索することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-208">You can find this command in C:\\Program Files\\Microsoft Service Fabric\\bin\\fabric\\fabric.code.</span></span>
-    4. <span data-ttu-id="e476d-209">すべての Service Fabric ノードの **C:\\ProgramData\\SF\\** フォルダーを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-209">Remove the **C:\\ProgramData\\SF\\** folder on all Service Fabric nodes.</span></span>
-
-        <span data-ttu-id="e476d-210">"アクセス拒否" エラーが発生した場合は、マシンを再起動してからもう一度実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-210">If you receive an "Access denied" error, restart the machine, and try again.</span></span>
-
-3. <span data-ttu-id="e476d-211">必要に応じて証明書を削除または更新します。</span><span class="sxs-lookup"><span data-stu-id="e476d-211">Remove or update certificates as required.</span></span>
-
-    <span data-ttu-id="e476d-212">すべての AOS、BI、ORCH、および DC ノードから古い証明書を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-212">Remove old certificates from all AOS, BI, ORCH, and DC nodes.</span></span>
-
-    - <span data-ttu-id="e476d-213">証明書は、次の証明書ストアに存在します: Cert:\\CurrentUser\\My\\、Cert:\\LocalMachine\\My, and Cert:\\LocalMachine\\Root。</span><span class="sxs-lookup"><span data-stu-id="e476d-213">The certificates exist in the following certificate stores: Cert:\\CurrentUser\\My\\, Cert:\\LocalMachine\\My, and Cert:\\LocalMachine\\Root.</span></span>
-    - <span data-ttu-id="e476d-214">Microsoft SQL Server の設定が変更される場合は、SQL Server 証明書を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-214">If the setup of Microsoft SQL Server will be modified, remove the SQL Server certificates.</span></span>
-    - <span data-ttu-id="e476d-215">Active Directory フェデレーション サービス (AD FS) の設定が変更される場合は、AD FS 証明書を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-215">If the settings for Active Directory Federation Services (AD FS) will be modified, remove the AD FS certificate.</span></span>
-
-4. <span data-ttu-id="e476d-216">必要に応じて、次の構成ファイルを更新します。</span><span class="sxs-lookup"><span data-stu-id="e476d-216">Update the following configuration files as required:</span></span>
-
-    - <span data-ttu-id="e476d-217">ConfigTemplate.xml</span><span class="sxs-lookup"><span data-stu-id="e476d-217">ConfigTemplate.xml</span></span>
-    - <span data-ttu-id="e476d-218">ClusterConfig.json</span><span class="sxs-lookup"><span data-stu-id="e476d-218">ClusterConfig.json</span></span>
-
-    <span data-ttu-id="e476d-219">テンプレートのフィールドに正しく入力する方法については、ご使用の環境に適した設定と配置のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-219">For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment topic for your environment:</span></span>
-
-    - [<span data-ttu-id="e476d-220">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-220">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md)
-    - [<span data-ttu-id="e476d-221">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-221">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md)
-
-5. <span data-ttu-id="e476d-222">LCS でプロジェクトを開き、必要に応じて LCS のオンプレミス コネクタを更新します。</span><span class="sxs-lookup"><span data-stu-id="e476d-222">In LCS, open the project, and update the LCS on-premises connector as required.</span></span>
-
-    1. <span data-ttu-id="e476d-223">環境の LCS オンプレミス コネクタを再作成するか、または既存のコネクタの設定を編集します。</span><span class="sxs-lookup"><span data-stu-id="e476d-223">Re-create the LCS on-premises connector for the environment, or edit the settings of an existing connector.</span></span>
-
-        <span data-ttu-id="e476d-224">LCS の値を簡単にコピーするには、.\\Get-AgentConfiguration.ps1 script を使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-224">To obtain easy-to-copy values for LCS, use the .\\Get-AgentConfiguration.ps1 script.</span></span>
-
-    2. <span data-ttu-id="e476d-225">最新のローカル エージェント コンフィギュレーション、localagent config.json をダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e476d-225">Download the latest local agent configuration, localagent-config.json.</span></span>
-
-6. <span data-ttu-id="e476d-226">環境に適したセットアップと展開のトピックで次の指示に従って、再度展開します。</span><span class="sxs-lookup"><span data-stu-id="e476d-226">Deploy again by following the instructions in the appropriate setup and deployment topic for the environment:</span></span>
-
-    - [<span data-ttu-id="e476d-227">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-227">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md)
-    - <span data-ttu-id="e476d-228">[プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md)。</span><span class="sxs-lookup"><span data-stu-id="e476d-228">[Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md).</span></span>
-
-## <a name="find-the-local-agent-values-that-are-used"></a><span data-ttu-id="e476d-229">使用するローカル エージェント値の検索</span><span class="sxs-lookup"><span data-stu-id="e476d-229">Find the local agent values that are used</span></span>
-
-<span data-ttu-id="e476d-230">Service Fabric Explorer でローカル エージェント値を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-230">You can find local agent values in Service Fabric Explorer.</span></span> <span data-ttu-id="e476d-231">**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent** に移動して **詳細** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-231">Go to **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent**, and then select **Details**.</span></span>
-
-<span data-ttu-id="e476d-232">または、次の Windows PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-232">Alternatively, run the following Windows PowerShell command.</span></span>
-
-```powershell
-.\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-```
-
-## <a name="install-upgrade-or-uninstall-a-local-agent"></a><span data-ttu-id="e476d-233">ローカル エージェントのインストール、アップグレード、アンインストール</span><span class="sxs-lookup"><span data-stu-id="e476d-233">Install, upgrade, or uninstall a local agent</span></span>
-
-<span data-ttu-id="e476d-234">ローカル エージェントのインストールについての詳細は、ご使用の環境に適した設定と配置のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-234">For information about local agent installation, see the appropriate setup and deployment topic for your environment:</span></span>
-
-- [<span data-ttu-id="e476d-235">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-235">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md)
-- [<span data-ttu-id="e476d-236">プラットフォーム更新 8 またはプラットフォーム更新 11</span><span class="sxs-lookup"><span data-stu-id="e476d-236">Platform update 8 or Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md)
-
-<span data-ttu-id="e476d-237">また、以下のアップグレードおよびアンインストール コマンドを使用することができます:</span><span class="sxs-lookup"><span data-stu-id="e476d-237">You can also use the following upgrade and uninstallation commands:</span></span>
-
-```powershell
-LocalAgentCLI.exe Install <path of localagent-config.json>
-LocalAgentCLI.exe Cleanup <path of localagent-config.json>
-```
-
-> [!NOTE]
-> <span data-ttu-id="e476d-238">**クリーンアップ** コマンドはファイル共有に配置された一切のファイルを削除しません。</span><span class="sxs-lookup"><span data-stu-id="e476d-238">The **Cleanup** command doesn't remove any files that were put in the file share.</span></span> <span data-ttu-id="e476d-239">ファイル共有は再利用できます。</span><span class="sxs-lookup"><span data-stu-id="e476d-239">The file share can be reused.</span></span>
-
-## <a name="an-error-occurs-when-local-agent-services-are-started"></a><span data-ttu-id="e476d-240">ローカル エージェント サービスを開始される際にエラーが発生</span><span class="sxs-lookup"><span data-stu-id="e476d-240">An error occurs when local agent services are started</span></span>
-
-<span data-ttu-id="e476d-241">ローカル エージェント サービスが開始されると、次のエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-241">When local agent services are started, you might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-242">ファイル、アセンブリ 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'、もしくはその依存関係の 1 つをロードできませんでした。</span><span class="sxs-lookup"><span data-stu-id="e476d-242">Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.</span></span>
-
-<span data-ttu-id="e476d-243">このエラーは厳密な名前検証が有効になっていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="e476d-243">This error means that strong name verification is turned on.</span></span> <span data-ttu-id="e476d-244">Configure-PreReqs.ps1 を使用して、この確認をオフにすることができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-244">You can turn off this verification by using Configure-PreReqs.ps1.</span></span> <span data-ttu-id="e476d-245">厳密な名前検証がもう有効になっていないことを確認するには、Test-D365FOConfiguration.ps1 を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-245">To validate that strong name verification is no longer turned on, run Test-D365FOConfiguration.ps1.</span></span>
-
-## <a name="a-validation-in-progress-message-is-shown-for-several-minutes-in-lcs"></a><span data-ttu-id="e476d-246">「検証が進行中」のメッセージが LCS に数分表示</span><span class="sxs-lookup"><span data-stu-id="e476d-246">A "Validation in progress" message is shown for several minutes in LCS</span></span>
-
-<span data-ttu-id="e476d-247">ローカル エージェントの検証に関する一般的な問題をトラブルシューティングするには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-247">Follow these steps to troubleshoot general issues with local agent validation.</span></span>
-
-1. <span data-ttu-id="e476d-248">コンピューターを正しくコンフィギュレーションするすべてのオーケストレータ機械で **Configure-PreReqs.ps1** を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-248">Run **Configure-PreReqs.ps1** on all orchestrator machines to configure the machines correctly.</span></span>
-2. <span data-ttu-id="e476d-249">Test-D365FOConfiguration.ps1 スクリプトがすべてのオーケストレータ マシンで通ることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-249">Verify that the Test-D365FOConfiguration.ps1 script passes on all the orchestrator machines.</span></span>
-3. <span data-ttu-id="e476d-250">LocalAgentCLI.exe のインストールが正常に完了したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-250">Verify that the installation of LocalAgentCLI.exe is successfully completed.</span></span>
-4. <span data-ttu-id="e476d-251">Service Fabric Explorer で、すべてのアプリケーションが正常であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-251">In Service Fabric Explorer, verify that all the applications are healthy.</span></span>
-5. <span data-ttu-id="e476d-252">アプリケーションが正常でない場合は、障害が発生しているサービスのプライマリ ノードを探します。</span><span class="sxs-lookup"><span data-stu-id="e476d-252">If the applications aren't healthy, find the primary node for the service that is failing.</span></span> <span data-ttu-id="e476d-253">イベント ビューアーでは、次の場所でのイベントを検索します。</span><span class="sxs-lookup"><span data-stu-id="e476d-253">In Event Viewer, look for events in the following locations:</span></span>
-
-    - <span data-ttu-id="e476d-254">カスタム ビュー \> 管理イベント</span><span class="sxs-lookup"><span data-stu-id="e476d-254">Custom Views \> Administrative Events</span></span>
-    - <span data-ttu-id="e476d-255">アプリケーションとサービス ログ \> Microsoft \> Dynamics \> AX-LocalAgent</span><span class="sxs-lookup"><span data-stu-id="e476d-255">Applications and Services Log \> Microsoft \> Dynamics \> AX-LocalAgent</span></span>
-
-## <a name="local-agent-errors"></a><span data-ttu-id="e476d-256">ローカル エージェント エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-256">Local agent errors</span></span>
-
-### <a name="issue"></a><span data-ttu-id="e476d-257">出庫</span><span class="sxs-lookup"><span data-stu-id="e476d-257">Issue</span></span>
-
-<span data-ttu-id="e476d-258">**エラー:** 次のエラーが表示される場合があります:</span><span class="sxs-lookup"><span data-stu-id="e476d-258">**Error:** You might receive the following errors:</span></span>
-
-> <span data-ttu-id="e476d-259">コマンドを処理できません</span><span class="sxs-lookup"><span data-stu-id="e476d-259">Unable to process commands</span></span>
-
-> <span data-ttu-id="e476d-260">チャンネル情報を取得できません</span><span class="sxs-lookup"><span data-stu-id="e476d-260">Unable to get the channel information</span></span>
-
-> <span data-ttu-id="e476d-261">ホスト プロセスがクラッシュする処理されない例外が原因で RunAsync が失敗しました: System.ArgumentNullException: 値を null にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="e476d-261">RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null.</span></span> <span data-ttu-id="e476d-262">パラメーター名: 証明書</span><span class="sxs-lookup"><span data-stu-id="e476d-262">Parameter name: certificate</span></span>
-
-<span data-ttu-id="e476d-263">**理由:** これらのエラーは OnPremLocalAgent 証明書に指定された証明書が有効でないか、またはテナントに対して正しく構成されていないために発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="e476d-263">**Reason:** These errors can occur because the certificate that is specified for the OnPremLocalAgent certificate either isn't valid or isn't correctly configured for the tenant.</span></span>
-
-<span data-ttu-id="e476d-264">**ステップ:** エラーを解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-264">**Steps:** Follow these steps to resolve the error.</span></span>
-
-1. <span data-ttu-id="e476d-265">すべてのオーケストレータ ノードで **Test-D365FOConfiguration.ps1** を実行し、すべてのチェックに合格することを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-265">Run **Test-D365FOConfiguration.ps1** on all orchestrator nodes to make sure that all checks pass.</span></span>
-2. <span data-ttu-id="e476d-266">ローカル エージェント コンフィギュレーションに指定された証明書が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-266">Verify that the certificate that is specified in the local agent configuration is correct.</span></span>
-
-    - <span data-ttu-id="e476d-267">LCS および ConfigTemplate.xml ファイルで指定する拇印に特殊文字がないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-267">Make sure that the thumbprint that you specify in LCS and in the ConfigTemplate.xml file has no special characters.</span></span>
-    - <span data-ttu-id="e476d-268">証明書は、infrastructure\\ConfigTemplate.xml の次のセクションで指定されているものと同じ証明書である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-268">The certificate should be the same certificate that is specified in the following section in infrastructure\\ConfigTemplate.xml.</span></span>
-
-        ```xml
-        <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="true">
-            <Name>OnPremLocalAgent</Name>
-            <Thumbprint></Thumbprint>
-            <ProtectTo></ProtectTo>
-        </Certificate>
-        ```
-
-3. <span data-ttu-id="e476d-269">LCS のローカル エージェント コンフィギュレーションで指定される同じ証明書が、環境に対する適切な設定および配置トピックの「テナント用 LCS 接続の構成」セクションで手順の完了に使用されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-269">Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-    - [<span data-ttu-id="e476d-270">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-270">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [<span data-ttu-id="e476d-271">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-271">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
-
-4. <span data-ttu-id="e476d-272">ローカル エージェントをアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-272">Uninstall the local agent.</span></span>
-5. <span data-ttu-id="e476d-273">ローカル エージェント コンフィギュレーションで正しい証明書を指定し、もう一度コンフィギュレーション ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e476d-273">Specify the correct certificate in the local agent configuration, and download the configuration file again.</span></span>
-6. <span data-ttu-id="e476d-274">新しい構成ファイルを使用してもう一度ローカル エージェントをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-274">Install the local agent again by using the new configuration file.</span></span>
-
-### <a name="error"></a><span data-ttu-id="e476d-275">エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-275">Error</span></span>
-
-<span data-ttu-id="e476d-276">**エラー:** サービス中に "資産をダウンロードできません" というエラーが表示され、詳細に "パッケージに提供された資格情報が認識されません" と表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-276">**Error:** During servicing, you receive an "Unable to download asset" error, and the details state, "The credentials supplied to the package were not recognized."</span></span>
-
-<span data-ttu-id="e476d-277">**理由:** ACL が証明書で正しく定義されていません。</span><span class="sxs-lookup"><span data-stu-id="e476d-277">**Reason:** The ACL wasn't correctly defined on certificates.</span></span>
-
-<span data-ttu-id="e476d-278">**ステップ:**</span><span class="sxs-lookup"><span data-stu-id="e476d-278">**Steps:**</span></span>
-
-<span data-ttu-id="e476d-279">オーケストレータ マシンのクライアント証明書から ACL が削除されたかを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-279">Check whether ACL was removed from client certificate on orchestrator machines.</span></span> <span data-ttu-id="e476d-280">オーケストレータ マシンの .\Test-D365FOConfiguration.ps1 スクリプトを実行し、ACL を確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-280">Run the .\Test-D365FOConfiguration.ps1 script on orchestrator machines, and verify the ACL.</span></span>
-
-<span data-ttu-id="e476d-281">エラーを解決するには、.\Set-CertificateAcls.ps1 スクリプトを実行して ACL をリセットします。</span><span class="sxs-lookup"><span data-stu-id="e476d-281">To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs.</span></span> 
-
-### <a name="error"></a><span data-ttu-id="e476d-282">エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-282">Error</span></span>
-
-<span data-ttu-id="e476d-283">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-283">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-284">パス '\\...\\agent\\assets\\StandAloneSetup-76308-1.zip' へアクセスすることは、拒否されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-284">Access to the path '\\...\\agent\\assets\\StandAloneSetup-76308-1.zip' is denied.</span></span>
-
-<span data-ttu-id="e476d-285">**理由:** ローカル エージェント コンフィギュレーションで指定されたファイル共有が無効です。</span><span class="sxs-lookup"><span data-stu-id="e476d-285">**Reason:** The file share that is specified in the local agent configuration isn't valid.</span></span>
-
-<span data-ttu-id="e476d-286">**ステップ:** エラーを解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-286">**Steps:** Follow these steps to resolve the error.</span></span>
-
-1. <span data-ttu-id="e476d-287">指定した共有が存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-287">Verify that the specified share exists.</span></span>
-2. <span data-ttu-id="e476d-288">ローカル エージェント ユーザーが共有への完全なアクセス許可を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-288">Verify that the local agent user has full permission on the share.</span></span> <span data-ttu-id="e476d-289">ローカル エージェント ユーザーは、次のセクションの ConfigTemplate.xml で指定されるドメイン ネーム システム (DNS) 名です。</span><span class="sxs-lookup"><span data-stu-id="e476d-289">The local agent user is the Domain Name System (DNS) name that is specified in the following section in ConfigTemplate.xml.</span></span>
-
-    ```xml
-    <ADServiceAccount type="gMSA" name="svc-LocalAgent$" refName="gmsaLocalAgent">
-        <DNSHostName>svc-LocalAgent.d365ffo.onprem.contoso.com</DNSHostName>
-    </ADServiceAccount>
-    ```
-
-3. <span data-ttu-id="e476d-290">適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックが完了したことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-290">Make sure that the "Set up file storage" section of the appropriate setup and deployment topic for your environment is completed:</span></span>
-
-    - [<span data-ttu-id="e476d-291">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-291">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#setupfile)
-    - [<span data-ttu-id="e476d-292">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-292">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#setupfile)
-
-4. <span data-ttu-id="e476d-293">ローカル エージェントをアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-293">Uninstall the local agent.</span></span>
-5. <span data-ttu-id="e476d-294">ローカル エージェント コンフィギュレーションで正しいファイル共有指定し、もう一度コンフィギュレーション ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e476d-294">Specify the correct file share in the local agent configuration, and download the configuration file again.</span></span>
-6. <span data-ttu-id="e476d-295">新しい構成ファイルを使用してもう一度ローカル エージェントをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-295">Install the local agent again by using the new configuration file.</span></span>
-
-### <a name="error"></a><span data-ttu-id="e476d-296">エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-296">Error</span></span>
-
-<span data-ttu-id="e476d-297">**エラー:** サービス操作を行うと次のエラーが表示されます:</span><span class="sxs-lookup"><span data-stu-id="e476d-297">**Error:** When you do a servicing operation, you receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-298">コマンドの抽出セットアップ フォルダーを取得できません</span><span class="sxs-lookup"><span data-stu-id="e476d-298">Unable to get extract setup folder for command</span></span>
-
-<span data-ttu-id="e476d-299">**理由:** そのファイル共有は削除または変更されました。</span><span class="sxs-lookup"><span data-stu-id="e476d-299">**Reason:** The file share has been removed or changed.</span></span>
-
-<span data-ttu-id="e476d-300">**手順:** ファイル共有の設定内容を確認するには、Microsoft SQL Server Management Studio を開いてオーケストレータ データベースで次のクエリを実行します:</span><span class="sxs-lookup"><span data-stu-id="e476d-300">**Steps:** To see what the file share is set to, open Microsoft SQL Server Management Studio, and run the following query on the orchestrator database:</span></span>
-
-```
-select * from OrchestratorCommandArtifact where CommandId = 'xxx'
-```
-
-### <a name="error"></a><span data-ttu-id="e476d-301">エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-301">Error</span></span>
-
-<span data-ttu-id="e476d-302">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-302">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-303">ユーザー 'D365\\svc-LocalAgent$' へのログインが失敗しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-303">Login failed for user 'D365\\svc-LocalAgent$'.</span></span> <span data-ttu-id="e476d-304">理由: 指定した名前に一致するログインが見つかりませんでした。</span><span class="sxs-lookup"><span data-stu-id="e476d-304">Reason: Could not find a login matching the name provided.</span></span> <span data-ttu-id="e476d-305">\[CLIENT: 10.0.2.23\]</span><span class="sxs-lookup"><span data-stu-id="e476d-305">\[CLIENT: 10.0.2.23\]</span></span>
-
-<span data-ttu-id="e476d-306">**理由:** ローカル エージェント ユーザーはオーケストレーション データベースに接続できません。</span><span class="sxs-lookup"><span data-stu-id="e476d-306">**Reason:** The local agent user can't connect to the orchestrator database.</span></span> <span data-ttu-id="e476d-307">ユーザーが削除され、Active Directory ドメイン サービス (AD DS) に再作成されているために、この問題が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-307">This issue can occur because users have been deleted and then re-created in Active Directory Domain Services (AD DS).</span></span> <span data-ttu-id="e476d-308">したがって、ユーザーのセキュリティ識別子 (SID) が変更され、SQL Server インスタンスまたはデータベースのユーザーに与えられたアクセスは機能しなくなります。</span><span class="sxs-lookup"><span data-stu-id="e476d-308">Therefore, the security identifier (SID) of the user has changed, and any access that was given to the user for the SQL Server instance or the database no longer works.</span></span>
-
-<span data-ttu-id="e476d-309">**ステップ:** エラーを解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-309">**Steps:** Follow these steps to resolve the error.</span></span>
-
-1. <span data-ttu-id="e476d-310">SQL Server インスタンスで次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-310">Run the following script on the SQL Server instance.</span></span>
-
-    ```powershell
-    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
-    ```
-
-    <span data-ttu-id="e476d-311">このスクリプトは、空のデータベースがまだ存在していない場合に、空のオーケストレータ データベースを作成します。</span><span class="sxs-lookup"><span data-stu-id="e476d-311">This script creates an empty orchestrator database, if an empty database doesn't already exist.</span></span> <span data-ttu-id="e476d-312">ローカル エージェント ユーザーをデータベースに追加し、データベース\_アクセス許可の所有者に渡します。</span><span class="sxs-lookup"><span data-stu-id="e476d-312">It then adds the local agent user to the database and gives it db\_owner permission.</span></span>
-
-    <span data-ttu-id="e476d-313">適切なアクセス許可が付与された後、アプリケーションは自動的に正常な状態になります。</span><span class="sxs-lookup"><span data-stu-id="e476d-313">After the correct permissions are provided, the application should automatically go to a healthy state.</span></span>
-
-2. <span data-ttu-id="e476d-314">SQL Server インスタンスの完全修飾ドメイン名 (FQDN)、データベース名、ローカル エージェント ユーザーなどの設定が LCS で間違って提供された場合は、設定を変更し、ローカル エージェントを再インストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-314">If any settings, such as the fully qualified domain name (FQDN) of the SQL Server instance, the database name, or the local agent user, were provided incorrectly in LCS, change the settings, and then reinstall the local agent.</span></span>
-
-<span data-ttu-id="e476d-315">上記の手順でエラーが解決しない場合は、SQL Server インスタンスとデータベースからローカル エージェント ユーザーを手動で削除し、Initialize-Database スクリプトを再実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-315">If the preceding steps don't resolve the error, manually remove the local agent user from the SQL Server instance and the database, and then rerun the Initialize-Database script.</span></span>
-
-<span data-ttu-id="e476d-316">AD DS でユーザーを再作成する場合、SID が変更されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-316">If you re-create a user in AD DS, remember that the SID will change.</span></span> <span data-ttu-id="e476d-317">この場合、ユーザーの以前の SID を削除し、新しい SID を追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-317">In this case, remove the previous SID for the user, and add a new SID.</span></span>
-
-### <a name="error"></a><span data-ttu-id="e476d-318">エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-318">Error</span></span>
-
-<span data-ttu-id="e476d-319">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-319">**Error:**</span></span> 
-> <span data-ttu-id="e476d-320">データベースを移行できません</span><span class="sxs-lookup"><span data-stu-id="e476d-320">Unable to migrate database</span></span>
-
-<span data-ttu-id="e476d-321">**ステップ:**</span><span class="sxs-lookup"><span data-stu-id="e476d-321">**Steps:**</span></span>
-
-- <span data-ttu-id="e476d-322">SQL Server リスナーへのアクセスがあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-322">Verify that you have access to the SQL Server listener.</span></span>
-- <span data-ttu-id="e476d-323">テストをしている場合は、最初からやり直して空のオーケストレータ データベースを使用できます。</span><span class="sxs-lookup"><span data-stu-id="e476d-323">If you're doing testing, you can start over and use an empty orchestrator database.</span></span>
-
-### <a name="issue"></a><span data-ttu-id="e476d-324">問題点</span><span class="sxs-lookup"><span data-stu-id="e476d-324">Issue</span></span>
-
-<span data-ttu-id="e476d-325">[データベースを構成する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) プロシージャを実行するときに SQL Server インスタンスが名前付きインスタンスの場合は、**-DatabaseServer \[FQDN/Instancename\]** パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-325">When you performing the [Configure the databases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.</span></span>
-
-### <a name="issue"></a><span data-ttu-id="e476d-326">問題点</span><span class="sxs-lookup"><span data-stu-id="e476d-326">Issue</span></span>
-
-<span data-ttu-id="e476d-327">ローカル エージェント ユーザーは、SQL Server インスタンスまたはデータベースに接続できません。</span><span class="sxs-lookup"><span data-stu-id="e476d-327">The local agent user can't connect to the SQL Server instance or the database.</span></span>
-
-<span data-ttu-id="e476d-328">**ステップ:** エラーを解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-328">**Steps:** Follow these steps to resolve the error.</span></span>
-
-1. <span data-ttu-id="e476d-329">SQL Server のプライマリ ノード データベースから svc-LocalAgent ユーザーを削除し、両方のサーバーからログインを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-329">Delete the svc-LocalAgent user from the SQL Server primary node databases, and then remove the login from both servers.</span></span>
-2. <span data-ttu-id="e476d-330">次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-330">Run the following scripts.</span></span>
-
-    ```powershell
-    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
-    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
-    ```
-
-    > [!IMPORTANT]
-    > <span data-ttu-id="e476d-331">これらのスクリプトは、**常時オン**に設定されているときは機能しません。</span><span class="sxs-lookup"><span data-stu-id="e476d-331">These scripts don't work when an **always-on** setup is used.</span></span> <span data-ttu-id="e476d-332">データベースは最初にプライマリ ノードに作成されてから複製される必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-332">The database must first be created in the primary node and then replicated.</span></span>
-
-### <a name="error"></a><span data-ttu-id="e476d-333">エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-333">Error</span></span>
-
-<span data-ttu-id="e476d-334">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-334">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-335">RunAsync は、処理されていない例外が原因でホスト プロセスがクラッシュするため、失敗しました。System.Net.Http.HttpRequestException: 要求の送信中にエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-335">RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request.</span></span><span data-ttu-id="e476d-336"> ---\> System.Net.WebException: リモート名を解決できませんでした: 'lcsapi.lcs.dynamics.com'</span><span class="sxs-lookup"><span data-stu-id="e476d-336"> ---\> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'</span></span>
-
-<span data-ttu-id="e476d-337">**理由:** ローカル エージェント マシンは lcsapi.lcs.dynamics.com に接続できません。</span><span class="sxs-lookup"><span data-stu-id="e476d-337">**Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com.</span></span> <span data-ttu-id="e476d-338">「リモート名を解決できませんでした: 'lcsapi.lcs.dynamics.com'」に対する AX-BridgeService イベント ログを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-338">Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'."</span></span>
-
-<span data-ttu-id="e476d-339">**ステップ:** エラーを解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-339">**Steps:** Follow these steps to resolve the error.</span></span>
-
-1. <span data-ttu-id="e476d-340">**psping lcsapi.lcs.dynamics.com:80** を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-340">Run **psping lcsapi.lcs.dynamics.com:80**.</span></span>
-2. <span data-ttu-id="e476d-341">前述のコマンドから応答を受信しない場合は、組織の IT 部門に問い合わせます。</span><span class="sxs-lookup"><span data-stu-id="e476d-341">If you don't receive a response from the preceding command, contact the IT department at your organization.</span></span> <span data-ttu-id="e476d-342">ファイアウォールが lcsapi へのアクセスをブロックしているか、もしくはプロキシの問題が発生しています。</span><span class="sxs-lookup"><span data-stu-id="e476d-342">Either the firewall is blocking access to lcsapi, or proxy issues are occurring.</span></span>
-
-    ```
-    lcsapi.lcs.dynamics.com:443
-    login.windows.net:443
-    uswelcs1lcm.queue.core.windows.net:443
-    www.office.com:443
-    login.microsoftonline.com:443
-    dc.services.visualstudio.com:443
-    uswelcs1lcm.blob.core.windows.net:443
-    uswedpl1catalog.blob.core.windows.net:443
-    ```
-
-## <a name="restart-applications-such-as-aos"></a><span data-ttu-id="e476d-343">アプリケーション (AOS など) を再起動</span><span class="sxs-lookup"><span data-stu-id="e476d-343">Restart applications (such as AOS)</span></span>
-
-<span data-ttu-id="e476d-344">Service Fabric で、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード**の順に展開します。</span><span class="sxs-lookup"><span data-stu-id="e476d-344">In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**.</span></span> <span data-ttu-id="e476d-345">省略記号ボタン (**...**) を選択し、**再起動**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-345">Select the ellipsis button (**...**), and then select **Restart**.</span></span> <span data-ttu-id="e476d-346">求められたらコードを入力します。</span><span class="sxs-lookup"><span data-stu-id="e476d-346">When you're prompted, enter the code.</span></span>
-
-## <a name="upgrade-service-fabric"></a><span data-ttu-id="e476d-347">Service Fabric を更新します。</span><span class="sxs-lookup"><span data-stu-id="e476d-347">Upgrade Service Fabric</span></span>
-
-<span data-ttu-id="e476d-348">Service Fabric Explorer は次のようなメッセージを表示します:</span><span class="sxs-lookup"><span data-stu-id="e476d-348">Service Fabric Explorer will show a message that resembles the following message:</span></span>
-
-> <span data-ttu-id="e476d-349">問題のあるイベント: SourceId=「System.UpgradeOrchestrationService」、プロパティ =「ClusterVersionSupport」、HealthState=「警告」、ConsiderWarningAsError=false。</span><span class="sxs-lookup"><span data-stu-id="e476d-349">Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.</span></span>
-<span data-ttu-id="e476d-350">現在のクラスタ バージョン 6.1.467.9494 のサポートは、5/30/2018 12:00:00 AM に終了します。</span><span class="sxs-lookup"><span data-stu-id="e476d-350">The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM.</span></span> <span data-ttu-id="e476d-351">Get-ServiceFabricRegisteredClusterCodeVersion を使用して利用可能なアップグレードを表示し、Start-ServiceFabricClusterUpgrade を使用してアップグレードしてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-351">Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.</span></span>
-
-<span data-ttu-id="e476d-352">最小要件が 1 つの Microsoft SQL Server Reporting Services (SSRS) ノードと 1 つの Management Reporter ノードであるため、PreUpgradeSafetyCheck をスキップするパラメータを渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-352">Because the minimum requirement is one Microsoft SQL Server Reporting Services (SSRS) node and one Management Reporter node, you must pass in a parameter to skip PreUpgradeSafetyCheck.</span></span>
-
-<span data-ttu-id="e476d-353">Windows PowerShell で Service Fabric をアップグレードするにはこれらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-353">Follow these steps to upgrade Service Fabric in Windows PowerShell.</span></span>
-
-1. <span data-ttu-id="e476d-354">Service Fabric Cluster に接続します。</span><span class="sxs-lookup"><span data-stu-id="e476d-354">Connect to the Service Fabric cluster.</span></span> <span data-ttu-id="e476d-355">次のコマンドで **123** をサーバー / スター拇印に置き換えて、適切な IP アドレスを使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-355">In the following command, replace **123** with the server/star thumbprint, and use the appropriate IP address.</span></span>
-
-    ```powershell
-    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
-    ```
-
-2. <span data-ttu-id="e476d-356">ダウンロードされた最新バージョンを取得します。</span><span class="sxs-lookup"><span data-stu-id="e476d-356">Get the latest version that was downloaded.</span></span>
-
-    ```powershell
-    Get-ServiceFabricRegisteredClusterCodeVersion
-    ```
-
-3. <span data-ttu-id="e476d-357">アップグレードを開始します。</span><span class="sxs-lookup"><span data-stu-id="e476d-357">Start the upgrade.</span></span> <span data-ttu-id="e476d-358">**-CodePackageVersion** には、最新バージョンを入力します。</span><span class="sxs-lookup"><span data-stu-id="e476d-358">For **-CodePackageVersion**, enter the latest version.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="e476d-359">**-UpgradeReplicaSetCheckTimeout** は SSRS と Management Reporter の PreUpgradeSafetyCheck をスキップするために使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-359">**-UpgradeReplicaSetCheckTimeout** is used to skip PreUpgradeSafetyCheck for SSRS and Management Reporter.</span></span> <span data-ttu-id="e476d-360">詳細については、[Service Fabric サービスのアップグレードが動作しない](https://github.com/Azure/service-fabric-issues/issues/595) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-360">For more information, see [Service Fabric service upgrade not working](https://github.com/Azure/service-fabric-issues/issues/595).</span></span> <span data-ttu-id="e476d-361">**UpgradeDomainTimeoutSec 600 UpgradeTimeoutSec 1800** を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="e476d-361">You might also want to use **-UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800**.</span></span> <span data-ttu-id="e476d-362">詳細については、[アプリケーション アップグレード パラメーター](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-parameters) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-362">For more information, see [Application upgrade parameters](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-parameters).</span></span>
-
-    ```powershell
-    Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
-    ```
-
-4. <span data-ttu-id="e476d-363">アップグレードの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="e476d-363">Get the upgrade status.</span></span>
-
-    ```powershell
-    Get-ServiceFabricClusterUpgrade
-    ```
-
-<span data-ttu-id="e476d-364">詳細については、[アプリケーション アップグレードのトラブルシューティング](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-troubleshooting)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-364">For more information, see [Troubleshoot application upgrades](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-troubleshooting).</span></span>
-
-<span data-ttu-id="e476d-365">新しい Service Fabric リリースの時期については、[Azure Service Fabric チームのブログ](https://blogs.msdn.microsoft.com/azureservicefabric/) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-365">To learn when a new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).</span></span>
-
-<span data-ttu-id="e476d-366">アップグレード後に Service Fabric Explorer で警告が表示された場合は、ノードを記録して、**ノード** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **コード パッケージ** \> **コード** を展開して再起動してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-366">If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart by expanding **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**.</span></span> <span data-ttu-id="e476d-367">省略記号ボタン (**...**) を選択し、**再起動**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-367">Select the ellipsis button (**...**), and then select **Restart**.</span></span>
- 
-## <a name="error-unable-to-load-dll-fabricclientdll"></a><span data-ttu-id="e476d-368">エラー、「DLL 'FabricClient.dll' を読み込むことができません」</span><span class="sxs-lookup"><span data-stu-id="e476d-368">Error: "Unable to load DLL 'FabricClient.dll'"</span></span>
-
-<span data-ttu-id="e476d-369">"DLL 'FabricClient.dll' をロードできません" というエラーが表示された場合は、Windows PowerShellを 閉じて再起動してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-369">If you receive an error that states, "Unable to load DLL 'FabricClient.dll'," close and restart Windows PowerShell.</span></span> <span data-ttu-id="e476d-370">エラーが引き続き発生する場合は、コンピューターを再起動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-370">If the error persists, restart the machine.</span></span>
-
-## <a name="what-cluster-id-should-be-used-in-the-agent-configuration"></a><span data-ttu-id="e476d-371">エージェント コンフィギュレーションでどのようなクラスター ID を使用する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="e476d-371">What cluster ID should be used in the agent configuration?</span></span>
-
-<span data-ttu-id="e476d-372">クラスタ ID は、任意のグローバル一意識別子 (GUID) です。</span><span class="sxs-lookup"><span data-stu-id="e476d-372">The cluster ID can be any globally unique identifier (GUID).</span></span> <span data-ttu-id="e476d-373">この GUID は、追跡目的で使用されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-373">This GUID is used for tracking purposes.</span></span>
-
-## <a name="encryption-errors"></a><span data-ttu-id="e476d-374">暗号化エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-374">Encryption errors</span></span>
-
-<span data-ttu-id="e476d-375">暗号化エラーの例は "AXBootstrapperAppType"、"Bootstrapper"、"AXDiagnostics"、"RTGatewayAppType"、"ゲートウェイの潜在的なエラー関連"、 "Microsoft.D365.Gateways.ClusterGateway.exe" を含みます。</span><span class="sxs-lookup"><span data-stu-id="e476d-375">Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrapper," "AXDiagnostics," "RTGatewayAppType," "Gateway potential failure related," and "Microsoft.D365.Gateways.ClusterGateway.exe."</span></span>
-
-<span data-ttu-id="e476d-376">AOS アカウント パスワードを暗号化するために使用されたデータ暗号化証明書がマシンにインストールされていない場合、これらのエラーのいずれかが発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="e476d-376">You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine.</span></span> <span data-ttu-id="e476d-377">この証明書が証明書 (ローカル コンピューター) に含まれているか、プロバイダーの種類が正しくない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-377">This certificate might be in the certificates (local computer), or the provider type might be incorrect.</span></span>
-
-<span data-ttu-id="e476d-378">エラーを解決するには、credentials.json ファイルを検証します。</span><span class="sxs-lookup"><span data-stu-id="e476d-378">To resolve the error, validate the credentials.json file.</span></span> <span data-ttu-id="e476d-379">次のコマンドを (AOS1 上で) 入力することにより、テキストが正しく復号化されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-379">Verify that the text is correctly decrypted by entering the following command (on AOS1).</span></span>
-
-```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
-
-<span data-ttu-id="e476d-380">このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-380">This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file.</span></span> <span data-ttu-id="e476d-381">イベント ビューアーで、このパラメータが定義されているどうかを確認するには、**カスタム ビュー** \> **管理イベント**の順に移動し、次の情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-381">To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and verify the following information:</span></span>
-
-- <span data-ttu-id="e476d-382">Credentials.json ファイルの資格情報の暗号化には、正しいレイアウト/構造があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-382">The encrypt credentials for the credentials.json file have the correct layout/structure.</span></span> <span data-ttu-id="e476d-383">詳細については、ご使用の環境に適した設定および配置のトピックの「資格情報の暗号化」のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-383">For more information, see the "Encrypt credentials" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-    - [<span data-ttu-id="e476d-384">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-384">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#encryptcred)
-    - [<span data-ttu-id="e476d-385">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-385">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
-
-- <span data-ttu-id="e476d-386">決算引用符が線の終わりまたは次の線に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-386">A closing quotation mark appears at the end of the line or on the next line.</span></span>
-
-<span data-ttu-id="e476d-387">イベント ビューアーの **カスタム ビュー** \> **管理イベント** で、**Microsoft-Service Fabric** ソース カテゴリのエラーに注意します。</span><span class="sxs-lookup"><span data-stu-id="e476d-387">In Event Viewer, under **Custom Views** \> **Administrative Events**, note any errors in the **Microsoft-Service Fabric** source category.</span></span>
-
-## <a name="properties-to-create-a-dataencryption-certificate"></a><span data-ttu-id="e476d-388">DataEncryption 証明書を作成するためのプロパティ</span><span class="sxs-lookup"><span data-stu-id="e476d-388">Properties to create a DataEncryption certificate</span></span>
-
-<span data-ttu-id="e476d-389">DataEncryption 証明書を作成するのにには、次のプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-389">Use the following properties to create the DataEncryption certificate:</span></span>
-
-- <span data-ttu-id="e476d-390">**自己署名証明書** – このパラメータは、自己署名証明書を使用する場合にのみ有効にします。</span><span class="sxs-lookup"><span data-stu-id="e476d-390">**Is self-signed certificate** – Enable this parameter only when you're using self-signed certificates.</span></span>
-- <span data-ttu-id="e476d-391">**証明書の目的** – この証明書のすべての目的を有効にします。</span><span class="sxs-lookup"><span data-stu-id="e476d-391">**Certificate purposes** – Enable all purposes for this certificate.</span></span>
-- <span data-ttu-id="e476d-392">**署名アルゴリズム** – **sha256RSA** を指定してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-392">**Signature algorithm** – Specify **sha256RSA**.</span></span>
-- <span data-ttu-id="e476d-393">**署名ハッシュ アルゴリズム** – **sha256** を指定してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-393">**Signature hash algorithm** – Specify **sha256**.</span></span>
-- <span data-ttu-id="e476d-394">**発行者** – 指定 **CN = DataEncryptionCertificate**。</span><span class="sxs-lookup"><span data-stu-id="e476d-394">**Issuer** – Specify **CN = DataEncryptionCertificate**.</span></span>
-- <span data-ttu-id="e476d-395">**公開キー** – **RSA (2048 ビット)** を指定します。</span><span class="sxs-lookup"><span data-stu-id="e476d-395">**Public Key** – Specify **RSA (2048 bits)**.</span></span>
-- <span data-ttu-id="e476d-396">**Thumbprint アルゴリズム** – **sha1** を指定します。</span><span class="sxs-lookup"><span data-stu-id="e476d-396">**Thumbprint algorithm** – Specify **sha1**.</span></span>
-
-> [!WARNING]
-> <span data-ttu-id="e476d-397">実稼働環境では、自己署名証明書を使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="e476d-397">Don't use self-signed certificates in production environments.</span></span> <span data-ttu-id="e476d-398">代わりに、証明書機関によって発行された証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-398">Instead, use certificates that are issued by certificate authorities.</span></span>
-
-## <a name="the-certificate-and-private-key-that-should-be-used-for-decryption-cant-be-found-0x8009200c"></a><span data-ttu-id="e476d-399">暗号の解読に使用すべき証明書と秘密キーを見つけることができません (0x8009200C)</span><span class="sxs-lookup"><span data-stu-id="e476d-399">The certificate and private key that should be used for decryption can't be found (0x8009200C)</span></span>
-
-<span data-ttu-id="e476d-400">証明書と ACL がない、または間違った拇印の入力がある場合は、特殊文字をチェックし、C:\\ProgramData\\SF\\\<AOSMachineName\>\\Fabric\\work\\Applications\\AXBootstrapperAppType\_App\<N\>\\log\\ConfigureCertificates-\<timestamp\>.txt で拇印を探します。</span><span class="sxs-lookup"><span data-stu-id="e476d-400">If you're missing a certificate and ACL, or if you have the wrong thumbprint entry, check for special characters, and look for thumbprints in C:\\ProgramData\\SF\\\<AOSMachineName\>\\Fabric\\work\\Applications\\AXBootstrapperAppType\_App\<N\>\\log\\ConfigureCertificates-\<timestamp\>.txt.</span></span>
-
-<span data-ttu-id="e476d-401">次のコマンドを使用して暗号化されたテキストを検証することもできます。</span><span class="sxs-lookup"><span data-stu-id="e476d-401">You can also validate the encrypted text by using the following command.</span></span>
-
-```
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
-
-<span data-ttu-id="e476d-402">「暗号の解読に使用する証明書と秘密キーを見つけることができません」というメッセージを受信した場合は、axdataenciphermentcert と svc-AXSF$ AXServiceUser ACLs を確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-402">If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.</span></span>
-
-<span data-ttu-id="e476d-403">credentials.json ファイルが変更された場合は、LCS から環境を削除して再配置します。</span><span class="sxs-lookup"><span data-stu-id="e476d-403">If the credentials.json file has changed, delete and redeploy the environment from LCS.</span></span>
-
-<span data-ttu-id="e476d-404">上記のソリューションのいずれも機能しない場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-404">If none of the preceding solutions work, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-405">ConfigTemplate.xml ファイルで指定されたドメイン名と Active Directory アカウント名が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-405">Verify that the domain name and Active Directory account names that are specified in the ConfigTemplate.xml file are correct.</span></span>
-2. <span data-ttu-id="e476d-406">用意されたスクリプトを使用して証明書が生成されなかった場合に ConfigTemplate.xml ファイルで指定された拇印が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-406">Verify that the thumbprints that are specified in the ConfigTemplate.xml file are correct if the certificate wasn't generated by using the scripts that are provided.</span></span>
-3. <span data-ttu-id="e476d-407">LCS で指定された証明書の拇印が正しく、ConfigTemplate.xml で指定されたものと拇印が一致することを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-407">Verify that the certificate thumbprints that are specified in LCS are correct, and that they match the thumbprints that are specified in ConfigTemplate.xml.</span></span> <span data-ttu-id="e476d-408">特殊文字がないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-408">Make sure that there are no special characters.</span></span> <span data-ttu-id="e476d-409">**.\\Get-DeploymentSettings.ps1** を実行して、コピーしやすい方法で拇印を取得することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-409">You can run **.\\Get-DeploymentSettings.ps1** to obtain the thumbprints in an easy-to-copy manner.</span></span>
-4. <span data-ttu-id="e476d-410">証明書が自己生成されない場合、プロバイダー名が次の証明書タイプと一致することを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-410">If the certificates aren't self-generated, make sure that the provider names match for the following certificate types:</span></span>
-
-    - <span data-ttu-id="e476d-411">**ServiceFabricEncryption type:** Microsoft Enhanced Cryptographic Provider v1.0</span><span class="sxs-lookup"><span data-stu-id="e476d-411">**ServiceFabricEncryption type:** Microsoft Enhanced Cryptographic Provider v1.0</span></span>
-    - <span data-ttu-id="e476d-412">**その他のすべての証明書タイプ:** Microsoft の拡張された RSA および AES 暗号化プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e476d-412">**All other certificate types:** Microsoft Enhanced RSA and AES Cryptographic Provider</span></span>
-
-5. <span data-ttu-id="e476d-413">Set-CertificateAcls.ps1 および Test-D365FOConfiguration.ps1 スクリプトがすべての Service Fabric マシンで正常に実行されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-413">Verify that the Set-CertificateAcls.ps1 and Test-D365FOConfiguration.ps1 scripts were successfully run on all Service Fabric machines.</span></span>
-6. <span data-ttu-id="e476d-414">Credentials.json ファイルが存在し、エントリが適切な値に復号化されるよう確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-414">Verify that the credentials.json file exists, and that the entries are decrypted to correct values.</span></span>
-
-    <span data-ttu-id="e476d-415">AOS マシンのいずれかで、データの暗号化証明書が正しいことを確認する次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-415">On one of the AOS machines, run the following command to verify that the data encryption certificate is correct.</span></span>
-
-    ```powershell
-    Invoke-ServiceFabricDecryptText '<encrypted string>' -StoreLocation LocalMachine
-    ```
-
-7. <span data-ttu-id="e476d-416">いずれかの証明書を変更する必要がある場合、もしくは構成が正しくない場合は、次の手順を実行してください:</span><span class="sxs-lookup"><span data-stu-id="e476d-416">If any of the certificates must be changed, or if the configuration was incorrect, follow these steps:</span></span>
-
-    1. <span data-ttu-id="e476d-417">**ConfigTemplate.xml** ファイルを編集して、正しい値が出るようにします。</span><span class="sxs-lookup"><span data-stu-id="e476d-417">Edit the **ConfigTemplate.xml** file so that it has the correct values.</span></span>
-    2. <span data-ttu-id="e476d-418">すべてのセットアップ スクリプトと **Test-D365FOConfiguration** スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-418">Run all the setup scripts and the **Test-D365FOConfiguration** script.</span></span>
-
-8. <span data-ttu-id="e476d-419">LCS で環境を再構成します。</span><span class="sxs-lookup"><span data-stu-id="e476d-419">In LCS, reconfigure the environment.</span></span>
-
-## <a name="management-reporter"></a><span data-ttu-id="e476d-420">Management Reporter</span><span class="sxs-lookup"><span data-stu-id="e476d-420">Management Reporter</span></span>
-
-<span data-ttu-id="e476d-421">追加のログは、プロバイダーを登録することで実行できます。</span><span class="sxs-lookup"><span data-stu-id="e476d-421">Additional logging can be done by registering providers.</span></span> <span data-ttu-id="e476d-422">[ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) を **プライマリ**オーケストレータ マシン にダウンロードし、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-422">Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands.</span></span> <span data-ttu-id="e476d-423">プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。</span><span class="sxs-lookup"><span data-stu-id="e476d-423">To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="e476d-424">イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-424">If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files.</span></span> <span data-ttu-id="e476d-425">最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-425">To get the latest manifest and .dll files, go to the WP folder in the agent file share.</span></span> <span data-ttu-id="e476d-426">この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。</span><span class="sxs-lookup"><span data-stu-id="e476d-426">This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:</span></span>
-> 
-> - [<span data-ttu-id="e476d-427">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-427">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#setupfile)
-> - [<span data-ttu-id="e476d-428">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-428">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#setupfile)
-> 
-> <span data-ttu-id="e476d-429">**例:** \[*エージェント共有*\]\\wp\\\[*配置名*\]\\StandaloneSetup-...\\アプリ\\ ETWManifests</span><span class="sxs-lookup"><span data-stu-id="e476d-429">**Example:** \[*Agent Share*\]\\wp\\\[*Deployment name*\]\\StandaloneSetup-...\\Apps\\ETWManifests</span></span>
-
-```powershell
-.\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"}
-```
-
-<span data-ttu-id="e476d-430">プロバイダーの登録を解除する必要がある場合は、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-430">If you must unregister providers, use the following command.</span></span>
-
-```powershell
-.\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister
-```
-
-<span data-ttu-id="e476d-431">プロバイダーが登録されると、新しい配置についての追加詳細は**アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** でイベント ビューアーにログインされます。</span><span class="sxs-lookup"><span data-stu-id="e476d-431">After providers are registered, additional details about the new deployment are logged in Event Viewer, at **Applications and Services Logs** \> **Microsoft** \> **Dynamics**.</span></span> <span data-ttu-id="e476d-432">次のフォルダが表示されます:</span><span class="sxs-lookup"><span data-stu-id="e476d-432">The following folders will be shown:</span></span>
-
-- <span data-ttu-id="e476d-433">MR-Logger</span><span class="sxs-lookup"><span data-stu-id="e476d-433">MR-Logger</span></span>
-- <span data-ttu-id="e476d-434">MR-Sql</span><span class="sxs-lookup"><span data-stu-id="e476d-434">MR-Sql</span></span>
-
-<span data-ttu-id="e476d-435">新しいフォルダーを表示するには、イベント ビューアーを終了して、再表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-435">To see the new folders, you must close and reopen Event Viewer.</span></span> <span data-ttu-id="e476d-436">追加の詳細を表示するには、もう一度環境を配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-436">To see additional details, you must deploy an environment again.</span></span>
-
-### <a name="an-error-occurs-while-addaxdatabasechangetracking-is-running"></a><span data-ttu-id="e476d-437">AddAXDatabaseChangeTracking の実行中に発生するエラー</span><span class="sxs-lookup"><span data-stu-id="e476d-437">An error occurs while AddAXDatabaseChangeTracking is running</span></span>
-
-<span data-ttu-id="e476d-438">Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet) で AddAXDatabaseChangeTracking を実行しているときにエラーが発生した場合は、フル パスが正しいことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-438">If you receive an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct.</span></span> <span data-ttu-id="e476d-439">フル パスの例は **ax.d365ffo.onprem.contoso.com** です。</span><span class="sxs-lookup"><span data-stu-id="e476d-439">An example of a full path is **ax.d365ffo.onprem.contoso.com**.</span></span>
-
-<span data-ttu-id="e476d-440">スター証明書での問題が原因でエラーが発生する可能性もあります。</span><span class="sxs-lookup"><span data-stu-id="e476d-440">The error might also occur because of an issue with the star certificate.</span></span> <span data-ttu-id="e476d-441">たとえば、リモート証明書 CN=\*.d365ffo.onprem.contoso.com には、無効な、またはホストの ax.d365ffo.onprem.contoso.com と一致しない名前があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-441">For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.</span></span>
-
-### <a name="run-the-initialize-database-script-and-validate-that-databases-have-correct-users"></a><span data-ttu-id="e476d-442">データベース初期化スクリプトを実行し、データベースのユーザーが適切であることを検証</span><span class="sxs-lookup"><span data-stu-id="e476d-442">Run the initialize database script, and validate that databases have correct users</span></span>
-
-<span data-ttu-id="e476d-443">AddAXDatabaseChangeTracking イベントのみを受け取った場合は、`https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService` にアクセスし、Finance and Operations の MetadataService サービスにアクセスしてみてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-443">If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service for Finance and Operations by going to `https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService`.</span></span>
-
-<span data-ttu-id="e476d-444">次に、wif.config ファイルでサービスの証明書を確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-444">Next, check the certificates of the service in the wif.config file.</span></span> <span data-ttu-id="e476d-445">ファイルを検索するには、AOS マシンにサインインし、タスク マネージャーで **AxService.exe** を探してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-445">To find the file, sign in to one of the AOS machines, and then, in Task Manager, find **AxService.exe**.</span></span> <span data-ttu-id="e476d-446">TimeZonePatcherを右クリックし、 **ファイルの場所を開く** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-446">Right-click, and select **Open file location**.</span></span> <span data-ttu-id="e476d-447">wif.config ファイルでは、3 つの拇印を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-447">In the wif.config file, you should see three thumbprints.</span></span> <span data-ttu-id="e476d-448">これらの拇印に関する次の要件に注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-448">Note the following requirements for these thumbprints:</span></span>
-
-- <span data-ttu-id="e476d-449">これらは異なる必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-449">They must be different.</span></span>
-- <span data-ttu-id="e476d-450">これらは、この順序である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-450">They must be in this order:</span></span>
-
-    1. <span data-ttu-id="e476d-451">Financialreportingの拇印</span><span class="sxs-lookup"><span data-stu-id="e476d-451">Financialreporting thumbprint</span></span>
-    2. <span data-ttu-id="e476d-452">ReportingServiceの拇印</span><span class="sxs-lookup"><span data-stu-id="e476d-452">ReportingService thumbprint</span></span>
-    3. <span data-ttu-id="e476d-453">SessionAuthenticationの拇印</span><span class="sxs-lookup"><span data-stu-id="e476d-453">SessionAuthentication thumbprint</span></span>
-
-<span data-ttu-id="e476d-454">拇印がこれらの要件の両方を満たしていない場合は、正しい拇印を使用して LCS から再配置をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-454">If the thumbprints don't meet both these requirements, you must redeploy from LCS by using correct thumbprints.</span></span>
-
-### <a name="the-remote-name-cant-be-resolved"></a><span data-ttu-id="e476d-455">リモート名を解決できません</span><span class="sxs-lookup"><span data-stu-id="e476d-455">The remote name can't be resolved</span></span>
-
-<span data-ttu-id="e476d-456">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-456">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-457">リモート名を解決できませんでした。'x.d365fo.onprem.contoso.com' / メッセージを承認できなかった `https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService` をリッスンしていたエンドポイントはありませんでした。</span><span class="sxs-lookup"><span data-stu-id="e476d-457">The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at `https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService` that could accept the message.</span></span>
-
-<span data-ttu-id="e476d-458">**理由:** この問題は、通常正しくないアドレスまたは SOAP アクションによって引き起こされます。</span><span class="sxs-lookup"><span data-stu-id="e476d-458">**Reason:** This issue is often caused by an incorrect address or SOAP action.</span></span>
-
-<span data-ttu-id="e476d-459">**手順:** URL を手動で開き、アドレスにアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-459">**Steps:** Verify that the address can be reached, by manually opening the URL.</span></span> <span data-ttu-id="e476d-460">詳細については、イベント ビューアーで [InnerException] のテキストが存在するかどうか確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-460">For more details, see the "InnerException" text in the Event Viewer, if it's present.</span></span>
-
-### <a name="error-on-importdefaultreports"></a><span data-ttu-id="e476d-461">ImportDefaultReports のエラー</span><span class="sxs-lookup"><span data-stu-id="e476d-461">Error on ImportDefaultReports</span></span>
-
-<span data-ttu-id="e476d-462">配置中に Management Reporter レポートがチェックアウトされると、配置処理は失敗します。</span><span class="sxs-lookup"><span data-stu-id="e476d-462">If Management Reporter reports are checked out during deployment, the deployment will fail.</span></span> <span data-ttu-id="e476d-463">レポートがチェック アウトされているかどうかを表示するには、FinancialReporting データベースで次の**選択**明細書を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-463">To see whether reports are checked out, run the following **select** statements on the FinancialReporting database.</span></span>
-
-```
-select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null
-select checkedoutto, * from Reporting.ControlRowMaster where checkedoutto is not null
-select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is not null
-```
-
-<span data-ttu-id="e476d-464">どのユーザーがオブジェクトをチェック アウトするかを知るには、次の**選択**ステートメントを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-464">To learn which user has objects checked out, you can run the following **select** statement.</span></span>
-
-```
-select * from Reporting.SecurityUser where UserID = ''
-```
-
-<span data-ttu-id="e476d-465">この問題を手動で解決するには、以下のテーブルを次のコマンドを使用して更新し、 **checkedoutto** を **null** に設定します。</span><span class="sxs-lookup"><span data-stu-id="e476d-465">To resolve this issue manually, update the following tables, and set **checkedoutto** to **null** by using the following commands.</span></span>
-
-```
-update Reporting.ControlReport set checkedoutto = null where checkedoutto is not null
-update Reporting.ControlRowMaster set checkedoutto = null where checkedoutto is not null
-update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto is not null
-```
-
-## <a name="axdbadmin-cant-connect-to-the-database-server-sql-lscontosocom"></a><span data-ttu-id="e476d-466">axdbadmin は SQL-LS.contoso.com データベース サーバーに接続することができません。</span><span class="sxs-lookup"><span data-stu-id="e476d-466">axdbadmin can't connect to the database server SQL-LS.contoso.com</span></span>
-
-<span data-ttu-id="e476d-467">**理由:** AXDB データベースに接続するためのアクセス許可がありません。</span><span class="sxs-lookup"><span data-stu-id="e476d-467">**Reason:** The user doesn't have permission to connect to the AXDB database.</span></span>
-
-<span data-ttu-id="e476d-468">**ステップ:**</span><span class="sxs-lookup"><span data-stu-id="e476d-468">**Steps:**</span></span>
-
-1. <span data-ttu-id="e476d-469">既に存在する場合は、データベースから axdbadmin ユーザーを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-469">Remove the axdbadmin user from the database, if it already exists.</span></span>
-2. <span data-ttu-id="e476d-470">**ConfigTemplate.xml** ファイルで、AXDB データベースに追加する必要があるユーザー名を指定してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-470">In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database.</span></span>
-
-    ```xml
-    <Security>
-        <User refName="axdbadmin" type="SqlUser" userName="axdbadmin" />
-    </Security>
-    ```
-
-3. <span data-ttu-id="e476d-471">axdbadmin ユーザーを追加するには、もう一度初期化データベース スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-471">Run the initialize database script again to add the axdbadmin user.</span></span>
-
-## <a name="unable-to-resolve-the-xpath-value"></a><span data-ttu-id="e476d-472">xPath 値を解決することができません。</span><span class="sxs-lookup"><span data-stu-id="e476d-472">Unable to resolve the xPath value</span></span>
-
-<span data-ttu-id="e476d-473">予想される動作では、次の **xPath** 値を解決することはできません。</span><span class="sxs-lookup"><span data-stu-id="e476d-473">In the expected behavior, the following **xPath** value can't be resolved:</span></span> 
-
-<span data-ttu-id="e476d-474">\[TopologyInstance/CustomizationGroup\[@name='ServiceConfiguration'\]/Group\[@name='AOSServicePrincipalUser'\]/Customizations/Customization\[@fieldName='PrincipalUserAccountPassword'\]/@selectedValue</span><span class="sxs-lookup"><span data-stu-id="e476d-474">\[TopologyInstance/CustomizationGroup\[@name='ServiceConfiguration'\]/Group\[@name='AOSServicePrincipalUser'\]/Customizations/Customization\[@fieldName='PrincipalUserAccountPassword'\]/@selectedValue</span></span>
-
-<span data-ttu-id="e476d-475">したがって、 **xPath** の値が解決できないことは問題ではありません。</span><span class="sxs-lookup"><span data-stu-id="e476d-475">Therefore, the fact that the **xPath** value can't be resolved isn't an issue.</span></span> <span data-ttu-id="e476d-476">**xPath** 値は、AOS ランタイム ユーザーの情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="e476d-476">The **xPath** value looks for AOS runtime user information.</span></span> <span data-ttu-id="e476d-477">ただし、セキュリティが統合されているため、その情報は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="e476d-477">However, because of integrated security, that information isn't required.</span></span> <span data-ttu-id="e476d-478">別の理由でエラーを調査する必要がある場合は、 **xPath** の値を解決できないと通知されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-478">The fact that the **xPath** value can't be resolved is communicated in case the failure must be investigated for another reason.</span></span>
-
-## <a name="ad-fs"></a><span data-ttu-id="e476d-479">AD FS</span><span class="sxs-lookup"><span data-stu-id="e476d-479">AD FS</span></span>
-
-### <a name="the-sign-in-page-doesnt-redirect-you"></a><span data-ttu-id="e476d-480">サインイン ページにリダイレクトされません。</span><span class="sxs-lookup"><span data-stu-id="e476d-480">The sign-in page doesn't redirect you</span></span>
-
-<span data-ttu-id="e476d-481">サインイン ページにはリダイレクトされない可能性がありますが、資格情報の確認を続行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-481">The sign-in page might not redirect you but continues to prompt for credentials.</span></span> <span data-ttu-id="e476d-482">また、リダイレクトの可能性がありますが、次のメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-482">Alternatively, you might be redirected but receive the following message:</span></span>
-
-> <span data-ttu-id="e476d-483">エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-483">An error occurred.</span></span> <span data-ttu-id="e476d-484">詳細については、システム管理者に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-484">Contact your administrator for more information.</span></span>
-
-<span data-ttu-id="e476d-485">そのような場合、問題を解決するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-485">In these cases, you can follow these steps to resolve the issue:</span></span>
-
-- <span data-ttu-id="e476d-486">AD FS リンクを信頼されているサイトの一覧に追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-486">Add the AD FS link to the list of trusted sites.</span></span>
-- <span data-ttu-id="e476d-487">Dynamics 365 リンクを信頼されているサイトの一覧に追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-487">Add the Dynamics 365 link to the list of trusted sites.</span></span>
-- <span data-ttu-id="e476d-488">末尾にスラッシュ「/」を追加し、動作が変更されるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-488">Add a trailing slash (/), and see whether the behavior changes.</span></span>
-
-<span data-ttu-id="e476d-489">**ADFS** \> **アプリケーション グループ**の順に移動して、AD FS マネージャーを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-489">Verify the AD FS Manager by going to **ADFS** \> **Application groups**.</span></span> <span data-ttu-id="e476d-490">**Microsoft Dynamics 365 for Operations オンプレミス**をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="e476d-490">Double-click **Microsoft Dynamics 365 for Operations on-premises**.</span></span> <span data-ttu-id="e476d-491">その後、**ネイティブ アプリケーション**で、**Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション**をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="e476d-491">Then, under **Native application**, double-click **Microsoft Dynamics 365 for Operations on-premises - Native application**.</span></span>
-
-<span data-ttu-id="e476d-492">**リダイレクト URI** 値に注意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-492">Note the **Redirect URI** value.</span></span> <span data-ttu-id="e476d-493">Finance and Operations の DNS 前方参照ゾーンに一致させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-493">It should match the DNS forward lookup zone for Finance and Operations.</span></span>
-
-### <a name="error-could-not-establish-trust-relationship-for-the-ssltls-secure-channel"></a><span data-ttu-id="e476d-494">エラー、「SSL/TLS セキュリティ チャネルの信頼関係を確立できませんでした」</span><span class="sxs-lookup"><span data-stu-id="e476d-494">Error: "Could not establish trust relationship for the SSL/TLS secure channel"</span></span>
-
-<span data-ttu-id="e476d-495">「SSL/TLS のセキュリティで保護されているチャネルに対する信頼関係を確立できませんでした」というエラーが表示された場合は、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="e476d-495">If you receive an error that states, "Could not establish trust relationship for the SSL/TLS secure channel," follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-496">Service Fabric で、**クラスタ** \> **アプリケーション** \> **AXSFType** \> **fabric:/AXSF** の順に移動し、**詳細**タブでスクロールし、**Aad\_AADMetadataLocationFormat** および **Aad\_FederationMetadataLocation** の URL に注意します。</span><span class="sxs-lookup"><span data-stu-id="e476d-496">In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, scroll down and note the URLs for **Aad\_AADMetadataLocationFormat** and **Aad\_FederationMetadataLocation**.</span></span>
-2. <span data-ttu-id="e476d-497">AOS からそれらの URL を参照します。</span><span class="sxs-lookup"><span data-stu-id="e476d-497">Browse to those URLs from AOS.</span></span>
-3. <span data-ttu-id="e476d-498">詳細については、AOS マシンの、イベント ビューアーで、**アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-498">On the AOS machine, in Event Viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.</span></span>
-4. <span data-ttu-id="e476d-499">AD FS 証明書が信頼されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-499">Verify that the AD FS certificate is trusted:</span></span>
-
-    1. <span data-ttu-id="e476d-500">AD FS 証明書を確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-500">Verify the AD FS certificate.</span></span> <span data-ttu-id="e476d-501">AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理**に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-501">On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management**.</span></span>
-    2. <span data-ttu-id="e476d-502">**AD FS** \> **サービス** \> **証明書** を展開し、証明書を記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="e476d-502">Expand **AD FS** \> **Service** \> **Certificates**, and make a note of the certificates.</span></span> <span data-ttu-id="e476d-503">たとえば、1 つの証明書は、dc1.contoso.com の場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-503">For example, one certificate might be dc1.contoso.com.</span></span>
-    3. <span data-ttu-id="e476d-504">AOS マシンの、Microsoft 管理コンソール証明書スナップインで、**証明書 (ローカル コンピューター)** \> **信頼済ルート証明機関** \> **証明書**の順に移動し、AD FS 証明書が一覧表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-504">On the AOS machine, in the Microsoft Management Console Certificates snap-in, go to **Certificates (Local Computer)** \> **Trusted Root Certification Authorities** \> **Certificates**, and verify that the AD FS certificate is listed.</span></span>
-
-<span data-ttu-id="e476d-505">サイトが安全でないことを示すメッセージが表示された場合は、AD FS の Secure Sockets Layer (SSL) 証明書が信頼済ルート証明機関ストアに追加されていません。</span><span class="sxs-lookup"><span data-stu-id="e476d-505">If you receive a message that states that the site isn't secure, you haven't added your Secure Sockets Layer (SSL) certificate for AD FS to the Trusted Root Certification Authorities store.</span></span>
-
-### <a name="you-cant-connect-to-the-remote-server-in-some-locations"></a><span data-ttu-id="e476d-506">一部の地域ではリモート サーバーに接続できません</span><span class="sxs-lookup"><span data-stu-id="e476d-506">You can't connect to the remote server in some locations</span></span>
-
-<span data-ttu-id="e476d-507">次の場所でリモート サーバーに接続できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-507">You might not be able to connect to the remote server at the following places:</span></span>
-
-- <span data-ttu-id="e476d-508">System.Net.HttpWebRequest.GetResponse()</span><span class="sxs-lookup"><span data-stu-id="e476d-508">System.Net.HttpWebRequest.GetResponse()</span></span>
-- <span data-ttu-id="e476d-509">System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)</span><span class="sxs-lookup"><span data-stu-id="e476d-509">System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)</span></span>
-- <span data-ttu-id="e476d-510">System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)</span><span class="sxs-lookup"><span data-stu-id="e476d-510">System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)</span></span>
-
-<span data-ttu-id="e476d-511">この場合は、エラーの受信元である C: \\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\\AXSFType\_App35\\ ログ フォルダーに移動し、出力ファイルを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-511">In this case, go to the C:\\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\\AXSFType\_App35\\log folder where you receive the error, and note the out file.</span></span> <span data-ttu-id="e476d-512">out ファイルには、次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e476d-512">The out file contains the following information:</span></span>
-
-> <span data-ttu-id="e476d-513">System.Net.WebException: リモート サーバーに接続できません ---\></span><span class="sxs-lookup"><span data-stu-id="e476d-513">System.Net.WebException: Unable to connect to the remote server ---\></span></span>
->
-> <span data-ttu-id="e476d-514">System.Net.Sockets.SocketException: 接続した当事者が一定時間適切に応答しなかったため接続試行に失敗したか、接続したホストが x.x.x.x:443 に応答できなかったため確立された接続に失敗しました</span><span class="sxs-lookup"><span data-stu-id="e476d-514">System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443</span></span>
-
-<span data-ttu-id="e476d-515">Psping を使用してリモート サーバーに対する接続を試みることもできます。</span><span class="sxs-lookup"><span data-stu-id="e476d-515">You can also use Psping to try to reach the remote server.</span></span> <span data-ttu-id="e476d-516">Psping の詳細については、[Psping](/sysinternals/downloads/psping) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-516">For information about Psping, see [Psping](/sysinternals/downloads/psping).</span></span>
-
-### <a name="redirect-sign-in-questions-and-issues"></a><span data-ttu-id="e476d-517">サインイン時の質問および問題をリダイレクト</span><span class="sxs-lookup"><span data-stu-id="e476d-517">Redirect sign-in questions and issues</span></span>
-
-<span data-ttu-id="e476d-518">サインイン時に問題が発生した場合は、Service Fabric Explorer で、**Provisioning\_AdminPrincipalName** および **Provisioning\_AdminIdentityProvider** の値が有効であることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-518">If you're having issues when you sign-in, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid.</span></span> <span data-ttu-id="e476d-519">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-519">Here is an example:</span></span>
-
-- <span data-ttu-id="e476d-520">**プロビジョニング \_AdminPrincipalName**: `AXServiceUser@contoso.com`</span><span class="sxs-lookup"><span data-stu-id="e476d-520">**Provisioning\_AdminPrincipalName**: `AXServiceUser@contoso.com`</span></span>
-- <span data-ttu-id="e476d-521">**プロビジョニング\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`</span><span class="sxs-lookup"><span data-stu-id="e476d-521">**Provisioning\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`</span></span>
-
-<span data-ttu-id="e476d-522">値が有効でない場合は、処理を続行できず、LCS から再配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-522">If the values aren't valid, you won't be able to proceed, and you must redeploy from LCS.</span></span>
-
-<span data-ttu-id="e476d-523">Reset-DatabaseUsers.ps1 を使用した場合、変更内容を有効にする前に、Dynamics サービスを再起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-523">If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service before your changes take effect.</span></span> <span data-ttu-id="e476d-524">引き続きサインインの問題がある場合は、USERINFO テーブルで、**NETWORKDOMAIN** および **NETWORKALIAS** の値を記録してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-524">If you still have sign-in issues, in the USERINFO table, note the **NETWORKDOMAIN** and **NETWORKALIAS** values.</span></span> <span data-ttu-id="e476d-525">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-525">Here is an example:</span></span>
-
-- <span data-ttu-id="e476d-526">**NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`</span><span class="sxs-lookup"><span data-stu-id="e476d-526">**NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`</span></span>
-- <span data-ttu-id="e476d-527">**NETWORKALIAS:** `AXServiceUser@contoso.com`</span><span class="sxs-lookup"><span data-stu-id="e476d-527">**NETWORKALIAS:** `AXServiceUser@contoso.com`</span></span>
-- <span data-ttu-id="e476d-528">**IDENTITYPROVIDER:** これは **NETWORKDOMAIN** の内容と一致している必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-528">**IDENTITYPROVIDER:** This should match the **NETWORKDOMAIN** value.</span></span>
-
-<span data-ttu-id="e476d-529">AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理** \> **サービス**に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-529">On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**.</span></span> <span data-ttu-id="e476d-530">**フェデレーション サービス プロパティの保守と編集** を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="e476d-530">Right-click **Service and Edit Federation Service Properties**.</span></span> <span data-ttu-id="e476d-531">**フェデレーション サービスの識別子** は **USERINFO.NETWORKDOMAIN** の値と一致している必要があり、URL に **https** が入っている必要があります (たとえば `https://DC1.contoso.com/adfs`)。</span><span class="sxs-lookup"><span data-stu-id="e476d-531">The **Federation Service identifier** value should match the **USERINFO.NETWORKDOMAIN** value, and it should have **https** in the URL (for example, `https://DC1.contoso.com/adfs`).</span></span>
-
-<span data-ttu-id="e476d-532">AD FS マシンの、イベント ビューアーで、**アプリケーションとサービス ログ** \> **AD FS** \> **管理者**に移動してエラーを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-532">On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.</span></span>
-
-### <a name="fiddler"></a><span data-ttu-id="e476d-533">Fiddler</span><span class="sxs-lookup"><span data-stu-id="e476d-533">Fiddler</span></span>
-
-<span data-ttu-id="e476d-534">追加のデバッグには Fiddler を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-534">Fiddler can be used for additional debugging.</span></span> <span data-ttu-id="e476d-535">Fiddler について詳しい情報は、 [AD FS 2.0: Fiddler Web デバッガーを使って WS フェデレーション パッシブ サインインを分析する方法](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) と [別の AD FS クレーム プロバイダーからの AD FS トークンのクラッキング](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="e476d-535">For in-depth information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/).</span></span>
-
-<span data-ttu-id="e476d-536">以下のセクションでは、 Microsoft Dynamics に返される要求に対する重点的なデバッグの手順を示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-536">The following sections provide focused debugging steps for claims that are returned to Microsoft Dynamics.</span></span>
-
-#### <a name="repocapture"></a><span data-ttu-id="e476d-537">リポジトリ/キャプチャ</span><span class="sxs-lookup"><span data-stu-id="e476d-537">Repo/capture</span></span>
-
-1. <span data-ttu-id="e476d-538">Fiddler を起動し、 **ツール \> オプション \> HTTPS** から **HTTPS トラフィックの復号化** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-538">Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.</span></span>
-2. <span data-ttu-id="e476d-539">トラフィックのキャプチャを開始します (ショートカット キーは F12 キーです)。</span><span class="sxs-lookup"><span data-stu-id="e476d-539">Start to capture traffic (the shortcut key is F12).</span></span> <span data-ttu-id="e476d-540">ツールの左下を確認すると、該当のトラフィックがキャプチャされていることを確認できます。</span><span class="sxs-lookup"><span data-stu-id="e476d-540">You can verify that that traffic is being captured by looking at the lower left of the tool.</span></span>
-3. <span data-ttu-id="e476d-541">Internet Explorer の InPrivate モード、またはChrome の Incognito モードを使用して開きます。</span><span class="sxs-lookup"><span data-stu-id="e476d-541">Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.</span></span>
-4. <span data-ttu-id="e476d-542">Finance and Operations を開きます (例 `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).</span><span class="sxs-lookup"><span data-stu-id="e476d-542">Open Finance and Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).</span></span>
-5. <span data-ttu-id="e476d-543">USERINFO.NETWORKALIAS のアカウントとパスワードを使用してログオンします。</span><span class="sxs-lookup"><span data-stu-id="e476d-543">Sign in by using the USERINFO.NETWORKALIAS account and password.</span></span>
-6. <span data-ttu-id="e476d-544">ログイン後、Fiddler によるトラフィックのキャプチャを停止してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-544">After you're signed in, stop Fiddler from capturing traffic.</span></span>
-
-#### <a name="analyze"></a><span data-ttu-id="e476d-545">分析</span><span class="sxs-lookup"><span data-stu-id="e476d-545">Analyze</span></span>
-
-<span data-ttu-id="e476d-546">Fiddler の右側のウィンドウには、リクエストとレスポンスが上段と下段にに分割されていることを留意してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-546">In the right pane of Fiddler, notice that a horizontal divider separates the request from the response.</span></span> <span data-ttu-id="e476d-547">リクエストとレスポンスとでそれぞれ別個のフレームを取得するようなネットワーク トレースとは異なり、Fiddler はリクエストとレスポンスの両方を1 つのフレームで提供します。</span><span class="sxs-lookup"><span data-stu-id="e476d-547">Unlike a network trace, where you typically get one frame for a request and another frame for a response, Fiddler provides one frame that contains both the request and the response.</span></span>
-
-1. <span data-ttu-id="e476d-548">Fiddlerを起動し、画面右上隅の **Inspectors** \> **Raw** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-548">In Fiddler, in the upper-right corner, select **Inspectors** \> **Raw**.</span></span>
-2. <span data-ttu-id="e476d-549">右下隅の **Cookie** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-549">In the lower-right corner, select **Cookies**.</span></span>
-3. <span data-ttu-id="e476d-550">**MSISAuth** を検索します。</span><span class="sxs-lookup"><span data-stu-id="e476d-550">Do a search for **MSISAuth**.</span></span>
-4. <span data-ttu-id="e476d-551">AD FS をホストするには、結果が **200** 件ある行を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-551">Select the row that has a result of **200** for the AD FS host.</span></span>
-5. <span data-ttu-id="e476d-552">上記で選択した上の行のなかで、 **302** 件の結果がある行を探します。</span><span class="sxs-lookup"><span data-stu-id="e476d-552">Look above the row that you just selected to find a row that has a result of **302**.</span></span> <span data-ttu-id="e476d-553">確認した行を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-553">Select the row.</span></span>
-
-    <span data-ttu-id="e476d-554">AD FS URL、ホスト、ユーザー名、およびパスワードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-554">You should see the AD FS URL, host, user name, and password.</span></span> 
-
-    > [!IMPORTANT]
-    > <span data-ttu-id="e476d-555">プライバシー保護のため、状況に応じて個人を特定できる情報を削除してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-555">For privacy, you might have to scrub personally identifiable information.</span></span>
-
-    ![個人情報](media/Scrub-PII.png)
-
-6. <span data-ttu-id="e476d-557">次は、結果が **302** 件ある行を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-557">Select the next row that has a result of **302**.</span></span> <span data-ttu-id="e476d-558">URL が、 **.../namespaces/AXSF/** となっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-558">The URL should be **.../namespaces/AXSF/**.</span></span>
-7. <span data-ttu-id="e476d-559">上記で選択した行に示されているコード行を探してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-559">Find the code line that is shown on that row.</span></span> 
-
-    ![コード行](media/Note-the-code.png)
-
-8. <span data-ttu-id="e476d-561">等号 (=) の後に表示されているコード値をコピーします。</span><span class="sxs-lookup"><span data-stu-id="e476d-561">Copy the value of code line after the equal sign (=).</span></span>
-9. <span data-ttu-id="e476d-562"><https://www.base64decode.org/> に移動し、上記でコピーしたコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="e476d-562">Go to <https://www.base64decode.org/>, and paste the code that you just copied.</span></span>
-9. <span data-ttu-id="e476d-563">**Source charset** フィールドで、 **ASCII** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-563">In the **Source charset** field, select **ASCII**.</span></span>
-10. <span data-ttu-id="e476d-564">**Decode** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-564">Select **Decode**.</span></span>
-11. <span data-ttu-id="e476d-565">表示された結果をコピーし、以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-565">Copy the results, and follow these steps:</span></span>
-
-    - <span data-ttu-id="e476d-566">**upn** の値が、ユーザー名と一致していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-566">Make sure that the **upn** value matches the user name.</span></span>
-    - <span data-ttu-id="e476d-567">**unique_name** の値がテストで使用している Active Directoryユーザー名であることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-567">Make sure that the **unique_name** value is the Active Directory user that is being tested.</span></span>
-    - <span data-ttu-id="e476d-568">**Active Directory ユーザーとコンピューター** \> **ドメイン** \> **ユーザー** に移動し、テスト中のユーザーが表示されることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-568">Go to **Active Directory Users and Computers** \> **domain** \> **Users**, and make sure that this user is being tested.</span></span>
-
-## <a name="sign-in-issues"></a><span data-ttu-id="e476d-569">サインインの問題</span><span class="sxs-lookup"><span data-stu-id="e476d-569">Sign-in issues</span></span>
-
-<span data-ttu-id="e476d-570">サインインに関する問題が発生した場合には、Service Fabric Explorer で、**Provisioning\_AdminPrincipalName** および **Provisioning\_AdminIdentityProvider** の値が有効であることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-570">If you or other users experience sign-in issues, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid.</span></span> <span data-ttu-id="e476d-571">値が有効な場合は、プライマリ SQL Server マシンで次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-571">If the values are valid, run the following command on the primary SQL Server machine.</span></span>
-
-```powershell
-.\Reset-DatabaseUsers.ps1
-```
-
-<span data-ttu-id="e476d-572">タスク マネージャーの各 AOS マシンで、**AXService.exe** を選択し、**タスクの終了**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-572">On each AOS machine, in Task Manager, select **AXService.exe**, and then select **End task**.</span></span>
-
-<span data-ttu-id="e476d-573">ユーザーがリセットされたことを確認するには、AXDB SQL databaseで次の **select** 文を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-573">To verify that a user has been reset, run the following **select** query in the AXDB SQL database.</span></span>
-
-```sql
-select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'admin'
-```
-
-> [!NOTE]
-> <span data-ttu-id="e476d-574">Azure Active Directory (Azure AD) 環境 (オンライン環境) では、SID はネットワーク エイリアスおよびネットワーク ドメインのハッシュの役割を果たします。</span><span class="sxs-lookup"><span data-stu-id="e476d-574">In an Azure Active Directory (Azure AD) environment (that is, an online environment), the SID is a hash of a network alias and a network domain.</span></span> <span data-ttu-id="e476d-575">AD DS 環境 (オンプレミス環境) では、SID はネットワーク エイリアスのハッシュとして機能し、プロバイダーを識別します。</span><span class="sxs-lookup"><span data-stu-id="e476d-575">In an AD DS environment (that is, an on-premises environment), the SID is a hash of a network alias and an identify provider.</span></span>
-
-<span data-ttu-id="e476d-576">場合によっては、引き続きサインインができず、次のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-576">In some cases, you still might not be able to sign in, and you might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-577">現在の資格情報でログインする権限がありません。</span><span class="sxs-lookup"><span data-stu-id="e476d-577">You are not authorized to login with your current credentials.</span></span> <span data-ttu-id="e476d-578">AD FS マシンで、サーバー マネージャー > ツール > AD FS の管理 に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-578">You will be redirected to the login page in a few seconds.</span></span>
-
-<span data-ttu-id="e476d-579">このエラーが表示された場合は、次の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e476d-579">If this error occurs, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-580">AD FS マシンで、 **Server Manager** \> **Tools** \> **AD FS Management** に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-580">On the AD FS machine, go to **Server Manager** \> **Tools** \> **AD FS Management**.</span></span>
-2. <span data-ttu-id="e476d-581">**AD FS** を右クリックし、**フェデレーション サービス プロパティの編集** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e476d-581">Right-click **AD FS**, and then select **Edit Federation Service Properties**.</span></span>
-3. <span data-ttu-id="e476d-582">**フェデレーション サービス 識別子** の値が、 **Userinfo.NetworkDomain** および **UserInfo.IdentityProvider** の値と一致していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-582">Make sure that the **Federation Service Identifier** value matches the **Userinfo.NetworkDomain** and **UserInfo.IdentityProvider** values.</span></span>
-4. <span data-ttu-id="e476d-583">AD FS マシンで、Windows PowerShell を開き、 **Get-AdfsProperties** を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-583">On the AD FS machine, open Windows PowerShell, and run **Get-AdfsProperties**.</span></span>
-5. <span data-ttu-id="e476d-584">**IdTokenIssuer** の値が、手順3の **フェデレーション サービス 識別子** の値、および **Provisioning_AdminIdentityProvider** の値と一致していることを確認してください。 (これは **fabric:/AXSF Details** タブに表示されています。 **Service Fabric Explorer** \> **Cluster** \> **Applications** \> **AXSFType**)</span><span class="sxs-lookup"><span data-stu-id="e476d-584">Make sure that the **IdTokenIssuer** value matches the **Federation Service Identifier** value from step 3, and also the **Provisioning_AdminIdentityProvider** value on the **fabric:/AXSF Details** tab at **Service Fabric Explorer** \> **Cluster** \> **Applications** \> **AXSFType**.</span></span>
-3. <span data-ttu-id="e476d-585">Service Fabric Explorer で、 **Provisioning\_AdminPrincipalName** 値と **Provisioning\_AdminIdentityProvider** の値が有効であることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-585">In Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid.</span></span>
-
-<span data-ttu-id="e476d-586">上記の手順で問題が解決しない場合は、このトピックの 「 [AD FS](troubleshoot-on-prem.md#ad-fs) 」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-586">If the preceding steps don't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.</span></span>
-
-## <a name="systemdatasqlclientsqlexception-0x80131904-and-systemcomponentmodelwin32exception-0x80004005"></a><span data-ttu-id="e476d-587">System.Data.SqlClient.SqlException (0x80131904) および System.ComponentModel.Win32Exception (0x80004005)</span><span class="sxs-lookup"><span data-stu-id="e476d-587">System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)</span></span>
-
-<span data-ttu-id="e476d-588">次のエラーのいずれかが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-588">You might receive one of the following errors:</span></span>
-
-> <span data-ttu-id="e476d-589">System.Data.SqlClient.SqlException (0x80131904): 接続がサーバーで正常に確立されましたが、サインイン プロセス時にエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-589">System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the sign-in process.</span></span> <span data-ttu-id="e476d-590">(プロバイダー: SSL プロバイダー、エラー: 0 - 証明書チェーンは、信頼されていない機関によって発行されました。)</span><span class="sxs-lookup"><span data-stu-id="e476d-590">(provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)</span></span>
-
-> <span data-ttu-id="e476d-591">System.ComponentModel.Win32Exception (0x80004005): 証明書チェーンは、信頼されていない機関によって発行されました</span><span class="sxs-lookup"><span data-stu-id="e476d-591">System.ComponentModel.Win32Exception (0x80004005): The certificate chain was issued by an authority that is not trusted</span></span>
-
-<span data-ttu-id="e476d-592">この場合、証明書がインストールされていないか、それらがしかるべきユーザーに結びついていません。</span><span class="sxs-lookup"><span data-stu-id="e476d-592">In this case, either the certificates haven't been installed, or they haven't given access to the correct users.</span></span> <span data-ttu-id="e476d-593">このエラーを解決するには、公開キー SQL サーバー証明書をすべての Service Fabric ノードに追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-593">To resolve this error, add the public key SQL Server certificate to all the Service Fabric nodes.</span></span>
-
-## <a name="keyset-doesnt-exist"></a><span data-ttu-id="e476d-594">Keyset が存在しません</span><span class="sxs-lookup"><span data-stu-id="e476d-594">Keyset doesn't exist</span></span>
-
-<span data-ttu-id="e476d-595">キーセットが存在しないことが判明した場合は、スクリプトがすべてのコンピューターで実行されなていなかったことを意味します。</span><span class="sxs-lookup"><span data-stu-id="e476d-595">If you find that the keyset doesn't exist, scripts weren't run on all machines.</span></span> <span data-ttu-id="e476d-596">適切な設定の「VM の設定」セクション、および環境の配置トピックを確認し完了します。</span><span class="sxs-lookup"><span data-stu-id="e476d-596">Review and complete the "Set up VMs" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-- [<span data-ttu-id="e476d-597">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-597">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#setupvms)
-- [<span data-ttu-id="e476d-598">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-598">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#setupvms)
-
-<span data-ttu-id="e476d-599">各フォルダ内のスクリプトを、フォルダ名に対応する VM にコピーします。</span><span class="sxs-lookup"><span data-stu-id="e476d-599">Copy the scripts in each folder to the VMs that correspond to the folder name.</span></span>
-
-<span data-ttu-id="e476d-600">また、正しいドメインを使うことを検証する .csv ファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-600">Additionally, check the .csv file to verify that the correct domain is used.</span></span>
-
-## <a name="error-runasync-failed-due-to-an-unhandled-fabricexception-causing-replica-to-fault"></a><span data-ttu-id="e476d-601">エラー、「未処理の FabricException がレプリカに障害を引き起こしたため、RunAsync が失敗しました」</span><span class="sxs-lookup"><span data-stu-id="e476d-601">Error: "RunAsync failed due to an unhandled FabricException causing replica to fault"</span></span>
-
-<span data-ttu-id="e476d-602">次のエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-602">You might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-603">未処理の FabricException がレプリカに障害を引き起こしたため、RunAsync が失敗しました: System.Fabric.FabricException: 最初の Fabric アップグレードではコード バージョンと設定バージョンの両方を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-603">RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions.</span></span> <span data-ttu-id="e476d-604">要求された値: 0.0.0.0:</span><span class="sxs-lookup"><span data-stu-id="e476d-604">Requested value: 0.0.0.0:</span></span>
-
-<span data-ttu-id="e476d-605">この場合、ClusterConfig.json ファイルで、 **diagnosticsStore** をネットワーク共有からローカル パスに変更します。</span><span class="sxs-lookup"><span data-stu-id="e476d-605">In this case, in the ClusterConfig.json file, change **diagnosticsStore** from a network share to a local path.</span></span> <span data-ttu-id="e476d-606">たとえば、**\\\\サーバー\\パス**を、規定値の **C:\\ProgramData\\SF\\DiagnosticsStore** に変更します。</span><span class="sxs-lookup"><span data-stu-id="e476d-606">For example, change **\\\\server\\path** to a default value of **C:\\ProgramData\\SF\\DiagnosticsStore**.</span></span>
-
-## <a name="service-fabric-aos-node-error-during-build-the-execution-time-out-expired"></a><span data-ttu-id="e476d-607">ビルド中に Service Fabric AOS ノード エラー: 実行タイムアウトが期限切れ</span><span class="sxs-lookup"><span data-stu-id="e476d-607">Service Fabric AOS node error during build: The execution time-out expired</span></span>
-
-<span data-ttu-id="e476d-608">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-608">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-609">操作を完了する前にタイムアウト期間が経過したか、サーバーが応答していません。</span><span class="sxs-lookup"><span data-stu-id="e476d-609">The timeout period elapsed prior to completion of the operation or the server is not responding.</span></span>  
-> <span data-ttu-id="e476d-610">明細書は終了しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-610">The statement has been terminated.</span></span>
-
-<span data-ttu-id="e476d-611">一度に 1 つの AOS マシンのみ DB Sync を実行できます。</span><span class="sxs-lookup"><span data-stu-id="e476d-611">Only one AOS machine can run DB Sync at a time.</span></span> <span data-ttu-id="e476d-612">このエラーは無視しても問題ありません。 AOS VM のいずれかが DB Sync で実行されているため、他の VM が実行できないという警告が表示されたためです。</span><span class="sxs-lookup"><span data-stu-id="e476d-612">You can safely ignore this error, because it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it.</span></span> <span data-ttu-id="e476d-613">DB Sync が実行されていることを確認するには、イベント ビューアの、警告を生成していない AOS VM で**アプリケーションおよびサービスのログ** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-613">To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to **Applications and Services Log** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational**.</span></span>
-
-## <a name="error-requirenonce-is-true-default-but-validationcontextnonce-is-null"></a><span data-ttu-id="e476d-614">エラー、「RequireNonce が True (既定) ですが、validationContext.Nonce は Null です」</span><span class="sxs-lookup"><span data-stu-id="e476d-614">Error: "RequireNonce is 'true' (default) but validationContext.Nonce is null"</span></span>
-
-<span data-ttu-id="e476d-615">次のエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-615">You might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-616">「RequireNonce が True (既定) となっていますが、validationContext.Nonce は Null となっています」</span><span class="sxs-lookup"><span data-stu-id="e476d-616">RequireNonce is 'true' (default) but validationContext.Nonce is null</span></span>
-
-<span data-ttu-id="e476d-617">このエラーは、クライアントにサインインした後も Internet Explorer で HTTP エラー 500 として表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-617">This error also appears as an HTTP error 500 in Internet Explorer after you sign in to the client.</span></span> <span data-ttu-id="e476d-618">Internet Explorer がセキュリティ強化の構成になっている場合、発行された nonce は検証できません。</span><span class="sxs-lookup"><span data-stu-id="e476d-618">The nonce that is issued can't be validated if Internet Explorer is in Enhanced Security Configuration.</span></span>
-
-<span data-ttu-id="e476d-619">クライアントにサインインするには、サーバー マネージャーを介して Internet Explorer のセキュリティ強化設定を無効にします。</span><span class="sxs-lookup"><span data-stu-id="e476d-619">To sign in to the client, disable Enhanced Security Configuration for Internet Explorer via Server Manager.</span></span>
-
-## <a name="error-invalid-algorithm-specified--cryptography"></a><span data-ttu-id="e476d-620">エラー、「無効なアルゴリズムが指定されている/暗号化」</span><span class="sxs-lookup"><span data-stu-id="e476d-620">Error: "Invalid algorithm specified / Cryptography"</span></span>
-
-<span data-ttu-id="e476d-621">"Invalid algorithm specified / Cryptography" エラーが発生した場合は、Microsoft Enhanced RSA および AES Cryptographic Provider を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-621">If you receive an "Invalid algorithm specified / Cryptography" error, you must use the Microsoft Enhanced RSA and AES Cryptographic Provider.</span></span> <span data-ttu-id="e476d-622">詳細については、証明書の要件を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-622">For more information, see the certificate requirements.</span></span> <span data-ttu-id="e476d-623">また、credentials.json ファイルの構造が正しいことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-623">Additionally, verify that the structure of the credentials.json file is correct.</span></span>
-
-<span data-ttu-id="e476d-624">正しいプロバイダーを使用して証明書を再作成する必要がある場合は、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-624">If you must re-create the certificate by using the correct provider, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-625">正しいプロバイダーを使用して証明書を再度作成します。</span><span class="sxs-lookup"><span data-stu-id="e476d-625">Create the certificate again by using the correct provider.</span></span>
-2. <span data-ttu-id="e476d-626">**ConfigTemplate.xml** ファイルの変更。</span><span class="sxs-lookup"><span data-stu-id="e476d-626">Change the **ConfigTemplate.xml** file.</span></span>
-3. <span data-ttu-id="e476d-627">クラスター内のすべてのコンピューターでインフラストラクチャ スクリプトを実行し、**Test-D365FOConfiguration.ps1** スクリプトに合格するかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-627">Run the infrastructure scripts on all machines in the cluster, and make sure that the **Test-D365FOConfiguration.ps1** script passes.</span></span>
-4. <span data-ttu-id="e476d-628">LCS から環境を再構成します。</span><span class="sxs-lookup"><span data-stu-id="e476d-628">Reconfigure the environment from LCS.</span></span>
-
-## <a name="an-unable-to-find-certificate-error-occurs-when-you-run-test-d365foconfigurationps1"></a><span data-ttu-id="e476d-629">Test-D365FOConfiguration.ps1 を実行した際、「証明書を検出できません」エラーが発生</span><span class="sxs-lookup"><span data-stu-id="e476d-629">An "Unable to find certificate" error occurs when you run Test-D365FOConfiguration.ps1</span></span>
-
-<span data-ttu-id="e476d-630">Test-D365FOConfiguration.ps1 を実行時に 「証明書を検出できません」 というエラーが発生した場合は、証明書または拇印がその他複数の用途で併用されているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-630">If you receive an "Unable to find certificate" error when you run Test-D365FOConfiguration.ps1, check whether certificates or thumbprints are being combined for multiple purposes.</span></span> <span data-ttu-id="e476d-631">たとえば、クライアントと SessionAuthentication の証明書が併用されてされる場合、このエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="e476d-631">For example, you will receive this error if the client certificate and the SessionAuthentication certificate are combined.</span></span> <span data-ttu-id="e476d-632">証明書を結合しないことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e476d-632">We recommend that you not combine certificates.</span></span> <span data-ttu-id="e476d-633">詳細については、 証明書の必要要件を参照し、 **domain.com\\user** versus **domain\\user** 内 (たとえば、NETBIOS 構造) のacl.csv ファイルを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-633">For more information, see the certificate requirements, and check the acl.csv file for **domain.com\\user** versus **domain\\user** (for example, NETBIOS structure).</span></span>
-
-## <a name="the-client-and-server-cant-communicate-because-they-dont-have-a-common-algorithm"></a><span data-ttu-id="e476d-634">クライアントとサーバーは共通のアルゴリズムを持たないため通信できません</span><span class="sxs-lookup"><span data-stu-id="e476d-634">The client and server can't communicate because they don't have a common algorithm</span></span>
-
-<span data-ttu-id="e476d-635">クライアントとサーバーが疎通できない場合は双方のアルゴリズムが異なることが原因です。作成した証明書が指定したプロバーダーを使用しているか確認をしてください。これについては"Plan and acquire your certificates" の項目で解説しています。ご利用の環境に応じた適切な設定と配置を行ってください。</span><span class="sxs-lookup"><span data-stu-id="e476d-635">If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-- [<span data-ttu-id="e476d-636">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-636">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#plancert)
-- [<span data-ttu-id="e476d-637">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-637">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#plancert)
-
-## <a name="find-a-list-of-group-managed-service-accounts"></a><span data-ttu-id="e476d-638">グループ管理サービス アカウント の一覧の検索</span><span class="sxs-lookup"><span data-stu-id="e476d-638">Find a list of group managed service accounts</span></span>
-
-<span data-ttu-id="e476d-639">すべてのグループとホストの一覧を検索するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-639">To find a list of all groups and hosts, run the following command.</span></span>
-
-```
-Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRetrieveManagedPassword
-```
-
-## <a name="addcerttoserviceprincipal-script-fails-on-import-module"></a><span data-ttu-id="e476d-640">Import-Module での AddCertToServicePrincipal スクリプトの失敗</span><span class="sxs-lookup"><span data-stu-id="e476d-640">AddCertToServicePrincipal script fails on Import-Module</span></span>
-
-<span data-ttu-id="e476d-641">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-641">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-642">Import-Module での AddCertToServicePrincipal スクリプトの失敗: ファイルまたはアセンブリ 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' またはその依存関係のうちのいずれか 1 つを読み込めませんでした。</span><span class="sxs-lookup"><span data-stu-id="e476d-642">AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.</span></span> <span data-ttu-id="e476d-643">厳密な名前の検証に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-643">Strong name validation failed.</span></span> <span data-ttu-id="e476d-644">(HRESULT からの例外: 0x8013141A) には、同じモジュールの複数のバージョンがインストールされている場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-644">(Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.</span></span>
-
-<span data-ttu-id="e476d-645">**ステップ:** 問題を解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-645">**Steps:** To resolve this issue, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-646">Windows PowerShell で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-646">Run the following command in Windows PowerShell.</span></span>
-
-    ```powershell
-    Uninstall-Module -Name AzureRM
-    Install-Module AzureRM
-    ```
-
-2. <span data-ttu-id="e476d-647">Windows PowerShell ウィンドウを閉じて、スクリプトを再度実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-647">Close the Windows PowerShell window, and try to run the script again.</span></span>
-
-## <a name="reportingservicessetupexe-error"></a><span data-ttu-id="e476d-648">ReportingServicesSetup.exe エラー</span><span class="sxs-lookup"><span data-stu-id="e476d-648">ReportingServicesSetup.exe error</span></span>
-
-<span data-ttu-id="e476d-649">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-649">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-650">ReportingServicesSetup.exe エラー: 0 : アプリケーション fabric:/ReportingService は10分後から OK ではありません。</span><span class="sxs-lookup"><span data-stu-id="e476d-650">ReportingServicesSetup.exe Error: 0 : Application fabric:/ReportingService is not OK after 10 minutes</span></span>  
-> <span data-ttu-id="e476d-651">アプリケーション: ReportingServicesBootstrapper.exe</span><span class="sxs-lookup"><span data-stu-id="e476d-651">Application: ReportingServicesBootstrapper.exe</span></span>  
-> <span data-ttu-id="e476d-652">フレームワーク バージョン: v4.0.30319</span><span class="sxs-lookup"><span data-stu-id="e476d-652">Framework Version: v4.0.30319</span></span>  
-> <span data-ttu-id="e476d-653">説明: プロセスは未処理の例外によって中止されました。</span><span class="sxs-lookup"><span data-stu-id="e476d-653">Description: The process was terminated due to an unhandled exception.</span></span>
-
-<span data-ttu-id="e476d-654">**理由:** このエラーが発生した場合、厳密な名前検証はレポート サーバーで有効にされていますが、有効にしないでください。</span><span class="sxs-lookup"><span data-stu-id="e476d-654">**Reason:** If you receive this error, strong name validation is enabled in the Reporting server, but it should not be enabled.</span></span>
-
-<span data-ttu-id="e476d-655">**ステップ:** 問題を解決するには、レポート サーバー マシンで **config-PreReq** スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-655">**Steps:** To resolve this issue, run the **config-PreReq** script on the Reporting server machine.</span></span>
-
-## <a name="the-requested-operation-requires-elevation"></a><span data-ttu-id="e476d-656">要求された操作には、昇格が必要です</span><span class="sxs-lookup"><span data-stu-id="e476d-656">The requested operation requires elevation</span></span>
-
-<span data-ttu-id="e476d-657">AOS ユーザーはローカル管理者グループに属しておらず、ユーザー アカウント コントロール (UAC) が正しく無効化されていないために、この問題が発生します。</span><span class="sxs-lookup"><span data-stu-id="e476d-657">This issue occurs because AOS users aren't in the local administrator group, and User Account Control (UAC) hasn't been disabled correctly.</span></span> <span data-ttu-id="e476d-658">問題を解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-658">To resolve the issue, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-659">環境の適切な設定および配置トピックの「VMs とドメインを結合」のセクションで説明されているように、ローカル管理者として AOS ユーザーを追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-659">Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-    - [<span data-ttu-id="e476d-660">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-660">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#joindomain)
-    - [<span data-ttu-id="e476d-661">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-661">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#joindomain)
-
-2. <span data-ttu-id="e476d-662">すべての AOS コンピューターで、**Config-PreReq** スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-662">Run the **Config-PreReq** script on all the AOS machines.</span></span>
-3. <span data-ttu-id="e476d-663">**テスト構成**スクリプトがパスすることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-663">Make sure that the **Test-Configuration** script passes.</span></span>
-4. <span data-ttu-id="e476d-664">UAC が変更された場合は、変更を有効にする前にマシンを再起動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-664">If UAC was changed, you must restart the machine before the changes take effect.</span></span>
-
-## <a name="files-in-use-errors"></a><span data-ttu-id="e476d-665">使用中ファイルのエラー</span><span class="sxs-lookup"><span data-stu-id="e476d-665">Files in use errors</span></span>
-
-<span data-ttu-id="e476d-666">「ファイルは使用中です」のエラーが発生した場合は、Service Fabric に示されている例外ルールを設定します。</span><span class="sxs-lookup"><span data-stu-id="e476d-666">If these "Files in use" errors occur, set up the exclusion rules that Service Fabric advises.</span></span> <span data-ttu-id="e476d-667">詳細については、[環境設定](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-667">For information, see [Environment setup](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).</span></span>
-
-## <a name="apply-deployable-packages-during-deployment"></a><span data-ttu-id="e476d-668">配置中に配置可能パッケージを適用する</span><span class="sxs-lookup"><span data-stu-id="e476d-668">Apply deployable packages during deployment</span></span>
-
-### <a name="package-deployment-fails-because-of-a-path-too-long-exception"></a><span data-ttu-id="e476d-669">「パスが長過ぎる」例外によってパッケージの展開が失敗する</span><span class="sxs-lookup"><span data-stu-id="e476d-669">Package deployment fails because of a "path too long" exception</span></span>
-
-<span data-ttu-id="e476d-670">Microsoft Windows では 260 文字の制限があるため、パッケージの名前が長い場合やオンプレミス共有に完全な FQDN パスがある場合は、展開に失敗します。</span><span class="sxs-lookup"><span data-stu-id="e476d-670">Because of a 260-character limit in Microsoft Windows, deployment will fail if a package has a longer name, or if the on-premises share has the full FQDN path.</span></span> <span data-ttu-id="e476d-671">文字数の制限を超過した場合、次のエラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-671">If the character limit is exceeded, you receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-672">System.IO.PathTooLongException: 指定されたパス、ファイル名、またはその両方が長すぎます。</span><span class="sxs-lookup"><span data-stu-id="e476d-672">System.IO.PathTooLongException: The specified path, file name, or both are too long.</span></span> <span data-ttu-id="e476d-673">完全に記述されたファイル名は 260 文字未満である必要があり、ディレクトリ名は 248 文字未満である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-673">The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.</span></span> <span data-ttu-id="e476d-674">at System.IO.PathHelper.GetFullPathName</span><span class="sxs-lookup"><span data-stu-id="e476d-674">at System.IO.PathHelper.GetFullPathName</span></span>
-
-<span data-ttu-id="e476d-675">この問題を回避するには、パッケージ名を短くし、パッケージをもう一度適用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-675">To work around this issue, shorten the package name, and then apply the package again.</span></span> <span data-ttu-id="e476d-676">または、オンプレミス資産の共有パス全体の長さを短くしてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-676">Alternatively, shorten the overall length of the share path for the on-premises assets.</span></span>
-
-### <a name="package-deployment-fails-because-of-a-serialization-error"></a><span data-ttu-id="e476d-677">シリアル化エラーが原因でパッケージの展開に失敗する</span><span class="sxs-lookup"><span data-stu-id="e476d-677">Package deployment fails because of a serialization error</span></span>
-
-<span data-ttu-id="e476d-678">パッケージ配置中、次のエラーが発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-678">During package deployment, you might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-679">シリアル化バージョンの不一致が検出されたので、ランタイム DLL が配置されたメタデータと同期していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-679">Serialization version mismatch detect, make sure the runtime DLLs are in sync with the deployed metadata.</span></span> <span data-ttu-id="e476d-680">「XXX」ファイルのバージョン</span><span class="sxs-lookup"><span data-stu-id="e476d-680">Version of file 'XXX'.</span></span> <span data-ttu-id="e476d-681">DLL 「XXX」のバージョン</span><span class="sxs-lookup"><span data-stu-id="e476d-681">Version of DLL 'XXX'</span></span>
-
-<span data-ttu-id="e476d-682">この場合は、パッケージが開発された環境のバージョンと、パッケージを配置する環境のバージョンが異なっている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-682">In this case, the version of the environment where the package was developed might differ from the version of the environment that the package is being deployed in.</span></span>
-
-<span data-ttu-id="e476d-683">この問題を回避するには、展開されたオンプレミス環境と同じバージョンで開発環境またはビルド環境を維持します。</span><span class="sxs-lookup"><span data-stu-id="e476d-683">To work around this issue, keep the development or build environments on the same version as the deployed on-premises environment.</span></span> <span data-ttu-id="e476d-684">パッケージのアップロード先にあるアセット ライブラリの**追加の詳細**セクションをクリックすることにより、パッケージ バージョンを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-684">You can confirm the package version by looking in the **Additional details** section in the Asset library where the package is uploaded.</span></span> <span data-ttu-id="e476d-685">このエラーを修正するには、オンプレミス環境に配置されたバージョンと同じか、またはそれ以前のバージョンでパッケージを生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-685">To fix the error, generate the package on a version that is the same as or earlier than the version that is deployed in the on-premises environment.</span></span>
-
-### <a name="package-deployment-fails-because-of-dependencies-on-missing-modules"></a><span data-ttu-id="e476d-686">欠落しているモジュールの依存関係が原因でがパッケージの展開に失敗する</span><span class="sxs-lookup"><span data-stu-id="e476d-686">Package deployment fails because of dependencies on missing modules</span></span>
-
-<span data-ttu-id="e476d-687">依存モジュールがないパッケージを適用しようとすると、パッケージ アプリケーションが失敗して、次のようなメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-687">If you try to apply a package that is missing dependent modules, package application will fail, and you will receive a message that resembles the following message:</span></span>
-
-> <span data-ttu-id="e476d-688">パッケージ \[dynamicsax-My\_commonextension.7.0.4679.35176.nupkg に依存関係がありません: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor\]\]</span><span class="sxs-lookup"><span data-stu-id="e476d-688">Package \[dynamicsax-My\_commonextension.7.0.4679.35176.nupkg has missing dependencies: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor\]\]</span></span>
->
-> <span data-ttu-id="e476d-689">パッケージ \[dynamicsax-My\_coreextension.7.0.4679.35176.nupkg に依存関係がありません: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests;dynamicsax-generalledgerformadaptor;dynamicsax-publicsectorformadaptor;dynamicsax-retailformadaptor\]\]</span><span class="sxs-lookup"><span data-stu-id="e476d-689">Package \[dynamicsax-My\_coreextension.7.0.4679.35176.nupkg has missing dependencies: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests;dynamicsax-generalledgerformadaptor;dynamicsax-publicsectorformadaptor;dynamicsax-retailformadaptor\]\]</span></span>
->
-> <span data-ttu-id="e476d-690">パッケージ \[dynamicsax-My\_uiextension.7.0.4679.35176.nupkg に依存関係がありません: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests\]\]</span><span class="sxs-lookup"><span data-stu-id="e476d-690">Package \[dynamicsax-My\_uiextension.7.0.4679.35176.nupkg has missing dependencies: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests\]\]</span></span>
-
-<span data-ttu-id="e476d-691">問題を確認し、欠落している依存関係を見つけるには、イベント ビューアーで、**アプリケーションとサービス**を開き、**Microsoft** \> **Dynamics** \> **AX-SetupModuleEvents** の順で移動して、見つからないモジュールのあるイベントを表示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-691">To confirm the issue and find the missing dependencies, in Event Viewer, open **Application and Services**, and then go to **Microsoft** \> **Dynamics** \> **AX-SetupModuleEvents** to view events that have missing modules.</span></span> <span data-ttu-id="e476d-692">たとえば、一般的に見つからないモジュールの 1 つは、ApplicationFoundationFormAdaptor です。</span><span class="sxs-lookup"><span data-stu-id="e476d-692">For example, one of the modules that is typically missing is ApplicationFoundationFormAdaptor.</span></span>
-
-<span data-ttu-id="e476d-693">この問題を修正してパッケージを正常に適用するには、依存モジュールを追加するか、依存モジュールが必要なモジュールを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-693">To fix this issue and successfully apply the package, either add dependent modules, or remove modules that require dependent modules.</span></span> <span data-ttu-id="e476d-694">依存するモジュールを追加するには、パッケージをビルドするときに依存関係を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-694">To add dependent modules, you must include the dependencies when you build the package.</span></span> <span data-ttu-id="e476d-695">モジュールを削除するには、ModelUtil.exe を使用してモジュールを削除できます。</span><span class="sxs-lookup"><span data-stu-id="e476d-695">To remove modules, you can use ModelUtil.exe to delete a module.</span></span> <span data-ttu-id="e476d-696">詳細については、「[モデルのエクスポートとインポート](../dev-tools/models-export-import.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-696">For more information, see [Export and import a model](../dev-tools/models-export-import.md).</span></span>
-
-### <a name="package-deployment-works-in-a-one-box-environment-but-not-in-the-sandbox-environment"></a><span data-ttu-id="e476d-697">パッケージの展開がワン ボックス環境で機能するが、サンドボックス環境で機能しない</span><span class="sxs-lookup"><span data-stu-id="e476d-697">Package deployment works in a one-box environment but not in the sandbox environment</span></span>
-
-<span data-ttu-id="e476d-698">1 ボックス環境にはすべてのモジュールがインストールされている可能性があり、一方ではサンドボックス環境には実稼働環境で実行するために必要なモジュールのみがインストールされている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-698">A one-box environment might have all the modules installed, whereas the sandbox environment might have only the modules that are required in order to run your production environment.</span></span> <span data-ttu-id="e476d-699">開発環境で作成されたパッケージが、サンドボックス環境ではなく、ワン ボックス環境にあるモジュールに依存する場合、パッケージはサンドボックス環境では動作しません。</span><span class="sxs-lookup"><span data-stu-id="e476d-699">If the package that was built in the dev environment has a dependency on modules that are present in the one-box environment but not in the sandbox environment, the package won't work in the sandbox environment.</span></span>
-
-<span data-ttu-id="e476d-700">この問題を解決するには、依存関係のあるすべてのモジュールを確認し、実稼動環境で不要なアダプターまたはその他のモジュールを使用しないようにしてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-700">To resolve this issue, look at all the modules that you're dependent on, and make sure that you don't pull any farm adapter or any other module that isn't required in the production environment.</span></span> <span data-ttu-id="e476d-701">ビルド ボックスからパッケージを取得することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e476d-701">The best practice is to take the package from the build box.</span></span>
-
-## <a name="an-error-occurs-when-you-sign-in-to-on-premises-environments"></a><span data-ttu-id="e476d-702">オンプレミス環境へのログイン時にエラーが発生</span><span class="sxs-lookup"><span data-stu-id="e476d-702">An error occurs when you sign in to on-premises environments</span></span>
-
-- <span data-ttu-id="e476d-703">**プラットフォーム更新 12:** **システム管理** \> **設定** \> **クライアント パフォーマンス オプション**に移動して、Skype 統合を無効にしてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-703">**Platform update 12:** Turn off the Skype integration by going to **System administration** \> **Setup** \> **Client performance options**.</span></span> <span data-ttu-id="e476d-704">アプリに移動するとき、`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true` の例のように、**?debug=true** を URL に追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-704">When you go to the app, append **?debug=true** to the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</span></span>
-- <span data-ttu-id="e476d-705">**プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11:** 確認されている問題は、 Skype の アプリケーション プログラミング インターフェイス (API) が、オンプレミス環境へのサインインする機能に影響を及ぼしているというものです。</span><span class="sxs-lookup"><span data-stu-id="e476d-705">**Platform update 8 and Platform update 11:** A known issue for the Skype application programming interface (API) affects the ability to sign in to on-premises environments.</span></span> <span data-ttu-id="e476d-706">Microsoftはこの問題の解決方法を調査しています。</span><span class="sxs-lookup"><span data-stu-id="e476d-706">Microsoft is investigating a resolution for this issue.</span></span> <span data-ttu-id="e476d-707">この問題を回避するために、次の例のように URL の末尾に **?debug=true** を追加できます。`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</span><span class="sxs-lookup"><span data-stu-id="e476d-707">To work around this issue, you can add **?debug=true** to the end of the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</span></span>
-
-## <a name="the-local-agent-stops-working-after-the-tenant-for-the-project-from-lcs-is-changed"></a><span data-ttu-id="e476d-708">ローカル エージェントは、LCS からのプロジェクトのテナントが変更されると作業を停止します</span><span class="sxs-lookup"><span data-stu-id="e476d-708">The local agent stops working after the tenant for the project from LCS is changed</span></span>
-
-<span data-ttu-id="e476d-709">更新されたテナントでローカル エージェントを構成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-709">Follow these steps to configure the local agent with the updated tenant.</span></span>
-
-1. <span data-ttu-id="e476d-710">ローカル エージェントをアンインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-710">Uninstall the local agent.</span></span>
-
-    ```powershell
-    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
-    ```
-
-2. <span data-ttu-id="e476d-711">ユーザーの環境での適切なセットアップと配置トピックの「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-711">Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:</span></span>
-
-    - [<span data-ttu-id="e476d-712">プラットフォーム update 12</span><span class="sxs-lookup"><span data-stu-id="e476d-712">Platform update 12</span></span>](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [<span data-ttu-id="e476d-713">プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11</span><span class="sxs-lookup"><span data-stu-id="e476d-713">Platform update 8 and Platform update 11</span></span>](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
-
-3. <span data-ttu-id="e476d-714">新しいテナントに新しい LCS コネクタを作成します。</span><span class="sxs-lookup"><span data-stu-id="e476d-714">Create a new LCS connector in the new tenant.</span></span>
-4. <span data-ttu-id="e476d-715">**local-agent.config** ファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="e476d-715">Download the **local-agent.config** file.</span></span>
-5. <span data-ttu-id="e476d-716">ローカル エージェントをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-716">Install the local agent.</span></span>
-
-    ```powershell
-    .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
-
-## <a name="additional-deployments-for-example-two-sandbox-deployments-or-a-sandbox-and-production-deployment"></a><span data-ttu-id="e476d-717">追加の配置 (たとえば、2 つのサンド ボックス展開、またはサンド ボックスおよび生産の配置)</span><span class="sxs-lookup"><span data-stu-id="e476d-717">Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)</span></span>
-
-<span data-ttu-id="e476d-718">追加の環境を展開すると、次のエラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-718">You will receive the following error when you deploy an additional environment:</span></span>
-
-> <span data-ttu-id="e476d-719">\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` New-AdfsApplicationGroup : MSIS9908: アプリケーション グループ ID は、AD FS コンフィギュレーションで一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-719">.\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.</span></span>
-
-<span data-ttu-id="e476d-720">配備手順の次のセクションをスキップまたは変更することができます。</span><span class="sxs-lookup"><span data-stu-id="e476d-720">You can skip or modify the following sections in the deployment instructions.</span></span>
-
-### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdplancert-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdplancert"></a><span data-ttu-id="e476d-721">証明書の計画と取得 ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#plancert) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#plancert) で記載されたものとして)</span><span class="sxs-lookup"><span data-stu-id="e476d-721">Plan and acquire your certificates (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#plancert) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#plancert))</span></span>
-
-- <span data-ttu-id="e476d-722">同一のオンプレミスのローカル エージェント証明書を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-722">You must use the same on-premises local agent certificate.</span></span>
-- <span data-ttu-id="e476d-723">同一のスター証明書を使用することができます(AOS SSL および Service Fabric)。</span><span class="sxs-lookup"><span data-stu-id="e476d-723">You can use same star certificates (AOS SSL and Service Fabric).</span></span>
-- <span data-ttu-id="e476d-724">残りの証明書は既存の環境の証明書とは異なる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-724">The remaining certificates should probably differ from the certificates for the existing environment.</span></span>
-
-### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mddownloadscripts-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mddownloadscripts"></a><span data-ttu-id="e476d-725">LCS からのセットアップ スクリプトのダウンロード ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#downloadscripts) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts) で記載されたものとして)</span><span class="sxs-lookup"><span data-stu-id="e476d-725">Download setup scripts from LCS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#downloadscripts) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts))</span></span>
-
-- <span data-ttu-id="e476d-726">ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-726">The scripts that are downloaded should be copied into a new folder.</span></span>
-
-### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdsetupsfcluster-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdsetupsfcluster"></a><span data-ttu-id="e476d-727">([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#setupsfcluster) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster) に記載されているように) スタンドアロン Service Fabric クラスタを設定します</span><span class="sxs-lookup"><span data-stu-id="e476d-727">Set up a standalone Service Fabric cluster (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster))</span></span>
-
-- <span data-ttu-id="e476d-728">ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-728">The scripts that are downloaded should be copied into a new folder.</span></span>
-
-### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdconfigurelcs-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdconfigurelcs"></a><span data-ttu-id="e476d-729">テナント用 LCS 接続 のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configurelcs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs) で記載されたものとして)</span><span class="sxs-lookup"><span data-stu-id="e476d-729">Configure LCS connectivity for the tenant (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs))</span></span>
-
-- <span data-ttu-id="e476d-730">テナントに対して、このタスクを 1 回のみ実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-730">You must complete this task only one time for the tenant.</span></span>
-
-### <a name="configure-ad-fs-as-documented-for-platform-update-12setup-deploy-on-premises-pu12mdconfigureadfs-or-platform-update-8-and-platform-update-11setup-deploy-on-premises-pu8-pu11mdconfigureadfs"></a><span data-ttu-id="e476d-731">AD FS のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configureadfs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs) で記載されたものとして)</span><span class="sxs-lookup"><span data-stu-id="e476d-731">Configure AD FS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configureadfs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs))</span></span>
-
-- <span data-ttu-id="e476d-732">すでに完了しているので、スクリプト 1、スクリプト 2、スクリプト 3 はスキップできます。</span><span class="sxs-lookup"><span data-stu-id="e476d-732">You can skip scripts 1, 2, and 3, because they have already been done.</span></span>
-- <span data-ttu-id="e476d-733">新しい **hosturl** 値を使用している場合でも、.\\Publish-ADFSApplicationGroup.ps1 スクリプトは失敗します。</span><span class="sxs-lookup"><span data-stu-id="e476d-733">The .\\Publish-ADFSApplicationGroup.ps1 script will fail even when the new **hosturl** value is used.</span></span> <span data-ttu-id="e476d-734">したがって、この手順を手動で完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-734">Therefore, you must manually complete these steps.</span></span>
-
-    1. <span data-ttu-id="e476d-735">AD FS マネージャーで、**AD FS** \> **アプリケーション グループ**に移動し、**Microsoft Dynamics 365 for Operations オンプレミス**を開きます。</span><span class="sxs-lookup"><span data-stu-id="e476d-735">In AD FS Manager, go to **AD FS** \> **Application groups**, and open **Microsoft Dynamics 365 for Operations On-premises**.</span></span>
-    2. <span data-ttu-id="e476d-736">**Microsoft Dynamics 365 for Operations  オンプレミス - ネイティブ アプリケーション** を開きます。</span><span class="sxs-lookup"><span data-stu-id="e476d-736">Open the **Microsoft Dynamics 365 for Operations On-premises - Native application** native application.</span></span> <span data-ttu-id="e476d-737">新しい環境 (DNS) の リダイレクト URI を追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-737">Add the redirect URI of the new environment (DNS).</span></span>
-    3. <span data-ttu-id="e476d-738">**Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 - ネイティブ アプリケーション** を開きます。</span><span class="sxs-lookup"><span data-stu-id="e476d-738">Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application** native application.</span></span> <span data-ttu-id="e476d-739">新しい環境 (DNS) の リダイレクト URI を追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-739">Add the redirect URI of the new environment (DNS).</span></span>
-    4. <span data-ttu-id="e476d-740">**Microsoft Dynamics 365 for Operations オンプレミス - Web AP I** を開きます。</span><span class="sxs-lookup"><span data-stu-id="e476d-740">Open the **Microsoft Dynamics 365 for Operations On-premises - Web API** Web API.</span></span> <span data-ttu-id="e476d-741">新しい環境 (DNS) のリダイレクト URI の 2 つのエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-741">Add the two entries of the redirect URI of the new environment (DNS).</span></span>
-    5. <span data-ttu-id="e476d-742">**Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 Web API** を開きます。</span><span class="sxs-lookup"><span data-stu-id="e476d-742">Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API** Web API.</span></span> <span data-ttu-id="e476d-743">新しい環境 (DNS) の リダイレクト URI を追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-743">Add the redirect URI of the new environment (DNS).</span></span>
-
-## <a name="redeploy-ssrs-reports"></a><span data-ttu-id="e476d-744">SSRS レポートを再配置する</span><span class="sxs-lookup"><span data-stu-id="e476d-744">Redeploy SSRS reports</span></span>
-
-<span data-ttu-id="e476d-745">SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-745">Delete the entry in SF.SyncLog, and then restart one of the AOS machines.</span></span> <span data-ttu-id="e476d-746">AOS コンピューターは DB 同期を再実行し、レポートを配置します。</span><span class="sxs-lookup"><span data-stu-id="e476d-746">The AOS machine will rerun DB Sync and then deploy reports.</span></span>
-
-## <a name="add-axdbadmin-to-tempdb-after-a-sql-server-restart-via-a-stored-procedure"></a><span data-ttu-id="e476d-747">ストアド プロシージャ経由で SQL Server を再起動した後、tempdb に axdbadmin を追加します。</span><span class="sxs-lookup"><span data-stu-id="e476d-747">Add axdbadmin to tempdb after a SQL Server restart via a stored procedure</span></span>
-
-<span data-ttu-id="e476d-748">SQL Server を再起動すると、tempdb データベースが再作成されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-748">When SQL Server is restarted, the tempdb database is re-created.</span></span> <span data-ttu-id="e476d-749">結果として、アクセス許可が不十分です。</span><span class="sxs-lookup"><span data-stu-id="e476d-749">Therefore, there will be missing permissions.</span></span> <span data-ttu-id="e476d-750">マスター データベースでストアド プロシージャを作成する次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-750">Run the following script to create a stored procedure on the master database.</span></span>
-
-```
-\-----
-USE [master]
-GO
-CREATE procedure [dbo].[CREATETEMPDBPERMISSIONS] as begin exec ('USE tempdb; declare @dbaccesscount int; select @dbaccesscount = COUNT(*) from master..syslogins where name = ''axdbadmin''; if (@dbaccesscount <> 0) exec sp_grantdbaccess ''axdbadmin''; ALTER USER [axdbadmin] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember N''db_datareader'', N''axdbadmin''; EXEC sp_addrolemember N''db_datawriter'', N''axdbadmin''; EXEC sp_addrolemember N''db_ddladmin'', N''axdbadmin''; exec sp_grantdbaccess ''contoso\svc-AXSF$''; ALTER USER [contoso\svc-AXSF$] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember N''db_datareader'', N''contoso\svc-AXSF$''; EXEC sp_addrolemember N''db_datawriter'', N''contoso\svc-AXSF$''; EXEC sp_addrolemember N''db_ddladmin'', N''contoso\svc-AXSF$'';') end
-GO
-EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
-\-----
-```
-
-## <a name="error-updates-to-existing-credential-with-keyid-key-is-not-allowed"></a><span data-ttu-id="e476d-751">エラー、「KeyId『\<key\>』による既存の資格情報の更新は許可されていません」</span><span class="sxs-lookup"><span data-stu-id="e476d-751">Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"</span></span>
-
-<span data-ttu-id="e476d-752">次のエラーが表示される場合があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-752">You might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-753">KeyId「\<key\>」を保持している既存の資格情報を更新することはできません。</span><span class="sxs-lookup"><span data-stu-id="e476d-753">Updates to existing credential with KeyId '\<key\>' is not allowed</span></span>
-
-<span data-ttu-id="e476d-754">この問題を解決するための手順は、オンプレミス プロジェクトのみをご利用しているか、オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用しているかによって異なります。</span><span class="sxs-lookup"><span data-stu-id="e476d-754">The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.</span></span>
-
-### <a name="if-have-only-an-on-premises-project"></a><span data-ttu-id="e476d-755">場合設置プロジェクトのみ</span><span class="sxs-lookup"><span data-stu-id="e476d-755">If have only an on-premises project</span></span>
-
-<span data-ttu-id="e476d-756">オンプレミス プロジェクトのみの場合は、KeyId '\<key\>' を保持している既存の資格情報を更新することはできません。</span><span class="sxs-lookup"><span data-stu-id="e476d-756">If have only an on-premises project, you can't update the existing credential with KeyId '\<key\>'.</span></span>
-
-> <span data-ttu-id="e476d-757">New-AzureRmADSpCredential : KeyId '\<key\>' による既存の資格情報の更新は許可されていません。</span><span class="sxs-lookup"><span data-stu-id="e476d-757">New-AzureRmADSpCredential : Update to existing credential with KeyId '\<key\>' is not allowed.</span></span>  
-> <span data-ttu-id="e476d-758">At C:\\InfrastructureScripts\\Add-CertToServicePrincipal.ps1:62 char:1</span><span class="sxs-lookup"><span data-stu-id="e476d-758">At C:\\InfrastructureScripts\\Add-CertToServicePrincipal.ps1:62 char:1</span></span>  
-> <span data-ttu-id="e476d-759">New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...</span><span class="sxs-lookup"><span data-stu-id="e476d-759">New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...</span></span>  
-> <span data-ttu-id="e476d-760">CategoryInfo : InvalidOperation: (:) \[New-AzureRmADSpCredential\], Exception</span><span class="sxs-lookup"><span data-stu-id="e476d-760">CategoryInfo : InvalidOperation: (:) \[New-AzureRmADSpCredential\], Exception</span></span>  
-> <span data-ttu-id="e476d-761">FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand</span><span class="sxs-lookup"><span data-stu-id="e476d-761">FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand</span></span>
-
-<span data-ttu-id="e476d-762">この問題を解決するには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-762">Run the following PowerShell command to resolve the issue.</span></span>
-
-```powershell
-Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
-```
-
-### <a name="if-you-have-both-an-online-project-and-an-on-premises-project"></a><span data-ttu-id="e476d-763">オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用の場合</span><span class="sxs-lookup"><span data-stu-id="e476d-763">If you have both an online project and an on-premises project</span></span>
-
-<span data-ttu-id="e476d-764">オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用の場合は、次の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e476d-764">If you have both an online project and an on-premises project, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-765">Microsoft .NET フレームワーク version 4.7.2 がインストールされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e476d-765">Verify that the Microsoft .NET Framework version 4.7.2 is installed.</span></span>
-2. <span data-ttu-id="e476d-766">以下のWindows PowerShell スクリプトを実行し、Azure PowerShell moduleをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e476d-766">Run the following Windows PowerShell script to install the Azure PowerShell module.</span></span>
-
-    ```powershell
-    Install-Module -Name Az
-    ```
-
-3. <span data-ttu-id="e476d-767">以下のWindows PowerShellスクリプトを実行し、新規証明書をアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e476d-767">Run the following Windows PowerShell script to upload the new certificate.</span></span>
-
-    ```powershell
-    Import-Module -Name Az.Accounts
-    Import-Module -Name Az.Resources
-
-    Connect-AzAccount
-
-    $servicePrincipalName = "00000015-0000-0000-c000-000000000000";
-    $CertificateThumbprint = <Thumbprint of Agent Certificate>
-    $cert = Get-ChildItem -path Cert:\CurrentUser\my | Where-Object { $_.Thumbprint -eq $CertificateThumbprint }
-    if (!$cert)
-    {
-        $cert = Get-ChildItem -path Cert:\LocalMachine\my | Where-Object { $_.Thumbprint -eq $CertificateThumbprint }
-        if (!$cert)
-        {
-            throw "Unable to find the certificate in the Local machine or Current User store"
-        }
-    }
-
-    $keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
-    $servicePrincipal = Get-AzADServicePrincipal -ServicePrincipalName $servicePrincipalName
-    if (!$servicePrincipal)
-    {
-        throw "Unable to find the service principal"
-    }
-    New-AzADSpCredential -ObjectId $servicePrincipal.Id -CertValue $keyValue -EndDate $cert.NotAfter -StartDate $cert.NotBefore
-    Get-AzADSpCredential -ObjectId $servicePrincipal.Id
-    ```
-
-4. <span data-ttu-id="e476d-768">複数の証明書が存在する場合は、以下のコマンドを実行して重複する証明書を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-768">Run the following command to remove the duplicate certificate, if more than one certificate exists.</span></span>
-
-    ```powershell
-    Remove-AzADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
-    ```
-
-## <a name="odbc-driver-17-is-required-for-platform-updates"></a><span data-ttu-id="e476d-769">プラットフォームの更新には ODBC ドライバー 17 が必要です</span><span class="sxs-lookup"><span data-stu-id="e476d-769">ODBC driver 17 is required for platform updates</span></span>
-
-<span data-ttu-id="e476d-770">プラットフォーム バイナリを最新に更新するには、Open Database Connectivity ODBC ドライバー 17 を使用します。</span><span class="sxs-lookup"><span data-stu-id="e476d-770">The latest platform binary update uses Open Database Connectivity (ODBC) driver 17.</span></span> <span data-ttu-id="e476d-771">このアップグレードでは、古いバージョンの ODBC ドライバーに関連する安定性の問題を修正します。</span><span class="sxs-lookup"><span data-stu-id="e476d-771">This upgrade resolves stability issues that are linked to older ODBC drivers.</span></span> <span data-ttu-id="e476d-772">[追加の設定](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) に関するドキュメントが更新されており、次の変更が記載されています。各AOSサーバーにはODBC ドライバー 17 がインストールされている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-772">The [Setup perquisites](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server.</span></span> <span data-ttu-id="e476d-773">ODBC ドライバー 17 をインストールしない場合は、環境のメンテナンス処理中に DB 同期エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-773">If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.</span></span>
-
-<span data-ttu-id="e476d-774">エラーの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e476d-774">Here are some examples of errors:</span></span>
-
-- <span data-ttu-id="e476d-775">Service Fabric で:</span><span class="sxs-lookup"><span data-stu-id="e476d-775">In Service Fabric:</span></span>
-
-    > <span data-ttu-id="e476d-776">問題のあるイベント: SourceId=「System.RA」、プロパティ =「ReplicaOpenStatus」、HealthState=「警告」、ConsiderWarningAsError=false。</span><span class="sxs-lookup"><span data-stu-id="e476d-776">Unhealthy event: SourceId='System.RA', Property='ReplicaOpenStatus', HealthState='Warning', ConsiderWarningAsError=false.</span></span>  
-    > <span data-ttu-id="e476d-777">レプリカで、AOS3 で開いているときに複数の障害が発生しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-777">Replica had multiple failures during open on AOS3.</span></span> <span data-ttu-id="e476d-778">API 呼び出し: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088)</span><span class="sxs-lookup"><span data-stu-id="e476d-778">API call: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088)</span></span>  
-    > <span data-ttu-id="e476d-779">**DB の同期に失敗しました。**</span><span class="sxs-lookup"><span data-stu-id="e476d-779">**DB sync failed.**</span></span>
-
-- <span data-ttu-id="e476d-780">AOS コンピューターで:</span><span class="sxs-lookup"><span data-stu-id="e476d-780">On AOS machines:</span></span>
-
-    - <span data-ttu-id="e476d-781">イベント ビューアー \> カスタム ビュー \> 管理イベント:</span><span class="sxs-lookup"><span data-stu-id="e476d-781">Event Viewer \> Custom Views \> Administrative Events:</span></span>
-
-        > <span data-ttu-id="e476d-782">アプリケーション: Microsoft.Dynamics.AX.Deployment.Setup.exe フレームワーク バージョン: v4.0.30319 説明: プロセスは未処理の例外によって中止されました。</span><span class="sxs-lookup"><span data-stu-id="e476d-782">Application: Microsoft.Dynamics.AX.Deployment.Setup.exe Framework Version: v4.0.30319 Description: The process was terminated due to an unhandled exception.</span></span> <span data-ttu-id="e476d-783">例外情報: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String\[\])</span><span class="sxs-lookup"><span data-stu-id="e476d-783">Exception Info: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String\[\])</span></span>
-
-    - <span data-ttu-id="e476d-784">C:\\ProgramData\\SF\\AOSx\\Fabric\\work\\Applications\\AXSFType\_Appxx\\log:</span><span class="sxs-lookup"><span data-stu-id="e476d-784">C:\\ProgramData\\SF\\AOSx\\Fabric\\work\\Applications\\AXSFType\_Appxx\\log:</span></span>
-
-        > <span data-ttu-id="e476d-785">Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App18\\AXSF.Code.1.0.20180831174152\\Packages" -metadatadir "C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App18\\AXSF.Code.1.0.20180831174152\\Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem</span><span class="sxs-lookup"><span data-stu-id="e476d-785">Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App18\\AXSF.Code.1.0.20180831174152\\Packages" -metadatadir "C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App18\\AXSF.Code.1.0.20180831174152\\Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem</span></span>
-        >
-        > <span data-ttu-id="e476d-786">ハンドルされない例外: System.IO.FileNotFoundException: **ファイルまたはアセンブリ 'aoskernel.dll'、あるいはその依存関係のうちのいずれか 1 つを読み込めませんでした。指定されたモジュールが見つかりませんでした。**</span><span class="sxs-lookup"><span data-stu-id="e476d-786">Unhandled Exception: System.IO.FileNotFoundException: **Could not load file or assembly 'aoskernel.dll' or one of its dependencies. The specified module could not be found.**</span></span>
-        > <span data-ttu-id="e476d-787">Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String\[\] args) にて</span><span class="sxs-lookup"><span data-stu-id="e476d-787">at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String\[\] args)</span></span>
-        > 
-        > <span data-ttu-id="e476d-788">**DB の同期に失敗しました。**</span><span class="sxs-lookup"><span data-stu-id="e476d-788">**DB sync failed.**</span></span>
-
-## <a name="a-no-subscription-found-in-the-context-error-occurs-when-you-run-add-certtoserviceprincipal"></a><span data-ttu-id="e476d-789">Add-CertToServicePrincipal を実行すると、"コンテキストにサブスクリプションが見つかりません" エラーが発生します</span><span class="sxs-lookup"><span data-stu-id="e476d-789">A "No subscription found in the context" error occurs when you run Add-CertToServicePrincipal</span></span>
-
-<span data-ttu-id="e476d-790">最新バージョンの Windows PowerShell が原因で "コンテキストにサブスクリプションが見つかりません" エラーが発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="e476d-790">Recent versions of Windows PowerShell might cause a "No subscription found in the context" error.</span></span> <span data-ttu-id="e476d-791">この問題を解決するには、Windows PowerShellのバージョン5.7.0などの古いバージョンをインストールし、上書きしてください。</span><span class="sxs-lookup"><span data-stu-id="e476d-791">To resolve this issue, install and load an older version of Windows PowerShell, such as version 5.7.0.</span></span>
-
-```powershell
-# Install version 5.7.0 of Azure PowerShell
-Install-Module -Name AzureRM -RequiredVersion 5.7.0
-
-# Load version 5.7.0 of Azure PowerShell
-Import-Module -Name AzureRM -RequiredVersion 5.7.0
-```
-## <a name="service-fabric-explorer-warnings-occur-after-you-restart-a-machine"></a><span data-ttu-id="e476d-792">コンピューターの再起動後に Service Fabric Explorer の警告メッセージが表示される</span><span class="sxs-lookup"><span data-stu-id="e476d-792">Service Fabric Explorer warnings occur after you restart a machine</span></span>
-
-<span data-ttu-id="e476d-793">**エラー:**</span><span class="sxs-lookup"><span data-stu-id="e476d-793">**Error:**</span></span>
-
-> <span data-ttu-id="e476d-794">エラー: event: SourceId='MonitoringAgentService', Property='ServiceState'.</span><span class="sxs-lookup"><span data-stu-id="e476d-794">Error event: SourceId='MonitoringAgentService', Property='ServiceState'.</span></span>  
-> <span data-ttu-id="e476d-795">System.Management.Automation.RuntimeException: エラー: **渡された GUID は WMI データ プロバイダーにより有効と認識されませんでした。**</span><span class="sxs-lookup"><span data-stu-id="e476d-795">System.Management.Automation.RuntimeException: Error: **The GUID passed was not recognized as valid by a WMI data provider.**</span></span> <span data-ttu-id="e476d-796">(HRESULT からの例外: 0x80071068)。</span><span class="sxs-lookup"><span data-stu-id="e476d-796">(Exception from HRESULT: 0x80071068).</span></span> <span data-ttu-id="e476d-797">スタック トレース:</span><span class="sxs-lookup"><span data-stu-id="e476d-797">Stack trace:</span></span>
-
-<span data-ttu-id="e476d-798">**手順:** この問題を解決するには、警告メッセージの原因であるアプリケーション パッケージを再起動します。</span><span class="sxs-lookup"><span data-stu-id="e476d-798">**Steps:** To resolve this issue, restart the application package that generated the warning message.</span></span> <span data-ttu-id="e476d-799">詳しくは、 [アプリケーション(AOS など)を再起動してください](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="e476d-799">For more information, see [Restart applications (such as AOS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos).</span></span>
-
-## <a name="the-internal-time-zone-version-number-that-is-stored-in-the-database-is-higher-than-the-version-that-is-supported-by-the-kernel-1312"></a><span data-ttu-id="e476d-800">データベースに格納されている内部タイム ゾーンのバージョン番号が、カーネル (13/12) でサポートされているバージョンよりも大きくなっています。</span><span class="sxs-lookup"><span data-stu-id="e476d-800">The internal time zone version number that is stored in the database is higher than the version that is supported by the kernel (13/12)</span></span>
-
-<span data-ttu-id="e476d-801">このデータベースの同期エラーにより、新しいビルド (プラットフォーム更新 15) があったデータベースの上に古いプラットフォーム ビルド (プラットフォーム更新 12) が配置されてしまう可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-801">This database synchronization error can cause an old platform build (Platform update 12) to be deployed on top of a database that had a newer build (Platform update 15).</span></span>
-
-<span data-ttu-id="e476d-802">この問題を解決するには、 **SYSTIMEZONESVERSION** の値が重要になります。</span><span class="sxs-lookup"><span data-stu-id="e476d-802">To resolve this issue, note the **SYSTIMEZONESVERSION** value.</span></span>
-
-```
-select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
-```
-
-<span data-ttu-id="e476d-803">エラー メッセージにて表示されたバージョンの値で [value] を更新します</span><span class="sxs-lookup"><span data-stu-id="e476d-803">Update the value to the version that was returned in the error message.</span></span>
-
-```
-update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
-```
-
-## <a name="printing-randomly-stops"></a><span data-ttu-id="e476d-804">印刷がランダムに停止する</span><span class="sxs-lookup"><span data-stu-id="e476d-804">Printing randomly stops</span></span>
-
-<span data-ttu-id="e476d-805">AOS サーバーにインストールされているすべてのネットワーク プリンターが、AXService.EXE プロセスが実行されている Windows サービス アカウントとして実行されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-805">Make sure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.</span></span>
-
-## <a name="ax-databasesynchronize-isnt-populated-with-events"></a><span data-ttu-id="e476d-806">Ax-DatabaseSynchronize にイベントが設定されていません</span><span class="sxs-lookup"><span data-stu-id="e476d-806">Ax-DatabaseSynchronize isn't populated with events</span></span>
-
-<span data-ttu-id="e476d-807">プラットフォームの更新 20 およびそれ以降では、データベース同期ログに問題があり、イベント ビューアーで同期ログが **Ax-DatabaseSynchronize** の下に作成されません。</span><span class="sxs-lookup"><span data-stu-id="e476d-807">In Platform update 20 and later, there is database synchronization log issue where the synchronization logs aren't written under **Ax-DatabaseSynchronize** in Event Viewer.</span></span>
-
-<span data-ttu-id="e476d-808">この問題を解決するには、 \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log に移動してください。</span><span class="sxs-lookup"><span data-stu-id="e476d-808">To resolve this issue, go to \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log.</span></span> <span data-ttu-id="e476d-809">例えば次の場所に移動します。 C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log</span><span class="sxs-lookup"><span data-stu-id="e476d-809">For example, go to C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log.</span></span> <span data-ttu-id="e476d-810">ここでは、DatabaseSynchronize からの出力された内容を確認できます。 Code\_AXSF\_M\_\<X\>.out files.</span><span class="sxs-lookup"><span data-stu-id="e476d-810">Here, you can see the output from DatabaseSynchronize in the Code\_AXSF\_M\_\<X\>.out files.</span></span> <span data-ttu-id="e476d-811">このコンポーネントに関する問題をトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="e476d-811">Troubleshoot any issues that pertain to this component.</span></span>
-
-## <a name="you-cant-access-finance-and-operations-aadsts50058-a-silent-sign-in-request-was-sent-but-no-user-is-signed-in"></a><span data-ttu-id="e476d-812">Finance and Operations にアクセスできません: 「AADSTS50058: サイレント サインインの要求が送信されましたが、ログインしているユーザーがいません」</span><span class="sxs-lookup"><span data-stu-id="e476d-812">You can't access Finance and Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"</span></span>
-
-<span data-ttu-id="e476d-813">Finance and Operations へのログイン資格情報を入力すると、ブラウザでアプリケーションのレイアウトが少しの間表示されます。</span><span class="sxs-lookup"><span data-stu-id="e476d-813">After a user enters credentials to sign in to Finance and Operations, the browser briefly shows the application layout.</span></span> <span data-ttu-id="e476d-814">しかしその後、Finance and Operations外部へのリダイレクトを試みた結果、次のエラーが出て失敗します。</span><span class="sxs-lookup"><span data-stu-id="e476d-814">However, it then tries to redirect outside Finance and Operations, but fails with the following error:</span></span>
-
-> <span data-ttu-id="e476d-815">AADSTS50058: サイレント サインイン要求が送信されましたが、ユーザーがログインしていません。</span><span class="sxs-lookup"><span data-stu-id="e476d-815">AADSTS50058: A silent sign-in request was sent but no user is signed in.</span></span>
-
-<span data-ttu-id="e476d-816">ユーザーのセッションを表すために使用する Cookie が Azure AD への要求で送信されませんでした。</span><span class="sxs-lookup"><span data-stu-id="e476d-816">The cookies that represent the user's session weren't sent in the request to Azure AD.</span></span> <span data-ttu-id="e476d-817">これは、 Internet Explorer または Microsoft Edge を使用している場合で、webアプリケーションが送信しているサイレント サインインのリクエストが Azure AD エンドポイント (login.microsoftonline.com)とは異なる IEのセキュリティ ゾーンに設定されている場合に発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-817">This issue can occur if the user is using Internet Explorer or Microsoft Edge, and if the web app that sends the silent sign-in request is in a different IE security zone than the Azure AD endpoint (login.microsoftonline.com).</span></span>
-
-<span data-ttu-id="e476d-818">この問題を解決するには、次の PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-818">This issue occurs because there was a change in the Skype Presence API, and on-premises environments connect to this API by default.</span></span>
-
-<span data-ttu-id="e476d-819">この問題を解決するには、次の SQL Server query を実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-819">To resolve the issue, run the following SQL Server query.</span></span>
-
-```
-update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
-```
-
-<span data-ttu-id="e476d-820">または、**クライアント パフォーマンス オプション** ページの **Skype プレゼンスが有効** オプションを無効にします (**システム管理** \> **設定** \> **クライアント パフォーマンス オプション**)。</span><span class="sxs-lookup"><span data-stu-id="e476d-820">Alternatively, turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration** \> **Setup** \> **Client performance options**).</span></span> <span data-ttu-id="e476d-821">この方法を使用するには、Finance and Operations にログインできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-821">To use this approach, you must be able to sign in to Finance and Operations.</span></span> <span data-ttu-id="e476d-822">そのため、最初にブラウザのリダイレクトをブロックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-822">Therefore, you must first block redirection in the browser.</span></span> <span data-ttu-id="e476d-823">Skypeのプレゼンス機能を無効にすると、リダイレクトのブロックを解除しても構いません。</span><span class="sxs-lookup"><span data-stu-id="e476d-823">After you disable the Skype presence, you can unblock redirection again.</span></span>
-
-<span data-ttu-id="e476d-824">Chrome ブラウザーでは、最初からリダイレクトがブロックされています。</span><span class="sxs-lookup"><span data-stu-id="e476d-824">The Google Chrome browser blocks redirection by default.</span></span>
-
-## <a name="error-there-was-an-error-during-codepackage-activation-service-host-failed-to-activate-error0x8007052e"></a><span data-ttu-id="e476d-825">エラー: CodePackage の有効化でエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-825">Error: "There was an error during CodePackage activation.</span></span> <span data-ttu-id="e476d-826">サービス ホストの有効化に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-826">Service host failed to activate.</span></span> <span data-ttu-id="e476d-827">エラー: 0x8007052e"</span><span class="sxs-lookup"><span data-stu-id="e476d-827">Error:0x8007052e"</span></span>
-
-<span data-ttu-id="e476d-828">新規インストールの際に以下のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e476d-828">You might receive the following error during a new installation:</span></span>
-
-> <span data-ttu-id="e476d-829">エラー イベント: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'。</span><span class="sxs-lookup"><span data-stu-id="e476d-829">Error event: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'.</span></span> <span data-ttu-id="e476d-830">CodePackage の有効化でエラーが発生しました。サービス ホストの有効化に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="e476d-830">There was an error during CodePackage activation.Service host failed to activate.</span></span> <span data-ttu-id="e476d-831">エラー: 0x8007052e</span><span class="sxs-lookup"><span data-stu-id="e476d-831">Error:0x8007052e</span></span>
-
-<span data-ttu-id="e476d-832">このエラーと同じエラーが、AXSFサービスでも発生します。</span><span class="sxs-lookup"><span data-stu-id="e476d-832">This error will cause the AXSF service to fail with the same error.</span></span>
-
-<span data-ttu-id="e476d-833">この問題を解決するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e476d-833">To resolve this issue, follow these steps.</span></span>
-
-1. <span data-ttu-id="e476d-834">[エージェント共有パス](setup-deploy-on-premises-pu12.md#setupfile) にて、 **netstandard.dll** ファイルを見つけます。</span><span class="sxs-lookup"><span data-stu-id="e476d-834">In the [agent share path](setup-deploy-on-premises-pu12.md#setupfile), find the **netstandard.dll** file.</span></span> <span data-ttu-id="e476d-835">このファイルは、例えば \\wp\\\<名\>\\StandaloneSetup -\<バージョン\>\\アプリケーション\\AOS\\AXServiceApp\\AXSF\\コード\\在庫置場\\netstandard.dll に多くの場合存在します。</span><span class="sxs-lookup"><span data-stu-id="e476d-835">For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.</span></span>
-2. <span data-ttu-id="e476d-836">それぞれの AOS サーバーにて、管理者権限で コマンド プロンプトを開き、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e476d-836">On each AOS server, open a Command Prompt window as an administrator, and run the following command.</span></span>
-
-    ```
-    "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
-    ```
-
-3. <span data-ttu-id="e476d-837">Service Fabric から **AXBootstrapperApp** を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-837">Delete **AXBootstrapperApp** from Service Fabric.</span></span>
-
-    1. <span data-ttu-id="e476d-838">**fabric:/Bootstrapper/AXBootstrapper** サービス を削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-838">Delete the **fabric:/Bootstrapper/AXBootstrapper** service.</span></span>
-    2. <span data-ttu-id="e476d-839">**fabric:/Bootstrapper** アプリケーションを削除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-839">Delete the **fabric:/Bootstrapper** application.</span></span>
-    3. <span data-ttu-id="e476d-840">**AXBootstrapperAppType** のプロヴィジョニングを解除します。</span><span class="sxs-lookup"><span data-stu-id="e476d-840">Unprovision the **AXBootstrapperAppType** type.</span></span>
-
-4.  <span data-ttu-id="e476d-841">LCS から環境を再配置します。</span><span class="sxs-lookup"><span data-stu-id="e476d-841">Redeploy the environment from LCS.</span></span>
-
-## <a name="sql-server-2016-service-pack-2-is-recommended-for-reporting-services-instances"></a><span data-ttu-id="e476d-842">Reporting Servicesのインスタンス には SQL Server 2016 service pack 2 を推奨します。</span><span class="sxs-lookup"><span data-stu-id="e476d-842">SQL Server 2016 service pack 2 is recommended for Reporting Services instances</span></span>
-
-<span data-ttu-id="e476d-843">LCSにてサービス操作を行うと次のエラーが表示されることがあります:</span><span class="sxs-lookup"><span data-stu-id="e476d-843">When you go through LCS servicing operations, you might receive the following error:</span></span>
-
-> <span data-ttu-id="e476d-844">プロセスが次のファイルにアクセスできません ' c:\\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\bin\\Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll' 別のプロセスによって使用されています。</span><span class="sxs-lookup"><span data-stu-id="e476d-844">The process cannot access the file 'C:\\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\bin\\Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll' because it is being used by another process.</span></span>
-
-<span data-ttu-id="e476d-845">この問題は Reporting Services が Microsoft Dynamics .dllファイル をロックしているために発生します。</span><span class="sxs-lookup"><span data-stu-id="e476d-845">This issue occurs because Reporting Services has a lock on a Microsoft Dynamics .dll file.</span></span> <span data-ttu-id="e476d-846">Reporting Servicesのインスタンスには、SQL Server 2016 service pack 2をインストールすることを推奨しています。</span><span class="sxs-lookup"><span data-stu-id="e476d-846">We currently recommend that you have SQL Server 2016 service pack 2 installed on Reporting Services instances.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="e476d-847">サービス パック2のインストールが必要し、累積的な更新を追加または修正プログラムをインストールする必要がないです。</span><span class="sxs-lookup"><span data-stu-id="e476d-847">You must have service pack 2 installed, and no additional cumulative updates or hotfixes must be installed.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="troubleshoot-on-prem.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>troubleshoot-on-prem.f1583c.2674b4c65d33369e0d4b96679c38bbffad3233fb.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>2674b4c65d33369e0d4b96679c38bbffad3233fb</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>d1029dcf8d890278fb90abd9a96f70654586533b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/30/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\deployment\troubleshoot-on-prem.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Troubleshoot on-premises deployments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置のトラブルシューティング</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Troubleshoot on-premises deployments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス配置のトラブルシューティング</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Access Service Fabric Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer へのアクセス</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>You can access Service Fabric Explorer in a web browser by using the default address, <ph id="ph1">`https://sf.d365ffo.onprem.contoso.com:19080`</ph>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer には、Web ブラウザーと既定のアドレス <ph id="ph1">`https://sf.d365ffo.onprem.contoso.com:19080`</ph> を使ってアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アドレスを確認するには、環境の適切なセットアップおよび配置トピックの「DNS ゾーンの作成と A レコードの追加」セクションで使用されていた値をメモします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#createdns)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#createdns)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#createdns)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#createdns)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>You can access the site only if the client certificate is in cert:<ph id="ph1">\\</ph>CurrentUser<ph id="ph2">\\</ph>My on the machine that you're accessing the site on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアント証明書が、サイトにアクセスするマシンの証明書、cert:<ph id="ph1">\\</ph>CurrentUser<ph id="ph2">\\</ph>My に含まれている場合のみ、サイトにアクセスできます</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>(In Certificate Manger, go to <bpt id="p1">**</bpt>Certificates - Current User<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Personal<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Certificates<ept id="p3">**</ept>.) When you access the site, select the client certificate when you're prompted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(証明書マネージャーで、<bpt id="p1">**</bpt>証明書 - 現在のユーザー<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>個人<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>証明書<ept id="p3">**</ept>に移動します。) サイトにアクセスしたとき、メッセージが表示されたら、クライアント証明書を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Monitor the deployment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置の監視</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Identify the primary orchestrator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プライマリ オーケストレータを識別します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>To determine the machine that is the primary instance for stateful services such as a local agent, in Service Fabric Explorer, expand <bpt id="p1">**</bpt>Cluster<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Applications<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt><ph id="ph3">\&lt;</ph><bpt id="p4">*</bpt>intended application example<ept id="p4">*</ept><ph id="ph4">\&gt;</ph> LocalAgentType<ept id="p3">**</ept> <ph id="ph5">\&gt;</ph> <bpt id="p5">**</bpt>fabric:/LocalAgent/OrchestrationService<ept id="p5">**</ept> <ph id="ph6">\&gt;</ph> <bpt id="p6">**</bpt>(GUID)<ept id="p6">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer でローカル エージェントなどのステートフル サービスのプライマリ インスタンスであるマシンを判別するには、<bpt id="p1">**</bpt>クラスター<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt><ph id="ph3">\&lt;</ph><bpt id="p4">*</bpt>対象のアプリケーションの例<ept id="p4">*</ept><ph id="ph4">\&gt;</ph> LocalAgentType<ept id="p3">**</ept> <ph id="ph5">\&gt;</ph> <bpt id="p5">**</bpt>fabric:/LocalAgent/OrchestrationService<ept id="p5">**</ept> <ph id="ph6">\&gt;</ph> <bpt id="p6">**</bpt>(GUID)<ept id="p6">**</ept> を展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The primary node is shown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プライマリ ノードが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>For stateless services or the remaining applications, you must check all the nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ステートレス サービスまたは残りのアプリケーションについては、すべてのノードを確認する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Note the following points:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のポイントに注意します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>OrchestrationService orchestrates the deployment and servicing actions for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OrchestrationService は、Finance and Operations の配置およびサービス アクションを調整します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>ArtifactsManager downloads files from Microsoft Azure cloud storage to the local agent file share.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ArtifactsManager は、ファイルを Microsoft Azure クラウド ストレージからローカル エージェント ファイル共有にダウンロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>It also unzips the files into the required format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを必要な形式にも解凍します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Review the orchestrator event logs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーケストレータ イベント ログを確認</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>From the primary OrchestrationService orchestrator machine, in Event Viewer, go to <bpt id="p1">**</bpt>Applications and Services Logs<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AX-LocalAgent<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアー内の プライマリ OrchestrationService オーケストレータ マシンから、 <bpt id="p1">**</bpt>アプリケーションとサービス ログ<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AX-LocalAgent<ept id="p4">**</ept> と移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>To view the full error message, you must select the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全なエラー メッセージを表示するには、 <bpt id="p1">**</bpt>詳細<ept id="p1">**</ept> タブを選択してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The following modules must be installed:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のモジュールがインストールされます:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Common</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">共通</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>ReportingServices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReportingServices</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>AOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>FinancialReporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReporting</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>The following commands must be run:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコマンドを実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Setup<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>セットアップ<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">**</bpt>Dvt<ept id="p1">**</ept> – This command runs a deployment verification test.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dvt<ept id="p1">**</ept> – このコマンドは配置検証テストを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">**</bpt>Cleanup<ept id="p1">**</ept> – This command is used to service and delete an environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Cleanup<ept id="p1">**</ept> – このコマンドは環境のサービスと削除に使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>The following folders contain additional information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のフォルダには、追加の情報が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>AX-SetupModuleEvents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX-SetupModuleEvents</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>AX-SetupInfrastructureEvents</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX-SetupInfrastructureEvents</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>AX-BridgeService</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX-BridgeService</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>To review Microsoft Dynamics entries in Event Viewer, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアーで Microsoft Dynamics エントリを確認するには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In Event Viewer, right-click <bpt id="p1">**</bpt>Custom Views<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Create Custom View<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアーで <bpt id="p1">**</bpt>カスタム ビュー<ept id="p1">**</ept> を右クリックして、<bpt id="p2">**</bpt>カスタム ビューの作成<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Create custom view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム表示の作成</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the <bpt id="p1">**</bpt>Event logs<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Dynamics<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>イベント ログ<ept id="p1">**</ept> フィールドで <bpt id="p2">**</bpt>Dynamics<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Select Dynamics</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics の選択</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Also look at <bpt id="p1">**</bpt>Administrative Events<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Custom Views<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、<bpt id="p2">**</bpt>カスタム ビュー<ept id="p2">**</ept> で <bpt id="p1">**</bpt>管理イベント<ept id="p1">**</ept> も確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Service Fabric Explorer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Note the state of the cluster, application, and nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスタ、アプリケーション、およびノードの状態に注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For information about how to access Service Fabric Explorer, see <bpt id="p1">[</bpt>Access Service Fabric Explorer<ept id="p1">](troubleshoot-on-prem.md#access-service-fabric-explorer)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer にアクセスする方法については、<bpt id="p1">[</bpt>Service Fabric Explorer にアクセスする<ept id="p1">](troubleshoot-on-prem.md#access-service-fabric-explorer)</ept>を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Error: "Partition is below target replica or instance count"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「パーティションがターゲット レプリカまたはインスタンス数を下回っています」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>You might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のエラーが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Partition is below target replica or instance count</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パーティションがターゲット レプリカまたはインスタンス数を下回っています</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>This error isn't a root error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーはルート エラーではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>It indicates that the status of each node isn't ready.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各ノードのステータスが準備できていないことを示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>For AXSFType (AOS), the status might still be <bpt id="p1">**</bpt>InBuild<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AXSFType (AOS) では、ステータスがまだ <bpt id="p1">**</bpt>InBuild<ept id="p1">**</ept> である可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>On the machines that are related to the error message, use Event Viewer to view the latest activity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー メッセージに関連するコンピューターで、イベント ビューアーを使用して最新の活動を表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>AXSFType</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AXSFType</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>If a status of <bpt id="p1">**</bpt>InBuild<ept id="p1">**</ept> is shown for AXSFType (AOS), review the DB Sync status and other events from Application Object Server (AOS) machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AXSFType (AOS) に <bpt id="p1">**</bpt>InBuild<ept id="p1">**</ept> のステータスが表示される場合、DB Sync ステータスおよび Application Object Server (AOS) コンピューターからの他のイベントを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>To diagnose errors, use Event Viewer to review the following event logs:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーを診断するには、イベント ビューアーを使用して次のイベント ログを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Applications and Services Logs <ph id="ph1">\&gt;</ph> Microsoft <ph id="ph2">\&gt;</ph> Dynamics <ph id="ph3">\&gt;</ph> AX-DatabaseSynchronize</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションとサービス ログ <ph id="ph1">\&gt;</ph> Microsoft <ph id="ph2">\&gt;</ph> Dynamics <ph id="ph3">\&gt;</ph> AX-DatabaseSynchronize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Custom Views <ph id="ph1">\&gt;</ph> Administrative Events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム ビュー <ph id="ph1">\&gt;</ph> 管理イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Error: "'ExtractInstallerService failed to extract' C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー: "'ExtractInstallerService は抽出に失敗しました' C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll"</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>You might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のエラーが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>"ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"ExtractInstallerService は抽出に失敗しました" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>If you receive this error, download the latest version of <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=730690)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーが発生した場合は <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=730690)</ept> の最新バージョンをダウンロードしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Note that the user name and path in the error message vary, depending on your environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー メッセージのユーザー名およびパスは、環境によって変化することに注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Service Fabric logs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric ログ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>You can find more details about Service Fabric applications in the log files at C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph><ph id="ph4">\&lt;</ph>OrchestratorMachineName<ph id="ph5">\&gt;</ph><ph id="ph6">\\</ph>Fabric<ph id="ph7">\\</ph>work<ph id="ph8">\\</ph>Applications<ph id="ph9">\\</ph>LocalAgentType<ph id="ph10">\_</ph>App<ph id="ph11">\&lt;</ph>N<ph id="ph12">\&gt;</ph><ph id="ph13">\\</ph>log.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric アプリケーションのさらなる詳細については、C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph><ph id="ph4">\&lt;</ph>OrchestratorMachineName<ph id="ph5">\&gt;</ph><ph id="ph6">\\</ph>Fabric<ph id="ph7">\\</ph>work<ph id="ph8">\\</ph>Applications<ph id="ph9">\\</ph>LocalAgentType<ph id="ph10">\_</ph>App<ph id="ph11">\&lt;</ph>N<ph id="ph12">\&gt;</ph><ph id="ph13">\\</ph>log のログ ファイルを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Lifecycle Services</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lifecycle Services</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Note the current deployment status for the environment in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) で環境のに対する現在の配置ステータスに注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>A time-out error occurs when a Service Fabric cluster is created</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric cluster の作成時にタイムアウト エラーが発生する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">該当するセットアップ トピックの "スタンドアロン <ph id="1">Service Fabric Cluster</ph> のセットアップ" セクションおよび環境の配置トピックに記載されているように Test-D365FOConfiguration.ps1 を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Note any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーに注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupsfcluster)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupsfcluster)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Be sure to complete these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの手順を必ず実行してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all Service Fabric nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての Service Fabric ノード上の LocalMachine ストアに Service Fabric Server クライント証明書が存在することを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Server 証明書にすべての Service Fabric ノード上にネットワーク サービス用アクセス制御リスト (ACL) が含まれていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Review the antivirus exclusions that are noted in <bpt id="p1">[</bpt>Environment setup<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>環境設定<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)</ept> で記載されているウイルス対策の除外を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>A time-out error occurs while you're waiting for Installer Service to be completed for machine x.x.x.x</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インストーラー サービスがマシン x.x.x.x で完了するのを待つ間にタイムアウト エラーが発生する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">インターネット プロトコル (IP) アドレスごとに (つまり、コンピューターごとに) 1 つのノード タイプがサポートされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Check whether the nodes are being reused on the same machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ノードが同じマシン上で再利用されているかどうかを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>For example, AOS and ORCH must not be on the same machine, and ConfigTemplate.xml must be correctly defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、AOS および ORCH は、同一のマシン上に存在してはならず、ConfigTemplate.xml が正しく定義されている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Remove a specific application</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特定のアプリケーションを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>We recommend that you use LCS to remove or clean up deployments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置の削除またはクリーンアップに LCS を使用することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>However, you can also use Service Fabric Explorer to remove an application as you require.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、必要に応じて、アプリケーションを削除する Service Fabric Explorer を使用することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>In Service Fabric Explorer, go to <bpt id="p1">**</bpt>Application node<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Applications<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>MonitoringAgentAppType-Agent<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric エクスプローラーで、<bpt id="p1">**</bpt>アプリケーション ノード<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>MonitoringAgentAppType-Agent<ept id="p3">**</ept> に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Select the ellipsis button (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) next to <bpt id="p2">**</bpt>fabric:/Agent-Monitoring<ept id="p2">**</ept>, and delete the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p2">**</bpt>ファブリック:/エージェント監視<ept id="p2">**</ept> の横にある省略記号ボタン (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) を選択し、アプリケーションを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Enter the full name of the application to confirm the deletion of the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションの完全な名前を入力して、アプリケーションの削除を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis button and then selecting <bpt id="p1">**</bpt>Unprovision Type<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、省略記号ボタンの選択および<bpt id="p1">**</bpt>非引当タイプ<ept id="p1">**</ept>の順に選択することにより、MonitoringAgentAppType-Agent を削除することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Enter the full name to confirm the removal of the application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションの削除を確認するために、正式名称を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Remove all applications from Service Fabric</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric からすべてのアプリケーションを削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>The following script removes and unprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のスクリプトは、LocalAgent および LocalAgent の監視エージェントを除く、すべての Service Fabric アプリケーションを削除してプロビジョニング解除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>You must run this script on an orchestrator virtual machine (VM).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーケストレータ仮想マシン (VM) 上でこのスクリプトを実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Remove Service Fabric</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric の削除</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>To completely remove the Service Fabric cluster, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric クラスターを完全に削除するには、以下の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Run the following command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>If an error occurs, remove a specific node on the cluster by using the <bpt id="p1">**</bpt>CleanFabric.ps1<ept id="p1">**</ept> command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーが発生した場合は、<bpt id="p1">**</bpt>CleanFabric.ps1<ept id="p1">**</ept>コマンドを使用して、クラスタ内の特定のノードを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>You can find this command in C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft Service Fabric<ph id="ph3">\\</ph>bin<ph id="ph4">\\</ph>fabric<ph id="ph5">\\</ph>fabric.code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドは、C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft Service Fabric<ph id="ph3">\\</ph>bin<ph id="ph4">\\</ph>fabric<ph id="ph5">\\</ph>fabric.code で検索することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Remove the <bpt id="p1">**</bpt>C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ept id="p1">**</ept> folder, if you're using the default location.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の場所を使用している場合、<bpt id="p1">**</bpt>C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ept id="p1">**</ept> フォルダーを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Otherwise, remove the specified folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合、指定したフォルダーを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>If you receive an "Access denied" error, restart Microsoft Windows PowerShell or the machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"アクセス拒否" エラーが発生した場合は、Microsoft Windows PowerShell を再起動するか、マシンを再起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Clean up an existing environment and redeploy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存環境のクリーンアップと再配置</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>To clean up an existing environment and redeploy, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既存の環境をクリーンアップして再配置するには、以下の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>In LCS, open the project, and then, in the <bpt id="p1">**</bpt>Environments<ept id="p1">**</ept> section, delete the deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS でプロジェクトを開き、<bpt id="p1">**</bpt>環境<ept id="p1">**</ept>セクションで展開を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>The applications should start to disappear from Service Fabric Explorer in the environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションが環境の Service Fabric Explorer から表示されなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>This process will take one to two minutes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロセスは 1、2 分かかります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Access the orchestrator machine that contains LocalAgentCLI.exe, and follow these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LocalAgentCLI.exe を含むオーケストレーター マシンにアクセスし、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Run the local agent cleanup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント クリーンアップを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Remove Service Fabric.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>If any nodes fail, run the <bpt id="p1">**</bpt>CleanFabric.ps1<ept id="p1">**</ept> command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ノードが失敗した場合、<bpt id="p1">**</bpt>CleanFabric.ps1<ept id="p1">**</ept> コマンドを実行してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>You can find this command in C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft Service Fabric<ph id="ph3">\\</ph>bin<ph id="ph4">\\</ph>fabric<ph id="ph5">\\</ph>fabric.code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコマンドは、C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft Service Fabric<ph id="ph3">\\</ph>bin<ph id="ph4">\\</ph>fabric<ph id="ph5">\\</ph>fabric.code で検索することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Remove the <bpt id="p1">**</bpt>C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph><ept id="p1">**</ept> folder on all Service Fabric nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての Service Fabric ノードの <bpt id="p1">**</bpt>C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph><ept id="p1">**</ept> フォルダーを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>If you receive an "Access denied" error, restart the machine, and try again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"アクセス拒否" エラーが発生した場合は、マシンを再起動してからもう一度実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Remove or update certificates as required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて証明書を削除または更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Remove old certificates from all AOS, BI, ORCH, and DC nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての AOS、BI、ORCH、および DC ノードから古い証明書を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>The certificates exist in the following certificate stores: Cert:<ph id="ph1">\\</ph>CurrentUser<ph id="ph2">\\</ph>My<ph id="ph3">\\</ph>, Cert:<ph id="ph4">\\</ph>LocalMachine<ph id="ph5">\\</ph>My, and Cert:<ph id="ph6">\\</ph>LocalMachine<ph id="ph7">\\</ph>Root.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書は、次の証明書ストアに存在します: Cert:<ph id="ph1">\\</ph>CurrentUser<ph id="ph2">\\</ph>My<ph id="ph3">\\</ph>、Cert:<ph id="ph4">\\</ph>LocalMachine<ph id="ph5">\\</ph>My, and Cert:<ph id="ph6">\\</ph>LocalMachine<ph id="ph7">\\</ph>Root。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>If the setup of Microsoft SQL Server will be modified, remove the SQL Server certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft SQL Server の設定が変更される場合は、SQL Server 証明書を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>If the settings for Active Directory Federation Services (AD FS) will be modified, remove the AD FS certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Active Directory フェデレーション サービス (AD FS) の設定が変更される場合は、AD FS 証明書を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Update the following configuration files as required:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必要に応じて、次の構成ファイルを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>ConfigTemplate.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ConfigTemplate.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>ClusterConfig.json</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ClusterConfig.json</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テンプレートのフィールドに正しく入力する方法については、ご使用の環境に適した設定と配置のトピックを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>In LCS, open the project, and update the LCS on-premises connector as required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS でプロジェクトを開き、必要に応じて LCS のオンプレミス コネクタを更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Re-create the LCS on-premises connector for the environment, or edit the settings of an existing connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境の LCS オンプレミス コネクタを再作成するか、または既存のコネクタの設定を編集します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>To obtain easy-to-copy values for LCS, use the .<ph id="ph1">\\</ph>Get-AgentConfiguration.ps1 script.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS の値を簡単にコピーするには、.<ph id="ph1">\\</ph>Get-AgentConfiguration.ps1 script を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Download the latest local agent configuration, localagent-config.json.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最新のローカル エージェント コンフィギュレーション、localagent config.json をダウンロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Deploy again by following the instructions in the appropriate setup and deployment topic for the environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境に適したセットアップと展開のトピックで次の指示に従って、再度展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md)</ept>。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Find the local agent values that are used</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用するローカル エージェント値の検索</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>You can find local agent values in Service Fabric Explorer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer でローカル エージェント値を見つけることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Go to <bpt id="p1">**</bpt>Cluster<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Applications<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>LocalAgentType<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>fabric:/LocalAgent<ept id="p4">**</ept>, and then select <bpt id="p5">**</bpt>Details<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クラスター<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>LocalAgentType<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>fabric:/LocalAgent<ept id="p4">**</ept> に移動して <bpt id="p5">**</bpt>詳細<ept id="p5">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Alternatively, run the following Windows PowerShell command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、次の Windows PowerShell コマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Install, upgrade, or uninstall a local agent</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">ローカル エージェントのインストール、アップグレード、アンインストール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>For information about how to update the local agent, see <bpt id="p1">[</bpt>Update the local agent<ept id="p1">](../lifecycle-services/update-local-agent.md)</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">ローカルエージェントを更新する方法については、 <bpt id="p1">[</bpt>ローカルエージェントを更新する<ept id="p1">](../lifecycle-services/update-local-agent.md)</ept> を参照してください。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>You can also use the following upgrade and uninstallation commands:</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">また、以下のアップグレードおよびアンインストール コマンドを使用することができます:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>The <bpt id="p1">**</bpt>Cleanup<ept id="p1">**</ept> command doesn't remove any files that were put in the file share.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>クリーンアップ<ept id="p1">**</ept> コマンドはファイル共有に配置された一切のファイルを削除しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>The file share can be reused.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル共有は再利用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>An error occurs when local agent services are started</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント サービスを開始される際にエラーが発生</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>When local agent services are started, you might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント サービスが開始されると、次のエラーが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Could not load file or assembly 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイル、アセンブリ 'Lcs.DeploymentAgent.Proxy.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'、もしくはその依存関係の 1 つをロードできませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>This error means that strong name verification is turned on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーは厳密な名前検証が有効になっていることを意味します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>You can turn off this verification by using Configure-PreReqs.ps1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Configure-PreReqs.ps1 を使用して、この確認をオフにすることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>To validate that strong name verification is no longer turned on, run Test-D365FOConfiguration.ps1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">厳密な名前検証がもう有効になっていないことを確認するには、Test-D365FOConfiguration.ps1 を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>A "Validation in progress" message is shown for several minutes in LCS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「検証が進行中」のメッセージが LCS に数分表示</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Follow these steps to troubleshoot general issues with local agent validation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェントの検証に関する一般的な問題をトラブルシューティングするには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Run <bpt id="p1">**</bpt>Configure-PreReqs.ps1<ept id="p1">**</ept> on all orchestrator machines to configure the machines correctly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューターを正しくコンフィギュレーションするすべてのオーケストレータ機械で <bpt id="p1">**</bpt>Configure-PreReqs.ps1<ept id="p1">**</ept> を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Verify that the Test-D365FOConfiguration.ps1 script passes on all the orchestrator machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Test-D365FOConfiguration.ps1 スクリプトがすべてのオーケストレータ マシンで通ることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Verify that the installation of LocalAgentCLI.exe is successfully completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LocalAgentCLI.exe のインストールが正常に完了したことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>In Service Fabric Explorer, verify that all the applications are healthy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer で、すべてのアプリケーションが正常であることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>If the applications aren't healthy, find the primary node for the service that is failing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションが正常でない場合は、障害が発生しているサービスのプライマリ ノードを探します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>In Event Viewer, look for events in the following locations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアーでは、次の場所でのイベントを検索します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Custom Views <ph id="ph1">\&gt;</ph> Administrative Events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">カスタム ビュー <ph id="ph1">\&gt;</ph> 管理イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Applications and Services Log <ph id="ph1">\&gt;</ph> Microsoft <ph id="ph2">\&gt;</ph> Dynamics <ph id="ph3">\&gt;</ph> AX-LocalAgent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーションとサービス ログ <ph id="ph1">\&gt;</ph> Microsoft <ph id="ph2">\&gt;</ph> Dynamics <ph id="ph3">\&gt;</ph> AX-LocalAgent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Local agent errors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Issue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">出庫</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept> You might receive the following errors:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept> 次のエラーが表示される場合があります:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Unable to process commands</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドを処理できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Unable to get the channel information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">チャンネル情報を取得できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>RunAsync failed due to an unhandled exception causing the host process to crash: System.ArgumentNullException: Value cannot be null.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ホスト プロセスがクラッシュする処理されない例外が原因で RunAsync が失敗しました: System.ArgumentNullException: 値を null にすることはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Parameter name: certificate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター名: 証明書</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> These errors can occur because the certificate that is specified for the OnPremLocalAgent certificate either isn't valid or isn't correctly configured for the tenant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> これらのエラーは OnPremLocalAgent 証明書に指定された証明書が有効でないか、またはテナントに対して正しく構成されていないために発生することがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> Follow these steps to resolve the error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> エラーを解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Run <bpt id="p1">**</bpt>Test-D365FOConfiguration.ps1<ept id="p1">**</ept> on all orchestrator nodes to make sure that all checks pass.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのオーケストレータ ノードで <bpt id="p1">**</bpt>Test-D365FOConfiguration.ps1<ept id="p1">**</ept> を実行し、すべてのチェックに合格することを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Verify that the certificate that is specified in the local agent configuration is correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント コンフィギュレーションに指定された証明書が正しいことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Make sure that the thumbprint that you specify in LCS and in the ConfigTemplate.xml file has no special characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS および ConfigTemplate.xml ファイルで指定する拇印に特殊文字がないことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>The certificate should be the same certificate that is specified in the following section in infrastructure<ph id="ph1">\\</ph>ConfigTemplate.xml.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書は、infrastructure<ph id="ph1">\\</ph>ConfigTemplate.xml の次のセクションで指定されているものと同じ証明書である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS のローカル エージェント コンフィギュレーションで指定される同じ証明書が、環境に対する適切な設定および配置トピックの「テナント用 LCS 接続の構成」セクションで手順の完了に使用されたことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configurelcs)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configurelcs)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#configurelcs)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#configurelcs)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Uninstall the local agent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェントをアンインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Specify the correct certificate in the local agent configuration, and download the configuration file again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント コンフィギュレーションで正しい証明書を指定し、もう一度コンフィギュレーション ファイルをダウンロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Install the local agent again by using the new configuration file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい構成ファイルを使用してもう一度ローカル エージェントをインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept> During servicing, you receive an "Unable to download asset" error, and the details state, "The credentials supplied to the package were not recognized."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept> サービス中に "資産をダウンロードできません" というエラーが表示され、詳細に "パッケージに提供された資格情報が認識されません" と表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> The ACL wasn't correctly defined on certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> ACL が証明書で正しく定義されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Check whether ACL was removed from client certificate on orchestrator machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーケストレータ マシンのクライアント証明書から ACL が削除されたかを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Run the .\Test-D365FOConfiguration.ps1 script on orchestrator machines, and verify the ACL.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オーケストレータ マシンの .\Test-D365FOConfiguration.ps1 スクリプトを実行し、ACL を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーを解決するには、.\Set-CertificateAcls.ps1 スクリプトを実行して ACL をリセットします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Access to the path '<ph id="ph1">\\</ph>...<ph id="ph2">\\</ph>agent<ph id="ph3">\\</ph>assets<ph id="ph4">\\</ph>StandAloneSetup-76308-1.zip' is denied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パス '<ph id="ph1">\\</ph>...<ph id="ph2">\\</ph>agent<ph id="ph3">\\</ph>assets<ph id="ph4">\\</ph>StandAloneSetup-76308-1.zip' へアクセスすることは、拒否されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> The file share that is specified in the local agent configuration isn't valid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> ローカル エージェント コンフィギュレーションで指定されたファイル共有が無効です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> Follow these steps to resolve the error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> エラーを解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Verify that the specified share exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指定した共有が存在することを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Verify that the local agent user has full permission on the share.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント ユーザーが共有への完全なアクセス許可を持っていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>The local agent user is the Domain Name System (DNS) name that is specified in the following section in ConfigTemplate.xml.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント ユーザーは、次のセクションの ConfigTemplate.xml で指定されるドメイン ネーム システム (DNS) 名です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Make sure that the "Set up file storage" section of the appropriate setup and deployment topic for your environment is completed:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックが完了したことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupfile)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupfile)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupfile)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupfile)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Uninstall the local agent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェントをアンインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Specify the correct file share in the local agent configuration, and download the configuration file again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント コンフィギュレーションで正しいファイル共有指定し、もう一度コンフィギュレーション ファイルをダウンロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Install the local agent again by using the new configuration file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい構成ファイルを使用してもう一度ローカル エージェントをインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept> When you do a servicing operation, you receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept> サービス操作を行うと次のエラーが表示されます:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Unable to get extract setup folder for command</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドの抽出セットアップ フォルダーを取得できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> The file share has been removed or changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> そのファイル共有は削除または変更されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> To see what the file share is set to, open Microsoft SQL Server Management Studio, and run the following query on the orchestrator database:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>手順:<ept id="p1">**</ept> ファイル共有の設定内容を確認するには、Microsoft SQL Server Management Studio を開いてオーケストレータ データベースで次のクエリを実行します:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Login failed for user 'D365<ph id="ph1">\\</ph>svc-LocalAgent$'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザー 'D365<ph id="ph1">\\</ph>svc-LocalAgent$' へのログインが失敗しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Reason: Could not find a login matching the name provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">理由: 指定した名前に一致するログインが見つかりませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source><ph id="ph1">\[</ph>CLIENT: 10.0.2.23<ph id="ph2">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>CLIENT: 10.0.2.23<ph id="ph2">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> The local agent user can't connect to the orchestrator database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> ローカル エージェント ユーザーはオーケストレーション データベースに接続できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>This issue can occur because users have been deleted and then re-created in Active Directory Domain Services (AD DS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーが削除され、Active Directory ドメイン サービス (AD DS) に再作成されているために、この問題が発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Therefore, the security identifier (SID) of the user has changed, and any access that was given to the user for the SQL Server instance or the database no longer works.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、ユーザーのセキュリティ識別子 (SID) が変更され、SQL Server インスタンスまたはデータベースのユーザーに与えられたアクセスは機能しなくなります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> Follow these steps to resolve the error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> エラーを解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Run the following script on the SQL Server instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server インスタンスで次のスクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>This script creates an empty orchestrator database, if an empty database doesn't already exist.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このスクリプトは、空のデータベースがまだ存在していない場合に、空のオーケストレータ データベースを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>It then adds the local agent user to the database and gives it db<ph id="ph1">\_</ph>owner permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント ユーザーをデータベースに追加し、データベース<ph id="ph1">\_</ph>アクセス許可の所有者に渡します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>After the correct permissions are provided, the application should automatically go to a healthy state.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適切なアクセス許可が付与された後、アプリケーションは自動的に正常な状態になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>If any settings, such as the fully qualified domain name (FQDN) of the SQL Server instance, the database name, or the local agent user, were provided incorrectly in LCS, change the settings, and then reinstall the local agent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server インスタンスの完全修飾ドメイン名 (FQDN)、データベース名、ローカル エージェント ユーザーなどの設定が LCS で間違って提供された場合は、設定を変更し、ローカル エージェントを再インストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>If the preceding steps don't resolve the error, manually remove the local agent user from the SQL Server instance and the database, and then rerun the Initialize-Database script.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記の手順でエラーが解決しない場合は、SQL Server インスタンスとデータベースからローカル エージェント ユーザーを手動で削除し、Initialize-Database スクリプトを再実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>If you re-create a user in AD DS, remember that the SID will change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD DS でユーザーを再作成する場合、SID が変更されることに注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>In this case, remove the previous SID for the user, and add a new SID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、ユーザーの以前の SID を削除し、新しい SID を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Unable to migrate database</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースを移行できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Verify that you have access to the SQL Server listener.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server リスナーへのアクセスがあることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>If you're doing testing, you can start over and use an empty orchestrator database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テストをしている場合は、最初からやり直して空のオーケストレータ データベースを使用できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Issue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題点</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>When you performing the <bpt id="p1">[</bpt>Configure the databases<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb)</ept> procedure, if the SQL Server instance is a named instance, use the <bpt id="p2">**</bpt>-DatabaseServer <ph id="ph1">\[</ph>FQDN/Instancename<ph id="ph2">\]</ph><ept id="p2">**</ept> parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>データベースを構成する<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb)</ept> プロシージャを実行するときに SQL Server インスタンスが名前付きインスタンスの場合は、<bpt id="p2">**</bpt>-DatabaseServer <ph id="ph1">\[</ph>FQDN/Instancename<ph id="ph2">\]</ph><ept id="p2">**</ept> パラメーターを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Issue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題点</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>The local agent user can't connect to the SQL Server instance or the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェント ユーザーは、SQL Server インスタンスまたはデータベースに接続できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> Follow these steps to resolve the error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> エラーを解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Delete the svc-LocalAgent user from the SQL Server primary node databases, and then remove the login from both servers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server のプライマリ ノード データベースから svc-LocalAgent ユーザーを削除し、両方のサーバーからログインを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Run the following scripts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のスクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>These scripts don't work when an <bpt id="p1">**</bpt>always-on<ept id="p1">**</ept> setup is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらのスクリプトは、<bpt id="p1">**</bpt>常時オン<ept id="p1">**</ept>に設定されているときは機能しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>The database must first be created in the primary node and then replicated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースは最初にプライマリ ノードに作成されてから複製される必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RunAsync は、処理されていない例外が原因でホスト プロセスがクラッシュするため、失敗しました。System.Net.Http.HttpRequestException: 要求の送信中にエラーが発生しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source><ph id="ph1"> ---</ph><ph id="ph2">\&gt;</ph> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> ---</ph><ph id="ph2">\&gt;</ph> System.Net.WebException: リモート名を解決できませんでした: 'lcsapi.lcs.dynamics.com'</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> The local agent machines can't connect to lcsapi.lcs.dynamics.com.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> ローカル エージェント マシンは lcsapi.lcs.dynamics.com に接続できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「リモート名を解決できませんでした: 'lcsapi.lcs.dynamics.com'」に対する AX-BridgeService イベント ログを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> Follow these steps to resolve the error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> エラーを解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Run <bpt id="p1">**</bpt>psping lcsapi.lcs.dynamics.com:80<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>psping lcsapi.lcs.dynamics.com:80<ept id="p1">**</ept> を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>If you don't receive a response from the preceding command, contact the IT department at your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">前述のコマンドから応答を受信しない場合は、組織の IT 部門に問い合わせます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Either the firewall is blocking access to lcsapi, or proxy issues are occurring.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイアウォールが lcsapi へのアクセスをブロックしているか、もしくはプロキシの問題が発生しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Restart applications (such as AOS)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション (AOS など) を再起動</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>In Service Fabric, expand <bpt id="p1">**</bpt>Nodes<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AOSx<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>fabric:/AXSF<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AXSF<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>Code Packages<ept id="p5">**</ept> <ph id="ph5">\&gt;</ph> <bpt id="p6">**</bpt>Code<ept id="p6">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric で、<bpt id="p1">**</bpt>ノード<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AOSx<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>fabric:/AXSF<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AXSF<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>コード パッケージ<ept id="p5">**</ept> <ph id="ph5">\&gt;</ph> <bpt id="p6">**</bpt>コード<ept id="p6">**</ept>の順に展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Select the ellipsis button (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>), and then select <bpt id="p2">**</bpt>Restart<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">省略記号ボタン (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) を選択し、<bpt id="p2">**</bpt>再起動<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>When you're prompted, enter the code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">求められたらコードを入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Upgrade Service Fabric</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric を更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Service Fabric Explorer will show a message that resembles the following message:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer は次のようなメッセージを表示します:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題のあるイベント: SourceId=「System.UpgradeOrchestrationService」、プロパティ =「ClusterVersionSupport」、HealthState=「警告」、ConsiderWarningAsError=false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在のクラスタ バージョン 6.1.467.9494 のサポートは、5/30/2018 12:00:00 AM に終了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Get-ServiceFabricRegisteredClusterCodeVersion を使用して利用可能なアップグレードを表示し、Start-ServiceFabricClusterUpgrade を使用してアップグレードしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Because the minimum requirement is one Microsoft SQL Server Reporting Services (SSRS) node and one Management Reporter node, you must pass in a parameter to skip PreUpgradeSafetyCheck.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最小要件が 1 つの Microsoft SQL Server Reporting Services (SSRS) ノードと 1 つの Management Reporter ノードであるため、PreUpgradeSafetyCheck をスキップするパラメータを渡す必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Follow these steps to upgrade Service Fabric in Windows PowerShell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows PowerShell で Service Fabric をアップグレードするにはこれらの手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Connect to the Service Fabric cluster.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="1">Service Fabric Cluster</ph> に接続します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>In the following command, replace <bpt id="p1">**</bpt>123<ept id="p1">**</ept> with the server/star thumbprint, and use the appropriate IP address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコマンドで <bpt id="p1">**</bpt>123<ept id="p1">**</ept> をサーバー / スター拇印に置き換えて、適切な IP アドレスを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Get the latest version that was downloaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダウンロードされた最新バージョンを取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Start the upgrade.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードを開始します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>For <bpt id="p1">**</bpt>-CodePackageVersion<ept id="p1">**</ept>, enter the latest version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>-CodePackageVersion<ept id="p1">**</ept> には、最新バージョンを入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source><bpt id="p1">**</bpt>-UpgradeReplicaSetCheckTimeout<ept id="p1">**</ept> is used to skip PreUpgradeSafetyCheck for SSRS and Management Reporter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>-UpgradeReplicaSetCheckTimeout<ept id="p1">**</ept> は SSRS と Management Reporter の PreUpgradeSafetyCheck をスキップするために使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>For more information, see <bpt id="p1">[</bpt>Service Fabric service upgrade not working<ept id="p1">](https://github.com/Azure/service-fabric-issues/issues/595)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>Service Fabric サービスのアップグレードが動作しない<ept id="p1">](https://github.com/Azure/service-fabric-issues/issues/595)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>You might also want to use <bpt id="p1">**</bpt>-UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>UpgradeDomainTimeoutSec 600 UpgradeTimeoutSec 1800<ept id="p1">**</ept> を使用することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>For more information, see <bpt id="p1">[</bpt>Application upgrade parameters<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-parameters)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>アプリケーション アップグレード パラメーター<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-parameters)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Get the upgrade status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレードの状態を取得します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>For more information, see <bpt id="p1">[</bpt>Troubleshoot application upgrades<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-troubleshooting)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>アプリケーション アップグレードのトラブルシューティング<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-troubleshooting)</ept>を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>To learn when a new Service Fabric release comes out, see the <bpt id="p1">[</bpt>Azure Service Fabric team blog<ept id="p1">](https://blogs.msdn.microsoft.com/azureservicefabric/)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい Service Fabric リリースの時期については、<bpt id="p1">[</bpt>Azure Service Fabric チームのブログ<ept id="p1">](https://blogs.msdn.microsoft.com/azureservicefabric/)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart by expanding <bpt id="p1">**</bpt>Nodes<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AOSx<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>fabric:/AXSF<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AXSF<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>Code Packages<ept id="p5">**</ept> <ph id="ph5">\&gt;</ph> <bpt id="p6">**</bpt>Code<ept id="p6">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アップグレード後に Service Fabric Explorer で警告が表示された場合は、ノードを記録して、<bpt id="p1">**</bpt>ノード<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AOSx<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>fabric:/AXSF<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AXSF<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>コード パッケージ<ept id="p5">**</ept> <ph id="ph5">\&gt;</ph> <bpt id="p6">**</bpt>コード<ept id="p6">**</ept> を展開して再起動してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Select the ellipsis button (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>), and then select <bpt id="p2">**</bpt>Restart<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">省略記号ボタン (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) を選択し、<bpt id="p2">**</bpt>再起動<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Error: "Unable to load DLL 'FabricClient.dll'"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「DLL 'FabricClient.dll' を読み込むことができません」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>If you receive an error that states, "Unable to load DLL 'FabricClient.dll'," close and restart Windows PowerShell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"DLL 'FabricClient.dll' をロードできません" というエラーが表示された場合は、Windows PowerShellを 閉じて再起動してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>If the error persists, restart the machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーが引き続き発生する場合は、コンピューターを再起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>What cluster ID should be used in the agent configuration?</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エージェント コンフィギュレーションでどのようなクラスター ID を使用する必要がありますか。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>The cluster ID can be any globally unique identifier (GUID).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスタ ID は、任意のグローバル一意識別子 (GUID) です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>This GUID is used for tracking purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この GUID は、追跡目的で使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Encryption errors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">暗号化エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrapper," "AXDiagnostics," "RTGatewayAppType," "Gateway potential failure related," and "Microsoft.D365.Gateways.ClusterGateway.exe."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">暗号化エラーの例は "AXBootstrapperAppType"、"Bootstrapper"、"AXDiagnostics"、"RTGatewayAppType"、"ゲートウェイの潜在的なエラー関連"、 "Microsoft.D365.Gateways.ClusterGateway.exe" を含みます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS アカウント パスワードを暗号化するために使用されたデータ暗号化証明書がマシンにインストールされていない場合、これらのエラーのいずれかが発生することがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>This certificate might be in the certificates (local computer), or the provider type might be incorrect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この証明書が証明書 (ローカル コンピューター) に含まれているか、プロバイダーの種類が正しくない可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>To resolve the error, validate the credentials.json file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーを解決するには、credentials.json ファイルを検証します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Verify that the text is correctly decrypted by entering the following command (on AOS1).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコマンドを (AOS1 上で) 入力することにより、テキストが正しく復号化されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>This error can also occur if the <bpt id="p1">**</bpt>''<ept id="p1">**</ept> parameter isn't defined in the ApplicationManifest file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーも、<bpt id="p1">**</bpt>''<ept id="p1">**</ept> パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>To determine whether this parameter is defined, in Event Viewer, go to <bpt id="p1">**</bpt>Custom Views<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Administrative Events<ept id="p2">**</ept>, and verify the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアーで、このパラメータが定義されているどうかを確認するには、<bpt id="p1">**</bpt>カスタム ビュー<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>管理イベント<ept id="p2">**</ept>の順に移動し、次の情報を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>The encrypt credentials for the credentials.json file have the correct layout/structure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Credentials.json ファイルの資格情報の暗号化には、正しいレイアウト/構造があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>For more information, see the "Encrypt credentials" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、ご使用の環境に適した設定および配置のトピックの「資格情報の暗号化」のセクションを参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#encryptcred)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#encryptcred)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#encryptcred)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#encryptcred)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>A closing quotation mark appears at the end of the line or on the next line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">決算引用符が線の終わりまたは次の線に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>In Event Viewer, under <bpt id="p1">**</bpt>Custom Views<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Administrative Events<ept id="p2">**</ept>, note any errors in the <bpt id="p3">**</bpt>Microsoft-Service Fabric<ept id="p3">**</ept> source category.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアーの <bpt id="p1">**</bpt>カスタム ビュー<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>管理イベント<ept id="p2">**</ept> で、<bpt id="p3">**</bpt>Microsoft-Service Fabric<ept id="p3">**</ept> ソース カテゴリのエラーに注意します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Properties to create a DataEncryption certificate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DataEncryption 証明書を作成するためのプロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Use the following properties to create the DataEncryption certificate:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DataEncryption 証明書を作成するのにには、次のプロパティを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source><bpt id="p1">**</bpt>Is self-signed certificate<ept id="p1">**</ept> – Enable this parameter only when you're using self-signed certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>自己署名証明書<ept id="p1">**</ept> – このパラメータは、自己署名証明書を使用する場合にのみ有効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source><bpt id="p1">**</bpt>Certificate purposes<ept id="p1">**</ept> – Enable all purposes for this certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>証明書の目的<ept id="p1">**</ept> – この証明書のすべての目的を有効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source><bpt id="p1">**</bpt>Signature algorithm<ept id="p1">**</ept> – Specify <bpt id="p2">**</bpt>sha256RSA<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>署名アルゴリズム<ept id="p1">**</ept> – <bpt id="p2">**</bpt>sha256RSA<ept id="p2">**</ept> を指定してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source><bpt id="p1">**</bpt>Signature hash algorithm<ept id="p1">**</ept> – Specify <bpt id="p2">**</bpt>sha256<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>署名ハッシュ アルゴリズム<ept id="p1">**</ept> – <bpt id="p2">**</bpt>sha256<ept id="p2">**</ept> を指定してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source><bpt id="p1">**</bpt>Issuer<ept id="p1">**</ept> – Specify <bpt id="p2">**</bpt>CN = DataEncryptionCertificate<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>発行者<ept id="p1">**</ept> – 指定 <bpt id="p2">**</bpt>CN = DataEncryptionCertificate<ept id="p2">**</ept>。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source><bpt id="p1">**</bpt>Public Key<ept id="p1">**</ept> – Specify <bpt id="p2">**</bpt>RSA (2048 bits)<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>公開キー<ept id="p1">**</ept> – <bpt id="p2">**</bpt>RSA (2048 ビット)<ept id="p2">**</ept> を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source><bpt id="p1">**</bpt>Thumbprint algorithm<ept id="p1">**</ept> – Specify <bpt id="p2">**</bpt>sha1<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Thumbprint アルゴリズム<ept id="p1">**</ept> – <bpt id="p2">**</bpt>sha1<ept id="p2">**</ept> を指定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Don't use self-signed certificates in production environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">実稼働環境では、自己署名証明書を使用しないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Instead, use certificates that are issued by certificate authorities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">代わりに、証明書機関によって発行された証明書を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>The certificate and private key that should be used for decryption can't be found (0x8009200C)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">暗号の解読に使用すべき証明書と秘密キーを見つけることができません (0x8009200C)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>If you're missing a certificate and ACL, or if you have the wrong thumbprint entry, check for special characters, and look for thumbprints in C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph><ph id="ph4">\&lt;</ph>AOSMachineName<ph id="ph5">\&gt;</ph><ph id="ph6">\\</ph>Fabric<ph id="ph7">\\</ph>work<ph id="ph8">\\</ph>Applications<ph id="ph9">\\</ph>AXBootstrapperAppType<ph id="ph10">\_</ph>App<ph id="ph11">\&lt;</ph>N<ph id="ph12">\&gt;</ph><ph id="ph13">\\</ph>log<ph id="ph14">\\</ph>ConfigureCertificates-<ph id="ph15">\&lt;</ph>timestamp<ph id="ph16">\&gt;</ph>.txt.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書と ACL がない、または間違った拇印の入力がある場合は、特殊文字をチェックし、C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph><ph id="ph4">\&lt;</ph>AOSMachineName<ph id="ph5">\&gt;</ph><ph id="ph6">\\</ph>Fabric<ph id="ph7">\\</ph>work<ph id="ph8">\\</ph>Applications<ph id="ph9">\\</ph>AXBootstrapperAppType<ph id="ph10">\_</ph>App<ph id="ph11">\&lt;</ph>N<ph id="ph12">\&gt;</ph><ph id="ph13">\\</ph>log<ph id="ph14">\\</ph>ConfigureCertificates-<ph id="ph15">\&lt;</ph>timestamp<ph id="ph16">\&gt;</ph>.txt で拇印を探します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>You can also validate the encrypted text by using the following command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のコマンドを使用して暗号化されたテキストを検証することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「暗号の解読に使用する証明書と秘密キーを見つけることができません」というメッセージを受信した場合は、axdataenciphermentcert と svc-AXSF$ AXServiceUser ACLs を確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>If the credentials.json file has changed, delete and redeploy the environment from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">credentials.json ファイルが変更された場合は、LCS から環境を削除して再配置します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>If none of the preceding solutions work, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記のソリューションのいずれも機能しない場合は、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Verify that the domain name and Active Directory account names that are specified in the ConfigTemplate.xml file are correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ConfigTemplate.xml ファイルで指定されたドメイン名と Active Directory アカウント名が正しいことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>Verify that the thumbprints that are specified in the ConfigTemplate.xml file are correct if the certificate wasn't generated by using the scripts that are provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">用意されたスクリプトを使用して証明書が生成されなかった場合に ConfigTemplate.xml ファイルで指定された拇印が正しいことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Verify that the certificate thumbprints that are specified in LCS are correct, and that they match the thumbprints that are specified in ConfigTemplate.xml.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS で指定された証明書の拇印が正しく、ConfigTemplate.xml で指定されたものと拇印が一致することを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Make sure that there are no special characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">特殊文字がないことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>You can run <bpt id="p1">**</bpt>.<ph id="ph1">\\</ph>Get-DeploymentSettings.ps1<ept id="p1">**</ept> to obtain the thumbprints in an easy-to-copy manner.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>.<ph id="ph1">\\</ph>Get-DeploymentSettings.ps1<ept id="p1">**</ept> を実行して、コピーしやすい方法で拇印を取得することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>If the certificates aren't self-generated, make sure that the provider names match for the following certificate types:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書が自己生成されない場合、プロバイダー名が次の証明書タイプと一致することを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source><bpt id="p1">**</bpt>ServiceFabricEncryption type:<ept id="p1">**</ept> Microsoft Enhanced Cryptographic Provider v1.0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ServiceFabricEncryption type:<ept id="p1">**</ept>Microsoft Enhanced Cryptographic Provider v1.0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source><bpt id="p1">**</bpt>All other certificate types:<ept id="p1">**</ept> Microsoft Enhanced RSA and AES Cryptographic Provider</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>その他のすべての証明書タイプ:<ept id="p1">**</ept> Microsoft の拡張された RSA および AES 暗号化プロバイダー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>Verify that the Set-CertificateAcls.ps1 and Test-D365FOConfiguration.ps1 scripts were successfully run on all Service Fabric machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Set-CertificateAcls.ps1 および Test-D365FOConfiguration.ps1 スクリプトがすべての Service Fabric マシンで正常に実行されたことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Verify that the credentials.json file exists, and that the entries are decrypted to correct values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Credentials.json ファイルが存在し、エントリが適切な値に復号化されるよう確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>On one of the AOS machines, run the following command to verify that the data encryption certificate is correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS マシンのいずれかで、データの暗号化証明書が正しいことを確認する次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>If any of the certificates must be changed, or if the configuration was incorrect, follow these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">いずれかの証明書を変更する必要がある場合、もしくは構成が正しくない場合は、次の手順を実行してください:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>Edit the <bpt id="p1">**</bpt>ConfigTemplate.xml<ept id="p1">**</ept> file so that it has the correct values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ConfigTemplate.xml<ept id="p1">**</ept> ファイルを編集して、正しい値が出るようにします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Run all the setup scripts and the <bpt id="p1">**</bpt>Test-D365FOConfiguration<ept id="p1">**</ept> script.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのセットアップ スクリプトと <bpt id="p1">**</bpt>Test-D365FOConfiguration<ept id="p1">**</ept> スクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>In LCS, reconfigure the environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS で環境を再構成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Management Reporter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Additional logging can be done by registering providers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のログは、プロバイダーを登録することで実行できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>Download <bpt id="p1">[</bpt>ETWManifest.zip<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=864672)</ept> to the <bpt id="p2">**</bpt>primary<ept id="p2">**</ept> orchestrator machine, and then run the following commands.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ETWManifest.zip<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=864672)</ept> を <bpt id="p2">**</bpt>プライマリ<ept id="p2">**</ept>オーケストレータ マシン にダウンロードし、次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>To determine which machine is the primary instance, in Service Fabric Explorer, expand <bpt id="p1">**</bpt>Cluster<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Applications<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>LocalAgentType<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>fabric:/LocalAgent/OrchestrationService<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>(GUID)<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、<bpt id="p1">**</bpt>クラスター<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>LocalAgentType<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>fabric:/LocalAgent/OrchestrationService<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>(GUID)<ept id="p5">**</ept> の順に展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>To get the latest manifest and .dll files, go to the WP folder in the agent file share.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupfile)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupfile)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupfile)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupfile)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source><bpt id="p1">**</bpt>Example:<ept id="p1">**</ept> <ph id="ph1">\[</ph><bpt id="p2">*</bpt>Agent Share<ept id="p2">*</ept><ph id="ph2">\]</ph><ph id="ph3">\\</ph>wp<ph id="ph4">\\</ph><ph id="ph5">\[</ph><bpt id="p3">*</bpt>Deployment name<ept id="p3">*</ept><ph id="ph6">\]</ph><ph id="ph7">\\</ph>StandaloneSetup-...<ph id="ph8">\\</ph>Apps<ph id="ph9">\\</ph>ETWManifests</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>例:<ept id="p1">**</ept> <ph id="ph1">\[</ph><bpt id="p2">*</bpt>エージェント共有<ept id="p2">*</ept><ph id="ph2">\]</ph><ph id="ph3">\\</ph>wp<ph id="ph4">\\</ph><ph id="ph5">\[</ph><bpt id="p3">*</bpt>配置名<ept id="p3">*</ept><ph id="ph6">\]</ph><ph id="ph7">\\</ph>StandaloneSetup-...<ph id="ph8">\\</ph>アプリ<ph id="ph9">\\</ph> ETWManifests</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>If you must unregister providers, use the following command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロバイダーの登録を解除する必要がある場合は、次のコマンドを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>After providers are registered, additional details about the new deployment are logged in Event Viewer, at <bpt id="p1">**</bpt>Applications and Services Logs<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロバイダーが登録されると、新しい配置についての追加詳細は<bpt id="p1">**</bpt>アプリケーションとサービス ログ<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> でイベント ビューアーにログインされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>The following folders will be shown:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のフォルダが表示されます:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>MR-Logger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MR-Logger</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>MR-Sql</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MR-Sql</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>To see the new folders, you must close and reopen Event Viewer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいフォルダーを表示するには、イベント ビューアーを終了して、再表示する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>To see additional details, you must deploy an environment again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加の詳細を表示するには、もう一度環境を配置する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>An error occurs while AddAXDatabaseChangeTracking is running</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AddAXDatabaseChangeTracking の実行中に発生するエラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>If you receive an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet) で AddAXDatabaseChangeTracking を実行しているときにエラーが発生した場合は、フル パスが正しいことを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>An example of a full path is <bpt id="p1">**</bpt>ax.d365ffo.onprem.contoso.com<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フル パスの例は <bpt id="p1">**</bpt>ax.d365ffo.onprem.contoso.com<ept id="p1">**</ept> です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>The error might also occur because of an issue with the star certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スター証明書での問題が原因でエラーが発生する可能性もあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>For example, the remote certificate CN=<ph id="ph1">\*</ph>.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、リモート証明書 CN=<ph id="ph1">\*</ph>.d365ffo.onprem.contoso.com には、無効な、またはホストの ax.d365ffo.onprem.contoso.com と一致しない名前があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Run the initialize database script, and validate that databases have correct users</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベース初期化スクリプトを実行し、データベースのユーザーが適切であることを検証</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service for Finance and Operations by going to <ph id="ph1">`https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService`</ph>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AddAXDatabaseChangeTracking イベントのみを受け取った場合は、<ph id="ph1">`https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService`</ph> にアクセスし、Finance and Operations の MetadataService サービスにアクセスしてみてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Next, check the certificates of the service in the wif.config file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に、wif.config ファイルでサービスの証明書を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>To find the file, sign in to one of the AOS machines, and then, in Task Manager, find <bpt id="p1">**</bpt>AxService.exe<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ファイルを検索するには、AOS マシンにサインインし、タスク マネージャーで <bpt id="p1">**</bpt>AxService.exe<ept id="p1">**</ept> を探してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Right-click, and select <bpt id="p1">**</bpt>Open file location<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TimeZonePatcherを右クリックし、 <bpt id="p1">**</bpt>ファイルの場所を開く<ept id="p1">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>In the wif.config file, you should see three thumbprints.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">wif.config ファイルでは、3 つの拇印を確認する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Note the following requirements for these thumbprints:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらの拇印に関する次の要件に注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>They must be different.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらは異なる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>They must be in this order:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これらは、この順序である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>Financialreporting thumbprint</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Financialreportingの拇印</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>ReportingService thumbprint</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReportingServiceの拇印</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>SessionAuthentication thumbprint</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SessionAuthenticationの拇印</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>If the thumbprints don't meet both these requirements, you must redeploy from LCS by using correct thumbprints.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拇印がこれらの要件の両方を満たしていない場合は、正しい拇印を使用して LCS から再配置をする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>The remote name can't be resolved</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リモート名を解決できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>The remote name could not be resolved: 'x.d365fo.onprem.contoso.com' / There was no endpoint listening at <ph id="ph1">`https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService`</ph> that could accept the message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リモート名を解決できませんでした。'x.d365fo.onprem.contoso.com' / メッセージを承認できなかった <ph id="ph1">`https://x.d365fo.onprem.contoso.com/namespaces/AXSF/services/MetadataService`</ph> をリッスンしていたエンドポイントはありませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> This issue is often caused by an incorrect address or SOAP action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> この問題は、通常正しくないアドレスまたは SOAP アクションによって引き起こされます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> Verify that the address can be reached, by manually opening the URL.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>手順:<ept id="p1">**</ept> URL を手動で開き、アドレスにアクセスできることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>For more details, see the "InnerException" text in the Event Viewer, if it's present.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、イベント ビューアーで <ph id="1">[InnerException]</ph> のテキストが存在するかどうか確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Error on ImportDefaultReports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ImportDefaultReports のエラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>If Management Reporter reports are checked out during deployment, the deployment will fail.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置中に Management Reporter レポートがチェックアウトされると、配置処理は失敗します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>To see whether reports are checked out, run the following <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statements on the FinancialReporting database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レポートがチェック アウトされているかどうかを表示するには、FinancialReporting データベースで次の<bpt id="p1">**</bpt>選択<ept id="p1">**</ept>明細書を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>To learn which user has objects checked out, you can run the following <bpt id="p1">**</bpt>select<ept id="p1">**</ept> statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">どのユーザーがオブジェクトをチェック アウトするかを知るには、次の<bpt id="p1">**</bpt>選択<ept id="p1">**</ept>ステートメントを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>To resolve this issue manually, update the following tables, and set <bpt id="p1">**</bpt>checkedoutto<ept id="p1">**</ept> to <bpt id="p2">**</bpt>null<ept id="p2">**</ept> by using the following commands.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を手動で解決するには、以下のテーブルを次のコマンドを使用して更新し、 <bpt id="p1">**</bpt>checkedoutto<ept id="p1">**</ept> を <bpt id="p2">**</bpt>null<ept id="p2">**</ept> に設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>axdbadmin can't connect to the database server SQL-LS.contoso.com</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">axdbadmin は SQL-LS.contoso.com データベース サーバーに接続することができません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> The user doesn't have permission to connect to the AXDB database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept>AXDB データベースに接続するためのアクセス許可がありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>Remove the axdbadmin user from the database, if it already exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既に存在する場合は、データベースから axdbadmin ユーザーを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>In the <bpt id="p1">**</bpt>ConfigTemplate.xml<ept id="p1">**</ept> file, specify the user name that must be added to the AXDB database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ConfigTemplate.xml<ept id="p1">**</ept> ファイルで、AXDB データベースに追加する必要があるユーザー名を指定してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>Run the initialize database script again to add the axdbadmin user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">axdbadmin ユーザーを追加するには、もう一度初期化データベース スクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>Unable to resolve the xPath value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">xPath 値を解決することができません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>In the expected behavior, the following <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> value can't be resolved:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">予想される動作では、次の <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> 値を解決することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source><ph id="ph1">\[</ph>TopologyInstance/CustomizationGroup<ph id="ph2">\[</ph>@name='ServiceConfiguration'<ph id="ph3">\]</ph>/Group<ph id="ph4">\[</ph>@name='AOSServicePrincipalUser'<ph id="ph5">\]</ph>/Customizations/Customization<ph id="ph6">\[</ph>@fieldName='PrincipalUserAccountPassword'<ph id="ph7">\]</ph>/@selectedValue</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>TopologyInstance/CustomizationGroup<ph id="ph2">\[</ph>@name='ServiceConfiguration'<ph id="ph3">\]</ph>/Group<ph id="ph4">\[</ph>@name='AOSServicePrincipalUser'<ph id="ph5">\]</ph>/Customizations/Customization<ph id="ph6">\[</ph>@fieldName='PrincipalUserAccountPassword'<ph id="ph7">\]</ph>/@selectedValue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Therefore, the fact that the <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> value can't be resolved isn't an issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、 <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> の値が解決できないことは問題ではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>The <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> value looks for AOS runtime user information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> 値は、AOS ランタイム ユーザーの情報を検索します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>However, because of integrated security, that information isn't required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ただし、セキュリティが統合されているため、その情報は必要ありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>The fact that the <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> value can't be resolved is communicated in case the failure must be investigated for another reason.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">別の理由でエラーを調査する必要がある場合は、 <bpt id="p1">**</bpt>xPath<ept id="p1">**</ept> の値を解決できないと通知されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>AD FS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>The sign-in page doesn't redirect you</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインイン ページにリダイレクトされません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>The sign-in page might not redirect you but continues to prompt for credentials.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインイン ページにはリダイレクトされない可能性がありますが、資格情報の確認を続行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Alternatively, you might be redirected but receive the following message:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、リダイレクトの可能性がありますが、次のメッセージが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>An error occurred.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーが発生しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Contact your administrator for more information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、システム管理者に問い合わせてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>In these cases, you can follow these steps to resolve the issue:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのような場合、問題を解決するには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>Add the AD FS link to the list of trusted sites.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS リンクを信頼されているサイトの一覧に追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Add the Dynamics 365 link to the list of trusted sites.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 リンクを信頼されているサイトの一覧に追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Add a trailing slash (/), and see whether the behavior changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">末尾にスラッシュ「/」を追加し、動作が変更されるかどうかを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>Verify the AD FS Manager by going to <bpt id="p1">**</bpt>ADFS<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Application groups<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ADFS<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション グループ<ept id="p2">**</ept>の順に移動して、AD FS マネージャーを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>Double-click <bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations on-premises<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations オンプレミス<ept id="p1">**</ept>をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Then, under <bpt id="p1">**</bpt>Native application<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>Microsoft Dynamics 365 for Operations on-premises - Native application<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">その後、<bpt id="p1">**</bpt>ネイティブ アプリケーション<ept id="p1">**</ept>で、<bpt id="p2">**</bpt>Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション<ept id="p2">**</ept>をダブルクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Note the <bpt id="p1">**</bpt>Redirect URI<ept id="p1">**</ept> value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>リダイレクト URI<ept id="p1">**</ept> 値に注意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>It should match the DNS forward lookup zone for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations の DNS 前方参照ゾーンに一致させる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Error: "Could not establish trust relationship for the SSL/TLS secure channel"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「SSL/TLS セキュリティ チャネルの信頼関係を確立できませんでした」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>If you receive an error that states, "Could not establish trust relationship for the SSL/TLS secure channel," follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「SSL/TLS のセキュリティで保護されているチャネルに対する信頼関係を確立できませんでした」というエラーが表示された場合は、次の操作を行います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>In Service Fabric, go to <bpt id="p1">**</bpt>Cluster<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Applications<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>AXSFType<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>fabric:/AXSF<ept id="p4">**</ept>, and then, on the <bpt id="p5">**</bpt>Details<ept id="p5">**</ept> tab, scroll down and note the URLs for <bpt id="p6">**</bpt>Aad<ph id="ph4">\_</ph>AADMetadataLocationFormat<ept id="p6">**</ept> and <bpt id="p7">**</bpt>Aad<ph id="ph5">\_</ph>FederationMetadataLocation<ept id="p7">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric で、<bpt id="p1">**</bpt>クラスタ<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>AXSFType<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>fabric:/AXSF<ept id="p4">**</ept> の順に移動し、<bpt id="p5">**</bpt>詳細<ept id="p5">**</ept>タブでスクロールし、<bpt id="p6">**</bpt>Aad<ph id="ph4">\_</ph>AADMetadataLocationFormat<ept id="p6">**</ept> および <bpt id="p7">**</bpt>Aad<ph id="ph5">\_</ph>FederationMetadataLocation<ept id="p7">**</ept> の URL に注意します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Browse to those URLs from AOS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS からそれらの URL を参照します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>On the AOS machine, in Event Viewer, go to <bpt id="p1">**</bpt>Applications and Services Logs<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AX-SystemRuntime<ept id="p4">**</ept> for details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、AOS マシンの、イベント ビューアーで、<bpt id="p1">**</bpt>アプリケーションとサービス ログ<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AX-SystemRuntime<ept id="p4">**</ept> の順に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>Verify that the AD FS certificate is trusted:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS 証明書が信頼されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>Verify the AD FS certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS 証明書を確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>On the AD FS machine, in Server Manager, go to <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS Management<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マシンの、サーバー マネージャーで、<bpt id="p1">**</bpt>ツール<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS の管理<ept id="p2">**</ept>に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Expand <bpt id="p1">**</bpt>AD FS<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Service<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Certificates<ept id="p3">**</ept>, and make a note of the certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AD FS<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>サービス<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>証明書<ept id="p3">**</ept> を展開し、証明書を記録しておきます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>For example, one certificate might be dc1.contoso.com.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、1 つの証明書は、dc1.contoso.com の場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>On the AOS machine, in the Microsoft Management Console Certificates snap-in, go to <bpt id="p1">**</bpt>Certificates (Local Computer)<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Trusted Root Certification Authorities<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Certificates<ept id="p3">**</ept>, and verify that the AD FS certificate is listed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS マシンの、Microsoft 管理コンソール証明書スナップインで、<bpt id="p1">**</bpt>証明書 (ローカル コンピューター)<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>信頼済ルート証明機関<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>証明書<ept id="p3">**</ept>の順に移動し、AD FS 証明書が一覧表示されていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>If you receive a message that states that the site isn't secure, you haven't added your Secure Sockets Layer (SSL) certificate for AD FS to the Trusted Root Certification Authorities store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サイトが安全でないことを示すメッセージが表示された場合は、AD FS の Secure Sockets Layer (SSL) 証明書が信頼済ルート証明機関ストアに追加されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>You can't connect to the remote server in some locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一部の地域ではリモート サーバーに接続できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>You might not be able to connect to the remote server at the following places:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の場所でリモート サーバーに接続できない場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>System.Net.HttpWebRequest.GetResponse()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Net.HttpWebRequest.GetResponse()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>In this case, go to the C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOS<ph id="ph4">\_</ph>1<ph id="ph5">\\</ph>Fabric<ph id="ph6">\\</ph>work<ph id="ph7">\\</ph>Applications<ph id="ph8">\\</ph>AXSFType<ph id="ph9">\_</ph>App35<ph id="ph10">\\</ph>log folder where you receive the error, and note the out file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合は、エラーの受信元である C: <ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOS<ph id="ph4">\_</ph>1<ph id="ph5">\\</ph>Fabric<ph id="ph6">\\</ph>work<ph id="ph7">\\</ph>Applications<ph id="ph8">\\</ph>AXSFType<ph id="ph9">\_</ph>App35<ph id="ph10">\\</ph> ログ フォルダーに移動し、出力ファイルを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>The out file contains the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">out ファイルには、次の情報が含まれます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>System.Net.WebException: Unable to connect to the remote server ---<ph id="ph1">\&gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Net.WebException: リモート サーバーに接続できません ---<ph id="ph1">\&gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond x.x.x.x:443</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Net.Sockets.SocketException: 接続した当事者が一定時間適切に応答しなかったため接続試行に失敗したか、接続したホストが x.x.x.x:443 に応答できなかったため確立された接続に失敗しました</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>You can also use Psping to try to reach the remote server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Psping を使用してリモート サーバーに対する接続を試みることもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>For information about Psping, see <bpt id="p1">[</bpt>Psping<ept id="p1">](/sysinternals/downloads/psping)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Psping の詳細については、<bpt id="p1">[</bpt>Psping<ept id="p1">](/sysinternals/downloads/psping)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>Redirect sign-in questions and issues</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインイン時の質問および問題をリダイレクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>If you're having issues when you sign-in, in Service Fabric Explorer, verify that the <bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Provisioning<ph id="ph2">\_</ph>AdminIdentityProvider<ept id="p2">**</ept> values are valid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインイン時に問題が発生した場合は、Service Fabric Explorer で、<bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept> および <bpt id="p2">**</bpt>Provisioning<ph id="ph2">\_</ph>AdminIdentityProvider<ept id="p2">**</ept> の値が有効であることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Here is an example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に例を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source><bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept>: <ph id="ph2">`AXServiceUser@contoso.com`</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロビジョニング <ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept>: <ph id="ph2">`AXServiceUser@contoso.com`</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source><bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminIdentityProvider<ept id="p1">**</ept>: <ph id="ph2">`https://DC1.contoso.com/adfs`</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プロビジョニング<ph id="ph1">\_</ph>AdminIdentityProvider<ept id="p1">**</ept>: <ph id="ph2">`https://DC1.contoso.com/adfs`</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>If the values aren't valid, you won't be able to proceed, and you must redeploy from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値が有効でない場合は、処理を続行できず、LCS から再配置する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service before your changes take effect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reset-DatabaseUsers.ps1 を使用した場合、変更内容を有効にする前に、Dynamics サービスを再起動する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>If you still have sign-in issues, in the USERINFO table, note the <bpt id="p1">**</bpt>NETWORKDOMAIN<ept id="p1">**</ept> and <bpt id="p2">**</bpt>NETWORKALIAS<ept id="p2">**</ept> values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">引き続きサインインの問題がある場合は、USERINFO テーブルで、<bpt id="p1">**</bpt>NETWORKDOMAIN<ept id="p1">**</ept> および <bpt id="p2">**</bpt>NETWORKALIAS<ept id="p2">**</ept> の値を記録してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>Here is an example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次に例を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source><bpt id="p1">**</bpt>NETWORKDOMAIN:<ept id="p1">**</ept> <ph id="ph1">`https://DC1.contoso.com/adfs`</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NETWORKDOMAIN:<ept id="p1">**</ept> <ph id="ph1">`https://DC1.contoso.com/adfs`</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source><bpt id="p1">**</bpt>NETWORKALIAS:<ept id="p1">**</ept> <ph id="ph1">`AXServiceUser@contoso.com`</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NETWORKALIAS:<ept id="p1">**</ept> <ph id="ph1">`AXServiceUser@contoso.com`</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source><bpt id="p1">**</bpt>IDENTITYPROVIDER:<ept id="p1">**</ept> This should match the <bpt id="p2">**</bpt>NETWORKDOMAIN<ept id="p2">**</ept> value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>IDENTITYPROVIDER:<ept id="p1">**</ept> これは <bpt id="p2">**</bpt>NETWORKDOMAIN<ept id="p2">**</ept> の内容と一致している必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>On the AD FS machine, in Server Manager, go to <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS Management<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Service<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マシンの、サーバー マネージャーで、<bpt id="p1">**</bpt>ツール<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS の管理<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>サービス<ept id="p3">**</ept>に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>Right-click <bpt id="p1">**</bpt>Service and Edit Federation Service Properties<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フェデレーション サービス プロパティの保守と編集<ept id="p1">**</ept> を右クリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>The <bpt id="p1">**</bpt>Federation Service identifier<ept id="p1">**</ept> value should match the <bpt id="p2">**</bpt>USERINFO.NETWORKDOMAIN<ept id="p2">**</ept> value, and it should have <bpt id="p3">**</bpt>https<ept id="p3">**</ept> in the URL (for example, <ph id="ph1">`https://DC1.contoso.com/adfs`</ph>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フェデレーション サービスの識別子<ept id="p1">**</ept> は <bpt id="p2">**</bpt>USERINFO.NETWORKDOMAIN<ept id="p2">**</ept> の値と一致している必要があり、URL に <bpt id="p3">**</bpt>https<ept id="p3">**</ept> が入っている必要があります (たとえば <ph id="ph1">`https://DC1.contoso.com/adfs`</ph>)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>On the AD FS machine, in Event Viewer, go to <bpt id="p1">**</bpt>Applications and Services Logs<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Admin<ept id="p3">**</ept>, and make a note of any errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マシンの、イベント ビューアーで、<bpt id="p1">**</bpt>アプリケーションとサービス ログ<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>AD FS<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>管理者<ept id="p3">**</ept>に移動してエラーを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>Fiddler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiddler</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>Fiddler can be used for additional debugging.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加のデバッグには Fiddler を使用することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>For in-depth information about Fiddler, see <bpt id="p1">[</bpt>AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In<ept id="p1">](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx)</ept> and <bpt id="p2">[</bpt>Cracking the AD FS Token from another AD FS Claims Provider<ept id="p2">](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiddler について詳しい情報は、 <bpt id="p1">[</bpt>AD FS 2.0: Fiddler Web デバッガーを使って WS フェデレーション パッシブ サインインを分析する方法<ept id="p1">](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx)</ept> と <bpt id="p2">[</bpt>別の AD FS クレーム プロバイダーからの AD FS トークンのクラッキング<ept id="p2">](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/)</ept> をご覧ください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>The following sections provide focused debugging steps for claims that are returned to Microsoft Dynamics.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のセクションでは、 Microsoft Dynamics に返される要求に対する重点的なデバッグの手順を示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>Repo/capture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リポジトリ/キャプチャ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>Open Fiddler, go to <bpt id="p1">**</bpt>Tools <ph id="ph1">\&gt;</ph> Options <ph id="ph2">\&gt;</ph> HTTPS<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Decrypt HTTPS traffic<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiddler を起動し、 <bpt id="p1">**</bpt>ツール <ph id="ph1">\&gt;</ph> オプション <ph id="ph2">\&gt;</ph> HTTPS<ept id="p1">**</ept> から <bpt id="p2">**</bpt>HTTPS トラフィックの復号化<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Start to capture traffic (the shortcut key is F12).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トラフィックのキャプチャを開始します (ショートカット キーは F12 キーです)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>You can verify that that traffic is being captured by looking at the lower left of the tool.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ツールの左下を確認すると、該当のトラフィックがキャプチャされていることを確認できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer の InPrivate モード、またはChrome の Incognito モードを使用して開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>Open Finance and Operations (for example, <ph id="ph1">`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`</ph>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations を開きます (例 <ph id="ph1">`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`</ph>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Sign in by using the USERINFO.NETWORKALIAS account and password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">USERINFO.NETWORKALIAS のアカウントとパスワードを使用してログオンします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>After you're signed in, stop Fiddler from capturing traffic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ログイン後、Fiddler によるトラフィックのキャプチャを停止してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>Analyze</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">分析</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>In the right pane of Fiddler, notice that a horizontal divider separates the request from the response.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiddler の右側のウィンドウには、リクエストとレスポンスが上段と下段にに分割されていることを留意してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>Unlike a network trace, where you typically get one frame for a request and another frame for a response, Fiddler provides one frame that contains both the request and the response.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リクエストとレスポンスとでそれぞれ別個のフレームを取得するようなネットワーク トレースとは異なり、Fiddler はリクエストとレスポンスの両方を1 つのフレームで提供します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>In Fiddler, in the upper-right corner, select <bpt id="p1">**</bpt>Inspectors<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Raw<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiddlerを起動し、画面右上隅の <bpt id="p1">**</bpt>Inspectors<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Raw<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>In the lower-right corner, select <bpt id="p1">**</bpt>Cookies<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">右下隅の <bpt id="p1">**</bpt>Cookie<ept id="p1">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>Do a search for <bpt id="p1">**</bpt>MSISAuth<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>MSISAuth<ept id="p1">**</ept> を検索します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Select the row that has a result of <bpt id="p1">**</bpt>200<ept id="p1">**</ept> for the AD FS host.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS をホストするには、結果が <bpt id="p1">**</bpt>200<ept id="p1">**</ept> 件ある行を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>Look above the row that you just selected to find a row that has a result of <bpt id="p1">**</bpt>302<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記で選択した上の行のなかで、 <bpt id="p1">**</bpt>302<ept id="p1">**</ept> 件の結果がある行を探します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>Select the row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">確認した行を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>You should see the AD FS URL, host, user name, and password.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS URL、ホスト、ユーザー名、およびパスワードが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>For privacy, you might have to scrub personally identifiable information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プライバシー保護のため、状況に応じて個人を特定できる情報を削除してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>Personally identifiable information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人情報</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Select the next row that has a result of <bpt id="p1">**</bpt>302<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次は、結果が <bpt id="p1">**</bpt>302<ept id="p1">**</ept> 件ある行を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>The URL should be <bpt id="p1">**</bpt>.../namespaces/AXSF/<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">URL が、 <bpt id="p1">**</bpt>.../namespaces/AXSF/<ept id="p1">**</ept> となっていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>Find the code line that is shown on that row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記で選択した行に示されているコード行を探してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>Code line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コード行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>Copy the value of code line after the equal sign (=).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">等号 (=) の後に表示されているコード値をコピーします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>Go to <ph id="ph1">&lt;https://www.base64decode.org/&gt;</ph>, and paste the code that you just copied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&lt;https://www.base64decode.org/&gt;</ph> に移動し、上記でコピーしたコードを貼り付けます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>In the <bpt id="p1">**</bpt>Source charset<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>ASCII<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Source charset<ept id="p1">**</ept> フィールドで、 <bpt id="p2">**</bpt>ASCII<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Select <bpt id="p1">**</bpt>Decode<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Decode<ept id="p1">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Copy the results, and follow these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">表示された結果をコピーし、以下の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>Make sure that the <bpt id="p1">**</bpt>upn<ept id="p1">**</ept> value matches the user name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>upn<ept id="p1">**</ept> の値が、ユーザー名と一致していることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>Make sure that the <bpt id="p1">**</bpt>unique_name<ept id="p1">**</ept> value is the Active Directory user that is being tested.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>unique_name<ept id="p1">**</ept> の値がテストで使用している Active Directoryユーザー名であることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Go to <bpt id="p1">**</bpt>Active Directory Users and Computers<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>domain<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Users<ept id="p3">**</ept>, and make sure that this user is being tested.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Active Directory ユーザーとコンピューター<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>ドメイン<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>ユーザー<ept id="p3">**</ept> に移動し、テスト中のユーザーが表示されることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>Sign-in issues</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインインの問題</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>If you or other users experience sign-in issues, in Service Fabric Explorer, verify that the <bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Provisioning<ph id="ph2">\_</ph>AdminIdentityProvider<ept id="p2">**</ept> values are valid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サインインに関する問題が発生した場合には、Service Fabric Explorer で、<bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept> および <bpt id="p2">**</bpt>Provisioning<ph id="ph2">\_</ph>AdminIdentityProvider<ept id="p2">**</ept> の値が有効であることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>If the values are valid, run the following command on the primary SQL Server machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">値が有効な場合は、プライマリ SQL Server マシンで次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>On each AOS machine, in Task Manager, select <bpt id="p1">**</bpt>AXService.exe<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>End task<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">タスク マネージャーの各 AOS マシンで、<bpt id="p1">**</bpt>AXService.exe<ept id="p1">**</ept> を選択し、<bpt id="p2">**</bpt>タスクの終了<ept id="p2">**</ept>を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>To verify that a user has been reset, run the following <bpt id="p1">**</bpt>select<ept id="p1">**</ept> query in the AXDB SQL database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーがリセットされたことを確認するには、AXDB SQL databaseで次の <bpt id="p1">**</bpt>select<ept id="p1">**</ept> 文を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>In an Azure Active Directory (Azure AD) environment (that is, an online environment), the SID is a hash of a network alias and a network domain.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Active Directory (Azure AD) 環境 (オンライン環境) では、SID はネットワーク エイリアスおよびネットワーク ドメインのハッシュの役割を果たします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>In an AD DS environment (that is, an on-premises environment), the SID is a hash of a network alias and an identify provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD DS 環境 (オンプレミス環境) では、SID はネットワーク エイリアスのハッシュとして機能し、プロバイダーを識別します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>In some cases, you still might not be able to sign in, and you might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場合によっては、引き続きサインインができず、次のエラーが発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>You are not authorized to login with your current credentials.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">現在の資格情報でログインする権限がありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>You will be redirected to the login page in a few seconds.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マシンで、サーバー マネージャー &gt; ツール &gt; AD FS の管理 に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>If this error occurs, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーが表示された場合は、次の手順に従ってください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>On the AD FS machine, go to <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Tools<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>AD FS Management<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マシンで、 <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Tools<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>AD FS Management<ept id="p3">**</ept> に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>Right-click <bpt id="p1">**</bpt>AD FS<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Edit Federation Service Properties<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AD FS<ept id="p1">**</ept> を右クリックし、<bpt id="p2">**</bpt>フェデレーション サービス プロパティの編集<ept id="p2">**</ept> を選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>Make sure that the <bpt id="p1">**</bpt>Federation Service Identifier<ept id="p1">**</ept> value matches the <bpt id="p2">**</bpt>Userinfo.NetworkDomain<ept id="p2">**</ept> and <bpt id="p3">**</bpt>UserInfo.IdentityProvider<ept id="p3">**</ept> values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>フェデレーション サービス 識別子<ept id="p1">**</ept> の値が、 <bpt id="p2">**</bpt>Userinfo.NetworkDomain<ept id="p2">**</ept> および <bpt id="p3">**</bpt>UserInfo.IdentityProvider<ept id="p3">**</ept> の値と一致していることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>On the AD FS machine, open Windows PowerShell, and run <bpt id="p1">**</bpt>Get-AdfsProperties<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マシンで、Windows PowerShell を開き、 <bpt id="p1">**</bpt>Get-AdfsProperties<ept id="p1">**</ept> を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Make sure that the <bpt id="p1">**</bpt>IdTokenIssuer<ept id="p1">**</ept> value matches the <bpt id="p2">**</bpt>Federation Service Identifier<ept id="p2">**</ept> value from step 3, and also the <bpt id="p3">**</bpt>Provisioning_AdminIdentityProvider<ept id="p3">**</ept> value on the <bpt id="p4">**</bpt>fabric:/AXSF Details<ept id="p4">**</ept> tab at <bpt id="p5">**</bpt>Service Fabric Explorer<ept id="p5">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p6">**</bpt>Cluster<ept id="p6">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p7">**</bpt>Applications<ept id="p7">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p8">**</bpt>AXSFType<ept id="p8">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>IdTokenIssuer<ept id="p1">**</ept> の値が、手順3の <bpt id="p2">**</bpt>フェデレーション サービス 識別子<ept id="p2">**</ept> の値、および <bpt id="p3">**</bpt>Provisioning_AdminIdentityProvider<ept id="p3">**</ept> の値と一致していることを確認してください。 (これは <bpt id="p4">**</bpt>fabric:/AXSF Details<ept id="p4">**</ept> タブに表示されています。 <bpt id="p5">**</bpt>Service Fabric Explorer<ept id="p5">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p6">**</bpt>Cluster<ept id="p6">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p7">**</bpt>Applications<ept id="p7">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p8">**</bpt>AXSFType<ept id="p8">**</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>In Service Fabric Explorer, verify that the <bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Provisioning<ph id="ph2">\_</ph>AdminIdentityProvider<ept id="p2">**</ept> values are valid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric Explorer で、 <bpt id="p1">**</bpt>Provisioning<ph id="ph1">\_</ph>AdminPrincipalName<ept id="p1">**</ept> 値と <bpt id="p2">**</bpt>Provisioning<ph id="ph2">\_</ph>AdminIdentityProvider<ept id="p2">**</ept> の値が有効であることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>If the preceding steps don't resolve the issue, see the <bpt id="p1">[</bpt>AD FS<ept id="p1">](troubleshoot-on-prem.md#ad-fs)</ept> section of this topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">上記の手順で問題が解決しない場合は、このトピックの 「 <bpt id="p1">[</bpt>AD FS<ept id="p1">](troubleshoot-on-prem.md#ad-fs)</ept> 」 を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Data.SqlClient.SqlException (0x80131904) および System.ComponentModel.Win32Exception (0x80004005)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>You might receive one of the following errors:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のエラーのいずれかが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the sign-in process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Data.SqlClient.SqlException (0x80131904): 接続がサーバーで正常に確立されましたが、サインイン プロセス時にエラーが発生しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>(provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(プロバイダー: SSL プロバイダー、エラー: 0 - 証明書チェーンは、信頼されていない機関によって発行されました。)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>System.ComponentModel.Win32Exception (0x80004005): The certificate chain was issued by an authority that is not trusted</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.ComponentModel.Win32Exception (0x80004005): 証明書チェーンは、信頼されていない機関によって発行されました</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>In this case, either the certificates haven't been installed, or they haven't given access to the correct users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、証明書がインストールされていないか、それらがしかるべきユーザーに結びついていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>To resolve this error, add the public key SQL Server certificate to all the Service Fabric nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーを解決するには、公開キー SQL サーバー証明書をすべての Service Fabric ノードに追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>Keyset doesn't exist</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Keyset が存在しません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>If you find that the keyset doesn't exist, scripts weren't run on all machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">キーセットが存在しないことが判明した場合は、スクリプトがすべてのコンピューターで実行されなていなかったことを意味します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>Review and complete the "Set up VMs" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適切な設定の「VM の設定」セクション、および環境の配置トピックを確認し完了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupvms)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupvms)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupvms)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#setupvms)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>Copy the scripts in each folder to the VMs that correspond to the folder name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各フォルダ内のスクリプトを、フォルダ名に対応する VM にコピーします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>Additionally, check the .csv file to verify that the correct domain is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、正しいドメインを使うことを検証する .csv ファイルを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>Error: "RunAsync failed due to an unhandled FabricException causing replica to fault"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「未処理の FabricException がレプリカに障害を引き起こしたため、RunAsync が失敗しました」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>You might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のエラーが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>RunAsync failed due to an unhandled FabricException causing replica to fault: System.Fabric.FabricException: The first Fabric upgrade must specify both the code and config versions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">未処理の FabricException がレプリカに障害を引き起こしたため、RunAsync が失敗しました: System.Fabric.FabricException: 最初の Fabric アップグレードではコード バージョンと設定バージョンの両方を指定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>Requested value: 0.0.0.0:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求された値: 0.0.0.0:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>In this case, in the ClusterConfig.json file, change <bpt id="p1">**</bpt>diagnosticsStore<ept id="p1">**</ept> from a network share to a local path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合、ClusterConfig.json ファイルで、 <bpt id="p1">**</bpt>diagnosticsStore<ept id="p1">**</ept> をネットワーク共有からローカル パスに変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>For example, change <bpt id="p1">**</bpt><ph id="ph1">\\</ph><ph id="ph2">\\</ph>server<ph id="ph3">\\</ph>path<ept id="p1">**</ept> to a default value of <bpt id="p2">**</bpt>C:<ph id="ph4">\\</ph>ProgramData<ph id="ph5">\\</ph>SF<ph id="ph6">\\</ph>DiagnosticsStore<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、<bpt id="p1">**</bpt><ph id="ph1">\\</ph><ph id="ph2">\\</ph>サーバー<ph id="ph3">\\</ph>パス<ept id="p1">**</ept>を、規定値の <bpt id="p2">**</bpt>C:<ph id="ph4">\\</ph>ProgramData<ph id="ph5">\\</ph>SF<ph id="ph6">\\</ph>DiagnosticsStore<ept id="p2">**</ept> に変更します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>Service Fabric AOS node error during build: The execution time-out expired</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド中に Service Fabric AOS ノード エラー: 実行タイムアウトが期限切れ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>The timeout period elapsed prior to completion of the operation or the server is not responding.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作を完了する前にタイムアウト期間が経過したか、サーバーが応答していません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>The statement has been terminated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細書は終了しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>Only one AOS machine can run DB Sync at a time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一度に 1 つの AOS マシンのみ DB Sync を実行できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>You can safely ignore this error, because it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーは無視しても問題ありません。 AOS VM のいずれかが DB Sync で実行されているため、他の VM が実行できないという警告が表示されたためです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to <bpt id="p1">**</bpt>Applications and Services Log<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AX-DatabaseSynchronize/Operational<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DB Sync が実行されていることを確認するには、イベント ビューアの、警告を生成していない AOS VM で<bpt id="p1">**</bpt>アプリケーションおよびサービスのログ<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>AX-DatabaseSynchronize/Operational<ept id="p4">**</ept> の順に移動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>Error: "RequireNonce is 'true' (default) but validationContext.Nonce is null"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「RequireNonce が True (既定) ですが、validationContext.Nonce は Null です」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>You might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のエラーが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source>RequireNonce is 'true' (default) but validationContext.Nonce is null</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「RequireNonce が True (既定) となっていますが、validationContext.Nonce は Null となっています」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>This error also appears as an HTTP error 500 in Internet Explorer after you sign in to the client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーは、クライアントにサインインした後も Internet Explorer で HTTP エラー 500 として表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>The nonce that is issued can't be validated if Internet Explorer is in Enhanced Security Configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Internet Explorer がセキュリティ強化の構成になっている場合、発行された nonce は検証できません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>To sign in to the client, disable Enhanced Security Configuration for Internet Explorer via Server Manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントにサインインするには、サーバー マネージャーを介して Internet Explorer のセキュリティ強化設定を無効にします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>Error: "Invalid algorithm specified / Cryptography"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「無効なアルゴリズムが指定されている/暗号化」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>If you receive an "Invalid algorithm specified / Cryptography" error, you must use the Microsoft Enhanced RSA and AES Cryptographic Provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"Invalid algorithm specified / Cryptography" エラーが発生した場合は、Microsoft Enhanced RSA および AES Cryptographic Provider を使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>For more information, see the certificate requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、証明書の要件を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>Additionally, verify that the structure of the credentials.json file is correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、credentials.json ファイルの構造が正しいことを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>If you must re-create the certificate by using the correct provider, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正しいプロバイダーを使用して証明書を再作成する必要がある場合は、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>Create the certificate again by using the correct provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">正しいプロバイダーを使用して証明書を再度作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>Change the <bpt id="p1">**</bpt>ConfigTemplate.xml<ept id="p1">**</ept> file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ConfigTemplate.xml<ept id="p1">**</ept> ファイルの変更。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>Run the infrastructure scripts on all machines in the cluster, and make sure that the <bpt id="p1">**</bpt>Test-D365FOConfiguration.ps1<ept id="p1">**</ept> script passes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クラスター内のすべてのコンピューターでインフラストラクチャ スクリプトを実行し、<bpt id="p1">**</bpt>Test-D365FOConfiguration.ps1<ept id="p1">**</ept> スクリプトに合格するかどうかを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>Reconfigure the environment from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS から環境を再構成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>An "Unable to find certificate" error occurs when you run Test-D365FOConfiguration.ps1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Test-D365FOConfiguration.ps1 を実行した際、「証明書を検出できません」エラーが発生</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>If you receive an "Unable to find certificate" error when you run Test-D365FOConfiguration.ps1, check whether certificates or thumbprints are being combined for multiple purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Test-D365FOConfiguration.ps1 を実行時に 「証明書を検出できません」 というエラーが発生した場合は、証明書または拇印がその他複数の用途で併用されているかどうかを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>For example, you will receive this error if the client certificate and the SessionAuthentication certificate are combined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、クライアントと SessionAuthentication の証明書が併用されてされる場合、このエラーが発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>We recommend that you not combine certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書を結合しないことをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>For more information, see the certificate requirements, and check the acl.csv file for <bpt id="p1">**</bpt>domain.com<ph id="ph1">\\</ph>user<ept id="p1">**</ept> versus <bpt id="p2">**</bpt>domain<ph id="ph2">\\</ph>user<ept id="p2">**</ept> (for example, NETBIOS structure).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、 証明書の必要要件を参照し、 <bpt id="p1">**</bpt>domain.com<ph id="ph1">\\</ph>user<ept id="p1">**</ept> versus <bpt id="p2">**</bpt>domain<ph id="ph2">\\</ph>user<ept id="p2">**</ept> 内 (たとえば、NETBIOS 構造) のacl.csv ファイルを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>The client and server can't communicate because they don't have a common algorithm</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントとサーバーは共通のアルゴリズムを持たないため通信できません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">クライアントとサーバーが疎通できない場合は双方のアルゴリズムが異なることが原因です。作成した証明書が指定したプロバーダーを使用しているか確認をしてください。これについては"Plan and acquire your certificates" の項目で解説しています。ご利用の環境に応じた適切な設定と配置を行ってください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#plancert)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#plancert)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#plancert)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#plancert)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>Find a list of group managed service accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">グループ管理サービス アカウント の一覧の検索</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>To find a list of all groups and hosts, run the following command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべてのグループとホストの一覧を検索するには、次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>AddCertToServicePrincipal script fails on Import-Module</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import-Module での AddCertToServicePrincipal スクリプトの失敗</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import-Module での AddCertToServicePrincipal スクリプトの失敗: ファイルまたはアセンブリ 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' またはその依存関係のうちのいずれか 1 つを読み込めませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>Strong name validation failed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">厳密な名前の検証に失敗しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>(Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(HRESULT からの例外: 0x8013141A) には、同じモジュールの複数のバージョンがインストールされている場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> To resolve this issue, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> 問題を解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>Run the following command in Windows PowerShell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows PowerShell で次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>Close the Windows PowerShell window, and try to run the script again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows PowerShell ウィンドウを閉じて、スクリプトを再度実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>ReportingServicesSetup.exe error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReportingServicesSetup.exe エラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source>ReportingServicesSetup.exe Error: 0 : Application fabric:/ReportingService is not OK after 10 minutes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReportingServicesSetup.exe エラー: 0 : アプリケーション fabric:/ReportingService は10分後から OK ではありません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>Application: ReportingServicesBootstrapper.exe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション: ReportingServicesBootstrapper.exe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>Framework Version: v4.0.30319</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">フレームワーク バージョン: v4.0.30319</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>Description: The process was terminated due to an unhandled exception.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明: プロセスは未処理の例外によって中止されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source><bpt id="p1">**</bpt>Reason:<ept id="p1">**</ept> If you receive this error, strong name validation is enabled in the Reporting server, but it should not be enabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>理由:<ept id="p1">**</ept> このエラーが発生した場合、厳密な名前検証はレポート サーバーで有効にされていますが、有効にしないでください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> To resolve this issue, run the <bpt id="p2">**</bpt>config-PreReq<ept id="p2">**</ept> script on the Reporting server machine.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ステップ:<ept id="p1">**</ept> 問題を解決するには、レポート サーバー マシンで <bpt id="p2">**</bpt>config-PreReq<ept id="p2">**</ept> スクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>The requested operation requires elevation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">要求された操作には、昇格が必要です</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>This issue occurs because AOS users aren't in the local administrator group, and User Account Control (UAC) hasn't been disabled correctly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS ユーザーはローカル管理者グループに属しておらず、ユーザー アカウント コントロール (UAC) が正しく無効化されていないために、この問題が発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>To resolve the issue, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題を解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">環境の適切な設定および配置トピックの「VMs とドメインを結合」のセクションで説明されているように、ローカル管理者として AOS ユーザーを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#joindomain)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#joindomain)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#joindomain)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#joindomain)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>Run the <bpt id="p1">**</bpt>Config-PreReq<ept id="p1">**</ept> script on all the AOS machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すべての AOS コンピューターで、<bpt id="p1">**</bpt>Config-PreReq<ept id="p1">**</ept> スクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Make sure that the <bpt id="p1">**</bpt>Test-Configuration<ept id="p1">**</ept> script passes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>テスト構成<ept id="p1">**</ept>スクリプトがパスすることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>If UAC was changed, you must restart the machine before the changes take effect.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UAC が変更された場合は、変更を有効にする前にマシンを再起動する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>Files in use errors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">使用中ファイルのエラー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>If these "Files in use" errors occur, set up the exclusion rules that Service Fabric advises.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「ファイルは使用中です」のエラーが発生した場合は、Service Fabric に示されている例外ルールを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>For information, see <bpt id="p1">[</bpt>Environment setup<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>環境設定<ept id="p1">](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)</ept>を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>Apply deployable packages during deployment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配置中に配置可能パッケージを適用する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>Package deployment fails because of a "path too long" exception</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「パスが長過ぎる」例外によってパッケージの展開が失敗する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source>Because of a 260-character limit in Microsoft Windows, deployment will fail if a package has a longer name, or if the on-premises share has the full FQDN path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Windows では 260 文字の制限があるため、パッケージの名前が長い場合やオンプレミス共有に完全な FQDN パスがある場合は、展開に失敗します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>If the character limit is exceeded, you receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字数の制限を超過した場合、次のエラーが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>System.IO.PathTooLongException: The specified path, file name, or both are too long.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.IO.PathTooLongException: 指定されたパス、ファイル名、またはその両方が長すぎます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">完全に記述されたファイル名は 260 文字未満である必要があり、ディレクトリ名は 248 文字未満である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>at System.IO.PathHelper.GetFullPathName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">at System.IO.PathHelper.GetFullPathName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>To work around this issue, shorten the package name, and then apply the package again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を回避するには、パッケージ名を短くし、パッケージをもう一度適用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>Alternatively, shorten the overall length of the share path for the on-premises assets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、オンプレミス資産の共有パス全体の長さを短くしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>Package deployment fails because of a serialization error</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シリアル化エラーが原因でパッケージの展開に失敗する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>During package deployment, you might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ配置中、次のエラーが発生する場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>Serialization version mismatch detect, make sure the runtime DLLs are in sync with the deployed metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">シリアル化バージョンの不一致が検出されたので、ランタイム DLL が配置されたメタデータと同期していることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>Version of file 'XXX'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「XXX」ファイルのバージョン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>Version of DLL 'XXX'</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DLL 「XXX」のバージョン</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>In this case, the version of the environment where the package was developed might differ from the version of the environment that the package is being deployed in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この場合は、パッケージが開発された環境のバージョンと、パッケージを配置する環境のバージョンが異なっている可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>To work around this issue, keep the development or build environments on the same version as the deployed on-premises environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を回避するには、展開されたオンプレミス環境と同じバージョンで開発環境またはビルド環境を維持します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>You can confirm the package version by looking in the <bpt id="p1">**</bpt>Additional details<ept id="p1">**</ept> section in the Asset library where the package is uploaded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージのアップロード先にあるアセット ライブラリの<bpt id="p1">**</bpt>追加の詳細<ept id="p1">**</ept>セクションをクリックすることにより、パッケージ バージョンを確認することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>To fix the error, generate the package on a version that is the same as or earlier than the version that is deployed in the on-premises environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーを修正するには、オンプレミス環境に配置されたバージョンと同じか、またはそれ以前のバージョンでパッケージを生成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>Package deployment fails because of dependencies on missing modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">欠落しているモジュールの依存関係が原因でがパッケージの展開に失敗する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>If you try to apply a package that is missing dependent modules, package application will fail, and you will receive a message that resembles the following message:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">依存モジュールがないパッケージを適用しようとすると、パッケージ アプリケーションが失敗して、次のようなメッセージが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>Package <ph id="ph1">\[</ph>dynamicsax-My<ph id="ph2">\_</ph>commonextension.7.0.4679.35176.nupkg has missing dependencies: <ph id="ph3">\[</ph>dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor<ph id="ph4">\]</ph><ph id="ph5">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ <ph id="ph1">\[</ph>dynamicsax-My<ph id="ph2">\_</ph>commonextension.7.0.4679.35176.nupkg に依存関係がありません: <ph id="ph3">\[</ph>dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor<ph id="ph4">\]</ph><ph id="ph5">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>Package <ph id="ph1">\[</ph>dynamicsax-My<ph id="ph2">\_</ph>coreextension.7.0.4679.35176.nupkg has missing dependencies: <ph id="ph3">\[</ph>dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests;dynamicsax-generalledgerformadaptor;dynamicsax-publicsectorformadaptor;dynamicsax-retailformadaptor<ph id="ph4">\]</ph><ph id="ph5">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ <ph id="ph1">\[</ph>dynamicsax-My<ph id="ph2">\_</ph>coreextension.7.0.4679.35176.nupkg に依存関係がありません: <ph id="ph3">\[</ph>dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests;dynamicsax-generalledgerformadaptor;dynamicsax-publicsectorformadaptor;dynamicsax-retailformadaptor<ph id="ph4">\]</ph><ph id="ph5">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>Package <ph id="ph1">\[</ph>dynamicsax-My<ph id="ph2">\_</ph>uiextension.7.0.4679.35176.nupkg has missing dependencies: <ph id="ph3">\[</ph>dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests<ph id="ph4">\]</ph><ph id="ph5">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージ <ph id="ph1">\[</ph>dynamicsax-My<ph id="ph2">\_</ph>uiextension.7.0.4679.35176.nupkg に依存関係がありません: <ph id="ph3">\[</ph>dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fiscalbooksformadaptor;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-fleetmanagementunittests<ph id="ph4">\]</ph><ph id="ph5">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>To confirm the issue and find the missing dependencies, in Event Viewer, open <bpt id="p1">**</bpt>Application and Services<ept id="p1">**</ept>, and then go to <bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>AX-SetupModuleEvents<ept id="p4">**</ept> to view events that have missing modules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題を確認し、欠落している依存関係を見つけるには、イベント ビューアーで、<bpt id="p1">**</bpt>アプリケーションとサービス<ept id="p1">**</ept>を開き、<bpt id="p2">**</bpt>Microsoft<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Dynamics<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>AX-SetupModuleEvents<ept id="p4">**</ept> の順で移動して、見つからないモジュールのあるイベントを表示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>For example, one of the modules that is typically missing is ApplicationFoundationFormAdaptor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">たとえば、一般的に見つからないモジュールの 1 つは、ApplicationFoundationFormAdaptor です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>To fix this issue and successfully apply the package, either add dependent modules, or remove modules that require dependent modules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を修正してパッケージを正常に適用するには、依存モジュールを追加するか、依存モジュールが必要なモジュールを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>To add dependent modules, you must include the dependencies when you build the package.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">依存するモジュールを追加するには、パッケージをビルドするときに依存関係を含める必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>To remove modules, you can use ModelUtil.exe to delete a module.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">モジュールを削除するには、ModelUtil.exe を使用してモジュールを削除できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>For more information, see <bpt id="p1">[</bpt>Export and import a model<ept id="p1">](../dev-tools/models-export-import.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「<bpt id="p1">[</bpt>モデルのエクスポートとインポート<ept id="p1">](../dev-tools/models-export-import.md)</ept>」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>Package deployment works in a one-box environment but not in the sandbox environment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パッケージの展開がワン ボックス環境で機能するが、サンドボックス環境で機能しない</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>A one-box environment might have all the modules installed, whereas the sandbox environment might have only the modules that are required in order to run your production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 ボックス環境にはすべてのモジュールがインストールされている可能性があり、一方ではサンドボックス環境には実稼働環境で実行するために必要なモジュールのみがインストールされている可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>If the package that was built in the dev environment has a dependency on modules that are present in the one-box environment but not in the sandbox environment, the package won't work in the sandbox environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">開発環境で作成されたパッケージが、サンドボックス環境ではなく、ワン ボックス環境にあるモジュールに依存する場合、パッケージはサンドボックス環境では動作しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>To resolve this issue, look at all the modules that you're dependent on, and make sure that you don't pull any farm adapter or any other module that isn't required in the production environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、依存関係のあるすべてのモジュールを確認し、実稼動環境で不要なアダプターまたはその他のモジュールを使用しないようにしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>The best practice is to take the package from the build box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ビルド ボックスからパッケージを取得することをお勧めします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>An error occurs when you sign in to on-premises environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス環境へのログイン時にエラーが発生</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source><bpt id="p1">**</bpt>Platform update 12:<ept id="p1">**</ept> Turn off the Skype integration by going to <bpt id="p2">**</bpt>System administration<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Client performance options<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プラットフォーム更新 12:<ept id="p1">**</ept> <bpt id="p2">**</bpt>システム管理<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>設定<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>クライアント パフォーマンス オプション<ept id="p4">**</ept>に移動して、Skype 統合を無効にしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>When you go to the app, append <bpt id="p1">**</bpt>?debug=true<ept id="p1">**</ept> to the URL, as shown in the following example: <ph id="ph1">`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリに移動するとき、<ph id="ph1">`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</ph> の例のように、<bpt id="p1">**</bpt>?debug=true<ept id="p1">**</ept> を URL に追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source><bpt id="p1">**</bpt>Platform update 8 and Platform update 11:<ept id="p1">**</ept> A known issue for the Skype application programming interface (API) affects the ability to sign in to on-premises environments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11:<ept id="p1">**</ept> 確認されている問題は、 Skype の アプリケーション プログラミング インターフェイス (API) が、オンプレミス環境へのサインインする機能に影響を及ぼしているというものです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>Microsoft is investigating a resolution for this issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoftはこの問題の解決方法を調査しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>To work around this issue, you can add <bpt id="p1">**</bpt>?debug=true<ept id="p1">**</ept> to the end of the URL, as shown in the following example: <ph id="ph1">`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を回避するために、次の例のように URL の末尾に <bpt id="p1">**</bpt>?debug=true<ept id="p1">**</ept> を追加できます。<ph id="ph1">`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>The local agent stops working after the tenant for the project from LCS is changed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェントは、LCS からのプロジェクトのテナントが変更されると作業を停止します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>Follow these steps to configure the local agent with the updated tenant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">更新されたテナントでローカル エージェントを構成するには、次の手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>Uninstall the local agent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェントをアンインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーの環境での適切なセットアップと配置トピックの「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source><bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configurelcs)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configurelcs)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source><bpt id="p1">[</bpt>Platform update 8 and Platform update 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#configurelcs)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11<ept id="p1">](setup-deploy-on-premises-pu8-pu11.md#configurelcs)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>Create a new LCS connector in the new tenant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しいテナントに新しい LCS コネクタを作成します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>Download the <bpt id="p1">**</bpt>local-agent.config<ept id="p1">**</ept> file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>local-agent.config<ept id="p1">**</ept> ファイルをダウンロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>Install the local agent.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ローカル エージェントをインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加の配置 (たとえば、2 つのサンド ボックス展開、またはサンド ボックスおよび生産の配置)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>You will receive the following error when you deploy an additional environment:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">追加の環境を展開すると、次のエラーが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>.<ph id="ph1">\\</ph>Publish-ADFSApplicationGroup.ps1 -HostUrl <ph id="ph2">`https://ax.d365ffo.onprem.contoso.com`</ph> New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\\</ph>Publish-ADFSApplicationGroup.ps1 -HostUrl <ph id="ph2">`https://ax.d365ffo.onprem.contoso.com`</ph> New-AdfsApplicationGroup : MSIS9908: アプリケーション グループ ID は、AD FS コンフィギュレーションで一意である必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>You can skip or modify the following sections in the deployment instructions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">配備手順の次のセクションをスキップまたは変更することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>Plan and acquire your certificates (as documented for <bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#plancert)</ept> or <bpt id="p2">[</bpt>Platform update 8 and Platform update 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#plancert)</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">証明書の計画と取得 (<bpt id="p1">[</bpt>プラットフォーム更新プログラム 12<ept id="p1">](setup-deploy-on-premises-pu12.md#plancert)</ept> または <bpt id="p2">[</bpt>プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#plancert)</ept> で記載されたものとして)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>You must use the same on-premises local agent certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同一のオンプレミスのローカル エージェント証明書を使用する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>You can use same star certificates (AOS SSL and Service Fabric).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">同一のスター証明書を使用することができます(AOS SSL および Service Fabric)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>The remaining certificates should probably differ from the certificates for the existing environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">残りの証明書は既存の環境の証明書とは異なる可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>Download setup scripts from LCS (as documented for <bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#downloadscripts)</ept> or <bpt id="p2">[</bpt>Platform update 8 and Platform update 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#downloadscripts)</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS からのセットアップ スクリプトのダウンロード (<bpt id="p1">[</bpt>プラットフォーム更新プログラム 12<ept id="p1">](setup-deploy-on-premises-pu12.md#downloadscripts)</ept> または <bpt id="p2">[</bpt>プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#downloadscripts)</ept> で記載されたものとして)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>The scripts that are downloaded should be copied into a new folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>Set up a standalone Service Fabric cluster (as documented for <bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupsfcluster)</ept> or <bpt id="p2">[</bpt>Platform update 8 and Platform update 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(<bpt id="p1">[</bpt>プラットフォーム更新プログラム 12<ept id="p1">](setup-deploy-on-premises-pu12.md#setupsfcluster)</ept> または <bpt id="p2">[</bpt>プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)</ept> に記載されているように) スタンドアロン Service Fabric クラスタを設定します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>The scripts that are downloaded should be copied into a new folder.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>Configure LCS connectivity for the tenant (as documented for <bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configurelcs)</ept> or <bpt id="p2">[</bpt>Platform update 8 and Platform update 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#configurelcs)</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テナント用 LCS 接続 のコンフィギュレーション (<bpt id="p1">[</bpt>プラットフォーム更新プログラム 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configurelcs)</ept> または <bpt id="p2">[</bpt>プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#configurelcs)</ept> で記載されたものとして)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>You must complete this task only one time for the tenant.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">テナントに対して、このタスクを 1 回のみ実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>Configure AD FS (as documented for <bpt id="p1">[</bpt>Platform update 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configureadfs)</ept> or <bpt id="p2">[</bpt>Platform update 8 and Platform update 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#configureadfs)</ept>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS のコンフィギュレーション (<bpt id="p1">[</bpt>プラットフォーム更新プログラム 12<ept id="p1">](setup-deploy-on-premises-pu12.md#configureadfs)</ept> または <bpt id="p2">[</bpt>プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11<ept id="p2">](setup-deploy-on-premises-pu8-pu11.md#configureadfs)</ept> で記載されたものとして)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>You can skip scripts 1, 2, and 3, because they have already been done.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">すでに完了しているので、スクリプト 1、スクリプト 2、スクリプト 3 はスキップできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>The .<ph id="ph1">\\</ph>Publish-ADFSApplicationGroup.ps1 script will fail even when the new <bpt id="p1">**</bpt>hosturl<ept id="p1">**</ept> value is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい <bpt id="p1">**</bpt>hosturl<ept id="p1">**</ept> 値を使用している場合でも、.<ph id="ph1">\\</ph>Publish-ADFSApplicationGroup.ps1 スクリプトは失敗します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>Therefore, you must manually complete these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">したがって、この手順を手動で完了する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>In AD FS Manager, go to <bpt id="p1">**</bpt>AD FS<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Application groups<ept id="p2">**</ept>, and open <bpt id="p3">**</bpt>Microsoft Dynamics 365 for Operations On-premises<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AD FS マネージャーで、<bpt id="p1">**</bpt>AD FS<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>アプリケーション グループ<ept id="p2">**</ept>に移動し、<bpt id="p3">**</bpt>Microsoft Dynamics 365 for Operations オンプレミス<ept id="p3">**</ept>を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>Open the <bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations On-premises - Native application<ept id="p1">**</ept> native application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations  オンプレミス - ネイティブ アプリケーション<ept id="p1">**</ept> を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>Add the redirect URI of the new environment (DNS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい環境 (DNS) の リダイレクト URI を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>Open the <bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application<ept id="p1">**</ept> native application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 - ネイティブ アプリケーション<ept id="p1">**</ept> を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>Add the redirect URI of the new environment (DNS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい環境 (DNS) の リダイレクト URI を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>Open the <bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations On-premises - Web API<ept id="p1">**</ept> Web API.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations オンプレミス - Web AP I<ept id="p1">**</ept> を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>Add the two entries of the redirect URI of the new environment (DNS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい環境 (DNS) のリダイレクト URI の 2 つのエントリを追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>Open the <bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API<ept id="p1">**</ept> Web API.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 Web API<ept id="p1">**</ept> を開きます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Add the redirect URI of the new environment (DNS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新しい環境 (DNS) の リダイレクト URI を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>Redeploy SSRS reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SSRS レポートを再配置する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>Delete the entry in SF.SyncLog, and then restart one of the AOS machines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source>The AOS machine will rerun DB Sync and then deploy reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS コンピューターは DB 同期を再実行し、レポートを配置します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>Add axdbadmin to tempdb after a SQL Server restart via a stored procedure</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ストアド プロシージャ経由で SQL Server を再起動した後、tempdb に axdbadmin を追加します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>When SQL Server is restarted, the tempdb database is re-created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server を再起動すると、tempdb データベースが再作成されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>Therefore, there will be missing permissions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">結果として、アクセス許可が不十分です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>Run the following script to create a stored procedure on the master database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マスター データベースでストアド プロシージャを作成する次のスクリプトを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>Error: "Updates to existing credential with KeyId '<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>' is not allowed"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー、「KeyId『<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>』による既存の資格情報の更新は許可されていません」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>You might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次のエラーが表示される場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>Updates to existing credential with KeyId '<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>' is not allowed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KeyId「<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>」を保持している既存の資格情報を更新することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するための手順は、オンプレミス プロジェクトのみをご利用しているか、オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用しているかによって異なります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>If have only an on-premises project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">場合設置プロジェクトのみ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>If have only an on-premises project, you can't update the existing credential with KeyId '<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンプレミス プロジェクトのみの場合は、KeyId '<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>' を保持している既存の資格情報を更新することはできません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>New-AzureRmADSpCredential : Update to existing credential with KeyId '<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>' is not allowed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">New-AzureRmADSpCredential : KeyId '<ph id="ph1">\&lt;</ph>key<ph id="ph2">\&gt;</ph>' による既存の資格情報の更新は許可されていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>At C:<ph id="ph1">\\</ph>InfrastructureScripts<ph id="ph2">\\</ph>Add-CertToServicePrincipal.ps1:62 char:1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">At C:<ph id="ph1">\\</ph>InfrastructureScripts<ph id="ph2">\\</ph>Add-CertToServicePrincipal.ps1:62 char:1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">New-AzureRmADSpCredential -ObjectId $servicePrincipal.Id -CertValue $ ...</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>CategoryInfo : InvalidOperation: (:) <ph id="ph1">\[</ph>New-AzureRmADSpCredential<ph id="ph2">\]</ph>, Exception</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CategoryInfo : InvalidOperation: (:) <ph id="ph1">\[</ph>New-AzureRmADSpCredential<ph id="ph2">\]</ph>, Exception</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FullyQualifiedErrorId : Microsoft.Azure.Commands.ActiveDirectory.NewAzureADSpCredentialCommand</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source>Run the following PowerShell command to resolve the issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、次の PowerShell コマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>If you have both an online project and an on-premises project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用の場合</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>If you have both an online project and an on-premises project, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">オンライン プロジェクトとオンプレミス プロジェクトの両方をご利用の場合は、次の手順に従ってください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>Verify that the Microsoft .NET Framework version 4.7.2 is installed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft .NET フレームワーク version 4.7.2 がインストールされていることを確認します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source>Run the following Windows PowerShell script to install the Azure PowerShell module.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のWindows PowerShell スクリプトを実行し、Azure PowerShell moduleをインストールします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>Run the following Windows PowerShell script to upload the new certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">以下のWindows PowerShellスクリプトを実行し、新規証明書をアップロードします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>Run the following command to remove the duplicate certificate, if more than one certificate exists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数の証明書が存在する場合は、以下のコマンドを実行して重複する証明書を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>ODBC driver 17 is required for platform updates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォームの更新には ODBC ドライバー 17 が必要です</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source>The latest platform binary update uses Open Database Connectivity (ODBC) driver 17.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォーム バイナリを最新に更新するには、Open Database Connectivity ODBC ドライバー 17 を使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>This upgrade resolves stability issues that are linked to older ODBC drivers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このアップグレードでは、古いバージョンの ODBC ドライバーに関連する安定性の問題を修正します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>The <bpt id="p1">[</bpt>Setup perquisites<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites)</ept> documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>追加の設定<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites)</ept> に関するドキュメントが更新されており、次の変更が記載されています。各AOSサーバーにはODBC ドライバー 17 がインストールされている必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ODBC ドライバー 17 をインストールしない場合は、環境のメンテナンス処理中に DB 同期エラーが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source>Here are some examples of errors:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラーの例を次に示します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>In Service Fabric:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric で:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>Unhealthy event: SourceId='System.RA', Property='ReplicaOpenStatus', HealthState='Warning', ConsiderWarningAsError=false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">問題のあるイベント: SourceId=「System.RA」、プロパティ =「ReplicaOpenStatus」、HealthState=「警告」、ConsiderWarningAsError=false。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>Replica had multiple failures during open on AOS3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レプリカで、AOS3 で開いているときに複数の障害が発生しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source>API call: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">API 呼び出し: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source><bpt id="p1">**</bpt>DB sync failed.<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DB の同期に失敗しました。<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>On AOS machines:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS コンピューターで:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>Event Viewer <ph id="ph1">\&gt;</ph> Custom Views <ph id="ph2">\&gt;</ph> Administrative Events:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント ビューアー <ph id="ph1">\&gt;</ph> カスタム ビュー <ph id="ph2">\&gt;</ph> 管理イベント:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source>Application: Microsoft.Dynamics.AX.Deployment.Setup.exe Framework Version: v4.0.30319 Description: The process was terminated due to an unhandled exception.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">アプリケーション: Microsoft.Dynamics.AX.Deployment.Setup.exe フレームワーク バージョン: v4.0.30319 説明: プロセスは未処理の例外によって中止されました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>Exception Info: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String<ph id="ph1">\[</ph><ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例外情報: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String<ph id="ph1">\[</ph><ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOSx<ph id="ph4">\\</ph>Fabric<ph id="ph5">\\</ph>work<ph id="ph6">\\</ph>Applications<ph id="ph7">\\</ph>AXSFType<ph id="ph8">\_</ph>Appxx<ph id="ph9">\\</ph>log:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOSx<ph id="ph4">\\</ph>Fabric<ph id="ph5">\\</ph>work<ph id="ph6">\\</ph>Applications<ph id="ph7">\\</ph>AXSFType<ph id="ph8">\_</ph>Appxx<ph id="ph9">\\</ph>log:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOS1<ph id="ph4">\\</ph>Fabric<ph id="ph5">\\</ph>work<ph id="ph6">\\</ph>Applications<ph id="ph7">\\</ph>AXSFType<ph id="ph8">\_</ph>App18<ph id="ph9">\\</ph>AXSF.Code.1.0.20180831174152<ph id="ph10">\\</ph>Packages" -metadatadir "C:<ph id="ph11">\\</ph>ProgramData<ph id="ph12">\\</ph>SF<ph id="ph13">\\</ph>AOS1<ph id="ph14">\\</ph>Fabric<ph id="ph15">\\</ph>work<ph id="ph16">\\</ph>Applications<ph id="ph17">\\</ph>AXSFType<ph id="ph18">\_</ph>App18<ph id="ph19">\\</ph>AXSF.Code.1.0.20180831174152<ph id="ph20">\\</ph>Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOS1<ph id="ph4">\\</ph>Fabric<ph id="ph5">\\</ph>work<ph id="ph6">\\</ph>Applications<ph id="ph7">\\</ph>AXSFType<ph id="ph8">\_</ph>App18<ph id="ph9">\\</ph>AXSF.Code.1.0.20180831174152<ph id="ph10">\\</ph>Packages" -metadatadir "C:<ph id="ph11">\\</ph>ProgramData<ph id="ph12">\\</ph>SF<ph id="ph13">\\</ph>AOS1<ph id="ph14">\\</ph>Fabric<ph id="ph15">\\</ph>work<ph id="ph16">\\</ph>Applications<ph id="ph17">\\</ph>AXSFType<ph id="ph18">\_</ph>App18<ph id="ph19">\\</ph>AXSF.Code.1.0.20180831174152<ph id="ph20">\\</ph>Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>Unhandled Exception: System.IO.FileNotFoundException: <bpt id="p1">**</bpt>Could not load file or assembly 'aoskernel.dll' or one of its dependencies. The specified module could not be found.<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ハンドルされない例外: System.IO.FileNotFoundException: <bpt id="p1">**</bpt>ファイルまたはアセンブリ 'aoskernel.dll'、あるいはその依存関係のうちのいずれか 1 つを読み込めませんでした。指定されたモジュールが見つかりませんでした。<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String<ph id="ph1">\[</ph><ph id="ph2">\]</ph> args)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String<ph id="ph1">\[</ph><ph id="ph2">\]</ph> args) にて</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source><bpt id="p1">**</bpt>DB sync failed.<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DB の同期に失敗しました。<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>A "No subscription found in the context" error occurs when you run Add-CertToServicePrincipal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Add-CertToServicePrincipal を実行すると、"コンテキストにサブスクリプションが見つかりません" エラーが発生します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>Recent versions of Windows PowerShell might cause a "No subscription found in the context" error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">最新バージョンの Windows PowerShell が原因で "コンテキストにサブスクリプションが見つかりません" エラーが発生することがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>To resolve this issue, install and load an older version of Windows PowerShell, such as version 5.7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、Windows PowerShellのバージョン5.7.0などの古いバージョンをインストールし、上書きしてください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source>Service Fabric Explorer warnings occur after you restart a machine</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンピューターの再起動後に Service Fabric Explorer の警告メッセージが表示される</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source><bpt id="p1">**</bpt>Error:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>エラー:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source>Error event: SourceId='MonitoringAgentService', Property='ServiceState'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー: event: SourceId='MonitoringAgentService', Property='ServiceState'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>System.Management.Automation.RuntimeException: Error: <bpt id="p1">**</bpt>The GUID passed was not recognized as valid by a WMI data provider.<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">System.Management.Automation.RuntimeException: エラー: <bpt id="p1">**</bpt>渡された GUID は WMI データ プロバイダーにより有効と認識されませんでした。<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>(Exception from HRESULT: 0x80071068).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(HRESULT からの例外: 0x80071068)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>Stack trace:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">スタック トレース:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source><bpt id="p1">**</bpt>Steps:<ept id="p1">**</ept> To resolve this issue, restart the application package that generated the warning message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>手順:<ept id="p1">**</ept> この問題を解決するには、警告メッセージの原因であるアプリケーション パッケージを再起動します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>For more information, see <bpt id="p1">[</bpt>Restart applications (such as AOS)<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳しくは、 <bpt id="p1">[</bpt>アプリケーション(AOS など)を再起動してください<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos)</ept> をご覧ください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source>The internal time zone version number that is stored in the database is higher than the version that is supported by the kernel (13/12)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">データベースに格納されている内部タイム ゾーンのバージョン番号が、カーネル (13/12) でサポートされているバージョンよりも大きくなっています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>This database synchronization error can cause an old platform build (Platform update 12) to be deployed on top of a database that had a newer build (Platform update 15).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータベースの同期エラーにより、新しいビルド (プラットフォーム更新 15) があったデータベースの上に古いプラットフォーム ビルド (プラットフォーム更新 12) が配置されてしまう可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source>To resolve this issue, note the <bpt id="p1">**</bpt>SYSTIMEZONESVERSION<ept id="p1">**</ept> value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、 <bpt id="p1">**</bpt>SYSTIMEZONESVERSION<ept id="p1">**</ept> の値が重要になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>Update the value to the version that was returned in the error message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー メッセージにて表示されたバージョンの値で [value] を更新します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>Printing randomly stops</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">印刷がランダムに停止する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>Make sure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS サーバーにインストールされているすべてのネットワーク プリンターが、AXService.EXE プロセスが実行されている Windows サービス アカウントとして実行されていることを確認してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source>Ax-DatabaseSynchronize isn't populated with events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ax-DatabaseSynchronize にイベントが設定されていません</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>In Platform update 20 and later, there is database synchronization log issue where the synchronization logs aren't written under <bpt id="p1">**</bpt>Ax-DatabaseSynchronize<ept id="p1">**</ept> in Event Viewer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プラットフォームの更新 20 およびそれ以降では、データベース同期ログに問題があり、イベント ビューアーで同期ログが <bpt id="p1">**</bpt>Ax-DatabaseSynchronize<ept id="p1">**</ept> の下に作成されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>To resolve this issue, go to <ph id="ph1">\&lt;</ph>SF-dir<ph id="ph2">\&gt;</ph><ph id="ph3">\\</ph>AOS<ph id="ph4">\_</ph><ph id="ph5">\&lt;</ph>x<ph id="ph6">\&gt;</ph><ph id="ph7">\\</ph>Fabric<ph id="ph8">\\</ph>work<ph id="ph9">\\</ph>Applications<ph id="ph10">\\</ph>AXSFType<ph id="ph11">\_</ph>App<ph id="ph12">\&lt;</ph>X<ph id="ph13">\&gt;</ph><ph id="ph14">\\</ph>log.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、 <ph id="ph1">\&lt;</ph>SF-dir<ph id="ph2">\&gt;</ph><ph id="ph3">\\</ph>AOS<ph id="ph4">\_</ph><ph id="ph5">\&lt;</ph>x<ph id="ph6">\&gt;</ph><ph id="ph7">\\</ph>Fabric<ph id="ph8">\\</ph>work<ph id="ph9">\\</ph>Applications<ph id="ph10">\\</ph>AXSFType<ph id="ph11">\_</ph>App<ph id="ph12">\&lt;</ph>X<ph id="ph13">\&gt;</ph><ph id="ph14">\\</ph>log に移動してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source>For example, go to C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOS<ph id="ph4">\_</ph>11<ph id="ph5">\\</ph>Fabric<ph id="ph6">\\</ph>work<ph id="ph7">\\</ph>Applications<ph id="ph8">\\</ph>AXSFType<ph id="ph9">\_</ph>App183<ph id="ph10">\\</ph>log.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">例えば次の場所に移動します。 C:<ph id="ph1">\\</ph>ProgramData<ph id="ph2">\\</ph>SF<ph id="ph3">\\</ph>AOS<ph id="ph4">\_</ph>11<ph id="ph5">\\</ph>Fabric<ph id="ph6">\\</ph>work<ph id="ph7">\\</ph>Applications<ph id="ph8">\\</ph>AXSFType<ph id="ph9">\_</ph>App183<ph id="ph10">\\</ph>log</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source>Here, you can see the output from DatabaseSynchronize in the Code<ph id="ph1">\_</ph>AXSF<ph id="ph2">\_</ph>M<ph id="ph3">\_</ph><ph id="ph4">\&lt;</ph>X<ph id="ph5">\&gt;</ph>.out files.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ここでは、DatabaseSynchronize からの出力された内容を確認できます。 Code<ph id="ph1">\_</ph>AXSF<ph id="ph2">\_</ph>M<ph id="ph3">\_</ph><ph id="ph4">\&lt;</ph>X<ph id="ph5">\&gt;</ph>.out files.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>Troubleshoot any issues that pertain to this component.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコンポーネントに関する問題をトラブルシューティングします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>You can't access Finance and Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations にアクセスできません: 「AADSTS50058: サイレント サインインの要求が送信されましたが、ログインしているユーザーがいません」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source>After a user enters credentials to sign in to Finance and Operations, the browser briefly shows the application layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations へのログイン資格情報を入力すると、ブラウザでアプリケーションのレイアウトが少しの間表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source>However, it then tries to redirect outside Finance and Operations, but fails with the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">しかしその後、Finance and Operations外部へのリダイレクトを試みた結果、次のエラーが出て失敗します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>AADSTS50058: A silent sign-in request was sent but no user is signed in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AADSTS50058: サイレント サインイン要求が送信されましたが、ユーザーがログインしていません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>The cookies that represent the user's session weren't sent in the request to Azure AD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーのセッションを表すために使用する Cookie が Azure AD への要求で送信されませんでした。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>This issue can occur if the user is using Internet Explorer or Microsoft Edge, and if the web app that sends the silent sign-in request is in a different IE security zone than the Azure AD endpoint (login.microsoftonline.com).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これは、 Internet Explorer または Microsoft Edge を使用している場合で、webアプリケーションが送信しているサイレント サインインのリクエストが Azure AD エンドポイント (login.microsoftonline.com)とは異なる IEのセキュリティ ゾーンに設定されている場合に発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source>This issue occurs because there was a change in the Skype Presence API, and on-premises environments connect to this API by default.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、次の PowerShell コマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>To resolve the issue, run the following SQL Server query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、次の SQL Server query を実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>Alternatively, turn off the <bpt id="p1">**</bpt>Skype presence enabled<ept id="p1">**</ept> option on the <bpt id="p2">**</bpt>Client performance options<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>System administration<ept id="p3">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p4">**</bpt>Setup<ept id="p4">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p5">**</bpt>Client performance options<ept id="p5">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">または、<bpt id="p2">**</bpt>クライアント パフォーマンス オプション<ept id="p2">**</ept> ページの <bpt id="p1">**</bpt>Skype プレゼンスが有効<ept id="p1">**</ept> オプションを無効にします (<bpt id="p3">**</bpt>システム管理<ept id="p3">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p4">**</bpt>設定<ept id="p4">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p5">**</bpt>クライアント パフォーマンス オプション<ept id="p5">**</ept>)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source>To use this approach, you must be able to sign in to Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この方法を使用するには、Finance and Operations にログインできる必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>Therefore, you must first block redirection in the browser.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">そのため、最初にブラウザのリダイレクトをブロックする必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>After you disable the Skype presence, you can unblock redirection again.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skypeのプレゼンス機能を無効にすると、リダイレクトのブロックを解除しても構いません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>The Google Chrome browser blocks redirection by default.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chrome ブラウザーでは、最初からリダイレクトがブロックされています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>Error: "There was an error during CodePackage activation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー: CodePackage の有効化でエラーが発生しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>Service host failed to activate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス ホストの有効化に失敗しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>Error:0x8007052e"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー: 0x8007052e"</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>You might receive the following error during a new installation:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">新規インストールの際に以下のエラーが発生する可能性があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>Error event: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー イベント: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source>There was an error during CodePackage activation.Service host failed to activate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CodePackage の有効化でエラーが発生しました。サービス ホストの有効化に失敗しました。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>Error:0x8007052e</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">エラー: 0x8007052e</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>This error will cause the AXSF service to fail with the same error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このエラーと同じエラーが、AXSFサービスでも発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>To resolve this issue, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題を解決するには、次の手順に従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source>In the <bpt id="p1">[</bpt>agent share path<ept id="p1">](setup-deploy-on-premises-pu12.md#setupfile)</ept>, find the <bpt id="p2">**</bpt>netstandard.dll<ept id="p2">**</ept> file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>エージェント共有パス<ept id="p1">](setup-deploy-on-premises-pu12.md#setupfile)</ept> にて、 <bpt id="p2">**</bpt>netstandard.dll<ept id="p2">**</ept> ファイルを見つけます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>For example, this file might be at <ph id="ph1">\\</ph>wp<ph id="ph2">\\</ph><ph id="ph3">\&lt;</ph>name<ph id="ph4">\&gt;</ph><ph id="ph5">\\</ph>StandaloneSetup-<ph id="ph6">\&lt;</ph>ver<ph id="ph7">\&gt;</ph><ph id="ph8">\\</ph>Apps<ph id="ph9">\\</ph>AOS<ph id="ph10">\\</ph>AXServiceApp<ph id="ph11">\\</ph>AXSF<ph id="ph12">\\</ph>Code<ph id="ph13">\\</ph>bin<ph id="ph14">\\</ph>netstandard.dll.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このファイルは、例えば <ph id="ph1">\\</ph>wp<ph id="ph2">\\</ph><ph id="ph3">\&lt;</ph>名<ph id="ph4">\&gt;</ph><ph id="ph5">\\</ph>StandaloneSetup -<ph id="ph6">\&lt;</ph>バージョン<ph id="ph7">\&gt;</ph><ph id="ph8">\\</ph>アプリケーション<ph id="ph9">\\</ph>AOS<ph id="ph10">\\</ph>AXServiceApp<ph id="ph11">\\</ph>AXSF<ph id="ph12">\\</ph>コード<ph id="ph13">\\</ph>在庫置場<ph id="ph14">\\</ph>netstandard.dll に多くの場合存在します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>On each AOS server, open a Command Prompt window as an administrator, and run the following command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それぞれの AOS サーバーにて、管理者権限で コマンド プロンプトを開き、次のコマンドを実行します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>Delete <bpt id="p1">**</bpt>AXBootstrapperApp<ept id="p1">**</ept> from Service Fabric.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Service Fabric から <bpt id="p1">**</bpt>AXBootstrapperApp<ept id="p1">**</ept> を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>Delete the <bpt id="p1">**</bpt>fabric:/Bootstrapper/AXBootstrapper<ept id="p1">**</ept> service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>fabric:/Bootstrapper/AXBootstrapper<ept id="p1">**</ept> サービス を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>Delete the <bpt id="p1">**</bpt>fabric:/Bootstrapper<ept id="p1">**</ept> application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>fabric:/Bootstrapper<ept id="p1">**</ept> アプリケーションを削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>Unprovision the <bpt id="p1">**</bpt>AXBootstrapperAppType<ept id="p1">**</ept> type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AXBootstrapperAppType<ept id="p1">**</ept> のプロヴィジョニングを解除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>Redeploy the environment from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCS から環境を再配置します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>SQL Server 2016 service pack 2 is recommended for Reporting Services instances</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reporting Servicesのインスタンス には SQL Server 2016 service pack 2 を推奨します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>When you go through LCS servicing operations, you might receive the following error:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LCSにてサービス操作を行うと次のエラーが表示されることがあります:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>The process cannot access the file 'C:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft SQL Server<ph id="ph3">\\</ph>MSRS13.MSSQLSERVER<ph id="ph4">\\</ph>Reporting Services<ph id="ph5">\\</ph>ReportServer<ph id="ph6">\\</ph>bin<ph id="ph7">\\</ph>Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll' because it is being used by another process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロセスが次のファイルにアクセスできません ' c:<ph id="ph1">\\</ph>Program Files<ph id="ph2">\\</ph>Microsoft SQL Server<ph id="ph3">\\</ph>MSRS13.MSSQLSERVER<ph id="ph4">\\</ph>Reporting Services<ph id="ph5">\\</ph>ReportServer<ph id="ph6">\\</ph>bin<ph id="ph7">\\</ph>Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll' 別のプロセスによって使用されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>This issue occurs because Reporting Services has a lock on a Microsoft Dynamics .dll file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この問題は Reporting Services が Microsoft Dynamics .dllファイル をロックしているために発生します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source>We currently recommend that you have SQL Server 2016 service pack 2 installed on Reporting Services instances.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reporting Servicesのインスタンスには、SQL Server 2016 service pack 2をインストールすることを推奨しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>You must have service pack 2 installed, and no additional cumulative updates or hotfixes must be installed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス パック2のインストールが必要し、累積的な更新を追加または修正プログラムをインストールする必要がないです。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

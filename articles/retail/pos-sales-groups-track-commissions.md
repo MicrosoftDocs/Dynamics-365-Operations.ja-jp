@@ -1,90 +1,198 @@
----
-title: 売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
-description: 顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。
-author: jblucher
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 261234
-ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ed4f9b3055e164600827b62d57b7a5068edb3b1a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559304"
----
-# <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a><span data-ttu-id="b2dcb-103">売上グループを使用した販売時点管理 (POS) でのコミッションの追跡</span><span class="sxs-lookup"><span data-stu-id="b2dcb-103">Track commissions in the point of sale (POS) by using sales groups</span></span>
-
-[!include [banner](includes/banner.md)]
-
-<span data-ttu-id="b2dcb-104">顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-104">It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.</span></span>
-
-<span data-ttu-id="b2dcb-105">販売担当者による売上の追跡は、アソシエイトの販売能力の測定であり、レジ担当者による売上はスピードと効率の測定です。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-105">Tracking sales by sales representative is a measure of the associates selling abilities, while sales by cashier is a measure of speed and efficiency.</span></span> <span data-ttu-id="b2dcb-106">販売担当者が追跡した売上も、手数料やその他のインセンティブの計算によく使用されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-106">Sales tracked by sales representative are also often used to calculate commissions or other incentives.</span></span>
-
-## <a name="configuring-a-worker-to-be-a-sales-representative-in-pos"></a><span data-ttu-id="b2dcb-107">従業員を POS の販売担当者に設定する</span><span class="sxs-lookup"><span data-stu-id="b2dcb-107">Configuring a worker to be a sales representative in POS</span></span>
-
-<span data-ttu-id="b2dcb-108">従業員が販売グループに追加されると、その従業員は手数料の対象となり、システム内の販売担当者として識別することができます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-108">When a worker is added to a sales group, they become eligible for commission and can be identified as a sales representative in the system.</span></span> <span data-ttu-id="b2dcb-109">売上グループに所属していない作業員は、委託の対象とならず、POS (営業拠点) アプリケーションに営業担当者として表示されません。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-109">A worker who isn't in a sales group isn't eligible for commission and won't be listed as a sales representative in the point of sale (POS) application.</span></span> <span data-ttu-id="b2dcb-110">POS では、営業担当者のリストは、店舗に割り当てられた少なくとも 1 人の従業員を含むすべての営業グループから派生しています。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-110">In POS, the list of sales representatives is derived from all sales groups that contain at least one worker assigned to the store.</span></span> <span data-ttu-id="b2dcb-111">一覧は、販売グループ ID と名前 (ID : 名前) の組み合わせとして POS に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-111">The list is shown in POS as a combination of Sales group ID and Name (ID : Name).</span></span> <span data-ttu-id="b2dcb-112">小売業者が POS ライン上で販売担当者を自動的に設定するシナリオをサポートするために、既定の売上グループを従業員に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-112">A default sales group can be assigned to workers to support scenarios where the retailer chooses to set the sales representative on POS lines automatically.</span></span> <span data-ttu-id="b2dcb-113">ユーザーは、任意の売上グループから、その作業者がメンバーであることを選択できます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-113">Users can select from any sales group that the worker is a member of.</span></span>
-
-## <a name="functionality-profile-settings"></a><span data-ttu-id="b2dcb-114">機能プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="b2dcb-114">Functionality profile settings</span></span>
-
-<span data-ttu-id="b2dcb-115">販売担当者が関わる POS のフローとプロセスを決定するストアの機能プロファイル設定がいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-115">There are a number of functionality profile settings for a store that will determine the flow and process in POS that involve sales representatives.</span></span>
-
-<table>
-<thead>
-<tr>
-<th><span data-ttu-id="b2dcb-116">プロファイル</span><span class="sxs-lookup"><span data-stu-id="b2dcb-116">Profile</span></span></th>
-<th><span data-ttu-id="b2dcb-117">説明</span><span class="sxs-lookup"><span data-stu-id="b2dcb-117">Description</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span data-ttu-id="b2dcb-118">既定ではレジ担当者 (利用可能な場合)</span><span class="sxs-lookup"><span data-stu-id="b2dcb-118">Default to cashier when available</span></span></td>
-<td><span data-ttu-id="b2dcb-119">このオプションを有効にすると、POS は自動的にトランザクション明細行に現在のレジ担当者の既定の販売グループを設定します。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-119">If this option is enabled, POS will automatically populate transaction lines with the current cashier's default sales group.</span></span> <span data-ttu-id="b2dcb-120">レジ担当者に既定の売上グループが指定されていない場合、値は設定されません。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-120">If a cashier doesn't have a default sales group specified, the value won't be set.</span></span> <span data-ttu-id="b2dcb-121">ユーザーは、POS ボタン グリッド ボタンを使用して売上グループを手動で設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-121">A user could still manually set the sales group by using a POS button grid button.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="b2dcb-122">販売担当者の確認</span><span class="sxs-lookup"><span data-stu-id="b2dcb-122">Prompt for sales representative</span></span></td>
-<td><span data-ttu-id="b2dcb-123">このオプションには、3つの値があります。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-123">This option has three possible values:</span></span>
-<ul>
-<li><span data-ttu-id="b2dcb-124"><strong>いいえ</strong> – このオプションを選択すると、売上グループを選択するよう求められません。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-124"><strong>No</strong> – If this option is selected, the user won't be prompted to select a sales group.</span></span> <span data-ttu-id="b2dcb-125">レジ担当者の既定の売上グループを使用するか、または POS ボタン グリッド ボタンを使用して、この値を手動で設定することができます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-125">The value could still be set by using a cashier's default Sales group or manually by using a POS button grid button.</span></span></li>
-<li><span data-ttu-id="b2dcb-126"><strong>トランザクションの開始</strong> – このオプションが選択されていて、<strong>レジ担当者に対する既定</strong>オプションが有効になっていないか、現在のレジ担当者に既定の売上グループがない場合、ユーザーは各取引の開始時に売上グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-126"><strong>Start of transaction</strong> – If this option is selected, and either the <strong>Default to cashier</strong> option isn't enabled or the current cashier doesn't have a default sales group, the user will be prompted to select a sales group at the beginning of each transaction.</span></span> <span data-ttu-id="b2dcb-127">このプロンプトから販売グループを選択すると、後続のすべての明細行が選択された売上グループにデフォルト設定されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-127">Selecting a sales group from this prompt will default all subsequent lines to the selected sales group.</span></span> <span data-ttu-id="b2dcb-128">ユーザーは、POS ボタン グリッド ボタンを使用して売上グループを手動で設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-128">A user could still manually set the sales group by using a POS button grid button.</span></span></li>
-<li><span data-ttu-id="b2dcb-129"><strong>各行用</strong> – このオプションが選択されていて、<strong>レジ担当者に対する既定</strong>オプションが有効になっていないか、現在のレジ担当者に既定の売上グループがない場合、ユーザーは各行を追加した後に売上グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-129"><strong>For each line</strong> – If this option is selected, and either the <strong>Default to cashier</strong> option isn't enabled or the current cashier doesn't have a default sales group, the user will be prompted to select a sales group after adding each line.</span></span> <span data-ttu-id="b2dcb-130">ユーザーは、POS ボタン グリッド ボタンを使用して売上グループを手動で設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-130">A user could still manually set the Sales group by using a POS button grid button.</span></span></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="b2dcb-131">必須</span><span class="sxs-lookup"><span data-stu-id="b2dcb-131">Require</span></span></td>
-<td><span data-ttu-id="b2dcb-132">このオプションは、POS が販売担当者のプロンプトを表示するように設定されている場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-132">This option is only applicable when POS is configured to prompt for a sales representative.</span></span> <span data-ttu-id="b2dcb-133">有効にすると、続行する前に売上グループを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-133">If enabled, the user will be required to choose a sales group before continuing.</span></span> <span data-ttu-id="b2dcb-134">それ以外の場合は、ユーザーはプロンプトが表示されますが、選択せずにキャンセルして続行できます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-134">Otherwise, the user will be prompted, but can cancel and continue without making a selection.</span></span> <span data-ttu-id="b2dcb-135">明細行が追加された後も、十分な権限を持つユーザーは、その明細行から売上グループを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-135">After the line is added, a user with sufficient permissions could still remove the sales group from the line.</span></span> <span data-ttu-id="b2dcb-136">この状況では、「販売担当者が必要」は適用されません。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-136">"Require sales representative" is not enforced in this situation.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a><span data-ttu-id="b2dcb-137">POS トランザクション画面の営業担当者情報の照会</span><span class="sxs-lookup"><span data-stu-id="b2dcb-137">Displaying the Sales representative information on the POS transactions screen</span></span>
-
-<span data-ttu-id="b2dcb-138">POS トランザクション画面のレイアウトと内容は、画面レイアウト設計者および店舗、登録者、または作業者に割り当てられた画面レイアウトを使用して設定することができます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-138">The POS transaction screen layout and contents are configurable using the screen layout designer and assigned screen layouts to stores, registers, or workers.</span></span><span data-ttu-id="b2dcb-139">**販売担当者**フィールドは、入荷ウィンドウの明細行タブに追加できます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-139"> The *\*Sales representative** field can be added to the Lines tab of the Receipt pane.</span></span><span data-ttu-id="b2dcb-140">これにより、取引画面に各明細行の指定された販売グループの ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-140">  This will display the ID of the specified Sales group for each line on the transaction screen.</span></span>
-
-## <a name="adding-sales-representative-operations-to-pos-button-grids"></a><span data-ttu-id="b2dcb-141">販売担当者操作を POS ボタン グリッドに追加する</span><span class="sxs-lookup"><span data-stu-id="b2dcb-141">Adding Sales representative operations to POS button grids</span></span>
-
-<span data-ttu-id="b2dcb-142">POS では、画面レイアウトに含まれるボタン グリッドを設定して POS 操作にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-142">POS allows users to configure button grids, which are included in screen layouts to provide access to POS operations.</span></span> <span data-ttu-id="b2dcb-143">次の POS 操作は、販売担当者に関連するボタン グリッド ボタンに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-143">The following POS operations can be assigned to button grid buttons that pertain to Sales representatives.</span></span>
-
-| <span data-ttu-id="b2dcb-144">操作</span><span class="sxs-lookup"><span data-stu-id="b2dcb-144">Operation</span></span>                                 | <span data-ttu-id="b2dcb-145">説明</span><span class="sxs-lookup"><span data-stu-id="b2dcb-145">Description</span></span> |
-|-------------------------------------------|-------------|
-| <span data-ttu-id="b2dcb-146">明細行の販売担当者の設定</span><span class="sxs-lookup"><span data-stu-id="b2dcb-146">Set sales representative on line</span></span>          | <span data-ttu-id="b2dcb-147">この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-147">This POS operation displays a list of eligible Sales groups (ID : Name) for the store.</span></span><span data-ttu-id="b2dcb-148">このリストから売上グループを選択すると、現在のトランザクション明細行の値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-148"> Selecting a Sales group from this list will set the value on the current transaction line.</span></span> |
-| <span data-ttu-id="b2dcb-149">明細行の販売担当者のクリア</span><span class="sxs-lookup"><span data-stu-id="b2dcb-149">Clear sales representative on line</span></span>        | <span data-ttu-id="b2dcb-150">この POS 操作は、現在のトランザクション明細行から現在の売上グループの値を削除します。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-150">This POS operation removes the current Sales group value from the current transaction line.</span></span> |
-| <span data-ttu-id="b2dcb-151">トランザクションの販売担当者を設定</span><span class="sxs-lookup"><span data-stu-id="b2dcb-151">Set sales representative on transaction</span></span>   | <span data-ttu-id="b2dcb-152">この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-152">This POS operation displays a list of eligible Sales groups (ID : Name) for the store.</span></span><span data-ttu-id="b2dcb-153">このリストから売上グループを選択すると、現在のトランザクションの既定値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-153"> Selecting a Sales group from this list will set the default value on the current transaction.</span></span> <span data-ttu-id="b2dcb-154">売上グループが割り当てられていない既存の明細行が設定され、その後に追加される明細行も設定されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-154">Any existing lines without a sales group assigned will be set, as well as any subsequently added lines.</span></span> |
-| <span data-ttu-id="b2dcb-155">トランザクション販売担当者をクリア</span><span class="sxs-lookup"><span data-stu-id="b2dcb-155">Clear sales representative on transaction</span></span> | <span data-ttu-id="b2dcb-156">この POS 操作は、現在のトランザクション明細行から現在の既定の売上グループ値を削除します。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-156">This POS operation removes the current default Sales group value from the current transaction.</span></span> <span data-ttu-id="b2dcb-157">トランザクションにすでに存在する明細行には影響しません。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-157">It does not impact any lines already existing in the transaction.</span></span> |
-
-## <a name="calculating-commissions"></a><span data-ttu-id="b2dcb-158">コミッションの計算</span><span class="sxs-lookup"><span data-stu-id="b2dcb-158">Calculating commissions</span></span>
-
-<span data-ttu-id="b2dcb-159">コミッションは、明細の転記または受注時の転記時に、指定された売上グループの従業員に対して計算されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-159">Commission is calculated for the workers in the specified sales groups at the time of statement posting or sales order posting.</span></span><span data-ttu-id="b2dcb-160">コミッション金額は、売上グループで定義されている従業員のコミッション分配、および取引の顧客および/または製品に関連するコミッションの計算設定に基づいて決定されます。</span><span class="sxs-lookup"><span data-stu-id="b2dcb-160"> The commission amount is determined based on the worker's commission share, as defined in the sales group and the associated commission calculation settings for the customer and/or products on the transaction.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="pos-sales-groups-track-commissions.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>pos-sales-groups-track-commissions.723c58.afbf69c072ae205e973203d97a5fbca7504ae04f.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>afbf69c072ae205e973203d97a5fbca7504ae04f</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\pos-sales-groups-track-commissions.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Track commissions in the point of sale (POS) by using sales groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上グループを使用した販売時点管理 (POS) でのコミッションの追跡</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Track commissions in the point of sale (POS) by using sales groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上グループを使用した販売時点管理 (POS) でのコミッションの追跡</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>It's a common retail practice to track sales by the associate who worked with the customer by—providing assistance, up-selling, cross-selling, and processing the transaction.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">支援、アップセリング、クロスセリング、トランザクションを提供することによって顧客と作業した協力者の売上を追跡するのは、一般的な小売業務です。</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Tracking sales by sales representative is a measure of the associates selling abilities, while sales by cashier is a measure of speed and efficiency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売担当者による売上の追跡は、アソシエイトの販売能力の測定であり、レジ担当者による売上はスピードと効率の測定です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Sales tracked by sales representative are also often used to calculate commissions or other incentives.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売担当者が追跡した売上も、手数料やその他のインセンティブの計算によく使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Configuring a worker to be a sales representative in POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従業員を POS の販売担当者に設定する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>When a worker is added to a sales group, they become eligible for commission and can be identified as a sales representative in the system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">従業員が販売グループに追加されると、その従業員は手数料の対象となり、システム内の販売担当者として識別することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>A worker who isn't in a sales group isn't eligible for commission and won't be listed as a sales representative in the point of sale (POS) application.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上グループに所属していない作業員は、委託の対象とならず、POS (営業拠点) アプリケーションに営業担当者として表示されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>In POS, the list of sales representatives is derived from all sales groups that contain at least one worker assigned to the store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS では、営業担当者のリストは、店舗に割り当てられた少なくとも 1 人の従業員を含むすべての営業グループから派生しています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The list is shown in POS as a combination of Sales group ID and Name (ID : Name).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">一覧は、販売グループ ID と名前 (ID : 名前) の組み合わせとして POS に表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>A default sales group can be assigned to workers to support scenarios where the retailer chooses to set the sales representative on POS lines automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売業者が POS ライン上で販売担当者を自動的に設定するシナリオをサポートするために、既定の売上グループを従業員に割り当てることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Users can select from any sales group that the worker is a member of.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、任意の売上グループから、その作業者がメンバーであることを選択できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Functionality profile settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">機能プロファイルの設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>There are a number of functionality profile settings for a store that will determine the flow and process in POS that involve sales representatives.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売担当者が関わる POS のフローとプロセスを決定するストアの機能プロファイル設定がいくつかあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Profile</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロファイル</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Default to cashier when available</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定ではレジ担当者 (利用可能な場合)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>If this option is enabled, POS will automatically populate transaction lines with the current cashier's default sales group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションを有効にすると、POS は自動的にトランザクション明細行に現在のレジ担当者の既定の販売グループを設定します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>If a cashier doesn't have a default sales group specified, the value won't be set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジ担当者に既定の売上グループが指定されていない場合、値は設定されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>A user could still manually set the sales group by using a POS button grid button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、POS ボタン グリッド ボタンを使用して売上グループを手動で設定することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Prompt for sales representative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売担当者の確認</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>This option has three possible values:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションには、3つの値があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>No<ept id="p1">&lt;/strong&gt;</ept> – If this option is selected, the user won't be prompted to select a sales group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>いいえ<ept id="p1">&lt;/strong&gt;</ept> – このオプションを選択すると、売上グループを選択するよう求められません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>The value could still be set by using a cashier's default Sales group or manually by using a POS button grid button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジ担当者の既定の売上グループを使用するか、または POS ボタン グリッド ボタンを使用して、この値を手動で設定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Start of transaction<ept id="p1">&lt;/strong&gt;</ept> – If this option is selected, and either the <bpt id="p2">&lt;strong&gt;</bpt>Default to cashier<ept id="p2">&lt;/strong&gt;</ept> option isn't enabled or the current cashier doesn't have a default sales group, the user will be prompted to select a sales group at the beginning of each transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>トランザクションの開始<ept id="p1">&lt;/strong&gt;</ept> – このオプションが選択されていて、<bpt id="p2">&lt;strong&gt;</bpt>レジ担当者に対する既定<ept id="p2">&lt;/strong&gt;</ept>オプションが有効になっていないか、現在のレジ担当者に既定の売上グループがない場合、ユーザーは各取引の開始時に売上グループを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Selecting a sales group from this prompt will default all subsequent lines to the selected sales group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロンプトから販売グループを選択すると、後続のすべての明細行が選択された売上グループにデフォルト設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>A user could still manually set the sales group by using a POS button grid button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、POS ボタン グリッド ボタンを使用して売上グループを手動で設定することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For each line<ept id="p1">&lt;/strong&gt;</ept> – If this option is selected, and either the <bpt id="p2">&lt;strong&gt;</bpt>Default to cashier<ept id="p2">&lt;/strong&gt;</ept> option isn't enabled or the current cashier doesn't have a default sales group, the user will be prompted to select a sales group after adding each line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>各行用<ept id="p1">&lt;/strong&gt;</ept> – このオプションが選択されていて、<bpt id="p2">&lt;strong&gt;</bpt>レジ担当者に対する既定<ept id="p2">&lt;/strong&gt;</ept>オプションが有効になっていないか、現在のレジ担当者に既定の売上グループがない場合、ユーザーは各行を追加した後に売上グループを選択します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>A user could still manually set the Sales group by using a POS button grid button.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ユーザーは、POS ボタン グリッド ボタンを使用して売上グループを手動で設定することもできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Require</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必須</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>This option is only applicable when POS is configured to prompt for a sales representative.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このオプションは、POS が販売担当者のプロンプトを表示するように設定されている場合にのみ適用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>If enabled, the user will be required to choose a sales group before continuing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">有効にすると、続行する前に売上グループを選択する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Otherwise, the user will be prompted, but can cancel and continue without making a selection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">それ以外の場合は、ユーザーはプロンプトが表示されますが、選択せずにキャンセルして続行できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>After the line is added, a user with sufficient permissions could still remove the sales group from the line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細行が追加された後も、十分な権限を持つユーザーは、その明細行から売上グループを削除することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>"Require sales representative" is not enforced in this situation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この状況では、「販売担当者が必要」は適用されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Displaying the Sales representative information on the POS transactions screen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS トランザクション画面の営業担当者情報の照会</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>The POS transaction screen layout and contents are configurable using the screen layout designer and assigned screen layouts to stores, registers, or workers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS トランザクション画面のレイアウトと内容は、画面レイアウト設計者および店舗、登録者、または作業者に割り当てられた画面レイアウトを使用して設定することができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source> The <bpt id="p1">**</bpt>Sales representative<ept id="p1">**</ept> field can be added to the Lines tab of the Receipt pane.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>販売担当者<ept id="p1">**</ept>フィールドは、入荷ウィンドウの明細行タブに追加できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>  This will display the ID of the specified Sales group for each line on the transaction screen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">これにより、取引画面に各明細行の指定された販売グループの ID が表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Adding Sales representative operations to POS button grids</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">販売担当者操作を POS ボタン グリッドに追加する</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>POS allows users to configure button grids, which are included in screen layouts to provide access to POS operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS では、画面レイアウトに含まれるボタン グリッドを設定して POS 操作にアクセスできます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>The following POS operations can be assigned to button grid buttons that pertain to Sales representatives.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">次の POS 操作は、販売担当者に関連するボタン グリッド ボタンに割り当てることができます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Operation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">操作</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Set sales representative on line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細行の販売担当者の設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>This POS operation displays a list of eligible Sales groups (ID : Name) for the store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source> Selecting a Sales group from this list will set the value on the current transaction line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリストから売上グループを選択すると、現在のトランザクション明細行の値が設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Clear sales representative on line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">明細行の販売担当者のクリア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>This POS operation removes the current Sales group value from the current transaction line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この POS 操作は、現在のトランザクション明細行から現在の売上グループの値を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Set sales representative on transaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションの販売担当者を設定</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>This POS operation displays a list of eligible Sales groups (ID : Name) for the store.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source> Selecting a Sales group from this list will set the default value on the current transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このリストから売上グループを選択すると、現在のトランザクションの既定値が設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Any existing lines without a sales group assigned will be set, as well as any subsequently added lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">売上グループが割り当てられていない既存の明細行が設定され、その後に追加される明細行も設定されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Clear sales representative on transaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクション販売担当者をクリア</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>This POS operation removes the current default Sales group value from the current transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この POS 操作は、現在のトランザクション明細行から現在の既定の売上グループ値を削除します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>It does not impact any lines already existing in the transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">トランザクションにすでに存在する明細行には影響しません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Calculating commissions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミッションの計算</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Commission is calculated for the workers in the specified sales groups at the time of statement posting or sales order posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミッションは、明細の転記または受注時の転記時に、指定された売上グループの従業員に対して計算されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source> The commission amount is determined based on the worker's commission share, as defined in the sales group and the associated commission calculation settings for the customer and/or products on the transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コミッション金額は、売上グループで定義されている従業員のコミッション分配、および取引の顧客および/または製品に関連するコミッションの計算設定に基づいて決定されます。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

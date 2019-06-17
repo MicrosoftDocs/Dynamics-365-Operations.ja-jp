@@ -1,144 +1,735 @@
----
-title: マルチ参照モジュール
-description: 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
-author: shadykdc
-manager: AnnBe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: ''
-ms.search.region: Global
-ms.author: kashea
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 45be34323658aa06120d4842309fdf4ec871688a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537301"
----
-# <a name="multi-lookup-module"></a><span data-ttu-id="f9f98-103">マルチ参照モジュール</span><span class="sxs-lookup"><span data-stu-id="f9f98-103">Multi-Lookup module</span></span>
-
-[!include [banner](../../../../includes/banner.md)]
-
-<span data-ttu-id="f9f98-104">複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。</span><span class="sxs-lookup"><span data-stu-id="f9f98-104">Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.</span></span>
-
-## <a name="index"></a><span data-ttu-id="f9f98-105">指数</span><span class="sxs-lookup"><span data-stu-id="f9f98-105">Index</span></span>
-
-### <a name="types"></a><span data-ttu-id="f9f98-106">種類</span><span class="sxs-lookup"><span data-stu-id="f9f98-106">Types</span></span>
-
-* [<span data-ttu-id="f9f98-107">MultiLookup</span><span class="sxs-lookup"><span data-stu-id="f9f98-107">MultiLookup</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md)
-* [<span data-ttu-id="f9f98-108">MultiLookupDesign</span><span class="sxs-lookup"><span data-stu-id="f9f98-108">MultiLookupDesign</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)
-* [<span data-ttu-id="f9f98-109">MultiLookupMetadata</span><span class="sxs-lookup"><span data-stu-id="f9f98-109">MultiLookupMetadata</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)
-
-## <a name="types"></a><span data-ttu-id="f9f98-110">種類</span><span class="sxs-lookup"><span data-stu-id="f9f98-110">Types</span></span>
-
-
-### <a name="multilookup"></a><span data-ttu-id="f9f98-111">MultiLookup</span><span class="sxs-lookup"><span data-stu-id="f9f98-111">MultiLookup</span></span>
-
-#### <a name="hierarchy"></a><span data-ttu-id="f9f98-112">階層</span><span class="sxs-lookup"><span data-stu-id="f9f98-112">Hierarchy</span></span>
-
-[<span data-ttu-id="f9f98-113">InputControl</span><span class="sxs-lookup"><span data-stu-id="f9f98-113">InputControl</span></span>](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md) <br><span data-ttu-id="f9f98-114">&nbsp;&nbsp;&nbsp;└─ MultiLookup</span><span class="sxs-lookup"><span data-stu-id="f9f98-114">&nbsp;&nbsp;&nbsp;└─ MultiLookup</span></span> <br>
-
-#### <a name="properties"></a><span data-ttu-id="f9f98-115">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f9f98-115">Properties</span></span>
-
-| <span data-ttu-id="f9f98-116">氏名</span><span class="sxs-lookup"><span data-stu-id="f9f98-116">Name</span></span> | <span data-ttu-id="f9f98-117">署名</span><span class="sxs-lookup"><span data-stu-id="f9f98-117">Signature</span></span> | <span data-ttu-id="f9f98-118">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-118">Description</span></span> |
-| ---- | --------- | ----------- |
-| [<span data-ttu-id="f9f98-119">コンテナー</span><span class="sxs-lookup"><span data-stu-id="f9f98-119">container</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#container) |<span data-ttu-id="f9f98-120">container: ブール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-120">container: boolean (optional)</span></span>  <br>|<span data-ttu-id="f9f98-121">コントロールがコンテナーの場合は true です。</span><span class="sxs-lookup"><span data-stu-id="f9f98-121">True if the control is a container.</span></span><br>  <span data-ttu-id="f9f98-122">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[container](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#container) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-122">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[container](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#container)</span></span> <br> |
-| [<span data-ttu-id="f9f98-123">ジェネリック</span><span class="sxs-lookup"><span data-stu-id="f9f98-123">generic</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#generic) |<span data-ttu-id="f9f98-124">generic: boolean (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-124">generic: boolean (optional)</span></span>  <br>|  <span data-ttu-id="f9f98-125">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[generic](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#generic) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-125">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[generic](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#generic)</span></span> <br> |
-| [<span data-ttu-id="f9f98-126">getDataSource</span><span class="sxs-lookup"><span data-stu-id="f9f98-126">getDataSource</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getdatasource) |<span data-ttu-id="f9f98-127">getDataSource: function(): any</span><span class="sxs-lookup"><span data-stu-id="f9f98-127">getDataSource: function(): any</span></span> <br>|  <span data-ttu-id="f9f98-128">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdatasource) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-128">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</span></span> <br> |
-| [<span data-ttu-id="f9f98-129">getEntityRefs</span><span class="sxs-lookup"><span data-stu-id="f9f98-129">getEntityRefs</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getentityrefs) |<span data-ttu-id="f9f98-130">getEntityRefs: function(): string [ ] &#124; number [ ]</span><span class="sxs-lookup"><span data-stu-id="f9f98-130">getEntityRefs: function(): string [ ] &#124; number [ ]</span></span> <br>|  |
-| [<span data-ttu-id="f9f98-131">非表示</span><span class="sxs-lookup"><span data-stu-id="f9f98-131">hidden</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#hidden) |<span data-ttu-id="f9f98-132">hidden: boolean</span><span class="sxs-lookup"><span data-stu-id="f9f98-132">hidden: boolean</span></span> <br>|<span data-ttu-id="f9f98-133">コントロールが非常時の場合は true です。</span><span class="sxs-lookup"><span data-stu-id="f9f98-133">True if the control is hidden.</span></span><br>  <span data-ttu-id="f9f98-134">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-134">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden)</span></span> <br> |
-| [<span data-ttu-id="f9f98-135">setEntityRefs</span><span class="sxs-lookup"><span data-stu-id="f9f98-135">setEntityRefs</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#setentityrefs) |<span data-ttu-id="f9f98-136">setEntityRefs: function(ids: string [ ] &#124; number [ ]): Promise &lt;any&gt;</span><span class="sxs-lookup"><span data-stu-id="f9f98-136">setEntityRefs: function(ids: string [ ] &#124; number [ ]): Promise &lt;any&gt;</span></span> <br>|  |
-
-#### <a name="methods"></a><span data-ttu-id="f9f98-137">方法</span><span class="sxs-lookup"><span data-stu-id="f9f98-137">Methods</span></span>
-
-| <span data-ttu-id="f9f98-138">氏名</span><span class="sxs-lookup"><span data-stu-id="f9f98-138">Name</span></span> | <span data-ttu-id="f9f98-139">署名</span><span class="sxs-lookup"><span data-stu-id="f9f98-139">Signature</span></span> | <span data-ttu-id="f9f98-140">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-140">Description</span></span> |
-| ---- | --------- | ----------- |
-| [<span data-ttu-id="f9f98-141">applyDesign</span><span class="sxs-lookup"><span data-stu-id="f9f98-141">applyDesign</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#applydesign) |<span data-ttu-id="f9f98-142">applyDesign(IDesign: [MultiLookupDesign](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)): void</span><span class="sxs-lookup"><span data-stu-id="f9f98-142">applyDesign(IDesign: [MultiLookupDesign](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)): void</span></span>|<span data-ttu-id="f9f98-143">付与されたデザインをコントロールのデザインに適用します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-143">Applies given design to the design on the control.</span></span><br>  <span data-ttu-id="f9f98-144">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#applydesign) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="f9f98-144">Overrides [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</span></span> <br> |
-| [<span data-ttu-id="f9f98-145">dataContext</span><span class="sxs-lookup"><span data-stu-id="f9f98-145">dataContext</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#datacontext) |<span data-ttu-id="f9f98-146">dataContext(): any</span><span class="sxs-lookup"><span data-stu-id="f9f98-146">dataContext(): any</span></span>|  <span data-ttu-id="f9f98-147">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#datacontext) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-147">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</span></span> <br> |
-| [<span data-ttu-id="f9f98-148">getDesign</span><span class="sxs-lookup"><span data-stu-id="f9f98-148">getDesign</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getdesign) |<span data-ttu-id="f9f98-149">getDesign(): [Design](../interfaces/view-model-ipage-idesign.md)</span><span class="sxs-lookup"><span data-stu-id="f9f98-149">getDesign(): [Design](../interfaces/view-model-ipage-idesign.md)</span></span>|<span data-ttu-id="f9f98-150">このコントロールのデザイン オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-150">Returns the design object of this control.</span></span><br>  <span data-ttu-id="f9f98-151">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-151">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</span></span> <br> |
-| [<span data-ttu-id="f9f98-152">getLookupPage</span><span class="sxs-lookup"><span data-stu-id="f9f98-152">getLookupPage</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getlookuppage) |<span data-ttu-id="f9f98-153">getLookupPage(): [Page](../interfaces/view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="f9f98-153">getLookupPage(): [Page](../interfaces/view-model-ipage-ipage.md)</span></span>|  |
-| [<span data-ttu-id="f9f98-154">isEditable</span><span class="sxs-lookup"><span data-stu-id="f9f98-154">isEditable</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#iseditable) |<span data-ttu-id="f9f98-155">isEditable(): boolean</span><span class="sxs-lookup"><span data-stu-id="f9f98-155">isEditable(): boolean</span></span>|<span data-ttu-id="f9f98-156">コントロールが編集可能かどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="f9f98-156">Boolean indicating if the control is editable.</span></span><br>  <span data-ttu-id="f9f98-157">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#iseditable) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-157">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</span></span> <br> |
-| [<span data-ttu-id="f9f98-158">メタデータ</span><span class="sxs-lookup"><span data-stu-id="f9f98-158">metadata</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#metadata) |<span data-ttu-id="f9f98-159">metadata(): [MultiLookupMetadata](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)</span><span class="sxs-lookup"><span data-stu-id="f9f98-159">metadata(): [MultiLookupMetadata](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)</span></span>|<span data-ttu-id="f9f98-160">このコントロールのメタデータ オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-160">Returns the metadata object of this control.</span></span><br>  <span data-ttu-id="f9f98-161">[InputControl](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[metadata](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="f9f98-161">Overrides [InputControl](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[metadata](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata)</span></span> <br> |
-| [<span data-ttu-id="f9f98-162">親</span><span class="sxs-lookup"><span data-stu-id="f9f98-162">parent</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#parent) |<span data-ttu-id="f9f98-163">parent(): [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](../interfaces/view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="f9f98-163">parent(): [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](../interfaces/view-model-ipage-ipage.md)</span></span>|<span data-ttu-id="f9f98-164">このコントロールの親 (コントロールまたはページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-164">Returns the parent (control or page) of this control.</span></span><br>  <span data-ttu-id="f9f98-165">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[parent](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-165">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[parent](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#parent)</span></span> <br> |
-| [<span data-ttu-id="f9f98-166">ルート</span><span class="sxs-lookup"><span data-stu-id="f9f98-166">root</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#root) |<span data-ttu-id="f9f98-167">root(): [Page](../interfaces/view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="f9f98-167">root(): [Page](../interfaces/view-model-ipage-ipage.md)</span></span>|<span data-ttu-id="f9f98-168">このコントロールのルート フォーム インスタンス (ページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-168">Returns the root form instance (page) of this control.</span></span><br>  <span data-ttu-id="f9f98-169">[Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[root](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#root) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-169">Inherited from [Control](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md).[root](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#root)</span></span> <br> |
-
-#### <a name="events"></a><span data-ttu-id="f9f98-170">イベント</span><span class="sxs-lookup"><span data-stu-id="f9f98-170">Events</span></span>
-
-| <span data-ttu-id="f9f98-171">氏名</span><span class="sxs-lookup"><span data-stu-id="f9f98-171">Name</span></span> | <span data-ttu-id="f9f98-172">署名</span><span class="sxs-lookup"><span data-stu-id="f9f98-172">Signature</span></span> | <span data-ttu-id="f9f98-173">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-173">Description</span></span> |
-| ---- | --------- | ----------- |
-| [<span data-ttu-id="f9f98-174">onDataChanged</span><span class="sxs-lookup"><span data-stu-id="f9f98-174">onDataChanged</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#ondatachanged) |<span data-ttu-id="f9f98-175">onDataChanged: [EventHook](../interfaces/event-ievent-ieventhook.md) &lt;null&gt;</span><span class="sxs-lookup"><span data-stu-id="f9f98-175">onDataChanged: [EventHook](../interfaces/event-ievent-ieventhook.md) &lt;null&gt;</span></span> <br>|<span data-ttu-id="f9f98-176">入力コントロールのデータが変更されたときに発生するイベントです。</span><span class="sxs-lookup"><span data-stu-id="f9f98-176">An event that is triggered when the input control's data changes.</span></span><br>  <span data-ttu-id="f9f98-177">[InputControl](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-177">Inherited from [InputControl](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)</span></span> <br> |
-
-
-### <a name="multilookupdesign"></a><span data-ttu-id="f9f98-178">MultiLookupDesign</span><span class="sxs-lookup"><span data-stu-id="f9f98-178">MultiLookupDesign</span></span>
-
-#### <a name="hierarchy"></a><span data-ttu-id="f9f98-179">階層</span><span class="sxs-lookup"><span data-stu-id="f9f98-179">Hierarchy</span></span>
-
-[<span data-ttu-id="f9f98-180">InputControlDesign</span><span class="sxs-lookup"><span data-stu-id="f9f98-180">InputControlDesign</span></span>](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md) <br><span data-ttu-id="f9f98-181">&nbsp;&nbsp;&nbsp;└─ MultiLookupDesign</span><span class="sxs-lookup"><span data-stu-id="f9f98-181">&nbsp;&nbsp;&nbsp;└─ MultiLookupDesign</span></span> <br>
-
-#### <a name="properties"></a><span data-ttu-id="f9f98-182">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f9f98-182">Properties</span></span>
-
-| <span data-ttu-id="f9f98-183">氏名</span><span class="sxs-lookup"><span data-stu-id="f9f98-183">Name</span></span> | <span data-ttu-id="f9f98-184">署名</span><span class="sxs-lookup"><span data-stu-id="f9f98-184">Signature</span></span> | <span data-ttu-id="f9f98-185">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-185">Description</span></span> |
-| ---- | --------- | ----------- |
-| [<span data-ttu-id="f9f98-186">alignItems</span><span class="sxs-lookup"><span data-stu-id="f9f98-186">alignItems</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignitems) |<span data-ttu-id="f9f98-187">alignItems: string (optional)</span><span class="sxs-lookup"><span data-stu-id="f9f98-187">alignItems: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-188">このプロパティは、CSS プロパティ「align-items」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="f9f98-188">This property is an alias for the CSS property "align-items".</span></span><br>  <span data-ttu-id="f9f98-189">[Design](../interfaces/view-model-ipage-idesign.md).[alignItems](../interfaces/view-model-ipage-idesign.md#alignitems) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-189">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[alignItems](../interfaces/view-model-ipage-idesign.md#alignitems)</span></span> <br> |
-| [<span data-ttu-id="f9f98-190">alignSelf</span><span class="sxs-lookup"><span data-stu-id="f9f98-190">alignSelf</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignself) |<span data-ttu-id="f9f98-191">alignSelf: string (optional)</span><span class="sxs-lookup"><span data-stu-id="f9f98-191">alignSelf: string (optional)</span></span>  <br>|  <span data-ttu-id="f9f98-192">[Design](../interfaces/view-model-ipage-idesign.md).[alignSelf](../interfaces/view-model-ipage-idesign.md#alignself) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-192">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[alignSelf](../interfaces/view-model-ipage-idesign.md#alignself)</span></span> <br> |
-| [<span data-ttu-id="f9f98-193">バインディング</span><span class="sxs-lookup"><span data-stu-id="f9f98-193">bindings</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#bindings) |<span data-ttu-id="f9f98-194">bindings: any (optional)</span><span class="sxs-lookup"><span data-stu-id="f9f98-194">bindings: any (optional)</span></span>  <br>|  <span data-ttu-id="f9f98-195">[Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-195">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[bindings](../interfaces/view-model-ipage-idesign.md#bindings)</span></span> <br> |
-| [<span data-ttu-id="f9f98-196">枠線</span><span class="sxs-lookup"><span data-stu-id="f9f98-196">border</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#border) |<span data-ttu-id="f9f98-197">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-197">border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)</span></span>  <br>|<span data-ttu-id="f9f98-198">コントロールの境界動作。</span><span class="sxs-lookup"><span data-stu-id="f9f98-198">The border behavior of a control.</span></span> <span data-ttu-id="f9f98-199">このプロパティは、子によって継承されません。</span><span class="sxs-lookup"><span data-stu-id="f9f98-199">This property will not be inherited by the children.</span></span><br>  <span data-ttu-id="f9f98-200">[Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-200">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border)</span></span> <br> |
-| [<span data-ttu-id="f9f98-201">色</span><span class="sxs-lookup"><span data-stu-id="f9f98-201">color</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#color) |<span data-ttu-id="f9f98-202">color: string (optional)</span><span class="sxs-lookup"><span data-stu-id="f9f98-202">color: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-203">コンテナーの前景色。</span><span class="sxs-lookup"><span data-stu-id="f9f98-203">The foreground color of the container.</span></span><br>  <span data-ttu-id="f9f98-204">[Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-204">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color)</span></span> <br> |
-| [<span data-ttu-id="f9f98-205">flexFlow</span><span class="sxs-lookup"><span data-stu-id="f9f98-205">flexFlow</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexflow) |<span data-ttu-id="f9f98-206">flexFlow: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-206">flexFlow: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-207">このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。</span><span class="sxs-lookup"><span data-stu-id="f9f98-207">Specifying this property makes the component a flex container component.</span></span><br>  <span data-ttu-id="f9f98-208">[Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-208">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow)</span></span> <br> |
-| [<span data-ttu-id="f9f98-209">flexSize</span><span class="sxs-lookup"><span data-stu-id="f9f98-209">flexSize</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexsize) |<span data-ttu-id="f9f98-210">flexSize: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-210">flexSize: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-211">1 つの番号または 2 つの番号が文字列として書き込まれています。</span><span class="sxs-lookup"><span data-stu-id="f9f98-211">One number or two numbers written as a string.</span></span> <span data-ttu-id="f9f98-212">E.g.</span><span class="sxs-lookup"><span data-stu-id="f9f98-212">E.g.</span></span> <span data-ttu-id="f9f98-213">「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-213">"(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.</span></span><br>  <span data-ttu-id="f9f98-214">[Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-214">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize)</span></span> <br> |
-| [<span data-ttu-id="f9f98-215">fontSize</span><span class="sxs-lookup"><span data-stu-id="f9f98-215">fontSize</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#fontsize) |<span data-ttu-id="f9f98-216">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-216">fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)</span></span>  <br>|<span data-ttu-id="f9f98-217">比例テキスト サイズ</span><span class="sxs-lookup"><span data-stu-id="f9f98-217">The proportional text size</span></span><br>  <span data-ttu-id="f9f98-218">[Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-218">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize)</span></span> <br> |
-| [<span data-ttu-id="f9f98-219">fontWeight</span><span class="sxs-lookup"><span data-stu-id="f9f98-219">fontWeight</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#fontweight) |<span data-ttu-id="f9f98-220">fontWeight: "normal" &#124; "bold" (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-220">fontWeight: "normal" &#124; "bold" (optional)</span></span>  <br>|<span data-ttu-id="f9f98-221">標準または太字のテキスト。</span><span class="sxs-lookup"><span data-stu-id="f9f98-221">Normal or bold text.</span></span><br>  <span data-ttu-id="f9f98-222">[Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-222">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight)</span></span> <br> |
-| [<span data-ttu-id="f9f98-223">justifyItems</span><span class="sxs-lookup"><span data-stu-id="f9f98-223">justifyItems</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#justifyitems) |<span data-ttu-id="f9f98-224">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-224">justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)</span></span>  <br>|<span data-ttu-id="f9f98-225">このプロパティは CSS プロパティ「justify-content」のエイリアスです。</span><span class="sxs-lookup"><span data-stu-id="f9f98-225">This property is an alias for the CSS property "justify-content".</span></span><br>  <span data-ttu-id="f9f98-226">[Design](../interfaces/view-model-ipage-idesign.md).[justifyItems](../interfaces/view-model-ipage-idesign.md#justifyitems) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-226">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[justifyItems](../interfaces/view-model-ipage-idesign.md#justifyitems)</span></span> <br> |
-| [<span data-ttu-id="f9f98-227">ラベル</span><span class="sxs-lookup"><span data-stu-id="f9f98-227">label</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#label) |<span data-ttu-id="f9f98-228">label: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-228">label: string (optional)</span></span>  <br>|  <span data-ttu-id="f9f98-229">[Design](../interfaces/view-model-ipage-idesign.md).[label](../interfaces/view-model-ipage-idesign.md#label) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-229">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[label](../interfaces/view-model-ipage-idesign.md#label)</span></span> <br> |
-| [<span data-ttu-id="f9f98-230">labelPosition</span><span class="sxs-lookup"><span data-stu-id="f9f98-230">labelPosition</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#labelposition) |<span data-ttu-id="f9f98-231">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-231">labelPosition: "stacked" &#124; "hidden" &#124; "inline" (optional)</span></span>  <br>|<span data-ttu-id="f9f98-232">ラベルの配置方法を決定します (行われる場合)。</span><span class="sxs-lookup"><span data-stu-id="f9f98-232">Determines how a label is positioned, if at all.</span></span> <span data-ttu-id="f9f98-233">既定では、labelPosition が stacked に設定されています。</span><span class="sxs-lookup"><span data-stu-id="f9f98-233">By default, labelPosition is set to stacked.</span></span><br>  <span data-ttu-id="f9f98-234">[Design](../interfaces/view-model-ipage-idesign.md).[labelPosition](../interfaces/view-model-ipage-idesign.md#labelposition) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-234">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[labelPosition](../interfaces/view-model-ipage-idesign.md#labelposition)</span></span> <br> |
-| [<span data-ttu-id="f9f98-235">名前</span><span class="sxs-lookup"><span data-stu-id="f9f98-235">name</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#name) |<span data-ttu-id="f9f98-236">name: string (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-236">name: string (optional)</span></span>  <br>|  <span data-ttu-id="f9f98-237">[Design](../interfaces/view-model-ipage-idesign.md).[name](../interfaces/view-model-ipage-idesign.md#name) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-237">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[name](../interfaces/view-model-ipage-idesign.md#name)</span></span> <br> |
-| [<span data-ttu-id="f9f98-238">スペース</span><span class="sxs-lookup"><span data-stu-id="f9f98-238">padding</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#padding) |<span data-ttu-id="f9f98-239">padding: "none" &#124; "small" &#124; "std" (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-239">padding: "none" &#124; "small" &#124; "std" (optional)</span></span>  <br>|<span data-ttu-id="f9f98-240">コンポーネントのスペース動作を指定できるように許可します。</span><span class="sxs-lookup"><span data-stu-id="f9f98-240">Allows specifying the component's padding behavior.</span></span><br>  <span data-ttu-id="f9f98-241">[Design](../interfaces/view-model-ipage-idesign.md).[padding](../interfaces/view-model-ipage-idesign.md#padding) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-241">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[padding](../interfaces/view-model-ipage-idesign.md#padding)</span></span> <br> |
-| [<span data-ttu-id="f9f98-242">タイプ</span><span class="sxs-lookup"><span data-stu-id="f9f98-242">type</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#type) |<span data-ttu-id="f9f98-243">type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-243">type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span>  <br>|<span data-ttu-id="f9f98-244">文字列としてのコントロールのタイプ。</span><span class="sxs-lookup"><span data-stu-id="f9f98-244">The type of the control as a string.</span></span><br>  <span data-ttu-id="f9f98-245">[Design](../interfaces/view-model-ipage-idesign.md).[type](../interfaces/view-model-ipage-idesign.md#type) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-245">Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[type](../interfaces/view-model-ipage-idesign.md#type)</span></span> <br> |
-
-
-### <a name="multilookupmetadata"></a><span data-ttu-id="f9f98-246">MultiLookupMetadata</span><span class="sxs-lookup"><span data-stu-id="f9f98-246">MultiLookupMetadata</span></span>
-
-#### <a name="hierarchy"></a><span data-ttu-id="f9f98-247">階層</span><span class="sxs-lookup"><span data-stu-id="f9f98-247">Hierarchy</span></span>
-
-[<span data-ttu-id="f9f98-248">InputControlMetadata</span><span class="sxs-lookup"><span data-stu-id="f9f98-248">InputControlMetadata</span></span>](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md) <br><span data-ttu-id="f9f98-249">&nbsp;&nbsp;&nbsp;└─ MultiLookupMetadata</span><span class="sxs-lookup"><span data-stu-id="f9f98-249">&nbsp;&nbsp;&nbsp;└─ MultiLookupMetadata</span></span> <br>
-
-#### <a name="properties"></a><span data-ttu-id="f9f98-250">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f9f98-250">Properties</span></span>
-
-| <span data-ttu-id="f9f98-251">氏名</span><span class="sxs-lookup"><span data-stu-id="f9f98-251">Name</span></span> | <span data-ttu-id="f9f98-252">署名</span><span class="sxs-lookup"><span data-stu-id="f9f98-252">Signature</span></span> | <span data-ttu-id="f9f98-253">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-253">Description</span></span> |
-| ---- | --------- | ----------- |
-| [<span data-ttu-id="f9f98-254">BoundEntity</span><span class="sxs-lookup"><span data-stu-id="f9f98-254">BoundEntity</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#boundentity) |<span data-ttu-id="f9f98-255">BoundEntity: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-255">BoundEntity: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-256">コントロールがバインドされるエンティティ。</span><span class="sxs-lookup"><span data-stu-id="f9f98-256">The entity to which the control is bound.</span></span><br>  <span data-ttu-id="f9f98-257">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-257">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)</span></span> <br> |
-| [<span data-ttu-id="f9f98-258">BoundField</span><span class="sxs-lookup"><span data-stu-id="f9f98-258">BoundField</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#boundfield) |<span data-ttu-id="f9f98-259">BoundField: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-259">BoundField: string (optional)</span></span>  <br>|  <span data-ttu-id="f9f98-260">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-260">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)</span></span> <br> |
-| [<span data-ttu-id="f9f98-261">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-261">Description</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#description) |<span data-ttu-id="f9f98-262">説明:文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-262">Description: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-263">コントロールの説明。</span><span class="sxs-lookup"><span data-stu-id="f9f98-263">Description of the control.</span></span><br>  <span data-ttu-id="f9f98-264">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-264">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)</span></span> <br> |
-| [<span data-ttu-id="f9f98-265">Design</span><span class="sxs-lookup"><span data-stu-id="f9f98-265">Design</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#design) |<span data-ttu-id="f9f98-266">デザイン: [デザイン](../interfaces/view-model-ipage-idesign.md) (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-266">Design: [Design](../interfaces/view-model-ipage-idesign.md) (optional)</span></span>  <br>|<span data-ttu-id="f9f98-267">LookupPageId によって参照されるルックアップ ページのデザイン オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="f9f98-267">Design object for the lookup page that is referenced by the LookupPageId.</span></span><br>  |
-| [<span data-ttu-id="f9f98-268">編集可能</span><span class="sxs-lookup"><span data-stu-id="f9f98-268">Editable</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#editable) |<span data-ttu-id="f9f98-269">編集可能: プール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-269">Editable: boolean (optional)</span></span>  <br>|<span data-ttu-id="f9f98-270">コントロールが編集可能かどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="f9f98-270">Boolean indicating if the control is editable.</span></span><br>  <span data-ttu-id="f9f98-271">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-271">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)</span></span> <br> |
-| [<span data-ttu-id="f9f98-272">ExtType</span><span class="sxs-lookup"><span data-stu-id="f9f98-272">ExtType</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#exttype) |<span data-ttu-id="f9f98-273">ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-273">ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span>  <br>|<span data-ttu-id="f9f98-274">拡張されたコントロール タイプです。</span><span class="sxs-lookup"><span data-stu-id="f9f98-274">The extended control type.</span></span> <span data-ttu-id="f9f98-275">E.g.</span><span class="sxs-lookup"><span data-stu-id="f9f98-275">E.g.</span></span> <span data-ttu-id="f9f98-276">コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。</span><span class="sxs-lookup"><span data-stu-id="f9f98-276">a control of type Input might have an extended type of Barcode.</span></span><br>  <span data-ttu-id="f9f98-277">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-277">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)</span></span> <br> |
-| [<span data-ttu-id="f9f98-278">FilterContext</span><span class="sxs-lookup"><span data-stu-id="f9f98-278">FilterContext</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#filtercontext) |<span data-ttu-id="f9f98-279">FilterContext: DataFilter (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-279">FilterContext: DataFilter (optional)</span></span>  <br>|  |
-| [<span data-ttu-id="f9f98-280">FilterLocalOnly</span><span class="sxs-lookup"><span data-stu-id="f9f98-280">FilterLocalOnly</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#filterlocalonly) |<span data-ttu-id="f9f98-281">FilterLocalOnly: ブール値 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-281">FilterLocalOnly: boolean (optional)</span></span>  <br>|  |
-| [<span data-ttu-id="f9f98-282">HelpText</span><span class="sxs-lookup"><span data-stu-id="f9f98-282">HelpText</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#helptext) |<span data-ttu-id="f9f98-283">HelpText: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-283">HelpText: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-284">コマンドのキーボード ショートカットです。</span><span class="sxs-lookup"><span data-stu-id="f9f98-284">The keyboard shortcut for a command.</span></span> <span data-ttu-id="f9f98-285">E.g.</span><span class="sxs-lookup"><span data-stu-id="f9f98-285">E.g.</span></span> <span data-ttu-id="f9f98-286">「(Shift + F5)」</span><span class="sxs-lookup"><span data-stu-id="f9f98-286">"(Shift+F5)"</span></span><br>  <span data-ttu-id="f9f98-287">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-287">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)</span></span> <br> |
-| [<span data-ttu-id="f9f98-288">非表示</span><span class="sxs-lookup"><span data-stu-id="f9f98-288">Hidden</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#hidden) |<span data-ttu-id="f9f98-289">非表示: ブール値 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-289">Hidden: boolean (optional)</span></span>  <br>|<span data-ttu-id="f9f98-290">コントロールを非表示にするかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="f9f98-290">Boolean indicating if the control is hidden or not.</span></span><br>  <span data-ttu-id="f9f98-291">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-291">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)</span></span> <br> |
-| [<span data-ttu-id="f9f98-292">ID</span><span class="sxs-lookup"><span data-stu-id="f9f98-292">Id</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#id) |<span data-ttu-id="f9f98-293">Id: string (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-293">Id: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-294">コントロールの ID 文字列です。</span><span class="sxs-lookup"><span data-stu-id="f9f98-294">Identification string for a control.</span></span><br>  <span data-ttu-id="f9f98-295">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-295">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)</span></span> <br> |
-| [<span data-ttu-id="f9f98-296">ラベル</span><span class="sxs-lookup"><span data-stu-id="f9f98-296">Label</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#label) |<span data-ttu-id="f9f98-297">ラベル: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-297">Label: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-298">コントロールのラベル。</span><span class="sxs-lookup"><span data-stu-id="f9f98-298">Label for a control.</span></span> <span data-ttu-id="f9f98-299">E.g.</span><span class="sxs-lookup"><span data-stu-id="f9f98-299">E.g.</span></span> <span data-ttu-id="f9f98-300">個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。</span><span class="sxs-lookup"><span data-stu-id="f9f98-300">a control representing a person's first name might have a label "First Name".</span></span><br>  <span data-ttu-id="f9f98-301">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-301">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)</span></span> <br> |
-| [<span data-ttu-id="f9f98-302">LookupPageId</span><span class="sxs-lookup"><span data-stu-id="f9f98-302">LookupPageId</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#lookuppageid) |<span data-ttu-id="f9f98-303">LookupPageId: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-303">LookupPageId: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-304">複数のルックアップ内でホストされているページ。</span><span class="sxs-lookup"><span data-stu-id="f9f98-304">Page that is hosted within the multi-lookup.</span></span><br>  |
-| [<span data-ttu-id="f9f98-305">必須</span><span class="sxs-lookup"><span data-stu-id="f9f98-305">Mandatory</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#mandatory) |<span data-ttu-id="f9f98-306">必須: ブール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-306">Mandatory: boolean (optional)</span></span>  <br>|<span data-ttu-id="f9f98-307">true と設定されている場合は、コントロールのインプットがタスクを完了するために必要です。</span><span class="sxs-lookup"><span data-stu-id="f9f98-307">If set to true then input for the control is required for the task to be completed.</span></span> <span data-ttu-id="f9f98-308">必須のコントロールには、赤いアウトラインがあります。</span><span class="sxs-lookup"><span data-stu-id="f9f98-308">Mandatory controls will have a red outline.</span></span><br>  <span data-ttu-id="f9f98-309">[InputControlMetadata](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md).[Mandatory](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#mandatory) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-309">Inherited from [InputControlMetadata](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md).[Mandatory](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#mandatory)</span></span> <br> |
-| [<span data-ttu-id="f9f98-310">名前</span><span class="sxs-lookup"><span data-stu-id="f9f98-310">Name</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#name) |<span data-ttu-id="f9f98-311">Name: 文字列 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-311">Name: string (optional)</span></span>  <br>|<span data-ttu-id="f9f98-312">コントロールの名前です。</span><span class="sxs-lookup"><span data-stu-id="f9f98-312">Name of a control.</span></span><br>  <span data-ttu-id="f9f98-313">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-313">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)</span></span> <br> |
-| [<span data-ttu-id="f9f98-314">NumSequence</span><span class="sxs-lookup"><span data-stu-id="f9f98-314">NumSequence</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#numsequence) |<span data-ttu-id="f9f98-315">NumSequence: [NumberSequenceConfig](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md) (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-315">NumSequence: [NumberSequenceConfig](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md) (optional)</span></span>  <br>|<span data-ttu-id="f9f98-316">拡張ビジネス ロジックを使用し、AX 番号シーケンス構成に基づいて、タスクまたはページ内の番号シーケンス コントロールの可視性を自動的に検出および変更するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f9f98-316">Used for auto detecting and changing visibility of the number sequence controls in the task or page, based on AX number sequence configuration, through extended business logic.</span></span><br>  <span data-ttu-id="f9f98-317">[InputControlMetadata](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md).[NumSequence](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#numsequence) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-317">Inherited from [InputControlMetadata](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md).[NumSequence](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#numsequence)</span></span> <br> |
-| [<span data-ttu-id="f9f98-318">注文</span><span class="sxs-lookup"><span data-stu-id="f9f98-318">Order</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#order) |<span data-ttu-id="f9f98-319">注文: 番号 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-319">Order: number (optional)</span></span>  <br>|<span data-ttu-id="f9f98-320">コントロールがページに表示される順序を示す番号。</span><span class="sxs-lookup"><span data-stu-id="f9f98-320">Number indicating the order in which a control will appear on a page.</span></span><br>  <span data-ttu-id="f9f98-321">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-321">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)</span></span> <br> |
-| [<span data-ttu-id="f9f98-322">ReferenceAppId</span><span class="sxs-lookup"><span data-stu-id="f9f98-322">ReferenceAppId</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#referenceappid) |<span data-ttu-id="f9f98-323">ReferenceAppId: 文字列 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-323">ReferenceAppId: string (optional)</span></span>  <br>|  |
-| [<span data-ttu-id="f9f98-324">ReverseLookupRelation</span><span class="sxs-lookup"><span data-stu-id="f9f98-324">ReverseLookupRelation</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#reverselookuprelation) |<span data-ttu-id="f9f98-325">ReverseLookupRelation: ブール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-325">ReverseLookupRelation: boolean (optional)</span></span>  <br>|  |
-| [<span data-ttu-id="f9f98-326">ShowPending</span><span class="sxs-lookup"><span data-stu-id="f9f98-326">ShowPending</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#showpending) |<span data-ttu-id="f9f98-327">ShowPending: ブール値 (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-327">ShowPending: boolean (optional)</span></span>  <br>|  |
-| <span data-ttu-id="f9f98-328">[[タイプ](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)]</span><span class="sxs-lookup"><span data-stu-id="f9f98-328">[Type](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)</span></span> |<span data-ttu-id="f9f98-329">Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)</span><span class="sxs-lookup"><span data-stu-id="f9f98-329">Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)</span></span>  <br>|<span data-ttu-id="f9f98-330">コントロール タイプを示す文字列。</span><span class="sxs-lookup"><span data-stu-id="f9f98-330">String indicating the control type.</span></span><br>  <span data-ttu-id="f9f98-331">[ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承</span><span class="sxs-lookup"><span data-stu-id="f9f98-331">Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)</span></span> <br> |
-
-#### <a name="events"></a><span data-ttu-id="f9f98-332">イベント</span><span class="sxs-lookup"><span data-stu-id="f9f98-332">Events</span></span>
-
-| <span data-ttu-id="f9f98-333">氏名</span><span class="sxs-lookup"><span data-stu-id="f9f98-333">Name</span></span> | <span data-ttu-id="f9f98-334">署名</span><span class="sxs-lookup"><span data-stu-id="f9f98-334">Signature</span></span> | <span data-ttu-id="f9f98-335">説明</span><span class="sxs-lookup"><span data-stu-id="f9f98-335">Description</span></span> |
-| ---- | --------- | ----------- |
-| [<span data-ttu-id="f9f98-336">OnLookupPageCreate</span><span class="sxs-lookup"><span data-stu-id="f9f98-336">OnLookupPageCreate</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate) |<span data-ttu-id="f9f98-337">OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): (無効) オプション</span><span class="sxs-lookup"><span data-stu-id="f9f98-337">OnLookupPageCreate: function(args: any, multiLookup: any): void (optional)</span></span>  <br>|  |
-| [<span data-ttu-id="f9f98-338">OnLookupPageCreated</span><span class="sxs-lookup"><span data-stu-id="f9f98-338">OnLookupPageCreated</span></span>](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated) |<span data-ttu-id="f9f98-339">OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): 無効 (オプション)</span><span class="sxs-lookup"><span data-stu-id="f9f98-339">OnLookupPageCreated: function(args: any, multiLookup: any): void (optional)</span></span>  <br>|  |
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="view-model-control-lookup-imultilookup.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>view-model-control-lookup-imultilookup.843a65.4b476037b3634de6bcc273e1be05386b084c2f3a.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>4b476037b3634de6bcc273e1be05386b084c2f3a</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\modules\view-model-control-lookup-imultilookup.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Multi-Lookup module</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マルチ参照モジュール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Multi-Lookup module</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">マルチ参照モジュール</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source><bpt id="p1">[</bpt>MultiLookup<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>MultiLookup<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">[</bpt>MultiLookupDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>MultiLookupDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>MultiLookupMetadata<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>MultiLookupMetadata<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>MultiLookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MultiLookup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>InputControl<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControl<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ MultiLookup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ MultiLookup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>container<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#container)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>コンテナー<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#container)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>container: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">container: ブール値 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>True if the control is a container.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールがコンテナーの場合は true です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>container<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#container)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>container<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#container)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source><bpt id="p1">[</bpt>generic<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#generic)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ジェネリック<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#generic)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>generic: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">generic: boolean (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>generic<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#generic)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>generic<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#generic)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>getDataSource<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getdatasource)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getDataSource<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getdatasource)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>getDataSource: function(): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getDataSource: function(): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDataSource<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDataSource<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">[</bpt>getEntityRefs<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getentityrefs)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getEntityRefs<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getentityrefs)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>getEntityRefs: function(): string [ ] &amp;#124; number [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getEntityRefs: function(): string [ ] &amp;#124; number [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">[</bpt>hidden<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>非表示<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#hidden)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>hidden: boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hidden: boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>True if the control is hidden.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが非常時の場合は true です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>hidden<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>hidden<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#hidden)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">[</bpt>setEntityRefs<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#setentityrefs)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>setEntityRefs<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#setentityrefs)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>setEntityRefs: function(ids: string [ ] &amp;#124; number [ ]): Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setEntityRefs: function(ids: string [ ] &amp;#124; number [ ]): Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">方法</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">[</bpt>applyDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#applydesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>applyDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#applydesign)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>applyDesign(IDesign: <bpt id="p1">[</bpt>MultiLookupDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)</ept>): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">applyDesign(IDesign: <bpt id="p1">[</bpt>MultiLookupDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md)</ept>): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Applies given design to the design on the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付与されたデザインをコントロールのデザインに適用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Overrides <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>applyDesign<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>applyDesign<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</ept> をオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">[</bpt>dataContext<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#datacontext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>dataContext<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#datacontext)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>dataContext(): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataContext(): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>dataContext<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>dataContext<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">[</bpt>getDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getdesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getDesign<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getdesign)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>getDesign(): <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getDesign(): <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Returns the design object of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールのデザイン オブジェクトを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDesign<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDesign<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">[</bpt>getLookupPage<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getlookuppage)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getLookupPage<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#getlookuppage)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>getLookupPage(): <bpt id="p1">[</bpt>Page<ept id="p1">](../interfaces/view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getLookupPage(): <bpt id="p1">[</bpt>Page<ept id="p1">](../interfaces/view-model-ipage-ipage.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">[</bpt>isEditable<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#iseditable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>isEditable<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#iseditable)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>isEditable(): boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isEditable(): boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Boolean indicating if the control is editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが編集可能かどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>isEditable<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>isEditable<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">[</bpt>metadata<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#metadata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>メタデータ<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#metadata)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>metadata(): <bpt id="p1">[</bpt>MultiLookupMetadata<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">metadata(): <bpt id="p1">[</bpt>MultiLookupMetadata<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Returns the metadata object of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールのメタデータ オブジェクトを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Overrides <bpt id="p1">[</bpt>InputControl<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md)</ept>.<bpt id="p2">[</bpt>metadata<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControl<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md)</ept>.<bpt id="p2">[</bpt>metadata<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata)</ept> をオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">[</bpt>parent<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#parent)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>親<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#parent)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>parent(): <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept> &amp;#124; <bpt id="p2">[</bpt>Page<ept id="p2">](../interfaces/view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parent(): <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept> &amp;#124; <bpt id="p2">[</bpt>Page<ept id="p2">](../interfaces/view-model-ipage-ipage.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Returns the parent (control or page) of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールの親 (コントロールまたはページ) を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>parent<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#parent)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>parent<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#parent)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source><bpt id="p1">[</bpt>root<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#root)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルート<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#root)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>root(): <bpt id="p1">[</bpt>Page<ept id="p1">](../interfaces/view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">root(): <bpt id="p1">[</bpt>Page<ept id="p1">](../interfaces/view-model-ipage-ipage.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Returns the root form instance (page) of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールのルート フォーム インスタンス (ページ) を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>root<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#root)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>root<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrol.md#root)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source><bpt id="p1">[</bpt>onDataChanged<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#ondatachanged)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>onDataChanged<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookup.md#ondatachanged)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>onDataChanged: <bpt id="p1">[</bpt>EventHook<ept id="p1">](../interfaces/event-ievent-ieventhook.md)</ept> <ph id="ph1">&amp;lt;</ph>null<ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">onDataChanged: <bpt id="p1">[</bpt>EventHook<ept id="p1">](../interfaces/event-ievent-ieventhook.md)</ept> <ph id="ph1">&amp;lt;</ph>null<ph id="ph2">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>An event that is triggered when the input control's data changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">入力コントロールのデータが変更されたときに発生するイベントです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Inherited from <bpt id="p1">[</bpt>InputControl<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md)</ept>.<bpt id="p2">[</bpt>onDataChanged<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControl<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md)</ept>.<bpt id="p2">[</bpt>onDataChanged<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>MultiLookupDesign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MultiLookupDesign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">[</bpt>InputControlDesign<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControlDesign<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ MultiLookupDesign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ MultiLookupDesign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><bpt id="p1">[</bpt>alignItems<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignitems)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>alignItems<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignitems)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>alignItems: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">alignItems: string (optional)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>This property is an alias for the CSS property "align-items".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、CSS プロパティ「align-items」のエイリアスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>alignItems<ept id="p2">](../interfaces/view-model-ipage-idesign.md#alignitems)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>alignItems<ept id="p2">](../interfaces/view-model-ipage-idesign.md#alignitems)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source><bpt id="p1">[</bpt>alignSelf<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignself)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>alignSelf<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#alignself)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>alignSelf: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">alignSelf: string (optional)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>alignSelf<ept id="p2">](../interfaces/view-model-ipage-idesign.md#alignself)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>alignSelf<ept id="p2">](../interfaces/view-model-ipage-idesign.md#alignself)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source><bpt id="p1">[</bpt>bindings<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#bindings)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>バインディング<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#bindings)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>bindings: any (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">bindings: any (optional)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>bindings<ept id="p2">](../interfaces/view-model-ipage-idesign.md#bindings)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>bindings<ept id="p2">](../interfaces/view-model-ipage-idesign.md#bindings)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source><bpt id="p1">[</bpt>border<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#border)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>枠線<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#border)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>border: "none" &amp;#124; "solid" &amp;#124; "left" &amp;#124; "right" &amp;#124; "top" &amp;#124; "bottom" (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">border: "none" &amp;#124; "solid" &amp;#124; "left" &amp;#124; "right" &amp;#124; "top" &amp;#124; "bottom" (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>The border behavior of a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの境界動作。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>This property will not be inherited by the children.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは、子によって継承されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>border<ept id="p2">](../interfaces/view-model-ipage-idesign.md#border)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>border<ept id="p2">](../interfaces/view-model-ipage-idesign.md#border)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source><bpt id="p1">[</bpt>color<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#color)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>色<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#color)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>color: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">color: string (optional)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>The foreground color of the container.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナーの前景色。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>color<ept id="p2">](../interfaces/view-model-ipage-idesign.md#color)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>color<ept id="p2">](../interfaces/view-model-ipage-idesign.md#color)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source><bpt id="p1">[</bpt>flexFlow<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexflow)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>flexFlow<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexflow)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>flexFlow: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flexFlow: string (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Specifying this property makes the component a flex container component.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>flexFlow<ept id="p2">](../interfaces/view-model-ipage-idesign.md#flexflow)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>flexFlow<ept id="p2">](../interfaces/view-model-ipage-idesign.md#flexflow)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source><bpt id="p1">[</bpt>flexSize<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexsize)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>flexSize<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#flexsize)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>flexSize: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">flexSize: string (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>One number or two numbers written as a string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 つの番号または 2 つの番号が文字列として書き込まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>"(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「(サイズを拡大) [(サイズの縮小)]」して、即時フレックス コンテナの使用可能領域に対応します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>flexSize<ept id="p2">](../interfaces/view-model-ipage-idesign.md#flexsize)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>flexSize<ept id="p2">](../interfaces/view-model-ipage-idesign.md#flexsize)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">[</bpt>fontSize<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#fontsize)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>fontSize<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#fontsize)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>fontSize: "medium" &amp;#124; "xx-small" &amp;#124; "x-small" &amp;#124; "small" &amp;#124; "large" &amp;#124; "x-large" &amp;#124; "xx-large" (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fontSize: "medium" &amp;#124; "xx-small" &amp;#124; "x-small" &amp;#124; "small" &amp;#124; "large" &amp;#124; "x-large" &amp;#124; "xx-large" (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>The proportional text size</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">比例テキスト サイズ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>fontSize<ept id="p2">](../interfaces/view-model-ipage-idesign.md#fontsize)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>fontSize<ept id="p2">](../interfaces/view-model-ipage-idesign.md#fontsize)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source><bpt id="p1">[</bpt>fontWeight<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#fontweight)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>fontWeight<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#fontweight)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>fontWeight: "normal" &amp;#124; "bold" (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">fontWeight: "normal" &amp;#124; "bold" (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Normal or bold text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">標準または太字のテキスト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>fontWeight<ept id="p2">](../interfaces/view-model-ipage-idesign.md#fontweight)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>fontWeight<ept id="p2">](../interfaces/view-model-ipage-idesign.md#fontweight)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source><bpt id="p1">[</bpt>justifyItems<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#justifyitems)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>justifyItems<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#justifyitems)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>justifyItems: "flex-start" &amp;#124; "flex-end" &amp;#124; "center" &amp;#124; "space-between" (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">justifyItems: "flex-start" &amp;#124; "flex-end" &amp;#124; "center" &amp;#124; "space-between" (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>This property is an alias for the CSS property "justify-content".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティは CSS プロパティ「justify-content」のエイリアスです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>justifyItems<ept id="p2">](../interfaces/view-model-ipage-idesign.md#justifyitems)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>justifyItems<ept id="p2">](../interfaces/view-model-ipage-idesign.md#justifyitems)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source><bpt id="p1">[</bpt>label<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#label)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ラベル<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#label)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>label: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">label: string (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>label<ept id="p2">](../interfaces/view-model-ipage-idesign.md#label)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>label<ept id="p2">](../interfaces/view-model-ipage-idesign.md#label)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><bpt id="p1">[</bpt>labelPosition<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#labelposition)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>labelPosition<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#labelposition)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>labelPosition: "stacked" &amp;#124; "hidden" &amp;#124; "inline" (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">labelPosition: "stacked" &amp;#124; "hidden" &amp;#124; "inline" (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Determines how a label is positioned, if at all.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベルの配置方法を決定します (行われる場合)。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>By default, labelPosition is set to stacked.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定では、labelPosition が stacked に設定されています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>labelPosition<ept id="p2">](../interfaces/view-model-ipage-idesign.md#labelposition)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>labelPosition<ept id="p2">](../interfaces/view-model-ipage-idesign.md#labelposition)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source><bpt id="p1">[</bpt>name<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#name)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>名前<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#name)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>name: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">name: string (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>name<ept id="p2">](../interfaces/view-model-ipage-idesign.md#name)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>name<ept id="p2">](../interfaces/view-model-ipage-idesign.md#name)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source><bpt id="p1">[</bpt>padding<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#padding)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>スペース<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#padding)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>padding: "none" &amp;#124; "small" &amp;#124; "std" (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">padding: "none" &amp;#124; "small" &amp;#124; "std" (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Allows specifying the component's padding behavior.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンポーネントのスペース動作を指定できるように許可します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>padding<ept id="p2">](../interfaces/view-model-ipage-idesign.md#padding)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>padding<ept id="p2">](../interfaces/view-model-ipage-idesign.md#padding)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">[</bpt>type<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#type)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>タイプ<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md#type)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](view-model-control-basecontrol-icontrol.md#controltype)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](view-model-control-basecontrol-icontrol.md#controltype)</ept> (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>The type of the control as a string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列としてのコントロールのタイプ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Inherited from <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>type<ept id="p2">](../interfaces/view-model-ipage-idesign.md#type)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept>.<bpt id="p2">[</bpt>type<ept id="p2">](../interfaces/view-model-ipage-idesign.md#type)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>MultiLookupMetadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MultiLookupMetadata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source><bpt id="p1">[</bpt>InputControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ MultiLookupMetadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ MultiLookupMetadata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source><bpt id="p1">[</bpt>BoundEntity<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#boundentity)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>BoundEntity<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#boundentity)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>BoundEntity: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BoundEntity: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>The entity to which the control is bound.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールがバインドされるエンティティ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundEntity<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundEntity<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source><bpt id="p1">[</bpt>BoundField<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#boundfield)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>BoundField<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#boundfield)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>BoundField: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BoundField: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundField<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>BoundField<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source><bpt id="p1">[</bpt>Description<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#description)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>説明<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#description)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Description: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明:文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Description of the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの説明。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Description<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Description<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#design)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#design)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Design: <bpt id="p1">[</bpt>Design<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン: <bpt id="p1">[</bpt>デザイン<ept id="p1">](../interfaces/view-model-ipage-idesign.md)</ept> (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Design object for the lookup page that is referenced by the LookupPageId.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LookupPageId によって参照されるルックアップ ページのデザイン オブジェクト。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source><bpt id="p1">[</bpt>Editable<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#editable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>編集可能<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#editable)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Editable: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">編集可能: プール値 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Boolean indicating if the control is editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが編集可能かどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Editable<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Editable<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source><bpt id="p1">[</bpt>ExtType<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#exttype)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ExtType<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#exttype)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>ExtType: <bpt id="p1">[</bpt>ControlType<ept id="p1">](view-model-control-basecontrol-icontrol.md#controltype)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ExtType: <bpt id="p1">[</bpt>ControlType<ept id="p1">](view-model-control-basecontrol-icontrol.md#controltype)</ept> (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>The extended control type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張されたコントロール タイプです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>a control of type Input might have an extended type of Barcode.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール タイプ Input に、拡張タイプ Barcode が含まれる場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>ExtType<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>ExtType<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source><bpt id="p1">[</bpt>FilterContext<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#filtercontext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>FilterContext<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#filtercontext)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>FilterContext: DataFilter (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FilterContext: DataFilter (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source><bpt id="p1">[</bpt>FilterLocalOnly<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#filterlocalonly)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>FilterLocalOnly<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#filterlocalonly)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>FilterLocalOnly: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FilterLocalOnly: ブール値 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source><bpt id="p1">[</bpt>HelpText<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#helptext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>HelpText<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#helptext)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>HelpText: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HelpText: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>The keyboard shortcut for a command.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コマンドのキーボード ショートカットです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>"(Shift+F5)"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">「(Shift + F5)」</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>HelpText<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>HelpText<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source><bpt id="p1">[</bpt>Hidden<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>非表示<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#hidden)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Hidden: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">非表示: ブール値 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Boolean indicating if the control is hidden or not.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールを非表示にするかどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Hidden<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Hidden<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source><bpt id="p1">[</bpt>Id<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#id)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ID<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#id)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Id: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Id: string (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Identification string for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの ID 文字列です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Id<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Id<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source><bpt id="p1">[</bpt>Label<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#label)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ラベル<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#label)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Label: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ラベル: 文字列 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Label for a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールのラベル。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>E.g.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E.g.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>a control representing a person's first name might have a label "First Name".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">個人の名を表すコントロールに「氏名」というラベルが付いている場合があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Label<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Label<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source><bpt id="p1">[</bpt>LookupPageId<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#lookuppageid)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>LookupPageId<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#lookuppageid)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>LookupPageId: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LookupPageId: 文字列 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Page that is hosted within the multi-lookup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">複数のルックアップ内でホストされているページ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source><bpt id="p1">[</bpt>Mandatory<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#mandatory)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>必須<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#mandatory)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Mandatory: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必須: ブール値 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>If set to true then input for the control is required for the task to be completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">true と設定されている場合は、コントロールのインプットがタスクを完了するために必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Mandatory controls will have a red outline.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">必須のコントロールには、赤いアウトラインがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Inherited from <bpt id="p1">[</bpt>InputControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Mandatory<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#mandatory)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Mandatory<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#mandatory)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source><bpt id="p1">[</bpt>Name<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#name)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>名前<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#name)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Name: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Name: 文字列 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Name of a control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの名前です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Name<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Name<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source><bpt id="p1">[</bpt>NumSequence<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#numsequence)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>NumSequence<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#numsequence)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>NumSequence: <bpt id="p1">[</bpt>NumberSequenceConfig<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NumSequence: <bpt id="p1">[</bpt>NumberSequenceConfig<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md)</ept> (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Used for auto detecting and changing visibility of the number sequence controls in the task or page, based on AX number sequence configuration, through extended business logic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">拡張ビジネス ロジックを使用し、AX 番号シーケンス構成に基づいて、タスクまたはページ内の番号シーケンス コントロールの可視性を自動的に検出および変更するために使用されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Inherited from <bpt id="p1">[</bpt>InputControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>NumSequence<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#numsequence)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>InputControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>NumSequence<ept id="p2">](../interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md#numsequence)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source><bpt id="p1">[</bpt>Order<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#order)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>注文<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#order)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Order: number (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">注文: 番号 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Number indicating the order in which a control will appear on a page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールがページに表示される順序を示す番号。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Order<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Order<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source><bpt id="p1">[</bpt>ReferenceAppId<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#referenceappid)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ReferenceAppId<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#referenceappid)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>ReferenceAppId: string (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReferenceAppId: 文字列 (オプション)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source><bpt id="p1">[</bpt>ReverseLookupRelation<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#reverselookuprelation)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ReverseLookupRelation<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#reverselookuprelation)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>ReverseLookupRelation: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ReverseLookupRelation: ブール値 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source><bpt id="p1">[</bpt>ShowPending<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#showpending)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ShowPending<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#showpending)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>ShowPending: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ShowPending: ブール値 (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source><bpt id="p1">[</bpt>Type<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[<bpt id="p1">[</bpt>タイプ<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)</ept>]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](view-model-control-basecontrol-icontrol.md#controltype)</ept> (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Type: <bpt id="p1">[</bpt>ControlType<ept id="p1">](view-model-control-basecontrol-icontrol.md#controltype)</ept> (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>String indicating the control type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール タイプを示す文字列。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Inherited from <bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Type<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ControlMetadata<ept id="p1">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md)</ept>.<bpt id="p2">[</bpt>Type<ept id="p2">](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">署名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source><bpt id="p1">[</bpt>OnLookupPageCreate<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>OnLookupPageCreate<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>OnLookupPageCreate: function(args: any, multiLookup: any): void (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): (無効) オプション</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source><bpt id="p1">[</bpt>OnLookupPageCreated<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>OnLookupPageCreated<ept id="p1">](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>OnLookupPageCreated: function(args: any, multiLookup: any): void (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): 無効 (オプション)</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

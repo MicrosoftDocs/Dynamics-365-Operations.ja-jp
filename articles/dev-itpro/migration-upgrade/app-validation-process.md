@@ -1,67 +1,135 @@
----
-title: AX 2012 からのアップグレード - アップグレード後のタスク
-description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要がある作業について説明します。
-author: tariqbell
-manager: AnnBe
-ms.date: 01/31/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Developer
-ms.reviewer: margoc
-ms.search.scope: Operations
-ms.custom: 106163
-ms.assetid: ''
-ms.search.region: Global
-ms.author: tabell
-ms.search.validFrom: 2017-06-16
-ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b9058f0d658a72f1ecc733e45ed15bef4855fdb6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537212"
----
-# <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a><span data-ttu-id="cb2a4-103">AX 2012 からのアップグレード - アップグレード後のタスク</span><span class="sxs-lookup"><span data-stu-id="cb2a4-103">Upgrade from AX 2012 - Post-upgrade tasks</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-[!include [upgrade banner](../includes/upgrade-banner.md)]
-
-<span data-ttu-id="cb2a4-104">このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要がある作業について説明します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-104">This topic describes the tasks that you might have to perform in Microsoft Dynamics 365 for Operation after you complete a code and data upgrade from Microsoft Dynamics AX 2012.</span></span> <span data-ttu-id="cb2a4-105">Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-105">A process data package (PDP) that is available in Microsoft Dynamics Lifecycle Services (LCS) includes links to the following menu items.</span></span> <span data-ttu-id="cb2a4-106">この PDP は、**データ検証チェックリスト** ワークスペースに入力します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-106">This PDP will fill in the **Data validation checklist** workspace.</span></span> <span data-ttu-id="cb2a4-107">**データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-107">The **Data validation checklist** workspace lets users track a project and monitor the tasks that are required in order to complete it.</span></span>
-
-## <a name="document-management"></a><span data-ttu-id="cb2a4-108">ドキュメント管理</span><span class="sxs-lookup"><span data-stu-id="cb2a4-108">Document management</span></span>
-
-<span data-ttu-id="cb2a4-109">ドキュメント管理を使用する場合は、データベースに格納されている既存のドキュメントまたは添付ファイルを Microsoft Azure Blob ストレージに移行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-109">If you use Document management, existing documents or attachments that are stored in the database must be migrated to Microsoft Azure Blob storage.</span></span> <span data-ttu-id="cb2a4-110">この移行を完了するには、**ドキュメント管理パラメーター** ページの **ファイルを移行** タブで **ファイルを移行** ボタンを使用します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-110">To complete this migration, use the **Migrate files** button on the **Migrate files** tab on the **Document management parameters** page.</span></span>
-
-## <a name="print-management"></a><span data-ttu-id="cb2a4-111">印刷管理</span><span class="sxs-lookup"><span data-stu-id="cb2a4-111">Print management</span></span>
-
-<span data-ttu-id="cb2a4-112">印刷管理を使用する場合、AX 2012 のネットワーク プリンタへの参照は無効になります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-112">If you use Print management, the references to network printers from AX 2012 won’t be valid.</span></span> <span data-ttu-id="cb2a4-113">**ドキュメント回覧** ページのネットワーク プリンターを設定して参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-113">You must set up and reference network printers on the **Document routing** page.</span></span> <span data-ttu-id="cb2a4-114">詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](../analytics/install-document-routing-agent.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-114">For more information, see [Install the Document Routing Agent to enable network printer devices](../analytics/install-document-routing-agent.md).</span></span>
-
-## <a name="retail"></a><span data-ttu-id="cb2a4-115">小売</span><span class="sxs-lookup"><span data-stu-id="cb2a4-115">Retail</span></span>
-
-<span data-ttu-id="cb2a4-116">AX 2012 からアップグレードを完了すると、レジスターおよびデバイスを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-116">After you complete the upgrade from AX 2012, you must configure registers and devices.</span></span>
-
-<span data-ttu-id="cb2a4-117">レジスターを構成するには、**Retail** > **チャネル** > **小売店舗** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-117">To configure a register, click **Retail** > **Channels** > **Retail stores**.</span></span> <span data-ttu-id="cb2a4-118">小売チャネルの行を選択し、**レジスター** 情報ボックスを展開します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-118">Select the row for the retail channel, and then expand the **Registers** FactBox.</span></span> <span data-ttu-id="cb2a4-119">**詳細**をクリックし、**新規**をクリックして、登録設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-119">Click **More**, click **New**, and complete the setup of the register.</span></span>
-
-<span data-ttu-id="cb2a4-120">デバイスを構成するには、**Retail** > **チャンネル設定** > **POS 設定** をクリックし、**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-120">To configure a device, click **Retail** > **Channel setup** > **POS Setup**, and then click **New**.</span></span>
-
-<span data-ttu-id="cb2a4-121">また、チャネル データベースのすべてのジョブ (9999) を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-121">Additionally, you must run all jobs (9999) for the channel database.</span></span> <span data-ttu-id="cb2a4-122">**小売** > **本社の設定** > **小売用スケジューラ** > **チャネル データベース**の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-122">Click **Retail** > **Headquarters setup** > **Retail scheduler** > **Channel database**.</span></span> <span data-ttu-id="cb2a4-123">適切なチャネル データベースの行を選択し、**データの完全な同期** をクリックします。**9999** (**すべてのジョブ**) 配送スケジュールを選択し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-123">Select the row for the appropriate channel database, and then click **Full data sync**. Select the **9999** (**All jobs**) distribution schedule, and then click **OK**.</span></span> <span data-ttu-id="cb2a4-124">ジョブを実行するには、もう一度 **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-124">Click **OK** again to run the job.</span></span>
-
-## <a name="service-industries"></a><span data-ttu-id="cb2a4-125">サービス業</span><span class="sxs-lookup"><span data-stu-id="cb2a4-125">Service industries</span></span>
-
-<span data-ttu-id="cb2a4-126">AX 2012 からアップグレードを完了した後は、リソース キャパシティ ロールアップおよびプロジェクト元帳の会社間転記を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-126">After you complete the upgrade from AX 2012, you must set up resource capacity roll-up and project ledger intercompany posting.</span></span>
-
-<span data-ttu-id="cb2a4-127">リソース キャパシティのロールアップ バッチ ジョブを実行するには、**プロジェクト管理と会計** > **照会とレポート** > **キャパシティ同期** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-127">To run the Resource capacity roll-up batch job, click **Project management and accounting** > **Inquiries and reports** > **Capacity synchronization**.</span></span> <span data-ttu-id="cb2a4-128">リソースおよびリソース カレンダーの予約データを設定するには、このバッチ ジョブを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-128">You must run this batch job to set up the resource and resource calendar reservation data.</span></span> <span data-ttu-id="cb2a4-129">このデータは、プロジェクト リソースのスケジューリングを使用する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-129">This data will be required if you use project resource scheduling.</span></span> <span data-ttu-id="cb2a4-130">詳細については、「[プロジェクト リソース](../../financials/project-management/project-resourcing.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-130">For more information, see [Project resourcing](../../financials/project-management/project-resourcing.md).</span></span>
-
-<span data-ttu-id="cb2a4-131">プロジェクト元帳の企業間転記を有効にするには、**プロジェクト管理と会計** > **設定** > **転記** > **元帳転記の設定**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-131">To enable project ledger intercompany posting, click **Project management and accounting** > **Setup** > **Posting** > **Ledger posting setup**.</span></span> <span data-ttu-id="cb2a4-132">**原価会計**タブの、**勘定タイプ**フィールドで、**会社間原価**、および貸出側法人の詳細を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-132">On the **Cost accounts** tab, in the **Ledger account types** field, select **Intercompany cost**, and then enter the details of the lending legal entity.</span></span> <span data-ttu-id="cb2a4-133">**収益勘定**タブの、**勘定タイプ**フィールドで、**会社間収益**、および貸出側法人の詳細を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-133">On the **Revenue accounts** tab, in the **Ledger account types** field, select **Intercompany revenue**, and then enter details of the borrowing legal entity.</span></span>
-
-## <a name="budget-planning"></a><span data-ttu-id="cb2a4-134">予算計画</span><span class="sxs-lookup"><span data-stu-id="cb2a4-134">Budget planning</span></span>
-
-<span data-ttu-id="cb2a4-135">AX 2012 からのアップグレードが完了した後、予算計画の列とレイアウトを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-135">After you complete the upgrade from AX 2012, you must set up Budget planning columns and layouts.</span></span> <span data-ttu-id="cb2a4-136">この設定を完了するには、**予算編成** > **設定** > **予算計画** > **予算計画構成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-136">To complete this setup, click **Budgeting** > **Setup** > **Budget planning** > **Budget planning configuration**.</span></span>
-
-<span data-ttu-id="cb2a4-137">また、各予算ステージに適切なレイアウトを使用するための予算計画プロセスを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-137">Additionally, you must update Budget planning processes so that they use the appropriate layout for each budget stage.</span></span> <span data-ttu-id="cb2a4-138">予算計画プロセスを更新するには、**予算作成** > **設定** > **予算計画** > **予算計画プロセス**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-138">To update Budget planning processes, click **Budgeting** > **Setup** > **Budget planning** > **Budget planning process**.</span></span>
-
-<span data-ttu-id="cb2a4-139">予算計画のアップグレードの詳細については、 [Microsoft Dynamics AX 2012 から予算計画にアップグレードする](upgrade-budget-planning.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cb2a4-139">For more information about Budget planning upgrade, see [Upgrading to Budget planning from Microsoft Dynamics AX 2012](upgrade-budget-planning.md).</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="app-validation-process.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>app-validation-process.b692f0.0c36dedc6d2a976488822f0bb7232f668b158884.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>0c36dedc6d2a976488822f0bb7232f668b158884</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\app-validation-process.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Upgrade from AX 2012 - Post-upgrade tasks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 からのアップグレード - アップグレード後のタスク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes the tasks that you might have to perform in Microsoft Dynamics 365 for Operation after you complete a code and data upgrade from Microsoft Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要がある作業について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Upgrade from AX 2012 - Post-upgrade tasks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 からのアップグレード - アップグレード後のタスク</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes the tasks that you might have to perform in Microsoft Dynamics 365 for Operation after you complete a code and data upgrade from Microsoft Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Microsoft Dynamics 365で実行する必要がある作業について説明します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>A process data package (PDP) that is available in Microsoft Dynamics Lifecycle Services (LCS) includes links to the following menu items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This PDP will fill in the <bpt id="p1">**</bpt>Data validation checklist<ept id="p1">**</ept> workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この PDP は、<bpt id="p1">**</bpt>データ検証チェックリスト<ept id="p1">**</ept> ワークスペースに入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The <bpt id="p1">**</bpt>Data validation checklist<ept id="p1">**</ept> workspace lets users track a project and monitor the tasks that are required in order to complete it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>データ検証チェックリスト<ept id="p1">**</ept> ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Document management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドキュメント管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>If you use Document management, existing documents or attachments that are stored in the database must be migrated to Microsoft Azure Blob storage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ドキュメント管理を使用する場合は、データベースに格納されている既存のドキュメントまたは添付ファイルを Microsoft Azure Blob ストレージに移行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>To complete this migration, use the <bpt id="p1">**</bpt>Migrate files<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Migrate files<ept id="p2">**</ept> tab on the <bpt id="p3">**</bpt>Document management parameters<ept id="p3">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この移行を完了するには、<bpt id="p3">**</bpt>ドキュメント管理パラメーター<ept id="p3">**</ept> ページの <bpt id="p2">**</bpt>ファイルを移行<ept id="p2">**</ept> タブで <bpt id="p1">**</bpt>ファイルを移行<ept id="p1">**</ept> ボタンを使用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Print management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">印刷管理</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>If you use Print management, the references to network printers from AX 2012 won’t be valid.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">印刷管理を使用する場合、AX 2012 のネットワーク プリンタへの参照は無効になります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>You must set up and reference network printers on the <bpt id="p1">**</bpt>Document routing<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ドキュメント回覧<ept id="p1">**</ept> ページのネットワーク プリンターを設定して参照する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>For more information, see <bpt id="p1">[</bpt>Install the Document Routing Agent to enable network printer devices<ept id="p1">](../analytics/install-document-routing-agent.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、<bpt id="p1">[</bpt>ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする<ept id="p1">](../analytics/install-document-routing-agent.md)</ept> を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>After you complete the upgrade from AX 2012, you must configure registers and devices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 からアップグレードを完了すると、レジスターおよびデバイスを構成する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>To configure a register, click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Channels<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Retail stores<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">レジスターを構成するには、<bpt id="p1">**</bpt>Retail<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>チャネル<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>小売店舗<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Select the row for the retail channel, and then expand the <bpt id="p1">**</bpt>Registers<ept id="p1">**</ept> FactBox.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">小売チャネルの行を選択し、<bpt id="p1">**</bpt>レジスター<ept id="p1">**</ept> 情報ボックスを展開します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click <bpt id="p1">**</bpt>More<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and complete the setup of the register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>詳細<ept id="p1">**</ept>をクリックし、<bpt id="p2">**</bpt>新規<ept id="p2">**</ept>をクリックして、登録設定を完了します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>To configure a device, click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Channel setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>POS Setup<ept id="p3">**</ept>, and then click <bpt id="p4">**</bpt>New<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デバイスを構成するには、<bpt id="p1">**</bpt>Retail<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>チャンネル設定<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>POS 設定<ept id="p3">**</ept> をクリックし、<bpt id="p4">**</bpt>新規<ept id="p4">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Additionally, you must run all jobs (9999) for the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、チャネル データベースのすべてのジョブ (9999) を実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Click <bpt id="p1">**</bpt>Retail<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Headquarters setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Retail scheduler<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Channel database<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>小売<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>本社の設定<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>小売用スケジューラ<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>チャネル データベース<ept id="p4">**</ept>の順にクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Select the row for the appropriate channel database, and then click <bpt id="p1">**</bpt>Full data sync<ept id="p1">**</ept>. Select the <bpt id="p2">**</bpt>9999<ept id="p2">**</ept> (<bpt id="p3">**</bpt>All jobs<ept id="p3">**</ept>) distribution schedule, and then click <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">適切なチャネル データベースの行を選択し、<bpt id="p1">**</bpt>データの完全な同期<ept id="p1">**</ept> をクリックします。<bpt id="p2">**</bpt>9999<ept id="p2">**</ept> (<bpt id="p3">**</bpt>すべてのジョブ<ept id="p3">**</ept>) 配送スケジュールを選択し、<bpt id="p4">**</bpt>OK<ept id="p4">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> again to run the job.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ジョブを実行するには、もう一度 <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Service industries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">サービス業</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>After you complete the upgrade from AX 2012, you must set up resource capacity roll-up and project ledger intercompany posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 からアップグレードを完了した後は、リソース キャパシティ ロールアップおよびプロジェクト元帳の会社間転記を設定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>To run the Resource capacity roll-up batch job, click <bpt id="p1">**</bpt>Project management and accounting<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Capacity synchronization<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソース キャパシティのロールアップ バッチ ジョブを実行するには、<bpt id="p1">**</bpt>プロジェクト管理と会計<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>照会とレポート<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>キャパシティ同期<ept id="p3">**</ept> をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>You must run this batch job to set up the resource and resource calendar reservation data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リソースおよびリソース カレンダーの予約データを設定するには、このバッチ ジョブを実行する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>This data will be required if you use project resource scheduling.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このデータは、プロジェクト リソースのスケジューリングを使用する場合に必要です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>For more information, see <bpt id="p1">[</bpt>Project resourcing<ept id="p1">](../../financials/project-management/project-resourcing.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">詳細については、「<bpt id="p1">[</bpt>プロジェクト リソース<ept id="p1">](../../financials/project-management/project-resourcing.md)</ept>」を参照してください。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>To enable project ledger intercompany posting, click <bpt id="p1">**</bpt>Project management and accounting<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Posting<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Ledger posting setup<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロジェクト元帳の企業間転記を有効にするには、<bpt id="p1">**</bpt>プロジェクト管理と会計<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>設定<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>転記<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>元帳転記の設定<ept id="p4">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>On the <bpt id="p1">**</bpt>Cost accounts<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Ledger account types<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Intercompany cost<ept id="p3">**</ept>, and then enter the details of the lending legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>原価会計<ept id="p1">**</ept>タブの、<bpt id="p2">**</bpt>勘定タイプ<ept id="p2">**</ept>フィールドで、<bpt id="p3">**</bpt>会社間原価<ept id="p3">**</ept>、および貸出側法人の詳細を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>On the <bpt id="p1">**</bpt>Revenue accounts<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Ledger account types<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Intercompany revenue<ept id="p3">**</ept>, and then enter details of the borrowing legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>収益勘定<ept id="p1">**</ept>タブの、<bpt id="p2">**</bpt>勘定タイプ<ept id="p2">**</ept>フィールドで、<bpt id="p3">**</bpt>会社間収益<ept id="p3">**</ept>、および貸出側法人の詳細を入力します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Budget planning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">予算計画</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>After you complete the upgrade from AX 2012, you must set up Budget planning columns and layouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 からのアップグレードが完了した後、予算計画の列とレイアウトを設定する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>To complete this setup, click <bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Budget planning<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Budget planning configuration<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">この設定を完了するには、<bpt id="p1">**</bpt>予算編成<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>設定<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>予算計画<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>予算計画構成<ept id="p4">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Additionally, you must update Budget planning processes so that they use the appropriate layout for each budget stage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">また、各予算ステージに適切なレイアウトを使用するための予算計画プロセスを更新する必要があります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>To update Budget planning processes, click <bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Setup<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Budget planning<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Budget planning process<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">予算計画プロセスを更新するには、<bpt id="p1">**</bpt>予算作成<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>設定<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>予算計画<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>予算計画プロセス<ept id="p4">**</ept>をクリックします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For more information about Budget planning upgrade, see <bpt id="p1">[</bpt>Upgrading to Budget planning from Microsoft Dynamics AX 2012<ept id="p1">](upgrade-budget-planning.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">予算計画のアップグレードの詳細については、 <bpt id="p1">[</bpt>Microsoft Dynamics AX 2012 から予算計画にアップグレードする<ept id="p1">](upgrade-budget-planning.md)</ept>を参照してください。</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

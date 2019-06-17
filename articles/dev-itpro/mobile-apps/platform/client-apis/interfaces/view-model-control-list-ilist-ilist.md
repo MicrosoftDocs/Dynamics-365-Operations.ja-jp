@@ -1,605 +1,870 @@
----
-title: リスト タイプ
-description: リスト コントロール タイプ。
-author: shadykdc
-manager: AnnBe
-ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Developer
-ms.reviewer: robinr
-ms.search.scope: ''
-ms.search.region: Global
-ms.author: kashea
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6a17a384f7c4a67f8c285b8558abe8cf9414ae22
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537328"
----
-# <a name="list-type"></a><span data-ttu-id="5a77b-103">リスト タイプ</span><span class="sxs-lookup"><span data-stu-id="5a77b-103">List type</span></span>
-
-[!include [banner](../../../../includes/banner.md)]
-
-<span data-ttu-id="5a77b-104">リスト コントロール タイプ。</span><span class="sxs-lookup"><span data-stu-id="5a77b-104">List control type.</span></span>
-<span data-ttu-id="5a77b-105">リストは、任意の数の行を含むコントロールです。</span><span class="sxs-lookup"><span data-stu-id="5a77b-105">A list is a control that contains any numbers of rows.</span></span>
-<span data-ttu-id="5a77b-106">各行は、任意の数のコントロールに対するレイアウト用テンプレートに従います。</span><span class="sxs-lookup"><span data-stu-id="5a77b-106">Each row follows a template for the layout of any number of controls.</span></span>
-<span data-ttu-id="5a77b-107">リストには簡易とカードの 2 つのスタイルがあります。</span><span class="sxs-lookup"><span data-stu-id="5a77b-107">Lists come in two styles: simple and card.</span></span>
-
-### <a name="hierarchy"></a><span data-ttu-id="5a77b-108">階層</span><span class="sxs-lookup"><span data-stu-id="5a77b-108">Hierarchy</span></span>
-
-[<span data-ttu-id="5a77b-109">ContainerControl</span><span class="sxs-lookup"><span data-stu-id="5a77b-109">ContainerControl</span></span>](view-model-control-container-icontainercontrol-icontainercontrol.md) <br><span data-ttu-id="5a77b-110">&nbsp;&nbsp;&nbsp;└─ リスト</span><span class="sxs-lookup"><span data-stu-id="5a77b-110">&nbsp;&nbsp;&nbsp;└─ List</span></span> <br>
-
-## <a name="index"></a><span data-ttu-id="5a77b-111">指数</span><span class="sxs-lookup"><span data-stu-id="5a77b-111">Index</span></span>
-
-### <a name="properties"></a><span data-ttu-id="5a77b-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5a77b-112">Properties</span></span>
-
-* [<span data-ttu-id="5a77b-113">$accessibility</span><span class="sxs-lookup"><span data-stu-id="5a77b-113">$accessibility</span></span>](view-model-control-list-ilist-ilist.md#accessibility)
-* [<span data-ttu-id="5a77b-114">DefaultSearchColumn</span><span class="sxs-lookup"><span data-stu-id="5a77b-114">DefaultSearchColumn</span></span>](view-model-control-list-ilist-ilist.md#defaultsearchcolumn)
-* [<span data-ttu-id="5a77b-115">コンテナー</span><span class="sxs-lookup"><span data-stu-id="5a77b-115">container</span></span>](view-model-control-list-ilist-ilist.md#container)
-* [<span data-ttu-id="5a77b-116">emptyListMessage</span><span class="sxs-lookup"><span data-stu-id="5a77b-116">emptyListMessage</span></span>](view-model-control-list-ilist-ilist.md#emptylistmessage)
-* [<span data-ttu-id="5a77b-117">enableMultiSelect</span><span class="sxs-lookup"><span data-stu-id="5a77b-117">enableMultiSelect</span></span>](view-model-control-list-ilist-ilist.md#enablemultiselect)
-* [<span data-ttu-id="5a77b-118">ジェネリック</span><span class="sxs-lookup"><span data-stu-id="5a77b-118">generic</span></span>](view-model-control-list-ilist-ilist.md#generic)
-* [<span data-ttu-id="5a77b-119">getDataSource</span><span class="sxs-lookup"><span data-stu-id="5a77b-119">getDataSource</span></span>](view-model-control-list-ilist-ilist.md#getdatasource)
-* [<span data-ttu-id="5a77b-120">非表示</span><span class="sxs-lookup"><span data-stu-id="5a77b-120">hidden</span></span>](view-model-control-list-ilist-ilist.md#hidden)
-* [<span data-ttu-id="5a77b-121">hideEmptyListMessage</span><span class="sxs-lookup"><span data-stu-id="5a77b-121">hideEmptyListMessage</span></span>](view-model-control-list-ilist-ilist.md#hideemptylistmessage)
-* [<span data-ttu-id="5a77b-122">imageFields</span><span class="sxs-lookup"><span data-stu-id="5a77b-122">imageFields</span></span>](view-model-control-list-ilist-ilist.md#imagefields)
-* [<span data-ttu-id="5a77b-123">performingRemoteSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-123">performingRemoteSearch</span></span>](view-model-control-list-ilist-ilist.md#performingremotesearch)
-* [<span data-ttu-id="5a77b-124">searchQuery</span><span class="sxs-lookup"><span data-stu-id="5a77b-124">searchQuery</span></span>](view-model-control-list-ilist-ilist.md#searchquery)
-
-### <a name="methods"></a><span data-ttu-id="5a77b-125">メソッド</span><span class="sxs-lookup"><span data-stu-id="5a77b-125">Methods</span></span>
-
-* [<span data-ttu-id="5a77b-126">allowsNavigation</span><span class="sxs-lookup"><span data-stu-id="5a77b-126">allowsNavigation</span></span>](view-model-control-list-ilist-ilist.md#allowsnavigation)
-* [<span data-ttu-id="5a77b-127">applyDesign</span><span class="sxs-lookup"><span data-stu-id="5a77b-127">applyDesign</span></span>](view-model-control-list-ilist-ilist.md#applydesign)
-* [<span data-ttu-id="5a77b-128">applySearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-128">applySearch</span></span>](view-model-control-list-ilist-ilist.md#applysearch)
-* [<span data-ttu-id="5a77b-129">canPerformRemoteSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-129">canPerformRemoteSearch</span></span>](view-model-control-list-ilist-ilist.md#canperformremotesearch)
-* [<span data-ttu-id="5a77b-130">clearSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-130">clearSearch</span></span>](view-model-control-list-ilist-ilist.md#clearsearch)
-* [<span data-ttu-id="5a77b-131">dataContext</span><span class="sxs-lookup"><span data-stu-id="5a77b-131">dataContext</span></span>](view-model-control-list-ilist-ilist.md#datacontext)
-* [<span data-ttu-id="5a77b-132">getColumnLabel</span><span class="sxs-lookup"><span data-stu-id="5a77b-132">getColumnLabel</span></span>](view-model-control-list-ilist-ilist.md#getcolumnlabel)
-* [<span data-ttu-id="5a77b-133">getControl</span><span class="sxs-lookup"><span data-stu-id="5a77b-133">getControl</span></span>](view-model-control-list-ilist-ilist.md#getcontrol)
-* [<span data-ttu-id="5a77b-134">getControlById</span><span class="sxs-lookup"><span data-stu-id="5a77b-134">getControlById</span></span>](view-model-control-list-ilist-ilist.md#getcontrolbyid)
-* [<span data-ttu-id="5a77b-135">getControlMetadata</span><span class="sxs-lookup"><span data-stu-id="5a77b-135">getControlMetadata</span></span>](view-model-control-list-ilist-ilist.md#getcontrolmetadata)
-* [<span data-ttu-id="5a77b-136">getControlMetadataById</span><span class="sxs-lookup"><span data-stu-id="5a77b-136">getControlMetadataById</span></span>](view-model-control-list-ilist-ilist.md#getcontrolmetadatabyid)
-* [<span data-ttu-id="5a77b-137">getData</span><span class="sxs-lookup"><span data-stu-id="5a77b-137">getData</span></span>](view-model-control-list-ilist-ilist.md#getdata)
-* [<span data-ttu-id="5a77b-138">getDesign</span><span class="sxs-lookup"><span data-stu-id="5a77b-138">getDesign</span></span>](view-model-control-list-ilist-ilist.md#getdesign)
-* [<span data-ttu-id="5a77b-139">getListData</span><span class="sxs-lookup"><span data-stu-id="5a77b-139">getListData</span></span>](view-model-control-list-ilist-ilist.md#getlistdata)
-* [<span data-ttu-id="5a77b-140">getRenderedRows</span><span class="sxs-lookup"><span data-stu-id="5a77b-140">getRenderedRows</span></span>](view-model-control-list-ilist-ilist.md#getrenderedrows)
-* [<span data-ttu-id="5a77b-141">getRowNavigation</span><span class="sxs-lookup"><span data-stu-id="5a77b-141">getRowNavigation</span></span>](view-model-control-list-ilist-ilist.md#getrownavigation)
-* [<span data-ttu-id="5a77b-142">getRowSelectionCount</span><span class="sxs-lookup"><span data-stu-id="5a77b-142">getRowSelectionCount</span></span>](view-model-control-list-ilist-ilist.md#getrowselectioncount)
-* [<span data-ttu-id="5a77b-143">getRowSelections</span><span class="sxs-lookup"><span data-stu-id="5a77b-143">getRowSelections</span></span>](view-model-control-list-ilist-ilist.md#getrowselections)
-* [<span data-ttu-id="5a77b-144">getRowTracking</span><span class="sxs-lookup"><span data-stu-id="5a77b-144">getRowTracking</span></span>](view-model-control-list-ilist-ilist.md#getrowtracking)
-* [<span data-ttu-id="5a77b-145">getSearchColumn</span><span class="sxs-lookup"><span data-stu-id="5a77b-145">getSearchColumn</span></span>](view-model-control-list-ilist-ilist.md#getsearchcolumn)
-* [<span data-ttu-id="5a77b-146">getSearchColumnLabel</span><span class="sxs-lookup"><span data-stu-id="5a77b-146">getSearchColumnLabel</span></span>](view-model-control-list-ilist-ilist.md#getsearchcolumnlabel)
-* [<span data-ttu-id="5a77b-147">getSearchableColumns</span><span class="sxs-lookup"><span data-stu-id="5a77b-147">getSearchableColumns</span></span>](view-model-control-list-ilist-ilist.md#getsearchablecolumns)
-* [<span data-ttu-id="5a77b-148">hideSearchBar</span><span class="sxs-lookup"><span data-stu-id="5a77b-148">hideSearchBar</span></span>](view-model-control-list-ilist-ilist.md#hidesearchbar)
-* [<span data-ttu-id="5a77b-149">isEditable</span><span class="sxs-lookup"><span data-stu-id="5a77b-149">isEditable</span></span>](view-model-control-list-ilist-ilist.md#iseditable)
-* [<span data-ttu-id="5a77b-150">loadMetaData</span><span class="sxs-lookup"><span data-stu-id="5a77b-150">loadMetaData</span></span>](view-model-control-list-ilist-ilist.md#loadmetadata)
-* [<span data-ttu-id="5a77b-151">loadMore</span><span class="sxs-lookup"><span data-stu-id="5a77b-151">loadMore</span></span>](view-model-control-list-ilist-ilist.md#loadmore)
-* [<span data-ttu-id="5a77b-152">メタデータ</span><span class="sxs-lookup"><span data-stu-id="5a77b-152">metadata</span></span>](view-model-control-list-ilist-ilist.md#metadata)
-* [<span data-ttu-id="5a77b-153">親</span><span class="sxs-lookup"><span data-stu-id="5a77b-153">parent</span></span>](view-model-control-list-ilist-ilist.md#parent)
-* [<span data-ttu-id="5a77b-154">performRemoteSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-154">performRemoteSearch</span></span>](view-model-control-list-ilist-ilist.md#performremotesearch)
-* [<span data-ttu-id="5a77b-155">ルート</span><span class="sxs-lookup"><span data-stu-id="5a77b-155">root</span></span>](view-model-control-list-ilist-ilist.md#root)
-* [<span data-ttu-id="5a77b-156">selectSearchColumn</span><span class="sxs-lookup"><span data-stu-id="5a77b-156">selectSearchColumn</span></span>](view-model-control-list-ilist-ilist.md#selectsearchcolumn)
-* [<span data-ttu-id="5a77b-157">setRowSections</span><span class="sxs-lookup"><span data-stu-id="5a77b-157">setRowSections</span></span>](view-model-control-list-ilist-ilist.md#setrowsections)
-
-### <a name="events"></a><span data-ttu-id="5a77b-158">イベント</span><span class="sxs-lookup"><span data-stu-id="5a77b-158">Events</span></span>
-
-* [<span data-ttu-id="5a77b-159">onRowCreate</span><span class="sxs-lookup"><span data-stu-id="5a77b-159">onRowCreate</span></span>](view-model-control-list-ilist-ilist.md#onrowcreate)
-* [<span data-ttu-id="5a77b-160">onRowSelect</span><span class="sxs-lookup"><span data-stu-id="5a77b-160">onRowSelect</span></span>](view-model-control-list-ilist-ilist.md#onrowselect)
-
-## <a name="properties"></a><span data-ttu-id="5a77b-161">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5a77b-161">Properties</span></span>
-
-### <a name="accessibility"></a><span data-ttu-id="5a77b-162">$accessibility</span><span class="sxs-lookup"><span data-stu-id="5a77b-162">$accessibility</span></span>
-
-<span data-ttu-id="5a77b-163">$accessibility: すべて</span><span class="sxs-lookup"><span data-stu-id="5a77b-163">$accessibility: any</span></span>
-
-
-
-
-### <a name="defaultsearchcolumn"></a><span data-ttu-id="5a77b-164">DefaultSearchColumn</span><span class="sxs-lookup"><span data-stu-id="5a77b-164">DefaultSearchColumn</span></span>
-
-<span data-ttu-id="5a77b-165">DefaultSearchColumn: 文字列</span><span class="sxs-lookup"><span data-stu-id="5a77b-165">DefaultSearchColumn: string</span></span>
-
-
-
-
-### <a name="container"></a><span data-ttu-id="5a77b-166">コンテナー</span><span class="sxs-lookup"><span data-stu-id="5a77b-166">container</span></span>
-
-<span data-ttu-id="5a77b-167">container: ブール値</span><span class="sxs-lookup"><span data-stu-id="5a77b-167">container: boolean</span></span>
-
-<span data-ttu-id="5a77b-168">コントロールがコンテナーの場合は true です。</span><span class="sxs-lookup"><span data-stu-id="5a77b-168">True if the control is a container.</span></span>
-
-> <span data-ttu-id="5a77b-169">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-169">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)</span></span>
-> 
-> <span data-ttu-id="5a77b-170">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="5a77b-170">Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)</span></span>
-
-
-### <a name="emptylistmessage"></a><span data-ttu-id="5a77b-171">emptyListMessage</span><span class="sxs-lookup"><span data-stu-id="5a77b-171">emptyListMessage</span></span>
-
-<span data-ttu-id="5a77b-172">emptyListMessage: string</span><span class="sxs-lookup"><span data-stu-id="5a77b-172">emptyListMessage: string</span></span>
-
-<span data-ttu-id="5a77b-173">既定の空のリスト メッセージを上書きする設定可能なプロパティ。</span><span class="sxs-lookup"><span data-stu-id="5a77b-173">Settable property to override default empty list message.</span></span>
-
-
-### <a name="enablemultiselect"></a><span data-ttu-id="5a77b-174">enableMultiSelect</span><span class="sxs-lookup"><span data-stu-id="5a77b-174">enableMultiSelect</span></span>
-
-<span data-ttu-id="5a77b-175">enableMultiSelect: boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-175">enableMultiSelect: boolean</span></span>
-
-
-
-
-### <a name="generic"></a><span data-ttu-id="5a77b-176">generic</span><span class="sxs-lookup"><span data-stu-id="5a77b-176">generic</span></span>
-
-<span data-ttu-id="5a77b-177">generic: boolean (省略可)</span><span class="sxs-lookup"><span data-stu-id="5a77b-177">generic: boolean (optional)</span></span> 
-
-
-
-> <span data-ttu-id="5a77b-178">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-178">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[generic](view-model-control-basecontrol-icontrol-icontrol.md#generic)</span></span>
-
-
-### <a name="getdatasource"></a><span data-ttu-id="5a77b-179">getDataSource</span><span class="sxs-lookup"><span data-stu-id="5a77b-179">getDataSource</span></span>
-
-<span data-ttu-id="5a77b-180">getDataSource: function(): any</span><span class="sxs-lookup"><span data-stu-id="5a77b-180">getDataSource: function(): any</span></span>
-
-
-
-> <span data-ttu-id="5a77b-181">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-181">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDataSource](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</span></span>
-
-
-### <a name="hidden"></a><span data-ttu-id="5a77b-182">hidden</span><span class="sxs-lookup"><span data-stu-id="5a77b-182">hidden</span></span>
-
-<span data-ttu-id="5a77b-183">hidden: boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-183">hidden: boolean</span></span>
-
-<span data-ttu-id="5a77b-184">コントロールが非常時の場合は true です。</span><span class="sxs-lookup"><span data-stu-id="5a77b-184">True if the control is hidden.</span></span>
-
-> <span data-ttu-id="5a77b-185">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-185">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[hidden](view-model-control-basecontrol-icontrol-icontrol.md#hidden)</span></span>
-
-
-### <a name="hideemptylistmessage"></a><span data-ttu-id="5a77b-186">hideEmptyListMessage</span><span class="sxs-lookup"><span data-stu-id="5a77b-186">hideEmptyListMessage</span></span>
-
-<span data-ttu-id="5a77b-187">hideEmptyListMessage: boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-187">hideEmptyListMessage: boolean</span></span>
-
-<span data-ttu-id="5a77b-188">True で一覧が空である場合、メッセージが表示されません。</span><span class="sxs-lookup"><span data-stu-id="5a77b-188">If true, no message is shown if the list is empty.</span></span>
-<span data-ttu-id="5a77b-189">このプロパティを設定するには、対応するメタデータ プロパティを configureControl で更新します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-189">To set this property, update the corresponding metadata property via configureControl.</span></span>
-
-
-### <a name="imagefields"></a><span data-ttu-id="5a77b-190">imageFields</span><span class="sxs-lookup"><span data-stu-id="5a77b-190">imageFields</span></span>
-
-<span data-ttu-id="5a77b-191">imageFields: any [ ]</span><span class="sxs-lookup"><span data-stu-id="5a77b-191">imageFields: any [ ]</span></span>
-
-
-
-
-### <a name="performingremotesearch"></a><span data-ttu-id="5a77b-192">performingRemoteSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-192">performingRemoteSearch</span></span>
-
-<span data-ttu-id="5a77b-193">performingRemoteSearch: boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-193">performingRemoteSearch: boolean</span></span>
-
-
-
-
-### <a name="searchquery"></a><span data-ttu-id="5a77b-194">searchQuery</span><span class="sxs-lookup"><span data-stu-id="5a77b-194">searchQuery</span></span>
-
-<span data-ttu-id="5a77b-195">searchQuery: [value: string]: any</span><span class="sxs-lookup"><span data-stu-id="5a77b-195">searchQuery: [value: string]: any</span></span>
-
-
-
-
-## <a name="methods"></a><span data-ttu-id="5a77b-196">メソッド</span><span class="sxs-lookup"><span data-stu-id="5a77b-196">Methods</span></span>
-
-### <a name="allowsnavigation"></a><span data-ttu-id="5a77b-197">allowsNavigation</span><span class="sxs-lookup"><span data-stu-id="5a77b-197">allowsNavigation</span></span>
-
-
-<span data-ttu-id="5a77b-198">allowsNavigation(): boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-198">allowsNavigation(): boolean</span></span>
-
-
-
-#### <a name="returns-boolean"></a><span data-ttu-id="5a77b-199">ブール値を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-199">Returns boolean</span></span>
-
-### <a name="applydesign"></a><span data-ttu-id="5a77b-200">applyDesign</span><span class="sxs-lookup"><span data-stu-id="5a77b-200">applyDesign</span></span>
-
-
-<span data-ttu-id="5a77b-201">applyDesign(IDesign: [ListDesign](view-model-control-list-ilist-ilistdesign.md)): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-201">applyDesign(IDesign: [ListDesign](view-model-control-list-ilist-ilistdesign.md)): void</span></span>
-
-<span data-ttu-id="5a77b-202">付与されたデザインをコントロールのデザインに適用します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-202">Applies given design to the design on the control.</span></span>
-<span data-ttu-id="5a77b-203">デザインが既に存在する場合は、設計のプロトタイプ チェーンが保持されます。</span><span class="sxs-lookup"><span data-stu-id="5a77b-203">If a design already exists, the prototype chain of the design will be preserved.</span></span>
-
-> <span data-ttu-id="5a77b-204">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="5a77b-204">Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[applyDesign](view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-205">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-205">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-206">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-206">Name</span></span> | <span data-ttu-id="5a77b-207">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-207">Type</span></span> | <span data-ttu-id="5a77b-208">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-208">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-209">IDesign</span><span class="sxs-lookup"><span data-stu-id="5a77b-209">IDesign</span></span>|[<span data-ttu-id="5a77b-210">ListDesign</span><span class="sxs-lookup"><span data-stu-id="5a77b-210">ListDesign</span></span>](view-model-control-list-ilist-ilistdesign.md)|<span data-ttu-id="5a77b-211">デザイン プロパティをキーとして含むオブジェクト</span><span class="sxs-lookup"><span data-stu-id="5a77b-211">object containing design properties as keys</span></span>|
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-212">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-212">Returns void</span></span>
-
-### <a name="applysearch"></a><span data-ttu-id="5a77b-213">applySearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-213">applySearch</span></span>
-
-
-<span data-ttu-id="5a77b-214">applySearch(): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-214">applySearch(): void</span></span>
-
-
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-215">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-215">Returns void</span></span>
-
-### <a name="canperformremotesearch"></a><span data-ttu-id="5a77b-216">canPerformRemoteSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-216">canPerformRemoteSearch</span></span>
-
-
-<span data-ttu-id="5a77b-217">canPerformRemoteSearch(): boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-217">canPerformRemoteSearch(): boolean</span></span>
-
-
-
-#### <a name="returns-boolean"></a><span data-ttu-id="5a77b-218">ブール値を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-218">Returns boolean</span></span>
-
-### <a name="clearsearch"></a><span data-ttu-id="5a77b-219">clearSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-219">clearSearch</span></span>
-
-
-<span data-ttu-id="5a77b-220">clearSearch(): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-220">clearSearch(): void</span></span>
-
-
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-221">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-221">Returns void</span></span>
-
-### <a name="datacontext"></a><span data-ttu-id="5a77b-222">dataContext</span><span class="sxs-lookup"><span data-stu-id="5a77b-222">dataContext</span></span>
-
-
-<span data-ttu-id="5a77b-223">dataContext(): any</span><span class="sxs-lookup"><span data-stu-id="5a77b-223">dataContext(): any</span></span>
-
-
-
-> <span data-ttu-id="5a77b-224">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-224">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[dataContext](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</span></span>
-
-#### <a name="returns-any"></a><span data-ttu-id="5a77b-225">any を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-225">Returns any</span></span>
-
-### <a name="getcolumnlabel"></a><span data-ttu-id="5a77b-226">getColumnLabel</span><span class="sxs-lookup"><span data-stu-id="5a77b-226">getColumnLabel</span></span>
-
-
-<span data-ttu-id="5a77b-227">getColumnLabel(id: string): string</span><span class="sxs-lookup"><span data-stu-id="5a77b-227">getColumnLabel(id: string): string</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-228">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-228">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-229">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-229">Name</span></span> | <span data-ttu-id="5a77b-230">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-230">Type</span></span> | <span data-ttu-id="5a77b-231">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-231">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-232">id</span><span class="sxs-lookup"><span data-stu-id="5a77b-232">id</span></span>|<span data-ttu-id="5a77b-233">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-233">string</span></span>||
-
-#### <a name="returns-string"></a><span data-ttu-id="5a77b-234">文字列を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-234">Returns string</span></span>
-
-### <a name="getcontrol"></a><span data-ttu-id="5a77b-235">getControl</span><span class="sxs-lookup"><span data-stu-id="5a77b-235">getControl</span></span>
-
-
-<span data-ttu-id="5a77b-236">getControl(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-236">getControl(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-<span data-ttu-id="5a77b-237">コントロールの名前の場合、コントロール インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-237">Given the name of a control, returns the control instance.</span></span>
-
-> <span data-ttu-id="5a77b-238">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-238">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControl](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol)</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-239">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-239">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-240">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-240">Name</span></span> | <span data-ttu-id="5a77b-241">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-241">Type</span></span> | <span data-ttu-id="5a77b-242">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-242">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-243">controlName</span><span class="sxs-lookup"><span data-stu-id="5a77b-243">controlName</span></span>|<span data-ttu-id="5a77b-244">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-244">string</span></span>|<span data-ttu-id="5a77b-245">コントロール名</span><span class="sxs-lookup"><span data-stu-id="5a77b-245">control name</span></span>|
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="5a77b-246">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-246">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-
-
-### <a name="getcontrolbyid"></a><span data-ttu-id="5a77b-247">getControlById</span><span class="sxs-lookup"><span data-stu-id="5a77b-247">getControlById</span></span>
-
-
-<span data-ttu-id="5a77b-248">getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-248">getControlById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-<span data-ttu-id="5a77b-249">コントロールの ID の場合、コントロール インスタンスを返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-249">Given the ID of a control, returns the control instance.</span></span>
-
-> <span data-ttu-id="5a77b-250">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-250">Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[getControlById](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid)</span></span>
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-251">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-251">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-252">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-252">Name</span></span> | <span data-ttu-id="5a77b-253">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-253">Type</span></span> | <span data-ttu-id="5a77b-254">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-254">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-255">id</span><span class="sxs-lookup"><span data-stu-id="5a77b-255">id</span></span>|<span data-ttu-id="5a77b-256">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-256">string</span></span>|<span data-ttu-id="5a77b-257">コントロール ID</span><span class="sxs-lookup"><span data-stu-id="5a77b-257">control ID</span></span>|
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="5a77b-258">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-258">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-
-
-### <a name="getcontrolmetadata"></a><span data-ttu-id="5a77b-259">getControlMetadata</span><span class="sxs-lookup"><span data-stu-id="5a77b-259">getControlMetadata</span></span>
-
-
-<span data-ttu-id="5a77b-260">getControlMetadata(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-260">getControlMetadata(controlName: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-261">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-261">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-262">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-262">Name</span></span> | <span data-ttu-id="5a77b-263">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-263">Type</span></span> | <span data-ttu-id="5a77b-264">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-264">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-265">controlName</span><span class="sxs-lookup"><span data-stu-id="5a77b-265">controlName</span></span>|<span data-ttu-id="5a77b-266">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-266">string</span></span>||
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="5a77b-267">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-267">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-### <a name="getcontrolmetadatabyid"></a><span data-ttu-id="5a77b-268">getControlMetadataById</span><span class="sxs-lookup"><span data-stu-id="5a77b-268">getControlMetadataById</span></span>
-
-
-<span data-ttu-id="5a77b-269">getControlMetadataById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-269">getControlMetadataById(id: string): [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-270">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-270">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-271">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-271">Name</span></span> | <span data-ttu-id="5a77b-272">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-272">Type</span></span> | <span data-ttu-id="5a77b-273">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-273">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-274">id</span><span class="sxs-lookup"><span data-stu-id="5a77b-274">id</span></span>|<span data-ttu-id="5a77b-275">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-275">string</span></span>||
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd"></a><span data-ttu-id="5a77b-276">[Control](view-model-control-basecontrol-icontrol-icontrol.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-276">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md)</span></span>
-
-### <a name="getdata"></a><span data-ttu-id="5a77b-277">getData</span><span class="sxs-lookup"><span data-stu-id="5a77b-277">getData</span></span>
-
-
-<span data-ttu-id="5a77b-278">getData(): any [ ]</span><span class="sxs-lookup"><span data-stu-id="5a77b-278">getData(): any [ ]</span></span>
-
-
-
-#### <a name="returns-any--"></a><span data-ttu-id="5a77b-279">any [ ] を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-279">Returns any [ ]</span></span>
-
-### <a name="getdesign"></a><span data-ttu-id="5a77b-280">getDesign</span><span class="sxs-lookup"><span data-stu-id="5a77b-280">getDesign</span></span>
-
-
-<span data-ttu-id="5a77b-281">getDesign(): [Design](view-model-ipage-idesign.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-281">getDesign(): [Design](view-model-ipage-idesign.md)</span></span>
-
-<span data-ttu-id="5a77b-282">このコントロールのデザイン オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-282">Returns the design object of this control.</span></span>
-
-> <span data-ttu-id="5a77b-283">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-283">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[getDesign](view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</span></span>
-
-#### <a name="returns-designview-model-ipage-idesignmd"></a><span data-ttu-id="5a77b-284">[Design](view-model-ipage-idesign.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-284">Returns [Design](view-model-ipage-idesign.md)</span></span>
-
-
-
-### <a name="getlistdata"></a><span data-ttu-id="5a77b-285">getListData</span><span class="sxs-lookup"><span data-stu-id="5a77b-285">getListData</span></span>
-
-
-<span data-ttu-id="5a77b-286">getListData(): any</span><span class="sxs-lookup"><span data-stu-id="5a77b-286">getListData(): any</span></span>
-
-
-
-#### <a name="returns-any"></a><span data-ttu-id="5a77b-287">any を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-287">Returns any</span></span>
-
-### <a name="getrenderedrows"></a><span data-ttu-id="5a77b-288">getRenderedRows</span><span class="sxs-lookup"><span data-stu-id="5a77b-288">getRenderedRows</span></span>
-
-
-<span data-ttu-id="5a77b-289">getRenderedRows(): [Row](view-model-control-list-ilist-irow.md) [ ]</span><span class="sxs-lookup"><span data-stu-id="5a77b-289">getRenderedRows(): [Row](view-model-control-list-ilist-irow.md) [ ]</span></span>
-
-
-
-#### <a name="returns-rowview-model-control-list-ilist-irowmd--"></a><span data-ttu-id="5a77b-290">[Row](view-model-control-list-ilist-irow.md) [ ] を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-290">Returns [Row](view-model-control-list-ilist-irow.md) [ ]</span></span>
-
-### <a name="getrownavigation"></a><span data-ttu-id="5a77b-291">getRowNavigation</span><span class="sxs-lookup"><span data-stu-id="5a77b-291">getRowNavigation</span></span>
-
-
-<span data-ttu-id="5a77b-292">getRowNavigation(row: [Row](view-model-control-list-ilist-irow.md)): Promise &lt;any&gt; &#124; any</span><span class="sxs-lookup"><span data-stu-id="5a77b-292">getRowNavigation(row: [Row](view-model-control-list-ilist-irow.md)): Promise &lt;any&gt; &#124; any</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-293">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-293">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-294">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-294">Name</span></span> | <span data-ttu-id="5a77b-295">型</span><span class="sxs-lookup"><span data-stu-id="5a77b-295">Type</span></span> | <span data-ttu-id="5a77b-296">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-296">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-297"> 行 </span><span class="sxs-lookup"><span data-stu-id="5a77b-297">row</span></span>|[<span data-ttu-id="5a77b-298">Row</span><span class="sxs-lookup"><span data-stu-id="5a77b-298">Row</span></span>](view-model-control-list-ilist-irow.md)||
-
-#### <a name="returns-promise-ltanygt-124-any"></a><span data-ttu-id="5a77b-299">Promise &lt;any&gt; &#124; any を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-299">Returns Promise &lt;any&gt; &#124; any</span></span>
-
-### <a name="getrowselectioncount"></a><span data-ttu-id="5a77b-300">getRowSelectionCount</span><span class="sxs-lookup"><span data-stu-id="5a77b-300">getRowSelectionCount</span></span>
-
-
-<span data-ttu-id="5a77b-301">getRowSelectionCount(): number</span><span class="sxs-lookup"><span data-stu-id="5a77b-301">getRowSelectionCount(): number</span></span>
-
-
-
-#### <a name="returns-number"></a><span data-ttu-id="5a77b-302">number を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-302">Returns number</span></span>
-
-### <a name="getrowselections"></a><span data-ttu-id="5a77b-303">getRowSelections</span><span class="sxs-lookup"><span data-stu-id="5a77b-303">getRowSelections</span></span>
-
-
-<span data-ttu-id="5a77b-304">getRowSelections(): string [ ]</span><span class="sxs-lookup"><span data-stu-id="5a77b-304">getRowSelections(): string [ ]</span></span>
-
-
-
-#### <a name="returns-string--"></a><span data-ttu-id="5a77b-305">string [ ] を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-305">Returns string [ ]</span></span>
-
-### <a name="getrowtracking"></a><span data-ttu-id="5a77b-306">getRowTracking</span><span class="sxs-lookup"><span data-stu-id="5a77b-306">getRowTracking</span></span>
-
-
-<span data-ttu-id="5a77b-307">getRowTracking(row: any, index: string): string</span><span class="sxs-lookup"><span data-stu-id="5a77b-307">getRowTracking(row: any, index: string): string</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-308">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-308">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-309">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-309">Name</span></span> | <span data-ttu-id="5a77b-310">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-310">Type</span></span> | <span data-ttu-id="5a77b-311">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-311">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-312">行</span><span class="sxs-lookup"><span data-stu-id="5a77b-312">row</span></span>|<span data-ttu-id="5a77b-313">any</span><span class="sxs-lookup"><span data-stu-id="5a77b-313">any</span></span>||
-| <span data-ttu-id="5a77b-314">指数</span><span class="sxs-lookup"><span data-stu-id="5a77b-314">index</span></span>|<span data-ttu-id="5a77b-315">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-315">string</span></span>||
-
-#### <a name="returns-string"></a><span data-ttu-id="5a77b-316">文字列を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-316">Returns string</span></span>
-
-### <a name="getsearchcolumn"></a><span data-ttu-id="5a77b-317">getSearchColumn</span><span class="sxs-lookup"><span data-stu-id="5a77b-317">getSearchColumn</span></span>
-
-
-<span data-ttu-id="5a77b-318">getSearchColumn(): string</span><span class="sxs-lookup"><span data-stu-id="5a77b-318">getSearchColumn(): string</span></span>
-
-
-
-#### <a name="returns-string"></a><span data-ttu-id="5a77b-319">文字列を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-319">Returns string</span></span>
-
-### <a name="getsearchcolumnlabel"></a><span data-ttu-id="5a77b-320">getSearchColumnLabel</span><span class="sxs-lookup"><span data-stu-id="5a77b-320">getSearchColumnLabel</span></span>
-
-
-<span data-ttu-id="5a77b-321">getSearchColumnLabel(): string</span><span class="sxs-lookup"><span data-stu-id="5a77b-321">getSearchColumnLabel(): string</span></span>
-
-
-
-#### <a name="returns-string"></a><span data-ttu-id="5a77b-322">文字列を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-322">Returns string</span></span>
-
-### <a name="getsearchablecolumns"></a><span data-ttu-id="5a77b-323">getSearchableColumns</span><span class="sxs-lookup"><span data-stu-id="5a77b-323">getSearchableColumns</span></span>
-
-
-<span data-ttu-id="5a77b-324">getSearchableColumns(): any [ ]</span><span class="sxs-lookup"><span data-stu-id="5a77b-324">getSearchableColumns(): any [ ]</span></span>
-
-
-
-#### <a name="returns-any--"></a><span data-ttu-id="5a77b-325">any [ ] を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-325">Returns any [ ]</span></span>
-
-### <a name="hidesearchbar"></a><span data-ttu-id="5a77b-326">hideSearchBar</span><span class="sxs-lookup"><span data-stu-id="5a77b-326">hideSearchBar</span></span>
-
-
-<span data-ttu-id="5a77b-327">hideSearchBar(): boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-327">hideSearchBar(): boolean</span></span>
-
-
-
-#### <a name="returns-boolean"></a><span data-ttu-id="5a77b-328">ブール値を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-328">Returns boolean</span></span>
-
-### <a name="iseditable"></a><span data-ttu-id="5a77b-329">isEditable</span><span class="sxs-lookup"><span data-stu-id="5a77b-329">isEditable</span></span>
-
-
-<span data-ttu-id="5a77b-330">isEditable(): boolean</span><span class="sxs-lookup"><span data-stu-id="5a77b-330">isEditable(): boolean</span></span>
-
-<span data-ttu-id="5a77b-331">コントロールが編集可能かどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="5a77b-331">Boolean indicating if the control is editable.</span></span>
-<span data-ttu-id="5a77b-332">コントロールまたはその親が編集可能でない場合は、false を返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-332">Returns false when either the control or it's parent is not editable.</span></span>
-<span data-ttu-id="5a77b-333">コントロールとその親の両方が編集可能な場合、true を返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-333">Returns true when both the control and it's parent are editable.</span></span>
-<span data-ttu-id="5a77b-334">コントロールまたはその親が編集可能で、もう一方が未定義の場合は true を返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-334">Returns true when either the control or it's parent is editable and the other is undefined.</span></span>
-<span data-ttu-id="5a77b-335">コントロールの編集機能と親の編集機能の両方が未定義の場合は undefined を返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-335">Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.</span></span>
-
-> <span data-ttu-id="5a77b-336">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-336">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</span></span>
-
-#### <a name="returns-boolean"></a><span data-ttu-id="5a77b-337">ブール値を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-337">Returns boolean</span></span>
-
-
-
-### <a name="loadmetadata"></a><span data-ttu-id="5a77b-338">loadMetaData</span><span class="sxs-lookup"><span data-stu-id="5a77b-338">loadMetaData</span></span>
-
-
-<span data-ttu-id="5a77b-339">loadMetaData(): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-339">loadMetaData(): void</span></span>
-
-
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-340">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-340">Returns void</span></span>
-
-### <a name="loadmore"></a><span data-ttu-id="5a77b-341">loadMore</span><span class="sxs-lookup"><span data-stu-id="5a77b-341">loadMore</span></span>
-
-
-<span data-ttu-id="5a77b-342">loadMore(): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-342">loadMore(): void</span></span>
-
-
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-343">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-343">Returns void</span></span>
-
-### <a name="metadata"></a><span data-ttu-id="5a77b-344">metadata</span><span class="sxs-lookup"><span data-stu-id="5a77b-344">metadata</span></span>
-
-
-<span data-ttu-id="5a77b-345">metadata(): [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-345">metadata(): [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)</span></span>
-
-<span data-ttu-id="5a77b-346">このコントロールのメタデータ オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-346">Returns the metadata object of this control.</span></span>
-
-> <span data-ttu-id="5a77b-347">[ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata) をオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="5a77b-347">Overrides [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[metadata](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)</span></span>
-
-#### <a name="returns-listmetadataview-model-control-list-ilist-ilistmetadatamd"></a><span data-ttu-id="5a77b-348">[ListMetadata](view-model-control-list-ilist-ilistmetadata.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-348">Returns [ListMetadata](view-model-control-list-ilist-ilistmetadata.md)</span></span>
-
-
-
-### <a name="parent"></a><span data-ttu-id="5a77b-349">parent</span><span class="sxs-lookup"><span data-stu-id="5a77b-349">parent</span></span>
-
-
-<span data-ttu-id="5a77b-350">parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-350">parent(): [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span></span>
-
-<span data-ttu-id="5a77b-351">このコントロールの親 (コントロールまたはページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-351">Returns the parent (control or page) of this control.</span></span>
-
-> <span data-ttu-id="5a77b-352">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-352">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[parent](view-model-control-basecontrol-icontrol-icontrol.md#parent)</span></span>
-
-#### <a name="returns-controlview-model-control-basecontrol-icontrol-icontrolmd-124-pageview-model-ipage-ipagemd"></a><span data-ttu-id="5a77b-353">[Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-353">Returns [Control](view-model-control-basecontrol-icontrol-icontrol.md) &#124; [Page](view-model-ipage-ipage.md)</span></span>
-
-
-
-### <a name="performremotesearch"></a><span data-ttu-id="5a77b-354">performRemoteSearch</span><span class="sxs-lookup"><span data-stu-id="5a77b-354">performRemoteSearch</span></span>
-
-
-<span data-ttu-id="5a77b-355">performRemoteSearch(): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-355">performRemoteSearch(): void</span></span>
-
-
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-356">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-356">Returns void</span></span>
-
-### <a name="root"></a><span data-ttu-id="5a77b-357">root</span><span class="sxs-lookup"><span data-stu-id="5a77b-357">root</span></span>
-
-
-<span data-ttu-id="5a77b-358">root(): [Page](view-model-ipage-ipage.md)</span><span class="sxs-lookup"><span data-stu-id="5a77b-358">root(): [Page](view-model-ipage-ipage.md)</span></span>
-
-<span data-ttu-id="5a77b-359">このコントロールのルート フォーム インスタンス (ページ) を返します。</span><span class="sxs-lookup"><span data-stu-id="5a77b-359">Returns the root form instance (page) of this control.</span></span>
-
-> <span data-ttu-id="5a77b-360">[Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承</span><span class="sxs-lookup"><span data-stu-id="5a77b-360">Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root)</span></span>
-
-#### <a name="returns-pageview-model-ipage-ipagemd"></a><span data-ttu-id="5a77b-361">[Page](view-model-ipage-ipage.md) を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-361">Returns [Page](view-model-ipage-ipage.md)</span></span>
-
-
-
-### <a name="selectsearchcolumn"></a><span data-ttu-id="5a77b-362">selectSearchColumn</span><span class="sxs-lookup"><span data-stu-id="5a77b-362">selectSearchColumn</span></span>
-
-
-<span data-ttu-id="5a77b-363">selectSearchColumn(column: string): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-363">selectSearchColumn(column: string): void</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-364">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-364">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-365">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-365">Name</span></span> | <span data-ttu-id="5a77b-366">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-366">Type</span></span> | <span data-ttu-id="5a77b-367">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-367">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-368">column</span><span class="sxs-lookup"><span data-stu-id="5a77b-368">column</span></span>|<span data-ttu-id="5a77b-369">string</span><span class="sxs-lookup"><span data-stu-id="5a77b-369">string</span></span>||
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-370">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-370">Returns void</span></span>
-
-### <a name="setrowsections"></a><span data-ttu-id="5a77b-371">setRowSections</span><span class="sxs-lookup"><span data-stu-id="5a77b-371">setRowSections</span></span>
-
-
-<span data-ttu-id="5a77b-372">setRowSections(selections: string [ ]): void</span><span class="sxs-lookup"><span data-stu-id="5a77b-372">setRowSections(selections: string [ ]): void</span></span>
-
-
-
-
-#### <a name="parameters"></a><span data-ttu-id="5a77b-373">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a77b-373">Parameters</span></span>
-
-| <span data-ttu-id="5a77b-374">氏名</span><span class="sxs-lookup"><span data-stu-id="5a77b-374">Name</span></span> | <span data-ttu-id="5a77b-375">種類</span><span class="sxs-lookup"><span data-stu-id="5a77b-375">Type</span></span> | <span data-ttu-id="5a77b-376">説明</span><span class="sxs-lookup"><span data-stu-id="5a77b-376">Description</span></span> |
-| ---- | ---- | ----------- |
-| <span data-ttu-id="5a77b-377">選択内容</span><span class="sxs-lookup"><span data-stu-id="5a77b-377">selections</span></span>|<span data-ttu-id="5a77b-378">string [ ]</span><span class="sxs-lookup"><span data-stu-id="5a77b-378">string [ ]</span></span>||
-
-#### <a name="returns-void"></a><span data-ttu-id="5a77b-379">void を返します</span><span class="sxs-lookup"><span data-stu-id="5a77b-379">Returns void</span></span>
-
-## <a name="events"></a><span data-ttu-id="5a77b-380">イベント</span><span class="sxs-lookup"><span data-stu-id="5a77b-380">Events</span></span>
-
-### <a name="onrowcreate"></a><span data-ttu-id="5a77b-381">onRowCreate</span><span class="sxs-lookup"><span data-stu-id="5a77b-381">onRowCreate</span></span>
-
-<span data-ttu-id="5a77b-382">onRowCreate: [EventHook](event-ievent-ieventhook.md) &lt;[Row](view-model-control-list-ilist-irow.md)&gt;</span><span class="sxs-lookup"><span data-stu-id="5a77b-382">onRowCreate: [EventHook](event-ievent-ieventhook.md) &lt;[Row](view-model-control-list-ilist-irow.md)&gt;</span></span>
-
-
-
-
-### <a name="onrowselect"></a><span data-ttu-id="5a77b-383">onRowSelect</span><span class="sxs-lookup"><span data-stu-id="5a77b-383">onRowSelect</span></span>
-
-<span data-ttu-id="5a77b-384">onRowSelect: [EventHook](event-ievent-ieventhook.md) &lt;[Row](view-model-control-list-ilist-irow.md)&gt;</span><span class="sxs-lookup"><span data-stu-id="5a77b-384">onRowSelect: [EventHook](event-ievent-ieventhook.md) &lt;[Row](view-model-control-list-ilist-irow.md)&gt;</span></span>
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="view-model-control-list-ilist-ilist.md" target-language="ja-JP">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>view-model-control-list-ilist-ilist.a1152e.20c705f4bc25e7b54fdd57b83888d06fc82bfbc2.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>20c705f4bc25e7b54fdd57b83888d06fc82bfbc2</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\mobile-apps\platform\client-apis\interfaces\view-model-control-list-ilist-ilist.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>List type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>List control type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト コントロール タイプ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>List type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト タイプ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>List control type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リスト コントロール タイプ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>A list is a control that contains any numbers of rows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストは、任意の数の行を含むコントロールです。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Each row follows a template for the layout of any number of controls.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">各行は、任意の数のコントロールに対するレイアウト用テンプレートに従います。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Lists come in two styles: simple and card.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">リストには簡易とカードの 2 つのスタイルがあります。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">階層</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ List</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;nbsp;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph>└─ リスト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>$accessibility<ept id="p1">](view-model-control-list-ilist-ilist.md#accessibility)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>$accessibility<ept id="p1">](view-model-control-list-ilist-ilist.md#accessibility)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt>DefaultSearchColumn<ept id="p1">](view-model-control-list-ilist-ilist.md#defaultsearchcolumn)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>DefaultSearchColumn<ept id="p1">](view-model-control-list-ilist-ilist.md#defaultsearchcolumn)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">[</bpt>container<ept id="p1">](view-model-control-list-ilist-ilist.md#container)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>コンテナー<ept id="p1">](view-model-control-list-ilist-ilist.md#container)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">[</bpt>emptyListMessage<ept id="p1">](view-model-control-list-ilist-ilist.md#emptylistmessage)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>emptyListMessage<ept id="p1">](view-model-control-list-ilist-ilist.md#emptylistmessage)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>enableMultiSelect<ept id="p1">](view-model-control-list-ilist-ilist.md#enablemultiselect)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>enableMultiSelect<ept id="p1">](view-model-control-list-ilist-ilist.md#enablemultiselect)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">[</bpt>generic<ept id="p1">](view-model-control-list-ilist-ilist.md#generic)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ジェネリック<ept id="p1">](view-model-control-list-ilist-ilist.md#generic)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>getDataSource<ept id="p1">](view-model-control-list-ilist-ilist.md#getdatasource)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getDataSource<ept id="p1">](view-model-control-list-ilist-ilist.md#getdatasource)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt>hidden<ept id="p1">](view-model-control-list-ilist-ilist.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>非表示<ept id="p1">](view-model-control-list-ilist-ilist.md#hidden)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>hideEmptyListMessage<ept id="p1">](view-model-control-list-ilist-ilist.md#hideemptylistmessage)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>hideEmptyListMessage<ept id="p1">](view-model-control-list-ilist-ilist.md#hideemptylistmessage)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">[</bpt>imageFields<ept id="p1">](view-model-control-list-ilist-ilist.md#imagefields)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>imageFields<ept id="p1">](view-model-control-list-ilist-ilist.md#imagefields)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source><bpt id="p1">[</bpt>performingRemoteSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#performingremotesearch)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>performingRemoteSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#performingremotesearch)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">[</bpt>searchQuery<ept id="p1">](view-model-control-list-ilist-ilist.md#searchquery)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>searchQuery<ept id="p1">](view-model-control-list-ilist-ilist.md#searchquery)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>allowsNavigation<ept id="p1">](view-model-control-list-ilist-ilist.md#allowsnavigation)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>allowsNavigation<ept id="p1">](view-model-control-list-ilist-ilist.md#allowsnavigation)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">[</bpt>applyDesign<ept id="p1">](view-model-control-list-ilist-ilist.md#applydesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>applyDesign<ept id="p1">](view-model-control-list-ilist-ilist.md#applydesign)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">[</bpt>applySearch<ept id="p1">](view-model-control-list-ilist-ilist.md#applysearch)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>applySearch<ept id="p1">](view-model-control-list-ilist-ilist.md#applysearch)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">[</bpt>canPerformRemoteSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#canperformremotesearch)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>canPerformRemoteSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#canperformremotesearch)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>clearSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#clearsearch)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>clearSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#clearsearch)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">[</bpt>dataContext<ept id="p1">](view-model-control-list-ilist-ilist.md#datacontext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>dataContext<ept id="p1">](view-model-control-list-ilist-ilist.md#datacontext)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt>getColumnLabel<ept id="p1">](view-model-control-list-ilist-ilist.md#getcolumnlabel)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getColumnLabel<ept id="p1">](view-model-control-list-ilist-ilist.md#getcolumnlabel)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">[</bpt>getControl<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrol)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getControl<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrol)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">[</bpt>getControlById<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrolbyid)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getControlById<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrolbyid)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">[</bpt>getControlMetadata<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrolmetadata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getControlMetadata<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrolmetadata)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">[</bpt>getControlMetadataById<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrolmetadatabyid)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getControlMetadataById<ept id="p1">](view-model-control-list-ilist-ilist.md#getcontrolmetadatabyid)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">[</bpt>getData<ept id="p1">](view-model-control-list-ilist-ilist.md#getdata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getData<ept id="p1">](view-model-control-list-ilist-ilist.md#getdata)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">[</bpt>getDesign<ept id="p1">](view-model-control-list-ilist-ilist.md#getdesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getDesign<ept id="p1">](view-model-control-list-ilist-ilist.md#getdesign)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">[</bpt>getListData<ept id="p1">](view-model-control-list-ilist-ilist.md#getlistdata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getListData<ept id="p1">](view-model-control-list-ilist-ilist.md#getlistdata)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">[</bpt>getRenderedRows<ept id="p1">](view-model-control-list-ilist-ilist.md#getrenderedrows)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getRenderedRows<ept id="p1">](view-model-control-list-ilist-ilist.md#getrenderedrows)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">[</bpt>getRowNavigation<ept id="p1">](view-model-control-list-ilist-ilist.md#getrownavigation)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getRowNavigation<ept id="p1">](view-model-control-list-ilist-ilist.md#getrownavigation)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">[</bpt>getRowSelectionCount<ept id="p1">](view-model-control-list-ilist-ilist.md#getrowselectioncount)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getRowSelectionCount<ept id="p1">](view-model-control-list-ilist-ilist.md#getrowselectioncount)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">[</bpt>getRowSelections<ept id="p1">](view-model-control-list-ilist-ilist.md#getrowselections)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getRowSelections<ept id="p1">](view-model-control-list-ilist-ilist.md#getrowselections)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source><bpt id="p1">[</bpt>getRowTracking<ept id="p1">](view-model-control-list-ilist-ilist.md#getrowtracking)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getRowTracking<ept id="p1">](view-model-control-list-ilist-ilist.md#getrowtracking)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">[</bpt>getSearchColumn<ept id="p1">](view-model-control-list-ilist-ilist.md#getsearchcolumn)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getSearchColumn<ept id="p1">](view-model-control-list-ilist-ilist.md#getsearchcolumn)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">[</bpt>getSearchColumnLabel<ept id="p1">](view-model-control-list-ilist-ilist.md#getsearchcolumnlabel)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getSearchColumnLabel<ept id="p1">](view-model-control-list-ilist-ilist.md#getsearchcolumnlabel)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">[</bpt>getSearchableColumns<ept id="p1">](view-model-control-list-ilist-ilist.md#getsearchablecolumns)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>getSearchableColumns<ept id="p1">](view-model-control-list-ilist-ilist.md#getsearchablecolumns)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">[</bpt>hideSearchBar<ept id="p1">](view-model-control-list-ilist-ilist.md#hidesearchbar)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>hideSearchBar<ept id="p1">](view-model-control-list-ilist-ilist.md#hidesearchbar)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">[</bpt>isEditable<ept id="p1">](view-model-control-list-ilist-ilist.md#iseditable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>isEditable<ept id="p1">](view-model-control-list-ilist-ilist.md#iseditable)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source><bpt id="p1">[</bpt>loadMetaData<ept id="p1">](view-model-control-list-ilist-ilist.md#loadmetadata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>loadMetaData<ept id="p1">](view-model-control-list-ilist-ilist.md#loadmetadata)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source><bpt id="p1">[</bpt>loadMore<ept id="p1">](view-model-control-list-ilist-ilist.md#loadmore)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>loadMore<ept id="p1">](view-model-control-list-ilist-ilist.md#loadmore)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">[</bpt>metadata<ept id="p1">](view-model-control-list-ilist-ilist.md#metadata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>メタデータ<ept id="p1">](view-model-control-list-ilist-ilist.md#metadata)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source><bpt id="p1">[</bpt>parent<ept id="p1">](view-model-control-list-ilist-ilist.md#parent)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>親<ept id="p1">](view-model-control-list-ilist-ilist.md#parent)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">[</bpt>performRemoteSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#performremotesearch)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>performRemoteSearch<ept id="p1">](view-model-control-list-ilist-ilist.md#performremotesearch)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source><bpt id="p1">[</bpt>root<ept id="p1">](view-model-control-list-ilist-ilist.md#root)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ルート<ept id="p1">](view-model-control-list-ilist-ilist.md#root)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source><bpt id="p1">[</bpt>selectSearchColumn<ept id="p1">](view-model-control-list-ilist-ilist.md#selectsearchcolumn)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>selectSearchColumn<ept id="p1">](view-model-control-list-ilist-ilist.md#selectsearchcolumn)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source><bpt id="p1">[</bpt>setRowSections<ept id="p1">](view-model-control-list-ilist-ilist.md#setrowsections)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>setRowSections<ept id="p1">](view-model-control-list-ilist-ilist.md#setrowsections)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source><bpt id="p1">[</bpt>onRowCreate<ept id="p1">](view-model-control-list-ilist-ilist.md#onrowcreate)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>onRowCreate<ept id="p1">](view-model-control-list-ilist-ilist.md#onrowcreate)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source><bpt id="p1">[</bpt>onRowSelect<ept id="p1">](view-model-control-list-ilist-ilist.md#onrowselect)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>onRowSelect<ept id="p1">](view-model-control-list-ilist-ilist.md#onrowselect)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">プロパティ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>$accessibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$accessibility</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>$accessibility: any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$accessibility: すべて</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>DefaultSearchColumn</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DefaultSearchColumn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>DefaultSearchColumn: string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DefaultSearchColumn: 文字列</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>container</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コンテナー</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>container: boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">container: ブール値</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>True if the control is a container.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールがコンテナーの場合は true です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Inherited from <bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>container<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#container)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>container<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#container)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Overrides <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>container<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#container)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>container<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#container)</ept> をオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>emptyListMessage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">emptyListMessage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>emptyListMessage: string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">emptyListMessage: string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Settable property to override default empty list message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">既定の空のリスト メッセージを上書きする設定可能なプロパティ。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>enableMultiSelect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enableMultiSelect</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>enableMultiSelect: boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enableMultiSelect: boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>generic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">generic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>generic: boolean (optional)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">generic: boolean (省略可)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>generic<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#generic)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>generic<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#generic)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>getDataSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getDataSource</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>getDataSource: function(): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getDataSource: function(): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDataSource<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDataSource<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#getdatasource)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>hidden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hidden</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>hidden: boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hidden: boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>True if the control is hidden.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが非常時の場合は true です。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>hidden<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#hidden)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>hidden<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#hidden)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>hideEmptyListMessage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hideEmptyListMessage</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>hideEmptyListMessage: boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hideEmptyListMessage: boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>If true, no message is shown if the list is empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">True で一覧が空である場合、メッセージが表示されません。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>To set this property, update the corresponding metadata property via configureControl.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このプロパティを設定するには、対応するメタデータ プロパティを configureControl で更新します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>imageFields</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageFields</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>imageFields: any [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">imageFields: any [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>performingRemoteSearch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">performingRemoteSearch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>performingRemoteSearch: boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">performingRemoteSearch: boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>searchQuery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">searchQuery</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>searchQuery: [value: string]: any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">searchQuery: [value: string]: any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">メソッド</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>allowsNavigation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">allowsNavigation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>allowsNavigation(): boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">allowsNavigation(): boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Returns boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>applyDesign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">applyDesign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>applyDesign(IDesign: <bpt id="p1">[</bpt>ListDesign<ept id="p1">](view-model-control-list-ilist-ilistdesign.md)</ept>): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">applyDesign(IDesign: <bpt id="p1">[</bpt>ListDesign<ept id="p1">](view-model-control-list-ilist-ilistdesign.md)</ept>): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Applies given design to the design on the control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">付与されたデザインをコントロールのデザインに適用します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>If a design already exists, the prototype chain of the design will be preserved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザインが既に存在する場合は、設計のプロトタイプ チェーンが保持されます。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Overrides <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>applyDesign<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>applyDesign<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#applydesign)</ept> をオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>IDesign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IDesign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source><bpt id="p1">[</bpt>ListDesign<ept id="p1">](view-model-control-list-ilist-ilistdesign.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ListDesign<ept id="p1">](view-model-control-list-ilist-ilistdesign.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>object containing design properties as keys</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">デザイン プロパティをキーとして含むオブジェクト</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>applySearch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">applySearch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>applySearch(): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">applySearch(): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>canPerformRemoteSearch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">canPerformRemoteSearch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>canPerformRemoteSearch(): boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">canPerformRemoteSearch(): boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Returns boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>clearSearch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">clearSearch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>clearSearch(): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">clearSearch(): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>dataContext</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataContext</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>dataContext(): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">dataContext(): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>dataContext<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>dataContext<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#datacontext)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Returns any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>getColumnLabel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getColumnLabel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>getColumnLabel(id: string): string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getColumnLabel(id: string): string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>id</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Returns string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>getControl</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControl</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>getControl(controlName: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControl(controlName: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Given the name of a control, returns the control instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの名前の場合、コントロール インスタンスを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Inherited from <bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>getControl<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>getControl<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrol)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>controlName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>control name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Returns <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>getControlById</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlById</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>getControlById(id: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlById(id: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Given the ID of a control, returns the control instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの ID の場合、コントロール インスタンスを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Inherited from <bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>getControlById<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>getControlById<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#getcontrolbyid)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>id</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>control ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロール ID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Returns <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>getControlMetadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlMetadata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>getControlMetadata(controlName: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlMetadata(controlName: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>controlName</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">controlName</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Returns <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>getControlMetadataById</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlMetadataById</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>getControlMetadataById(id: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getControlMetadataById(id: string): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>id</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">id</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Returns <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>getData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>getData(): any [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getData(): any [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Returns any [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any [ ] を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>getDesign</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getDesign</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>getDesign(): <bpt id="p1">[</bpt>Design<ept id="p1">](view-model-ipage-idesign.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getDesign(): <bpt id="p1">[</bpt>Design<ept id="p1">](view-model-ipage-idesign.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Returns the design object of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールのデザイン オブジェクトを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDesign<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>getDesign<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#getdesign)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Returns <bpt id="p1">[</bpt>Design<ept id="p1">](view-model-ipage-idesign.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Design<ept id="p1">](view-model-ipage-idesign.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>getListData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getListData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>getListData(): any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getListData(): any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Returns any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>getRenderedRows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRenderedRows</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>getRenderedRows(): <bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept> [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRenderedRows(): <bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept> [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Returns <bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept> [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept> [ ] を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>getRowNavigation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowNavigation</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>getRowNavigation(row: <bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept>): Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph> &amp;#124; any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowNavigation(row: <bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept>): Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph> &amp;#124; any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">型</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>row</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> 行 </target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source><bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Row<ept id="p1">](view-model-control-list-ilist-irow.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Returns Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph> &amp;#124; any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Promise <ph id="ph1">&amp;lt;</ph>any<ph id="ph2">&amp;gt;</ph> &amp;#124; any を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>getRowSelectionCount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowSelectionCount</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>getRowSelectionCount(): number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowSelectionCount(): number</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Returns number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">number を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>getRowSelections</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowSelections</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>getRowSelections(): string [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowSelections(): string [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Returns string [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string [ ] を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>getRowTracking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowTracking</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>getRowTracking(row: any, index: string): string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getRowTracking(row: any, index: string): string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>row</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">行</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>any</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>index</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">指数</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Returns string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>getSearchColumn</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getSearchColumn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>getSearchColumn(): string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getSearchColumn(): string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Returns string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>getSearchColumnLabel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getSearchColumnLabel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>getSearchColumnLabel(): string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getSearchColumnLabel(): string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Returns string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">文字列を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>getSearchableColumns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getSearchableColumns</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>getSearchableColumns(): any [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">getSearchableColumns(): any [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Returns any [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">any [ ] を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>hideSearchBar</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hideSearchBar</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>hideSearchBar(): boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hideSearchBar(): boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Returns boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>isEditable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isEditable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>isEditable(): boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">isEditable(): boolean</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Boolean indicating if the control is editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールが編集可能かどうかを示すブール値。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Returns false when either the control or it's parent is not editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはその親が編集可能でない場合は、false を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Returns true when both the control and it's parent are editable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールとその親の両方が編集可能な場合、true を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Returns true when either the control or it's parent is editable and the other is undefined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールまたはその親が編集可能で、もう一方が未定義の場合は true を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">コントロールの編集機能と親の編集機能の両方が未定義の場合は undefined を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>isEditable<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>isEditable<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Returns boolean</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ブール値を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>loadMetaData</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">loadMetaData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>loadMetaData(): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">loadMetaData(): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>loadMore</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">loadMore</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>loadMore(): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">loadMore(): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>metadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">metadata</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>metadata(): <bpt id="p1">[</bpt>ListMetadata<ept id="p1">](view-model-control-list-ilist-ilistmetadata.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">metadata(): <bpt id="p1">[</bpt>ListMetadata<ept id="p1">](view-model-control-list-ilist-ilistmetadata.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Returns the metadata object of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールのメタデータ オブジェクトを返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Overrides <bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>metadata<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ContainerControl<ept id="p1">](view-model-control-container-icontainercontrol-icontainercontrol.md)</ept>.<bpt id="p2">[</bpt>metadata<ept id="p2">](view-model-control-container-icontainercontrol-icontainercontrol.md#metadata)</ept> をオーバーライドします。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Returns <bpt id="p1">[</bpt>ListMetadata<ept id="p1">](view-model-control-list-ilist-ilistmetadata.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ListMetadata<ept id="p1">](view-model-control-list-ilist-ilistmetadata.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>parent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parent</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>parent(): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> &amp;#124; <bpt id="p2">[</bpt>Page<ept id="p2">](view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">parent(): <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> &amp;#124; <bpt id="p2">[</bpt>Page<ept id="p2">](view-model-ipage-ipage.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Returns the parent (control or page) of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールの親 (コントロールまたはページ) を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>parent<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#parent)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>parent<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#parent)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Returns <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> &amp;#124; <bpt id="p2">[</bpt>Page<ept id="p2">](view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept> &amp;#124; <bpt id="p2">[</bpt>Page<ept id="p2">](view-model-ipage-ipage.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>performRemoteSearch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">performRemoteSearch</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>performRemoteSearch(): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">performRemoteSearch(): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>root</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">root</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>root(): <bpt id="p1">[</bpt>Page<ept id="p1">](view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">root(): <bpt id="p1">[</bpt>Page<ept id="p1">](view-model-ipage-ipage.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Returns the root form instance (page) of this control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">このコントロールのルート フォーム インスタンス (ページ) を返します。</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Inherited from <bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>root<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#root)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Control<ept id="p1">](view-model-control-basecontrol-icontrol-icontrol.md)</ept>.<bpt id="p2">[</bpt>root<ept id="p2">](view-model-control-basecontrol-icontrol-icontrol.md#root)</ept> から継承</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Returns <bpt id="p1">[</bpt>Page<ept id="p1">](view-model-ipage-ipage.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Page<ept id="p1">](view-model-ipage-ipage.md)</ept> を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>selectSearchColumn</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">selectSearchColumn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>selectSearchColumn(column: string): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">selectSearchColumn(column: string): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">column</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>string</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>setRowSections</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setRowSections</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>setRowSections(selections: string [ ]): void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">setRowSections(selections: string [ ]): void</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">パラメーター</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">氏名</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">種類</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">説明</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>selections</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">選択内容</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>string [ ]</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">string [ ]</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Returns void</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">void を返します</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Events</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">イベント</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>onRowCreate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">onRowCreate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>onRowCreate: <bpt id="p1">[</bpt>EventHook<ept id="p1">](event-ievent-ieventhook.md)</ept> <ph id="ph1">&amp;lt;</ph><bpt id="p2">[</bpt>Row<ept id="p2">](view-model-control-list-ilist-irow.md)</ept><ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">onRowCreate: <bpt id="p1">[</bpt>EventHook<ept id="p1">](event-ievent-ieventhook.md)</ept> <ph id="ph1">&amp;lt;</ph><bpt id="p2">[</bpt>Row<ept id="p2">](view-model-control-list-ilist-irow.md)</ept><ph id="ph2">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>onRowSelect</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">onRowSelect</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>onRowSelect: <bpt id="p1">[</bpt>EventHook<ept id="p1">](event-ievent-ieventhook.md)</ept> <ph id="ph1">&amp;lt;</ph><bpt id="p2">[</bpt>Row<ept id="p2">](view-model-control-list-ilist-irow.md)</ept><ph id="ph2">&amp;gt;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">onRowSelect: <bpt id="p1">[</bpt>EventHook<ept id="p1">](event-ievent-ieventhook.md)</ept> <ph id="ph1">&amp;lt;</ph><bpt id="p2">[</bpt>Row<ept id="p2">](view-model-control-list-ilist-irow.md)</ept><ph id="ph2">&amp;gt;</ph></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
